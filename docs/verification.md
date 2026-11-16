@@ -1,3 +1,15 @@
+# 0.8 最新検証（2026-11-16）
+
+仕様008が最新。全16商品へ公式URLを明示し、公式情報で確認した8店舗を15商品へ案内、CHECOS1商品は公式取扱店通販fallback。GoogleMapsは公式書式の外部search/directionsのみ、地図/画像/レビュー転載やiframeなし。年齢目安20代後半〜30代前半、現行13画像/15商品。
+
+最終source: Astro59files0/0/0、51/51単体、16訪問mapping/8store・88sources・20台帳assets(現行+履歴)・ENJA本文・schema/参照PASS。102HTML/4607内部参照/89anchor/332通常0広告/209実行JS CSP/86JSON/14旧移動/正規sitemap86URL。
+
+画面・広告・最終仕様・公開の最新確定値はvisit-stage-*と008validationを優先。007のlocal166/166・132画面＋公開補足18/18は履歴で、132公開全走査は008でまとめる。
+
+法律/利用方法の根拠と限界はvisit-publication-review.mdとresearch/visit-publication-legal-v8.json。全ての法律・契約・国を含む適法保証、申請/承認/成果発生、検索掲載/流入増加は確認していない。
+
+---
+
 # 0.7 最新検証（2026-11-16）
 
 最新仕様はspecs/007-balanced-jewelry-discovery/。006以前の記録はその版の履歴。ユーザー最新指示に従いAI注記は短縮、30代前後、非木商品と日英導線を拡張。

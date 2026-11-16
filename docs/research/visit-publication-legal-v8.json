@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-11-16",
+  "scope": "Japan-focused publication method review, not an individual legal opinion or worldwide legality guarantee",
+  "sources": [
+    {
+      "id": "bunka-factual-information-v8",
+      "url": "https://www.bunka.go.jp/seisaku/chosakuken/seidokaisetsu/chosakukensha_fumei/",
+      "title": "文化庁 — 他人の著作物を利用したい場合など",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Distinguishes mere facts/data from copyrighted creative expression; also notes that other rights, laws and conditions may need checking. Supports our limited original factual summaries, not a blanket permission for all website material."
+      ]
+    },
+    {
+      "id": "google-maps-urls-v8",
+      "url": "https://developers.google.com/maps/documentation/urls/get-started",
+      "title": "Google Maps URLs — Get Started",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Official cross-platform search and directions URL syntax with api=1, query/destination URL encoding and no API key. Used for user-activated external links only, not copied map imagery."
+      ]
+    },
+    {
+      "id": "google-geo-guidelines-v8",
+      "url": "https://about.google/brand-resource-center/products-and-services/geo-guidelines/",
+      "title": "Google Brand Resource Center — Geo Guidelines",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Maps/Earth/Street View imagery has use and attribution conditions. We do not reproduce screenshots, map images, Street View, photos or reviews; external Google Maps URLs keep the map within Google services. Does not imply that all embedding is prohibited."
+      ]
+    },
+    {
+      "id": "caa-affiliate-disclosure-v8",
+      "url": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/faq/stealth_marketing/",
+      "title": "消費者庁 — ステルスマーケティングQ&A Q13",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Q13 evaluates whether advertising is clear from the whole display, including size/color and local placement. Retain context-appropriate disclosures for any future affiliate CTA; ordinary official/map links do not establish a sponsorship."
+      ]
+    }
+  ],
+  "notReliedUpon": [
+    {
+      "url": "https://laws.e-gov.go.jp/law/345AC0000000048",
+      "reason": "Page returned no readable law text in this tool; not recorded as body read."
+    },
+    {
+      "url": "https://www.jpo.go.jp/system/trademark/gaiyo/seidogaiyo/shotoha.html",
+      "reason": "Direct page fetch returned403; search excerpt alone not used to approve individual trademark uses."
+    }
+  ],
+  "decision": "Original summaries of verified public store facts; text names for identification; no logos, third-party photos, copied descriptions, reviews, map or Street View screenshots. Use official website links and documented Google Maps search/directions URLs. Never infer current retail access or item inventory from a registered address, production location or past event. If the current shop cannot be verified, show official online buying guidance instead.",
+  "limits": [
+    "No store permission, endorsement or stock confirmation has been obtained or implied.",
+    "Individual contracts, disputed uses and every foreign jurisdiction are not reviewed.",
+    "This review does not certify current stock, opening today, legal compliance of a merchant or affiliate approval."
+  ]
+}

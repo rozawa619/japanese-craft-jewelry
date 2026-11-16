@@ -1,0 +1,207 @@
+{
+  "checkedAt": "2026-11-16T11:15:49.761Z",
+  "status": "passed",
+  "command": "node scripts/check-ad-build.mjs",
+  "isolation": {
+    "fixtureRoot": "artifacts/ad-build-fixture/2026-11-16T11-15-49-709Z",
+    "copies": [
+      "src",
+      "docs",
+      "public",
+      "scripts",
+      "astro.config.mjs",
+      "tsconfig.json",
+      "package.json"
+    ],
+    "nodeModules": "junction to existing dependencies",
+    "envFilesCopied": false,
+    "mode": "preview plus test-only public metadata build; no deployment",
+    "rootDistBefore": "27e154d8930961ebe70fcc17136c18a6f2933e872461690215ad8d9e49aaf57f",
+    "rootDistAfter": "27e154d8930961ebe70fcc17136c18a6f2933e872461690215ad8d9e49aaf57f",
+    "rootDistUnchanged": true,
+    "realCatalogUnchanged": true
+  },
+  "scenarios": [
+    {
+      "name": "approved-related-product-only",
+      "status": "passed",
+      "targetIds": [
+        "morphosphere-ultramarine-pansy-pierced-earrings"
+      ],
+      "relatedFixturePage": "en/objects/hamamatsuya-surgical-stainless-pierced-earrings/index.html",
+      "fixture": "artifacts/ad-build-fixture/2026-11-16T11-15-49-709Z/approved-related-product-only",
+      "settings": {
+        "mode": "preview",
+        "basePath": "/",
+        "siteUrl": "",
+        "fixtureOnly": true,
+        "deployed": false
+      },
+      "build": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T11-15-49-709Z/approved-related-product-only/build.log",
+        "summary": []
+      },
+      "generatedSiteCheck": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T11-15-49-709Z/approved-related-product-only/check-built.log",
+        "summary": [
+          "PASS 102 HTML pages; 4263 href/src references; 89 anchors; 332 retailer links (23 sponsored); 209 executable inline script CSP hashes; 0 valid inert JSON data blocks; 14 retired reading redirects, 404, drafts, preview metadata, sitemap and robots. Base: /"
+        ]
+      },
+      "htmlAssertions": {
+        "status": "passed",
+        "sponsoredCount": 23,
+        "sponsoredPages": 21,
+        "drafts": "Draft object and guide absent from generated pages, markup and sitemap when passed.",
+        "publicMetadata": "Preview noindex/canonical/sitemap rules checked by generated-site checker.",
+        "errors": []
+      }
+    },
+    {
+      "name": "approved-lower-retailer-section-only",
+      "status": "passed",
+      "targetIds": [
+        "maruyama-clip-c"
+      ],
+      "fixture": "artifacts/ad-build-fixture/2026-11-16T11-15-49-709Z/approved-lower-retailer-section-only",
+      "settings": {
+        "mode": "preview",
+        "basePath": "/",
+        "siteUrl": "",
+        "fixtureOnly": true,
+        "deployed": false
+      },
+      "build": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T11-15-49-709Z/approved-lower-retailer-section-only/build.log",
+        "summary": []
+      },
+      "generatedSiteCheck": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T11-15-49-709Z/approved-lower-retailer-section-only/check-built.log",
+        "summary": [
+          "PASS 102 HTML pages; 4263 href/src references; 89 anchors; 332 retailer links (14 sponsored); 209 executable inline script CSP hashes; 0 valid inert JSON data blocks; 14 retired reading redirects, 404, drafts, preview metadata, sitemap and robots. Base: /"
+        ]
+      },
+      "htmlAssertions": {
+        "status": "passed",
+        "sponsoredCount": 14,
+        "sponsoredPages": 10,
+        "drafts": "Draft object and guide absent from generated pages, markup and sitemap when passed.",
+        "publicMetadata": "Preview noindex/canonical/sitemap rules checked by generated-site checker.",
+        "errors": []
+      }
+    },
+    {
+      "name": "paused-and-missing-url-fallback",
+      "status": "passed",
+      "targetIds": [],
+      "fixture": "artifacts/ad-build-fixture/2026-11-16T11-15-49-709Z/paused-and-missing-url-fallback",
+      "settings": {
+        "mode": "preview",
+        "basePath": "/",
+        "siteUrl": "",
+        "fixtureOnly": true,
+        "deployed": false
+      },
+      "build": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T11-15-49-709Z/paused-and-missing-url-fallback/build.log",
+        "summary": []
+      },
+      "generatedSiteCheck": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T11-15-49-709Z/paused-and-missing-url-fallback/check-built.log",
+        "summary": [
+          "PASS 102 HTML pages; 4263 href/src references; 89 anchors; 332 retailer links (0 sponsored); 209 executable inline script CSP hashes; 0 valid inert JSON data blocks; 14 retired reading redirects, 404, drafts, preview metadata, sitemap and robots. Base: /"
+        ]
+      },
+      "htmlAssertions": {
+        "status": "passed",
+        "sponsoredCount": 0,
+        "sponsoredPages": 0,
+        "drafts": "Draft object and guide absent from generated pages, markup and sitemap when passed.",
+        "publicMetadata": "Preview noindex/canonical/sitemap rules checked by generated-site checker.",
+        "errors": []
+      }
+    },
+    {
+      "name": "unlisted-tracking-host-fallback",
+      "status": "passed",
+      "targetIds": [],
+      "fixture": "artifacts/ad-build-fixture/2026-11-16T11-15-49-709Z/unlisted-tracking-host-fallback",
+      "settings": {
+        "mode": "preview",
+        "basePath": "/",
+        "siteUrl": "",
+        "fixtureOnly": true,
+        "deployed": false
+      },
+      "build": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T11-15-49-709Z/unlisted-tracking-host-fallback/build.log",
+        "summary": []
+      },
+      "generatedSiteCheck": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T11-15-49-709Z/unlisted-tracking-host-fallback/check-built.log",
+        "summary": [
+          "PASS 102 HTML pages; 4263 href/src references; 89 anchors; 332 retailer links (0 sponsored); 209 executable inline script CSP hashes; 0 valid inert JSON data blocks; 14 retired reading redirects, 404, drafts, preview metadata, sitemap and robots. Base: /"
+        ]
+      },
+      "htmlAssertions": {
+        "status": "passed",
+        "sponsoredCount": 0,
+        "sponsoredPages": 0,
+        "drafts": "Draft object and guide absent from generated pages, markup and sitemap when passed.",
+        "publicMetadata": "Preview noindex/canonical/sitemap rules checked by generated-site checker.",
+        "errors": []
+      }
+    },
+    {
+      "name": "test-only-public-base-metadata-and-drafts",
+      "status": "passed",
+      "targetIds": [],
+      "fixture": "artifacts/ad-build-fixture/2026-11-16T11-15-49-709Z/test-only-public-base-metadata-and-drafts",
+      "settings": {
+        "mode": "public",
+        "basePath": "/japanese-craft-jewelry/",
+        "siteUrl": "https://rozawa619.github.io",
+        "fixtureOnly": true,
+        "deployed": false
+      },
+      "build": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T11-15-49-709Z/test-only-public-base-metadata-and-drafts/build.log",
+        "summary": []
+      },
+      "generatedSiteCheck": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T11-15-49-709Z/test-only-public-base-metadata-and-drafts/check-built.log",
+        "summary": [
+          "PASS 102 HTML pages; 4607 href/src references; 89 anchors; 332 retailer links (0 sponsored); 209 executable inline script CSP hashes; 86 valid inert JSON data blocks; 14 retired reading redirects, 404, drafts, public metadata, sitemap and robots. Base: /japanese-craft-jewelry/"
+        ]
+      },
+      "htmlAssertions": {
+        "status": "passed",
+        "sponsoredCount": 0,
+        "sponsoredPages": 0,
+        "drafts": "Draft object and guide absent from generated pages, markup and sitemap when passed.",
+        "publicMetadata": "Test-only public URL/base, canonical, OGP, sitemap and robots assertions; does not establish a successful deployment.",
+        "errors": []
+      }
+    }
+  ],
+  "completedAt": "2026-11-16T11:16:33.213Z"
+}

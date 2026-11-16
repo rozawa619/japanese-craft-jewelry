@@ -1,7 +1,7 @@
 # 次のAIへの開始手順
 
 1. `README.md`、`docs/handoff.md`、`docs/constitution.md` を読み、現在の公開・申請状態を確認する。
-2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/007-balanced-jewelry-discovery/` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
+2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/008-official-links-and-visits/` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
 3. `src/lib/schema.ts`、`src/data/catalog.json`、`src/lib/affiliate.ts`、`src/content.config.ts` を読み、既存の分離を維持する。
 4. 変更後はリスクに応じた検証を実行し、仕様・タスク・変更履歴・引継ぎを実態に合わせて更新する。公開や提携承認を推測しない。
 
@@ -53,3 +53,6 @@ Node.js 24.22.1以上、pnpm 11.25.0。初回は `pnpm install --frozen-lockfile
 
 ## 0.7以降の表示と日英導線
 画像captionはユーザーの最新指示によりAIイメージ/AI imageのみ。旧003/006の長い非実物caption要件より007を優先。内部台帳はAIと実物仕様を分離したまま。モデルは30代前後、木以外も充実。rootは日英選択しやすい入口で強制転送しない。BECOSは確認済の同一SKU別市場実価格をcatalog.localizedPrices.jaへ、link.localeで通常URLと広告を別言語へ混在させない。JAprogramnullにEN承認を流用しない。価格の端数を保持する。
+
+## 0.8以降の公式情報・訪問案内
+モデルは20代後半〜30代前半を目安に。全公開商品に言語に合う公式商品/カタログ通常URLを明示し、確認済みmaker公式サイトを区別して案内。visits.jsonの店舗は公開小売店の一次確認必須で、登記住所/過去催事や個別在庫を推測しない。Mapsは固定Google originの正規search/directions外部リンクのみ。現行店未確認の商品は公式オンライン案内へ。法務確認はdocs/visit-publication-review.mdの範囲と限界を保持し、全面合法/許諾済を保証しない。広告通常リンク分離と短いAI注記、Contact非公開/SORAは維持。店舗更新はvalidate-visitsを含むverify必須。

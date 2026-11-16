@@ -1,4 +1,4 @@
-import {cpSync,existsSync,mkdirSync,readdirSync,renameSync} from 'node:fs';
+import {cpSync,existsSync,mkdirSync,readdirSync,renameSync,readFileSync} from 'node:fs';
 import {dirname,resolve,sep} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
@@ -13,14 +13,15 @@ if(existsSync(source)){
  renameSync(source,backup);
 }
 mkdirSync(source,{recursive:true});
+const retiredLocalPaths=new Set(JSON.parse(readFileSync(resolve(root,'docs/assets.json'),'utf8')).assets.flatMap(asset=>asset.status==='retired'&&typeof asset.localRetiredPath==='string'&&/^public\/images\/[a-z0-9-]+\.webp$/.test(asset.localRetiredPath)?[resolve(root,asset.localRetiredPath)]:[]));
 const skip=new Set(['node_modules','dist','.git','.astro','artifacts','test-results','playwright-report']);
 for(const entry of readdirSync(root)){
  if(skip.has(entry)||entry.endsWith('.log')||(entry.startsWith('.env')&&entry!=='.env.example'))continue;
- cpSync(resolve(root,entry),resolve(source,entry),{recursive:true});
+ cpSync(resolve(root,entry),resolve(source,entry),{recursive:true,filter:sourcePath=>!retiredLocalPaths.has(sourcePath)});
 }
 const evidence=resolve(delivery,'screenshots');
 mkdirSync(evidence,{recursive:true});
-for(const entry of readdirSync(resolve(root,'artifacts')).filter(entry=>(entry.startsWith('clear-stage-')||entry.startsWith('discovery-stage-'))&&entry.endsWith('.png'))){
+for(const entry of readdirSync(resolve(root,'artifacts')).filter(entry=>(entry.startsWith('clear-stage-')||entry.startsWith('discovery-stage-')||entry.startsWith('visit-stage-'))&&entry.endsWith('.png'))){
  const image=resolve(root,'artifacts',entry);if(existsSync(image))cpSync(image,resolve(evidence,entry));
 }
 console.log('Current source exported; any previous export was preserved as a backup:',source);

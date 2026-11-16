@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-11-16T11:16:51.207Z",
+  "method": "Fresh Chrome. Click two external Google Maps buttons without accepting consent, granting location, entering an origin, contacting a shop or copying map content. Distinguishes URL/navigation generation from external Google service availability and route accuracy.",
+  "examples": [
+    {
+      "product": "hamamatsuya-surgical-stainless-pierced-earrings",
+      "locale": "en",
+      "store": "hamamatsuya-hatajuku-main",
+      "action": "search",
+      "buttonHref": "https://www.google.com/maps/search/?api=1&query=%E6%B5%9C%E6%9D%BE%E5%B1%8B+%E6%9C%AC%E5%BA%97+%E8%A6%8B%E3%81%88%E3%82%8B%E5%B7%A5%E5%A0%B4+%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E8%B6%B3%E6%9F%84%E4%B8%8B%E9%83%A1%E7%AE%B1%E6%A0%B9%E7%94%BA%E7%95%91%E5%AE%BF138",
+      "newTabOpened": true,
+      "popupURL": "https://www.google.com/maps/search/?api=1&query=%E6%B5%9C%E6%9D%BE%E5%B1%8B+%E6%9C%AC%E5%BA%97+%E8%A6%8B%E3%81%88%E3%82%8B%E5%B7%A5%E5%A0%B4+%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E8%B6%B3%E6%9F%84%E4%B8%8B%E9%83%A1%E7%AE%B1%E6%A0%B9%E7%94%BA%E7%95%91%E5%AE%BF138",
+      "title": "Google マップ",
+      "googleNavigationObserved": true,
+      "consentObserved": false,
+      "navigationError": null,
+      "outcome": "External Google navigation observed; map/route correctness not independently established",
+      "sourceMapEmbed": false
+    },
+    {
+      "product": "kato-suke-drop-pierced-earrings",
+      "locale": "ja",
+      "store": "kato-shippo-store",
+      "action": "directions",
+      "buttonHref": "https://www.google.com/maps/dir/?api=1&destination=%E5%8A%A0%E8%97%A4%E4%B8%83%E5%AE%9D%E8%A3%BD%E4%BD%9C%E6%89%80+%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E8%A5%BF%E5%8C%BA%E9%A6%99%E5%91%91%E7%94%BA4-31",
+      "newTabOpened": true,
+      "popupURL": "https://www.google.com/maps/dir/?api=1&destination=%E5%8A%A0%E8%97%A4%E4%B8%83%E5%AE%9D%E8%A3%BD%E4%BD%9C%E6%89%80+%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E8%A5%BF%E5%8C%BA%E9%A6%99%E5%91%91%E7%94%BA4-31",
+      "title": "Google マップ",
+      "googleNavigationObserved": true,
+      "consentObserved": false,
+      "navigationError": null,
+      "outcome": "External Google navigation observed; map/route correctness not independently established",
+      "sourceMapEmbed": false
+    }
+  ],
+  "completedAt": "2026-11-16T11:17:14.036Z",
+  "finalizedAt": "2026-11-16T11:17:14.036Z"
+}

@@ -1,0 +1,22 @@
+---
+import {visitGuideForProduct,storeMapLinks} from '../lib/visits';
+import {t,type Locale} from '../lib/i18n';
+import Sources from './Sources.astro';
+interface Props{productId:string;locale:Locale}
+const {productId,locale}=Astro.props;
+const guide=visitGuideForProduct(productId,locale);
+---
+<section class="visit-guide" data-visit-guide data-visit-status={guide.stores.length?'confirmed-stores':'unconfirmed-store'} aria-labelledby={'visit-title-'+productId}>
+ <header class="visit-heading"><p class="eyebrow">{t(locale,'OFFICIAL LINKS & PLACES TO VISIT','公式サイトと、訪ねたいお店')}</p><h2 id={'visit-title-'+productId}>{t(locale,'Explore online. Plan a stop in Japan.','じっくり見るなら、現地で出会うなら。')}</h2></header>
+ <div class="visit-links">
+  {guide.officialLinks.map(link=><a class="visit-official-link" href={link.url} target="_blank" rel="noopener noreferrer" data-official-product-url={link.id}><span>{t(locale,'Official product information','公式の商品情報')} <span aria-hidden="true">↗</span></span><span class="visit-official-url">{link.url}</span></a>)}
+  {guide.officialHomeUrl&&<a class="visit-official-link" href={guide.officialHomeUrl} target="_blank" rel="noopener noreferrer" data-official-home-url data-official-home-role={guide.officialHomeRole}><span>{guide.officialHomeRole==='maker'?t(locale,'Maker / brand website','作り手・ブランドの公式サイト'):t(locale,'Official retailer website','公式販売店のサイト')} <span aria-hidden="true">↗</span></span><span class="visit-official-url">{guide.officialHomeUrl}</span></a>}
+ </div>
+ {guide.stores.length>0?<div class="visit-stores">{guide.stores.map(store=>{const maps=storeMapLinks(store);return <article class="visit-store" data-store-id={store.id}>
+  <h3>{store.name[locale]}</h3><p class="visit-summary">{store.visitSummary[locale]}</p>
+  <dl class="visit-meta"><div><dt>{t(locale,'Address','住所')}</dt><dd>{store.address[locale]}</dd></div>{store.hours&&<div><dt>{t(locale,'Opening hours','営業時間')}</dt><dd>{store.hours[locale]}</dd></div>}{store.closedDays&&<div><dt>{t(locale,'Closed','定休日')}</dt><dd>{store.closedDays[locale]}</dd></div>}{store.access&&<div><dt>{t(locale,'Getting there','アクセス')}</dt><dd>{store.access[locale]}</dd></div>}</dl>
+  <p class="visit-stock-note">{store.stockNote[locale]}</p><p class="visit-checked">{t(locale,'Information checked ','情報確認：')}{store.checkedAt}</p>
+  <div class="visit-map-actions"><a href={store.officialStoreUrl} target="_blank" rel="noopener noreferrer" data-store-official-url>{t(locale,'Official store guide','公式の店舗案内')} <span aria-hidden="true">↗</span></a>{maps&&<><a href={maps.search} target="_blank" rel="noopener noreferrer" data-map-action="search">{t(locale,'Find on Google Maps','Google マップで見る')} <span aria-hidden="true">↗</span></a><a href={maps.directions} target="_blank" rel="noopener noreferrer" data-map-action="directions">{t(locale,'Directions on Google Maps','Google マップで経路を見る')} <span aria-hidden="true">↗</span></a></>}</div>
+ </article>})}</div>:<p class="visit-fallback" data-store-fallback>{guide.fallback||t(locale,'Explore the official product information and store guide for current visiting options.','公式の商品情報や店舗案内から、現在の取扱いをご覧ください。')}</p>}
+ {guide.sourceIds.length>0&&<details class="visit-sources"><summary>{t(locale,'Store information sources','店舗情報の出典')}</summary><Sources sourceIds={guide.sourceIds} locale={locale}/></details>}
+</section>

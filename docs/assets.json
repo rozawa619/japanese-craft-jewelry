@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-11-16",
-  "policy": "No unlicensed third-party product photos are published. Official imagery is reviewed internally. Current styling uses13 original AI images for15 products, marked AIイメージ/AI image. Model age direction is approximatelyearly thirties. Retired images remain outside public. AI imagery is not evidence of actual product specifications or fit.",
+  "policy": "No unlicensed third-party product/store/map photos, logos or reviews published. Current13 AI styling images for15 products use a late-twenties/early-thirties direction and visible AIイメージ/AI image captions. Historical artwork is archived outside publication; any in-use local retired copy is excluded from Git and exports. No real product specifications or fit inferred.",
   "assets": [
     {
       "id": "original-abstract-craft-patterns",
@@ -51,14 +51,16 @@
     {
       "id": "ai-rinzen-amber-glass-styling-v1",
       "kind": "AI-generated editorial styling illustration",
-      "source": "public/images/rinzen-amber-glass-styling-v1.webp",
+      "source": "docs/archive/retired-ai-v8/rinzen-amber-glass-styling-v1.webp",
       "rightsHolder": "Original AI output generated for this project; no claim of product-photo permission or exclusive copyright",
       "permissionBasis": "User explicitly requested diverse adult Japanese women styling images on 2026-11-16. Original prompt with built-in image_gen; official images viewed internally only, not uploaded or reproduced.",
       "creditRequired": false,
-      "scope": "Editorial styling on cards and product pages. Fictional adult woman and illustrative accessory. Visible EN/JA AI/non-product caption; no real-product, fit or endorsement claim.",
+      "scope": "Historical AI artwork; not referenced by current pages. Replaced after the latest age-direction request.",
       "checkedAt": "2026-11-16",
       "productImage": false,
-      "promptRecord": "docs/image-generation-v6.json"
+      "promptRecord": "docs/image-generation-v6.json",
+      "status": "retired",
+      "retiredAt": "2026-11-16"
     },
     {
       "id": "ai-arita-halfmoon-styling-v1",
@@ -182,15 +184,18 @@
     {
       "id": "ai-kato-green-cloisonne-styling-v1",
       "kind": "AI-generated editorial styling illustration",
-      "source": "public/images/kato-green-cloisonne-styling-v1.webp",
+      "source": "docs/archive/retired-ai-v8/kato-green-cloisonne-styling-v1.webp",
       "rightsHolder": "AI output created for this project; no claim of third-party product-photo permission or exclusive copyright",
       "permissionBasis": "User requested early-thirties Japanese styling models and additional nonwood accessories on2026-11-16. Built-in image_gen original generation or authorized age edit of project-created AI imagery.",
       "creditRequired": false,
-      "scope": "Styling on product detail, cards and curated home; visible AIイメージ/AI image caption. Fictional adult model and illustrative accessory; not product appearance, fit or endorsement evidence.",
+      "scope": "Historical AI artwork; not referenced by current pages. Replaced after the latest age-direction request.",
       "checkedAt": "2026-11-16",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v7.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v7.json",
+      "retiredAt": "2026-11-16",
+      "localRetiredPath": "public/images/kato-green-cloisonne-styling-v1.webp",
+      "localRetiredNote": "An in-use local copy is ignored by Git and source packaging. The archive is retained under docs; current publication uses v2."
     },
     {
       "id": "ai-arita-blue-bouquet-styling-v1",
@@ -230,6 +235,32 @@
       "productImage": false,
       "status": "active",
       "promptRecord": "docs/image-generation-v7.json"
+    },
+    {
+      "id": "ai-rinzen-amber-glass-styling-v2",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/rinzen-amber-glass-styling-v2.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User requested late-twenties/early-thirties fictional adult models; built-in image_gen edit of project artwork on2026-11-16.",
+      "creditRequired": false,
+      "scope": "Current styling only, visibly marked AIイメージ/AI image; not real-product or fit evidence.",
+      "checkedAt": "2026-11-16",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-v8.json"
+    },
+    {
+      "id": "ai-kato-green-cloisonne-styling-v2",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/kato-green-cloisonne-styling-v2.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User requested late-twenties/early-thirties fictional adult models; built-in image_gen edit of project artwork on2026-11-16.",
+      "creditRequired": false,
+      "scope": "Current styling only, visibly marked AIイメージ/AI image; not real-product or fit evidence.",
+      "checkedAt": "2026-11-16",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-v8.json"
     }
   ],
   "productPhotography": [

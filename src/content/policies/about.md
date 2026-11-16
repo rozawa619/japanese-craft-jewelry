@@ -15,6 +15,8 @@ Wood, glass, porcelain, metal and fabric each bring a different expression to an
 
 Each introduction includes an idea for wearing the piece with clothes you already love. Explore by type, material or region, and switch languages with the button at the top right.
 
+Each product also includes official links and, where verified, information for visiting a shop in Japan.
+
 Styling images are created with AI.
 
 Read [our selection approach](../editorial-policy/) and [our affiliate notice](../affiliate-disclosure/) for more about the site.

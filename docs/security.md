@@ -34,3 +34,6 @@ GitHub Pagesでは任意のHTTPレスポンスヘッダーをこのソースか�
 
 
 0.7: link.localeで通常/広告リンクと開示を同じ言語へ限定する。BECOS英語プログラムの承認を日本語ストアへ流用しない。日本語の価格は確認済locale別事実としてcatalogだけに置き、換算しない。共通入口はnavigator.languageで選択順序を変えるだけで、Cookie・強制転送・外部翻訳scriptは使わない。AI表示はユーザー指示に従い短い注記へ。画像の正確な実物仕様・着用実績を示すものとして内部管理しない。
+
+
+0.8: 店舗紹介は通常HTTPSリンクと固定Google Maps URLsのみ。地図/店舗画像/レビューの転載やiframe/API/scriptを追加しない。Googleへの地図要求はユーザーがリンクを開く時に行い、自サイトで位置情報を取得しない。公式商品直URLはmerchantの完全一致hostを検証し、将来の広告CTAとは別に通常リンクとして表示する。店舗・全公開商品への対応・出典body_read・日付・URLエンコードをvalidate-visitsで検証。

@@ -1,0 +1,549 @@
+{
+  "stores": [
+    {
+      "id": "hamamatsuya-hatajuku-main",
+      "name": {
+        "ja": "浜松屋 本店・見える工場",
+        "en": "Hamamatsuya Main Store & Visible Workshop"
+      },
+      "address": {
+        "ja": "〒250-0314 神奈川県足柄下郡箱根町畑宿138",
+        "en": "138 Hatajuku, Hakone-machi, Ashigarashimo-gun, Kanagawa 250-0314, Japan"
+      },
+      "kind": "maker-shop",
+      "officialUrl": "https://www.hamamatsuya.co.jp/",
+      "officialStoreUrl": "https://www.hamamatsuya.co.jp/info/index.html",
+      "hours": {
+        "ja": "9:00–17:30（公式掲載）",
+        "en": "09:00–17:30, as listed by the maker"
+      },
+      "closedDays": {
+        "ja": "年中無休（公式掲載）",
+        "en": "Open year-round, as listed by the maker"
+      },
+      "access": {
+        "ja": "箱根湯本駅4番乗り場から、畑宿方面・旧街道経由の路線Kで「本陣跡」へ。公式案内の所要目安は約15分です。",
+        "en": "The maker directs visitors from Hakone-Yumoto bus stand 4 to Honjin-ato on routeK toward Hatajuku or Motohakone via the old road; its stated ride estimate is about 15 minutes."
+      },
+      "visitSummary": {
+        "ja": "箱根・畑宿にある工房直営の本店。寄木細工を見ながら、気になる耳飾りやペンダントの現物を探す訪問先です。",
+        "en": "The maker’s main shop in Hatajuku, Hakone, with a visible workshop. A place to explore its marquetry collection in person."
+      },
+      "stockNote": {
+        "ja": "紹介商品の店頭在庫・現在の柄は未確認です。訪問前に公式サイトで営業情報と取扱いを確認してください。",
+        "en": "The featured SKU, current patterns and store stock are not confirmed. Check the maker’s latest shop information and availability before visiting."
+      },
+      "mapQuery": "浜松屋 本店 見える工場 神奈川県足柄下郡箱根町畑宿138",
+      "sourceIds": [
+        "hamamatsuya-store-guide-v8"
+      ],
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "id": "hakone-maruyama-main",
+      "name": {
+        "ja": "箱根丸山物産 本店",
+        "en": "Hakone Maruyama Bussan Main Store"
+      },
+      "address": {
+        "ja": "〒250-0521 神奈川県足柄下郡箱根町箱根17番地",
+        "en": "17 Hakone, Hakone-machi, Ashigarashimo-gun, Kanagawa 250-0521, Japan"
+      },
+      "kind": "retailer-shop",
+      "officialUrl": "https://www.hakonemaruyama.co.jp/",
+      "officialStoreUrl": "https://www.hakonemaruyama.co.jp/html/company.html",
+      "hours": {
+        "ja": "10:00–16:00（公式案内・箱根ナビ掲載）",
+        "en": "10:00–16:00, listed in the official guide and Hakone Navi"
+      },
+      "closedDays": {
+        "ja": "年末年始・不定休あり（箱根ナビ掲載）。訪問前に公式の最新情報をご確認ください。",
+        "en": "Year-end/NewYear and occasional closures are listed by Hakone Navi; check the retailer’s latest information."
+      },
+      "access": {
+        "ja": "箱根登山バス「箱根関所跡」から徒歩約1分。",
+        "en": "About 1 minute on foot from the Hakone-Sekisho-ato bus stop, as listed by Hakone Navi."
+      },
+      "visitSummary": {
+        "ja": "箱根関所通りの寄木細工専門店。オンラインで紹介している丸山の耳飾りについて、現地の取扱いを確認する際の店舗です。",
+        "en": "A marquetry specialist on Hakone Sekisho Street. Use its official shop information to check the in-person selection of the earrings listed online."
+      },
+      "stockNote": {
+        "ja": "C/Dのピアス・イヤリングの店頭在庫や柄は未確認です。",
+        "en": "Physical stock and patterns of the C/D pierced and clip-on pairs have not been confirmed."
+      },
+      "mapQuery": "箱根丸山物産 本店 神奈川県足柄下郡箱根町箱根17",
+      "sourceIds": [
+        "maruyama-store-guide-v8",
+        "maruyama-hakonenavi-access-v8"
+      ],
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "id": "rinzen-hirai-shop",
+      "name": {
+        "ja": "東京ガラス工房 凛然",
+        "en": "Tokyo Glass Studio RINZEN"
+      },
+      "address": {
+        "ja": "〒132-0035 東京都江戸川区平井5-42-6 1F",
+        "en": "1F, 5-42-6 Hirai, Edogawa-ku, Tokyo 132-0035, Japan"
+      },
+      "kind": "maker-shop",
+      "officialUrl": "https://rin-zen.com/",
+      "officialStoreUrl": "https://rin-zen.com/shop.html",
+      "hours": {
+        "ja": "10:00–19:00（公式掲載）",
+        "en": "10:00–19:00, as listed by the maker"
+      },
+      "closedDays": {
+        "ja": "月曜日（公式掲載）",
+        "en": "Monday, as listed by the maker"
+      },
+      "access": {
+        "ja": "平井5丁目の店舗です。詳しい経路は公式店舗案内とGoogleマップで確認できます。",
+        "en": "The shop is in Hirai 5-chome. Use the official location and Google Maps for a route; no station travel-time estimate is asserted here."
+      },
+      "visitSummary": {
+        "ja": "切子の製造・販売・体験を行う凛然の店舗。切子グラスやアクセサリーのコレクションを紹介しています。",
+        "en": "RINZEN’s published maker shop, connected with its kiriko making, sales and classes. The maker also produces glass accessories."
+      },
+      "stockNote": {
+        "ja": "「星華」「葉の雫」の店頭在庫は未確認です。来店前に公式の営業情報と商品取扱いを確認してください。",
+        "en": "Store stock of Seika and Leaf dewdrop is unconfirmed. Check the maker’s latest opening information and product availability before visiting."
+      },
+      "mapQuery": "東京ガラス工房 凛然 東京都江戸川区平井5-42-6",
+      "sourceIds": [
+        "rinzen-store-guide-v8",
+        "rinzen-maker-concept-v8"
+      ],
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "id": "seirokugama-gallery",
+      "name": {
+        "ja": "高麗庵 清六窯ギャラリー",
+        "en": "Kōraian Seiroku Kiln Gallery"
+      },
+      "address": {
+        "ja": "〒844-0027 佐賀県西松浦郡有田町南原甲1136",
+        "en": "1136 南原甲, Arita, Nishimatsuura-gun, Saga 844-0027, Japan"
+      },
+      "kind": "maker-gallery",
+      "officialUrl": "https://seirokugama.jp/",
+      "officialStoreUrl": "https://seirokugama.jp/#access",
+      "hours": {
+        "ja": "9:00〜17:30（公式案内）",
+        "en": "9:00–17:30, as listed by the gallery"
+      },
+      "closedDays": null,
+      "access": {
+        "ja": "JR有田駅から車で約5分。公式アクセス案内を参照。",
+        "en": "About five minutes by car from JR Arita Station, according to the gallery."
+      },
+      "visitSummary": {
+        "ja": "6.KILNが生まれた清六窯のギャラリー。白磁の器とともに、ものづくりの背景に触れられる訪問先です。",
+        "en": "A gallery at the kiln behind 6.KILN, offering a closer connection to its porcelain-making setting."
+      },
+      "stockNote": {
+        "ja": "来店前の連絡が案内されています。6.KILNの希望モデルが見られるか、あわせて確認してから訪ねてください。",
+        "en": "The gallery asks visitors to get in touch before coming. Ask about the 6.KILN design you hope to see."
+      },
+      "mapQuery": "高麗庵 清六窯 佐賀県西松浦郡有田町南原甲1136",
+      "sourceIds": [
+        "visit-seirokugama-official",
+        "visit-six-kiln-official",
+        "visit-six-kiln-maker-interview"
+      ],
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "id": "2016-arita-flagship",
+      "name": {
+        "ja": "2016/SHOP",
+        "en": "2016/SHOP"
+      },
+      "address": {
+        "ja": "〒844-0024 佐賀県西松浦郡有田町赤坂丙2351-169（アリタセラ内）",
+        "en": "2351-169 Akasaka-hei, Arita, Nishimatsuura-gun, Saga 844-0024, Japan, in Arita Será"
+      },
+      "kind": "brand-flagship",
+      "officialUrl": "https://www.2016arita.jp/pages/shop-list",
+      "officialStoreUrl": "https://www.2016arita.jp/pages/shop-list",
+      "hours": null,
+      "closedDays": null,
+      "access": {
+        "ja": "有田町のアリタセラ内。営業日は公式ショップへ確認してから訪ねてください。",
+        "en": "Located in Arita Será. Check the shop’s current opening schedule before travelling."
+      },
+      "visitSummary": {
+        "ja": "有田の2016/旗艦店。サスキア・ディーツを含むブランドのデザインに出会う訪問先です。",
+        "en": "The2016/flagship in Arita, a place to explore the brand’s designers including Saskia Diez."
+      },
+      "stockNote": {
+        "ja": "公式取扱店リストで全デザイナーを扱う旗艦店として案内されています。カフのサイズ・色・在庫は訪問前に確認を。",
+        "en": "The brand lists this flagship for all designers. Check the cuff size, color and stock before your visit."
+      },
+      "mapQuery": "2016/SHOP 佐賀県西松浦郡有田町赤坂丙2351-169",
+      "sourceIds": [
+        "visit-2016-official-shop-list",
+        "visit-2016-aritasera",
+        "visit-2016-saga-tourism",
+        "visit-2016-saskia-official"
+      ],
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "id": "kanra-shop-kyoto",
+      "name": {
+        "ja": "kanra shop（ホテル カンラ京都 本館1階）",
+        "en": "kanra shop, Hotel Kanra Kyoto main building 1F"
+      },
+      "address": {
+        "ja": "〒600-8176 京都府京都市下京区烏丸通六条下る北町190",
+        "en": "190 Kitamachi, Karasuma-dori Rokujo-sagaru, Shimogyo-ku, Kyoto 600-8176, Japan"
+      },
+      "kind": "brand-stockist",
+      "officialUrl": "https://www.uds-hotels.com/kanra/kyoto/facilities/",
+      "officialStoreUrl": "https://www.uds-hotels.com/kanra/kyoto/qa/",
+      "hours": {
+        "ja": "9:00〜18:00（イベント時など変更あり）",
+        "en": "9:00–18:00; hours may change during events"
+      },
+      "closedDays": null,
+      "access": {
+        "ja": "地下鉄烏丸線・五条駅8番出口から右へ。2つ目の交差点の北西角です。",
+        "en": "From Gojo Station Exit8 on the Karasuma Line, turn right; the hotel is on the northwest corner of the second intersection."
+      },
+      "visitSummary": {
+        "ja": "京都の工芸品を扱うホテル内のショップ。旅の途中に、Morphosphereの色を探す候補店です。",
+        "en": "A hotel shop with Kyoto craft, listed by Morphosphere as a permanent accessory stockist."
+      },
+      "stockNote": {
+        "ja": "購入・相談はフロントへ。作家が常設取扱店として案内していますが、群青パンジーの在庫は事前に確認してください。",
+        "en": "Ask the front desk about purchases. The maker names the hotel as a permanent stockist; check for the ultramarine pansy before visiting."
+      },
+      "mapQuery": "kanra shop ホテルカンラ京都 京都市下京区北町190",
+      "sourceIds": [
+        "visit-morphosphere-stockists",
+        "visit-kanra-shop-official",
+        "visit-kanra-address",
+        "visit-kanra-access"
+      ],
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "id": "kato-shippo-store",
+      "name": {
+        "ja": "加藤七宝製作所 実店舗",
+        "en": "Kato Shippo Seisakusho store"
+      },
+      "address": {
+        "ja": "〒451-0015 愛知県名古屋市西区香呑町4-31",
+        "en": "4-31 Kōnomichō, Nishi-ku, Nagoya, Aichi 451-0015, Japan"
+      },
+      "kind": "maker-store",
+      "officialUrl": "https://katoshippo.com/page/about",
+      "officialStoreUrl": "https://katoshippo.com/page/about",
+      "hours": {
+        "ja": "10:00〜17:00",
+        "en": "10:00–17:00"
+      },
+      "closedDays": {
+        "ja": "水・土・日・祝日（臨時休業あり）",
+        "en": "Wednesday, Saturday, Sunday and public holidays; temporary closures possible"
+      },
+      "access": {
+        "ja": "地下鉄鶴舞線・庄内通駅から徒歩約7分。専用駐車場はありません。",
+        "en": "About seven minutes on foot from Shōnai-dōri Station on the Tsurumai Line. No dedicated parking."
+      },
+      "visitSummary": {
+        "ja": "尾張七宝を作る名古屋の工房に併設された実店舗。作り手の公式アクセスから、訪問の準備ができます。",
+        "en": "The maker’s own store in Nagoya, with official access information for planning a visit."
+      },
+      "stockNote": {
+        "ja": "少人数の工房のため、訪問前に公式窓口で営業と希望するSUKEの色・在庫を確認してください。",
+        "en": "The small workshop asks for contact before visiting. Confirm opening and the SUKE color you want."
+      },
+      "mapQuery": "加藤七宝製作所 愛知県名古屋市西区香呑町4-31",
+      "sourceIds": [
+        "visit-kato-official-store"
+      ],
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "id": "mocad-museum-shop",
+      "name": {
+        "ja": "京都伝統産業ミュージアムショップ",
+        "en": "Kyoto Museum of Crafts and Design shop"
+      },
+      "address": {
+        "ja": "〒606-8343 京都市左京区岡崎成勝寺町9番地の1 みやこめっせ地下1階",
+        "en": "Miyakomesse B1F, 9-1 Okazaki Seishōjichō, Sakyo-ku, Kyoto 606-8343, Japan"
+      },
+      "kind": "brand-stockist",
+      "officialUrl": "https://kmtc.jp/shopping-2/",
+      "officialStoreUrl": "https://kmtc.jp/access/",
+      "hours": {
+        "ja": "10:00〜18:00。休館日は公式カレンダーを確認。",
+        "en": "10:00–18:00. Check the museum’s closure calendar."
+      },
+      "closedDays": null,
+      "access": {
+        "ja": "地下鉄東西線・東山駅1番出口から北へ徒歩約10分。",
+        "en": "About ten minutes north on foot from Higashiyama Station Exit1 on the Tozai Line."
+      },
+      "visitSummary": {
+        "ja": "みやこめっせ地下1階の工芸品ショップ。Morphosphereの常設取扱候補として、京都観光と合わせて訪ねられます。",
+        "en": "A crafts shop in Miyakomesse, listed by Morphosphere as a permanent stockist."
+      },
+      "stockNote": {
+        "ja": "作家が常設取扱店として案内しています。群青色や希望の金具が見られるか、来店前に確認してください。",
+        "en": "Listed by the maker as a permanent stockist. Check the desired color and fitting before visiting."
+      },
+      "mapQuery": "京都伝統産業ミュージアムショップ 京都市左京区岡崎成勝寺町9-1 みやこめっせ",
+      "sourceIds": [
+        "visit-morphosphere-stockists",
+        "visit-mocad-shop",
+        "visit-mocad-access",
+        "visit-mocad-morphosphere"
+      ],
+      "checkedAt": "2026-11-16"
+    }
+  ],
+  "products": [
+    {
+      "productId": "hamamatsuya-catch-pierced",
+      "storeIds": [
+        "hamamatsuya-hatajuku-main"
+      ],
+      "officialHomeUrl": "https://www.hamamatsuya.co.jp/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "hamamatsuya-store-guide-v8"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "productId": "hamamatsuya-clip",
+      "storeIds": [
+        "hamamatsuya-hatajuku-main"
+      ],
+      "officialHomeUrl": "https://www.hamamatsuya.co.jp/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "hamamatsuya-store-guide-v8"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "productId": "hamamatsuya-18k-pierced",
+      "storeIds": [
+        "hamamatsuya-hatajuku-main"
+      ],
+      "officialHomeUrl": "https://www.hamamatsuya.co.jp/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "hamamatsuya-store-guide-v8"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "productId": "hamamatsuya-pendant",
+      "storeIds": [
+        "hamamatsuya-hatajuku-main"
+      ],
+      "officialHomeUrl": "https://www.hamamatsuya.co.jp/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "hamamatsuya-store-guide-v8"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "productId": "maruyama-clip-c",
+      "storeIds": [
+        "hakone-maruyama-main"
+      ],
+      "officialHomeUrl": "https://www.hakonemaruyama.co.jp/",
+      "officialHomeRole": "retailer",
+      "sourceIds": [
+        "maruyama-store-guide-v8",
+        "maruyama-hakonenavi-access-v8"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "productId": "maruyama-clip-d",
+      "storeIds": [
+        "hakone-maruyama-main"
+      ],
+      "officialHomeUrl": "https://www.hakonemaruyama.co.jp/",
+      "officialHomeRole": "retailer",
+      "sourceIds": [
+        "maruyama-store-guide-v8",
+        "maruyama-hakonenavi-access-v8"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "productId": "maruyama-pierced-c",
+      "storeIds": [
+        "hakone-maruyama-main"
+      ],
+      "officialHomeUrl": "https://www.hakonemaruyama.co.jp/",
+      "officialHomeRole": "retailer",
+      "sourceIds": [
+        "maruyama-store-guide-v8",
+        "maruyama-hakonenavi-access-v8"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "productId": "maruyama-pierced-d",
+      "storeIds": [
+        "hakone-maruyama-main"
+      ],
+      "officialHomeUrl": "https://www.hakonemaruyama.co.jp/",
+      "officialHomeRole": "retailer",
+      "sourceIds": [
+        "maruyama-store-guide-v8",
+        "maruyama-hakonenavi-access-v8"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "productId": "rinzen-seika-amber-pierced-earrings",
+      "storeIds": [
+        "rinzen-hirai-shop"
+      ],
+      "officialHomeUrl": "https://rin-zen.com/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "rinzen-store-guide-v8",
+        "rinzen-maker-concept-v8"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "productId": "six-kiln-half-moon-earrings",
+      "storeIds": [
+        "seirokugama-gallery"
+      ],
+      "officialHomeUrl": "https://6kiln.base.shop/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "visit-seirokugama-official",
+        "visit-six-kiln-official",
+        "visit-six-kiln-maker-interview"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "productId": "rinzen-leaf-glass-pendant",
+      "storeIds": [
+        "rinzen-hirai-shop"
+      ],
+      "officialHomeUrl": "https://rin-zen.com/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "rinzen-store-guide-v8",
+        "rinzen-maker-concept-v8"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "productId": "six-kiln-blue-bouquet-pierced-earrings",
+      "storeIds": [
+        "seirokugama-gallery"
+      ],
+      "officialHomeUrl": "https://6kiln.base.shop/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "visit-seirokugama-official",
+        "visit-six-kiln-official",
+        "visit-six-kiln-maker-interview"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "productId": "saskia-diez-drake-porcelain-cuff",
+      "storeIds": [
+        "2016-arita-flagship"
+      ],
+      "officialHomeUrl": "https://www.2016arita.jp/collections/saskia-diez",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "visit-2016-official-shop-list",
+        "visit-2016-aritasera",
+        "visit-2016-saga-tourism",
+        "visit-2016-saskia-official"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "productId": "checos-japanese-apricot-pierced-earrings",
+      "storeIds": [],
+      "officialHomeUrl": null,
+      "officialHomeRole": null,
+      "sourceIds": [
+        "checos-becos-brand-v8",
+        "checos-maker-directory-v8",
+        "checos-hakuichi-past-exhibition-v8"
+      ],
+      "fallback": {
+        "ja": "現在訪問できる常設販売店は、一次情報で確認できていません。商品は公式取扱店BECOSのページから確認できます。",
+        "en": "A current walk-in stockist has not been verified from primary information. View the item through the verified official retailer,BECOS."
+      },
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "storeIds": [
+        "kanra-shop-kyoto",
+        "mocad-museum-shop"
+      ],
+      "officialHomeUrl": "https://morphoyuzen.com/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "visit-morphosphere-stockists",
+        "visit-kanra-shop-official",
+        "visit-kanra-address",
+        "visit-kanra-access",
+        "visit-mocad-shop",
+        "visit-mocad-access",
+        "visit-mocad-morphosphere",
+        "visit-morphosphere-official",
+        "visit-morphosphere-direct-shop"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "productId": "kato-suke-drop-pierced-earrings",
+      "storeIds": [
+        "kato-shippo-store"
+      ],
+      "officialHomeUrl": "https://katoshippo.com/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "visit-kato-official-store"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-16"
+    }
+  ]
+}

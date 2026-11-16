@@ -1,0 +1,500 @@
+{
+  "checkedAt": "2026-11-16",
+  "scope": "Western Japan visit research for6.KILN,2016/Saskia Diez,Morphosphere and Kato Shippo; import proposal only, shared catalog and sources unmodified.",
+  "publicUseMethod": "Original short bilingual descriptions based on official maker/store information. External Google Maps search links are generated from public shop name/address only. No map tiles, store photos, logos, reviews or original route-map artwork copied; no registrations, contact messages or forms submitted. Legal assessment is owned by the parent task, not asserted here.",
+  "makerOfficialSites": {
+    "six-kiln": {
+      "en": "https://6kiln.base.shop/",
+      "ja": "https://6kiln.base.shop/",
+      "sourceIds": [
+        "visit-six-kiln-official"
+      ]
+    },
+    "saskia-diez-2016": {
+      "en": "https://www.2016arita.jp/en/collections/saskia-diez",
+      "ja": "https://www.2016arita.jp/collections/saskia-diez",
+      "productEn": "https://www.2016arita.jp/en/products/sa-bracelet-drake-cuff-no-2-grey-silver",
+      "sourceIds": [
+        "visit-2016-saskia-official"
+      ]
+    },
+    "morphosphere": {
+      "en": "https://morphoyuzen.com/",
+      "ja": "https://morphoyuzen.com/",
+      "onlineShop": "https://morphosphere.shop-inframe.jp/",
+      "sourceIds": [
+        "visit-morphosphere-official",
+        "visit-morphosphere-direct-shop"
+      ]
+    },
+    "kato-shippo": {
+      "en": "https://katoshippo.com/",
+      "ja": "https://katoshippo.com/",
+      "sourceIds": [
+        "visit-kato-official-store"
+      ]
+    }
+  },
+  "stores": [
+    {
+      "id": "seirokugama-gallery",
+      "makerIds": [
+        "six-kiln"
+      ],
+      "name": {
+        "ja": "高麗庵 清六窯ギャラリー",
+        "en": "Kōraian Seiroku Kiln Gallery"
+      },
+      "kind": "maker-gallery",
+      "officialUrl": "https://seirokugama.jp/",
+      "officialAccessUrl": "https://seirokugama.jp/#access",
+      "address": {
+        "ja": "〒844-0027 佐賀県西松浦郡有田町南原甲1136",
+        "en": "1136 南原甲, Arita, Nishimatsuura-gun, Saga844-0027, Japan"
+      },
+      "hours": {
+        "ja": "9:00〜17:30（公式案内）",
+        "en": "9:00–17:30, as listed by the gallery"
+      },
+      "closed": null,
+      "access": {
+        "ja": "JR有田駅から車で約5分。公式アクセス案内を参照。",
+        "en": "About five minutes by car from JR Arita Station, according to the gallery."
+      },
+      "visitAdvice": {
+        "ja": "来店前の連絡が案内されています。6.KILNの希望モデルが見られるか、あわせて確認してから訪ねてください。",
+        "en": "The gallery asks visitors to get in touch before coming. Ask about the6.KILN design you hope to see."
+      },
+      "description": {
+        "ja": "6.KILNが生まれた清六窯のギャラリー。白磁の器とともに、ものづくりの背景に触れられる訪問先です。",
+        "en": "A gallery at the kiln behind6.KILN, offering a closer connection to its porcelain-making setting."
+      },
+      "googleMapsQuery": "高麗庵 清六窯 佐賀県西松浦郡有田町南原甲1136",
+      "sourceIds": [
+        "visit-seirokugama-official",
+        "visit-six-kiln-official",
+        "visit-six-kiln-maker-interview"
+      ],
+      "relationship": "Maker gallery; accessory corner described in maker interview",
+      "itemStockConfirmed": false,
+      "checkedAt": "2026-11-16",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%AB%98%E9%BA%97%E5%BA%B5+%E6%B8%85%E5%85%AD%E7%AA%AF+%E4%BD%90%E8%B3%80%E7%9C%8C%E8%A5%BF%E6%9D%BE%E6%B5%A6%E9%83%A1%E6%9C%89%E7%94%B0%E7%94%BA%E5%8D%97%E5%8E%9F%E7%94%B21136"
+    },
+    {
+      "id": "2016-arita-flagship",
+      "makerIds": [
+        "saskia-diez-2016"
+      ],
+      "name": {
+        "ja": "2016/SHOP",
+        "en": "2016/SHOP"
+      },
+      "kind": "brand-flagship",
+      "officialUrl": "https://www.2016arita.jp/pages/shop-list",
+      "officialAccessUrl": "https://www.2016arita.jp/pages/shop-list",
+      "address": {
+        "ja": "〒844-0024 佐賀県西松浦郡有田町赤坂丙2351-169（アリタセラ内）",
+        "en": "2351-169 Akasaka-hei, Arita, Nishimatsuura-gun, Saga844-0024, Japan, in Arita Será"
+      },
+      "hours": null,
+      "closed": null,
+      "access": {
+        "ja": "有田町のアリタセラ内。営業日は公式ショップへ確認してから訪ねてください。",
+        "en": "Located in Arita Será. Check the shop’s current opening schedule before travelling."
+      },
+      "visitAdvice": {
+        "ja": "公式取扱店リストで全デザイナーを扱う旗艦店として案内されています。カフのサイズ・色・在庫は訪問前に確認を。",
+        "en": "The brand lists this flagship for all designers. Check the cuff size, color and stock before your visit."
+      },
+      "description": {
+        "ja": "有田の2016/旗艦店。サスキア・ディーツを含むブランドのデザインに出会う訪問先です。",
+        "en": "The2016/flagship in Arita, a place to explore the brand’s designers including Saskia Diez."
+      },
+      "googleMapsQuery": "2016/SHOP 佐賀県西松浦郡有田町赤坂丙2351-169",
+      "sourceIds": [
+        "visit-2016-official-shop-list",
+        "visit-2016-aritasera",
+        "visit-2016-saga-tourism",
+        "visit-2016-saskia-official"
+      ],
+      "relationship": "Brand flagship; official shop list says All designers",
+      "itemStockConfirmed": false,
+      "checkedAt": "2026-11-16",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=2016%2FSHOP+%E4%BD%90%E8%B3%80%E7%9C%8C%E8%A5%BF%E6%9D%BE%E6%B5%A6%E9%83%A1%E6%9C%89%E7%94%B0%E7%94%BA%E8%B5%A4%E5%9D%82%E4%B8%992351-169"
+    },
+    {
+      "id": "kanra-shop-kyoto",
+      "makerIds": [
+        "morphosphere"
+      ],
+      "name": {
+        "ja": "kanra shop（ホテル カンラ京都 本館1階）",
+        "en": "kanra shop, Hotel Kanra Kyoto main building1F"
+      },
+      "kind": "brand-stockist",
+      "officialUrl": "https://www.uds-hotels.com/kanra/kyoto/facilities/",
+      "officialAccessUrl": "https://www.uds-hotels.com/kanra/kyoto/qa/",
+      "address": {
+        "ja": "〒600-8176 京都府京都市下京区烏丸通六条下る北町190",
+        "en": "190 Kitamachi, Karasuma-dori Rokujo-sagaru, Shimogyo-ku, Kyoto600-8176, Japan"
+      },
+      "hours": {
+        "ja": "9:00〜18:00（イベント時など変更あり）",
+        "en": "9:00–18:00; hours may change during events"
+      },
+      "closed": null,
+      "access": {
+        "ja": "地下鉄烏丸線・五条駅8番出口から右へ。2つ目の交差点の北西角です。",
+        "en": "From Gojo Station Exit8 on the Karasuma Line, turn right; the hotel is on the northwest corner of the second intersection."
+      },
+      "visitAdvice": {
+        "ja": "購入・相談はフロントへ。作家が常設取扱店として案内していますが、群青パンジーの在庫は事前に確認してください。",
+        "en": "Ask the front desk about purchases. The maker names the hotel as a permanent stockist; check for the ultramarine pansy before visiting."
+      },
+      "description": {
+        "ja": "京都の工芸品を扱うホテル内のショップ。旅の途中に、Morphosphereの色を探す候補店です。",
+        "en": "A hotel shop with Kyoto craft, listed by Morphosphere as a permanent accessory stockist."
+      },
+      "googleMapsQuery": "kanra shop ホテルカンラ京都 京都市下京区北町190",
+      "sourceIds": [
+        "visit-morphosphere-stockists",
+        "visit-kanra-shop-official",
+        "visit-kanra-address",
+        "visit-kanra-access"
+      ],
+      "relationship": "Permanent accessory stockist stated by the maker; exact selected SKU not verified",
+      "itemStockConfirmed": false,
+      "checkedAt": "2026-11-16",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=kanra+shop+%E3%83%9B%E3%83%86%E3%83%AB%E3%82%AB%E3%83%B3%E3%83%A9%E4%BA%AC%E9%83%BD+%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%8B%E4%BA%AC%E5%8C%BA%E5%8C%97%E7%94%BA190"
+    },
+    {
+      "id": "kato-shippo-store",
+      "makerIds": [
+        "kato-shippo"
+      ],
+      "name": {
+        "ja": "加藤七宝製作所 実店舗",
+        "en": "Kato Shippo Seisakusho store"
+      },
+      "kind": "maker-store",
+      "officialUrl": "https://katoshippo.com/page/about",
+      "officialAccessUrl": "https://katoshippo.com/page/about",
+      "address": {
+        "ja": "〒451-0015 愛知県名古屋市西区香呑町4-31",
+        "en": "4-31 Kōnomichō, Nishi-ku, Nagoya, Aichi451-0015, Japan"
+      },
+      "hours": {
+        "ja": "10:00〜17:00",
+        "en": "10:00–17:00"
+      },
+      "closed": {
+        "ja": "水・土・日・祝日（臨時休業あり）",
+        "en": "Wednesday, Saturday, Sunday and public holidays; temporary closures possible"
+      },
+      "access": {
+        "ja": "地下鉄鶴舞線・庄内通駅から徒歩約7分。専用駐車場はありません。",
+        "en": "About seven minutes on foot from Shōnai-dōri Station on the Tsurumai Line. No dedicated parking."
+      },
+      "visitAdvice": {
+        "ja": "少人数の工房のため、訪問前に公式窓口で営業と希望するSUKEの色・在庫を確認してください。",
+        "en": "The small workshop asks for contact before visiting. Confirm opening and the SUKE color you want."
+      },
+      "description": {
+        "ja": "尾張七宝を作る名古屋の工房に併設された実店舗。作り手の公式アクセスから、訪問の準備ができます。",
+        "en": "The maker’s own store in Nagoya, with official access information for planning a visit."
+      },
+      "googleMapsQuery": "加藤七宝製作所 愛知県名古屋市西区香呑町4-31",
+      "sourceIds": [
+        "visit-kato-official-store"
+      ],
+      "relationship": "Maker publishes physical-store trading hours and access",
+      "itemStockConfirmed": false,
+      "checkedAt": "2026-11-16",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E5%8A%A0%E8%97%A4%E4%B8%83%E5%AE%9D%E8%A3%BD%E4%BD%9C%E6%89%80+%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E8%A5%BF%E5%8C%BA%E9%A6%99%E5%91%91%E7%94%BA4-31"
+    },
+    {
+      "id": "mocad-museum-shop",
+      "makerIds": [
+        "morphosphere"
+      ],
+      "name": {
+        "ja": "京都伝統産業ミュージアムショップ",
+        "en": "Kyoto Museum of Crafts and Design shop"
+      },
+      "kind": "brand-stockist",
+      "officialUrl": "https://kmtc.jp/shopping-2/",
+      "officialAccessUrl": "https://kmtc.jp/access/",
+      "address": {
+        "ja": "〒606-8343 京都市左京区岡崎成勝寺町9番地の1 みやこめっせ地下1階",
+        "en": "MiyakomesseB1F,9-1 Okazaki Seishōjichō, Sakyo-ku, Kyoto606-8343, Japan"
+      },
+      "hours": {
+        "ja": "10:00〜18:00。休館日は公式カレンダーを確認。",
+        "en": "10:00–18:00. Check the museum’s closure calendar."
+      },
+      "closed": null,
+      "access": {
+        "ja": "地下鉄東西線・東山駅1番出口から北へ徒歩約10分。",
+        "en": "About ten minutes north on foot from Higashiyama Station Exit1 on the Tozai Line."
+      },
+      "visitAdvice": {
+        "ja": "作家が常設取扱店として案内しています。群青色や希望の金具が見られるか、来店前に確認してください。",
+        "en": "Listed by the maker as a permanent stockist. Check the desired color and fitting before visiting."
+      },
+      "description": {
+        "ja": "みやこめっせ地下1階の工芸品ショップ。Morphosphereの常設取扱候補として、京都観光と合わせて訪ねられます。",
+        "en": "A crafts shop in Miyakomesse, listed by Morphosphere as a permanent stockist."
+      },
+      "googleMapsQuery": "京都伝統産業ミュージアムショップ 京都市左京区岡崎成勝寺町9-1 みやこめっせ",
+      "sourceIds": [
+        "visit-morphosphere-stockists",
+        "visit-mocad-shop",
+        "visit-mocad-access",
+        "visit-mocad-morphosphere"
+      ],
+      "relationship": "Maker permanent stockist list and museum-run current brand collection; selected SKU physical stock unknown",
+      "itemStockConfirmed": false,
+      "checkedAt": "2026-11-16",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E9%83%BD%E4%BC%9D%E7%B5%B1%E7%94%A3%E6%A5%AD%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%82%A2%E3%83%A0%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97+%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA%E5%B2%A1%E5%B4%8E%E6%88%90%E5%8B%9D%E5%AF%BA%E7%94%BA9-1+%E3%81%BF%E3%82%84%E3%81%93%E3%82%81%E3%81%A3%E3%81%9B"
+    }
+  ],
+  "productVisits": [
+    {
+      "productId": "six-kiln-half-moon-earrings",
+      "storeIds": [
+        "seirokugama-gallery"
+      ],
+      "availabilityNote": {
+        "ja": "紹介する半月イヤリングの現地在庫は未確認です。訪問前に公式案内から確認してください。",
+        "en": "Physical stock of the featured Half-moon clip-on earrings is not confirmed. Check with the gallery before visiting."
+      }
+    },
+    {
+      "productId": "six-kiln-blue-bouquet-pierced-earrings",
+      "storeIds": [
+        "seirokugama-gallery"
+      ],
+      "availabilityNote": {
+        "ja": "紹介する青のbouquetピアスの現地在庫は未確認です。訪問前に公式案内から確認してください。",
+        "en": "Physical stock of the featured Blue Bouquet pierced earrings is not confirmed. Check before visiting."
+      }
+    },
+    {
+      "productId": "saskia-diez-drake-porcelain-cuff",
+      "storeIds": [
+        "2016-arita-flagship"
+      ],
+      "availabilityNote": {
+        "ja": "ドレーク カフNo.2 グレイシルバーの店頭在庫は未確認です。サイズ・色を伝えて確認してください。",
+        "en": "In-store stock of the Drake Cuff No.2 in Grey Silver is not confirmed. Ask for the exact size and color."
+      }
+    },
+    {
+      "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "storeIds": [
+        "kanra-shop-kyoto",
+        "mocad-museum-shop"
+      ],
+      "availabilityNote": {
+        "ja": "作家が常設取扱店として紹介する店舗です。群青パンジーの店頭在庫は未確認です。",
+        "en": "The maker lists these as permanent stockists. Physical stock of the ultramarine pansy is not confirmed."
+      }
+    },
+    {
+      "productId": "kato-suke-drop-pierced-earrings",
+      "storeIds": [
+        "kato-shippo-store"
+      ],
+      "availabilityNote": {
+        "ja": "SUKEの希望色や店頭在庫は未確認です。来店前に公式窓口で確認してください。",
+        "en": "The desired SUKE color and in-store stock are not confirmed. Contact the official store before visiting."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "visit-seirokugama-official",
+      "url": "https://seirokugama.jp/",
+      "title": "高麗庵清六窯 — ギャラリーとアクセス",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Official public gallery, opening9:00–17:30, advance contact requested, address1136 Nanbara-kō Arita, five minutes by car from JR Arita Station. Read with web and Chrome; no images copied."
+      ]
+    },
+    {
+      "id": "visit-six-kiln-official",
+      "url": "https://6kiln.base.shop/about",
+      "title": "6.KILN — official About",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Maker-operated accessory shop; identifies6.KILN as a brand born from Seiroku kiln."
+      ]
+    },
+    {
+      "id": "visit-six-kiln-maker-interview",
+      "url": "https://journal.thebecos.com/seirokugama6kiln/",
+      "title": "BECOS — interview with6.KILN maker Miho Nakamura",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Published2024-01-11 first-hand retailer interview. Maker describes visitors browsing an accessory corner at Seiroku kiln. Not proof of2026 stock of Half-moon or Blue Bouquet."
+      ]
+    },
+    {
+      "id": "visit-2016-official-shop-list",
+      "url": "https://www.2016arita.jp/en/pages/shop-list",
+      "title": "2016/ — official Shop List",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Flagship2016/SHOP in Akasaka, Arita, Saga; the flagship is identified as covering All designers. No current individual item stock or opening hours stated in the read body."
+      ]
+    },
+    {
+      "id": "visit-2016-aritasera",
+      "url": "https://www.arita.gr.jp/shop/2016/",
+      "title": "Arita Será —2016/ shop listing",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Lists2016/ in Arita Será; full facility address2351-169 Akasaka-hei Arita. Footer hours10:00–17:00 are qualified as varying by store; do not apply facility hours unconditionally to2016/SHOP."
+      ]
+    },
+    {
+      "id": "visit-2016-saga-tourism",
+      "url": "https://www.asobo-saga.jp/spots/detail/5e74597c-d120-4616-b45f-42494bdce4ff",
+      "title": "Saga Prefectural Tourism Federation —2016/SHOP",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Public retail shop, full address2351-169 Akasaka-hei, phone0955-42-2016. Tourism listing says10:00–17:30 and Wednesday/irregular closures, differing from the facility general guide; defer opening hours to the current official shop."
+      ]
+    },
+    {
+      "id": "visit-2016-saskia-official",
+      "url": "https://www.2016arita.jp/en/collections/saskia-diez",
+      "title": "2016/ — Saskia Diez official collection",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Official porcelain jewelry collection includes Bracelet DRAKE CUFF No.2 / Grey Silver; official product page linked from the collection. No physical stock guarantee."
+      ]
+    },
+    {
+      "id": "visit-morphosphere-official",
+      "url": "https://morphoyuzen.com/",
+      "title": "染色工藝Morphosphere — official website",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Read full JavaScript-rendered page in fresh Chrome. Describes tint dyed-embroidered jewelry and a dyeing class in Nagoya, not a public walk-in retail shop. Do not infer a Kyoto studio address from BECOS product-origin facts."
+      ]
+    },
+    {
+      "id": "visit-morphosphere-direct-shop",
+      "url": "https://morphosphere.shop-inframe.jp/",
+      "title": "Morphosphere SHOP — maker online shop",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Maker storefront links to morphoyuzen.com as WEB SITE. Online shopping fallback; not evidence of a walk-in address or exact equivalence of other color names to the selected ultramarine SKU."
+      ]
+    },
+    {
+      "id": "visit-morphosphere-stockists",
+      "url": "https://www.creema.jp/c/mnfk-kyoto",
+      "title": "Morphosphere SHOP — maker profile and permanent stockists",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Maker profile read in fresh Chrome lists permanent accessory stockists including Hotel Kanra Kyoto and Kyoto Museum of Crafts and Design. Selected ultramarine pansy stock is not stated. Reviews were not reused."
+      ]
+    },
+    {
+      "id": "visit-kanra-shop-official",
+      "url": "https://www.uds-hotels.com/kanra/kyoto/facilities/",
+      "title": "Hotel Kanra Kyoto — kanra shop facilities",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Public shop on main-building1F,9:00–18:00, possible changes during events; purchases and advice at the front desk. Does not itself list the selected product SKU."
+      ]
+    },
+    {
+      "id": "visit-kanra-address",
+      "url": "https://www.uds-hotels.com/kanra/kyoto/",
+      "title": "Hotel Kanra Kyoto — official address",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Official address190 Kitamachi, Karasuma-dori Rokujo-sagaru, Shimogyo-ku, Kyoto600-8176."
+      ]
+    },
+    {
+      "id": "visit-kanra-access",
+      "url": "https://www.uds-hotels.com/kanra/kyoto/qa/",
+      "title": "Hotel Kanra Kyoto — official access Q&A",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Gojo Station Exit8, turn right and proceed to the second intersection; also walking directions from Kyoto Station. Public directions paraphrased, no map or photograph copied."
+      ]
+    },
+    {
+      "id": "visit-kato-official-store",
+      "url": "https://katoshippo.com/page/about",
+      "title": "加藤七宝製作所 —製作所案内・アクセス・実店舗営業",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Identifies physical store at4-31 Kōnomichō, Nishi-ku, Nagoya.10:00–17:00, closed Wednesday/Saturday/Sunday/public holidays, temporary closures possible. Calls for contact before visiting; seven minutes walk from Shōnai-dōri Station; no dedicated parking."
+      ]
+    },
+    {
+      "id": "visit-mocad-shop",
+      "url": "https://kmtc.jp/shopping-2/",
+      "title": "京都伝統産業ミュージアム —ミュージアムショップ",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Public museum shop in MiyakomesseB1F,10:00–18:00, closure calendar on museum home; online shop is operated by the same museum."
+      ]
+    },
+    {
+      "id": "visit-mocad-access",
+      "url": "https://kmtc.jp/access/",
+      "title": "京都伝統産業ミュージアム —利用案内とアクセス",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Museum at9-1 Okazaki Seishōjichō, Sakyo-ku, Kyoto, MiyakomesseB1F; about ten minutes north on foot from Higashiyama Station Exit1. Museum admission conditions are separate from shop purchases."
+      ]
+    },
+    {
+      "id": "visit-mocad-morphosphere",
+      "url": "https://mocad-shop.com/collections/morphosphere",
+      "title": "MOCAD —Morphosphere official retailer collection",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Museum-operated online shop has a current Morphosphere collection of tint accessories. It does not establish physical stock of the specific ultramarine SKU."
+      ]
+    }
+  ],
+  "unresolved": [
+    "No specific selected SKU or color is confirmed physically in stock at any candidate store. A maker relationship or stockist listing is not a reservation or availability guarantee.",
+    "2016/SHOP current hours differ between official facility-wide information and prefectural tourism. No fixed hours/closure copied to the public proposal; ask the official shop.",
+    "6.KILN accessory corner is described in a2024 interview. Current official gallery access is confirmed, but current selected model availability is not.",
+    "Morphosphere official website describes a Nagoya dyeing class, while BECOS product origin is Kyoto. Neither is used as an unsupported walk-in store address.",
+    "Google Maps search can resolve a similarly named place; external user should check destination name/address in Maps. No reviews or Maps-derived facts imported.",
+    "English Seiroku address retains the official Japanese sub-address 南原甲 rather than guessing its romanization; the Google Maps query uses the exact official Japanese address."
+  ],
+  "secondaryResearchNotUsedForPublicFacts": [
+    {
+      "url": "https://www.arita.jp/pamphlet/data/2026_toukiichi.pdf",
+      "note": "Official2026event PDF search extraction lists Seiroku kiln/6.KILN at the same address and accessory display; full PDF fetch timed out. Not marked body_read and not needed for final public facts."
+    }
+  ]
+}

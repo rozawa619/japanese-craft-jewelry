@@ -1,0 +1,482 @@
+{
+  "checkedAt": "2026-11-16",
+  "scope": "East Japan store research for11published jewelry products; no catalog or UI changes.",
+  "method": "Read public official maker/shop pages and transport-operator visitor information. Store descriptions and access are original summaries. No form submission,contact,order,GoogleMaps scrape,logo/photo/map copying or embedding.",
+  "stockPolicy": "A published physical shop is not proof that the exact featured SKU is in stock. Do not label a production studio,municipal organizer address or old event as a current retail outlet.",
+  "stores": [
+    {
+      "id": "hamamatsuya-hatajuku-main",
+      "name": {
+        "ja": "浜松屋 本店・見える工場",
+        "en": "Hamamatsuya Main Store & Visible Workshop"
+      },
+      "kind": "maker-shop",
+      "physicalStoreStatus": "verified_official_listing",
+      "productIds": [
+        "hamamatsuya-catch-pierced",
+        "hamamatsuya-clip",
+        "hamamatsuya-18k-pierced",
+        "hamamatsuya-pendant"
+      ],
+      "officialUrl": "https://www.hamamatsuya.co.jp/",
+      "officialStoreUrl": "https://www.hamamatsuya.co.jp/info/index.html",
+      "address": {
+        "ja": "〒250-0314 神奈川県足柄下郡箱根町畑宿138",
+        "en": "138 Hatajuku, Hakone-machi, Ashigarashimo-gun, Kanagawa 250-0314, Japan"
+      },
+      "hours": {
+        "ja": "9:00–17:30（公式掲載）",
+        "en": "09:00–17:30, as listed by the maker"
+      },
+      "closedDays": {
+        "ja": "年中無休（公式掲載）",
+        "en": "Open year-round, as listed by the maker"
+      },
+      "access": {
+        "ja": "箱根湯本駅4番乗り場から、畑宿方面・旧街道経由の路線Kで「本陣跡」へ。公式案内の所要目安は約15分です。",
+        "en": "The maker directs visitors from Hakone-Yumoto bus stand 4 to Honjin-ato on routeK toward Hatajuku or Motohakone via the old road; its stated ride estimate is about 15 minutes."
+      },
+      "visitSummary": {
+        "ja": "箱根・畑宿にある工房直営の本店。寄木細工を見ながら、気になる耳飾りやペンダントの現物を探す訪問先です。",
+        "en": "The maker’s main shop in Hatajuku, Hakone, with a visible workshop. A place to explore its marquetry collection in person."
+      },
+      "parking": {
+        "ja": "公式案内に約10台の駐車場表記あり。",
+        "en": "The maker lists parking for about 10 cars."
+      },
+      "reservationStatus": "retail_visit_requirement_not_stated",
+      "stockStatus": "specific_sku_not_confirmed",
+      "stockNote": {
+        "ja": "紹介商品の店頭在庫・現在の柄は未確認です。訪問前に公式サイトで営業情報と取扱いを確認してください。",
+        "en": "The featured SKU, current patterns and store stock are not confirmed. Check the maker’s latest shop information and availability before visiting."
+      },
+      "mapQuery": "浜松屋 本店 見える工場 神奈川県足柄下郡箱根町畑宿138",
+      "sourceIds": [
+        "hamamatsuya-store-guide-v8"
+      ],
+      "checkedAt": "2026-11-16",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B5%9C%E6%9D%BE%E5%B1%8B%20%E6%9C%AC%E5%BA%97%20%E8%A6%8B%E3%81%88%E3%82%8B%E5%B7%A5%E5%A0%B4%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E8%B6%B3%E6%9F%84%E4%B8%8B%E9%83%A1%E7%AE%B1%E6%A0%B9%E7%94%BA%E7%95%91%E5%AE%BF138"
+    },
+    {
+      "id": "hakone-maruyama-main",
+      "name": {
+        "ja": "箱根丸山物産 本店",
+        "en": "Hakone Maruyama Bussan Main Store"
+      },
+      "kind": "retailer-shop",
+      "physicalStoreStatus": "verified_official_listing",
+      "productIds": [
+        "maruyama-clip-c",
+        "maruyama-clip-d",
+        "maruyama-pierced-c",
+        "maruyama-pierced-d"
+      ],
+      "officialUrl": "https://www.hakonemaruyama.co.jp/",
+      "officialStoreUrl": "https://www.hakonemaruyama.co.jp/html/company.html",
+      "address": {
+        "ja": "〒250-0521 神奈川県足柄下郡箱根町箱根17番地",
+        "en": "17 Hakone, Hakone-machi, Ashigarashimo-gun, Kanagawa 250-0521, Japan"
+      },
+      "hours": {
+        "ja": "10:00–16:00（公式案内・箱根ナビ掲載）",
+        "en": "10:00–16:00, listed in the official guide and Hakone Navi"
+      },
+      "closedDays": {
+        "ja": "年末年始・不定休あり（箱根ナビ掲載）。訪問前に公式の最新情報をご確認ください。",
+        "en": "Year-end/NewYear and occasional closures are listed by Hakone Navi; check the retailer’s latest information."
+      },
+      "access": {
+        "ja": "箱根登山バス「箱根関所跡」から徒歩約1分。",
+        "en": "About1 minute on foot from the Hakone-Sekisho-ato bus stop, as listed by Hakone Navi."
+      },
+      "visitSummary": {
+        "ja": "箱根関所通りの寄木細工専門店。オンラインで紹介している丸山の耳飾りについて、現地の取扱いを確認する際の店舗です。",
+        "en": "A marquetry specialist on Hakone Sekisho Street. Use its official shop information to check the in-person selection of the earrings listed online."
+      },
+      "parking": {
+        "ja": "店舗前の一般車・マイクロバス駐車の公式案内あり。大型バスは近隣の恩賜箱根公園駐車場案内。",
+        "en": "The retailer publishes parking guidance for cars/minibuses and directs large coaches to the nearby Onshi-Hakone Park car park."
+      },
+      "reservationStatus": "retail_visit_requirement_not_stated",
+      "stockStatus": "specific_sku_not_confirmed",
+      "stockNote": {
+        "ja": "C/Dのピアス・イヤリングの店頭在庫や柄は未確認です。",
+        "en": "Physical stock and patterns of the C/D pierced and clip-on pairs have not been confirmed."
+      },
+      "mapQuery": "箱根丸山物産 本店 神奈川県足柄下郡箱根町箱根17",
+      "sourceIds": [
+        "maruyama-store-guide-v8",
+        "maruyama-hakonenavi-access-v8"
+      ],
+      "checkedAt": "2026-11-16",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E7%AE%B1%E6%A0%B9%E4%B8%B8%E5%B1%B1%E7%89%A9%E7%94%A3%20%E6%9C%AC%E5%BA%97%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E8%B6%B3%E6%9F%84%E4%B8%8B%E9%83%A1%E7%AE%B1%E6%A0%B9%E7%94%BA%E7%AE%B1%E6%A0%B917"
+    },
+    {
+      "id": "rinzen-hirai-shop",
+      "name": {
+        "ja": "東京ガラス工房 凛然",
+        "en": "Tokyo Glass Studio RINZEN"
+      },
+      "kind": "maker-shop",
+      "physicalStoreStatus": "verified_official_listing",
+      "productIds": [
+        "rinzen-seika-amber-pierced-earrings",
+        "rinzen-leaf-glass-pendant"
+      ],
+      "officialUrl": "https://rin-zen.com/",
+      "officialStoreUrl": "https://rin-zen.com/shop.html",
+      "address": {
+        "ja": "〒132-0035 東京都江戸川区平井5-42-6 1F",
+        "en": "1F, 5-42-6 Hirai, Edogawa-ku, Tokyo 132-0035, Japan"
+      },
+      "hours": {
+        "ja": "10:00–19:00（公式掲載）",
+        "en": "10:00–19:00, as listed by the maker"
+      },
+      "closedDays": {
+        "ja": "月曜日（公式掲載）",
+        "en": "Monday, as listed by the maker"
+      },
+      "access": {
+        "ja": "平井5丁目の店舗です。詳しい経路は公式店舗案内とGoogleマップで確認できます。",
+        "en": "The shop is in Hirai 5-chome. Use the official location and Google Maps for a route; no station travel-time estimate is asserted here."
+      },
+      "visitSummary": {
+        "ja": "切子の製造・販売・体験を行う凛然の店舗。切子グラスやアクセサリーのコレクションを紹介しています。",
+        "en": "RINZEN’s published maker shop, connected with its kiriko making, sales and classes. The maker also produces glass accessories."
+      },
+      "parking": {
+        "ja": "専用駐車場なし。公式案内は近隣コインパーキングの利用を案内。",
+        "en": "No dedicated parking; the official guide suggests nearby paid parking."
+      },
+      "reservationStatus": "retail_visit_requirement_not_stated",
+      "stockStatus": "specific_sku_not_confirmed",
+      "stockNote": {
+        "ja": "「星華」「葉の雫」の店頭在庫は未確認です。来店前に公式の営業情報と商品取扱いを確認してください。",
+        "en": "Store stock of Seika and Leaf dewdrop is unconfirmed. Check the maker’s latest opening information and product availability before visiting."
+      },
+      "mapQuery": "東京ガラス工房 凛然 東京都江戸川区平井5-42-6",
+      "sourceIds": [
+        "rinzen-store-guide-v8",
+        "rinzen-maker-concept-v8"
+      ],
+      "checkedAt": "2026-11-16",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E3%82%AC%E3%83%A9%E3%82%B9%E5%B7%A5%E6%88%BF%20%E5%87%9B%E7%84%B6%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B1%9F%E6%88%B8%E5%B7%9D%E5%8C%BA%E5%B9%B3%E4%BA%955-42-6"
+    }
+  ],
+  "productStoreIds": {
+    "hamamatsuya-catch-pierced": [
+      "hamamatsuya-hatajuku-main"
+    ],
+    "hamamatsuya-clip": [
+      "hamamatsuya-hatajuku-main"
+    ],
+    "hamamatsuya-18k-pierced": [
+      "hamamatsuya-hatajuku-main"
+    ],
+    "hamamatsuya-pendant": [
+      "hamamatsuya-hatajuku-main"
+    ],
+    "maruyama-clip-c": [
+      "hakone-maruyama-main"
+    ],
+    "maruyama-clip-d": [
+      "hakone-maruyama-main"
+    ],
+    "maruyama-pierced-c": [
+      "hakone-maruyama-main"
+    ],
+    "maruyama-pierced-d": [
+      "hakone-maruyama-main"
+    ],
+    "rinzen-seika-amber-pierced-earrings": [
+      "rinzen-hirai-shop"
+    ],
+    "rinzen-leaf-glass-pendant": [
+      "rinzen-hirai-shop"
+    ],
+    "checos-japanese-apricot-pierced-earrings": []
+  },
+  "officialEntries": {
+    "hamamatsuya-catch-pierced": {
+      "makerOrShopHome": "https://www.hamamatsuya.co.jp/",
+      "homeRole": "official_maker",
+      "productPages": [
+        {
+          "locale": "shared",
+          "url": "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html",
+          "merchantId": "hamamatsuya",
+          "labelRole": "official_catalog"
+        }
+      ]
+    },
+    "hamamatsuya-clip": {
+      "makerOrShopHome": "https://www.hamamatsuya.co.jp/",
+      "homeRole": "official_maker",
+      "productPages": [
+        {
+          "locale": "shared",
+          "url": "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html",
+          "merchantId": "hamamatsuya",
+          "labelRole": "official_catalog"
+        }
+      ]
+    },
+    "hamamatsuya-18k-pierced": {
+      "makerOrShopHome": "https://www.hamamatsuya.co.jp/",
+      "homeRole": "official_maker",
+      "productPages": [
+        {
+          "locale": "shared",
+          "url": "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html",
+          "merchantId": "hamamatsuya",
+          "labelRole": "official_catalog"
+        }
+      ]
+    },
+    "hamamatsuya-pendant": {
+      "makerOrShopHome": "https://www.hamamatsuya.co.jp/",
+      "homeRole": "official_maker",
+      "productPages": [
+        {
+          "locale": "shared",
+          "url": "https://www.hamamatsuya.co.jp/item/muku/accessory.html",
+          "merchantId": "hamamatsuya",
+          "labelRole": "official_catalog"
+        }
+      ]
+    },
+    "maruyama-clip-c": {
+      "makerOrShopHome": "https://www.hakonemaruyama.co.jp/",
+      "homeRole": "official_retailer",
+      "productPages": [
+        {
+          "locale": "shared",
+          "url": "https://www.hakonemaruyama.co.jp/shopdetail/000000000467/",
+          "merchantId": "hakone-maruyama",
+          "labelRole": "official_retailer_product"
+        }
+      ]
+    },
+    "maruyama-clip-d": {
+      "makerOrShopHome": "https://www.hakonemaruyama.co.jp/",
+      "homeRole": "official_retailer",
+      "productPages": [
+        {
+          "locale": "shared",
+          "url": "https://www.hakonemaruyama.co.jp/shopdetail/000000000468/",
+          "merchantId": "hakone-maruyama",
+          "labelRole": "official_retailer_product"
+        }
+      ]
+    },
+    "maruyama-pierced-c": {
+      "makerOrShopHome": "https://www.hakonemaruyama.co.jp/",
+      "homeRole": "official_retailer",
+      "productPages": [
+        {
+          "locale": "shared",
+          "url": "https://www.hakonemaruyama.co.jp/shopdetail/000000000473/",
+          "merchantId": "hakone-maruyama",
+          "labelRole": "official_retailer_product"
+        }
+      ]
+    },
+    "maruyama-pierced-d": {
+      "makerOrShopHome": "https://www.hakonemaruyama.co.jp/",
+      "homeRole": "official_retailer",
+      "productPages": [
+        {
+          "locale": "shared",
+          "url": "https://www.hakonemaruyama.co.jp/shopdetail/000000000474/",
+          "merchantId": "hakone-maruyama",
+          "labelRole": "official_retailer_product"
+        }
+      ]
+    },
+    "rinzen-seika-amber-pierced-earrings": {
+      "makerOrShopHome": "https://rin-zen.com/",
+      "homeRole": "official_maker",
+      "productPages": [
+        {
+          "locale": "en",
+          "url": "https://en.thebecos.com/products/s0138-028?currency=USD",
+          "merchantId": "becos-en",
+          "labelRole": "official_retailer_product"
+        },
+        {
+          "locale": "ja",
+          "url": "https://www.thebecos.com/products/s0138-028",
+          "merchantId": "becos-ja",
+          "labelRole": "official_retailer_product"
+        }
+      ]
+    },
+    "rinzen-leaf-glass-pendant": {
+      "makerOrShopHome": "https://rin-zen.com/",
+      "homeRole": "official_maker",
+      "productPages": [
+        {
+          "locale": "en",
+          "url": "https://en.thebecos.com/products/s0138-099?currency=USD",
+          "merchantId": "becos-en",
+          "labelRole": "official_retailer_product"
+        },
+        {
+          "locale": "ja",
+          "url": "https://www.thebecos.com/products/s0138-099",
+          "merchantId": "becos-ja",
+          "labelRole": "official_retailer_product"
+        }
+      ]
+    },
+    "checos-japanese-apricot-pierced-earrings": {
+      "makerOrShopHome": null,
+      "homeRole": "manufacturer_owned_home_not_confirmed",
+      "productPages": [
+        {
+          "locale": "en",
+          "url": "https://en.thebecos.com/products/s0050-015?currency=USD",
+          "merchantId": "becos-en",
+          "labelRole": "official_retailer_product"
+        },
+        {
+          "locale": "ja",
+          "url": "https://www.thebecos.com/products/s0050-015",
+          "merchantId": "becos-ja",
+          "labelRole": "official_retailer_product"
+        }
+      ]
+    }
+  },
+  "unconfirmed": [
+    {
+      "makerId": "checos",
+      "productIds": [
+        "checos-japanese-apricot-pierced-earrings"
+      ],
+      "status": "physical_store_not_confirmed",
+      "manufacturerOwnedWebsite": null,
+      "physicalStoreIds": [],
+      "googleMapsUrl": null,
+      "summary": {
+        "ja": "現在訪問できる常設販売店は、一次情報で確認できていません。商品は公式取扱店BECOSのページから確認できます。",
+        "en": "A current walk-in stockist has not been verified from primary information. View the item through the verified official retailer,BECOS."
+      },
+      "fallbackOfficialUrls": {
+        "ja": "https://www.thebecos.com/products/s0050-015",
+        "en": "https://en.thebecos.com/products/s0050-015?currency=USD"
+      },
+      "sourceIds": [
+        "checos-becos-brand-v8",
+        "checos-maker-directory-v8",
+        "checos-hakuichi-past-exhibition-v8"
+      ],
+      "reason": "Maker profile provides a2020production-workshop affiliation but no shop/hours; official retailer exhibition was2022only. Do not present former event venue or the municipal site footer as a current CHECOS purchase location."
+    }
+  ],
+  "sources": [
+    {
+      "id": "hamamatsuya-store-guide-v8",
+      "url": "https://www.hamamatsuya.co.jp/info/index.html",
+      "title": "浜松屋 — 店舗案内・アクセス",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Official maker identifies its main store and visible factory at Hatajuku138,Hakone,Kanagawa250-0314; listed hours09:00–17:30 and open year-round.",
+        "Nearest stop Honjin-ato. Official access describes Hakone-Yumoto bus stand4, Hatajuku or Motohakone-ko via old road, routeK, about15min. About10 parking spaces. Individual accessory SKU stock and retail-visit reservation rules are not stated."
+      ]
+    },
+    {
+      "id": "maruyama-store-guide-v8",
+      "url": "https://www.hakonemaruyama.co.jp/html/company.html",
+      "title": "箱根丸山物産 — 会社概要・本店",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Official retailer explicitly identifies its main store at17Hakone,Hakone-machi,Kanagawa250-0521, adjacent museum at16. A store/museum guide on the page lists10:00–16:00 and year-end/NewYear closure; individual store closure scope is supplemented with Hakone Navi.",
+        "Public retail presence and store parking are described; no specific earring SKU physical inventory is established."
+      ]
+    },
+    {
+      "id": "maruyama-hakonenavi-access-v8",
+      "url": "https://www.hakonenavi.jp/spot/19587?course_purpose=walk",
+      "title": "小田急箱根・箱根ナビ — 箱根丸山物産本店",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Transport operator tourism site identifies Hakone Maruyama main store at17Hakone, hours10:00–16:00, year-end/NewYear and irregular closures, and1-minute walk from Hakone-Sekisho-ato bus stop.",
+        "Use as transport/visit information, not proof of individual product inventory. Footer identifies Odakyu Electric Railway and Odakyu Hakone."
+      ]
+    },
+    {
+      "id": "rinzen-store-guide-v8",
+      "url": "https://rin-zen.com/shop.html",
+      "title": "東京ガラス工房 凛然 — 店舗概要",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Official maker lists a shop at1F,5-42-6Hirai,Edogawa-ku,Tokyo132-0035, hours10:00–19:00, closedMonday and no dedicated parking.",
+        "Specific Seika amber and Leaf dewdrop physical stock, walk-in purchase reservation rules and current travel time from a station are not stated."
+      ]
+    },
+    {
+      "id": "rinzen-maker-concept-v8",
+      "url": "https://rin-zen.com/concept.html",
+      "title": "東京ガラス工房 凛然 — 凛然について",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Official maker states that it manufactures and sells kiriko and offers classes/experiences; also describes making glass accessories. This supports the published location as a maker shop rather than merely a registered address.",
+        "The official navigation links https://www.rin-zenshop.com/ as its online shop, but this research could not read its product content reliably; retain BECOS individual product links for the verified SKUs."
+      ]
+    },
+    {
+      "id": "checos-becos-brand-v8",
+      "url": "https://www.thebecos.com/collections/checos",
+      "title": "BECOS — CHECOS公式取扱いブランド紹介",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "BECOS lists CHECOS products and identifies maker ChiekoYanai. This is an official retailer brand page, not a verified manufacturer-owned website or physical retail address.",
+        "The checked page does not identify a current CHECOS walk-in retail store."
+      ]
+    },
+    {
+      "id": "checos-maker-directory-v8",
+      "url": "https://kanazawa-dkogei.com/artist/2392/",
+      "title": "金沢市・金沢市工芸協会 — 柳井千恵子",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Current municipal/craft-association artist profile identifies metalwork creator ChiekoYanai and records production at Kanazawa Machiya Shokunin Kobo from2020.",
+        "The profile does not identify a public retail shop or its visiting hours. The page footer city-hall address belongs to the organizer, not the artist; do not map it as a CHECOS store. No images are copied."
+      ]
+    },
+    {
+      "id": "checos-hakuichi-past-exhibition-v8",
+      "url": "https://kanazawa.hakuichi.co.jp/news/detail.php?news_id=269",
+      "title": "箔一 — 2022年 金澤しつらえアクセサリー展",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Official retailer announcement places CHECOS in the second exhibition period2022-10-01 to2022-11-06 at Kanazawa Shitsurae.",
+        "This is a finished2022event and is not evidence of current permanent stock or a present-day CHECOS sales location. Not proposed as a public purchase destination."
+      ]
+    }
+  ],
+  "cautions": [
+    "Do not use search-snippet Wednesday closure for Maruyama: the body re-read lists year-end/NewYear; current Hakone Navi adds irregular closures. Public text uses the current body and no fixed Wednesday promise.",
+    "Hamamatsuya secondary brochures may list another Hatajuku address or hours; use current maker guide Hatajuku138 and09:00–17:30,not older secondary collateral.",
+    "RINZEN official news list contains older notices; the current shop page lists10:00–19:00/Monday. Before-visiting confirmation is necessary; this research does not independently certify a business is operating at this instant.",
+    "No fact here proves individual accessory stock,sales permission for photographs,or a legal endorsement. Legal review of the presentation/linking method is separate."
+  ],
+  "validation": {
+    "productReferences": "11/11 published IDs",
+    "verifiedPhysicalStores": 3,
+    "productsWithVerifiedStoreMapping": 10,
+    "unconfirmedPhysicalStoreProducts": 1,
+    "mapUrls": "3/3 encoded Google Maps search URLs match exact independently sourced name/address",
+    "catalogUiMutations": false
+  }
+}

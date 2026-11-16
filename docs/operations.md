@@ -1,8 +1,8 @@
-# 商品・画像・価格・広告・公開の更新手順 — 0.7
+# 商品・店舗・画像・価格・広告・公開の更新手順 — 0.8
 
-更新日：2026-11-16。AGENTS.md、docs/constitution.md、specs/007-balanced-jewelry-discovery/、docs/handoff.mdを先に読む。現行は16商品・6都府県・6技法、木8／非木8の構成。画像は現行registryの13種類で15商品に対応する。公開・検証の確定状態は007のvalidationとdiscovery-stage結果を参照する。
+更新日：2026-11-16。AGENTS.md、docs/constitution.md、specs/008-official-links-and-visits/、docs/handoff.mdを先に読む。現行は16商品・6都府県・6技法、木8／非木8の構成。画像は現行registryの13種類で15商品に対応する。店舗・商品関係・確認済公式ホームURLの正本はsrc/data/visits.json、公式商品URLはcatalog.links。公開・検証の確定状態は008のvalidationとvisit-stage結果を参照する。
 
-最新ユーザー指示は、30代前後の女性、短い「AIイメージ / AI image」表示、木以外も選べる構成、日英で使いやすい入口。Contact非公開、SORA、ブログなしを維持する。
+最新ユーザー指示は、20代後半〜30代前半の女性、全商品の公式URLと現地案内、短い「AIイメージ / AI image」表示、木以外も選べる構成、日英で使いやすい入口。Contact非公開、SORA、ブログなしを維持する。
 
 ## 基本操作
 
@@ -23,7 +23,7 @@ Node.js24.22.1以上、pnpm11.25.0。通常のコンテンツ更新ではlockfil
 1. 公式商品・工房・販売店の本文を確認し、docs/research/sources.jsonへ安定ID、URL、題名、実確認日、支える事実を記録する。調査提案は履歴で、catalogとsourcesの別正本を作らない。
 2. catalog.jsonのmakers／merchants／prefectures／crafts／materials／productTypesへ必要なmasterを追加する。販売店住所から製造地を推定せず、一般技法と個別商品の認証を分ける。
 3. productsをsrc/lib/schema.tsに沿って追加する。安定ID／slug、種類、素材、工房、地域、技法、出典、確認日を揃える。不明仕様はnull。未確認地域や未許諾写真IDは空配列。weightPerPieceGramsは片耳の重さが確認できる耳飾りだけで使い、ブレスレットやネックレスの重さを流用しない。
-4. translations/ja.jsonへ表示文を追加する。数値・広告URL・承認・locale別価格はcatalogが正本で、訳文だけに事実を追加しない。素材や仕上げの重要補足はwhatToCheckへ簡潔に残し、販売手順の責任説明は公開UIへ戻さない。
+4. translations/ja.jsonへ表示文を追加する。数値・広告URL・承認・locale別価格はcatalogが正本で、訳文だけに事実を追加しない。素材や仕上げの重要補足はwhatToCheckへ簡潔に残し、不要な取引責任の説明は公開UIへ戻さず、008で追加する店舗や通販への実用的な買い方案内と区別する。
 5. src/content/products/＜ID＞.mdとproducts/ja/＜同ID＞.mdに独自本文を書く。productId／publishStatus、日本語にはlocale:jaを付ける。デザインと服の提案を書き、使用経験・レビュー・快適性・低アレルギー等を作らない。
 6. product-stories.jsonへ両言語のheadline、standfirst、highlights3件、outfit.title/bodyを揃える。価格・重量・URLは重複しない。
 7. 確認した通常リンクと必要ならlocale別価格を下記手順で追加する。画像は生成registryと台帳に分離する。
@@ -55,11 +55,11 @@ locale無しは共有リンクで両言語へ出る。個別localeの行と同�
 
 リンクを変更したら主CTA・再掲・追従CTAの行き先、同localeのDisclosure、JPY/USDと確認日、1ボタン切替後の表示を確認する。サイト本文の言語と、リンク先の対応言語・発送先は別の事実として扱う。
 
-## 3. 画像を30代前後の雰囲気で更新する
+## 3. 画像を20代後半〜30代前半の雰囲気で更新する
 
-現行の対応はsrc/data/editorial-images.jsonが正本。13画像で15商品に対応し、C/Dの耳飾りは2商品で共有、18Kは抽象装飾。ファイル名を本文へ別一覧として固定せず、registryから照合する。古い世代がpublic/imagesに残っていても現行数へ二重計上しない。
+現行の対応はsrc/data/editorial-images.jsonが正本。13画像で15商品に対応し、C/Dの耳飾りは2商品で共有、18Kは抽象装飾。ファイル名を本文へ別一覧として固定せず、registryから照合する。過去世代は公開対象外の履歴として管理し、現行数へ二重計上しない。使用中で移動できないローカル旧ファイルはGitと書出しから除外し、台帳のlocalRetiredPathへ記録する。履歴の正本はdocs/archive、現在の公開対象はregistry。
 
-制作する人物は30代前半を中心とした架空の成人日本人女性。既存の27/29歳設定は30歳前後の雰囲気として残し、新しい制作は32〜34歳を目安にする。かわいい、個性的、すっきりした雰囲気などは変えてよい。年代が上に見える人物へ戻さない。
+制作する人物は概ね27〜33歳の架空の成人日本人女性。既存の27/29歳と32/33歳の画像は保ち、より上に見える画像はこの範囲を目安に更新する。かわいい、個性的、すっきりした雰囲気などは変えてよい。年代が上に見える人物へ戻さない。
 
 更新するものは次の4つ。
 
@@ -98,15 +98,25 @@ CTAとDisclosureは同じlocale別集合を使い、最初の広告リンクよ�
 
 CSPとActionsの権限分離を維持する。広告script、解析、formを追加する場合は別仕様で外部送信・Cookie・Privacyを見直し、一括でCSPを無効にしない。
 
-## 7. 検証・公開・納品
+## 7. 公式URLと店舗・行き方を更新する
 
-検証は変更に応じてverify／readiness／browser／ads／linksを実行する。PC1440／390／320で日英入口、16商品の表示、素材の偏らない順序、絞込・0件・解除、braceletを含む種類、JPY/USDと小数、locale別リンク、短いAIcaption、現行画像、詳細開閉、追従CTA、Contact404を確認する。
+1. 商品の公式ページ／公式カタログはcatalog.linksのofficialProductUrlが正本。各localeの実ページとhostを確認し、src/lib/visits.tsのofficialProductLinks経由で全16商品に通常URLを明示する。広告化したCTAとは別の通常リンクを残し、公式ページが無い商品を推測で公開しない。
+2. 店舗と商品関係の正本はsrc/data/visits.json。storesにはid、日英name/address/hours/closedDays/access/visitSummary/stockNote、kind、公式URL2種、mapQuery、sourceIds、checkedAtを記録する。確認できない営業時間等はnullとし、元ページを読まずに作らない。
+3. productsには公開商品ごとのproductId、storeIds、officialHomeUrl、officialHomeRole、sourceIds、fallback、checkedAtを置く。maker/retailerの役割を区別し、公式ホームURLと役割は両方設定または両方null。現行は8店舗を15商品へ対応し、CHECOSはstoreIds空と日英fallbackで公式取扱店通販へ進める。
+4. 店舗が確認できても当該SKUの在庫は未確認ならそのままにする。清六窯・加藤七宝の事前連絡案内を残す。過去催事、作業場や登記住所、自治体サイトのフッター住所を現行の販売店にしない。
+5. 地図URLはstoreMapLinksがmapQueryから生成する。search/dirの固定originとapi=1を維持し、店舗名と住所をエンコードする。ユーザーの現在地を収集せず、APIキー・外部script・地図埋込・写真や口コミの転載は追加しない。
+6. 公式サイトの基本情報を短い独自文で案内する。法務の根拠と限界はdocs/visit-publication-review.mdとresearch/visit-publication-legal-v8.jsonを確認し、全面適法やGoogle／店舗との提携を保証しない。掲載方法に問題があれば転載等を行わず、公式情報と行き方・買い方のリンク案内に置き換える。
+7. src/lib/visits.tsのschema／collectVisitValidationErrorsと対応検証を実行し、全公開productId、重複ID、storeIds、実読sourceIds、日付、URLの安全性、Googleマップのquery/destinationを確認する。VisitGuide表示で公式商品URL、公式ホームの役割、日英のアクセス、在庫注記、最終確認日を照合する。
+
+## 8. 検証・公開・納品
+
+検証は変更に応じてverify／readiness／browser／ads／linksを実行する。PC1440／390／320で日英入口、16商品の表示、素材の偏らない順序、絞込・0件・解除、braceletを含む種類、JPY/USDと小数、locale別リンク、短いAIcaption、現行画像、全商品の公式URL、店舗の住所・事前連絡・地図検索／経路、店未確認時の通販案内、詳細開閉、追従CTA、Contact404を確認する。
 
 再実行scriptはscripts/check-bilingual.mjs、check-product-details.mjs、check-hosted-release.mjs等を参照。CHECK_BASE_URL、CHECK_REPORT_PATH、CHECK_SCREENSHOT_PREFIX等の各scriptが持つ設定で、localとhostedの出力を分ける。古いclear-stageレポート名の既定値を使うscriptは出力先を明示し、履歴を上書きしない。
 
-Gitへ保存してpushした後はActionsの対象commitとsuccess、実公開URLでの反映を確認する。007のvalidation／tasks、docs/discovery-stage-*.json、verification、deployment-results、handoffを実測に合わせる。未実行・旧version・未配信を成功へ読み替えない。0.6はclear-stage、0.5はappeal、0.4はselectionの履歴。
+Gitへ保存してpushした後はActionsの対象commitとsuccess、実公開URLでの反映を確認する。008のvalidation／tasks、docs/visit-stage-*.json、verification、deployment-results、handoffを実測に合わせる。未実行・旧version・未配信を成功へ読み替えない。0.7はdiscovery-stage（全公開132画面は未実行）、0.6はclear-stage、0.5はappeal、0.4はselectionの履歴。
 
-pnpm packageで隣接するjapanese-craft-jewelry-delivery/sourceへ書出し、別途ZIPを作る。registryが参照する現行画像、日英の本文、価格とリンクの正本、台帳、仕様、全検証script・レポートが含まれることを確認する。node_modules／dist／artifacts／.env／認証情報／内部参照写真を除外し、ZIPの必須ファイル・展開内容も照合する。
+pnpm packageで隣接するjapanese-craft-jewelry-delivery/sourceへ書出し、別途ZIPを作る。registryが参照する現行画像、日英の本文、価格・リンク・店舗関係の正本、台帳、仕様、全検証script・レポートが含まれることを確認する。node_modules／dist／artifacts／.env／認証情報／内部参照写真を除外し、ZIPの必須ファイル・展開内容も照合する。
 
 リポジトリ：https://github.com/rozawa619/japanese-craft-jewelry
 

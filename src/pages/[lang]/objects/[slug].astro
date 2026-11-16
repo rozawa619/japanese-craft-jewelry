@@ -8,6 +8,7 @@ import {storyFor} from '../../../lib/product-stories';
 import Disclosure from '../../../components/Disclosure.astro';
 import RetailerLink from '../../../components/RetailerLink.astro';
 import Sources from '../../../components/Sources.astro';
+import VisitGuide from '../../../components/VisitGuide.astro';
 import ProductCard from '../../../components/ProductCard.astro';
 import {catalogFor,productsFor,makerFor,price,labels,resolve,linksFor} from '../../../lib/catalog';
 import {contentFor,contentSlug} from '../../../lib/content';
@@ -50,6 +51,7 @@ const destinationNote=t(locale,'Opens the official website in a new tab.','公�
  </section>
  <section class="purchase-story" aria-labelledby="why-this-piece"><div><p class="eyebrow">{t(locale,'WHY WE PICKED IT','このひとつを選んだ理由')}</p><h2 id="why-this-piece">{t(locale,'A detail to fall for.','惹かれる、その理由。')}</h2></div><div class="purchase-story-copy">{Content&&<div class="prose"><Content/></div>}</div></section>
  <section class="purchase-outfit" aria-labelledby="outfit-title"><div><p class="eyebrow">{t(locale,'PICTURE YOUR OUTFIT','こんな装いの日に')}</p><h2 id="outfit-title">{story.outfit.title}</h2></div><div><p>{story.outfit.body}</p></div></section>
+ <VisitGuide productId={p.id} locale={locale}/>
  <section class="purchase-next"><div><h2>{t(locale,'Found a detail you love?','気になったら、お店で。')}</h2><p>{t(locale,'Take a closer look at the design on its official page.','気になるデザインを、公式サイトでも。')}</p></div><div><RetailerLink productId={p.id} locale={locale} label={destinationLabel}/><p class="purchase-destination-note">{destinationNote}</p></div></section>
  <div class="purchase-information">
   <details class="purchase-details" data-product-details><summary>{t(locale,'Materials, size & fittings','素材・サイズ・金具について')}</summary><div class="purchase-details-body"><dl class="spec-list">{specs.map(([label,value])=><div><dt>{label}</dt><dd>{value}</dd></div>)}</dl><h2>{t(locale,'Materials & finish notes','素材・仕上げの補足')}</h2><ul>{p.whatToCheck.map(item=><li>{item}</li>)}</ul><p class="purchase-price-note">{t(locale,'Product information checked ','商品情報の確認：')}{p.lastVerifiedAt}</p></div></details>

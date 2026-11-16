@@ -1,4 +1,5 @@
 import {chromium} from '@playwright/test';
+import {assertVisitGuide} from './visit-assertions.mjs';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {readFile,writeFile} from 'node:fs/promises';
@@ -11,6 +12,7 @@ const base='/'+baseParts.join('/')+(baseParts.length?'/':'');
 const report={checkedAt:new Date().toISOString(),origin,base,method:'Read-only verification of the deployed site with fresh Chrome and HTTP requests. Canonical sitemap routes, inline executable CSP hashes, current local-vs-published image hashes, deferred Contact, operator, material links and final factual details. No retailer navigation, form entry, application or registration.',checks:[],failures:[],pages:[],assets:[],consoleErrors:[],pageErrors:[]};
 const catalog=JSON.parse(await readFile(resolve(root,'src/data/catalog.json'),'utf8'));
 const translations=JSON.parse(await readFile(resolve(root,'src/data/translations/ja.json'),'utf8'));
+const visits=JSON.parse(await readFile(resolve(root,'src/data/visits.json'),'utf8'));
 const registry=JSON.parse(await readFile(resolve(root,'src/data/editorial-images.json'),'utf8'));
 const browser=await chromium.launch({channel:'chrome',headless:true});
 const page=await browser.newPage({viewport:{width:390,height:844},reducedMotion:'reduce'});
@@ -86,6 +88,7 @@ try{
   for(const id of ['rinzen-seika-amber-pierced-earrings','six-kiln-half-moon-earrings','hamamatsuya-pendant',...catalog.products.filter(product=>product.publishStatus==='published'&&product.productType.includes('bracelet')&&product.weightPerPieceGrams===null).map(product=>product.id)])await check(locale+' final facts '+id,async()=>{
    const product=catalog.products.find(product=>product.id===id),localized=locale==='ja'?translations.products[id]:product;
    const response=await page.goto(url(locale,'objects/'+product.slug+'/'));assert.equal(response.status(),200);
+   const visitFlow=await assertVisitGuide(page,product,locale,catalog,visits);
    const details=page.locator('[data-product-details]');assert.equal(await details.evaluate(n=>n.open),false);
    await details.locator('summary').click();
    const text=(await details.innerText()).replace(/\s+/g,' ');
@@ -97,11 +100,19 @@ try{
    if(!ear&&product.weightPerPieceGrams===null)assert.equal(await weightRow.count(),0,'Non-earring unnormalized weight should stay in the source notes.');
    else{weight=await weightRow.locator('dd').innerText();assert.equal(weight,locale==='ja'?'片耳の重さは未確認':'Per-ear weight not confirmed')}
    assert.equal(await page.locator('summary').filter({hasText:/shipping|returns|配送|返品|送料/i}).count(),0);
-   return {weight,materialNotes:localized.whatToCheck};
+   return {weight,materialNotes:localized.whatToCheck,visitFlow};
   });
  }
+ for(const browserLocale of ['ja-JP','fr-FR'])await check('Hosted language entry '+browserLocale+' keeps both choices visible',async()=>{
+  const context=await browser.newContext({locale:browserLocale,viewport:{width:320,height:740}});const entryPage=await context.newPage();
+  entryPage.on('pageerror',error=>report.pageErrors.push({url:entryPage.url(),message:error.message}));entryPage.on('console',message=>{if(message.type()==='error')report.consoleErrors.push({url:entryPage.url(),message:message.text()})});
+  try{const response=await entryPage.goto(origin+base+'?entry=hosted#selection',{waitUntil:'load'});assert.equal(response.status(),200);assert.equal(new URL(entryPage.url()).pathname,base);assert.equal(await entryPage.locator('meta[http-equiv="refresh"]').count(),0);assert.equal(await entryPage.locator('[data-entry-language]').count(),2);const preferred=browserLocale.startsWith('ja')?'ja':'en';assert.equal(await entryPage.locator('[data-entry-language]').first().getAttribute('data-entry-language'),preferred);for(const locale of ['en','ja']){const link=entryPage.locator('[data-entry-language="'+locale+'"]');assert.equal(await link.isVisible(),true);const destination=new URL(await link.getAttribute('href'),entryPage.url());assert.equal(destination.pathname,base+locale+'/');assert.equal(destination.search,'?entry=hosted');assert.equal(destination.hash,'#selection')}const dimensions=await entryPage.evaluate(()=>({width:innerWidth,document:document.documentElement.scrollWidth}));assert.ok(dimensions.document<=321);return {preferred,bothLinks:true,noForcedRedirect:true,dimensions}}finally{await context.close()}
+ });
+ await check('Hosted language entry keeps Japanese accessible without JavaScript',async()=>{
+  const context=await browser.newContext({javaScriptEnabled:false,viewport:{width:320,height:740}});const entryPage=await context.newPage();try{await entryPage.goto(origin+base);for(const locale of ['en','ja'])assert.equal(await entryPage.locator('[data-entry-language="'+locale+'"]').isVisible(),true);await entryPage.locator('[data-entry-language="ja"]').click();assert.equal(await entryPage.locator('html').getAttribute('lang'),'ja');return {bothLinks:true,japaneseAccessible:true}}finally{await context.close()}
+ });
  await check('No hosted CSP/client/console errors during supplemental navigation',()=>{assert.deepEqual(report.pageErrors,[]);assert.deepEqual(report.consoleErrors,[])});
 }finally{
  await browser.close();report.completedAt=new Date().toISOString();report.finalizedAt=report.completedAt;report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,canonicalUrls:report.pages.length,uniqueImages:report.assets.length,pageErrors:report.pageErrors.length,consoleErrors:report.consoleErrors.length};
- await writeFile(resolve(root,process.env.CHECK_HOSTED_REPORT_PATH||'docs/discovery-stage-hosted-supplement-results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report.summary));if(report.failures.length)process.exitCode=1;
+ await writeFile(resolve(root,process.env.CHECK_HOSTED_REPORT_PATH||'docs/visit-stage-hosted-supplement-results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report.summary));if(report.failures.length)process.exitCode=1;
 }

@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { loadEnvFile } from 'node:process';
 import { createHash } from 'node:crypto';
 import { resolveRetailerLink, policyForLink, linksInLocale } from '../src/lib/affiliate.ts';
+import {collectVisitValidationErrors,officialProductLinks,storeMapLinks} from '../src/lib/visits.ts';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 for (const name of ['.env.production.local', '.env.production', '.env.local', '.env']) {
@@ -74,6 +75,9 @@ function internalTarget(file, value) {
   return { file: target, hash: url.hash ? decodeURIComponent(url.hash.slice(1)) : '' };
 }
 const catalog = JSON.parse(readFileSync(resolve(root, 'src/data/catalog.json'), 'utf8'));
+const visitData=JSON.parse(readFileSync(resolve(root,'src/data/visits.json'),'utf8'));
+const visitSources=JSON.parse(readFileSync(resolve(root,'docs/research/sources.json'),'utf8'));
+for(const error of collectVisitValidationErrors(visitData,catalog,visitSources))errors.push('Visit information: '+error);
 const expectedRetailerLinksFor=(locale)=>new Set(linksInLocale(catalog.links,locale).flatMap(link => {
   const status = catalog.programs.find(program => program.id === link.programId)?.applicationStatus;
   const result = resolveRetailerLink(link, status, policyForLink(link, catalog));
@@ -145,6 +149,30 @@ for (const [file, page] of pages) {
     if(!intro||!price||!primary||!details)fail(file,'product purchase flow markers are incomplete');
     if(details&&(details.name!=='details'||'open' in details.attrs))fail(file,'technical specifications must use an initially closed details panel');
     if(details&&[price,primary,firstRetailer].some(tag=>!tag||tag.index>=details.index))fail(file,'price and primary retailer action must precede technical specifications');
+  }
+  const objectRoute=routePath.slice(base.length).match(/^(en|ja)\/objects\/([^/]+)\/$/);
+  if(objectRoute&&!redirect){
+    const locale=objectRoute[1],product=catalog.products.find(product=>product.slug===objectRoute[2]);
+    const entry=visitData.products.find(entry=>entry.productId===product?.id);
+    const visit=tags.find(tag=>'data-visit-guide' in tag.attrs);
+    const outfit=tags.find(tag=>(tag.attrs.class||'').split(/\s+/).includes('purchase-outfit'));
+    const next=tags.find(tag=>(tag.attrs.class||'').split(/\s+/).includes('purchase-next'));
+    if(!entry||!visit)fail(file,'every product needs its official URL and sourced visit/fallback guide');
+    if(visit&&(!outfit||!next||visit.index<outfit.index||visit.index>next.index))fail(file,'visit guide should follow the outfit and precede the final CTA');
+    if(entry&&product){
+      const official=tags.filter(tag=>tag.name==='a'&&'data-official-product-url' in tag.attrs),expected=officialProductLinks(product.id,locale,catalog);
+      if(!expected.length||official.length!==expected.length)fail(file,'missing explicit language-matched official product URL');
+      for(const link of expected){const tag=official.find(tag=>tag.attrs['data-official-product-url']===link.id);if(!tag||tag.attrs.href!==link.url||(tag.attrs.rel||'').split(/\s+/).includes('sponsored'))fail(file,'explicit official URL must stay ordinary and on the verified merchant host')}
+      const homes=tags.filter(tag=>tag.name==='a'&&'data-official-home-url' in tag.attrs);
+      if(homes.length!==(entry.officialHomeUrl?1:0)||entry.officialHomeUrl&&homes[0]?.attrs.href!==new URL(entry.officialHomeUrl).href)fail(file,'official brand/retailer home URL disagrees with visit records');
+      const cards=tags.filter(tag=>'data-store-id' in tag.attrs).map(tag=>tag.attrs['data-store-id']);
+      if(cards.length!==entry.storeIds.length||cards.some(id=>!entry.storeIds.includes(id)))fail(file,'rendered stores disagree with the researched product mapping');
+      const maps=tags.filter(tag=>tag.name==='a'&&'data-map-action' in tag.attrs);
+      if(maps.length!==entry.storeIds.length*2)fail(file,'each verified store needs Maps search and directions; an unconfirmed store needs none');
+      for(const id of entry.storeIds){const store=visitData.stores.find(store=>store.id===id),expected=store&&storeMapLinks(store);if(!expected||!Object.values(expected).every(url=>maps.some(tag=>tag.attrs.href===url)))fail(file,'Google Maps URL must be generated from the verified store query')}
+      if(!entry.storeIds.length&&(!tags.some(tag=>'data-store-fallback' in tag.attrs)||visit?.attrs['data-visit-status']!=='unconfirmed-store'))fail(file,'unconfirmed stores need an honest fallback, without an invented map');
+      for(const tag of [...official,...homes,...maps])if(!['noopener','noreferrer'].every(value=>(tag.attrs.rel||'').split(/\s+/).includes(value)))fail(file,'official/store external links need noopener and noreferrer');
+    }
   }
   const canonical = tags.filter(tag => tag.name === 'link' && (tag.attrs.rel || '').split(/\s+/).includes('canonical'));
   const robots = getMeta('name', 'robots');
