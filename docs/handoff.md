@@ -93,3 +93,10 @@ PC1440／390／320、日英入口・同じページの切替、端数価格、lo
 0.6は木8＋切子／磁器2の10商品・3都県・3技法・AI7画像。配信commit5abfec84a230b2326f50ad9ea479eed76fff4688、Actions43847763433 success、2026-11-16 19:24:48 JSTに公開123/123・96画面＋補足13/13を確定した。Contactなし・SORAを確認済み。当時の長いAI注記と幅広い年齢設定は007で置き換える。
 
 clear-stage-*.jsonは0.6、appeal-*.jsonは0.5、selection-*.jsonは0.4の履歴として保持する。古いITO名、神奈川のみ、Contact必須、旧画像数、旧captionを最新へ戻す根拠にしない。
+
+
+## 0.8 実公開の最終結果
+
+2026-11-16 20:28:06 JST確定。配信ec31b7910483970947bef3806b1099272c5545dd、Actions43856899272 success。公開172/172・138画面（axe114画面0）、JS/console0、補足18/18、86正規URL全200、13画像SHA一致。店舗/公式URLassert102回、8店舗/15商品、CHECOS1のみ地図なし通販fallback。公開GoogleMaps実クリック2/2。local172/172、重点16/16、広告5/5、Map2例を保持。全検証プロセス終了・遅延書込なし。後続commitは記録と納品scriptのみ、配信内容は変えない。
+
+全ソース/ZIPはworkspace内japanese-craft-jewelry-delivery、今回の画面証跡はscreenshots/0.8.0。現在の13画像はregistry正本、使用中の旧ローカルファイルはGit/書出しから除外し、元画像の履歴はdocs/archiveに保存。公開Contactなし、SORA、全not_applied、実申請送信なし。法務確認は採用した事実要約と外部リンク方式の範囲で、個別適法性や在庫・道順結果を保証しない。

@@ -1,0 +1,961 @@
+{
+  "checkedAt": "2026-11-16T11:22:08.934Z",
+  "origin": "https://rozawa619.github.io",
+  "base": "/japanese-craft-jewelry/",
+  "method": "Read-only verification of the deployed site with fresh Chrome and HTTP requests. Canonical sitemap routes, inline executable CSP hashes, current local-vs-published image hashes, deferred Contact, operator, material links and final factual details. No retailer navigation, form entry, application or registration.",
+  "checks": [
+    {
+      "name": "All canonical sitemap URLs return current indexed content with executable CSP hashes",
+      "status": "passed",
+      "detail": {
+        "canonicalUrls": 86,
+        "executableScriptHashes": 206,
+        "validJsonBlocks": 86
+      }
+    },
+    {
+      "name": "All registered AI image files return 200 and match the final local assets",
+      "status": "passed",
+      "detail": {
+        "uniqueImageFiles": 13,
+        "styledProducts": 15
+      }
+    },
+    {
+      "name": "en deferred Contact returns 404 and remains outside sitemap/navigation",
+      "status": "passed"
+    },
+    {
+      "name": "en SORA, material routes and plain selection policy are published",
+      "status": "passed",
+      "detail": {
+        "operator": "SORA",
+        "materialLinks": [
+          "wood",
+          "glass",
+          "porcelain"
+        ],
+        "policyCharacters": 901,
+        "policyText": "THE WAY WE WORK\n\nOur selection\n\nWhat draws us to a design, how we check the details and how we label AI images and affiliate links.\n\nUpdated 2026-11-16\n\nA small piece can make an everyday outfit feel more like you. We introduce jewelry with a connection to Japanese craft.\n\nDesign and the making behind it\n\nWe look for colors, shapes and materials we want to wear, from wood and glass to porcelain, metal and fabric. We share what caught our eye and an idea for matching the piece with everyday clothes.\n\nDetails from official sources\n\nWe check makers and official shops, keep unanswered questions clear and update a page when we find new information.\n\nAI styling images\n\nStyling images are created with AI and labeled “AI image.”\n\nClear affiliate notices\n\nIf a link can earn a referral fee, we identify it as an affiliate link. The same care goes into our selection whether a link earns a fee or not."
+      }
+    },
+    {
+      "name": "en final facts rinzen-seika-amber-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "weight": "Per-ear weight not confirmed",
+        "materialNotes": [
+          "The exact chain metal and skin-contact components are not specified in the checked product material list.",
+          "The listed weight is 10 g without a clear per-ear or pair basis; full chain length is not specified.",
+          "Handmade glass may vary in color, shape and weight. The glass is not heat resistant."
+        ],
+        "visitFlow": {
+          "officialProductLinks": 1,
+          "homeRole": "maker",
+          "stores": [
+            "rinzen-hirai-shop"
+          ],
+          "storeFallback": false,
+          "mapsRemainExternal": true
+        }
+      }
+    },
+    {
+      "name": "en final facts six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "weight": "Per-ear weight not confirmed",
+        "materialNotes": [
+          "The maker is transitioning the reverse from white to a color matched to the fittings; either version may be supplied as a matching pair.",
+          "The listing gives a weight of 8 g without clarifying whether this is per earring or per pair. The component covered by sv925 is not specified.",
+          "The gold-colored surface may scratch or peel if rubbed strongly; the product page gives gentle care guidance."
+        ],
+        "visitFlow": {
+          "officialProductLinks": 1,
+          "homeRole": "maker",
+          "stores": [
+            "seirokugama-gallery"
+          ],
+          "storeFallback": false,
+          "mapsRemainExternal": true
+        }
+      }
+    },
+    {
+      "name": "en final facts hamamatsuya-pendant",
+      "status": "passed",
+      "detail": {
+        "weight": null,
+        "materialNotes": [
+          "The chain metal, closure and length-adjustment options are not specified in the checked official information."
+        ],
+        "visitFlow": {
+          "officialProductLinks": 1,
+          "homeRole": "maker",
+          "stores": [
+            "hamamatsuya-hatajuku-main"
+          ],
+          "storeFallback": false,
+          "mapsRemainExternal": true
+        }
+      }
+    },
+    {
+      "name": "en final facts saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "weight": null,
+        "materialNotes": [
+          "The product information lists a weight of 130 g.",
+          "The material field names porcelain. The silver color is a visual finish, not a claim that the bracelet is made of solid silver.",
+          "The listed diameter is not explicitly identified as the internal fit measurement; no adjustability is stated."
+        ],
+        "visitFlow": {
+          "officialProductLinks": 1,
+          "homeRole": "maker",
+          "stores": [
+            "2016-arita-flagship"
+          ],
+          "storeFallback": false,
+          "mapsRemainExternal": true
+        }
+      }
+    },
+    {
+      "name": "ja deferred Contact returns 404 and remains outside sitemap/navigation",
+      "status": "passed"
+    },
+    {
+      "name": "ja SORA, material routes and plain selection policy are published",
+      "status": "passed",
+      "detail": {
+        "operator": "SORA",
+        "materialLinks": [
+          "wood",
+          "glass",
+          "porcelain"
+        ],
+        "policyCharacters": 405,
+        "policyText": "Japanese Craft Jewelryの運営方針\n\nセレクトの考え方\n\nひかれるデザインと、確かめられる情報。ジュエリーを選ぶときに大切にしていること。\n\n更新：2026-11-16\n\n毎日の装いに、少し特別なひとつを。日本の工芸に関わるジュエリーを紹介します。\n\nデザインと、ものづくりで選びます\n\n木やガラス、陶磁器、金属、布。素材の表情やかたちにひかれたものを選び、ふだんの服との合わせ方も自分たちの言葉でお伝えします。\n\n公式の情報を確かめます\n\n作り手や公式ショップの情報を確認してまとめます。分からない点を想像で埋めず、新しい情報が見つかれば見直します。\n\n着用イメージはAIで制作します\n\n画像には「AIイメージ」と表示しています。\n\n広告も、はっきり表示します\n\n紹介料を受け取るリンクには、広告と分かる表示を付けます。広告の有無にかかわらず、デザインや情報を確かめて選ぶ方針は同じです。"
+      }
+    },
+    {
+      "name": "ja final facts rinzen-seika-amber-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "weight": "片耳の重さは未確認",
+        "materialNotes": [
+          "チェーンの金属と、肌に触れる各パーツの素材は商品欄に記載がありません。",
+          "重さは10gの表記ですが、片耳か一組かは未確認。チェーン全長の個別表記もありません。",
+          "手作りのため、色・形・重さに個体差があります。耐熱ガラスではありません。"
+        ],
+        "visitFlow": {
+          "officialProductLinks": 1,
+          "homeRole": "maker",
+          "stores": [
+            "rinzen-hirai-shop"
+          ],
+          "storeFallback": false,
+          "mapsRemainExternal": true
+        }
+      }
+    },
+    {
+      "name": "ja final facts six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "weight": "片耳の重さは未確認",
+        "materialNotes": [
+          "裏面の色は白から金具に合わせた色へ切替中。新旧いずれかの仕様が、左右同じ組み合わせで届く案内です。",
+          "重さは8gの表記ですが、片耳か一組かは未確認です。sv925がどのパーツに使われるかは記載がありません。",
+          "金色の部分は強くこすると傷や剥がれの可能性があると案内されています。"
+        ],
+        "visitFlow": {
+          "officialProductLinks": 1,
+          "homeRole": "maker",
+          "stores": [
+            "seirokugama-gallery"
+          ],
+          "storeFallback": false,
+          "mapsRemainExternal": true
+        }
+      }
+    },
+    {
+      "name": "ja final facts hamamatsuya-pendant",
+      "status": "passed",
+      "detail": {
+        "weight": null,
+        "materialNotes": [
+          "チェーンの金属・留め具・長さ調節の可否は、確認した公式情報に記載がありません。"
+        ],
+        "visitFlow": {
+          "officialProductLinks": 1,
+          "homeRole": "maker",
+          "stores": [
+            "hamamatsuya-hatajuku-main"
+          ],
+          "storeFallback": false,
+          "mapsRemainExternal": true
+        }
+      }
+    },
+    {
+      "name": "ja final facts saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "weight": null,
+        "materialNotes": [
+          "商品情報に掲載された重さは130gです。",
+          "素材欄は磁器の表記です。銀色は見た目の仕上げで、純銀製という意味ではありません。",
+          "直径の数値が内径か外径かは明記されておらず、サイズ調節の可否も記載がありません。"
+        ],
+        "visitFlow": {
+          "officialProductLinks": 1,
+          "homeRole": "maker",
+          "stores": [
+            "2016-arita-flagship"
+          ],
+          "storeFallback": false,
+          "mapsRemainExternal": true
+        }
+      }
+    },
+    {
+      "name": "Hosted language entry ja-JP keeps both choices visible",
+      "status": "passed",
+      "detail": {
+        "preferred": "ja",
+        "bothLinks": true,
+        "noForcedRedirect": true,
+        "dimensions": {
+          "width": 320,
+          "document": 320
+        }
+      }
+    },
+    {
+      "name": "Hosted language entry fr-FR keeps both choices visible",
+      "status": "passed",
+      "detail": {
+        "preferred": "en",
+        "bothLinks": true,
+        "noForcedRedirect": true,
+        "dimensions": {
+          "width": 320,
+          "document": 320
+        }
+      }
+    },
+    {
+      "name": "Hosted language entry keeps Japanese accessible without JavaScript",
+      "status": "passed",
+      "detail": {
+        "bothLinks": true,
+        "japaneseAccessible": true
+      }
+    },
+    {
+      "name": "No hosted CSP/client/console errors during supplemental navigation",
+      "status": "passed"
+    }
+  ],
+  "failures": [],
+  "pages": [
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-surgical-stainless-pierced-earrings/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-18k-yosegi-earrings/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-muku-yosegi-pendant/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/maruyama-yosegi-non-pierced-c/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/maruyama-yosegi-non-pierced-d/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/maruyama-yosegi-pierced-c/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/maruyama-yosegi-pierced-d/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/rinzen-seika-amber-pierced-earrings/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/six-kiln-half-moon-earrings/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/rinzen-leaf-glass-pendant/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/six-kiln-blue-bouquet-pierced-earrings/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/saskia-diez-drake-porcelain-cuff/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/checos-japanese-apricot-pierced-earrings/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/morphosphere-ultramarine-pansy-pierced-earrings/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/kato-suke-drop-pierced-earrings/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/makers/hamamatsuya/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/makers/maker-unidentified-maruyama/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/makers/rinzen/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/makers/six-kiln/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/makers/saskia-diez-2016/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/makers/checos/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/makers/morphosphere/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/makers/kato-shippo/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/aichi/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/ishikawa/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/kanagawa/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/kyoto/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/saga/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/tokyo/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/crafts/hakone-yosegi/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/crafts/imari-arita-ware/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/crafts/kiriko/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/crafts/kyoto-yuzen/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/crafts/owari-cloisonne/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/crafts/silver-work/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/about/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/affiliate-disclosure/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/editorial-policy/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/privacy/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-18k-yosegi-earrings/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-muku-yosegi-pendant/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-non-pierced-c/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-non-pierced-d/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-pierced-c/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-pierced-d/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/rinzen-seika-amber-pierced-earrings/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/six-kiln-half-moon-earrings/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/rinzen-leaf-glass-pendant/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/six-kiln-blue-bouquet-pierced-earrings/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/saskia-diez-drake-porcelain-cuff/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/checos-japanese-apricot-pierced-earrings/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/morphosphere-ultramarine-pansy-pierced-earrings/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/kato-suke-drop-pierced-earrings/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 3,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/makers/hamamatsuya/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/makers/maker-unidentified-maruyama/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/makers/rinzen/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/makers/six-kiln/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/makers/saskia-diez-2016/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/makers/checos/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/makers/morphosphere/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/makers/kato-shippo/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/aichi/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/ishikawa/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/kanagawa/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/kyoto/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/saga/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/tokyo/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/crafts/hakone-yosegi/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/crafts/imari-arita-ware/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/crafts/kiriko/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/crafts/kyoto-yuzen/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/crafts/owari-cloisonne/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/crafts/silver-work/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/about/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/affiliate-disclosure/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/editorial-policy/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/privacy/",
+      "status": 200,
+      "robots": "index, follow",
+      "scriptHashes": 2,
+      "jsonBlocks": 1
+    }
+  ],
+  "assets": [
+    {
+      "path": "images/hakone-yosegi-pierced-styling.webp",
+      "status": 200,
+      "sha256": "61fbdba18d9bccc99d30058b8bd364670def1b620630a2bdedc0582d7f8f62e0",
+      "localMatch": true
+    },
+    {
+      "path": "images/hakone-yosegi-clipon-styling.webp",
+      "status": 200,
+      "sha256": "b7b393bbf47e4f99ab71f068e0051da0ecb7bcbbcb239505f3ccdfd0d08841e8",
+      "localMatch": true
+    },
+    {
+      "path": "images/rinzen-amber-glass-styling-v2.webp",
+      "status": 200,
+      "sha256": "fb494e64e8b75925834f33a109b1ebc5c39b8665d95cf021c9f7035eebd9a01f",
+      "localMatch": true
+    },
+    {
+      "path": "images/arita-halfmoon-styling-v1.webp",
+      "status": 200,
+      "sha256": "fc229571aebad292e976a6163c7c2fc027fc4b904ba35027244695f03d06919f",
+      "localMatch": true
+    },
+    {
+      "path": "images/yosegi-star-styling-v2.webp",
+      "status": 200,
+      "sha256": "89e218b1a333e6f2d6fdc6bfaddb74f50490e978926681efb14bb21f17118b1a",
+      "localMatch": true
+    },
+    {
+      "path": "images/yosegi-bar-styling-v2.webp",
+      "status": 200,
+      "sha256": "2c32a66f4baa5c0cec88fb85edc3648a7956d2f2cbade9707e755b093fcbc9bf",
+      "localMatch": true
+    },
+    {
+      "path": "images/yosegi-pendant-styling-v2.webp",
+      "status": 200,
+      "sha256": "a660976124fcbf25e51f09fd6d898fef7605303149d16ac66605b156ce9de307",
+      "localMatch": true
+    },
+    {
+      "path": "images/checos-silver-flower-styling-v1.webp",
+      "status": 200,
+      "sha256": "681f4cafd4307d9144d67ce641ca3ca44a9eb4bc205987ac05f89f07ba07de9f",
+      "localMatch": true
+    },
+    {
+      "path": "images/morphosphere-blue-pansy-styling-v1.webp",
+      "status": 200,
+      "sha256": "39d6dfb435c75e1f856b415fc448e05b800e2c2a951b66f646ca0069406bbdb7",
+      "localMatch": true
+    },
+    {
+      "path": "images/kato-green-cloisonne-styling-v2.webp",
+      "status": 200,
+      "sha256": "5ea95a9ae878d2277cfde98b513541ba9bf2876979aef7417162cf1d67ef916f",
+      "localMatch": true
+    },
+    {
+      "path": "images/arita-blue-bouquet-styling-v1.webp",
+      "status": 200,
+      "sha256": "942b02c400ca3ff439c26fbf757458d4403db484ee766eb48ec1a9ca76e0e52c",
+      "localMatch": true
+    },
+    {
+      "path": "images/rinzen-green-leaf-styling-v1.webp",
+      "status": 200,
+      "sha256": "9493faa10cf7852bd18e8a44edcbb409076b31ce8d6f94aaaa1627d880010ad4",
+      "localMatch": true
+    },
+    {
+      "path": "images/saskia-porcelain-cuff-styling-v1.webp",
+      "status": 200,
+      "sha256": "cea302ae17c590fc3ef54d105cb6e4a9f1ed6e9009c32f417899be817fdbb9e8",
+      "localMatch": true
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "completedAt": "2026-11-16T11:22:56.615Z",
+  "finalizedAt": "2026-11-16T11:22:56.615Z",
+  "summary": {
+    "checks": 18,
+    "passed": 18,
+    "failed": 0,
+    "canonicalUrls": 86,
+    "uniqueImages": 13,
+    "pageErrors": 0,
+    "consoleErrors": 0
+  }
+}

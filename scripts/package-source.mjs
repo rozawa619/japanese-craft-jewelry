@@ -19,9 +19,9 @@ for(const entry of readdirSync(root)){
  if(skip.has(entry)||entry.endsWith('.log')||(entry.startsWith('.env')&&entry!=='.env.example'))continue;
  cpSync(resolve(root,entry),resolve(source,entry),{recursive:true,filter:sourcePath=>!retiredLocalPaths.has(sourcePath)});
 }
-const evidence=resolve(delivery,'screenshots');
+const evidence=resolve(delivery,'screenshots',JSON.parse(readFileSync(resolve(root,'package.json'),'utf8')).version);
 mkdirSync(evidence,{recursive:true});
-for(const entry of readdirSync(resolve(root,'artifacts')).filter(entry=>(entry.startsWith('clear-stage-')||entry.startsWith('discovery-stage-')||entry.startsWith('visit-stage-'))&&entry.endsWith('.png'))){
+for(const entry of readdirSync(resolve(root,'artifacts')).filter(entry=>entry.startsWith('visit-stage-')&&!entry.includes('-review')&&entry.endsWith('.png'))){
  const image=resolve(root,'artifacts',entry);if(existsSync(image))cpSync(image,resolve(evidence,entry));
 }
 console.log('Current source exported; any previous export was preserved as a backup:',source);

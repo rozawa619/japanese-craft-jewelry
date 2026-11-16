@@ -1,124 +1,184 @@
 {
-  "checkedAt": "2026-11-16T10:24:48.699Z",
+  "checkedAt": "2026-11-16T11:28:06.916Z",
   "checkedDateJapan": "2026-11-16",
-  "version": "0.6.0",
+  "version": "0.8.0",
   "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
   "sourcePushed": true,
-  "deployedCommit": "5abfec84a230b2326f50ad9ea479eed76fff4688",
+  "deployedCommit": "ec31b7910483970947bef3806b1099272c5545dd",
   "pagesSource": "GitHub Actions",
-  "previewUrl": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
-  "previewUrls": {
-    "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
-    "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/"
+  "workflowRun": {
+    "id": 43856899272,
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/43856899272"
   },
   "deployment": "success",
   "httpStatus": 200,
   "mode": "public",
-  "indexing": "index, follow (search listing not verified)",
-  "scope": "Japan-wide curated craft jewelry selection; researched wood, glass and porcelain pieces connected to Kanagawa, Tokyo and Saga",
+  "previewUrl": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+  "previewUrls": {
+    "root": "https://rozawa619.github.io/japanese-craft-jewelry/",
+    "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+    "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
+    "exampleVisit": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/kato-suke-drop-pierced-earrings/"
+  },
+  "scope": "Nationwide Japanese craft jewelry selection in Japanese and English",
   "languages": [
-    "en",
-    "ja"
+    "ja",
+    "en"
   ],
-  "publishedJewelry": 10,
-  "normalRetailerLinks": true,
-  "trackingLinks": 0,
-  "workflowRun": {
-    "id": 43847763433,
-    "conclusion": "success",
-    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/43847763433"
+  "publishedJewelry": 16,
+  "woodProducts": 8,
+  "nonwoodProducts": 8,
+  "prefectures": 6,
+  "crafts": 6,
+  "sources": 88,
+  "publicOperator": "SORA",
+  "contactPagePublished": false,
+  "publishedReadingPages": 0,
+  "publicContentRoutes": 86,
+  "retiredReadingRedirects": 14,
+  "curatedHomeProducts": 6,
+  "nonwoodFeaturedProducts": 5,
+  "productStories": 16,
+  "images": {
+    "active": 13,
+    "styledProducts": 15,
+    "ageDirection": "Late twenties to early thirties, approximately27–33; fictional adult Japanese models",
+    "caption": {
+      "ja": "AIイメージ",
+      "en": "AI image"
+    },
+    "productPhotosLicensed": false,
+    "officialPhotosPublished": false,
+    "registry": "src/data/editorial-images.json",
+    "promptRecords": [
+      "docs/image-generation.json",
+      "docs/image-generation-v6.json",
+      "docs/image-generation-v7.json",
+      "docs/image-generation-v8.json"
+    ]
+  },
+  "visits": {
+    "officialProductUrls": 16,
+    "verifiedPhysicalStores": 8,
+    "productsWithVisitGuide": 15,
+    "unconfirmedStoreProductIds": [
+      "checos-japanese-apricot-pierced-earrings"
+    ],
+    "unconfirmedStoreFallback": "Verified official retailer product page; no guessed map",
+    "source": "src/data/visits.json",
+    "googleMaps": "User-activated ordinary external search/directions URLs at the official Google origin; api1; no embeds, scripts or copied imagery",
+    "storePhotosLogosReviewsCopied": false,
+    "individualSkuStoreStockVerified": false,
+    "advanceContactNotesRetained": true,
+    "publicationMethodReview": "docs/visit-publication-review.md; scoped primary-source guidance, not an individual or worldwide legality guarantee"
+  },
+  "localChecks": {
+    "typeFiles": 59,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0,
+    "unitTests": 51,
+    "html": 102,
+    "internalReferences": 4607,
+    "anchors": 89,
+    "normalRetailerLinks": 332,
+    "sponsoredLinks": 0,
+    "executableCspHashes": 209,
+    "inertJsonBlocks": 86,
+    "browser": {
+      "passed": 172,
+      "failed": 0,
+      "pages": 138,
+      "axeTestedPages": 114,
+      "axeViolations": 0,
+      "pageErrors": 0,
+      "consoleErrors": 0,
+      "report": "docs/visit-stage-browser-results.json"
+    },
+    "details": {
+      "passed": 16,
+      "failed": 0,
+      "report": "docs/visit-stage-final-detail-results.json"
+    },
+    "advertisement": {
+      "passed": 5,
+      "failed": 0,
+      "sponsoredCounts": [
+        23,
+        14,
+        0,
+        0,
+        0
+      ],
+      "isolatedFixtureOnly": true,
+      "rootDistAndCatalogUnchanged": true,
+      "report": "docs/visit-stage-ad-build-results.json"
+    },
+    "mapNavigation": {
+      "examples": 2,
+      "report": "docs/visit-stage-map-navigation-results.json"
+    }
   },
   "hostedChecks": {
-    "passed": 123,
+    "passed": 172,
     "failed": 0,
-    "pages": 96,
-    "axeTestedPages": 72,
+    "pages": 138,
+    "axeTestedPages": 114,
     "axeViolations": 0,
     "pageErrors": 0,
     "consoleErrors": 0,
+    "screenshots": 16,
     "widths": [
       1440,
       390,
       320
     ],
-    "report": "docs/clear-stage-hosted-results.json",
-    "supplementalReport": "docs/clear-stage-hosted-supplement-results.json",
-    "supplementalPassed": 13,
-    "sitemapUrls": 54,
+    "report": "docs/visit-stage-hosted-results.json",
+    "finalizedAt": "2026-11-16T11:28:06.916Z",
+    "supplementalPassed": 18,
+    "supplementalReport": "docs/visit-stage-hosted-supplement-results.json",
+    "sitemapUrls": 86,
     "allSitemapUrlsStatus": 200,
-    "operator": "SORA",
-    "contactPublished": false,
-    "productLedHome": true,
-    "liveJournalNavigation": false,
-    "samePageLanguageSwitch": true,
-    "filterQueryHashPreserved": true,
-    "nationwideRegionDirectory": true,
-    "materialEntryPoints": [
-      "wood",
-      "glass",
-      "porcelain"
-    ],
-    "legacyReadingRedirects": 14,
-    "legacyRedirectMethod": "HTTP200 static meta refresh0; noindex, nofollow; fixed target; no Article/canonical",
-    "uniqueAiImages": 7,
-    "styledProducts": 9,
-    "localAiImagesStatus": 200,
+    "indexingDirective": "index, follow; actual search-engine listing not verified",
+    "uniqueImages": 13,
     "imageSha256Matches": true,
-    "cspInlineScriptsAuthorized": true,
-    "executableScriptsAuthorizedOnCanonicalPages": 130,
-    "validJsonDataBlocks": 54,
-    "appealFirstProductIntroduction": true,
-    "technicalPanelsInitiallyClosed": true,
-    "primaryPriceCtaBeforeTechnicalPanels": true,
-    "mobileStickyCta": "Hidden initially, visible after primary CTA passes, hidden at footer; same retailer destination",
-    "finalWeightAndFinishNotesVerified": true,
-    "finalizedAt": "2026-11-16T10:24:48.699Z"
+    "executableScriptCspHashes": 206,
+    "validInertJsonDataBlocks": 86,
+    "allProductOfficialAndVisitGuidesChecked": true,
+    "storeGuideAssertions": 102,
+    "unconfirmedStoreHasNoMap": true,
+    "contact404BothLocales": true,
+    "languageEntryNoForcedRedirect": true,
+    "noJavaScriptLanguageLinks": true,
+    "samePageLanguageSwitch": true,
+    "queryHashPreserved": true,
+    "mapNavigation": {
+      "examples": 2,
+      "newTabsOpened": true,
+      "titlesObserved": "Google マップ",
+      "report": "docs/visit-stage-hosted-map-navigation-results.json",
+      "mapRouteResultAccuracyVerified": false
+    }
   },
+  "normalRetailerLinks": true,
+  "trackingLinks": 0,
+  "affiliateApplicationStatus": "not_applied",
   "applicationsSubmitted": false,
   "affiliateApproved": false,
-  "operatorNameProvided": true,
-  "contact": "Intentionally unpublished at the operator’s request. No contact links, substitute public issue channel or contact pages; EN/JA Contact return404. Program-specific requirements remain separate.",
-  "sourceNote": "A later documentation-and-verification-script commit follows the deployed source commit; it does not change served application source, catalog or assets.",
-  "publicOperator": "SORA",
+  "localizedBecosPricesAndLinks": 8,
+  "japaneseStoreAffiliateProgram": null,
+  "englishApprovalAppliedToJapaneseStore": false,
   "security": {
-    "csp": true,
-    "affiliateHostAllowlist": true,
-    "jsonLdEscaping": true,
-    "workflowPermissionsSeparated": true,
-    "actionsPinned": true,
-    "privateVulnerabilityReportingEnabled": true,
-    "vulnerabilityAlertsEnabled": true,
-    "knownDependencyAdvisories": 0
+    "staticSite": true,
+    "cspMeta": true,
+    "noExternalScripts": true,
+    "noMapIframe": true,
+    "noLocationCollection": true,
+    "readiness": "technical publication passed; affiliate eligibility is a separate review",
+    "details": "docs/security.md"
   },
-  "editorialImages": {
-    "count": 7,
-    "styledProducts": 9,
-    "fictionalAdultWomen": 7,
-    "type": "Labeled AI-generated styling illustrations, not photographs or reproductions of featured items",
-    "promptRecords": [
-      "docs/image-generation.json",
-      "docs/image-generation-v6.json"
-    ],
-    "placement": "Nine products, cards and curated home; C/D silhouettes shared across corresponding pierced and clip variants; 18K uses abstract decoration"
-  },
-  "searchConsoleConfigured": false,
-  "publishedReadingPages": 0,
-  "publicContentRoutes": 54,
-  "retiredReadingRedirects": 14,
-  "curatedHomeProducts": 6,
-  "productStories": 10,
-  "contactPagePublished": false,
-  "operator": "SORA",
-  "affiliateApplicationStatus": "not_applied",
-  "images": {
-    "count": 7,
-    "styledProducts": 9,
-    "fictionalAdultWomen": 7,
-    "type": "Labeled AI-generated styling illustrations, not photographs or reproductions of featured items",
-    "promptRecords": [
-      "docs/image-generation.json",
-      "docs/image-generation-v6.json"
-    ],
-    "placement": "Nine products, cards and curated home; C/D silhouettes shared across corresponding pierced and clip variants; 18K uses abstract decoration"
-  }
+  "searchConsoleActionsPerformed": false,
+  "searchEngineListingOrTrafficVerified": false,
+  "sourceNote": "A later documentation-and-packaging-only commit follows the deployed application commit without changing the served application, catalog, visits, styles or images."
 }

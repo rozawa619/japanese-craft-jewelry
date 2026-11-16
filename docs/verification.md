@@ -4,7 +4,7 @@
 
 最終source: Astro59files0/0/0、51/51単体、16訪問mapping/8store・88sources・20台帳assets(現行+履歴)・ENJA本文・schema/参照PASS。102HTML/4607内部参照/89anchor/332通常0広告/209実行JS CSP/86JSON/14旧移動/正規sitemap86URL。
 
-画面・広告・最終仕様・公開の最新確定値はvisit-stage-*と008validationを優先。007のlocal166/166・132画面＋公開補足18/18は履歴で、132公開全走査は008でまとめる。
+公開172/172・138画面（axe114画面0）・JS/console0、補足18/18、86正規全200、13画像SHA一致、GoogleMaps新規タブ2/2。local172/172、広告5/5、重点16/16。2026-11-16 20:28:06 JSTに全worker終了を確認。アプリ配信ec31b791、Actions43856899272 success。詳細はvisit-stage-*と008validationを優先。007のlocal166/166・132画面＋公開補足18/18は履歴で、132公開全走査は008でまとめる。
 
 法律/利用方法の根拠と限界はvisit-publication-review.mdとresearch/visit-publication-legal-v8.json。全ての法律・契約・国を含む適法保証、申請/承認/成果発生、検索掲載/流入増加は確認していない。
 
