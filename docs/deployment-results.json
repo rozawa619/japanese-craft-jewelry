@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-11-16T08:24:10.529Z",
+  "checkedAt": "2026-11-16T08:53:28.424Z",
   "checkedDateJapan": "2026-11-16",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
   "sourcePushed": true,
-  "deployedCommit": "c096c6e4dd1123fbc6b8320dac9349a170968cd4",
+  "deployedCommit": "e2870106204ca206aff6ee1bb8788e0c6544c619",
   "pagesSource": "GitHub Actions",
   "previewUrl": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
   "previewUrls": {
@@ -15,7 +15,7 @@
   "httpStatus": 200,
   "mode": "public",
   "indexing": "index, follow (search listing not verified)",
-  "scope": "Japan-wide craft jewelry; current researched selection connected to Kanagawa",
+  "scope": "Japan-wide curated craft jewelry selection; current researched pieces connected to Kanagawa",
   "languages": [
     "en",
     "ja"
@@ -24,14 +24,14 @@
   "normalRetailerLinks": true,
   "trackingLinks": 0,
   "workflowRun": {
-    "id": 43830341510,
+    "id": 43834269993,
     "conclusion": "success",
-    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/43830341510"
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/43834269993"
   },
   "hostedChecks": {
-    "passed": 85,
+    "passed": 81,
     "failed": 0,
-    "pages": 60,
+    "pages": 54,
     "axeViolations": 0,
     "pageErrors": 0,
     "consoleErrors": 0,
@@ -40,15 +40,18 @@
       390,
       320
     ],
-    "report": "docs/search-security-hosted-results.json",
-    "supplementalPassed": 10,
-    "sitemapUrls": 54,
+    "report": "docs/selection-hosted-results.json",
+    "supplementalPassed": 11,
+    "sitemapUrls": 40,
     "allSitemapUrlsStatus": 200,
     "operator": "SORA",
+    "productLedHome": true,
+    "liveJournalNavigation": false,
     "samePageLanguageSwitch": true,
     "filterQueryHashPreserved": true,
     "nationwideRegionDirectory": true,
-    "httpsRedirectStatus": 301,
+    "legacyReadingRedirects": 14,
+    "legacyRedirectMethod": "HTTP 200 static meta refresh 0; noindex, nofollow; fixed target; no Article/canonical",
     "localAiImagesStatus": 200,
     "cspInlineScriptsAuthorized": true
   },
@@ -71,7 +74,12 @@
   "editorialImages": {
     "count": 2,
     "type": "Labeled AI-generated fictional adult styling illustrations, not photographs or reproductions of the featured items",
-    "promptRecord": "docs/image-generation.json"
+    "promptRecord": "docs/image-generation.json",
+    "placement": "Two products, product cards and curated home; registry keyed by stable product ID"
   },
-  "searchConsoleConfigured": false
+  "searchConsoleConfigured": false,
+  "publishedReadingPages": 0,
+  "publicContentRoutes": 40,
+  "retiredReadingRedirects": 14,
+  "curatedHomeProducts": 6
 }

@@ -45,3 +45,7 @@ Japanese Craft Jewelryは、全国の工芸ジュエリーから選んだ商品�
 ## 過去版の確認記録
 
 0.3はhead c096c6e、Actions43830341510 success。SORA反映後の公開でブラウザ85/85（日英60画面）と追加10/10、sitemap54URL全200、CSP/画像/Contactを確認した。当時のsearch-security-hosted-results.json等は履歴として保持する。0.4ではjournalを正規サイトマップから外すため、当時の件数を現在の期待値にしない。
+
+## 0.4の公開確定
+
+head e2870106204ca206aff6ee1bb8788e0c6544c619、Actions43834269993 success。2026-11-16 08:53 UTC、公開81/81（日英54画面）＋補足11/11 PASS。正規40URL全200/index/canonical/言語peer、通常画面にJournal導線/Article schemaなし、14旧URL固定meta移動、40ページJS82本のCSP hash、AI画像2点、SORA/Contact/404を確認。最新結果はdocs/selection-hosted-results.json、広告はselection-ad-build-results.json。全ソースZIPとcurrent selection/hostedスクリーンショットをjapanese-craft-jewelry-deliveryへ更新。後続資料コミットは配信画面を変更しない。
