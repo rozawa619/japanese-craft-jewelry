@@ -1969,7 +1969,7 @@
       }
     ],
     "failures": [],
-    "completedAt": "2026-11-16T08:23:52.643Z",
+    "completedAt": "2026-11-16T08:26:09.751Z",
     "summary": {
       "checks": 10,
       "passed": 10,
@@ -1992,6 +1992,11 @@
       "path": "docs/bilingual-results.json",
       "sha256": "8AAEC0DDE8BB3AFA69C3FC3EBF2B253A9ACEC7BBBA168A81B84C7FCC306BE9D7",
       "unchanged": true
-    }
+    },
+    "networkChecksCompletedAt": "2026-11-16T08:23:52.643Z",
+    "screenshots": [
+      "artifacts/search-security-ja-mobile-feature.png"
+    ],
+    "screenshotPreparation": "Desktop/mobile home screenshots were refreshed after scrolling through and decoding lazy-loaded images. The additional mobile feature screenshot was visually inspected with its AI image and explicit label visible."
   }
 }
