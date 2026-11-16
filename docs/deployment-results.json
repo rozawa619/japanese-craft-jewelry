@@ -91,10 +91,15 @@
     "knownDependencyAdvisories": 0
   },
   "editorialImages": {
-    "count": 2,
-    "type": "Labeled AI-generated fictional adult styling illustrations, not photographs or reproductions of the featured items",
-    "promptRecord": "docs/image-generation.json",
-    "placement": "Two products, product cards and curated home; registry keyed by stable product ID"
+    "count": 7,
+    "styledProducts": 9,
+    "fictionalAdultWomen": 7,
+    "type": "Labeled AI-generated styling illustrations, not photographs or reproductions of featured items",
+    "promptRecords": [
+      "docs/image-generation.json",
+      "docs/image-generation-v6.json"
+    ],
+    "placement": "Nine products, cards and curated home; C/D silhouettes shared across corresponding pierced and clip variants; 18K uses abstract decoration"
   },
   "searchConsoleConfigured": false,
   "publishedReadingPages": 0,
