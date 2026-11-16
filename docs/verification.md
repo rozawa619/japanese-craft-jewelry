@@ -39,3 +39,7 @@ axeは自動検査の範囲。スクリーンリーダー全製品・実機全�
 ## 最終の確定結果
 
 ブラウザ41/41（21画面）、axe0、JavaScript例外0。地域/技法の本文・実リンク検査4/4。広告隔離ビルド4/4、関連16/地域6/停止0 sponsored、publicサブパス1125 href/srcでPASS。欠品2件は欠品表示、下書き商品とguideは非公開。詳細JSONに時刻と環境を保存。
+
+## GitHub実公開の確認
+
+https://rozawa619.github.io/ito-craft/en/ — HTTP200、noindex。Actions run 43821352419がsuccess（commit6973e2e）。GitHub側でもpnpm verifyが通過。hosted18/18、8画面、内部30URL、404/CSS/JS/Contact/フィルター/robots/sitemapを確認。最終JPYと税区分は390/320幅でHTTP200、はみ出しなし。

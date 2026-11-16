@@ -1,0 +1,662 @@
+{
+  "checkedAt": "2026-11-16T07:05:23.913Z",
+  "target": "https://rozawa619.github.io/ito-craft/",
+  "method": "Live GitHub Pages HTTP requests and fresh headless installed Chrome profiles. Existing browsers, GitHub settings and external retailer links are not operated.",
+  "polls": [
+    {
+      "attempt": 1,
+      "checkedAt": "2026-11-16T07:05:24.035Z",
+      "status": 200,
+      "url": "https://rozawa619.github.io/ito-craft/en/"
+    }
+  ],
+  "checks": [
+    {
+      "name": "Live preview robots and sitemap prevent indexing",
+      "status": "passed",
+      "detail": {
+        "robotsStatus": 200,
+        "robotsBody": "User-agent: *\nDisallow: /",
+        "sitemapStatus": 200,
+        "sitemapUrlCount": 0,
+        "note": "Noindex is also checked on every browser-tested page. This is an accessible preview, not an indexing-enabled launch."
+      }
+    },
+    {
+      "name": "Live desktop: home renders, noindex and ordinary links are consistent",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "ordinaryRetailerLinks": 3,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440,
+          "background": "rgb(247, 245, 239)"
+        }
+      }
+    },
+    {
+      "name": "Live desktop: objects renders, noindex and ordinary links are consistent",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "ordinaryRetailerLinks": 9,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440,
+          "background": "rgb(247, 245, 239)"
+        }
+      }
+    },
+    {
+      "name": "Live desktop: product renders, noindex and ordinary links are consistent",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "ordinaryRetailerLinks": 4,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440,
+          "background": "rgb(247, 245, 239)"
+        }
+      }
+    },
+    {
+      "name": "Live desktop: contact renders, noindex and ordinary links are consistent",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "ordinaryRetailerLinks": 0,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440,
+          "background": "rgb(247, 245, 239)"
+        }
+      }
+    },
+    {
+      "name": "Live desktop: navigation and filtering work under /ito-craft/",
+      "status": "passed"
+    },
+    {
+      "name": "Live desktop: contact points to the real repository",
+      "status": "passed"
+    },
+    {
+      "name": "Live desktop: missing page returns a usable HTTP 404",
+      "status": "passed"
+    },
+    {
+      "name": "Live mobile: home renders, noindex and ordinary links are consistent",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "ordinaryRetailerLinks": 3,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390,
+          "background": "rgb(247, 245, 239)"
+        }
+      }
+    },
+    {
+      "name": "Live mobile: objects renders, noindex and ordinary links are consistent",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "ordinaryRetailerLinks": 9,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390,
+          "background": "rgb(247, 245, 239)"
+        }
+      }
+    },
+    {
+      "name": "Live mobile: product renders, noindex and ordinary links are consistent",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "ordinaryRetailerLinks": 4,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390,
+          "background": "rgb(247, 245, 239)"
+        }
+      }
+    },
+    {
+      "name": "Live mobile: contact renders, noindex and ordinary links are consistent",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "ordinaryRetailerLinks": 0,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390,
+          "background": "rgb(247, 245, 239)"
+        }
+      }
+    },
+    {
+      "name": "Live mobile: navigation and filtering work under /ito-craft/",
+      "status": "passed"
+    },
+    {
+      "name": "Live mobile: contact points to the real repository",
+      "status": "passed"
+    },
+    {
+      "name": "Live mobile: missing page returns a usable HTTP 404",
+      "status": "passed"
+    },
+    {
+      "name": "Live static resources loaded with successful HTTP status",
+      "status": "passed",
+      "detail": {
+        "resourceResponses": 16,
+        "failed": 0
+      }
+    },
+    {
+      "name": "Live pages have no unexpected JavaScript or console errors",
+      "status": "passed",
+      "detail": {
+        "pageErrors": 0,
+        "unexpectedConsoleErrors": 0,
+        "expected404ConsoleErrors": 2
+      }
+    },
+    {
+      "name": "All generated live routes and discovered internal links return HTTP 200",
+      "status": "passed",
+      "detail": {
+        "generatedRoutes": 26,
+        "totalInternalUrls": 30,
+        "failures": 0,
+        "externalLinksFollowed": 0
+      }
+    }
+  ],
+  "pages": [
+    {
+      "viewport": "desktop",
+      "kind": "home",
+      "url": "https://rozawa619.github.io/ito-craft/en/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440,
+        "background": "rgb(247, 245, 239)"
+      },
+      "ordinaryRetailerLinks": 3,
+      "timings": {
+        "responseEndMs": 9182.200000000186,
+        "loadEventEndMs": 9756.599999999627,
+        "transferSizeBytes": 4239
+      }
+    },
+    {
+      "viewport": "desktop",
+      "kind": "objects",
+      "url": "https://rozawa619.github.io/ito-craft/en/objects/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440,
+        "background": "rgb(247, 245, 239)"
+      },
+      "ordinaryRetailerLinks": 9,
+      "timings": {
+        "responseEndMs": 200,
+        "loadEventEndMs": 306.5,
+        "transferSizeBytes": 5303
+      }
+    },
+    {
+      "viewport": "desktop",
+      "kind": "product",
+      "url": "https://rozawa619.github.io/ito-craft/en/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440,
+        "background": "rgb(247, 245, 239)"
+      },
+      "ordinaryRetailerLinks": 4,
+      "timings": {
+        "responseEndMs": 216.8999999994412,
+        "loadEventEndMs": 251.79999999981374,
+        "transferSizeBytes": 4186
+      }
+    },
+    {
+      "viewport": "desktop",
+      "kind": "contact",
+      "url": "https://rozawa619.github.io/ito-craft/en/contact/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440,
+        "background": "rgb(247, 245, 239)"
+      },
+      "ordinaryRetailerLinks": 0,
+      "timings": {
+        "responseEndMs": 207.5,
+        "loadEventEndMs": 234.59999999962747,
+        "transferSizeBytes": 2144
+      }
+    },
+    {
+      "viewport": "mobile",
+      "kind": "home",
+      "url": "https://rozawa619.github.io/ito-craft/en/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390,
+        "background": "rgb(247, 245, 239)"
+      },
+      "ordinaryRetailerLinks": 3,
+      "timings": {
+        "responseEndMs": 9170.5,
+        "loadEventEndMs": 9219.600000000559,
+        "transferSizeBytes": 4239
+      }
+    },
+    {
+      "viewport": "mobile",
+      "kind": "objects",
+      "url": "https://rozawa619.github.io/ito-craft/en/objects/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390,
+        "background": "rgb(247, 245, 239)"
+      },
+      "ordinaryRetailerLinks": 9,
+      "timings": {
+        "responseEndMs": 19.200000000186265,
+        "loadEventEndMs": 97.70000000018626,
+        "transferSizeBytes": 5303
+      }
+    },
+    {
+      "viewport": "mobile",
+      "kind": "product",
+      "url": "https://rozawa619.github.io/ito-craft/en/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390,
+        "background": "rgb(247, 245, 239)"
+      },
+      "ordinaryRetailerLinks": 4,
+      "timings": {
+        "responseEndMs": 33.5,
+        "loadEventEndMs": 73.80000000074506,
+        "transferSizeBytes": 4186
+      }
+    },
+    {
+      "viewport": "mobile",
+      "kind": "contact",
+      "url": "https://rozawa619.github.io/ito-craft/en/contact/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390,
+        "background": "rgb(247, 245, 239)"
+      },
+      "ordinaryRetailerLinks": 0,
+      "timings": {
+        "responseEndMs": 10.299999999813735,
+        "loadEventEndMs": 29.40000000037253,
+        "transferSizeBytes": 2144
+      }
+    }
+  ],
+  "resources": [
+    {
+      "viewport": "desktop",
+      "type": "stylesheet",
+      "url": "https://rozawa619.github.io/ito-craft/_astro/Base.BD-cZNZj.css",
+      "status": 200
+    },
+    {
+      "viewport": "desktop",
+      "type": "stylesheet",
+      "url": "https://rozawa619.github.io/ito-craft/_astro/Base.BD-cZNZj.css",
+      "status": 200
+    },
+    {
+      "viewport": "desktop",
+      "type": "stylesheet",
+      "url": "https://rozawa619.github.io/ito-craft/_astro/Base.BD-cZNZj.css",
+      "status": 200
+    },
+    {
+      "viewport": "desktop",
+      "type": "stylesheet",
+      "url": "https://rozawa619.github.io/ito-craft/_astro/Base.BD-cZNZj.css",
+      "status": 200
+    },
+    {
+      "viewport": "desktop",
+      "type": "stylesheet",
+      "url": "https://rozawa619.github.io/ito-craft/_astro/Base.BD-cZNZj.css",
+      "status": 200
+    },
+    {
+      "viewport": "desktop",
+      "type": "stylesheet",
+      "url": "https://rozawa619.github.io/ito-craft/_astro/Base.BD-cZNZj.css",
+      "status": 200
+    },
+    {
+      "viewport": "desktop",
+      "type": "stylesheet",
+      "url": "https://rozawa619.github.io/ito-craft/_astro/Base.BD-cZNZj.css",
+      "status": 200
+    },
+    {
+      "viewport": "desktop",
+      "type": "stylesheet",
+      "url": "https://rozawa619.github.io/ito-craft/_astro/Base.BD-cZNZj.css",
+      "status": 200
+    },
+    {
+      "viewport": "mobile",
+      "type": "stylesheet",
+      "url": "https://rozawa619.github.io/ito-craft/_astro/Base.BD-cZNZj.css",
+      "status": 200
+    },
+    {
+      "viewport": "mobile",
+      "type": "stylesheet",
+      "url": "https://rozawa619.github.io/ito-craft/_astro/Base.BD-cZNZj.css",
+      "status": 200
+    },
+    {
+      "viewport": "mobile",
+      "type": "stylesheet",
+      "url": "https://rozawa619.github.io/ito-craft/_astro/Base.BD-cZNZj.css",
+      "status": 200
+    },
+    {
+      "viewport": "mobile",
+      "type": "stylesheet",
+      "url": "https://rozawa619.github.io/ito-craft/_astro/Base.BD-cZNZj.css",
+      "status": 200
+    },
+    {
+      "viewport": "mobile",
+      "type": "stylesheet",
+      "url": "https://rozawa619.github.io/ito-craft/_astro/Base.BD-cZNZj.css",
+      "status": 200
+    },
+    {
+      "viewport": "mobile",
+      "type": "stylesheet",
+      "url": "https://rozawa619.github.io/ito-craft/_astro/Base.BD-cZNZj.css",
+      "status": 200
+    },
+    {
+      "viewport": "mobile",
+      "type": "stylesheet",
+      "url": "https://rozawa619.github.io/ito-craft/_astro/Base.BD-cZNZj.css",
+      "status": 200
+    },
+    {
+      "viewport": "mobile",
+      "type": "stylesheet",
+      "url": "https://rozawa619.github.io/ito-craft/_astro/Base.BD-cZNZj.css",
+      "status": 200
+    }
+  ],
+  "internalLinks": [
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/contact/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/contact/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/about/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/about/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/affiliate-disclosure/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/affiliate-disclosure/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/crafts/hakone-yosegi/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/crafts/hakone-yosegi/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/editorial-policy/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/editorial-policy/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/journal/buying-from-overseas/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/journal/buying-from-overseas/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/journal/everyday-craft-earrings/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/journal/everyday-craft-earrings/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/makers/hamamatsuya/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/makers/hamamatsuya/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/journal/understanding-yosegi/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/journal/understanding-yosegi/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/journal/pierced-or-clip-on/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/journal/pierced-or-clip-on/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/journal/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/journal/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/objects/hamamatsuya-muku-yosegi-pendant/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/objects/hamamatsuya-muku-yosegi-pendant/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/objects/hamamatsuya-18k-yosegi-earrings/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/objects/hamamatsuya-18k-yosegi-earrings/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/objects/hamamatsuya-surgical-stainless-pierced-earrings/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/objects/hamamatsuya-surgical-stainless-pierced-earrings/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/makers/maker-unidentified-maruyama/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/makers/maker-unidentified-maruyama/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/objects/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/objects/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/objects/maruyama-yosegi-non-pierced-c/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/objects/maruyama-yosegi-non-pierced-c/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/objects/hamamatsuya-yosegi-kanzashi/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/objects/hamamatsuya-yosegi-kanzashi/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/objects/maruyama-yosegi-pierced-c/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/objects/maruyama-yosegi-pierced-c/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/objects/maruyama-yosegi-non-pierced-d/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/objects/maruyama-yosegi-non-pierced-d/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/places/kanagawa/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/places/kanagawa/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/objects/maruyama-yosegi-pierced-d/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/objects/maruyama-yosegi-pierced-d/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/robots.txt",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/robots.txt",
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/sitemap.xml",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/sitemap.xml",
+      "contentType": "application/xml"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/en/privacy/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/en/privacy/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/favicon.svg",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/favicon.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://rozawa619.github.io/ito-craft/_astro/Base.BD-cZNZj.css",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/ito-craft/_astro/Base.BD-cZNZj.css",
+      "contentType": "text/css; charset=utf-8"
+    }
+  ],
+  "screenshots": [
+    "artifacts/hosted-home.png",
+    "artifacts/hosted-mobile.png"
+  ],
+  "consoleErrors": [
+    {
+      "viewport": "desktop",
+      "url": "https://rozawa619.github.io/ito-craft/en/this-page-does-not-exist/",
+      "text": "Failed to load resource: the server responded with a status of 404 ()"
+    },
+    {
+      "viewport": "mobile",
+      "url": "https://rozawa619.github.io/ito-craft/en/this-page-does-not-exist/",
+      "text": "Failed to load resource: the server responded with a status of 404 ()"
+    }
+  ],
+  "pageErrors": [],
+  "failures": [],
+  "summary": {
+    "checks": 18,
+    "passed": 18,
+    "failed": 0,
+    "pages": 8,
+    "internalUrls": 30,
+    "screenshotCount": 2
+  },
+  "finalCurrencyCheck": {
+    "checkedAt": "2026-11-16T07:07:36.167Z",
+    "deployedCommit": "6973e2ed3f017e74af961288803711ec35ed9142",
+    "method": "Fresh headless Chrome, objects page at 390 and 320 pixels, HTTP status, overflow, explicit JPY and tax note.",
+    "checks": [
+      {
+        "width": 390,
+        "status": 200,
+        "documentWidth": 390,
+        "explicitJPY": true,
+        "taxNote": true
+      },
+      {
+        "width": 320,
+        "status": 200,
+        "documentWidth": 320,
+        "explicitJPY": true,
+        "taxNote": true
+      }
+    ]
+  }
+}

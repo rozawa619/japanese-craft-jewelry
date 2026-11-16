@@ -6,8 +6,9 @@
 英語メディア **ITO — Objects with a story.** の初期版。商品9件、独自ガイド4本、産地1、技法1、工房/不明メーカーの透明性記録2、方針5。27HTMLの静的生成。販売/カート/決済/発送/解析/会員登録なし。
 
 - GitHub： https://github.com/rozawa619/ito-craft 。新規公開repo作成を画面と公式APIで確認、Issues有効。
+- 公開preview：https://rozawa619.github.io/ito-craft/en/ 。GitHub Actions run 43821352419成功、HTTP200。preview/noindex。公開先8画面・内部30URL・404等を検証、18/18 PASS。
 - ローカルpreview： http://127.0.0.1:4321/en/ 。起動中セッション終了後はpnpm build→pnpm previewで再開。
-- GitHubへの全96ソースファイル格納をcommit 234201bで確認。PagesのSource: GitHub Actionsを保存済み。公開処理の最終結果はdocs/deployment-results.jsonを参照。プレビューと正式検索公開・申請承認は別。
+- GitHubへの全96ソースファイル格納をcommit 234201bで確認。PagesのSource: GitHub Actionsを保存済み。最終コード6973e2eの公開処理成功。実結果はdocs/deployment-results.jsonを参照。プレビューと正式検索公開・申請承認は別。
 - 正式公開設定：preview/noindex。個人の運営者名/公開用メールは未提供。架空値なし。実在するGitHub Issuesが訂正窓口（GitHubアカウント必要）。
 - 提携：全件not_applied。広告URL0。神奈川商品とBECOSの提携関係なし。
 - 画像：商品写真の許諾なし・使用なし。全件、自作の非実物図柄。画像台帳に不足と取得対象を記録。
@@ -28,3 +29,7 @@
 
 ## 重要な制約
 BECOS最大10%は募集の上限で当サイトへの保証ではない。Millenniumの旧ShareASale経路は現行性に疑義、初期不採用。全世界配送/アレルギー安全/実測軽量/レビュー/訪問取材実績を追加しない。
+
+## 納品時の確定状態
+
+実装完了・GitHubソース保存完了・オンラインpreview公開完了。正式な検索公開/申請準備完了/提携承認ではない。型0errors/0warnings/0hints、29テスト、27HTML全内部リンク、ローカル21画面41項目、地域/技法4項目、隔離広告4ケース、hosted18項目とスマホJPY/税区分表示を確認済み。最小の判断項目はdocs/user-checklist.md。

@@ -1,17 +1,35 @@
 {
-  "checkedDate": "2026-11-16",
+  "checkedAt": "2026-11-16T07:08:22.528Z",
+  "checkedDateJapan": "2026-11-16",
   "repository": "https://github.com/rozawa619/ito-craft",
   "sourcePushed": true,
-  "initialCommit": "234201bc0ff29e4bc472362b2fc422c830d7277e",
+  "deployedCommit": "6973e2ed3f017e74af961288803711ec35ed9142",
   "pagesSource": "GitHub Actions",
+  "previewUrl": "https://rozawa619.github.io/ito-craft/en/",
+  "deployment": "success",
+  "httpStatus": 200,
   "mode": "preview",
   "indexing": "noindex",
-  "deployment": "pending verification",
-  "initialRun": {
-    "id": 43820433883,
-    "buildAndTests": "passed",
-    "configurePages": "failed before Pages was enabled"
+  "normalRetailerLinks": true,
+  "trackingLinks": 0,
+  "workflowRun": {
+    "id": 43821352419,
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/ito-craft/actions/runs/43821352419"
+  },
+  "hostedChecks": {
+    "passed": 18,
+    "failed": 0,
+    "pages": 8,
+    "internalUrls": 30,
+    "finalPriceWidths": [
+      390,
+      320
+    ]
   },
   "applicationsSubmitted": false,
-  "affiliateApproved": false
+  "affiliateApproved": false,
+  "operatorNameProvided": false,
+  "contact": "Verified public GitHub Issues; a GitHub account is required; no private order details",
+  "sourceNote": "A later documentation-only commit may follow the deployed source commit without changing the served site."
 }
