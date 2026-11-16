@@ -26,7 +26,7 @@ For shopping, the useful question is straightforward: which construction does th
 
 ## A regional story is not a product certificate
 
-Hakone is in Kanagawa, one region within ITO's nationwide editorial scope. Our current yosegi research focuses on this area. The broader craft's recognition and history give context. They do not establish that every piece using a similar pattern carries an official designation.
+Hakone is in Kanagawa, one region within Japanese Craft Jewelry's nationwide editorial scope. Our current yosegi research focuses on this area. The broader craft's recognition and history give context. They do not establish that every piece using a similar pattern carries an official designation.
 
 We distinguish a workshop's address from a confirmed place of production. We also distinguish the seller from the maker. If a retailer sells a yosegi piece without naming its individual maker or production location, we keep that uncertainty visible. This is particularly useful when comparing something bought directly from a workshop with something listed by a specialist shop.
 
@@ -34,7 +34,7 @@ We distinguish a workshop's address from a confirmed place of production. We als
 
 Use the retailer's photographs to inspect the object actually offered. Consider whether the pattern is visible on the sides, how the metal fitting meets the ornament and whether the listing explains natural variation. If the design you receive matters for a gift, ask whether the photograph shows the exact pair or an example.
 
-ITO's abstract illustrations are not substitutes for those photographs. They do not reproduce a product's pattern or promise its appearance. Product photography is only published here when we have a suitable right to use it.
+Japanese Craft Jewelry's abstract illustrations are not substitutes for those photographs. They do not reproduce a product's pattern or promise its appearance. Product photography is only published here when we have a suitable right to use it.
 
 ## Let construction guide the conversation
 

@@ -14,7 +14,7 @@ const route=(locale,path='')=>new URL(base+locale+'/'+path,origin).href;
 const catalog=JSON.parse(await readFile(resolve(root,'src/data/catalog.json'),'utf8'));
 const published=catalog.products.filter(product=>product.publishStatus==='published');
 const longest=[...published].sort((a,b)=>b.title.length-a.title.length)[0];
-const routes={home:'',objects:'objects/',product:'objects/'+longest.slug+'/',guide:'journal/pierced-or-clip-on/',regions:'places/',region:'places/kanagawa/',craft:'crafts/hakone-yosegi/',contact:'contact/'};
+const routes={home:'',objects:'objects/',product:'objects/'+longest.slug+'/',guide:'journal/pierced-or-clip-on/',featurePierced:'journal/hakone-yosegi-pierced-earrings/',featureClip:'journal/hakone-yosegi-non-pierced-earrings/',regions:'places/',region:'places/kanagawa/',craft:'crafts/hakone-yosegi/',contact:'contact/'};
 const report={checkedAt:new Date().toISOString(),origin,base,method:'Fresh headless Chrome with no existing user profile. EN/JA route, current-page language switching, query/hash, jewelry scope, UI and accessibility checks. Does not open retailer destinations.',checks:[],pages:[],screenshots:[],pageErrors:[],consoleErrors:[],failures:[]};
 await mkdir(resolve(root,'artifacts'),{recursive:true});
 const browser=await chromium.launch({channel:'chrome',headless:true});
@@ -65,7 +65,19 @@ try{
      const text=await page.locator('main').innerText();
      assert.equal(text.includes('hamamatsuya-yosegi-kanzashi'),false);
      if(locale==='ja')assert.ok((text.match(/[ぁ-んァ-ヶ一-龠]/g)||[]).length>30,'Japanese page needs translated main content.');
-     const measured=['home','objects','product','guide'].includes(kind);
+     if(kind.startsWith('feature')){
+      const figure=page.locator('figure[data-editorial-asset]').first();
+      assert.equal(await figure.count(),1);
+      assert.match(await figure.locator('figcaption').innerText(),locale==='ja'?/AI生成.*実物写真ではありません/:/AI styling illustration.*not a photograph/);
+      const image=figure.locator('img');
+      await image.scrollIntoViewIfNeeded();
+      await image.evaluate(node=>node.decode());
+      const intrinsic=await image.evaluate(node=>({width:node.naturalWidth,height:node.naturalHeight}));
+      assert.deepEqual(intrinsic,{width:1536,height:1024});
+      const peer=locale==='en'?'ja':'en';
+      await switchTo(page,peer,path);await switchTo(page,locale,path);
+     }
+     const measured=['home','objects','product','guide','featurePierced','featureClip'].includes(kind);
      let axe=null;
      if(measured){const result=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();axe=result.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.map(n=>n.target)}));assert.equal(axe.length,0,JSON.stringify(axe))}
      const retail=await page.locator('a[data-sponsored]').evaluateAll(links=>links.map(link=>({sponsored:link.getAttribute('data-sponsored'),rel:link.getAttribute('rel')})));
@@ -137,12 +149,18 @@ try{
   }
   await context.close();
  }
- await check('Preview metadata, withdrawn hairpin and empty categories stay excluded',async()=>{
+ await check('Publication metadata, withdrawn hairpin and empty categories are correct',async()=>{
   const page=await browser.newPage();
   for(const locale of ['en','ja']){
    await page.goto(route(locale));
-   assert.match(await page.locator('meta[name="robots"]').getAttribute('content'),/noindex/);
-   assert.equal(await page.locator('link[rel="canonical"]').count(),0);
+   if(process.env.PUBLIC_PUBLISH_MODE==='public'){
+    assert.match(await page.locator('meta[name="robots"]').getAttribute('content'),/^index, follow$/);
+    assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'),new URL(base+locale+'/',process.env.PUBLIC_SITE_URL).href);
+    assert.equal(await page.locator('link[hreflang]').count(),2);
+   }else{
+    assert.match(await page.locator('meta[name="robots"]').getAttribute('content'),/noindex/);
+    assert.equal(await page.locator('link[rel="canonical"]').count(),0);
+   }
    assert.equal((await page.request.get(route(locale,'objects/hamamatsuya-yosegi-kanzashi/'))).status(),404);
   }
   await page.close();

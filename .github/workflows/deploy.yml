@@ -1,4 +1,4 @@
-name: Verify and deploy ITO
+name: Verify and deploy Japanese Craft Jewelry
 on:
   workflow_dispatch:
   push:
@@ -10,43 +10,50 @@ on:
       - docs/verification.md
 permissions:
   contents: read
-  pages: write
-  id-token: write
 concurrency:
   group: pages
   cancel-in-progress: false
 jobs:
   build:
+    permissions:
+      contents: read
+      pages: read
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     env:
       PUBLIC_SITE_URL: https://rozawa619.github.io
-      PUBLIC_BASE_PATH: /ito-craft/
-      PUBLIC_PUBLISH_MODE: ${{ vars.PUBLIC_PUBLISH_MODE || 'preview' }}
-      PUBLIC_REPOSITORY_URL: https://github.com/rozawa619/ito-craft
-      PUBLIC_OPERATOR_NAME: ${{ vars.PUBLIC_OPERATOR_NAME }}
-      PUBLIC_CONTACT_EMAIL: ${{ vars.PUBLIC_CONTACT_EMAIL }}
+      PUBLIC_BASE_PATH: /japanese-craft-jewelry/
+      PUBLIC_PUBLISH_MODE: public
+      PUBLIC_REPOSITORY_URL: https://github.com/rozawa619/japanese-craft-jewelry
+      PUBLIC_OPERATOR_NAME: rozawa619
+      PUBLIC_CONTACT_EMAIL: ''
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4, verified 2026-11-16
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: '24'
       - run: npm install -g pnpm@11.25.0
       - run: pnpm install --frozen-lockfile
-      - name: Check readiness before enabling indexing
-        if: env.PUBLIC_PUBLISH_MODE == 'public'
+      - name: Check publication configuration
         run: pnpm readiness
       - run: pnpm verify
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
         with:
           path: dist
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4

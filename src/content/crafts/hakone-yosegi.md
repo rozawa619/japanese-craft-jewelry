@@ -15,6 +15,6 @@ Our jewelry selection follows what the catalogs actually say. Species, finish, c
 
 ## Tradition and the individual object
 
-A regional craft description does not establish that every contemporary piece carries an official designation. See each object's classification and sources. No item in this first edit is presented as individually certified or physically tested by ITO.
+A regional craft description does not establish that every contemporary piece carries an official designation. See each object's classification and sources. No item in this first edit is presented as individually certified or physically tested by Japanese Craft Jewelry.
 
 [Read the longer guide to yosegi](../../journal/understanding-yosegi/).

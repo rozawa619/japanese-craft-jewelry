@@ -1,5 +1,5 @@
 ---
-title: "About ITO"
+title: "About Japanese Craft Jewelry"
 description: "An independent bilingual editorial project exploring Japanese craft jewelry, makers and techniques across Japan."
 locale: "en"
 publishStatus: "published"
@@ -7,7 +7,7 @@ updatedAt: "2026-11-16"
 sourceIds: []
 ---
 
-ITO — Jewelry with a story is an English-and-Japanese editorial project about Japanese craft jewelry. We explore makers, materials and techniques across Japan. Our current researched selection includes Hakone yosegi pieces connected to Kanagawa; we add regions when sourced product information and original editorial coverage are ready.
+Japanese Craft Jewelry — Jewelry, makers & stories from Japan is an English-and-Japanese editorial project about Japanese craft jewelry. We explore makers, materials and techniques across Japan. Our current researched selection includes Hakone yosegi pieces connected to Kanagawa; we add regions when sourced product information and original editorial coverage are ready.
 
 We connect the appeal of an object with the practical questions of choosing it: fastening, materials, dimensions, provenance and where to ask about buying from overseas. Our introductions are based on published primary sources, not personal wear tests, workshop visits or interviews unless a page explicitly documents otherwise.
 
@@ -19,6 +19,8 @@ Where permission for product photography has not been established, we use clearl
 
 ## An introduction, with a clear boundary
 
-ITO is not a shop. We do not accept orders or payments, hold stock, ship parcels or manage returns. Follow a retailer link to see that seller's current photographs, price and purchase conditions. Confirm any detail that matters to you before ordering.
+Japanese Craft Jewelry is not a shop. We do not accept orders or payments, hold stock, ship parcels or manage returns. Follow a retailer link to see that seller's current photographs, price and purchase conditions. Confirm any detail that matters to you before ordering.
 
 Read our editorial policy for how we select and verify information, our affiliate disclosure for commercial relationships, and our contact page for corrections.
+
+Some feature pages include clearly labeled AI-generated styling illustrations. These show a fictional adult model and illustrative jewelry, not a photograph of the listed product, a customer endorsement or a wear test. Patterns, dimensions, hardware and fit may differ from the actual item. Use the retailer’s current photographs and specifications for purchase decisions.

@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-11-16T08:04:09.680Z",
+  "method": "pnpm audit --json; registry advisory lookup",
+  "exitCode": 0,
+  "vulnerabilities": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0
+  },
+  "totalDependencies": 348,
+  "limitation": "Advisory databases do not prove absence of all vulnerabilities."
+}

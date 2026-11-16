@@ -44,4 +44,4 @@ Name the exact item or variant and ask for the missing detail: “Could you conf
 
 If the answer changes which item you would choose, wait for it before ordering. A clear specification is more valuable than guessing from an attractive photograph.
 
-Research checked 16 November 2026. The linked catalog is a source for its listed variants, not evidence of a commercial relationship with ITO.
+Research checked 16 November 2026. The linked catalog is a source for its listed variants, not evidence of a commercial relationship with Japanese Craft Jewelry.

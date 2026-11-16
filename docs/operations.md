@@ -67,7 +67,7 @@ slug変更は既存URLを壊すため、原則維持する。変更が必要な�
 
 ## 5. ブランド名・色・言語を変更する
 
-表示名・説明・言語・SNS設定は `src/config/site.ts`、色・余白・文字等は `src/config/tokens.css`。共通レイアウトとページ本文にもブランドの言及があるため、`rg "ITO|Jewelry with a story" src` で使用箇所を確認する。ブランド変更時は本文や申請草稿、画像台帳の説明も更新する。
+表示名・説明・言語・SNS設定は `src/config/site.ts`、色・余白・文字等は `src/config/tokens.css`。共通レイアウトとページ本文にもブランドの言及があるため、`rg "Japanese Craft Jewelry|Jewelry with a story" src` で使用箇所を確認する。ブランド変更時は本文や申請草稿、画像台帳の説明も更新する。
 
 英語 `/en/` と日本語 `/ja/` は実装済み。右上の1つのボタンが現在ページの対訳へ移動する。本文は各Collection内の `ja/<同じslug>.md`、表示文は `src/lib/i18n.ts` と `src/data/translations/ja.json` にある。翻訳を追加・更新する際は、日英のfrontmatterで `sourceIds`、`productIds`、`prefectureId`、`craftId`、`relatedMerchantIds` を一致させる。3言語目を追加するときは `src/content.config.ts` とデータのlocale制約、ルーティング、ナビ、言語メタ情報を一緒に設計する。英語を単に置換して既存URLを壊さない。空翻訳ページは作らない。
 
@@ -96,9 +96,9 @@ GitHubのリポジトリ作成・push・Pages公開は認証と権限がある�
 
 ## GitHub Pagesの有効化
 
-作成済みrepoはhttps://github.com/rozawa619/ito-craft。ソースをmainへpush後、Settings→Pages→SourceをGitHub Actionsにする。deploy.ymlで検証して公開する。初期modeはpreviewで検索対象外。PUBLIC_OPERATOR_NAMEと必要な公開用Contactを確認し、正式検索公開時だけRepository variablesのPUBLIC_PUBLISH_MODEをpublicに変更。元のプレビューmodeでもPages URLで閲覧できるが、公開成功はHTTPとActions結果で確認する。
+作成済みrepoはhttps://github.com/rozawa619/japanese-craft-jewelry。ソースをmainへpush後、Settings→Pages→SourceをGitHub Actionsにする。deploy.ymlで検証して公開する。0.3のworkflowはpublicを設定し、確認済みのGitHub公開名rozawa619を責任表示、実在IssuesをContactとして使う。previewへ戻す場合はworkflowのPUBLIC_PUBLISH_MODEをpreviewに変更する。元のプレビューmodeでもPages URLで閲覧できるが、公開成功はHTTPとActions結果で確認する。
 
-GitHub Pagesのプロジェクト公開ではrobots.txtは/ito-craft/配下になる。検索エンジンがドメイン直下のrobots.txtを参照する点に注意し、previewの検索除外は各HTMLのnoindexでも実施する。独自ドメインへ移す場合はドメイン直下のrobotsも再確認する。
+GitHub Pagesのプロジェクト公開ではrobots.txtは/japanese-craft-jewelry/配下になる。検索エンジンがドメイン直下のrobots.txtを参照する点に注意し、previewの検索除外は各HTMLのnoindexでも実施する。独自ドメインへ移す場合はドメイン直下のrobotsも再確認する。
 
 ## 7. 日英切替を確認する
 
@@ -107,3 +107,5 @@ GitHub Pagesのプロジェクト公開ではrobots.txtは/ito-craft/配下に�
 右上ボタンは英語画面では「日本語」、日本語画面では「English」。同じ商品の詳細・同じ記事へ1回で切り替わり、フィルター条件のクエリとhashを保持する。PCだけでなく390pxと320px幅でボタンが常時見つかること、切替後にナビ・フィルター・広告開示・本文が対象言語であることを確認する。
 
 既存英語の公開slugは維持する。掲載範囲から外したかんざしはデータと調査記録を削除せずdraftにし、両言語の公開ページを生成しない。
+
+0.3のセキュリティと広告設定：docs/security.md、docs/affiliate-operations.mdを優先する。programのaffiliateAllowedHosts空配列は全広告先不許可。承認済みhostを完全一致で明示してから広告URLを登録する。AI着用画像はsrc/data/editorial-images.jsonとpublic/images/を更新し、docs/assets.json・image-generation.jsonへ権利/非実物/制作の記録を残す。

@@ -1,13 +1,13 @@
 ---
 title: "Affiliate disclosure"
-description: "How retailer links work and how ITO will identify any commission-bearing links."
+description: "How retailer links work and how Japanese Craft Jewelry will identify any commission-bearing links."
 locale: "en"
 publishStatus: "published"
 updatedAt: "2026-11-16"
 sourceIds: []
 ---
 
-ITO introduces jewelry sold by independent external retailers. We are not the seller and do not process orders, payments, shipping or returns.
+Japanese Craft Jewelry introduces jewelry sold by independent external retailers. We are not the seller and do not process orders, payments, shipping or returns.
 
 ## What an affiliate link means
 
@@ -19,6 +19,6 @@ Where commission-bearing links are used, a clear notice appears before the relev
 
 Product facts must be supported by sources, and unknown details remain unknown. We do not publish invented reviews or describe products as personally tested when they have only been researched. Our editorial policy explains that distinction.
 
-The retailer controls the current price, availability, delivery, taxes, payment and return conditions. Read its terms before placing an order. ITO does not add a checkout or provide a separate purchase guarantee.
+The retailer controls the current price, availability, delivery, taxes, payment and return conditions. Read its terms before placing an order. Japanese Craft Jewelry does not add a checkout or provide a separate purchase guarantee.
 
 Commercial relationships and the links shown on the site are reviewed when they change. The notice displayed with the collection or article describes the links currently in use.

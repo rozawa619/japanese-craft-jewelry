@@ -1,0 +1,7 @@
+# 設計
+
+ブランドはsrc/config/site.tsと共通レイアウト/本文へ反映。商品・価格・広告・出典の正本は既存catalog、localeの対と全国展開の共通ルートを保つ。画像は商品実測写真から独立したeditorial registry+表示部品で公開、直下captionでAIと限界を示す。2本のガイドを同slugでen/jaに追加する。
+
+GitHubは既存repoをrenameして履歴/Issuesを維持、originとPagesサブパスを更新。Actionsを正規repoのcommit SHAに固定し、buildはcontents readのみ、deployだけpages/id-token権限。既存公開ユーザー名と実在Issuesを表示しreadiness通過後public化、両言語のcanonical/hreflang/robotsを実確認。Googleのサイト名表示はsubdirectory非対応であり、この変更が検索名表示や順位を保証するとはしない。
+
+セキュリティ：広告programに許可hostを明示し共通resolverで通常/広告先を検証。停止/fallbackは維持。CSPとJSON-LD安全化、依存auditと重要URL/開示/悪性入力の検証。GitHub Pagesで設定できないHTTPheaderは文書へ残す。秘密値/新規収集を追加しない。

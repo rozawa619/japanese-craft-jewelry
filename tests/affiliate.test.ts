@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import raw from '../src/data/catalog.json' with { type: 'json' };
 import sources from '../docs/research/sources.json' with { type: 'json' };
-import { safeHttps, resolveRetailerLink } from '../src/lib/affiliate.ts';
+import { safeHttps, resolveRetailerLink as resolveWithPolicy } from '../src/lib/affiliate.ts';
 import type { RetailerLink } from '../src/lib/schema.ts';
 import { catalogSchema } from '../src/lib/schema.ts';
 import { collectValidationErrors, loadProjectData } from '../scripts/validate.ts';
@@ -15,6 +15,8 @@ const fixture: RetailerLink = {
   id: 'test-retailer', productId: 'test-product', merchantId: 'test-merchant', programId: 'test-program',
   officialProductUrl: ordinary, affiliateUrl: affiliate, applicationStatus: 'approved', affiliateLinkVerifiedAt: '2026-11-16',
 };
+const fixturePolicy = { merchantId: 'test-merchant', officialHosts: ['retailer.example.org'], programMerchantIds: ['test-merchant'], affiliateHosts: ['tracking.example.org'] };
+const resolveRetailerLink = (link: RetailerLink | undefined, status?: string) => resolveWithPolicy(link, status, fixturePolicy);
 
 test('approved item and program with verified HTTPS URL produce sponsored link', () => {
   assert.deepEqual(resolveRetailerLink(fixture, 'approved'), { href: affiliate, sponsored: true, rel: 'sponsored noopener noreferrer' });

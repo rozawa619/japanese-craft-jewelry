@@ -3,7 +3,7 @@ import { basename, resolve, sep } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { catalogSchema } from '../src/lib/schema.ts';
 import type { Catalog } from '../src/lib/schema.ts';
-import { safeHttps } from '../src/lib/affiliate.ts';
+import { safeHttps, isAllowedDestination, policyForLink } from '../src/lib/affiliate.ts';
 
 export const projectRoot = fileURLToPath(new URL('../', import.meta.url));
 export type SourceRecord = { id: string; url: string; checkedAt: string; [key: string]: unknown };
@@ -89,7 +89,11 @@ export function collectValidationErrors(data: ProjectData): string[] {
     references(`merchant ${merchant.id} shipping`, 'sources', merchant.shipping.sourceIds);
     if (merchant.shipping.status === 'confirmed' && merchant.shipping.sourceIds.length === 0) errors.push(`merchant ${merchant.id}: confirmed shipping needs a source`);
   }
-  for (const program of catalog.programs) references(`program ${program.id}`, 'merchants', program.merchantIds);
+  for (const program of catalog.programs) {
+    references(`program ${program.id}`, 'merchants', program.merchantIds);
+    if (new Set(program.affiliateAllowedHosts).size !== program.affiliateAllowedHosts.length) errors.push(`program ${program.id}: duplicate affiliateAllowedHosts`);
+    if (program.applicationStatus === 'approved' && !program.affiliateAllowedHosts.length) errors.push(`program ${program.id}: approved program requires verified affiliateAllowedHosts`);
+  }
   const slugs = new Set<string>();
   for (const product of catalog.products) {
     if (slugs.has(product.slug)) errors.push(`products: duplicate shared slug ${product.slug}`);
@@ -128,6 +132,9 @@ export function collectValidationErrors(data: ProjectData): string[] {
     if (link.applicationStatus === 'approved' && !link.programId) errors.push(`link ${link.id}: approved link requires programId`);
     if (link.officialProductUrl && !safeHttps(link.officialProductUrl)) errors.push(`link ${link.id}: unsafe officialProductUrl`);
     if (link.affiliateUrl && !safeHttps(link.affiliateUrl)) errors.push(`link ${link.id}: unsafe affiliateUrl`);
+    const policy = policyForLink(link, catalog);
+    if (link.officialProductUrl && !isAllowedDestination(link.officialProductUrl, policy.officialHosts)) errors.push(`link ${link.id}: official URL host must match the merchant URL host`);
+    if (link.applicationStatus === 'approved' && program?.applicationStatus === 'approved' && link.affiliateUrl && !isAllowedDestination(link.affiliateUrl, policy.affiliateHosts)) errors.push(`link ${link.id}: approved affiliate URL host is not in verified affiliateAllowedHosts`);
     checkDate(`link ${link.id}`, link.affiliateLinkVerifiedAt);
   }
   for (const note of data.notes) {

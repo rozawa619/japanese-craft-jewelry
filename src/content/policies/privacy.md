@@ -7,7 +7,7 @@ updatedAt: "2026-11-16"
 sourceIds: []
 ---
 
-ITO is a static editorial website. It does not provide user accounts, a shopping cart, payment processing or an on-site contact form. We do not use analytics scripts, advertising trackers or cookies set by this site's own application.
+Japanese Craft Jewelry is a static editorial website. It does not provide user accounts, a shopping cart, payment processing or an on-site contact form. We do not use analytics scripts, advertising trackers or cookies set by this site's own application.
 
 ## Hosting and technical requests
 
@@ -17,7 +17,7 @@ Your browser requests pages and assets from the service hosting the website. Tha
 
 Following an external link takes you to another service with its own privacy practices. If a link is identified as an affiliate link, the retailer or its network may use attribution technology under its terms. Read the relevant site's privacy and cookie information before continuing there.
 
-ITO does not receive your retailer account credentials, payment information or parcel details through an on-site checkout, because we do not operate one.
+Japanese Craft Jewelry does not receive your retailer account credentials, payment information or parcel details through an on-site checkout, because we do not operate one.
 
 ## Contact and corrections
 

@@ -44,7 +44,7 @@ function fixture(name) {
   if (readdirSync(directory).some(name => /^\.env(?:\.|$)/.test(name))) throw new Error('An environment file was copied into a fixture.');
   const catalog = readJson(resolve(directory, 'src/data/catalog.json'));
   // Use a test-only identity, never a real BECOS/Millennium agreement.
-  catalog.programs.push({ id: 'test-only-build-program', name: 'TEST ONLY — isolated affiliate build fixture', description: 'Synthetic program used only in ignored local test copies; no real merchant agreement.', recruitmentUrl: 'https://affiliate-build-test.invalid/program', applicationUrl: null, recruitmentStatus: 'uncertain', applicationStatus: 'approved', merchantIds: ['hamamatsuya', 'hakone-maruyama'], disclosure: 'TEST ONLY: this isolated fixture demonstrates a commission-bearing link; it is not a real partnership.' });
+  catalog.programs.push({ id: 'test-only-build-program', name: 'TEST ONLY — isolated affiliate build fixture', description: 'Synthetic program used only in ignored local test copies; no real merchant agreement.', recruitmentUrl: 'https://affiliate-build-test.invalid/program', applicationUrl: null, recruitmentStatus: 'uncertain', applicationStatus: 'approved', merchantIds: ['hamamatsuya', 'hakone-maruyama'], affiliateAllowedHosts:['affiliate-build-test.invalid'], disclosure: 'TEST ONLY: this isolated fixture demonstrates a commission-bearing link; it is not a real partnership.' });
   const draft = { ...structuredClone(catalog.products[0]), id: 'test-only-draft-object', slug: 'test-only-draft-object', title: 'TEST ONLY draft object', publishStatus: 'draft' };
   catalog.products.push(draft);
   writeFileSync(resolve(directory, 'src/content/products/test-only-draft-object.md'), '---\nproductId: test-only-draft-object\npublishStatus: draft\n---\n\nTest fixture. Never publish.\n');
@@ -91,11 +91,11 @@ function analyze(directory, targetIds, ordinaryRoute, publicMetadata = false) {
   if (!publicMetadata && /<loc(?:\s|>)/.test(sitemap)) errors.push('Preview sitemap unexpectedly has indexed URLs');
   if (publicMetadata) {
     const locations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
-    if (!locations.length || locations.some(url => !url.startsWith('https://rozawa619.github.io/ito-craft/'))) errors.push('Public sitemap URL missing or outside configured public base');
+    if (!locations.length || locations.some(url => !url.startsWith('https://rozawa619.github.io/japanese-craft-jewelry/'))) errors.push('Public sitemap URL missing or outside configured public base');
     const robots = readFileSync(resolve(dist, 'robots.txt'), 'utf8');
-    if (!robots.includes('Allow: /') || !robots.includes('Sitemap: https://rozawa619.github.io/ito-craft/sitemap.xml') || /^Disallow:\s*\/$/m.test(robots)) errors.push('Public robots policy or sitemap destination is incorrect');
+    if (!robots.includes('Allow: /') || !robots.includes('Sitemap: https://rozawa619.github.io/japanese-craft-jewelry/sitemap.xml') || /^Disallow:\s*\/$/m.test(robots)) errors.push('Public robots policy or sitemap destination is incorrect');
     const home = readFileSync(resolve(dist, 'en/index.html'), 'utf8');
-    if (!home.includes('rel="canonical" href="https://rozawa619.github.io/ito-craft/en/"') || !home.includes('property="og:url" content="https://rozawa619.github.io/ito-craft/en/"')) errors.push('Public home canonical or OGP URL is incorrect');
+    if (!home.includes('rel="canonical" href="https://rozawa619.github.io/japanese-craft-jewelry/en/"') || !home.includes('property="og:url" content="https://rozawa619.github.io/japanese-craft-jewelry/en/"')) errors.push('Public home canonical or OGP URL is incorrect');
     if (/<meta\b[^>]*name="robots"[^>]*content="[^"]*noindex/.test(home)) errors.push('Public home remains noindex');
   }
   if (existsSync(resolve(dist, 'en/objects/test-only-draft-object/index.html'))) errors.push('Draft object page generated');
@@ -126,8 +126,11 @@ const scenarios = [
     catalog.programs.push({ ...structuredClone(catalog.programs.at(-1)), id: 'test-only-paused-program', name: 'TEST ONLY paused program fixture', applicationStatus: 'paused' });
     approve(catalog, 'hamamatsuya-catch-pierced').programId = 'test-only-paused-program';
   } },
+  { name: 'unlisted-tracking-host-fallback', targetIds: [], page: 'en/objects/hamamatsuya-yosegi-non-pierced-earrings/index.html', mutate(catalog) {
+    approve(catalog, 'hamamatsuya-clip').affiliateUrl = 'https://unlisted-build-test.invalid/track/one';
+  } },
   { name: 'test-only-public-base-metadata-and-drafts', targetIds: [], page: 'en/objects/hamamatsuya-yosegi-non-pierced-earrings/index.html', publicMetadata: true,
-    env: { PUBLIC_SITE_URL: 'https://rozawa619.github.io', PUBLIC_BASE_PATH: '/ito-craft/', PUBLIC_PUBLISH_MODE: 'public', PUBLIC_OPERATOR_NAME: 'Test fixture only', PUBLIC_REPOSITORY_URL: 'https://github.com/rozawa619/ito-craft' },
+    env: { PUBLIC_SITE_URL: 'https://rozawa619.github.io', PUBLIC_BASE_PATH: '/japanese-craft-jewelry/', PUBLIC_PUBLISH_MODE: 'public', PUBLIC_OPERATOR_NAME: 'Test fixture only', PUBLIC_REPOSITORY_URL: 'https://github.com/rozawa619/japanese-craft-jewelry' },
     mutate() {} },
 ];
 try {

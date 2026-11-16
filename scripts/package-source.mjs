@@ -3,7 +3,7 @@ import {dirname,resolve,sep} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const workspace=resolve(root,'..');
-const delivery=resolve(workspace,'ito-craft-delivery');
+const delivery=resolve(workspace,'japanese-craft-jewelry-delivery');
 const source=resolve(delivery,'source');
 if(!source.startsWith(delivery+sep)||!delivery.startsWith(workspace+sep)||dirname(source)!==delivery)throw new Error('Unsafe export destination');
 mkdirSync(delivery,{recursive:true});
@@ -20,7 +20,7 @@ for(const entry of readdirSync(root)){
 }
 const evidence=resolve(delivery,'screenshots');
 mkdirSync(evidence,{recursive:true});
-for(const entry of ['bilingual-ja-desktop-home.png','bilingual-ja-mobile-home.png','bilingual-ja-mobile-product.png']){
+for(const entry of ['bilingual-ja-desktop-home.png','bilingual-ja-mobile-home.png','bilingual-ja-mobile-product.png','feature-desktop.png','feature-mobile.png']){
  const image=resolve(root,'artifacts',entry);if(existsSync(image))cpSync(image,resolve(evidence,entry));
 }
 console.log('Current source exported; any previous export was preserved as a backup:',source);

@@ -2,7 +2,7 @@ import raw from '../data/catalog.json' with {type:'json'};
 import japanese from '../data/translations/ja.json' with {type:'json'};
 import sources from '../../docs/research/sources.json' with {type:'json'};
 import {catalogSchema,type Product,type Catalog} from './schema.ts';
-import {resolveRetailerLink} from './affiliate.ts';
+import {resolveRetailerLink,policyForLink} from './affiliate.ts';
 import type {Locale} from './i18n.ts';
 type DisplayText={name?:string;description?:string;location?:string;productionNote?:string;language?:string;shippingSummary?:string;returns?:string};
 type ProductText=Partial<Pick<Product,'title'|'editorialSummary'|'whoItMaySuit'|'whatToCheck'|'size'|'findings'|'fastening'|'taxNote'>>&{craftClassificationLabel?:string};
@@ -27,7 +27,7 @@ export const productsFor=(locale:Locale='en')=>catalogFor(locale).products.filte
 export const byId=<T extends {id:string}>(items:T[],id:string)=>items.find(x=>x.id===id)!;
 export const makerFor=(p:Product,locale:Locale='en')=>byId(catalogFor(locale).makers,p.makerId);
 export const linksFor=(ids:string[])=>catalog.links.filter(l=>ids.includes(l.productId));
-export const resolve=(link:typeof catalog.links[number])=>resolveRetailerLink(link,catalog.programs.find(p=>p.id===link.programId)?.applicationStatus);
+export const resolve=(link:typeof catalog.links[number])=>resolveRetailerLink(link,catalog.programs.find(p=>p.id===link.programId)?.applicationStatus,policyForLink(link,catalog));
 export const sponsoredFor=(ids=products.map(p=>p.id))=>linksFor(ids).some(l=>resolve(l)?.sponsored);
 export const price=(p:Product,locale:Locale='en')=>p.priceAmount!==null&&p.priceCurrency?new Intl.NumberFormat(locale==='ja'?'ja-JP':'en',{style:'currency',currency:p.priceCurrency,currencyDisplay:'code',maximumFractionDigits:0}).format(p.priceAmount):locale==='ja'?'販売店で価格を確認':'Price at retailer';
 export const labels=(group:'materials'|'crafts'|'productTypes'|'prefectures',ids:string[],locale:Locale='en')=>ids.map(id=>byId(catalogFor(locale)[group],id)?.name).filter(Boolean).join(locale==='ja'?'、':', ');

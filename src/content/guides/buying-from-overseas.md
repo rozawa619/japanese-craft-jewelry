@@ -12,11 +12,11 @@ productIds: ["hamamatsuya-pendant", "maruyama-clip-c", "maruyama-pierced-d"]
 
 Start with one question: can this retailer send this exact item to your country under terms you understand? An English page, a foreign-currency display or an international audience is not enough to establish that an order can be delivered to your address.
 
-ITO introduces jewelry and links to external retailers. We do not sell products, take payment, arrange shipping or handle returns. The contract and checkout are with the retailer you choose.
+Japanese Craft Jewelry introduces jewelry and links to external retailers. We do not sell products, take payment, arrange shipping or handle returns. The contract and checkout are with the retailer you choose.
 
 ## Confirm the destination for the item
 
-Read the retailer's current shipping information and, when necessary, ask about your country and the exact product. [Hakone Maruyama's overseas-shipping page](https://www.hakonemaruyama.co.jp/oversea.htm) is evidence that the shop describes an overseas service. It is not a blanket promise from ITO that every item can reach every destination today.
+Read the retailer's current shipping information and, when necessary, ask about your country and the exact product. [Hakone Maruyama's overseas-shipping page](https://www.hakonemaruyama.co.jp/oversea.htm) is evidence that the shop describes an overseas service. It is not a blanket promise from Japanese Craft Jewelry that every item can reach every destination today.
 
 For a listing without confirmed overseas terms, we say that shipping remains unconfirmed. This is different from saying the seller cannot ship abroad. If you need a proxy or forwarding service, evaluate that service's own costs, restrictions and return arrangements separately; we have not assessed one for you.
 
@@ -36,7 +36,7 @@ Find the rules for change of mind, defects, incorrect items and damage in transi
 
 Confirm pierced or non-pierced fittings, measurements, the materials of skin-contact parts and any pattern variation before ordering. If a gift must arrive by a particular date, ask about dispatch as well as transit; neither a product's availability nor a general delivery estimate is a personal arrival guarantee.
 
-Keep the written answers, order confirmation and current policy details for your records. Avoid sending payment details or private order information to ITO; questions about an order belong with the retailer.
+Keep the written answers, order confirmation and current policy details for your records. Avoid sending payment details or private order information to Japanese Craft Jewelry; questions about an order belong with the retailer.
 
 ## A concise message to the shop
 

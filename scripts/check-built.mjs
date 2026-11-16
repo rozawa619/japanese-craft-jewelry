@@ -2,7 +2,7 @@ import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { dirname, extname, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadEnvFile } from 'node:process';
-import { resolveRetailerLink } from '../src/lib/affiliate.ts';
+import { resolveRetailerLink, policyForLink } from '../src/lib/affiliate.ts';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 for (const name of ['.env.production.local', '.env.production', '.env.local', '.env']) {
@@ -71,7 +71,7 @@ function internalTarget(file, value) {
 const catalog = JSON.parse(readFileSync(resolve(root, 'src/data/catalog.json'), 'utf8'));
 const expectedRetailerLinks = new Set(catalog.links.flatMap(link => {
   const status = catalog.programs.find(program => program.id === link.programId)?.applicationStatus;
-  const result = resolveRetailerLink(link, status);
+  const result = resolveRetailerLink(link, status, policyForLink(link, catalog));
   return result ? [`${result.sponsored}|${result.href}`] : [];
 }));
 for (const [file, page] of pages) {

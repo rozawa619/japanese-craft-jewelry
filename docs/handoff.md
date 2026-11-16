@@ -1,34 +1,32 @@
-# 引継ぎ — 0.2
+# 引継ぎ — 0.3
 
-2026-11-16。AGENTS→constitution→specs/002-jewelry-bilingual→本書を読む。001は初期版の履歴として維持する。
+2026-11-16。AGENTS→constitution→specs/003-search-security-features→本書を読む。001/002は履歴。
 
 ## 最新の範囲
 
-ITO — Jewelry with a story. 日本全国の工芸ジュエリーを日本語と英語で紹介する。神奈川は調査済み産地の一つで、サイト全体を神奈川専用にしない。現在はピアス・イヤリング・ネックレス8点、ガイド4本、運営方針5本、地域記事1本・技法記事1本・作り手情報2件を日英で表示。かんざしは調査履歴を残しdraftへ。空の都道府県ページはない。
+Japanese Craft Jewelry。全国の工芸ジュエリーを英語/日本語で紹介する。神奈川は最初の調査済み産地。ピアス・イヤリング・ネックレス8点、ガイド6本、運営方針5本、地域1/技法1/作り手2を日英で表示。新記事はjournal/hakone-yosegi-pierced-earrings/ と journal/hakone-yosegi-non-pierced-earrings/。かんざしdraft、空県ページなし。販売/決済/発送機能なし。
 
-## 機能
+## 公開と責任表示
 
-/en/と/ja/に各25ページ、ルート入口と404を含め52HTML。ヘッダー右上の単一の日本語/Englishボタンで、商品/記事/絞込query/hashを維持して往復する。自動翻訳サービス・Cookie・言語保存は使わない。
+既存repoをhttps://github.com/rozawa619/japanese-craft-jewelryへrename（同ID/履歴/Issuesを維持）。新URLはhttps://rozawa619.github.io/japanese-craft-jewelry/en/ と /ja/。Pagesの旧プロジェクトURL自動転送は保証されない。GitHubユーザー名は変更していない。public/index設定と、指定済み公開GitHub名rozawa619を責任表示に使用。実名/住所/メールを作っていない。ContactはGitHub Issues（要account/公開投稿）、セキュリティは有効化した非公開vulnerability reporting。実際の配信完了/URL確認はdeployment-results.jsonを優先。Search Console/検索掲載/流入計測は未実施。
 
-数値・出典・広告URL・承認状態はsrc/data/catalog.jsonが正本。日本語表示はsrc/data/translations/ja.json、本文は各Collectionのja/<同slug>.md。src/lib/content.tsでlocale選択、src/pages/[lang]/の共通ルートから生成。旧英語URLは維持（掲載対象外となったかんざしのURLは404）。全国の入口は/en/places/と/ja/places/。
+## 設計と安全性
+
+共有事実はsrc/data/catalog.json、訳文はtranslations/ja.json、本文は各Collectionとja/。右上の単一切替でページ/query/hashを保持。広告はprogram/itemの両承認、merchant対応、確認日、完全一致許可hostの全条件でのみ切替。空hostは不許可。通常fallbackと開示は両言語共通。APIキー/外部adscriptなし。CSPとJSON-LD安全化、Actions SHA固定とbuild/deploy権限分離、週次Dependabot更新通知。秘密はGitへ置かない。Pagesで制御不能なHTTPheaderはsecurity.mdに記録。
+
+## 画像
+
+実物写真は未許諾につき未使用。抽象CSSと、今回明示依頼による独自AI成人女性着用図2点。公式HPを視認し木色/幾何学の一般傾向だけ参考にし、公式写真はgeneratorへ渡していない。柄/寸法/金具/fitの再現を主張しない。画像と常時captionを一体表示。public/images/、src/data/editorial-images.json、docs/assets.json、image-generation.jsonが入口。
 
 ## 検証
 
-pnpm verify: 型0errors/0warnings/0hints、33テストPASS、52HTML・2102内部参照・51アンカー、158通常販売店リンク。両言語の資料参照/翻訳の対/未知値/下書きを検証。広告隔離4ケースは承認・停止・URL欠落・publicサブパスでPASS。ブラウザ最終結果はdocs/bilingual-results.json。公開先の最新確定結果はdocs/deployment-results.jsonを優先し、公開前のソース状態だけで公開済みと断定しない。
+verify: 型0/0/0、41単体PASS、56HTML・2410内部参照・55アンカー・162通常リンク/0広告。search-security-browser-results.jsonは85/85、日英60画面、1440/390/320、axe/JS/console0。ad-build-resultsは5ケースPASS、承認/下部販売店/停止・欠落/不許可host/publicサブパス、実データとrootdist不変。dependency-audit-resultsは既知脆弱性0。これらは侵入試験や安全保証ではない。実公開確認は後続記録。
 
-## 公開と提携
+## 更新手順
 
-GitHub https://github.com/rozawa619/ito-craft 。英語 https://rozawa619.github.io/ito-craft/en/ 、日本語 https://rozawa619.github.io/ito-craft/ja/ 。公開modeはpreview/noindexを維持。既存のGitHub Actionsで検証後にPagesへ配信。個人の運営者名・公開用メールは未提供。訂正窓口は実在するGitHub Issues（アカウント必要・公開投稿）。全リンク通常、提携は未申請・未承認。写真は許諾未取得につき未使用で、自作の非実物図柄。
+1. specs003とdocs/operations.mdを読み影響範囲を記録。一次資料を再確認し、共有事実/日本語表示/日英本文を対で更新。
+2. 広告承認後はdocs/affiliate-operations.md、外部通信等の変更はdocs/security.mdに従う。未承認/未確認データを作らない。
+3. pnpm verify。表示変更はcheck:browser、広告変更はcheck:ads。画像captionと日英peerも確認。
+4. push後Actions成功、新URL、HTTPS/robots/sitemap/404/canonical/hreflang/Contactを実確認しdeployment/handoff更新。
 
-## 次のAIの更新手順
-
-1. specs/002とoperationsを読み、関連BI要件の変更範囲を記録。
-2. 事実の一次情報を確認してcatalog/sourcesを更新し、日本語表示とEN/JA本文を対で更新。
-3. pnpm verify。表示変更はpnpm check:browserで日英・スマホ・切替を確認。広告変更はpnpm check:adsも実施。
-4. GitHubへpushしActions成功と公開URLを実確認、deployment/handoffを更新。
-
-運営者の残判断はdocs/user-checklist.md。BECOSの条件照会と申請は未送信。広告承認・売上・商品実測・写真許諾を作り上げない。
-
-## 0.2の公開確定
-
-Actions run43825536502はsuccess（配信ソース9e0b590b11718882bf4d572de578b7fd34b7fdc2）。2026-11-16 07:44 UTCに公開URLで73/73、日英48画面（1440/390/320）、axe/JS例外/console error各0。両言語HTTP200、同一ページの切替・絞込query/hash・全国入口・8ジュエリー・hairpin404・noindexを確認。docs/bilingual-hosted-results.jsonが実測記録。後続の資料だけのコミットは配信画面を変更しない。
+運営者残操作はuser-checklist.md。提携は未申請・未承認、全リンク通常。BECOS条件照会草稿は未送信。署名実績/売上/商品実測/許諾を作らない。

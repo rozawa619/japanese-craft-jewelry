@@ -1,12 +1,12 @@
-# ITO — Jewelry with a story.
+# Japanese Craft Jewelry — Jewelry & maker stories from Japan.
 
-[English](https://rozawa619.github.io/ito-craft/en/) · [日本語](https://rozawa619.github.io/ito-craft/ja/) · [全ソース](https://github.com/rozawa619/ito-craft)
+[English](https://rozawa619.github.io/japanese-craft-jewelry/en/) · [日本語](https://rozawa619.github.io/japanese-craft-jewelry/ja/) · [全ソース](https://github.com/rozawa619/japanese-craft-jewelry)
 
-公開バージョンと最終確認の状態は `docs/deployment-results.json` と `docs/handoff.md` に記録します。previewは検索対象外。提携は未申請・未承認です。
+公開バージョンと最終確認の状態は `docs/deployment-results.json` と `docs/handoff.md` に記録します。公開modeはpublic。運営表示は指定済みのGitHub公開名rozawa619、訂正窓口は実在GitHub Issuesです。提携は未申請・未承認です。
 
 日本各地の工芸ジュエリーを紹介する英語・日本語のメディアです。全国の産地・作り手へ広げられる共通データと画面を持ち、現時点の調査済み特集は箱根寄木細工です。当サイトに商品販売・カート・決済・発送機能はありません。
 
-公開対象はピアス・イヤリング・ネックレスのジュエリー8件です。ガイド4本、運営方針5ページ、地域・技法・商品本文を日英で用意しています。かんざし1件は非公開データとして保持し、ジュエリー一覧・フィルター・サイトマップへ出しません。提携は未申請で、販売店リンクは通常リンクです。商品写真の転載許諾は取得しておらず、写真を掲載せず自作の抽象装飾を使っています。技術実装、実際の公開、申請準備、提携承認は別の状態です。最終の実行結果と公開先は `docs/handoff.md` を確認してください。
+公開対象はピアス・イヤリング・ネックレスのジュエリー8件です。ガイド6本、運営方針5ページ、地域・技法・商品本文を日英で用意しています。かんざし1件は非公開データとして保持し、ジュエリー一覧・フィルター・サイトマップへ出しません。提携は未申請で、販売店リンクは通常リンクです。商品写真の転載許諾は取得しておらず、実物写真は掲載せず、自作の抽象装飾と、明示したAI生成の成人女性着用イメージ2点を使っています。実商品の柄・寸法・金具を再現する画像ではありません。技術実装、実際の公開、申請準備、提携承認は別の状態です。最終の実行結果と公開先は `docs/handoff.md` を確認してください。
 
 ## 動かす
 
@@ -56,7 +56,7 @@ pnpm preview
 | `src/layouts/` / `src/pages/` / `src/styles/` | 共通画面、ルート、スタイル |
 | `docs/research/sources.json` | 一次資料、確認日、何の根拠か |
 | `docs/assets.json` | 装飾の権利根拠と商品写真の許諾状態 |
-| `specs/001-media-launch/` / `specs/002-jewelry-bilingual/` | 初期版とジュエリー・日英対応の仕様/設計/タスク |
+| `specs/001-media-launch/` / `specs/002-jewelry-bilingual/`、`specs/003-search-security-features/` | 版ごとの仕様/設計/タスク |
 | `scripts/` / `tests/` | データ・公開・リンク・広告等の検証 |
 | `public/` | 利用権が確認された公開アセット |
 
@@ -85,3 +85,14 @@ pnpm preview
 英語本文は従来の各Collection直下、日本語は同じCollectionの `ja/<同じslug>.md` に置きます。例：`src/content/guides/pierced-or-clip-on.md` と `src/content/guides/ja/pierced-or-clip-on.md`。日本語のfrontmatterは `locale: ja`。本文の出典ID・商品ID・地域/技法IDは日英で一致させ、記事内容を更新したら両方を確認します。商品本文も `products/ja/<商品ID>.md` を用意します。
 
 商品・工房・販売店の日本語ラベルは `src/data/translations/ja.json` に置き、共有事実を上書きしません。不明な金具や寸法は日本語でもnullのままです。`pnpm check` と `pnpm test` は翻訳欠落、言語間の参照ずれ、非ジュエリーの公開を検出します。変更後はビルドし、両言語のページと右上ボタンを確認します。
+
+## 0.3の公開と安全な運用
+
+現在の名称はJapanese Craft Jewelry。新しい紹介特集は`/en/journal/hakone-yosegi-pierced-earrings/`と`/en/journal/hakone-yosegi-non-pierced-earrings/`、同slugの日本語版もあります。
+
+- 安全設計とGitHub Pagesの制約：`docs/security.md`
+- 承認後の広告host/URL設定・停止：`docs/affiliate-operations.md`
+- SEOとURL移行：`docs/seo-and-migration.md`
+- 生成画像の原promptと確認方法：`docs/image-generation.json`、画像台帳`docs/assets.json`
+
+名称やURLの変更だけで検索順位・流入は保証されません。検索公開後もGoogleのクロール・登録を待つ必要があり、Search Consoleの所有確認/登録送信は行っていません。

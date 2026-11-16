@@ -16,6 +16,6 @@ const detail=pagePath(`objects/${p.slug}/`,locale);
  <p class="maker-name">{makerFor(p,locale).name}</p>
  <p class="card-summary">{p.editorialSummary}</p>
  <div class="card-price"><span>{price(p,locale)}</span><small>{p.availability==='out_of_stock'?t(locale,'Sold out when checked','確認時点で欠品') : t(locale,`Checked ${p.priceCheckedAt}`,`${p.priceCheckedAt}確認`)}</small></div>
- <p class="price-note" style="margin:7px 0 0">{p.taxNote}</p>
+ <p class="price-note card-tax-note">{p.taxNote}</p>
  <div class="card-actions"><a class="text-link" href={detail}>{t(locale,'Explore the details','詳しく見る')} <span aria-hidden="true">→</span></a><RetailerLink productId={p.id} compact locale={locale}/></div>
 </article>

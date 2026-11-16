@@ -1,7 +1,7 @@
 # 次のAIへの開始手順
 
 1. `README.md`、`docs/handoff.md`、`docs/constitution.md` を読み、現在の公開・申請状態を確認する。
-2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/002-jewelry-bilingual/` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
+2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/003-search-security-features/` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
 3. `src/lib/schema.ts`、`src/data/catalog.json`、`src/lib/affiliate.ts`、`src/content.config.ts` を読み、既存の分離を維持する。
 4. 変更後はリスクに応じた検証を実行し、仕様・タスク・変更履歴・引継ぎを実態に合わせて更新する。公開や提携承認を推測しない。
 
@@ -38,3 +38,6 @@ Node.js 24.22.1以上、pnpm 11.25.0。初回は `pnpm install --frozen-lockfile
 ## 0.2以降の掲載範囲と言語
 
 日本全国の工芸ジュエリーが対象。神奈川は現在の調査済み産地の一つで、サイト全体を神奈川専用と表現しない。かんざしは下書き。日本語本文は各Collectionのja/、数値等の共有事実はcatalog.json、日本語表示文はtranslations/ja.json。公開本文・訳文は日英を対で更新し、右上言語ボタンと現在ページ/絞込の往復を確認する。
+
+## 0.3以降の画像
+今回のユーザー依頼により、一次情報を参考にした成人女性のAI着用イラストを明示して利用できる。商品写真や試着の証拠として使わず、公式写真は無断取得/転載しない。商品実物データとeditorial画像台帳を分離し、AI表示を常時見えるcaptionに残す。

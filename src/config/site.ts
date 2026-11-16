@@ -1,7 +1,7 @@
 import type {Locale} from '../lib/i18n';
 export const site = {
- name:'ITO', tagline:'Jewelry with a story.',
- description:'An independent guide to Japanese craft jewelry. Discover makers, understand the details, and find your way to the retailer.',
+ name:'Japanese Craft Jewelry', tagline:'Jewelry, makers & stories from Japan.',
+ description:'Explore Japanese craft jewelry, from Hakone yosegi earrings to maker stories across Japan. Compare verified details, materials and official retailer information.',
  locale:'en' as Locale,
  url:import.meta.env.PUBLIC_SITE_URL||'',
  publishMode:import.meta.env.PUBLIC_PUBLISH_MODE||'preview',

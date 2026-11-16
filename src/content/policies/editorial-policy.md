@@ -7,7 +7,7 @@ updatedAt: "2026-11-16"
 sourceIds: []
 ---
 
-ITO selects jewelry for a documented connection to a craft technique, a useful design story and enough primary information to introduce them accurately. Our scope is Japan. Current research includes yosegi pieces connected to Kanagawa, and we add regions when the evidence and editorial coverage are ready. Inclusion is an editorial choice, not a rating, certification or promise that an item suits everyone.
+Japanese Craft Jewelry selects jewelry for a documented connection to a craft technique, a useful design story and enough primary information to introduce them accurately. Our scope is Japan. Current research includes yosegi pieces connected to Kanagawa, and we add regions when the evidence and editorial coverage are ready. Inclusion is an editorial choice, not a rating, certification or promise that an item suits everyone.
 
 ## Evidence before claims
 
@@ -30,3 +30,5 @@ Retailer links may become affiliate links only when a commercial relationship an
 ## Corrections and updates
 
 If you identify an error, use the contact method shown on our contact page and include the page URL, the disputed detail and a primary source where possible. We review corrections against the underlying evidence and update the relevant record. A date on an article does not imply that every external retailer page will remain unchanged afterward.
+
+Some feature pages include clearly labeled AI-generated styling illustrations. These show a fictional adult model and illustrative jewelry, not a photograph of the listed product, a customer endorsement or a wear test. Patterns, dimensions, hardware and fit may differ from the actual item. Use the retailer’s current photographs and specifications for purchase decisions.
