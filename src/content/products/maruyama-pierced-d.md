@@ -3,6 +3,6 @@ productId: maruyama-pierced-d
 publishStatus: published
 ---
 
-Use this pierced D entry as another design to investigate, with the seller's current photographs open alongside the pierced C page. We do not rank either pair for weight, finish or comfort because the required measurements and tests are absent.
+A long bar of wood gives the D pattern room to unfold. Its chevron-like arrangement and straight outline are the details we selected it for.
 
-Before ordering, confirm the item's maker, manufacturing location, metal, measurements and current stock. The retailer's Hakone address describes the shop and should not be read as verified origin for each item.
+This is an option for anyone who enjoys graphic shapes in jewelry. Explore the retailer's actual pairs to find the combination of wood colors you would like to make your own.

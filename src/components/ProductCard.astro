@@ -1,6 +1,6 @@
 ---
 import {pagePath} from '../config/site';
-import {makerFor,labels,price} from '../lib/catalog';
+import {catalogFor,makerFor,labels,price} from '../lib/catalog';
 import {t,type Locale} from '../lib/i18n';
 import type {Product} from '../lib/schema';
 import Pattern from './Pattern.astro';
@@ -11,12 +11,15 @@ interface Props { product:Product; index?:number; locale?:Locale }
 const {product:p,index=0,locale='en'}=Astro.props;
 const detail=pagePath(`objects/${p.slug}/`,locale);
 const image=productImageFor(p.id);
+const maker=makerFor(p,locale);
+const merchant=catalogFor(locale).merchants.find(item=>p.merchantIds.includes(item.id));
+const attribution=maker.id.includes('unidentified')&&merchant?t(locale,'Available at '+merchant.name,'取り扱い：'+merchant.name):maker.name;
 ---
 <article class="product-card" data-product-card data-type={p.productType.join(' ')} data-prefecture={p.prefectureIds.join(' ')} data-material={p.materialIds.join(' ')} data-craft={p.craftIds.join(' ')}>
  <a class="card-art-link" href={detail} aria-label={t(locale,`View ${p.title}`,`${p.title}の詳細を見る`)}>{image?<EditorialImage image={image} locale={locale} compact/>:<Pattern variant={index} locale={locale}/>}<span class="card-number">{String(index+1).padStart(2,'0')}</span></a>
- <div class="card-meta">{labels('productTypes',p.productType,locale)} <span>•</span> {p.prefectureIds.length?labels('prefectures',p.prefectureIds,locale)+t(locale,' workshop','の工房に関連'):t(locale,'Origin unconfirmed','製造地は未確認')}</div>
+ <div class="card-meta">{labels('productTypes',p.productType,locale)} <span>•</span> {labels('crafts',p.craftIds,locale)}</div>
  <h3><a href={detail}>{p.title}</a></h3>
- <p class="maker-name">{makerFor(p,locale).name}</p>
+ <p class="maker-name">{attribution}</p>
  <p class="card-summary">{p.editorialSummary}</p>
  <div class="card-price"><span>{price(p,locale)}</span><small>{p.availability==='out_of_stock'?t(locale,'Sold out when checked','確認時点で欠品') : t(locale,`Checked ${p.priceCheckedAt}`,`${p.priceCheckedAt}確認`)}</small></div>
  <p class="price-note card-tax-note">{p.taxNote}</p>

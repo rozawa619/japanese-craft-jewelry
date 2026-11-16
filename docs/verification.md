@@ -61,3 +61,7 @@ https://rozawa619.github.io/ito-craft/en/ — HTTP200、noindex。Actions run 43
 仕様004。商品主役のトップ/分類と2商品への紹介統合。verify型0/0/0・41単体・56HTML・1803href/src・43アンカー・140通常/0広告・14noindex固定移動PASS。localbrowser81/81（54画面、axe/JS/console0）、広告5/5の実測はselection-browser-results/selection-ad-build-results。検索対象のsitemapは40URL、旧journal14URLは移動用で本文なし。公開先の確定結果は配信後deployment-resultsへ記録。
 
 0.4公開：Actions43834269993 success（e287010）。公開81/81・54画面、補足11/11。正規40URL全200、商品主体/ブログ導線なし/Articleなし、固定移動14、CSP/画像/SORA/Contact/404を実測確認。証跡は最終selection-hosted-results.jsonにSHA付きで保存。公開先での実購入・広告成果・検索流入は未検証。
+
+## 0.5 魅力から購入先へ進む商品紹介
+
+仕様005。3公式ページの情報順序を参照し独自の見出し/装い/選定理由を追加。主CTA→下部closed details、mobile追従は主CTA通過後のみ/フッター隠し。共有事実・価格・未知値・広告は不変（product-copy-integrity-results）。型0/0/0・42単体・56HTML・1819内部参照・43アンカー・172通常/0広告・14旧移動PASS。localbrowser81/81（日英54画面、axe/JS/console0）、最終カード6/6、広告5/5。最新ローカル結果はappeal-browser-results/appeal-ad-build-results。公開確認は配信後にdeploymentへ記録。

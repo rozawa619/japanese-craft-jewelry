@@ -104,6 +104,16 @@ for (const [file, page] of pages) {
       }
     }
   }
+  if(/^(en|ja)\/objects\/[^/]+\/$/.test(routePath.slice(base.length))&&!redirect){
+    const intro=tags.find(tag=>'data-product-intro' in tag.attrs);
+    const price=tags.find(tag=>'data-product-price' in tag.attrs);
+    const primary=tags.find(tag=>'data-product-primary-cta' in tag.attrs);
+    const details=tags.find(tag=>'data-product-details' in tag.attrs);
+    const firstRetailer=tags.find(tag=>tag.name==='a'&&'data-sponsored' in tag.attrs);
+    if(!intro||!price||!primary||!details)fail(file,'product purchase flow markers are incomplete');
+    if(details&&(details.name!=='details'||'open' in details.attrs))fail(file,'technical specifications must use an initially closed details panel');
+    if(details&&[price,primary,firstRetailer].some(tag=>!tag||tag.index>=details.index))fail(file,'price and primary retailer action must precede technical specifications');
+  }
   const canonical = tags.filter(tag => tag.name === 'link' && (tag.attrs.rel || '').split(/\s+/).includes('canonical'));
   const robots = getMeta('name', 'robots');
   const is404 = /(?:^|[\\/])404(?:\.html|[\\/]index\.html)$/.test(file);

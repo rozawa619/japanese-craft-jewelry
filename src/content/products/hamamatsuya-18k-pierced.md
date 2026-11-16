@@ -3,6 +3,6 @@ productId: hamamatsuya-18k-pierced
 publishStatus: published
 ---
 
-This listing is useful for comparing the maker's named metal options, but it was marked sold out at our check. Confirm whether a new pair can be made or restocked before planning a purchase.
+We selected this listing for anyone who wants to explore both yosegi pattern and the maker's named jewelry materials. The wood remains the visual idea, while the 18K wording provides another option to discuss with Hamamatsuya.
 
-Ask which components the 18K description covers, along with the wooden element's dimensions and the weight of each earring. We do not infer allergy safety from the gold label and have not tested the pair.
+It is a piece to keep in mind when adding craft to a more tailored wardrobe. The maker can confirm the pair, the metal details and whether it is available again.

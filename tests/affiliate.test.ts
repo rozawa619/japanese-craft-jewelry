@@ -178,3 +178,14 @@ test('hair accessories stay out of the published jewelry catalog', () => {
  hair.publishStatus='published';
  assert.ok(collectValidationErrors(data).some(error=>error.includes('published product must be jewelry')));
 });
+
+
+test('product stories require both languages and cannot duplicate affiliate configuration',()=>{
+ const data=structuredClone(loadProjectData());
+ const product=data.catalog.products.find(product=>product.publishStatus==='published')!;
+ delete data.stories[product.id].ja;
+ data.stories[product.id].en.affiliateUrl='https://example.test/';
+ const errors=collectValidationErrors(data);
+ assert.ok(errors.some(error=>error.includes('localized story required')));
+ assert.ok(errors.some(error=>error.includes('unsupported field affiliateUrl')));
+});

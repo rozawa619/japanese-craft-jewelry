@@ -1,7 +1,7 @@
 # 次のAIへの開始手順
 
 1. `README.md`、`docs/handoff.md`、`docs/constitution.md` を読み、現在の公開・申請状態を確認する。
-2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/004-product-selection/` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
+2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/005-product-appeal/` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
 3. `src/lib/schema.ts`、`src/data/catalog.json`、`src/lib/affiliate.ts`、`src/content.config.ts` を読み、既存の分離を維持する。
 4. 変更後はリスクに応じた検証を実行し、仕様・タスク・変更履歴・引継ぎを実態に合わせて更新する。公開や提携承認を推測しない。
 
@@ -44,3 +44,6 @@ Node.js 24.22.1以上、pnpm 11.25.0。初回は `pnpm install --frozen-lockfile
 
 ## 0.4以降の役割
 ブログ/読みものは展開せず、おすすめ商品のセレクトと商品詳細へ集約する。記事sourceはdraft履歴、旧journalはnoindexの固定移動口。おすすめ順序はsrc/config/selection.ts、商品事実/広告はcatalogが正本。地域/技法/工房は商品一覧を先にする。
+
+## 0.5以降の商品紹介
+最初に商品の魅力・装い・価格・購入先を伝える。『耳に穴がある方』等の自明な条件を選定理由にしない。仕様/確認/出典は下部detailsで見つけやすく残す。product-storiesは安定productIdの表示専用で、価格/URL/未確認仕様を複製しない。

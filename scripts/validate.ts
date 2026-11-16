@@ -14,7 +14,7 @@ export type TranslationData = Record<string, Record<string, Record<string, unkno
 export type ProjectData = {
   catalog: Catalog; sources: SourceRecord[]; assets: AssetRecord[];
   notes: MarkdownRecord[]; guides: MarkdownRecord[]; policies: MarkdownRecord[];
-  places: MarkdownRecord[]; craftNotes: MarkdownRecord[]; translations: TranslationData;
+  places: MarkdownRecord[]; craftNotes: MarkdownRecord[]; translations: TranslationData; stories: Record<string,Record<string,Record<string,unknown>>>;
 };
 export const contentLocale = (record: MarkdownRecord): string => String(record.metadata.locale || 'en');
 const publicLocales = ['en', 'ja'] as const;
@@ -56,12 +56,29 @@ export function loadProjectData(root = projectRoot): ProjectData {
     notes: records('src/content/products'), guides: records('src/content/guides'),
     policies: records('src/content/policies'), places: records('src/content/places'),
     craftNotes: records('src/content/crafts'),
+    stories: json('src/data/product-stories.json'),
     translations: existsSync(resolve(root, 'src/data/translations/ja.json')) ? json('src/data/translations/ja.json') : {},
   };
 }
 export function collectValidationErrors(data: ProjectData): string[] {
   const errors: string[] = [];
   const { catalog, sources, assets } = data;
+  const storyFields=new Set(['headline','standfirst','highlights','outfit']);
+  const text=(value:unknown)=>typeof value==='string'&&!!value.trim();
+  for(const id of Object.keys(data.stories))if(!catalog.products.some(product=>product.id===id))errors.push('stories: unknown product '+id);
+  for(const product of catalog.products.filter(product=>product.publishStatus==='published')){
+    for(const locale of ['en','ja']){
+      const story=data.stories[product.id]?.[locale];
+      if(!story||typeof story!=='object'||Array.isArray(story)){errors.push('stories: localized story required for '+product.id+'/'+locale);continue}
+      for(const key of Object.keys(story))if(!storyFields.has(key))errors.push('stories: unsupported field '+key+' for '+product.id+'/'+locale);
+      if(!text(story.headline)||!text(story.standfirst))errors.push('stories: headline and standfirst required for '+product.id+'/'+locale);
+      if(!Array.isArray(story.highlights)||story.highlights.length!==3||!story.highlights.every(text))errors.push('stories: three highlights required for '+product.id+'/'+locale);
+      const outfit=story.outfit;
+      if(!outfit||typeof outfit!=='object'||Array.isArray(outfit))errors.push('stories: outfit required for '+product.id+'/'+locale);
+      else{const value=outfit as Record<string,unknown>;if(!text(value.title)||!text(value.body)||Object.keys(value).some(key=>!['title','body'].includes(key)))errors.push('stories: outfit title/body only for '+product.id+'/'+locale);}
+    }
+  }
+
   const selectedIds=[...selection.featuredProductIds];
   if(new Set(selectedIds).size!==selectedIds.length)errors.push('selection: duplicate featured product ID');
   for(const id of new Set<string>([selection.heroProductId,...selectedIds])){

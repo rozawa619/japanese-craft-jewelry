@@ -2,17 +2,19 @@
 import {catalog,productsFor,resolve} from '../lib/catalog';
 import {pagePath} from '../config/site';
 import {t,type Locale} from '../lib/i18n';
-interface Props {productIds?:string[];scope?:'page'|'site';locale?:Locale}
-const {productIds,scope='page',locale='en'}=Astro.props;
+interface Props {productIds?:string[];scope?:'page'|'site';locale?:Locale;compact?:boolean}
+const {productIds,scope='page',locale='en',compact=false}=Astro.props;
 const visibleIds=productIds??productsFor(locale).map(p=>p.id);
 const activeLinks=catalog.links.filter(l=>visibleIds.includes(l.productId)&&resolve(l)?.sponsored);
 const active=activeLinks.length>0;
 const programs=catalog.programs.filter(p=>activeLinks.some(l=>l.programId===p.id)&&p.disclosure);
-const message=scope==='site'
+const message=compact&&scope==='page'
+ ?(active?t(locale,'Affiliate links: we may earn a commission if you buy through links on this page.','広告：このページにはアフィリエイトリンクが含まれ、購入により紹介料を受け取る場合があります。'):t(locale,'Retailer links. No commission is earned from these links.','販売店への紹介リンクです（現在、報酬なし）。'))
+ :scope==='site'
  ?(active?t(locale,'Some retailer links across Japanese Craft Jewelry are affiliate links. If you buy through them, Japanese Craft Jewelry may earn a commission. Our editorial choices remain our own.','Japanese Craft Jewelry内の一部の販売店リンクはアフィリエイトリンクです。リンクを経由した購入により、Japanese Craft Jewelryが報酬を受け取る場合があります。掲載内容は独自の編集判断で選んでいます。'):t(locale,'Retailer links across Japanese Craft Jewelry are currently ordinary links. Japanese Craft Jewelry receives no commission from them.','現在、Japanese Craft Jewelry内の販売店リンクは通常リンクです。これらのリンクによる報酬は受け取っていません。'))
  :(active?t(locale,'Some links on this page are affiliate links. If you buy through them, Japanese Craft Jewelry may earn a commission. Our editorial choices remain our own.','このページの一部のリンクはアフィリエイトリンクです。リンクを経由した購入により、Japanese Craft Jewelryが報酬を受け取る場合があります。掲載内容は独自の編集判断で選んでいます。'):t(locale,'Independently researched. Retailer links on this page are ordinary links; Japanese Craft Jewelry receives no commission from them.','独自に一次情報を調査しています。このページの販売店リンクは通常リンクで、Japanese Craft Jewelryは報酬を受け取っていません。'));
 ---
-<aside class="disclosure" aria-label={t(locale,'Commercial disclosure','広告・提携関係について')} data-disclosure={scope==='page'?(active?'affiliate':'ordinary'):undefined} data-site-disclosure={scope==='site'?(active?'affiliate':'ordinary'):undefined}>
+<aside class:list={['disclosure',{'disclosure-compact':compact}]} aria-label={t(locale,'Commercial disclosure','広告・提携関係について')} data-disclosure={scope==='page'?(active?'affiliate':'ordinary'):undefined} data-site-disclosure={scope==='site'?(active?'affiliate':'ordinary'):undefined}>
  <span class="disclosure-dot" aria-hidden="true"></span><p>{message} {scope==='page'&&<a href={pagePath('affiliate-disclosure/',locale)}>{t(locale,'How our links work','リンクと広告の方針')}</a>}</p>
  {programs.map(p=><p>{p.disclosure}</p>)}
 </aside>

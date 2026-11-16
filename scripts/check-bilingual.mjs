@@ -19,11 +19,16 @@ const selected=selectedIds.map(id=>published.find(product=>product.id===id));
 if(selected.some(product=>!product))throw new Error('Selected product is missing from the published catalog.');
 const routes={home:'',objects:'objects/',product:'objects/'+longest.slug+'/',featurePierced:'objects/'+selected[0].slug+'/',featureClip:'objects/'+selected[1].slug+'/',regions:'places/',region:'places/kanagawa/',craft:'crafts/hakone-yosegi/',contact:'contact/'};
 const legacyTargets={"":"objects/","hakone-yosegi-pierced-earrings":"objects/hamamatsuya-surgical-stainless-pierced-earrings/","hakone-yosegi-non-pierced-earrings":"objects/hamamatsuya-yosegi-non-pierced-earrings/","everyday-craft-earrings":"objects/","pierced-or-clip-on":"objects/","buying-from-overseas":"objects/","understanding-yosegi":"crafts/hakone-yosegi/"};
-const report={checkedAt:new Date().toISOString(),origin,base,method:'Fresh headless Chrome with no existing user profile. EN/JA route, product-led selection, no-blog navigation, current-product language switching, query/hash, jewelry scope, UI and accessibility checks. Does not open retailer destinations.',checks:[],pages:[],screenshots:[],pageErrors:[],consoleErrors:[],failures:[]};
+const report={checkedAt:new Date().toISOString(),origin,base,method:'Fresh headless Chrome with no existing user profile. EN/JA route, product appeal before technical detail, visible price/retailer action, native detail disclosure, no-blog navigation, current-product language switching, query/hash, jewelry scope, UI and accessibility checks. Does not open retailer destinations.',checks:[],pages:[],screenshots:[],pageErrors:[],consoleErrors:[],failures:[]};
 await mkdir(resolve(root,'artifacts'),{recursive:true});
 const browser=await chromium.launch({channel:'chrome',headless:true});
 const check=async(name,action)=>{try{const detail=await action();report.checks.push({name,status:'passed',...(detail===undefined?{}:{detail})});console.log('PASS '+name)}catch(error){const message=error instanceof Error?error.message:String(error);report.checks.push({name,status:'failed',message});report.failures.push({name,message});console.error('FAIL '+name+': '+message)}};
-async function screenshot(page,file){await page.screenshot({path:resolve(root,file),fullPage:true});report.screenshots.push(file)}
+async function screenshot(page,file){
+ for(const img of await page.locator('img').all()){await img.scrollIntoViewIfNeeded();await img.evaluate(node=>node.decode());}
+ await page.evaluate(()=>{if(document.activeElement instanceof HTMLElement)document.activeElement.blur();window.scrollTo(0,0)});
+ await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+ await page.screenshot({path:resolve(root,file),fullPage:true});report.screenshots.push(file);
+}
 async function switchTo(page,locale,path,keyboard=false){
  const toggle=page.locator('a.language-switch');
  assert.equal(await toggle.count(),1);
@@ -34,6 +39,59 @@ async function switchTo(page,locale,path,keyboard=false){
  assert.equal(await page.locator('html').getAttribute('lang'),locale);
 }
 function expectedCount(filters){return published.filter(product=>(!filters.type||product.productType.includes(filters.type))&&(!filters.prefecture||product.prefectureIds.includes(filters.prefecture))&&(!filters.material||product.materialIds.includes(filters.material))&&(!filters.craft||product.craftIds.includes(filters.craft))).length}
+function assertStylingDisclosure(caption,locale){
+ assert.match(caption,/\bAI\b/i,'Styling imagery needs a visible AI label.');
+ assert.match(caption,locale==='ja'?/(?:実物|再現)[\s\S]*(?:ではありません|異なります)/i:/not (?:a |the )?(?:product |actual )?(?:photograph|photo|reproduction)|not the actual/i,'Styling imagery must stay distinct from an actual product photo or reproduction.');
+}
+async function assertStickyPurchaseAction(page,primary){
+ const sticky=page.locator('[data-product-sticky-cta]').first();
+ if(!await sticky.count())return {present:false};
+ await page.evaluate(()=>window.scrollTo(0,0));
+ if(page.viewportSize().width>=720){assert.equal(await sticky.isVisible(),false);return {present:true,desktopHidden:true}}
+ await sticky.waitFor({state:'hidden'});
+ await page.locator('details[data-product-details]').first().scrollIntoViewIfNeeded();
+ await sticky.waitFor({state:'visible'});
+ const link=sticky.locator('a[data-sponsored]').first();
+ assert.equal(await link.getAttribute('href'),await primary.getAttribute('href'),'Sticky action must use the same approved/fallback destination as the primary action.');
+ const width=page.viewportSize().width;
+ const dimensions=await page.evaluate(()=>({document:document.documentElement.scrollWidth,body:document.body.scrollWidth}));
+ assert.ok(dimensions.document<=width+1&&dimensions.body<=width+1,'Visible sticky action must fit the viewport.');
+ await page.locator('.site-footer').scrollIntoViewIfNeeded();
+ await sticky.waitFor({state:'hidden'});
+ await page.evaluate(()=>window.scrollTo(0,0));
+ return {present:true,initiallyHidden:true,appearsAfterMainAction:true,hidesAtFooter:true,sameRetailerDestination:true};
+}
+async function assertProductFlow(page,locale){
+ const intro=page.locator('[data-product-intro]').first();
+ const price=page.locator('[data-product-price]').first();
+ const details=page.locator('details[data-product-details]').first();
+ const primary=page.locator('[data-product-primary-cta] a[data-sponsored], a[data-product-primary-cta][data-sponsored]').first();
+ assert.equal(await intro.count(),1,'Product introduction needs a distinct customer-facing section.');
+ assert.equal(await price.count(),1,'Product price must remain outside the technical disclosure.');
+ assert.equal(await details.count(),1,'Technical details need a real keyboard-operable disclosure.');
+ assert.equal(await details.evaluate(node=>node.open),false,'Technical details should not dominate the initial product introduction.');
+ assert.equal(await primary.isVisible(),true,'The main retailer route must be rendered before technical details.');
+ assert.equal(await price.isVisible(),true);
+ for(const element of [price,primary]){
+  assert.equal(await element.evaluate(node=>!!(node.compareDocumentPosition(document.querySelector('details[data-product-details]'))&Node.DOCUMENT_POSITION_FOLLOWING)),true,'Price and main retailer CTA must precede technical details.');
+  assert.equal(await element.evaluate(node=>!node.closest('details')),true,'Price and primary action must not be collapsed.');
+ }
+ const lead=await intro.innerText();
+ assert.doesNotMatch(lead,/ピアスの穴があり[、,\s]|for (?:people|those) (?:with|who have) pierced ears/i,'The introduction must offer a reason to choose the piece, not an obvious piercing prerequisite.');
+ const disclosure=page.locator('[data-disclosure]').first();
+ assert.equal(await disclosure.isVisible(),true,'Link relationship disclosure must stay visible.');
+ await page.evaluate(()=>window.scrollTo(0,0));
+ const position=await primary.boundingBox();
+ const summary=details.locator('summary').first();
+ await summary.focus();await page.keyboard.press('Enter');
+ await page.waitForFunction(()=>document.querySelector('details[data-product-details]')?.open===true);
+ assert.ok((await details.innerText()).trim().length>30,'Expanded details need useful purchase information.');
+ await page.keyboard.press('Enter');
+ await page.waitForFunction(()=>document.querySelector('details[data-product-details]')?.open===false);
+ await page.evaluate(()=>window.scrollTo(0,0));
+ const stickyAction=await assertStickyPurchaseAction(page,primary);
+ return {technicalDetailsInitiallyClosed:true,keyboardDisclosure:true,priceAndPrimaryBeforeDetails:true,primaryTop:position?.y,viewport:page.viewportSize()?.height,stickyAction,locale};
+}
 async function setFilters(page,filters){
  for(const name of ['type','prefecture','material','craft'])await page.locator('select[name="'+name+'"]').selectOption(filters[name]||'');
  const expected=expectedCount(filters);
@@ -74,7 +132,7 @@ try{
      if(kind.startsWith('feature')){
       const figure=page.locator('figure[data-editorial-asset]').first();
       assert.equal(await figure.count(),1);
-      assert.match(await figure.locator('figcaption').innerText(),locale==='ja'?/AI生成.*実物写真ではありません/:/AI styling illustration.*not a photograph/);
+      assert.equal(await figure.locator('figcaption').isVisible(),true,'AI/non-product caption must be visible.');assertStylingDisclosure(await figure.locator('figcaption').innerText(),locale);
       const image=figure.locator('img');
       assert.match(await image.getAttribute('src'),kind==='featurePierced'?/hakone-yosegi-pierced-styling\.webp$/:/hakone-yosegi-clipon-styling\.webp$/);
       await image.scrollIntoViewIfNeeded();
@@ -84,10 +142,12 @@ try{
       const peer=locale==='en'?'ja':'en';
       await switchTo(page,peer,path);await switchTo(page,locale,path);
      }
+     let purchaseFlow=null;
+     if(['product','featurePierced','featureClip'].includes(kind))purchaseFlow=await assertProductFlow(page,locale);
      if(kind==='objects'){
       const images=page.locator('[data-product-card] figure[data-editorial-asset]');
       assert.ok(await images.count()>=2,'Both selected products should show their labeled styling images.');
-      for(const figure of await images.all()){assert.match(await figure.locator('figcaption').innerText(),locale==='ja'?/AI生成.*実物写真ではありません/:/AI styling illustration.*(?:not a product photograph|not a photograph of (?:this|the featured) product)/);}
+      for(const figure of await images.all()){assertStylingDisclosure(await figure.locator('figcaption').innerText(),locale);}
      }
      const measured=['home','objects','product','featurePierced','featureClip'].includes(kind);
      let axe=null;
@@ -95,10 +155,10 @@ try{
      const retail=await page.locator('a[data-sponsored]').evaluateAll(links=>links.map(link=>({sponsored:link.getAttribute('data-sponsored'),rel:link.getAttribute('rel')})));
      for(const link of retail){assert.equal(link.sponsored,'false');assert.equal(link.rel.split(/\s+/).includes('sponsored'),false)}
      report.pages.push({viewport:viewport.name,locale,kind,url:page.url(),status:response.status(),dimensions:dims,axeViolations:axe,retailerLinks:retail.length});
-     return {status:response.status(),dimensions:dims,axeMeasured:measured};
+     return {status:response.status(),dimensions:dims,axeMeasured:measured,purchaseFlow};
     });
-    if(locale==='ja'&&kind==='home'&&['desktop','mobile'].includes(viewport.name))await screenshot(page,'artifacts/bilingual-ja-'+viewport.name+'-home.png');
-    if(locale==='ja'&&kind==='product'&&viewport.name==='mobile')await screenshot(page,'artifacts/bilingual-ja-mobile-product.png');
+    if(locale==='ja'&&kind==='featurePierced'&&['desktop','mobile'].includes(viewport.name))await screenshot(page,'artifacts/appeal-ja-'+viewport.name+'-product.png');
+    if(locale==='ja'&&kind==='featureClip'&&viewport.name==='mobile')await screenshot(page,'artifacts/appeal-ja-mobile-clip.png');
    }
    await check(viewport.name+' '+locale+' current product switches language and returns',async()=>{
     await page.goto(route(locale,routes.product));
@@ -202,7 +262,7 @@ try{
  await browser.close();
  report.completedAt=new Date().toISOString();
  report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,pages:report.pages.length,axeViolations:report.pages.reduce((sum,page)=>sum+(page.axeViolations?.length||0),0),screenshots:report.screenshots.length};
- await writeFile(resolve(root,process.env.CHECK_REPORT_PATH||'docs/selection-browser-results.json'),JSON.stringify(report,null,2)+'\n');
+ await writeFile(resolve(root,process.env.CHECK_REPORT_PATH||'docs/appeal-browser-results.json'),JSON.stringify(report,null,2)+'\n');
  console.log(JSON.stringify(report.summary));
  if(report.failures.length)process.exitCode=1;
 }

@@ -20,7 +20,7 @@ for(const entry of readdirSync(root)){
 }
 const evidence=resolve(delivery,'screenshots');
 mkdirSync(evidence,{recursive:true});
-for(const entry of ['selection-ja-desktop-home.png','selection-ja-mobile-home.png','selection-ja-mobile-product.png']){
+for(const entry of ['appeal-ja-desktop-product.png','appeal-ja-mobile-product.png','appeal-ja-mobile-clip.png']){
  const image=resolve(root,'artifacts',entry);if(existsSync(image))cpSync(image,resolve(evidence,entry));
 }
 console.log('Current source exported; any previous export was preserved as a backup:',source);
