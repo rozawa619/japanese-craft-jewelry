@@ -5,7 +5,7 @@ import type {EditorialImage} from '../lib/editorial-images';
 interface Props {image:EditorialImage;locale:Locale;compact?:boolean;priority?:boolean}
 const {image,locale,compact=false,priority=false}=Astro.props;
 ---
-<figure class:list={['editorial-image',{'editorial-image-card':compact}]} data-editorial-asset={image.assetId}>
+<figure class:list={['editorial-image',{'editorial-image-card':compact}]} data-editorial-asset={image.assetId} data-preserve-ratio={image.preserveRatio||undefined}>
   <img src={path(image.path)} alt={image.alt[locale]} width={image.width} height={image.height} loading={priority?'eager':'lazy'} decoding="async" fetchpriority={priority?'high':'auto'}/>
-  <figcaption><strong>{t(locale,'AI styling illustration','AI生成の着用イメージ')}</strong>{compact?t(locale,' — not a photograph of this product.','。紹介商品の実物写真ではありません。'):t(locale,' — not a photograph or reproduction of this product.','。紹介商品の実物写真・再現ではありません。')}</figcaption>
+  <figcaption>{t(locale,'AI image','AIイメージ')}</figcaption>
 </figure>

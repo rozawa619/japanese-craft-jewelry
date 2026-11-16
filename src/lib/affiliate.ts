@@ -50,3 +50,6 @@ export function resolveRetailerLink(link: RetailerLink | undefined, programStatu
   const official = isAllowedDestination(link.officialProductUrl, policy.officialHosts);
   return official ? { href: official, sponsored: false, rel: 'noopener noreferrer' } : null;
 }
+
+/** An omitted locale is a shared destination; localized links stay in their own language. */
+export function linksInLocale<T extends {locale?:string}>(links:readonly T[],locale:string):T[]{return links.filter(link=>!link.locale||link.locale===locale)}

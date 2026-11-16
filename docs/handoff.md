@@ -1,91 +1,78 @@
-# 引継ぎ — 0.6 素材から楽しむ工芸ジュエリー
+# 引継ぎ — 0.7 素材の広がりと日英の入口
 
-更新日：2026-11-16。開始時は AGENTS.md → docs/constitution.md → specs/006-clear-craft-selection/ → 本書 → docs/operations.md を読む。006が今回の変更仕様で、001〜005と過去の検証レポートは履歴として扱う。お問い合わせの非公開は今回の明示依頼が旧要件に優先する。
+更新日：2026-11-16。AGENTS.md → docs/constitution.md → specs/007-balanced-jewelry-discovery/ → 本書 → docs/operations.mdの順で読む。007は、006の長い画像注記と広い年齢設定を、最新ユーザー指示に沿って更新する仕様。
 
-## 現在の目的と実装
+## 現在のサイト
 
-Japanese Craft Jewelryは、日本各地の工芸ジュエリーを英語・日本語で選んで紹介するセレクトサイト。運営者表示はSORA。商品にひかれ、服との合わせ方を想像できる紹介を主役にする。ブログ・読みもの・当サイトでの販売機能は展開しない。
+Japanese Craft Jewelryは、日本各地の工芸ジュエリーを英語・日本語で選んで紹介するサイト。運営者表示はSORA。ピアス・イヤリング・ネックレス・ブレスレットが対象で、商品ごとのデザインと装いを主役にする。ブログ、Contact、当サイト内の販売機能は設けない。
 
-公開商品は10点（既存の寄木8点＋凛然の切子ピアス＋6.KILNの白磁イヤリング）。神奈川・東京・佐賀の3都県、箱根寄木細工・切子・伊万里／有田焼の3技法。かんざしはdraftを維持し、空地域・空技法を公開しない。工房との関係や商品欄の産地を、部品すべての製造地や個別認証へ読み替えない。
+掲載構成は16商品（木8、木以外8）、6都府県、6技法。神奈川・東京・佐賀に石川・京都・愛知を加え、寄木／切子／有田焼／銀線の仕事／京友禅／尾張七宝を紹介する。新しい非木6商品は、葉の雫ペンダント、青のbouquetピアス、磁器カフ、CHECOSの銀の耳飾り、Morphosphereの布の耳飾り、加藤七宝の耳飾り。個別の認証・部品原産地や肌への適合は推測しない。
 
-トップの代表は凛然のアンバーガラス。おすすめはガラス・磁器と木工4点の計6点で、選定順序はsrc/config/selection.tsに分離している。種類に加え、木・ガラス・陶磁器の実商品へ絞り込める。商品紹介の先頭は魅力の見出し、画像、価格、公式リンク、訴求3点。素材・寸法・工芸の背景・出典は下部の閉じたdetailsに残す。
+トップと一覧は素材の偏りを抑えた共通のおすすめ順を使い、実公開商品がある種類・素材・産地へ案内する。商品紹介は短い見出し・画像・価格・公式リンク・ポイントから始め、素材・寸法・出典を下部の閉じたdetailsへ置く。
 
-方針は日英とも平易な短文へ更新した。Contactは本文をdraft履歴として残し、生成ページ・ナビ・フッター・sitemapから除外。メールやGitHub Issuesを代わりの窓口として出さない。公開UIから販売・決済・発送の責任を繰り返す説明を外した。広告状態とAI画像の開示は維持する。
+## 日英の入口と価格・リンク
 
-## 正本と編集先
+共通URLは英語・日本語を選ぶ入口。端末言語をもとに候補を見つけやすくするが、強制自動遷移はしない。固定の/en/と/ja/は維持し、右上の1ボタンで同じ商品・分類・方針へ切り替える。一覧のquery/hashも保つ。
 
-| 情報 | 正本／入口 |
+BECOS商品は同一SKUの両ストアを確認してから、EN→英語ストア、JA→日本語ストアへ案内する。catalogのlinks.localeで選び、価格事実はproduct.localizedPrices.jaで管理する。日本語表示のJPYと英語表示のUSDは各ストアの実額で、為替換算しない。USD50.40のような端数も残す。
+
+日本語BECOSリンクのprogramIdはnull、広告URL／確認日はnull、状態はnot_applied。英語プログラムを承認しても日本語storeへ広告を流用しない。locale無しの共有リンクは、両言語で同じ行き先を意図する場合だけ使う。実際のリンク先の言語と、海外発送可能という事実は区別する。
+
+## 正本と担当
+
+| 情報 | 正本 |
 | --- | --- |
-| 仕様・設計・タスク | specs/006-clear-craft-selection/ |
-| 商品事実・分類・工房・販売店・広告 | src/data/catalog.json |
-| 日本語表示 | src/data/translations/ja.json |
-| 独自の商品本文 | src/content/products/ と products/ja/ |
-| 見出し・導入・訴求3点・服の提案 | src/data/product-stories.json、読込はsrc/lib/product-stories.ts |
-| 一次資料・実確認日・支える事実 | docs/research/sources.json |
-| ガラス・磁器の調査と取込記録 | docs/research/material-expansion.json。取込後は表示用の正本にしない |
-| 画像の対応と公開ファイル | src/data/editorial-images.json、public/images/ |
-| 画像の用途・権利・未許諾写真 | docs/assets.json |
-| 生成の記録 | docs/image-generation.json、docs/image-generation-v6.json |
+| 仕様・設計・タスク・検証対応 | specs/007-balanced-jewelry-discovery/ |
+| 商品・分類・工房・販売店・地域・価格・広告 | src/data/catalog.json |
+| 日本語表示文 | src/data/translations/ja.json |
+| 独自の商品本文 | src/content/products/ とproducts/ja/ |
+| 見出し・導入・3ポイント・装い | src/data/product-stories.json |
+| 日付つき一次資料 | docs/research/sources.json |
+| 今回の調査取込記録 | docs/research/nonwood-glass-v7.json、nonwood-metal-v7.json |
+| 日英導線と検索設定の調査 | docs/research/discovery-review-v7.md |
+| おすすめの表示順 | src/config/selection.ts |
+| 現行画像対応 | src/data/editorial-images.json |
+| 画像の用途・権利・世代 | docs/assets.json、docs/image-generation*.json |
 
-価格・数値・広告URL・承認状態をstoryや商品本文へ複製しない。事実を訳文だけで補わない。新しい日英商品にはheadline、standfirst、highlights3件、outfit.title/bodyを揃える。未使用の商品に試着レビュー、軽さ・快適性・肌への適合を作らない。公式写真を見て分かる形と色を、材質組成・寸法・金具の認定へ広げない。
+調査提案JSONを表示用の別catalogにしない。共有数値・広告URLはstoryやMarkdownへ複製しない。localizedPricesもcatalogだけを更新する。安定ID・slugは維持し、旧journal14件は固定のnoindex移行口。空の都道府県ページは作らない。
 
-## AI画像7点と保存上の注意
+## AI画像と人物
 
-既存2点に、外見・年齢・服装の異なる架空の成人日本人女性5タイプを追加した。追加分は、非対称ボブとチャコール服、まとめ髪とコーラル服、ピクシーヘアとオリーブ服、白髪まじりボブと藍色服、編んだ髪と生成り服。制作時の指定はimage-generation-v6.jsonに残している。
+現行registryは13画像で15商品へ対応する。C/Dのピアスとイヤリングはそれぞれ画像を共有し、18K商品は抽象装飾。既存の30歳前後に見える人物は残し、年代が上に見えた星形・バー・木のペンダントは30代前半の設定で更新。追加人物も32〜34歳を中心とする架空の成人日本人女性で、かわいい・個性的・落ち着いた雰囲気の違いを保つ。
 
-公開ファイルは次の7点。すべてpublic/images/にあり、ソース納品に含める。
+最新ユーザー指示により、画像近くのcaptionは日本語「AIイメージ」、英語「AI image」のみ。About／選定方針もAI制作の短い説明にする。006以前の「実物写真・正確な再現ではない」という長文を公開captionへ戻さない。
 
-- hakone-yosegi-pierced-styling.webp
-- hakone-yosegi-clipon-styling.webp
-- rinzen-amber-glass-styling-v1.webp
-- arita-halfmoon-styling-v1.webp
-- yosegi-star-styling-v1.webp
-- yosegi-bar-mature-styling-v1.webp
-- yosegi-pendant-styling-v1.webp
+内部管理では生成イメージと実物写真を区別し続ける。生成画像は実物の柄・寸法・金具・fitの証拠でも試着レビューでもない。catalog.imageAssetIdsへ混ぜず、registry・実ファイル・台帳・prompt記録をまとめて更新する。現行ファイルはregistryを正本とし、過去世代の画像が残っていても現行13画像の数へ重複計上しない。許諾のない公式写真や内部確認スクリーンショットをpublic・Git・納品ソースへ入れない。
 
-registryは9商品に対応するが、星形は丸山Cのピアス／イヤリング、縦長は丸山Dのピアス／イヤリングで同じ画像を共有するため、画像の実数は7点。未登録の18K商品は抽象装飾を使う。画像は実物写真や正確な商品再現、装着方法・寸法・金具・着用感の証拠ではない。
+## 広告・安全・公開条件
 
-7ファイルを落とさず、変更時は画像・registryのpath/assetId/寸法/日英alt・assets台帳・生成記録を一緒に更新する。実物写真用のcatalog.imageAssetIdsへAI画像を混ぜない。画面上のAI／非実物captionをdetails内だけに隠さない。内部視認した公式写真やそのスクリーンショットをpublic・ソース納品へ移さない。公式写真は許諾を得て台帳へ記録するまで、転載・ホットリンクしない。
+全プログラム／商品リンクは未申請。実申請・契約・承認・紹介料発生はない。広告化は、実際の対象merchant・programと商品リンクの両承認・許可された有効HTTPS URL・完全一致host・確認日が揃う場合だけ。停止・不正・欠落は通常URLへ戻り、通常も不正ならCTAなし。同じlocale別リンクをCTAとDisclosureに使う。
 
-## 提携と公開設定
+Contactはユーザーの明示方針により非公開。メールやGitHub Issuesを代用窓口として出さず、架空の本人情報を作らない。readinessの技術公開と、提携先ごとの規約・参加資格・入力条件を区別する。申請前はdocs/pre-application-checklist.mdを確認し、申請送信は運営者が実際の条件を読んで判断する。
 
-全プログラムはnot_applied。申請・契約・承認・紹介料の発生はない。新しいBECOS2商品にも通常URLを使い、広告URLと確認日は未設定。programIdの候補関係があっても広告対象や承認を意味しない。
+CSP、JSON-LD安全化、Actionsの権限分離・SHA固定、秘密値の除外を維持。広告URLだけなら外部scriptは不要。解析・フォーム等を追加する場合は別仕様で外部送信とPrivacyを見直す。
 
-広告化はprogramと商品別リンクの両承認、対象merchant、有効HTTPSの広告URL、完全一致の許可host、確認日が揃う場合だけ。主CTA・繰り返し・スマホ追従は同じRetailerLinkとresolverを使う。停止／不正／欠落は通常URLへ戻し、通常も不正ならCTAなし。最初の広告リンクより前の開示とsponsoredを日英で合わせる。CSP、JSON-LD安全化、Actions権限分離・SHA固定を維持する。
+## 検証と配信の確認先
 
-pnpm readinessは実URL・public設定・運営名・データの技術検査で、Contact不在をエラーにしない。申請条件の最終確認はdocs/pre-application-checklist.mdとdocs/affiliate-readiness.mdを参照する。申請先が実在の窓口や本人情報を求める場合は運営者が規約を確認して判断する。未提供の氏名・メール・住所を作らず、認証・個人・支払情報をGitへ保存しない。
+この文書の構成説明から、検証や公開の成功を推測しない。今回の実行件数・対象commit・完了時刻は次を確認する。
+
+- specs/007-balanced-jewelry-discovery/validation.md：007要件との対応。
+- docs/discovery-stage-*.json：今回の日英・画面・価格・広告・公開の実測。
+- docs/deployment-results.json：version0.7.0の配信commit、Actions、公開先。旧versionなら007の配信証拠にしない。
+- docs/verification.md：検証説明。過去版の節はその版の履歴。
+
+PC1440／390／320、日英入口・同じページの切替、端数価格、locale別通常／広告リンク、素材・複合・0件・解除、全現行画像、短いAIcaption、詳細開閉、追従CTA、Contact404、canonical/hreflang/sitemap/robotsを確認する。検索エンジンへの掲載や流入、地域別の速度、売上は別に測る。
+
+## 全ソースと更新
 
 リポジトリ：https://github.com/rozawa619/japanese-craft-jewelry
 
-正規公開先：https://rozawa619.github.io/japanese-craft-jewelry/en/ と /ja/。同じ商品slugと右上の単一言語ボタン、一覧のquery/hash往復を維持する。既存の浜松屋slugや旧journal14件の固定noindex移行口を理由なく変えない。
+公開先：https://rozawa619.github.io/japanese-craft-jewelry/ 、/en/、/ja/。全ソースはworkspaceのjapanese-craft-jewelry-delivery/sourceとZIPへ書き出す。registryが参照する現行画像・台帳・日英本文・仕様・検証scriptとレポートを含め、.env・認証情報・node_modules・dist・内部参照写真を除外する。
 
-## 0.6の検証・配信を確認する
+次の変更では007とoperationsを読み、一次資料→catalog／sources→訳文／本文／story→画像対応→必要な検証→配信確認→資料・納品の順で更新する。
 
-この文書は新たな検証件数や配信成功を確定しない。実行対象のcommit、時刻、環境、versionが今回のものかを次の記録で照合する。
+## 履歴 — 0.6以前
 
-- specs/006-clear-craft-selection/validation.md：要件と最終の実測結果。
-- docs/clear-stage-browser-results.json：日英・PC／スマホ・画像・Contact非公開・絞込等。
-- docs/clear-stage-ad-build-results.json：隔離した広告切替。
-- docs/verification.md：検証の説明。過去版の節はその版の履歴。
-- docs/deployment-results.json：実際に配信したhead、Actionsと公開URL。versionが0.5なら0.6の公開証拠に使わない。
+0.6は木8＋切子／磁器2の10商品・3都県・3技法・AI7画像。配信commit5abfec84a230b2326f50ad9ea479eed76fff4688、Actions43847763433 success、2026-11-16 19:24:48 JSTに公開123/123・96画面＋補足13/13を確定した。Contactなし・SORAを確認済み。当時の長いAI注記と幅広い年齢設定は007で置き換える。
 
-未作成の記録、未実行、未反映はそのまま残す。ソースが完成したことと、公開URLへの反映、検索掲載、申請送信・承認、クリックや売上は別に扱う。
-
-## 次回の更新手順
-
-1. 006とoperationsを読み、変更範囲を仕様／タスクに記録する。
-2. 一次資料を再確認してsourcesとcatalogを更新し、訳文・日英本文・story・分類を揃える。確認した項目だけ日付を更新する。
-3. 画像を変えるなら7点の保存とregistry／台帳／生成記録を照合する。
-4. verify、readiness、必要なbrowser／ads／linksを実行。PC1440・390・320、価格／CTA／開示、閉じた詳細、追従の条件、画像caption、同一商品の日英、素材の実絞込、Contact404を確認する。
-5. 配信した場合はActionsのheadと公開URLを確認して最新の実測記録を更新する。006のtasksと引継ぎを合わせ、全ソース・7画像・証跡・ZIPを納品する。
-
-## 履歴 — 0.5以前
-
-0.5は既存8商品の魅力と装いを先にする構成、日英2点のAI着用イメージを実装した版。2026-11-16 09:29 UTC、head be3d316c4e9516739d814d446709c3d1052a1e1e、Actions43839206515 successの公開記録がある。詳細はdocs/appeal-hosted-results.jsonと当時の検証記録を参照。Contactを表示していた当時の画面・件数・成功を、Contactなし／10商品／7画像の0.6へ読み替えない。
-
-0.4以前のselection-*.json、さらに古いbrowser/ad-build等のレポートも履歴として保持する。古いITO名、旧リポジトリURL、神奈川のみ、Contact必須等の記載を、現在の公開仕様へ戻す根拠にしない。
-
-
-## 0.6 最終公開結果
-
-2026-11-16 19:24:48 JST確定。アプリ配信commit5abfec84a230b2326f50ad9ea479eed76fff4688、Actions43847763433 success。公開123/123（96画面、axe対象72画面0）＋補足13/13、JS/console0。正規54URL/7画像のSHA一致/Contact日英404/SORA/3素材/最終仕様を実確認。ローカル123/123、最終details12/12、広告fixture5/5を保持。後続commitは記録・再実行scriptのみで配信内容を変えない。全ソース/ZIP/screenshotsはworkspaceのjapanese-craft-jewelry-delivery。提携は全not_appliedで申請送信なし。
+clear-stage-*.jsonは0.6、appeal-*.jsonは0.5、selection-*.jsonは0.4の履歴として保持する。古いITO名、神奈川のみ、Contact必須、旧画像数、旧captionを最新へ戻す根拠にしない。

@@ -1,12 +1,12 @@
-# 商品・画像・広告・公開の更新手順 — 0.6
+# 商品・画像・価格・広告・公開の更新手順 — 0.7
 
-更新日：2026-11-16。AGENTS.md、docs/constitution.md、specs/006-clear-craft-selection/、docs/handoff.mdを先に読む。最新のユーザー指定ではContactを公開せず、販売・決済・発送の責任説明を公開UIへ繰り返し置かない。広告／AI開示、正確な商品情報、出典を保つ。
+更新日：2026-11-16。AGENTS.md、docs/constitution.md、specs/007-balanced-jewelry-discovery/、docs/handoff.mdを先に読む。現行は16商品・6都府県・6技法、木8／非木8の構成。画像は現行registryの13種類で15商品に対応する。公開・検証の確定状態は007のvalidationとdiscovery-stage結果を参照する。
 
-現在は日英の工芸ジュエリー10商品、3都県・3技法、AI着用イメージ7点を持つ静的セレクトサイト。ブログや販売機能を追加する必要はない。商品はデザイン・装い・価格・公式リンクを入口にし、詳細な仕様・出典は閉じたdetailsへ置く。
+最新ユーザー指示は、30代前後の女性、短い「AIイメージ / AI image」表示、木以外も選べる構成、日英で使いやすい入口。Contact非公開、SORA、ブログなしを維持する。
 
 ## 基本操作
 
-Node.js 24.22.1以上、pnpm 11.25.0。依存を変えない更新ではlockfileを保持する。
+Node.js24.22.1以上、pnpm11.25.0。通常のコンテンツ更新ではlockfileを変えない。
 
     pnpm install --frozen-lockfile
     pnpm dev
@@ -16,117 +16,98 @@ Node.js 24.22.1以上、pnpm 11.25.0。依存を変えない更新ではlockfile
     pnpm check:ads
     pnpm check:links
 
-開発はdev、本番生成はbuild、生成済みdistの確認はpreview。待受先は127.0.0.1とし、実際のURL／ポートは起動結果を確認する。verifyは型・データ・単体・ビルド・生成リンクを検査する。外部リンクの403／503等を即座に閉鎖と判定しない。readinessの技術公開判定と、提携の申請条件は別に確認する。
+本番生成はbuild、生成済みdistの表示はpreview。待受は127.0.0.1とし、実際のportは起動結果を見る。verifyは型・参照・単体・ビルド・生成リンクの検査。外部リンクの403/503等を即閉鎖としない。
 
 ## 1. 一次資料から商品を追加する
 
-1. 公式商品・工房・販売店の一次情報を確認し、docs/research/sources.jsonへ安定ID、URL、題名、実確認日、支える事実を記録する。出典の正本はsources.json。research内の調査メモや取込提案はcatalogの代わりに表示へ使わない。
-2. src/data/catalog.jsonのmakers／merchants／分類マスタに必要なレコードを追加する。販売店住所から製造地を推定せず、工房との関係と商品別の生産地、技法と個別認証を区別する。
-3. productsをsrc/lib/schema.tsに沿って作り、安定ID／slug、種別、素材、工房、産地、技法、出典を結ぶ。不明仕様はnull、未確認の産地や未許諾写真のIDは空配列にする。金具、重量の片耳／一組、税区分などを別商品の値で埋めない。
-4. src/data/translations/ja.jsonの同IDへ日本語表示を追加する。共有価格・数値・URL・広告状態の正本はcatalogに保ち、訳文だけで事実を補わない。
-5. src/content/products/＜商品ID＞.mdとproducts/ja/＜同ID＞.mdへ独自本文を書く。両方にproductId／publishStatus、日本語にはlocale: jaを付ける。デザインのどこにひかれ、どの服に合わせたいかを具体的に紹介する。ピアス穴の有無など自明な前提を推薦理由にせず、未使用の商品に試着・レビュー・軽さ・快適性の実績を作らない。
-6. 商品と販売店をlinksで結ぶ。未申請ならapplicationStatus:not_applied、affiliateUrl:null、affiliateLinkVerifiedAt:nullを保つ。programIdは確認した候補プログラムの実IDまたはnullとし、IDの存在だけで提携・対象確定を主張しない。officialProductUrlは実在する商品または公式カタログで、対象merchantのホストに合わせる。
-7. 下記のproduct-storiesへ日英の紹介表示を追加する。商品画像を使う場合は許諾を先に取り、AIイメージは実物写真と別のregistryへ登録する。
-8. 最初はdraftで確認し、出典・共有事実・訳文・日英本文・storyが揃ってからcatalogと本文をpublishedへ変更する。かんざしなど対象外の商品はdraftを保つ。
-9. 一覧はpublishedから生成する。トップに載せる商品はsrc/config/selection.tsのheroProductId／featuredProductIdsを更新する。公開商品がある素材だけを入口にし、空の地域や分類を増やさない。欠品はおすすめから外す。
+1. 公式商品・工房・販売店の本文を確認し、docs/research/sources.jsonへ安定ID、URL、題名、実確認日、支える事実を記録する。調査提案は履歴で、catalogとsourcesの別正本を作らない。
+2. catalog.jsonのmakers／merchants／prefectures／crafts／materials／productTypesへ必要なmasterを追加する。販売店住所から製造地を推定せず、一般技法と個別商品の認証を分ける。
+3. productsをsrc/lib/schema.tsに沿って追加する。安定ID／slug、種類、素材、工房、地域、技法、出典、確認日を揃える。不明仕様はnull。未確認地域や未許諾写真IDは空配列。weightPerPieceGramsは片耳の重さが確認できる耳飾りだけで使い、ブレスレットやネックレスの重さを流用しない。
+4. translations/ja.jsonへ表示文を追加する。数値・広告URL・承認・locale別価格はcatalogが正本で、訳文だけに事実を追加しない。素材や仕上げの重要補足はwhatToCheckへ簡潔に残し、販売手順の責任説明は公開UIへ戻さない。
+5. src/content/products/＜ID＞.mdとproducts/ja/＜同ID＞.mdに独自本文を書く。productId／publishStatus、日本語にはlocale:jaを付ける。デザインと服の提案を書き、使用経験・レビュー・快適性・低アレルギー等を作らない。
+6. product-stories.jsonへ両言語のheadline、standfirst、highlights3件、outfit.title/bodyを揃える。価格・重量・URLは重複しない。
+7. 確認した通常リンクと必要ならlocale別価格を下記手順で追加する。画像は生成registryと台帳に分離する。
+8. 初めはdraftで確認し、出典・本文・対訳・story・参照が揃ってからcatalogと本文をpublishedへ。かんざしはdraftを保ち、公開商品がない地域／技法は作らない。
 
-新規のガラスと磁器はBECOS英語ストアの確認日のUSD表示を日英共通で使い、独自の為替換算はしない。紹介商品として掲載できることと、アフィリエイト対象として承認されることは別。
+トップと一覧のおすすめはsrc/config/selection.tsの安定商品IDを使う。新しい種類はproductTypesと日英表示、種類入口、絞込に反映する。木・ガラス・磁器・銀・布・七宝など、素材を混ぜて選べる順序にする。欠品商品をおすすめに加えない。
 
-## 2. 魅力と装いの紹介を更新する
+## 2. 日英の実価格と通常リンクを設定する
 
-src/data/product-stories.jsonを安定productIdで管理し、src/lib/product-stories.tsのstoryFor(productId, locale)で読み込む。全公開商品にen／jaで次を揃える。
+BECOS英語／日本語は別storeとして扱う。同じSKUの実ページと価格を各storeで確認し、URLの置換だけで存在や国内利用可を推測しない。日本語の404と英語の日本配送不可が分かったKAGAMI候補は採用していない。
 
-- headline：デザインや装いへの期待が伝わる短い見出し。
-- standfirst：ひかれた理由を伝える短い導入。
-- highlights：形・模様・コーディネートなど具体的な3項目。
-- outfit.title／outfit.body：服との組み合わせの提案。
+英語のpriceAmount／priceCurrency／priceCheckedAt／taxNoteはproductsの既存フィールド、日本語の異なる実価格は同じ商品内のlocalizedPrices.jaへ置く。実装の形は次のとおり。
 
-ここへ価格、寸法・重量、広告URL・承認状態を重複入力しない。丸山C／Dの形やガラスの色など、公式写真を視認して書ける内容と、写真から分からない材質組成・寸法・金具・快適性を区別する。元の柄の完全一致を保証しない。製造者不明の商品は実在の販売店を「取り扱い」と表示し、販売店をメーカーにしない。
+    localizedPrices: {
+      ja: {
+        amount: 27500,
+        currency: "JPY",
+        checkedAt: "2026-11-16",
+        taxNote: "日本語ストアの税込表示。",
+        sourceIds: ["実際に確認した出典ID"]
+      }
+    }
 
-商品本文はproducts、短い紹介はproduct-stories、背景はplaces／crafts、方針はpoliciesへ分ける。Contactと旧guidesはdraft履歴。新しいブログを作らず、旧journal14件は固定のnoindex移行口として維持する。
+この数値は構造例。更新時は実ページを読んだ値にする。catalogFor(locale)が選ぶため、translations/jaや商品本文へ同じ価格を再入力しない。通貨の違いを為替換算で埋めない。USD50.40なら数値50.4を保ち、表示は50.40になることを確認する。整数への丸めや切捨て、通貨記号だけの変更はしない。
 
-## 3. 7点のAI画像を保存・更新する
+linksにはそれぞれのmerchantと通常URLを登録する。BECOSは英語側locale:en／merchantId:becos-en、日本語側locale:ja／merchantId:becos-ja。各merchantのURLと商品URLのhostを一致させる。
 
-現在のpublic/images/には、既存2点と0.6追加5点のWebPがある。全ソースを書き出す際はこの7点を必ず含める。
+locale無しは共有リンクで両言語へ出る。個別localeの行と同じ共有行を不用意に重ねない。英語programのmerchantIdsや承認をJA storeへ広げず、日本語通常リンクはprogramId:null、affiliateUrl:null、applicationStatus:not_applied、affiliateLinkVerifiedAt:nullを保つ。英語リンクも承認前は通常URL。
 
-| 画像 | 対応する安定商品ID |
-| --- | --- |
-| hakone-yosegi-pierced-styling.webp | hamamatsuya-catch-pierced |
-| hakone-yosegi-clipon-styling.webp | hamamatsuya-clip |
-| rinzen-amber-glass-styling-v1.webp | rinzen-seika-amber-pierced-earrings |
-| arita-halfmoon-styling-v1.webp | six-kiln-half-moon-earrings |
-| yosegi-star-styling-v1.webp | maruyama-clip-c／maruyama-pierced-c |
-| yosegi-bar-mature-styling-v1.webp | maruyama-clip-d／maruyama-pierced-d |
-| yosegi-pendant-styling-v1.webp | hamamatsuya-pendant |
+リンクを変更したら主CTA・再掲・追従CTAの行き先、同localeのDisclosure、JPY/USDと確認日、1ボタン切替後の表示を確認する。サイト本文の言語と、リンク先の対応言語・発送先は別の事実として扱う。
 
-7画像で9商品に対応する。星形と縦長はC／Dそれぞれの2商品で共有している。人物を別人と誤記したり、画像ファイルを商品数分だけ複製したりしない。18K商品には未登録のため抽象装飾を使う。
+## 3. 画像を30代前後の雰囲気で更新する
 
-画像を変更するときは、次を一緒に更新する。
+現行の対応はsrc/data/editorial-images.jsonが正本。13画像で15商品に対応し、C/Dの耳飾りは2商品で共有、18Kは抽象装飾。ファイル名を本文へ別一覧として固定せず、registryから照合する。古い世代がpublic/imagesに残っていても現行数へ二重計上しない。
 
-1. public/images/の実ファイル。残る7点を削除せず、参照切れを作らない。
-2. src/data/editorial-images.jsonの商品ID、path、assetId、実寸法、日英alt。
-3. docs/assets.jsonの用途・権利状態・生成記録への参照。
-4. docs/image-generation.json（既存2点）またはdocs/image-generation-v6.json（追加5点）のprompt、人物、生成元、対応商品。将来の追加分も新旧を区別して記録する。
+制作する人物は30代前半を中心とした架空の成人日本人女性。既存の27/29歳設定は30歳前後の雰囲気として残し、新しい制作は32〜34歳を目安にする。かわいい、個性的、すっきりした雰囲気などは変えてよい。年代が上に見える人物へ戻さない。
 
-AI画像は架空の成人日本人女性と創作したアクセサリーの装いの参考。実物写真、正確な再現、金具・寸法・fitの証拠ではない。共通表示部品のAI／非実物captionを常時画像の近くに表示し、details内やaltだけに隠さない。catalog.imageAssetIdsへAI画像を混ぜない。
+更新するものは次の4つ。
 
-公式写真は内部視認にとどめ、許諾なしに転載・ホットリンクしない。内部確認用の公式スクリーンショットや生成前の参照写真をpublic、Git、納品ソースに入れない。実物写真を将来使う場合は、権利者・用途・編集範囲・期間・クレジット・撤回条件を確認し、docs/assets.jsonへ許諾の根拠を残してから登録する。
+1. public/imagesの実ファイル。参照中の画像を落とさず、差替え世代を区別する。
+2. editorial-images.jsonのproductId、assetId、path、実寸法、日英alt。
+3. docs/assets.jsonの用途・権利・現行／履歴・prompt参照。
+4. docs/image-generation*.jsonのprompt、設定した人物、生成元、対応商品。過去記録を今回の制作へ書き換えない。
 
-## 4. 地域・技法・素材を追加する
+公開captionは日本語「AIイメージ」、英語「AI image」のみを共通部品で常時表示する。About／選定方針も短いAI制作の説明を使う。旧006の長い非実物・再現免責をcaptionへ復活させない。
 
-catalogのprefectures／crafts／materials／productTypesは独立マスタで、商品側のID配列から結ぶ。技法のsourceIds、日本語表示も用意する。素材入口はwood／glass／porcelainで、実公開商品があるものだけ出る。
+内部では生成イメージを実物の柄・寸法・金具・装着感や試着の証拠として使わず、catalog.imageAssetIdsへ混ぜない。今回は公式画像を内部視認にとどめ、許諾のない転載・ホットリンク・public保存をしない。内部確認スクリーンショットはGitや納品ソースへ入れない。写真を将来掲載するときは、権利者・許諾範囲・編集・期間・credit・撤回条件を記録してから別登録する。
 
-産地本文はsrc/content/places/＜prefectureId＞.mdとplaces/ja/、技法はsrc/content/crafts/＜craftId＞.mdとcrafts/ja/。frontmatterのIDとファイル名を一致させる。日英published本文、空でない背景情報、出典、同じIDに結ぶ公開商品1件以上を揃える。未調査の47都道府県や商品なしの分類は公開しない。
+## 4. 産地・技法・素材の入口を追加する
 
-ページは商品一覧を主役にし、背景を折りたたむ共通ルートを使う。神奈川専用の実装を複製せず、全国向けの構造を維持する。
+prefectures／crafts／materials／productTypesは独立masterで、商品のIDから関連付ける。地域と技法の本文はsrc/content/places/、crafts/と各ja/へ。日英published本文、出典、同じIDを持つ公開商品が1件以上あることを確認する。
 
-## 5. 価格・出典を見直す
+新素材はsilver／cotton／enamel-glazeなど実際の商品素材IDを使う。素材の見出しが金属／布など広い名称でも、未確認の商品を条件に含めない。商品一覧が先、背景は折りたたみの共通ルートを保ち、空の47都道府県ページを作らない。
 
-一次資料を読み直した項目だけcatalogのlastVerifiedAt／priceCheckedAtとsourcesの確認日を更新する。確認していない全項目の日付を一括更新しない。在庫は確認時点の観測で、将来の保証にしない。重量の基準、税、送料、金具などの不明値は不明のまま保つ。
+## 5. 日英入口と検索設定を維持する
 
-商品slugは原則維持する。変更時は移行先、内部リンク、sitemap、日英の対応をまとめて更新する。旧journal移行は固定した商品／一覧／分類へのmeta refresh 0、noindex、canonicalなし、sitemap対象外を保つ。任意URLへ転送する仕組みは加えない。
+共通URLにはEnglish／日本語を選べる入口を置く。端末言語は並びを見つけやすくするために使い、強制的に別言語へ送らない。/en/と/ja/の固定URLを保ち、右上の1ボタンで同じ商品・方針・分類へ往復する。一覧のquery/hashも保つ。
 
-## 6. 提携に申請する・承認後に切り替える
+公開のcanonical／相互hreflang／title／description／OG、index、sitemap、内部リンクを日英で確認する。入口や404、旧journal移行と、検索対象の本文ページは分ける。GitHub Pagesのproject配下robotsとドメインroot robotsを混同しない。
 
-現在は未申請・未承認。申請前にdocs/pre-application-checklist.mdとdocs/affiliate-readiness.mdで現行規約・参加地域・個別商品・入力項目・画像利用・報酬条件を確認する。公開Contactは現在設けない方針で、readinessの技術必須項目ではない。申請先が窓口を求める場合は、運営者が実在の手段を用意するかプログラムを見送るか判断する。未提供の連絡先や個人情報を作らない。登録・契約・申請送信を調査のつもりで実行しない。
+名称と説明はsrc/config/site.ts、表示は共通layout／styles、順序はselectionで管理する。運営者はSORA。Contactは日英draft・生成なし・導線なし。旧journal14件は固定先へのmeta refresh0、noindex、canonicalとsitemap対象外で保つ。
 
-承認後の詳細はdocs/affiliate-operations.mdを優先する。
+PUBLIC_SITE_URLは実HTTPS origin、PUBLIC_BASE_PATHは/japanese-craft-jewelry/、PUBLIC_PUBLISH_MODEはpublic、PUBLIC_OPERATOR_NAMEはSORA。PUBLIC_は公開情報で秘密値を入れない。.envをGitや納品に含めない。独自domainへ移すときはHTTPS／base／canonical／sitemap／CSPと公開方針を見直す。検索への掲載・順位・流入や海外での速度は、HTMLやbuildだけで保証しない。
 
-1. 実際の契約・管理画面で対象ドメイン、販売店、個別商品、深いリンク、開示、画像、計測・支払・禁止事項を確認する。BECOS承認を浜松屋や丸山の商品へ適用しない。
-2. programsのmerchantIds／applicationStatusを実態に合わせる。affiliateAllowedHostsは承認リンクで確認した完全一致の小文字hostだけ。空配列は全広告先不許可で、ワイルドカードやURL／パスを入れない。
-3. 承認対象のlinksへprogramId、実際のaffiliateUrl、applicationStatus:approved、affiliateLinkVerifiedAtを設定する。program側もapprovedが必要。通常への戻し先officialProductUrlを保持する。架空の広告IDは作らない。
-4. 指定開示があればprograms.disclosureを更新し、最初の広告リンクより前に見えること、日英の文言とsponsoredが実際のリンクに一致することを確認する。主・繰り返し・追従CTAは同じ共通resolverを使う。
-5. verifyと隔離広告確認を実行して配信し、実URLと転送先を確認する。無断の自己購入や架空成果を作らない。停止はprogramまたはlinkをpausedにして再配信する。不正URL・未許可host・確認日欠落は通常へ戻り、通常も不正ならCTAなし。
+## 6. 提携の申請・承認後に切り替える
 
-秘密値をcatalogやPUBLIC_へ入れない。広告script・解析・フォームを追加する場合は別仕様でCSP・外部送信・Privacyを見直す。CSPを一括無効にしない。
+現在は全て未申請。docs/pre-application-checklist.mdとaffiliate-readiness.mdで現行規約、参加地域、媒体、対象商品、リンク、画像、開示、計測・報酬を確認する。Contactの不在を技術公開のエラーにせず、プログラムが実窓口や本人情報を求める場合だけ運営者が判断する。未提供の情報を作らず、調査として登録・契約・申請送信をしない。
 
-## 7. ブランド・言語・公開設定
+承認後はdocs/affiliate-operations.mdも確認する。英語側の承認を日本語側や浜松屋／丸山へ流用しない。実際のprogramとmerchant、商品リンクの両承認、実在する有効HTTPSのaffiliateUrl、完全一致の許可host、affiliateLinkVerifiedAtを設定する。通常への戻し先を保持する。
 
-名称と説明はsrc/config/site.ts、見た目はconfig／styles、選定順序はselection.tsで変更する。運営名はSORAを維持し、GitHubユーザー名を運営者として表示しない。
+CTAとDisclosureは同じlocale別集合を使い、最初の広告リンクより前に開示する。実際の広告だけsponsoredにする。停止はprogramまたはlinkをpausedにし、不正・欠落は通常へ戻し、通常も不正ならCTAなし。架空の広告IDや成果を作らない。
 
-/en/と/ja/は同じ商品slugで対になる。Collectionのja/、translations/ja、product-storiesのen／jaを揃える。右上の言語ボタン1つで同じ商品・方針・分類へ往復でき、一覧のquery/hashを保つことを確認する。
+CSPとActionsの権限分離を維持する。広告script、解析、formを追加する場合は別仕様で外部送信・Cookie・Privacyを見直し、一括でCSPを無効にしない。
 
-.env.exampleは設定名の見本。公開時はPUBLIC_SITE_URLに実HTTPS origin、PUBLIC_BASE_PATHに/japanese-craft-jewelry/、PUBLIC_PUBLISH_MODEにpublic、PUBLIC_OPERATOR_NAMEにSORA、PUBLIC_REPOSITORY_URLに実repoを設定する。未使用のPUBLIC_CONTACT_EMAILを埋める必要はなく、設定だけでContact公開や到達性を保証しない。PUBLIC_は公開情報なので秘密値を入れない。
+## 7. 検証・公開・納品
 
-## 8. 検証・配信・全ソースの引継ぎ
+検証は変更に応じてverify／readiness／browser／ads／linksを実行する。PC1440／390／320で日英入口、16商品の表示、素材の偏らない順序、絞込・0件・解除、braceletを含む種類、JPY/USDと小数、locale別リンク、短いAIcaption、現行画像、詳細開閉、追従CTA、Contact404を確認する。
 
-リポジトリはhttps://github.com/rozawa619/japanese-craft-jewelry、正規先はhttps://rozawa619.github.io/japanese-craft-jewelry/en/ と /ja/。既存Actionsで検査後にPagesへ配信する。
+再実行scriptはscripts/check-bilingual.mjs、check-product-details.mjs、check-hosted-release.mjs等を参照。CHECK_BASE_URL、CHECK_REPORT_PATH、CHECK_SCREENSHOT_PREFIX等の各scriptが持つ設定で、localとhostedの出力を分ける。古いclear-stageレポート名の既定値を使うscriptは出力先を明示し、履歴を上書きしない。
 
-1. verifyとreadiness、必要なbrowser／ads／linksを実行し、対象commit・日時・環境と未実行項目を記録する。
-2. PC1440／390／320で日英の価格・CTA・広告／AI開示・閉じた詳細、追従CTAの初期非表示／主CTA通過後表示／footerで非表示を確認する。画像7点と全対応商品、素材の絞込と複合／解除／0件、言語切替、Contactリンクなしと両言語404も確認する。
-3. Gitへ保存してpushした場合はActionsの対象headとsuccessを確認し、実URLで同じ操作とcanonical／hreflang／robots／sitemap／404／旧journal移行を確認する。ローカルpreviewとpublicの検索設定を混同しない。
-4. specs/006-clear-craft-selection/validation.mdとtasks、docs/clear-stage-*.json、verification、deployment-results、handoffを実測に合わせる。過去レポートを今回の成功へ読み替えず、未実施は未実施と残す。
-5. pnpm packageで全ソースを隣接のjapanese-craft-jewelry-delivery/sourceへ書き出し、7点のWebPと台帳・日英本文・仕様・検証記録が含まれることを確認する。node_modules／dist／認証情報／.env／内部参照スクリーンショットを含めない。ZIPは別途作成し、展開して同じソースが入ることを確認する。
+Gitへ保存してpushした後はActionsの対象commitとsuccess、実公開URLでの反映を確認する。007のvalidation／tasks、docs/discovery-stage-*.json、verification、deployment-results、handoffを実測に合わせる。未実行・旧version・未配信を成功へ読み替えない。0.6はclear-stage、0.5はappeal、0.4はselectionの履歴。
 
-GitHub Pagesのproject配下robotsとドメインroot robotsは別。HTMLのindex／noindexも確認する。独自ドメインへ移す際はHTTPS／base／正規URL／robots／CSPと、当時の公開方針を見直す。技術公開の合格は提携申請条件、承認、検索掲載、クリック・売上の証拠ではない。
+pnpm packageで隣接するjapanese-craft-jewelry-delivery/sourceへ書出し、別途ZIPを作る。registryが参照する現行画像、日英の本文、価格とリンクの正本、台帳、仕様、全検証script・レポートが含まれることを確認する。node_modules／dist／artifacts／.env／認証情報／内部参照写真を除外し、ZIPの必須ファイル・展開内容も照合する。
 
-0.5以前の測定はdocs/handoff.mdの履歴と過去レポートに分けて保持する。0.6の最終検証・配信状態は、その版の実行結果ファイルを優先する。
+リポジトリ：https://github.com/rozawa619/japanese-craft-jewelry
 
-
-## 0.6の補足検証を再実行する
-
-`node scripts/check-product-details.mjs` は切子・磁器・ペンダントの日英390/320で素材補足、重量、details、CTAを確認する。既定previewは127.0.0.1:4322。別の起動先ではCHECK_BASE_URLをそのoriginへ設定する。出力はdocs/clear-stage-final-detail-results.jsonとartifacts/。
-
-`node scripts/check-hosted-release.mjs` は既定の実公開先を読み取り、正規sitemap/全7画像のローカルとのSHA256/Contact非公開/SORA/素材導線/新仕様/CSPを確認する。CHECK_BASE_URLとPUBLIC_BASE_PATHで対象を指定でき、フォームや申請は送信しない。全画面はCHECK_BASE_URL・CHECK_REPORT_PATH・CHECK_SCREENSHOT_PREFIXを指定してcheck-bilingual.mjsを実行し、localとhostedの証跡を分ける。
-
-最新結果の件数と対象commitはspecs/006-clear-craft-selection/validation.mdとdocs/deployment-results.jsonを参照。技術検証の成功を提携資格や承認の取得と表現しない。
+公開先：https://rozawa619.github.io/japanese-craft-jewelry/ と/en/、/ja/。技術公開、申請送信、提携承認、検索掲載、クリック・売上はそれぞれ別に確認する。

@@ -6,6 +6,7 @@ export interface EditorialImage {
   path: string;
   width: number;
   height: number;
+  preserveRatio?: boolean;
   alt: Record<Locale,string>;
 }
 

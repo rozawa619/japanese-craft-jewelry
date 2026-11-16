@@ -1,11 +1,11 @@
 ---
-import {catalog,productsFor,resolve} from '../lib/catalog';
+import {catalog,productsFor,resolve,linksFor} from '../lib/catalog';
 import {pagePath} from '../config/site';
 import {t,type Locale} from '../lib/i18n';
 interface Props {productIds?:string[];scope?:'page'|'site';locale?:Locale;compact?:boolean}
 const {productIds,scope='page',locale='en',compact=false}=Astro.props;
 const visibleIds=productIds??productsFor(locale).map(p=>p.id);
-const activeLinks=catalog.links.filter(l=>visibleIds.includes(l.productId)&&resolve(l)?.sponsored);
+const activeLinks=linksFor(visibleIds,locale).filter(l=>resolve(l)?.sponsored);
 const active=activeLinks.length>0;
 const programs=catalog.programs.filter(p=>activeLinks.some(l=>l.programId===p.id)&&p.disclosure);
 const message=compact&&scope==='page'

@@ -1,3 +1,13 @@
+# 0.7 最新検証（2026-11-16）
+
+最新仕様はspecs/007-balanced-jewelry-discovery/。006以前の記録はその版の履歴。ユーザー最新指示に従いAI注記は短縮、30代前後、非木商品と日英導線を拡張。
+
+最終source検査: Astro54files0errors/warnings/hints、単体46/46（localeの広告流用防止/JP価格出典/USD50.40保持を含む）。16公開商品・ENJAペア・59出典・現行13画像/15商品、旧3画像はpublic外archive。102HTML・4365内部参照・89anchor・332通常0広告・209実行JS CSP hash・86JSON・14旧移動、正規sitemap86URL。
+
+画面/隔離広告/最終補足/公開の確定件数はdiscovery-stage-*の各reportと007validationを優先。過去clear-stageの成功を今回のものへ読み替えない。検索掲載・SearchConsole操作・実アクセス増加・成果報酬・申請/承認を検証済みとはしていない。
+
+---
+
 # 0.6 最新検証（2026-11-16）
 
 最新仕様は specs/006-clear-craft-selection/。現行の判定は clear-stage-browser-results.json、clear-stage-final-detail-results.json、clear-stage-ad-build-results.json、clear-stage-hosted-results.json と deployment-results.json。以下の過去記録はその版の履歴で、Contact等の古い公開要件は006へ読み替える。

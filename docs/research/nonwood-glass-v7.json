@@ -1,0 +1,622 @@
+{
+  "checkedAt": "2026-11-16",
+  "purpose": "Non-wood expansion proposal for v0.7; factual catalog records, translations, editorial stories and per-locale price/link proposals remain separate.",
+  "researchMethod": "Official BECOS English and Japanese rendered pages were read in fresh Chrome; USD selected explicitly. Official product photos viewed in the browser with internal ignored screenshots only. No photo downloaded into public or included in published assets.",
+  "affiliateState": "All real programs and item links remain not_applied; affiliateUrl and affiliate verification dates are null. BECOS English recruitment does not establish eligibility or a JA affiliate relationship.",
+  "catalogAdditions": {
+    "prefectures": [],
+    "crafts": [],
+    "materials": [
+      {
+        "id": "plated-brass",
+        "name": "Plated brass",
+        "description": "Named for the bail and adjuster of the selected RINZEN leaf pendant; no plating composition is specified."
+      }
+    ],
+    "productTypes": [
+      {
+        "id": "bracelet",
+        "name": "Bracelets"
+      }
+    ],
+    "makers": [
+      {
+        "id": "saskia-diez-2016",
+        "name": "2016/ Saskia Diez",
+        "location": "Saga, Japan",
+        "productionNote": "The item listing identifies Saga as origin. The collection credits production to HATAMAN TOUEN and design to Saskia Diez, a designer based in Germany. Designer location is not treated as the place of manufacture.",
+        "url": "https://en.thebecos.com/collections/2016-saskia-diez",
+        "sourceIds": [
+          "saskia-diez-brand",
+          "becos-saskia-drake-cuff",
+          "becos-saskia-drake-cuff-ja"
+        ]
+      }
+    ],
+    "merchants": [],
+    "links": [
+      {
+        "id": "rinzen-leaf-glass-pendant-becos-en",
+        "productId": "rinzen-leaf-glass-pendant",
+        "merchantId": "becos-en",
+        "programId": "becos-en",
+        "officialProductUrl": "https://en.thebecos.com/products/s0138-099?currency=USD",
+        "affiliateUrl": null,
+        "applicationStatus": "not_applied",
+        "affiliateLinkVerifiedAt": null
+      },
+      {
+        "id": "six-kiln-blue-bouquet-pierced-earrings-becos-en",
+        "productId": "six-kiln-blue-bouquet-pierced-earrings",
+        "merchantId": "becos-en",
+        "programId": "becos-en",
+        "officialProductUrl": "https://en.thebecos.com/products/s0164-016?currency=USD",
+        "affiliateUrl": null,
+        "applicationStatus": "not_applied",
+        "affiliateLinkVerifiedAt": null
+      },
+      {
+        "id": "saskia-diez-drake-porcelain-cuff-becos-en",
+        "productId": "saskia-diez-drake-porcelain-cuff",
+        "merchantId": "becos-en",
+        "programId": "becos-en",
+        "officialProductUrl": "https://en.thebecos.com/products/s0007-054?currency=USD",
+        "affiliateUrl": null,
+        "applicationStatus": "not_applied",
+        "affiliateLinkVerifiedAt": null
+      }
+    ],
+    "products": [
+      {
+        "id": "rinzen-leaf-glass-pendant",
+        "title": "RINZEN Leaf Drop green glass pendant",
+        "originalTitle": "【ペンダント】葉の雫-ha no shizuku- | 切子",
+        "productType": [
+          "necklace"
+        ],
+        "prefectureIds": [
+          "tokyo"
+        ],
+        "craftIds": [
+          "kiriko"
+        ],
+        "materialIds": [
+          "glass",
+          "surgical-stainless-steel",
+          "plated-brass"
+        ],
+        "makerId": "rinzen",
+        "craftClassification": {
+          "label": "Contemporary cut-glass jewelry by RINZEN, listed as kiriko. Individual Edo Kiriko certification is not claimed.",
+          "sourceIds": [
+            "becos-rinzen-leaf",
+            "rinzen-brand"
+          ]
+        },
+        "size": "Glass: W 2.2 × D 0.5 × H 3.3 cm. Chain: approximately 60 cm, as listed on the Japanese page.",
+        "weightPerPieceGrams": null,
+        "findings": "The chain is listed as surgical stainless steel; the bail and adjuster are plated brass. A specific stainless-steel grade is not stated.",
+        "fastening": null,
+        "priceAmount": 300,
+        "priceCurrency": "USD",
+        "availability": "listed",
+        "sourceIds": [
+          "becos-rinzen-leaf",
+          "becos-rinzen-leaf-ja",
+          "rinzen-brand"
+        ],
+        "editorialSummary": "Fresh green glass with a leaf-like outline: an easy color accent for charcoal, navy and a simple white shirt.",
+        "whoItMaySuit": "For someone drawn to green accents and a sculptural pendant rather than a conventional gemstone.",
+        "whatToCheck": [
+          "The listing gives a weight of 10 g without separately describing the weighing scope.",
+          "Glass color, thickness, cuts and bail size may vary; the glass is not heat resistant."
+        ],
+        "slug": "rinzen-leaf-glass-pendant",
+        "locale": "en",
+        "publishStatus": "published",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "USD display on the English BECOS storefront, checked on the stated date; tax inclusion was not established.",
+        "merchantIds": [
+          "becos-en"
+        ],
+        "lastVerifiedAt": "2026-11-16",
+        "imageAssetIds": []
+      },
+      {
+        "id": "six-kiln-blue-bouquet-pierced-earrings",
+        "title": "6.KILN Blue Bouquet porcelain hoop earrings",
+        "originalTitle": "【ピアス】青のbouquet | 有田焼 | 6.kiln",
+        "productType": [
+          "pierced-earrings"
+        ],
+        "prefectureIds": [
+          "saga"
+        ],
+        "craftIds": [
+          "imari-arita-ware"
+        ],
+        "materialIds": [
+          "porcelain",
+          "surgical-stainless-steel",
+          "resin"
+        ],
+        "makerId": "six-kiln",
+        "craftClassification": {
+          "label": "Porcelain jewelry listed as Imari-Arita Wares; the design uses blue gosu pigment with a needle-drawn bouquet motif. Individual certification is not established.",
+          "sourceIds": [
+            "becos-six-kiln-blue-bouquet",
+            "becos-six-kiln-blue-bouquet-ja"
+          ]
+        },
+        "size": "Product information table: W 1 × D 1 × H 1.7 cm. The Japanese description separately gives an approximate 3 cm hoop diameter; the table dimensions should not be read as the whole hoop size.",
+        "weightPerPieceGrams": null,
+        "findings": "The specific product lists porcelain clay, surgical stainless steel and resin. Its exact stainless-steel grade and full component-by-component coverage are not specified.",
+        "fastening": "Post-and-catch pierced earrings with a removable hoop. The official update allows either the integrated or separate catch-and-hoop structure as a matching pair.",
+        "priceAmount": 72,
+        "priceCurrency": "USD",
+        "availability": "in_stock",
+        "sourceIds": [
+          "becos-six-kiln-blue-bouquet",
+          "becos-six-kiln-blue-bouquet-ja",
+          "six-kiln-brand"
+        ],
+        "editorialSummary": "A tiny blue bouquet above a clean gold-colored hoop. Try this porcelain pair with white cotton, denim or a soft navy knit.",
+        "whoItMaySuit": "For those who like floral detail, deep blue and the graphic line of a hoop.",
+        "whatToCheck": [
+          "The reverse is transitioning from white to a color matched to the fittings, and the catch-and-hoop construction is changing from integrated to separate. Either matching-pair version may be supplied.",
+          "The listed 5 g weight does not identify whether it is per earring or per pair.",
+          "The gold-colored surface can scratch or peel if rubbed strongly; the listing recommends gentle care."
+        ],
+        "slug": "six-kiln-blue-bouquet-pierced-earrings",
+        "locale": "en",
+        "publishStatus": "published",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "USD display on the English BECOS storefront, checked on the stated date; tax inclusion was not established.",
+        "merchantIds": [
+          "becos-en"
+        ],
+        "lastVerifiedAt": "2026-11-16",
+        "imageAssetIds": []
+      },
+      {
+        "id": "saskia-diez-drake-porcelain-cuff",
+        "title": "2016/ Saskia Diez Drake porcelain cuff in gray and silver",
+        "originalTitle": "【有田焼】2016/ サスキア ディーツ ブレスレット ドレーク カフ NO2 (グレイシルバー)",
+        "productType": [
+          "bracelet"
+        ],
+        "prefectureIds": [
+          "saga"
+        ],
+        "craftIds": [
+          "imari-arita-ware"
+        ],
+        "materialIds": [
+          "porcelain"
+        ],
+        "makerId": "saskia-diez-2016",
+        "craftClassification": {
+          "label": "A porcelain bracelet listed as Imari-Arita Wares. The collection takes its scale motif from Japanese decorative traditions; individual certification is not established.",
+          "sourceIds": [
+            "becos-saskia-drake-cuff",
+            "saskia-diez-brand"
+          ]
+        },
+        "size": "Listed diameter 6.5 cm × height 3.8 cm. The page does not distinguish inner and outer diameter.",
+        "weightPerPieceGrams": null,
+        "findings": null,
+        "fastening": "A rigid porcelain bracelet. An adjustable opening or clasp is not described in the checked listing.",
+        "priceAmount": 324,
+        "priceCurrency": "USD",
+        "availability": "listed",
+        "sourceIds": [
+          "becos-saskia-drake-cuff",
+          "becos-saskia-drake-cuff-ja",
+          "saskia-diez-brand"
+        ],
+        "editorialSummary": "Glossy gray porcelain, overlapping scales and a silver-colored accent: a sculptural finish for a bare wrist or a rolled shirt cuff.",
+        "whoItMaySuit": "For a minimal wardrobe that needs one expressive shape at the wrist.",
+        "whatToCheck": [
+          "The product information lists a weight of 130 g.",
+          "The material field names porcelain. The silver color is a visual finish, not a claim that the bracelet is made of solid silver.",
+          "The listed diameter is not explicitly identified as the internal fit measurement; no adjustability is stated."
+        ],
+        "slug": "saskia-diez-drake-porcelain-cuff",
+        "locale": "en",
+        "publishStatus": "published",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "USD display on the English BECOS storefront, checked on the stated date; tax inclusion was not established.",
+        "merchantIds": [
+          "becos-en"
+        ],
+        "lastVerifiedAt": "2026-11-16",
+        "imageAssetIds": []
+      }
+    ]
+  },
+  "programUpdateProposal": {
+    "id": "becos-en",
+    "merchantIds": [
+      "becos-en"
+    ],
+    "applicationStatus": "not_applied",
+    "affiliateAllowedHosts": [],
+    "note": "Existing English candidate relation only; do not extend an English program to the Japanese storefront by inference."
+  },
+  "translationsJa": {
+    "prefectures": {},
+    "crafts": {},
+    "materials": {
+      "plated-brass": {
+        "name": "メッキ加工済み真鍮",
+        "description": "凛然の葉の雫ではバチカンとアジャスターに記載。メッキの組成は未確認です。"
+      }
+    },
+    "productTypes": {
+      "bracelet": {
+        "name": "ブレスレット"
+      }
+    },
+    "makers": {
+      "saskia-diez-2016": {
+        "name": "2016/ サスキア ディーツ",
+        "location": "佐賀県",
+        "productionNote": "商品欄の生産地は佐賀県。コレクションにはHATAMAN TOUENによる制作と、ドイツを拠点とするサスキア・ディーツのデザインが記載されています。デザイナーの所在地を製造地とは扱いません。"
+      }
+    },
+    "merchants": {},
+    "products": {
+      "rinzen-leaf-glass-pendant": {
+        "title": "凛然 葉の雫 グリーンガラスのペンダント",
+        "editorialSummary": "みずみずしいグリーンを、葉っぱのかたちに。チャコールやネイビー、白シャツの胸もとで楽しむ、切子のペンダント。",
+        "whoItMaySuit": "緑のアクセントや、石とは違うガラスの表情を楽しみたい方に。",
+        "whatToCheck": [
+          "重さは10gの表記ですが、計量の範囲は別途説明されていません。",
+          "ガラスの色・厚み・カットやバチカンの大きさに個体差があります。耐熱ガラスではありません。"
+        ],
+        "size": "ガラス部分：幅2.2 × 奥行0.5 × 高さ3.3cm。チェーン：約60cm（日本語ページの表記）。",
+        "findings": "チェーンはサージカルステンレス、バチカンとアジャスターはメッキ加工済み真鍮の表記。ステンレスの詳しい鋼種は記載がありません。",
+        "fastening": null,
+        "taxNote": "確認日の日本語ストア税込表示。",
+        "craftClassificationLabel": "凛然による現代の切子ジュエリー。個別商品の江戸切子認証は確認していません。"
+      },
+      "six-kiln-blue-bouquet-pierced-earrings": {
+        "title": "6.KILN 青のbouquet 磁器とフープのピアス",
+        "editorialSummary": "小さな青いブーケに、金色のフープをひとつ。白いコットンやデニム、ネイビーのニットに合わせたい磁器のピアス。",
+        "whoItMaySuit": "深い青と花の繊細さ、フープのすっきりしたかたちを楽しみたい方に。",
+        "whatToCheck": [
+          "裏面は白から金具に合わせた色へ、キャッチとフープは一体型から別体へ切替中です。新旧どちらかの仕様が左右同じ組み合わせで届く案内です。",
+          "重さは5gの表記ですが、片耳か一組かは未確認です。",
+          "金色の部分は強くこすると傷や剥がれの可能性があり、やさしくお手入れする案内です。"
+        ],
+        "size": "商品情報欄：幅1 × 奥行1 × 高さ1.7cm。日本語本文にはフープ直径約3cmの別記があり、情報欄の寸法をフープ全体の大きさとは扱いません。",
+        "findings": "この商品の素材表記は磁土・サージカルステンレス・樹脂。ステンレスの鋼種と、すべてのパーツへの素材の使い分けは未確認です。",
+        "fastening": "キャッチ式のピアスでフープを取り外せる仕様。キャッチとフープの一体型・別体が混在する変更案内があります。",
+        "taxNote": "確認日の日本語ストア税込表示。",
+        "craftClassificationLabel": "販売店が有田焼として紹介する磁器ジュエリー。呉須で染め、針でブーケを描いたデザインで、個別商品の公的認証は未確認です。"
+      },
+      "saskia-diez-drake-porcelain-cuff": {
+        "title": "2016/ サスキア ディーツ ドレーク 磁器のグレイシルバーカフ",
+        "editorialSummary": "つやのあるグレーの磁器に、重なる鱗と銀色のアクセント。手首を見せる服や、袖をまくったシャツに合わせたい彫刻的なバングル。",
+        "whoItMaySuit": "シンプルな服に、手首のかたちでアクセントをつけたい方に。",
+        "whatToCheck": [
+          "商品情報に掲載された重さは130gです。",
+          "素材欄は磁器の表記です。銀色は見た目の仕上げで、純銀製という意味ではありません。",
+          "直径の数値が内径か外径かは明記されておらず、サイズ調節の可否も記載がありません。"
+        ],
+        "size": "掲載寸法：直径6.5 × 高さ3.8cm。内径・外径の区分は記載がありません。",
+        "findings": null,
+        "fastening": "かたい磁器のブレスレット。開口部や留め具、サイズ調節の具体的な仕組みは説明されていません。",
+        "taxNote": "確認日の日本語ストア税込表示。",
+        "craftClassificationLabel": "販売店が有田焼として紹介する磁器ブレスレット。日本の文様・鱗から発想したコレクションで、個別商品の公的認証は未確認です。"
+      }
+    }
+  },
+  "productStories": {
+    "rinzen-leaf-glass-pendant": {
+      "en": {
+        "headline": "A small leaf. A fresh point of green.",
+        "standfirst": "Clear glass opens into a green leaf, with fine cuts and a softly rippled surface. Let it sit against a simple neckline and bring a little color to your day.",
+        "highlights": [
+          "A fresh green, leaf-like silhouette",
+          "Clear cuts and softly rippled glass",
+          "Try charcoal, navy or clean white"
+        ],
+        "outfit": {
+          "title": "Charcoal knit × a green glass leaf",
+          "body": "Keep the neckline plain and let the pendant fall over the fabric. A charcoal knit makes the green feel vivid; a white shirt gives it a lighter, more relaxed mood."
+        }
+      },
+      "ja": {
+        "headline": "胸もとに、みずみずしい緑を。",
+        "standfirst": "透明なガラスに、葉っぱの緑と細かなカット。ゆるやかな凹凸の表情も楽しみながら、無地の服に色をひとつ添えるペンダントです。",
+        "highlights": [
+          "葉っぱを思わせる、みずみずしいグリーン",
+          "透明のカットとゆるやかな凹凸",
+          "チャコール・ネイビー・白い服に"
+        ],
+        "outfit": {
+          "title": "チャコールのニット × ガラスの葉",
+          "body": "首まわりはシンプルにして、無地の生地にペンダントを重ねて。チャコールなら緑が鮮やかに、白シャツなら軽快な雰囲気で楽しめます。"
+        }
+      }
+    },
+    "six-kiln-blue-bouquet-pierced-earrings": {
+      "en": {
+        "headline": "A blue bouquet, framed by a hoop.",
+        "standfirst": "A tiny floral drawing meets one clean circle. The blue porcelain and gold-colored hoop make an easy accent for a white shirt or a weekend of denim.",
+        "highlights": [
+          "A delicate bouquet drawn in blue porcelain",
+          "One clean gold-colored hoop",
+          "A removable hoop for two styling options"
+        ],
+        "outfit": {
+          "title": "White cotton × blue porcelain",
+          "body": "Try an open-neck white blouse with your hair tucked behind one ear. Add dark denim or navy trousers and keep the rest of your jewelry simple so the small bouquet stays in focus."
+        }
+      },
+      "ja": {
+        "headline": "小さな青いブーケを、耳もとに。",
+        "standfirst": "青い磁器に描かれた花束と、すっきりした円のフープ。白いシャツにもデニムの日にも、青と金色の組み合わせが表情を添えます。",
+        "highlights": [
+          "青い磁器に描かれた繊細なブーケ",
+          "すっきりした金色のフープ",
+          "フープを外しても楽しめる2way"
+        ],
+        "outfit": {
+          "title": "白いコットン × 青い磁器",
+          "body": "白いブラウスに、髪を片側だけ耳にかけて。デニムやネイビーのパンツを合わせ、ほかのアクセサリーは控えめにすると、小さな花束がコーディネートのポイントになります。"
+        }
+      }
+    },
+    "saskia-diez-drake-porcelain-cuff": {
+      "en": {
+        "headline": "Let your wrist make the statement.",
+        "standfirst": "Overlapping gray scales and a silver-colored edge give this porcelain cuff its sculptural rhythm. One strong shape for an otherwise simple outfit.",
+        "highlights": [
+          "Glossy gray porcelain with a scale motif",
+          "Silver-colored accents between the shapes",
+          "A sculptural accent for a bare wrist"
+        ],
+        "outfit": {
+          "title": "Black top × one porcelain cuff",
+          "body": "Try a short-sleeved black top or roll back the cuff of a crisp shirt. Leave space around the bracelet and let its curved surface be the detail that completes the outfit."
+        }
+      },
+      "ja": {
+        "headline": "手首にひとつ、彫刻のような存在感。",
+        "standfirst": "重なるグレーの鱗に、銀色の細いアクセント。いつもの服をシンプルにまとめた日に、磁器のかたちを手首で楽しむカフです。",
+        "highlights": [
+          "つやのあるグレーの磁器と鱗のモチーフ",
+          "かたちの間にのぞく銀色のアクセント",
+          "手首を見せる装いのポイントに"
+        ],
+        "outfit": {
+          "title": "黒いトップス × 磁器のカフ",
+          "body": "半袖の黒いトップスや、袖をまくった白シャツに。ブレスレットのまわりに余白をつくり、磁器の曲面をひとつのアクセントとして楽しんでください。"
+        }
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "becos-rinzen-leaf",
+      "url": "https://en.thebecos.com/products/s0138-099?currency=USD",
+      "title": "BECOS — RINZEN Pendant Drop of Leaves",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Read rendered English product page with USD selected. SKU s0138-099, RINZEN, Tokyo, kiriko, surgical-stainless chain and plated-brass bail/adjuster; W2.2 D0.5 H3.3cm; listed10g without weighing scope; approximate23.5in chain; USD300 and Backorder OK.",
+        "Official photo viewed: green and clear leaf-like glass pendant, star/vein cuts, rippled lower surface with green points and a silver-colored chain. No photo publicly copied."
+      ]
+    },
+    {
+      "id": "becos-rinzen-leaf-ja",
+      "url": "https://www.thebecos.com/products/s0138-099",
+      "title": "BECOS — ペンダント 葉の雫-ha no shizuku- | 切子",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Read rendered Japanese same-SKU page: ¥27,500 with 価格（税込）label; orderable backorder. Product origin Tokyo, kiriko, chain about60cm; component materials corroborated.",
+        "Glass composition is not specified in the material field. No alloy grade or allergy-safety claim is imported."
+      ]
+    },
+    {
+      "id": "becos-six-kiln-blue-bouquet",
+      "url": "https://en.thebecos.com/products/s0164-016?currency=USD",
+      "title": "BECOS — Blue Bouquet pierced earrings | 6.KILN",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Read rendered English same-SKU page with USD selected: SKU s0164-016, pierced-earring title, 6.KILN, Saga, Imari-Arita Wares; porcelain clay/surgical stainless steel/resin; W1 D1 H1.7cm, listed5g without per-ear/pair basis; USD72 and in stock.",
+        "Current notice: back-color white to fitting-matched color, catch/hoop integrated to separate, either matching-pair version; gold-colored surface care. Official photo viewed: blue round porcelain with white floral drawing above a thin gold-colored hoop."
+      ]
+    },
+    {
+      "id": "becos-six-kiln-blue-bouquet-ja",
+      "url": "https://www.thebecos.com/products/s0164-016",
+      "title": "BECOS — ピアス 青のbouquet | 有田焼 | 6.kiln",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Read rendered Japanese same-SKU page: ¥6,600, 価格（税込）; in stock. Explains gosu-blue porcelain and needle-drawn bouquet, removable hoop, approximate hoop diameter3cm. Product table separately lists W1 D1 H1.7cm, so table dimensions are not whole-hoop dimensions.",
+        "Current structured notice takes precedence over older narrative on integrated catch: both old and new versions may be supplied as matching pairs. No hypoallergenic guarantee or full component coverage is claimed."
+      ]
+    },
+    {
+      "id": "becos-saskia-drake-cuff",
+      "url": "https://en.thebecos.com/products/s0007-054?currency=USD",
+      "title": "BECOS — 2016/ Saskia Diez Drake Cuff No2 Gray Silver",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Read rendered English page with USD selected: s0007-054, gray/silver bracelet, 2016/ Saskia Diez, Saga Prefecture, Imari-Arita Wares, porcelain, diameter6.5cm x height3.8cm, listed130g; USD324 and Backorder OK.",
+        "Official photo viewed: wide rigid gray porcelain bracelet with white interior, overlapping rounded scale shapes and thin silver-colored crescent-like accents. The material field does not claim solid silver."
+      ]
+    },
+    {
+      "id": "becos-saskia-drake-cuff-ja",
+      "url": "https://www.thebecos.com/products/s0007-054",
+      "title": "BECOS — 2016/ サスキア ディーツ ブレスレット ドレーク カフ NO2 グレイシルバー",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Read rendered Japanese same-SKU page: ¥29,700 with 価格（税込）label, orderable backorder; Saga/porcelain/diameter6.5 x H3.8cm/130g corroborated.",
+        "Design uses a scale motif; gray gloss and silver-colored overpainting are described. Internal vs external diameter and adjustment mechanism are not established."
+      ]
+    },
+    {
+      "id": "saskia-diez-brand",
+      "url": "https://en.thebecos.com/collections/2016-saskia-diez",
+      "title": "BECOS — 2016/ Saskia Diez | Arita Wares",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Read official collection and current product brand-story content: Germany-based designer Saskia Diez, porcelain collection drawing on Japanese scale motifs, production credit HATAMAN TOUEN. Product listing separately identifies Saga origin.",
+        "Designer location is not substituted for manufacturing origin. No individual official certification is established."
+      ]
+    }
+  ],
+  "localizedPriceProposal": {
+    "rinzen-leaf-glass-pendant": {
+      "ja": {
+        "priceAmount": 27500,
+        "priceCurrency": "JPY",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "日本語ストアの税込表示。確認日：2026-11-16。",
+        "sourceIds": [
+          "becos-rinzen-leaf-ja"
+        ]
+      }
+    },
+    "six-kiln-blue-bouquet-pierced-earrings": {
+      "ja": {
+        "priceAmount": 6600,
+        "priceCurrency": "JPY",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "日本語ストアの税込表示。確認日：2026-11-16。",
+        "sourceIds": [
+          "becos-six-kiln-blue-bouquet-ja"
+        ]
+      }
+    },
+    "saskia-diez-drake-porcelain-cuff": {
+      "ja": {
+        "priceAmount": 29700,
+        "priceCurrency": "JPY",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "日本語ストアの税込表示。確認日：2026-11-16。",
+        "sourceIds": [
+          "becos-saskia-drake-cuff-ja"
+        ]
+      }
+    }
+  },
+  "localizedRetailerProposal": {
+    "rinzen-leaf-glass-pendant": {
+      "ja": {
+        "merchantId": "becos-ja",
+        "officialProductUrl": "https://www.thebecos.com/products/s0138-099",
+        "programId": null,
+        "sourceIds": [
+          "becos-rinzen-leaf-ja"
+        ]
+      }
+    },
+    "six-kiln-blue-bouquet-pierced-earrings": {
+      "ja": {
+        "merchantId": "becos-ja",
+        "officialProductUrl": "https://www.thebecos.com/products/s0164-016",
+        "programId": null,
+        "sourceIds": [
+          "becos-six-kiln-blue-bouquet-ja"
+        ]
+      }
+    },
+    "saskia-diez-drake-porcelain-cuff": {
+      "ja": {
+        "merchantId": "becos-ja",
+        "officialProductUrl": "https://www.thebecos.com/products/s0007-054",
+        "programId": null,
+        "sourceIds": [
+          "becos-saskia-drake-cuff-ja"
+        ]
+      }
+    }
+  },
+  "existingLocalizedPriceProposal": {
+    "rinzen-seika-amber-pierced-earrings": {
+      "ja": {
+        "priceAmount": 26400,
+        "priceCurrency": "JPY",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "日本語ストアの税込表示。",
+        "sourceIds": [
+          "becos-rinzen-seika-amber-ja"
+        ]
+      },
+      "jaRetailer": {
+        "merchantId": "becos-ja",
+        "officialProductUrl": "https://www.thebecos.com/products/s0138-028",
+        "programId": null
+      }
+    },
+    "six-kiln-half-moon-earrings": {
+      "ja": {
+        "priceAmount": 9900,
+        "priceCurrency": "JPY",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "日本語ストアの税込表示。",
+        "sourceIds": [
+          "becos-six-kiln-half-moon-ja"
+        ]
+      },
+      "jaRetailer": {
+        "merchantId": "becos-ja",
+        "officialProductUrl": "https://www.thebecos.com/products/s0164-018",
+        "programId": null
+      }
+    }
+  },
+  "existingSourceUpdates": [
+    {
+      "id": "becos-rinzen-seika-amber-ja",
+      "appendSupports": [
+        "2026-11-16 rendered Japanese page re-read: price ¥26,400 with explicit 価格（税込）; orderable backorder. Same SKU s0138-028."
+      ]
+    },
+    {
+      "id": "becos-six-kiln-half-moon-ja",
+      "appendSupports": [
+        "2026-11-16 rendered Japanese page re-read: price ¥9,900 with explicit 価格（税込）; in stock. Same non-pierced SKU s0164-018. Narrative explicitly describes a clip mechanism with resin at the skin-contact side; do not import generic comfort or allergy claims."
+      ]
+    }
+  ],
+  "internalVisualReview": {
+    "publicUse": "No official photos copied, uploaded to image generation, hotlinked or published.",
+    "screenshots": [
+      "artifacts/research-v7-glass/s0138-099.png",
+      "artifacts/research-v7-glass/s0164-016.png",
+      "artifacts/research-v7-glass/s0007-054.png"
+    ],
+    "leaf": "Green and clear pointed oval/leaf-like cut glass; upper part has fine star/vein cuts, clear diagonal middle band, rippled lower part with green points; fine silver-colored chain. Fictional Japanese woman aged32, plain charcoal knit, head and chest fully visible.",
+    "blue": "Small round blue porcelain disc with fine white flower drawing, a single thin gold-colored circular hoop below. Fictional Japanese woman aged33, white blouse and tucked-back hair; ear visible.",
+    "cuff": "Wide rigid glossy gray porcelain cylinder with white interior, overlapping rounded scale surfaces and silver-colored thin crescent accents. Fictional Japanese woman aged34, simple black short sleeve or rolled cuff, wrist clearly visible."
+  },
+  "rejectedCandidates": [
+    {
+      "sku": "s0189-177",
+      "name": "KAGAMI CRYSTAL STAR pendant",
+      "englishUrl": "https://en.thebecos.com/products/s0189-177?currency=USD",
+      "reason": "English listing explicitly excludes delivery to Japan (also Australia, Taiwan and China). Same-SKU BECOS Japanese page returns404, and no current same-product domestic official page/price was verified. Not included in catalog or public content.",
+      "checkedAt": "2026-11-16"
+    }
+  ],
+  "unresolved": [
+    "Actual affiliate eligibility, approved tracking URLs and creative-use requirements are unconfirmed.",
+    "No product-photo reuse permission obtained.",
+    "Leaf pendant glass composition, stainless alloy grade and exact weight basis are unspecified.",
+    "Blue Bouquet per-ear weight, exact alloy grade and component-by-component material coverage are unspecified; table and narrative dimensions have different scope.",
+    "Drake cuff internal fit diameter and adjustment mechanism are not stated; silver color does not establish solid-silver composition."
+  ]
+}

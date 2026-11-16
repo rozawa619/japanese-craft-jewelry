@@ -1,9 +1,9 @@
 ---
-import {catalog,catalogFor,resolve} from '../lib/catalog';
+import {catalogFor,resolve,linksFor} from '../lib/catalog';
 import {t,type Locale} from '../lib/i18n';
 interface Props {productId:string;compact?:boolean;locale?:Locale;label?:string}
 const {productId,compact=false,locale='en',label}=Astro.props;
-const links=catalog.links.filter(l=>l.productId===productId);
+const links=linksFor([productId],locale);
 const localCatalog=catalogFor(locale);
 ---
 {links.map(link=>{

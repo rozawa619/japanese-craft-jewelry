@@ -7,7 +7,7 @@ const host = z.string().refine(v => !!safeHttps(`https://${v}/`) && new URL(`htt
 const named = z.object({ id, name: z.string(), description: z.string().optional() });
 export const applicationStatus = z.enum(['not_applied', 'pending', 'approved', 'rejected', 'paused']);
 export const linkSchema = z.object({
-  id, productId: id, merchantId: id, programId: id.nullable(),
+  id, productId: id, merchantId: id, programId: id.nullable(), locale: z.enum(['en','ja']).optional(),
   officialProductUrl: url.nullable(), affiliateUrl: url.nullable(),
   applicationStatus, affiliateLinkVerifiedAt: date.nullable(),
 });
@@ -19,6 +19,7 @@ export const productSchema = z.object({
   size: z.string().nullable(), weightPerPieceGrams: z.number().positive().nullable(),
   findings: z.string().nullable(), fastening: z.string().nullable(),
   priceAmount: z.number().nonnegative().nullable(), priceCurrency: z.string().length(3).nullable(),
+  localizedPrices: z.object({ja: z.object({amount:z.number().nonnegative(),currency:z.string().length(3),checkedAt:date,taxNote:z.string(),sourceIds:z.array(id).min(1)}).optional()}).optional(),
   priceCheckedAt: date.nullable(), taxNote: z.string(), availability: z.enum(['listed', 'in_stock', 'out_of_stock', 'unknown']),
   merchantIds: z.array(id).min(1), sourceIds: z.array(id).min(1), lastVerifiedAt: date,
   imageAssetIds: z.array(id), editorialSummary: z.string(), whoItMaySuit: z.string(), whatToCheck: z.array(z.string()).min(1),

@@ -31,3 +31,6 @@ GitHub Pagesでは任意のHTTPレスポンスヘッダーをこのソースか�
 
 
 0.6検証では生成HTMLのCSP禁止項目、外部script/inline handler不在、実行inline scriptのSHA256許可を検査します。JSON-LD等の非実行data blockはJSON構文を検査し、実行scriptとは区別します。
+
+
+0.7: link.localeで通常/広告リンクと開示を同じ言語へ限定する。BECOS英語プログラムの承認を日本語ストアへ流用しない。日本語の価格は確認済locale別事実としてcatalogだけに置き、換算しない。共通入口はnavigator.languageで選択順序を変えるだけで、Cookie・強制転送・外部翻訳scriptは使わない。AI表示はユーザー指示に従い短い注記へ。画像の正確な実物仕様・着用実績を示すものとして内部管理しない。

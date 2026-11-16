@@ -3,7 +3,7 @@ import { dirname, extname, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadEnvFile } from 'node:process';
 import { createHash } from 'node:crypto';
-import { resolveRetailerLink, policyForLink } from '../src/lib/affiliate.ts';
+import { resolveRetailerLink, policyForLink, linksInLocale } from '../src/lib/affiliate.ts';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 for (const name of ['.env.production.local', '.env.production', '.env.local', '.env']) {
@@ -74,7 +74,7 @@ function internalTarget(file, value) {
   return { file: target, hash: url.hash ? decodeURIComponent(url.hash.slice(1)) : '' };
 }
 const catalog = JSON.parse(readFileSync(resolve(root, 'src/data/catalog.json'), 'utf8'));
-const expectedRetailerLinks = new Set(catalog.links.flatMap(link => {
+const expectedRetailerLinksFor=(locale)=>new Set(linksInLocale(catalog.links,locale).flatMap(link => {
   const status = catalog.programs.find(program => program.id === link.programId)?.applicationStatus;
   const result = resolveRetailerLink(link, status, policyForLink(link, catalog));
   return result ? [`${result.sponsored}|${result.href}`] : [];
@@ -113,6 +113,12 @@ for (const [file, page] of pages) {
   }
   const routePath=requestPath(file);
   const localeMatch=routePath.slice(base.length).match(/^(en|ja)\//);
+  const isLanguageEntry=routePath===base;
+  if(isLanguageEntry){
+   if(redirect)fail(file,'language entry must not automatically redirect');
+   if(!getMeta('name','robots').split(/[\s,]+/).includes('noindex'))fail(file,'language selector should remain outside content indexing');
+   for(const locale of ['en','ja'])if(!tags.some(tag=>tag.name==='a'&&tag.attrs['data-entry-language']===locale&&tag.attrs.href===base+locale+'/'))fail(file,'language entry lacks a permanent '+locale+' HTML link');
+  }
   if(localeMatch&&!redirect){
     const locale=localeMatch[1],peer=locale==='en'?'ja':'en';
     const expectedPeer=base+peer+'/'+routePath.slice(base.length+locale.length+1);
@@ -126,6 +132,8 @@ for (const [file, page] of pages) {
         const alternate=tags.find(tag=>tag.name==='link'&&(tag.attrs.rel||'').split(/\s+/).includes('alternate')&&tag.attrs.hreflang===alternateLocale);
         if(!alternate||alternate.attrs.href!==origin+expected)fail(file,'missing correct '+alternateLocale+' hreflang alternate');
       }
+      const fallback=tags.find(tag=>tag.name==='link'&&tag.attrs.hreflang==='x-default');
+      if(!fallback||fallback.attrs.href!==origin+routePath.replace('/'+locale+'/','/en/'))fail(file,'missing English x-default language fallback');
     }
   }
   if(/^(en|ja)\/objects\/[^/]+\/$/.test(routePath.slice(base.length))&&!redirect){
@@ -159,12 +167,20 @@ for (const [file, page] of pages) {
     if (!robots.split(/[\s,]+/).includes('noindex')) fail(file, 'preview is missing noindex');
     if (canonical.length) fail(file, 'preview must not emit canonical');
     if (getMeta('property', 'og:url')) fail(file, 'preview must not emit og:url');
-  } else if (!redirect && !is404) {
+  } else if (!redirect && !is404 && !isLanguageEntry) {
     if (canonical.length !== 1) fail(file, 'public content needs exactly one canonical');
     else if (canonical[0].attrs.href !== `${origin}${requestPath(file)}`) fail(file, 'canonical does not match actual route and configured base');
     if (!getMeta('property', 'og:url')) fail(file, 'public content needs og:url');
     if (robots.split(/[\s,]+/).includes('noindex')) fail(file, 'public content unexpectedly noindex');
   }
+  for(const figure of html.matchAll(/<figure\b((?:"[^"]*"|'[^']*'|[^'">])*)>([\s\S]*?)<\/figure>/gi)){
+    if(!Object.hasOwn(attributes(figure[1]),'data-editorial-asset'))continue;
+    const caption=figure[2].match(/<figcaption\b[^>]*>([\s\S]*?)<\/figcaption>/i)?.[1].replace(/<[^>]*>/g,'').trim();
+    const locale=tags.find(tag=>tag.name==='html')?.attrs.lang;
+    if(caption!==(locale==='ja'?'AIイメージ':'AI image'))fail(file,'editorial imagery must use exactly the requested short AI image caption');
+  }
+  const ogImage=getMeta('property','og:image');
+  if(ogImage){const target=internalTarget(file,ogImage);if(!target||!publicMode)fail(file,'social image must use a local public asset in a public build')}
   const disclosureTags = tags.filter(tag => tag.attrs['data-disclosure']);
   const renderedSponsored = tags.filter(tag => tag.name === 'a' && (tag.attrs.rel || '').split(/\s+/).includes('sponsored'));
   if (renderedSponsored.length) {
@@ -185,7 +201,7 @@ for (const [file, page] of pages) {
         if ((tag.attrs['data-sponsored'] === 'true') !== isSponsored) fail(file, 'retailer data-sponsored and rel disagree');
         let href;
         try { href = new URL(tag.attrs.href).href; } catch { fail(file, 'retailer link is not an absolute URL'); }
-        if (!expectedRetailerLinks.has(`${isSponsored}|${href}`)) fail(file, 'retailer link does not match the current catalog approval state');
+        if (!expectedRetailerLinksFor(localeMatch?.[1]||'en').has(`${isSponsored}|${href}`)) fail(file, 'retailer link does not match the page language and current catalog approval state');
       }
       if (isSponsored) {
         sponsoredLinks++;

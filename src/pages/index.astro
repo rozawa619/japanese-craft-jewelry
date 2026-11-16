@@ -1,4 +1,26 @@
 ---
 import {pagePath} from '../config/site';
 ---
-<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width"/><meta name="robots" content="noindex"/><meta http-equiv="refresh" content={`0;url=${pagePath()}`}/><title>Japanese Craft Jewelry — Earrings & Maker Stories</title></head><body><a href={pagePath()}>Explore Japanese Craft Jewelry in English</a></body></html>
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="robots" content="noindex, follow"/><meta name="description" content="Explore selected Japanese craft earrings and necklaces in English or Japanese. 日本の工芸ジュエリーを日本語・英語で。"/><title>Japanese Craft Jewelry | English / 日本語</title></head>
+<body><main data-language-entry>
+ <a class="entry-brand" href={pagePath('', 'en')}>Japanese<br/>Craft Jewelry<span>.</span></a>
+ <p class="eyebrow">CRAFT JEWELRY, FROM JAPAN</p>
+ <h1>Find your next piece.<br/><span lang="ja">日本の工芸から、自分らしいひとつを。</span></h1>
+ <p class="entry-intro">Selected earrings, clip-ons and necklaces.<br/><span lang="ja">素材やかたちから選ぶ、ピアス・イヤリング・ネックレス。</span></p>
+ <div class="entry-languages" data-entry-languages>
+  <a href={pagePath('', 'en')} hreflang="en" lang="en" data-entry-language="en"><strong>English</strong><span>Explore the selection <span aria-hidden="true">↗</span></span></a>
+  <a href={pagePath('', 'ja')} hreflang="ja" lang="ja" data-entry-language="ja"><strong>日本語</strong><span>商品セレクトを見る <span aria-hidden="true">↗</span></span></a>
+ </div>
+ <p class="entry-note">Choose your language. <span lang="ja">言語を選んでご覧ください。</span></p>
+</main></body></html>
+<script>
+ const preferred=navigator.language.toLowerCase().startsWith('ja')?'ja':'en';
+ const choices=document.querySelector<HTMLElement>('[data-entry-languages]');
+ const preferredLink=document.querySelector<HTMLAnchorElement>('[data-entry-language="'+preferred+'"]');
+ if(choices&&preferredLink){choices.prepend(preferredLink);preferredLink.dataset.preferred='true'}
+ document.querySelectorAll<HTMLAnchorElement>('[data-entry-language]').forEach(link=>{const target=new URL(link.href);target.search=location.search;target.hash=location.hash;link.href=target.href});
+</script>
+<style>
+ :global(*){box-sizing:border-box} :global(body){margin:0;background:#f7f5ed;color:#20372b;font-family:Georgia,'Times New Roman',serif} main{width:min(900px,100%);margin:auto;padding:70px 28px} .entry-brand{font-size:32px;line-height:.95;text-decoration:none;color:inherit;display:inline-block;margin-bottom:65px}.entry-brand span{color:#9e412a}.eyebrow{font:11px/1.4 Arial,sans-serif;letter-spacing:.18em}h1{font-weight:400;font-size:clamp(32px,5vw,58px);line-height:1.45;letter-spacing:.01em;margin:22px 0}h1 span{font-size:.65em}.entry-intro{line-height:1.9;font-size:16px;margin-bottom:35px}.entry-languages{display:grid;grid-template-columns:1fr 1fr;gap:18px}.entry-languages>a{display:flex;flex-direction:column;gap:32px;border:1px solid #9da598;color:inherit;text-decoration:none;padding:30px;background:#eeeee4}.entry-languages>a[data-preferred]{background:#293e32;color:#fff}.entry-languages strong{font-weight:400;font-size:30px}.entry-languages a>span{font:13px/1.8 Arial,sans-serif}.entry-languages a>span>span{float:right}.entry-languages a:hover{text-decoration:underline}.entry-languages a:focus-visible{outline:3px solid #a6442a;outline-offset:5px}.entry-note{font:12px/1.8 Arial,sans-serif;margin-top:25px;color:#4f5d52}@media(max-width:450px){main{padding:35px 22px}.entry-brand{font-size:29px;margin-bottom:40px}.entry-languages{grid-template-columns:1fr}.entry-languages>a{padding:22px;gap:18px}.entry-languages strong{font-size:25px}}
+</style>

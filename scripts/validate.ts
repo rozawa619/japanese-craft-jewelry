@@ -133,6 +133,7 @@ export function collectValidationErrors(data: ProjectData): string[] {
     checkDate(`product ${product.id} verified`, product.lastVerifiedAt);
     checkDate(`product ${product.id} price`, product.priceCheckedAt);
     if (product.priceAmount !== null && (!product.priceCurrency || !product.priceCheckedAt)) errors.push(`product ${product.id}: a price needs currency and checked date`);
+    for(const [locale,localPrice] of Object.entries(product.localizedPrices||{})){if(!localPrice)continue;references(`product ${product.id} price ${locale}`,'sources',localPrice.sourceIds);checkDate(`product ${product.id} price ${locale}`,localPrice.checkedAt)}
     if (product.publishStatus === 'published' && !product.productType.every(type => jewelryTypes.has(type))) errors.push(`product ${product.id}: published product must be jewelry`);
     for (const locale of publicLocales) {
       const notes = data.notes.filter(note => note.metadata.productId === product.id && contentLocale(note) === locale);
@@ -145,7 +146,7 @@ export function collectValidationErrors(data: ProjectData): string[] {
     references(`link ${link.id}`, 'products', [link.productId]);
     references(`link ${link.id}`, 'merchants', [link.merchantId]);
     if (link.programId) references(`link ${link.id}`, 'programs', [link.programId]);
-    const pair = `${link.productId}/${link.merchantId}`;
+    const pair = `${link.productId}/${link.merchantId}/${link.locale||'shared'}`;
     if (linkPairs.has(pair)) errors.push(`links: duplicate product/merchant pair ${pair}`);
     linkPairs.add(pair);
     const product = catalog.products.find(product => product.id === link.productId);

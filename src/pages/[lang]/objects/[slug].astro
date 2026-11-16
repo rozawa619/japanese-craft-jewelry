@@ -9,7 +9,7 @@ import Disclosure from '../../../components/Disclosure.astro';
 import RetailerLink from '../../../components/RetailerLink.astro';
 import Sources from '../../../components/Sources.astro';
 import ProductCard from '../../../components/ProductCard.astro';
-import {catalogFor,productsFor,makerFor,price,labels,resolve} from '../../../lib/catalog';
+import {catalogFor,productsFor,makerFor,price,labels,resolve,linksFor} from '../../../lib/catalog';
 import {contentFor,contentSlug} from '../../../lib/content';
 import {locales,t} from '../../../lib/i18n';
 import {pagePath} from '../../../config/site';
@@ -22,15 +22,20 @@ const notes=(await contentFor('productNotes',locale)).filter(note=>note.data.pro
 const Content=notes.length?(await render(notes[0])).Content:null;
 const sourceIds=[...new Set([...p.sourceIds,...maker.sourceIds,...merchant.sourceIds,...p.craftClassification.sourceIds])];
 const craftNotes=(await contentFor('craftNotes',locale)).filter(note=>p.craftIds.includes(note.data.craftId)&&note.body?.trim());
-const specs=[[t(locale,'Type','種類'),labels('productTypes',p.productType,locale)],[t(locale,'Materials','素材'),labels('materials',p.materialIds,locale)],[t(locale,'Size','サイズ'),p.size||t(locale,'Not listed in the official information','公式情報に記載なし')],[t(locale,'Weight','重さ'),p.weightPerPieceGrams===null?(p.productType.includes('necklace')?t(locale,'Weight not confirmed','重さは未確認'):t(locale,'Per-ear weight not confirmed','片耳の重さは未確認')):p.weightPerPieceGrams+t(locale,' g per piece','g（片側）')],[t(locale,'Hardware','金具素材'),p.findings||t(locale,'Not listed in the official information','公式情報に記載なし')],[t(locale,'Fastening','留め方'),p.fastening||t(locale,'Not listed in the official information','公式情報に記載なし')]];
+const earJewelry=p.productType.some(type=>['pierced-earrings','clip-on-earrings'].includes(type));
+const specs=[[t(locale,'Type','種類'),labels('productTypes',p.productType,locale)],[t(locale,'Materials','素材'),labels('materials',p.materialIds,locale)],[t(locale,'Size','サイズ'),p.size||t(locale,'Not listed in the official information','公式情報に記載なし')],[t(locale,'Weight','重さ'),p.weightPerPieceGrams===null?(earJewelry?t(locale,'Per-ear weight not confirmed','片耳の重さは未確認'):t(locale,'Weight not confirmed','重さは未確認')):p.weightPerPieceGrams+(earJewelry?t(locale,' g per piece','g（片側）'):t(locale,' g','g'))],[t(locale,'Hardware','金具素材'),p.findings||t(locale,'Not listed in the official information','公式情報に記載なし')],[t(locale,'Fastening','留め方'),p.fastening||t(locale,'Not listed in the official information','公式情報に記載なし')]].filter(([label])=>earJewelry||p.weightPerPieceGrams!==null||label!==t(locale,'Weight','重さ'));
 const image=productImageFor(p.id);
-const related=products.filter(v=>v.id!==p.id&&v.availability!=='out_of_stock').slice(0,3);
-const hasDestination=catalog.links.some(link=>link.productId===p.id&&resolve(link));
+const candidates=products.filter(v=>v.id!==p.id&&v.availability!=='out_of_stock');
+const related:typeof candidates=[];
+const seenMaterials=new Set(p.materialIds);
+for(const candidate of candidates){const material=candidate.materialIds[0];if(material&&!seenMaterials.has(material)){related.push(candidate);seenMaterials.add(material)}if(related.length===3)break}
+for(const candidate of candidates){if(related.length===3)break;if(!related.some(item=>item.id===candidate.id))related.push(candidate)}
+const hasDestination=linksFor([p.id],locale).some(link=>resolve(link));
 const catalogLink=merchant.id==='hamamatsuya';
 const destinationLabel=p.availability==='out_of_stock'?t(locale,'View the official listing','公式の商品情報を見る'):catalogLink?t(locale,'Explore the maker’s designs',p.productType.includes('necklace')?'工房でペンダントを見る':p.productType.includes('clip-on-earrings')?'工房でイヤリングを見る':'工房でピアスを見る'):t(locale,'See the official product page','公式サイトでこの商品を見る');
 const destinationNote=t(locale,'Opens the official website in a new tab.','公式サイトが新しいタブで開きます。');
 ---
-<Base title={p.title} description={p.editorialSummary} locale={locale}>
+<Base title={p.title} description={p.editorialSummary} locale={locale} socialImage={image||false}>
 <div class="wrap product-shopping-page" data-product-page>
  <div class="breadcrumbs purchase-breadcrumbs"><a href={href('objects/')}>{t(locale,'The selection','商品セレクト')}</a><span>/</span><span>{p.title}</span></div>
  <section class="purchase-hero" data-product-intro>
@@ -44,10 +49,10 @@ const destinationNote=t(locale,'Opens the official website in a new tab.','公�
   </div>
  </section>
  <section class="purchase-story" aria-labelledby="why-this-piece"><div><p class="eyebrow">{t(locale,'WHY WE PICKED IT','このひとつを選んだ理由')}</p><h2 id="why-this-piece">{t(locale,'A detail to fall for.','惹かれる、その理由。')}</h2></div><div class="purchase-story-copy">{Content&&<div class="prose"><Content/></div>}</div></section>
- <section class="purchase-outfit" aria-labelledby="outfit-title"><div><p class="eyebrow">{t(locale,'PICTURE YOUR OUTFIT','こんな装いの日に')}</p><h2 id="outfit-title">{story.outfit.title}</h2></div><div><p>{story.outfit.body}</p><p class="purchase-style-note">{t(locale,'A styling idea from our selection, rather than a wear-test review.','装いの提案です。実物の着用レビューではありません。')}</p></div></section>
+ <section class="purchase-outfit" aria-labelledby="outfit-title"><div><p class="eyebrow">{t(locale,'PICTURE YOUR OUTFIT','こんな装いの日に')}</p><h2 id="outfit-title">{story.outfit.title}</h2></div><div><p>{story.outfit.body}</p></div></section>
  <section class="purchase-next"><div><h2>{t(locale,'Found a detail you love?','気になったら、お店で。')}</h2><p>{t(locale,'Take a closer look at the design on its official page.','気になるデザインを、公式サイトでも。')}</p></div><div><RetailerLink productId={p.id} locale={locale} label={destinationLabel}/><p class="purchase-destination-note">{destinationNote}</p></div></section>
  <div class="purchase-information">
-  <details class="purchase-details" data-product-details><summary>{t(locale,'Materials, size & fittings','素材・サイズ・金具について')}</summary><div class="purchase-details-body"><dl class="spec-list">{specs.map(([label,value])=><div><dt>{label}</dt><dd>{value}</dd></div>)}</dl><h2>{t(locale,'Materials & finish notes','素材・仕上げの補足')}</h2><ul>{p.whatToCheck.map(item=><li>{item}</li>)}</ul>{image&&<p class="muted">{t(locale,'An AI styling illustration with a fictional adult model. It is not an accurate rendering of the featured product’s pattern, dimensions or fittings.','架空の成人モデルによるAIイメージです。紹介商品の柄・寸法・金具を正確に再現したものではありません。')}</p>}<p class="purchase-price-note">{t(locale,'Product information checked ','商品情報の確認：')}{p.lastVerifiedAt}</p></div></details>
+  <details class="purchase-details" data-product-details><summary>{t(locale,'Materials, size & fittings','素材・サイズ・金具について')}</summary><div class="purchase-details-body"><dl class="spec-list">{specs.map(([label,value])=><div><dt>{label}</dt><dd>{value}</dd></div>)}</dl><h2>{t(locale,'Materials & finish notes','素材・仕上げの補足')}</h2><ul>{p.whatToCheck.map(item=><li>{item}</li>)}</ul><p class="purchase-price-note">{t(locale,'Product information checked ','商品情報の確認：')}{p.lastVerifiedAt}</p></div></details>
   <details class="purchase-details"><summary>{t(locale,'Maker, craft & provenance','作り手・工芸・産地について')}</summary><div class="purchase-details-body"><h2><a href={href('makers/'+maker.id+'/')}>{maker.name}</a></h2><p>{maker.productionNote}</p><p>{p.craftClassification.label}</p>{craftNotes.map(note=><p><a href={href('crafts/'+contentSlug(note)+'/')}>{note.data.title} →</a></p>)}</div></details>
   <details class="purchase-details"><summary>{t(locale,'Sources & information checks','出典・情報の確認について')}</summary><div class="purchase-details-body"><Sources sourceIds={sourceIds} locale={locale}/></div></details>
  </div>

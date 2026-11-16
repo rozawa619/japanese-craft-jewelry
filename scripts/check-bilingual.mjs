@@ -9,7 +9,7 @@ import {fileURLToPath} from 'node:url';
 const root=fileURLToPath(new URL('../',import.meta.url));
 if(existsSync(resolve(root,'.env')))process.loadEnvFile(resolve(root,'.env'));
 const origin=process.env.CHECK_BASE_URL||'http://127.0.0.1:4321';
-const screenshotPrefix=(process.env.CHECK_SCREENSHOT_PREFIX||'clear-stage').replace(/[^a-zA-Z0-9_-]/g,'-');
+const screenshotPrefix=(process.env.CHECK_SCREENSHOT_PREFIX||'discovery-stage').replace(/[^a-zA-Z0-9_-]/g,'-');
 const base='/'+(process.env.PUBLIC_BASE_PATH||'').split('/').filter(Boolean).join('/')+((process.env.PUBLIC_BASE_PATH||'').split('/').filter(Boolean).length?'/':'');
 const route=(locale,path='')=>new URL(base+locale+'/'+path,origin).href;
 const catalog=JSON.parse(await readFile(resolve(root,'src/data/catalog.json'),'utf8'));
@@ -43,8 +43,7 @@ async function switchTo(page,locale,path,keyboard=false){
 }
 function expectedCount(filters){return published.filter(product=>(!filters.type||product.productType.includes(filters.type))&&(!filters.prefecture||product.prefectureIds.includes(filters.prefecture))&&(!filters.material||product.materialIds.includes(filters.material))&&(!filters.craft||product.craftIds.includes(filters.craft))).length}
 function assertStylingDisclosure(caption,locale){
- assert.match(caption,/\bAI\b/i,'Styling imagery needs a visible AI label.');
- assert.match(caption,locale==='ja'?/(?:実物|再現)[\s\S]*(?:ではありません|異なります)/i:/not (?:a |the )?(?:product |actual )?(?:photograph|photo|reproduction)|not the actual/i,'Styling imagery must stay distinct from an actual product photo or reproduction.');
+ assert.equal(caption.trim(),locale==='ja'?'AIイメージ':'AI image','The user requested a short, exact AI image label.');
 }
 async function assertStickyPurchaseAction(page,primary){
  const sticky=page.locator('[data-product-sticky-cta]').first();
@@ -132,11 +131,16 @@ try{
      if(locale==='ja')assert.ok((text.match(/[ぁ-んァ-ヶ一-龠]/g)||[]).length>30,'Japanese page needs translated main content.');
      assert.equal(await page.locator('a[href*="/journal/"]').count(),0,'Regular pages must not link to retired reading pages.');
      assert.equal(await page.locator('a[href$="/en/contact/"], a[href$="/ja/contact/"]').count(),0,'Contact is intentionally unpublished and must not remain in navigation or content links.');
-     if(kind==='home')assert.ok(await page.locator('[data-product-card]').count()>=2,'Home should present selected products directly.');
+     if(kind==='home'){
+      const homeCards=page.locator('[data-product-card]');assert.ok(await homeCards.count()>=6,'Home should present a varied product selection directly.');
+      const homeMaterials=await homeCards.evaluateAll(nodes=>nodes.map(node=>(node.getAttribute('data-material')||'').split(' ')));
+      assert.ok(homeMaterials.filter(ids=>!ids.includes('wood')).length>=4,'The home selection should lead with at least four non-wood pieces.');
+      for(const figure of await page.locator('figure[data-editorial-asset]').all())assertStylingDisclosure(await figure.locator('figcaption').innerText(),locale);
+     }
      if(kind.startsWith('feature')){
       const figure=page.locator('figure[data-editorial-asset]').first();
       assert.equal(await figure.count(),1);
-      assert.equal(await figure.locator('figcaption').isVisible(),true,'AI/non-product caption must be visible.');assertStylingDisclosure(await figure.locator('figcaption').innerText(),locale);
+      assert.equal(await figure.locator('figcaption').isVisible(),true,'AI image label must remain visible.');assertStylingDisclosure(await figure.locator('figcaption').innerText(),locale);
       const image=figure.locator('img');
       const asset=editorialImages[featuredByKind[kind].id];
       assert.ok(new URL(await image.getAttribute('src'),page.url()).pathname.endsWith('/'+asset.path));
@@ -146,6 +150,18 @@ try{
       assert.deepEqual(intrinsic,{width:asset.width,height:asset.height});
       const peer=locale==='en'?'ja':'en';
       await switchTo(page,peer,path);await switchTo(page,locale,path);
+     }
+     const activeProduct=kind.startsWith('feature')?featuredByKind[kind]:kind==='product'?longest:null;
+     if(activeProduct){
+      const official=catalog.links.find(link=>link.productId===activeProduct.id&&(!link.locale||link.locale===locale));
+      assert.ok(official,'A destination matching the current page language is required.');
+      assert.equal(await page.locator('[data-product-primary-cta] a[data-sponsored]').first().getAttribute('href'),official.officialProductUrl,'A Japanese page must not silently use the English storefront destination.');
+      const localPrice=locale==='ja'?activeProduct.localizedPrices?.ja:null;
+      const currency=localPrice?.currency||activeProduct.priceCurrency;
+      const amount=localPrice?.amount??activeProduct.priceAmount;
+      const visiblePrice=await page.locator('[data-product-price]').innerText();
+      if(currency)assert.ok(visiblePrice.includes(currency),'Displayed currency must match the verified storefront price.');
+      if(amount!==null)assert.ok(visiblePrice.replace(/[^0-9.]/g,'').startsWith(String(amount)),'Displayed amount must use source data, not a conversion.');
      }
      let purchaseFlow=null;
      if(kind==='product'||kind.startsWith('feature'))purchaseFlow=await assertProductFlow(page,locale);
@@ -206,7 +222,8 @@ try{
     assert.equal(await page.locator('[data-product-card]:visible').count(),published.length);
     assert.equal(new URL(page.url()).search,'');
     const materials=[...new Set(published.flatMap(product=>product.materialIds))];
-    assert.ok(materials.includes('wood')&&materials.includes('glass'),'The published selection should now include both wood and glass.');
+    assert.ok(['wood','glass','porcelain'].every(material=>materials.includes(material)),'Published material choices should include wood, glass and porcelain.');
+    assert.ok(published.filter(product=>!product.materialIds.includes('wood')).length>=Math.ceil(published.length/2),'At least half of the published selection should now be non-wood.');
     const materialCounts={};
     for(const material of materials){
      materialCounts[material]=await setFilters(page,{material});
@@ -227,6 +244,23 @@ try{
   }
   await context.close();
  }
+ for(const browserLocale of ['ja-JP','en-US','fr-FR'])for(const width of [1440,320])await check('Language entry '+browserLocale+' '+width+' keeps both languages accessible',async()=>{
+  const context=await browser.newContext({locale:browserLocale,viewport:{width,height:840}});const page=await context.newPage();
+  try{
+   const rootUrl=new URL(base,origin).href;const response=await page.goto(rootUrl+'?source=entry#selection',{waitUntil:'load'});assert.equal(response.status(),200);
+   assert.equal(new URL(page.url()).pathname,new URL(rootUrl).pathname,'The selector must not force a language redirect.');
+   assert.equal(await page.locator('meta[http-equiv="refresh"]').count(),0);
+   assert.equal(await page.locator('[data-entry-language]').count(),2);
+   const preferred=browserLocale.startsWith('ja')?'ja':'en';assert.equal(await page.locator('[data-entry-language]').first().getAttribute('data-entry-language'),preferred);
+   for(const locale of ['en','ja']){const link=page.locator('[data-entry-language="'+locale+'"]');assert.equal(await link.isVisible(),true);const destination=new URL(await link.getAttribute('href'),page.url());assert.equal(destination.pathname,new URL(route(locale)).pathname);assert.equal(destination.search,'?source=entry');assert.equal(destination.hash,'#selection')}
+   const dimensions=await page.evaluate(()=>({width:innerWidth,document:document.documentElement.scrollWidth}));assert.ok(dimensions.document<=width+1);
+   await page.locator('[data-entry-language="'+preferred+'"]').click();await page.waitForURL(url=>url.pathname===new URL(route(preferred)).pathname);assert.equal(await page.locator('html').getAttribute('lang'),preferred);
+   return {preferred,width,bothLanguageLinks:true,noForcedRedirect:true};
+  }finally{await context.close()}
+ });
+ await check('Language entry works without JavaScript',async()=>{
+  const context=await browser.newContext({javaScriptEnabled:false,viewport:{width:320,height:740}});const page=await context.newPage();try{await page.goto(new URL(base,origin).href);for(const locale of ['en','ja'])assert.equal(await page.locator('[data-entry-language="'+locale+'"]').isVisible(),true);await page.locator('[data-entry-language="ja"]').click();assert.equal(await page.locator('html').getAttribute('lang'),'ja')}finally{await context.close()}
+ });
  await check('Publication metadata, withdrawn hairpin and empty categories are correct',async()=>{
   const page=await browser.newPage();
   for(const locale of ['en','ja']){
@@ -234,7 +268,10 @@ try{
    if(process.env.PUBLIC_PUBLISH_MODE==='public'){
     assert.match(await page.locator('meta[name="robots"]').getAttribute('content'),/^index, follow$/);
     assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'),new URL(base+locale+'/',process.env.PUBLIC_SITE_URL).href);
-    assert.equal(await page.locator('link[hreflang]').count(),2);
+    assert.equal(await page.locator('link[hreflang]').count(),3);
+    assert.equal(await page.locator('link[hreflang="x-default"]').getAttribute('href'),new URL(base+'en/',process.env.PUBLIC_SITE_URL).href);
+    const ogImage=await page.locator('meta[property="og:image"]').getAttribute('content');assert.ok(ogImage?.startsWith(new URL(base,process.env.PUBLIC_SITE_URL).href));
+    assert.equal(await page.locator('meta[name="twitter:card"]').getAttribute('content'),'summary_large_image');
    }else{
     assert.match(await page.locator('meta[name="robots"]').getAttribute('content'),/noindex/);
     assert.equal(await page.locator('link[rel="canonical"]').count(),0);
@@ -278,7 +315,7 @@ try{
  report.completedAt=new Date().toISOString();
  report.finalizedAt=report.completedAt;
  report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,pages:report.pages.length,axeViolations:report.pages.reduce((sum,page)=>sum+(page.axeViolations?.length||0),0),screenshots:report.screenshots.length};
- await writeFile(resolve(root,process.env.CHECK_REPORT_PATH||'docs/clear-stage-browser-results.json'),JSON.stringify(report,null,2)+'\n');
+ await writeFile(resolve(root,process.env.CHECK_REPORT_PATH||'docs/discovery-stage-browser-results.json'),JSON.stringify(report,null,2)+'\n');
  console.log(JSON.stringify(report.summary));
  if(report.failures.length)process.exitCode=1;
 }

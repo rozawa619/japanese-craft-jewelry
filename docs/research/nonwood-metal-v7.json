@@ -1,0 +1,714 @@
+{
+  "checkedAt": "2026-11-16",
+  "purpose": "Version0.7 nonwood expansion: silver wire work, dyed textile and cloisonne. Import proposal only; catalog is the eventual fact source.",
+  "researchMethod": "Read current EN/USD and JA/JPY BECOS product pages with fresh Chrome, same product handles, and brand pages; visually inspected official photos in-browser. Screenshots are internal ignored artifacts only.",
+  "affiliateState": "All not_applied. No advertising URL, approval, registration or application submission. Japanese storefront is a separate ordinary destination; no EN affiliate eligibility inferred for JA.",
+  "catalogAdditions": {
+    "prefectures": [
+      {
+        "id": "ishikawa",
+        "name": "Ishikawa",
+        "description": "Selected silver wire work jewelry identified with Ishikawa in the product origin information."
+      },
+      {
+        "id": "kyoto",
+        "name": "Kyoto",
+        "description": "Selected kyoto yuzen dyeing jewelry identified with Kyoto in the product origin information."
+      },
+      {
+        "id": "aichi",
+        "name": "Aichi",
+        "description": "Selected owari cloisonne jewelry identified with Aichi in the product origin information."
+      }
+    ],
+    "crafts": [
+      {
+        "id": "silver-work",
+        "name": "Silver wire work",
+        "description": "The specific product identifies Ishikawa as its origin. CHECOS describes silver wire work and engraving inspired by natural forms; individual component origins and certification are not established.",
+        "sourceIds": [
+          "becos-checos-japanese-apricot",
+          "checos-brand"
+        ]
+      },
+      {
+        "id": "kyoto-yuzen",
+        "name": "Kyoto Yuzen dyeing",
+        "description": "The product identifies Kyoto as its origin. Morphosphere’s tint collection combines Yuzen dyeing with embroidered lace; no claim of individual traditional-craft certification is made.",
+        "sourceIds": [
+          "becos-morphosphere-ultramarine-pansy",
+          "morphosphere-brand"
+        ]
+      },
+      {
+        "id": "owari-cloisonne",
+        "name": "Owari cloisonne",
+        "description": "The product identifies Aichi as its origin. The brand page describes the Nagoya workshop and its Owari cloisonne practice. Individual certification and component origins are not established.",
+        "sourceIds": [
+          "becos-kato-suke-drop",
+          "kato-shippo-brand"
+        ]
+      }
+    ],
+    "materials": [
+      {
+        "id": "silver",
+        "name": "Silver",
+        "description": "Silver is named by the listing; purity is not established."
+      },
+      {
+        "id": "cotton",
+        "name": "Cotton",
+        "description": "Cotton is named in the textile accessory material list."
+      },
+      {
+        "id": "polyester",
+        "name": "Polyester",
+        "description": "Polyester is named in the textile accessory material list."
+      },
+      {
+        "id": "gold-filled",
+        "name": "14K gold-filled",
+        "description": "Listed as14kgf; this is not a solid-gold claim or a per-component guarantee."
+      },
+      {
+        "id": "copper",
+        "name": "Copper",
+        "description": "Copper is named in the selected cloisonne listing."
+      },
+      {
+        "id": "enamel-glaze",
+        "name": "Enamel glaze",
+        "description": "Glassy glaze is named in the selected cloisonne description."
+      },
+      {
+        "id": "alloy",
+        "name": "Alloy",
+        "description": "Alloy is named without exact composition in the selected listing."
+      },
+      {
+        "id": "titanium",
+        "name": "Titanium",
+        "description": "Titanium piercing fittings are identified for the selected Kato item."
+      }
+    ],
+    "makers": [
+      {
+        "id": "checos",
+        "name": "CHECOS",
+        "location": "Ishikawa, Japan",
+        "productionNote": "The specific product identifies Ishikawa as its origin. CHECOS describes silver wire work and engraving inspired by natural forms; individual component origins and certification are not established.",
+        "url": "https://en.thebecos.com/collections/checos",
+        "sourceIds": [
+          "becos-checos-japanese-apricot",
+          "becos-checos-japanese-apricot-ja",
+          "checos-brand"
+        ]
+      },
+      {
+        "id": "morphosphere",
+        "name": "Morphosphere",
+        "location": "Kyoto, Japan",
+        "productionNote": "The product identifies Kyoto as its origin. Morphosphere’s tint collection combines Yuzen dyeing with embroidered lace; no claim of individual traditional-craft certification is made.",
+        "url": "https://en.thebecos.com/collections/morphosphere",
+        "sourceIds": [
+          "becos-morphosphere-ultramarine-pansy",
+          "becos-morphosphere-ultramarine-pansy-ja",
+          "morphosphere-brand"
+        ]
+      },
+      {
+        "id": "kato-shippo",
+        "name": "KATO SHIPPO SEISAKUSYO",
+        "location": "Aichi, Japan",
+        "productionNote": "The product identifies Aichi as its origin. The brand page describes the Nagoya workshop and its Owari cloisonne practice. Individual certification and component origins are not established.",
+        "url": "https://en.thebecos.com/collections/kato-shippo-seisakusyo",
+        "sourceIds": [
+          "becos-kato-suke-drop",
+          "becos-kato-suke-drop-ja",
+          "kato-shippo-brand"
+        ]
+      }
+    ],
+    "merchants": [],
+    "links": [
+      {
+        "id": "checos-s0050-015-official",
+        "productId": "checos-japanese-apricot-pierced-earrings",
+        "merchantId": "becos-en",
+        "programId": "becos-en",
+        "officialProductUrl": "https://en.thebecos.com/products/s0050-015?currency=USD",
+        "affiliateUrl": null,
+        "applicationStatus": "not_applied",
+        "affiliateLinkVerifiedAt": null
+      },
+      {
+        "id": "morphosphere-s0124-032-official",
+        "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+        "merchantId": "becos-en",
+        "programId": "becos-en",
+        "officialProductUrl": "https://en.thebecos.com/products/s0124-032?currency=USD",
+        "affiliateUrl": null,
+        "applicationStatus": "not_applied",
+        "affiliateLinkVerifiedAt": null
+      },
+      {
+        "id": "kato-shippo-s0087-093-official",
+        "productId": "kato-suke-drop-pierced-earrings",
+        "merchantId": "becos-en",
+        "programId": "becos-en",
+        "officialProductUrl": "https://en.thebecos.com/products/s0087-093?currency=USD",
+        "affiliateUrl": null,
+        "applicationStatus": "not_applied",
+        "affiliateLinkVerifiedAt": null
+      }
+    ],
+    "products": [
+      {
+        "id": "checos-japanese-apricot-pierced-earrings",
+        "slug": "checos-japanese-apricot-pierced-earrings",
+        "locale": "en",
+        "title": "CHECOS Japanese apricot silver flower earrings",
+        "originalTitle": "【ピアス】Japanese apricot | 銀細工 | CHECOS",
+        "publishStatus": "published",
+        "productType": [
+          "pierced-earrings"
+        ],
+        "prefectureIds": [
+          "ishikawa"
+        ],
+        "craftIds": [
+          "silver-work"
+        ],
+        "materialIds": [
+          "silver"
+        ],
+        "makerId": "checos",
+        "craftClassification": {
+          "label": "Silver jewelry using the maker’s silver wire-work approach; no individual traditional-craft certification claimed.",
+          "sourceIds": [
+            "becos-checos-japanese-apricot",
+            "checos-brand"
+          ]
+        },
+        "size": "Listed diameter 0.7 cm.",
+        "weightPerPieceGrams": null,
+        "findings": "Silver is listed; purity and the material assigned to each fitting component are not specified.",
+        "fastening": "Pierced earrings; exact closure is not specified in the checked text.",
+        "priceAmount": 180,
+        "priceCurrency": "USD",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "USD storefront price checked on the stated date. Tax inclusion not established.",
+        "availability": "listed",
+        "merchantIds": [
+          "becos-en"
+        ],
+        "sourceIds": [
+          "becos-checos-japanese-apricot",
+          "becos-checos-japanese-apricot-ja",
+          "checos-brand"
+        ],
+        "lastVerifiedAt": "2026-11-16",
+        "imageAssetIds": [],
+        "editorialSummary": "A silver flower close to the ear, with petal details to discover up close. An understated accent for a shirt, tee or dark dress.",
+        "whoItMaySuit": "For a small floral detail and the quiet texture of silver.",
+        "whatToCheck": [
+          "The listing states 1 g without identifying whether that means one earring or the pair.",
+          "The fine details can catch on hair or fibers. Avoid force and follow the maker’s silver-care instructions."
+        ]
+      },
+      {
+        "id": "morphosphere-ultramarine-pansy-pierced-earrings",
+        "slug": "morphosphere-ultramarine-pansy-pierced-earrings",
+        "locale": "en",
+        "title": "Morphosphere tint ultramarine pansy earrings",
+        "originalTitle": "【ピアス】tint パンジー 群青 | 京友禅 | Morphosphere",
+        "publishStatus": "published",
+        "productType": [
+          "pierced-earrings"
+        ],
+        "prefectureIds": [
+          "kyoto"
+        ],
+        "craftIds": [
+          "kyoto-yuzen"
+        ],
+        "materialIds": [
+          "cotton",
+          "polyester",
+          "gold-filled"
+        ],
+        "makerId": "morphosphere",
+        "craftClassification": {
+          "label": "Dyed embroidered-lace jewelry listed as Kyoto Yuzen dyeing, not a claim of individual certification.",
+          "sourceIds": [
+            "becos-morphosphere-ultramarine-pansy",
+            "morphosphere-brand"
+          ]
+        },
+        "size": "Listed W5.0 × D5.0 cm, chain5.0 cm. The listing does not distinguish an overall drop length.",
+        "weightPerPieceGrams": null,
+        "findings": "The material list includes cotton, polyester and 14kgf. It does not assign each material to a specific component.",
+        "fastening": "The Japanese same-SKU listing identifies pierced earrings. Exact fastening is not specified in the checked text.",
+        "priceAmount": 50.4,
+        "priceCurrency": "USD",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "USD storefront price checked on the stated date. Tax inclusion not established.",
+        "availability": "listed",
+        "merchantIds": [
+          "becos-en"
+        ],
+        "sourceIds": [
+          "becos-morphosphere-ultramarine-pansy",
+          "becos-morphosphere-ultramarine-pansy-ja",
+          "morphosphere-brand"
+        ],
+        "lastVerifiedAt": "2026-11-16",
+        "imageAssetIds": [],
+        "editorialSummary": "A vivid blue pansy made from dyed embroidered lace, suspended on a fine chain. Let one flower brighten a white tee or ivory blouse.",
+        "whoItMaySuit": "For a statement flower, a clear blue accent and the texture of embroidered lace.",
+        "whatToCheck": [
+          "The listing states 1 g without identifying a per-ear or pair basis.",
+          "The maker advises against water washing or wiping with water/detergent. Fabric and pattern placement may vary."
+        ]
+      },
+      {
+        "id": "kato-suke-drop-pierced-earrings",
+        "slug": "kato-suke-drop-pierced-earrings",
+        "locale": "en",
+        "title": "Kato Shippo SUKE cloisonne drop earrings",
+        "originalTitle": "【ピアス】雫透 (Suke) 全6色 | 無線銀貼七宝",
+        "publishStatus": "published",
+        "productType": [
+          "pierced-earrings"
+        ],
+        "prefectureIds": [
+          "aichi"
+        ],
+        "craftIds": [
+          "owari-cloisonne"
+        ],
+        "materialIds": [
+          "silver",
+          "copper",
+          "enamel-glaze",
+          "alloy",
+          "titanium"
+        ],
+        "makerId": "kato-shippo",
+        "craftClassification": {
+          "label": "Contemporary Owari cloisonne jewelry by Kato Shippo; no individual certification claimed.",
+          "sourceIds": [
+            "becos-kato-suke-drop",
+            "kato-shippo-brand"
+          ]
+        },
+        "size": "Listed W1.2 × H2.0 cm; the listing does not separately identify the length including fittings.",
+        "weightPerPieceGrams": null,
+        "findings": "Silver, copper, glazes and alloys are listed; the product notes identify titanium piercing fittings. Component coverage beyond that is not specified.",
+        "fastening": "Pierced earrings; exact fastening details are not specified in the checked text.",
+        "priceAmount": 168,
+        "priceCurrency": "USD",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "USD storefront price checked on the stated date. Tax inclusion not established.",
+        "availability": "listed",
+        "merchantIds": [
+          "becos-en"
+        ],
+        "sourceIds": [
+          "becos-kato-suke-drop",
+          "becos-kato-suke-drop-ja",
+          "kato-shippo-brand"
+        ],
+        "lastVerifiedAt": "2026-11-16",
+        "imageAssetIds": [],
+        "editorialSummary": "Deep color inside a glossy teardrop, framed with a fine metallic edge. Choose from six colors to bring a jewel-like accent to a plain blouse.",
+        "whoItMaySuit": "For saturated color, a teardrop silhouette and the reflective surface of cloisonne.",
+        "whatToCheck": [
+          "Six colors are listed. This product handle covers the color variants, rather than a single fixed color.",
+          "Weight is not supplied. The glassy surface needs protection from strong impact and heat.",
+          "Titanium fittings do not establish that the entire item is hypoallergenic."
+        ]
+      }
+    ]
+  },
+  "translationsJa": {
+    "prefectures": {
+      "ishikawa": {
+        "name": "石川県",
+        "description": "銀線細工の表情を楽しむ、石川県の工芸ジュエリー。"
+      },
+      "kyoto": {
+        "name": "京都府",
+        "description": "京友禅の表情を楽しむ、京都府の工芸ジュエリー。"
+      },
+      "aichi": {
+        "name": "愛知県",
+        "description": "尾張七宝の表情を楽しむ、愛知県の工芸ジュエリー。"
+      }
+    },
+    "crafts": {
+      "silver-work": {
+        "name": "銀線細工",
+        "description": "商品情報の生産地は石川県。CHECOSは、自然のかたちを彫金や銀線細工で表すブランドです。部品ごとの産地や個別商品の公的認証は未確認です。"
+      },
+      "kyoto-yuzen": {
+        "name": "京友禅",
+        "description": "商品情報の生産地は京都府。Morphosphereのtintは、友禅染めと刺繍レースを組み合わせるシリーズです。個別商品の公的認証は確認していません。"
+      },
+      "owari-cloisonne": {
+        "name": "尾張七宝",
+        "description": "商品情報の生産地は愛知県。ブランド紹介には名古屋の工房と、尾張七宝のものづくりが記載されています。個別商品の認証や部品ごとの産地は未確認です。"
+      }
+    },
+    "materials": {
+      "silver": {
+        "name": "銀",
+        "description": "商品に銀の表記があります。純度は未確認です。"
+      },
+      "cotton": {
+        "name": "綿",
+        "description": "布のアクセサリーに綿の表記があります。"
+      },
+      "polyester": {
+        "name": "ポリエステル",
+        "description": "布のアクセサリーにポリエステルの表記があります。"
+      },
+      "gold-filled": {
+        "name": "14Kゴールドフィルド",
+        "description": "商品表記は14kgf。無垢の金や各パーツの素材を保証する表記ではありません。"
+      },
+      "copper": {
+        "name": "銅",
+        "description": "七宝の商品に銅の表記があります。"
+      },
+      "enamel-glaze": {
+        "name": "七宝釉薬",
+        "description": "七宝の商品にガラス質の釉薬の説明があります。"
+      },
+      "alloy": {
+        "name": "合金",
+        "description": "合金の表記があり、詳しい組成は未確認です。"
+      },
+      "titanium": {
+        "name": "チタン",
+        "description": "加藤七宝の商品備考にピアス金具はチタン製とあります。"
+      }
+    },
+    "makers": {
+      "checos": {
+        "name": "CHECOS",
+        "location": "石川県",
+        "productionNote": "商品情報の生産地は石川県。CHECOSは、自然のかたちを彫金や銀線細工で表すブランドです。部品ごとの産地や個別商品の公的認証は未確認です。"
+      },
+      "morphosphere": {
+        "name": "Morphosphere",
+        "location": "京都府",
+        "productionNote": "商品情報の生産地は京都府。Morphosphereのtintは、友禅染めと刺繍レースを組み合わせるシリーズです。個別商品の公的認証は確認していません。"
+      },
+      "kato-shippo": {
+        "name": "加藤七宝製作所",
+        "location": "愛知県",
+        "productionNote": "商品情報の生産地は愛知県。ブランド紹介には名古屋の工房と、尾張七宝のものづくりが記載されています。個別商品の認証や部品ごとの産地は未確認です。"
+      }
+    },
+    "merchants": {},
+    "products": {
+      "checos-japanese-apricot-pierced-earrings": {
+        "title": "CHECOS 銀の小花ピアス",
+        "editorialSummary": "耳元に、小さな銀の花。近くで見たくなる花びらの表情を、シャツやTシャツ、黒いワンピースのさりげないアクセントに。",
+        "whoItMaySuit": "小ぶりな花のモチーフや、銀の繊細な表情が好きな方に。",
+        "whatToCheck": [
+          "重さは1gの表記ですが、片耳か一組かは未確認です。",
+          "細かな部分が髪や服の繊維に引っかかる場合があります。強い力を加えず、銀のお手入れ案内に沿って扱う商品です。"
+        ],
+        "size": "直径0.7cm（商品表記）。",
+        "findings": "素材は銀の表記。純度と金具のパーツごとの素材は未確認です。",
+        "fastening": "ピアス。留め具の詳しい仕組みは商品本文に記載がありません。",
+        "taxNote": "確認日の英語ストア米ドル表示。税込・税別の区分は未確認です。",
+        "craftClassificationLabel": "CHECOSが銀線細工として紹介する銀のジュエリー。個別商品の公的認証を示すものではありません。"
+      },
+      "morphosphere-ultramarine-pansy-pierced-earrings": {
+        "title": "Morphosphere tint 群青パンジーピアス",
+        "editorialSummary": "染めた刺繍レースの、鮮やかな青いパンジー。細いチェーンに下がる花を、白Tシャツやアイボリーのブラウスの差し色に。",
+        "whoItMaySuit": "はっきりした青や花のかたち、刺繍レースの質感を楽しみたい方に。",
+        "whatToCheck": [
+          "重さは1gの表記ですが、片耳か一組かは未確認です。",
+          "水洗い・水拭き・洗剤の使用は控える案内があります。生地や柄の出方は変わる場合があります。"
+        ],
+        "size": "幅5.0 × 奥行5.0cm、チェーン5.0cm（商品表記）。全長の個別表記はありません。",
+        "findings": "綿・ポリエステル・14kgfの表記。素材ごとの使用パーツは未確認です。",
+        "fastening": "同一SKUの日本語ページはピアスと表記。留め方の詳細は未確認です。",
+        "taxNote": "確認日の英語ストア米ドル表示。税込・税別の区分は未確認です。",
+        "craftClassificationLabel": "京友禅として紹介される、染めた刺繍レースのジュエリー。個別商品の認証を示すものではありません。"
+      },
+      "kato-suke-drop-pierced-earrings": {
+        "title": "加藤七宝製作所 雫透 SUKE ピアス",
+        "editorialSummary": "つややかな雫に、奥行きのある色。細い金属の縁がきらめきを引き締める七宝ピアスを、無地のブラウスのアクセントに。",
+        "whoItMaySuit": "深い色と雫のかたち、七宝のつややかな表情が好きな方に。",
+        "whatToCheck": [
+          "全6色の展開です。リンク先で選べる色をまとめた商品として紹介しています。",
+          "重さは記載がありません。ガラス質の表面は、強い衝撃や熱を避けて扱う案内です。",
+          "金具はチタン製の表記ですが、商品全体の低アレルギー性を保証するものではありません。"
+        ],
+        "size": "幅1.2 × 高さ2.0cm（商品表記）。金具を含む全長の個別表記はありません。",
+        "findings": "素材欄は銀・銅・釉薬・合金。備考にはピアス金具はチタン製とあります。その他のパーツごとの使い分けは未確認です。",
+        "fastening": "ピアス。具体的な留め方の詳細は商品本文に記載がありません。",
+        "taxNote": "確認日の英語ストア米ドル表示。税込・税別の区分は未確認です。",
+        "craftClassificationLabel": "加藤七宝製作所による尾張七宝のジュエリー。個別商品の公的認証を示すものではありません。"
+      }
+    }
+  },
+  "productStories": {
+    "checos-japanese-apricot-pierced-earrings": {
+      "en": {
+        "headline": "A small flower, a quiet sparkle.",
+        "standfirst": "Fine petal details make this little silver flower worth a closer look. Keep the rest of the outfit simple and let one thoughtful detail do the work.",
+        "highlights": [
+          "A small silver flower silhouette",
+          "Fine petal details and a soft metallic texture",
+          "Try a pale-blue shirt or a simple black dress"
+        ],
+        "outfit": {
+          "title": "Pale-blue shirt × a silver flower",
+          "body": "Open the collar of a pale-blue shirt and tuck your hair behind one ear. The silver flower is a small finishing touch for a clean, relaxed outfit."
+        }
+      },
+      "ja": {
+        "headline": "耳元に、銀の小さな花。",
+        "standfirst": "花びらの細かな表情を、そっと耳元に。シャツにもTシャツにも合わせたい、銀線細工の小さな花です。",
+        "highlights": [
+          "耳元に収まる小さな花のかたち",
+          "銀の細工がつくる花びらの表情",
+          "水色のシャツや黒いワンピースに"
+        ],
+        "outfit": {
+          "title": "水色のシャツ × 銀の小花",
+          "body": "水色のシャツの襟を少し開いて、髪は片耳にかけて。きちんとしすぎない装いの仕上げに、銀の小さな花をひとつ。"
+        }
+      }
+    },
+    "morphosphere-ultramarine-pansy-pierced-earrings": {
+      "en": {
+        "headline": "Wear a little blue in full bloom.",
+        "standfirst": "The color is the first thing you notice; the embroidered-lace texture is the detail that keeps your attention. A pansy with a little movement for your simplest outfits.",
+        "highlights": [
+          "Vivid ultramarine blue",
+          "A pansy formed in dyed embroidered lace",
+          "Try a white tee, ivory or dark denim"
+        ],
+        "outfit": {
+          "title": "White tee × a blue flower",
+          "body": "Keep it easy with a plain white tee and dark denim. Tie your hair back loosely so the blue pansy and the fine chain become the playful part of the outfit."
+        }
+      },
+      "ja": {
+        "headline": "群青の花を、装いの主役に。",
+        "standfirst": "ぱっと目を引く群青に、刺繍レースの表情。いちばんシンプルな服の日にこそ合わせたい、友禅染めの花のピアスです。",
+        "highlights": [
+          "顔まわりの差し色になる群青",
+          "染めと刺繍レースで表すパンジー",
+          "白T・アイボリー・濃色デニムに"
+        ],
+        "outfit": {
+          "title": "白いTシャツ × 群青の花",
+          "body": "白いTシャツと濃いデニムに、髪はゆるく結んで。色数を絞った装いに、青い花と細いチェーンで遊び心を添えるコーディネートです。"
+        }
+      }
+    },
+    "kato-suke-drop-pierced-earrings": {
+      "en": {
+        "headline": "Deep color, held in a drop.",
+        "standfirst": "A fine metallic edge frames a glossy pool of color. SUKE brings the reflective depth of cloisonne into an easy teardrop shape, with six colors to explore.",
+        "highlights": [
+          "A smooth teardrop silhouette",
+          "Glassy color over a metallic base",
+          "Six colors, from deep shades to brighter tones"
+        ],
+        "outfit": {
+          "title": "Ivory blouse × a rich green accent",
+          "body": "Try the green option with an ivory blouse and a simple neckline. For another mood, explore navy against white, or a brighter shade with charcoal."
+        }
+      },
+      "ja": {
+        "headline": "ひとしずくに、深い色。",
+        "standfirst": "細い金属の縁の中に、つやのある色をひとしずく。七宝の奥行きを楽しむ、シンプルな雫のピアスです。",
+        "highlights": [
+          "すっきりとした雫のシルエット",
+          "金属地に重なるガラス質の色",
+          "深い色から明るい色まで全6色"
+        ],
+        "outfit": {
+          "title": "アイボリーのブラウス × 深い緑",
+          "body": "緑を選ぶなら、アイボリーのブラウスとすっきりした襟元に。紺を白に合わせたり、明るい色をチャコールに添えたり、服に合わせて色を選ぶ楽しみもあります。"
+        }
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "becos-checos-japanese-apricot",
+      "url": "https://en.thebecos.com/products/s0050-015?currency=USD",
+      "title": "BECOS — CHECOS Japanese apricot silver flower earrings",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Same product handle s0050-015; maker CHECOS; origin Ishikawa; technique Silver wire work; materials silver; displayed USD180 and Backorder OK observed in fresh Chrome.",
+        "Listed diameter 0.7 cm. Silver is listed; purity and the material assigned to each fitting component are not specified. The listing states 1 g without identifying whether that means one earring or the pair. The fine details can catch on hair or fibers. Avoid force and follow the maker’s silver-care instructions.",
+        "Official photos visually reviewed in-browser: Small silvery-white flower with roughly five softly rounded, shallowly sculpted petals, delicate linear texture and a tiny center; sits close to the lobe in official styling. Do not infer precise closure from the photo. Pair an original illustration with a fictional Japanese woman aged32, friendly natural smile, side-part shoulder-length hair and crisp pale-blue shirt."
+      ]
+    },
+    {
+      "id": "becos-checos-japanese-apricot-ja",
+      "url": "https://www.thebecos.com/products/s0050-015",
+      "title": "BECOS — 【ピアス】Japanese apricot | 銀細工 | CHECOS",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Japanese same-handle product explicitly marked ピアス; origin, technique, material list and sizes corroborate the English listing. Current tax-included price JPY16500 and お取り寄せ品（注文可能） observed in fresh Chrome. Price is a separate storefront price, not a currency conversion."
+      ]
+    },
+    {
+      "id": "checos-brand",
+      "url": "https://en.thebecos.com/collections/checos",
+      "title": "BECOS — CHECOS | Silver wire work",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "CHECOS describes silver and brass jewelry made with engraving and silver wirework, inspired by flowers, snow and natural forms. No founder timeline is imported because dates in the English biography are internally inconsistent."
+      ]
+    },
+    {
+      "id": "becos-morphosphere-ultramarine-pansy",
+      "url": "https://en.thebecos.com/products/s0124-032?currency=USD",
+      "title": "BECOS — Morphosphere tint ultramarine pansy earrings",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Same product handle s0124-032; maker Morphosphere; origin Kyoto; technique Kyoto Yuzen dyeing; materials cotton, polyester, gold-filled; displayed USD50.4 and Backorder OK observed in fresh Chrome.",
+        "Listed W5.0 × D5.0 cm, chain5.0 cm. The listing does not distinguish an overall drop length. The material list includes cotton, polyester and 14kgf. It does not assign each material to a specific component. The listing states 1 g without identifying a per-ear or pair basis. The maker advises against water washing or wiping with water/detergent. Fabric and pattern placement may vary.",
+        "Official photos visually reviewed in-browser: A single vivid ultramarine/royal-blue embroidered-lace pansy silhouette with a dark near-black center, hanging well below the lobe from a fine gold-colored chain. Flat textile petal texture, not glass or ceramic. "
+      ]
+    },
+    {
+      "id": "becos-morphosphere-ultramarine-pansy-ja",
+      "url": "https://www.thebecos.com/products/s0124-032",
+      "title": "BECOS — 【ピアス】tint パンジー 群青 | 京友禅 | Morphosphere",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Japanese same-handle product explicitly marked ピアス; origin, technique, material list and sizes corroborate the English listing. Current tax-included price JPY4620 and お取り寄せ品（注文可能） observed in fresh Chrome. Price is a separate storefront price, not a currency conversion."
+      ]
+    },
+    {
+      "id": "morphosphere-brand",
+      "url": "https://en.thebecos.com/collections/morphosphere",
+      "title": "BECOS — Morphosphere | Kyoto Yuzen dyeing",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Morphosphere describes tint as dyed-and-embroidered lace accessories and presents Yuzen colors through contemporary objects. The brand describes Yuzen training and a2019 launch."
+      ]
+    },
+    {
+      "id": "becos-kato-suke-drop",
+      "url": "https://en.thebecos.com/products/s0087-093?currency=USD",
+      "title": "BECOS — Kato Shippo SUKE cloisonne drop earrings",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Same product handle s0087-093; maker KATO SHIPPO SEISAKUSYO; origin Aichi; technique Owari cloisonne; materials silver, copper, enamel-glaze, alloy, titanium; displayed USD168 and Backorder OK observed in fresh Chrome.",
+        "Listed W1.2 × H2.0 cm; the listing does not separately identify the length including fittings. Silver, copper, glazes and alloys are listed; the product notes identify titanium piercing fittings. Component coverage beyond that is not specified. Six colors are listed. This product handle covers the color variants, rather than a single fixed color. Weight is not supplied. The glassy surface needs protection from strong impact and heat. Titanium fittings do not establish that the entire item is hypoallergenic.",
+        "Official photos visually reviewed in-browser: A glossy teardrop enclosed by a fine silver-colored rim, deep blue or green translucent color with mottled/foil-like reflections under glassy glaze, short silver-colored hook-like fitting. Official gallery shows six color options. "
+      ]
+    },
+    {
+      "id": "becos-kato-suke-drop-ja",
+      "url": "https://www.thebecos.com/products/s0087-093",
+      "title": "BECOS — 【ピアス】雫透 (Suke) 全6色 | 無線銀貼七宝",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Japanese same-handle product explicitly marked ピアス; origin, technique, material list and sizes corroborate the English listing. Current tax-included price JPY15400 and お取り寄せ品（注文可能） observed in fresh Chrome. Price is a separate storefront price, not a currency conversion."
+      ]
+    },
+    {
+      "id": "kato-shippo-brand",
+      "url": "https://en.thebecos.com/collections/kato-shippo-seisakusyo",
+      "title": "BECOS — KATO SHIPPO SEISAKUSYO | Owari cloisonne",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "The brand describes its workshop in Nagoya and Owari cloisonne production. General craft designation and maker qualifications are not treated as individual product certification."
+      ]
+    }
+  ],
+  "localizedPriceProposal": {
+    "checos-japanese-apricot-pierced-earrings": {
+      "ja": {
+        "priceAmount": 16500,
+        "priceCurrency": "JPY",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "日本語公式ストアの税込表示価格（確認：2026-11-16）。"
+      }
+    },
+    "morphosphere-ultramarine-pansy-pierced-earrings": {
+      "ja": {
+        "priceAmount": 4620,
+        "priceCurrency": "JPY",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "日本語公式ストアの税込表示価格（確認：2026-11-16）。"
+      }
+    },
+    "kato-suke-drop-pierced-earrings": {
+      "ja": {
+        "priceAmount": 15400,
+        "priceCurrency": "JPY",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "日本語公式ストアの税込表示価格（確認：2026-11-16）。"
+      }
+    }
+  },
+  "localizedRetailerProposal": {
+    "checos-japanese-apricot-pierced-earrings": {
+      "ja": {
+        "merchantId": "becos-ja",
+        "officialProductUrl": "https://www.thebecos.com/products/s0050-015",
+        "programId": null
+      }
+    },
+    "morphosphere-ultramarine-pansy-pierced-earrings": {
+      "ja": {
+        "merchantId": "becos-ja",
+        "officialProductUrl": "https://www.thebecos.com/products/s0124-032",
+        "programId": null
+      }
+    },
+    "kato-suke-drop-pierced-earrings": {
+      "ja": {
+        "merchantId": "becos-ja",
+        "officialProductUrl": "https://www.thebecos.com/products/s0087-093",
+        "programId": null
+      }
+    }
+  },
+  "internalVisualReview": {
+    "screenshots": [
+      "artifacts/research-v7-metal/s0050-015.png",
+      "artifacts/research-v7-metal/s0124-032.png",
+      "artifacts/research-v7-metal/s0087-093.png"
+    ],
+    "publicUse": "Official images not copied into public or source delivery. AI reference descriptions are general design cues, not a product-reproduction claim.",
+    "checos-japanese-apricot-pierced-earrings": "Small silvery-white flower with roughly five softly rounded, shallowly sculpted petals, delicate linear texture and a tiny center; sits close to the lobe in official styling. Do not infer precise closure from the photo. Pair an original illustration with a fictional Japanese woman aged32, friendly natural smile, side-part shoulder-length hair and crisp pale-blue shirt.",
+    "morphosphere-ultramarine-pansy-pierced-earrings": "A single vivid ultramarine/royal-blue embroidered-lace pansy silhouette with a dark near-black center, hanging well below the lobe from a fine gold-colored chain. Flat textile petal texture, not glass or ceramic. For an original illustration use a fictional Japanese woman aged33 with an expressive cute face, loose dark ponytail and ivory knit or simple white tee.",
+    "kato-suke-drop-pierced-earrings": "A glossy teardrop enclosed by a fine silver-colored rim, deep blue or green translucent color with mottled/foil-like reflections under glassy glaze, short silver-colored hook-like fitting. Official gallery shows six color options. For original AI styling choose green to differ from the blue textile flower: fictional Japanese woman aged34, distinctive short dark hair, relaxed confident expression and a cream or soft-beige blouse."
+  },
+  "unresolved": [
+    "All weights: per-ear/pair basis unconfirmed.",
+    "CHECOS silver purity and exact fitting component coverage unconfirmed. EN title Japanese apricot and Japanese description peach wording differ; public Japanese copy uses generic flower.",
+    "Morphosphere 14kgf component coverage and exact fitting mechanism unconfirmed; no hypoallergenic or wear-comfort claim imported.",
+    "Kato product handle s0087-093 covers six color variants with variant SKUs s0087-094 through s0087-099. No single color is represented as the sole product. Weight is blank.",
+    "Current product bodies say Backorder OK / お取り寄せ品 even when generic JSON-LD says InStock; body status takes precedence.",
+    "Rejected Nousaku candidate s0084-016: current product URL404, old blog remains. Not included."
+  ]
+}

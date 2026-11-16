@@ -12,7 +12,7 @@ const runId = new Date().toISOString().replace(/[:.]/g, '-');
 const runRoot = resolve(artifacts, runId);
 if (!runRoot.startsWith(artifacts + sep) || !isAbsolute(runRoot)) throw new Error('Fixture directory must stay inside the project artifacts directory.');
 mkdirSync(runRoot, { recursive: true });
-const reportPath = resolve(root, process.env.CHECK_AD_REPORT_PATH || 'docs/clear-stage-ad-build-results.json');
+const reportPath = resolve(root, process.env.CHECK_AD_REPORT_PATH || 'docs/discovery-stage-ad-build-results.json');
 const readJson = file => JSON.parse(readFileSync(file, 'utf8'));
 const writeJson = (file, value) => writeFileSync(file, JSON.stringify(value, null, 2) + '\n');
 const walk = directory => existsSync(directory) ? readdirSync(directory, { withFileTypes: true }).flatMap(entry => entry.isDirectory() ? walk(resolve(directory, entry.name)) : [resolve(directory, entry.name)]) : [];
@@ -22,6 +22,14 @@ const distDigest = () => {
   return digest.digest('hex');
 };
 const originalCatalog = readFileSync(resolve(root, 'src/data/catalog.json'));
+const sourceCatalog=JSON.parse(originalCatalog);
+const relatedFixturePage='en/objects/hamamatsuya-surgical-stainless-pierced-earrings/index.html';
+const currentPagePath=resolve(root,'dist',relatedFixturePage);
+if(!existsSync(currentPagePath))throw new Error('Build the stable production site before testing related-product advertisements.');
+const currentRelated=readFileSync(currentPagePath,'utf8').match(/<section\b[^>]*class="[^"]*\brelated\b[^"]*"[^>]*>([\s\S]*?)<\/section>/i)?.[1]||'';
+const relatedSlug=currentRelated.match(/href="[^"]*\/en\/objects\/([a-z0-9-]+)\//)?.[1];
+const relatedTarget=sourceCatalog.products.find(product=>product.publishStatus==='published'&&product.slug===relatedSlug);
+if(!relatedTarget)throw new Error('A rendered related product is required for the advertisement fixture.');
 const rootDistBefore = distDigest();
 const results = {
   checkedAt: new Date().toISOString(),
@@ -44,7 +52,7 @@ function fixture(name) {
   if (readdirSync(directory).some(name => /^\.env(?:\.|$)/.test(name))) throw new Error('An environment file was copied into a fixture.');
   const catalog = readJson(resolve(directory, 'src/data/catalog.json'));
   // Use a test-only identity, never a real BECOS/Millennium agreement.
-  catalog.programs.push({ id: 'test-only-build-program', name: 'TEST ONLY — isolated affiliate build fixture', description: 'Synthetic program used only in ignored local test copies; no real merchant agreement.', recruitmentUrl: 'https://affiliate-build-test.invalid/program', applicationUrl: null, recruitmentStatus: 'uncertain', applicationStatus: 'approved', merchantIds: ['hamamatsuya', 'hakone-maruyama'], affiliateAllowedHosts:['affiliate-build-test.invalid'], disclosure: 'TEST ONLY: this isolated fixture demonstrates a commission-bearing link; it is not a real partnership.' });
+  catalog.programs.push({ id: 'test-only-build-program', name: 'TEST ONLY — isolated affiliate build fixture', description: 'Synthetic program used only in ignored local test copies; no real merchant agreement.', recruitmentUrl: 'https://affiliate-build-test.invalid/program', applicationUrl: null, recruitmentStatus: 'uncertain', applicationStatus: 'approved', merchantIds: catalog.merchants.map(merchant=>merchant.id), affiliateAllowedHosts:['affiliate-build-test.invalid'], disclosure: 'TEST ONLY: this isolated fixture demonstrates a commission-bearing link; it is not a real partnership.' });
   const draft = { ...structuredClone(catalog.products[0]), id: 'test-only-draft-object', slug: 'test-only-draft-object', title: 'TEST ONLY draft object', publishStatus: 'draft' };
   catalog.products.push(draft);
   writeFileSync(resolve(directory, 'src/content/products/test-only-draft-object.md'), '---\nproductId: test-only-draft-object\npublishStatus: draft\n---\n\nTest fixture. Never publish.\n');
@@ -52,7 +60,7 @@ function fixture(name) {
   return { directory, catalog };
 }
 function approve(catalog, id) {
-  const link = catalog.links.find(link => link.productId === id);
+  const link = catalog.links.find(link => link.productId === id && (!link.locale || link.locale === 'en'));
   if (!link) throw new Error('Missing fixture product ' + id);
   Object.assign(link, { programId: 'test-only-build-program', applicationStatus: 'approved', affiliateUrl: `https://affiliate-build-test.invalid/track/${id}`, affiliateLinkVerifiedAt: '2026-11-16' });
   return link;
@@ -86,6 +94,9 @@ function analyze(directory, targetIds, ordinaryRoute, publicMetadata = false) {
     }
     if (html.includes('test-only-draft-object') || html.includes('test-only-draft-guide')) errors.push(`${relative(dist, file)}: draft text or route leaked`);
   }
+  const fixtureCatalog=readJson(resolve(directory,'src/data/catalog.json'));
+  const englishOnly=targetIds.filter(id=>fixtureCatalog.links.some(link=>link.productId===id&&link.locale==='en'&&link.applicationStatus==='approved'));
+  for(const file of walk(resolve(dist,'ja')).filter(file=>file.endsWith('.html'))){const html=readFileSync(file,'utf8');for(const id of englishOnly)if(html.includes('https://affiliate-build-test.invalid/track/'+id))errors.push(relative(dist,file)+': English-only approval leaked into Japanese page');}
   const sitemap = readFileSync(resolve(dist, 'sitemap.xml'), 'utf8');
   if (/\/journal\//.test(sitemap)) errors.push('Retired reading routes present in sitemap');
   if (/\/(?:en|ja)\/contact\//.test(sitemap)) errors.push('Deferred Contact route present in sitemap');
@@ -121,7 +132,7 @@ function analyze(directory, targetIds, ordinaryRoute, publicMetadata = false) {
   return { status: errors.length ? 'failed' : 'passed', sponsoredCount, sponsoredPages, drafts: 'Draft object and guide absent from generated pages, markup and sitemap when passed.', publicMetadata: publicMetadata ? 'Test-only public URL/base, canonical, OGP, sitemap and robots assertions; does not establish a successful deployment.' : 'Preview noindex/canonical/sitemap rules checked by generated-site checker.', errors };
 }
 const scenarios = [
-  { name: 'approved-related-product-only', targetIds: ['hamamatsuya-clip'], page: 'en/objects/hamamatsuya-surgical-stainless-pierced-earrings/index.html', mutate(catalog) { approve(catalog, 'hamamatsuya-clip'); } },
+  { name: 'approved-related-product-only', targetIds: [relatedTarget.id], page: relatedFixturePage, mutate(catalog) { approve(catalog, relatedTarget.id); } },
   { name: 'approved-lower-retailer-section-only', targetIds: ['maruyama-clip-c'], page: 'en/places/kanagawa/index.html', mutate(catalog) { approve(catalog, 'maruyama-clip-c'); } },
   { name: 'paused-and-missing-url-fallback', targetIds: [], page: 'en/objects/hamamatsuya-yosegi-non-pierced-earrings/index.html', mutate(catalog) {
     approve(catalog, 'hamamatsuya-clip').applicationStatus = 'paused';
@@ -138,7 +149,7 @@ const scenarios = [
 ];
 try {
   for (const scenario of scenarios) {
-    const result = { name: scenario.name, status: 'running' };
+    const result = { name: scenario.name, status: 'running', targetIds:scenario.targetIds, relatedFixturePage:scenario.name==='approved-related-product-only'?relatedFixturePage:undefined };
     results.scenarios.push(result); progress();
     const { directory, catalog } = fixture(scenario.name);
     scenario.mutate(catalog);

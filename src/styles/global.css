@@ -104,7 +104,7 @@ html[lang=ja] .eyebrow{letter-spacing:1.3px}
 .collection-context summary{font-size:14px}
 .collection-context .prose{max-width:800px;padding-top:22px}
 .product-card .pattern-art{aspect-ratio:1}
-.product-card .card-art-link figcaption{min-height:58px}
+.product-card .card-art-link figcaption{min-height:0}
 @media(max-width:720px){
  .selection-hero{grid-template-columns:1fr;gap:32px;padding-block:32px 36px}
  .selection-hero h1{font-size:44px;letter-spacing:-1px;margin:20px 0}
@@ -209,3 +209,10 @@ html[lang=ja] .purchase-story h2,html[lang=ja] .purchase-next h2{letter-spacing:
 
 .purchase-intro h1,.purchase-next h2{text-wrap:balance}
 @media(max-width:720px){.purchase-breadcrumbs{padding-top:16px}.purchase-product-name{margin:7px 0}.purchase-intro h1{margin-bottom:18px}.purchase-visual{margin-bottom:16px}.purchase-visual .editorial-image img{aspect-ratio:1.65}.purchase-standfirst{line-height:1.75}.purchase-price-note{margin-bottom:10px}.disclosure.disclosure-compact{margin-top:10px}.purchase-primary .retailer-link{padding:14px 20px;min-height:52px}}
+
+/* Compact discovery links keep the current edit close to the top on phones. */
+.type-links-four{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:900px){.type-links-four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.selection-categories .type-links{grid-template-columns:repeat(2,minmax(0,1fr))}.selection-categories .type-links>a{padding:17px 9px;gap:9px;min-height:94px;font-size:12px}.selection-categories .type-icon{font-size:29px}.selection-categories .type-links small{font-size:9px}.selection-categories .type-links>a>span:last-child{font-size:12px}}
+
+.purchase-visual .editorial-image[data-preserve-ratio] img{aspect-ratio:1.5}

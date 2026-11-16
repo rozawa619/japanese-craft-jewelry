@@ -40,6 +40,10 @@ try{
     assert.equal(/"@type"\s*:\s*"Article"/.test(html),false);
     assert.equal(/data-sponsored="true"/.test(html),false);
     assert.equal(/href="[^"#]*\/(?:en|ja)\/contact\//.test(html),false);
+    const links=[...html.matchAll(/<link\b((?:"[^"]*"|'[^']*'|[^'">])*)>/gi)].map(m=>attrs(m[1]));
+    const english=location.replace('/ja/','/en/');assert.ok(links.some(link=>link.hreflang==='x-default'&&link.href===english),'Missing matching English x-default');
+    const locale=location.includes('/ja/')?'ja':'en';
+    for(const caption of [...html.matchAll(/<figure\b[^>]*data-editorial-asset[^>]*>([\s\S]*?)<\/figure>/gi)].map(match=>match[1].match(/<figcaption[^>]*>([\s\S]*?)<\/figcaption>/i)?.[1].replace(/<[^>]+>/g,'').trim()))assert.equal(caption,locale==='ja'?'AIイメージ':'AI image');
     const csp=metas.find(m=>m['http-equiv']?.toLowerCase()==='content-security-policy')?.content||'';
     for(const directive of ["default-src 'self'","object-src 'none'","base-uri 'none'","form-action 'none'","frame-src 'none'","connect-src 'none'"])assert.ok(csp.includes(directive),location+' '+directive);
     assert.equal(/script-src[^;]*(?:unsafe-inline|unsafe-eval)/.test(csp),false);
@@ -74,11 +78,12 @@ try{
    await page.goto(url(locale,'about/'));const about=await page.locator('main').innerText();assert.match(about,/SORA/);assert.doesNotMatch(about,/rozawa619/);
    await page.goto(url(locale));
    for(const material of ['wood','glass','porcelain'])assert.ok(await page.locator('a[href*="material='+material+'"]').count()>0,material);
+   const cards=await page.locator('[data-product-card]').evaluateAll(nodes=>nodes.map(node=>(node.getAttribute('data-material')||'').split(' ')));assert.ok(cards.filter(ids=>!ids.includes('wood')).length>=4,'Home must lead with non-wood choices');
    await page.goto(url(locale,'editorial-policy/'));const text=await page.locator('main').innerText();
    assert.doesNotMatch(text,/SDD|programId|approved|affiliateUrl|GitHub Issues|販売・決済・発送|The retailer handles/i);
    return {operator:'SORA',materialLinks:['wood','glass','porcelain'],policyCharacters:text.length,policyText:text};
   });
-  for(const id of ['rinzen-seika-amber-pierced-earrings','six-kiln-half-moon-earrings','hamamatsuya-pendant'])await check(locale+' final facts '+id,async()=>{
+  for(const id of ['rinzen-seika-amber-pierced-earrings','six-kiln-half-moon-earrings','hamamatsuya-pendant',...catalog.products.filter(product=>product.publishStatus==='published'&&product.productType.includes('bracelet')&&product.weightPerPieceGrams===null).map(product=>product.id)])await check(locale+' final facts '+id,async()=>{
    const product=catalog.products.find(product=>product.id===id),localized=locale==='ja'?translations.products[id]:product;
    const response=await page.goto(url(locale,'objects/'+product.slug+'/'));assert.equal(response.status(),200);
    const details=page.locator('[data-product-details]');assert.equal(await details.evaluate(n=>n.open),false);
@@ -86,8 +91,11 @@ try{
    const text=(await details.innerText()).replace(/\s+/g,' ');
    for(const note of localized.whatToCheck)assert.ok(text.includes(note.replace(/\s+/g,' ')),note);
    assert.doesNotMatch(text,/送料|発送|返品|配送|shipping|returns|refunds/i);
-   const weight=await details.locator('dt').filter({hasText:locale==='ja'?/^重さ$/:/^Weight$/}).locator('..').locator('dd').innerText();
-   const necklace=product.productType.includes('necklace'),expected=locale==='ja'?(necklace?'重さは未確認':'片耳の重さは未確認'):(necklace?'Weight not confirmed':'Per-ear weight not confirmed');assert.equal(weight,expected);
+   const weightRow=details.locator('dt').filter({hasText:locale==='ja'?/^重さ$/:/^Weight$/}).locator('..');
+   const ear=product.productType.some(type=>['pierced-earrings','clip-on-earrings'].includes(type));
+   let weight=null;
+   if(!ear&&product.weightPerPieceGrams===null)assert.equal(await weightRow.count(),0,'Non-earring unnormalized weight should stay in the source notes.');
+   else{weight=await weightRow.locator('dd').innerText();assert.equal(weight,locale==='ja'?'片耳の重さは未確認':'Per-ear weight not confirmed')}
    assert.equal(await page.locator('summary').filter({hasText:/shipping|returns|配送|返品|送料/i}).count(),0);
    return {weight,materialNotes:localized.whatToCheck};
   });
@@ -95,5 +103,5 @@ try{
  await check('No hosted CSP/client/console errors during supplemental navigation',()=>{assert.deepEqual(report.pageErrors,[]);assert.deepEqual(report.consoleErrors,[])});
 }finally{
  await browser.close();report.completedAt=new Date().toISOString();report.finalizedAt=report.completedAt;report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,canonicalUrls:report.pages.length,uniqueImages:report.assets.length,pageErrors:report.pageErrors.length,consoleErrors:report.consoleErrors.length};
- await writeFile(resolve(root,process.env.CHECK_HOSTED_REPORT_PATH||'docs/clear-stage-hosted-supplement-results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report.summary));if(report.failures.length)process.exitCode=1;
+ await writeFile(resolve(root,process.env.CHECK_HOSTED_REPORT_PATH||'docs/discovery-stage-hosted-supplement-results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report.summary));if(report.failures.length)process.exitCode=1;
 }

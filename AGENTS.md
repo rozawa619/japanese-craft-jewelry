@@ -1,7 +1,7 @@
 # 次のAIへの開始手順
 
 1. `README.md`、`docs/handoff.md`、`docs/constitution.md` を読み、現在の公開・申請状態を確認する。
-2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/006-clear-craft-selection/` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
+2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/007-balanced-jewelry-discovery/` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
 3. `src/lib/schema.ts`、`src/data/catalog.json`、`src/lib/affiliate.ts`、`src/content.config.ts` を読み、既存の分離を維持する。
 4. 変更後はリスクに応じた検証を実行し、仕様・タスク・変更履歴・引継ぎを実態に合わせて更新する。公開や提携承認を推測しない。
 
@@ -50,3 +50,6 @@ Node.js 24.22.1以上、pnpm 11.25.0。初回は `pnpm install --frozen-lockfile
 
 ## 0.6以降の公開方針
 ユーザー最新指示によりContactは非公開・導線なし。販売/決済/発送/返品の責任説明は公開UIから除く。注文機能自体は設けない。広告・AI非実物表示は維持。木/ガラス/磁器の実商品を紹介し、申請条件の未確認事項はdocs/pre-application-checklist.mdへ分離。旧Contact必須規定より006を優先する。
+
+## 0.7以降の表示と日英導線
+画像captionはユーザーの最新指示によりAIイメージ/AI imageのみ。旧003/006の長い非実物caption要件より007を優先。内部台帳はAIと実物仕様を分離したまま。モデルは30代前後、木以外も充実。rootは日英選択しやすい入口で強制転送しない。BECOSは確認済の同一SKU別市場実価格をcatalog.localizedPrices.jaへ、link.localeで通常URLと広告を別言語へ混在させない。JAprogramnullにEN承認を流用しない。価格の端数を保持する。

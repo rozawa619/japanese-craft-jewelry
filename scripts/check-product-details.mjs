@@ -7,10 +7,10 @@ const root=fileURLToPath(new URL('../',import.meta.url));
 const origin=new URL(process.env.CHECK_BASE_URL||'http://127.0.0.1:4322').origin;
 const baseParts=(process.env.PUBLIC_BASE_PATH||'/japanese-craft-jewelry/').split('/').filter(Boolean);
 const base='/'+baseParts.join('/')+(baseParts.length?'/':'');
-const screenshotPrefix=(process.env.CHECK_SCREENSHOT_PREFIX||'clear-stage-final').replace(/[^a-zA-Z0-9_-]/g,'-');
+const screenshotPrefix=(process.env.CHECK_SCREENSHOT_PREFIX||'discovery-stage-final').replace(/[^a-zA-Z0-9_-]/g,'-');
 const catalog=JSON.parse(await readFile(resolve(root,'src/data/catalog.json'),'utf8'));
 const ja=JSON.parse(await readFile(resolve(root,'src/data/translations/ja.json'),'utf8'));
-const ids=['rinzen-seika-amber-pierced-earrings','six-kiln-half-moon-earrings','hamamatsuya-pendant'];
+const ids=['rinzen-seika-amber-pierced-earrings','six-kiln-half-moon-earrings','hamamatsuya-pendant',...catalog.products.filter(product=>product.publishStatus==='published'&&product.productType.includes('bracelet')&&product.weightPerPieceGrams===null).map(product=>product.id)];
 const report={checkedAt:new Date().toISOString(),method:'Focused final-build follow-up after restoring factual material/finish notes and distinguishing unknown per-ear weight from an unknown necklace weight. Fresh headless Chrome, no retailer navigation, no application or form submission. Complements the full browser pass and isolated advertisement builds; does not relabel their earlier build as this build.',origin,base,checks:[],screenshots:[],pageErrors:[],consoleErrors:[],failures:[]};
 await mkdir(resolve(root,'artifacts'),{recursive:true});
 const browser=await chromium.launch({channel:'chrome',headless:true});
@@ -36,7 +36,7 @@ try{
     assert.equal(await primary.isVisible(),true);
     assert.equal(await price.isVisible(),true);
     for(const locator of [primary,price])assert.equal(await locator.evaluate(n=>!!(n.compareDocumentPosition(document.querySelector('details[data-product-details]'))&Node.DOCUMENT_POSITION_FOLLOWING)),true);
-    const destination=catalog.links.find(l=>l.productId===id).officialProductUrl;
+    const destination=catalog.links.find(l=>l.productId===id&&(!l.locale||l.locale===locale)).officialProductUrl;
     assert.equal(await primary.getAttribute('href'),destination);
     for(const link of await page.locator('a[data-sponsored]').all()){
      assert.equal(await link.getAttribute('data-sponsored'),'false');
@@ -49,10 +49,11 @@ try{
     if(await sticky.count())await sticky.waitFor({state:'hidden'});
     await details.locator('summary').focus();await page.keyboard.press('Enter');
     await page.waitForFunction(()=>document.querySelector('details[data-product-details]').open);
-    const weight=await details.locator('dt').filter({hasText:locale==='ja'?/^重さ$/:/^Weight$/}).locator('..').locator('dd').innerText();
-    const necklace=product.productType.includes('necklace');
-    const expected=locale==='ja'?(necklace?'重さは未確認':'片耳の重さは未確認'):(necklace?'Weight not confirmed':'Per-ear weight not confirmed');
-    assert.equal(weight,expected);
+    const weightRow=details.locator('dt').filter({hasText:locale==='ja'?/^重さ$/:/^Weight$/}).locator('..');
+    const ear=product.productType.some(type=>['pierced-earrings','clip-on-earrings'].includes(type));
+    let weight=null;
+    if(!ear&&product.weightPerPieceGrams===null)assert.equal(await weightRow.count(),0,'Unnormalized total weight belongs in the source notes, not an unknown per-ear row.');
+    else{weight=await weightRow.locator('dd').innerText();assert.equal(weight,locale==='ja'?'片耳の重さは未確認':'Per-ear weight not confirmed')}
     const text=(await details.innerText()).replace(/\s+/g,' ');
     for(const note of localized.whatToCheck)assert.ok(text.includes(note.replace(/\s+/g,' ')),note);
     assert.doesNotMatch(text,/送料|発送|返品|配送|shipping|returns|refunds/i);
@@ -65,7 +66,8 @@ try{
     if(locale==='ja'&&viewport.width===390){
      for(const image of await page.locator('img').all()){await image.scrollIntoViewIfNeeded();await image.evaluate(n=>n.decode());}
      await details.scrollIntoViewIfNeeded();
-     await page.evaluate(()=>document.activeElement instanceof HTMLElement&&document.activeElement.blur());
+     await page.evaluate(()=>{if(document.activeElement instanceof HTMLElement)document.activeElement.blur();scrollTo(0,0)});
+     await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
      const file='artifacts/'+screenshotPrefix+'-'+id+'-ja-mobile-details.png';
      await page.screenshot({path:resolve(root,file),fullPage:true});report.screenshots.push(file);
     }
@@ -82,6 +84,6 @@ try{
 finally{
  await browser.close();report.completedAt=new Date().toISOString();report.finalizedAt=report.completedAt;
  report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,screenshots:report.screenshots.length,pageErrors:report.pageErrors.length,consoleErrors:report.consoleErrors.length};
- await writeFile(resolve(root,process.env.CHECK_DETAIL_REPORT_PATH||'docs/clear-stage-final-detail-results.json'),JSON.stringify(report,null,2)+'\n');
+ await writeFile(resolve(root,process.env.CHECK_DETAIL_REPORT_PATH||'docs/discovery-stage-final-detail-results.json'),JSON.stringify(report,null,2)+'\n');
  console.log(JSON.stringify(report.summary));if(report.failures.length)process.exitCode=1;
 }

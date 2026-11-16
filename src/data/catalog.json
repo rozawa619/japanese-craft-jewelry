@@ -14,6 +14,21 @@
       "id": "saga",
       "name": "Saga",
       "description": "Porcelain jewelry from 6.KILN, a brand connected to Seiroku kiln in Arita, Saga."
+    },
+    {
+      "id": "ishikawa",
+      "name": "Ishikawa",
+      "description": "Selected silver wire work jewelry identified with Ishikawa in the product origin information."
+    },
+    {
+      "id": "kyoto",
+      "name": "Kyoto",
+      "description": "Selected kyoto yuzen dyeing jewelry identified with Kyoto in the product origin information."
+    },
+    {
+      "id": "aichi",
+      "name": "Aichi",
+      "description": "Selected owari cloisonne jewelry identified with Aichi in the product origin information."
     }
   ],
   "crafts": [
@@ -42,6 +57,33 @@
       "sourceIds": [
         "six-kiln-brand",
         "becos-six-kiln-half-moon"
+      ]
+    },
+    {
+      "id": "silver-work",
+      "name": "Silver wire work",
+      "description": "The specific product identifies Ishikawa as its origin. CHECOS describes silver wire work and engraving inspired by natural forms; individual component origins and certification are not established.",
+      "sourceIds": [
+        "becos-checos-japanese-apricot",
+        "checos-brand"
+      ]
+    },
+    {
+      "id": "kyoto-yuzen",
+      "name": "Kyoto Yuzen dyeing",
+      "description": "The product identifies Kyoto as its origin. Morphosphere’s tint collection combines Yuzen dyeing with embroidered lace; no claim of individual traditional-craft certification is made.",
+      "sourceIds": [
+        "becos-morphosphere-ultramarine-pansy",
+        "morphosphere-brand"
+      ]
+    },
+    {
+      "id": "owari-cloisonne",
+      "name": "Owari cloisonne",
+      "description": "The product identifies Aichi as its origin. The brand page describes the Nagoya workshop and its Owari cloisonne practice. Individual certification and component origins are not established.",
+      "sourceIds": [
+        "becos-kato-suke-drop",
+        "kato-shippo-brand"
       ]
     }
   ],
@@ -80,6 +122,51 @@
       "id": "resin",
       "name": "Resin",
       "description": "Resin is listed for the selected 6.KILN item; component-by-component coverage is not specified."
+    },
+    {
+      "id": "plated-brass",
+      "name": "Plated brass",
+      "description": "Named for the bail and adjuster of the selected RINZEN leaf pendant; no plating composition is specified."
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "description": "Silver is named by the listing; purity is not established."
+    },
+    {
+      "id": "cotton",
+      "name": "Cotton",
+      "description": "Cotton is named in the textile accessory material list."
+    },
+    {
+      "id": "polyester",
+      "name": "Polyester",
+      "description": "Polyester is named in the textile accessory material list."
+    },
+    {
+      "id": "gold-filled",
+      "name": "14K gold-filled",
+      "description": "Listed as14kgf; this is not a solid-gold claim or a per-component guarantee."
+    },
+    {
+      "id": "copper",
+      "name": "Copper",
+      "description": "Copper is named in the selected cloisonne listing."
+    },
+    {
+      "id": "enamel-glaze",
+      "name": "Enamel glaze",
+      "description": "Glassy glaze is named in the selected cloisonne description."
+    },
+    {
+      "id": "alloy",
+      "name": "Alloy",
+      "description": "Alloy is named without exact composition in the selected listing."
+    },
+    {
+      "id": "titanium",
+      "name": "Titanium",
+      "description": "Titanium piercing fittings are identified for the selected Kato item."
     }
   ],
   "productTypes": [
@@ -98,6 +185,10 @@
     {
       "id": "hair-accessory",
       "name": "Hair accessories"
+    },
+    {
+      "id": "bracelet",
+      "name": "Bracelets"
     }
   ],
   "makers": [
@@ -147,6 +238,54 @@
         "six-kiln-brand",
         "becos-six-kiln-half-moon",
         "becos-six-kiln-half-moon-ja"
+      ]
+    },
+    {
+      "id": "saskia-diez-2016",
+      "name": "2016/ Saskia Diez",
+      "location": "Saga, Japan",
+      "productionNote": "The item listing identifies Saga as origin. The collection credits production to HATAMAN TOUEN and design to Saskia Diez, a designer based in Germany. Designer location is not treated as the place of manufacture.",
+      "url": "https://en.thebecos.com/collections/2016-saskia-diez",
+      "sourceIds": [
+        "saskia-diez-brand",
+        "becos-saskia-drake-cuff",
+        "becos-saskia-drake-cuff-ja"
+      ]
+    },
+    {
+      "id": "checos",
+      "name": "CHECOS",
+      "location": "Ishikawa, Japan",
+      "productionNote": "The specific product identifies Ishikawa as its origin. CHECOS describes silver wire work and engraving inspired by natural forms; individual component origins and certification are not established.",
+      "url": "https://en.thebecos.com/collections/checos",
+      "sourceIds": [
+        "becos-checos-japanese-apricot",
+        "becos-checos-japanese-apricot-ja",
+        "checos-brand"
+      ]
+    },
+    {
+      "id": "morphosphere",
+      "name": "Morphosphere",
+      "location": "Kyoto, Japan",
+      "productionNote": "The product identifies Kyoto as its origin. Morphosphere’s tint collection combines Yuzen dyeing with embroidered lace; no claim of individual traditional-craft certification is made.",
+      "url": "https://en.thebecos.com/collections/morphosphere",
+      "sourceIds": [
+        "becos-morphosphere-ultramarine-pansy",
+        "becos-morphosphere-ultramarine-pansy-ja",
+        "morphosphere-brand"
+      ]
+    },
+    {
+      "id": "kato-shippo",
+      "name": "KATO SHIPPO SEISAKUSYO",
+      "location": "Aichi, Japan",
+      "productionNote": "The product identifies Aichi as its origin. The brand page describes the Nagoya workshop and its Owari cloisonne practice. Individual certification and component origins are not established.",
+      "url": "https://en.thebecos.com/collections/kato-shippo-seisakusyo",
+      "sourceIds": [
+        "becos-kato-suke-drop",
+        "becos-kato-suke-drop-ja",
+        "kato-shippo-brand"
       ]
     }
   ],
@@ -213,6 +352,23 @@
         "becos-about",
         "becos-shipping",
         "becos-legal"
+      ]
+    },
+    {
+      "id": "becos-ja",
+      "name": "BECOS Japan",
+      "url": "https://www.thebecos.com/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Japanese storefront; item- and destination-specific delivery has not been independently reviewed.",
+        "countries": null,
+        "sourceIds": []
+      },
+      "returns": "Not independently reviewed for this storefront.",
+      "sourceIds": [
+        "becos-rinzen-seika-amber-ja",
+        "becos-six-kiln-half-moon-ja"
       ]
     }
   ],
@@ -343,7 +499,8 @@
       "officialProductUrl": "https://en.thebecos.com/products/s0138-028?currency=USD",
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
-      "affiliateLinkVerifiedAt": null
+      "affiliateLinkVerifiedAt": null,
+      "locale": "en"
     },
     {
       "id": "becos-six-kiln-half-moon-official",
@@ -351,6 +508,161 @@
       "merchantId": "becos-en",
       "programId": "becos-en",
       "officialProductUrl": "https://en.thebecos.com/products/s0164-018?currency=USD",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null,
+      "locale": "en"
+    },
+    {
+      "id": "rinzen-leaf-glass-pendant-becos-en",
+      "productId": "rinzen-leaf-glass-pendant",
+      "merchantId": "becos-en",
+      "programId": "becos-en",
+      "officialProductUrl": "https://en.thebecos.com/products/s0138-099?currency=USD",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null,
+      "locale": "en"
+    },
+    {
+      "id": "six-kiln-blue-bouquet-pierced-earrings-becos-en",
+      "productId": "six-kiln-blue-bouquet-pierced-earrings",
+      "merchantId": "becos-en",
+      "programId": "becos-en",
+      "officialProductUrl": "https://en.thebecos.com/products/s0164-016?currency=USD",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null,
+      "locale": "en"
+    },
+    {
+      "id": "saskia-diez-drake-porcelain-cuff-becos-en",
+      "productId": "saskia-diez-drake-porcelain-cuff",
+      "merchantId": "becos-en",
+      "programId": "becos-en",
+      "officialProductUrl": "https://en.thebecos.com/products/s0007-054?currency=USD",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null,
+      "locale": "en"
+    },
+    {
+      "id": "checos-s0050-015-official",
+      "productId": "checos-japanese-apricot-pierced-earrings",
+      "merchantId": "becos-en",
+      "programId": "becos-en",
+      "officialProductUrl": "https://en.thebecos.com/products/s0050-015?currency=USD",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null,
+      "locale": "en"
+    },
+    {
+      "id": "morphosphere-s0124-032-official",
+      "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "merchantId": "becos-en",
+      "programId": "becos-en",
+      "officialProductUrl": "https://en.thebecos.com/products/s0124-032?currency=USD",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null,
+      "locale": "en"
+    },
+    {
+      "id": "kato-shippo-s0087-093-official",
+      "productId": "kato-suke-drop-pierced-earrings",
+      "merchantId": "becos-en",
+      "programId": "becos-en",
+      "officialProductUrl": "https://en.thebecos.com/products/s0087-093?currency=USD",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null,
+      "locale": "en"
+    },
+    {
+      "id": "rinzen-leaf-glass-pendant-becos-ja",
+      "productId": "rinzen-leaf-glass-pendant",
+      "merchantId": "becos-ja",
+      "programId": null,
+      "locale": "ja",
+      "officialProductUrl": "https://www.thebecos.com/products/s0138-099",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "six-kiln-blue-bouquet-pierced-earrings-becos-ja",
+      "productId": "six-kiln-blue-bouquet-pierced-earrings",
+      "merchantId": "becos-ja",
+      "programId": null,
+      "locale": "ja",
+      "officialProductUrl": "https://www.thebecos.com/products/s0164-016",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "saskia-diez-drake-porcelain-cuff-becos-ja",
+      "productId": "saskia-diez-drake-porcelain-cuff",
+      "merchantId": "becos-ja",
+      "programId": null,
+      "locale": "ja",
+      "officialProductUrl": "https://www.thebecos.com/products/s0007-054",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "checos-japanese-apricot-pierced-earrings-becos-ja",
+      "productId": "checos-japanese-apricot-pierced-earrings",
+      "merchantId": "becos-ja",
+      "programId": null,
+      "locale": "ja",
+      "officialProductUrl": "https://www.thebecos.com/products/s0050-015",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "morphosphere-ultramarine-pansy-pierced-earrings-becos-ja",
+      "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "merchantId": "becos-ja",
+      "programId": null,
+      "locale": "ja",
+      "officialProductUrl": "https://www.thebecos.com/products/s0124-032",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "kato-suke-drop-pierced-earrings-becos-ja",
+      "productId": "kato-suke-drop-pierced-earrings",
+      "merchantId": "becos-ja",
+      "programId": null,
+      "locale": "ja",
+      "officialProductUrl": "https://www.thebecos.com/products/s0087-093",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "rinzen-seika-amber-pierced-earrings-becos-ja",
+      "productId": "rinzen-seika-amber-pierced-earrings",
+      "merchantId": "becos-ja",
+      "programId": null,
+      "locale": "ja",
+      "officialProductUrl": "https://www.thebecos.com/products/s0138-028",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "six-kiln-half-moon-earrings-becos-ja",
+      "productId": "six-kiln-half-moon-earrings",
+      "merchantId": "becos-ja",
+      "programId": null,
+      "locale": "ja",
+      "officialProductUrl": "https://www.thebecos.com/products/s0164-018",
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
       "affiliateLinkVerifiedAt": null
@@ -867,7 +1179,8 @@
       "taxNote": "USD storefront display checked on the stated date; tax inclusion was not established.",
       "availability": "listed",
       "merchantIds": [
-        "becos-en"
+        "becos-en",
+        "becos-ja"
       ],
       "sourceIds": [
         "becos-rinzen-seika-amber",
@@ -882,7 +1195,18 @@
         "The exact chain metal and skin-contact components are not specified in the checked product material list.",
         "The listed weight is 10 g without a clear per-ear or pair basis; full chain length is not specified.",
         "Handmade glass may vary in color, shape and weight. The glass is not heat resistant."
-      ]
+      ],
+      "localizedPrices": {
+        "ja": {
+          "amount": 26400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16",
+          "taxNote": "日本語ストアの税込表示。",
+          "sourceIds": [
+            "becos-rinzen-seika-amber-ja"
+          ]
+        }
+      }
     },
     {
       "id": "six-kiln-half-moon-earrings",
@@ -916,14 +1240,15 @@
       "size": "W 1.1 × D 1.4 × H 8 cm, as listed.",
       "weightPerPieceGrams": null,
       "findings": "The item lists porcelain clay, sv925 and resin; the material assigned to each component is not specified.",
-      "fastening": "Non-pierced earrings; the exact fitting mechanism is not specified in the checked text. A separate pierced version is a different SKU.",
+      "fastening": "Non-pierced clip fitting; the Japanese product description mentions resin on the skin-contact side.",
       "priceAmount": 108,
       "priceCurrency": "USD",
       "priceCheckedAt": "2026-11-16",
       "taxNote": "USD storefront display checked on the stated date; tax inclusion was not established.",
       "availability": "in_stock",
       "merchantIds": [
-        "becos-en"
+        "becos-en",
+        "becos-ja"
       ],
       "sourceIds": [
         "becos-six-kiln-half-moon",
@@ -936,9 +1261,423 @@
       "whoItMaySuit": "For those who like sculptural shapes, white porcelain and an accent that moves with the outfit.",
       "whatToCheck": [
         "The maker is transitioning the reverse from white to a color matched to the fittings; either version may be supplied as a matching pair.",
-        "The listing gives a weight of 8 g without clarifying whether this is per earring or per pair. Exact skin-contact component coverage is not specified.",
+        "The listing gives a weight of 8 g without clarifying whether this is per earring or per pair. The component covered by sv925 is not specified.",
         "The gold-colored surface may scratch or peel if rubbed strongly; the product page gives gentle care guidance."
-      ]
+      ],
+      "localizedPrices": {
+        "ja": {
+          "amount": 9900,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16",
+          "taxNote": "日本語ストアの税込表示。",
+          "sourceIds": [
+            "becos-six-kiln-half-moon-ja"
+          ]
+        }
+      }
+    },
+    {
+      "id": "rinzen-leaf-glass-pendant",
+      "title": "RINZEN Leaf Drop green glass pendant",
+      "originalTitle": "【ペンダント】葉の雫-ha no shizuku- | 切子",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "tokyo"
+      ],
+      "craftIds": [
+        "kiriko"
+      ],
+      "materialIds": [
+        "glass",
+        "surgical-stainless-steel",
+        "plated-brass"
+      ],
+      "makerId": "rinzen",
+      "craftClassification": {
+        "label": "Contemporary cut-glass jewelry by RINZEN, listed as kiriko. Individual Edo Kiriko certification is not claimed.",
+        "sourceIds": [
+          "becos-rinzen-leaf",
+          "rinzen-brand"
+        ]
+      },
+      "size": "Glass: W 2.2 × D 0.5 × H 3.3 cm. Chain: approximately 60 cm, as listed on the Japanese page.",
+      "weightPerPieceGrams": null,
+      "findings": "The chain is listed as surgical stainless steel; the bail and adjuster are plated brass. A specific stainless-steel grade is not stated.",
+      "fastening": null,
+      "priceAmount": 300,
+      "priceCurrency": "USD",
+      "availability": "listed",
+      "sourceIds": [
+        "becos-rinzen-leaf",
+        "becos-rinzen-leaf-ja",
+        "rinzen-brand"
+      ],
+      "editorialSummary": "Fresh green glass with a leaf-like outline: an easy color accent for charcoal, navy and a simple white shirt.",
+      "whoItMaySuit": "For someone drawn to green accents and a sculptural pendant rather than a conventional gemstone.",
+      "whatToCheck": [
+        "The listing gives a weight of 10 g without separately describing the weighing scope.",
+        "Glass color, thickness, cuts and bail size may vary; the glass is not heat resistant."
+      ],
+      "slug": "rinzen-leaf-glass-pendant",
+      "locale": "en",
+      "publishStatus": "published",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "USD display on the English BECOS storefront, checked on the stated date; tax inclusion was not established.",
+      "merchantIds": [
+        "becos-en",
+        "becos-ja"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "localizedPrices": {
+        "ja": {
+          "amount": 27500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16",
+          "taxNote": "日本語ストアの税込表示。確認日：2026-11-16。",
+          "sourceIds": [
+            "becos-rinzen-leaf-ja"
+          ]
+        }
+      }
+    },
+    {
+      "id": "six-kiln-blue-bouquet-pierced-earrings",
+      "title": "6.KILN Blue Bouquet porcelain hoop earrings",
+      "originalTitle": "【ピアス】青のbouquet | 有田焼 | 6.kiln",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "saga"
+      ],
+      "craftIds": [
+        "imari-arita-ware"
+      ],
+      "materialIds": [
+        "porcelain",
+        "surgical-stainless-steel",
+        "resin"
+      ],
+      "makerId": "six-kiln",
+      "craftClassification": {
+        "label": "Porcelain jewelry listed as Imari-Arita Wares; the design uses blue gosu pigment with a needle-drawn bouquet motif. Individual certification is not established.",
+        "sourceIds": [
+          "becos-six-kiln-blue-bouquet",
+          "becos-six-kiln-blue-bouquet-ja"
+        ]
+      },
+      "size": "Product information table: W 1 × D 1 × H 1.7 cm. The Japanese description separately gives an approximate 3 cm hoop diameter; the table dimensions should not be read as the whole hoop size.",
+      "weightPerPieceGrams": null,
+      "findings": "The specific product lists porcelain clay, surgical stainless steel and resin. Its exact stainless-steel grade and full component-by-component coverage are not specified.",
+      "fastening": "Post-and-catch pierced earrings with a removable hoop. The official update allows either the integrated or separate catch-and-hoop structure as a matching pair.",
+      "priceAmount": 72,
+      "priceCurrency": "USD",
+      "availability": "in_stock",
+      "sourceIds": [
+        "becos-six-kiln-blue-bouquet",
+        "becos-six-kiln-blue-bouquet-ja",
+        "six-kiln-brand"
+      ],
+      "editorialSummary": "A tiny blue bouquet above a clean gold-colored hoop. Try this porcelain pair with white cotton, denim or a soft navy knit.",
+      "whoItMaySuit": "For those who like floral detail, deep blue and the graphic line of a hoop.",
+      "whatToCheck": [
+        "The reverse is transitioning from white to a color matched to the fittings, and the catch-and-hoop construction is changing from integrated to separate. Either matching-pair version may be supplied.",
+        "The listed 5 g weight does not identify whether it is per earring or per pair.",
+        "The gold-colored surface can scratch or peel if rubbed strongly; the listing recommends gentle care."
+      ],
+      "slug": "six-kiln-blue-bouquet-pierced-earrings",
+      "locale": "en",
+      "publishStatus": "published",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "USD display on the English BECOS storefront, checked on the stated date; tax inclusion was not established.",
+      "merchantIds": [
+        "becos-en",
+        "becos-ja"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "localizedPrices": {
+        "ja": {
+          "amount": 6600,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16",
+          "taxNote": "日本語ストアの税込表示。確認日：2026-11-16。",
+          "sourceIds": [
+            "becos-six-kiln-blue-bouquet-ja"
+          ]
+        }
+      }
+    },
+    {
+      "id": "saskia-diez-drake-porcelain-cuff",
+      "title": "2016/ Saskia Diez Drake porcelain cuff in gray and silver",
+      "originalTitle": "【有田焼】2016/ サスキア ディーツ ブレスレット ドレーク カフ NO2 (グレイシルバー)",
+      "productType": [
+        "bracelet"
+      ],
+      "prefectureIds": [
+        "saga"
+      ],
+      "craftIds": [
+        "imari-arita-ware"
+      ],
+      "materialIds": [
+        "porcelain"
+      ],
+      "makerId": "saskia-diez-2016",
+      "craftClassification": {
+        "label": "A porcelain bracelet listed as Imari-Arita Wares. The collection takes its scale motif from Japanese decorative traditions; individual certification is not established.",
+        "sourceIds": [
+          "becos-saskia-drake-cuff",
+          "saskia-diez-brand"
+        ]
+      },
+      "size": "Listed diameter 6.5 cm × height 3.8 cm. The page does not distinguish inner and outer diameter.",
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": "A rigid porcelain bracelet. An adjustable opening or clasp is not described in the checked listing.",
+      "priceAmount": 324,
+      "priceCurrency": "USD",
+      "availability": "listed",
+      "sourceIds": [
+        "becos-saskia-drake-cuff",
+        "becos-saskia-drake-cuff-ja",
+        "saskia-diez-brand"
+      ],
+      "editorialSummary": "Glossy gray porcelain, overlapping scales and a silver-colored accent: a sculptural finish for a bare wrist or a rolled shirt cuff.",
+      "whoItMaySuit": "For a minimal wardrobe that needs one expressive shape at the wrist.",
+      "whatToCheck": [
+        "The product information lists a weight of 130 g.",
+        "The material field names porcelain. The silver color is a visual finish, not a claim that the bracelet is made of solid silver.",
+        "The listed diameter is not explicitly identified as the internal fit measurement; no adjustability is stated."
+      ],
+      "slug": "saskia-diez-drake-porcelain-cuff",
+      "locale": "en",
+      "publishStatus": "published",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "USD display on the English BECOS storefront, checked on the stated date; tax inclusion was not established.",
+      "merchantIds": [
+        "becos-en",
+        "becos-ja"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "localizedPrices": {
+        "ja": {
+          "amount": 29700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16",
+          "taxNote": "日本語ストアの税込表示。確認日：2026-11-16。",
+          "sourceIds": [
+            "becos-saskia-drake-cuff-ja"
+          ]
+        }
+      }
+    },
+    {
+      "id": "checos-japanese-apricot-pierced-earrings",
+      "slug": "checos-japanese-apricot-pierced-earrings",
+      "locale": "en",
+      "title": "CHECOS Japanese apricot silver flower earrings",
+      "originalTitle": "【ピアス】Japanese apricot | 銀細工 | CHECOS",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "ishikawa"
+      ],
+      "craftIds": [
+        "silver-work"
+      ],
+      "materialIds": [
+        "silver"
+      ],
+      "makerId": "checos",
+      "craftClassification": {
+        "label": "Silver jewelry using the maker’s silver wire-work approach; no individual traditional-craft certification claimed.",
+        "sourceIds": [
+          "becos-checos-japanese-apricot",
+          "checos-brand"
+        ]
+      },
+      "size": "Listed diameter 0.7 cm.",
+      "weightPerPieceGrams": null,
+      "findings": "Silver is listed; purity and the material assigned to each fitting component are not specified.",
+      "fastening": "Pierced earrings; exact closure is not specified in the checked text.",
+      "priceAmount": 180,
+      "priceCurrency": "USD",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "USD storefront price checked on the stated date. Tax inclusion not established.",
+      "availability": "listed",
+      "merchantIds": [
+        "becos-en",
+        "becos-ja"
+      ],
+      "sourceIds": [
+        "becos-checos-japanese-apricot",
+        "becos-checos-japanese-apricot-ja",
+        "checos-brand"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "A silver flower close to the ear, with petal details to discover up close. An understated accent for a shirt, tee or dark dress.",
+      "whoItMaySuit": "For a small floral detail and the quiet texture of silver.",
+      "whatToCheck": [
+        "The listing states 1 g without identifying whether that means one earring or the pair.",
+        "The fine details can catch on hair or fibers. Avoid force and follow the maker’s silver-care instructions."
+      ],
+      "localizedPrices": {
+        "ja": {
+          "amount": 16500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16",
+          "taxNote": "日本語公式ストアの税込表示価格（確認：2026-11-16）。",
+          "sourceIds": [
+            "becos-checos-japanese-apricot-ja"
+          ]
+        }
+      }
+    },
+    {
+      "id": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "slug": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "locale": "en",
+      "title": "Morphosphere tint ultramarine pansy earrings",
+      "originalTitle": "【ピアス】tint パンジー 群青 | 京友禅 | Morphosphere",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "kyoto"
+      ],
+      "craftIds": [
+        "kyoto-yuzen"
+      ],
+      "materialIds": [
+        "cotton",
+        "polyester",
+        "gold-filled"
+      ],
+      "makerId": "morphosphere",
+      "craftClassification": {
+        "label": "Dyed embroidered-lace jewelry listed as Kyoto Yuzen dyeing, not a claim of individual certification.",
+        "sourceIds": [
+          "becos-morphosphere-ultramarine-pansy",
+          "morphosphere-brand"
+        ]
+      },
+      "size": "Listed W5.0 × D5.0 cm, chain5.0 cm. The listing does not distinguish an overall drop length.",
+      "weightPerPieceGrams": null,
+      "findings": "The material list includes cotton, polyester and 14kgf. It does not assign each material to a specific component.",
+      "fastening": "The Japanese same-SKU listing identifies pierced earrings. Exact fastening is not specified in the checked text.",
+      "priceAmount": 50.4,
+      "priceCurrency": "USD",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "USD storefront price checked on the stated date. Tax inclusion not established.",
+      "availability": "listed",
+      "merchantIds": [
+        "becos-en",
+        "becos-ja"
+      ],
+      "sourceIds": [
+        "becos-morphosphere-ultramarine-pansy",
+        "becos-morphosphere-ultramarine-pansy-ja",
+        "morphosphere-brand"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "A vivid blue pansy made from dyed embroidered lace, suspended on a fine chain. Let one flower brighten a white tee or ivory blouse.",
+      "whoItMaySuit": "For a statement flower, a clear blue accent and the texture of embroidered lace.",
+      "whatToCheck": [
+        "The listing states 1 g without identifying a per-ear or pair basis.",
+        "The maker advises against water washing or wiping with water/detergent. Fabric and pattern placement may vary."
+      ],
+      "localizedPrices": {
+        "ja": {
+          "amount": 4620,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16",
+          "taxNote": "日本語公式ストアの税込表示価格（確認：2026-11-16）。",
+          "sourceIds": [
+            "becos-morphosphere-ultramarine-pansy-ja"
+          ]
+        }
+      }
+    },
+    {
+      "id": "kato-suke-drop-pierced-earrings",
+      "slug": "kato-suke-drop-pierced-earrings",
+      "locale": "en",
+      "title": "Kato Shippo SUKE cloisonne drop earrings",
+      "originalTitle": "【ピアス】雫透 (Suke) 全6色 | 無線銀貼七宝",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "aichi"
+      ],
+      "craftIds": [
+        "owari-cloisonne"
+      ],
+      "materialIds": [
+        "silver",
+        "copper",
+        "enamel-glaze",
+        "alloy",
+        "titanium"
+      ],
+      "makerId": "kato-shippo",
+      "craftClassification": {
+        "label": "Contemporary Owari cloisonne jewelry by Kato Shippo; no individual certification claimed.",
+        "sourceIds": [
+          "becos-kato-suke-drop",
+          "kato-shippo-brand"
+        ]
+      },
+      "size": "Listed W1.2 × H2.0 cm; the listing does not separately identify the length including fittings.",
+      "weightPerPieceGrams": null,
+      "findings": "Silver, copper, glazes and alloys are listed; the product notes identify titanium piercing fittings. Component coverage beyond that is not specified.",
+      "fastening": "Pierced earrings; exact fastening details are not specified in the checked text.",
+      "priceAmount": 168,
+      "priceCurrency": "USD",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "USD storefront price checked on the stated date. Tax inclusion not established.",
+      "availability": "listed",
+      "merchantIds": [
+        "becos-en",
+        "becos-ja"
+      ],
+      "sourceIds": [
+        "becos-kato-suke-drop",
+        "becos-kato-suke-drop-ja",
+        "kato-shippo-brand"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "Deep color inside a glossy teardrop, framed with a fine metallic edge. Choose from six colors to bring a jewel-like accent to a plain blouse.",
+      "whoItMaySuit": "For saturated color, a teardrop silhouette and the reflective surface of cloisonne.",
+      "whatToCheck": [
+        "Six colors are listed. This product handle covers the color variants, rather than a single fixed color.",
+        "Weight is not supplied. The glassy surface needs protection from strong impact and heat.",
+        "Titanium fittings do not establish that the entire item is hypoallergenic."
+      ],
+      "localizedPrices": {
+        "ja": {
+          "amount": 15400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16",
+          "taxNote": "日本語公式ストアの税込表示価格（確認：2026-11-16）。",
+          "sourceIds": [
+            "becos-kato-suke-drop-ja"
+          ]
+        }
+      }
     }
   ]
 }

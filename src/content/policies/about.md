@@ -1,20 +1,20 @@
 ---
 title: "About Japanese Craft Jewelry"
-description: "A selection of Japanese craft jewelry, chosen for its design, materials and possibilities for everyday style."
+description: "Selected earrings, necklaces and bracelets from Japan, chosen for their design, materials and everyday style."
 locale: "en"
 publishStatus: "published"
 updatedAt: "2026-11-16"
 sourceIds: []
 ---
 
-Japanese Craft Jewelry introduces earrings and necklaces connected to Japanese craft, in English and Japanese.
+Japanese Craft Jewelry introduces earrings, necklaces and bracelets connected to Japanese craft, in English and Japanese.
 
-We are drawn to the patterns of wood, the light in glass, the color of porcelain and the character of other materials. Our scope is Japan: we add pieces and regions as we find designs we want to share and information we can check.
+Wood, glass, porcelain, metal and fabric each bring a different expression to an outfit. We select pieces from across Japan and share the details that caught our eye.
 
 ## A piece to make your own
 
-Each introduction brings together what caught our eye and an idea for wearing the piece. We hope you find something that belongs with your favorite clothes.
+Each introduction includes an idea for wearing the piece with clothes you already love. Explore by type, material or region, and switch languages with the button at the top right.
 
-Some images are AI-generated outfit ideas. They are clearly labeled and are not photographs or exact reproductions of the featured product.
+Styling images are created with AI.
 
 Read [our selection approach](../editorial-policy/) and [our affiliate notice](../affiliate-disclosure/) for more about the site.

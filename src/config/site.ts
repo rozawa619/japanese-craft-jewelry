@@ -1,7 +1,7 @@
 import type {Locale} from '../lib/i18n';
 export const site = {
  name:'Japanese Craft Jewelry', tagline:'Selected Japanese craft jewelry.',
- description:'A curated selection of Japanese craft jewelry, earrings and necklaces. Discover our picks, compare source-checked details and visit the official retailer.',
+ description:'Discover Japanese craft jewelry: distinctive earrings, clip-on earrings and necklaces from across Japan. Find your favorite by material, design and craft.',
  locale:'en' as Locale,
  url:import.meta.env.PUBLIC_SITE_URL||'',
  publishMode:import.meta.env.PUBLIC_PUBLISH_MODE||'preview',
@@ -10,7 +10,7 @@ export const site = {
  repositoryUrl:import.meta.env.PUBLIC_REPOSITORY_URL||'',
  socialLinks:[] as {label:string;url:string}[],
 };
-export const siteDescription=(locale:Locale='en')=>locale==='ja'?'日本各地の工芸ジュエリーをセレクト。おすすめのピアス・イヤリング・ネックレスを、確認した仕様・価格・公式販売店とともに紹介します。':site.description;
+export const siteDescription=(locale:Locale='en')=>locale==='ja'?'日本各地の工芸ジュエリーをセレクト。ピアス・イヤリング・ネックレスを、素材やデザイン、いつもの服との合わせ方から紹介します。':site.description;
 export const path=(route='')=>`${import.meta.env.BASE_URL.replace(/\/$/,'')}/${route.replace(/^\//,'')}`;
 export const pagePath=(route='',locale:Locale='en')=>path(`${locale}/${route.replace(/^\//,'')}`);
 export function localizedPath(pathname:string,locale:Locale){
