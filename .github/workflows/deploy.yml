@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths-ignore:
       - docs/deployment-results.json
+      - docs/hosted-results.json
       - docs/handoff.md
       - docs/verification.md
 permissions:

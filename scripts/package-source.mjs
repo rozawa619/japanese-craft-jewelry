@@ -8,7 +8,7 @@ if(!source.startsWith(delivery)) throw new Error('Unsafe destination');
 mkdirSync(source,{recursive:true});
 const skip=new Set(['node_modules','dist','.git','.astro','artifacts','test-results','playwright-report','.env','.env.local','.env.production','.env.production.local']);
 for(const entry of readdirSync(root)) {
- if(skip.has(entry)||entry.endsWith('.log'))continue;
+ if(skip.has(entry)||entry.endsWith('.log')||(entry.startsWith('.env')&&entry!=='.env.example'))continue;
  cpSync(resolve(root,entry),resolve(source,entry),{recursive:true});
 }
 const evidence=resolve(delivery,'screenshots');

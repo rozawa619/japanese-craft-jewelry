@@ -14,5 +14,6 @@ const {product:p,index=0}=Astro.props;
  <p class="maker-name">{makerFor(p).name}</p>
  <p class="card-summary">{p.editorialSummary}</p>
  <div class="card-price"><span>{price(p)}</span><small>{p.availability==='out_of_stock'?'Sold out when checked':`Checked ${p.priceCheckedAt}`}</small></div>
+ <p class="price-note" style="margin:7px 0 0">{p.taxNote}</p>
  <div class="card-actions"><a class="text-link" href={pagePath(`objects/${p.slug}/`)}>Explore the details <span aria-hidden="true">→</span></a><RetailerLink productId={p.id} compact/></div>
 </article>

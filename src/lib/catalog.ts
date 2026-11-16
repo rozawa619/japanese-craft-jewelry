@@ -10,5 +10,5 @@ export const makerFor = (p: typeof products[number]) => byId(catalog.makers, p.m
 export const linksFor = (ids: string[]) => catalog.links.filter(l => ids.includes(l.productId));
 export const resolve = (link: typeof catalog.links[number]) => resolveRetailerLink(link, catalog.programs.find(p => p.id === link.programId)?.applicationStatus);
 export const sponsoredFor = (ids = products.map(p => p.id)) => linksFor(ids).some(l => resolve(l)?.sponsored);
-export const price = (p: typeof products[number]) => p.priceAmount !== null && p.priceCurrency ? new Intl.NumberFormat('en', {style:'currency', currency:p.priceCurrency, maximumFractionDigits:0}).format(p.priceAmount) : 'Price at retailer';
+export const price = (p: typeof products[number]) => p.priceAmount !== null && p.priceCurrency ? new Intl.NumberFormat('en', {style:'currency', currency:p.priceCurrency, currencyDisplay:'code', maximumFractionDigits:0}).format(p.priceAmount) : 'Price at retailer';
 export const labels = (group: 'materials'|'crafts'|'productTypes'|'prefectures', ids: string[]) => ids.map(id => byId(catalog[group],id)?.name).filter(Boolean).join(', ');

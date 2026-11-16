@@ -96,3 +96,5 @@ GitHubのリポジトリ作成・push・Pages公開は認証と権限がある�
 ## GitHub Pagesの有効化
 
 作成済みrepoはhttps://github.com/rozawa619/ito-craft。ソースをmainへpush後、Settings→Pages→SourceをGitHub Actionsにする。deploy.ymlで検証して公開する。初期modeはpreviewで検索対象外。PUBLIC_OPERATOR_NAMEと必要な公開用Contactを確認し、正式検索公開時だけRepository variablesのPUBLIC_PUBLISH_MODEをpublicに変更。元のプレビューmodeでもPages URLで閲覧できるが、公開成功はHTTPとActions結果で確認する。
+
+GitHub Pagesのプロジェクト公開ではrobots.txtは/ito-craft/配下になる。検索エンジンがドメイン直下のrobots.txtを参照する点に注意し、previewの検索除外は各HTMLのnoindexでも実施する。独自ドメインへ移す場合はドメイン直下のrobotsも再確認する。
