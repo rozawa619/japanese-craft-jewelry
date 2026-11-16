@@ -1,21 +1,21 @@
 {
-  "checkedAt": "2026-11-16T07:44:38.519Z",
+  "checkedAt": "2026-11-16T08:24:10.529Z",
   "checkedDateJapan": "2026-11-16",
-  "version": "0.2.0",
-  "repository": "https://github.com/rozawa619/ito-craft",
+  "version": "0.3.0",
+  "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
   "sourcePushed": true,
-  "deployedCommit": "9e0b590b11718882bf4d572de578b7fd34b7fdc2",
+  "deployedCommit": "c096c6e4dd1123fbc6b8320dac9349a170968cd4",
   "pagesSource": "GitHub Actions",
-  "previewUrl": "https://rozawa619.github.io/ito-craft/en/",
+  "previewUrl": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
   "previewUrls": {
-    "en": "https://rozawa619.github.io/ito-craft/en/",
-    "ja": "https://rozawa619.github.io/ito-craft/ja/"
+    "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
+    "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/"
   },
   "deployment": "success",
   "httpStatus": 200,
-  "mode": "preview",
-  "indexing": "noindex",
-  "scope": "Japan-wide craft jewelry; currently researched selection in Kanagawa",
+  "mode": "public",
+  "indexing": "index, follow (search listing not verified)",
+  "scope": "Japan-wide craft jewelry; current researched selection connected to Kanagawa",
   "languages": [
     "en",
     "ja"
@@ -24,14 +24,14 @@
   "normalRetailerLinks": true,
   "trackingLinks": 0,
   "workflowRun": {
-    "id": 43825536502,
+    "id": 43830341510,
     "conclusion": "success",
-    "url": "https://github.com/rozawa619/ito-craft/actions/runs/43825536502"
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/43830341510"
   },
   "hostedChecks": {
-    "passed": 73,
+    "passed": 85,
     "failed": 0,
-    "pages": 48,
+    "pages": 60,
     "axeViolations": 0,
     "pageErrors": 0,
     "consoleErrors": 0,
@@ -40,14 +40,38 @@
       390,
       320
     ],
-    "report": "docs/bilingual-hosted-results.json",
+    "report": "docs/search-security-hosted-results.json",
+    "supplementalPassed": 10,
+    "sitemapUrls": 54,
+    "allSitemapUrlsStatus": 200,
+    "operator": "SORA",
     "samePageLanguageSwitch": true,
     "filterQueryHashPreserved": true,
-    "nationwideRegionDirectory": true
+    "nationwideRegionDirectory": true,
+    "httpsRedirectStatus": 301,
+    "localAiImagesStatus": 200,
+    "cspInlineScriptsAuthorized": true
   },
   "applicationsSubmitted": false,
   "affiliateApproved": false,
-  "operatorNameProvided": false,
+  "operatorNameProvided": true,
   "contact": "Verified public GitHub Issues; a GitHub account is required; no private order details",
-  "sourceNote": "A later documentation-only commit may follow the deployed source commit without changing the served site."
+  "sourceNote": "A later documentation-only commit may follow the deployed source commit without changing the served site.",
+  "publicOperator": "SORA",
+  "security": {
+    "csp": true,
+    "affiliateHostAllowlist": true,
+    "jsonLdEscaping": true,
+    "workflowPermissionsSeparated": true,
+    "actionsPinned": true,
+    "privateVulnerabilityReportingEnabled": true,
+    "vulnerabilityAlertsEnabled": true,
+    "knownDependencyAdvisories": 0
+  },
+  "editorialImages": {
+    "count": 2,
+    "type": "Labeled AI-generated fictional adult styling illustrations, not photographs or reproductions of the featured items",
+    "promptRecord": "docs/image-generation.json"
+  },
+  "searchConsoleConfigured": false
 }

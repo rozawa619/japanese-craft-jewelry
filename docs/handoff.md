@@ -30,3 +30,9 @@ verify: 型0/0/0、41単体PASS、56HTML・2410内部参照・55アンカー・1
 4. push後Actions成功、新URL、HTTPS/robots/sitemap/404/canonical/hreflang/Contactを実確認しdeployment/handoff更新。
 
 運営者残操作はuser-checklist.md。提携は未申請・未承認、全リンク通常。BECOS条件照会草稿は未送信。署名実績/売上/商品実測/許諾を作らない。
+
+## 0.3配信の確定
+
+SORA反映head c096c6e4dd1123fbc6b8320dac9349a170968cd4のActions43830341510はsuccess。新URLのHTTP200と日英Aboutの運営者SORAを確認。公開版の最終ブラウザ実測はsearch-security-hosted-results.jsonとdeployment-results.jsonを参照する。
+
+公開最終実測：2026-11-16 08:24 UTC、SORA反映版で85/85（日英60画面）・追加10/10 PASS。sitemap全54URLがHTTPS200・public canonical/hreflang、404/noindex、画像2点200、CSPとscript hash整合、両言語SORA/新Contactを確認。公開URL/全ソース/画像/プロンプト記録/運用文書はjapanese-craft-jewelry-deliveryへ書出し、source ZIPも用意。後続の資料だけのコミットは配信画面を変えない。
