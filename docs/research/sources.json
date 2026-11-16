@@ -1306,5 +1306,75 @@
     "supports": [
       "JPY7700 tax included; same SKU; Japanese name 丸透(not楕円透); red,navy,green,yellowgreen,yellow,pink variants; Aichi/尾張七宝; adjustable plated-alloy ring"
     ]
+  },
+  {
+    "id": "rinzen-seika-market-ja-v10",
+    "url": "https://www.thebecos.com/products/s0138-028",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Same handle and amber pair; visible JPY26400 tax-included Japanese-store price"
+    ],
+    "title": "BECOS Japan — Seika amber pair domestic price"
+  },
+  {
+    "id": "rinzen-seika-market-en-v10",
+    "url": "https://en.thebecos.com/products/s0138-028?currency=USD",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Same handle and amber pair; selected USD288 product price; checkout-based shipping notice; general international delivery and separate duty information"
+    ],
+    "title": "BECOS Global — Seika amber pair international price"
+  },
+  {
+    "id": "becos-global-price-faq-v10",
+    "url": "https://en.thebecos.com/pages/shopping-guide",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Official general explanation of higher Global total: international shipping and English order/return support, with conditional prepaid-duty handling; no SKU-level price-gap breakdown"
+    ],
+    "title": "BECOS Global — shopping guide and regional pricing FAQ"
+  },
+  {
+    "id": "becos-global-shipping-v10",
+    "url": "https://en.thebecos.com/pages/shipping-policy",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Final shipping determined at checkout; general USD250 standard-free-shipping threshold; import duties/taxes may be separate checkout or delivery charges"
+    ],
+    "title": "BECOS Global — shipping policy"
+  },
+  {
+    "id": "rinzen-direct-shop-link-v10",
+    "url": "https://rin-zen.com/shop.html",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Maker explicitly links www.rin-zenshop.com as its Online Shop; public Hirai shop address and hours; no SKU store price or store inventory"
+    ],
+    "title": "rin-zen.com — official maker price review"
+  },
+  {
+    "id": "rinzen-direct-seika-amber-v10",
+    "url": "https://www.rin-zenshop.com/product/-seika-/60?cp=true&sa=false&sbp=false&q=false&category_id=4",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Maker-direct online Seika amber set listed JPY26400; H27xW17xD6mm; matching item attributes; current page did not show sold-out notice; no physical inventory/price established"
+    ],
+    "title": "www.rin-zenshop.com — official maker price review"
+  },
+  {
+    "id": "rinzen-direct-price-terms-v10",
+    "url": "https://www.rin-zenshop.com/about",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "All official online displayed prices are tax-inclusive; shipping separate; online shipping limited to Japan; does not establish physical-store item price"
+    ],
+    "title": "www.rin-zenshop.com — official maker price review"
   }
 ]

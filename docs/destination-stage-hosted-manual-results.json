@@ -1,0 +1,138 @@
+{
+  "checkedAt": "2026-11-16T12:17:04.763Z",
+  "deploymentCommit": "befb4d0ee4a975fc6cb6c29cf176223f9c8c3499",
+  "method": "Fresh Chrome read-only public spot checks after hosted regional QA: Nara desktop motif, Fukuoka/Hokkaido320px earrings, and EN/JA18K added product image. Decode real hosted assets and save visible row/visual crops. No external navigation or account actions.",
+  "checks": [
+    {
+      "name": "nara-desktop",
+      "locale": "en",
+      "width": 1440,
+      "route": "places/",
+      "selector": "[data-region-row=\"nara\"]",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/",
+      "status": "passed",
+      "productId": "sugimura-hosoge-raden-pendant",
+      "asset": "images/sugimura-raden-flower-pendant-styling-v9.webp",
+      "intrinsic": {
+        "width": 1536,
+        "height": 1024
+      },
+      "dimensions": {
+        "width": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "screenshot": "artifacts/destination-regions-hosted-spot-nara-desktop.png"
+    },
+    {
+      "name": "fukuoka-narrow",
+      "locale": "en",
+      "width": 320,
+      "route": "places/",
+      "selector": "[data-region-row=\"fukuoka\"]",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/",
+      "status": "passed",
+      "productId": "cocoon-ori-nonhole-earrings",
+      "asset": "images/cocoon-ori-silk-styling-v9.webp",
+      "intrinsic": {
+        "width": 1536,
+        "height": 1024
+      },
+      "dimensions": {
+        "width": 320,
+        "document": 320,
+        "body": 320
+      },
+      "screenshot": "artifacts/destination-regions-hosted-spot-fukuoka-narrow.png"
+    },
+    {
+      "name": "hokkaido-narrow",
+      "locale": "en",
+      "width": 320,
+      "route": "places/",
+      "selector": "[data-region-row=\"hokkaido\"]",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/",
+      "status": "passed",
+      "productId": "yukieglass-mint-veil-earrings",
+      "asset": "images/yukie-mint-glass-styling-v9.webp",
+      "intrinsic": {
+        "width": 1536,
+        "height": 1024
+      },
+      "dimensions": {
+        "width": 320,
+        "document": 320,
+        "body": 320
+      },
+      "screenshot": "artifacts/destination-regions-hosted-spot-hokkaido-narrow.png"
+    },
+    {
+      "name": "18k-ja-mobile",
+      "locale": "ja",
+      "width": 390,
+      "route": "objects/hamamatsuya-18k-yosegi-earrings/",
+      "selector": ".purchase-visual",
+      "productId": "hamamatsuya-18k-pierced",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-18k-yosegi-earrings/",
+      "status": "passed",
+      "asset": "images/hamamatsuya-18k-yosegi-styling-v9.webp",
+      "intrinsic": {
+        "width": 1536,
+        "height": 1024
+      },
+      "dimensions": {
+        "width": 390,
+        "document": 390,
+        "body": 390
+      },
+      "screenshot": "artifacts/destination-regions-hosted-spot-18k-ja-mobile.png"
+    },
+    {
+      "name": "18k-en-mobile",
+      "locale": "en",
+      "width": 390,
+      "route": "objects/hamamatsuya-18k-yosegi-earrings/",
+      "selector": ".purchase-visual",
+      "productId": "hamamatsuya-18k-pierced",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-18k-yosegi-earrings/",
+      "status": "passed",
+      "asset": "images/hamamatsuya-18k-yosegi-styling-v9.webp",
+      "intrinsic": {
+        "width": 1536,
+        "height": 1024
+      },
+      "dimensions": {
+        "width": 390,
+        "document": 390,
+        "body": 390
+      },
+      "screenshot": "artifacts/destination-regions-hosted-spot-18k-en-mobile.png"
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "completedAt": "2026-11-16T12:17:58.407Z",
+  "summary": {
+    "checks": 5,
+    "passed": 5,
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "failed": 0
+  },
+  "manualVisualReview": {
+    "reviewedAt": "2026-11-16T12:18:38.095Z",
+    "status": "passed",
+    "observations": [
+      "The public desktop Nara row shows the complete flower pendant, including its lower petals.",
+      "The public320px Fukuoka and Hokkaido rows show the complete representative earrings within the image area.",
+      "The public Japanese and English18K product images both load, show the new youthful styling portrait and ear ornament, and retain the exact requested short AI label."
+    ],
+    "reviewedScreenshots": [
+      "artifacts/destination-regions-hosted-spot-nara-desktop.png",
+      "artifacts/destination-regions-hosted-spot-fukuoka-narrow.png",
+      "artifacts/destination-regions-hosted-spot-hokkaido-narrow.png",
+      "artifacts/destination-regions-hosted-spot-18k-ja-mobile.png",
+      "artifacts/destination-regions-hosted-spot-18k-en-mobile.png"
+    ]
+  }
+}

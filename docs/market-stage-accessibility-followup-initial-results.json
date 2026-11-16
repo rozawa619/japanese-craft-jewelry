@@ -1,0 +1,3105 @@
+{
+  "checkedAt": "2026-11-16T12:48:54.577Z",
+  "origin": "http://127.0.0.1:4321",
+  "base": "/japanese-craft-jewelry/",
+  "method": "Focused market-price verification against raw researched catalog values. English and Japanese at 1440, 390 and 320 px; all current dual-market products plus unknown and JPY-only examples. Checks visible price/currency/date, price-to-store destination pairing, sticky purchase meaning, language roundtrip, all product cards, the earrings comparison, Tokyo regional cards, representatives and the home hero. Also checks overflow and runs 18 accessibility scans with every axe rule enabled. Does not use the UI price helper to generate expected figures, open merchant checkouts, claim physical shelf prices, or perform currency conversion.",
+  "checks": [
+    {
+      "name": "desktop en home market prices",
+      "status": "passed",
+      "detail": {
+        "representatives": 12,
+        "heroProduct": "morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop en all product cards keep Japan market pricing",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "desktop en detail rinzen-seika-amber-pierced-earrings",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:162:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:159:33"
+    },
+    {
+      "name": "desktop en detail six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 9,900",
+          "amount": 9900,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 108",
+          "amount": 108,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-018"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-half-moon-earrings"
+      }
+    },
+    {
+      "name": "desktop en detail rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 27,500",
+          "amount": 27500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 300",
+          "amount": 300,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-099"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-leaf-glass-pendant"
+      }
+    },
+    {
+      "name": "desktop en detail six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 6,600",
+          "amount": 6600,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 72",
+          "amount": 72,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-016"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-blue-bouquet-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop en detail saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 29,700",
+          "amount": 29700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 324",
+          "amount": 324,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0007-054"
+        ],
+        "storeAnchor": "#official-and-visit-saskia-diez-drake-porcelain-cuff"
+      }
+    },
+    {
+      "name": "desktop en detail checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 16,500",
+          "amount": 16500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 180",
+          "amount": 180,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0050-015"
+        ],
+        "storeAnchor": "#official-and-visit-checos-japanese-apricot-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop en detail morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 4,620",
+          "amount": 4620,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 50.40",
+          "amount": 50.4,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0124-032"
+        ],
+        "storeAnchor": "#official-and-visit-morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop en detail kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 15,400",
+          "amount": 15400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 168",
+          "amount": 168,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-093"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-drop-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop en detail kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 7,700",
+          "amount": 7700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 84",
+          "amount": 84,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-044"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-round-ring"
+      }
+    },
+    {
+      "name": "desktop en detail cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "Price not confirmed",
+          "unknown": true
+        },
+        "international": null,
+        "domestic": [
+          "https://www.co-coon.info/gallery"
+        ],
+        "storeAnchor": "#official-and-visit-cocoon-ori-nonhole-earrings"
+      }
+    },
+    {
+      "name": "desktop en detail hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 3,500",
+          "amount": 3500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": null,
+        "domestic": [
+          "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html"
+        ],
+        "storeAnchor": "#official-and-visit-hamamatsuya-catch-pierced"
+      }
+    },
+    {
+      "name": "desktop ja home market prices",
+      "status": "passed",
+      "detail": {
+        "representatives": 12,
+        "heroProduct": "morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop ja all product cards keep Japan market pricing",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "desktop ja detail rinzen-seika-amber-pierced-earrings",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:162:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:159:33"
+    },
+    {
+      "name": "desktop ja detail six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 9,900",
+          "amount": 9900,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 108",
+          "amount": 108,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-018"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-half-moon-earrings"
+      }
+    },
+    {
+      "name": "desktop ja detail rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 27,500",
+          "amount": 27500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 300",
+          "amount": 300,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-099"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-leaf-glass-pendant"
+      }
+    },
+    {
+      "name": "desktop ja detail six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 6,600",
+          "amount": 6600,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 72",
+          "amount": 72,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-016"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-blue-bouquet-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop ja detail saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 29,700",
+          "amount": 29700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 324",
+          "amount": 324,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0007-054"
+        ],
+        "storeAnchor": "#official-and-visit-saskia-diez-drake-porcelain-cuff"
+      }
+    },
+    {
+      "name": "desktop ja detail checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 16,500",
+          "amount": 16500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 180",
+          "amount": 180,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0050-015"
+        ],
+        "storeAnchor": "#official-and-visit-checos-japanese-apricot-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop ja detail morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 4,620",
+          "amount": 4620,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 50.40",
+          "amount": 50.4,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0124-032"
+        ],
+        "storeAnchor": "#official-and-visit-morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop ja detail kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 15,400",
+          "amount": 15400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 168",
+          "amount": 168,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-093"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-drop-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop ja detail kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 7,700",
+          "amount": 7700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 84",
+          "amount": 84,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-044"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-round-ring"
+      }
+    },
+    {
+      "name": "desktop ja detail cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "価格は未確認",
+          "unknown": true
+        },
+        "international": null,
+        "domestic": [
+          "https://www.co-coon.info/gallery"
+        ],
+        "storeAnchor": "#official-and-visit-cocoon-ori-nonhole-earrings"
+      }
+    },
+    {
+      "name": "desktop ja detail hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 3,500",
+          "amount": 3500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": null,
+        "domestic": [
+          "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html"
+        ],
+        "storeAnchor": "#official-and-visit-hamamatsuya-catch-pierced"
+      }
+    },
+    {
+      "name": "mobile en home market prices",
+      "status": "passed",
+      "detail": {
+        "representatives": 12,
+        "heroProduct": "morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile en all product cards keep Japan market pricing",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "mobile en detail rinzen-seika-amber-pierced-earrings",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:162:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:159:33"
+    },
+    {
+      "name": "mobile en detail six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 9,900",
+          "amount": 9900,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 108",
+          "amount": 108,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-018"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-half-moon-earrings"
+      }
+    },
+    {
+      "name": "mobile en detail rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 27,500",
+          "amount": 27500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 300",
+          "amount": 300,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-099"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-leaf-glass-pendant"
+      }
+    },
+    {
+      "name": "mobile en detail six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 6,600",
+          "amount": 6600,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 72",
+          "amount": 72,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-016"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-blue-bouquet-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile en detail saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 29,700",
+          "amount": 29700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 324",
+          "amount": 324,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0007-054"
+        ],
+        "storeAnchor": "#official-and-visit-saskia-diez-drake-porcelain-cuff"
+      }
+    },
+    {
+      "name": "mobile en detail checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 16,500",
+          "amount": 16500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 180",
+          "amount": 180,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0050-015"
+        ],
+        "storeAnchor": "#official-and-visit-checos-japanese-apricot-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile en detail morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 4,620",
+          "amount": 4620,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 50.40",
+          "amount": 50.4,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0124-032"
+        ],
+        "storeAnchor": "#official-and-visit-morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile en detail kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 15,400",
+          "amount": 15400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 168",
+          "amount": 168,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-093"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-drop-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile en detail kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 7,700",
+          "amount": 7700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 84",
+          "amount": 84,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-044"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-round-ring"
+      }
+    },
+    {
+      "name": "mobile en detail cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "Price not confirmed",
+          "unknown": true
+        },
+        "international": null,
+        "domestic": [
+          "https://www.co-coon.info/gallery"
+        ],
+        "storeAnchor": "#official-and-visit-cocoon-ori-nonhole-earrings"
+      }
+    },
+    {
+      "name": "mobile en detail hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 3,500",
+          "amount": 3500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": null,
+        "domestic": [
+          "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html"
+        ],
+        "storeAnchor": "#official-and-visit-hamamatsuya-catch-pierced"
+      }
+    },
+    {
+      "name": "mobile ja home market prices",
+      "status": "passed",
+      "detail": {
+        "representatives": 12,
+        "heroProduct": "morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile ja all product cards keep Japan market pricing",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "mobile ja detail rinzen-seika-amber-pierced-earrings",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:162:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:159:33"
+    },
+    {
+      "name": "mobile ja detail six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 9,900",
+          "amount": 9900,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 108",
+          "amount": 108,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-018"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-half-moon-earrings"
+      }
+    },
+    {
+      "name": "mobile ja detail rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 27,500",
+          "amount": 27500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 300",
+          "amount": 300,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-099"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-leaf-glass-pendant"
+      }
+    },
+    {
+      "name": "mobile ja detail six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 6,600",
+          "amount": 6600,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 72",
+          "amount": 72,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-016"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-blue-bouquet-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile ja detail saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 29,700",
+          "amount": 29700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 324",
+          "amount": 324,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0007-054"
+        ],
+        "storeAnchor": "#official-and-visit-saskia-diez-drake-porcelain-cuff"
+      }
+    },
+    {
+      "name": "mobile ja detail checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 16,500",
+          "amount": 16500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 180",
+          "amount": 180,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0050-015"
+        ],
+        "storeAnchor": "#official-and-visit-checos-japanese-apricot-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile ja detail morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 4,620",
+          "amount": 4620,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 50.40",
+          "amount": 50.4,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0124-032"
+        ],
+        "storeAnchor": "#official-and-visit-morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile ja detail kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 15,400",
+          "amount": 15400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 168",
+          "amount": 168,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-093"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-drop-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile ja detail kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 7,700",
+          "amount": 7700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 84",
+          "amount": 84,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-044"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-round-ring"
+      }
+    },
+    {
+      "name": "mobile ja detail cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "価格は未確認",
+          "unknown": true
+        },
+        "international": null,
+        "domestic": [
+          "https://www.co-coon.info/gallery"
+        ],
+        "storeAnchor": "#official-and-visit-cocoon-ori-nonhole-earrings"
+      }
+    },
+    {
+      "name": "mobile ja detail hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 3,500",
+          "amount": 3500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": null,
+        "domestic": [
+          "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html"
+        ],
+        "storeAnchor": "#official-and-visit-hamamatsuya-catch-pierced"
+      }
+    },
+    {
+      "name": "narrow en home market prices",
+      "status": "passed",
+      "detail": {
+        "representatives": 12,
+        "heroProduct": "morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow en all product cards keep Japan market pricing",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "narrow en detail rinzen-seika-amber-pierced-earrings",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:162:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:159:33"
+    },
+    {
+      "name": "narrow en detail six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 9,900",
+          "amount": 9900,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 108",
+          "amount": 108,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-018"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-half-moon-earrings"
+      }
+    },
+    {
+      "name": "narrow en detail rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 27,500",
+          "amount": 27500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 300",
+          "amount": 300,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-099"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-leaf-glass-pendant"
+      }
+    },
+    {
+      "name": "narrow en detail six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 6,600",
+          "amount": 6600,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 72",
+          "amount": 72,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-016"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-blue-bouquet-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow en detail saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 29,700",
+          "amount": 29700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 324",
+          "amount": 324,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0007-054"
+        ],
+        "storeAnchor": "#official-and-visit-saskia-diez-drake-porcelain-cuff"
+      }
+    },
+    {
+      "name": "narrow en detail checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 16,500",
+          "amount": 16500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 180",
+          "amount": 180,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0050-015"
+        ],
+        "storeAnchor": "#official-and-visit-checos-japanese-apricot-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow en detail morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 4,620",
+          "amount": 4620,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 50.40",
+          "amount": 50.4,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0124-032"
+        ],
+        "storeAnchor": "#official-and-visit-morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow en detail kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 15,400",
+          "amount": 15400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 168",
+          "amount": 168,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-093"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-drop-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow en detail kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 7,700",
+          "amount": 7700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 84",
+          "amount": 84,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-044"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-round-ring"
+      }
+    },
+    {
+      "name": "narrow en detail cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "Price not confirmed",
+          "unknown": true
+        },
+        "international": null,
+        "domestic": [
+          "https://www.co-coon.info/gallery"
+        ],
+        "storeAnchor": "#official-and-visit-cocoon-ori-nonhole-earrings"
+      }
+    },
+    {
+      "name": "narrow en detail hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 3,500",
+          "amount": 3500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": null,
+        "domestic": [
+          "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html"
+        ],
+        "storeAnchor": "#official-and-visit-hamamatsuya-catch-pierced"
+      }
+    },
+    {
+      "name": "narrow ja home market prices",
+      "status": "passed",
+      "detail": {
+        "representatives": 12,
+        "heroProduct": "morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow ja all product cards keep Japan market pricing",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "narrow ja detail rinzen-seika-amber-pierced-earrings",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:162:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:159:33"
+    },
+    {
+      "name": "narrow ja detail six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 9,900",
+          "amount": 9900,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 108",
+          "amount": 108,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-018"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-half-moon-earrings"
+      }
+    },
+    {
+      "name": "narrow ja detail rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 27,500",
+          "amount": 27500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 300",
+          "amount": 300,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-099"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-leaf-glass-pendant"
+      }
+    },
+    {
+      "name": "narrow ja detail six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 6,600",
+          "amount": 6600,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 72",
+          "amount": 72,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-016"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-blue-bouquet-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow ja detail saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 29,700",
+          "amount": 29700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 324",
+          "amount": 324,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0007-054"
+        ],
+        "storeAnchor": "#official-and-visit-saskia-diez-drake-porcelain-cuff"
+      }
+    },
+    {
+      "name": "narrow ja detail checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 16,500",
+          "amount": 16500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 180",
+          "amount": 180,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0050-015"
+        ],
+        "storeAnchor": "#official-and-visit-checos-japanese-apricot-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow ja detail morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 4,620",
+          "amount": 4620,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 50.40",
+          "amount": 50.4,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0124-032"
+        ],
+        "storeAnchor": "#official-and-visit-morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow ja detail kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 15,400",
+          "amount": 15400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 168",
+          "amount": 168,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-093"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-drop-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow ja detail kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 7,700",
+          "amount": 7700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 84",
+          "amount": 84,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-044"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-round-ring"
+      }
+    },
+    {
+      "name": "narrow ja detail cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "価格は未確認",
+          "unknown": true
+        },
+        "international": null,
+        "domestic": [
+          "https://www.co-coon.info/gallery"
+        ],
+        "storeAnchor": "#official-and-visit-cocoon-ori-nonhole-earrings"
+      }
+    },
+    {
+      "name": "narrow ja detail hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 3,500",
+          "amount": 3500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": null,
+        "domestic": [
+          "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html"
+        ],
+        "storeAnchor": "#official-and-visit-hamamatsuya-catch-pierced"
+      }
+    },
+    {
+      "name": "No client errors during focused market checks",
+      "status": "passed"
+    }
+  ],
+  "pages": [
+    {
+      "name": "desktop en home",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/en/",
+      "axeViolations": []
+    },
+    {
+      "name": "desktop en all jewelry",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/en/objects/#all-jewelry",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "nodes": [
+            {
+              "target": [
+                "article[data-material=\"cotton polyester gold-filled\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/morphosphere-ultramarine-pansy-pierced-earrings/\" aria-label=\"View Morphosphere tint ultramarine pansy earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"hamamatsuya-catch-pierced\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/hamamatsuya-surgical-stainless-pierced-earrings/\" aria-label=\"View Hamamatsuya yosegi catch-back earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"tokyo\"][data-craft=\"kiriko\"][data-material=\"glass\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/rinzen-seika-amber-pierced-earrings/\" aria-label=\"View RINZEN Seika amber glass chain earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"ishikawa\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/checos-japanese-apricot-pierced-earrings/\" aria-label=\"View CHECOS Japanese apricot silver flower earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"hamamatsuya-clip\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/hamamatsuya-yosegi-non-pierced-earrings/\" aria-label=\"View Hamamatsuya yosegi non-pierced earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"six-kiln-half-moon-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/six-kiln-half-moon-earrings/\" aria-label=\"View 6.KILN Half-moon porcelain earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"aichi\"][data-craft=\"owari-cloisonne\"][data-type=\"pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/kato-suke-drop-pierced-earrings/\" aria-label=\"View Kato Shippo SUKE cloisonne drop earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"hamamatsuya-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/hamamatsuya-muku-yosegi-pendant/\" aria-label=\"View Hamamatsuya muku yosegi pendant — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"rinzen-leaf-glass-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/rinzen-leaf-glass-pendant/\" aria-label=\"View RINZEN Leaf Drop green glass pendant — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"maruyama-clip-c\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/maruyama-yosegi-non-pierced-c/\" aria-label=\"View Yosegi non-pierced earrings C — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"saga\"][data-craft=\"imari-arita-ware\"][data-type=\"pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/six-kiln-blue-bouquet-pierced-earrings/\" aria-label=\"View 6.KILN Blue Bouquet porcelain hoop earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"maruyama-clip-d\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/maruyama-yosegi-non-pierced-d/\" aria-label=\"View Yosegi non-pierced earrings D — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-material=\"porcelain\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/saskia-diez-drake-porcelain-cuff/\" aria-label=\"View 2016/ Saskia Diez Drake porcelain cuff in gray and silver — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"maruyama-pierced-c\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/maruyama-yosegi-pierced-c/\" aria-label=\"View Yosegi pierced earrings C — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"maruyama-pierced-d\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/maruyama-yosegi-pierced-d/\" aria-label=\"View Yosegi pierced earrings D — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"arcos-cosmic-spiral-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/arcos-cosmic-spiral-pendant/\" aria-label=\"View Atelier ARCOS Cosmic Spiral glass pendant — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"arcos-cosmic-glass-bracelet\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/arcos-cosmic-glass-bracelet/\" aria-label=\"View Atelier ARCOS Cosmic Sparkle glass bracelet — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"senshu-pearl-stud-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/senshu-pearl-stud-earrings/\" aria-label=\"View PREMIUM PEARL Senshu shell-pearl stud earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"senshu-pearl-swing-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/senshu-pearl-swing-earrings/\" aria-label=\"View PREMIUM PEARL Senshu shell-pearl swing earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"sugimura-hosoge-raden-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/sugimura-hosoge-raden-pendant/\" aria-label=\"View Sugimura Hosoge raden pendant — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"sugimura-lotus-makie-ring\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/sugimura-lotus-makie-ring/\" aria-label=\"View Sugimura Lotus makie wooden ring — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"cocoon-ori-nonhole-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/cocoon-ori-nonhole-earrings/\" aria-label=\"View CO.COON ori non-pierced earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"cocoon-frame-pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/cocoon-frame-pierced-earrings/\" aria-label=\"View CO.COON Frame Series pierced earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"yamanashi\"][data-craft=\"kofu-jewelry\"][data-type=\"pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/simprich-crystal-bubble-pierced-earrings/\" aria-label=\"View SIMPRICH K18 yellow-gold crystal bubble earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"simprich-rose-quartz-necklace\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/simprich-rose-quartz-necklace/\" aria-label=\"View SIMPRICH K10 yellow-gold rose-quartz necklace — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"yukieglass-mint-veil-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/yukieglass-mint-veil-earrings/\" aria-label=\"View Yukie Glass Mint Veil earrings, Chronicle-005 — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"yukieglass-rouge-veil-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/yukieglass-rouge-veil-earrings/\" aria-label=\"View Yukie Glass Rouge Veil earrings, Chronicle-007 — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"nakajima-pear-sakura-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/nakajima-pear-sakura-pendant/\" aria-label=\"View Nakajima Zogan reversible sakura pear pendant — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"kato-suke-round-ring\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/kato-suke-round-ring/\" aria-label=\"View Kato Shippo SUKE round cloisonne ring — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"hamamatsuya-18k-pierced\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/hamamatsuya-18k-yosegi-earrings/\" aria-label=\"View Hamamatsuya 18K yosegi earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop en RINZEN dual market",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/en/objects/rinzen-seika-amber-pierced-earrings/",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "nodes": [
+            {
+              "target": [
+                "article[data-prefecture=\"kyoto\"] > .card-art-link[data-astro-cid-4fhpls6h=\"\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/morphosphere-ultramarine-pansy-pierced-earrings/\" aria-label=\"View Morphosphere tint ultramarine pansy earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"hamamatsuya-catch-pierced\"] > .card-art-link[data-astro-cid-4fhpls6h=\"\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/hamamatsuya-surgical-stainless-pierced-earrings/\" aria-label=\"View Hamamatsuya yosegi catch-back earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"ishikawa\"] > .card-art-link[data-astro-cid-4fhpls6h=\"\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/checos-japanese-apricot-pierced-earrings/\" aria-label=\"View CHECOS Japanese apricot silver flower earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop ja home",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/ja/",
+      "axeViolations": []
+    },
+    {
+      "name": "desktop ja all jewelry",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/ja/objects/#all-jewelry",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "nodes": [
+            {
+              "target": [
+                "article[data-material=\"cotton polyester gold-filled\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/morphosphere-ultramarine-pansy-pierced-earrings/\" aria-label=\"Morphosphere tint 群青パンジーピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"浜松屋 寄木キャッチ付ピアスの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/\" aria-label=\"浜松屋 寄木キャッチ付ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"tokyo\"][data-craft=\"kiriko\"][data-material=\"glass\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/rinzen-seika-amber-pierced-earrings/\" aria-label=\"凛然 星華 アンバーガラスのチェーンピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"CHECOS 銀の小花ピアスの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/checos-japanese-apricot-pierced-earrings/\" aria-label=\"CHECOS 銀の小花ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"浜松屋 寄木イヤリングの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/hamamatsuya-yosegi-non-pierced-earrings/\" aria-label=\"浜松屋 寄木イヤリングの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"six-kiln-half-moon-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/six-kiln-half-moon-earrings/\" aria-label=\"6.KILN 白磁の半月イヤリングの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"aichi\"][data-craft=\"owari-cloisonne\"][data-type=\"pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/kato-suke-drop-pierced-earrings/\" aria-label=\"加藤七宝製作所 雫透 SUKE ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"浜松屋 無垢寄木ペンダントの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/hamamatsuya-muku-yosegi-pendant/\" aria-label=\"浜松屋 無垢寄木ペンダントの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"rinzen-leaf-glass-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/rinzen-leaf-glass-pendant/\" aria-label=\"凛然 葉の雫 グリーンガラスのペンダントの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"寄木イヤリング Cの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/maruyama-yosegi-non-pierced-c/\" aria-label=\"寄木イヤリング Cの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"saga\"][data-craft=\"imari-arita-ware\"][data-type=\"pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/six-kiln-blue-bouquet-pierced-earrings/\" aria-label=\"6.KILN 青のbouquet 磁器とフープのピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"寄木イヤリング Dの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/maruyama-yosegi-non-pierced-d/\" aria-label=\"寄木イヤリング Dの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-material=\"porcelain\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/saskia-diez-drake-porcelain-cuff/\" aria-label=\"2016/ サスキア ディーツ ドレーク 磁器のグレイシルバーカフの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"寄木ピアス Cの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/maruyama-yosegi-pierced-c/\" aria-label=\"寄木ピアス Cの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"寄木ピアス Dの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/maruyama-yosegi-pierced-d/\" aria-label=\"寄木ピアス Dの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"arcos-cosmic-spiral-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/arcos-cosmic-spiral-pendant/\" aria-label=\"アルコス 宇宙神秘のスパイラル ガラスペンダントの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"arcos-cosmic-glass-bracelet\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/arcos-cosmic-glass-bracelet/\" aria-label=\"アルコス 宇宙のキラキラ ガラスブレスレットの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"senshu-pearl-stud-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/senshu-pearl-stud-earrings/\" aria-label=\"プレミアムパール 泉州の貝パール スタッド耳飾りの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"senshu-pearl-swing-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/senshu-pearl-swing-earrings/\" aria-label=\"プレミアムパール 泉州の貝パール スウィング耳飾りの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"sugimura-hosoge-raden-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/sugimura-hosoge-raden-pendant/\" aria-label=\"大和漆工芸杉村 宝相華の螺鈿ペンダントの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"sugimura-lotus-makie-ring\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/sugimura-lotus-makie-ring/\" aria-label=\"大和漆工芸杉村 蓮の蒔絵 木製リングの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"cocoon-ori-nonhole-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/cocoon-ori-nonhole-earrings/\" aria-label=\"CO.COON oriノンホールピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"cocoon-frame-pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/cocoon-frame-pierced-earrings/\" aria-label=\"CO.COON フレームシリーズ ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"yamanashi\"][data-craft=\"kofu-jewelry\"][data-type=\"pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/simprich-crystal-bubble-pierced-earrings/\" aria-label=\"SIMPRICH K18イエローゴールド 水晶しゃぼん玉ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"simprich-rose-quartz-necklace\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/simprich-rose-quartz-necklace/\" aria-label=\"SIMPRICH K10イエローゴールド ローズクォーツ ネックレスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"yukieglass-mint-veil-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/yukieglass-mint-veil-earrings/\" aria-label=\"幸愛硝子 Mint Veil｜若葉の薄衣 1/2の詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"yukieglass-rouge-veil-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/yukieglass-rouge-veil-earrings/\" aria-label=\"幸愛硝子 Rouge Veil｜紅の薄衣 1/2の詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"nakajima-pear-sakura-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/nakajima-pear-sakura-pendant/\" aria-label=\"中嶋象嵌 ナシ型 桜・ラインドット ペンダントの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"加藤七宝 SUKE 丸透リングの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/kato-suke-round-ring/\" aria-label=\"加藤七宝 SUKE 丸透リングの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"浜松屋 18K表記の寄木ピアスの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/hamamatsuya-18k-yosegi-earrings/\" aria-label=\"浜松屋 18K表記の寄木ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop ja RINZEN dual market",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/ja/objects/rinzen-seika-amber-pierced-earrings/",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "nodes": [
+            {
+              "target": [
+                "article[data-prefecture=\"kyoto\"] > .card-art-link[data-astro-cid-4fhpls6h=\"\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/morphosphere-ultramarine-pansy-pierced-earrings/\" aria-label=\"Morphosphere tint 群青パンジーピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"浜松屋 寄木キャッチ付ピアスの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/\" aria-label=\"浜松屋 寄木キャッチ付ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"CHECOS 銀の小花ピアスの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/checos-japanese-apricot-pierced-earrings/\" aria-label=\"CHECOS 銀の小花ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile en home",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/en/",
+      "axeViolations": []
+    },
+    {
+      "name": "mobile en all jewelry",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/en/objects/#all-jewelry",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "nodes": [
+            {
+              "target": [
+                "article[data-material=\"cotton polyester gold-filled\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/morphosphere-ultramarine-pansy-pierced-earrings/\" aria-label=\"View Morphosphere tint ultramarine pansy earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"hamamatsuya-catch-pierced\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/hamamatsuya-surgical-stainless-pierced-earrings/\" aria-label=\"View Hamamatsuya yosegi catch-back earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"tokyo\"][data-craft=\"kiriko\"][data-material=\"glass\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/rinzen-seika-amber-pierced-earrings/\" aria-label=\"View RINZEN Seika amber glass chain earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"ishikawa\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/checos-japanese-apricot-pierced-earrings/\" aria-label=\"View CHECOS Japanese apricot silver flower earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"hamamatsuya-clip\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/hamamatsuya-yosegi-non-pierced-earrings/\" aria-label=\"View Hamamatsuya yosegi non-pierced earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"six-kiln-half-moon-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/six-kiln-half-moon-earrings/\" aria-label=\"View 6.KILN Half-moon porcelain earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"aichi\"][data-craft=\"owari-cloisonne\"][data-type=\"pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/kato-suke-drop-pierced-earrings/\" aria-label=\"View Kato Shippo SUKE cloisonne drop earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"hamamatsuya-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/hamamatsuya-muku-yosegi-pendant/\" aria-label=\"View Hamamatsuya muku yosegi pendant — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"rinzen-leaf-glass-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/rinzen-leaf-glass-pendant/\" aria-label=\"View RINZEN Leaf Drop green glass pendant — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"maruyama-clip-c\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/maruyama-yosegi-non-pierced-c/\" aria-label=\"View Yosegi non-pierced earrings C — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"saga\"][data-craft=\"imari-arita-ware\"][data-type=\"pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/six-kiln-blue-bouquet-pierced-earrings/\" aria-label=\"View 6.KILN Blue Bouquet porcelain hoop earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"maruyama-clip-d\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/maruyama-yosegi-non-pierced-d/\" aria-label=\"View Yosegi non-pierced earrings D — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-material=\"porcelain\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/saskia-diez-drake-porcelain-cuff/\" aria-label=\"View 2016/ Saskia Diez Drake porcelain cuff in gray and silver — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"maruyama-pierced-c\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/maruyama-yosegi-pierced-c/\" aria-label=\"View Yosegi pierced earrings C — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"maruyama-pierced-d\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/maruyama-yosegi-pierced-d/\" aria-label=\"View Yosegi pierced earrings D — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"arcos-cosmic-spiral-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/arcos-cosmic-spiral-pendant/\" aria-label=\"View Atelier ARCOS Cosmic Spiral glass pendant — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"arcos-cosmic-glass-bracelet\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/arcos-cosmic-glass-bracelet/\" aria-label=\"View Atelier ARCOS Cosmic Sparkle glass bracelet — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"senshu-pearl-stud-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/senshu-pearl-stud-earrings/\" aria-label=\"View PREMIUM PEARL Senshu shell-pearl stud earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"senshu-pearl-swing-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/senshu-pearl-swing-earrings/\" aria-label=\"View PREMIUM PEARL Senshu shell-pearl swing earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"sugimura-hosoge-raden-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/sugimura-hosoge-raden-pendant/\" aria-label=\"View Sugimura Hosoge raden pendant — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"sugimura-lotus-makie-ring\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/sugimura-lotus-makie-ring/\" aria-label=\"View Sugimura Lotus makie wooden ring — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"cocoon-ori-nonhole-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/cocoon-ori-nonhole-earrings/\" aria-label=\"View CO.COON ori non-pierced earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"cocoon-frame-pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/cocoon-frame-pierced-earrings/\" aria-label=\"View CO.COON Frame Series pierced earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"yamanashi\"][data-craft=\"kofu-jewelry\"][data-type=\"pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/simprich-crystal-bubble-pierced-earrings/\" aria-label=\"View SIMPRICH K18 yellow-gold crystal bubble earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"simprich-rose-quartz-necklace\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/simprich-rose-quartz-necklace/\" aria-label=\"View SIMPRICH K10 yellow-gold rose-quartz necklace — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"yukieglass-mint-veil-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/yukieglass-mint-veil-earrings/\" aria-label=\"View Yukie Glass Mint Veil earrings, Chronicle-005 — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"yukieglass-rouge-veil-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/yukieglass-rouge-veil-earrings/\" aria-label=\"View Yukie Glass Rouge Veil earrings, Chronicle-007 — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"nakajima-pear-sakura-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/nakajima-pear-sakura-pendant/\" aria-label=\"View Nakajima Zogan reversible sakura pear pendant — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"kato-suke-round-ring\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/kato-suke-round-ring/\" aria-label=\"View Kato Shippo SUKE round cloisonne ring — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"hamamatsuya-18k-pierced\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/hamamatsuya-18k-yosegi-earrings/\" aria-label=\"View Hamamatsuya 18K yosegi earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile en RINZEN dual market",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/en/objects/rinzen-seika-amber-pierced-earrings/",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "nodes": [
+            {
+              "target": [
+                "article[data-prefecture=\"kyoto\"] > .card-art-link[data-astro-cid-4fhpls6h=\"\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/morphosphere-ultramarine-pansy-pierced-earrings/\" aria-label=\"View Morphosphere tint ultramarine pansy earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"hamamatsuya-catch-pierced\"] > .card-art-link[data-astro-cid-4fhpls6h=\"\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/hamamatsuya-surgical-stainless-pierced-earrings/\" aria-label=\"View Hamamatsuya yosegi catch-back earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"ishikawa\"] > .card-art-link[data-astro-cid-4fhpls6h=\"\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/checos-japanese-apricot-pierced-earrings/\" aria-label=\"View CHECOS Japanese apricot silver flower earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile ja home",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/ja/",
+      "axeViolations": []
+    },
+    {
+      "name": "mobile ja all jewelry",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/ja/objects/#all-jewelry",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "nodes": [
+            {
+              "target": [
+                "article[data-material=\"cotton polyester gold-filled\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/morphosphere-ultramarine-pansy-pierced-earrings/\" aria-label=\"Morphosphere tint 群青パンジーピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"浜松屋 寄木キャッチ付ピアスの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/\" aria-label=\"浜松屋 寄木キャッチ付ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"tokyo\"][data-craft=\"kiriko\"][data-material=\"glass\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/rinzen-seika-amber-pierced-earrings/\" aria-label=\"凛然 星華 アンバーガラスのチェーンピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"CHECOS 銀の小花ピアスの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/checos-japanese-apricot-pierced-earrings/\" aria-label=\"CHECOS 銀の小花ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"浜松屋 寄木イヤリングの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/hamamatsuya-yosegi-non-pierced-earrings/\" aria-label=\"浜松屋 寄木イヤリングの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"six-kiln-half-moon-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/six-kiln-half-moon-earrings/\" aria-label=\"6.KILN 白磁の半月イヤリングの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"aichi\"][data-craft=\"owari-cloisonne\"][data-type=\"pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/kato-suke-drop-pierced-earrings/\" aria-label=\"加藤七宝製作所 雫透 SUKE ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"浜松屋 無垢寄木ペンダントの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/hamamatsuya-muku-yosegi-pendant/\" aria-label=\"浜松屋 無垢寄木ペンダントの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"rinzen-leaf-glass-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/rinzen-leaf-glass-pendant/\" aria-label=\"凛然 葉の雫 グリーンガラスのペンダントの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"寄木イヤリング Cの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/maruyama-yosegi-non-pierced-c/\" aria-label=\"寄木イヤリング Cの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"saga\"][data-craft=\"imari-arita-ware\"][data-type=\"pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/six-kiln-blue-bouquet-pierced-earrings/\" aria-label=\"6.KILN 青のbouquet 磁器とフープのピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"寄木イヤリング Dの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/maruyama-yosegi-non-pierced-d/\" aria-label=\"寄木イヤリング Dの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-material=\"porcelain\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/saskia-diez-drake-porcelain-cuff/\" aria-label=\"2016/ サスキア ディーツ ドレーク 磁器のグレイシルバーカフの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"寄木ピアス Cの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/maruyama-yosegi-pierced-c/\" aria-label=\"寄木ピアス Cの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"寄木ピアス Dの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/maruyama-yosegi-pierced-d/\" aria-label=\"寄木ピアス Dの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"arcos-cosmic-spiral-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/arcos-cosmic-spiral-pendant/\" aria-label=\"アルコス 宇宙神秘のスパイラル ガラスペンダントの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"arcos-cosmic-glass-bracelet\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/arcos-cosmic-glass-bracelet/\" aria-label=\"アルコス 宇宙のキラキラ ガラスブレスレットの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"senshu-pearl-stud-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/senshu-pearl-stud-earrings/\" aria-label=\"プレミアムパール 泉州の貝パール スタッド耳飾りの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"senshu-pearl-swing-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/senshu-pearl-swing-earrings/\" aria-label=\"プレミアムパール 泉州の貝パール スウィング耳飾りの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"sugimura-hosoge-raden-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/sugimura-hosoge-raden-pendant/\" aria-label=\"大和漆工芸杉村 宝相華の螺鈿ペンダントの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"sugimura-lotus-makie-ring\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/sugimura-lotus-makie-ring/\" aria-label=\"大和漆工芸杉村 蓮の蒔絵 木製リングの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"cocoon-ori-nonhole-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/cocoon-ori-nonhole-earrings/\" aria-label=\"CO.COON oriノンホールピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"cocoon-frame-pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/cocoon-frame-pierced-earrings/\" aria-label=\"CO.COON フレームシリーズ ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"yamanashi\"][data-craft=\"kofu-jewelry\"][data-type=\"pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/simprich-crystal-bubble-pierced-earrings/\" aria-label=\"SIMPRICH K18イエローゴールド 水晶しゃぼん玉ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"simprich-rose-quartz-necklace\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/simprich-rose-quartz-necklace/\" aria-label=\"SIMPRICH K10イエローゴールド ローズクォーツ ネックレスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"yukieglass-mint-veil-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/yukieglass-mint-veil-earrings/\" aria-label=\"幸愛硝子 Mint Veil｜若葉の薄衣 1/2の詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"yukieglass-rouge-veil-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/yukieglass-rouge-veil-earrings/\" aria-label=\"幸愛硝子 Rouge Veil｜紅の薄衣 1/2の詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"nakajima-pear-sakura-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/nakajima-pear-sakura-pendant/\" aria-label=\"中嶋象嵌 ナシ型 桜・ラインドット ペンダントの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"加藤七宝 SUKE 丸透リングの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/kato-suke-round-ring/\" aria-label=\"加藤七宝 SUKE 丸透リングの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"浜松屋 18K表記の寄木ピアスの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/hamamatsuya-18k-yosegi-earrings/\" aria-label=\"浜松屋 18K表記の寄木ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile ja RINZEN dual market",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/ja/objects/rinzen-seika-amber-pierced-earrings/",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "nodes": [
+            {
+              "target": [
+                "article[data-prefecture=\"kyoto\"] > .card-art-link[data-astro-cid-4fhpls6h=\"\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/morphosphere-ultramarine-pansy-pierced-earrings/\" aria-label=\"Morphosphere tint 群青パンジーピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"浜松屋 寄木キャッチ付ピアスの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/\" aria-label=\"浜松屋 寄木キャッチ付ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"CHECOS 銀の小花ピアスの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/checos-japanese-apricot-pierced-earrings/\" aria-label=\"CHECOS 銀の小花ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "narrow en home",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/en/",
+      "axeViolations": []
+    },
+    {
+      "name": "narrow en all jewelry",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/en/objects/#all-jewelry",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "nodes": [
+            {
+              "target": [
+                "article[data-material=\"cotton polyester gold-filled\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/morphosphere-ultramarine-pansy-pierced-earrings/\" aria-label=\"View Morphosphere tint ultramarine pansy earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"hamamatsuya-catch-pierced\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/hamamatsuya-surgical-stainless-pierced-earrings/\" aria-label=\"View Hamamatsuya yosegi catch-back earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"tokyo\"][data-craft=\"kiriko\"][data-material=\"glass\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/rinzen-seika-amber-pierced-earrings/\" aria-label=\"View RINZEN Seika amber glass chain earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"ishikawa\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/checos-japanese-apricot-pierced-earrings/\" aria-label=\"View CHECOS Japanese apricot silver flower earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"hamamatsuya-clip\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/hamamatsuya-yosegi-non-pierced-earrings/\" aria-label=\"View Hamamatsuya yosegi non-pierced earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"six-kiln-half-moon-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/six-kiln-half-moon-earrings/\" aria-label=\"View 6.KILN Half-moon porcelain earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"aichi\"][data-craft=\"owari-cloisonne\"][data-type=\"pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/kato-suke-drop-pierced-earrings/\" aria-label=\"View Kato Shippo SUKE cloisonne drop earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"hamamatsuya-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/hamamatsuya-muku-yosegi-pendant/\" aria-label=\"View Hamamatsuya muku yosegi pendant — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"rinzen-leaf-glass-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/rinzen-leaf-glass-pendant/\" aria-label=\"View RINZEN Leaf Drop green glass pendant — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"maruyama-clip-c\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/maruyama-yosegi-non-pierced-c/\" aria-label=\"View Yosegi non-pierced earrings C — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"saga\"][data-craft=\"imari-arita-ware\"][data-type=\"pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/six-kiln-blue-bouquet-pierced-earrings/\" aria-label=\"View 6.KILN Blue Bouquet porcelain hoop earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"maruyama-clip-d\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/maruyama-yosegi-non-pierced-d/\" aria-label=\"View Yosegi non-pierced earrings D — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-material=\"porcelain\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/saskia-diez-drake-porcelain-cuff/\" aria-label=\"View 2016/ Saskia Diez Drake porcelain cuff in gray and silver — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"maruyama-pierced-c\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/maruyama-yosegi-pierced-c/\" aria-label=\"View Yosegi pierced earrings C — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"maruyama-pierced-d\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/maruyama-yosegi-pierced-d/\" aria-label=\"View Yosegi pierced earrings D — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"arcos-cosmic-spiral-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/arcos-cosmic-spiral-pendant/\" aria-label=\"View Atelier ARCOS Cosmic Spiral glass pendant — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"arcos-cosmic-glass-bracelet\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/arcos-cosmic-glass-bracelet/\" aria-label=\"View Atelier ARCOS Cosmic Sparkle glass bracelet — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"senshu-pearl-stud-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/senshu-pearl-stud-earrings/\" aria-label=\"View PREMIUM PEARL Senshu shell-pearl stud earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"senshu-pearl-swing-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/senshu-pearl-swing-earrings/\" aria-label=\"View PREMIUM PEARL Senshu shell-pearl swing earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"sugimura-hosoge-raden-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/sugimura-hosoge-raden-pendant/\" aria-label=\"View Sugimura Hosoge raden pendant — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"sugimura-lotus-makie-ring\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/sugimura-lotus-makie-ring/\" aria-label=\"View Sugimura Lotus makie wooden ring — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"cocoon-ori-nonhole-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/cocoon-ori-nonhole-earrings/\" aria-label=\"View CO.COON ori non-pierced earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"cocoon-frame-pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/cocoon-frame-pierced-earrings/\" aria-label=\"View CO.COON Frame Series pierced earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"yamanashi\"][data-craft=\"kofu-jewelry\"][data-type=\"pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/simprich-crystal-bubble-pierced-earrings/\" aria-label=\"View SIMPRICH K18 yellow-gold crystal bubble earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"simprich-rose-quartz-necklace\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/simprich-rose-quartz-necklace/\" aria-label=\"View SIMPRICH K10 yellow-gold rose-quartz necklace — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"yukieglass-mint-veil-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/yukieglass-mint-veil-earrings/\" aria-label=\"View Yukie Glass Mint Veil earrings, Chronicle-005 — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"yukieglass-rouge-veil-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/yukieglass-rouge-veil-earrings/\" aria-label=\"View Yukie Glass Rouge Veil earrings, Chronicle-007 — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"nakajima-pear-sakura-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/nakajima-pear-sakura-pendant/\" aria-label=\"View Nakajima Zogan reversible sakura pear pendant — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"kato-suke-round-ring\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/kato-suke-round-ring/\" aria-label=\"View Kato Shippo SUKE round cloisonne ring — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"hamamatsuya-18k-pierced\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/hamamatsuya-18k-yosegi-earrings/\" aria-label=\"View Hamamatsuya 18K yosegi earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "narrow en RINZEN dual market",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/en/objects/rinzen-seika-amber-pierced-earrings/",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "nodes": [
+            {
+              "target": [
+                "article[data-prefecture=\"kyoto\"] > .card-art-link[data-astro-cid-4fhpls6h=\"\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/morphosphere-ultramarine-pansy-pierced-earrings/\" aria-label=\"View Morphosphere tint ultramarine pansy earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"hamamatsuya-catch-pierced\"] > .card-art-link[data-astro-cid-4fhpls6h=\"\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/hamamatsuya-surgical-stainless-pierced-earrings/\" aria-label=\"View Hamamatsuya yosegi catch-back earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"ishikawa\"] > .card-art-link[data-astro-cid-4fhpls6h=\"\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/en/objects/checos-japanese-apricot-pierced-earrings/\" aria-label=\"View CHECOS Japanese apricot silver flower earrings — AI image\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "narrow ja home",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/ja/",
+      "axeViolations": []
+    },
+    {
+      "name": "narrow ja all jewelry",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/ja/objects/#all-jewelry",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "nodes": [
+            {
+              "target": [
+                "article[data-material=\"cotton polyester gold-filled\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/morphosphere-ultramarine-pansy-pierced-earrings/\" aria-label=\"Morphosphere tint 群青パンジーピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"浜松屋 寄木キャッチ付ピアスの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/\" aria-label=\"浜松屋 寄木キャッチ付ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"tokyo\"][data-craft=\"kiriko\"][data-material=\"glass\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/rinzen-seika-amber-pierced-earrings/\" aria-label=\"凛然 星華 アンバーガラスのチェーンピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"CHECOS 銀の小花ピアスの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/checos-japanese-apricot-pierced-earrings/\" aria-label=\"CHECOS 銀の小花ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"浜松屋 寄木イヤリングの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/hamamatsuya-yosegi-non-pierced-earrings/\" aria-label=\"浜松屋 寄木イヤリングの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"six-kiln-half-moon-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/six-kiln-half-moon-earrings/\" aria-label=\"6.KILN 白磁の半月イヤリングの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"aichi\"][data-craft=\"owari-cloisonne\"][data-type=\"pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/kato-suke-drop-pierced-earrings/\" aria-label=\"加藤七宝製作所 雫透 SUKE ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"浜松屋 無垢寄木ペンダントの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/hamamatsuya-muku-yosegi-pendant/\" aria-label=\"浜松屋 無垢寄木ペンダントの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"rinzen-leaf-glass-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/rinzen-leaf-glass-pendant/\" aria-label=\"凛然 葉の雫 グリーンガラスのペンダントの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"寄木イヤリング Cの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/maruyama-yosegi-non-pierced-c/\" aria-label=\"寄木イヤリング Cの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"saga\"][data-craft=\"imari-arita-ware\"][data-type=\"pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/six-kiln-blue-bouquet-pierced-earrings/\" aria-label=\"6.KILN 青のbouquet 磁器とフープのピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"寄木イヤリング Dの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/maruyama-yosegi-non-pierced-d/\" aria-label=\"寄木イヤリング Dの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-material=\"porcelain\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/saskia-diez-drake-porcelain-cuff/\" aria-label=\"2016/ サスキア ディーツ ドレーク 磁器のグレイシルバーカフの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"寄木ピアス Cの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/maruyama-yosegi-pierced-c/\" aria-label=\"寄木ピアス Cの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"寄木ピアス Dの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/maruyama-yosegi-pierced-d/\" aria-label=\"寄木ピアス Dの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"arcos-cosmic-spiral-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/arcos-cosmic-spiral-pendant/\" aria-label=\"アルコス 宇宙神秘のスパイラル ガラスペンダントの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"arcos-cosmic-glass-bracelet\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/arcos-cosmic-glass-bracelet/\" aria-label=\"アルコス 宇宙のキラキラ ガラスブレスレットの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"senshu-pearl-stud-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/senshu-pearl-stud-earrings/\" aria-label=\"プレミアムパール 泉州の貝パール スタッド耳飾りの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"senshu-pearl-swing-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/senshu-pearl-swing-earrings/\" aria-label=\"プレミアムパール 泉州の貝パール スウィング耳飾りの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"sugimura-hosoge-raden-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/sugimura-hosoge-raden-pendant/\" aria-label=\"大和漆工芸杉村 宝相華の螺鈿ペンダントの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"sugimura-lotus-makie-ring\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/sugimura-lotus-makie-ring/\" aria-label=\"大和漆工芸杉村 蓮の蒔絵 木製リングの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"cocoon-ori-nonhole-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/cocoon-ori-nonhole-earrings/\" aria-label=\"CO.COON oriノンホールピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"cocoon-frame-pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/cocoon-frame-pierced-earrings/\" aria-label=\"CO.COON フレームシリーズ ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-prefecture=\"yamanashi\"][data-craft=\"kofu-jewelry\"][data-type=\"pierced-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/simprich-crystal-bubble-pierced-earrings/\" aria-label=\"SIMPRICH K18イエローゴールド 水晶しゃぼん玉ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"simprich-rose-quartz-necklace\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/simprich-rose-quartz-necklace/\" aria-label=\"SIMPRICH K10イエローゴールド ローズクォーツ ネックレスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"yukieglass-mint-veil-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/yukieglass-mint-veil-earrings/\" aria-label=\"幸愛硝子 Mint Veil｜若葉の薄衣 1/2の詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"yukieglass-rouge-veil-earrings\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/yukieglass-rouge-veil-earrings/\" aria-label=\"幸愛硝子 Rouge Veil｜紅の薄衣 1/2の詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "article[data-product-id=\"nakajima-pear-sakura-pendant\"] > .card-art-link"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/nakajima-pear-sakura-pendant/\" aria-label=\"中嶋象嵌 ナシ型 桜・ラインドット ペンダントの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"加藤七宝 SUKE 丸透リングの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/kato-suke-round-ring/\" aria-label=\"加藤七宝 SUKE 丸透リングの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"浜松屋 18K表記の寄木ピアスの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/hamamatsuya-18k-yosegi-earrings/\" aria-label=\"浜松屋 18K表記の寄木ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "narrow ja RINZEN dual market",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/ja/objects/rinzen-seika-amber-pierced-earrings/",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ],
+          "nodes": [
+            {
+              "target": [
+                "article[data-prefecture=\"kyoto\"] > .card-art-link[data-astro-cid-4fhpls6h=\"\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/morphosphere-ultramarine-pansy-pierced-earrings/\" aria-label=\"Morphosphere tint 群青パンジーピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"浜松屋 寄木キャッチ付ピアスの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/\" aria-label=\"浜松屋 寄木キャッチ付ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"CHECOS 銀の小花ピアスの詳細を見る — AIイメージ\"]"
+              ],
+              "html": "<a class=\"card-art-link\" href=\"/japanese-craft-jewelry/ja/objects/checos-japanese-apricot-pierced-earrings/\" aria-label=\"CHECOS 銀の小花ピアスの詳細を見る — AIイメージ\" data-astro-cid-4fhpls6h=\"\">",
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "screenshots": [],
+  "failures": [
+    {
+      "name": "desktop en all product cards keep Japan market pricing",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "desktop en detail rinzen-seika-amber-pierced-earrings",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:162:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:159:33"
+    },
+    {
+      "name": "desktop ja all product cards keep Japan market pricing",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "desktop ja detail rinzen-seika-amber-pierced-earrings",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:162:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:159:33"
+    },
+    {
+      "name": "mobile en all product cards keep Japan market pricing",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "mobile en detail rinzen-seika-amber-pierced-earrings",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:162:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:159:33"
+    },
+    {
+      "name": "mobile ja all product cards keep Japan market pricing",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "mobile ja detail rinzen-seika-amber-pierced-earrings",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:162:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:159:33"
+    },
+    {
+      "name": "narrow en all product cards keep Japan market pricing",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "narrow en detail rinzen-seika-amber-pierced-earrings",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:162:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:159:33"
+    },
+    {
+      "name": "narrow ja all product cards keep Japan market pricing",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "narrow ja detail rinzen-seika-amber-pierced-earrings",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:162:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:159:33"
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "completedAt": "2026-11-16T12:49:49.034Z",
+  "finalizedAt": "2026-11-16T12:49:49.034Z",
+  "summary": {
+    "checks": 79,
+    "passed": 67,
+    "failed": 12,
+    "dualMarketProducts": 9,
+    "productDetailChecks": 66,
+    "axeScreens": 18,
+    "axeViolations": 12,
+    "screenshots": 0,
+    "pageErrors": 0,
+    "consoleErrors": 0
+  }
+}

@@ -1,0 +1,13 @@
+---
+import RetailerLink from './RetailerLink.astro';
+import {linksFor,resolve} from '../lib/catalog';
+import {marketPricesFor,type PriceMarket} from '../lib/market-prices';
+import {t,type Locale} from '../lib/i18n';
+interface Props{productId:string;locale:Locale;market?:PriceMarket;compact?:boolean;label?:string;}
+const {productId,locale,market='japan',compact=false}=Astro.props;
+const prices=marketPricesFor(productId);
+const normalLinks=market==='japan'?prices.japanLinks:prices.internationalLinks;
+const localIds=linksFor([productId],locale).filter(link=>normalLinks.some(normal=>normal.id===link.id)&&resolve(link)).map(link=>link.id);
+const label=Astro.props.label||(market==='japan'?t(locale,'Japan official listing','日本向け公式ページ'):t(locale,'International store','海外向け公式ストア'));
+---
+{localIds.length>0?<RetailerLink productId={productId} locale={locale} compact={compact} label={label} linkIds={localIds} purchaseMarket={market}/>:normalLinks.map(link=><a class:list={['retailer-link',{compact}]} href={link.url} target="_blank" rel="noopener noreferrer" data-sponsored="false" data-purchase-market={market} data-market-link-id={link.id}>{label} <span aria-hidden="true">↗</span><span class="sr-only"> — {link.merchantName}{t(locale,', opens in a new tab','、新しいタブで開きます')}</span></a>)}

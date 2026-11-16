@@ -1,6 +1,6 @@
-# 商品・店舗・画像・価格・広告・公開の更新手順 — 0.9
+# 商品・店舗・画像・価格・広告・公開の更新手順 — 0.10
 
-更新日：2026-11-16。AGENTS.md、docs/constitution.md、specs/009-destination-selection/、docs/handoff.mdを先に読む。現行は30商品・12都道府県・13技法、28画像が全30商品へ対応。店舗13件を25商品に関連づけ、実店舗未確認の5商品は公式通販/販売案内へ進める。正本の分離とGoogleMaps外部リンク方式は008を継承。最新の実測は009validationとdestination-stage結果を参照。
+更新日：2026-11-16。AGENTS.md、docs/constitution.md、specs/010-market-prices/、docs/handoff.mdを先に読む。現行は30商品・12都道府県・13技法、28画像が全30商品へ対応。店舗13件を25商品に関連づけ、実店舗未確認の5商品は公式通販/販売案内へ進める。正本の分離とGoogleMaps外部リンク方式は008を継承。最新の実測は010validationとmarket-stage結果、地域・画像の前版実測は009validationを参照。
 
 最新ユーザー指示は、20代後半〜30代前半の女性、全商品の公式URLと現地案内、短い「AIイメージ / AI image」表示、木以外も選べる構成、日英で使いやすい入口。Contact非公開、SORA、ブログなしを維持する。
 
@@ -47,7 +47,7 @@ BECOS英語／日本語は別storeとして扱う。同じSKUの実ページと�
       }
     }
 
-この数値は構造例。更新時は実ページを読んだ値にする。catalogFor(locale)が選ぶため、translations/jaや商品本文へ同じ価格を再入力しない。通貨の違いを為替換算で埋めない。USD50.40なら数値50.4を保ち、表示は50.40になることを確認する。整数への丸めや切捨て、通貨記号だけの変更はしない。
+この数値は構造例。更新時は実ページを読んだ値にする。marketPricesFor(productId)が正本から国内参考/海外実価格を選ぶため、translations/jaや商品本文へ同じ価格を再入力しない。catalogFor(locale)による表示言語の選択と購入市場を混同しない。通貨の違いを為替換算で埋めない。USD50.40なら数値50.4を保ち、表示は50.40になることを確認する。整数への丸めや切捨て、通貨記号だけの変更はしない。
 
 linksにはそれぞれのmerchantと通常URLを登録する。BECOSは英語側locale:en／merchantId:becos-en、日本語側locale:ja／merchantId:becos-ja。各merchantのURLと商品URLのhostを一致させる。
 
@@ -130,3 +130,14 @@ pnpm packageで隣接するjapanese-craft-jewelry-delivery/sourceへ書出し、
 4. pnpm verify、check:browser、scripts/check-destination-selection.mjsを確認。PC/390/320、日英、全10地域クリック、最低2商品、英語地名の単語途中改行、画像の耳飾り/ペンダント/指輪の見切れを目視。
 5. 画像差替えはほくろ・シミを入れず、かわいい系/美人系の27–33歳方向。全prompt/元画像/参考資料/限界をimage-generation-v9.jsonの形式で記録。primarySKU画像未読のARCOSは一般作例と本文からのイラストである限界を保持。
 6. 使用中で削除できない旧public画像は台帳localRetiredPathと.gitignore/Git除外を一致させる。pnpm buildはprune-retired-images.mjsでdistの該当ファイルだけを除き、pnpm packageも除外する。再帰削除や公開中画像の移動は不要。
+
+## 0.10 国内参考価格と海外ストア価格
+
+日英の主価格は同じ国内参考。正本はcatalogのlocalizedPrices.jaまたはJPY原値、表示はmarket-prices/MarketPrice。英語のpriceAmount（例:GlobalUSD288）を為替換算で変更しない。同じSKUでもGlobalと国内通販は別市場の価格であり、言語ボタンは市場/価格を切り替えるボタンではない。
+
+1. 価格更新では同一SKU/色/個数を国内/海外の原典で確認。金額/通貨/各市場固有の日付/税注記/出典を正本へ記録。国内の確認日を海外の確認日で上書きしない。原典が無い価格はnull、数値0をunknown代わりにしない。
+2. 店頭価格とオンライン価格を同一と推定しない。今回の凛然星華26400円はBECOS日本向けと直営通販で確認。実店舗値札と店頭在庫は未確認。新たに店頭価格を確認する場合は店舗/日付/原典を分ける仕様にし、既存国内通販値を流用しない。
+3. hero/地域/カード/比較/詳細/stickyは共通MarketPrice。金額と日付と市場表示は一組。国内JPYのCTAをGlobalUSD商品URLへ向けない。MarketPurchaseLinkが国内・海外を選ぶ。
+4. ENの国内参照URL、JAの海外参照URLは通常公式リンクのみ。現在ページ言語に適合する元リンクだけ既存resolverを使い、program/商品二重承認とHTTPS/host/date条件を維持。Disclosureは表示market/linkIdsだけを対象にする。
+5. verifyとcheck:pricesで全9複数市場/unknown/単独JPYの両言語・3幅、カード/比較/hero/地域、店舗anchor、stickyと購入先、市場を越えた広告流用防止を確認。check-builtとmarket-link-policyは、market属性だけで外部URLを許可しない。
+6. 価格差を説明する際、Global公式FAQが示す海外向けサービスの説明と、商品別差額内訳が未確認であることを分ける。差額全部が送料/全税送料込とは断定しない。market-price-review-v10.jsonが調査記録。最新検証は010validationとmarket-stage結果。

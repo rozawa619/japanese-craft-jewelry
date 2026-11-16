@@ -1,12 +1,22 @@
-# 引継ぎ — 0.9 旅先から選ぶ工芸ジュエリー
+# 引継ぎ — 0.10 日本で買う参考価格
 
-更新日2026-11-16。AGENTS.md → constitution → specs/009-destination-selection/ → 本書 → operationsの順に読む。公開成否はdeployment-resultsのversion/commit/Actionsと実URLで確認し、旧版の検証を成功へ転用しない。
+更新日2026-11-16。AGENTS.md → constitution → specs/010-market-prices/ → 本書 → operationsの順に読む。公開成否はdeployment-resultsのversion/commit/Actionsと実URLで確認し、旧版の検証を成功へ転用しない。
 
 ## 現在の構成
 
 Japanese Craft Jewelryは日英の商品セレクト。SORAが運営者表示。ブログ/Contact/販売決済なし。上部1ボタンで同じ商品/産地/絞込へ言語切替。全30商品、12都道府県、13技法、28AI画像。画像未登録0で18K未登録は解消。旧0.8の詳細はarchive/handoff-v8.md。
 
 home/objects/placesは左に産地、右に代表1品を共通RegionSelectionで表示。地域名→地域内の商品群、代表画像→商品詳細。全商品と組合せフィルターはobjects/#all-jewelry以下で維持。種類/素材の入口はquery+このanchorへ着地する。
+
+## 価格表示の最新方針
+
+言語と購入市場を分離する。主価格は日英とも日本向けオンライン参考額。catalogの海外ストアpriceAmount/priceCurrencyは実額のまま保持し、localizedPrices.jaと別に管理する。market-prices.tsがcanonical商品IDから国内/海外の額・日付・出典・通常URLを選び、MarketPrice/MarketPurchaseLinkでhero/地域/カード/比較/詳細/stickyを揃える。
+
+星華アンバーの26400円税込はBECOS日本向けと凛然直営通販で確認。BECOS同一SKUの日英比較に加え、直営品は商品名/色/セット/寸法の一致を確認（共通メーカーSKUの公開は未確認）。Global288USDは別ストアの販売価格。Global公式FAQは国際向けサービスを反映する設定と説明するが、SKU差額の内訳や全送料税込みとは確認しない。実店舗の値札/在庫を推定せず、国内通販の参考価格と呼ぶ。
+
+ENの国内参照とJAの海外参照は通常公式URL。現在のページ言語に合う元リンクだけ既存広告resolverを使う。MarketPurchaseLinkの市場/実linkIDはgenerated checkerでも検証し、market属性だけの任意URL許可やEN広告のJA流用を拒否。Disclosureは実際の市場/linkIdsで絞る。USD50.40等の端数と国内固有の確認日、未知/nullと実数0の区別を保つ。
+
+商品詳細の主CTAと追従CTAは国内価格に対応する国内URL、店舗案内へは既存VisitGuideのanchor。Global価格とGlobal購入先は別枠。初めての価格調査はdocs/research/market-price-review-v10.json。更新と検証はoperationsの0.10節とspec010へ。010の配信/実測はmarket-stageとdeployment-resultsで確認。009の確定配信はarchive/deployment-results-v9.json、詳細はarchive/handoff-v9.md。
 
 ## TOP10の意味
 
@@ -26,7 +36,7 @@ home/objects/placesは左に産地、右に代表1品を共通RegionSelectionで
 
 ## 正本と更新
 
-商品/事実/広告はcatalog.json、訳はtranslations/ja.json、独自見出し/装いはproduct-stories.json、本文はcontent/products。地域・技法本文は対応Collection。出典はdocs/research/sources.json（125件）。researchの取込proposalは変更時の資料であり表示用の第二catalogにしない。
+商品/事実/広告はcatalog.json、訳はtranslations/ja.json、独自見出し/装いはproduct-stories.json、本文はcontent/products。地域・技法本文は対応Collection。出典はdocs/research/sources.json（132件）。researchの取込proposalは変更時の資料であり表示用の第二catalogにしない。
 
 店舗13を25商品へ案内し、5商品（CHECOS、泉州2、CO.COON2）は公式の通販/販売案内。店舗の裏付けがなければMapsを推測しない。visits.jsonとlib/visits.ts/VisitGuideを使用。通常の公式URLを広告CTAと分離したまま必ず残す。GoogleMapsは固定の外部search/directionsのみ。写真/地図/口コミの転載なし。掲載方法の法務確認はvisit-publication-reviewとv8の範囲/限界を継承。
 
@@ -42,7 +52,7 @@ Windowsで削除できない退役7画像はlocalRetiredPathと.gitignore/Git除
 
 ## 検証・公開・納品
 
-型/51単体/データ/生成サイトはpnpm verify。現行検証はdestination-stage-*.jsonと009validation。browserは全30商品と日英PC/390/320、regions専用は10順位と全60地域/代表クリック往復、広告は隔離fixture。最後の画像見切れ等を修正したら該当画面を再確認し、未再確認を完了としない。
+型/62単体/データ/生成サイトはpnpm verify。現行の価格検証はmarket-stage-*.jsonと010validation。地域/画像の009検証はdestination-stageを履歴として保持。browserは全30商品と日英PC/390/320、regions専用は10順位と全60地域/代表クリック往復、広告は隔離fixture。最後の画像見切れ等を修正したら該当画面を再確認し、未再確認を完了としない。
 
 配信はGitHub Pages https://rozawa619.github.io/japanese-craft-jewelry/ja/ と /en/。ソース https://github.com/rozawa619/japanese-craft-jewelry 。Git push/Actions成功/実配信SHAとブラウザ確認は別工程。最終の確定結果はdeployment-resultsとverificationに残す。
 

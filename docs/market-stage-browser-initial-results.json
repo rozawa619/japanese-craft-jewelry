@@ -1,0 +1,1635 @@
+{
+  "checkedAt": "2026-11-16T12:39:28.484Z",
+  "origin": "http://127.0.0.1:4321",
+  "base": "/japanese-craft-jewelry/",
+  "method": "Focused market-price verification against raw researched catalog values. EN/JA and1440/390/320px; all current dual-market products plus unknown and JPY-only examples. Checks visible price/currency/date, price-to-store destination pairing, sticky purchase meaning, language roundtrip, cards/representatives/hero, no overflow, and18 accessibility scans. Does not use the UI price helper to generate the expected figures, open merchant checkouts, claim physical shelf prices, or perform currency conversion.",
+  "checks": [
+    {
+      "name": "desktop en home market prices",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:129:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:124:4"
+    },
+    {
+      "name": "desktop en all product cards keep Japan market pricing",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: The comparison must retain every listed product.\n\n20 !== 30\n\n    at file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:139:12\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "desktop en detail rinzen-seika-amber-pierced-earrings",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:149:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:33"
+    },
+    {
+      "name": "desktop en detail six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 9,900",
+          "amount": 9900,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 108",
+          "amount": 108,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-018"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-half-moon-earrings"
+      }
+    },
+    {
+      "name": "desktop en detail rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 27,500",
+          "amount": 27500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 300",
+          "amount": 300,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-099"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-leaf-glass-pendant"
+      }
+    },
+    {
+      "name": "desktop en detail six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 6,600",
+          "amount": 6600,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 72",
+          "amount": 72,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-016"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-blue-bouquet-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop en detail saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 29,700",
+          "amount": 29700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 324",
+          "amount": 324,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0007-054"
+        ],
+        "storeAnchor": "#official-and-visit-saskia-diez-drake-porcelain-cuff"
+      }
+    },
+    {
+      "name": "desktop en detail checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 16,500",
+          "amount": 16500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 180",
+          "amount": 180,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0050-015"
+        ],
+        "storeAnchor": "#official-and-visit-checos-japanese-apricot-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop en detail morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 4,620",
+          "amount": 4620,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 50.40",
+          "amount": 50.4,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0124-032"
+        ],
+        "storeAnchor": "#official-and-visit-morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop en detail kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 15,400",
+          "amount": 15400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 168",
+          "amount": 168,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-093"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-drop-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop en detail kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 7,700",
+          "amount": 7700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 84",
+          "amount": 84,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-044"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-round-ring"
+      }
+    },
+    {
+      "name": "desktop en detail cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "Price not confirmed",
+          "unknown": true
+        },
+        "international": null,
+        "domestic": [
+          "https://www.co-coon.info/gallery"
+        ],
+        "storeAnchor": "#official-and-visit-cocoon-ori-nonhole-earrings"
+      }
+    },
+    {
+      "name": "desktop en detail hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 3,500",
+          "amount": 3500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": null,
+        "domestic": [
+          "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html"
+        ],
+        "storeAnchor": "#official-and-visit-hamamatsuya-catch-pierced"
+      }
+    },
+    {
+      "name": "desktop ja home market prices",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:129:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:124:4"
+    },
+    {
+      "name": "desktop ja all product cards keep Japan market pricing",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: The comparison must retain every listed product.\n\n20 !== 30\n\n    at file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:139:12\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "desktop ja detail rinzen-seika-amber-pierced-earrings",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:149:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:33"
+    },
+    {
+      "name": "desktop ja detail six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 9,900",
+          "amount": 9900,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 108",
+          "amount": 108,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-018"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-half-moon-earrings"
+      }
+    },
+    {
+      "name": "desktop ja detail rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 27,500",
+          "amount": 27500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 300",
+          "amount": 300,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-099"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-leaf-glass-pendant"
+      }
+    },
+    {
+      "name": "desktop ja detail six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 6,600",
+          "amount": 6600,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 72",
+          "amount": 72,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-016"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-blue-bouquet-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop ja detail saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 29,700",
+          "amount": 29700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 324",
+          "amount": 324,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0007-054"
+        ],
+        "storeAnchor": "#official-and-visit-saskia-diez-drake-porcelain-cuff"
+      }
+    },
+    {
+      "name": "desktop ja detail checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 16,500",
+          "amount": 16500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 180",
+          "amount": 180,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0050-015"
+        ],
+        "storeAnchor": "#official-and-visit-checos-japanese-apricot-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop ja detail morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 4,620",
+          "amount": 4620,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 50.40",
+          "amount": 50.4,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0124-032"
+        ],
+        "storeAnchor": "#official-and-visit-morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop ja detail kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 15,400",
+          "amount": 15400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 168",
+          "amount": 168,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-093"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-drop-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop ja detail kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 7,700",
+          "amount": 7700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 84",
+          "amount": 84,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-044"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-round-ring"
+      }
+    },
+    {
+      "name": "desktop ja detail cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "価格は未確認",
+          "unknown": true
+        },
+        "international": null,
+        "domestic": [
+          "https://www.co-coon.info/gallery"
+        ],
+        "storeAnchor": "#official-and-visit-cocoon-ori-nonhole-earrings"
+      }
+    },
+    {
+      "name": "desktop ja detail hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 3,500",
+          "amount": 3500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": null,
+        "domestic": [
+          "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html"
+        ],
+        "storeAnchor": "#official-and-visit-hamamatsuya-catch-pierced"
+      }
+    },
+    {
+      "name": "mobile en home market prices",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:129:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:124:4"
+    },
+    {
+      "name": "mobile en all product cards keep Japan market pricing",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: The comparison must retain every listed product.\n\n20 !== 30\n\n    at file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:139:12\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "mobile en detail rinzen-seika-amber-pierced-earrings",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:149:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:33"
+    },
+    {
+      "name": "mobile en detail six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 9,900",
+          "amount": 9900,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 108",
+          "amount": 108,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-018"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-half-moon-earrings"
+      }
+    },
+    {
+      "name": "mobile en detail rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 27,500",
+          "amount": 27500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 300",
+          "amount": 300,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-099"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-leaf-glass-pendant"
+      }
+    },
+    {
+      "name": "mobile en detail six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 6,600",
+          "amount": 6600,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 72",
+          "amount": 72,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-016"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-blue-bouquet-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile en detail saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 29,700",
+          "amount": 29700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 324",
+          "amount": 324,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0007-054"
+        ],
+        "storeAnchor": "#official-and-visit-saskia-diez-drake-porcelain-cuff"
+      }
+    },
+    {
+      "name": "mobile en detail checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 16,500",
+          "amount": 16500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 180",
+          "amount": 180,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0050-015"
+        ],
+        "storeAnchor": "#official-and-visit-checos-japanese-apricot-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile en detail morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 4,620",
+          "amount": 4620,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 50.40",
+          "amount": 50.4,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0124-032"
+        ],
+        "storeAnchor": "#official-and-visit-morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile en detail kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 15,400",
+          "amount": 15400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 168",
+          "amount": 168,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-093"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-drop-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile en detail kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 7,700",
+          "amount": 7700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 84",
+          "amount": 84,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-044"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-round-ring"
+      }
+    },
+    {
+      "name": "mobile en detail cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "Price not confirmed",
+          "unknown": true
+        },
+        "international": null,
+        "domestic": [
+          "https://www.co-coon.info/gallery"
+        ],
+        "storeAnchor": "#official-and-visit-cocoon-ori-nonhole-earrings"
+      }
+    },
+    {
+      "name": "mobile en detail hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 3,500",
+          "amount": 3500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": null,
+        "domestic": [
+          "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html"
+        ],
+        "storeAnchor": "#official-and-visit-hamamatsuya-catch-pierced"
+      }
+    },
+    {
+      "name": "mobile ja home market prices",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:129:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:124:4"
+    },
+    {
+      "name": "mobile ja all product cards keep Japan market pricing",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: The comparison must retain every listed product.\n\n20 !== 30\n\n    at file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:139:12\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "mobile ja detail rinzen-seika-amber-pierced-earrings",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:149:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:33"
+    },
+    {
+      "name": "mobile ja detail six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 9,900",
+          "amount": 9900,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 108",
+          "amount": 108,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-018"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-half-moon-earrings"
+      }
+    },
+    {
+      "name": "mobile ja detail rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 27,500",
+          "amount": 27500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 300",
+          "amount": 300,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-099"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-leaf-glass-pendant"
+      }
+    },
+    {
+      "name": "mobile ja detail six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 6,600",
+          "amount": 6600,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 72",
+          "amount": 72,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-016"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-blue-bouquet-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile ja detail saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 29,700",
+          "amount": 29700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 324",
+          "amount": 324,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0007-054"
+        ],
+        "storeAnchor": "#official-and-visit-saskia-diez-drake-porcelain-cuff"
+      }
+    },
+    {
+      "name": "mobile ja detail checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 16,500",
+          "amount": 16500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 180",
+          "amount": 180,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0050-015"
+        ],
+        "storeAnchor": "#official-and-visit-checos-japanese-apricot-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile ja detail morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 4,620",
+          "amount": 4620,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 50.40",
+          "amount": 50.4,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0124-032"
+        ],
+        "storeAnchor": "#official-and-visit-morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile ja detail kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 15,400",
+          "amount": 15400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 168",
+          "amount": 168,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-093"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-drop-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile ja detail kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 7,700",
+          "amount": 7700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 84",
+          "amount": 84,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-044"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-round-ring"
+      }
+    },
+    {
+      "name": "mobile ja detail cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "価格は未確認",
+          "unknown": true
+        },
+        "international": null,
+        "domestic": [
+          "https://www.co-coon.info/gallery"
+        ],
+        "storeAnchor": "#official-and-visit-cocoon-ori-nonhole-earrings"
+      }
+    },
+    {
+      "name": "mobile ja detail hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 3,500",
+          "amount": 3500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": null,
+        "domestic": [
+          "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html"
+        ],
+        "storeAnchor": "#official-and-visit-hamamatsuya-catch-pierced"
+      }
+    },
+    {
+      "name": "narrow en home market prices",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:129:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:124:4"
+    },
+    {
+      "name": "narrow en all product cards keep Japan market pricing",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: The comparison must retain every listed product.\n\n20 !== 30\n\n    at file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:139:12\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "narrow en detail rinzen-seika-amber-pierced-earrings",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:149:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:33"
+    },
+    {
+      "name": "narrow en detail six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 9,900",
+          "amount": 9900,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 108",
+          "amount": 108,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-018"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-half-moon-earrings"
+      }
+    },
+    {
+      "name": "narrow en detail rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 27,500",
+          "amount": 27500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 300",
+          "amount": 300,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-099"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-leaf-glass-pendant"
+      }
+    },
+    {
+      "name": "narrow en detail six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 6,600",
+          "amount": 6600,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 72",
+          "amount": 72,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-016"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-blue-bouquet-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow en detail saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 29,700",
+          "amount": 29700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 324",
+          "amount": 324,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0007-054"
+        ],
+        "storeAnchor": "#official-and-visit-saskia-diez-drake-porcelain-cuff"
+      }
+    },
+    {
+      "name": "narrow en detail checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 16,500",
+          "amount": 16500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 180",
+          "amount": 180,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0050-015"
+        ],
+        "storeAnchor": "#official-and-visit-checos-japanese-apricot-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow en detail morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 4,620",
+          "amount": 4620,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 50.40",
+          "amount": 50.4,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0124-032"
+        ],
+        "storeAnchor": "#official-and-visit-morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow en detail kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 15,400",
+          "amount": 15400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 168",
+          "amount": 168,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-093"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-drop-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow en detail kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 7,700",
+          "amount": 7700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 84",
+          "amount": 84,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-044"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-round-ring"
+      }
+    },
+    {
+      "name": "narrow en detail cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "Price not confirmed",
+          "unknown": true
+        },
+        "international": null,
+        "domestic": [
+          "https://www.co-coon.info/gallery"
+        ],
+        "storeAnchor": "#official-and-visit-cocoon-ori-nonhole-earrings"
+      }
+    },
+    {
+      "name": "narrow en detail hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 3,500",
+          "amount": 3500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": null,
+        "domestic": [
+          "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html"
+        ],
+        "storeAnchor": "#official-and-visit-hamamatsuya-catch-pierced"
+      }
+    },
+    {
+      "name": "narrow ja home market prices",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:129:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:124:4"
+    },
+    {
+      "name": "narrow ja all product cards keep Japan market pricing",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: The comparison must retain every listed product.\n\n20 !== 30\n\n    at file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:139:12\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "narrow ja detail rinzen-seika-amber-pierced-earrings",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:149:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:33"
+    },
+    {
+      "name": "narrow ja detail six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 9,900",
+          "amount": 9900,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 108",
+          "amount": 108,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-018"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-half-moon-earrings"
+      }
+    },
+    {
+      "name": "narrow ja detail rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 27,500",
+          "amount": 27500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 300",
+          "amount": 300,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-099"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-leaf-glass-pendant"
+      }
+    },
+    {
+      "name": "narrow ja detail six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 6,600",
+          "amount": 6600,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 72",
+          "amount": 72,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-016"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-blue-bouquet-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow ja detail saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 29,700",
+          "amount": 29700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 324",
+          "amount": 324,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0007-054"
+        ],
+        "storeAnchor": "#official-and-visit-saskia-diez-drake-porcelain-cuff"
+      }
+    },
+    {
+      "name": "narrow ja detail checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 16,500",
+          "amount": 16500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 180",
+          "amount": 180,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0050-015"
+        ],
+        "storeAnchor": "#official-and-visit-checos-japanese-apricot-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow ja detail morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 4,620",
+          "amount": 4620,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 50.40",
+          "amount": 50.4,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0124-032"
+        ],
+        "storeAnchor": "#official-and-visit-morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow ja detail kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 15,400",
+          "amount": 15400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 168",
+          "amount": 168,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-093"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-drop-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow ja detail kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 7,700",
+          "amount": 7700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 84",
+          "amount": 84,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-044"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-round-ring"
+      }
+    },
+    {
+      "name": "narrow ja detail cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "価格は未確認",
+          "unknown": true
+        },
+        "international": null,
+        "domestic": [
+          "https://www.co-coon.info/gallery"
+        ],
+        "storeAnchor": "#official-and-visit-cocoon-ori-nonhole-earrings"
+      }
+    },
+    {
+      "name": "narrow ja detail hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 3,500",
+          "amount": 3500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": null,
+        "domestic": [
+          "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html"
+        ],
+        "storeAnchor": "#official-and-visit-hamamatsuya-catch-pierced"
+      }
+    },
+    {
+      "name": "No client errors during focused market checks",
+      "status": "passed"
+    }
+  ],
+  "pages": [
+    {
+      "name": "desktop en home",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/en/",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 14
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "name": "desktop en RINZEN dual market",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/en/objects/rinzen-seika-amber-pierced-earrings/",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 5
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "name": "desktop ja home",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/ja/",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 14
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "name": "desktop ja RINZEN dual market",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/ja/objects/rinzen-seika-amber-pierced-earrings/",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 5
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "name": "mobile en home",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/en/",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 14
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "name": "mobile en RINZEN dual market",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/en/objects/rinzen-seika-amber-pierced-earrings/",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 5
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "name": "mobile ja home",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/ja/",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 14
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "name": "mobile ja RINZEN dual market",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/ja/objects/rinzen-seika-amber-pierced-earrings/",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 5
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "name": "narrow en home",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/en/",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 14
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "name": "narrow en RINZEN dual market",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/en/objects/rinzen-seika-amber-pierced-earrings/",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 5
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "name": "narrow ja home",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/ja/",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 14
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "name": "narrow ja RINZEN dual market",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/ja/objects/rinzen-seika-amber-pierced-earrings/",
+      "axeViolations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 5
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1
+        }
+      ]
+    }
+  ],
+  "screenshots": [],
+  "failures": [
+    {
+      "name": "desktop en home market prices",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:129:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:124:4"
+    },
+    {
+      "name": "desktop en all product cards keep Japan market pricing",
+      "message": "AssertionError [ERR_ASSERTION]: The comparison must retain every listed product.\n\n20 !== 30\n\n    at file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:139:12\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "desktop en detail rinzen-seika-amber-pierced-earrings",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:149:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:33"
+    },
+    {
+      "name": "desktop ja home market prices",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:129:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:124:4"
+    },
+    {
+      "name": "desktop ja all product cards keep Japan market pricing",
+      "message": "AssertionError [ERR_ASSERTION]: The comparison must retain every listed product.\n\n20 !== 30\n\n    at file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:139:12\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "desktop ja detail rinzen-seika-amber-pierced-earrings",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:149:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:33"
+    },
+    {
+      "name": "mobile en home market prices",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:129:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:124:4"
+    },
+    {
+      "name": "mobile en all product cards keep Japan market pricing",
+      "message": "AssertionError [ERR_ASSERTION]: The comparison must retain every listed product.\n\n20 !== 30\n\n    at file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:139:12\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "mobile en detail rinzen-seika-amber-pierced-earrings",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:149:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:33"
+    },
+    {
+      "name": "mobile ja home market prices",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:129:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:124:4"
+    },
+    {
+      "name": "mobile ja all product cards keep Japan market pricing",
+      "message": "AssertionError [ERR_ASSERTION]: The comparison must retain every listed product.\n\n20 !== 30\n\n    at file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:139:12\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "mobile ja detail rinzen-seika-amber-pierced-earrings",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:149:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:33"
+    },
+    {
+      "name": "narrow en home market prices",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:129:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:124:4"
+    },
+    {
+      "name": "narrow en all product cards keep Japan market pricing",
+      "message": "AssertionError [ERR_ASSERTION]: The comparison must retain every listed product.\n\n20 !== 30\n\n    at file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:139:12\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "narrow en detail rinzen-seika-amber-pierced-earrings",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:149:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:33"
+    },
+    {
+      "name": "narrow ja home market prices",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:129:49\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:124:4"
+    },
+    {
+      "name": "narrow ja all product cards keep Japan market pricing",
+      "message": "AssertionError [ERR_ASSERTION]: The comparison must retain every listed product.\n\n20 !== 30\n\n    at file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:139:12\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:132:4"
+    },
+    {
+      "name": "narrow ja detail rinzen-seika-amber-pierced-earrings",
+      "message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'label-content-name-mismatch',\n+   'region'\n+ ]\n- []\n\n    at scanAxe (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:69:9)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:149:6\n    at async check (file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:39:51)\n    at async file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/scripts/check-market-prices.mjs:146:33"
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "completedAt": "2026-11-16T12:40:00.607Z",
+  "finalizedAt": "2026-11-16T12:40:00.607Z",
+  "summary": {
+    "checks": 79,
+    "passed": 61,
+    "failed": 18,
+    "dualMarketProducts": 9,
+    "productDetailChecks": 66,
+    "axeScreens": 12,
+    "axeViolations": 24,
+    "screenshots": 0,
+    "pageErrors": 0,
+    "consoleErrors": 0
+  }
+}

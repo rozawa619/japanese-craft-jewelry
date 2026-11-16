@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-11-16T12:38:46.441Z",
+  "scope": "Market-aware generated-site retailer link policy and market price unit verification",
+  "commands": [
+    {
+      "command": "node --experimental-strip-types --test tests/market-prices.test.ts",
+      "exitCode": 0,
+      "passed": 11,
+      "failed": 0
+    },
+    {
+      "command": "node scripts/check-built.mjs",
+      "exitCode": 0,
+      "htmlPages": 170,
+      "references": 8662,
+      "anchors": 1177,
+      "retailerLinks": 618,
+      "sponsoredLinks": 0,
+      "inlineScriptHashes": 373,
+      "inertJsonBlocks": 154
+    }
+  ],
+  "policy": {
+    "explicitMarketIsNotAnExemption": true,
+    "requiresRealCatalogLinkId": true,
+    "requiresPublishedProduct": true,
+    "requiresMatchingMarket": true,
+    "requiresExactMerchantHttpsHost": true,
+    "sameLanguageUsesExistingAffiliateResolver": true,
+    "crossLanguageOnlyOrdinaryExactOfficialUrl": true,
+    "crossLanguageSponsoredForbidden": true,
+    "crossLanguageNoopenerNoreferrerRequired": true,
+    "untaggedRetailerChecksUnchanged": true,
+    "cspInternalLinksDraftMetadataChecksUnchanged": true
+  },
+  "securityCases": [
+    "EN Japan reference may use ordinary Japanese official URL",
+    "JA international reference may use ordinary English official URL",
+    "Approved English affiliate is accepted only on the English page",
+    "English approved affiliate and disguised tracking URL are rejected on Japanese pages",
+    "Unknown catalog IDs, wrong market labels and alternate product destinations are rejected"
+  ],
+  "limitations": [
+    "A policy unit run and generated-site static verification do not replace browser or hosted deployment verification.",
+    "Catalog checks validate the recorded merchant destination, not current inventory, physical shelf prices or checkout totals."
+  ]
+}

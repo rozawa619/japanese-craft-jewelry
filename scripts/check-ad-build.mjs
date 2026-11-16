@@ -12,7 +12,7 @@ const runId = new Date().toISOString().replace(/[:.]/g, '-');
 const runRoot = resolve(artifacts, runId);
 if (!runRoot.startsWith(artifacts + sep) || !isAbsolute(runRoot)) throw new Error('Fixture directory must stay inside the project artifacts directory.');
 mkdirSync(runRoot, { recursive: true });
-const reportPath = resolve(root, process.env.CHECK_AD_REPORT_PATH || 'docs/destination-stage-ad-build-results.json');
+const reportPath = resolve(root, process.env.CHECK_AD_REPORT_PATH || 'docs/market-stage-ad-build-results.json');
 const readJson = file => JSON.parse(readFileSync(file, 'utf8'));
 const writeJson = (file, value) => writeFileSync(file, JSON.stringify(value, null, 2) + '\n');
 const walk = directory => existsSync(directory) ? readdirSync(directory, { withFileTypes: true }).flatMap(entry => entry.isDirectory() ? walk(resolve(directory, entry.name)) : [resolve(directory, entry.name)]) : [];
@@ -23,13 +23,16 @@ const distDigest = () => {
 };
 const originalCatalog = readFileSync(resolve(root, 'src/data/catalog.json'));
 const sourceCatalog=JSON.parse(originalCatalog);
-const relatedFixturePage='en/objects/hamamatsuya-surgical-stainless-pierced-earrings/index.html';
+const relatedFixturePage='en/objects/morphosphere-ultramarine-pansy-pierced-earrings/index.html';
 const currentPagePath=resolve(root,'dist',relatedFixturePage);
 if(!existsSync(currentPagePath))throw new Error('Build the stable production site before testing related-product advertisements.');
 const currentRelated=readFileSync(currentPagePath,'utf8').match(/<section\b[^>]*class="[^"]*\brelated\b[^"]*"[^>]*>([\s\S]*?)<\/section>/i)?.[1]||'';
 const relatedSlug=currentRelated.match(/href="[^"]*\/en\/objects\/([a-z0-9-]+)\//)?.[1];
 const relatedTarget=sourceCatalog.products.find(product=>product.publishStatus==='published'&&product.slug===relatedSlug);
 if(!relatedTarget)throw new Error('A rendered related product is required for the advertisement fixture.');
+if(sourceCatalog.links.some(link=>link.productId===relatedTarget.id&&link.locale))throw new Error('The related-card fixture must use a shared domestic destination.');
+const internationalTarget=sourceCatalog.products.find(product=>product.id==='rinzen-seika-amber-pierced-earrings'&&product.publishStatus==='published'&&product.localizedPrices?.ja);
+if(!internationalTarget)throw new Error('A verified dual-market product is required for the international-only advertisement fixture.');
 const rootDistBefore = distDigest();
 const results = {
   checkedAt: new Date().toISOString(),
@@ -97,6 +100,11 @@ function analyze(directory, targetIds, ordinaryRoute, publicMetadata = false) {
   const fixtureCatalog=readJson(resolve(directory,'src/data/catalog.json'));
   const englishOnly=targetIds.filter(id=>fixtureCatalog.links.some(link=>link.productId===id&&link.locale==='en'&&link.applicationStatus==='approved'));
   for(const file of walk(resolve(dist,'ja')).filter(file=>file.endsWith('.html'))){const html=readFileSync(file,'utf8');for(const id of englishOnly)if(html.includes('https://affiliate-build-test.invalid/track/'+id))errors.push(relative(dist,file)+': English-only approval leaked into Japanese page');}
+  for(const id of englishOnly){
+    const product=fixtureCatalog.products.find(product=>product.id===id);
+    const domesticLists=['en/objects/index.html',`en/makers/${product.makerId}/index.html`,...product.prefectureIds.map(id=>`en/places/${id}/index.html`),...product.craftIds.map(id=>`en/crafts/${id}/index.html`)];
+    for(const route of domesticLists)if(existsSync(resolve(dist,route))&&readFileSync(resolve(dist,route),'utf8').includes('https://affiliate-build-test.invalid/track/'+id))errors.push(route+': International approval leaked into a domestic-price listing');
+  }
   const sitemap = readFileSync(resolve(dist, 'sitemap.xml'), 'utf8');
   if (/\/journal\//.test(sitemap)) errors.push('Retired reading routes present in sitemap');
   if (/\/(?:en|ja)\/contact\//.test(sitemap)) errors.push('Deferred Contact route present in sitemap');
@@ -116,7 +124,7 @@ function analyze(directory, targetIds, ordinaryRoute, publicMetadata = false) {
   if (existsSync(resolve(dist, 'en/journal/test-only-draft-guide/index.html'))) errors.push('Draft guide page generated');
   const targetedPage = readFileSync(resolve(dist, ordinaryRoute), 'utf8');
   if (targetIds.length) {
-    if (!targetedPage.includes('data-disclosure="affiliate"') || !tracking.some(url => targetedPage.includes(url))) errors.push('Selected related-product-only test page did not expose the expected affiliate link and disclosure');
+    if (!targetedPage.includes('data-disclosure="affiliate"') || !tracking.some(url => targetedPage.includes(url))) errors.push('Selected test page did not expose the expected affiliate link and disclosure');
     if (!sponsoredCount) errors.push('Approved test case generated no sponsored links');
   } else {
     if (sponsoredCount) errors.push('Paused/missing-URL case generated sponsored links');
@@ -133,6 +141,7 @@ function analyze(directory, targetIds, ordinaryRoute, publicMetadata = false) {
 }
 const scenarios = [
   { name: 'approved-related-product-only', targetIds: [relatedTarget.id], page: relatedFixturePage, mutate(catalog) { approve(catalog, relatedTarget.id); } },
+  { name: 'approved-international-detail-only', targetIds: [internationalTarget.id], page: `en/objects/${internationalTarget.slug}/index.html`, mutate(catalog) { approve(catalog, internationalTarget.id); } },
   { name: 'approved-lower-retailer-section-only', targetIds: ['maruyama-clip-c'], page: 'en/places/kanagawa/index.html', mutate(catalog) { approve(catalog, 'maruyama-clip-c'); } },
   { name: 'paused-and-missing-url-fallback', targetIds: [], page: 'en/objects/hamamatsuya-yosegi-non-pierced-earrings/index.html', mutate(catalog) {
     approve(catalog, 'hamamatsuya-clip').applicationStatus = 'paused';

@@ -1,13 +1,13 @@
 ---
 import {catalogFor,resolve,linksFor} from '../lib/catalog';
 import {t,type Locale} from '../lib/i18n';
-interface Props {productId:string;compact?:boolean;locale?:Locale;label?:string}
-const {productId,compact=false,locale='en',label}=Astro.props;
-const links=linksFor([productId],locale);
+interface Props {productId:string;compact?:boolean;locale?:Locale;label?:string;linkIds?:string[];purchaseMarket?:'japan'|'international'}
+const {productId,compact=false,locale='en',label,linkIds,purchaseMarket}=Astro.props;
+const links=linksFor([productId],locale).filter(link=>!linkIds||linkIds.includes(link.id));
 const localCatalog=catalogFor(locale);
 ---
 {links.map(link=>{
  const result=resolve(link);
  const merchant=localCatalog.merchants.find(m=>m.id===link.merchantId);
- return result&&<a class:list={['retailer-link',{compact}]} href={result.href} rel={result.rel} target="_blank" data-sponsored={String(result.sponsored)}>{label||(link.merchantId==='hamamatsuya'?t(locale,'View at maker','工房で見る'):t(locale,'View at retailer','販売店で見る'))} <span aria-hidden="true">↗</span><span class="sr-only"> — {merchant?.name}{t(locale,', opens in a new tab','、新しいタブで開きます')}{result.sponsored?t(locale,', affiliate link','、アフィリエイトリンク'):''}</span></a>
+ return result&&<a class:list={['retailer-link',{compact}]} href={result.href} rel={result.rel} target="_blank" data-sponsored={String(result.sponsored)} data-purchase-market={purchaseMarket} data-market-link-id={purchaseMarket?link.id:undefined}>{label||(link.merchantId==='hamamatsuya'?t(locale,'View at maker','工房で見る'):t(locale,'View at retailer','販売店で見る'))} <span aria-hidden="true">↗</span><span class="sr-only"> — {merchant?.name}{t(locale,', opens in a new tab','、新しいタブで開きます')}{result.sponsored?t(locale,', affiliate link','、アフィリエイトリンク'):''}</span></a>
 })}

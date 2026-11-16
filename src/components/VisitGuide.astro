@@ -6,7 +6,7 @@ interface Props{productId:string;locale:Locale}
 const {productId,locale}=Astro.props;
 const guide=visitGuideForProduct(productId,locale);
 ---
-<section class="visit-guide" data-visit-guide data-visit-status={guide.stores.length?'confirmed-stores':'unconfirmed-store'} aria-labelledby={'visit-title-'+productId}>
+<section class="visit-guide" id={'official-and-visit-'+productId} data-visit-guide data-visit-status={guide.stores.length?'confirmed-stores':'unconfirmed-store'} aria-labelledby={'visit-title-'+productId}>
  <header class="visit-heading"><p class="eyebrow">{t(locale,'OFFICIAL LINKS & PLACES TO VISIT','公式サイトと、訪ねたいお店')}</p><h2 id={'visit-title-'+productId}>{t(locale,'Explore online. Plan a stop in Japan.','じっくり見るなら、現地で出会うなら。')}</h2></header>
  <div class="visit-links">
   {guide.officialLinks.map(link=><a class="visit-official-link" href={link.url} target="_blank" rel="noopener noreferrer" data-official-product-url={link.id}><span>{t(locale,'Official product information','公式の商品情報')} <span aria-hidden="true">↗</span></span><span class="visit-official-url">{link.url}</span></a>)}

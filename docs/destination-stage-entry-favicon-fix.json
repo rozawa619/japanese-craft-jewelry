@@ -1,0 +1,35 @@
+{
+  "observedAt": "2026-11-16T12:14:23.105Z",
+  "initialSupplementSummary": {
+    "checks": 20,
+    "passed": 19,
+    "failed": 1,
+    "canonicalUrls": 154,
+    "uniqueImages": 28,
+    "pageErrors": 0,
+    "consoleErrors": 1
+  },
+  "diagnosis": {
+    "page": "https://rozawa619.github.io/japanese-craft-jewelry/?entry=hosted#selection",
+    "failedResource": "https://rozawa619.github.io/favicon.ico",
+    "status": 404,
+    "cause": "Language entry omitted an explicit favicon, so Chrome requested the host-root default icon.",
+    "resolution": "Explicit local SVG favicon using the same subpath helper as the rest of the site."
+  },
+  "followup": {
+    "resolved": true,
+    "checkedAt": "2026-11-16T12:21:19.903Z",
+    "iconUrl": "https://rozawa619.github.io/japanese-craft-jewelry/favicon.svg",
+    "status": 200,
+    "report": "docs/destination-stage-hosted-supplement-results.json",
+    "summary": {
+      "checks": 20,
+      "passed": 20,
+      "failed": 0,
+      "canonicalUrls": 154,
+      "uniqueImages": 28,
+      "pageErrors": 0,
+      "consoleErrors": 0
+    }
+  }
+}

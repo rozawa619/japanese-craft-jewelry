@@ -1,0 +1,256 @@
+{
+  "checkedAt": "2026-11-16T12:49:35.069Z",
+  "method": "Focused current-build visual regression after semantic accessibility/Disclosure corrections: EN/JA home and RINZEN at1440/390/320. Verify one banner, masthead containment, native brand/language names, upper-right language control, Japanese primary and international secondary price, decoded image, viewport fit and current screenshots. No external navigation or account actions.",
+  "checks": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "kind": "home",
+      "status": "passed",
+      "prices": {
+        "japan": 4620
+      },
+      "dimensions": {
+        "width": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "screenshot": "artifacts/market-stage-header-en-1440-home.png"
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "kind": "rinzen",
+      "status": "passed",
+      "prices": {
+        "japan": 26400,
+        "international": 288
+      },
+      "dimensions": {
+        "width": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "screenshot": "artifacts/market-stage-header-en-1440-rinzen.png"
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "kind": "home",
+      "status": "passed",
+      "prices": {
+        "japan": 4620
+      },
+      "dimensions": {
+        "width": 390,
+        "document": 390,
+        "body": 390
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "screenshot": "artifacts/market-stage-header-en-390-home.png"
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "kind": "rinzen",
+      "status": "passed",
+      "prices": {
+        "japan": 26400,
+        "international": 288
+      },
+      "dimensions": {
+        "width": 390,
+        "document": 390,
+        "body": 390
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "screenshot": "artifacts/market-stage-header-en-390-rinzen.png"
+    },
+    {
+      "locale": "en",
+      "width": 320,
+      "kind": "home",
+      "status": "passed",
+      "prices": {
+        "japan": 4620
+      },
+      "dimensions": {
+        "width": 320,
+        "document": 320,
+        "body": 320
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "screenshot": "artifacts/market-stage-header-en-320-home.png"
+    },
+    {
+      "locale": "en",
+      "width": 320,
+      "kind": "rinzen",
+      "status": "passed",
+      "prices": {
+        "japan": 26400,
+        "international": 288
+      },
+      "dimensions": {
+        "width": 320,
+        "document": 320,
+        "body": 320
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "screenshot": "artifacts/market-stage-header-en-320-rinzen.png"
+    },
+    {
+      "locale": "ja",
+      "width": 1440,
+      "kind": "home",
+      "status": "passed",
+      "prices": {
+        "japan": 4620
+      },
+      "dimensions": {
+        "width": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "screenshot": "artifacts/market-stage-header-ja-1440-home.png"
+    },
+    {
+      "locale": "ja",
+      "width": 1440,
+      "kind": "rinzen",
+      "status": "passed",
+      "prices": {
+        "japan": 26400,
+        "international": 288
+      },
+      "dimensions": {
+        "width": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "screenshot": "artifacts/market-stage-header-ja-1440-rinzen.png"
+    },
+    {
+      "locale": "ja",
+      "width": 390,
+      "kind": "home",
+      "status": "passed",
+      "prices": {
+        "japan": 4620
+      },
+      "dimensions": {
+        "width": 390,
+        "document": 390,
+        "body": 390
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "screenshot": "artifacts/market-stage-header-ja-390-home.png"
+    },
+    {
+      "locale": "ja",
+      "width": 390,
+      "kind": "rinzen",
+      "status": "passed",
+      "prices": {
+        "japan": 26400,
+        "international": 288
+      },
+      "dimensions": {
+        "width": 390,
+        "document": 390,
+        "body": 390
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "screenshot": "artifacts/market-stage-header-ja-390-rinzen.png"
+    },
+    {
+      "locale": "ja",
+      "width": 320,
+      "kind": "home",
+      "status": "passed",
+      "prices": {
+        "japan": 4620
+      },
+      "dimensions": {
+        "width": 320,
+        "document": 320,
+        "body": 320
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "screenshot": "artifacts/market-stage-header-ja-320-home.png"
+    },
+    {
+      "locale": "ja",
+      "width": 320,
+      "kind": "rinzen",
+      "status": "passed",
+      "prices": {
+        "japan": 26400,
+        "international": 288
+      },
+      "dimensions": {
+        "width": 320,
+        "document": 320,
+        "body": 320
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "screenshot": "artifacts/market-stage-header-ja-320-rinzen.png"
+    }
+  ],
+  "screenshots": [
+    "artifacts/market-stage-header-en-1440-home.png",
+    "artifacts/market-stage-header-en-1440-rinzen.png",
+    "artifacts/market-stage-header-en-390-home.png",
+    "artifacts/market-stage-header-en-390-rinzen.png",
+    "artifacts/market-stage-header-en-320-home.png",
+    "artifacts/market-stage-header-en-320-rinzen.png",
+    "artifacts/market-stage-header-ja-1440-home.png",
+    "artifacts/market-stage-header-ja-1440-rinzen.png",
+    "artifacts/market-stage-header-ja-390-home.png",
+    "artifacts/market-stage-header-ja-390-rinzen.png",
+    "artifacts/market-stage-header-ja-320-home.png",
+    "artifacts/market-stage-header-ja-320-rinzen.png"
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "completedAt": "2026-11-16T12:49:44.547Z",
+  "summary": {
+    "checks": 12,
+    "passed": 12,
+    "failed": 0,
+    "screenshots": 12,
+    "pageErrors": 0,
+    "consoleErrors": 0
+  },
+  "manualVisualReview": {
+    "reviewedAt": "2026-11-16T12:50:06.314Z",
+    "status": "passed",
+    "reviewedScreenshots": [
+      "artifacts/market-stage-header-en-1440-home.png",
+      "artifacts/market-stage-header-ja-320-home.png",
+      "artifacts/market-stage-header-en-390-rinzen.png"
+    ],
+    "observations": [
+      "The desktop header, masthead and hero retain their intended alignment after the single-banner semantic change.",
+      "The320px Japanese brand/menu/English button remain distinct and inside the viewport.",
+      "The English390px RINZEN page retains the prominent Japanese reference price and correct Japan official CTA.",
+      "No visual regression requiring another source change was found."
+    ]
+  }
+}

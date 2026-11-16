@@ -21,7 +21,7 @@ for(const entry of readdirSync(root)){
 }
 const evidence=resolve(delivery,'screenshots',JSON.parse(readFileSync(resolve(root,'package.json'),'utf8')).version);
 mkdirSync(evidence,{recursive:true});
-for(const entry of readdirSync(resolve(root,'artifacts')).filter(entry=>(entry.startsWith('destination-stage-')||entry.startsWith('destination-regions-'))&&!entry.includes('-review')&&entry.endsWith('.png'))){
+for(const entry of readdirSync(resolve(root,'artifacts')).filter(entry=>entry.startsWith('market-stage-')&&!entry.includes('-review')&&entry.endsWith('.png'))){
  const image=resolve(root,'artifacts',entry);if(existsSync(image))cpSync(image,resolve(evidence,entry));
 }
 console.log('Current source exported; any previous export was preserved as a backup:',source);

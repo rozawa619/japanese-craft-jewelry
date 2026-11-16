@@ -1,10 +1,12 @@
 {
-  "version": "0.9.0",
+  "version": "0.10.0",
   "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
   "branch": "main",
-  "status": "local_verified_awaiting_publish",
+  "status": "local_focused_verified_awaiting_deploy",
   "applicationCommit": null,
   "actions": null,
+  "previousDeployedVersion": "0.9.0",
+  "previousDeployedApplicationCommit": "e74cab62b76071867fd9ebd6991aebcbea05ae2b",
   "publicUrls": {
     "entry": "https://rozawa619.github.io/japanese-craft-jewelry/",
     "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
@@ -17,15 +19,54 @@
     "currentImages": 28,
     "missingImages": 0,
     "stores": 13,
-    "productsWithStores": 25
+    "productsWithStores": 25,
+    "sources": 132
+  },
+  "pricing": {
+    "primaryMarket": "japan",
+    "primaryLocales": [
+      "ja",
+      "en"
+    ],
+    "internationalPrice": "separate verified storefront price",
+    "currencyConversion": false,
+    "physicalStorePrices": "unconfirmed"
   },
   "localVerification": {
-    "full": "docs/destination-stage-browser-results.json",
-    "regions": "docs/destination-stage-regions-results.json",
-    "visualFollowup": "docs/destination-stage-regions-focus-results.json",
-    "ads": "docs/destination-stage-ad-build-results.json",
-    "external": "docs/destination-stage-external-links.json"
+    "typeFiles": 71,
+    "unitTestsPassed": 62,
+    "generatedHtmlPages": 170,
+    "hrefSrcReferences": 8662,
+    "anchors": 1177,
+    "ordinaryRetailerLinks": 618,
+    "sponsoredLinks": 0,
+    "inlineScriptHashes": 373,
+    "inertJsonBlocks": 154,
+    "focused": "docs/market-stage-browser-results.json",
+    "full": "docs/market-stage-full-browser-results.json",
+    "ads": "docs/market-stage-ad-build-results.json",
+    "adScenariosPassed": 6,
+    "focusedSummary": {
+      "checks": 79,
+      "passed": 79,
+      "failed": 0,
+      "dualMarketProducts": 9,
+      "productDetailChecks": 66,
+      "axeScreens": 18,
+      "axeViolations": 0,
+      "screenshots": 6,
+      "pageErrors": 0,
+      "consoleErrors": 0
+    },
+    "fullStatus": "running"
   },
-  "hostedVerification": null,
-  "updatedAt": "2026-11-16T12:10:16.075Z"
+  "hostedVerification": {
+    "status": "not_yet_run_for_0.10.0"
+  },
+  "updatedAt": "2026-11-16T12:57:09.324Z",
+  "limitations": [
+    "No physical-store price or stock guarantee.",
+    "No exchange-rate or all-in shipping/tax price claim.",
+    "No affiliate application, approval or AdSense setup."
+  ]
 }

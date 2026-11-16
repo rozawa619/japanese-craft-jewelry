@@ -1,0 +1,327 @@
+{
+  "checkedAt": "2026-11-16T12:35:36.808Z",
+  "method": "Focused fresh-Chrome local market-price review after0.10build. Twelve captures: RINZEN EN/JA at1440/390/320, EN320card, EN390hero, Tokyo regional rows390/320, unknown-price CO.COON EN390, and RINZEN EN320sticky. Reference expectations independently use raw catalog, not the presentation helper. No external navigation or form actions.",
+  "checks": [
+    {
+      "name": "rinzen-en-1440",
+      "kind": "rinzen",
+      "locale": "en",
+      "width": 1440,
+      "productId": "rinzen-seika-amber-pierced-earrings",
+      "route": "objects/rinzen-seika-amber-pierced-earrings/",
+      "status": "passed",
+      "facts": {
+        "japan": 26400,
+        "international": 288,
+        "japanHref": "https://www.thebecos.com/products/s0138-028",
+        "internationalHref": "https://en.thebecos.com/products/s0138-028?currency=USD",
+        "visitAnchor": "#official-and-visit-rinzen-seika-amber-pierced-earrings",
+        "visitAnchorClicked": true
+      },
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "screenshot": "artifacts/market-stage-manual-rinzen-en-1440.png"
+    },
+    {
+      "name": "rinzen-en-390",
+      "kind": "rinzen",
+      "locale": "en",
+      "width": 390,
+      "productId": "rinzen-seika-amber-pierced-earrings",
+      "route": "objects/rinzen-seika-amber-pierced-earrings/",
+      "status": "passed",
+      "facts": {
+        "japan": 26400,
+        "international": 288,
+        "japanHref": "https://www.thebecos.com/products/s0138-028",
+        "internationalHref": "https://en.thebecos.com/products/s0138-028?currency=USD",
+        "visitAnchor": "#official-and-visit-rinzen-seika-amber-pierced-earrings",
+        "visitAnchorClicked": true
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "screenshot": "artifacts/market-stage-manual-rinzen-en-390.png"
+    },
+    {
+      "name": "rinzen-en-320",
+      "kind": "rinzen",
+      "locale": "en",
+      "width": 320,
+      "productId": "rinzen-seika-amber-pierced-earrings",
+      "route": "objects/rinzen-seika-amber-pierced-earrings/",
+      "status": "passed",
+      "facts": {
+        "japan": 26400,
+        "international": 288,
+        "japanHref": "https://www.thebecos.com/products/s0138-028",
+        "internationalHref": "https://en.thebecos.com/products/s0138-028?currency=USD",
+        "visitAnchor": "#official-and-visit-rinzen-seika-amber-pierced-earrings",
+        "visitAnchorClicked": true
+      },
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "screenshot": "artifacts/market-stage-manual-rinzen-en-320.png"
+    },
+    {
+      "name": "rinzen-ja-1440",
+      "kind": "rinzen",
+      "locale": "ja",
+      "width": 1440,
+      "productId": "rinzen-seika-amber-pierced-earrings",
+      "route": "objects/rinzen-seika-amber-pierced-earrings/",
+      "status": "passed",
+      "facts": {
+        "japan": 26400,
+        "international": 288,
+        "japanHref": "https://www.thebecos.com/products/s0138-028",
+        "internationalHref": "https://en.thebecos.com/products/s0138-028?currency=USD",
+        "visitAnchor": "#official-and-visit-rinzen-seika-amber-pierced-earrings",
+        "visitAnchorClicked": true
+      },
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "screenshot": "artifacts/market-stage-manual-rinzen-ja-1440.png"
+    },
+    {
+      "name": "rinzen-ja-390",
+      "kind": "rinzen",
+      "locale": "ja",
+      "width": 390,
+      "productId": "rinzen-seika-amber-pierced-earrings",
+      "route": "objects/rinzen-seika-amber-pierced-earrings/",
+      "status": "passed",
+      "facts": {
+        "japan": 26400,
+        "international": 288,
+        "japanHref": "https://www.thebecos.com/products/s0138-028",
+        "internationalHref": "https://en.thebecos.com/products/s0138-028?currency=USD",
+        "visitAnchor": "#official-and-visit-rinzen-seika-amber-pierced-earrings",
+        "visitAnchorClicked": true
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "screenshot": "artifacts/market-stage-manual-rinzen-ja-390.png"
+    },
+    {
+      "name": "rinzen-ja-320",
+      "kind": "rinzen",
+      "locale": "ja",
+      "width": 320,
+      "productId": "rinzen-seika-amber-pierced-earrings",
+      "route": "objects/rinzen-seika-amber-pierced-earrings/",
+      "status": "passed",
+      "facts": {
+        "japan": 26400,
+        "international": 288,
+        "japanHref": "https://www.thebecos.com/products/s0138-028",
+        "internationalHref": "https://en.thebecos.com/products/s0138-028?currency=USD",
+        "visitAnchor": "#official-and-visit-rinzen-seika-amber-pierced-earrings",
+        "visitAnchorClicked": true
+      },
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "screenshot": "artifacts/market-stage-manual-rinzen-ja-320.png"
+    },
+    {
+      "name": "en-320-card",
+      "kind": "card",
+      "locale": "en",
+      "width": 320,
+      "route": "objects/?prefecture=tokyo#all-jewelry",
+      "productId": "rinzen-seika-amber-pierced-earrings",
+      "status": "passed",
+      "facts": {
+        "productId": "rinzen-seika-amber-pierced-earrings",
+        "japan": 26400,
+        "checkedAt": "2026-11-16"
+      },
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "screenshot": "artifacts/market-stage-manual-en-320-card.png"
+    },
+    {
+      "name": "en-390-hero",
+      "kind": "hero",
+      "locale": "en",
+      "width": 390,
+      "route": "",
+      "status": "passed",
+      "facts": {
+        "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+        "japan": 4620,
+        "checkedAt": "2026-11-16"
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "screenshot": "artifacts/market-stage-manual-en-390-hero.png"
+    },
+    {
+      "name": "en-390-tokyo",
+      "kind": "region",
+      "locale": "en",
+      "width": 390,
+      "route": "places/",
+      "productId": "rinzen-seika-amber-pierced-earrings",
+      "status": "passed",
+      "facts": {
+        "productId": "rinzen-seika-amber-pierced-earrings",
+        "japan": 26400,
+        "checkedAt": "2026-11-16"
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "screenshot": "artifacts/market-stage-manual-en-390-tokyo.png"
+    },
+    {
+      "name": "en-320-tokyo",
+      "kind": "region",
+      "locale": "en",
+      "width": 320,
+      "route": "places/",
+      "productId": "rinzen-seika-amber-pierced-earrings",
+      "status": "passed",
+      "facts": {
+        "productId": "rinzen-seika-amber-pierced-earrings",
+        "japan": 26400,
+        "checkedAt": "2026-11-16"
+      },
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "screenshot": "artifacts/market-stage-manual-en-320-tokyo.png"
+    },
+    {
+      "name": "en-390-unknown-cocoon",
+      "kind": "unknown",
+      "locale": "en",
+      "width": 390,
+      "route": "objects/cocoon-ori-nonhole-earrings/",
+      "productId": "cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "facts": {
+        "priceUnknown": true,
+        "catalogHref": "https://www.co-coon.info/gallery",
+        "visitAnchor": "#official-and-visit-cocoon-ori-nonhole-earrings",
+        "visitAnchorClicked": true
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "screenshot": "artifacts/market-stage-manual-en-390-unknown-cocoon.png"
+    },
+    {
+      "name": "en-320-sticky",
+      "kind": "sticky",
+      "locale": "en",
+      "width": 320,
+      "route": "objects/rinzen-seika-amber-pierced-earrings/",
+      "productId": "rinzen-seika-amber-pierced-earrings",
+      "status": "passed",
+      "facts": {
+        "japan": 26400,
+        "international": 288,
+        "japanHref": "https://www.thebecos.com/products/s0138-028",
+        "internationalHref": "https://en.thebecos.com/products/s0138-028?currency=USD",
+        "visitAnchor": "#official-and-visit-rinzen-seika-amber-pierced-earrings"
+      },
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "screenshot": "artifacts/market-stage-manual-en-320-sticky.png"
+    }
+  ],
+  "screenshots": [
+    "artifacts/market-stage-manual-rinzen-en-1440.png",
+    "artifacts/market-stage-manual-rinzen-en-390.png",
+    "artifacts/market-stage-manual-rinzen-en-320.png",
+    "artifacts/market-stage-manual-rinzen-ja-1440.png",
+    "artifacts/market-stage-manual-rinzen-ja-390.png",
+    "artifacts/market-stage-manual-rinzen-ja-320.png",
+    "artifacts/market-stage-manual-en-320-card.png",
+    "artifacts/market-stage-manual-en-390-hero.png",
+    "artifacts/market-stage-manual-en-390-tokyo.png",
+    "artifacts/market-stage-manual-en-320-tokyo.png",
+    "artifacts/market-stage-manual-en-390-unknown-cocoon.png",
+    "artifacts/market-stage-manual-en-320-sticky.png"
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "completedAt": "2026-11-16T12:35:45.003Z",
+  "summary": {
+    "checks": 12,
+    "passed": 12,
+    "failed": 0,
+    "screenshots": 12,
+    "pageErrors": 0,
+    "consoleErrors": 0
+  },
+  "manualVisualReview": {
+    "reviewedAt": "2026-11-16T12:37:05.244Z",
+    "status": "passed; minor hero-date finding corrected and rechecked",
+    "reviewedScreenshots": [
+      "artifacts/market-stage-manual-rinzen-en-1440.png",
+      "artifacts/market-stage-manual-rinzen-en-390.png",
+      "artifacts/market-stage-manual-rinzen-en-320.png",
+      "artifacts/market-stage-manual-rinzen-ja-1440.png",
+      "artifacts/market-stage-manual-rinzen-ja-390.png",
+      "artifacts/market-stage-manual-rinzen-ja-320.png",
+      "artifacts/market-stage-manual-en-320-card.png",
+      "artifacts/market-stage-manual-en-390-hero.png",
+      "artifacts/market-stage-manual-en-390-tokyo.png",
+      "artifacts/market-stage-manual-en-320-tokyo.png",
+      "artifacts/market-stage-manual-en-390-unknown-cocoon.png",
+      "artifacts/market-stage-manual-en-320-sticky.png"
+    ],
+    "observations": [
+      "RINZEN shows the confirmed Japanese online JPY26400 reference as the dominant price in both languages at1440/390/320, paired with the Japanese official listing.",
+      "The secondary USD288 panel is visibly separate and labeled as an international storefront price, not a currency conversion.",
+      "The same-page shop-information link actually reaches the existing visit guide. The320px sticky uses the Japanese price and the same Japan destination.",
+      "The English card and regional rows show JPY26400. The home hero shows the correct Japanese JPY4620 reference for Morphosphere.",
+      "CO.COON remains unpriced, with no invented numeric price, confirmation date or foreign-market price. Its official catalog and visit guide remain accessible."
+    ],
+    "findings": [
+      {
+        "id": "hero-price-date-wrap",
+        "severity": "minor visual polish",
+        "status": "resolved by final-build six-viewport hero recheck",
+        "screenshot": "artifacts/market-stage-manual-en-390-hero.png",
+        "observation": "The English390px hero price column wraps the final16 of the checked date onto a second line. Values and destination are correct; consider keeping this date on one line.",
+        "resolutionReport": "docs/market-stage-hero-followup-results.json"
+      }
+    ],
+    "updatedAt": "2026-11-16T12:40:32.442Z"
+  }
+}

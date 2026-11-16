@@ -1,0 +1,170 @@
+{
+  "checkedAt": "2026-11-16T12:40:03.433Z",
+  "method": "Focused final-build hero check after the price/date column CSS correction. Fresh Chrome, EN/JA at1440/390/320; raw-catalog Japanese price/date, unbroken date line, no horizontal overflow, current illustration decoded before crop. No external navigation or account action.",
+  "checks": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "status": "passed",
+      "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "amount": 4620,
+      "currency": "JPY",
+      "checkedAt": "2026-11-16",
+      "dateLayout": {
+        "text": "Checked 2026-11-16",
+        "lineTops": [
+          756
+        ],
+        "whiteSpace": "nowrap"
+      },
+      "dimensions": {
+        "width": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "screenshot": "artifacts/market-stage-manual-hero-en-1440.png"
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "status": "passed",
+      "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "amount": 4620,
+      "currency": "JPY",
+      "checkedAt": "2026-11-16",
+      "dateLayout": {
+        "text": "Checked 2026-11-16",
+        "lineTops": [
+          975
+        ],
+        "whiteSpace": "nowrap"
+      },
+      "dimensions": {
+        "width": 390,
+        "document": 390,
+        "body": 390
+      },
+      "screenshot": "artifacts/market-stage-manual-hero-en-390.png"
+    },
+    {
+      "locale": "en",
+      "width": 320,
+      "status": "passed",
+      "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "amount": 4620,
+      "currency": "JPY",
+      "checkedAt": "2026-11-16",
+      "dateLayout": {
+        "text": "Checked 2026-11-16",
+        "lineTops": [
+          991
+        ],
+        "whiteSpace": "nowrap"
+      },
+      "dimensions": {
+        "width": 320,
+        "document": 320,
+        "body": 320
+      },
+      "screenshot": "artifacts/market-stage-manual-hero-en-320.png"
+    },
+    {
+      "locale": "ja",
+      "width": 1440,
+      "status": "passed",
+      "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "amount": 4620,
+      "currency": "JPY",
+      "checkedAt": "2026-11-16",
+      "dateLayout": {
+        "text": "確認：2026-11-16",
+        "lineTops": [
+          759
+        ],
+        "whiteSpace": "nowrap"
+      },
+      "dimensions": {
+        "width": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "screenshot": "artifacts/market-stage-manual-hero-ja-1440.png"
+    },
+    {
+      "locale": "ja",
+      "width": 390,
+      "status": "passed",
+      "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "amount": 4620,
+      "currency": "JPY",
+      "checkedAt": "2026-11-16",
+      "dateLayout": {
+        "text": "確認：2026-11-16",
+        "lineTops": [
+          902
+        ],
+        "whiteSpace": "nowrap"
+      },
+      "dimensions": {
+        "width": 390,
+        "document": 390,
+        "body": 390
+      },
+      "screenshot": "artifacts/market-stage-manual-hero-ja-390.png"
+    },
+    {
+      "locale": "ja",
+      "width": 320,
+      "status": "passed",
+      "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "amount": 4620,
+      "currency": "JPY",
+      "checkedAt": "2026-11-16",
+      "dateLayout": {
+        "text": "確認：2026-11-16",
+        "lineTops": [
+          852
+        ],
+        "whiteSpace": "nowrap"
+      },
+      "dimensions": {
+        "width": 320,
+        "document": 320,
+        "body": 320
+      },
+      "screenshot": "artifacts/market-stage-manual-hero-ja-320.png"
+    }
+  ],
+  "screenshots": [
+    "artifacts/market-stage-manual-hero-en-1440.png",
+    "artifacts/market-stage-manual-hero-en-390.png",
+    "artifacts/market-stage-manual-hero-en-320.png",
+    "artifacts/market-stage-manual-hero-ja-1440.png",
+    "artifacts/market-stage-manual-hero-ja-390.png",
+    "artifacts/market-stage-manual-hero-ja-320.png"
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "completedAt": "2026-11-16T12:40:10.057Z",
+  "summary": {
+    "checks": 6,
+    "passed": 6,
+    "failed": 0,
+    "screenshots": 6,
+    "pageErrors": 0,
+    "consoleErrors": 0
+  },
+  "manualVisualReview": {
+    "reviewedAt": "2026-11-16T12:40:32.442Z",
+    "status": "passed",
+    "reviewedScreenshots": [
+      "artifacts/market-stage-manual-hero-en-1440.png",
+      "artifacts/market-stage-manual-hero-en-390.png",
+      "artifacts/market-stage-manual-hero-en-320.png",
+      "artifacts/market-stage-manual-hero-ja-1440.png",
+      "artifacts/market-stage-manual-hero-ja-390.png",
+      "artifacts/market-stage-manual-hero-ja-320.png"
+    ],
+    "observation": "All six final-build hero captures preserve the full checked date on one line, with the verified Japanese reference price and no clipped price text. Product titles wrap within the remaining column. The original EN390hero capture has been replaced with the final result."
+  }
+}

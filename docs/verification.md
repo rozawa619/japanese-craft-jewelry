@@ -1,6 +1,18 @@
-# 0.9 最新検証（2026-11-16）
+# 0.10 最新検証（2026-11-16）
 
-仕様009が最新。30商品/12都道府県/13技法/28画像、公式URL全30、13店舗/25商品と5商品の公式案内。65files型0/0/0、51/51、170HTML・8523 href/src・1117anchor・600通常0広告・373実行CSP hash・154JSON、14旧移動。退役7画像のdist除外PASS。
+仕様010が最新。日英の主表示を国内通販参考価格へ統一し、9商品の海外ストア実価格と購入先は別枠。原価格・確認日・通常URL・未申請状態を保持。国内実店舗の価格/在庫や独自為替換算は含めない。
+
+型71filesで0 errors/warnings/hints、62/62単体、132出典・30商品/13店舗の参照PASS。最終build170HTML、8662 href/src、1177anchor、618通常/0広告、373実行JS CSP hash、154JSON、14旧移動。技術公開readinessもPASS。
+
+最終価格browser79/79、66商品詳細照合、日英1440/390/320、18画面の全ルールaxe0、JS/console0。価格目視12/12、hero再確認6/6、共通header再確認12/12。隔離広告6/6、実catalog/dist不変、承認時56/1/14、fallback各0広告。初回検出の可視名/landmark/一覧開示を修正した経緯は010validationとinitial-resultsに保持。
+
+全体browserと実公開はmarket-stageの各最終report、010validation、deployment-resultsのversion/時刻を参照。未実行の公開工程や旧0.9の結果を今回の成功へ転用しない。申請・承認・AdSense導入・検索流入・売上は未確認。
+
+---
+
+# 0.9 検証履歴（2026-11-16）
+
+仕様009が最新。30商品/12都道府県/13技法/28画像、公式URL全30、13店舗/25商品と5商品の公式案内。65files型0/0/0、51/51、170HTML・8524 href/src・1117anchor・600通常0広告・373実行CSP hash・154JSON、14旧移動。退役7画像のdist除外PASS。
 
 ローカル全体256/256・222画面・axe0・JS/console0、産地85/85（全60クリック往復・axe18画面0）、広告隔離5/5（36/14/0/0/0 sponsored、rootdist/catalog不変）。画像見切れ/英語地名の修正後focus19/19・18画面axe0、36行cropを目視確認。配信の確定結果は009validation・destination-stage結果・deployment-resultsで確認。
 
@@ -115,3 +127,7 @@ https://rozawa619.github.io/ito-craft/en/ — HTTP200、noindex。Actions run 43
 仕様005。3公式ページの情報順序を参照し独自の見出し/装い/選定理由を追加。主CTA→下部closed details、mobile追従は主CTA通過後のみ/フッター隠し。共有事実・価格・未知値・広告は不変（product-copy-integrity-results）。型0/0/0・42単体・56HTML・1819内部参照・43アンカー・172通常/0広告・14旧移動PASS。localbrowser81/81（日英54画面、axe/JS/console0）、最終カード6/6、広告5/5。最新ローカル結果はappeal-browser-results/appeal-ad-build-results。公開確認は配信後にdeploymentへ記録。
 
 0.5公開確定：be3d316、Actions43839206515 success。公開81/81・54画面、補足10/10、axe/JS/console0。40正規URL全200、14旧移動、4closed panels/価格CTA優先、追従CTA、SORA/画像/Contact、CSP98script整合。最終report: appeal-hosted-results.json。過去7reportはSHA不変。
+
+## 0.9 公開最終確認
+
+2026-11-16T12:21:19.903Z UTC記録。最終app e74cab62b76071867fd9ebd6991aebcbea05ae2b、Actions 43865116261 success。公開全体256/256・222画面、axe0、JS/console0。公開地域85/85・実クリック往復60、目視5/5、補足20/20、正規URL154全200/メタ確認、現行画像28全200/SHA一致。入口faviconのhost-root404をサブパス内SVG指定で修正・公開再確認済み。詳細はdestination-stage-hosted-*とentry-favicon-fix、deployment-results。

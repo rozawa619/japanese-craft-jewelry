@@ -1,0 +1,92 @@
+{
+  "version": "0.9.0",
+  "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
+  "branch": "main",
+  "status": "deployed_and_verified",
+  "applicationCommit": "e74cab62b76071867fd9ebd6991aebcbea05ae2b",
+  "actions": {
+    "id": 43865116261,
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/43865116261",
+    "workflowUpdatedAt": "2026-11-16T12:17:33Z"
+  },
+  "publicUrls": {
+    "entry": "https://rozawa619.github.io/japanese-craft-jewelry/",
+    "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+    "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/"
+  },
+  "content": {
+    "products": 30,
+    "prefectures": 12,
+    "crafts": 13,
+    "currentImages": 28,
+    "missingImages": 0,
+    "stores": 13,
+    "productsWithStores": 25
+  },
+  "localVerification": {
+    "full": "docs/destination-stage-browser-results.json",
+    "regions": "docs/destination-stage-regions-results.json",
+    "visualFollowup": "docs/destination-stage-regions-focus-results.json",
+    "ads": "docs/destination-stage-ad-build-results.json",
+    "external": "docs/destination-stage-external-links.json"
+  },
+  "hostedVerification": {
+    "status": "passed",
+    "full": "docs/destination-stage-hosted-browser-results.json",
+    "fullSummary": {
+      "checks": 256,
+      "passed": 256,
+      "failed": 0,
+      "pages": 222,
+      "axeViolations": 0,
+      "screenshots": 31
+    },
+    "regions": "docs/destination-stage-hosted-regions-results.json",
+    "regionSummary": {
+      "checks": 85,
+      "passed": 85,
+      "failed": 0,
+      "screenshots": 12,
+      "rankedRegions": 10,
+      "additionalRegions": 2,
+      "actualRegionAndRepresentativeRoundtrips": 60,
+      "pageErrors": 0,
+      "consoleErrors": 0
+    },
+    "manual": "docs/destination-stage-hosted-manual-results.json",
+    "manualSummary": {
+      "checks": 5,
+      "passed": 5,
+      "pageErrors": 0,
+      "consoleErrors": 0,
+      "failed": 0
+    },
+    "supplement": "docs/destination-stage-hosted-supplement-results.json",
+    "supplementSummary": {
+      "checks": 20,
+      "passed": 20,
+      "failed": 0,
+      "canonicalUrls": 154,
+      "uniqueImages": 28,
+      "pageErrors": 0,
+      "consoleErrors": 0
+    },
+    "entryFaviconFix": "docs/destination-stage-entry-favicon-fix.json"
+  },
+  "updatedAt": "2026-11-16T12:21:19.903Z",
+  "basicHostedObservation": {
+    "status": 200,
+    "regionalRows": 12,
+    "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/"
+  },
+  "initialApplicationCommit": "befb4d0ee4a975fc6cb6c29cf176223f9c8c3499",
+  "priorDeployment": {
+    "id": 43864334881,
+    "conclusion": "success",
+    "applicationCommit": "befb4d0ee4a975fc6cb6c29cf176223f9c8c3499"
+  },
+  "verificationScopeNote": "Regional/product checks began on the main0.9 deployment; the only later app change adds the language-entry favicon. That fix is deployed and independently rechecked. No product/region/affiliate/image sources changed between these app commits.",
+  "finalizedAt": "2026-11-16T12:21:19.903Z"
+}

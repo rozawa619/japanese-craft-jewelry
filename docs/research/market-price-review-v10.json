@@ -1,0 +1,108 @@
+{
+  "checkedAt": "2026-11-16",
+  "scope": "Read-only review of the same RINZEN Seika amber earring listing on BECOS Japan and BECOS Global, and the official explanation of market-price differences. No cart, checkout, purchase, contact or account action was performed. Canonical prices were not changed.",
+  "method": "Official product HTML was fetched and the body was read directly after web tooling returned access/cache errors. The selected English currency was USD, confirmed by visible price and product price/currency meta values. Official shipping policy and FAQ body were read through web tooling.",
+  "product": {
+    "handle": "s0138-028",
+    "nameJa": "【ピアス】アメリカンピアス 星華 -seika- 2ヶ (琥珀) | 切子 | 凛然",
+    "nameEn": "AMERICAN PIERCED EARRINGS -seika- (AMBER) 2 PIECES | KIRIKO | RINZEN",
+    "japan": {
+      "url": "https://www.thebecos.com/products/s0138-028",
+      "amount": 26400,
+      "currency": "JPY",
+      "taxStatus": "tax included",
+      "market": "Japanese domestic storefront",
+      "evidence": "Visible Japanese product price and price meta identify JPY26400; the price label is tax-inclusive."
+    },
+    "global": {
+      "url": "https://en.thebecos.com/products/s0138-028?currency=USD",
+      "amount": 288,
+      "currency": "USD",
+      "taxStatus": "Not an all-in landed-price claim; import duties and taxes can be separate checkout lines.",
+      "market": "BECOS Global, overseas-customer storefront",
+      "evidence": "Visible product price and product price/currency meta identify USD288. The product page places a checkout-based shipping calculation notice immediately below the displayed price."
+    }
+  },
+  "verifiedPolicy": {
+    "priceDifferenceExplanation": {
+      "url": "https://en.thebecos.com/pages/shopping-guide",
+      "officialFaqHeading": "Why does BECOS Global cost more than the Japanese store?",
+      "summary": "The official FAQ identifies Global as a store dedicated to customers outside Japan and explains that the total reflects international shipping and English order/return support. It separately discusses the treatment of customs duties collected at checkout and the carrier’s duty-advancement fee.",
+      "limit": "This is a general explanation of the total, not an itemized calculation of the difference between this SKU’s Japanese and Global product prices. No exact amount of the USD288 price is identified as shipping."
+    },
+    "shipping": {
+      "url": "https://en.thebecos.com/pages/shipping-policy",
+      "standardGeneralRatesUsd": {
+        "northAmericaEuropeOceaniaAfrica": 25,
+        "asia": 15,
+        "freeShippingOrderThreshold": 250
+      },
+      "conditions": [
+        "The official product page and policy state that final shipping is shown at checkout.",
+        "The Global policy lists standard shipping free for orders USD250 and above, while selected/large items and other shipping methods can be exceptions.",
+        "USD288 is above the stated general threshold, but no destination or final checkout was supplied or tested. A SKU-specific total or universally free delivery is not established."
+      ]
+    },
+    "dutiesAndTaxes": {
+      "url": "https://en.thebecos.com/pages/shipping-policy",
+      "summary": "Depending on the destination and order, import duties/taxes may be calculated and charged as a separate checkout line. If collected there, the store handles payment to customs and the specified carrier advancement fee. If not collected, duties or taxes may be due on delivery under destination rules.",
+      "limit": "Do not describe the USD288 product price as including all destination taxes, customs duties or express-shipping charges."
+    }
+  },
+  "makerDirectFollowup": {
+    "checkedAt": "2026-11-16",
+    "method": "The maker’s official store page linked to www.rin-zenshop.com. A fresh Chrome instance loaded the public home, accessories category, matching product page and usage/legal guide normally with200 responses. No cart action, checkout, contact or account operation was performed.",
+    "officialLinkage": {
+      "makerStoreGuideUrl": "https://rin-zen.com/shop.html",
+      "linkedOfficialShopUrl": "https://www.rin-zenshop.com/",
+      "evidence": "The maker’s page explicitly links its Online Shop to this host; the shop identifies itself as the workshop-operated RINZEN online store."
+    },
+    "matchingProduct": {
+      "nameJa": "アメリカンピアス 星華-seika- アンバー セット",
+      "url": "https://www.rin-zenshop.com/product/-seika-/60?cp=true&sa=false&sbp=false&q=false&category_id=4",
+      "categoryUrl": "https://www.rin-zenshop.com/shop/c/4",
+      "amount": 26400,
+      "currency": "JPY",
+      "taxStatus": "tax included, established by the official usage/legal guide",
+      "size": "Approximately H27 ×W17 ×D6mm",
+      "matchBasis": "Name Seika, amber color, set description and dimensions match the BECOS Seika amber pair. The maker uses its own product60 URL; a shared manufacturer SKU code across the two stores is not published in the reviewed body.",
+      "onlineAvailabilityObservation": "The matching amber listing did not display the sold-out notice seen on the adjacent blue/purple alternatives and presented a color selection and add-to-cart control. This is a current listing observation, not a promise of inventory or completed purchase.",
+      "physicalStorePrice": null,
+      "physicalStoreInventory": "unconfirmed"
+    },
+    "officialUsageGuide": {
+      "url": "https://www.rin-zenshop.com/about",
+      "observations": [
+        "The official legal section states that all displayed product prices include tax.",
+        "Shipping is a separate charge, with domestic delivery only according to this guide.",
+        "The guide’s domestic shipping threshold and rates are online-order terms and do not establish a physical-store retail price."
+      ]
+    },
+    "physicalStoreGuide": {
+      "url": "https://rin-zen.com/shop.html",
+      "nameJa": "東京ガラス工房 凛然",
+      "addressJa": "東京都江戸川区平井5-42-6 1F",
+      "limits": "The official page establishes the public shop location and hours, but does not publish this earring’s physical-store price or current store stock."
+    },
+    "conclusionJa": "国内向け参考価格26,400円（税込）は、BECOS日本語店に加え、作り手の公式直営通販でも確認できました。ただし、これは通販の表示価格です。平井の実店舗で同額・在庫ありと確認したものではありません。『現地なら必ず安い』『店頭26,400円』という断定は避け、国内向け価格の参考と店舗への案内を区別します。"
+  },
+  "conclusion": {
+    "ja": "単なる通貨換算ではなく、日本国内向けと海外向けの別ストアの表示価格です。公式FAQは海外向け総額に国際配送と英語での注文・返品サポートなどが反映されると説明しています。ただし、26,400円と288米ドルの差額をすべて送料とする内訳は示していません。送料はチェックアウトで計算され、輸入税・関税は別行になる場合があります。",
+    "en": "These are the displayed prices of separate domestic and international storefronts, not a currency conversion. BECOS explains that its Global total reflects international delivery and English order/return support. It does not itemize the entire product-price difference as shipping. Final shipping and any applicable import duties/taxes must be checked separately at checkout."
+  },
+  "displayImplications": [
+    "Preserve verified storefront prices and original currencies; do not replace either with an invented exchange-rate conversion.",
+    "Label the relevant domestic/international store market clearly when a language switch changes the retailer and price.",
+    "A brief market distinction can explain why prices change without adding unsupported landed-cost promises.",
+    "The detailed shipping and tax explanation belongs in this research record or applicable buyer guidance; no claim that the introduction site sells or ships is needed."
+  ],
+  "sources": [
+    { "id": "rinzen-seika-market-ja-v10", "url": "https://www.thebecos.com/products/s0138-028", "checkedAt": "2026-11-16", "access": "body_read", "supports": ["Same handle and amber pair; visible JPY26400 tax-included Japanese-store price"] },
+    { "id": "rinzen-seika-market-en-v10", "url": "https://en.thebecos.com/products/s0138-028?currency=USD", "checkedAt": "2026-11-16", "access": "body_read", "supports": ["Same handle and amber pair; selected USD288 product price; checkout-based shipping notice; general international delivery and separate duty information"] },
+    { "id": "becos-global-price-faq-v10", "url": "https://en.thebecos.com/pages/shopping-guide", "checkedAt": "2026-11-16", "access": "body_read", "supports": ["Official general explanation of higher Global total: international shipping and English order/return support, with conditional prepaid-duty handling; no SKU-level price-gap breakdown"] },
+    { "id": "becos-global-shipping-v10", "url": "https://en.thebecos.com/pages/shipping-policy", "checkedAt": "2026-11-16", "access": "body_read", "supports": ["Final shipping determined at checkout; general USD250 standard-free-shipping threshold; import duties/taxes may be separate checkout or delivery charges"] },
+    { "id": "rinzen-direct-shop-link-v10", "url": "https://rin-zen.com/shop.html", "checkedAt": "2026-11-16", "access": "body_read", "supports": ["Maker explicitly links www.rin-zenshop.com as its Online Shop; public Hirai shop address and hours; no SKU store price or store inventory"] },
+    { "id": "rinzen-direct-seika-amber-v10", "url": "https://www.rin-zenshop.com/product/-seika-/60?cp=true&sa=false&sbp=false&q=false&category_id=4", "checkedAt": "2026-11-16", "access": "body_read", "supports": ["Maker-direct online Seika amber set listed JPY26400; H27xW17xD6mm; matching item attributes; current page did not show sold-out notice; no physical inventory/price established"] },
+    { "id": "rinzen-direct-price-terms-v10", "url": "https://www.rin-zenshop.com/about", "checkedAt": "2026-11-16", "access": "body_read", "supports": ["All official online displayed prices are tax-inclusive; shipping separate; online shipping limited to Japan; does not establish physical-store item price"] }
+  ]
+}

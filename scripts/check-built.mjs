@@ -5,6 +5,7 @@ import { loadEnvFile } from 'node:process';
 import { createHash } from 'node:crypto';
 import { resolveRetailerLink, policyForLink, linksInLocale } from '../src/lib/affiliate.ts';
 import {collectVisitValidationErrors,officialProductLinks,storeMapLinks} from '../src/lib/visits.ts';
+import {validateMarketRetailerAnchor} from './market-link-policy.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 for (const name of ['.env.production.local', '.env.production', '.env.local', '.env']) {
@@ -229,7 +230,10 @@ for (const [file, page] of pages) {
         if ((tag.attrs['data-sponsored'] === 'true') !== isSponsored) fail(file, 'retailer data-sponsored and rel disagree');
         let href;
         try { href = new URL(tag.attrs.href).href; } catch { fail(file, 'retailer link is not an absolute URL'); }
-        if (!expectedRetailerLinksFor(localeMatch?.[1]||'en').has(`${isSponsored}|${href}`)) fail(file, 'retailer link does not match the page language and current catalog approval state');
+        if('data-purchase-market' in tag.attrs){
+          const market=validateMarketRetailerAnchor(tag.attrs,localeMatch?.[1]||'en',catalog);
+          if(!market.valid)fail(file,'invalid purchase-market retailer link: '+market.reason);
+        }else if (!expectedRetailerLinksFor(localeMatch?.[1]||'en').has(`${isSponsored}|${href}`)) fail(file, 'retailer link does not match the page language and current catalog approval state');
       }
       if (isSponsored) {
         sponsoredLinks++;

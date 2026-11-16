@@ -2,10 +2,12 @@
 import {catalog,productsFor,resolve,linksFor} from '../lib/catalog';
 import {pagePath} from '../config/site';
 import {t,type Locale} from '../lib/i18n';
-interface Props {productIds?:string[];scope?:'page'|'site';locale?:Locale;compact?:boolean}
-const {productIds,scope='page',locale='en',compact=false}=Astro.props;
+import {marketPricesFor,type PriceMarket} from '../lib/market-prices';
+interface Props {productIds?:string[];scope?:'page'|'site';locale?:Locale;compact?:boolean;purchaseMarket?:PriceMarket;linkIds?:string[]}
+const {productIds,scope='page',locale='en',compact=false,purchaseMarket,linkIds}=Astro.props;
 const visibleIds=productIds??productsFor(locale).map(p=>p.id);
-const activeLinks=linksFor(visibleIds,locale).filter(l=>resolve(l)?.sponsored);
+const allowedIds=linkIds?new Set(linkIds):purchaseMarket?new Set(visibleIds.flatMap(id=>{const markets=marketPricesFor(id);return (purchaseMarket==='japan'?markets.japanLinks:markets.internationalLinks).map(link=>link.id)})):null;
+const activeLinks=linksFor(visibleIds,locale).filter(link=>(!allowedIds||allowedIds.has(link.id))&&resolve(link)?.sponsored);
 const active=activeLinks.length>0;
 const programs=catalog.programs.filter(p=>activeLinks.some(l=>l.programId===p.id)&&p.disclosure);
 const message=compact&&scope==='page'

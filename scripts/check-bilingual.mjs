@@ -11,7 +11,7 @@ import {fileURLToPath} from 'node:url';
 const root=fileURLToPath(new URL('../',import.meta.url));
 if(existsSync(resolve(root,'.env')))process.loadEnvFile(resolve(root,'.env'));
 const origin=process.env.CHECK_BASE_URL||'http://127.0.0.1:4321';
-const screenshotPrefix=(process.env.CHECK_SCREENSHOT_PREFIX||'destination-stage').replace(/[^a-zA-Z0-9_-]/g,'-');
+const screenshotPrefix=(process.env.CHECK_SCREENSHOT_PREFIX||'market-stage-full').replace(/[^a-zA-Z0-9_-]/g,'-');
 const base='/'+(process.env.PUBLIC_BASE_PATH||'').split('/').filter(Boolean).join('/')+((process.env.PUBLIC_BASE_PATH||'').split('/').filter(Boolean).length?'/':'');
 const route=(locale,path='')=>new URL(base+locale+'/'+path,origin).href;
 const catalog=JSON.parse(await readFile(resolve(root,'src/data/catalog.json'),'utf8'));
@@ -26,7 +26,7 @@ const featuredByKind={featurePierced:selected[0],featureClip:selected[1],...Obje
 const unillustrated=Object.fromEntries(published.filter(product=>!editorialImages[product.id]).map((product,index)=>['productAdditional'+index,product]));
 const routes={...Object.fromEntries(Object.entries(unillustrated).map(([kind,product])=>[kind,'objects/'+product.slug+'/'])),home:'',objects:'objects/',product:'objects/'+longest.slug+'/',...Object.fromEntries(Object.entries(featuredByKind).map(([kind,product])=>[kind,'objects/'+product.slug+'/'])),regions:'places/',region:'places/kanagawa/',craft:'crafts/hakone-yosegi/',policy:'editorial-policy/'};
 const legacyTargets={"":"objects/","hakone-yosegi-pierced-earrings":"objects/hamamatsuya-surgical-stainless-pierced-earrings/","hakone-yosegi-non-pierced-earrings":"objects/hamamatsuya-yosegi-non-pierced-earrings/","everyday-craft-earrings":"objects/","pierced-or-clip-on":"objects/","buying-from-overseas":"objects/","understanding-yosegi":"crafts/hakone-yosegi/"};
-const report={checkedAt:new Date().toISOString(),origin,base,method:'Fresh headless Chrome with no existing user profile. EN/JA routes, product appeal before technical detail, visible price/retailer action, native details, no-blog/no-Contact navigation, unpublished Contact 404, all registered styling images, materials and combined filters, language switching, query/hash, jewelry scope, UI and accessibility checks. Does not open retailer destinations or submit affiliate applications.',checks:[],pages:[],screenshots:[],pageErrors:[],consoleErrors:[],failures:[]};
+const report={checkedAt:new Date().toISOString(),origin,base,method:'Fresh headless Chrome with no existing user profile. EN/JA routes, product appeal before technical detail, source-based Japan reference price and matching main retailer destination in both languages, native details, no-blog/no-Contact navigation, unpublished Contact 404, all registered styling images, materials and combined filters, language switching, query/hash, jewelry scope, UI and accessibility checks with every axe rule enabled. Does not open retailer destinations or submit affiliate applications.',checks:[],pages:[],screenshots:[],pageErrors:[],consoleErrors:[],failures:[]};
 await mkdir(resolve(root,'artifacts'),{recursive:true});
 const browser=await chromium.launch({channel:'chrome',headless:true});
 const check=async(name,action)=>{try{const detail=await action();report.checks.push({name,status:'passed',...(detail===undefined?{}:{detail})});console.log('PASS '+name)}catch(error){const message=error instanceof Error?error.message:String(error);report.checks.push({name,status:'failed',message});report.failures.push({name,message});console.error('FAIL '+name+': '+message)}};
@@ -155,15 +155,20 @@ try{
      }
      const activeProduct=kind.startsWith('feature')?featuredByKind[kind]:kind==='product'?longest:unillustrated[kind]||null;
      if(activeProduct){
-      const official=catalog.links.find(link=>link.productId===activeProduct.id&&(!link.locale||link.locale===locale));
-      assert.ok(official,'A destination matching the current page language is required.');
-      assert.equal(await page.locator('[data-product-primary-cta] a[data-sponsored]').first().getAttribute('href'),official.officialProductUrl,'A Japanese page must not silently use the English storefront destination.');
-      const localPrice=locale==='ja'?activeProduct.localizedPrices?.ja:null;
-      const currency=localPrice?.currency||activeProduct.priceCurrency;
-      const amount=localPrice?.amount??activeProduct.priceAmount;
-      const visiblePrice=await page.locator('[data-product-price]').innerText();
-      if(currency)assert.ok(visiblePrice.includes(currency),'Displayed currency must match the verified storefront price.');
-      if(amount!==null)assert.ok(visiblePrice.replace(/[^0-9.]/g,'').startsWith(String(amount)),'Displayed amount must use source data, not a conversion.');
+      // Independent source-data oracle: language never changes the main Japan market.
+      const sourceLinks=catalog.links.filter(link=>link.productId===activeProduct.id);
+      const official=sourceLinks.find(link=>link.locale==='ja')||sourceLinks.find(link=>!link.locale&&(!activeProduct.priceCurrency||activeProduct.priceCurrency==='JPY'));
+      assert.ok(official,'The main Japan reference needs a verified Japan or shared maker destination.');
+      assert.equal(await page.locator('[data-product-primary-cta] a[data-sponsored]').first().getAttribute('href'),official.officialProductUrl,'Both languages must pair the primary Japan reference price with the Japan destination.');
+      const domestic=activeProduct.localizedPrices?.ja;
+      const japanPrice=domestic?.currency==='JPY'?{amount:domestic.amount,currency:domestic.currency,checkedAt:domestic.checkedAt}:activeProduct.priceCurrency==='JPY'&&activeProduct.priceAmount!==null?{amount:activeProduct.priceAmount,currency:'JPY',checkedAt:activeProduct.priceCheckedAt}:null;
+      const primaryPrice=page.locator('[data-product-price]'),visiblePrice=(await primaryPrice.innerText()).replace(/\s+/g,' ').trim();
+      assert.equal(await primaryPrice.getAttribute('data-price-market'),'japan');
+      if(japanPrice){
+       const expected=new Intl.NumberFormat(locale==='ja'?'ja-JP':'en',{style:'currency',currency:'JPY',currencyDisplay:'code',minimumFractionDigits:0,maximumFractionDigits:0}).format(japanPrice.amount).replace(/\s+/g,' ').trim();
+       assert.equal(visiblePrice,expected,'Displayed amount must use the recorded Japan source, not a conversion.');
+       assert.equal(await primaryPrice.getAttribute('data-price-checked-at'),japanPrice.checkedAt);
+      }else assert.doesNotMatch(visiblePrice,/[0-9]|JPY|USD/,'An unknown Japan price must remain unknown in both languages.');
      }
      const visitFlow=activeProduct?await assertVisitGuide(page,activeProduct,locale,catalog,visits):null;
      let purchaseFlow=null;
@@ -175,7 +180,7 @@ try{
      }
      const measured=['home','objects','product'].includes(kind)||kind.startsWith('feature')||kind.startsWith('productAdditional');
      let axe=null;
-     if(measured){const result=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();axe=result.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.map(n=>n.target)}));assert.equal(axe.length,0,JSON.stringify(axe))}
+     if(measured){const result=await new AxeBuilder({page}).analyze();axe=result.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.map(n=>n.target)}));assert.equal(axe.length,0,JSON.stringify(axe))}
      const retail=await page.locator('a[data-sponsored]').evaluateAll(links=>links.map(link=>({sponsored:link.getAttribute('data-sponsored'),rel:link.getAttribute('rel')})));
      for(const link of retail){assert.equal(link.sponsored,'false');assert.equal(link.rel.split(/\s+/).includes('sponsored'),false)}
      report.pages.push({viewport:viewport.name,locale,kind,url:page.url(),status:response.status(),dimensions:dims,axeViolations:axe,retailerLinks:retail.length});
@@ -318,7 +323,7 @@ try{
  report.completedAt=new Date().toISOString();
  report.finalizedAt=report.completedAt;
  report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,pages:report.pages.length,axeViolations:report.pages.reduce((sum,page)=>sum+(page.axeViolations?.length||0),0),screenshots:report.screenshots.length};
- await writeFile(resolve(root,process.env.CHECK_REPORT_PATH||'docs/destination-stage-browser-results.json'),JSON.stringify(report,null,2)+'\n');
+ await writeFile(resolve(root,process.env.CHECK_REPORT_PATH||'docs/market-stage-full-browser-results.json'),JSON.stringify(report,null,2)+'\n');
  console.log(JSON.stringify(report.summary));
  if(report.failures.length)process.exitCode=1;
 }

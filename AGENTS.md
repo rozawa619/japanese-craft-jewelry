@@ -1,7 +1,7 @@
 # 次のAIへの開始手順
 
 1. `README.md`、`docs/handoff.md`、`docs/constitution.md` を読み、現在の公開・申請状態を確認する。
-2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/009-destination-selection/` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
+2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/010-market-prices/` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
 3. `src/lib/schema.ts`、`src/data/catalog.json`、`src/lib/affiliate.ts`、`src/content.config.ts` を読み、既存の分離を維持する。
 4. 変更後はリスクに応じた検証を実行し、仕様・タスク・変更履歴・引継ぎを実態に合わせて更新する。公開や提携承認を推測しない。
 
@@ -59,4 +59,7 @@ Node.js 24.22.1以上、pnpm 11.25.0。初回は `pnpm install --frozen-lockfile
 
 ## 0.9以降の産地セレクト
 トップ/商品セレクト/産地一覧はRegionSelectionで左に産地・右に代表商品1点を表示。2025年観光庁確報表6-1の訪問率TOP10順と、順位外の佐賀/石川を区別する。ランキングの正本はresearch/tourism-top10-v9.json、表示設定はsrc/config/region-selection.ts。年度/全目的/複数回答の指標を示し、商品人気順位と混同しない。地域は非空の公開本文+商品が必要。代表商品の所属・全画像・地域クリック・queryリンクの#all-jewelry着地を検証する。
-全公開30商品は28画像でカバー。モデルは27–33歳方向でかわいい系/美人系を混ぜ、ほくろ/シミを入れない。18K未登録は解消。preserveRatio画像のペンダント/リングを切らず、長い英語地名もスマホで単語途中改行させない。旧locked画像はlocalRetiredPathでGit/書出し除外、pnpm build末尾でdistから個別除外。旧写真を商品実物の証拠へ転用しない。最新版は009validationとdestination-stage結果。
+全公開30商品は28画像でカバー。モデルは27–33歳方向でかわいい系/美人系を混ぜ、ほくろ/シミを入れない。18K未登録は解消。preserveRatio画像のペンダント/リングを切らず、長い英語地名もスマホで単語途中改行させない。旧locked画像はlocalRetiredPathでGit/書出し除外、pnpm build末尾でdistから個別除外。旧写真を商品実物の証拠へ転用しない。この版の実測は009validationとdestination-stage結果、最新010は次節。
+
+## 0.10以降の価格と言語・購入市場
+日英の主価格は日本向け通販の確認済み参考価格。market-prices.tsはcanonicalのlocalizedPrices.jaまたはJPY原値から選び、USD等の海外ストア原値を換算/上書きしない。海外価格は別枠、店頭価格は未確認なら断定しない。カード/地域/hero/比較/詳細/stickyはMarketPriceを使い、対応する市場のMarketPurchaseLinkと同じURLへ。ENの国内参照/JAの海外参照は通常公式URLのみで、表示言語を理由に別リンク承認を流用しない。既存resolver不変、Disclosureは実表示market/linkIdsのみ。価格unknownは0にしない。差額をすべて送料としない。最新は010validationとmarket-stage結果。
