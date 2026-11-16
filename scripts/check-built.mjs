@@ -2,6 +2,7 @@ import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { dirname, extname, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadEnvFile } from 'node:process';
+import { createHash } from 'node:crypto';
 import { resolveRetailerLink, policyForLink } from '../src/lib/affiliate.ts';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -20,6 +21,8 @@ let checkedAnchors = 0;
 let retailerLinks = 0;
 let sponsoredLinks = 0;
 let legacyRedirects = 0;
+let inlineScriptHashes = 0;
+let jsonDataBlocks = 0;
 const legacyTargets = {"":"objects/","hakone-yosegi-pierced-earrings":"objects/hamamatsuya-surgical-stainless-pierced-earrings/","hakone-yosegi-non-pierced-earrings":"objects/hamamatsuya-yosegi-non-pierced-earrings/","everyday-craft-earrings":"objects/","pierced-or-clip-on":"objects/","buying-from-overseas":"objects/","understanding-yosegi":"crafts/hakone-yosegi/"};
 const fail = (file, message) => errors.push(`${relative(dist, file).replaceAll(sep, '/')}: ${message}`);
 const decode = value => value.replace(/&(?:amp|quot|apos|lt|gt|#\d+|#x[\da-f]+);/gi, entity => {
@@ -79,6 +82,27 @@ const expectedRetailerLinks = new Set(catalog.links.flatMap(link => {
 for (const [file, page] of pages) {
   const { tags, html, tokenSource } = page;
   const getMeta = (attribute, value) => tags.find(tag => tag.name === 'meta' && tag.attrs[attribute]?.toLowerCase() === value)?.attrs.content || '';
+  const csp = getMeta('http-equiv', 'content-security-policy');
+  const directives = new Map(csp.split(';').map(part => part.trim().split(/\s+/)).filter(parts => parts[0]).map(([name,...values]) => [name,values]));
+  for(const name of ['default-src','script-src'])if(!directives.get(name)?.includes("'self'"))fail(file,`CSP ${name} must restrict navigation assets to self`);
+  for(const name of ['object-src','base-uri','form-action','frame-src','connect-src'])if(directives.get(name)?.join(' ')!=="'none'")fail(file,`CSP ${name} must remain none for this static site`);
+  if(directives.get('script-src')?.some(value=>["'unsafe-inline'","'unsafe-eval'",'*'].includes(value)))fail(file,'CSP must not permit unsafe script execution');
+  for(const tag of tags)if(Object.keys(tag.attrs).some(name=>/^on[a-z]+$/i.test(name)))fail(file,'inline event-handler attribute bypasses the script policy');
+  for(const script of html.matchAll(/<script\b((?:"[^"]*"|'[^']*'|[^'">])*)>([\s\S]*?)<\/script\s*>/gi)){
+    const attrs=attributes(script[1]);
+    // JSON/JSON-LD are inert data blocks, not executable inline JavaScript.
+    // Astro intentionally does not add their hashes to script-src.
+    if(['application/ld+json','application/json'].includes((attrs.type||'').trim().toLowerCase())){
+      try{JSON.parse(script[2]);jsonDataBlocks++;}catch{fail(file,'structured JSON data block is invalid')}
+      continue;
+    }
+    if(attrs.src){try{if(new URL(attrs.src,origin+requestPath(file)).origin!==origin)fail(file,'script source must remain on this site');}catch{fail(file,'invalid script source')}}
+    else if(script[2].trim()){
+      const hash="'sha256-"+createHash('sha256').update(script[2]).digest('base64')+"'";
+      if(!directives.get('script-src')?.includes(hash))fail(file,'inline script hash is missing from CSP');
+      inlineScriptHashes++;
+    }
+  }
   if (!tags.find(tag => tag.name === 'html')?.attrs.lang) fail(file, 'missing document language');
   if (!/<title\b[^>]*>\s*[^<]+<\/title>/i.test(html)) fail(file, 'missing nonempty title');
   const redirect = !!getMeta('http-equiv', 'refresh');
@@ -152,7 +176,7 @@ for (const [file, page] of pages) {
   for (const tag of tags) {
     if (tag.name === 'a') {
       if(!redirect&&tag.attrs.href){
-        try{const destination=new URL(tag.attrs.href,origin+routePath);if(destination.origin===origin&&['en','ja'].some(locale=>destination.pathname.startsWith(base+locale+'/journal/')))fail(file,'normal content links to a retired reading route');}catch{}
+        try{const destination=new URL(tag.attrs.href,origin+routePath);if(destination.origin===origin&&['en','ja'].some(locale=>destination.pathname.startsWith(base+locale+'/journal/')))fail(file,'normal content links to a retired reading route');if(destination.origin===origin&&['en','ja'].some(locale=>destination.pathname===base+locale+'/contact/'))fail(file,'normal content links to the unpublished Contact route');}catch{}
       }
       const rel = (tag.attrs.rel || '').split(/\s+/);
       const isSponsored = rel.includes('sponsored');
@@ -181,6 +205,7 @@ for (const [file, page] of pages) {
   }
 }
 if (!existsSync(resolve(dist, '404.html')) && !existsSync(resolve(dist, '404/index.html'))) errors.push('Missing generated 404 page.');
+for(const locale of ['en','ja'])if(existsSync(resolve(dist,locale,'contact/index.html')))errors.push(`Unpublished Contact page generated for ${locale}.`);
 const sitemapFiles = walk(dist).filter(file => /(?:^|[\\/])sitemap[^\\/]*\.xml$/.test(file));
 if (!sitemapFiles.length) errors.push('Missing sitemap XML.');
 for (const file of sitemapFiles) {
@@ -192,6 +217,7 @@ for (const file of sitemapFiles) {
     for (const location of locations) {
       if (!location.startsWith(`${origin}${base}`)) fail(file, `sitemap URL does not match public origin/base: ${location}`);
       if(/\/(?:en|ja)\/journal\//.test(location))fail(file,'retired reading redirect is included in the public sitemap');
+      if(/\/(?:en|ja)\/contact\//.test(location))fail(file,'unpublished Contact route is included in the public sitemap');
       internalTarget(file, location);
     }
   }
@@ -230,4 +256,4 @@ if (errors.length) {
   for (const error of errors) console.error(`FAIL ${error}`);
   console.error(`${errors.length} generated-site problem(s).`);
   process.exitCode = 1;
-} else console.log(`PASS ${files.length} HTML pages; ${checkedLinks} href/src references; ${checkedAnchors} anchors; ${retailerLinks} retailer links (${sponsoredLinks} sponsored); ${legacyRedirects} retired reading redirects, 404, drafts, ${publicMode ? 'public' : 'preview'} metadata, sitemap and robots. Base: ${base}`);
+} else console.log(`PASS ${files.length} HTML pages; ${checkedLinks} href/src references; ${checkedAnchors} anchors; ${retailerLinks} retailer links (${sponsoredLinks} sponsored); ${inlineScriptHashes} executable inline script CSP hashes; ${jsonDataBlocks} valid inert JSON data blocks; ${legacyRedirects} retired reading redirects, 404, drafts, ${publicMode ? 'public' : 'preview'} metadata, sitemap and robots. Base: ${base}`);

@@ -1,3 +1,19 @@
+# 0.6 最新検証（2026-11-16）
+
+最新仕様は specs/006-clear-craft-selection/。現行の判定は clear-stage-browser-results.json、clear-stage-final-detail-results.json、clear-stage-ad-build-results.json、clear-stage-hosted-results.json と deployment-results.json。以下の過去記録はその版の履歴で、Contact等の古い公開要件は006へ読み替える。
+
+ローカル: Astro 51files 0 errors/warnings/hints、単体42/42、公開10商品・日英ペア・出典43件・AI画像7点（9商品へ対応）を検証。最終buildは70HTML、2542内部参照、57アンカー、212通常リンク/0広告、132実行JSのCSP hash、54 JSON/JSON-LD、旧journal14固定移動を確認。正規sitemap54URL。
+
+ブラウザ: 日英×1440/390/320、96画面、123/123、axe/JS/console問題0。Contact日英404/ナビ・sitemap不在、素材/複合/0件/解除、言語query/hash、登録画像、CTA順・追従条件。仕様補足を正確にする最終修正後は別のfinal-detail reportで追加検証する。
+
+広告: 5/5の隔離fixture。承認時34/22 sponsored、停止・欠落・未許可hostは0。root dist/実catalogは検査中不変。後続の修正はwhatToCheckの素材補足と重量不明の表示のみで、広告resolver/リンク/開示/CTA設定は変えていない。承認・広告URLはテストコピーだけで、実データは全not_applied。
+
+新商品の一次情報はBECOSの同一SKU英日ページと実画面で確認。重さ10g/8gは片耳・一組基準が不明なのでper-ear値はnull。6.KILNの裏面切替と金色部分のケアは素材詳細内へ残す。公式商品写真は内部視認のみ。
+
+公開反映は後続deployment/hosted記録がsuccessと示した時点で確定する。申請送信・提携承認・成果計測・実機全機種検査・安全保証はしていない。
+
+---
+
 # 検証記録
 
 実施日：2026-11-16（日本時間）。最終の機械可読結果は `browser-results.json`、`ad-build-results.json`、`research/link-check.json`。公開先の状態は `deployment-results.json` が作成された場合は同ファイルを優先。

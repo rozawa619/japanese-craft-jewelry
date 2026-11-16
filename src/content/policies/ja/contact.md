@@ -2,7 +2,7 @@
 title: "お問い合わせ・訂正"
 description: "記事の訂正依頼と、注文に関する問い合わせ先について。"
 locale: "ja"
-publishStatus: "published"
+publishStatus: "draft"
 updatedAt: "2026-11-16"
 sourceIds: []
 ---

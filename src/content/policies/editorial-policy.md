@@ -1,34 +1,26 @@
 ---
-title: "How we select"
-description: "How we select jewelry, distinguish facts from suggestions and keep uncertainty visible."
+title: "Our selection"
+description: "The designs we are drawn to, the information we check and how we label images and affiliate links."
 locale: "en"
 publishStatus: "published"
 updatedAt: "2026-11-16"
 sourceIds: []
 ---
 
-Japanese Craft Jewelry selects jewelry for a documented connection to a craft technique, a useful design story and enough primary information to introduce them accurately. Our scope is Japan. Current research includes yosegi pieces connected to Kanagawa, and we add regions when the evidence and editorial coverage are ready. Inclusion is an editorial choice, not a rating, certification or promise that an item suits everyone.
+A small piece can make an everyday outfit feel more like you. Japanese Craft Jewelry introduces jewelry with a connection to Japanese craft.
 
-## Evidence before claims
+## Design and the story behind it
 
-We use maker and retailer pages for product specifications and appropriate official sources for craft context. Product pages identify sources and a verification date. Prices and availability are observations at that date, not live guarantees. We mark unpublished or unresolved details as unconfirmed.
+We look at the character of wood, glass, porcelain and other materials, as well as the making behind each piece. We share what draws us to a design and ideas for wearing it with everyday clothes.
 
-We keep the maker, seller and place of production separate. General information about a technique does not establish the wood species, metal composition, certification or production location of an individual piece.
+## Details we can stand behind
 
-## Research and editorial judgment
+We check information from makers and official shops. We keep unanswered questions clear and update a page when we find new information.
 
-Our launch collection is researched from published information. We have not purchased, worn, measured or compared the products in physical tests. We do not invent customer reviews, personal experiences, professional qualifications or visits to workshops.
+## Images that are easy to understand
 
-Styling suggestions explain possible ways to choose or combine a piece of jewelry. They are editorial ideas, not findings about comfort or performance. We do not infer low weight, environmental benefits, labor conditions or safety for sensitive skin from a material name or craft origin.
+AI styling images are labeled. They are outfit ideas, not actual product photographs or exact reproductions of the jewelry.
 
-## Images and independence
+## Clear affiliate notices
 
-We publish product photographs only with an appropriate right to use them. Source credit alone is not permission. Abstract artwork is identified as illustration and does not stand in for a photograph of the actual item.
-
-Retailer links may become affiliate links only when a commercial relationship and usable link have been verified. We disclose those links close to the relevant content. Payment does not turn an unverified claim into a fact.
-
-## Corrections and updates
-
-If you identify an error, use the contact method shown on our contact page and include the page URL, the disputed detail and a primary source where possible. We review corrections against the underlying evidence and update the relevant record. A date on a product page does not imply that every external retailer page will remain unchanged afterward.
-
-Some product pages include clearly labeled AI-generated styling illustrations. These show a fictional adult model and illustrative jewelry, not a photograph of the listed product, a customer endorsement or a wear test. Patterns, dimensions, hardware and fit may differ from the actual item. Use the retailer’s current photographs and specifications for purchase decisions.
+If we use links that can earn a referral fee, we identify them as affiliate links. The same care goes into our selection whether a link earns a fee or not.

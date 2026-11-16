@@ -1,0 +1,197 @@
+{
+  "checkedAt": "2026-11-16T10:14:22.211Z",
+  "status": "passed",
+  "command": "node scripts/check-ad-build.mjs",
+  "isolation": {
+    "fixtureRoot": "artifacts/ad-build-fixture/2026-11-16T10-14-22-177Z",
+    "copies": [
+      "src",
+      "docs",
+      "public",
+      "scripts",
+      "astro.config.mjs",
+      "tsconfig.json",
+      "package.json"
+    ],
+    "nodeModules": "junction to existing dependencies",
+    "envFilesCopied": false,
+    "mode": "preview plus test-only public metadata build; no deployment",
+    "rootDistBefore": "c4b8e1f3f9a85c9ec483d4625452e06742094f7c338140e97f519ddba9ec92ab",
+    "rootDistAfter": "c4b8e1f3f9a85c9ec483d4625452e06742094f7c338140e97f519ddba9ec92ab",
+    "rootDistUnchanged": true,
+    "realCatalogUnchanged": true
+  },
+  "scenarios": [
+    {
+      "name": "approved-related-product-only",
+      "status": "passed",
+      "fixture": "artifacts/ad-build-fixture/2026-11-16T10-14-22-177Z/approved-related-product-only",
+      "settings": {
+        "mode": "preview",
+        "basePath": "/",
+        "siteUrl": "",
+        "fixtureOnly": true,
+        "deployed": false
+      },
+      "build": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T10-14-22-177Z/approved-related-product-only/build.log",
+        "summary": []
+      },
+      "generatedSiteCheck": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T10-14-22-177Z/approved-related-product-only/check-built.log",
+        "summary": [
+          "PASS 70 HTML pages; 2380 href/src references; 57 anchors; 212 retailer links (34 sponsored); 132 executable inline script CSP hashes; 0 valid inert JSON data blocks; 14 retired reading redirects, 404, drafts, preview metadata, sitemap and robots. Base: /"
+        ]
+      },
+      "htmlAssertions": {
+        "status": "passed",
+        "sponsoredCount": 34,
+        "sponsoredPages": 30,
+        "drafts": "Draft object and guide absent from generated pages, markup and sitemap when passed.",
+        "publicMetadata": "Preview noindex/canonical/sitemap rules checked by generated-site checker.",
+        "errors": []
+      }
+    },
+    {
+      "name": "approved-lower-retailer-section-only",
+      "status": "passed",
+      "fixture": "artifacts/ad-build-fixture/2026-11-16T10-14-22-177Z/approved-lower-retailer-section-only",
+      "settings": {
+        "mode": "preview",
+        "basePath": "/",
+        "siteUrl": "",
+        "fixtureOnly": true,
+        "deployed": false
+      },
+      "build": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T10-14-22-177Z/approved-lower-retailer-section-only/build.log",
+        "summary": []
+      },
+      "generatedSiteCheck": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T10-14-22-177Z/approved-lower-retailer-section-only/check-built.log",
+        "summary": [
+          "PASS 70 HTML pages; 2380 href/src references; 57 anchors; 212 retailer links (22 sponsored); 132 executable inline script CSP hashes; 0 valid inert JSON data blocks; 14 retired reading redirects, 404, drafts, preview metadata, sitemap and robots. Base: /"
+        ]
+      },
+      "htmlAssertions": {
+        "status": "passed",
+        "sponsoredCount": 22,
+        "sponsoredPages": 18,
+        "drafts": "Draft object and guide absent from generated pages, markup and sitemap when passed.",
+        "publicMetadata": "Preview noindex/canonical/sitemap rules checked by generated-site checker.",
+        "errors": []
+      }
+    },
+    {
+      "name": "paused-and-missing-url-fallback",
+      "status": "passed",
+      "fixture": "artifacts/ad-build-fixture/2026-11-16T10-14-22-177Z/paused-and-missing-url-fallback",
+      "settings": {
+        "mode": "preview",
+        "basePath": "/",
+        "siteUrl": "",
+        "fixtureOnly": true,
+        "deployed": false
+      },
+      "build": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T10-14-22-177Z/paused-and-missing-url-fallback/build.log",
+        "summary": []
+      },
+      "generatedSiteCheck": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T10-14-22-177Z/paused-and-missing-url-fallback/check-built.log",
+        "summary": [
+          "PASS 70 HTML pages; 2380 href/src references; 57 anchors; 212 retailer links (0 sponsored); 132 executable inline script CSP hashes; 0 valid inert JSON data blocks; 14 retired reading redirects, 404, drafts, preview metadata, sitemap and robots. Base: /"
+        ]
+      },
+      "htmlAssertions": {
+        "status": "passed",
+        "sponsoredCount": 0,
+        "sponsoredPages": 0,
+        "drafts": "Draft object and guide absent from generated pages, markup and sitemap when passed.",
+        "publicMetadata": "Preview noindex/canonical/sitemap rules checked by generated-site checker.",
+        "errors": []
+      }
+    },
+    {
+      "name": "unlisted-tracking-host-fallback",
+      "status": "passed",
+      "fixture": "artifacts/ad-build-fixture/2026-11-16T10-14-22-177Z/unlisted-tracking-host-fallback",
+      "settings": {
+        "mode": "preview",
+        "basePath": "/",
+        "siteUrl": "",
+        "fixtureOnly": true,
+        "deployed": false
+      },
+      "build": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T10-14-22-177Z/unlisted-tracking-host-fallback/build.log",
+        "summary": []
+      },
+      "generatedSiteCheck": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T10-14-22-177Z/unlisted-tracking-host-fallback/check-built.log",
+        "summary": [
+          "PASS 70 HTML pages; 2380 href/src references; 57 anchors; 212 retailer links (0 sponsored); 132 executable inline script CSP hashes; 0 valid inert JSON data blocks; 14 retired reading redirects, 404, drafts, preview metadata, sitemap and robots. Base: /"
+        ]
+      },
+      "htmlAssertions": {
+        "status": "passed",
+        "sponsoredCount": 0,
+        "sponsoredPages": 0,
+        "drafts": "Draft object and guide absent from generated pages, markup and sitemap when passed.",
+        "publicMetadata": "Preview noindex/canonical/sitemap rules checked by generated-site checker.",
+        "errors": []
+      }
+    },
+    {
+      "name": "test-only-public-base-metadata-and-drafts",
+      "status": "passed",
+      "fixture": "artifacts/ad-build-fixture/2026-11-16T10-14-22-177Z/test-only-public-base-metadata-and-drafts",
+      "settings": {
+        "mode": "public",
+        "basePath": "/japanese-craft-jewelry/",
+        "siteUrl": "https://rozawa619.github.io",
+        "fixtureOnly": true,
+        "deployed": false
+      },
+      "build": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T10-14-22-177Z/test-only-public-base-metadata-and-drafts/build.log",
+        "summary": []
+      },
+      "generatedSiteCheck": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T10-14-22-177Z/test-only-public-base-metadata-and-drafts/check-built.log",
+        "summary": [
+          "PASS 70 HTML pages; 2542 href/src references; 57 anchors; 212 retailer links (0 sponsored); 132 executable inline script CSP hashes; 54 valid inert JSON data blocks; 14 retired reading redirects, 404, drafts, public metadata, sitemap and robots. Base: /japanese-craft-jewelry/"
+        ]
+      },
+      "htmlAssertions": {
+        "status": "passed",
+        "sponsoredCount": 0,
+        "sponsoredPages": 0,
+        "drafts": "Draft object and guide absent from generated pages, markup and sitemap when passed.",
+        "publicMetadata": "Test-only public URL/base, canonical, OGP, sitemap and robots assertions; does not establish a successful deployment.",
+        "errors": []
+      }
+    }
+  ],
+  "completedAt": "2026-11-16T10:15:04.095Z"
+}

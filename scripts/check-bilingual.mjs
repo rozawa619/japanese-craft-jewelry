@@ -12,14 +12,16 @@ const origin=process.env.CHECK_BASE_URL||'http://127.0.0.1:4321';
 const base='/'+(process.env.PUBLIC_BASE_PATH||'').split('/').filter(Boolean).join('/')+((process.env.PUBLIC_BASE_PATH||'').split('/').filter(Boolean).length?'/':'');
 const route=(locale,path='')=>new URL(base+locale+'/'+path,origin).href;
 const catalog=JSON.parse(await readFile(resolve(root,'src/data/catalog.json'),'utf8'));
+const editorialImages=JSON.parse(await readFile(resolve(root,'src/data/editorial-images.json'),'utf8'));
 const published=catalog.products.filter(product=>product.publishStatus==='published');
 const longest=[...published].sort((a,b)=>b.title.length-a.title.length)[0];
 const selectedIds=['hamamatsuya-catch-pierced','hamamatsuya-clip'];
 const selected=selectedIds.map(id=>published.find(product=>product.id===id));
 if(selected.some(product=>!product))throw new Error('Selected product is missing from the published catalog.');
-const routes={home:'',objects:'objects/',product:'objects/'+longest.slug+'/',featurePierced:'objects/'+selected[0].slug+'/',featureClip:'objects/'+selected[1].slug+'/',regions:'places/',region:'places/kanagawa/',craft:'crafts/hakone-yosegi/',contact:'contact/'};
+const featuredByKind={featurePierced:selected[0],featureClip:selected[1],...Object.fromEntries(published.filter(product=>editorialImages[product.id]&&!selectedIds.includes(product.id)).map((product,index)=>['featureAdditional'+index,product]))};
+const routes={home:'',objects:'objects/',product:'objects/'+longest.slug+'/',...Object.fromEntries(Object.entries(featuredByKind).map(([kind,product])=>[kind,'objects/'+product.slug+'/'])),regions:'places/',region:'places/kanagawa/',craft:'crafts/hakone-yosegi/',policy:'editorial-policy/'};
 const legacyTargets={"":"objects/","hakone-yosegi-pierced-earrings":"objects/hamamatsuya-surgical-stainless-pierced-earrings/","hakone-yosegi-non-pierced-earrings":"objects/hamamatsuya-yosegi-non-pierced-earrings/","everyday-craft-earrings":"objects/","pierced-or-clip-on":"objects/","buying-from-overseas":"objects/","understanding-yosegi":"crafts/hakone-yosegi/"};
-const report={checkedAt:new Date().toISOString(),origin,base,method:'Fresh headless Chrome with no existing user profile. EN/JA route, product appeal before technical detail, visible price/retailer action, native detail disclosure, no-blog navigation, current-product language switching, query/hash, jewelry scope, UI and accessibility checks. Does not open retailer destinations.',checks:[],pages:[],screenshots:[],pageErrors:[],consoleErrors:[],failures:[]};
+const report={checkedAt:new Date().toISOString(),origin,base,method:'Fresh headless Chrome with no existing user profile. EN/JA routes, product appeal before technical detail, visible price/retailer action, native details, no-blog/no-Contact navigation, unpublished Contact 404, all registered styling images, materials and combined filters, language switching, query/hash, jewelry scope, UI and accessibility checks. Does not open retailer destinations or submit affiliate applications.',checks:[],pages:[],screenshots:[],pageErrors:[],consoleErrors:[],failures:[]};
 await mkdir(resolve(root,'artifacts'),{recursive:true});
 const browser=await chromium.launch({channel:'chrome',headless:true});
 const check=async(name,action)=>{try{const detail=await action();report.checks.push({name,status:'passed',...(detail===undefined?{}:{detail})});console.log('PASS '+name)}catch(error){const message=error instanceof Error?error.message:String(error);report.checks.push({name,status:'failed',message});report.failures.push({name,message});console.error('FAIL '+name+': '+message)}};
@@ -128,28 +130,30 @@ try{
      assert.equal(text.includes('hamamatsuya-yosegi-kanzashi'),false);
      if(locale==='ja')assert.ok((text.match(/[ぁ-んァ-ヶ一-龠]/g)||[]).length>30,'Japanese page needs translated main content.');
      assert.equal(await page.locator('a[href*="/journal/"]').count(),0,'Regular pages must not link to retired reading pages.');
+     assert.equal(await page.locator('a[href$="/en/contact/"], a[href$="/ja/contact/"]').count(),0,'Contact is intentionally unpublished and must not remain in navigation or content links.');
      if(kind==='home')assert.ok(await page.locator('[data-product-card]').count()>=2,'Home should present selected products directly.');
      if(kind.startsWith('feature')){
       const figure=page.locator('figure[data-editorial-asset]').first();
       assert.equal(await figure.count(),1);
       assert.equal(await figure.locator('figcaption').isVisible(),true,'AI/non-product caption must be visible.');assertStylingDisclosure(await figure.locator('figcaption').innerText(),locale);
       const image=figure.locator('img');
-      assert.match(await image.getAttribute('src'),kind==='featurePierced'?/hakone-yosegi-pierced-styling\.webp$/:/hakone-yosegi-clipon-styling\.webp$/);
+      const asset=editorialImages[featuredByKind[kind].id];
+      assert.ok(new URL(await image.getAttribute('src'),page.url()).pathname.endsWith('/'+asset.path));
       await image.scrollIntoViewIfNeeded();
       await image.evaluate(node=>node.decode());
       const intrinsic=await image.evaluate(node=>({width:node.naturalWidth,height:node.naturalHeight}));
-      assert.deepEqual(intrinsic,{width:1536,height:1024});
+      assert.deepEqual(intrinsic,{width:asset.width,height:asset.height});
       const peer=locale==='en'?'ja':'en';
       await switchTo(page,peer,path);await switchTo(page,locale,path);
      }
      let purchaseFlow=null;
-     if(['product','featurePierced','featureClip'].includes(kind))purchaseFlow=await assertProductFlow(page,locale);
+     if(kind==='product'||kind.startsWith('feature'))purchaseFlow=await assertProductFlow(page,locale);
      if(kind==='objects'){
       const images=page.locator('[data-product-card] figure[data-editorial-asset]');
       assert.ok(await images.count()>=2,'Both selected products should show their labeled styling images.');
       for(const figure of await images.all()){assertStylingDisclosure(await figure.locator('figcaption').innerText(),locale);}
      }
-     const measured=['home','objects','product','featurePierced','featureClip'].includes(kind);
+     const measured=['home','objects','product'].includes(kind)||kind.startsWith('feature');
      let axe=null;
      if(measured){const result=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();axe=result.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.map(n=>n.target)}));assert.equal(axe.length,0,JSON.stringify(axe))}
      const retail=await page.locator('a[data-sponsored]').evaluateAll(links=>links.map(link=>({sponsored:link.getAttribute('data-sponsored'),rel:link.getAttribute('rel')})));
@@ -157,8 +161,9 @@ try{
      report.pages.push({viewport:viewport.name,locale,kind,url:page.url(),status:response.status(),dimensions:dims,axeViolations:axe,retailerLinks:retail.length});
      return {status:response.status(),dimensions:dims,axeMeasured:measured,purchaseFlow};
     });
-    if(locale==='ja'&&kind==='featurePierced'&&['desktop','mobile'].includes(viewport.name))await screenshot(page,'artifacts/appeal-ja-'+viewport.name+'-product.png');
-    if(locale==='ja'&&kind==='featureClip'&&viewport.name==='mobile')await screenshot(page,'artifacts/appeal-ja-mobile-clip.png');
+    if(locale==='ja'&&kind==='featurePierced'&&['desktop','mobile'].includes(viewport.name))await screenshot(page,'artifacts/clear-stage-ja-'+viewport.name+'-product.png');
+    if(locale==='ja'&&kind==='featureClip'&&viewport.name==='mobile')await screenshot(page,'artifacts/clear-stage-ja-mobile-clip.png');
+    if(locale==='ja'&&kind.startsWith('featureAdditional')&&viewport.name==='mobile')await screenshot(page,'artifacts/clear-stage-ja-mobile-'+featuredByKind[kind].id+'.png');
    }
    await check(viewport.name+' '+locale+' current product switches language and returns',async()=>{
     await page.goto(route(locale,routes.product));
@@ -199,10 +204,17 @@ try{
     await page.locator('#empty-reset').click();
     assert.equal(await page.locator('[data-product-card]:visible').count(),published.length);
     assert.equal(new URL(page.url()).search,'');
+    const materials=[...new Set(published.flatMap(product=>product.materialIds))];
+    assert.ok(materials.includes('wood')&&materials.includes('glass'),'The published selection should now include both wood and glass.');
+    const materialCounts={};
+    for(const material of materials){
+     materialCounts[material]=await setFilters(page,{material});
+     for(const values of await page.locator('[data-product-card]:visible').evaluateAll(nodes=>nodes.map(node=>node.getAttribute('data-material')||'')))assert.ok(values.split(' ').includes(material),'Material filter included an unsupported product.');
+    }
     await setFilters(page,{material:'surgical-stainless-steel'});
     await page.locator('button[type="reset"]').click();
     assert.equal(await page.locator('[data-product-card]:visible').count(),published.length);
-    return {combinedCount:count,total:published.length};
+    return {combinedCount:count,total:published.length,materialCounts};
    });
    if(viewport.width<720)await check(viewport.name+' '+locale+' mobile navigation retains locale',async()=>{
     await page.goto(route(locale));
@@ -227,6 +239,7 @@ try{
     assert.equal(await page.locator('link[rel="canonical"]').count(),0);
    }
    assert.equal((await page.request.get(route(locale,'objects/hamamatsuya-yosegi-kanzashi/'))).status(),404);
+   assert.equal((await page.request.get(route(locale,'contact/'))).status(),404,'Deferred Contact route must return 404.');
   }
   await page.close();
  });
@@ -251,6 +264,7 @@ try{
   }
   const sitemap=await (await page.request.get(new URL(base+'sitemap.xml',origin).href)).text();
   assert.equal(/\/(en|ja)\/journal\//.test(sitemap),false);
+  assert.equal(/\/(en|ja)\/contact\//.test(sitemap),false);
   await page.close();return results;
  });
  await check('No uncaught client exceptions',()=>assert.deepEqual(report.pageErrors,[]));
@@ -262,7 +276,7 @@ try{
  await browser.close();
  report.completedAt=new Date().toISOString();
  report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,pages:report.pages.length,axeViolations:report.pages.reduce((sum,page)=>sum+(page.axeViolations?.length||0),0),screenshots:report.screenshots.length};
- await writeFile(resolve(root,process.env.CHECK_REPORT_PATH||'docs/appeal-browser-results.json'),JSON.stringify(report,null,2)+'\n');
+ await writeFile(resolve(root,process.env.CHECK_REPORT_PATH||'docs/clear-stage-browser-results.json'),JSON.stringify(report,null,2)+'\n');
  console.log(JSON.stringify(report.summary));
  if(report.failures.length)process.exitCode=1;
 }

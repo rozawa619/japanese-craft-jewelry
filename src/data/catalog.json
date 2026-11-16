@@ -4,6 +4,16 @@
       "id": "kanagawa",
       "name": "Kanagawa",
       "description": "Our first editorial focus: Hakone workshops and retailers. A shop address alone does not establish where an item was made."
+    },
+    {
+      "id": "tokyo",
+      "name": "Tokyo",
+      "description": "Tokyo-made kiriko jewelry, as identified in the selected product's origin information."
+    },
+    {
+      "id": "saga",
+      "name": "Saga",
+      "description": "Porcelain jewelry from 6.KILN, a brand connected to Seiroku kiln in Arita, Saga."
     }
   ],
   "crafts": [
@@ -14,6 +24,24 @@
       "sourceIds": [
         "hamamatsuya-technique",
         "hamamatsuya-craft-overview"
+      ]
+    },
+    {
+      "id": "kiriko",
+      "name": "Kiriko cut glass",
+      "description": "Glass shaped with decorative cuts and polished to bring out its reflected light. The selected RINZEN piece is listed as kiriko; an individual Edo Kiriko certification is not claimed.",
+      "sourceIds": [
+        "rinzen-brand",
+        "becos-rinzen-seika-amber"
+      ]
+    },
+    {
+      "id": "imari-arita-ware",
+      "name": "Imari-Arita porcelain",
+      "description": "White porcelain jewelry from an accessory brand born at an Arita kiln. The selected item's individual traditional-craft certification is not established.",
+      "sourceIds": [
+        "six-kiln-brand",
+        "becos-six-kiln-half-moon"
       ]
     }
   ],
@@ -32,6 +60,26 @@
       "id": "gold-18k",
       "name": "18K gold",
       "description": "Seller wording; exact fitting component coverage remains to be confirmed."
+    },
+    {
+      "id": "glass",
+      "name": "Glass",
+      "description": "Natural soda glass is named in the selected RINZEN listing."
+    },
+    {
+      "id": "porcelain",
+      "name": "Porcelain",
+      "description": "Porcelain clay is named in the selected 6.KILN listing."
+    },
+    {
+      "id": "silver-925",
+      "name": "Silver 925",
+      "description": "Listed as sv925 for the selected 6.KILN item; component-by-component coverage is not specified."
+    },
+    {
+      "id": "resin",
+      "name": "Resin",
+      "description": "Resin is listed for the selected 6.KILN item; component-by-component coverage is not specified."
     }
   ],
   "productTypes": [
@@ -75,6 +123,30 @@
         "maruyama-clip-d",
         "maruyama-pierced-c",
         "maruyama-pierced-d"
+      ]
+    },
+    {
+      "id": "rinzen",
+      "name": "RINZEN",
+      "location": "Tokyo, Japan",
+      "productionNote": "BECOS identifies Tokyo as the product origin and presents the brand as Tokyo Glass Studio rinzen. Individual component origins and certification are not established.",
+      "url": "https://en.thebecos.com/collections/rinzen",
+      "sourceIds": [
+        "rinzen-brand",
+        "becos-rinzen-seika-amber",
+        "becos-rinzen-seika-amber-ja"
+      ]
+    },
+    {
+      "id": "six-kiln",
+      "name": "6.KILN",
+      "location": "Arita, Saga, Japan",
+      "productionNote": "BECOS identifies Saga as the product origin and describes 6.KILN as an accessory brand born from Seiroku kiln in Arita. General brand-level fitting claims are not substituted for the specific item's material list.",
+      "url": "https://en.thebecos.com/collections/6-kiln",
+      "sourceIds": [
+        "six-kiln-brand",
+        "becos-six-kiln-half-moon",
+        "becos-six-kiln-half-moon-ja"
       ]
     }
   ],
@@ -122,6 +194,26 @@
         "maruyama-company",
         "maruyama-shopping-guide"
       ]
+    },
+    {
+      "id": "becos-en",
+      "name": "BECOS",
+      "url": "https://en.thebecos.com/",
+      "language": "English; separate Japanese storefront",
+      "shipping": {
+        "status": "confirmed",
+        "summary": "BECOS publishes international shipping information. The destination, item-specific availability and current delivery options still require confirmation.",
+        "countries": null,
+        "sourceIds": [
+          "becos-shipping"
+        ]
+      },
+      "returns": "The checked Legal Notice describes a seven-day report window for damaged, defective or incorrect items. The product-page summary and full return terms use different wording for other returns; do not promise a blanket return right.",
+      "sourceIds": [
+        "becos-about",
+        "becos-shipping",
+        "becos-legal"
+      ]
     }
   ],
   "programs": [
@@ -133,7 +225,9 @@
       "applicationUrl": "https://becos-en.goaffpro.com/",
       "recruitmentStatus": "open",
       "applicationStatus": "not_applied",
-      "merchantIds": [],
+      "merchantIds": [
+        "becos-en"
+      ],
       "disclosure": null,
       "affiliateAllowedHosts": []
     },
@@ -240,6 +334,26 @@
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
       "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "becos-rinzen-seika-amber-official",
+      "productId": "rinzen-seika-amber-pierced-earrings",
+      "merchantId": "becos-en",
+      "programId": "becos-en",
+      "officialProductUrl": "https://en.thebecos.com/products/s0138-028?currency=USD",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "becos-six-kiln-half-moon-official",
+      "productId": "six-kiln-half-moon-earrings",
+      "merchantId": "becos-en",
+      "programId": "becos-en",
+      "officialProductUrl": "https://en.thebecos.com/products/s0164-018?currency=USD",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
     }
   ],
   "products": [
@@ -294,9 +408,7 @@
       "editorialSummary": "Bring yosegi wood pattern to a white shirt or a favourite knit. An everyday outfit, with a little more character.",
       "whoItMaySuit": "For anyone who likes simple clothes and wants the jewelry to bring the pattern.",
       "whatToCheck": [
-        "Current photographs of the catch-back pair, dimensions, per-ear weight, wood species and finish",
-        "Steel grade and skin-contact materials; current stock, tax treatment and delivery to your destination",
-        "Kanagawa refers to the verified workshop association; individual item manufacture and official certification have not been separately audited."
+        "Wood species, surface finish and the exact steel grade are not specified in the checked official information."
       ]
     },
     {
@@ -349,9 +461,7 @@
       "editorialSummary": "Let yosegi's wooden geometry be the detail in an otherwise simple outfit. An inviting accent for a cardigan or a favourite dress.",
       "whoItMaySuit": "For soft colors, simple silhouettes and a taste for pattern in the finishing details.",
       "whatToCheck": [
-        "The exact fastening, skin-contact metals, dimensions and weight",
-        "The current pair, stock, final price and delivery to your destination",
-        "Kanagawa refers to the verified workshop association; individual item manufacture and official certification have not been separately audited."
+        "The exact clip mechanism and skin-contact metal are not specified in the checked official information."
       ]
     },
     {
@@ -405,9 +515,7 @@
       "editorialSummary": "A touch of craft for a tailored shirt or jacket, in Hamamatsuya's 18K-labelled yosegi option.",
       "whoItMaySuit": "For a polished wardrobe with room for the color and geometry of woodcraft.",
       "whatToCheck": [
-        "Sold out when checked; ask the maker whether a restock is planned",
-        "Which components the 18K wording covers, along with dimensions and per-ear weight",
-        "Kanagawa refers to the verified workshop association; individual item manufacture and official certification have not been separately audited."
+        "The exact components covered by the 18K wording are not specified."
       ]
     },
     {
@@ -460,9 +568,7 @@
       "editorialSummary": "A wooden mosaic focal point for a plain knit or a simple dress. Bring yosegi color and geometry to the centre of your outfit.",
       "whoItMaySuit": "For simple necklines that leave room for one distinctive pendant.",
       "whatToCheck": [
-        "Chain metal, closure, weight, finish and whether its length can be adjusted",
-        "Current stock, final price, tax treatment and delivery to your destination",
-        "Kanagawa refers to the verified workshop association; individual item manufacture and official certification have not been separately audited."
+        "The chain metal, closure and length-adjustment options are not specified in the checked official information."
       ]
     },
     {
@@ -568,9 +674,7 @@
       "editorialSummary": "A star-like wooden motif, with colors radiating from the centre. Choose it for a playful detail that puts yosegi in the spotlight.",
       "whoItMaySuit": "For anyone drawn to a playful motif and the color combinations of wooden jewelry.",
       "whatToCheck": [
-        "The current pair's pattern, fastening, skin-contact metal, dimensions and weight",
-        "Current stock, final shipping cost and destination acceptance",
-        "The retailer is in Hakone, Kanagawa; this item's manufacturer and manufacturing location are not confirmed."
+        "The fitting metal, dimensions and per-ear weight are not specified in the checked product listing."
       ]
     },
     {
@@ -621,9 +725,7 @@
       "editorialSummary": "A long wooden bar traced with chevron-like pattern. A clear, geometric accent for linen, shirts and earthy colors.",
       "whoItMaySuit": "For a love of straight lines, natural textures and beige, brown or olive palettes.",
       "whatToCheck": [
-        "The current pair's pattern, fastening, skin-contact metal, dimensions and weight",
-        "Current stock, final shipping cost and destination acceptance",
-        "The retailer is in Hakone, Kanagawa; this item's manufacturer and manufacturing location are not confirmed."
+        "The fitting metal, dimensions and per-ear weight are not specified in the checked product listing."
       ]
     },
     {
@@ -674,9 +776,7 @@
       "editorialSummary": "Star-like yosegi earrings for a little playfulness with a white T-shirt or denim. Enjoy the wood colors radiating through the motif.",
       "whoItMaySuit": "For relaxed outfits that welcome a playful, patterned finishing touch.",
       "whatToCheck": [
-        "The current pair's pattern, piercing fitting, skin-contact metal, dimensions and weight",
-        "Current stock, final shipping cost and destination acceptance",
-        "The retailer is in Hakone, Kanagawa; this item's manufacturer and manufacturing location are not confirmed."
+        "The fitting metal, dimensions and per-ear weight are not specified in the checked product listing."
       ]
     },
     {
@@ -727,9 +827,117 @@
       "editorialSummary": "Long wooden bars and chevron-like pattern give these yosegi earrings a graphic feel. Try them with a black top or an understated shirt.",
       "whoItMaySuit": "For understated wardrobes that use jewelry to bring in color and a stronger line.",
       "whatToCheck": [
-        "The current pair's pattern, piercing fitting, skin-contact metal, dimensions and weight",
-        "Current stock, final shipping cost and destination acceptance",
-        "The retailer is in Hakone, Kanagawa; this item's manufacturer and manufacturing location are not confirmed."
+        "The fitting metal, dimensions and per-ear weight are not specified in the checked product listing."
+      ]
+    },
+    {
+      "id": "rinzen-seika-amber-pierced-earrings",
+      "slug": "rinzen-seika-amber-pierced-earrings",
+      "locale": "en",
+      "title": "RINZEN Seika amber glass chain earrings",
+      "originalTitle": "【ピアス】アメリカンピアス 星華 -seika- 2ヶ (琥珀) | 切子 | 凛然",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "tokyo"
+      ],
+      "craftIds": [
+        "kiriko"
+      ],
+      "materialIds": [
+        "glass"
+      ],
+      "makerId": "rinzen",
+      "craftClassification": {
+        "label": "Contemporary kiriko jewelry by RINZEN; individual Edo Kiriko certification is not established.",
+        "sourceIds": [
+          "becos-rinzen-seika-amber",
+          "rinzen-brand"
+        ]
+      },
+      "size": "Listed dimensions: W 1.7 × D 0.6 × H 2.7 cm. The listing does not separately specify the full chain length.",
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": "Chain-through pierced earrings; the Japanese listing explicitly describes threading the chain through the piercing.",
+      "priceAmount": 288,
+      "priceCurrency": "USD",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "USD storefront display checked on the stated date; tax inclusion was not established.",
+      "availability": "listed",
+      "merchantIds": [
+        "becos-en"
+      ],
+      "sourceIds": [
+        "becos-rinzen-seika-amber",
+        "becos-rinzen-seika-amber-ja",
+        "rinzen-brand"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "Amber glass, a star-like cut and a fine chain: a warm point of light to wear with charcoal, black or a crisp white shirt.",
+      "whoItMaySuit": "For a wardrobe of clean lines, or anyone drawn to warm amber and a little geometric sparkle.",
+      "whatToCheck": [
+        "The exact chain metal and skin-contact components are not specified in the checked product material list.",
+        "The listed weight is 10 g without a clear per-ear or pair basis; full chain length is not specified.",
+        "Handmade glass may vary in color, shape and weight. The glass is not heat resistant."
+      ]
+    },
+    {
+      "id": "six-kiln-half-moon-earrings",
+      "slug": "six-kiln-half-moon-earrings",
+      "locale": "en",
+      "title": "6.KILN Half-moon porcelain earrings",
+      "originalTitle": "【イヤリング】半月 | 有田焼 | 6.kiln",
+      "publishStatus": "published",
+      "productType": [
+        "clip-on-earrings"
+      ],
+      "prefectureIds": [
+        "saga"
+      ],
+      "craftIds": [
+        "imari-arita-ware"
+      ],
+      "materialIds": [
+        "porcelain",
+        "silver-925",
+        "resin"
+      ],
+      "makerId": "six-kiln",
+      "craftClassification": {
+        "label": "Porcelain jewelry listed as Imari-Arita Wares by BECOS; individual traditional-craft certification is not established.",
+        "sourceIds": [
+          "becos-six-kiln-half-moon",
+          "six-kiln-brand"
+        ]
+      },
+      "size": "W 1.1 × D 1.4 × H 8 cm, as listed.",
+      "weightPerPieceGrams": null,
+      "findings": "The item lists porcelain clay, sv925 and resin; the material assigned to each component is not specified.",
+      "fastening": "Non-pierced earrings; the exact fitting mechanism is not specified in the checked text. A separate pierced version is a different SKU.",
+      "priceAmount": 108,
+      "priceCurrency": "USD",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "USD storefront display checked on the stated date; tax inclusion was not established.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "becos-en"
+      ],
+      "sourceIds": [
+        "becos-six-kiln-half-moon",
+        "becos-six-kiln-half-moon-ja",
+        "six-kiln-brand"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "Glossy white half-moons and fine gold-colored tassels give a simple outfit a playful, dressed-up finish.",
+      "whoItMaySuit": "For those who like sculptural shapes, white porcelain and an accent that moves with the outfit.",
+      "whatToCheck": [
+        "The maker is transitioning the reverse from white to a color matched to the fittings; either version may be supplied as a matching pair.",
+        "The listing gives a weight of 8 g without clarifying whether this is per earring or per pair. Exact skin-contact component coverage is not specified.",
+        "The gold-colored surface may scratch or peel if rubbed strongly; the product page gives gentle care guidance."
       ]
     }
   ]

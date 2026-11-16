@@ -19,17 +19,12 @@ export function checkReadiness(env: Record<string, string | undefined>): Readine
   const blockers: string[] = [];
   const information: string[] = [];
   if (!isProductionUrl(env.PUBLIC_SITE_URL)) blockers.push('PUBLIC_SITE_URL: set the real public HTTPS URL; local, placeholder and credential-bearing URLs are not publication targets.');
-  if (env.PUBLIC_PUBLISH_MODE !== 'public') blockers.push('PUBLIC_PUBLISH_MODE: set public only when the actual domain, operator and contact are ready. Preview builds remain noindex.');
+  if (env.PUBLIC_PUBLISH_MODE !== 'public') blockers.push('PUBLIC_PUBLISH_MODE: set public for the actual public URL and operating identity. Preview builds remain noindex.');
   if (!env.PUBLIC_OPERATOR_NAME?.trim()) blockers.push('PUBLIC_OPERATOR_NAME: provide the operator name or verified public operating identity to be shown.');
-  const email = env.PUBLIC_CONTACT_EMAIL?.trim();
-  const validEmail = !!email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) && !/@(?:.*\.)?example\.(?:com|org|net)$/i.test(email);
-  const repository = env.PUBLIC_REPOSITORY_URL?.trim();
-  const validRepository = isProductionUrl(repository) && new URL(repository!).pathname.split('/').filter(Boolean).length >= 2;
-  if (!validEmail && !validRepository) blockers.push('Contact: configure a real PUBLIC_CONTACT_EMAIL or a real PUBLIC_REPOSITORY_URL with a working public issue tracker.');
-  if (email && !validEmail) blockers.push('PUBLIC_CONTACT_EMAIL: replace the invalid or placeholder email address.');
-  if (repository && !validRepository) blockers.push('PUBLIC_REPOSITORY_URL: replace the invalid or incomplete repository URL.');
-  if (validRepository && !validEmail) information.push('Repository contact configured: manually confirm that Issues are enabled and a visitor can submit an editorial correction. Do not post private order details.');
-  information.push('This check does not submit an affiliate application or establish program eligibility, approval, domain ownership or contact delivery.');
+  // The operator explicitly deferred Contact. An unused contact setting is not
+  // a technical publication requirement or proof of a program's eligibility.
+  information.push('Contact is intentionally unpublished. A public Contact page is not a technical publication prerequisite; verify any program-specific requirement before applying.');
+  information.push('Application preparation is a separate, pending review: verify the current registration terms and required truthful applicant details in docs/pre-application-checklist.md. This technical check does not certify eligibility, approval, domain ownership or contact delivery, and submits nothing.');
   return { blockers, information };
 }
 
@@ -51,9 +46,9 @@ if (process.argv[1] && pathToFileURL(resolve(process.argv[1])).href === import.m
   for (const message of result.information) console.log(`INFO ${message}`);
   for (const message of result.blockers) console.error(`BLOCKER ${message}`);
   if (result.blockers.length) {
-    console.error(`NOT READY for public launch/application: ${result.blockers.length} blocker(s). A local noindex preview can still be used.`);
+    console.error(`NOT READY for technical public launch: ${result.blockers.length} blocker(s). A local noindex preview can still be used. Affiliate application readiness is assessed separately.`);
     process.exitCode = 1;
   } else {
-    console.log('PASS technical publication configuration. Confirm program-specific conditions in docs/affiliate-readiness.md before applying.');
+    console.log('PASS technical publication configuration only. APPLICATION PREPARATION: pending program-specific review; see docs/pre-application-checklist.md and docs/affiliate-readiness.md.');
   }
 }

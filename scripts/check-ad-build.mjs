@@ -12,7 +12,7 @@ const runId = new Date().toISOString().replace(/[:.]/g, '-');
 const runRoot = resolve(artifacts, runId);
 if (!runRoot.startsWith(artifacts + sep) || !isAbsolute(runRoot)) throw new Error('Fixture directory must stay inside the project artifacts directory.');
 mkdirSync(runRoot, { recursive: true });
-const reportPath = resolve(root, process.env.CHECK_AD_REPORT_PATH || 'docs/appeal-ad-build-results.json');
+const reportPath = resolve(root, process.env.CHECK_AD_REPORT_PATH || 'docs/clear-stage-ad-build-results.json');
 const readJson = file => JSON.parse(readFileSync(file, 'utf8'));
 const writeJson = (file, value) => writeFileSync(file, JSON.stringify(value, null, 2) + '\n');
 const walk = directory => existsSync(directory) ? readdirSync(directory, { withFileTypes: true }).flatMap(entry => entry.isDirectory() ? walk(resolve(directory, entry.name)) : [resolve(directory, entry.name)]) : [];
@@ -88,6 +88,8 @@ function analyze(directory, targetIds, ordinaryRoute, publicMetadata = false) {
   }
   const sitemap = readFileSync(resolve(dist, 'sitemap.xml'), 'utf8');
   if (/\/journal\//.test(sitemap)) errors.push('Retired reading routes present in sitemap');
+  if (/\/(?:en|ja)\/contact\//.test(sitemap)) errors.push('Deferred Contact route present in sitemap');
+  for (const locale of ['en','ja']) if (existsSync(resolve(dist,locale,'contact/index.html'))) errors.push('Deferred Contact page generated for '+locale);
   if (/test-only-draft/.test(sitemap)) errors.push('Draft route present in sitemap');
   if (!publicMetadata && /<loc(?:\s|>)/.test(sitemap)) errors.push('Preview sitemap unexpectedly has indexed URLs');
   if (publicMetadata) {

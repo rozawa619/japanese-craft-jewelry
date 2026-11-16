@@ -1,7 +1,7 @@
 # 次のAIへの開始手順
 
 1. `README.md`、`docs/handoff.md`、`docs/constitution.md` を読み、現在の公開・申請状態を確認する。
-2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/005-product-appeal/` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
+2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/006-clear-craft-selection/` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
 3. `src/lib/schema.ts`、`src/data/catalog.json`、`src/lib/affiliate.ts`、`src/content.config.ts` を読み、既存の分離を維持する。
 4. 変更後はリスクに応じた検証を実行し、仕様・タスク・変更履歴・引継ぎを実態に合わせて更新する。公開や提携承認を推測しない。
 
@@ -28,7 +28,7 @@ Node.js 24.22.1以上、pnpm 11.25.0。初回は `pnpm install --frozen-lockfile
 - `pnpm test`：広告状態、fallback、URL、公開設定、実データ参照の重要ケース。
 - `pnpm build`：本番静的生成。
 - `pnpm verify`：上記と生成後の内部リンク等。
-- `pnpm readiness`：実URL・公開モード・運営者・Contactの不足を検出。未設定の初期版で非0終了しても検査の誤動作ではない。
+- `pnpm readiness`：実URL・公開モード・運営者・広告設定の技術公開要件を検出。Contactは公開しない。提携申請条件は別途プログラムごとに確認する。
 - `pnpm check:links`：外部リンク。アクセス拒否や一時的エラーを即閉鎖としない。
 
 広告・データ変更では `pnpm verify` を実行する。UI変更はPCとスマホ、キーボード、長い名称、画像なし、フィルターの組合せ・解除・0件を確認する。公開設定変更はpreview/public両方のcanonical・OGP・robots・sitemapとサブパスを確認する。軽微な装飾のためだけの実装追従テストは増やさない。
@@ -47,3 +47,6 @@ Node.js 24.22.1以上、pnpm 11.25.0。初回は `pnpm install --frozen-lockfile
 
 ## 0.5以降の商品紹介
 最初に商品の魅力・装い・価格・購入先を伝える。『耳に穴がある方』等の自明な条件を選定理由にしない。仕様/確認/出典は下部detailsで見つけやすく残す。product-storiesは安定productIdの表示専用で、価格/URL/未確認仕様を複製しない。
+
+## 0.6以降の公開方針
+ユーザー最新指示によりContactは非公開・導線なし。販売/決済/発送/返品の責任説明は公開UIから除く。注文機能自体は設けない。広告・AI非実物表示は維持。木/ガラス/磁器の実商品を紹介し、申請条件の未確認事項はdocs/pre-application-checklist.mdへ分離。旧Contact必須規定より006を優先する。

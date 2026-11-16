@@ -2,7 +2,7 @@
 title: "Contact and corrections"
 description: "Report an editorial error or learn where to direct a question about an order."
 locale: "en"
-publishStatus: "published"
+publishStatus: "draft"
 updatedAt: "2026-11-16"
 sourceIds: []
 ---

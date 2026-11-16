@@ -1,0 +1,101 @@
+{
+  "checkedAt": "2026-11-16",
+  "purpose": "Research and import proposal for version 0.6: glass and porcelain jewelry. Proposed catalog, translations and story records are separated below; the catalog remains the final source of facts after import.",
+  "researchMethod": "Read BECOS English product pages and official Shopify product descriptions/data; confirmed the same SKU on BECOS Japanese pages; viewed the current English USD display and actual product photos in Chrome. Reference screenshots remain internal ignored artifacts and are not public product assets.",
+  "affiliateState": "BECOS English recruitment is a candidate only. No application, approval, product eligibility, commission or tracking URL has been obtained. Program and item links remain not_applied, affiliate URLs and verification dates null.",
+  "catalogAdditions": {
+    "prefectures": [
+      {"id":"tokyo","name":"Tokyo","description":"Tokyo-made kiriko jewelry, as identified in the selected product's origin information."},
+      {"id":"saga","name":"Saga","description":"Porcelain jewelry from 6.KILN, a brand connected to Seiroku kiln in Arita, Saga."}
+    ],
+    "crafts": [
+      {"id":"kiriko","name":"Kiriko cut glass","description":"Glass shaped with decorative cuts and polished to bring out its reflected light. The selected RINZEN piece is listed as kiriko; an individual Edo Kiriko certification is not claimed.","sourceIds":["rinzen-brand","becos-rinzen-seika-amber"]},
+      {"id":"imari-arita-ware","name":"Imari-Arita porcelain","description":"White porcelain jewelry from an accessory brand born at an Arita kiln. The selected item's individual traditional-craft certification is not established.","sourceIds":["six-kiln-brand","becos-six-kiln-half-moon"]}
+    ],
+    "materials": [
+      {"id":"glass","name":"Glass","description":"Natural soda glass is named in the selected RINZEN listing."},
+      {"id":"porcelain","name":"Porcelain","description":"Porcelain clay is named in the selected 6.KILN listing."},
+      {"id":"silver-925","name":"Silver 925","description":"Listed as sv925 for the selected 6.KILN item; component-by-component coverage is not specified."},
+      {"id":"resin","name":"Resin","description":"Resin is listed for the selected 6.KILN item; component-by-component coverage is not specified."}
+    ],
+    "makers": [
+      {"id":"rinzen","name":"RINZEN","location":"Tokyo, Japan","productionNote":"BECOS identifies Tokyo as the product origin and presents the brand as Tokyo Glass Studio rinzen. Individual component origins and certification are not established.","url":"https://en.thebecos.com/collections/rinzen","sourceIds":["rinzen-brand","becos-rinzen-seika-amber","becos-rinzen-seika-amber-ja"]},
+      {"id":"six-kiln","name":"6.KILN","location":"Arita, Saga, Japan","productionNote":"BECOS identifies Saga as the product origin and describes 6.KILN as an accessory brand born from Seiroku kiln in Arita. General brand-level fitting claims are not substituted for the specific item's material list.","url":"https://en.thebecos.com/collections/6-kiln","sourceIds":["six-kiln-brand","becos-six-kiln-half-moon","becos-six-kiln-half-moon-ja"]}
+    ],
+    "merchants": [
+      {"id":"becos-en","name":"BECOS","url":"https://en.thebecos.com/","language":"English; separate Japanese storefront","shipping":{"status":"confirmed","summary":"BECOS publishes international shipping information. The destination, item-specific availability and current delivery options still require confirmation.","countries":null,"sourceIds":["becos-shipping"]},"returns":"The checked Legal Notice describes a seven-day report window for damaged, defective or incorrect items. The product-page summary and full return terms use different wording for other returns; do not promise a blanket return right.","sourceIds":["becos-about","becos-shipping","becos-legal"]}
+    ],
+    "links": [
+      {"id":"becos-rinzen-seika-amber-official","productId":"rinzen-seika-amber-pierced-earrings","merchantId":"becos-en","programId":"becos-en","officialProductUrl":"https://en.thebecos.com/products/s0138-028?currency=USD","affiliateUrl":null,"applicationStatus":"not_applied","affiliateLinkVerifiedAt":null},
+      {"id":"becos-six-kiln-half-moon-official","productId":"six-kiln-half-moon-earrings","merchantId":"becos-en","programId":"becos-en","officialProductUrl":"https://en.thebecos.com/products/s0164-018?currency=USD","affiliateUrl":null,"applicationStatus":"not_applied","affiliateLinkVerifiedAt":null}
+    ],
+    "products": [
+      {
+        "id":"rinzen-seika-amber-pierced-earrings","slug":"rinzen-seika-amber-pierced-earrings","locale":"en","title":"RINZEN Seika amber glass chain earrings","originalTitle":"【ピアス】アメリカンピアス 星華 -seika- 2ヶ (琥珀) | 切子 | 凛然","publishStatus":"published","productType":["pierced-earrings"],"prefectureIds":["tokyo"],"craftIds":["kiriko"],"materialIds":["glass"],"makerId":"rinzen",
+        "craftClassification":{"label":"Contemporary kiriko jewelry by RINZEN; individual Edo Kiriko certification is not established.","sourceIds":["becos-rinzen-seika-amber","rinzen-brand"]},
+        "size":"Listed dimensions: W 1.7 × D 0.6 × H 2.7 cm. The listing does not separately specify the full chain length.","weightPerPieceGrams":null,"findings":null,"fastening":"Chain-through pierced earrings; the Japanese listing explicitly describes threading the chain through the piercing.","priceAmount":288,"priceCurrency":"USD","priceCheckedAt":"2026-11-16","taxNote":"USD storefront display checked on the stated date; tax inclusion was not established.","availability":"listed","merchantIds":["becos-en"],"sourceIds":["becos-rinzen-seika-amber","becos-rinzen-seika-amber-ja","rinzen-brand"],"lastVerifiedAt":"2026-11-16","imageAssetIds":[],
+        "editorialSummary":"Amber glass, a star-like cut and a fine chain: a warm point of light to wear with charcoal, black or a crisp white shirt.","whoItMaySuit":"For a wardrobe of clean lines, or anyone drawn to warm amber and a little geometric sparkle.","whatToCheck":["The exact chain metal and skin-contact components are not specified in the checked product material list.","The product is marked Backorder OK. Its listed weight is 10 g without a clear per-ear or pair basis; full chain length is not specified.","Handmade glass may vary in color, shape and weight. The glass is not heat resistant."]
+      },
+      {
+        "id":"six-kiln-half-moon-earrings","slug":"six-kiln-half-moon-earrings","locale":"en","title":"6.KILN Half-moon porcelain earrings","originalTitle":"【イヤリング】半月 | 有田焼 | 6.kiln","publishStatus":"published","productType":["clip-on-earrings"],"prefectureIds":["saga"],"craftIds":["imari-arita-ware"],"materialIds":["porcelain","silver-925","resin"],"makerId":"six-kiln",
+        "craftClassification":{"label":"Porcelain jewelry listed as Imari-Arita Wares by BECOS; individual traditional-craft certification is not established.","sourceIds":["becos-six-kiln-half-moon","six-kiln-brand"]},
+        "size":"W 1.1 × D 1.4 × H 8 cm, as listed.","weightPerPieceGrams":null,"findings":"The item lists porcelain clay, sv925 and resin; the material assigned to each component is not specified.","fastening":"Non-pierced earrings; the exact fitting mechanism is not specified in the checked text. A separate pierced version is a different SKU.","priceAmount":108,"priceCurrency":"USD","priceCheckedAt":"2026-11-16","taxNote":"USD storefront display checked on the stated date; tax inclusion was not established.","availability":"in_stock","merchantIds":["becos-en"],"sourceIds":["becos-six-kiln-half-moon","becos-six-kiln-half-moon-ja","six-kiln-brand"],"lastVerifiedAt":"2026-11-16","imageAssetIds":[],
+        "editorialSummary":"Glossy white half-moons and fine gold-colored tassels give a simple outfit a playful, dressed-up finish.","whoItMaySuit":"For those who like sculptural shapes, white porcelain and an accent that moves with the outfit.","whatToCheck":["The maker is transitioning the reverse from white to a color matched to the fittings; either version may be supplied as a matching pair.","The listing gives a weight of 8 g without clarifying whether this is per earring or per pair. Exact skin-contact component coverage is not specified.","The gold-colored surface may scratch or peel if rubbed strongly; the product page gives gentle care guidance."]
+      }
+    ]
+  },
+  "programUpdateProposal": {
+    "id":"becos-en",
+    "merchantIds":["becos-en"],
+    "description":"Candidate program for the BECOS English storefront. Two editorial product listings are included with ordinary links; account approval and item eligibility are unconfirmed.",
+    "applicationStatus":"not_applied",
+    "affiliateAllowedHosts":[],
+    "note":"Do not change recruitment, disclosure or approval fields by inference. Setting programId here only expresses the intended candidate relationship, not eligibility or an advertising relationship."
+  },
+  "translationsJa": {
+    "prefectures":{"tokyo":{"name":"東京都","description":"切子の耳飾りから出会う、東京の工芸ジュエリー。"},"saga":{"name":"佐賀県","description":"有田の窯から生まれた、白磁のジュエリー。"}},
+    "crafts":{"kiriko":{"name":"切子","description":"ガラスにカットを施し、磨いて光を引き出す技法。掲載商品は凛然の切子で、個別の江戸切子認証は確認していません。"},"imari-arita-ware":{"name":"伊万里・有田焼","description":"有田の窯から生まれた白磁のジュエリー。個別商品の公的認証を示すものではありません。"}},
+    "materials":{"glass":{"name":"ガラス","description":"凛然の商品には天然ソーダ硝子の表記があります。"},"porcelain":{"name":"磁器","description":"6.KILNの商品には磁土の表記があります。"},"silver-925":{"name":"シルバー925","description":"商品表記はsv925。各パーツへの使い分けは未確認です。"},"resin":{"name":"樹脂","description":"商品に樹脂の表記があります。各パーツへの使い分けは未確認です。"}},
+    "makers":{"rinzen":{"name":"凛然","location":"東京都","productionNote":"販売店の商品情報に生産地・東京都の表記があり、ブランド紹介には東京ガラス工房 凛然と記載されています。部品ごとの産地や個別商品の認証は未確認です。"},"six-kiln":{"name":"6.KILN","location":"佐賀県有田","productionNote":"販売店は生産地を佐賀県と記載し、6.KILNを有田の静六窯から生まれたアクセサリーブランドと紹介しています。ブランド全体の金具説明を、この商品の個別素材へ読み替えていません。"}},
+    "merchants":{"becos-en":{"name":"BECOS","language":"英語。別に日本語ストアあり","shippingSummary":"海外向けの配送案内があります。送付先や商品の対応状況は未確認です。","returns":"破損・不良・誤配送の申告期限を記載した案内があります。その他の返品については商品ページと詳細条件で表現が異なるため、一律の返品可とは案内していません。"}},
+    "products": {
+      "rinzen-seika-amber-pierced-earrings":{"title":"凛然 星華 アンバーガラスのチェーンピアス","editorialSummary":"琥珀色のガラスに、星のようなカット。黒やチャコール、白シャツの日に、あたたかな光を添えるチェーンピアス。","whoItMaySuit":"すっきりした服が好きな方や、琥珀色と幾何学的な輝きに惹かれる方に。","whatToCheck":["チェーンの金属と、肌に触れる各パーツの素材は商品欄に記載がありません。","確認時は取り寄せ可の表示。重さは10gと記載されていますが、片耳か一組かは未確認。チェーン全長の個別表記もありません。","手作りのため、色・形・重さに個体差があります。耐熱ガラスではありません。"],"size":"掲載寸法：幅1.7 × 奥行0.6 × 高さ2.7cm。チェーン全長の個別表記はありません。","findings":null,"fastening":"チェーンをピアスホールに通すアメリカンピアス。日本語商品説明に明記されています。","taxNote":"確認日の英語ストア米ドル表示。税込・税別の区分は未確認です。","craftClassificationLabel":"凛然による現代の切子ジュエリー。個別商品の江戸切子認証は確認していません。"},
+      "six-kiln-half-moon-earrings":{"title":"6.KILN 白磁の半月イヤリング","editorialSummary":"つややかな白い半月に、金色の細いタッセル。シンプルな装いを、少し華やかに、少し遊び心のある表情へ。","whoItMaySuit":"白磁のつやや彫刻的な形が好きな方、動きのある耳飾りをポイントにしたい方に。","whatToCheck":["裏面の色は白から金具に合わせた色へ切替中。新旧いずれかの仕様が、左右同じ組み合わせで届く案内です。","重さは8gと記載されていますが、片耳か一組かは未確認です。肌に触れるパーツごとの素材も未確認です。","金色の部分は強くこすると傷や剥がれの可能性があると案内されています。"],"size":"幅1.1 × 奥行1.4 × 高さ8cm（商品表記）。","findings":"素材表記は磁土・sv925・樹脂。各素材がどのパーツに使われるかは未確認です。","fastening":"ピアスとは別商品のイヤリング。留め具の具体的な機構は確認した本文に記載がありません。","taxNote":"確認日の英語ストア米ドル表示。税込・税別の区分は未確認です。","craftClassificationLabel":"販売店が伊万里・有田焼として紹介する白磁のジュエリー。個別商品の公的認証は未確認です。"}
+    }
+  },
+  "productStories": {
+    "rinzen-seika-amber-pierced-earrings": {
+      "en":{"headline":"Let amber catch the light.","standfirst":"A clear star-like cut opens inside warm amber glass. Add the long, fine chain to a clean neckline and make a little kiriko your evening accent.","highlights":["Warm amber with a clear, star-like cut","A geometric drop on a fine chain","Try charcoal, black or crisp white"],"outfit":{"title":"Charcoal shirt × amber light","body":"Try an open charcoal shirt or a simple black top, with one side of your hair swept back. Let the warm glass be the only strong color around your face."}},
+      "ja":{"headline":"琥珀色に、光をひとしずく。","standfirst":"あたたかな琥珀色の中に、星のような透明のカット。細いチェーンとガラスのかたちを見せて、いつもの黒い服に切子のきらめきを。","highlights":["琥珀色と透明のカットのコントラスト","細いチェーンに揺れる幾何学のかたち","黒・チャコール・白シャツと合わせて"],"outfit":{"title":"チャコールのシャツ × 琥珀色","body":"チャコールのシャツやシンプルな黒いトップスに、髪を片側だけ耳にかけて。顔まわりの色を抑えると、あたたかなガラスの色がコーディネートのポイントになります。"}}
+    },
+    "six-kiln-half-moon-earrings": {
+      "en":{"headline":"A little moon, a little movement.","standfirst":"Smooth white porcelain meets a playful fringe of gold-colored chains. Half-moon is a sculptural accent for an easy blouse or a dressed-up evening.","highlights":["A glossy white half-moon silhouette","Fine tassels that add a playful line","Pair with soft pink, ivory or navy"],"outfit":{"title":"Blush blouse × a loose updo","body":"Pair the white porcelain with a soft pink blouse and loosely tied hair. For a more graphic look, try navy or black and keep the neckline simple."}},
+      "ja":{"headline":"白い半月に、揺れる遊び心。","standfirst":"つるんとした白磁に、金色のチェーンをひと房。やわらかなブラウスにも、少しおめかしする夜にも合わせたい、半月のイヤリング。","highlights":["つやのある白磁の半月シルエット","細いタッセルが描く軽やかなライン","淡いピンク・アイボリー・ネイビーに"],"outfit":{"title":"淡いピンクのブラウス × ゆるいまとめ髪","body":"やわらかなピンクのブラウスに、髪はふんわりとまとめて。白い半月とチェーンを見せるコーディネートです。ネイビーや黒に合わせれば、かたちのコントラストを楽しめます。"}}
+    }
+  },
+  "sources": [
+    {"id":"becos-rinzen-seika-amber","url":"https://en.thebecos.com/products/s0138-028?currency=USD","title":"BECOS — RINZEN American pierced earrings Seika amber, 2 pieces","checkedAt":"2026-11-16","access":"body_read","supports":["SKU s0138-028; RINZEN; Tokyo origin; Kiriko; natural soda glass; listed W1.7 D0.6 H2.7 cm; 10g with unspecified per-ear/pair basis; handmade variation; USD288.00 and Backorder OK observed in Chrome with USD selected.","Official photos observed: fine gold-colored chain, amber kite-like glass drop, clear radiating star-like cut in lower part. Metal composition cannot be inferred from color."]},
+    {"id":"becos-rinzen-seika-amber-ja","url":"https://www.thebecos.com/products/s0138-028","title":"BECOS — アメリカンピアス 星華 -seika- 2ヶ (琥珀) | 切子 | 凛然","checkedAt":"2026-11-16","access":"body_read","supports":["Same SKU Japanese original title, Tokyo production origin, natural soda glass and dimensions. Description explicitly identifies chain-through American/chain pierced-earring type."]},
+    {"id":"rinzen-brand","url":"https://en.thebecos.com/collections/rinzen","title":"BECOS — rinzen | Kiriko: The Finest Sparkling Finish Created by Hand Polishing","checkedAt":"2026-11-16","access":"body_read","supports":["Brand presents itself as Tokyo Glass Studio rinzen, established January2021. Explains kiriko as cut glass and its own rinzen Kiriko brand, with cuts polished by hand. Does not establish individual Edo Kiriko certification."]},
+    {"id":"becos-six-kiln-half-moon","url":"https://en.thebecos.com/products/s0164-018?currency=USD","title":"BECOS — Earrings Half-moon | Imari-Arita Wares | 6.KILN","checkedAt":"2026-11-16","access":"body_read","supports":["SKU s0164-018; 6.KILN; Saga origin; Imari-Arita Wares; porcelain clay, sv925 and resin; W1.1 D1.4 H8cm; 8g with unspecified per-ear/pair basis; USD108.00 and In stock (3 unit) observed in Chrome with USD selected.","Notice describes transition from white reverse to fitting-matched gold/silver reverse, with either matching-pair version possible; gold surface care warning.","Official photos observed: glossy white vertical half-moon forms, gold-colored edge and hanging mixed fine chain tassels. Color is not metal-composition evidence."]},
+    {"id":"becos-six-kiln-half-moon-ja","url":"https://www.thebecos.com/products/s0164-018","title":"BECOS — イヤリング 半月 | 有田焼 | 6.kiln","checkedAt":"2026-11-16","access":"body_read","supports":["Same SKU Japanese original title identifies non-pierced earrings, Saga production origin and Arita technique. Material list, dimensions and reverse-color change corroborated. A distinct pierced product exists; its price is not used for this SKU."]},
+    {"id":"six-kiln-brand","url":"https://en.thebecos.com/collections/6-kiln","title":"BECOS — 6.KILN | Imari-Arita Wares","checkedAt":"2026-11-16","access":"body_read","supports":["6.KILN is a porcelain accessory brand born from Seiroku kiln in Arita, Saga; accessories started in2019 by Miho Nakamura. White porcelain and its formal/casual design direction are explained. Generic brand fitting statements are not imported as product-specific materials."]},
+    {"id":"becos-about","url":"https://en.thebecos.com/pages/about","title":"About BECOS","checkedAt":"2026-11-16","access":"body_read","supports":["BECOS presents itself as a retailer selecting Japanese-made craft products, with an English storefront."]},
+    {"id":"becos-shipping","url":"https://en.thebecos.com/pages/shipping-policy","title":"BECOS Shipping Policy","checkedAt":"2026-11-16","access":"body_read","supports":["Published international-shipping policy, destination-dependent options and import charges. This does not independently prove every SKU can ship to every country."]},
+    {"id":"becos-legal","url":"https://en.thebecos.com/pages/legal-notice","title":"BECOS Legal Notice","checkedAt":"2026-11-16","access":"body_read","supports":["Operator KAZAANA Co.,Ltd.; damaged/defective/wrong-item report window. Store location is not used as maker location."]}
+  ],
+  "internalVisualReview": {
+    "publicUse":"No official product photograph copied into public assets. AI imagery may use the researched design cues, with visible AI/non-product-photo disclosure.",
+    "screenshots":["artifacts/research-v6/s0138-028.png","artifacts/research-v6/s0164-018.png"],
+    "rinzen":"Amber kite-like glass, clear radiating lower cut, gold-colored thin chain; choose a distinctive adult Japanese woman, short dark bob and charcoal/black. Avoid unsupported exact chain length or precious-metal claims.",
+    "sixKiln":"Glossy white vertical half-moon, thin gold-colored rim, several uneven fine chain tassels, non-pierced type; choose a cute adult Japanese woman, soft fringe or loose updo and blush/ivory. AI image is not an accurate product or fitting rendering."
+  },
+  "unresolved": [
+    "BECOS affiliate account approval, item eligibility, accepted creative assets, final contract rates/cookie rules and allowed tracking host remain unconfirmed.",
+    "No photo usage permission has been obtained.",
+    "RINZEN chain alloy, full chain length and per-ear weight are unconfirmed.",
+    "6.KILN fitting mechanism, component-level material coverage and per-ear weight are unconfirmed.",
+    "The specific 6.KILN listing's sv925/resin material list takes precedence over generic collection text about surgical stainless steel/silicone.",
+    "USD pages require the explicit currency query for reproducible research; the same storefront may otherwise select a different currency. Japanese storefront prices are separate market prices and are not converted into USD by this site."
+  ]
+}

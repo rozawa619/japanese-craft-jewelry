@@ -1,24 +1,20 @@
 ---
-title: "Affiliate disclosure"
-description: "How retailer links work and how Japanese Craft Jewelry will identify any commission-bearing links."
+title: "Affiliate links"
+description: "How we identify affiliate links and keep our product selection clear."
 locale: "en"
 publishStatus: "published"
 updatedAt: "2026-11-16"
 sourceIds: []
 ---
 
-Japanese Craft Jewelry introduces jewelry sold by independent external retailers. We are not the seller and do not process orders, payments, shipping or returns.
+An affiliate link can earn this site a referral fee when a featured item is purchased. The notice above shows the current status of links on this site.
 
-## What an affiliate link means
+## When a link is an advertisement
 
-An affiliate link is a retailer link through which a publisher may receive a commission when a visitor completes an eligible action under that program's terms. The retailer or network determines eligibility and attribution. We do not promise that every click or purchase produces a commission.
+We use affiliate links only after the partnership and link have been confirmed. We show a clear notice before those links. Paid placements or supplied products are also identified if they occur.
 
-Where commission-bearing links are used, a clear notice appears before the relevant links. Any sponsored placement or product provision must also be identified when it occurs. Ordinary source links do not become commercial endorsements merely because they point to a retailer.
+## Our selection comes first
 
-## What stays the same
+We explain why a design caught our eye in our own words. We do not invent product features, reviews or experiences to earn a referral fee.
 
-Product facts must be supported by sources, and unknown details remain unknown. We do not publish invented reviews or describe products as personally tested when they have only been researched. Our editorial policy explains that distinction.
-
-The retailer controls the current price, availability, delivery, taxes, payment and return conditions. Read its terms before placing an order. Japanese Craft Jewelry does not add a checkout or provide a separate purchase guarantee.
-
-Commercial relationships and the links shown on the site are reviewed when they change. The notice displayed with the collection or article describes the links currently in use.
+Our [selection approach](../editorial-policy/) explains what matters to us when choosing jewelry.

@@ -25,6 +25,9 @@ GitHub Pagesでは任意のHTTPレスポンスヘッダーをこのソースか�
 
 許可した広告先でも外部事業者が後から転送先を変える可能性はあります。承認時と更新時に実際の管理画面・リンク・転送先を確認し、問題があればprogramまたはlinkを`paused`にして再配信します。画像はAI生成であり、掲載商品の実物写真やモデルの着用実績ではありません。
 
-訂正窓口のGitHub Issuesは公開投稿です。秘密鍵・認証情報・購入者の個人情報・悪用可能な未修正の詳細を公開投稿しません。2026-11-16にGitHub APIでprivate vulnerability reportingとvulnerability alertsの有効化を確認しました。未修正の脆弱性はリポジトリSecurityの非公開報告窓口を使い、一般の訂正Issuesへ詳細を投稿しません。
+公開サイトにお問い合わせ導線はありません。リポジトリ運用で使うGitHub Issuesは公開投稿です。秘密鍵・認証情報・購入者の個人情報・悪用可能な未修正の詳細を公開投稿しません。2026-11-16にGitHub APIでprivate vulnerability reportingとvulnerability alertsの有効化を確認しました。未修正の脆弱性はリポジトリSecurityの非公開報告窓口を使い、一般の訂正Issuesへ詳細を投稿しません。
 
 根拠：[Astro CSP設定](https://docs.astro.build/en/reference/configuration-reference/#securitycsp)、[GitHub Actionsの安全な利用](https://docs.github.com/en/actions/reference/security/secure-use)。一次資料を2026-11-16に確認しました。
+
+
+0.6検証では生成HTMLのCSP禁止項目、外部script/inline handler不在、実行inline scriptのSHA256許可を検査します。JSON-LD等の非実行data blockはJSON構文を検査し、実行scriptとは区別します。

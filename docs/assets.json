@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-11-16",
-  "policy": "No third-party product photographs, logos or maker portraits are published. Official catalog photographs were viewed for research only. Two original AI-generated adult styling illustrations are labeled as non-product imagery and do not establish product appearance, scale, hardware or fit.",
+  "policy": "No third-party product photographs, logos or maker portraits are published. Official catalog photographs were viewed for research only. Seven original AI-generated adult styling illustrations are labeled as non-product imagery and do not establish product appearance, scale, hardware or fit.",
   "assets": [
     {
       "id": "original-abstract-craft-patterns",
@@ -47,6 +47,66 @@
       "checkedAt": "2026-11-16",
       "productImage": false,
       "promptRecord": "docs/image-generation.json"
+    },
+    {
+      "id": "ai-rinzen-amber-glass-styling-v1",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/rinzen-amber-glass-styling-v1.webp",
+      "rightsHolder": "Original AI output generated for this project; no claim of product-photo permission or exclusive copyright",
+      "permissionBasis": "User explicitly requested diverse adult Japanese women styling images on 2026-11-16. Original prompt with built-in image_gen; official images viewed internally only, not uploaded or reproduced.",
+      "creditRequired": false,
+      "scope": "Editorial styling on cards and product pages. Fictional adult woman and illustrative accessory. Visible EN/JA AI/non-product caption; no real-product, fit or endorsement claim.",
+      "checkedAt": "2026-11-16",
+      "productImage": false,
+      "promptRecord": "docs/image-generation-v6.json"
+    },
+    {
+      "id": "ai-arita-halfmoon-styling-v1",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/arita-halfmoon-styling-v1.webp",
+      "rightsHolder": "Original AI output generated for this project; no claim of product-photo permission or exclusive copyright",
+      "permissionBasis": "User explicitly requested diverse adult Japanese women styling images on 2026-11-16. Original prompt with built-in image_gen; official images viewed internally only, not uploaded or reproduced.",
+      "creditRequired": false,
+      "scope": "Editorial styling on cards and product pages. Fictional adult woman and illustrative accessory. Visible EN/JA AI/non-product caption; no real-product, fit or endorsement claim.",
+      "checkedAt": "2026-11-16",
+      "productImage": false,
+      "promptRecord": "docs/image-generation-v6.json"
+    },
+    {
+      "id": "ai-yosegi-star-styling-v1",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/yosegi-star-styling-v1.webp",
+      "rightsHolder": "Original AI output generated for this project; no claim of product-photo permission or exclusive copyright",
+      "permissionBasis": "User explicitly requested diverse adult Japanese women styling images on 2026-11-16. Original prompt with built-in image_gen; official images viewed internally only, not uploaded or reproduced.",
+      "creditRequired": false,
+      "scope": "Editorial styling on cards and product pages. Fictional adult woman and illustrative accessory. Visible EN/JA AI/non-product caption; no real-product, fit or endorsement claim.",
+      "checkedAt": "2026-11-16",
+      "productImage": false,
+      "promptRecord": "docs/image-generation-v6.json"
+    },
+    {
+      "id": "ai-yosegi-bar-mature-styling-v1",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/yosegi-bar-mature-styling-v1.webp",
+      "rightsHolder": "Original AI output generated for this project; no claim of product-photo permission or exclusive copyright",
+      "permissionBasis": "User explicitly requested diverse adult Japanese women styling images on 2026-11-16. Original prompt with built-in image_gen; official images viewed internally only, not uploaded or reproduced.",
+      "creditRequired": false,
+      "scope": "Editorial styling on cards and product pages. Fictional adult woman and illustrative accessory. Visible EN/JA AI/non-product caption; no real-product, fit or endorsement claim.",
+      "checkedAt": "2026-11-16",
+      "productImage": false,
+      "promptRecord": "docs/image-generation-v6.json"
+    },
+    {
+      "id": "ai-yosegi-pendant-styling-v1",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/yosegi-pendant-styling-v1.webp",
+      "rightsHolder": "Original AI output generated for this project; no claim of product-photo permission or exclusive copyright",
+      "permissionBasis": "User explicitly requested diverse adult Japanese women styling images on 2026-11-16. Original prompt with built-in image_gen; official images viewed internally only, not uploaded or reproduced.",
+      "creditRequired": false,
+      "scope": "Editorial styling on cards and product pages. Fictional adult woman and illustrative accessory. Visible EN/JA AI/non-product caption; no real-product, fit or endorsement claim.",
+      "checkedAt": "2026-11-16",
+      "productImage": false,
+      "promptRecord": "docs/image-generation-v6.json"
     }
   ],
   "productPhotography": [
@@ -129,6 +189,24 @@
       "rightsHolder": "To confirm with Hakone Maruyama and the actual photographer or maker",
       "sourceUrl": "https://www.hakonemaruyama.co.jp/shopdetail/000000000474/",
       "requiredAction": "Obtain written web-use permission or approved affiliate assets covering this product and record attribution, allowed edits, period and revocation conditions before publishing that photograph.",
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "productId": "rinzen-seika-amber-pierced-earrings",
+      "imageAssetIds": [],
+      "permissionStatus": "not-obtained",
+      "rightsHolder": "To confirm with maker, retailer and actual photographer",
+      "sourceUrl": "https://en.thebecos.com/products/s0138-028?currency=USD",
+      "requiredAction": "Obtain explicit web-use or approved affiliate asset permission before adding an actual product photograph; record scope, credit, period and revocation.",
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "productId": "six-kiln-half-moon-earrings",
+      "imageAssetIds": [],
+      "permissionStatus": "not-obtained",
+      "rightsHolder": "To confirm with maker, retailer and actual photographer",
+      "sourceUrl": "https://en.thebecos.com/products/s0164-018?currency=USD",
+      "requiredAction": "Obtain explicit web-use or approved affiliate asset permission before adding an actual product photograph; record scope, credit, period and revocation.",
       "checkedAt": "2026-11-16"
     }
   ]

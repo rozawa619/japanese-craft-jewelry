@@ -128,14 +128,16 @@ test('published region and craft pages need content and a published matching pro
 test('publication rejects missing, placeholder, local and unsafe URLs', () => {
   for (const value of [undefined, '', 'http://real-domain.test', 'https://localhost', 'https://127.0.0.1', 'https://example.com', 'https://sub.example.org', 'https://user:pass@real-domain.test']) assert.equal(isProductionUrl(value), false, String(value));
   assert.equal(safeHttps('https://safe.test/path'), 'https://safe.test/path');
-  assert.ok(checkReadiness({}).blockers.length >= 4);
+  assert.equal(checkReadiness({}).blockers.length, 3);
 });
 
-test('technical readiness requires an explicit public mode and a contact configuration', () => {
-  const env = { PUBLIC_SITE_URL: 'https://ito-craft.test', PUBLIC_PUBLISH_MODE: 'public', PUBLIC_OPERATOR_NAME: 'Test identity', PUBLIC_REPOSITORY_URL: 'https://github.com/test-owner/test-repo' };
+test('technical publication permits deferred Contact without certifying an affiliate application', () => {
+  const env = { PUBLIC_SITE_URL: 'https://jewelry.test', PUBLIC_PUBLISH_MODE: 'public', PUBLIC_OPERATOR_NAME: 'SORA' };
   assert.deepEqual(checkReadiness(env).blockers, []);
   assert.ok(checkReadiness({ ...env, PUBLIC_PUBLISH_MODE: 'preview' }).blockers.some(message => message.includes('PUBLIC_PUBLISH_MODE')));
-  assert.ok(checkReadiness({ ...env, PUBLIC_REPOSITORY_URL: '' }).blockers.some(message => message.includes('Contact')));
+  assert.ok(checkReadiness({ ...env, PUBLIC_OPERATOR_NAME: '' }).blockers.some(message => message.includes('PUBLIC_OPERATOR_NAME')));
+  assert.ok(checkReadiness(env).information.some(message => /Contact is intentionally unpublished/.test(message)));
+  assert.ok(checkReadiness(env).information.some(message => /Application preparation is a separate, pending review/.test(message)));
 });
 
 

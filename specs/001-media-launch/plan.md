@@ -1,3 +1,5 @@
+> 現行の変更は仕様006が優先します。Contactは非公開で技術公開要件ではなく、個別プログラムの申請条件として未確認事項を管理します。初期のITO/英語のみ/神奈川範囲は仕様002以降で更新済みです。
+
 # 設計
 
 Node 24 / Astro 7.4.12 / TypeScript / Markdown / Zod。公式Astro導入・Content Collections・GitHub Pagesドキュメントを2026-11-16確認。registryの安定版と必要Node条件を確認して固定。標準静的HTMLに小さいフィルター処理だけ追加し、ホスティングを移行しやすくする。
