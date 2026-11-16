@@ -23,12 +23,40 @@
     {
       "id": "kyoto",
       "name": "Kyoto",
-      "description": "Selected kyoto yuzen dyeing jewelry identified with Kyoto in the product origin information."
+      "description": "Textile color and metal inlay: two different expressions of Kyoto craft."
     },
     {
       "id": "aichi",
       "name": "Aichi",
-      "description": "Selected owari cloisonne jewelry identified with Aichi in the product origin information."
+      "description": "Owari cloisonne color at the ear and on the hand."
+    },
+    {
+      "id": "chiba",
+      "name": "Chiba",
+      "description": "Contemporary burner-worked glass jewelry from a maker based in Kamogawa."
+    },
+    {
+      "id": "osaka",
+      "name": "Osaka"
+    },
+    {
+      "id": "nara",
+      "name": "Nara"
+    },
+    {
+      "id": "fukuoka",
+      "name": "Fukuoka",
+      "description": "Silk-thread and textile jewelry connected to Fukuoka’s Hakata-ori weaving."
+    },
+    {
+      "id": "yamanashi",
+      "name": "Yamanashi",
+      "description": "Jewelry from the Kofu-born SIMPRICH factory brand."
+    },
+    {
+      "id": "hokkaido",
+      "name": "Hokkaido",
+      "description": "Handmade crystal-glass jewelry from Yukie Glass in Otaru."
     }
   ],
   "crafts": [
@@ -84,6 +112,70 @@
       "sourceIds": [
         "becos-kato-suke-drop",
         "kato-shippo-brand"
+      ]
+    },
+    {
+      "id": "burner-worked-glass",
+      "name": "Burner-worked studio glass",
+      "description": "Contemporary glass shaped in an oxygen-burner flame. The selected Kamogawa studio is not described as a nationally designated traditional-craft producer.",
+      "sourceIds": [
+        "arcos-atelier-v9",
+        "arcos-studio-v9"
+      ]
+    },
+    {
+      "id": "senshu-shell-pearl",
+      "name": "Senshu shell-pearl craft",
+      "description": "Jewelry using shell pearls identified as made in Senshu, Osaka. No claim that the selected products hold an individual traditional-craft certification.",
+      "sourceIds": [
+        "shopch-senshu-stud-v9",
+        "shopch-senshu-swing-v9",
+        "jpga-izumi-craft-v9"
+      ]
+    },
+    {
+      "id": "nara-raden-makie",
+      "name": "Nara raden and makie",
+      "description": "Raden pendants and makie rings from Yamato Urushi Kougei Sugimura, which makes and exhibits work in Nara.",
+      "sourceIds": [
+        "sugimura-official-v9",
+        "sugimura-hosoge-v9",
+        "sugimura-lotus-v9"
+      ]
+    },
+    {
+      "id": "hakata-ori",
+      "name": "Hakata-ori silk accessories",
+      "description": "Hakata-ori silk threads and textiles reworked into contemporary jewelry; individual accessory certification is not claimed.",
+      "sourceIds": [
+        "cocoon-about-v9",
+        "cocoon-gallery-v9",
+        "fukuoka-crafts-v9"
+      ]
+    },
+    {
+      "id": "kofu-jewelry",
+      "name": "Kofu jewelry making",
+      "description": "Factory jewelry from Kofu; this category is not a claim of individual Koshu crystal-craft certification.",
+      "sourceIds": [
+        "simprich-about-v9"
+      ]
+    },
+    {
+      "id": "otaru-glass",
+      "name": "Otaru glassmaking",
+      "description": "Contemporary glass jewelry handmade in Otaru, Hokkaido; no national traditional-craft designation is claimed.",
+      "sourceIds": [
+        "yukie-accessory-origin-v9"
+      ]
+    },
+    {
+      "id": "kyo-zogan",
+      "name": "Kyoto metal inlay",
+      "description": "Kyoto-style inlay by Nakajima Zogan. The maker describes fine gold/silver inlay and dark finishing as its general process; the selected pendant’s exact component composition is not established.",
+      "sourceIds": [
+        "nakajima-technique-v9",
+        "nakajima-cooperative-v9"
       ]
     }
   ],
@@ -167,6 +259,49 @@
       "id": "titanium",
       "name": "Titanium",
       "description": "Titanium piercing fittings are identified for the selected Kato item."
+    },
+    {
+      "id": "imitation-pearl",
+      "name": "Imitation shell pearl",
+      "description": "Shell pearl as identified by the retailer; not a cultured or natural pearl."
+    },
+    {
+      "id": "brass",
+      "name": "Brass"
+    },
+    {
+      "id": "silicone",
+      "name": "Silicone"
+    },
+    {
+      "id": "stainless-steel",
+      "name": "Stainless steel",
+      "description": "Stainless steel is named without a grade or a skin-suitability guarantee."
+    },
+    {
+      "id": "silk",
+      "name": "Silk",
+      "description": "Silk threads and Hakata-ori textiles are identified by CO.COON."
+    },
+    {
+      "id": "crystal-quartz",
+      "name": "Crystal quartz",
+      "description": "Quartz is named in SIMPRICH’s selected products; mining origin is not established."
+    },
+    {
+      "id": "mother-of-pearl",
+      "name": "Mother-of-pearl",
+      "description": "White mother-of-pearl is bonded to crystal quartz in the selected bubble earrings."
+    },
+    {
+      "id": "gold-10k",
+      "name": "10K gold",
+      "description": "K10 yellow gold is named for the selected SIMPRICH necklace."
+    },
+    {
+      "id": "mica",
+      "name": "Mica",
+      "description": "Mica is explicitly listed for Mint Veil; it is not inferred for Rouge Veil."
     }
   ],
   "productTypes": [
@@ -189,6 +324,10 @@
     {
       "id": "bracelet",
       "name": "Bracelets"
+    },
+    {
+      "id": "ring",
+      "name": "Rings"
     }
   ],
   "makers": [
@@ -288,6 +427,81 @@
         "becos-kato-suke-drop-ja",
         "kato-shippo-brand"
       ]
+    },
+    {
+      "id": "arcos",
+      "name": "Atelier ARCOS",
+      "location": "Kamogawa, Chiba, Japan",
+      "productionNote": "The maker identifies its glass production and public gallery at the current Kamogawa workshop. Component origins and individual craft certification have not been established.",
+      "url": "https://arcos.glass/",
+      "sourceIds": [
+        "arcos-studio-v9",
+        "arcos-atelier-v9"
+      ]
+    },
+    {
+      "id": "premium-pearl-brand",
+      "name": "PREMIUM PEARL",
+      "location": "Brand listed by Shop Channel; shell-pearl component from Senshu, Osaka.",
+      "productionNote": "The retailer identifies Senshu, Osaka as the shell-pearl component origin and the products as made in Japan. The individual manufacturer, exact assembly location and association membership are not established.",
+      "url": "https://www.shopch.jp/pc/product/prodlist/brand?brandCode=00713",
+      "sourceIds": [
+        "shopch-senshu-stud-v9",
+        "shopch-senshu-swing-v9"
+      ]
+    },
+    {
+      "id": "yamato-urushi-sugimura",
+      "name": "Yamato Urushi Kougei Sugimura",
+      "location": "Nishinokyo-cho, Nara, Japan",
+      "productionNote": "The maker states it produces and exhibits work in Ganko Ittetsu Nagaya, Nara. This does not establish all component origins or any individual certification.",
+      "url": "https://jqppy767.wixsite.com/website",
+      "sourceIds": [
+        "sugimura-official-v9"
+      ]
+    },
+    {
+      "id": "cocoon",
+      "name": "CO.COON",
+      "location": "Fukuoka, Japan (Hakata-ori textile connection)",
+      "productionNote": "Fukuoka-linked Hakata-ori silk textiles by Kiyo Araki are used in collaboration with accessory maker hanaroi. The assembly location of each component is not confirmed.",
+      "url": "https://www.co-coon.info/",
+      "sourceIds": [
+        "cocoon-about-v9",
+        "kiyo-araki-maker-v9"
+      ]
+    },
+    {
+      "id": "simprich",
+      "name": "SIMPRICH",
+      "location": "Kofu, Yamanashi, Japan",
+      "productionNote": "A Kofu-born factory jewelry brand formed by seven jewelry companies and handling planning through production. Individual national traditional-craft certification and gemstone mining origins are not confirmed.",
+      "url": "https://shop.simprich.jp/",
+      "sourceIds": [
+        "simprich-about-v9"
+      ]
+    },
+    {
+      "id": "yukie-glass",
+      "name": "Yukie Glass",
+      "location": "Otaru, Hokkaido, Japan",
+      "productionNote": "The maker states that its crystal-glass jewelry is made one piece at a time at its Otaru, Hokkaido atelier. Individual fitting origins and national traditional-craft designation are not claimed.",
+      "url": "https://www.yukieglass.net/",
+      "sourceIds": [
+        "yukie-accessory-origin-v9"
+      ]
+    },
+    {
+      "id": "nakajima-zogan",
+      "name": "Nakajima Zogan",
+      "location": "Kyoto, Japan",
+      "productionNote": "Kyoto-based maker of original handmade metal-inlay accessories, identified by its official process and Kyoto Meisan cooperative profile. Exact component materials of the selected pendant are not published in its product body.",
+      "url": "https://www.nakajima-zougan.jp/",
+      "sourceIds": [
+        "nakajima-technique-v9",
+        "nakajima-cooperative-v9",
+        "nakajima-stores-v9"
+      ]
     }
   ],
   "merchants": [
@@ -370,6 +584,136 @@
       "sourceIds": [
         "becos-rinzen-seika-amber-ja",
         "becos-six-kiln-half-moon-ja"
+      ]
+    },
+    {
+      "id": "arcos-creema",
+      "name": "Atelier ARCOS on Creema",
+      "url": "https://www.creema.jp/c/arcos",
+      "language": "Japanese maker-operated storefront",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Check the individual listing. The selected bracelet lists overseas shipping as unavailable; this is not extended to every item.",
+        "countries": null,
+        "sourceIds": [
+          "arcos-cosmic-bracelet-v9"
+        ]
+      },
+      "returns": "Check the maker's current listing and marketplace terms; no item-specific return promise has been independently verified.",
+      "sourceIds": [
+        "arcos-atelier-v9",
+        "arcos-cosmic-spiral-v9",
+        "arcos-cosmic-bracelet-v9"
+      ]
+    },
+    {
+      "id": "shop-channel",
+      "name": "Shop Channel",
+      "url": "https://www.shopch.jp/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Item- and destination-specific conditions have not been independently reviewed.",
+        "countries": null,
+        "sourceIds": []
+      },
+      "returns": "Item-specific conditions have not been independently reviewed.",
+      "sourceIds": [
+        "shopch-senshu-stud-v9",
+        "shopch-senshu-swing-v9"
+      ]
+    },
+    {
+      "id": "sugimura-direct",
+      "name": "Yamato Urushi Kougei Sugimura official shop",
+      "url": "https://jqppy767.wixsite.com/website",
+      "language": "Japanese, with some English",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Item- and destination-specific conditions have not been independently reviewed.",
+        "countries": null,
+        "sourceIds": []
+      },
+      "returns": "Unfilled template fields in the product body are not treated as actual terms.",
+      "sourceIds": [
+        "sugimura-official-v9",
+        "sugimura-hosoge-v9",
+        "sugimura-lotus-v9"
+      ]
+    },
+    {
+      "id": "cocoon-official",
+      "name": "CO.COON official",
+      "url": "https://www.co-coon.info/",
+      "language": "Japanese official catalog/store",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Item and destination-specific shipping eligibility has not been verified.",
+        "countries": null,
+        "sourceIds": [
+          "cocoon-about-v9",
+          "kiyo-araki-maker-v9"
+        ]
+      },
+      "returns": "Applicable returns terms have not been verified.",
+      "sourceIds": [
+        "cocoon-about-v9",
+        "kiyo-araki-maker-v9"
+      ]
+    },
+    {
+      "id": "simprich-official",
+      "name": "SIMPRICH official",
+      "url": "https://shop.simprich.jp/",
+      "language": "Japanese official catalog/store",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Item and destination-specific shipping eligibility has not been verified.",
+        "countries": null,
+        "sourceIds": [
+          "simprich-about-v9"
+        ]
+      },
+      "returns": "Applicable returns terms have not been verified.",
+      "sourceIds": [
+        "simprich-about-v9"
+      ]
+    },
+    {
+      "id": "yukie-glass-official",
+      "name": "Yukie Glass official",
+      "url": "https://www.yukieglass.net/",
+      "language": "Japanese official catalog/store",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Item and destination-specific shipping eligibility has not been verified.",
+        "countries": null,
+        "sourceIds": [
+          "yukie-accessory-origin-v9"
+        ]
+      },
+      "returns": "Applicable returns terms have not been verified.",
+      "sourceIds": [
+        "yukie-accessory-origin-v9"
+      ]
+    },
+    {
+      "id": "nakajima-zogan-official",
+      "name": "Nakajima Zogan official",
+      "url": "https://www.nakajima-zougan.jp/",
+      "language": "Japanese product store; maker site also has English information",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Item and destination-specific shipping eligibility has not been verified.",
+        "countries": null,
+        "sourceIds": [
+          "nakajima-pear-product-v9"
+        ]
+      },
+      "returns": "Applicable item-specific terms have not been verified.",
+      "sourceIds": [
+        "nakajima-pear-product-v9",
+        "nakajima-stores-v9"
       ]
     }
   ],
@@ -664,6 +1008,158 @@
       "programId": null,
       "locale": "ja",
       "officialProductUrl": "https://www.thebecos.com/products/s0164-018",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "arcos-cosmic-spiral-official",
+      "productId": "arcos-cosmic-spiral-pendant",
+      "merchantId": "arcos-creema",
+      "programId": null,
+      "officialProductUrl": "https://www.creema.jp/item/9489033/detail",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "arcos-cosmic-bracelet-official",
+      "productId": "arcos-cosmic-glass-bracelet",
+      "merchantId": "arcos-creema",
+      "programId": null,
+      "officialProductUrl": "https://www.creema.jp/item/18047443/detail",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "senshu-pearl-stud-earrings-official",
+      "productId": "senshu-pearl-stud-earrings",
+      "merchantId": "shop-channel",
+      "programId": null,
+      "officialProductUrl": "https://www.shopch.jp/pc/product/proddetail?reqprno=819642",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "senshu-pearl-swing-earrings-official",
+      "productId": "senshu-pearl-swing-earrings",
+      "merchantId": "shop-channel",
+      "programId": null,
+      "officialProductUrl": "https://www.shopch.jp/pc/product/proddetail?reqprno=810335",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "sugimura-hosoge-raden-pendant-official",
+      "productId": "sugimura-hosoge-raden-pendant",
+      "merchantId": "sugimura-direct",
+      "programId": null,
+      "officialProductUrl": "https://jqppy767.wixsite.com/website/product-page/%E8%9E%BA%E9%88%BF%E3%83%9A%E3%83%B3%E3%83%80%E3%83%B3%E3%83%88-%E5%AE%9D%E7%9B%B8%E8%8F%AF",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "sugimura-lotus-makie-ring-official",
+      "productId": "sugimura-lotus-makie-ring",
+      "merchantId": "sugimura-direct",
+      "programId": null,
+      "officialProductUrl": "https://jqppy767.wixsite.com/website/product-page/%E5%95%86%E5%93%81%E5%90%8D-%E8%92%94%E7%B5%B5%E6%8C%87%E8%BC%AA-%E8%93%AE-makie-ring-lotus",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "cocoon-ori-nonhole-earrings-official",
+      "productId": "cocoon-ori-nonhole-earrings",
+      "merchantId": "cocoon-official",
+      "programId": null,
+      "officialProductUrl": "https://www.co-coon.info/gallery",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "cocoon-frame-pierced-earrings-official",
+      "productId": "cocoon-frame-pierced-earrings",
+      "merchantId": "cocoon-official",
+      "programId": null,
+      "officialProductUrl": "https://www.co-coon.info/gallery",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "simprich-crystal-bubble-pierced-earrings-official",
+      "productId": "simprich-crystal-bubble-pierced-earrings",
+      "merchantId": "simprich-official",
+      "programId": null,
+      "officialProductUrl": "https://shop.simprich.jp/products/oy-k1%EF%BC%98sha-pi-1",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "simprich-rose-quartz-necklace-official",
+      "productId": "simprich-rose-quartz-necklace",
+      "merchantId": "simprich-official",
+      "programId": null,
+      "officialProductUrl": "https://shop.simprich.jp/products/k10%E3%82%A4%E3%82%A8%E3%83%AD%E3%83%BC%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89-%E3%83%AD%E3%83%BC%E3%82%BA%E3%82%AF%E3%82%A9%E3%83%BC%E3%83%84-%E3%83%8D%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B9",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "yukieglass-mint-veil-earrings-official",
+      "productId": "yukieglass-mint-veil-earrings",
+      "merchantId": "yukie-glass-official",
+      "programId": null,
+      "officialProductUrl": "https://www.yukieglass.net/?pid=192213845",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "yukieglass-rouge-veil-earrings-official",
+      "productId": "yukieglass-rouge-veil-earrings",
+      "merchantId": "yukie-glass-official",
+      "programId": null,
+      "officialProductUrl": "https://www.yukieglass.net/?pid=192213864",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "nakajima-pear-sakura-pendant-official",
+      "productId": "nakajima-pear-sakura-pendant",
+      "merchantId": "nakajima-zogan-official",
+      "programId": null,
+      "officialProductUrl": "https://www.nakajima-zougan.jp/ec-shop2/products/detail/1005",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "kato-suke-round-ring-becos-en",
+      "productId": "kato-suke-round-ring",
+      "merchantId": "becos-en",
+      "programId": "becos-en",
+      "locale": "en",
+      "officialProductUrl": "https://en.thebecos.com/products/s0087-044?currency=USD",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "kato-suke-round-ring-becos-ja",
+      "productId": "kato-suke-round-ring",
+      "merchantId": "becos-ja",
+      "programId": null,
+      "locale": "ja",
+      "officialProductUrl": "https://www.thebecos.com/products/s0087-044",
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
       "affiliateLinkVerifiedAt": null
@@ -1676,6 +2172,803 @@
           "taxNote": "日本語公式ストアの税込表示価格（確認：2026-11-16）。",
           "sourceIds": [
             "becos-kato-suke-drop-ja"
+          ]
+        }
+      }
+    },
+    {
+      "id": "arcos-cosmic-spiral-pendant",
+      "slug": "arcos-cosmic-spiral-pendant",
+      "locale": "en",
+      "title": "Atelier ARCOS Cosmic Spiral glass pendant",
+      "originalTitle": "宇宙神秘のスパイラル",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "chiba"
+      ],
+      "craftIds": [
+        "burner-worked-glass"
+      ],
+      "materialIds": [
+        "glass"
+      ],
+      "makerId": "arcos",
+      "craftClassification": {
+        "label": "Contemporary studio glass from Atelier ARCOS in Kamogawa; no individual traditional-craft certification claimed.",
+        "sourceIds": [
+          "arcos-atelier-v9",
+          "arcos-studio-v9"
+        ]
+      },
+      "size": "Pendant top33×23mm, as listed; cord or chain length is not stated.",
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": null,
+      "priceAmount": 12800,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "JPY listing price; tax inclusion is not independently established.",
+      "availability": "listed",
+      "merchantIds": [
+        "arcos-creema"
+      ],
+      "sourceIds": [
+        "arcos-cosmic-spiral-v9",
+        "arcos-studio-v9"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "A little cosmic movement inside glass: choose a pendant that invites a closer look rather than a row of stones.",
+      "whoItMaySuit": "For a single sculptural accent and a fascination with swirling glass.",
+      "whatToCheck": [
+        "This is a pendant-top listing. Confirm the included cord or chain before ordering.",
+        "The glass mixture and33×23mm size are listed, but weight and fastening specifications are not supplied.",
+        "Stock was limited when checked. Compare the current official photographs before choosing."
+      ]
+    },
+    {
+      "id": "arcos-cosmic-glass-bracelet",
+      "slug": "arcos-cosmic-glass-bracelet",
+      "locale": "en",
+      "title": "Atelier ARCOS Cosmic Sparkle glass bracelet",
+      "originalTitle": "宇宙のキラキラ ブレスレット",
+      "publishStatus": "published",
+      "productType": [
+        "bracelet"
+      ],
+      "prefectureIds": [
+        "chiba"
+      ],
+      "craftIds": [
+        "burner-worked-glass"
+      ],
+      "materialIds": [
+        "glass"
+      ],
+      "makerId": "arcos",
+      "craftClassification": {
+        "label": "Contemporary burner-worked glass by a Kamogawa studio; no individual traditional-craft certification claimed.",
+        "sourceIds": [
+          "arcos-atelier-v9",
+          "arcos-studio-v9"
+        ]
+      },
+      "size": "The listing prints36×18mm,width45mm and thickness17mm without a measurement diagram; wrist fit is not specified.",
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": null,
+      "priceAmount": 8900,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "JPY listing price; tax inclusion is not independently established.",
+      "availability": "listed",
+      "merchantIds": [
+        "arcos-creema"
+      ],
+      "sourceIds": [
+        "arcos-cosmic-bracelet-v9",
+        "arcos-studio-v9"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "Keep the glass at your wrist: a small sculptural focal point for a rolled sleeve and an uncluttered hand.",
+      "whoItMaySuit": "For someone who prefers a statement at the wrist to a necklace.",
+      "whatToCheck": [
+        "Ask the maker about wrist fit and fastening; neither is specified in the checked text.",
+        "The listing gives several dimensions and13g without explaining every measurement basis.",
+        "This is a limited individual piece; check the current photographs and availability in the official shop."
+      ]
+    },
+    {
+      "id": "senshu-pearl-stud-earrings",
+      "slug": "senshu-pearl-stud-earrings",
+      "locale": "en",
+      "title": "PREMIUM PEARL Senshu shell-pearl stud earrings",
+      "originalTitle": "プレミアムパール 泉州の職人技 9 mm UP 貝パール スタッド イヤリング／ピアス",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings",
+        "clip-on-earrings"
+      ],
+      "prefectureIds": [
+        "osaka"
+      ],
+      "craftIds": [
+        "senshu-shell-pearl"
+      ],
+      "materialIds": [
+        "imitation-pearl",
+        "brass",
+        "silicone",
+        "stainless-steel",
+        "resin"
+      ],
+      "makerId": "premium-pearl-brand",
+      "craftClassification": {
+        "label": "Contemporary jewelry associated with the identified regional craft; no individual traditional-craft certification is claimed.",
+        "sourceIds": [
+          "shopch-senshu-stud-v9",
+          "jpga-izumi-craft-v9"
+        ]
+      },
+      "size": "Pierced: approximately 9 × 9 mm. Clip-on: approximately 19 × 9 mm. Listing title uses9 mm UP.",
+      "weightPerPieceGrams": null,
+      "findings": "The listing names brass/silicone and stainless steel/resin with a silver-tone coating; exact component coverage should be checked for the chosen fitting.",
+      "fastening": "Pierced or clip-on option on the same official product page; exact fastening mechanism is not specified in the checked body.",
+      "priceAmount": 7120,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "JPY7120, including Japanese consumption tax, displayed by the official retailer.",
+      "availability": "listed",
+      "merchantIds": [
+        "shop-channel"
+      ],
+      "sourceIds": [
+        "shopch-senshu-stud-v9",
+        "jpga-izumi-craft-v9"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "A simple pearl circle at the ear: choose white for a bright accent or peacock for a darker, more graphic mood.",
+      "whoItMaySuit": "For the clean outline of a stud rather than a dangling earring.",
+      "whatToCheck": [
+        "Shell pearls are imitation pearls, not cultured or natural pearls.",
+        "The product offers pierced and clip-on fittings; color and fitting availability differ.",
+        "Listed weights are not explicitly per ear, so we do not convert them into a per-ear figure.",
+        "The pearl component is identified as Senshu, Osaka. The exact maker and full assembly location within Japan are not established."
+      ]
+    },
+    {
+      "id": "senshu-pearl-swing-earrings",
+      "slug": "senshu-pearl-swing-earrings",
+      "locale": "en",
+      "title": "PREMIUM PEARL Senshu shell-pearl swing earrings",
+      "originalTitle": "プレミアムパール 泉州の職人技 9 mm UP 貝パール スウィング イヤリング／ピアス",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings",
+        "clip-on-earrings"
+      ],
+      "prefectureIds": [
+        "osaka"
+      ],
+      "craftIds": [
+        "senshu-shell-pearl"
+      ],
+      "materialIds": [
+        "imitation-pearl",
+        "brass",
+        "silicone",
+        "stainless-steel"
+      ],
+      "makerId": "premium-pearl-brand",
+      "craftClassification": {
+        "label": "Contemporary jewelry associated with the identified regional craft; no individual traditional-craft certification is claimed.",
+        "sourceIds": [
+          "shopch-senshu-swing-v9",
+          "jpga-izumi-craft-v9"
+        ]
+      },
+      "size": "Approximately24mm high  × 9 mm wide; pearl width is described as9 mm UP.",
+      "weightPerPieceGrams": null,
+      "findings": "Brass for both options; silicone for clip-ons and stainless steel for the pierced option. Gold-tone or silver-tone coating is listed.",
+      "fastening": "Pierced or clip-on option on the same official product page; exact fastening mechanism is not specified in the checked body.",
+      "priceAmount": 5650,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "JPY5650, including Japanese consumption tax, displayed by the official retailer.",
+      "availability": "listed",
+      "merchantIds": [
+        "shop-channel"
+      ],
+      "sourceIds": [
+        "shopch-senshu-swing-v9",
+        "jpga-izumi-craft-v9"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "A white pearl suspended below a curved fitting adds a longer line than the stud. Choose gold- or silver-colored metal to suit your other jewelry.",
+      "whoItMaySuit": "For a pearl drop with movement and a little space below the ear.",
+      "whatToCheck": [
+        "Shell pearls are imitation pearls, not cultured or natural pearls.",
+        "Gold and silver refer to coating colors here, not a solid-gold or sterling-silver claim.",
+        "Pierced and clip-on options share this listing; check availability for the exact combination.",
+        "Listed weights are not explicitly per ear, so no per-ear weight or lightness claim is made."
+      ]
+    },
+    {
+      "id": "sugimura-hosoge-raden-pendant",
+      "slug": "sugimura-hosoge-raden-pendant",
+      "locale": "en",
+      "title": "Sugimura Hosoge raden pendant",
+      "originalTitle": "螺鈿ペンダント 宝相華",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "nara"
+      ],
+      "craftIds": [
+        "nara-raden-makie"
+      ],
+      "materialIds": [],
+      "makerId": "yamato-urushi-sugimura",
+      "craftClassification": {
+        "label": "Contemporary jewelry associated with the identified regional craft; no individual traditional-craft certification is claimed.",
+        "sourceIds": [
+          "sugimura-hosoge-v9",
+          "sugimura-official-v9"
+        ]
+      },
+      "size": null,
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": null,
+      "priceAmount": 44000,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Japanese official listing price; tax inclusion was not established in the checked product text.",
+      "availability": "listed",
+      "merchantIds": [
+        "sugimura-direct"
+      ],
+      "sourceIds": [
+        "sugimura-hosoge-v9",
+        "sugimura-official-v9"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "A Hosoge floral motif brings raden to the neckline. A choice for making one craft detail the focus of a simple dress.",
+      "whoItMaySuit": "For an ornamental pendant rather than an earring or a plain chain.",
+      "whatToCheck": [
+        "The official product is named as a raden pendant; detailed substrate, dimensions, weight and fittings are not supplied in the checked body.",
+        "Confirm the current piece, its dimensions and the cord or chain arrangement with the maker before choosing.",
+        "The workshop’s Nara address is verified; the stock of this exact pendant and visiting hours are not."
+      ]
+    },
+    {
+      "id": "sugimura-lotus-makie-ring",
+      "slug": "sugimura-lotus-makie-ring",
+      "locale": "en",
+      "title": "Sugimura Lotus makie wooden ring",
+      "originalTitle": "蒔絵指輪 蓮 Makie Ring Lotus",
+      "publishStatus": "published",
+      "productType": [
+        "ring"
+      ],
+      "prefectureIds": [
+        "nara"
+      ],
+      "craftIds": [
+        "nara-raden-makie"
+      ],
+      "materialIds": [
+        "wood"
+      ],
+      "makerId": "yamato-urushi-sugimura",
+      "craftClassification": {
+        "label": "Contemporary jewelry associated with the identified regional craft; no individual traditional-craft certification is claimed.",
+        "sourceIds": [
+          "sugimura-lotus-v9",
+          "sugimura-official-v9"
+        ]
+      },
+      "size": "The ring in the official photograph is Japanese size 16. Band width is not specified.",
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": "Slip-on ring. Wooden construction cannot be resized; discuss the maker’s remaking process for another size.",
+      "priceAmount": 165000,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Japanese official listing price; tax inclusion was not established in the checked product text.",
+      "availability": "listed",
+      "merchantIds": [
+        "sugimura-direct"
+      ],
+      "sourceIds": [
+        "sugimura-lotus-v9",
+        "sugimura-official-v9"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "A lotus motif turns a wooden ring into a small focal point for the hand. Choose it for the painted detail and the contrast with a simple outfit.",
+      "whoItMaySuit": "For a decorative wooden ring, with sizing discussed directly with the maker.",
+      "whatToCheck": [
+        "The maker says the pictured ring is Japanese size 16; this is not a promise that every size is immediately available.",
+        "A wooden ring cannot be resized. The maker describes remaking after matching size with a plain ring.",
+        "Band width, weight and exact finish or precious-metal composition are not supplied in the checked text."
+      ]
+    },
+    {
+      "id": "cocoon-ori-nonhole-earrings",
+      "slug": "cocoon-ori-nonhole-earrings",
+      "locale": "en",
+      "title": "CO.COON ori non-pierced earrings",
+      "originalTitle": "CO.COON oriノンホールピアス",
+      "publishStatus": "published",
+      "productType": [
+        "clip-on-earrings"
+      ],
+      "prefectureIds": [
+        "fukuoka"
+      ],
+      "craftIds": [
+        "hakata-ori"
+      ],
+      "materialIds": [
+        "silk"
+      ],
+      "makerId": "cocoon",
+      "craftClassification": {
+        "label": "Contemporary accessories using Hakata-ori textile. An individual traditional-craft certification is not established.",
+        "sourceIds": [
+          "cocoon-gallery-v9",
+          "cocoon-about-v9",
+          "kiyo-araki-maker-v9",
+          "fukuoka-crafts-v9"
+        ]
+      },
+      "size": null,
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": null,
+      "priceAmount": null,
+      "priceCurrency": null,
+      "priceCheckedAt": null,
+      "taxNote": "No public catalog price confirmed.",
+      "availability": "listed",
+      "merchantIds": [
+        "cocoon-official"
+      ],
+      "sourceIds": [
+        "cocoon-gallery-v9",
+        "cocoon-about-v9",
+        "kiyo-araki-maker-v9",
+        "fukuoka-crafts-v9"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "A folded textile silhouette instead of a bright stone. CO.COON’s ori earrings bring the texture of Hakata-ori into a gently spreading shape.",
+      "whoItMaySuit": "Hakata-ori textile, folded into a motif.",
+      "whatToCheck": [
+        "The official gallery does not publish current price, dimensions or fitting alloy. Confirm the available design and sales method with the brand."
+      ]
+    },
+    {
+      "id": "cocoon-frame-pierced-earrings",
+      "slug": "cocoon-frame-pierced-earrings",
+      "locale": "en",
+      "title": "CO.COON Frame Series pierced earrings",
+      "originalTitle": "CO.COON フレームシリーズ ピアス",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "fukuoka"
+      ],
+      "craftIds": [
+        "hakata-ori"
+      ],
+      "materialIds": [
+        "silk"
+      ],
+      "makerId": "cocoon",
+      "craftClassification": {
+        "label": "Contemporary silk-thread jewelry from a brand using Hakata-ori threads and textiles; individual accessory certification is not established.",
+        "sourceIds": [
+          "cocoon-gallery-v9",
+          "cocoon-about-v9",
+          "kiyo-araki-maker-v9",
+          "fukuoka-crafts-v9"
+        ]
+      },
+      "size": null,
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": null,
+      "priceAmount": null,
+      "priceCurrency": null,
+      "priceCheckedAt": null,
+      "taxNote": "No public catalog price confirmed.",
+      "availability": "listed",
+      "merchantIds": [
+        "cocoon-official"
+      ],
+      "sourceIds": [
+        "cocoon-gallery-v9",
+        "cocoon-about-v9",
+        "kiyo-araki-maker-v9",
+        "fukuoka-crafts-v9"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "Fine silk worked into frames gives this design its character. Choose the Frame Series when you want a visible outline and the detail of handworked thread.",
+      "whoItMaySuit": "Silk thread worked into individual frames.",
+      "whatToCheck": [
+        "The official gallery does not publish current price, dimensions or fitting alloy. Confirm the available design and sales method with the brand."
+      ]
+    },
+    {
+      "id": "simprich-crystal-bubble-pierced-earrings",
+      "slug": "simprich-crystal-bubble-pierced-earrings",
+      "locale": "en",
+      "title": "SIMPRICH K18 yellow-gold crystal bubble earrings",
+      "originalTitle": "SIMPRICH K18イエローゴールド 水晶しゃぼん玉ピアス",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "yamanashi"
+      ],
+      "craftIds": [
+        "kofu-jewelry"
+      ],
+      "materialIds": [
+        "crystal-quartz",
+        "mother-of-pearl",
+        "gold-18k"
+      ],
+      "makerId": "simprich",
+      "craftClassification": {
+        "label": "Jewelry from the Kofu factory brand SIMPRICH; no individual Koshu crystal-craft certification is established.",
+        "sourceIds": [
+          "simprich-bubble-v9",
+          "simprich-about-v9",
+          "simprich-home-shop-v9",
+          "yamanashi-jewelry-museum-v9",
+          "yamanashi-jewelry-access-v9"
+        ]
+      },
+      "size": "7 × 7 × 7mm; post 0.7 × 10mm",
+      "weightPerPieceGrams": null,
+      "findings": "K18 yellow gold post and catch",
+      "fastening": "Post and catch",
+      "priceAmount": 52800,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Tax included, official store; price is for one pair.",
+      "availability": "listed",
+      "merchantIds": [
+        "simprich-official"
+      ],
+      "sourceIds": [
+        "simprich-bubble-v9",
+        "simprich-about-v9",
+        "simprich-home-shop-v9",
+        "yamanashi-jewelry-museum-v9",
+        "yamanashi-jewelry-access-v9"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "Crystal quartz layered over white mother-of-pearl gives these small round earrings a softly shifting color. A compact alternative to a long drop.",
+      "whoItMaySuit": "Crystal and white mother-of-pearl doublet.",
+      "whatToCheck": [
+        "The stone combines crystal with mother-of-pearl; it is not unbacked crystal.",
+        "Inspect the current official photographs for the individual stone appearance and confirm the fitting details."
+      ]
+    },
+    {
+      "id": "simprich-rose-quartz-necklace",
+      "slug": "simprich-rose-quartz-necklace",
+      "locale": "en",
+      "title": "SIMPRICH K10 yellow-gold rose-quartz necklace",
+      "originalTitle": "SIMPRICH K10イエローゴールド ローズクォーツ ネックレス",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "yamanashi"
+      ],
+      "craftIds": [
+        "kofu-jewelry"
+      ],
+      "materialIds": [
+        "crystal-quartz",
+        "gold-10k"
+      ],
+      "makerId": "simprich",
+      "craftClassification": {
+        "label": "Contemporary jewelry from Kofu-born SIMPRICH, not a claim of individual Koshu crystal-craft certification.",
+        "sourceIds": [
+          "simprich-rose-quartz-v9",
+          "simprich-about-v9",
+          "simprich-home-shop-v9",
+          "yamanashi-jewelry-museum-v9",
+          "yamanashi-jewelry-access-v9"
+        ]
+      },
+      "size": "Stone 8 × 10mm; 45cm azuki chain (store notation: 0.2)",
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": null,
+      "priceAmount": 59400,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Tax included, official store.",
+      "availability": "listed",
+      "merchantIds": [
+        "simprich-official"
+      ],
+      "sourceIds": [
+        "simprich-rose-quartz-v9",
+        "simprich-about-v9",
+        "simprich-home-shop-v9",
+        "yamanashi-jewelry-museum-v9",
+        "yamanashi-jewelry-access-v9"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "A pale rose-quartz oval held in a simple yellow-gold frame. This necklace puts the stone’s milky color ahead of elaborate decoration.",
+      "whoItMaySuit": "A pale pink rose-quartz center.",
+      "whatToCheck": [
+        "Check the current official photographs for the individual stone color.",
+        "The raw stone mining country and an individual traditional-craft certification have not been established."
+      ]
+    },
+    {
+      "id": "yukieglass-mint-veil-earrings",
+      "slug": "yukieglass-mint-veil-earrings",
+      "locale": "en",
+      "title": "Yukie Glass Mint Veil earrings, Chronicle-005",
+      "originalTitle": "幸愛硝子 Mint Veil｜若葉の薄衣 1/2",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "hokkaido"
+      ],
+      "craftIds": [
+        "otaru-glass"
+      ],
+      "materialIds": [
+        "glass",
+        "mica"
+      ],
+      "makerId": "yukie-glass",
+      "craftClassification": {
+        "label": "Contemporary crystal-glass jewelry handmade at an Otaru atelier; no national traditional-craft designation is claimed.",
+        "sourceIds": [
+          "yukie-mint-v9",
+          "yukie-accessory-origin-v9",
+          "yukie-atelier-visits-v9",
+          "kitaichi-yo-store-v9",
+          "kitaichi-hours-v9",
+          "kitaichi-access-v9"
+        ]
+      },
+      "size": "Each approx. 35 × 29mm, 3mm thick; maker lists 8–10g per piece",
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": null,
+      "priceAmount": 28600,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Tax included, official store.",
+      "availability": "listed",
+      "merchantIds": [
+        "yukie-glass-official"
+      ],
+      "sourceIds": [
+        "yukie-mint-v9",
+        "yukie-accessory-origin-v9",
+        "yukie-atelier-visits-v9",
+        "kitaichi-yo-store-v9",
+        "kitaichi-hours-v9",
+        "kitaichi-access-v9"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "Wide, flattened glass drops spread a wash of mint beside the face. A statement shape for those who want color across a larger surface.",
+      "whoItMaySuit": "A broad, flattened teardrop shape.",
+      "whatToCheck": [
+        "The maker lists approximately8–10g per piece; consider the stated weight when choosing.",
+        "Fitting material and current individual-piece availability require confirmation with the maker."
+      ]
+    },
+    {
+      "id": "yukieglass-rouge-veil-earrings",
+      "slug": "yukieglass-rouge-veil-earrings",
+      "locale": "en",
+      "title": "Yukie Glass Rouge Veil earrings, Chronicle-007",
+      "originalTitle": "幸愛硝子 Rouge Veil｜紅の薄衣 1/2",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "hokkaido"
+      ],
+      "craftIds": [
+        "otaru-glass"
+      ],
+      "materialIds": [
+        "glass"
+      ],
+      "makerId": "yukie-glass",
+      "craftClassification": {
+        "label": "Contemporary glass jewelry handmade in Otaru; component origins and individual craft certification are not established.",
+        "sourceIds": [
+          "yukie-rouge-v9",
+          "yukie-accessory-origin-v9",
+          "yukie-atelier-visits-v9",
+          "kitaichi-yo-store-v9",
+          "kitaichi-hours-v9",
+          "kitaichi-access-v9"
+        ]
+      },
+      "size": "Each approx. 38 × 29mm, 3mm thick; maker lists 8–10g per piece",
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": null,
+      "priceAmount": 28600,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Tax included, official store.",
+      "availability": "listed",
+      "merchantIds": [
+        "yukie-glass-official"
+      ],
+      "sourceIds": [
+        "yukie-rouge-v9",
+        "yukie-accessory-origin-v9",
+        "yukie-atelier-visits-v9",
+        "kitaichi-yo-store-v9",
+        "kitaichi-hours-v9",
+        "kitaichi-access-v9"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "Deep red and clear glass meet in a broad, thin drop. Rouge Veil is the stronger color choice beside the softer mint version.",
+      "whoItMaySuit": "A broad drop of clear and red glass.",
+      "whatToCheck": [
+        "These are individual pieces with stock shared with the atelier; confirm the current availability.",
+        "The maker lists approximately8–10g per piece. Fitting material is not confirmed."
+      ]
+    },
+    {
+      "id": "nakajima-pear-sakura-pendant",
+      "slug": "nakajima-pear-sakura-pendant",
+      "locale": "en",
+      "title": "Nakajima Zogan reversible sakura pear pendant",
+      "originalTitle": "ペンダント ナシ型 桜・ラインドット(Mix)",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "kyoto"
+      ],
+      "craftIds": [
+        "kyo-zogan"
+      ],
+      "materialIds": [],
+      "makerId": "nakajima-zogan",
+      "craftClassification": {
+        "label": "Kyoto metal-inlay jewelry by Nakajima Zogan. General maker technique is confirmed; exact component materials and individual certification are not established.",
+        "sourceIds": [
+          "nakajima-pear-product-v9",
+          "nakajima-technique-v9",
+          "nakajima-cooperative-v9"
+        ]
+      },
+      "size": "Pendant approximately24 ×31mm; chain470mm",
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": null,
+      "priceAmount": 16500,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Tax-included price from the official Japanese store; not a converted price.",
+      "availability": "listed",
+      "merchantIds": [
+        "nakajima-zogan-official"
+      ],
+      "sourceIds": [
+        "nakajima-pear-product-v9",
+        "nakajima-technique-v9",
+        "nakajima-cooperative-v9"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "Sakura on one face, a geometric pattern on the other. A pear-shaped Kyoto inlay pendant that lets you change the motif with your outfit.",
+      "whoItMaySuit": "For those who want a floral pendant with a second, more graphic face.",
+      "whatToCheck": [
+        "The handmade pattern placement may vary. Exact metal composition of the pendant and chain is not published in the reviewed product body."
+      ]
+    },
+    {
+      "id": "kato-suke-round-ring",
+      "slug": "kato-suke-round-ring",
+      "locale": "en",
+      "title": "Kato Shippo SUKE round cloisonne ring",
+      "originalTitle": "【リング】丸透 (Suke) 全6色 | 無線銀貼七宝",
+      "publishStatus": "published",
+      "productType": [
+        "ring"
+      ],
+      "prefectureIds": [
+        "aichi"
+      ],
+      "craftIds": [
+        "owari-cloisonne"
+      ],
+      "materialIds": [
+        "silver",
+        "copper",
+        "enamel-glaze",
+        "alloy"
+      ],
+      "makerId": "kato-shippo",
+      "craftClassification": {
+        "label": "Owari cloisonne jewelry with Aichi stated as origin. No individual traditional-craft certification is claimed.",
+        "sourceIds": [
+          "becos-kato-round-ring-en-v9",
+          "becos-kato-round-ring-ja-v9",
+          "kato-shippo-brand"
+        ]
+      },
+      "size": "Listed W1.5 ×D1.5cm; adjustable ring size. This is not a fixed Japanese or US ring size.",
+      "weightPerPieceGrams": null,
+      "findings": "Ring fitting is plated alloy; silver, copper and glaze are also listed. Exact plating and component-by-component coverage are not specified.",
+      "fastening": "Adjustable ring",
+      "priceAmount": 84,
+      "priceCurrency": "USD",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "USD price on the English BECOS storefront; tax inclusion is not established.",
+      "availability": "listed",
+      "merchantIds": [
+        "becos-en",
+        "becos-ja"
+      ],
+      "sourceIds": [
+        "becos-kato-round-ring-en-v9",
+        "becos-kato-round-ring-ja-v9",
+        "kato-shippo-brand"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "A round surface of deep cloisonne color for the hand. Choose one of six colors as a compact statement beside a simple cuff or sleeve.",
+      "whoItMaySuit": "For those who prefer a round color accent on the hand to a hanging earring.",
+      "whatToCheck": [
+        "Six colors share this product listing; confirm the chosen color. The ring is adjustable and its fitting is plated alloy.",
+        "The glassy surface needs protection from strong impact and heat. The listing’s zero weight field is not a meaningful measured weight."
+      ],
+      "localizedPrices": {
+        "ja": {
+          "amount": 7700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16",
+          "taxNote": "日本語BECOSの税込表示価格。",
+          "sourceIds": [
+            "becos-kato-round-ring-ja-v9"
           ]
         }
       }

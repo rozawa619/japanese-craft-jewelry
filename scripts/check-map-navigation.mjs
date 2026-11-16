@@ -26,7 +26,7 @@ try{
  }
 }finally{
  await browser.close();report.completedAt=new Date().toISOString();report.finalizedAt=report.completedAt;
- await writeFile(resolve(root,process.env.CHECK_MAP_REPORT_PATH||'docs/visit-stage-map-navigation-results.json'),JSON.stringify(report,null,2)+'\n');
+ await writeFile(resolve(root,process.env.CHECK_MAP_REPORT_PATH||'docs/destination-stage-map-navigation-results.json'),JSON.stringify(report,null,2)+'\n');
  console.log(JSON.stringify({examples:report.examples.length,newTabs:report.examples.filter(example=>example.newTabOpened).length,googleObserved:report.examples.filter(example=>example.googleNavigationObserved).length,errors:report.examples.filter(example=>example.error).length}));
  if(report.examples.some(example=>example.error))process.exitCode=1;
 }

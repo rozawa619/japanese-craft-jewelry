@@ -1,11 +1,13 @@
 ---
 import Base from '../../../layouts/Base.astro';
-import {catalogFor,productsFor,byId} from '../../../lib/catalog';
-import {contentFor,contentSlug} from '../../../lib/content';
+import RegionSelection from '../../../components/RegionSelection.astro';
 import {locales,t} from '../../../lib/i18n';
-import {pagePath} from '../../../config/site';
 export function getStaticPaths(){return locales.map(lang=>({params:{lang},props:{locale:lang}}))}
-const {locale}=Astro.props;const catalog=catalogFor(locale),products=productsFor(locale);
-const regions=(await contentFor('places',locale)).filter(note=>note.body?.trim()&&products.some(p=>p.prefectureIds.includes(note.data.prefectureId)));
+const {locale}=Astro.props;
 ---
-<Base title={t(locale,'Japanese jewelry by region','産地から選ぶ、日本の工芸ジュエリー')} description={t(locale,'Browse selected Japanese craft jewelry by its workshop region. Explore product details and continue to the official retailer.','日本各地の工房に関わるジュエリーを、産地から選べます。商品と根拠を確認できた地域から掲載しています。')} locale={locale}><div class="wrap page-bottom"><header class="page-heading"><p class="eyebrow">{t(locale,'JEWELRY BY REGION','産地別の商品セレクト')}</p><h1>{t(locale,'Craft, across Japan.','日本各地の、')}<br/><em>{t(locale,'Find your piece.','ひとつを選ぶ。')}</em></h1><p>{t(locale,'Discover Japanese jewelry through the places, materials and techniques that shape it. Each selection connects you with the jewelry and its official retailer.','その土地の素材や技法が、身につけるひとつになるまで。一次情報でたどれる作り手や商品を入り口に、日本各地のジュエリーをセレクトします。')}</p></header><div class="region-directory">{regions.map((note,i)=>{const region=byId(catalog.prefectures,note.data.prefectureId);const count=products.filter(p=>p.prefectureIds.includes(region.id)).length;return <article class="region-directory-card"><div class="region-directory-mark" aria-hidden="true"><span>{String(i+1).padStart(2,'0')}</span><span>CRAFT / JAPAN</span></div><div><p class="eyebrow">{t(locale,'REGIONAL SELECTION','産地別セレクト')}</p><h2><a href={pagePath(`places/${contentSlug(note)}/`,locale)}>{region.name}</a></h2><p>{note.data.description}</p><p class="muted">{t(locale,`${count} jewelry pieces connected to a local workshop. Item-level origin and retailer location remain separate facts.`,`地域の工房に関連するジュエリー${count}点を掲載。工房の所在地・個別商品の製造地・販売店の所在地は区別して案内します。`)}</p><a class="text-link" href={pagePath(`places/${contentSlug(note)}/`,locale)}>{t(locale,'View the jewelry','この産地の商品を見る')}<span aria-hidden="true">→</span></a></div></article>})}</div><section class="region-scope"><h2>{t(locale,'One region at a time.','ひとつずつ、確かめながら。')}</h2><p>{t(locale,'Wood mosaic from Hakone, cut glass from Tokyo and porcelain from Arita. Explore the different expressions of Japanese craft through the jewelry we select.','箱根の寄木、東京の切子、有田の白磁。土地ごとに違う素材やかたちを、ジュエリーから楽しんでください。調べて出会ったひとつずつを、これからも加えていきます。')}</p></section></div></Base>
+<Base title={t(locale,'Japanese jewelry by region','産地から選ぶ、日本の工芸ジュエリー')} description={t(locale,'Explore Japanese craft jewelry by destination. Choose a prefecture, discover its jewelry and find official shops and visiting information.','産地と代表の一品から、日本各地の工芸ジュエリーを選ぶ。都道府県別に商品をまとめ、公式サイトや店舗への行き方も案内します。')} locale={locale}>
+ <div class="wrap page-bottom">
+  <header class="page-heading"><p class="eyebrow">{t(locale,'JEWELRY BY REGION','産地別の商品セレクト')}</p><h1>{t(locale,'A place in Japan.','旅先で出会う、')}<br/><em>{t(locale,'A piece to remember.','好きなかたち。')}</em></h1><p>{t(locale,'A color, a material, a way of making. Explore jewelry through the places that give it character.','その土地の色、素材、手仕事。気になる産地から、いつもの装いに連れて帰りたいジュエリーを探してください。')}</p></header>
+  <RegionSelection locale={locale}/>
+ </div>
+</Base>

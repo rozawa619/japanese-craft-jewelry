@@ -1,0 +1,1428 @@
+{
+  "catalog": {
+    "prefectures": [
+      {
+        "id": "fukuoka",
+        "name": "Fukuoka",
+        "description": "Silk-thread and textile jewelry connected to Fukuoka’s Hakata-ori weaving."
+      },
+      {
+        "id": "yamanashi",
+        "name": "Yamanashi",
+        "description": "Jewelry from the Kofu-born SIMPRICH factory brand."
+      },
+      {
+        "id": "hokkaido",
+        "name": "Hokkaido",
+        "description": "Handmade crystal-glass jewelry from Yukie Glass in Otaru."
+      }
+    ],
+    "crafts": [
+      {
+        "id": "hakata-ori",
+        "name": "Hakata-ori silk accessories",
+        "description": "Hakata-ori silk threads and textiles reworked into contemporary jewelry; individual accessory certification is not claimed.",
+        "sourceIds": [
+          "cocoon-about-v9",
+          "cocoon-gallery-v9",
+          "fukuoka-crafts-v9"
+        ]
+      },
+      {
+        "id": "kofu-jewelry",
+        "name": "Kofu jewelry making",
+        "description": "Factory jewelry from Kofu; this category is not a claim of individual Koshu crystal-craft certification.",
+        "sourceIds": [
+          "simprich-about-v9"
+        ]
+      },
+      {
+        "id": "otaru-glass",
+        "name": "Otaru glassmaking",
+        "description": "Contemporary glass jewelry handmade in Otaru, Hokkaido; no national traditional-craft designation is claimed.",
+        "sourceIds": [
+          "yukie-accessory-origin-v9"
+        ]
+      }
+    ],
+    "materials": [
+      {
+        "id": "silk",
+        "name": "Silk",
+        "description": "Silk threads and Hakata-ori textiles are identified by CO.COON."
+      },
+      {
+        "id": "crystal-quartz",
+        "name": "Crystal quartz",
+        "description": "Quartz is named in SIMPRICH’s selected products; mining origin is not established."
+      },
+      {
+        "id": "mother-of-pearl",
+        "name": "Mother-of-pearl",
+        "description": "White mother-of-pearl is bonded to crystal quartz in the selected bubble earrings."
+      },
+      {
+        "id": "gold-10k",
+        "name": "10K gold",
+        "description": "K10 yellow gold is named for the selected SIMPRICH necklace."
+      },
+      {
+        "id": "mica",
+        "name": "Mica",
+        "description": "Mica is explicitly listed for Mint Veil; it is not inferred for Rouge Veil."
+      }
+    ],
+    "productTypes": [],
+    "makers": [
+      {
+        "id": "cocoon",
+        "name": "CO.COON",
+        "location": "Fukuoka, Japan (Hakata-ori textile connection)",
+        "productionNote": "Fukuoka-linked Hakata-ori silk textiles by Kiyo Araki are used in collaboration with accessory maker hanaroi. The assembly location of each component is not confirmed.",
+        "url": "https://www.co-coon.info/",
+        "sourceIds": [
+          "cocoon-about-v9",
+          "kiyo-araki-maker-v9"
+        ]
+      },
+      {
+        "id": "simprich",
+        "name": "SIMPRICH",
+        "location": "Kofu, Yamanashi, Japan",
+        "productionNote": "A Kofu-born factory jewelry brand formed by seven jewelry companies and handling planning through production. Individual national traditional-craft certification and gemstone mining origins are not confirmed.",
+        "url": "https://shop.simprich.jp/",
+        "sourceIds": [
+          "simprich-about-v9"
+        ]
+      },
+      {
+        "id": "yukie-glass",
+        "name": "Yukie Glass",
+        "location": "Otaru, Hokkaido, Japan",
+        "productionNote": "The maker states that its crystal-glass jewelry is made one piece at a time at its Otaru, Hokkaido atelier. Individual fitting origins and national traditional-craft designation are not claimed.",
+        "url": "https://www.yukieglass.net/",
+        "sourceIds": [
+          "yukie-accessory-origin-v9"
+        ]
+      }
+    ],
+    "merchants": [
+      {
+        "id": "cocoon-official",
+        "name": "CO.COON official",
+        "url": "https://www.co-coon.info/",
+        "language": "Japanese official catalog/store",
+        "shipping": {
+          "status": "unknown",
+          "summary": "Item and destination-specific shipping eligibility has not been verified.",
+          "countries": null,
+          "sourceIds": [
+            "cocoon-about-v9",
+            "kiyo-araki-maker-v9"
+          ]
+        },
+        "returns": "Applicable returns terms have not been verified.",
+        "sourceIds": [
+          "cocoon-about-v9",
+          "kiyo-araki-maker-v9"
+        ]
+      },
+      {
+        "id": "simprich-official",
+        "name": "SIMPRICH official",
+        "url": "https://shop.simprich.jp/",
+        "language": "Japanese official catalog/store",
+        "shipping": {
+          "status": "unknown",
+          "summary": "Item and destination-specific shipping eligibility has not been verified.",
+          "countries": null,
+          "sourceIds": [
+            "simprich-about-v9"
+          ]
+        },
+        "returns": "Applicable returns terms have not been verified.",
+        "sourceIds": [
+          "simprich-about-v9"
+        ]
+      },
+      {
+        "id": "yukie-glass-official",
+        "name": "Yukie Glass official",
+        "url": "https://www.yukieglass.net/",
+        "language": "Japanese official catalog/store",
+        "shipping": {
+          "status": "unknown",
+          "summary": "Item and destination-specific shipping eligibility has not been verified.",
+          "countries": null,
+          "sourceIds": [
+            "yukie-accessory-origin-v9"
+          ]
+        },
+        "returns": "Applicable returns terms have not been verified.",
+        "sourceIds": [
+          "yukie-accessory-origin-v9"
+        ]
+      }
+    ],
+    "products": [
+      {
+        "id": "cocoon-ori-nonhole-earrings",
+        "slug": "cocoon-ori-nonhole-earrings",
+        "locale": "en",
+        "title": "CO.COON ori non-pierced earrings",
+        "originalTitle": "CO.COON oriノンホールピアス",
+        "publishStatus": "published",
+        "productType": [
+          "clip-on-earrings"
+        ],
+        "prefectureIds": [
+          "fukuoka"
+        ],
+        "craftIds": [
+          "hakata-ori"
+        ],
+        "materialIds": [
+          "silk"
+        ],
+        "makerId": "cocoon",
+        "craftClassification": {
+          "label": "Contemporary accessories using Hakata-ori textile. An individual traditional-craft certification is not established.",
+          "sourceIds": [
+            "cocoon-gallery-v9",
+            "cocoon-about-v9",
+            "kiyo-araki-maker-v9",
+            "fukuoka-crafts-v9"
+          ]
+        },
+        "size": null,
+        "weightPerPieceGrams": null,
+        "findings": null,
+        "fastening": null,
+        "priceAmount": null,
+        "priceCurrency": null,
+        "priceCheckedAt": null,
+        "taxNote": "No public catalog price confirmed.",
+        "availability": "listed",
+        "merchantIds": [
+          "cocoon-official"
+        ],
+        "sourceIds": [
+          "cocoon-gallery-v9",
+          "cocoon-about-v9",
+          "kiyo-araki-maker-v9",
+          "fukuoka-crafts-v9"
+        ],
+        "lastVerifiedAt": "2026-11-16",
+        "imageAssetIds": [],
+        "editorialSummary": "A folded textile silhouette instead of a bright stone. CO.COON’s ori earrings bring the texture of Hakata-ori into a gently spreading shape.",
+        "whoItMaySuit": "Hakata-ori textile, folded into a motif.",
+        "whatToCheck": [
+          "The official gallery does not publish current price, dimensions or fitting alloy. Confirm the available design and sales method with the brand."
+        ]
+      },
+      {
+        "id": "cocoon-frame-pierced-earrings",
+        "slug": "cocoon-frame-pierced-earrings",
+        "locale": "en",
+        "title": "CO.COON Frame Series pierced earrings",
+        "originalTitle": "CO.COON フレームシリーズ ピアス",
+        "publishStatus": "published",
+        "productType": [
+          "pierced-earrings"
+        ],
+        "prefectureIds": [
+          "fukuoka"
+        ],
+        "craftIds": [
+          "hakata-ori"
+        ],
+        "materialIds": [
+          "silk"
+        ],
+        "makerId": "cocoon",
+        "craftClassification": {
+          "label": "Contemporary silk-thread jewelry from a brand using Hakata-ori threads and textiles; individual accessory certification is not established.",
+          "sourceIds": [
+            "cocoon-gallery-v9",
+            "cocoon-about-v9",
+            "kiyo-araki-maker-v9",
+            "fukuoka-crafts-v9"
+          ]
+        },
+        "size": null,
+        "weightPerPieceGrams": null,
+        "findings": null,
+        "fastening": null,
+        "priceAmount": null,
+        "priceCurrency": null,
+        "priceCheckedAt": null,
+        "taxNote": "No public catalog price confirmed.",
+        "availability": "listed",
+        "merchantIds": [
+          "cocoon-official"
+        ],
+        "sourceIds": [
+          "cocoon-gallery-v9",
+          "cocoon-about-v9",
+          "kiyo-araki-maker-v9",
+          "fukuoka-crafts-v9"
+        ],
+        "lastVerifiedAt": "2026-11-16",
+        "imageAssetIds": [],
+        "editorialSummary": "Fine silk worked into frames gives this design its character. Choose the Frame Series when you want a visible outline and the detail of handworked thread.",
+        "whoItMaySuit": "Silk thread worked into individual frames.",
+        "whatToCheck": [
+          "The official gallery does not publish current price, dimensions or fitting alloy. Confirm the available design and sales method with the brand."
+        ]
+      },
+      {
+        "id": "simprich-crystal-bubble-pierced-earrings",
+        "slug": "simprich-crystal-bubble-pierced-earrings",
+        "locale": "en",
+        "title": "SIMPRICH K18 yellow-gold crystal bubble earrings",
+        "originalTitle": "SIMPRICH K18イエローゴールド 水晶しゃぼん玉ピアス",
+        "publishStatus": "published",
+        "productType": [
+          "pierced-earrings"
+        ],
+        "prefectureIds": [
+          "yamanashi"
+        ],
+        "craftIds": [
+          "kofu-jewelry"
+        ],
+        "materialIds": [
+          "crystal-quartz",
+          "mother-of-pearl",
+          "gold-18k"
+        ],
+        "makerId": "simprich",
+        "craftClassification": {
+          "label": "Jewelry from the Kofu factory brand SIMPRICH; no individual Koshu crystal-craft certification is established.",
+          "sourceIds": [
+            "simprich-bubble-v9",
+            "simprich-about-v9",
+            "simprich-home-shop-v9",
+            "yamanashi-jewelry-museum-v9",
+            "yamanashi-jewelry-access-v9"
+          ]
+        },
+        "size": "7 × 7 × 7mm; post 0.7 × 10mm",
+        "weightPerPieceGrams": null,
+        "findings": "K18 yellow gold post and catch",
+        "fastening": "Post and catch",
+        "priceAmount": 52800,
+        "priceCurrency": "JPY",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "Tax included, official store; price is for one pair.",
+        "availability": "listed",
+        "merchantIds": [
+          "simprich-official"
+        ],
+        "sourceIds": [
+          "simprich-bubble-v9",
+          "simprich-about-v9",
+          "simprich-home-shop-v9",
+          "yamanashi-jewelry-museum-v9",
+          "yamanashi-jewelry-access-v9"
+        ],
+        "lastVerifiedAt": "2026-11-16",
+        "imageAssetIds": [],
+        "editorialSummary": "Crystal quartz layered over white mother-of-pearl gives these small round earrings a softly shifting color. A compact alternative to a long drop.",
+        "whoItMaySuit": "Crystal and white mother-of-pearl doublet.",
+        "whatToCheck": [
+          "The stone combines crystal with mother-of-pearl; it is not unbacked crystal.",
+          "Inspect the current official photographs for the individual stone appearance and confirm the fitting details."
+        ]
+      },
+      {
+        "id": "simprich-rose-quartz-necklace",
+        "slug": "simprich-rose-quartz-necklace",
+        "locale": "en",
+        "title": "SIMPRICH K10 yellow-gold rose-quartz necklace",
+        "originalTitle": "SIMPRICH K10イエローゴールド ローズクォーツ ネックレス",
+        "publishStatus": "published",
+        "productType": [
+          "necklace"
+        ],
+        "prefectureIds": [
+          "yamanashi"
+        ],
+        "craftIds": [
+          "kofu-jewelry"
+        ],
+        "materialIds": [
+          "crystal-quartz",
+          "gold-10k"
+        ],
+        "makerId": "simprich",
+        "craftClassification": {
+          "label": "Contemporary jewelry from Kofu-born SIMPRICH, not a claim of individual Koshu crystal-craft certification.",
+          "sourceIds": [
+            "simprich-rose-quartz-v9",
+            "simprich-about-v9",
+            "simprich-home-shop-v9",
+            "yamanashi-jewelry-museum-v9",
+            "yamanashi-jewelry-access-v9"
+          ]
+        },
+        "size": "Stone 8 × 10mm; 45cm azuki chain (store notation: 0.2)",
+        "weightPerPieceGrams": null,
+        "findings": null,
+        "fastening": null,
+        "priceAmount": 59400,
+        "priceCurrency": "JPY",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "Tax included, official store.",
+        "availability": "listed",
+        "merchantIds": [
+          "simprich-official"
+        ],
+        "sourceIds": [
+          "simprich-rose-quartz-v9",
+          "simprich-about-v9",
+          "simprich-home-shop-v9",
+          "yamanashi-jewelry-museum-v9",
+          "yamanashi-jewelry-access-v9"
+        ],
+        "lastVerifiedAt": "2026-11-16",
+        "imageAssetIds": [],
+        "editorialSummary": "A pale rose-quartz oval held in a simple yellow-gold frame. This necklace puts the stone’s milky color ahead of elaborate decoration.",
+        "whoItMaySuit": "A pale pink rose-quartz center.",
+        "whatToCheck": [
+          "Check the current official photographs for the individual stone color.",
+          "The raw stone mining country and an individual traditional-craft certification have not been established."
+        ]
+      },
+      {
+        "id": "yukieglass-mint-veil-earrings",
+        "slug": "yukieglass-mint-veil-earrings",
+        "locale": "en",
+        "title": "Yukie Glass Mint Veil earrings, Chronicle-005",
+        "originalTitle": "幸愛硝子 Mint Veil｜若葉の薄衣 1/2",
+        "publishStatus": "published",
+        "productType": [
+          "pierced-earrings"
+        ],
+        "prefectureIds": [
+          "hokkaido"
+        ],
+        "craftIds": [
+          "otaru-glass"
+        ],
+        "materialIds": [
+          "glass",
+          "mica"
+        ],
+        "makerId": "yukie-glass",
+        "craftClassification": {
+          "label": "Contemporary crystal-glass jewelry handmade at an Otaru atelier; no national traditional-craft designation is claimed.",
+          "sourceIds": [
+            "yukie-mint-v9",
+            "yukie-accessory-origin-v9",
+            "yukie-atelier-visits-v9",
+            "kitaichi-yo-store-v9",
+            "kitaichi-hours-v9",
+            "kitaichi-access-v9"
+          ]
+        },
+        "size": "Each approx. 35 × 29mm, 3mm thick; maker lists 8–10g per piece",
+        "weightPerPieceGrams": null,
+        "findings": null,
+        "fastening": null,
+        "priceAmount": 28600,
+        "priceCurrency": "JPY",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "Tax included, official store.",
+        "availability": "listed",
+        "merchantIds": [
+          "yukie-glass-official"
+        ],
+        "sourceIds": [
+          "yukie-mint-v9",
+          "yukie-accessory-origin-v9",
+          "yukie-atelier-visits-v9",
+          "kitaichi-yo-store-v9",
+          "kitaichi-hours-v9",
+          "kitaichi-access-v9"
+        ],
+        "lastVerifiedAt": "2026-11-16",
+        "imageAssetIds": [],
+        "editorialSummary": "Wide, flattened glass drops spread a wash of mint beside the face. A statement shape for those who want color across a larger surface.",
+        "whoItMaySuit": "A broad, flattened teardrop shape.",
+        "whatToCheck": [
+          "The maker lists approximately8–10g per piece; consider the stated weight when choosing.",
+          "Fitting material and current individual-piece availability require confirmation with the maker."
+        ]
+      },
+      {
+        "id": "yukieglass-rouge-veil-earrings",
+        "slug": "yukieglass-rouge-veil-earrings",
+        "locale": "en",
+        "title": "Yukie Glass Rouge Veil earrings, Chronicle-007",
+        "originalTitle": "幸愛硝子 Rouge Veil｜紅の薄衣 1/2",
+        "publishStatus": "published",
+        "productType": [
+          "pierced-earrings"
+        ],
+        "prefectureIds": [
+          "hokkaido"
+        ],
+        "craftIds": [
+          "otaru-glass"
+        ],
+        "materialIds": [
+          "glass"
+        ],
+        "makerId": "yukie-glass",
+        "craftClassification": {
+          "label": "Contemporary glass jewelry handmade in Otaru; component origins and individual craft certification are not established.",
+          "sourceIds": [
+            "yukie-rouge-v9",
+            "yukie-accessory-origin-v9",
+            "yukie-atelier-visits-v9",
+            "kitaichi-yo-store-v9",
+            "kitaichi-hours-v9",
+            "kitaichi-access-v9"
+          ]
+        },
+        "size": "Each approx. 38 × 29mm, 3mm thick; maker lists 8–10g per piece",
+        "weightPerPieceGrams": null,
+        "findings": null,
+        "fastening": null,
+        "priceAmount": 28600,
+        "priceCurrency": "JPY",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "Tax included, official store.",
+        "availability": "listed",
+        "merchantIds": [
+          "yukie-glass-official"
+        ],
+        "sourceIds": [
+          "yukie-rouge-v9",
+          "yukie-accessory-origin-v9",
+          "yukie-atelier-visits-v9",
+          "kitaichi-yo-store-v9",
+          "kitaichi-hours-v9",
+          "kitaichi-access-v9"
+        ],
+        "lastVerifiedAt": "2026-11-16",
+        "imageAssetIds": [],
+        "editorialSummary": "Deep red and clear glass meet in a broad, thin drop. Rouge Veil is the stronger color choice beside the softer mint version.",
+        "whoItMaySuit": "A broad drop of clear and red glass.",
+        "whatToCheck": [
+          "These are individual pieces with stock shared with the atelier; confirm the current availability.",
+          "The maker lists approximately8–10g per piece. Fitting material is not confirmed."
+        ]
+      }
+    ],
+    "links": [
+      {
+        "id": "cocoon-ori-nonhole-earrings-official",
+        "productId": "cocoon-ori-nonhole-earrings",
+        "merchantId": "cocoon-official",
+        "programId": null,
+        "officialProductUrl": "https://www.co-coon.info/gallery",
+        "affiliateUrl": null,
+        "applicationStatus": "not_applied",
+        "affiliateLinkVerifiedAt": null
+      },
+      {
+        "id": "cocoon-frame-pierced-earrings-official",
+        "productId": "cocoon-frame-pierced-earrings",
+        "merchantId": "cocoon-official",
+        "programId": null,
+        "officialProductUrl": "https://www.co-coon.info/gallery",
+        "affiliateUrl": null,
+        "applicationStatus": "not_applied",
+        "affiliateLinkVerifiedAt": null
+      },
+      {
+        "id": "simprich-crystal-bubble-pierced-earrings-official",
+        "productId": "simprich-crystal-bubble-pierced-earrings",
+        "merchantId": "simprich-official",
+        "programId": null,
+        "officialProductUrl": "https://shop.simprich.jp/products/oy-k1%EF%BC%98sha-pi-1",
+        "affiliateUrl": null,
+        "applicationStatus": "not_applied",
+        "affiliateLinkVerifiedAt": null
+      },
+      {
+        "id": "simprich-rose-quartz-necklace-official",
+        "productId": "simprich-rose-quartz-necklace",
+        "merchantId": "simprich-official",
+        "programId": null,
+        "officialProductUrl": "https://shop.simprich.jp/products/k10%E3%82%A4%E3%82%A8%E3%83%AD%E3%83%BC%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89-%E3%83%AD%E3%83%BC%E3%82%BA%E3%82%AF%E3%82%A9%E3%83%BC%E3%83%84-%E3%83%8D%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B9",
+        "affiliateUrl": null,
+        "applicationStatus": "not_applied",
+        "affiliateLinkVerifiedAt": null
+      },
+      {
+        "id": "yukieglass-mint-veil-earrings-official",
+        "productId": "yukieglass-mint-veil-earrings",
+        "merchantId": "yukie-glass-official",
+        "programId": null,
+        "officialProductUrl": "https://www.yukieglass.net/?pid=192213845",
+        "affiliateUrl": null,
+        "applicationStatus": "not_applied",
+        "affiliateLinkVerifiedAt": null
+      },
+      {
+        "id": "yukieglass-rouge-veil-earrings-official",
+        "productId": "yukieglass-rouge-veil-earrings",
+        "merchantId": "yukie-glass-official",
+        "programId": null,
+        "officialProductUrl": "https://www.yukieglass.net/?pid=192213864",
+        "affiliateUrl": null,
+        "applicationStatus": "not_applied",
+        "affiliateLinkVerifiedAt": null
+      }
+    ]
+  },
+  "translations": {
+    "products": {
+      "cocoon-ori-nonhole-earrings": {
+        "title": "CO.COON oriノンホールピアス",
+        "editorialSummary": "石のきらめきとは違う、布が広がるやわらかな輪郭。CO.COONのoriは、博多織の表情を耳元で楽しむイヤリングです。",
+        "whoItMaySuit": "博多織の布を生かす、広がるかたちを楽しみたい方に。",
+        "whatToCheck": [
+          "公式ギャラリー掲載品。現在の制作・販売方法、色柄、価格、金具の仕様はブランドで確認。"
+        ],
+        "size": null,
+        "findings": null,
+        "fastening": null,
+        "taxNote": "公式ギャラリーで価格を確認できていません。",
+        "craftClassificationLabel": "博多織の生地を使う現代の耳飾り。個別商品の伝統的工芸品認証は未確認です。"
+      },
+      "cocoon-frame-pierced-earrings": {
+        "title": "CO.COON フレームシリーズ ピアス",
+        "editorialSummary": "枠に一編みずつ糸を重ねた、CO.COONのフレームシリーズ。布の広がりより、輪郭と繊細な線を楽しみたい日のピアスです。",
+        "whoItMaySuit": "フレームへ編み込まれた絹糸を楽しみたい方に。",
+        "whatToCheck": [
+          "色柄・寸法・金具素材・現在の価格は公式の販売案内で確認。"
+        ],
+        "size": null,
+        "findings": null,
+        "fastening": null,
+        "taxNote": "公式ギャラリーで価格を確認できていません。",
+        "craftClassificationLabel": "博多織の糸や布を生かすブランドによる絹糸のジュエリー。個別アクセサリーの認証は未確認です。"
+      },
+      "simprich-crystal-bubble-pierced-earrings": {
+        "title": "SIMPRICH K18イエローゴールド 水晶しゃぼん玉ピアス",
+        "editorialSummary": "白蝶貝に水晶を貼り合わせた、小さな丸いピアス。淡い干渉色を楽しみながら、耳元をコンパクトにまとめたい日に。",
+        "whoItMaySuit": "水晶と白蝶貝を重ねたダブレットを楽しみたい方に。",
+        "whatToCheck": [
+          "水晶に白蝶貝を貼り合わせた石です。水晶だけの透明な石とは表情が異なります。",
+          "現在の公式写真で石の表情を見比べ、金具の詳細を確認してください。"
+        ],
+        "size": "7 × 7 × 7mm; post 0.7 × 10mm",
+        "findings": "K18 yellow gold post and catch",
+        "fastening": "Post and catch",
+        "taxNote": "公式ストアの税込表示。",
+        "craftClassificationLabel": "甲府発のファクトリーブランドSIMPRICHのジュエリー。個別の甲州水晶貴石細工認証は未確認です。"
+      },
+      "simprich-rose-quartz-necklace": {
+        "title": "SIMPRICH K10イエローゴールド ローズクォーツ ネックレス",
+        "editorialSummary": "淡いローズクォーツを、シンプルなイエローゴールドの枠で。飾りを重ねず、ミルキーな石の色を楽しむネックレスです。",
+        "whoItMaySuit": "淡いピンクのローズクォーツを楽しみたい方に。",
+        "whatToCheck": [
+          "石の色味は、現在の公式写真で確認してください。",
+          "原石の採掘国や個別商品の伝統的工芸品認証は確認していません。"
+        ],
+        "size": "Stone 8 × 10mm; 45cm azuki chain (store notation: 0.2)",
+        "findings": null,
+        "fastening": null,
+        "taxNote": "公式ストアの税込表示。",
+        "craftClassificationLabel": "甲府発SIMPRICHの現代ジュエリー。個別の甲州水晶貴石細工認証は主張しません。"
+      },
+      "yukieglass-mint-veil-earrings": {
+        "title": "幸愛硝子 Mint Veil｜若葉の薄衣 1/2",
+        "editorialSummary": "薄く平たいガラスの面に広がる、ミントグリーン。小粒のピアスより、耳元に色の面積をしっかり入れたい日の耳飾りです。",
+        "whoItMaySuit": "面で色を見せる、平たい雫を楽しみたい方に。",
+        "whatToCheck": [
+          "片方約8〜10gという公式表記です。見た目と合わせて重さも考えて選びたい耳飾りです。",
+          "金具素材と現在の個別作品の在庫は、作り手に確認してください。"
+        ],
+        "size": "Each approx. 35 × 29mm, 3mm thick; maker lists 8–10g per piece",
+        "findings": null,
+        "fastening": null,
+        "taxNote": "公式ストアの税込表示。",
+        "craftClassificationLabel": "小樽のアトリエで一点ずつ作る現代のガラスジュエリー。国の伝統的工芸品指定は主張しません。"
+      },
+      "yukieglass-rouge-veil-earrings": {
+        "title": "幸愛硝子 Rouge Veil｜紅の薄衣 1/2",
+        "editorialSummary": "透明なガラスに深い赤を重ねた、薄い雫の耳飾り。やわらかなミントとは違い、耳元に色のアクセントを置きたい日に。",
+        "whoItMaySuit": "透明なガラスと赤い色ガラスを楽しみたい方に。",
+        "whatToCheck": [
+          "一点物で在庫をアトリエと共有しています。現在の作品の状態は公式で確認してください。",
+          "片方約8〜10gの表記です。金具素材は未確認です。"
+        ],
+        "size": "Each approx. 38 × 29mm, 3mm thick; maker lists 8–10g per piece",
+        "findings": null,
+        "fastening": null,
+        "taxNote": "公式ストアの税込表示。",
+        "craftClassificationLabel": "小樽で一点ずつ作る現代のガラスジュエリー。部品ごとの原産地と個別商品の工芸認証は未確認です。"
+      }
+    },
+    "prefectures": {
+      "fukuoka": {
+        "name": "福岡県",
+        "description": "博多織の糸や布の表情を楽しむ、福岡に関わるジュエリー。"
+      },
+      "yamanashi": {
+        "name": "山梨県",
+        "description": "宝石のまち・甲府から届く、SIMPRICHのジュエリー。"
+      },
+      "hokkaido": {
+        "name": "北海道",
+        "description": "小樽のアトリエで生まれる、幸愛硝子のガラスジュエリー。"
+      }
+    },
+    "crafts": {
+      "hakata-ori": {
+        "name": "博多織のアクセサリー",
+        "description": "博多織の絹糸や生地を耳飾りへ。工芸分野の指定と、個別アクセサリーの認証は区別して紹介します。"
+      },
+      "kofu-jewelry": {
+        "name": "甲府のジュエリー",
+        "description": "甲府発のファクトリーブランドによるジュエリー。個別商品の甲州水晶貴石細工認証は確認していません。"
+      },
+      "otaru-glass": {
+        "name": "小樽のガラス",
+        "description": "北海道小樽のアトリエで一点ずつ作るガラスジュエリー。国の伝統的工芸品指定は主張しません。"
+      }
+    },
+    "materials": {
+      "silk": {
+        "name": "絹",
+        "description": "CO.COONが案内する絹糸と博多織の生地。"
+      },
+      "crystal-quartz": {
+        "name": "水晶",
+        "description": "SIMPRICHの選定商品に使う水晶。原石の採掘地は未確認です。"
+      },
+      "mother-of-pearl": {
+        "name": "白蝶貝",
+        "description": "しゃぼん玉ピアスで水晶と貼り合わせる白蝶貝。"
+      },
+      "gold-10k": {
+        "name": "10Kゴールド",
+        "description": "選定ネックレスのK10イエローゴールド。"
+      },
+      "mica": {
+        "name": "雲母",
+        "description": "Mint Veilに使う雲母。Rouge Veilには推定で付けません。"
+      }
+    },
+    "productTypes": {},
+    "makers": {
+      "cocoon": {
+        "name": "CO.COON",
+        "location": "福岡県",
+        "productionNote": "荒木希代が染色・手織りする、福岡に関わる博多織の糸や布を使用し、hanaroiと制作。各部品の加工場所までは確認していません。"
+      },
+      "simprich": {
+        "name": "SIMPRICH",
+        "location": "山梨県",
+        "productionNote": "甲府市で誕生したジュエリー企業7社のファクトリーブランド。企画から生産まで手がけます。個別商品の伝統的工芸品認証や原石の採掘地は確認していません。"
+      },
+      "yukie-glass": {
+        "name": "幸愛硝子",
+        "location": "北海道",
+        "productionNote": "北海道小樽のアトリエで、クリスタルガラスを一点ずつ作るブランド。金具ごとの原産地や国の伝統的工芸品認証は確認していません。"
+      }
+    },
+    "merchants": {
+      "cocoon-official": {
+        "name": "CO.COON 公式",
+        "language": "日本語の公式カタログ／ストア",
+        "shippingSummary": "商品・送付先別の配送条件は未確認です。",
+        "returns": "適用される返品条件は未確認です。"
+      },
+      "simprich-official": {
+        "name": "SIMPRICH 公式",
+        "language": "日本語の公式カタログ／ストア",
+        "shippingSummary": "商品・送付先別の配送条件は未確認です。",
+        "returns": "適用される返品条件は未確認です。"
+      },
+      "yukie-glass-official": {
+        "name": "幸愛硝子 公式",
+        "language": "日本語の公式カタログ／ストア",
+        "shippingSummary": "商品・送付先別の配送条件は未確認です。",
+        "returns": "適用される返品条件は未確認です。"
+      }
+    }
+  },
+  "stories": {
+    "cocoon-ori-nonhole-earrings": {
+      "en": {
+        "headline": "Let woven silk open beside your face.",
+        "standfirst": "A folded textile silhouette instead of a bright stone. CO.COON’s ori earrings bring the texture of Hakata-ori into a gently spreading shape.",
+        "highlights": [
+          "Hakata-ori textile, folded into a motif",
+          "A non-pierced style in the official gallery",
+          "A softer outline beside a sharp collar"
+        ],
+        "outfit": {
+          "title": "Sharp collar, soft textile",
+          "body": "Try a square-neck top or a neatly collared dress. Keep the neckline uncluttered and leave the fabric motif visible beside one ear."
+        }
+      },
+      "ja": {
+        "headline": "博多織のひだを、耳元にふわり。",
+        "standfirst": "石のきらめきとは違う、布が広がるやわらかな輪郭。CO.COONのoriは、博多織の表情を耳元で楽しむイヤリングです。",
+        "highlights": [
+          "博多織の布を生かす、広がるかたち",
+          "公式ギャラリー掲載のノンホールタイプ",
+          "直線的な襟元に、やわらかな輪郭を"
+        ],
+        "outfit": {
+          "title": "スクエアネック × 布のひだ",
+          "body": "四角い襟元のトップスや、襟を整えたワンピースに。首元の飾りを控え、耳元の布の形を見せる装いを提案します。"
+        }
+      }
+    },
+    "cocoon-frame-pierced-earrings": {
+      "en": {
+        "headline": "See the silk thread, line by line.",
+        "standfirst": "Fine silk worked into frames gives this design its character. Choose the Frame Series when you want a visible outline and the detail of handworked thread.",
+        "highlights": [
+          "Silk thread worked into individual frames",
+          "A pierced design credited to hanaroi",
+          "A contrast to ori’s folded textile shape"
+        ],
+        "outfit": {
+          "title": "Hair tucked back, thread in view",
+          "body": "A side-parted hairstyle and a plain crew neck give the frame room to show. Let the line of the motif do the styling."
+        }
+      },
+      "ja": {
+        "headline": "絹糸の線を見せる、フレームの耳飾り。",
+        "standfirst": "枠に一編みずつ糸を重ねた、CO.COONのフレームシリーズ。布の広がりより、輪郭と繊細な線を楽しみたい日のピアスです。",
+        "highlights": [
+          "フレームへ編み込まれた絹糸",
+          "hanaroi制作のピアスデザイン",
+          "布のoriとは違う、線の表情"
+        ],
+        "outfit": {
+          "title": "耳かけヘア × クルーネック",
+          "body": "髪を片側だけ耳にかけ、丸首のトップスをシンプルに。モチーフの輪郭が見えるよう、顔まわりをすっきり整える提案です。"
+        }
+      }
+    },
+    "simprich-crystal-bubble-pierced-earrings": {
+      "en": {
+        "headline": "A little pearl color, seen through crystal.",
+        "standfirst": "Crystal quartz layered over white mother-of-pearl gives these small round earrings a softly shifting color. A compact alternative to a long drop.",
+        "highlights": [
+          "Crystal and white mother-of-pearl doublet",
+          "Small round silhouette with K18 gold fittings",
+          "For a restrained accent close to the ear"
+        ],
+        "outfit": {
+          "title": "Swept-back hair × a clean neckline",
+          "body": "Try a low ponytail with a simple scoop-neck top. The small round form leaves space for the neckline instead of extending down toward it."
+        }
+      },
+      "ja": {
+        "headline": "水晶の向こうに、白蝶貝の淡い色。",
+        "standfirst": "白蝶貝に水晶を貼り合わせた、小さな丸いピアス。淡い干渉色を楽しみながら、耳元をコンパクトにまとめたい日に。",
+        "highlights": [
+          "水晶と白蝶貝を重ねたダブレット",
+          "小さな丸い形とK18ゴールドの金具",
+          "長いドロップより控えめなアクセント"
+        ],
+        "outfit": {
+          "title": "ひとつ結び × ラウンドネック",
+          "body": "低めに結んだ髪と、首元の開いたシンプルなトップスに。耳元に収まる丸い形を生かし、襟元に余白を残す装いを提案します。"
+        }
+      }
+    },
+    "simprich-rose-quartz-necklace": {
+      "en": {
+        "headline": "Make soft pink the one detail.",
+        "standfirst": "A pale rose-quartz oval held in a simple yellow-gold frame. This necklace puts the stone’s milky color ahead of elaborate decoration.",
+        "highlights": [
+          "A pale pink rose-quartz center",
+          "A simple K10 yellow-gold frame",
+          "A pendant to pair with open necklines"
+        ],
+        "outfit": {
+          "title": "Charcoal top × a quiet pink oval",
+          "body": "Try the pendant against charcoal or warm grey. A simple neckline and small earrings keep the focus on the rose quartz."
+        }
+      },
+      "ja": {
+        "headline": "やさしいピンクを、胸元の一点に。",
+        "standfirst": "淡いローズクォーツを、シンプルなイエローゴールドの枠で。飾りを重ねず、ミルキーな石の色を楽しむネックレスです。",
+        "highlights": [
+          "淡いピンクのローズクォーツ",
+          "石を見せるK10ゴールドの枠",
+          "開いた襟元に合わせたいペンダント"
+        ],
+        "outfit": {
+          "title": "チャコール × 淡いピンク",
+          "body": "チャコールやウォームグレーのトップスに、ピンクの石を一点。耳飾りは小さくまとめ、胸元の色を主役にする装いを提案します。"
+        }
+      }
+    },
+    "yukieglass-mint-veil-earrings": {
+      "en": {
+        "headline": "Give pale green room to glow.",
+        "standfirst": "Wide, flattened glass drops spread a wash of mint beside the face. A statement shape for those who want color across a larger surface.",
+        "highlights": [
+          "A broad, flattened teardrop shape",
+          "Mint glass, clear crystal glass and mica",
+          "A larger silhouette than a small stud"
+        ],
+        "outfit": {
+          "title": "Cream knit × mint glass",
+          "body": "An open-neck cream knit gives the green drops a quiet background. Keep the rest of the jewelry simple so the broad glass surfaces remain visible."
+        }
+      },
+      "ja": {
+        "headline": "淡い緑を、大きな雫で。",
+        "standfirst": "薄く平たいガラスの面に広がる、ミントグリーン。小粒のピアスより、耳元に色の面積をしっかり入れたい日の耳飾りです。",
+        "highlights": [
+          "面で色を見せる、平たい雫",
+          "クリスタルガラス・色ガラス・雲母",
+          "小粒のスタッドとは違う存在感"
+        ],
+        "outfit": {
+          "title": "クリーム色のニット × ミント",
+          "body": "襟元に余白のあるクリーム色のニットに。ほかのジュエリーを控え、ガラスの大きな面が見えるようにまとめる提案です。"
+        }
+      }
+    },
+    "yukieglass-rouge-veil-earrings": {
+      "en": {
+        "headline": "Let red glass lead the outfit.",
+        "standfirst": "Deep red and clear glass meet in a broad, thin drop. Rouge Veil is the stronger color choice beside the softer mint version.",
+        "highlights": [
+          "A broad drop of clear and red glass",
+          "A slightly taller shape than Mint Veil",
+          "A focal point beside dark or neutral clothes"
+        ],
+        "outfit": {
+          "title": "Black top × translucent red",
+          "body": "Try a plain black or navy top and tuck the hair behind one ear. Let the red glass be the one strong color in the look."
+        }
+      },
+      "ja": {
+        "headline": "透ける赤を、装いの主役に。",
+        "standfirst": "透明なガラスに深い赤を重ねた、薄い雫の耳飾り。やわらかなミントとは違い、耳元に色のアクセントを置きたい日に。",
+        "highlights": [
+          "透明なガラスと赤い色ガラス",
+          "Mint Veilより少し縦長の形",
+          "ダークカラーの服に映える一点"
+        ],
+        "outfit": {
+          "title": "黒いトップス × 透ける赤",
+          "body": "黒やネイビーの無地トップスに合わせ、髪を片側だけ耳にかけて。強い色は赤いガラスに絞る装いを提案します。"
+        }
+      }
+    }
+  },
+  "notes": {
+    "cocoon-ori-nonhole-earrings": {
+      "en": "The appeal of ori is the space taken up by folded cloth rather than a polished gemstone. Its spreading outline gives this pair a different role from CO.COON’s thread-worked Frame Series. Consider it when you want the texture of a textile to be visible around the face.\n\nCO.COON brings together silk thread and cloth dyed and handwoven by Hakata-ori artist Kiyo Araki with the work of accessory makers. The official gallery credits this design to hanaroi and identifies it as non-pierced earrings. It is a catalog introduction: the currently offered colors, price and fitting details need confirmation with the brand.",
+      "ja": "oriの魅力は、宝石の光ではなく、折られた布が耳元に作る輪郭。同じCO.COONのフレームシリーズが糸の線を見せるのに対し、こちらは生地の広がりを楽しむ選択肢です。顔まわりに布の表情を入れたいときに選びたい一組。\n\nCO.COONは、博多織作家・荒木希代が染色し、手織りする糸や布を、アクセサリー作家の仕事と組み合わせるブランドです。このデザインは公式ギャラリーでhanaroi制作のノンホールタイプとして紹介されています。現行の色柄・価格・留め具の詳細は、ブランドの販売案内でご確認ください。"
+    },
+    "cocoon-frame-pierced-earrings": {
+      "en": "This is the thread-focused alternative to CO.COON’s fabric-shaped ori. Silk is worked into individual frames, so the outline and the lines running through it become the focus. A hairstyle that leaves the ear visible helps show that difference.\n\nThe official gallery credits the pierced Frame Series to hanaroi. Its craft connection comes through CO.COON’s use of silk from Hakata-ori artist Kiyo Araki. The gallery does not publish a fixed price, measurements or fitting alloy. Check the current design and sales guidance directly rather than assuming every pictured version is available.",
+      "ja": "布がふわりと広がるoriに対し、こちらは枠の中に通る絹糸の線を楽しむデザイン。輪郭と糸の重なりが見えるよう、髪を耳にかけた装いに合わせると、その違いを見せやすくなります。\n\n公式ギャラリーでは、hanaroi制作のフレームシリーズ・ピアスとして掲載されています。博多織作家・荒木希代が手がける絹糸をアクセサリーへつなぐCO.COONの仕事です。固定価格・寸法・金具素材は公開情報で確認できていないため、現行の作品と販売方法はブランドの案内でお確かめください。"
+    },
+    "simprich-crystal-bubble-pierced-earrings": {
+      "en": "These are not plain clear crystal balls. The white mother-of-pearl underneath the quartz gives the round motif its pale pink and green interference colors. If you like a small stud silhouette but want more than a single flat color, this layered material is the detail to compare.\n\nSIMPRICH identifies the earrings as a pair with K18 yellow-gold posts and catches. The brand grew out of seven jewelry companies in Kofu and manages planning through production. The item is made to order; review the current dispatch guidance and the actual stone appearance on the official page before choosing.",
+      "ja": "透明な水晶の丸だけでなく、その下に重ねた白蝶貝の淡い色を楽しむピアスです。ピンクや緑を帯びた干渉色が見える構成なので、小さなスタッド型を選びつつ、単色とは違う表情を入れたいときの候補に。\n\nSIMPRICHは、甲府のジュエリー企業7社から生まれ、企画から生産まで手がけるファクトリーブランド。公式商品ページは1ペアとして案内し、K18イエローゴールドのポストとキャッチを記載しています。受注生産のため、現在の納期と石の色は公式ページでご確認ください。"
+    },
+    "simprich-rose-quartz-necklace": {
+      "en": "Choose this necklace for its milky pink stone rather than a dense setting of small gems. The oval has a clear outline inside a simple gold frame, making it a useful point of color above a plain top. It offers a different mood from the brand’s compact crystal-and-pearl bubble earrings.\n\nThe official page identifies rose quartz and K10 yellow gold, with the stone and chain dimensions listed separately. This is a made-to-order item from Kofu-born SIMPRICH. Gemstone mining origin and individual traditional-craft certification are not established by that regional connection.",
+      "ja": "小さな宝石をたくさん並べるのではなく、ミルキーなピンクの石を一つ見せるネックレス。楕円形を囲むシンプルな金色の枠が輪郭を整え、無地の服に色を足したいときの候補になります。コンパクトな水晶しゃぼん玉ピアスとは、色と見せる位置の違いで選べます。\n\n公式ページはローズクォーツとK10イエローゴールドを明記し、中石とチェーンの寸法を分けて案内しています。甲府発のSIMPRICHによる受注生産品。地域との関わりから、原石の採掘地や個別商品の伝統工芸認証まで推定することはしません。"
+    },
+    "yukieglass-mint-veil-earrings": {
+      "en": "The shape is the distinction: this is a broad glass drop flattened into a thin surface, rather than a rounded solid drop. Mint-colored glass and mica are layered with clear crystal glass. Choose it when you want a visible area of soft green beside the face.\n\nYukie Glass makes its accessories individually at an Otaru atelier. The maker publishes a per-piece weight range, so we do not describe the earrings as weightless or promise comfort. The named piece is one of a kind and shares stock with the atelier gallery; confirm the current listing and fitting details before choosing.",
+      "ja": "ふっくらした立体の雫ではなく、幅のあるガラスを薄く平たくした形が特徴です。透明なクリスタルガラスに、ミント色のガラスと雲母を重ねています。耳元に淡い緑を面で入れたいときに、小粒の耳飾りとの違いがはっきりする一組です。\n\n幸愛硝子は小樽のアトリエでアクセサリーを一点ずつ制作しています。片耳の重さには公式の幅があるため、「重さを感じない」といった着け心地は断定しません。紹介品は一点物でアトリエと在庫を共有するため、現在の販売状況と金具の詳細は公式でご確認ください。"
+    },
+    "yukieglass-rouge-veil-earrings": {
+      "en": "Rouge Veil uses a deep red layer within transparent crystal glass. Compared with Mint Veil, it makes color more decisive and has a slightly taller listed silhouette. A plain dark top is one way to give that red outline room without introducing more patterns.\n\nThe Otaru maker identifies this as a flattened glass pierced earring design. Its stated weight is a range per piece, not a comfort test. Each piece is handmade and the current listing shares stock with the atelier. A physical stockist may carry different Yukie Glass collections, so do not assume the named Veil piece will be in that shop.",
+      "ja": "透明なクリスタルガラスに深い赤を重ねたRouge Veil。淡いMint Veilより色の主張があり、公式寸法では少し縦長です。柄を重ねず、ダークカラーの服に合わせて、赤い輪郭をひとつ見せる装いを提案します。\n\n小樽の作り手は、ガラスを薄く平たくしたピアスとして紹介しています。公式の片耳重量は範囲で示されており、着け心地を実際に試した評価ではありません。一点物でアトリエと在庫を共有するため、現行の販売状況をご確認ください。取扱店によって作品構成が違うことも、訪問前に確かめたい点です。"
+    }
+  },
+  "places": {
+    "fukuoka": {
+      "sourceIds": [
+        "cocoon-about-v9",
+        "cocoon-gallery-v9",
+        "fukuoka-crafts-v9"
+      ],
+      "relatedMerchantIds": [
+        "cocoon-official"
+      ],
+      "en": {
+        "title": "Jewelry connected to Fukuoka",
+        "description": "Explore Hakata-ori silk-textile and thread jewelry from CO.COON.",
+        "body": "Hakata-ori is one of Fukuoka’s recognized craft traditions. This selection follows it into contemporary earrings through CO.COON, a collaboration using silk threads and fabrics dyed and handwoven by Kiyo Araki.\n\nStart with the contrast between ori’s spreading textile shape and the Frame Series’ visible threads. The current catalog establishes these designs, while colors, prices and sales arrangements need confirmation with the brand. The regional connection concerns the textile craft; it does not establish every component’s origin."
+      },
+      "ja": {
+        "title": "福岡に関わるジュエリー",
+        "description": "博多織の糸と布を生かす、CO.COONの耳飾りをセレクト。",
+        "body": "福岡の代表的な工芸のひとつ、博多織。その糸や布を耳飾りへつなぐCO.COONから、広がる生地の形を楽しむoriと、絹糸の線を見せるフレームシリーズを選びました。\n\n荒木希代が染色・手織りした素材と、アクセサリー作家の仕事が組み合わさるブランドです。紹介品は公式ギャラリーで確認していますが、現行の色柄・価格・販売方法はブランドへ。地域との関わりから、各部品の製造地まで認定するものではありません。"
+      }
+    },
+    "yamanashi": {
+      "sourceIds": [
+        "simprich-about-v9",
+        "simprich-bubble-v9",
+        "simprich-rose-quartz-v9"
+      ],
+      "relatedMerchantIds": [
+        "simprich-official"
+      ],
+      "en": {
+        "title": "Jewelry from Yamanashi",
+        "description": "Discover crystal, mother-of-pearl and rose-quartz jewelry from Kofu-born SIMPRICH.",
+        "body": "Kofu-born SIMPRICH began as a factory brand of seven jewelry companies. Its range offers an entry into Yamanashi’s jewelry making through simple forms and the appearance of their materials.\n\nOur first two selections make a useful contrast: compact quartz-and-mother-of-pearl bubble earrings, and a milky-pink rose-quartz pendant. Both are made-to-order listings. The brand identifies a museum shop for part of its collection, though individual SKU stock must be checked. This regional category does not claim the stones were mined in Yamanashi."
+      },
+      "ja": {
+        "title": "山梨のジュエリー",
+        "description": "甲府発SIMPRICHから、水晶と白蝶貝のピアス、ローズクォーツのネックレスを。",
+        "body": "甲府のジュエリー企業7社から生まれたファクトリーブランド、SIMPRICH。素材の見え方とシンプルな形から、山梨のジュエリーづくりに出会う入口です。\n\n小さく丸い水晶と白蝶貝のしゃぼん玉ピアス、淡いピンクの石を一つ見せるローズクォーツのネックレスを選びました。いずれも公式が受注生産として案内する品。一部商品の展示販売先も紹介していますが、個別の店頭在庫は訪問前に確認してください。原石が山梨で採れたという意味ではありません。"
+      }
+    },
+    "hokkaido": {
+      "sourceIds": [
+        "yukie-accessory-origin-v9",
+        "yukie-mint-v9",
+        "yukie-rouge-v9"
+      ],
+      "relatedMerchantIds": [
+        "yukie-glass-official"
+      ],
+      "en": {
+        "title": "Jewelry from Hokkaido",
+        "description": "Explore mint and red glass earrings handmade at Yukie Glass’s Otaru atelier.",
+        "body": "Yukie Glass makes crystal-glass accessories one piece at a time in Otaru, Hokkaido. This selection focuses on the Veil earrings: broad drops flattened into thin surfaces to show their color.\n\nMint Veil combines soft green glass and mica; Rouge Veil places deep red within clear glass. Compare both the color and the listed size rather than assuming the two pieces are identical. The atelier receives visitors by confirmed advance arrangement, and city stockists have different collections. No individual store stock is promised."
+      },
+      "ja": {
+        "title": "北海道のジュエリー",
+        "description": "小樽の幸愛硝子から、淡いミントと透ける赤のガラスピアスを。",
+        "body": "北海道小樽のアトリエで、クリスタルガラスのアクセサリーを一点ずつ作る幸愛硝子。今回は、大きな雫を薄く平たい面にしたVeilシリーズを選びました。\n\n淡い緑のガラスと雲母を重ねるMint Veil、透明なガラスの中に深い赤を入れるRouge Veil。色だけでなく、公式に記載された大きさの違いも比べられます。アトリエは事前に予約が確定した方のための場所で、市内取扱店とは作品の構成が異なります。"
+      }
+    }
+  },
+  "craftNotes": {
+    "hakata-ori": {
+      "sourceIds": [
+        "cocoon-about-v9",
+        "cocoon-gallery-v9",
+        "fukuoka-crafts-v9"
+      ],
+      "en": {
+        "title": "Hakata-ori silk accessories",
+        "description": "Hakata-ori silk threads and textiles reworked into contemporary jewelry; individual accessory certification is not claimed.",
+        "body": "Hakata-ori is one of Fukuoka’s recognized craft traditions. This selection follows it into contemporary earrings through CO.COON, a collaboration using silk threads and fabrics dyed and handwoven by Kiyo Araki.\n\nStart with the contrast between ori’s spreading textile shape and the Frame Series’ visible threads. The current catalog establishes these designs, while colors, prices and sales arrangements need confirmation with the brand. The regional connection concerns the textile craft; it does not establish every component’s origin."
+      },
+      "ja": {
+        "title": "博多織のアクセサリー",
+        "description": "博多織の絹糸や生地を耳飾りへ。工芸分野の指定と、個別アクセサリーの認証は区別して紹介します。",
+        "body": "福岡の代表的な工芸のひとつ、博多織。その糸や布を耳飾りへつなぐCO.COONから、広がる生地の形を楽しむoriと、絹糸の線を見せるフレームシリーズを選びました。\n\n荒木希代が染色・手織りした素材と、アクセサリー作家の仕事が組み合わさるブランドです。紹介品は公式ギャラリーで確認していますが、現行の色柄・価格・販売方法はブランドへ。地域との関わりから、各部品の製造地まで認定するものではありません。"
+      }
+    },
+    "kofu-jewelry": {
+      "sourceIds": [
+        "simprich-about-v9"
+      ],
+      "en": {
+        "title": "Kofu jewelry making",
+        "description": "Factory jewelry from Kofu; this category is not a claim of individual Koshu crystal-craft certification.",
+        "body": "Kofu-born SIMPRICH began as a factory brand of seven jewelry companies. Its range offers an entry into Yamanashi’s jewelry making through simple forms and the appearance of their materials.\n\nOur first two selections make a useful contrast: compact quartz-and-mother-of-pearl bubble earrings, and a milky-pink rose-quartz pendant. Both are made-to-order listings. The brand identifies a museum shop for part of its collection, though individual SKU stock must be checked. This regional category does not claim the stones were mined in Yamanashi."
+      },
+      "ja": {
+        "title": "甲府のジュエリー",
+        "description": "甲府発のファクトリーブランドによるジュエリー。個別商品の甲州水晶貴石細工認証は確認していません。",
+        "body": "甲府のジュエリー企業7社から生まれたファクトリーブランド、SIMPRICH。素材の見え方とシンプルな形から、山梨のジュエリーづくりに出会う入口です。\n\n小さく丸い水晶と白蝶貝のしゃぼん玉ピアス、淡いピンクの石を一つ見せるローズクォーツのネックレスを選びました。いずれも公式が受注生産として案内する品。一部商品の展示販売先も紹介していますが、個別の店頭在庫は訪問前に確認してください。原石が山梨で採れたという意味ではありません。"
+      }
+    },
+    "otaru-glass": {
+      "sourceIds": [
+        "yukie-accessory-origin-v9"
+      ],
+      "en": {
+        "title": "Otaru glassmaking",
+        "description": "Contemporary glass jewelry handmade in Otaru, Hokkaido; no national traditional-craft designation is claimed.",
+        "body": "Yukie Glass makes crystal-glass accessories one piece at a time in Otaru, Hokkaido. This selection focuses on the Veil earrings: broad drops flattened into thin surfaces to show their color.\n\nMint Veil combines soft green glass and mica; Rouge Veil places deep red within clear glass. Compare both the color and the listed size rather than assuming the two pieces are identical. The atelier receives visitors by confirmed advance arrangement, and city stockists have different collections. No individual store stock is promised."
+      },
+      "ja": {
+        "title": "小樽のガラス",
+        "description": "北海道小樽のアトリエで一点ずつ作るガラスジュエリー。国の伝統的工芸品指定は主張しません。",
+        "body": "北海道小樽のアトリエで、クリスタルガラスのアクセサリーを一点ずつ作る幸愛硝子。今回は、大きな雫を薄く平たい面にしたVeilシリーズを選びました。\n\n淡い緑のガラスと雲母を重ねるMint Veil、透明なガラスの中に深い赤を入れるRouge Veil。色だけでなく、公式に記載された大きさの違いも比べられます。アトリエは事前に予約が確定した方のための場所で、市内取扱店とは作品の構成が異なります。"
+      }
+    }
+  },
+  "visits": {
+    "stores": [
+      {
+        "id": "yamanashi-jewelry-museum-shop",
+        "name": {
+          "ja": "山梨ジュエリーミュージアム併設 やまなしジュエリーショップ",
+          "en": "Yamanashi Jewelry Shop at Yamanashi Jewelry Museum"
+        },
+        "address": {
+          "ja": "〒400-0031 山梨県甲府市丸の内1-6-1 山梨県防災新館1階 やまなしプラザ内",
+          "en": "Yamanashi Plaza, 1F Yamanashi Disaster Prevention New Building, 1-6-1 Marunouchi, Kofu, Yamanashi 400-0031, Japan"
+        },
+        "kind": "stockist",
+        "officialUrl": "https://www.pref.yamanashi.jp/yjm/",
+        "officialStoreUrl": "https://www.pref.yamanashi.jp/yjm/",
+        "hours": {
+          "ja": "ショップ10:00–17:00（ミュージアムの閉館17:30とは異なります）",
+          "en": "Shop10:00–17:00; the museum itself closes at17:30."
+        },
+        "closedDays": {
+          "ja": "火曜日（祝日の場合は翌日）、12月29日–1月3日。臨時休館あり。",
+          "en": "Tuesdays (next day if Tuesday is a public holiday), Dec29–Jan3; additional closures may apply."
+        },
+        "access": {
+          "ja": "JR甲府駅南口から徒歩約7分。",
+          "en": "About7minutes on foot from the south exit of JR Kofu Station."
+        },
+        "visitSummary": {
+          "ja": "甲府のジュエリーを見比べながら立ち寄れるミュージアム併設店。SIMPRICH公式サイトが一部商品の展示販売先として案内しています。",
+          "en": "A museum shop for exploring jewelry from Kofu. SIMPRICH identifies it as a place displaying and selling part of its collection."
+        },
+        "stockNote": {
+          "ja": "SIMPRICHの一部商品の取扱い確認です。この2商品の現物・店頭在庫は未確認のため、訪問前に希望品を確認してください。",
+          "en": "Only part of SIMPRICH’s collection is stocked. Neither featured SKU nor current store stock is confirmed; check the exact piece before visiting."
+        },
+        "mapQuery": "山梨ジュエリーミュージアム やまなしジュエリーショップ 山梨県甲府市丸の内1-6-1",
+        "sourceIds": [
+          "simprich-home-shop-v9",
+          "yamanashi-jewelry-museum-v9",
+          "yamanashi-jewelry-access-v9"
+        ],
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "kitaichi-sangokan-yo",
+        "name": {
+          "ja": "北一硝子 三号館 洋のフロア〜北一プラザ〜",
+          "en": "Kitaichi Glass Sangokan, Floor YO – Kitaichi Plaza"
+        },
+        "address": {
+          "ja": "〒047-0027 北海道小樽市堺町7-26",
+          "en": "7-26 Sakaimachi, Otaru, Hokkaido 047-0027, Japan"
+        },
+        "kind": "stockist",
+        "officialUrl": "https://kitaichiglass.co.jp/",
+        "officialStoreUrl": "https://kitaichiglass.co.jp/yo/",
+        "hours": {
+          "ja": "10:00–18:00（公式の当面の営業時間。来店前に最新案内を確認）",
+          "en": "10:00–18:00 under the current temporary schedule; check the latest official notice before visiting."
+        },
+        "closedDays": {
+          "ja": "年中無休との公式案内。臨時変更は公式で確認。",
+          "en": "Listed as open year-round; check for temporary changes."
+        },
+        "access": {
+          "ja": "公式目安は南小樽駅から徒歩約10分、小樽駅から徒歩約20分です。",
+          "en": "The store’s guide estimates about10minutes on foot from Minami-Otaru Station, or20minutes from Otaru Station."
+        },
+        "visitSummary": {
+          "ja": "小樽・堺町の硝子店。幸愛硝子公式が、コラボ作品やドロップ作品を扱う主な取扱店として案内しています。",
+          "en": "A glass shop on Otaru’s Sakaimachi Street. Yukie Glass lists it as a main stockist for collaboration and selected drop pieces."
+        },
+        "stockNote": {
+          "ja": "紹介したVeil2商品の取扱い・店頭在庫は未確認です。アトリエと取扱作品が異なるため、希望品がある場合は訪問前に確認してください。",
+          "en": "The featured Veil SKUs and current store stock are not confirmed. The selection differs from the atelier; check any specific piece before visiting."
+        },
+        "mapQuery": "北一硝子 三号館 洋のフロア 北海道小樽市堺町7-26",
+        "sourceIds": [
+          "yukie-atelier-visits-v9",
+          "kitaichi-yo-store-v9",
+          "kitaichi-hours-v9",
+          "kitaichi-access-v9"
+        ],
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "products": [
+      {
+        "productId": "cocoon-ori-nonhole-earrings",
+        "storeIds": [],
+        "officialHomeUrl": "https://www.co-coon.info/",
+        "officialHomeRole": "maker",
+        "sourceIds": [
+          "cocoon-gallery-v9",
+          "cocoon-about-v9",
+          "kiyo-araki-maker-v9",
+          "fukuoka-crafts-v9"
+        ],
+        "fallback": {
+          "ja": "常設の購入場所は確認できていません。公式ギャラリーで作品を見て、ブランドの最新の販売案内をご確認ください。",
+          "en": "A current permanent retail location is not confirmed. View the official gallery and check the brand’s current availability and sales guidance."
+        },
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "productId": "cocoon-frame-pierced-earrings",
+        "storeIds": [],
+        "officialHomeUrl": "https://www.co-coon.info/",
+        "officialHomeRole": "maker",
+        "sourceIds": [
+          "cocoon-gallery-v9",
+          "cocoon-about-v9",
+          "kiyo-araki-maker-v9",
+          "fukuoka-crafts-v9"
+        ],
+        "fallback": {
+          "ja": "常設店と店頭在庫は未確認です。公式ギャラリーとブランドの販売案内をご確認ください。",
+          "en": "A permanent shop and current stock are not confirmed. Refer to the official gallery and the brand’s current sales guidance."
+        },
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "productId": "simprich-crystal-bubble-pierced-earrings",
+        "storeIds": [
+          "yamanashi-jewelry-museum-shop"
+        ],
+        "officialHomeUrl": "https://shop.simprich.jp/",
+        "officialHomeRole": "maker",
+        "sourceIds": [
+          "simprich-bubble-v9",
+          "simprich-about-v9",
+          "simprich-home-shop-v9",
+          "yamanashi-jewelry-museum-v9",
+          "yamanashi-jewelry-access-v9"
+        ],
+        "fallback": null,
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "productId": "simprich-rose-quartz-necklace",
+        "storeIds": [
+          "yamanashi-jewelry-museum-shop"
+        ],
+        "officialHomeUrl": "https://shop.simprich.jp/",
+        "officialHomeRole": "maker",
+        "sourceIds": [
+          "simprich-rose-quartz-v9",
+          "simprich-about-v9",
+          "simprich-home-shop-v9",
+          "yamanashi-jewelry-museum-v9",
+          "yamanashi-jewelry-access-v9"
+        ],
+        "fallback": null,
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "productId": "yukieglass-mint-veil-earrings",
+        "storeIds": [
+          "kitaichi-sangokan-yo"
+        ],
+        "officialHomeUrl": "https://www.yukieglass.net/",
+        "officialHomeRole": "maker",
+        "sourceIds": [
+          "yukie-mint-v9",
+          "yukie-accessory-origin-v9",
+          "yukie-atelier-visits-v9",
+          "kitaichi-yo-store-v9",
+          "kitaichi-hours-v9",
+          "kitaichi-access-v9"
+        ],
+        "fallback": null,
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "productId": "yukieglass-rouge-veil-earrings",
+        "storeIds": [
+          "kitaichi-sangokan-yo"
+        ],
+        "officialHomeUrl": "https://www.yukieglass.net/",
+        "officialHomeRole": "maker",
+        "sourceIds": [
+          "yukie-rouge-v9",
+          "yukie-accessory-origin-v9",
+          "yukie-atelier-visits-v9",
+          "kitaichi-yo-store-v9",
+          "kitaichi-hours-v9",
+          "kitaichi-access-v9"
+        ],
+        "fallback": null,
+        "checkedAt": "2026-11-16"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "cocoon-gallery-v9",
+      "url": "https://www.co-coon.info/gallery",
+      "title": "CO.COON official accessory gallery",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "ori non-pierced earrings and Frame Series pierced earrings exist; hanaroi credit; Hakata-ori fabric and frame-worked silk thread descriptions; no price/dimension/alloy confirmed"
+      ]
+    },
+    {
+      "id": "cocoon-about-v9",
+      "url": "https://www.co-coon.info/about",
+      "title": "CO.COON brand and artists",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Kiyo Araki dyes and handweaves silk thread/fabric used by the accessory brand; collaboration with accessory makers; Hakata-ori craft relationship"
+      ]
+    },
+    {
+      "id": "kiyo-araki-maker-v9",
+      "url": "https://www.kiyotextile.com/",
+      "title": "Kiyo Araki official Hakata-ori maker profile",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Hakata-ori textile maker profile; Fukuoka craft context; designs, dyes and weaves herself; do not transfer individual certification to accessories"
+      ]
+    },
+    {
+      "id": "fukuoka-crafts-v9",
+      "url": "https://www.pref.fukuoka.lg.jp/contents/gaiyou-dentoukougei.html",
+      "title": "Fukuoka prefecture traditional craft overview",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Hakata-ori is one of Fukuoka’s nationally designated traditional craft categories; this general classification does not certify an individual accessory"
+      ]
+    },
+    {
+      "id": "simprich-about-v9",
+      "url": "https://shop.simprich.jp/pages/about",
+      "title": "SIMPRICH official brand and production background",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Kofu-born factory brand of seven local jewelry companies; planning through production managed by the brand; no individual national craft certification or gemstone mining origin claim"
+      ]
+    },
+    {
+      "id": "simprich-bubble-v9",
+      "url": "https://shop.simprich.jp/products/oy-k1%EF%BC%98sha-pi-1",
+      "title": "SIMPRICH crystal and mother-of-pearl K18 bubble earrings",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "JPY52800 tax included per pair; K18YG post/catch, 7x7x7mm, post0.7x10mm; crystal quartz and mother-of-pearl doublet; made to order"
+      ]
+    },
+    {
+      "id": "simprich-rose-quartz-v9",
+      "url": "https://shop.simprich.jp/products/k10%E3%82%A4%E3%82%A8%E3%83%AD%E3%83%BC%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89-%E3%83%AD%E3%83%BC%E3%82%BA%E3%82%AF%E3%82%A9%E3%83%BC%E3%83%84-%E3%83%8D%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B9",
+      "title": "SIMPRICH K10 rose-quartz necklace SP-255288",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "JPY59400 tax included; K10YG, rose quartz8x10mm, chain45cm; made to order"
+      ]
+    },
+    {
+      "id": "simprich-home-shop-v9",
+      "url": "https://shop.simprich.jp/",
+      "title": "SIMPRICH official home and physical stockist notice",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Part of the SIMPRICH collection is displayed and sold at Yamanashi Jewelry Museum; not every product is stocked"
+      ]
+    },
+    {
+      "id": "yamanashi-jewelry-museum-v9",
+      "url": "https://www.pref.yamanashi.jp/yjm/",
+      "title": "Yamanashi Jewelry Museum official home, shop hours and address",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Shop10:00–17:00 differs from museum10:00–17:30; shop follows museum open days; Tuesday/holiday and year-end closures; Marunouchi1-6-1 address"
+      ]
+    },
+    {
+      "id": "yamanashi-jewelry-access-v9",
+      "url": "https://www.pref.yamanashi.jp/smartphone/yjm/access.html",
+      "title": "Yamanashi Jewelry Museum official access",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "About7minutes walk from JR Kofu Station south exit"
+      ]
+    },
+    {
+      "id": "yukie-accessory-origin-v9",
+      "url": "https://www.yukieglass.net/?mode=f4",
+      "title": "Yukie Glass official glass-accessory production overview",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Crystal glass jewelry made one piece at a time at the maker’s Otaru, Hokkaido atelier"
+      ]
+    },
+    {
+      "id": "yukie-mint-v9",
+      "url": "https://www.yukieglass.net/?pid=192213845",
+      "title": "Yukie Glass Mint Veil Chronicle-005",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "JPY28600 tax included;35x29mm;3mm thickness;8–10g per piece; crystal glass, mint colored glass and mica; thin flat drop pierced earrings; shared stock"
+      ]
+    },
+    {
+      "id": "yukie-rouge-v9",
+      "url": "https://www.yukieglass.net/?pid=192213864",
+      "title": "Yukie Glass Rouge Veil Chronicle-007",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "JPY28600 tax included;38x29mm;3mm thickness;8–10g per piece; crystal glass and red colored glass; thin flat drop pierced earrings; shared stock"
+      ]
+    },
+    {
+      "id": "yukie-atelier-visits-v9",
+      "url": "https://www.yukieglass.net/?mode=f11",
+      "title": "Yukie Glass official appointment and Otaru stockist guide",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Atelier is not a walk-in shop and requires confirmed reservation; Kitaichi Glass Sangokan FloorYO is a main stockist; stock and collections differ; no Veil SKU store-stock guarantee"
+      ]
+    },
+    {
+      "id": "kitaichi-yo-store-v9",
+      "url": "https://kitaichiglass.co.jp/yo/",
+      "title": "Kitaichi Sangokan FloorYO official store",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Public shop address7-26Sakaimachi Otaru; accessory range and changed FloorYO–KitaichiPlaza name"
+      ]
+    },
+    {
+      "id": "kitaichi-hours-v9",
+      "url": "https://kitaichiglass.co.jp/shoplist/",
+      "title": "Kitaichi Glass official store hours",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Current temporary store schedule10:00–18:00, year-round; latest notices should be rechecked"
+      ]
+    },
+    {
+      "id": "kitaichi-access-v9",
+      "url": "https://kitaichiglass.co.jp/access-2/",
+      "title": "Kitaichi Glass official access guide",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Estimated walk10minutes from Minami-Otaru Station or20minutes from Otaru Station to Sangokan"
+      ]
+    }
+  ]
+}

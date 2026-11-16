@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-11-16",
+  "title": "2025 annual inbound visitor prefecture visit rates, top 10",
+  "publisher": "Japan Tourism Agency / 観光庁",
+  "survey": "インバウンド消費動向調査 2025年（令和7年）暦年【確報】",
+  "year": 2025,
+  "table": "表6-1 国籍・地域（21区分）別 都道府県別訪問率",
+  "column": "全国籍・地域 / 訪問率",
+  "population": "一般客・全目的（観光・レジャー以外の目的を含む）",
+  "metric": "Prefecture visit rate (%) / 都道府県別訪問率（複数回答）",
+  "metricNotes": [
+    "Rates refer to prefectures visited during the trip, not unique people or guest-nights.",
+    "A visitor can report more than one prefecture. Rates must not be summed as a share of unique visitors.",
+    "The annual series is used rather than an incomplete 2026 quarter, to avoid seasonal ranking changes.",
+    "All-purpose visitors are included; do not label this tourism/leisure-only data.",
+    "This ranks destinations visited, not the popularity or sales of jewelry."
+  ],
+  "indexUrl": "https://www.mlit.go.jp/kankocho/tokei_hakusyo/gaikokujinshohidoko.html",
+  "dataUrl": "https://www.mlit.go.jp/kankocho/content/002025515.xls",
+  "methodologyUrl": "https://www.mlit.go.jp/kankocho/content/002020010.pdf",
+  "access": "body_read",
+  "method": "Downloaded the official .xls linked under 2025年 集計表 暦年 and read sheet 表6-1 using xlrd. Cross-checked report terminology. The official index last updated 2026-10-21 notes corrected tables published 2026-10-08. No secondary ranking used as final evidence.",
+  "displayPrecision": "1 decimal place",
+  "ranking": [
+    { "rank": 1, "prefectureId": "tokyo", "nameJa": "東京都", "nameEn": "Tokyo", "visitRatePercent": 50.7888, "displayPercent": 50.8 },
+    { "rank": 2, "prefectureId": "osaka", "nameJa": "大阪府", "nameEn": "Osaka", "visitRatePercent": 41.3169, "displayPercent": 41.3 },
+    { "rank": 3, "prefectureId": "chiba", "nameJa": "千葉県", "nameEn": "Chiba", "visitRatePercent": 35.1439, "displayPercent": 35.1 },
+    { "rank": 4, "prefectureId": "kyoto", "nameJa": "京都府", "nameEn": "Kyoto", "visitRatePercent": 29.7255, "displayPercent": 29.7 },
+    { "rank": 5, "prefectureId": "fukuoka", "nameJa": "福岡県", "nameEn": "Fukuoka", "visitRatePercent": 10.9719, "displayPercent": 11.0 },
+    { "rank": 6, "prefectureId": "kanagawa", "nameJa": "神奈川県", "nameEn": "Kanagawa", "visitRatePercent": 9.2630, "displayPercent": 9.3 },
+    { "rank": 7, "prefectureId": "nara", "nameJa": "奈良県", "nameEn": "Nara", "visitRatePercent": 9.0158, "displayPercent": 9.0 },
+    { "rank": 8, "prefectureId": "yamanashi", "nameJa": "山梨県", "nameEn": "Yamanashi", "visitRatePercent": 8.1123, "displayPercent": 8.1 },
+    { "rank": 9, "prefectureId": "hokkaido", "nameJa": "北海道", "nameEn": "Hokkaido", "visitRatePercent": 7.3160, "displayPercent": 7.3 },
+    { "rank": 10, "prefectureId": "aichi", "nameJa": "愛知県", "nameEn": "Aichi", "visitRatePercent": 6.8691, "displayPercent": 6.9 }
+  ],
+  "readerLabel": {
+    "ja": "訪日客の訪問率が高い10都道府県から探す",
+    "en": "Explore Japan’s 10 most-visited prefectures"
+  },
+  "readerMethod": {
+    "ja": "観光庁・2025年の都道府県別訪問率順（全目的・複数回答）。アクセサリーの人気順位ではありません。",
+    "en": "Ordered by Japan Tourism Agency prefecture visit rates for 2025 (all trip purposes; multiple responses). This is a destination ranking, not a jewelry popularity ranking."
+  },
+  "sourceRecords": [
+    { "id": "jta-2025-visit-rates-v9", "url": "https://www.mlit.go.jp/kankocho/content/002025515.xls", "title": "JTA Inbound Consumption Trends Survey 2025 annual final tables, Table6-1", "checkedAt": "2026-11-16", "access": "body_read", "supports": ["Exact 2025 annual all-purpose, all-nationality prefecture visit rates and derived descending top10 order; multiple responses"] },
+    { "id": "jta-survey-index-v9", "url": "https://www.mlit.go.jp/kankocho/tokei_hakusyo/gaikokujinshohidoko.html", "title": "Japan Tourism Agency inbound consumption survey official index", "checkedAt": "2026-11-16", "access": "body_read", "supports": ["Official current annual workbook link; 2026 quarterly results are not a complete annual series; 2026-10-08 correction notice"] },
+    { "id": "jta-2025-report-v9", "url": "https://www.mlit.go.jp/kankocho/content/002020010.pdf", "title": "JTA Inbound Consumption Trends Survey 2025 annual report", "checkedAt": "2026-11-16", "access": "body_read", "supports": ["General visitors and cruise visitors are distinct; all trip purposes include non-leisure purposes; Table6-1 is all-purpose prefecture visit rates"] }
+  ]
+}

@@ -1,6 +1,6 @@
-# 商品・店舗・画像・価格・広告・公開の更新手順 — 0.8
+# 商品・店舗・画像・価格・広告・公開の更新手順 — 0.9
 
-更新日：2026-11-16。AGENTS.md、docs/constitution.md、specs/008-official-links-and-visits/、docs/handoff.mdを先に読む。現行は16商品・6都府県・6技法、木8／非木8の構成。画像は現行registryの13種類で15商品に対応する。店舗・商品関係・確認済公式ホームURLの正本はsrc/data/visits.json、公式商品URLはcatalog.links。公開・検証の確定状態は008のvalidationとvisit-stage結果を参照する。
+更新日：2026-11-16。AGENTS.md、docs/constitution.md、specs/009-destination-selection/、docs/handoff.mdを先に読む。現行は30商品・12都道府県・13技法、28画像が全30商品へ対応。店舗13件を25商品に関連づけ、実店舗未確認の5商品は公式通販/販売案内へ進める。正本の分離とGoogleMaps外部リンク方式は008を継承。最新の実測は009validationとdestination-stage結果を参照。
 
 最新ユーザー指示は、20代後半〜30代前半の女性、全商品の公式URLと現地案内、短い「AIイメージ / AI image」表示、木以外も選べる構成、日英で使いやすい入口。Contact非公開、SORA、ブログなしを維持する。
 
@@ -57,7 +57,7 @@ locale無しは共有リンクで両言語へ出る。個別localeの行と同�
 
 ## 3. 画像を20代後半〜30代前半の雰囲気で更新する
 
-現行の対応はsrc/data/editorial-images.jsonが正本。13画像で15商品に対応し、C/Dの耳飾りは2商品で共有、18Kは抽象装飾。ファイル名を本文へ別一覧として固定せず、registryから照合する。過去世代は公開対象外の履歴として管理し、現行数へ二重計上しない。使用中で移動できないローカル旧ファイルはGitと書出しから除外し、台帳のlocalRetiredPathへ記録する。履歴の正本はdocs/archive、現在の公開対象はregistry。
+現行の対応はsrc/data/editorial-images.jsonが正本。28画像で30商品に対応し、C/Dの耳飾りは同じ柄の2商品で共有。18Kにも画像あり。ファイル名を本文へ別一覧として固定せず、registryから照合する。過去世代は公開対象外の履歴として管理し、現行数へ二重計上しない。使用中で移動できないローカル旧ファイルはGitと書出しから除外し、台帳のlocalRetiredPathへ記録する。履歴の正本はdocs/archive、現在の公開対象はregistry。
 
 制作する人物は概ね27〜33歳の架空の成人日本人女性。既存の27/29歳と32/33歳の画像は保ち、より上に見える画像はこの範囲を目安に更新する。かわいい、個性的、すっきりした雰囲気などは変えてよい。年代が上に見える人物へ戻さない。
 
@@ -100,7 +100,7 @@ CSPとActionsの権限分離を維持する。広告script、解析、formを追
 
 ## 7. 公式URLと店舗・行き方を更新する
 
-1. 商品の公式ページ／公式カタログはcatalog.linksのofficialProductUrlが正本。各localeの実ページとhostを確認し、src/lib/visits.tsのofficialProductLinks経由で全16商品に通常URLを明示する。広告化したCTAとは別の通常リンクを残し、公式ページが無い商品を推測で公開しない。
+1. 商品の公式ページ／公式カタログはcatalog.linksのofficialProductUrlが正本。各localeの実ページとhostを確認し、src/lib/visits.tsのofficialProductLinks経由で全公開商品に通常URLを明示する。広告化したCTAとは別の通常リンクを残し、公式ページが無い商品を推測で公開しない。
 2. 店舗と商品関係の正本はsrc/data/visits.json。storesにはid、日英name/address/hours/closedDays/access/visitSummary/stockNote、kind、公式URL2種、mapQuery、sourceIds、checkedAtを記録する。確認できない営業時間等はnullとし、元ページを読まずに作らない。
 3. productsには公開商品ごとのproductId、storeIds、officialHomeUrl、officialHomeRole、sourceIds、fallback、checkedAtを置く。maker/retailerの役割を区別し、公式ホームURLと役割は両方設定または両方null。現行は8店舗を15商品へ対応し、CHECOSはstoreIds空と日英fallbackで公式取扱店通販へ進める。
 4. 店舗が確認できても当該SKUの在庫は未確認ならそのままにする。清六窯・加藤七宝の事前連絡案内を残す。過去催事、作業場や登記住所、自治体サイトのフッター住所を現行の販売店にしない。
@@ -110,14 +110,23 @@ CSPとActionsの権限分離を維持する。広告script、解析、formを追
 
 ## 8. 検証・公開・納品
 
-検証は変更に応じてverify／readiness／browser／ads／linksを実行する。PC1440／390／320で日英入口、16商品の表示、素材の偏らない順序、絞込・0件・解除、braceletを含む種類、JPY/USDと小数、locale別リンク、短いAIcaption、現行画像、全商品の公式URL、店舗の住所・事前連絡・地図検索／経路、店未確認時の通販案内、詳細開閉、追従CTA、Contact404を確認する。
+検証は変更に応じてverify／readiness／browser／ads／linksを実行する。PC1440／390／320で日英入口、全商品の表示、素材の偏らない順序、絞込・0件・解除、braceletを含む種類、JPY/USDと小数、locale別リンク、短いAIcaption、現行画像、全商品の公式URL、店舗の住所・事前連絡・地図検索／経路、店未確認時の通販案内、詳細開閉、追従CTA、Contact404を確認する。
 
 再実行scriptはscripts/check-bilingual.mjs、check-product-details.mjs、check-hosted-release.mjs等を参照。CHECK_BASE_URL、CHECK_REPORT_PATH、CHECK_SCREENSHOT_PREFIX等の各scriptが持つ設定で、localとhostedの出力を分ける。古いclear-stageレポート名の既定値を使うscriptは出力先を明示し、履歴を上書きしない。
 
-Gitへ保存してpushした後はActionsの対象commitとsuccess、実公開URLでの反映を確認する。008のvalidation／tasks、docs/visit-stage-*.json、verification、deployment-results、handoffを実測に合わせる。未実行・旧version・未配信を成功へ読み替えない。0.7はdiscovery-stage（全公開132画面は未実行）、0.6はclear-stage、0.5はappeal、0.4はselectionの履歴。
+Gitへ保存してpushした後はActionsの対象commitとsuccess、実公開URLでの反映を確認する。009のvalidation／tasks、docs/destination-stage-*.json、verification、deployment-results、handoffを実測に合わせる。未実行・旧version・未配信を成功へ読み替えない。0.7はdiscovery-stage（全公開132画面は未実行）、0.6はclear-stage、0.5はappeal、0.4はselectionの履歴。
 
 pnpm packageで隣接するjapanese-craft-jewelry-delivery/sourceへ書出し、別途ZIPを作る。registryが参照する現行画像、日英の本文、価格・リンク・店舗関係の正本、台帳、仕様、全検証script・レポートが含まれることを確認する。node_modules／dist／artifacts／.env／認証情報／内部参照写真を除外し、ZIPの必須ファイル・展開内容も照合する。
 
 リポジトリ：https://github.com/rozawa619/japanese-craft-jewelry
 
 公開先：https://rozawa619.github.io/japanese-craft-jewelry/ と/en/、/ja/。技術公開、申請送信、提携承認、検索掲載、クリック・売上はそれぞれ別に確認する。
+
+## 0.9 産地セレクトとランキングの更新
+
+1. 観光庁の比較可能な通年確報の表6-1を確認し、research/tourism-top10-v9.jsonと同等の新年度資料へ年・指標・全目的/全国籍地域・複数回答・原典URL・確認日を記録。宿泊延べ人数や四半期値を混ぜない。
+2. src/config/region-selection.tsのtourismRankingとregionalRepresentativesを更新。表示する地域に公開商品/日英地域本文を揃え、代表productIdがその地域へ属することを確認。空ページでTOP10を埋めない。代表商品は編集上の選択で、販売人気や公認を主張しない。
+3. 共通RegionSelectionがhome/objects/placesへ反映。地域名は地域内商品群、右の代表画像は個別商品へ。種類/素材で直接絞るリンクは#all-jewelryで全商品欄へ着地。
+4. pnpm verify、check:browser、scripts/check-destination-selection.mjsを確認。PC/390/320、日英、全10地域クリック、最低2商品、英語地名の単語途中改行、画像の耳飾り/ペンダント/指輪の見切れを目視。
+5. 画像差替えはほくろ・シミを入れず、かわいい系/美人系の27–33歳方向。全prompt/元画像/参考資料/限界をimage-generation-v9.jsonの形式で記録。primarySKU画像未読のARCOSは一般作例と本文からのイラストである限界を保持。
+6. 使用中で削除できない旧public画像は台帳localRetiredPathと.gitignore/Git除外を一致させる。pnpm buildはprune-retired-images.mjsでdistの該当ファイルだけを除き、pnpm packageも除外する。再帰削除や公開中画像の移動は不要。

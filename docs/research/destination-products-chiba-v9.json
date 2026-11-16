@@ -1,0 +1,480 @@
+{
+  "checkedAt": "2026-11-16",
+  "scope": "Chiba proposal imported into canonical catalog only after source review. Shipping regions are not manufacturing locations. Contemporary studio glass is not presented as a government-designated craft.",
+  "sources": [
+    {
+      "id": "arcos-studio-v9",
+      "url": "https://arcos.glass/about/",
+      "title": "ガラス工房アルコス — 店舗概要・制作拠点",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Maker identifies glass production, exhibition and sales at its current workshop in Minamikomachi807-2, Kamogawa, Chiba. The address is the2023 relocated workshop, not the former Kitafubara address."
+      ]
+    },
+    {
+      "id": "arcos-atelier-v9",
+      "url": "https://arcos.glass/atelier/",
+      "title": "ガラス工房アルコス — 工房紹介と公式取扱店",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Maker describes oxygen-burner glassworking and links its own Creema shop at creema.jp/c/arcos. This establishes the maker-operated storefront, not a photo reuse license."
+      ]
+    },
+    {
+      "id": "arcos-access-v9",
+      "url": "https://arcos.glass/access/",
+      "title": "ガラス工房アルコス — 公式アクセス",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Current public gallery/shop address Chiba Kamogawa Minamikomachi807-2, hours09:00–17:00, closedWednesday/Thursday with holiday exceptions. JR Awa-Kamogawa via Nitto Nagasa route to Nishikawa; parking available. Exact SKU stock not guaranteed."
+      ]
+    },
+    {
+      "id": "arcos-cosmic-spiral-v9",
+      "url": "https://www.creema.jp/item/9489033/detail",
+      "title": "ガラス工房アルコス — 宇宙神秘のスパイラル",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Maker's product page read in fresh Chrome: pendant top,33×23mm,JPY12800;1 available at check. Names heat-resistant glass including SIMAX/NorthStar, silver, frit opal glass and uranium glass; no chain length or metal fitting specification supplied. No durability, health or radiation inference made. Not the exhibition-only Switchback SKU9304829."
+      ]
+    },
+    {
+      "id": "arcos-cosmic-bracelet-v9",
+      "url": "https://www.creema.jp/item/18047443/detail",
+      "title": "ガラス工房アルコス — 宇宙のキラキラ ブレスレット",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Maker's bracelet page:JPY8900 and1 available; SIMAX/NorthStar glass and dichroic titanium glass. Dimensions printed36×18mm,width45mm,thickness17mm;13g without component measurement diagram. No strap material or clasp specification confirmed. Overseas shipping marked unavailable for this listing."
+      ]
+    }
+  ],
+  "catalog": {
+    "prefectures": [
+      {
+        "id": "chiba",
+        "name": "Chiba",
+        "description": "Contemporary burner-worked glass jewelry from a maker based in Kamogawa."
+      }
+    ],
+    "crafts": [
+      {
+        "id": "burner-worked-glass",
+        "name": "Burner-worked studio glass",
+        "description": "Contemporary glass shaped in an oxygen-burner flame. The selected Kamogawa studio is not described as a nationally designated traditional-craft producer.",
+        "sourceIds": [
+          "arcos-atelier-v9",
+          "arcos-studio-v9"
+        ]
+      }
+    ],
+    "makers": [
+      {
+        "id": "arcos",
+        "name": "Atelier ARCOS",
+        "location": "Kamogawa, Chiba, Japan",
+        "productionNote": "The maker identifies its glass production and public gallery at the current Kamogawa workshop. Component origins and individual craft certification have not been established.",
+        "url": "https://arcos.glass/",
+        "sourceIds": [
+          "arcos-studio-v9",
+          "arcos-atelier-v9"
+        ]
+      }
+    ],
+    "merchants": [
+      {
+        "id": "arcos-creema",
+        "name": "Atelier ARCOS on Creema",
+        "url": "https://www.creema.jp/c/arcos",
+        "language": "Japanese maker-operated storefront",
+        "shipping": {
+          "status": "unknown",
+          "summary": "Check the individual listing. The selected bracelet lists overseas shipping as unavailable; this is not extended to every item.",
+          "countries": null,
+          "sourceIds": [
+            "arcos-cosmic-bracelet-v9"
+          ]
+        },
+        "returns": "Check the maker's current listing and marketplace terms; no item-specific return promise has been independently verified.",
+        "sourceIds": [
+          "arcos-atelier-v9",
+          "arcos-cosmic-spiral-v9",
+          "arcos-cosmic-bracelet-v9"
+        ]
+      }
+    ],
+    "products": [
+      {
+        "id": "arcos-cosmic-spiral-pendant",
+        "slug": "arcos-cosmic-spiral-pendant",
+        "locale": "en",
+        "title": "Atelier ARCOS Cosmic Spiral glass pendant",
+        "originalTitle": "宇宙神秘のスパイラル",
+        "publishStatus": "published",
+        "productType": [
+          "necklace"
+        ],
+        "prefectureIds": [
+          "chiba"
+        ],
+        "craftIds": [
+          "burner-worked-glass"
+        ],
+        "materialIds": [
+          "glass"
+        ],
+        "makerId": "arcos",
+        "craftClassification": {
+          "label": "Contemporary studio glass from Atelier ARCOS in Kamogawa; no individual traditional-craft certification claimed.",
+          "sourceIds": [
+            "arcos-atelier-v9",
+            "arcos-studio-v9"
+          ]
+        },
+        "size": "Pendant top33×23mm, as listed; cord or chain length is not stated.",
+        "weightPerPieceGrams": null,
+        "findings": null,
+        "fastening": null,
+        "priceAmount": 12800,
+        "priceCurrency": "JPY",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "JPY listing price; tax inclusion is not independently established.",
+        "availability": "listed",
+        "merchantIds": [
+          "arcos-creema"
+        ],
+        "sourceIds": [
+          "arcos-cosmic-spiral-v9",
+          "arcos-studio-v9"
+        ],
+        "lastVerifiedAt": "2026-11-16",
+        "imageAssetIds": [],
+        "editorialSummary": "A little cosmic movement inside glass: choose a pendant that invites a closer look rather than a row of stones.",
+        "whoItMaySuit": "For a single sculptural accent and a fascination with swirling glass.",
+        "whatToCheck": [
+          "This is a pendant-top listing. Confirm the included cord or chain before ordering.",
+          "The glass mixture and33×23mm size are listed, but weight and fastening specifications are not supplied.",
+          "Stock was limited when checked. Compare the current official photographs before choosing."
+        ]
+      },
+      {
+        "id": "arcos-cosmic-glass-bracelet",
+        "slug": "arcos-cosmic-glass-bracelet",
+        "locale": "en",
+        "title": "Atelier ARCOS Cosmic Sparkle glass bracelet",
+        "originalTitle": "宇宙のキラキラ ブレスレット",
+        "publishStatus": "published",
+        "productType": [
+          "bracelet"
+        ],
+        "prefectureIds": [
+          "chiba"
+        ],
+        "craftIds": [
+          "burner-worked-glass"
+        ],
+        "materialIds": [
+          "glass"
+        ],
+        "makerId": "arcos",
+        "craftClassification": {
+          "label": "Contemporary burner-worked glass by a Kamogawa studio; no individual traditional-craft certification claimed.",
+          "sourceIds": [
+            "arcos-atelier-v9",
+            "arcos-studio-v9"
+          ]
+        },
+        "size": "The listing prints36×18mm,width45mm and thickness17mm without a measurement diagram; wrist fit is not specified.",
+        "weightPerPieceGrams": null,
+        "findings": null,
+        "fastening": null,
+        "priceAmount": 8900,
+        "priceCurrency": "JPY",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "JPY listing price; tax inclusion is not independently established.",
+        "availability": "listed",
+        "merchantIds": [
+          "arcos-creema"
+        ],
+        "sourceIds": [
+          "arcos-cosmic-bracelet-v9",
+          "arcos-studio-v9"
+        ],
+        "lastVerifiedAt": "2026-11-16",
+        "imageAssetIds": [],
+        "editorialSummary": "Keep the glass at your wrist: a small sculptural focal point for a rolled sleeve and an uncluttered hand.",
+        "whoItMaySuit": "For someone who prefers a statement at the wrist to a necklace.",
+        "whatToCheck": [
+          "Ask the maker about wrist fit and fastening; neither is specified in the checked text.",
+          "The listing gives several dimensions and13g without explaining every measurement basis.",
+          "This is a limited individual piece; check the current photographs and availability in the official shop."
+        ]
+      }
+    ],
+    "links": [
+      {
+        "id": "arcos-cosmic-spiral-official",
+        "productId": "arcos-cosmic-spiral-pendant",
+        "merchantId": "arcos-creema",
+        "programId": null,
+        "officialProductUrl": "https://www.creema.jp/item/9489033/detail",
+        "affiliateUrl": null,
+        "applicationStatus": "not_applied",
+        "affiliateLinkVerifiedAt": null
+      },
+      {
+        "id": "arcos-cosmic-bracelet-official",
+        "productId": "arcos-cosmic-glass-bracelet",
+        "merchantId": "arcos-creema",
+        "programId": null,
+        "officialProductUrl": "https://www.creema.jp/item/18047443/detail",
+        "affiliateUrl": null,
+        "applicationStatus": "not_applied",
+        "affiliateLinkVerifiedAt": null
+      }
+    ]
+  },
+  "translations": {
+    "prefectures": {
+      "chiba": {
+        "name": "千葉県",
+        "description": "鴨川の工房から、炎でかたちづくる現代のガラスジュエリー。"
+      }
+    },
+    "crafts": {
+      "burner-worked-glass": {
+        "name": "バーナーワークのガラス",
+        "description": "酸素バーナーの炎でガラスをかたちづくる技法。鴨川の現代工房の作品として紹介し、国指定工芸品とは表現しません。"
+      }
+    },
+    "makers": {
+      "arcos": {
+        "name": "ガラス工房アルコス",
+        "location": "千葉県鴨川市",
+        "productionNote": "公式サイトで、現所在地でのガラス制作とギャラリー販売を案内しています。部材ごとの原産地や個別商品の認証は未確認です。"
+      }
+    },
+    "merchants": {
+      "arcos-creema": {
+        "name": "アルコス公式ショップ（Creema）",
+        "language": "日本語・作り手自身の出店",
+        "shippingSummary": "商品ごとの条件を確認してください。今回のブレスレットには海外発送不可の表示があります。",
+        "returns": "作り手の現行商品ページとマーケットプレイスの条件で確認してください。個別商品の返品条件は別途確認していません。"
+      }
+    },
+    "products": {
+      "arcos-cosmic-spiral-pendant": {
+        "title": "アルコス 宇宙神秘のスパイラル ガラスペンダント",
+        "editorialSummary": "ガラスの中に、小さな渦の世界。石を並べたジュエリーとは違う、のぞき込みたくなる奥行きを首元に。",
+        "whoItMaySuit": "ひとつのモチーフで印象をつくりたい方、渦を描くガラスに惹かれる方に。",
+        "whatToCheck": [
+          "商品本文はペンダントトップの紹介です。付属する紐やチェーンは購入前に確認してください。",
+          "ガラスの構成と33×23mmの記載があります。重さと留め具の仕様は記載がありません。",
+          "確認時は少数在庫でした。現在の公式写真を見比べて選んでください。"
+        ],
+        "size": "トップ33×23mm（商品表記）。紐・チェーンの長さは記載がありません。",
+        "findings": null,
+        "fastening": null,
+        "taxNote": "日本円の表示価格。税込・税別の区分は個別に確認できていません。",
+        "craftClassificationLabel": "鴨川のガラス工房アルコスによる現代のガラス作品。個別商品の伝統的工芸品認証は主張しません。"
+      },
+      "arcos-cosmic-glass-bracelet": {
+        "title": "アルコス 宇宙のキラキラ ガラスブレスレット",
+        "editorialSummary": "ガラスを楽しむ場所を、首元から手元へ。袖をまくった腕に、ひとつだけ印象的なモチーフを。",
+        "whoItMaySuit": "ネックレスよりも、手元にアクセントを置く装いが好きな方に。",
+        "whatToCheck": [
+          "手首に合うサイズと留め具の形は、作り手へ確認してください。確認した本文には記載がありません。",
+          "複数の寸法と13gの表記がありますが、各寸法の測定箇所は図示されていません。",
+          "少数の個別作品です。現在の作品の写真と選べる状態は公式ショップで確認してください。"
+        ],
+        "size": "36×18mm、幅45mm、厚さ17mmの表記がありますが、測定図はありません。手首に合うサイズは未確認です。",
+        "findings": null,
+        "fastening": null,
+        "taxNote": "日本円の表示価格。税込・税別の区分は個別に確認できていません。",
+        "craftClassificationLabel": "鴨川の工房によるバーナーワークの現代ジュエリー。個別商品の伝統的工芸品認証は主張しません。"
+      }
+    }
+  },
+  "stories": {
+    "arcos-cosmic-spiral-pendant": {
+      "en": {
+        "headline": "A tiny world to look into.",
+        "standfirst": "The interest is inside the glass. A spiral motif gives this single pendant a different rhythm from a delicate chain or a line of beads.",
+        "highlights": [
+          "One sculptural glass focal point",
+          "Spiral movement instead of a conventional gemstone",
+          "Made by a studio based in Kamogawa"
+        ],
+        "outfit": {
+          "title": "An open neckline, one focal point",
+          "body": "Try a square-neck top or a simple dress and leave other necklaces aside. Let the pendant hold the center of the look; choose the cord length with the maker."
+        }
+      },
+      "ja": {
+        "headline": "のぞき込みたくなる、小さな世界。",
+        "standfirst": "見どころは、ガラスの内側。渦をモチーフにしたひと粒が、細いチェーンや連なったビーズとは違うリズムをつくります。",
+        "highlights": [
+          "ひとつで印象をつくるガラスのトップ",
+          "宝石とは違う、渦のモチーフ",
+          "鴨川を制作拠点にする工房の作品"
+        ],
+        "outfit": {
+          "title": "首元をすっきり、モチーフをひとつ",
+          "body": "スクエアネックのトップスやシンプルなワンピースに。他のネックレスを重ねず、トップを装いの中心に。紐の長さは作り手に相談して選ぶのがよさそうです。"
+        }
+      }
+    },
+    "arcos-cosmic-glass-bracelet": {
+      "en": {
+        "headline": "Give your wrist the spotlight.",
+        "standfirst": "A glass bracelet offers another way to wear a miniature world. Choose it when you want your hands, rather than your neckline, to carry the accent.",
+        "highlights": [
+          "Studio glass at the wrist",
+          "An alternative to a pendant",
+          "Dichroic glass named by the maker"
+        ],
+        "outfit": {
+          "title": "A rolled sleeve and a clear wrist",
+          "body": "Try a cropped-sleeve jacket with no watch on the same arm. Keeping the rest of the wrist uncluttered gives the glass space; confirm fit with the maker first."
+        }
+      },
+      "ja": {
+        "headline": "手元を、今日の主役に。",
+        "standfirst": "ガラスの世界を、ブレスレットで楽しむ選択。首元よりも、ふと目に入る手元にアクセントがほしい日に選びたい一本です。",
+        "highlights": [
+          "手元で楽しむ工房のガラス",
+          "ペンダントとは違う見せ方",
+          "作り手がダイクロガラスの使用を案内"
+        ],
+        "outfit": {
+          "title": "袖を少しまくり、手首をすっきり",
+          "body": "短めの袖のジャケットに合わせ、同じ腕の時計は外してみる。重ね付けを控えるとガラスが引き立ちそうです。手首に合うサイズは先に作り手へ確認してください。"
+        }
+      }
+    }
+  },
+  "notes": {
+    "arcos-cosmic-spiral-pendant": {
+      "ja": "繊細な金具や小さな石を重ねる代わりに、ガラスのトップをひとつ。『宇宙神秘のスパイラル』は、モチーフそのものを眺める楽しさで選んだ作品です。首元を飾るだけでなく、手に取って光に向けたくなるようなガラスに惹かれる方へ。\n\n同じアルコスでも、手元に着けるブレスレットとは視線の集まる場所が違います。トップを見せたい服ならこちら、袖口の装いを楽しみたいならブレスレットを見比べてみてください。個別作品の現在の姿は、作り手の公式写真で確認できます。",
+      "en": "Choose a single glass focal point instead of layering tiny stones and chains. Cosmic Spiral is our pick for someone drawn to the miniature world inside a pendant, with a motif worth pausing to look at.\n\nThe bracelet from the same studio puts the accent somewhere different. Pick this pendant for an open neckline, or compare the bracelet if you prefer a feature at your sleeve. Use the maker's current photographs to inspect the individual piece."
+    },
+    "arcos-cosmic-glass-bracelet": {
+      "ja": "ネックレスは服の襟に隠れてしまうけれど、手元ならジュエリーを楽しみたい。そんな装いの選択肢に、アルコスのガラスブレスレットを選びました。『宇宙のキラキラ』という作品名のとおり、ガラスの内側に目を向ける一本です。\n\n同じ工房のペンダントを首元のポイントにするか、こちらを袖口のアクセントにするか。普段よく着る服を思い浮かべて比べてみてください。サイズが分かる写真や留め具の確認は、作り手への相談が必要です。",
+      "en": "A bracelet makes sense when a neckline would hide a pendant, or when you simply prefer jewelry you can see at your own wrist. Cosmic Sparkle brings the studio's glass work into that part of an outfit.\n\nCompare it with Cosmic Spiral by thinking about the clothes you wear: an open neckline points toward the pendant, while shorter sleeves give the bracelet room. Ask the maker for wrist-fit and fastening information before choosing."
+    }
+  },
+  "places": {
+    "chiba": {
+      "sourceIds": [
+        "arcos-studio-v9",
+        "arcos-atelier-v9"
+      ],
+      "relatedMerchantIds": [],
+      "ja": {
+        "title": "千葉県の工芸ジュエリー",
+        "description": "鴨川の工房から、ガラスのペンダントとブレスレット。",
+        "body": "鴨川を拠点に制作するガラス工房アルコスから、首元と手元で楽しむ2つのジュエリーを選びました。酸素バーナーでガラスをかたちづくる、現代の工房の作品です。\n\n旅先で工房に立ち寄りたい方には、各商品からギャラリーの公式アクセスと地図へ進めるようにしています。掲載作品そのものの店頭在庫は、訪問前に確認してください。"
+      },
+      "en": {
+        "title": "Craft jewelry from Chiba",
+        "description": "Glass pendants and bracelets from a studio in Kamogawa.",
+        "body": "Explore two ways to wear glass from Atelier ARCOS, a maker based in Kamogawa: a pendant at the neckline and a bracelet at the wrist. These are contemporary oxygen-burner-worked studio pieces.\n\nEach product links to the gallery's official access information and map. Check the individual piece's physical availability before planning a visit."
+      }
+    }
+  },
+  "craftNotes": {
+    "burner-worked-glass": {
+      "sourceIds": [
+        "arcos-atelier-v9"
+      ],
+      "ja": {
+        "title": "バーナーワークのガラスジュエリー",
+        "description": "炎でかたちづくる、現代の工房のガラス。",
+        "body": "酸素バーナーの炎でガラスを溶かし、色やかたちを重ねる制作。アルコスは、鴨川の工房でこの方法による作品を紹介しています。\n\nペンダントかブレスレットか、身に着ける場所から選んでみてください。国指定の伝統的工芸品という表示はせず、現代のガラス工芸として紹介します。"
+      },
+      "en": {
+        "title": "Burner-worked glass jewelry",
+        "description": "Contemporary glass shaped in a studio flame.",
+        "body": "Atelier ARCOS describes shaping glass with an oxygen burner in its Kamogawa studio. The selected pieces bring that practice to two different places in an outfit: neckline and wrist.\n\nWe present these as contemporary studio glass, without claiming an individual government traditional-craft certification."
+      }
+    }
+  },
+  "visits": {
+    "stores": [
+      {
+        "id": "arcos-kamogawa-gallery",
+        "name": {
+          "ja": "ガラス工房アルコス Gallery & CAFE",
+          "en": "Atelier ARCOS Gallery & CAFE"
+        },
+        "address": {
+          "ja": "〒296-0104 千葉県鴨川市南小町807-2",
+          "en": "807-2 Minamikomachi, Kamogawa, Chiba296-0104, Japan"
+        },
+        "kind": "maker-gallery",
+        "officialUrl": "https://arcos.glass/",
+        "officialStoreUrl": "https://arcos.glass/access/",
+        "hours": {
+          "ja": "9:00–17:00（公式掲載）",
+          "en": "09:00–17:00, as listed by the maker"
+        },
+        "closedDays": {
+          "ja": "水・木曜。祝日や連休・休暇期の例外は公式案内で確認してください。",
+          "en": "Wednesday/Thursday; check official information for holiday and vacation-period exceptions."
+        },
+        "access": {
+          "ja": "JR安房鴨川駅から日東交通バス長狭線で『西川』へ。公式案内では工房すぐ近く。運行本数を事前に確認してください。",
+          "en": "From JR Awa-Kamogawa, the maker directs visitors to Nishikawa on Nitto's Nagasa bus route, close to the studio. Check the current timetable."
+        },
+        "visitSummary": {
+          "ja": "制作の場とギャラリーを併設する鴨川の工房。ガラスの作品を現物で探したいときの訪問先です。",
+          "en": "A Kamogawa glassmaking studio with a public gallery, for exploring its glass work in person."
+        },
+        "stockNote": {
+          "ja": "紹介した個別作品の店頭在庫は未確認です。少数作品のため、営業日と取扱いを訪問前に公式サイトで確認してください。",
+          "en": "Physical stock of the featured individual pieces is not confirmed. Check opening dates and availability before visiting."
+        },
+        "mapQuery": "ガラス工房アルコス 千葉県鴨川市南小町807-2",
+        "sourceIds": [
+          "arcos-access-v9",
+          "arcos-studio-v9"
+        ],
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "products": [
+      {
+        "productId": "arcos-cosmic-spiral-pendant",
+        "storeIds": [
+          "arcos-kamogawa-gallery"
+        ],
+        "officialHomeUrl": "https://arcos.glass/",
+        "officialHomeRole": "maker",
+        "sourceIds": [
+          "arcos-studio-v9",
+          "arcos-access-v9"
+        ],
+        "fallback": null,
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "productId": "arcos-cosmic-glass-bracelet",
+        "storeIds": [
+          "arcos-kamogawa-gallery"
+        ],
+        "officialHomeUrl": "https://arcos.glass/",
+        "officialHomeRole": "maker",
+        "sourceIds": [
+          "arcos-studio-v9",
+          "arcos-access-v9"
+        ],
+        "fallback": null,
+        "checkedAt": "2026-11-16"
+      }
+    ]
+  }
+}

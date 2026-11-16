@@ -1,7 +1,7 @@
 # 次のAIへの開始手順
 
 1. `README.md`、`docs/handoff.md`、`docs/constitution.md` を読み、現在の公開・申請状態を確認する。
-2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/008-official-links-and-visits/` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
+2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/009-destination-selection/` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
 3. `src/lib/schema.ts`、`src/data/catalog.json`、`src/lib/affiliate.ts`、`src/content.config.ts` を読み、既存の分離を維持する。
 4. 変更後はリスクに応じた検証を実行し、仕様・タスク・変更履歴・引継ぎを実態に合わせて更新する。公開や提携承認を推測しない。
 
@@ -56,3 +56,7 @@ Node.js 24.22.1以上、pnpm 11.25.0。初回は `pnpm install --frozen-lockfile
 
 ## 0.8以降の公式情報・訪問案内
 モデルは20代後半〜30代前半を目安に。全公開商品に言語に合う公式商品/カタログ通常URLを明示し、確認済みmaker公式サイトを区別して案内。visits.jsonの店舗は公開小売店の一次確認必須で、登記住所/過去催事や個別在庫を推測しない。Mapsは固定Google originの正規search/directions外部リンクのみ。現行店未確認の商品は公式オンライン案内へ。法務確認はdocs/visit-publication-review.mdの範囲と限界を保持し、全面合法/許諾済を保証しない。広告通常リンク分離と短いAI注記、Contact非公開/SORAは維持。店舗更新はvalidate-visitsを含むverify必須。
+
+## 0.9以降の産地セレクト
+トップ/商品セレクト/産地一覧はRegionSelectionで左に産地・右に代表商品1点を表示。2025年観光庁確報表6-1の訪問率TOP10順と、順位外の佐賀/石川を区別する。ランキングの正本はresearch/tourism-top10-v9.json、表示設定はsrc/config/region-selection.ts。年度/全目的/複数回答の指標を示し、商品人気順位と混同しない。地域は非空の公開本文+商品が必要。代表商品の所属・全画像・地域クリック・queryリンクの#all-jewelry着地を検証する。
+全公開30商品は28画像でカバー。モデルは27–33歳方向でかわいい系/美人系を混ぜ、ほくろ/シミを入れない。18K未登録は解消。preserveRatio画像のペンダント/リングを切らず、長い英語地名もスマホで単語途中改行させない。旧locked画像はlocalRetiredPathでGit/書出し除外、pnpm build末尾でdistから個別除外。旧写真を商品実物の証拠へ転用しない。最新版は009validationとdestination-stage結果。

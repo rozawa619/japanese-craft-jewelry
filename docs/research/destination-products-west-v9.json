@@ -1,0 +1,885 @@
+{
+  "checkedAt": "2026-11-16",
+  "scope": "Integration proposal only: Osaka/Nara four products. Product facts from saved status200 official body reads; maker/association pages additionally body-read. No photos, reviews, affiliate agreements or stock assurances imported.",
+  "catalog": {
+    "prefectures": [
+      {
+        "id": "osaka",
+        "name": "Osaka"
+      },
+      {
+        "id": "nara",
+        "name": "Nara"
+      }
+    ],
+    "crafts": [
+      {
+        "id": "senshu-shell-pearl",
+        "name": "Senshu shell-pearl craft",
+        "description": "Jewelry using shell pearls identified as made in Senshu, Osaka. No claim that the selected products hold an individual traditional-craft certification.",
+        "sourceIds": [
+          "shopch-senshu-stud-v9",
+          "shopch-senshu-swing-v9",
+          "jpga-izumi-craft-v9"
+        ]
+      },
+      {
+        "id": "nara-raden-makie",
+        "name": "Nara raden and makie",
+        "description": "Raden pendants and makie rings from Yamato Urushi Kougei Sugimura, which makes and exhibits work in Nara.",
+        "sourceIds": [
+          "sugimura-official-v9",
+          "sugimura-hosoge-v9",
+          "sugimura-lotus-v9"
+        ]
+      }
+    ],
+    "materials": [
+      {
+        "id": "imitation-pearl",
+        "name": "Imitation shell pearl",
+        "description": "Shell pearl as identified by the retailer; not a cultured or natural pearl."
+      },
+      {
+        "id": "brass",
+        "name": "Brass"
+      },
+      {
+        "id": "silicone",
+        "name": "Silicone"
+      },
+      {
+        "id": "stainless-steel",
+        "name": "Stainless steel",
+        "description": "Stainless steel is named without a grade or a skin-suitability guarantee."
+      }
+    ],
+    "productTypes": [
+      {
+        "id": "ring",
+        "name": "Rings"
+      }
+    ],
+    "makers": [
+      {
+        "id": "premium-pearl-brand",
+        "name": "PREMIUM PEARL",
+        "location": "Brand listed by Shop Channel; shell-pearl component from Senshu, Osaka.",
+        "productionNote": "The retailer identifies Senshu, Osaka as the shell-pearl component origin and the products as made in Japan. The individual manufacturer, exact assembly location and association membership are not established.",
+        "url": "https://www.shopch.jp/pc/product/prodlist/brand?brandCode=00713",
+        "sourceIds": [
+          "shopch-senshu-stud-v9",
+          "shopch-senshu-swing-v9"
+        ]
+      },
+      {
+        "id": "yamato-urushi-sugimura",
+        "name": "Yamato Urushi Kougei Sugimura",
+        "location": "Nishinokyo-cho, Nara, Japan",
+        "productionNote": "The maker states it produces and exhibits work in Ganko Ittetsu Nagaya, Nara. This does not establish all component origins or any individual certification.",
+        "url": "https://jqppy767.wixsite.com/website",
+        "sourceIds": [
+          "sugimura-official-v9"
+        ]
+      }
+    ],
+    "merchants": [
+      {
+        "id": "shop-channel",
+        "name": "Shop Channel",
+        "url": "https://www.shopch.jp/",
+        "language": "Japanese",
+        "shipping": {
+          "status": "unknown",
+          "summary": "Item- and destination-specific conditions have not been independently reviewed.",
+          "countries": null,
+          "sourceIds": []
+        },
+        "returns": "Item-specific conditions have not been independently reviewed.",
+        "sourceIds": [
+          "shopch-senshu-stud-v9",
+          "shopch-senshu-swing-v9"
+        ]
+      },
+      {
+        "id": "sugimura-direct",
+        "name": "Yamato Urushi Kougei Sugimura official shop",
+        "url": "https://jqppy767.wixsite.com/website",
+        "language": "Japanese, with some English",
+        "shipping": {
+          "status": "unknown",
+          "summary": "Item- and destination-specific conditions have not been independently reviewed.",
+          "countries": null,
+          "sourceIds": []
+        },
+        "returns": "Unfilled template fields in the product body are not treated as actual terms.",
+        "sourceIds": [
+          "sugimura-official-v9",
+          "sugimura-hosoge-v9",
+          "sugimura-lotus-v9"
+        ]
+      }
+    ],
+    "products": [
+      {
+        "id": "senshu-pearl-stud-earrings",
+        "slug": "senshu-pearl-stud-earrings",
+        "locale": "en",
+        "title": "PREMIUM PEARL Senshu shell-pearl stud earrings",
+        "originalTitle": "プレミアムパール 泉州の職人技 9 mm UP 貝パール スタッド イヤリング／ピアス",
+        "publishStatus": "published",
+        "productType": [
+          "pierced-earrings",
+          "clip-on-earrings"
+        ],
+        "prefectureIds": [
+          "osaka"
+        ],
+        "craftIds": [
+          "senshu-shell-pearl"
+        ],
+        "materialIds": [
+          "imitation-pearl",
+          "brass",
+          "silicone",
+          "stainless-steel",
+          "resin"
+        ],
+        "makerId": "premium-pearl-brand",
+        "craftClassification": {
+          "label": "Contemporary jewelry associated with the identified regional craft; no individual traditional-craft certification is claimed.",
+          "sourceIds": [
+            "shopch-senshu-stud-v9",
+            "jpga-izumi-craft-v9"
+          ]
+        },
+        "size": "Pierced: approximately 9 × 9 mm. Clip-on: approximately 19 × 9 mm. Listing title uses9 mm UP.",
+        "weightPerPieceGrams": null,
+        "findings": "The listing names brass/silicone and stainless steel/resin with a silver-tone coating; exact component coverage should be checked for the chosen fitting.",
+        "fastening": "Pierced or clip-on option on the same official product page; exact fastening mechanism is not specified in the checked body.",
+        "priceAmount": 7120,
+        "priceCurrency": "JPY",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "JPY7120, including Japanese consumption tax, displayed by the official retailer.",
+        "availability": "listed",
+        "merchantIds": [
+          "shop-channel"
+        ],
+        "sourceIds": [
+          "shopch-senshu-stud-v9",
+          "jpga-izumi-craft-v9"
+        ],
+        "lastVerifiedAt": "2026-11-16",
+        "imageAssetIds": [],
+        "editorialSummary": "A simple pearl circle at the ear: choose white for a bright accent or peacock for a darker, more graphic mood.",
+        "whoItMaySuit": "For the clean outline of a stud rather than a dangling earring.",
+        "whatToCheck": [
+          "Shell pearls are imitation pearls, not cultured or natural pearls.",
+          "The product offers pierced and clip-on fittings; color and fitting availability differ.",
+          "Listed weights are not explicitly per ear, so we do not convert them into a per-ear figure.",
+          "The pearl component is identified as Senshu, Osaka. The exact maker and full assembly location within Japan are not established."
+        ]
+      },
+      {
+        "id": "senshu-pearl-swing-earrings",
+        "slug": "senshu-pearl-swing-earrings",
+        "locale": "en",
+        "title": "PREMIUM PEARL Senshu shell-pearl swing earrings",
+        "originalTitle": "プレミアムパール 泉州の職人技 9 mm UP 貝パール スウィング イヤリング／ピアス",
+        "publishStatus": "published",
+        "productType": [
+          "pierced-earrings",
+          "clip-on-earrings"
+        ],
+        "prefectureIds": [
+          "osaka"
+        ],
+        "craftIds": [
+          "senshu-shell-pearl"
+        ],
+        "materialIds": [
+          "imitation-pearl",
+          "brass",
+          "silicone",
+          "stainless-steel"
+        ],
+        "makerId": "premium-pearl-brand",
+        "craftClassification": {
+          "label": "Contemporary jewelry associated with the identified regional craft; no individual traditional-craft certification is claimed.",
+          "sourceIds": [
+            "shopch-senshu-swing-v9",
+            "jpga-izumi-craft-v9"
+          ]
+        },
+        "size": "Approximately24mm high  × 9 mm wide; pearl width is described as9 mm UP.",
+        "weightPerPieceGrams": null,
+        "findings": "Brass for both options; silicone for clip-ons and stainless steel for the pierced option. Gold-tone or silver-tone coating is listed.",
+        "fastening": "Pierced or clip-on option on the same official product page; exact fastening mechanism is not specified in the checked body.",
+        "priceAmount": 5650,
+        "priceCurrency": "JPY",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "JPY5650, including Japanese consumption tax, displayed by the official retailer.",
+        "availability": "listed",
+        "merchantIds": [
+          "shop-channel"
+        ],
+        "sourceIds": [
+          "shopch-senshu-swing-v9",
+          "jpga-izumi-craft-v9"
+        ],
+        "lastVerifiedAt": "2026-11-16",
+        "imageAssetIds": [],
+        "editorialSummary": "A white pearl suspended below a curved fitting adds a longer line than the stud. Choose gold- or silver-colored metal to suit your other jewelry.",
+        "whoItMaySuit": "For a pearl drop with movement and a little space below the ear.",
+        "whatToCheck": [
+          "Shell pearls are imitation pearls, not cultured or natural pearls.",
+          "Gold and silver refer to coating colors here, not a solid-gold or sterling-silver claim.",
+          "Pierced and clip-on options share this listing; check availability for the exact combination.",
+          "Listed weights are not explicitly per ear, so no per-ear weight or lightness claim is made."
+        ]
+      },
+      {
+        "id": "sugimura-hosoge-raden-pendant",
+        "slug": "sugimura-hosoge-raden-pendant",
+        "locale": "en",
+        "title": "Sugimura Hosoge raden pendant",
+        "originalTitle": "螺鈿ペンダント 宝相華",
+        "publishStatus": "published",
+        "productType": [
+          "necklace"
+        ],
+        "prefectureIds": [
+          "nara"
+        ],
+        "craftIds": [
+          "nara-raden-makie"
+        ],
+        "materialIds": [],
+        "makerId": "yamato-urushi-sugimura",
+        "craftClassification": {
+          "label": "Contemporary jewelry associated with the identified regional craft; no individual traditional-craft certification is claimed.",
+          "sourceIds": [
+            "sugimura-hosoge-v9",
+            "sugimura-official-v9"
+          ]
+        },
+        "size": null,
+        "weightPerPieceGrams": null,
+        "findings": null,
+        "fastening": null,
+        "priceAmount": 44000,
+        "priceCurrency": "JPY",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "Japanese official listing price; tax inclusion was not established in the checked product text.",
+        "availability": "listed",
+        "merchantIds": [
+          "sugimura-direct"
+        ],
+        "sourceIds": [
+          "sugimura-hosoge-v9",
+          "sugimura-official-v9"
+        ],
+        "lastVerifiedAt": "2026-11-16",
+        "imageAssetIds": [],
+        "editorialSummary": "A Hosoge floral motif brings raden to the neckline. A choice for making one craft detail the focus of a simple dress.",
+        "whoItMaySuit": "For an ornamental pendant rather than an earring or a plain chain.",
+        "whatToCheck": [
+          "The official product is named as a raden pendant; detailed substrate, dimensions, weight and fittings are not supplied in the checked body.",
+          "Confirm the current piece, its dimensions and the cord or chain arrangement with the maker before choosing.",
+          "The workshop’s Nara address is verified; the stock of this exact pendant and visiting hours are not."
+        ]
+      },
+      {
+        "id": "sugimura-lotus-makie-ring",
+        "slug": "sugimura-lotus-makie-ring",
+        "locale": "en",
+        "title": "Sugimura Lotus makie wooden ring",
+        "originalTitle": "蒔絵指輪 蓮 Makie Ring Lotus",
+        "publishStatus": "published",
+        "productType": [
+          "ring"
+        ],
+        "prefectureIds": [
+          "nara"
+        ],
+        "craftIds": [
+          "nara-raden-makie"
+        ],
+        "materialIds": [
+          "wood"
+        ],
+        "makerId": "yamato-urushi-sugimura",
+        "craftClassification": {
+          "label": "Contemporary jewelry associated with the identified regional craft; no individual traditional-craft certification is claimed.",
+          "sourceIds": [
+            "sugimura-lotus-v9",
+            "sugimura-official-v9"
+          ]
+        },
+        "size": "The ring in the official photograph is Japanese size 16. Band width is not specified.",
+        "weightPerPieceGrams": null,
+        "findings": null,
+        "fastening": "Slip-on ring. Wooden construction cannot be resized; discuss the maker’s remaking process for another size.",
+        "priceAmount": 165000,
+        "priceCurrency": "JPY",
+        "priceCheckedAt": "2026-11-16",
+        "taxNote": "Japanese official listing price; tax inclusion was not established in the checked product text.",
+        "availability": "listed",
+        "merchantIds": [
+          "sugimura-direct"
+        ],
+        "sourceIds": [
+          "sugimura-lotus-v9",
+          "sugimura-official-v9"
+        ],
+        "lastVerifiedAt": "2026-11-16",
+        "imageAssetIds": [],
+        "editorialSummary": "A lotus motif turns a wooden ring into a small focal point for the hand. Choose it for the painted detail and the contrast with a simple outfit.",
+        "whoItMaySuit": "For a decorative wooden ring, with sizing discussed directly with the maker.",
+        "whatToCheck": [
+          "The maker says the pictured ring is Japanese size 16; this is not a promise that every size is immediately available.",
+          "A wooden ring cannot be resized. The maker describes remaking after matching size with a plain ring.",
+          "Band width, weight and exact finish or precious-metal composition are not supplied in the checked text."
+        ]
+      }
+    ],
+    "links": [
+      {
+        "id": "senshu-pearl-stud-earrings-official",
+        "productId": "senshu-pearl-stud-earrings",
+        "merchantId": "shop-channel",
+        "programId": null,
+        "officialProductUrl": "https://www.shopch.jp/pc/product/proddetail?reqprno=819642",
+        "affiliateUrl": null,
+        "applicationStatus": "not_applied",
+        "affiliateLinkVerifiedAt": null
+      },
+      {
+        "id": "senshu-pearl-swing-earrings-official",
+        "productId": "senshu-pearl-swing-earrings",
+        "merchantId": "shop-channel",
+        "programId": null,
+        "officialProductUrl": "https://www.shopch.jp/pc/product/proddetail?reqprno=810335",
+        "affiliateUrl": null,
+        "applicationStatus": "not_applied",
+        "affiliateLinkVerifiedAt": null
+      },
+      {
+        "id": "sugimura-hosoge-raden-pendant-official",
+        "productId": "sugimura-hosoge-raden-pendant",
+        "merchantId": "sugimura-direct",
+        "programId": null,
+        "officialProductUrl": "https://jqppy767.wixsite.com/website/product-page/%E8%9E%BA%E9%88%BF%E3%83%9A%E3%83%B3%E3%83%80%E3%83%B3%E3%83%88-%E5%AE%9D%E7%9B%B8%E8%8F%AF",
+        "affiliateUrl": null,
+        "applicationStatus": "not_applied",
+        "affiliateLinkVerifiedAt": null
+      },
+      {
+        "id": "sugimura-lotus-makie-ring-official",
+        "productId": "sugimura-lotus-makie-ring",
+        "merchantId": "sugimura-direct",
+        "programId": null,
+        "officialProductUrl": "https://jqppy767.wixsite.com/website/product-page/%E5%95%86%E5%93%81%E5%90%8D-%E8%92%94%E7%B5%B5%E6%8C%87%E8%BC%AA-%E8%93%AE-makie-ring-lotus",
+        "affiliateUrl": null,
+        "applicationStatus": "not_applied",
+        "affiliateLinkVerifiedAt": null
+      }
+    ]
+  },
+  "translations": {
+    "products": {
+      "senshu-pearl-stud-earrings": {
+        "title": "プレミアムパール 泉州の貝パール スタッド耳飾り",
+        "editorialSummary": "耳元に、つやのある丸をひとつ。明るいホワイトと、落ち着いたピーコックで印象を選べるスタッドタイプです。",
+        "whoItMaySuit": "揺れるデザインより、耳元にまとまる丸いシルエットを選びたいときに。",
+        "whatToCheck": [
+          "貝パールは人工真珠です。天然真珠・養殖真珠ではありません。",
+          "ピアスとイヤリングを同じ商品ページで選べます。色と金具の組み合わせごとに在庫を確認してください。",
+          "掲載の重さは片耳か一組かが明記されていないため、片耳の数値に換算していません。",
+          "貝パールは大阪・泉州産、製品は日本製の案内です。個別の製造者・国内の組立場所は未確認です。"
+        ],
+        "size": "ピアス：約縦9×横9mm。イヤリング：約縦19×横9mm。商品名は9 mm UP表記です。",
+        "findings": "真鍮・シリコーン、ステンレス・樹脂、シルバートーンコートを掲載。選ぶ金具ごとの正確な部品構成は公式情報を確認してください。",
+        "fastening": "同じ商品ページでピアス／イヤリングを選択。留め具の詳細機構は確認できていません。",
+        "taxNote": "公式販売店の表示価格7,120円（税込）。",
+        "craftClassificationLabel": "大阪・泉州産の貝パールを使用する耳飾り。個別の伝統的工芸品認証は確認していません。"
+      },
+      "senshu-pearl-swing-earrings": {
+        "title": "プレミアムパール 泉州の貝パール スウィング耳飾り",
+        "editorialSummary": "白いパールが耳元から下がる、縦のライン。ゴールド系とシルバー系の金具で、手持ちのジュエリーとの組み合わせも楽しめます。",
+        "whoItMaySuit": "丸いパールに、揺れと少しの長さを加えたいときに。",
+        "whatToCheck": [
+          "貝パールは人工真珠です。天然真珠・養殖真珠ではありません。",
+          "ゴールド・シルバーはコーティングの色の表現で、純金・銀製を意味しません。",
+          "ピアス／イヤリングと金具色を同じ商品ページで選びます。希望の組み合わせの在庫を確認してください。",
+          "掲載の重さは片耳か一組かが明記されていないため、片耳の重さや軽さを断定していません。"
+        ],
+        "size": "約縦24×横9mm。貝パールの幅は9 mm UPと案内。",
+        "findings": "共通部分は真鍮。イヤリングにシリコーン、ピアスにステンレスを掲載。金具色に応じたゴールドトーン／シルバートーンコートです。",
+        "fastening": "同じ商品ページでピアス／イヤリングを選択。留め具の詳細機構は確認できていません。",
+        "taxNote": "公式販売店の表示価格5,650円（税込）。",
+        "craftClassificationLabel": "大阪・泉州産の貝パールを使用する耳飾り。個別の伝統的工芸品認証は確認していません。"
+      },
+      "sugimura-hosoge-raden-pendant": {
+        "title": "大和漆工芸杉村 宝相華の螺鈿ペンダント",
+        "editorialSummary": "胸元に、宝相華のモチーフをひとつ。装飾のあるペンダントを装いの中心に選びたい日に、奈良の作り手の螺鈿を。",
+        "whoItMaySuit": "耳飾りとは違う位置に、工芸のモチーフを取り入れたいときに。",
+        "whatToCheck": [
+          "公式商品名は螺鈿ペンダントです。土台の詳細素材、寸法、重さ、金具は確認した本文に記載がありません。",
+          "現在の作品の表情、大きさ、ひも・チェーンの組み合わせは作り手の公式情報で確認してください。",
+          "奈良の制作・展示場所は確認済みです。このペンダントの展示在庫と来訪可能な日時は訪問前に確認してください。"
+        ],
+        "taxNote": "公式ショップの表示価格44,000円。確認した本文では税込・税別の扱いは確定していません。",
+        "craftClassificationLabel": "奈良で制作・展示する大和漆工芸杉村の螺鈿ペンダント。個別の指定・認証を示す表現ではありません。",
+        "size": null,
+        "findings": null,
+        "fastening": null
+      },
+      "sugimura-lotus-makie-ring": {
+        "title": "大和漆工芸杉村 蓮の蒔絵 木製リング",
+        "editorialSummary": "手元に、蓮のモチーフをひとつ。木製リングを小さな絵のように楽しむ、蒔絵の指輪です。",
+        "whoItMaySuit": "手元の装飾を主役に、サイズを作り手と相談して選びたいときに。",
+        "whatToCheck": [
+          "公式写真の指輪は16号です。すべてのサイズがすぐに用意されるという意味ではありません。",
+          "木製のためサイズ調整はできず、公式サイトは無地の指輪でサイズを合わせて作り直す案内をしています。",
+          "幅・重さ・仕上げや金属粉の厳密な素材構成は、確認した本文では確定していません。"
+        ],
+        "size": "公式写真の指輪は日本サイズ16号。リング幅は未記載です。",
+        "fastening": "木製リングを指に通す形。サイズ調整はできないため、別サイズは作り手の作り直し案内を確認してください。",
+        "taxNote": "公式ショップの表示価格165,000円。確認した本文では税込・税別の扱いは確定していません。",
+        "craftClassificationLabel": "奈良で制作・展示する大和漆工芸杉村の蒔絵リング。個別の指定・認証を示す表現ではありません。",
+        "findings": null
+      }
+    },
+    "prefectures": {
+      "osaka": {
+        "name": "大阪府"
+      },
+      "nara": {
+        "name": "奈良県"
+      }
+    },
+    "crafts": {
+      "senshu-shell-pearl": {
+        "name": "泉州の貝パール",
+        "description": "大阪・泉州産と明記された貝パールを使う耳飾り。天然・養殖真珠ではなく人工真珠です。個別商品の伝統的工芸品認証や組合所属は確認していません。"
+      },
+      "nara-raden-makie": {
+        "name": "奈良の螺鈿・蒔絵",
+        "description": "奈良市で制作・展示する大和漆工芸杉村の、螺鈿ペンダントと蒔絵の指輪。個別の指定・認証を示す表現ではありません。"
+      }
+    },
+    "materials": {
+      "imitation-pearl": {
+        "name": "人工真珠（貝パール）",
+        "description": "販売店が貝パールと案内する人工真珠。天然真珠や養殖真珠ではありません。"
+      },
+      "brass": {
+        "name": "真鍮"
+      },
+      "silicone": {
+        "name": "シリコーン"
+      },
+      "stainless-steel": {
+        "name": "ステンレス",
+        "description": "ステンレス表記。グレードや肌への適合性は未確認です。"
+      }
+    },
+    "productTypes": {
+      "ring": {
+        "name": "指輪"
+      }
+    },
+    "makers": {
+      "premium-pearl-brand": {
+        "name": "プレミアムパール",
+        "location": "大阪・泉州産の貝パールを使用。ブランド個別の工房は未特定。",
+        "productionNote": "販売店は貝パールの産地を大阪・泉州、製品を日本製と案内しています。個別の製造者と国内の組立場所、組合所属は確認していません。"
+      },
+      "yamato-urushi-sugimura": {
+        "name": "大和漆工芸杉村",
+        "location": "奈良県奈良市西ノ京町",
+        "productionNote": "公式サイトは奈良市・がんこ一徹長屋で作品制作・展示を行うと案内しています。個別商品の全素材の原産地や認証を意味しません。"
+      }
+    },
+    "merchants": {
+      "shop-channel": {
+        "name": "ショップチャンネル",
+        "language": "日本語",
+        "shippingSummary": "届け先・商品別の利用条件は未確認です。",
+        "returns": "個別の条件は未確認です。"
+      },
+      "sugimura-direct": {
+        "name": "大和漆工芸杉村 公式ショップ",
+        "language": "日本語、一部英語",
+        "shippingSummary": "届け先・商品別の利用条件は未確認です。",
+        "returns": "商品ページ内の未入力テンプレートを実際の規約として扱っていません。"
+      }
+    }
+  },
+  "stories": {
+    "senshu-pearl-stud-earrings": {
+      "en": {
+        "headline": "One round accent. Two different moods.",
+        "standfirst": "The stud keeps the pearl close to the ear, with no long drop to compete with a collar. White brings a bright point; peacock offers a darker alternative.",
+        "highlights": [
+          "A compact stud silhouette",
+          "White and peacock color choices",
+          "Pierced and clip-on options in one listing"
+        ],
+        "outfit": {
+          "title": "Striped shirt × a pearl circle",
+          "body": "Try white with a striped shirt for a crisp contrast, or peacock with an oatmeal cardigan. With no dangling line, the round shape can sit beside a stronger neckline."
+        }
+      },
+      "ja": {
+        "headline": "丸いひと粒で、印象を選ぶ。",
+        "standfirst": "耳元にまとまるスタッドタイプは、襟元のデザインを楽しみたい日にも。ホワイトは明るく、ピーコックは落ち着いたアクセントとして選べます。",
+        "highlights": [
+          "長く下がらないスタッドの形",
+          "ホワイトとピーコックの2色",
+          "ピアス／イヤリングの金具を選択"
+        ],
+        "outfit": {
+          "title": "ストライプシャツ × つやのある丸",
+          "body": "白いパールならストライプのシャツに、ピーコックならオートミール色のカーディガンに。襟のある服の日も、縦に下がる耳飾りとは違うバランスを楽しめます。"
+        }
+      }
+    },
+    "senshu-pearl-swing-earrings": {
+      "en": {
+        "headline": "A pearl, with room to move.",
+        "standfirst": "Choose this version when you want the familiar pearl circle with a little more length. A curved fitting places the pearl below the ear, changing the outline from the compact stud.",
+        "highlights": [
+          "A pearl drop rather than a stud",
+          "Gold- or silver-colored metal",
+          "A longer line below the ear"
+        ],
+        "outfit": {
+          "title": "Soft blouse × a short pearl drop",
+          "body": "Pair the gold-colored option with a soft peach blouse, or the silver-colored option with slate blue. Keep a necklace fine so the space around the pearl remains part of the outfit."
+        }
+      },
+      "ja": {
+        "headline": "ひと粒に、揺れる余白を。",
+        "standfirst": "同じ丸いパールでも、少し下がるだけで横顔のバランスは変わります。スタッドより縦のラインを足したい日に選ぶ、スウィングタイプ。",
+        "highlights": [
+          "パールが下がるスウィング型",
+          "金具はゴールド系／シルバー系",
+          "耳元から縦へ伸びるシルエット"
+        ],
+        "outfit": {
+          "title": "やわらかなブラウス × 揺れるパール",
+          "body": "ゴールド系は淡いピーチのブラウスに、シルバー系は青みのあるグレーに。ネックレスを細いものにすると、パールの周りの余白も装いの一部になります。"
+        }
+      }
+    },
+    "sugimura-hosoge-raden-pendant": {
+      "en": {
+        "headline": "Let a floral motif take the lead.",
+        "standfirst": "Hosoge brings an ornamental flower into a pendant. Choose a neckline piece when you want one craft motif at the center of your outfit rather than several small accents.",
+        "highlights": [
+          "A Hosoge floral motif",
+          "Raden named by the maker",
+          "Made by a workshop based in Nara"
+        ],
+        "outfit": {
+          "title": "Plain dress × an ornamental pendant",
+          "body": "Consider a simple dress without a busy print, leaving space for the pendant at the neckline. Check the maker’s current dimensions and cord or chain arrangement to choose the neckline height."
+        }
+      },
+      "ja": {
+        "headline": "胸元に、宝相華をひとつ。",
+        "standfirst": "装飾的な花のモチーフを、ペンダントで。小さなアクセントを重ねるより、工芸のひとつを装いの中心に選びたい日に。",
+        "highlights": [
+          "宝相華をモチーフにしたデザイン",
+          "公式商品名に螺鈿を明記",
+          "奈良で制作・展示する作り手から"
+        ],
+        "outfit": {
+          "title": "柄のないワンピース × 胸元のモチーフ",
+          "body": "装飾を楽しむ日は、柄のないワンピースと合わせて胸元に余白を。実際の大きさと、ひも・チェーンの組み合わせを公式情報で確かめて、襟元との高さを選んでください。"
+        }
+      }
+    },
+    "sugimura-lotus-makie-ring": {
+      "en": {
+        "headline": "A small painting for the hand.",
+        "standfirst": "A lotus motif makes this wooden ring a different choice from a plain metal band. It is a piece to choose for its decorative surface, with fit discussed carefully with the maker.",
+        "highlights": [
+          "Lotus motif in makie",
+          "A wooden ring, not a metal band",
+          "Sizing and remaking guidance from the maker"
+        ],
+        "outfit": {
+          "title": "Cropped sleeves × a decorated ring",
+          "body": "Try a plain top with sleeves that leave the hand visible. Keeping other rings simple gives the lotus motif its own space; discuss the final size with the maker before choosing."
+        }
+      },
+      "ja": {
+        "headline": "手元に、小さな絵を。",
+        "standfirst": "蓮のモチーフを、木製のリングに。シンプルな金属の輪とは違う、描かれた表情を選ぶ指輪です。",
+        "highlights": [
+          "蓮をモチーフにした蒔絵",
+          "木を使ったリング",
+          "サイズは作り手の案内を見て相談"
+        ],
+        "outfit": {
+          "title": "手首の見える袖 × 絵のあるリング",
+          "body": "手元を見せる短めの袖と合わせて、蓮のモチーフをひとつの見せ場に。ほかの指輪を控えめにすると装飾を楽しみやすくなります。サイズは作り手と相談して選んでください。"
+        }
+      }
+    }
+  },
+  "notes": {
+    "senshu-pearl-stud-earrings": {
+      "en": "Choose the stud when you want the shape to stay close to the ear. Its rounded outline makes a useful contrast to stripes, collars and the straight lines of a jacket; the peacock option also offers a different mood from familiar white pearl jewelry.\n\nCompared with the swing version in our Osaka selection, this is the shorter, more contained silhouette. Both fitting types share one official listing, so choose the design first, then check the color and fitting together.\n\nThe regional connection is the shell-pearl component, identified by the retailer as Senshu, Osaka. The listing says made in Japan, but it does not identify the individual workshop. These are imitation pearls, not cultured pearls.",
+      "ja": "短くまとまる耳飾りを選ぶなら、スタッドタイプ。丸い輪郭は、ストライプやジャケットの直線と合わせたくなるかたちです。定番の白だけでなく、ピーコックで落ち着いた印象を選べるところにもひかれました。\n\n大阪のセレクトに並べたスウィングタイプと比べると、こちらは長さを足さず、耳元に丸を置くデザイン。色と金具を同じページで選ぶため、好みの組み合わせを確認して選べます。\n\n産地とのつながりは、販売店が大阪・泉州産と明記する貝パールです。製品は日本製の案内ですが、個別の工房名は未確認。天然・養殖真珠ではなく、人工真珠の表情を楽しむ耳飾りです。"
+    },
+    "senshu-pearl-swing-earrings": {
+      "en": "This is the choice for adding a short vertical line rather than keeping the pearl against the ear. The curved fitting and suspended pearl make a different outline from the stud, even though both belong to the same shell-pearl selection.\n\nChoosing the metal color is an easy way to connect it with a watch or another piece of jewelry you already own. Gold-colored metal suggests a warmer pairing; silver-colored metal gives another direction without changing the white pearl.\n\nThe regional evidence concerns the pearl component from Senshu, Osaka. The listing identifies the product as made in Japan, while the individual maker and exact assembly location remain unconfirmed.",
+      "ja": "耳元に丸を置くスタッドに対して、こちらは少し縦のラインを足すスウィングタイプ。カーブした金具の下にパールが下がるため、同じ貝パールでも違う輪郭を選べます。\n\n金具の色を、手持ちの時計やネックレスに合わせて考えられるのもポイント。暖かい色の服にはゴールド系、青みのある服にはシルバー系など、白いパールを軸に組み合わせを楽しめそうです。\n\n販売店は貝パールを大阪・泉州産、製品を日本製と案内しています。産地を紹介する根拠はその部材で、個別の製造者や国内の組立場所までは確認していません。"
+    },
+    "sugimura-hosoge-raden-pendant": {
+      "en": "A pendant changes where a craft detail sits in an outfit. The Hosoge floral motif offers a central accent at the neckline, a different starting point from the small earrings that appear elsewhere in this selection.\n\nWe chose it as an ornamental alternative to a plain chain. Before deciding on the outfit, use the maker’s photographs and ask about the actual dimensions and cord or chain arrangement; those details are not supplied in the checked product text.\n\nYamato Urushi Kougei Sugimura states that it makes and exhibits work at Ganko Ittetsu Nagaya in Nara. The maker also lists a Lotus makie ring, offering another way to explore decoration worn on the body.",
+      "ja": "工芸のモチーフを胸元に置くと、耳元の小さな飾りとは違う装いの中心ができます。宝相華の螺鈿ペンダントは、シンプルなチェーンに飾りを足す感覚より、ひとつのモチーフを主役に選びたい作品です。\n\nどんな襟元に合わせるかは、実際の寸法やひも・チェーンとの組み合わせで考えたいところ。確認した商品本文には詳細がないため、公式の作品写真と作り手の案内を見て選んでください。\n\n大和漆工芸杉村は、奈良・西ノ京のがんこ一徹長屋で作品制作と展示を行う作り手。手元に装飾を置く蓮の蒔絵リングと、身につける位置から比べるのもおすすめです。"
+    },
+    "sugimura-lotus-makie-ring": {
+      "en": "A ring can be a place for a motif rather than just a line of metal. We chose the Lotus for that change of scale: a decorative surface brought close to the hand, where a plain outfit can give it space.\n\nThe wooden construction is also a practical difference from many metal rings. The maker says the photographed piece is Japanese size 16 and cannot be resized, and describes remaking after matching the size with a plain ring. Discuss that process rather than treating the pictured size as a universal fit.\n\nThe maker works and exhibits in Nara. Its Hosoge raden pendant provides a different way to bring an ornamental motif into an outfit, at the neckline instead of the hand.",
+      "ja": "指輪を、金属の線ではなくモチーフを楽しむ場所として選ぶ。蓮の蒔絵リングは、手元に小さな絵を添えるような装いを考えたくなる作品です。服やほかの指輪をシンプルにして、装飾のある面を楽しむ組み合わせにひかれました。\n\n素材が木であることは、選ぶときの大切な違いです。公式写真は16号で、サイズ調整はできないと案内されています。別サイズは無地の指輪で合わせて作り直すという説明を確認し、作り手と相談して選んでください。\n\n作り手は奈良で作品を制作・展示する大和漆工芸杉村。胸元の宝相華ペンダントと、装飾を置く位置の違いから選ぶのもひとつの楽しみです。"
+    }
+  },
+  "places": {
+    "osaka": {
+      "sourceIds": [
+        "shopch-senshu-stud-v9",
+        "shopch-senshu-swing-v9",
+        "jpga-izumi-craft-v9"
+      ],
+      "relatedMerchantIds": [],
+      "en": {
+        "title": "Craft jewelry connected to Osaka",
+        "description": "Choose a compact stud or a short pearl drop, both using shell pearls identified as made in Senshu, Osaka.",
+        "body": "Our Osaka selection starts with shell-pearl jewelry: a compact stud and a swing version. These are imitation pearls, not cultured pearls.\n\nThe retailer identifies the pearl components as Senshu, Osaka and the products as made in Japan. The exact individual maker and assembly location are not established. The regional association provides context for Izumi’s accessory-pearl craft; it is not evidence that these particular products carry its certification or are stocked in its showroom."
+      },
+      "ja": {
+        "title": "大阪の工芸ジュエリー",
+        "description": "大阪・泉州産の貝パールから、短いスタッドと揺れる耳飾りをセレクト。",
+        "body": "大阪からは、泉州産の貝パールを使った耳飾りを選びました。耳元にまとまるスタッドと、少し下がるスウィング。人工真珠の丸い表情を、形の違いから楽しめます。\n\n産地の根拠は販売店が明記する貝パールの生産地です。製品は日本製ですが、個別の工房と国内の組立場所は未確認。地域組合による工芸の紹介は背景資料であり、このブランドの組合所属や個別認証、ショールームでの取扱いを示すものではありません。"
+      }
+    },
+    "nara": {
+      "sourceIds": [
+        "sugimura-official-v9",
+        "sugimura-hosoge-v9",
+        "sugimura-lotus-v9"
+      ],
+      "relatedMerchantIds": [],
+      "en": {
+        "title": "Craft jewelry from Nara",
+        "description": "A raden pendant and a Lotus makie ring from a maker working in Nishinokyo, Nara.",
+        "body": "Discover ornament at two different points in an outfit: a Hosoge pendant at the neckline and a Lotus ring on the hand. Both are listed by Yamato Urushi Kougei Sugimura.\n\nThe maker states that it produces and exhibits work at Ganko Ittetsu Nagaya in Nishinokyo, Nara. Check the individual product page and discuss size, current stock and visiting arrangements directly with the maker."
+      },
+      "ja": {
+        "title": "奈良の工芸ジュエリー",
+        "description": "奈良・西ノ京の作り手から、宝相華の螺鈿ペンダントと蓮の蒔絵リングを。",
+        "body": "胸元に宝相華を、手元に蓮を。大和漆工芸杉村の作品から、装飾を身につける場所の違いも楽しめるふたつを選びました。\n\n公式サイトは奈良・西ノ京のがんこ一徹長屋で制作・展示を行うと案内しています。商品の寸法やサイズ、現在の展示在庫、来訪できる日時は、それぞれの公式情報を確認して作り手に相談してください。"
+      }
+    }
+  },
+  "craftNotes": {
+    "senshu-shell-pearl": {
+      "sourceIds": [
+        "shopch-senshu-stud-v9",
+        "shopch-senshu-swing-v9",
+        "jpga-izumi-craft-v9"
+      ],
+      "en": {
+        "title": "Senshu shell-pearl jewelry",
+        "description": "Pearl-like color and round forms from the accessory-pearl region of Senshu, Osaka.",
+        "body": "The selected earrings use shell pearls identified by their retailer as made in Senshu, Osaka. These are imitation pearls; they are not presented as cultured or natural pearls.\n\nIzumi’s industry association describes a regional accessory-pearl craft. That general background does not establish certification, membership or showroom stock for the individual products selected here."
+      },
+      "ja": {
+        "title": "泉州の貝パールジュエリー",
+        "description": "大阪・泉州の人工真珠を、スタッドと揺れるかたちで。",
+        "body": "今回の耳飾りは、販売店が大阪・泉州産と明記する貝パールを使用しています。天然・養殖真珠ではなく、人工真珠です。\n\n和泉の業界組合は、アクセサリーパールの地域産業を紹介しています。その一般的な背景を、個別商品の認証・ブランドの組合所属・ショールームでの在庫へ読み替えないようにしています。"
+      }
+    },
+    "nara-raden-makie": {
+      "sourceIds": [
+        "sugimura-official-v9",
+        "sugimura-hosoge-v9",
+        "sugimura-lotus-v9"
+      ],
+      "en": {
+        "title": "Nara raden and makie jewelry",
+        "description": "Ornamental pendants and wooden rings from Yamato Urushi Kougei Sugimura.",
+        "body": "Yamato Urushi Kougei Sugimura lists a Hosoge raden pendant and a Lotus makie ring. We bring them together as ways to wear an ornamental motif at the neckline or on the hand.\n\nThe regional connection is the maker’s stated production and exhibition base in Nara. Individual craft certification, precise metal content and full component origins have not been established."
+      },
+      "ja": {
+        "title": "奈良の螺鈿と蒔絵のジュエリー",
+        "description": "大和漆工芸杉村から選ぶ、胸元と手元の装飾。",
+        "body": "大和漆工芸杉村が公式に掲載する、宝相華の螺鈿ペンダントと蓮の蒔絵リング。モチーフを胸元に置くか、手元に置くか、身につける場所の違いから選べます。\n\n産地とのつながりは、作り手が奈良で制作・展示を行うという案内です。個別の工芸認証、金属粉の含有量、すべての部材の原産地を確認したものではありません。"
+      }
+    }
+  },
+  "visits": {
+    "stores": [
+      {
+        "id": "sugimura-nishinokyo-gallery",
+        "name": {
+          "en": "Yamato Urushi Kougei Sugimura, Ganko Ittetsu Nagaya",
+          "ja": "大和漆工芸杉村（がんこ一徹長屋）"
+        },
+        "address": {
+          "en": "Ganko Ittetsu Nagaya, 215-1 Nishinokyo-cho, Nara 630-8042, Japan",
+          "ja": "〒630-8042 奈良県奈良市西ノ京町215-1 がんこ一徹長屋内"
+        },
+        "kind": "maker-gallery",
+        "officialUrl": "https://jqppy767.wixsite.com/website",
+        "officialStoreUrl": "https://jqppy767.wixsite.com/website",
+        "hours": null,
+        "closedDays": null,
+        "access": {
+          "en": "The maker lists its production and exhibition space in Nishinokyo, near Yakushiji. Confirm when visits are possible through the official site before travelling.",
+          "ja": "公式サイトが薬師寺近くの制作・展示場所として案内しています。来訪できる日時を公式窓口で確かめてから訪ねてください。"
+        },
+        "visitSummary": {
+          "en": "The maker’s stated production and exhibition base in Nara. Use the official site to arrange a visit and discuss the piece you want to see.",
+          "ja": "奈良で作品制作と展示を行う場所。見たい作品の相談と来訪の確認は、作り手の公式サイトからできます。"
+        },
+        "stockNote": {
+          "en": "A production and exhibition address is confirmed, but walk-in hours and stock of the exact pendant or ring are not. Contact the maker before visiting.",
+          "ja": "制作・展示場所は確認できていますが、自由に来店できる時間と、このペンダント・リングの展示在庫は未確認です。訪問前に公式窓口で確認してください。"
+        },
+        "mapQuery": "大和漆工芸杉村 がんこ一徹長屋 奈良市西ノ京町215-1",
+        "sourceIds": [
+          "sugimura-official-v9"
+        ],
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "products": [
+      {
+        "productId": "senshu-pearl-stud-earrings",
+        "storeIds": [],
+        "officialHomeUrl": "https://www.shopch.jp/pc/product/prodlist/brand?brandCode=00713",
+        "officialHomeRole": "retailer",
+        "sourceIds": [
+          "shopch-senshu-stud-v9",
+          "jpga-izumi-craft-v9"
+        ],
+        "fallback": {
+          "en": "A current physical stockist for this exact product has not been verified. Use Shop Channel’s official product page to choose the color and fitting. The regional association’s showroom is not presented as a stockist for this SKU.",
+          "ja": "この商品の現行実店舗での取扱いは確認できていません。公式取扱店ショップチャンネルの商品ページで色と金具を選べます。地域組合のショールームを、この商品の販売店として案内していません。"
+        },
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "productId": "senshu-pearl-swing-earrings",
+        "storeIds": [],
+        "officialHomeUrl": "https://www.shopch.jp/pc/product/prodlist/brand?brandCode=00713",
+        "officialHomeRole": "retailer",
+        "sourceIds": [
+          "shopch-senshu-swing-v9",
+          "jpga-izumi-craft-v9"
+        ],
+        "fallback": {
+          "en": "A current physical stockist for this exact product has not been verified. Use Shop Channel’s official product page to choose the color and fitting. The regional association’s showroom is not presented as a stockist for this SKU.",
+          "ja": "この商品の現行実店舗での取扱いは確認できていません。公式取扱店ショップチャンネルの商品ページで色と金具を選べます。地域組合のショールームを、この商品の販売店として案内していません。"
+        },
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "productId": "sugimura-hosoge-raden-pendant",
+        "storeIds": [
+          "sugimura-nishinokyo-gallery"
+        ],
+        "officialHomeUrl": "https://jqppy767.wixsite.com/website",
+        "officialHomeRole": "maker",
+        "sourceIds": [
+          "sugimura-hosoge-v9",
+          "sugimura-official-v9"
+        ],
+        "fallback": null,
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "productId": "sugimura-lotus-makie-ring",
+        "storeIds": [
+          "sugimura-nishinokyo-gallery"
+        ],
+        "officialHomeUrl": "https://jqppy767.wixsite.com/website",
+        "officialHomeRole": "maker",
+        "sourceIds": [
+          "sugimura-lotus-v9",
+          "sugimura-official-v9"
+        ],
+        "fallback": null,
+        "checkedAt": "2026-11-16"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "shopch-senshu-stud-v9",
+      "url": "https://www.shopch.jp/pc/product/proddetail?reqprno=819642",
+      "title": "プレミアムパール 泉州の職人技 ９ｍｍＵＰ 貝パール スタッド イヤリング／ピアス ジュエリー　イヤリング　コスチューム　真珠 プレミアムパール|通販・テレビショッピングのショップチャンネル",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Official product 819642; Senshu Osaka shell-pearl component origin and made-in-Japan claim; JPY7120 including tax; white and peacock colors and pierced/clip options; sizes and listed materials. Weight is not explicitly per ear. Reviews are excluded."
+      ]
+    },
+    {
+      "id": "shopch-senshu-swing-v9",
+      "url": "https://www.shopch.jp/pc/product/proddetail?reqprno=810335",
+      "title": "プレミアムパール 泉州の職人技 ９ｍｍＵＰ　貝パール スウィング イヤリング／ピアス ジュエリー　イヤリング　コスチューム　イミテーションパール プレミアムパール|通販・テレビショッピングのショップチャンネル",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Official product 810335; Senshu Osaka shell-pearl component origin and made-in-Japan claim; JPY5650 including tax; gold/silver-colored metal and pierced/clip options; approximately 24 × 9 mm size and listed materials. Weight is not explicitly per ear. Reviews are excluded."
+      ]
+    },
+    {
+      "id": "jpga-izumi-craft-v9",
+      "url": "https://jpga-izumi.com/",
+      "title": "Japan Imitation Pearl & Glass Article’s Association",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Primary association describes accessory-pearl craft in Izumi City, Osaka. This is general craft context, not proof the selected brand belongs to the association, has an individual certification, or is stocked at its showroom."
+      ]
+    },
+    {
+      "id": "sugimura-official-v9",
+      "url": "https://jqppy767.wixsite.com/website",
+      "title": "大和漆工芸杉村 — official workshop and products",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Maker states production and exhibition at Ganko Ittetsu Nagaya, 215-1 Nishinokyo-cho, Nara. Home product list includes Hosoge raden pendant and Lotus makie ring. No public opening hours or stock commitment established."
+      ]
+    },
+    {
+      "id": "sugimura-hosoge-v9",
+      "url": "https://jqppy767.wixsite.com/website/product-page/%E8%9E%BA%E9%88%BF%E3%83%9A%E3%83%B3%E3%83%80%E3%83%B3%E3%83%88-%E5%AE%9D%E7%9B%B8%E8%8F%AF",
+      "title": "螺鈿ペンダント　宝相華 | 大和漆工芸杉村",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Official Hosoge raden pendant name and JPY44000 listing; dimensions, weight, findings, detailed substrate and tax treatment are not supplied by the checked product body."
+      ]
+    },
+    {
+      "id": "sugimura-lotus-v9",
+      "url": "https://jqppy767.wixsite.com/website/product-page/%E5%95%86%E5%93%81%E5%90%8D-%E8%92%94%E7%B5%B5%E6%8C%87%E8%BC%AA-%E8%93%AE-makie-ring-lotus",
+      "title": "商品名　蒔絵指輪　蓮　Makie Ring Lotus | 大和漆工芸杉村",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Official Lotus makie ring JPY165000; pictured ring Japanese size 16; wooden ring cannot be resized, maker offers remaking after size matching. Generic unfilled Wix product/returns/shipping fields are not treated as actual policies. Precious-metal composition, exact lacquer composition and tax treatment not established."
+      ]
+    }
+  ]
+}

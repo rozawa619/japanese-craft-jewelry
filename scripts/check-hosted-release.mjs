@@ -1,5 +1,6 @@
 import {chromium} from '@playwright/test';
 import {assertVisitGuide} from './visit-assertions.mjs';
+import {assertRegionSelection} from './region-selection-assertions.mjs';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {readFile,writeFile} from 'node:fs/promises';
@@ -80,7 +81,7 @@ try{
    await page.goto(url(locale,'about/'));const about=await page.locator('main').innerText();assert.match(about,/SORA/);assert.doesNotMatch(about,/rozawa619/);
    await page.goto(url(locale));
    for(const material of ['wood','glass','porcelain'])assert.ok(await page.locator('a[href*="material='+material+'"]').count()>0,material);
-   const cards=await page.locator('[data-product-card]').evaluateAll(nodes=>nodes.map(node=>(node.getAttribute('data-material')||'').split(' ')));assert.ok(cards.filter(ids=>!ids.includes('wood')).length>=4,'Home must lead with non-wood choices');
+   await assertRegionSelection(page,locale,catalog);
    await page.goto(url(locale,'editorial-policy/'));const text=await page.locator('main').innerText();
    assert.doesNotMatch(text,/SDD|programId|approved|affiliateUrl|GitHub Issues|販売・決済・発送|The retailer handles/i);
    return {operator:'SORA',materialLinks:['wood','glass','porcelain'],policyCharacters:text.length,policyText:text};
@@ -114,5 +115,5 @@ try{
  await check('No hosted CSP/client/console errors during supplemental navigation',()=>{assert.deepEqual(report.pageErrors,[]);assert.deepEqual(report.consoleErrors,[])});
 }finally{
  await browser.close();report.completedAt=new Date().toISOString();report.finalizedAt=report.completedAt;report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,canonicalUrls:report.pages.length,uniqueImages:report.assets.length,pageErrors:report.pageErrors.length,consoleErrors:report.consoleErrors.length};
- await writeFile(resolve(root,process.env.CHECK_HOSTED_REPORT_PATH||'docs/visit-stage-hosted-supplement-results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report.summary));if(report.failures.length)process.exitCode=1;
+ await writeFile(resolve(root,process.env.CHECK_HOSTED_REPORT_PATH||'docs/destination-stage-hosted-supplement-results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report.summary));if(report.failures.length)process.exitCode=1;
 }

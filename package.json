@@ -1,6 +1,6 @@
 {
   "name": "japanese-craft-jewelry",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@11.25.0",
@@ -11,7 +11,7 @@
     "dev": "node scripts/astro.mjs dev --host 127.0.0.1",
     "check": "node scripts/astro.mjs check && node --experimental-strip-types scripts/validate.ts && node --experimental-strip-types scripts/validate-visits.ts",
     "test": "node --experimental-strip-types --test tests/*.test.ts",
-    "build": "node --experimental-strip-types scripts/validate.ts && node --experimental-strip-types scripts/validate-visits.ts && node scripts/astro.mjs build",
+    "build": "node --experimental-strip-types scripts/validate.ts && node --experimental-strip-types scripts/validate-visits.ts && node scripts/astro.mjs build && node scripts/prune-retired-images.mjs",
     "preview": "node scripts/astro.mjs preview --host 127.0.0.1",
     "verify": "pnpm check && pnpm test && pnpm build && node scripts/check-built.mjs",
     "readiness": "node --experimental-strip-types scripts/readiness.ts",

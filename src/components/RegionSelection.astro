@@ -1,0 +1,122 @@
+---
+import EditorialImage from './EditorialImage.astro';
+import Pattern from './Pattern.astro';
+import {catalogFor,productsFor,labels,price} from '../lib/catalog';
+import {productImageFor} from '../lib/editorial-images';
+import {contentFor,contentSlug} from '../lib/content';
+import {t,type Locale} from '../lib/i18n';
+import {pagePath} from '../config/site';
+import {regionalRepresentatives,tourismRanking} from '../config/region-selection';
+
+interface Props {locale:Locale;id?:string;showAllLink?:boolean;}
+const {locale,id='regional-selection',showAllLink=true}=Astro.props;
+const catalog=catalogFor(locale),products=productsFor(locale);
+const notes=(await contentFor('places',locale)).filter(note=>note.body?.trim());
+const ranking=new Map(tourismRanking.destinations.map(destination=>[destination.prefectureId,destination]));
+const regions=notes.flatMap(note=>{
+ const region=catalog.prefectures.find(item=>item.id===note.data.prefectureId);
+ const local=products.filter(product=>product.prefectureIds.includes(note.data.prefectureId));
+ if(!region||!local.length)return [];
+ const preferred=regionalRepresentatives[region.id];
+ const configured=preferred?products.find(product=>product.id===preferred):undefined;
+ if(configured&&!configured.prefectureIds.includes(region.id))throw new Error(`Regional representative belongs to a different prefecture: ${region.id}`);
+ const representative=configured||local.find(product=>product.availability!=='out_of_stock'&&productImageFor(product.id))||local.find(product=>product.availability!=='out_of_stock')||local[0];
+ return [{region,note,local,representative,rank:ranking.get(region.id),image:productImageFor(representative.id)}];
+}).sort((a,b)=>(a.rank?.rank??100)-(b.rank?.rank??100));
+const ranked=regions.filter(region=>region.rank),additional=regions.filter(region=>!region.rank);
+const hasRanking=ranked.length>0&&tourismRanking.year&&tourismRanking.sourceUrl;
+const completeRanking=hasRanking&&ranked.length===10&&tourismRanking.destinations.length===10;
+const groups=hasRanking?[
+ {kind:'ranked',title:t(locale,completeRanking?'Ten destinations. A different craft in each.':'Discover craft in Japan’s travel destinations.',completeRanking?'旅先で出会う、10の産地。':'旅先から、工芸ジュエリーを探す。'),rows:ranked},
+ {kind:'additional',title:t(locale,'More places to discover.','こちらの産地も、見てみませんか。'),rows:additional},
+]:[{kind:'unranked',title:'',rows:regions}];
+---
+<section class="region-selector" id={id} data-region-selection>
+ <div class="section-heading region-selector-heading">
+  <div><p class="eyebrow">{t(locale,'JAPAN, ONE PIECE AT A TIME','旅先と、工芸ジュエリー')}</p><h2>{t(locale,'Choose a place. Find your piece.','産地から、好きなひとつへ。')}</h2></div>
+  {showAllLink&&<a class="text-link" href={pagePath('objects/#all-jewelry',locale)}>{t(locale,'Browse all jewelry','すべての商品を探す')}<span aria-hidden="true">→</span></a>}
+ </div>
+ <p class="region-selector-intro">{t(locale,'Where will Japan take you? Choose a region to explore its jewelry. The piece beside each destination is our starting point for the selection.','次の旅先で出会いたい、身につける工芸。産地を選ぶと、その土地の商品をまとめて見られます。右の一品を入り口に、気になるかたちを探してください。')}</p>
+ {hasRanking&&<p class="region-ranking-note" data-tourism-ranking-note>{t(locale,`Ordered by prefectural visit rate in ${tourismRanking.year}: all nationalities and purposes, with multiple answers allowed. This ranks travel destinations; the jewelry is selected by us.`,`${tourismRanking.year}年の訪日客の訪問率順。全目的・全国籍地域・複数回答の調査です。商品の人気順位ではありません。`)} <a href={tourismRanking.sourceUrl!} target="_blank" rel="noopener noreferrer">{tourismRanking.sourceTitle[locale]}<span class="sr-only">{t(locale,' (opens in a new tab)','（新しいタブで開く）')}</span> ↗</a></p>}
+ {groups.filter(group=>group.rows.length>0).map(group=><div class="region-selection-group" data-region-group={group.kind}>
+  {group.title&&<h3 class="region-group-title">{group.title}</h3>}
+  <div class="region-selection-rows">{group.rows.map(({region,note,local,representative,rank,image},index)=>{
+   const regionalUrl=pagePath(`places/${contentSlug(note)}/`,locale);
+   const productUrl=pagePath(`objects/${representative.slug}/`,locale);
+   const crafts=[...new Set(local.flatMap(product=>product.craftIds))];
+   return <article class="region-selection-row" data-region-row={region.id} data-tourism-rank={rank?.rank} data-region-product-count={local.length}>
+    <div class="region-selection-copy">
+     <div class="region-selection-kicker"><span>{rank?String(rank.rank).padStart(2,'0'):t(locale,'DISCOVER','DISCOVER')}</span><span>{t(locale,'JAPAN / REGIONAL SELECTION','日本の工芸ジュエリー')}</span></div>
+     <h3><a href={regionalUrl} data-region-link>{region.name}<span aria-hidden="true">↗</span></a></h3>
+     <p class="region-selection-crafts">{labels('crafts',crafts,locale)}</p>
+     <p class="region-selection-description">{note.data.description}</p>
+     <a class="region-selection-explore" href={regionalUrl}>{t(locale,`Explore ${local.length} ${local.length===1?'piece':'pieces'}`,`この産地の${local.length}点を見る`)}<span aria-hidden="true">→</span></a>
+     {rank&&<p class="region-visit-rate">{t(locale,`${tourismRanking.year} visit rate: ${rank.visitRatePercent.toFixed(1)}%`,`${tourismRanking.year}年 訪問率 ${rank.visitRatePercent.toFixed(1)}%`)}</p>}
+    </div>
+    <div class="region-selection-piece" data-representative-product={representative.id}>
+     <a class="region-selection-image-link" href={productUrl} aria-label={t(locale,`View ${representative.title}`,`${representative.title}を見る`)}>{image?<EditorialImage image={image} locale={locale}/>:<Pattern variant={index} locale={locale}/>}</a>
+     <div class="region-selection-piece-caption"><div><p class="eyebrow">{t(locale,'A PIECE TO DISCOVER','この産地から、ひとつ')}</p><h4><a href={productUrl}>{representative.title}</a></h4></div><p class="region-piece-price">{price(representative,locale)}<span>{t(locale,'View the piece','商品を見る')} →</span></p></div>
+    </div>
+   </article>
+  })}</div>
+ </div>)}
+</section>
+<style>
+ .region-selector{scroll-margin-top:24px}
+ .region-selector-heading{align-items:end}
+ .region-selector-heading h2{max-width:820px;text-wrap:balance}
+ .region-selector-intro{max-width:760px;font-size:14px;color:var(--muted);line-height:1.9;margin-bottom:18px}
+ .region-ranking-note{font-size:11px;line-height:1.9;color:var(--muted);max-width:880px;margin:0 0 30px}
+ .region-ranking-note a{white-space:normal}
+ .region-selection-group+.region-selection-group{margin-top:58px}
+ .region-group-title{font-size:23px;letter-spacing:0;line-height:1.5;margin:27px 0 22px}
+ .region-selection-rows{border-top:1px solid var(--line)}
+ .region-selection-row{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:7%;padding:36px 0;border-bottom:1px solid var(--line);align-items:center;min-width:0}
+ .region-selection-copy,.region-selection-piece{min-width:0}
+ .region-selection-kicker{display:flex;align-items:center;gap:18px;margin-bottom:19px}
+ .region-selection-kicker>span:first-child{font:italic 28px/1 var(--serif);color:var(--accent)}
+ .region-selection-kicker>span:last-child{font-size:9px;letter-spacing:1.5px;color:var(--muted)}
+ .region-selection-copy h3{font-size:clamp(38px,4vw,60px);line-height:1.25;letter-spacing:-1px;margin-bottom:18px}
+ .region-selection-copy h3 a{text-decoration:none;display:inline-flex;align-items:center;gap:24px}
+ .region-selection-copy h3 a:hover{color:var(--accent)}
+ .region-selection-copy h3 span{font:24px/1 var(--sans);color:var(--accent)}
+ .region-selection-crafts{font-size:11px;letter-spacing:.6px;color:var(--accent);margin:0 0 15px;line-height:1.8}
+ .region-selection-description{font-size:13px;line-height:1.9;max-width:360px;color:var(--muted);margin-bottom:22px}
+ .region-selection-explore{display:inline-flex;gap:35px;align-items:center;min-height:44px;font-size:12px;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:5px}
+ .region-selection-explore:hover{color:var(--accent);border-color:var(--accent)}
+ .region-visit-rate{font-size:10px;line-height:1.7;color:var(--muted);margin:18px 0 0}
+ .region-selection-image-link{display:block;text-decoration:none}
+ .region-selection-image-link :global(.editorial-image),.region-selection-image-link :global(.pattern-study){margin:0}
+ .region-selection-image-link :global(.editorial-image img){aspect-ratio:1.75;object-position:58% 43%;transition:transform .25s}
+ @media(min-width:721px){.region-selection-image-link :global(.editorial-image[data-preserve-ratio] img){aspect-ratio:1.5;object-position:center}}
+ .region-selection-image-link:hover :global(.editorial-image img){transform:scale(1.015)}
+ .region-selection-image-link :global(.editorial-image figcaption){font-size:10px;padding:8px 12px}
+ .region-selection-image-link :global(.pattern-art){aspect-ratio:1.75}
+ .region-selection-piece-caption{display:flex;justify-content:space-between;gap:20px;padding-top:15px;align-items:start}
+ .region-selection-piece-caption .eyebrow{font-size:9px;letter-spacing:1.2px;margin-bottom:7px;color:var(--muted)}
+ .region-selection-piece-caption h4{font:400 19px/1.5 var(--serif);margin:0;overflow-wrap:anywhere}
+ .region-selection-piece-caption h4 a{text-decoration:none}
+ .region-selection-piece-caption h4 a:hover{text-decoration:underline}
+ .region-piece-price{flex:none;font-size:13px;line-height:1.7;text-align:right;margin:3px 0 0;white-space:nowrap}
+ .region-piece-price span{display:block;font-size:10px;color:var(--muted);margin-top:6px}
+ @media(max-width:900px){.region-selection-row{gap:5%;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}.region-selection-piece-caption{display:block}.region-piece-price{text-align:left;margin-top:9px}.region-piece-price span{display:inline;margin:0 0 0 16px}}
+ @media(max-width:720px){
+  .region-selector-heading{display:block}.region-selector-heading>.text-link{margin-top:20px}
+  .region-selector-intro{font-size:12px;margin-bottom:16px}.region-ranking-note{font-size:10px;margin-bottom:23px}
+  .region-group-title{font-size:20px;margin-block:23px 18px}
+  .region-selection-row{grid-template-columns:minmax(0,.73fr) minmax(0,1.27fr);gap:17px;padding-block:25px;align-items:start}
+  .region-selection-kicker{display:block;margin-bottom:13px}.region-selection-kicker>span:first-child{font-size:24px}.region-selection-kicker>span:last-child{display:block;font-size:7px;letter-spacing:.65px;margin-top:9px}
+  .region-selection-copy h3{font-size:clamp(21px,6vw,28px);letter-spacing:-.3px;margin-bottom:11px;overflow-wrap:normal;word-break:normal}.region-selection-copy h3 a{gap:0}.region-selection-copy h3 span{display:none}
+  .region-selection-crafts{font-size:10px;letter-spacing:0;margin-bottom:10px}.region-selection-description{font-size:11px;line-height:1.8;margin-bottom:12px}
+  .region-selection-explore{font-size:10px;line-height:1.6;gap:12px;min-height:44px}.region-visit-rate{font-size:9px;line-height:1.7;margin-top:12px}
+  .region-selection-image-link :global(.editorial-image img){aspect-ratio:.86;object-position:85% 46%}
+  .region-selection-image-link :global(.editorial-image[data-preserve-ratio] img){object-position:50% 46%}
+  .region-selection-image-link :global(.pattern-art){aspect-ratio:.86}
+  .region-selection-image-link :global(.editorial-image figcaption){font-size:9px;padding:7px 8px}
+  .region-selection-piece-caption{padding-top:10px}.region-selection-piece-caption .eyebrow{font-size:7px;letter-spacing:.7px;margin-bottom:5px}.region-selection-piece-caption h4{font-size:14px;line-height:1.55}
+  .region-piece-price{font-size:11px;margin-top:8px;white-space:normal}.region-piece-price span{display:block;font-size:9px;margin:2px 0 0}
+  .region-selection-group+.region-selection-group{margin-top:36px}
+ }
+ @media(max-width:360px){.region-selection-row{gap:13px;grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr)}.region-selection-copy h3{font-size:21px}.region-selection-kicker>span:last-child{font-size:6.5px}.region-selection-description{font-size:10px}.region-selection-explore{font-size:9px;gap:7px}.region-selection-piece-caption h4{font-size:13px}}
+ @media(prefers-reduced-motion:reduce){.region-selection-image-link :global(.editorial-image img){transition:none}}
+</style>

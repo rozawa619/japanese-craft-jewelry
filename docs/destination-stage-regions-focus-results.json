@@ -1,0 +1,3685 @@
+{
+  "checkedAt": "2026-11-16T12:08:05.695Z",
+  "origin": "http://127.0.0.1:4321",
+  "base": "/japanese-craft-jewelry/",
+  "mode": "focused crop and layout recheck",
+  "method": "Focused fresh-Chrome layout recheck after CSS polish: EN/JA home/selection/regions at1440/390/320, independent source ranking, complete representative-image decoding, natural aspect ratio for preserveRatio desktop images, unsplit short region names, left/right placement, overflow and accessibility. Six regional row crops per language/viewport support manual visual review. Does not repeat the earlier full region/product click roundtrips or navigate to external sites.",
+  "research": {
+    "year": 2025,
+    "table": "表6-1 国籍・地域（21区分）別 都道府県別訪問率",
+    "source": "https://www.mlit.go.jp/kankocho/content/002025515.xls",
+    "checkedAt": "2026-11-16"
+  },
+  "checks": [
+    {
+      "name": "desktop en home shows the sourced ranked regional selection",
+      "status": "passed",
+      "detail": {
+        "rows": [
+          {
+            "prefectureId": "tokyo",
+            "rank": 1,
+            "displayPercent": "50.8",
+            "productId": "rinzen-seika-amber-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "osaka",
+            "rank": 2,
+            "displayPercent": "41.3",
+            "productId": "senshu-pearl-stud-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "chiba",
+            "rank": 3,
+            "displayPercent": "35.1",
+            "productId": "arcos-cosmic-spiral-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 474.828125,
+              "objectFit": "cover",
+              "objectPosition": "50% 50%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kyoto",
+            "rank": 4,
+            "displayPercent": "29.7",
+            "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "fukuoka",
+            "rank": 5,
+            "displayPercent": "11.0",
+            "productId": "cocoon-ori-nonhole-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kanagawa",
+            "rank": 6,
+            "displayPercent": "9.3",
+            "productId": "hamamatsuya-catch-pierced",
+            "count": 4,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "nara",
+            "rank": 7,
+            "displayPercent": "9.0",
+            "productId": "sugimura-hosoge-raden-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 474.828125,
+              "objectFit": "cover",
+              "objectPosition": "50% 50%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "yamanashi",
+            "rank": 8,
+            "displayPercent": "8.1",
+            "productId": "simprich-crystal-bubble-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "hokkaido",
+            "rank": 9,
+            "displayPercent": "7.3",
+            "productId": "yukieglass-mint-veil-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "aichi",
+            "rank": 10,
+            "displayPercent": "6.9",
+            "productId": "kato-suke-drop-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          }
+        ],
+        "additional": [
+          "ishikawa",
+          "saga"
+        ],
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeViolations": 0
+      }
+    },
+    {
+      "name": "desktop en selection shows the sourced ranked regional selection",
+      "status": "passed",
+      "detail": {
+        "rows": [
+          {
+            "prefectureId": "tokyo",
+            "rank": 1,
+            "displayPercent": "50.8",
+            "productId": "rinzen-seika-amber-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "osaka",
+            "rank": 2,
+            "displayPercent": "41.3",
+            "productId": "senshu-pearl-stud-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "chiba",
+            "rank": 3,
+            "displayPercent": "35.1",
+            "productId": "arcos-cosmic-spiral-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 474.828125,
+              "objectFit": "cover",
+              "objectPosition": "50% 50%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kyoto",
+            "rank": 4,
+            "displayPercent": "29.7",
+            "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "fukuoka",
+            "rank": 5,
+            "displayPercent": "11.0",
+            "productId": "cocoon-ori-nonhole-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kanagawa",
+            "rank": 6,
+            "displayPercent": "9.3",
+            "productId": "hamamatsuya-catch-pierced",
+            "count": 4,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "nara",
+            "rank": 7,
+            "displayPercent": "9.0",
+            "productId": "sugimura-hosoge-raden-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 474.828125,
+              "objectFit": "cover",
+              "objectPosition": "50% 50%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "yamanashi",
+            "rank": 8,
+            "displayPercent": "8.1",
+            "productId": "simprich-crystal-bubble-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "hokkaido",
+            "rank": 9,
+            "displayPercent": "7.3",
+            "productId": "yukieglass-mint-veil-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "aichi",
+            "rank": 10,
+            "displayPercent": "6.9",
+            "productId": "kato-suke-drop-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          }
+        ],
+        "additional": [
+          "ishikawa",
+          "saga"
+        ],
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeViolations": 0
+      }
+    },
+    {
+      "name": "desktop en regions shows the sourced ranked regional selection",
+      "status": "passed",
+      "detail": {
+        "rows": [
+          {
+            "prefectureId": "tokyo",
+            "rank": 1,
+            "displayPercent": "50.8",
+            "productId": "rinzen-seika-amber-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "osaka",
+            "rank": 2,
+            "displayPercent": "41.3",
+            "productId": "senshu-pearl-stud-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "chiba",
+            "rank": 3,
+            "displayPercent": "35.1",
+            "productId": "arcos-cosmic-spiral-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 474.828125,
+              "objectFit": "cover",
+              "objectPosition": "50% 50%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kyoto",
+            "rank": 4,
+            "displayPercent": "29.7",
+            "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "fukuoka",
+            "rank": 5,
+            "displayPercent": "11.0",
+            "productId": "cocoon-ori-nonhole-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kanagawa",
+            "rank": 6,
+            "displayPercent": "9.3",
+            "productId": "hamamatsuya-catch-pierced",
+            "count": 4,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "nara",
+            "rank": 7,
+            "displayPercent": "9.0",
+            "productId": "sugimura-hosoge-raden-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 474.828125,
+              "objectFit": "cover",
+              "objectPosition": "50% 50%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "yamanashi",
+            "rank": 8,
+            "displayPercent": "8.1",
+            "productId": "simprich-crystal-bubble-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "hokkaido",
+            "rank": 9,
+            "displayPercent": "7.3",
+            "productId": "yukieglass-mint-veil-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "aichi",
+            "rank": 10,
+            "displayPercent": "6.9",
+            "productId": "kato-suke-drop-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          }
+        ],
+        "additional": [
+          "ishikawa",
+          "saga"
+        ],
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeViolations": 0
+      }
+    },
+    {
+      "name": "desktop ja home shows the sourced ranked regional selection",
+      "status": "passed",
+      "detail": {
+        "rows": [
+          {
+            "prefectureId": "tokyo",
+            "rank": 1,
+            "displayPercent": "50.8",
+            "productId": "rinzen-seika-amber-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "osaka",
+            "rank": 2,
+            "displayPercent": "41.3",
+            "productId": "senshu-pearl-stud-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "chiba",
+            "rank": 3,
+            "displayPercent": "35.1",
+            "productId": "arcos-cosmic-spiral-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 474.828125,
+              "objectFit": "cover",
+              "objectPosition": "50% 50%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kyoto",
+            "rank": 4,
+            "displayPercent": "29.7",
+            "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "fukuoka",
+            "rank": 5,
+            "displayPercent": "11.0",
+            "productId": "cocoon-ori-nonhole-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kanagawa",
+            "rank": 6,
+            "displayPercent": "9.3",
+            "productId": "hamamatsuya-catch-pierced",
+            "count": 4,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "nara",
+            "rank": 7,
+            "displayPercent": "9.0",
+            "productId": "sugimura-hosoge-raden-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 474.828125,
+              "objectFit": "cover",
+              "objectPosition": "50% 50%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "yamanashi",
+            "rank": 8,
+            "displayPercent": "8.1",
+            "productId": "simprich-crystal-bubble-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "hokkaido",
+            "rank": 9,
+            "displayPercent": "7.3",
+            "productId": "yukieglass-mint-veil-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "aichi",
+            "rank": 10,
+            "displayPercent": "6.9",
+            "productId": "kato-suke-drop-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          }
+        ],
+        "additional": [
+          "ishikawa",
+          "saga"
+        ],
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeViolations": 0
+      }
+    },
+    {
+      "name": "desktop ja selection shows the sourced ranked regional selection",
+      "status": "passed",
+      "detail": {
+        "rows": [
+          {
+            "prefectureId": "tokyo",
+            "rank": 1,
+            "displayPercent": "50.8",
+            "productId": "rinzen-seika-amber-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "osaka",
+            "rank": 2,
+            "displayPercent": "41.3",
+            "productId": "senshu-pearl-stud-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "chiba",
+            "rank": 3,
+            "displayPercent": "35.1",
+            "productId": "arcos-cosmic-spiral-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 474.828125,
+              "objectFit": "cover",
+              "objectPosition": "50% 50%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kyoto",
+            "rank": 4,
+            "displayPercent": "29.7",
+            "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "fukuoka",
+            "rank": 5,
+            "displayPercent": "11.0",
+            "productId": "cocoon-ori-nonhole-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kanagawa",
+            "rank": 6,
+            "displayPercent": "9.3",
+            "productId": "hamamatsuya-catch-pierced",
+            "count": 4,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "nara",
+            "rank": 7,
+            "displayPercent": "9.0",
+            "productId": "sugimura-hosoge-raden-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 474.828125,
+              "objectFit": "cover",
+              "objectPosition": "50% 50%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "yamanashi",
+            "rank": 8,
+            "displayPercent": "8.1",
+            "productId": "simprich-crystal-bubble-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "hokkaido",
+            "rank": 9,
+            "displayPercent": "7.3",
+            "productId": "yukieglass-mint-veil-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "aichi",
+            "rank": 10,
+            "displayPercent": "6.9",
+            "productId": "kato-suke-drop-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          }
+        ],
+        "additional": [
+          "ishikawa",
+          "saga"
+        ],
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeViolations": 0
+      }
+    },
+    {
+      "name": "desktop ja regions shows the sourced ranked regional selection",
+      "status": "passed",
+      "detail": {
+        "rows": [
+          {
+            "prefectureId": "tokyo",
+            "rank": 1,
+            "displayPercent": "50.8",
+            "productId": "rinzen-seika-amber-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "osaka",
+            "rank": 2,
+            "displayPercent": "41.3",
+            "productId": "senshu-pearl-stud-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "chiba",
+            "rank": 3,
+            "displayPercent": "35.1",
+            "productId": "arcos-cosmic-spiral-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 474.828125,
+              "objectFit": "cover",
+              "objectPosition": "50% 50%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kyoto",
+            "rank": 4,
+            "displayPercent": "29.7",
+            "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "fukuoka",
+            "rank": 5,
+            "displayPercent": "11.0",
+            "productId": "cocoon-ori-nonhole-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kanagawa",
+            "rank": 6,
+            "displayPercent": "9.3",
+            "productId": "hamamatsuya-catch-pierced",
+            "count": 4,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "nara",
+            "rank": 7,
+            "displayPercent": "9.0",
+            "productId": "sugimura-hosoge-raden-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 474.828125,
+              "objectFit": "cover",
+              "objectPosition": "50% 50%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "yamanashi",
+            "rank": 8,
+            "displayPercent": "8.1",
+            "productId": "simprich-crystal-bubble-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "hokkaido",
+            "rank": 9,
+            "displayPercent": "7.3",
+            "productId": "yukieglass-mint-veil-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "aichi",
+            "rank": 10,
+            "displayPercent": "6.9",
+            "productId": "kato-suke-drop-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 712.25,
+              "height": 407,
+              "objectFit": "cover",
+              "objectPosition": "58% 43%"
+            },
+            "regionNameLines": 1
+          }
+        ],
+        "additional": [
+          "ishikawa",
+          "saga"
+        ],
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeViolations": 0
+      }
+    },
+    {
+      "name": "mobile en home shows the sourced ranked regional selection",
+      "status": "passed",
+      "detail": {
+        "rows": [
+          {
+            "prefectureId": "tokyo",
+            "rank": 1,
+            "displayPercent": "50.8",
+            "productId": "rinzen-seika-amber-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "osaka",
+            "rank": 2,
+            "displayPercent": "41.3",
+            "productId": "senshu-pearl-stud-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "chiba",
+            "rank": 3,
+            "displayPercent": "35.1",
+            "productId": "arcos-cosmic-spiral-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kyoto",
+            "rank": 4,
+            "displayPercent": "29.7",
+            "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "fukuoka",
+            "rank": 5,
+            "displayPercent": "11.0",
+            "productId": "cocoon-ori-nonhole-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kanagawa",
+            "rank": 6,
+            "displayPercent": "9.3",
+            "productId": "hamamatsuya-catch-pierced",
+            "count": 4,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "nara",
+            "rank": 7,
+            "displayPercent": "9.0",
+            "productId": "sugimura-hosoge-raden-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "yamanashi",
+            "rank": 8,
+            "displayPercent": "8.1",
+            "productId": "simprich-crystal-bubble-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "hokkaido",
+            "rank": 9,
+            "displayPercent": "7.3",
+            "productId": "yukieglass-mint-veil-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "aichi",
+            "rank": 10,
+            "displayPercent": "6.9",
+            "productId": "kato-suke-drop-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          }
+        ],
+        "additional": [
+          "ishikawa",
+          "saga"
+        ],
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeViolations": 0
+      }
+    },
+    {
+      "name": "mobile en selection shows the sourced ranked regional selection",
+      "status": "passed",
+      "detail": {
+        "rows": [
+          {
+            "prefectureId": "tokyo",
+            "rank": 1,
+            "displayPercent": "50.8",
+            "productId": "rinzen-seika-amber-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "osaka",
+            "rank": 2,
+            "displayPercent": "41.3",
+            "productId": "senshu-pearl-stud-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "chiba",
+            "rank": 3,
+            "displayPercent": "35.1",
+            "productId": "arcos-cosmic-spiral-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kyoto",
+            "rank": 4,
+            "displayPercent": "29.7",
+            "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "fukuoka",
+            "rank": 5,
+            "displayPercent": "11.0",
+            "productId": "cocoon-ori-nonhole-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kanagawa",
+            "rank": 6,
+            "displayPercent": "9.3",
+            "productId": "hamamatsuya-catch-pierced",
+            "count": 4,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "nara",
+            "rank": 7,
+            "displayPercent": "9.0",
+            "productId": "sugimura-hosoge-raden-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "yamanashi",
+            "rank": 8,
+            "displayPercent": "8.1",
+            "productId": "simprich-crystal-bubble-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "hokkaido",
+            "rank": 9,
+            "displayPercent": "7.3",
+            "productId": "yukieglass-mint-veil-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "aichi",
+            "rank": 10,
+            "displayPercent": "6.9",
+            "productId": "kato-suke-drop-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          }
+        ],
+        "additional": [
+          "ishikawa",
+          "saga"
+        ],
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeViolations": 0
+      }
+    },
+    {
+      "name": "mobile en regions shows the sourced ranked regional selection",
+      "status": "passed",
+      "detail": {
+        "rows": [
+          {
+            "prefectureId": "tokyo",
+            "rank": 1,
+            "displayPercent": "50.8",
+            "productId": "rinzen-seika-amber-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "osaka",
+            "rank": 2,
+            "displayPercent": "41.3",
+            "productId": "senshu-pearl-stud-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "chiba",
+            "rank": 3,
+            "displayPercent": "35.1",
+            "productId": "arcos-cosmic-spiral-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kyoto",
+            "rank": 4,
+            "displayPercent": "29.7",
+            "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "fukuoka",
+            "rank": 5,
+            "displayPercent": "11.0",
+            "productId": "cocoon-ori-nonhole-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kanagawa",
+            "rank": 6,
+            "displayPercent": "9.3",
+            "productId": "hamamatsuya-catch-pierced",
+            "count": 4,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "nara",
+            "rank": 7,
+            "displayPercent": "9.0",
+            "productId": "sugimura-hosoge-raden-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "yamanashi",
+            "rank": 8,
+            "displayPercent": "8.1",
+            "productId": "simprich-crystal-bubble-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "hokkaido",
+            "rank": 9,
+            "displayPercent": "7.3",
+            "productId": "yukieglass-mint-veil-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "aichi",
+            "rank": 10,
+            "displayPercent": "6.9",
+            "productId": "kato-suke-drop-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          }
+        ],
+        "additional": [
+          "ishikawa",
+          "saga"
+        ],
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeViolations": 0
+      }
+    },
+    {
+      "name": "mobile ja home shows the sourced ranked regional selection",
+      "status": "passed",
+      "detail": {
+        "rows": [
+          {
+            "prefectureId": "tokyo",
+            "rank": 1,
+            "displayPercent": "50.8",
+            "productId": "rinzen-seika-amber-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "osaka",
+            "rank": 2,
+            "displayPercent": "41.3",
+            "productId": "senshu-pearl-stud-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "chiba",
+            "rank": 3,
+            "displayPercent": "35.1",
+            "productId": "arcos-cosmic-spiral-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kyoto",
+            "rank": 4,
+            "displayPercent": "29.7",
+            "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "fukuoka",
+            "rank": 5,
+            "displayPercent": "11.0",
+            "productId": "cocoon-ori-nonhole-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kanagawa",
+            "rank": 6,
+            "displayPercent": "9.3",
+            "productId": "hamamatsuya-catch-pierced",
+            "count": 4,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "nara",
+            "rank": 7,
+            "displayPercent": "9.0",
+            "productId": "sugimura-hosoge-raden-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "yamanashi",
+            "rank": 8,
+            "displayPercent": "8.1",
+            "productId": "simprich-crystal-bubble-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "hokkaido",
+            "rank": 9,
+            "displayPercent": "7.3",
+            "productId": "yukieglass-mint-veil-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "aichi",
+            "rank": 10,
+            "displayPercent": "6.9",
+            "productId": "kato-suke-drop-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          }
+        ],
+        "additional": [
+          "ishikawa",
+          "saga"
+        ],
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeViolations": 0
+      }
+    },
+    {
+      "name": "mobile ja selection shows the sourced ranked regional selection",
+      "status": "passed",
+      "detail": {
+        "rows": [
+          {
+            "prefectureId": "tokyo",
+            "rank": 1,
+            "displayPercent": "50.8",
+            "productId": "rinzen-seika-amber-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "osaka",
+            "rank": 2,
+            "displayPercent": "41.3",
+            "productId": "senshu-pearl-stud-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "chiba",
+            "rank": 3,
+            "displayPercent": "35.1",
+            "productId": "arcos-cosmic-spiral-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kyoto",
+            "rank": 4,
+            "displayPercent": "29.7",
+            "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "fukuoka",
+            "rank": 5,
+            "displayPercent": "11.0",
+            "productId": "cocoon-ori-nonhole-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kanagawa",
+            "rank": 6,
+            "displayPercent": "9.3",
+            "productId": "hamamatsuya-catch-pierced",
+            "count": 4,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "nara",
+            "rank": 7,
+            "displayPercent": "9.0",
+            "productId": "sugimura-hosoge-raden-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "yamanashi",
+            "rank": 8,
+            "displayPercent": "8.1",
+            "productId": "simprich-crystal-bubble-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "hokkaido",
+            "rank": 9,
+            "displayPercent": "7.3",
+            "productId": "yukieglass-mint-veil-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "aichi",
+            "rank": 10,
+            "displayPercent": "6.9",
+            "productId": "kato-suke-drop-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          }
+        ],
+        "additional": [
+          "ishikawa",
+          "saga"
+        ],
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeViolations": 0
+      }
+    },
+    {
+      "name": "mobile ja regions shows the sourced ranked regional selection",
+      "status": "passed",
+      "detail": {
+        "rows": [
+          {
+            "prefectureId": "tokyo",
+            "rank": 1,
+            "displayPercent": "50.8",
+            "productId": "rinzen-seika-amber-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "osaka",
+            "rank": 2,
+            "displayPercent": "41.3",
+            "productId": "senshu-pearl-stud-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "chiba",
+            "rank": 3,
+            "displayPercent": "35.1",
+            "productId": "arcos-cosmic-spiral-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kyoto",
+            "rank": 4,
+            "displayPercent": "29.7",
+            "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "fukuoka",
+            "rank": 5,
+            "displayPercent": "11.0",
+            "productId": "cocoon-ori-nonhole-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kanagawa",
+            "rank": 6,
+            "displayPercent": "9.3",
+            "productId": "hamamatsuya-catch-pierced",
+            "count": 4,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "nara",
+            "rank": 7,
+            "displayPercent": "9.0",
+            "productId": "sugimura-hosoge-raden-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "yamanashi",
+            "rank": 8,
+            "displayPercent": "8.1",
+            "productId": "simprich-crystal-bubble-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "hokkaido",
+            "rank": 9,
+            "displayPercent": "7.3",
+            "productId": "yukieglass-mint-veil-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "aichi",
+            "rank": 10,
+            "displayPercent": "6.9",
+            "productId": "kato-suke-drop-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 209.46875,
+              "height": 243.5625,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          }
+        ],
+        "additional": [
+          "ishikawa",
+          "saga"
+        ],
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeViolations": 0
+      }
+    },
+    {
+      "name": "narrow en home shows the sourced ranked regional selection",
+      "status": "passed",
+      "detail": {
+        "rows": [
+          {
+            "prefectureId": "tokyo",
+            "rank": 1,
+            "displayPercent": "50.8",
+            "productId": "rinzen-seika-amber-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "osaka",
+            "rank": 2,
+            "displayPercent": "41.3",
+            "productId": "senshu-pearl-stud-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "chiba",
+            "rank": 3,
+            "displayPercent": "35.1",
+            "productId": "arcos-cosmic-spiral-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kyoto",
+            "rank": 4,
+            "displayPercent": "29.7",
+            "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "fukuoka",
+            "rank": 5,
+            "displayPercent": "11.0",
+            "productId": "cocoon-ori-nonhole-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kanagawa",
+            "rank": 6,
+            "displayPercent": "9.3",
+            "productId": "hamamatsuya-catch-pierced",
+            "count": 4,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "nara",
+            "rank": 7,
+            "displayPercent": "9.0",
+            "productId": "sugimura-hosoge-raden-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "yamanashi",
+            "rank": 8,
+            "displayPercent": "8.1",
+            "productId": "simprich-crystal-bubble-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "hokkaido",
+            "rank": 9,
+            "displayPercent": "7.3",
+            "productId": "yukieglass-mint-veil-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "aichi",
+            "rank": 10,
+            "displayPercent": "6.9",
+            "productId": "kato-suke-drop-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          }
+        ],
+        "additional": [
+          "ishikawa",
+          "saga"
+        ],
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeViolations": 0
+      }
+    },
+    {
+      "name": "narrow en selection shows the sourced ranked regional selection",
+      "status": "passed",
+      "detail": {
+        "rows": [
+          {
+            "prefectureId": "tokyo",
+            "rank": 1,
+            "displayPercent": "50.8",
+            "productId": "rinzen-seika-amber-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "osaka",
+            "rank": 2,
+            "displayPercent": "41.3",
+            "productId": "senshu-pearl-stud-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "chiba",
+            "rank": 3,
+            "displayPercent": "35.1",
+            "productId": "arcos-cosmic-spiral-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kyoto",
+            "rank": 4,
+            "displayPercent": "29.7",
+            "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "fukuoka",
+            "rank": 5,
+            "displayPercent": "11.0",
+            "productId": "cocoon-ori-nonhole-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kanagawa",
+            "rank": 6,
+            "displayPercent": "9.3",
+            "productId": "hamamatsuya-catch-pierced",
+            "count": 4,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "nara",
+            "rank": 7,
+            "displayPercent": "9.0",
+            "productId": "sugimura-hosoge-raden-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "yamanashi",
+            "rank": 8,
+            "displayPercent": "8.1",
+            "productId": "simprich-crystal-bubble-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "hokkaido",
+            "rank": 9,
+            "displayPercent": "7.3",
+            "productId": "yukieglass-mint-veil-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "aichi",
+            "rank": 10,
+            "displayPercent": "6.9",
+            "productId": "kato-suke-drop-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          }
+        ],
+        "additional": [
+          "ishikawa",
+          "saga"
+        ],
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeViolations": 0
+      }
+    },
+    {
+      "name": "narrow en regions shows the sourced ranked regional selection",
+      "status": "passed",
+      "detail": {
+        "rows": [
+          {
+            "prefectureId": "tokyo",
+            "rank": 1,
+            "displayPercent": "50.8",
+            "productId": "rinzen-seika-amber-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "osaka",
+            "rank": 2,
+            "displayPercent": "41.3",
+            "productId": "senshu-pearl-stud-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "chiba",
+            "rank": 3,
+            "displayPercent": "35.1",
+            "productId": "arcos-cosmic-spiral-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kyoto",
+            "rank": 4,
+            "displayPercent": "29.7",
+            "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "fukuoka",
+            "rank": 5,
+            "displayPercent": "11.0",
+            "productId": "cocoon-ori-nonhole-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kanagawa",
+            "rank": 6,
+            "displayPercent": "9.3",
+            "productId": "hamamatsuya-catch-pierced",
+            "count": 4,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "nara",
+            "rank": 7,
+            "displayPercent": "9.0",
+            "productId": "sugimura-hosoge-raden-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "yamanashi",
+            "rank": 8,
+            "displayPercent": "8.1",
+            "productId": "simprich-crystal-bubble-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "hokkaido",
+            "rank": 9,
+            "displayPercent": "7.3",
+            "productId": "yukieglass-mint-veil-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "aichi",
+            "rank": 10,
+            "displayPercent": "6.9",
+            "productId": "kato-suke-drop-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          }
+        ],
+        "additional": [
+          "ishikawa",
+          "saga"
+        ],
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeViolations": 0
+      }
+    },
+    {
+      "name": "narrow ja home shows the sourced ranked regional selection",
+      "status": "passed",
+      "detail": {
+        "rows": [
+          {
+            "prefectureId": "tokyo",
+            "rank": 1,
+            "displayPercent": "50.8",
+            "productId": "rinzen-seika-amber-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "osaka",
+            "rank": 2,
+            "displayPercent": "41.3",
+            "productId": "senshu-pearl-stud-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "chiba",
+            "rank": 3,
+            "displayPercent": "35.1",
+            "productId": "arcos-cosmic-spiral-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kyoto",
+            "rank": 4,
+            "displayPercent": "29.7",
+            "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "fukuoka",
+            "rank": 5,
+            "displayPercent": "11.0",
+            "productId": "cocoon-ori-nonhole-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kanagawa",
+            "rank": 6,
+            "displayPercent": "9.3",
+            "productId": "hamamatsuya-catch-pierced",
+            "count": 4,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "nara",
+            "rank": 7,
+            "displayPercent": "9.0",
+            "productId": "sugimura-hosoge-raden-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "yamanashi",
+            "rank": 8,
+            "displayPercent": "8.1",
+            "productId": "simprich-crystal-bubble-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "hokkaido",
+            "rank": 9,
+            "displayPercent": "7.3",
+            "productId": "yukieglass-mint-veil-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "aichi",
+            "rank": 10,
+            "displayPercent": "6.9",
+            "productId": "kato-suke-drop-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          }
+        ],
+        "additional": [
+          "ishikawa",
+          "saga"
+        ],
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeViolations": 0
+      }
+    },
+    {
+      "name": "narrow ja selection shows the sourced ranked regional selection",
+      "status": "passed",
+      "detail": {
+        "rows": [
+          {
+            "prefectureId": "tokyo",
+            "rank": 1,
+            "displayPercent": "50.8",
+            "productId": "rinzen-seika-amber-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "osaka",
+            "rank": 2,
+            "displayPercent": "41.3",
+            "productId": "senshu-pearl-stud-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "chiba",
+            "rank": 3,
+            "displayPercent": "35.1",
+            "productId": "arcos-cosmic-spiral-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kyoto",
+            "rank": 4,
+            "displayPercent": "29.7",
+            "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "fukuoka",
+            "rank": 5,
+            "displayPercent": "11.0",
+            "productId": "cocoon-ori-nonhole-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kanagawa",
+            "rank": 6,
+            "displayPercent": "9.3",
+            "productId": "hamamatsuya-catch-pierced",
+            "count": 4,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "nara",
+            "rank": 7,
+            "displayPercent": "9.0",
+            "productId": "sugimura-hosoge-raden-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "yamanashi",
+            "rank": 8,
+            "displayPercent": "8.1",
+            "productId": "simprich-crystal-bubble-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "hokkaido",
+            "rank": 9,
+            "displayPercent": "7.3",
+            "productId": "yukieglass-mint-veil-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "aichi",
+            "rank": 10,
+            "displayPercent": "6.9",
+            "productId": "kato-suke-drop-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          }
+        ],
+        "additional": [
+          "ishikawa",
+          "saga"
+        ],
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeViolations": 0
+      }
+    },
+    {
+      "name": "narrow ja regions shows the sourced ranked regional selection",
+      "status": "passed",
+      "detail": {
+        "rows": [
+          {
+            "prefectureId": "tokyo",
+            "rank": 1,
+            "displayPercent": "50.8",
+            "productId": "rinzen-seika-amber-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "osaka",
+            "rank": 2,
+            "displayPercent": "41.3",
+            "productId": "senshu-pearl-stud-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "chiba",
+            "rank": 3,
+            "displayPercent": "35.1",
+            "productId": "arcos-cosmic-spiral-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kyoto",
+            "rank": 4,
+            "displayPercent": "29.7",
+            "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "fukuoka",
+            "rank": 5,
+            "displayPercent": "11.0",
+            "productId": "cocoon-ori-nonhole-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "kanagawa",
+            "rank": 6,
+            "displayPercent": "9.3",
+            "productId": "hamamatsuya-catch-pierced",
+            "count": 4,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "nara",
+            "rank": 7,
+            "displayPercent": "9.0",
+            "productId": "sugimura-hosoge-raden-pendant",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "50% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "yamanashi",
+            "rank": 8,
+            "displayPercent": "8.1",
+            "productId": "simprich-crystal-bubble-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "hokkaido",
+            "rank": 9,
+            "displayPercent": "7.3",
+            "productId": "yukieglass-mint-veil-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          },
+          {
+            "prefectureId": "aichi",
+            "rank": 10,
+            "displayPercent": "6.9",
+            "productId": "kato-suke-drop-pierced-earrings",
+            "count": 2,
+            "image": {
+              "width": 1536,
+              "height": 1024
+            },
+            "imageLayout": {
+              "width": 165.765625,
+              "height": 192.75,
+              "objectFit": "cover",
+              "objectPosition": "85% 46%"
+            },
+            "regionNameLines": 1
+          }
+        ],
+        "additional": [
+          "ishikawa",
+          "saga"
+        ],
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeViolations": 0
+      }
+    },
+    {
+      "name": "No uncaught client errors or browser console errors during regional navigation",
+      "status": "passed"
+    }
+  ],
+  "failures": [],
+  "screenshots": [
+    "artifacts/destination-regions-en-desktop-home.png",
+    "artifacts/destination-regions-focus-en-desktop-chiba.png",
+    "artifacts/destination-regions-focus-en-desktop-fukuoka.png",
+    "artifacts/destination-regions-focus-en-desktop-kanagawa.png",
+    "artifacts/destination-regions-focus-en-desktop-nara.png",
+    "artifacts/destination-regions-focus-en-desktop-yamanashi.png",
+    "artifacts/destination-regions-focus-en-desktop-hokkaido.png",
+    "artifacts/destination-regions-en-desktop-selection.png",
+    "artifacts/destination-regions-ja-desktop-home.png",
+    "artifacts/destination-regions-focus-ja-desktop-chiba.png",
+    "artifacts/destination-regions-focus-ja-desktop-fukuoka.png",
+    "artifacts/destination-regions-focus-ja-desktop-kanagawa.png",
+    "artifacts/destination-regions-focus-ja-desktop-nara.png",
+    "artifacts/destination-regions-focus-ja-desktop-yamanashi.png",
+    "artifacts/destination-regions-focus-ja-desktop-hokkaido.png",
+    "artifacts/destination-regions-ja-desktop-selection.png",
+    "artifacts/destination-regions-en-mobile-home.png",
+    "artifacts/destination-regions-focus-en-mobile-chiba.png",
+    "artifacts/destination-regions-focus-en-mobile-fukuoka.png",
+    "artifacts/destination-regions-focus-en-mobile-kanagawa.png",
+    "artifacts/destination-regions-focus-en-mobile-nara.png",
+    "artifacts/destination-regions-focus-en-mobile-yamanashi.png",
+    "artifacts/destination-regions-focus-en-mobile-hokkaido.png",
+    "artifacts/destination-regions-en-mobile-selection.png",
+    "artifacts/destination-regions-ja-mobile-home.png",
+    "artifacts/destination-regions-focus-ja-mobile-chiba.png",
+    "artifacts/destination-regions-focus-ja-mobile-fukuoka.png",
+    "artifacts/destination-regions-focus-ja-mobile-kanagawa.png",
+    "artifacts/destination-regions-focus-ja-mobile-nara.png",
+    "artifacts/destination-regions-focus-ja-mobile-yamanashi.png",
+    "artifacts/destination-regions-focus-ja-mobile-hokkaido.png",
+    "artifacts/destination-regions-ja-mobile-selection.png",
+    "artifacts/destination-regions-en-narrow-home.png",
+    "artifacts/destination-regions-focus-en-narrow-chiba.png",
+    "artifacts/destination-regions-focus-en-narrow-fukuoka.png",
+    "artifacts/destination-regions-focus-en-narrow-kanagawa.png",
+    "artifacts/destination-regions-focus-en-narrow-nara.png",
+    "artifacts/destination-regions-focus-en-narrow-yamanashi.png",
+    "artifacts/destination-regions-focus-en-narrow-hokkaido.png",
+    "artifacts/destination-regions-en-narrow-selection.png",
+    "artifacts/destination-regions-ja-narrow-home.png",
+    "artifacts/destination-regions-focus-ja-narrow-chiba.png",
+    "artifacts/destination-regions-focus-ja-narrow-fukuoka.png",
+    "artifacts/destination-regions-focus-ja-narrow-kanagawa.png",
+    "artifacts/destination-regions-focus-ja-narrow-nara.png",
+    "artifacts/destination-regions-focus-ja-narrow-yamanashi.png",
+    "artifacts/destination-regions-focus-ja-narrow-hokkaido.png",
+    "artifacts/destination-regions-ja-narrow-selection.png"
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "completedAt": "2026-11-16T12:09:02.233Z",
+  "finalizedAt": "2026-11-16T12:09:02.233Z",
+  "summary": {
+    "checks": 19,
+    "passed": 19,
+    "failed": 0,
+    "screenshots": 48,
+    "rankedRegions": 10,
+    "additionalRegions": 2,
+    "actualRegionAndRepresentativeRoundtrips": 0,
+    "pageErrors": 0,
+    "consoleErrors": 0
+  },
+  "manualReview": {
+    "reviewedAt": "2026-11-16T12:09:28.161Z",
+    "status": "resolved",
+    "findings": [
+      {
+        "id": "desktop-nara-pendant-crop",
+        "result": "The complete flower pendant is visible; desktop preserveRatio uses the complete1.5 composition.",
+        "screenshots": [
+          "artifacts/destination-regions-focus-en-desktop-nara.png"
+        ]
+      },
+      {
+        "id": "mobile-long-region-name-wrap",
+        "result": "Kanagawa and Yamanashi remain unbroken on390px and320px. Automated text-range checks confirm single-line region names in all18 focused screens.",
+        "screenshots": [
+          "artifacts/destination-regions-focus-en-mobile-kanagawa.png",
+          "artifacts/destination-regions-focus-en-narrow-kanagawa.png",
+          "artifacts/destination-regions-focus-en-narrow-yamanashi.png"
+        ]
+      },
+      {
+        "id": "mobile-right-earring-crop",
+        "result": "The complete Fukuoka and Hokkaido representative earrings remain inside the image on390px and320px. Nara pendant is also complete on the Japanese320px view.",
+        "screenshots": [
+          "artifacts/destination-regions-focus-en-mobile-fukuoka.png",
+          "artifacts/destination-regions-focus-en-mobile-hokkaido.png",
+          "artifacts/destination-regions-focus-en-narrow-fukuoka.png",
+          "artifacts/destination-regions-focus-en-narrow-hokkaido.png",
+          "artifacts/destination-regions-focus-ja-narrow-nara.png"
+        ]
+      }
+    ],
+    "fullpageScreenshotsRefreshed": 12,
+    "regionalRowScreenshots": 36,
+    "note": "The earlier destination-regions fullpage files were replaced with final-CSS captures; old visual findings are retained as historical observations in the first report and resolved by this focused result."
+  }
+}

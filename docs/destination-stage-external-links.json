@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-11-16T12:03:13.558Z",
+  "method": "134 HTTPSGET checks followed by a fresh headless Chrome review of all4 non-200 responses. No authenticated profile, challenge bypass, forms, messages or applications. Canonical source/product data was not changed.",
+  "total": 134,
+  "initialSummary": {
+    "reachable": 130,
+    "review_temporary_server_error": 2,
+    "review_access_restricted": 2
+  },
+  "notFoundOrGone": 0,
+  "followup": [
+    {
+      "url": "https://kougeihin.jp/en/craft/0610/",
+      "initialStatus": 503,
+      "initialClassification": "review_temporary_server_error",
+      "browserStatus": 503,
+      "finalUrl": "https://kougeihin.jp/en/craft/0610/",
+      "title": "伝統工芸 青山スクエア",
+      "classification": "browser_server_error",
+      "observedMessage": "The official page displays a temporary public suspension notice for security verification and inspection."
+    },
+    {
+      "url": "https://support.skimlinks.com/hc/en-us/articles/360014614557-Can-I-use-merchant-images",
+      "initialStatus": 403,
+      "initialClassification": "review_access_restricted",
+      "browserStatus": 403,
+      "finalUrl": "https://support.skimlinks.com/hc/en-us/articles/360014614557-Can-I-use-merchant-images",
+      "title": "しばらくお待ちください...",
+      "classification": "browser_access_restricted",
+      "observedMessage": "A Cloudflare browser security challenge prevents access to the article body; its existence or closure cannot be determined from this response."
+    },
+    {
+      "url": "https://support.skimlinks.com/hc/en-us/articles/360005286057-How-do-I-disclose-the-use-of-Skimlinks-on-my-site",
+      "initialStatus": 403,
+      "initialClassification": "review_access_restricted",
+      "browserStatus": 403,
+      "finalUrl": "https://support.skimlinks.com/hc/en-us/articles/360005286057-How-do-I-disclose-the-use-of-Skimlinks-on-my-site",
+      "title": "しばらくお待ちください...",
+      "classification": "browser_access_restricted",
+      "observedMessage": "A Cloudflare browser security challenge prevents access to the article body; its existence or closure cannot be determined from this response."
+    },
+    {
+      "url": "https://kanazawa.hakuichi.co.jp/news/detail.php?news_id=269",
+      "initialStatus": 503,
+      "initialClassification": "review_temporary_server_error",
+      "browserStatus": 503,
+      "finalUrl": "https://kanazawa.hakuichi.co.jp/news/detail.php?news_id=269",
+      "title": "ウェブサイト一時停止のお知らせ｜箔一",
+      "classification": "browser_server_error",
+      "observedMessage": "The official page displays a temporary suspension notice while addressing a server-side language security issue."
+    }
+  ],
+  "interpretation": "A200 response establishes reachability only;403 and server errors are unresolved access conditions, not proof of a closed or missing page. The reviewed server errors remain recorded without deleting the source."
+}

@@ -1,0 +1,93 @@
+{
+  "checkedAt": "2026-11-16",
+  "method": "Read official Nakajima product HTML and official BECOS Japanese/English product HTML directly when web tooling returned cache misses; read Nakajima official technique/store pages and Kyoto Meisan cooperative listing. BECOS English selected USD with ?currency=USD; visible variant prices and product meta priceCurrency USD were checked. Official photos were viewed only in internal ignored screenshots.",
+  "catalog": {
+    "prefectures": [],
+    "crafts": [
+      { "id": "kyo-zogan", "name": "Kyoto metal inlay", "description": "Kyoto-style inlay by Nakajima Zogan. The maker describes fine gold/silver inlay and dark finishing as its general process; the selected pendant’s exact component composition is not established.", "sourceIds": ["nakajima-technique-v9", "nakajima-cooperative-v9"] }
+    ],
+    "materials": [],
+    "productTypes": [],
+    "makers": [
+      { "id": "nakajima-zogan", "name": "Nakajima Zogan", "location": "Kyoto, Japan", "productionNote": "Kyoto-based maker of original handmade metal-inlay accessories, identified by its official process and Kyoto Meisan cooperative profile. Exact component materials of the selected pendant are not published in its product body.", "url": "https://www.nakajima-zougan.jp/", "sourceIds": ["nakajima-technique-v9", "nakajima-cooperative-v9", "nakajima-stores-v9"] }
+    ],
+    "merchants": [
+      { "id": "nakajima-zogan-official", "name": "Nakajima Zogan official", "url": "https://www.nakajima-zougan.jp/", "language": "Japanese product store; maker site also has English information", "shipping": { "status": "unknown", "summary": "Item and destination-specific shipping eligibility has not been verified.", "countries": null, "sourceIds": ["nakajima-pear-product-v9"] }, "returns": "Applicable item-specific terms have not been verified.", "sourceIds": ["nakajima-pear-product-v9", "nakajima-stores-v9"] }
+    ],
+    "products": [
+      {
+        "id": "nakajima-pear-sakura-pendant", "slug": "nakajima-pear-sakura-pendant", "locale": "en", "title": "Nakajima Zogan reversible sakura pear pendant", "originalTitle": "ペンダント ナシ型 桜・ラインドット(Mix)", "publishStatus": "published", "productType": ["necklace"], "prefectureIds": ["kyoto"], "craftIds": ["kyo-zogan"], "materialIds": [], "makerId": "nakajima-zogan",
+        "craftClassification": { "label": "Kyoto metal-inlay jewelry by Nakajima Zogan. General maker technique is confirmed; exact component materials and individual certification are not established.", "sourceIds": ["nakajima-pear-product-v9", "nakajima-technique-v9", "nakajima-cooperative-v9"] },
+        "size": "Pendant approximately24 ×31mm; chain470mm", "weightPerPieceGrams": null, "findings": null, "fastening": null,
+        "priceAmount": 16500, "priceCurrency": "JPY", "priceCheckedAt": "2026-11-16", "taxNote": "Tax-included price from the official Japanese store; not a converted price.", "availability": "listed", "merchantIds": ["nakajima-zogan-official"], "sourceIds": ["nakajima-pear-product-v9", "nakajima-technique-v9", "nakajima-cooperative-v9"], "lastVerifiedAt": "2026-11-16", "imageAssetIds": [],
+        "editorialSummary": "Sakura on one face, a geometric pattern on the other. A pear-shaped Kyoto inlay pendant that lets you change the motif with your outfit.", "whoItMaySuit": "For those who want a floral pendant with a second, more graphic face.", "whatToCheck": ["The handmade pattern placement may vary. Exact metal composition of the pendant and chain is not published in the reviewed product body."]
+      },
+      {
+        "id": "kato-suke-round-ring", "slug": "kato-suke-round-ring", "locale": "en", "title": "Kato Shippo SUKE round cloisonne ring", "originalTitle": "【リング】丸透 (Suke) 全6色 | 無線銀貼七宝", "publishStatus": "published", "productType": ["ring"], "prefectureIds": ["aichi"], "craftIds": ["owari-cloisonne"], "materialIds": ["silver", "copper", "enamel-glaze", "alloy"], "makerId": "kato-shippo",
+        "craftClassification": { "label": "Owari cloisonne jewelry with Aichi stated as origin. No individual traditional-craft certification is claimed.", "sourceIds": ["becos-kato-round-ring-en-v9", "becos-kato-round-ring-ja-v9", "kato-shippo-brand"] },
+        "size": "Listed W1.5 ×D1.5cm; adjustable ring size. This is not a fixed Japanese or US ring size.", "weightPerPieceGrams": null, "findings": "Ring fitting is plated alloy; silver, copper and glaze are also listed. Exact plating and component-by-component coverage are not specified.", "fastening": "Adjustable ring",
+        "priceAmount": 84, "priceCurrency": "USD", "priceCheckedAt": "2026-11-16", "taxNote": "USD price on the English BECOS storefront; tax inclusion is not established.", "availability": "listed", "merchantIds": ["becos-en", "becos-ja"], "sourceIds": ["becos-kato-round-ring-en-v9", "becos-kato-round-ring-ja-v9", "kato-shippo-brand"], "lastVerifiedAt": "2026-11-16", "imageAssetIds": [],
+        "editorialSummary": "A round surface of deep cloisonne color for the hand. Choose one of six colors as a compact statement beside a simple cuff or sleeve.", "whoItMaySuit": "For those who prefer a round color accent on the hand to a hanging earring.",
+        "whatToCheck": ["Six colors share this product listing; confirm the chosen color. The ring is adjustable and its fitting is plated alloy.", "The glassy surface needs protection from strong impact and heat. The listing’s zero weight field is not a meaningful measured weight."],
+        "localizedPrices": { "ja": { "amount": 7700, "currency": "JPY", "checkedAt": "2026-11-16", "taxNote": "日本語BECOSの税込表示価格。", "sourceIds": ["becos-kato-round-ring-ja-v9"] } }
+      }
+    ],
+    "links": [
+      { "id": "nakajima-pear-sakura-pendant-official", "productId": "nakajima-pear-sakura-pendant", "merchantId": "nakajima-zogan-official", "programId": null, "officialProductUrl": "https://www.nakajima-zougan.jp/ec-shop2/products/detail/1005", "affiliateUrl": null, "applicationStatus": "not_applied", "affiliateLinkVerifiedAt": null },
+      { "id": "kato-suke-round-ring-becos-en", "productId": "kato-suke-round-ring", "merchantId": "becos-en", "programId": "becos-en", "locale": "en", "officialProductUrl": "https://en.thebecos.com/products/s0087-044?currency=USD", "affiliateUrl": null, "applicationStatus": "not_applied", "affiliateLinkVerifiedAt": null },
+      { "id": "kato-suke-round-ring-becos-ja", "productId": "kato-suke-round-ring", "merchantId": "becos-ja", "programId": null, "locale": "ja", "officialProductUrl": "https://www.thebecos.com/products/s0087-044", "affiliateUrl": null, "applicationStatus": "not_applied", "affiliateLinkVerifiedAt": null }
+    ]
+  },
+  "translations": {
+    "products": {
+      "nakajima-pear-sakura-pendant": { "title": "中嶋象嵌 ナシ型 桜・ラインドット ペンダント", "editorialSummary": "表は桜、裏は幾何学模様。服や気分に合わせて柄を変えられる、京象嵌のナシ型ペンダント。", "whoItMaySuit": "花柄とすっきりした幾何学模様を、一つで楽しみたい方に。", "whatToCheck": ["手作りのため柄の配置には違いがあります。ペンダントとチェーンの詳しい金属組成は、確認した商品本文に記載がありません。"], "size": "ペンダント約24×31mm、チェーン470mm", "findings": null, "fastening": null, "taxNote": "公式日本語ストアの税込表示。", "craftClassificationLabel": "中嶋象嵌の京象嵌アクセサリー。作り手の一般的な技法は確認していますが、この商品の部品ごとの素材や個別認証は未確認です。" },
+      "kato-suke-round-ring": { "title": "加藤七宝 SUKE 丸透リング", "editorialSummary": "手元に丸い七宝の色をひとつ。深みのある6色から、服や気分に合わせて選ぶリング。", "whoItMaySuit": "揺れる耳飾りより、手元で丸い色のアクセントを楽しみたい方に。", "whatToCheck": ["6色を同じ商品ページで案内しています。リングは調整可能なフリーサイズで、リング部分はメッキを施した合金です。", "表面はガラス質のため、強い衝撃や熱を避けてください。商品表の重量0は実測値として扱っていません。"], "size": "掲載寸法W1.5×D1.5cm。リングは調整可能なフリーサイズで、固定の号数ではありません。", "findings": "リング部分はメッキを施した合金。ほかに銀・銅・釉薬が記載されています。メッキの種類や部品ごとの詳しい構成は未確認です。", "fastening": "調整可能なリング", "taxNote": "日本語BECOSの税込表示価格。", "craftClassificationLabel": "生産地は愛知県、技法は尾張七宝との商品表記。個別商品の伝統的工芸品認証は主張しません。" }
+    },
+    "prefectures": {},
+    "crafts": { "kyo-zogan": { "name": "京象嵌", "description": "中嶋象嵌による京都の金属象嵌。一般的な制作工程と、この商品の素材・認証を区別して紹介します。" } },
+    "materials": {}, "productTypes": {},
+    "makers": { "nakajima-zogan": { "name": "中嶋象嵌", "location": "京都府", "productionNote": "京都を拠点に、手作りのオリジナル象嵌アクセサリーを制作。紹介商品の部品ごとの素材は商品本文で確認できていません。" } },
+    "merchants": { "nakajima-zogan-official": { "name": "中嶋象嵌 公式", "language": "商品ストアは日本語。工房サイトには英語案内あり。", "shippingSummary": "商品・送付先別の配送条件は未確認です。", "returns": "この商品に適用される条件は未確認です。" } }
+  },
+  "stories": {
+    "nakajima-pear-sakura-pendant": {
+      "en": { "headline": "Sakura today. Geometry tomorrow.", "standfirst": "One pear-shaped pendant, two different patterns. Turn Nakajima Zogan’s inlay pendant to suit a floral mood or a more graphic outfit.", "highlights": ["Different patterns on the two faces", "A floral motif and a graphic alternative", "Kyoto inlay in a pendant silhouette"], "outfit": { "title": "Sakura with a navy dress", "body": "Try the floral face with a plain navy dress, then turn to the geometric face with a sharply collared shirt. Keep other necklaces out of the way so the motif remains visible." } },
+      "ja": { "headline": "今日は桜、明日は幾何学。", "standfirst": "ナシ型の中に、表と裏で違う模様。花の気分の日にも、すっきりした服の日にも合わせられる、中嶋象嵌のペンダントです。", "highlights": ["表裏で変えられる、二つの柄", "桜と幾何学を一つで楽しむ", "京都の象嵌を、胸元のアクセントに"], "outfit": { "title": "ネイビーのワンピース × 桜", "body": "無地のネイビーワンピースには桜の面を。襟のあるシャツの日は幾何学の面に返して。重ねづけを控え、模様をひとつ見せる装いを提案します。" } }
+    },
+    "kato-suke-round-ring": {
+      "en": { "headline": "A circle of color for your hand.", "standfirst": "A glossy round motif makes SUKE’s deep color the focus. Pick from six shades when you want a compact statement without a dangling shape.", "highlights": ["A round cloisonne motif", "Six colors in the same design", "An adjustable plated-alloy ring fitting"], "outfit": { "title": "Rolled cuff × one strong color", "body": "Roll back a plain shirt cuff and let the round color sit on its own. A single ring keeps the focus clear; the matching SUKE drops are another way to repeat the color." } },
+      "ja": { "headline": "手元に、まるい七宝の色。", "standfirst": "つやのある丸い面で、深い色を見せるSUKEのリング。揺れる形ではなく、手元に小さな主役を置きたい日に。", "highlights": ["色を面で楽しむ、丸い七宝", "同じデザインで選べる6色", "調整可能なメッキ合金のリング"], "outfit": { "title": "折り返した袖 × ひとつの色", "body": "無地のシャツの袖を折り返し、リングを一点。手元をすっきりまとめ、丸い色を見せる提案です。SUKEの雫ピアスと色をそろえる楽しみ方も。" } }
+    }
+  },
+  "notes": {
+    "nakajima-pear-sakura-pendant": {
+      "en": "This pendant offers a choice of motif within one piece: delicate sakura on one side and a geometric pattern on the other. The pear-shaped outline gives both patterns a shared frame, so turning it changes the mood without changing the size of the necklace.\n\nNakajima Zogan is a Kyoto maker whose general technique involves working fine metal into a prepared base and finishing the surface. The selected product’s exact metal and chain composition are not published in its reviewed description, so the maker’s process is not used as a substitute for a component list. Pattern placement can vary because the work is handmade.",
+      "ja": "一つのペンダントで、桜の繊細な模様と、すっきりした幾何学模様を選べるのが魅力です。ナシ型の輪郭は共通なので、ネックレスの大きさを変えずに、表裏で装いの印象を変えられます。\n\n中嶋象嵌は京都の作り手。公式では、地金に細かな溝を入れて金属を打ち込み、表面を仕上げる一般的な制作工程を紹介しています。ただし、その説明だけでこの商品の金属やチェーンの組成は断定していません。手作りのため、柄の配置には違いがあります。"
+    },
+    "kato-suke-round-ring": {
+      "en": "Choose the ring when you want SUKE’s color to sit on the hand rather than hang beside the face. Its round surface is a different silhouette from the collection’s drop earrings, while the six-color range gives you a way to coordinate or contrast them.\n\nThe product information identifies Aichi and Owari cloisonne, with silver, copper, glaze and alloy listed as materials. The adjustable ring fitting itself is plated alloy. Treat the glossy surface with care around strong impact and heat, and check the selected color rather than assuming the first photograph represents every variant.",
+      "ja": "SUKEの色を、耳元ではなく手元で楽しみたいときのリングです。同じシリーズの雫ピアスとは、丸い面という輪郭の違いで選べます。6色の中から服と色をそろえたり、差し色にしたりする提案です。\n\n商品情報の生産地は愛知県、技法は尾張七宝。素材として銀・銅・釉薬・合金が記載され、調整できるリング部分はメッキを施した合金と案内されています。表面はガラス質なので、強い衝撃や熱には注意を。掲載写真だけでなく、選択中の色を公式ページで確かめてください。"
+    }
+  },
+  "places": {},
+  "craftNotes": {
+    "kyo-zogan": { "sourceIds": ["nakajima-technique-v9", "nakajima-cooperative-v9"], "en": { "title": "Kyoto metal inlay jewelry", "description": "Explore the reversible pendant and inlay work of Kyoto’s Nakajima Zogan.", "body": "Nakajima Zogan’s official process introduces fine grooves cut into a metal base, inlaying metal to form a motif and finishing the surface. The selected pear-shaped pendant offers floral and geometric faces.\n\nCompare the design through the official product page. A general account of the maker’s process is not a certification or complete component list for every accessory." }, "ja": { "title": "京象嵌のジュエリー", "description": "京都・中嶋象嵌の、桜と幾何学模様を返して楽しむペンダントを。", "body": "中嶋象嵌の公式工程では、地金に細かい溝を入れ、金属を打ち込んで模様を作り、表面を仕上げる仕事を紹介しています。今回選んだナシ型ペンダントは、桜と幾何学模様を表裏で楽しむデザイン。\n\n現行の柄は公式商品ページで見比べられます。工房の一般的な工程説明を、すべての商品の素材一覧や個別認証の代わりにはしていません。" } }
+  },
+  "visits": {
+    "stores": [
+      { "id": "nakajima-zogan-arashiyama", "name": { "ja": "中嶋象嵌 嵐山店", "en": "Nakajima Zogan Arashiyama Store" }, "address": { "ja": "〒616-8374 京都府京都市右京区嵯峨天龍寺北造路町9-1-1", "en": "9-1-1 Saga Tenryuji Kitatsukurimichi-cho, Ukyo-ku, Kyoto 616-8374, Japan" }, "kind": "maker-shop", "officialUrl": "https://www.nakajima-zougan.jp/", "officialStoreUrl": "https://www.nakajima-zougan.jp/access/", "hours": { "ja": "10:00–17:00（公式掲載）", "en": "10:00–17:00, as listed by the maker" }, "closedDays": { "ja": "年中無休との公式案内。臨時変更は公式で確認。", "en": "Listed as open year-round; check for temporary changes." }, "access": { "ja": "嵐山方面の店舗です。公式案内はJR京都駅から嵯峨嵐山駅への鉄道利用を紹介しています。駅から店までの経路は地図で確認できます。", "en": "The shop is in Arashiyama. The maker’s access guide includes the JR journey from Kyoto Station to Saga-Arashiyama Station; use the map for the walk to the shop." }, "visitSummary": { "ja": "京都の象嵌アクセサリーを手がける中嶋象嵌の直営店。嵐山を歩く日に、柄の細かさや表裏を実物で見比べる訪問先です。", "en": "A direct shop of Kyoto inlay maker Nakajima Zogan, for exploring the details of its jewelry while visiting Arashiyama." }, "stockNote": { "ja": "紹介品の店頭在庫と現在の柄は未確認です。特定の商品を見たい場合は、訪問前に公式で確認してください。", "en": "The featured SKU and current pattern are not confirmed in store. Check the exact piece before visiting." }, "mapQuery": "中嶋象嵌 嵐山店 京都市右京区嵯峨天龍寺北造路町9-1-1", "sourceIds": ["nakajima-stores-v9"], "checkedAt": "2026-11-16" }
+    ],
+    "products": [
+      { "productId": "nakajima-pear-sakura-pendant", "storeIds": ["nakajima-zogan-arashiyama"], "officialHomeUrl": "https://www.nakajima-zougan.jp/", "officialHomeRole": "maker", "sourceIds": ["nakajima-pear-product-v9", "nakajima-stores-v9"], "fallback": null, "checkedAt": "2026-11-16" },
+      { "productId": "kato-suke-round-ring", "storeIds": ["kato-shippo-store"], "officialHomeUrl": "https://katoshippo.com/", "officialHomeRole": "maker", "sourceIds": ["becos-kato-round-ring-en-v9", "becos-kato-round-ring-ja-v9", "visit-kato-official-store"], "fallback": null, "checkedAt": "2026-11-16" }
+    ]
+  },
+  "sources": [
+    { "id": "nakajima-pear-product-v9", "url": "https://www.nakajima-zougan.jp/ec-shop2/products/detail/1005", "title": "Nakajima Zogan official pear-shaped sakura/line-dot pendant i690", "checkedAt": "2026-11-16", "access": "body_read", "supports": ["JPY16500 tax included; product codei690; pendant24x31mm, chain470mm; handmade pattern variation; exact component metals not specified"] },
+    { "id": "nakajima-cooperative-v9", "url": "https://www.kyoto-meisan.jp/shops/nakajima_zouge/", "title": "Kyoto Meisan cooperative official Nakajima Zogan profile", "checkedAt": "2026-11-16", "access": "body_read", "supports": ["Reversible pear pendant: sakura on one side and modern geometric motif on the other; direct official product link; Kyoto handmade inlay maker"] },
+    { "id": "nakajima-technique-v9", "url": "https://www.nakajima-zougan.jp/about/", "title": "Nakajima Zogan official Kyoto inlay process", "checkedAt": "2026-11-16", "access": "body_read", "supports": ["General workshop process of cutting fine grooves into iron, inlaying gold/silver, dark finishing and polishing; not transferred into selected SKU component specification"] },
+    { "id": "nakajima-stores-v9", "url": "https://www.nakajima-zougan.jp/access/", "title": "Nakajima Zogan official stores and access", "checkedAt": "2026-11-16", "access": "body_read", "supports": ["Arashiyama public store9-1-1SagaTenryujiKitatsukurimichi-cho, Kyoto;10:00–17:00year-round; rail access context; store stock not confirmed"] },
+    { "id": "becos-kato-round-ring-en-v9", "url": "https://en.thebecos.com/products/s0087-044?currency=USD", "title": "BECOS English Kato round SUKE ring s0087-044", "checkedAt": "2026-11-16", "access": "body_read", "supports": ["USD84.00 visible selected-currency price and metaUSD; Aichi origin/Owari cloisonne; silver,copper,glaze,alloy;1.5x1.5cm; adjustable plated-alloy ring; six colors; protect from impact/heat; weight0not meaningful"] },
+    { "id": "becos-kato-round-ring-ja-v9", "url": "https://www.thebecos.com/products/s0087-044", "title": "BECOS Japanese Kato 丸透SUKE ring s0087-044", "checkedAt": "2026-11-16", "access": "body_read", "supports": ["JPY7700 tax included; same SKU; Japanese name 丸透(not楕円透); red,navy,green,yellowgreen,yellow,pink variants; Aichi/尾張七宝; adjustable plated-alloy ring"] }
+  ]
+}

@@ -1,6 +1,7 @@
 import {chromium} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import {assertVisitGuide} from './visit-assertions.mjs';
+import {assertRegionSelection} from './region-selection-assertions.mjs';
 import assert from 'node:assert/strict';
 import {existsSync} from 'node:fs';
 import {mkdir,readFile,writeFile} from 'node:fs/promises';
@@ -10,7 +11,7 @@ import {fileURLToPath} from 'node:url';
 const root=fileURLToPath(new URL('../',import.meta.url));
 if(existsSync(resolve(root,'.env')))process.loadEnvFile(resolve(root,'.env'));
 const origin=process.env.CHECK_BASE_URL||'http://127.0.0.1:4321';
-const screenshotPrefix=(process.env.CHECK_SCREENSHOT_PREFIX||'visit-stage').replace(/[^a-zA-Z0-9_-]/g,'-');
+const screenshotPrefix=(process.env.CHECK_SCREENSHOT_PREFIX||'destination-stage').replace(/[^a-zA-Z0-9_-]/g,'-');
 const base='/'+(process.env.PUBLIC_BASE_PATH||'').split('/').filter(Boolean).join('/')+((process.env.PUBLIC_BASE_PATH||'').split('/').filter(Boolean).length?'/':'');
 const route=(locale,path='')=>new URL(base+locale+'/'+path,origin).href;
 const catalog=JSON.parse(await readFile(resolve(root,'src/data/catalog.json'),'utf8'));
@@ -135,11 +136,9 @@ try{
      assert.equal(await page.locator('a[href*="/journal/"]').count(),0,'Regular pages must not link to retired reading pages.');
      assert.equal(await page.locator('a[href$="/en/contact/"], a[href$="/ja/contact/"]').count(),0,'Contact is intentionally unpublished and must not remain in navigation or content links.');
      if(kind==='home'){
-      const homeCards=page.locator('[data-product-card]');assert.ok(await homeCards.count()>=6,'Home should present a varied product selection directly.');
-      const homeMaterials=await homeCards.evaluateAll(nodes=>nodes.map(node=>(node.getAttribute('data-material')||'').split(' ')));
-      assert.ok(homeMaterials.filter(ids=>!ids.includes('wood')).length>=4,'The home selection should lead with at least four non-wood pieces.');
       for(const figure of await page.locator('figure[data-editorial-asset]').all())assertStylingDisclosure(await figure.locator('figcaption').innerText(),locale);
      }
+     if(['home','objects','regions'].includes(kind))await assertRegionSelection(page,locale,catalog);
      if(kind.startsWith('feature')){
       const figure=page.locator('figure[data-editorial-asset]').first();
       assert.equal(await figure.count(),1);
@@ -319,7 +318,7 @@ try{
  report.completedAt=new Date().toISOString();
  report.finalizedAt=report.completedAt;
  report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,pages:report.pages.length,axeViolations:report.pages.reduce((sum,page)=>sum+(page.axeViolations?.length||0),0),screenshots:report.screenshots.length};
- await writeFile(resolve(root,process.env.CHECK_REPORT_PATH||'docs/visit-stage-browser-results.json'),JSON.stringify(report,null,2)+'\n');
+ await writeFile(resolve(root,process.env.CHECK_REPORT_PATH||'docs/destination-stage-browser-results.json'),JSON.stringify(report,null,2)+'\n');
  console.log(JSON.stringify(report.summary));
  if(report.failures.length)process.exitCode=1;
 }
