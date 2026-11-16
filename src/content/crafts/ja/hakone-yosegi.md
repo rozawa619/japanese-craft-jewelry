@@ -1,5 +1,5 @@
 ---
-title: "箱根寄木細工"
+title: "箱根寄木細工のジュエリー"
 description: "木の色を組み合わせる技法。最初のジュエリー特集を支える幾何模様の木工を知る。"
 locale: "ja"
 publishStatus: "published"
@@ -17,5 +17,3 @@ craftId: "hakone-yosegi"
 ## 伝統と個別の商品
 
 地域の工芸の説明は、現代のすべてのジュエリーに公的な指定があることを意味しません。分類と根拠は、各商品ページをご覧ください。Japanese Craft Jewelryの最初の特集には、個別に認証済み、または実物試験済みであるとして紹介する商品はありません。
-
-[寄木細工の詳しいガイドを読む](../../journal/understanding-yosegi/)。

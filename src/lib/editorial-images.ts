@@ -9,12 +9,12 @@ export interface EditorialImage {
   alt: Record<Locale,string>;
 }
 
-/** Styling imagery is editorial content, deliberately separate from product images and facts. */
-export function editorialImageFor(slug: string): EditorialImage | undefined {
-  const image=Object.hasOwn(registry,slug)?(registry as Record<string,EditorialImage>)[slug]:undefined;
+/** Styling imagery is tied to a stable product ID, separately from verified product facts. */
+export function productImageFor(productId: string): EditorialImage | undefined {
+  const image=Object.hasOwn(registry,productId)?(registry as Record<string,EditorialImage>)[productId]:undefined;
   if (!image) return undefined;
   if (!/^images\/[a-z0-9-]+\.(?:webp|avif|png|jpe?g)$/.test(image.path)) {
-    throw new Error(`Editorial image must use a local, reviewed asset: ${slug}`);
+    throw new Error(`Product styling image must use a local, reviewed asset: ${productId}`);
   }
   return image;
 }

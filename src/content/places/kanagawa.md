@@ -1,6 +1,6 @@
 ---
-title: "Kanagawa, a beginning in wood and pattern"
-description: "Meet the Kanagawa workshop context behind our first yosegi piece edit, with a clear distinction between workshop, manufacturing and retail locations."
+title: "Jewelry connected to Kanagawa"
+description: "Browse our selection connected to Kanagawa workshops, plus separately identified jewelry sold by regional retailers."
 locale: "en"
 publishStatus: "published"
 updatedAt: "2026-11-16"

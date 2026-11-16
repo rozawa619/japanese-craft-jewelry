@@ -2,7 +2,7 @@
 title: "普段の服に合わせる工芸の耳飾りの選び方"
 description: "服装を起点に、大きさ、金具、写真だけでは分からない仕様を比べます。"
 locale: "ja"
-publishStatus: "published"
+publishStatus: "draft"
 updatedAt: "2026-11-16"
 sourceIds: ["hamamatsuya-earrings", "hamamatsuya-technique", "maruyama-pierced-c", "maruyama-category"]
 category: "選び方"

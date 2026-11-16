@@ -1,0 +1,197 @@
+{
+  "checkedAt": "2026-11-16T08:44:40.383Z",
+  "status": "passed",
+  "command": "node scripts/check-ad-build.mjs",
+  "isolation": {
+    "fixtureRoot": "artifacts/ad-build-fixture/2026-11-16T08-44-40-352Z",
+    "copies": [
+      "src",
+      "docs",
+      "public",
+      "scripts",
+      "astro.config.mjs",
+      "tsconfig.json",
+      "package.json"
+    ],
+    "nodeModules": "junction to existing dependencies",
+    "envFilesCopied": false,
+    "mode": "preview plus test-only public metadata build; no deployment",
+    "rootDistBefore": "5991ccb61ae930e5b7491e28e91c3ce9b24dc84f52a6d3bc70aed88c960957f7",
+    "rootDistAfter": "5991ccb61ae930e5b7491e28e91c3ce9b24dc84f52a6d3bc70aed88c960957f7",
+    "rootDistUnchanged": true,
+    "realCatalogUnchanged": true
+  },
+  "scenarios": [
+    {
+      "name": "approved-related-product-only",
+      "status": "passed",
+      "fixture": "artifacts/ad-build-fixture/2026-11-16T08-44-40-352Z/approved-related-product-only",
+      "settings": {
+        "mode": "preview",
+        "basePath": "/",
+        "siteUrl": "",
+        "fixtureOnly": true,
+        "deployed": false
+      },
+      "build": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T08-44-40-352Z/approved-related-product-only/build.log",
+        "summary": []
+      },
+      "generatedSiteCheck": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T08-44-40-352Z/approved-related-product-only/check-built.log",
+        "summary": [
+          "PASS 56 HTML pages; 1681 href/src references; 43 anchors; 140 retailer links (26 sponsored); 14 retired reading redirects, 404, drafts, preview metadata, sitemap and robots. Base: /"
+        ]
+      },
+      "htmlAssertions": {
+        "status": "passed",
+        "sponsoredCount": 26,
+        "sponsoredPages": 26,
+        "drafts": "Draft object and guide absent from generated pages, markup and sitemap when passed.",
+        "publicMetadata": "Preview noindex/canonical/sitemap rules checked by generated-site checker.",
+        "errors": []
+      }
+    },
+    {
+      "name": "approved-lower-retailer-section-only",
+      "status": "passed",
+      "fixture": "artifacts/ad-build-fixture/2026-11-16T08-44-40-352Z/approved-lower-retailer-section-only",
+      "settings": {
+        "mode": "preview",
+        "basePath": "/",
+        "siteUrl": "",
+        "fixtureOnly": true,
+        "deployed": false
+      },
+      "build": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T08-44-40-352Z/approved-lower-retailer-section-only/build.log",
+        "summary": []
+      },
+      "generatedSiteCheck": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T08-44-40-352Z/approved-lower-retailer-section-only/check-built.log",
+        "summary": [
+          "PASS 56 HTML pages; 1681 href/src references; 43 anchors; 140 retailer links (12 sponsored); 14 retired reading redirects, 404, drafts, preview metadata, sitemap and robots. Base: /"
+        ]
+      },
+      "htmlAssertions": {
+        "status": "passed",
+        "sponsoredCount": 12,
+        "sponsoredPages": 12,
+        "drafts": "Draft object and guide absent from generated pages, markup and sitemap when passed.",
+        "publicMetadata": "Preview noindex/canonical/sitemap rules checked by generated-site checker.",
+        "errors": []
+      }
+    },
+    {
+      "name": "paused-and-missing-url-fallback",
+      "status": "passed",
+      "fixture": "artifacts/ad-build-fixture/2026-11-16T08-44-40-352Z/paused-and-missing-url-fallback",
+      "settings": {
+        "mode": "preview",
+        "basePath": "/",
+        "siteUrl": "",
+        "fixtureOnly": true,
+        "deployed": false
+      },
+      "build": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T08-44-40-352Z/paused-and-missing-url-fallback/build.log",
+        "summary": []
+      },
+      "generatedSiteCheck": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T08-44-40-352Z/paused-and-missing-url-fallback/check-built.log",
+        "summary": [
+          "PASS 56 HTML pages; 1681 href/src references; 43 anchors; 140 retailer links (0 sponsored); 14 retired reading redirects, 404, drafts, preview metadata, sitemap and robots. Base: /"
+        ]
+      },
+      "htmlAssertions": {
+        "status": "passed",
+        "sponsoredCount": 0,
+        "sponsoredPages": 0,
+        "drafts": "Draft object and guide absent from generated pages, markup and sitemap when passed.",
+        "publicMetadata": "Preview noindex/canonical/sitemap rules checked by generated-site checker.",
+        "errors": []
+      }
+    },
+    {
+      "name": "unlisted-tracking-host-fallback",
+      "status": "passed",
+      "fixture": "artifacts/ad-build-fixture/2026-11-16T08-44-40-352Z/unlisted-tracking-host-fallback",
+      "settings": {
+        "mode": "preview",
+        "basePath": "/",
+        "siteUrl": "",
+        "fixtureOnly": true,
+        "deployed": false
+      },
+      "build": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T08-44-40-352Z/unlisted-tracking-host-fallback/build.log",
+        "summary": []
+      },
+      "generatedSiteCheck": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T08-44-40-352Z/unlisted-tracking-host-fallback/check-built.log",
+        "summary": [
+          "PASS 56 HTML pages; 1681 href/src references; 43 anchors; 140 retailer links (0 sponsored); 14 retired reading redirects, 404, drafts, preview metadata, sitemap and robots. Base: /"
+        ]
+      },
+      "htmlAssertions": {
+        "status": "passed",
+        "sponsoredCount": 0,
+        "sponsoredPages": 0,
+        "drafts": "Draft object and guide absent from generated pages, markup and sitemap when passed.",
+        "publicMetadata": "Preview noindex/canonical/sitemap rules checked by generated-site checker.",
+        "errors": []
+      }
+    },
+    {
+      "name": "test-only-public-base-metadata-and-drafts",
+      "status": "passed",
+      "fixture": "artifacts/ad-build-fixture/2026-11-16T08-44-40-352Z/test-only-public-base-metadata-and-drafts",
+      "settings": {
+        "mode": "public",
+        "basePath": "/japanese-craft-jewelry/",
+        "siteUrl": "https://rozawa619.github.io",
+        "fixtureOnly": true,
+        "deployed": false
+      },
+      "build": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T08-44-40-352Z/test-only-public-base-metadata-and-drafts/build.log",
+        "summary": []
+      },
+      "generatedSiteCheck": {
+        "exitCode": 0,
+        "error": null,
+        "log": "artifacts/ad-build-fixture/2026-11-16T08-44-40-352Z/test-only-public-base-metadata-and-drafts/check-built.log",
+        "summary": [
+          "PASS 56 HTML pages; 1803 href/src references; 43 anchors; 140 retailer links (0 sponsored); 14 retired reading redirects, 404, drafts, public metadata, sitemap and robots. Base: /japanese-craft-jewelry/"
+        ]
+      },
+      "htmlAssertions": {
+        "status": "passed",
+        "sponsoredCount": 0,
+        "sponsoredPages": 0,
+        "drafts": "Draft object and guide absent from generated pages, markup and sitemap when passed.",
+        "publicMetadata": "Test-only public URL/base, canonical, OGP, sitemap and robots assertions; does not establish a successful deployment.",
+        "errors": []
+      }
+    }
+  ],
+  "completedAt": "2026-11-16T08:45:10.719Z"
+}

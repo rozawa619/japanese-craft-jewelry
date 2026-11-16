@@ -1,111 +1,82 @@
-# 更新・公開の操作手順
+# 商品の追加・更新・公開手順
 
-更新日：2026-11-16。初めに `AGENTS.md`、`specs/001-media-launch/`、`specs/002-jewelry-bilingual/` を読む。現状は日本各地の工芸ジュエリーを扱う静的な英語・日本語メディアで、カート・決済・DB・CMSはない。
+更新日：2026-11-16。AGENTS、constitution、specs/004-product-selection/を先に読む。Japanese Craft Jewelryは商品セレクトを中心とした日英の静的紹介サイト。ブログ、カート、注文受付、決済、発送、DB、CMSはない。商品追加のために読みもの記事を作る必要はない。
 
-## 作業環境と基本コマンド
+## 基本操作
 
-Node.js 24.22.1以上、pnpm 11.25.0を使用する。依存関係を変えない更新ではロックファイルを保持する。
+Node.js 24.22.1以上、pnpm 11.25.0。依存を変えない更新ではlockfileを保持する。
 
 ```text
 pnpm install --frozen-lockfile
 pnpm dev
-pnpm check
-pnpm test
-pnpm build
-pnpm preview
 pnpm verify
 pnpm readiness
+pnpm check:browser
+pnpm check:ads
 pnpm check:links
 ```
 
-`dev` は開発用、`preview` は `dist/` の本番ビルドをローカルで確認する。標準の待受先は127.0.0.1。実際のポートは起動結果で確認する。`verify` は型・データ・広告ロジック・ビルド・生成済み内部リンクの確認をまとめて実行する。`check:links` の外部アクセス拒否は閉鎖の証明ではない。`readiness` は公開環境の未設定を検出するので、初期の未入力状態で非0終了するのが正しい。
+開発はdev、本番生成はbuild、生成済みdistの確認はpreview。待受先は127.0.0.1で、URL/ポートは起動結果を確認する。verifyは型・参照・単体・ビルド・生成リンクを検査する。外部の403/503等を閉鎖と即断しない。readinessの設定不足は依存しない制作と分けて記録する。
 
-## 1. 商品と工房を1つ追加する
+## 1. 商品と作り手を追加する
 
-1. 公式の商品本文と工房情報を確認し、`docs/research/sources.json` に安定ID、URL、タイトル、実確認日、根拠となる主張を追加する。価格・通貨・税・配送・返品を別に確認する。
-2. `src/data/catalog.json` の `makers` に必要な工房を追加する。`location` と `productionNote` を使い、販売店所在地だけでは製造地を確定しない。作り手不明ならその事実を示すレコードを使う。
-3. `products` に `src/lib/schema.ts` の商品スキーマに沿うレコードを追加する。既存商品を複製して編集してもよいが、ID・slug・仕様・出典・価格・確認日を全て見直す。不明値は `null`、未確認の都道府県は空配列、未許諾写真の `imageAssetIds` は空配列にする。
-4. 商品本文を `src/content/products/<安定ID>.md` に追加する。frontmatterは `productId` と `publishStatus`。独自の選ぶ理由、仕様から分からないこと、購入前の確認点を書く。公開商品には公開された空でない日英両方の本文が必要。英語はこの配置、日本語は `src/content/products/ja/<同じ安定ID>.md` に `locale: ja` を追加して置く。価格・仕様の翻訳表示文は `src/data/translations/ja.json` の商品IDへ結ぶ。
-5. 販売店が新規なら `merchants` を追加し、商品との関係を `merchantIds` で結ぶ。`links` に商品と販売店の組み合わせを1件追加する。初期値は `programId: null`、`affiliateUrl: null`、`applicationStatus: "not_applied"`、`affiliateLinkVerifiedAt: null`。`officialProductUrl` は実在する適切な商品・カタログページにする。
-6. `docs/assets.json` の `productPhotography` に権利の状態を記録する。写真を追加する場合のみ `assets` に権利根拠等を登録し、商品側の `imageAssetIds` を関連付ける。
-7. まず `publishStatus: "draft"` で確認する。ジュエリーに該当し、必要な事実と日英本文・日本語表示文が揃ってから商品データと両言語の本文を `published` にする。髪飾り等は現在のジュエリー掲載範囲外で下書きに保つ。`pnpm verify` とPC・スマホ画面で商品名、画像なし、販売店リンクを確認する。
+1. 公式商品・工房・販売店の一次資料を確認し、docs/research/sources.jsonへ安定ID、URL、題名、実確認日、支える主張を追加する。価格・通貨・税・在庫・送料・返品を混同しない。
+2. src/data/catalog.jsonのmakers/merchantsに必要なレコードを追加する。販売店住所から製造地を推定せず、不明な製造者や生産地は不明と示す。
+3. productsにsrc/lib/schema.tsに沿う商品を追加する。ID/slugを安定させ、種別、素材、工房、産地、技法、出典を結ぶ。不明仕様はnull、未確認の産地や未許諾の写真IDは空配列。別商品の値を複製したまま公開しない。
+4. src/content/products/＜商品ID＞.mdとproducts/ja/＜同ID＞.mdへ独自の商品紹介を書く。frontmatterはproductId/publishStatus、日本語はlocale: ja。紹介の中心は選んだ理由・装いの提案・購入前に確かめる点。商品未使用なら試着レビューを作らない。価格/広告URL/仕様の正本はcatalogのままにする。日本語の表示文はsrc/data/translations/ja.jsonの同商品IDへ追加する。
+5. 商品/販売店の組み合わせをlinksへ登録する。未承認の初期値はprogramId:null、affiliateUrl:null、applicationStatus:not_applied、affiliateLinkVerifiedAt:null。officialProductUrlはその販売店の実在する商品・公式カタログへ向け、merchantのホストと一致させる。
+6. 写真を使う場合のみ許諾を取得してdocs/assets.jsonへ記録する。AI着用イメージは下記の独立registryへ登録し、実物写真のimageAssetIdsへ混ぜない。
+7. 最初はdraftで確認する。公開条件の日英本文・訳文・出典・共有事実が揃ってからcatalogと商品本文をpublishedへ。かんざし等の現在の対象外はdraftを維持する。
+8. 商品一覧はpublished商品から生成される。トップで選ぶ商品はsrc/config/selection.tsのheroProductId/featuredProductIdsを安定商品IDで更新する。新規IDは実在する公開商品にし、欠品をおすすめ候補へ混ぜない。トップの順序を商品価格や本文に埋め込まない。
+9. verifyとPC/390/320の画面で、商品名・価格・画像なし/AI画像・通常リンク・日英切替・絞り込みを確認する。
 
-## 2. 都道府県・技法・素材・種別を追加する
+## 2. 画像を追加・変更する
 
-`catalog.json` の `prefectures`、`crafts`、`materials`、`productTypes` は独立したマスタ。`products` の対応するID配列で関連付ける。技法マスタには `sourceIds` が必要。全国専用の新コンポーネントや地域ごとの分岐は作らない。
+AI着用画像はsrc/data/editorial-images.jsonを商品IDで参照する。実際の画像はpublic/images/へ保存し、寸法と日英alt、assetIdを揃える。共通表示部品のAI/非実物captionを常時見えるままにする。画像は商品の柄・寸法・金具・fitの証拠や試着実績ではない。制作prompt/方法はdocs/image-generation.json、用途と権利状態はdocs/assets.jsonへ記録する。公式写真は許諾なく取得・転載・ホットリンクしない。
 
-地域本文は `src/content/places/<prefectureId>.md`、日本語対は `places/ja/<同じID>.md`。技法本文は `src/content/crafts/<craftId>.md`、日本語対は `crafts/ja/<同じID>.md` に追加する。既存の神奈川・寄木の本文を構造の見本にできるが、事実・紹介文・出典は対象に合わせて独自に調査する。
+## 3. 産地・技法・分類を追加する
 
-- 地域のfrontmatterは共通項目に `prefectureId` と `relatedMerchantIds` 配列を追加する。`prefectureId` は `catalog.json` の都道府県ID、ファイル名はそのIDと一致させる。`relatedMerchantIds` は製造地が未確認でも地域の販売店として別枠で紹介する販売店ID。これを商品自身の都道府県属性の代わりに使わない。
-- 技法のfrontmatterは共通項目に `craftId` を追加する。`craftId` は `catalog.json` の技法ID、ファイル名もそのIDにする。
-- 公開条件は **日英のpublished本文、空でない独自本文、出典、同IDに関連するpublishedジュエリー商品が1件以上**。地域は `products[].prefectureIds`、技法は `products[].craftIds` で商品を結ぶ。販売店があるだけでは地域の公開条件を満たさない。
-- ルートは汎用の `src/pages/[lang]/places/[place].astro` と `src/pages/[lang]/crafts/[craft].astro`。条件を満たす本文を追加すれば `/en/places/<prefectureId>/`、`/ja/places/<prefectureId>/` と両言語の技法ページが生成され、サイトマップも同じ公開Collectionへ連動する。都道府県ごとにページ部品を複製しない。
-- 新しい日本語の都道府県・技法・素材・種別・工房・販売店の表示名も `src/data/translations/ja.json` の同じIDに追加する。地域一覧は全国を対象とするが、未調査地域を数合わせで公開しない。
-- 準備中は本文の `publishStatus: "draft"` を使う。マスタだけ、空本文、下書き、関連公開商品なしのページは公開しない。`pnpm check` が参照・ID一致・公開条件を検査する。記事内リンクと必要なナビの入口を整え、`pnpm verify` と生成URLの表示確認を行う。
+catalogのprefectures/crafts/materials/productTypesは独立マスタで、商品側のID配列から結ぶ。技法にはsourceIds、日本語表示にはtranslations/jaの同IDを用意する。
 
-既存の公開条件を変える大きな機能は `specs/002-.../` に目的と受入条件を残す。マスタ追加だけで全都道府県のページを大量生成しない。
+産地本文はsrc/content/places/＜prefectureId＞.mdとplaces/ja/、技法本文はsrc/content/crafts/＜craftId＞.mdとcrafts/ja/。地域のfrontmatterはprefectureId/relatedMerchantIds、技法はcraftId。ファイル名と対応IDを一致させる。日英のpublished本文、独自の空でない背景情報、出典、同じ産地/技法に結ぶ公開商品1件以上を揃える。販売店だけでは製造地属性や地域公開条件を満たさない。
 
-## 3. 記事・価格・出典を更新する
+産地・技法の公開ページは商品一覧を主役にし、背景説明を折りたたみに置く。日付/著者/読了時間を付けたブログに戻さない。画面は共通ルートで生成し、神奈川専用コードを地域ごとに複製しない。未調査の47都道府県や商品なしの空分類を公開しない。
 
-ガイドは `src/content/guides/*.md`、方針は `src/content/policies/*.md`、商品紹介本文は `src/content/products/*.md`、地域は `src/content/places/*.md`、技法は `src/content/crafts/*.md`。商品本文以外の共通frontmatterは `title`、`description`、`locale`、`publishStatus`、`updatedAt`、`sourceIds`。ガイドには `category`、`readMinutes`、`productIds`、地域には `prefectureId` と `relatedMerchantIds`、技法には `craftId` を付ける。
+## 4. 商品本文・価格・出典を更新する
 
-関連商品の仕様や価格を記事へ再入力せず、商品IDで共通部品を参照する。出典を読み直した項目だけ `lastVerifiedAt` や `priceCheckedAt` を更新し、`sources.json` の確認日と支える主張を見直す。共有の価格・確認日・出典はcatalog側で1回だけ更新し、日本語の表示文へ数値・通貨・URLを複製しない。翻訳でも出典が示さない仕様を追加しない。全項目の再確認をしていないのに日付だけ一括更新しない。在庫は当日の観測として扱う。
+商品本文はproducts、分類背景はplaces/crafts、運営方針はpoliciesで更新する。旧guidesは日英12ファイルの下書き保管であり、公開導線として使わない。現方針では新しいブログ記事を追加しない。
 
-slug変更は既存URLを壊すため、原則維持する。変更が必要ならホスティング側のリダイレクトまたは移行ページを用意し、内部リンク・サイトマップも検査する。
+一次資料を読み直した項目だけcatalogのlastVerifiedAt/priceCheckedAtやsourcesの確認日を更新する。価格・通貨・税・数値・広告URLを商品本文や日本語表示へ二重入力しない。確認していない全項目の日付を一括更新せず、在庫はその時点の観測として示す。
 
-## 4. 提携承認後に広告リンクへ切り替える
+商品slugは原則維持する。変更が必要なら移行先を用意し、内部リンクとsitemapも更新する。旧journal移行口は記事本文を出さず、固定した適切な商品/一覧/分類へmeta refresh 0で案内する。noindex、canonicalなし、sitemap対象外を保ち、任意URLを移行先にできる仕組みを加えない。
 
-1. 対象ドメイン、個別商品、深いリンク、画像、開示文言、計測・支払、禁止集客を管理画面または個別契約で確認する。日本語版と英語版を混同しない。調査資料と `docs/affiliate-readiness.md` を更新する。
-2. 対象販売店を `merchants` へ登録し、`programs[].merchantIds` に正しいIDを追加する。BECOS承認を他店の商品へ適用しない。
-3. 実際の承認を得たプログラムの `applicationStatus` を `approved` にする。公開募集の `recruitmentStatus` は別の状態なので変更理由を混ぜない。
-4. 対象 `links` の `programId`、管理画面から取得した `affiliateUrl`、`applicationStatus: "approved"`、実確認日 `affiliateLinkVerifiedAt` を設定する。広告IDやパラメータを推測して作らない。通常の `officialProductUrl` は停止時のため保持する。
-5. 広告主指定の文言があれば `programs[].disclosure` に設定し、共通開示部品が対象ページで表示することを確認する。指定文言がないからといって、一般的な明瞭な開示を省略しない。
-6. `pnpm verify` を実行し、公開前の画面で最初の広告リンクより前の開示、実際のリンク先、`rel="sponsored noopener noreferrer"` を確認する。リンクを開く際は不要な自己購入・テスト注文をしない。
-7. 一時停止は商品リンクまたはプログラムを `paused` にして再ビルド・再公開する。未承認・URL欠落・確認日なしでは通常リンクへ戻り、通常URLもなければCTAは出ない。
+## 5. 提携承認後に広告リンクへ切り替える
 
-テストの追跡URLは `tests/affiliate.test.ts` の中だけに置く。公開JSONへデモURLを入れない。
+詳細はdocs/affiliate-operations.mdを優先する。公開募集の存在は当サイトや商品別の承認ではない。
 
-## 5. ブランド名・色・言語を変更する
+1. 公式管理画面/契約で対象ドメイン・商品・販売店・深いリンク・写真・開示文言・計測/支払・禁止事項を確認する。BECOS承認を他店の商品へ適用しない。
+2. programsのmerchantIdsと実際のapplicationStatusを設定する。affiliateAllowedHostsには承認リンクで確認した完全一致のホストだけを小文字で列挙する。空配列は全広告先不許可。ワイルドカード、URL、パスは入れない。
+3. 対象linksへprogramId、実際のaffiliateUrl、applicationStatus:approved、確認日affiliateLinkVerifiedAtを設定する。program側もapprovedが必要。officialProductUrlは通常への戻し先として保持する。架空のIDを作らない。
+4. 指定の開示文言があればprograms.disclosureを更新。最初の広告ボタンより前の開示、実際の先、sponsored、通常リンクとの差を日英で確認する。verifyとcheck:adsを実行する。
+5. 公開後に実URLと転送先を確認する。無断の自己購入・テスト注文・架空成果を作らない。停止はprogramまたはlinkをpausedにして再配信する。不正URL/未許可host/確認日欠落も通常へ戻り、通常URLも不正ならCTAなし。
 
-表示名・説明・言語・SNS設定は `src/config/site.ts`、色・余白・文字等は `src/config/tokens.css`。共通レイアウトとページ本文にもブランドの言及があるため、`rg "Japanese Craft Jewelry|Jewelry with a story" src` で使用箇所を確認する。ブランド変更時は本文や申請草稿、画像台帳の説明も更新する。
+APIキーや管理画面の認証情報はcatalog/PUBLIC_へ入れない。広告script・解析・フォーム等を加える場合はdocs/security.mdに従い別仕様として外部送信/CSP/Privacyを見直す。CSPを一括で無効にしない。
 
-英語 `/en/` と日本語 `/ja/` は実装済み。右上の1つのボタンが現在ページの対訳へ移動する。本文は各Collection内の `ja/<同じslug>.md`、表示文は `src/lib/i18n.ts` と `src/data/translations/ja.json` にある。翻訳を追加・更新する際は、日英のfrontmatterで `sourceIds`、`productIds`、`prefectureId`、`craftId`、`relatedMerchantIds` を一致させる。3言語目を追加するときは `src/content.config.ts` とデータのlocale制約、ルーティング、ナビ、言語メタ情報を一緒に設計する。英語を単に置換して既存URLを壊さない。空翻訳ページは作らない。
+## 6. ブランド・言語・公開設定を変える
 
-## 6. 公開環境と更新
+表示名と説明はsrc/config/site.ts、見た目はsrc/config/tokens.cssとstyles。商品セレクトの並びはselection.ts。ブランド変更時は本文/方針/申請草稿も確認する。
 
-`.env.example` は設定名だけの見本。必要な値をローカルの `.env` または利用先の環境設定に入力する。`.env` と秘密値をコミットしない。`PUBLIC_` の値は公開されるためトークンを入れない。
+/en/と/ja/は同じ商品slugで対になる。本文はCollectionのja/、表示文はi18nとtranslations/ja。同じ商品・分類・方針のID/出典を保ち、未確認の仕様を翻訳だけで補わない。右上ボタンを1つに保ち、商品詳細と一覧のquery/hashを往復確認する。
 
-| 設定 | 内容 |
-| --- | --- |
-| `PUBLIC_SITE_URL` | 実際の公開HTTPS URL。exampleやlocalhostを本番メタ情報へ入れない |
-| `PUBLIC_BASE_PATH` | ドメイン直下は `/`、GitHub Pagesのプロジェクト公開は `/リポジトリ名/` |
-| `PUBLIC_PUBLISH_MODE` | 下見は `preview`、正式公開の準備後だけ `public` |
-| `PUBLIC_OPERATOR_NAME` | 公開する運営責任の表示。未提供の氏名は作らない |
-| `PUBLIC_CONTACT_EMAIL` | 実際に受信できる公開用連絡先。未入力なら捏造しない |
-| `PUBLIC_REPOSITORY_URL` | 実際のリポジトリ。問い合わせに使うならIssuesを有効にし外部から使えることを確認 |
+.env.exampleは設定名の見本。PUBLIC_SITE_URLは実HTTPS origin、PUBLIC_BASE_PATHは/japanese-craft-jewelry/、PUBLIC_PUBLISH_MODEはpublicまたはpreview、PUBLIC_OPERATOR_NAMEはユーザー指定のSORA、PUBLIC_REPOSITORY_URLは実在repoを使う。PUBLIC_CONTACT_EMAILは実受信できる値だけ設定し、未提供なら作らない。PUBLIC_は公開情報であり秘密値を入れない。
 
-値を設定後に `pnpm readiness` と `pnpm verify` を実行する。`dist/` が静的公開物。正式公開ではcanonical・OGP・sitemap・robotsが実URLと公開状態に合うこと、previewではnoindexであることを実際の生成物とHTTPで確かめる。404の扱いとサブパスも公開先で確認する。
+## 7. 公開・検証・引継ぎ
 
-GitHubのリポジトリ作成・push・Pages公開は認証と権限がある場合だけ実行する。未成功なら公開済みと記録しない。新規作成時は `git init`、`git add`、`git commit`、実在する作成済みリポジトリへのremote設定、`git push` の順とし、秘密値や `node_modules` が含まれていないことを確認する。Pages等のホスティング設定が提供されている場合は、そのワークフロー内のNode・pnpm・環境値と照合する。
+リポジトリはhttps://github.com/rozawa619/japanese-craft-jewelry。既存のGitHub Actionsでreadiness/verify後にPagesへ配信する。公開先はhttps://rozawa619.github.io/japanese-craft-jewelry/en/ と /ja/。
 
-公開後は実URLの主要画面、全内部リンク、広告状態、Contact、robots、sitemap、404を再確認する。公開とアフィリエイト申請は別の操作。申請は運営者が条件・入力内容を確認して送信し、承認前は通常リンクを継続する。
+1. verify、必要なbrowser/ads/linksを実行し、結果と未実行を記録する。
+2. Gitへ保存してpushし、Actionsの対象headとsuccessを確認する。
+3. 実URLで日英の商品導線、画像/caption、スマホ、絞込、SORA、Contact、広告状態、canonical/hreflang、robots/sitemap、404、旧journal移行を確認する。publicとpreviewの検索設定を混同しない。
+4. docs/deployment-results.json、verification.md、handoff、仕様004のtasksを実測に更新し、全ソースとZIPも書き出す。過去のレポートを新バージョンの成功へ読み替えない。
 
-## 更新時の引継ぎ
-
-重要な変更は `CHANGELOG.md` に日付と要件への影響を記録し、該当する `specs/` 配下のタスクと `docs/handoff.md` に実行結果・未実行・制約を残す。連絡先や権利取得を別のAIが確認済みだと推測しない。外部ページが変わった場合は直近の一次情報を読み直す。
-
-## GitHub Pagesの有効化
-
-作成済みrepoはhttps://github.com/rozawa619/japanese-craft-jewelry。ソースをmainへpush後、Settings→Pages→SourceをGitHub Actionsにする。deploy.ymlで検証して公開する。0.3のworkflowはpublicを設定し、ユーザー指定の公開名SORAを責任表示、実在IssuesをContactとして使う。previewへ戻す場合はworkflowのPUBLIC_PUBLISH_MODEをpreviewに変更する。元のプレビューmodeでもPages URLで閲覧できるが、公開成功はHTTPとActions結果で確認する。
-
-GitHub Pagesのプロジェクト公開ではrobots.txtは/japanese-craft-jewelry/配下になる。検索エンジンがドメイン直下のrobots.txtを参照する点に注意し、previewの検索除外は各HTMLのnoindexでも実施する。独自ドメインへ移す場合はドメイン直下のrobotsも再確認する。
-
-## 7. 日英切替を確認する
-
-ビルド後のpreviewを起動し、`node scripts/check-bilingual.mjs` を実行する。別URLを確認する場合はCHECK_BASE_URL、サブパスはPUBLIC_BASE_PATHを設定する。生成物の全内部リンクと両言語の対訳URLは `pnpm verify` でも確認する。
-
-右上ボタンは英語画面では「日本語」、日本語画面では「English」。同じ商品の詳細・同じ記事へ1回で切り替わり、フィルター条件のクエリとhashを保持する。PCだけでなく390pxと320px幅でボタンが常時見つかること、切替後にナビ・フィルター・広告開示・本文が対象言語であることを確認する。
-
-既存英語の公開slugは維持する。掲載範囲から外したかんざしはデータと調査記録を削除せずdraftにし、両言語の公開ページを生成しない。
-
-0.3のセキュリティと広告設定：docs/security.md、docs/affiliate-operations.mdを優先する。programのaffiliateAllowedHosts空配列は全広告先不許可。承認済みhostを完全一致で明示してから広告URLを登録する。AI着用画像はsrc/data/editorial-images.jsonとpublic/images/を更新し、docs/assets.json・image-generation.jsonへ権利/非実物/制作の記録を残す。
+GitHub Pagesのrobotsはプロジェクト配下に置かれる。検索エンジンのroot robotsと区別し、各HTMLのindex/noindexも確認する。独自ドメインへの移行時はHTTPS/base/正規URL/robots/CSP/Contactを再確認する。検索登録・申請送信・承認・成果は公開成功と別に記録する。

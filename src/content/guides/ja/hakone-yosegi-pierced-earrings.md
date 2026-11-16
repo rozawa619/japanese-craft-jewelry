@@ -2,7 +2,7 @@
 title: "箱根寄木細工のピアスを知る：浜松屋の耳飾り"
 description: "神奈川・箱根の浜松屋が紹介する寄木のキャッチ付ピアス。装いのアイデアと、購入前に確認したい金具・寸法を案内します。"
 locale: "ja"
-publishStatus: "published"
+publishStatus: "draft"
 updatedAt: "2026-11-16"
 sourceIds: ["hamamatsuya-earrings", "hamamatsuya-workshop", "hamamatsuya-technique", "hamamatsuya-craft-overview", "hamamatsuya-en-shop", "hamamatsuya-shipping"]
 category: "ジュエリー紹介"

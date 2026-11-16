@@ -2,7 +2,7 @@
 title: "Buying Japanese craft jewelry from overseas"
 description: "Check the destination, total cost and return route before following a piece of jewelry through to checkout."
 locale: "en"
-publishStatus: "published"
+publishStatus: "draft"
 updatedAt: "2026-11-16"
 sourceIds: ["maruyama-shipping", "maruyama-shopping-guide", "hamamatsuya-shipping", "hamamatsuya-ja-terms"]
 category: "Before you buy"

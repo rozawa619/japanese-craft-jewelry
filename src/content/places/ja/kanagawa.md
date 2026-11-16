@@ -1,6 +1,6 @@
 ---
-title: "神奈川から、木と模様を身に着ける"
-description: "最初の寄木ジュエリー特集を、工房・製造地・販売店の区別とともに紹介します。"
+title: "神奈川に関わるジュエリー"
+description: "神奈川の工房に関連するジュエリーをセレクト。地域の販売店が扱う商品は区別して紹介します。"
 locale: "ja"
 publishStatus: "published"
 updatedAt: "2026-11-16"

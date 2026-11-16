@@ -2,7 +2,7 @@
 title: "箱根の寄木イヤリング：浜松屋で探す木の耳飾り"
 description: "神奈川・箱根の浜松屋が紹介する、穴を開けない寄木のイヤリング。装いの提案と、金具・寸法・海外購入の確認点をまとめます。"
 locale: "ja"
-publishStatus: "published"
+publishStatus: "draft"
 updatedAt: "2026-11-16"
 sourceIds: ["hamamatsuya-earrings", "hamamatsuya-workshop", "hamamatsuya-technique", "hamamatsuya-craft-overview", "hamamatsuya-en-shop", "hamamatsuya-shipping"]
 category: "ジュエリー紹介"

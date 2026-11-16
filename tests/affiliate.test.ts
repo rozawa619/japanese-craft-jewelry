@@ -95,6 +95,7 @@ test('program and merchant mismatch is rejected before build', () => {
 
 test('guide cannot expose a draft product through a related-product reference', () => {
   const data = structuredClone(loadProjectData());
+  data.guides[0].metadata.publishStatus = 'published';
   data.catalog.products[0].publishStatus = 'draft';
   data.guides[0].metadata.productIds = [data.catalog.products[0].id];
   assert.ok(collectValidationErrors(data).some(error => error.includes('published guide refers to draft')));
@@ -160,6 +161,8 @@ test('Japanese presentation cannot duplicate price facts or fill unknown hardwar
 
 test('published English and Japanese pages need matching peers and source references', () => {
  const data=structuredClone(loadProjectData());
+ // Explicitly publish archived sources only inside this peer-validation fixture.
+ for(const guide of data.guides)guide.metadata.publishStatus='published';
  const ja=data.guides.find(guide=>guide.metadata.locale==='ja')!;
  ja.metadata.sourceIds=[];
  assert.ok(collectValidationErrors(data).some(error=>error.includes('bilingual sourceIds references must agree')));

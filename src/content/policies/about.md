@@ -1,26 +1,26 @@
 ---
 title: "About Japanese Craft Jewelry"
-description: "An independent bilingual editorial project exploring Japanese craft jewelry, makers and techniques across Japan."
+description: "A curated selection of Japanese craft jewelry, with source-checked details and direct links to official retailers."
 locale: "en"
 publishStatus: "published"
 updatedAt: "2026-11-16"
 sourceIds: []
 ---
 
-Japanese Craft Jewelry — Jewelry, makers & stories from Japan is an English-and-Japanese editorial project about Japanese craft jewelry. We explore makers, materials and techniques across Japan. Our current researched selection includes Hakone yosegi pieces connected to Kanagawa; we add regions when sourced product information and original editorial coverage are ready.
+Japanese Craft Jewelry brings together selected earrings, non-pierced earrings and necklaces connected to Japanese craft. Explore the pieces in English or Japanese, compare the details and follow the link to the retailer for the item you like.
 
-We connect the appeal of an object with the practical questions of choosing it: fastening, materials, dimensions, provenance and where to ask about buying from overseas. Our introductions are based on published primary sources, not personal wear tests, workshop visits or interviews unless a page explicitly documents otherwise.
+Our scope is Japan. The first selection includes Hakone yosegi pieces connected to Kanagawa. We add products and regions when we can support a useful introduction with primary sources.
 
-## What you will find
+## What goes into the selection
 
-Our collection brings product facts, a short editorial perspective and unanswered questions together in one place. A product is not automatically an official traditional-craft item because it uses a regional technique. A retailer's location is not automatically the place where its products were made. Those distinctions matter to our research.
+Each product page brings together why we selected the piece, styling suggestions, source-checked specifications, price and questions to ask before ordering. Our selection is based on published information; it is not a hands-on rating or wear test.
 
-Where permission for product photography has not been established, we use clearly labeled abstract artwork. It is decorative and does not depict the products.
+We distinguish the maker, retailer and item-level manufacturing location. A regional technique does not automatically certify a particular piece, and unknown details remain visible.
 
-## An introduction, with a clear boundary
+## From discovery to the retailer
 
-Japanese Craft Jewelry is not a shop. We do not accept orders or payments, hold stock, ship parcels or manage returns. Follow a retailer link to see that seller's current photographs, price and purchase conditions. Confirm any detail that matters to you before ordering.
+Purchases take place with the linked retailer. We do not accept orders or payments, hold stock, ship parcels or manage returns. The retailer provides current photographs, stock, final prices and purchase terms.
 
-Read our editorial policy for how we select and verify information, our affiliate disclosure for commercial relationships, and our contact page for corrections.
+Some product pages include labeled AI-generated styling illustrations of fictional adult models. These are not photographs of the listed product or demonstrations of its fit. Patterns, scale and hardware may differ. Abstract artwork is also labeled. Use the retailer's actual photographs when making a purchase decision.
 
-Some feature pages include clearly labeled AI-generated styling illustrations. These show a fictional adult model and illustrative jewelry, not a photograph of the listed product, a customer endorsement or a wear test. Patterns, dimensions, hardware and fit may differ from the actual item. Use the retailer’s current photographs and specifications for purchase decisions.
+Our selection policy explains how we check information. Affiliate relationships are disclosed next to the relevant links, and the contact page provides a way to request corrections.

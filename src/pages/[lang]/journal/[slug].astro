@@ -1,19 +1,9 @@
 ---
-import {render} from 'astro:content';
-import EditorialImage from '../../../components/EditorialImage.astro';
-import {editorialImageFor} from '../../../lib/editorial-images';
-import Base from '../../../layouts/Base.astro';
-import Disclosure from '../../../components/Disclosure.astro';
-import Comparison from '../../../components/Comparison.astro';
-import ProductCard from '../../../components/ProductCard.astro';
-import {productsFor} from '../../../lib/catalog';
-import {contentFor,contentSlug} from '../../../lib/content';
-import {locales,t} from '../../../lib/i18n';
+import LegacyRedirect from '../../../components/LegacyRedirect.astro';
+import {locales} from '../../../lib/i18n';
 import {pagePath} from '../../../config/site';
-export async function getStaticPaths(){const paths=[];for(const locale of locales){for(const guide of await contentFor('guides',locale))paths.push({params:{lang:locale,slug:contentSlug(guide)},props:{guide,locale}})}return paths}
-const {guide,locale}=Astro.props;const {Content}=await render(guide);const products=productsFor(locale);
-const image=editorialImageFor(contentSlug(guide));
-const compare=contentSlug(guide)==='everyday-craft-earrings';
-const related=(guide.data.productIds.length?products.filter(p=>guide.data.productIds.includes(p.id)):products).slice(0,3);
+import {legacyJournalTargets} from '../../../lib/legacy-routes';
+export function getStaticPaths(){return locales.flatMap(locale=>Object.entries(legacyJournalTargets).map(([slug,target])=>({params:{lang:locale,slug},props:{locale,target}})))}
+const {locale,target}=Astro.props;
 ---
-<Base title={guide.data.title} description={guide.data.description} article updatedAt={guide.data.updatedAt} locale={locale}><div class="article-wrap"><header class="page-heading"><div class="breadcrumbs"><a href={pagePath('journal/',locale)}>{t(locale,'Journal','読みもの')}</a><span>/</span><span>{guide.data.category}</span></div><h1>{guide.data.title}</h1><p>{guide.data.description}</p></header><div class="article-meta"><span>{t(locale,'Japanese Craft Jewelry editorial desk · Primary-source research','Japanese Craft Jewelry編集部 · 一次情報に基づく調査')}</span><span>{t(locale,'Updated ','更新：')}{guide.data.updatedAt}</span><span>{t(locale,`${guide.data.readMinutes} min read`,`約${guide.data.readMinutes}分`)}</span></div><Disclosure productIds={related.map(p=>p.id)} locale={locale}/>{image&&<EditorialImage image={image} locale={locale} priority/>}<article class="prose"><Content/></article></div><div class="wrap">{compare&&<Comparison locale={locale}/>}<section class="related"><h2>{t(locale,'Jewelry to investigate.','記事とあわせて見たいジュエリー。')}</h2><div class:list={['product-grid',{'product-grid-single':related.length===1}]}>{related.slice(0,3).map((p,i)=><ProductCard product={p} index={i} locale={locale}/>)}</div></section></div></Base>
+<LegacyRedirect locale={locale} target={pagePath(target,locale)}/>

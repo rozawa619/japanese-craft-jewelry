@@ -12,7 +12,7 @@ const runId = new Date().toISOString().replace(/[:.]/g, '-');
 const runRoot = resolve(artifacts, runId);
 if (!runRoot.startsWith(artifacts + sep) || !isAbsolute(runRoot)) throw new Error('Fixture directory must stay inside the project artifacts directory.');
 mkdirSync(runRoot, { recursive: true });
-const reportPath = resolve(root, 'docs/ad-build-results.json');
+const reportPath = resolve(root, process.env.CHECK_AD_REPORT_PATH || 'docs/selection-ad-build-results.json');
 const readJson = file => JSON.parse(readFileSync(file, 'utf8'));
 const writeJson = (file, value) => writeFileSync(file, JSON.stringify(value, null, 2) + '\n');
 const walk = directory => existsSync(directory) ? readdirSync(directory, { withFileTypes: true }).flatMap(entry => entry.isDirectory() ? walk(resolve(directory, entry.name)) : [resolve(directory, entry.name)]) : [];
@@ -87,6 +87,7 @@ function analyze(directory, targetIds, ordinaryRoute, publicMetadata = false) {
     if (html.includes('test-only-draft-object') || html.includes('test-only-draft-guide')) errors.push(`${relative(dist, file)}: draft text or route leaked`);
   }
   const sitemap = readFileSync(resolve(dist, 'sitemap.xml'), 'utf8');
+  if (/\/journal\//.test(sitemap)) errors.push('Retired reading routes present in sitemap');
   if (/test-only-draft/.test(sitemap)) errors.push('Draft route present in sitemap');
   if (!publicMetadata && /<loc(?:\s|>)/.test(sitemap)) errors.push('Preview sitemap unexpectedly has indexed URLs');
   if (publicMetadata) {

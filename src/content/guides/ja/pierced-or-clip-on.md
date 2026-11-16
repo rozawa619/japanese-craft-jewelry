@@ -2,7 +2,7 @@
 title: "ピアスとイヤリングは、まず金具から選ぶ"
 description: "耳飾りの種類、肌に触れる素材、掲載情報が足りないときの確認点を整理します。"
 locale: "ja"
-publishStatus: "published"
+publishStatus: "draft"
 updatedAt: "2026-11-16"
 sourceIds: ["hamamatsuya-earrings", "maruyama-clip-c", "maruyama-pierced-c"]
 category: "購入ガイド"

@@ -2,7 +2,7 @@
 title: "Hakone Yosegi Pierced Earrings: A Hamamatsuya Guide"
 description: "Discover Hamamatsuya's Japanese wooden pierced earrings from Hakone, Kanagawa, with styling ideas and the fitting details to check before ordering."
 locale: "en"
-publishStatus: "published"
+publishStatus: "draft"
 updatedAt: "2026-11-16"
 sourceIds: ["hamamatsuya-earrings", "hamamatsuya-workshop", "hamamatsuya-technique", "hamamatsuya-craft-overview", "hamamatsuya-en-shop", "hamamatsuya-shipping"]
 category: "Jewelry introduction"

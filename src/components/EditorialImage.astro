@@ -7,5 +7,5 @@ const {image,locale,compact=false,priority=false}=Astro.props;
 ---
 <figure class:list={['editorial-image',{'editorial-image-card':compact}]} data-editorial-asset={image.assetId}>
   <img src={path(image.path)} alt={image.alt[locale]} width={image.width} height={image.height} loading={priority?'eager':'lazy'} decoding="async" fetchpriority={priority?'high':'auto'}/>
-  <figcaption><strong>{t(locale,'AI styling illustration','AI生成の着用イメージ')}</strong>{compact?t(locale,' — not a product photograph.','。実物写真ではありません。'):t(locale,' — not a photograph of the featured product. The pattern, scale, hardware and fit are illustrative and may differ from the item. Check the retailer’s current product photos.','。紹介商品の実物写真ではありません。柄・大きさ・金具・装着状態は実物の再現ではなく、実際の商品と異なります。販売店の最新の実物写真をご確認ください。')}</figcaption>
+  <figcaption><strong>{t(locale,'AI styling illustration','AI生成の着用イメージ')}</strong>{compact?t(locale,' — not a photograph of this product.','。紹介商品の実物写真ではありません。'):t(locale,' — not a photograph of the featured product. The pattern, scale, hardware and fit are illustrative and may differ from the item. Check the retailer’s current product photos.','。紹介商品の実物写真ではありません。柄・大きさ・金具・装着状態は実物の再現ではなく、実際の商品と異なります。販売店の最新の実物写真をご確認ください。')}</figcaption>
 </figure>

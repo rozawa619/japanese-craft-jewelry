@@ -19,6 +19,8 @@ let checkedLinks = 0;
 let checkedAnchors = 0;
 let retailerLinks = 0;
 let sponsoredLinks = 0;
+let legacyRedirects = 0;
+const legacyTargets = {"":"objects/","hakone-yosegi-pierced-earrings":"objects/hamamatsuya-surgical-stainless-pierced-earrings/","hakone-yosegi-non-pierced-earrings":"objects/hamamatsuya-yosegi-non-pierced-earrings/","everyday-craft-earrings":"objects/","pierced-or-clip-on":"objects/","buying-from-overseas":"objects/","understanding-yosegi":"crafts/hakone-yosegi/"};
 const fail = (file, message) => errors.push(`${relative(dist, file).replaceAll(sep, '/')}: ${message}`);
 const decode = value => value.replace(/&(?:amp|quot|apos|lt|gt|#\d+|#x[\da-f]+);/gi, entity => {
   const named = { '&amp;': '&', '&quot;': '"', '&apos;': "'", '&lt;': '<', '&gt;': '>' };
@@ -105,6 +107,20 @@ for (const [file, page] of pages) {
   const canonical = tags.filter(tag => tag.name === 'link' && (tag.attrs.rel || '').split(/\s+/).includes('canonical'));
   const robots = getMeta('name', 'robots');
   const is404 = /(?:^|[\\/])404(?:\.html|[\\/]index\.html)$/.test(file);
+  const legacyMatch=routePath.slice(base.length).match(/^(en|ja)\/journal\/(.*)$/);
+  if(legacyMatch){
+    const slug=legacyMatch[2].replace(/\/$/,'');
+    const target=Object.hasOwn(legacyTargets,slug)?base+legacyMatch[1]+'/'+legacyTargets[slug]:null;
+    legacyRedirects++;
+    if(!target)fail(file,'unexpected retired reading route generated');
+    if(!redirect)fail(file,'retired reading route is not a redirect');
+    if(target&&getMeta('http-equiv','refresh')!=='0;url='+target)fail(file,'retired reading route has the wrong refresh destination');
+    if(target&&tags.find(tag=>tag.name==='body')?.attrs['data-legacy-redirect']!==target)fail(file,'retired reading route is missing its explicit redirect target');
+    if(!robots.split(/[\s,]+/).includes('noindex')||!robots.split(/[\s,]+/).includes('nofollow'))fail(file,'retired reading redirect must be noindex and nofollow');
+    if(canonical.length||getMeta('property','og:url')||tags.some(tag=>tag.name==='link'&&tag.attrs.hreflang))fail(file,'retired reading redirect must not emit content SEO metadata');
+    if(tags.some(tag=>tag.name==='article')||/"@type"\s*:\s*"Article"/.test(html))fail(file,'retired reading route contains article content');
+    if(target&&!tags.some(tag=>tag.name==='a'&&tag.attrs.href===target))fail(file,'retired reading redirect lacks a manual fallback link');
+  }
   if (!publicMode) {
     if (!robots.split(/[\s,]+/).includes('noindex')) fail(file, 'preview is missing noindex');
     if (canonical.length) fail(file, 'preview must not emit canonical');
@@ -125,6 +141,9 @@ for (const [file, page] of pages) {
   if (renderedSponsored.length && disclosureTags.some(tag => tag.attrs['data-disclosure'] === 'ordinary')) fail(file, 'ordinary-link disclosure contradicts sponsored links');
   for (const tag of tags) {
     if (tag.name === 'a') {
+      if(!redirect&&tag.attrs.href){
+        try{const destination=new URL(tag.attrs.href,origin+routePath);if(destination.origin===origin&&['en','ja'].some(locale=>destination.pathname.startsWith(base+locale+'/journal/')))fail(file,'normal content links to a retired reading route');}catch{}
+      }
       const rel = (tag.attrs.rel || '').split(/\s+/);
       const isSponsored = rel.includes('sponsored');
       if (tag.attrs['data-sponsored'] !== undefined) {
@@ -162,6 +181,7 @@ for (const file of sitemapFiles) {
     if (!locations.length) fail(file, 'public sitemap is empty');
     for (const location of locations) {
       if (!location.startsWith(`${origin}${base}`)) fail(file, `sitemap URL does not match public origin/base: ${location}`);
+      if(/\/(?:en|ja)\/journal\//.test(location))fail(file,'retired reading redirect is included in the public sitemap');
       internalTarget(file, location);
     }
   }
@@ -187,12 +207,17 @@ for(const [directory,section]of [['guides','journal'],['policies',''],['places',
   const locale=/^locale:\s*["']?ja["']?\s*$/m.test(fm[1])?'ja':'en';
   const slug=local.replace(/^ja\//,'').replace(/\.md$/,'');
   const route=`${locale}/${section?section+'/':''}${slug}/`;
-  if(existsSync(resolve(dist,route,'index.html')))errors.push(`Draft ${directory} page generated: ${route}`);
+  if(existsSync(resolve(dist,route,'index.html'))){
+   const output=pages.get(resolve(dist,route,'index.html'));
+   const retiredRedirect=directory==='guides'&&Object.hasOwn(legacyTargets,slug)&&output?.tags.some(tag=>tag.name==='body'&&tag.attrs['data-legacy-redirect']);
+   if(!retiredRedirect)errors.push(`Draft ${directory} page generated: ${route}`);
+  }
   for(const [output,page]of pages)if(page.html.includes('/'+route))fail(output,`draft ${directory} route leaked: ${route}`);
  }
 }
+if(legacyRedirects!==Object.keys(legacyTargets).length*2)errors.push('Expected exactly 14 known retired reading redirects.');
 if (errors.length) {
   for (const error of errors) console.error(`FAIL ${error}`);
   console.error(`${errors.length} generated-site problem(s).`);
   process.exitCode = 1;
-} else console.log(`PASS ${files.length} HTML pages; ${checkedLinks} href/src references; ${checkedAnchors} anchors; ${retailerLinks} retailer links (${sponsoredLinks} sponsored); 404, drafts, ${publicMode ? 'public' : 'preview'} metadata, sitemap and robots. Base: ${base}`);
+} else console.log(`PASS ${files.length} HTML pages; ${checkedLinks} href/src references; ${checkedAnchors} anchors; ${retailerLinks} retailer links (${sponsoredLinks} sponsored); ${legacyRedirects} retired reading redirects, 404, drafts, ${publicMode ? 'public' : 'preview'} metadata, sitemap and robots. Base: ${base}`);

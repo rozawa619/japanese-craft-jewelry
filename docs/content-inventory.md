@@ -1,25 +1,29 @@
-# 公開コンテンツ一覧（0.3）
+# 掲載対象と商品導線（0.4）
 
-2026-11-16。全国の工芸ジュエリーを対象とし、現在は8商品を日英で紹介。事実と出典はcatalog/sources、訳文はtranslations/ja。
+2026-11-16。全国の工芸ジュエリーを対象とする商品セレクト。現在の掲載対象は8商品を日英で用意。数値・出典・確認日の正本はcatalog/sources、日本語表示はtranslations/ja。公開成功と実際の配信版はdeployment-results.jsonを参照する。
 
-| 商品 | 種類 | 確認価格 | 英語 / 日本語 |
+| 商品 | 種類 | 確認時の状態 | 英語 / 日本語 |
 |---|---|---|---|
-| 浜松屋 寄木キャッチ付ピアス | pierced-earrings | JPY 3500（2026-11-16確認） | [EN](https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-surgical-stainless-pierced-earrings/) / [JA](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/) |
-| 浜松屋 寄木イヤリング | clip-on-earrings | JPY 2500（2026-11-16確認） | [EN](https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-yosegi-non-pierced-earrings/) / [JA](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-yosegi-non-pierced-earrings/) |
-| 浜松屋 18K表記の寄木ピアス | pierced-earrings | JPY 4500（2026-11-16確認） | [EN](https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-18k-yosegi-earrings/) / [JA](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-18k-yosegi-earrings/) |
-| 浜松屋 無垢寄木ペンダント | necklace | JPY 3500（2026-11-16確認） | [EN](https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-muku-yosegi-pendant/) / [JA](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-muku-yosegi-pendant/) |
-| 寄木イヤリング C | clip-on-earrings | JPY 2650（2026-11-16確認） | [EN](https://rozawa619.github.io/japanese-craft-jewelry/en/objects/maruyama-yosegi-non-pierced-c/) / [JA](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-non-pierced-c/) |
-| 寄木イヤリング D | clip-on-earrings | JPY 2650（2026-11-16確認） | [EN](https://rozawa619.github.io/japanese-craft-jewelry/en/objects/maruyama-yosegi-non-pierced-d/) / [JA](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-non-pierced-d/) |
-| 寄木ピアス C | pierced-earrings | JPY 2650（2026-11-16確認） | [EN](https://rozawa619.github.io/japanese-craft-jewelry/en/objects/maruyama-yosegi-pierced-c/) / [JA](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-pierced-c/) |
-| 寄木ピアス D | pierced-earrings | JPY 2650（2026-11-16確認） | [EN](https://rozawa619.github.io/japanese-craft-jewelry/en/objects/maruyama-yosegi-pierced-d/) / [JA](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-pierced-d/) |
+| 浜松屋 寄木キャッチ付ピアス | pierced-earrings | listed | [EN](https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-surgical-stainless-pierced-earrings/) / [JA](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/) |
+| 浜松屋 寄木イヤリング | clip-on-earrings | listed | [EN](https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-yosegi-non-pierced-earrings/) / [JA](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-yosegi-non-pierced-earrings/) |
+| 浜松屋 18K表記の寄木ピアス | pierced-earrings | out_of_stock | [EN](https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-18k-yosegi-earrings/) / [JA](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-18k-yosegi-earrings/) |
+| 浜松屋 無垢寄木ペンダント | necklace | listed | [EN](https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-muku-yosegi-pendant/) / [JA](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-muku-yosegi-pendant/) |
+| 寄木イヤリング C | clip-on-earrings | listed | [EN](https://rozawa619.github.io/japanese-craft-jewelry/en/objects/maruyama-yosegi-non-pierced-c/) / [JA](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-non-pierced-c/) |
+| 寄木イヤリング D | clip-on-earrings | listed | [EN](https://rozawa619.github.io/japanese-craft-jewelry/en/objects/maruyama-yosegi-non-pierced-d/) / [JA](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-non-pierced-d/) |
+| 寄木ピアス C | pierced-earrings | listed | [EN](https://rozawa619.github.io/japanese-craft-jewelry/en/objects/maruyama-yosegi-pierced-c/) / [JA](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-pierced-c/) |
+| 寄木ピアス D | pierced-earrings | listed | [EN](https://rozawa619.github.io/japanese-craft-jewelry/en/objects/maruyama-yosegi-pierced-d/) / [JA](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-pierced-d/) |
 
-かんざしの調査データは履歴として保持し、ジュエリー特化に伴い下書きへ移行。ガイド・紹介記事6、運営方針5、地域記事1、技法記事1と商品本文8を両言語で用意。地域の入口は/en/places/と/ja/places/。空の都道府県は公開しない。
+在庫は確認時点の観測であり、現在の在庫を保証しない。欠品の商品をトップのおすすめ候補に混ぜない。かんざしは非公開の調査履歴として保持する。
 
-## 0.3で追加した神奈川の耳飾り紹介
+## 商品紹介をまとめた2点
 
-| 記事 | 対象商品ID | 英語 / 日本語 |
-|---|---|---|
-| 箱根寄木細工のピアスを知る：浜松屋の耳飾り | hamamatsuya-catch-pierced | [EN](https://rozawa619.github.io/japanese-craft-jewelry/en/journal/hakone-yosegi-pierced-earrings/) / [JA](https://rozawa619.github.io/japanese-craft-jewelry/ja/journal/hakone-yosegi-pierced-earrings/) |
-| 箱根の寄木イヤリング：浜松屋で探す木の耳飾り | hamamatsuya-clip | [EN](https://rozawa619.github.io/japanese-craft-jewelry/en/journal/hakone-yosegi-non-pierced-earrings/) / [JA](https://rozawa619.github.io/japanese-craft-jewelry/ja/journal/hakone-yosegi-non-pierced-earrings/) |
+- hamamatsuya-catch-pierced：浜松屋のキャッチ付ピアス。商品詳細のslugはhamamatsuya-surgical-stainless-pierced-earrings。
+- hamamatsuya-clip：浜松屋のイヤリング。商品詳細のslugはhamamatsuya-yosegi-non-pierced-earrings。
 
-工房・カタログ・写真の再確認と限界は `docs/research/kanagawa-earring-features.md`。上記の新URLへの公開成功は `docs/deployment-results.json` で確認する。
+独自の選定理由・装いの案・購入前の確認を商品本文へまとめ、AI着用イメージを商品IDから参照する。画像は常時AI/非実物表示を付け、実物の柄・寸法・金具・着用感を示す証拠にはしない。一次再確認の記録はdocs/research/kanagawa-earring-features.md、制作/権利の記録はimage-generation.jsonとassets.json。
+
+## 分類・補助情報と移行
+
+産地/技法は商品一覧中心の分類ページで、背景は折りたたみに収める。全国の産地入口は/en/places/と/ja/places/。現在は神奈川1産地・寄木1技法・作り手2件、運営方針5ページを日英で扱い、空県ページは作らない。
+
+旧guides6本×日英はdraftで保管し、ブログ/読みものとして公開しない。旧journal一覧/記事URLは対応商品・一覧・分類へ移行案内するだけで、noindex・canonicalなし・sitemap対象外。旧記事本文は配信しない。過去のガイド数/54URL等を現在の正規公開件数として扱わない。

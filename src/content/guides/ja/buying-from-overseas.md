@@ -2,7 +2,7 @@
 title: "海外から日本の工芸ジュエリーを買う前に"
 description: "配送先、総額、返品方法を確認し、納得して販売店へ進むためのガイド。"
 locale: "ja"
-publishStatus: "published"
+publishStatus: "draft"
 updatedAt: "2026-11-16"
 sourceIds: ["maruyama-shipping", "maruyama-shopping-guide", "hamamatsuya-shipping", "hamamatsuya-ja-terms"]
 category: "購入前の確認"

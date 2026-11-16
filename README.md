@@ -1,98 +1,74 @@
-# Japanese Craft Jewelry — Jewelry & maker stories from Japan.
+# Japanese Craft Jewelry — Curated jewelry from Japan
 
 [English](https://rozawa619.github.io/japanese-craft-jewelry/en/) · [日本語](https://rozawa619.github.io/japanese-craft-jewelry/ja/) · [全ソース](https://github.com/rozawa619/japanese-craft-jewelry)
 
-公開バージョンと最終確認の状態は `docs/deployment-results.json` と `docs/handoff.md` に記録します。公開modeはpublic。運営表示はユーザー指定の公開名SORA、訂正窓口は実在GitHub Issuesです。提携は未申請・未承認です。
+日本各地の工芸ジュエリーから、選んだ商品を英語・日本語で紹介するサイトです。セレクトショップのように商品を探し、詳しく見て、外部の販売店へ進める構成です。当サイトにカート・決済・注文受付・発送機能はありません。
 
-日本各地の工芸ジュエリーを紹介する英語・日本語のメディアです。全国の産地・作り手へ広げられる共通データと画面を持ち、現時点の調査済み特集は箱根寄木細工です。当サイトに商品販売・カート・決済・発送機能はありません。
+0.4では商品を主役にし、読みもの一覧とブログ形式の紹介を外します。ピアス・イヤリング・ネックレス8件を扱い、浜松屋のピアスとイヤリングの紹介・着用イメージを、それぞれの商品ページへまとめます。全国へ広げられる共通データを保ち、現在の調査済み産地は神奈川・箱根です。空の都道府県ページは作りません。
 
-公開対象はピアス・イヤリング・ネックレスのジュエリー8件です。ガイド6本、運営方針5ページ、地域・技法・商品本文を日英で用意しています。かんざし1件は非公開データとして保持し、ジュエリー一覧・フィルター・サイトマップへ出しません。提携は未申請で、販売店リンクは通常リンクです。商品写真の転載許諾は取得しておらず、実物写真は掲載せず、自作の抽象装飾と、明示したAI生成の成人女性着用イメージ2点を使っています。実商品の柄・寸法・金具を再現する画像ではありません。技術実装、実際の公開、申請準備、提携承認は別の状態です。最終の実行結果と公開先は `docs/handoff.md` を確認してください。
+運営者表示は **SORA**、訂正窓口は実在GitHub Issuesです。提携は未申請・未承認で、販売店リンクは通常リンクです。商品写真は未許諾につき使用せず、抽象装飾と、非実物と明示した成人女性のAI着用イメージ2点を使います。AI画像は商品の柄・寸法・金具・着用感を再現する証拠ではありません。
+
+**0.4の実装・検証・公開状態は `docs/deployment-results.json` と `docs/handoff.md` を優先してください。過去版の検証結果を0.4の公開成功として扱いません。**
 
 ## 動かす
 
-Node.js **24.22.1以上**、pnpm **11.25.0**。Astro **7.4.12**、TypeScript、Markdownによる静的サイトです。依存関係の確定版は `pnpm-lock.yaml` に記録されています。
+Node.js **24.22.1以上**、pnpm **11.25.0**。Astro **7.4.12**、TypeScript、Markdownの静的サイトです。
 
 ```text
 pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-開発サーバーの表示URLを開きます。環境値を設定しない状態は検索登録を避けるpreviewです。ビルド済みサイトを見るには次を実行します。
-
-```text
-pnpm build
-pnpm preview
-```
+ビルド済みサイトは `pnpm build` → `pnpm preview`。環境未設定では検索登録を避けるpreviewになります。
 
 | コマンド | 用途 |
 | --- | --- |
-| `pnpm check` | Astro型・コンテンツスキーマ・データ参照確認 |
-| `pnpm test` | 広告切替・fallback・データ整合性・公開設定テスト |
-| `pnpm build` | `dist/` へ本番静的生成 |
-| `pnpm verify` | 型・参照・テスト・ビルド・生成物の内部リンク確認 |
-| `pnpm readiness` | 公開URL・公開モード・運営者・Contact等の不足検出 |
-| `pnpm check:links` | 外部商品・募集先等のリンク確認 |
-| `node scripts/check-bilingual.mjs` | 両言語の画面・1ボタン切替・URL状態・ジュエリー範囲・スマホ検証 |
+| `pnpm check` | 型・スキーマ・参照・日英の商品本文を確認 |
+| `pnpm test` | 広告切替・URL・公開条件など重要な挙動を確認 |
+| `pnpm build` | `dist/` へ静的生成 |
+| `pnpm verify` | 型・データ・単体・ビルド・生成リンクをまとめて確認 |
+| `pnpm readiness` | 公開URL・公開モード・運営者・Contactの不足を検出 |
+| `pnpm check:links` | 外部の商品・募集先リンクを確認 |
+| `pnpm check:browser` | 日英・スマホ・絞り込み・商品画像・言語切替を確認 |
+| `pnpm check:ads` | 実データを変えず、広告の承認・停止・欠落等を隔離確認 |
 
 ## 編集入口
 
 | 場所 | 責務 |
 | --- | --- |
-| `src/data/catalog.json` | 価格・仕様・参照ID・広告状態を含む共有事実の正本 |
-| `src/data/translations/ja.json` | 同じ安定IDに結ぶ日本語の表示文。価格・数値・確認日・URLを複製しない |
-| `src/content/products/` | 商品ごとの独自紹介本文。安定productIdでデータと接続 |
-| `src/content/guides/` | 選び方・金具・技法・海外購入ガイド |
-| `src/content/places/` | 都道府県IDと結ぶ地域本文。公開商品がある地域だけ生成 |
-| `src/content/crafts/` | 技法IDと結ぶ技法本文。公開商品がある技法だけ生成 |
-| `src/content/policies/` | About・編集方針・広告開示・Privacy・Contact |
-| `src/content.config.ts` | 日英Markdownコレクションのスキーマ |
-| `src/lib/i18n.ts` / `src/lib/content.ts` | UI文言とlocale別の本文読込 |
-| `src/components/LanguageSwitch.astro` | 右上の1ボタンで現在ページの日英を切り替える |
-| `src/config/site.ts` / `tokens.css` | 表示名・言語・公開設定とデザイントークン |
-| `src/lib/schema.ts` | カタログの実行時スキーマと型 |
-| `src/lib/affiliate.ts` | 安全なURLと広告切替の共通関数 |
-| `src/lib/catalog.ts` | 正規化データの読込・参照・表示値 |
-| `src/components/` | 商品カード、販売店リンク、開示、比較等の共通表示 |
-| `src/layouts/` / `src/pages/` / `src/styles/` | 共通画面、ルート、スタイル |
-| `docs/research/sources.json` | 一次資料、確認日、何の根拠か |
-| `docs/assets.json` | 装飾の権利根拠と商品写真の許諾状態 |
-| `specs/001-media-launch/` / `specs/002-jewelry-bilingual/`、`specs/003-search-security-features/` | 版ごとの仕様/設計/タスク |
-| `scripts/` / `tests/` | データ・公開・リンク・広告等の検証 |
-| `public/` | 利用権が確認された公開アセット |
+| `src/config/selection.ts` | トップの代表商品とおすすめ順序。安定商品IDを指定 |
+| `src/data/catalog.json` | 商品・価格・仕様・作り手・産地・販売店・広告設定の共有事実 |
+| `src/data/translations/ja.json` | 安定IDに結ぶ日本語表示。価格・数値・URLは重複しない |
+| `src/content/products/` と `products/ja/` | 同じproductIdに結ぶ日英の商品紹介。選ぶ理由・装い・購入前確認 |
+| `src/data/editorial-images.json` | 商品IDとAI着用イメージの対応。実物写真とは別管理 |
+| `public/images/` | サイト内で配信する画像 |
+| `src/content/places/` / `crafts/` | 商品選びを補う産地・技法情報。公開商品がある対象のみ |
+| `src/content/policies/` | 運営・選定方針・広告開示・Privacy・Contact |
+| `src/content/guides/` | 旧読みものの下書き保管。現在の公開商品導線に使わない |
+| `src/components/` | 商品カード・販売店リンク・広告開示・画像表示・言語切替 |
+| `src/lib/affiliate.ts` | 安全なURL・許可ホスト・広告切替の共通関数 |
+| `src/config/site.ts` / `tokens.css` | 名称・説明・公開設定と見た目 |
+| `docs/research/sources.json` | 一次資料・確認日・支える事実 |
+| `docs/assets.json` / `image-generation.json` | 画像の権利状態・制作記録・非実物の用途 |
+| `specs/` | 版ごとの仕様・設計・タスク。最新はspecs/004-product-selection/ |
+| `scripts/` / `tests/` | データ・リンク・広告・表示・公開設定の検証 |
 
-英語は `/en/`、日本語は `/ja/`。同じページは同じslugを持ち、右上の「日本語 / English」ボタン1つで対応ページへ移動します。商品フィルターのクエリとURLのhashも切替時に保持します。都道府県と制作地の確証、工房と販売店は別の情報です。未知属性は有利なフィルター条件を満たす値にしません。下書きや空の47都道府県ページは公開しません。
+## 商品を増やす
 
-地域一覧は全国の産地を扱う入口ですが、調査済みで本文と公開商品が揃う地域だけを掲載します。空の47都道府県ページは生成しません。地域を増やすときはマスタと商品を追加し、`src/content/places/<prefectureId>.md` に `prefectureId` と `relatedMerchantIds`、技法は `src/content/crafts/<craftId>.md` に `craftId` を設定します。ファイル名と対応IDを一致させます。地域・技法は汎用ルートから生成されるため、新しい都道府県ごとの画面ファイルは不要です。publishedで空でない本文、出典、対応する公開商品が揃った場合だけページ・サイトマップの対象になります。詳しい手順は `docs/operations.md` を参照してください。
+商品・作り手・販売店を追加し、一次情報と確認日、日英の商品本文を揃えます。ブログ記事は必要ありません。公開商品には選ぶ理由と未確認点を示し、実物未使用の商品に試着レビューを作りません。価格・数値・広告URLはcatalogを1回だけ更新し、本文へ再入力しません。手順は `docs/operations.md`。
 
-## 広告の切り替え
+英語は `/en/`、日本語は `/ja/`。同じ商品slugを保ち、右上のボタン1つで現在の商品・一覧・絞り込みquery/hashを維持して切り替えます。産地・技法は商品を探す分類ページで、背景説明を折りたたみに収めます。地域は独立マスタと共通ルートから増やせます。神奈川の画面を複製して全国ページを作りません。
 
-プログラムの公開募集状態と当運営者の承認状態を別管理します。商品別リンクとプログラムの両方が `approved`、有効なHTTPS広告URL、programId、実際のリンク確認日がある場合だけ広告リンクを採用します。それ以外は公式通常リンクへ戻り、通常URLもなければCTAを出しません。広告リンクには `sponsored` を付け、最初の広告リンクより前に共通開示を表示します。
+旧 `/journal/` と旧読みものURLは、適切な商品・一覧・技法へ案内する移行口にします。ブログとして公開せず、noindexにし、サイトマップと通常のナビ・商品導線には載せません。旧ファイルと過去の実行レポートは履歴として保持します。
 
-操作手順と条件確認は `docs/operations.md`、候補比較は `docs/research/affiliate-programs.md`、未解決条件は `docs/affiliate-readiness.md` を参照してください。BECOS英語版の候補があることは、現在の神奈川商品が提携対象であることを意味しません。
+## 広告・公開・引継ぎ
 
-## 公開設定
+承認後は商品別リンクとprogramの両承認、対象販売店、確認日、有効HTTPS URL、完全一致の許可ホストを設定した場合だけ広告化します。停止・欠落・不正は通常URLへ戻り、通常URLも不正ならボタンを出しません。最初の広告ボタンより前の開示と `sponsored` は共通部品で管理します。現在の商品がBECOS等の対象とは確認していません。
 
-`.env.example` を起点に、実URL・公開責任の表示・使える問い合わせ方法を設定します。`PUBLIC_SITE_URL`、`PUBLIC_BASE_PATH`、`PUBLIC_PUBLISH_MODE`、`PUBLIC_OPERATOR_NAME`、`PUBLIC_CONTACT_EMAIL`、`PUBLIC_REPOSITORY_URL` が入口です。`PUBLIC_` に秘密値を入れないでください。
+- 更新手順：`docs/operations.md`
+- 承認後の設定・停止：`docs/affiliate-operations.md`
+- 安全設計と配信環境の制約：`docs/security.md`
+- 候補・未確認条件：`docs/research/affiliate-programs.md`、`docs/affiliate-readiness.md`
+- 現在の範囲と最終結果：`docs/handoff.md`、`docs/deployment-results.json`
 
-初期の未設定状態では `pnpm readiness` は公開ブロッカーを表示して非0終了します。これはローカルプレビューの動作不良を意味しません。正式公開時は実URLのcanonical、OGP、sitemap、robots、サブパス、Contact、404を実際に確認します。GitHubリポジトリ・公開URL・申請送信の成功は、確認された結果だけを `docs/handoff.md` に記録します。
-
-## 次のAI・運営者へ
-
-変更前に `AGENTS.md` と `docs/constitution.md` を読み、仕様から作業を始めてください。商品・工房・産地・記事の追加、価格更新、承認後の切替、配色・言語の変更、公開更新の具体的な手順は `docs/operations.md` にまとめています。出典、権利、申請、実測値や連絡先の不足を架空の値で埋めないことが、このサイトの最優先ルールです。
-
-## 翻訳を更新する
-
-英語本文は従来の各Collection直下、日本語は同じCollectionの `ja/<同じslug>.md` に置きます。例：`src/content/guides/pierced-or-clip-on.md` と `src/content/guides/ja/pierced-or-clip-on.md`。日本語のfrontmatterは `locale: ja`。本文の出典ID・商品ID・地域/技法IDは日英で一致させ、記事内容を更新したら両方を確認します。商品本文も `products/ja/<商品ID>.md` を用意します。
-
-商品・工房・販売店の日本語ラベルは `src/data/translations/ja.json` に置き、共有事実を上書きしません。不明な金具や寸法は日本語でもnullのままです。`pnpm check` と `pnpm test` は翻訳欠落、言語間の参照ずれ、非ジュエリーの公開を検出します。変更後はビルドし、両言語のページと右上ボタンを確認します。
-
-## 0.3の公開と安全な運用
-
-現在の名称はJapanese Craft Jewelry。新しい紹介特集は`/en/journal/hakone-yosegi-pierced-earrings/`と`/en/journal/hakone-yosegi-non-pierced-earrings/`、同slugの日本語版もあります。
-
-- 安全設計とGitHub Pagesの制約：`docs/security.md`
-- 承認後の広告host/URL設定・停止：`docs/affiliate-operations.md`
-- SEOとURL移行：`docs/seo-and-migration.md`
-- 生成画像の原promptと確認方法：`docs/image-generation.json`、画像台帳`docs/assets.json`
-
-名称やURLの変更だけで検索順位・流入は保証されません。検索公開後もGoogleのクロール・登録を待つ必要があり、Search Consoleの所有確認/登録送信は行っていません。
+`.env.example` は設定名の見本です。実際の値はローカル環境または公開workflowへ設定します。`PUBLIC_` は公開情報なので秘密値を入れません。公開はreadiness・verify・Actions成功・実URL確認まで行い、申請送信や提携承認と分けて記録します。

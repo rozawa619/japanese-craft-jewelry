@@ -2,7 +2,7 @@
 title: "Reading the detail in Hakone yosegi"
 description: "Understand the difference between a craft technique, a product's construction and the provenance of a particular piece."
 locale: "en"
-publishStatus: "published"
+publishStatus: "draft"
 updatedAt: "2026-11-16"
 sourceIds: ["hamamatsuya-craft-overview", "hamamatsuya-technique", "hamamatsuya-workshop", "maruyama-company"]
 category: "Craft notes"

@@ -1,5 +1,5 @@
 ---
-title: "Editorial policy"
+title: "How we select"
 description: "How we select jewelry, distinguish facts from suggestions and keep uncertainty visible."
 locale: "en"
 publishStatus: "published"
@@ -29,6 +29,6 @@ Retailer links may become affiliate links only when a commercial relationship an
 
 ## Corrections and updates
 
-If you identify an error, use the contact method shown on our contact page and include the page URL, the disputed detail and a primary source where possible. We review corrections against the underlying evidence and update the relevant record. A date on an article does not imply that every external retailer page will remain unchanged afterward.
+If you identify an error, use the contact method shown on our contact page and include the page URL, the disputed detail and a primary source where possible. We review corrections against the underlying evidence and update the relevant record. A date on a product page does not imply that every external retailer page will remain unchanged afterward.
 
-Some feature pages include clearly labeled AI-generated styling illustrations. These show a fictional adult model and illustrative jewelry, not a photograph of the listed product, a customer endorsement or a wear test. Patterns, dimensions, hardware and fit may differ from the actual item. Use the retailer’s current photographs and specifications for purchase decisions.
+Some product pages include clearly labeled AI-generated styling illustrations. These show a fictional adult model and illustrative jewelry, not a photograph of the listed product, a customer endorsement or a wear test. Patterns, dimensions, hardware and fit may differ from the actual item. Use the retailer’s current photographs and specifications for purchase decisions.

@@ -9,3 +9,7 @@ Google公式[検索の基本](https://developers.google.com/search/docs/essentia
 [GitHubのrename仕様](https://docs.github.com/en/repositories/creating-and-managing-repositories/renaming-a-repository)ではrepo閲覧/clone等は転送される一方、プロジェクトサイトURLの自動転送は対象外。旧/ito-craft/サイトURLが将来使えるとは保証しない。新URLを共有し、旧repo名を別repoへ再利用しない。安定した商品/記事のslugは維持し、現在の資料URLは新baseへ。過去specと実行reportは当時の記録として旧URLのまま保存。
 
 更新：.github/workflows/deploy.ymlのpublic設定を正本としてreadiness→verify→Actions→公開URLを確認。previewへ戻す場合はPUBLIC_PUBLISH_MODE=previewにして公開を更新し、noindexへ変わることを検証。独自ドメインへ移す場合はbase・canonical・hreflang・robots・CSP・問い合わせURL・HTTPSを再確認する。
+
+## 0.4の商品セレクトへの移行
+
+ブログ/読みものを公開導線から外し、紹介2本を対応する商品詳細へ統合。商品詳細はWebPageで、レビュー/Offer/Articleを作らない。旧journal14URLは固定先へのmeta refresh0＋noindexの移動口とし、canonical/hreflang/記事本文/サイトマップへ残さない。正規sitemapは商品/分類/運営情報の40URL。移動はHTTP301と報告しない。商品名・種類・技法を表すtitle/説明と日英のpeerを維持する。新構成の公開/検索反映は最新deployment-resultsを参照。

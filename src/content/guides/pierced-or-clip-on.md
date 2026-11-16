@@ -2,7 +2,7 @@
 title: "Pierced or clip-on? Check the fastening first"
 description: "A practical comparison of earring categories, metal details and the questions to ask when a listing leaves something out."
 locale: "en"
-publishStatus: "published"
+publishStatus: "draft"
 updatedAt: "2026-11-16"
 sourceIds: ["hamamatsuya-earrings", "maruyama-clip-c", "maruyama-pierced-c"]
 category: "Buying guide"

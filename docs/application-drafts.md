@@ -4,13 +4,13 @@
 
 ## サイト紹介文
 
-An English-and-Japanese editorial guide to craft jewelry from across Japan. Our current researched edit includes Hakone yosegi earrings and a pendant. We help readers compare documented materials, fittings, dimensions, maker information and retailer links, while clearly identifying details that still need confirmation. Our guides explain how to choose pierced earrings and clip-ons and what to ask before ordering from overseas. We do not sell products, process payments or arrange shipping. Product information is researched from primary sources and dated; our editorial coverage does not imply hands-on testing.
+An English-and-Japanese curated selection of craft jewelry from across Japan. Our current researched edit includes Hakone yosegi earrings and a pendant. We help readers compare documented materials, fittings, dimensions, maker information and retailer links, while clearly identifying details that still need confirmation. Each product introduction explains why it was selected, styling suggestions and what to ask before ordering from overseas. We do not sell products, process payments or arrange shipping. Product information is researched from primary sources and dated; our editorial coverage does not imply hands-on testing.
 
 ## BECOS英語版：条件確認と参加申請の草稿
 
 Hello BECOS Affiliate Team,
 
-I publish an English-and-Japanese editorial site introducing craft jewelry and maker stories from across Japan to international and Japanese readers. Our guides connect readers with retailers; we do not take orders, payments or shipping requests.
+I publish an English-and-Japanese curated product selection introducing craft jewelry from across Japan to international and Japanese readers. Our product pages connect readers with retailers; we do not take orders, payments or shipping requests.
 
 The current eight jewelry listings link to Hamamatsuya and Hakone Maruyama, rather than to BECOS. Those are ordinary links that do not earn us a commission. I am asking about eligibility for future BECOS-specific coverage; I will research suitable products individually before adding any approved affiliate links.
 

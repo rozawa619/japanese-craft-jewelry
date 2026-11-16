@@ -14,8 +14,12 @@ const route=(locale,path='')=>new URL(base+locale+'/'+path,origin).href;
 const catalog=JSON.parse(await readFile(resolve(root,'src/data/catalog.json'),'utf8'));
 const published=catalog.products.filter(product=>product.publishStatus==='published');
 const longest=[...published].sort((a,b)=>b.title.length-a.title.length)[0];
-const routes={home:'',objects:'objects/',product:'objects/'+longest.slug+'/',guide:'journal/pierced-or-clip-on/',featurePierced:'journal/hakone-yosegi-pierced-earrings/',featureClip:'journal/hakone-yosegi-non-pierced-earrings/',regions:'places/',region:'places/kanagawa/',craft:'crafts/hakone-yosegi/',contact:'contact/'};
-const report={checkedAt:new Date().toISOString(),origin,base,method:'Fresh headless Chrome with no existing user profile. EN/JA route, current-page language switching, query/hash, jewelry scope, UI and accessibility checks. Does not open retailer destinations.',checks:[],pages:[],screenshots:[],pageErrors:[],consoleErrors:[],failures:[]};
+const selectedIds=['hamamatsuya-catch-pierced','hamamatsuya-clip'];
+const selected=selectedIds.map(id=>published.find(product=>product.id===id));
+if(selected.some(product=>!product))throw new Error('Selected product is missing from the published catalog.');
+const routes={home:'',objects:'objects/',product:'objects/'+longest.slug+'/',featurePierced:'objects/'+selected[0].slug+'/',featureClip:'objects/'+selected[1].slug+'/',regions:'places/',region:'places/kanagawa/',craft:'crafts/hakone-yosegi/',contact:'contact/'};
+const legacyTargets={"":"objects/","hakone-yosegi-pierced-earrings":"objects/hamamatsuya-surgical-stainless-pierced-earrings/","hakone-yosegi-non-pierced-earrings":"objects/hamamatsuya-yosegi-non-pierced-earrings/","everyday-craft-earrings":"objects/","pierced-or-clip-on":"objects/","buying-from-overseas":"objects/","understanding-yosegi":"crafts/hakone-yosegi/"};
+const report={checkedAt:new Date().toISOString(),origin,base,method:'Fresh headless Chrome with no existing user profile. EN/JA route, product-led selection, no-blog navigation, current-product language switching, query/hash, jewelry scope, UI and accessibility checks. Does not open retailer destinations.',checks:[],pages:[],screenshots:[],pageErrors:[],consoleErrors:[],failures:[]};
 await mkdir(resolve(root,'artifacts'),{recursive:true});
 const browser=await chromium.launch({channel:'chrome',headless:true});
 const check=async(name,action)=>{try{const detail=await action();report.checks.push({name,status:'passed',...(detail===undefined?{}:{detail})});console.log('PASS '+name)}catch(error){const message=error instanceof Error?error.message:String(error);report.checks.push({name,status:'failed',message});report.failures.push({name,message});console.error('FAIL '+name+': '+message)}};
@@ -65,11 +69,14 @@ try{
      const text=await page.locator('main').innerText();
      assert.equal(text.includes('hamamatsuya-yosegi-kanzashi'),false);
      if(locale==='ja')assert.ok((text.match(/[ぁ-んァ-ヶ一-龠]/g)||[]).length>30,'Japanese page needs translated main content.');
+     assert.equal(await page.locator('a[href*="/journal/"]').count(),0,'Regular pages must not link to retired reading pages.');
+     if(kind==='home')assert.ok(await page.locator('[data-product-card]').count()>=2,'Home should present selected products directly.');
      if(kind.startsWith('feature')){
       const figure=page.locator('figure[data-editorial-asset]').first();
       assert.equal(await figure.count(),1);
       assert.match(await figure.locator('figcaption').innerText(),locale==='ja'?/AI生成.*実物写真ではありません/:/AI styling illustration.*not a photograph/);
       const image=figure.locator('img');
+      assert.match(await image.getAttribute('src'),kind==='featurePierced'?/hakone-yosegi-pierced-styling\.webp$/:/hakone-yosegi-clipon-styling\.webp$/);
       await image.scrollIntoViewIfNeeded();
       await image.evaluate(node=>node.decode());
       const intrinsic=await image.evaluate(node=>({width:node.naturalWidth,height:node.naturalHeight}));
@@ -77,7 +84,12 @@ try{
       const peer=locale==='en'?'ja':'en';
       await switchTo(page,peer,path);await switchTo(page,locale,path);
      }
-     const measured=['home','objects','product','guide','featurePierced','featureClip'].includes(kind);
+     if(kind==='objects'){
+      const images=page.locator('[data-product-card] figure[data-editorial-asset]');
+      assert.ok(await images.count()>=2,'Both selected products should show their labeled styling images.');
+      for(const figure of await images.all()){assert.match(await figure.locator('figcaption').innerText(),locale==='ja'?/AI生成.*実物写真ではありません/:/AI styling illustration.*(?:not a product photograph|not a photograph of (?:this|the featured) product)/);}
+     }
+     const measured=['home','objects','product','featurePierced','featureClip'].includes(kind);
      let axe=null;
      if(measured){const result=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();axe=result.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.map(n=>n.target)}));assert.equal(axe.length,0,JSON.stringify(axe))}
      const retail=await page.locator('a[data-sponsored]').evaluateAll(links=>links.map(link=>({sponsored:link.getAttribute('data-sponsored'),rel:link.getAttribute('rel')})));
@@ -96,25 +108,18 @@ try{
     await switchTo(page,locale,routes.product);
     assert.equal(await page.locator('h1').innerText(),initial);
    });
-   await check(viewport.name+' '+locale+' current guide has a fully translated body',async()=>{
-    await page.goto(route(locale,routes.guide));
-    if(locale==='en')await switchTo(page,'ja',routes.guide);
-    const prose=await page.locator('article.prose').innerText();
-    assert.ok((prose.match(/[ぁ-んァ-ヶ一-龠]/g)||[]).length>=100,'Japanese article body was not translated.');
-    await switchTo(page,'en',routes.guide);
-    assert.match(await page.locator('article.prose').innerText(),/[A-Za-z]{6}/);
-    if(locale==='ja')await switchTo(page,'ja',routes.guide);
-    const table=page.locator('article.prose table');
-    if(await table.count()){
-      assert.equal(await table.getAttribute('tabindex'),'0','Article comparison must be keyboard focusable.');
-      await table.focus();
-      assert.equal(await table.evaluate(node=>document.activeElement===node),true);
-      if(await table.evaluate(node=>node.scrollWidth>node.clientWidth+1)){
-        await table.evaluate(node=>node.scrollLeft=0);
-        await page.keyboard.press('ArrowRight');
-        await page.waitForFunction(()=>document.querySelector('article.prose table').scrollLeft>0);
-      }
-    }
+   await check(viewport.name+' '+locale+' selected product has translated detail and retailer CTA',async()=>{
+    const path=routes.featurePierced;
+    await page.goto(route(locale,path));
+    if(locale==='en')await switchTo(page,'ja',path);
+    const japanese=await page.locator('main').innerText();
+    assert.ok((japanese.match(/[ぁ-んァ-ヶ一-龠]/g)||[]).length>=100,'Japanese product detail was not translated.');
+    assert.ok(await page.locator('main a[data-sponsored]').count()>0,'Product detail needs a real retailer destination.');
+    await switchTo(page,'en',path);
+    assert.match(await page.locator('main').innerText(),/[A-Za-z]{6}/);
+    const structured=await page.locator('script[type="application/ld+json"]').allTextContents();
+    assert.equal(structured.some(value=>JSON.parse(value)['@type']==='Article'),false,'Products must not use blog Article schema.');
+    if(locale==='ja')await switchTo(page,'ja',path);
    });
    await check(viewport.name+' '+locale+' filters and language preserve current query and hash',async()=>{
     await page.goto(route(locale,routes.objects));
@@ -165,6 +170,29 @@ try{
   }
   await page.close();
  });
+ for(const locale of ['en','ja'])await check(locale+' retired reading routes move to product selections',async()=>{
+  const page=await browser.newPage();
+  const results=[];
+  for(const [slug,target]of Object.entries(legacyTargets)){
+   const legacy='journal/'+(slug?slug+'/':'');
+   const response=await page.request.get(route(locale,legacy));
+   assert.equal(response.status(),200);
+   const html=await response.text();
+   assert.match(html,/<meta[^>]+name="robots"[^>]+content="noindex, nofollow"/);
+   assert.equal(/rel="canonical"|hreflang=|"@type"\s*:\s*"Article"/.test(html),false);
+   const expected=new URL(route(locale,target));
+   assert.ok(html.includes('data-legacy-redirect="'+expected.pathname+'"'));
+   assert.ok(html.includes('0;url='+expected.pathname));
+   await page.goto(route(locale,legacy)+'?next=https%3A%2F%2Funtrusted.invalid%2F#old-anchor');
+   await page.waitForURL(url=>url.pathname===expected.pathname);
+   assert.equal(new URL(page.url()).search,'','Legacy migration must use its fixed destination, not user query input.');
+   assert.equal(new URL(page.url()).hash,'');
+   results.push({from:legacy,to:target});
+  }
+  const sitemap=await (await page.request.get(new URL(base+'sitemap.xml',origin).href)).text();
+  assert.equal(/\/(en|ja)\/journal\//.test(sitemap),false);
+  await page.close();return results;
+ });
  await check('No uncaught client exceptions',()=>assert.deepEqual(report.pageErrors,[]));
  await check('No unexpected console errors',()=>{
   const unexpected=report.consoleErrors.filter(error=>!(/kanzashi/.test(error.url)&&/404/.test(error.message)));
@@ -174,7 +202,7 @@ try{
  await browser.close();
  report.completedAt=new Date().toISOString();
  report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,pages:report.pages.length,axeViolations:report.pages.reduce((sum,page)=>sum+(page.axeViolations?.length||0),0),screenshots:report.screenshots.length};
- await writeFile(resolve(root,process.env.CHECK_REPORT_PATH||'docs/bilingual-results.json'),JSON.stringify(report,null,2)+'\n');
+ await writeFile(resolve(root,process.env.CHECK_REPORT_PATH||'docs/selection-browser-results.json'),JSON.stringify(report,null,2)+'\n');
  console.log(JSON.stringify(report.summary));
  if(report.failures.length)process.exitCode=1;
 }

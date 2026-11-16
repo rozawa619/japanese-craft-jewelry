@@ -2,7 +2,7 @@
 title: "Japanese Non-Pierced Earrings: Hamamatsuya in Hakone"
 description: "Explore Hamamatsuya's yosegi wooden earrings from Hakone, Kanagawa. A non-pierced jewelry introduction with styling ideas and fastening questions."
 locale: "en"
-publishStatus: "published"
+publishStatus: "draft"
 updatedAt: "2026-11-16"
 sourceIds: ["hamamatsuya-earrings", "hamamatsuya-workshop", "hamamatsuya-technique", "hamamatsuya-craft-overview", "hamamatsuya-en-shop", "hamamatsuya-shipping"]
 category: "Jewelry introduction"

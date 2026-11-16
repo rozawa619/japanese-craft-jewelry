@@ -2,6 +2,7 @@ import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { basename, resolve, sep } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { catalogSchema } from '../src/lib/schema.ts';
+import { selection } from '../src/config/selection.ts';
 import type { Catalog } from '../src/lib/schema.ts';
 import { safeHttps, isAllowedDestination, policyForLink } from '../src/lib/affiliate.ts';
 
@@ -61,6 +62,11 @@ export function loadProjectData(root = projectRoot): ProjectData {
 export function collectValidationErrors(data: ProjectData): string[] {
   const errors: string[] = [];
   const { catalog, sources, assets } = data;
+  const selectedIds=[...selection.featuredProductIds];
+  if(new Set(selectedIds).size!==selectedIds.length)errors.push('selection: duplicate featured product ID');
+  for(const id of new Set<string>([selection.heroProductId,...selectedIds])){
+    if(!catalog.products.some(product=>product.id===id&&product.publishStatus==='published'))errors.push('selection: published product required for '+id);
+  }
   const groups = { ...catalog, sources, assets };
   for (const [name, records] of Object.entries(groups)) {
     const seen = new Set<string>();

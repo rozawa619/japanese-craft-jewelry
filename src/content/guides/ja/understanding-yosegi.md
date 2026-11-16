@@ -2,7 +2,7 @@
 title: "箱根寄木細工を、細部から読み解く"
 description: "技法、商品の構造、個別の作り手や製造地を分けて理解するためのガイド。"
 locale: "ja"
-publishStatus: "published"
+publishStatus: "draft"
 updatedAt: "2026-11-16"
 sourceIds: ["hamamatsuya-craft-overview", "hamamatsuya-technique", "hamamatsuya-workshop", "maruyama-company"]
 category: "工芸のノート"

@@ -1,0 +1,8 @@
+---
+import {t,type Locale} from '../lib/i18n';
+interface Props {target:string;locale:Locale}
+const {target,locale}=Astro.props;
+if(!target.startsWith(import.meta.env.BASE_URL)||target.startsWith('//'))throw new Error('Legacy destination must stay within this site');
+---
+<!doctype html><html lang={locale}><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="robots" content="noindex, nofollow"/><meta http-equiv="refresh" content={'0;url='+target}/><title>{t(locale,'Continue to the jewelry selection','商品紹介へ移動します')} | Japanese Craft Jewelry</title></head><body data-legacy-redirect={target}><main><h1>{t(locale,'Explore the jewelry selection.','商品紹介へ移動します。')}</h1><p>{t(locale,'Our introductions now live with the selected jewelry.','おすすめの商品と紹介内容を、商品ページにまとめました。')}</p><a href={target}>{t(locale,'Continue to the jewelry →','商品を見る →')}</a></main></body></html>
+<style>body{margin:0;background:#f7f5ed;color:#213b2e;font:16px/1.8 system-ui,sans-serif}main{max-width:640px;margin:15vh auto;padding:24px}h1{font-size:32px;line-height:1.4}a{color:inherit;text-underline-offset:5px}</style>

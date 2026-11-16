@@ -2,7 +2,7 @@
 title: "Choosing craft earrings for everyday wear"
 description: "Start with your wardrobe, then compare size, fastenings and the details a beautiful product photograph cannot tell you."
 locale: "en"
-publishStatus: "published"
+publishStatus: "draft"
 updatedAt: "2026-11-16"
 sourceIds: ["hamamatsuya-earrings", "hamamatsuya-technique", "maruyama-pierced-c", "maruyama-category"]
 category: "Choosing well"
