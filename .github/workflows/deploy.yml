@@ -25,7 +25,7 @@ jobs:
       PUBLIC_BASE_PATH: /japanese-craft-jewelry/
       PUBLIC_PUBLISH_MODE: public
       PUBLIC_REPOSITORY_URL: https://github.com/rozawa619/japanese-craft-jewelry
-      PUBLIC_OPERATOR_NAME: rozawa619
+      PUBLIC_OPERATOR_NAME: SORA
       PUBLIC_CONTACT_EMAIL: ''
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4, verified 2026-11-16

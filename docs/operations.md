@@ -96,7 +96,7 @@ GitHubのリポジトリ作成・push・Pages公開は認証と権限がある�
 
 ## GitHub Pagesの有効化
 
-作成済みrepoはhttps://github.com/rozawa619/japanese-craft-jewelry。ソースをmainへpush後、Settings→Pages→SourceをGitHub Actionsにする。deploy.ymlで検証して公開する。0.3のworkflowはpublicを設定し、確認済みのGitHub公開名rozawa619を責任表示、実在IssuesをContactとして使う。previewへ戻す場合はworkflowのPUBLIC_PUBLISH_MODEをpreviewに変更する。元のプレビューmodeでもPages URLで閲覧できるが、公開成功はHTTPとActions結果で確認する。
+作成済みrepoはhttps://github.com/rozawa619/japanese-craft-jewelry。ソースをmainへpush後、Settings→Pages→SourceをGitHub Actionsにする。deploy.ymlで検証して公開する。0.3のworkflowはpublicを設定し、ユーザー指定の公開名SORAを責任表示、実在IssuesをContactとして使う。previewへ戻す場合はworkflowのPUBLIC_PUBLISH_MODEをpreviewに変更する。元のプレビューmodeでもPages URLで閲覧できるが、公開成功はHTTPとActions結果で確認する。
 
 GitHub Pagesのプロジェクト公開ではrobots.txtは/japanese-craft-jewelry/配下になる。検索エンジンがドメイン直下のrobots.txtを参照する点に注意し、previewの検索除外は各HTMLのnoindexでも実施する。独自ドメインへ移す場合はドメイン直下のrobotsも再確認する。
 

@@ -8,7 +8,7 @@ Japanese Craft Jewelry。全国の工芸ジュエリーを英語/日本語で紹
 
 ## 公開と責任表示
 
-既存repoをhttps://github.com/rozawa619/japanese-craft-jewelryへrename（同ID/履歴/Issuesを維持）。新URLはhttps://rozawa619.github.io/japanese-craft-jewelry/en/ と /ja/。Pagesの旧プロジェクトURL自動転送は保証されない。GitHubユーザー名は変更していない。public/index設定と、指定済み公開GitHub名rozawa619を責任表示に使用。実名/住所/メールを作っていない。ContactはGitHub Issues（要account/公開投稿）、セキュリティは有効化した非公開vulnerability reporting。実際の配信完了/URL確認はdeployment-results.jsonを優先。Search Console/検索掲載/流入計測は未実施。
+既存repoをhttps://github.com/rozawa619/japanese-craft-jewelryへrename（同ID/履歴/Issuesを維持）。新URLはhttps://rozawa619.github.io/japanese-craft-jewelry/en/ と /ja/。Pagesの旧プロジェクトURL自動転送は保証されない。GitHubユーザー名は変更していない。public/index設定と、ユーザー指定の公開名SORAを責任表示に使用。実名/住所/メールを作っていない。ContactはGitHub Issues（要account/公開投稿）、セキュリティは有効化した非公開vulnerability reporting。実際の配信完了/URL確認はdeployment-results.jsonを優先。Search Console/検索掲載/流入計測は未実施。
 
 ## 設計と安全性
 

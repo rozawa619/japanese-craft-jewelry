@@ -2,7 +2,7 @@
 
 [English](https://rozawa619.github.io/japanese-craft-jewelry/en/) · [日本語](https://rozawa619.github.io/japanese-craft-jewelry/ja/) · [全ソース](https://github.com/rozawa619/japanese-craft-jewelry)
 
-公開バージョンと最終確認の状態は `docs/deployment-results.json` と `docs/handoff.md` に記録します。公開modeはpublic。運営表示は指定済みのGitHub公開名rozawa619、訂正窓口は実在GitHub Issuesです。提携は未申請・未承認です。
+公開バージョンと最終確認の状態は `docs/deployment-results.json` と `docs/handoff.md` に記録します。公開modeはpublic。運営表示はユーザー指定の公開名SORA、訂正窓口は実在GitHub Issuesです。提携は未申請・未承認です。
 
 日本各地の工芸ジュエリーを紹介する英語・日本語のメディアです。全国の産地・作り手へ広げられる共通データと画面を持ち、現時点の調査済み特集は箱根寄木細工です。当サイトに商品販売・カート・決済・発送機能はありません。
 

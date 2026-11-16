@@ -5,7 +5,7 @@
 | ID | 受入条件 |
 |---|---|
 | SS-001 | 表示名Japanese Craft Jewelry、GitHubリポジトリjapanese-craft-jewelryへ変更。URL/remote/公開workflow/連絡窓口/資料を揃え、実公開を確認。国全体の対象と安定商品slugは維持。 |
-| SS-002 | 検索者に意味が伝わる固有title/description/heading、英語/日本語、canonical/hreflang/sitemapを整備。順位・流入・Googleサイト名表示を保証しない。公開GitHub identity rozawa619と実在Issuesで公開責任/訂正窓口を表示し、readiness通過後に検索可能なpublicへ。 |
+| SS-002 | 検索者に意味が伝わる固有title/description/heading、英語/日本語、canonical/hreflang/sitemapを整備。順位・流入・Googleサイト名表示を保証しない。ユーザー指定の公開名SORAと実在Issuesで公開責任/訂正窓口を表示し、readiness通過後に検索可能なpublicへ。 |
 | SS-003 | 静的配信の攻撃面、外部URL/広告host/JSON-LD/CSP/依存/workflowの権限/秘密を点検し必要な対策と限界を記録。許可外広告先・欠落・停止で通常リンクfallback。実際の承認は作らない。 |
 | SS-004 | 神奈川・箱根の実在耳飾り2件の独自紹介特集を日英で追加。一次情報・確認日・未確認仕様・海外購入注意を維持。価格/広告URLは既存データ参照。 |
 | SS-005 | 公式HPで実物の形状を確認し、新しいAI着用イメージを成人女性で制作。実物/試着/顧客レビュー/メーカー提供写真と誤認させず、柄・寸法・金具の忠実再現を主張しない。公式写真は取得転載しない。ユーザーの今回の画像制作依頼が初期版の抽象装飾のみという制約を変更する。 |
