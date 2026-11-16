@@ -9,6 +9,7 @@ import {fileURLToPath} from 'node:url';
 const root=fileURLToPath(new URL('../',import.meta.url));
 if(existsSync(resolve(root,'.env')))process.loadEnvFile(resolve(root,'.env'));
 const origin=process.env.CHECK_BASE_URL||'http://127.0.0.1:4321';
+const screenshotPrefix=(process.env.CHECK_SCREENSHOT_PREFIX||'clear-stage').replace(/[^a-zA-Z0-9_-]/g,'-');
 const base='/'+(process.env.PUBLIC_BASE_PATH||'').split('/').filter(Boolean).join('/')+((process.env.PUBLIC_BASE_PATH||'').split('/').filter(Boolean).length?'/':'');
 const route=(locale,path='')=>new URL(base+locale+'/'+path,origin).href;
 const catalog=JSON.parse(await readFile(resolve(root,'src/data/catalog.json'),'utf8'));
@@ -161,9 +162,9 @@ try{
      report.pages.push({viewport:viewport.name,locale,kind,url:page.url(),status:response.status(),dimensions:dims,axeViolations:axe,retailerLinks:retail.length});
      return {status:response.status(),dimensions:dims,axeMeasured:measured,purchaseFlow};
     });
-    if(locale==='ja'&&kind==='featurePierced'&&['desktop','mobile'].includes(viewport.name))await screenshot(page,'artifacts/clear-stage-ja-'+viewport.name+'-product.png');
-    if(locale==='ja'&&kind==='featureClip'&&viewport.name==='mobile')await screenshot(page,'artifacts/clear-stage-ja-mobile-clip.png');
-    if(locale==='ja'&&kind.startsWith('featureAdditional')&&viewport.name==='mobile')await screenshot(page,'artifacts/clear-stage-ja-mobile-'+featuredByKind[kind].id+'.png');
+    if(locale==='ja'&&kind==='featurePierced'&&['desktop','mobile'].includes(viewport.name))await screenshot(page,'artifacts/'+screenshotPrefix+'-ja-'+viewport.name+'-product.png');
+    if(locale==='ja'&&kind==='featureClip'&&viewport.name==='mobile')await screenshot(page,'artifacts/'+screenshotPrefix+'-ja-mobile-clip.png');
+    if(locale==='ja'&&kind.startsWith('featureAdditional')&&viewport.name==='mobile')await screenshot(page,'artifacts/'+screenshotPrefix+'-ja-mobile-'+featuredByKind[kind].id+'.png');
    }
    await check(viewport.name+' '+locale+' current product switches language and returns',async()=>{
     await page.goto(route(locale,routes.product));
@@ -275,6 +276,7 @@ try{
 }finally{
  await browser.close();
  report.completedAt=new Date().toISOString();
+ report.finalizedAt=report.completedAt;
  report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,pages:report.pages.length,axeViolations:report.pages.reduce((sum,page)=>sum+(page.axeViolations?.length||0),0),screenshots:report.screenshots.length};
  await writeFile(resolve(root,process.env.CHECK_REPORT_PATH||'docs/clear-stage-browser-results.json'),JSON.stringify(report,null,2)+'\n');
  console.log(JSON.stringify(report.summary));

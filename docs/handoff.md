@@ -84,3 +84,8 @@ pnpm readinessは実URL・public設定・運営名・データの技術検査で
 0.5は既存8商品の魅力と装いを先にする構成、日英2点のAI着用イメージを実装した版。2026-11-16 09:29 UTC、head be3d316c4e9516739d814d446709c3d1052a1e1e、Actions43839206515 successの公開記録がある。詳細はdocs/appeal-hosted-results.jsonと当時の検証記録を参照。Contactを表示していた当時の画面・件数・成功を、Contactなし／10商品／7画像の0.6へ読み替えない。
 
 0.4以前のselection-*.json、さらに古いbrowser/ad-build等のレポートも履歴として保持する。古いITO名、旧リポジトリURL、神奈川のみ、Contact必須等の記載を、現在の公開仕様へ戻す根拠にしない。
+
+
+## 0.6 最終公開結果
+
+2026-11-16 19:24:48 JST確定。アプリ配信commit5abfec84a230b2326f50ad9ea479eed76fff4688、Actions43847763433 success。公開123/123（96画面、axe対象72画面0）＋補足13/13、JS/console0。正規54URL/7画像のSHA一致/Contact日英404/SORA/3素材/最終仕様を実確認。ローカル123/123、最終details12/12、広告fixture5/5を保持。後続commitは記録・再実行scriptのみで配信内容を変えない。全ソース/ZIP/screenshotsはworkspaceのjapanese-craft-jewelry-delivery。提携は全not_appliedで申請送信なし。

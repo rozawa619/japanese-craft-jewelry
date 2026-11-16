@@ -16,3 +16,9 @@
 広告fixtureは実catalog/root dist不変を記録。後続の仕様補足はwhatToCheckと重量不明の表示のみで広告経路は変更なし。全not_applied、申請・承認・実成果計測なし。
 
 根拠: docs/clear-stage-browser-results.json、clear-stage-final-detail-results.json、clear-stage-ad-build-results.json。公開後の状態はclear-stage-hosted-results.jsonとdeployment-results.jsonのversion0.6.0を優先。
+
+## 実公開の確定
+
+commit5abfec84a230b2326f50ad9ea479eed76fff4688、Actions43847763433 success。2026-11-16 19:24:48 JST時点、公開123/123・96画面（axe対象72画面0）・JS/console0。補足13/13、正規54URLすべて200/index、130実行JS hash/54JSON、7画像のローカルSHA一致、Contact日英404/導線・sitemap不在、SORA/3素材/短い選定方針/最終仕様を確認した。全検証プロセスexit0、report確定後の書込なし。
+
+日英プレビュー: https://rozawa619.github.io/japanese-craft-jewelry/ja/ と /en/。実申請/承認/成果発生なし。ソース納品はworkspace内japanese-craft-jewelry-delivery/sourceおよび同フォルダZIP。

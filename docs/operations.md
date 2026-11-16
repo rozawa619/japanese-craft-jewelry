@@ -121,3 +121,12 @@ catalogのprefectures／crafts／materials／productTypesは独立マスタで�
 GitHub Pagesのproject配下robotsとドメインroot robotsは別。HTMLのindex／noindexも確認する。独自ドメインへ移す際はHTTPS／base／正規URL／robots／CSPと、当時の公開方針を見直す。技術公開の合格は提携申請条件、承認、検索掲載、クリック・売上の証拠ではない。
 
 0.5以前の測定はdocs/handoff.mdの履歴と過去レポートに分けて保持する。0.6の最終検証・配信状態は、その版の実行結果ファイルを優先する。
+
+
+## 0.6の補足検証を再実行する
+
+`node scripts/check-product-details.mjs` は切子・磁器・ペンダントの日英390/320で素材補足、重量、details、CTAを確認する。既定previewは127.0.0.1:4322。別の起動先ではCHECK_BASE_URLをそのoriginへ設定する。出力はdocs/clear-stage-final-detail-results.jsonとartifacts/。
+
+`node scripts/check-hosted-release.mjs` は既定の実公開先を読み取り、正規sitemap/全7画像のローカルとのSHA256/Contact非公開/SORA/素材導線/新仕様/CSPを確認する。CHECK_BASE_URLとPUBLIC_BASE_PATHで対象を指定でき、フォームや申請は送信しない。全画面はCHECK_BASE_URL・CHECK_REPORT_PATH・CHECK_SCREENSHOT_PREFIXを指定してcheck-bilingual.mjsを実行し、localとhostedの証跡を分ける。
+
+最新結果の件数と対象commitはspecs/006-clear-craft-selection/validation.mdとdocs/deployment-results.jsonを参照。技術検証の成功を提携資格や承認の取得と表現しない。

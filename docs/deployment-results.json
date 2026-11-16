@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-11-16T09:29:13.098Z",
+  "checkedAt": "2026-11-16T10:24:48.699Z",
   "checkedDateJapan": "2026-11-16",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
   "sourcePushed": true,
-  "deployedCommit": "be3d316c4e9516739d814d446709c3d1052a1e1e",
+  "deployedCommit": "5abfec84a230b2326f50ad9ea479eed76fff4688",
   "pagesSource": "GitHub Actions",
   "previewUrl": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
   "previewUrls": {
@@ -15,23 +15,24 @@
   "httpStatus": 200,
   "mode": "public",
   "indexing": "index, follow (search listing not verified)",
-  "scope": "Japan-wide curated craft jewelry selection; current researched pieces connected to Kanagawa",
+  "scope": "Japan-wide curated craft jewelry selection; researched wood, glass and porcelain pieces connected to Kanagawa, Tokyo and Saga",
   "languages": [
     "en",
     "ja"
   ],
-  "publishedJewelry": 8,
+  "publishedJewelry": 10,
   "normalRetailerLinks": true,
   "trackingLinks": 0,
   "workflowRun": {
-    "id": 43839206515,
+    "id": 43847763433,
     "conclusion": "success",
-    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/43839206515"
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/43847763433"
   },
   "hostedChecks": {
-    "passed": 81,
+    "passed": 123,
     "failed": 0,
-    "pages": 54,
+    "pages": 96,
+    "axeTestedPages": 72,
     "axeViolations": 0,
     "pageErrors": 0,
     "consoleErrors": 0,
@@ -40,31 +41,44 @@
       390,
       320
     ],
-    "report": "docs/appeal-hosted-results.json",
-    "supplementalPassed": 10,
-    "sitemapUrls": 40,
+    "report": "docs/clear-stage-hosted-results.json",
+    "supplementalReport": "docs/clear-stage-hosted-supplement-results.json",
+    "supplementalPassed": 13,
+    "sitemapUrls": 54,
     "allSitemapUrlsStatus": 200,
     "operator": "SORA",
+    "contactPublished": false,
     "productLedHome": true,
     "liveJournalNavigation": false,
     "samePageLanguageSwitch": true,
     "filterQueryHashPreserved": true,
     "nationwideRegionDirectory": true,
+    "materialEntryPoints": [
+      "wood",
+      "glass",
+      "porcelain"
+    ],
     "legacyReadingRedirects": 14,
-    "legacyRedirectMethod": "HTTP 200 static meta refresh 0; noindex, nofollow; fixed target; no Article/canonical",
+    "legacyRedirectMethod": "HTTP200 static meta refresh0; noindex, nofollow; fixed target; no Article/canonical",
+    "uniqueAiImages": 7,
+    "styledProducts": 9,
     "localAiImagesStatus": 200,
+    "imageSha256Matches": true,
     "cspInlineScriptsAuthorized": true,
-    "executableScriptsAuthorized": 98,
+    "executableScriptsAuthorizedOnCanonicalPages": 130,
+    "validJsonDataBlocks": 54,
     "appealFirstProductIntroduction": true,
     "technicalPanelsInitiallyClosed": true,
     "primaryPriceCtaBeforeTechnicalPanels": true,
-    "mobileStickyCta": "Hidden initially, visible after primary CTA passes, hidden at footer; same retailer destination"
+    "mobileStickyCta": "Hidden initially, visible after primary CTA passes, hidden at footer; same retailer destination",
+    "finalWeightAndFinishNotesVerified": true,
+    "finalizedAt": "2026-11-16T10:24:48.699Z"
   },
   "applicationsSubmitted": false,
   "affiliateApproved": false,
   "operatorNameProvided": true,
-  "contact": "Verified public GitHub Issues; a GitHub account is required; no private order details",
-  "sourceNote": "A later documentation-only commit may follow the deployed source commit without changing the served site.",
+  "contact": "Intentionally unpublished at the operator’s request. No contact links, substitute public issue channel or contact pages; EN/JA Contact return404. Program-specific requirements remain separate.",
+  "sourceNote": "A later documentation-and-verification-script commit follows the deployed source commit; it does not change served application source, catalog or assets.",
   "publicOperator": "SORA",
   "security": {
     "csp": true,
@@ -84,8 +98,22 @@
   },
   "searchConsoleConfigured": false,
   "publishedReadingPages": 0,
-  "publicContentRoutes": 40,
+  "publicContentRoutes": 54,
   "retiredReadingRedirects": 14,
   "curatedHomeProducts": 6,
-  "productStories": 8
+  "productStories": 10,
+  "contactPagePublished": false,
+  "operator": "SORA",
+  "affiliateApplicationStatus": "not_applied",
+  "images": {
+    "count": 7,
+    "styledProducts": 9,
+    "fictionalAdultWomen": 7,
+    "type": "Labeled AI-generated styling illustrations, not photographs or reproductions of featured items",
+    "promptRecords": [
+      "docs/image-generation.json",
+      "docs/image-generation-v6.json"
+    ],
+    "placement": "Nine products, cards and curated home; C/D silhouettes shared across corresponding pierced and clip variants; 18K uses abstract decoration"
+  }
 }
