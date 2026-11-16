@@ -34,7 +34,7 @@ Japanese Craft Jewelryは、全国の工芸ジュエリーから選んだ商品�
 
 0.5ローカルの実測済み結果：型0エラー/0警告/0ヒント、42単体、56HTML・1819href/src・43アンカー・172通常/0広告・14旧移動。
 
-ローカルブラウザ81/81（日英54画面）、最終カード確認6/6、広告隔離5/5が完了。公開先の確認は配信後に行う。完了を推測しない。最終配信版はdocs/deployment-results.json、実行結果はverificationと最新reportを優先する。商品訴求を変えたことは、実売上や流入が改善した証拠ではない。実物の試着・顧客レビュー・広告承認も未実施。
+ローカル81/81・54画面、最終カード6/6、広告5/5、公開81/81＋補足10/10が完了。最新配信はbe3d316、Actions43839206515 success。完了を推測しない。最終配信版はdocs/deployment-results.json、実行結果はverificationと最新reportを優先する。商品訴求を変えたことは、実売上や流入が改善した証拠ではない。実物の試着・顧客レビュー・広告承認も未実施。
 
 リポジトリはhttps://github.com/rozawa619/japanese-craft-jewelry。正規先はhttps://rozawa619.github.io/japanese-craft-jewelry/en/ と /ja/。SORA/public設定、実在GitHub Issues訂正窓口と非公開脆弱性報告を維持。未提供の氏名・住所・メールは作らない。
 
@@ -50,3 +50,7 @@ Japanese Craft Jewelryは、全国の工芸ジュエリーから選んだ商品�
 ## 過去版の確認記録
 
 0.4はhead e2870106204ca206aff6ee1bb8788e0c6544c619、Actions43834269993 success。公開81/81（日英54画面）＋補足11/11、正規40URLと14旧移動、CSP/画像/SORA/Contactを確認。当時のselection-hosted-results.jsonとselection-ad-build-results.json等は履歴として保持し、0.5の成功として読み替えない。
+
+## 0.5の公開確定
+
+2026-11-16 09:29 UTC、head be3d316c4e9516739d814d446709c3d1052a1e1eのActions43839206515 success。公開81/81（日英54画面）＋補足10/10、axe/JS/console0。全40正規URL、14固定移動、4details初期closed、価格/CTA優先、mobile追従条件、画像2/SORA/Contact、CSP98scriptを実確認。appeal-hosted-results.jsonにスクリーンショット3枚のSHAと確定時刻、過去7report不変を記録。全ソースとZIP/最新画像をjapanese-craft-jewelry-deliveryへ更新。後続資料コミットは配信画面を変更しない。実売上改善や試着実績は未測定。

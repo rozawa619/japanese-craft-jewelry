@@ -65,3 +65,5 @@ https://rozawa619.github.io/ito-craft/en/ — HTTP200、noindex。Actions run 43
 ## 0.5 魅力から購入先へ進む商品紹介
 
 仕様005。3公式ページの情報順序を参照し独自の見出し/装い/選定理由を追加。主CTA→下部closed details、mobile追従は主CTA通過後のみ/フッター隠し。共有事実・価格・未知値・広告は不変（product-copy-integrity-results）。型0/0/0・42単体・56HTML・1819内部参照・43アンカー・172通常/0広告・14旧移動PASS。localbrowser81/81（日英54画面、axe/JS/console0）、最終カード6/6、広告5/5。最新ローカル結果はappeal-browser-results/appeal-ad-build-results。公開確認は配信後にdeploymentへ記録。
+
+0.5公開確定：be3d316、Actions43839206515 success。公開81/81・54画面、補足10/10、axe/JS/console0。40正規URL全200、14旧移動、4closed panels/価格CTA優先、追従CTA、SORA/画像/Contact、CSP98script整合。最終report: appeal-hosted-results.json。過去7reportはSHA不変。

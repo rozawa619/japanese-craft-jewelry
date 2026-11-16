@@ -1,0 +1,2250 @@
+{
+  "checkedAt": "2026-11-16T09:26:39.688Z",
+  "origin": "https://rozawa619.github.io",
+  "base": "/japanese-craft-jewelry/",
+  "method": "Fresh headless Chrome with no existing user profile. EN/JA route, product appeal before technical detail, visible price/retailer action, native detail disclosure, no-blog navigation, current-product language switching, query/hash, jewelry scope, UI and accessibility checks. Does not open retailer destinations.",
+  "checks": [
+    {
+      "name": "desktop en home is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeMeasured": true,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "desktop en objects is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeMeasured": true,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "desktop en product is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeMeasured": true,
+        "purchaseFlow": {
+          "technicalDetailsInitiallyClosed": true,
+          "keyboardDisclosure": true,
+          "priceAndPrimaryBeforeDetails": true,
+          "primaryTop": 653.015625,
+          "viewport": 1000,
+          "stickyAction": {
+            "present": true,
+            "desktopHidden": true
+          },
+          "locale": "en"
+        }
+      }
+    },
+    {
+      "name": "desktop en featurePierced is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeMeasured": true,
+        "purchaseFlow": {
+          "technicalDetailsInitiallyClosed": true,
+          "keyboardDisclosure": true,
+          "priceAndPrimaryBeforeDetails": true,
+          "primaryTop": 638.765625,
+          "viewport": 1000,
+          "stickyAction": {
+            "present": true,
+            "desktopHidden": true
+          },
+          "locale": "en"
+        }
+      }
+    },
+    {
+      "name": "desktop en featureClip is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeMeasured": true,
+        "purchaseFlow": {
+          "technicalDetailsInitiallyClosed": true,
+          "keyboardDisclosure": true,
+          "priceAndPrimaryBeforeDetails": true,
+          "primaryTop": 653.015625,
+          "viewport": 1000,
+          "stickyAction": {
+            "present": true,
+            "desktopHidden": true
+          },
+          "locale": "en"
+        }
+      }
+    },
+    {
+      "name": "desktop en regions is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "desktop en region is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "desktop en craft is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "desktop en contact is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "desktop en current product switches language and returns",
+      "status": "passed"
+    },
+    {
+      "name": "desktop en selected product has translated detail and retailer CTA",
+      "status": "passed"
+    },
+    {
+      "name": "desktop en filters and language preserve current query and hash",
+      "status": "passed",
+      "detail": {
+        "combinedCount": 2,
+        "total": 8
+      }
+    },
+    {
+      "name": "desktop ja home is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeMeasured": true,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "desktop ja objects is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeMeasured": true,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "desktop ja product is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeMeasured": true,
+        "purchaseFlow": {
+          "technicalDetailsInitiallyClosed": true,
+          "keyboardDisclosure": true,
+          "priceAndPrimaryBeforeDetails": true,
+          "primaryTop": 656.140625,
+          "viewport": 1000,
+          "stickyAction": {
+            "present": true,
+            "desktopHidden": true
+          },
+          "locale": "ja"
+        }
+      }
+    },
+    {
+      "name": "desktop ja featurePierced is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeMeasured": true,
+        "purchaseFlow": {
+          "technicalDetailsInitiallyClosed": true,
+          "keyboardDisclosure": true,
+          "priceAndPrimaryBeforeDetails": true,
+          "primaryTop": 656.140625,
+          "viewport": 1000,
+          "stickyAction": {
+            "present": true,
+            "desktopHidden": true
+          },
+          "locale": "ja"
+        }
+      }
+    },
+    {
+      "name": "desktop ja featureClip is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeMeasured": true,
+        "purchaseFlow": {
+          "technicalDetailsInitiallyClosed": true,
+          "keyboardDisclosure": true,
+          "priceAndPrimaryBeforeDetails": true,
+          "primaryTop": 656.140625,
+          "viewport": 1000,
+          "stickyAction": {
+            "present": true,
+            "desktopHidden": true
+          },
+          "locale": "ja"
+        }
+      }
+    },
+    {
+      "name": "desktop ja regions is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "desktop ja region is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "desktop ja craft is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "desktop ja contact is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "desktop ja current product switches language and returns",
+      "status": "passed"
+    },
+    {
+      "name": "desktop ja selected product has translated detail and retailer CTA",
+      "status": "passed"
+    },
+    {
+      "name": "desktop ja filters and language preserve current query and hash",
+      "status": "passed",
+      "detail": {
+        "combinedCount": 2,
+        "total": 8
+      }
+    },
+    {
+      "name": "mobile en home is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeMeasured": true,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "mobile en objects is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeMeasured": true,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "mobile en product is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeMeasured": true,
+        "purchaseFlow": {
+          "technicalDetailsInitiallyClosed": true,
+          "keyboardDisclosure": true,
+          "priceAndPrimaryBeforeDetails": true,
+          "primaryTop": 855.375,
+          "viewport": 844,
+          "stickyAction": {
+            "present": true,
+            "initiallyHidden": true,
+            "appearsAfterMainAction": true,
+            "hidesAtFooter": true,
+            "sameRetailerDestination": true
+          },
+          "locale": "en"
+        }
+      }
+    },
+    {
+      "name": "mobile en featurePierced is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeMeasured": true,
+        "purchaseFlow": {
+          "technicalDetailsInitiallyClosed": true,
+          "keyboardDisclosure": true,
+          "priceAndPrimaryBeforeDetails": true,
+          "primaryTop": 825.234375,
+          "viewport": 844,
+          "stickyAction": {
+            "present": true,
+            "initiallyHidden": true,
+            "appearsAfterMainAction": true,
+            "hidesAtFooter": true,
+            "sameRetailerDestination": true
+          },
+          "locale": "en"
+        }
+      }
+    },
+    {
+      "name": "mobile en featureClip is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeMeasured": true,
+        "purchaseFlow": {
+          "technicalDetailsInitiallyClosed": true,
+          "keyboardDisclosure": true,
+          "priceAndPrimaryBeforeDetails": true,
+          "primaryTop": 855.375,
+          "viewport": 844,
+          "stickyAction": {
+            "present": true,
+            "initiallyHidden": true,
+            "appearsAfterMainAction": true,
+            "hidesAtFooter": true,
+            "sameRetailerDestination": true
+          },
+          "locale": "en"
+        }
+      }
+    },
+    {
+      "name": "mobile en regions is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "mobile en region is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "mobile en craft is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "mobile en contact is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "mobile en current product switches language and returns",
+      "status": "passed"
+    },
+    {
+      "name": "mobile en selected product has translated detail and retailer CTA",
+      "status": "passed"
+    },
+    {
+      "name": "mobile en filters and language preserve current query and hash",
+      "status": "passed",
+      "detail": {
+        "combinedCount": 2,
+        "total": 8
+      }
+    },
+    {
+      "name": "mobile en mobile navigation retains locale",
+      "status": "passed"
+    },
+    {
+      "name": "mobile ja home is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeMeasured": true,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "mobile ja objects is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeMeasured": true,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "mobile ja product is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeMeasured": true,
+        "purchaseFlow": {
+          "technicalDetailsInitiallyClosed": true,
+          "keyboardDisclosure": true,
+          "priceAndPrimaryBeforeDetails": true,
+          "primaryTop": 804.453125,
+          "viewport": 844,
+          "stickyAction": {
+            "present": true,
+            "initiallyHidden": true,
+            "appearsAfterMainAction": true,
+            "hidesAtFooter": true,
+            "sameRetailerDestination": true
+          },
+          "locale": "ja"
+        }
+      }
+    },
+    {
+      "name": "mobile ja featurePierced is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeMeasured": true,
+        "purchaseFlow": {
+          "technicalDetailsInitiallyClosed": true,
+          "keyboardDisclosure": true,
+          "priceAndPrimaryBeforeDetails": true,
+          "primaryTop": 779.953125,
+          "viewport": 844,
+          "stickyAction": {
+            "present": true,
+            "initiallyHidden": true,
+            "appearsAfterMainAction": true,
+            "hidesAtFooter": true,
+            "sameRetailerDestination": true
+          },
+          "locale": "ja"
+        }
+      }
+    },
+    {
+      "name": "mobile ja featureClip is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeMeasured": true,
+        "purchaseFlow": {
+          "technicalDetailsInitiallyClosed": true,
+          "keyboardDisclosure": true,
+          "priceAndPrimaryBeforeDetails": true,
+          "primaryTop": 804.453125,
+          "viewport": 844,
+          "stickyAction": {
+            "present": true,
+            "initiallyHidden": true,
+            "appearsAfterMainAction": true,
+            "hidesAtFooter": true,
+            "sameRetailerDestination": true
+          },
+          "locale": "ja"
+        }
+      }
+    },
+    {
+      "name": "mobile ja regions is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "mobile ja region is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "mobile ja craft is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "mobile ja contact is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "mobile ja current product switches language and returns",
+      "status": "passed"
+    },
+    {
+      "name": "mobile ja selected product has translated detail and retailer CTA",
+      "status": "passed"
+    },
+    {
+      "name": "mobile ja filters and language preserve current query and hash",
+      "status": "passed",
+      "detail": {
+        "combinedCount": 2,
+        "total": 8
+      }
+    },
+    {
+      "name": "mobile ja mobile navigation retains locale",
+      "status": "passed"
+    },
+    {
+      "name": "narrow en home is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeMeasured": true,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "narrow en objects is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeMeasured": true,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "narrow en product is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeMeasured": true,
+        "purchaseFlow": {
+          "technicalDetailsInitiallyClosed": true,
+          "keyboardDisclosure": true,
+          "priceAndPrimaryBeforeDetails": true,
+          "primaryTop": 884.796875,
+          "viewport": 740,
+          "stickyAction": {
+            "present": true,
+            "initiallyHidden": true,
+            "appearsAfterMainAction": true,
+            "hidesAtFooter": true,
+            "sameRetailerDestination": true
+          },
+          "locale": "en"
+        }
+      }
+    },
+    {
+      "name": "narrow en featurePierced is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeMeasured": true,
+        "purchaseFlow": {
+          "technicalDetailsInitiallyClosed": true,
+          "keyboardDisclosure": true,
+          "priceAndPrimaryBeforeDetails": true,
+          "primaryTop": 860.296875,
+          "viewport": 740,
+          "stickyAction": {
+            "present": true,
+            "initiallyHidden": true,
+            "appearsAfterMainAction": true,
+            "hidesAtFooter": true,
+            "sameRetailerDestination": true
+          },
+          "locale": "en"
+        }
+      }
+    },
+    {
+      "name": "narrow en featureClip is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeMeasured": true,
+        "purchaseFlow": {
+          "technicalDetailsInitiallyClosed": true,
+          "keyboardDisclosure": true,
+          "priceAndPrimaryBeforeDetails": true,
+          "primaryTop": 884.796875,
+          "viewport": 740,
+          "stickyAction": {
+            "present": true,
+            "initiallyHidden": true,
+            "appearsAfterMainAction": true,
+            "hidesAtFooter": true,
+            "sameRetailerDestination": true
+          },
+          "locale": "en"
+        }
+      }
+    },
+    {
+      "name": "narrow en regions is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "narrow en region is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "narrow en craft is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "narrow en contact is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "narrow en current product switches language and returns",
+      "status": "passed"
+    },
+    {
+      "name": "narrow en selected product has translated detail and retailer CTA",
+      "status": "passed"
+    },
+    {
+      "name": "narrow en filters and language preserve current query and hash",
+      "status": "passed",
+      "detail": {
+        "combinedCount": 2,
+        "total": 8
+      }
+    },
+    {
+      "name": "narrow en mobile navigation retains locale",
+      "status": "passed"
+    },
+    {
+      "name": "narrow ja home is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeMeasured": true,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "narrow ja objects is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeMeasured": true,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "narrow ja product is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeMeasured": true,
+        "purchaseFlow": {
+          "technicalDetailsInitiallyClosed": true,
+          "keyboardDisclosure": true,
+          "priceAndPrimaryBeforeDetails": true,
+          "primaryTop": 801.5625,
+          "viewport": 740,
+          "stickyAction": {
+            "present": true,
+            "initiallyHidden": true,
+            "appearsAfterMainAction": true,
+            "hidesAtFooter": true,
+            "sameRetailerDestination": true
+          },
+          "locale": "ja"
+        }
+      }
+    },
+    {
+      "name": "narrow ja featurePierced is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeMeasured": true,
+        "purchaseFlow": {
+          "technicalDetailsInitiallyClosed": true,
+          "keyboardDisclosure": true,
+          "priceAndPrimaryBeforeDetails": true,
+          "primaryTop": 801.5625,
+          "viewport": 740,
+          "stickyAction": {
+            "present": true,
+            "initiallyHidden": true,
+            "appearsAfterMainAction": true,
+            "hidesAtFooter": true,
+            "sameRetailerDestination": true
+          },
+          "locale": "ja"
+        }
+      }
+    },
+    {
+      "name": "narrow ja featureClip is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeMeasured": true,
+        "purchaseFlow": {
+          "technicalDetailsInitiallyClosed": true,
+          "keyboardDisclosure": true,
+          "priceAndPrimaryBeforeDetails": true,
+          "primaryTop": 801.5625,
+          "viewport": 740,
+          "stickyAction": {
+            "present": true,
+            "initiallyHidden": true,
+            "appearsAfterMainAction": true,
+            "hidesAtFooter": true,
+            "sameRetailerDestination": true
+          },
+          "locale": "ja"
+        }
+      }
+    },
+    {
+      "name": "narrow ja regions is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "narrow ja region is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "narrow ja craft is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "narrow ja contact is localized and fits",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "axeMeasured": false,
+        "purchaseFlow": null
+      }
+    },
+    {
+      "name": "narrow ja current product switches language and returns",
+      "status": "passed"
+    },
+    {
+      "name": "narrow ja selected product has translated detail and retailer CTA",
+      "status": "passed"
+    },
+    {
+      "name": "narrow ja filters and language preserve current query and hash",
+      "status": "passed",
+      "detail": {
+        "combinedCount": 2,
+        "total": 8
+      }
+    },
+    {
+      "name": "narrow ja mobile navigation retains locale",
+      "status": "passed"
+    },
+    {
+      "name": "Publication metadata, withdrawn hairpin and empty categories are correct",
+      "status": "passed"
+    },
+    {
+      "name": "en retired reading routes move to product selections",
+      "status": "passed",
+      "detail": [
+        {
+          "from": "journal/",
+          "to": "objects/"
+        },
+        {
+          "from": "journal/hakone-yosegi-pierced-earrings/",
+          "to": "objects/hamamatsuya-surgical-stainless-pierced-earrings/"
+        },
+        {
+          "from": "journal/hakone-yosegi-non-pierced-earrings/",
+          "to": "objects/hamamatsuya-yosegi-non-pierced-earrings/"
+        },
+        {
+          "from": "journal/everyday-craft-earrings/",
+          "to": "objects/"
+        },
+        {
+          "from": "journal/pierced-or-clip-on/",
+          "to": "objects/"
+        },
+        {
+          "from": "journal/buying-from-overseas/",
+          "to": "objects/"
+        },
+        {
+          "from": "journal/understanding-yosegi/",
+          "to": "crafts/hakone-yosegi/"
+        }
+      ]
+    },
+    {
+      "name": "ja retired reading routes move to product selections",
+      "status": "passed",
+      "detail": [
+        {
+          "from": "journal/",
+          "to": "objects/"
+        },
+        {
+          "from": "journal/hakone-yosegi-pierced-earrings/",
+          "to": "objects/hamamatsuya-surgical-stainless-pierced-earrings/"
+        },
+        {
+          "from": "journal/hakone-yosegi-non-pierced-earrings/",
+          "to": "objects/hamamatsuya-yosegi-non-pierced-earrings/"
+        },
+        {
+          "from": "journal/everyday-craft-earrings/",
+          "to": "objects/"
+        },
+        {
+          "from": "journal/pierced-or-clip-on/",
+          "to": "objects/"
+        },
+        {
+          "from": "journal/buying-from-overseas/",
+          "to": "objects/"
+        },
+        {
+          "from": "journal/understanding-yosegi/",
+          "to": "crafts/hakone-yosegi/"
+        }
+      ]
+    },
+    {
+      "name": "No uncaught client exceptions",
+      "status": "passed"
+    },
+    {
+      "name": "No unexpected console errors",
+      "status": "passed"
+    }
+  ],
+  "pages": [
+    {
+      "viewport": "desktop",
+      "locale": "en",
+      "kind": "home",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "desktop",
+      "locale": "en",
+      "kind": "objects",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "axeViolations": [],
+      "retailerLinks": 8
+    },
+    {
+      "viewport": "desktop",
+      "locale": "en",
+      "kind": "product",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "desktop",
+      "locale": "en",
+      "kind": "featurePierced",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-surgical-stainless-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "desktop",
+      "locale": "en",
+      "kind": "featureClip",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "desktop",
+      "locale": "en",
+      "kind": "regions",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "axeViolations": null,
+      "retailerLinks": 0
+    },
+    {
+      "viewport": "desktop",
+      "locale": "en",
+      "kind": "region",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/kanagawa/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "axeViolations": null,
+      "retailerLinks": 8
+    },
+    {
+      "viewport": "desktop",
+      "locale": "en",
+      "kind": "craft",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/crafts/hakone-yosegi/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "axeViolations": null,
+      "retailerLinks": 8
+    },
+    {
+      "viewport": "desktop",
+      "locale": "en",
+      "kind": "contact",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/contact/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "axeViolations": null,
+      "retailerLinks": 0
+    },
+    {
+      "viewport": "desktop",
+      "locale": "ja",
+      "kind": "home",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "desktop",
+      "locale": "ja",
+      "kind": "objects",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "axeViolations": [],
+      "retailerLinks": 8
+    },
+    {
+      "viewport": "desktop",
+      "locale": "ja",
+      "kind": "product",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "desktop",
+      "locale": "ja",
+      "kind": "featurePierced",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "desktop",
+      "locale": "ja",
+      "kind": "featureClip",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "desktop",
+      "locale": "ja",
+      "kind": "regions",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "axeViolations": null,
+      "retailerLinks": 0
+    },
+    {
+      "viewport": "desktop",
+      "locale": "ja",
+      "kind": "region",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/kanagawa/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "axeViolations": null,
+      "retailerLinks": 8
+    },
+    {
+      "viewport": "desktop",
+      "locale": "ja",
+      "kind": "craft",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/crafts/hakone-yosegi/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "axeViolations": null,
+      "retailerLinks": 8
+    },
+    {
+      "viewport": "desktop",
+      "locale": "ja",
+      "kind": "contact",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/contact/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "axeViolations": null,
+      "retailerLinks": 0
+    },
+    {
+      "viewport": "mobile",
+      "locale": "en",
+      "kind": "home",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "mobile",
+      "locale": "en",
+      "kind": "objects",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "axeViolations": [],
+      "retailerLinks": 8
+    },
+    {
+      "viewport": "mobile",
+      "locale": "en",
+      "kind": "product",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "mobile",
+      "locale": "en",
+      "kind": "featurePierced",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-surgical-stainless-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "mobile",
+      "locale": "en",
+      "kind": "featureClip",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "mobile",
+      "locale": "en",
+      "kind": "regions",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "axeViolations": null,
+      "retailerLinks": 0
+    },
+    {
+      "viewport": "mobile",
+      "locale": "en",
+      "kind": "region",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/kanagawa/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "axeViolations": null,
+      "retailerLinks": 8
+    },
+    {
+      "viewport": "mobile",
+      "locale": "en",
+      "kind": "craft",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/crafts/hakone-yosegi/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "axeViolations": null,
+      "retailerLinks": 8
+    },
+    {
+      "viewport": "mobile",
+      "locale": "en",
+      "kind": "contact",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/contact/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "axeViolations": null,
+      "retailerLinks": 0
+    },
+    {
+      "viewport": "mobile",
+      "locale": "ja",
+      "kind": "home",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "mobile",
+      "locale": "ja",
+      "kind": "objects",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "axeViolations": [],
+      "retailerLinks": 8
+    },
+    {
+      "viewport": "mobile",
+      "locale": "ja",
+      "kind": "product",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "mobile",
+      "locale": "ja",
+      "kind": "featurePierced",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "mobile",
+      "locale": "ja",
+      "kind": "featureClip",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "mobile",
+      "locale": "ja",
+      "kind": "regions",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "axeViolations": null,
+      "retailerLinks": 0
+    },
+    {
+      "viewport": "mobile",
+      "locale": "ja",
+      "kind": "region",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/kanagawa/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "axeViolations": null,
+      "retailerLinks": 8
+    },
+    {
+      "viewport": "mobile",
+      "locale": "ja",
+      "kind": "craft",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/crafts/hakone-yosegi/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "axeViolations": null,
+      "retailerLinks": 8
+    },
+    {
+      "viewport": "mobile",
+      "locale": "ja",
+      "kind": "contact",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/contact/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 390,
+        "document": 390,
+        "body": 390
+      },
+      "axeViolations": null,
+      "retailerLinks": 0
+    },
+    {
+      "viewport": "narrow",
+      "locale": "en",
+      "kind": "home",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "narrow",
+      "locale": "en",
+      "kind": "objects",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "axeViolations": [],
+      "retailerLinks": 8
+    },
+    {
+      "viewport": "narrow",
+      "locale": "en",
+      "kind": "product",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "narrow",
+      "locale": "en",
+      "kind": "featurePierced",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-surgical-stainless-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "narrow",
+      "locale": "en",
+      "kind": "featureClip",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "narrow",
+      "locale": "en",
+      "kind": "regions",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "axeViolations": null,
+      "retailerLinks": 0
+    },
+    {
+      "viewport": "narrow",
+      "locale": "en",
+      "kind": "region",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/kanagawa/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "axeViolations": null,
+      "retailerLinks": 8
+    },
+    {
+      "viewport": "narrow",
+      "locale": "en",
+      "kind": "craft",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/crafts/hakone-yosegi/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "axeViolations": null,
+      "retailerLinks": 8
+    },
+    {
+      "viewport": "narrow",
+      "locale": "en",
+      "kind": "contact",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/contact/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "axeViolations": null,
+      "retailerLinks": 0
+    },
+    {
+      "viewport": "narrow",
+      "locale": "ja",
+      "kind": "home",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "narrow",
+      "locale": "ja",
+      "kind": "objects",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "axeViolations": [],
+      "retailerLinks": 8
+    },
+    {
+      "viewport": "narrow",
+      "locale": "ja",
+      "kind": "product",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "narrow",
+      "locale": "ja",
+      "kind": "featurePierced",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "narrow",
+      "locale": "ja",
+      "kind": "featureClip",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "axeViolations": [],
+      "retailerLinks": 6
+    },
+    {
+      "viewport": "narrow",
+      "locale": "ja",
+      "kind": "regions",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "axeViolations": null,
+      "retailerLinks": 0
+    },
+    {
+      "viewport": "narrow",
+      "locale": "ja",
+      "kind": "region",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/kanagawa/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "axeViolations": null,
+      "retailerLinks": 8
+    },
+    {
+      "viewport": "narrow",
+      "locale": "ja",
+      "kind": "craft",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/crafts/hakone-yosegi/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "axeViolations": null,
+      "retailerLinks": 8
+    },
+    {
+      "viewport": "narrow",
+      "locale": "ja",
+      "kind": "contact",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/contact/",
+      "status": 200,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320,
+        "body": 320
+      },
+      "axeViolations": null,
+      "retailerLinks": 0
+    }
+  ],
+  "screenshots": [
+    "artifacts/appeal-ja-desktop-product.png",
+    "artifacts/appeal-ja-mobile-product.png",
+    "artifacts/appeal-ja-mobile-clip.png"
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "failures": [],
+  "completedAt": "2026-11-16T09:28:18.651Z",
+  "summary": {
+    "checks": 81,
+    "passed": 81,
+    "failed": 0,
+    "pages": 54,
+    "axeViolations": 0,
+    "screenshots": 3
+  },
+  "hostedSupplemental": {
+    "checkedAt": "2026-11-16T09:26:39.651Z",
+    "origin": "https://rozawa619.github.io",
+    "base": "/japanese-craft-jewelry/",
+    "expectedDeploymentRevision": "be3d316c4e9516739d814d446709c3d1052a1e1e",
+    "method": "Direct Node HTTPS requests with certificate validation and static HTML/resource checks. Browser-level language/filter/accordion/sticky/legacy checks are recorded in the main 81-check report; retailer destinations are not requested.",
+    "checks": [
+      {
+        "name": "HTTPS delivery and HTTP redirect",
+        "status": "passed",
+        "detail": {
+          "httpsStatus": 200,
+          "httpStatus": 301,
+          "redirect": "https://rozawa619.github.io/japanese-craft-jewelry/en/"
+        }
+      },
+      {
+        "name": "Public project robots and sitemap discovery",
+        "status": "passed",
+        "detail": {
+          "status": 200,
+          "body": "User-agent: *\nAllow: /\nSitemap: https://rozawa619.github.io/japanese-craft-jewelry/sitemap.xml\n"
+        }
+      },
+      {
+        "name": "Sitemap contains only 40 public product and support routes",
+        "status": "passed",
+        "detail": {
+          "status": 200,
+          "urls": [
+            "https://rozawa619.github.io/japanese-craft-jewelry/en/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/en/places/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-surgical-stainless-pierced-earrings/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-18k-yosegi-earrings/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-muku-yosegi-pendant/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/maruyama-yosegi-non-pierced-c/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/maruyama-yosegi-non-pierced-d/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/maruyama-yosegi-pierced-c/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/maruyama-yosegi-pierced-d/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/en/makers/hamamatsuya/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/en/makers/maker-unidentified-maruyama/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/en/places/kanagawa/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/en/crafts/hakone-yosegi/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/en/about/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/en/affiliate-disclosure/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/en/contact/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/en/editorial-policy/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/en/privacy/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-18k-yosegi-earrings/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-muku-yosegi-pendant/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-non-pierced-c/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-non-pierced-d/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-pierced-c/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-pierced-d/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/ja/makers/hamamatsuya/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/ja/makers/maker-unidentified-maruyama/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/kanagawa/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/ja/crafts/hakone-yosegi/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/ja/about/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/ja/affiliate-disclosure/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/ja/contact/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/ja/editorial-policy/",
+            "https://rozawa619.github.io/japanese-craft-jewelry/ja/privacy/"
+          ]
+        }
+      },
+      {
+        "name": "All canonical routes return 200, public metadata and no blog navigation",
+        "status": "passed",
+        "detail": {
+          "pages": 40,
+          "statuses": [
+            200
+          ],
+          "publicCanonicalHreflang": true,
+          "noJournalOrArticle": true
+        }
+      },
+      {
+        "name": "CSP restricts active content and authorizes executable script hashes",
+        "status": "passed",
+        "detail": {
+          "pages": 40,
+          "executableInlineScripts": 98,
+          "authorizedByCsp": true,
+          "delivery": "HTML meta Content-Security-Policy",
+          "unsafeInline": false,
+          "unsafeEval": false
+        }
+      },
+      {
+        "name": "Four native technical panels are closed below price and main action",
+        "status": "passed",
+        "detail": [
+          {
+            "locale": "en",
+            "slug": "hamamatsuya-surgical-stainless-pierced-earrings",
+            "closedPanels": 4,
+            "priceAndPrimaryBeforePanels": true
+          },
+          {
+            "locale": "en",
+            "slug": "hamamatsuya-yosegi-non-pierced-earrings",
+            "closedPanels": 4,
+            "priceAndPrimaryBeforePanels": true
+          },
+          {
+            "locale": "ja",
+            "slug": "hamamatsuya-surgical-stainless-pierced-earrings",
+            "closedPanels": 4,
+            "priceAndPrimaryBeforePanels": true
+          },
+          {
+            "locale": "ja",
+            "slug": "hamamatsuya-yosegi-non-pierced-earrings",
+            "closedPanels": 4,
+            "priceAndPrimaryBeforePanels": true
+          }
+        ]
+      },
+      {
+        "name": "SORA is the operator in both About pages",
+        "status": "passed",
+        "detail": {
+          "languages": [
+            "en",
+            "ja"
+          ],
+          "operator": "SORA"
+        }
+      },
+      {
+        "name": "Both Contact routes use the renamed repository",
+        "status": "passed",
+        "detail": {
+          "languages": [
+            "en",
+            "ja"
+          ],
+          "correctionsUrl": "https://github.com/rozawa619/japanese-craft-jewelry/issues/new"
+        }
+      },
+      {
+        "name": "Project CSS and both local styling images return 200",
+        "status": "passed",
+        "detail": [
+          {
+            "url": "https://rozawa619.github.io/japanese-craft-jewelry/_astro/Base.efuI72kj.css",
+            "status": 200,
+            "contentType": "text/css; charset=utf-8",
+            "bytes": 35508
+          },
+          {
+            "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/hakone-yosegi-pierced-styling.webp",
+            "status": 200,
+            "contentType": "image/webp",
+            "bytes": 105018
+          },
+          {
+            "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/hakone-yosegi-clipon-styling.webp",
+            "status": 200,
+            "contentType": "image/webp",
+            "bytes": 94946
+          }
+        ]
+      },
+      {
+        "name": "Missing and withdrawn product routes return a custom noindex 404",
+        "status": "passed",
+        "detail": [
+          {
+            "path": "not-a-real-route-verify-20261116/",
+            "status": 404,
+            "noindex": true,
+            "custom404": true
+          },
+          {
+            "path": "en/objects/hamamatsuya-yosegi-kanzashi/",
+            "status": 404,
+            "noindex": true,
+            "custom404": true
+          },
+          {
+            "path": "ja/objects/hamamatsuya-yosegi-kanzashi/",
+            "status": 404,
+            "noindex": true,
+            "custom404": true
+          }
+        ]
+      }
+    ],
+    "failures": [],
+    "observations": [
+      {
+        "name": "Origin robots availability is separate from project robots",
+        "status": "observed",
+        "detail": {
+          "url": "https://rozawa619.github.io/robots.txt",
+          "status": 404,
+          "note": "Project Pages publishes robots below its base path; public per-page index metadata and the project sitemap were checked separately."
+        }
+      }
+    ],
+    "completedAt": "2026-11-16T09:26:43.571Z",
+    "summary": {
+      "checks": 10,
+      "passed": 10,
+      "failed": 0,
+      "observations": 1
+    }
+  },
+  "expectedDeploymentRevision": "be3d316c4e9516739d814d446709c3d1052a1e1e",
+  "screenshotSha256": {
+    "artifacts/appeal-ja-desktop-product.png": "ef430e473fa91a19471586e398a22b81443a3b4188e387706111537e9c6e1e57",
+    "artifacts/appeal-ja-mobile-product.png": "453ebb2a38e3d4571a17ebee3e06a9c7da4b2f70e2a69c31a7ed40f55c3020f3",
+    "artifacts/appeal-ja-mobile-clip.png": "836d70367f01f52ffe1a5be573f96c58218e788e37510fb0a44c0cfa4424d4f4"
+  },
+  "imagesDecodedBeforeScreenshot": true,
+  "screenshotTiming": "All images decoded, viewport reset to top and two animation frames completed before each screenshot. Images are finalized before this report.",
+  "historyReports": [
+    {
+      "path": "docs/appeal-browser-results.json",
+      "sha256": "ed643e257094c4e7fd6a1eb18545a8468fcc1c004e054756d3137ae4e7059e2b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/appeal-ad-build-results.json",
+      "sha256": "f0724da93b5a3788e9c9bcfa23fbf1249f612d095467b58f13e55309dcf13f6e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/selection-browser-results.json",
+      "sha256": "69488d59e0adcb6a51b9ee39560f04b109159cc99678f4fabbead935bfac17de",
+      "unchanged": true
+    },
+    {
+      "path": "docs/selection-ad-build-results.json",
+      "sha256": "b8d28b08772f8daf27c718d10baa9699a19ed3de8fb09fa0ed9afb84d25f01a1",
+      "unchanged": true
+    },
+    {
+      "path": "docs/selection-hosted-results.json",
+      "sha256": "f112fbd5a7142b1fd86a9e4acbbe58cf93aec53c4a5ba052d80a2190e3b70092",
+      "unchanged": true
+    },
+    {
+      "path": "docs/search-security-browser-results.json",
+      "sha256": "c182321f995f3343af5acacf0260cad8ca0fa3c098259193d0e7b15f7352f5ee",
+      "unchanged": true
+    },
+    {
+      "path": "docs/search-security-hosted-results.json",
+      "sha256": "d85f042fb1b13e9249e1aaf3fa37c87b5d91aa075ced44bb9af3e1af7318214d",
+      "unchanged": true
+    }
+  ],
+  "legacyMigrationSummary": {
+    "routes": 14,
+    "method": "HTTP 200 static meta refresh 0 with a fixed same-site target; noindex/nofollow, no Article/canonical; input query/hash discarded",
+    "coveredBy": [
+      {
+        "name": "en retired reading routes move to product selections",
+        "status": "passed",
+        "routes": 7
+      },
+      {
+        "name": "ja retired reading routes move to product selections",
+        "status": "passed",
+        "routes": 7
+      }
+    ]
+  },
+  "localImageComparison": {
+    "artifacts/appeal-ja-desktop-product.png": true,
+    "artifacts/appeal-ja-mobile-product.png": false,
+    "artifacts/appeal-ja-mobile-clip.png": false
+  },
+  "finalizedAt": "2026-11-16T09:29:13.098Z"
+}

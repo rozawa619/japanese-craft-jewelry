@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-11-16T08:53:28.424Z",
+  "checkedAt": "2026-11-16T09:29:13.098Z",
   "checkedDateJapan": "2026-11-16",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
   "sourcePushed": true,
-  "deployedCommit": "e2870106204ca206aff6ee1bb8788e0c6544c619",
+  "deployedCommit": "be3d316c4e9516739d814d446709c3d1052a1e1e",
   "pagesSource": "GitHub Actions",
   "previewUrl": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
   "previewUrls": {
@@ -24,9 +24,9 @@
   "normalRetailerLinks": true,
   "trackingLinks": 0,
   "workflowRun": {
-    "id": 43834269993,
+    "id": 43839206515,
     "conclusion": "success",
-    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/43834269993"
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/43839206515"
   },
   "hostedChecks": {
     "passed": 81,
@@ -40,8 +40,8 @@
       390,
       320
     ],
-    "report": "docs/selection-hosted-results.json",
-    "supplementalPassed": 11,
+    "report": "docs/appeal-hosted-results.json",
+    "supplementalPassed": 10,
     "sitemapUrls": 40,
     "allSitemapUrlsStatus": 200,
     "operator": "SORA",
@@ -53,7 +53,12 @@
     "legacyReadingRedirects": 14,
     "legacyRedirectMethod": "HTTP 200 static meta refresh 0; noindex, nofollow; fixed target; no Article/canonical",
     "localAiImagesStatus": 200,
-    "cspInlineScriptsAuthorized": true
+    "cspInlineScriptsAuthorized": true,
+    "executableScriptsAuthorized": 98,
+    "appealFirstProductIntroduction": true,
+    "technicalPanelsInitiallyClosed": true,
+    "primaryPriceCtaBeforeTechnicalPanels": true,
+    "mobileStickyCta": "Hidden initially, visible after primary CTA passes, hidden at footer; same retailer destination"
   },
   "applicationsSubmitted": false,
   "affiliateApproved": false,
@@ -81,5 +86,6 @@
   "publishedReadingPages": 0,
   "publicContentRoutes": 40,
   "retiredReadingRedirects": 14,
-  "curatedHomeProducts": 6
+  "curatedHomeProducts": 6,
+  "productStories": 8
 }
