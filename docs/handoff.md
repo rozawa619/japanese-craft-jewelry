@@ -28,3 +28,7 @@ GitHub https://github.com/rozawa619/ito-craft 。英語 https://rozawa619.github
 4. GitHubへpushしActions成功と公開URLを実確認、deployment/handoffを更新。
 
 運営者の残判断はdocs/user-checklist.md。BECOSの条件照会と申請は未送信。広告承認・売上・商品実測・写真許諾を作り上げない。
+
+## 0.2の公開確定
+
+Actions run43825536502はsuccess（配信ソース9e0b590b11718882bf4d572de578b7fd34b7fdc2）。2026-11-16 07:44 UTCに公開URLで73/73、日英48画面（1440/390/320）、axe/JS例外/console error各0。両言語HTTP200、同一ページの切替・絞込query/hash・全国入口・8ジュエリー・hairpin404・noindexを確認。docs/bilingual-hosted-results.jsonが実測記録。後続の資料だけのコミットは配信画面を変更しない。

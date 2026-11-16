@@ -1,31 +1,49 @@
 {
-  "checkedAt": "2026-11-16T07:08:22.528Z",
+  "checkedAt": "2026-11-16T07:44:38.519Z",
   "checkedDateJapan": "2026-11-16",
+  "version": "0.2.0",
   "repository": "https://github.com/rozawa619/ito-craft",
   "sourcePushed": true,
-  "deployedCommit": "6973e2ed3f017e74af961288803711ec35ed9142",
+  "deployedCommit": "9e0b590b11718882bf4d572de578b7fd34b7fdc2",
   "pagesSource": "GitHub Actions",
   "previewUrl": "https://rozawa619.github.io/ito-craft/en/",
+  "previewUrls": {
+    "en": "https://rozawa619.github.io/ito-craft/en/",
+    "ja": "https://rozawa619.github.io/ito-craft/ja/"
+  },
   "deployment": "success",
   "httpStatus": 200,
   "mode": "preview",
   "indexing": "noindex",
+  "scope": "Japan-wide craft jewelry; currently researched selection in Kanagawa",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "publishedJewelry": 8,
   "normalRetailerLinks": true,
   "trackingLinks": 0,
   "workflowRun": {
-    "id": 43821352419,
+    "id": 43825536502,
     "conclusion": "success",
-    "url": "https://github.com/rozawa619/ito-craft/actions/runs/43821352419"
+    "url": "https://github.com/rozawa619/ito-craft/actions/runs/43825536502"
   },
   "hostedChecks": {
-    "passed": 18,
+    "passed": 73,
     "failed": 0,
-    "pages": 8,
-    "internalUrls": 30,
-    "finalPriceWidths": [
+    "pages": 48,
+    "axeViolations": 0,
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "widths": [
+      1440,
       390,
       320
-    ]
+    ],
+    "report": "docs/bilingual-hosted-results.json",
+    "samePageLanguageSwitch": true,
+    "filterQueryHashPreserved": true,
+    "nationwideRegionDirectory": true
   },
   "applicationsSubmitted": false,
   "affiliateApproved": false,

@@ -47,3 +47,5 @@ https://rozawa619.github.io/ito-craft/en/ — HTTP200、noindex。Actions run 43
 ## 0.2 ジュエリー特化・日英・全国の入口（2026-11-16）
 
 仕様: specs/002-jewelry-bilingual。公開8ジュエリー、両言語52HTML。型0/0/0、33テスト、2102href/src・51アンカー・158通常リンクPASS。日本語19本文と表示データ、全国の産地一覧、同ページquery/hashを保つ単一切替。記事内Markdown表をスマホ内の横スクロールにし、キーボードfocus/aria-labelも付与。広告4fixtureで両言語の開示/停止/publicを確認。画面最終結果はbilingual-results.json、公開結果はdeployment-results.json。初期版の記録は履歴として上に保持。
+
+0.2公開後実測：Actions43825536502 success、9e0b590を配信。2026-11-16 07:44 UTC、公開先/ito-craft/で73/73、48画面、axe0/JS例外0/console error0。右上の日英切替、商品/記事往復、query/hash保持、全国入口、ジュエリー8件、hairpin404、CSS/JSとpreview noindexを確認。詳細はbilingual-hosted-results.json。
