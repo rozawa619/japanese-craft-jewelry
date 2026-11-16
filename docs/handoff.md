@@ -7,7 +7,7 @@
 
 - GitHub： https://github.com/rozawa619/ito-craft 。新規公開repo作成を画面と公式APIで確認、Issues有効。
 - ローカルpreview： http://127.0.0.1:4321/en/ 。起動中セッション終了後はpnpm build→pnpm previewで再開。
-- GitHubへのソース格納/Pages最終結果：この文書作成時は準備中。実結果をdocs/deployment-results.jsonまたは本ファイル末尾へ追記する。未記録状態で公開済みと断言しない。
+- GitHubへの全96ソースファイル格納をcommit 234201bで確認。PagesのSource: GitHub Actionsを保存済み。公開処理の最終結果はdocs/deployment-results.jsonを参照。プレビューと正式検索公開・申請承認は別。
 - 正式公開設定：preview/noindex。個人の運営者名/公開用メールは未提供。架空値なし。実在するGitHub Issuesが訂正窓口（GitHubアカウント必要）。
 - 提携：全件not_applied。広告URL0。神奈川商品とBECOSの提携関係なし。
 - 画像：商品写真の許諾なし・使用なし。全件、自作の非実物図柄。画像台帳に不足と取得対象を記録。
