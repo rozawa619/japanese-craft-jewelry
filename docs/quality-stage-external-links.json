@@ -8,9 +8,9 @@
     "docs/research/sources.json",
     "docs/research/affiliate-sources.json"
   ],
-  "total": 256,
+  "total": 263,
   "summary": {
-    "reachable": 247,
+    "reachable": 254,
     "review_access_restricted": 6,
     "review_temporary_server_error": 2,
     "review_not_found": 1
@@ -3456,6 +3456,106 @@
       "contentType": "text/html; charset=UTF-8",
       "classification": "reachable",
       "durationMs": 254
+    },
+    {
+      "url": "https://www.2016arita.jp/pages/shop-list",
+      "references": [
+        "src/data/visits.json (supplemental complete visit-URL scan)"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.2016arita.jp/pages/shop-list",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 246
+    },
+    {
+      "url": "https://rin-zen.com/",
+      "references": [
+        "src/data/visits.json (supplemental complete visit-URL scan)"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://rin-zen.com/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 341
+    },
+    {
+      "url": "https://kitaichiglass.co.jp/",
+      "references": [
+        "src/data/visits.json (supplemental complete visit-URL scan)"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://kitaichiglass.co.jp/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 1168
+    },
+    {
+      "url": "https://sennotoki-glass.com/",
+      "references": [
+        "src/data/visits.json (supplemental complete visit-URL scan)"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://sennotoki-glass.com/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 2206
+    },
+    {
+      "url": "https://www.2016arita.jp/collections/saskia-diez",
+      "references": [
+        "src/data/visits.json (supplemental complete visit-URL scan)"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.2016arita.jp/collections/saskia-diez",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 267
+    },
+    {
+      "url": "https://katoshippo.com/",
+      "references": [
+        "src/data/visits.json (supplemental complete visit-URL scan)"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://katoshippo.com/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 525
+    },
+    {
+      "url": "https://6kiln.base.shop/",
+      "references": [
+        "src/data/visits.json (supplemental complete visit-URL scan)"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://6kiln.base.shop/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 1012
     }
-  ]
+  ],
+  "publishedProductAndStoreSubset": {
+    "uniqueUrls": 70,
+    "reachable": 70,
+    "unresolved": []
+  },
+  "supplementalInputFiles": [
+    "src/data/visits.json"
+  ],
+  "supplementalCheckedAt": "2026-11-16T14:56:57.702Z"
 }

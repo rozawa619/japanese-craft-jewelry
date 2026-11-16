@@ -11,7 +11,7 @@ GitHub Pagesの商用利用条件の適合確認または適した公開先の�
 
 ## 今回の到達点
 
-- 商品紹介、日英の方針、広告開示、画像の区別、承認後の広告切替の土台を用意する。最新の実測は `docs/market-stage-browser-results.json`、`docs/market-stage-ad-build-results.json`、`docs/verification.md` を参照する。公開反映の証拠は `docs/deployment-results.json`。過去の版の成功を今回の成功として使わない。
+- 商品紹介、日英の方針、広告開示、画像の区別、承認後の広告切替の土台を用意した。最新の実測は `docs/quality-stage-browser-results.json`、`docs/quality-stage-ad-build-results.json`、`docs/verification.md` を参照する。公開反映の証拠は `docs/deployment-results.json`。過去の版の成功を今回の成功として使わない。
 - お問い合わせは運営者の希望で公開しない。公開名はSORA。氏名、メール、住所を作らず、GitHubユーザー名を運営者名にしない。公開Contactの不在は技術公開のエラーにしない。
 - 公式の商品写真は転載しない。独自のAI着用イメージは、実物写真や正確な商品再現と区別する。画像登録と権利状態は `src/data/editorial-images.json`、`docs/assets.json`、`docs/image-generation.json`。
 - 全プログラムは **not_applied**、申請送信なし、承認なし。商品リンクは通常URLで、広告URLは未設定。BECOSで販売される商品を紹介しても、それだけで報酬対象になったとは扱わない。

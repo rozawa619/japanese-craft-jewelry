@@ -3,7 +3,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const inputFiles = ['src/data/catalog.json', 'docs/research/sources.json', 'docs/research/affiliate-sources.json'];
+const inputFiles = ['src/data/catalog.json', 'src/data/visits.json', 'docs/research/sources.json', 'docs/research/affiliate-sources.json'];
 const urls = new Map();
 function collect(value, source, path = '') {
   if (Array.isArray(value)) return value.forEach((entry, index) => collect(entry, source, `${path}[${index}]`));

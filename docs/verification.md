@@ -4,7 +4,9 @@
 
 型83files0/0/0、単体90/90、220HTML/11878href-src/1617anchor/858通常0広告/497実行CSP hash/204JSON。退役10画像を個別prune。最終focused437/437、252詳細確認、地域種類往復198、axe36画面0、JS/console/外部要求0。全draft12URL404・220HTML/sitemap残存なし。priority4/4、広告隔離6/6で実catalog/dist不変。詳細011validationとquality-stage各report。
 
-全体browser/実公開/ZIPは最新reportとdeployment-resultsの確定時刻を参照。GitHubPages商用適合/移行、AdSense受理/所有確認/同意/審査は未完了。技術PASSを適法/権利処理/契約適合/AdSense合格へ読み替えない。
+ローカル全体328/328（294画面訪問/96経路、axe270画面0）、価格73/73（国内外9品、詳細60確認、axe18画面0）。公開focused437/437（全42品252表示・地域198往復・axe36画面0）、公開補足24/24（正規204URL全200・25画像全200/SHA一致）、除外22/22（12draft経路と退役10画像404）、公開重点4/4。JS/consoleは各検証0。ローカル/公開の入力7ファイルもSHA一致。328項目の全体検証はローカルの実測であり、公開で全328項目を再実行したという意味ではない。
+
+外部263URL中254到達。公開商品の公式/注文先・店舗の対象70URLは全200。アクセス制限6/一時的サーバーエラー2/既知hostroot404が1は調査資料側に残り、到達だけで販売/権利/承認を判断しない。全ソースZIPは隣接deliveryのpackage-verification-0.11.0.jsonを参照。GitHubPages商用適合/移行、AdSense受理/所有確認/同意/審査は未完了。技術PASSを適法/権利処理/契約適合/AdSense合格へ読み替えない。
 
 ---
 

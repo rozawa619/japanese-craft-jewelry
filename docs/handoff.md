@@ -34,4 +34,8 @@ AdSenseは固定の商品/記事/文字数で合格判定しない。PSL対象�
 
 型83files0/0/0、90単体、220HTML/11878href-src/1617anchor/858通常0広告/497実行CSP hash/204JSON/旧journal14を検証。最終browser/ad/外部/公開の件数と時刻はquality-stage各report、011validationとdeployment-resultsを確認。46件の中断テストと旧版の成功を42件の完了へ流用しない。
 
+最終ローカルfocused437/437、維持全体328/328（294画面訪問、axe270画面0）、価格73/73、隔離広告6/6。公開アプリf85c757、Actions43890025527 success。公開focused437/437、補足24/24（204正規URL/25画像全200・SHA一致）、除外22/22（draft12URL+退役10画像404）、重点4/4。公開とローカルの入力7ファイルSHA一致。公開商品/店舗の公式70URL全200。サイトの購入証跡は本文/UIを別に確認した記録で、HTTP200だけを根拠にしていない。全最終QA workerの正常終了を確認。
+
 全ソースは隣接japanese-craft-jewelry-delivery/sourceとZIPへ出力し、最終版/全ファイル/25公開画像/秘密・生成物・退役public画像の除外を検証する。確定のZIP内容とSHAは同所package-verification-0.11.0.json。運用はoperations、申請前はpre-application-checklist/adsense-review/affiliate-readiness。
+
+0.11の書出し検証は511/511ファイルの集合と全件SHA256一致、公開WebP25、退役public10パス除外、必須CI/lock/設定/011仕様/最終公開reportの同梱を確認した。ZIP自体のSHA256は自己参照を避けて外部の検証JSONへ記録。文書確定後の最終ZIPでも同じ検証を再実行する。

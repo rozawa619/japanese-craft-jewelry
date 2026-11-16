@@ -1,0 +1,124 @@
+{
+  "checkedAt": "2026-11-16T14:53:50.096Z",
+  "origin": "https://rozawa619.github.io",
+  "scope": "Read-only priority supplement for the final42 source set: HARIO raw specifications and source links; Fukuoka current selection and official-photo preview; manual-view screenshots. No merchant checkout or external navigation.",
+  "checks": [
+    {
+      "kind": "hario",
+      "locale": "en",
+      "width": 390,
+      "status": "passed",
+      "dimensions": {
+        "width": 390,
+        "document": 390,
+        "body": 390
+      },
+      "productId": "hario-little-tears-clip-on-earrings",
+      "priceJPY": 8250,
+      "priceUnit": "pair",
+      "size": "Glass charm 4 × 6 × 3 mm; chain length 45 mm. This is not a separate statement of total assembled length.",
+      "findings": "Brass with gold plating is stated for the standard model. Exact component coverage and plating composition are not separately specified.",
+      "whatToCheck": [
+        "The standard fitting is gold-plated brass. Paid K10 conversion is a separate option, not the material of the reference-priced model.",
+        "Exact weight and the detailed clip-on closing mechanism are not specified in the product body. Glass needs careful handling.",
+        "The maker works in Nihonbashi and other regions. This item’s exact workshop and current Kodenmacho shelf stock are unconfirmed."
+      ],
+      "sourceIds": [
+        "hario-netshop-product-v11",
+        "hario-lwf-product-v11",
+        "hario-lwf-about-v11",
+        "hario-kodenmacho-v11"
+      ],
+      "officialProductUrl": "https://shop.hariocorp.co.jp/products/haw-lt-003e"
+    },
+    {
+      "kind": "hario",
+      "locale": "ja",
+      "width": 320,
+      "status": "passed",
+      "dimensions": {
+        "width": 320,
+        "document": 320,
+        "body": 320
+      },
+      "productId": "hario-little-tears-clip-on-earrings",
+      "priceJPY": 8250,
+      "priceUnit": "pair",
+      "size": "ガラスのチャーム4×6×3mm、チェーン45mm。組み上がり全長の表記とは区別しています。",
+      "findings": "標準仕様は真鍮・ゴールドメッキの表記。対象パーツの細かな使い分けとメッキの組成は未確認です。",
+      "whatToCheck": [
+        "参考価格の標準仕様は金メッキの真鍮です。有料のK10金具変更を、標準商品の素材とは扱っていません。",
+        "正確な重さとイヤリングの開閉機構の詳細は商品本文で未確認。ガラスの取扱いには注意が必要です。",
+        "日本橋とほかの地域に製作拠点があります。この品の製作工房と、小伝馬町店の現時点の在庫は未確認です。"
+      ],
+      "sourceIds": [
+        "hario-netshop-product-v11",
+        "hario-lwf-product-v11",
+        "hario-lwf-about-v11",
+        "hario-kodenmacho-v11"
+      ],
+      "officialProductUrl": "https://shop.hariocorp.co.jp/products/haw-lt-003e"
+    },
+    {
+      "kind": "fukuoka",
+      "locale": "en",
+      "width": 390,
+      "status": "passed",
+      "dimensions": {
+        "width": 390,
+        "document": 390,
+        "body": 390
+      },
+      "productIds": [
+        "iwaya-urushi-9mm-hook-earrings"
+      ],
+      "officialPreviews": 1
+    },
+    {
+      "kind": "fukuoka",
+      "locale": "ja",
+      "width": 320,
+      "status": "passed",
+      "dimensions": {
+        "width": 320,
+        "document": 320,
+        "body": 320
+      },
+      "productIds": [
+        "iwaya-urushi-9mm-hook-earrings"
+      ],
+      "officialPreviews": 1
+    }
+  ],
+  "screenshots": [
+    "artifacts/quality-stage-hosted-priority-hario-en-390-intro.png",
+    "artifacts/quality-stage-hosted-priority-hario-en-390-raw-specifications.png",
+    "artifacts/quality-stage-hosted-priority-hario-ja-320-intro.png",
+    "artifacts/quality-stage-hosted-priority-hario-ja-320-raw-specifications.png",
+    "artifacts/quality-stage-hosted-priority-fukuoka-en-390-guide.png",
+    "artifacts/quality-stage-hosted-priority-fukuoka-en-390-products.png",
+    "artifacts/quality-stage-hosted-priority-fukuoka-ja-320-guide.png",
+    "artifacts/quality-stage-hosted-priority-fukuoka-ja-320-products.png"
+  ],
+  "completedAt": "2026-11-16T14:54:32.766Z",
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "screenshots": 8
+  },
+  "manualReview": {
+    "checkedAt": "2026-11-16T14:55:27.024Z",
+    "reviewedScreenshots": [
+      "artifacts/quality-stage-hosted-priority-hario-en-390-intro.png",
+      "artifacts/quality-stage-hosted-priority-fukuoka-ja-320-products.png",
+      "artifacts/quality-stage-hosted-ja-desktop-budget-controls.png",
+      "artifacts/quality-stage-hosted-en-mobile-budget-controls.png"
+    ],
+    "observations": [
+      "Public HARIO shows the same JPY8250 pair reference, standard gold-plated brass note, official design-reference panel and ordinary official destination as the source-verified build.",
+      "Public Fukuoka at320px shows its single verified lacquer earring and an honest official-information preview, with no removed COCOON card.",
+      "Public Japanese desktop and English390 native budget controls retain clear labels, usable option fields and reset controls without horizontal clipping."
+    ],
+    "finding": "No additional discrepancy identified in these selected published screens. This is a visual and source-presentation check, not a guarantee of merchant stock or AdSense approval."
+  }
+}

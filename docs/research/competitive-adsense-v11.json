@@ -12,50 +12,464 @@
     "implementationLimit": "Recommendations and original selection-note proposal are not proof of implementation. See spec011 and final verification/deployment reports for adopted changes."
   },
   "sources": [
-    {"id":"v11-google-sites-psl","title":"Google AdSense Help — Site management is changing in AdSense","url":"https://support.google.com/adsense/answer/12170421?hl=en","checkedAt":"2026-11-16","access":"body_read","supports":["Sites management permits subdomains on platforms included in the Public Suffix List","The general sign-up URL examples must not be used to declare all platform subdomains ineligible"]},
-    {"id":"v11-public-suffix-list","title":"Public Suffix List — official current list","url":"https://publicsuffix.org/list/public_suffix_list.dat","checkedAt":"2026-11-16","access":"body_read","supports":["Version2026-11-15_20-28-43_UTC includes github.io and pages.dev","List membership does not establish actual AdSense acceptance, ownership connection or approval"]},
-    {"id":"v11-google-adsense-url","title":"Google AdSense Help — How to enter the URL of your site when you create an AdSense account","url":"https://support.google.com/adsense/answer/2784438?hl=en","checkedAt":"2026-11-16","access":"body_read","supports":["Sign-up URL must not include a path, parameter, fragment or port","General domain/subdomain examples and host-partner distinction; GitHub Pages-specific acceptance not tested"]},
-    {"id":"v11-google-adsense-eligibility","title":"Google AdSense Help — Eligibility requirements","url":"https://support.google.com/adsense/answer/9724?hl=en","checkedAt":"2026-11-16","access":"body_read","supports":["Original high-quality content, policy compliance, source access and age requirement","No fixed product/article/word-count threshold found in this reviewed guide"]},
-    {"id":"v11-google-adsense-pages","title":"Google AdSense Help — Make sure your site's pages are ready for AdSense","url":"https://support.google.com/adsense/answer/7299563?hl=en","checkedAt":"2026-11-16","access":"body_read","supports":["Unique useful content and accessible clear navigation","Original contribution when external resources are used"]},
-    {"id":"v11-google-publisher-policies","title":"Google Publisher Policies","url":"https://support.google.com/publisherpolicies/answer/10502938?hl=en","checkedAt":"2026-11-16","access":"body_read","supports":["Low-value/no publisher-content screens and copied content without added value","Ad interference and excess promotional material restrictions","Privacy disclosures for actual data collection resulting from Google services","IP and accurate declaration policies"]},
-    {"id":"v11-google-add-site","title":"Google AdSense Help — Add a new site to your AdSense sites list","url":"https://support.google.com/adsense/answer/12169212?hl=en","checkedAt":"2026-11-16","access":"body_read","supports":["Site addition, connection and request-review are separate steps","Connection options include actual publisher meta, ads.txt or code; no invented IDs"]},
-    {"id":"v11-google-certified-cmp","title":"Google AdSense Help — Consent management requirements for EEA, UK and Switzerland","url":"https://support.google.com/adsense/answer/13554116?hl=en","checkedAt":"2026-11-16","access":"body_read","supports":["Google-certified CMP integrated with TCF for personalized ads in the named regions","Certification does not itself certify compliance with all privacy laws"]},
-    {"id":"v11-google-helpful-content","title":"Google Search Central — Creating helpful, reliable, people-first content","url":"https://developers.google.com/search/docs/fundamentals/creating-helpful-content","checkedAt":"2026-11-16","access":"body_read","supports":["Original analysis, completeness, clear sourcing and accurate creation/author context","Search guidance explicitly rejects a preferred word-count target; not an AdSense approval formula"]},
-    {"id":"v11-google-search-spam","title":"Google Search Central — Spam policies","url":"https://developers.google.com/search/docs/essentials/spam-policies","checkedAt":"2026-11-16","access":"body_read","supports":["Thin affiliation and scaled unoriginal content without user value","Useful comparisons/navigation can add value; copied merchant text alone does not","Search policy and AdSense review are distinct"]},
-    {"id":"v11-google-ai-content","title":"Google Search Central — Guidance about AI-generated content","url":"https://developers.google.com/search/blog/2023/02/google-search-and-ai-content","checkedAt":"2026-11-16","access":"body_read","supports":["AI use is not a blanket Search ban; quality and purpose matter","Automation disclosure and truthful authorship do not replace content value"]},
-    {"id":"v11-benchmark-becos-earrings","title":"BECOS Global — Japanese Earrings","url":"https://en.thebecos.com/collections/earrings","checkedAt":"2026-11-16","access":"body_read","supports":["Observed availability, price, brand, color and material filter controls","Observed price ordering and retailer Best selling label; no sales counts verified"]},
-    {"id":"v11-benchmark-fujimaki-jewelry","title":"藤巻百貨店 — ブレスレット・ピアス・イヤリング・ネックレス","url":"https://fujimaki-select.com/category/C_JEWELLERY/","checkedAt":"2026-11-16","access":"body_read","supports":["Observed product-specific short appeal, type, tax-included price, maker and regional navigation","45-item count and displayed review numbers are that retailer's current display, not an independent popularity measure"]},
-    {"id":"v11-benchmark-nakagawa-selection","title":"中川政七商店 — 夏に向けて新調したいアクセサリー","url":"https://www.nakagawa-masashichi.jp/shop/e/ev0624_sspd/","checkedAt":"2026-11-16","access":"body_read","method":"Web cache miss followed by normal fresh Chrome200 and actual full body read","supports":["Selection grouped by washi, Kutani and Imari materials/crafts","Distinctive material and shape explanations lead into actual product choices","Observed price-order options, color combinations and prices"]},
-    {"id":"v11-benchmark-shokunin-popular","title":"Shokunin.com — Popular Items","url":"https://www.shokunin.com/en/etc/popular.html","checkedAt":"2026-11-16","access":"body_read","supports":["English craft navigation with original JPY price and brand/showroom entry points","Reference for general craft browsing, not a jewelry specialist or proven traffic leader"]},
-    {"id":"v11-benchmark-becos-halfmoon","title":"BECOS Global — 6.KILN Half-moon earrings","url":"https://en.thebecos.com/products/s0164-018","checkedAt":"2026-11-16","access":"body_read","supports":["Product-specific material, dimensions, reverse-color specification transition and care information","Observed facts do not clarify whether the stated8g is per piece or pair; no unsupported weight inference"]},
-    {"id":"v11-benchmark-shokunin-detail","title":"Shokunin.com — FUTAGAMI Coaster","url":"https://www.shokunin.com/en/futagami/coaster.html","checkedAt":"2026-11-16","access":"body_read","supports":["General craft product example links design function, material, dimensions/weight and care","Not jewelry; its exact care/retail terms are not reused for this site's products"]},
-    {"id":"v11-own-host-root","title":"Current host root — Site not found","url":"https://rozawa619.github.io/","checkedAt":"2026-11-16","access":"body_read","httpStatus":404,"method":"Normal fresh Chrome","supports":["Host-root404 distinct from working project subpath; AdSense real-site acceptance/connection remains untested"]},
-    {"id":"v11-own-rinzen-ja","title":"Current Japanese Seika detail","url":"https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/rinzen-seika-amber-pierced-earrings/","checkedAt":"2026-11-16","access":"body_read","httpStatus":200,"supports":["Baseline Japan-primary price, international secondary price, source details, ordinary links, shortAI caption and verified store guide are present"]},
-    {"id":"v11-own-tokyo-en","title":"Current English Tokyo selection","url":"https://rozawa619.github.io/japanese-craft-jewelry/en/places/tokyo/","checkedAt":"2026-11-16","access":"body_read","httpStatus":200,"supports":["Baseline Tokyo selection is two RINZEN glass products with a short introduction; no product-specific choosing summary"]}
+    {
+      "id": "v11-google-sites-psl",
+      "title": "Google AdSense Help — Site management is changing in AdSense",
+      "url": "https://support.google.com/adsense/answer/12170421?hl=en",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Sites management permits subdomains on platforms included in the Public Suffix List",
+        "The general sign-up URL examples must not be used to declare all platform subdomains ineligible"
+      ]
+    },
+    {
+      "id": "v11-public-suffix-list",
+      "title": "Public Suffix List — official current list",
+      "url": "https://publicsuffix.org/list/public_suffix_list.dat",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Version2026-11-15_20-28-43_UTC includes github.io and pages.dev",
+        "List membership does not establish actual AdSense acceptance, ownership connection or approval"
+      ]
+    },
+    {
+      "id": "v11-google-adsense-url",
+      "title": "Google AdSense Help — How to enter the URL of your site when you create an AdSense account",
+      "url": "https://support.google.com/adsense/answer/2784438?hl=en",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Sign-up URL must not include a path, parameter, fragment or port",
+        "General domain/subdomain examples and host-partner distinction; GitHub Pages-specific acceptance not tested"
+      ]
+    },
+    {
+      "id": "v11-google-adsense-eligibility",
+      "title": "Google AdSense Help — Eligibility requirements",
+      "url": "https://support.google.com/adsense/answer/9724?hl=en",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Original high-quality content, policy compliance, source access and age requirement",
+        "No fixed product/article/word-count threshold found in this reviewed guide"
+      ]
+    },
+    {
+      "id": "v11-google-adsense-pages",
+      "title": "Google AdSense Help — Make sure your site's pages are ready for AdSense",
+      "url": "https://support.google.com/adsense/answer/7299563?hl=en",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Unique useful content and accessible clear navigation",
+        "Original contribution when external resources are used"
+      ]
+    },
+    {
+      "id": "v11-google-publisher-policies",
+      "title": "Google Publisher Policies",
+      "url": "https://support.google.com/publisherpolicies/answer/10502938?hl=en",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Low-value/no publisher-content screens and copied content without added value",
+        "Ad interference and excess promotional material restrictions",
+        "Privacy disclosures for actual data collection resulting from Google services",
+        "IP and accurate declaration policies"
+      ]
+    },
+    {
+      "id": "v11-google-add-site",
+      "title": "Google AdSense Help — Add a new site to your AdSense sites list",
+      "url": "https://support.google.com/adsense/answer/12169212?hl=en",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Site addition, connection and request-review are separate steps",
+        "Connection options include actual publisher meta, ads.txt or code; no invented IDs"
+      ]
+    },
+    {
+      "id": "v11-google-certified-cmp",
+      "title": "Google AdSense Help — Consent management requirements for EEA, UK and Switzerland",
+      "url": "https://support.google.com/adsense/answer/13554116?hl=en",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Google-certified CMP integrated with TCF for personalized ads in the named regions",
+        "Certification does not itself certify compliance with all privacy laws"
+      ]
+    },
+    {
+      "id": "v11-google-helpful-content",
+      "title": "Google Search Central — Creating helpful, reliable, people-first content",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Original analysis, completeness, clear sourcing and accurate creation/author context",
+        "Search guidance explicitly rejects a preferred word-count target; not an AdSense approval formula"
+      ]
+    },
+    {
+      "id": "v11-google-search-spam",
+      "title": "Google Search Central — Spam policies",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Thin affiliation and scaled unoriginal content without user value",
+        "Useful comparisons/navigation can add value; copied merchant text alone does not",
+        "Search policy and AdSense review are distinct"
+      ]
+    },
+    {
+      "id": "v11-google-ai-content",
+      "title": "Google Search Central — Guidance about AI-generated content",
+      "url": "https://developers.google.com/search/blog/2023/02/google-search-and-ai-content",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "AI use is not a blanket Search ban; quality and purpose matter",
+        "Automation disclosure and truthful authorship do not replace content value"
+      ]
+    },
+    {
+      "id": "v11-benchmark-becos-earrings",
+      "title": "BECOS Global — Japanese Earrings",
+      "url": "https://en.thebecos.com/collections/earrings",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Observed availability, price, brand, color and material filter controls",
+        "Observed price ordering and retailer Best selling label; no sales counts verified"
+      ]
+    },
+    {
+      "id": "v11-benchmark-fujimaki-jewelry",
+      "title": "藤巻百貨店 — ブレスレット・ピアス・イヤリング・ネックレス",
+      "url": "https://fujimaki-select.com/category/C_JEWELLERY/",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Observed product-specific short appeal, type, tax-included price, maker and regional navigation",
+        "45-item count and displayed review numbers are that retailer's current display, not an independent popularity measure"
+      ]
+    },
+    {
+      "id": "v11-benchmark-nakagawa-selection",
+      "title": "中川政七商店 — 夏に向けて新調したいアクセサリー",
+      "url": "https://www.nakagawa-masashichi.jp/shop/e/ev0624_sspd/",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "method": "Web cache miss followed by normal fresh Chrome200 and actual full body read",
+      "supports": [
+        "Selection grouped by washi, Kutani and Imari materials/crafts",
+        "Distinctive material and shape explanations lead into actual product choices",
+        "Observed price-order options, color combinations and prices"
+      ]
+    },
+    {
+      "id": "v11-benchmark-shokunin-popular",
+      "title": "Shokunin.com — Popular Items",
+      "url": "https://www.shokunin.com/en/etc/popular.html",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "English craft navigation with original JPY price and brand/showroom entry points",
+        "Reference for general craft browsing, not a jewelry specialist or proven traffic leader"
+      ]
+    },
+    {
+      "id": "v11-benchmark-becos-halfmoon",
+      "title": "BECOS Global — 6.KILN Half-moon earrings",
+      "url": "https://en.thebecos.com/products/s0164-018",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Product-specific material, dimensions, reverse-color specification transition and care information",
+        "Observed facts do not clarify whether the stated8g is per piece or pair; no unsupported weight inference"
+      ]
+    },
+    {
+      "id": "v11-benchmark-shokunin-detail",
+      "title": "Shokunin.com — FUTAGAMI Coaster",
+      "url": "https://www.shokunin.com/en/futagami/coaster.html",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "General craft product example links design function, material, dimensions/weight and care",
+        "Not jewelry; its exact care/retail terms are not reused for this site's products"
+      ]
+    },
+    {
+      "id": "v11-own-host-root",
+      "title": "Current host root — Site not found",
+      "url": "https://rozawa619.github.io/",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "httpStatus": 404,
+      "method": "Normal fresh Chrome",
+      "supports": [
+        "Host-root404 distinct from working project subpath; AdSense real-site acceptance/connection remains untested"
+      ]
+    },
+    {
+      "id": "v11-own-rinzen-ja",
+      "title": "Current Japanese Seika detail",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/rinzen-seika-amber-pierced-earrings/",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "httpStatus": 200,
+      "supports": [
+        "Baseline Japan-primary price, international secondary price, source details, ordinary links, shortAI caption and verified store guide are present"
+      ]
+    },
+    {
+      "id": "v11-own-tokyo-en",
+      "title": "Current English Tokyo selection",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/tokyo/",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "httpStatus": 200,
+      "supports": [
+        "Baseline Tokyo selection is two RINZEN glass products with a short introduction; no product-specific choosing summary"
+      ]
+    }
   ],
   "accessLimits": [
-    {"url":"https://fujimaki-select.com/category/C_JEWELLERY/496_0006.html","result":"Web cache miss, Chrome403 with congestion/error body","usedAsDetailEvidence":false},
-    {"url":"https://www.nakagawa-masashichi.jp/shop/c/c1307/","result":"Candidate category URL not accessible; the verified feature page is separately recorded","usedAsEvidence":false},
-    {"url":"https://store.japanobjects.com/collections/jewelry","result":"Candidate hostname failed normal ChromeDNS resolution; no assumptions about entire Japan Objects business or other domains","usedAsEvidence":false},
-    {"url":"https://www.shokunin.com/en/accessory.html","result":"Candidate URL not accessible; verified Popular Items and actual craft detail used instead","usedAsEvidence":false},
-    {"url":"https://www.nakagawa-masashichi.jp/shop/g/g4547639766724/","result":"Chrome200 and title identified YURAGU3-piece earrings, but sampled body contained only cookie notice, so product detail not used","usedAsDetailEvidence":false},
-    {"url":"https://en.thebecos.com/products/s0138-028?currency=USD","result":"Web inaccessible in this audit; current price facts have their separate previously checked market-price research","usedAsFreshMerchantBodyEvidence":false},
-    {"url":"https://en.thebecos.com/products/s0164-016","result":"Web cache miss in this audit; no additional detail observation claimed","usedAsDetailEvidence":false}
+    {
+      "url": "https://fujimaki-select.com/category/C_JEWELLERY/496_0006.html",
+      "result": "Web cache miss, Chrome403 with congestion/error body",
+      "usedAsDetailEvidence": false
+    },
+    {
+      "url": "https://www.nakagawa-masashichi.jp/shop/c/c1307/",
+      "result": "Candidate category URL not accessible; the verified feature page is separately recorded",
+      "usedAsEvidence": false
+    },
+    {
+      "url": "https://store.japanobjects.com/collections/jewelry",
+      "result": "Candidate hostname failed normal ChromeDNS resolution; no assumptions about entire Japan Objects business or other domains",
+      "usedAsEvidence": false
+    },
+    {
+      "url": "https://www.shokunin.com/en/accessory.html",
+      "result": "Candidate URL not accessible; verified Popular Items and actual craft detail used instead",
+      "usedAsEvidence": false
+    },
+    {
+      "url": "https://www.nakagawa-masashichi.jp/shop/g/g4547639766724/",
+      "result": "Chrome200 and title identified YURAGU3-piece earrings, but sampled body contained only cookie notice, so product detail not used",
+      "usedAsDetailEvidence": false
+    },
+    {
+      "url": "https://en.thebecos.com/products/s0138-028?currency=USD",
+      "result": "Web inaccessible in this audit; current price facts have their separate previously checked market-price research",
+      "usedAsFreshMerchantBodyEvidence": false
+    },
+    {
+      "url": "https://en.thebecos.com/products/s0164-016",
+      "result": "Web cache miss in this audit; no additional detail observation claimed",
+      "usedAsDetailEvidence": false
+    }
   ],
   "recommendedChanges": [
-    {"id":"V11-C1","priority":"high","change":"Source-backed, product-specific difference/choose-for notes and two valid comparison targets","why":"Existing30 product stories often repeat shirt/knit/accent suggestions; a selector needs concrete differentiation","proposal":"docs/research/selection-notes-v11-proposal.json","noFabrication":["wear experience","comfort or lightness without evidence","popularity/sales rank","hypoallergenic claims","gift-box guarantees"]},
-    {"id":"V11-C2","priority":"high","change":"JPY budget filter using domestic reference data plus explicit unknown-price handling","why":"Competitor price selection is an observed useful navigation dimension; currency conversion or unknown=0 would mislead"},
-    {"id":"V11-C3","priority":"high","change":"Expand regional craft/shape/maker diversity, with unequal per-prefecture counts","why":"A second color does not substitute for an additional established craft choice; regional attribution needs source evidence"},
-    {"id":"V11-C4","priority":"medium","change":"Explain differences inside regional selection and keep products first","why":"Preserves no-blog user direction while giving more than a short index description"},
-    {"id":"V11-C5","priority":"medium","change":"Keep official-photo routes useful and make research scope/creator accurate","why":"AI styling images and desk research do not establish actual product fit, finish, licensed photo rights or first-hand expertise"}
+    {
+      "id": "V11-C1",
+      "priority": "high",
+      "change": "Source-backed, product-specific difference/choose-for notes and two valid comparison targets",
+      "why": "Existing30 product stories often repeat shirt/knit/accent suggestions; a selector needs concrete differentiation",
+      "proposal": "docs/research/selection-notes-v11-proposal.json",
+      "noFabrication": [
+        "wear experience",
+        "comfort or lightness without evidence",
+        "popularity/sales rank",
+        "hypoallergenic claims",
+        "gift-box guarantees"
+      ]
+    },
+    {
+      "id": "V11-C2",
+      "priority": "high",
+      "change": "JPY budget filter using domestic reference data plus explicit unknown-price handling",
+      "why": "Competitor price selection is an observed useful navigation dimension; currency conversion or unknown=0 would mislead"
+    },
+    {
+      "id": "V11-C3",
+      "priority": "high",
+      "change": "Expand regional craft/shape/maker diversity, with unequal per-prefecture counts",
+      "why": "A second color does not substitute for an additional established craft choice; regional attribution needs source evidence"
+    },
+    {
+      "id": "V11-C4",
+      "priority": "medium",
+      "change": "Explain differences inside regional selection and keep products first",
+      "why": "Preserves no-blog user direction while giving more than a short index description"
+    },
+    {
+      "id": "V11-C5",
+      "priority": "medium",
+      "change": "Keep official-photo routes useful and make research scope/creator accurate",
+      "why": "AI styling images and desk research do not establish actual product fit, finish, licensed photo rights or first-hand expertise"
+    }
   ],
   "adsenseRemainingGates": [
-    {"id":"V11-A1","status":"unverified_operator_action","topic":"Real application target URL and site connection","evidenceIds":["v11-google-adsense-url","v11-google-sites-psl","v11-public-suffix-list","v11-google-add-site","v11-own-host-root"],"limit":"Google explicitly permits PSL platform subdomains in Sites management, and the currentPSL includes github.io/pages.dev. No live form acceptance, ownership connection or review was tested; host-root404 remains separate."},
-    {"id":"V11-A2","status":"content_improvement_then_review","topic":"Unique user value","evidenceIds":["v11-google-adsense-eligibility","v11-google-adsense-pages","v11-google-publisher-policies"],"limit":"No minimum product/article/word-count or approval probability invented"},
-    {"id":"V11-A3","status":"before_any_ad_activation","topic":"Real publisher identity/ID, Privacy, CMP and CSP design","evidenceIds":["v11-google-certified-cmp","v11-google-publisher-policies","v11-google-add-site"],"limit":"Current static no-ad privacy is not replaced with fictional currently-running Google tracking; no placeholder publisher ID"},
-    {"id":"V11-A4","status":"before_any_ad_activation","topic":"Exclude navigation-only/404/legacy/empty states and avoid CTA collisions","evidenceIds":["v11-google-publisher-policies"],"limit":"No current ad-policy violation declared on pages that have no Google ads"},
-    {"id":"V11-A5","status":"not_universally_required_in_reviewed_guides","topic":"Public Contact page","evidenceIds":["v11-google-adsense-eligibility","v11-google-adsense-pages"],"limit":"Follow user no-Contact instruction; any actual contract/review requirement remains to be checked without inventing personal details"}
+    {
+      "id": "V11-A1",
+      "status": "unverified_operator_action",
+      "topic": "Real application target URL and site connection",
+      "evidenceIds": [
+        "v11-google-adsense-url",
+        "v11-google-sites-psl",
+        "v11-public-suffix-list",
+        "v11-google-add-site",
+        "v11-own-host-root"
+      ],
+      "limit": "Google explicitly permits PSL platform subdomains in Sites management, and the currentPSL includes github.io/pages.dev. No live form acceptance, ownership connection or review was tested; host-root404 remains separate."
+    },
+    {
+      "id": "V11-A2",
+      "status": "content_improvement_then_review",
+      "topic": "Unique user value",
+      "evidenceIds": [
+        "v11-google-adsense-eligibility",
+        "v11-google-adsense-pages",
+        "v11-google-publisher-policies"
+      ],
+      "limit": "No minimum product/article/word-count or approval probability invented"
+    },
+    {
+      "id": "V11-A3",
+      "status": "before_any_ad_activation",
+      "topic": "Real publisher identity/ID, Privacy, CMP and CSP design",
+      "evidenceIds": [
+        "v11-google-certified-cmp",
+        "v11-google-publisher-policies",
+        "v11-google-add-site"
+      ],
+      "limit": "Current static no-ad privacy is not replaced with fictional currently-running Google tracking; no placeholder publisher ID"
+    },
+    {
+      "id": "V11-A4",
+      "status": "before_any_ad_activation",
+      "topic": "Exclude navigation-only/404/legacy/empty states and avoid CTA collisions",
+      "evidenceIds": [
+        "v11-google-publisher-policies"
+      ],
+      "limit": "No current ad-policy violation declared on pages that have no Google ads"
+    },
+    {
+      "id": "V11-A5",
+      "status": "not_universally_required_in_reviewed_guides",
+      "topic": "Public Contact page",
+      "evidenceIds": [
+        "v11-google-adsense-eligibility",
+        "v11-google-adsense-pages"
+      ],
+      "limit": "Follow user no-Contact instruction; any actual contract/review requirement remains to be checked without inventing personal details"
+    }
   ],
-  "hostingSuitability": {"priority":"high_before_monetization","sourceResearchFile":"docs/research/legal-audit-v11.json","sourceId":"legal-github-commercial-v11","url":"https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits","alsoBodyReadInThisAudit":true,"assessment":"GitHub Pages restricts free hosting for online businesses and sites primarily facilitating commercial transactions. PSL-based AdSense site eligibility does not override hosting terms. No on-site checkout is not automatic permission for an affiliate-focused operation; contract suitability or an alternative permitted host remains unresolved."},
-  "conclusion": "Improve decision-useful original information and product diversity, not content volume for its own sake. The reviewed live site has working project routes but a404 host root; site acceptance, truthful account requirements, hosting-contract suitability and future ad data/consent/security settings remain separate from content improvements. No application or approval was performed."
+  "hostingSuitability": {
+    "priority": "high_before_monetization",
+    "sourceResearchFile": "docs/research/legal-audit-v11.json",
+    "sourceId": "legal-github-commercial-v11",
+    "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits",
+    "alsoBodyReadInThisAudit": true,
+    "assessment": "GitHub Pages restricts free hosting for online businesses and sites primarily facilitating commercial transactions. PSL-based AdSense site eligibility does not override hosting terms. No on-site checkout is not automatic permission for an affiliate-focused operation; contract suitability or an alternative permitted host remains unresolved."
+  },
+  "conclusion": "Improve decision-useful original information and product diversity, not content volume for its own sake. The reviewed live site has working project routes but a404 host root; site acceptance, truthful account requirements, hosting-contract suitability and future ad data/consent/security settings remain separate from content improvements. No application or approval was performed.",
+  "finalImplementation": {
+    "version": "0.11.0",
+    "publishedProducts": 42,
+    "regionLinkedProducts": 38,
+    "unconfirmedManufacturingPrefectureProducts": 4,
+    "activeRegions": 12,
+    "draftProducts": 6,
+    "selection": "Individual sourced choice notes plus two real published comparison targets for every published item; no generic wear-test or popularity claims.",
+    "budget": {
+      "partitionIds": [
+        "up-to-5000",
+        "5000-10000",
+        "10000-20000",
+        "20000-40000",
+        "over-40000",
+        "unconfirmed"
+      ],
+      "publishedCounts": [
+        12,
+        12,
+        6,
+        6,
+        6,
+        0
+      ],
+      "market": "raw Japan reference JPY only; no FX-derived or unconfirmed shelf price"
+    },
+    "verification": [
+      {
+        "report": "docs/quality-stage-browser-results.json",
+        "checks": 437,
+        "passed": 437,
+        "productDetailViews": 252,
+        "regionalTypeRoundtrips": 198,
+        "axeScreens": 36,
+        "axeViolations": 0,
+        "withdrawnRoutes404": 12,
+        "htmlFilesWithoutWithdrawnLinks": 220,
+        "sourceInputsStable": true
+      },
+      {
+        "report": "docs/quality-stage-prices-results.json",
+        "checks": 73,
+        "passed": 73,
+        "dualMarketProducts": 9,
+        "productDetailViews": 60,
+        "axeScreens": 18,
+        "axeViolations": 0
+      },
+      {
+        "report": "docs/quality-stage-priority-results.json",
+        "priorityScreens": 4,
+        "passed": 4,
+        "manualReviewedScreenshots": 8
+      },
+      {
+        "report": "docs/quality-stage-full-browser-results.json",
+        "checks": 328,
+        "passed": 328,
+        "pageVisits": 294,
+        "uniqueRoutes": 96,
+        "axeScreens": 270,
+        "axeViolations": 0
+      },
+      {
+        "report": "docs/quality-stage-hosted-browser-results.json",
+        "origin": "https://rozawa619.github.io",
+        "publishedApplicationCommit": "f85c757c90fc332d10f62b984b6949824865d812",
+        "checks": 437,
+        "passed": 437,
+        "productDetailViews": 252,
+        "regionalTypeRoundtrips": 198,
+        "axeScreens": 36,
+        "axeViolations": 0,
+        "withdrawnRoutes404": 12,
+        "sourceInputsStable": true,
+        "localAndHostedInputHashesMatch": true
+      },
+      {
+        "report": "docs/quality-stage-hosted-priority-results.json",
+        "priorityScreens": 4,
+        "passed": 4,
+        "manualReviewedScreenshots": 4
+      }
+    ],
+    "approval": "No AdSense account connection, submission, ads, approval prediction or domain purchase performed. Deployment verification is recorded separately.",
+    "purchaseRoutes": {
+      "onlineOrderChecked": 33,
+      "retailAndCurrentCatalogChecked": 9
+    }
+  }
 }
