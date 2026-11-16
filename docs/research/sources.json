@@ -1376,5 +1376,1222 @@
       "All official online displayed prices are tax-inclusive; shipping separate; online shipping limited to Japan; does not establish physical-store item price"
     ],
     "title": "www.rin-zenshop.com — official maker price review"
+  },
+  {
+    "id": "legal-copyright-current-v11",
+    "title": "e-Gov 著作権法 — CurrentEnforced revision",
+    "url": "https://laws.e-gov.go.jp/law/345AC0000000048/20260624_508AC0000000048",
+    "apiUrl": "https://laws.e-gov.go.jp/api/2/law_data/345AC0000000048?law_full_text_format=xml&asof=2026-11-16",
+    "checkedAt": "2026-11-16",
+    "access": "body_read_api_xml",
+    "revision": "345AC0000000048_20260624_508AC0000000048",
+    "articlesRead": [
+      "2",
+      "21",
+      "23",
+      "27",
+      "32",
+      "48"
+    ],
+    "supports": [
+      "Copyright protects creative expression; reproducing, translating/adapting and publicly transmitting protected material require a lawful basis. Citation has substantive requirements; a source credit alone does not grant a license."
+    ]
+  },
+  {
+    "id": "legal-ai-copyright-v11",
+    "title": "文化庁 AIと著作権に関する考え方について(2024-03-15)",
+    "url": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/pdf/94037901_01.pdf",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "pagesRead": [
+      0,
+      3,
+      4,
+      5,
+      32,
+      33
+    ],
+    "supports": [
+      "The agency discussion is not itself legally binding. AI generation and publication can still infringe where the relevant similarity and reliance are present; generation technology and an AI label do not clear another person's rights."
+    ]
+  },
+  {
+    "id": "legal-design-current-v11",
+    "title": "e-Gov 意匠法 — CurrentEnforced revision",
+    "url": "https://laws.e-gov.go.jp/law/334AC0000000125/20260521_504AC0000000048",
+    "apiUrl": "https://laws.e-gov.go.jp/api/2/law_data/334AC0000000125?law_full_text_format=xml&asof=2026-11-16",
+    "checkedAt": "2026-11-16",
+    "access": "body_read_api_xml",
+    "revision": "334AC0000000125_20260521_504AC0000000048",
+    "articlesRead": [
+      "2",
+      "23"
+    ],
+    "supports": [
+      "Design protection concerns registered designs and their similar scope and the statutorily defined acts of implementation. A picture of a physical accessory is not automatically the same act as manufacturing or offering a counterfeit; individual registrations and uses still need analysis."
+    ]
+  },
+  {
+    "id": "legal-trademark-current-v11",
+    "title": "e-Gov 商標法 — CurrentEnforced revision",
+    "url": "https://laws.e-gov.go.jp/law/334AC0000000127/20260521_504AC0000000048",
+    "apiUrl": "https://laws.e-gov.go.jp/api/2/law_data/334AC0000000127?law_full_text_format=xml&asof=2026-11-16",
+    "checkedAt": "2026-11-16",
+    "access": "body_read_api_xml",
+    "revision": "334AC0000000127_20260521_504AC0000000048",
+    "articlesRead": [
+      "25",
+      "26"
+    ],
+    "supports": [
+      "Scope depends on the registered mark, goods/services and manner of use, including source-identification questions. Accurate text identification of a maker is distinct from claiming to be that maker or an authorized partner; no blanket mark clearance was performed."
+    ]
+  },
+  {
+    "id": "legal-ucpa-current-v11",
+    "title": "e-Gov 不正競争防止法 — CurrentEnforced revision",
+    "url": "https://laws.e-gov.go.jp/law/405AC0000000047/20260521_507AC0000000039",
+    "apiUrl": "https://laws.e-gov.go.jp/api/2/law_data/405AC0000000047?law_full_text_format=xml&asof=2026-11-16",
+    "checkedAt": "2026-11-16",
+    "access": "body_read_api_xml",
+    "revision": "405AC0000000047_20260521_507AC0000000039",
+    "articlesRead": [
+      "2(1)(1)",
+      "2(1)(2)",
+      "2(1)(3)",
+      "2(1)(20)",
+      "2(1)(21)"
+    ],
+    "supports": [
+      "Relevant risks include confusing business identifiers, uses of famous identifiers, specified acts involving copied product forms, misleading origin/quality statements, and false factual statements harming a competitor. These are separate questions, not a rule that every similar product picture necessarily infringes."
+    ]
+  },
+  {
+    "id": "legal-premiums-current-v11",
+    "title": "e-Gov 不当景品類及び不当表示防止法 — CurrentEnforced revision",
+    "url": "https://laws.e-gov.go.jp/law/337AC0000000134/20260521_504AC0000000048",
+    "apiUrl": "https://laws.e-gov.go.jp/api/2/law_data/337AC0000000134?law_full_text_format=xml&asof=2026-11-16",
+    "checkedAt": "2026-11-16",
+    "access": "body_read_api_xml",
+    "revision": "337AC0000000134_20260521_504AC0000000048",
+    "articlesRead": [
+      "5"
+    ],
+    "supports": [
+      "Materially misleading quality/content and advantageous-condition representations are prohibited for the supplying business within the law's scope. Applicability to a publisher's role must not be assumed identical to that of the product supplier."
+    ]
+  },
+  {
+    "id": "legal-caa-stealth-v11",
+    "title": "消費者庁 ステルスマーケティングQ&A Q1/Q11/Q13",
+    "url": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/faq/stealth_marketing/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Q1 identifies the regulated supplier/advertiser and notes the joint-supply exception rather than making every affiliate directly the same regulated actor. Q13 evaluates the complete presentation including location, size and color; an opening notice is not an automatic safe harbor."
+    ]
+  },
+  {
+    "id": "legal-caa-mailorder-v11",
+    "title": "消費者庁 特定商取引法ガイド 通信販売",
+    "url": "https://www.no-trouble.caa.go.jp/what/mailorder/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "The mail-order definition and advertising duties concern the seller/service provider and accepting contract applications. This site's no-order/no-payment/no-contract structure does not establish that SORA is the product seller. Future sales, paid services, preorder mediation or joint supply need a fresh review."
+    ]
+  },
+  {
+    "id": "legal-ftc-affiliate-v11",
+    "title": "FTC Endorsement Guides — What People Are Asking",
+    "url": "https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Unexpected material connections should be disclosed clearly and conspicuously close to the recommendation/link. 'Affiliate link' alone may not explain the commission; a separate policy link is not sufficient by itself. Truthful experience and substantiation still matter."
+    ]
+  },
+  {
+    "id": "legal-ftc-global-v11",
+    "title": "FTC Disclosures101 for Social Media Influencers",
+    "url": "https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Foreign posting does not automatically avoid US law where US-consumer effects are reasonably foreseeable. Material connections can include non-cash benefits and disclosures should match the endorsement language."
+    ]
+  },
+  {
+    "id": "legal-ftc-claims-v11",
+    "title": "FTC Advertising FAQs — Small Business",
+    "url": "https://www.ftc.gov/business-guidance/resources/advertising-faqs-guide-small-business",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Truthful advertising is assessed in context, including implied claims, pictures and material omissions. Objective product, price and safety claims need a reasonable supporting basis; an AI caption or warranty does not by itself cure a deceptive overall impression."
+    ]
+  },
+  {
+    "id": "legal-ppc-guidelines-v11",
+    "title": "個人情報保護委員会 通則ガイドライン",
+    "url": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "sectionsRead": [
+      "2-1",
+      "2-8",
+      "3-3",
+      "3-7",
+      "5"
+    ],
+    "supports": [
+      "Personal information, personal data and personal-related information differ. Identifiers and browsing histories can create obligations depending on actual collection/use. Publishing a media site does not alone establish that every operation falls within the writing/reporting exemption."
+    ]
+  },
+  {
+    "id": "legal-ppc-public-data-v11",
+    "title": "個人情報保護委員会 公表済み個人情報Q1-5",
+    "url": "https://www.ppc.go.jp/all_faq_index/faq1-q1-5/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Information already public online is still protected personal information where the definition applies; public availability is not a universal permission to aggregate and reuse personal information."
+    ]
+  },
+  {
+    "id": "legal-ppc-business-names-v11",
+    "title": "個人情報保護委員会 法人代表者情報Q2-6",
+    "url": "https://www.ppc.go.jp/all_faq_index/faq2-q2-6/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "A representative or business contact name can be personal information. Whether a business database is a personal-information database depends on its search/organization structure, so corporate context is not an automatic exemption."
+    ]
+  },
+  {
+    "id": "legal-telecom-current-v11",
+    "title": "e-Gov 電気通信事業法 — CurrentEnforced revision",
+    "url": "https://laws.e-gov.go.jp/law/359AC0000000086/20260527_507AC0000000046",
+    "apiUrl": "https://laws.e-gov.go.jp/api/2/law_data/359AC0000000086?law_full_text_format=xml&asof=2026-11-16",
+    "checkedAt": "2026-11-16",
+    "access": "body_read_api_xml",
+    "revision": "359AC0000000086_20260527_507AC0000000046",
+    "articlesRead": [
+      "27-12"
+    ],
+    "supports": [
+      "For covered services, certain device-information transmission instructions require prior notification/easy availability or another applicable route, subject to defined exceptions. Applicability and subordinate-rule details must be reviewed when adding advertising/analytics tags; a cookie label alone is not the test."
+    ]
+  },
+  {
+    "id": "legal-github-ip-v11",
+    "title": "GitHub Docs What is GitHub Pages — Data collection",
+    "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "GitHub states that visitors' IP addresses are logged and stored for security whether or not signed in. No own analytics/cookies is distinct from no information being processed by hosting."
+    ]
+  },
+  {
+    "id": "legal-github-commercial-v11",
+    "title": "GitHub Docs GitHub Pages limits — Usage limits",
+    "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "GitHub Pages is not intended or allowed as free hosting for an online business/e-commerce site or a site primarily facilitating commercial transactions. No on-site checkout alone does not settle whether an affiliate-focused operation is permitted. Contract suitability remains unresolved; GitHub source hosting is a separate use."
+    ]
+  },
+  {
+    "id": "legal-maps-url-v11",
+    "title": "Google Maps URLs Get Started",
+    "url": "https://developers.google.com/maps/documentation/urls/get-started",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Google documents cross-platform search/directions URLs, required api=1, encoding and no API-key requirement. This supports the actual user-activated external-link implementation."
+    ]
+  },
+  {
+    "id": "legal-google-geo-v11",
+    "title": "Google Geo Guidelines — Web and apps",
+    "url": "https://about.google/brand-resource-center/products-and-services/geo-guidelines/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Google expressly welcomes text/button links to Maps. Images, screenshots, logos, embedded services and commercial integrations have separate conditions; linking is not a license to copy those assets."
+    ]
+  },
+  {
+    "id": "legal-adsense-privacy-v11",
+    "title": "Google AdSense Required content",
+    "url": "https://support.google.com/adsense/answer/1348695?hl=en",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Sites using Google advertising must disclose applicable advertising cookies, participating vendors and user controls in the privacy policy. Present no-ad behavior cannot truthfully remain the only policy once ad tags are enabled."
+    ]
+  },
+  {
+    "id": "legal-google-eu-consent-v11",
+    "title": "Google EU user consent policy",
+    "url": "https://www.google.com/about/company/user-consent-policy/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "When an incorporated Google product is used, EEA/UK/Swiss users require the specified disclosures, legally valid consent where required, identified data parties, records and withdrawal instructions. This is a conditional Google policy and does not certify all legal compliance."
+    ]
+  },
+  {
+    "id": "legal-google-cmp-v11",
+    "title": "Google AdSense Certified CMP requirements",
+    "url": "https://support.google.com/adsense/answer/13554116?hl=en",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "A Google-certified TCF-integrated CMP is required for personalized advertising to EEA/UK/Swiss users under the stated program conditions. Certification does not assess full legal compliance; non-personalized or limited advertising is not a universal no-consent exemption."
+    ]
+  },
+  {
+    "id": "legal-google-privacy-v11",
+    "title": "Google Privacy Policy",
+    "url": "https://policies.google.com/privacy?hl=en",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "effectiveDate": "2026-10-16",
+    "supports": [
+      "External Google destinations apply their own service/settings-dependent information practices, including device/IP, cookies and location information; this is distinct from the selection site's own no-location/no-tracker implementation."
+    ]
+  },
+  {
+    "id": "v11-google-sites-psl",
+    "title": "Google AdSense Help — Site management is changing in AdSense",
+    "url": "https://support.google.com/adsense/answer/12170421?hl=en",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Sites management permits subdomains on platforms included in the Public Suffix List",
+      "The general sign-up URL examples must not be used to declare all platform subdomains ineligible"
+    ]
+  },
+  {
+    "id": "v11-public-suffix-list",
+    "title": "Public Suffix List — official current list",
+    "url": "https://publicsuffix.org/list/public_suffix_list.dat",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Version2026-11-15_20-28-43_UTC includes github.io and pages.dev",
+      "List membership does not establish actual AdSense acceptance, ownership connection or approval"
+    ]
+  },
+  {
+    "id": "v11-google-adsense-url",
+    "title": "Google AdSense Help — How to enter the URL of your site when you create an AdSense account",
+    "url": "https://support.google.com/adsense/answer/2784438?hl=en",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Sign-up URL must not include a path, parameter, fragment or port",
+      "General domain/subdomain examples and host-partner distinction; GitHub Pages-specific acceptance not tested"
+    ]
+  },
+  {
+    "id": "v11-google-adsense-eligibility",
+    "title": "Google AdSense Help — Eligibility requirements",
+    "url": "https://support.google.com/adsense/answer/9724?hl=en",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Original high-quality content, policy compliance, source access and age requirement",
+      "No fixed product/article/word-count threshold found in this reviewed guide"
+    ]
+  },
+  {
+    "id": "v11-google-adsense-pages",
+    "title": "Google AdSense Help — Make sure your site's pages are ready for AdSense",
+    "url": "https://support.google.com/adsense/answer/7299563?hl=en",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Unique useful content and accessible clear navigation",
+      "Original contribution when external resources are used"
+    ]
+  },
+  {
+    "id": "v11-google-publisher-policies",
+    "title": "Google Publisher Policies",
+    "url": "https://support.google.com/publisherpolicies/answer/10502938?hl=en",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Low-value/no publisher-content screens and copied content without added value",
+      "Ad interference and excess promotional material restrictions",
+      "Privacy disclosures for actual data collection resulting from Google services",
+      "IP and accurate declaration policies"
+    ]
+  },
+  {
+    "id": "v11-google-add-site",
+    "title": "Google AdSense Help — Add a new site to your AdSense sites list",
+    "url": "https://support.google.com/adsense/answer/12169212?hl=en",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Site addition, connection and request-review are separate steps",
+      "Connection options include actual publisher meta, ads.txt or code; no invented IDs"
+    ]
+  },
+  {
+    "id": "v11-google-certified-cmp",
+    "title": "Google AdSense Help — Consent management requirements for EEA, UK and Switzerland",
+    "url": "https://support.google.com/adsense/answer/13554116?hl=en",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Google-certified CMP integrated with TCF for personalized ads in the named regions",
+      "Certification does not itself certify compliance with all privacy laws"
+    ]
+  },
+  {
+    "id": "v11-google-helpful-content",
+    "title": "Google Search Central — Creating helpful, reliable, people-first content",
+    "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Original analysis, completeness, clear sourcing and accurate creation/author context",
+      "Search guidance explicitly rejects a preferred word-count target; not an AdSense approval formula"
+    ]
+  },
+  {
+    "id": "v11-google-search-spam",
+    "title": "Google Search Central — Spam policies",
+    "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Thin affiliation and scaled unoriginal content without user value",
+      "Useful comparisons/navigation can add value; copied merchant text alone does not",
+      "Search policy and AdSense review are distinct"
+    ]
+  },
+  {
+    "id": "v11-google-ai-content",
+    "title": "Google Search Central — Guidance about AI-generated content",
+    "url": "https://developers.google.com/search/blog/2023/02/google-search-and-ai-content",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "AI use is not a blanket Search ban; quality and purpose matter",
+      "Automation disclosure and truthful authorship do not replace content value"
+    ]
+  },
+  {
+    "id": "v11-benchmark-becos-earrings",
+    "title": "BECOS Global — Japanese Earrings",
+    "url": "https://en.thebecos.com/collections/earrings",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Observed availability, price, brand, color and material filter controls",
+      "Observed price ordering and retailer Best selling label; no sales counts verified"
+    ]
+  },
+  {
+    "id": "v11-benchmark-fujimaki-jewelry",
+    "title": "藤巻百貨店 — ブレスレット・ピアス・イヤリング・ネックレス",
+    "url": "https://fujimaki-select.com/category/C_JEWELLERY/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Observed product-specific short appeal, type, tax-included price, maker and regional navigation",
+      "45-item count and displayed review numbers are that retailer's current display, not an independent popularity measure"
+    ]
+  },
+  {
+    "id": "v11-benchmark-nakagawa-selection",
+    "title": "中川政七商店 — 夏に向けて新調したいアクセサリー",
+    "url": "https://www.nakagawa-masashichi.jp/shop/e/ev0624_sspd/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "method": "Web cache miss followed by normal fresh Chrome200 and actual full body read",
+    "supports": [
+      "Selection grouped by washi, Kutani and Imari materials/crafts",
+      "Distinctive material and shape explanations lead into actual product choices",
+      "Observed price-order options, color combinations and prices"
+    ]
+  },
+  {
+    "id": "v11-benchmark-shokunin-popular",
+    "title": "Shokunin.com — Popular Items",
+    "url": "https://www.shokunin.com/en/etc/popular.html",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "English craft navigation with original JPY price and brand/showroom entry points",
+      "Reference for general craft browsing, not a jewelry specialist or proven traffic leader"
+    ]
+  },
+  {
+    "id": "v11-benchmark-becos-halfmoon",
+    "title": "BECOS Global — 6.KILN Half-moon earrings",
+    "url": "https://en.thebecos.com/products/s0164-018",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Product-specific material, dimensions, reverse-color specification transition and care information",
+      "Observed facts do not clarify whether the stated8g is per piece or pair; no unsupported weight inference"
+    ]
+  },
+  {
+    "id": "v11-benchmark-shokunin-detail",
+    "title": "Shokunin.com — FUTAGAMI Coaster",
+    "url": "https://www.shokunin.com/en/futagami/coaster.html",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "General craft product example links design function, material, dimensions/weight and care",
+      "Not jewelry; its exact care/retail terms are not reused for this site's products"
+    ]
+  },
+  {
+    "id": "v11-own-host-root",
+    "title": "Current host root — Site not found",
+    "url": "https://rozawa619.github.io/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "httpStatus": 404,
+    "method": "Normal fresh Chrome",
+    "supports": [
+      "Host-root404 distinct from working project subpath; AdSense real-site acceptance/connection remains untested"
+    ]
+  },
+  {
+    "id": "v11-own-rinzen-ja",
+    "title": "Current Japanese Seika detail",
+    "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/rinzen-seika-amber-pierced-earrings/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "httpStatus": 200,
+    "supports": [
+      "Baseline Japan-primary price, international secondary price, source details, ordinary links, shortAI caption and verified store guide are present"
+    ]
+  },
+  {
+    "id": "v11-own-tokyo-en",
+    "title": "Current English Tokyo selection",
+    "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/tokyo/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "httpStatus": 200,
+    "supports": [
+      "Baseline Tokyo selection is two RINZEN glass products with a short introduction; no product-specific choosing summary"
+    ]
+  },
+  {
+    "id": "hosting-cloudflare-agreement-v11",
+    "title": "Cloudflare Self-Serve Subscription Agreement",
+    "url": "https://www.cloudflare.com/terms/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "documentUpdatedAt": "2025-09-12",
+    "supports": [
+      "Reviewed service terms, incorporated product/plan conditions, free-service termination, acceptable use, network data and free-service credit-card collection restriction. Current site has no card collection; no perpetual free or unlimited commercial guarantee is inferred."
+    ]
+  },
+  {
+    "id": "hosting-cloudflare-developer-terms-v11",
+    "title": "Cloudflare Developer Platform Service-Specific Terms",
+    "url": "https://www.cloudflare.com/service-specific-terms-developer-platform/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "documentUpdatedAt": "2026-09-28",
+    "supports": [
+      "Developer Platform includes Workers/Pages and may host content; customer remains responsible for content/licensing/support, resource limits/abuse controls apply, and provided subdomains can change under the stated conditions."
+    ]
+  },
+  {
+    "id": "hosting-cloudflare-pages-overview-v11",
+    "title": "Cloudflare Pages Overview",
+    "url": "https://developers.cloudflare.com/pages/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Pages offers Git/direct-upload delivery on current plans, while its current notice recommends Workers for new projects. No new account or service was created for this research."
+    ]
+  },
+  {
+    "id": "hosting-cloudflare-build-config-v11",
+    "title": "Cloudflare Pages Build configuration",
+    "url": "https://developers.cloudflare.com/pages/configuration/build-configuration/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Static Astro build output is dist; configure the real build command/output directory and review the actual exit status rather than publishing source files."
+    ]
+  },
+  {
+    "id": "hosting-cloudflare-build-image-v11",
+    "title": "Cloudflare Pages Build image",
+    "url": "https://developers.cloudflare.com/pages/configuration/build-image/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "NODE_VERSION/PNPM_VERSION overrides and SKIP_DEPENDENCY_INSTALL are documented. Proposed production profile pins supported versions and a frozen-lockfile install instead of relying on a different default runtime."
+    ]
+  },
+  {
+    "id": "hosting-cloudflare-github-v11",
+    "title": "Cloudflare Pages GitHub integration",
+    "url": "https://developers.cloudflare.com/pages/configuration/git-integration/github-integration/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Pages can build from the existing GitHub repository and maintain production/preview branches. Source hosting can remain GitHub while public delivery moves elsewhere."
+    ]
+  },
+  {
+    "id": "hosting-cloudflare-domains-v11",
+    "title": "Cloudflare Pages Custom domains",
+    "url": "https://developers.cloudflare.com/pages/configuration/custom-domains/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Register the actual domain in Pages before its DNS setup. Apex needs the specified zone/nameserver arrangement; external-DNS subdomain CNAME is possible under the documented conditions. No domain/DNS was changed."
+    ]
+  },
+  {
+    "id": "hosting-cloudflare-redirects-v11",
+    "title": "Cloudflare Pages Redirects",
+    "url": "https://developers.cloudflare.com/pages/configuration/redirects/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "_redirects applies to requests served by that Pages deployment, has specific syntax/limits, and differs for Functions. A file at the new host cannot by itself redirect requests still arriving at the old GitHub origin."
+    ]
+  },
+  {
+    "id": "hosting-cloudflare-default-domain-redirect-v11",
+    "title": "Redirecting pages.dev to a custom domain",
+    "url": "https://developers.cloudflare.com/pages/how-to/redirect-to-custom-domain/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "After the real custom domain is set up, a provider-side redirect may preserve paths/query strings using the documented settings. This does not select or register a domain for the operator."
+    ]
+  },
+  {
+    "id": "hosting-cloudflare-limits-v11",
+    "title": "Cloudflare Pages Limits",
+    "url": "https://developers.cloudflare.com/pages/platform/limits/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Current Free limits include500 builds/month,20000 files and25MiB per asset; other service/rate/resource conditions apply. No unlimited-use or future-price guarantee is made."
+    ]
+  },
+  {
+    "id": "hosting-cloudflare-headers-v11",
+    "title": "Cloudflare Pages Headers",
+    "url": "https://developers.cloudflare.com/pages/configuration/headers/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Static _headers supports additional security headers; Functions responses require a different path. New headers must be tested alongside the existing Astro hash-based CSP rather than disabling it."
+    ]
+  },
+  {
+    "id": "hosting-cloudflare-cookies-v11",
+    "title": "Cloudflare Cookies",
+    "url": "https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Provider security/features can use cookies such as bot-management/challenge state under documented settings. The current GitHub-hosted cookie observation must not be assumed valid after a migration."
+    ]
+  },
+  {
+    "id": "hosting-cloudflare-privacy-v11",
+    "title": "Cloudflare Privacy Policy",
+    "url": "https://www.cloudflare.com/privacypolicy/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Provider-specific privacy practices must be reviewed and reflected according to actual enabled services and data flows. Current GitHub hosting wording cannot simply be left unchanged after moving."
+    ]
+  },
+  {
+    "id": "hosting-astro-cloudflare-v11",
+    "title": "Astro Deploy your Astro Site to Cloudflare",
+    "url": "https://docs.astro.build/en/guides/deploy/cloudflare/",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Current Astro guidance recommends Workers for new projects and provides a static dist asset path; an on-demand adapter is conditional, not necessary merely to serve this already static site."
+    ]
+  },
+  {
+    "id": "hosting-google-move-v11",
+    "title": "Google Search Central Site moves",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Map old/new pages, update self-canonicals/hreflang/internal links and sitemap, avoid irrelevant home redirects and loops, and verify the move on actual public URLs. Search transfer is not guaranteed by a build."
+    ]
+  },
+  {
+    "id": "hosting-google-redirects-v11",
+    "title": "Google Search Central Redirects",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Server-side permanent redirects are preferred where possible; supported alternatives must be described by their real behavior. A static HTML refresh must not be reported as anHTTP301."
+    ]
+  },
+  {
+    "id": "hosting-google-change-address-v11",
+    "title": "Google Search Console Change of Address",
+    "url": "https://support.google.com/webmasters/answer/9370220?hl=en",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "The tool requires ownership and supported domain-level properties; it is not available for a path-only property such as the existing project subpath."
+    ]
+  },
+  {
+    "id": "hosting-adsense-url-v11",
+    "title": "Google AdSense Site URL input",
+    "url": "https://support.google.com/adsense/answer/2784438?hl=en",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Signup input uses a standard host without path/query/fragment/port. Its subdomain examples must be read with the separate current Sites-management/Public Suffix List guidance, not turned into a purchased-domain mandate."
+    ]
+  },
+  {
+    "id": "hosting-adsense-psl-policy-v11",
+    "title": "Google AdSense Site management changes",
+    "url": "https://support.google.com/adsense/answer/12170421?hl=en",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Sites management lists domains, subdomains on Public Suffix List platforms and managed host partners as eligible site categories. This alone does not prove actual account acceptance, ownership verification or content approval."
+    ]
+  },
+  {
+    "id": "hosting-public-suffix-list-v11",
+    "title": "Official Public Suffix List",
+    "url": "https://publicsuffix.org/list/public_suffix_list.dat",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "documentVersion": "2026-11-15_20-28-43_UTC",
+    "documentCommit": "fd22c6c8b3fd7e854c1eff2194cfd4ebc9854b88",
+    "observedEntries": [
+      "pages.dev",
+      "github.io"
+    ],
+    "supports": [
+      "Both provided-platform suffixes are present in the official list. No operator AdSense account submission, provider endorsement or automatic approval follows from this observation."
+    ]
+  },
+  {
+    "id": "hatakeyama-parfait-winter-v11",
+    "url": "https://tokyo-shippou.com/products/detail/432",
+    "title": "Hatakeyama seasonal parfait winter, chocolate/orange earrings",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Public non-member JPY7260 including tax; asymmetric forms; tombac base, gold plating, stainless posts and brass catches; separate 20mm/40mm dimensions and 2.3g/1.2g statements."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "hatakeyama-bijou-purple-v11",
+    "url": "https://tokyo-shippou.com/products/detail/454",
+    "title": "Hatakeyama Bijou purple necklace",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "JPY3520 including tax before optional membership;10x10mm motif, tombac, gold plating and approximately 45cm chain."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "hatakeyama-maker-v11",
+    "url": "https://blog.tokyo-shippou.com/contents/category/about/",
+    "title": "Hatakeyama Shippo company and production profile",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Tokyo-based manufacturer of enamel jewelry; company address and qualification history. Company address alone is not a confirmed walk-in retail shop."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "sangetsu-irodori-pierced-v11",
+    "url": "https://sangetsu.myshopify.com/products/piasu-kinaka",
+    "title": "Sangetsu Irodori Izumi glass-bead earrings",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "JPY3300 tax included; approximately 8mm beads; Silver 925 American-type fittings; handmade variation. Glass color names do not establish jade or coral materials."
+    ],
+    "method": "fresh_chrome_200_body_read"
+  },
+  {
+    "id": "sangetsu-irodori-necklace-v11",
+    "url": "https://sangetsu.myshopify.com/products/puti-kinaka",
+    "title": "Sangetsu Irodori Izumi glass-bead necklace",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "JPY4950 tax included; approximately 18mm bead and 5mm hole; removable supplied necklace cord; cord material/length not identified."
+    ],
+    "method": "fresh_chrome_200_body_read"
+  },
+  {
+    "id": "sangetsu-maker-access-v11",
+    "url": "https://izumi-tombodama.com/access.html",
+    "title": "Sangetsu workshop and permanent retail stores",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Osaka/Senshu glass-bead work, registered Izumi Tombodama name, named artisans; workshop not a shop; Sakaihigashi permanent shop at Kishida2F with hours."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "sangetsu-sakai-store-v11",
+    "url": "https://sennotoki-glass.com/shop",
+    "title": "Sangetsu official Sakaihigashi store guide",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Public retail shop address at1-4-25 Nakakawaramachi, Kishida2F; approximately 4minutes walk from Sakaihigashi; not the non-retail office."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "sangetsu-storefront-identity-v11",
+    "url": "https://sangetsu.myshopify.com/policies/legal-notice",
+    "title": "Sangetsu storefront legal information",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Named Matsuda Junichi and 0722242670 match the maker profile/shop. The storefront legal address still says Sakai Takashimaya South5F and is not used for Maps."
+    ],
+    "method": "official_html_body_read"
+  },
+  {
+    "id": "izumi-glass-retail-v11",
+    "url": "https://satomachi-izumi.com/ippin/21350.html",
+    "title": "Izumi City public retail information for local glasswork",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Public visitor-center glass-bead ear-jewelry examples and registered-trademark distinction; current exact SKU stock not guaranteed."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "sghr-tietie-pierced-v11",
+    "url": "https://shop.sugahara.com/view/item/000000005160",
+    "title": "Sghr Tie-tie pierced earrings SJEAR-14W",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "JPY8800 including tax; glass8x39mm; titanium posts, brass balls/rings/pins, surgical-stainless chain and rubber catches; water and impact precautions."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "sghr-kolmio-earcuff-v11",
+    "url": "https://shop.sugahara.com/view/item/000000005159",
+    "title": "Sghr Kolmio glass ear cuff SJEAR-13ig",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "JPY6600 including tax; triangular glass motif approximately 15.5x15.5mm; handmade differences, impact precautions."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "sghr-kujukuri-workshop-v11",
+    "url": "https://www.sugahara.com/story/factory/",
+    "title": "Sghr Kujukuri factory and production",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "The maker says all Sghr products are born at its Kujukuri, Chiba workshop; factory shop on the same site. Individual fitting origins are not established."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "sghr-official-stores-v11",
+    "url": "https://www.sugahara.com/about/shop/",
+    "title": "Sghr direct stores including Kujukuri Factory Shop",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Factory shop public address797 Fujishita, Kujukuri,09:30-17:30, year-end/other closures; broad collection, not a promise of a particular SKU."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "kazarino-pierce-v11",
+    "url": "https://www.kazarino.com/product-page/pierce",
+    "title": "KAZARINO Hanabishi option on the official pierced-earring listing",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "JPY7700 including tax; copper and surgical stainless; Hanabishi55x28mm and 3g without clear per-ear/pair basis; no conversion to clip-ons; explicitly not allergy compatible."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "kazarino-bangle-v11",
+    "url": "https://www.kazarino.com/product-page/bangle",
+    "title": "KAZARINO Shippo-pattern brass bangle S option",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "JPY9900 including tax; uncoated brass;S inner circumference 142mm, width 24mm,30g;M165mm, width 27mm,40g. Shippo here is a geometric pattern, not enamel."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "kazarino-maker-v11",
+    "url": "https://www.kazarino.com/about",
+    "title": "KAZARINO maker and decorative metalwork",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Kyoto-based Takeuchi decorative-metalwork brand. No national individual product certification inferred."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "kazarino-stockists-v11",
+    "url": "https://www.kazarino.com/womens",
+    "title": "KAZARINO current stockist listing",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Maker has no ordinary own retail store. BEAMS JAPAN Kyoto is specifically listed for Hanabishi pierced earrings and Shippo/Karakusa bangles; maker office visits require advance contact."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "showen-edo-uchi-blue-bracelet-v11",
+    "url": "https://shop.showen.co.jp/product/%E6%AD%A3%E7%B5%B9%E3%80%80%E4%BA%8C%E9%87%8D%E5%B7%BB%E3%81%8D%E3%83%96%E3%83%AC%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88%E3%80%809%E9%9D%92/",
+    "title": "SHOWEN pure-silk Edo-uchi double-wrap bracelet blue9",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "JPY2200 including tax;100% silk, approximately 36cm length,1cm odamaki ball and 5.5cm loop diameter; ball-and-loop fastening."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "showen-maker-v11",
+    "url": "https://www.showen.co.jp/",
+    "title": "SHOWEN Kumihimo official company site",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Kyoto/Uji kumihimo manufacturer with own products and a linked official webshop. Do not label the individual bracelet entirely hand-braided."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "showen-uji-store-v11",
+    "url": "https://www.showen.co.jp/stores/",
+    "title": "SHOWEN Uji main-store information",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Public shop146-2 Uji Myoraku,10:00-17:00, no regular holiday; official estimates8minutes from JR Uji and 12minutes from Keihan Uji."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "iwaya-urushi-9mm-hook-v11",
+    "url": "https://www.urushikoubou-iwaya.jp/item/e013/",
+    "title": "Iwaya9mm lacquer-bead hook earrings",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "JPY7700 including tax;9mm lacquer beads, Japanese-grown mizuki wood, stainless fittings;12-stage coating/polishing statement. No measured weight or stainless grade."
+    ],
+    "method": "fresh_chrome_200_body_read"
+  },
+  {
+    "id": "iwaya-shop-v11",
+    "url": "https://www.urushikoubou-iwaya.jp/shop.html",
+    "title": "Iwaya Yame public shop and workshop tradition",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Yame-Fukushima Buddhist-altar lacquer techniques applied to accessories; public shop253-1 Takatsuka,10:00-18:00, irregular holidays, parking; YameIC approximately 10minutes by car."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "toytoy-ninkari-nikuri-v11",
+    "url": "https://toytoy-ya.com/SHOP/TN00-NK001.html",
+    "title": "ToyToy Ninkari Nikuri pierced earrings",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "JPY13200 including tax without wrapping; approximately 30mm, wood and surgical stainless listed; clip-on conversion on inquiry, without a confirmed converted price/material."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "toytoy-sirokani-pe-v11",
+    "url": "https://toytoy-ya.com/SHOP/TP00-SK001-SV.html",
+    "title": "ToyToy Sirokani-pe silver necklace",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "JPY68200 including tax;18x13mm SV1000 pure-silver pendant; approximately 450mm adjustable SV925 chain; serial number."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "toytoy-maker-v11",
+    "url": "https://toytoy.jp/about/",
+    "title": "ToyToy official Ainu-pattern design-brand profile",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "The brand identifies designer ToyToy as Hokkaido Ainu; contemporary original designs carrying Ainu patterns. No model ethnicity or individual state certification inferred."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "toytoy-stockists-v11",
+    "url": "https://toytoy-ya.com/shoplist.html",
+    "title": "ToyToy stockist listing",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "YUIQ Odori Bisse2F is listed; some other entries are dated or closed, so those entries are not adopted."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "yuiq-toytoy-brand-v11",
+    "url": "https://www.yuiq.jp/",
+    "title": "YUIQ official brand collection",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "YUIQ itself identifies AINU ToyToy among its Sapporo art and design brands. Exact jewelry stock is not stated."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "yuiq-access-v11",
+    "url": "https://www.yuiq.jp/access.html",
+    "title": "YUIQ public access information",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Odori Bisse2F,3-7 Odori Nishi, Sapporo; Sun-Thu10:00-19:00/Fri-Sat10:00-20:00; underground Odori exit7, approximately 1minute."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "yuiq-mall-v11",
+    "url": "https://www.odori-bisse.com/shop/yuiq/",
+    "title": "Odori Bisse official YUIQ tenant information",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Current2F tenant and matching hours; mall closure December31/January1."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "tamura-kaisai-ear-jewelry-v11",
+    "url": "https://tamura.buyshop.jp/items/139420551",
+    "title": "Tamura Shippo Kaisai earrings/pierced-earring options",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "JPY43000 tax included; pure-silver base, silver wires and enamel; clip-on rhodium-plated silver-color fittings of unspecified base alloy, pierced surgical-stainless fittings; dimensions and weight not published.",
+      "Both listed fitting selections displayed the same JPY43,000 including tax when selected. Clip-on fastening is screw-back; the base alloy remains unspecified."
+    ],
+    "method": "Official product body and live fitting-select options read. Both the screw-back rhodium-color clip-on and surgical-stainless pierced option were selected separately; displayed price remained JPY43,000 including tax. No cart or order submitted."
+  },
+  {
+    "id": "tamura-official-jewelry-v11",
+    "url": "https://tamura-shippo.com/accessories/",
+    "title": "Tamura official Owari-shippo jewelry collection",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Ama, Aichi workshop/brand and link to its official BASE store; accessory process; do not resolve conflicting1883/1886 founding years or infer exact product certification."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "nanao-shuka-nebula-v11",
+    "url": "https://www.creema.jp/item/17252787/detail",
+    "title": "Nanao and Shuka Nebula16G glass earrings",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Fresh body JPY3850; pair, soda glass/luster powder, approximately 4.8mm top,11mm glass shaft,16G approximately 1.2mm, rubber catches; packaging text conflicts. Older cached top 4.9mm is not used."
+    ],
+    "method": "fresh_chrome_200_body_read"
+  },
+  {
+    "id": "nanao-shuka-official-v11",
+    "url": "https://nanaosyuka.amebaownd.com/",
+    "title": "Nanao and Shuka official workshop site",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Maker identifies a Nara workshop and glass-earring practice; former Nara stockist ended around August2026 and is not a current shop recommendation."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "nanao-shuka-profile-v11",
+    "url": "https://www.creema.jp/c/nanaoglass",
+    "title": "Nanao and Shuka maker-operated marketplace profile",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Maker describes burner-worked glass and its own production process, chiefly active in Nara; no current walk-in retail shop verified."
+    ],
+    "method": "official_body_read"
+  },
+  {
+    "id": "simprich-reversible-chain-ring-v11",
+    "url": "https://shop.simprich.jp/products/503954",
+    "title": "SIMPRICH K10 white-gold topaz/ruby chain ring",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "JPY36300 tax included;K10 white gold, white topaz and ruby;5mm top; Japanese ring sizes 1-12; made to order1-4weeks."
+    ],
+    "method": "fresh_chrome_200_body_read"
+  },
+  {
+    "id": "simprich-piaring-single-v11",
+    "url": "https://shop.simprich.jp/products/pr-e4828",
+    "title": "SIMPRICH SV925 reversible Piaring single earring",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Page title specifies a single ear piece;JPY15500 tax included;SV925,19x14mm, width 2-4mm;white/yellow or white/pink color options, coating composition unspecified; made to order1-4weeks."
+    ],
+    "method": "fresh_chrome_200_body_read"
+  },
+  {
+    "id": "hario-netshop-product-v11",
+    "url": "https://shop.hariocorp.co.jp/products/haw-lt-003e",
+    "title": "HARIO NETSHOP Little Tears earrings — current SKU and buy UI",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Fresh Chrome: JPY8,250 including tax, enabled applicable cart button and default SKU. Expanded material panel identifies HAW-LT-E, brass, gold plating and made in Japan; charm4x6x3mm and chain45mm. Standard findings are distinct from optional paid K10 conversion."
+    ],
+    "method": "fresh_Chrome_public_body_details_tab_and_purchase_controls_read_no_submission"
+  },
+  {
+    "id": "hario-lwf-product-v11",
+    "url": "https://www.hario-lwf.com/view/item/000000000256",
+    "title": "HARIO Lampwork Factory Little Tears earrings — matching maker details",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Fresh Chrome body and product-details tab: HAW-LT-E, glass4x6mm and chain45mm, brass plus gold plating, left/right pair, current JPY8,250. Cached JPY7,480 and sold-out text are not used as the current amount or status."
+    ],
+    "method": "fresh_Chrome_body_and_product_details_tab_read"
+  },
+  {
+    "id": "hario-lwf-about-v11",
+    "url": "https://www.hario-lwf.com/view/page/about",
+    "title": "HARIO Lampwork Factory official making and production profile",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Contemporary handmade heatproof-glass accessories; a Tokyo Nihonbashi workshop and a production network in other prefectures. Exact manufacturing workshop for this SKU is not identified."
+    ],
+    "method": "official_web_reader_body_read"
+  },
+  {
+    "id": "hario-kodenmacho-v11",
+    "url": "https://www.hario-lwf.com/view/page/kodenmacho",
+    "title": "HARIO Lampwork Factory Kodenmacho direct store",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Fresh current store page: public glass-accessory display/sales and attached workshop at2-10Nihonbashi Odenmacho; current weekday hours, closures and access. Exact Little Tears shelf stock and shelf price unconfirmed."
+    ],
+    "method": "fresh_Chrome_official_store_body_read"
+  },
+  {
+    "id": "hario-netshop-company-v11",
+    "url": "https://shop.hariocorp.co.jp/pages/company",
+    "title": "HARIO NETSHOP official operator information",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "HARIO NETSHOP is operated by HARIO Shoji, not a separately inferred individual retailer. The company address is not used as a public retail destination."
+    ],
+    "method": "official_web_reader_body_read"
+  },
+  {
+    "id": "hario-lwf-burner-v11",
+    "url": "https://hario-lwf-contents.com/news/wholesale/",
+    "title": "HARIO Lampwork Factory official burner-work description",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "The maker explicitly describes burner-work glass in its wholesale and custom-production practice. A2020technical-practice statement is not used as current shop or stock evidence."
+    ],
+    "method": "official_web_reader_body_read"
+  },
+  {
+    "id": "hario-price-revision-v11",
+    "url": "https://www.hario-lwf.com/view/news/20260908185758",
+    "title": "HARIO official price revision effective November5,2026",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "supports": [
+      "Official notice says selected product and repair prices changed from2026-11-05. Current product price comes from fresh SKU pages rather than an old cached amount."
+    ],
+    "method": "official_web_reader_body_read"
+  },
+  {
+    "id": "beams-kyoto-current-store-v11",
+    "url": "https://www.beams.co.jp/shop/jk/",
+    "title": "BEAMS JAPAN Kyoto — current operator shop information",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "method": "Official web-reader full body read; fresh Chrome navigation also attempted and returned ERR_HTTP2_PROTOCOL_ERROR, so the Chrome failure is not interpreted as closure.",
+    "supports": [
+      "Current official shop listing for ShinPuhKan1F Kyoto address;11:00–20:00; irregular holidays. Does not establish KAZARINO SKU inventory."
+    ]
+  },
+  {
+    "id": "shinpuhkan-beams-current-v11",
+    "url": "https://shinpuhkan.jp/shops_restaurants/beams-japan/",
+    "title": "ShinPuhKan — BEAMS JAPAN current tenant listing",
+    "checkedAt": "2026-11-16",
+    "access": "body_read",
+    "method": "Official facility web-reader body read.",
+    "supports": [
+      "Current facility tenant listing for BEAMS JAPAN at the same Kyoto address, shop hours11:00–20:00. Exact jewelry stock is not stated."
+    ]
   }
 ]

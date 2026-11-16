@@ -40,7 +40,7 @@ async function check([url, references]) {
   try {
     // A single GET avoids treating merchants that reject HEAD as unavailable.
     // Cancel the response body: status and headers are enough for this link check.
-    const response = await fetch(url, { method: 'GET', redirect: 'follow', signal: AbortSignal.timeout(15_000), headers: { 'User-Agent': 'ITO-Editorial-Link-Check/0.1', Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.5' } });
+    const response = await fetch(url, { method: 'GET', redirect: 'follow', signal: AbortSignal.timeout(15_000), headers: { 'User-Agent': 'JapaneseCraftJewelry-Link-Check/0.11', Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.5' } });
     const result = { url, references, method: 'GET', status: response.status, finalUrl: response.url, redirected: response.redirected, contentType: response.headers.get('content-type'), classification: classify(response.status, response.url), durationMs: Math.round(performance.now() - started) };
     await response.body?.cancel();
     return result;
@@ -67,9 +67,9 @@ const report = {
   interpretation: 'Reachability only; does not confirm product facts, eligibility, licensing, active stock or approval. Restricted, missing, temporary and network results require manual recheck; no result alone proves closure.',
   inputFiles, total: results.length, summary, results,
 };
-const output = resolve(root, 'docs/research/link-check.json');
+const output = resolve(root, process.env.CHECK_LINK_REPORT_PATH || 'docs/quality-stage-external-links.json');
 await mkdir(dirname(output), { recursive: true });
 await writeFile(output, `${JSON.stringify(report, null, 2)}\n`);
-console.log(`Saved ${results.length} results to docs/research/link-check.json: ${JSON.stringify(summary)}`);
+console.log(`Saved ${results.length} results to ${output}: ${JSON.stringify(summary)}`);
 // Network restrictions and temporary failures are review items, not a false build failure.
 if (results.some(result => result.classification.startsWith('review_'))) console.log('REVIEW: retry unresolved URLs in a normal browser before changing or removing a source.');

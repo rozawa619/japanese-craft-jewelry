@@ -1,14 +1,14 @@
 ---
 title: "Jewelry connected to Fukuoka"
-description: "Explore Hakata-ori silk-textile and thread jewelry from CO.COON."
+description: "Yame lacquer-bead jewelry from Iwaya Urushi Studio, with a verified purchase route."
 locale: en
 publishStatus: published
 updatedAt: "2026-11-16"
-sourceIds: ["cocoon-about-v9","cocoon-gallery-v9","fukuoka-crafts-v9"]
+sourceIds: ["iwaya-urushi-9mm-hook-v11","iwaya-shop-v11"]
 prefectureId: fukuoka
 relatedMerchantIds: ["cocoon-official"]
 ---
 
-Hakata-ori is one of Fukuoka’s recognized craft traditions. This selection follows it into contemporary earrings through CO.COON, a collaboration using silk threads and fabrics dyed and handwoven by Kiyo Araki.
+Fukuoka’s current selection focuses on Iwaya Urushi Studio. The maker connects its accessories with Yame-Fukushima Buddhist-altar lacquer skills and publishes a current shop guide as well as an ordering page. That craft connection is not an individual product certificate.
 
-Start with the contrast between ori’s spreading textile shape and the Frame Series’ visible threads. The current catalog establishes these designs, while colors, prices and sales arrangements need confirmation with the brand. The regional connection concerns the textile craft; it does not establish every component’s origin.
+A small lacquered mizuki-wood bead gives the hook earrings their rounded surface. We have set aside catalog-only textile pieces whose purchase route could not be confirmed. The latest official order page and shop guide remain the routes for checking the current selection.

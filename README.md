@@ -1,83 +1,63 @@
-# Japanese Craft Jewelry — Selected jewelry from Japan
+# Japanese Craft Jewelry
 
-[English](https://rozawa619.github.io/japanese-craft-jewelry/en/) · [日本語](https://rozawa619.github.io/japanese-craft-jewelry/ja/) · [言語を選ぶ](https://rozawa619.github.io/japanese-craft-jewelry/) · [全ソース](https://github.com/rozawa619/japanese-craft-jewelry)
+[日本語](https://rozawa619.github.io/japanese-craft-jewelry/ja/) · [English](https://rozawa619.github.io/japanese-craft-jewelry/en/) · [全ソース](https://github.com/rozawa619/japanese-craft-jewelry)
 
-日本各地の工芸ジュエリーを、デザインや装いから選んで紹介する日英のセレクトサイトです。運営者表示は **SORA**。ピアス・イヤリング・ネックレス・リング・ブレスレットを扱い、ブログや販売機能は設けません。
+SORAが日本各地の工芸ジュエリーを選ぶ日英の紹介サイト。ブログ・販売決済・Contactは設けません。公開状態はdocs/deployment-results.jsonのversion/commit/Actions/実測を確認してください。
 
-0.10では日英とも国内通販の確認済み参考価格を主表示にします。日本で買う訪日客向けの参考であり、未確認の店頭値札とは同一視しません。海外通販の別価格は商品詳細で対応する海外購入先と並べ、為替換算額とは表示しません。国内価格と国内リンク/海外価格と海外リンクを対応させ、英語ページを選ぶだけで海外価格が主表示になる構成を改めました。
+0.11は法務・競合・AdSenseの公式資料を点検し、商品固有の選択メモ、実データの比較、国内予算/価格順、地域内の選び方を追加。最新指示により、全商品で現行の購入先を確認しています。42公開商品・12都道府県・18技法・240出典記録。33点は対象商品の有効な公式注文受付、9点は営業中の小売と価格付き現行カタログを確認。これは将来の在庫や注文成立の保証ではありません。
 
-現在は30商品・12都道府県・13技法。トップ、商品セレクト、産地一覧は「左に産地／右に代表アクセサリー1点」で地域の商品群へ案内します。訪日客の訪問率TOP10は、観光庁2025年暦年確報・表6-1の全目的／全国籍地域／複数回答で並べます。東京・大阪・千葉・京都・福岡・神奈川・奈良・山梨・北海道・愛知の各地域に2点以上を掲載。佐賀・石川も別枠で選べます。
+CO.COON2点、欠品中の浜松屋18K、現行の注文/小売根拠を確認できなかった畠山2点はdraftへ。古い掲載URL・比較・地域・サイトマップ・現行画像参照から外します。畠山の403を廃業/売切れとは認定しません。HARIOは現行8,250円を確認し、旧キャッシュ7,480円を使っていません。各県同数や最低2商品より、確認できた販売経路を優先します。
 
-着用イメージは架空の成人日本人女性（概ね27〜33歳）。かわいい系と美人系を混ぜ、既存13画像の肌を調整し、18Kピアスを含む15画像を新規追加しました。現行28画像で30商品すべてをカバーし、短い **AIイメージ / AI image** 表示を保ちます。実物データと生成イメージは内部台帳で分離し、未許諾写真は公開しません。
+画像は25点のAIイメージが27商品に対応。残る15商品は独自のテキストプレビューと公式写真/商品への通常リンクです。未許諾写真・ロゴ・地図・口コミを転載せず、AIは実物再現/試着実績と区別します。短いAIイメージ/AI image表示は維持。
 
-全30商品に通常リンクの公式商品ページ／公式カタログURLを明示。13の確認済み店舗を25商品へ案内し、店舗紹介・アクセス・Googleマップの場所／経路リンクを用意します。実店舗未確認の5商品（CHECOS、泉州2点、CO.COON2点）は公式通販・販売案内へ進めます。個別SKUの店頭在庫は保証しません。
+日英とも国内通販の参考価格を主表示。海外ストア価格は別枠で、その購入先と対応させます。独自換算なし。片耳/一組の確認できた単位はpriceUnitで表示し、勝手に倍額へ換算しません。20店舗を37商品へ関連づけ、店舗存在と個別SKU在庫は区別します。Mapsは外部リンクのみ。
 
-共通URLには日英を選べる入口があり、右上の1ボタンで同じページを切り替えられます。主表示は日英とも確認済みの国内通販価格で、国内公式ページへ案内します。確認済みの海外ストア価格は別枠の海外購入先と対応させ、独自の為替換算はしません。提携は未申請で、通常の公式URLを残し、別言語リンクへ広告承認を流用しません。
-
-**最新仕様は specs/010-market-prices/。検証は同validation.mdとdocs/market-stage-*.json、配信はdocs/deployment-results.jsonのversion0.10.0・commit・時刻で確認してください。旧versionや未実行の記録を今回の成功へ読み替えません。検索流入・売上・申請合格は未確認です。**
+**収益化の前提は未解決です。GitHub Pagesの商用利用条件の適合確認または適した公開先の選択、AdSenseの実ホスト登録/所有確認、広告導入時のPrivacy/同意/CSP対応が残ります。技術テストや商品数は、適法性・契約適合・AdSense合格を証明しません。**
 
 ## 動かす
 
-Node.js **24.22.1以上**、pnpm **11.25.0**。Astro **7.4.12**、TypeScript、Markdownによる静的サイトです。
+Node.js24.22.1以上、pnpm11.25.0。Astro7.4.12、TypeScript、Markdown、静的生成。
 
     pnpm install --frozen-lockfile
     pnpm dev
 
-本番生成はpnpm build、生成後の表示はpnpm preview。実URL等を未設定にしたpreviewはnoindexです。
+未設定のlocal/previewはnoindex。公開に必要な実値は環境へ置き、認証・.envを保存しません。
 
-| コマンド | 用途 |
+| コマンド | 確認 |
 | --- | --- |
-| pnpm check | 型・スキーマ・参照・日英本文 |
-| pnpm test | 広告・URL・locale別リンク等の重要ケース |
-| pnpm build | dist/へ静的生成 |
-| pnpm verify | 型・データ・単体・ビルド・生成リンク |
-| pnpm readiness | 公開URL・public設定・SORA・データ。Contactは技術要件にしない |
-| pnpm check:links | 商品・公式情報・募集先の外部リンク |
-| pnpm check:browser | 言語入口・日英・PC/スマホ・画像・価格・導線 |
-| pnpm check:prices | 国内/海外価格・購入先・日英スマホの重点確認 |
-| pnpm check:ads | 実データを変えず広告状態を隔離確認 |
-| pnpm package | 隣接する納品フォルダへ全ソースを書出し。ZIPは別途作成 |
+| pnpm verify | 型/データ/単体/本番生成/内部リンク/CSP/メタ |
+| pnpm readiness | 技術公開条件。商用契約と申請は別判定 |
+| pnpm check:quality | 販売証跡/公開除外/予算/価格順/比較/地域/日英3幅 |
+| pnpm check:browser | 全公開商品の表示・言語・画像/公式preview・基本導線 |
+| pnpm check:prices | 日英の国内/海外価格と購入先 |
+| pnpm check:ads | 実データを変えない隔離広告6ケース |
+| pnpm check:links | 外部URLの到達性。403/503を即閉鎖としない |
+| pnpm package | 全ソースを隣接納品先へ書出し。ZIPは別途作成 |
 
 ## 編集入口
 
 | 場所 | 責務 |
 | --- | --- |
-| specs/010-market-prices/ | 最新の価格市場仕様・設計・タスク・検証 |
-| src/lib/market-prices.ts、src/components/MarketPrice.astro | 国内通販参考/海外ストア価格・日付の表示 |
-| src/config/region-selection.ts、src/components/RegionSelection.astro | 訪問率順と地域代表・地域への入口 |
-| src/data/visits.json | 店舗・商品との関係・確認済公式ホームURL・未確認時の代替案内 |
-| src/lib/visits.ts、src/components/VisitGuide.astro | 訪問情報の検証、GoogleマップURL生成、公式URL・店舗案内の表示 |
-| src/data/catalog.json | 商品事実、localizedPrices、販売店、locale別リンク、広告状態の正本 |
-| src/data/translations/ja.json | 安定IDに結ぶ日本語表示。価格やURLを複製しない |
-| src/data/product-stories.json | 日英の見出し・導入・訴求3項目・装い |
-| src/content/products/ と products/ja/ | 商品ごとの独自本文 |
-| src/content/places/ と crafts/ | 実商品がある地域・技法の分類と背景 |
-| src/content/policies/ | About・選定方針・広告・Privacy。Contactは日英draft |
-| src/config/selection.ts | 代表商品と、素材の偏りを抑えたおすすめ順 |
-| src/data/editorial-images.json | 現行画像のproductId・assetId・path・寸法・日英alt |
-| public/images/、docs/assets.json | 画像ファイルと用途・権利・世代の台帳 |
-| docs/image-generation*.json | 新旧の生成prompt・人物・対応商品・元ファイル |
-| docs/research/sources.json | 一次資料・実確認日・支える事実 |
-| docs/research/nonwood-*-v7.json | 非木商品の調査／取込記録。表示の正本には使わない |
-| src/lib/affiliate.ts、src/components/ | locale選択、承認resolver、CTA・開示・画像・言語切替 |
-| scripts/、tests/ | 構造・価格・リンク・広告・画面・公開の検証 |
+| specs/011-legal-quality-expansion/ | 最新仕様・設計・タスク・検証 |
+| src/data/catalog.json / translations/ja.json | 商品事実/市場価格/priceUnit/広告、日英の表示文 |
+| src/data/purchase-evidence.json / lib/purchase-evidence.ts | 公開商品の現行注文/小売根拠、出典/日付/商品URLと店舗の整合 |
+| src/data/selection-notes.json / ChoiceDetails.astro | 商品固有の違い/選ぶ理由/比較する公開商品ID。価格を再入力しない |
+| src/data/region-choice-notes.json / RegionalChoiceGuide.astro | 実在する地域の商品から選ぶ説明、種類別件数と国内価格帯 |
+| src/lib/shopping-filters.ts | 国内予算区分/未知を末尾にする価格順 |
+| src/data/product-stories.json / content/products | 独自の見出し・装い・商品本文、日英対 |
+| src/data/visits.json / lib/visits.ts | 確認済店舗、公式URL、固定Maps、未確認時の代替 |
+| editorial-images.json / docs/assets.json | AI表示の正本、画像・写真権利と退役台帳 |
+| config/region-selection.ts / selection.ts | 観光庁訪問率TOP10と編集上の代表1品。売上順位ではない |
+| docs/research/sources.json | 一次資料・実確認日・支える事実。240件は記録数であり、独立した240サイトの意味ではない |
+| lib/affiliate.ts / market-prices.ts / components | 承認二重ゲート/host/locale、市場と価格の対応 |
 
-## 更新と引継ぎ
+## 監査・引継ぎ
 
-一次情報を確かめてからcatalog・出典・日本語表示・日英本文・storyを揃えます。日本向けの価格事実はcatalogのlocalizedPrices.ja、リンクの言語はlinks.localeに記録します。USD50.40のような端数は残し、価格の整数化や為替による自動補完はしません。
+- [法務の詳細点検](docs/legal-audit-v11.md)
+- [競合との差と改善](docs/competitive-review-v11.md)
+- [AdSenseの残条件](docs/adsense-review-v11.md)
+- [公開先の適合と移行準備](docs/hosting-commercial-readiness-v11.md)
+- [追加品と掲載保留](docs/regional-expansion-v11.md)
+- [更新手順](docs/operations.md) / [引継ぎ](docs/handoff.md) / [検証](docs/verification.md)
 
-商品ページは魅力・画像・価格・公式リンクを先にし、素材や寸法、出典は下部のdetailsへ。画像の注記はユーザー指定の短いAI表示を保ち、実物の仕様や実際の試着の根拠にしません。Contact非公開、SORA、ブログなしを維持してください。
-
-広告化はprogramと商品リンクの両承認、対象merchant、有効HTTPS、許可host、確認日が揃ったときだけです。locale別CTAとDisclosureは同じリンク集合を使います。日本語のBECOS通常リンクはprogramId:nullのままで、英語側の承認や追跡URLを横流ししません。
-
-- 最新状態と履歴：docs/handoff.md
-- 商品・画像・価格・広告・公開の更新：docs/operations.md
-- 申請前の確認：docs/pre-application-checklist.md、docs/affiliate-readiness.md
-- 承認後の詳細：docs/affiliate-operations.md
-- 安全設計：docs/security.md
-- 日英導線と検索設定の調査：docs/discovery-review-v7.md
-- 店舗情報の掲載方法と確認根拠：docs/visit-publication-review.md、docs/research/visit-publication-legal-v8.json
-
-技術検査の成功は提携資格・承認・検索掲載の証拠ではありません。申請先の現行規約と実際のフォームで確認し、未提供の連絡先・本人情報は作りません。
-
-店舗情報は公式の基本情報を独自の短文で案内し、店舗写真・ロゴ・地図・口コミの転載や埋込はしません。Googleマップは固定の正規外部リンクで、開く前にGoogleへ店舗データを送信する仕組みは追加しません。確認した掲載方法と限界を資料へ残し、全面的な適法性の保証とは扱いません。
+Contactや本人情報を作らず、申請送信・広告配信・新契約・課金・ドメイン購入を実行していません。プログラム/リンクはすべて未申請。更新時は011とAGENTSを読み、購入先の再確認と公開除外の派生更新まで行ってください。

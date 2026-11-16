@@ -1,61 +1,37 @@
-# 引継ぎ — 0.10 日本で買う参考価格
+# 引継ぎ — 0.11 法務点検と購入経路を確認したセレクト
 
-更新日2026-11-16。AGENTS.md → constitution → specs/010-market-prices/ → 本書 → operationsの順に読む。公開成否はdeployment-resultsのversion/commit/Actionsと実URLで確認し、旧版の検証を成功へ転用しない。
+更新日2026-11-16。AGENTS → constitution → specs/011-legal-quality-expansion/ → 本書 → operationsを読む。公開成否はdeployment-resultsのversion/commit/Actions/実測を優先。前版はarchive/handoff-v10.md、archive/deployment-results-v10.json。
 
-## 現在の構成
+## 最新の方針
 
-Japanese Craft Jewelryは日英の商品セレクト。SORAが運営者表示。ブログ/Contact/販売決済なし。上部1ボタンで同じ商品/産地/絞込へ言語切替。全30商品、12都道府県、13技法、28AI画像。画像未登録0で18K未登録は解消。旧0.8の詳細はarchive/handoff-v8.md。
+SORAの日英商品紹介。ブログ/Contact/販売決済/計測広告タグなし。右上1ボタンは同じページ/query/hashを維持。国内価格を主、海外価格は別枠、換算なし。二重承認/許可host完全一致/HTTPS/date/localeの広告ゲートは不変。
 
-home/objects/placesは左に産地、右に代表1品を共通RegionSelectionで表示。地域名→地域内の商品群、代表画像→商品詳細。全商品と組合せフィルターはobjects/#all-jewelry以下で維持。種類/素材の入口はquery+このanchorへ着地する。
+全42商品・12都道府県・18公開技法、240出典記録。現行25AI画像が27品に対応し、15品は公式ページへの独自テキストプレビュー。全品に公式URLと販売証跡、20店舗を37品に案内。店頭SKU在庫は未確認。製造地が未確認の丸山4品は神奈川小売枠であり、神奈川製と数えない。
 
-## 価格表示の最新方針
+## 重要な追加指示：紹介サイトだけでは公開しない
 
-言語と購入市場を分離する。主価格は日英とも日本向けオンライン参考額。catalogの海外ストアpriceAmount/priceCurrencyは実額のまま保持し、localizedPrices.jaと別に管理する。market-prices.tsがcanonical商品IDから国内/海外の額・日付・出典・通常URLを選び、MarketPrice/MarketPurchaseLinkでhero/地域/カード/比較/詳細/stickyを揃える。
+purchase-evidence.jsonは公開42品と完全に一致する。33品は対象注文UIと価格、9品は現行小売取扱い＋価格付きカタログを確認。紹介/galleryだけ、古い催事、明示欠品、現行確認できない403候補は保留。購入受付の観測は注文成立や将来在庫の保証ではない。
 
-星華アンバーの26400円税込はBECOS日本向けと凛然直営通販で確認。BECOS同一SKUの日英比較に加え、直営品は商品名/色/セット/寸法の一致を確認（共通メーカーSKUの公開は未確認）。Global288USDは別ストアの販売価格。Global公式FAQは国際向けサービスを反映する設定と説明するが、SKU差額の内訳や全送料税込みとは確認しない。実店舗の値札/在庫を推定せず、国内通販の参考価格と呼ぶ。
+COCOON2/浜松屋18K/畠山2はdraft。hairpinも従来からdraft。商品本文/未使用技法/画像registry/比較/地域代表/visits/selection/サイトマップの派生参照も更新済み。退役3画像はdocs/archive/withdrawn-v11へ保存しlocalRetiredPath/Git除外/pruneで配信と納品public画像から除外。退役全10をまとめて消す再帰操作は不要。写真の未取得権利をAIのユーザー依頼で埋めない。
 
-ENの国内参照とJAの海外参照は通常公式URL。現在のページ言語に合う元リンクだけ既存広告resolverを使う。MarketPurchaseLinkの市場/実linkIDはgenerated checkerでも検証し、market属性だけの任意URL許可やEN広告のJA流用を拒否。Disclosureは実際の市場/linkIdsで絞る。USD50.40等の端数と国内固有の確認日、未知/nullと実数0の区別を保つ。
+一次追査はresearch/existing-availability-v11.json、availability-gate-v11.json、hario-addition-v11.json、excluded-products-v11.json。旧regional-product-researchの16候補原案は検討履歴で、全16が公開という意味ではない。最終は14採用+HARIO1。HARIO価格8250、ペア、標準金具。旧cache7480不採用。個別SKUの製作工房は未特定で、東京との工房/作り手関連と全工程東京製を区別。
 
-商品詳細の主CTAと追従CTAは国内価格に対応する国内URL、店舗案内へは既存VisitGuideのanchor。Global価格とGlobal購入先は別枠。初めての価格調査はdocs/research/market-price-review-v10.json。更新と検証はoperationsの0.10節とspec010へ。010の配信/実測はmarket-stageとdeployment-resultsで確認。009の確定配信はarchive/deployment-results-v9.json、詳細はarchive/handoff-v9.md。
+## 実装と更新
 
-## TOP10の意味
+catalogが数値/価格/priceUnit/広告の正本。notesは商品固有の違いと嗜好、比較IDと当該商品sourceIdsのみ。比較はcanonicalの種類/素材/寸法/国内価格を読む。新カードや比較を広告として追加するのでなく、商品詳細へ進む通常内部リンク。地域はnoteの短い選び方と種類別の実件数/価格帯。予算/価格順は国内実額のみ、未知は低予算扱いせず両方向で末尾。同額は編集順。
 
-観光庁2025年暦年確報・表6-1、全目的/全国籍地域/複数回答の都道府県訪問率。東京50.8、大阪41.3、千葉35.1、京都29.7、福岡11.0、神奈川9.3、奈良9.0、山梨8.1、北海道7.3、愛知6.9%。人数/宿泊数/アクセサリー売上人気と呼ばない。佐賀・石川は順位外の別枠。各TOP10地域に2点以上ある。
+公開時にはpurchase evidenceのlinkIdを本当に観測した商品へ結び、商品ID queryを別SKUと混同しない。pid等を落とさず、currency/utm等の非identityだけを正規化。ホーム/galleryをonline-orderと宣言しない。小売の場合はvisitsの当該商品との関係と現行店出典が必要。自動validatorだけで実在庫を確認したとは報告しない。
 
-原典の抽出/確認日はresearch/tourism-top10-v9.json。表示設定はsrc/config/region-selection.ts。公式XLSはhttps://www.mlit.go.jp/kankocho/content/002025515.xls 。新年度への変更は比較可能な通年確報を確認してから行う。
+## 法務・AdSense・ホストの未解決事項
 
-## 新規14商品
+legal-audit-v11は15論点と新17候補の追査。英語18K限定、AIの非実物/非体験説明、公式実物確認の入口、GitHub IP保存の説明、未確認ToyToy工程語を修正。全面適法/個別権利クリア/申請合格は未確認。既存AIの個別類似性等の残余リスクはある。
 
-- 大阪: PREMIUM PEARLの泉州貝パール、スタッド/スウィング。貝パール部材が泉州産。正確な個別工房・全組立地は未確認。養殖/天然真珠ではなく人工真珠。
-- 千葉: 鴨川アルコスの宇宙神秘スパイラルペンダント/宇宙のキラキラブレスレット。現代スタジオガラスで国指定を主張しない。旧Switchbackは展示作品のため採用していない。
-- 福岡: CO.COON oriイヤリング/フレームピアス。博多織の糸/布との関連。公開カタログは価格・金具合金・寸法未公表なのでnull。全組立工程が福岡との断定なし。
-- 奈良: 大和漆工芸杉村の宝相華螺鈿ペンダント/蒔絵指輪蓮。ペンダントの土台詳細は不明。指輪は木製でサイズ変更不可、作り直し案内。Wixの未入力テンプレ文を返品等の条件へ流用しない。
-- 山梨: 甲府SIMPRICH水晶しゃぼん玉ピアス/ローズクォーツネックレス。水晶ピアスは白蝶貝との貼合せ。採掘地/個別の伝統工芸認証を主張しない。
-- 北海道: 小樽幸愛硝子Mint Veil/Rouge Veil。公式の片方約8–10gという範囲を単一のweightPerPieceGrams値へ変換しない。
-- 補完: 京都・中嶋象嵌のナシ型桜/ラインドット両面ペンダント、愛知・加藤七宝SUKE丸透リング。後者はEN USD84、JA JPY7700の実価格とリンクを分離。
+GitHub Pagesの商取引促進を主目的とする無料hosting利用条件は高優先の適合確認事項。収益化前に適合を確認するか適切な公開先を選ぶ。移行準備文書はあるが、Cloudflare契約/新アカウント/DNS/ドメイン/公開移転は実行していない。ソースGitHub継続とPagesの公開先を分ける。
 
-## 正本と更新
-
-商品/事実/広告はcatalog.json、訳はtranslations/ja.json、独自見出し/装いはproduct-stories.json、本文はcontent/products。地域・技法本文は対応Collection。出典はdocs/research/sources.json（132件）。researchの取込proposalは変更時の資料であり表示用の第二catalogにしない。
-
-店舗13を25商品へ案内し、5商品（CHECOS、泉州2、CO.COON2）は公式の通販/販売案内。店舗の裏付けがなければMapsを推測しない。visits.jsonとlib/visits.ts/VisitGuideを使用。通常の公式URLを広告CTAと分離したまま必ず残す。GoogleMapsは固定の外部search/directionsのみ。写真/地図/口コミの転載なし。掲載方法の法務確認はvisit-publication-reviewとv8の範囲/限界を継承。
-
-全プログラムと広告リンクは未申請。承認二重ゲート、許可host完全一致、HTTPS、日付、locale分離を維持。広告CTA承認後も公式URLは通常リンクとして残す。AdSenseへの接続/プライバシー変更/申請は今回行っていない。申請に必要な本人情報や連絡先を作らない。
-
-## 画像
-
-現行registryは28画像/30商品。13画像の肌編集＋18Kを含む15新規。27–33歳方向の架空成人日本人女性、かわいい/美人の違いを混ぜる。表記はAIイメージ/AI imageのみ。画像を実物の寸法/金具/着用経験の根拠にしない。公式画像は許諾なしで公開しない。
-
-現行はeditorial-images.json、権利はdocs/assets.json、全prompt/元生成ファイル/参考URL/目視はimage-generation-v9.json。ARCOSの個別SKU画像CDNは制限で読めず、公式一般galleryと商品本文からの独自イラストであることを内部に保持。原典の内部スクリーンショットはartifactsで公開/Git/ソース納品から除外。
-
-Windowsで削除できない退役7画像はlocalRetiredPathと.gitignore/Git除外で管理。pnpm build末尾のprune-retired-imagesはdistから該当ファイルだけを取り除く。package-sourceも除外。現行画像まで一括削除しない。
+AdSenseは固定の商品/記事/文字数で合格判定しない。PSL対象のgithub.io/pages.devを一般subdomainとして一律不可にしない一方、現在host root404、実サイト登録/所有確認/審査/本人情報/CMP/Privacy/CSPは未完了。Googleタグ/ads.txtの架空IDを作らない。公開Contactを無条件追加しない。競合の文章/写真/レビュー/スコアや実績を流用しない。
 
 ## 検証・公開・納品
 
-型/62単体/データ/生成サイトはpnpm verify。現行の価格検証はmarket-stage-*.jsonと010validation。地域/画像の009検証はdestination-stageを履歴として保持。browserは全30商品と日英PC/390/320、regions専用は10順位と全60地域/代表クリック往復、広告は隔離fixture。最後の画像見切れ等を修正したら該当画面を再確認し、未再確認を完了としない。
+型83files0/0/0、90単体、220HTML/11878href-src/1617anchor/858通常0広告/497実行CSP hash/204JSON/旧journal14を検証。最終browser/ad/外部/公開の件数と時刻はquality-stage各report、011validationとdeployment-resultsを確認。46件の中断テストと旧版の成功を42件の完了へ流用しない。
 
-配信はGitHub Pages https://rozawa619.github.io/japanese-craft-jewelry/ja/ と /en/。ソース https://github.com/rozawa619/japanese-craft-jewelry 。Git push/Actions成功/実配信SHAとブラウザ確認は別工程。最終の確定結果はdeployment-resultsとverificationに残す。
-
-0.10確定: app9b15f21c5932bb20c1584a99fa0288c8c3e867d0、Actions43871283478 success。ローカル価格79/79（18全ルールaxe0）/全体256/256（222ページ、198全ルールaxe0）/広告6/6。公開価格79/79（18全ルールaxe0）/目視12/12/補足20/20、正規154URL全200、現行28画像全200・SHA一致。JS/console0。公開側の全体256は再実行していない。最終公開価格確認は2026-11-16T13:01:23Z。最後の自然なカード読み上げ名の修正も配信済み。
-
-全ソースは隣接japanese-craft-jewelry-delivery/sourceとjapanese-craft-jewelry-source.zipへ出力済み。version0.10.0、413ファイル、公開28画像をZIP内容と照合し、同所package-verification-0.10.0.jsonにSHA等を保持。.env/認証/node_modules/dist/artifacts/内部参照写真は入れない。運用手順はoperations、申請前はpre-application-checklistとaffiliate-readinessを参照。
+全ソースは隣接japanese-craft-jewelry-delivery/sourceとZIPへ出力し、最終版/全ファイル/25公開画像/秘密・生成物・退役public画像の除外を検証する。確定のZIP内容とSHAは同所package-verification-0.11.0.json。運用はoperations、申請前はpre-application-checklist/adsense-review/affiliate-readiness。

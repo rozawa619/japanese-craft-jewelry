@@ -38,7 +38,7 @@ export const regionalRepresentatives: Record<string,string> = {
   osaka:'senshu-pearl-stud-earrings',
   chiba:'arcos-cosmic-spiral-pendant',
   nara:'sugimura-hosoge-raden-pendant',
-  fukuoka:'cocoon-ori-nonhole-earrings',
+  fukuoka:'iwaya-urushi-9mm-hook-earrings',
   yamanashi:'simprich-crystal-bubble-pierced-earrings',
   hokkaido:'yukieglass-mint-veil-earrings',
   tokyo:'rinzen-seika-amber-pierced-earrings',

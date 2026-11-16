@@ -1,7 +1,7 @@
 # 次のAIへの開始手順
 
 1. `README.md`、`docs/handoff.md`、`docs/constitution.md` を読み、現在の公開・申請状態を確認する。
-2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/010-market-prices/` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
+2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/011-legal-quality-expansion/` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
 3. `src/lib/schema.ts`、`src/data/catalog.json`、`src/lib/affiliate.ts`、`src/content.config.ts` を読み、既存の分離を維持する。
 4. 変更後はリスクに応じた検証を実行し、仕様・タスク・変更履歴・引継ぎを実態に合わせて更新する。公開や提携承認を推測しない。
 
@@ -63,3 +63,11 @@ Node.js 24.22.1以上、pnpm 11.25.0。初回は `pnpm install --frozen-lockfile
 
 ## 0.10以降の価格と言語・購入市場
 日英の主価格は日本向け通販の確認済み参考価格。market-prices.tsはcanonicalのlocalizedPrices.jaまたはJPY原値から選び、USD等の海外ストア原値を換算/上書きしない。海外価格は別枠、店頭価格は未確認なら断定しない。カード/地域/hero/比較/詳細/stickyはMarketPriceを使い、対応する市場のMarketPurchaseLinkと同じURLへ。ENの国内参照/JAの海外参照は通常公式URLのみで、表示言語を理由に別リンク承認を流用しない。既存resolver不変、Disclosureは実表示market/linkIdsのみ。価格unknownは0にしない。差額をすべて送料としない。最新は010validationとmarket-stage結果。
+
+## 0.11 法務・商品選択・購入経路の公開gate
+
+最新は011とquality-stage。各県同数/2点以上より現行の販売根拠を優先。gallery・古い催事・企業住所だけ・明示欠品・確認不能を公開しない。purchase-evidenceは全publishedと完全一致、正しいlinkId/商品source/URLとSKU query/現行store根拠を検証。人間の本文/購入UI観測をvalidatorの自動在庫保証と呼ばない。COCOON2/浜松屋18K/畠山2は保留、hairpinもdraft。復帰は再調査必須。
+
+42品/12地域/18公開技法/240出典、25AIで27品・公式preview15品。新規写真転載なし。note比較はpublishedの正本を参照、未知価格やサイズを埋めず、priceUnitがある片耳/一組のみ明示。ソートはunknown末尾/同額編集順、地域の種類別価格と件数は公開集合から。退役10画像は個別prune/Git除外/export除外で管理。
+
+法務点検は免責で権利問題が消える判断ではない。GitHubPagesの商用hosting適合/AdSense実ホスト受理・接続/広告導入時Privacy・同意・CSPは未解決。SORA/Contact非公開/ブログなしを維持し、新契約・課金・ドメイン・申請を捏造しない。詳細legal/adsense/hosting-commercial-readiness/operations。

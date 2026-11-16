@@ -19,6 +19,7 @@ export const productSchema = z.object({
   size: z.string().nullable(), weightPerPieceGrams: z.number().positive().nullable(),
   findings: z.string().nullable(), fastening: z.string().nullable(),
   priceAmount: z.number().nonnegative().nullable(), priceCurrency: z.string().length(3).nullable(),
+  priceUnit:z.enum(['single-ear','pair','one-item']).optional(),
   localizedPrices: z.object({ja: z.object({amount:z.number().nonnegative(),currency:z.string().length(3),checkedAt:date,taxNote:z.string(),sourceIds:z.array(id).min(1)}).optional()}).optional(),
   priceCheckedAt: date.nullable(), taxNote: z.string(), availability: z.enum(['listed', 'in_stock', 'out_of_stock', 'unknown']),
   merchantIds: z.array(id).min(1), sourceIds: z.array(id).min(1), lastVerifiedAt: date,

@@ -2,7 +2,7 @@
 title: "博多織のアクセサリー"
 description: "博多織の絹糸や生地を耳飾りへ。工芸分野の指定と、個別アクセサリーの認証は区別して紹介します。"
 locale: ja
-publishStatus: published
+publishStatus: draft
 updatedAt: "2026-11-16"
 sourceIds: ["cocoon-about-v9","cocoon-gallery-v9","fukuoka-crafts-v9"]
 craftId: hakata-ori

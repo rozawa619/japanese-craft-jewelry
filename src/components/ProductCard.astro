@@ -3,8 +3,10 @@ import {pagePath} from '../config/site';
 import {catalogFor,makerFor,labels} from '../lib/catalog';
 import {t,type Locale} from '../lib/i18n';
 import type {Product} from '../lib/schema';
-import Pattern from './Pattern.astro';
+import OfficialPreview from './OfficialPreview.astro';
 import MarketPrice from './MarketPrice.astro';
+import {marketPricesFor} from '../lib/market-prices';
+import {budgetForJapanPrice} from '../lib/shopping-filters';
 import MarketPurchaseLink from './MarketPurchaseLink.astro';
 import EditorialImage from './EditorialImage.astro';
 import {productImageFor} from '../lib/editorial-images';
@@ -12,13 +14,14 @@ interface Props { product:Product; index?:number; locale?:Locale }
 const {product:p,index=0,locale='en'}=Astro.props;
 const detail=pagePath(`objects/${p.slug}/`,locale);
 const displayNumber=String(index+1).padStart(2,'0');
+const japanPrice=marketPricesFor(p.id).japan;
 const image=productImageFor(p.id);
 const maker=makerFor(p,locale);
 const merchant=catalogFor(locale).merchants.find(item=>p.merchantIds.includes(item.id));
 const attribution=maker.id.includes('unidentified')&&merchant?t(locale,'Available at '+merchant.name,'取り扱い：'+merchant.name):maker.name;
 ---
-<article class="product-card" data-product-card data-product-id={p.id} data-type={p.productType.join(' ')} data-prefecture={p.prefectureIds.join(' ')} data-material={p.materialIds.join(' ')} data-craft={p.craftIds.join(' ')}>
- <a class="card-art-link" href={detail}><span class="sr-only">{t(locale,`View ${p.title}`,`${p.title}の詳細を見る`)}</span>{image?<EditorialImage image={image} locale={locale} compact/>:<Pattern variant={index} locale={locale}/>}<span class="card-number">{displayNumber}</span></a>
+<article class="product-card" data-product-card data-product-id={p.id} data-type={p.productType.join(' ')} data-prefecture={p.prefectureIds.join(' ')} data-material={p.materialIds.join(' ')} data-craft={p.craftIds.join(' ')} data-budget={budgetForJapanPrice(japanPrice?.amount)} data-japan-price={japanPrice?.amount} data-editorial-order={index}>
+ <a class="card-art-link" href={detail}><span class="sr-only">{t(locale,`View ${p.title}`,`${p.title}の詳細を見る`)}</span>{image?<EditorialImage image={image} locale={locale} compact/>:<OfficialPreview product={p} locale={locale} compact/>}<span class="card-number">{displayNumber}</span></a>
  <div class="card-meta">{labels('productTypes',p.productType,locale)} <span>•</span> {labels('crafts',p.craftIds,locale)}</div>
  <h3><a href={detail}>{p.title}</a></h3>
  <p class="maker-name">{attribution}</p>

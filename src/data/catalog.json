@@ -8,7 +8,7 @@
     {
       "id": "tokyo",
       "name": "Tokyo",
-      "description": "Tokyo-made kiriko jewelry, as identified in the selected product's origin information."
+      "description": "Jewelry connected with Tokyo makers and workshops; each product distinguishes a maker connection from an exact manufacturing location."
     },
     {
       "id": "saga",
@@ -46,7 +46,7 @@
     {
       "id": "fukuoka",
       "name": "Fukuoka",
-      "description": "Silk-thread and textile jewelry connected to Fukuoka’s Hakata-ori weaving."
+      "description": "Lacquer jewelry connected with Yame making skills, selected from a maker with a verified purchase route."
     },
     {
       "id": "yamanashi",
@@ -108,19 +108,25 @@
     {
       "id": "owari-cloisonne",
       "name": "Owari cloisonne",
-      "description": "The product identifies Aichi as its origin. The brand page describes the Nagoya workshop and its Owari cloisonne practice. Individual certification and component origins are not established.",
+      "description": "Color and metalwork from two Aichi enamel workshops.",
       "sourceIds": [
         "becos-kato-suke-drop",
-        "kato-shippo-brand"
+        "kato-shippo-brand",
+        "tamura-official-jewelry-v11",
+        "tamura-kaisai-ear-jewelry-v11"
       ]
     },
     {
       "id": "burner-worked-glass",
       "name": "Burner-worked studio glass",
-      "description": "Contemporary glass shaped in an oxygen-burner flame. The selected Kamogawa studio is not described as a nationally designated traditional-craft producer.",
+      "description": "Contemporary studio glass from makers associated with Kamogawa, Nara and Nihonbashi, keeping each product’s workshop information distinct.",
       "sourceIds": [
         "arcos-atelier-v9",
-        "arcos-studio-v9"
+        "arcos-studio-v9",
+        "nanao-shuka-official-v11",
+        "nanao-shuka-profile-v11",
+        "hario-lwf-about-v11",
+        "hario-lwf-burner-v11"
       ]
     },
     {
@@ -177,13 +183,71 @@
         "nakajima-technique-v9",
         "nakajima-cooperative-v9"
       ]
+    },
+    {
+      "id": "tokyo-shippo",
+      "name": "Tokyo shippo enamel work",
+      "description": "Tokyo enamel jewelry by Hatakeyama Shippo; a workshop or craft qualification is not an individual product certificate.",
+      "sourceIds": [
+        "hatakeyama-maker-v11"
+      ]
+    },
+    {
+      "id": "izumi-tombodama",
+      "name": "Izumi glass-bead craft",
+      "description": "Sangetsu glass-bead work associated with Osaka/Senshu. Izumi Tombodama is its registered name; do not confuse it with every glass bead or national Izumi-glass certification.",
+      "sourceIds": [
+        "sangetsu-maker-access-v11",
+        "izumi-glass-retail-v11"
+      ]
+    },
+    {
+      "id": "kujukuri-studio-glass",
+      "name": "Kujukuri studio glass",
+      "description": "Contemporary handmade glass jewelry from Sghr in Kujukuri, Chiba; no individual national craft certificate is asserted.",
+      "sourceIds": [
+        "sghr-kujukuri-workshop-v11"
+      ]
+    },
+    {
+      "id": "kazarikanagu",
+      "name": "Kyoto decorative metalwork",
+      "description": "KAZARINO adapts Kyoto decorative-metalwork practice to contemporary jewelry; not every decorative pattern is a separate technique.",
+      "sourceIds": [
+        "kazarino-maker-v11"
+      ]
+    },
+    {
+      "id": "kyo-kumihimo",
+      "name": "Kyoto braided silk",
+      "description": "Braided-silk accessories by SHOWEN in Uji, Kyoto; do not infer entirely hand-braided production for every SKU.",
+      "sourceIds": [
+        "showen-maker-v11",
+        "showen-edo-uchi-blue-bracelet-v11"
+      ]
+    },
+    {
+      "id": "yame-urushi",
+      "name": "Yame lacquerwork",
+      "description": "Iwaya applies lacquer skills associated with Yame-Fukushima Buddhist-altar work to contemporary accessories; individual accessory certification is not established.",
+      "sourceIds": [
+        "iwaya-shop-v11"
+      ]
+    },
+    {
+      "id": "ainu-pattern-jewelry",
+      "name": "ToyToy Ainu-pattern jewelry",
+      "description": "Contemporary jewelry from the Ainu-pattern design brand ToyToy; identify the specific designer and materials rather than assigning one design or meaning to every Ainu community.",
+      "sourceIds": [
+        "toytoy-maker-v11"
+      ]
     }
   ],
   "materials": [
     {
       "id": "wood",
       "name": "Wood",
-      "description": "Wood species are not confirmed for these accessories."
+      "description": "Wood is named for the selected products. Species and finish are identified only where the individual maker states them."
     },
     {
       "id": "surgical-stainless-steel",
@@ -198,7 +262,7 @@
     {
       "id": "glass",
       "name": "Glass",
-      "description": "Natural soda glass is named in the selected RINZEN listing."
+      "description": "Glass composition and process vary by maker. Use each product’s material list rather than assuming one glass formula for the whole selection."
     },
     {
       "id": "porcelain",
@@ -208,7 +272,7 @@
     {
       "id": "silver-925",
       "name": "Silver 925",
-      "description": "Listed as sv925 for the selected 6.KILN item; component-by-component coverage is not specified."
+      "description": "SV925 is identified for specified components. It does not mean every part of a piece has the same silver grade or finish."
     },
     {
       "id": "resin",
@@ -218,7 +282,7 @@
     {
       "id": "plated-brass",
       "name": "Plated brass",
-      "description": "Named for the bail and adjuster of the selected RINZEN leaf pendant; no plating composition is specified."
+      "description": "Brass with plating as stated for individual fittings. Plating type and component coverage are identified per product."
     },
     {
       "id": "silver",
@@ -243,7 +307,7 @@
     {
       "id": "copper",
       "name": "Copper",
-      "description": "Copper is named in the selected cloisonne listing."
+      "description": "Copper is named for specified components in enamel and decorative-metalwork jewelry; plating and alloys are distinguished in each listing."
     },
     {
       "id": "enamel-glaze",
@@ -258,7 +322,7 @@
     {
       "id": "titanium",
       "name": "Titanium",
-      "description": "Titanium piercing fittings are identified for the selected Kato item."
+      "description": "Titanium is stated for specified piercing fittings; other parts may use different materials."
     },
     {
       "id": "imitation-pearl",
@@ -281,7 +345,7 @@
     {
       "id": "silk",
       "name": "Silk",
-      "description": "Silk threads and Hakata-ori textiles are identified by CO.COON."
+      "description": "Silk is identified in the selected textile and braided-cord accessories. Construction and fiber content are stated per product."
     },
     {
       "id": "crystal-quartz",
@@ -296,12 +360,52 @@
     {
       "id": "gold-10k",
       "name": "10K gold",
-      "description": "K10 yellow gold is named for the selected SIMPRICH necklace."
+      "description": "K10 gold is stated for specified SIMPRICH products. Gold color and component coverage are identified separately for each piece."
     },
     {
       "id": "mica",
       "name": "Mica",
       "description": "Mica is explicitly listed for Mint Veil; it is not inferred for Rouge Veil."
+    },
+    {
+      "id": "tombac",
+      "name": "Tombac brass",
+      "description": "A copper-rich brass named as tombac by the selected maker; not pure copper."
+    },
+    {
+      "id": "gold-plating",
+      "name": "Gold plating",
+      "description": "Gold plating as listed, without a solid-gold or karat claim."
+    },
+    {
+      "id": "rubber",
+      "name": "Rubber",
+      "description": "Rubber is listed for selected catches; not assumed to be silicone."
+    },
+    {
+      "id": "urushi-lacquer",
+      "name": "Urushi lacquer",
+      "description": "Urushi lacquer as named by the maker; does not establish absence of sensitivity."
+    },
+    {
+      "id": "silver-1000",
+      "name": "Pure silver (SV1000)",
+      "description": "SV1000 is explicitly stated for the selected pendant top, not its SV925 chain."
+    },
+    {
+      "id": "white-topaz",
+      "name": "White topaz",
+      "description": "Named in the selected ring; mining origin and treatment status are not established."
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "description": "Named in the selected ring; mining origin and treatment status are not established."
+    },
+    {
+      "id": "luster-powder",
+      "name": "Luster powder",
+      "description": "Maker names luster powder in the glass earring; exact formulation is not published."
     }
   ],
   "productTypes": [
@@ -328,6 +432,10 @@
     {
       "id": "ring",
       "name": "Rings"
+    },
+    {
+      "id": "ear-cuff",
+      "name": "Ear cuffs"
     }
   ],
   "makers": [
@@ -501,6 +609,113 @@
         "nakajima-technique-v9",
         "nakajima-cooperative-v9",
         "nakajima-stores-v9"
+      ]
+    },
+    {
+      "id": "hatakeyama-shippo",
+      "name": "Hatakeyama Shippo",
+      "location": "Minamisenju, Arakawa, Tokyo, Japan",
+      "productionNote": "The official company profile identifies Tokyo enamel-accessory production. Exact individual product certification and component origins are not established.",
+      "url": "https://tokyo-shippou.com/",
+      "sourceIds": [
+        "hatakeyama-maker-v11"
+      ]
+    },
+    {
+      "id": "sangetsu-kobo",
+      "name": "Sangetsu Kobo",
+      "location": "Osaka/Senshu, Japan",
+      "productionNote": "The maker identifies its glass-bead production with the Senshu area of Osaka. The public Sakaihigashi shop and the non-retail Izumi workshop are distinct.",
+      "url": "https://izumi-tombodama.com/",
+      "sourceIds": [
+        "sangetsu-maker-access-v11",
+        "sangetsu-sakai-store-v11"
+      ]
+    },
+    {
+      "id": "sghr-sugahara",
+      "name": "Sghr Sugahara",
+      "location": "Kujukuri, Chiba, Japan",
+      "productionNote": "The maker says its products are born at the Kujukuri workshop. Exact accessory fitting origins are not established.",
+      "url": "https://www.sugahara.com/",
+      "sourceIds": [
+        "sghr-kujukuri-workshop-v11"
+      ]
+    },
+    {
+      "id": "kazarino",
+      "name": "KAZARINO",
+      "location": "Fushimi, Kyoto, Japan",
+      "productionNote": "KAZARINO is the contemporary brand of Kyoto decorative-metalwork maker Takeuchi. Handwork and mechanical processes are both described by the maker; individual craft certification is not asserted.",
+      "url": "https://www.kazarino.com/",
+      "sourceIds": [
+        "kazarino-maker-v11",
+        "kazarino-stockists-v11"
+      ]
+    },
+    {
+      "id": "showen-kumihimo",
+      "name": "SHOWEN Kumihimo",
+      "location": "Uji, Kyoto, Japan",
+      "productionNote": "Uji-based kumihimo manufacturer and own-brand retailer. The selected silk product is not claimed to be entirely hand-braided.",
+      "url": "https://www.showen.co.jp/",
+      "sourceIds": [
+        "showen-maker-v11",
+        "showen-uji-store-v11"
+      ]
+    },
+    {
+      "id": "iwaya-urushi",
+      "name": "Iwaya Urushi Studio",
+      "location": "Yame, Fukuoka, Japan",
+      "productionNote": "The public shop profile connects its accessory making with Yame-Fukushima Buddhist-altar lacquer skills. Component-by-component origins and individual certification are not established.",
+      "url": "https://www.urushikoubou-iwaya.jp/",
+      "sourceIds": [
+        "iwaya-shop-v11"
+      ]
+    },
+    {
+      "id": "toytoy",
+      "name": "ToyToy",
+      "location": "Hokkaido, Japan",
+      "productionNote": "The official brand profile identifies designer ToyToy as Hokkaido Ainu and describes its contemporary original Ainu-pattern designs. This is not a claim that every component is made in Hokkaido.",
+      "url": "https://toytoy.jp/",
+      "sourceIds": [
+        "toytoy-maker-v11",
+        "yuiq-toytoy-brand-v11"
+      ]
+    },
+    {
+      "id": "tamura-shippo",
+      "name": "Tamura Shippo",
+      "location": "Ama, Aichi, Japan",
+      "productionNote": "The maker identifies its Ama workshop and Owari-shippo practice. Conflicting founding-year text and general craft designation are not converted into an individual product certificate.",
+      "url": "https://tamura-shippo.com/",
+      "sourceIds": [
+        "tamura-official-jewelry-v11"
+      ]
+    },
+    {
+      "id": "nanao-shuka",
+      "name": "Nanao & Shuka Glass Studio",
+      "location": "Nara, Japan",
+      "productionNote": "The maker identifies a Nara glass workshop and its own burner-worked production. No nationally designated craft status or permanent walk-in retail shop is claimed.",
+      "url": "https://nanaosyuka.amebaownd.com/",
+      "sourceIds": [
+        "nanao-shuka-official-v11",
+        "nanao-shuka-profile-v11"
+      ]
+    },
+    {
+      "id": "hario-lampwork-factory",
+      "name": "HARIO Lampwork Factory",
+      "location": "Nihonbashi, Tokyo, Japan; production also takes place in other regions.",
+      "productionNote": "The official brand profile identifies handmade heatproof-glass accessories, a Nihonbashi workshop and production bases in other prefectures. This association does not establish the exact manufacturing workshop of every SKU.",
+      "url": "https://www.hario-lwf.com/",
+      "sourceIds": [
+        "hario-lwf-about-v11",
+        "hario-kodenmacho-v11",
+        "hario-lwf-burner-v11"
       ]
     }
   ],
@@ -715,6 +930,175 @@
         "nakajima-pear-product-v9",
         "nakajima-stores-v9"
       ]
+    },
+    {
+      "id": "hatakeyama-official",
+      "name": "Hatakeyama Shippo official",
+      "url": "https://tokyo-shippou.com/",
+      "language": "Japanese official maker store/catalog",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Item- and destination-specific current ordering conditions must be checked on the official listing.",
+        "countries": null,
+        "sourceIds": []
+      },
+      "returns": "No return promise is reproduced; check the current official conditions.",
+      "sourceIds": [
+        "hatakeyama-parfait-winter-v11",
+        "hatakeyama-bijou-purple-v11"
+      ]
+    },
+    {
+      "id": "sangetsu-official",
+      "name": "Sangetsu Kobo official store",
+      "url": "https://sangetsu.myshopify.com/",
+      "language": "Japanese official maker store/catalog",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Item- and destination-specific current ordering conditions must be checked on the official listing.",
+        "countries": null,
+        "sourceIds": []
+      },
+      "returns": "No return promise is reproduced; check the current official conditions.",
+      "sourceIds": [
+        "sangetsu-irodori-pierced-v11",
+        "sangetsu-irodori-necklace-v11",
+        "sangetsu-storefront-identity-v11"
+      ]
+    },
+    {
+      "id": "sghr-official",
+      "name": "Sghr official shop",
+      "url": "https://shop.sugahara.com/",
+      "language": "Japanese official maker store/catalog",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Item- and destination-specific current ordering conditions must be checked on the official listing.",
+        "countries": null,
+        "sourceIds": []
+      },
+      "returns": "No return promise is reproduced; check the current official conditions.",
+      "sourceIds": [
+        "sghr-tietie-pierced-v11",
+        "sghr-kolmio-earcuff-v11"
+      ]
+    },
+    {
+      "id": "kazarino-official",
+      "name": "KAZARINO official",
+      "url": "https://www.kazarino.com/",
+      "language": "Japanese official maker store/catalog",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Item- and destination-specific current ordering conditions must be checked on the official listing.",
+        "countries": null,
+        "sourceIds": []
+      },
+      "returns": "No return promise is reproduced; check the current official conditions.",
+      "sourceIds": [
+        "kazarino-pierce-v11",
+        "kazarino-bangle-v11"
+      ]
+    },
+    {
+      "id": "showen-official",
+      "name": "SHOWEN official webshop",
+      "url": "https://shop.showen.co.jp/",
+      "language": "Japanese official maker store/catalog",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Item- and destination-specific current ordering conditions must be checked on the official listing.",
+        "countries": null,
+        "sourceIds": []
+      },
+      "returns": "No return promise is reproduced; check the current official conditions.",
+      "sourceIds": [
+        "showen-edo-uchi-blue-bracelet-v11"
+      ]
+    },
+    {
+      "id": "iwaya-official",
+      "name": "Iwaya official",
+      "url": "https://www.urushikoubou-iwaya.jp/",
+      "language": "Japanese official maker store/catalog",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Item- and destination-specific current ordering conditions must be checked on the official listing.",
+        "countries": null,
+        "sourceIds": []
+      },
+      "returns": "No return promise is reproduced; check the current official conditions.",
+      "sourceIds": [
+        "iwaya-urushi-9mm-hook-v11"
+      ]
+    },
+    {
+      "id": "toytoy-official",
+      "name": "ToyToy official store",
+      "url": "https://toytoy-ya.com/",
+      "language": "Japanese official maker store/catalog",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Item- and destination-specific current ordering conditions must be checked on the official listing.",
+        "countries": null,
+        "sourceIds": []
+      },
+      "returns": "No return promise is reproduced; check the current official conditions.",
+      "sourceIds": [
+        "toytoy-ninkari-nikuri-v11",
+        "toytoy-sirokani-pe-v11"
+      ]
+    },
+    {
+      "id": "tamura-official",
+      "name": "Tamura Shippo official store",
+      "url": "https://tamura.buyshop.jp/",
+      "language": "Japanese official maker store/catalog",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Item- and destination-specific current ordering conditions must be checked on the official listing.",
+        "countries": null,
+        "sourceIds": []
+      },
+      "returns": "No return promise is reproduced; check the current official conditions.",
+      "sourceIds": [
+        "tamura-kaisai-ear-jewelry-v11",
+        "tamura-official-jewelry-v11"
+      ]
+    },
+    {
+      "id": "nanao-shuka-creema",
+      "name": "Nanao & Shuka on Creema",
+      "url": "https://www.creema.jp/c/nanaoglass",
+      "language": "Japanese official maker store/catalog",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Item- and destination-specific current ordering conditions must be checked on the official listing.",
+        "countries": null,
+        "sourceIds": []
+      },
+      "returns": "No return promise is reproduced; check the current official conditions.",
+      "sourceIds": [
+        "nanao-shuka-nebula-v11",
+        "nanao-shuka-profile-v11"
+      ]
+    },
+    {
+      "id": "hario-netshop",
+      "name": "HARIO NETSHOP",
+      "url": "https://shop.hariocorp.co.jp/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Destination-specific ordering and delivery conditions were not individually verified. Confirm them at the official store.",
+        "countries": null,
+        "sourceIds": []
+      },
+      "returns": "Check the current official policy before ordering; product-specific return eligibility was not reviewed.",
+      "sourceIds": [
+        "hario-netshop-product-v11",
+        "hario-netshop-company-v11"
+      ]
     }
   ],
   "programs": [
@@ -729,8 +1113,8 @@
       "merchantIds": [
         "becos-en"
       ],
-      "disclosure": null,
-      "affiliateAllowedHosts": []
+      "affiliateAllowedHosts": [],
+      "disclosure": null
     },
     {
       "id": "millennium-gallery-japan",
@@ -741,8 +1125,8 @@
       "recruitmentStatus": "uncertain",
       "applicationStatus": "not_applied",
       "merchantIds": [],
-      "disclosure": null,
-      "affiliateAllowedHosts": []
+      "affiliateAllowedHosts": [],
+      "disclosure": null
     }
   ],
   "links": [
@@ -841,88 +1225,88 @@
       "productId": "rinzen-seika-amber-pierced-earrings",
       "merchantId": "becos-en",
       "programId": "becos-en",
+      "locale": "en",
       "officialProductUrl": "https://en.thebecos.com/products/s0138-028?currency=USD",
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
-      "affiliateLinkVerifiedAt": null,
-      "locale": "en"
+      "affiliateLinkVerifiedAt": null
     },
     {
       "id": "becos-six-kiln-half-moon-official",
       "productId": "six-kiln-half-moon-earrings",
       "merchantId": "becos-en",
       "programId": "becos-en",
+      "locale": "en",
       "officialProductUrl": "https://en.thebecos.com/products/s0164-018?currency=USD",
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
-      "affiliateLinkVerifiedAt": null,
-      "locale": "en"
+      "affiliateLinkVerifiedAt": null
     },
     {
       "id": "rinzen-leaf-glass-pendant-becos-en",
       "productId": "rinzen-leaf-glass-pendant",
       "merchantId": "becos-en",
       "programId": "becos-en",
+      "locale": "en",
       "officialProductUrl": "https://en.thebecos.com/products/s0138-099?currency=USD",
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
-      "affiliateLinkVerifiedAt": null,
-      "locale": "en"
+      "affiliateLinkVerifiedAt": null
     },
     {
       "id": "six-kiln-blue-bouquet-pierced-earrings-becos-en",
       "productId": "six-kiln-blue-bouquet-pierced-earrings",
       "merchantId": "becos-en",
       "programId": "becos-en",
+      "locale": "en",
       "officialProductUrl": "https://en.thebecos.com/products/s0164-016?currency=USD",
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
-      "affiliateLinkVerifiedAt": null,
-      "locale": "en"
+      "affiliateLinkVerifiedAt": null
     },
     {
       "id": "saskia-diez-drake-porcelain-cuff-becos-en",
       "productId": "saskia-diez-drake-porcelain-cuff",
       "merchantId": "becos-en",
       "programId": "becos-en",
+      "locale": "en",
       "officialProductUrl": "https://en.thebecos.com/products/s0007-054?currency=USD",
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
-      "affiliateLinkVerifiedAt": null,
-      "locale": "en"
+      "affiliateLinkVerifiedAt": null
     },
     {
       "id": "checos-s0050-015-official",
       "productId": "checos-japanese-apricot-pierced-earrings",
       "merchantId": "becos-en",
       "programId": "becos-en",
+      "locale": "en",
       "officialProductUrl": "https://en.thebecos.com/products/s0050-015?currency=USD",
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
-      "affiliateLinkVerifiedAt": null,
-      "locale": "en"
+      "affiliateLinkVerifiedAt": null
     },
     {
       "id": "morphosphere-s0124-032-official",
       "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
       "merchantId": "becos-en",
       "programId": "becos-en",
+      "locale": "en",
       "officialProductUrl": "https://en.thebecos.com/products/s0124-032?currency=USD",
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
-      "affiliateLinkVerifiedAt": null,
-      "locale": "en"
+      "affiliateLinkVerifiedAt": null
     },
     {
       "id": "kato-shippo-s0087-093-official",
       "productId": "kato-suke-drop-pierced-earrings",
       "merchantId": "becos-en",
       "programId": "becos-en",
+      "locale": "en",
       "officialProductUrl": "https://en.thebecos.com/products/s0087-093?currency=USD",
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
-      "affiliateLinkVerifiedAt": null,
-      "locale": "en"
+      "affiliateLinkVerifiedAt": null
     },
     {
       "id": "rinzen-leaf-glass-pendant-becos-ja",
@@ -1163,6 +1547,176 @@
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
       "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "hatakeyama-parfait-chocolate-orange-earrings-official",
+      "productId": "hatakeyama-parfait-chocolate-orange-earrings",
+      "merchantId": "hatakeyama-official",
+      "programId": null,
+      "officialProductUrl": "https://tokyo-shippou.com/products/detail/432",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "hatakeyama-bijou-purple-necklace-official",
+      "productId": "hatakeyama-bijou-purple-necklace",
+      "merchantId": "hatakeyama-official",
+      "programId": null,
+      "officialProductUrl": "https://tokyo-shippou.com/products/detail/454",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "sangetsu-irodori-tombodama-earrings-official",
+      "productId": "sangetsu-irodori-tombodama-earrings",
+      "merchantId": "sangetsu-official",
+      "programId": null,
+      "officialProductUrl": "https://sangetsu.myshopify.com/products/piasu-kinaka",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "sangetsu-irodori-tombodama-necklace-official",
+      "productId": "sangetsu-irodori-tombodama-necklace",
+      "merchantId": "sangetsu-official",
+      "programId": null,
+      "officialProductUrl": "https://sangetsu.myshopify.com/products/puti-kinaka",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "sghr-tie-tie-glass-earrings-official",
+      "productId": "sghr-tie-tie-glass-earrings",
+      "merchantId": "sghr-official",
+      "programId": null,
+      "officialProductUrl": "https://shop.sugahara.com/view/item/000000005160",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "sghr-kolmio-glass-ear-cuff-official",
+      "productId": "sghr-kolmio-glass-ear-cuff",
+      "merchantId": "sghr-official",
+      "programId": null,
+      "officialProductUrl": "https://shop.sugahara.com/view/item/000000005159",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "kazarino-hanabishi-copper-earrings-official",
+      "productId": "kazarino-hanabishi-copper-earrings",
+      "merchantId": "kazarino-official",
+      "programId": null,
+      "officialProductUrl": "https://www.kazarino.com/product-page/pierce",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "kazarino-shippo-pattern-brass-bangle-official",
+      "productId": "kazarino-shippo-pattern-brass-bangle",
+      "merchantId": "kazarino-official",
+      "programId": null,
+      "officialProductUrl": "https://www.kazarino.com/product-page/bangle",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "showen-edo-uchi-silk-bracelet-official",
+      "productId": "showen-edo-uchi-silk-bracelet",
+      "merchantId": "showen-official",
+      "programId": null,
+      "officialProductUrl": "https://shop.showen.co.jp/product/%E6%AD%A3%E7%B5%B9%E3%80%80%E4%BA%8C%E9%87%8D%E5%B7%BB%E3%81%8D%E3%83%96%E3%83%AC%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88%E3%80%809%E9%9D%92/",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "iwaya-urushi-9mm-hook-earrings-official",
+      "productId": "iwaya-urushi-9mm-hook-earrings",
+      "merchantId": "iwaya-official",
+      "programId": null,
+      "officialProductUrl": "https://www.urushikoubou-iwaya.jp/item/e013/",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "toytoy-ninkari-nikuri-earrings-official",
+      "productId": "toytoy-ninkari-nikuri-earrings",
+      "merchantId": "toytoy-official",
+      "programId": null,
+      "officialProductUrl": "https://toytoy-ya.com/SHOP/TN00-NK001.html",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "toytoy-sirokani-pe-silver-necklace-official",
+      "productId": "toytoy-sirokani-pe-silver-necklace",
+      "merchantId": "toytoy-official",
+      "programId": null,
+      "officialProductUrl": "https://toytoy-ya.com/SHOP/TP00-SK001-SV.html",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "tamura-kaisai-enamel-ear-jewelry-official",
+      "productId": "tamura-kaisai-enamel-ear-jewelry",
+      "merchantId": "tamura-official",
+      "programId": null,
+      "officialProductUrl": "https://tamura.buyshop.jp/items/139420551",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "nanao-shuka-nebula-16g-earrings-official",
+      "productId": "nanao-shuka-nebula-16g-earrings",
+      "merchantId": "nanao-shuka-creema",
+      "programId": null,
+      "officialProductUrl": "https://www.creema.jp/item/17252787/detail",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "simprich-reversible-topaz-ruby-chain-ring-official",
+      "productId": "simprich-reversible-topaz-ruby-chain-ring",
+      "merchantId": "simprich-official",
+      "programId": null,
+      "officialProductUrl": "https://shop.simprich.jp/products/503954",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "simprich-reversible-silver-piaring-single-official",
+      "productId": "simprich-reversible-silver-piaring-single",
+      "merchantId": "simprich-official",
+      "programId": null,
+      "officialProductUrl": "https://shop.simprich.jp/products/pr-e4828",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "hario-little-tears-clip-on-earrings-official",
+      "productId": "hario-little-tears-clip-on-earrings",
+      "merchantId": "hario-netshop",
+      "programId": null,
+      "officialProductUrl": "https://shop.hariocorp.co.jp/products/haw-lt-003e",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
     }
   ],
   "products": [
@@ -1277,9 +1831,9 @@
       "id": "hamamatsuya-18k-pierced",
       "slug": "hamamatsuya-18k-yosegi-earrings",
       "locale": "en",
-      "title": "Hamamatsuya 18K yosegi earrings",
+      "title": "Hamamatsuya yosegi earrings — 18K-labelled listing",
       "originalTitle": "ピアス(18K)",
-      "publishStatus": "published",
+      "publishStatus": "draft",
       "productType": [
         "pierced-earrings"
       ],
@@ -1672,6 +2226,17 @@
       "fastening": "Chain-through pierced earrings; the Japanese listing explicitly describes threading the chain through the piercing.",
       "priceAmount": 288,
       "priceCurrency": "USD",
+      "localizedPrices": {
+        "ja": {
+          "amount": 26400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16",
+          "taxNote": "日本語ストアの税込表示。",
+          "sourceIds": [
+            "becos-rinzen-seika-amber-ja"
+          ]
+        }
+      },
       "priceCheckedAt": "2026-11-16",
       "taxNote": "USD storefront display checked on the stated date; tax inclusion was not established.",
       "availability": "listed",
@@ -1692,18 +2257,7 @@
         "The exact chain metal and skin-contact components are not specified in the checked product material list.",
         "The listed weight is 10 g without a clear per-ear or pair basis; full chain length is not specified.",
         "Handmade glass may vary in color, shape and weight. The glass is not heat resistant."
-      ],
-      "localizedPrices": {
-        "ja": {
-          "amount": 26400,
-          "currency": "JPY",
-          "checkedAt": "2026-11-16",
-          "taxNote": "日本語ストアの税込表示。",
-          "sourceIds": [
-            "becos-rinzen-seika-amber-ja"
-          ]
-        }
-      }
+      ]
     },
     {
       "id": "six-kiln-half-moon-earrings",
@@ -1740,6 +2294,17 @@
       "fastening": "Non-pierced clip fitting; the Japanese product description mentions resin on the skin-contact side.",
       "priceAmount": 108,
       "priceCurrency": "USD",
+      "localizedPrices": {
+        "ja": {
+          "amount": 9900,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16",
+          "taxNote": "日本語ストアの税込表示。",
+          "sourceIds": [
+            "becos-six-kiln-half-moon-ja"
+          ]
+        }
+      },
       "priceCheckedAt": "2026-11-16",
       "taxNote": "USD storefront display checked on the stated date; tax inclusion was not established.",
       "availability": "in_stock",
@@ -1760,23 +2325,15 @@
         "The maker is transitioning the reverse from white to a color matched to the fittings; either version may be supplied as a matching pair.",
         "The listing gives a weight of 8 g without clarifying whether this is per earring or per pair. The component covered by sv925 is not specified.",
         "The gold-colored surface may scratch or peel if rubbed strongly; the product page gives gentle care guidance."
-      ],
-      "localizedPrices": {
-        "ja": {
-          "amount": 9900,
-          "currency": "JPY",
-          "checkedAt": "2026-11-16",
-          "taxNote": "日本語ストアの税込表示。",
-          "sourceIds": [
-            "becos-six-kiln-half-moon-ja"
-          ]
-        }
-      }
+      ]
     },
     {
       "id": "rinzen-leaf-glass-pendant",
+      "slug": "rinzen-leaf-glass-pendant",
+      "locale": "en",
       "title": "RINZEN Leaf Drop green glass pendant",
       "originalTitle": "【ペンダント】葉の雫-ha no shizuku- | 切子",
+      "publishStatus": "published",
       "productType": [
         "necklace"
       ],
@@ -1805,29 +2362,6 @@
       "fastening": null,
       "priceAmount": 300,
       "priceCurrency": "USD",
-      "availability": "listed",
-      "sourceIds": [
-        "becos-rinzen-leaf",
-        "becos-rinzen-leaf-ja",
-        "rinzen-brand"
-      ],
-      "editorialSummary": "Fresh green glass with a leaf-like outline: an easy color accent for charcoal, navy and a simple white shirt.",
-      "whoItMaySuit": "For someone drawn to green accents and a sculptural pendant rather than a conventional gemstone.",
-      "whatToCheck": [
-        "The listing gives a weight of 10 g without separately describing the weighing scope.",
-        "Glass color, thickness, cuts and bail size may vary; the glass is not heat resistant."
-      ],
-      "slug": "rinzen-leaf-glass-pendant",
-      "locale": "en",
-      "publishStatus": "published",
-      "priceCheckedAt": "2026-11-16",
-      "taxNote": "USD display on the English BECOS storefront, checked on the stated date; tax inclusion was not established.",
-      "merchantIds": [
-        "becos-en",
-        "becos-ja"
-      ],
-      "lastVerifiedAt": "2026-11-16",
-      "imageAssetIds": [],
       "localizedPrices": {
         "ja": {
           "amount": 27500,
@@ -1838,12 +2372,35 @@
             "becos-rinzen-leaf-ja"
           ]
         }
-      }
+      },
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "USD display on the English BECOS storefront, checked on the stated date; tax inclusion was not established.",
+      "availability": "listed",
+      "merchantIds": [
+        "becos-en",
+        "becos-ja"
+      ],
+      "sourceIds": [
+        "becos-rinzen-leaf",
+        "becos-rinzen-leaf-ja",
+        "rinzen-brand"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "Fresh green glass with a leaf-like outline: an easy color accent for charcoal, navy and a simple white shirt.",
+      "whoItMaySuit": "For someone drawn to green accents and a sculptural pendant rather than a conventional gemstone.",
+      "whatToCheck": [
+        "The listing gives a weight of 10 g without separately describing the weighing scope.",
+        "Glass color, thickness, cuts and bail size may vary; the glass is not heat resistant."
+      ]
     },
     {
       "id": "six-kiln-blue-bouquet-pierced-earrings",
+      "slug": "six-kiln-blue-bouquet-pierced-earrings",
+      "locale": "en",
       "title": "6.KILN Blue Bouquet porcelain hoop earrings",
       "originalTitle": "【ピアス】青のbouquet | 有田焼 | 6.kiln",
+      "publishStatus": "published",
       "productType": [
         "pierced-earrings"
       ],
@@ -1872,30 +2429,6 @@
       "fastening": "Post-and-catch pierced earrings with a removable hoop. The official update allows either the integrated or separate catch-and-hoop structure as a matching pair.",
       "priceAmount": 72,
       "priceCurrency": "USD",
-      "availability": "in_stock",
-      "sourceIds": [
-        "becos-six-kiln-blue-bouquet",
-        "becos-six-kiln-blue-bouquet-ja",
-        "six-kiln-brand"
-      ],
-      "editorialSummary": "A tiny blue bouquet above a clean gold-colored hoop. Try this porcelain pair with white cotton, denim or a soft navy knit.",
-      "whoItMaySuit": "For those who like floral detail, deep blue and the graphic line of a hoop.",
-      "whatToCheck": [
-        "The reverse is transitioning from white to a color matched to the fittings, and the catch-and-hoop construction is changing from integrated to separate. Either matching-pair version may be supplied.",
-        "The listed 5 g weight does not identify whether it is per earring or per pair.",
-        "The gold-colored surface can scratch or peel if rubbed strongly; the listing recommends gentle care."
-      ],
-      "slug": "six-kiln-blue-bouquet-pierced-earrings",
-      "locale": "en",
-      "publishStatus": "published",
-      "priceCheckedAt": "2026-11-16",
-      "taxNote": "USD display on the English BECOS storefront, checked on the stated date; tax inclusion was not established.",
-      "merchantIds": [
-        "becos-en",
-        "becos-ja"
-      ],
-      "lastVerifiedAt": "2026-11-16",
-      "imageAssetIds": [],
       "localizedPrices": {
         "ja": {
           "amount": 6600,
@@ -1906,12 +2439,36 @@
             "becos-six-kiln-blue-bouquet-ja"
           ]
         }
-      }
+      },
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "USD display on the English BECOS storefront, checked on the stated date; tax inclusion was not established.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "becos-en",
+        "becos-ja"
+      ],
+      "sourceIds": [
+        "becos-six-kiln-blue-bouquet",
+        "becos-six-kiln-blue-bouquet-ja",
+        "six-kiln-brand"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "A tiny blue bouquet above a clean gold-colored hoop. Try this porcelain pair with white cotton, denim or a soft navy knit.",
+      "whoItMaySuit": "For those who like floral detail, deep blue and the graphic line of a hoop.",
+      "whatToCheck": [
+        "The reverse is transitioning from white to a color matched to the fittings, and the catch-and-hoop construction is changing from integrated to separate. Either matching-pair version may be supplied.",
+        "The listed 5 g weight does not identify whether it is per earring or per pair.",
+        "The gold-colored surface can scratch or peel if rubbed strongly; the listing recommends gentle care."
+      ]
     },
     {
       "id": "saskia-diez-drake-porcelain-cuff",
+      "slug": "saskia-diez-drake-porcelain-cuff",
+      "locale": "en",
       "title": "2016/ Saskia Diez Drake porcelain cuff in gray and silver",
       "originalTitle": "【有田焼】2016/ サスキア ディーツ ブレスレット ドレーク カフ NO2 (グレイシルバー)",
+      "publishStatus": "published",
       "productType": [
         "bracelet"
       ],
@@ -1938,30 +2495,6 @@
       "fastening": "A rigid porcelain bracelet. An adjustable opening or clasp is not described in the checked listing.",
       "priceAmount": 324,
       "priceCurrency": "USD",
-      "availability": "listed",
-      "sourceIds": [
-        "becos-saskia-drake-cuff",
-        "becos-saskia-drake-cuff-ja",
-        "saskia-diez-brand"
-      ],
-      "editorialSummary": "Glossy gray porcelain, overlapping scales and a silver-colored accent: a sculptural finish for a bare wrist or a rolled shirt cuff.",
-      "whoItMaySuit": "For a minimal wardrobe that needs one expressive shape at the wrist.",
-      "whatToCheck": [
-        "The product information lists a weight of 130 g.",
-        "The material field names porcelain. The silver color is a visual finish, not a claim that the bracelet is made of solid silver.",
-        "The listed diameter is not explicitly identified as the internal fit measurement; no adjustability is stated."
-      ],
-      "slug": "saskia-diez-drake-porcelain-cuff",
-      "locale": "en",
-      "publishStatus": "published",
-      "priceCheckedAt": "2026-11-16",
-      "taxNote": "USD display on the English BECOS storefront, checked on the stated date; tax inclusion was not established.",
-      "merchantIds": [
-        "becos-en",
-        "becos-ja"
-      ],
-      "lastVerifiedAt": "2026-11-16",
-      "imageAssetIds": [],
       "localizedPrices": {
         "ja": {
           "amount": 29700,
@@ -1972,7 +2505,28 @@
             "becos-saskia-drake-cuff-ja"
           ]
         }
-      }
+      },
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "USD display on the English BECOS storefront, checked on the stated date; tax inclusion was not established.",
+      "availability": "listed",
+      "merchantIds": [
+        "becos-en",
+        "becos-ja"
+      ],
+      "sourceIds": [
+        "becos-saskia-drake-cuff",
+        "becos-saskia-drake-cuff-ja",
+        "saskia-diez-brand"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "Glossy gray porcelain, overlapping scales and a silver-colored accent: a sculptural finish for a bare wrist or a rolled shirt cuff.",
+      "whoItMaySuit": "For a minimal wardrobe that needs one expressive shape at the wrist.",
+      "whatToCheck": [
+        "The product information lists a weight of 130 g.",
+        "The material field names porcelain. The silver color is a visual finish, not a claim that the bracelet is made of solid silver.",
+        "The listed diameter is not explicitly identified as the internal fit measurement; no adjustability is stated."
+      ]
     },
     {
       "id": "checos-japanese-apricot-pierced-earrings",
@@ -2007,6 +2561,17 @@
       "fastening": "Pierced earrings; exact closure is not specified in the checked text.",
       "priceAmount": 180,
       "priceCurrency": "USD",
+      "localizedPrices": {
+        "ja": {
+          "amount": 16500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16",
+          "taxNote": "日本語公式ストアの税込表示価格（確認：2026-11-16）。",
+          "sourceIds": [
+            "becos-checos-japanese-apricot-ja"
+          ]
+        }
+      },
       "priceCheckedAt": "2026-11-16",
       "taxNote": "USD storefront price checked on the stated date. Tax inclusion not established.",
       "availability": "listed",
@@ -2026,18 +2591,7 @@
       "whatToCheck": [
         "The listing states 1 g without identifying whether that means one earring or the pair.",
         "The fine details can catch on hair or fibers. Avoid force and follow the maker’s silver-care instructions."
-      ],
-      "localizedPrices": {
-        "ja": {
-          "amount": 16500,
-          "currency": "JPY",
-          "checkedAt": "2026-11-16",
-          "taxNote": "日本語公式ストアの税込表示価格（確認：2026-11-16）。",
-          "sourceIds": [
-            "becos-checos-japanese-apricot-ja"
-          ]
-        }
-      }
+      ]
     },
     {
       "id": "morphosphere-ultramarine-pansy-pierced-earrings",
@@ -2074,6 +2628,17 @@
       "fastening": "The Japanese same-SKU listing identifies pierced earrings. Exact fastening is not specified in the checked text.",
       "priceAmount": 50.4,
       "priceCurrency": "USD",
+      "localizedPrices": {
+        "ja": {
+          "amount": 4620,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16",
+          "taxNote": "日本語公式ストアの税込表示価格（確認：2026-11-16）。",
+          "sourceIds": [
+            "becos-morphosphere-ultramarine-pansy-ja"
+          ]
+        }
+      },
       "priceCheckedAt": "2026-11-16",
       "taxNote": "USD storefront price checked on the stated date. Tax inclusion not established.",
       "availability": "listed",
@@ -2093,18 +2658,7 @@
       "whatToCheck": [
         "The listing states 1 g without identifying a per-ear or pair basis.",
         "The maker advises against water washing or wiping with water/detergent. Fabric and pattern placement may vary."
-      ],
-      "localizedPrices": {
-        "ja": {
-          "amount": 4620,
-          "currency": "JPY",
-          "checkedAt": "2026-11-16",
-          "taxNote": "日本語公式ストアの税込表示価格（確認：2026-11-16）。",
-          "sourceIds": [
-            "becos-morphosphere-ultramarine-pansy-ja"
-          ]
-        }
-      }
+      ]
     },
     {
       "id": "kato-suke-drop-pierced-earrings",
@@ -2143,6 +2697,17 @@
       "fastening": "Pierced earrings; exact fastening details are not specified in the checked text.",
       "priceAmount": 168,
       "priceCurrency": "USD",
+      "localizedPrices": {
+        "ja": {
+          "amount": 15400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16",
+          "taxNote": "日本語公式ストアの税込表示価格（確認：2026-11-16）。",
+          "sourceIds": [
+            "becos-kato-suke-drop-ja"
+          ]
+        }
+      },
       "priceCheckedAt": "2026-11-16",
       "taxNote": "USD storefront price checked on the stated date. Tax inclusion not established.",
       "availability": "listed",
@@ -2163,18 +2728,7 @@
         "Six colors are listed. This product handle covers the color variants, rather than a single fixed color.",
         "Weight is not supplied. The glassy surface needs protection from strong impact and heat.",
         "Titanium fittings do not establish that the entire item is hypoallergenic."
-      ],
-      "localizedPrices": {
-        "ja": {
-          "amount": 15400,
-          "currency": "JPY",
-          "checkedAt": "2026-11-16",
-          "taxNote": "日本語公式ストアの税込表示価格（確認：2026-11-16）。",
-          "sourceIds": [
-            "becos-kato-suke-drop-ja"
-          ]
-        }
-      }
+      ]
     },
     {
       "id": "arcos-cosmic-spiral-pendant",
@@ -2509,7 +3063,7 @@
       "locale": "en",
       "title": "CO.COON ori non-pierced earrings",
       "originalTitle": "CO.COON oriノンホールピアス",
-      "publishStatus": "published",
+      "publishStatus": "draft",
       "productType": [
         "clip-on-earrings"
       ],
@@ -2564,7 +3118,7 @@
       "locale": "en",
       "title": "CO.COON Frame Series pierced earrings",
       "originalTitle": "CO.COON フレームシリーズ ピアス",
-      "publishStatus": "published",
+      "publishStatus": "draft",
       "productType": [
         "pierced-earrings"
       ],
@@ -2941,6 +3495,17 @@
       "fastening": "Adjustable ring",
       "priceAmount": 84,
       "priceCurrency": "USD",
+      "localizedPrices": {
+        "ja": {
+          "amount": 7700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16",
+          "taxNote": "日本語BECOSの税込表示価格。",
+          "sourceIds": [
+            "becos-kato-round-ring-ja-v9"
+          ]
+        }
+      },
       "priceCheckedAt": "2026-11-16",
       "taxNote": "USD price on the English BECOS storefront; tax inclusion is not established.",
       "availability": "listed",
@@ -2960,18 +3525,926 @@
       "whatToCheck": [
         "Six colors share this product listing; confirm the chosen color. The ring is adjustable and its fitting is plated alloy.",
         "The glassy surface needs protection from strong impact and heat. The listing’s zero weight field is not a meaningful measured weight."
+      ]
+    },
+    {
+      "id": "hatakeyama-parfait-chocolate-orange-earrings",
+      "slug": "hatakeyama-parfait-chocolate-orange-earrings",
+      "locale": "en",
+      "title": "Hatakeyama Parfait winter enamel earrings — chocolate & orange",
+      "originalTitle": "季節のパフェ 冬|ピアス|アクセサリー（parfait-chocolat.orange-p）",
+      "publishStatus": "draft",
+      "productType": [
+        "pierced-earrings"
       ],
-      "localizedPrices": {
-        "ja": {
-          "amount": 7700,
-          "currency": "JPY",
-          "checkedAt": "2026-11-16",
-          "taxNote": "日本語BECOSの税込表示価格。",
-          "sourceIds": [
-            "becos-kato-round-ring-ja-v9"
-          ]
-        }
-      }
+      "prefectureIds": [
+        "tokyo"
+      ],
+      "craftIds": [
+        "tokyo-shippo"
+      ],
+      "materialIds": [
+        "tombac",
+        "gold-plating",
+        "stainless-steel",
+        "brass"
+      ],
+      "makerId": "hatakeyama-shippo",
+      "craftClassification": {
+        "label": "Contemporary jewelry using the named maker’s craft practice; individual national traditional-craft certification is not established.",
+        "sourceIds": [
+          "hatakeyama-parfait-winter-v11",
+          "hatakeyama-maker-v11"
+        ]
+      },
+      "size": "Parfait motif 20×20mm; floral motif length 40mm. Overall assembled length is not separately established.",
+      "weightPerPieceGrams": null,
+      "findings": "Stainless-steel posts, brass catches; gold plating and tombac are also listed. Exact stainless grade is not stated.",
+      "fastening": "Post and catch.",
+      "priceAmount": 7260,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Official Japanese listing price including consumption tax, checked on the stated date. Optional services are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "hatakeyama-official"
+      ],
+      "sourceIds": [
+        "hatakeyama-parfait-winter-v11",
+        "hatakeyama-maker-v11"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "Chocolate and orange color blocks meet an asymmetric floral line. A small playful detail for a plain cream shirt or a dark knit.",
+      "whoItMaySuit": "Choose it for asymmetric shapes and a warm color accent rather than a matched pair of identical studs.",
+      "whatToCheck": [
+        "The maker lists 2.3g for the parfait and 1.2g for the floral part; this is not converted into one per-ear weight.",
+        "Posts and catches are different metals. No allergy-suitability guarantee is made."
+      ]
+    },
+    {
+      "id": "hatakeyama-bijou-purple-necklace",
+      "slug": "hatakeyama-bijou-purple-necklace",
+      "locale": "en",
+      "title": "Hatakeyama Bijou purple enamel necklace",
+      "originalTitle": "ビジュー|ネックレス|アクセサリー（bijou-purple-n）",
+      "publishStatus": "draft",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "tokyo"
+      ],
+      "craftIds": [
+        "tokyo-shippo"
+      ],
+      "materialIds": [
+        "tombac",
+        "gold-plating"
+      ],
+      "makerId": "hatakeyama-shippo",
+      "craftClassification": {
+        "label": "Contemporary jewelry using the named maker’s craft practice; individual national traditional-craft certification is not established.",
+        "sourceIds": [
+          "hatakeyama-bijou-purple-v11",
+          "hatakeyama-maker-v11"
+        ]
+      },
+      "size": "Motif 10×10mm; chain approximately 45cm.",
+      "weightPerPieceGrams": null,
+      "findings": "Gold plating is listed; chain and clasp base alloy is not separately identified.",
+      "fastening": null,
+      "priceAmount": 3520,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Official Japanese listing price including consumption tax, checked on the stated date. Optional services are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "hatakeyama-official"
+      ],
+      "sourceIds": [
+        "hatakeyama-bijou-purple-v11",
+        "hatakeyama-maker-v11"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "A small purple floral geometry on a fine necklace. An understated way to bring a clear color point to a white T-shirt or grey knit.",
+      "whoItMaySuit": "Choose it when you want a compact color detail close to the neckline rather than a broad pendant.",
+      "whatToCheck": [
+        "The normal public price is used, rather than a conditional members-only price.",
+        "The maker lists a 2.8g weight without a component-by-component breakdown."
+      ]
+    },
+    {
+      "id": "sangetsu-irodori-tombodama-earrings",
+      "slug": "sangetsu-irodori-tombodama-earrings",
+      "locale": "en",
+      "title": "Sangetsu Irodori Izumi glass-bead earrings",
+      "originalTitle": "彩り和泉蜻蛉玉ピアス",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "osaka"
+      ],
+      "craftIds": [
+        "izumi-tombodama"
+      ],
+      "materialIds": [
+        "glass",
+        "silver-925"
+      ],
+      "makerId": "sangetsu-kobo",
+      "craftClassification": {
+        "label": "Contemporary jewelry using the named maker’s craft practice; individual national traditional-craft certification is not established.",
+        "sourceIds": [
+          "sangetsu-irodori-pierced-v11",
+          "sangetsu-maker-access-v11",
+          "sangetsu-storefront-identity-v11"
+        ]
+      },
+      "size": "Glass bead approximately 8mm; total assembled length is not published.",
+      "weightPerPieceGrams": null,
+      "findings": "Silver 925 piercing fittings are listed.",
+      "fastening": "Maker describes American-type fittings; check the official fastening photograph.",
+      "priceAmount": 3300,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Official Japanese listing price including consumption tax, checked on the stated date. Optional services are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "sangetsu-official"
+      ],
+      "sourceIds": [
+        "sangetsu-irodori-pierced-v11",
+        "sangetsu-maker-access-v11",
+        "sangetsu-storefront-identity-v11"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "Small glass beads carry a close-up pattern and a choice of rich colors. Try a restrained bead accent with an everyday cotton shirt.",
+      "whoItMaySuit": "Choose it for patterned glass beads with a modest scale, as an alternative to a pearl stud.",
+      "whatToCheck": [
+        "Bead color names such as hisui or coral-like orange are glass-color labels, not gemstone material claims.",
+        "The exact total length, weight and sale unit should be checked before ordering. Handmade beads vary."
+      ]
+    },
+    {
+      "id": "sangetsu-irodori-tombodama-necklace",
+      "slug": "sangetsu-irodori-tombodama-necklace",
+      "locale": "en",
+      "title": "Sangetsu Irodori Izumi glass-bead necklace",
+      "originalTitle": "彩り和泉蜻蛉玉ネックレス",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "osaka"
+      ],
+      "craftIds": [
+        "izumi-tombodama"
+      ],
+      "materialIds": [
+        "glass"
+      ],
+      "makerId": "sangetsu-kobo",
+      "craftClassification": {
+        "label": "Contemporary jewelry using the named maker’s craft practice; individual national traditional-craft certification is not established.",
+        "sourceIds": [
+          "sangetsu-irodori-necklace-v11",
+          "sangetsu-maker-access-v11",
+          "sangetsu-storefront-identity-v11"
+        ]
+      },
+      "size": "Bead diameter approximately 18mm; hole approximately 5mm. Cord length is not published.",
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": "Supplied necklace cord is removable; closure and cord material are not identified.",
+      "priceAmount": 4950,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Official Japanese listing price including consumption tax, checked on the stated date. Optional services are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "sangetsu-official"
+      ],
+      "sourceIds": [
+        "sangetsu-irodori-necklace-v11",
+        "sangetsu-maker-access-v11",
+        "sangetsu-storefront-identity-v11"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "A patterned round glass bead becomes the single color point on a plain top. The removable cord leaves room to restyle it later.",
+      "whoItMaySuit": "Choose it for a visible single bead and the option of changing the supplied cord, rather than a fine fixed chain.",
+      "whatToCheck": [
+        "A replacement cord or chain must fit the approximately 5mm hole; the maker does not specify every compatible fitting.",
+        "Cord length, cord material, closure and weight remain unconfirmed."
+      ]
+    },
+    {
+      "id": "sghr-tie-tie-glass-earrings",
+      "slug": "sghr-tie-tie-glass-earrings",
+      "locale": "en",
+      "title": "Sghr Tie-tie glass earrings",
+      "originalTitle": "タイタイ：ピアス（SJEAR-14W）",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "chiba"
+      ],
+      "craftIds": [
+        "kujukuri-studio-glass"
+      ],
+      "materialIds": [
+        "glass",
+        "titanium",
+        "brass",
+        "surgical-stainless-steel",
+        "rubber"
+      ],
+      "makerId": "sghr-sugahara",
+      "craftClassification": {
+        "label": "Contemporary jewelry using the named maker’s craft practice; individual national traditional-craft certification is not established.",
+        "sourceIds": [
+          "sghr-tietie-pierced-v11",
+          "sghr-kujukuri-workshop-v11"
+        ]
+      },
+      "size": "Glass motif approximately 8×39mm; total assembled length not separately confirmed.",
+      "weightPerPieceGrams": null,
+      "findings": "Titanium post; brass ball/rings/pins; surgical-stainless chain; rubber catch. Exact grades are not given.",
+      "fastening": "Post and rubber catch.",
+      "priceAmount": 8800,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Official Japanese listing price including consumption tax, checked on the stated date. Optional services are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "sghr-official"
+      ],
+      "sourceIds": [
+        "sghr-tietie-pierced-v11",
+        "sghr-kujukuri-workshop-v11"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "A narrow glass tie brings a crisp line to the ear. Pair the long shape with a plain shirt and let the glass show its changing light.",
+      "whoItMaySuit": "Choose it for a slender hanging shape rather than a round bead or a compact stud.",
+      "whatToCheck": [
+        "Titanium posts do not mean every part is titanium. Check the full material list if individual metals matter to you.",
+        "The maker warns about glass impact and recommends drying promptly after water contact."
+      ]
+    },
+    {
+      "id": "sghr-kolmio-glass-ear-cuff",
+      "slug": "sghr-kolmio-glass-ear-cuff",
+      "locale": "en",
+      "title": "Sghr Kolmio triangular glass ear cuff",
+      "originalTitle": "コルミオ：イヤーカフ（SJEAR-13ig）",
+      "publishStatus": "published",
+      "productType": [
+        "ear-cuff"
+      ],
+      "prefectureIds": [
+        "chiba"
+      ],
+      "craftIds": [
+        "kujukuri-studio-glass"
+      ],
+      "materialIds": [
+        "glass"
+      ],
+      "makerId": "sghr-sugahara",
+      "craftClassification": {
+        "label": "Contemporary jewelry using the named maker’s craft practice; individual national traditional-craft certification is not established.",
+        "sourceIds": [
+          "sghr-kolmio-earcuff-v11",
+          "sghr-kujukuri-workshop-v11"
+        ]
+      },
+      "size": "Glass motif approximately 15.5×15.5mm. Opening gap and weight are not published.",
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": "Ear cuff; fit depends on the ear and opening dimensions.",
+      "priceAmount": 6600,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Official Japanese listing price including consumption tax, checked on the stated date. Optional services are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "sghr-official"
+      ],
+      "sourceIds": [
+        "sghr-kolmio-earcuff-v11",
+        "sghr-kujukuri-workshop-v11"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "A small triangular outline catches light at the edge of the ear. An alternative shape to compare with round glass beads and dangling earrings.",
+      "whoItMaySuit": "Choose it when you prefer a compact geometric ear accent; check the fit before choosing it as a surprise gift.",
+      "whatToCheck": [
+        "The maker does not publish the opening gap or a guaranteed fit for every ear. Confirm the sale unit and sizing on the official page.",
+        "Glass can break on impact; remove it for activities described in the maker’s handling notes."
+      ]
+    },
+    {
+      "id": "kazarino-hanabishi-copper-earrings",
+      "slug": "kazarino-hanabishi-copper-earrings",
+      "locale": "en",
+      "title": "KAZARINO Hanabishi copper earrings",
+      "originalTitle": "錺之-KAZARINO- Pierce はなびし",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "kyoto"
+      ],
+      "craftIds": [
+        "kazarikanagu"
+      ],
+      "materialIds": [
+        "copper",
+        "surgical-stainless-steel"
+      ],
+      "makerId": "kazarino",
+      "craftClassification": {
+        "label": "Contemporary jewelry using the named maker’s craft practice; individual national traditional-craft certification is not established.",
+        "sourceIds": [
+          "kazarino-pierce-v11",
+          "kazarino-maker-v11"
+        ]
+      },
+      "size": "Hanabishi option 55×28mm; maker’s 3g statement does not clearly identify per-ear or pair basis.",
+      "weightPerPieceGrams": null,
+      "findings": "Copper and surgical stainless are listed; per-component allocation and stainless grade are not identified.",
+      "fastening": null,
+      "priceAmount": 7700,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Official Japanese listing price including consumption tax, checked on the stated date. Optional services are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "kazarino-official"
+      ],
+      "sourceIds": [
+        "kazarino-pierce-v11",
+        "kazarino-maker-v11"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "An open floral diamond turns warm copper into a graphic ear accent. Try it against black or ivory for a clear outline.",
+      "whoItMaySuit": "Choose it for a warm metal tone and open patterned shape, rather than a colored glass surface.",
+      "whatToCheck": [
+        "The maker explicitly says this is not an allergy-compatible product. Do not treat surgical-stainless wording as an all-parts guarantee.",
+        "The maker does not support conversion to non-pierced fittings for this design."
+      ]
+    },
+    {
+      "id": "kazarino-shippo-pattern-brass-bangle",
+      "slug": "kazarino-shippo-pattern-brass-bangle",
+      "locale": "en",
+      "title": "KAZARINO Shippo-pattern brass bangle — S",
+      "originalTitle": "錺之-KAZARINO- Bangle 七宝 S",
+      "publishStatus": "published",
+      "productType": [
+        "bracelet"
+      ],
+      "prefectureIds": [
+        "kyoto"
+      ],
+      "craftIds": [
+        "kazarikanagu"
+      ],
+      "materialIds": [
+        "brass"
+      ],
+      "makerId": "kazarino",
+      "craftClassification": {
+        "label": "Contemporary jewelry using the named maker’s craft practice; individual national traditional-craft certification is not established.",
+        "sourceIds": [
+          "kazarino-bangle-v11",
+          "kazarino-maker-v11"
+        ]
+      },
+      "size": "Selected S: inner circumference 142mm, width 24mm. Maker also lists M165mm, width 27mm.",
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": "Open bangle; maker allows a small adjustment at the opening.",
+      "priceAmount": 9900,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Official Japanese listing price including consumption tax, checked on the stated date. Optional services are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "kazarino-official"
+      ],
+      "sourceIds": [
+        "kazarino-bangle-v11",
+        "kazarino-maker-v11"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "A broad brass surface carries repeating circles. Wear it with a rolled shirt cuff and let the uncoated metal’s changing tone become part of the look.",
+      "whoItMaySuit": "Choose it for a broad metal wrist accent and visible aging, rather than a fine chain bracelet.",
+      "whatToCheck": [
+        "S and M have different circumferences and maker-listed weights of 30g and 40g. Check wrist dimensions; adjustment is limited.",
+        "The maker says it is not allergy compatible. Uncoated brass changes color with use."
+      ]
+    },
+    {
+      "id": "showen-edo-uchi-silk-bracelet",
+      "slug": "showen-edo-uchi-silk-bracelet",
+      "locale": "en",
+      "title": "SHOWEN Edo-uchi double-wrap silk bracelet — blue",
+      "originalTitle": "正絹 江戸打ち 二重巻きブレスレット #9/青",
+      "publishStatus": "published",
+      "productType": [
+        "bracelet"
+      ],
+      "prefectureIds": [
+        "kyoto"
+      ],
+      "craftIds": [
+        "kyo-kumihimo"
+      ],
+      "materialIds": [
+        "silk"
+      ],
+      "makerId": "showen-kumihimo",
+      "craftClassification": {
+        "label": "Contemporary jewelry using the named maker’s craft practice; individual national traditional-craft certification is not established.",
+        "sourceIds": [
+          "showen-edo-uchi-blue-bracelet-v11",
+          "showen-maker-v11"
+        ]
+      },
+      "size": "Approximately 36cm total length; odamaki ball 1cm diameter and 0.6cm winding length; loop diameter approximately 5.5cm.",
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": "Double-wrap cord with a loop that hooks over the odamaki ball.",
+      "priceAmount": 2200,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Official Japanese listing price including consumption tax, checked on the stated date. Optional services are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "showen-official"
+      ],
+      "sourceIds": [
+        "showen-edo-uchi-blue-bracelet-v11",
+        "showen-maker-v11"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "Blue braided silk wraps twice around the wrist, finished with a small round knot. A textile accent to compare with the shine of metal or glass.",
+      "whoItMaySuit": "Choose it for color and braided texture when a broad metal bangle would feel visually too strong.",
+      "whatToCheck": [
+        "One size is listed. The maker’s free-size label is not a guarantee of fit for every wrist.",
+        "It is 100% silk; this does not establish entirely hand-braided production or water resistance."
+      ]
+    },
+    {
+      "id": "iwaya-urushi-9mm-hook-earrings",
+      "slug": "iwaya-urushi-9mm-hook-earrings",
+      "locale": "en",
+      "title": "Iwaya 9mm urushi-bead hook earrings",
+      "originalTitle": "漆玉ピアス９mmフックタイプ（ステンレス金具）",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "fukuoka"
+      ],
+      "craftIds": [
+        "yame-urushi"
+      ],
+      "materialIds": [
+        "wood",
+        "urushi-lacquer",
+        "stainless-steel"
+      ],
+      "makerId": "iwaya-urushi",
+      "craftClassification": {
+        "label": "Contemporary jewelry using the named maker’s craft practice; individual national traditional-craft certification is not established.",
+        "sourceIds": [
+          "iwaya-urushi-9mm-hook-v11",
+          "iwaya-shop-v11"
+        ]
+      },
+      "size": "Lacquer bead diameter 9mm; assembled length is not published.",
+      "weightPerPieceGrams": null,
+      "findings": "Stainless fittings; exact grade is not stated.",
+      "fastening": "Hook-type pierced earrings.",
+      "priceAmount": 7700,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Official Japanese listing price including consumption tax, checked on the stated date. Optional services are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "iwaya-official"
+      ],
+      "sourceIds": [
+        "iwaya-urushi-9mm-hook-v11",
+        "iwaya-shop-v11"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "A glossy lacquer bead gives a rounded color accent. Try the rich surface with a plain cream blouse or a dark top.",
+      "whoItMaySuit": "Choose it for a glossy rounded surface rather than the visible grain of unfinished wood or transparent glass.",
+      "whatToCheck": [
+        "The maker does not give an exact weight or stainless grade. Lightness in its promotional text is not treated as a measured fact.",
+        "Urushi and metal suitability depend on the wearer; no allergy-free claim is adopted."
+      ]
+    },
+    {
+      "id": "toytoy-ninkari-nikuri-earrings",
+      "slug": "toytoy-ninkari-nikuri-earrings",
+      "locale": "en",
+      "title": "ToyToy Ninkari Nikuri wooden earrings",
+      "originalTitle": "ニンカリ(ピアス) ニクリ",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "hokkaido"
+      ],
+      "craftIds": [
+        "ainu-pattern-jewelry"
+      ],
+      "materialIds": [
+        "wood",
+        "surgical-stainless-steel"
+      ],
+      "makerId": "toytoy",
+      "craftClassification": {
+        "label": "Contemporary jewelry using the named maker’s craft practice; individual national traditional-craft certification is not established.",
+        "sourceIds": [
+          "toytoy-ninkari-nikuri-v11",
+          "toytoy-maker-v11"
+        ]
+      },
+      "size": "Maker lists 30mm and refers to the photograph; exact dimensional axis is not separately identified.",
+      "weightPerPieceGrams": null,
+      "findings": "Surgical stainless piercing parts are listed; exact grade and component allocation are not published.",
+      "fastening": null,
+      "priceAmount": 13200,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "JPY13200 including tax for the no-wrapping option. Optional wrapping changes the price.",
+      "availability": "listed",
+      "merchantIds": [
+        "toytoy-official"
+      ],
+      "sourceIds": [
+        "toytoy-ninkari-nikuri-v11",
+        "toytoy-maker-v11"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "An open wooden pattern brings a graphic silhouette near the face. A contemporary ToyToy design for those drawn to a carved outline.",
+      "whoItMaySuit": "Choose it for a bold open pattern and wood tone, rather than a glossy glass or enamel surface.",
+      "whatToCheck": [
+        "Wood species, finish and exact weight are not published in this listing.",
+        "Clip-on conversion is mentioned as an inquiry option; its price and fitting material are not confirmed. Surgical-stainless wording is not an allergy guarantee."
+      ]
+    },
+    {
+      "id": "toytoy-sirokani-pe-silver-necklace",
+      "slug": "toytoy-sirokani-pe-silver-necklace",
+      "locale": "en",
+      "title": "ToyToy Sirokani-pe necklace — SV1000 pendant, SV925 chain",
+      "originalTitle": "sirokani-pe（シロカニぺ）銀の滴",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "hokkaido"
+      ],
+      "craftIds": [
+        "ainu-pattern-jewelry"
+      ],
+      "materialIds": [
+        "silver-1000",
+        "silver-925"
+      ],
+      "makerId": "toytoy",
+      "craftClassification": {
+        "label": "Contemporary jewelry using the named maker’s craft practice; individual national traditional-craft certification is not established.",
+        "sourceIds": [
+          "toytoy-sirokani-pe-v11",
+          "toytoy-maker-v11"
+        ]
+      },
+      "size": "Pendant approximately 18×13mm; adjustable chain approximately 450mm.",
+      "weightPerPieceGrams": null,
+      "findings": "Pendant SV1000 pure silver; chain SV925.",
+      "fastening": null,
+      "priceAmount": 68200,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Official Japanese listing price including consumption tax, checked on the stated date. Optional services are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "toytoy-official"
+      ],
+      "sourceIds": [
+        "toytoy-sirokani-pe-v11",
+        "toytoy-maker-v11"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "A small silver drop carries a curved pattern. Choose it for metal tone and a compact shape against a simple neckline.",
+      "whoItMaySuit": "Choose it for a small metal pendant with different silver grades stated for the top and chain.",
+      "whatToCheck": [
+        "The pure-silver statement applies to the top; the chain is SV925, not SV1000.",
+        "Weight and the exact clasp design are not published. Silver suitability and maintenance should be checked with the maker."
+      ]
+    },
+    {
+      "id": "tamura-kaisai-enamel-ear-jewelry",
+      "slug": "tamura-kaisai-enamel-ear-jewelry",
+      "locale": "en",
+      "title": "Tamura Shippo Kaisai enamel ear jewelry",
+      "originalTitle": "七宝焼イヤリング／ピアス《海彩》",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings",
+        "clip-on-earrings"
+      ],
+      "prefectureIds": [
+        "aichi"
+      ],
+      "craftIds": [
+        "owari-cloisonne"
+      ],
+      "materialIds": [
+        "silver",
+        "enamel-glaze",
+        "surgical-stainless-steel"
+      ],
+      "makerId": "tamura-shippo",
+      "craftClassification": {
+        "label": "Contemporary jewelry using the named maker’s craft practice; individual national traditional-craft certification is not established.",
+        "sourceIds": [
+          "tamura-kaisai-ear-jewelry-v11",
+          "tamura-official-jewelry-v11"
+        ]
+      },
+      "size": null,
+      "weightPerPieceGrams": null,
+      "findings": "Pierced option: surgical stainless fittings. Clip-on option: rhodium-plated silver-color fittings; base alloy is not named. Pure-silver enamel base and silver wires are listed.",
+      "fastening": "Clip-on option: screw-back. The pierced option’s closure is not separately identified.",
+      "priceAmount": 43000,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Official Japanese listing price including consumption tax, checked on the stated date. Optional services are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "tamura-official"
+      ],
+      "sourceIds": [
+        "tamura-kaisai-ear-jewelry-v11",
+        "tamura-official-jewelry-v11"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "Blue and green enamel create a layered sea-like color. An alternative to transparent glass when you want a glossy surface with drawn lines.",
+      "whoItMaySuit": "Choose it for enamel color and silver-wire detail, with a choice of pierced or non-pierced fittings to confirm on the official listing.",
+      "whatToCheck": [
+        "Dimensions, weight and the exact non-pierced base alloy are not published in the product body.",
+        "The two fitting options use different materials. No all-parts allergy guarantee is adopted."
+      ]
+    },
+    {
+      "id": "nanao-shuka-nebula-16g-earrings",
+      "slug": "nanao-shuka-nebula-16g-earrings",
+      "locale": "en",
+      "title": "Nanao & Shuka Nebula 16G glass earrings",
+      "originalTitle": "ガラスのピアス 星雲16G",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "nara"
+      ],
+      "craftIds": [
+        "burner-worked-glass"
+      ],
+      "materialIds": [
+        "glass",
+        "luster-powder",
+        "rubber"
+      ],
+      "makerId": "nanao-shuka",
+      "craftClassification": {
+        "label": "Contemporary jewelry using the named maker’s craft practice; individual national traditional-craft certification is not established.",
+        "sourceIds": [
+          "nanao-shuka-nebula-v11",
+          "nanao-shuka-official-v11",
+          "nanao-shuka-profile-v11"
+        ]
+      },
+      "size": "Fresh listing: top approximately 4.8mm diameter; glass shaft approximately 11mm long,16G (approximately 1.2mm). Maker notes approximately±0.1mm gauge variation.",
+      "weightPerPieceGrams": null,
+      "findings": "Glass shaft with rubber catches; soda glass and luster powder are listed.",
+      "fastening": "Glass shaft and thin rubber catch, without a retention notch.",
+      "priceAmount": 3850,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Official Japanese listing price including consumption tax, checked on the stated date. Optional services are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "nanao-shuka-creema"
+      ],
+      "sourceIds": [
+        "nanao-shuka-nebula-v11",
+        "nanao-shuka-official-v11",
+        "nanao-shuka-profile-v11"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "Green, purple and red appear differently as the small glass motif turns. A compact alternative to a long glass drop, with a specific glass-shaft size to check.",
+      "whoItMaySuit": "Choose it for a small color-changing effect, after confirming that the stated 16G glass shaft dimensions suit your existing fitting needs.",
+      "whatToCheck": [
+        "16G is approximately 1.2mm, and the maker states dimensional variation. Do not force a mismatched shaft or assume first-piercing suitability.",
+        "The current body contains conflicting box-included/box-not-included wording; confirm gift packaging. No allergy-free guarantee is adopted."
+      ],
+      "priceUnit": "pair"
+    },
+    {
+      "id": "simprich-reversible-topaz-ruby-chain-ring",
+      "slug": "simprich-reversible-topaz-ruby-chain-ring",
+      "locale": "en",
+      "title": "SIMPRICH reversible topaz/ruby K10 chain ring",
+      "originalTitle": "K10ホワイトゴールド ホワイトトパーズ ルビー チェーンリング",
+      "publishStatus": "published",
+      "productType": [
+        "ring"
+      ],
+      "prefectureIds": [
+        "yamanashi"
+      ],
+      "craftIds": [
+        "kofu-jewelry"
+      ],
+      "materialIds": [
+        "gold-10k",
+        "white-topaz",
+        "ruby"
+      ],
+      "makerId": "simprich",
+      "craftClassification": {
+        "label": "Contemporary jewelry using the named maker’s craft practice; individual national traditional-craft certification is not established.",
+        "sourceIds": [
+          "simprich-reversible-chain-ring-v11",
+          "simprich-about-v9"
+        ]
+      },
+      "size": "Japanese ring sizes 1–12; top approximately 5mm. The listed range is not unrestricted sizing.",
+      "weightPerPieceGrams": null,
+      "findings": "K10 white gold with white topaz and ruby.",
+      "fastening": "Adjustable chain-ring structure; confirm the mechanism and range in official details.",
+      "priceAmount": 36300,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Official Japanese listing price including consumption tax, checked on the stated date. Optional services are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "simprich-official"
+      ],
+      "sourceIds": [
+        "simprich-reversible-chain-ring-v11",
+        "simprich-about-v9"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "White topaz on one face, ruby on the other. A small reversible ring for changing the color of a hand detail without changing the whole outfit.",
+      "whoItMaySuit": "Choose it if you enjoy switching a small ring’s color; first check the maker’s Japanese size range and made-to-order timing.",
+      "whatToCheck": [
+        "The maker lists sizes 1–12. Do not interpret free sizing as fitting every finger or size.",
+        "Made to order, with a stated 1–4 week dispatch window when checked; immediate in-store availability is not confirmed."
+      ]
+    },
+    {
+      "id": "simprich-reversible-silver-piaring-single",
+      "slug": "simprich-reversible-silver-piaring-single",
+      "locale": "en",
+      "title": "SIMPRICH reversible silver Piaring — single earring",
+      "originalTitle": "SV925 バイカラー（リバーシブル）ピアリング(Girls)（片耳用）",
+      "publishStatus": "published",
+      "productType": [
+        "clip-on-earrings"
+      ],
+      "prefectureIds": [
+        "yamanashi"
+      ],
+      "craftIds": [
+        "kofu-jewelry"
+      ],
+      "materialIds": [
+        "silver-925"
+      ],
+      "makerId": "simprich",
+      "craftClassification": {
+        "label": "Contemporary jewelry using the named maker’s craft practice; individual national traditional-craft certification is not established.",
+        "sourceIds": [
+          "simprich-piaring-single-v11",
+          "simprich-about-v9"
+        ]
+      },
+      "size": "Body 19×14mm; width 2–4mm. Official free-size label does not guarantee fit.",
+      "weightPerPieceGrams": null,
+      "findings": "SV925; two-tone finish is described by color, without a published coating-alloy composition.",
+      "fastening": "Piaring non-pierced opening/closing mechanism; inspect the official mechanism photographs.",
+      "priceAmount": 15500,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Official tax-included JPY15500 listing is titled as a single-ear piece, not a pair.",
+      "availability": "listed",
+      "merchantIds": [
+        "simprich-official"
+      ],
+      "sourceIds": [
+        "simprich-piaring-single-v11",
+        "simprich-about-v9"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "A tapered hoop-like shape with two color faces. This single-ear piece offers a polished metal alternative to textile or porcelain non-pierced jewelry.",
+      "whoItMaySuit": "Choose it for a single metal ear accent with a reversible color effect; check both the sale unit and the fitting.",
+      "whatToCheck": [
+        "The page title specifies one ear. Do not compare its displayed price as if it were a two-piece pair.",
+        "Made to order with a stated 1–4 week dispatch window. No pain-free, loss-proof or allergy guarantee is adopted."
+      ],
+      "priceUnit": "single-ear"
+    },
+    {
+      "id": "hario-little-tears-clip-on-earrings",
+      "slug": "hario-little-tears-clip-on-earrings",
+      "locale": "en",
+      "title": "HARIO Lampwork Factory Little Tears clip-on earrings",
+      "originalTitle": "イヤリング リトルティアーズ（HAW-LT-E）",
+      "publishStatus": "published",
+      "productType": [
+        "clip-on-earrings"
+      ],
+      "prefectureIds": [
+        "tokyo"
+      ],
+      "craftIds": [
+        "burner-worked-glass"
+      ],
+      "materialIds": [
+        "glass",
+        "plated-brass"
+      ],
+      "makerId": "hario-lampwork-factory",
+      "craftClassification": {
+        "label": "Contemporary handmade glass jewelry from a maker with a Nihonbashi workshop. The exact workshop for this SKU and component-by-component origins are not identified.",
+        "sourceIds": [
+          "hario-lwf-about-v11",
+          "hario-lwf-burner-v11",
+          "hario-netshop-product-v11"
+        ]
+      },
+      "size": "Glass charm 4 × 6 × 3 mm; chain length 45 mm. This is not a separate statement of total assembled length.",
+      "weightPerPieceGrams": null,
+      "findings": "Brass with gold plating is stated for the standard model. Exact component coverage and plating composition are not separately specified.",
+      "fastening": null,
+      "priceAmount": 8250,
+      "priceCurrency": "JPY",
+      "priceUnit": "pair",
+      "priceCheckedAt": "2026-11-16",
+      "taxNote": "Current Japanese HARIO NETSHOP price including consumption tax. Optional fitting conversion, wrapping and delivery are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "hario-netshop"
+      ],
+      "sourceIds": [
+        "hario-netshop-product-v11",
+        "hario-lwf-product-v11",
+        "hario-lwf-about-v11",
+        "hario-kodenmacho-v11"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "editorialSummary": "Clear glass drops move along fine chains. Try the transparent detail beside a white shirt or navy knit, with the neckline kept simple.",
+      "whoItMaySuit": "Choose it for a clear hanging line and small teardrop shapes, as an alternative to a colored bead or a solid ceramic motif.",
+      "whatToCheck": [
+        "The standard fitting is gold-plated brass. Paid K10 conversion is a separate option, not the material of the reference-priced model.",
+        "Exact weight and the detailed clip-on closing mechanism are not specified in the product body. Glass needs careful handling.",
+        "The maker works in Nihonbashi and other regions. This item’s exact workshop and current Kodenmacho shelf stock are unconfirmed."
+      ]
     }
   ]
 }

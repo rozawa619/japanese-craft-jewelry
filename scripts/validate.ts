@@ -18,7 +18,7 @@ export type ProjectData = {
 };
 export const contentLocale = (record: MarkdownRecord): string => String(record.metadata.locale || 'en');
 const publicLocales = ['en', 'ja'] as const;
-const jewelryTypes = new Set(['pierced-earrings', 'clip-on-earrings', 'necklace', 'brooch', 'ring', 'bracelet', 'pendant', 'anklet', 'cufflinks']);
+const jewelryTypes = new Set(['pierced-earrings', 'clip-on-earrings', 'ear-cuff', 'necklace', 'brooch', 'ring', 'bracelet', 'pendant', 'anklet', 'cufflinks']);
 
 // Astro validates the full YAML shape. These fields connect content to shared factual data.
 export function readMarkdownRecord(file: string): MarkdownRecord {

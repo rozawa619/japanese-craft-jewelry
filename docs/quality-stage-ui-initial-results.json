@@ -1,0 +1,911 @@
+{
+  "checkedAt": "2026-11-16T13:58:24.237Z",
+  "origin": "http://127.0.0.1:4321",
+  "base": "/japanese-craft-jewelry/",
+  "scope": "initial390px probe;3 detail products and Tokyo/Chiba only",
+  "method": "Read-only fresh Chrome verification of the actual published catalog. Raw source-data oracles verify all6 Japan-budget partitions, ascending/descending order with unknowns last and editorial ties, combined/empty/reset/back/invalid-query/language states, source-based product choice comparisons and actual-official visual links, neutral previews for unillustrated products, regional choices and current legal/privacy notices. Full mode uses EN/JA1440/390/320px and every published product and region; probe mode is explicitly a limited390px initial check. All enabled axe rules on selected templates; no retailer checkout, application, external link navigation, personal data or approval assumption.",
+  "checks": [
+    {
+      "name": "mobile en complete catalog and source-based Japan budget metadata",
+      "status": "passed",
+      "detail": {
+        "products": 30,
+        "budgetPartition": {
+          "up-to-5000": 9,
+          "5000-10000": 6,
+          "10000-20000": 4,
+          "20000-40000": 5,
+          "over-40000": 4,
+          "unconfirmed": 2
+        }
+      }
+    },
+    {
+      "name": "mobile en budget up-to-5000",
+      "status": "passed",
+      "detail": {
+        "budget": "up-to-5000",
+        "ids": [
+          "morphosphere-ultramarine-pansy-pierced-earrings",
+          "hamamatsuya-catch-pierced",
+          "hamamatsuya-clip",
+          "hamamatsuya-pendant",
+          "maruyama-clip-c",
+          "maruyama-clip-d",
+          "maruyama-pierced-c",
+          "maruyama-pierced-d",
+          "hamamatsuya-18k-pierced"
+        ]
+      }
+    },
+    {
+      "name": "mobile en budget 5000-10000",
+      "status": "passed",
+      "detail": {
+        "budget": "5000-10000",
+        "ids": [
+          "six-kiln-half-moon-earrings",
+          "six-kiln-blue-bouquet-pierced-earrings",
+          "arcos-cosmic-glass-bracelet",
+          "senshu-pearl-stud-earrings",
+          "senshu-pearl-swing-earrings",
+          "kato-suke-round-ring"
+        ]
+      }
+    },
+    {
+      "name": "mobile en budget 10000-20000",
+      "status": "passed",
+      "detail": {
+        "budget": "10000-20000",
+        "ids": [
+          "checos-japanese-apricot-pierced-earrings",
+          "kato-suke-drop-pierced-earrings",
+          "arcos-cosmic-spiral-pendant",
+          "nakajima-pear-sakura-pendant"
+        ]
+      }
+    },
+    {
+      "name": "mobile en budget 20000-40000",
+      "status": "passed",
+      "detail": {
+        "budget": "20000-40000",
+        "ids": [
+          "rinzen-seika-amber-pierced-earrings",
+          "rinzen-leaf-glass-pendant",
+          "saskia-diez-drake-porcelain-cuff",
+          "yukieglass-mint-veil-earrings",
+          "yukieglass-rouge-veil-earrings"
+        ]
+      }
+    },
+    {
+      "name": "mobile en budget over-40000",
+      "status": "passed",
+      "detail": {
+        "budget": "over-40000",
+        "ids": [
+          "sugimura-hosoge-raden-pendant",
+          "sugimura-lotus-makie-ring",
+          "simprich-crystal-bubble-pierced-earrings",
+          "simprich-rose-quartz-necklace"
+        ]
+      }
+    },
+    {
+      "name": "mobile en budget unconfirmed",
+      "status": "passed",
+      "detail": {
+        "budget": "unconfirmed",
+        "ids": [
+          "cocoon-ori-nonhole-earrings",
+          "cocoon-frame-pierced-earrings"
+        ]
+      }
+    },
+    {
+      "name": "mobile en order price-asc",
+      "status": "passed",
+      "detail": {
+        "sort": "price-asc",
+        "ids": [
+          "hamamatsuya-clip",
+          "maruyama-clip-c",
+          "maruyama-clip-d",
+          "maruyama-pierced-c",
+          "maruyama-pierced-d",
+          "hamamatsuya-catch-pierced",
+          "hamamatsuya-pendant",
+          "hamamatsuya-18k-pierced",
+          "morphosphere-ultramarine-pansy-pierced-earrings",
+          "senshu-pearl-swing-earrings",
+          "six-kiln-blue-bouquet-pierced-earrings",
+          "senshu-pearl-stud-earrings",
+          "kato-suke-round-ring",
+          "arcos-cosmic-glass-bracelet",
+          "six-kiln-half-moon-earrings",
+          "arcos-cosmic-spiral-pendant",
+          "kato-suke-drop-pierced-earrings",
+          "checos-japanese-apricot-pierced-earrings",
+          "nakajima-pear-sakura-pendant",
+          "rinzen-seika-amber-pierced-earrings",
+          "rinzen-leaf-glass-pendant",
+          "yukieglass-mint-veil-earrings",
+          "yukieglass-rouge-veil-earrings",
+          "saskia-diez-drake-porcelain-cuff",
+          "sugimura-hosoge-raden-pendant",
+          "simprich-crystal-bubble-pierced-earrings",
+          "simprich-rose-quartz-necklace",
+          "sugimura-lotus-makie-ring",
+          "cocoon-ori-nonhole-earrings",
+          "cocoon-frame-pierced-earrings"
+        ],
+        "unknownLast": [
+          "cocoon-ori-nonhole-earrings",
+          "cocoon-frame-pierced-earrings"
+        ],
+        "equalPriceGroups": 4
+      }
+    },
+    {
+      "name": "mobile en order price-desc",
+      "status": "passed",
+      "detail": {
+        "sort": "price-desc",
+        "ids": [
+          "sugimura-lotus-makie-ring",
+          "simprich-rose-quartz-necklace",
+          "simprich-crystal-bubble-pierced-earrings",
+          "sugimura-hosoge-raden-pendant",
+          "saskia-diez-drake-porcelain-cuff",
+          "yukieglass-mint-veil-earrings",
+          "yukieglass-rouge-veil-earrings",
+          "rinzen-leaf-glass-pendant",
+          "rinzen-seika-amber-pierced-earrings",
+          "checos-japanese-apricot-pierced-earrings",
+          "nakajima-pear-sakura-pendant",
+          "kato-suke-drop-pierced-earrings",
+          "arcos-cosmic-spiral-pendant",
+          "six-kiln-half-moon-earrings",
+          "arcos-cosmic-glass-bracelet",
+          "kato-suke-round-ring",
+          "senshu-pearl-stud-earrings",
+          "six-kiln-blue-bouquet-pierced-earrings",
+          "senshu-pearl-swing-earrings",
+          "morphosphere-ultramarine-pansy-pierced-earrings",
+          "hamamatsuya-18k-pierced",
+          "hamamatsuya-catch-pierced",
+          "hamamatsuya-pendant",
+          "maruyama-clip-c",
+          "maruyama-clip-d",
+          "maruyama-pierced-c",
+          "maruyama-pierced-d",
+          "hamamatsuya-clip",
+          "cocoon-ori-nonhole-earrings",
+          "cocoon-frame-pierced-earrings"
+        ],
+        "unknownLast": [
+          "cocoon-ori-nonhole-earrings",
+          "cocoon-frame-pierced-earrings"
+        ],
+        "equalPriceGroups": 4
+      }
+    },
+    {
+      "name": "mobile en order editorial",
+      "status": "passed",
+      "detail": {
+        "sort": "",
+        "ids": [
+          "morphosphere-ultramarine-pansy-pierced-earrings",
+          "hamamatsuya-catch-pierced",
+          "rinzen-seika-amber-pierced-earrings",
+          "checos-japanese-apricot-pierced-earrings",
+          "hamamatsuya-clip",
+          "six-kiln-half-moon-earrings",
+          "kato-suke-drop-pierced-earrings",
+          "hamamatsuya-pendant",
+          "rinzen-leaf-glass-pendant",
+          "maruyama-clip-c",
+          "six-kiln-blue-bouquet-pierced-earrings",
+          "maruyama-clip-d",
+          "saskia-diez-drake-porcelain-cuff",
+          "maruyama-pierced-c",
+          "maruyama-pierced-d",
+          "arcos-cosmic-spiral-pendant",
+          "arcos-cosmic-glass-bracelet",
+          "senshu-pearl-stud-earrings",
+          "senshu-pearl-swing-earrings",
+          "sugimura-hosoge-raden-pendant",
+          "sugimura-lotus-makie-ring",
+          "cocoon-ori-nonhole-earrings",
+          "cocoon-frame-pierced-earrings",
+          "simprich-crystal-bubble-pierced-earrings",
+          "simprich-rose-quartz-necklace",
+          "yukieglass-mint-veil-earrings",
+          "yukieglass-rouge-veil-earrings",
+          "nakajima-pear-sakura-pendant",
+          "kato-suke-round-ring",
+          "hamamatsuya-18k-pierced"
+        ],
+        "unknownLast": [],
+        "equalPriceGroups": 4
+      }
+    },
+    {
+      "name": "mobile en combined filters, no-match and clear restore editorial selection",
+      "status": "passed",
+      "detail": {
+        "combined": [
+          "hamamatsuya-18k-pierced",
+          "hamamatsuya-catch-pierced"
+        ],
+        "empty": {
+          "type": "pierced-earrings",
+          "prefecture": "kanagawa",
+          "budget": "5000-10000"
+        },
+        "clearRestores": 30
+      }
+    },
+    {
+      "name": "mobile en filtered detail back and same-query language roundtrip",
+      "status": "passed",
+      "detail": {
+        "budget": "up-to-5000",
+        "ids": [
+          "hamamatsuya-clip",
+          "maruyama-clip-c",
+          "maruyama-clip-d",
+          "maruyama-pierced-c",
+          "maruyama-pierced-d",
+          "hamamatsuya-catch-pierced",
+          "hamamatsuya-pendant",
+          "hamamatsuya-18k-pierced",
+          "morphosphere-ultramarine-pansy-pierced-earrings"
+        ],
+        "backRestores": true,
+        "bothLanguageRoundtrip": true
+      }
+    },
+    {
+      "name": "mobile en invalid query values do not create hidden, external or invented states",
+      "status": "passed",
+      "detail": {
+        "ignored": true,
+        "allProductsShown": 30
+      }
+    },
+    {
+      "name": "mobile en product choice hamamatsuya-18k-pierced",
+      "status": "passed",
+      "detail": {
+        "productId": "hamamatsuya-18k-pierced",
+        "comparisonIds": [
+          "hamamatsuya-18k-pierced",
+          "hamamatsuya-catch-pierced",
+          "simprich-crystal-bubble-pierced-earrings"
+        ],
+        "visual": "registered-ai"
+      }
+    },
+    {
+      "name": "mobile en product choice rinzen-seika-amber-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "rinzen-seika-amber-pierced-earrings",
+        "comparisonIds": [
+          "rinzen-seika-amber-pierced-earrings",
+          "yukieglass-mint-veil-earrings",
+          "six-kiln-blue-bouquet-pierced-earrings"
+        ],
+        "visual": "registered-ai"
+      }
+    },
+    {
+      "name": "mobile en product choice cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "cocoon-ori-nonhole-earrings",
+        "comparisonIds": [
+          "cocoon-ori-nonhole-earrings",
+          "cocoon-frame-pierced-earrings",
+          "six-kiln-half-moon-earrings"
+        ],
+        "visual": "registered-ai"
+      }
+    },
+    {
+      "name": "mobile en regional type choices tokyo",
+      "status": "passed",
+      "detail": {
+        "region": "tokyo",
+        "localProducts": 2,
+        "typeChoices": [
+          {
+            "type": "pierced-earrings",
+            "ids": [
+              "rinzen-seika-amber-pierced-earrings"
+            ],
+            "knownPriceRange": [
+              26400,
+              26400
+            ],
+            "unknownPrices": 0
+          },
+          {
+            "type": "necklace",
+            "ids": [
+              "rinzen-leaf-glass-pendant"
+            ],
+            "knownPriceRange": [
+              27500,
+              27500
+            ],
+            "unknownPrices": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile en regional type choices chiba",
+      "status": "passed",
+      "detail": {
+        "region": "chiba",
+        "localProducts": 2,
+        "typeChoices": [
+          {
+            "type": "necklace",
+            "ids": [
+              "arcos-cosmic-spiral-pendant"
+            ],
+            "knownPriceRange": [
+              12800,
+              12800
+            ],
+            "unknownPrices": 0
+          },
+          {
+            "type": "bracelet",
+            "ids": [
+              "arcos-cosmic-glass-bracelet"
+            ],
+            "knownPriceRange": [
+              8900,
+              8900
+            ],
+            "unknownPrices": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile en current policy editorial-policy/",
+      "status": "passed",
+      "detail": {
+        "policy": "editorial-policy/"
+      }
+    },
+    {
+      "name": "mobile en current policy privacy/",
+      "status": "passed",
+      "detail": {
+        "policy": "privacy/"
+      }
+    },
+    {
+      "name": "mobile en current policy about/",
+      "status": "passed",
+      "detail": {
+        "policy": "about/"
+      }
+    },
+    {
+      "name": "mobile en current policy affiliate-disclosure/",
+      "status": "passed",
+      "detail": {
+        "policy": "affiliate-disclosure/"
+      }
+    },
+    {
+      "name": "mobile ja complete catalog and source-based Japan budget metadata",
+      "status": "passed",
+      "detail": {
+        "products": 30,
+        "budgetPartition": {
+          "up-to-5000": 9,
+          "5000-10000": 6,
+          "10000-20000": 4,
+          "20000-40000": 5,
+          "over-40000": 4,
+          "unconfirmed": 2
+        }
+      }
+    },
+    {
+      "name": "mobile ja budget up-to-5000",
+      "status": "passed",
+      "detail": {
+        "budget": "up-to-5000",
+        "ids": [
+          "morphosphere-ultramarine-pansy-pierced-earrings",
+          "hamamatsuya-catch-pierced",
+          "hamamatsuya-clip",
+          "hamamatsuya-pendant",
+          "maruyama-clip-c",
+          "maruyama-clip-d",
+          "maruyama-pierced-c",
+          "maruyama-pierced-d",
+          "hamamatsuya-18k-pierced"
+        ]
+      }
+    },
+    {
+      "name": "mobile ja budget 5000-10000",
+      "status": "passed",
+      "detail": {
+        "budget": "5000-10000",
+        "ids": [
+          "six-kiln-half-moon-earrings",
+          "six-kiln-blue-bouquet-pierced-earrings",
+          "arcos-cosmic-glass-bracelet",
+          "senshu-pearl-stud-earrings",
+          "senshu-pearl-swing-earrings",
+          "kato-suke-round-ring"
+        ]
+      }
+    },
+    {
+      "name": "mobile ja budget 10000-20000",
+      "status": "passed",
+      "detail": {
+        "budget": "10000-20000",
+        "ids": [
+          "checos-japanese-apricot-pierced-earrings",
+          "kato-suke-drop-pierced-earrings",
+          "arcos-cosmic-spiral-pendant",
+          "nakajima-pear-sakura-pendant"
+        ]
+      }
+    },
+    {
+      "name": "mobile ja budget 20000-40000",
+      "status": "passed",
+      "detail": {
+        "budget": "20000-40000",
+        "ids": [
+          "rinzen-seika-amber-pierced-earrings",
+          "rinzen-leaf-glass-pendant",
+          "saskia-diez-drake-porcelain-cuff",
+          "yukieglass-mint-veil-earrings",
+          "yukieglass-rouge-veil-earrings"
+        ]
+      }
+    },
+    {
+      "name": "mobile ja budget over-40000",
+      "status": "passed",
+      "detail": {
+        "budget": "over-40000",
+        "ids": [
+          "sugimura-hosoge-raden-pendant",
+          "sugimura-lotus-makie-ring",
+          "simprich-crystal-bubble-pierced-earrings",
+          "simprich-rose-quartz-necklace"
+        ]
+      }
+    },
+    {
+      "name": "mobile ja budget unconfirmed",
+      "status": "passed",
+      "detail": {
+        "budget": "unconfirmed",
+        "ids": [
+          "cocoon-ori-nonhole-earrings",
+          "cocoon-frame-pierced-earrings"
+        ]
+      }
+    },
+    {
+      "name": "mobile ja order price-asc",
+      "status": "passed",
+      "detail": {
+        "sort": "price-asc",
+        "ids": [
+          "hamamatsuya-clip",
+          "maruyama-clip-c",
+          "maruyama-clip-d",
+          "maruyama-pierced-c",
+          "maruyama-pierced-d",
+          "hamamatsuya-catch-pierced",
+          "hamamatsuya-pendant",
+          "hamamatsuya-18k-pierced",
+          "morphosphere-ultramarine-pansy-pierced-earrings",
+          "senshu-pearl-swing-earrings",
+          "six-kiln-blue-bouquet-pierced-earrings",
+          "senshu-pearl-stud-earrings",
+          "kato-suke-round-ring",
+          "arcos-cosmic-glass-bracelet",
+          "six-kiln-half-moon-earrings",
+          "arcos-cosmic-spiral-pendant",
+          "kato-suke-drop-pierced-earrings",
+          "checos-japanese-apricot-pierced-earrings",
+          "nakajima-pear-sakura-pendant",
+          "rinzen-seika-amber-pierced-earrings",
+          "rinzen-leaf-glass-pendant",
+          "yukieglass-mint-veil-earrings",
+          "yukieglass-rouge-veil-earrings",
+          "saskia-diez-drake-porcelain-cuff",
+          "sugimura-hosoge-raden-pendant",
+          "simprich-crystal-bubble-pierced-earrings",
+          "simprich-rose-quartz-necklace",
+          "sugimura-lotus-makie-ring",
+          "cocoon-ori-nonhole-earrings",
+          "cocoon-frame-pierced-earrings"
+        ],
+        "unknownLast": [
+          "cocoon-ori-nonhole-earrings",
+          "cocoon-frame-pierced-earrings"
+        ],
+        "equalPriceGroups": 4
+      }
+    },
+    {
+      "name": "mobile ja order price-desc",
+      "status": "passed",
+      "detail": {
+        "sort": "price-desc",
+        "ids": [
+          "sugimura-lotus-makie-ring",
+          "simprich-rose-quartz-necklace",
+          "simprich-crystal-bubble-pierced-earrings",
+          "sugimura-hosoge-raden-pendant",
+          "saskia-diez-drake-porcelain-cuff",
+          "yukieglass-mint-veil-earrings",
+          "yukieglass-rouge-veil-earrings",
+          "rinzen-leaf-glass-pendant",
+          "rinzen-seika-amber-pierced-earrings",
+          "checos-japanese-apricot-pierced-earrings",
+          "nakajima-pear-sakura-pendant",
+          "kato-suke-drop-pierced-earrings",
+          "arcos-cosmic-spiral-pendant",
+          "six-kiln-half-moon-earrings",
+          "arcos-cosmic-glass-bracelet",
+          "kato-suke-round-ring",
+          "senshu-pearl-stud-earrings",
+          "six-kiln-blue-bouquet-pierced-earrings",
+          "senshu-pearl-swing-earrings",
+          "morphosphere-ultramarine-pansy-pierced-earrings",
+          "hamamatsuya-18k-pierced",
+          "hamamatsuya-catch-pierced",
+          "hamamatsuya-pendant",
+          "maruyama-clip-c",
+          "maruyama-clip-d",
+          "maruyama-pierced-c",
+          "maruyama-pierced-d",
+          "hamamatsuya-clip",
+          "cocoon-ori-nonhole-earrings",
+          "cocoon-frame-pierced-earrings"
+        ],
+        "unknownLast": [
+          "cocoon-ori-nonhole-earrings",
+          "cocoon-frame-pierced-earrings"
+        ],
+        "equalPriceGroups": 4
+      }
+    },
+    {
+      "name": "mobile ja order editorial",
+      "status": "passed",
+      "detail": {
+        "sort": "",
+        "ids": [
+          "morphosphere-ultramarine-pansy-pierced-earrings",
+          "hamamatsuya-catch-pierced",
+          "rinzen-seika-amber-pierced-earrings",
+          "checos-japanese-apricot-pierced-earrings",
+          "hamamatsuya-clip",
+          "six-kiln-half-moon-earrings",
+          "kato-suke-drop-pierced-earrings",
+          "hamamatsuya-pendant",
+          "rinzen-leaf-glass-pendant",
+          "maruyama-clip-c",
+          "six-kiln-blue-bouquet-pierced-earrings",
+          "maruyama-clip-d",
+          "saskia-diez-drake-porcelain-cuff",
+          "maruyama-pierced-c",
+          "maruyama-pierced-d",
+          "arcos-cosmic-spiral-pendant",
+          "arcos-cosmic-glass-bracelet",
+          "senshu-pearl-stud-earrings",
+          "senshu-pearl-swing-earrings",
+          "sugimura-hosoge-raden-pendant",
+          "sugimura-lotus-makie-ring",
+          "cocoon-ori-nonhole-earrings",
+          "cocoon-frame-pierced-earrings",
+          "simprich-crystal-bubble-pierced-earrings",
+          "simprich-rose-quartz-necklace",
+          "yukieglass-mint-veil-earrings",
+          "yukieglass-rouge-veil-earrings",
+          "nakajima-pear-sakura-pendant",
+          "kato-suke-round-ring",
+          "hamamatsuya-18k-pierced"
+        ],
+        "unknownLast": [],
+        "equalPriceGroups": 4
+      }
+    },
+    {
+      "name": "mobile ja combined filters, no-match and clear restore editorial selection",
+      "status": "passed",
+      "detail": {
+        "combined": [
+          "hamamatsuya-18k-pierced",
+          "hamamatsuya-catch-pierced"
+        ],
+        "empty": {
+          "type": "pierced-earrings",
+          "prefecture": "kanagawa",
+          "budget": "5000-10000"
+        },
+        "clearRestores": 30
+      }
+    },
+    {
+      "name": "mobile ja filtered detail back and same-query language roundtrip",
+      "status": "passed",
+      "detail": {
+        "budget": "up-to-5000",
+        "ids": [
+          "hamamatsuya-clip",
+          "maruyama-clip-c",
+          "maruyama-clip-d",
+          "maruyama-pierced-c",
+          "maruyama-pierced-d",
+          "hamamatsuya-catch-pierced",
+          "hamamatsuya-pendant",
+          "hamamatsuya-18k-pierced",
+          "morphosphere-ultramarine-pansy-pierced-earrings"
+        ],
+        "backRestores": true,
+        "bothLanguageRoundtrip": true
+      }
+    },
+    {
+      "name": "mobile ja invalid query values do not create hidden, external or invented states",
+      "status": "passed",
+      "detail": {
+        "ignored": true,
+        "allProductsShown": 30
+      }
+    },
+    {
+      "name": "mobile ja product choice hamamatsuya-18k-pierced",
+      "status": "passed",
+      "detail": {
+        "productId": "hamamatsuya-18k-pierced",
+        "comparisonIds": [
+          "hamamatsuya-18k-pierced",
+          "hamamatsuya-catch-pierced",
+          "simprich-crystal-bubble-pierced-earrings"
+        ],
+        "visual": "registered-ai"
+      }
+    },
+    {
+      "name": "mobile ja product choice rinzen-seika-amber-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "rinzen-seika-amber-pierced-earrings",
+        "comparisonIds": [
+          "rinzen-seika-amber-pierced-earrings",
+          "yukieglass-mint-veil-earrings",
+          "six-kiln-blue-bouquet-pierced-earrings"
+        ],
+        "visual": "registered-ai"
+      }
+    },
+    {
+      "name": "mobile ja product choice cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "cocoon-ori-nonhole-earrings",
+        "comparisonIds": [
+          "cocoon-ori-nonhole-earrings",
+          "cocoon-frame-pierced-earrings",
+          "six-kiln-half-moon-earrings"
+        ],
+        "visual": "registered-ai"
+      }
+    },
+    {
+      "name": "mobile ja regional type choices tokyo",
+      "status": "passed",
+      "detail": {
+        "region": "tokyo",
+        "localProducts": 2,
+        "typeChoices": [
+          {
+            "type": "pierced-earrings",
+            "ids": [
+              "rinzen-seika-amber-pierced-earrings"
+            ],
+            "knownPriceRange": [
+              26400,
+              26400
+            ],
+            "unknownPrices": 0
+          },
+          {
+            "type": "necklace",
+            "ids": [
+              "rinzen-leaf-glass-pendant"
+            ],
+            "knownPriceRange": [
+              27500,
+              27500
+            ],
+            "unknownPrices": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile ja regional type choices chiba",
+      "status": "passed",
+      "detail": {
+        "region": "chiba",
+        "localProducts": 2,
+        "typeChoices": [
+          {
+            "type": "necklace",
+            "ids": [
+              "arcos-cosmic-spiral-pendant"
+            ],
+            "knownPriceRange": [
+              12800,
+              12800
+            ],
+            "unknownPrices": 0
+          },
+          {
+            "type": "bracelet",
+            "ids": [
+              "arcos-cosmic-glass-bracelet"
+            ],
+            "knownPriceRange": [
+              8900,
+              8900
+            ],
+            "unknownPrices": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile ja current policy editorial-policy/",
+      "status": "passed",
+      "detail": {
+        "policy": "editorial-policy/"
+      }
+    },
+    {
+      "name": "mobile ja current policy privacy/",
+      "status": "passed",
+      "detail": {
+        "policy": "privacy/"
+      }
+    },
+    {
+      "name": "mobile ja current policy about/",
+      "status": "passed",
+      "detail": {
+        "policy": "about/"
+      }
+    },
+    {
+      "name": "mobile ja current policy affiliate-disclosure/",
+      "status": "passed",
+      "detail": {
+        "policy": "affiliate-disclosure/"
+      }
+    },
+    {
+      "name": "en without JavaScript still exposes the entire edit and explains filter limits",
+      "status": "passed",
+      "detail": {
+        "allProducts": 30
+      }
+    },
+    {
+      "name": "ja without JavaScript still exposes the entire edit and explains filter limits",
+      "status": "passed",
+      "detail": {
+        "allProducts": 30
+      }
+    },
+    {
+      "name": "No client errors, unexpected third-party requests or current ad tags",
+      "status": "passed"
+    }
+  ],
+  "failures": [],
+  "axePages": [
+    {
+      "name": "mobile en list controls",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/en/objects/#all-jewelry",
+      "violations": []
+    },
+    {
+      "name": "mobile en sourced choice details",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/en/objects/rinzen-seika-amber-pierced-earrings/",
+      "violations": []
+    },
+    {
+      "name": "mobile en regional choices",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/en/places/tokyo/",
+      "violations": []
+    },
+    {
+      "name": "mobile en selection policy",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/en/editorial-policy/",
+      "violations": []
+    },
+    {
+      "name": "mobile en privacy",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/en/privacy/",
+      "violations": []
+    },
+    {
+      "name": "mobile ja list controls",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/ja/objects/#all-jewelry",
+      "violations": []
+    },
+    {
+      "name": "mobile ja sourced choice details",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/ja/objects/rinzen-seika-amber-pierced-earrings/",
+      "violations": []
+    },
+    {
+      "name": "mobile ja regional choices",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/ja/places/tokyo/",
+      "violations": []
+    },
+    {
+      "name": "mobile ja selection policy",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/ja/editorial-policy/",
+      "violations": []
+    },
+    {
+      "name": "mobile ja privacy",
+      "url": "http://127.0.0.1:4321/japanese-craft-jewelry/ja/privacy/",
+      "violations": []
+    }
+  ],
+  "screenshots": [
+    "artifacts/quality-stage-ui-initial-en-mobile-choice-details.png",
+    "artifacts/quality-stage-ui-initial-en-mobile-tokyo-choices.png",
+    "artifacts/quality-stage-ui-initial-ja-mobile-choice-details.png",
+    "artifacts/quality-stage-ui-initial-ja-mobile-tokyo-choices.png"
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "externalRequests": [],
+  "detailChecks": 6,
+  "completedAt": "2026-11-16T13:58:49.639Z",
+  "finalizedAt": "2026-11-16T13:58:49.639Z",
+  "summary": {
+    "checks": 47,
+    "passed": 47,
+    "failed": 0,
+    "publishedProducts": 30,
+    "productDetailChecks": 6,
+    "axeScreens": 10,
+    "axeViolations": 0,
+    "screenshots": 4,
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "externalRequests": 0
+  }
+}

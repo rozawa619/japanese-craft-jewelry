@@ -1,6 +1,6 @@
 {
   "name": "japanese-craft-jewelry",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@11.25.0",
@@ -9,9 +9,9 @@
   },
   "scripts": {
     "dev": "node scripts/astro.mjs dev --host 127.0.0.1",
-    "check": "node scripts/astro.mjs check && node --experimental-strip-types scripts/validate.ts && node --experimental-strip-types scripts/validate-visits.ts",
+    "check": "node scripts/astro.mjs check && node --experimental-strip-types scripts/validate.ts && node --experimental-strip-types scripts/validate-visits.ts && node --experimental-strip-types scripts/validate-selection.ts",
     "test": "node --experimental-strip-types --test tests/*.test.ts",
-    "build": "node --experimental-strip-types scripts/validate.ts && node --experimental-strip-types scripts/validate-visits.ts && node scripts/astro.mjs build && node scripts/prune-retired-images.mjs",
+    "build": "node --experimental-strip-types scripts/validate.ts && node --experimental-strip-types scripts/validate-visits.ts && node --experimental-strip-types scripts/validate-selection.ts && node scripts/astro.mjs build && node scripts/prune-retired-images.mjs",
     "preview": "node scripts/astro.mjs preview --host 127.0.0.1",
     "verify": "pnpm check && pnpm test && pnpm build && node scripts/check-built.mjs",
     "readiness": "node --experimental-strip-types scripts/readiness.ts",
@@ -19,7 +19,8 @@
     "check:browser": "node scripts/check-bilingual.mjs",
     "check:ads": "node scripts/check-ad-build.mjs",
     "package": "node scripts/package-source.mjs",
-    "check:prices": "node scripts/check-market-prices.mjs"
+    "check:prices": "node scripts/check-market-prices.mjs",
+    "check:quality": "node scripts/check-quality-expansion.mjs"
   },
   "dependencies": {
     "astro": "7.4.12",

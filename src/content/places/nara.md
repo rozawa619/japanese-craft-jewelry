@@ -1,14 +1,14 @@
 ---
 title: "Craft jewelry from Nara"
-description: "A raden pendant and a Lotus makie ring from a maker working in Nishinokyo, Nara."
+description: "Sugimura raden and makie alongside Nanao & Shuka’s contemporary glass earrings from Nara."
 locale: en
 publishStatus: published
 updatedAt: "2026-11-16"
-sourceIds: ["sugimura-official-v9","sugimura-hosoge-v9","sugimura-lotus-v9"]
+sourceIds: ["sugimura-official-v9","sugimura-hosoge-v9","sugimura-lotus-v9","nanao-shuka-nebula-v11","nanao-shuka-official-v11","nanao-shuka-profile-v11"]
 prefectureId: nara
 relatedMerchantIds: []
 ---
 
-Discover ornament at two different points in an outfit: a Hosoge pendant at the neckline and a Lotus ring on the hand. Both are listed by Yamato Urushi Kougei Sugimura.
+Yamato Urushi Kougei Sugimura’s raden pendant and wooden makie ring are joined by contemporary burner-worked glass from Nanao & Shuka. The makers’ official profiles establish the Nara connection. A nationally designated craft status is not claimed for the glass piece.
 
-The maker states that it produces and exhibits work at Ganko Ittetsu Nagaya in Nishinokyo, Nara. Check the individual product page and discuss size, current stock and visiting arrangements directly with the maker.
+The Nebula listing is a pair with a glass shaft, including a specific gauge and dimensional variation. Its packaging description is inconsistent, so a gift box is not promised. A current walk-in shop was not established for this maker; the official online listing is the practical route.

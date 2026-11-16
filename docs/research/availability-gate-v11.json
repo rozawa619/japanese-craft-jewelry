@@ -1,0 +1,965 @@
+{
+  "checkedAt": "2026-11-16",
+  "scope": "The initial16new products plus1verified HARIO replacement; existing30products are checked separately by root.",
+  "status": "complete_read_only_evidence_ready_for_root",
+  "policy": {
+    "admit": "A current official online SKU with price and an enabled applicable purchase UI, OR a current operating public retail shop explicitly carrying the named maker’s jewelry range.",
+    "defer": "Current buyability and current jewelry retail handling both remain unverified. Access failures are not treated as proof of closure or sold-out status.",
+    "noActions": [
+      "No cart added",
+      "No order submitted",
+      "No payment attempted",
+      "No account opened",
+      "No product photo downloaded or republished",
+      "No canonical catalog, visits or source-ledger edits performed during this follow-up"
+    ],
+    "publicClaimLimit": "Keep listed/availability wording restrained. Admission is evidence of a current purchase route, not a promise that every option or physical shelf has inventory."
+  },
+  "summary": {
+    "checked": 17,
+    "admit": 15,
+    "defer": 2,
+    "admittedByOnline": 13,
+    "admittedByPhysical": 2,
+    "deferProductIds": [
+      "hatakeyama-parfait-chocolate-orange-earrings",
+      "hatakeyama-bijou-purple-necklace"
+    ]
+  },
+  "proposedSources": [
+    {
+      "id": "beams-kyoto-current-store-v11",
+      "url": "https://www.beams.co.jp/shop/jk/",
+      "title": "BEAMS JAPAN Kyoto — current operator shop information",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "method": "Official web-reader full body read; fresh Chrome navigation also attempted and returned ERR_HTTP2_PROTOCOL_ERROR, so the Chrome failure is not interpreted as closure.",
+      "supports": [
+        "Current official shop listing for ShinPuhKan1F Kyoto address;11:00–20:00; irregular holidays. Does not establish KAZARINO SKU inventory."
+      ]
+    },
+    {
+      "id": "shinpuhkan-beams-current-v11",
+      "url": "https://shinpuhkan.jp/shops_restaurants/beams-japan/",
+      "title": "ShinPuhKan — BEAMS JAPAN current tenant listing",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "method": "Official facility web-reader body read.",
+      "supports": [
+        "Current facility tenant listing for BEAMS JAPAN at the same Kyoto address, shop hours11:00–20:00. Exact jewelry stock is not stated."
+      ]
+    }
+  ],
+  "products": [
+    {
+      "productId": "hatakeyama-parfait-chocolate-orange-earrings",
+      "checkedAt": "2026-11-16",
+      "officialProductUrl": "https://tokyo-shippou.com/products/detail/432",
+      "sourceIds": [
+        "hatakeyama-parfait-winter-v11"
+      ],
+      "routes": [],
+      "retailSkuStock": "unknown",
+      "physicalShelfPrice": "unknown",
+      "decision": "defer",
+      "reasonJa": "現行の有効な購入UIと、当該ブランドのジュエリーを扱う現行の小売先を確認できないため。403を売り切れや廃業と断定していません。",
+      "onlineObservation": {
+        "status": "unverified_access_denied",
+        "httpStatus": 403,
+        "methods": [
+          "fresh Chrome: official non-www SKU URL",
+          "fresh Chrome: official www SKU URL",
+          "official web-reader body re-read"
+        ],
+        "cachedBodyShowsProductAndCart": true,
+        "whyCachedBodyIsInsufficient": "Web-readerの本文は取得できるが、取得元のクロールが1〜2か月前であり、現在の購入ボタンの有効状態は確認できない。"
+      },
+      "physicalObservation": {
+        "status": "unverified_current_retail",
+        "rejectedAsCurrentEvidence": [
+          {
+            "url": "https://blog.tokyo-shippou.com/blog/post/",
+            "published": "2014-10-17",
+            "reason": "12年前の取扱店紹介を現行の小売根拠へ流用しない。"
+          },
+          {
+            "url": "https://blog.tokyo-shippou.com/blog/post_94/",
+            "published": "2017-02-19",
+            "reason": "2017年の別デザイン取扱案内であり今回SKUの現行販売根拠ではない。"
+          }
+        ]
+      },
+      "limitations": [
+        "企業住所を自由に来店できる小売店に置き換えない。",
+        "現在購入できないと断定する保留ではなく、現在購入できる証拠が不足したための掲載保留。"
+      ]
+    },
+    {
+      "productId": "hatakeyama-bijou-purple-necklace",
+      "checkedAt": "2026-11-16",
+      "officialProductUrl": "https://tokyo-shippou.com/products/detail/454",
+      "sourceIds": [
+        "hatakeyama-bijou-purple-v11"
+      ],
+      "routes": [],
+      "retailSkuStock": "unknown",
+      "physicalShelfPrice": "unknown",
+      "decision": "defer",
+      "reasonJa": "現行の有効な購入UIと、当該ブランドのジュエリーを扱う現行の小売先を確認できないため。403を売り切れや廃業と断定していません。",
+      "onlineObservation": {
+        "status": "unverified_access_denied",
+        "httpStatus": 403,
+        "methods": [
+          "fresh Chrome: official non-www SKU URL",
+          "fresh Chrome: official www SKU URL",
+          "official web-reader body re-read"
+        ],
+        "cachedBodyShowsProductAndCart": true,
+        "whyCachedBodyIsInsufficient": "Web-readerの本文は取得できるが、取得元のクロールが1〜2か月前であり、現在の購入ボタンの有効状態は確認できない。"
+      },
+      "physicalObservation": {
+        "status": "unverified_current_retail",
+        "rejectedAsCurrentEvidence": [
+          {
+            "url": "https://blog.tokyo-shippou.com/blog/post/",
+            "published": "2014-10-17",
+            "reason": "12年前の取扱店紹介を現行の小売根拠へ流用しない。"
+          },
+          {
+            "url": "https://blog.tokyo-shippou.com/blog/post_94/",
+            "published": "2017-02-19",
+            "reason": "2017年の別デザイン取扱案内であり今回SKUの現行販売根拠ではない。"
+          }
+        ]
+      },
+      "limitations": [
+        "企業住所を自由に来店できる小売店に置き換えない。",
+        "現在購入できないと断定する保留ではなく、現在購入できる証拠が不足したための掲載保留。"
+      ]
+    },
+    {
+      "productId": "sangetsu-irodori-tombodama-earrings",
+      "checkedAt": "2026-11-16",
+      "officialProductUrl": "https://sangetsu.myshopify.com/products/piasu-kinaka",
+      "sourceIds": [
+        "sangetsu-irodori-pierced-v11"
+      ],
+      "routes": [
+        {
+          "type": "online",
+          "linkId": "sangetsu-irodori-tombodama-earrings-official",
+          "merchantId": "sangetsu-official",
+          "officialProductUrl": "https://sangetsu.myshopify.com/products/piasu-kinaka",
+          "sourceIds": [
+            "sangetsu-irodori-pierced-v11"
+          ],
+          "checkedAt": "2026-11-16",
+          "httpStatus": 200,
+          "observedPrice": {
+            "amount": 3300,
+            "currency": "JPY",
+            "includesTax": true
+          },
+          "productIdentityAndPriceRead": true,
+          "purchaseControlVisible": true,
+          "purchaseControlEnabled": true,
+          "selectedOptions": [
+            "金赤（読み込み時に選択済み）"
+          ],
+          "purchaseControlEvidenceJa": "表示中の「カートに追加する」と「今すぐ購入」が有効。",
+          "methods": [
+            "fresh Chrome official public product body read",
+            "visible purchase control DOM state read",
+            "product option selection only when needed; no purchase/cart submit"
+          ],
+          "observationScope": "the_observed_current_selection_only",
+          "artifactObservation": "artifacts/availability-v11/sangetsu-irodori-tombodama-earrings.json"
+        }
+      ],
+      "retailSkuStock": "unknown",
+      "physicalShelfPrice": "unknown",
+      "decision": "admit",
+      "reasonJa": "対象商品の現行価格と、選択された仕様に対する有効な購入UIを公式ストアで確認。",
+      "onlineObservation": {
+        "status": "observed_orderable_ui",
+        "checkedAt": "2026-11-16"
+      },
+      "limitations": [
+        "他の全色について一括で購入可能とは主張しない。",
+        "カート追加・注文・決済は実行していない。観測時点の注文導線であり、将来の在庫・最終注文受付・発送先対応を保証しない。",
+        "常設店の案内が別にあっても、この観測から個別SKUの店頭在庫を推定しない。"
+      ]
+    },
+    {
+      "productId": "sangetsu-irodori-tombodama-necklace",
+      "checkedAt": "2026-11-16",
+      "officialProductUrl": "https://sangetsu.myshopify.com/products/puti-kinaka",
+      "sourceIds": [
+        "sangetsu-irodori-necklace-v11"
+      ],
+      "routes": [
+        {
+          "type": "online",
+          "linkId": "sangetsu-irodori-tombodama-necklace-official",
+          "merchantId": "sangetsu-official",
+          "officialProductUrl": "https://sangetsu.myshopify.com/products/puti-kinaka",
+          "sourceIds": [
+            "sangetsu-irodori-necklace-v11"
+          ],
+          "checkedAt": "2026-11-16",
+          "httpStatus": 200,
+          "observedPrice": {
+            "amount": 4950,
+            "currency": "JPY",
+            "includesTax": true
+          },
+          "productIdentityAndPriceRead": true,
+          "purchaseControlVisible": true,
+          "purchaseControlEnabled": true,
+          "selectedOptions": [
+            "ぴんくむし（ぴんく不透明、読み込み時に選択済み）"
+          ],
+          "purchaseControlEvidenceJa": "表示中の「カートに追加する」と「今すぐ購入」が有効。",
+          "methods": [
+            "fresh Chrome official public product body read",
+            "visible purchase control DOM state read",
+            "product option selection only when needed; no purchase/cart submit"
+          ],
+          "observationScope": "the_observed_current_selection_only",
+          "artifactObservation": "artifacts/availability-v11/sangetsu-irodori-tombodama-necklace.json"
+        }
+      ],
+      "retailSkuStock": "unknown",
+      "physicalShelfPrice": "unknown",
+      "decision": "admit",
+      "reasonJa": "対象商品の現行価格と、選択された仕様に対する有効な購入UIを公式ストアで確認。",
+      "onlineObservation": {
+        "status": "observed_orderable_ui",
+        "checkedAt": "2026-11-16"
+      },
+      "limitations": [
+        "色・柄ごとの売り違いと店頭在庫は保証しない。",
+        "カート追加・注文・決済は実行していない。観測時点の注文導線であり、将来の在庫・最終注文受付・発送先対応を保証しない。",
+        "常設店の案内が別にあっても、この観測から個別SKUの店頭在庫を推定しない。"
+      ]
+    },
+    {
+      "productId": "sghr-tie-tie-glass-earrings",
+      "checkedAt": "2026-11-16",
+      "officialProductUrl": "https://shop.sugahara.com/view/item/000000005160",
+      "sourceIds": [
+        "sghr-tietie-pierced-v11"
+      ],
+      "routes": [
+        {
+          "type": "online",
+          "linkId": "sghr-tie-tie-glass-earrings-official",
+          "merchantId": "sghr-official",
+          "officialProductUrl": "https://shop.sugahara.com/view/item/000000005160",
+          "sourceIds": [
+            "sghr-tietie-pierced-v11"
+          ],
+          "checkedAt": "2026-11-16",
+          "httpStatus": 200,
+          "observedPrice": {
+            "amount": 8800,
+            "currency": "JPY",
+            "includesTax": true
+          },
+          "productIdentityAndPriceRead": true,
+          "purchaseControlVisible": true,
+          "purchaseControlEnabled": true,
+          "selectedOptions": [
+            "クリアー / SJEAR-14W",
+            "ギフトラッピングなし（自宅用）を実際に選択"
+          ],
+          "purchaseControlEvidenceJa": "対象SKUの表示中「カートに入れる」リンクが instock/on 状態で有効。",
+          "methods": [
+            "fresh Chrome official public product body read",
+            "visible purchase control DOM state read",
+            "product option selection only when needed; no purchase/cart submit"
+          ],
+          "observationScope": "the_observed_current_selection_only",
+          "artifactObservation": "artifacts/availability-v11/sghr-tie-tie-glass-earrings.json",
+          "artifactFollowup": "artifacts/availability-v11/sghr-tie-tie-selected.json"
+        }
+      ],
+      "retailSkuStock": "unknown",
+      "physicalShelfPrice": "unknown",
+      "decision": "admit",
+      "reasonJa": "対象商品の現行価格と、選択された仕様に対する有効な購入UIを公式ストアで確認。",
+      "onlineObservation": {
+        "status": "observed_orderable_ui",
+        "checkedAt": "2026-11-16"
+      },
+      "limitations": [
+        "数量限定の記載あり。関連商品のSOLD OUT表示を対象商品の売り切れと混同しない。",
+        "カート追加・注文・決済は実行していない。観測時点の注文導線であり、将来の在庫・最終注文受付・発送先対応を保証しない。",
+        "常設店の案内が別にあっても、この観測から個別SKUの店頭在庫を推定しない。"
+      ]
+    },
+    {
+      "productId": "sghr-kolmio-glass-ear-cuff",
+      "checkedAt": "2026-11-16",
+      "officialProductUrl": "https://shop.sugahara.com/view/item/000000005159",
+      "sourceIds": [
+        "sghr-kolmio-earcuff-v11"
+      ],
+      "routes": [
+        {
+          "type": "online",
+          "linkId": "sghr-kolmio-glass-ear-cuff-official",
+          "merchantId": "sghr-official",
+          "officialProductUrl": "https://shop.sugahara.com/view/item/000000005159",
+          "sourceIds": [
+            "sghr-kolmio-earcuff-v11"
+          ],
+          "checkedAt": "2026-11-16",
+          "httpStatus": 200,
+          "observedPrice": {
+            "amount": 6600,
+            "currency": "JPY",
+            "includesTax": true
+          },
+          "productIdentityAndPriceRead": true,
+          "purchaseControlVisible": true,
+          "purchaseControlEnabled": true,
+          "selectedOptions": [
+            "インディゴブルー / SJEAR-13ig",
+            "ギフトラッピングなし（自宅用）を実際に選択"
+          ],
+          "purchaseControlEvidenceJa": "対象SKUの表示中「カートに入れる」リンクが instock/on 状態で有効。",
+          "methods": [
+            "fresh Chrome official public product body read",
+            "visible purchase control DOM state read",
+            "product option selection only when needed; no purchase/cart submit"
+          ],
+          "observationScope": "the_observed_current_selection_only",
+          "artifactObservation": "artifacts/availability-v11/sghr-kolmio-glass-ear-cuff.json",
+          "artifactFollowup": "artifacts/availability-v11/sghr-kolmio-selected.json"
+        }
+      ],
+      "retailSkuStock": "unknown",
+      "physicalShelfPrice": "unknown",
+      "decision": "admit",
+      "reasonJa": "対象商品の現行価格と、選択された仕様に対する有効な購入UIを公式ストアで確認。",
+      "onlineObservation": {
+        "status": "observed_orderable_ui",
+        "checkedAt": "2026-11-16"
+      },
+      "limitations": [
+        "別色への購入可能性はこの観測から推定しない。数量限定の記載あり。",
+        "カート追加・注文・決済は実行していない。観測時点の注文導線であり、将来の在庫・最終注文受付・発送先対応を保証しない。",
+        "常設店の案内が別にあっても、この観測から個別SKUの店頭在庫を推定しない。"
+      ]
+    },
+    {
+      "productId": "kazarino-hanabishi-copper-earrings",
+      "checkedAt": "2026-11-16",
+      "officialProductUrl": "https://www.kazarino.com/product-page/pierce",
+      "sourceIds": [
+        "kazarino-pierce-v11",
+        "kazarino-stockists-v11",
+        "beams-kyoto-current-store-v11",
+        "shinpuhkan-beams-current-v11"
+      ],
+      "routes": [
+        {
+          "type": "physical",
+          "storeId": "beams-japan-kyoto-kazarino",
+          "checkedAt": "2026-11-16",
+          "sourceIds": [
+            "kazarino-stockists-v11",
+            "beams-kyoto-current-store-v11",
+            "shinpuhkan-beams-current-v11"
+          ],
+          "storeOfficialUrl": "https://www.beams.co.jp/shop/jk/",
+          "brandRangeOfficialUrl": "https://www.kazarino.com/womens",
+          "currentStoreOperationVerified": true,
+          "brandJewelryRangeExplicitlyStocked": true,
+          "rangeObserved": "Pierceはなびし",
+          "stockScope": "named_brand_jewelry_range_not_individual_sku_inventory",
+          "individualSkuStock": "unknown",
+          "shelfPrice": "unknown",
+          "hoursObserved": "11:00–20:00、不定休。臨時変更は要確認。",
+          "methods": [
+            "maker stockist page freshly read in Chrome with2026topics and current BEAMS Kyoto entry",
+            "operator official shop full body read",
+            "facility official tenant full body read"
+          ]
+        }
+      ],
+      "retailSkuStock": "unknown",
+      "physicalShelfPrice": "unknown",
+      "decision": "admit",
+      "reasonJa": "現行の作り手公式案内がビームス ジャパン 京都に対象ジュエリーの取扱いを明記し、販売店と商業施設の現行公式ページで店舗案内を確認。",
+      "onlineObservation": {
+        "status": "partial_not_used_to_admit",
+        "httpStatus": 200,
+        "priceObserved": {
+          "amount": 7700,
+          "currency": "JPY",
+          "includesTax": true
+        },
+        "cartDisplayedAndEnabled": true,
+        "requiredVariantSelectionCompleted": false,
+        "limitation": "Wixの商品選択UIを開けず、はなびし/七宝Sの選択完了を観測していないため、未選択の有効カート表示だけをonline gateの合格根拠にはしない。"
+      },
+      "limitations": [
+        "店舗の営業と該当ジュエリー取扱いを確認した案内。希望の模様・サイズの現品、店頭価格、取り置きを保証しない。",
+        "金属アレルギー非対応の公式注意を保持する。"
+      ]
+    },
+    {
+      "productId": "kazarino-shippo-pattern-brass-bangle",
+      "checkedAt": "2026-11-16",
+      "officialProductUrl": "https://www.kazarino.com/product-page/bangle",
+      "sourceIds": [
+        "kazarino-bangle-v11",
+        "kazarino-stockists-v11",
+        "beams-kyoto-current-store-v11",
+        "shinpuhkan-beams-current-v11"
+      ],
+      "routes": [
+        {
+          "type": "physical",
+          "storeId": "beams-japan-kyoto-kazarino",
+          "checkedAt": "2026-11-16",
+          "sourceIds": [
+            "kazarino-stockists-v11",
+            "beams-kyoto-current-store-v11",
+            "shinpuhkan-beams-current-v11"
+          ],
+          "storeOfficialUrl": "https://www.beams.co.jp/shop/jk/",
+          "brandRangeOfficialUrl": "https://www.kazarino.com/womens",
+          "currentStoreOperationVerified": true,
+          "brandJewelryRangeExplicitlyStocked": true,
+          "rangeObserved": "Bangle七宝（サイズSの個別在庫は未確認）",
+          "stockScope": "named_brand_jewelry_range_not_individual_sku_inventory",
+          "individualSkuStock": "unknown",
+          "shelfPrice": "unknown",
+          "hoursObserved": "11:00–20:00、不定休。臨時変更は要確認。",
+          "methods": [
+            "maker stockist page freshly read in Chrome with2026topics and current BEAMS Kyoto entry",
+            "operator official shop full body read",
+            "facility official tenant full body read"
+          ]
+        }
+      ],
+      "retailSkuStock": "unknown",
+      "physicalShelfPrice": "unknown",
+      "decision": "admit",
+      "reasonJa": "現行の作り手公式案内がビームス ジャパン 京都に対象ジュエリーの取扱いを明記し、販売店と商業施設の現行公式ページで店舗案内を確認。",
+      "onlineObservation": {
+        "status": "partial_not_used_to_admit",
+        "httpStatus": 200,
+        "priceObserved": {
+          "amount": 9900,
+          "currency": "JPY",
+          "includesTax": true
+        },
+        "cartDisplayedAndEnabled": true,
+        "requiredVariantSelectionCompleted": false,
+        "limitation": "Wixの商品選択UIを開けず、はなびし/七宝Sの選択完了を観測していないため、未選択の有効カート表示だけをonline gateの合格根拠にはしない。"
+      },
+      "limitations": [
+        "店舗の営業と該当ジュエリー取扱いを確認した案内。希望の模様・サイズの現品、店頭価格、取り置きを保証しない。",
+        "金属アレルギー非対応の公式注意を保持する。"
+      ]
+    },
+    {
+      "productId": "showen-edo-uchi-silk-bracelet",
+      "checkedAt": "2026-11-16",
+      "officialProductUrl": "https://shop.showen.co.jp/product/%E6%AD%A3%E7%B5%B9%E3%80%80%E4%BA%8C%E9%87%8D%E5%B7%BB%E3%81%8D%E3%83%96%E3%83%AC%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88%E3%80%809%E9%9D%92/",
+      "sourceIds": [
+        "showen-edo-uchi-blue-bracelet-v11"
+      ],
+      "routes": [
+        {
+          "type": "online",
+          "linkId": "showen-edo-uchi-silk-bracelet-official",
+          "merchantId": "showen-official",
+          "officialProductUrl": "https://shop.showen.co.jp/product/%E6%AD%A3%E7%B5%B9%E3%80%80%E4%BA%8C%E9%87%8D%E5%B7%BB%E3%81%8D%E3%83%96%E3%83%AC%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88%E3%80%809%E9%9D%92/",
+          "sourceIds": [
+            "showen-edo-uchi-blue-bracelet-v11"
+          ],
+          "checkedAt": "2026-11-16",
+          "httpStatus": 200,
+          "observedPrice": {
+            "amount": 2200,
+            "currency": "JPY",
+            "includesTax": true
+          },
+          "productIdentityAndPriceRead": true,
+          "purchaseControlVisible": true,
+          "purchaseControlEnabled": true,
+          "selectedOptions": [
+            "#9 青（固定商品）"
+          ],
+          "purchaseControlEvidenceJa": "対象商品フォームの submit ボタン「お買い物カゴに追加」が表示され有効。",
+          "methods": [
+            "fresh Chrome official public product body read",
+            "visible purchase control DOM state read",
+            "product option selection only when needed; no purchase/cart submit"
+          ],
+          "observationScope": "the_observed_current_selection_only",
+          "artifactObservation": "artifacts/availability-v11/showen-edo-uchi-silk-bracelet.json"
+        }
+      ],
+      "retailSkuStock": "unknown",
+      "physicalShelfPrice": "unknown",
+      "decision": "admit",
+      "reasonJa": "対象商品の現行価格と、選択された仕様に対する有効な購入UIを公式ストアで確認。",
+      "onlineObservation": {
+        "status": "observed_orderable_ui",
+        "checkedAt": "2026-11-16"
+      },
+      "limitations": [
+        "関連商品のカートリンクを根拠にせず、対象商品の単品購入ボタンで確認。",
+        "カート追加・注文・決済は実行していない。観測時点の注文導線であり、将来の在庫・最終注文受付・発送先対応を保証しない。",
+        "常設店の案内が別にあっても、この観測から個別SKUの店頭在庫を推定しない。"
+      ]
+    },
+    {
+      "productId": "iwaya-urushi-9mm-hook-earrings",
+      "checkedAt": "2026-11-16",
+      "officialProductUrl": "https://www.urushikoubou-iwaya.jp/item/e013/",
+      "sourceIds": [
+        "iwaya-urushi-9mm-hook-v11"
+      ],
+      "routes": [
+        {
+          "type": "online",
+          "linkId": "iwaya-urushi-9mm-hook-earrings-official",
+          "merchantId": "iwaya-official",
+          "officialProductUrl": "https://www.urushikoubou-iwaya.jp/item/e013/",
+          "sourceIds": [
+            "iwaya-urushi-9mm-hook-v11"
+          ],
+          "checkedAt": "2026-11-16",
+          "httpStatus": 200,
+          "observedPrice": {
+            "amount": 7700,
+            "currency": "JPY",
+            "includesTax": true
+          },
+          "productIdentityAndPriceRead": true,
+          "purchaseControlVisible": true,
+          "purchaseControlEnabled": true,
+          "selectedOptions": [
+            "色=レッドを実際に選択"
+          ],
+          "purchaseControlEvidenceJa": "対象商品フォームの「カートへ入れる」が表示され有効（addtocartハンドラ）。実行せず。",
+          "methods": [
+            "fresh Chrome official public product body read",
+            "visible purchase control DOM state read",
+            "product option selection only when needed; no purchase/cart submit"
+          ],
+          "observationScope": "the_observed_current_selection_only",
+          "artifactObservation": "artifacts/availability-v11/iwaya-urushi-9mm-hook-earrings.json",
+          "artifactFollowup": "artifacts/availability-v11/iwaya-detail.json"
+        }
+      ],
+      "retailSkuStock": "unknown",
+      "physicalShelfPrice": "unknown",
+      "decision": "admit",
+      "reasonJa": "対象商品の現行価格と、選択された仕様に対する有効な購入UIを公式ストアで確認。",
+      "onlineObservation": {
+        "status": "observed_orderable_ui",
+        "checkedAt": "2026-11-16"
+      },
+      "limitations": [
+        "在庫3の表示を観測したが、全色・今後の在庫や店頭在庫へ一般化しない。ページ内の非表示エラーテンプレートは実際の販売停止表示と扱わない。",
+        "カート追加・注文・決済は実行していない。観測時点の注文導線であり、将来の在庫・最終注文受付・発送先対応を保証しない。",
+        "常設店の案内が別にあっても、この観測から個別SKUの店頭在庫を推定しない。"
+      ]
+    },
+    {
+      "productId": "toytoy-ninkari-nikuri-earrings",
+      "checkedAt": "2026-11-16",
+      "officialProductUrl": "https://toytoy-ya.com/SHOP/TN00-NK001.html",
+      "sourceIds": [
+        "toytoy-ninkari-nikuri-v11"
+      ],
+      "routes": [
+        {
+          "type": "online",
+          "linkId": "toytoy-ninkari-nikuri-earrings-official",
+          "merchantId": "toytoy-official",
+          "officialProductUrl": "https://toytoy-ya.com/SHOP/TN00-NK001.html",
+          "sourceIds": [
+            "toytoy-ninkari-nikuri-v11"
+          ],
+          "checkedAt": "2026-11-16",
+          "httpStatus": 200,
+          "observedPrice": {
+            "amount": 13200,
+            "currency": "JPY",
+            "includesTax": true
+          },
+          "productIdentityAndPriceRead": true,
+          "purchaseControlVisible": true,
+          "purchaseControlEnabled": true,
+          "selectedOptions": [
+            "ラッピング=なしを実際に選択"
+          ],
+          "purchaseControlEvidenceJa": "対象商品フォームの画像入力「カートに入れる」が表示され有効（cartinハンドラ）。実行せず。",
+          "methods": [
+            "fresh Chrome official public product body read",
+            "visible purchase control DOM state read",
+            "product option selection only when needed; no purchase/cart submit"
+          ],
+          "observationScope": "the_observed_current_selection_only",
+          "artifactObservation": "artifacts/availability-v11/toytoy-ninkari-nikuri-earrings.json",
+          "artifactFollowup": "artifacts/availability-v11/toytoy-ninkari-detail.json"
+        }
+      ],
+      "retailSkuStock": "unknown",
+      "physicalShelfPrice": "unknown",
+      "decision": "admit",
+      "reasonJa": "対象商品の現行価格と、選択された仕様に対する有効な購入UIを公式ストアで確認。",
+      "onlineObservation": {
+        "status": "observed_orderable_ui",
+        "checkedAt": "2026-11-16"
+      },
+      "limitations": [
+        "追加ラッピングの価格を商品本体価格に混ぜない。公式にも他販路との売り違い注意あり。",
+        "カート追加・注文・決済は実行していない。観測時点の注文導線であり、将来の在庫・最終注文受付・発送先対応を保証しない。",
+        "常設店の案内が別にあっても、この観測から個別SKUの店頭在庫を推定しない。"
+      ]
+    },
+    {
+      "productId": "toytoy-sirokani-pe-silver-necklace",
+      "checkedAt": "2026-11-16",
+      "officialProductUrl": "https://toytoy-ya.com/SHOP/TP00-SK001-SV.html",
+      "sourceIds": [
+        "toytoy-sirokani-pe-v11"
+      ],
+      "routes": [
+        {
+          "type": "online",
+          "linkId": "toytoy-sirokani-pe-silver-necklace-official",
+          "merchantId": "toytoy-official",
+          "officialProductUrl": "https://toytoy-ya.com/SHOP/TP00-SK001-SV.html",
+          "sourceIds": [
+            "toytoy-sirokani-pe-v11"
+          ],
+          "checkedAt": "2026-11-16",
+          "httpStatus": 200,
+          "observedPrice": {
+            "amount": 68200,
+            "currency": "JPY",
+            "includesTax": true
+          },
+          "productIdentityAndPriceRead": true,
+          "purchaseControlVisible": true,
+          "purchaseControlEnabled": true,
+          "selectedOptions": [
+            "固定SKU（追加選択欄なし）"
+          ],
+          "purchaseControlEvidenceJa": "対象商品フォームに表示された画像入力btn_cartl.gifが有効でcartinハンドラを持つ。altは空。実行せず。",
+          "methods": [
+            "fresh Chrome official public product body read",
+            "visible purchase control DOM state read",
+            "product option selection only when needed; no purchase/cart submit"
+          ],
+          "observationScope": "the_observed_current_selection_only",
+          "artifactObservation": "artifacts/availability-v11/toytoy-sirokani-pe-silver-necklace.json",
+          "artifactFollowup": "artifacts/availability-v11/toytoy-sirokani-detail.json"
+        }
+      ],
+      "retailSkuStock": "unknown",
+      "physicalShelfPrice": "unknown",
+      "decision": "admit",
+      "reasonJa": "対象商品の現行価格と、選択された仕様に対する有効な購入UIを公式ストアで確認。",
+      "onlineObservation": {
+        "status": "observed_orderable_ui",
+        "checkedAt": "2026-11-16"
+      },
+      "limitations": [
+        "画像ボタンのalt未記入は販売店側のアクセシビリティ上の制約。注文成立や店頭在庫の保証ではない。",
+        "カート追加・注文・決済は実行していない。観測時点の注文導線であり、将来の在庫・最終注文受付・発送先対応を保証しない。",
+        "常設店の案内が別にあっても、この観測から個別SKUの店頭在庫を推定しない。"
+      ]
+    },
+    {
+      "productId": "tamura-kaisai-enamel-ear-jewelry",
+      "checkedAt": "2026-11-16",
+      "officialProductUrl": "https://tamura.buyshop.jp/items/139420551",
+      "sourceIds": [
+        "tamura-kaisai-ear-jewelry-v11"
+      ],
+      "routes": [
+        {
+          "type": "online",
+          "linkId": "tamura-kaisai-enamel-ear-jewelry-official",
+          "merchantId": "tamura-official",
+          "officialProductUrl": "https://tamura.buyshop.jp/items/139420551",
+          "sourceIds": [
+            "tamura-kaisai-ear-jewelry-v11"
+          ],
+          "checkedAt": "2026-11-16",
+          "httpStatus": 200,
+          "observedPrice": {
+            "amount": 43000,
+            "currency": "JPY",
+            "includesTax": true
+          },
+          "productIdentityAndPriceRead": true,
+          "purchaseControlVisible": true,
+          "purchaseControlEnabled": true,
+          "selectedOptions": [
+            "イヤリング：ロジウム・ネジ式（シルバー色、読み込み時選択）",
+            "ピアス：サージカルステンレス（シルバー色）も別途選択して同額を観測"
+          ],
+          "purchaseControlEvidenceJa": "対象商品フォームの「カートに入れる」が表示され有効。両仕様の選択肢に各data-stock=1を観測。",
+          "methods": [
+            "fresh Chrome official public product body read",
+            "visible purchase control DOM state read",
+            "product option selection only when needed; no purchase/cart submit"
+          ],
+          "observationScope": "the_observed_current_selection_only",
+          "artifactObservation": "artifacts/availability-v11/tamura-kaisai-enamel-ear-jewelry.json"
+        }
+      ],
+      "retailSkuStock": "unknown",
+      "physicalShelfPrice": "unknown",
+      "decision": "admit",
+      "reasonJa": "対象商品の現行価格と、選択された仕様に対する有効な購入UIを公式ストアで確認。",
+      "onlineObservation": {
+        "status": "observed_orderable_ui",
+        "checkedAt": "2026-11-16"
+      },
+      "limitations": [
+        "この時点の選択肢別状態。将来の在庫や発送日の保証ではない。",
+        "カート追加・注文・決済は実行していない。観測時点の注文導線であり、将来の在庫・最終注文受付・発送先対応を保証しない。",
+        "常設店の案内が別にあっても、この観測から個別SKUの店頭在庫を推定しない。"
+      ]
+    },
+    {
+      "productId": "nanao-shuka-nebula-16g-earrings",
+      "checkedAt": "2026-11-16",
+      "officialProductUrl": "https://www.creema.jp/item/17252787/detail",
+      "sourceIds": [
+        "nanao-shuka-nebula-v11"
+      ],
+      "routes": [
+        {
+          "type": "online",
+          "linkId": "nanao-shuka-nebula-16g-earrings-official",
+          "merchantId": "nanao-shuka-creema",
+          "officialProductUrl": "https://www.creema.jp/item/17252787/detail",
+          "sourceIds": [
+            "nanao-shuka-nebula-v11"
+          ],
+          "checkedAt": "2026-11-16",
+          "httpStatus": 200,
+          "observedPrice": {
+            "amount": 3850,
+            "currency": "JPY",
+            "includesTax": true
+          },
+          "productIdentityAndPriceRead": true,
+          "purchaseControlVisible": true,
+          "purchaseControlEnabled": true,
+          "selectedOptions": [
+            "星雲16G（固定商品、ペア販売）"
+          ],
+          "purchaseControlEvidenceJa": "対象商品と固定購入欄の「カートに入れる」ボタンが表示され有効。",
+          "methods": [
+            "fresh Chrome official public product body read",
+            "visible purchase control DOM state read",
+            "product option selection only when needed; no purchase/cart submit"
+          ],
+          "observationScope": "the_observed_current_selection_only",
+          "artifactObservation": "artifacts/availability-v11/nanao-shuka-nebula-16g-earrings.json"
+        }
+      ],
+      "retailSkuStock": "unknown",
+      "physicalShelfPrice": "unknown",
+      "decision": "admit",
+      "reasonJa": "対象商品の現行価格と、選択された仕様に対する有効な購入UIを公式ストアで確認。",
+      "onlineObservation": {
+        "status": "observed_orderable_ui",
+        "checkedAt": "2026-11-16"
+      },
+      "limitations": [
+        "残り2点を観測したが継続保証はしない。現行本文のトップ約4,8mmを再確認。包装の矛盾は未解決。",
+        "カート追加・注文・決済は実行していない。観測時点の注文導線であり、将来の在庫・最終注文受付・発送先対応を保証しない。",
+        "常設店の案内が別にあっても、この観測から個別SKUの店頭在庫を推定しない。"
+      ]
+    },
+    {
+      "productId": "simprich-reversible-topaz-ruby-chain-ring",
+      "checkedAt": "2026-11-16",
+      "officialProductUrl": "https://shop.simprich.jp/products/503954",
+      "sourceIds": [
+        "simprich-reversible-chain-ring-v11"
+      ],
+      "routes": [
+        {
+          "type": "online",
+          "linkId": "simprich-reversible-topaz-ruby-chain-ring-official",
+          "merchantId": "simprich-official",
+          "officialProductUrl": "https://shop.simprich.jp/products/503954",
+          "sourceIds": [
+            "simprich-reversible-chain-ring-v11"
+          ],
+          "checkedAt": "2026-11-16",
+          "httpStatus": 200,
+          "observedPrice": {
+            "amount": 36300,
+            "currency": "JPY",
+            "includesTax": true
+          },
+          "productIdentityAndPriceRead": true,
+          "purchaseControlVisible": true,
+          "purchaseControlEnabled": true,
+          "selectedOptions": [
+            "1号（読み込み時に選択済み）"
+          ],
+          "purchaseControlEvidenceJa": "対象商品の「カートに追加」submitボタンが表示され有効。",
+          "methods": [
+            "fresh Chrome official public product body read",
+            "visible purchase control DOM state read",
+            "product option selection only when needed; no purchase/cart submit"
+          ],
+          "observationScope": "the_observed_current_selection_only",
+          "artifactObservation": "artifacts/availability-v11/simprich-reversible-topaz-ruby-chain-ring.json"
+        }
+      ],
+      "retailSkuStock": "unknown",
+      "physicalShelfPrice": "unknown",
+      "decision": "admit",
+      "reasonJa": "対象商品の現行価格と、選択された仕様に対する有効な購入UIを公式ストアで確認。",
+      "onlineObservation": {
+        "status": "observed_orderable_ui",
+        "checkedAt": "2026-11-16"
+      },
+      "limitations": [
+        "受注生産1〜4週間の記載あり。即納品や店頭在庫とは扱わない。他サイズすべての最終受注可否は未確認。",
+        "カート追加・注文・決済は実行していない。観測時点の注文導線であり、将来の在庫・最終注文受付・発送先対応を保証しない。",
+        "常設店の案内が別にあっても、この観測から個別SKUの店頭在庫を推定しない。"
+      ]
+    },
+    {
+      "productId": "simprich-reversible-silver-piaring-single",
+      "checkedAt": "2026-11-16",
+      "officialProductUrl": "https://shop.simprich.jp/products/pr-e4828",
+      "sourceIds": [
+        "simprich-piaring-single-v11"
+      ],
+      "routes": [
+        {
+          "type": "online",
+          "linkId": "simprich-reversible-silver-piaring-single-official",
+          "merchantId": "simprich-official",
+          "officialProductUrl": "https://shop.simprich.jp/products/pr-e4828",
+          "sourceIds": [
+            "simprich-piaring-single-v11"
+          ],
+          "checkedAt": "2026-11-16",
+          "httpStatus": 200,
+          "observedPrice": {
+            "amount": 15500,
+            "currency": "JPY",
+            "includesTax": true
+          },
+          "productIdentityAndPriceRead": true,
+          "purchaseControlVisible": true,
+          "purchaseControlEnabled": true,
+          "selectedOptions": [
+            "イエロー＆ホワイト（読み込み時に選択済み）"
+          ],
+          "purchaseControlEvidenceJa": "対象商品の「カートに追加」submitボタンが表示され有効。",
+          "methods": [
+            "fresh Chrome official public product body read",
+            "visible purchase control DOM state read",
+            "product option selection only when needed; no purchase/cart submit"
+          ],
+          "observationScope": "the_observed_current_selection_only",
+          "artifactObservation": "artifacts/availability-v11/simprich-reversible-silver-piaring-single.json"
+        }
+      ],
+      "retailSkuStock": "unknown",
+      "physicalShelfPrice": "unknown",
+      "decision": "admit",
+      "reasonJa": "対象商品の現行価格と、選択された仕様に対する有効な購入UIを公式ストアで確認。",
+      "onlineObservation": {
+        "status": "observed_orderable_ui",
+        "checkedAt": "2026-11-16"
+      },
+      "limitations": [
+        "片耳用価格。受注生産1〜4週間の記載あり。別色や即納・店頭在庫を保証しない。",
+        "カート追加・注文・決済は実行していない。観測時点の注文導線であり、将来の在庫・最終注文受付・発送先対応を保証しない。",
+        "常設店の案内が別にあっても、この観測から個別SKUの店頭在庫を推定しない。"
+      ]
+    },
+    {
+      "productId": "hario-little-tears-clip-on-earrings",
+      "checkedAt": "2026-11-16",
+      "decision": "admit",
+      "officialProductUrl": "https://shop.hariocorp.co.jp/products/haw-lt-003e",
+      "sourceIds": [
+        "hario-netshop-product-v11",
+        "hario-lwf-product-v11",
+        "hario-lwf-about-v11",
+        "hario-kodenmacho-v11"
+      ],
+      "reasonJa": "現行のHARIO NETSHOPで品番・価格・有効な対象商品カートを確認。直営店も別途確認。",
+      "retailSkuStock": "unknown",
+      "physicalShelfPrice": "unknown",
+      "routes": [
+        {
+          "type": "online",
+          "linkId": "hario-little-tears-clip-on-earrings-official",
+          "merchantId": "hario-netshop",
+          "officialProductUrl": "https://shop.hariocorp.co.jp/products/haw-lt-003e",
+          "sourceIds": [
+            "hario-netshop-product-v11",
+            "hario-lwf-product-v11"
+          ],
+          "checkedAt": "2026-11-16",
+          "httpStatus": 200,
+          "observedPrice": {
+            "amount": 8250,
+            "currency": "JPY",
+            "includesTax": true
+          },
+          "productIdentityAndPriceRead": true,
+          "purchaseControlVisible": true,
+          "purchaseControlEnabled": true,
+          "selectedOptions": [
+            "標準仕様HAW-LT-E（有料K10変更を除く）",
+            "左右ペア"
+          ],
+          "methods": [
+            "fresh Chrome public product body read",
+            "product details tab opened",
+            "visible applicable cart DOM verified; no cart submission"
+          ],
+          "observationScope": "standard_model_current_order_ui"
+        }
+      ],
+      "supportingPhysicalStore": {
+        "storeId": "hario-kodenmacho-store",
+        "sourceIds": [
+          "hario-kodenmacho-v11"
+        ],
+        "currentShopAndJewelryRangeVerified": true,
+        "individualSkuStock": "unknown"
+      },
+      "limitations": [
+        "店頭価格・個別店頭在庫は未確認。",
+        "現在の参考価格は8,250円で、旧クロールの7,480円は採用していない。",
+        "金具変更・任意包装は別オプション。注文成立や将来の在庫は保証しない。"
+      ]
+    }
+  ],
+  "rootIntegrationNotes": [
+    "Append proposedSources only after root merges this evidence; sourceIds on physical routes reference the two proposed new official-store records.",
+    "Do not expose the two Hatakeyama products in navigation, comparison, sitemap or craft lists until their purchase route is reverified. Their Tokyo-shippo craft becomes empty if they are both deferred.",
+    "Retain historical facts and sources in a nonpublic draft record; no replacement product is inferred from a shop name alone.",
+    "The public promise should remain that buying options were checked on the date, not that checkout success or future stock is guaranteed."
+  ]
+}

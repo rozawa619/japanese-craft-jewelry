@@ -1,6 +1,6 @@
 ---
 productId: hamamatsuya-18k-pierced
-publishStatus: published
+publishStatus: draft
 ---
 
 We selected this listing for anyone who wants to explore both yosegi pattern and the maker's named jewelry materials. The wood remains the visual idea, while the 18K wording provides another option to discuss with Hamamatsuya.

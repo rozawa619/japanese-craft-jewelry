@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-11-16T13:59:53.026Z",
+  "method": "pnpm audit --json against the current installed dependency graph; no changes to packages or lockfile",
+  "status": "passed",
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0
+    },
+    "dependencies": 184,
+    "devDependencies": 79,
+    "optionalDependencies": 85,
+    "totalDependencies": 348
+  },
+  "limitations": [
+    "Known advisory database snapshot; not a penetration test or guarantee of legal compliance.",
+    "No Google ad, analytics or consent platform was enabled."
+  ]
+}

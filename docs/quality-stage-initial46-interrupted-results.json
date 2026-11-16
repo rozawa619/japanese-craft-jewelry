@@ -1,0 +1,38 @@
+{
+  "recordedAt": "2026-11-16T14:16:32.987Z",
+  "status": "interrupted_superseded",
+  "reason": "User changed product eligibility to active official ordering or confirmed physical retail.46-product work cannot establish final acceptance after product removal/research.",
+  "baselinePublishedProducts": 46,
+  "termination": "Both owned unified-exec sessions returned exit1 immediately after Ctrl-C; no other process was targeted.",
+  "logs": [
+    {
+      "file": "artifacts/quality-stage-initial46-focused-interrupted.log",
+      "passedChecks": 301,
+      "failedChecks": 16,
+      "failures": [
+        "FAIL mobile en complete catalog and source-based Japan budget metadata: AssertionError [ERR_ASSERTION]: {\"width\":390,\"document\":473,\"body\":473}",
+        "FAIL mobile en invalid query values do not create hidden, external or invented states: AssertionError [ERR_ASSERTION]: {\"width\":390,\"document\":473,\"body\":473}",
+        "FAIL mobile en regional type choices tokyo: AssertionError [ERR_ASSERTION]: {\"width\":390,\"document\":473,\"body\":473}",
+        "FAIL mobile en regional type choices kyoto: AssertionError [ERR_ASSERTION]: {\"width\":390,\"document\":473,\"body\":473}",
+        "FAIL mobile en regional type choices chiba: AssertionError [ERR_ASSERTION]: {\"width\":390,\"document\":473,\"body\":473}",
+        "FAIL mobile en regional type choices osaka: AssertionError [ERR_ASSERTION]: {\"width\":390,\"document\":473,\"body\":473}",
+        "FAIL mobile en regional type choices yamanashi: AssertionError [ERR_ASSERTION]: {\"width\":390,\"document\":473,\"body\":473}",
+        "FAIL mobile en regional type choices hokkaido: AssertionError [ERR_ASSERTION]: {\"width\":390,\"document\":473,\"body\":473}",
+        "FAIL mobile ja complete catalog and source-based Japan budget metadata: AssertionError [ERR_ASSERTION]: {\"width\":390,\"document\":473,\"body\":473}",
+        "FAIL mobile ja invalid query values do not create hidden, external or invented states: AssertionError [ERR_ASSERTION]: {\"width\":390,\"document\":473,\"body\":473}",
+        "FAIL mobile ja regional type choices tokyo: AssertionError [ERR_ASSERTION]: {\"width\":390,\"document\":473,\"body\":473}",
+        "FAIL mobile ja regional type choices kyoto: AssertionError [ERR_ASSERTION]: {\"width\":390,\"document\":473,\"body\":473}",
+        "FAIL mobile ja regional type choices chiba: AssertionError [ERR_ASSERTION]: {\"width\":390,\"document\":473,\"body\":473}",
+        "FAIL mobile ja regional type choices osaka: AssertionError [ERR_ASSERTION]: {\"width\":390,\"document\":473,\"body\":473}",
+        "FAIL mobile ja regional type choices yamanashi: AssertionError [ERR_ASSERTION]: {\"width\":390,\"document\":473,\"body\":473}",
+        "FAIL mobile ja regional type choices hokkaido: AssertionError [ERR_ASSERTION]: {\"width\":390,\"document\":473,\"body\":473}"
+      ]
+    },
+    {
+      "file": "artifacts/quality-stage-initial46-full-interrupted.log",
+      "passedChecks": 86,
+      "failedChecks": 0,
+      "failures": []
+    }
+  ]
+}

@@ -9,6 +9,7 @@ const label=market==='japan'?t(locale,'Japan online reference','日本向け通�
 <span class:list={['market-price',`market-price-${variant}`]} data-market-price-block={market} data-price-product={productId}>
  <span class="market-price-label">{label}</span>
  <span class="market-price-amount" data-product-price={primary||undefined} data-price-market={market} data-price-amount={value?.amount} data-price-currency={value?.currency} data-price-checked-at={value?.checkedAt||undefined}>{formatMarketPrice(value,locale)}</span>
+ {value?.unit&&<span class="market-price-unit" data-price-unit={value.unit}>{value.unit==='single-ear'?t(locale,'Single earring · one ear','片耳用・1点の価格'):value.unit==='pair'?t(locale,'Pair price','1組の価格'):t(locale,'One-item price','1点の価格')}</span>}
  {value?.checkedAt&&<time class="market-price-date" datetime={value.checkedAt}>{t(locale,'Checked ','確認：')}{value.checkedAt}</time>}
 </span>
 <style>
@@ -16,6 +17,7 @@ const label=market==='japan'?t(locale,'Japan online reference','日本向け通�
  .market-price .market-price-label{display:block;font:10px/1.5 var(--sans);color:var(--muted);letter-spacing:0;white-space:normal}
  .market-price .market-price-amount{display:block;font:14px/1.35 var(--sans);color:var(--ink);letter-spacing:0;white-space:normal}
  .market-price .market-price-date{display:block;font:9px/1.5 var(--sans);color:var(--muted);white-space:normal}
+ .market-price-unit{font:10px/1.5 var(--sans);color:var(--muted)}.market-price-sticky .market-price-unit{font-size:8px}
  .market-price-detail{gap:5px}
  .market-price-detail .market-price-label{font-size:11px}
  .market-price-detail .market-price-amount{font:32px/1.2 var(--serif)}

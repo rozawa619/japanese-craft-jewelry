@@ -11,15 +11,16 @@ if(existsSync(resolve(root,'.env')))process.loadEnvFile(resolve(root,'.env'));
 const origin=new URL(process.env.CHECK_BASE_URL||'http://127.0.0.1:4321').origin;
 const baseParts=(process.env.PUBLIC_BASE_PATH||'/').split('/').filter(Boolean);
 const base='/'+baseParts.join('/')+(baseParts.length?'/':'');
-const reportPath=process.env.CHECK_REPORT_PATH||'docs/market-stage-browser-results.json';
-const screenshotPrefix=(process.env.CHECK_SCREENSHOT_PREFIX||'market-stage').replace(/[^a-zA-Z0-9_-]/g,'-');
+const reportPath=process.env.CHECK_REPORT_PATH||'docs/quality-stage-prices-results.json';
+const screenshotPrefix=(process.env.CHECK_SCREENSHOT_PREFIX||'quality-stage-prices').replace(/[^a-zA-Z0-9_-]/g,'-');
 const catalog=JSON.parse(await readFile(resolve(root,'src/data/catalog.json'),'utf8'));
 const published=catalog.products.filter(product=>product.publishStatus==='published');
 const dual=published.filter(product=>product.localizedPrices?.ja&&product.priceCurrency!=='JPY');
-const specialIds=['cocoon-ori-nonhole-earrings','hamamatsuya-catch-pierced'];
-const targets=[...dual,...specialIds.map(id=>published.find(product=>product.id===id))];
-assert.ok(dual.length>=9,'The actual dual-market products must be included.');
-assert.ok(targets.every(Boolean),'A required unknown or single-market product is missing.');
+assert.ok(published.length,'A published product set is required.');
+const unknown=published.find(product=>!japanPrice(product));
+const singleJapan=published.find(product=>product.id==='hamamatsuya-catch-pierced'&&japanPrice(product))||published.find(product=>product.priceCurrency==='JPY'&&japanPrice(product));
+const accessibilityProduct=published.find(product=>product.id==='rinzen-seika-amber-pierced-earrings')||dual[0]||singleJapan||published[0];
+const targets=[...new Map([...dual,unknown,singleJapan,accessibilityProduct].filter(Boolean).map(product=>[product.id,product])).values()];
 const normalize=value=>value.replace(/\s+/g,' ').trim();
 const route=(locale,path='')=>origin+base+locale+'/'+path;
 
@@ -35,7 +36,7 @@ function officialURLs(product,market){
  const wanted=market==='japan'?'ja':'en';
  return catalog.links.filter(link=>link.productId===product.id&&(!link.locale||link.locale===wanted)&&link.officialProductUrl).map(link=>new URL(link.officialProductUrl).href);
 }
-const report={checkedAt:new Date().toISOString(),origin,base,method:'Focused market-price verification against raw researched catalog values. English and Japanese at 1440, 390 and 320 px; all current dual-market products plus unknown and JPY-only examples. Checks visible price/currency/date, price-to-store destination pairing, sticky purchase meaning, language roundtrip, all product cards, the earrings comparison, Tokyo regional cards, representatives and the home hero. Also checks overflow and runs 18 accessibility scans with every axe rule enabled. Does not use the UI price helper to generate expected figures, open merchant checkouts, claim physical shelf prices, or perform currency conversion.',checks:[],pages:[],screenshots:[],failures:[],pageErrors:[],consoleErrors:[]};
+const report={checkedAt:new Date().toISOString(),origin,base,method:'Focused market-price verification against raw researched catalog values. English and Japanese at 1440, 390 and 320 px; all current dual-market products plus any existing unknown and JPY-only examples. A zero-sized unknown-price published set is recorded explicitly rather than adding an invented item. Checks visible price/currency/date, price-to-store destination pairing, sticky purchase meaning, language roundtrip, all product cards, the earrings comparison, Tokyo regional cards, representatives and the home hero. Also checks overflow and runs 18 accessibility scans with every axe rule enabled. Does not use the UI price helper to generate expected figures, open merchant checkouts, claim physical shelf prices, or perform currency conversion.',checks:[],pages:[],screenshots:[],failures:[],pageErrors:[],consoleErrors:[]};
 const check=async(name,action)=>{try{const detail=await action();report.checks.push({name,status:'passed',...(detail===undefined?{}:{detail})});console.log('PASS '+name)}catch(error){const message=error.stack||String(error);report.checks.push({name,status:'failed',message});report.failures.push({name,message});console.error('FAIL '+name+': '+message)}};
 async function assertMoney(locator,expected,locale){
  assert.equal(await locator.count(),1,'Each market needs one quoted amount in this price context.');
@@ -158,13 +159,13 @@ try{
    });
    for(const product of targets)await check(viewport.name+' '+locale+' detail '+product.id,async()=>{
     const result=await assertDetail(page,product,locale,viewport.width);
-    if(product.id==='rinzen-seika-amber-pierced-earrings'){
-     await scanAxe(page,viewport.name+' '+locale+' RINZEN dual market');
+    if(product.id===accessibilityProduct.id){
+     await scanAxe(page,viewport.name+' '+locale+' market detail '+product.id);
      const before=normalize(await page.locator('[data-product-price]').innerText());const peer=locale==='ja'?'en':'ja';
      await page.locator('a.language-switch').click();await page.waitForURL(route(peer,'objects/'+product.slug+'/'));
      assert.equal(normalize(await page.locator('[data-product-price]').innerText()),before,'Changing display language must not silently change the primary purchase market.');
      await page.locator('a.language-switch').click();await page.waitForURL(route(locale,'objects/'+product.slug+'/'));
-     await screenshot(page,locale+'-'+viewport.name+'-rinzen-market-prices');
+     await screenshot(page,locale+'-'+viewport.name+'-market-prices');
     }
     return result;
    });
@@ -174,6 +175,6 @@ try{
  await check('No client errors during focused market checks',()=>{assert.deepEqual(report.pageErrors,[]);assert.deepEqual(report.consoleErrors,[])});
 }finally{
  await browser.close();report.completedAt=new Date().toISOString();report.finalizedAt=report.completedAt;
- report.summary={checks:report.checks.length,passed:report.checks.filter(item=>item.status==='passed').length,failed:report.failures.length,dualMarketProducts:dual.length,productDetailChecks:targets.length*6,axeScreens:report.pages.length,axeViolations:report.pages.reduce((sum,item)=>sum+item.axeViolations.length,0),screenshots:report.screenshots.length,pageErrors:report.pageErrors.length,consoleErrors:report.consoleErrors.length};
+ report.summary={checks:report.checks.length,passed:report.checks.filter(item=>item.status==='passed').length,failed:report.failures.length,dualMarketProducts:dual.length,unknownPricePublishedProducts:published.filter(product=>!japanPrice(product)).length,unknownPriceDetailSample:unknown?.id||null,productDetailChecks:targets.length*6,axeScreens:report.pages.length,axeViolations:report.pages.reduce((sum,item)=>sum+item.axeViolations.length,0),screenshots:report.screenshots.length,pageErrors:report.pageErrors.length,consoleErrors:report.consoleErrors.length};
  await writeFile(resolve(root,reportPath),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report.summary));if(report.failures.length)process.exitCode=1;
 }

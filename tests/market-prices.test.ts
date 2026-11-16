@@ -45,9 +45,11 @@ test('a global-only quoted price never becomes an invented Japan price',()=>{
 });
 
 test('unknown prices and absent products stay unknown rather than zero',()=>{
- const unknown=catalog.products.find(product=>product.id==='cocoon-ori-nonhole-earrings')!;
+ const unknown=structuredClone(catalog.products.find(product=>product.publishStatus==='published')!);
+ unknown.id='test-unknown-price';unknown.publishStatus='draft';unknown.priceAmount=null;unknown.priceCurrency=null;unknown.priceCheckedAt=null;delete unknown.localizedPrices;
+ const source=fixture(unknown);
  for(const id of [unknown.id,'missing-test-product']){
-  const result=marketPricesFor(id);
+  const result=marketPricesFor(id,source);
   assert.equal(result.japan,null);assert.equal(result.international,null);
   for(const locale of ['en','ja'] as const)assert.doesNotMatch(formatMarketPrice(result.japan,locale),/[0-9]|JPY|USD/);
  }
@@ -68,6 +70,15 @@ test('the international quote retains researched cents when shown beside the Jap
  const result=marketPricesFor('morphosphere-ultramarine-pansy-pierced-earrings');
  assert.equal(normalize(formatMarketPrice(result.japan,'en')),'JPY 4,620');
  assert.equal(normalize(formatMarketPrice(result.international,'en')),'USD 50.40');
+});
+
+test('an explicit sale unit travels with the source price without becoming a pair-price calculation',()=>{
+ const product=structuredClone(rinzen);product.priceUnit='single-ear';
+ const result=marketPricesFor(product.id,fixture(product));
+ assert.equal(result.japan?.unit,'single-ear');assert.equal(result.international?.unit,'single-ear');
+ assert.equal(result.japan?.amount,26400);assert.equal(result.international?.amount,288);
+ delete product.priceUnit;
+ assert.equal(marketPricesFor(product.id,fixture(product)).japan?.unit,undefined);
 });
 
 test('market reference links stay on the verified official store even if an English ad is approved',()=>{

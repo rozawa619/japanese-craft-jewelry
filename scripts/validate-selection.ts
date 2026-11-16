@@ -1,0 +1,16 @@
+import {readFileSync} from 'node:fs';
+import {collectSelectionNoteErrors} from '../src/lib/selection-notes.ts';
+import {projectRoot,loadProjectData} from './validate.ts';
+import {resolve} from 'node:path';
+import {collectPurchaseEvidenceErrors} from '../src/lib/purchase-evidence.ts';
+import {visits} from '../src/lib/visits.ts';
+const data=loadProjectData();
+const errors=collectSelectionNoteErrors(JSON.parse(readFileSync(resolve(projectRoot,'src/data/selection-notes.json'),'utf8')),data.catalog,data.sources);
+errors.push(...collectPurchaseEvidenceErrors(JSON.parse(readFileSync(resolve(projectRoot,'src/data/purchase-evidence.json'),'utf8')),data.catalog,visits,data.sources as {id:string;url:string;access?:unknown}[]));
+const regionNotes=JSON.parse(readFileSync(resolve(projectRoot,'src/data/region-choice-notes.json'),'utf8')) as Record<string,Record<string,unknown>>;
+const activeRegions=new Set(data.catalog.products.filter(product=>product.publishStatus==='published').flatMap(product=>product.prefectureIds));
+for(const region of activeRegions)for(const locale of ['en','ja'])if(typeof regionNotes[region]?.[locale]!=='string'||!String(regionNotes[region][locale]).trim())errors.push('Missing localized region choice context: '+region+'/'+locale);
+for(const region of Object.keys(regionNotes))if(!activeRegions.has(region))errors.push('Region choice context must have published jewelry: '+region);
+for(const error of errors)console.error('FAIL '+error);
+if(errors.length)process.exitCode=1;
+else console.log('PASS localized choice notes, verified sources and published product comparisons: '+data.catalog.products.filter(product=>product.publishStatus==='published').length+' products; '+activeRegions.size+' regional choice contexts.');

@@ -1,14 +1,14 @@
 ---
 title: "山梨のジュエリー"
-description: "甲府発SIMPRICHから、水晶と白蝶貝のピアス、ローズクォーツのネックレスを。"
+description: "甲府発SIMPRICHの水晶、ローズクォーツ、リバーシブルのチェーンリングとピアリング。"
 locale: ja
 publishStatus: published
 updatedAt: "2026-11-16"
-sourceIds: ["simprich-about-v9","simprich-bubble-v9","simprich-rose-quartz-v9"]
+sourceIds: ["simprich-about-v9","simprich-bubble-v9","simprich-rose-quartz-v9","simprich-home-shop-v9","yamanashi-jewelry-museum-v9","yamanashi-jewelry-access-v9","simprich-reversible-chain-ring-v11","simprich-piaring-single-v11"]
 prefectureId: yamanashi
 relatedMerchantIds: ["simprich-official"]
 ---
 
-甲府のジュエリー企業7社から生まれたファクトリーブランド、SIMPRICH。素材の見え方とシンプルな形から、山梨のジュエリーづくりに出会う入口です。
+SIMPRICHは甲府のジュエリー企業7社から生まれたファクトリーブランドです。山梨のジュエリーづくりとのつながりを紹介し、原石が山梨で採れたという意味にはしていません。
 
-小さく丸い水晶と白蝶貝のしゃぼん玉ピアス、淡いピンクの石を一つ見せるローズクォーツのネックレスを選びました。いずれも公式が受注生産として案内する品。一部商品の展示販売先も紹介していますが、個別の店頭在庫は訪問前に確認してください。原石が山梨で採れたという意味ではありません。
+水晶と白蝶貝を重ねるピアス、ローズクォーツのネックレスに、ホワイトトパーズとルビーのチェーンリング、銀のピアリングを追加しました。ピアリングは片耳用の価格です。組価格へ勝手に換算せず、受注制作の納期や実際の店頭在庫は公式で確認できるようにしています。

@@ -1,0 +1,1483 @@
+{
+  "checkedAt": "2026-11-16",
+  "scope": "All 30 previously published products, excluding the pre-existing draft hairpin and excluding the 16 additions. This report records observations before root changes publication status.",
+  "acceptance": "Either an officially verified operating public retail channel currently associated with the brand/jewelry, with exact-SKU store stock explicitly unconfirmed, or a live priced SKU with visible enabled order UI and no observed sold-out state. Explicit item-level unavailability overrides general maker-shop existence for the strict buyable selection.",
+  "method": "Read-only fresh Chrome DOM for all distinct old-product URLs, followed by visibility/disabled-state checks; current official web body reads for Hamamatsuya catalog/store and Maruyama category/store. No order/enquiry. Image/font requests were blocked during text DOM sampling; missing image-label cart controls were not inferred as online-confirmed. The seven retained retail/catalog items and explicitly unavailable Hamamatsuya18K use separately identified official web-reader body evidence. Hamamatsuya Chrome body-null failures are retained as failures, and are never substituted with a successful DOM claim.",
+  "summary": {
+    "reviewed": 30,
+    "keep": 27,
+    "defer": 3,
+    "onlineOrderableObserved": 20,
+    "verifiedRetailChannelCatalogItems": 7,
+    "deferredProductIds": [
+      "hamamatsuya-18k-pierced",
+      "cocoon-ori-nonhole-earrings",
+      "cocoon-frame-pierced-earrings"
+    ]
+  },
+  "sourceUrls": [
+    "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html",
+    "https://www.hamamatsuya.co.jp/item/muku/accessory.html",
+    "https://www.hakonemaruyama.co.jp/shopdetail/000000000467/",
+    "https://www.hakonemaruyama.co.jp/shopdetail/000000000468/",
+    "https://www.hakonemaruyama.co.jp/shopdetail/000000000473/",
+    "https://www.hakonemaruyama.co.jp/shopdetail/000000000474/",
+    "https://www.thebecos.com/products/s0138-028",
+    "https://www.thebecos.com/products/s0164-018",
+    "https://www.thebecos.com/products/s0138-099",
+    "https://www.thebecos.com/products/s0164-016",
+    "https://www.thebecos.com/products/s0007-054",
+    "https://www.thebecos.com/products/s0050-015",
+    "https://www.thebecos.com/products/s0124-032",
+    "https://www.thebecos.com/products/s0087-093",
+    "https://www.creema.jp/item/9489033/detail",
+    "https://www.creema.jp/item/18047443/detail",
+    "https://www.shopch.jp/pc/product/proddetail?reqprno=819642",
+    "https://www.shopch.jp/pc/product/proddetail?reqprno=810335",
+    "https://jqppy767.wixsite.com/website/product-page/%E8%9E%BA%E9%88%BF%E3%83%9A%E3%83%B3%E3%83%80%E3%83%B3%E3%83%88-%E5%AE%9D%E7%9B%B8%E8%8F%AF",
+    "https://jqppy767.wixsite.com/website/product-page/%E5%95%86%E5%93%81%E5%90%8D-%E8%92%94%E7%B5%B5%E6%8C%87%E8%BC%AA-%E8%93%AE-makie-ring-lotus",
+    "https://www.co-coon.info/gallery",
+    "https://shop.simprich.jp/products/oy-k1%EF%BC%98sha-pi-1",
+    "https://shop.simprich.jp/products/k10%E3%82%A4%E3%82%A8%E3%83%AD%E3%83%BC%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89-%E3%83%AD%E3%83%BC%E3%82%BA%E3%82%AF%E3%82%A9%E3%83%BC%E3%83%84-%E3%83%8D%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B9",
+    "https://www.yukieglass.net/?pid=192213845",
+    "https://www.yukieglass.net/?pid=192213864",
+    "https://www.nakajima-zougan.jp/ec-shop2/products/detail/1005",
+    "https://www.thebecos.com/products/s0087-044",
+    "https://www.hamamatsuya.co.jp/info/index.html",
+    "https://www.hakonemaruyama.co.jp/html/company.html",
+    "https://www.hakonemaruyama.co.jp/shopbrand/ct36/"
+  ],
+  "rows": [
+    {
+      "productId": "hamamatsuya-catch-pierced",
+      "checkedAt": "2026-11-16",
+      "classification": "verified_retail_channel_catalog_item",
+      "decision": "keep",
+      "officialProductUrl": "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html",
+      "marketPrice": {
+        "amount": 3500,
+        "currency": "JPY",
+        "priceTextObserved": true,
+        "runtimeDOMPriceTextObserved": false,
+        "priceTextObservationMethod": "official_web_reader_body"
+      },
+      "visibleOrderControls": [],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "hamamatsuya-hatajuku-main",
+          "officialStoreUrl": "https://www.hamamatsuya.co.jp/info/index.html",
+          "sourceIds": [
+            "hamamatsuya-store-guide-v8"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "hamamatsuya-earrings",
+        "hamamatsuya-technique",
+        "hamamatsuya-workshop"
+      ],
+      "rationale": "Current priced maker catalog lists the accessory without a sold-out label, and the maker publishes its operating main retail shop. This is the verified-retail-channel gate, not proof of the exact SKU or pattern on the shelf.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "Error: page.evaluate: TypeError: Cannot read properties of null (reading 'innerText')\n    at eval (eval at evaluate (:370:30), <anonymous>:1:115)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+        "visible": null,
+        "method": "Official catalog/category body read via web reader, independent of Chrome DOM sampling.",
+        "bodySource": {
+          "sourceId": "hamamatsuya-earrings",
+          "url": "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html",
+          "snippet": "キャッチ付ピアス（サージカルステンレス） ￥3,500",
+          "explicitOutOfStockLabel": false,
+          "sourceCrawlerDateLabel": "today",
+          "checkedAt": "2026-11-16",
+          "access": "body_read",
+          "method": "web__run.open/click official HTML body; not a successful Chrome DOM fetch",
+          "absenceMeaning": "No out-of-stock wording is attached to this listed item; this is not a positive exact store-stock guarantee."
+        },
+        "runtimeDOMStatus": "failed_body_null",
+        "runtimeErrorPreserved": true
+      }
+    },
+    {
+      "productId": "hamamatsuya-clip",
+      "checkedAt": "2026-11-16",
+      "classification": "verified_retail_channel_catalog_item",
+      "decision": "keep",
+      "officialProductUrl": "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html",
+      "marketPrice": {
+        "amount": 2500,
+        "currency": "JPY",
+        "priceTextObserved": true,
+        "runtimeDOMPriceTextObserved": false,
+        "priceTextObservationMethod": "official_web_reader_body"
+      },
+      "visibleOrderControls": [],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "hamamatsuya-hatajuku-main",
+          "officialStoreUrl": "https://www.hamamatsuya.co.jp/info/index.html",
+          "sourceIds": [
+            "hamamatsuya-store-guide-v8"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "hamamatsuya-earrings",
+        "hamamatsuya-technique",
+        "hamamatsuya-workshop"
+      ],
+      "rationale": "Current priced maker catalog lists the accessory without a sold-out label, and the maker publishes its operating main retail shop. This is the verified-retail-channel gate, not proof of the exact SKU or pattern on the shelf.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "Error: page.evaluate: TypeError: Cannot read properties of null (reading 'innerText')\n    at eval (eval at evaluate (:370:30), <anonymous>:1:115)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+        "visible": null,
+        "method": "Official catalog/category body read via web reader, independent of Chrome DOM sampling.",
+        "bodySource": {
+          "sourceId": "hamamatsuya-earrings",
+          "url": "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html",
+          "snippet": "イヤリング ￥2,500",
+          "explicitOutOfStockLabel": false,
+          "sourceCrawlerDateLabel": "today",
+          "checkedAt": "2026-11-16",
+          "access": "body_read",
+          "method": "web__run.open/click official HTML body; not a successful Chrome DOM fetch",
+          "absenceMeaning": "No out-of-stock wording is attached to this listed item; this is not a positive exact store-stock guarantee."
+        },
+        "runtimeDOMStatus": "failed_body_null",
+        "runtimeErrorPreserved": true
+      }
+    },
+    {
+      "productId": "hamamatsuya-18k-pierced",
+      "checkedAt": "2026-11-16",
+      "classification": "explicitly_out_of_stock",
+      "decision": "defer",
+      "officialProductUrl": "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html",
+      "marketPrice": {
+        "amount": 4500,
+        "currency": "JPY",
+        "priceTextObserved": true,
+        "runtimeDOMPriceTextObserved": false,
+        "priceTextObservationMethod": "official_web_reader_body"
+      },
+      "visibleOrderControls": [],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "hamamatsuya-hatajuku-main",
+          "officialStoreUrl": "https://www.hamamatsuya.co.jp/info/index.html",
+          "sourceIds": [
+            "hamamatsuya-store-guide-v8"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "hamamatsuya-earrings",
+        "hamamatsuya-technique",
+        "hamamatsuya-workshop"
+      ],
+      "rationale": "Current official catalog explicitly marks the 18K-listed earrings out of stock. Maker retail premises exist, but no contrary evidence of current featured-SKU stock has been established.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "Error: page.evaluate: TypeError: Cannot read properties of null (reading 'innerText')\n    at eval (eval at evaluate (:370:30), <anonymous>:1:115)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+        "visible": null,
+        "method": "Official catalog/category body read via web reader, independent of Chrome DOM sampling.",
+        "bodySource": {
+          "sourceId": "hamamatsuya-earrings",
+          "url": "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html",
+          "snippet": "ピアス(18K) ￥4,500<欠品中>",
+          "explicitOutOfStockLabel": true,
+          "sourceCrawlerDateLabel": "today",
+          "checkedAt": "2026-11-16",
+          "access": "body_read",
+          "method": "web__run.open/click official HTML body; not a successful Chrome DOM fetch",
+          "absenceMeaning": "Explicit out-of-stock wording is attached to this listed item."
+        },
+        "runtimeDOMStatus": "failed_body_null",
+        "runtimeErrorPreserved": true
+      }
+    },
+    {
+      "productId": "hamamatsuya-pendant",
+      "checkedAt": "2026-11-16",
+      "classification": "verified_retail_channel_catalog_item",
+      "decision": "keep",
+      "officialProductUrl": "https://www.hamamatsuya.co.jp/item/muku/accessory.html",
+      "marketPrice": {
+        "amount": 3500,
+        "currency": "JPY",
+        "priceTextObserved": true,
+        "runtimeDOMPriceTextObserved": false,
+        "priceTextObservationMethod": "official_web_reader_body"
+      },
+      "visibleOrderControls": [],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "hamamatsuya-hatajuku-main",
+          "officialStoreUrl": "https://www.hamamatsuya.co.jp/info/index.html",
+          "sourceIds": [
+            "hamamatsuya-store-guide-v8"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "hamamatsuya-pendant",
+        "hamamatsuya-technique",
+        "hamamatsuya-workshop"
+      ],
+      "rationale": "Current priced maker catalog lists the accessory without a sold-out label, and the maker publishes its operating main retail shop. This is the verified-retail-channel gate, not proof of the exact SKU or pattern on the shelf.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "Error: page.evaluate: TypeError: Cannot read properties of null (reading 'innerText')\n    at eval (eval at evaluate (:370:30), <anonymous>:1:115)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+        "visible": null,
+        "method": "Official catalog/category body read via web reader, independent of Chrome DOM sampling.",
+        "bodySource": {
+          "sourceId": "hamamatsuya-pendant",
+          "url": "https://www.hamamatsuya.co.jp/item/muku/accessory.html",
+          "snippet": "ペンダント ￥3,500",
+          "explicitOutOfStockLabel": false,
+          "sourceCrawlerDateLabel": "yesterday",
+          "checkedAt": "2026-11-16",
+          "access": "body_read",
+          "method": "web__run.open/click official HTML body; not a successful Chrome DOM fetch",
+          "absenceMeaning": "No out-of-stock wording is attached to this listed item; this is not a positive exact store-stock guarantee."
+        },
+        "runtimeDOMStatus": "failed_body_null",
+        "runtimeErrorPreserved": true
+      }
+    },
+    {
+      "productId": "maruyama-clip-c",
+      "checkedAt": "2026-11-16",
+      "classification": "verified_retail_channel_catalog_item",
+      "decision": "keep",
+      "officialProductUrl": "https://www.hakonemaruyama.co.jp/shopdetail/000000000467/",
+      "marketPrice": {
+        "amount": 2650,
+        "currency": "JPY",
+        "priceTextObserved": true,
+        "runtimeDOMPriceTextObserved": false,
+        "priceTextObservationMethod": "official_web_reader_body"
+      },
+      "visibleOrderControls": [],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "hakone-maruyama-main",
+          "officialStoreUrl": "https://www.hakonemaruyama.co.jp/html/company.html",
+          "sourceIds": [
+            "maruyama-store-guide-v8",
+            "maruyama-hakonenavi-access-v8"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "maruyama-clip-c",
+        "maruyama-category",
+        "maruyama-company"
+      ],
+      "rationale": "The retailer publishes its current main shop and earring category, where the selected C/D items have prices and cart/buy image controls, unlike explicitly sold-out A/F designs. Fresh detail DOM did not expose the image control/price; online orderability is therefore not certified from that DOM. Exact store SKU stock remains unverified.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json",
+        "method": "Official catalog/category body read via web reader, independent of Chrome DOM sampling.",
+        "bodySource": {
+          "sourceId": "maruyama-category",
+          "url": "https://www.hakonemaruyama.co.jp/shopbrand/ct36/",
+          "snippet": "寄木イヤリングＣ 2,650円（税込）",
+          "explicitOutOfStockLabel": false,
+          "sourceCrawlerDateLabel": "3 weeks ago",
+          "checkedAt": "2026-11-16",
+          "access": "body_read",
+          "method": "web__run.open/click official HTML body; not a successful Chrome DOM fetch",
+          "absenceMeaning": "No out-of-stock wording is attached to this listed item; this is not a positive exact store-stock guarantee."
+        }
+      }
+    },
+    {
+      "productId": "maruyama-clip-d",
+      "checkedAt": "2026-11-16",
+      "classification": "verified_retail_channel_catalog_item",
+      "decision": "keep",
+      "officialProductUrl": "https://www.hakonemaruyama.co.jp/shopdetail/000000000468/",
+      "marketPrice": {
+        "amount": 2650,
+        "currency": "JPY",
+        "priceTextObserved": true,
+        "runtimeDOMPriceTextObserved": true,
+        "priceTextObservationMethod": "official_web_reader_body"
+      },
+      "visibleOrderControls": [],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "hakone-maruyama-main",
+          "officialStoreUrl": "https://www.hakonemaruyama.co.jp/html/company.html",
+          "sourceIds": [
+            "maruyama-store-guide-v8",
+            "maruyama-hakonenavi-access-v8"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "maruyama-clip-d",
+        "maruyama-category",
+        "maruyama-company"
+      ],
+      "rationale": "The retailer publishes its current main shop and earring category, where the selected C/D items have prices and cart/buy image controls, unlike explicitly sold-out A/F designs. Fresh detail DOM did not expose the image control/price; online orderability is therefore not certified from that DOM. Exact store SKU stock remains unverified.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json",
+        "method": "Official catalog/category body read via web reader, independent of Chrome DOM sampling.",
+        "bodySource": {
+          "sourceId": "maruyama-category",
+          "url": "https://www.hakonemaruyama.co.jp/shopbrand/ct36/",
+          "snippet": "寄木イヤリングＤ 2,650円（税込）",
+          "explicitOutOfStockLabel": false,
+          "sourceCrawlerDateLabel": "3 weeks ago",
+          "checkedAt": "2026-11-16",
+          "access": "body_read",
+          "method": "web__run.open/click official HTML body; not a successful Chrome DOM fetch",
+          "absenceMeaning": "No out-of-stock wording is attached to this listed item; this is not a positive exact store-stock guarantee."
+        }
+      }
+    },
+    {
+      "productId": "maruyama-pierced-c",
+      "checkedAt": "2026-11-16",
+      "classification": "verified_retail_channel_catalog_item",
+      "decision": "keep",
+      "officialProductUrl": "https://www.hakonemaruyama.co.jp/shopdetail/000000000473/",
+      "marketPrice": {
+        "amount": 2650,
+        "currency": "JPY",
+        "priceTextObserved": true,
+        "runtimeDOMPriceTextObserved": true,
+        "priceTextObservationMethod": "official_web_reader_body"
+      },
+      "visibleOrderControls": [],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "hakone-maruyama-main",
+          "officialStoreUrl": "https://www.hakonemaruyama.co.jp/html/company.html",
+          "sourceIds": [
+            "maruyama-store-guide-v8",
+            "maruyama-hakonenavi-access-v8"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "maruyama-pierced-c",
+        "maruyama-category",
+        "maruyama-company"
+      ],
+      "rationale": "The retailer publishes its current main shop and earring category, where the selected C/D items have prices and cart/buy image controls, unlike explicitly sold-out A/F designs. Fresh detail DOM did not expose the image control/price; online orderability is therefore not certified from that DOM. Exact store SKU stock remains unverified.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json",
+        "method": "Official catalog/category body read via web reader, independent of Chrome DOM sampling.",
+        "bodySource": {
+          "sourceId": "maruyama-category",
+          "url": "https://www.hakonemaruyama.co.jp/shopbrand/ct36/",
+          "snippet": "寄木ピアスＣ 2,650円（税込）",
+          "explicitOutOfStockLabel": false,
+          "sourceCrawlerDateLabel": "3 weeks ago",
+          "checkedAt": "2026-11-16",
+          "access": "body_read",
+          "method": "web__run.open/click official HTML body; not a successful Chrome DOM fetch",
+          "absenceMeaning": "No out-of-stock wording is attached to this listed item; this is not a positive exact store-stock guarantee."
+        }
+      }
+    },
+    {
+      "productId": "maruyama-pierced-d",
+      "checkedAt": "2026-11-16",
+      "classification": "verified_retail_channel_catalog_item",
+      "decision": "keep",
+      "officialProductUrl": "https://www.hakonemaruyama.co.jp/shopdetail/000000000474/",
+      "marketPrice": {
+        "amount": 2650,
+        "currency": "JPY",
+        "priceTextObserved": true,
+        "runtimeDOMPriceTextObserved": true,
+        "priceTextObservationMethod": "official_web_reader_body"
+      },
+      "visibleOrderControls": [],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "hakone-maruyama-main",
+          "officialStoreUrl": "https://www.hakonemaruyama.co.jp/html/company.html",
+          "sourceIds": [
+            "maruyama-store-guide-v8",
+            "maruyama-hakonenavi-access-v8"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "maruyama-pierced-d",
+        "maruyama-category",
+        "maruyama-company"
+      ],
+      "rationale": "The retailer publishes its current main shop and earring category, where the selected C/D items have prices and cart/buy image controls, unlike explicitly sold-out A/F designs. Fresh detail DOM did not expose the image control/price; online orderability is therefore not certified from that DOM. Exact store SKU stock remains unverified.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json",
+        "method": "Official catalog/category body read via web reader, independent of Chrome DOM sampling.",
+        "bodySource": {
+          "sourceId": "maruyama-category",
+          "url": "https://www.hakonemaruyama.co.jp/shopbrand/ct36/",
+          "snippet": "寄木ピアスＤ 2,650円（税込）",
+          "explicitOutOfStockLabel": false,
+          "sourceCrawlerDateLabel": "3 weeks ago",
+          "checkedAt": "2026-11-16",
+          "access": "body_read",
+          "method": "web__run.open/click official HTML body; not a successful Chrome DOM fetch",
+          "absenceMeaning": "No out-of-stock wording is attached to this listed item; this is not a positive exact store-stock guarantee."
+        }
+      }
+    },
+    {
+      "productId": "rinzen-seika-amber-pierced-earrings",
+      "checkedAt": "2026-11-16",
+      "classification": "online_orderable_observed",
+      "decision": "keep",
+      "officialProductUrl": "https://www.thebecos.com/products/s0138-028",
+      "marketPrice": {
+        "amount": 26400,
+        "currency": "JPY",
+        "priceTextObserved": true
+      },
+      "visibleOrderControls": [
+        {
+          "tag": "BUTTON",
+          "text": "カートに追加",
+          "disabled": false,
+          "visible": true
+        }
+      ],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "rinzen-hirai-shop",
+          "officialStoreUrl": "https://rin-zen.com/shop.html",
+          "sourceIds": [
+            "rinzen-store-guide-v8",
+            "rinzen-maker-concept-v8"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "becos-rinzen-seika-amber",
+        "becos-rinzen-seika-amber-ja",
+        "rinzen-brand"
+      ],
+      "rationale": "Fresh public product DOM contains the known Japanese market price and visible enabled product-order control; no purchase/cart action was executed. This does not guarantee stock at checkout or immediate dispatch.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json"
+      }
+    },
+    {
+      "productId": "six-kiln-half-moon-earrings",
+      "checkedAt": "2026-11-16",
+      "classification": "online_orderable_observed",
+      "decision": "keep",
+      "officialProductUrl": "https://www.thebecos.com/products/s0164-018",
+      "marketPrice": {
+        "amount": 9900,
+        "currency": "JPY",
+        "priceTextObserved": true
+      },
+      "visibleOrderControls": [
+        {
+          "tag": "BUTTON",
+          "text": "カートに追加",
+          "disabled": false,
+          "visible": true
+        }
+      ],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "seirokugama-gallery",
+          "officialStoreUrl": "https://seirokugama.jp/#access",
+          "sourceIds": [
+            "visit-seirokugama-official",
+            "visit-six-kiln-official",
+            "visit-six-kiln-maker-interview"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "becos-six-kiln-half-moon",
+        "becos-six-kiln-half-moon-ja",
+        "six-kiln-brand"
+      ],
+      "rationale": "Fresh public product DOM contains the known Japanese market price and visible enabled product-order control; no purchase/cart action was executed. This does not guarantee stock at checkout or immediate dispatch.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json"
+      }
+    },
+    {
+      "productId": "rinzen-leaf-glass-pendant",
+      "checkedAt": "2026-11-16",
+      "classification": "online_orderable_observed",
+      "decision": "keep",
+      "officialProductUrl": "https://www.thebecos.com/products/s0138-099",
+      "marketPrice": {
+        "amount": 27500,
+        "currency": "JPY",
+        "priceTextObserved": true
+      },
+      "visibleOrderControls": [
+        {
+          "tag": "BUTTON",
+          "text": "カートに追加",
+          "disabled": false,
+          "visible": true
+        }
+      ],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "rinzen-hirai-shop",
+          "officialStoreUrl": "https://rin-zen.com/shop.html",
+          "sourceIds": [
+            "rinzen-store-guide-v8",
+            "rinzen-maker-concept-v8"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "becos-rinzen-leaf",
+        "becos-rinzen-leaf-ja",
+        "rinzen-brand"
+      ],
+      "rationale": "Fresh public product DOM contains the known Japanese market price and visible enabled product-order control; no purchase/cart action was executed. This does not guarantee stock at checkout or immediate dispatch.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json"
+      }
+    },
+    {
+      "productId": "six-kiln-blue-bouquet-pierced-earrings",
+      "checkedAt": "2026-11-16",
+      "classification": "online_orderable_observed",
+      "decision": "keep",
+      "officialProductUrl": "https://www.thebecos.com/products/s0164-016",
+      "marketPrice": {
+        "amount": 6600,
+        "currency": "JPY",
+        "priceTextObserved": true
+      },
+      "visibleOrderControls": [
+        {
+          "tag": "BUTTON",
+          "text": "カートに追加",
+          "disabled": false,
+          "visible": true
+        }
+      ],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "seirokugama-gallery",
+          "officialStoreUrl": "https://seirokugama.jp/#access",
+          "sourceIds": [
+            "visit-seirokugama-official",
+            "visit-six-kiln-official",
+            "visit-six-kiln-maker-interview"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "becos-six-kiln-blue-bouquet",
+        "becos-six-kiln-blue-bouquet-ja",
+        "six-kiln-brand"
+      ],
+      "rationale": "Fresh public product DOM contains the known Japanese market price and visible enabled product-order control; no purchase/cart action was executed. This does not guarantee stock at checkout or immediate dispatch.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json"
+      }
+    },
+    {
+      "productId": "saskia-diez-drake-porcelain-cuff",
+      "checkedAt": "2026-11-16",
+      "classification": "online_orderable_observed",
+      "decision": "keep",
+      "officialProductUrl": "https://www.thebecos.com/products/s0007-054",
+      "marketPrice": {
+        "amount": 29700,
+        "currency": "JPY",
+        "priceTextObserved": true
+      },
+      "visibleOrderControls": [
+        {
+          "tag": "BUTTON",
+          "text": "カートに追加",
+          "disabled": false,
+          "visible": true
+        }
+      ],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "2016-arita-flagship",
+          "officialStoreUrl": "https://www.2016arita.jp/pages/shop-list",
+          "sourceIds": [
+            "visit-2016-official-shop-list",
+            "visit-2016-aritasera",
+            "visit-2016-saga-tourism",
+            "visit-2016-saskia-official"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "becos-saskia-drake-cuff",
+        "becos-saskia-drake-cuff-ja",
+        "saskia-diez-brand"
+      ],
+      "rationale": "Fresh public product DOM contains the known Japanese market price and visible enabled product-order control; no purchase/cart action was executed. This does not guarantee stock at checkout or immediate dispatch.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json"
+      }
+    },
+    {
+      "productId": "checos-japanese-apricot-pierced-earrings",
+      "checkedAt": "2026-11-16",
+      "classification": "online_orderable_observed",
+      "decision": "keep",
+      "officialProductUrl": "https://www.thebecos.com/products/s0050-015",
+      "marketPrice": {
+        "amount": 16500,
+        "currency": "JPY",
+        "priceTextObserved": true
+      },
+      "visibleOrderControls": [
+        {
+          "tag": "BUTTON",
+          "text": "カートに追加",
+          "disabled": false,
+          "visible": true
+        }
+      ],
+      "verifiedRetailChannels": [],
+      "sourceIds": [
+        "becos-checos-japanese-apricot",
+        "becos-checos-japanese-apricot-ja",
+        "checos-brand"
+      ],
+      "rationale": "Fresh public product DOM contains the known Japanese market price and visible enabled product-order control; no purchase/cart action was executed. This does not guarantee stock at checkout or immediate dispatch.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json"
+      }
+    },
+    {
+      "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "checkedAt": "2026-11-16",
+      "classification": "online_orderable_observed",
+      "decision": "keep",
+      "officialProductUrl": "https://www.thebecos.com/products/s0124-032",
+      "marketPrice": {
+        "amount": 4620,
+        "currency": "JPY",
+        "priceTextObserved": true
+      },
+      "visibleOrderControls": [
+        {
+          "tag": "BUTTON",
+          "text": "カートに追加",
+          "disabled": false,
+          "visible": true
+        }
+      ],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "kanra-shop-kyoto",
+          "officialStoreUrl": "https://www.uds-hotels.com/kanra/kyoto/qa/",
+          "sourceIds": [
+            "visit-morphosphere-stockists",
+            "visit-kanra-shop-official",
+            "visit-kanra-address",
+            "visit-kanra-access"
+          ],
+          "featuredSkuStockConfirmed": false
+        },
+        {
+          "storeId": "mocad-museum-shop",
+          "officialStoreUrl": "https://kmtc.jp/access/",
+          "sourceIds": [
+            "visit-morphosphere-stockists",
+            "visit-mocad-shop",
+            "visit-mocad-access",
+            "visit-mocad-morphosphere"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "becos-morphosphere-ultramarine-pansy",
+        "becos-morphosphere-ultramarine-pansy-ja",
+        "morphosphere-brand"
+      ],
+      "rationale": "Fresh public product DOM contains the known Japanese market price and visible enabled product-order control; no purchase/cart action was executed. This does not guarantee stock at checkout or immediate dispatch.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json"
+      }
+    },
+    {
+      "productId": "kato-suke-drop-pierced-earrings",
+      "checkedAt": "2026-11-16",
+      "classification": "online_orderable_observed",
+      "decision": "keep",
+      "officialProductUrl": "https://www.thebecos.com/products/s0087-093",
+      "marketPrice": {
+        "amount": 15400,
+        "currency": "JPY",
+        "priceTextObserved": true
+      },
+      "visibleOrderControls": [
+        {
+          "tag": "BUTTON",
+          "text": "カートに追加",
+          "disabled": false,
+          "visible": true
+        }
+      ],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "kato-shippo-store",
+          "officialStoreUrl": "https://katoshippo.com/page/about",
+          "sourceIds": [
+            "visit-kato-official-store"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "becos-kato-suke-drop",
+        "becos-kato-suke-drop-ja",
+        "kato-shippo-brand"
+      ],
+      "rationale": "Fresh public product DOM contains the known Japanese market price and visible enabled product-order control; no purchase/cart action was executed. This does not guarantee stock at checkout or immediate dispatch.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json"
+      }
+    },
+    {
+      "productId": "arcos-cosmic-spiral-pendant",
+      "checkedAt": "2026-11-16",
+      "classification": "online_orderable_observed",
+      "decision": "keep",
+      "officialProductUrl": "https://www.creema.jp/item/9489033/detail",
+      "marketPrice": {
+        "amount": 12800,
+        "currency": "JPY",
+        "priceTextObserved": true
+      },
+      "visibleOrderControls": [
+        {
+          "tag": "BUTTON",
+          "text": "カートに入れる",
+          "disabled": false,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "カートに入れる",
+          "disabled": false,
+          "visible": true
+        }
+      ],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "arcos-kamogawa-gallery",
+          "officialStoreUrl": "https://arcos.glass/access/",
+          "sourceIds": [
+            "arcos-access-v9",
+            "arcos-studio-v9"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "arcos-cosmic-spiral-v9",
+        "arcos-studio-v9"
+      ],
+      "rationale": "Fresh public product DOM contains the known Japanese market price and visible enabled product-order control; no purchase/cart action was executed. This does not guarantee stock at checkout or immediate dispatch.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json"
+      }
+    },
+    {
+      "productId": "arcos-cosmic-glass-bracelet",
+      "checkedAt": "2026-11-16",
+      "classification": "online_orderable_observed",
+      "decision": "keep",
+      "officialProductUrl": "https://www.creema.jp/item/18047443/detail",
+      "marketPrice": {
+        "amount": 8900,
+        "currency": "JPY",
+        "priceTextObserved": true
+      },
+      "visibleOrderControls": [
+        {
+          "tag": "BUTTON",
+          "text": "カートに入れる",
+          "disabled": false,
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "カートに入れる",
+          "disabled": false,
+          "visible": true
+        }
+      ],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "arcos-kamogawa-gallery",
+          "officialStoreUrl": "https://arcos.glass/access/",
+          "sourceIds": [
+            "arcos-access-v9",
+            "arcos-studio-v9"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "arcos-cosmic-bracelet-v9",
+        "arcos-studio-v9"
+      ],
+      "rationale": "Fresh public product DOM contains the known Japanese market price and visible enabled product-order control; no purchase/cart action was executed. This does not guarantee stock at checkout or immediate dispatch.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json"
+      }
+    },
+    {
+      "productId": "senshu-pearl-stud-earrings",
+      "checkedAt": "2026-11-16",
+      "classification": "online_orderable_observed",
+      "decision": "keep",
+      "officialProductUrl": "https://www.shopch.jp/pc/product/proddetail?reqprno=819642",
+      "marketPrice": {
+        "amount": 7120,
+        "currency": "JPY",
+        "priceTextObserved": true
+      },
+      "visibleOrderControls": [
+        {
+          "tag": "A",
+          "text": "カートに入れる",
+          "disabled": false,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "いますぐ購入",
+          "disabled": false,
+          "visible": true
+        }
+      ],
+      "verifiedRetailChannels": [],
+      "sourceIds": [
+        "shopch-senshu-stud-v9",
+        "jpga-izumi-craft-v9"
+      ],
+      "rationale": "Fresh public product DOM contains the known Japanese market price and visible enabled product-order control; no purchase/cart action was executed. This does not guarantee stock at checkout or immediate dispatch.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json"
+      }
+    },
+    {
+      "productId": "senshu-pearl-swing-earrings",
+      "checkedAt": "2026-11-16",
+      "classification": "online_orderable_observed",
+      "decision": "keep",
+      "officialProductUrl": "https://www.shopch.jp/pc/product/proddetail?reqprno=810335",
+      "marketPrice": {
+        "amount": 5650,
+        "currency": "JPY",
+        "priceTextObserved": true
+      },
+      "visibleOrderControls": [
+        {
+          "tag": "A",
+          "text": "カートに入れる",
+          "disabled": false,
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "いますぐ購入",
+          "disabled": false,
+          "visible": true
+        }
+      ],
+      "verifiedRetailChannels": [],
+      "sourceIds": [
+        "shopch-senshu-swing-v9",
+        "jpga-izumi-craft-v9"
+      ],
+      "rationale": "Fresh public product DOM contains the known Japanese market price and visible enabled product-order control; no purchase/cart action was executed. This does not guarantee stock at checkout or immediate dispatch.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json"
+      }
+    },
+    {
+      "productId": "sugimura-hosoge-raden-pendant",
+      "checkedAt": "2026-11-16",
+      "classification": "online_orderable_observed",
+      "decision": "keep",
+      "officialProductUrl": "https://jqppy767.wixsite.com/website/product-page/%E8%9E%BA%E9%88%BF%E3%83%9A%E3%83%B3%E3%83%80%E3%83%B3%E3%83%88-%E5%AE%9D%E7%9B%B8%E8%8F%AF",
+      "marketPrice": {
+        "amount": 44000,
+        "currency": "JPY",
+        "priceTextObserved": true
+      },
+      "visibleOrderControls": [
+        {
+          "tag": "BUTTON",
+          "text": "カートに追加する",
+          "disabled": false,
+          "visible": true
+        }
+      ],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "sugimura-nishinokyo-gallery",
+          "officialStoreUrl": "https://jqppy767.wixsite.com/website",
+          "sourceIds": [
+            "sugimura-official-v9"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "sugimura-hosoge-v9",
+        "sugimura-official-v9"
+      ],
+      "rationale": "Fresh public product DOM contains the known Japanese market price and visible enabled product-order control; no purchase/cart action was executed. This does not guarantee stock at checkout or immediate dispatch.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json"
+      }
+    },
+    {
+      "productId": "sugimura-lotus-makie-ring",
+      "checkedAt": "2026-11-16",
+      "classification": "online_orderable_observed",
+      "decision": "keep",
+      "officialProductUrl": "https://jqppy767.wixsite.com/website/product-page/%E5%95%86%E5%93%81%E5%90%8D-%E8%92%94%E7%B5%B5%E6%8C%87%E8%BC%AA-%E8%93%AE-makie-ring-lotus",
+      "marketPrice": {
+        "amount": 165000,
+        "currency": "JPY",
+        "priceTextObserved": true
+      },
+      "visibleOrderControls": [
+        {
+          "tag": "BUTTON",
+          "text": "カートに追加する",
+          "disabled": false,
+          "visible": true
+        }
+      ],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "sugimura-nishinokyo-gallery",
+          "officialStoreUrl": "https://jqppy767.wixsite.com/website",
+          "sourceIds": [
+            "sugimura-official-v9"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "sugimura-lotus-v9",
+        "sugimura-official-v9"
+      ],
+      "rationale": "Fresh public product DOM contains the known Japanese market price and visible enabled product-order control; no purchase/cart action was executed. This does not guarantee stock at checkout or immediate dispatch.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json"
+      }
+    },
+    {
+      "productId": "cocoon-ori-nonhole-earrings",
+      "checkedAt": "2026-11-16",
+      "classification": "availability_unverified",
+      "decision": "defer",
+      "officialProductUrl": "https://www.co-coon.info/gallery",
+      "marketPrice": {
+        "amount": null,
+        "currency": null,
+        "priceTextObserved": false
+      },
+      "visibleOrderControls": [],
+      "verifiedRetailChannels": [],
+      "sourceIds": [
+        "cocoon-gallery-v9",
+        "cocoon-about-v9",
+        "kiyo-araki-maker-v9",
+        "fukuoka-crafts-v9"
+      ],
+      "rationale": "Gallery introduces designs but provides no SKU price or order control; no current public retail stockist handling these accessories is verified. Brand website existence is insufficient.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": null
+      }
+    },
+    {
+      "productId": "cocoon-frame-pierced-earrings",
+      "checkedAt": "2026-11-16",
+      "classification": "availability_unverified",
+      "decision": "defer",
+      "officialProductUrl": "https://www.co-coon.info/gallery",
+      "marketPrice": {
+        "amount": null,
+        "currency": null,
+        "priceTextObserved": false
+      },
+      "visibleOrderControls": [],
+      "verifiedRetailChannels": [],
+      "sourceIds": [
+        "cocoon-gallery-v9",
+        "cocoon-about-v9",
+        "kiyo-araki-maker-v9",
+        "fukuoka-crafts-v9"
+      ],
+      "rationale": "Gallery introduces designs but provides no SKU price or order control; no current public retail stockist handling these accessories is verified. Brand website existence is insufficient.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": null
+      }
+    },
+    {
+      "productId": "simprich-crystal-bubble-pierced-earrings",
+      "checkedAt": "2026-11-16",
+      "classification": "online_orderable_observed",
+      "decision": "keep",
+      "officialProductUrl": "https://shop.simprich.jp/products/oy-k1%EF%BC%98sha-pi-1",
+      "marketPrice": {
+        "amount": 52800,
+        "currency": "JPY",
+        "priceTextObserved": true
+      },
+      "visibleOrderControls": [
+        {
+          "tag": "BUTTON",
+          "text": "カートに追加",
+          "disabled": false,
+          "visible": true
+        }
+      ],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "yamanashi-jewelry-museum-shop",
+          "officialStoreUrl": "https://www.pref.yamanashi.jp/yjm/",
+          "sourceIds": [
+            "simprich-home-shop-v9",
+            "yamanashi-jewelry-museum-v9",
+            "yamanashi-jewelry-access-v9"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "simprich-bubble-v9",
+        "simprich-about-v9",
+        "simprich-home-shop-v9",
+        "yamanashi-jewelry-museum-v9",
+        "yamanashi-jewelry-access-v9"
+      ],
+      "rationale": "Fresh public product DOM contains the known Japanese market price and visible enabled product-order control; no purchase/cart action was executed. This does not guarantee stock at checkout or immediate dispatch.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json"
+      }
+    },
+    {
+      "productId": "simprich-rose-quartz-necklace",
+      "checkedAt": "2026-11-16",
+      "classification": "online_orderable_observed",
+      "decision": "keep",
+      "officialProductUrl": "https://shop.simprich.jp/products/k10%E3%82%A4%E3%82%A8%E3%83%AD%E3%83%BC%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89-%E3%83%AD%E3%83%BC%E3%82%BA%E3%82%AF%E3%82%A9%E3%83%BC%E3%83%84-%E3%83%8D%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B9",
+      "marketPrice": {
+        "amount": 59400,
+        "currency": "JPY",
+        "priceTextObserved": true
+      },
+      "visibleOrderControls": [
+        {
+          "tag": "BUTTON",
+          "text": "カートに追加",
+          "disabled": false,
+          "visible": true
+        }
+      ],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "yamanashi-jewelry-museum-shop",
+          "officialStoreUrl": "https://www.pref.yamanashi.jp/yjm/",
+          "sourceIds": [
+            "simprich-home-shop-v9",
+            "yamanashi-jewelry-museum-v9",
+            "yamanashi-jewelry-access-v9"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "simprich-rose-quartz-v9",
+        "simprich-about-v9",
+        "simprich-home-shop-v9",
+        "yamanashi-jewelry-museum-v9",
+        "yamanashi-jewelry-access-v9"
+      ],
+      "rationale": "Fresh public product DOM contains the known Japanese market price and visible enabled product-order control; no purchase/cart action was executed. This does not guarantee stock at checkout or immediate dispatch.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json"
+      }
+    },
+    {
+      "productId": "yukieglass-mint-veil-earrings",
+      "checkedAt": "2026-11-16",
+      "classification": "online_orderable_observed",
+      "decision": "keep",
+      "officialProductUrl": "https://www.yukieglass.net/?pid=192213845",
+      "marketPrice": {
+        "amount": 28600,
+        "currency": "JPY",
+        "priceTextObserved": true
+      },
+      "visibleOrderControls": [
+        {
+          "tag": "INPUT",
+          "text": "カートに入れる",
+          "disabled": false,
+          "visible": true
+        }
+      ],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "kitaichi-sangokan-yo",
+          "officialStoreUrl": "https://kitaichiglass.co.jp/yo/",
+          "sourceIds": [
+            "yukie-atelier-visits-v9",
+            "kitaichi-yo-store-v9",
+            "kitaichi-hours-v9",
+            "kitaichi-access-v9"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "yukie-mint-v9",
+        "yukie-accessory-origin-v9",
+        "yukie-atelier-visits-v9",
+        "kitaichi-yo-store-v9",
+        "kitaichi-hours-v9",
+        "kitaichi-access-v9"
+      ],
+      "rationale": "Fresh public product DOM contains the known Japanese market price and visible enabled product-order control; no purchase/cart action was executed. This does not guarantee stock at checkout or immediate dispatch.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json"
+      }
+    },
+    {
+      "productId": "yukieglass-rouge-veil-earrings",
+      "checkedAt": "2026-11-16",
+      "classification": "online_orderable_observed",
+      "decision": "keep",
+      "officialProductUrl": "https://www.yukieglass.net/?pid=192213864",
+      "marketPrice": {
+        "amount": 28600,
+        "currency": "JPY",
+        "priceTextObserved": true
+      },
+      "visibleOrderControls": [
+        {
+          "tag": "INPUT",
+          "text": "カートに入れる",
+          "disabled": false,
+          "visible": true
+        }
+      ],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "kitaichi-sangokan-yo",
+          "officialStoreUrl": "https://kitaichiglass.co.jp/yo/",
+          "sourceIds": [
+            "yukie-atelier-visits-v9",
+            "kitaichi-yo-store-v9",
+            "kitaichi-hours-v9",
+            "kitaichi-access-v9"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "yukie-rouge-v9",
+        "yukie-accessory-origin-v9",
+        "yukie-atelier-visits-v9",
+        "kitaichi-yo-store-v9",
+        "kitaichi-hours-v9",
+        "kitaichi-access-v9"
+      ],
+      "rationale": "Fresh public product DOM contains the known Japanese market price and visible enabled product-order control; no purchase/cart action was executed. This does not guarantee stock at checkout or immediate dispatch.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json"
+      }
+    },
+    {
+      "productId": "nakajima-pear-sakura-pendant",
+      "checkedAt": "2026-11-16",
+      "classification": "online_orderable_observed",
+      "decision": "keep",
+      "officialProductUrl": "https://www.nakajima-zougan.jp/ec-shop2/products/detail/1005",
+      "marketPrice": {
+        "amount": 16500,
+        "currency": "JPY",
+        "priceTextObserved": true
+      },
+      "visibleOrderControls": [
+        {
+          "tag": "BUTTON",
+          "text": "カートに入れる",
+          "disabled": false,
+          "visible": true
+        }
+      ],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "nakajima-zogan-arashiyama",
+          "officialStoreUrl": "https://www.nakajima-zougan.jp/access/",
+          "sourceIds": [
+            "nakajima-stores-v9"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "nakajima-pear-product-v9",
+        "nakajima-technique-v9",
+        "nakajima-cooperative-v9"
+      ],
+      "rationale": "Fresh public product DOM contains the known Japanese market price and visible enabled product-order control; no purchase/cart action was executed. This does not guarantee stock at checkout or immediate dispatch.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json"
+      }
+    },
+    {
+      "productId": "kato-suke-round-ring",
+      "checkedAt": "2026-11-16",
+      "classification": "online_orderable_observed",
+      "decision": "keep",
+      "officialProductUrl": "https://www.thebecos.com/products/s0087-044",
+      "marketPrice": {
+        "amount": 7700,
+        "currency": "JPY",
+        "priceTextObserved": true
+      },
+      "visibleOrderControls": [
+        {
+          "tag": "BUTTON",
+          "text": "カートに追加",
+          "disabled": false,
+          "visible": true
+        }
+      ],
+      "verifiedRetailChannels": [
+        {
+          "storeId": "kato-shippo-store",
+          "officialStoreUrl": "https://katoshippo.com/page/about",
+          "sourceIds": [
+            "visit-kato-official-store"
+          ],
+          "featuredSkuStockConfirmed": false
+        }
+      ],
+      "sourceIds": [
+        "becos-kato-round-ring-en-v9",
+        "becos-kato-round-ring-ja-v9",
+        "kato-shippo-brand"
+      ],
+      "rationale": "Fresh public product DOM contains the known Japanese market price and visible enabled product-order control; no purchase/cart action was executed. This does not guarantee stock at checkout or immediate dispatch.",
+      "limits": [
+        "No order, cart addition, payment, enquiry or reservation was performed.",
+        "No nationwide or all-variant stock guarantee.",
+        "Public store operation and brand handling are separate from featured-SKU store stock."
+      ],
+      "evidence": {
+        "runtime": "artifacts/legal-audit-v11/existing-availability-runtime.json",
+        "visible": "artifacts/legal-audit-v11/existing-availability-visible.json"
+      }
+    }
+  ],
+  "limitations": [
+    "Observations are dated, not a fulfilled-order or future-availability guarantee.",
+    "Shop Channel availability differs by color/fitting; at least the displayed white options have quantity selection, whereas some peacock options lack selection.",
+    "Yukieglass states online/atelier stock is shared and a later shortage is possible.",
+    "Made-to-order and supplier lead-time products may be orderable without being immediately dispatchable.",
+    "GitHub Pages commercial-hosting suitability and image/design-rights clearance are separate questions."
+  ]
+}

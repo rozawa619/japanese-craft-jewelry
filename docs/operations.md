@@ -1,4 +1,35 @@
-# 商品・店舗・画像・価格・広告・公開の更新手順 — 0.10
+# 更新手順 — 0.11 購入先の確認を公開条件にする
+
+最新版はspecs/011-legal-quality-expansion/、docs/handoff、legal-audit、adsense-review。現在42品/12都道府県/18公開技法、25AI画像/27品と公式preview15品、20店舗/37品。前版010以下の価格/広告/店舗手順は基礎として継承し、公開条件は以下を優先。
+
+## 商品追加と販売再確認
+
+1. まずdraftで、現在の公式商品本文・価格・選択肢・有効な対象購入ボタンを確認する。共通footerのcart、古いcache、galleryの存在だけを注文受付の根拠にしない。注文/cart追加/問い合わせは行わない。
+2. 公式通販を確認できない場合は、営業中の実店舗での当該ブランド/品種取扱いと価格付き現行カタログを確認。企業住所・過去催事・別商品の在庫を流用しない。明示欠品は店があるだけで公開維持しない。
+3. 出典URL/実確認日/方法/選択仕様/限界をresearchへ。catalog・訳・日英本文/story・visits・selection-notesを揃える。価格/URL/数値をnotesへ再入力しない。単位が明記される場合だけcanonical priceUnit=single-ear/pair/one-item、未知は省略。勝手な組価格への倍額換算は禁止。
+4. purchase-evidence.jsonにpublished1品につき1記録。online-orderは実観測したlinkIdと当該商品出典。retail-and-catalogは加えてvisitsに結んだstoreIdsと現行店出典。ソースのbody_readだけで実在庫確認済みとは扱わず、観測原典と手法を残す。
+5. 復帰時も再調査する。公開保留時はproduct/日英本文をdraft、notes/visits/比較ID/代表/一覧/sitemapの派生参照を更新し、商品不在になった技法本文はdraftへ。退役画像は台帳/registry/Git除外/prune/exportを一致させる。データを消して履歴まで失わない。
+6. 公式写真の許諾前はOfficialPreviewから公式へ。AIは架空成人の装い提案で、実物の形状/寸法/金具の証明や体験談ではない。短いcaptionを保ち、選定方針と近接する公式確認リンクも維持する。
+7. pnpm verify/readiness/check:quality/check:browser/check:prices/check:adsを変更範囲に応じて実行。SKU query(pid等)を別商品と混同しない。予算は国内実額、未知は0円にせず価格順では末尾、同額は編集順。ゼロ件も実データで確認し、検証のために架空品を公開しない。
+8. 公開後は対象commit/Actions成功だけで終わらず、実URLの42品/除外12URL404/価格・リンク/画像/メタ・CSPを確認。publicとpreview、subpathとroot移行は区別。現在のホストの商用適合確認を済ませる前に収益化済みとしない。
+
+## コマンドと記録
+
+    pnpm verify
+    pnpm readiness
+    pnpm check:quality
+    pnpm check:browser
+    pnpm check:prices
+    pnpm check:ads
+    pnpm check:links
+    pnpm package
+
+quality-stageが011、market-stageが010の履歴。CHECK_BASE_URL/CHECK_REPORT_PATH/CHECK_SCREENSHOT_PREFIXでlocalとhostedを分ける。公開baseは/japanese-craft-jewelry/、freshlocal既定/。ホスト移行はhosting-commercial-readiness-v11の実ドメイン設定・root・旧URL・Privacy再計測が必要で、移行準備の文書を完了扱いにしない。全ソースZIPは必須設定/lock/仕様/出典/検証/25公開画像を展開照合し、.env/認証/node_modules/dist/artifacts/内部参照写真/退役public画像を除外する。
+
+---
+
+## 010までの基礎手順（現行の公開条件は上記を優先）
+
 
 更新日：2026-11-16。AGENTS.md、docs/constitution.md、specs/010-market-prices/、docs/handoff.mdを先に読む。現行は30商品・12都道府県・13技法、28画像が全30商品へ対応。店舗13件を25商品に関連づけ、実店舗未確認の5商品は公式通販/販売案内へ進める。正本の分離とGoogleMaps外部リンク方式は008を継承。最新の実測は010validationとmarket-stage結果、地域・画像の前版実測は009validationを参照。
 

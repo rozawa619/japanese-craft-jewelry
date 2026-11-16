@@ -1,0 +1,27 @@
+---
+import {productsFor,labels} from '../lib/catalog';
+import {selectionNoteFor} from '../lib/selection-notes';
+import {pagePath} from '../config/site';
+import {t,type Locale} from '../lib/i18n';
+import MarketPrice from './MarketPrice.astro';
+interface Props{productId:string;locale:Locale}
+const {productId,locale}=Astro.props;
+const note=selectionNoteFor(productId,locale),products=productsFor(locale);
+const items=[productId,...note.compareWith].flatMap(id=>{const product=products.find(product=>product.id===id);return product?[product]:[]});
+---
+<section class="choice-details" data-choice-details aria-labelledby={'choice-title-'+productId}>
+ <header><p class="eyebrow">{t(locale,'FIND YOUR KIND OF DETAIL','違いから選ぶ、工芸ジュエリー')}</p><h2 id={'choice-title-'+productId}>{t(locale,'What draws you to this piece?','あなたの好みは、どのあたり？')}</h2></header>
+ <div class="choice-notes"><div><h3>{t(locale,'Its particular appeal','この一品ならでは')}</h3><p data-choice-difference>{note.difference}</p></div><div><h3>{t(locale,'A reason to choose it','こんな好みで選びたい')}</h3><p>{note.chooseFor}</p></div></div>
+ <div class="choice-comparison-heading"><h3>{t(locale,'Compare a few different directions.','近い候補と、並べてみる。')}</h3><p>{t(locale,'Shape, material and the Japan online reference price, side by side.','形・素材・国内通販の参考価格を、同じ項目で比べられます。')}</p></div>
+ <div class="choice-products">{items.map(product=><article class="choice-product" data-choice-product={product.id} data-choice-current={product.id===productId||undefined}>
+  <p class="choice-current">{product.id===productId?t(locale,'THIS PIECE','この商品'):labels('prefectures',product.prefectureIds,locale)||t(locale,'ANOTHER DIRECTION','別の選択肢')}</p>
+  <h4>{product.id===productId?product.title:<a href={pagePath('objects/'+product.slug+'/',locale)}>{product.title} <span aria-hidden="true">↗</span></a>}</h4>
+  <dl><div><dt>{t(locale,'Type','種類')}</dt><dd>{labels('productTypes',product.productType,locale)}</dd></div><div><dt>{t(locale,'Materials','素材')}</dt><dd>{labels('materials',product.materialIds,locale)||t(locale,'Not confirmed','未確認')}</dd></div><div><dt>{t(locale,'Size','サイズ')}</dt><dd>{product.size||t(locale,'Not listed in the official information','公式情報に記載なし')}</dd></div></dl>
+  <MarketPrice productId={product.id} locale={locale}/>
+  {product.availability==='out_of_stock'&&<p class="choice-stock">{t(locale,'Out of stock when checked','確認時点で欠品')}</p>}
+ </article>)}</div>
+</section>
+<style>
+ .choice-details{border-top:1px solid var(--line);padding:48px 0 52px;margin-top:10px}.choice-details>header{max-width:760px}.choice-details h2{font-size:clamp(28px,3vw,40px);margin-top:13px;line-height:1.3}.choice-notes{display:grid;grid-template-columns:1fr 1fr;gap:7%;margin:32px 0 40px}.choice-notes h3,.choice-comparison-heading h3{font:20px/1.5 var(--serif);letter-spacing:0;margin-bottom:10px}.choice-notes p{font-size:14px;line-height:1.9;margin:0}.choice-comparison-heading p{font-size:12px;line-height:1.8;color:var(--muted);margin-bottom:20px}.choice-products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.choice-product{border:1px solid var(--line);padding:22px;min-width:0}.choice-product[data-choice-current]{border-color:var(--forest);background:#eeeee5}.choice-current{font-size:9px;letter-spacing:1px;color:var(--muted);margin-bottom:12px}.choice-product h4{font:18px/1.5 var(--serif);margin:0 0 18px}.choice-product h4 a{text-decoration-thickness:1px}.choice-product dl{margin:0 0 20px;font-size:12px;line-height:1.8}.choice-product dl>div{margin-bottom:10px}.choice-product dt{font-size:10px;color:var(--muted)}.choice-product dd{margin:0;overflow-wrap:anywhere}.choice-stock{font-size:10px;color:var(--muted);margin-top:8px}
+ @media(max-width:720px){.choice-details{padding:34px 0}.choice-notes{grid-template-columns:1fr;gap:23px;margin:25px 0 30px}.choice-products{grid-template-columns:1fr;gap:12px}.choice-product{padding:19px}.choice-product dl{display:grid;grid-template-columns:1fr 1fr;gap:5px 18px}.choice-product dl>div:last-child{grid-column:1/-1}.choice-notes p{font-size:13px}}
+</style>

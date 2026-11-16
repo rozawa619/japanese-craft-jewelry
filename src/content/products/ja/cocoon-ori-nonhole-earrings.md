@@ -1,7 +1,7 @@
 ---
 productId: cocoon-ori-nonhole-earrings
 locale: ja
-publishStatus: published
+publishStatus: draft
 ---
 
 oriの魅力は、宝石の光ではなく、折られた布が耳元に作る輪郭。同じCO.COONのフレームシリーズが糸の線を見せるのに対し、こちらは生地の広がりを楽しむ選択肢です。顔まわりに布の表情を入れたいときに選びたい一組。

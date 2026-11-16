@@ -114,12 +114,14 @@ test('region and craft content reject unknown references and mismatched URL IDs'
 
 test('published region and craft pages need content and a published matching product', () => {
   const data = structuredClone(loadProjectData());
-  data.places[0].body = '  ';
-  data.craftNotes[0].body = '';
+  const activePages=[...data.places,...data.craftNotes].filter(record=>record.metadata.publishStatus==='published');
+  data.places.find(record=>record.metadata.publishStatus==='published')!.body = '  ';
+  data.craftNotes.find(record=>record.metadata.publishStatus==='published')!.body = '';
   data.catalog.products.forEach(product => { product.publishStatus = 'draft'; });
   const errors = collectValidationErrors(data);
   assert.equal(errors.filter(error => error.includes('published page requires a nonempty body')).length, 2);
-  assert.equal(errors.filter(error => error.includes('published page requires a related published product')).length, data.places.length + data.craftNotes.length);
+  assert.equal(errors.filter(error => error.includes('published page requires a related published product')).length, activePages.length);
+  for(const page of activePages)assert.ok(errors.some(error=>error.includes(page.file)&&error.includes('published page requires a related published product')));
   for (const record of [...data.places, ...data.craftNotes]) record.metadata.publishStatus = 'draft';
   const draftErrors = collectValidationErrors(data);
   assert.equal(draftErrors.some(error => error.includes('published page requires')), false);

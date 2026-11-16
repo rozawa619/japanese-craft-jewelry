@@ -1,0 +1,125 @@
+{
+  "version": "0.10.0",
+  "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
+  "branch": "main",
+  "status": "deployed_and_verified",
+  "applicationCommit": "9b15f21c5932bb20c1584a99fa0288c8c3e867d0",
+  "actions": {
+    "id": 43871283478,
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/43871283478",
+    "workflowUpdatedAt": "2026-11-16T12:58:32Z"
+  },
+  "previousDeployedVersion": "0.9.0",
+  "previousDeployedApplicationCommit": "e74cab62b76071867fd9ebd6991aebcbea05ae2b",
+  "publicUrls": {
+    "entry": "https://rozawa619.github.io/japanese-craft-jewelry/",
+    "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+    "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/"
+  },
+  "content": {
+    "products": 30,
+    "prefectures": 12,
+    "crafts": 13,
+    "currentImages": 28,
+    "missingImages": 0,
+    "stores": 13,
+    "productsWithStores": 25,
+    "sources": 132
+  },
+  "pricing": {
+    "primaryMarket": "japan",
+    "primaryLocales": [
+      "ja",
+      "en"
+    ],
+    "internationalPrice": "separate verified storefront price",
+    "currencyConversion": false,
+    "physicalStorePrices": "unconfirmed"
+  },
+  "localVerification": {
+    "typeFiles": 71,
+    "unitTestsPassed": 62,
+    "generatedHtmlPages": 170,
+    "hrefSrcReferences": 8662,
+    "anchors": 1177,
+    "ordinaryRetailerLinks": 618,
+    "sponsoredLinks": 0,
+    "inlineScriptHashes": 373,
+    "inertJsonBlocks": 154,
+    "focused": "docs/market-stage-browser-results.json",
+    "full": "docs/market-stage-full-browser-results.json",
+    "ads": "docs/market-stage-ad-build-results.json",
+    "adScenariosPassed": 6,
+    "focusedSummary": {
+      "checks": 79,
+      "passed": 79,
+      "failed": 0,
+      "dualMarketProducts": 9,
+      "productDetailChecks": 66,
+      "axeScreens": 18,
+      "axeViolations": 0,
+      "screenshots": 6,
+      "pageErrors": 0,
+      "consoleErrors": 0
+    },
+    "fullStatus": "passed",
+    "fullSummary": {
+      "checks": 256,
+      "passed": 256,
+      "failed": 0,
+      "pages": 222,
+      "axeViolations": 0,
+      "screenshots": 31,
+      "axeScreens": 198
+    },
+    "fullAxeScreens": 198
+  },
+  "hostedVerification": {
+    "status": "passed",
+    "focused": "docs/market-stage-hosted-browser-results.json",
+    "manual": "docs/market-stage-hosted-manual-results.json",
+    "supplement": "docs/market-stage-hosted-supplement-results.json",
+    "supplementStatus": "passed",
+    "supplementSummary": {
+      "checks": 20,
+      "passed": 20,
+      "failed": 0,
+      "canonicalUrls": 154,
+      "uniqueImages": 28,
+      "pageErrors": 0,
+      "consoleErrors": 0
+    },
+    "focusedStatus": "passed",
+    "focusedSummary": {
+      "checks": 79,
+      "passed": 79,
+      "failed": 0,
+      "dualMarketProducts": 9,
+      "productDetailChecks": 66,
+      "axeScreens": 18,
+      "axeViolations": 0,
+      "screenshots": 6,
+      "pageErrors": 0,
+      "consoleErrors": 0
+    },
+    "manualStatus": "passed",
+    "manualSummary": {
+      "checks": 12,
+      "passed": 12,
+      "failed": 0,
+      "screenshots": 12,
+      "pageErrors": 0,
+      "consoleErrors": 0
+    },
+    "applicationCommit": "9b15f21c5932bb20c1584a99fa0288c8c3e867d0"
+  },
+  "updatedAt": "2026-11-16T13:02:17.036Z",
+  "limitations": [
+    "No physical-store price or stock guarantee.",
+    "No exchange-rate or all-in shipping/tax price claim.",
+    "No affiliate application, approval or AdSense setup."
+  ],
+  "verifiedAt": "2026-11-16T13:02:17.036Z"
+}

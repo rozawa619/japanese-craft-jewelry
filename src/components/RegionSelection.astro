@@ -1,6 +1,6 @@
 ---
 import EditorialImage from './EditorialImage.astro';
-import Pattern from './Pattern.astro';
+import OfficialPreview from './OfficialPreview.astro';
 import {catalogFor,productsFor,labels} from '../lib/catalog';
 import MarketPrice from './MarketPrice.astro';
 import {productImageFor} from '../lib/editorial-images';
@@ -41,7 +41,7 @@ const groups=hasRanking?[
  {hasRanking&&<p class="region-ranking-note" data-tourism-ranking-note>{t(locale,`Ordered by prefectural visit rate in ${tourismRanking.year}: all nationalities and purposes, with multiple answers allowed. This ranks travel destinations; the jewelry is selected by us.`,`${tourismRanking.year}年の訪日客の訪問率順。全目的・全国籍地域・複数回答の調査です。商品の人気順位ではありません。`)} <a href={tourismRanking.sourceUrl!} target="_blank" rel="noopener noreferrer">{tourismRanking.sourceTitle[locale]}<span class="sr-only">{t(locale,' (opens in a new tab)','（新しいタブで開く）')}</span> ↗</a></p>}
  {groups.filter(group=>group.rows.length>0).map(group=><div class="region-selection-group" data-region-group={group.kind}>
   {group.title&&<h3 class="region-group-title">{group.title}</h3>}
-  <div class="region-selection-rows">{group.rows.map(({region,note,local,representative,rank,image},index)=>{
+  <div class="region-selection-rows">{group.rows.map(({region,note,local,representative,rank,image})=>{
    const regionalUrl=pagePath(`places/${contentSlug(note)}/`,locale);
    const productUrl=pagePath(`objects/${representative.slug}/`,locale);
    const crafts=[...new Set(local.flatMap(product=>product.craftIds))];
@@ -55,7 +55,7 @@ const groups=hasRanking?[
      {rank&&<p class="region-visit-rate">{t(locale,`${tourismRanking.year} visit rate: ${rank.visitRatePercent.toFixed(1)}%`,`${tourismRanking.year}年 訪問率 ${rank.visitRatePercent.toFixed(1)}%`)}</p>}
     </div>
     <div class="region-selection-piece" data-representative-product={representative.id}>
-     <a class="region-selection-image-link" href={productUrl} aria-label={image?t(locale,`View ${representative.title} — AI image`,`${representative.title}を見る — AIイメージ`):undefined}>{!image&&<span class="sr-only">{t(locale,`View ${representative.title}`,`${representative.title}を見る`)}</span>}{image?<EditorialImage image={image} locale={locale}/>:<Pattern variant={index} locale={locale}/>}</a>
+     <a class="region-selection-image-link" href={productUrl} aria-label={image?t(locale,`View ${representative.title} — AI image`,`${representative.title}を見る — AIイメージ`):undefined}>{!image&&<span class="sr-only">{t(locale,`View ${representative.title}`,`${representative.title}を見る`)}</span>}{image?<EditorialImage image={image} locale={locale}/>:<OfficialPreview product={representative} locale={locale}/>}</a>
      <div class="region-selection-piece-caption"><div><p class="eyebrow">{t(locale,'A PIECE TO DISCOVER','この産地から、ひとつ')}</p><h4><a href={productUrl}>{representative.title}</a></h4></div><div class="region-piece-price"><MarketPrice productId={representative.id} locale={locale}/><span>{t(locale,'View the piece','商品を見る')} →</span></div></div>
     </div>
    </article>

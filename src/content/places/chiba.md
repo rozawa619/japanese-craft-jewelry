@@ -1,14 +1,14 @@
 ---
 title: "Craft jewelry from Chiba"
-description: "Glass pendants and bracelets from a studio in Kamogawa."
+description: "ARCOS studio glass and Sghr jewelry from Kujukuri: pendants, bracelets, pierced earrings and an ear cuff."
 locale: en
 publishStatus: published
 updatedAt: "2026-11-16"
-sourceIds: ["arcos-studio-v9","arcos-atelier-v9"]
+sourceIds: ["arcos-studio-v9","arcos-atelier-v9","arcos-cosmic-spiral-v9","arcos-cosmic-bracelet-v9","sghr-tietie-pierced-v11","sghr-kujukuri-workshop-v11","sghr-kolmio-earcuff-v11"]
 prefectureId: chiba
 relatedMerchantIds: []
 ---
 
-Explore two ways to wear glass from Atelier ARCOS, a maker based in Kamogawa: a pendant at the neckline and a bracelet at the wrist. These are contemporary oxygen-burner-worked studio pieces.
+Chiba’s glass selection now includes ARCOS in Kamogawa and Sghr Sugahara in Kujukuri. ARCOS introduces burner-worked studio glass; Sghr identifies its Kujukuri workshop as the place where its products are made. The origin of every fitting is not established by that workshop connection.
 
-Each product links to the gallery's official access information and map. Check the individual piece's physical availability before planning a visit.
+Compare the pattern inside an ARCOS pendant or bracelet with Sghr’s Tie-tie pierced design and triangular Kolmio ear cuff. The cuff’s opening dimensions are not published, so its fit should not be assumed from the decorative glass dimensions alone.

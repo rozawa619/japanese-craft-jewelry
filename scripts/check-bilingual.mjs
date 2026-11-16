@@ -11,7 +11,7 @@ import {fileURLToPath} from 'node:url';
 const root=fileURLToPath(new URL('../',import.meta.url));
 if(existsSync(resolve(root,'.env')))process.loadEnvFile(resolve(root,'.env'));
 const origin=process.env.CHECK_BASE_URL||'http://127.0.0.1:4321';
-const screenshotPrefix=(process.env.CHECK_SCREENSHOT_PREFIX||'market-stage-full').replace(/[^a-zA-Z0-9_-]/g,'-');
+const screenshotPrefix=(process.env.CHECK_SCREENSHOT_PREFIX||'quality-stage-full').replace(/[^a-zA-Z0-9_-]/g,'-');
 const base='/'+(process.env.PUBLIC_BASE_PATH||'').split('/').filter(Boolean).join('/')+((process.env.PUBLIC_BASE_PATH||'').split('/').filter(Boolean).length?'/':'');
 const route=(locale,path='')=>new URL(base+locale+'/'+path,origin).href;
 const catalog=JSON.parse(await readFile(resolve(root,'src/data/catalog.json'),'utf8'));
@@ -19,9 +19,11 @@ const editorialImages=JSON.parse(await readFile(resolve(root,'src/data/editorial
 const visits=JSON.parse(await readFile(resolve(root,'src/data/visits.json'),'utf8'));
 const published=catalog.products.filter(product=>product.publishStatus==='published');
 const longest=[...published].sort((a,b)=>b.title.length-a.title.length)[0];
-const selectedIds=['hamamatsuya-catch-pierced','hamamatsuya-clip'];
-const selected=selectedIds.map(id=>published.find(product=>product.id===id));
-if(selected.some(product=>!product))throw new Error('Selected product is missing from the published catalog.');
+const firstSelection=published.find(product=>product.id==='hamamatsuya-catch-pierced')||published.find(product=>product.productType.includes('pierced-earrings'))||published[0];
+const secondSelection=published.find(product=>product.id==='hamamatsuya-clip')||published.find(product=>product.productType.includes('clip-on-earrings')&&product.id!==firstSelection?.id)||published.find(product=>product.id!==firstSelection?.id);
+const selected=[firstSelection,secondSelection];
+if(selected.some(product=>!product))throw new Error('Two real published selections are required for the browser comparison.');
+const selectedIds=selected.map(product=>product.id);
 const featuredByKind={featurePierced:selected[0],featureClip:selected[1],...Object.fromEntries(published.filter(product=>editorialImages[product.id]&&!selectedIds.includes(product.id)).map((product,index)=>['featureAdditional'+index,product]))};
 const unillustrated=Object.fromEntries(published.filter(product=>!editorialImages[product.id]).map((product,index)=>['productAdditional'+index,product]));
 const routes={...Object.fromEntries(Object.entries(unillustrated).map(([kind,product])=>[kind,'objects/'+product.slug+'/'])),home:'',objects:'objects/',product:'objects/'+longest.slug+'/',...Object.fromEntries(Object.entries(featuredByKind).map(([kind,product])=>[kind,'objects/'+product.slug+'/'])),regions:'places/',region:'places/kanagawa/',craft:'crafts/hakone-yosegi/',policy:'editorial-policy/'};
@@ -138,8 +140,8 @@ try{
      if(kind==='home'){
       for(const figure of await page.locator('figure[data-editorial-asset]').all())assertStylingDisclosure(await figure.locator('figcaption').innerText(),locale);
      }
-     if(['home','objects','regions'].includes(kind))await assertRegionSelection(page,locale,catalog);
-     if(kind.startsWith('feature')){
+     if(['home','objects','regions'].includes(kind))await assertRegionSelection(page,locale,catalog,editorialImages);
+     if(kind.startsWith('feature')&&editorialImages[featuredByKind[kind].id]){
       const figure=page.locator('figure[data-editorial-asset]').first();
       assert.equal(await figure.count(),1);
       assert.equal(await figure.locator('figcaption').isVisible(),true,'AI image label must remain visible.');assertStylingDisclosure(await figure.locator('figcaption').innerText(),locale);
@@ -155,6 +157,12 @@ try{
      }
      const activeProduct=kind.startsWith('feature')?featuredByKind[kind]:kind==='product'?longest:unillustrated[kind]||null;
      if(activeProduct){
+      if(!editorialImages[activeProduct.id]){
+       const visual=page.locator('.purchase-visual');
+       assert.equal(await visual.locator('[data-official-preview]').count(),1,'An unillustrated product needs the factual official-photo preview, not an invented photograph.');
+       assert.equal(await visual.locator('img').count(),0);
+       assert.equal(await visual.locator('a[data-official-visual-url]').count(),1);
+      }
       // Independent source-data oracle: language never changes the main Japan market.
       const sourceLinks=catalog.links.filter(link=>link.productId===activeProduct.id);
       const official=sourceLinks.find(link=>link.locale==='ja')||sourceLinks.find(link=>!link.locale&&(!activeProduct.priceCurrency||activeProduct.priceCurrency==='JPY'));
@@ -175,7 +183,7 @@ try{
      if(kind==='product'||kind.startsWith('feature')||kind.startsWith('productAdditional'))purchaseFlow=await assertProductFlow(page,locale);
      if(kind==='objects'){
       const images=page.locator('[data-product-card] figure[data-editorial-asset]');
-      assert.ok(await images.count()>=2,'Both selected products should show their labeled styling images.');
+      assert.equal(await images.count(),published.filter(product=>editorialImages[product.id]).length,'Only source-registered published styling images should appear on cards.');
       for(const figure of await images.all()){assertStylingDisclosure(await figure.locator('figcaption').innerText(),locale);}
      }
      const measured=['home','objects','product'].includes(kind)||kind.startsWith('feature')||kind.startsWith('productAdditional');
@@ -322,8 +330,8 @@ try{
  await browser.close();
  report.completedAt=new Date().toISOString();
  report.finalizedAt=report.completedAt;
- report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,pages:report.pages.length,axeScreens:report.pages.filter(page=>page.axeViolations!==null).length,axeViolations:report.pages.reduce((sum,page)=>sum+(page.axeViolations?.length||0),0),screenshots:report.screenshots.length};
- await writeFile(resolve(root,process.env.CHECK_REPORT_PATH||'docs/market-stage-full-browser-results.json'),JSON.stringify(report,null,2)+'\n');
+ report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,pages:report.pages.length,pageVisits:report.pages.length,uniqueRoutes:new Set(report.pages.map(page=>new URL(page.url).pathname)).size,axeScreens:report.pages.filter(page=>page.axeViolations!==null).length,axeViolations:report.pages.reduce((sum,page)=>sum+(page.axeViolations?.length||0),0),screenshots:report.screenshots.length};
+ await writeFile(resolve(root,process.env.CHECK_REPORT_PATH||'docs/quality-stage-full-browser-results.json'),JSON.stringify(report,null,2)+'\n');
  console.log(JSON.stringify(report.summary));
  if(report.failures.length)process.exitCode=1;
 }

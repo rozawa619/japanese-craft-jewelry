@@ -1,0 +1,3461 @@
+{
+  "checkedAt": "2026-11-16T14:47:58.610Z",
+  "checkedDateJapan": "2026-11-16",
+  "method": "HTTPS GET, redirect-follow, 15-second timeout, concurrency 4; response bodies canceled after headers",
+  "interpretation": "Reachability only; does not confirm product facts, eligibility, licensing, active stock or approval. Restricted, missing, temporary and network results require manual recheck; no result alone proves closure.",
+  "inputFiles": [
+    "src/data/catalog.json",
+    "docs/research/sources.json",
+    "docs/research/affiliate-sources.json"
+  ],
+  "total": 256,
+  "summary": {
+    "reachable": 247,
+    "review_access_restricted": 6,
+    "review_temporary_server_error": 2,
+    "review_not_found": 1
+  },
+  "results": [
+    {
+      "url": "https://www.hamamatsuya.co.jp/",
+      "references": [
+        "src/data/catalog.json.makers[0].url",
+        "src/data/catalog.json.merchants[0].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hamamatsuya.co.jp/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 522
+    },
+    {
+      "url": "https://www.hakonemaruyama.co.jp/shopbrand/ct36/",
+      "references": [
+        "src/data/catalog.json.makers[1].url",
+        "docs/research/sources.json[7].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonemaruyama.co.jp/shopbrand/ct36/",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 257
+    },
+    {
+      "url": "https://en.thebecos.com/collections/rinzen",
+      "references": [
+        "src/data/catalog.json.makers[2].url",
+        "docs/research/sources.json[36].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/collections/rinzen",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 270
+    },
+    {
+      "url": "https://en.thebecos.com/collections/6-kiln",
+      "references": [
+        "src/data/catalog.json.makers[3].url",
+        "docs/research/sources.json[39].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/collections/6-kiln",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 260
+    },
+    {
+      "url": "https://en.thebecos.com/collections/2016-saskia-diez",
+      "references": [
+        "src/data/catalog.json.makers[4].url",
+        "docs/research/sources.json[49].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/collections/2016-saskia-diez",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 191
+    },
+    {
+      "url": "https://en.thebecos.com/collections/checos",
+      "references": [
+        "src/data/catalog.json.makers[5].url",
+        "docs/research/sources.json[52].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/collections/checos",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 206
+    },
+    {
+      "url": "https://en.thebecos.com/collections/morphosphere",
+      "references": [
+        "src/data/catalog.json.makers[6].url",
+        "docs/research/sources.json[55].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/collections/morphosphere",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 220
+    },
+    {
+      "url": "https://en.thebecos.com/collections/kato-shippo-seisakusyo",
+      "references": [
+        "src/data/catalog.json.makers[7].url",
+        "docs/research/sources.json[58].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/collections/kato-shippo-seisakusyo",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 238
+    },
+    {
+      "url": "https://arcos.glass/",
+      "references": [
+        "src/data/catalog.json.makers[8].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://arcos.glass/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 1531
+    },
+    {
+      "url": "https://www.shopch.jp/pc/product/prodlist/brand?brandCode=00713",
+      "references": [
+        "src/data/catalog.json.makers[9].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.shopch.jp/pc/product/prodlist/brand?brandCode=00713",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 773
+    },
+    {
+      "url": "https://jqppy767.wixsite.com/website",
+      "references": [
+        "src/data/catalog.json.makers[10].url",
+        "src/data/catalog.json.merchants[6].url",
+        "docs/research/sources.json[99].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://jqppy767.wixsite.com/website",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 234
+    },
+    {
+      "url": "https://www.co-coon.info/",
+      "references": [
+        "src/data/catalog.json.makers[11].url",
+        "src/data/catalog.json.merchants[7].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.co-coon.info/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 163
+    },
+    {
+      "url": "https://shop.simprich.jp/",
+      "references": [
+        "src/data/catalog.json.makers[12].url",
+        "src/data/catalog.json.merchants[8].url",
+        "docs/research/sources.json[109].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://shop.simprich.jp/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 337
+    },
+    {
+      "url": "https://www.yukieglass.net/",
+      "references": [
+        "src/data/catalog.json.makers[13].url",
+        "src/data/catalog.json.merchants[9].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.yukieglass.net/",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 197
+    },
+    {
+      "url": "https://www.nakajima-zougan.jp/",
+      "references": [
+        "src/data/catalog.json.makers[14].url",
+        "src/data/catalog.json.merchants[10].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.nakajima-zougan.jp/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 122
+    },
+    {
+      "url": "https://tokyo-shippou.com/",
+      "references": [
+        "src/data/catalog.json.makers[15].url",
+        "src/data/catalog.json.merchants[11].url"
+      ],
+      "method": "GET",
+      "status": 403,
+      "finalUrl": "https://tokyo-shippou.com/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "review_access_restricted",
+      "durationMs": 69
+    },
+    {
+      "url": "https://izumi-tombodama.com/",
+      "references": [
+        "src/data/catalog.json.makers[16].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://izumi-tombodama.com/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 112
+    },
+    {
+      "url": "https://www.sugahara.com/",
+      "references": [
+        "src/data/catalog.json.makers[17].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.sugahara.com/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 146
+    },
+    {
+      "url": "https://www.kazarino.com/",
+      "references": [
+        "src/data/catalog.json.makers[18].url",
+        "src/data/catalog.json.merchants[14].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.kazarino.com/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 103
+    },
+    {
+      "url": "https://www.showen.co.jp/",
+      "references": [
+        "src/data/catalog.json.makers[19].url",
+        "docs/research/sources.json[213].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.showen.co.jp/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 197
+    },
+    {
+      "url": "https://www.urushikoubou-iwaya.jp/",
+      "references": [
+        "src/data/catalog.json.makers[20].url",
+        "src/data/catalog.json.merchants[16].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.urushikoubou-iwaya.jp/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 139
+    },
+    {
+      "url": "https://toytoy.jp/",
+      "references": [
+        "src/data/catalog.json.makers[21].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://toytoy.jp/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 306
+    },
+    {
+      "url": "https://tamura-shippo.com/",
+      "references": [
+        "src/data/catalog.json.makers[22].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://tamura-shippo.com/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 185
+    },
+    {
+      "url": "https://nanaosyuka.amebaownd.com/",
+      "references": [
+        "src/data/catalog.json.makers[23].url",
+        "docs/research/sources.json[227].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://nanaosyuka.amebaownd.com/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 297
+    },
+    {
+      "url": "https://www.hario-lwf.com/",
+      "references": [
+        "src/data/catalog.json.makers[24].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hario-lwf.com/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 299
+    },
+    {
+      "url": "https://www.hakonemaruyama.co.jp/",
+      "references": [
+        "src/data/catalog.json.merchants[1].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonemaruyama.co.jp/",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 270
+    },
+    {
+      "url": "https://en.thebecos.com/",
+      "references": [
+        "src/data/catalog.json.merchants[2].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 198
+    },
+    {
+      "url": "https://www.thebecos.com/",
+      "references": [
+        "src/data/catalog.json.merchants[3].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.thebecos.com/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 902
+    },
+    {
+      "url": "https://www.creema.jp/c/arcos",
+      "references": [
+        "src/data/catalog.json.merchants[4].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.creema.jp/c/arcos",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 1105
+    },
+    {
+      "url": "https://www.shopch.jp/",
+      "references": [
+        "src/data/catalog.json.merchants[5].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.shopch.jp/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 88
+    },
+    {
+      "url": "https://sangetsu.myshopify.com/",
+      "references": [
+        "src/data/catalog.json.merchants[12].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://sangetsu.myshopify.com/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 1009
+    },
+    {
+      "url": "https://shop.sugahara.com/",
+      "references": [
+        "src/data/catalog.json.merchants[13].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://shop.sugahara.com/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 320
+    },
+    {
+      "url": "https://shop.showen.co.jp/",
+      "references": [
+        "src/data/catalog.json.merchants[15].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://shop.showen.co.jp/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 1295
+    },
+    {
+      "url": "https://toytoy-ya.com/",
+      "references": [
+        "src/data/catalog.json.merchants[17].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://toytoy-ya.com/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 174
+    },
+    {
+      "url": "https://tamura.buyshop.jp/",
+      "references": [
+        "src/data/catalog.json.merchants[18].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://tamura.buyshop.jp/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 1086
+    },
+    {
+      "url": "https://www.creema.jp/c/nanaoglass",
+      "references": [
+        "src/data/catalog.json.merchants[19].url",
+        "docs/research/sources.json[228].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.creema.jp/c/nanaoglass",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 1014
+    },
+    {
+      "url": "https://shop.hariocorp.co.jp/",
+      "references": [
+        "src/data/catalog.json.merchants[20].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://shop.hariocorp.co.jp/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 313
+    },
+    {
+      "url": "https://en.thebecos.com/pages/become-a-becos-affiliate",
+      "references": [
+        "src/data/catalog.json.programs[0].recruitmentUrl",
+        "docs/research/sources.json[16].url",
+        "docs/research/affiliate-sources.json[0].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/pages/become-a-becos-affiliate",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 226
+    },
+    {
+      "url": "https://becos-en.goaffpro.com/",
+      "references": [
+        "src/data/catalog.json.programs[0].applicationUrl",
+        "docs/research/sources.json[17].url",
+        "docs/research/affiliate-sources.json[1].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://becos-en.goaffpro.com/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 249
+    },
+    {
+      "url": "https://millenniumgalleryjp.com/pages/collaboration-and-partnership",
+      "references": [
+        "src/data/catalog.json.programs[1].recruitmentUrl",
+        "src/data/catalog.json.programs[1].applicationUrl",
+        "docs/research/sources.json[18].url",
+        "docs/research/affiliate-sources.json[2].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://millenniumgalleryjp.com/pages/collaboration-and-partnership",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 1110
+    },
+    {
+      "url": "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html",
+      "references": [
+        "src/data/catalog.json.links[0].officialProductUrl",
+        "src/data/catalog.json.links[1].officialProductUrl",
+        "src/data/catalog.json.links[2].officialProductUrl",
+        "src/data/catalog.json.links[4].officialProductUrl",
+        "docs/research/sources.json[0].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 85
+    },
+    {
+      "url": "https://www.hamamatsuya.co.jp/item/muku/accessory.html",
+      "references": [
+        "src/data/catalog.json.links[3].officialProductUrl",
+        "docs/research/sources.json[1].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hamamatsuya.co.jp/item/muku/accessory.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 53
+    },
+    {
+      "url": "https://www.hakonemaruyama.co.jp/shopdetail/000000000467/",
+      "references": [
+        "src/data/catalog.json.links[5].officialProductUrl",
+        "docs/research/sources.json[8].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonemaruyama.co.jp/shopdetail/000000000467/",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 128
+    },
+    {
+      "url": "https://www.hakonemaruyama.co.jp/shopdetail/000000000468/",
+      "references": [
+        "src/data/catalog.json.links[6].officialProductUrl",
+        "docs/research/sources.json[9].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonemaruyama.co.jp/shopdetail/000000000468/",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 223
+    },
+    {
+      "url": "https://www.hakonemaruyama.co.jp/shopdetail/000000000473/",
+      "references": [
+        "src/data/catalog.json.links[7].officialProductUrl",
+        "docs/research/sources.json[10].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonemaruyama.co.jp/shopdetail/000000000473/",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 202
+    },
+    {
+      "url": "https://www.hakonemaruyama.co.jp/shopdetail/000000000474/",
+      "references": [
+        "src/data/catalog.json.links[8].officialProductUrl",
+        "docs/research/sources.json[11].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonemaruyama.co.jp/shopdetail/000000000474/",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 161
+    },
+    {
+      "url": "https://en.thebecos.com/products/s0138-028?currency=USD",
+      "references": [
+        "src/data/catalog.json.links[9].officialProductUrl",
+        "docs/research/sources.json[34].url",
+        "docs/research/sources.json[126].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/products/s0138-028?currency=USD",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 209
+    },
+    {
+      "url": "https://en.thebecos.com/products/s0164-018?currency=USD",
+      "references": [
+        "src/data/catalog.json.links[10].officialProductUrl",
+        "docs/research/sources.json[37].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/products/s0164-018?currency=USD",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 182
+    },
+    {
+      "url": "https://en.thebecos.com/products/s0138-099?currency=USD",
+      "references": [
+        "src/data/catalog.json.links[11].officialProductUrl",
+        "docs/research/sources.json[43].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/products/s0138-099?currency=USD",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 298
+    },
+    {
+      "url": "https://en.thebecos.com/products/s0164-016?currency=USD",
+      "references": [
+        "src/data/catalog.json.links[12].officialProductUrl",
+        "docs/research/sources.json[45].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/products/s0164-016?currency=USD",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 270
+    },
+    {
+      "url": "https://en.thebecos.com/products/s0007-054?currency=USD",
+      "references": [
+        "src/data/catalog.json.links[13].officialProductUrl",
+        "docs/research/sources.json[47].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/products/s0007-054?currency=USD",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 193
+    },
+    {
+      "url": "https://en.thebecos.com/products/s0050-015?currency=USD",
+      "references": [
+        "src/data/catalog.json.links[14].officialProductUrl",
+        "docs/research/sources.json[50].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/products/s0050-015?currency=USD",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 149
+    },
+    {
+      "url": "https://en.thebecos.com/products/s0124-032?currency=USD",
+      "references": [
+        "src/data/catalog.json.links[15].officialProductUrl",
+        "docs/research/sources.json[53].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/products/s0124-032?currency=USD",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 188
+    },
+    {
+      "url": "https://en.thebecos.com/products/s0087-093?currency=USD",
+      "references": [
+        "src/data/catalog.json.links[16].officialProductUrl",
+        "docs/research/sources.json[56].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/products/s0087-093?currency=USD",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 169
+    },
+    {
+      "url": "https://www.thebecos.com/products/s0138-099",
+      "references": [
+        "src/data/catalog.json.links[17].officialProductUrl",
+        "docs/research/sources.json[44].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.thebecos.com/products/s0138-099",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 352
+    },
+    {
+      "url": "https://www.thebecos.com/products/s0164-016",
+      "references": [
+        "src/data/catalog.json.links[18].officialProductUrl",
+        "docs/research/sources.json[46].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.thebecos.com/products/s0164-016",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 408
+    },
+    {
+      "url": "https://www.thebecos.com/products/s0007-054",
+      "references": [
+        "src/data/catalog.json.links[19].officialProductUrl",
+        "docs/research/sources.json[48].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.thebecos.com/products/s0007-054",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 342
+    },
+    {
+      "url": "https://www.thebecos.com/products/s0050-015",
+      "references": [
+        "src/data/catalog.json.links[20].officialProductUrl",
+        "docs/research/sources.json[51].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.thebecos.com/products/s0050-015",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 647
+    },
+    {
+      "url": "https://www.thebecos.com/products/s0124-032",
+      "references": [
+        "src/data/catalog.json.links[21].officialProductUrl",
+        "docs/research/sources.json[54].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.thebecos.com/products/s0124-032",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 358
+    },
+    {
+      "url": "https://www.thebecos.com/products/s0087-093",
+      "references": [
+        "src/data/catalog.json.links[22].officialProductUrl",
+        "docs/research/sources.json[57].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.thebecos.com/products/s0087-093",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 279
+    },
+    {
+      "url": "https://www.thebecos.com/products/s0138-028",
+      "references": [
+        "src/data/catalog.json.links[23].officialProductUrl",
+        "docs/research/sources.json[35].url",
+        "docs/research/sources.json[125].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.thebecos.com/products/s0138-028",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 402
+    },
+    {
+      "url": "https://www.thebecos.com/products/s0164-018",
+      "references": [
+        "src/data/catalog.json.links[24].officialProductUrl",
+        "docs/research/sources.json[38].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.thebecos.com/products/s0164-018",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 348
+    },
+    {
+      "url": "https://www.creema.jp/item/9489033/detail",
+      "references": [
+        "src/data/catalog.json.links[25].officialProductUrl",
+        "docs/research/sources.json[91].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.creema.jp/item/9489033/detail",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 361
+    },
+    {
+      "url": "https://www.creema.jp/item/18047443/detail",
+      "references": [
+        "src/data/catalog.json.links[26].officialProductUrl",
+        "docs/research/sources.json[92].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.creema.jp/item/18047443/detail",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 350
+    },
+    {
+      "url": "https://www.shopch.jp/pc/product/proddetail?reqprno=819642",
+      "references": [
+        "src/data/catalog.json.links[27].officialProductUrl",
+        "docs/research/sources.json[96].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.shopch.jp/pc/product/proddetail?reqprno=819642",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 211
+    },
+    {
+      "url": "https://www.shopch.jp/pc/product/proddetail?reqprno=810335",
+      "references": [
+        "src/data/catalog.json.links[28].officialProductUrl",
+        "docs/research/sources.json[97].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.shopch.jp/pc/product/proddetail?reqprno=810335",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 249
+    },
+    {
+      "url": "https://jqppy767.wixsite.com/website/product-page/%E8%9E%BA%E9%88%BF%E3%83%9A%E3%83%B3%E3%83%80%E3%83%B3%E3%83%88-%E5%AE%9D%E7%9B%B8%E8%8F%AF",
+      "references": [
+        "src/data/catalog.json.links[29].officialProductUrl",
+        "docs/research/sources.json[100].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://jqppy767.wixsite.com/website/product-page/%E8%9E%BA%E9%88%BF%E3%83%9A%E3%83%B3%E3%83%80%E3%83%B3%E3%83%88-%E5%AE%9D%E7%9B%B8%E8%8F%AF",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 192
+    },
+    {
+      "url": "https://jqppy767.wixsite.com/website/product-page/%E5%95%86%E5%93%81%E5%90%8D-%E8%92%94%E7%B5%B5%E6%8C%87%E8%BC%AA-%E8%93%AE-makie-ring-lotus",
+      "references": [
+        "src/data/catalog.json.links[30].officialProductUrl",
+        "docs/research/sources.json[101].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://jqppy767.wixsite.com/website/product-page/%E5%95%86%E5%93%81%E5%90%8D-%E8%92%94%E7%B5%B5%E6%8C%87%E8%BC%AA-%E8%93%AE-makie-ring-lotus",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 131
+    },
+    {
+      "url": "https://www.co-coon.info/gallery",
+      "references": [
+        "src/data/catalog.json.links[31].officialProductUrl",
+        "src/data/catalog.json.links[32].officialProductUrl",
+        "docs/research/sources.json[102].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.co-coon.info/gallery",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 221
+    },
+    {
+      "url": "https://shop.simprich.jp/products/oy-k1%EF%BC%98sha-pi-1",
+      "references": [
+        "src/data/catalog.json.links[33].officialProductUrl",
+        "docs/research/sources.json[107].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://shop.simprich.jp/products/oy-k1%EF%BC%98sha-pi-1",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 398
+    },
+    {
+      "url": "https://shop.simprich.jp/products/k10%E3%82%A4%E3%82%A8%E3%83%AD%E3%83%BC%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89-%E3%83%AD%E3%83%BC%E3%82%BA%E3%82%AF%E3%82%A9%E3%83%BC%E3%83%84-%E3%83%8D%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B9",
+      "references": [
+        "src/data/catalog.json.links[34].officialProductUrl",
+        "docs/research/sources.json[108].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://shop.simprich.jp/products/k10%E3%82%A4%E3%82%A8%E3%83%AD%E3%83%BC%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89-%E3%83%AD%E3%83%BC%E3%82%BA%E3%82%AF%E3%82%A9%E3%83%BC%E3%83%84-%E3%83%8D%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B9",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 426
+    },
+    {
+      "url": "https://www.yukieglass.net/?pid=192213845",
+      "references": [
+        "src/data/catalog.json.links[35].officialProductUrl",
+        "docs/research/sources.json[113].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.yukieglass.net/?pid=192213845",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 497
+    },
+    {
+      "url": "https://www.yukieglass.net/?pid=192213864",
+      "references": [
+        "src/data/catalog.json.links[36].officialProductUrl",
+        "docs/research/sources.json[114].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.yukieglass.net/?pid=192213864",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 317
+    },
+    {
+      "url": "https://www.nakajima-zougan.jp/ec-shop2/products/detail/1005",
+      "references": [
+        "src/data/catalog.json.links[37].officialProductUrl",
+        "docs/research/sources.json[119].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.nakajima-zougan.jp/ec-shop2/products/detail/1005",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 324
+    },
+    {
+      "url": "https://en.thebecos.com/products/s0087-044?currency=USD",
+      "references": [
+        "src/data/catalog.json.links[38].officialProductUrl",
+        "docs/research/sources.json[123].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/products/s0087-044?currency=USD",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 196
+    },
+    {
+      "url": "https://www.thebecos.com/products/s0087-044",
+      "references": [
+        "src/data/catalog.json.links[39].officialProductUrl",
+        "docs/research/sources.json[124].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.thebecos.com/products/s0087-044",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 251
+    },
+    {
+      "url": "https://tokyo-shippou.com/products/detail/432",
+      "references": [
+        "src/data/catalog.json.links[40].officialProductUrl",
+        "docs/research/sources.json[195].url"
+      ],
+      "method": "GET",
+      "status": 403,
+      "finalUrl": "https://tokyo-shippou.com/products/detail/432",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "review_access_restricted",
+      "durationMs": 146
+    },
+    {
+      "url": "https://tokyo-shippou.com/products/detail/454",
+      "references": [
+        "src/data/catalog.json.links[41].officialProductUrl",
+        "docs/research/sources.json[196].url"
+      ],
+      "method": "GET",
+      "status": 403,
+      "finalUrl": "https://tokyo-shippou.com/products/detail/454",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "review_access_restricted",
+      "durationMs": 193
+    },
+    {
+      "url": "https://sangetsu.myshopify.com/products/piasu-kinaka",
+      "references": [
+        "src/data/catalog.json.links[42].officialProductUrl",
+        "docs/research/sources.json[198].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://sangetsu.myshopify.com/products/piasu-kinaka",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 483
+    },
+    {
+      "url": "https://sangetsu.myshopify.com/products/puti-kinaka",
+      "references": [
+        "src/data/catalog.json.links[43].officialProductUrl",
+        "docs/research/sources.json[199].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://sangetsu.myshopify.com/products/puti-kinaka",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 767
+    },
+    {
+      "url": "https://shop.sugahara.com/view/item/000000005160",
+      "references": [
+        "src/data/catalog.json.links[44].officialProductUrl",
+        "docs/research/sources.json[204].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://shop.sugahara.com/view/item/000000005160",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 548
+    },
+    {
+      "url": "https://shop.sugahara.com/view/item/000000005159",
+      "references": [
+        "src/data/catalog.json.links[45].officialProductUrl",
+        "docs/research/sources.json[205].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://shop.sugahara.com/view/item/000000005159",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 415
+    },
+    {
+      "url": "https://www.kazarino.com/product-page/pierce",
+      "references": [
+        "src/data/catalog.json.links[46].officialProductUrl",
+        "docs/research/sources.json[208].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.kazarino.com/product-page/pierce",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 216
+    },
+    {
+      "url": "https://www.kazarino.com/product-page/bangle",
+      "references": [
+        "src/data/catalog.json.links[47].officialProductUrl",
+        "docs/research/sources.json[209].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.kazarino.com/product-page/bangle",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 153
+    },
+    {
+      "url": "https://shop.showen.co.jp/product/%E6%AD%A3%E7%B5%B9%E3%80%80%E4%BA%8C%E9%87%8D%E5%B7%BB%E3%81%8D%E3%83%96%E3%83%AC%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88%E3%80%809%E9%9D%92/",
+      "references": [
+        "src/data/catalog.json.links[48].officialProductUrl",
+        "docs/research/sources.json[212].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://shop.showen.co.jp/product/%E6%AD%A3%E7%B5%B9%E3%80%80%E4%BA%8C%E9%87%8D%E5%B7%BB%E3%81%8D%E3%83%96%E3%83%AC%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88%E3%80%809%E9%9D%92/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 478
+    },
+    {
+      "url": "https://www.urushikoubou-iwaya.jp/item/e013/",
+      "references": [
+        "src/data/catalog.json.links[49].officialProductUrl",
+        "docs/research/sources.json[215].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.urushikoubou-iwaya.jp/item/e013/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 605
+    },
+    {
+      "url": "https://toytoy-ya.com/SHOP/TN00-NK001.html",
+      "references": [
+        "src/data/catalog.json.links[50].officialProductUrl",
+        "docs/research/sources.json[217].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://toytoy-ya.com/SHOP/TN00-NK001.html",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 540
+    },
+    {
+      "url": "https://toytoy-ya.com/SHOP/TP00-SK001-SV.html",
+      "references": [
+        "src/data/catalog.json.links[51].officialProductUrl",
+        "docs/research/sources.json[218].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://toytoy-ya.com/SHOP/TP00-SK001-SV.html",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 884
+    },
+    {
+      "url": "https://tamura.buyshop.jp/items/139420551",
+      "references": [
+        "src/data/catalog.json.links[52].officialProductUrl",
+        "docs/research/sources.json[224].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://tamura.buyshop.jp/items/139420551",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 1566
+    },
+    {
+      "url": "https://www.creema.jp/item/17252787/detail",
+      "references": [
+        "src/data/catalog.json.links[53].officialProductUrl",
+        "docs/research/sources.json[226].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.creema.jp/item/17252787/detail",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 423
+    },
+    {
+      "url": "https://shop.simprich.jp/products/503954",
+      "references": [
+        "src/data/catalog.json.links[54].officialProductUrl",
+        "docs/research/sources.json[229].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://shop.simprich.jp/products/503954",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 337
+    },
+    {
+      "url": "https://shop.simprich.jp/products/pr-e4828",
+      "references": [
+        "src/data/catalog.json.links[55].officialProductUrl",
+        "docs/research/sources.json[230].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://shop.simprich.jp/products/pr-e4828",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 283
+    },
+    {
+      "url": "https://shop.hariocorp.co.jp/products/haw-lt-003e",
+      "references": [
+        "src/data/catalog.json.links[56].officialProductUrl",
+        "docs/research/sources.json[231].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://shop.hariocorp.co.jp/products/haw-lt-003e",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 467
+    },
+    {
+      "url": "https://www.hamamatsuya.co.jp/work/index.html",
+      "references": [
+        "docs/research/sources.json[2].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hamamatsuya.co.jp/work/index.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 249
+    },
+    {
+      "url": "https://www.hamamatsuya.co.jp/info/index.html",
+      "references": [
+        "docs/research/sources.json[3].url",
+        "docs/research/sources.json[59].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hamamatsuya.co.jp/info/index.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 220
+    },
+    {
+      "url": "https://www.hamamatsuya.co.jp/shop-english/",
+      "references": [
+        "docs/research/sources.json[4].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hamamatsuya.co.jp/shop-english/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 476
+    },
+    {
+      "url": "https://www.hamamatsuya.co.jp/shop-english/help/tradelaw",
+      "references": [
+        "docs/research/sources.json[5].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hamamatsuya.co.jp/shop-english/help/tradelaw",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 407
+    },
+    {
+      "url": "https://www.hamamatsuya.co.jp/shop-japan/help/tradelaw",
+      "references": [
+        "docs/research/sources.json[6].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hamamatsuya.co.jp/shop-japan/help/tradelaw",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 398
+    },
+    {
+      "url": "https://www.hakonemaruyama.co.jp/html/company.html",
+      "references": [
+        "docs/research/sources.json[12].url",
+        "docs/research/sources.json[60].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonemaruyama.co.jp/html/company.html",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 274
+    },
+    {
+      "url": "https://www.hakonemaruyama.co.jp/oversea.htm",
+      "references": [
+        "docs/research/sources.json[13].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonemaruyama.co.jp/oversea.htm",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 219
+    },
+    {
+      "url": "https://www.hakonemaruyama.co.jp/html/ordercontract.html",
+      "references": [
+        "docs/research/sources.json[14].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonemaruyama.co.jp/html/ordercontract.html",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 258
+    },
+    {
+      "url": "https://kougeihin.jp/en/craft/0610/",
+      "references": [
+        "docs/research/sources.json[15].url"
+      ],
+      "method": "GET",
+      "status": 503,
+      "finalUrl": "https://kougeihin.jp/en/craft/0610/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "review_temporary_server_error",
+      "durationMs": 277
+    },
+    {
+      "url": "https://help.awin.com/docs/post-upgrade-checklist-sas",
+      "references": [
+        "docs/research/sources.json[19].url",
+        "docs/research/affiliate-sources.json[3].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://help.awin.com/docs/post-upgrade-checklist-sas",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 606
+    },
+    {
+      "url": "https://www.thegoodtrade.com/features/handmade-jewelry-brands/",
+      "references": [
+        "docs/research/sources.json[20].url",
+        "docs/research/affiliate-sources.json[4].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.thegoodtrade.com/features/handmade-jewelry-brands/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 464
+    },
+    {
+      "url": "https://www.thegoodtrade.com/methodology/",
+      "references": [
+        "docs/research/sources.json[21].url",
+        "docs/research/affiliate-sources.json[5].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.thegoodtrade.com/methodology/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 898
+    },
+    {
+      "url": "https://alohas.com/pages/affiliates?page=2",
+      "references": [
+        "docs/research/sources.json[22].url",
+        "docs/research/affiliate-sources.json[6].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://alohas.com/pages/affiliates?page=2",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 943
+    },
+    {
+      "url": "https://www.whowhatwear.com/fashion/jewelry/earring-trends-2026",
+      "references": [
+        "docs/research/sources.json[23].url",
+        "docs/research/affiliate-sources.json[7].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.whowhatwear.com/fashion/jewelry/earring-trends-2026",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 195
+    },
+    {
+      "url": "https://futureplc.com/our-brands/",
+      "references": [
+        "docs/research/sources.json[24].url",
+        "docs/research/affiliate-sources.json[8].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://futureplc.com/our-brands/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 540
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/71691/000007169126000011/nyt-20251231.htm",
+      "references": [
+        "docs/research/sources.json[25].url",
+        "docs/research/affiliate-sources.json[9].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.sec.gov/Archives/edgar/data/71691/000007169126000011/nyt-20251231.htm",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 210
+    },
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links",
+      "references": [
+        "docs/research/sources.json[26].url",
+        "docs/research/affiliate-sources.json[10].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 562
+    },
+    {
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "references": [
+        "docs/research/sources.json[27].url",
+        "docs/research/sources.json[164].url",
+        "docs/research/affiliate-sources.json[11].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://developers.google.com/search/docs/essentials/spam-policies?hl=ar",
+      "redirected": true,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 1642
+    },
+    {
+      "url": "https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking",
+      "references": [
+        "docs/research/sources.json[28].url",
+        "docs/research/sources.json[140].url",
+        "docs/research/affiliate-sources.json[12].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 350
+    },
+    {
+      "url": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/",
+      "references": [
+        "docs/research/sources.json[29].url",
+        "docs/research/affiliate-sources.json[13].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 224
+    },
+    {
+      "url": "https://support.skimlinks.com/hc/en-us/articles/360014614557-Can-I-use-merchant-images",
+      "references": [
+        "docs/research/sources.json[30].url",
+        "docs/research/affiliate-sources.json[14].url"
+      ],
+      "method": "GET",
+      "status": 403,
+      "finalUrl": "https://support.skimlinks.com/hc/en-us/articles/360014614557-Can-I-use-merchant-images",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "review_access_restricted",
+      "durationMs": 832
+    },
+    {
+      "url": "https://support.skimlinks.com/hc/en-us/articles/360005286057-How-do-I-disclose-the-use-of-Skimlinks-on-my-site",
+      "references": [
+        "docs/research/sources.json[31].url",
+        "docs/research/affiliate-sources.json[15].url"
+      ],
+      "method": "GET",
+      "status": 403,
+      "finalUrl": "https://support.skimlinks.com/hc/en-us/articles/360005286057-How-do-I-disclose-the-use-of-Skimlinks-on-my-site",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "review_access_restricted",
+      "durationMs": 722
+    },
+    {
+      "url": "https://www.hamamatsuya.co.jp/craft/index.html",
+      "references": [
+        "docs/research/sources.json[32].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hamamatsuya.co.jp/craft/index.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 943
+    },
+    {
+      "url": "https://www.hakonemaruyama.co.jp/html/info.html",
+      "references": [
+        "docs/research/sources.json[33].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonemaruyama.co.jp/html/info.html",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 101
+    },
+    {
+      "url": "https://en.thebecos.com/pages/about",
+      "references": [
+        "docs/research/sources.json[40].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/pages/about",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 304
+    },
+    {
+      "url": "https://en.thebecos.com/pages/shipping-policy",
+      "references": [
+        "docs/research/sources.json[41].url",
+        "docs/research/sources.json[128].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/pages/shipping-policy",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 221
+    },
+    {
+      "url": "https://en.thebecos.com/pages/legal-notice",
+      "references": [
+        "docs/research/sources.json[42].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/pages/legal-notice",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 336
+    },
+    {
+      "url": "https://www.hakonenavi.jp/spot/19587?course_purpose=walk",
+      "references": [
+        "docs/research/sources.json[61].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonenavi.jp/spot/19587?course_purpose=walk",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 1486
+    },
+    {
+      "url": "https://rin-zen.com/shop.html",
+      "references": [
+        "docs/research/sources.json[62].url",
+        "docs/research/sources.json[129].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://rin-zen.com/shop.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 350
+    },
+    {
+      "url": "https://rin-zen.com/concept.html",
+      "references": [
+        "docs/research/sources.json[63].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://rin-zen.com/concept.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 220
+    },
+    {
+      "url": "https://www.thebecos.com/collections/checos",
+      "references": [
+        "docs/research/sources.json[64].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.thebecos.com/collections/checos",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 654
+    },
+    {
+      "url": "https://kanazawa-dkogei.com/artist/2392/",
+      "references": [
+        "docs/research/sources.json[65].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://kanazawa-dkogei.com/artist/2392/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 256
+    },
+    {
+      "url": "https://kanazawa.hakuichi.co.jp/news/detail.php?news_id=269",
+      "references": [
+        "docs/research/sources.json[66].url"
+      ],
+      "method": "GET",
+      "status": 503,
+      "finalUrl": "https://kanazawa.hakuichi.co.jp/news/detail.php?news_id=269",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "review_temporary_server_error",
+      "durationMs": 311
+    },
+    {
+      "url": "https://seirokugama.jp/",
+      "references": [
+        "docs/research/sources.json[67].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://seirokugama.jp/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 219
+    },
+    {
+      "url": "https://6kiln.base.shop/about",
+      "references": [
+        "docs/research/sources.json[68].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://6kiln.base.shop/about",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 1090
+    },
+    {
+      "url": "https://journal.thebecos.com/seirokugama6kiln/",
+      "references": [
+        "docs/research/sources.json[69].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://journal.thebecos.com/seirokugama6kiln/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 324
+    },
+    {
+      "url": "https://www.2016arita.jp/en/pages/shop-list",
+      "references": [
+        "docs/research/sources.json[70].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.2016arita.jp/en/pages/shop-list",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 374
+    },
+    {
+      "url": "https://www.arita.gr.jp/shop/2016/",
+      "references": [
+        "docs/research/sources.json[71].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.arita.gr.jp/shop/2016/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 537
+    },
+    {
+      "url": "https://www.asobo-saga.jp/spots/detail/5e74597c-d120-4616-b45f-42494bdce4ff",
+      "references": [
+        "docs/research/sources.json[72].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.asobo-saga.jp/spots/detail/5e74597c-d120-4616-b45f-42494bdce4ff",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 602
+    },
+    {
+      "url": "https://www.2016arita.jp/en/collections/saskia-diez",
+      "references": [
+        "docs/research/sources.json[73].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.2016arita.jp/en/collections/saskia-diez",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 343
+    },
+    {
+      "url": "https://morphoyuzen.com/",
+      "references": [
+        "docs/research/sources.json[74].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://morphoyuzen.com/",
+      "redirected": false,
+      "contentType": "text/html;charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 274
+    },
+    {
+      "url": "https://morphosphere.shop-inframe.jp/",
+      "references": [
+        "docs/research/sources.json[75].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://morphosphere.shop-inframe.jp/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 614
+    },
+    {
+      "url": "https://www.creema.jp/c/mnfk-kyoto",
+      "references": [
+        "docs/research/sources.json[76].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.creema.jp/c/mnfk-kyoto",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 554
+    },
+    {
+      "url": "https://www.uds-hotels.com/kanra/kyoto/facilities/",
+      "references": [
+        "docs/research/sources.json[77].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.uds-hotels.com/kanra/kyoto/facilities/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 547
+    },
+    {
+      "url": "https://www.uds-hotels.com/kanra/kyoto/",
+      "references": [
+        "docs/research/sources.json[78].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.uds-hotels.com/kanra/kyoto/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 552
+    },
+    {
+      "url": "https://www.uds-hotels.com/kanra/kyoto/qa/",
+      "references": [
+        "docs/research/sources.json[79].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.uds-hotels.com/kanra/kyoto/qa/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 552
+    },
+    {
+      "url": "https://katoshippo.com/page/about",
+      "references": [
+        "docs/research/sources.json[80].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://katoshippo.com/page/about",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 402
+    },
+    {
+      "url": "https://kmtc.jp/shopping-2/",
+      "references": [
+        "docs/research/sources.json[81].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://kmtc.jp/shopping-2/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 483
+    },
+    {
+      "url": "https://kmtc.jp/access/",
+      "references": [
+        "docs/research/sources.json[82].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://kmtc.jp/access/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 351
+    },
+    {
+      "url": "https://mocad-shop.com/collections/morphosphere",
+      "references": [
+        "docs/research/sources.json[83].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://mocad-shop.com/collections/morphosphere",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 998
+    },
+    {
+      "url": "https://www.bunka.go.jp/seisaku/chosakuken/seidokaisetsu/chosakukensha_fumei/",
+      "references": [
+        "docs/research/sources.json[84].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.bunka.go.jp/seisaku/chosakuken/seidokaisetsu/chosakukensha_fumei/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 3273
+    },
+    {
+      "url": "https://developers.google.com/maps/documentation/urls/get-started",
+      "references": [
+        "docs/research/sources.json[85].url",
+        "docs/research/sources.json[149].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://developers.google.com/maps/documentation/urls/get-started",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 559
+    },
+    {
+      "url": "https://about.google/brand-resource-center/products-and-services/geo-guidelines/",
+      "references": [
+        "docs/research/sources.json[86].url",
+        "docs/research/sources.json[150].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://about.google/brand-resource-center/products-and-services/geo-guidelines/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 473
+    },
+    {
+      "url": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/faq/stealth_marketing/",
+      "references": [
+        "docs/research/sources.json[87].url",
+        "docs/research/sources.json[138].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/faq/stealth_marketing/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 744
+    },
+    {
+      "url": "https://arcos.glass/about/",
+      "references": [
+        "docs/research/sources.json[88].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://arcos.glass/about/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 1886
+    },
+    {
+      "url": "https://arcos.glass/atelier/",
+      "references": [
+        "docs/research/sources.json[89].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://arcos.glass/atelier/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 844
+    },
+    {
+      "url": "https://arcos.glass/access/",
+      "references": [
+        "docs/research/sources.json[90].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://arcos.glass/access/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 823
+    },
+    {
+      "url": "https://www.mlit.go.jp/kankocho/content/002025515.xls",
+      "references": [
+        "docs/research/sources.json[93].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.mlit.go.jp/kankocho/content/002025515.xls",
+      "redirected": false,
+      "contentType": "application/vnd.ms-excel",
+      "classification": "reachable",
+      "durationMs": 200
+    },
+    {
+      "url": "https://www.mlit.go.jp/kankocho/tokei_hakusyo/gaikokujinshohidoko.html",
+      "references": [
+        "docs/research/sources.json[94].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.mlit.go.jp/kankocho/tokei_hakusyo/gaikokujinshohidoko.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 185
+    },
+    {
+      "url": "https://www.mlit.go.jp/kankocho/content/002020010.pdf",
+      "references": [
+        "docs/research/sources.json[95].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.mlit.go.jp/kankocho/content/002020010.pdf",
+      "redirected": false,
+      "contentType": "application/pdf",
+      "classification": "reachable",
+      "durationMs": 169
+    },
+    {
+      "url": "https://jpga-izumi.com/",
+      "references": [
+        "docs/research/sources.json[98].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://jpga-izumi.com/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 779
+    },
+    {
+      "url": "https://www.co-coon.info/about",
+      "references": [
+        "docs/research/sources.json[103].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.co-coon.info/about",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 156
+    },
+    {
+      "url": "https://www.kiyotextile.com/",
+      "references": [
+        "docs/research/sources.json[104].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.kiyotextile.com/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 222
+    },
+    {
+      "url": "https://www.pref.fukuoka.lg.jp/contents/gaiyou-dentoukougei.html",
+      "references": [
+        "docs/research/sources.json[105].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.pref.fukuoka.lg.jp/contents/gaiyou-dentoukougei.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 1229
+    },
+    {
+      "url": "https://shop.simprich.jp/pages/about",
+      "references": [
+        "docs/research/sources.json[106].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://shop.simprich.jp/pages/about",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 342
+    },
+    {
+      "url": "https://www.pref.yamanashi.jp/yjm/",
+      "references": [
+        "docs/research/sources.json[110].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.pref.yamanashi.jp/yjm/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 241
+    },
+    {
+      "url": "https://www.pref.yamanashi.jp/smartphone/yjm/access.html",
+      "references": [
+        "docs/research/sources.json[111].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.pref.yamanashi.jp/smartphone/yjm/access.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 190
+    },
+    {
+      "url": "https://www.yukieglass.net/?mode=f4",
+      "references": [
+        "docs/research/sources.json[112].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.yukieglass.net/?mode=f4",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 301
+    },
+    {
+      "url": "https://www.yukieglass.net/?mode=f11",
+      "references": [
+        "docs/research/sources.json[115].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.yukieglass.net/?mode=f11",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 288
+    },
+    {
+      "url": "https://kitaichiglass.co.jp/yo/",
+      "references": [
+        "docs/research/sources.json[116].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://kitaichiglass.co.jp/yo/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 1149
+    },
+    {
+      "url": "https://kitaichiglass.co.jp/shoplist/",
+      "references": [
+        "docs/research/sources.json[117].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://kitaichiglass.co.jp/shoplist/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 1298
+    },
+    {
+      "url": "https://kitaichiglass.co.jp/access-2/",
+      "references": [
+        "docs/research/sources.json[118].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://kitaichiglass.co.jp/access-2/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 1176
+    },
+    {
+      "url": "https://www.kyoto-meisan.jp/shops/nakajima_zouge/",
+      "references": [
+        "docs/research/sources.json[120].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.kyoto-meisan.jp/shops/nakajima_zouge/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 697
+    },
+    {
+      "url": "https://www.nakajima-zougan.jp/about/",
+      "references": [
+        "docs/research/sources.json[121].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.nakajima-zougan.jp/about/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 221
+    },
+    {
+      "url": "https://www.nakajima-zougan.jp/access/",
+      "references": [
+        "docs/research/sources.json[122].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.nakajima-zougan.jp/access/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 214
+    },
+    {
+      "url": "https://en.thebecos.com/pages/shopping-guide",
+      "references": [
+        "docs/research/sources.json[127].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/pages/shopping-guide",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 379
+    },
+    {
+      "url": "https://www.rin-zenshop.com/product/-seika-/60?cp=true&sa=false&sbp=false&q=false&category_id=4",
+      "references": [
+        "docs/research/sources.json[130].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.rin-zenshop.com/product/-seika-/60?cp=true&sa=false&sbp=false&q=false&category_id=4",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 1839
+    },
+    {
+      "url": "https://www.rin-zenshop.com/about",
+      "references": [
+        "docs/research/sources.json[131].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.rin-zenshop.com/about",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 2024
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/law/345AC0000000048/20260624_508AC0000000048",
+      "references": [
+        "docs/research/sources.json[132].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://laws.e-gov.go.jp/law/345AC0000000048/20260624_508AC0000000048",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 306
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/api/2/law_data/345AC0000000048?law_full_text_format=xml&asof=2026-11-16",
+      "references": [
+        "docs/research/sources.json[132].apiUrl"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://laws.e-gov.go.jp/api/2/law_data/345AC0000000048?law_full_text_format=xml&asof=2026-11-16",
+      "redirected": false,
+      "contentType": "application/json",
+      "classification": "reachable",
+      "durationMs": 286
+    },
+    {
+      "url": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/pdf/94037901_01.pdf",
+      "references": [
+        "docs/research/sources.json[133].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/pdf/94037901_01.pdf",
+      "redirected": false,
+      "contentType": "application/pdf",
+      "classification": "reachable",
+      "durationMs": 116
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/law/334AC0000000125/20260521_504AC0000000048",
+      "references": [
+        "docs/research/sources.json[134].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://laws.e-gov.go.jp/law/334AC0000000125/20260521_504AC0000000048",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 134
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/api/2/law_data/334AC0000000125?law_full_text_format=xml&asof=2026-11-16",
+      "references": [
+        "docs/research/sources.json[134].apiUrl"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://laws.e-gov.go.jp/api/2/law_data/334AC0000000125?law_full_text_format=xml&asof=2026-11-16",
+      "redirected": false,
+      "contentType": "application/json",
+      "classification": "reachable",
+      "durationMs": 332
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/law/334AC0000000127/20260521_504AC0000000048",
+      "references": [
+        "docs/research/sources.json[135].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://laws.e-gov.go.jp/law/334AC0000000127/20260521_504AC0000000048",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 255
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/api/2/law_data/334AC0000000127?law_full_text_format=xml&asof=2026-11-16",
+      "references": [
+        "docs/research/sources.json[135].apiUrl"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://laws.e-gov.go.jp/api/2/law_data/334AC0000000127?law_full_text_format=xml&asof=2026-11-16",
+      "redirected": false,
+      "contentType": "application/json",
+      "classification": "reachable",
+      "durationMs": 284
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/law/405AC0000000047/20260521_507AC0000000039",
+      "references": [
+        "docs/research/sources.json[136].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://laws.e-gov.go.jp/law/405AC0000000047/20260521_507AC0000000039",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 80
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/api/2/law_data/405AC0000000047?law_full_text_format=xml&asof=2026-11-16",
+      "references": [
+        "docs/research/sources.json[136].apiUrl"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://laws.e-gov.go.jp/api/2/law_data/405AC0000000047?law_full_text_format=xml&asof=2026-11-16",
+      "redirected": false,
+      "contentType": "application/json",
+      "classification": "reachable",
+      "durationMs": 204
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/law/337AC0000000134/20260521_504AC0000000048",
+      "references": [
+        "docs/research/sources.json[137].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://laws.e-gov.go.jp/law/337AC0000000134/20260521_504AC0000000048",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 124
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/api/2/law_data/337AC0000000134?law_full_text_format=xml&asof=2026-11-16",
+      "references": [
+        "docs/research/sources.json[137].apiUrl"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://laws.e-gov.go.jp/api/2/law_data/337AC0000000134?law_full_text_format=xml&asof=2026-11-16",
+      "redirected": false,
+      "contentType": "application/json",
+      "classification": "reachable",
+      "durationMs": 180
+    },
+    {
+      "url": "https://www.no-trouble.caa.go.jp/what/mailorder/",
+      "references": [
+        "docs/research/sources.json[139].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.no-trouble.caa.go.jp/what/mailorder/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 579
+    },
+    {
+      "url": "https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers",
+      "references": [
+        "docs/research/sources.json[141].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 467
+    },
+    {
+      "url": "https://www.ftc.gov/business-guidance/resources/advertising-faqs-guide-small-business",
+      "references": [
+        "docs/research/sources.json[142].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.ftc.gov/business-guidance/resources/advertising-faqs-guide-small-business",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 2200
+    },
+    {
+      "url": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+      "references": [
+        "docs/research/sources.json[143].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+      "redirected": false,
+      "contentType": "text/html;charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 685
+    },
+    {
+      "url": "https://www.ppc.go.jp/all_faq_index/faq1-q1-5/",
+      "references": [
+        "docs/research/sources.json[144].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.ppc.go.jp/all_faq_index/faq1-q1-5/",
+      "redirected": false,
+      "contentType": "text/html;charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 219
+    },
+    {
+      "url": "https://www.ppc.go.jp/all_faq_index/faq2-q2-6/",
+      "references": [
+        "docs/research/sources.json[145].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.ppc.go.jp/all_faq_index/faq2-q2-6/",
+      "redirected": false,
+      "contentType": "text/html;charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 473
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/law/359AC0000000086/20260527_507AC0000000046",
+      "references": [
+        "docs/research/sources.json[146].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://laws.e-gov.go.jp/law/359AC0000000086/20260527_507AC0000000046",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 93
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/api/2/law_data/359AC0000000086?law_full_text_format=xml&asof=2026-11-16",
+      "references": [
+        "docs/research/sources.json[146].apiUrl"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://laws.e-gov.go.jp/api/2/law_data/359AC0000000086?law_full_text_format=xml&asof=2026-11-16",
+      "redirected": false,
+      "contentType": "application/json",
+      "classification": "reachable",
+      "durationMs": 239
+    },
+    {
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "references": [
+        "docs/research/sources.json[147].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 100
+    },
+    {
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits",
+      "references": [
+        "docs/research/sources.json[148].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 120
+    },
+    {
+      "url": "https://support.google.com/adsense/answer/1348695?hl=en",
+      "references": [
+        "docs/research/sources.json[151].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://support.google.com/adsense/answer/1348695?hl=en",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 425
+    },
+    {
+      "url": "https://www.google.com/about/company/user-consent-policy/",
+      "references": [
+        "docs/research/sources.json[152].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.google.com/about/company/user-consent-policy/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 495
+    },
+    {
+      "url": "https://support.google.com/adsense/answer/13554116?hl=en",
+      "references": [
+        "docs/research/sources.json[153].url",
+        "docs/research/sources.json[162].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://support.google.com/adsense/answer/13554116?hl=en",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 511
+    },
+    {
+      "url": "https://policies.google.com/privacy?hl=en",
+      "references": [
+        "docs/research/sources.json[154].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://policies.google.com/privacy?hl=en",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 490
+    },
+    {
+      "url": "https://support.google.com/adsense/answer/12170421?hl=en",
+      "references": [
+        "docs/research/sources.json[155].url",
+        "docs/research/sources.json[193].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://support.google.com/adsense/answer/12170421?hl=en",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 1024
+    },
+    {
+      "url": "https://publicsuffix.org/list/public_suffix_list.dat",
+      "references": [
+        "docs/research/sources.json[156].url",
+        "docs/research/sources.json[194].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://publicsuffix.org/list/public_suffix_list.dat",
+      "redirected": false,
+      "contentType": "text/plain; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 74
+    },
+    {
+      "url": "https://support.google.com/adsense/answer/2784438?hl=en",
+      "references": [
+        "docs/research/sources.json[157].url",
+        "docs/research/sources.json[192].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://support.google.com/adsense/answer/2784438?hl=en",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 322
+    },
+    {
+      "url": "https://support.google.com/adsense/answer/9724?hl=en",
+      "references": [
+        "docs/research/sources.json[158].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://support.google.com/adsense/answer/9724?hl=en",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 1037
+    },
+    {
+      "url": "https://support.google.com/adsense/answer/7299563?hl=en",
+      "references": [
+        "docs/research/sources.json[159].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://support.google.com/adsense/answer/7299563?hl=en",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 1066
+    },
+    {
+      "url": "https://support.google.com/publisherpolicies/answer/10502938?hl=en",
+      "references": [
+        "docs/research/sources.json[160].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://support.google.com/publisherpolicies/answer/10502938?hl=en",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 358
+    },
+    {
+      "url": "https://support.google.com/adsense/answer/12169212?hl=en",
+      "references": [
+        "docs/research/sources.json[161].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://support.google.com/adsense/answer/12169212?hl=en",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 375
+    },
+    {
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "references": [
+        "docs/research/sources.json[163].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 472
+    },
+    {
+      "url": "https://developers.google.com/search/blog/2023/02/google-search-and-ai-content",
+      "references": [
+        "docs/research/sources.json[165].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://developers.google.com/search/blog/2023/02/google-search-and-ai-content",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 692
+    },
+    {
+      "url": "https://en.thebecos.com/collections/earrings",
+      "references": [
+        "docs/research/sources.json[166].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/collections/earrings",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 193
+    },
+    {
+      "url": "https://fujimaki-select.com/category/C_JEWELLERY/",
+      "references": [
+        "docs/research/sources.json[167].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://fujimaki-select.com/category/C_JEWELLERY/",
+      "redirected": false,
+      "contentType": "text/html;charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 1114
+    },
+    {
+      "url": "https://www.nakagawa-masashichi.jp/shop/e/ev0624_sspd/",
+      "references": [
+        "docs/research/sources.json[168].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.nakagawa-masashichi.jp/shop/e/ev0624_sspd/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 594
+    },
+    {
+      "url": "https://www.shokunin.com/en/etc/popular.html",
+      "references": [
+        "docs/research/sources.json[169].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.shokunin.com/en/etc/popular.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 313
+    },
+    {
+      "url": "https://en.thebecos.com/products/s0164-018",
+      "references": [
+        "docs/research/sources.json[170].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/products/s0164-018",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 251
+    },
+    {
+      "url": "https://www.shokunin.com/en/futagami/coaster.html",
+      "references": [
+        "docs/research/sources.json[171].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.shokunin.com/en/futagami/coaster.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 91
+    },
+    {
+      "url": "https://rozawa619.github.io/",
+      "references": [
+        "docs/research/sources.json[172].url"
+      ],
+      "method": "GET",
+      "status": 404,
+      "finalUrl": "https://rozawa619.github.io/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "review_not_found",
+      "durationMs": 215
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/rinzen-seika-amber-pierced-earrings/",
+      "references": [
+        "docs/research/sources.json[173].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/rinzen-seika-amber-pierced-earrings/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 327
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/tokyo/",
+      "references": [
+        "docs/research/sources.json[174].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/tokyo/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 237
+    },
+    {
+      "url": "https://www.cloudflare.com/terms/",
+      "references": [
+        "docs/research/sources.json[175].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.cloudflare.com/terms/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 1228
+    },
+    {
+      "url": "https://www.cloudflare.com/service-specific-terms-developer-platform/",
+      "references": [
+        "docs/research/sources.json[176].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.cloudflare.com/service-specific-terms-developer-platform/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 902
+    },
+    {
+      "url": "https://developers.cloudflare.com/pages/",
+      "references": [
+        "docs/research/sources.json[177].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://developers.cloudflare.com/pages/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 110
+    },
+    {
+      "url": "https://developers.cloudflare.com/pages/configuration/build-configuration/",
+      "references": [
+        "docs/research/sources.json[178].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://developers.cloudflare.com/pages/configuration/build-configuration/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 84
+    },
+    {
+      "url": "https://developers.cloudflare.com/pages/configuration/build-image/",
+      "references": [
+        "docs/research/sources.json[179].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://developers.cloudflare.com/pages/configuration/build-image/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 97
+    },
+    {
+      "url": "https://developers.cloudflare.com/pages/configuration/git-integration/github-integration/",
+      "references": [
+        "docs/research/sources.json[180].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://developers.cloudflare.com/pages/configuration/git-integration/github-integration/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 71
+    },
+    {
+      "url": "https://developers.cloudflare.com/pages/configuration/custom-domains/",
+      "references": [
+        "docs/research/sources.json[181].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://developers.cloudflare.com/pages/configuration/custom-domains/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 107
+    },
+    {
+      "url": "https://developers.cloudflare.com/pages/configuration/redirects/",
+      "references": [
+        "docs/research/sources.json[182].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://developers.cloudflare.com/pages/configuration/redirects/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 930
+    },
+    {
+      "url": "https://developers.cloudflare.com/pages/how-to/redirect-to-custom-domain/",
+      "references": [
+        "docs/research/sources.json[183].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://developers.cloudflare.com/pages/how-to/redirect-to-custom-domain/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 389
+    },
+    {
+      "url": "https://developers.cloudflare.com/pages/platform/limits/",
+      "references": [
+        "docs/research/sources.json[184].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://developers.cloudflare.com/pages/platform/limits/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 371
+    },
+    {
+      "url": "https://developers.cloudflare.com/pages/configuration/headers/",
+      "references": [
+        "docs/research/sources.json[185].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://developers.cloudflare.com/pages/configuration/headers/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 69
+    },
+    {
+      "url": "https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/",
+      "references": [
+        "docs/research/sources.json[186].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 117
+    },
+    {
+      "url": "https://www.cloudflare.com/privacypolicy/",
+      "references": [
+        "docs/research/sources.json[187].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.cloudflare.com/privacypolicy/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 278
+    },
+    {
+      "url": "https://docs.astro.build/en/guides/deploy/cloudflare/",
+      "references": [
+        "docs/research/sources.json[188].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://docs.astro.build/en/guides/deploy/cloudflare/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 283
+    },
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
+      "references": [
+        "docs/research/sources.json[189].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes?hl=ja",
+      "redirected": true,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 1030
+    },
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+      "references": [
+        "docs/research/sources.json[190].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 382
+    },
+    {
+      "url": "https://support.google.com/webmasters/answer/9370220?hl=en",
+      "references": [
+        "docs/research/sources.json[191].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://support.google.com/webmasters/answer/9370220?hl=en",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 1003
+    },
+    {
+      "url": "https://blog.tokyo-shippou.com/contents/category/about/",
+      "references": [
+        "docs/research/sources.json[197].url"
+      ],
+      "method": "GET",
+      "status": 403,
+      "finalUrl": "https://blog.tokyo-shippou.com/contents/category/about/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "review_access_restricted",
+      "durationMs": 105
+    },
+    {
+      "url": "https://izumi-tombodama.com/access.html",
+      "references": [
+        "docs/research/sources.json[200].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://izumi-tombodama.com/access.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 349
+    },
+    {
+      "url": "https://sennotoki-glass.com/shop",
+      "references": [
+        "docs/research/sources.json[201].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://sennotoki-glass.com/shop",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 1922
+    },
+    {
+      "url": "https://sangetsu.myshopify.com/policies/legal-notice",
+      "references": [
+        "docs/research/sources.json[202].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://sangetsu.myshopify.com/policies/legal-notice",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 240
+    },
+    {
+      "url": "https://satomachi-izumi.com/ippin/21350.html",
+      "references": [
+        "docs/research/sources.json[203].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://satomachi-izumi.com/ippin/21350.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 184
+    },
+    {
+      "url": "https://www.sugahara.com/story/factory/",
+      "references": [
+        "docs/research/sources.json[206].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.sugahara.com/story/factory/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 123
+    },
+    {
+      "url": "https://www.sugahara.com/about/shop/",
+      "references": [
+        "docs/research/sources.json[207].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.sugahara.com/about/shop/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 88
+    },
+    {
+      "url": "https://www.kazarino.com/about",
+      "references": [
+        "docs/research/sources.json[210].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.kazarino.com/about",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 79
+    },
+    {
+      "url": "https://www.kazarino.com/womens",
+      "references": [
+        "docs/research/sources.json[211].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.kazarino.com/womens",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 88
+    },
+    {
+      "url": "https://www.showen.co.jp/stores/",
+      "references": [
+        "docs/research/sources.json[214].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.showen.co.jp/stores/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 233
+    },
+    {
+      "url": "https://www.urushikoubou-iwaya.jp/shop.html",
+      "references": [
+        "docs/research/sources.json[216].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.urushikoubou-iwaya.jp/shop.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 176
+    },
+    {
+      "url": "https://toytoy.jp/about/",
+      "references": [
+        "docs/research/sources.json[219].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://toytoy.jp/about/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 275
+    },
+    {
+      "url": "https://toytoy-ya.com/shoplist.html",
+      "references": [
+        "docs/research/sources.json[220].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://toytoy-ya.com/shoplist.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 144
+    },
+    {
+      "url": "https://www.yuiq.jp/",
+      "references": [
+        "docs/research/sources.json[221].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.yuiq.jp/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 71
+    },
+    {
+      "url": "https://www.yuiq.jp/access.html",
+      "references": [
+        "docs/research/sources.json[222].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.yuiq.jp/access.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 69
+    },
+    {
+      "url": "https://www.odori-bisse.com/shop/yuiq/",
+      "references": [
+        "docs/research/sources.json[223].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.odori-bisse.com/shop/yuiq/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 465
+    },
+    {
+      "url": "https://tamura-shippo.com/accessories/",
+      "references": [
+        "docs/research/sources.json[225].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://tamura-shippo.com/accessories/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 449
+    },
+    {
+      "url": "https://www.hario-lwf.com/view/item/000000000256",
+      "references": [
+        "docs/research/sources.json[232].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hario-lwf.com/view/item/000000000256",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 378
+    },
+    {
+      "url": "https://www.hario-lwf.com/view/page/about",
+      "references": [
+        "docs/research/sources.json[233].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hario-lwf.com/view/page/about",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 185
+    },
+    {
+      "url": "https://www.hario-lwf.com/view/page/kodenmacho",
+      "references": [
+        "docs/research/sources.json[234].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hario-lwf.com/view/page/kodenmacho",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 273
+    },
+    {
+      "url": "https://shop.hariocorp.co.jp/pages/company",
+      "references": [
+        "docs/research/sources.json[235].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://shop.hariocorp.co.jp/pages/company",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 260
+    },
+    {
+      "url": "https://hario-lwf-contents.com/news/wholesale/",
+      "references": [
+        "docs/research/sources.json[236].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://hario-lwf-contents.com/news/wholesale/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 592
+    },
+    {
+      "url": "https://www.hario-lwf.com/view/news/20260908185758",
+      "references": [
+        "docs/research/sources.json[237].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hario-lwf.com/view/news/20260908185758",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 237
+    },
+    {
+      "url": "https://www.beams.co.jp/shop/jk/",
+      "references": [
+        "docs/research/sources.json[238].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.beams.co.jp/shop/jk/",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 171
+    },
+    {
+      "url": "https://shinpuhkan.jp/shops_restaurants/beams-japan/",
+      "references": [
+        "docs/research/sources.json[239].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://shinpuhkan.jp/shops_restaurants/beams-japan/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 254
+    }
+  ]
+}

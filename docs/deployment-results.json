@@ -1,125 +1,79 @@
 {
-  "version": "0.10.0",
+  "version": "0.11.0",
   "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
   "branch": "main",
-  "status": "deployed_and_verified",
-  "applicationCommit": "9b15f21c5932bb20c1584a99fa0288c8c3e867d0",
-  "actions": {
-    "id": 43871283478,
-    "status": "completed",
-    "conclusion": "success",
-    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/43871283478",
-    "workflowUpdatedAt": "2026-11-16T12:58:32Z"
-  },
-  "previousDeployedVersion": "0.9.0",
-  "previousDeployedApplicationCommit": "e74cab62b76071867fd9ebd6991aebcbea05ae2b",
+  "status": "local_focused_verified_awaiting_deploy",
+  "applicationCommit": null,
+  "actions": null,
+  "previousDeployedVersion": "0.10.0",
+  "previousDeployedApplicationCommit": "9b15f21c5932bb20c1584a99fa0288c8c3e867d0",
   "publicUrls": {
     "entry": "https://rozawa619.github.io/japanese-craft-jewelry/",
     "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
     "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/"
   },
   "content": {
-    "products": 30,
-    "prefectures": 12,
-    "crafts": 13,
-    "currentImages": 28,
-    "missingImages": 0,
-    "stores": 13,
-    "productsWithStores": 25,
-    "sources": 132
-  },
-  "pricing": {
-    "primaryMarket": "japan",
-    "primaryLocales": [
-      "ja",
-      "en"
-    ],
-    "internationalPrice": "separate verified storefront price",
-    "currencyConversion": false,
-    "physicalStorePrices": "unconfirmed"
+    "products": 42,
+    "regions": 12,
+    "crafts": 18,
+    "sources": 240,
+    "images": 25,
+    "illustrated": 27,
+    "stores": 20,
+    "withStores": 37,
+    "online": 33,
+    "retail": 9
   },
   "localVerification": {
-    "typeFiles": 71,
-    "unitTestsPassed": 62,
-    "generatedHtmlPages": 170,
-    "hrefSrcReferences": 8662,
-    "anchors": 1177,
-    "ordinaryRetailerLinks": 618,
+    "typeFiles": 83,
+    "unitTestsPassed": 90,
+    "htmlPages": 220,
+    "hrefSrcReferences": 11878,
+    "anchors": 1617,
+    "ordinaryRetailerLinks": 858,
     "sponsoredLinks": 0,
-    "inlineScriptHashes": 373,
-    "inertJsonBlocks": 154,
-    "focused": "docs/market-stage-browser-results.json",
-    "full": "docs/market-stage-full-browser-results.json",
-    "ads": "docs/market-stage-ad-build-results.json",
-    "adScenariosPassed": 6,
+    "inlineScriptHashes": 497,
+    "inertJsonBlocks": 204,
+    "focused": "docs/quality-stage-browser-results.json",
+    "full": "docs/quality-stage-full-browser-results.json",
+    "ads": "docs/quality-stage-ad-build-results.json",
+    "external": "docs/quality-stage-external-links.json",
     "focusedSummary": {
-      "checks": 79,
-      "passed": 79,
+      "checks": 437,
+      "passed": 437,
       "failed": 0,
-      "dualMarketProducts": 9,
-      "productDetailChecks": 66,
-      "axeScreens": 18,
+      "publishedProducts": 42,
+      "withdrawnProducts": 6,
+      "withdrawnRoutesVerified": 12,
+      "withdrawnHtmlFilesScanned": 220,
+      "unknownPricePublishedProducts": 0,
+      "unknownPriceDetailSample": null,
+      "productDetailChecks": 252,
+      "uniqueProductsChecked": 42,
+      "regionalTypeRoundtrips": 198,
+      "axeScreens": 36,
       "axeViolations": 0,
-      "screenshots": 6,
+      "screenshots": 26,
       "pageErrors": 0,
-      "consoleErrors": 0
+      "consoleErrors": 0,
+      "externalRequests": 0
     },
-    "fullStatus": "passed",
-    "fullSummary": {
-      "checks": 256,
-      "passed": 256,
-      "failed": 0,
-      "pages": 222,
-      "axeViolations": 0,
-      "screenshots": 31,
-      "axeScreens": 198
-    },
-    "fullAxeScreens": 198
+    "fullStatus": "running",
+    "adScenariosPassed": 6
   },
   "hostedVerification": {
-    "status": "passed",
-    "focused": "docs/market-stage-hosted-browser-results.json",
-    "manual": "docs/market-stage-hosted-manual-results.json",
-    "supplement": "docs/market-stage-hosted-supplement-results.json",
-    "supplementStatus": "passed",
-    "supplementSummary": {
-      "checks": 20,
-      "passed": 20,
-      "failed": 0,
-      "canonicalUrls": 154,
-      "uniqueImages": 28,
-      "pageErrors": 0,
-      "consoleErrors": 0
-    },
-    "focusedStatus": "passed",
-    "focusedSummary": {
-      "checks": 79,
-      "passed": 79,
-      "failed": 0,
-      "dualMarketProducts": 9,
-      "productDetailChecks": 66,
-      "axeScreens": 18,
-      "axeViolations": 0,
-      "screenshots": 6,
-      "pageErrors": 0,
-      "consoleErrors": 0
-    },
-    "manualStatus": "passed",
-    "manualSummary": {
-      "checks": 12,
-      "passed": 12,
-      "failed": 0,
-      "screenshots": 12,
-      "pageErrors": 0,
-      "consoleErrors": 0
-    },
-    "applicationCommit": "9b15f21c5932bb20c1584a99fa0288c8c3e867d0"
+    "status": "not_yet_run_for_0.11.0"
   },
-  "updatedAt": "2026-11-16T13:02:17.036Z",
-  "limitations": [
-    "No physical-store price or stock guarantee.",
-    "No exchange-rate or all-in shipping/tax price claim.",
-    "No affiliate application, approval or AdSense setup."
-  ],
-  "verifiedAt": "2026-11-16T13:02:17.036Z"
+  "commercialHosting": {
+    "status": "pending_suitability_review_or_migration",
+    "document": "docs/hosting-commercial-readiness-v11.md",
+    "migrationPerformed": false
+  },
+  "adsense": {
+    "status": "not_applied",
+    "adTagsEnabled": false,
+    "eligibilityOrApprovalCertified": false,
+    "document": "docs/adsense-review-v11.md"
+  },
+  "updatedAt": "2026-11-16T14:49:59.886Z"
 }

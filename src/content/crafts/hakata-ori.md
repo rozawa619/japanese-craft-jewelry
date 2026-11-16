@@ -2,7 +2,7 @@
 title: "Hakata-ori silk accessories"
 description: "Hakata-ori silk threads and textiles reworked into contemporary jewelry; individual accessory certification is not claimed."
 locale: en
-publishStatus: published
+publishStatus: draft
 updatedAt: "2026-11-16"
 sourceIds: ["cocoon-about-v9","cocoon-gallery-v9","fukuoka-crafts-v9"]
 craftId: hakata-ori

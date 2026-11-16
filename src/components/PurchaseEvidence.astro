@@ -1,0 +1,12 @@
+---
+import {purchaseEvidenceFor} from '../lib/purchase-evidence';
+import {t,type Locale} from '../lib/i18n';
+interface Props{productId:string;locale:Locale}
+const {productId,locale}=Astro.props;
+const evidence=purchaseEvidenceFor(productId);
+---
+<p class="purchase-evidence" data-purchase-evidence={evidence.kind} data-purchase-checked-at={evidence.checkedAt}>
+ <span>{evidence.kind==='online-order'?t(locale,'Official online ordering checked','公式通販の注文受付を確認'):t(locale,'Retail shop and current catalog checked','実店舗と現行カタログを確認')}</span>
+ <time datetime={evidence.checkedAt}>{evidence.checkedAt}</time>
+</p>
+<style>.purchase-evidence{display:flex;flex-wrap:wrap;gap:5px 12px;font-size:10px;line-height:1.7;margin:0 0 13px;color:var(--forest)}.purchase-evidence time{font-size:9px;color:var(--muted)}</style>

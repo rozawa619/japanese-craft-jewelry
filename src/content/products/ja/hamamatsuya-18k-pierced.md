@@ -1,7 +1,7 @@
 ---
 productId: hamamatsuya-18k-pierced
 locale: ja
-publishStatus: published
+publishStatus: draft
 ---
 
 寄木の模様を取り入れながら、金具の選択肢にも目を向けたい。そんなときに見ておきたい、浜松屋の18K表記のピアスです。

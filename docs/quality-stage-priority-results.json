@@ -1,0 +1,177 @@
+{
+  "checkedAt": "2026-11-16T14:43:59.386Z",
+  "scope": "Read-only priority supplement for the final42 source set: HARIO raw specifications and source links; Fukuoka current selection and official-photo preview; manual-view screenshots. No merchant checkout or external navigation.",
+  "checks": [
+    {
+      "kind": "hario",
+      "locale": "en",
+      "width": 390,
+      "status": "passed",
+      "dimensions": {
+        "width": 390,
+        "document": 390,
+        "body": 390
+      },
+      "productId": "hario-little-tears-clip-on-earrings",
+      "priceJPY": 8250,
+      "priceUnit": "pair",
+      "size": "Glass charm 4 × 6 × 3 mm; chain length 45 mm. This is not a separate statement of total assembled length.",
+      "findings": "Brass with gold plating is stated for the standard model. Exact component coverage and plating composition are not separately specified.",
+      "whatToCheck": [
+        "The standard fitting is gold-plated brass. Paid K10 conversion is a separate option, not the material of the reference-priced model.",
+        "Exact weight and the detailed clip-on closing mechanism are not specified in the product body. Glass needs careful handling.",
+        "The maker works in Nihonbashi and other regions. This item’s exact workshop and current Kodenmacho shelf stock are unconfirmed."
+      ],
+      "sourceIds": [
+        "hario-netshop-product-v11",
+        "hario-lwf-product-v11",
+        "hario-lwf-about-v11",
+        "hario-kodenmacho-v11"
+      ],
+      "officialProductUrl": "https://shop.hariocorp.co.jp/products/haw-lt-003e"
+    },
+    {
+      "kind": "hario",
+      "locale": "ja",
+      "width": 320,
+      "status": "passed",
+      "dimensions": {
+        "width": 320,
+        "document": 320,
+        "body": 320
+      },
+      "productId": "hario-little-tears-clip-on-earrings",
+      "priceJPY": 8250,
+      "priceUnit": "pair",
+      "size": "ガラスのチャーム4×6×3mm、チェーン45mm。組み上がり全長の表記とは区別しています。",
+      "findings": "標準仕様は真鍮・ゴールドメッキの表記。対象パーツの細かな使い分けとメッキの組成は未確認です。",
+      "whatToCheck": [
+        "参考価格の標準仕様は金メッキの真鍮です。有料のK10金具変更を、標準商品の素材とは扱っていません。",
+        "正確な重さとイヤリングの開閉機構の詳細は商品本文で未確認。ガラスの取扱いには注意が必要です。",
+        "日本橋とほかの地域に製作拠点があります。この品の製作工房と、小伝馬町店の現時点の在庫は未確認です。"
+      ],
+      "sourceIds": [
+        "hario-netshop-product-v11",
+        "hario-lwf-product-v11",
+        "hario-lwf-about-v11",
+        "hario-kodenmacho-v11"
+      ],
+      "officialProductUrl": "https://shop.hariocorp.co.jp/products/haw-lt-003e"
+    },
+    {
+      "kind": "fukuoka",
+      "locale": "en",
+      "width": 390,
+      "status": "passed",
+      "dimensions": {
+        "width": 390,
+        "document": 390,
+        "body": 390
+      },
+      "productIds": [
+        "iwaya-urushi-9mm-hook-earrings"
+      ],
+      "officialPreviews": 1
+    },
+    {
+      "kind": "fukuoka",
+      "locale": "ja",
+      "width": 320,
+      "status": "passed",
+      "dimensions": {
+        "width": 320,
+        "document": 320,
+        "body": 320
+      },
+      "productIds": [
+        "iwaya-urushi-9mm-hook-earrings"
+      ],
+      "officialPreviews": 1
+    }
+  ],
+  "screenshots": [
+    "artifacts/quality-stage-priority-hario-en-390-intro.png",
+    "artifacts/quality-stage-priority-hario-en-390-raw-specifications.png",
+    "artifacts/quality-stage-priority-hario-ja-320-intro.png",
+    "artifacts/quality-stage-priority-hario-ja-320-raw-specifications.png",
+    "artifacts/quality-stage-priority-fukuoka-en-390-guide.png",
+    "artifacts/quality-stage-priority-fukuoka-en-390-products.png",
+    "artifacts/quality-stage-priority-fukuoka-ja-320-guide.png",
+    "artifacts/quality-stage-priority-fukuoka-ja-320-products.png"
+  ],
+  "completedAt": "2026-11-16T14:44:07.699Z",
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "screenshots": 8
+  },
+  "viewportCaptureSupplement": {
+    "checkedAt": "2026-11-16T14:49:01.472Z",
+    "reason": "Very tall locator crops can composite an off-viewport fixed element into the image. These ordinary viewport captures retain the real fixed purchase bar and verify the unfocused skip link remains outside the visible viewport; no site CSS or content was altered.",
+    "screenshots": [
+      "artifacts/quality-stage-manual-en-390-comparison-notes-viewport.png",
+      "artifacts/quality-stage-manual-en-390-comparison-cards-viewport.png",
+      "artifacts/quality-stage-manual-ja-320-comparison-notes-viewport.png",
+      "artifacts/quality-stage-manual-ja-320-comparison-cards-viewport.png"
+    ],
+    "states": [
+      {
+        "locale": "en",
+        "width": 390,
+        "suffix": "notes",
+        "skipBottom": -43.609375,
+        "skipFocused": false,
+        "viewport": 390,
+        "document": 390
+      },
+      {
+        "locale": "en",
+        "width": 390,
+        "suffix": "cards",
+        "skipBottom": -43.609375,
+        "skipFocused": false,
+        "viewport": 390,
+        "document": 390
+      },
+      {
+        "locale": "ja",
+        "width": 320,
+        "suffix": "notes",
+        "skipBottom": -39.609375,
+        "skipFocused": false,
+        "viewport": 320,
+        "document": 320
+      },
+      {
+        "locale": "ja",
+        "width": 320,
+        "suffix": "cards",
+        "skipBottom": -39.609375,
+        "skipFocused": false,
+        "viewport": 320,
+        "document": 320
+      }
+    ]
+  },
+  "manualReview": {
+    "checkedAt": "2026-11-16T14:49:23.578Z",
+    "reviewedScreenshots": [
+      "artifacts/quality-stage-priority-hario-en-390-intro.png",
+      "artifacts/quality-stage-priority-hario-ja-320-raw-specifications.png",
+      "artifacts/quality-stage-priority-fukuoka-en-390-guide.png",
+      "artifacts/quality-stage-priority-fukuoka-ja-320-products.png",
+      "artifacts/quality-stage-ja-desktop-budget-controls.png",
+      "artifacts/quality-stage-en-mobile-tokyo-choices-regional-guide.png",
+      "artifacts/quality-stage-manual-en-390-comparison-notes-viewport.png",
+      "artifacts/quality-stage-manual-ja-320-comparison-cards-viewport.png"
+    ],
+    "observations": [
+      "HARIO shows JPY8250 and an explicit pair-price label, a clearly textual official-design reference, and the official destination.",
+      "HARIO Japanese specifications distinguish the glass dimensions and chain length, plated-brass standard fitting, and unconfirmed weight/closing mechanism.",
+      "Fukuoka presents the one currently supported lacquer item and an ordinary official-photo reference; no COCOON product or thread-copy remains.",
+      "The three Tokyo types and their actual Japan reference amounts are distinguishable; the desktop budget control remains legible in one row.",
+      "English390 and Japanese320 ordinary viewport captures show readable material/shape/price comparisons without horizontal clipping; the real sticky purchase bar remains visible and the unfocused skip link is off-screen."
+    ],
+    "finding": "No additional functional or content discrepancy identified in these selected manual views. The very tall locator-crop fixed-element capture artifact is documented separately and not interpreted as the visible browser UI."
+  }
+}

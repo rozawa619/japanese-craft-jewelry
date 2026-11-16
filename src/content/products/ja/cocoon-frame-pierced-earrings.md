@@ -1,7 +1,7 @@
 ---
 productId: cocoon-frame-pierced-earrings
 locale: ja
-publishStatus: published
+publishStatus: draft
 ---
 
 布がふわりと広がるoriに対し、こちらは枠の中に通る絹糸の線を楽しむデザイン。輪郭と糸の重なりが見えるよう、髪を耳にかけた装いに合わせると、その違いを見せやすくなります。

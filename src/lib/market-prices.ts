@@ -11,6 +11,7 @@ export interface MarketPrice {
  checkedAt:string|null;
  taxNote:string;
  sourceIds:string[];
+ unit?:'single-ear'|'pair'|'one-item';
 }
 export interface OfficialMarketLink {id:string;url:string;merchantId:string;merchantName:string;}
 export interface MarketPrices {japan:MarketPrice|null;international:MarketPrice|null;japanLinks:OfficialMarketLink[];internationalLinks:OfficialMarketLink[];}
@@ -48,7 +49,8 @@ export function marketPricesFor(productId:string,source:MarketCatalog=catalog):M
    return [{id:link.id,url,merchantId:link.merchantId,merchantName:merchant?.name||''}];
   });
  };
- return {japan,international,japanLinks:links('japan'),internationalLinks:links('international')};
+ const withUnit=(price:MarketPrice|null):MarketPrice|null=>price&&product.priceUnit?{...price,unit:product.priceUnit}:price;
+ return {japan:withUnit(japan),international:withUnit(international),japanLinks:links('japan'),internationalLinks:links('international')};
 }
 
 export function formatMarketPrice(value:MarketPrice|null,locale:Locale='en'):string {

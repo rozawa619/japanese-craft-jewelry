@@ -1,0 +1,20 @@
+---
+import {labels,makerFor} from '../lib/catalog';
+import {t,type Locale} from '../lib/i18n';
+import type {Product} from '../lib/schema';
+interface Props{product:Product;locale:Locale;compact?:boolean}
+const {product,locale,compact=false}=Astro.props;
+const maker=makerFor(product,locale);
+---
+<div class:list={['official-preview',{'official-preview-compact':compact}]} data-official-preview>
+ <p class="preview-kicker">{t(locale,'DESIGN & MATERIAL','かたちと、素材から')}</p>
+ <p class="preview-craft">{labels('crafts',product.craftIds,locale)}</p>
+ <div class="preview-rule" aria-hidden="true"></div>
+ <p class="preview-maker">{maker.name}</p>
+ <p class="preview-material">{labels('materials',product.materialIds,locale)}</p>
+ <p class="preview-hint">{compact?t(locale,'Explore the piece and its official photo links','商品詳細・公式写真の案内へ'):t(locale,'View the actual design and available variations through the official link below.','実物の写真と選べるバリエーションは、下の公式ページからご覧いただけます。')}</p>
+</div>
+<style>
+ .official-preview{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;min-height:420px;padding:clamp(25px,5vw,64px);background:linear-gradient(135deg,#ece8df,#e2e7de);border:1px solid var(--line);color:var(--ink)}.preview-kicker{font-size:9px;letter-spacing:1.8px;line-height:1.8;margin-bottom:28px}.preview-craft{font:clamp(25px,3vw,38px)/1.4 var(--serif);margin-bottom:0;overflow-wrap:anywhere}.preview-rule{width:48px;height:1px;background:var(--accent);margin:25px 0}.preview-maker{font:18px/1.6 var(--serif);margin-bottom:10px}.preview-material{font-size:12px;line-height:1.8;margin-bottom:26px}.preview-hint{font-size:10px;line-height:1.9;margin:0;color:var(--muted);max-width:370px}.official-preview-compact{min-height:0;aspect-ratio:1;padding:30px}.official-preview-compact .preview-kicker{font-size:8px;margin-bottom:18px}.official-preview-compact .preview-craft{font-size:24px}.official-preview-compact .preview-rule{margin:16px 0}.official-preview-compact .preview-maker{font-size:15px}.official-preview-compact .preview-material{font-size:10px;margin-bottom:18px}
+ @media(max-width:720px){.official-preview{min-height:330px;padding:28px}.official-preview-compact{aspect-ratio:auto;min-height:300px;min-width:0;width:100%;padding:24px}.official-preview-compact .preview-craft{font-size:24px}}
+</style>

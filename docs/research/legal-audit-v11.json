@@ -1,0 +1,949 @@
+{
+  "checkedAt": "2026-11-16",
+  "scope": "Detailed publication, rights, advertising, privacy and hosting-contract review of the existing0.10 source and publicly served site. Not legal advice, a court opinion, blanket clearance or a promise of AdSense approval. New0.11 product imports require a separate followup.",
+  "reviewedApplicationCommit": "9b15f21c5932bb20c1584a99fa0288c8c3e867d0",
+  "method": [
+    "Read AGENTS, constitution, handoff, security, published EN/JA policy Markdown, raw catalog/translation/story/AI image registry and generation records, all30 published product records and published product/craft/place text.",
+    "Cross-searched material, gold, silver, pearl, allergy, origin, certification, weight, review and popularity wording across source layers. No product was physically tested, no stock was queried from a store, no rights-holder permission or advertiser contract was obtained.",
+    "Read official agency/platform source bodies through web tools. e-Gov's normal law pages exposed no readable text, so fetched its official current-law API XML, read relevant articles, then confirmed the current enforced revisions through APIv2 and compared those articles. XML/base64 payloads and screenshots remain internal artifacts, not public source evidence images.",
+    "A fresh headless Chrome context loaded7 public pages at390px, recorded page requests, storage, cookies, scripts, frames and forms. Results are a sample of observed browsing behavior, not proof about every browser, third-party destination, provider retention practice or future integration."
+  ],
+  "runtimeEvidence": {
+    "internalReport": "artifacts/legal-audit-v11/runtime-evidence.json",
+    "sampledPages": 7,
+    "allSampledResponses": 200,
+    "thirdPartyRequestsBeforeUserNavigation": 0,
+    "observedCookies": 0,
+    "localStorageEntries": 0,
+    "sessionStorageEntries": 0,
+    "forms": 0,
+    "iframes": 0,
+    "sampleRoutes": [
+      "ja/",
+      "en/",
+      "en/objects/hamamatsuya-18k-yosegi-earrings/",
+      "ja/objects/rinzen-seika-amber-pierced-earrings/",
+      "en/objects/senshu-pearl-stud-earrings/",
+      "ja/privacy/",
+      "en/editorial-policy/"
+    ]
+  },
+  "sources": [
+    {
+      "id": "legal-copyright-current-v11",
+      "title": "e-Gov 著作権法 — CurrentEnforced revision",
+      "url": "https://laws.e-gov.go.jp/law/345AC0000000048/20260624_508AC0000000048",
+      "apiUrl": "https://laws.e-gov.go.jp/api/2/law_data/345AC0000000048?law_full_text_format=xml&asof=2026-11-16",
+      "checkedAt": "2026-11-16",
+      "access": "body_read_api_xml",
+      "revision": "345AC0000000048_20260624_508AC0000000048",
+      "articlesRead": [
+        "2",
+        "21",
+        "23",
+        "27",
+        "32",
+        "48"
+      ],
+      "supports": [
+        "Copyright protects creative expression; reproducing, translating/adapting and publicly transmitting protected material require a lawful basis. Citation has substantive requirements; a source credit alone does not grant a license."
+      ]
+    },
+    {
+      "id": "legal-ai-copyright-v11",
+      "title": "文化庁 AIと著作権に関する考え方について(2024-03-15)",
+      "url": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/pdf/94037901_01.pdf",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "pagesRead": [
+        0,
+        3,
+        4,
+        5,
+        32,
+        33
+      ],
+      "supports": [
+        "The agency discussion is not itself legally binding. AI generation and publication can still infringe where the relevant similarity and reliance are present; generation technology and an AI label do not clear another person's rights."
+      ]
+    },
+    {
+      "id": "legal-design-current-v11",
+      "title": "e-Gov 意匠法 — CurrentEnforced revision",
+      "url": "https://laws.e-gov.go.jp/law/334AC0000000125/20260521_504AC0000000048",
+      "apiUrl": "https://laws.e-gov.go.jp/api/2/law_data/334AC0000000125?law_full_text_format=xml&asof=2026-11-16",
+      "checkedAt": "2026-11-16",
+      "access": "body_read_api_xml",
+      "revision": "334AC0000000125_20260521_504AC0000000048",
+      "articlesRead": [
+        "2",
+        "23"
+      ],
+      "supports": [
+        "Design protection concerns registered designs and their similar scope and the statutorily defined acts of implementation. A picture of a physical accessory is not automatically the same act as manufacturing or offering a counterfeit; individual registrations and uses still need analysis."
+      ]
+    },
+    {
+      "id": "legal-trademark-current-v11",
+      "title": "e-Gov 商標法 — CurrentEnforced revision",
+      "url": "https://laws.e-gov.go.jp/law/334AC0000000127/20260521_504AC0000000048",
+      "apiUrl": "https://laws.e-gov.go.jp/api/2/law_data/334AC0000000127?law_full_text_format=xml&asof=2026-11-16",
+      "checkedAt": "2026-11-16",
+      "access": "body_read_api_xml",
+      "revision": "334AC0000000127_20260521_504AC0000000048",
+      "articlesRead": [
+        "25",
+        "26"
+      ],
+      "supports": [
+        "Scope depends on the registered mark, goods/services and manner of use, including source-identification questions. Accurate text identification of a maker is distinct from claiming to be that maker or an authorized partner; no blanket mark clearance was performed."
+      ]
+    },
+    {
+      "id": "legal-ucpa-current-v11",
+      "title": "e-Gov 不正競争防止法 — CurrentEnforced revision",
+      "url": "https://laws.e-gov.go.jp/law/405AC0000000047/20260521_507AC0000000039",
+      "apiUrl": "https://laws.e-gov.go.jp/api/2/law_data/405AC0000000047?law_full_text_format=xml&asof=2026-11-16",
+      "checkedAt": "2026-11-16",
+      "access": "body_read_api_xml",
+      "revision": "405AC0000000047_20260521_507AC0000000039",
+      "articlesRead": [
+        "2(1)(1)",
+        "2(1)(2)",
+        "2(1)(3)",
+        "2(1)(20)",
+        "2(1)(21)"
+      ],
+      "supports": [
+        "Relevant risks include confusing business identifiers, uses of famous identifiers, specified acts involving copied product forms, misleading origin/quality statements, and false factual statements harming a competitor. These are separate questions, not a rule that every similar product picture necessarily infringes."
+      ]
+    },
+    {
+      "id": "legal-premiums-current-v11",
+      "title": "e-Gov 不当景品類及び不当表示防止法 — CurrentEnforced revision",
+      "url": "https://laws.e-gov.go.jp/law/337AC0000000134/20260521_504AC0000000048",
+      "apiUrl": "https://laws.e-gov.go.jp/api/2/law_data/337AC0000000134?law_full_text_format=xml&asof=2026-11-16",
+      "checkedAt": "2026-11-16",
+      "access": "body_read_api_xml",
+      "revision": "337AC0000000134_20260521_504AC0000000048",
+      "articlesRead": [
+        "5"
+      ],
+      "supports": [
+        "Materially misleading quality/content and advantageous-condition representations are prohibited for the supplying business within the law's scope. Applicability to a publisher's role must not be assumed identical to that of the product supplier."
+      ]
+    },
+    {
+      "id": "legal-caa-stealth-v11",
+      "title": "消費者庁 ステルスマーケティングQ&A Q1/Q11/Q13",
+      "url": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/faq/stealth_marketing/",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Q1 identifies the regulated supplier/advertiser and notes the joint-supply exception rather than making every affiliate directly the same regulated actor. Q13 evaluates the complete presentation including location, size and color; an opening notice is not an automatic safe harbor."
+      ]
+    },
+    {
+      "id": "legal-caa-mailorder-v11",
+      "title": "消費者庁 特定商取引法ガイド 通信販売",
+      "url": "https://www.no-trouble.caa.go.jp/what/mailorder/",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "The mail-order definition and advertising duties concern the seller/service provider and accepting contract applications. This site's no-order/no-payment/no-contract structure does not establish that SORA is the product seller. Future sales, paid services, preorder mediation or joint supply need a fresh review."
+      ]
+    },
+    {
+      "id": "legal-ftc-affiliate-v11",
+      "title": "FTC Endorsement Guides — What People Are Asking",
+      "url": "https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Unexpected material connections should be disclosed clearly and conspicuously close to the recommendation/link. 'Affiliate link' alone may not explain the commission; a separate policy link is not sufficient by itself. Truthful experience and substantiation still matter."
+      ]
+    },
+    {
+      "id": "legal-ftc-global-v11",
+      "title": "FTC Disclosures101 for Social Media Influencers",
+      "url": "https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Foreign posting does not automatically avoid US law where US-consumer effects are reasonably foreseeable. Material connections can include non-cash benefits and disclosures should match the endorsement language."
+      ]
+    },
+    {
+      "id": "legal-ftc-claims-v11",
+      "title": "FTC Advertising FAQs — Small Business",
+      "url": "https://www.ftc.gov/business-guidance/resources/advertising-faqs-guide-small-business",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Truthful advertising is assessed in context, including implied claims, pictures and material omissions. Objective product, price and safety claims need a reasonable supporting basis; an AI caption or warranty does not by itself cure a deceptive overall impression."
+      ]
+    },
+    {
+      "id": "legal-ppc-guidelines-v11",
+      "title": "個人情報保護委員会 通則ガイドライン",
+      "url": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "sectionsRead": [
+        "2-1",
+        "2-8",
+        "3-3",
+        "3-7",
+        "5"
+      ],
+      "supports": [
+        "Personal information, personal data and personal-related information differ. Identifiers and browsing histories can create obligations depending on actual collection/use. Publishing a media site does not alone establish that every operation falls within the writing/reporting exemption."
+      ]
+    },
+    {
+      "id": "legal-ppc-public-data-v11",
+      "title": "個人情報保護委員会 公表済み個人情報Q1-5",
+      "url": "https://www.ppc.go.jp/all_faq_index/faq1-q1-5/",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Information already public online is still protected personal information where the definition applies; public availability is not a universal permission to aggregate and reuse personal information."
+      ]
+    },
+    {
+      "id": "legal-ppc-business-names-v11",
+      "title": "個人情報保護委員会 法人代表者情報Q2-6",
+      "url": "https://www.ppc.go.jp/all_faq_index/faq2-q2-6/",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "A representative or business contact name can be personal information. Whether a business database is a personal-information database depends on its search/organization structure, so corporate context is not an automatic exemption."
+      ]
+    },
+    {
+      "id": "legal-telecom-current-v11",
+      "title": "e-Gov 電気通信事業法 — CurrentEnforced revision",
+      "url": "https://laws.e-gov.go.jp/law/359AC0000000086/20260527_507AC0000000046",
+      "apiUrl": "https://laws.e-gov.go.jp/api/2/law_data/359AC0000000086?law_full_text_format=xml&asof=2026-11-16",
+      "checkedAt": "2026-11-16",
+      "access": "body_read_api_xml",
+      "revision": "359AC0000000086_20260527_507AC0000000046",
+      "articlesRead": [
+        "27-12"
+      ],
+      "supports": [
+        "For covered services, certain device-information transmission instructions require prior notification/easy availability or another applicable route, subject to defined exceptions. Applicability and subordinate-rule details must be reviewed when adding advertising/analytics tags; a cookie label alone is not the test."
+      ]
+    },
+    {
+      "id": "legal-github-ip-v11",
+      "title": "GitHub Docs What is GitHub Pages — Data collection",
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "GitHub states that visitors' IP addresses are logged and stored for security whether or not signed in. No own analytics/cookies is distinct from no information being processed by hosting."
+      ]
+    },
+    {
+      "id": "legal-github-commercial-v11",
+      "title": "GitHub Docs GitHub Pages limits — Usage limits",
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "GitHub Pages is not intended or allowed as free hosting for an online business/e-commerce site or a site primarily facilitating commercial transactions. No on-site checkout alone does not settle whether an affiliate-focused operation is permitted. Contract suitability remains unresolved; GitHub source hosting is a separate use."
+      ]
+    },
+    {
+      "id": "legal-maps-url-v11",
+      "title": "Google Maps URLs Get Started",
+      "url": "https://developers.google.com/maps/documentation/urls/get-started",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Google documents cross-platform search/directions URLs, required api=1, encoding and no API-key requirement. This supports the actual user-activated external-link implementation."
+      ]
+    },
+    {
+      "id": "legal-google-geo-v11",
+      "title": "Google Geo Guidelines — Web and apps",
+      "url": "https://about.google/brand-resource-center/products-and-services/geo-guidelines/",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Google expressly welcomes text/button links to Maps. Images, screenshots, logos, embedded services and commercial integrations have separate conditions; linking is not a license to copy those assets."
+      ]
+    },
+    {
+      "id": "legal-adsense-privacy-v11",
+      "title": "Google AdSense Required content",
+      "url": "https://support.google.com/adsense/answer/1348695?hl=en",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Sites using Google advertising must disclose applicable advertising cookies, participating vendors and user controls in the privacy policy. Present no-ad behavior cannot truthfully remain the only policy once ad tags are enabled."
+      ]
+    },
+    {
+      "id": "legal-google-eu-consent-v11",
+      "title": "Google EU user consent policy",
+      "url": "https://www.google.com/about/company/user-consent-policy/",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "When an incorporated Google product is used, EEA/UK/Swiss users require the specified disclosures, legally valid consent where required, identified data parties, records and withdrawal instructions. This is a conditional Google policy and does not certify all legal compliance."
+      ]
+    },
+    {
+      "id": "legal-google-cmp-v11",
+      "title": "Google AdSense Certified CMP requirements",
+      "url": "https://support.google.com/adsense/answer/13554116?hl=en",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "A Google-certified TCF-integrated CMP is required for personalized advertising to EEA/UK/Swiss users under the stated program conditions. Certification does not assess full legal compliance; non-personalized or limited advertising is not a universal no-consent exemption."
+      ]
+    },
+    {
+      "id": "legal-google-privacy-v11",
+      "title": "Google Privacy Policy",
+      "url": "https://policies.google.com/privacy?hl=en",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "effectiveDate": "2026-10-16",
+      "supports": [
+        "External Google destinations apply their own service/settings-dependent information practices, including device/IP, cookies and location information; this is distinct from the selection site's own no-location/no-tracker implementation."
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "L11-01",
+      "priority": "high_review",
+      "category": "AI image accuracy and rights",
+      "state": "change_recommended",
+      "locations": [
+        "src/components/EditorialImage.astro",
+        "src/content/policies/editorial-policy.md",
+        "src/content/policies/ja/editorial-policy.md",
+        "src/pages/[lang]/objects/[slug].astro",
+        "docs/assets.json"
+      ],
+      "observation": "Photorealistic fictional styling illustrations accompany specific named product prices and retailer destinations. The visible caption says only AI image/AIイメージ, and the policy does not explicitly distinguish the illustration from an actual product reproduction or wearing test.",
+      "assessment": "No infringement or deception is adjudicated. There are two independent residual risks: copying protected creative expression can infringe despite AI generation; an invented accessory can also be mistaken for the featured real product. A short AI label does not prove that an ordinary visitor understands both limitations.",
+      "recommendation": "Keep the requested short caption. Expand the selection policy with plain text explaining original illustrative styling, no real-product reproduction/test/endorsement, and confirm shape/color/size/hardware in official real-product photographs. Provide a useful official-photo link near the illustration where a real product page was verified; call catalog-only destinations official product information. Do not recreate an exact branded design or copy a retailer photo without permission.",
+      "sourceIds": [
+        "legal-ai-copyright-v11",
+        "legal-copyright-current-v11",
+        "legal-ftc-claims-v11"
+      ],
+      "residual": "Individual similarity, applied-art copyright, registrations, trademark use and any real-person resemblance are not cleared by a general audit; obtain suitable photo/design permission for faithful commercial reproductions."
+    },
+    {
+      "id": "L11-02",
+      "priority": "medium",
+      "category": "18K wording",
+      "state": "change_recommended",
+      "locations": [
+        "src/data/catalog.json products.hamamatsuya-18k-pierced.title"
+      ],
+      "observation": "EN title is Hamamatsuya18K yosegi earrings while Japanese explicitly says18K表記; the exact parts covered by the catalog's18K wording are not confirmed.",
+      "recommendation": "Qualify the EN title as an18K-labelled listing, preserving source wording and the current component uncertainty. Do not infer solid-gold construction of every component, gold purity test results, allergy suitability or restocking.",
+      "sourceIds": [
+        "legal-premiums-current-v11",
+        "legal-ftc-claims-v11"
+      ]
+    },
+    {
+      "id": "L11-03",
+      "priority": "medium",
+      "category": "Hosting privacy accuracy",
+      "state": "change_recommended",
+      "locations": [
+        "src/content/policies/privacy.md",
+        "src/content/policies/ja/privacy.md"
+      ],
+      "observation": "Policy correctly separates own analytics and hosting, but says technical information may be recorded; GitHub explicitly states that visitor IPs are logged/stored for security.",
+      "recommendation": "State GitHub's IP/security processing accurately, link its privacy explanation, distinguish it from the site's lack of own analytics/form/cookie collection. Do not invent a retention period, claim operator access to hosting logs, or promise all information stays in Japan.",
+      "sourceIds": [
+        "legal-github-ip-v11"
+      ]
+    },
+    {
+      "id": "L11-04",
+      "priority": "high_before_monetization",
+      "category": "GitHub Pages contract suitability",
+      "state": "unresolved_operator_decision",
+      "locations": [
+        ".github/workflows/deploy.yml",
+        "docs/handoff.md",
+        "docs/pre-application-checklist.md",
+        "docs/affiliate-readiness.md"
+      ],
+      "observation": "Public delivery uses free GitHub Pages; stated business objective is affiliate monetization and product-selection referrals.",
+      "assessment": "GitHub's usage restrictions create a material contract risk for a site primarily facilitating commercial transactions. No checkout is not an express affiliate exemption. This review does not decide that this particular current informational site has already breached the contract.",
+      "recommendation": "Before monetized operation, confirm suitability with GitHub or move public delivery to a host whose current terms allow this use. Keep the full source on GitHub. Do not purchase hosting/domains, create accounts or claim support approval without the operator's authorized decision.",
+      "sourceIds": [
+        "legal-github-commercial-v11"
+      ]
+    },
+    {
+      "id": "L11-05",
+      "priority": "high_before_enabling_tags",
+      "category": "AdSense privacy and external transmissions",
+      "state": "future_enablement_gate",
+      "locations": [
+        "astro.config.mjs",
+        "src/content/policies/privacy.md",
+        "src/content/policies/ja/privacy.md",
+        "docs/security.md",
+        "docs/pre-application-checklist.md"
+      ],
+      "observation": "No AdSense/analytics tags, publisher ID, CMP or tracking cookies were found in source or the7-page fresh-browser sample. Current CSP disallows third-party scripts/frames/connections.",
+      "recommendation": "Do not paste an ad tag into the present no-tracking policy. First inventory real vendors/information/purposes, confirm hosting and account/domain eligibility, update actual privacy disclosures and user controls, assess Japan external-transmission/APPI obligations, configure a suitable certified CMP for relevant Google personalized-ad traffic, and narrowly change/test CSP and consent behavior. Do not fabricate a publisher ID or weaken CSP globally.",
+      "sourceIds": [
+        "legal-adsense-privacy-v11",
+        "legal-google-eu-consent-v11",
+        "legal-google-cmp-v11",
+        "legal-telecom-current-v11",
+        "legal-ppc-guidelines-v11"
+      ],
+      "residual": "Full GDPR/UK/Swiss/US-state territorial applicability and consent implementation are not decided from English availability alone. Actual ad mode, vendor contracts, geographic targeting and data flows must be reviewed at enablement."
+    },
+    {
+      "id": "L11-06",
+      "priority": "medium_before_future_relationships",
+      "category": "Affiliate and supplied-product disclosure",
+      "state": "existing_control_with_future_gate",
+      "locations": [
+        "src/lib/affiliate.ts",
+        "src/components/Disclosure.astro",
+        "src/components/RetailerLink.astro",
+        "src/components/MarketPurchaseLink.astro"
+      ],
+      "observation": "Current program/item records are not_applied and ordinary links are identified as such. Future affiliate notices explain commission in EN/JA before the visible link; sponsored attributes match the resolver. Sponsored compact notices use a contrasting panel and12px font rather than relying only on a policy link.",
+      "assessment": "These controls reduce hidden-advertising risk but machine checks are not a legal safe harbor. The Japan stealth rule primarily regulates the advertiser with a joint-supply exception; US guidance may also matter when US-consumer effects are foreseeable.",
+      "recommendation": "Keep actual-link-scoped, visible same-language notices and merchant/program approval gates. Record gifted products, paid placements, trips or other material relationships separately before accepting them; approval status alone cannot model every non-cash sponsorship. Never invent first-hand testing/reviews or imply endorsement by the AI person.",
+      "sourceIds": [
+        "legal-caa-stealth-v11",
+        "legal-ftc-affiliate-v11",
+        "legal-ftc-global-v11"
+      ]
+    },
+    {
+      "id": "L11-07",
+      "priority": "medium",
+      "category": "Product material and health claims",
+      "state": "existing_control_no_new_false_claim_identified",
+      "locations": [
+        "src/data/catalog.json",
+        "src/data/translations/ja.json",
+        "src/data/product-stories.json",
+        "src/content/products/"
+      ],
+      "observation": "Current text distinguishes surgical seller wording from an exact steel grade,14kgf from solid gold, silver color from silver composition, imitation shell pearls from natural/cultured pearls, and unassigned weight from per-ear weight. The scan did not identify a positive universal hypoallergenic, nickel-free, disease-treatment or guaranteed comfort claim.",
+      "recommendation": "Maintain these distinctions in new imports, title/summary/filter/alt as well as lower details. Do not turn titanium/surgical/K18 into a medical or allergy guarantee. Describe an airy visual line as appearance, not measured lightness.",
+      "sourceIds": [
+        "legal-premiums-current-v11",
+        "legal-ftc-claims-v11"
+      ]
+    },
+    {
+      "id": "L11-08",
+      "priority": "medium",
+      "category": "Origin and traditional-craft labels",
+      "state": "existing_control_with_import_gate",
+      "locations": [
+        "src/data/catalog.json",
+        "src/data/translations/ja.json",
+        "src/content/places/",
+        "src/content/crafts/",
+        "src/config/region-selection.ts"
+      ],
+      "observation": "Records generally distinguish listed product origin, maker/workshop base, component origin and individual certification. Osaka shell-pearl component origin is not called verified Osaka assembly; Kyoto/other general craft designations are not transferred into item certification. The travelTOP10 is labelled a visitor-rate metric, not jewelry sales popularity.",
+      "recommendation": "Require the same evidence for every added prefecture/product and explain the exact regional connection. Do not add a manufacturer location solely from a retailer address, call all selected jewelry nationally designated craft, or describe the travel list as a popular/best jewelry ranking.",
+      "sourceIds": [
+        "legal-ucpa-current-v11",
+        "legal-premiums-current-v11"
+      ]
+    },
+    {
+      "id": "L11-09",
+      "priority": "medium",
+      "category": "Prices, stock and local bargains",
+      "state": "existing_control_with_update_duty",
+      "locations": [
+        "src/lib/market-prices.ts",
+        "src/components/MarketPrice.astro",
+        "src/pages/[lang]/objects/[slug].astro",
+        "src/data/catalog.json"
+      ],
+      "observation": "Prices identify the Japan online market/date; Global prices are separate real listings, not FX conversions; actual store prices/stock are unconfirmed. Unknown CO.COON prices remain unknown.18K is marked out of stock when checked.",
+      "recommendation": "Retain market/date/corresponding destination and unknown values. Do not promise all local shops are cheaper, tax-free eligibility, cheapest/lowest prices, live stock or all-in shipping/taxes. Recheck actual SKU/color/pair count and current tax wording at updates.",
+      "sourceIds": [
+        "legal-premiums-current-v11",
+        "legal-ftc-claims-v11"
+      ]
+    },
+    {
+      "id": "L11-10",
+      "priority": "medium",
+      "category": "Copyright in text/photos and competitor benchmarking",
+      "state": "existing_control_with_expansion_gate",
+      "locations": [
+        "src/content/",
+        "docs/research/sources.json",
+        "docs/assets.json",
+        "public/images/"
+      ],
+      "observation": "Public visual registry uses project-created AI illustration rather than retailer photographs, logos, maps or reviews. Product facts are separated from original descriptions. A full plagiarism/rights search against every possible work was not performed.",
+      "recommendation": "Use competitors to identify useful facts and generic comparison features, then independently research official data and write fresh prose. Never copy a competitor's selection text, unique composition, ratings, comparison data curation, photograph or distinctive layout. A source link, translation or small wording change is not a license. Obtain permission or meet a genuine lawful exception before using protected third-party expression.",
+      "sourceIds": [
+        "legal-copyright-current-v11",
+        "legal-ai-copyright-v11"
+      ]
+    },
+    {
+      "id": "L11-11",
+      "priority": "medium",
+      "category": "Trademark, design and maker affiliation",
+      "state": "not_individually_cleared",
+      "locations": [
+        "src/data/catalog.json",
+        "src/components/VisitGuide.astro",
+        "public/favicon.svg",
+        "docs/assets.json"
+      ],
+      "observation": "Maker/product names identify linked items, without copied brand logos or official-partner certification badges. Site mark is independently generated simple lettering. No comprehensive J-PlatPat or international mark/design clearance search was performed.",
+      "recommendation": "Keep identifying names separate from the site's own brand and do not imply authorization, certification or brand sponsorship. Do not treat this audit as permission to reproduce exact accessory artwork or offer replicas. Review an individual rights claim/registration if similarity or confusion is raised; remove the disputed visual pending review when warranted.",
+      "sourceIds": [
+        "legal-trademark-current-v11",
+        "legal-design-current-v11",
+        "legal-ucpa-current-v11"
+      ]
+    },
+    {
+      "id": "L11-12",
+      "priority": "low_current_medium_on_change",
+      "category": "Stores and Google Maps",
+      "state": "existing_control",
+      "locations": [
+        "src/data/visits.json",
+        "src/lib/visits.ts",
+        "src/components/VisitGuide.astro"
+      ],
+      "observation": "Uses independently summarized public retail locations and user-activated fixed Google search/directions URLs with api=1; no map screenshots/StreetView/reviews/logos/embeds/geolocation. IndividualSKU stock is distinguished from a public store or brand availability.",
+      "recommendation": "Preserve the public-store evidence and exact address/date, avoid private homes and past popups, keep ordinary official URLs, and use official-online fallback when a current shop cannot be verified. Google welcomes text/button links, but that does not license map imagery or store photographs. Routes/opening hours should retain their checked-date limits.",
+      "sourceIds": [
+        "legal-maps-url-v11",
+        "legal-google-geo-v11",
+        "legal-ppc-public-data-v11"
+      ]
+    },
+    {
+      "id": "L11-13",
+      "priority": "medium_on_data_expansion",
+      "category": "Public personal/business information",
+      "state": "minimize_and_reassess",
+      "locations": [
+        "src/data/catalog.json makers",
+        "src/data/visits.json",
+        "docs/research/sources.json",
+        "src/content/policies/privacy.md"
+      ],
+      "observation": "Published maker context includes some identifiable professional names; no customer data/forms exist. Public availability does not remove all personal-information protection. Whether this particular media operation uses a qualifying personal-information database or writing exemption is not conclusively decided here.",
+      "recommendation": "Describe only officially public professional/retail information necessary for product introduction. Do not add residential addresses, personal phones, private social accounts or personal attributes. Do not claim the site never handles any personal information at all or that a hobby/small scale automatically exempts it. Before handling readers' requests, contracts or analytics, define purposes, storage/access, data subjects' rights and a real suitable response route.",
+      "sourceIds": [
+        "legal-ppc-public-data-v11",
+        "legal-ppc-business-names-v11",
+        "legal-ppc-guidelines-v11"
+      ]
+    },
+    {
+      "id": "L11-14",
+      "priority": "medium_on_business_change",
+      "category": "Operator and mail-order display",
+      "state": "scope_distinction",
+      "locations": [
+        "src/config/site.ts",
+        "src/pages/[lang]/[...slug].astro",
+        "src/content/policies/about.md",
+        "src/content/policies/ja/about.md"
+      ],
+      "observation": "Current role is selection/introduction, no orders, payments, dispatch or paid reader service; operator display is SORA. No actual operator full name/address/email was supplied, and Contact is intentionally unpublished.",
+      "assessment": "No conclusion that this role is the product mail-order seller was established; therefore a fictitious seller-address/legal notice must not be fabricated. Conversely 'not selling' cannot immunize copied images, deceptive claims, data processing or a future jointly supplied service.",
+      "recommendation": "Keep truthful SORA and the real introduction-only functionality. Before on-site sales/booking/paid services/joint supply, re-evaluate applicable seller disclosures using actual information. A particular partner/AdSense verification may demand truthful account/contact details separately from public legal requirements.",
+      "sourceIds": [
+        "legal-caa-mailorder-v11",
+        "legal-caa-stealth-v11"
+      ]
+    },
+    {
+      "id": "L11-15",
+      "priority": "medium_operational",
+      "category": "Complaints, rights and corrections",
+      "state": "residual_operator_process",
+      "locations": [
+        "docs/pre-application-checklist.md",
+        "docs/operations.md",
+        "docs/security.md"
+      ],
+      "observation": "User explicitly deferred a public Contact page; the review did not create an address, send messages, solicit private identity or treat public GitHub Issues as a private contact substitute.",
+      "recommendation": "Keep an internal process to promptly pause disputed images/claims and correct verified errors. If law/actual contract or data handling requires a suitable real response route, the operator must choose/provide one before that operation; the absence cannot be fixed by a fake email or a statement that all legal liability is waived.",
+      "sourceIds": [
+        "legal-copyright-current-v11",
+        "legal-ppc-guidelines-v11"
+      ]
+    }
+  ],
+  "notReliedUpon": [
+    {
+      "url": "https://www.jpo.go.jp/faq/yokuaru/trademark/shouhyou_seido_faq.html",
+      "result": "403 in web tool; not treated as body-read evidence. Current statutes were read via official e-Gov APIs instead."
+    },
+    {
+      "url": "https://www.jpo.go.jp/support/ipr/qanda/q09.html",
+      "result": "403 in web tool; no conclusion based only on its search excerpt."
+    },
+    {
+      "url": "https://www.soumu.go.jp/main_sosiki/joho_tsusin/d_syohi/gaibusoushin_kiritsu.html",
+      "result": "Could not be opened. Read current Telecommunications Business Act27-12 via e-Gov instead; subordinate rules/service-specific applicability remain a future integration review."
+    },
+    {
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+      "result": "Only bot-verification text returned. Not represented as full GDPR body-read; Google contractual consent/CMP policy is documented separately, and comprehensive EU legal applicability remains unresolved."
+    }
+  ],
+  "policyImplementationFollowup": {
+    "checkedAt": "2026-11-16",
+    "status": "source_text_updated_final_build_and_hosted_review_pending",
+    "files": [
+      "src/content/policies/editorial-policy.md",
+      "src/content/policies/ja/editorial-policy.md",
+      "src/content/policies/privacy.md",
+      "src/content/policies/ja/privacy.md"
+    ],
+    "changes": [
+      "Plain EN/JA distinction between official facts/editorial suggestions and first-hand reviews/tests",
+      "AI illustration of fictional adults distinguished from actual product reproduction or wearing/use evidence; official actual photographs/specifications should be checked",
+      "No unlicensed republishing of product photographs",
+      "Accurate GitHub IP-security logging, external Google/official privacy practices, minimal public professional information and policy update before ad/analytics enablement"
+    ],
+    "captionComponentsChanged": false,
+    "contactOrIdentityInvented": false,
+    "verification": "git diff --check passed for the four Markdown files; no build/deployment success claimed here."
+  },
+  "hostingMigration": {
+    "checkedAt": "2026-11-16",
+    "status": "prepared_only_not_migrated",
+    "document": "docs/hosting-commercial-readiness-v11.md",
+    "githubPagesCommercialSuitability": "unresolved_before_monetized_operation",
+    "candidate": "Cloudflare Pages for the existing static site; current official guidance also recommends Workers for new projects, to be compared at selection time",
+    "commercialInference": "The reviewed Self-Serve and Developer Platform bodies contain content-hosting permission and did not show the same general commercial-site restriction as GitHub Pages. This supports considering the service, not a promise of blanket commercial approval, indefinite free service or contract suitability for every use/plan.",
+    "newAccountCreated": false,
+    "newContractAccepted": false,
+    "domainPurchased": false,
+    "dnsChanged": false,
+    "migrationDeployed": false,
+    "adsenseSiteSubmitted": false,
+    "sources": [
+      {
+        "id": "hosting-cloudflare-agreement-v11",
+        "title": "Cloudflare Self-Serve Subscription Agreement",
+        "url": "https://www.cloudflare.com/terms/",
+        "checkedAt": "2026-11-16",
+        "access": "body_read",
+        "documentUpdatedAt": "2025-09-12",
+        "supports": [
+          "Reviewed service terms, incorporated product/plan conditions, free-service termination, acceptable use, network data and free-service credit-card collection restriction. Current site has no card collection; no perpetual free or unlimited commercial guarantee is inferred."
+        ]
+      },
+      {
+        "id": "hosting-cloudflare-developer-terms-v11",
+        "title": "Cloudflare Developer Platform Service-Specific Terms",
+        "url": "https://www.cloudflare.com/service-specific-terms-developer-platform/",
+        "checkedAt": "2026-11-16",
+        "access": "body_read",
+        "documentUpdatedAt": "2026-09-28",
+        "supports": [
+          "Developer Platform includes Workers/Pages and may host content; customer remains responsible for content/licensing/support, resource limits/abuse controls apply, and provided subdomains can change under the stated conditions."
+        ]
+      },
+      {
+        "id": "hosting-cloudflare-pages-overview-v11",
+        "title": "Cloudflare Pages Overview",
+        "url": "https://developers.cloudflare.com/pages/",
+        "checkedAt": "2026-11-16",
+        "access": "body_read",
+        "supports": [
+          "Pages offers Git/direct-upload delivery on current plans, while its current notice recommends Workers for new projects. No new account or service was created for this research."
+        ]
+      },
+      {
+        "id": "hosting-cloudflare-build-config-v11",
+        "title": "Cloudflare Pages Build configuration",
+        "url": "https://developers.cloudflare.com/pages/configuration/build-configuration/",
+        "checkedAt": "2026-11-16",
+        "access": "body_read",
+        "supports": [
+          "Static Astro build output is dist; configure the real build command/output directory and review the actual exit status rather than publishing source files."
+        ]
+      },
+      {
+        "id": "hosting-cloudflare-build-image-v11",
+        "title": "Cloudflare Pages Build image",
+        "url": "https://developers.cloudflare.com/pages/configuration/build-image/",
+        "checkedAt": "2026-11-16",
+        "access": "body_read",
+        "supports": [
+          "NODE_VERSION/PNPM_VERSION overrides and SKIP_DEPENDENCY_INSTALL are documented. Proposed production profile pins supported versions and a frozen-lockfile install instead of relying on a different default runtime."
+        ]
+      },
+      {
+        "id": "hosting-cloudflare-github-v11",
+        "title": "Cloudflare Pages GitHub integration",
+        "url": "https://developers.cloudflare.com/pages/configuration/git-integration/github-integration/",
+        "checkedAt": "2026-11-16",
+        "access": "body_read",
+        "supports": [
+          "Pages can build from the existing GitHub repository and maintain production/preview branches. Source hosting can remain GitHub while public delivery moves elsewhere."
+        ]
+      },
+      {
+        "id": "hosting-cloudflare-domains-v11",
+        "title": "Cloudflare Pages Custom domains",
+        "url": "https://developers.cloudflare.com/pages/configuration/custom-domains/",
+        "checkedAt": "2026-11-16",
+        "access": "body_read",
+        "supports": [
+          "Register the actual domain in Pages before its DNS setup. Apex needs the specified zone/nameserver arrangement; external-DNS subdomain CNAME is possible under the documented conditions. No domain/DNS was changed."
+        ]
+      },
+      {
+        "id": "hosting-cloudflare-redirects-v11",
+        "title": "Cloudflare Pages Redirects",
+        "url": "https://developers.cloudflare.com/pages/configuration/redirects/",
+        "checkedAt": "2026-11-16",
+        "access": "body_read",
+        "supports": [
+          "_redirects applies to requests served by that Pages deployment, has specific syntax/limits, and differs for Functions. A file at the new host cannot by itself redirect requests still arriving at the old GitHub origin."
+        ]
+      },
+      {
+        "id": "hosting-cloudflare-default-domain-redirect-v11",
+        "title": "Redirecting pages.dev to a custom domain",
+        "url": "https://developers.cloudflare.com/pages/how-to/redirect-to-custom-domain/",
+        "checkedAt": "2026-11-16",
+        "access": "body_read",
+        "supports": [
+          "After the real custom domain is set up, a provider-side redirect may preserve paths/query strings using the documented settings. This does not select or register a domain for the operator."
+        ]
+      },
+      {
+        "id": "hosting-cloudflare-limits-v11",
+        "title": "Cloudflare Pages Limits",
+        "url": "https://developers.cloudflare.com/pages/platform/limits/",
+        "checkedAt": "2026-11-16",
+        "access": "body_read",
+        "supports": [
+          "Current Free limits include500 builds/month,20000 files and25MiB per asset; other service/rate/resource conditions apply. No unlimited-use or future-price guarantee is made."
+        ]
+      },
+      {
+        "id": "hosting-cloudflare-headers-v11",
+        "title": "Cloudflare Pages Headers",
+        "url": "https://developers.cloudflare.com/pages/configuration/headers/",
+        "checkedAt": "2026-11-16",
+        "access": "body_read",
+        "supports": [
+          "Static _headers supports additional security headers; Functions responses require a different path. New headers must be tested alongside the existing Astro hash-based CSP rather than disabling it."
+        ]
+      },
+      {
+        "id": "hosting-cloudflare-cookies-v11",
+        "title": "Cloudflare Cookies",
+        "url": "https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/",
+        "checkedAt": "2026-11-16",
+        "access": "body_read",
+        "supports": [
+          "Provider security/features can use cookies such as bot-management/challenge state under documented settings. The current GitHub-hosted cookie observation must not be assumed valid after a migration."
+        ]
+      },
+      {
+        "id": "hosting-cloudflare-privacy-v11",
+        "title": "Cloudflare Privacy Policy",
+        "url": "https://www.cloudflare.com/privacypolicy/",
+        "checkedAt": "2026-11-16",
+        "access": "body_read",
+        "supports": [
+          "Provider-specific privacy practices must be reviewed and reflected according to actual enabled services and data flows. Current GitHub hosting wording cannot simply be left unchanged after moving."
+        ]
+      },
+      {
+        "id": "hosting-astro-cloudflare-v11",
+        "title": "Astro Deploy your Astro Site to Cloudflare",
+        "url": "https://docs.astro.build/en/guides/deploy/cloudflare/",
+        "checkedAt": "2026-11-16",
+        "access": "body_read",
+        "supports": [
+          "Current Astro guidance recommends Workers for new projects and provides a static dist asset path; an on-demand adapter is conditional, not necessary merely to serve this already static site."
+        ]
+      },
+      {
+        "id": "hosting-google-move-v11",
+        "title": "Google Search Central Site moves",
+        "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
+        "checkedAt": "2026-11-16",
+        "access": "body_read",
+        "supports": [
+          "Map old/new pages, update self-canonicals/hreflang/internal links and sitemap, avoid irrelevant home redirects and loops, and verify the move on actual public URLs. Search transfer is not guaranteed by a build."
+        ]
+      },
+      {
+        "id": "hosting-google-redirects-v11",
+        "title": "Google Search Central Redirects",
+        "url": "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+        "checkedAt": "2026-11-16",
+        "access": "body_read",
+        "supports": [
+          "Server-side permanent redirects are preferred where possible; supported alternatives must be described by their real behavior. A static HTML refresh must not be reported as anHTTP301."
+        ]
+      },
+      {
+        "id": "hosting-google-change-address-v11",
+        "title": "Google Search Console Change of Address",
+        "url": "https://support.google.com/webmasters/answer/9370220?hl=en",
+        "checkedAt": "2026-11-16",
+        "access": "body_read",
+        "supports": [
+          "The tool requires ownership and supported domain-level properties; it is not available for a path-only property such as the existing project subpath."
+        ]
+      },
+      {
+        "id": "hosting-adsense-url-v11",
+        "title": "Google AdSense Site URL input",
+        "url": "https://support.google.com/adsense/answer/2784438?hl=en",
+        "checkedAt": "2026-11-16",
+        "access": "body_read",
+        "supports": [
+          "Signup input uses a standard host without path/query/fragment/port. Its subdomain examples must be read with the separate current Sites-management/Public Suffix List guidance, not turned into a purchased-domain mandate."
+        ]
+      },
+      {
+        "id": "hosting-adsense-psl-policy-v11",
+        "title": "Google AdSense Site management changes",
+        "url": "https://support.google.com/adsense/answer/12170421?hl=en",
+        "checkedAt": "2026-11-16",
+        "access": "body_read",
+        "supports": [
+          "Sites management lists domains, subdomains on Public Suffix List platforms and managed host partners as eligible site categories. This alone does not prove actual account acceptance, ownership verification or content approval."
+        ]
+      },
+      {
+        "id": "hosting-public-suffix-list-v11",
+        "title": "Official Public Suffix List",
+        "url": "https://publicsuffix.org/list/public_suffix_list.dat",
+        "checkedAt": "2026-11-16",
+        "access": "body_read",
+        "documentVersion": "2026-11-15_20-28-43_UTC",
+        "documentCommit": "fd22c6c8b3fd7e854c1eff2194cfd4ebc9854b88",
+        "observedEntries": [
+          "pages.dev",
+          "github.io"
+        ],
+        "supports": [
+          "Both provided-platform suffixes are present in the official list. No operator AdSense account submission, provider endorsement or automatic approval follows from this observation."
+        ]
+      }
+    ]
+  },
+  "conclusion": {
+    "currentSite": "No specific infringement or other definitive legal violation was established from this source/runtime review. That is not a declaration of legality. Clarify AI illustrations, qualify the EN18K wording, and accurately describe hostingIP processing; retain verified fact/source/market controls.",
+    "highestUnresolvedIssues": [
+      "GitHub Pages suitability for the intended monetized commercial-referral use",
+      "Individual third-party image/design/mark rights clearance where faithful representation is desired",
+      "Real ad/CMP/privacy/external-transmission and account/domain setup before enabling AdSense",
+      "A real operator response route if future legal/contract/data operations require it"
+    ],
+    "prohibitedShortcuts": [
+      "No fabricated contacts, identities, approvals or licensed-photo claims",
+      "No universal legal/AdSense pass guarantee",
+      "No copyright/accuracy cure merely by saying AI or adding a disclaimer",
+      "No invented minimum article/product/traffic thresholds",
+      "No unauthorized registration, applications, messages, purchases or new contracts"
+    ]
+  },
+  "regionalProductFollowup": {
+    "checkedAt": "2026-11-16",
+    "scope": "Integrated sixteen additions: canonical product facts, Japanese translations, 32 bilingual product Markdown bodies, stories, selection notes, visits and OfficialPreview component. Read-only data review; separate availability gate is not inferred from this wording audit.",
+    "status": "minor_process_wording_changes_requested_to_root",
+    "productCount": 16,
+    "allHaveBilingualBodiesAndNotes": true,
+    "newProductImages": 0,
+    "newImagePresentation": "Text-only OfficialPreview with external official photograph/product links; no copied or hotlinked photographs and no new precise AI replicas.",
+    "checks": [
+      "SV1000 pendant top kept separate from SV925 chain",
+      "Shippo brass pattern kept separate from cloisonne enamel",
+      "Surgical stainless wording not extended to all components or allergy guarantees",
+      "JPY15500 single-ear unit and JPY3850 pair unit explicit",
+      "Nanao 16G fitting, box-text conflict and fresh 4.8mm versus stale 4.9mm cache recorded",
+      "ToyToy cultural statements limited to published designer profile and original contemporary brand design",
+      "Sghr mixed fittings not simplified to titanium-only",
+      "Glass color names not recast as jade/coral gemstones",
+      "SHOWEN silk content not recast as entirely hand-braided or universal wrist fit",
+      "Store brand handling kept separate from featured-SKU stock"
+    ],
+    "requestedChanges": [
+      {
+        "productId": "toytoy-ninkari-nikuri-earrings",
+        "locations": [
+          "src/data/catalog.json:editorialSummary",
+          "src/data/translations/ja.json:editorialSummary",
+          "src/data/product-stories.json:en/ja.standfirst",
+          "src/content/products/toytoy-ninkari-nikuri-earrings.md"
+        ],
+        "issue": "Carved / 彫り can imply an unverified manufacturing process.",
+        "recommendation": "Describe the open wooden outline rather than a carving process."
+      },
+      {
+        "productId": "toytoy-sirokani-pe-silver-necklace",
+        "locations": [
+          "src/data/catalog.json:editorialSummary",
+          "src/data/product-stories.json:en.standfirst"
+        ],
+        "issue": "Engraved pattern implies a process not established by the product body; serial-number engraving is a different fact.",
+        "recommendation": "Use curved pattern."
+      }
+    ],
+    "independentlyReopenedOfficialProductBodies": [
+      "https://toytoy-ya.com/SHOP/TN00-NK001.html",
+      "https://toytoy-ya.com/SHOP/TP00-SK001-SV.html",
+      "https://www.kazarino.com/product-page/pierce",
+      "https://www.kazarino.com/product-page/bangle",
+      "https://shop.simprich.jp/products/pr-e4828",
+      "https://www.creema.jp/item/17252787/detail",
+      "https://tamura.buyshop.jp/items/139420551"
+    ],
+    "limitations": [
+      "No registered-design or trademark clearance for each SKU.",
+      "No third-party image licence inferred from online publication.",
+      "Existing AI28 images remain subject to individual similarity/reliance and product-misrepresentation risk.",
+      "Current retail/orderability is assessed separately and may change."
+    ]
+  },
+  "availabilityFollowup": {
+    "checkedAt": "2026-11-16",
+    "report": "docs/research/existing-availability-v11.json",
+    "reviewedOldProducts": 30,
+    "observedOnlinePricedOrderableProducts": 20,
+    "verifiedRetailChannelWithCatalogProducts": 7,
+    "deferRecommended": [
+      "cocoon-ori-nonhole-earrings",
+      "cocoon-frame-pierced-earrings",
+      "hamamatsuya-18k-pierced"
+    ],
+    "noOrderOrEnquiry": true,
+    "scopeLimit": "Current channel/order UI evidence only; not completed purchase, exact in-store SKU stock, all-variant stock or future availability. Separate from design/image-rights clearance."
+  }
+}

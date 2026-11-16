@@ -1,7 +1,7 @@
 ---
 productId: cocoon-frame-pierced-earrings
 locale: en
-publishStatus: published
+publishStatus: draft
 ---
 
 This is the thread-focused alternative to CO.COON’s fabric-shaped ori. Silk is worked into individual frames, so the outline and the lines running through it become the focus. A hairstyle that leaves the ear visible helps show that difference.

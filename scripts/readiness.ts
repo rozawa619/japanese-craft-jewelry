@@ -25,6 +25,8 @@ export function checkReadiness(env: Record<string, string | undefined>): Readine
   // a technical publication requirement or proof of a program's eligibility.
   information.push('Contact is intentionally unpublished. A public Contact page is not a technical publication prerequisite; verify any program-specific requirement before applying.');
   information.push('Application preparation is a separate, pending review: verify the current registration terms and required truthful applicant details in docs/pre-application-checklist.md. This technical check does not certify eligibility, approval, domain ownership or contact delivery, and submits nothing.');
+  const publicUrl=safeHttps(env.PUBLIC_SITE_URL);
+  if(publicUrl&&new URL(publicUrl).hostname.endsWith('.github.io'))information.push('COMMERCIAL HOSTING REVIEW PENDING: GitHub Pages restricts sites primarily facilitating commercial transactions. Confirm suitability or move to an appropriate host before monetization. A technical build does not establish contractual suitability; see docs/hosting-commercial-readiness-v11.md.');
   return { blockers, information };
 }
 
@@ -36,10 +38,12 @@ if (process.argv[1] && pathToFileURL(resolve(process.argv[1])).href === import.m
   }
   const result = checkReadiness(process.env);
   try {
-    result.blockers.push(...collectValidationErrors(loadProjectData()).map(message => `Data: ${message}`));
+    const data=loadProjectData();
+    result.blockers.push(...collectValidationErrors(data).map(message => `Data: ${message}`));
+    const publishedIds=new Set(data.catalog.products.filter(product=>product.publishStatus==='published').map(product=>product.id));
     const ledger = JSON.parse(readFileSync(resolve(projectRoot, 'docs/assets.json'), 'utf8'));
-    const missingPhotos = (ledger.productPhotography || []).filter((entry: { permissionStatus?: string }) => entry.permissionStatus !== 'approved').length;
-    if (missingPhotos) result.information.push(`${missingPhotos} products have no licensed product photograph. No permission is required for unused photographs; retain the labeled abstract substitutes, or obtain rights before adding photos.`);
+    const missingPhotos = (ledger.productPhotography || []).filter((entry: { productId:string;permissionStatus?: string }) => publishedIds.has(entry.productId)&&entry.permissionStatus !== 'approved').length;
+    if (missingPhotos) result.information.push(`${missingPhotos} products have no licensed product photograph. Use labeled illustrations or the official-page preview; obtain the necessary rights before publishing actual photographs.`);
   } catch (error) {
     result.blockers.push(`Data verification failed: ${error instanceof Error ? error.message : String(error)}`);
   }

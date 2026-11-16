@@ -1,14 +1,14 @@
 ---
 title: "愛知県の工芸ジュエリー"
-description: "尾張七宝の色を、耳元と指先で。"
+description: "加藤七宝のSUKEと田村七宝の海彩。愛知の尾張七宝を耳元・手元で選ぶ。"
 locale: ja
 publishStatus: published
 updatedAt: "2026-11-16"
-sourceIds: ["becos-kato-suke-drop", "kato-shippo-brand", "becos-kato-round-ring-ja-v9"]
+sourceIds: ["becos-kato-suke-drop","kato-shippo-brand","becos-kato-round-ring-ja-v9","becos-kato-suke-drop-ja","becos-kato-round-ring-en-v9","tamura-kaisai-ear-jewelry-v11","tamura-official-jewelry-v11"]
 prefectureId: aichi
 relatedMerchantIds: []
 ---
 
-愛知県のセレクトでは、加藤七宝製作所の七宝ジュエリーを紹介します。商品情報の生産地は愛知県。ブランド紹介には、名古屋に開いた工房の歩みが記載されています。
+愛知では、尾張七宝に関わる加藤七宝と田村七宝のジュエリーを選んでいます。工房の歴史や技法一般の指定を、個別の商品が認証済みである根拠にはしていません。
 
-耳元には雫のピアス、指先には丸いリング。同じSUKEでも、かたちと着ける場所を変えると、色の見せ方が変わります。普段の服でどちらを主役にしたいか、2つの商品を見比べてみてください。
+SUKEの雫のピアスや丸いリングと、海彩を比べられます。海彩は確認時点でピアスとネジ式イヤリングが同額でしたが、金具の素材は異なります。イヤリングの「シルバー色」という案内を、金具全体が銀製との意味にはしていません。

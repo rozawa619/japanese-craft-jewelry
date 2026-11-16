@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-11-16",
+  "rule": "Verified current order route or operating retail shop plus current priced catalog; explicitly unavailable items deferred.",
+  "products": [
+    {
+      "productId": "cocoon-ori-nonhole-earrings",
+      "reason": "Gallery only; no current product ordering or operating retail route established.",
+      "publishStatus": "draft"
+    },
+    {
+      "productId": "cocoon-frame-pierced-earrings",
+      "reason": "Gallery only; no current product ordering or operating retail route established.",
+      "publishStatus": "draft"
+    },
+    {
+      "productId": "hamamatsuya-18k-pierced",
+      "reason": "The maker explicitly marks the listed item out of stock; the existence of a shop does not establish contrary SKU stock.",
+      "publishStatus": "draft"
+    },
+    {
+      "productId": "hatakeyama-parfait-chocolate-orange-earrings",
+      "reason": "Current order controls cannot be verified behind403; no current retail channel established. Not a claim of closure.",
+      "publishStatus": "draft"
+    },
+    {
+      "productId": "hatakeyama-bijou-purple-necklace",
+      "reason": "Current order controls cannot be verified behind403; no current retail channel established. Not a claim of closure.",
+      "publishStatus": "draft"
+    }
+  ],
+  "sourceReports": [
+    "docs/research/existing-availability-v11.json",
+    "docs/research/availability-gate-v11.json"
+  ],
+  "currentPublishedProducts": 42,
+  "purchaseEvidence": {
+    "online": 33,
+    "retail": 9
+  },
+  "retiredImagePaths": [
+    "public/images/cocoon-ori-silk-styling-v9.webp",
+    "public/images/cocoon-silk-frame-styling-v9.webp",
+    "public/images/hamamatsuya-18k-yosegi-styling-v9.webp"
+  ]
+}

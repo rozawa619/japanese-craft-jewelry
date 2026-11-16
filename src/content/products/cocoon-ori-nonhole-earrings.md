@@ -1,7 +1,7 @@
 ---
 productId: cocoon-ori-nonhole-earrings
 locale: en
-publishStatus: published
+publishStatus: draft
 ---
 
 The appeal of ori is the space taken up by folded cloth rather than a polished gemstone. Its spreading outline gives this pair a different role from CO.COON’s thread-worked Frame Series. Consider it when you want the texture of a textile to be visible around the face.

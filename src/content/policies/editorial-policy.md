@@ -15,11 +15,19 @@ We look for colors, shapes and materials we want to wear, from wood and glass to
 
 ## Details from official sources
 
-We check makers and official shops, keep unanswered questions clear and update a page when we find new information.
+We check materials, sizes and regional connections against makers and official shops. Our reasons for choosing a piece and ideas for wearing it are editorial suggestions, rather than first-hand product reviews or test results. We keep unanswered questions clear and update a page when we find new information.
+
+## A purchase route we can verify
+
+We select pieces with an official online page accepting orders, or an operating retail shop and a current priced catalog. A gallery alone is insufficient, and we set aside items explicitly marked out of stock or whose purchase route we cannot confirm.
+
+We show the date checked. A shop’s current range does not guarantee that the exact item is on its shelf; use the official listing or shop guide for the latest availability.
 
 ## AI styling images
 
-Styling images are created with AI and labeled “AI image.”
+Images labeled “AI image” show fictional adult models and an outfit idea. They are illustrations, rather than photographs or accurate reproductions of the featured item, and do not document a fitting or product use. Check the official photographs and specifications for the actual color, shape, size and fittings.
+
+We do not republish other people's product photographs without permission.
 
 ## Clear affiliate notices
 
