@@ -1,0 +1,6 @@
+---
+import {sources} from '../lib/catalog';
+const {sourceIds}=Astro.props;
+const items=sources.filter(s=>sourceIds.includes(s.id));
+---
+<section aria-label="Primary sources"><h2>Sources & checked dates</h2><p class="muted">Desk research from official pages. No physical wear test or maker interview was conducted.</p><ol class="source-list">{items.map(s=><li><a href={s.url} target="_blank" rel="noopener noreferrer">{s.title} <span aria-hidden="true">↗</span></a><small>Checked {s.checkedAt} · {s.access==='body_read'||s.access==='official page body inspected using web tool'?'Official page inspected':'Access limited — see research record'}</small></li>)}</ol></section>

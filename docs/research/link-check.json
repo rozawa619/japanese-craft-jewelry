@@ -1,0 +1,518 @@
+{
+  "checkedAt": "2026-11-16T06:41:15.544Z",
+  "checkedDateJapan": "2026-11-16",
+  "method": "HTTPS GET, redirect-follow, 15-second timeout, concurrency 4; response bodies canceled after headers",
+  "interpretation": "Reachability only; does not confirm product facts, eligibility, licensing, active stock or approval. Restricted, missing, temporary and network results require manual recheck; no result alone proves closure.",
+  "inputFiles": [
+    "src/data/catalog.json",
+    "docs/research/sources.json",
+    "docs/research/affiliate-sources.json"
+  ],
+  "total": 36,
+  "summary": {
+    "reachable": 33,
+    "review_temporary_server_error": 1,
+    "review_access_restricted": 2
+  },
+  "results": [
+    {
+      "url": "https://www.hamamatsuya.co.jp/",
+      "references": [
+        "src/data/catalog.json.makers[0].url",
+        "src/data/catalog.json.merchants[0].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hamamatsuya.co.jp/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 316
+    },
+    {
+      "url": "https://www.hakonemaruyama.co.jp/shopbrand/ct36/",
+      "references": [
+        "src/data/catalog.json.makers[1].url",
+        "docs/research/sources.json[7].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonemaruyama.co.jp/shopbrand/ct36/",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 285
+    },
+    {
+      "url": "https://www.hakonemaruyama.co.jp/",
+      "references": [
+        "src/data/catalog.json.merchants[1].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonemaruyama.co.jp/",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 408
+    },
+    {
+      "url": "https://en.thebecos.com/pages/become-a-becos-affiliate",
+      "references": [
+        "src/data/catalog.json.programs[0].recruitmentUrl",
+        "docs/research/sources.json[16].url",
+        "docs/research/affiliate-sources.json[0].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://en.thebecos.com/pages/become-a-becos-affiliate",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 310
+    },
+    {
+      "url": "https://becos-en.goaffpro.com/",
+      "references": [
+        "src/data/catalog.json.programs[0].applicationUrl",
+        "docs/research/sources.json[17].url",
+        "docs/research/affiliate-sources.json[1].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://becos-en.goaffpro.com/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 93
+    },
+    {
+      "url": "https://millenniumgalleryjp.com/pages/collaboration-and-partnership",
+      "references": [
+        "src/data/catalog.json.programs[1].recruitmentUrl",
+        "src/data/catalog.json.programs[1].applicationUrl",
+        "docs/research/sources.json[18].url",
+        "docs/research/affiliate-sources.json[2].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://millenniumgalleryjp.com/pages/collaboration-and-partnership",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 294
+    },
+    {
+      "url": "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html",
+      "references": [
+        "src/data/catalog.json.links[0].officialProductUrl",
+        "src/data/catalog.json.links[1].officialProductUrl",
+        "src/data/catalog.json.links[2].officialProductUrl",
+        "src/data/catalog.json.links[4].officialProductUrl",
+        "docs/research/sources.json[0].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 160
+    },
+    {
+      "url": "https://www.hamamatsuya.co.jp/item/muku/accessory.html",
+      "references": [
+        "src/data/catalog.json.links[3].officialProductUrl",
+        "docs/research/sources.json[1].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hamamatsuya.co.jp/item/muku/accessory.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 168
+    },
+    {
+      "url": "https://www.hakonemaruyama.co.jp/shopdetail/000000000467/",
+      "references": [
+        "src/data/catalog.json.links[5].officialProductUrl",
+        "docs/research/sources.json[8].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonemaruyama.co.jp/shopdetail/000000000467/",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 165
+    },
+    {
+      "url": "https://www.hakonemaruyama.co.jp/shopdetail/000000000468/",
+      "references": [
+        "src/data/catalog.json.links[6].officialProductUrl",
+        "docs/research/sources.json[9].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonemaruyama.co.jp/shopdetail/000000000468/",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 239
+    },
+    {
+      "url": "https://www.hakonemaruyama.co.jp/shopdetail/000000000473/",
+      "references": [
+        "src/data/catalog.json.links[7].officialProductUrl",
+        "docs/research/sources.json[10].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonemaruyama.co.jp/shopdetail/000000000473/",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 116
+    },
+    {
+      "url": "https://www.hakonemaruyama.co.jp/shopdetail/000000000474/",
+      "references": [
+        "src/data/catalog.json.links[8].officialProductUrl",
+        "docs/research/sources.json[11].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonemaruyama.co.jp/shopdetail/000000000474/",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 142
+    },
+    {
+      "url": "https://www.hamamatsuya.co.jp/work/index.html",
+      "references": [
+        "docs/research/sources.json[2].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hamamatsuya.co.jp/work/index.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 129
+    },
+    {
+      "url": "https://www.hamamatsuya.co.jp/info/index.html",
+      "references": [
+        "docs/research/sources.json[3].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hamamatsuya.co.jp/info/index.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 98
+    },
+    {
+      "url": "https://www.hamamatsuya.co.jp/shop-english/",
+      "references": [
+        "docs/research/sources.json[4].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hamamatsuya.co.jp/shop-english/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 14036
+    },
+    {
+      "url": "https://www.hamamatsuya.co.jp/shop-english/help/tradelaw",
+      "references": [
+        "docs/research/sources.json[5].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hamamatsuya.co.jp/shop-english/help/tradelaw",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 13713
+    },
+    {
+      "url": "https://www.hamamatsuya.co.jp/shop-japan/help/tradelaw",
+      "references": [
+        "docs/research/sources.json[6].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hamamatsuya.co.jp/shop-japan/help/tradelaw",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 453
+    },
+    {
+      "url": "https://www.hakonemaruyama.co.jp/html/company.html",
+      "references": [
+        "docs/research/sources.json[12].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonemaruyama.co.jp/html/company.html",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 85
+    },
+    {
+      "url": "https://www.hakonemaruyama.co.jp/oversea.htm",
+      "references": [
+        "docs/research/sources.json[13].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonemaruyama.co.jp/oversea.htm",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 84
+    },
+    {
+      "url": "https://www.hakonemaruyama.co.jp/html/ordercontract.html",
+      "references": [
+        "docs/research/sources.json[14].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonemaruyama.co.jp/html/ordercontract.html",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 77
+    },
+    {
+      "url": "https://kougeihin.jp/en/craft/0610/",
+      "references": [
+        "docs/research/sources.json[15].url"
+      ],
+      "method": "GET",
+      "status": 503,
+      "finalUrl": "https://kougeihin.jp/en/craft/0610/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "review_temporary_server_error",
+      "durationMs": 95
+    },
+    {
+      "url": "https://help.awin.com/docs/post-upgrade-checklist-sas",
+      "references": [
+        "docs/research/sources.json[19].url",
+        "docs/research/affiliate-sources.json[3].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://help.awin.com/docs/post-upgrade-checklist-sas",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 503
+    },
+    {
+      "url": "https://www.thegoodtrade.com/features/handmade-jewelry-brands/",
+      "references": [
+        "docs/research/sources.json[20].url",
+        "docs/research/affiliate-sources.json[4].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.thegoodtrade.com/features/handmade-jewelry-brands/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 368
+    },
+    {
+      "url": "https://www.thegoodtrade.com/methodology/",
+      "references": [
+        "docs/research/sources.json[21].url",
+        "docs/research/affiliate-sources.json[5].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.thegoodtrade.com/methodology/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 260
+    },
+    {
+      "url": "https://alohas.com/pages/affiliates?page=2",
+      "references": [
+        "docs/research/sources.json[22].url",
+        "docs/research/affiliate-sources.json[6].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://alohas.com/pages/affiliates?page=2",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 901
+    },
+    {
+      "url": "https://www.whowhatwear.com/fashion/jewelry/earring-trends-2026",
+      "references": [
+        "docs/research/sources.json[23].url",
+        "docs/research/affiliate-sources.json[7].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.whowhatwear.com/fashion/jewelry/earring-trends-2026",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 188
+    },
+    {
+      "url": "https://futureplc.com/our-brands/",
+      "references": [
+        "docs/research/sources.json[24].url",
+        "docs/research/affiliate-sources.json[8].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://futureplc.com/our-brands/",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 331
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/71691/000007169126000011/nyt-20251231.htm",
+      "references": [
+        "docs/research/sources.json[25].url",
+        "docs/research/affiliate-sources.json[9].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.sec.gov/Archives/edgar/data/71691/000007169126000011/nyt-20251231.htm",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 146
+    },
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links",
+      "references": [
+        "docs/research/sources.json[26].url",
+        "docs/research/affiliate-sources.json[10].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links?hl=ar",
+      "redirected": true,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 1254
+    },
+    {
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "references": [
+        "docs/research/sources.json[27].url",
+        "docs/research/affiliate-sources.json[11].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://developers.google.com/search/docs/essentials/spam-policies?hl=pt-br",
+      "redirected": true,
+      "contentType": "text/html; charset=utf-8",
+      "classification": "reachable",
+      "durationMs": 922
+    },
+    {
+      "url": "https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking",
+      "references": [
+        "docs/research/sources.json[28].url",
+        "docs/research/affiliate-sources.json[12].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "reachable",
+      "durationMs": 549
+    },
+    {
+      "url": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/",
+      "references": [
+        "docs/research/sources.json[29].url",
+        "docs/research/affiliate-sources.json[13].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 112
+    },
+    {
+      "url": "https://support.skimlinks.com/hc/en-us/articles/360014614557-Can-I-use-merchant-images",
+      "references": [
+        "docs/research/sources.json[30].url",
+        "docs/research/affiliate-sources.json[14].url"
+      ],
+      "method": "GET",
+      "status": 403,
+      "finalUrl": "https://support.skimlinks.com/hc/en-us/articles/360014614557-Can-I-use-merchant-images",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "review_access_restricted",
+      "durationMs": 514
+    },
+    {
+      "url": "https://support.skimlinks.com/hc/en-us/articles/360005286057-How-do-I-disclose-the-use-of-Skimlinks-on-my-site",
+      "references": [
+        "docs/research/sources.json[31].url",
+        "docs/research/affiliate-sources.json[15].url"
+      ],
+      "method": "GET",
+      "status": 403,
+      "finalUrl": "https://support.skimlinks.com/hc/en-us/articles/360005286057-How-do-I-disclose-the-use-of-Skimlinks-on-my-site",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "classification": "review_access_restricted",
+      "durationMs": 388
+    },
+    {
+      "url": "https://www.hamamatsuya.co.jp/craft/index.html",
+      "references": [
+        "docs/research/sources.json[32].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hamamatsuya.co.jp/craft/index.html",
+      "redirected": false,
+      "contentType": "text/html",
+      "classification": "reachable",
+      "durationMs": 150
+    },
+    {
+      "url": "https://www.hakonemaruyama.co.jp/html/info.html",
+      "references": [
+        "docs/research/sources.json[33].url"
+      ],
+      "method": "GET",
+      "status": 200,
+      "finalUrl": "https://www.hakonemaruyama.co.jp/html/info.html",
+      "redirected": false,
+      "contentType": "text/html; charset=EUC-JP",
+      "classification": "reachable",
+      "durationMs": 113
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+---
+import { catalog, resolve } from '../lib/catalog';
+const {productId,compact=false}=Astro.props;
+const links=catalog.links.filter(l=>l.productId===productId);
+---
+{links.map(link => {
+ const result=resolve(link);
+ const merchant=catalog.merchants.find(m=>m.id===link.merchantId);
+ return result && <a class:list={['retailer-link',{compact}]} href={result.href} rel={result.rel} target="_blank" data-sponsored={String(result.sponsored)}>{link.merchantId==='hamamatsuya' ? "View maker’s catalog" : 'View at retailer'} <span aria-hidden="true">↗</span><span class="sr-only"> — {merchant?.name}, opens in a new tab{result.sponsored ? ', affiliate link' : ''}</span></a>
+})}

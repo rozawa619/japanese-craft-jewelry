@@ -1,0 +1,8 @@
+---
+interface Props { variant?: number; hero?: boolean; }
+const {variant=0,hero=false}=Astro.props;
+---
+<figure class:list={['pattern-study',`pattern-${variant % 4}`,{ 'pattern-hero':hero }]}>
+  <div class="pattern-art" aria-hidden="true"><div class="pattern-grid">{Array.from({length:16},(_,i)=><span class={`p-tile p-tile-${i%6}`}></span>)}</div><span class="pattern-circle"></span></div>
+  <figcaption>{hero ? 'An original study in pattern. Not a product photograph.' : 'Pattern study · No product photograph'}</figcaption>
+</figure>

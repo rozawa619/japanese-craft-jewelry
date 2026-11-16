@@ -1,0 +1,47 @@
+name: Verify and deploy ITO
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      PUBLIC_SITE_URL: https://rozawa619.github.io
+      PUBLIC_BASE_PATH: /ito-craft/
+      PUBLIC_PUBLISH_MODE: ${{ vars.PUBLIC_PUBLISH_MODE || 'preview' }}
+      PUBLIC_REPOSITORY_URL: https://github.com/rozawa619/ito-craft
+      PUBLIC_OPERATOR_NAME: ${{ vars.PUBLIC_OPERATOR_NAME }}
+      PUBLIC_CONTACT_EMAIL: ${{ vars.PUBLIC_CONTACT_EMAIL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm install -g pnpm@11.25.0
+      - run: pnpm install --frozen-lockfile
+      - name: Check readiness before enabling indexing
+        if: env.PUBLIC_PUBLISH_MODE == 'public'
+        run: pnpm readiness
+      - run: pnpm verify
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

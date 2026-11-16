@@ -1,0 +1,12 @@
+---
+import {getCollection,render} from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import ProductCard from '../../../components/ProductCard.astro';
+import Sources from '../../../components/Sources.astro';
+import Disclosure from '../../../components/Disclosure.astro';
+import {products} from '../../../lib/catalog';
+export async function getStaticPaths(){return(await getCollection('craftNotes',({data})=>data.publishStatus==='published')).filter(note=>note.body?.trim()&&products.some(p=>p.craftIds.includes(note.data.craftId))).map(note=>({params:{craft:note.id},props:{note}}))}
+const {note}=Astro.props;const {Content}=await render(note);
+const items=products.filter(p=>p.craftIds.includes(note.data.craftId));
+---
+<Base title={note.data.title} description={note.data.description}><div class="wrap page-bottom"><header class="page-heading"><p class="eyebrow">THE CRAFT NOTES</p><h1>{note.data.title}</h1><p>{note.data.description}</p></header><div class="article-wrap prose"><Content/></div><Disclosure productIds={items.map(p=>p.id)}/><div class="product-grid">{items.map((p,i)=><ProductCard product={p} index={i}/>)}</div><div class="related"><Sources sourceIds={note.data.sourceIds}/></div></div></Base>

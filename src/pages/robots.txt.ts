@@ -1,0 +1,2 @@
+import {isPublic,site,path} from '../config/site';
+export function GET(){const content=isPublic?`User-agent: *\nAllow: /\nSitemap: ${new URL(path('sitemap.xml'),site.url).href}\n`:'User-agent: *\nDisallow: /\n';return new Response(content,{headers:{'Content-Type':'text/plain; charset=utf-8'}})}

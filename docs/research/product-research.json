@@ -1,0 +1,701 @@
+{
+  "checkedAt": "2026-11-16",
+  "scope": "Primary-source desk research; no physical testing, maker interview, image permission, affiliate approval or country-specific checkout test.",
+  "sources": [
+    {
+      "id": "hamamatsuya-earrings",
+      "url": "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html",
+      "title": "Hamamatsuya muku small accessories, page 2",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Names, catalog prices, 18K and surgical stainless wording, sold-out notices for hairpin and 18K earrings"
+      ]
+    },
+    {
+      "id": "hamamatsuya-pendant",
+      "url": "https://www.hamamatsuya.co.jp/item/muku/accessory.html",
+      "title": "Hamamatsuya muku small accessories, page 1",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Pendant price and dimensions"
+      ]
+    },
+    {
+      "id": "hamamatsuya-technique",
+      "url": "https://www.hamamatsuya.co.jp/work/index.html",
+      "title": "Hamamatsuya techniques",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Own original products, Ichiro Ishikawa, combining naturally colored wood, tanegi and veneer process; not certification of each accessory"
+      ]
+    },
+    {
+      "id": "hamamatsuya-workshop",
+      "url": "https://www.hamamatsuya.co.jp/info/index.html",
+      "title": "Hamamatsuya store and visible factory",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Shop and visible factory at Hatajuku 138, Hakone, Kanagawa; demonstration context"
+      ]
+    },
+    {
+      "id": "hamamatsuya-en-shop",
+      "url": "https://www.hamamatsuya.co.jp/shop-english/",
+      "title": "Hamamatsuya English shop",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "English online store exists; delivery acceptance must be checked by country; no accessory-specific international purchase verified"
+      ]
+    },
+    {
+      "id": "hamamatsuya-shipping",
+      "url": "https://www.hamamatsuya.co.jp/shop-english/help/tradelaw",
+      "title": "Hamamatsuya Shipping & Returns",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "EMS/postage and shipping charge; defective or wrong goods only; contact within three days; not evidence that each catalog accessory is online-orderable"
+      ]
+    },
+    {
+      "id": "hamamatsuya-ja-terms",
+      "url": "https://www.hamamatsuya.co.jp/shop-japan/help/tradelaw",
+      "title": "Hamamatsuya Japanese legal and shipping terms",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Overseas EMS and buyer-borne import charges; catalog tax inclusion not settled"
+      ]
+    },
+    {
+      "id": "maruyama-category",
+      "url": "https://www.hakonemaruyama.co.jp/shopbrand/ct36/",
+      "title": "Hakone Maruyama earring category",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Eight earring listings at JPY 2650 including Japanese consumption tax; C and D pierced/non-pierced listings have purchase controls; A and F entries marked sold out"
+      ]
+    },
+    {
+      "id": "maruyama-clip-c",
+      "url": "https://www.hakonemaruyama.co.jp/shopdetail/000000000467/",
+      "title": "Yosegi non-pierced earrings C",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Product E0170 identity and yosegi earring description; natural handmade variation"
+      ]
+    },
+    {
+      "id": "maruyama-clip-d",
+      "url": "https://www.hakonemaruyama.co.jp/shopdetail/000000000468/",
+      "title": "Yosegi non-pierced earrings D",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Product E0171 identity and yosegi earring description; natural handmade variation"
+      ]
+    },
+    {
+      "id": "maruyama-pierced-c",
+      "url": "https://www.hakonemaruyama.co.jp/shopdetail/000000000473/",
+      "title": "Yosegi pierced earrings C",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Product E0176 identity and yosegi pierced earring description; natural handmade variation"
+      ]
+    },
+    {
+      "id": "maruyama-pierced-d",
+      "url": "https://www.hakonemaruyama.co.jp/shopdetail/000000000474/",
+      "title": "Yosegi pierced earrings D",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Product E0177 identity and yosegi pierced earring description; natural handmade variation"
+      ]
+    },
+    {
+      "id": "maruyama-company",
+      "url": "https://www.hakonemaruyama.co.jp/html/company.html",
+      "title": "Hakone Maruyama company",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Retailer in Hakone, Kanagawa; does not identify individual manufacturer of each accessory"
+      ]
+    },
+    {
+      "id": "maruyama-shipping",
+      "url": "https://www.hakonemaruyama.co.jp/oversea.htm",
+      "title": "Hakone Maruyama overseas shipping",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Overseas shipping offered; shipping amount confirmed by shop; duties and VAT may be payable by buyer; Japanese-site orders do not qualify for free shipping; undeliverable return shipping not refunded"
+      ]
+    },
+    {
+      "id": "maruyama-returns",
+      "url": "https://www.hakonemaruyama.co.jp/html/ordercontract.html",
+      "title": "Hakone Maruyama legal notice",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Returns require contact within one week; buyer pays non-defect return shipping; personalized item exceptions; verify overseas applicability with retailer"
+      ]
+    },
+    {
+      "id": "aoyama-yosegi",
+      "url": "https://kougeihin.jp/en/craft/0610/",
+      "title": "Aoyama Square Hakone Yosegi Zaiku",
+      "checkedAt": "2026-11-16",
+      "access": "search_index_full_text_available_but_direct_body_failed_503",
+      "supports": [
+        "Discovery only: Kanagawa association, Hakone/Odawara production area and 1984 designation appear in official search index; direct fetch repeatedly failed, so do not describe as full live page verified"
+      ]
+    },
+    {
+      "id": "hamamatsuya-craft-overview",
+      "url": "https://www.hamamatsuya.co.jp/craft/index.html",
+      "title": "Hamamatsuya overview of yosegi craft",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Naturally colored woods arranged into geometric patterns",
+        "Thin applied zuku sheets and shaped thicker muku patterned material are distinguished",
+        "General craft explanation is not an item-specific material or certification record"
+      ]
+    },
+    {
+      "id": "maruyama-shopping-guide",
+      "url": "https://www.hakonemaruyama.co.jp/html/info.html",
+      "title": "Hakone Maruyama shopping guide",
+      "checkedAt": "2026-11-16",
+      "access": "body_read",
+      "supports": [
+        "Published prices include Japanese consumption tax",
+        "Overseas shipping described with retailer-confirmed shipping quote",
+        "Returns limited to unopened unused goods with telephone contact within seven days of arrival; personalized-item exceptions; buyer pays non-defect return costs and compensated return method required"
+      ],
+      "limitations": "Country and item-specific applicability should be confirmed with the retailer."
+    }
+  ],
+  "makers": [
+    {
+      "id": "hamamatsuya",
+      "name": "Hamamatsuya",
+      "nameJa": "浜松屋",
+      "websiteUrl": "https://www.hamamatsuya.co.jp/",
+      "workshopLocation": {
+        "town": "Hakone",
+        "prefectureId": "kanagawa",
+        "country": "JP",
+        "sourceIds": [
+          "hamamatsuya-workshop"
+        ]
+      },
+      "relationship": "Workshop and seller of its original yosegi and wood-inlay products",
+      "sourceIds": [
+        "hamamatsuya-technique",
+        "hamamatsuya-workshop"
+      ],
+      "caveat": "The workshop context supports a Kanagawa maker association; each accessory's individual maker and manufacturing process have not been separately audited."
+    },
+    {
+      "id": "maker-unidentified-maruyama",
+      "name": "Maker not identified by retailer",
+      "nameJa": null,
+      "websiteUrl": null,
+      "workshopLocation": null,
+      "relationship": "Explicit unknown record, not an invented workshop",
+      "sourceIds": [
+        "maruyama-clip-c",
+        "maruyama-clip-d",
+        "maruyama-pierced-c",
+        "maruyama-pierced-d"
+      ],
+      "caveat": "The checked retailer listings do not identify the maker or the manufacturing location of these accessories."
+    }
+  ],
+  "merchants": [
+    {
+      "id": "hamamatsuya",
+      "name": "Hamamatsuya",
+      "officialUrl": "https://www.hamamatsuya.co.jp/",
+      "englishUrl": "https://www.hamamatsuya.co.jp/shop-english/",
+      "locationPrefectureId": "kanagawa",
+      "languages": [
+        "ja",
+        "en"
+      ],
+      "internationalShipping": "Merchant offers overseas EMS shipping, but these catalog accessories and destination eligibility require direct confirmation.",
+      "confirmedDestinationCountries": null,
+      "shippingSourceIds": [
+        "hamamatsuya-shipping",
+        "hamamatsuya-ja-terms",
+        "hamamatsuya-en-shop"
+      ],
+      "returns": "Published English terms accept defective or wrong goods only; contact within three days of receipt. Confirm applicable terms before ordering.",
+      "returnsSourceIds": [
+        "hamamatsuya-shipping"
+      ],
+      "affiliateProgramFound": false,
+      "affiliateProgramSearchScope": "No program evidenced on the official pages reviewed; absence is not proven."
+    },
+    {
+      "id": "hakone-maruyama",
+      "name": "Hakone Maruyama",
+      "officialUrl": "https://www.hakonemaruyama.co.jp/",
+      "englishUrl": "https://www.hakonemaruyama.com/",
+      "locationPrefectureId": "kanagawa",
+      "languages": [
+        "ja",
+        "en"
+      ],
+      "internationalShipping": "Overseas ordering is documented. Ask the shop for destination acceptance, current shipping quote, taxes and accessory availability.",
+      "confirmedDestinationCountries": null,
+      "shippingSourceIds": [
+        "maruyama-shipping"
+      ],
+      "returns": "The shopping guide limits returns to unopened, unused items, with telephone contact within seven days of arrival. Personalized-item exceptions apply; the buyer pays non-defect return costs and a compensated return method is required. Confirm overseas and earring-specific terms.",
+      "returnsSourceIds": [
+        "maruyama-returns",
+        "maruyama-shopping-guide"
+      ],
+      "affiliateProgramFound": false,
+      "affiliateProgramSearchScope": "No program evidenced on the official pages reviewed; absence is not proven."
+    }
+  ],
+  "products": [
+    {
+      "id": "hamamatsuya-catch-pierced",
+      "slug": "hamamatsuya-surgical-stainless-pierced-earrings",
+      "locale": "en",
+      "title": "Hamamatsuya yosegi catch-back earrings",
+      "officialNameJa": "キャッチ付ピアス（サージカルステンレス）",
+      "productType": "pierced_earrings",
+      "makerId": "hamamatsuya",
+      "merchantId": "hamamatsuya",
+      "craftIds": [
+        "hakone-yosegi"
+      ],
+      "materialIds": [
+        "wood",
+        "surgical-stainless-steel"
+      ],
+      "prefectureIds": [
+        "kanagawa"
+      ],
+      "prefectureAssociation": "Verified workshop location and maker's own-product context; not an item-level geographical certification",
+      "manufacturingLocationConfirmedAtItemLevel": false,
+      "craftClassification": "Contemporary accessory listed under muku yosegi; no item-level certification verified",
+      "size": null,
+      "weightPerPieceGrams": null,
+      "fittingsMaterial": "Surgical stainless steel (seller wording; grade and exact component coverage not specified)",
+      "fastening": "Catch fitting named in catalog; exact construction unconfirmed",
+      "priceAmount": 3500,
+      "priceCurrency": "JPY",
+      "priceTaxInclusion": null,
+      "priceCheckedAt": "2026-11-16",
+      "stockStatus": "not_confirmed",
+      "officialProductUrl": "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html",
+      "linkKind": "official_catalog_with_product",
+      "sourceIds": [
+        "hamamatsuya-earrings",
+        "hamamatsuya-technique",
+        "hamamatsuya-workshop"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "whatToCheck": [
+        "Dimensions, per-ear weight, wood species, finish and steel grade",
+        "Current stock, catalog tax treatment and overseas ordering for this specific item"
+      ],
+      "editorialSummary": "An option to investigate when you want a catch fitting with a wooden accent. The metal label alone does not establish allergy suitability."
+    },
+    {
+      "id": "hamamatsuya-clip",
+      "slug": "hamamatsuya-yosegi-non-pierced-earrings",
+      "locale": "en",
+      "title": "Hamamatsuya yosegi non-pierced earrings",
+      "officialNameJa": "イヤリング",
+      "productType": "clip_on_earrings",
+      "makerId": "hamamatsuya",
+      "merchantId": "hamamatsuya",
+      "craftIds": [
+        "hakone-yosegi"
+      ],
+      "materialIds": [
+        "wood"
+      ],
+      "prefectureIds": [
+        "kanagawa"
+      ],
+      "prefectureAssociation": "Workshop association, not item-level certification",
+      "manufacturingLocationConfirmedAtItemLevel": false,
+      "craftClassification": "Contemporary accessory listed under muku yosegi; no item-level certification verified",
+      "size": null,
+      "weightPerPieceGrams": null,
+      "fittingsMaterial": null,
+      "fastening": null,
+      "priceAmount": 2500,
+      "priceCurrency": "JPY",
+      "priceTaxInclusion": null,
+      "priceCheckedAt": "2026-11-16",
+      "stockStatus": "not_confirmed",
+      "officialProductUrl": "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html",
+      "linkKind": "official_catalog_with_product",
+      "sourceIds": [
+        "hamamatsuya-earrings",
+        "hamamatsuya-technique",
+        "hamamatsuya-workshop"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "whatToCheck": [
+        "Exact non-pierced fastening, metal composition, dimensions and weight",
+        "Current availability, total price and international order method"
+      ],
+      "editorialSummary": "A non-pierced route into the workshop's wooden accessories. Ask which fastening is used before deciding whether it suits your ears."
+    },
+    {
+      "id": "hamamatsuya-18k-pierced",
+      "slug": "hamamatsuya-18k-yosegi-earrings",
+      "locale": "en",
+      "title": "Hamamatsuya 18K yosegi earrings",
+      "officialNameJa": "ピアス(18K)",
+      "productType": "pierced_earrings",
+      "makerId": "hamamatsuya",
+      "merchantId": "hamamatsuya",
+      "craftIds": [
+        "hakone-yosegi"
+      ],
+      "materialIds": [
+        "wood",
+        "gold-18k"
+      ],
+      "prefectureIds": [
+        "kanagawa"
+      ],
+      "prefectureAssociation": "Workshop association, not item-level certification",
+      "manufacturingLocationConfirmedAtItemLevel": false,
+      "craftClassification": "Contemporary accessory listed under muku yosegi; no item-level certification verified",
+      "size": null,
+      "weightPerPieceGrams": null,
+      "fittingsMaterial": "18K stated in listing; exact component coverage unconfirmed",
+      "fastening": null,
+      "priceAmount": 4500,
+      "priceCurrency": "JPY",
+      "priceTaxInclusion": null,
+      "priceCheckedAt": "2026-11-16",
+      "stockStatus": "sold_out_at_check",
+      "officialProductUrl": "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html",
+      "linkKind": "official_catalog_with_product",
+      "sourceIds": [
+        "hamamatsuya-earrings",
+        "hamamatsuya-technique",
+        "hamamatsuya-workshop"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "whatToCheck": [
+        "Listed as sold out; confirm whether restock is planned",
+        "Which fitting components are 18K, dimensions and weight"
+      ],
+      "editorialSummary": "A documented 18K-listed variant for readers comparing fitting options. It was marked sold out when researched, so treat it as a reference rather than an immediately available purchase."
+    },
+    {
+      "id": "hamamatsuya-pendant",
+      "slug": "hamamatsuya-muku-yosegi-pendant",
+      "locale": "en",
+      "title": "Hamamatsuya muku yosegi pendant",
+      "officialNameJa": "ペンダント",
+      "productType": "necklace",
+      "makerId": "hamamatsuya",
+      "merchantId": "hamamatsuya",
+      "craftIds": [
+        "hakone-yosegi"
+      ],
+      "materialIds": [
+        "wood"
+      ],
+      "prefectureIds": [
+        "kanagawa"
+      ],
+      "prefectureAssociation": "Workshop association, not item-level certification",
+      "manufacturingLocationConfirmedAtItemLevel": false,
+      "craftClassification": "Contemporary accessory listed under muku yosegi; no item-level certification verified",
+      "size": {
+        "woodenElementMm": [
+          34,
+          34,
+          8
+        ],
+        "chainLengthCm": 65
+      },
+      "weightPerPieceGrams": null,
+      "fittingsMaterial": null,
+      "fastening": null,
+      "priceAmount": 3500,
+      "priceCurrency": "JPY",
+      "priceTaxInclusion": null,
+      "priceCheckedAt": "2026-11-16",
+      "stockStatus": "not_confirmed",
+      "officialProductUrl": "https://www.hamamatsuya.co.jp/item/muku/accessory.html",
+      "linkKind": "official_catalog_with_product",
+      "sourceIds": [
+        "hamamatsuya-pendant",
+        "hamamatsuya-technique",
+        "hamamatsuya-workshop"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "whatToCheck": [
+        "Chain metal, closure, finish, weight and whether length is adjustable",
+        "Current price, stock, tax inclusion and overseas ordering"
+      ],
+      "editorialSummary": "A measured alternative to earrings: the listing gives a 34 mm square wooden element and a 65 cm chain, making its scale easier to assess against a neckline."
+    },
+    {
+      "id": "hamamatsuya-hairpin",
+      "slug": "hamamatsuya-yosegi-kanzashi",
+      "locale": "en",
+      "title": "Hamamatsuya yosegi kanzashi hairpin",
+      "officialNameJa": "かんざし",
+      "productType": "hair_accessory",
+      "makerId": "hamamatsuya",
+      "merchantId": "hamamatsuya",
+      "craftIds": [
+        "hakone-yosegi"
+      ],
+      "materialIds": [
+        "wood"
+      ],
+      "prefectureIds": [
+        "kanagawa"
+      ],
+      "prefectureAssociation": "Workshop association, not item-level certification",
+      "manufacturingLocationConfirmedAtItemLevel": false,
+      "craftClassification": "Contemporary accessory listed under muku yosegi; no item-level certification verified",
+      "size": null,
+      "weightPerPieceGrams": null,
+      "fittingsMaterial": null,
+      "fastening": null,
+      "priceAmount": 3300,
+      "priceCurrency": "JPY",
+      "priceTaxInclusion": null,
+      "priceCheckedAt": "2026-11-16",
+      "stockStatus": "sold_out_at_check",
+      "officialProductUrl": "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html",
+      "linkKind": "official_catalog_with_product",
+      "sourceIds": [
+        "hamamatsuya-earrings",
+        "hamamatsuya-technique",
+        "hamamatsuya-workshop"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "whatToCheck": [
+        "Listed as sold out; ask about restock",
+        "Overall length, pin construction, weight and suitable hair arrangements"
+      ],
+      "editorialSummary": "A hair accessory rather than an earring, useful when exploring other ways to wear yosegi. The catalog marked it sold out at the research date."
+    },
+    {
+      "id": "maruyama-clip-c",
+      "slug": "maruyama-yosegi-non-pierced-c",
+      "locale": "en",
+      "title": "Yosegi non-pierced earrings C",
+      "officialNameJa": "寄木イヤリングＣ",
+      "retailerProductCode": "E0170",
+      "productType": "clip_on_earrings",
+      "makerId": "maker-unidentified-maruyama",
+      "merchantId": "hakone-maruyama",
+      "craftIds": [
+        "hakone-yosegi"
+      ],
+      "materialIds": [
+        "wood"
+      ],
+      "prefectureIds": [],
+      "retailerPrefectureIds": [
+        "kanagawa"
+      ],
+      "prefectureAssociation": "Retailer is in Hakone; individual manufacturing location not verified",
+      "manufacturingLocationConfirmedAtItemLevel": false,
+      "craftClassification": "Retailer describes yosegi earrings; individual certification not verified",
+      "size": null,
+      "weightPerPieceGrams": null,
+      "fittingsMaterial": null,
+      "fastening": null,
+      "priceAmount": 2650,
+      "priceCurrency": "JPY",
+      "priceTaxInclusion": "included_japanese_consumption_tax",
+      "priceCheckedAt": "2026-11-16",
+      "stockStatus": "purchase_button_visible_not_stock_guarantee",
+      "officialProductUrl": "https://www.hakonemaruyama.co.jp/shopdetail/000000000467/",
+      "linkKind": "product_page",
+      "sourceIds": [
+        "maruyama-clip-c",
+        "maruyama-category",
+        "maruyama-company"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "whatToCheck": [
+        "Manufacturer and exact making location",
+        "Fastening type, metal, dimensions, weight and current overseas availability"
+      ],
+      "editorialSummary": "One of the retailer's non-pierced C/D choices. Compare the actual pattern on the seller's page, then confirm the fitting details that the listing does not supply."
+    },
+    {
+      "id": "maruyama-clip-d",
+      "slug": "maruyama-yosegi-non-pierced-d",
+      "locale": "en",
+      "title": "Yosegi non-pierced earrings D",
+      "officialNameJa": "寄木イヤリングＤ",
+      "retailerProductCode": "E0171",
+      "productType": "clip_on_earrings",
+      "makerId": "maker-unidentified-maruyama",
+      "merchantId": "hakone-maruyama",
+      "craftIds": [
+        "hakone-yosegi"
+      ],
+      "materialIds": [
+        "wood"
+      ],
+      "prefectureIds": [],
+      "retailerPrefectureIds": [
+        "kanagawa"
+      ],
+      "prefectureAssociation": "Retailer is in Hakone; individual manufacturing location not verified",
+      "manufacturingLocationConfirmedAtItemLevel": false,
+      "craftClassification": "Retailer describes yosegi earrings; individual certification not verified",
+      "size": null,
+      "weightPerPieceGrams": null,
+      "fittingsMaterial": null,
+      "fastening": null,
+      "priceAmount": 2650,
+      "priceCurrency": "JPY",
+      "priceTaxInclusion": "included_japanese_consumption_tax",
+      "priceCheckedAt": "2026-11-16",
+      "stockStatus": "purchase_button_visible_not_stock_guarantee",
+      "officialProductUrl": "https://www.hakonemaruyama.co.jp/shopdetail/000000000468/",
+      "linkKind": "product_page",
+      "sourceIds": [
+        "maruyama-clip-d",
+        "maruyama-category",
+        "maruyama-company"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "whatToCheck": [
+        "Manufacturer and exact making location",
+        "Fastening type, metal, dimensions, weight and current overseas availability"
+      ],
+      "editorialSummary": "A second non-pierced listing at the same checked price as C. Its pattern is a design choice; the available facts do not support a comfort or weight ranking."
+    },
+    {
+      "id": "maruyama-pierced-c",
+      "slug": "maruyama-yosegi-pierced-c",
+      "locale": "en",
+      "title": "Yosegi pierced earrings C",
+      "officialNameJa": "寄木ピアスＣ",
+      "retailerProductCode": "E0176",
+      "productType": "pierced_earrings",
+      "makerId": "maker-unidentified-maruyama",
+      "merchantId": "hakone-maruyama",
+      "craftIds": [
+        "hakone-yosegi"
+      ],
+      "materialIds": [
+        "wood"
+      ],
+      "prefectureIds": [],
+      "retailerPrefectureIds": [
+        "kanagawa"
+      ],
+      "prefectureAssociation": "Retailer is in Hakone; individual manufacturing location not verified",
+      "manufacturingLocationConfirmedAtItemLevel": false,
+      "craftClassification": "Retailer describes yosegi pierced earrings; individual certification not verified",
+      "size": null,
+      "weightPerPieceGrams": null,
+      "fittingsMaterial": null,
+      "fastening": null,
+      "priceAmount": 2650,
+      "priceCurrency": "JPY",
+      "priceTaxInclusion": "included_japanese_consumption_tax",
+      "priceCheckedAt": "2026-11-16",
+      "stockStatus": "purchase_button_visible_not_stock_guarantee",
+      "officialProductUrl": "https://www.hakonemaruyama.co.jp/shopdetail/000000000473/",
+      "linkKind": "product_page",
+      "sourceIds": [
+        "maruyama-pierced-c",
+        "maruyama-category",
+        "maruyama-company"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "whatToCheck": [
+        "Manufacturer and exact making location",
+        "Piercing fitting, metal, dimensions, weight and current overseas availability"
+      ],
+      "editorialSummary": "The pierced C listing offers a separate starting point from the non-pierced version. Confirm its own hardware rather than assuming that the two versions share every specification."
+    },
+    {
+      "id": "maruyama-pierced-d",
+      "slug": "maruyama-yosegi-pierced-d",
+      "locale": "en",
+      "title": "Yosegi pierced earrings D",
+      "officialNameJa": "寄木ピアスＤ",
+      "retailerProductCode": "E0177",
+      "productType": "pierced_earrings",
+      "makerId": "maker-unidentified-maruyama",
+      "merchantId": "hakone-maruyama",
+      "craftIds": [
+        "hakone-yosegi"
+      ],
+      "materialIds": [
+        "wood"
+      ],
+      "prefectureIds": [],
+      "retailerPrefectureIds": [
+        "kanagawa"
+      ],
+      "prefectureAssociation": "Retailer is in Hakone; individual manufacturing location not verified",
+      "manufacturingLocationConfirmedAtItemLevel": false,
+      "craftClassification": "Retailer describes yosegi pierced earrings; individual certification not verified",
+      "size": null,
+      "weightPerPieceGrams": null,
+      "fittingsMaterial": null,
+      "fastening": null,
+      "priceAmount": 2650,
+      "priceCurrency": "JPY",
+      "priceTaxInclusion": "included_japanese_consumption_tax",
+      "priceCheckedAt": "2026-11-16",
+      "stockStatus": "purchase_button_visible_not_stock_guarantee",
+      "officialProductUrl": "https://www.hakonemaruyama.co.jp/shopdetail/000000000474/",
+      "linkKind": "product_page",
+      "sourceIds": [
+        "maruyama-pierced-d",
+        "maruyama-category",
+        "maruyama-company"
+      ],
+      "lastVerifiedAt": "2026-11-16",
+      "imageAssetIds": [],
+      "whatToCheck": [
+        "Manufacturer and exact making location",
+        "Piercing fitting, metal, dimensions, weight and current overseas availability"
+      ],
+      "editorialSummary": "Another pierced option in the retailer's C/D set. Use the seller's current images to compare the design, and request measurements before choosing by apparent scale."
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+---
+import Base from '../layouts/Base.astro';
+import {pagePath} from '../config/site';
+---
+<Base title="A different path" noindex><div class="wrap page-heading page-bottom"><p class="eyebrow">404 / PAGE NOT FOUND</p><h1>This path ends here.<br/><em>Your discovery doesn’t.</em></h1><p>The page may have moved. Find your way back to the object index.</p><a class="button" href={pagePath('objects/')}>Explore the objects →</a></div></Base>

@@ -1,0 +1,15 @@
+---
+import {catalog,resolve} from '../lib/catalog';
+import {pagePath} from '../config/site';
+const {productIds,scope='page'}=Astro.props;
+const activeLinks=catalog.links.filter(l=>(!productIds||productIds.includes(l.productId))&&resolve(l)?.sponsored);
+const active=activeLinks.length>0;
+const programs=catalog.programs.filter(p=>activeLinks.some(l=>l.programId===p.id)&&p.disclosure);
+const message=scope==='site'
+ ? (active?'Some retailer links across ITO are affiliate links. If you buy through them, ITO may earn a commission. Our editorial choices remain our own.':'Retailer links across ITO are currently ordinary links. ITO receives no commission from them.')
+ : (active?'Some links on this page are affiliate links. If you buy through them, ITO may earn a commission. Our editorial choices remain our own.':'Independently researched. Retailer links on this page are ordinary links; ITO receives no commission from them.');
+---
+<aside class="disclosure" aria-label="Commercial disclosure" data-disclosure={scope==='page'?(active?'affiliate':'ordinary'):undefined} data-site-disclosure={scope==='site'?(active?'affiliate':'ordinary'):undefined}>
+ <span class="disclosure-dot" aria-hidden="true"></span><p>{message} {scope==='page'&&<a href={pagePath('affiliate-disclosure/')}>How our links work</a>}</p>
+ {programs.map(p=><p>{p.disclosure}</p>)}
+</aside>

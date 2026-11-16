@@ -1,0 +1,7 @@
+---
+import {getCollection} from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import GuideCard from '../../../components/GuideCard.astro';
+const guides=await getCollection('guides',({data})=>data.publishStatus==='published');
+---
+<Base title="The journal" description="Practical field notes on choosing Japanese craft accessories, understanding yosegi, and buying from overseas."><div class="wrap page-bottom"><header class="page-heading"><p class="eyebrow">THE JOURNAL</p><h1>Look a little closer.</h1><p>Practical notes on choosing, understanding and buying Japanese craft accessories. Start with the questions that matter to you.</p></header><div class="guide-grid">{guides.map((g,i)=><GuideCard guide={g} index={i}/>)}</div></div></Base>

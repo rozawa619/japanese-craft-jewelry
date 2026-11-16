@@ -1,0 +1,34 @@
+{
+  "name": "ito-craft",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24.22.1"
+  },
+  "scripts": {
+    "dev": "node scripts/astro.mjs dev --host 127.0.0.1",
+    "check": "node scripts/astro.mjs check && node --experimental-strip-types scripts/validate.ts",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "build": "node --experimental-strip-types scripts/validate.ts && node scripts/astro.mjs build",
+    "preview": "node scripts/astro.mjs preview --host 127.0.0.1",
+    "verify": "pnpm check && pnpm test && pnpm build && node scripts/check-built.mjs",
+    "readiness": "node --experimental-strip-types scripts/readiness.ts",
+    "check:links": "node scripts/check-external.mjs",
+    "check:browser": "node scripts/check-browser.mjs",
+    "check:ads": "node scripts/check-ad-build.mjs",
+    "package": "node scripts/package-source.mjs"
+  },
+  "dependencies": {
+    "astro": "7.4.12",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@axe-core/playwright": "^4.10.2",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.19.2",
+    "typescript": "^5.9.0"
+  }
+}

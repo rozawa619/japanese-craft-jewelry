@@ -1,0 +1,11 @@
+import {createRequire} from 'node:module';
+import {readFileSync} from 'node:fs';
+import {dirname,resolve} from 'node:path';
+import {spawnSync} from 'node:child_process';
+const require=createRequire(import.meta.url);
+const packagePath=require.resolve('astro/package.json');
+const pkg=JSON.parse(readFileSync(packagePath,'utf8'));
+const entry=resolve(dirname(packagePath),typeof pkg.bin==='string'?pkg.bin:pkg.bin.astro);
+const result=spawnSync(process.execPath,[entry,...process.argv.slice(2)],{stdio:'inherit',env:{...process.env,ASTRO_TELEMETRY_DISABLED:'1'}});
+if(result.error)throw result.error;
+process.exitCode=result.status??1;

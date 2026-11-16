@@ -1,0 +1,1126 @@
+{
+  "checkedAt": "2026-11-16T06:41:33.445Z",
+  "baseUrl": "http://127.0.0.1:4321",
+  "basePath": "/",
+  "method": "Fresh headless installed Chrome launched by Playwright; no existing user browser or profile is accessed. Axe WCAG 2 A/AA and 2.1 AA checks. Local timings only, not Lighthouse or field performance.",
+  "longestProduct": {
+    "id": "hamamatsuya-clip",
+    "title": "Hamamatsuya yosegi non-pierced earrings"
+  },
+  "checks": [
+    {
+      "name": "desktop: home renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 1440,
+          "documentWidth": 1440,
+          "bodyWidth": 1440
+        }
+      }
+    },
+    {
+      "name": "desktop: objects renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 1440,
+          "documentWidth": 1440,
+          "bodyWidth": 1440
+        }
+      }
+    },
+    {
+      "name": "desktop: product renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 1440,
+          "documentWidth": 1440,
+          "bodyWidth": 1440
+        }
+      }
+    },
+    {
+      "name": "desktop: guide renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 1440,
+          "documentWidth": 1440,
+          "bodyWidth": 1440
+        }
+      }
+    },
+    {
+      "name": "desktop: region renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 1440,
+          "documentWidth": 1440,
+          "bodyWidth": 1440
+        }
+      }
+    },
+    {
+      "name": "desktop: craft renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 1440,
+          "documentWidth": 1440,
+          "bodyWidth": 1440
+        }
+      }
+    },
+    {
+      "name": "desktop: contact renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 1440,
+          "documentWidth": 1440,
+          "bodyWidth": 1440
+        }
+      }
+    },
+    {
+      "name": "desktop: keyboard skip link targets main content",
+      "status": "passed"
+    },
+    {
+      "name": "desktop: navigation is usable",
+      "status": "passed"
+    },
+    {
+      "name": "desktop: filter combination, unknown exclusion, reset and zero results",
+      "status": "passed",
+      "detail": {
+        "pierced": 4,
+        "kanagawaPierced": 2,
+        "woodKanagawaPierced": 2,
+        "knownMetal": 1,
+        "zero": 0,
+        "unknownOriginExcluded": 4,
+        "total": 9
+      }
+    },
+    {
+      "name": "desktop: filter URL restores state and ignores invalid option",
+      "status": "passed"
+    },
+    {
+      "name": "desktop: privacy and contact match configured services",
+      "status": "passed",
+      "detail": {
+        "emailConfigured": false,
+        "repositoryConfigured": true
+      }
+    },
+    {
+      "name": "desktop: missing URL responds with HTTP 404",
+      "status": "passed",
+      "detail": {
+        "status": 404,
+        "heading": "This path ends here.\nYour discovery doesn’t."
+      }
+    },
+    {
+      "name": "mobile: home renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 390,
+          "documentWidth": 390,
+          "bodyWidth": 390
+        }
+      }
+    },
+    {
+      "name": "mobile: objects renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 390,
+          "documentWidth": 390,
+          "bodyWidth": 390
+        }
+      }
+    },
+    {
+      "name": "mobile: product renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 390,
+          "documentWidth": 390,
+          "bodyWidth": 390
+        }
+      }
+    },
+    {
+      "name": "mobile: guide renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 870,
+          "documentWidth": 870,
+          "bodyWidth": 870
+        }
+      }
+    },
+    {
+      "name": "mobile: region renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 390,
+          "documentWidth": 390,
+          "bodyWidth": 390
+        }
+      }
+    },
+    {
+      "name": "mobile: craft renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 390,
+          "documentWidth": 390,
+          "bodyWidth": 390
+        }
+      }
+    },
+    {
+      "name": "mobile: contact renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 390,
+          "documentWidth": 390,
+          "bodyWidth": 390
+        }
+      }
+    },
+    {
+      "name": "mobile: keyboard skip link targets main content",
+      "status": "passed"
+    },
+    {
+      "name": "mobile: navigation is usable",
+      "status": "passed"
+    },
+    {
+      "name": "mobile: filter combination, unknown exclusion, reset and zero results",
+      "status": "passed",
+      "detail": {
+        "pierced": 4,
+        "kanagawaPierced": 2,
+        "woodKanagawaPierced": 2,
+        "knownMetal": 1,
+        "zero": 0,
+        "unknownOriginExcluded": 4,
+        "total": 9
+      }
+    },
+    {
+      "name": "mobile: filter URL restores state and ignores invalid option",
+      "status": "passed"
+    },
+    {
+      "name": "mobile: privacy and contact match configured services",
+      "status": "passed",
+      "detail": {
+        "emailConfigured": false,
+        "repositoryConfigured": true
+      }
+    },
+    {
+      "name": "mobile: missing URL responds with HTTP 404",
+      "status": "passed",
+      "detail": {
+        "status": 404,
+        "heading": "This path ends here.\nYour discovery doesn’t."
+      }
+    },
+    {
+      "name": "narrow: home renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 320,
+          "documentWidth": 320,
+          "bodyWidth": 320
+        }
+      }
+    },
+    {
+      "name": "narrow: objects renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 320,
+          "documentWidth": 320,
+          "bodyWidth": 320
+        }
+      }
+    },
+    {
+      "name": "narrow: product renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 320,
+          "documentWidth": 320,
+          "bodyWidth": 320
+        }
+      }
+    },
+    {
+      "name": "narrow: guide renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 867,
+          "documentWidth": 867,
+          "bodyWidth": 866
+        }
+      }
+    },
+    {
+      "name": "narrow: region renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 320,
+          "documentWidth": 320,
+          "bodyWidth": 320
+        }
+      }
+    },
+    {
+      "name": "narrow: craft renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 320,
+          "documentWidth": 320,
+          "bodyWidth": 320
+        }
+      }
+    },
+    {
+      "name": "narrow: contact renders without viewport overflow",
+      "status": "passed",
+      "detail": {
+        "status": 200,
+        "axeViolations": 0,
+        "dimensions": {
+          "width": 320,
+          "documentWidth": 320,
+          "bodyWidth": 320
+        }
+      }
+    },
+    {
+      "name": "narrow: keyboard skip link targets main content",
+      "status": "passed"
+    },
+    {
+      "name": "narrow: navigation is usable",
+      "status": "passed"
+    },
+    {
+      "name": "narrow: filter combination, unknown exclusion, reset and zero results",
+      "status": "passed",
+      "detail": {
+        "pierced": 4,
+        "kanagawaPierced": 2,
+        "woodKanagawaPierced": 2,
+        "knownMetal": 1,
+        "zero": 0,
+        "unknownOriginExcluded": 4,
+        "total": 9
+      }
+    },
+    {
+      "name": "narrow: filter URL restores state and ignores invalid option",
+      "status": "passed"
+    },
+    {
+      "name": "narrow: privacy and contact match configured services",
+      "status": "passed",
+      "detail": {
+        "emailConfigured": false,
+        "repositoryConfigured": true
+      }
+    },
+    {
+      "name": "narrow: missing URL responds with HTTP 404",
+      "status": "passed",
+      "detail": {
+        "status": 404,
+        "heading": "This path ends here.\nYour discovery doesn’t."
+      }
+    },
+    {
+      "name": "No uncaught browser errors on the tested pages",
+      "status": "passed"
+    },
+    {
+      "name": "No unexpected console errors on the tested pages",
+      "status": "passed",
+      "detail": {
+        "expectedMissingRouteErrors": 3
+      }
+    }
+  ],
+  "pages": [
+    {
+      "viewport": "desktop",
+      "width": 1440,
+      "kind": "home",
+      "url": "http://127.0.0.1:4321/en/",
+      "status": 200,
+      "dimensions": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 19.399999999441206,
+          "domContentLoadedMs": 184.20000000018626,
+          "loadEventEndMs": 202.79999999981374,
+          "transferSizeBytes": 4169,
+          "encodedBodySizeBytes": 3869
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 6059,
+          "encodedBodySizeBytes": 5459
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 15,
+        "incompleteRuleCount": 1,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    },
+    {
+      "viewport": "desktop",
+      "width": 1440,
+      "kind": "objects",
+      "url": "http://127.0.0.1:4321/en/objects/",
+      "status": 200,
+      "dimensions": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 7.2999999998137355,
+          "domContentLoadedMs": 29.59999999962747,
+          "loadEventEndMs": 111.79999999981374,
+          "transferSizeBytes": 5222,
+          "encodedBodySizeBytes": 4922
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 600,
+          "encodedBodySizeBytes": 251
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 25,
+        "incompleteRuleCount": 1,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    },
+    {
+      "viewport": "desktop",
+      "width": 1440,
+      "kind": "product",
+      "url": "http://127.0.0.1:4321/en/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 8,
+          "domContentLoadedMs": 24.899999999441206,
+          "loadEventEndMs": 29.899999999441206,
+          "transferSizeBytes": 4122,
+          "encodedBodySizeBytes": 3822
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 600,
+          "encodedBodySizeBytes": 251
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 21,
+        "incompleteRuleCount": 1,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    },
+    {
+      "viewport": "desktop",
+      "width": 1440,
+      "kind": "guide",
+      "url": "http://127.0.0.1:4321/en/journal/pierced-or-clip-on/",
+      "status": 200,
+      "dimensions": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 15.899999999441206,
+          "domContentLoadedMs": 55.09999999962747,
+          "loadEventEndMs": 60.69999999925494,
+          "transferSizeBytes": 4225,
+          "encodedBodySizeBytes": 3925
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 600,
+          "encodedBodySizeBytes": 251
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 17,
+        "incompleteRuleCount": 1,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    },
+    {
+      "viewport": "desktop",
+      "width": 1440,
+      "kind": "region",
+      "url": "http://127.0.0.1:4321/en/places/kanagawa/",
+      "status": 200,
+      "dimensions": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 11.399999999441206,
+          "domContentLoadedMs": 43.700000000186265,
+          "loadEventEndMs": 49.5,
+          "transferSizeBytes": 4343,
+          "encodedBodySizeBytes": 4043
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 600,
+          "encodedBodySizeBytes": 251
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 17,
+        "incompleteRuleCount": 1,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    },
+    {
+      "viewport": "desktop",
+      "width": 1440,
+      "kind": "craft",
+      "url": "http://127.0.0.1:4321/en/crafts/hakone-yosegi/",
+      "status": 200,
+      "dimensions": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 11.399999999441206,
+          "domContentLoadedMs": 41.39999999944121,
+          "loadEventEndMs": 45.5,
+          "transferSizeBytes": 4041,
+          "encodedBodySizeBytes": 3741
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 600,
+          "encodedBodySizeBytes": 251
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 17,
+        "incompleteRuleCount": 1,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    },
+    {
+      "viewport": "desktop",
+      "width": 1440,
+      "kind": "contact",
+      "url": "http://127.0.0.1:4321/en/contact/",
+      "status": 200,
+      "dimensions": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 8.599999999627471,
+          "domContentLoadedMs": 32.799999999813735,
+          "loadEventEndMs": 35.200000000186265,
+          "transferSizeBytes": 2124,
+          "encodedBodySizeBytes": 1824
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 600,
+          "encodedBodySizeBytes": 251
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 14,
+        "incompleteRuleCount": 0,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    },
+    {
+      "viewport": "mobile",
+      "width": 390,
+      "kind": "home",
+      "url": "http://127.0.0.1:4321/en/",
+      "status": 200,
+      "dimensions": {
+        "width": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 14.299999999813735,
+          "domContentLoadedMs": 37.59999999962747,
+          "loadEventEndMs": 58.40000000037253,
+          "transferSizeBytes": 4169,
+          "encodedBodySizeBytes": 3869
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 6059,
+          "encodedBodySizeBytes": 5459
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 17,
+        "incompleteRuleCount": 1,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    },
+    {
+      "viewport": "mobile",
+      "width": 390,
+      "kind": "objects",
+      "url": "http://127.0.0.1:4321/en/objects/",
+      "status": 200,
+      "dimensions": {
+        "width": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 14,
+          "domContentLoadedMs": 45.60000000055879,
+          "loadEventEndMs": 93.40000000037253,
+          "transferSizeBytes": 5222,
+          "encodedBodySizeBytes": 4922
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 600,
+          "encodedBodySizeBytes": 251
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 27,
+        "incompleteRuleCount": 1,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    },
+    {
+      "viewport": "mobile",
+      "width": 390,
+      "kind": "product",
+      "url": "http://127.0.0.1:4321/en/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "width": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 12.799999999813735,
+          "domContentLoadedMs": 61.299999999813735,
+          "loadEventEndMs": 64.79999999981374,
+          "transferSizeBytes": 4122,
+          "encodedBodySizeBytes": 3822
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 600,
+          "encodedBodySizeBytes": 251
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 23,
+        "incompleteRuleCount": 1,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    },
+    {
+      "viewport": "mobile",
+      "width": 390,
+      "kind": "guide",
+      "url": "http://127.0.0.1:4321/en/journal/pierced-or-clip-on/",
+      "status": 200,
+      "dimensions": {
+        "width": 870,
+        "documentWidth": 870,
+        "bodyWidth": 870
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 8.799999999813735,
+          "domContentLoadedMs": 30.700000000186265,
+          "loadEventEndMs": 33.90000000037253,
+          "transferSizeBytes": 4225,
+          "encodedBodySizeBytes": 3925
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 600,
+          "encodedBodySizeBytes": 251
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 19,
+        "incompleteRuleCount": 1,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    },
+    {
+      "viewport": "mobile",
+      "width": 390,
+      "kind": "region",
+      "url": "http://127.0.0.1:4321/en/places/kanagawa/",
+      "status": 200,
+      "dimensions": {
+        "width": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 12.299999999813735,
+          "domContentLoadedMs": 37.90000000037253,
+          "loadEventEndMs": 43.90000000037253,
+          "transferSizeBytes": 4343,
+          "encodedBodySizeBytes": 4043
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 600,
+          "encodedBodySizeBytes": 251
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 19,
+        "incompleteRuleCount": 1,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    },
+    {
+      "viewport": "mobile",
+      "width": 390,
+      "kind": "craft",
+      "url": "http://127.0.0.1:4321/en/crafts/hakone-yosegi/",
+      "status": 200,
+      "dimensions": {
+        "width": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 9.5,
+          "domContentLoadedMs": 43.19999999925494,
+          "loadEventEndMs": 45.59999999962747,
+          "transferSizeBytes": 4041,
+          "encodedBodySizeBytes": 3741
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 600,
+          "encodedBodySizeBytes": 251
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 19,
+        "incompleteRuleCount": 1,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    },
+    {
+      "viewport": "mobile",
+      "width": 390,
+      "kind": "contact",
+      "url": "http://127.0.0.1:4321/en/contact/",
+      "status": 200,
+      "dimensions": {
+        "width": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 8.5,
+          "domContentLoadedMs": 39.09999999962747,
+          "loadEventEndMs": 41.90000000037253,
+          "transferSizeBytes": 2124,
+          "encodedBodySizeBytes": 1824
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 600,
+          "encodedBodySizeBytes": 251
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 16,
+        "incompleteRuleCount": 1,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    },
+    {
+      "viewport": "narrow",
+      "width": 320,
+      "kind": "home",
+      "url": "http://127.0.0.1:4321/en/",
+      "status": 200,
+      "dimensions": {
+        "width": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 11.800000000745058,
+          "domContentLoadedMs": 187.30000000074506,
+          "loadEventEndMs": 193.40000000037253,
+          "transferSizeBytes": 4169,
+          "encodedBodySizeBytes": 3869
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 6059,
+          "encodedBodySizeBytes": 5459
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 17,
+        "incompleteRuleCount": 1,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    },
+    {
+      "viewport": "narrow",
+      "width": 320,
+      "kind": "objects",
+      "url": "http://127.0.0.1:4321/en/objects/",
+      "status": 200,
+      "dimensions": {
+        "width": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 8.700000000186265,
+          "domContentLoadedMs": 36.200000000186265,
+          "loadEventEndMs": 72.29999999981374,
+          "transferSizeBytes": 5222,
+          "encodedBodySizeBytes": 4922
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 600,
+          "encodedBodySizeBytes": 251
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 27,
+        "incompleteRuleCount": 1,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    },
+    {
+      "viewport": "narrow",
+      "width": 320,
+      "kind": "product",
+      "url": "http://127.0.0.1:4321/en/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+      "status": 200,
+      "dimensions": {
+        "width": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 10.200000000186265,
+          "domContentLoadedMs": 38.10000000055879,
+          "loadEventEndMs": 40,
+          "transferSizeBytes": 4122,
+          "encodedBodySizeBytes": 3822
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 600,
+          "encodedBodySizeBytes": 251
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 23,
+        "incompleteRuleCount": 1,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    },
+    {
+      "viewport": "narrow",
+      "width": 320,
+      "kind": "guide",
+      "url": "http://127.0.0.1:4321/en/journal/pierced-or-clip-on/",
+      "status": 200,
+      "dimensions": {
+        "width": 867,
+        "documentWidth": 867,
+        "bodyWidth": 866
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 8.5,
+          "domContentLoadedMs": 37.89999999944121,
+          "loadEventEndMs": 40.700000000186265,
+          "transferSizeBytes": 4225,
+          "encodedBodySizeBytes": 3925
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 600,
+          "encodedBodySizeBytes": 251
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 19,
+        "incompleteRuleCount": 1,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    },
+    {
+      "viewport": "narrow",
+      "width": 320,
+      "kind": "region",
+      "url": "http://127.0.0.1:4321/en/places/kanagawa/",
+      "status": 200,
+      "dimensions": {
+        "width": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 10.299999999813735,
+          "domContentLoadedMs": 39.39999999944121,
+          "loadEventEndMs": 41.799999999813735,
+          "transferSizeBytes": 4343,
+          "encodedBodySizeBytes": 4043
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 600,
+          "encodedBodySizeBytes": 251
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 19,
+        "incompleteRuleCount": 1,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    },
+    {
+      "viewport": "narrow",
+      "width": 320,
+      "kind": "craft",
+      "url": "http://127.0.0.1:4321/en/crafts/hakone-yosegi/",
+      "status": 200,
+      "dimensions": {
+        "width": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 13.200000000186265,
+          "domContentLoadedMs": 53.90000000037253,
+          "loadEventEndMs": 56.40000000037253,
+          "transferSizeBytes": 4041,
+          "encodedBodySizeBytes": 3741
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 600,
+          "encodedBodySizeBytes": 251
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 19,
+        "incompleteRuleCount": 1,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    },
+    {
+      "viewport": "narrow",
+      "width": 320,
+      "kind": "contact",
+      "url": "http://127.0.0.1:4321/en/contact/",
+      "status": 200,
+      "dimensions": {
+        "width": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320
+      },
+      "performance": {
+        "navigation": {
+          "responseEndMs": 12.599999999627471,
+          "domContentLoadedMs": 50.09999999962747,
+          "loadEventEndMs": 55.09999999962747,
+          "transferSizeBytes": 2124,
+          "encodedBodySizeBytes": 1824
+        },
+        "resources": {
+          "count": 2,
+          "transferSizeBytes": 600,
+          "encodedBodySizeBytes": 251
+        }
+      },
+      "axe": {
+        "violations": [],
+        "passedRuleCount": 16,
+        "incompleteRuleCount": 1,
+        "note": "Automated checks do not replace manual accessibility review."
+      }
+    }
+  ],
+  "screenshots": [
+    "artifacts/desktop-home.png",
+    "artifacts/desktop-objects.png",
+    "artifacts/mobile-home.png",
+    "artifacts/mobile-product.png"
+  ],
+  "consoleErrors": [
+    {
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:4321/en/this-page-does-not-exist/",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:4321/en/this-page-does-not-exist/",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "viewport": "narrow",
+      "url": "http://127.0.0.1:4321/en/this-page-does-not-exist/",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    }
+  ],
+  "pageErrors": [],
+  "failures": [],
+  "summary": {
+    "checks": 41,
+    "passed": 41,
+    "failed": 0,
+    "pages": 21,
+    "axeViolations": 0,
+    "screenshotCount": 4
+  }
+}

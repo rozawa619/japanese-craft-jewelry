@@ -1,0 +1,27 @@
+---
+import Base from '../../../layouts/Base.astro';
+import ProductCard from '../../../components/ProductCard.astro';
+import Disclosure from '../../../components/Disclosure.astro';
+import Comparison from '../../../components/Comparison.astro';
+import {catalog,products} from '../../../lib/catalog';
+const groups=[{key:'type',name:'Type',items:catalog.productTypes},{key:'prefecture',name:'Maker region',items:catalog.prefectures},{key:'material',name:'Material',items:catalog.materials},{key:'craft',name:'Craft',items:catalog.crafts}];
+---
+<Base title="Explore Japanese craft accessories" description="Compare nine researched yosegi accessories, with fitting types, checked prices, sources and questions to ask before buying."><div class="wrap page-bottom"><header class="page-heading"><p class="eyebrow">THE OBJECT INDEX</p><h1>Small objects.<br/><em>Considered choices.</em></h1><p>Explore the details before you follow the pattern. Filter by the facts we could verify, then visit the retailer to see the actual object.</p></header><Disclosure/><form class="filters" id="object-filters" aria-label="Filter objects">{groups.map(g=><label>{g.name}<select name={g.key} aria-label={g.name}><option value="">All options</option>{g.items.map(i=><option value={i.id}>{i.name}</option>)}</select></label>)}<button class="reset-button" type="reset">Clear filters</button></form><noscript><p class="notice">All objects are shown. Enable JavaScript to use filters.</p></noscript><div class="results-bar"><p id="result-count" role="status" aria-live="polite">{products.length} objects</p><p>Unknown attributes do not match a selected filter.</p></div><div class="product-grid" id="object-results">{products.map((p,i)=><ProductCard product={p} index={i}/>)}</div><div id="empty-state" class="empty-state" hidden><h2>No objects match this combination.</h2><p>Try fewer filters, or clear them to explore the full edit.</p><button class="reset-button" type="button" id="empty-reset">Clear all filters</button></div><Comparison/></div></Base>
+<script>
+const form=document.querySelector<HTMLFormElement>('#object-filters')!;
+const selects=Array.from(form.querySelectorAll('select'));
+const cards=Array.from(document.querySelectorAll<HTMLElement>('[data-product-card]'));
+const update=(writeUrl=true)=>{
+ const query=new URLSearchParams(); selects.forEach(s=>{if(s.value)query.set(s.name,s.value)});
+ let count=0;
+ cards.forEach(card=>{const match=selects.every(s=>!s.value||(card.getAttribute('data-'+s.name)||'').split(' ').includes(s.value));card.hidden=!match;if(match)count++});
+ document.querySelector('#result-count')!.textContent=`${count} object${count===1?'':'s'}`;
+ (document.querySelector('#empty-state') as HTMLElement).hidden=count!==0;
+ if(writeUrl)history.replaceState(null,'',location.pathname+(query.size?'?'+query.toString():''));
+};
+function readUrl(){const query=new URLSearchParams(location.search);selects.forEach(s=>{const value=query.get(s.name)||'';s.value=Array.from(s.options).some(o=>o.value===value)?value:''});update(false)}
+form.addEventListener('change',()=>update());form.addEventListener('submit',e=>e.preventDefault());
+form.addEventListener('reset',()=>{selects.forEach(s=>s.value='');update()});
+document.querySelector('#empty-reset')!.addEventListener('click',()=>form.reset());
+window.addEventListener('popstate',readUrl);readUrl();
+</script>

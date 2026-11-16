@@ -1,0 +1,14 @@
+---
+import {getCollection,render} from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import ProductCard from '../../../components/ProductCard.astro';
+import Sources from '../../../components/Sources.astro';
+import Disclosure from '../../../components/Disclosure.astro';
+import {products,catalog,byId} from '../../../lib/catalog';
+export async function getStaticPaths(){return(await getCollection('places',({data})=>data.publishStatus==='published')).filter(note=>note.body?.trim()&&products.some(p=>p.prefectureIds.includes(note.data.prefectureId))).map(note=>({params:{place:note.id},props:{note}}))}
+const {note}=Astro.props;const {Content}=await render(note);
+const prefecture=byId(catalog.prefectures,note.data.prefectureId);
+const local=products.filter(p=>p.prefectureIds.includes(prefecture.id));
+const retailer=products.filter(p=>!p.prefectureIds.includes(prefecture.id)&&p.merchantIds.some(id=>note.data.relatedMerchantIds.includes(id)));
+---
+<Base title={note.data.title} description={note.data.description}><div class="wrap page-bottom"><header class="page-heading"><p class="eyebrow">PLACES & PEOPLE / {prefecture.name}</p><h1>{note.data.title}</h1><p>{note.data.description}</p></header><div class="region-intro"><div class="prose"><Content/></div><aside class="region-facts"><p class="eyebrow">READING THIS EDIT</p><h2>Three things we keep separate.</h2><ol><li><strong>Workshop:</strong> where a maker is documented to work.</li><li><strong>Manufacturing:</strong> where a specific object is made.</li><li><strong>Retail:</strong> where it is sold.</li></ol><p>Unknown item-level details remain visible on each object page.</p></aside></div><div class="section-heading"><h2>Connected to a {prefecture.name} workshop.</h2></div><Disclosure productIds={[...local,...retailer].map(p=>p.id)}/><div class="product-grid">{local.map((p,i)=><ProductCard product={p} index={i}/>)}</div>{retailer.length>0&&<section class="maker-block"><h2>Also sold by a regional retailer.</h2><p>These listings connect to a retailer in this region. Their individual maker and manufacturing location remain unconfirmed.</p><div class="product-grid">{retailer.map((p,i)=><ProductCard product={p} index={i+2}/>)}</div></section>}<Sources sourceIds={note.data.sourceIds}/></div></Base>

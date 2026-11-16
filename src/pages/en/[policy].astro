@@ -1,0 +1,10 @@
+---
+import {getCollection,render} from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Disclosure from '../../components/Disclosure.astro';
+import {site} from '../../config/site';
+export async function getStaticPaths(){return(await getCollection('policies',({data})=>data.publishStatus==='published')).map(page=>({params:{policy:page.id},props:{page}}))}
+const {page}=Astro.props;
+const {Content}=await render(page);
+---
+<Base title={page.data.title} description={page.data.description} updatedAt={page.data.updatedAt}><div class="article-wrap"><header class="page-heading"><p class="eyebrow">THE WAY WE WORK</p><h1>{page.data.title}</h1><p>{page.data.description}</p></header><div class="article-meta">Updated {page.data.updatedAt}</div>{page.id==='affiliate-disclosure'&&<Disclosure scope="site"/>}<article class="prose"><Content/>{page.id==='about'&&<section><h2>Editorial responsibility</h2><p>{site.operatorName?site.operatorName+' is responsible for this editorial project.':'ITO is an independent editorial project. A named operator has not yet been provided for this preview.'}</p></section>}{page.id==='contact'&&<section class="contact-option">{site.contactEmail?<><h2>Email the editor</h2><a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a></>:site.repositoryUrl?<><h2>Editorial corrections</h2><p>You can open a public issue on our project repository. A GitHub account is required. Do not include private or order information.</p><a href={site.repositoryUrl.replace(/\/$/,'')+'/issues/new'} target="_blank" rel="noopener noreferrer">Send a correction via GitHub ↗</a></>:<p>No editorial contact channel is active in this preview. Orders and delivery questions should be directed to the retailer linked on the object page.</p>}</section>}</article></div></Base>

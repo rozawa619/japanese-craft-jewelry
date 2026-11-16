@@ -1,0 +1,9 @@
+---
+import {products,labels,price,catalog} from '../lib/catalog';
+import {pagePath} from '../config/site';
+const {productIds=products.filter(p=>p.productType.some(t=>t.includes('earrings'))).map(p=>p.id)}=Astro.props;
+const items=products.filter(p=>productIds.includes(p.id));
+---
+<section class="comparison-section" aria-labelledby="compare-heading"><div class="section-heading"><h2 id="compare-heading">The details, side by side.</h2><span class="eyebrow">Published facts, not a ranking</span></div>
+<p class="muted">A missing measurement stays missing. Prices use the listed currency and exclude unconfirmed delivery charges and import costs. Checked dates appear with each price.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Accessory comparison, scroll horizontally on small screens"><table><caption class="sr-only">Verified product details</caption><thead><tr><th scope="col">Object</th><th scope="col">Type</th><th scope="col">Size / weight</th><th scope="col">Materials</th><th scope="col">Listed price</th><th scope="col">Overseas buying</th></tr></thead><tbody>{items.map(p=><tr><th scope="row"><a href={pagePath(`objects/${p.slug}/`)}>{p.title}</a></th><td>{labels('productTypes',p.productType)}</td><td>{p.size||'Size unconfirmed'}<br/>{p.weightPerPieceGrams===null?'Weight unconfirmed':`${p.weightPerPieceGrams} g per piece`}</td><td>{labels('materials',p.materialIds)}<br/>{p.findings||'Hardware unconfirmed'}</td><td>{price(p)}<small>Checked {p.priceCheckedAt}</small><small>{p.taxNote}</small>{p.availability==='out_of_stock'&&<small>Sold out when checked</small>}</td><td>{catalog.merchants.find(m=>m.id===p.merchantIds[0])?.shipping.summary}</td></tr>)}</tbody></table></div></section>
