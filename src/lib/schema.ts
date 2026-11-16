@@ -10,7 +10,7 @@ export const linkSchema = z.object({
   applicationStatus, affiliateLinkVerifiedAt: date.nullable(),
 });
 export const productSchema = z.object({
-  id, slug: id, locale: z.literal('en'), title: z.string(), originalTitle: z.string(),
+  id, slug: id, locale: z.enum(['en','ja']), title: z.string(), originalTitle: z.string(),
   publishStatus: z.enum(['published', 'draft']), productType: z.array(id).min(1),
   prefectureIds: z.array(id), craftIds: z.array(id).min(1), materialIds: z.array(id),
   makerId: id, craftClassification: z.object({ label: z.string(), sourceIds: z.array(id) }),

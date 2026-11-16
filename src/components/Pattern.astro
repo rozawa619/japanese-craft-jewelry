@@ -1,8 +1,9 @@
 ---
-interface Props { variant?: number; hero?: boolean; }
-const {variant=0,hero=false}=Astro.props;
+import {t,type Locale} from '../lib/i18n';
+interface Props { variant?:number; hero?:boolean; locale?:Locale; }
+const {variant=0,hero=false,locale='en'}=Astro.props;
 ---
 <figure class:list={['pattern-study',`pattern-${variant % 4}`,{ 'pattern-hero':hero }]}>
-  <div class="pattern-art" aria-hidden="true"><div class="pattern-grid">{Array.from({length:16},(_,i)=><span class={`p-tile p-tile-${i%6}`}></span>)}</div><span class="pattern-circle"></span></div>
-  <figcaption>{hero ? 'An original study in pattern. Not a product photograph.' : 'Pattern study · No product photograph'}</figcaption>
+ <div class="pattern-art" aria-hidden="true"><div class="pattern-grid">{Array.from({length:16},(_,i)=><span class={`p-tile p-tile-${i%6}`}></span>)}</div><span class="pattern-circle"></span></div>
+ <figcaption>{hero?t(locale,'An original study in pattern. Not a product photograph.','独自の抽象図柄です。実際の商品写真ではありません。'):t(locale,'Pattern study · No product photograph','抽象図柄・商品写真ではありません')}</figcaption>
 </figure>

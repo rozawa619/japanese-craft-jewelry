@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-11-16T06:42:23.137Z",
+  "checkedAt": "2026-11-16T07:34:54.541Z",
   "status": "passed",
   "command": "node scripts/check-ad-build.mjs",
   "isolation": {
-    "fixtureRoot": "artifacts/ad-build-fixture/2026-11-16T06-42-23-094Z",
+    "fixtureRoot": "artifacts/ad-build-fixture/2026-11-16T07-34-54-460Z",
     "copies": [
       "src",
       "docs",
@@ -16,8 +16,8 @@
     "nodeModules": "junction to existing dependencies",
     "envFilesCopied": false,
     "mode": "preview plus test-only public metadata build; no deployment",
-    "rootDistBefore": "013ae34cbaf52063879297db4148ff984d2c300463614a09c15962166a8995fc",
-    "rootDistAfter": "013ae34cbaf52063879297db4148ff984d2c300463614a09c15962166a8995fc",
+    "rootDistBefore": "68ce4539215166760baf026a2142c920b3013ba8874433cc79634ad6c2ec4d0a",
+    "rootDistAfter": "68ce4539215166760baf026a2142c920b3013ba8874433cc79634ad6c2ec4d0a",
     "rootDistUnchanged": true,
     "realCatalogUnchanged": true
   },
@@ -25,7 +25,7 @@
     {
       "name": "approved-related-product-only",
       "status": "passed",
-      "fixture": "artifacts/ad-build-fixture/2026-11-16T06-42-23-094Z/approved-related-product-only",
+      "fixture": "artifacts/ad-build-fixture/2026-11-16T07-34-54-460Z/approved-related-product-only",
       "settings": {
         "mode": "preview",
         "basePath": "/",
@@ -36,30 +36,34 @@
       "build": {
         "exitCode": 0,
         "error": null,
-        "log": "artifacts/ad-build-fixture/2026-11-16T06-42-23-094Z/approved-related-product-only/build.log",
+        "log": "artifacts/ad-build-fixture/2026-11-16T07-34-54-460Z/approved-related-product-only/build.log",
         "summary": []
       },
       "generatedSiteCheck": {
         "exitCode": 0,
         "error": null,
-        "log": "artifacts/ad-build-fixture/2026-11-16T06-42-23-094Z/approved-related-product-only/check-built.log",
+        "log": "artifacts/ad-build-fixture/2026-11-16T07-34-54-460Z/approved-related-product-only/check-built-recheck.log",
         "summary": [
-          "PASS 27 HTML pages; 1099 href/src references; 26 anchors; 87 retailer links (16 sponsored); 404, drafts, preview metadata, sitemap and robots. Base: /"
+          "PASS 52 HTML pages; 2100 href/src references; 51 anchors; 158 retailer links (30 sponsored); 404, drafts, preview metadata, sitemap and robots. Base: /"
         ]
       },
       "htmlAssertions": {
         "status": "passed",
-        "sponsoredCount": 16,
-        "sponsoredPages": 16,
+        "sponsoredCount": 30,
+        "sponsoredPages": 30,
         "drafts": "Draft object and guide absent from generated pages, markup and sitemap when passed.",
         "publicMetadata": "Preview noindex/canonical/sitemap rules checked by generated-site checker.",
         "errors": []
+      },
+      "checkerRetry": {
+        "previousExitCode": 1,
+        "reason": "Checker script corrected to retain tokenSource in its per-page map; no product or fixture build changes."
       }
     },
     {
       "name": "approved-lower-retailer-section-only",
       "status": "passed",
-      "fixture": "artifacts/ad-build-fixture/2026-11-16T06-42-23-094Z/approved-lower-retailer-section-only",
+      "fixture": "artifacts/ad-build-fixture/2026-11-16T07-34-54-460Z/approved-lower-retailer-section-only",
       "settings": {
         "mode": "preview",
         "basePath": "/",
@@ -70,30 +74,34 @@
       "build": {
         "exitCode": 0,
         "error": null,
-        "log": "artifacts/ad-build-fixture/2026-11-16T06-42-23-094Z/approved-lower-retailer-section-only/build.log",
+        "log": "artifacts/ad-build-fixture/2026-11-16T07-34-54-460Z/approved-lower-retailer-section-only/build.log",
         "summary": []
       },
       "generatedSiteCheck": {
         "exitCode": 0,
         "error": null,
-        "log": "artifacts/ad-build-fixture/2026-11-16T06-42-23-094Z/approved-lower-retailer-section-only/check-built.log",
+        "log": "artifacts/ad-build-fixture/2026-11-16T07-34-54-460Z/approved-lower-retailer-section-only/check-built-recheck.log",
         "summary": [
-          "PASS 27 HTML pages; 1099 href/src references; 26 anchors; 87 retailer links (6 sponsored); 404, drafts, preview metadata, sitemap and robots. Base: /"
+          "PASS 52 HTML pages; 2100 href/src references; 51 anchors; 158 retailer links (12 sponsored); 404, drafts, preview metadata, sitemap and robots. Base: /"
         ]
       },
       "htmlAssertions": {
         "status": "passed",
-        "sponsoredCount": 6,
-        "sponsoredPages": 6,
+        "sponsoredCount": 12,
+        "sponsoredPages": 12,
         "drafts": "Draft object and guide absent from generated pages, markup and sitemap when passed.",
         "publicMetadata": "Preview noindex/canonical/sitemap rules checked by generated-site checker.",
         "errors": []
+      },
+      "checkerRetry": {
+        "previousExitCode": 1,
+        "reason": "Checker script corrected to retain tokenSource in its per-page map; no product or fixture build changes."
       }
     },
     {
       "name": "paused-and-missing-url-fallback",
       "status": "passed",
-      "fixture": "artifacts/ad-build-fixture/2026-11-16T06-42-23-094Z/paused-and-missing-url-fallback",
+      "fixture": "artifacts/ad-build-fixture/2026-11-16T07-34-54-460Z/paused-and-missing-url-fallback",
       "settings": {
         "mode": "preview",
         "basePath": "/",
@@ -104,15 +112,15 @@
       "build": {
         "exitCode": 0,
         "error": null,
-        "log": "artifacts/ad-build-fixture/2026-11-16T06-42-23-094Z/paused-and-missing-url-fallback/build.log",
+        "log": "artifacts/ad-build-fixture/2026-11-16T07-34-54-460Z/paused-and-missing-url-fallback/build.log",
         "summary": []
       },
       "generatedSiteCheck": {
         "exitCode": 0,
         "error": null,
-        "log": "artifacts/ad-build-fixture/2026-11-16T06-42-23-094Z/paused-and-missing-url-fallback/check-built.log",
+        "log": "artifacts/ad-build-fixture/2026-11-16T07-34-54-460Z/paused-and-missing-url-fallback/check-built-recheck.log",
         "summary": [
-          "PASS 27 HTML pages; 1099 href/src references; 26 anchors; 87 retailer links (0 sponsored); 404, drafts, preview metadata, sitemap and robots. Base: /"
+          "PASS 52 HTML pages; 2100 href/src references; 51 anchors; 158 retailer links (0 sponsored); 404, drafts, preview metadata, sitemap and robots. Base: /"
         ]
       },
       "htmlAssertions": {
@@ -122,12 +130,16 @@
         "drafts": "Draft object and guide absent from generated pages, markup and sitemap when passed.",
         "publicMetadata": "Preview noindex/canonical/sitemap rules checked by generated-site checker.",
         "errors": []
+      },
+      "checkerRetry": {
+        "previousExitCode": 0,
+        "reason": "Checker script corrected to retain tokenSource in its per-page map; no product or fixture build changes."
       }
     },
     {
       "name": "test-only-public-base-metadata-and-drafts",
       "status": "passed",
-      "fixture": "artifacts/ad-build-fixture/2026-11-16T06-42-23-094Z/test-only-public-base-metadata-and-drafts",
+      "fixture": "artifacts/ad-build-fixture/2026-11-16T07-34-54-460Z/test-only-public-base-metadata-and-drafts",
       "settings": {
         "mode": "public",
         "basePath": "/ito-craft/",
@@ -138,15 +150,15 @@
       "build": {
         "exitCode": 0,
         "error": null,
-        "log": "artifacts/ad-build-fixture/2026-11-16T06-42-23-094Z/test-only-public-base-metadata-and-drafts/build.log",
+        "log": "artifacts/ad-build-fixture/2026-11-16T07-34-54-460Z/test-only-public-base-metadata-and-drafts/build.log",
         "summary": []
       },
       "generatedSiteCheck": {
         "exitCode": 0,
         "error": null,
-        "log": "artifacts/ad-build-fixture/2026-11-16T06-42-23-094Z/test-only-public-base-metadata-and-drafts/check-built.log",
+        "log": "artifacts/ad-build-fixture/2026-11-16T07-34-54-460Z/test-only-public-base-metadata-and-drafts/check-built-recheck.log",
         "summary": [
-          "PASS 27 HTML pages; 1125 href/src references; 26 anchors; 87 retailer links (0 sponsored); 404, drafts, public metadata, sitemap and robots. Base: /ito-craft/"
+          "PASS 52 HTML pages; 2252 href/src references; 51 anchors; 158 retailer links (0 sponsored); 404, drafts, public metadata, sitemap and robots. Base: /ito-craft/"
         ]
       },
       "htmlAssertions": {
@@ -156,8 +168,13 @@
         "drafts": "Draft object and guide absent from generated pages, markup and sitemap when passed.",
         "publicMetadata": "Test-only public URL/base, canonical, OGP, sitemap and robots assertions; does not establish a successful deployment.",
         "errors": []
+      },
+      "checkerRetry": {
+        "previousExitCode": 0,
+        "reason": "Checker script corrected to retain tokenSource in its per-page map; no product or fixture build changes."
       }
     }
   ],
-  "completedAt": "2026-11-16T06:43:10.312Z"
+  "completedAt": "2026-11-16T07:35:54.627Z",
+  "checkerRecheckedAt": "2026-11-16T07:37:14.278Z"
 }

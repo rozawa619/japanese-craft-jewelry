@@ -1,13 +1,13 @@
 ---
 title: "About ITO"
-description: "An independent editorial project exploring Japanese craft accessories, beginning with Kanagawa."
+description: "An independent bilingual editorial project exploring Japanese craft jewelry, makers and techniques across Japan."
 locale: "en"
 publishStatus: "published"
 updatedAt: "2026-11-16"
 sourceIds: []
 ---
 
-ITO — Objects with a story is an English-language editorial project about Japanese craft accessories. We begin with Kanagawa and the woodworking traditions associated with Hakone, with room to explore other regions as our research grows.
+ITO — Jewelry with a story is an English-and-Japanese editorial project about Japanese craft jewelry. We explore makers, materials and techniques across Japan. Our current researched selection includes Hakone yosegi pieces connected to Kanagawa; we add regions when sourced product information and original editorial coverage are ready.
 
 We connect the appeal of an object with the practical questions of choosing it: fastening, materials, dimensions, provenance and where to ask about buying from overseas. Our introductions are based on published primary sources, not personal wear tests, workshop visits or interviews unless a page explicitly documents otherwise.
 

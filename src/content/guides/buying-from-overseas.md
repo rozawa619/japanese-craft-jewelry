@@ -1,6 +1,6 @@
 ---
-title: "Buying Japanese craft accessories from overseas"
-description: "Check the destination, total cost and return route before following a beautiful accessory through to checkout."
+title: "Buying Japanese craft jewelry from overseas"
+description: "Check the destination, total cost and return route before following a piece of jewelry through to checkout."
 locale: "en"
 publishStatus: "published"
 updatedAt: "2026-11-16"
@@ -12,7 +12,7 @@ productIds: ["hamamatsuya-pendant", "maruyama-clip-c", "maruyama-pierced-d"]
 
 Start with one question: can this retailer send this exact item to your country under terms you understand? An English page, a foreign-currency display or an international audience is not enough to establish that an order can be delivered to your address.
 
-ITO introduces accessories and links to external retailers. We do not sell products, take payment, arrange shipping or handle returns. The contract and checkout are with the retailer you choose.
+ITO introduces jewelry and links to external retailers. We do not sell products, take payment, arrange shipping or handle returns. The contract and checkout are with the retailer you choose.
 
 ## Confirm the destination for the item
 

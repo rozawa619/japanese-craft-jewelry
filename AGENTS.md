@@ -1,7 +1,7 @@
 # 次のAIへの開始手順
 
 1. `README.md`、`docs/handoff.md`、`docs/constitution.md` を読み、現在の公開・申請状態を確認する。
-2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
+2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/002-jewelry-bilingual/` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
 3. `src/lib/schema.ts`、`src/data/catalog.json`、`src/lib/affiliate.ts`、`src/content.config.ts` を読み、既存の分離を維持する。
 4. 変更後はリスクに応じた検証を実行し、仕様・タスク・変更履歴・引継ぎを実態に合わせて更新する。公開や提携承認を推測しない。
 
@@ -34,3 +34,7 @@ Node.js 24.22.1以上、pnpm 11.25.0。初回は `pnpm install --frozen-lockfile
 広告・データ変更では `pnpm verify` を実行する。UI変更はPCとスマホ、キーボード、長い名称、画像なし、フィルターの組合せ・解除・0件を確認する。公開設定変更はpreview/public両方のcanonical・OGP・robots・sitemapとサブパスを確認する。軽微な装飾のためだけの実装追従テストは増やさない。
 
 外部の提携条件は変更されうる。調査記録を起点に公式ページと管理画面を再確認する。新規課金、本人登録、提携申請の送信は運営者の判断と必要操作として扱い、既存認証の不足を秘密情報の作成・収集で埋めない。
+
+## 0.2以降の掲載範囲と言語
+
+日本全国の工芸ジュエリーが対象。神奈川は現在の調査済み産地の一つで、サイト全体を神奈川専用と表現しない。かんざしは下書き。日本語本文は各Collectionのja/、数値等の共有事実はcatalog.json、日本語表示文はtranslations/ja.json。公開本文・訳文は日英を対で更新し、右上言語ボタンと現在ページ/絞込の往復を確認する。

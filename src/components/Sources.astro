@@ -1,6 +1,8 @@
 ---
 import {sources} from '../lib/catalog';
-const {sourceIds}=Astro.props;
+import {t,type Locale} from '../lib/i18n';
+interface Props {sourceIds:string[];locale?:Locale}
+const {sourceIds,locale='en'}=Astro.props;
 const items=sources.filter(s=>sourceIds.includes(s.id));
 ---
-<section aria-label="Primary sources"><h2>Sources & checked dates</h2><p class="muted">Desk research from official pages. No physical wear test or maker interview was conducted.</p><ol class="source-list">{items.map(s=><li><a href={s.url} target="_blank" rel="noopener noreferrer">{s.title} <span aria-hidden="true">↗</span></a><small>Checked {s.checkedAt} · {s.access==='body_read'||s.access==='official page body inspected using web tool'?'Official page inspected':'Access limited — see research record'}</small></li>)}</ol></section>
+<section aria-label={t(locale,'Primary sources','一次情報の出典')}><h2>{t(locale,'Sources & checked dates','出典と確認日')}</h2><p class="muted">{t(locale,'Desk research from official pages. No physical wear test or maker interview was conducted.','公式ページをもとに調査しています。実物の着用試験や工房への取材は行っていません。')}</p><ol class="source-list">{items.map(s=><li><a href={s.url} target="_blank" rel="noopener noreferrer">{s.title} <span aria-hidden="true">↗</span><span class="sr-only">{t(locale,', opens in a new tab','、新しいタブで開きます')}</span></a><small>{t(locale,`Checked ${s.checkedAt}`,`${s.checkedAt}確認`)} · {s.access==='body_read'||s.access==='official page body inspected using web tool'?t(locale,'Official page inspected','公式ページ本文を確認'):t(locale,'Access limited — see research record','閲覧に制約あり・詳細は調査記録に記載')}</small></li>)}</ol></section>

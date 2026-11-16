@@ -1,18 +1,18 @@
 # 英語のサイト紹介・申請/照会草稿
 
-作成日：2026-11-16。未送信。個人氏名・メール・架空の公開URLを作っていない。GitHubリポジトリと公開Issuesは実在するが、一般公開サイトの最終URLは引継ぎ結果を確認して追記する。以下の草稿は実装・公開状態に合わせて運営者が確認する。公開URLを提示できる状態、連絡先の接続、運営責任表示、契約条件確認が完了するまで、申請準備完了とは扱わない。読者数・売上・試用実績を補って書かない。
+作成日：2026-11-16。未送信。個人氏名・メール・架空の公開URLを作っていない。GitHubリポジトリと公開Issuesは実在するが、公開プレビューは https://rozawa619.github.io/ito-craft/en/ と /ja/（preview/noindex）。以下の草稿は実装・公開状態に合わせて運営者が確認する。公開URLを提示できる状態、連絡先の接続、運営責任表示、契約条件確認が完了するまで、申請準備完了とは扱わない。読者数・売上・試用実績を補って書かない。
 
 ## サイト紹介文
 
-An English-language editorial guide to Japanese craft accessories, beginning with Kanagawa and Hakone yosegi woodwork. We help readers compare documented materials, fittings, dimensions, maker information and retailer links, while clearly identifying details that still need confirmation. Our guides explain how to choose pierced earrings and clip-ons and what to ask before ordering from overseas. We do not sell products, process payments or arrange shipping. Product information is researched from primary sources and dated; our editorial coverage does not imply hands-on testing.
+An English-and-Japanese editorial guide to craft jewelry from across Japan. Our current researched edit includes Hakone yosegi earrings and a pendant. We help readers compare documented materials, fittings, dimensions, maker information and retailer links, while clearly identifying details that still need confirmation. Our guides explain how to choose pierced earrings and clip-ons and what to ask before ordering from overseas. We do not sell products, process payments or arrange shipping. Product information is researched from primary sources and dated; our editorial coverage does not imply hands-on testing.
 
 ## BECOS英語版：条件確認と参加申請の草稿
 
 Hello BECOS Affiliate Team,
 
-I am preparing an English-language editorial site introducing Japanese craft accessories to international readers. Our initial focus is Kanagawa, with a structure that can expand to makers and craft traditions across Japan. Our guides connect readers with retailers; we do not take orders, payments or shipping requests.
+I publish an English-and-Japanese editorial site introducing craft jewelry and maker stories from across Japan to international and Japanese readers. Our guides connect readers with retailers; we do not take orders, payments or shipping requests.
 
-The initial nine product listings link to Hamamatsuya and Hakone Maruyama, rather than to BECOS. Those are ordinary links that do not earn us a commission. I am asking about eligibility for future BECOS-specific coverage; I will research suitable products individually before adding any approved affiliate links.
+The current eight jewelry listings link to Hamamatsuya and Hakone Maruyama, rather than to BECOS. Those are ordinary links that do not earn us a commission. I am asking about eligibility for future BECOS-specific coverage; I will research suitable products individually before adding any approved affiliate links.
 
 I found your English-language affiliate invitation and would like to confirm whether a Japan-resident individual publishing in English is eligible. Could you also clarify the current commission structure, attribution window, payment requirements, permitted promotional methods and whether product-specific deep links are available for the accessories we may feature?
 
@@ -26,9 +26,9 @@ Thank you for your guidance.
 
 Hello Millennium Gallery Japan Team,
 
-I am preparing an English-language editorial guide to Japanese craft accessories. Your collaboration page mentions ShareASale and SKIMLINKS. Could you confirm the current application route and whether a Japan-resident individual publisher is eligible? I understand that the ShareASale platform has closed, so I would appreciate the current network or direct contact procedure.
+I publish an English-and-Japanese editorial guide to Japanese craft jewelry. Your collaboration page mentions ShareASale and SKIMLINKS. Could you confirm the current application route and whether a Japan-resident individual publisher is eligible? I understand that the ShareASale platform has closed, so I would appreciate the current network or direct contact procedure.
 
-Our initial coverage concerns earrings and related accessories. Are there currently suitable accessory products in your affiliate program? If so, please share the applicable commission, attribution, payment, deep-link and image-licensing terms.
+Our current coverage concerns earrings and necklaces. Are there currently suitable jewelry products in your affiliate program? If so, please share the applicable commission, attribution, payment, deep-link and image-licensing terms.
 
 We will only consider a partnership where the products fit our editorial scope. We do not claim an existing partnership, traffic results or permission to reuse your photographs. This message is a request for information, not a claim that our site has been approved.
 

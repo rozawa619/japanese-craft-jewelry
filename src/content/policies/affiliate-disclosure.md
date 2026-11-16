@@ -7,7 +7,7 @@ updatedAt: "2026-11-16"
 sourceIds: []
 ---
 
-ITO introduces accessories sold by independent external retailers. We are not the seller and do not process orders, payments, shipping or returns.
+ITO introduces jewelry sold by independent external retailers. We are not the seller and do not process orders, payments, shipping or returns.
 
 ## What an affiliate link means
 

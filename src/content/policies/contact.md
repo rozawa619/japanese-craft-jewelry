@@ -17,4 +17,4 @@ Please contact the retailer directly about product availability, materials, paym
 
 ## Makers and retailers
 
-If you would like us to consider an accessory, provide its official product page, the maker and production location, published specifications and clear image-use terms. Sending a suggestion does not guarantee inclusion or create an affiliate relationship.
+If you would like us to consider a piece of jewelry, provide its official product page, the maker and production location, published specifications and clear image-use terms. Sending a suggestion does not guarantee inclusion or create an affiliate relationship.

@@ -1,22 +1,16 @@
-# 公開コンテンツ一覧
+# 公開コンテンツ一覧（0.2）
 
-確認日：2026-11-16。仕様の正本はsrc/data/catalog.json、根拠はdocs/research/sources.json。
+2026-11-16。全国の工芸ジュエリーを対象とし、現在は8商品を日英で紹介。事実と出典はcatalog/sources、訳文はtranslations/ja。
 
-| 商品 | 種別 | 参照価格 | 状態/産地 | 公式出典 |
-|---|---|---|---|---|
-| Hamamatsuya yosegi catch-back earrings | pierced-earrings | JPY 3500 / Catalog tax inclusion is unconfirmed. Check the final price, shipping and any import charges with the maker. | listed / kanagawa | [公式](https://www.hamamatsuya.co.jp/item/muku/accessory_2.html) |
-| Hamamatsuya yosegi non-pierced earrings | clip-on-earrings | JPY 2500 / Catalog tax inclusion is unconfirmed. Check the final price, shipping and any import charges with the maker. | listed / kanagawa | [公式](https://www.hamamatsuya.co.jp/item/muku/accessory_2.html) |
-| Hamamatsuya 18K yosegi earrings | pierced-earrings | JPY 4500 / Catalog tax inclusion is unconfirmed. Check the final price, shipping and any import charges with the maker. | out_of_stock / kanagawa | [公式](https://www.hamamatsuya.co.jp/item/muku/accessory_2.html) |
-| Hamamatsuya muku yosegi pendant | necklace | JPY 3500 / Catalog tax inclusion is unconfirmed. Check the final price, shipping and any import charges with the maker. | listed / kanagawa | [公式](https://www.hamamatsuya.co.jp/item/muku/accessory.html) |
-| Hamamatsuya yosegi kanzashi hairpin | hair-accessory | JPY 3300 / Catalog tax inclusion is unconfirmed. Check the final price, shipping and any import charges with the maker. | out_of_stock / kanagawa | [公式](https://www.hamamatsuya.co.jp/item/muku/accessory_2.html) |
-| Yosegi non-pierced earrings C | clip-on-earrings | JPY 2650 / Includes Japanese consumption tax in the retailer listing; shipping and import charges are additional. | listed / 製造地未確認 | [公式](https://www.hakonemaruyama.co.jp/shopdetail/000000000467/) |
-| Yosegi non-pierced earrings D | clip-on-earrings | JPY 2650 / Includes Japanese consumption tax in the retailer listing; shipping and import charges are additional. | listed / 製造地未確認 | [公式](https://www.hakonemaruyama.co.jp/shopdetail/000000000468/) |
-| Yosegi pierced earrings C | pierced-earrings | JPY 2650 / Includes Japanese consumption tax in the retailer listing; shipping and import charges are additional. | listed / 製造地未確認 | [公式](https://www.hakonemaruyama.co.jp/shopdetail/000000000473/) |
-| Yosegi pierced earrings D | pierced-earrings | JPY 2650 / Includes Japanese consumption tax in the retailer listing; shipping and import charges are additional. | listed / 製造地未確認 | [公式](https://www.hakonemaruyama.co.jp/shopdetail/000000000474/) |
+| 商品 | 種類 | 確認価格 | 英語 / 日本語 |
+|---|---|---|---|
+| 浜松屋 寄木キャッチ付ピアス | pierced-earrings | JPY 3500（2026-11-16確認） | [EN](https://rozawa619.github.io/ito-craft/en/objects/hamamatsuya-surgical-stainless-pierced-earrings/) / [JA](https://rozawa619.github.io/ito-craft/ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/) |
+| 浜松屋 寄木イヤリング | clip-on-earrings | JPY 2500（2026-11-16確認） | [EN](https://rozawa619.github.io/ito-craft/en/objects/hamamatsuya-yosegi-non-pierced-earrings/) / [JA](https://rozawa619.github.io/ito-craft/ja/objects/hamamatsuya-yosegi-non-pierced-earrings/) |
+| 浜松屋 18K表記の寄木ピアス | pierced-earrings | JPY 4500（2026-11-16確認） | [EN](https://rozawa619.github.io/ito-craft/en/objects/hamamatsuya-18k-yosegi-earrings/) / [JA](https://rozawa619.github.io/ito-craft/ja/objects/hamamatsuya-18k-yosegi-earrings/) |
+| 浜松屋 無垢寄木ペンダント | necklace | JPY 3500（2026-11-16確認） | [EN](https://rozawa619.github.io/ito-craft/en/objects/hamamatsuya-muku-yosegi-pendant/) / [JA](https://rozawa619.github.io/ito-craft/ja/objects/hamamatsuya-muku-yosegi-pendant/) |
+| 寄木イヤリング C | clip-on-earrings | JPY 2650（2026-11-16確認） | [EN](https://rozawa619.github.io/ito-craft/en/objects/maruyama-yosegi-non-pierced-c/) / [JA](https://rozawa619.github.io/ito-craft/ja/objects/maruyama-yosegi-non-pierced-c/) |
+| 寄木イヤリング D | clip-on-earrings | JPY 2650（2026-11-16確認） | [EN](https://rozawa619.github.io/ito-craft/en/objects/maruyama-yosegi-non-pierced-d/) / [JA](https://rozawa619.github.io/ito-craft/ja/objects/maruyama-yosegi-non-pierced-d/) |
+| 寄木ピアス C | pierced-earrings | JPY 2650（2026-11-16確認） | [EN](https://rozawa619.github.io/ito-craft/en/objects/maruyama-yosegi-pierced-c/) / [JA](https://rozawa619.github.io/ito-craft/ja/objects/maruyama-yosegi-pierced-c/) |
+| 寄木ピアス D | pierced-earrings | JPY 2650（2026-11-16確認） | [EN](https://rozawa619.github.io/ito-craft/en/objects/maruyama-yosegi-pierced-d/) / [JA](https://rozawa619.github.io/ito-craft/ja/objects/maruyama-yosegi-pierced-d/) |
 
-## 独自ガイド
-
-- Buying Japanese craft accessories from overseas（/en/journal/buying-from-overseas/）
-- Choosing craft earrings for everyday wear（/en/journal/everyday-craft-earrings/）
-- Pierced or clip-on? Check the fastening first（/en/journal/pierced-or-clip-on/）
-- Reading the detail in Hakone yosegi（/en/journal/understanding-yosegi/）
+かんざしの調査データは履歴として保持し、ジュエリー特化に伴い下書きへ移行。ガイド4、運営方針5、地域記事1、技法記事1と商品本文8を両言語で用意。地域の入口は/en/places/と/ja/places/。空の都道府県は公開しない。

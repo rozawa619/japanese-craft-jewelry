@@ -1,0 +1,13 @@
+---
+import {render} from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import ProductCard from '../../../components/ProductCard.astro';
+import Sources from '../../../components/Sources.astro';
+import Disclosure from '../../../components/Disclosure.astro';
+import {productsFor} from '../../../lib/catalog';
+import {contentFor,contentSlug} from '../../../lib/content';
+import {locales,t} from '../../../lib/i18n';
+export async function getStaticPaths(){const paths=[];for(const locale of locales){for(const note of await contentFor('craftNotes',locale)){if(note.body?.trim()&&productsFor(locale).some(p=>p.craftIds.includes(note.data.craftId)))paths.push({params:{lang:locale,craft:contentSlug(note)},props:{note,locale}})}}return paths}
+const {note,locale}=Astro.props;const {Content}=await render(note);const items=productsFor(locale).filter(p=>p.craftIds.includes(note.data.craftId));
+---
+<Base title={note.data.title} description={note.data.description} locale={locale}><div class="wrap page-bottom"><header class="page-heading"><p class="eyebrow">{t(locale,'THE CRAFT NOTES','技法を知る')}</p><h1>{note.data.title}</h1><p>{note.data.description}</p></header><div class="article-wrap prose"><Content/></div><Disclosure productIds={items.map(p=>p.id)} locale={locale}/><div class="product-grid">{items.map((p,i)=><ProductCard product={p} index={i} locale={locale}/>)}</div><div class="related"><Sources sourceIds={note.data.sourceIds} locale={locale}/></div></div></Base>

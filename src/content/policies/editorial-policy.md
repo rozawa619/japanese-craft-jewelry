@@ -1,25 +1,25 @@
 ---
 title: "Editorial policy"
-description: "How we select accessories, distinguish facts from suggestions and keep uncertainty visible."
+description: "How we select jewelry, distinguish facts from suggestions and keep uncertainty visible."
 locale: "en"
 publishStatus: "published"
 updatedAt: "2026-11-16"
 sourceIds: []
 ---
 
-ITO selects accessories for a documented connection to a craft technique, a useful design story and enough primary information to introduce them accurately. Our initial focus is Kanagawa. Inclusion is an editorial choice, not a rating, certification or promise that an item suits everyone.
+ITO selects jewelry for a documented connection to a craft technique, a useful design story and enough primary information to introduce them accurately. Our scope is Japan. Current research includes yosegi pieces connected to Kanagawa, and we add regions when the evidence and editorial coverage are ready. Inclusion is an editorial choice, not a rating, certification or promise that an item suits everyone.
 
 ## Evidence before claims
 
 We use maker and retailer pages for product specifications and appropriate official sources for craft context. Product pages identify sources and a verification date. Prices and availability are observations at that date, not live guarantees. We mark unpublished or unresolved details as unconfirmed.
 
-We keep the maker, seller and place of production separate. General information about a technique does not establish the wood species, metal composition, certification or production location of an individual accessory.
+We keep the maker, seller and place of production separate. General information about a technique does not establish the wood species, metal composition, certification or production location of an individual piece.
 
 ## Research and editorial judgment
 
 Our launch collection is researched from published information. We have not purchased, worn, measured or compared the products in physical tests. We do not invent customer reviews, personal experiences, professional qualifications or visits to workshops.
 
-Styling suggestions explain possible ways to choose or combine an accessory. They are editorial ideas, not findings about comfort or performance. We do not infer low weight, environmental benefits, labor conditions or safety for sensitive skin from a material name or craft origin.
+Styling suggestions explain possible ways to choose or combine a piece of jewelry. They are editorial ideas, not findings about comfort or performance. We do not infer low weight, environmental benefits, labor conditions or safety for sensitive skin from a material name or craft origin.
 
 ## Images and independence
 

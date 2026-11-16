@@ -2,4 +2,4 @@
 import Base from '../layouts/Base.astro';
 import {pagePath} from '../config/site';
 ---
-<Base title="A different path" noindex><div class="wrap page-heading page-bottom"><p class="eyebrow">404 / PAGE NOT FOUND</p><h1>This path ends here.<br/><em>Your discovery doesn’t.</em></h1><p>The page may have moved. Find your way back to the object index.</p><a class="button" href={pagePath('objects/')}>Explore the objects →</a></div></Base>
+<Base title="Page not found · ページが見つかりません" noindex><div class="wrap page-heading page-bottom"><p class="eyebrow">404 / PAGE NOT FOUND</p><h1>A different path.<br/><em lang="ja">別のページを探しましょう。</em></h1><p>The page may have moved. <span lang="ja">ページが移動したか、見つかりませんでした。</span></p><div class="error-language-links"><a class="button" href={pagePath('objects/','en')}>Explore the jewelry →</a><a class="button" href={pagePath('objects/','ja')} lang="ja">ジュエリーを見る →</a></div></div></Base>

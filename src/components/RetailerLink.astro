@@ -1,10 +1,13 @@
 ---
-import { catalog, resolve } from '../lib/catalog';
-const {productId,compact=false}=Astro.props;
+import {catalog,catalogFor,resolve} from '../lib/catalog';
+import {t,type Locale} from '../lib/i18n';
+interface Props {productId:string;compact?:boolean;locale?:Locale}
+const {productId,compact=false,locale='en'}=Astro.props;
 const links=catalog.links.filter(l=>l.productId===productId);
+const localCatalog=catalogFor(locale);
 ---
-{links.map(link => {
+{links.map(link=>{
  const result=resolve(link);
- const merchant=catalog.merchants.find(m=>m.id===link.merchantId);
- return result && <a class:list={['retailer-link',{compact}]} href={result.href} rel={result.rel} target="_blank" data-sponsored={String(result.sponsored)}>{link.merchantId==='hamamatsuya' ? "View maker’s catalog" : 'View at retailer'} <span aria-hidden="true">↗</span><span class="sr-only"> — {merchant?.name}, opens in a new tab{result.sponsored ? ', affiliate link' : ''}</span></a>
+ const merchant=localCatalog.merchants.find(m=>m.id===link.merchantId);
+ return result&&<a class:list={['retailer-link',{compact}]} href={result.href} rel={result.rel} target="_blank" data-sponsored={String(result.sponsored)}>{link.merchantId==='hamamatsuya'?t(locale,'View maker’s catalog','工房のカタログへ'):t(locale,'View at retailer','販売店で見る')} <span aria-hidden="true">↗</span><span class="sr-only"> — {merchant?.name}{t(locale,', opens in a new tab','、新しいタブで開きます')}{result.sponsored?t(locale,', affiliate link','、アフィリエイトリンク'):''}</span></a>
 })}

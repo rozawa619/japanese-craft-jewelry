@@ -45,7 +45,7 @@ for (const file of files) {
   const tokenSource = html.replace(/<!--[\s\S]*?-->/g, '').replace(/(<script\b(?:"[^"]*"|'[^']*'|[^'">])*>)[\s\S]*?<\/script\s*>/gi, '$1</script>');
   const tags = [...tokenSource.matchAll(/<([a-z][\w:-]*)\b((?:"[^"]*"|'[^']*'|[^'">])*)>/gi)].map(match => ({ name: match[1].toLowerCase(), attrs: attributes(match[2]), index: match.index }));
   const ids = new Set(tags.flatMap(tag => tag.attrs.id ? [tag.attrs.id] : tag.name === 'a' && tag.attrs.name ? [tag.attrs.name] : []));
-  pages.set(file, { html, tags, ids });
+  pages.set(file, { html, tokenSource, tags, ids });
 }
 function requestPath(file) {
   let route = relative(dist, file).replaceAll(sep, '/');
@@ -75,7 +75,7 @@ const expectedRetailerLinks = new Set(catalog.links.flatMap(link => {
   return result ? [`${result.sponsored}|${result.href}`] : [];
 }));
 for (const [file, page] of pages) {
-  const { tags, html } = page;
+  const { tags, html, tokenSource } = page;
   const getMeta = (attribute, value) => tags.find(tag => tag.name === 'meta' && tag.attrs[attribute]?.toLowerCase() === value)?.attrs.content || '';
   if (!tags.find(tag => tag.name === 'html')?.attrs.lang) fail(file, 'missing document language');
   if (!/<title\b[^>]*>\s*[^<]+<\/title>/i.test(html)) fail(file, 'missing nonempty title');
@@ -84,6 +84,23 @@ for (const [file, page] of pages) {
     if (!getMeta('name', 'description').trim()) fail(file, 'missing description');
     const h1Count = tags.filter(tag => tag.name === 'h1').length;
     if (h1Count !== 1) fail(file, `expected one h1, found ${h1Count}`);
+  }
+  const routePath=requestPath(file);
+  const localeMatch=routePath.slice(base.length).match(/^(en|ja)\//);
+  if(localeMatch&&!redirect){
+    const locale=localeMatch[1],peer=locale==='en'?'ja':'en';
+    const expectedPeer=base+peer+'/'+routePath.slice(base.length+locale.length+1);
+    if(tags.find(tag=>tag.name==='html')?.attrs.lang!==locale)fail(file,'html lang does not match route locale');
+    const switches=tags.filter(tag=>tag.name==='a'&&(tag.attrs.class||'').split(/\s+/).includes('language-switch'));
+    if(switches.length!==1)fail(file,'expected one persistent language switch');
+    else{const target=internalTarget(file,switches[0].attrs.href);if(!target||new URL(switches[0].attrs.href,origin+routePath).pathname!==expectedPeer)fail(file,'language switch does not target matching translated page');}
+    if(publicMode){
+      for(const alternateLocale of ['en','ja']){
+        const expected=routePath.replace('/'+locale+'/','/'+alternateLocale+'/');
+        const alternate=tags.find(tag=>tag.name==='link'&&(tag.attrs.rel||'').split(/\s+/).includes('alternate')&&tag.attrs.hreflang===alternateLocale);
+        if(!alternate||alternate.attrs.href!==origin+expected)fail(file,'missing correct '+alternateLocale+' hreflang alternate');
+      }
+    }
   }
   const canonical = tags.filter(tag => tag.name === 'link' && (tag.attrs.rel || '').split(/\s+/).includes('canonical'));
   const robots = getMeta('name', 'robots');
@@ -103,7 +120,7 @@ for (const [file, page] of pages) {
   if (renderedSponsored.length) {
     const disclosure = disclosureTags.find(tag => tag.attrs['data-disclosure'] === 'affiliate' && tag.index < renderedSponsored[0].index);
     if (!disclosure) fail(file, 'affiliate disclosure is missing before the first sponsored link');
-    else if (!/commission/i.test(html.slice(disclosure.index, html.indexOf('</aside>', disclosure.index)))) fail(file, 'disclosure does not explain the commission relationship');
+    else if (!/commission|報酬|コミッション/i.test(tokenSource.slice(disclosure.index, tokenSource.indexOf('</aside>', disclosure.index)))) fail(file, 'disclosure does not explain the commission relationship');
   } else if (disclosureTags.some(tag => tag.attrs['data-disclosure'] === 'affiliate')) fail(file, 'affiliate disclosure appears without a sponsored link');
   if (renderedSponsored.length && disclosureTags.some(tag => tag.attrs['data-disclosure'] === 'ordinary')) fail(file, 'ordinary-link disclosure contradicts sponsored links');
   for (const tag of tags) {
@@ -153,22 +170,26 @@ const robotsFile = resolve(dist, 'robots.txt');
 if (!existsSync(robotsFile)) errors.push('Missing robots.txt.');
 else if (!publicMode && !/^Disallow:\s*\/\s*$/im.test(readFileSync(robotsFile, 'utf8'))) errors.push('Preview robots.txt must disallow all crawling.');
 for (const product of catalog.products) {
-  const output = resolve(dist, `en/objects/${product.slug}/index.html`);
-  if (product.publishStatus === 'draft') {
-    if (existsSync(output)) fail(output, 'draft product generated a public page');
-    for (const [file, page] of pages) if (page.html.includes(`/objects/${product.slug}/`)) fail(file, `draft product leaked into markup: ${product.id}`);
-  } else if (!existsSync(output)) errors.push(`Missing published product page: ${product.slug}`);
-}
-for (const [directory, route] of [['guides', 'en/journal'], ['policies', 'en']]) {
-  const directoryPath = resolve(root, 'src/content', directory);
-  for (const file of walk(directoryPath).filter(file => file.endsWith('.md'))) {
-    const body = readFileSync(file, 'utf8');
-    const frontmatter = body.match(/^---\r?\n([\s\S]*?)\r?\n---/);
-    if (!frontmatter || !/^publishStatus:\s*["']?draft["']?\s*$/m.test(frontmatter[1])) continue;
-    const slug = relative(directoryPath, file).replaceAll(sep, '/').replace(/\.md$/, '');
-    if (existsSync(resolve(dist, `${route}/${slug}/index.html`))) errors.push(`Draft ${directory} page was generated: ${slug}`);
-    for (const [output, page] of pages) if (page.html.includes(`/${route}/${slug}/`)) fail(output, `draft ${directory} route leaked: ${slug}`);
+  for(const locale of ['en','ja']){
+    const output=resolve(dist,`${locale}/objects/${product.slug}/index.html`);
+    if(product.publishStatus==='draft'){
+      if(existsSync(output))fail(output,'draft product generated a public page');
+      for(const [file,page] of pages)if(page.html.includes(`/objects/${product.slug}/`))fail(file,`draft product leaked into markup: ${product.id}`);
+    }else if(!existsSync(output))errors.push(`Missing published ${locale} product page: ${product.slug}`);
   }
+}
+for(const [directory,section]of [['guides','journal'],['policies',''],['places','places'],['crafts','crafts']]){
+ const directoryPath=resolve(root,'src/content',directory);
+ for(const file of walk(directoryPath).filter(file=>file.endsWith('.md'))){
+  const body=readFileSync(file,'utf8'),fm=body.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+  if(!fm||!/^publishStatus:\s*["']?draft["']?\s*$/m.test(fm[1]))continue;
+  const local=relative(directoryPath,file).replaceAll(sep,'/');
+  const locale=/^locale:\s*["']?ja["']?\s*$/m.test(fm[1])?'ja':'en';
+  const slug=local.replace(/^ja\//,'').replace(/\.md$/,'');
+  const route=`${locale}/${section?section+'/':''}${slug}/`;
+  if(existsSync(resolve(dist,route,'index.html')))errors.push(`Draft ${directory} page generated: ${route}`);
+  for(const [output,page]of pages)if(page.html.includes('/'+route))fail(output,`draft ${directory} route leaked: ${route}`);
+ }
 }
 if (errors.length) {
   for (const error of errors) console.error(`FAIL ${error}`);

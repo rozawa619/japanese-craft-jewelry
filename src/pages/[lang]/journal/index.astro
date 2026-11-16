@@ -1,0 +1,9 @@
+---
+import Base from '../../../layouts/Base.astro';
+import GuideCard from '../../../components/GuideCard.astro';
+import {contentFor} from '../../../lib/content';
+import {locales,t} from '../../../lib/i18n';
+export function getStaticPaths(){return locales.map(lang=>({params:{lang},props:{locale:lang}}))}
+const {locale}=Astro.props;const guides=await contentFor('guides',locale);
+---
+<Base title={t(locale,'The journal','読みもの')} description={t(locale,'Practical field notes on choosing Japanese craft jewelry, understanding techniques, and buying from overseas.','工芸ジュエリーの選び方、技法、購入前の確認点をまとめた読みものです。')} locale={locale}><div class="wrap page-bottom"><header class="page-heading"><p class="eyebrow">{t(locale,'THE JOURNAL','読みもの')}</p><h1>{t(locale,'Look a little closer.','知るほどに、出会いがある。')}</h1><p>{t(locale,'Practical notes on choosing, understanding and buying Japanese craft jewelry. Start with the questions that matter to you.','選ぶ、知る、購入前に確かめる。日本の工芸ジュエリーについて、気になることから読み進めてください。')}</p></header><div class="guide-grid">{guides.map((g,i)=><GuideCard guide={g} index={i} locale={locale}/>)}</div></div></Base>

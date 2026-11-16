@@ -1,19 +1,21 @@
 ---
 import {pagePath} from '../config/site';
 import {makerFor,labels,price} from '../lib/catalog';
+import {t,type Locale} from '../lib/i18n';
 import type {Product} from '../lib/schema';
 import Pattern from './Pattern.astro';
 import RetailerLink from './RetailerLink.astro';
-interface Props { product:Product; index?:number }
-const {product:p,index=0}=Astro.props;
+interface Props { product:Product; index?:number; locale?:Locale }
+const {product:p,index=0,locale='en'}=Astro.props;
+const detail=pagePath(`objects/${p.slug}/`,locale);
 ---
 <article class="product-card" data-product-card data-type={p.productType.join(' ')} data-prefecture={p.prefectureIds.join(' ')} data-material={p.materialIds.join(' ')} data-craft={p.craftIds.join(' ')}>
- <a class="card-art-link" href={pagePath(`objects/${p.slug}/`)} aria-label={`Read about ${p.title}`}><Pattern variant={index}/><span class="card-number">{String(index+1).padStart(2,'0')}</span></a>
- <div class="card-meta">{labels('productTypes',p.productType)} <span>•</span> {p.prefectureIds.length?labels('prefectures',p.prefectureIds)+' workshop':'Origin unconfirmed'}</div>
- <h3><a href={pagePath(`objects/${p.slug}/`)}>{p.title}</a></h3>
- <p class="maker-name">{makerFor(p).name}</p>
+ <a class="card-art-link" href={detail} aria-label={t(locale,`Read about ${p.title}`,`${p.title}の紹介を読む`)}><Pattern variant={index} locale={locale}/><span class="card-number">{String(index+1).padStart(2,'0')}</span></a>
+ <div class="card-meta">{labels('productTypes',p.productType,locale)} <span>•</span> {p.prefectureIds.length?labels('prefectures',p.prefectureIds,locale)+t(locale,' workshop','の工房に関連'):t(locale,'Origin unconfirmed','製造地は未確認')}</div>
+ <h3><a href={detail}>{p.title}</a></h3>
+ <p class="maker-name">{makerFor(p,locale).name}</p>
  <p class="card-summary">{p.editorialSummary}</p>
- <div class="card-price"><span>{price(p)}</span><small>{p.availability==='out_of_stock'?'Sold out when checked':`Checked ${p.priceCheckedAt}`}</small></div>
+ <div class="card-price"><span>{price(p,locale)}</span><small>{p.availability==='out_of_stock'?t(locale,'Sold out when checked','確認時点で欠品') : t(locale,`Checked ${p.priceCheckedAt}`,`${p.priceCheckedAt}確認`)}</small></div>
  <p class="price-note" style="margin:7px 0 0">{p.taxNote}</p>
- <div class="card-actions"><a class="text-link" href={pagePath(`objects/${p.slug}/`)}>Explore the details <span aria-hidden="true">→</span></a><RetailerLink productId={p.id} compact/></div>
+ <div class="card-actions"><a class="text-link" href={detail}>{t(locale,'Explore the details','詳しく見る')} <span aria-hidden="true">→</span></a><RetailerLink productId={p.id} compact locale={locale}/></div>
 </article>

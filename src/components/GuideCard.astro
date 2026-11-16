@@ -1,8 +1,9 @@
 ---
 import {pagePath} from '../config/site';
-const {guide,index=0}=Astro.props;
+import {t,contentSlug,type Locale} from '../lib/i18n';
+const {guide,index=0,locale='en' as Locale}=Astro.props;
 ---
-<a class="guide-card" href={pagePath(`journal/${guide.id}/`)}>
+<a class="guide-card" href={pagePath(`journal/${contentSlug(guide)}/`,locale)}>
  <div class="guide-card-top"><span class="eyebrow">{guide.data.category}</span><span class="guide-index">0{index+1}</span></div>
- <h3>{guide.data.title}</h3><p>{guide.data.description}</p><span class="text-link">{guide.data.readMinutes} min read <span aria-hidden="true">↗</span></span>
+ <h3>{guide.data.title}</h3><p>{guide.data.description}</p><span class="text-link">{t(locale,`${guide.data.readMinutes} min read`,`約${guide.data.readMinutes}分で読めます`)} <span aria-hidden="true">↗</span></span>
 </a>

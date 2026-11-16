@@ -43,3 +43,7 @@ axeは自動検査の範囲。スクリーンリーダー全製品・実機全�
 ## GitHub実公開の確認
 
 https://rozawa619.github.io/ito-craft/en/ — HTTP200、noindex。Actions run 43821352419がsuccess（commit6973e2e）。GitHub側でもpnpm verifyが通過。hosted18/18、8画面、内部30URL、404/CSS/JS/Contact/フィルター/robots/sitemapを確認。最終JPYと税区分は390/320幅でHTTP200、はみ出しなし。
+
+## 0.2 ジュエリー特化・日英・全国の入口（2026-11-16）
+
+仕様: specs/002-jewelry-bilingual。公開8ジュエリー、両言語52HTML。型0/0/0、33テスト、2102href/src・51アンカー・158通常リンクPASS。日本語19本文と表示データ、全国の産地一覧、同ページquery/hashを保つ単一切替。記事内Markdown表をスマホ内の横スクロールにし、キーボードfocus/aria-labelも付与。広告4fixtureで両言語の開示/停止/publicを確認。画面最終結果はbilingual-results.json、公開結果はdeployment-results.json。初期版の記録は履歴として上に保持。

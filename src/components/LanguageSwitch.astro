@@ -1,0 +1,13 @@
+---
+import {localizedPath} from '../config/site';
+import type {Locale} from '../lib/i18n';
+interface Props{locale:Locale}
+const {locale}=Astro.props;
+const target:Locale=locale==='en'?'ja':'en';
+---
+<a class="language-switch" href={localizedPath(Astro.url.pathname,target)} hreflang={target} lang={target} aria-label={locale==='en'?'Switch to Japanese':'英語に切り替える'}><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg><span>{target==='ja'?'日本語':'English'}</span></a>
+<script>
+document.querySelectorAll<HTMLAnchorElement>('.language-switch').forEach(link=>link.addEventListener('click',()=>{
+ const destination=new URL(link.href);destination.search=location.search;destination.hash=location.hash;link.href=destination.href;
+}));
+</script>

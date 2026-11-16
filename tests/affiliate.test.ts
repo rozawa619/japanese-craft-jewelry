@@ -116,9 +116,8 @@ test('published region and craft pages need content and a published matching pro
   data.catalog.products.forEach(product => { product.publishStatus = 'draft'; });
   const errors = collectValidationErrors(data);
   assert.equal(errors.filter(error => error.includes('published page requires a nonempty body')).length, 2);
-  assert.equal(errors.filter(error => error.includes('published page requires a related published product')).length, 2);
-  data.places[0].metadata.publishStatus = 'draft';
-  data.craftNotes[0].metadata.publishStatus = 'draft';
+  assert.equal(errors.filter(error => error.includes('published page requires a related published product')).length, data.places.length + data.craftNotes.length);
+  for (const record of [...data.places, ...data.craftNotes]) record.metadata.publishStatus = 'draft';
   const draftErrors = collectValidationErrors(data);
   assert.equal(draftErrors.some(error => error.includes('published page requires')), false);
 });
@@ -134,4 +133,43 @@ test('technical readiness requires an explicit public mode and a contact configu
   assert.deepEqual(checkReadiness(env).blockers, []);
   assert.ok(checkReadiness({ ...env, PUBLIC_PUBLISH_MODE: 'preview' }).blockers.some(message => message.includes('PUBLIC_PUBLISH_MODE')));
   assert.ok(checkReadiness({ ...env, PUBLIC_REPOSITORY_URL: '' }).blockers.some(message => message.includes('Contact')));
+});
+
+
+test('published jewelry requires Japanese content and preserves shared factual fields', () => {
+ const data=structuredClone(loadProjectData());
+ const product=data.catalog.products.find(product=>product.publishStatus==='published')!;
+ delete data.translations.products[product.id];
+ data.notes=data.notes.filter(note=>!(note.metadata.productId===product.id&&note.metadata.locale==='ja'));
+ const errors=collectValidationErrors(data);
+ assert.ok(errors.some(error=>error.includes('Japanese product translation required')));
+ assert.ok(errors.some(error=>error.includes('published product note required for ja')));
+});
+
+test('Japanese presentation cannot duplicate price facts or fill unknown hardware', () => {
+ const data=structuredClone(loadProjectData());
+ const product=data.catalog.products.find(product=>product.publishStatus==='published'&&product.findings===null)!;
+ data.translations.products[product.id].priceAmount=1;
+ data.translations.products[product.id].findings='invented metal';
+ const errors=collectValidationErrors(data);
+ assert.ok(errors.some(error=>error.includes('factual or unsupported field priceAmount')));
+ assert.ok(errors.some(error=>error.includes('unknown findings must remain null')));
+});
+
+test('published English and Japanese pages need matching peers and source references', () => {
+ const data=structuredClone(loadProjectData());
+ const ja=data.guides.find(guide=>guide.metadata.locale==='ja')!;
+ ja.metadata.sourceIds=[];
+ assert.ok(collectValidationErrors(data).some(error=>error.includes('bilingual sourceIds references must agree')));
+ data.guides=data.guides.filter(guide=>guide!==ja);
+ assert.ok(collectValidationErrors(data).some(error=>error.includes('published bilingual peer required')));
+});
+
+test('hair accessories stay out of the published jewelry catalog', () => {
+ const data=structuredClone(loadProjectData());
+ const hair=data.catalog.products.find(product=>product.productType.includes('hair-accessory'));
+ assert.ok(hair);
+ assert.equal(hair.publishStatus,'draft');
+ hair.publishStatus='published';
+ assert.ok(collectValidationErrors(data).some(error=>error.includes('published product must be jewelry')));
 });
