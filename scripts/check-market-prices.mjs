@@ -9,7 +9,7 @@ import {fileURLToPath} from 'node:url';
 const root=fileURLToPath(new URL('../',import.meta.url));
 if(existsSync(resolve(root,'.env')))process.loadEnvFile(resolve(root,'.env'));
 const origin=new URL(process.env.CHECK_BASE_URL||'http://127.0.0.1:4321').origin;
-const baseParts=(process.env.PUBLIC_BASE_PATH||'/japanese-craft-jewelry/').split('/').filter(Boolean);
+const baseParts=(process.env.PUBLIC_BASE_PATH||'/').split('/').filter(Boolean);
 const base='/'+baseParts.join('/')+(baseParts.length?'/':'');
 const reportPath=process.env.CHECK_REPORT_PATH||'docs/market-stage-browser-results.json';
 const screenshotPrefix=(process.env.CHECK_SCREENSHOT_PREFIX||'market-stage').replace(/[^a-zA-Z0-9_-]/g,'-');

@@ -1,0 +1,1617 @@
+{
+  "checkedAt": "2026-11-16T12:59:14.082Z",
+  "origin": "https://rozawa619.github.io",
+  "base": "/japanese-craft-jewelry/",
+  "method": "Focused market-price verification against raw researched catalog values. English and Japanese at 1440, 390 and 320 px; all current dual-market products plus unknown and JPY-only examples. Checks visible price/currency/date, price-to-store destination pairing, sticky purchase meaning, language roundtrip, all product cards, the earrings comparison, Tokyo regional cards, representatives and the home hero. Also checks overflow and runs 18 accessibility scans with every axe rule enabled. Does not use the UI price helper to generate expected figures, open merchant checkouts, claim physical shelf prices, or perform currency conversion.",
+  "checks": [
+    {
+      "name": "desktop en home market prices",
+      "status": "passed",
+      "detail": {
+        "representatives": 12,
+        "heroProduct": "morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop en all product cards keep Japan market pricing",
+      "status": "passed",
+      "detail": {
+        "cards": 30,
+        "comparisonRows": 20,
+        "regionalRoute": "places/tokyo/",
+        "regionalCards": 2
+      }
+    },
+    {
+      "name": "desktop en detail rinzen-seika-amber-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 26,400",
+          "amount": 26400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 288",
+          "amount": 288,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-028"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-seika-amber-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop en detail six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 9,900",
+          "amount": 9900,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 108",
+          "amount": 108,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-018"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-half-moon-earrings"
+      }
+    },
+    {
+      "name": "desktop en detail rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 27,500",
+          "amount": 27500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 300",
+          "amount": 300,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-099"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-leaf-glass-pendant"
+      }
+    },
+    {
+      "name": "desktop en detail six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 6,600",
+          "amount": 6600,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 72",
+          "amount": 72,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-016"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-blue-bouquet-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop en detail saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 29,700",
+          "amount": 29700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 324",
+          "amount": 324,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0007-054"
+        ],
+        "storeAnchor": "#official-and-visit-saskia-diez-drake-porcelain-cuff"
+      }
+    },
+    {
+      "name": "desktop en detail checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 16,500",
+          "amount": 16500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 180",
+          "amount": 180,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0050-015"
+        ],
+        "storeAnchor": "#official-and-visit-checos-japanese-apricot-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop en detail morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 4,620",
+          "amount": 4620,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 50.40",
+          "amount": 50.4,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0124-032"
+        ],
+        "storeAnchor": "#official-and-visit-morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop en detail kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 15,400",
+          "amount": 15400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 168",
+          "amount": 168,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-093"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-drop-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop en detail kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 7,700",
+          "amount": 7700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 84",
+          "amount": 84,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-044"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-round-ring"
+      }
+    },
+    {
+      "name": "desktop en detail cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "Price not confirmed",
+          "unknown": true
+        },
+        "international": null,
+        "domestic": [
+          "https://www.co-coon.info/gallery"
+        ],
+        "storeAnchor": "#official-and-visit-cocoon-ori-nonhole-earrings"
+      }
+    },
+    {
+      "name": "desktop en detail hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 3,500",
+          "amount": 3500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": null,
+        "domestic": [
+          "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html"
+        ],
+        "storeAnchor": "#official-and-visit-hamamatsuya-catch-pierced"
+      }
+    },
+    {
+      "name": "desktop ja home market prices",
+      "status": "passed",
+      "detail": {
+        "representatives": 12,
+        "heroProduct": "morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop ja all product cards keep Japan market pricing",
+      "status": "passed",
+      "detail": {
+        "cards": 30,
+        "comparisonRows": 20,
+        "regionalRoute": "places/tokyo/",
+        "regionalCards": 2
+      }
+    },
+    {
+      "name": "desktop ja detail rinzen-seika-amber-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 26,400",
+          "amount": 26400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 288",
+          "amount": 288,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-028"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-seika-amber-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop ja detail six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 9,900",
+          "amount": 9900,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 108",
+          "amount": 108,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-018"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-half-moon-earrings"
+      }
+    },
+    {
+      "name": "desktop ja detail rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 27,500",
+          "amount": 27500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 300",
+          "amount": 300,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-099"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-leaf-glass-pendant"
+      }
+    },
+    {
+      "name": "desktop ja detail six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 6,600",
+          "amount": 6600,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 72",
+          "amount": 72,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-016"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-blue-bouquet-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop ja detail saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 29,700",
+          "amount": 29700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 324",
+          "amount": 324,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0007-054"
+        ],
+        "storeAnchor": "#official-and-visit-saskia-diez-drake-porcelain-cuff"
+      }
+    },
+    {
+      "name": "desktop ja detail checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 16,500",
+          "amount": 16500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 180",
+          "amount": 180,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0050-015"
+        ],
+        "storeAnchor": "#official-and-visit-checos-japanese-apricot-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop ja detail morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 4,620",
+          "amount": 4620,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 50.40",
+          "amount": 50.4,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0124-032"
+        ],
+        "storeAnchor": "#official-and-visit-morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop ja detail kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 15,400",
+          "amount": 15400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 168",
+          "amount": 168,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-093"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-drop-pierced-earrings"
+      }
+    },
+    {
+      "name": "desktop ja detail kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 7,700",
+          "amount": 7700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 84",
+          "amount": 84,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-044"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-round-ring"
+      }
+    },
+    {
+      "name": "desktop ja detail cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "価格は未確認",
+          "unknown": true
+        },
+        "international": null,
+        "domestic": [
+          "https://www.co-coon.info/gallery"
+        ],
+        "storeAnchor": "#official-and-visit-cocoon-ori-nonhole-earrings"
+      }
+    },
+    {
+      "name": "desktop ja detail hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 3,500",
+          "amount": 3500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": null,
+        "domestic": [
+          "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html"
+        ],
+        "storeAnchor": "#official-and-visit-hamamatsuya-catch-pierced"
+      }
+    },
+    {
+      "name": "mobile en home market prices",
+      "status": "passed",
+      "detail": {
+        "representatives": 12,
+        "heroProduct": "morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile en all product cards keep Japan market pricing",
+      "status": "passed",
+      "detail": {
+        "cards": 30,
+        "comparisonRows": 20,
+        "regionalRoute": "places/tokyo/",
+        "regionalCards": 2
+      }
+    },
+    {
+      "name": "mobile en detail rinzen-seika-amber-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 26,400",
+          "amount": 26400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 288",
+          "amount": 288,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-028"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-seika-amber-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile en detail six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 9,900",
+          "amount": 9900,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 108",
+          "amount": 108,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-018"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-half-moon-earrings"
+      }
+    },
+    {
+      "name": "mobile en detail rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 27,500",
+          "amount": 27500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 300",
+          "amount": 300,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-099"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-leaf-glass-pendant"
+      }
+    },
+    {
+      "name": "mobile en detail six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 6,600",
+          "amount": 6600,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 72",
+          "amount": 72,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-016"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-blue-bouquet-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile en detail saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 29,700",
+          "amount": 29700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 324",
+          "amount": 324,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0007-054"
+        ],
+        "storeAnchor": "#official-and-visit-saskia-diez-drake-porcelain-cuff"
+      }
+    },
+    {
+      "name": "mobile en detail checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 16,500",
+          "amount": 16500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 180",
+          "amount": 180,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0050-015"
+        ],
+        "storeAnchor": "#official-and-visit-checos-japanese-apricot-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile en detail morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 4,620",
+          "amount": 4620,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 50.40",
+          "amount": 50.4,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0124-032"
+        ],
+        "storeAnchor": "#official-and-visit-morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile en detail kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 15,400",
+          "amount": 15400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 168",
+          "amount": 168,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-093"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-drop-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile en detail kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 7,700",
+          "amount": 7700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 84",
+          "amount": 84,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-044"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-round-ring"
+      }
+    },
+    {
+      "name": "mobile en detail cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "Price not confirmed",
+          "unknown": true
+        },
+        "international": null,
+        "domestic": [
+          "https://www.co-coon.info/gallery"
+        ],
+        "storeAnchor": "#official-and-visit-cocoon-ori-nonhole-earrings"
+      }
+    },
+    {
+      "name": "mobile en detail hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 3,500",
+          "amount": 3500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": null,
+        "domestic": [
+          "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html"
+        ],
+        "storeAnchor": "#official-and-visit-hamamatsuya-catch-pierced"
+      }
+    },
+    {
+      "name": "mobile ja home market prices",
+      "status": "passed",
+      "detail": {
+        "representatives": 12,
+        "heroProduct": "morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile ja all product cards keep Japan market pricing",
+      "status": "passed",
+      "detail": {
+        "cards": 30,
+        "comparisonRows": 20,
+        "regionalRoute": "places/tokyo/",
+        "regionalCards": 2
+      }
+    },
+    {
+      "name": "mobile ja detail rinzen-seika-amber-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 26,400",
+          "amount": 26400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 288",
+          "amount": 288,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-028"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-seika-amber-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile ja detail six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 9,900",
+          "amount": 9900,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 108",
+          "amount": 108,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-018"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-half-moon-earrings"
+      }
+    },
+    {
+      "name": "mobile ja detail rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 27,500",
+          "amount": 27500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 300",
+          "amount": 300,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-099"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-leaf-glass-pendant"
+      }
+    },
+    {
+      "name": "mobile ja detail six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 6,600",
+          "amount": 6600,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 72",
+          "amount": 72,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-016"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-blue-bouquet-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile ja detail saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 29,700",
+          "amount": 29700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 324",
+          "amount": 324,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0007-054"
+        ],
+        "storeAnchor": "#official-and-visit-saskia-diez-drake-porcelain-cuff"
+      }
+    },
+    {
+      "name": "mobile ja detail checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 16,500",
+          "amount": 16500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 180",
+          "amount": 180,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0050-015"
+        ],
+        "storeAnchor": "#official-and-visit-checos-japanese-apricot-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile ja detail morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 4,620",
+          "amount": 4620,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 50.40",
+          "amount": 50.4,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0124-032"
+        ],
+        "storeAnchor": "#official-and-visit-morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile ja detail kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 15,400",
+          "amount": 15400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 168",
+          "amount": 168,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-093"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-drop-pierced-earrings"
+      }
+    },
+    {
+      "name": "mobile ja detail kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 7,700",
+          "amount": 7700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 84",
+          "amount": 84,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-044"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-round-ring"
+      }
+    },
+    {
+      "name": "mobile ja detail cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "価格は未確認",
+          "unknown": true
+        },
+        "international": null,
+        "domestic": [
+          "https://www.co-coon.info/gallery"
+        ],
+        "storeAnchor": "#official-and-visit-cocoon-ori-nonhole-earrings"
+      }
+    },
+    {
+      "name": "mobile ja detail hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 3,500",
+          "amount": 3500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": null,
+        "domestic": [
+          "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html"
+        ],
+        "storeAnchor": "#official-and-visit-hamamatsuya-catch-pierced"
+      }
+    },
+    {
+      "name": "narrow en home market prices",
+      "status": "passed",
+      "detail": {
+        "representatives": 12,
+        "heroProduct": "morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow en all product cards keep Japan market pricing",
+      "status": "passed",
+      "detail": {
+        "cards": 30,
+        "comparisonRows": 20,
+        "regionalRoute": "places/tokyo/",
+        "regionalCards": 2
+      }
+    },
+    {
+      "name": "narrow en detail rinzen-seika-amber-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 26,400",
+          "amount": 26400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 288",
+          "amount": 288,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-028"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-seika-amber-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow en detail six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 9,900",
+          "amount": 9900,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 108",
+          "amount": 108,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-018"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-half-moon-earrings"
+      }
+    },
+    {
+      "name": "narrow en detail rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 27,500",
+          "amount": 27500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 300",
+          "amount": 300,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-099"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-leaf-glass-pendant"
+      }
+    },
+    {
+      "name": "narrow en detail six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 6,600",
+          "amount": 6600,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 72",
+          "amount": 72,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-016"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-blue-bouquet-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow en detail saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 29,700",
+          "amount": 29700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 324",
+          "amount": 324,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0007-054"
+        ],
+        "storeAnchor": "#official-and-visit-saskia-diez-drake-porcelain-cuff"
+      }
+    },
+    {
+      "name": "narrow en detail checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 16,500",
+          "amount": 16500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 180",
+          "amount": 180,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0050-015"
+        ],
+        "storeAnchor": "#official-and-visit-checos-japanese-apricot-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow en detail morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 4,620",
+          "amount": 4620,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 50.40",
+          "amount": 50.4,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0124-032"
+        ],
+        "storeAnchor": "#official-and-visit-morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow en detail kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 15,400",
+          "amount": 15400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 168",
+          "amount": 168,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-093"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-drop-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow en detail kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 7,700",
+          "amount": 7700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 84",
+          "amount": 84,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-044"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-round-ring"
+      }
+    },
+    {
+      "name": "narrow en detail cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "Price not confirmed",
+          "unknown": true
+        },
+        "international": null,
+        "domestic": [
+          "https://www.co-coon.info/gallery"
+        ],
+        "storeAnchor": "#official-and-visit-cocoon-ori-nonhole-earrings"
+      }
+    },
+    {
+      "name": "narrow en detail hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 3,500",
+          "amount": 3500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": null,
+        "domestic": [
+          "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html"
+        ],
+        "storeAnchor": "#official-and-visit-hamamatsuya-catch-pierced"
+      }
+    },
+    {
+      "name": "narrow ja home market prices",
+      "status": "passed",
+      "detail": {
+        "representatives": 12,
+        "heroProduct": "morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow ja all product cards keep Japan market pricing",
+      "status": "passed",
+      "detail": {
+        "cards": 30,
+        "comparisonRows": 20,
+        "regionalRoute": "places/tokyo/",
+        "regionalCards": 2
+      }
+    },
+    {
+      "name": "narrow ja detail rinzen-seika-amber-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 26,400",
+          "amount": 26400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 288",
+          "amount": 288,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-028"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-seika-amber-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow ja detail six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 9,900",
+          "amount": 9900,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 108",
+          "amount": 108,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-018"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-half-moon-earrings"
+      }
+    },
+    {
+      "name": "narrow ja detail rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 27,500",
+          "amount": 27500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 300",
+          "amount": 300,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0138-099"
+        ],
+        "storeAnchor": "#official-and-visit-rinzen-leaf-glass-pendant"
+      }
+    },
+    {
+      "name": "narrow ja detail six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 6,600",
+          "amount": 6600,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 72",
+          "amount": 72,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0164-016"
+        ],
+        "storeAnchor": "#official-and-visit-six-kiln-blue-bouquet-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow ja detail saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 29,700",
+          "amount": 29700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 324",
+          "amount": 324,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0007-054"
+        ],
+        "storeAnchor": "#official-and-visit-saskia-diez-drake-porcelain-cuff"
+      }
+    },
+    {
+      "name": "narrow ja detail checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 16,500",
+          "amount": 16500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 180",
+          "amount": 180,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0050-015"
+        ],
+        "storeAnchor": "#official-and-visit-checos-japanese-apricot-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow ja detail morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 4,620",
+          "amount": 4620,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 50.40",
+          "amount": 50.4,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0124-032"
+        ],
+        "storeAnchor": "#official-and-visit-morphosphere-ultramarine-pansy-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow ja detail kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 15,400",
+          "amount": 15400,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 168",
+          "amount": 168,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-093"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-drop-pierced-earrings"
+      }
+    },
+    {
+      "name": "narrow ja detail kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 7,700",
+          "amount": 7700,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": {
+          "text": "USD 84",
+          "amount": 84,
+          "currency": "USD",
+          "checkedAt": "2026-11-16"
+        },
+        "domestic": [
+          "https://www.thebecos.com/products/s0087-044"
+        ],
+        "storeAnchor": "#official-and-visit-kato-suke-round-ring"
+      }
+    },
+    {
+      "name": "narrow ja detail cocoon-ori-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "価格は未確認",
+          "unknown": true
+        },
+        "international": null,
+        "domestic": [
+          "https://www.co-coon.info/gallery"
+        ],
+        "storeAnchor": "#official-and-visit-cocoon-ori-nonhole-earrings"
+      }
+    },
+    {
+      "name": "narrow ja detail hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "japan": {
+          "text": "JPY 3,500",
+          "amount": 3500,
+          "currency": "JPY",
+          "checkedAt": "2026-11-16"
+        },
+        "international": null,
+        "domestic": [
+          "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html"
+        ],
+        "storeAnchor": "#official-and-visit-hamamatsuya-catch-pierced"
+      }
+    },
+    {
+      "name": "No client errors during focused market checks",
+      "status": "passed"
+    }
+  ],
+  "pages": [
+    {
+      "name": "desktop en home",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
+      "axeViolations": []
+    },
+    {
+      "name": "desktop en all jewelry",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/#all-jewelry",
+      "axeViolations": []
+    },
+    {
+      "name": "desktop en RINZEN dual market",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/rinzen-seika-amber-pierced-earrings/",
+      "axeViolations": []
+    },
+    {
+      "name": "desktop ja home",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+      "axeViolations": []
+    },
+    {
+      "name": "desktop ja all jewelry",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/#all-jewelry",
+      "axeViolations": []
+    },
+    {
+      "name": "desktop ja RINZEN dual market",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/rinzen-seika-amber-pierced-earrings/",
+      "axeViolations": []
+    },
+    {
+      "name": "mobile en home",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
+      "axeViolations": []
+    },
+    {
+      "name": "mobile en all jewelry",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/#all-jewelry",
+      "axeViolations": []
+    },
+    {
+      "name": "mobile en RINZEN dual market",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/rinzen-seika-amber-pierced-earrings/",
+      "axeViolations": []
+    },
+    {
+      "name": "mobile ja home",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+      "axeViolations": []
+    },
+    {
+      "name": "mobile ja all jewelry",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/#all-jewelry",
+      "axeViolations": []
+    },
+    {
+      "name": "mobile ja RINZEN dual market",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/rinzen-seika-amber-pierced-earrings/",
+      "axeViolations": []
+    },
+    {
+      "name": "narrow en home",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
+      "axeViolations": []
+    },
+    {
+      "name": "narrow en all jewelry",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/#all-jewelry",
+      "axeViolations": []
+    },
+    {
+      "name": "narrow en RINZEN dual market",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/rinzen-seika-amber-pierced-earrings/",
+      "axeViolations": []
+    },
+    {
+      "name": "narrow ja home",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+      "axeViolations": []
+    },
+    {
+      "name": "narrow ja all jewelry",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/#all-jewelry",
+      "axeViolations": []
+    },
+    {
+      "name": "narrow ja RINZEN dual market",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/rinzen-seika-amber-pierced-earrings/",
+      "axeViolations": []
+    }
+  ],
+  "screenshots": [
+    "artifacts/market-stage-hosted-en-desktop-rinzen-market-prices.png",
+    "artifacts/market-stage-hosted-ja-desktop-rinzen-market-prices.png",
+    "artifacts/market-stage-hosted-en-mobile-rinzen-market-prices.png",
+    "artifacts/market-stage-hosted-ja-mobile-rinzen-market-prices.png",
+    "artifacts/market-stage-hosted-en-narrow-rinzen-market-prices.png",
+    "artifacts/market-stage-hosted-ja-narrow-rinzen-market-prices.png"
+  ],
+  "failures": [],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "completedAt": "2026-11-16T13:01:23.129Z",
+  "finalizedAt": "2026-11-16T13:01:23.129Z",
+  "summary": {
+    "checks": 79,
+    "passed": 79,
+    "failed": 0,
+    "dualMarketProducts": 9,
+    "productDetailChecks": 66,
+    "axeScreens": 18,
+    "axeViolations": 0,
+    "screenshots": 6,
+    "pageErrors": 0,
+    "consoleErrors": 0
+  }
+}

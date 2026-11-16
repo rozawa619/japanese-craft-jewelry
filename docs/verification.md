@@ -4,9 +4,9 @@
 
 型71filesで0 errors/warnings/hints、62/62単体、132出典・30商品/13店舗の参照PASS。最終build170HTML、8662 href/src、1177anchor、618通常/0広告、373実行JS CSP hash、154JSON、14旧移動。技術公開readinessもPASS。
 
-最終価格browser79/79、66商品詳細照合、日英1440/390/320、18画面の全ルールaxe0、JS/console0。価格目視12/12、hero再確認6/6、共通header再確認12/12。隔離広告6/6、実catalog/dist不変、承認時56/1/14、fallback各0広告。初回検出の可視名/landmark/一覧開示を修正した経緯は010validationとinitial-resultsに保持。
+最終価格browser79/79、66商品詳細照合、日英1440/390/320、18画面の全ルールaxe0、JS/console0。全体browser256/256、222ページ確認・198画面の全ルールaxe0、31screenshots、JS/console0。価格目視12/12、hero再確認6/6、共通header再確認12/12。隔離広告6/6、実catalog/dist不変、承認時56/1/14、fallback各0広告。初回検出の可視名/landmark/一覧開示を修正した経緯は010validationとinitial-resultsに保持。
 
-全体browserと実公開はmarket-stageの各最終report、010validation、deployment-resultsのversion/時刻を参照。未実行の公開工程や旧0.9の結果を今回の成功へ転用しない。申請・承認・AdSense導入・検索流入・売上は未確認。
+公開アプリ9b15f21、Actions43871283478 success（2026-11-16T12:58:32Z）。公開価格79/79・18全ルールaxe0、公開目視12/12、補足20/20、正規154URL全200・メタ/CSP確認、28画像全200・SHA一致、JS/console0。公開256全走査は今回行っておらず、全体256はローカル実測。詳細はmarket-stageの最終report、010validation、deployment-results。申請・承認・AdSense導入・検索流入・売上は未確認。
 
 ---
 

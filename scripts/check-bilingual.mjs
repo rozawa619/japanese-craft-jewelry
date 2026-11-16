@@ -322,7 +322,7 @@ try{
  await browser.close();
  report.completedAt=new Date().toISOString();
  report.finalizedAt=report.completedAt;
- report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,pages:report.pages.length,axeViolations:report.pages.reduce((sum,page)=>sum+(page.axeViolations?.length||0),0),screenshots:report.screenshots.length};
+ report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,pages:report.pages.length,axeScreens:report.pages.filter(page=>page.axeViolations!==null).length,axeViolations:report.pages.reduce((sum,page)=>sum+(page.axeViolations?.length||0),0),screenshots:report.screenshots.length};
  await writeFile(resolve(root,process.env.CHECK_REPORT_PATH||'docs/market-stage-full-browser-results.json'),JSON.stringify(report,null,2)+'\n');
  console.log(JSON.stringify(report.summary));
  if(report.failures.length)process.exitCode=1;

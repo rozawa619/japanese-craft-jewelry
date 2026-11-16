@@ -22,11 +22,18 @@
 
 - docs/market-stage-policy-results.json：価格11単体と市場リンクの検証方針。
 - docs/market-stage-browser-results.json：最終79/79 PASS。日英×3幅、9市場差商品+未知/JPYの66詳細、全30カード/耳飾り20比較/地域/hero、18全ルールaxe0、JS/console0、6screenshots。
+- docs/market-stage-full-browser-results.json：最終256/256 PASS、全30商品を含む222ページ確認、198画面で全ルールaxe0、31screenshots、JS/console0。残る24ページは表示・導線確認でありaxe全222画面とは数えない。
 - docs/market-stage-manual-results.json、market-stage-hero-followup-results.json、market-stage-header-followup-results.json：目視と表示追跡。
 - docs/market-stage-ad-build-results.json：隔離6ケース、通常fallback/海外承認の分離/公開設定。
 - 最終型は71files、単体62/62。170HTML、8662 href/src、1177anchor、618通常/0広告、373実行script CSP hash、154 inert JSON、14旧journal移動。公開設定readinessは技術要件PASS、申請条件確認は未完了。
 
-配信後の実測・ソース納品は完了時に追記する。現時点で未実行の公開確認を成功とは記さない。
+## 公開最終確認
+
+アプリcommit9b15f21c5932bb20c1584a99fa0288c8c3e867d0、Actions43871283478は2026-11-16T12:58:32Zにsuccess。実公開の価格browserは79/79・18画面全ルールaxe0・JS/console0（13:01:23Z完了）。公開目視12/12（home/RINZENの日英3幅）、補足20/20。正規URL154すべて200/メタ/CSP確認、現行28画像はすべて200・ローカルSHA一致。Contact非公開・SORA・日英入口・Map外部リンクを継続確認。詳細はmarket-stage-hosted-*とdeployment-results。
+
+全体256/256と隔離広告6/6はローカルの記録であり、公開で全256を再実行したという意味ではない。現行版の価格/UIを公開79、共通ページと全assetを公開補足で確認した。ソース納品はtasksと納品先のpackage-verification-0.10.0.jsonで確認する。
+
+0.10全ソースZIPを実際に開いて、413ファイルの元ソースとの集合一致、必須設定/仕様/公開検証/lockfile、28公開画像、認証/環境値/生成物/退役公開画像の除外を確認。納品先のpackage-verification-0.10.0.jsonに最終ZIPのSHAとバイト数を保持する。check:pricesの未設定baseはAstroと同じ/へ統一し、fresh sourceのローカル起動に合わせた。公開検証の際はPUBLIC_BASE_PATH=/japanese-craft-jewelry/を明示（今回の実行設定は同値）する。
 
 ## 限界
 

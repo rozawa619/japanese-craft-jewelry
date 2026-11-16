@@ -1,0 +1,305 @@
+{
+  "checkedAt": "2026-11-16T13:00:12.531Z",
+  "deploymentCommit": "9b15f21",
+  "actionsRun": 43871283478,
+  "origin": "https://rozawa619.github.io",
+  "base": "/japanese-craft-jewelry/",
+  "method": "Final hosted visual regression on the actual public0.10site: EN/JA home and RINZEN at1440/390/320. Fresh Chrome verifies the single banner and upper-right language control, Japanese primary price, separately labeled international price and its link, ordinary Japanese reference URL, actual visiting-anchor navigation, unbroken hero date, image decoding, viewport fit and screenshots. No external merchant/map/source navigation, form or account action.",
+  "checks": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "kind": "home",
+      "status": "passed",
+      "prices": {
+        "japan": 4620,
+        "japanCurrency": "JPY",
+        "heroDateSingleLine": true
+      },
+      "dimensions": {
+        "width": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "visitAnchor": null,
+      "visitAnchorClicked": false,
+      "screenshot": "artifacts/market-stage-hosted-manual-en-1440-home.png"
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "kind": "rinzen",
+      "status": "passed",
+      "prices": {
+        "japan": 26400,
+        "japanCurrency": "JPY",
+        "international": 288,
+        "internationalCurrency": "USD",
+        "japanHref": "https://www.thebecos.com/products/s0138-028",
+        "internationalHref": "https://en.thebecos.com/products/s0138-028?currency=USD"
+      },
+      "dimensions": {
+        "width": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "visitAnchor": "#official-and-visit-rinzen-seika-amber-pierced-earrings",
+      "visitAnchorClicked": true,
+      "screenshot": "artifacts/market-stage-hosted-manual-en-1440-rinzen.png"
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "kind": "home",
+      "status": "passed",
+      "prices": {
+        "japan": 4620,
+        "japanCurrency": "JPY",
+        "heroDateSingleLine": true
+      },
+      "dimensions": {
+        "width": 390,
+        "document": 390,
+        "body": 390
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "visitAnchor": null,
+      "visitAnchorClicked": false,
+      "screenshot": "artifacts/market-stage-hosted-manual-en-390-home.png"
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "kind": "rinzen",
+      "status": "passed",
+      "prices": {
+        "japan": 26400,
+        "japanCurrency": "JPY",
+        "international": 288,
+        "internationalCurrency": "USD",
+        "japanHref": "https://www.thebecos.com/products/s0138-028",
+        "internationalHref": "https://en.thebecos.com/products/s0138-028?currency=USD"
+      },
+      "dimensions": {
+        "width": 390,
+        "document": 390,
+        "body": 390
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "visitAnchor": "#official-and-visit-rinzen-seika-amber-pierced-earrings",
+      "visitAnchorClicked": true,
+      "screenshot": "artifacts/market-stage-hosted-manual-en-390-rinzen.png"
+    },
+    {
+      "locale": "en",
+      "width": 320,
+      "kind": "home",
+      "status": "passed",
+      "prices": {
+        "japan": 4620,
+        "japanCurrency": "JPY",
+        "heroDateSingleLine": true
+      },
+      "dimensions": {
+        "width": 320,
+        "document": 320,
+        "body": 320
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "visitAnchor": null,
+      "visitAnchorClicked": false,
+      "screenshot": "artifacts/market-stage-hosted-manual-en-320-home.png"
+    },
+    {
+      "locale": "en",
+      "width": 320,
+      "kind": "rinzen",
+      "status": "passed",
+      "prices": {
+        "japan": 26400,
+        "japanCurrency": "JPY",
+        "international": 288,
+        "internationalCurrency": "USD",
+        "japanHref": "https://www.thebecos.com/products/s0138-028",
+        "internationalHref": "https://en.thebecos.com/products/s0138-028?currency=USD"
+      },
+      "dimensions": {
+        "width": 320,
+        "document": 320,
+        "body": 320
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "visitAnchor": "#official-and-visit-rinzen-seika-amber-pierced-earrings",
+      "visitAnchorClicked": true,
+      "screenshot": "artifacts/market-stage-hosted-manual-en-320-rinzen.png"
+    },
+    {
+      "locale": "ja",
+      "width": 1440,
+      "kind": "home",
+      "status": "passed",
+      "prices": {
+        "japan": 4620,
+        "japanCurrency": "JPY",
+        "heroDateSingleLine": true
+      },
+      "dimensions": {
+        "width": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "visitAnchor": null,
+      "visitAnchorClicked": false,
+      "screenshot": "artifacts/market-stage-hosted-manual-ja-1440-home.png"
+    },
+    {
+      "locale": "ja",
+      "width": 1440,
+      "kind": "rinzen",
+      "status": "passed",
+      "prices": {
+        "japan": 26400,
+        "japanCurrency": "JPY",
+        "international": 288,
+        "internationalCurrency": "USD",
+        "japanHref": "https://www.thebecos.com/products/s0138-028",
+        "internationalHref": "https://en.thebecos.com/products/s0138-028?currency=USD"
+      },
+      "dimensions": {
+        "width": 1440,
+        "document": 1440,
+        "body": 1440
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "visitAnchor": "#official-and-visit-rinzen-seika-amber-pierced-earrings",
+      "visitAnchorClicked": true,
+      "screenshot": "artifacts/market-stage-hosted-manual-ja-1440-rinzen.png"
+    },
+    {
+      "locale": "ja",
+      "width": 390,
+      "kind": "home",
+      "status": "passed",
+      "prices": {
+        "japan": 4620,
+        "japanCurrency": "JPY",
+        "heroDateSingleLine": true
+      },
+      "dimensions": {
+        "width": 390,
+        "document": 390,
+        "body": 390
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "visitAnchor": null,
+      "visitAnchorClicked": false,
+      "screenshot": "artifacts/market-stage-hosted-manual-ja-390-home.png"
+    },
+    {
+      "locale": "ja",
+      "width": 390,
+      "kind": "rinzen",
+      "status": "passed",
+      "prices": {
+        "japan": 26400,
+        "japanCurrency": "JPY",
+        "international": 288,
+        "internationalCurrency": "USD",
+        "japanHref": "https://www.thebecos.com/products/s0138-028",
+        "internationalHref": "https://en.thebecos.com/products/s0138-028?currency=USD"
+      },
+      "dimensions": {
+        "width": 390,
+        "document": 390,
+        "body": 390
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "visitAnchor": "#official-and-visit-rinzen-seika-amber-pierced-earrings",
+      "visitAnchorClicked": true,
+      "screenshot": "artifacts/market-stage-hosted-manual-ja-390-rinzen.png"
+    },
+    {
+      "locale": "ja",
+      "width": 320,
+      "kind": "home",
+      "status": "passed",
+      "prices": {
+        "japan": 4620,
+        "japanCurrency": "JPY",
+        "heroDateSingleLine": true
+      },
+      "dimensions": {
+        "width": 320,
+        "document": 320,
+        "body": 320
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "visitAnchor": null,
+      "visitAnchorClicked": false,
+      "screenshot": "artifacts/market-stage-hosted-manual-ja-320-home.png"
+    },
+    {
+      "locale": "ja",
+      "width": 320,
+      "kind": "rinzen",
+      "status": "passed",
+      "prices": {
+        "japan": 26400,
+        "japanCurrency": "JPY",
+        "international": 288,
+        "internationalCurrency": "USD",
+        "japanHref": "https://www.thebecos.com/products/s0138-028",
+        "internationalHref": "https://en.thebecos.com/products/s0138-028?currency=USD"
+      },
+      "dimensions": {
+        "width": 320,
+        "document": 320,
+        "body": 320
+      },
+      "bannerCount": 1,
+      "nativeVisibleControlNames": true,
+      "visitAnchor": "#official-and-visit-rinzen-seika-amber-pierced-earrings",
+      "visitAnchorClicked": true,
+      "screenshot": "artifacts/market-stage-hosted-manual-ja-320-rinzen.png"
+    }
+  ],
+  "screenshots": [
+    "artifacts/market-stage-hosted-manual-en-1440-home.png",
+    "artifacts/market-stage-hosted-manual-en-1440-rinzen.png",
+    "artifacts/market-stage-hosted-manual-en-390-home.png",
+    "artifacts/market-stage-hosted-manual-en-390-rinzen.png",
+    "artifacts/market-stage-hosted-manual-en-320-home.png",
+    "artifacts/market-stage-hosted-manual-en-320-rinzen.png",
+    "artifacts/market-stage-hosted-manual-ja-1440-home.png",
+    "artifacts/market-stage-hosted-manual-ja-1440-rinzen.png",
+    "artifacts/market-stage-hosted-manual-ja-390-home.png",
+    "artifacts/market-stage-hosted-manual-ja-390-rinzen.png",
+    "artifacts/market-stage-hosted-manual-ja-320-home.png",
+    "artifacts/market-stage-hosted-manual-ja-320-rinzen.png"
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "completedAt": "2026-11-16T13:01:19.967Z",
+  "summary": {
+    "checks": 12,
+    "passed": 12,
+    "failed": 0,
+    "screenshots": 12,
+    "pageErrors": 0,
+    "consoleErrors": 0
+  }
+}

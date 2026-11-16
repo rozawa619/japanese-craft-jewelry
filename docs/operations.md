@@ -13,6 +13,7 @@ Node.js24.22.1以上、pnpm11.25.0。通常のコンテンツ更新ではlockfil
     pnpm verify
     pnpm readiness
     pnpm check:browser
+    pnpm check:prices
     pnpm check:ads
     pnpm check:links
 
@@ -114,7 +115,7 @@ CSPとActionsの権限分離を維持する。広告script、解析、formを追
 
 再実行scriptはscripts/check-bilingual.mjs、check-product-details.mjs、check-hosted-release.mjs等を参照。CHECK_BASE_URL、CHECK_REPORT_PATH、CHECK_SCREENSHOT_PREFIX等の各scriptが持つ設定で、localとhostedの出力を分ける。古いclear-stageレポート名の既定値を使うscriptは出力先を明示し、履歴を上書きしない。
 
-Gitへ保存してpushした後はActionsの対象commitとsuccess、実公開URLでの反映を確認する。009のvalidation／tasks、docs/destination-stage-*.json、verification、deployment-results、handoffを実測に合わせる。未実行・旧version・未配信を成功へ読み替えない。0.7はdiscovery-stage（全公開132画面は未実行）、0.6はclear-stage、0.5はappeal、0.4はselectionの履歴。
+Gitへ保存してpushした後はActionsの対象commitとsuccess、実公開URLでの反映を確認する。最新010のvalidation／tasks、docs/market-stage-*.json、verification、deployment-results、handoffを実測に合わせる。未実行・旧version・未配信を成功へ読み替えない。0.9はdestination-stage、0.7はdiscovery-stage（全公開132画面は未実行）、0.6はclear-stage、0.5はappeal、0.4はselectionの履歴。
 
 pnpm packageで隣接するjapanese-craft-jewelry-delivery/sourceへ書出し、別途ZIPを作る。registryが参照する現行画像、日英の本文、価格・リンク・店舗関係の正本、台帳、仕様、全検証script・レポートが含まれることを確認する。node_modules／dist／artifacts／.env／認証情報／内部参照写真を除外し、ZIPの必須ファイル・展開内容も照合する。
 
@@ -141,3 +142,5 @@ pnpm packageで隣接するjapanese-craft-jewelry-delivery/sourceへ書出し、
 4. ENの国内参照URL、JAの海外参照URLは通常公式リンクのみ。現在ページ言語に適合する元リンクだけ既存resolverを使い、program/商品二重承認とHTTPS/host/date条件を維持。Disclosureは表示market/linkIdsだけを対象にする。
 5. verifyとcheck:pricesで全9複数市場/unknown/単独JPYの両言語・3幅、カード/比較/hero/地域、店舗anchor、stickyと購入先、市場を越えた広告流用防止を確認。check-builtとmarket-link-policyは、market属性だけで外部URLを許可しない。
 6. 価格差を説明する際、Global公式FAQが示す海外向けサービスの説明と、商品別差額内訳が未確認であることを分ける。差額全部が送料/全税送料込とは断定しない。market-price-review-v10.jsonが調査記録。最新検証は010validationとmarket-stage結果。
+
+fresh sourceのローカルbase既定は/。公開の価格browserはCHECK_BASE_URL=https://rozawa619.github.ioとPUBLIC_BASE_PATH=/japanese-craft-jewelry/を設定し、CHECK_REPORT_PATH/CHECK_SCREENSHOT_PREFIXでhosted結果を分ける。公開設定を含む.envは納品/Gitへ入れない。

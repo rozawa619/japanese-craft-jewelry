@@ -56,4 +56,6 @@ Windowsで削除できない退役7画像はlocalRetiredPathと.gitignore/Git除
 
 配信はGitHub Pages https://rozawa619.github.io/japanese-craft-jewelry/ja/ と /en/。ソース https://github.com/rozawa619/japanese-craft-jewelry 。Git push/Actions成功/実配信SHAとブラウザ確認は別工程。最終の確定結果はdeployment-resultsとverificationに残す。
 
-全ソースは隣接japanese-craft-jewelry-delivery/sourceとZIPへ再出力。.env/認証/node_modules/dist/artifacts/内部参照写真は入れない。運用手順はoperations、申請前はpre-application-checklistとaffiliate-readinessを参照。
+0.10確定: app9b15f21c5932bb20c1584a99fa0288c8c3e867d0、Actions43871283478 success。ローカル価格79/79（18全ルールaxe0）/全体256/256（222ページ、198全ルールaxe0）/広告6/6。公開価格79/79（18全ルールaxe0）/目視12/12/補足20/20、正規154URL全200、現行28画像全200・SHA一致。JS/console0。公開側の全体256は再実行していない。最終公開価格確認は2026-11-16T13:01:23Z。最後の自然なカード読み上げ名の修正も配信済み。
+
+全ソースは隣接japanese-craft-jewelry-delivery/sourceとjapanese-craft-jewelry-source.zipへ出力済み。version0.10.0、413ファイル、公開28画像をZIP内容と照合し、同所package-verification-0.10.0.jsonにSHA等を保持。.env/認証/node_modules/dist/artifacts/内部参照写真は入れない。運用手順はoperations、申請前はpre-application-checklistとaffiliate-readinessを参照。
