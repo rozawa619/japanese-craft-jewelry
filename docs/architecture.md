@@ -1,6 +1,9 @@
 # 構成とデータの流れ
 
-対象はアプリ0.15.0、文書整備017。確認日2026-11-17。
+対象は作業版0.16.0・全国追加018、文書の入口は保守改訂017を継承。確認日2026-11-17。
+
+<!-- TODO_PUBLIC_V16: 公開確認後にこの配信状態を更新する。 -->
+0.16は作業/QA中で、公開確認済みの基準は旧0.15（app1f0021306e87ce9e7dc43bdf446cffedc59e4134・Actions44024678465）です。現在のソースは60公開対象/66登録商品・24県・34公開関連技法（全36）・118画像を持ちます。
 
 このサイトは、日本各地の工芸ジュエリーを日英で紹介するAstroの静的サイトです。商品や価格をファイルで編集し、検証してHTMLを生成します。公開先にNodeのアプリサーバー、DB、管理画面、注文・決済APIはありません。Nodeは開発・検証・静的生成のために使います。
 
@@ -60,6 +63,14 @@ specs/               仕様・設計・タスク・検証の対応
 表で`src/data/`を省略したJSONは同ディレクトリにあります。本文やQ&Aへ価格・販売URLを複製すると更新先が二つになります。Q&Aの`{size}`・`{findings}`・`{fastening}`は、表示する言語のcatalog値から展開します。不明な値でtokenを埋めたり、AI画像から仕様を補ったりしません。
 
 `docs/`は全部が任意の説明資料というわけではありません。出典JSON、画像台帳、画像生成記録などをコードとvalidatorが読みます。fresh cloneやソースZIPから起動する場合も、同梱docsを保持します。一方、`dist/`・`.astro/`・`node_modules/`は再生成/再取得する派生物です。`artifacts/`は私的な検証ログ・画面等で、公開アプリや通常buildの入力ではありません。外部のPNG原本アーカイブも通常のbuildには不要です。
+
+### 0.16の画像生成ログを増やす方法
+
+人物の新規10点は[image-generation-v16.json](image-generation-v16.json)、単体の新規10点は[image-generation-solo-v16.json](image-generation-solo-v16.json)へ分離しました。旧98画像と旧生成ログは変更せず、新規23PNGの採用20・棄却3を各ログの`images`/`rejectedCandidates`へ記録しています。人物と単体の対応表・権利台帳・採否記録は別の役割です。
+
+単体検査は[scripts/lib/image-generation-manifests.mjs](../scripts/lib/image-generation-manifests.mjs)の`loadSoloGenerationManifests`が旧v14と新v16の単体ログを併読します。商品IDの重複や不正なpath/hashを拒否し、`check-product-detail-images.mjs`が合算した記録をactive registry全60商品、実ファイル、distのbytesへ照合します。v16ログは後方互換のためreader上はoptionalですが、新画像をactive registryへ登録した状態では、欠落すると全件一致が失敗します。人物のv16ログをこの単体readerが読むわけではありません。
+
+次の追加でも旧ログを新画像の内容へ書き換えず、別の版のmanifestとreaderの参照先を追加します。例の件数を合格条件として固定せず、実際の公開商品集合から全件対応を確認します。
 
 ## ページができるまで
 

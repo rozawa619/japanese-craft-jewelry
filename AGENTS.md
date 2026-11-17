@@ -6,7 +6,7 @@
 
 1. README → docs/ai-handoff.md → docs/handoff.md → docs/architecture.md。
 2. Git checkoutならgit status --short、ZIPなら元ZIP/proofと別の作業用コピーを確認。package.json、docs/deployment-results.jsonを読み、公開app commitと文書/作業HEAD、最新ZIPを区別。ZIPに.gitがないことをエラーにしない。
-3. 挙動の現行仕様はspecs/016-visual-choices-mobile-security、保守文書の意図は017。必要な領域だけ過去仕様へ戻る。
+3. 全国追加はspecs/018-national-jewelry-expansion、引き継ぐUI/securityは016、保守文書の意図は017。必要な領域だけ過去仕様へ戻る。
 4. docs/setup.mdでruntime/env/base/Chromeを確認。docsのJSONはbuild入力なので削除しない。
 5. 変更する正本を特定し、docs/verification-guide.mdで必要な検査を選び、実装と仕様・引継ぎを合わせる。
 
@@ -14,7 +14,7 @@
 
 - 運営者表示SORA、日本全国の工芸ジュエリーを選ぶJA/ENサイト。神奈川専用やiTOへ戻さない。
 - ブログ/Contact/販売・決済・発送の機能を作らず、不要な販売責任説明をUIに再導入しない。提供されていない氏名/住所/メールを作らない。
-- 現在の50公開・14地域・98AI画像は観測値。固定上限や各県同数の条件ではない。空の地域/技法とdraftを一覧やsitemapへ出さない。
+- 0.16作業ソースの60公開対象/66登録・24県・34公開関連技法/全36・118AI画像は観測値。固定上限や各県同数の条件ではない。空の地域/技法とdraftを一覧やsitemapへ出さない。
 - COCOON2/欠品18K/販売未確認の畠山2/hairpinはdraft。復帰には対象variantの現行購入根拠と派生参照の再確認が必要。403を閉店/売切れとしない。
 
 ## 正本と編集
@@ -29,7 +29,7 @@
 ## 画像とUI
 
 - 公式写真を許可なく取得/転載/hotlink/生成入力へ転用しない。AI図は実物写真・完全なSKU再現・金具/個数・装着実績の証拠ではない。
-- 人物editorial-imagesと単体product-detail-images、権利docs/assets、生成記録を分離。画像必須の公開gateをtext previewだけで迂回しない。
+- 人物editorial-imagesと単体product-detail-images、権利docs/assets、生成記録を分離。0.16の新規生成記録はimage-generation-v16とimage-generation-solo-v16。単体readerは旧v14＋新v16を併読し、旧記録を上書きしない。画像必須の公開gateをtext previewだけで迂回しない。
 - captionは常時AIイメージ/AI image。日英alt、元比率/contain、顔や装身具の切れを検査。人物は架空成人27〜33歳目安、日本/米国/英国の可愛い・美人系という依頼を継承し、国籍を見た目から認定しない。ほくろ/シミなしの方向性を保つ。
 - 種類の小画像は実際の公開商品・同地域・同種類から選び、人気順位としない。旧画像bytes保持の条件や退役10画像を勝手に解除しない。
 - Sourcesは初期closedのnative details。出典/dateは消さず必要時に一覧表示。公式CTA/在庫注意/AI/広告開示を一緒に隠さない。
@@ -46,6 +46,9 @@
 - host header/MFA等の未確認・未操作を完了にせず、既知audit0と未知も含む全安全を混同しない。
 
 ## 検証・完了の記録
+
+<!-- TODO_PUBLIC_V16: 0.16公開確認後に次の状態を更新する。 -->
+- 現在は0.16作業/QA中。公開確認の基準は旧0.15のapp1f0021306e87ce9e7dc43bdf446cffedc59e4134・Actions44024678465。0.16の公開成功は実SHA/Actions/実URLの観測後に記録する。
 
 - JSON/広告変更はpnpm verify。文言/画面は影響とriskに応じたtype/build/JAEN/mobile等。docs-onlyに497全走査を要求せず、リンク/コマンド/整合と必要なbuildを確認する。
 - build中に共有distへbrowser検査しない。ローカル/公開/途中/最終を区別し、CHECK_REPORT_PATH等を作業固有名へ。0.15の既存証跡を上書きしない。

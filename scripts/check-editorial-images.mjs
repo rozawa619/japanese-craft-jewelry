@@ -4,10 +4,14 @@ import {resolve,dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {collectEditorialImageErrors} from '../src/lib/editorial-images.ts';
+import {trainedAlgorithmicMedia} from './lib/image-generation-manifests.mjs';
 
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const json=async path=>JSON.parse(await readFile(resolve(root,path),'utf8'));
 const catalog=await json('src/data/catalog.json'),registry=await json('src/data/editorial-images.json'),ledger=await json('docs/assets.json');
+const baselinePath='docs/research/image-baseline-v12.json';
+const baseline=existsSync(resolve(root,baselinePath))?await json(baselinePath):null;
+const legacyPaths=new Set((baseline?.files||[]).map(file=>file.path));
 const published=catalog.products.filter(product=>product.publishStatus==='published');
 const withDist=process.argv.includes('--dist');
 const safeImagePath=/^images\/[a-z0-9-]+\.(?:webp|avif|png|jpe?g)$/;
@@ -48,9 +52,11 @@ for(const path of new Set(Object.values(registry).map(image=>image.path))){
   check('Intrinsic dimensions and format '+path,()=>{
    if(first.width!==actual.width||first.height!==actual.height)throw new Error('Registry '+first.width+'x'+first.height+' differs from file '+actual.width+'x'+actual.height);
    const ext=path.split('.').at(-1);if(!(actual.format===ext||actual.format==='jpeg'&&['jpg','jpeg'].includes(ext)))throw new Error('Filename does not match encoded format');
-   if(entries.some(([,image])=>image.assetId.endsWith('-v13'))){
+   // The frozen pre-v0.13 files retain their original bytes. Every later file,
+   // including v0.16 additions, must carry its AI source metadata.
+   if(!legacyPaths.has(path)||entries.some(([,image])=>/-v(?:13|16)$/.test(image.assetId))){
     const xml=bytes.toString('utf8');
-    if(!xml.includes('<Iptc4xmpExt:DigitalSourceType>http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia</Iptc4xmpExt:DigitalSourceType>'))throw new Error('New AI image lost IPTC DigitalSourceType XMP');
+    if(!xml.includes('<Iptc4xmpExt:DigitalSourceType>'+trainedAlgorithmicMedia+'</Iptc4xmpExt:DigitalSourceType>'))throw new Error('New AI image lost IPTC DigitalSourceType XMP');
    }
    if(withDist){const output=resolve(root,'dist',path);if(!existsSync(output)||digest(requireBytes(output))!==digest(bytes))throw new Error('Generated image missing or byte mismatch');}
    return actual;
@@ -61,9 +67,7 @@ for(const path of new Set(Object.values(registry).map(image=>image.path))){
 }
 // Synchronous byte reads are limited to generated files after source inspection.
 function requireBytes(path){return readFileSync(path);}
-const baselinePath='docs/research/image-baseline-v12.json';
-if(existsSync(resolve(root,baselinePath))){
- const baseline=await json(baselinePath);
+if(baseline){
  for(const old of baseline.files){
   try{
    if(!safeImagePath.test(old.path))throw new Error('Unsafe baseline file path');

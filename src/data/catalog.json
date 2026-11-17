@@ -67,6 +67,56 @@
       "id": "mie",
       "name": "Mie",
       "description": "Ise-Shima Akoya pearl jewelry from a producer cooperative; each selected product records its own material origin."
+    },
+    {
+      "id": "akita",
+      "name": "Akita",
+      "description": "Silver filigree connected with an Akita City atelier, including rice-grain motifs."
+    },
+    {
+      "id": "fukui",
+      "name": "Fukui",
+      "description": "Contemporary jewelry using the materials and finishing skills of Sabae eyeglass making."
+    },
+    {
+      "id": "gifu",
+      "name": "Gifu",
+      "description": "Ceramic jewelry from a Tajimi tile brand in the Mino-ware region."
+    },
+    {
+      "id": "hiroshima",
+      "name": "Hiroshima",
+      "description": "Origami-crane jewelry planned by a Hiroshima peace brand; Japanese manufacture is stated, while the specific production prefecture remains unconfirmed."
+    },
+    {
+      "id": "kagoshima",
+      "name": "Kagoshima",
+      "description": "A selected satsuma kiriko cut glass connection, with product-level purchase and visit information."
+    },
+    {
+      "id": "tokushima",
+      "name": "Tokushima",
+      "description": "A selected awa indigo pearl jewelry connection, with product-level purchase and visit information."
+    },
+    {
+      "id": "tottori",
+      "name": "Tottori",
+      "description": "A selected inshu washi jewelry connection, with product-level purchase and visit information."
+    },
+    {
+      "id": "okinawa",
+      "name": "Okinawa",
+      "description": "A selected ryukyu-glass fragment jewelry connection, with product-level purchase and visit information."
+    },
+    {
+      "id": "kumamoto",
+      "name": "Kumamoto",
+      "description": "Higo metal inlay from a Kumamoto workshop."
+    },
+    {
+      "id": "shimane",
+      "name": "Shimane",
+      "description": "Izumo-style magatama jewelry connected to a Shimane maker; stone origins are recorded separately."
     }
   ],
   "crafts": [
@@ -305,6 +355,109 @@
         "mie-pearl-union-current-v12",
         "mie-akoya-shop-list-current-v12"
       ]
+    },
+    {
+      "id": "akita-silver-filigree",
+      "name": "Akita silver filigree",
+      "description": "Akita silver-filigree work by an Akita City atelier. The retailer identifies this craft with Akita; an individual product certificate is not established.",
+      "sourceIds": [
+        "yadome-akita-rice-beams-v16",
+        "yadome-atelier-official-v16",
+        "yadome-atelier-shop-v16"
+      ]
+    },
+    {
+      "id": "sabae-eyeglass-acetate-jewelry",
+      "name": "Sabae eyeglass-material jewelry",
+      "description": "A contemporary accessory from Sabae using eyeglass-frame material and local processing skills. It is not presented as an individually certified traditional craft.",
+      "sourceIds": [
+        "sur-basic1-clear-current-v16",
+        "sur-sabae-making-v16",
+        "sava-store-physical-v16"
+      ]
+    },
+    {
+      "id": "mino-ceramic-jewelry",
+      "name": "Mino ceramic jewelry",
+      "description": "Ceramic accessories from a Tajimi tile brand in the Mino-ware region. The brand and place connection do not establish individual traditional-craft certification.",
+      "sourceIds": [
+        "nanayosha-punu-vanilla-current-v16",
+        "nanayosha-tajimi-making-v16",
+        "nanayosha-suzuki-tile-shop-v16"
+      ]
+    },
+    {
+      "id": "hiroshima-origami-jewelry",
+      "name": "Hiroshima origami-motif jewelry",
+      "description": "Contemporary origami-crane jewelry developed by a Hiroshima brand with designer Adeline Le Mette. Japanese manufacture is stated, but the individual manufacturing prefecture is not identified; traditional-craft certification is not claimed.",
+      "sourceIds": [
+        "earth-hiroshima-crane-silver-current-v16",
+        "earth-hiroshima-crane-design-v16",
+        "hiroshima-resthouse-shop-v16",
+        "hiroshima-resthouse-access-v16"
+      ]
+    },
+    {
+      "id": "satsuma-kiriko",
+      "name": "Satsuma kiriko cut glass",
+      "description": "Contemporary Satsuma kiriko jewelry by the Kagoshima maker. The listing specifies crystal glass and silver fittings; no individual traditional-craft certification is asserted.",
+      "sourceIds": [
+        "satsuma-hikari-l-current-v16",
+        "satsuma-process-v16",
+        "satsuma-story-v16",
+        "satsuma-iso-shop-v16"
+      ]
+    },
+    {
+      "id": "awa-indigo-pearl-jewelry",
+      "name": "Awa indigo pearl jewelry",
+      "description": "Contemporary pearl jewelry colored with Awa indigo by a Naruto maker. It is not an assertion that the pearl itself was farmed in Tokushima.",
+      "sourceIds": [
+        "applause-ja1x001-current-v16",
+        "applause-indigo-story-v16",
+        "applause-naruto-shop-v16"
+      ]
+    },
+    {
+      "id": "inshu-washi-jewelry",
+      "name": "Inshu washi jewelry",
+      "description": "Contemporary jewelry made with Tottori Inshu washi by YOBOTY. Paper origin, jewelry manufacture and a product-level traditional-craft certificate are separate matters.",
+      "sourceIds": [
+        "yoboty-long-current-v16",
+        "yoboty-process-v16",
+        "yoboty-current-retailers-v16",
+        "aoya-official-visit-v16",
+        "aoya-official-access-v16"
+      ]
+    },
+    {
+      "id": "ryukyu-glass-fragment-jewelry",
+      "name": "Ryukyu-glass fragment jewelry",
+      "description": "Contemporary handmade jewelry incorporating Ryukyu-glass fragments, credited to ponzu. and presented by an Okinawa select shop. This is not an item-level traditional-craft certification or confirmation of every component origin.",
+      "sourceIds": [
+        "tete-hanagasa-heart-current-v16",
+        "tete-official-access-v16",
+        "tete-official-about-v16"
+      ]
+    },
+    {
+      "id": "higo-zogan",
+      "name": "Higo metal inlay",
+      "description": "Kumamoto metalwork in which gold or silver is inlaid into iron. Individual product materials and fittings are specified separately.",
+      "sourceIds": [
+        "mitsusuke-higo-history-v16",
+        "mitsusuke-shizuku-pe02-v16"
+      ]
+    },
+    {
+      "id": "izumo-magatama-jewelry",
+      "name": "Izumo-style magatama jewelry",
+      "description": "Jewelry using the rounded Izumo-style magatama form associated with Menoya in Shimane. The regional design connection does not establish where every stone was mined or every component was made.",
+      "sourceIds": [
+        "menoya-izumo-form-v16",
+        "menoya-company-v16",
+        "menoya-n15-current-v16"
+      ]
     }
   ],
   "materials": [
@@ -499,6 +652,76 @@
       "id": "akoya-pearl",
       "name": "Akoya pearl",
       "description": "Akoya pearl from a pearl-producer cooperative; distinct from shell-based imitation pearls. Exact farmer and treatments are not established."
+    },
+    {
+      "id": "silver-970",
+      "name": "Silver 970",
+      "description": "Silver fineness970 as stated by the selected retailer; do not relabel this as SV1000."
+    },
+    {
+      "id": "cellulose-acetate",
+      "name": "Cellulose acetate",
+      "description": "Plant-derived resin used in the selected Sabae eyeglass-material accessories."
+    },
+    {
+      "id": "cotton-pearl",
+      "name": "Cotton pearl",
+      "description": "Pearl-like ornament with a compressed-cotton core, distinct from cultivated pearls."
+    },
+    {
+      "id": "ceramic",
+      "name": "Ceramic",
+      "description": "Ceramic as identified by the maker; do not infer a narrower clay-body classification from its appearance."
+    },
+    {
+      "id": "fired-gold-decoration",
+      "name": "Fired gold decoration",
+      "description": "Gold decoration fired onto ceramic; distinct from solid-gold jewelry or an independently established gold fineness."
+    },
+    {
+      "id": "rhodium-coating",
+      "name": "Rhodium coating",
+      "description": "Rhodium surface coating stated for the selected recycled-silver item."
+    },
+    {
+      "id": "indigo-dyed-pearl",
+      "name": "Indigo-dyed pearl",
+      "description": "Pearl colored with indigo; species and farming origin depend on the individual product."
+    },
+    {
+      "id": "inshu-washi",
+      "name": "Inshu washi",
+      "description": "Japanese paper identified with Tottori Inshu; dye and fitting origins are recorded separately."
+    },
+    {
+      "id": "iron",
+      "name": "Iron",
+      "description": "Iron as explicitly listed for the inlaid ornament; separate bases and findings may use other metals."
+    },
+    {
+      "id": "gold-24k",
+      "name": "24K gold",
+      "description": "Pure gold as listed for inlay. This does not describe the whole ornament or its fittings as solid gold."
+    },
+    {
+      "id": "golden-rutile-quartz",
+      "name": "Golden rutile quartz",
+      "description": "Golden rutile quartz named in the selected necklace. Mine location and treatment details are not independently established."
+    },
+    {
+      "id": "goshenite",
+      "name": "Goshenite",
+      "description": "Goshenite named in the selected necklace; mine location and treatment details are not independently established."
+    },
+    {
+      "id": "kunzite",
+      "name": "Kunzite",
+      "description": "Kunzite named in the selected necklace; mine location and treatment details are not independently established."
+    },
+    {
+      "id": "freshwater-pearl",
+      "name": "Freshwater pearl",
+      "description": "Freshwater pearl named by the seller. Individual farm, country of origin and treatment details are not established."
     }
   ],
   "productTypes": [
@@ -876,6 +1099,130 @@
         "mie-akoya-oh002-current-v12",
         "mie-pearl-union-current-v12",
         "mie-akoya-shop-list-current-v12"
+      ]
+    },
+    {
+      "id": "yadome-silver-atelier",
+      "name": "Yadome Silver Atelier",
+      "location": "Akita City, Akita",
+      "productionNote": "Akita silver-filigree work by an Akita City atelier. The retailer identifies this craft with Akita; an individual product certificate is not established.",
+      "url": "https://yadome-silver.com/",
+      "sourceIds": [
+        "yadome-akita-rice-beams-v16",
+        "yadome-atelier-official-v16",
+        "yadome-atelier-shop-v16"
+      ]
+    },
+    {
+      "id": "sur-tsugi",
+      "name": "Sur / TSUGI",
+      "location": "Sabae, Fukui",
+      "productionNote": "A contemporary accessory from Sabae using eyeglass-frame material and local processing skills. It is not presented as an individually certified traditional craft.",
+      "url": "https://savastore.jp/?gid=2382553&mode=grp",
+      "sourceIds": [
+        "sur-basic1-clear-current-v16",
+        "sur-sabae-making-v16",
+        "sava-store-physical-v16"
+      ]
+    },
+    {
+      "id": "nanayosha",
+      "name": "Nanayosha",
+      "location": "Tajimi, Gifu",
+      "productionNote": "Ceramic accessories from a Tajimi tile brand in the Mino-ware region. The brand and place connection do not establish individual traditional-craft certification.",
+      "url": "https://nanayosha.com/",
+      "sourceIds": [
+        "nanayosha-punu-vanilla-current-v16",
+        "nanayosha-tajimi-making-v16",
+        "nanayosha-suzuki-tile-shop-v16"
+      ]
+    },
+    {
+      "id": "earth-hiroshima",
+      "name": "EARTH Hiroshima × Adeline Le Mette",
+      "location": "Hiroshima City, Hiroshima — brand and design connection",
+      "productionNote": "Contemporary origami-crane jewelry developed by a Hiroshima brand with designer Adeline Le Mette. Japanese manufacture is stated, but the individual manufacturing prefecture is not identified; traditional-craft certification is not claimed.",
+      "url": "https://earth-hiroshima.jp/",
+      "sourceIds": [
+        "earth-hiroshima-crane-silver-current-v16",
+        "earth-hiroshima-crane-design-v16",
+        "hiroshima-resthouse-shop-v16",
+        "hiroshima-resthouse-access-v16"
+      ]
+    },
+    {
+      "id": "shimadzu-satsuma-kiriko",
+      "name": "Shimadzu Satsuma Kiriko",
+      "location": "Yoshino-cho, Kagoshima",
+      "productionNote": "The Kagoshima maker describes its integrated glassmaking, cutting and polishing. Separate manufacture of the chain is not identified.",
+      "url": "https://satsumakiriko.co.jp/",
+      "sourceIds": [
+        "satsuma-hikari-l-current-v16",
+        "satsuma-process-v16",
+        "satsuma-story-v16",
+        "satsuma-iso-shop-v16"
+      ]
+    },
+    {
+      "id": "jewelry-applause",
+      "name": "Jewelry Applause",
+      "location": "Naruto, Tokushima",
+      "productionNote": "The selected seller lists Naruto, Tokushima as production location. The official brand explains its Awa-indigo dyeing; pearl-farming origin is not established.",
+      "url": "https://ai-pearl.com/",
+      "sourceIds": [
+        "applause-ja1x001-current-v16",
+        "applause-indigo-story-v16",
+        "applause-naruto-shop-v16"
+      ]
+    },
+    {
+      "id": "yoboty-tsp",
+      "name": "YOBOTY / TSP",
+      "location": "Tottori City, Tottori",
+      "productionNote": "The Tottori brand describes in-house work from paper selection through fitting attachment, using Inshu washi. Dye-source locality and individual paper mill are not identified for this item.",
+      "url": "https://www.yoboty.com/",
+      "sourceIds": [
+        "yoboty-long-current-v16",
+        "yoboty-process-v16",
+        "yoboty-current-retailers-v16",
+        "aoya-official-visit-v16",
+        "aoya-official-access-v16"
+      ]
+    },
+    {
+      "id": "ponzu-okinawa",
+      "name": "ponzu.",
+      "location": "Okinawa connection stated by the retailer; exact workshop not identified",
+      "productionNote": "The selected seller credits ponzu. and labels the accessory made in Okinawa. Exact workshop, glass-making kiln and the transparent enclosing material are not separately named.",
+      "url": "https://teteby.base.shop/items/129228420",
+      "sourceIds": [
+        "tete-hanagasa-heart-current-v16",
+        "tete-official-access-v16",
+        "tete-official-about-v16"
+      ]
+    },
+    {
+      "id": "mitsusuke",
+      "name": "Mitsusuke",
+      "location": "Kumamoto City, Kumamoto",
+      "productionNote": "Mitsusuke is a Higo-inlay workshop in Kumamoto. Its selected pierced option uses an inlaid iron face with gold, on a separately specified base and fittings.",
+      "url": "https://mitsusuke.com/",
+      "sourceIds": [
+        "mitsusuke-higo-history-v16",
+        "mitsusuke-company-store-v16",
+        "mitsusuke-shizuku-pe02-v16"
+      ]
+    },
+    {
+      "id": "menoya",
+      "name": "Menoya",
+      "location": "Matsue, Shimane",
+      "productionNote": "Menoya is based in Shimane and carries forward the rounded Izumo-style magatama form. The selected necklace combines named stones and cords; the mines and every stage of this SKU’s manufacture are not specified.",
+      "url": "https://www.anahitastyle.com/",
+      "sourceIds": [
+        "menoya-company-v16",
+        "menoya-izumo-form-v16",
+        "menoya-n15-current-v16"
       ]
     }
   ],
@@ -1360,6 +1707,225 @@
         "mie-akoya-oh002-current-v12",
         "mie-pearl-union-current-v12",
         "mie-akoya-shop-list-current-v12"
+      ]
+    },
+    {
+      "id": "beams-official",
+      "name": "BEAMS official online shop",
+      "url": "https://www.beams.co.jp/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Confirm the current destination and item-specific shipping terms at the official shop.",
+        "countries": null,
+        "sourceIds": [
+          "yadome-akita-rice-beams-v16",
+          "yadome-atelier-official-v16",
+          "yadome-atelier-shop-v16"
+        ]
+      },
+      "returns": "Confirm current item-specific return conditions at the official shop.",
+      "sourceIds": [
+        "yadome-akita-rice-beams-v16",
+        "yadome-atelier-official-v16",
+        "yadome-atelier-shop-v16"
+      ]
+    },
+    {
+      "id": "sava-store-official",
+      "name": "SAVA!STORE",
+      "url": "https://savastore.jp/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Confirm the current destination and item-specific shipping terms at the official shop.",
+        "countries": null,
+        "sourceIds": [
+          "sur-basic1-clear-current-v16",
+          "sur-sabae-making-v16",
+          "sava-store-physical-v16"
+        ]
+      },
+      "returns": "Confirm current item-specific return conditions at the official shop.",
+      "sourceIds": [
+        "sur-basic1-clear-current-v16",
+        "sur-sabae-making-v16",
+        "sava-store-physical-v16"
+      ]
+    },
+    {
+      "id": "nanayosha-official",
+      "name": "Nanayosha official online store",
+      "url": "https://nanayosha.theshop.jp/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Confirm the current destination and item-specific shipping terms at the official shop.",
+        "countries": null,
+        "sourceIds": [
+          "nanayosha-punu-vanilla-current-v16",
+          "nanayosha-tajimi-making-v16",
+          "nanayosha-suzuki-tile-shop-v16"
+        ]
+      },
+      "returns": "Confirm current item-specific return conditions at the official shop.",
+      "sourceIds": [
+        "nanayosha-punu-vanilla-current-v16",
+        "nanayosha-tajimi-making-v16",
+        "nanayosha-suzuki-tile-shop-v16"
+      ]
+    },
+    {
+      "id": "earth-hiroshima-official",
+      "name": "EARTH Hiroshima official online shop",
+      "url": "https://oneearth.official.ec/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Confirm the current destination and item-specific shipping terms at the official shop.",
+        "countries": null,
+        "sourceIds": [
+          "earth-hiroshima-crane-silver-current-v16",
+          "earth-hiroshima-crane-design-v16",
+          "hiroshima-resthouse-shop-v16",
+          "hiroshima-resthouse-access-v16"
+        ]
+      },
+      "returns": "Confirm current item-specific return conditions at the official shop.",
+      "sourceIds": [
+        "earth-hiroshima-crane-silver-current-v16",
+        "earth-hiroshima-crane-design-v16",
+        "hiroshima-resthouse-shop-v16",
+        "hiroshima-resthouse-access-v16"
+      ]
+    },
+    {
+      "id": "shimadzu-satsuma-kiriko-official",
+      "name": "Shimadzu Satsuma Kiriko official shop",
+      "url": "https://satsumakiriko.co.jp/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Confirm the selected item and your destination at the current official order page.",
+        "countries": null,
+        "sourceIds": [
+          "satsuma-hikari-l-current-v16",
+          "satsuma-process-v16",
+          "satsuma-story-v16",
+          "satsuma-iso-shop-v16"
+        ]
+      },
+      "returns": "Check the current item-specific return conditions before ordering.",
+      "sourceIds": [
+        "satsuma-hikari-l-current-v16",
+        "satsuma-process-v16",
+        "satsuma-story-v16",
+        "satsuma-iso-shop-v16"
+      ]
+    },
+    {
+      "id": "kokoroiki-applause",
+      "name": "Jewelry Applause at Kokoro-iki",
+      "url": "https://kokoro-iki.jp/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Confirm the selected item and your destination at the current official order page.",
+        "countries": null,
+        "sourceIds": [
+          "applause-ja1x001-current-v16",
+          "applause-indigo-story-v16",
+          "applause-naruto-shop-v16"
+        ]
+      },
+      "returns": "Check the current item-specific return conditions before ordering.",
+      "sourceIds": [
+        "applause-ja1x001-current-v16",
+        "applause-indigo-story-v16",
+        "applause-naruto-shop-v16"
+      ]
+    },
+    {
+      "id": "yoboty-official",
+      "name": "YOBOTY official online shop",
+      "url": "https://yob283848.owndshop.com/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Confirm the selected item and your destination at the current official order page.",
+        "countries": null,
+        "sourceIds": [
+          "yoboty-long-current-v16",
+          "yoboty-process-v16",
+          "yoboty-current-retailers-v16",
+          "aoya-official-visit-v16",
+          "aoya-official-access-v16"
+        ]
+      },
+      "returns": "Check the current item-specific return conditions before ordering.",
+      "sourceIds": [
+        "yoboty-long-current-v16",
+        "yoboty-process-v16",
+        "yoboty-current-retailers-v16",
+        "aoya-official-visit-v16",
+        "aoya-official-access-v16"
+      ]
+    },
+    {
+      "id": "tete-by-okinawa",
+      "name": "tete by Okinawa",
+      "url": "https://teteby.base.shop/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Confirm the selected item and your destination at the current official order page.",
+        "countries": null,
+        "sourceIds": [
+          "tete-hanagasa-heart-current-v16",
+          "tete-official-access-v16",
+          "tete-official-about-v16"
+        ]
+      },
+      "returns": "Check the current item-specific return conditions before ordering.",
+      "sourceIds": [
+        "tete-hanagasa-heart-current-v16",
+        "tete-official-access-v16",
+        "tete-official-about-v16"
+      ]
+    },
+    {
+      "id": "mitsusuke-official",
+      "name": "Mitsusuke official shop",
+      "url": "https://mitsusuke.com/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Check the current destination and item-specific delivery conditions at the official shop.",
+        "countries": null,
+        "sourceIds": []
+      },
+      "returns": "Check the official shop’s current conditions for the selected pierced variant before ordering.",
+      "sourceIds": [
+        "mitsusuke-shizuku-pe02-v16",
+        "mitsusuke-company-store-v16"
+      ]
+    },
+    {
+      "id": "menoya-anahita-official",
+      "name": "Menoya ANAHITA STYLE official shop",
+      "url": "https://www.anahitastyle.com/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Check current destination and item-specific delivery conditions with the official shop.",
+        "countries": null,
+        "sourceIds": []
+      },
+      "returns": "Confirm the current return and exchange conditions for this limited listing at the official shop.",
+      "sourceIds": [
+        "menoya-n15-current-v16",
+        "menoya-company-v16",
+        "menoya-shops-v16"
       ]
     }
   ],
@@ -2056,6 +2622,106 @@
       "merchantId": "mie-pearl-union-official",
       "programId": null,
       "officialProductUrl": "https://shop.mie-pearl.net/product/akoya-pearl-stud-earrings-oh-002",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "yadome-akita-rice-silver-pierced-earrings-official",
+      "productId": "yadome-akita-rice-silver-pierced-earrings",
+      "merchantId": "beams-official",
+      "programId": null,
+      "officialProductUrl": "https://www.beams.co.jp/item/beams_japan/accessory/56420298390/",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "sur-basic1-clear-pearl-pierced-earrings-official",
+      "productId": "sur-basic1-clear-pearl-pierced-earrings",
+      "merchantId": "sava-store-official",
+      "programId": null,
+      "officialProductUrl": "https://savastore.jp/?pid=144282648",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "nanayosha-punu-gold-vanilla-pierced-earrings-official",
+      "productId": "nanayosha-punu-gold-vanilla-pierced-earrings",
+      "merchantId": "nanayosha-official",
+      "programId": null,
+      "officialProductUrl": "https://nanayosha.theshop.jp/items/77119082",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "earth-hiroshima-origami-crane-chain-earrings-official",
+      "productId": "earth-hiroshima-origami-crane-chain-earrings",
+      "merchantId": "earth-hiroshima-official",
+      "programId": null,
+      "officialProductUrl": "https://oneearth.official.ec/items/72364676",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "shimadzu-satsuma-kiriko-hikari-l-pendant-official",
+      "productId": "shimadzu-satsuma-kiriko-hikari-l-pendant",
+      "merchantId": "shimadzu-satsuma-kiriko-official",
+      "programId": null,
+      "officialProductUrl": "https://satsumakiriko.co.jp/products/%E4%BA%8C%E8%89%B2%E8%A1%A325%E5%91%A8%E5%B9%B4-%E5%85%89%E8%A1%A3%E3%81%B2%E3%81%8B%E3%82%8A%E3%81%88-l-%E9%87%91%E8%B5%A4%E3%83%AB%E3%83%AA",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "applause-awa-indigo-pearl-clip-on-earrings-official",
+      "productId": "applause-awa-indigo-pearl-clip-on-earrings",
+      "merchantId": "kokoroiki-applause",
+      "programId": null,
+      "officialProductUrl": "https://kokoro-iki.jp/store/products/detail/2361",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "yoboty-inshu-washi-indigo-long-nonhole-earrings-official",
+      "productId": "yoboty-inshu-washi-indigo-long-nonhole-earrings",
+      "merchantId": "yoboty-official",
+      "programId": null,
+      "officialProductUrl": "https://yob283848.owndshop.com/items/35168470",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "tete-ryukyu-glass-hanagasa-heart-pierced-earrings-official",
+      "productId": "tete-ryukyu-glass-hanagasa-heart-pierced-earrings",
+      "merchantId": "tete-by-okinawa",
+      "programId": null,
+      "officialProductUrl": "https://teteby.base.shop/items/129228420",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "mitsusuke-shizuku-pe02-official",
+      "productId": "mitsusuke-higo-zogan-shizuku-pierced-earrings",
+      "merchantId": "mitsusuke-official",
+      "programId": null,
+      "officialProductUrl": "https://mitsusuke.com/product/ype-02/",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "menoya-izumo-n15-official",
+      "productId": "menoya-izumo-magatama-n15-necklace",
+      "merchantId": "menoya-anahita-official",
+      "programId": null,
+      "officialProductUrl": "https://www.anahitastyle.com/view/item/000000027267",
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
       "affiliateLinkVerifiedAt": null
@@ -5230,6 +5896,576 @@
       "whatToCheck": [
         "The selected product identifies Akoya pearls from Ise-Shima. This is not a claim of wild natural pearls or an independently established treatment history.",
         "K18 yellow gold is stated for the fittings; separate catch composition and per-ear weight are unconfirmed."
+      ]
+    },
+    {
+      "id": "yadome-akita-rice-silver-pierced-earrings",
+      "slug": "yadome-akita-rice-silver-pierced-earrings",
+      "locale": "en",
+      "title": "Yadome Akita rice silver-filigree earrings",
+      "originalTitle": "矢留彫金工房 / 秋田銀線細工 ピアス あきた米",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "akita"
+      ],
+      "craftIds": [
+        "akita-silver-filigree"
+      ],
+      "materialIds": [
+        "silver-970",
+        "silver-925"
+      ],
+      "makerId": "yadome-silver-atelier",
+      "craftClassification": {
+        "label": "Akita silver-filigree work by an Akita City atelier. The retailer identifies this craft with Akita; an individual product certificate is not established.",
+        "sourceIds": [
+          "yadome-akita-rice-beams-v16",
+          "yadome-atelier-official-v16",
+          "yadome-atelier-shop-v16"
+        ]
+      },
+      "size": null,
+      "weightPerPieceGrams": null,
+      "findings": "Ornaments: silver970; metal fittings: silver925, as listed by the retailer. Separate catch composition is not specified.",
+      "fastening": "Close-to-ear stud earrings sold as a pair; one side has a single rice-grain motif and the other a cluster of three. Separate catch construction is not stated.",
+      "priceAmount": 16500,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-17",
+      "taxNote": "Japan official online reference price including consumption tax.",
+      "availability": "listed",
+      "merchantIds": [
+        "beams-official"
+      ],
+      "sourceIds": [
+        "yadome-akita-rice-beams-v16",
+        "yadome-atelier-official-v16",
+        "yadome-atelier-shop-v16"
+      ],
+      "lastVerifiedAt": "2026-11-17",
+      "imageAssetIds": [],
+      "editorialSummary": "Rice-grain motifs turn a familiar Akita reference into small silver ornaments. Fine wire gives the idea more interest than a plain metal silhouette.",
+      "whoItMaySuit": "For a restrained silver accent with a distinctly local, playful motif.",
+      "whatToCheck": [
+        "The retailer specifies silver970 ornaments and silver925 fittings; do not substitute an SV1000 description.",
+        "Store shelf stock and the exact handmade appearance may change; the atelier shop is not a guarantee of this item being present."
+      ],
+      "priceUnit": "pair"
+    },
+    {
+      "id": "sur-basic1-clear-pearl-pierced-earrings",
+      "slug": "sur-basic1-clear-pearl-pierced-earrings",
+      "locale": "en",
+      "title": "Sur Basic1 clear acetate and cotton-pearl earrings",
+      "originalTitle": "Sur/コットンパールポスト ピアス・イヤリング / Basic1（全2色） clear（ピアス）",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "fukui"
+      ],
+      "craftIds": [
+        "sabae-eyeglass-acetate-jewelry"
+      ],
+      "materialIds": [
+        "cellulose-acetate",
+        "cotton-pearl",
+        "titanium",
+        "silver-925"
+      ],
+      "makerId": "sur-tsugi",
+      "craftClassification": {
+        "label": "A contemporary accessory from Sabae using eyeglass-frame material and local processing skills. It is not presented as an individually certified traditional craft.",
+        "sourceIds": [
+          "sur-basic1-clear-current-v16",
+          "sur-sabae-making-v16",
+          "sava-store-physical-v16"
+        ]
+      },
+      "size": "Body W10 ×D6 ×H17mm; cotton pearl diameter7mm.",
+      "weightPerPieceGrams": null,
+      "findings": "64-titanium posts and silver925 catches; cellulose-acetate ornament with cotton pearl.",
+      "fastening": "Stud posts with catches. Selected option: clear pierced earrings.",
+      "priceAmount": 5500,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-17",
+      "taxNote": "Japan official online reference price including consumption tax.",
+      "availability": "listed",
+      "merchantIds": [
+        "sava-store-official"
+      ],
+      "sourceIds": [
+        "sur-basic1-clear-current-v16",
+        "sur-sabae-making-v16",
+        "sava-store-physical-v16"
+      ],
+      "lastVerifiedAt": "2026-11-17",
+      "imageAssetIds": [],
+      "editorialSummary": "A white cotton pearl meets a clear square of eyeglass-frame acetate. The appeal is the space and transparency around the pearl, not an extra layer of glitter.",
+      "whoItMaySuit": "For a compact pale accent that combines a familiar pearl-like round with an unexpected clear frame.",
+      "whatToCheck": [
+        "Cotton pearl is not an Akoya or other cultivated pearl.",
+        "Posts and catches use different metals. Published pair weight is not adopted as an independently measured per-ear weight."
+      ]
+    },
+    {
+      "id": "nanayosha-punu-gold-vanilla-pierced-earrings",
+      "slug": "nanayosha-punu-gold-vanilla-pierced-earrings",
+      "locale": "en",
+      "title": "Nanayosha Punu gold-decorated ceramic earrings in vanilla",
+      "originalTitle": "ぷぬ 金彩 ピアス・イヤリング　バニラ ピアス",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "gifu"
+      ],
+      "craftIds": [
+        "mino-ceramic-jewelry"
+      ],
+      "materialIds": [
+        "ceramic",
+        "fired-gold-decoration",
+        "stainless-steel"
+      ],
+      "makerId": "nanayosha",
+      "craftClassification": {
+        "label": "Ceramic accessories from a Tajimi tile brand in the Mino-ware region. The brand and place connection do not establish individual traditional-craft certification.",
+        "sourceIds": [
+          "nanayosha-punu-vanilla-current-v16",
+          "nanayosha-tajimi-making-v16",
+          "nanayosha-suzuki-tile-shop-v16"
+        ]
+      },
+      "size": "W9 ×H16 ×D8mm. The maker also lists3g for the pierced option, without a clear per-ear/pair basis in the reviewed text.",
+      "weightPerPieceGrams": null,
+      "findings": "Stainless-steel posts and catches; ceramic ornament with fired gold decoration.",
+      "fastening": "Stud posts with catches. Selected option: vanilla pierced earrings.",
+      "priceAmount": 4950,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-17",
+      "taxNote": "Japan official online reference price including consumption tax.",
+      "availability": "listed",
+      "merchantIds": [
+        "nanayosha-official"
+      ],
+      "sourceIds": [
+        "nanayosha-punu-vanilla-current-v16",
+        "nanayosha-tajimi-making-v16",
+        "nanayosha-suzuki-tile-shop-v16"
+      ],
+      "lastVerifiedAt": "2026-11-17",
+      "imageAssetIds": [],
+      "editorialSummary": "Vanilla-colored ceramic and a touch of fired gold give a small ornament a rounded, dimensional presence. A choice for enjoying pottery glaze at the ear.",
+      "whoItMaySuit": "For warm pale color and a three-dimensional shape instead of a long dangling ornament.",
+      "whatToCheck": [
+        "The selected option is vanilla pierced earrings; the shared listing also contains clip-ons and other colors.",
+        "Gold decoration is a fired surface finish, not a solid-gold body. Ceramic can chip or break under impact."
+      ]
+    },
+    {
+      "id": "earth-hiroshima-origami-crane-chain-earrings",
+      "slug": "earth-hiroshima-origami-crane-chain-earrings",
+      "locale": "en",
+      "title": "EARTH Hiroshima silver origami-crane chain earrings",
+      "originalTitle": "折り鶴ジュエリー ピアス シルバー",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "hiroshima"
+      ],
+      "craftIds": [
+        "hiroshima-origami-jewelry"
+      ],
+      "materialIds": [
+        "silver-925",
+        "rhodium-coating"
+      ],
+      "makerId": "earth-hiroshima",
+      "craftClassification": {
+        "label": "Contemporary origami-crane jewelry developed by a Hiroshima brand with designer Adeline Le Mette. Japanese manufacture is stated, but the individual manufacturing prefecture is not identified; traditional-craft certification is not claimed.",
+        "sourceIds": [
+          "earth-hiroshima-crane-silver-current-v16",
+          "earth-hiroshima-crane-design-v16",
+          "hiroshima-resthouse-shop-v16",
+          "hiroshima-resthouse-access-v16"
+        ]
+      },
+      "size": "Chain7cm; earring bar3cm; the crane motif is described as fitting within a7mm square.",
+      "weightPerPieceGrams": null,
+      "findings": "Recycled sterling silver925 with rhodium surface coating.",
+      "fastening": "Long chain earrings with a bar. Detailed wearing and retention instructions should be checked on the actual item.",
+      "priceAmount": 17600,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-17",
+      "taxNote": "Japan official online reference price including consumption tax.",
+      "availability": "listed",
+      "merchantIds": [
+        "earth-hiroshima-official"
+      ],
+      "sourceIds": [
+        "earth-hiroshima-crane-silver-current-v16",
+        "earth-hiroshima-crane-design-v16",
+        "hiroshima-resthouse-shop-v16",
+        "hiroshima-resthouse-access-v16"
+      ],
+      "lastVerifiedAt": "2026-11-17",
+      "imageAssetIds": [],
+      "editorialSummary": "A tiny silver origami crane sits on a long fine chain. Hiroshima’s peace motif becomes a small, moving accent rather than a large statement pendant.",
+      "whoItMaySuit": "For a long silver line with a small recognisable Japanese motif, rather than a compact stud.",
+      "whatToCheck": [
+        "This is recycled silver jewelry, not a folded-paper earring; the recycled origami paper belongs to the jewelry box.",
+        "A Hiroshima brand/design connection and Japanese manufacture do not establish that every manufacturing step occurs in Hiroshima."
+      ]
+    },
+    {
+      "id": "shimadzu-satsuma-kiriko-hikari-l-pendant",
+      "slug": "shimadzu-satsuma-kiriko-hikari-l-pendant",
+      "locale": "en",
+      "title": "Shimadzu Satsuma kiriko Hikari-e L pendant — gold-red/ruri",
+      "originalTitle": "【二色衣25周年ペンダント】光衣(ひかりえ) L 金赤ルリ",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "kagoshima"
+      ],
+      "craftIds": [
+        "satsuma-kiriko"
+      ],
+      "materialIds": [
+        "glass",
+        "silver-925"
+      ],
+      "makerId": "shimadzu-satsuma-kiriko",
+      "craftClassification": {
+        "label": "Contemporary Satsuma kiriko jewelry by the Kagoshima maker. The listing specifies crystal glass and silver fittings; no individual traditional-craft certification is asserted.",
+        "sourceIds": [
+          "satsuma-hikari-l-current-v16",
+          "satsuma-process-v16",
+          "satsuma-story-v16",
+          "satsuma-iso-shop-v16"
+        ]
+      },
+      "size": "Glass30x17mm, thickness9mm; chain45cm with5cm adjuster.",
+      "weightPerPieceGrams": null,
+      "findings": "Chain and pendant fitting listed as silver925. The glass is lead-containing crystal.",
+      "fastening": null,
+      "priceAmount": 24200,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-17",
+      "taxNote": "Japan selected official/retailer reference price including consumption tax.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "shimadzu-satsuma-kiriko-official"
+      ],
+      "sourceIds": [
+        "satsuma-hikari-l-current-v16",
+        "satsuma-process-v16",
+        "satsuma-story-v16",
+        "satsuma-iso-shop-v16"
+      ],
+      "lastVerifiedAt": "2026-11-17",
+      "imageAssetIds": [],
+      "editorialSummary": "A deep-blue and violet glass rectangle makes the neckline a small field of cut light. Broad clear facets and finer cuts give this pendant two different rhythms.",
+      "whoItMaySuit": "For a color-led necklace that holds its own on a plain top.",
+      "whatToCheck": [
+        "Choose the L gold-red/ruri variant; the S size and other color listings are separate selections.",
+        "The listed size and chain length help position it at the neckline. The detailed closure and total weight should be checked if they affect your choice."
+      ],
+      "priceUnit": "one-item"
+    },
+    {
+      "id": "applause-awa-indigo-pearl-clip-on-earrings",
+      "slug": "applause-awa-indigo-pearl-clip-on-earrings",
+      "locale": "en",
+      "title": "Jewelry Applause Awa-indigo pearl clip-on earrings ja1x001",
+      "originalTitle": "～阿波藍染め～ イヤリング / ja1x001",
+      "publishStatus": "published",
+      "productType": [
+        "clip-on-earrings"
+      ],
+      "prefectureIds": [
+        "tokushima"
+      ],
+      "craftIds": [
+        "awa-indigo-pearl-jewelry"
+      ],
+      "materialIds": [
+        "indigo-dyed-pearl",
+        "plated-brass"
+      ],
+      "makerId": "jewelry-applause",
+      "craftClassification": {
+        "label": "Contemporary pearl jewelry colored with Awa indigo by a Naruto maker. It is not an assertion that the pearl itself was farmed in Tokushima.",
+        "sourceIds": [
+          "applause-ja1x001-current-v16",
+          "applause-indigo-story-v16",
+          "applause-naruto-shop-v16"
+        ]
+      },
+      "size": "Listed overall dimensions about40x11mm. Listed weight8g does not specify a per-ear basis.",
+      "weightPerPieceGrams": null,
+      "findings": "Silver-tone brass fittings with nickel-free plating; pearl species and metal-coating composition are not further identified.",
+      "fastening": "Screw-spring clip-on earrings; the pierced conversion is a separate option.",
+      "priceAmount": 17160,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-17",
+      "taxNote": "Japan selected official/retailer reference price including consumption tax.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "kokoroiki-applause"
+      ],
+      "sourceIds": [
+        "applause-ja1x001-current-v16",
+        "applause-indigo-story-v16",
+        "applause-naruto-shop-v16"
+      ],
+      "lastVerifiedAt": "2026-11-17",
+      "imageAssetIds": [],
+      "editorialSummary": "Blue pearl drops offer a different way into Japanese indigo: color carried by an irregular pearl rather than by cloth. A short chain lets the blue sit below the ear.",
+      "whoItMaySuit": "For a pearl shape with a blue focal point and a non-pierced fitting.",
+      "whatToCheck": [
+        "The price refers to ja1x001 at the selected current retailer; other Applause designs and the separate BASE store have different prices or tax statements.",
+        "Nickel-free plating is a material description, not a promise against skin reactions. Confirm the fitting if you have particular metal requirements."
+      ],
+      "priceUnit": "pair"
+    },
+    {
+      "id": "yoboty-inshu-washi-indigo-long-nonhole-earrings",
+      "slug": "yoboty-inshu-washi-indigo-long-nonhole-earrings",
+      "locale": "en",
+      "title": "YOBOTY Inshu-washi indigo Long Type non-hole earrings",
+      "originalTitle": "★Select【藍染】Long Type（ノンホール）",
+      "publishStatus": "published",
+      "productType": [
+        "clip-on-earrings"
+      ],
+      "prefectureIds": [
+        "tottori"
+      ],
+      "craftIds": [
+        "inshu-washi-jewelry"
+      ],
+      "materialIds": [
+        "inshu-washi"
+      ],
+      "makerId": "yoboty-tsp",
+      "craftClassification": {
+        "label": "Contemporary jewelry made with Tottori Inshu washi by YOBOTY. Paper origin, jewelry manufacture and a product-level traditional-craft certificate are separate matters.",
+        "sourceIds": [
+          "yoboty-long-current-v16",
+          "yoboty-process-v16",
+          "yoboty-current-retailers-v16",
+          "aoya-official-visit-v16",
+          "aoya-official-access-v16"
+        ]
+      },
+      "size": "Listing dimensions H33xW5mm; inclusion of the fitting is not separately stated.",
+      "weightPerPieceGrams": null,
+      "findings": "Current listing calls the fitting surgical; alloy grade and the construction of the non-hole option are not separately specified.",
+      "fastening": "Non-hole option only in this selection; the pierced variation was out of stock when checked.",
+      "priceAmount": 2750,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-17",
+      "taxNote": "Japan selected official/retailer reference price including consumption tax.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "yoboty-official"
+      ],
+      "sourceIds": [
+        "yoboty-long-current-v16",
+        "yoboty-process-v16",
+        "yoboty-current-retailers-v16",
+        "aoya-official-visit-v16",
+        "aoya-official-access-v16"
+      ],
+      "lastVerifiedAt": "2026-11-17",
+      "imageAssetIds": [],
+      "editorialSummary": "Indigo is rolled into a slender paper line. Pale fibers and darker blue patches give a quiet alternative to glossy glass, while the long outline keeps it graphic.",
+      "whoItMaySuit": "For a long blue outline with a fibrous, matte-looking surface and a non-hole fitting.",
+      "whatToCheck": [
+        "Select the non-hole variation; the available pierced and non-hole options must not be inferred from the overall InStock label.",
+        "Exact fitting grade and per-piece weight are not established. If they determine your choice, ask the official shop about the selected variation."
+      ]
+    },
+    {
+      "id": "tete-ryukyu-glass-hanagasa-heart-pierced-earrings",
+      "slug": "tete-ryukyu-glass-hanagasa-heart-pierced-earrings",
+      "locale": "en",
+      "title": "ponzu. Ryukyu-glass Hanagasa heart earrings at tete",
+      "originalTitle": "琉球ガラス使用！ハートピアス（T-A27-88）②花笠",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "okinawa"
+      ],
+      "craftIds": [
+        "ryukyu-glass-fragment-jewelry"
+      ],
+      "materialIds": [
+        "glass",
+        "surgical-stainless-steel"
+      ],
+      "makerId": "ponzu-okinawa",
+      "craftClassification": {
+        "label": "Contemporary handmade jewelry incorporating Ryukyu-glass fragments, credited to ponzu. and presented by an Okinawa select shop. This is not an item-level traditional-craft certification or confirmation of every component origin.",
+        "sourceIds": [
+          "tete-hanagasa-heart-current-v16",
+          "tete-official-access-v16",
+          "tete-official-about-v16"
+        ]
+      },
+      "size": null,
+      "weightPerPieceGrams": null,
+      "findings": "Surgical stainless steel stated for the fittings; exact grade and separate catch material not specified.",
+      "fastening": "Pierced earrings. Detailed post/catch construction is not separately stated.",
+      "priceAmount": 3700,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-17",
+      "taxNote": "Japan official retailer displayed reference price; no currency conversion.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "tete-by-okinawa"
+      ],
+      "sourceIds": [
+        "tete-hanagasa-heart-current-v16",
+        "tete-official-access-v16",
+        "tete-official-about-v16"
+      ],
+      "lastVerifiedAt": "2026-11-17",
+      "imageAssetIds": [],
+      "editorialSummary": "A small rounded heart holds a lively mix of glass colors. The Hanagasa option puts green, yellow, red and blue-green fragments close to the ear rather than on a long chain.",
+      "whoItMaySuit": "For a colorful heart shape that stays near the lobe, instead of a long pendant-like earring.",
+      "whatToCheck": [
+        "Choose option②Hanagasa. Option①Blue was sold out; its photo or stock does not describe the selected variation.",
+        "Dimensions and weight are not listed. Ask the official shop if exact scale, enclosing material or catch specification determines your choice."
+      ]
+    },
+    {
+      "id": "mitsusuke-higo-zogan-shizuku-pierced-earrings",
+      "slug": "mitsusuke-higo-zogan-shizuku-pierced-earrings",
+      "locale": "en",
+      "title": "Mitsusuke Higo-inlay Shizuku teardrop earrings PE-02",
+      "originalTitle": "イヤリング・ピアス（しずく型）",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "kumamoto"
+      ],
+      "craftIds": [
+        "higo-zogan"
+      ],
+      "materialIds": [
+        "iron",
+        "gold-24k",
+        "brass",
+        "gold-plating",
+        "stainless-steel"
+      ],
+      "makerId": "mitsusuke",
+      "craftClassification": {
+        "label": "Higo-inlay jewelry from a Kumamoto workshop. Gold is inlaid into the iron ornament; the base and findings use separately listed materials. An individual product certification is not established.",
+        "sourceIds": [
+          "mitsusuke-higo-history-v16",
+          "mitsusuke-shizuku-pe02-v16"
+        ]
+      },
+      "size": "Main body: 15mm high × 9mm wide × 0.8mm thick.",
+      "weightPerPieceGrams": null,
+      "findings": "Inlaid face: iron and 24K gold. Base: gold-plated brass. Posts and catches: stainless steel; grade not stated.",
+      "fastening": "Pierced-earring option with a post and catch; select ピアス on the shared product page.",
+      "priceAmount": 14300,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-17",
+      "taxNote": "Japan official online reference price including consumption tax for the selected pierced option.",
+      "availability": "listed",
+      "merchantIds": [
+        "mitsusuke-official"
+      ],
+      "sourceIds": [
+        "mitsusuke-shizuku-pe02-v16",
+        "mitsusuke-higo-history-v16",
+        "mitsusuke-company-store-v16"
+      ],
+      "lastVerifiedAt": "2026-11-17",
+      "imageAssetIds": [],
+      "editorialSummary": "Black and gold, reduced to a clean teardrop. Mitsusuke turns Higo inlay into a graphic ear accent, with curved lines rather than a dense floral motif.",
+      "whoItMaySuit": "Choose it for a dark, clearly outlined earring with a restrained gold detail.",
+      "whatToCheck": [
+        "The shared listing offers pierced and clip-on choices. This selection is the pierced PE-02 option; confirm the selected option before ordering.",
+        "24K gold describes the inlay, not the entire earring. The stainless-steel grade and per-ear weight are not stated."
+      ]
+    },
+    {
+      "id": "menoya-izumo-magatama-n15-necklace",
+      "slug": "menoya-izumo-magatama-n15-necklace",
+      "locale": "en",
+      "title": "Menoya Izumo-style magatama cord necklace N-15",
+      "originalTitle": "【限定】出雲型勾玉ネックレス　N-15",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "shimane"
+      ],
+      "craftIds": [
+        "izumo-magatama-jewelry"
+      ],
+      "materialIds": [
+        "golden-rutile-quartz",
+        "crystal-quartz",
+        "goshenite",
+        "kunzite",
+        "freshwater-pearl",
+        "textile"
+      ],
+      "makerId": "menoya",
+      "craftClassification": {
+        "label": "Izumo-style magatama jewelry associated with Shimane maker Menoya. The regional connection is the rounded magatama form and maker context; stone-mining locations and every manufacturing stage of this necklace are unconfirmed.",
+        "sourceIds": [
+          "menoya-izumo-form-v16",
+          "menoya-company-v16",
+          "menoya-n15-current-v16"
+        ]
+      },
+      "size": "Necklace length: 42cm. Magatama sizes: 20mm and 10mm.",
+      "weightPerPieceGrams": null,
+      "findings": "The materials list names waxed cord and SHOWEN kumihimo braid. This SKU’s exact cord-fibre composition and metal-fitting specification are not stated.",
+      "fastening": null,
+      "priceAmount": 32791,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-17",
+      "taxNote": "Japan official online reference price including consumption tax for the limited N-15 listing.",
+      "availability": "listed",
+      "merchantIds": [
+        "menoya-anahita-official"
+      ],
+      "sourceIds": [
+        "menoya-n15-current-v16",
+        "menoya-izumo-form-v16",
+        "menoya-company-v16",
+        "menoya-shops-v16"
+      ],
+      "lastVerifiedAt": "2026-11-17",
+      "imageAssetIds": [],
+      "editorialSummary": "Rounded magatama forms and pale cord give this necklace a softer expression than a metal-chain pendant. We chose it for the curved stone silhouette and the contrast between stone and braid.",
+      "whoItMaySuit": "For someone drawn to a recognizable Japanese jewelry form, worn with the softer line of a cord rather than a fine metal chain.",
+      "whatToCheck": [
+        "This is a limited N-15 listing. Current order acceptance was checked, but future stock, restocking and identical stone patterns are not promised.",
+        "The Izumo-style connection does not establish that the stones were mined in Shimane. Cord-fibre composition, closure construction and weight remain unconfirmed."
       ]
     }
   ]

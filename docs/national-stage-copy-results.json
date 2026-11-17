@@ -1,0 +1,926 @@
+{
+  "checkedAt": "2026-11-17T07:39:34.594Z",
+  "baselineCommit": "387f73c431d43f8c7b99f22079c1523b6f8cffc2",
+  "method": "Exact-copy and baseline change checks against v0.11. These checks establish localized coverage and actual revision, not semantic originality, factual truth, legal clearance, SEO or sales performance. Human factual/editorial review remains necessary.",
+  "summary": {
+    "checks": 94,
+    "passed": 94,
+    "failed": 0,
+    "publishedProducts": 60,
+    "existingProducts": 42,
+    "newProducts": 18
+  },
+  "checks": [
+    {
+      "name": "en headline is distinct for each published product",
+      "status": "passed",
+      "detail": {
+        "products": 60
+      }
+    },
+    {
+      "name": "en standfirst is distinct for each published product",
+      "status": "passed",
+      "detail": {
+        "products": 60
+      }
+    },
+    {
+      "name": "en bestFor is distinct for each published product",
+      "status": "passed",
+      "detail": {
+        "products": 60
+      }
+    },
+    {
+      "name": "en consider is distinct for each published product",
+      "status": "passed",
+      "detail": {
+        "products": 60
+      }
+    },
+    {
+      "name": "en editorialSummary is distinct for each published product",
+      "status": "passed",
+      "detail": {
+        "products": 60
+      }
+    },
+    {
+      "name": "en refreshed introduction hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction hamamatsuya-clip",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction hamamatsuya-pendant",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction maruyama-clip-c",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction maruyama-clip-d",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction maruyama-pierced-c",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction maruyama-pierced-d",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction rinzen-seika-amber-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction arcos-cosmic-spiral-pendant",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction arcos-cosmic-glass-bracelet",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction senshu-pearl-stud-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction senshu-pearl-swing-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction sugimura-hosoge-raden-pendant",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction sugimura-lotus-makie-ring",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction simprich-crystal-bubble-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction simprich-rose-quartz-necklace",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction yukieglass-mint-veil-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction yukieglass-rouge-veil-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction nakajima-pear-sakura-pendant",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction sangetsu-irodori-tombodama-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction sangetsu-irodori-tombodama-necklace",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction sghr-tie-tie-glass-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction sghr-kolmio-glass-ear-cuff",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction kazarino-hanabishi-copper-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction kazarino-shippo-pattern-brass-bangle",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction showen-edo-uchi-silk-bracelet",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction iwaya-urushi-9mm-hook-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction toytoy-ninkari-nikuri-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction toytoy-sirokani-pe-silver-necklace",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction tamura-kaisai-enamel-ear-jewelry",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction nanao-shuka-nebula-16g-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction simprich-reversible-topaz-ruby-chain-ring",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction simprich-reversible-silver-piaring-single",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "en refreshed introduction hario-little-tears-clip-on-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja headline is distinct for each published product",
+      "status": "passed",
+      "detail": {
+        "products": 60
+      }
+    },
+    {
+      "name": "ja standfirst is distinct for each published product",
+      "status": "passed",
+      "detail": {
+        "products": 60
+      }
+    },
+    {
+      "name": "ja bestFor is distinct for each published product",
+      "status": "passed",
+      "detail": {
+        "products": 60
+      }
+    },
+    {
+      "name": "ja consider is distinct for each published product",
+      "status": "passed",
+      "detail": {
+        "products": 60
+      }
+    },
+    {
+      "name": "ja editorialSummary is distinct for each published product",
+      "status": "passed",
+      "detail": {
+        "products": 60
+      }
+    },
+    {
+      "name": "ja refreshed introduction hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction hamamatsuya-clip",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction hamamatsuya-pendant",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction maruyama-clip-c",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction maruyama-clip-d",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction maruyama-pierced-c",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction maruyama-pierced-d",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction rinzen-seika-amber-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction arcos-cosmic-spiral-pendant",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction arcos-cosmic-glass-bracelet",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction senshu-pearl-stud-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction senshu-pearl-swing-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction sugimura-hosoge-raden-pendant",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction sugimura-lotus-makie-ring",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction simprich-crystal-bubble-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction simprich-rose-quartz-necklace",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction yukieglass-mint-veil-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction yukieglass-rouge-veil-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction nakajima-pear-sakura-pendant",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction sangetsu-irodori-tombodama-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction sangetsu-irodori-tombodama-necklace",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction sghr-tie-tie-glass-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction sghr-kolmio-glass-ear-cuff",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction kazarino-hanabishi-copper-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction kazarino-shippo-pattern-brass-bangle",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction showen-edo-uchi-silk-bracelet",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction iwaya-urushi-9mm-hook-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction toytoy-ninkari-nikuri-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction toytoy-sirokani-pe-silver-necklace",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction tamura-kaisai-enamel-ear-jewelry",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction nanao-shuka-nebula-16g-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction simprich-reversible-topaz-ruby-chain-ring",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction simprich-reversible-silver-piaring-single",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    },
+    {
+      "name": "ja refreshed introduction hario-little-tears-clip-on-earrings",
+      "status": "passed",
+      "detail": {
+        "headlineUpdated": true,
+        "standfirstUpdated": true,
+        "cardSummaryUpdated": true,
+        "localizedDecision": true
+      }
+    }
+  ],
+  "failures": []
+}

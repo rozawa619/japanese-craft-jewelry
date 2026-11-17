@@ -1,6 +1,9 @@
 # 文書の入口
 
-文書改訂017（2026-11-17）。この一覧の「現在の保守」が通常の入口です。過去の報告を新しい仕様・現在値として読む必要はありません。
+作業版0.16.0・全国追加018（2026-11-17）。文書の入口は保守改訂017を引き継ぎます。この一覧の「現在の保守」が通常の入口で、過去の報告を新しい仕様・現在値として読む必要はありません。
+
+<!-- TODO_PUBLIC_V16: 0.16公開確認後にこの配信状態を更新する。 -->
+0.16は作業/QA中です。公開確認済みの基準は旧0.15のapp1f0021306e87ce9e7dc43bdf446cffedc59e4134・Actions44024678465。ローカルの60公開対象/66登録商品・24県・118画像を、公開反映済みとは扱いません。
 
 ## 現在の保守
 
@@ -17,11 +20,12 @@
 
 ## 検証と未完了条件
 
-- [公開/納品の機械記録](deployment-results.json)と[0.15の実測説明](verification.md)。HTML生成の成功、公開成功、Googleの審査は別です。
+- [公開/納品の機械記録](deployment-results.json)と[実測説明](verification.md)。HTML生成の成功、公開成功、Googleの審査は別です。
+- [全国追加018](../specs/018-national-jewelry-expansion/)。0.16の10県10商品、日英・画像・店舗・購入根拠とnational-stageの検査を確認します。
 - [保守文書017の検証](../specs/017-maintainer-handoff/validation.md)。文書と再実行手順の確認は、過去の画面改修の検査から分けています。
 - [security監査](security-review-v15.md) / [現在の境界](security.md) / [host観測](visual-mobile-stage-hosted-security-headers-results.json)。検出した問題とhost/accountの残範囲を区別します。
 - [申請前チェック](pre-application-checklist.md) / [商用hostの確認](hosting-commercial-readiness-v11.md) / [AdSense点検の履歴](adsense-review-v11.md)。未申請を承認済みにしません。
-- [画像生成記録](image-generation-solo-v14.json) / [地図の取得と実装](inline-maps-v14.md) / [海外SEO](international-seo-v13.md)。実画像/実地図/検索実績の限界も記録しています。
+- [旧単体画像の生成記録](image-generation-solo-v14.json) / [0.16人物画像](image-generation-v16.json) / [0.16単体画像](image-generation-solo-v16.json) / [地図の取得と実装](inline-maps-v14.md) / [海外SEO](international-seo-v13.md)。実画像/実地図/検索実績の限界も記録しています。
 
 ## 説明書でもありbuild入力でもある資料
 
@@ -29,13 +33,15 @@
 | --- | --- |
 | [research/sources.json](research/sources.json) | catalog loader/商品・地域等の出典表示、validator |
 | [assets.json](assets.json) | 画像権利・退役・data/build validator・export |
-| [image-generation-solo-v14.json](image-generation-solo-v14.json) | 単体AI画像50点のhash/生成記録の検査 |
+| [image-generation-solo-v14.json](image-generation-solo-v14.json) | 旧単体AI画像50点のhash/生成記録。新ログに置き換えず保持 |
+| [image-generation-solo-v16.json](image-generation-solo-v16.json) | 新単体AI画像10点。共通readerが旧v14と併読し、active registry全60商品との一致を検査 |
+| [image-generation-v16.json](image-generation-v16.json) | 新人物AI画像10点のprompt・原本・採否。単体ログと分離 |
 | [image-baseline-v12.json](research/image-baseline-v12.json) | 保持する旧画像のSHA検査 |
 
-この4件だけで全依存を網羅した表ではありません。新しい環境へはdocs全体を含む全sourceを渡し、docsを一括削除しないでください。
+この表だけで全依存を網羅したものではありません。新しい環境へはdocs全体を含む全sourceを渡し、docsを一括削除しないでください。
 
 ## 履歴の読み方
 
-archiveと番号付きの旧報告は、当時の判断/失敗raw/出典の確認範囲を保つ資料です。design.mdやcontent-inventory.mdなど古い説明にも当時の件数・UIが残っています。現行の仕様は[016](../specs/016-visual-choices-mobile-security/spec.md)、今回の保守文書の仕様は[017](../specs/017-maintainer-handoff/spec.md)。
+archiveと番号付きの旧報告は、当時の判断/失敗raw/出典の確認範囲を保つ資料です。design.mdやcontent-inventory.mdなど古い説明にも当時の件数・UIが残っています。今回の全国追加は[018](../specs/018-national-jewelry-expansion/spec.md)、引き継ぐUI/securityは[016](../specs/016-visual-choices-mobile-security/spec.md)、保守文書は[017](../specs/017-maintainer-handoff/spec.md)。
 
-0.15の一次実測はvisual-mobile-stage、0.14はprivacy-depth-stage、0.13はvisual-seo-stage。これより古いeditorial/quality/market/destination-stage等を最新検証へ転用しません。今回のdocs/tool検査はhandoff-stageで分けます。私的スクリーンショット/元PNG/artifactsはZIPの実行依存ではなく、納品先の別資料です。
+0.16の一次実測はnational-stage、0.15はvisual-mobile-stage、0.14はprivacy-depth-stage、0.13はvisual-seo-stage。旧editorial/quality/market/destination-stage等を最新検証へ転用しません。017のdocs/tool検査はhandoff-stageで区別します。私的スクリーンショット/元PNG/artifactsはZIPの実行依存ではなく、納品先の別資料です。

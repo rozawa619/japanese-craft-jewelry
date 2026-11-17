@@ -1,0 +1,1505 @@
+{
+  "checkedAt": "2026-11-17T07:43:19.516Z",
+  "origin": "http://127.0.0.1:4323",
+  "base": "/japanese-craft-jewelry/",
+  "node": "v24.22.3",
+  "sourceInputs": {
+    "started": {
+      "src/data/catalog.json": "2f12215f009e327bc8b4a307f8baf2c3df2dd8e757b655870a9ac47bd1b781b2",
+      "src/data/product-detail-images.json": "1fc02f8dc9f625b9badc584770e57bf60a114ec48c06c37f4fb5c1a1d03057c9",
+      "src/config/selection.ts": "a7c839f92eb7c1defe793a532afb984b70fe750180059a4d804f25eebcbd92ab",
+      "src/lib/type-choices.ts": "b90f84917948c30ae8b14b41b790e34ecdb2eccb3a601235c86ec9fb1c95f510",
+      "src/components/TypeChoiceImage.astro": "bee774ecee5d786e0b94b8b6902b5e5927020ac1abee94477cdeca443bdbee59",
+      "src/components/RegionalChoiceGuide.astro": "e4bb91b4604530e1ed7c73f617e9212c53adf83d5faa614b938b84231fac02ca",
+      "src/pages/[lang]/index.astro": "b9f78220191607c883de94623c20829b4568827abaeb5a01e14ef6ae8291e0cc",
+      "src/styles/global.css": "9c4c64dee71083ced55f29c7c3f324c8efb1c7dbc3ee5d3340cb9e0f58feb058"
+    },
+    "completed": {
+      "src/data/catalog.json": "2f12215f009e327bc8b4a307f8baf2c3df2dd8e757b655870a9ac47bd1b781b2",
+      "src/data/product-detail-images.json": "1fc02f8dc9f625b9badc584770e57bf60a114ec48c06c37f4fb5c1a1d03057c9",
+      "src/config/selection.ts": "a7c839f92eb7c1defe793a532afb984b70fe750180059a4d804f25eebcbd92ab",
+      "src/lib/type-choices.ts": "b90f84917948c30ae8b14b41b790e34ecdb2eccb3a601235c86ec9fb1c95f510",
+      "src/components/TypeChoiceImage.astro": "bee774ecee5d786e0b94b8b6902b5e5927020ac1abee94477cdeca443bdbee59",
+      "src/components/RegionalChoiceGuide.astro": "e4bb91b4604530e1ed7c73f617e9212c53adf83d5faa614b938b84231fac02ca",
+      "src/pages/[lang]/index.astro": "b9f78220191607c883de94623c20829b4568827abaeb5a01e14ef6ae8291e0cc",
+      "src/styles/global.css": "9c4c64dee71083ced55f29c7c3f324c8efb1c7dbc3ee5d3340cb9e0f58feb058"
+    }
+  },
+  "method": "Independent raw catalog and editorial-ID ordering oracle; all active regions and home type entries, EN/JA at 320x844. No production selection helper imports. Verify actual representative membership/order, registered src/asset/alt/caption, decode/dimensions/contain, 44px link target and query/hash. No external navigation or map activation.",
+  "checks": [
+    {
+      "name": "en home type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "yadome-akita-rice-silver-pierced-earrings",
+          "count": 30,
+          "src": "images/solo-yadome-akita-rice-silver-pierced-earrings-v16.webp",
+          "target": {
+            "width": 139,
+            "height": 174.578125
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?type=pierced-earrings#all-jewelry"
+        },
+        {
+          "type": "clip-on-earrings",
+          "representative": "applause-awa-indigo-pearl-clip-on-earrings",
+          "count": 15,
+          "src": "images/solo-applause-awa-indigo-pearl-clip-on-earrings-v16.webp",
+          "target": {
+            "width": 139,
+            "height": 174.578125
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?type=clip-on-earrings#all-jewelry"
+        },
+        {
+          "type": "necklace",
+          "representative": "shimadzu-satsuma-kiriko-hikari-l-pendant",
+          "count": 11,
+          "src": "images/solo-shimadzu-satsuma-kiriko-hikari-l-pendant-v16.webp",
+          "target": {
+            "width": 139,
+            "height": 174.578125
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?type=necklace#all-jewelry"
+        },
+        {
+          "type": "ring",
+          "representative": "sugimura-lotus-makie-ring",
+          "count": 3,
+          "src": "images/solo-sugimura-lotus-makie-ring-v14.webp",
+          "target": {
+            "width": 139,
+            "height": 174.578125
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?type=ring#all-jewelry"
+        },
+        {
+          "type": "bracelet",
+          "representative": "saskia-diez-drake-porcelain-cuff",
+          "count": 4,
+          "src": "images/solo-saskia-diez-drake-porcelain-cuff-v14.webp",
+          "target": {
+            "width": 139,
+            "height": 174.578125
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?type=bracelet#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en kanagawa regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "hamamatsuya-catch-pierced",
+          "count": 1,
+          "src": "images/solo-hamamatsuya-catch-pierced-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=kanagawa&type=pierced-earrings#all-jewelry"
+        },
+        {
+          "type": "clip-on-earrings",
+          "representative": "hamamatsuya-clip",
+          "count": 1,
+          "src": "images/solo-hamamatsuya-clip-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=kanagawa&type=clip-on-earrings#all-jewelry"
+        },
+        {
+          "type": "necklace",
+          "representative": "hamamatsuya-pendant",
+          "count": 1,
+          "src": "images/solo-hamamatsuya-pendant-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=kanagawa&type=necklace#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en tokyo regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "rinzen-seika-amber-pierced-earrings",
+          "count": 3,
+          "src": "images/solo-rinzen-seika-amber-pierced-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=tokyo&type=pierced-earrings#all-jewelry"
+        },
+        {
+          "type": "clip-on-earrings",
+          "representative": "hario-little-tears-clip-on-earrings",
+          "count": 1,
+          "src": "images/solo-hario-little-tears-clip-on-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=tokyo&type=clip-on-earrings#all-jewelry"
+        },
+        {
+          "type": "necklace",
+          "representative": "rinzen-leaf-glass-pendant",
+          "count": 1,
+          "src": "images/solo-rinzen-leaf-glass-pendant-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=tokyo&type=necklace#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en saga regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "clip-on-earrings",
+          "representative": "six-kiln-half-moon-earrings",
+          "count": 1,
+          "src": "images/solo-six-kiln-half-moon-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=saga&type=clip-on-earrings#all-jewelry"
+        },
+        {
+          "type": "pierced-earrings",
+          "representative": "six-kiln-blue-bouquet-pierced-earrings",
+          "count": 1,
+          "src": "images/solo-six-kiln-blue-bouquet-pierced-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=saga&type=pierced-earrings#all-jewelry"
+        },
+        {
+          "type": "bracelet",
+          "representative": "saskia-diez-drake-porcelain-cuff",
+          "count": 1,
+          "src": "images/solo-saskia-diez-drake-porcelain-cuff-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=saga&type=bracelet#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en ishikawa regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "checos-japanese-apricot-pierced-earrings",
+          "count": 1,
+          "src": "images/solo-checos-japanese-apricot-pierced-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=ishikawa&type=pierced-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en kyoto regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "morphosphere-ultramarine-pansy-pierced-earrings",
+          "count": 2,
+          "src": "images/solo-morphosphere-ultramarine-pansy-pierced-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=kyoto&type=pierced-earrings#all-jewelry"
+        },
+        {
+          "type": "clip-on-earrings",
+          "representative": "coyorimi-tamamusubi-clip-on-earrings",
+          "count": 2,
+          "src": "images/solo-coyorimi-tamamusubi-clip-on-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=kyoto&type=clip-on-earrings#all-jewelry"
+        },
+        {
+          "type": "necklace",
+          "representative": "nakajima-pear-sakura-pendant",
+          "count": 1,
+          "src": "images/solo-nakajima-pear-sakura-pendant-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=kyoto&type=necklace#all-jewelry"
+        },
+        {
+          "type": "bracelet",
+          "representative": "kazarino-shippo-pattern-brass-bangle",
+          "count": 2,
+          "src": "images/solo-kazarino-shippo-pattern-brass-bangle-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=kyoto&type=bracelet#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en aichi regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "kato-suke-drop-pierced-earrings",
+          "count": 2,
+          "src": "images/solo-kato-suke-drop-pierced-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=aichi&type=pierced-earrings#all-jewelry"
+        },
+        {
+          "type": "ring",
+          "representative": "kato-suke-round-ring",
+          "count": 1,
+          "src": "images/solo-kato-suke-round-ring-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=aichi&type=ring#all-jewelry"
+        },
+        {
+          "type": "clip-on-earrings",
+          "representative": "tamura-kaisai-enamel-ear-jewelry",
+          "count": 1,
+          "src": "images/solo-tamura-kaisai-enamel-ear-jewelry-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=aichi&type=clip-on-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en chiba regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "necklace",
+          "representative": "arcos-cosmic-spiral-pendant",
+          "count": 1,
+          "src": "images/solo-arcos-cosmic-spiral-pendant-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=chiba&type=necklace#all-jewelry"
+        },
+        {
+          "type": "bracelet",
+          "representative": "arcos-cosmic-glass-bracelet",
+          "count": 1,
+          "src": "images/solo-arcos-cosmic-glass-bracelet-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=chiba&type=bracelet#all-jewelry"
+        },
+        {
+          "type": "pierced-earrings",
+          "representative": "sghr-tie-tie-glass-earrings",
+          "count": 1,
+          "src": "images/solo-sghr-tie-tie-glass-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=chiba&type=pierced-earrings#all-jewelry"
+        },
+        {
+          "type": "ear-cuff",
+          "representative": "sghr-kolmio-glass-ear-cuff",
+          "count": 1,
+          "src": "images/solo-sghr-kolmio-glass-ear-cuff-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=chiba&type=ear-cuff#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en osaka regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "senshu-pearl-stud-earrings",
+          "count": 3,
+          "src": "images/solo-senshu-pearl-stud-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=osaka&type=pierced-earrings#all-jewelry"
+        },
+        {
+          "type": "clip-on-earrings",
+          "representative": "senshu-pearl-stud-earrings",
+          "count": 2,
+          "src": "images/solo-senshu-pearl-stud-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=osaka&type=clip-on-earrings#all-jewelry"
+        },
+        {
+          "type": "necklace",
+          "representative": "sangetsu-irodori-tombodama-necklace",
+          "count": 1,
+          "src": "images/solo-sangetsu-irodori-tombodama-necklace-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=osaka&type=necklace#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en nara regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "necklace",
+          "representative": "sugimura-hosoge-raden-pendant",
+          "count": 1,
+          "src": "images/solo-sugimura-hosoge-raden-pendant-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=nara&type=necklace#all-jewelry"
+        },
+        {
+          "type": "ring",
+          "representative": "sugimura-lotus-makie-ring",
+          "count": 1,
+          "src": "images/solo-sugimura-lotus-makie-ring-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=nara&type=ring#all-jewelry"
+        },
+        {
+          "type": "pierced-earrings",
+          "representative": "nanao-shuka-nebula-16g-earrings",
+          "count": 1,
+          "src": "images/solo-nanao-shuka-nebula-16g-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=nara&type=pierced-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en fukuoka regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "iwaya-urushi-9mm-hook-earrings",
+          "count": 1,
+          "src": "images/solo-iwaya-urushi-9mm-hook-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=fukuoka&type=pierced-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en yamanashi regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "simprich-crystal-bubble-pierced-earrings",
+          "count": 1,
+          "src": "images/solo-simprich-crystal-bubble-pierced-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=yamanashi&type=pierced-earrings#all-jewelry"
+        },
+        {
+          "type": "necklace",
+          "representative": "simprich-rose-quartz-necklace",
+          "count": 1,
+          "src": "images/solo-simprich-rose-quartz-necklace-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=yamanashi&type=necklace#all-jewelry"
+        },
+        {
+          "type": "ring",
+          "representative": "simprich-reversible-topaz-ruby-chain-ring",
+          "count": 1,
+          "src": "images/solo-simprich-reversible-topaz-ruby-chain-ring-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=yamanashi&type=ring#all-jewelry"
+        },
+        {
+          "type": "clip-on-earrings",
+          "representative": "simprich-reversible-silver-piaring-single",
+          "count": 1,
+          "src": "images/solo-simprich-reversible-silver-piaring-single-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=yamanashi&type=clip-on-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en hokkaido regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "yukieglass-mint-veil-earrings",
+          "count": 3,
+          "src": "images/solo-yukieglass-mint-veil-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=hokkaido&type=pierced-earrings#all-jewelry"
+        },
+        {
+          "type": "necklace",
+          "representative": "toytoy-sirokani-pe-silver-necklace",
+          "count": 1,
+          "src": "images/solo-toytoy-sirokani-pe-silver-necklace-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=hokkaido&type=necklace#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en toyama regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "clip-on-earrings",
+          "representative": "nousaku-dahlia-gerbera-clip-on-earrings",
+          "count": 1,
+          "src": "images/solo-nousaku-dahlia-gerbera-clip-on-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=toyama&type=clip-on-earrings#all-jewelry"
+        },
+        {
+          "type": "necklace",
+          "representative": "nousaku-aya-tin-pendant",
+          "count": 1,
+          "src": "images/solo-nousaku-aya-tin-pendant-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=toyama&type=necklace#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en mie regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "mie-akoya-oh002-stud-earrings",
+          "count": 1,
+          "src": "images/solo-mie-akoya-oh002-stud-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=mie&type=pierced-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en akita regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "yadome-akita-rice-silver-pierced-earrings",
+          "count": 1,
+          "src": "images/solo-yadome-akita-rice-silver-pierced-earrings-v16.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=akita&type=pierced-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en fukui regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "sur-basic1-clear-pearl-pierced-earrings",
+          "count": 1,
+          "src": "images/solo-sur-basic1-clear-pearl-pierced-earrings-v16.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=fukui&type=pierced-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en gifu regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "nanayosha-punu-gold-vanilla-pierced-earrings",
+          "count": 1,
+          "src": "images/solo-nanayosha-punu-gold-vanilla-pierced-earrings-v16.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=gifu&type=pierced-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en hiroshima regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "earth-hiroshima-origami-crane-chain-earrings",
+          "count": 1,
+          "src": "images/solo-earth-hiroshima-origami-crane-chain-earrings-v16.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=hiroshima&type=pierced-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en kagoshima regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "necklace",
+          "representative": "shimadzu-satsuma-kiriko-hikari-l-pendant",
+          "count": 1,
+          "src": "images/solo-shimadzu-satsuma-kiriko-hikari-l-pendant-v16.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=kagoshima&type=necklace#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en tokushima regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "clip-on-earrings",
+          "representative": "applause-awa-indigo-pearl-clip-on-earrings",
+          "count": 1,
+          "src": "images/solo-applause-awa-indigo-pearl-clip-on-earrings-v16.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=tokushima&type=clip-on-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en tottori regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "clip-on-earrings",
+          "representative": "yoboty-inshu-washi-indigo-long-nonhole-earrings",
+          "count": 1,
+          "src": "images/solo-yoboty-inshu-washi-indigo-long-nonhole-earrings-v16.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=tottori&type=clip-on-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en okinawa regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "tete-ryukyu-glass-hanagasa-heart-pierced-earrings",
+          "count": 1,
+          "src": "images/solo-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=okinawa&type=pierced-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en kumamoto regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "mitsusuke-higo-zogan-shizuku-pierced-earrings",
+          "count": 1,
+          "src": "images/solo-mitsusuke-higo-zogan-shizuku-pierced-earrings-v16.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=kumamoto&type=pierced-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "en shimane regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "necklace",
+          "representative": "menoya-izumo-magatama-n15-necklace",
+          "count": 1,
+          "src": "images/solo-menoya-izumo-magatama-n15-necklace-v16.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/?prefecture=shimane&type=necklace#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja home type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "yadome-akita-rice-silver-pierced-earrings",
+          "count": 30,
+          "src": "images/solo-yadome-akita-rice-silver-pierced-earrings-v16.webp",
+          "target": {
+            "width": 139,
+            "height": 174.578125
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?type=pierced-earrings#all-jewelry"
+        },
+        {
+          "type": "clip-on-earrings",
+          "representative": "applause-awa-indigo-pearl-clip-on-earrings",
+          "count": 15,
+          "src": "images/solo-applause-awa-indigo-pearl-clip-on-earrings-v16.webp",
+          "target": {
+            "width": 139,
+            "height": 174.578125
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?type=clip-on-earrings#all-jewelry"
+        },
+        {
+          "type": "necklace",
+          "representative": "shimadzu-satsuma-kiriko-hikari-l-pendant",
+          "count": 11,
+          "src": "images/solo-shimadzu-satsuma-kiriko-hikari-l-pendant-v16.webp",
+          "target": {
+            "width": 139,
+            "height": 174.578125
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?type=necklace#all-jewelry"
+        },
+        {
+          "type": "ring",
+          "representative": "sugimura-lotus-makie-ring",
+          "count": 3,
+          "src": "images/solo-sugimura-lotus-makie-ring-v14.webp",
+          "target": {
+            "width": 139,
+            "height": 174.578125
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?type=ring#all-jewelry"
+        },
+        {
+          "type": "bracelet",
+          "representative": "saskia-diez-drake-porcelain-cuff",
+          "count": 4,
+          "src": "images/solo-saskia-diez-drake-porcelain-cuff-v14.webp",
+          "target": {
+            "width": 139,
+            "height": 174.578125
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?type=bracelet#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja kanagawa regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "hamamatsuya-catch-pierced",
+          "count": 1,
+          "src": "images/solo-hamamatsuya-catch-pierced-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=kanagawa&type=pierced-earrings#all-jewelry"
+        },
+        {
+          "type": "clip-on-earrings",
+          "representative": "hamamatsuya-clip",
+          "count": 1,
+          "src": "images/solo-hamamatsuya-clip-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=kanagawa&type=clip-on-earrings#all-jewelry"
+        },
+        {
+          "type": "necklace",
+          "representative": "hamamatsuya-pendant",
+          "count": 1,
+          "src": "images/solo-hamamatsuya-pendant-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=kanagawa&type=necklace#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja tokyo regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "rinzen-seika-amber-pierced-earrings",
+          "count": 3,
+          "src": "images/solo-rinzen-seika-amber-pierced-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=tokyo&type=pierced-earrings#all-jewelry"
+        },
+        {
+          "type": "clip-on-earrings",
+          "representative": "hario-little-tears-clip-on-earrings",
+          "count": 1,
+          "src": "images/solo-hario-little-tears-clip-on-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=tokyo&type=clip-on-earrings#all-jewelry"
+        },
+        {
+          "type": "necklace",
+          "representative": "rinzen-leaf-glass-pendant",
+          "count": 1,
+          "src": "images/solo-rinzen-leaf-glass-pendant-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=tokyo&type=necklace#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja saga regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "clip-on-earrings",
+          "representative": "six-kiln-half-moon-earrings",
+          "count": 1,
+          "src": "images/solo-six-kiln-half-moon-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=saga&type=clip-on-earrings#all-jewelry"
+        },
+        {
+          "type": "pierced-earrings",
+          "representative": "six-kiln-blue-bouquet-pierced-earrings",
+          "count": 1,
+          "src": "images/solo-six-kiln-blue-bouquet-pierced-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=saga&type=pierced-earrings#all-jewelry"
+        },
+        {
+          "type": "bracelet",
+          "representative": "saskia-diez-drake-porcelain-cuff",
+          "count": 1,
+          "src": "images/solo-saskia-diez-drake-porcelain-cuff-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=saga&type=bracelet#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja ishikawa regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "checos-japanese-apricot-pierced-earrings",
+          "count": 1,
+          "src": "images/solo-checos-japanese-apricot-pierced-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=ishikawa&type=pierced-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja kyoto regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "morphosphere-ultramarine-pansy-pierced-earrings",
+          "count": 2,
+          "src": "images/solo-morphosphere-ultramarine-pansy-pierced-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=kyoto&type=pierced-earrings#all-jewelry"
+        },
+        {
+          "type": "clip-on-earrings",
+          "representative": "coyorimi-tamamusubi-clip-on-earrings",
+          "count": 2,
+          "src": "images/solo-coyorimi-tamamusubi-clip-on-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=kyoto&type=clip-on-earrings#all-jewelry"
+        },
+        {
+          "type": "necklace",
+          "representative": "nakajima-pear-sakura-pendant",
+          "count": 1,
+          "src": "images/solo-nakajima-pear-sakura-pendant-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=kyoto&type=necklace#all-jewelry"
+        },
+        {
+          "type": "bracelet",
+          "representative": "kazarino-shippo-pattern-brass-bangle",
+          "count": 2,
+          "src": "images/solo-kazarino-shippo-pattern-brass-bangle-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=kyoto&type=bracelet#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja aichi regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "kato-suke-drop-pierced-earrings",
+          "count": 2,
+          "src": "images/solo-kato-suke-drop-pierced-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=aichi&type=pierced-earrings#all-jewelry"
+        },
+        {
+          "type": "ring",
+          "representative": "kato-suke-round-ring",
+          "count": 1,
+          "src": "images/solo-kato-suke-round-ring-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=aichi&type=ring#all-jewelry"
+        },
+        {
+          "type": "clip-on-earrings",
+          "representative": "tamura-kaisai-enamel-ear-jewelry",
+          "count": 1,
+          "src": "images/solo-tamura-kaisai-enamel-ear-jewelry-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=aichi&type=clip-on-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja chiba regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "necklace",
+          "representative": "arcos-cosmic-spiral-pendant",
+          "count": 1,
+          "src": "images/solo-arcos-cosmic-spiral-pendant-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=chiba&type=necklace#all-jewelry"
+        },
+        {
+          "type": "bracelet",
+          "representative": "arcos-cosmic-glass-bracelet",
+          "count": 1,
+          "src": "images/solo-arcos-cosmic-glass-bracelet-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=chiba&type=bracelet#all-jewelry"
+        },
+        {
+          "type": "pierced-earrings",
+          "representative": "sghr-tie-tie-glass-earrings",
+          "count": 1,
+          "src": "images/solo-sghr-tie-tie-glass-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=chiba&type=pierced-earrings#all-jewelry"
+        },
+        {
+          "type": "ear-cuff",
+          "representative": "sghr-kolmio-glass-ear-cuff",
+          "count": 1,
+          "src": "images/solo-sghr-kolmio-glass-ear-cuff-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=chiba&type=ear-cuff#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja osaka regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "senshu-pearl-stud-earrings",
+          "count": 3,
+          "src": "images/solo-senshu-pearl-stud-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=osaka&type=pierced-earrings#all-jewelry"
+        },
+        {
+          "type": "clip-on-earrings",
+          "representative": "senshu-pearl-stud-earrings",
+          "count": 2,
+          "src": "images/solo-senshu-pearl-stud-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=osaka&type=clip-on-earrings#all-jewelry"
+        },
+        {
+          "type": "necklace",
+          "representative": "sangetsu-irodori-tombodama-necklace",
+          "count": 1,
+          "src": "images/solo-sangetsu-irodori-tombodama-necklace-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=osaka&type=necklace#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja nara regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "necklace",
+          "representative": "sugimura-hosoge-raden-pendant",
+          "count": 1,
+          "src": "images/solo-sugimura-hosoge-raden-pendant-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=nara&type=necklace#all-jewelry"
+        },
+        {
+          "type": "ring",
+          "representative": "sugimura-lotus-makie-ring",
+          "count": 1,
+          "src": "images/solo-sugimura-lotus-makie-ring-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=nara&type=ring#all-jewelry"
+        },
+        {
+          "type": "pierced-earrings",
+          "representative": "nanao-shuka-nebula-16g-earrings",
+          "count": 1,
+          "src": "images/solo-nanao-shuka-nebula-16g-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=nara&type=pierced-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja fukuoka regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "iwaya-urushi-9mm-hook-earrings",
+          "count": 1,
+          "src": "images/solo-iwaya-urushi-9mm-hook-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=fukuoka&type=pierced-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja yamanashi regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "simprich-crystal-bubble-pierced-earrings",
+          "count": 1,
+          "src": "images/solo-simprich-crystal-bubble-pierced-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=yamanashi&type=pierced-earrings#all-jewelry"
+        },
+        {
+          "type": "necklace",
+          "representative": "simprich-rose-quartz-necklace",
+          "count": 1,
+          "src": "images/solo-simprich-rose-quartz-necklace-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=yamanashi&type=necklace#all-jewelry"
+        },
+        {
+          "type": "ring",
+          "representative": "simprich-reversible-topaz-ruby-chain-ring",
+          "count": 1,
+          "src": "images/solo-simprich-reversible-topaz-ruby-chain-ring-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=yamanashi&type=ring#all-jewelry"
+        },
+        {
+          "type": "clip-on-earrings",
+          "representative": "simprich-reversible-silver-piaring-single",
+          "count": 1,
+          "src": "images/solo-simprich-reversible-silver-piaring-single-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=yamanashi&type=clip-on-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja hokkaido regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "yukieglass-mint-veil-earrings",
+          "count": 3,
+          "src": "images/solo-yukieglass-mint-veil-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=hokkaido&type=pierced-earrings#all-jewelry"
+        },
+        {
+          "type": "necklace",
+          "representative": "toytoy-sirokani-pe-silver-necklace",
+          "count": 1,
+          "src": "images/solo-toytoy-sirokani-pe-silver-necklace-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=hokkaido&type=necklace#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja toyama regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "clip-on-earrings",
+          "representative": "nousaku-dahlia-gerbera-clip-on-earrings",
+          "count": 1,
+          "src": "images/solo-nousaku-dahlia-gerbera-clip-on-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=toyama&type=clip-on-earrings#all-jewelry"
+        },
+        {
+          "type": "necklace",
+          "representative": "nousaku-aya-tin-pendant",
+          "count": 1,
+          "src": "images/solo-nousaku-aya-tin-pendant-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=toyama&type=necklace#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja mie regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "mie-akoya-oh002-stud-earrings",
+          "count": 1,
+          "src": "images/solo-mie-akoya-oh002-stud-earrings-v14.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=mie&type=pierced-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja akita regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "yadome-akita-rice-silver-pierced-earrings",
+          "count": 1,
+          "src": "images/solo-yadome-akita-rice-silver-pierced-earrings-v16.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=akita&type=pierced-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja fukui regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "sur-basic1-clear-pearl-pierced-earrings",
+          "count": 1,
+          "src": "images/solo-sur-basic1-clear-pearl-pierced-earrings-v16.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=fukui&type=pierced-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja gifu regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "nanayosha-punu-gold-vanilla-pierced-earrings",
+          "count": 1,
+          "src": "images/solo-nanayosha-punu-gold-vanilla-pierced-earrings-v16.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=gifu&type=pierced-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja hiroshima regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "earth-hiroshima-origami-crane-chain-earrings",
+          "count": 1,
+          "src": "images/solo-earth-hiroshima-origami-crane-chain-earrings-v16.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=hiroshima&type=pierced-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja kagoshima regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "necklace",
+          "representative": "shimadzu-satsuma-kiriko-hikari-l-pendant",
+          "count": 1,
+          "src": "images/solo-shimadzu-satsuma-kiriko-hikari-l-pendant-v16.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=kagoshima&type=necklace#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja tokushima regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "clip-on-earrings",
+          "representative": "applause-awa-indigo-pearl-clip-on-earrings",
+          "count": 1,
+          "src": "images/solo-applause-awa-indigo-pearl-clip-on-earrings-v16.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=tokushima&type=clip-on-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja tottori regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "clip-on-earrings",
+          "representative": "yoboty-inshu-washi-indigo-long-nonhole-earrings",
+          "count": 1,
+          "src": "images/solo-yoboty-inshu-washi-indigo-long-nonhole-earrings-v16.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=tottori&type=clip-on-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja okinawa regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "tete-ryukyu-glass-hanagasa-heart-pierced-earrings",
+          "count": 1,
+          "src": "images/solo-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=okinawa&type=pierced-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja kumamoto regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "pierced-earrings",
+          "representative": "mitsusuke-higo-zogan-shizuku-pierced-earrings",
+          "count": 1,
+          "src": "images/solo-mitsusuke-higo-zogan-shizuku-pierced-earrings-v16.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=kumamoto&type=pierced-earrings#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "ja shimane regional type image membership",
+      "status": "passed",
+      "detail": [
+        {
+          "type": "necklace",
+          "representative": "menoya-izumo-magatama-n15-necklace",
+          "count": 1,
+          "src": "images/solo-menoya-izumo-magatama-n15-necklace-v16.webp",
+          "target": {
+            "width": 288,
+            "height": 126
+          },
+          "href": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/?prefecture=shimane&type=necklace#all-jewelry"
+        }
+      ]
+    },
+    {
+      "name": "No browser exceptions",
+      "status": "passed"
+    },
+    {
+      "name": "Selection and layout sources stayed unchanged",
+      "status": "passed"
+    }
+  ],
+  "failures": [],
+  "screenshots": [
+    "artifacts/national-stage-type-images-en-home-320.png",
+    "artifacts/national-stage-type-images-en-tokyo-320.png",
+    "artifacts/national-stage-type-images-ja-home-320.png",
+    "artifacts/national-stage-type-images-ja-tokyo-320.png"
+  ],
+  "imagesChecked": 104,
+  "pageErrors": [],
+  "consoleErrors": [],
+  "completedAt": "2026-11-17T07:44:03.001Z",
+  "summary": {
+    "checks": 52,
+    "passed": 52,
+    "failed": 0,
+    "regions": 24,
+    "locales": 2,
+    "imagesChecked": 104,
+    "screenshots": 4,
+    "pageErrors": 0,
+    "consoleErrors": 0
+  }
+}

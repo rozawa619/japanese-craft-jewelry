@@ -35,6 +35,16 @@ export const tourismRanking: {
 
 /** One editorial choice per prefecture, never a claim of sales popularity. */
 export const regionalRepresentatives: Record<string,string> = {
+  akita:'yadome-akita-rice-silver-pierced-earrings',
+  fukui:'sur-basic1-clear-pearl-pierced-earrings',
+  gifu:'nanayosha-punu-gold-vanilla-pierced-earrings',
+  hiroshima:'earth-hiroshima-origami-crane-chain-earrings',
+  kagoshima:'shimadzu-satsuma-kiriko-hikari-l-pendant',
+  tokushima:'applause-awa-indigo-pearl-clip-on-earrings',
+  tottori:'yoboty-inshu-washi-indigo-long-nonhole-earrings',
+  okinawa:'tete-ryukyu-glass-hanagasa-heart-pierced-earrings',
+  kumamoto:'mitsusuke-higo-zogan-shizuku-pierced-earrings',
+  shimane:'menoya-izumo-magatama-n15-necklace',
   osaka:'senshu-pearl-stud-earrings',
   chiba:'arcos-cosmic-spiral-pendant',
   nara:'sugimura-hosoge-raden-pendant',

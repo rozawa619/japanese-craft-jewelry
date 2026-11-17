@@ -1,0 +1,531 @@
+{
+  "version": "0.16.0",
+  "checkedAt": "2026-11-17",
+  "mode": "Built-in image_gen; no CLI/API-key fallback",
+  "scope": "Original AI editorial styling concepts for the national expansion",
+  "referencePolicy": "Written descriptions and, for the explicitly documented edits, project-generated AI outputs only. No retailer photograph copied, hotlinked, or supplied as a generation reference. AI illustrations are not exact SKU reproductions, real product photographs, fit, quantity, dimensions, or material evidence.",
+  "modelSettingsAreFictionalNotNationalityInference": true,
+  "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+  "signedC2paClaim": false,
+  "conversion": "Same intrinsic dimensions; WebP quality84 effort6 through prepare-styling-image.mjs, with IPTC trainedAlgorithmicMedia XMP. No semantic edit outside image_gen.",
+  "rejectedCandidates": [
+    {
+      "productId": "yadome-akita-rice-silver-pierced-earrings",
+      "kind": "styling",
+      "prompt": "Use case: photorealistic-natural. Asset type: original landscape3:2 AI editorial jewelry styling image, about1536x1024. Subject: a fictional adult American woman age27 with a cute lively smile, straight dark-blonde hair in a short tucked bob, natural adult facial features, wearing a simple dusty-rose blouse. Jewelry: a tiny silver-colored stud-like ornament at the earlobe shaped as a small cluster of three overlapping pointed oval rice grains; a fine silver outline around each grain encloses delicate dense silver-wire mesh filigree, no dangling chain, no stones, no actual edible rice. Ivory studio backdrop, warm natural daylight, refined slightly illustrative fashion-magazine finish. Youthful adult appearance, clear even skin with no moles, freckles or dark spots, no celebrity likeness. Full face, visible ear, neckline and whole ornament within central70%, generous margins. No hair or hands hiding the jewel. No other jewelry, words, logo, watermark, collage or border. Independent text-inspired styling concept, not a real product/wearer photograph or exact retail SKU reproduction; no copied retailer-photo composition.",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-3eddd073-313a-490f-850e-743276581498.png",
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T07:20:52.009Z",
+      "visualReview": {
+        "status": "rejected",
+        "outputViewed": true,
+        "checkedAt": "2026-11-17",
+        "observations": "Four-grain rosette differs from the selected three-grain motif."
+      },
+      "model": {
+        "fictionalNationality": "American",
+        "age": 27,
+        "style": "cute"
+      },
+      "rejectionReason": "Four-grain rosette differs from the selected three-grain motif.",
+      "rejectedAt": "2026-11-17T07:23:38.096Z",
+      "decision": "rejected",
+      "originalDeliveryPath": "generated-originals/0.16.0/rejected/styling-yadome-akita-rice-silver-pierced-earrings-f790ad702171.png",
+      "pngSha256": "f790ad7021717789ecbd76ded5914b2f7da5574cbcf12bcaecc46844436e5625",
+      "pngBytes": 2110009
+    }
+  ],
+  "images": [
+    {
+      "productId": "applause-awa-indigo-pearl-clip-on-earrings",
+      "assetId": "ai-styling-applause-awa-indigo-pearl-clip-on-earrings-v16",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: photorealistic-natural. Asset type: original landscape3:2 AI editorial jewelry styling image, about1536x1024. Subject: a fictional adult Japanese woman, age30, elegant, sleek dark chin-length bob tucked behind the visible ear, relaxed pleasant expression, wearing a warm ivory linen blouse. Jewelry: one lustrous irregular oval-to-teardrop blue to blue-green baroque pearl, dangling from a few short silver-colored chain links under a discreet silver-colored clip fitting; the complete ear ornament is only about4cm high, no three-bead stack. Soft warm ivory studio backdrop, natural daylight, subtle realistic textures and refined slightly illustrative magazine finish. Healthy youthful adult appearance, clear even skin, no moles, freckles or dark spots, no celebrity likeness. Keep the full face, visible ear, neckline and complete ornament within central70% with generous margins. Hair away from jewelry, no hands hiding it. No other jewelry, text, logo, watermark, price tags, collage or border. Original AI styling concept inspired by a written description, not an exact retail SKU recreation or photograph of a real product/wearer; no retailer-photo composition.",
+      "model": {
+        "fictionalNationality": "Japanese",
+        "age": 30,
+        "style": "elegant"
+      },
+      "generatedAt": "2026-11-17T07:05:30.997Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-6fcb31f0-3746-4765-a738-2a27fcf550e9.png",
+      "originalDeliveryPath": "generated-originals/0.16.0/styling-applause-awa-indigo-pearl-clip-on-earrings-v16.png",
+      "pngSha256": "6cf66ea2037239b262309f7089a4465fc09c7c4cf09c1a40a2238b69432f704a",
+      "pngBytes": 1990180,
+      "publicPath": "public/images/styling-applause-awa-indigo-pearl-clip-on-earrings-v16.webp",
+      "sha256": "8fa8a81a9210f2ab6666b21936b520f63311b76e137c5ace8bdb911dcb55ae7d",
+      "bytes": 68602,
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "preserveRatio": true,
+      "conversion": "Same-size WebP quality84 effort6, with IPTC trainedAlgorithmicMedia XMP; no semantic edit outside image_gen",
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a woman in ivory with a lustrous blue-green drop on short silver-colored links.",
+        "ja": "アイボリーの服に、短い銀色のつなぎから青緑色のつやのある飾りを下げた女性のAIイメージ。"
+      },
+      "sourceIds": [
+        "applause-ja1x001-current-v16",
+        "applause-indigo-story-v16",
+        "applause-naruto-shop-v16"
+      ],
+      "officialUrl": "https://kokoro-iki.jp/store/products/detail/2361",
+      "reference": {
+        "kind": "written-description-only",
+        "thirdPartyPhotographsUsed": false
+      },
+      "visualReview": {
+        "status": "accepted",
+        "checkedAt": "2026-11-17",
+        "outputViewed": true,
+        "noPropsTextOrLogo": true,
+        "observations": "Fictional adult portrait, complete face and visible ornament, no additional jewelry or text. Styling concept only; no real use, fitting or measured-scale claim."
+      }
+    },
+    {
+      "productId": "earth-hiroshima-origami-crane-chain-earrings",
+      "assetId": "ai-styling-earth-hiroshima-origami-crane-chain-earrings-v16",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: photorealistic-natural. Asset type: original landscape3:2 AI editorial jewelry styling image, about1536x1024. Subject: a fictional adult Japanese woman age29, elegant gentle expression, sleek dark hair gathered in a low chignon, clear visible ear and neck, wearing a simple pale beige collarless shirt. Jewelry: a very fine silver-colored chain ear drop about7cm long, ending in a tiny silver-colored origami crane about7mm across, crisp folded triangular wings and a small pointed neck, refined scale rather than a large bird; do not turn the crane into a heart or butterfly. Soft warm ivory studio backdrop, natural daylight, subtle realistic textures and refined slightly illustrative magazine finish. Youthful adult appearance, clear even skin without moles, freckles or dark spots, no celebrity likeness. Full face, visible ear, neckline and whole ornament inside central70% with generous margins. Hair away from ornament, no hands hiding it. No other jewelry, text, logo, watermark, packaging, collage or borders. Original AI styling concept inspired only by a written description, not an exact retail SKU recreation or real product/wearer photograph; no copied retailer-photo composition.",
+      "model": {
+        "fictionalNationality": "Japanese",
+        "age": 29,
+        "style": "elegant"
+      },
+      "generatedAt": "2026-11-17T07:17:11.484Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-2d41ebc3-7879-4587-aad1-2b60857b4df5.png",
+      "originalDeliveryPath": "generated-originals/0.16.0/styling-earth-hiroshima-origami-crane-chain-earrings-v16.png",
+      "pngSha256": "935adb12b212a39265e76048e7181fd5f3cbbbd944f0c2238b76a51d877cbff0",
+      "pngBytes": 1944916,
+      "publicPath": "public/images/styling-earth-hiroshima-origami-crane-chain-earrings-v16.webp",
+      "sha256": "bdb09652065e2f8b59038117620cfeb384b798b9b42e18900ad20c9c5dbd8526",
+      "bytes": 60058,
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "preserveRatio": true,
+      "conversion": "Same-size WebP quality84 effort6, with IPTC trainedAlgorithmicMedia XMP; no semantic edit outside image_gen",
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a woman in beige with a fine silver-colored chain ending in a tiny folded-crane ornament.",
+        "ja": "ベージュの服に、細い銀色のチェーンから小さな折り鶴形を下げた女性のAIイメージ。"
+      },
+      "sourceIds": [
+        "earth-hiroshima-crane-silver-current-v16",
+        "earth-hiroshima-crane-design-v16",
+        "hiroshima-resthouse-shop-v16",
+        "hiroshima-resthouse-access-v16"
+      ],
+      "officialUrl": "https://oneearth.official.ec/items/72364676",
+      "reference": {
+        "kind": "written-description-only",
+        "thirdPartyPhotographsUsed": false
+      },
+      "visualReview": {
+        "status": "accepted",
+        "checkedAt": "2026-11-17",
+        "outputViewed": true,
+        "noPropsTextOrLogo": true,
+        "observations": "Fictional adult portrait, complete face and visible ornament, no additional jewelry or text. Styling concept only; no real use, fitting or measured-scale claim."
+      }
+    },
+    {
+      "productId": "menoya-izumo-magatama-n15-necklace",
+      "assetId": "ai-styling-menoya-izumo-magatama-n15-necklace-v16",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: photorealistic-natural. Asset type: original landscape 3:2 AI editorial styling image for a Japanese craft jewelry selection website, about1536x1024. Create a completely fictional adult Japanese woman age29, cute approachable face, natural adult proportions, warm gentle smile, clear even skin with no moles or dark spots, dark brown shoulder-length hair. Half-length head-to-upper-chest fashion portrait, soft ivory backdrop, natural light, refined slightly illustrative magazine finish. She wears a dark navy simple open-neck blouse with a short pale cream and gold-beige twisted textile cord necklace: a small translucent pale yellowish quartz comma-shaped magatama front ornament, a few fine gold-toned needle inclusions in the stone, with a much smaller clear curved stone beside it. Main ornament should read only about20mm, not a large statement pendant. The cord is textile rather than metal chain, its top clasp stays out of view. Give this quietly curved stone a clear place against the navy fabric. Keep full head, neckline and complete ornament within middle70% of frame, uncropped generous margins, no hands obscuring necklace. No other jewelry, no letters/logos/watermarks, no collage. Original AI styling concept based only on a text description, not an exact SKU recreation or photograph of a real product/wearer; do not copy a retailer-photo composition.",
+      "model": {
+        "fictionalNationality": "Japanese",
+        "age": 29,
+        "style": "cute"
+      },
+      "generatedAt": "2026-11-17T07:02:40.269Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-de6f27d9-6c3b-41fc-993a-7a84217d52b4.png",
+      "originalDeliveryPath": "generated-originals/0.16.0/styling-menoya-izumo-magatama-n15-necklace-v16.png",
+      "pngSha256": "ef143cf9e6a58c9efe508a3359aba11658ec3f1ab78f0dba8be0d3203506340b",
+      "pngBytes": 2051485,
+      "publicPath": "public/images/styling-menoya-izumo-magatama-n15-necklace-v16.webp",
+      "sha256": "536ddc22a6f7b049805f6b4a91ae9047c9ae3ee668abd0e61d5e34f902324878",
+      "bytes": 77780,
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "preserveRatio": true,
+      "conversion": "Same-size WebP quality84 effort6, with IPTC trainedAlgorithmicMedia XMP; no semantic edit outside image_gen",
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a woman in navy with pale curved-stone ornaments on a cream-colored cord.",
+        "ja": "紺色の服に、淡色の曲がった石の飾りとクリーム色のひもを合わせた女性のAIイメージ。"
+      },
+      "sourceIds": [
+        "menoya-n15-current-v16",
+        "menoya-izumo-form-v16",
+        "menoya-company-v16",
+        "menoya-shops-v16"
+      ],
+      "officialUrl": "https://www.anahitastyle.com/view/item/000000027267",
+      "reference": {
+        "kind": "written-description-only",
+        "thirdPartyPhotographsUsed": false
+      },
+      "visualReview": {
+        "status": "accepted",
+        "checkedAt": "2026-11-17",
+        "outputViewed": true,
+        "noPropsTextOrLogo": true,
+        "observations": "Fictional adult portrait, complete face and visible ornament, no additional jewelry or text. Styling concept only; no real use, fitting or measured-scale claim."
+      }
+    },
+    {
+      "productId": "mitsusuke-higo-zogan-shizuku-pierced-earrings",
+      "assetId": "ai-styling-mitsusuke-higo-zogan-shizuku-pierced-earrings-v16",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: photorealistic-natural. Asset type: original landscape3:2 AI editorial jewelry styling image, about1536x1024. Subject: a fictional adult British woman, age31, elegant, chestnut-brown shoulder-length hair swept behind one visible ear, a composed friendly expression, wearing a soft sage-green open-neck blouse. Jewelry: a small black teardrop-shaped flat ear drop about15mm tall, with flowing warm-gold curved teardrop and crescent-like inlay marks on its black face, hanging from a tiny round gold-colored front stud through a very short visible link. Soft warm ivory studio backdrop, natural daylight, subtle realistic textures and a refined slightly illustrative fashion-magazine finish. Clear even skin with no moles or dark spots, adult appearance, no celebrity likeness. Keep the full face, visible ear, neckline and complete ornament inside the central70% with generous margins. Hair away from jewelry, no hands hiding it. No other jewelry, text, logo, watermark, price tags, collage or border. This is an independent AI styling concept inspired by a written description, not an exact retail SKU recreation or a real product/wearer photograph. Do not copy a retailer-photo composition.",
+      "model": {
+        "fictionalNationality": "British",
+        "age": 31,
+        "style": "elegant"
+      },
+      "generatedAt": "2026-11-17T07:03:40.138Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-e867b84e-f878-47d5-ba30-8c354c0997c3.png",
+      "originalDeliveryPath": "generated-originals/0.16.0/styling-mitsusuke-higo-zogan-shizuku-pierced-earrings-v16.png",
+      "pngSha256": "088d6ffee21a3bd27c522ac3796508bcf7eec4169605e4e5b9efb9b657c7b5cf",
+      "pngBytes": 2126123,
+      "publicPath": "public/images/styling-mitsusuke-higo-zogan-shizuku-pierced-earrings-v16.webp",
+      "sha256": "745396a3244fc0c599df165d3e3469fa889c5accf1344caa45ae6eb6456ee178",
+      "bytes": 77702,
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "preserveRatio": true,
+      "conversion": "Same-size WebP quality84 effort6, with IPTC trainedAlgorithmicMedia XMP; no semantic edit outside image_gen",
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a woman in sage green with a small black and gold-colored teardrop ear ornament.",
+        "ja": "セージグリーンの服に、黒と金色の小さなしずく形の耳飾りを合わせた女性のAIイメージ。"
+      },
+      "sourceIds": [
+        "mitsusuke-shizuku-pe02-v16",
+        "mitsusuke-higo-history-v16",
+        "mitsusuke-company-store-v16"
+      ],
+      "officialUrl": "https://mitsusuke.com/product/ype-02/",
+      "reference": {
+        "kind": "written-description-only",
+        "thirdPartyPhotographsUsed": false
+      },
+      "visualReview": {
+        "status": "accepted",
+        "checkedAt": "2026-11-17",
+        "outputViewed": true,
+        "noPropsTextOrLogo": true,
+        "observations": "Fictional adult portrait, complete face and visible ornament, no additional jewelry or text. Styling concept only; no real use, fitting or measured-scale claim."
+      }
+    },
+    {
+      "productId": "nanayosha-punu-gold-vanilla-pierced-earrings",
+      "assetId": "ai-styling-nanayosha-punu-gold-vanilla-pierced-earrings-v16",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: photorealistic-natural. Asset type: original landscape3:2 AI editorial jewelry styling image, about1536x1024. Subject: a fictional adult British woman age30, cute approachable soft smile, light brown pixie haircut with a short side fringe, clear visible ear, wearing a simple soft moss-green fine-knit top. Jewelry: a compact vanilla-cream glossy ceramic stud-like ear ornament, gently curved and pillowed like a folded half-moon petal with a thin gold-colored fired border along its curved edge, about16mm high; no dangling chain or separate gemstone. Soft warm ivory studio backdrop, natural daylight, subtle realistic textures and refined slightly illustrative magazine finish. Youthful adult appearance, clear even skin without moles, freckles or dark spots, no celebrity likeness. Full face, visible ear, neckline and whole ornament inside central70% with generous margins. Hair away from ornament, no hands hiding it. No other jewelry, text, logo, watermark, packaging, collage or borders. Original AI styling concept inspired only by a written description, not an exact retail SKU recreation or real product/wearer photograph; no copied retailer-photo composition.",
+      "model": {
+        "fictionalNationality": "British",
+        "age": 30,
+        "style": "cute"
+      },
+      "generatedAt": "2026-11-17T07:18:00.408Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-706e6181-8e30-462f-b05f-75dba5b78447.png",
+      "originalDeliveryPath": "generated-originals/0.16.0/styling-nanayosha-punu-gold-vanilla-pierced-earrings-v16.png",
+      "pngSha256": "2d2c67af3502344092537161ce20c096484cc3182be1933433fd1db549c39e2c",
+      "pngBytes": 2066828,
+      "publicPath": "public/images/styling-nanayosha-punu-gold-vanilla-pierced-earrings-v16.webp",
+      "sha256": "06fa2967cf252621a849b97f2d2ed13f6275416bd5ccdae11139f0257579267e",
+      "bytes": 87440,
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "preserveRatio": true,
+      "conversion": "Same-size WebP quality84 effort6, with IPTC trainedAlgorithmicMedia XMP; no semantic edit outside image_gen",
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a short-haired woman in moss green with a small cream-colored curved ear ornament edged in gold color.",
+        "ja": "モスグリーンの服に、金色の縁があるクリーム色の小さな曲線の耳飾りを合わせたショートヘアの女性のAIイメージ。"
+      },
+      "sourceIds": [
+        "nanayosha-punu-vanilla-current-v16",
+        "nanayosha-tajimi-making-v16",
+        "nanayosha-suzuki-tile-shop-v16"
+      ],
+      "officialUrl": "https://nanayosha.theshop.jp/items/77119082",
+      "reference": {
+        "kind": "written-description-only",
+        "thirdPartyPhotographsUsed": false
+      },
+      "visualReview": {
+        "status": "accepted",
+        "checkedAt": "2026-11-17",
+        "outputViewed": true,
+        "noPropsTextOrLogo": true,
+        "observations": "Fictional adult portrait, complete face and visible ornament, no additional jewelry or text. Styling concept only; no real use, fitting or measured-scale claim."
+      }
+    },
+    {
+      "productId": "shimadzu-satsuma-kiriko-hikari-l-pendant",
+      "assetId": "ai-styling-shimadzu-satsuma-kiriko-hikari-l-pendant-v16",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: photorealistic-natural. Asset type: original landscape3:2 AI editorial jewelry styling image, about1536x1024. Subject: a fictional adult American woman, age28, cute friendly small smile, softly wavy dark-blonde shoulder-length hair, wearing a plain white shirt with an open collar. Jewelry: a small thick vertically rectangular transparent cut-glass pendant about3cm high, blue to violet colored glass layers mixed with clear diagonal facets and fine fan-like and star-like cuts, on a fine silver-colored linked chain with a small silver-colored bail. Soft warm ivory studio backdrop, natural daylight, subtle realistic textures and a refined slightly illustrative fashion-magazine finish. Clear even skin with no moles or dark spots, adult appearance, no celebrity likeness. Keep the full face, visible ear, neckline and complete ornament inside the central70% with generous margins. Hair away from jewelry, no hands hiding it. No other jewelry, text, logo, watermark, price tags, collage or border. This is an independent AI styling concept inspired by a written description, not an exact retail SKU recreation or a real product/wearer photograph. Do not copy a retailer-photo composition.",
+      "model": {
+        "fictionalNationality": "American",
+        "age": 28,
+        "style": "cute"
+      },
+      "generatedAt": "2026-11-17T07:03:56.521Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-7c0db22d-23ad-4b23-92f0-15346e9869bc.png",
+      "originalDeliveryPath": "generated-originals/0.16.0/styling-shimadzu-satsuma-kiriko-hikari-l-pendant-v16.png",
+      "pngSha256": "63a48fe2a50cef2b11a50d59df7ab9433d9fe755b248fc77f5b1ef2995498bf0",
+      "pngBytes": 2108778,
+      "publicPath": "public/images/styling-shimadzu-satsuma-kiriko-hikari-l-pendant-v16.webp",
+      "sha256": "b7bb401c87c5a3df32ab58c8588f47fa1879496dbca99bbd05ccce2bacc2e4e5",
+      "bytes": 81818,
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "preserveRatio": true,
+      "conversion": "Same-size WebP quality84 effort6, with IPTC trainedAlgorithmicMedia XMP; no semantic edit outside image_gen",
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a woman in a white shirt with a rectangular blue-violet cut-glass-style pendant.",
+        "ja": "白いシャツに青紫色の長方形のカットガラス風ペンダントを合わせた女性のAIイメージ。"
+      },
+      "sourceIds": [
+        "satsuma-hikari-l-current-v16",
+        "satsuma-process-v16",
+        "satsuma-story-v16",
+        "satsuma-iso-shop-v16"
+      ],
+      "officialUrl": "https://satsumakiriko.co.jp/products/%E4%BA%8C%E8%89%B2%E8%A1%A325%E5%91%A8%E5%B9%B4-%E5%85%89%E8%A1%A3%E3%81%B2%E3%81%8B%E3%82%8A%E3%81%88-l-%E9%87%91%E8%B5%A4%E3%83%AB%E3%83%AA",
+      "reference": {
+        "kind": "written-description-only",
+        "thirdPartyPhotographsUsed": false
+      },
+      "visualReview": {
+        "status": "accepted",
+        "checkedAt": "2026-11-17",
+        "outputViewed": true,
+        "noPropsTextOrLogo": true,
+        "observations": "Fictional adult portrait, complete face and visible ornament, no additional jewelry or text. Styling concept only; no real use, fitting or measured-scale claim."
+      }
+    },
+    {
+      "productId": "sur-basic1-clear-pearl-pierced-earrings",
+      "assetId": "ai-styling-sur-basic1-clear-pearl-pierced-earrings-v16",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: photorealistic-natural. Asset type: original landscape3:2 AI editorial jewelry styling image, about1536x1024. Subject: a completely fictional adult American woman age32 with deep brown skin, short natural black curls clear of the visible ear, elegant and quietly confident, warm small smile, wearing a simple burgundy boat-neck top. Jewelry: a small creamy-white cotton pearl sitting at the earlobe, immediately above one flat clear transparent square of acetate, the square hanging straight with its sides horizontal and vertical rather than diamond-shaped. The pearl is about7mm and the clear square about10mm, compact geometric ornament about17mm total height. No pearl below the square, no metal gemstone frame. Warm ivory studio backdrop, natural daylight, subtle realistic textures with a refined slightly illustrative fashion-magazine finish. Youthful adult appearance, clear even skin without moles, freckles or dark spots, no celebrity likeness. Full face, visible ear, neckline and entire ornament within central70%, generous margins. Hair away from ornament, no hands hiding it. No other jewelry, letters, logos, watermark, collage, border, props or price tags. Original AI styling concept inspired by a text description only, not an exact retail SKU recreation or real product/wearer photograph; no copied retailer-photo composition.",
+      "model": {
+        "fictionalNationality": "American",
+        "age": 32,
+        "style": "elegant"
+      },
+      "generatedAt": "2026-11-17T07:13:15.059Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-e7149a35-dee9-44a8-91a3-23e4a8215039.png",
+      "originalDeliveryPath": "generated-originals/0.16.0/styling-sur-basic1-clear-pearl-pierced-earrings-v16.png",
+      "pngSha256": "c5a41aa9ae07443be58bb8f28599149cd1545b19f91465d4c176479e43a5848b",
+      "pngBytes": 2032065,
+      "publicPath": "public/images/styling-sur-basic1-clear-pearl-pierced-earrings-v16.webp",
+      "sha256": "4621a9bbc995e2a61c35621cacd2cde05e0a503306656350240b92ac76243603",
+      "bytes": 78122,
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "preserveRatio": true,
+      "conversion": "Same-size WebP quality84 effort6, with IPTC trainedAlgorithmicMedia XMP; no semantic edit outside image_gen",
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a woman in burgundy with a white round bead above a clear square ear ornament.",
+        "ja": "バーガンディ色の服に、白い丸い飾りとその下の透明な四角を合わせた女性のAIイメージ。"
+      },
+      "sourceIds": [
+        "sur-basic1-clear-current-v16",
+        "sur-sabae-making-v16",
+        "sava-store-physical-v16"
+      ],
+      "officialUrl": "https://savastore.jp/?pid=144282648",
+      "reference": {
+        "kind": "written-description-only",
+        "thirdPartyPhotographsUsed": false
+      },
+      "visualReview": {
+        "status": "accepted",
+        "checkedAt": "2026-11-17",
+        "outputViewed": true,
+        "noPropsTextOrLogo": true,
+        "observations": "Fictional adult portrait, complete face and visible ornament, no additional jewelry or text. Styling concept only; no real use, fitting or measured-scale claim."
+      }
+    },
+    {
+      "productId": "tete-ryukyu-glass-hanagasa-heart-pierced-earrings",
+      "assetId": "ai-styling-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: photorealistic-natural. Asset type: original landscape3:2 AI editorial jewelry styling image, about1536x1024. Subject: a fictional adult Japanese woman, age28, cute bright warm smile, dark-brown shoulder-length hair loosely tied back, natural adult features, wearing a pale sky-blue shirt. Jewelry: a small softly rounded transparent heart-shaped stud-like ear ornament close to the earlobe, with tiny embedded aqua, green, yellow and vermilion glass fragments, colorful transparent glass texture, no blue-only heart or hanging long chain. Warm ivory studio backdrop, natural daylight, subtle realistic textures with a refined slightly illustrative fashion-magazine finish. Youthful adult appearance, clear even skin without moles, freckles or dark spots, no celebrity likeness. Full face, visible ear, neckline and entire ornament within central70%, generous margins. Hair away from ornament, no hands hiding it. No other jewelry, letters, logos, watermark, collage, border, props or price tags. Original AI styling concept inspired by a text description only, not an exact retail SKU recreation or real product/wearer photograph; no copied retailer-photo composition.",
+      "model": {
+        "fictionalNationality": "Japanese",
+        "age": 28,
+        "style": "cute"
+      },
+      "generatedAt": "2026-11-17T07:12:14.835Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-77536ee2-70b0-4635-819f-475adc1422fc.png",
+      "originalDeliveryPath": "generated-originals/0.16.0/styling-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16.png",
+      "pngSha256": "127b3336f881e9fefe86aa636e8603917502326a5df13dd32a48cbb07cdf74b4",
+      "pngBytes": 1991847,
+      "publicPath": "public/images/styling-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16.webp",
+      "sha256": "0c0f9de0eee38df8cc7d3c4c5f74582b74ab833d4fb01e23ab245d141f182fea",
+      "bytes": 72682,
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "preserveRatio": true,
+      "conversion": "Same-size WebP quality84 effort6, with IPTC trainedAlgorithmicMedia XMP; no semantic edit outside image_gen",
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a smiling woman in pale blue with a small multicolored transparent heart ear ornament.",
+        "ja": "淡いブルーの服に、色とりどりの透明な小さなハート形の耳飾りを合わせて微笑む女性のAIイメージ。"
+      },
+      "sourceIds": [
+        "tete-hanagasa-heart-current-v16",
+        "tete-official-access-v16",
+        "tete-official-about-v16"
+      ],
+      "officialUrl": "https://teteby.base.shop/items/129228420",
+      "reference": {
+        "kind": "written-description-only",
+        "thirdPartyPhotographsUsed": false
+      },
+      "visualReview": {
+        "status": "accepted",
+        "checkedAt": "2026-11-17",
+        "outputViewed": true,
+        "noPropsTextOrLogo": true,
+        "observations": "Fictional adult portrait, complete face and visible ornament, no additional jewelry or text. Styling concept only; no real use, fitting or measured-scale claim."
+      }
+    },
+    {
+      "productId": "yadome-akita-rice-silver-pierced-earrings",
+      "assetId": "ai-styling-yadome-akita-rice-silver-pierced-earrings-v16",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Image1 is a project-generated fictional adult styling portrait; image2 is a project-generated AI jewelry illustration, not a retailer photo. Edit ONLY the visible silver-colored earring in image1. Replace its FOUR-petal rosette with exactly THREE elongated pointed oval rice-grain shapes, slightly overlapping in a loose fan/cluster like the three-grain ornament on the RIGHT of image2. Exactly3 visible silver filigree rice grains, not4, not a symmetrical flower, no central stone, no added chain. Keep the ornament a tiny close-fitting stud-like accent at the same location and same approximate scale. Keep the woman’s identity, face, hair, skin, smile, dusty-rose blouse, lighting, background, original1536x1024 framing and all other pixels as closely as possible. No text, logo or watermark. This is an AI styling concept, not an exact product photograph or evidence of fitting or real use.",
+      "model": {
+        "fictionalNationality": "American",
+        "age": 27,
+        "style": "cute"
+      },
+      "generatedAt": "2026-11-17T07:23:21.596Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-ef9e6ac2-04ed-4b50-bab1-0c65d562785f.png",
+      "originalDeliveryPath": "generated-originals/0.16.0/styling-yadome-akita-rice-silver-pierced-earrings-v16.png",
+      "pngSha256": "da1f55e3777f3cf6b9a3c33453451fb703477d35803c8c0c94a0aa1e860cfbe7",
+      "pngBytes": 2047947,
+      "publicPath": "public/images/styling-yadome-akita-rice-silver-pierced-earrings-v16.webp",
+      "sha256": "8c3007d32da7f813446fd741b3128c129e35f9a543960c49f8eeee0b5dbe890e",
+      "bytes": 79996,
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "preserveRatio": true,
+      "conversion": "Same-size WebP quality84 effort6, with IPTC trainedAlgorithmicMedia XMP; no semantic edit outside image_gen",
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a smiling woman in dusty rose with a small cluster of three silver-colored filigree rice-grain shapes.",
+        "ja": "くすみピンクの服に、銀色の細工で三つの米粒形を重ねた小さな耳飾りを合わせて微笑む女性のAIイメージ。"
+      },
+      "sourceIds": [
+        "yadome-akita-rice-beams-v16",
+        "yadome-atelier-official-v16",
+        "yadome-atelier-shop-v16"
+      ],
+      "officialUrl": "https://www.beams.co.jp/item/beams_japan/accessory/56420298390/",
+      "reference": {
+        "kind": "project-generated-ai-edit",
+        "thirdPartyPhotographsUsed": false
+      },
+      "references": [
+        {
+          "originalGeneratorPath": "C:/Users/rozawa/.codex/generated_images/01a1e2f9-e4e0-7663-ae83-e5120e88efc1/exec-3eddd073-313a-490f-850e-743276581498.png",
+          "sha256": "f790ad7021717789ecbd76ded5914b2f7da5574cbcf12bcaecc46844436e5625",
+          "pngBytes": 2110009,
+          "originalDeliveryPath": "generated-originals/0.16.0/rejected/styling-yadome-akita-rice-silver-pierced-earrings-f790ad702171.png"
+        },
+        {
+          "originalGeneratorPath": "C:/Users/rozawa/.codex/generated_images/01a1e2f9-e4e0-7663-ae83-e5120e88efc1/exec-247f532e-834e-4a68-a6ae-c78cd503ff2a.png",
+          "sha256": "e84893625f473d88a5b16e3af55631896e0b680c5de3d1fc44fbc8ce5c4994ff",
+          "pngBytes": 1646922,
+          "originalDeliveryPath": "generated-originals/0.16.0/solo-yadome-akita-rice-silver-pierced-earrings-v16.png"
+        }
+      ],
+      "referenceType": "Project-generated AI output only; no third-party photograph",
+      "replaces": "Four-grain rosette differs from the selected three-grain motif.",
+      "visualReview": {
+        "status": "accepted",
+        "checkedAt": "2026-11-17",
+        "outputViewed": true,
+        "noPropsTextOrLogo": true,
+        "observations": "Fictional adult portrait, complete face and visible ornament, no additional jewelry or text. Styling concept only; no real use, fitting or measured-scale claim."
+      }
+    },
+    {
+      "productId": "yoboty-inshu-washi-indigo-long-nonhole-earrings",
+      "assetId": "ai-styling-yoboty-inshu-washi-indigo-long-nonhole-earrings-v16",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: photorealistic-natural. Asset type: original landscape3:2 AI editorial jewelry styling image, about1536x1024. Subject: a fictional adult British woman, age27, cute and cheerful, copper-brown bob tucked behind one ear, soft adult features, wearing a simple charcoal-gray crew-neck top. Jewelry: a slim vertical tube-like rolled paper ear ornament about33mm long and5mm wide, mottled indigo blue with pale visible fibrous streaks, a minimal small translucent non-pierced fitting near the earlobe, understated and light in appearance rather than heavy metal. Soft warm ivory studio backdrop, natural daylight, subtle realistic textures and refined slightly illustrative magazine finish. Healthy youthful adult appearance, clear even skin, no moles, freckles or dark spots, no celebrity likeness. Keep the full face, visible ear, neckline and complete ornament within central70% with generous margins. Hair away from jewelry, no hands hiding it. No other jewelry, text, logo, watermark, price tags, collage or border. Original AI styling concept inspired by a written description, not an exact retail SKU recreation or photograph of a real product/wearer; no retailer-photo composition.",
+      "model": {
+        "fictionalNationality": "British",
+        "age": 27,
+        "style": "cute"
+      },
+      "generatedAt": "2026-11-17T07:06:13.676Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-f0b03285-5d16-48d8-9404-650a9185a8fd.png",
+      "originalDeliveryPath": "generated-originals/0.16.0/styling-yoboty-inshu-washi-indigo-long-nonhole-earrings-v16.png",
+      "pngSha256": "003fc3a734cb121d5163647d0996a45d0667bcc36ebd8991cd267693568dfcf2",
+      "pngBytes": 2122580,
+      "publicPath": "public/images/styling-yoboty-inshu-washi-indigo-long-nonhole-earrings-v16.webp",
+      "sha256": "0d4ccdb4a916b6cf46794358e69e4c7f6beb298b0b40f55dd6c1a76df39201e5",
+      "bytes": 89292,
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "preserveRatio": true,
+      "conversion": "Same-size WebP quality84 effort6, with IPTC trainedAlgorithmicMedia XMP; no semantic edit outside image_gen",
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a smiling woman in charcoal with a slender indigo-blue tube-shaped ear ornament.",
+        "ja": "チャコール色の服に藍色の細長い筒形の耳飾りを合わせて微笑む女性のAIイメージ。"
+      },
+      "sourceIds": [
+        "yoboty-long-current-v16",
+        "yoboty-process-v16",
+        "yoboty-current-retailers-v16",
+        "aoya-official-visit-v16",
+        "aoya-official-access-v16"
+      ],
+      "officialUrl": "https://yob283848.owndshop.com/items/35168470",
+      "reference": {
+        "kind": "written-description-only",
+        "thirdPartyPhotographsUsed": false
+      },
+      "visualReview": {
+        "status": "accepted",
+        "checkedAt": "2026-11-17",
+        "outputViewed": true,
+        "noPropsTextOrLogo": true,
+        "observations": "Fictional adult portrait, complete face and visible ornament, no additional jewelry or text. Styling concept only; no real use, fitting or measured-scale claim."
+      }
+    }
+  ]
+}

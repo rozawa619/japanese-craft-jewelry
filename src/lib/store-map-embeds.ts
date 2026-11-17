@@ -96,6 +96,46 @@ export const reviewedStoreMapEmbeds:Readonly<Record<string,Readonly<Record<Local
   "sirisiri-akasaka-shop": {
     "ja": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2822487270487!2d139.7319307!3d35.6700516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b7b299faaab%3A0xba6def0770dfb461!2sSIRI%20SIRI%20SHOP!5e0!3m2!1sja!2sjp!4v1794886788156!5m2!1sja!2sjp",
     "en": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2822487270487!2d139.7319307!3d35.6700516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b7b299faaab%3A0xba6def0770dfb461!2sSIRI%20SIRI%20SHOP!5e0!3m2!1sen!2sjp!4v1794886790849!5m2!1sen!2sjp"
+  },
+  "shimadzu-iso-kogeikan": {
+    "ja": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.6174529156715!2d130.57350401553123!3d31.616940481337785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e5e5e7ac163d9%3A0xcaa0a651c9acc5b3!2z44CSODkyLTA4NzEg6bm_5YWQ5bO255yM6bm_5YWQ5bO25biC5ZCJ6YeO55S677yZ77yW77yY77yY4oiS77yS77yU!5e0!3m2!1sja!2sjp!4v1652173385791!5m2!1sja!2sjp",
+    "en": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.6174529156715!2d130.57350401553123!3d31.616940481337785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e5e5e7ac163d9%3A0xcaa0a651c9acc5b3!2z44CSODkyLTA4NzEg6bm_5YWQ5bO255yM6bm_5YWQ5bO25biC5ZCJ6YeO55S677yZ77yW77yY77yY4oiS77yS77yU!5e0!3m2!1sja!2sjp!4v1652173385791!5m2!1sja!2sjp"
+  },
+  "applause-naruto-main": {
+    "ja": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6601.730244919464!2d134.59958400146328!3d34.17536594945743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3553658ba5cfd5b1%3A0x7e1601c8dd99be73!2z44CSNzcyLTAwMDMg5b6z5bO255yM6bO06ZaA5biC5pKr6aSK55S65Y2X5rWc6Jut5a2Q5YmN5p2x77yT77yQ4oiS77ySIOOCuOODpeOCqOODquODvOOCouODl-ODreODvOOCug!5e0!3m2!1sja!2sjp!4v1535511554505",
+    "en": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6601.730244919464!2d134.59958400146328!3d34.17536594945743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3553658ba5cfd5b1%3A0x7e1601c8dd99be73!2z44CSNzcyLTAwMDMg5b6z5bO255yM6bO06ZaA5biC5pKr6aSK55S65Y2X5rWc6Jut5a2Q5YmN5p2x77yT77yQ4oiS77ySIOOCuOODpeOCqOODquODvOOCouODl-ODreODvOOCug!5e0!3m2!1sja!2sjp!4v1535511554505"
+  },
+  "yadome-atelier-akita-shop": {
+    "ja": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.962570228451!2d140.11572441537484!3d39.71802387945241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8fc2ea58901d7d%3A0xebdbb598e9083513!2z44CSMDEwLTA5MjEg56eL55Sw55yM56eL55Sw5biC5aSn55S677yS5LiB55uu77yR4oiS77yR77yR!5e0!3m2!1sja!2sjp!4v1638866544592!5m2!1sja!2sjp",
+    "en": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.962570228451!2d140.11572441537484!3d39.71802387945241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8fc2ea58901d7d%3A0xebdbb598e9083513!2z44CSMDEwLTA5MjEg56eL55Sw55yM56eL55Sw5biC5aSn55S677yS5LiB55uu77yR4oiS77yR77yR!5e0!3m2!1sja!2sjp!4v1638866544592!5m2!1sja!2sjp"
+  },
+  "hiroshima-peace-park-resthouse-shop": {
+    "ja": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.8394056431343!2d132.453275!3d34.3937863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355aa20d48f1aba3%3A0xa64cee1fe7e803c2!2z5bqD5bO25biC5bmz5ZKM6KiY5b-15YWs5ZyS44Os44K544OI44OP44Km44K5KOaXp-Wkp-ato-Wxi-WRieacjeW6l-ODu-iiq-eIhuW7uueJqSk!5e1!3m2!1sja!2sjp!4v1747814325165!5m2!1sja!2sjp",
+    "en": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.8394056431343!2d132.453275!3d34.3937863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355aa20d48f1aba3%3A0xa64cee1fe7e803c2!2z5bqD5bO25biC5bmz5ZKM6KiY5b-15YWs5ZyS44Os44K544OI44OP44Km44K5KOaXp-Wkp-ato-Wxi-WRieacjeW6l-ODu-iiq-eIhuW7uueJqSk!5e1!3m2!1sja!2sjp!4v1747814325165!5m2!1sja!2sjp"
+  },
+  "sava-store-sabae-main": {
+    "ja": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.849558107333!2d136.2741057!3d35.95065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8a579cf2377ef%3A0x7c7d69c25023c085!2zU0FWQSFTVE9SRSDmnKzlupc!5e0!3m2!1sja!2sjp!4v1794900355679!5m2!1sja!2sjp",
+    "en": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.849558107333!2d136.2741057!3d35.95065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8a579cf2377ef%3A0x7c7d69c25023c085!2zU0FWQSFTVE9SRSDmnKzlupc!5e0!3m2!1sja!2sjp!4v1794900355679!5m2!1sja!2sjp"
+  },
+  "nanayosha-suzuki-tile-tajimi": {
+    "ja": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.7618625311816!2d137.134491!3d35.3615558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60036a9fb122c285%3A0x877ba67bdb859bdc!2z5LiD56qv56S-IOmItOacqOOCv-OCpOODq-W6lw!5e0!3m2!1sja!2sjp!4v1794900457699!5m2!1sja!2sjp",
+    "en": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.7618625311816!2d137.134491!3d35.3615558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60036a9fb122c285%3A0x877ba67bdb859bdc!2z5LiD56qv56S-IOmItOacqOOCv-OCpOODq-W6lw!5e0!3m2!1sja!2sjp!4v1794900457699!5m2!1sja!2sjp"
+  },
+  "mitsusuke-kumamoto-main": {
+    "ja": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.5116427524695!2d130.69183478885495!3d32.8052059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3540f4154e87c8b7%3A0x9b91f1189a0aeb47!2z77yI5qCq77yJ5YWJ5YqpIOiCpeW-jOixoeW1jA!5e0!3m2!1sja!2sjp!4v1794900567039!5m2!1sja!2sjp",
+    "en": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.5116427524695!2d130.69183478885495!3d32.8052059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3540f4154e87c8b7%3A0x9b91f1189a0aeb47!2z77yI5qCq77yJ5YWJ5YqpIOiCpeW-jOixoeW1jA!5e0!3m2!1sja!2sjp!4v1794900567039!5m2!1sja!2sjp"
+  },
+  "menoya-izumo-taisha": {
+    "ja": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3252.362546896392!2d132.68662319999999!3d35.3962631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35575c981a18586f%3A0x54ac8b299ae7731!2z44KB44Gu44KEIOWHuumbsuWkp-ekvuW6lw!5e0!3m2!1sja!2sjp!4v1794900669456!5m2!1sja!2sjp",
+    "en": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3252.362546896392!2d132.68662319999999!3d35.3962631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35575c981a18586f%3A0x54ac8b299ae7731!2z44KB44Gu44KEIOWHuumbsuWkp-ekvuW6lw!5e0!3m2!1sja!2sjp!4v1794900669456!5m2!1sja!2sjp"
+  },
+  "aoya-washi-museum-shop": {
+    "ja": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.4210872189647!2d134.01579189999998!3d35.469124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3555e9814ed4444f%3A0x31660ab84a883ba5!2z44GC44GK44KE5ZKM57SZ5bel5oi_!5e0!3m2!1sja!2sjp!4v1794900727816!5m2!1sja!2sjp",
+    "en": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.4210872189647!2d134.01579189999998!3d35.469124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3555e9814ed4444f%3A0x31660ab84a883ba5!2z44GC44GK44KE5ZKM57SZ5bel5oi_!5e0!3m2!1sja!2sjp!4v1794900727816!5m2!1sja!2sjp"
+  },
+  "tete-iias-okinawa-toyosaki": {
+    "ja": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.196325215678!2d127.65097709999999!3d26.1577349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e569bc128b4f09%3A0xbcc6cae9f1fe820!2stete%20by%20okinawa!5e0!3m2!1sja!2sjp!4v1794900783880!5m2!1sja!2sjp",
+    "en": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.196325215678!2d127.65097709999999!3d26.1577349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e569bc128b4f09%3A0xbcc6cae9f1fe820!2stete%20by%20okinawa!5e0!3m2!1sja!2sjp!4v1794900783880!5m2!1sja!2sjp"
   }
 };
 

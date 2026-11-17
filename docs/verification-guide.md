@@ -1,6 +1,9 @@
 # 変更に合わせて検証する
 
-確認日：2026-11-17、0.15.0。目的は、変更に必要な証拠を得て、過去の成功を今回の成功と混同しないこと。最初に[AI引継ぎ](ai-handoff.md)とAGENTS.mdを読む。公開と納品の確定値は[deployment-results.json](deployment-results.json)、実際の入力・対象・失敗は各JSONを正本とする。
+確認日：2026-11-17、作業版0.16.0・全国追加018。目的は、変更に必要な証拠を得て、過去の成功を今回の成功と混同しないこと。最初に[AI引継ぎ](ai-handoff.md)とAGENTS.mdを読む。公開と納品の確定値は[deployment-results.json](deployment-results.json)、実際の入力・対象・失敗は各JSONを正本とする。
+
+<!-- TODO_PUBLIC_V16: 0.16の公開確認後に次の配信状態を更新する。0.15の履歴はそのまま保持する。 -->
+0.16は作業/QA中。公開確認済みの基準は旧0.15のapp1f0021306e87ce9e7dc43bdf446cffedc59e4134・Actions44024678465であり、0.16のローカル検査を実公開成功として扱わない。
 
 ## 変更別に検証を選ぶ
 
@@ -24,6 +27,14 @@
 | 納品だけ | 最新sourceの書出し→ZIP→repository/export/ZIP集合・全SHA照合 | アプリ不変なら同じUIを再走査せず、記録/必須ファイル/秘密・退役物除外を確認 |
 
 関連unitだけ先に実行する例は`node --experimental-strip-types --test tests/market-prices.test.ts`。最終の必要範囲は変更の広がりで決める。CIは独立した公開gateであり、ローカルの小修正検査を省略する理由にも、毎回497を走らせる理由にもしない。
+
+## 0.16の記録を読む
+
+[全国追加018](../specs/018-national-jewelry-expansion/)は10県の10商品を加える変更。作業台帳は公開対象60/全66商品・下書き6商品、24県、公開関連34技法（全36）、一次出典293件、33店舗/53商品の関連、人物58＋単体60の118画像。購入根拠は国内通販51商品、小売＋公式カタログ9商品であり、全品を通販在庫ありと読み替えない。
+
+今回の実測はnational-stageの記録と[verification.md](verification.md)で追う。公開前のローカル整合確認では型130ファイル・既存unit135・verify成功、stable dist344HTML/328canonical/118画像を確認した段階で、ブラウザーQA・実公開の成否は個別の最終記録で確かめる。旧0.15の497/314や14地域の画像検査件数を、拡張後の対象数・実行成功として転記しない。
+
+単体画像は[共通reader](../scripts/lib/image-generation-manifests.mjs)が旧v14と新v16のmanifestを併読し、active registry全60商品の対応、重複、実ファイル、distのSHAを検査する。人物の新生成ログは単体ログと別資料。旧98画像の不変、新規23PNGの採用20・棄却3、公開118WebPの整合を分けて確認し、PNG原本を通常buildの入力にしない。
 
 ## 0.15の記録を読む
 
@@ -108,8 +119,8 @@ pnpm check:mobile
 | `pnpm check:sources` | sitemap全canonicalのSourceと実HTML SHA。`CHECK_REPORT_PATH`。比較先は同checkoutの`dist`固定で、独自のCHECK_DIST_DIRは使わない |
 | `pnpm check:types` / `node scripts/check-type-choice-images.mjs` | 全地域/homeの代表画像。共通report/prefix。0.15後に保守用scriptへ整理したもの |
 | `pnpm check:headings` / `node scripts/check-regional-headings.mjs` | 地域見出し、画像/query/Source。共通report/prefix。0.15後に保守用scriptへ整理したもの |
-| `pnpm check:quality` | 全商品詳細・分類/地域・除外/0件等の497。共通report/prefix |
-| `pnpm check:prices` | 全価格/市場・行き先・地域の314。共通report/prefix |
+| `pnpm check:quality` | 全商品詳細・分類/地域・除外/0件等。件数は公開集合から算出し、旧0.15の497へ固定しない。共通report/prefix |
+| `pnpm check:prices` | 全価格/市場・行き先・地域。件数は公開集合から算出し、旧0.15の314へ固定しない。共通report/prefix |
 | `pnpm check:depth` | 全商品の日英3問、Source操作、Privacy、単体図。共通report/prefix |
 | `node scripts/check-inline-maps.mjs` | opt-in Mapsの代表9。共通report/prefix。Source/current location/CMPとは別の操作 |
 | `pnpm check:seo` | 生成HTMLのSEO。`SEO_REPORT_PATH`、任意の`CHECK_DIST_DIR`。本番origin/base/public設定が必要 |
@@ -150,7 +161,7 @@ Source/公開補足は最終local生成物と比較する。別版のdistや、�
 
 repository→export→ZIPのファイル集合・必須設定/spec/正本/検査script・全ファイルSHA256を照合する。.git/.env/指定した認証ファイル名・秘密鍵拡張子/node_modules/dist/artifacts/退役画像を除き、画像registryの現行ファイルが揃うことを確認する。指定パスとリンク/ジャンクションの拒否は、任意ファイル内容やGit全履歴の機密検査ではない。新しい保守文書/helper追加後はファイル数が増えるため、旧822などを固定値として合格させない。
 
-ZIP検証後に完了記録を更新した場合は、もう一度export/ZIP/全SHAを検証する。ZIP自身のbytes/SHAは外部の`package-verification-<version>-<revision>.json`へ置き、ZIP内へ自己参照させない。初回0.15の`package-verification-0.15.0.json`は当時の記録として保持する。私的QAのPNG/JSONは別のscreenshots/0.15.0へ分離する。
+ZIP検証後に完了記録を更新した場合は、もう一度export/ZIP/全SHAを検証する。ZIP自身のbytes/SHAは外部の`package-verification-<version>-<revision>.json`へ置き、ZIP内へ自己参照させない。初回0.15の`package-verification-0.15.0.json`は当時の記録として保持する。旧0.15の私的QAのPNG/JSONは別のscreenshots/0.15.0へ分離した資料で、0.16の新しい証跡を上書き保存しない。
 
-最新の0.15納品/公開の概要は[deployment-results.json](deployment-results.json)。この文書整備自体はアプリの機能追加ではなく、元の0.15検査件数や実行時刻を書き換えるものではない。
+最新の納品/公開の概要は[deployment-results.json](deployment-results.json)。現在の0.16全国追加と、017の文書整備・旧0.15の公開検査を区別し、過去の件数や実行時刻を書き換えない。
 

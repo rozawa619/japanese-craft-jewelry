@@ -1,7 +1,10 @@
 # 商品・文章・画像の編集ガイド
 
 プログラムを書かない運営者と、引継ぎ先のAIのための手引きです。まず[README](../README.md)で起動し、詳しい判断は[引継ぎ](handoff.md)・[共通原則](constitution.md)・[運用](operations.md)へ戻ってください。
-2026-11-17の台帳は全56商品、公開50商品、下書き6商品、14地域、23店舗です。今後の件数は台帳を数えて確かめます。
+2026-11-17の0.16作業台帳は全66商品、公開対象60商品、下書き6商品、24県、33店舗（53商品に店舗案内）です。公開関連技法は34（全36）、一次出典293件、人物58＋単体60のAI画像118ファイル。今後の件数は台帳を数えて確かめます。
+
+<!-- TODO_PUBLIC_V16: 0.16の公開確認後に次の状態を更新する。 -->
+全国追加018は現在作業/QA中で、公開確認済みの基準は旧0.15のapp1f0021306e87ce9e7dc43bdf446cffedc59e4134・Actions44024678465です。新しい台帳を実公開反映済みとは扱いません。
 以下の実例は既存記録の**一部の抜粋**です。新しい価格・在庫を調べ直した例でも、レコード全体の貼り替え用テンプレートでもありません。
 
 ## 最初に覚えること
@@ -28,7 +31,7 @@
 | 買えることを確認した根拠 | [purchase-evidence.json](../src/data/purchase-evidence.json) |
 | 店舗・訪問案内・工房公式サイト | [visits.json](../src/data/visits.json) |
 | 人物の着用AI画像／単体AI画像 | [editorial-images.json](../src/data/editorial-images.json)／[product-detail-images.json](../src/data/product-detail-images.json) |
-| 画像の権利・退役・生成記録 | [assets.json](assets.json)・[単体画像の生成記録](image-generation-solo-v14.json) |
+| 画像の権利・退役・生成記録 | [assets.json](assets.json)・[旧単体v14](image-generation-solo-v14.json)・[人物v16](image-generation-v16.json)・[単体v16](image-generation-solo-v16.json) |
 | 商品の編集順／産地代表 | [selection.ts](../src/config/selection.ts)／[region-selection.ts](../src/config/region-selection.ts) |
 | 地域紹介・種類を選ぶ前の一言 | [places/](../src/content/places/)の日英・[region-choice-notes.json](../src/data/region-choice-notes.json) |
 | 色・共通レイアウト | [global.css](../src/styles/global.css)。部品内の`<style>`にも個別設定あり |
@@ -180,8 +183,10 @@ Q&Aへ価格・URLを埋め込んだり、別商品の回答全文をコピー�
 
 `width / height`は実ファイルの寸法、`alt`は画像に実際に見える内容の日英の読み上げ用説明です。画像下の注記（caption）は部品が「AIイメージ / AI image」と表示します。
 `docs/assets.json`側の`source`は`public/images/...`。権利の根拠・生成記録・状態を揃え、AI図の`productImage: false`を写真扱いに変えません。
-単体図は`image-generation-solo-v14.json → images`の`productId / publicPath / sha256`などと実bytesも照合されます。対応表だけ直しても通りません。
+単体図は旧`image-generation-solo-v14.json`と新`image-generation-solo-v16.json`の`images`を併読し、`productId / publicPath / sha256`などと実bytesも照合されます。共通readerは[scripts/lib/image-generation-manifests.mjs](../scripts/lib/image-generation-manifests.mjs)で、ログを跨ぐ商品ID重複を拒否します。対応表だけ直しても通りません。
 生成記録には実prompt・参照・原本PNG・変換・確認を残します。記録ファイルを新設する場合は検査側の参照先も合わせ、旧履歴を別画像の記録に書き換えません。
+
+0.16では人物用`image-generation-v16.json`と単体用`image-generation-solo-v16.json`を新設し、それぞれ採用10点を記録しました。新規原本は合計23PNGで、採用20・棄却3。棄却は`rejectedCandidates`に残し、activeな画像対応表へ混ぜません。人物ログと単体ログを取り違えず、旧v14の画像例・履歴はそのまま保持します。PNG原本は別資料で、通常buildは同梱WebPとdocsの記録を使います。
 WebPへ変換しても原本PNGを保管し、AI由来のIPTC XMPを維持します。詳細は[画像方針](image-plan-v13.md)・[単体図記録](image-generation-solo-v14.json)へ。
 公式写真は、URLがあるだけでは転載できません。許諾なしの保存・掲載・ホットリンクを避け、AI図を実物写真・寸法・金具・販売数量の証拠にしません。
 

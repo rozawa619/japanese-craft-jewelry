@@ -1,24 +1,28 @@
 # 現在状態と引継ぎ
 
-文書改訂017、2026-11-17。別AIは[コピー用prompt](ai-handoff.md)、人は[編集ガイド](editing-guide.md)から始められます。過去の途中値を積み上げた説明は[0.15保存版](archive/handoff-v15.md)へ退避しました。
+アプリ0.16.0・全国追加018、2026-11-17。文書の入口は保守改訂017を引き継ぎます。別AIは[コピー用prompt](ai-handoff.md)、人は[編集ガイド](editing-guide.md)から始められます。過去の途中値を積み上げた説明は[0.15保存版](archive/handoff-v15.md)へ退避しました。
 
 ## 何を作っているか
 
-Japanese Craft Jewelryは、SORAが全国の工芸ジュエリーを選ぶ日英サイトです。販売/決済/発送・ブログ・Contactはありません。現時点で公開50/全56商品、14地域、24技法、23店舗/43商品の関連、人物48＋単体50のAI画像98ファイル。今後の追加上限ではありません。
+Japanese Craft Jewelryは、SORAが全国の工芸ジュエリーを選ぶ日英サイトです。販売/決済/発送・ブログ・Contactはありません。0.16作業ソースは公開対象60/全66商品・下書き6商品、24県、公開関連34技法（全36）、33店舗/53商品の関連、一次出典293件、人物58＋単体60のAI画像118ファイル。今後の追加上限ではありません。
 
-41品の公式注文受付と9品の小売/現行カタログという既存根拠を保持します。将来在庫や店頭の個別在庫は保証しません。COCOON2、欠品18K、現行販売未確認の畠山2、hairpinはdraftを維持。復帰は対象variantの現行販売を再調査します。
+51品の公式注文受付と9品の小売/現行カタログを購入根拠とします。将来在庫や店頭の個別在庫は保証しません。COCOON2、欠品18K、現行販売未確認の畠山2、hairpinはdraftを維持。復帰は対象variantの現行販売を再調査します。
 
 ## 公開版・source・証拠の区別
 
 | 対象 | 正本 |
 | --- | --- |
-| 公開アプリ | commit 1f0021306e87ce9e7dc43bdf446cffedc59e4134、[Actions44024678465](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44024678465) success |
+| 公開確認済みの基準（旧0.15） | commit 1f0021306e87ce9e7dc43bdf446cffedc59e4134、[Actions44024678465](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44024678465) success |
 | 現在の作業source | git status / git logと[package.json](../package.json)。文書/task更新のcommitは公開appと異なる場合がある |
 | 最新の公開/納品状態 | [deployment-results.json](deployment-results.json) |
 | 0.15検証の段階と限界 | [verification.md](verification.md)・[mobile検証](mobile-refinement-v15.md) |
 | 今回の保守文書の検査 | [017 validation](../specs/017-maintainer-handoff/validation.md)とhandoff-stageの記録 |
+| 全国追加の仕様・検査 | [018](../specs/018-national-jewelry-expansion/)とnational-stageの記録。0.15の証跡とは別 |
 
-今回の依頼は引継ぎ・人の編集性です。アプリ0.15.0/商品事実/価格/画像/広告状態を変更せず、文書/保守toolと必要なコメントを整備しました。公開appの成功を、新しいdocs commitの公開成功と混同しません。
+今回の依頼は、全国で追加する価値のあるジュエリーを増やすことです。秋田・福井・岐阜・広島・鹿児島・徳島・鳥取・沖縄・熊本・島根の10県に10商品を追加し、日英の紹介・比較・3問・公式購入先・店舗案内・人物と単体のAI図を揃えました。広告は通常リンク/offを保ちます。
+
+<!-- TODO_PUBLIC_V16: 公開完了後にこの状態と公開app/Actionsを確定する。 -->
+0.16は作業/QA中です。ローカルverify成功と、旧0.15の公開成功を、0.16の公開完了に読み替えません。
 
 ## 再開の順序
 
@@ -44,13 +48,13 @@ Japanese Craft Jewelryは、SORAが全国の工芸ジュエリーを選ぶ日英
 | 提携 | 全program/link未申請・通常URL。申請先の現行条件と真実の申請者情報が必要 |
 | 商用host | GitHub Pages用途適合の確認または適した公開先の判断が残る。今回契約/移転/DNSなし |
 | security | 実装上の検出問題は修正。HTTP保護header制御やMFA/branch/recovery等はhost/account側の未操作範囲。全安全/侵入試験済みとはしない |
-| 実物写真 | 50品とも写真使用許諾は未取得。AI図から仕様や試着を認定しない |
+| 実物写真 | 60品とも写真使用許諾は未取得。AI図から仕様や試着を認定しない |
 | 検索/端末 | Google掲載/順位/流入は未測定。Chrome emulationを実機Safari/iOSと呼ばない |
 
-0.15の広範囲497/価格314/広告6等と、最後の見出し/Source変更後92・tap4・race12・heading12等は別の段階です。最終公開248HTML/98画像のSHAとSource保持も確認しています。正確な範囲はverificationを読み、全検査を最終版で再実行したと書き換えません。
+過去の0.15では、広範囲497/価格314/広告6等と、最後の見出し/Source変更後92・tap4・race12・heading12等が別の段階です。旧0.15最終公開248HTML/98画像の確認を、0.16の公開検査へ転用しません。正確な範囲はverificationを読み、全検査を最終版で再実行したと書き換えません。
 
 ## 納品物
 
 全sourceは隣接japanese-craft-jewelry-delivery/sourceとlatestのjapanese-craft-jewelry-source.zip。新しい同梱scriptは版付きZIPと外部package-verification JSONも作成します。全件repo/export/ZIP SHAを照合し、ZIP自身hashはZIP外に置きます。新しい件数/最新proof名はdeployment-resultsのsourceDeliveryを参照。
 
-.git/.env/指定した認証ファイル名・秘密鍵拡張子/依存実体/dist/.astro/artifacts/退役画像を除外。自動検査は指定パス・リンク/ジャンクション・ファイル集合・SHAの確認で、任意ファイルの内容やGit全履歴の機密検査ではありません。PNG原本とQA画面は別資料で、fresh cloneのbuildに不要です。元PNG50枚は0.14の別ZIPを保持。task-local Node/pnpm wrapperはこのPC固有の便宜で、他PCはsetupの要件から構築できます。
+.git/.env/指定した認証ファイル名・秘密鍵拡張子/依存実体/dist/.astro/artifacts/退役画像を除外。自動検査は指定パス・リンク/ジャンクション・ファイル集合・SHAの確認で、任意ファイルの内容やGit全履歴の機密検査ではありません。PNG原本とQA画面は別資料で、fresh cloneのbuildに不要です。元PNG50枚の0.14別ZIPは保持し、0.16の新規23PNG（採用20・棄却3）は別の生成/採否記録とともに扱います。task-local Node/pnpm wrapperはこのPC固有の便宜で、他PCはsetupの要件から構築できます。

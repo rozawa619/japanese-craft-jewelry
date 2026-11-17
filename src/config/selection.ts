@@ -1,8 +1,18 @@
 /** Display order only; verified facts and link state remain in catalog.json. */
 export const selection={
  heroProductId:'morphosphere-ultramarine-pansy-pierced-earrings',
- featuredProductIds:['morphosphere-ultramarine-pansy-pierced-earrings','checos-japanese-apricot-pierced-earrings','kato-suke-drop-pierced-earrings','six-kiln-half-moon-earrings','rinzen-seika-amber-pierced-earrings','hamamatsuya-catch-pierced'],
+ featuredProductIds:['yadome-akita-rice-silver-pierced-earrings','shimadzu-satsuma-kiriko-hikari-l-pendant','morphosphere-ultramarine-pansy-pierced-earrings','applause-awa-indigo-pearl-clip-on-earrings','tete-ryukyu-glass-hanagasa-heart-pierced-earrings','hamamatsuya-catch-pierced'],
  catalogProductIds:[
+  'yadome-akita-rice-silver-pierced-earrings',
+  'shimadzu-satsuma-kiriko-hikari-l-pendant',
+  'nanayosha-punu-gold-vanilla-pierced-earrings',
+  'menoya-izumo-magatama-n15-necklace',
+  'tete-ryukyu-glass-hanagasa-heart-pierced-earrings',
+  'sur-basic1-clear-pearl-pierced-earrings',
+  'applause-awa-indigo-pearl-clip-on-earrings',
+  'yoboty-inshu-washi-indigo-long-nonhole-earrings',
+  'mitsusuke-higo-zogan-shizuku-pierced-earrings',
+  'earth-hiroshima-origami-crane-chain-earrings',
   'morphosphere-ultramarine-pansy-pierced-earrings',
   'nousaku-dahlia-gerbera-clip-on-earrings',
   'rinzen-seika-amber-pierced-earrings',

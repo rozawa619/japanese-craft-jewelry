@@ -1,0 +1,892 @@
+{
+  "version": "0.16.0",
+  "checkedAt": "2026-11-17T07:43:01.235Z",
+  "origin": "http://127.0.0.1:4323",
+  "base": "/japanese-craft-jewelry/",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "method": "One sequential fresh Chrome mobile context per new product/store and locale. Product IDs come from the adopted expansion image manifest; store identity and address come from raw visits, and the exact Google URL is checked independently against the acquisition record and registry. All external requests are intercepted and aborted before network fulfilment. The test opens/closes/reloads the actual map UI; no cart, retailer, directions or location action is submitted.",
+  "limits": "The Google provider document/tiles/attribution and geographical pin are not rendered in this test because external requests are intentionally aborted. Name/address and Share URL acquisition were checked separately in docs/research/national-map-embeds-v16.json. This is Chrome emulation, not physical iOS/Safari or current SKU shelf-stock verification.",
+  "sourceInputs": {
+    "started": {
+      "src/data/catalog.json": "2f12215f009e327bc8b4a307f8baf2c3df2dd8e757b655870a9ac47bd1b781b2",
+      "src/data/visits.json": "ce52378eec5df52edd02752b63e7b4e3d064cd470a3bdac462b94b3c78b8e008",
+      "src/lib/store-map-embeds.ts": "9b6150aebff22c510c44db0a845d63d8e53dd6087e4e314638e387010241a52e",
+      "src/components/VisitGuide.astro": "2f714933f8a23836449e47334e22e263b2987b75383d2d32fa8879ade7022f0b",
+      "docs/image-generation-solo-v16.json": "464dc5924571270524c23e63fa934e2dd83d40189dcc4b14cab83da1850a6968",
+      "docs/research/national-map-embeds-v16.json": "d6a91ccbce8e7c381fc3cda7b592f33de359d75a0ec44ff32635b3e3ae953d07"
+    },
+    "finished": {
+      "src/data/catalog.json": "2f12215f009e327bc8b4a307f8baf2c3df2dd8e757b655870a9ac47bd1b781b2",
+      "src/data/visits.json": "ce52378eec5df52edd02752b63e7b4e3d064cd470a3bdac462b94b3c78b8e008",
+      "src/lib/store-map-embeds.ts": "9b6150aebff22c510c44db0a845d63d8e53dd6087e4e314638e387010241a52e",
+      "src/components/VisitGuide.astro": "2f714933f8a23836449e47334e22e263b2987b75383d2d32fa8879ade7022f0b",
+      "docs/image-generation-solo-v16.json": "464dc5924571270524c23e63fa934e2dd83d40189dcc4b14cab83da1850a6968",
+      "docs/research/national-map-embeds-v16.json": "d6a91ccbce8e7c381fc3cda7b592f33de359d75a0ec44ff32635b3e3ae953d07"
+    },
+    "unchanged": true
+  },
+  "expectedFlows": 20,
+  "checks": [
+    {
+      "key": "applause-naruto-main-ja-390",
+      "status": "passed",
+      "productId": "applause-awa-indigo-pearl-clip-on-earrings",
+      "storeId": "applause-naruto-main",
+      "locale": "ja",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/applause-awa-indigo-pearl-clip-on-earrings/",
+      "name": "ジュエリー・アプローズ 鳴門店舗",
+      "address": "〒772-0003 徳島県鳴門市撫養町南浜字蛭子前東30-2",
+      "expectedEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6601.730244919464!2d134.59958400146328!3d34.17536594945743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3553658ba5cfd5b1%3A0x7e1601c8dd99be73!2z44CSNzcyLTAwMDMg5b6z5bO255yM6bO06ZaA5biC5pKr6aSK55S65Y2X5rWc6Jut5a2Q5YmN5p2x77yT77yQ4oiS77ySIOOCuOODpeOCqOODquODvOOCouODl-ODreODvOOCug!5e0!3m2!1sja!2sjp!4v1535511554505",
+      "sourceLists": 2,
+      "initialIframeCount": 0,
+      "openedIframeCount": 1,
+      "closedIframeCount": 0,
+      "reloadedIframeCount": 0,
+      "initialExternalAttempts": 0,
+      "explicitGoogleAttempts": 1,
+      "reloadedExternalAttempts": 0,
+      "allExternalRequestsAborted": true,
+      "ownStorageChanged": false,
+      "ownStorageWrites": 0,
+      "cookiesWritten": 0,
+      "dimensions": {
+        "x": 40,
+        "y": 224.8125,
+        "width": 310,
+        "height": 208
+      },
+      "pageErrors": [],
+      "externalAttempts": [
+        {
+          "phase": "explicit-open",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6601.730244919464!2d134.59958400146328!3d34.17536594945743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3553658ba5cfd5b1%3A0x7e1601c8dd99be73!2z44CSNzcyLTAwMDMg5b6z5bO255yM6bO06ZaA5biC5pKr6aSK55S65Y2X5rWc6Jut5a2Q5YmN5p2x77yT77yQ4oiS77ySIOOCuOODpeOCqOODquODvOOCouODl-ODreODvOOCug!5e0!3m2!1sja!2sjp!4v1535511554505",
+          "resourceType": "document",
+          "google": true,
+          "action": "aborted"
+        }
+      ],
+      "screenshot": "artifacts/national-stage-new-maps-viewport-applause-naruto-main-ja-390.png",
+      "screenshotStage": "closed map placeholder in an ordinary390x844 viewport; no provider document rendered"
+    },
+    {
+      "key": "applause-naruto-main-en-390",
+      "status": "passed",
+      "productId": "applause-awa-indigo-pearl-clip-on-earrings",
+      "storeId": "applause-naruto-main",
+      "locale": "en",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/applause-awa-indigo-pearl-clip-on-earrings/",
+      "name": "Jewelry Applause Naruto shop",
+      "address": "30-2 Ebisumae-higashi, Minamihama, Muya-cho, Naruto, Tokushima772-0003, Japan",
+      "expectedEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6601.730244919464!2d134.59958400146328!3d34.17536594945743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3553658ba5cfd5b1%3A0x7e1601c8dd99be73!2z44CSNzcyLTAwMDMg5b6z5bO255yM6bO06ZaA5biC5pKr6aSK55S65Y2X5rWc6Jut5a2Q5YmN5p2x77yT77yQ4oiS77ySIOOCuOODpeOCqOODquODvOOCouODl-ODreODvOOCug!5e0!3m2!1sja!2sjp!4v1535511554505",
+      "sourceLists": 2,
+      "initialIframeCount": 0,
+      "openedIframeCount": 1,
+      "closedIframeCount": 0,
+      "reloadedIframeCount": 0,
+      "initialExternalAttempts": 0,
+      "explicitGoogleAttempts": 1,
+      "reloadedExternalAttempts": 0,
+      "allExternalRequestsAborted": true,
+      "ownStorageChanged": false,
+      "ownStorageWrites": 0,
+      "cookiesWritten": 0,
+      "dimensions": {
+        "x": 40,
+        "y": 226.203125,
+        "width": 310,
+        "height": 208
+      },
+      "pageErrors": [],
+      "externalAttempts": [
+        {
+          "phase": "explicit-open",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6601.730244919464!2d134.59958400146328!3d34.17536594945743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3553658ba5cfd5b1%3A0x7e1601c8dd99be73!2z44CSNzcyLTAwMDMg5b6z5bO255yM6bO06ZaA5biC5pKr6aSK55S65Y2X5rWc6Jut5a2Q5YmN5p2x77yT77yQ4oiS77ySIOOCuOODpeOCqOODquODvOOCouODl-ODreODvOOCug!5e0!3m2!1sja!2sjp!4v1535511554505",
+          "resourceType": "document",
+          "google": true,
+          "action": "aborted"
+        }
+      ],
+      "screenshot": "artifacts/national-stage-new-maps-viewport-applause-naruto-main-en-390.png",
+      "screenshotStage": "closed map placeholder in an ordinary390x844 viewport; no provider document rendered"
+    },
+    {
+      "key": "hiroshima-peace-park-resthouse-shop-ja-390",
+      "status": "passed",
+      "productId": "earth-hiroshima-origami-crane-chain-earrings",
+      "storeId": "hiroshima-peace-park-resthouse-shop",
+      "locale": "ja",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/earth-hiroshima-origami-crane-chain-earrings/",
+      "name": "平和記念公園 レストハウスショップ",
+      "address": "〒730-0811 広島県広島市中区中島町1-1 レストハウス1階",
+      "expectedEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.8394056431343!2d132.453275!3d34.3937863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355aa20d48f1aba3%3A0xa64cee1fe7e803c2!2z5bqD5bO25biC5bmz5ZKM6KiY5b-15YWs5ZyS44Os44K544OI44OP44Km44K5KOaXp-Wkp-ato-Wxi-WRieacjeW6l-ODu-iiq-eIhuW7uueJqSk!5e1!3m2!1sja!2sjp!4v1747814325165!5m2!1sja!2sjp",
+      "sourceLists": 2,
+      "initialIframeCount": 0,
+      "openedIframeCount": 1,
+      "closedIframeCount": 0,
+      "reloadedIframeCount": 0,
+      "initialExternalAttempts": 0,
+      "explicitGoogleAttempts": 1,
+      "reloadedExternalAttempts": 0,
+      "allExternalRequestsAborted": true,
+      "ownStorageChanged": false,
+      "ownStorageWrites": 0,
+      "cookiesWritten": 0,
+      "dimensions": {
+        "x": 40,
+        "y": 225.5625,
+        "width": 310,
+        "height": 208
+      },
+      "pageErrors": [],
+      "externalAttempts": [
+        {
+          "phase": "explicit-open",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.8394056431343!2d132.453275!3d34.3937863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355aa20d48f1aba3%3A0xa64cee1fe7e803c2!2z5bqD5bO25biC5bmz5ZKM6KiY5b-15YWs5ZyS44Os44K544OI44OP44Km44K5KOaXp-Wkp-ato-Wxi-WRieacjeW6l-ODu-iiq-eIhuW7uueJqSk!5e1!3m2!1sja!2sjp!4v1747814325165!5m2!1sja!2sjp",
+          "resourceType": "document",
+          "google": true,
+          "action": "aborted"
+        }
+      ],
+      "screenshot": "artifacts/national-stage-new-maps-viewport-hiroshima-peace-park-resthouse-shop-ja-390.png",
+      "screenshotStage": "closed map placeholder in an ordinary390x844 viewport; no provider document rendered"
+    },
+    {
+      "key": "hiroshima-peace-park-resthouse-shop-en-390",
+      "status": "passed",
+      "productId": "earth-hiroshima-origami-crane-chain-earrings",
+      "storeId": "hiroshima-peace-park-resthouse-shop",
+      "locale": "en",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/earth-hiroshima-origami-crane-chain-earrings/",
+      "name": "Peace Memorial Park Rest House Shop",
+      "address": "Rest House1F,1-1 Nakajima-cho, Naka-ku, Hiroshima730-0811, Japan",
+      "expectedEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.8394056431343!2d132.453275!3d34.3937863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355aa20d48f1aba3%3A0xa64cee1fe7e803c2!2z5bqD5bO25biC5bmz5ZKM6KiY5b-15YWs5ZyS44Os44K544OI44OP44Km44K5KOaXp-Wkp-ato-Wxi-WRieacjeW6l-ODu-iiq-eIhuW7uueJqSk!5e1!3m2!1sja!2sjp!4v1747814325165!5m2!1sja!2sjp",
+      "sourceLists": 2,
+      "initialIframeCount": 0,
+      "openedIframeCount": 1,
+      "closedIframeCount": 0,
+      "reloadedIframeCount": 0,
+      "initialExternalAttempts": 0,
+      "explicitGoogleAttempts": 1,
+      "reloadedExternalAttempts": 0,
+      "allExternalRequestsAborted": true,
+      "ownStorageChanged": false,
+      "ownStorageWrites": 0,
+      "cookiesWritten": 0,
+      "dimensions": {
+        "x": 40,
+        "y": 226.171875,
+        "width": 310,
+        "height": 208
+      },
+      "pageErrors": [],
+      "externalAttempts": [
+        {
+          "phase": "explicit-open",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.8394056431343!2d132.453275!3d34.3937863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355aa20d48f1aba3%3A0xa64cee1fe7e803c2!2z5bqD5bO25biC5bmz5ZKM6KiY5b-15YWs5ZyS44Os44K544OI44OP44Km44K5KOaXp-Wkp-ato-Wxi-WRieacjeW6l-ODu-iiq-eIhuW7uueJqSk!5e1!3m2!1sja!2sjp!4v1747814325165!5m2!1sja!2sjp",
+          "resourceType": "document",
+          "google": true,
+          "action": "aborted"
+        }
+      ],
+      "screenshot": "artifacts/national-stage-new-maps-viewport-hiroshima-peace-park-resthouse-shop-en-390.png",
+      "screenshotStage": "closed map placeholder in an ordinary390x844 viewport; no provider document rendered"
+    },
+    {
+      "key": "menoya-izumo-taisha-ja-390",
+      "status": "passed",
+      "productId": "menoya-izumo-magatama-n15-necklace",
+      "storeId": "menoya-izumo-taisha",
+      "locale": "ja",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/menoya-izumo-magatama-n15-necklace/",
+      "name": "めのや 出雲大社店",
+      "address": "〒699-0711 島根県出雲市大社町杵築南731番地",
+      "expectedEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3252.362546896392!2d132.68662319999999!3d35.3962631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35575c981a18586f%3A0x54ac8b299ae7731!2z44KB44Gu44KEIOWHuumbsuWkp-ekvuW6lw!5e0!3m2!1sja!2sjp!4v1794900669456!5m2!1sja!2sjp",
+      "sourceLists": 2,
+      "initialIframeCount": 0,
+      "openedIframeCount": 1,
+      "closedIframeCount": 0,
+      "reloadedIframeCount": 0,
+      "initialExternalAttempts": 0,
+      "explicitGoogleAttempts": 1,
+      "reloadedExternalAttempts": 0,
+      "allExternalRequestsAborted": true,
+      "ownStorageChanged": false,
+      "ownStorageWrites": 0,
+      "cookiesWritten": 0,
+      "dimensions": {
+        "x": 40,
+        "y": 224.671875,
+        "width": 310,
+        "height": 208
+      },
+      "pageErrors": [],
+      "externalAttempts": [
+        {
+          "phase": "explicit-open",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3252.362546896392!2d132.68662319999999!3d35.3962631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35575c981a18586f%3A0x54ac8b299ae7731!2z44KB44Gu44KEIOWHuumbsuWkp-ekvuW6lw!5e0!3m2!1sja!2sjp!4v1794900669456!5m2!1sja!2sjp",
+          "resourceType": "document",
+          "google": true,
+          "action": "aborted"
+        }
+      ],
+      "screenshot": "artifacts/national-stage-new-maps-viewport-menoya-izumo-taisha-ja-390.png",
+      "screenshotStage": "closed map placeholder in an ordinary390x844 viewport; no provider document rendered"
+    },
+    {
+      "key": "menoya-izumo-taisha-en-390",
+      "status": "passed",
+      "productId": "menoya-izumo-magatama-n15-necklace",
+      "storeId": "menoya-izumo-taisha",
+      "locale": "en",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/menoya-izumo-magatama-n15-necklace/",
+      "name": "Menoya Izumo Taisha Store",
+      "address": "731 Kizukiminami, Taisha-cho, Izumo City, Shimane 699-0711, Japan",
+      "expectedEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3252.362546896392!2d132.68662319999999!3d35.3962631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35575c981a18586f%3A0x54ac8b299ae7731!2z44KB44Gu44KEIOWHuumbsuWkp-ekvuW6lw!5e0!3m2!1sja!2sjp!4v1794900669456!5m2!1sja!2sjp",
+      "sourceLists": 2,
+      "initialIframeCount": 0,
+      "openedIframeCount": 1,
+      "closedIframeCount": 0,
+      "reloadedIframeCount": 0,
+      "initialExternalAttempts": 0,
+      "explicitGoogleAttempts": 1,
+      "reloadedExternalAttempts": 0,
+      "allExternalRequestsAborted": true,
+      "ownStorageChanged": false,
+      "ownStorageWrites": 0,
+      "cookiesWritten": 0,
+      "dimensions": {
+        "x": 40,
+        "y": 226.296875,
+        "width": 310,
+        "height": 208
+      },
+      "pageErrors": [],
+      "externalAttempts": [
+        {
+          "phase": "explicit-open",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3252.362546896392!2d132.68662319999999!3d35.3962631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35575c981a18586f%3A0x54ac8b299ae7731!2z44KB44Gu44KEIOWHuumbsuWkp-ekvuW6lw!5e0!3m2!1sja!2sjp!4v1794900669456!5m2!1sja!2sjp",
+          "resourceType": "document",
+          "google": true,
+          "action": "aborted"
+        }
+      ],
+      "screenshot": "artifacts/national-stage-new-maps-viewport-menoya-izumo-taisha-en-390.png",
+      "screenshotStage": "closed map placeholder in an ordinary390x844 viewport; no provider document rendered"
+    },
+    {
+      "key": "mitsusuke-kumamoto-main-ja-390",
+      "status": "passed",
+      "productId": "mitsusuke-higo-zogan-shizuku-pierced-earrings",
+      "storeId": "mitsusuke-kumamoto-main",
+      "locale": "ja",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/mitsusuke-higo-zogan-shizuku-pierced-earrings/",
+      "name": "肥後象嵌 光助 本店",
+      "address": "〒860-0004 熊本県熊本市中央区新町3-2-1",
+      "expectedEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.5116427524695!2d130.69183478885495!3d32.8052059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3540f4154e87c8b7%3A0x9b91f1189a0aeb47!2z77yI5qCq77yJ5YWJ5YqpIOiCpeW-jOixoeW1jA!5e0!3m2!1sja!2sjp!4v1794900567039!5m2!1sja!2sjp",
+      "sourceLists": 2,
+      "initialIframeCount": 0,
+      "openedIframeCount": 1,
+      "closedIframeCount": 0,
+      "reloadedIframeCount": 0,
+      "initialExternalAttempts": 0,
+      "explicitGoogleAttempts": 1,
+      "reloadedExternalAttempts": 0,
+      "allExternalRequestsAborted": true,
+      "ownStorageChanged": false,
+      "ownStorageWrites": 0,
+      "cookiesWritten": 0,
+      "dimensions": {
+        "x": 40,
+        "y": 224.765625,
+        "width": 310,
+        "height": 208
+      },
+      "pageErrors": [],
+      "externalAttempts": [
+        {
+          "phase": "explicit-open",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.5116427524695!2d130.69183478885495!3d32.8052059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3540f4154e87c8b7%3A0x9b91f1189a0aeb47!2z77yI5qCq77yJ5YWJ5YqpIOiCpeW-jOixoeW1jA!5e0!3m2!1sja!2sjp!4v1794900567039!5m2!1sja!2sjp",
+          "resourceType": "document",
+          "google": true,
+          "action": "aborted"
+        }
+      ],
+      "screenshot": "artifacts/national-stage-new-maps-viewport-mitsusuke-kumamoto-main-ja-390.png",
+      "screenshotStage": "closed map placeholder in an ordinary390x844 viewport; no provider document rendered"
+    },
+    {
+      "key": "mitsusuke-kumamoto-main-en-390",
+      "status": "passed",
+      "productId": "mitsusuke-higo-zogan-shizuku-pierced-earrings",
+      "storeId": "mitsusuke-kumamoto-main",
+      "locale": "en",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/mitsusuke-higo-zogan-shizuku-pierced-earrings/",
+      "name": "Mitsusuke Main Store",
+      "address": "3-2-1 Shinmachi, Chuo-ku, Kumamoto City, Kumamoto 860-0004, Japan",
+      "expectedEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.5116427524695!2d130.69183478885495!3d32.8052059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3540f4154e87c8b7%3A0x9b91f1189a0aeb47!2z77yI5qCq77yJ5YWJ5YqpIOiCpeW-jOixoeW1jA!5e0!3m2!1sja!2sjp!4v1794900567039!5m2!1sja!2sjp",
+      "sourceLists": 2,
+      "initialIframeCount": 0,
+      "openedIframeCount": 1,
+      "closedIframeCount": 0,
+      "reloadedIframeCount": 0,
+      "initialExternalAttempts": 0,
+      "explicitGoogleAttempts": 1,
+      "reloadedExternalAttempts": 0,
+      "allExternalRequestsAborted": true,
+      "ownStorageChanged": false,
+      "ownStorageWrites": 0,
+      "cookiesWritten": 0,
+      "dimensions": {
+        "x": 40,
+        "y": 225.859375,
+        "width": 310,
+        "height": 208
+      },
+      "pageErrors": [],
+      "externalAttempts": [
+        {
+          "phase": "explicit-open",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.5116427524695!2d130.69183478885495!3d32.8052059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3540f4154e87c8b7%3A0x9b91f1189a0aeb47!2z77yI5qCq77yJ5YWJ5YqpIOiCpeW-jOixoeW1jA!5e0!3m2!1sja!2sjp!4v1794900567039!5m2!1sja!2sjp",
+          "resourceType": "document",
+          "google": true,
+          "action": "aborted"
+        }
+      ],
+      "screenshot": "artifacts/national-stage-new-maps-viewport-mitsusuke-kumamoto-main-en-390.png",
+      "screenshotStage": "closed map placeholder in an ordinary390x844 viewport; no provider document rendered"
+    },
+    {
+      "key": "nanayosha-suzuki-tile-tajimi-ja-390",
+      "status": "passed",
+      "productId": "nanayosha-punu-gold-vanilla-pierced-earrings",
+      "storeId": "nanayosha-suzuki-tile-tajimi",
+      "locale": "ja",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/nanayosha-punu-gold-vanilla-pierced-earrings/",
+      "name": "七窯社 鈴木タイル店",
+      "address": "〒507-0018 岐阜県多治見市高田町8-106",
+      "expectedEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.7618625311816!2d137.134491!3d35.3615558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60036a9fb122c285%3A0x877ba67bdb859bdc!2z5LiD56qv56S-IOmItOacqOOCv-OCpOODq-W6lw!5e0!3m2!1sja!2sjp!4v1794900457699!5m2!1sja!2sjp",
+      "sourceLists": 2,
+      "initialIframeCount": 0,
+      "openedIframeCount": 1,
+      "closedIframeCount": 0,
+      "reloadedIframeCount": 0,
+      "initialExternalAttempts": 0,
+      "explicitGoogleAttempts": 1,
+      "reloadedExternalAttempts": 0,
+      "allExternalRequestsAborted": true,
+      "ownStorageChanged": false,
+      "ownStorageWrites": 0,
+      "cookiesWritten": 0,
+      "dimensions": {
+        "x": 40,
+        "y": 225.5625,
+        "width": 310,
+        "height": 208
+      },
+      "pageErrors": [],
+      "externalAttempts": [
+        {
+          "phase": "explicit-open",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.7618625311816!2d137.134491!3d35.3615558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60036a9fb122c285%3A0x877ba67bdb859bdc!2z5LiD56qv56S-IOmItOacqOOCv-OCpOODq-W6lw!5e0!3m2!1sja!2sjp!4v1794900457699!5m2!1sja!2sjp",
+          "resourceType": "document",
+          "google": true,
+          "action": "aborted"
+        }
+      ],
+      "screenshot": "artifacts/national-stage-new-maps-viewport-nanayosha-suzuki-tile-tajimi-ja-390.png",
+      "screenshotStage": "closed map placeholder in an ordinary390x844 viewport; no provider document rendered"
+    },
+    {
+      "key": "nanayosha-suzuki-tile-tajimi-en-390",
+      "status": "passed",
+      "productId": "nanayosha-punu-gold-vanilla-pierced-earrings",
+      "storeId": "nanayosha-suzuki-tile-tajimi",
+      "locale": "en",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/nanayosha-punu-gold-vanilla-pierced-earrings/",
+      "name": "Nanayosha Suzuki Tile Shop",
+      "address": "8-106 Takada-cho, Tajimi, Gifu507-0018, Japan",
+      "expectedEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.7618625311816!2d137.134491!3d35.3615558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60036a9fb122c285%3A0x877ba67bdb859bdc!2z5LiD56qv56S-IOmItOacqOOCv-OCpOODq-W6lw!5e0!3m2!1sja!2sjp!4v1794900457699!5m2!1sja!2sjp",
+      "sourceLists": 2,
+      "initialIframeCount": 0,
+      "openedIframeCount": 1,
+      "closedIframeCount": 0,
+      "reloadedIframeCount": 0,
+      "initialExternalAttempts": 0,
+      "explicitGoogleAttempts": 1,
+      "reloadedExternalAttempts": 0,
+      "allExternalRequestsAborted": true,
+      "ownStorageChanged": false,
+      "ownStorageWrites": 0,
+      "cookiesWritten": 0,
+      "dimensions": {
+        "x": 40,
+        "y": 226.3125,
+        "width": 310,
+        "height": 208
+      },
+      "pageErrors": [],
+      "externalAttempts": [
+        {
+          "phase": "explicit-open",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.7618625311816!2d137.134491!3d35.3615558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60036a9fb122c285%3A0x877ba67bdb859bdc!2z5LiD56qv56S-IOmItOacqOOCv-OCpOODq-W6lw!5e0!3m2!1sja!2sjp!4v1794900457699!5m2!1sja!2sjp",
+          "resourceType": "document",
+          "google": true,
+          "action": "aborted"
+        }
+      ],
+      "screenshot": "artifacts/national-stage-new-maps-viewport-nanayosha-suzuki-tile-tajimi-en-390.png",
+      "screenshotStage": "closed map placeholder in an ordinary390x844 viewport; no provider document rendered"
+    },
+    {
+      "key": "shimadzu-iso-kogeikan-ja-390",
+      "status": "passed",
+      "productId": "shimadzu-satsuma-kiriko-hikari-l-pendant",
+      "storeId": "shimadzu-iso-kogeikan",
+      "locale": "ja",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/shimadzu-satsuma-kiriko-hikari-l-pendant/",
+      "name": "島津薩摩切子ギャラリーショップ 磯工芸館",
+      "address": "〒892-0871 鹿児島県鹿児島市吉野町9688-24",
+      "expectedEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.6174529156715!2d130.57350401553123!3d31.616940481337785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e5e5e7ac163d9%3A0xcaa0a651c9acc5b3!2z44CSODkyLTA4NzEg6bm_5YWQ5bO255yM6bm_5YWQ5bO25biC5ZCJ6YeO55S677yZ77yW77yY77yY4oiS77yS77yU!5e0!3m2!1sja!2sjp!4v1652173385791!5m2!1sja!2sjp",
+      "sourceLists": 2,
+      "initialIframeCount": 0,
+      "openedIframeCount": 1,
+      "closedIframeCount": 0,
+      "reloadedIframeCount": 0,
+      "initialExternalAttempts": 0,
+      "explicitGoogleAttempts": 1,
+      "reloadedExternalAttempts": 0,
+      "allExternalRequestsAborted": true,
+      "ownStorageChanged": false,
+      "ownStorageWrites": 0,
+      "cookiesWritten": 0,
+      "dimensions": {
+        "x": 40,
+        "y": 225.265625,
+        "width": 310,
+        "height": 208
+      },
+      "pageErrors": [],
+      "externalAttempts": [
+        {
+          "phase": "explicit-open",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.6174529156715!2d130.57350401553123!3d31.616940481337785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e5e5e7ac163d9%3A0xcaa0a651c9acc5b3!2z44CSODkyLTA4NzEg6bm_5YWQ5bO255yM6bm_5YWQ5bO25biC5ZCJ6YeO55S677yZ77yW77yY77yY4oiS77yS77yU!5e0!3m2!1sja!2sjp!4v1652173385791!5m2!1sja!2sjp",
+          "resourceType": "document",
+          "google": true,
+          "action": "aborted"
+        }
+      ],
+      "screenshot": "artifacts/national-stage-new-maps-viewport-shimadzu-iso-kogeikan-ja-390.png",
+      "screenshotStage": "closed map placeholder in an ordinary390x844 viewport; no provider document rendered"
+    },
+    {
+      "key": "shimadzu-iso-kogeikan-en-390",
+      "status": "passed",
+      "productId": "shimadzu-satsuma-kiriko-hikari-l-pendant",
+      "storeId": "shimadzu-iso-kogeikan",
+      "locale": "en",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/shimadzu-satsuma-kiriko-hikari-l-pendant/",
+      "name": "Shimadzu Satsuma Kiriko Gallery Shop Iso Kogeikan",
+      "address": "9688-24 Yoshino-cho, Kagoshima City, Kagoshima892-0871, Japan",
+      "expectedEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.6174529156715!2d130.57350401553123!3d31.616940481337785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e5e5e7ac163d9%3A0xcaa0a651c9acc5b3!2z44CSODkyLTA4NzEg6bm_5YWQ5bO255yM6bm_5YWQ5bO25biC5ZCJ6YeO55S677yZ77yW77yY77yY4oiS77yS77yU!5e0!3m2!1sja!2sjp!4v1652173385791!5m2!1sja!2sjp",
+      "sourceLists": 2,
+      "initialIframeCount": 0,
+      "openedIframeCount": 1,
+      "closedIframeCount": 0,
+      "reloadedIframeCount": 0,
+      "initialExternalAttempts": 0,
+      "explicitGoogleAttempts": 1,
+      "reloadedExternalAttempts": 0,
+      "allExternalRequestsAborted": true,
+      "ownStorageChanged": false,
+      "ownStorageWrites": 0,
+      "cookiesWritten": 0,
+      "dimensions": {
+        "x": 40,
+        "y": 226.203125,
+        "width": 310,
+        "height": 208
+      },
+      "pageErrors": [],
+      "externalAttempts": [
+        {
+          "phase": "explicit-open",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.6174529156715!2d130.57350401553123!3d31.616940481337785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e5e5e7ac163d9%3A0xcaa0a651c9acc5b3!2z44CSODkyLTA4NzEg6bm_5YWQ5bO255yM6bm_5YWQ5bO25biC5ZCJ6YeO55S677yZ77yW77yY77yY4oiS77yS77yU!5e0!3m2!1sja!2sjp!4v1652173385791!5m2!1sja!2sjp",
+          "resourceType": "document",
+          "google": true,
+          "action": "aborted"
+        }
+      ],
+      "screenshot": "artifacts/national-stage-new-maps-viewport-shimadzu-iso-kogeikan-en-390.png",
+      "screenshotStage": "closed map placeholder in an ordinary390x844 viewport; no provider document rendered"
+    },
+    {
+      "key": "sava-store-sabae-main-ja-390",
+      "status": "passed",
+      "productId": "sur-basic1-clear-pearl-pierced-earrings",
+      "storeId": "sava-store-sabae-main",
+      "locale": "ja",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/sur-basic1-clear-pearl-pierced-earrings/",
+      "name": "SAVA!STORE 本店",
+      "address": "〒916-1222 福井県鯖江市河和田町19-8",
+      "expectedEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.849558107333!2d136.2741057!3d35.95065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8a579cf2377ef%3A0x7c7d69c25023c085!2zU0FWQSFTVE9SRSDmnKzlupc!5e0!3m2!1sja!2sjp!4v1794900355679!5m2!1sja!2sjp",
+      "sourceLists": 2,
+      "initialIframeCount": 0,
+      "openedIframeCount": 1,
+      "closedIframeCount": 0,
+      "reloadedIframeCount": 0,
+      "initialExternalAttempts": 0,
+      "explicitGoogleAttempts": 1,
+      "reloadedExternalAttempts": 0,
+      "allExternalRequestsAborted": true,
+      "ownStorageChanged": false,
+      "ownStorageWrites": 0,
+      "cookiesWritten": 0,
+      "dimensions": {
+        "x": 40,
+        "y": 225.4375,
+        "width": 310,
+        "height": 208
+      },
+      "pageErrors": [],
+      "externalAttempts": [
+        {
+          "phase": "explicit-open",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.849558107333!2d136.2741057!3d35.95065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8a579cf2377ef%3A0x7c7d69c25023c085!2zU0FWQSFTVE9SRSDmnKzlupc!5e0!3m2!1sja!2sjp!4v1794900355679!5m2!1sja!2sjp",
+          "resourceType": "document",
+          "google": true,
+          "action": "aborted"
+        }
+      ],
+      "screenshot": "artifacts/national-stage-new-maps-viewport-sava-store-sabae-main-ja-390.png",
+      "screenshotStage": "closed map placeholder in an ordinary390x844 viewport; no provider document rendered"
+    },
+    {
+      "key": "sava-store-sabae-main-en-390",
+      "status": "passed",
+      "productId": "sur-basic1-clear-pearl-pierced-earrings",
+      "storeId": "sava-store-sabae-main",
+      "locale": "en",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/sur-basic1-clear-pearl-pierced-earrings/",
+      "name": "SAVA!STORE main shop",
+      "address": "19-8 Kawada-cho, Sabae, Fukui916-1222, Japan",
+      "expectedEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.849558107333!2d136.2741057!3d35.95065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8a579cf2377ef%3A0x7c7d69c25023c085!2zU0FWQSFTVE9SRSDmnKzlupc!5e0!3m2!1sja!2sjp!4v1794900355679!5m2!1sja!2sjp",
+      "sourceLists": 2,
+      "initialIframeCount": 0,
+      "openedIframeCount": 1,
+      "closedIframeCount": 0,
+      "reloadedIframeCount": 0,
+      "initialExternalAttempts": 0,
+      "explicitGoogleAttempts": 1,
+      "reloadedExternalAttempts": 0,
+      "allExternalRequestsAborted": true,
+      "ownStorageChanged": false,
+      "ownStorageWrites": 0,
+      "cookiesWritten": 0,
+      "dimensions": {
+        "x": 40,
+        "y": 226.546875,
+        "width": 310,
+        "height": 208
+      },
+      "pageErrors": [],
+      "externalAttempts": [
+        {
+          "phase": "explicit-open",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.849558107333!2d136.2741057!3d35.95065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8a579cf2377ef%3A0x7c7d69c25023c085!2zU0FWQSFTVE9SRSDmnKzlupc!5e0!3m2!1sja!2sjp!4v1794900355679!5m2!1sja!2sjp",
+          "resourceType": "document",
+          "google": true,
+          "action": "aborted"
+        }
+      ],
+      "screenshot": "artifacts/national-stage-new-maps-viewport-sava-store-sabae-main-en-390.png",
+      "screenshotStage": "closed map placeholder in an ordinary390x844 viewport; no provider document rendered"
+    },
+    {
+      "key": "tete-iias-okinawa-toyosaki-ja-390",
+      "status": "passed",
+      "productId": "tete-ryukyu-glass-hanagasa-heart-pierced-earrings",
+      "storeId": "tete-iias-okinawa-toyosaki",
+      "locale": "ja",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/tete-ryukyu-glass-hanagasa-heart-pierced-earrings/",
+      "name": "tete by okinawa イーアス沖縄豊崎店",
+      "address": "〒901-0225 沖縄県豊見城市豊崎3-35 イーアス沖縄豊崎2階",
+      "expectedEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.196325215678!2d127.65097709999999!3d26.1577349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e569bc128b4f09%3A0xbcc6cae9f1fe820!2stete%20by%20okinawa!5e0!3m2!1sja!2sjp!4v1794900783880!5m2!1sja!2sjp",
+      "sourceLists": 2,
+      "initialIframeCount": 0,
+      "openedIframeCount": 1,
+      "closedIframeCount": 0,
+      "reloadedIframeCount": 0,
+      "initialExternalAttempts": 0,
+      "explicitGoogleAttempts": 1,
+      "reloadedExternalAttempts": 0,
+      "allExternalRequestsAborted": true,
+      "ownStorageChanged": false,
+      "ownStorageWrites": 0,
+      "cookiesWritten": 0,
+      "dimensions": {
+        "x": 40,
+        "y": 224.921875,
+        "width": 310,
+        "height": 208
+      },
+      "pageErrors": [],
+      "externalAttempts": [
+        {
+          "phase": "explicit-open",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.196325215678!2d127.65097709999999!3d26.1577349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e569bc128b4f09%3A0xbcc6cae9f1fe820!2stete%20by%20okinawa!5e0!3m2!1sja!2sjp!4v1794900783880!5m2!1sja!2sjp",
+          "resourceType": "document",
+          "google": true,
+          "action": "aborted"
+        }
+      ],
+      "screenshot": "artifacts/national-stage-new-maps-viewport-tete-iias-okinawa-toyosaki-ja-390.png",
+      "screenshotStage": "closed map placeholder in an ordinary390x844 viewport; no provider document rendered"
+    },
+    {
+      "key": "tete-iias-okinawa-toyosaki-en-390",
+      "status": "passed",
+      "productId": "tete-ryukyu-glass-hanagasa-heart-pierced-earrings",
+      "storeId": "tete-iias-okinawa-toyosaki",
+      "locale": "en",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/tete-ryukyu-glass-hanagasa-heart-pierced-earrings/",
+      "name": "tete by Okinawa, Iias Okinawa Toyosaki",
+      "address": "2F Iias Okinawa Toyosaki,3-35 Toyosaki, Tomigusuku, Okinawa901-0225, Japan",
+      "expectedEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.196325215678!2d127.65097709999999!3d26.1577349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e569bc128b4f09%3A0xbcc6cae9f1fe820!2stete%20by%20okinawa!5e0!3m2!1sja!2sjp!4v1794900783880!5m2!1sja!2sjp",
+      "sourceLists": 2,
+      "initialIframeCount": 0,
+      "openedIframeCount": 1,
+      "closedIframeCount": 0,
+      "reloadedIframeCount": 0,
+      "initialExternalAttempts": 0,
+      "explicitGoogleAttempts": 1,
+      "reloadedExternalAttempts": 0,
+      "allExternalRequestsAborted": true,
+      "ownStorageChanged": false,
+      "ownStorageWrites": 0,
+      "cookiesWritten": 0,
+      "dimensions": {
+        "x": 40,
+        "y": 226.53125,
+        "width": 310,
+        "height": 208
+      },
+      "pageErrors": [],
+      "externalAttempts": [
+        {
+          "phase": "explicit-open",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.196325215678!2d127.65097709999999!3d26.1577349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e569bc128b4f09%3A0xbcc6cae9f1fe820!2stete%20by%20okinawa!5e0!3m2!1sja!2sjp!4v1794900783880!5m2!1sja!2sjp",
+          "resourceType": "document",
+          "google": true,
+          "action": "aborted"
+        }
+      ],
+      "screenshot": "artifacts/national-stage-new-maps-viewport-tete-iias-okinawa-toyosaki-en-390.png",
+      "screenshotStage": "closed map placeholder in an ordinary390x844 viewport; no provider document rendered"
+    },
+    {
+      "key": "yadome-atelier-akita-shop-ja-390",
+      "status": "passed",
+      "productId": "yadome-akita-rice-silver-pierced-earrings",
+      "storeId": "yadome-atelier-akita-shop",
+      "locale": "ja",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/yadome-akita-rice-silver-pierced-earrings/",
+      "name": "矢留彫金工房 併設店舗",
+      "address": "〒010-0921 秋田県秋田市大町2丁目1-11 榮太楼ふるさと文化館1階",
+      "expectedEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.962570228451!2d140.11572441537484!3d39.71802387945241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8fc2ea58901d7d%3A0xebdbb598e9083513!2z44CSMDEwLTA5MjEg56eL55Sw55yM56eL55Sw5biC5aSn55S677yS5LiB55uu77yR4oiS77yR77yR!5e0!3m2!1sja!2sjp!4v1638866544592!5m2!1sja!2sjp",
+      "sourceLists": 2,
+      "initialIframeCount": 0,
+      "openedIframeCount": 1,
+      "closedIframeCount": 0,
+      "reloadedIframeCount": 0,
+      "initialExternalAttempts": 0,
+      "explicitGoogleAttempts": 1,
+      "reloadedExternalAttempts": 0,
+      "allExternalRequestsAborted": true,
+      "ownStorageChanged": false,
+      "ownStorageWrites": 0,
+      "cookiesWritten": 0,
+      "dimensions": {
+        "x": 40,
+        "y": 224.609375,
+        "width": 310,
+        "height": 208
+      },
+      "pageErrors": [],
+      "externalAttempts": [
+        {
+          "phase": "explicit-open",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.962570228451!2d140.11572441537484!3d39.71802387945241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8fc2ea58901d7d%3A0xebdbb598e9083513!2z44CSMDEwLTA5MjEg56eL55Sw55yM56eL55Sw5biC5aSn55S677yS5LiB55uu77yR4oiS77yR77yR!5e0!3m2!1sja!2sjp!4v1638866544592!5m2!1sja!2sjp",
+          "resourceType": "document",
+          "google": true,
+          "action": "aborted"
+        }
+      ],
+      "screenshot": "artifacts/national-stage-new-maps-viewport-yadome-atelier-akita-shop-ja-390.png",
+      "screenshotStage": "closed map placeholder in an ordinary390x844 viewport; no provider document rendered"
+    },
+    {
+      "key": "yadome-atelier-akita-shop-en-390",
+      "status": "passed",
+      "productId": "yadome-akita-rice-silver-pierced-earrings",
+      "storeId": "yadome-atelier-akita-shop",
+      "locale": "en",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/yadome-akita-rice-silver-pierced-earrings/",
+      "name": "Yadome Silver Atelier shop",
+      "address": "Eitaro Furusato Bunkakan1F,2-1-11 Omachi, Akita City, Akita010-0921, Japan",
+      "expectedEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.962570228451!2d140.11572441537484!3d39.71802387945241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8fc2ea58901d7d%3A0xebdbb598e9083513!2z44CSMDEwLTA5MjEg56eL55Sw55yM56eL55Sw5biC5aSn55S677yS5LiB55uu77yR4oiS77yR77yR!5e0!3m2!1sja!2sjp!4v1638866544592!5m2!1sja!2sjp",
+      "sourceLists": 2,
+      "initialIframeCount": 0,
+      "openedIframeCount": 1,
+      "closedIframeCount": 0,
+      "reloadedIframeCount": 0,
+      "initialExternalAttempts": 0,
+      "explicitGoogleAttempts": 1,
+      "reloadedExternalAttempts": 0,
+      "allExternalRequestsAborted": true,
+      "ownStorageChanged": false,
+      "ownStorageWrites": 0,
+      "cookiesWritten": 0,
+      "dimensions": {
+        "x": 40,
+        "y": 226.3125,
+        "width": 310,
+        "height": 208
+      },
+      "pageErrors": [],
+      "externalAttempts": [
+        {
+          "phase": "explicit-open",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.962570228451!2d140.11572441537484!3d39.71802387945241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8fc2ea58901d7d%3A0xebdbb598e9083513!2z44CSMDEwLTA5MjEg56eL55Sw55yM56eL55Sw5biC5aSn55S677yS5LiB55uu77yR4oiS77yR77yR!5e0!3m2!1sja!2sjp!4v1638866544592!5m2!1sja!2sjp",
+          "resourceType": "document",
+          "google": true,
+          "action": "aborted"
+        }
+      ],
+      "screenshot": "artifacts/national-stage-new-maps-viewport-yadome-atelier-akita-shop-en-390.png",
+      "screenshotStage": "closed map placeholder in an ordinary390x844 viewport; no provider document rendered"
+    },
+    {
+      "key": "aoya-washi-museum-shop-ja-390",
+      "status": "passed",
+      "productId": "yoboty-inshu-washi-indigo-long-nonhole-earrings",
+      "storeId": "aoya-washi-museum-shop",
+      "locale": "ja",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/yoboty-inshu-washi-indigo-long-nonhole-earrings/",
+      "name": "鳥取市あおや和紙工房 ミュージアムショップ",
+      "address": "〒689-0514 鳥取県鳥取市青谷町山根313",
+      "expectedEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.4210872189647!2d134.01579189999998!3d35.469124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3555e9814ed4444f%3A0x31660ab84a883ba5!2z44GC44GK44KE5ZKM57SZ5bel5oi_!5e0!3m2!1sja!2sjp!4v1794900727816!5m2!1sja!2sjp",
+      "sourceLists": 2,
+      "initialIframeCount": 0,
+      "openedIframeCount": 1,
+      "closedIframeCount": 0,
+      "reloadedIframeCount": 0,
+      "initialExternalAttempts": 0,
+      "explicitGoogleAttempts": 1,
+      "reloadedExternalAttempts": 0,
+      "allExternalRequestsAborted": true,
+      "ownStorageChanged": false,
+      "ownStorageWrites": 0,
+      "cookiesWritten": 0,
+      "dimensions": {
+        "x": 40,
+        "y": 224.625,
+        "width": 310,
+        "height": 208
+      },
+      "pageErrors": [],
+      "externalAttempts": [
+        {
+          "phase": "explicit-open",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.4210872189647!2d134.01579189999998!3d35.469124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3555e9814ed4444f%3A0x31660ab84a883ba5!2z44GC44GK44KE5ZKM57SZ5bel5oi_!5e0!3m2!1sja!2sjp!4v1794900727816!5m2!1sja!2sjp",
+          "resourceType": "document",
+          "google": true,
+          "action": "aborted"
+        }
+      ],
+      "screenshot": "artifacts/national-stage-new-maps-viewport-aoya-washi-museum-shop-ja-390.png",
+      "screenshotStage": "closed map placeholder in an ordinary390x844 viewport; no provider document rendered"
+    },
+    {
+      "key": "aoya-washi-museum-shop-en-390",
+      "status": "passed",
+      "productId": "yoboty-inshu-washi-indigo-long-nonhole-earrings",
+      "storeId": "aoya-washi-museum-shop",
+      "locale": "en",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/yoboty-inshu-washi-indigo-long-nonhole-earrings/",
+      "name": "Aoya Washi Studio museum shop",
+      "address": "313 Yamane, Aoya-cho, Tottori City, Tottori689-0514, Japan",
+      "expectedEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.4210872189647!2d134.01579189999998!3d35.469124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3555e9814ed4444f%3A0x31660ab84a883ba5!2z44GC44GK44KE5ZKM57SZ5bel5oi_!5e0!3m2!1sja!2sjp!4v1794900727816!5m2!1sja!2sjp",
+      "sourceLists": 2,
+      "initialIframeCount": 0,
+      "openedIframeCount": 1,
+      "closedIframeCount": 0,
+      "reloadedIframeCount": 0,
+      "initialExternalAttempts": 0,
+      "explicitGoogleAttempts": 1,
+      "reloadedExternalAttempts": 0,
+      "allExternalRequestsAborted": true,
+      "ownStorageChanged": false,
+      "ownStorageWrites": 0,
+      "cookiesWritten": 0,
+      "dimensions": {
+        "x": 40,
+        "y": 226.3125,
+        "width": 310,
+        "height": 208
+      },
+      "pageErrors": [],
+      "externalAttempts": [
+        {
+          "phase": "explicit-open",
+          "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.4210872189647!2d134.01579189999998!3d35.469124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3555e9814ed4444f%3A0x31660ab84a883ba5!2z44GC44GK44KE5ZKM57SZ5bel5oi_!5e0!3m2!1sja!2sjp!4v1794900727816!5m2!1sja!2sjp",
+          "resourceType": "document",
+          "google": true,
+          "action": "aborted"
+        }
+      ],
+      "screenshot": "artifacts/national-stage-new-maps-viewport-aoya-washi-museum-shop-en-390.png",
+      "screenshotStage": "closed map placeholder in an ordinary390x844 viewport; no provider document rendered"
+    }
+  ],
+  "failures": [],
+  "screenshots": [
+    "artifacts/national-stage-new-maps-viewport-applause-naruto-main-ja-390.png",
+    "artifacts/national-stage-new-maps-viewport-applause-naruto-main-en-390.png",
+    "artifacts/national-stage-new-maps-viewport-hiroshima-peace-park-resthouse-shop-ja-390.png",
+    "artifacts/national-stage-new-maps-viewport-hiroshima-peace-park-resthouse-shop-en-390.png",
+    "artifacts/national-stage-new-maps-viewport-menoya-izumo-taisha-ja-390.png",
+    "artifacts/national-stage-new-maps-viewport-menoya-izumo-taisha-en-390.png",
+    "artifacts/national-stage-new-maps-viewport-mitsusuke-kumamoto-main-ja-390.png",
+    "artifacts/national-stage-new-maps-viewport-mitsusuke-kumamoto-main-en-390.png",
+    "artifacts/national-stage-new-maps-viewport-nanayosha-suzuki-tile-tajimi-ja-390.png",
+    "artifacts/national-stage-new-maps-viewport-nanayosha-suzuki-tile-tajimi-en-390.png",
+    "artifacts/national-stage-new-maps-viewport-shimadzu-iso-kogeikan-ja-390.png",
+    "artifacts/national-stage-new-maps-viewport-shimadzu-iso-kogeikan-en-390.png",
+    "artifacts/national-stage-new-maps-viewport-sava-store-sabae-main-ja-390.png",
+    "artifacts/national-stage-new-maps-viewport-sava-store-sabae-main-en-390.png",
+    "artifacts/national-stage-new-maps-viewport-tete-iias-okinawa-toyosaki-ja-390.png",
+    "artifacts/national-stage-new-maps-viewport-tete-iias-okinawa-toyosaki-en-390.png",
+    "artifacts/national-stage-new-maps-viewport-yadome-atelier-akita-shop-ja-390.png",
+    "artifacts/national-stage-new-maps-viewport-yadome-atelier-akita-shop-en-390.png",
+    "artifacts/national-stage-new-maps-viewport-aoya-washi-museum-shop-ja-390.png",
+    "artifacts/national-stage-new-maps-viewport-aoya-washi-museum-shop-en-390.png"
+  ],
+  "finishedAt": "2026-11-17T07:44:09.383Z",
+  "summary": {
+    "expectedFlows": 20,
+    "checks": 20,
+    "passed": 20,
+    "failed": 0,
+    "products": 10,
+    "uniqueStores": 10,
+    "locales": 2,
+    "initialExternalAttempts": 0,
+    "explicitGoogleAttempts": 20,
+    "reloadExternalAttempts": 0,
+    "screenshots": 20,
+    "sourceInputsUnchanged": true
+  }
+}

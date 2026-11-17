@@ -1,0 +1,19 @@
+{
+  "version": "0.16.0",
+  "checkedAt": "2026-11-17T07:46:45.484Z",
+  "baselineSourceCommit": "1082263175de9d6b284d8760d2c8d34d09caafd6",
+  "method": "Independently compare every prior catalog array record, every Japanese translation entry and every source record to Git1082263; compare all98 prior public image SHA to the final0.15 output manifest, plus frozen image-record bytes to Git.",
+  "status": "passed",
+  "priorCatalogRecordsPreserved": 267,
+  "priorProductsPreserved": 56,
+  "priorPublishedProductsPreserved": 50,
+  "priorTranslationEntriesPreserved": 199,
+  "priorSourcesPreserved": 258,
+  "priorPublicImagesPreserved": 98,
+  "frozenImageRecordsPreserved": [
+    "docs/image-generation-solo-v14.json",
+    "docs/image-generation-v13.json",
+    "docs/research/image-baseline-v12.json"
+  ],
+  "limits": "Presentation order and selected homepage features intentionally change. This is preservation of prior facts/image bytes, not an assertion that old and expanded HTML are identical."
+}

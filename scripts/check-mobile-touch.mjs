@@ -9,6 +9,7 @@ const reportPath=process.env.CHECK_REPORT_PATH||'docs/visual-mobile-stage-touch-
 const prefix=(process.env.CHECK_SCREENSHOT_PREFIX||'visual-mobile-stage-touch').replace(/[^a-zA-Z0-9_-]/g,'-');
 const report={checkedAt:new Date().toISOString(),origin,base,method:'Fresh Chrome mobile emulation at390x844, touch enabled and DPR2. Real tap events exercise menu, filter, language and source controls. This is not physical-device, Safari or iOS testing. Additional section screenshots support visual review only.',checks:[],failures:[],screenshots:[]};
 const catalog=JSON.parse(await readFile('src/data/catalog.json','utf8'));
+const publishedProductCount=catalog.products.filter(product=>product.publishStatus==='published').length;
 await mkdir(dirname(reportPath),{recursive:true});await mkdir('artifacts',{recursive:true});
 const browser=await chromium.launch({channel:'chrome',headless:true}),url=(locale,path='')=>origin+base+locale+'/'+path;
 try{
@@ -27,7 +28,7 @@ try{
    const switched=new URL(page.url());assert.equal(switched.searchParams.get('type'),'pierced-earrings');assert.equal(switched.searchParams.get('prefecture'),'kanagawa');assert.equal(switched.hash,'#all-jewelry');
    assert.equal(await page.locator('select[name=type]').inputValue(),'pierced-earrings');
    await Promise.all([page.waitForURL('**/'+locale+'/objects/**'),page.locator('.language-switch').tap()]);
-   await page.locator('.reset-button').first().tap();assert.equal(await page.locator('[data-product-card]:visible').count(),50);
+   await page.locator('.reset-button').first().tap();assert.equal(await page.locator('[data-product-card]:visible').count(),publishedProductCount);
    const productLink=page.locator('[data-product-card]:visible .card-art-link').first();
    await Promise.all([page.waitForURL('**/'+locale+'/objects/*/'),productLink.tap()]);
    assert.equal(await page.locator('#product-sources').getAttribute('open'),null);

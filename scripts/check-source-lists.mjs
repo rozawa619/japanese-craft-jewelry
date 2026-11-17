@@ -8,7 +8,7 @@ const baseParts=(process.env.PUBLIC_BASE_PATH||'japanese-craft-jewelry').split('
 const base='/'+baseParts.join('/')+(baseParts.length?'/':'');
 const read=async p=>JSON.parse(await readFile(p,'utf8'));
 const catalog=await read('src/data/catalog.json'),sources=await read('docs/research/sources.json'),evidence=await read('src/data/purchase-evidence.json'),visits=await read('src/data/visits.json');
-const report={checkedAt:new Date().toISOString(),origin,method:'Fresh Chrome DOMParser inspects fetched canonical HTML without executing its scripts or loading images/maps. Every rendered source/checked date must be inside an initially closed non-nested source disclosure. All100 product pages preserve raw canonical product sources, product/market/purchase dates, and store dates. Browser keyboard/hash/no-JavaScript operation is tested separately.',pages:[],failures:[],sourceDisclosures:0,sourceRecords:0,productPages:0};
+const report={checkedAt:new Date().toISOString(),origin,method:'Fresh Chrome DOMParser inspects fetched canonical HTML without executing its scripts or loading images/maps. Every rendered source/checked date must be inside an initially closed non-nested source disclosure. All published product pages preserve raw canonical product sources, product/market/purchase dates, and store dates. Browser keyboard/hash/no-JavaScript operation is tested separately.',pages:[],failures:[],sourceDisclosures:0,sourceRecords:0,productPages:0};
 const browser=await chromium.launch({channel:'chrome',headless:true}),page=await browser.newPage();
 try{
  const sitemap=await page.request.get(origin+base+'sitemap.xml');assert.equal(sitemap.status(),200);

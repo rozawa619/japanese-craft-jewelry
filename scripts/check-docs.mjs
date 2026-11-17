@@ -5,7 +5,7 @@ import {resolve,dirname,relative,sep} from 'node:path';
 import {fileURLToPath} from 'node:url';
 
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
-const active=['README.md','AGENTS.md','src/README.md','src/data/README.md','docs/README.md','docs/setup.md','docs/handoff.md','docs/ai-handoff.md','docs/architecture.md','docs/editing-guide.md','docs/verification-guide.md','docs/operations.md',...['spec','plan','tasks','validation'].map(name=>'specs/017-maintainer-handoff/'+name+'.md')];
+const active=['README.md','AGENTS.md','src/README.md','src/data/README.md','docs/README.md','docs/setup.md','docs/handoff.md','docs/ai-handoff.md','docs/architecture.md','docs/editing-guide.md','docs/verification-guide.md','docs/operations.md','docs/national-expansion-v16.md','docs/research/national-expansion-east-2026-11-17.md','docs/research/national-expansion-west-2026-11-17.md',...['017-maintainer-handoff','018-national-jewelry-expansion'].flatMap(spec=>['spec','plan','tasks','validation'].map(name=>'specs/'+spec+'/'+name+'.md'))];
 const report={checkedAt:new Date().toISOString(),method:'Read-only local link, Markdown heading/fragment and pnpm/node-script reference checks on active maintainer documents. External URLs are counted, not requested. Legacy operations after its explicit marker and historical research/report prose are not treated as the current runbook.',files:[],errors:[],localLinks:0,anchors:0,externalLinks:0,commands:0,scriptPaths:0};
 const pkg=JSON.parse(await readFile(resolve(root,'package.json'),'utf8'));
 const builtins=new Set(['install','exec','audit','run','help','add','remove','update','list','why']);
