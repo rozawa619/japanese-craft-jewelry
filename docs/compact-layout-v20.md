@@ -1,10 +1,10 @@
 # 一覧地図とトップ写真の余白を整える — 0.17.3
 
-確認日2026-11-17。仕様は[022](../specs/022-compact-map-and-natural-hero/spec.md)。**実装・最終検証・公開・ZIPは作業中です。** 確定した寸法/件数/app/Actionsは[022 validation](../specs/022-compact-map-and-natural-hero/validation.md)・[verification](verification.md)・[deployment-results](deployment-results.json)を参照してください。
+確認日2026-11-17。仕様は[022](../specs/022-compact-map-and-natural-hero/spec.md)。実装・最終local/公開検証済み。ZIPの確定状態はdeployment-resultsのsourceDeliveryと外部proofを参照。 確定した寸法/件数/app/Actionsは[022 validation](../specs/022-compact-map-and-natural-hero/validation.md)・[verification](verification.md)・[deployment-results](deployment-results.json)を参照してください。
 
 ## どの表示を変えるか
 
-「日本の『ここ』へ行くなら。」の一覧地図は、全体の枠と主図をコンパクトにします。本州〜北海道の主図から沖縄の同じCC0原形を別枠へ移し、「沖縄（拡大）」と分かる入口にします。予定は外枠max1040px、主図max幅480px/高540px、沖縄枠PC144px/スマホ80px。画面幅による実寸や枠全体の高さは、最終の計測結果を確認してください。
+「日本の『ここ』へ行くなら。」の一覧地図は、全体の枠と主図をコンパクトにします。本州〜北海道の主図から沖縄の同じCC0原形を別枠へ移し、「沖縄（拡大）」と分かる入口にします。予定は外枠max1040px、主図max幅480px/高540px、沖縄枠PC144px/スマホ最低80px（390幅実測94.8px）。画面幅による実寸や枠全体の高さは、最終の計測結果を確認してください。
 
 沖縄は島path・枠・labelからclick/tap/Enterでき、直接その産地の商品一覧へ進みます。通常hrefなのでJSなしや修飾clickでも使えます。hover/focus/selectの代表商品preview、zoom/内部scroll/全体表示、地方別details一覧も継承します。県は原形47/掲載24のままです。
 
@@ -34,3 +34,5 @@ TOP10/DISCOVER3県の共通写真は0.17.2のPC最大300×200px/スマホ最大2
 今回の新商品/新bitmapはありません。商品60/24県/118画像・SORA・広告off/実提携未申請・Google店舗Mapsの30日設定を継承します。法務/権利・実アカウント/CMP・商用host等の残条件は、このレイアウト検証で完了になりません。
 
 納品予定はjapanese-craft-jewelry-source-0.17.3-compact-022.zipとpackage-verification-0.17.3-compact-022.jsonです。現時点で作成/全SHA照合済みという意味ではありません。
+
+最終Map241/Hero77/mobile92/Sources328/公開補足24・保全6が成功。枠の高さはPC約30%/390幅約5.4%短縮、写真は174paint測定で上下余白0。詳細は022 validationとverificationを参照。

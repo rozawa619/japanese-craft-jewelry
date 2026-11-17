@@ -1,6 +1,6 @@
 # 別のAIへ引き継ぐ
 
-確認日：2026-11-17、作業版0.17.3・地図枠とトップ写真の調整022。まずこの文書と[検証ガイド](verification-guide.md)を読めば、過去の会話や全世代の文書を読み直さず着手できる。実際の依頼・AGENTS.md・最新の公開/納品記録を優先する。
+確認日：2026-11-17、公開版0.17.3・地図枠とトップ写真の調整022。まずこの文書と[検証ガイド](verification-guide.md)を読めば、過去の会話や全世代の文書を読み直さず着手できる。実際の依頼・AGENTS.md・最新の公開/納品記録を優先する。
 
 構造を調べるときは[architecture.md](architecture.md)、項目別に更新するときは[editing-guide.md](editing-guide.md)へ進む。今回の一覧地図/沖縄枠・Hero自然高は[022ガイド](compact-layout-v20.md)で確認する。無関係な履歴文書まで開始時に通読する必要はない。
 
@@ -13,15 +13,14 @@
 | リポジトリ | [rozawa619/japanese-craft-jewelry](https://github.com/rozawa619/japanese-craft-jewelry)、main |
 | 公開appの正本 | [deployment-results](deployment-results.json)と実Actions/公開URLを確認。作業版・文書HEADから推定しない |
 | ソースの基準 | 仕様022のソース。`git status`と`git rev-parse HEAD`で取り直し、公開app SHAと文書/証跡を含むHEADを区別 |
-| 版 / 実装 | 作業版0.17.3、Astroの静的サイト。公開先にNodeサーバー、DB、会員、注文、決済、発送機能はない |
+| 版 / 実装 | 公開版0.17.3、Astroの静的サイト。公開先にNodeサーバー、DB、会員、注文、決済、発送機能はない |
 | データ | 公開60商品 / 登録66商品・draft6商品、24県、公開商品が関連する技法34（全36）、一次出典293、33店舗。53商品に店舗案内。購入根拠は通販51・店舗＋現行カタログ9 |
 | 画像 | WebP118ファイル＝人物スタイリング58＋ジュエリー単体60。全60商品へ両方を対応。0.16の新規生成は23PNG＝採用20・棄却3で、旧98公開画像のbytesを保持 |
 | 導線 | TOP10→47県の日本地図（掲載24県）→DISCOVER3県をhome/objects/placesで共通表示。代表単体画像/価格、select/地方一覧/地図ジャンプと従来の絞込 |
 | 出典 | 最初は閉じたnative details。価格・商品・店舗の確認日も一覧の中へ。情報そのものを削除していない |
 | 広告 | AdSenseはoff固定、実アカウント/認定CMPは未接続。提携リンクも未申請で、現在は通常リンク。アカウント登録・申請・契約・課金はしていない |
 
-<!-- TODO_PUBLIC_V20 -->
-0.17.3（仕様022）は公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
+0.17.3（仕様022）公開済み。app `ef8ae160e7fc7d2b41cdce1063094313b719df6e`、[Actions44081729750](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44081729750) completed/success。実URLで一覧地図241・Hero77・mobile92・Sources328・補足24を確認。地図枠縮小/一覧沖縄別枠とトップ写真の自然比率を反映。確定値はdeployment-results/verificationを参照。
 
 旧版の公開記録：0.17.2（仕様021）公開済み。app `19f066ee20f4aa8eb1b441a4178dc92ffcb25ae7`、[Actions44072612768](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44072612768) completed/success。実URLの写真37・mobile92・Sources328・補足24が成功。Top10とDISCOVER3の写真を全3ページで統一。確定値はdeployment-results/verificationを参照。 0.17.2の全sourceは1118ファイルを照合済み。これは022の実測/公開/納品結果ではありません。
 
@@ -116,7 +115,7 @@ Googleマップは初回の明示許可後、日英・全店舗で30日間自動
 【今回の依頼】を実装・検証し、修正内容と根拠を引き継げる状態にしてください。
 計画だけで終わらず、依頼範囲の可逆的な作業を進めてください。
 
-現在の作業版はJapanese Craft Jewelry0.17.3（仕様022・公開前の検証中）、SORA運営、日英、
+現在の公開版はJapanese Craft Jewelry0.17.3（仕様022・公開前の検証中）、SORA運営、日英、
 公開60/登録66商品・24県、AI WebP118ファイルです。
 公開app/Actions/実URL結果はdocs/deployment-results.jsonの確定値を確認し、
 ローカル成功を公開成功に読み替えないでください。

@@ -3,10 +3,18 @@
   "specification": "022-compact-map-and-natural-hero",
   "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
   "branch": "main",
-  "status": "locally_verified_pending_publication",
-  "recordedAt": "2026-11-17T12:16:48.202Z",
-  "applicationCommit": null,
-  "actions": null,
+  "status": "deployed_and_verified",
+  "recordedAt": "2026-11-17T12:23:23.430Z",
+  "applicationCommit": "ef8ae160e7fc7d2b41cdce1063094313b719df6e",
+  "actions": {
+    "id": 44081729750,
+    "headSha": "ef8ae160e7fc7d2b41cdce1063094313b719df6e",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44081729750",
+    "updatedAt": "2026-11-17T12:18:20Z",
+    "observedAt": "2026-11-17T12:19:06.551Z"
+  },
   "previousDeployedVersion": "0.17.2",
   "previousDeployedApplicationCommit": "19f066ee20f4aa8eb1b441a4178dc92ffcb25ae7",
   "previousRecord": "docs/deployment-v19-before-compact-layout.json",
@@ -247,13 +255,14 @@
       "report": "docs/compact-layout-stage-docs-results.json",
       "summary": {
         "files": 49,
-        "localLinks": 508,
+        "localLinks": 527,
         "anchors": 6,
-        "externalLinksUnchecked": 95,
+        "externalLinksUnchecked": 104,
         "pnpmReferences": 96,
-        "nodeScriptReferences": 36,
+        "nodeScriptReferences": 37,
         "errors": 0
-      }
+      },
+      "scope": "Latest final maintainer-document check"
     }
   },
   "reusedFunctionalCoverage": {
@@ -266,7 +275,119 @@
   },
   "buildManifest": "docs/compact-layout-stage-build-manifest.json",
   "publicVerification": {
-    "status": "pending"
+    "version": "0.17.3",
+    "checkedAt": "2026-11-17T12:23:23.429Z",
+    "status": "passed",
+    "applicationCommit": "ef8ae160e7fc7d2b41cdce1063094313b719df6e",
+    "actions": {
+      "id": 44081729750,
+      "headSha": "ef8ae160e7fc7d2b41cdce1063094313b719df6e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44081729750",
+      "updatedAt": "2026-11-17T12:18:20Z",
+      "observedAt": "2026-11-17T12:19:06.551Z"
+    },
+    "suites": {
+      "map": {
+        "report": "docs/compact-layout-stage-hosted-map-results.json",
+        "summary": {
+          "checks": 241,
+          "passed": 241,
+          "failed": 0,
+          "regions": 24,
+          "geographicShapes": 47,
+          "locales": 2,
+          "surfaces": 3,
+          "viewports": 3,
+          "selectionChecks": 192,
+          "nativeNavigations": 54,
+          "zoomCases": 6,
+          "mobilePanCases": 2,
+          "compactScenes": 18,
+          "topTenImageChecks": 180,
+          "geometryScenes": 18,
+          "okinawaInsetCases": 6,
+          "axeScreens": 6,
+          "axeViolations": 0,
+          "screenshots": 6,
+          "pageErrors": 0,
+          "consoleErrors": 0,
+          "externalRequests": 0
+        }
+      },
+      "hero": {
+        "report": "docs/compact-layout-stage-hosted-hero-results.json",
+        "summary": {
+          "checks": 77,
+          "passed": 77,
+          "failed": 0,
+          "locales": 2,
+          "viewports": 4,
+          "regions": 24,
+          "selections": 172,
+          "modelSwitches": 124,
+          "firstFoldScreens": 8,
+          "enlargedGeometryScreens": 8,
+          "uniquePrefectureShapes": 47,
+          "okinawaInset": true,
+          "naturalImagePaintChecks": 174,
+          "maxVerticalLetterbox": 0,
+          "maxNaturalRatioError": 0.010416666666685614,
+          "maxContainerBlank": 0,
+          "axeScreens": 4,
+          "axeViolations": 0,
+          "screenshots": 8,
+          "pageErrors": 0,
+          "consoleErrors": 0,
+          "externalRequests": 0,
+          "sourceInputsUnchanged": true
+        }
+      },
+      "mobile": {
+        "report": "docs/compact-layout-stage-hosted-mobile-results.json",
+        "summary": {
+          "checks": 92,
+          "passed": 92,
+          "failed": 0,
+          "viewports": 7,
+          "locales": 2,
+          "representativeRoutes": 6,
+          "sourceControls": 120,
+          "typeImageInstances": 112,
+          "axeScreens": 10,
+          "axeViolations": 0,
+          "liveMaps": 2,
+          "screenshots": 16
+        }
+      },
+      "sources": {
+        "report": "docs/compact-layout-stage-hosted-sources-results.json",
+        "summary": {
+          "checks": 328,
+          "passed": 328,
+          "failed": 0,
+          "htmlSha256Comparisons": 328,
+          "productPages": 120,
+          "sourceDisclosures": 448,
+          "sourceRecords": 1580
+        }
+      },
+      "release": {
+        "report": "docs/compact-layout-stage-hosted-release-results.json",
+        "summary": {
+          "checks": 24,
+          "passed": 24,
+          "failed": 0,
+          "canonicalUrls": 328,
+          "uniqueImages": 118,
+          "pageErrors": 0,
+          "consoleErrors": 0
+        }
+      }
+    },
+    "outputIntegrity": "docs/compact-layout-stage-final-output-integrity.json",
+    "scope": "Live final0.17.3 after successful Actions; all328 canonical raw HTML and118 image SHA match final local output."
   },
   "security": {
     "dependencyAudit": {
@@ -310,10 +431,19 @@
   "documentationRevision": "022",
   "documentationVerification": {
     "report": "docs/compact-layout-stage-docs-results.json",
-    "scope": "49 active maintainer/spec/research documents; local paths/anchors/commands; external URLs counted without requesting."
+    "scope": "49 active maintainer/spec/research documents; local paths/anchors/commands; external URLs counted without requesting.",
+    "summary": {
+      "files": 49,
+      "localLinks": 527,
+      "anchors": 6,
+      "externalLinksUnchecked": 104,
+      "pnpmReferences": 96,
+      "nodeScriptReferences": 37,
+      "errors": 0
+    }
   },
   "sourceDelivery": {
-    "status": "pending",
+    "status": "verified",
     "revision": "compact-022",
     "source": "../japanese-craft-jewelry-delivery/source",
     "zip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-source.zip",
@@ -333,9 +463,20 @@
       "sha256": "383cf02e99cdf06d936118e9d071f35df68a1b99191de31442b7f450de386254",
       "everyFileSha256Checks": 26,
       "allFileHashesMatch": true,
-      "recheckedUnchangedAt": "2026-11-17T11:26:18.226Z"
+      "recheckedUnchangedAt": "2026-11-17T12:24:43.025Z"
     },
-    "originalsUnchangedFromVersion": "0.16.0"
+    "originalsUnchangedFromVersion": "0.16.0",
+    "fileCount": 1155,
+    "everyRepositoryFileSha256Checks": 1155,
+    "everyFileSha256Checks": 1155,
+    "repositoryAndExportFileSetsMatch": true,
+    "sourceAndZipFileSetsMatch": true,
+    "allFileHashesMatch": true,
+    "publicImages": 118,
+    "publishedProducts": 60,
+    "retiredImagesExcluded": 10,
+    "publicOutputUnchangedSinceFinalFocusedAndHostedChecks": true,
+    "finalPass": "Final completion notes included by final export; repository/export/ZIP sets and all SHA checked again. ZIP hash remains external."
   },
   "limits": [
     "No physical iOS/Safari or all-law/all-image-rights certification.",

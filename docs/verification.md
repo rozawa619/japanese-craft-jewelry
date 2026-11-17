@@ -32,8 +32,10 @@ HTML/SVG共通リンクのpointer eventで型error1を検出し、property guard
 
 ## 公開・納品
 
-<!-- TODO_PUBLIC_022 -->
+公開app `ef8ae160e7fc7d2b41cdce1063094313b719df6e`、[Actions44081729750](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44081729750) completed/success。[公開集約](compact-layout-stage-hosted-summary.json)：一覧地図241・Hero77・mobile92・Source328・補足24が成功。全328生HTML/118画像SHAは最終local一致、471生成物のSHAも不変。
 
 全source ZIPはjapanese-craft-jewelry-source-0.17.3-compact-022.zip、外部proofはpackage-verification-0.17.3-compact-022.json。集合/全SHA・fileCount/statusはdeployment-resultsのsourceDeliveryと外部proofが正本。今回新bitmapはなし。
 
 Chrome emulationであり実機iOS/Safari・検索順位/離脱率/売上・将来在庫・AdSense審査の保証ではない。[法務/運営残条件](remaining-task-audit-v17.md)をUI合格で完了扱いにしない。
+
+最終全sourceは1155ファイル/118画像。repository/export/ZIP集合と全件SHAを確認し、完了記録を含めて再梱包。ZIP hashは外部proof、0.16元PNG ZIPもSHA不変を再確認。

@@ -1,9 +1,8 @@
 # 文書の入口
 
-作業版0.17.3・地図枠とトップ写真の調整022（2026-11-17）。文書入口は017を継承し、旧版を現在値へ読み替えません。
+公開版0.17.3・地図枠とトップ写真の調整022（2026-11-17）。文書入口は017を継承し、旧版を現在値へ読み替えません。
 
-<!-- TODO_PUBLIC_V20 -->
-0.17.3（仕様022）は公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
+0.17.3（仕様022）公開済み。app `ef8ae160e7fc7d2b41cdce1063094313b719df6e`、[Actions44081729750](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44081729750) completed/success。実URLで一覧地図241・Hero77・mobile92・Sources328・補足24を確認。地図枠縮小/一覧沖縄別枠とトップ写真の自然比率を反映。確定値はdeployment-results/verificationを参照。
 
 旧版の公開記録：0.17.2（仕様021）公開済み。app `19f066ee20f4aa8eb1b441a4178dc92ffcb25ae7`、[Actions44072612768](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44072612768) completed/success。実URLの写真37・mobile92・Sources328・補足24が成功。Top10とDISCOVER3の写真を全3ページで統一。確定値はdeployment-results/verificationを参照。 0.17.2の全sourceは1118ファイルを照合済み。これは022の実測/公開/納品結果ではありません。
 

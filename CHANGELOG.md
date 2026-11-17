@@ -1,10 +1,10 @@
 # 更新履歴
 
-## 0.17.3 — 2026-11-17（制作中・未公開）
+## 0.17.3 — 2026-11-17
 
 - 一覧の「日本の『ここ』へ行くなら。」の枠/主図をコンパクトにし、沖縄を既存CC0原形の独立拡大枠から押せるようにする仕様022を追加。native直接遷移・preview/select・zoom/scroll・47原形/掲載24県を保つ。
 - トップ人物写真の固定高を自然比率へ変更し、画像/figure/AIcaption前後の人工的な上下余白をなくす。顔/耳/ジュエリーとAIcaption、24県の画像切替・query/言語保持を継承する。
-- 0.17.2のTOP10/DISCOVER共通300×200/222×148写真、商品60/24県/118画像・広告/店舗Maps設定は変更しない。実装・最終検証・公開・ZIPは未完了で、予定/確定結果は[022 validation](specs/022-compact-map-and-natural-hero/validation.md)へ分離する。
+- 0.17.2のTOP10/DISCOVER共通300×200/222×148写真、商品60/24県/118画像・広告/店舗Maps設定は変更しない。最終local/publicでMap241・Hero77・mobile92・Sources328・公開補足24が成功。ZIPの確定状態はsourceDeliveryへ記録し、実測は[022 validation](specs/022-compact-map-and-natural-hero/validation.md)へ分離する。
 
 ## 0.17.2 — 2026-11-17
 
