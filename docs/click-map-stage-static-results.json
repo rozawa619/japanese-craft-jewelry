@@ -1,10 +1,10 @@
 {
   "version": "0.17.1",
-  "checkedAt": "2026-11-17T10:29:03.086Z",
+  "checkedAt": "2026-11-17T10:57:25.971Z",
   "status": "passed",
   "node": "24.22.3",
   "pnpm": "11.25.0",
-  "command": "pnpm verify; pnpm check after removing an unused QA baseline variable",
+  "command": "pnpm verify",
   "typeFiles": 143,
   "errors": 0,
   "warnings": 0,
@@ -27,19 +27,11 @@
     "retiredReadingRedirects": 14,
     "retiredImagesExcluded": 10
   },
-  "initialVerify": {
-    "hint": 1,
-    "cause": "Unused baseline variable in QA helper; removed without changing application or build inputs."
-  },
   "evidence": [
     {
       "path": "artifacts/click-map-stage/verify.log",
-      "sha256": "07321e4410ba270c90cbf44fc5251a7e062c2c5f5ae1438726439fd389dafef2"
-    },
-    {
-      "path": "artifacts/click-map-stage/type-final.log",
-      "sha256": "f938b9f90c7c6a6884b3b0d9d12d54f4846cac3cfc4a724530e658e1ea2c5143"
+      "sha256": "6c5d4cb9c25b3014db8e585bcd74456246bdc45e8025916d56e3b7a342cf2add"
     }
   ],
-  "scope": "Stable final application build. The QA-only unused-variable cleanup was followed by a complete type/schema check; no rebuild or application change was made during browser checks."
+  "scope": "Final stable application build after Top10 natural-ratio images and enlarged hero/Okinawa inset. All browser checks use this unchanged output."
 }

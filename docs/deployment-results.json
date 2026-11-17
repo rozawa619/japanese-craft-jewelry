@@ -4,12 +4,12 @@
   "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
   "branch": "main",
   "status": "locally_verified_pending_publication",
-  "recordedAt": "2026-11-17T10:29:03.098Z",
+  "recordedAt": "2026-11-17T10:57:25.985Z",
   "applicationCommit": null,
   "actions": null,
-  "previousDeployedVersion": "0.17.0",
-  "previousDeployedApplicationCommit": "b8edee4e26c92a9a62c9133bf432aecc4666199a",
-  "previousRecord": "docs/deployment-v17-before-direct-map.json",
+  "previousDeployedVersion": "0.17.1",
+  "previousDeployedApplicationCommit": "ebacc3e0df9bbd80f3f820499be9cc3fb3436cb9",
+  "previousRecord": "docs/click-map-stage-before-refine-hosted-summary.json",
   "publicUrls": {
     "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
     "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
@@ -63,7 +63,9 @@
       "mobile": "Full-width uncropped styling image above product details and map",
       "selectableRegions": 24,
       "selection": "Click/tap/Enter/Space swaps existing styling image and canonical domestic JPY product card; explicit region CTA navigates",
-      "state": "Validated region query retained across language switch and history; no new tracking/storage"
+      "state": "Validated region query retained across language switch and history; no new tracking/storage",
+      "okinawaInset": "Separate enlarged original CC0 Okinawa outline; one44px-or-larger native link/selection control; localized enlarged label",
+      "mainMap": "Tighter mainland viewBox and wider right column; selection controls remain unique24, original prefecture paths unique47"
     },
     "directoryMap": {
       "desktopMeasuredWidth": 758,
@@ -79,23 +81,30 @@
     },
     "topTen": {
       "desktopImageMaxHeight": 180,
-      "mobileImageMaxHeight": 110,
-      "narrowMobileImageMaxHeight": 98,
+      "mobileImageMaxHeight": 132,
       "fit": "contain",
       "measuredSectionHeightReduction": {
-        "desktop": "63%",
-        "mobile": "22–30%"
+        "desktop": 63.1,
+        "mobileRange": [
+          16.6,
+          27.4
+        ],
+        "unit": "percent; section height, not bounce rate"
       },
       "baselineReport": "docs/click-map-stage-top10-baseline-results.json",
       "currentReport": "docs/click-map-stage-results.json",
-      "scope": "Section height comparison, not measured bounce-rate or business improvement"
+      "scope": "Section height comparison, not measured bounce-rate or business improvement",
+      "imageLayout": "Natural3:2 source ratio; wider desktop image column up to270px; desktop row minimum244px; no artificial top/bottom letterbox"
     }
   },
   "localVerification": {
     "static": {
       "report": "docs/click-map-stage-static-results.json",
       "summary": {
-        "status": "passed"
+        "status": "passed",
+        "typeFiles": 143,
+        "unitTests": 149,
+        "htmlPages": 344
       }
     },
     "map": {
@@ -126,15 +135,18 @@
     "hero": {
       "report": "docs/click-map-stage-hero-results.json",
       "summary": {
-        "checks": 69,
-        "passed": 69,
+        "checks": 77,
+        "passed": 77,
         "failed": 0,
         "locales": 2,
         "viewports": 4,
         "regions": 24,
-        "selections": 90,
-        "modelSwitches": 26,
+        "selections": 172,
+        "modelSwitches": 124,
         "firstFoldScreens": 8,
+        "enlargedGeometryScreens": 8,
+        "uniquePrefectureShapes": 47,
+        "okinawaInset": true,
         "axeScreens": 4,
         "axeViolations": 0,
         "screenshots": 8,
@@ -235,10 +247,10 @@
       "report": "docs/click-map-stage-docs-results.json",
       "summary": {
         "files": 39,
-        "localLinks": 428,
+        "localLinks": 448,
         "anchors": 6,
         "externalLinksUnchecked": 85,
-        "pnpmReferences": 96,
+        "pnpmReferences": 97,
         "nodeScriptReferences": 28,
         "errors": 0
       }
@@ -325,5 +337,15 @@
   "documentationVerification": {
     "report": "docs/click-map-stage-docs-results.json",
     "scope": "39 active maintainer/spec/research documents; local paths/anchors/commands. External URLs counted, not fetched."
+  },
+  "interimDeployedApplication": {
+    "commit": "ebacc3e0df9bbd80f3f820499be9cc3fb3436cb9",
+    "evidence": "docs/click-map-stage-before-refine-hosted-summary.json",
+    "scope": "Passing interim app superseded by subsequent user refinements"
+  },
+  "previousCompletedRelease": {
+    "version": "0.17.0",
+    "applicationCommit": "b8edee4e26c92a9a62c9133bf432aecc4666199a",
+    "record": "docs/deployment-v17-before-direct-map.json"
   }
 }

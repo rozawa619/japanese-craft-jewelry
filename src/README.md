@@ -10,6 +10,9 @@
 | 購入根拠・実店舗 | `data/purchase-evidence.json`、`data/visits.json`。一次出典は`../docs/research/sources.json` |
 | AI画像・言語別alt | `data/editorial-images.json`と`data/product-detail-images.json`。実ファイルは`../public/images/`、台帳は`../docs/assets.json` |
 | 編集順・産地の代表・公開URL/base | `config/selection.ts`、`config/region-selection.ts`、`config/site.ts` |
+| トップの着用画像と日本地図・沖縄拡大枠 | [RegionHero.astro](components/RegionHero.astro)。県選択で画像と共通価格カードを切替。公開地域だけの`?region=`を使う |
+| 産地一覧の大きい地図・拡大・直接リンク | [JapanJewelryMap.astro](components/JapanJewelryMap.astro)。Heroの画像選択とは別の通常リンク |
+| Top10の行高・写真の幅と自然比率 | [RegionSelection.astro](components/RegionSelection.astro)のranked限定style。画像原本・顔/耳とAIcaptionを保つ |
 | ページ・表示部品・見た目 | `pages/`、`components/`、`layouts/`、`styles/global.css`と部品内の`<style>` |
 
 `lib/`は正本から表示を組み立て、URL・市場・広告・画像・参照を判定する共通処理です。表示上の都合でここへ価格・URL・在庫の別コピーを作らず、既存helper/部品を使います。言語と購入市場、商品事実とAI画像、通常リンクと承認広告は別の情報です。

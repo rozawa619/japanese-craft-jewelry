@@ -1,0 +1,1034 @@
+{
+  "checkedAt": "2026-11-17T10:18:48.839Z",
+  "origin": "http://127.0.0.1:4323",
+  "base": "/japanese-craft-jewelry/",
+  "method": "Fresh native Chrome uses raw catalog, translation, image registries and source display configuration as independent expectations. Tests first-fold female-image/map layout, explicit hero interactions, all24 source-correct states, URL/language/history behavior, Top10 ordering (decoded compact-size measurements are in check-japan-map), noJS, keyboard/touch, axe and zero external requests. No product purchase, retailer visit or Google map activation.",
+  "limits": "Chrome emulation is not a physical Safari/iOS test. Contain/full-frame layout avoids cropping but does not independently verify what an AI illustration depicts. Bounce/retention is not measured.",
+  "sourceInputs": {
+    "started": {
+      "src/components/RegionHero.astro": "e48aca6bee2cc422a7901c955cb73d654f23481b3655ddbc82c7cefd50225aca",
+      "src/components/RegionSelection.astro": "7b1cfa43e11e5cf11eca2c0bc526a5e00651a94e62b831d33646dafe6781aef8",
+      "src/pages/[lang]/index.astro": "69cad59a53f31d0b3906c76fc1513e59857bacba9731761673b720f725312aa4",
+      "src/data/editorial-images.json": "175e8a4a3fb37f603791160eab83b9a028976a78f3363ea9d5df891a73f11ca5",
+      "src/data/catalog.json": "2f12215f009e327bc8b4a307f8baf2c3df2dd8e757b655870a9ac47bd1b781b2",
+      "src/data/translations/ja.json": "62998e567f02a59c54e40f19b84bdc72e95eeb0e4e33e33fbc685b8c7ecdfcbf",
+      "src/config/selection.ts": "a7c839f92eb7c1defe793a532afb984b70fe750180059a4d804f25eebcbd92ab",
+      "src/config/region-selection.ts": "e145c9f232946f9af3b2ef5376e37c6e8727d459994e80e4afb2738b8f9a235b"
+    },
+    "finished": {
+      "src/components/RegionHero.astro": "e48aca6bee2cc422a7901c955cb73d654f23481b3655ddbc82c7cefd50225aca",
+      "src/components/RegionSelection.astro": "7b1cfa43e11e5cf11eca2c0bc526a5e00651a94e62b831d33646dafe6781aef8",
+      "src/pages/[lang]/index.astro": "69cad59a53f31d0b3906c76fc1513e59857bacba9731761673b720f725312aa4",
+      "src/data/editorial-images.json": "175e8a4a3fb37f603791160eab83b9a028976a78f3363ea9d5df891a73f11ca5",
+      "src/data/catalog.json": "2f12215f009e327bc8b4a307f8baf2c3df2dd8e757b655870a9ac47bd1b781b2",
+      "src/data/translations/ja.json": "62998e567f02a59c54e40f19b84bdc72e95eeb0e4e33e33fbc685b8c7ecdfcbf",
+      "src/config/selection.ts": "a7c839f92eb7c1defe793a532afb984b70fe750180059a4d804f25eebcbd92ab",
+      "src/config/region-selection.ts": "e145c9f232946f9af3b2ef5376e37c6e8727d459994e80e4afb2738b8f9a235b"
+    },
+    "unchanged": true
+  },
+  "expectedChecks": 69,
+  "checks": [
+    {
+      "name": "ja-320x740 initial layout and compact Top10",
+      "status": "passed",
+      "lang": "ja",
+      "width": 320,
+      "height": 740,
+      "image": {
+        "x": 18,
+        "y": 289.171875,
+        "width": 284,
+        "height": 180
+      },
+      "map": {
+        "x": 166,
+        "y": 590.96875,
+        "width": 138,
+        "height": 170
+      },
+      "paintedImage": {
+        "width": 270,
+        "height": 180
+      },
+      "rankedOrder": [
+        "tokyo",
+        "osaka",
+        "chiba",
+        "kyoto",
+        "fukuoka",
+        "kanagawa",
+        "nara",
+        "yamanashi",
+        "hokkaido",
+        "aichi"
+      ],
+      "compactSizingScope": "Independent check-japan-map report owns decoded-image/row-height and scroll reduction measurements."
+    },
+    {
+      "name": "ja-320x740 explicit map controls preserve the page",
+      "status": "passed",
+      "explicitOnly": true,
+      "enter": true,
+      "space": true,
+      "nativeMouse": true
+    },
+    {
+      "name": "ja-390x844 initial layout and compact Top10",
+      "status": "passed",
+      "lang": "ja",
+      "width": 390,
+      "height": 844,
+      "image": {
+        "x": 22,
+        "y": 289.171875,
+        "width": 346,
+        "height": 200
+      },
+      "map": {
+        "x": 201,
+        "y": 610.96875,
+        "width": 169,
+        "height": 170
+      },
+      "paintedImage": {
+        "width": 300,
+        "height": 200
+      },
+      "rankedOrder": [
+        "tokyo",
+        "osaka",
+        "chiba",
+        "kyoto",
+        "fukuoka",
+        "kanagawa",
+        "nara",
+        "yamanashi",
+        "hokkaido",
+        "aichi"
+      ],
+      "compactSizingScope": "Independent check-japan-map report owns decoded-image/row-height and scroll reduction measurements."
+    },
+    {
+      "name": "ja-390x844 explicit map controls preserve the page",
+      "status": "passed",
+      "explicitOnly": true,
+      "enter": true,
+      "space": true,
+      "nativeMouse": true
+    },
+    {
+      "name": "ja-390x844 source-correct state aichi",
+      "status": "passed",
+      "region": "aichi",
+      "product": "kato-suke-drop-pierced-earrings",
+      "image": "images/kato-green-cloisonne-styling-v9.webp",
+      "price": "JPY 15,400"
+    },
+    {
+      "name": "ja-390x844 source-correct state akita",
+      "status": "passed",
+      "region": "akita",
+      "product": "yadome-akita-rice-silver-pierced-earrings",
+      "image": "images/styling-yadome-akita-rice-silver-pierced-earrings-v16.webp",
+      "price": "JPY 16,500"
+    },
+    {
+      "name": "ja-390x844 source-correct state chiba",
+      "status": "passed",
+      "region": "chiba",
+      "product": "arcos-cosmic-spiral-pendant",
+      "image": "images/arcos-cosmic-spiral-pendant-styling-v9.webp",
+      "price": "JPY 12,800"
+    },
+    {
+      "name": "ja-390x844 source-correct state fukui",
+      "status": "passed",
+      "region": "fukui",
+      "product": "sur-basic1-clear-pearl-pierced-earrings",
+      "image": "images/styling-sur-basic1-clear-pearl-pierced-earrings-v16.webp",
+      "price": "JPY 5,500"
+    },
+    {
+      "name": "ja-390x844 source-correct state fukuoka",
+      "status": "passed",
+      "region": "fukuoka",
+      "product": "iwaya-urushi-9mm-hook-earrings",
+      "image": "images/iwaya-urushi-9mm-hook-earrings-styling-v13.webp",
+      "price": "JPY 7,700"
+    },
+    {
+      "name": "ja-390x844 source-correct state gifu",
+      "status": "passed",
+      "region": "gifu",
+      "product": "nanayosha-punu-gold-vanilla-pierced-earrings",
+      "image": "images/styling-nanayosha-punu-gold-vanilla-pierced-earrings-v16.webp",
+      "price": "JPY 4,950"
+    },
+    {
+      "name": "ja-390x844 source-correct state hiroshima",
+      "status": "passed",
+      "region": "hiroshima",
+      "product": "earth-hiroshima-origami-crane-chain-earrings",
+      "image": "images/styling-earth-hiroshima-origami-crane-chain-earrings-v16.webp",
+      "price": "JPY 17,600"
+    },
+    {
+      "name": "ja-390x844 source-correct state hokkaido",
+      "status": "passed",
+      "region": "hokkaido",
+      "product": "yukieglass-mint-veil-earrings",
+      "image": "images/yukie-mint-glass-styling-v9.webp",
+      "price": "JPY 28,600"
+    },
+    {
+      "name": "ja-390x844 source-correct state ishikawa",
+      "status": "passed",
+      "region": "ishikawa",
+      "product": "checos-japanese-apricot-pierced-earrings",
+      "image": "images/checos-silver-flower-styling-v9.webp",
+      "price": "JPY 16,500"
+    },
+    {
+      "name": "ja-390x844 source-correct state kagoshima",
+      "status": "passed",
+      "region": "kagoshima",
+      "product": "shimadzu-satsuma-kiriko-hikari-l-pendant",
+      "image": "images/styling-shimadzu-satsuma-kiriko-hikari-l-pendant-v16.webp",
+      "price": "JPY 24,200"
+    },
+    {
+      "name": "ja-390x844 source-correct state kanagawa",
+      "status": "passed",
+      "region": "kanagawa",
+      "product": "hamamatsuya-catch-pierced",
+      "image": "images/hakone-yosegi-pierced-styling-v9.webp",
+      "price": "JPY 3,500"
+    },
+    {
+      "name": "ja-390x844 source-correct state kumamoto",
+      "status": "passed",
+      "region": "kumamoto",
+      "product": "mitsusuke-higo-zogan-shizuku-pierced-earrings",
+      "image": "images/styling-mitsusuke-higo-zogan-shizuku-pierced-earrings-v16.webp",
+      "price": "JPY 14,300"
+    },
+    {
+      "name": "ja-390x844 source-correct state kyoto",
+      "status": "passed",
+      "region": "kyoto",
+      "product": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "image": "images/morphosphere-blue-pansy-styling-v9.webp",
+      "price": "JPY 4,620"
+    },
+    {
+      "name": "ja-390x844 source-correct state mie",
+      "status": "passed",
+      "region": "mie",
+      "product": "mie-akoya-oh002-stud-earrings",
+      "image": "images/mie-akoya-oh002-stud-earrings-styling-v13.webp",
+      "price": "JPY 22,000"
+    },
+    {
+      "name": "ja-390x844 source-correct state nara",
+      "status": "passed",
+      "region": "nara",
+      "product": "sugimura-hosoge-raden-pendant",
+      "image": "images/sugimura-raden-flower-pendant-styling-v9.webp",
+      "price": "JPY 44,000"
+    },
+    {
+      "name": "ja-390x844 source-correct state okinawa",
+      "status": "passed",
+      "region": "okinawa",
+      "product": "tete-ryukyu-glass-hanagasa-heart-pierced-earrings",
+      "image": "images/styling-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16.webp",
+      "price": "JPY 3,700"
+    },
+    {
+      "name": "ja-390x844 source-correct state osaka",
+      "status": "passed",
+      "region": "osaka",
+      "product": "senshu-pearl-stud-earrings",
+      "image": "images/senshu-white-pearl-stud-styling-v9.webp",
+      "price": "JPY 7,120"
+    },
+    {
+      "name": "ja-390x844 source-correct state saga",
+      "status": "passed",
+      "region": "saga",
+      "product": "six-kiln-half-moon-earrings",
+      "image": "images/arita-halfmoon-styling-v9.webp",
+      "price": "JPY 9,900"
+    },
+    {
+      "name": "ja-390x844 source-correct state shimane",
+      "status": "passed",
+      "region": "shimane",
+      "product": "menoya-izumo-magatama-n15-necklace",
+      "image": "images/styling-menoya-izumo-magatama-n15-necklace-v16.webp",
+      "price": "JPY 32,791"
+    },
+    {
+      "name": "ja-390x844 source-correct state tokushima",
+      "status": "passed",
+      "region": "tokushima",
+      "product": "applause-awa-indigo-pearl-clip-on-earrings",
+      "image": "images/styling-applause-awa-indigo-pearl-clip-on-earrings-v16.webp",
+      "price": "JPY 17,160"
+    },
+    {
+      "name": "ja-390x844 source-correct state tokyo",
+      "status": "passed",
+      "region": "tokyo",
+      "product": "rinzen-seika-amber-pierced-earrings",
+      "image": "images/rinzen-amber-glass-styling-v9.webp",
+      "price": "JPY 26,400"
+    },
+    {
+      "name": "ja-390x844 source-correct state tottori",
+      "status": "passed",
+      "region": "tottori",
+      "product": "yoboty-inshu-washi-indigo-long-nonhole-earrings",
+      "image": "images/styling-yoboty-inshu-washi-indigo-long-nonhole-earrings-v16.webp",
+      "price": "JPY 2,750"
+    },
+    {
+      "name": "ja-390x844 source-correct state toyama",
+      "status": "passed",
+      "region": "toyama",
+      "product": "nousaku-dahlia-gerbera-clip-on-earrings",
+      "image": "images/nousaku-dahlia-gerbera-clip-on-earrings-styling-v13.webp",
+      "price": "JPY 8,800"
+    },
+    {
+      "name": "ja-390x844 source-correct state yamanashi",
+      "status": "passed",
+      "region": "yamanashi",
+      "product": "simprich-crystal-bubble-pierced-earrings",
+      "image": "images/simprich-crystal-bubble-styling-v9.webp",
+      "price": "JPY 52,800"
+    },
+    {
+      "name": "ja-1366x768 initial layout and compact Top10",
+      "status": "passed",
+      "lang": "ja",
+      "width": 1366,
+      "height": 768,
+      "image": {
+        "x": 50,
+        "y": 314.765625,
+        "width": 605,
+        "height": 470
+      },
+      "map": {
+        "x": 709,
+        "y": 410.640625,
+        "width": 609,
+        "height": 330
+      },
+      "paintedImage": {
+        "width": 605,
+        "height": 403.3333333333333
+      },
+      "rankedOrder": [
+        "tokyo",
+        "osaka",
+        "chiba",
+        "kyoto",
+        "fukuoka",
+        "kanagawa",
+        "nara",
+        "yamanashi",
+        "hokkaido",
+        "aichi"
+      ],
+      "compactSizingScope": "Independent check-japan-map report owns decoded-image/row-height and scroll reduction measurements."
+    },
+    {
+      "name": "ja-1366x768 explicit map controls preserve the page",
+      "status": "passed",
+      "explicitOnly": true,
+      "enter": true,
+      "space": true,
+      "nativeMouse": true
+    },
+    {
+      "name": "ja-1440x900 initial layout and compact Top10",
+      "status": "passed",
+      "lang": "ja",
+      "width": 1440,
+      "height": 900,
+      "image": {
+        "x": 82,
+        "y": 316.703125,
+        "width": 610,
+        "height": 470
+      },
+      "map": {
+        "x": 746,
+        "y": 412.578125,
+        "width": 614,
+        "height": 330
+      },
+      "paintedImage": {
+        "width": 610,
+        "height": 406.6666666666667
+      },
+      "rankedOrder": [
+        "tokyo",
+        "osaka",
+        "chiba",
+        "kyoto",
+        "fukuoka",
+        "kanagawa",
+        "nara",
+        "yamanashi",
+        "hokkaido",
+        "aichi"
+      ],
+      "compactSizingScope": "Independent check-japan-map report owns decoded-image/row-height and scroll reduction measurements."
+    },
+    {
+      "name": "ja-1440x900 explicit map controls preserve the page",
+      "status": "passed",
+      "explicitOnly": true,
+      "enter": true,
+      "space": true,
+      "nativeMouse": true
+    },
+    {
+      "name": "en-320x740 initial layout and compact Top10",
+      "status": "passed",
+      "lang": "en",
+      "width": 320,
+      "height": 740,
+      "image": {
+        "x": 18,
+        "y": 308.765625,
+        "width": 284,
+        "height": 180
+      },
+      "map": {
+        "x": 166,
+        "y": 608.0625,
+        "width": 138,
+        "height": 170
+      },
+      "paintedImage": {
+        "width": 270,
+        "height": 180
+      },
+      "rankedOrder": [
+        "tokyo",
+        "osaka",
+        "chiba",
+        "kyoto",
+        "fukuoka",
+        "kanagawa",
+        "nara",
+        "yamanashi",
+        "hokkaido",
+        "aichi"
+      ],
+      "compactSizingScope": "Independent check-japan-map report owns decoded-image/row-height and scroll reduction measurements."
+    },
+    {
+      "name": "en-320x740 explicit map controls preserve the page",
+      "status": "passed",
+      "explicitOnly": true,
+      "enter": true,
+      "space": true,
+      "nativeMouse": true
+    },
+    {
+      "name": "en-390x844 initial layout and compact Top10",
+      "status": "passed",
+      "lang": "en",
+      "width": 390,
+      "height": 844,
+      "image": {
+        "x": 22,
+        "y": 308.765625,
+        "width": 346,
+        "height": 200
+      },
+      "map": {
+        "x": 201,
+        "y": 628.0625,
+        "width": 169,
+        "height": 170
+      },
+      "paintedImage": {
+        "width": 300,
+        "height": 200
+      },
+      "rankedOrder": [
+        "tokyo",
+        "osaka",
+        "chiba",
+        "kyoto",
+        "fukuoka",
+        "kanagawa",
+        "nara",
+        "yamanashi",
+        "hokkaido",
+        "aichi"
+      ],
+      "compactSizingScope": "Independent check-japan-map report owns decoded-image/row-height and scroll reduction measurements."
+    },
+    {
+      "name": "en-390x844 explicit map controls preserve the page",
+      "status": "passed",
+      "explicitOnly": true,
+      "enter": true,
+      "space": true,
+      "nativeMouse": true
+    },
+    {
+      "name": "en-390x844 source-correct state aichi",
+      "status": "passed",
+      "region": "aichi",
+      "product": "kato-suke-drop-pierced-earrings",
+      "image": "images/kato-green-cloisonne-styling-v9.webp",
+      "price": "JPY 15,400"
+    },
+    {
+      "name": "en-390x844 source-correct state akita",
+      "status": "passed",
+      "region": "akita",
+      "product": "yadome-akita-rice-silver-pierced-earrings",
+      "image": "images/styling-yadome-akita-rice-silver-pierced-earrings-v16.webp",
+      "price": "JPY 16,500"
+    },
+    {
+      "name": "en-390x844 source-correct state chiba",
+      "status": "passed",
+      "region": "chiba",
+      "product": "arcos-cosmic-spiral-pendant",
+      "image": "images/arcos-cosmic-spiral-pendant-styling-v9.webp",
+      "price": "JPY 12,800"
+    },
+    {
+      "name": "en-390x844 source-correct state fukui",
+      "status": "passed",
+      "region": "fukui",
+      "product": "sur-basic1-clear-pearl-pierced-earrings",
+      "image": "images/styling-sur-basic1-clear-pearl-pierced-earrings-v16.webp",
+      "price": "JPY 5,500"
+    },
+    {
+      "name": "en-390x844 source-correct state fukuoka",
+      "status": "passed",
+      "region": "fukuoka",
+      "product": "iwaya-urushi-9mm-hook-earrings",
+      "image": "images/iwaya-urushi-9mm-hook-earrings-styling-v13.webp",
+      "price": "JPY 7,700"
+    },
+    {
+      "name": "en-390x844 source-correct state gifu",
+      "status": "passed",
+      "region": "gifu",
+      "product": "nanayosha-punu-gold-vanilla-pierced-earrings",
+      "image": "images/styling-nanayosha-punu-gold-vanilla-pierced-earrings-v16.webp",
+      "price": "JPY 4,950"
+    },
+    {
+      "name": "en-390x844 source-correct state hiroshima",
+      "status": "passed",
+      "region": "hiroshima",
+      "product": "earth-hiroshima-origami-crane-chain-earrings",
+      "image": "images/styling-earth-hiroshima-origami-crane-chain-earrings-v16.webp",
+      "price": "JPY 17,600"
+    },
+    {
+      "name": "en-390x844 source-correct state hokkaido",
+      "status": "passed",
+      "region": "hokkaido",
+      "product": "yukieglass-mint-veil-earrings",
+      "image": "images/yukie-mint-glass-styling-v9.webp",
+      "price": "JPY 28,600"
+    },
+    {
+      "name": "en-390x844 source-correct state ishikawa",
+      "status": "passed",
+      "region": "ishikawa",
+      "product": "checos-japanese-apricot-pierced-earrings",
+      "image": "images/checos-silver-flower-styling-v9.webp",
+      "price": "JPY 16,500"
+    },
+    {
+      "name": "en-390x844 source-correct state kagoshima",
+      "status": "passed",
+      "region": "kagoshima",
+      "product": "shimadzu-satsuma-kiriko-hikari-l-pendant",
+      "image": "images/styling-shimadzu-satsuma-kiriko-hikari-l-pendant-v16.webp",
+      "price": "JPY 24,200"
+    },
+    {
+      "name": "en-390x844 source-correct state kanagawa",
+      "status": "passed",
+      "region": "kanagawa",
+      "product": "hamamatsuya-catch-pierced",
+      "image": "images/hakone-yosegi-pierced-styling-v9.webp",
+      "price": "JPY 3,500"
+    },
+    {
+      "name": "en-390x844 source-correct state kumamoto",
+      "status": "passed",
+      "region": "kumamoto",
+      "product": "mitsusuke-higo-zogan-shizuku-pierced-earrings",
+      "image": "images/styling-mitsusuke-higo-zogan-shizuku-pierced-earrings-v16.webp",
+      "price": "JPY 14,300"
+    },
+    {
+      "name": "en-390x844 source-correct state kyoto",
+      "status": "passed",
+      "region": "kyoto",
+      "product": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "image": "images/morphosphere-blue-pansy-styling-v9.webp",
+      "price": "JPY 4,620"
+    },
+    {
+      "name": "en-390x844 source-correct state mie",
+      "status": "passed",
+      "region": "mie",
+      "product": "mie-akoya-oh002-stud-earrings",
+      "image": "images/mie-akoya-oh002-stud-earrings-styling-v13.webp",
+      "price": "JPY 22,000"
+    },
+    {
+      "name": "en-390x844 source-correct state nara",
+      "status": "passed",
+      "region": "nara",
+      "product": "sugimura-hosoge-raden-pendant",
+      "image": "images/sugimura-raden-flower-pendant-styling-v9.webp",
+      "price": "JPY 44,000"
+    },
+    {
+      "name": "en-390x844 source-correct state okinawa",
+      "status": "passed",
+      "region": "okinawa",
+      "product": "tete-ryukyu-glass-hanagasa-heart-pierced-earrings",
+      "image": "images/styling-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16.webp",
+      "price": "JPY 3,700"
+    },
+    {
+      "name": "en-390x844 source-correct state osaka",
+      "status": "passed",
+      "region": "osaka",
+      "product": "senshu-pearl-stud-earrings",
+      "image": "images/senshu-white-pearl-stud-styling-v9.webp",
+      "price": "JPY 7,120"
+    },
+    {
+      "name": "en-390x844 source-correct state saga",
+      "status": "passed",
+      "region": "saga",
+      "product": "six-kiln-half-moon-earrings",
+      "image": "images/arita-halfmoon-styling-v9.webp",
+      "price": "JPY 9,900"
+    },
+    {
+      "name": "en-390x844 source-correct state shimane",
+      "status": "passed",
+      "region": "shimane",
+      "product": "menoya-izumo-magatama-n15-necklace",
+      "image": "images/styling-menoya-izumo-magatama-n15-necklace-v16.webp",
+      "price": "JPY 32,791"
+    },
+    {
+      "name": "en-390x844 source-correct state tokushima",
+      "status": "passed",
+      "region": "tokushima",
+      "product": "applause-awa-indigo-pearl-clip-on-earrings",
+      "image": "images/styling-applause-awa-indigo-pearl-clip-on-earrings-v16.webp",
+      "price": "JPY 17,160"
+    },
+    {
+      "name": "en-390x844 source-correct state tokyo",
+      "status": "passed",
+      "region": "tokyo",
+      "product": "rinzen-seika-amber-pierced-earrings",
+      "image": "images/rinzen-amber-glass-styling-v9.webp",
+      "price": "JPY 26,400"
+    },
+    {
+      "name": "en-390x844 source-correct state tottori",
+      "status": "passed",
+      "region": "tottori",
+      "product": "yoboty-inshu-washi-indigo-long-nonhole-earrings",
+      "image": "images/styling-yoboty-inshu-washi-indigo-long-nonhole-earrings-v16.webp",
+      "price": "JPY 2,750"
+    },
+    {
+      "name": "en-390x844 source-correct state toyama",
+      "status": "passed",
+      "region": "toyama",
+      "product": "nousaku-dahlia-gerbera-clip-on-earrings",
+      "image": "images/nousaku-dahlia-gerbera-clip-on-earrings-styling-v13.webp",
+      "price": "JPY 8,800"
+    },
+    {
+      "name": "en-390x844 source-correct state yamanashi",
+      "status": "passed",
+      "region": "yamanashi",
+      "product": "simprich-crystal-bubble-pierced-earrings",
+      "image": "images/simprich-crystal-bubble-styling-v9.webp",
+      "price": "JPY 52,800"
+    },
+    {
+      "name": "en-1366x768 initial layout and compact Top10",
+      "status": "passed",
+      "lang": "en",
+      "width": 1366,
+      "height": 768,
+      "image": {
+        "x": 50,
+        "y": 312.265625,
+        "width": 605,
+        "height": 470
+      },
+      "map": {
+        "x": 709,
+        "y": 405.390625,
+        "width": 609,
+        "height": 330
+      },
+      "paintedImage": {
+        "width": 605,
+        "height": 403.3333333333333
+      },
+      "rankedOrder": [
+        "tokyo",
+        "osaka",
+        "chiba",
+        "kyoto",
+        "fukuoka",
+        "kanagawa",
+        "nara",
+        "yamanashi",
+        "hokkaido",
+        "aichi"
+      ],
+      "compactSizingScope": "Independent check-japan-map report owns decoded-image/row-height and scroll reduction measurements."
+    },
+    {
+      "name": "en-1366x768 explicit map controls preserve the page",
+      "status": "passed",
+      "explicitOnly": true,
+      "enter": true,
+      "space": true,
+      "nativeMouse": true
+    },
+    {
+      "name": "en-1440x900 initial layout and compact Top10",
+      "status": "passed",
+      "lang": "en",
+      "width": 1440,
+      "height": 900,
+      "image": {
+        "x": 82,
+        "y": 314.203125,
+        "width": 610,
+        "height": 470
+      },
+      "map": {
+        "x": 746,
+        "y": 407.328125,
+        "width": 614,
+        "height": 330
+      },
+      "paintedImage": {
+        "width": 610,
+        "height": 406.6666666666667
+      },
+      "rankedOrder": [
+        "tokyo",
+        "osaka",
+        "chiba",
+        "kyoto",
+        "fukuoka",
+        "kanagawa",
+        "nara",
+        "yamanashi",
+        "hokkaido",
+        "aichi"
+      ],
+      "compactSizingScope": "Independent check-japan-map report owns decoded-image/row-height and scroll reduction measurements."
+    },
+    {
+      "name": "en-1440x900 explicit map controls preserve the page",
+      "status": "passed",
+      "explicitOnly": true,
+      "enter": true,
+      "space": true,
+      "nativeMouse": true
+    },
+    {
+      "name": "ja native touch, deep link and language retention",
+      "status": "passed",
+      "touch": true,
+      "queryHashAndHistoryState": true,
+      "languageRetainsRegion": true,
+      "backRetainsRegion": true,
+      "invalidRegionRemoved": true
+    },
+    {
+      "name": "en native touch, deep link and language retention",
+      "status": "passed",
+      "touch": true,
+      "queryHashAndHistoryState": true,
+      "languageRetainsRegion": true,
+      "backRetainsRegion": true,
+      "invalidRegionRemoved": true
+    },
+    {
+      "name": "ja no JavaScript initial model and ordinary region links",
+      "status": "passed",
+      "nojs": true,
+      "initialImage": true,
+      "ordinaryRegionLinks": 24,
+      "nativeLink": true
+    },
+    {
+      "name": "en no JavaScript initial model and ordinary region links",
+      "status": "passed",
+      "nojs": true,
+      "initialImage": true,
+      "ordinaryRegionLinks": 24,
+      "nativeLink": true
+    },
+    {
+      "name": "No client errors, external requests or unexpected storage",
+      "status": "passed",
+      "pageErrors": 0,
+      "consoleErrors": 0,
+      "externalRequests": 0
+    }
+  ],
+  "failures": [],
+  "screenshots": [
+    "artifacts/click-map-stage-hero-ja-320x740.png",
+    "artifacts/click-map-stage-hero-ja-390x844.png",
+    "artifacts/click-map-stage-hero-ja-1366x768.png",
+    "artifacts/click-map-stage-hero-ja-1440x900.png",
+    "artifacts/click-map-stage-hero-en-320x740.png",
+    "artifacts/click-map-stage-hero-en-390x844.png",
+    "artifacts/click-map-stage-hero-en-1366x768.png",
+    "artifacts/click-map-stage-hero-en-1440x900.png"
+  ],
+  "axe": [
+    {
+      "name": "ja-320x740",
+      "violations": []
+    },
+    {
+      "name": "ja-1440x900",
+      "violations": []
+    },
+    {
+      "name": "en-320x740",
+      "violations": []
+    },
+    {
+      "name": "en-1440x900",
+      "violations": []
+    }
+  ],
+  "selections": 90,
+  "modelSwitches": 26,
+  "firstFold": [
+    {
+      "lang": "ja",
+      "width": 320,
+      "height": 740,
+      "image": {
+        "x": 18,
+        "y": 289.171875,
+        "width": 284,
+        "height": 180
+      },
+      "map": {
+        "x": 166,
+        "y": 590.96875,
+        "width": 138,
+        "height": 170
+      },
+      "paintedImage": {
+        "width": 270,
+        "height": 180
+      }
+    },
+    {
+      "lang": "ja",
+      "width": 390,
+      "height": 844,
+      "image": {
+        "x": 22,
+        "y": 289.171875,
+        "width": 346,
+        "height": 200
+      },
+      "map": {
+        "x": 201,
+        "y": 610.96875,
+        "width": 169,
+        "height": 170
+      },
+      "paintedImage": {
+        "width": 300,
+        "height": 200
+      }
+    },
+    {
+      "lang": "ja",
+      "width": 1366,
+      "height": 768,
+      "image": {
+        "x": 50,
+        "y": 314.765625,
+        "width": 605,
+        "height": 470
+      },
+      "map": {
+        "x": 709,
+        "y": 410.640625,
+        "width": 609,
+        "height": 330
+      },
+      "paintedImage": {
+        "width": 605,
+        "height": 403.3333333333333
+      }
+    },
+    {
+      "lang": "ja",
+      "width": 1440,
+      "height": 900,
+      "image": {
+        "x": 82,
+        "y": 316.703125,
+        "width": 610,
+        "height": 470
+      },
+      "map": {
+        "x": 746,
+        "y": 412.578125,
+        "width": 614,
+        "height": 330
+      },
+      "paintedImage": {
+        "width": 610,
+        "height": 406.6666666666667
+      }
+    },
+    {
+      "lang": "en",
+      "width": 320,
+      "height": 740,
+      "image": {
+        "x": 18,
+        "y": 308.765625,
+        "width": 284,
+        "height": 180
+      },
+      "map": {
+        "x": 166,
+        "y": 608.0625,
+        "width": 138,
+        "height": 170
+      },
+      "paintedImage": {
+        "width": 270,
+        "height": 180
+      }
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "height": 844,
+      "image": {
+        "x": 22,
+        "y": 308.765625,
+        "width": 346,
+        "height": 200
+      },
+      "map": {
+        "x": 201,
+        "y": 628.0625,
+        "width": 169,
+        "height": 170
+      },
+      "paintedImage": {
+        "width": 300,
+        "height": 200
+      }
+    },
+    {
+      "lang": "en",
+      "width": 1366,
+      "height": 768,
+      "image": {
+        "x": 50,
+        "y": 312.265625,
+        "width": 605,
+        "height": 470
+      },
+      "map": {
+        "x": 709,
+        "y": 405.390625,
+        "width": 609,
+        "height": 330
+      },
+      "paintedImage": {
+        "width": 605,
+        "height": 403.3333333333333
+      }
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "height": 900,
+      "image": {
+        "x": 82,
+        "y": 314.203125,
+        "width": 610,
+        "height": 470
+      },
+      "map": {
+        "x": 746,
+        "y": 407.328125,
+        "width": 614,
+        "height": 330
+      },
+      "paintedImage": {
+        "width": 610,
+        "height": 406.6666666666667
+      }
+    }
+  ],
+  "compactMeasurements": [],
+  "externalRequests": [],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "completedAt": "2026-11-17T10:19:41.996Z",
+  "summary": {
+    "checks": 69,
+    "passed": 69,
+    "failed": 0,
+    "locales": 2,
+    "viewports": 4,
+    "regions": 24,
+    "selections": 90,
+    "modelSwitches": 26,
+    "firstFoldScreens": 8,
+    "axeScreens": 4,
+    "axeViolations": 0,
+    "screenshots": 8,
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "externalRequests": 0,
+    "sourceInputsUnchanged": true
+  }
+}

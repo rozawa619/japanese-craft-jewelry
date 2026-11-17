@@ -1,0 +1,407 @@
+{
+  "checkedAt": "2026-11-17T10:49:43.764Z",
+  "status": "passed",
+  "method": "Compare the two actually executed217-case local reports by identical locale/surface/viewport and prefecture order. New paint metrics use measured CSS content boxes minus borders/padding and the source aspect ratio under object-fit:contain. Historical painted height is calculated from the before-refine recorded image bbox/natural dimensions (those img elements had no border/padding); it is derived, not a new browser measurement. The source pixels are not inspected for whitespace inside the original artwork.",
+  "inputs": {
+    "before": {
+      "path": "docs/click-map-stage-before-refine-results.json",
+      "sha256": "4d87d6030b70c97686628d3f035022723b42a70c233eaca9100b549380d8f057"
+    },
+    "after": {
+      "path": "docs/click-map-stage-results.json",
+      "sha256": "6ca79f13d94ce8f5c025c9a7821722077c3fb5e6d2490d329854bd74cff3215d"
+    }
+  },
+  "summary": {
+    "scenes": 18,
+    "images": 180,
+    "maxVerticalLetterbox": 0,
+    "desktopSpacingVerified": true
+  },
+  "scenes": [
+    {
+      "scene": "ja/home/320",
+      "width": 320,
+      "images": 10,
+      "before": {
+        "imageMeanHeight": 98,
+        "calculatedPaintedMeanHeight": 98,
+        "calculatedVerticalLetterboxMean": 0,
+        "totalRowHeight": 2636.40625
+      },
+      "after": {
+        "imageMeanHeight": 109.0625,
+        "paintedMeanHeight": 109.0625,
+        "maxVerticalLetterbox": 0,
+        "totalRowHeight": 2747.03125,
+        "rowHeightMin": 274.703125,
+        "rowHeightMax": 274.703125
+      },
+      "paintedHeightIncreasePercent": 11.3,
+      "totalRowHeightChangePercent": 4.2
+    },
+    {
+      "scene": "ja/objects//320",
+      "width": 320,
+      "images": 10,
+      "before": {
+        "imageMeanHeight": 98,
+        "calculatedPaintedMeanHeight": 98,
+        "calculatedVerticalLetterboxMean": 0,
+        "totalRowHeight": 2636.40625
+      },
+      "after": {
+        "imageMeanHeight": 109.0625,
+        "paintedMeanHeight": 109.0625,
+        "maxVerticalLetterbox": 0,
+        "totalRowHeight": 2747.03125,
+        "rowHeightMin": 274.703125,
+        "rowHeightMax": 274.703125
+      },
+      "paintedHeightIncreasePercent": 11.3,
+      "totalRowHeightChangePercent": 4.2
+    },
+    {
+      "scene": "ja/places//320",
+      "width": 320,
+      "images": 10,
+      "before": {
+        "imageMeanHeight": 98,
+        "calculatedPaintedMeanHeight": 98,
+        "calculatedVerticalLetterboxMean": 0,
+        "totalRowHeight": 2636.40625
+      },
+      "after": {
+        "imageMeanHeight": 109.0625,
+        "paintedMeanHeight": 109.0625,
+        "maxVerticalLetterbox": 0,
+        "totalRowHeight": 2747.03125,
+        "rowHeightMin": 274.703125,
+        "rowHeightMax": 274.703125
+      },
+      "paintedHeightIncreasePercent": 11.3,
+      "totalRowHeightChangePercent": 4.2
+    },
+    {
+      "scene": "ja/home/390",
+      "width": 390,
+      "images": 10,
+      "before": {
+        "imageMeanHeight": 110,
+        "calculatedPaintedMeanHeight": 110,
+        "calculatedVerticalLetterboxMean": 0,
+        "totalRowHeight": 2756.40625
+      },
+      "after": {
+        "imageMeanHeight": 130.65625,
+        "paintedMeanHeight": 130.65625,
+        "maxVerticalLetterbox": 0,
+        "totalRowHeight": 2962.96875,
+        "rowHeightMin": 296.296875,
+        "rowHeightMax": 296.296875
+      },
+      "paintedHeightIncreasePercent": 18.8,
+      "totalRowHeightChangePercent": 7.5
+    },
+    {
+      "scene": "ja/objects//390",
+      "width": 390,
+      "images": 10,
+      "before": {
+        "imageMeanHeight": 110,
+        "calculatedPaintedMeanHeight": 110,
+        "calculatedVerticalLetterboxMean": 0,
+        "totalRowHeight": 2756.40625
+      },
+      "after": {
+        "imageMeanHeight": 130.65625,
+        "paintedMeanHeight": 130.65625,
+        "maxVerticalLetterbox": 0,
+        "totalRowHeight": 2962.96875,
+        "rowHeightMin": 296.296875,
+        "rowHeightMax": 296.296875
+      },
+      "paintedHeightIncreasePercent": 18.8,
+      "totalRowHeightChangePercent": 7.5
+    },
+    {
+      "scene": "ja/places//390",
+      "width": 390,
+      "images": 10,
+      "before": {
+        "imageMeanHeight": 110,
+        "calculatedPaintedMeanHeight": 110,
+        "calculatedVerticalLetterboxMean": 0,
+        "totalRowHeight": 2756.40625
+      },
+      "after": {
+        "imageMeanHeight": 130.65625,
+        "paintedMeanHeight": 130.65625,
+        "maxVerticalLetterbox": 0,
+        "totalRowHeight": 2962.96875,
+        "rowHeightMin": 296.296875,
+        "rowHeightMax": 296.296875
+      },
+      "paintedHeightIncreasePercent": 18.8,
+      "totalRowHeightChangePercent": 7.5
+    },
+    {
+      "scene": "ja/home/1440",
+      "width": 1440,
+      "images": 10,
+      "before": {
+        "imageMeanHeight": 180,
+        "calculatedPaintedMeanHeight": 98.66666666666666,
+        "calculatedVerticalLetterboxMean": 81.33333333333334,
+        "totalRowHeight": 2442.96875
+      },
+      "after": {
+        "imageMeanHeight": 178.65625,
+        "paintedMeanHeight": 178.65625,
+        "maxVerticalLetterbox": 0,
+        "totalRowHeight": 2440,
+        "rowHeightMin": 244,
+        "rowHeightMax": 244
+      },
+      "paintedHeightIncreasePercent": 81.1,
+      "totalRowHeightChangePercent": -0.1
+    },
+    {
+      "scene": "ja/objects//1440",
+      "width": 1440,
+      "images": 10,
+      "before": {
+        "imageMeanHeight": 180,
+        "calculatedPaintedMeanHeight": 98.66666666666666,
+        "calculatedVerticalLetterboxMean": 81.33333333333334,
+        "totalRowHeight": 2442.96875
+      },
+      "after": {
+        "imageMeanHeight": 178.65625,
+        "paintedMeanHeight": 178.65625,
+        "maxVerticalLetterbox": 0,
+        "totalRowHeight": 2440,
+        "rowHeightMin": 244,
+        "rowHeightMax": 244
+      },
+      "paintedHeightIncreasePercent": 81.1,
+      "totalRowHeightChangePercent": -0.1
+    },
+    {
+      "scene": "ja/places//1440",
+      "width": 1440,
+      "images": 10,
+      "before": {
+        "imageMeanHeight": 180,
+        "calculatedPaintedMeanHeight": 98.66666666666666,
+        "calculatedVerticalLetterboxMean": 81.33333333333334,
+        "totalRowHeight": 2442.96875
+      },
+      "after": {
+        "imageMeanHeight": 178.65625,
+        "paintedMeanHeight": 178.65625,
+        "maxVerticalLetterbox": 0,
+        "totalRowHeight": 2440,
+        "rowHeightMin": 244,
+        "rowHeightMax": 244
+      },
+      "paintedHeightIncreasePercent": 81.1,
+      "totalRowHeightChangePercent": -0.1
+    },
+    {
+      "scene": "en/home/320",
+      "width": 320,
+      "images": 10,
+      "before": {
+        "imageMeanHeight": 98,
+        "calculatedPaintedMeanHeight": 98,
+        "calculatedVerticalLetterboxMean": 0,
+        "totalRowHeight": 2645.796875
+      },
+      "after": {
+        "imageMeanHeight": 109.0625,
+        "paintedMeanHeight": 109.0625,
+        "maxVerticalLetterbox": 0,
+        "totalRowHeight": 2747.03125,
+        "rowHeightMin": 274.703125,
+        "rowHeightMax": 274.703125
+      },
+      "paintedHeightIncreasePercent": 11.3,
+      "totalRowHeightChangePercent": 3.8
+    },
+    {
+      "scene": "en/objects//320",
+      "width": 320,
+      "images": 10,
+      "before": {
+        "imageMeanHeight": 98,
+        "calculatedPaintedMeanHeight": 98,
+        "calculatedVerticalLetterboxMean": 0,
+        "totalRowHeight": 2645.796875
+      },
+      "after": {
+        "imageMeanHeight": 109.0625,
+        "paintedMeanHeight": 109.0625,
+        "maxVerticalLetterbox": 0,
+        "totalRowHeight": 2747.03125,
+        "rowHeightMin": 274.703125,
+        "rowHeightMax": 274.703125
+      },
+      "paintedHeightIncreasePercent": 11.3,
+      "totalRowHeightChangePercent": 3.8
+    },
+    {
+      "scene": "en/places//320",
+      "width": 320,
+      "images": 10,
+      "before": {
+        "imageMeanHeight": 98,
+        "calculatedPaintedMeanHeight": 98,
+        "calculatedVerticalLetterboxMean": 0,
+        "totalRowHeight": 2645.796875
+      },
+      "after": {
+        "imageMeanHeight": 109.0625,
+        "paintedMeanHeight": 109.0625,
+        "maxVerticalLetterbox": 0,
+        "totalRowHeight": 2747.03125,
+        "rowHeightMin": 274.703125,
+        "rowHeightMax": 274.703125
+      },
+      "paintedHeightIncreasePercent": 11.3,
+      "totalRowHeightChangePercent": 3.8
+    },
+    {
+      "scene": "en/home/390",
+      "width": 390,
+      "images": 10,
+      "before": {
+        "imageMeanHeight": 110,
+        "calculatedPaintedMeanHeight": 110,
+        "calculatedVerticalLetterboxMean": 0,
+        "totalRowHeight": 2756.40625
+      },
+      "after": {
+        "imageMeanHeight": 130.65625,
+        "paintedMeanHeight": 130.65625,
+        "maxVerticalLetterbox": 0,
+        "totalRowHeight": 2962.96875,
+        "rowHeightMin": 296.296875,
+        "rowHeightMax": 296.296875
+      },
+      "paintedHeightIncreasePercent": 18.8,
+      "totalRowHeightChangePercent": 7.5
+    },
+    {
+      "scene": "en/objects//390",
+      "width": 390,
+      "images": 10,
+      "before": {
+        "imageMeanHeight": 110,
+        "calculatedPaintedMeanHeight": 110,
+        "calculatedVerticalLetterboxMean": 0,
+        "totalRowHeight": 2756.40625
+      },
+      "after": {
+        "imageMeanHeight": 130.65625,
+        "paintedMeanHeight": 130.65625,
+        "maxVerticalLetterbox": 0,
+        "totalRowHeight": 2962.96875,
+        "rowHeightMin": 296.296875,
+        "rowHeightMax": 296.296875
+      },
+      "paintedHeightIncreasePercent": 18.8,
+      "totalRowHeightChangePercent": 7.5
+    },
+    {
+      "scene": "en/places//390",
+      "width": 390,
+      "images": 10,
+      "before": {
+        "imageMeanHeight": 110,
+        "calculatedPaintedMeanHeight": 110,
+        "calculatedVerticalLetterboxMean": 0,
+        "totalRowHeight": 2756.40625
+      },
+      "after": {
+        "imageMeanHeight": 130.65625,
+        "paintedMeanHeight": 130.65625,
+        "maxVerticalLetterbox": 0,
+        "totalRowHeight": 2962.96875,
+        "rowHeightMin": 296.296875,
+        "rowHeightMax": 296.296875
+      },
+      "paintedHeightIncreasePercent": 18.8,
+      "totalRowHeightChangePercent": 7.5
+    },
+    {
+      "scene": "en/home/1440",
+      "width": 1440,
+      "images": 10,
+      "before": {
+        "imageMeanHeight": 180,
+        "calculatedPaintedMeanHeight": 98.66666666666666,
+        "calculatedVerticalLetterboxMean": 81.33333333333334,
+        "totalRowHeight": 2442.96875
+      },
+      "after": {
+        "imageMeanHeight": 178.65625,
+        "paintedMeanHeight": 178.65625,
+        "maxVerticalLetterbox": 0,
+        "totalRowHeight": 2440,
+        "rowHeightMin": 244,
+        "rowHeightMax": 244
+      },
+      "paintedHeightIncreasePercent": 81.1,
+      "totalRowHeightChangePercent": -0.1
+    },
+    {
+      "scene": "en/objects//1440",
+      "width": 1440,
+      "images": 10,
+      "before": {
+        "imageMeanHeight": 180,
+        "calculatedPaintedMeanHeight": 98.66666666666666,
+        "calculatedVerticalLetterboxMean": 81.33333333333334,
+        "totalRowHeight": 2442.96875
+      },
+      "after": {
+        "imageMeanHeight": 178.65625,
+        "paintedMeanHeight": 178.65625,
+        "maxVerticalLetterbox": 0,
+        "totalRowHeight": 2440,
+        "rowHeightMin": 244,
+        "rowHeightMax": 244
+      },
+      "paintedHeightIncreasePercent": 81.1,
+      "totalRowHeightChangePercent": -0.1
+    },
+    {
+      "scene": "en/places//1440",
+      "width": 1440,
+      "images": 10,
+      "before": {
+        "imageMeanHeight": 180,
+        "calculatedPaintedMeanHeight": 98.66666666666666,
+        "calculatedVerticalLetterboxMean": 81.33333333333334,
+        "totalRowHeight": 2442.96875
+      },
+      "after": {
+        "imageMeanHeight": 178.65625,
+        "paintedMeanHeight": 178.65625,
+        "maxVerticalLetterbox": 0,
+        "totalRowHeight": 2440,
+        "rowHeightMin": 244,
+        "rowHeightMax": 244
+      },
+      "paintedHeightIncreasePercent": 81.1,
+      "totalRowHeightChangePercent": -0.1
+    }
+  ],
+  "screenshots": [
+    "artifacts/click-map-stage/top10-refined-ja-390.png",
+    "artifacts/click-map-stage/top10-refined-ja-1440.png",
+    "artifacts/click-map-stage/top10-refined-en-390.png",
+    "artifacts/click-map-stage/top10-refined-en-1440.png"
+  ]
+}

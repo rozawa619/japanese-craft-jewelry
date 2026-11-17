@@ -19,3 +19,13 @@ HeroのSVG aはJSなしでは通常の地域href。JS有効時だけrole=button/
 region queryはMapに登録された公開idのみを受け付け、他query/hashとhistory.stateを保ったreplaceStateを使う。popstateで復元、不正idは既定へ戻しregionだけ除去する。言語切替の既存処理は変更しない。Heroにはzoom/外部API/現在地/Storageを追加しない。
 
 Heroの480px以下はresponsive例外としてmodel-panelをdisplay:contentsにし、写真を全幅180〜200px高の1行目、商品小情報左/地図右を2行目へ配置する。元3:2画像を細い列の高い枠へ入れたletterboxを減らし、containとAIcaptionを保つ。PCは左写真/右地図を維持。mobileのwrapperはboxを持たないため、検証は実際の画像frameとmap-panelを測る。
+
+## R11/R12：公開後の追加調整
+
+ebacc3e/Actions44065533062の公開検査を完了した後の変更。rootが改修前のreportをbefore-refineとして保存し、最終reportとは分ける。追加改修版のbuild/専用QA/公開/ZIPは再度未完了として扱う。
+
+R11はTOP10の既存行高・行間を基準に、写真枠と実画像のpaint寸法を調整する。固定の高い枠へ小さくcontainした上下余白を減らし、自然比率の画像へ使える横幅を配分する。元画像を編集/生成せず、顔・耳・ジュエリーを切らない。実装後の日英PC/スマホの行高・行間・画像寸法をreportへ記録し、初回の180/110/98px設定を追加改修版の確定値として固定しない。実装はrootのTOP10 style担当範囲。
+
+R12はRegionHero.astroの地図レイアウトを広げ、沖縄の既存pathを独立枠で拡大表示する。実装の寸法/viewBox/配置は最終実測に合わせる。新地理dataや外部地図通信は追加せず、沖縄の移動・拡大図であることを日英で表示する。geometry/公開地域の対応は一つの正本へ保ち、unique47形状/24選択地域と再表示した沖縄を区別する。重複DOM idを作らず、沖縄枠も既存のHero選択処理と同じ商品カード・画像・region queryを更新する。hover/focusだけで選択を変えず、click/tap/Enter/SpaceとJSなしhref、選択状態・focus・言語切替を確認する。Heroの表示拡大を一覧地図のzoom/native直接リンクと混同しない。
+
+追加QAは、写真の実paintと行寸法の比較、沖縄枠の可視性/明示操作/対応商品、全地域の既存選択、狭幅overflow、query/hash/言語/noJS、一覧地図の直接遷移を対象にする。報告値・画像・ソースの保持を確認してから再公開・実URL検査へ進み、最後に全source ZIPを作成する。

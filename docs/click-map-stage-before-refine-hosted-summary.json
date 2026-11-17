@@ -1,0 +1,103 @@
+{
+  "checkedAt": "2026-11-17T10:39:10.958Z",
+  "applicationCommit": "ebacc3e0df9bbd80f3f820499be9cc3fb3436cb9",
+  "actions": {
+    "id": 44065533062,
+    "headSha": "ebacc3e0df9bbd80f3f820499be9cc3fb3436cb9",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44065533062",
+    "updatedAt": "2026-11-17T10:31:52Z"
+  },
+  "status": "passed_before_latest_user_refinements",
+  "suites": {
+    "map": {
+      "report": "docs/click-map-stage-before-refine-hosted-map-results.json",
+      "summary": {
+        "checks": 217,
+        "passed": 217,
+        "failed": 0,
+        "regions": 24,
+        "geographicShapes": 47,
+        "locales": 2,
+        "surfaces": 3,
+        "viewports": 3,
+        "selectionChecks": 186,
+        "nativeNavigations": 32,
+        "zoomCases": 6,
+        "mobilePanCases": 2,
+        "compactScenes": 18,
+        "topTenImageChecks": 180,
+        "axeScreens": 6,
+        "axeViolations": 0,
+        "screenshots": 6,
+        "pageErrors": 0,
+        "consoleErrors": 0,
+        "externalRequests": 0
+      }
+    },
+    "hero": {
+      "report": "docs/click-map-stage-before-refine-hosted-hero-results.json",
+      "summary": {
+        "checks": 69,
+        "passed": 69,
+        "failed": 0,
+        "locales": 2,
+        "viewports": 4,
+        "regions": 24,
+        "selections": 90,
+        "modelSwitches": 26,
+        "firstFoldScreens": 8,
+        "axeScreens": 4,
+        "axeViolations": 0,
+        "screenshots": 8,
+        "pageErrors": 0,
+        "consoleErrors": 0,
+        "externalRequests": 0,
+        "sourceInputsUnchanged": true
+      }
+    },
+    "mobile": {
+      "report": "docs/click-map-stage-before-refine-hosted-mobile-results.json",
+      "summary": {
+        "checks": 92,
+        "passed": 92,
+        "failed": 0,
+        "viewports": 7,
+        "locales": 2,
+        "representativeRoutes": 6,
+        "sourceControls": 120,
+        "typeImageInstances": 112,
+        "axeScreens": 10,
+        "axeViolations": 0,
+        "liveMaps": 2,
+        "screenshots": 16
+      }
+    },
+    "sources": {
+      "report": "docs/click-map-stage-before-refine-hosted-sources-results.json",
+      "summary": {
+        "checks": 328,
+        "passed": 328,
+        "failed": 0,
+        "htmlSha256Comparisons": 328,
+        "productPages": 120,
+        "sourceDisclosures": 448,
+        "sourceRecords": 1580
+      }
+    },
+    "release": {
+      "report": "docs/click-map-stage-before-refine-hosted-release-results.json",
+      "summary": {
+        "checks": 24,
+        "passed": 24,
+        "failed": 0,
+        "canonicalUrls": 328,
+        "uniqueImages": 118,
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    }
+  },
+  "scope": "Actual interim published version before subsequent user requests: remove Top10 photo letterbox while preserving row spacing; enlarge home map and add separate Okinawa inset. These results are not claimed for the later app."
+}

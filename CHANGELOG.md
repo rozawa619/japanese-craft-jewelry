@@ -4,8 +4,9 @@
 
 - 産地一覧の日本地図を拡大し、100/150/200/300%のzoom・全体表示・地図内スクロールを追加。掲載24県はクリック・タップ・Enterで産地へ直接進む通常リンクとし、hover/focus/selectの代表商品プレビューも維持。
 - ホーム先頭に左の人物AI画像・右の日本地図を配置。Heroでは県の明示選択で画像・商品・国内参考価格を切り替え、産地CTAへ案内。有効なregion queryと他query/hashを保ち、言語切替・戻る・JSなしにも対応。スマホは写真を全幅で表示し、その下に商品情報と地図を配置。
-- TOP10の人物画像・行をコンパクト化。従来版とのsection高の比較はPC約63%、スマホ約22〜30%減。顔や耳を切らないcontainを維持し、訪問数・離脱率・検索順位の改善実測とは区別。
-- 最終ローカルは型143ファイル/エラー0・単体149・344HTML、一覧地図217/217・Hero69/69・mobile92/92・Sources328/328・SEO PASS。商品60/24県/118画像と店舗Google Mapsの30日設定は保持。公開・納品ZIPは未実施で、確定結果は[020 validation](specs/020-direct-region-map/validation.md)・[deployment-results](docs/deployment-results.json)へ記録する。
+- TOP10の人物画像・行をコンパクト化。追加調整で画像列を広げ、自然比率で上下の帯を減らして行間を維持。従来版とのsection高の比較はPC約63%、スマホ約17〜27%減。顔や耳を切らないcontainを維持し、訪問数・離脱率・検索順位の改善実測とは区別。
+- Heroの本体地図を拡大し、沖縄を注記付き別枠へ移動/拡大。既存47原形と24選択県、画像/価格/query/noJSを保全。
+- 最終ローカルは型143ファイル/エラー0・単体149・344HTML、一覧地図217/217・Hero77/77・mobile92/92・Sources328/328・SEO PASS。商品60/24県/118画像と店舗Google Mapsの30日設定は保持。公開・納品ZIPは未実施で、確定結果は[020 validation](specs/020-direct-region-map/validation.md)・[deployment-results](docs/deployment-results.json)へ記録する。
 
 ## 0.17.0 — 2026-11-17
 

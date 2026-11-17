@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-17T10:30:25.851Z",
+  "checkedAt": "2026-11-17T10:57:25.724Z",
   "method": "Read-only local link, Markdown heading/fragment and pnpm/node-script reference checks on active maintainer documents. External URLs are counted, not requested. Legacy operations after its explicit marker and historical research/report prose are not treated as the current runbook.",
   "files": [
     "README.md",
@@ -43,9 +43,9 @@
     "specs/020-direct-region-map/validation.md"
   ],
   "errors": [],
-  "localLinks": 427,
+  "localLinks": 448,
   "anchors": 6,
-  "externalLinks": 84,
+  "externalLinks": 85,
   "commands": 97,
   "scriptPaths": 28,
   "snapshot": {
@@ -58,9 +58,9 @@
   "status": "passed",
   "summary": {
     "files": 39,
-    "localLinks": 427,
+    "localLinks": 448,
     "anchors": 6,
-    "externalLinksUnchecked": 84,
+    "externalLinksUnchecked": 85,
     "pnpmReferences": 97,
     "nodeScriptReferences": 28,
     "errors": 0

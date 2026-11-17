@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-17T10:19:45.547Z",
+  "checkedAt": "2026-11-17T10:53:58.667Z",
   "origin": "http://127.0.0.1:4323",
   "base": "/japanese-craft-jewelry/",
   "method": "Focused responsive browser checks against a stable build. Raw catalog, display-order IDs and image registry independently supply expected representatives. No product/cookie/advertising data is changed. Standalone controls target44px; normal inline prose links and decorative captions are not claimed to be44px targets.",
@@ -22,7 +22,7 @@
     "src/lib/map-preferences-client.ts": "a533e0b8135acd65ce96c161ce13a4cea82be95f922fcce3fc68c67487110e8f",
     "src/components/MapPreferences.astro": "7b0ec812f5169c735cd997417fb01489c7d38079cc49ea1919c4358eff05e16f",
     "src/components/JapanJewelryMap.astro": "45666cf0dbe7f33780d06eaa83b5626999380f9e96126fe2f2b2dac3d159bda7",
-    "src/components/RegionSelection.astro": "7b1cfa43e11e5cf11eca2c0bc526a5e00651a94e62b831d33646dafe6781aef8"
+    "src/components/RegionSelection.astro": "396daaf23c00803ba7985f0e47e257e3cc04aabcdbb0b95fe12adedacc5c586b"
   },
   "views": [
     {
@@ -620,22 +620,22 @@
   ],
   "failures": [],
   "screenshots": [
-    "artifacts/click-map-stage-mobile-final-ja-home-320x740-menu.png",
-    "artifacts/click-map-stage-mobile-final-ja-home-320x740-top.png",
-    "artifacts/click-map-stage-mobile-final-ja-listing-320x740-filters.png",
-    "artifacts/click-map-stage-mobile-final-ja-region-320x740-top.png",
-    "artifacts/click-map-stage-mobile-final-ja-detail-320x740-sources.png",
-    "artifacts/click-map-stage-mobile-final-ja-privacy-320x740-top.png",
-    "artifacts/click-map-stage-mobile-final-ja-listing-768x430-filters.png",
-    "artifacts/click-map-stage-mobile-final-en-home-320x740-menu.png",
-    "artifacts/click-map-stage-mobile-final-en-home-320x740-top.png",
-    "artifacts/click-map-stage-mobile-final-en-listing-320x740-filters.png",
-    "artifacts/click-map-stage-mobile-final-en-region-320x740-top.png",
-    "artifacts/click-map-stage-mobile-final-en-detail-320x740-sources.png",
-    "artifacts/click-map-stage-mobile-final-en-privacy-320x740-top.png",
-    "artifacts/click-map-stage-mobile-final-en-listing-768x430-filters.png",
-    "artifacts/click-map-stage-mobile-final-ja-live-map-320.png",
-    "artifacts/click-map-stage-mobile-final-en-live-map-390.png"
+    "artifacts/click-map-stage-refined-mobile-ja-home-320x740-menu.png",
+    "artifacts/click-map-stage-refined-mobile-ja-home-320x740-top.png",
+    "artifacts/click-map-stage-refined-mobile-ja-listing-320x740-filters.png",
+    "artifacts/click-map-stage-refined-mobile-ja-region-320x740-top.png",
+    "artifacts/click-map-stage-refined-mobile-ja-detail-320x740-sources.png",
+    "artifacts/click-map-stage-refined-mobile-ja-privacy-320x740-top.png",
+    "artifacts/click-map-stage-refined-mobile-ja-listing-768x430-filters.png",
+    "artifacts/click-map-stage-refined-mobile-en-home-320x740-menu.png",
+    "artifacts/click-map-stage-refined-mobile-en-home-320x740-top.png",
+    "artifacts/click-map-stage-refined-mobile-en-listing-320x740-filters.png",
+    "artifacts/click-map-stage-refined-mobile-en-region-320x740-top.png",
+    "artifacts/click-map-stage-refined-mobile-en-detail-320x740-sources.png",
+    "artifacts/click-map-stage-refined-mobile-en-privacy-320x740-top.png",
+    "artifacts/click-map-stage-refined-mobile-en-listing-768x430-filters.png",
+    "artifacts/click-map-stage-refined-mobile-ja-live-map-320.png",
+    "artifacts/click-map-stage-refined-mobile-en-live-map-390.png"
   ],
   "axe": [
     {
@@ -692,7 +692,7 @@
   "sourceControls": 120,
   "typeImages": 112,
   "sourceInputsUnchanged": true,
-  "completedAt": "2026-11-17T10:22:30.889Z",
+  "completedAt": "2026-11-17T10:56:53.083Z",
   "summary": {
     "checks": 92,
     "passed": 92,

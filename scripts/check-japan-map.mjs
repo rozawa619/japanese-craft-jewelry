@@ -133,16 +133,28 @@ try{
      assert.ok(product?.prefectureIds.includes(id)&&asset,'Every thumbnail is an actual image from the represented prefecture.');
      const img=piece.locator('.region-selection-image-link img');await img.scrollIntoViewIfNeeded();await img.evaluate(el=>el.decode());
      assert.equal(await img.getAttribute('src'),base+asset.path);assert.equal(await img.getAttribute('alt'),asset.alt[lang]);
-     const image=await img.evaluate(el=>{const b=el.getBoundingClientRect(),style=getComputedStyle(el);return{width:b.width,height:b.height,fit:style.objectFit,naturalWidth:el.naturalWidth,naturalHeight:el.naturalHeight,sourceWidth:Number(el.getAttribute('width')),sourceHeight:Number(el.getAttribute('height'))};});
-     assert.ok(image.width>0&&image.height>0&&image.height<=(width<=720?110:180)+1,'Top10 thumbnails remain compact at this viewport.');
+     const image=await img.evaluate(el=>{
+      const b=el.getBoundingClientRect(),style=getComputedStyle(el),px=name=>parseFloat(style[name])||0;
+      const insetX=px('paddingLeft')+px('paddingRight')+px('borderLeftWidth')+px('borderRightWidth'),insetY=px('paddingTop')+px('paddingBottom')+px('borderTopWidth')+px('borderBottomWidth');
+      const borderBoxWidth=px('width')+(style.boxSizing==='border-box'?0:insetX),borderBoxHeight=px('height')+(style.boxSizing==='border-box'?0:insetY);
+      const contentWidth=b.width-insetX*b.width/borderBoxWidth,contentHeight=b.height-insetY*b.height/borderBoxHeight;
+      // contain preserves the full source. The smaller content/source ratio is
+      // its actual paint scale; the remainder is empty space inside the img.
+      const paintScale=Math.min(contentWidth/el.naturalWidth,contentHeight/el.naturalHeight),paintedWidth=el.naturalWidth*paintScale,paintedHeight=el.naturalHeight*paintScale;
+      return{width:b.width,height:b.height,contentWidth,contentHeight,paintedWidth,paintedHeight,horizontalLetterbox:Math.max(0,contentWidth-paintedWidth),verticalLetterbox:Math.max(0,contentHeight-paintedHeight),fit:style.objectFit,naturalWidth:el.naturalWidth,naturalHeight:el.naturalHeight,sourceWidth:Number(el.getAttribute('width')),sourceHeight:Number(el.getAttribute('height'))};
+     });
+     assert.ok(image.width>0&&image.height>0&&image.height<=(width<=720?133:180)+1,'Top10 thumbnails remain compact at this viewport.');
      assert.equal(image.fit,'contain');assert.equal(image.naturalWidth,asset.width);assert.equal(image.naturalHeight,asset.height);assert.equal(image.sourceWidth,asset.width);assert.equal(image.sourceHeight,asset.height);
+     assert.ok([image.contentWidth,image.contentHeight,image.paintedWidth,image.paintedHeight,image.verticalLetterbox].every(n=>Number.isFinite(n)&&n>=0),'Contain paint metrics must be finite content-box measurements.');
+     assert.ok(image.paintedWidth>0&&image.paintedHeight>0&&image.paintedWidth<=image.contentWidth+0.01&&image.paintedHeight<=image.contentHeight+0.01,'The complete image fits inside its content box.');
+     assert.ok(image.verticalLetterbox<=1.5,`Top10 photo has no avoidable upper/lower letterbox (${image.verticalLetterbox.toFixed(3)}px total).`);
      const b=await row.boundingBox();metrics.push({id,productId,rank:Number(await row.getAttribute('data-tourism-rank')),rowHeight:b.height,image});report.topTenImageChecks++;
     }
     assert.deepEqual(metrics.map(r=>r.id),topTen);assert.deepEqual(metrics.map(r=>r.rank),Array.from({length:10},(_,i)=>i+1));
-    const totalRowHeight=metrics.reduce((n,r)=>n+r.rowHeight,0),imageMeanHeight=metrics.reduce((n,r)=>n+r.image.height,0)/metrics.length;
+    const totalRowHeight=metrics.reduce((n,r)=>n+r.rowHeight,0),imageMeanHeight=metrics.reduce((n,r)=>n+r.image.height,0)/metrics.length,paintedMeanHeight=metrics.reduce((n,r)=>n+r.image.paintedHeight,0)/metrics.length,maxVerticalLetterbox=Math.max(...metrics.map(r=>r.image.verticalLetterbox));
     const old=baseline?.measurements.find(r=>r.locale===lang&&r.width===width);let comparison;
     if(old){assert.deepEqual(old.rows.map(r=>r.id),topTen);assert.ok(imageMeanHeight<old.imageMeanHeight-1,'Mean thumbnail height is reduced from the verified old public version.');assert.ok(totalRowHeight<old.totalRowHeight,'The Top10 list takes less vertical space.');comparison={baseline:baselinePath,baselineRoute:old.route,oldImageMeanHeight:old.imageMeanHeight,imageHeightReductionPercent:Number((100*(1-imageMeanHeight/old.imageMeanHeight)).toFixed(1)),oldTotalRowHeight:old.totalRowHeight,totalRowHeightReductionPercent:Number((100*(1-totalRowHeight/old.totalRowHeight)).toFixed(1))};}
-    report.compactScenes++;return{width,images:metrics.length,totalRowHeight,imageMeanHeight,rows:metrics,...(comparison?{comparison}:{})};
+    report.compactScenes++;return{width,images:metrics.length,totalRowHeight,imageMeanHeight,paintedMeanHeight,maxVerticalLetterbox,rows:metrics,...(comparison?{comparison}:{})};
    });
    if(width===390)for(const id of prefectureIds)await check(key+' select '+id,async()=>{await map.locator('[data-map-select]').selectOption(id);return selection(map,id,lang)});
    await check(key+' keyboard, touch-equivalent targets and visible layout',async()=>{
