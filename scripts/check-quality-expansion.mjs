@@ -6,14 +6,15 @@ import {existsSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 import {resolve} from 'node:path';
 import {createHash} from 'node:crypto';
+import {assertStylingFigure} from './image-display-assertions.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
 if(existsSync(resolve(root,'.env')))process.loadEnvFile(resolve(root,'.env'));
 const origin=new URL(process.env.CHECK_BASE_URL||'http://127.0.0.1:4321').origin;
 const parts=(process.env.PUBLIC_BASE_PATH||'/').split('/').filter(Boolean);
 const base='/'+parts.join('/')+(parts.length?'/':'');
-const reportPath=process.env.CHECK_REPORT_PATH||'docs/editorial-stage-browser-results.json';
-const prefix=(process.env.CHECK_SCREENSHOT_PREFIX||'editorial-stage').replace(/[^a-zA-Z0-9_-]/g,'-');
+const reportPath=process.env.CHECK_REPORT_PATH||'docs/visual-seo-stage-browser-results.json';
+const prefix=(process.env.CHECK_SCREENSHOT_PREFIX||'visual-seo-stage').replace(/[^a-zA-Z0-9_-]/g,'-');
 const readJson=async path=>JSON.parse(await readFile(resolve(root,path),'utf8'));
 const sourcePaths=['src/data/catalog.json','src/data/translations/ja.json','src/data/product-stories.json','src/data/selection-notes.json','src/data/region-choice-notes.json','src/data/editorial-images.json','src/data/purchase-evidence.json','src/config/selection.ts'];
 const hashInputs=async()=>Object.fromEntries(await Promise.all(sourcePaths.map(async path=>[path,createHash('sha256').update(await readFile(resolve(root,path))).digest('hex')])));
@@ -137,6 +138,7 @@ async function choice(page,product,locale){
  const rel=(await actual.getAttribute('rel')||'').split(/\s+/);assert.ok(rel.includes('noopener')&&rel.includes('noreferrer')&&!rel.includes('sponsored'));
  assert.equal(await actual.getAttribute('target'),'_blank');
  if(registry[product.id]){
+  await assertStylingFigure(visual.locator('figure[data-editorial-asset]'),registry[product.id],locale,page.url());
   const image=visual.locator('figure[data-editorial-asset] img');assert.equal(await image.count(),1);
   assert.equal(new URL(await image.getAttribute('src'),page.url()).pathname,base+registry[product.id].path);
   assert.equal(norm(await visual.locator('figcaption').innerText()),locale==='ja'?'AIイメージ':'AI image');

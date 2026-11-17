@@ -4,11 +4,15 @@
 
 SORAが日本各地の工芸ジュエリーを選ぶ日英の紹介サイト。ブログ・販売決済・Contactは設けません。公開状態はdocs/deployment-results.jsonのversion/commit/Actions/実測を確認してください。
 
+0.13の対象は、公開50商品のAIイメージを揃えることと、英語圏向けの検索設定・紹介文の改善です。最新仕様は[013](specs/013-complete-imagery-international-seo/spec.md)。以下の0.12の編集・購入根拠を継承し、最終の検証・配信状況は[検証](docs/verification.md)と[公開記録](docs/deployment-results.json)を参照してください。
+
 0.12はThe Good Trade / Who What Wear / マイベスト等の実ページを参照し、既存42点の日英紹介と本文を商品固有の内容へ改稿。全商品で「この一品を選ぶなら」と比較候補の違いを説明し、能作の錫、水引、友禅、銀糸、七宝、久留米絣、伊勢志摩アコヤ真珠の8点を追加しました。50公開商品・14都道府県・24技法・258出典記録。41点は対象商品の有効な公式注文受付、9点は営業中の小売と価格付き現行カタログを確認。これは将来の在庫や注文成立の保証ではありません。
 
 CO.COON2点、欠品中の浜松屋18K、現行の注文/小売根拠を確認できなかった畠山2点はdraftへ。古い掲載URL・比較・地域・サイトマップ・現行画像参照から外します。畠山の403を廃業/売切れとは認定しません。HARIOは現行8,250円を確認し、旧キャッシュ7,480円を使っていません。各県同数や最低2商品より、確認できた販売経路を優先します。
 
-画像は25点のAIイメージが27商品に対応。残る23商品は独自のテキストプレビューと公式写真/商品への通常リンクです。今回は新しい画像生成・写真転載を行っていません。未許諾写真・ロゴ・地図・口コミを転載せず、AIは実物再現/試着実績と区別します。短いAIイメージ/AI image表示は維持。
+013の画像構成は旧25ファイルと新23ファイルの計48ファイルで50商品に対応する仕様です。旧25ファイルのbytesは保持し、新23ファイルにはIPTC XMPのAI由来を記録します。新23人は27〜33歳の架空成人で、日本7・米国8・英国8、cute11・elegant12という制作設定。国籍を見た目から判断した記録ではありません。未許諾写真・ロゴ・地図・口コミを転載せず、AIは実物再現/試着実績と区別します。短いAIイメージ/AI image表示は維持。画像の参照・生成方針は[画像計画](docs/image-plan-v13.md)、採用・変換・表示の検証は[画像検証](docs/image-verification-v13.md)を参照。0.12時点の「25画像で27商品、23商品はテキストpreview、新規生成なし」は[前版引継ぎ](docs/archive/handoff-v12.md)の履歴です。
+
+海外検索には日英の独立URL・相互hreflang・canonicalを維持し、英語見出しと全商品の検索説明文、パンくず、AI画像の構造化データを改善します。実際のGoogle掲載・順位・米英流入はSearch Consoleで未確認です。[海外SEO調査・更新手順](docs/international-seo-v13.md)に一次資料と必要な確認を記録し、HTMLの検査を検索流入の実績と混同しません。
 
 日英とも国内通販の参考価格を主表示。海外ストア価格は別枠で、その購入先と対応させます。独自換算なし。片耳/一組の確認できた単位はpriceUnitで表示し、勝手に倍額へ換算しません。23店舗を43商品へ関連づけ、店舗存在と個別商品の在庫は区別します。Mapsは外部リンクのみ。
 
@@ -26,9 +30,10 @@ Node.js24.22.1以上、pnpm11.25.0。Astro7.4.12、TypeScript、Markdown、静�
 | コマンド | 確認 |
 | --- | --- |
 | pnpm verify | 型/データ/単体/本番生成/内部リンク/CSP/メタ |
+| node scripts/check-international-seo.mjs | 最終本番生成物のcanonical/hreflang/検索文/パンくず/全商品AI画像/robots/sitemap。実掲載や流入は別確認 |
 | pnpm readiness | 技術公開条件。商用契約と申請は別判定 |
 | pnpm check:quality | 販売証跡/公開除外/予算/価格順/比較/地域/日英3幅 |
-| pnpm check:browser | 全公開商品の表示・言語・画像/公式preview・基本導線 |
+| pnpm check:browser | 全公開商品の表示・言語・画像・公式への基本導線 |
 | pnpm check:prices | 日英の国内/海外価格と購入先 |
 | pnpm check:copy | 旧版からの実改稿、固有コピーの完全一致重複。意味や真偽の自動評価ではない |
 | pnpm check:ads | 実データを変えない隔離広告6ケース |
@@ -39,7 +44,8 @@ Node.js24.22.1以上、pnpm11.25.0。Astro7.4.12、TypeScript、Markdown、静�
 
 | 場所 | 責務 |
 | --- | --- |
-| specs/012-distinctive-product-selection/ | 最新仕様・設計・タスク・検証 |
+| specs/013-complete-imagery-international-seo/ | 最新の全件画像・海外SEO仕様、設計、タスク、検証 |
+| specs/012-distinctive-product-selection/ | 継承する商品固有の紹介・比較・追加商品の仕様 |
 | src/data/catalog.json / translations/ja.json | 商品事実/市場価格/priceUnit/広告、日英の表示文 |
 | src/data/purchase-evidence.json / lib/purchase-evidence.ts | 公開商品の現行注文/小売根拠、出典/日付/商品URLと店舗の整合 |
 | src/data/selection-notes.json / ChoiceDetails.astro | 商品固有の違い/選ぶ理由/比較する公開商品ID。価格を再入力しない |
@@ -48,6 +54,7 @@ Node.js24.22.1以上、pnpm11.25.0。Astro7.4.12、TypeScript、Markdown、静�
 | src/data/product-stories.json / content/products | 独自の見出し・装い・商品本文とdecision.bestFor/consider、日英対 |
 | src/data/visits.json / lib/visits.ts | 確認済店舗、公式URL、固定Maps、未確認時の代替 |
 | editorial-images.json / docs/assets.json | AI表示の正本、画像・写真権利と退役台帳 |
+| src/lib/seo.ts / layouts/Base.astro | 正本から作る検索文、canonical、WebPage/パンくず/AI画像の構造化データ |
 | config/region-selection.ts / selection.ts | 観光庁訪問率TOP10と編集上の代表1品。売上順位ではない |
 | docs/research/sources.json | 一次資料・実確認日・支える事実。258件は記録数であり、独立した258サイトの意味ではない |
 | lib/affiliate.ts / market-prices.ts / components | 承認二重ゲート/host/locale、市場と価格の対応 |
@@ -62,6 +69,8 @@ Node.js24.22.1以上、pnpm11.25.0。Astro7.4.12、TypeScript、Markdown、静�
 - [アフィリエイト媒体の参照と独自設計](docs/affiliate-editorial-reference-v12.md)
 - [既存42商品の改稿](docs/editorial-copy-review-v12.md)
 - [今回の追加8品と採否](docs/essential-products-v12.md)
+- [全件画像の計画と一次参照](docs/image-plan-v13.md) / [画像検証](docs/image-verification-v13.md)
+- [海外SEOの一次資料・変更・残確認](docs/international-seo-v13.md)
 - [更新手順](docs/operations.md) / [引継ぎ](docs/handoff.md) / [検証](docs/verification.md)
 
-Contactや本人情報を作らず、申請送信・広告配信・新契約・課金・ドメイン購入を実行していません。プログラム/リンクはすべて未申請。更新時は012とAGENTSを読み、011の購入先の再確認と公開除外の派生更新まで行ってください。012の検証はeditorial-stage、011はquality-stageとして履歴を分けます。
+Contactや本人情報を作らず、申請送信・広告配信・新契約・課金・ドメイン購入を実行していません。プログラム/リンクはすべて未申請。更新時は013とAGENTSを読み、012の固有紹介と011の購入先の再確認・公開除外の派生更新を継承してください。前版の引継ぎ・検証はdocs/archiveのhandoff-v12/verification-v12、012の実測はeditorial-stage、011はquality-stageとして履歴を分けます。

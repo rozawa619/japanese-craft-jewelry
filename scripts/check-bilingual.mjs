@@ -8,11 +8,12 @@ import {mkdir,readFile,writeFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
+import {assertStylingFigure,assertPageStylingFigures} from './image-display-assertions.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
 if(existsSync(resolve(root,'.env')))process.loadEnvFile(resolve(root,'.env'));
 const origin=process.env.CHECK_BASE_URL||'http://127.0.0.1:4321';
-const screenshotPrefix=(process.env.CHECK_SCREENSHOT_PREFIX||'editorial-stage-full').replace(/[^a-zA-Z0-9_-]/g,'-');
+const screenshotPrefix=(process.env.CHECK_SCREENSHOT_PREFIX||'visual-seo-stage-full').replace(/[^a-zA-Z0-9_-]/g,'-');
 const base='/'+(process.env.PUBLIC_BASE_PATH||'').split('/').filter(Boolean).join('/')+((process.env.PUBLIC_BASE_PATH||'').split('/').filter(Boolean).length?'/':'');
 const route=(locale,path='')=>new URL(base+locale+'/'+path,origin).href;
 const catalog=JSON.parse(await readFile(resolve(root,'src/data/catalog.json'),'utf8'));
@@ -173,7 +174,7 @@ try{
      if(kind==='home'){
       for(const figure of await page.locator('figure[data-editorial-asset]').all())assertStylingDisclosure(await figure.locator('figcaption').innerText(),locale);
      }
-     if(['home','objects','regions'].includes(kind))await assertRegionSelection(page,locale,catalog,editorialImages);
+     if(['home','objects','regions'].includes(kind)){await assertRegionSelection(page,locale,catalog,editorialImages);await assertPageStylingFigures(page,locale,editorialImages);}
      if(kind.startsWith('feature')&&editorialImages[featuredByKind[kind].id]){
       const figure=page.locator('figure[data-editorial-asset]').first();
       assert.equal(await figure.count(),1);
@@ -185,6 +186,7 @@ try{
       await image.evaluate(node=>node.decode());
       const intrinsic=await image.evaluate(node=>({width:node.naturalWidth,height:node.naturalHeight}));
       assert.deepEqual(intrinsic,{width:asset.width,height:asset.height});
+      await assertStylingFigure(figure,asset,locale,page.url());
       const peer=locale==='en'?'ja':'en';
       await switchTo(page,peer,path);await switchTo(page,locale,path);
      }
@@ -384,7 +386,7 @@ try{
  report.completedAt=new Date().toISOString();
  report.finalizedAt=report.completedAt;
  report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,pages:report.pages.length,pageVisits:report.pages.length,uniqueRoutes:new Set(report.pages.map(page=>new URL(page.url).pathname)).size,uniqueProductsChecked:new Set(report.pages.flatMap(page=>page.productId?[page.productId]:[])).size,uniqueRegionsChecked:new Set(report.pages.flatMap(page=>page.regionId?[page.regionId]:[])).size,productDetailChecks:report.pages.filter(page=>page.productId).length,regionPageChecks:report.pages.filter(page=>page.regionId).length,axeScreens:report.pages.filter(page=>page.axeViolations!==null).length,axeViolations:report.pages.reduce((sum,page)=>sum+(page.axeViolations?.length||0),0),screenshots:report.screenshots.length,pageErrors:report.pageErrors.length,consoleErrors:report.consoleErrors.length};
- await writeFile(resolve(root,process.env.CHECK_REPORT_PATH||'docs/editorial-stage-full-browser-results.json'),JSON.stringify(report,null,2)+'\n');
+ await writeFile(resolve(root,process.env.CHECK_REPORT_PATH||'docs/visual-seo-stage-full-browser-results.json'),JSON.stringify(report,null,2)+'\n');
  console.log(JSON.stringify(report.summary));
  if(report.failures.length)process.exitCode=1;
 }

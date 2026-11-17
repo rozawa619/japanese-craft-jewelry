@@ -1,0 +1,163 @@
+# 0.12 最終検証（2026-11-17）
+
+012は既存42点の日英紹介/本文の改稿と新8点追加。50公開/14地域/24技法/258出典/23店舗、通販41点と営業小売＋現行カタログ9点。25AIが27品、文字preview23品。全50点の写真許諾は未取得として台帳へ記録。ブログ/Contact/販売決済/広告タグなし。
+
+型87files0/0/0、単体92/92、264HTML/14130href-src/1949anchor/1016通常0広告/601実行CSP hash/248JSON/旧journal14、退役public10画像除外。コピー差分94/94、UI497/497（300詳細/地域222往復/axe36画面0）、維持全体455/455（420画面訪問/138経路、全50品/14地域、axe402画面0）、価格314/314（全50品300詳細/地域84価格context/axe18画面0）、隔離広告6/6。JS/consoleは各0。
+
+broad後にMie JA一組→一品と見出しのbalance/23px/禁則strictを調整。最終再生成/全生成リンク・CSP、全296ファイル差分、重点20/20（axe8画面0）と新Chrome目視4/4で確認。235HTMLは既知styleメタデータだけ、Mie JA1と地域28は予定の本文/scoped style、CSS1入替。broadをこの後に全走査したと表現しない。
+
+アプリ9da1bfb8f671107debb16293e73eea3d50f0924c、Actions43998680246 success。**最終公開UI497/497**（全50品日英3幅/地域222往復、axe36画面0）、公開補足24/24（正規248URL全200/25画像全200・SHA一致）、公開除外22/22（draft12URLと退役10画像404）、公開最終重点20/20（Mie日英3幅/全14地域JA320、axe8画面0）。公開の最終見た目も別担当が確認。ローカル/公開の掲載入力8ファイルSHA一致。維持455と価格314の全走査はローカルの実測。
+
+外部288URL中279到達。公開商品/店舗の対象81URLは全到達・未解決0。調査資料の制限6/一時エラー2/既知hostroot404が1は販売の確証と混同しない。本文/注文UIによる購入証跡は別の一次記録。
+
+ZIPの確定内容と全件SHA256は隣接delivery/package-verification-0.12.0.json。技術・内容の検証は適法/権利処理/商用ホスト契約適合/SEO流入/売上/AdSense合格を保証しない。ホスト/申請/広告導入の残条件は既存v11監査とhandoffを継承。
+
+---
+
+<!-- v12-verification-history -->
+
+# 0.11 最新検証（2026-11-16開始）
+
+最新仕様011。購入経路を確認した42品、240出典記録、12地域、18公開技法、20店舗、25AI画像/27品と文字preview15品。注文受付33品、現行店舗+カタログ9品。欠品/紹介のみ/現行未確認5品を保留、従来hairpinと合わせ6draft。法務15論点と競合/AdSense/商用公開先の条件は各v11監査へ。
+
+型83files0/0/0、単体90/90、220HTML/11878href-src/1617anchor/858通常0広告/497実行CSP hash/204JSON。退役10画像を個別prune。最終focused437/437、252詳細確認、地域種類往復198、axe36画面0、JS/console/外部要求0。全draft12URL404・220HTML/sitemap残存なし。priority4/4、広告隔離6/6で実catalog/dist不変。詳細011validationとquality-stage各report。
+
+ローカル全体328/328（294画面訪問/96経路、axe270画面0）、価格73/73（国内外9品、詳細60確認、axe18画面0）。公開focused437/437（全42品252表示・地域198往復・axe36画面0）、公開補足24/24（正規204URL全200・25画像全200/SHA一致）、除外22/22（12draft経路と退役10画像404）、公開重点4/4。JS/consoleは各検証0。ローカル/公開の入力7ファイルもSHA一致。328項目の全体検証はローカルの実測であり、公開で全328項目を再実行したという意味ではない。
+
+外部263URL中254到達。公開商品の公式/注文先・店舗の対象70URLは全200。アクセス制限6/一時的サーバーエラー2/既知hostroot404が1は調査資料側に残り、到達だけで販売/権利/承認を判断しない。全ソースZIPは隣接deliveryのpackage-verification-0.11.0.jsonを参照。GitHubPages商用適合/移行、AdSense受理/所有確認/同意/審査は未完了。技術PASSを適法/権利処理/契約適合/AdSense合格へ読み替えない。
+
+---
+
+# 0.10 検証履歴（2026-11-16）
+
+仕様010が最新。日英の主表示を国内通販参考価格へ統一し、9商品の海外ストア実価格と購入先は別枠。原価格・確認日・通常URL・未申請状態を保持。国内実店舗の価格/在庫や独自為替換算は含めない。
+
+型71filesで0 errors/warnings/hints、62/62単体、132出典・30商品/13店舗の参照PASS。最終build170HTML、8662 href/src、1177anchor、618通常/0広告、373実行JS CSP hash、154JSON、14旧移動。技術公開readinessもPASS。
+
+最終価格browser79/79、66商品詳細照合、日英1440/390/320、18画面の全ルールaxe0、JS/console0。全体browser256/256、222ページ確認・198画面の全ルールaxe0、31screenshots、JS/console0。価格目視12/12、hero再確認6/6、共通header再確認12/12。隔離広告6/6、実catalog/dist不変、承認時56/1/14、fallback各0広告。初回検出の可視名/landmark/一覧開示を修正した経緯は010validationとinitial-resultsに保持。
+
+公開アプリ9b15f21、Actions43871283478 success（2026-11-16T12:58:32Z）。公開価格79/79・18全ルールaxe0、公開目視12/12、補足20/20、正規154URL全200・メタ/CSP確認、28画像全200・SHA一致、JS/console0。公開256全走査は今回行っておらず、全体256はローカル実測。詳細はmarket-stageの最終report、010validation、deployment-results。申請・承認・AdSense導入・検索流入・売上は未確認。
+
+---
+
+# 0.9 検証履歴（2026-11-16）
+
+仕様009が最新。30商品/12都道府県/13技法/28画像、公式URL全30、13店舗/25商品と5商品の公式案内。65files型0/0/0、51/51、170HTML・8524 href/src・1117anchor・600通常0広告・373実行CSP hash・154JSON、14旧移動。退役7画像のdist除外PASS。
+
+ローカル全体256/256・222画面・axe0・JS/console0、産地85/85（全60クリック往復・axe18画面0）、広告隔離5/5（36/14/0/0/0 sponsored、rootdist/catalog不変）。画像見切れ/英語地名の修正後focus19/19・18画面axe0、36行cropを目視確認。配信の確定結果は009validation・destination-stage結果・deployment-resultsで確認。
+
+外部134URL:200が130、404/410なし。既存原典2件は一時停止、Skimlinks2件は403検証画面。新規公式商品/店舗/統計は全200。申請合格/検索流入/売上を保証しない。
+
+---
+
+# 0.8 最新検証（2026-11-16）
+
+仕様008が最新。全16商品へ公式URLを明示し、公式情報で確認した8店舗を15商品へ案内、CHECOS1商品は公式取扱店通販fallback。GoogleMapsは公式書式の外部search/directionsのみ、地図/画像/レビュー転載やiframeなし。年齢目安20代後半〜30代前半、現行13画像/15商品。
+
+最終source: Astro59files0/0/0、51/51単体、16訪問mapping/8store・88sources・20台帳assets(現行+履歴)・ENJA本文・schema/参照PASS。102HTML/4607内部参照/89anchor/332通常0広告/209実行JS CSP/86JSON/14旧移動/正規sitemap86URL。
+
+公開172/172・138画面（axe114画面0）・JS/console0、補足18/18、86正規全200、13画像SHA一致、GoogleMaps新規タブ2/2。local172/172、広告5/5、重点16/16。2026-11-16 20:28:06 JSTに全worker終了を確認。アプリ配信ec31b791、Actions43856899272 success。詳細はvisit-stage-*と008validationを優先。007のlocal166/166・132画面＋公開補足18/18は履歴で、132公開全走査は008でまとめる。
+
+法律/利用方法の根拠と限界はvisit-publication-review.mdとresearch/visit-publication-legal-v8.json。全ての法律・契約・国を含む適法保証、申請/承認/成果発生、検索掲載/流入増加は確認していない。
+
+---
+
+# 0.7 最新検証（2026-11-16）
+
+最新仕様はspecs/007-balanced-jewelry-discovery/。006以前の記録はその版の履歴。ユーザー最新指示に従いAI注記は短縮、30代前後、非木商品と日英導線を拡張。
+
+最終source検査: Astro54files0errors/warnings/hints、単体46/46（localeの広告流用防止/JP価格出典/USD50.40保持を含む）。16公開商品・ENJAペア・59出典・現行13画像/15商品、旧3画像はpublic外archive。102HTML・4365内部参照・89anchor・332通常0広告・209実行JS CSP hash・86JSON・14旧移動、正規sitemap86URL。
+
+画面/隔離広告/最終補足/公開の確定件数はdiscovery-stage-*の各reportと007validationを優先。過去clear-stageの成功を今回のものへ読み替えない。検索掲載・SearchConsole操作・実アクセス増加・成果報酬・申請/承認を検証済みとはしていない。
+
+---
+
+# 0.6 最新検証（2026-11-16）
+
+最新仕様は specs/006-clear-craft-selection/。現行の判定は clear-stage-browser-results.json、clear-stage-final-detail-results.json、clear-stage-ad-build-results.json、clear-stage-hosted-results.json と deployment-results.json。以下の過去記録はその版の履歴で、Contact等の古い公開要件は006へ読み替える。
+
+ローカル: Astro 51files 0 errors/warnings/hints、単体42/42、公開10商品・日英ペア・出典43件・AI画像7点（9商品へ対応）を検証。最終buildは70HTML、2542内部参照、57アンカー、212通常リンク/0広告、132実行JSのCSP hash、54 JSON/JSON-LD、旧journal14固定移動を確認。正規sitemap54URL。
+
+ブラウザ: 日英×1440/390/320、96画面、123/123、axe/JS/console問題0。Contact日英404/ナビ・sitemap不在、素材/複合/0件/解除、言語query/hash、登録画像、CTA順・追従条件。仕様補足を正確にする最終修正後はfinal-detail reportで日英390/320の12/12を追加検証済み。axeの対象は72画面。
+
+広告: 5/5の隔離fixture。承認時34/22 sponsored、停止・欠落・未許可hostは0。root dist/実catalogは検査中不変。後続の修正はwhatToCheckの素材補足と重量不明の表示のみで、広告resolver/リンク/開示/CTA設定は変えていない。承認・広告URLはテストコピーだけで、実データは全not_applied。
+
+新商品の一次情報はBECOSの同一SKU英日ページと実画面で確認。重さ10g/8gは片耳・一組基準が不明なのでper-ear値はnull。6.KILNの裏面切替と金色部分のケアは素材詳細内へ残す。公式商品写真は内部視認のみ。
+
+実公開はcommit5abfec8、Actions43847763433 success。公開123/123・96画面（axe72画面0）、補足13/13、正規54URL全200、画像7点のSHA一致、公開CSP130実行JS/54JSONを確認し、2026-11-16 19:24:48 JSTに確定。申請送信・提携承認・成果計測・実機全機種検査・安全保証はしていない。
+
+---
+
+# 検証記録
+
+実施日：2026-11-16（日本時間）。最終の機械可読結果は `browser-results.json`、`ad-build-results.json`、`research/link-check.json`。公開先の状態は `deployment-results.json` が作成された場合は同ファイルを優先。
+
+| 要件 | 実装 | 確認 |
+|---|---|---|
+| FR-001/002/007 | catalog、商品/ガイド/産地/技法Markdown、出典34件、権利台帳 | Zod、ID・出典・本文参照をvalidateで検証。製造地未確認/欠品/税不明を保持 |
+| FR-003/004 | affiliate.ts、RetailerLink、Disclosure | 状態別単体テスト、隔離した実ビルドの広告/関連商品/停止/URL欠落/publicモード。詳細ad-build-results |
+| FR-005 | 商品一覧4軸 | ブラウザで複合・解除・0件・未知値除外・URL復元 |
+| FR-006/009 | 公開27HTML、404、robots、sitemap | 生成物の全内部href/src・アンカー・下書き・noindex・canonicalをcheck-builtで検証 |
+| FR-008 | CSS、detailsメニュー、skip link | PC1440/スマホ390/320、axe、キーボード、長い商品名、画像なし |
+| FR-010 | Contact/Privacy、設定 | 実在repoのIssues有効をGitHub公式APIで確認。個人名・メールなし。問い合わせの投稿送信はしていない |
+| FR-011/012 | 正規化比較表、独自文、design.md | 選定理由・不明点・価格/出典データの重複入力防止。参照記事のコピー無し |
+| FR-013 | pnpm-lock、scripts、CI、README/AGENTS/operations | pnpm install/check/test/build/verify、外部GET、ローカルpreview |
+
+## 実行
+- `pnpm install`：成功。Node 24.22.1、pnpm11.25.0、Astro7.4.12、TypeScript5.9.3、Zod4.6.7。lockfile固定。
+- `pnpm verify`：型、参照、単体テスト、本番ビルド、内部リンク検査。29/29テスト、27HTML、1100 href/srcと26アンカー、87通常リンクでPASS。
+- `node scripts/check-browser.mjs`：新規headless Chrome、ユーザー既存ブラウザやプロファイルは不使用。画面と機能の最終件数はJSON。
+- `node scripts/check-ad-build.mjs`：現物カタログ・root distを変更しないfixture限定。架空広告URL/承認はテストコピー内のみ。
+- `node scripts/check-external.mjs`：36URL中33件HTTP200、1件503、2件403。全商品・募集・申込先は200。503/403を閉鎖とは判定しない。
+- `pnpm readiness`：初期previewで意図どおり非0。実URL・公開モード・運営表示の3不足を検出。repoによるContactは設定済み。
+
+## 画面
+`artifacts/desktop-home.png`、`desktop-objects.png`、`mobile-home.png`、`mobile-product.png`を取得し目視。ソース納品とは別のscreenshotsフォルダにも複製する。
+
+## 発見して修正した点
+- 関連商品だけ広告化した場合も開示が対象に含まれるようにした。
+- 広告開示方針ページではページ内リンクの関係とサイト全体の状態を区別。
+- 404のnoindexページにcanonical/OG URL/Article等を生成しない。
+- 神奈川固定のカード表示をマスタ参照へ変更。
+- 産地/技法の本文を個別コードからMarkdown＋共通テンプレートへ。空/下書き/商品なしを除外。
+- 未実見の資料を「本文確認済み」と表示しない。
+- コマンドの環境依存テレメトリ書込を起動ラッパーで停止。
+
+## 計測の限界
+axeは自動検査の範囲。スクリーンリーダー全製品・実機全端末・本番地域別速度・Lighthouse・Core Web Vitalsは未計測。ローカルnavigation timingを本番スコアへ換算しない。海外国別チェックアウト・注文・決済・メール到達・アフィリエイト計測/報酬は未実施。公開と提携申請/承認/売上は別。
+
+## 最終の確定結果
+
+ブラウザ41/41（21画面）、axe0、JavaScript例外0。地域/技法の本文・実リンク検査4/4。広告隔離ビルド4/4、関連16/地域6/停止0 sponsored、publicサブパス1125 href/srcでPASS。欠品2件は欠品表示、下書き商品とguideは非公開。詳細JSONに時刻と環境を保存。
+
+## GitHub実公開の確認
+
+https://rozawa619.github.io/ito-craft/en/ — HTTP200、noindex。Actions run 43821352419がsuccess（commit6973e2e）。GitHub側でもpnpm verifyが通過。hosted18/18、8画面、内部30URL、404/CSS/JS/Contact/フィルター/robots/sitemapを確認。最終JPYと税区分は390/320幅でHTTP200、はみ出しなし。
+
+## 0.2 ジュエリー特化・日英・全国の入口（2026-11-16）
+
+仕様: specs/002-jewelry-bilingual。公開8ジュエリー、両言語52HTML。型0/0/0、33テスト、2102href/src・51アンカー・158通常リンクPASS。日本語19本文と表示データ、全国の産地一覧、同ページquery/hashを保つ単一切替。記事内Markdown表をスマホ内の横スクロールにし、キーボードfocus/aria-labelも付与。広告4fixtureで両言語の開示/停止/publicを確認。画面最終結果はbilingual-results.json、公開結果はdeployment-results.json。初期版の記録は履歴として上に保持。
+
+0.2公開後実測：Actions43825536502 success、9e0b590を配信。2026-11-16 07:44 UTC、公開先/ito-craft/で73/73、48画面、axe0/JS例外0/console error0。右上の日英切替、商品/記事往復、query/hash保持、全国入口、ジュエリー8件、hairpin404、CSS/JSとpreview noindexを確認。詳細はbilingual-hosted-results.json。
+
+## 0.3 名称/安全性/耳飾り特集
+
+仕様003。public新baseで型0/0/0、41単体、56HTML・2410 href/src・55アンカー・162通常/0広告PASS。新日英2紹介・AI着用2画像を含む60画面85/85、axe/JS/console0。最終CSSで単一商品カードをスマホ全幅に修正し再確認。広告5fixturePASS、既知脆弱性audit0。実測はsearch-security-browser-results/ad-build-results/dependency-audit-results。GitHubrename同ID維持、Issues/脆弱性通知/非公開報告enabled。配信先の実検証は公開後のdeployment-resultsへ記録。
+
+0.3公開最終：Actions43830341510 success（c096c6e）。SORA反映後85/85・60画面、追加10/10、axe/JS/console0。sitemap54URL全200、両言語SORA、新Issues、HTTPS301→HTTPS200、AI画像2点200、CSP executable script hash一致。hostedreport内に時刻/詳細を保存。root robots404はプロジェクトhostingの制約として観察記録し、プロジェクトrobotsと各HTML indexを別に確認。Search Console/検索掲載・順位/流入/成果は未確認。
+
+## 0.4 商品セレクト
+
+仕様004。商品主役のトップ/分類と2商品への紹介統合。verify型0/0/0・41単体・56HTML・1803href/src・43アンカー・140通常/0広告・14noindex固定移動PASS。localbrowser81/81（54画面、axe/JS/console0）、広告5/5の実測はselection-browser-results/selection-ad-build-results。検索対象のsitemapは40URL、旧journal14URLは移動用で本文なし。公開先の確定結果は配信後deployment-resultsへ記録。
+
+0.4公開：Actions43834269993 success（e287010）。公開81/81・54画面、補足11/11。正規40URL全200、商品主体/ブログ導線なし/Articleなし、固定移動14、CSP/画像/SORA/Contact/404を実測確認。証跡は最終selection-hosted-results.jsonにSHA付きで保存。公開先での実購入・広告成果・検索流入は未検証。
+
+## 0.5 魅力から購入先へ進む商品紹介
+
+仕様005。3公式ページの情報順序を参照し独自の見出し/装い/選定理由を追加。主CTA→下部closed details、mobile追従は主CTA通過後のみ/フッター隠し。共有事実・価格・未知値・広告は不変（product-copy-integrity-results）。型0/0/0・42単体・56HTML・1819内部参照・43アンカー・172通常/0広告・14旧移動PASS。localbrowser81/81（日英54画面、axe/JS/console0）、最終カード6/6、広告5/5。最新ローカル結果はappeal-browser-results/appeal-ad-build-results。公開確認は配信後にdeploymentへ記録。
+
+0.5公開確定：be3d316、Actions43839206515 success。公開81/81・54画面、補足10/10、axe/JS/console0。40正規URL全200、14旧移動、4closed panels/価格CTA優先、追従CTA、SORA/画像/Contact、CSP98script整合。最終report: appeal-hosted-results.json。過去7reportはSHA不変。
+
+## 0.9 公開最終確認
+
+2026-11-16T12:21:19.903Z UTC記録。最終app e74cab62b76071867fd9ebd6991aebcbea05ae2b、Actions 43865116261 success。公開全体256/256・222画面、axe0、JS/console0。公開地域85/85・実クリック往復60、目視5/5、補足20/20、正規URL154全200/メタ確認、現行画像28全200/SHA一致。入口faviconのhost-root404をサブパス内SVG指定で修正・公開再確認済み。詳細はdestination-stage-hosted-*とentry-favicon-fix、deployment-results。

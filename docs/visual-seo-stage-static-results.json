@@ -1,0 +1,50 @@
+{
+  "version": "0.13.0",
+  "recordedAt": "2026-11-17T02:46:44.892Z",
+  "command": "pnpm verify",
+  "status": "passed",
+  "typeFiles": 95,
+  "errors": 0,
+  "warnings": 0,
+  "hints": 0,
+  "unitTests": {
+    "total": 102,
+    "passed": 102,
+    "failed": 0
+  },
+  "build": {
+    "htmlPages": 264,
+    "hrefSrcReferences": 14744,
+    "anchors": 1949,
+    "ordinaryRetailerLinks": 1016,
+    "sponsoredLinks": 0,
+    "executableInlineCspHashes": 601,
+    "inertJsonBlocks": 248,
+    "legacyReadingRedirects": 14,
+    "retiredImagesPruned": 10,
+    "outputFiles": 320
+  },
+  "images": {
+    "checks": 49,
+    "passed": 49,
+    "failed": 0,
+    "publishedProducts": 50,
+    "registeredProducts": 50,
+    "uniqueImages": 48,
+    "baselineFilesPreserved": 25,
+    "retiredFilesExcluded": 10,
+    "totalImageBytes": 4160080,
+    "warnings": 0
+  },
+  "log": "artifacts/visual-seo-stage-final-verify.log (local, omitted from source ZIP)",
+  "visualPolish": {
+    "reason": "Manual review found a cropped face in an old portrait card. All50 registry entries now preserveRatio=true. Existing25 image bytes and published50 products unchanged.",
+    "prePolishReports": [
+      "docs/visual-seo-stage-pre-polish-browser-results.json",
+      "docs/visual-seo-stage-pre-polish-image-browser-results.json"
+    ],
+    "earlierBroadRun": "An earlier full bilingual run was stopped for this visual polish; no success is claimed for that incomplete run.",
+    "finalBuild": true
+  },
+  "limits": "Local source/data/tests/static output, image metadata/bytes and internal links. Google indexing, ranking, traffic, merchant checkout, legal/contract eligibility and AdSense approval are not verified."
+}

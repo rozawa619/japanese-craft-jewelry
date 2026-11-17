@@ -1,7 +1,7 @@
 # 次のAIへの開始手順
 
 1. `README.md`、`docs/handoff.md`、`docs/constitution.md` を読み、現在の公開・申請状態を確認する。
-2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/012-distinctive-product-selection/` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
+2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/013-complete-imagery-international-seo/` で該当要件と受入条件を確認する。012の商品固有の紹介・比較も継承し、変更目的と影響範囲を先に記録する。
 3. `src/lib/schema.ts`、`src/data/catalog.json`、`src/lib/affiliate.ts`、`src/content.config.ts` を読み、既存の分離を維持する。
 4. 変更後はリスクに応じた検証を実行し、仕様・タスク・変更履歴・引継ぎを実態に合わせて更新する。公開や提携承認を推測しない。
 
@@ -77,3 +77,13 @@ Node.js 24.22.1以上、pnpm 11.25.0。初回は `pnpm install --frozen-lockfile
 最新は012とeditorial-stage。The Good Trade/Who What Wear/mybest等の実読記録はaffiliate-editorial-reference-v12。一般的な購買支援の構造だけを参照し、表現・レビュー・試験や人気実績を移植しない。storyは日英のheadline/standfirst/highlights3件/outfitに加えdecision.bestFor/considerが必須。実際の使い心地を作らず、その品を選ぶ好みと比較上の取捨選択を固有の言葉で説明する。
 
 SelectionDecisionはheroの直後。ChoiceDetailsは実在の公開候補の固有見出しとchooseForを参照し、素材/サイズ/価格は正本から読む。カードのeditorialSummaryも商品ごとに更新。pnpm check:copyは011固定コピーとの差分と完全一致の重複を検査する補助で、意味の独自性や真偽を自動認定しない。新商品は011の購入gate/公式/店舗fallbackを維持し、旧キャッシュや別金具の注文受付を流用しない。価格矛盾・対象variant欠品・営業停止は採否を調査記録に残す。
+
+## 0.13 全商品画像と海外検索
+
+最新仕様は013。012の『今回は新画像なし』より今回の追加依頼を優先し、公開50商品の全件に登録AIイメージを必要とする。旧25ファイル/27品はbytesを変えずに保持し、新23ファイルを加えた計48ファイルが対象。画像なしの新商品は公開前に生成・実見・台帳登録を揃え、OfficialPreviewだけで画像必須gateを迂回しない。正本はsrc/data/editorial-images.json、docs/assets.json、生成・採用記録。商品事実や実物写真の権利と混ぜない。
+
+新23人は27〜33歳の架空成人モデル、日本7/米国8/英国8、cute11/elegant12の制作設定。見た目から国籍を推定せず、国籍を人種の固定記号にしない。ほくろ/シミなしの希望を継承。captionはAIイメージ/AI image、日英altは実際に見える装身具とAI性を簡潔に説明する。新23ファイルにはIPTC XMPのDigitalSourceType=`http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia`を埋め、変換・配信後の保持を確認する。旧25へ遡及埋込みしたとは扱わず、実ファイル・SHA・元比率とcropの検証を分ける。
+
+src/lib/seo.tsとBaseは正本から検索文・canonical・WebPage/BreadcrumbList/AI ImageObjectを生成する。Offer/レビュー/星・架空ライセンス・検索量/順位を作らない。Schema.orgのAI列挙値とファイル内IPTCは別の表現で、片方だけで両方完了とはしない。JA/ENと同ページ/query/hash切替、本番origin/base、通常/広告resolverは維持。英米用の重複ページやブログは作らない。
+
+検索の一次資料と残確認はdocs/international-seo-v13.md、画像の参照方針と検証はimage-plan-v13/image-verification-v13。最終本番生成物に`node scripts/check-international-seo.mjs`を実行し、通常のverify/PCスマホ/リンク/広告/公開検証と合わせて記録する。検索の実掲載・米英流入・順位はSearch Consoleで別に確認し、site:の不検出を未indexの証明としない。検証数・公開commit/Actions・完了は最終のverification/deployment-resultsを確認し、途中の予定値を成功実績にしない。

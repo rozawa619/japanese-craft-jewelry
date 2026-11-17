@@ -20,6 +20,8 @@ import {marketPricesFor} from '../../../lib/market-prices';
 import {contentFor,contentSlug} from '../../../lib/content';
 import {locales,t} from '../../../lib/i18n';
 import {pagePath} from '../../../config/site';
+import {productSearchMetadata} from '../../../lib/seo';
+import {site} from '../../../config/site';
 export function getStaticPaths(){return locales.flatMap(locale=>productsFor(locale).map(product=>({params:{lang:locale,slug:product.slug},props:{product,locale}})))}
 const {product:p,locale}=Astro.props;
 const catalog=catalogFor(locale),products=productsFor(locale),story=storyFor(p.id,locale);
@@ -33,6 +35,8 @@ const craftNotes=(await contentFor('craftNotes',locale)).filter(note=>p.craftIds
 const earJewelry=p.productType.some(type=>['pierced-earrings','clip-on-earrings','ear-cuff'].includes(type));
 const specs=[[t(locale,'Type','種類'),labels('productTypes',p.productType,locale)],[t(locale,'Materials','素材'),labels('materials',p.materialIds,locale)],[t(locale,'Size','サイズ'),p.size||t(locale,'Not listed in the official information','公式情報に記載なし')],[t(locale,'Weight','重さ'),p.weightPerPieceGrams===null?(earJewelry?t(locale,'Per-ear weight not confirmed','片耳の重さは未確認'):t(locale,'Weight not confirmed','重さは未確認')):p.weightPerPieceGrams+(earJewelry?t(locale,' g per piece','g（片側）'):t(locale,' g','g'))],[t(locale,'Hardware','金具素材'),p.findings||t(locale,'Not listed in the official information','公式情報に記載なし')],[t(locale,'Fastening','留め方'),p.fastening||t(locale,'Not listed in the official information','公式情報に記載なし')]].filter(([label])=>earJewelry||p.weightPerPieceGrams!==null||label!==t(locale,'Weight','重さ'));
 const image=productImageFor(p.id);
+const search=productSearchMetadata(p,locale,labels('crafts',p.craftIds,locale));
+const searchBreadcrumbs=site.url?[{name:t(locale,'The selection','商品セレクト'),url:new URL(href('objects/'),site.url).href},{name:p.title,url:new URL(href('objects/'+p.slug+'/'),site.url).href}]:undefined;
 const candidates=products.filter(v=>v.id!==p.id&&v.availability!=='out_of_stock');
 const related:typeof candidates=[];
 const seenMaterials=new Set(p.materialIds);
@@ -46,7 +50,7 @@ const catalogLink=merchant.id==='hamamatsuya';
 const destinationLabel=p.availability==='out_of_stock'?t(locale,'Japan official listing','日本向けの商品情報へ'):catalogLink?t(locale,'View Japan maker catalog','工房の公式カタログへ'):t(locale,'View Japan listing','日本向け公式ページへ');
 const destinationNote=t(locale,'Opens the official website in a new tab.','公式サイトが新しいタブで開きます。');
 ---
-<Base title={p.title} description={p.editorialSummary} locale={locale} socialImage={image||false}>
+<Base title={search.title} description={search.description} locale={locale} socialImage={image||false} breadcrumbs={searchBreadcrumbs} subjectName={p.title}>
 <div class="wrap product-shopping-page" data-product-page>
  <div class="breadcrumbs purchase-breadcrumbs"><a href={href('objects/')}>{t(locale,'The selection','商品セレクト')}</a><span>/</span><span>{p.title}</span></div>
  <section class="purchase-hero" data-product-intro>

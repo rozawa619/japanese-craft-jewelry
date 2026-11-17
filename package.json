@@ -1,6 +1,6 @@
 {
   "name": "japanese-craft-jewelry",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@11.25.0",
@@ -13,7 +13,7 @@
     "test": "node --experimental-strip-types --test tests/*.test.ts",
     "build": "node --experimental-strip-types scripts/validate.ts && node --experimental-strip-types scripts/validate-visits.ts && node --experimental-strip-types scripts/validate-selection.ts && node scripts/astro.mjs build && node scripts/prune-retired-images.mjs",
     "preview": "node scripts/astro.mjs preview --host 127.0.0.1",
-    "verify": "pnpm check && pnpm test && pnpm build && node scripts/check-built.mjs",
+    "verify": "pnpm check && pnpm test && pnpm build && node scripts/check-built.mjs && pnpm check:images",
     "readiness": "node --experimental-strip-types scripts/readiness.ts",
     "check:links": "node scripts/check-external.mjs",
     "check:browser": "node scripts/check-bilingual.mjs",
@@ -21,7 +21,9 @@
     "package": "node scripts/package-source.mjs",
     "check:prices": "node scripts/check-market-prices.mjs",
     "check:quality": "node scripts/check-quality-expansion.mjs",
-    "check:copy": "node scripts/check-editorial-copy.mjs"
+    "check:copy": "node scripts/check-editorial-copy.mjs",
+    "check:images": "node --experimental-strip-types scripts/check-editorial-images.mjs --dist",
+    "check:seo": "node scripts/check-international-seo.mjs"
   },
   "dependencies": {
     "astro": "7.4.12",

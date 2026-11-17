@@ -1,0 +1,71 @@
+{
+  "version": "0.13.0",
+  "checkedAt": "2026-11-17",
+  "scope": "Primary-source international SEO review and implementation for a bilingual editorial Japanese craft jewelry selection. Technical readiness is separate from crawl, index and traffic measurements.",
+  "site": "https://rozawa619.github.io/japanese-craft-jewelry/",
+  "baseline": {
+    "publishedProducts": 50,
+    "localizedPaths": ["en", "ja"],
+    "alreadyPresent": ["Translated page body on separate stable URLs", "Reciprocal self/alternate en and ja hreflang with English x-default", "Self canonical and query-free sitemap URLs", "Public crawl settings and a sitemap excluding drafts, Contact and retired journal pages", "Same-page language switch preserving query/hash", "Source-based product, region and craft pages"],
+    "gapsAddressed": ["English home and selection primary headings described the theme abstractly", "Product descriptions did not consistently add the verified craft/search context to distinctive product copy", "Structured data did not describe visible product breadcrumbs or distinguish AI page imagery", "Open Graph image alt used a generic site-level description"]
+  },
+  "publicSearchObservation": {
+    "method": "Read-only public search tool; engine, country and personalisation not specified; not Google Search Console or a controlled US/UK SERP measurement.",
+    "queries": ["site:rozawa619.github.io/japanese-craft-jewelry/ \"Japanese\"", "\"rozawa619.github.io/japanese-craft-jewelry\"", "site:rozawa619.github.io/japanese-craft-jewelry/", "\"rozawa619.github.io/japanese-craft-jewelry\" \"Japanese Craft Jewelry\""],
+    "result": "No matching site page obtained in the tool responses for these observations.",
+    "limitation": "site: results are not exhaustive. This does not establish that Google has not indexed the site.",
+    "searchConsoleInspected": false,
+    "ownershipVerifiedInThisTask": false,
+    "indexStatus": "unverified",
+    "unmeasured": ["US and UK query demand", "Search ranking", "Google-selected canonical", "Impressions", "Clicks", "Country traffic", "Image Search visibility"]
+  },
+  "implementation": {
+    "stableUrlsAndBrand": true,
+    "englishAudience": "Generic en serves English readers, including US and UK. Jewelry in brand/headings and jewellery in explanatory copy. No duplicate en-US/en-GB routes or search-volume claims.",
+    "searchIntent": ["Japanese craft jewelry / jewellery", "Earrings and clip-ons", "Ear cuffs, rings and necklaces", "Verified material and craft names", "Existing nonempty maker and regional selections", "Japan reference prices and official shop information"],
+    "productMetadata": "Generated from the canonical localized product title and distinctive editorial summary plus canonical localized craft labels; no duplicate product-fact store.",
+    "canonical": "Same public HTTPS origin and current base, query and fragment removed; cross-origin destinations rejected.",
+    "structuredData": ["WebPage", "Thing as editorial subject", "Visible BreadcrumbList", "ImageObject for the page's displayed image only"],
+    "excludedClaims": ["Product rich-result eligibility", "Offer or live inventory", "Hands-on Review", "AggregateRating", "Invented copyright, license or photographer", "Indexed status", "SEO ranking or AdSense approval guarantee"],
+    "aiImage": {
+      "visibleCaption": {"ja": "AIイメージ", "en": "AI image"},
+      "jsonLdDigitalSourceType": "https://schema.org/TrainedAlgorithmicMediaDigitalSource",
+      "iptcDigitalSourceTypeForFileMetadata": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "distinction": "JSON-LD and visible captions do not prove IPTC/XMP is embedded or retained. See the integrated image-file and deployment verification records. No Google image annotation guarantee. Merchant Center requirements are not claimed as general editorial-site eligibility."
+    },
+    "publicRobots": "index, follow, max-image-preview:large",
+    "previewRobots": "noindex, nofollow"
+  },
+  "localVerification": {
+    "unitCommand": "node --experimental-strip-types --test tests/seo.test.ts",
+    "unitTestsPassed": 4,
+    "unitScope": ["Safe same-origin canonical preserving base", "AI editorial image and breadcrumbs with no fabricated offers/reviews", "Invalid or unrelated image and breadcrumb rejection", "Localized summary, dotted brand name and script-safe JSON serialization"],
+    "astroCommand": "node scripts/astro.mjs check",
+    "astro": {"files": 92, "errors": 0, "warnings": 0, "hints": 0, "log": "artifacts/seo-v13-astro-check.log"},
+    "allPublishedMetadata": {"en": {"products": 50, "nonempty": 50, "uniqueDescriptions": 50, "descriptionLengthRange": [176, 238]}, "ja": {"products": 50, "nonempty": 50, "uniqueDescriptions": 50, "descriptionLengthRange": [86, 120]}},
+    "diffWhitespaceCheck": "passed",
+    "builtChecker": {"command": "node scripts/check-international-seo.mjs", "reportDefault": "artifacts/international-seo-v13-built.json", "distEnvironment": "CHECK_DIST_DIR", "reportEnvironment": "SEO_REPORT_PATH", "syntaxCheck": "passed", "execution": "Deferred to the integrated final public build after all image registry entries and generated assets are complete.", "scope": ["Canonical/sitemap sets", "Reciprocal hreflang and localized metadata", "All 100 published localized product pages", "Visible breadcrumb and AI image metadata/caption/alt", "No fabricated offers/reviews/ratings", "Public robots and utility noindex isolation"]},
+    "limitations": "These are SEO-local checks before integrated imagery/release validation. The final 013 reports record build, browser, mobile, links, affiliate-switch and deployed-asset checks. Google Rich Results Test and owner Search Console were not used."
+  },
+  "ownerNextSteps": ["Resolve the previously documented commercial-host and AdSense ownership/connection questions separately from technical SEO.", "Verify the real production URL property in Search Console using account-issued values only.", "Submit the canonical sitemap and inspect representative English home/product/region URLs, selected canonical and image access.", "Use actual impressions/clicks and query/page/country reports, including US and UK, to guide useful editorial changes.", "For a production origin/base migration, verify redirects, canonical, reciprocal hreflang, sitemap and image URLs together."],
+  "notPerformed": ["Account creation", "Search Console ownership or indexing submission", "Ads or affiliate application", "New tracking tags", "DNS/domain changes", "Fake reviews or sales offers", "New blog articles"],
+  "sources": [
+    {"id": "localized-versions", "url": "https://developers.google.com/search/docs/specialty/international/localized-versions", "checkedAt": "2026-11-17", "supports": "Reciprocal fully-qualified self and alternate hreflang; generic English alternatives; translated body and accessible language navigation; HTML hreflang is sufficient without duplicating the same annotation in sitemap."},
+    {"id": "title-link", "url": "https://developers.google.com/search/docs/appearance/title-link", "checkedAt": "2026-11-17", "supports": "Descriptive concise titles, avoiding stuffing; titles are not constrained to a fixed character count and may be rewritten/truncated."},
+    {"id": "snippet", "url": "https://developers.google.com/search/docs/appearance/snippet", "checkedAt": "2026-11-17", "supports": "Distinct useful descriptions; Google may select body text; no fixed meta description length guarantees visible snippets."},
+    {"id": "google-images", "url": "https://developers.google.com/search/docs/appearance/google-images", "checkedAt": "2026-11-17", "supports": "Crawlable standard img, descriptive contextual alt and text, supported WebP, representative page images, and large preview permission."},
+    {"id": "image-license-metadata", "url": "https://developers.google.com/search/docs/appearance/structured-data/image-license-metadata", "checkedAt": "2026-11-17", "supports": "IPTC DigitalSourceType options for synthetic media; image metadata and licensing properties have distinct meanings; supplied metadata does not guarantee a Search annotation."},
+    {"id": "gen-ai-content", "url": "https://developers.google.com/search/docs/fundamentals/using-gen-ai-content", "checkedAt": "2026-11-17", "supports": "AI content should be reviewed for quality, accuracy and useful metadata; Merchant Center has specific AI image file metadata requirements distinct from ordinary editorial pages."},
+    {"id": "schema-digital-source-property", "url": "https://schema.org/digitalSourceType", "checkedAt": "2026-11-17", "supports": "ImageObject provenance property uses IPTCDigitalSourceEnumeration."},
+    {"id": "schema-ai-enum", "url": "https://schema.org/TrainedAlgorithmicMediaDigitalSource", "checkedAt": "2026-11-17", "supports": "Canonical Schema.org enumeration member for trained algorithmic media, corresponding to the IPTC vocabulary; observed Schema.org V30.1."},
+    {"id": "iptc-ai-concept", "url": "https://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia", "checkedAt": "2026-11-17", "supports": "The readable concept page uses HTTPS while its explicit Concept ID (URI), used for XMP DigitalSourceType, is http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia."},
+    {"id": "product-snippet", "url": "https://developers.google.com/search/docs/appearance/structured-data/product-snippet", "checkedAt": "2026-11-17", "supports": "Product snippet required properties include name and at least one of review, aggregateRating or offers; an editorial page must not invent these to force eligibility."},
+    {"id": "sd-policies", "url": "https://developers.google.com/search/docs/appearance/structured-data/sd-policies", "checkedAt": "2026-11-17", "supports": "Markup and image representations must reflect visible relevant accurate page content; valid syntax alone does not guarantee rich-result display."},
+    {"id": "breadcrumb", "url": "https://developers.google.com/search/docs/appearance/structured-data/breadcrumb", "checkedAt": "2026-11-17", "supports": "BreadcrumbList describes navigable page hierarchy using ordered named items and URLs."},
+    {"id": "canonical", "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls", "checkedAt": "2026-11-17", "supports": "Canonical URLs consolidate signals for duplicate or similar states; signals do not guarantee Google's canonical selection."},
+    {"id": "site-operator", "url": "https://developers.google.com/search/docs/monitor-debug/search-operators/all-search-site", "checkedAt": "2026-11-17", "supports": "site: queries are not exhaustive; their absence cannot establish a page's index status."},
+    {"id": "how-search-works", "url": "https://developers.google.com/search/docs/fundamentals/how-search-works", "checkedAt": "2026-11-17", "supports": "Crawling, indexing and serving are distinct stages and none is guaranteed by following technical guidelines."},
+    {"id": "sitemap", "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap", "checkedAt": "2026-11-17", "supports": "List absolute canonical URLs; only accurate significant update dates should be supplied; sitemap availability/submission does not guarantee indexing."},
+    {"id": "search-console", "url": "https://developers.google.com/search/docs/monitor-debug/search-console-start", "checkedAt": "2026-11-17", "supports": "Owner verification, URL inspection, sitemap and indexing reports, and query/page/country performance are appropriate tools for actual Search visibility measurements."}
+  ]
+}

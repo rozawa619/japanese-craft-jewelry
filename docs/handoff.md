@@ -1,49 +1,45 @@
-# 引継ぎ — 0.12 商品固有の選ぶ理由と8商品の追加
+# 引継ぎ — 0.13 全商品画像と海外検索
 
-更新日2026-11-17。AGENTS → constitution → specs/012-distinctive-product-selection/ → 本書 → operationsを読む。前版はarchive/handoff-v11.mdとarchive/deployment-results-v11.json。実配信の成否・アプリcommit・Actionsは最新deployment-resultsを優先し、過去の成功を流用しない。
+更新日2026-11-17。AGENTS → constitution → specs/013-complete-imagery-international-seo/ → 本書 → operationsを読む。前版の引継ぎ・検証・公開結果はdocs/archiveのv12へ保存した。実配信・検証・納品の確定値は最新deployment-results.jsonと各reportを優先する。
 
-## 今回の変更
+## 変更と現在の内容
 
-SORAの日英工芸ジュエリーセレクト。The Good Trade / Who What Wear / マイベスト等の実ページから一般的な選択支援の構造を参照し、既存42商品の見出し・冒頭・本文・カード・選択メモを日英で改稿。白シャツ/ニットの一般論から、その品の素材・形・モチーフと比較時の取捨選択へ変えた。新8点の本文も日英各2段落に整えた。
+SORAの日英工芸ジュエリーセレクト。公開商品50/全56、14地域、24公開技法、258商品調査の出典記録、23店舗は0.12から継承。商品・価格・広告・公開採否は今回変更していない。通販注文受付41品、営業中小売＋現行価格付きカタログ9品という前回の確認を、今回の画像生成やHTTP応答で再認定しない。将来の在庫・店頭の個別在庫・注文成立は保証しない。
 
-ProductStoryはheadline/standfirst/highlights3件/outfitに加え、decision.bestFor/considerが日英で必須。SelectionDecisionはhero直後に表示する。ChoiceDetailsは実掲載候補の固有見出しとchooseForを先に出し、種類/素材/寸法/価格を正本から参照する。人気順位・星・未試着の感想を作らない。カードは『選んだ理由を見る』から詳細へ進む。
+不足23品へbuilt-in image_genでオリジナルAIスタイリング画像を追加。旧25ファイル/27商品を保持し、計48ファイルで公開50商品すべてをカバー。日英altを各画像の見える特徴に変更。新23は27–33歳の架空成人モデル設定で日本7/米国8/英国8、かわいい系11/上品な系統12。国籍を画像から推定せず、商品検索フィルター等には使わない。写真や有名人の複製ではない。
 
-能作2、水引1、友禅1、久留米絣1、SIRI SIRI七宝/銀糸2、伊勢志摩アコヤ1の8点を追加。現在50公開/全56商品、14地域、24公開技法、258出典記録。25AI画像が27品、23品は文字previewと公式実物へのリンク。今回画像生成・写真転載なし。全国一覧の前方に新しい素材/技法を混ぜ、木だけが続く順序を減らした。
+公式写真は22件を内部で実見。Nanaoのみ公式画像403で未実見のため、公式本文で確認した小さな丸形・色の概念像に限定。全画像は実物の完全再現・着用実績・仕様の証拠ではない。実物確認用の公式URLを維持し、公開captionはAIイメージ/AI imageだけ。商品写真の許諾50件は未取得のままで、AI生成を写真使用許諾に置き換えない。
 
-## 購入経路と価格
+新23は1536×1024 WebPに圧縮。旧画像も含む全50商品のpreserveRatioをtrueに揃え、全枠で元画像の顔・耳・手首・ネックレスを保持する。新23WebPにIPTC XMP DigitalSourceTypeのtrainedAlgorithmicMediaを明記。これは署名付きC2PA証明でもライセンス宣言でもない。未加工の元PNGは隣接delivery/generated-originals/0.13.0に23点保存し、元hashと実際に使った全promptをdocs/image-generation-v13.jsonへ記録。
 
-購入証跡はpublished50と一致。41品は注文受付、9品は営業中小売＋現行価格付きカタログ。23店舗を43品へ案内し、7品は公式通販/店舗案内へのfallback。店頭の個別商品在庫、将来の受付・注文成立は保証しない。
+英語トップと商品一覧の見出し・導入、商品固有のdescription、WebPage/BreadcrumbList/AI ImageObjectを更新。一般的な英語enを米英で共用し、jewelry/jewelleryを自然な説明で用いる。相互hreflang・canonical・sitemap・noindex境界を保持。Offer/Review/評価を作らない。Googleへの実掲載・順位・米英流入・Search Console所有権は未確認で、HTML検証と区別する。
 
-正茂の孔雀はイヤリングvariantだけを採用し、欠品中ピアスに受付を流用しない。アコヤはfresh Chromeで現行商品/一覧とも税込22000を確認、readerの古い20000不採用。こよりみはMOCADの確認済み対象品で、別サイト/別仕様/外貨価格を流用しない。貝パールと養殖アコヤは別素材。合皮を裏材と決めつけず、ヱガホを無樹脂と宣言せず、SIRIの銀糸を籐/無垢金と扱わない。
+## 正本と編集入口
 
-富山/三重は実商品と非空の地域本文を追加。SIRIは東京発ブランドと全国の職人を区別し、全工程東京製としない。ヱガホは久留米絣の素材が分かっても工房所在地未確認なのでprefectureIds空。丸山4品も製造地を神奈川と推定せず地域小売枠。都道府県所属の合計が全商品数に一致しなくても正しい。
+| 場所 | 役割 |
+| --- | --- |
+| src/data/catalog.json・translations/ja.json | 仕様・国内外の実価格・公式URL・広告の正本。独自FX換算なし |
+| product-stories・商品Markdown・selection-notes | 日英の固有紹介・選ぶ理由・公開候補間の違い。未試着の感想を作らない |
+| purchase-evidence・visits・sources | 注文/営業小売根拠・確認日・店舗と固定Maps。現行の根拠を再確認して更新 |
+| src/data/editorial-images.json・docs/assets.json | styling画像の対応・寸法・alt・権利/退役履歴。実物写真と分離 |
+| docs/image-generation-v13.json | 実prompt・架空モデル設定・元PNG/公開WebPのhashと確認限界 |
+| docs/research/image-briefs-v13.json・image-plan-v13.md | 23品の公式参照・形や色・写真が見られなかった範囲 |
+| scripts/prepare-styling-image.mjs | 元PNGを変更せずWebP化しAI XMPを付与。既存出力への上書きは拒否 |
+| src/lib/seo.ts・Base.astro | 共有メタ情報、正規化、日英対応、実表示画像の構造化データ |
+| docs/international-seo-v13.md・research同名JSON | Google/Schema/IPTC一次調査17件、SEOの実装とSearch Consoleで残る作業 |
 
-箔一はfresh503の公式停止表示で保留。こよりみSTORESの別品は403を閉店/欠品とせず保留、松井真珠/長崎べっ甲等も調査限界を記録。COCOON2/明示欠品18K/畠山2、従来hairpinはdraft維持。復帰は現行購入の再確認と派生参照更新が必要。
-
-## 正本と調査記録
-
-- catalog/ja：商品事実・価格・表示文。priceUnitは根拠がある場合だけ。日本向け実価格を両言語の主表示、海外実価格は別枠、FX換算なし。
-- product-stories/商品MD：独自の見出し・冒頭・装い・decision・本文。sourceのない性能/着心地/レビューを作らない。
-- selection-notes：商品固有の違い・chooseFor・公開比較ID。価格/URLは複製しない。
-- purchase-evidence/visits/sources：現行注文または小売根拠・公式URL・確認日・店舗/固定Maps。HTTP200やvalidatorだけで在庫確認済みとしない。
-- affiliate-editorial-reference-v12、editorial-copy-review-v12、essential-products-v12とresearchの同名JSON：一次観察、採否、編集の限界。
-- existing-summary-patch/new-editorial-entriesは実装時の提案履歴。統合時の表現修正はeditorial-integration-v12。更新時の別正本にしない。
-- editorial-baseline-v11は比較用の固定コピー。check:copyは実改稿と完全一致重複の補助検査で、意味上の独自性・事実・売上を証明しない。
+新商品は日英本文/画像/alt/出典・購入根拠を揃えてから公開する。pnpm verifyは全件画像の欠落も拒否。画像がない候補を公開する運用へ変える場合、013仕様・validator・UI fallbackの目的と検証を一緒に見直す。
 
 ## 維持する条件
 
-ブログ/Contact/販売決済/独自計測広告タグなし。右上の1言語ボタンで同じページ/query/hashを維持。広告はプログラム/商品リンク両方の承認、許可host完全一致、HTTPS/date/localeが揃う場合だけ切替。今回は全not_applied/通常リンクで、申請/承認/広告送信は行っていない。
+ブログ・Contact・販売/決済・計測広告タグなし。operatorはSORA。右上の言語ボタンで同じページ/query/hashを保持。広告はprogramと商品link両方の承認・完全一致の許可host・HTTPS/date/localeが揃う時だけ切替。現物はすべてnot_applied/通常リンク、申請・承認や広告配信を実行していない。
 
-法務15論点の011監査と商用ホスト/AdSense残条件を継承。GitHub Pagesの用途制限について適合確認または適切な配信先の選択が未解決。移行準備はあるが契約/課金/ドメイン/DNS/配信移転は未実施。AdSenseの登録URL/root配信/所有確認/本人情報/Privacy/CMP/CSPも未完了。商品数・技術PASSを適法/許諾/契約適合/合格に読み替えない。
+COCOON2/欠品18K/現行販売未確認の畠山2/従来hairpinはdraft維持。復帰時は現行購入を再調査し、本文/比較/画像/地域/sitemapの参照を一緒に更新。退役public10画像はbuild/exportで個別除外する。
 
-## 検証と納品
+011の法務/AdSense/商用ホスト点検を継承。GitHub Pagesの商用用途適合または配信先選択、AdSense実ホスト登録/所有確認、導入時Privacy/同意/CSPは未解決。今回のSEOや商品数、技術PASSで解決したと判断しない。新契約・課金・ドメイン/DNS・公開先移転は行っていない。
 
-今回の型/単体/生成物/日英全商品/全地域/価格/広告/外部/公開はeditorial-stage各reportと012validationへ分けて記録する。quality-stageは011、market-stageは010の履歴。維持用コマンドはREADMEとoperations。実際の完了件数・時刻は機械可読reportとdeployment-resultsを参照。
+## 検証・納品
 
-全ソースは隣接japanese-craft-jewelry-delivery/sourceとZIPへ書出す。必要設定/CI/lock/仕様/出典/全ソース/最終検証/25公開画像を含め、.git/.env/認証/node_modules/dist/artifacts/無許諾の内部参照写真/退役public10画像を除外する。最終のZIPファイル集合・全件SHA256・版・除外・必須ファイルは同所package-verification-0.12.0.jsonを証跡とし、ZIPの自己hash参照は避ける。
+最新の全体結果はdocs/visual-seo-stage-*、013/validation、deployment-results.json。editorial-stageは012の履歴。pnpm verify、pnpm check:seo、pnpm readiness、日英PC/スマホの画像・導線、隔離広告6ケースを対象とする。Googleアカウントの管理画面による登録/流入検証は別途必要。
 
-<!-- v12-final-verification -->
-
-最終確定：アプリ9da1bfb、Actions43998680246 success。ローカル92単体/コピー94/UI497/維持455/価格314/広告6/最終20/目視4、公開UI497/補足24/除外22/最終20が成功。公開正規248URL/25画像全200、画像SHA一致。全最終QA/補助workerを正常終了で回収済み。broad後の小調整と全296生成物の差分はfinal-build-deltaに分け、最終公開UIで全50点を確認した。
-
-最終書出しは577ファイル/全件SHA256一致、公開50点の日英decisionと25画像を確認。完了文書を含むZIPも同じ照合を実施し、最終SHAは外部package-verification-0.12.0.jsonに保存する。
+全ソースは隣接japanese-craft-jewelry-delivery/sourceとjapanese-craft-jewelry-source.zip。CI/lock/設定例/全ソース/仕様/調査/最終report/公開48画像を含む。.git/.env/認証/node_modules/dist/artifacts/無許諾の内部参照写真/退役public10画像は除外。元PNGはgenerated-originals/0.13.0へ分けて保存。最終版・ファイル集合・全ファイルSHA256は同所package-verification-0.13.0.json。ZIP自身のhashはZIP外で保管する。

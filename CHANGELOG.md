@@ -1,5 +1,11 @@
 # 更新履歴
 
+## 0.13.0 — 2026-11-17
+- 不足23品へAIスタイリング画像を追加し、公開50商品すべてを48画像でカバー。旧25画像のbytesを保持し、全画像を元比率表示へ統一。
+- 新規は27–33歳の架空成人モデル設定で日本7/米国8/英国8、かわいい系/上品な系統を混在。日英alt、実prompt、元PNG、出典・権利台帳、WebPのAI XMPを記録。
+- 英語の検索意図を伝えるトップ/商品一覧と固有descriptionを改善。日英canonical/hreflang/sitemap、WebPage/BreadcrumbList/AI ImageObjectを検証。検索掲載・順位・米英流入は未確認。
+- 画像の全件gateと本番SEO gateをCIへ追加。検証/公開/納品の確定値は013validation、visual-seo-stage各report、deployment-resultsを参照。
+
 ## 0.12.0 — 2026-11-17
 - The Good Trade/Who What Wear/mybest等の実ページを参照し、既存42点の日英紹介と本文を商品固有の内容へ改稿。全50点にdecisionと、固有の見出し/理由から読む比較を用意。
 - 能作の錫、水引、友禅、久留米絣、SIRI SIRI七宝/銀糸、伊勢志摩アコヤ真珠の8点を追加。50公開商品/14地域/24技法/258出典/23店舗、注文受付41点と小売カタログ9点。

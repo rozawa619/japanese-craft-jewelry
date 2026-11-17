@@ -9,3 +9,8 @@ const {image,locale,compact=false,priority=false}=Astro.props;
   <img src={path(image.path)} alt={image.alt[locale]} width={image.width} height={image.height} loading={priority?'eager':'lazy'} decoding="async" fetchpriority={priority?'high':'auto'}/>
   <figcaption>{t(locale,'AI image','AIイメージ')}</figcaption>
 </figure>
+<style>
+ /* Full-frame styling compositions must keep the face and the selected ear,
+    neckline, wrist or hand visible in every parent layout. */
+ .editorial-image[data-preserve-ratio] img{aspect-ratio:auto!important;object-fit:contain!important;object-position:center!important}
+</style>

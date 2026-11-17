@@ -24,7 +24,7 @@ const check=async(name,action)=>{try{const detail=await action();report.checks.p
 const attrs=text=>Object.fromEntries([...text.matchAll(/([^\s=/>]+)(?:\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'=<>`]+)))?/g)].map(m=>[m[1].toLowerCase(),m[2]??m[3]??m[4]??'']));
 const digest=buffer=>createHash('sha256').update(buffer).digest('hex');
 try{
- await check('All canonical sitemap URLs return current indexed content with executable CSP hashes',async()=>{
+ await check('All canonical sitemap URLs return current indexable metadata with executable CSP hashes',async()=>{
   const response=await page.request.get(origin+base+'sitemap.xml');assert.equal(response.status(),200);
   const xml=await response.text(),locations=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
   assert.ok(locations.length>0);assert.equal(new Set(locations).size,locations.length);
@@ -38,12 +38,22 @@ try{
     const response=await page.request.get(location);assert.equal(response.status(),200,location);
     const html=await response.text();
     const metas=[...html.matchAll(/<meta\b((?:"[^"]*"|'[^']*'|[^'">])*)>/gi)].map(m=>attrs(m[1]));
-    const robots=metas.find(m=>m.name==='robots')?.content;assert.equal(robots,'index, follow');
+    const robots=metas.find(m=>m.name==='robots')?.content;assert.equal(robots,'index, follow, max-image-preview:large');
+    const relativePath=new URL(location).pathname.slice(base.length);
+    const localHtml=await readFile(resolve(root,'dist',relativePath,'index.html'),'utf8');
+    const localMetas=[...localHtml.matchAll(/<meta\b((?:"[^"]*"|'[^']*'|[^'">])*)>/gi)].map(m=>attrs(m[1]));
+    assert.equal(html.match(/<title>([\s\S]*?)<\/title>/i)?.[1],localHtml.match(/<title>([\s\S]*?)<\/title>/i)?.[1],'Published title differs: '+location);
+    for(const name of ['description','robots'])assert.equal(metas.find(m=>m.name===name)?.content,localMetas.find(m=>m.name===name)?.content,location+' '+name);
+    for(const property of ['og:title','og:description','og:image','og:image:alt'])assert.equal(metas.find(m=>m.property===property)?.content,localMetas.find(m=>m.property===property)?.content,location+' '+property);
+    const jsonData=source=>[...source.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi)].map(m=>JSON.parse(m[1]));
+    assert.deepEqual(jsonData(html),jsonData(localHtml),'Published structured data differs: '+location);
     assert.ok(html.includes('rel="canonical" href="'+location+'"'));
     assert.equal(/"@type"\s*:\s*"Article"/.test(html),false);
     assert.equal(/data-sponsored="true"/.test(html),false);
     assert.equal(/href="[^"#]*\/(?:en|ja)\/contact\//.test(html),false);
     const links=[...html.matchAll(/<link\b((?:"[^"]*"|'[^']*'|[^'">])*)>/gi)].map(m=>attrs(m[1]));
+    const localLinks=[...localHtml.matchAll(/<link\b((?:"[^"]*"|'[^']*'|[^'">])*)>/gi)].map(m=>attrs(m[1]));
+    for(const lang of ['en','ja','x-default'])assert.equal(links.find(link=>link.hreflang===lang)?.href,localLinks.find(link=>link.hreflang===lang)?.href,location+' '+lang);
     const english=location.replace('/ja/','/en/');assert.ok(links.some(link=>link.hreflang==='x-default'&&link.href===english),'Missing matching English x-default');
     const locale=location.includes('/ja/')?'ja':'en';
     for(const caption of [...html.matchAll(/<figure\b[^>]*data-editorial-asset[^>]*>([\s\S]*?)<\/figure>/gi)].map(match=>match[1].match(/<figcaption[^>]*>([\s\S]*?)<\/figcaption>/i)?.[1].replace(/<[^>]+>/g,'').trim()))assert.equal(caption,locale==='ja'?'AIイメージ':'AI image');
@@ -57,7 +67,7 @@ try{
      if(attributes.src)assert.equal(new URL(attributes.src,location).origin,origin);
      else if(script[2].trim()){assert.ok(csp.includes("'sha256-"+createHash('sha256').update(script[2]).digest('base64')+"'"),location+' inline JS hash');scriptHashes++;}
     }
-    return {url:location,status:response.status(),robots,scriptHashes,jsonBlocks};
+    return {url:location,status:response.status(),robots,scriptHashes,jsonBlocks,searchMetadataMatchesLocal:true};
    }));
    for(const result of settled){assert.equal(result.status,'fulfilled',result.reason?.stack||String(result.reason));report.pages.push(result.value)}
   }
@@ -115,5 +125,5 @@ try{
  await check('No hosted CSP/client/console errors during supplemental navigation',()=>{assert.deepEqual(report.pageErrors,[]);assert.deepEqual(report.consoleErrors,[])});
 }finally{
  await browser.close();report.completedAt=new Date().toISOString();report.finalizedAt=report.completedAt;report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,canonicalUrls:report.pages.length,uniqueImages:report.assets.length,pageErrors:report.pageErrors.length,consoleErrors:report.consoleErrors.length};
- await writeFile(resolve(root,process.env.CHECK_HOSTED_REPORT_PATH||'docs/editorial-stage-hosted-supplement-results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report.summary));if(report.failures.length)process.exitCode=1;
+ await writeFile(resolve(root,process.env.CHECK_HOSTED_REPORT_PATH||'docs/visual-seo-stage-hosted-supplement-results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report.summary));if(report.failures.length)process.exitCode=1;
 }

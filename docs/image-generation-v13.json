@@ -1,0 +1,1027 @@
+{
+  "version": "0.13.0",
+  "checkedAt": "2026-11-17",
+  "mode": "Built-in image_gen; no API-key or CLI fallback",
+  "scope": "23 missing published-product styling images. Unaltered generator PNGs are kept separately in the delivery. WebP changes format/compression and adds AI-source metadata only.",
+  "modelSettingsAreFictionalNotNationalityInference": true,
+  "newModelSettings": {
+    "Japanese": 7,
+    "American": 8,
+    "British": 8,
+    "cute": 11,
+    "elegant": 12,
+    "ageRange": [
+      27,
+      33
+    ]
+  },
+  "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+  "metadataReferences": [
+    "https://sharp.pixelplumbing.com/api-output/#withxmp",
+    "https://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia"
+  ],
+  "signedC2paClaim": false,
+  "conversion": "node scripts/prepare-styling-image.mjs input.png output.webp; quality84, effort6, original1536×1024; no crop or semantic edit",
+  "images": [
+    {
+      "productId": "hario-little-tears-clip-on-earrings",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape 3:2 editorial AI styling illustration for a Japanese craft jewellery selection website, approximately 1536x1024. Create one completely fictional adult Japanese woman age 28 with a cute, approachable expression and a warm small smile, clear even skin without moles or dark spots, natural adult facial features, a dark-brown bob tucked behind her visible ear. A close three-quarter portrait from head to upper chest, in a pale blue blouse, soft ivory studio backdrop and warm daylight, subtly illustrative fashion editorial finish consistent with a calm premium magazine. Her visible ear has a fine gold-colored clip-on fitting and a slender gold-colored chain about 45mm long holding tiny clear glass teardrop shapes, each very small about 6mm; the clear glass shapes threaded along the chain are the focal jewellery detail, not blue gemstones or large crystals. Keep ear and entire earring fully visible, hair away from the ornament. This is an original styling concept inspired by small lampworked glass drops, not a photograph or accurate retail-product reproduction and not evidence of a real wearer. Keep the face, neckline and ornament within the middle 70% of the frame so the image can be displayed uncropped on mobile. No text, watermark, brand logo, other jewellery, collage, border, extra ears or hands, childlike face, celebrity likeness or copied retailer-photo composition.",
+      "model": {
+        "fictionalNationality": "Japanese",
+        "style": "cute",
+        "age": 28
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:10:23.565Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-968274f7-2757-4fe5-b840-367386cd5e2c.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/hario-little-tears-clip-on-earrings-v13.png",
+      "originalSha256": "2ee0a511da802465fdebf3e3d3513166a81ad3b0dc6e4bbee4e99560637f0f4e",
+      "assetId": "ai-hario-little-tears-clip-on-earrings-styling-v13",
+      "publicPath": "public/images/hario-little-tears-clip-on-earrings-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 102226,
+      "sha256": "5ec4e851cb2dda751cdf58285bed72f26716b3508b632e9cd66cd35ee9f390ab",
+      "alt": {
+        "en": "AI styling image: a woman in a pale blue blouse with slender gold-colored chains and clear glass drops.",
+        "ja": "AIイメージ：淡いブルーのブラウスに細い金色のチェーンと透明なしずくを合わせた女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://shop.hariocorp.co.jp/products/haw-lt-003e",
+      "sourceIds": [
+        "hario-netshop-product-v11",
+        "hario-lwf-product-v11",
+        "hario-lwf-about-v11",
+        "hario-kodenmacho-v11"
+      ],
+      "referenceRead": {
+        "officialBody": "fresh-Chrome-official-product-body-read-2026-11-17",
+        "officialVisual": "fresh-Chrome-official-product-gallery-visually-reviewed-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "sirisiri-page-blue-enamel-pierced-earrings",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult Japanese woman, clearly 31 years old, with straight black bob with a clean side part, poised kind eyes. A beautiful, elegant and refined adult fashion mood. close three-quarter face and ear portrait. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: White architectural blouse, warm pale-gray backdrop. Accessory: A compact curled-page silver-colored earring motif about19.5×16.25mm, pale blue translucent enamel over subtle stamped silver pattern. Gently folded rectangular page-like form, no added gemstone or wire-cloisonne lattice unless in the official image. Soft natural daylight, warm restrained editorial palette, polished naturalistic editorial fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "Japanese",
+        "style": "elegant",
+        "age": 31,
+        "description": "straight black bob with a clean side part, poised kind eyes"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:12:42.901Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-317c19c2-74bc-4e1e-8bed-ecbbc062af4f.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/sirisiri-page-blue-enamel-pierced-earrings-v13.png",
+      "originalSha256": "8d0f6a14c657a31ed0d94b8e04fa0c5a312a864a79c1692844d1dd0495b2bf70",
+      "assetId": "ai-sirisiri-page-blue-enamel-pierced-earrings-styling-v13",
+      "publicPath": "public/images/sirisiri-page-blue-enamel-pierced-earrings-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 66118,
+      "sha256": "065ba9ae15adaeeb51f5136c2c681f8a7f972f9502d4036430a799a92ef3e7cc",
+      "alt": {
+        "en": "AI styling image: a woman in a white shirt with small pale-blue folded-square ear ornaments.",
+        "ja": "AIイメージ：白いシャツに淡いブルーの小さな四角の耳飾りを合わせた女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://sirisiri.jp/products/shippo-earrings-page-blue",
+      "sourceIds": [
+        "sirisiri-page-blue-v12",
+        "sirisiri-maker-v12",
+        "sirisiri-akasaka-store-v12"
+      ],
+      "referenceRead": {
+        "officialBody": "fresh-Chrome-official-product-body-read-2026-11-17",
+        "officialVisual": "fresh-Chrome-official-product-gallery-visually-reviewed-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "mie-akoya-oh002-stud-earrings",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult British woman, clearly 30 years old, with Black British woman with deep-brown skin and neat natural short curls, friendly soft smile. A charming, cute and approachable adult fashion mood. close three-quarter face and ear portrait, small pearl visible. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: Pale cream shirt with neat collar, gentle warm-gray background. Accessory: A simple round white-pink Akoya-pearl stud about7–7.5mm against the earlobe, with a discreet warm gold-colored fitting. No diamond halo, dangling chain or decorative surround. Soft natural daylight, warm restrained editorial palette, polished naturalistic editorial fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "British",
+        "style": "cute",
+        "age": 30,
+        "description": "Black British woman with deep-brown skin and neat natural short curls, friendly soft smile"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:13:12.608Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-b1d3a5a3-2f5e-4e72-817c-842f9b9b3673.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/mie-akoya-oh002-stud-earrings-v13.png",
+      "originalSha256": "7da88c69fcaa33936489ed826c5b7bd979af47b037ab6b08cf1bad6fbb8aacac",
+      "assetId": "ai-mie-akoya-oh002-stud-earrings-styling-v13",
+      "publicPath": "public/images/mie-akoya-oh002-stud-earrings-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 74812,
+      "sha256": "cea788d11e959fc75426165c80be10ef984db54c91a39636ac1483b73f11eb73",
+      "alt": {
+        "en": "AI styling image: a woman with short curls wearing a white shirt and small pale pearl-like studs.",
+        "ja": "AIイメージ：短いカールヘアと白いシャツに淡色の小さなパール風スタッドを合わせた女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://shop.mie-pearl.net/product/akoya-pearl-stud-earrings-oh-002",
+      "sourceIds": [
+        "mie-akoya-oh002-current-v12",
+        "mie-pearl-union-current-v12",
+        "mie-akoya-shop-list-current-v12"
+      ],
+      "referenceRead": {
+        "officialBody": "fresh-Chrome-official-product-body-read-2026-11-17",
+        "officialVisual": "fresh-Chrome-official-product-gallery-visually-reviewed-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "sangetsu-irodori-tombodama-necklace",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult British woman, clearly 31 years old, with light olive skin, shoulder-length chestnut waves, poised gentle expression. A beautiful, elegant and refined adult fashion mood. face, neck and upper chest with the complete bead and enough cord visible. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: Soft gray open-neck knit, warm natural backdrop. Accessory: One rounded slightly flattened deep burgundy-red patterned glass bead around18mm threaded on a plain fine black cord. Small pale, yellow and green petal-like flecks decorate the bead; keep it a single bead with a visible central threading hole, no gemstone setting and no metal chain. Soft natural daylight, warm restrained editorial palette, polished naturalistic editorial fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "British",
+        "style": "elegant",
+        "age": 31,
+        "description": "light olive skin, shoulder-length chestnut waves, poised gentle expression"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:15:11.489Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-bc2a0fbb-b34a-45fb-bff1-b8a73fccf14d.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/sangetsu-irodori-tombodama-necklace-v13.png",
+      "originalSha256": "8c19e04727b19852a1f783d91bdba4923099c2827e9a3275e63c5de259376e3c",
+      "assetId": "ai-sangetsu-irodori-tombodama-necklace-styling-v13",
+      "publicPath": "public/images/sangetsu-irodori-tombodama-necklace-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 121252,
+      "sha256": "4f82d9b93bb728f36ec897f1224e4f8c312291ea82545958ce6e16ce9333ac95",
+      "alt": {
+        "en": "AI styling image: a woman in a gray knit top with a burgundy glass-bead pendant on a black cord.",
+        "ja": "AIイメージ：グレーのニットに黒いひもの深紅のガラス玉ペンダントを合わせた女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://sangetsu.myshopify.com/products/puti-kinaka",
+      "sourceIds": [
+        "sangetsu-irodori-necklace-v11",
+        "sangetsu-maker-access-v11",
+        "sangetsu-storefront-identity-v11"
+      ],
+      "referenceRead": {
+        "officialBody": "fresh-Chrome-body-read-2026-11-17",
+        "officialVisual": "fresh-Chrome-official-product-gallery-visually-reviewed-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "sangetsu-irodori-tombodama-earrings",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult American woman, clearly 28 years old, with medium-brown skin, a soft dark curly bob, lively warm expression. A charming, cute and approachable adult fashion mood. face and visible ear, head-and-shoulders three-quarter portrait. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: Cream cotton blouse, warm ivory studio. Accessory: A small transparent deep burgundy-red round glass bead around8mm hanging from a simple curved silver-colored hook. Fine irregular pale white, yellow-gold and dark speckled lines are scattered within the bead. No large painted flower, faceted gemstone, tassel or oversized bead. Soft natural daylight, warm restrained editorial palette, polished naturalistic editorial fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "American",
+        "style": "cute",
+        "age": 28,
+        "description": "medium-brown skin, a soft dark curly bob, lively warm expression"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:15:26.605Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-49fd3d00-d27d-48cd-a771-2049de39062e.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/sangetsu-irodori-tombodama-earrings-v13.png",
+      "originalSha256": "d9cdfb8605bda21f233a70fa536014c0776297ba50520856506fa69ad84dfa0e",
+      "assetId": "ai-sangetsu-irodori-tombodama-earrings-styling-v13",
+      "publicPath": "public/images/sangetsu-irodori-tombodama-earrings-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 116154,
+      "sha256": "f9fd73a6861226a5fc7c23392e536e41d32f3642eb46d85ac4b13b08bc79926d",
+      "alt": {
+        "en": "AI styling image: a smiling woman in an ivory blouse with small burgundy glass-bead drops.",
+        "ja": "AIイメージ：アイボリーのブラウスに小さな深紅のガラス玉の耳飾りを合わせて微笑む女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://sangetsu.myshopify.com/products/piasu-kinaka",
+      "sourceIds": [
+        "sangetsu-irodori-pierced-v11",
+        "sangetsu-maker-access-v11",
+        "sangetsu-storefront-identity-v11"
+      ],
+      "referenceRead": {
+        "officialBody": "fresh-Chrome-body-read-2026-11-17",
+        "officialVisual": "fresh-Chrome-official-product-gallery-visually-reviewed-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "simprich-reversible-topaz-ruby-chain-ring",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult American woman, clearly 31 years old, with Black American woman with warm brown skin and short natural curls, relaxed poised expression. A beautiful, elegant and refined adult fashion mood. face and one relaxed hand raised naturally near collar, ring visible without extreme macro. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: White tailored shirt, warm neutral studio. Accessory: A delicate white-gold-colored chain ring with a tiny approximately5mm square/diamond reversible top. Show just the upward clear-white face: four tiny white-topaz stones grouped like four petals, not one large clear stone. The four-ruby reverse is hidden, not a second adjacent stone or a second top. Soft natural daylight, warm restrained editorial palette, naturalistic fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "American",
+        "style": "elegant",
+        "age": 31,
+        "description": "Black American woman with warm brown skin and short natural curls, relaxed poised expression"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:20:56.700Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-e06b31d2-80d4-4c01-9fd0-d411331f63be.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/simprich-reversible-topaz-ruby-chain-ring-v13.png",
+      "originalSha256": "a8cca0fded60b265707f1c012f96af28522818c084fce9d61289d93be6edf5ac",
+      "assetId": "ai-simprich-reversible-topaz-ruby-chain-ring-styling-v13",
+      "publicPath": "public/images/simprich-reversible-topaz-ruby-chain-ring-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 76414,
+      "sha256": "e0a7c4d84fd1e105ffdafa806fc36ea044227ed56be8a3915ce2eaed1028d296",
+      "alt": {
+        "en": "AI styling image: a woman in a white shirt raising a hand with a tiny four-stone chain ring.",
+        "ja": "AIイメージ：白いシャツ姿で小さな4石のチェーンリングを着けた手を襟元に添える女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://shop.simprich.jp/products/503954",
+      "sourceIds": [
+        "simprich-reversible-chain-ring-v11",
+        "simprich-about-v9"
+      ],
+      "referenceRead": {
+        "officialBody": "fresh-Chrome-official-product-body-read-2026-11-17",
+        "officialVisual": "fresh-Chrome-official-product-gallery-visually-reviewed-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "simprich-reversible-silver-piaring-single",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult British woman, clearly 32 years old, with fair skin, a tidy blonde bob, confident gentle profile. A beautiful, elegant and refined adult fashion mood. face and one visible ear, three-quarter portrait. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: Muted black crew-neck top, soft beige backdrop. Accessory: One single-ear elongated oval/egg-shaped Piaring ornament, approximately19mm tall×14mm wide and2–4mm thick, narrowing at its top and fuller toward the bottom curve. Restrained two-tone gold and silver metallic surface, small hinge/clasp low down. Show one visible ear only; not a pair. Soft natural daylight, warm restrained editorial palette, naturalistic fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "British",
+        "style": "elegant",
+        "age": 32,
+        "description": "fair skin, a tidy blonde bob, confident gentle profile"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:21:14.883Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-484d688e-3f51-460d-9de1-6f181afd3157.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/simprich-reversible-silver-piaring-single-v13.png",
+      "originalSha256": "6b2c3b5a9ea82486523a00f6102b8bdd0ef786180820969ca5a1e9aaa477490a",
+      "assetId": "ai-simprich-reversible-silver-piaring-single-styling-v13",
+      "publicPath": "public/images/simprich-reversible-silver-piaring-single-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 78788,
+      "sha256": "2cc112f4f896896ab0d07574611091ae69f841f03e92f59bc7647747875b7a08",
+      "alt": {
+        "en": "AI styling image: a woman with a blonde bob wearing a black top and a small two-tone oval ear ornament.",
+        "ja": "AIイメージ：金髪のボブと黒いトップスに金銀色の小さな楕円の耳飾りを合わせた女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://shop.simprich.jp/products/pr-e4828",
+      "sourceIds": [
+        "simprich-piaring-single-v11",
+        "simprich-about-v9"
+      ],
+      "referenceRead": {
+        "officialBody": "fresh-Chrome-official-product-body-read-2026-11-17",
+        "officialVisual": "fresh-Chrome-official-product-gallery-visually-reviewed-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "sirisiri-silver-thread-hoop-mini",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult American woman, clearly 29 years old, with Asian American woman with soft brunette waves, bright warm smile. A charming, cute and approachable adult fashion mood. three-quarter portrait with the entire wide earring visible beside the face. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: Simple charcoal sleeveless top, soft ivory backdrop. Accessory: Airy lace-like circular hoops around50mm high×43mm wide, built from fine pale gold-colored silver-and-rayon metallic thread. An open central circle is bordered by linked small scalloped loops, with a wrapped fibrous metallic-thread texture. Not solid heavy gold hoops and not rattan. Soft natural daylight, warm restrained editorial palette, naturalistic fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "American",
+        "style": "cute",
+        "age": 29,
+        "description": "Asian American woman with soft brunette waves, bright warm smile"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:21:33.949Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-d9d3653d-f5c7-400a-859e-42e41cb023bf.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/sirisiri-silver-thread-hoop-mini-v13.png",
+      "originalSha256": "cc36cbf3fabaee8cb7e15c4580d1115ffb95d35656862d4ff0fc5eb12dc49854",
+      "assetId": "ai-sirisiri-silver-thread-hoop-mini-styling-v13",
+      "publicPath": "public/images/sirisiri-silver-thread-hoop-mini-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 98412,
+      "sha256": "afebe507be01310666b87feaa4e96ec1bfecfd083f26d98ecd9a1967e0f42364",
+      "alt": {
+        "en": "AI styling image: a smiling woman in charcoal with a pale gold-colored lace-like hoop ear ornament.",
+        "ja": "AIイメージ：チャコールのトップスに淡い金色のレース風フープを合わせて微笑む女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://sirisiri.jp/products/arabesque-earrings-hoop-sv-mini",
+      "sourceIds": [
+        "sirisiri-silver-thread-hoop-v12",
+        "sirisiri-maker-v12",
+        "sirisiri-akasaka-store-v12"
+      ],
+      "referenceRead": {
+        "officialBody": "fresh-Chrome-official-product-body-read-2026-11-17",
+        "officialVisual": "fresh-Chrome-official-product-gallery-visually-reviewed-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "nousaku-aya-tin-pendant",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult British woman, clearly 33 years old, with olive skin, long dark-brown waves behind shoulders, poised warm expression. A beautiful, elegant and refined adult fashion mood. face to mid torso, whole pendant and lower motif visible with generous crop margins. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: Dark teal plain top, pale stone studio. Accessory: A broad silver-white tin pendant, approximately50×50mm, shaped as a square hung diagonally like a diamond. Straight narrow metal strips alternate vertically and horizontally in a geometric woven-grid arrangement, with open rectangular slots. Fine long silver-colored chain. No organic curled motif or gemstones. Soft natural daylight, warm restrained editorial palette, naturalistic fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "British",
+        "style": "elegant",
+        "age": 33,
+        "description": "olive skin, long dark-brown waves behind shoulders, poised warm expression"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:21:50.464Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-f1b1e028-9271-4acf-b5d6-179becf549b8.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/nousaku-aya-tin-pendant-v13.png",
+      "originalSha256": "9542ced51d27d057caecbd6957cb3e069c01995836a7666e34ab3158d5e88708",
+      "assetId": "ai-nousaku-aya-tin-pendant-styling-v13",
+      "publicPath": "public/images/nousaku-aya-tin-pendant-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 58292,
+      "sha256": "d459f72162d9da40b9e0f9f6251b356eeef87e62f2d2aea4797ff0c2968c683a",
+      "alt": {
+        "en": "AI styling image: a woman in a dark teal top with a silver-colored diamond-shaped grid pendant.",
+        "ja": "AIイメージ：深い青緑のトップスに銀色の菱形格子ペンダントを合わせた女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://www.shopnousaku.com/view/item/000000000199",
+      "sourceIds": [
+        "nousaku-aya-pendant-v12",
+        "nousaku-casting-v12",
+        "nousaku-factory-store-v12"
+      ],
+      "referenceRead": {
+        "officialBody": "fresh-Chrome-official-product-body-read-2026-11-17",
+        "officialVisual": "fresh-Chrome-official-product-gallery-visually-reviewed-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "sghr-tie-tie-glass-earrings",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult Japanese woman, clearly 30 years old, with short glossy dark bob tucked behind one ear, calm graceful expression. A beautiful, elegant and refined adult fashion mood. face and ear, head-and-shoulders three-quarter portrait. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: Navy blouse with clean collar, pale warm-gray background. Accessory: A clear-glass miniature tied-necktie/scarf shape, about8×39mm: a small transverse knot-like top above a long slender gently twisted tail with fine vertical glass ribs and a rounded point. Suspended on a very short fine silver-colored chain from a discreet round ball post. Not a plain cylinder, broad teardrop or gemstone. Soft natural daylight, warm restrained editorial palette, naturalistic fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "Japanese",
+        "style": "elegant",
+        "age": 30,
+        "description": "short glossy dark bob tucked behind one ear, calm graceful expression"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:22:54.377Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-0c03fc71-c465-4a83-a5ec-c5d1be072b9c.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/sghr-tie-tie-glass-earrings-v13.png",
+      "originalSha256": "fa5f52d048c60f18de17b0cdd3a6e8c4e4d7715d0abaf0851d177ccb98f3241d",
+      "assetId": "ai-sghr-tie-tie-glass-earrings-styling-v13",
+      "publicPath": "public/images/sghr-tie-tie-glass-earrings-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 57594,
+      "sha256": "bca904b964fe06e506b4cba591e5d2105d3942ad41fc6e77338405be917b807f",
+      "alt": {
+        "en": "AI styling image: a woman with a dark bob wearing navy and a slender clear ribbed-glass ear drop.",
+        "ja": "AIイメージ：黒いボブとネイビーの服に細長い透明のリブ入りガラスの耳飾りを合わせた女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://shop.sugahara.com/view/item/000000005160",
+      "sourceIds": [
+        "sghr-tietie-pierced-v11",
+        "sghr-kujukuri-workshop-v11"
+      ],
+      "referenceRead": {
+        "officialBody": "official-page-body-read-2026-11-17; web index",
+        "officialVisual": "official-product-gallery-source-photo-visually-reviewed-in-browser-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "nousaku-dahlia-gerbera-clip-on-earrings",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult American woman, clearly 29 years old, with fair skin without freckles, soft red hair swept off the ear, warm charming smile. A charming, cute and approachable adult fashion mood. three-quarter portrait, face and one ear clearly visible. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: Sage-green blouse, soft ivory studio. Accessory: A small uncolored silver-white tin flower ear ornament about9mm across, with densely layered fine dahlia-like modeled petals, on a discreet silver-colored clip-on fitting. One consistent flower style, no colored stone, painted petals or bright gold plating. Soft natural daylight, warm restrained editorial palette, naturalistic fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "American",
+        "style": "cute",
+        "age": 29,
+        "description": "fair skin without freckles, soft red hair swept off the ear, warm charming smile"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:23:26.239Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-f1daeafa-63c0-419d-9d38-dac1b3cc936f.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/nousaku-dahlia-gerbera-clip-on-earrings-v13.png",
+      "originalSha256": "a9557d733c1f3f4c0143fc2c78a7967bb9fee14e2878b00ff7bf5df2002c482a",
+      "assetId": "ai-nousaku-dahlia-gerbera-clip-on-earrings-styling-v13",
+      "publicPath": "public/images/nousaku-dahlia-gerbera-clip-on-earrings-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 100058,
+      "sha256": "540fd4bcd41ca8dbe65924bce79d0f49ccc54ac150ec2df12d202640b9e09bd3",
+      "alt": {
+        "en": "AI styling image: a smiling red-haired woman in sage green with a small silver-colored flower ear ornament.",
+        "ja": "AIイメージ：セージグリーンの服に銀色の小さな花の耳飾りを合わせて微笑む赤毛の女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://www.shopnousaku.com/view/item/000000001085",
+      "sourceIds": [
+        "nousaku-flower-clip-v12",
+        "nousaku-casting-v12",
+        "nousaku-factory-store-v12"
+      ],
+      "referenceRead": {
+        "officialBody": "fresh-Chrome-official-product-body-read-2026-11-17",
+        "officialVisual": "fresh-Chrome-official-product-gallery-visually-reviewed-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "sghr-kolmio-glass-ear-cuff",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult American woman, clearly 32 years old, with fair skin, softly swept-back auburn hair, expressive composed profile. A beautiful, elegant and refined adult fashion mood. close three-quarter portrait with visible ear and cuff. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: Warm beige jacket, subdued gray-green studio. Accessory: One small pale blue-gray translucent glass ear cuff about15.5mm across, formed as a thick rounded triangular open outline. The small gap is in the lower side and both ends are smooth, rounded and curl gently inward. Place it plausibly on the outer ear; no metal stud, dangling chain or gemstone. Soft natural daylight, warm restrained editorial palette, naturalistic fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "American",
+        "style": "elegant",
+        "age": 32,
+        "description": "fair skin, softly swept-back auburn hair, expressive composed profile"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:23:55.389Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-ecbd69f5-6f63-4b71-97e8-c94b54543297.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/sghr-kolmio-glass-ear-cuff-v13.png",
+      "originalSha256": "fb26fa940803abf1008cda1f31b5c5e9b9a9b424b2bcdf6bd89389bf1da9e033",
+      "assetId": "ai-sghr-kolmio-glass-ear-cuff-styling-v13",
+      "publicPath": "public/images/sghr-kolmio-glass-ear-cuff-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 92898,
+      "sha256": "200fe4af089b63fc6288fc739366639fbda67e1bef9b2f5b23cffe95e9c00822",
+      "alt": {
+        "en": "AI styling image: a woman with swept-back auburn hair wearing beige and a small pale-blue triangular glass cuff.",
+        "ja": "AIイメージ：赤茶の髪をまとめ、ベージュの服に淡い青の小さな三角形のガラスカフを合わせた女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://shop.sugahara.com/view/item/000000005159",
+      "sourceIds": [
+        "sghr-kolmio-earcuff-v11",
+        "sghr-kujukuri-workshop-v11"
+      ],
+      "referenceRead": {
+        "officialBody": "official-page-body-read-2026-11-17; web index",
+        "officialVisual": "official-product-gallery-source-photo-visually-reviewed-in-browser-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "toytoy-ninkari-nikuri-earrings",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult Japanese woman, clearly 28 years old, with short warm-brown bob, gently rounded adult face and inviting smile. A charming, cute and approachable adult fashion mood. face and ear, complete wooden ornament clear beside cheek. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: Off-white textured cotton shirt, muted green backdrop. Accessory: A small approximately30mm diamond-oriented wooden plaque with a scalloped edge, dark-brown wood grain and pale incised curving geometric lines on its solid face, not an open cutout. A small dark wooden bead sits between the plaque and a discreet warm-metal hook. Use an original restrained symmetrical curved pattern; do not reproduce the maker trademark, exact Ainu emblem, text or invented spiritual symbols. Soft natural daylight, warm restrained editorial palette, naturalistic fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "Japanese",
+        "style": "cute",
+        "age": 28,
+        "description": "short warm-brown bob, gently rounded adult face and inviting smile"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:24:16.879Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-e13d2a58-6c09-487d-99d3-ff6ed8718a87.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/toytoy-ninkari-nikuri-earrings-v13.png",
+      "originalSha256": "136d70c7f5d5c06f57d9cc43cf17f76533338d65a3850b06dbdeb78a000f1f2c",
+      "assetId": "ai-toytoy-ninkari-nikuri-earrings-styling-v13",
+      "publicPath": "public/images/toytoy-ninkari-nikuri-earrings-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 91044,
+      "sha256": "1f91e15c4b85876f7de43b90d9032b3110d2c5c6e6a489c0f347b97f93e32774",
+      "alt": {
+        "en": "AI styling image: a smiling woman with a brown bob wearing ivory and an engraved dark-wood diamond ear drop.",
+        "ja": "AIイメージ：茶色のボブとアイボリーの服に彫り模様の入った濃茶の菱形の木の耳飾りを合わせた女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://toytoy-ya.com/SHOP/TN00-NK001.html",
+      "sourceIds": [
+        "toytoy-ninkari-nikuri-v11",
+        "toytoy-maker-v11"
+      ],
+      "referenceRead": {
+        "officialBody": "official-product-body-read-2026-11-17; web index and/or fresh Chrome",
+        "officialVisual": "official-product-gallery-source-photo-visually-reviewed-in-browser-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "somemasa-peacock-clip-on-earrings",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult American woman, clearly 30 years old, with medium-brown skin and swept-back dark wavy hair, graceful expressive face. A beautiful, elegant and refined adult fashion mood. three-quarter head-and-shoulders portrait with both ornaments visible as far as natural pose allows. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: Plain dark navy open-neck blouse, warm cream backdrop. Accessory: Long clip-on textile ear ornaments around60mm, with small green fabric-covered circular tops and slender pointed oval/leaf-shaped fabric drops. Intentionally asymmetrical original peacock-inspired textile designs: one mostly rich blue with a restrained curved bird-like motif, the other green with small orange-and-blue feather-eye shapes, both with fine warm gold-colored outlines. Show related but different sides, cotton-like textile surface, not real feathers or rigid metal feathers. Soft natural daylight, warm restrained editorial palette, naturalistic fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "American",
+        "style": "elegant",
+        "age": 30,
+        "description": "medium-brown skin and swept-back dark wavy hair, graceful expressive face"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:25:18.317Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-92b90637-c232-496f-b90c-9d734488270b.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/somemasa-peacock-clip-on-earrings-v13.png",
+      "originalSha256": "ba5dbf204375fdacb9ce51d9b920227c4f81d35faa22563964ea15d2db966489",
+      "assetId": "ai-somemasa-peacock-clip-on-earrings-styling-v13",
+      "publicPath": "public/images/somemasa-peacock-clip-on-earrings-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 93640,
+      "sha256": "ecefd360d6303c3d1f1a93199370367572cb8779887a209514baadf8d78461b9",
+      "alt": {
+        "en": "AI styling image: a woman in navy with long asymmetrical blue and green peacock-inspired textile ear ornaments.",
+        "ja": "AIイメージ：ネイビーの服に青と緑の左右異なる孔雀風の長い布の耳飾りを合わせた女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://mocad-shop.com/products/earrings-peacock?variant=43042958835903&currency=JPY",
+      "sourceIds": [
+        "somemasa-peacock-clip-mocad-v12",
+        "somemasa-maker-v12",
+        "mocad-museum-store-v12"
+      ],
+      "referenceRead": {
+        "officialBody": "official-product-body-read-2026-11-17; web index and/or fresh Chrome",
+        "officialVisual": "official-product-gallery-source-photo-visually-reviewed-in-browser-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "toytoy-sirokani-pe-silver-necklace",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult American woman, clearly 30 years old, with East Asian American woman, dark straight shoulder-length hair, composed soft smile. A beautiful, elegant and refined adult fashion mood. face, neckline and upper chest, complete pendant clearly visible. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: Deep blue top with a simple open neckline, ivory backdrop. Accessory: A compact polished silver-colored open curving pendant, approximately18×13mm, on a fine silver-colored45cm chain. Four balanced small inward curls with pointed outward tips form a symmetrical airy motif; no enclosing teardrop frame, no solid drop plate. Keep an original restrained geometric curl arrangement rather than copying a maker emblem. No stamped numbers, text or invented spiritual symbols. Soft natural daylight, warm restrained editorial palette, naturalistic fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "American",
+        "style": "elegant",
+        "age": 30,
+        "description": "East Asian American woman, dark straight shoulder-length hair, composed soft smile"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:25:47.134Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-24e031b7-7994-4255-93ba-9185e8fca0ea.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/toytoy-sirokani-pe-silver-necklace-v13.png",
+      "originalSha256": "29b464d480568ba3d1637da658d20072ccfe9fa68b41c5f462628cd52d85374e",
+      "assetId": "ai-toytoy-sirokani-pe-silver-necklace-styling-v13",
+      "publicPath": "public/images/toytoy-sirokani-pe-silver-necklace-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 79806,
+      "sha256": "a795108675e5588e68ebceafe21a408fcef3979cf377a35cb7580471cb0eed06",
+      "alt": {
+        "en": "AI styling image: a woman in a blue V-neck top with a small silver-colored open curled pendant.",
+        "ja": "AIイメージ：青いVネックに銀色の小さな曲線の透かしペンダントを合わせた女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://toytoy-ya.com/SHOP/TP00-SK001-SV.html",
+      "sourceIds": [
+        "toytoy-sirokani-pe-v11",
+        "toytoy-maker-v11"
+      ],
+      "referenceRead": {
+        "officialBody": "official-product-body-read-2026-11-17; web index",
+        "officialVisual": "official-product-gallery-source-photo-visually-reviewed-in-browser-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "tamura-kaisai-enamel-ear-jewelry",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult British woman, clearly 33 years old, with South Asian British woman, medium-brown skin, dark hair gathered neatly, graceful eyes. A beautiful, elegant and refined adult fashion mood. face and ear three-quarter portrait. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: Pale dove-gray shirt, quiet warm background. Accessory: Small flat sea-color enamel ear drops, rounded irregular square/diamond outlines. Pale translucent aqua background with a few deep navy and teal sweeping wave-like sections, tiny muted yellow circles and fine silver-colored dividing lines. The two sides have related but different original patterns. Discreet silver-colored clip fittings. Keep scale modest without inventing an exact size, no added gemstones or long chain. Soft natural daylight, warm restrained editorial palette, naturalistic fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "British",
+        "style": "elegant",
+        "age": 33,
+        "description": "South Asian British woman, medium-brown skin, dark hair gathered neatly, graceful eyes"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:26:19.437Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-22b39f3f-617a-46be-b60a-49873f93e6af.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/tamura-kaisai-enamel-ear-jewelry-v13.png",
+      "originalSha256": "86b65760f94eec59c31559f1b71cc20f4e33e82009a7ddc177c15d7359ccbdf1",
+      "assetId": "ai-tamura-kaisai-enamel-ear-jewelry-styling-v13",
+      "publicPath": "public/images/tamura-kaisai-enamel-ear-jewelry-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 93844,
+      "sha256": "064e3ff458ae2051503bdee8f140e137fbc12826bd937bf832a0e01b42e22f2d",
+      "alt": {
+        "en": "AI styling image: a woman in pale gray with a small aqua and dark-blue geometric ear drop.",
+        "ja": "AIイメージ：淡いグレーの服に水色と紺の小さな幾何模様の耳飾りを合わせた女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://tamura.buyshop.jp/items/139420551",
+      "sourceIds": [
+        "tamura-kaisai-ear-jewelry-v11",
+        "tamura-official-jewelry-v11"
+      ],
+      "referenceRead": {
+        "officialBody": "official-product-body-read-2026-11-17; web index and/or fresh Chrome",
+        "officialVisual": "official-product-gallery-source-photo-visually-reviewed-in-browser-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "coyorimi-tamamusubi-clip-on-earrings",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult Japanese woman, clearly 27 years old, with shoulder-length dark hair with a soft side part, warm adult smile. A charming, cute and approachable adult fashion mood. three-quarter face and ear portrait, full hanging knot visible. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: Cream collarless blouse, soft gray-green backdrop. Accessory: Delicate gold-colored clip-on drops approximately40mm overall, each with a thin gently curved metal stem and two small7–8mm mizuhiki paper-cord knot balls: one pale ivory-gold above and one black at the bottom. Fine overlapping cord lines must be visible. No red beads, gemstones or extra tassels. Soft natural daylight, warm restrained editorial palette, naturalistic fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "Japanese",
+        "style": "cute",
+        "age": 27,
+        "description": "shoulder-length dark hair with a soft side part, warm adult smile"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:26:50.415Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-63536441-894b-4901-8b76-63618c952e60.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/coyorimi-tamamusubi-clip-on-earrings-v13.png",
+      "originalSha256": "c165b32658b9661f8f889a047597db06482f540defb48685a5e5b4aeac829dd0",
+      "assetId": "ai-coyorimi-tamamusubi-clip-on-earrings-styling-v13",
+      "publicPath": "public/images/coyorimi-tamamusubi-clip-on-earrings-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 75044,
+      "sha256": "1fbe4fb2f3bb77ce27e3b61812c97e60a51d056724f5ff7bbe545096dcf3958c",
+      "alt": {
+        "en": "AI styling image: a smiling woman in cream with small ivory and black cord-knot ear drops.",
+        "ja": "AIイメージ：クリーム色の服にアイボリーと黒の小さな結び玉の耳飾りを合わせて微笑む女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://mocad-shop.com/products/tamamusubi-earrings?currency=JPY",
+      "sourceIds": [
+        "coyorimi-tamamusubi-mocad-v12",
+        "coyorimi-maker-v12",
+        "mocad-museum-store-v12"
+      ],
+      "referenceRead": {
+        "officialBody": "official-product-body-read-2026-11-17; web index and/or fresh Chrome",
+        "officialVisual": "official-product-gallery-source-photo-visually-reviewed-in-browser-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "iwaya-urushi-9mm-hook-earrings",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult British woman, clearly 31 years old, with fair skin, straight dark-chestnut hair in a low bun, tranquil expression. A beautiful, elegant and refined adult fashion mood. face and ear, three-quarter portrait with bead in focus. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: Pale stone blouse, warm gray background. Accessory: One small glossy deep rusty-red lacquered round wooden bead around9mm, hanging just below a simple slender silver-colored curved hook. Plain smooth lacquer gloss, no gold leaf, wood mosaic, gemstone facets or long chain. Soft natural daylight, warm restrained editorial palette, naturalistic fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "British",
+        "style": "elegant",
+        "age": 31,
+        "description": "fair skin, straight dark-chestnut hair in a low bun, tranquil expression"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:27:56.936Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-6c27ba93-0292-4000-a274-4f4508ecd934.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/iwaya-urushi-9mm-hook-earrings-v13.png",
+      "originalSha256": "5663061275a7df25e21e5797b62354d8a784809492bfe07153a1a347ecf45a70",
+      "assetId": "ai-iwaya-urushi-9mm-hook-earrings-styling-v13",
+      "publicPath": "public/images/iwaya-urushi-9mm-hook-earrings-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 79480,
+      "sha256": "e289d53c5aa8294257061f9b977e521878e42675717a56b85ff11cac6a4b1b14",
+      "alt": {
+        "en": "AI styling image: a woman with a low bun wearing a pale blouse and a small glossy red bead on a silver-colored hook.",
+        "ja": "AIイメージ：低いお団子の髪と淡いブラウスに銀色のフックと艶のある小さな赤い玉を合わせた女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://www.urushikoubou-iwaya.jp/item/e013/",
+      "sourceIds": [
+        "iwaya-urushi-9mm-hook-v11",
+        "iwaya-shop-v11"
+      ],
+      "referenceRead": {
+        "officialBody": "fresh-Chrome-official-product-body-read-2026-11-17",
+        "officialVisual": "fresh-Chrome-official-product-gallery-visually-reviewed-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "egaho-gathered-kurume-kasuri-ear-jewelry",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult British woman, clearly 28 years old, with mixed-heritage British woman with medium warm skin and a dark curly bob, cheerful smile. A charming, cute and approachable adult fashion mood. face and visible ear, complete fabric-and-bead ornament shown. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: Soft off-white cotton top, muted green studio. Accessory: Small gathered navy-and-ivory kasuri fabric rosettes with irregular soft folds and visible woven cotton texture, each above one pale rounded bead with a restrained dark/gold geometric cut-like surface pattern. Discreet fine metal ear fitting. Keep scale modest without assigning an unconfirmed dimension; the bead is not a certified cut-glass gem. Soft natural daylight, warm restrained editorial palette, naturalistic fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "British",
+        "style": "cute",
+        "age": 28,
+        "description": "mixed-heritage British woman with medium warm skin and a dark curly bob, cheerful smile"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:28:18.048Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-412d36f7-5619-4561-88cd-71cacced3bbd.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/egaho-gathered-kurume-kasuri-ear-jewelry-v13.png",
+      "originalSha256": "382bf294c8dc170e6d491ea60be15816d3cd18adc10e49e3a52b61a5de436b18",
+      "assetId": "ai-egaho-gathered-kurume-kasuri-ear-jewelry-styling-v13",
+      "publicPath": "public/images/egaho-gathered-kurume-kasuri-ear-jewelry-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 106336,
+      "sha256": "97626889bb375d7811d971ac3594c6f1b013c1349e1d2247d71f361e5e63dcb6",
+      "alt": {
+        "en": "AI styling image: a smiling woman with a curly bob wearing ivory and navy fabric rosettes above pale patterned beads.",
+        "ja": "AIイメージ：カールしたボブとアイボリーの服に紺の布の小花と淡色の模様入りビーズを合わせた女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://egaho.base.shop/items/147933458",
+      "sourceIds": [
+        "egaho-gathered-kasuri-v12",
+        "egaho-maker-v12"
+      ],
+      "referenceRead": {
+        "officialBody": "fresh-Chrome-official-product-body-read-2026-11-17",
+        "officialVisual": "fresh-Chrome-official-product-gallery-visually-reviewed-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "showen-edo-uchi-silk-bracelet",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult American woman, clearly 27 years old, with light olive skin, dark shoulder-length curls, cheerful soft smile. A charming, cute and approachable adult fashion mood. face and one relaxed wrist near the neckline, hands anatomically natural. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: White linen shirt, warm cream background. Accessory: A slender silk braided cord bracelet wrapped twice around the wrist. A soft medium-blue main color is interwoven with tiny pale ivory/yellow and muted green strands in a fine regular diagonal braid. A small round blue thread-wrapped odamaki ball around1cm closes through a textile loop. Visible textile texture, two wraps, no metal clasp or gemstone beads. Soft natural daylight, warm restrained editorial palette, naturalistic fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "American",
+        "style": "cute",
+        "age": 27,
+        "description": "light olive skin, dark shoulder-length curls, cheerful soft smile"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:28:39.064Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-c7712ab1-95bf-47ae-8c3a-7f9927a499f3.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/showen-edo-uchi-silk-bracelet-v13.png",
+      "originalSha256": "e1b3b98604bc03904b84e8e5eb9d6cdad01b4d2ccdf2f43336eeeb9e8baf85fe",
+      "assetId": "ai-showen-edo-uchi-silk-bracelet-styling-v13",
+      "publicPath": "public/images/showen-edo-uchi-silk-bracelet-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 107902,
+      "sha256": "5c2ed807be7f4b774902f2ca43a45ac58aea4a69af462fa63b2da8d684cfb7f3",
+      "alt": {
+        "en": "AI styling image: a smiling woman in white wearing a fine blue double-wrap braided bracelet on a raised wrist.",
+        "ja": "AIイメージ：白い服で手首を襟元に添え、青い細い組紐を二重に巻いたブレスレットを合わせた女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://shop.showen.co.jp/product/%E6%AD%A3%E7%B5%B9%E3%80%80%E4%BA%8C%E9%87%8D%E5%B7%BB%E3%81%8D%E3%83%96%E3%83%AC%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88%E3%80%809%E9%9D%92/",
+      "sourceIds": [
+        "showen-edo-uchi-blue-bracelet-v11",
+        "showen-maker-v11"
+      ],
+      "referenceRead": {
+        "officialBody": "official-product-body-read-2026-11-17; web index",
+        "officialVisual": "official-product-gallery-source-photo-visually-reviewed-in-browser-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "kazarino-hanabishi-copper-earrings",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult British woman, clearly 29 years old, with deep-brown skin, neat short natural curls, bright friendly smile. A charming, cute and approachable adult fashion mood. three-quarter portrait, complete long earring clear beside the face. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: Soft ivory top, neutral uncluttered studio. Accessory: A warm pink-copper openwork Hanabishi floral-diamond pierced drop, approximately55×28mm. A tall scalloped diamond outline encloses a small four-petal central flower; slender diagonal lines connect the center to the four outline lobes, leaving open space. Small discreet ball post and a little connecting ring. Not an enamel-painted solid plaque or six-petal daisy. Soft natural daylight, warm restrained editorial palette, naturalistic fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "British",
+        "style": "cute",
+        "age": 29,
+        "description": "deep-brown skin, neat short natural curls, bright friendly smile"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:31:03.680Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-66dc0cd8-594e-41af-b6f9-656434399f89.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/kazarino-hanabishi-copper-earrings-v13.png",
+      "originalSha256": "f72faf82ba3518df0d352ec02ca8ff347ec128b7d77594151996ec96e94821af",
+      "assetId": "ai-kazarino-hanabishi-copper-earrings-styling-v13",
+      "publicPath": "public/images/kazarino-hanabishi-copper-earrings-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 73338,
+      "sha256": "5f10d6c53b0b6471fc7d66226fda7256fc67751924c7f4ebe039c7a1842b13b9",
+      "alt": {
+        "en": "AI styling image: a smiling woman with short curls in ivory with copper-colored open floral-diamond ear drops.",
+        "ja": "AIイメージ：短いカールヘアとアイボリーの服に銅色の花菱の透かし耳飾りを合わせて微笑む女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://www.kazarino.com/product-page/pierce",
+      "sourceIds": [
+        "kazarino-pierce-v11",
+        "kazarino-maker-v11"
+      ],
+      "referenceRead": {
+        "officialBody": "official-product-body-read-2026-11-17; web index and fresh Chrome",
+        "officialVisual": "official-product-gallery-source-photo-visually-reviewed-in-browser-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "kazarino-shippo-pattern-brass-bangle",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult Japanese woman, clearly 32 years old, with long black hair swept behind shoulders, poised friendly gaze. A beautiful, elegant and refined adult fashion mood. face, upper torso and one naturally raised wrist; complete wrist and bracelet visible. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: Charcoal sleeveless high-neck top, soft gray background. Accessory: A wide warm golden-brass open cuff bangle about24mm wide. Solid curved metal band with softly rounded open ends, narrow plain borders at the upper and lower edges, and a fine engraved repeating interlocking-circle Shippo pattern across the face. No openwork holes, colored enamel, text engraving or stone setting. Soft natural daylight, warm restrained editorial palette, naturalistic fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "Japanese",
+        "style": "elegant",
+        "age": 32,
+        "description": "long black hair swept behind shoulders, poised friendly gaze"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:31:34.131Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-9a2fed23-7324-4edf-989f-dfd2c9242664.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/kazarino-shippo-pattern-brass-bangle-v13.png",
+      "originalSha256": "edb24f60d55ac9d5f8878fd2733bf95d4122d8853acd45ee004000d3e7726133",
+      "assetId": "ai-kazarino-shippo-pattern-brass-bangle-styling-v13",
+      "publicPath": "public/images/kazarino-shippo-pattern-brass-bangle-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 75128,
+      "sha256": "69846d9a1195f8a63ce69fcbf7b3938b64e84d4edc860668b1040c39969e2fdd",
+      "alt": {
+        "en": "AI styling image: a woman in a charcoal top showing a broad gold-colored bangle with interlocking-circle patterns.",
+        "ja": "AIイメージ：チャコールの服に円が重なる模様の幅広い金色のバングルを合わせた女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://www.kazarino.com/product-page/bangle",
+      "sourceIds": [
+        "kazarino-bangle-v11",
+        "kazarino-maker-v11"
+      ],
+      "referenceRead": {
+        "officialBody": "official-product-body-read-2026-11-17; web index and fresh Chrome",
+        "officialVisual": "official-product-gallery-source-photo-visually-reviewed-in-browser-2026-11-17; internal screenshot only"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Generated design is not an exact real-product rendering or evidence of actual wear."
+      }
+    },
+    {
+      "productId": "nanao-shuka-nebula-16g-earrings",
+      "prompt": "Use case: photorealistic-natural. Asset type: original AI editorial fashion styling image for a Japanese craft jewelry selection website. Create one completely fictional adult Japanese woman, clearly 27 years old, with dark hair in a relaxed ponytail, clear adult features, lively gentle smile. A charming, cute and approachable adult fashion mood. close portrait, face and one small stud visible naturally. Landscape3:2 composition around1536x1024, woman and jewelry slightly right of center but safely inside both central and square crops. Outfit and setting: Light gray round-neck cotton top, soft ivory backdrop. Accessory: A tiny glossy round glass stud about4.8mm at the earlobe, with subtle green, purple and red nebula-like internal shimmer. The glass stud must stay genuinely tiny, not a large dangling galaxy orb. Soft natural daylight, warm restrained editorial palette, naturalistic fashion image with a subtle illustrative finish, credible anatomy and a calm uncluttered background. This is an independent styling concept inspired by confirmed craft materials and shapes, not an exact product rendering, not a real product photograph, not evidence of an actual wearer or a testimonial. Do not copy any retailer photograph or real person's likeness. No moles, freckles or dark skin spots; keep a natural adult face and skin texture. No text, logos, brand marks, watermark, celebrity likeness, collage or other jewelry. Keep the featured ornament fully visible, not hidden by hair or cropped by the frame.",
+      "model": {
+        "fictionalNationality": "Japanese",
+        "style": "cute",
+        "age": 27,
+        "description": "dark hair in a relaxed ponytail, clear adult features, lively gentle smile"
+      },
+      "tool": "Built-in image_gen",
+      "generatedAt": "2026-11-17T02:32:03.538Z",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e2f9-e4e0-7663-ae83-e5120e88efc1\\exec-aff7ce7f-ba0c-491f-9360-45d54d9e78f6.png",
+      "originalDeliveryPath": "generated-originals/0.13.0/nanao-shuka-nebula-16g-earrings-v13.png",
+      "originalSha256": "54f68cea2b53193b5eb805b86ca4cfe718b8d15f2df0ae326e0d59a843f34c08",
+      "assetId": "ai-nanao-shuka-nebula-16g-earrings-styling-v13",
+      "publicPath": "public/images/nanao-shuka-nebula-16g-earrings-styling-v13.webp",
+      "width": 1536,
+      "height": 1024,
+      "format": "webp",
+      "bytes": 100986,
+      "sha256": "ba3412ffba09f920db973fa81e09b6cce86475813096027a2bb85ace40ef8159",
+      "alt": {
+        "en": "AI styling image: a smiling woman with a ponytail in pale gray with a tiny iridescent round glass stud.",
+        "ja": "AIイメージ：ポニーテールと淡いグレーの服に虹色の小さな丸いガラスのスタッドを合わせて微笑む女性。"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "preserveRatio": true,
+      "officialUrl": "https://www.creema.jp/item/17252787/detail",
+      "sourceIds": [
+        "nanao-shuka-nebula-v11",
+        "nanao-shuka-official-v11",
+        "nanao-shuka-profile-v11"
+      ],
+      "referenceRead": {
+        "officialBody": "official-maker-Creema-listing-body-read-2026-11-17; cached web index; dimensions remain current master catalog rather than older crawl",
+        "officialVisual": "photo-not-inspected: multiple official Creema gallery source-photo requests returned HTTP403 on2026-11-17; concept limited to maker text, no claim of exact appearance"
+      },
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "method": "Root inspected generated native image output and/or local full PNG/contact sheet; checked complete accessory, adult fictional presentation, natural anatomy, clean face, composition, no text/logo. Browser crop checks recorded separately.",
+        "result": "accepted-as-styling-concept",
+        "limitations": "Official photo returned403; concept limited to confirmed maker description. Not exact design reproduction."
+      }
+    }
+  ]
+}

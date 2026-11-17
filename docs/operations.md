@@ -1,4 +1,29 @@
-# 更新手順 — 0.12 商品固有の選ぶ理由
+# 更新手順 — 0.13 全商品画像と海外検索
+
+最新仕様は[013](../specs/013-complete-imagery-international-seo/spec.md)。対象は公開50商品、旧25＋新23の計48画像ファイル。前版の編集・購入根拠・価格/広告の分離を継承する。最終の検証数や公開commit/Actionsはverification/deployment-resultsを参照し、仕様の予定値を実測と扱わない。0.12の保存版は[引継ぎ](archive/handoff-v12.md)・[検証](archive/verification-v12.md)。以下に残す012以前の件数・『新画像なし』は当時の履歴で、今回の013を優先する。
+
+## 全商品のAIイメージを維持する
+
+1. 商品追加・差替え前に公式商品本文と閲覧可能な写真を確認し、実見できた範囲・日付・URL・限界を記録する。写真を無断保存・転載・生成入力へ流用しない。画像計画は[image-plan-v13](image-plan-v13.md)とresearch/image-briefs-v13。正確な実物再現や試着の証拠を作らない。
+2. 生成する人物は27〜33歳を目安にした架空成人。013の新23人の設定は日本7/米国8/英国8、cute11/elegant12。これは制作の背景設定で、見た目から国籍や人種を分類した記録ではない。かわいい/上品の変化、ほくろ/シミなしの希望と成人らしさを保ち、実在人物を模さない。
+3. 生成後に顔・耳・手指・装身具の破綻、公式意匠やロゴの複製、確認していない仕様を示していないか実見する。商品種類に合う構図と余白を使い、耳飾り・首飾り・指輪・手首を元比率とカードcropの両方で見る。旧25ファイルはbytesを保ったまま、必要なalt更新と新規23画像を分けて扱う。
+4. public/imagesへ採用ファイルを置き、editorial-images.jsonのproductId/assetId/path/実寸/日英altと、docs/assets.jsonの由来・権利・状態・生成記録を揃える。captionは共通部品の「AIイメージ / AI image」を保つ。新たな公開商品も登録画像が必要で、OfficialPreviewを公開画像の代わりにしてgateを回避しない。
+5. 新23ファイルのIPTC XMP `DigitalSourceType` は概念ID `http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia`。変換後と公開後にも値の保持を読む。概念の説明ページはhttpsで閲覧できるが、埋込み値はこのhttp URIを使う。JSON-LDの `https://schema.org/TrainedAlgorithmicMediaDigitalSource` は別の表現であり、実ファイルの埋込み検証を代替しない。bytesを変えていない旧25画像へ同じ埋込みを遡って実施したとは書かない。
+6. [image-verification-v13](image-verification-v13.md)に従い、全publishedのcoverage、48実ファイルと台帳、実寸・容量・SHA、新23のIPTC、旧25のbytes維持、日英altとcaption、PC/スマホの元比率・crop・画像表示を確認する。画像台帳は商品の材質・金具・使用経験の出典にしない。
+
+## 英語圏向け検索の設定を維持する
+
+1. 商品名・固有紹介文はcatalog/日本語訳、技法名は既存masterを更新する。src/lib/seo.tsが商品descriptionをこれらから生成するため、SEO専用に価格・URL・商品名の別正本を作らない。自然なjewelry/jewellery、種類・技法・素材・産地の表現を使い、検索語を詰め込まない。
+2. /en/と/ja/の安定URL、自己canonical、相互hreflangとx-default、右上の同ページ/query/hash言語切替を保つ。米英向け同内容の重複ページや空の産地ページは増やさない。一覧フィルターはページの状態として扱い、query/hashを別canonicalにしない。
+3. 構造化データは紹介ページのWebPage、商品名を表すThing、画面にあるBreadcrumbListとAI ImageObject。Offer、ライブ在庫、架空レビュー/星、未確認の画像ライセンスを足してリッチリザルト適格としない。共通OG画像を本文にないページの主画像と宣言しない。日英altは実際の絵を簡潔に説明し、架空モデルの国籍を集客語にしない。
+4. `pnpm verify` 後、最終本番の生成物に `node scripts/check-international-seo.mjs` を実行する。`CHECK_DIST_DIR`で生成先、`SEO_REPORT_PATH`で結果保存先を指定できる。全canonicalとsitemapの一致、相互hreflang、商品metadata、画像・パンくず・AI caption/alt、robots等を検証する。previewではなく実際の本番origin/base/public設定を使い、未完成画像の中間ビルドを最終成功と数えない。
+5. [international-seo-v13](international-seo-v13.md)の一次資料・残確認を参照する。Search Consoleでの所有確認・URL検査・Google選択canonical・登録・米英の表示/クリックは別の運営者操作。公開検索で見つからないだけで未indexと断定せず、HTMLのPASSを掲載・順位・流入・AdSense合格としない。実際のアカウントにない確認IDや実績を作らない。
+
+商用ホスト適合・AdSense接続/Privacy/同意/CSPの既存残条件は継承。画像とSEOを直したことだけで解消済みにはしない。新規申請・契約・課金・ドメイン/DNS・広告/計測タグ追加は行わない。
+
+---
+
+# 012から継承する商品固有の紹介（以下は012時点の手順・状態）
 
 最新はspecs/012-distinctive-product-selection/とeditorial-stage各実測。以下の011の購入経路確認・010の価格/広告の分離を継承する。現行件数と配信結果はcatalogのpublished集合とdeployment-resultsを参照し、旧版の固定件数を新商品の上限や公開条件にしない。
 
