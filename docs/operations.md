@@ -1,6 +1,16 @@
-# 更新手順 — 0.14 広告Privacy・商品Q&A・単体図・地図
+# 更新手順 — 0.15 画像の種類選択・スマホ・出典一覧・security
 
-最新仕様は[014](../specs/014-advertising-privacy-product-depth/spec.md)と[015](../specs/015-product-details-inline-maps/spec.md)。公開50商品の各3問×日英、単体AI図50ファイル、既存人物画像48ファイル、店舗内の選択式地図を扱う。以下の014/015手順を優先し、後半の旧版にある件数や「地図埋込みなし」「新画像なし」は各版当時の履歴として読む。現行の公開状態・検証数は[verification](verification.md)と[deployment-results](deployment-results.json)で確認する。
+最新は[016](../specs/016-visual-choices-mobile-security/spec.md)。以下の0.15手順を優先し、後半の014/015以前を継承する。現行の公開・検証数は[verification](verification.md)と[deployment-results](deployment-results.json)で確認する。実行環境はサポート中の修正版Node24.22.3以上とpnpm11.25.0。古いNodeは起動前検査で停止する。
+
+## 0.15の更新箇所と検証
+
+1. 種類の代表はtype-choicesの公開/産地/種別条件から実在の先頭商品を選ぶ。元画像はproduct-detail-images、表示はTypeChoiceImage。別産地・別種類を飾りで代用しない。価格・件数は既存の正本、リンクはtype/prefecture/query/hashを保つ。画像bytesとAI captionを維持する。
+2. Sourcesはdata-source-disclosure付きnative details。商品は#product-sourcesのslotへ商品/市場価格/購入根拠の確認日、店舗はvisit-sources内へ置く。MarketPriceには確認日を繰り返さずdata-price-checked-atは保持。元データの日付をUI変更で更新しない。公式リンク/価格市場/AI/広告/在庫の注意は閉じた一覧へ隠さない。直接hashとJavaScript無効時の開閉を確認する。
+3. モバイルはglobal.cssと各部品のscoped stylesを併せて検査。320〜390のfilter1列/16px・48px、言語/メニュー44px、safe-area・横画面・固定CTA/focusを保つ。portraitだけやdesktop幅だけで完了にしない。touch emulationを実機Safariと呼ばない。
+4. pnpm verify・pnpm check:seo・pnpm check:adsを安定buildで実行。別ターミナルのpatched Node previewに対しCHECK_BASE_URLを設定し、pnpm check:quality・pnpm check:prices・pnpm check:mobile・pnpm check:sourcesを実行。mapsはnode --experimental-strip-types scripts/check-inline-maps.mjs。公開後は同じ入口でhosted別report/prefixへ保存し、check-hosted-releaseでlocalと248HTML/98画像を照合する。共有distの再build中にbrowserを走らせない。
+5. 外部URL検査はscripts/lib/safe-outbound.tsを介し、各hopのHTTPS/全DNSのglobal-unicast/接続IP pin/timeoutとbody破棄を保つ。テストはresolver/transport注入でprivate宛てに実接続しない。pnpm audit --audit-level=lowとNode公式security releaseを確認し、無視指定で0にしない。security-review-v15のhost/account残範囲も読む。
+
+結果名はvisual-mobile-stage。ローカルと公開を混ぜず、失敗raw→原因/修正→再検証の順を残す。0.15は新規画像生成なし、原本は0.14別納品を保持。以降の014/015手順の古い件数/実行環境は当時の履歴として読む。
 
 ## 仕様014 / 015の更新箇所（リリース0.14）
 

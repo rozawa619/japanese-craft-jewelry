@@ -1,54 +1,44 @@
-# 引継ぎ — 0.14 選ぶ内容・単体図・小型地図・広告Privacy
+# 引継ぎ — 0.15 画像で選ぶ・スマホ・閉じた出典・security
 
-2026-11-17。AGENTS → constitution → specs/014/015 → 本書 → operationsの順で読む。前版はdocs/archiveのv13へ保存。公開の確定状態はdeployment-results.jsonを優先する。
+更新2026-11-17。AGENTS → constitution → specs/016 → 本書 → operations。0.14の確定結果はdocs/archiveのv14へ保存。公開/納品の確定値はdeployment-results.jsonと各visual-mobile-stage reportを優先。
 
-SORAの日英工芸ジュエリーセレクト。公開50/全56商品、14地域、24技法、258商品出典、23店舗を維持。41品の公式注文受付・9品の営業小売/現行価格付きカタログという前版の購入根拠を保持する。今回の本文実読や画像/HTTP検査を将来在庫や注文成立の保証へ置き換えない。
+## 変更内容
 
-## 今回の内容
+産地の種類別行とhome5種類に、実際の公開商品/地域/種類に属する小さな単体AI画像を表示。既存98ファイルのbytesを保持し、新規生成/写真転載なし。type-choices helperは呼出し元の編集順を保ち、draft/別地域を除外。価格/件数/URL query/hashを保持し、人気順位とはしない。
 
-- 全50品に固有の選び方を日英各3問、計300問答追加。仕様はcatalog/jaのtokenから展開し、価格/URLを複製しない。出典は商品のsourceIdsへ対応。公式本文実読とToyToy/錺之等の旧表現35項目訂正をresearchへ記録。
-- 全50品の『惹かれる、その理由。』へ単体AI図。人物スタイリング48枚を保持し、計98公開WebP。新50枚は1254²/2,509,816bytes/AI XMP付き。短いAI caption、日英alt、実物確認用公式リンクを併設。
-- 生URLを意味の分かるリンク名へ変更し、hrefを維持。
-- 23店舗に小型Google公式Share地図。説明と表示操作後だけ読み込み、閉じる/再読込でiframeを削除。選択を自前Cookie/Storageへ保存しない。外部地図/経路/公式案内のfallbackを保持。地図選択は広告の認定CMPではない。
-- 日英Privacyに現在offと、将来Google広告Cookie/情報利用/設定/拒否/同意管理、地図表示後の送信を分けて明記。footer設定導線と、環境flagだけで広告を開始できないoff固定検査を追加。
+Sourcesを初期closedのnative detailsへ統一。商品#product-sourcesには商品/市場価格/購入根拠の実確認日と公式出典、店舗visit-sourcesには店舗日付を集約。MarketPriceの繰返し日付を除きdata-price-checked-atは保持。工房/技法/産地/方針/観光統計の出典も閉じる。公式CTA・価格市場・在庫注意・AI/広告開示は見えるまま。直接hashで対象を開き、JavaScript無効時もnative開閉可能。
 
-単体図はbuilt-in image_genで既存の自作AIスタイリングを参照して生成。実物写真/正確なSKU再現/試着感/仕様根拠ではない。Tamura/SIMPRICH/PAGEは採用前に修正、PAGEは薄い角丸板のr2を採用。実prompt/参照hash/原本/採否はimage-generation-solo-v14.json。商品写真50件の許諾は未取得。IPTC XMPは署名付きC2PA証明ではない。
+狭幅はfilter1列/16px・48px、言語/Menu・副導線44px、長いJA見出し、footer、safe-area、短い横画面の固定CTA抑制、focusスクロール余白を修正。市場ラベル/地図説明/閉じるも読みやすくした。Chrome touch emulationであり実機Safari検証とはしない。
 
-## 編集入口
+外部リンク検査ツールの自動redirect/DNS接続を、各hopのHTTPS/全DNS公開IP判定/接続先pin/timeout/body破棄のNode専用transportへ変更。悪意の負例はmockでprivateへ実接続なし。Node最低版24.22.3、起動前/CIのfloor、CI全severity auditを追加。rootはworkspace内portable Nodeと既存pnpm JS CLIのtask-local wrapperで検証し、OSglobal変更なし。詳細security-review-v15、host-observation-v15。
 
-| 正本/実装 | 役割 |
+## 正本と不変条件
+
+catalog/jaは事実/価格/URL、product-stories/MD/choice/guideは紹介、purchase-evidence/visits/sourcesは根拠。今回事実・確認日・画像bytes・50公開/56総数・14地域・24技法・258商品出典・23店舗/43品を変更していない。41通販/9小売カタログの既存根拠を将来在庫/注文成立の保証にしない。
+
+SORA、JAEN同一ページ/query/hash切替、全国構造、ブログ/Contact/決済なし。広告program/item両承認/host/date/locale gateを維持、全実データは未申請/通常リンク。AdSense off、地図opt-inの選択は広告認定CMPではない。COCOON2/欠品18K/畠山2/hairpinはdraft、退役10画像は公開/ZIPから除外。復帰は現行購入根拠を再調査。
+
+## 更新入口
+
+| 場所 | 役割 |
 | --- | --- |
-| catalog.json・translations/ja.json | 事実/価格/URL。国内JPYと海外実価格を分け、FX換算しない |
-| product-stories・selection-notes・content/products | 固有の魅力/装い/比較。架空レビュー/未確認仕様を作らない |
-| product-buying-guides.json・lib同名・ProductBuyingGuide.astro | 日英3問/対象商品の出典/size・findings・fastening token |
-| editorial-images.json・product-detail-images.json・docs/assets.json | 人物と単体図/alt/権利/退役履歴を分離 |
-| docs/image-generation-solo-v14.json | 実prompt/自作AI参照/hash/PNG原本/目視の限界 |
-| purchase-evidence・visits・docs/research/sources.json | 現行購入根拠/店舗事実/一次資料/確認日 |
-| lib/store-map-embeds.ts・map-embed-url.ts・VisitGuide.astro | 固定Google Share origin/path/pbを検証、選択時だけiframe生成 |
-| advertising-privacy.json・lib同名・AdvertisingPrivacyStatus.astro | off状態/policy version/環境flag拒否/公開状態表示 |
-| content/policies/{ja/,}privacy.md・Base.astro | 日英Privacy/footer/限定CSP、Google frameだけ許可 |
-| lib/affiliate.ts・market-prices.ts | 承認/host/date/localeの二重gate、価格と市場リンクの対応 |
+| type-choices.ts・TypeChoiceImage・RegionalChoiceGuide・home | 実公開集合の画像入口。件数/価格/絞込を維持 |
+| Sources・product template・VisitGuide | 閉じた出典と確認日、data-information-checks/data-market-check/data-store-information-checked |
+| MarketPrice・PurchaseEvidence | 価格正本/metadata、購入根拠は閉じた一覧内 |
+| global.css・scoped style | 入力/操作域/長文/固定CTA/画像比率/横向き |
+| safe-outbound.ts・check-external.mjs | DNS/redirect/接続固定。private実アクセスで試さない |
+| check-runtime.mjs・astro.mjs・workflow | サポート中のpatched Node最低版/CI監査 |
 
-## 維持条件・申請前の残作業
+## 検証と残る範囲
 
-ブログ/Contact/販売決済なし、operatorはSORA。同一ページ/query/hashの言語切替、全国構造、TOP10訪問率の出典を維持。COCOON2/欠品18K/販売未確認の畠山2/hairpinはdraft。復帰は現行購入を再調査し日英/比較/画像/地域/sitemapを同時更新。退役10画像を戻さない。
+ローカル統合verifyは121型ファイル0/0/0、124単体、264HTML、通常1016/広告0、949実行script CSP hash、248JSONが成功。価格314、source全248（100商品/348閉じた一覧/1246source行）、mobile92が成功。その他の完了値/最終型file数/公開結果はverificationとdeployment-resultsへ追記する。初回QAのMJS構文/unused hintは修正後のverify成功と区別し、失敗logもローカル保持。
 
-提携プログラム/個別リンクは未申請・通常リンク。AdSenseアカウント/実ID/所有確認/実host設定/認定CMP/地域別同意と配信/稼働状態に応じたPrivacy/CSP統合は未実施。GitHub Pagesの商用用途適合確認または適した公開先の選択も残る。off固定は配信可能な完成CMPではない。実アカウントで対応し、秘密をGitへ保存しない。申請/契約/課金/DNS変更は実行していない。
+既知audit0/348依存は時点監査で、未知問題や全安全を保証しない。現hostではHTTPS/HSTS/meta CSPがある一方、HTTP CSP/frame-ancestors/XFO/nosniff/PermissionsPolicyは未設定。静的でログイン/送信/決済なしの現構成に対する未実証の多層防御gapとし、効かないmeta/JS framebustで解決済みにしない。任意ヘッダー制御は対応hostでの別実装/実測が必要。MFA/branch保護/復旧等のアカウント設定も未操作。
 
-合格/法令/契約適合/実在庫を保証しない。問数や字数をGoogle独自価値の証明とせず、追加も公式情報に基づく固有の選び方を作る。SEOはhreflang/canonical/sitemap/固有metaを維持し、掲載/順位/流入はSearch Consoleで別確認。
+AdSense実アカウント/所有確認/実ID/認定CMP/地域別同意と配信/稼働状態のPrivacy/CSP統合、GitHub Pages商用用途適合または配信先選択は残る。検索掲載/順位/流入はSearch Consoleで別確認。申請/契約/課金/移転/DNS変更は実行していない。
 
-## 検証・納品
+## 納品
 
-最終ローカルverifyは113型ファイル0/0/0、111単体、264HTML/370生成物、通常リンク1016/広告0。新機能315、商品導線497、Maps9、隔離広告6、SEO248canonicalを確認。画像r2後にverify/315を再実行。quality497/Maps9/広告6はr2以外の実装が同じ段階の結果。詳細はverification・privacy-depth-verification-v14・inline-maps-v14・各JSON。公開後の確定値はdeployment-resultsを優先する。
+最終verify123型ファイル0/0/0・124単体・369生成物。最終再生成の全SHAがbrowser検証済み出力と一致。品質497/価格314/種類画像32（84instances）/mobile92/touch4/source248/Maps9/広告6/SEO/meta1が成功。詳細static-results/build-manifest・各JSON・016validation。121filesは統合途中の型検査値。
 
-全ソースは隣接japanese-craft-jewelry-delivery/sourceとjapanese-craft-jewelry-source.zip。CI/lock/全ソース/仕様/調査/台帳/検証/公開98画像を含み、.git/.env/秘密/node_modules/dist/artifacts/内部参照写真/退役10画像は除外。PNG原本50枚はgenerated-originals/0.14.0とjapanese-craft-jewelry-ai-originals-0.14.0.zipへ分離。旧0.13の23原本は別版で保持。全件SHA/集合/ZIP hashは納品先package-verification-0.14.0.jsonとoriginals-verification-0.14.0.json。原本/ソースZIPは引継ぎ資料で、公開アプリの配布物ではない。
-
-## 公開後の最終検証
-
-公開補足の初回は一時503でHTML178件までの部分結果。rawはhosted-first-attempt、同URLのfresh200はhosted-503-recheckへ保存。アプリ変更なしで全件を再実行し、最終248/98・24/24を確認した。
-
-アプリf7805ed9489706d08743da4b8091f2a154ff7131、Actions44016172889 completed/success（2026-11-17T04:18:28Z、GitHub API実測）。公開315/315・商品導線497/497・Maps9/9・公開メタ1/1成功。公開補足24/24で248正規URLの200/meta/hreflang/JSON-LD/CSPと98画像の200/全SHA一致を確認。Mapsを選ばない検査で広告/CMP/外部通信0、Mapsは別の任意表示検査で確認した。全結果はprivacy-depth-stage-hosted-*に保存。公開確認後の追加は文書・証跡と納品scriptのみで、アプリ370生成物のbytesは配信検証時と一致する。
-
-## 最終ソース・原本の納品
-
-全ソース754ファイル、公開98画像を含む集合と全件SHA256を照合。完了記録を含め再書出し・ZIP化し、同じ全件検査を行う。ZIP自身のhash/bytesはZIP外のpackage-verification-0.14.0.json。原本50PNG＋manifest/READMEの52エントリーも全件SHA一致、原本ZIP71,967,973bytes、SHA fbb38b7bbaaebc86d2c1950ff1e389109f56341adebde46d35eeb906f331bfe1（originals-verification-0.14.0.json）。新規画像はbuilt-in image_gen、全実promptはimage-generation-solo-v14.json。私的QA画像と補足JSONは隣接delivery/screenshots/0.14.0へ分離し、文中artifacts参照はローカル証跡で公開素材/ソースZIPの実行依存ではない。
+隣接japanese-craft-jewelry-delivery/sourceとjapanese-craft-jewelry-source.zipへ全ソース/設定例/lock/CI/仕様/調査/検証/98画像を書出す。.git/.env/秘密/node_modules/dist/artifacts/退役画像を除外し、package-verification-0.15.0.jsonでrepo→export→ZIPの全件SHAを照合。QA PNG/JSONはscreenshots/0.15.0へ分離。今回新画像生成なし、原本50PNGと生成記録は0.14の別ZIPを保持する。

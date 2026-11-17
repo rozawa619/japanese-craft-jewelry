@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-11-17T04:50:38.396Z",
+  "node": "v24.22.3",
+  "method": "Read-only GETs of two fixed publicURLs. Redirects are not automatically followed. No request to a private target or account setting change.",
+  "scope": "Live0.14 public baseline before0.15 deployment; not a promise of future headers.",
+  "https": {
+    "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=31556952",
+      "content-security-policy": null,
+      "x-frame-options": null,
+      "x-content-type-options": null,
+      "referrer-policy": null,
+      "permissions-policy": null
+    },
+    "metaCsp": "default-src 'self';object-src 'none';base-uri 'none';form-action 'none';frame-src https://www.google.com;connect-src 'none';img-src 'self' data:;font-src 'self'; script-src 'self' 'sha256-A+KvS8eaAwtFHbEvMIHFLd838JSw7J8JXe5UyJyWcrA=' 'sha256-wjXxeqiHP1gpBHyIlYtLgd7xLlMm3xted/MQpV/Cd4c=' 'sha256-TxneElSKBL9xSd5ThF5MmAzirxRAawwQxuewnrj9KR4=' 'sha256-a6bSaNrxFai9F/tlj/U3MtSth0PP7TfccFlIGpOB7Qo=' 'sha256-AOFuFJ+8xihjSEyPmq/89KUuF8vsI1btLDldJAuMGKk=' 'sha256-eV/mMT8mWtefTm6sVnsSljdN055i+adVt9Y+ffeAsEM=' 'sha256-xIb/Pa7FUshAu4ihwjchYcQpyCI8eS8kt40GpOAYCz8=' 'sha256-1BvDVWLr3QCC20uHhUDi27eDFVJpk1uMQJGIWKUks2I=' 'sha256-kmZE/W8I1iuTnl1b3yqzv9/DQZenPngd3NjSKMQl7y0=' 'sha256-Y8t0ntteBwH+PqGKUyjWW3CAk+BNJKSoQc0xZ68FjhM=' 'sha256-0O7iB6zr9x0r6X6eWYITC9V5q+yWCGAoFvcysBGbY9Q='; style-src 'self' 'sha256-3lE4LlllaX+V1qndSKL4t5q9wTbTv98upvHk80GGgQw=' 'sha256-wtNuYtw6wOGleVrk2ojLHetmapLOj9a69wn4g/u87Jk=' 'sha256-ALPq3IGyIH0brE003bXo09j4i7Njaz2ibCuUb5U/AB8=' 'sha256-smMEs+Io0ERnxeadDki1rz0jpBV2637Uo5K2OYYTLqU=' 'sha256-QasNWD3D3aEiCyM4YVUZVptN+gXkHg8mRxWchXzEisU=' 'sha256-bw1KcqZrOAuU9j8pzT1ib8LqlF+mVKe37h08VUZEbC8=' 'sha256-ifpKQSPF7cFToy6xiJieRZUxpXZktcQgP93GKb6c2/U=';",
+    "metaReferrer": "strict-origin-when-cross-origin",
+    "httpFrameAncestors": false
+  },
+  "http": {
+    "url": "http://rozawa619.github.io/japanese-craft-jewelry/ja/",
+    "status": 301,
+    "location": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+    "headers": {
+      "strict-transport-security": null,
+      "content-security-policy": null,
+      "x-frame-options": null,
+      "x-content-type-options": null,
+      "referrer-policy": null,
+      "permissions-policy": null
+    }
+  },
+  "interpretation": {
+    "observedProtections": [
+      "HTTPS200",
+      "HTTP redirects to the matchingHTTPS URL",
+      "Host HSTS",
+      "HTMLmetaCSP and metaReferrer policy"
+    ],
+    "absentHeaderDefenses": [
+      "HTTP Content-Security-Policy including frame-ancestors",
+      "X-Frame-Options",
+      "X-Content-Type-Options:nosniff",
+      "Permissions-Policy"
+    ],
+    "riskBoundary": "Absent headers are defense-in-depth gaps on this static site; no account/form/publicwriteAPI exploit was demonstrated. MetaCSP is not equivalent to HTTPframe-ancestors. No JSframebusting substitute or hosting migration was performed."
+  }
+}

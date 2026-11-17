@@ -2,10 +2,13 @@
 import Base from '../../layouts/Base.astro';
 import Pattern from '../../components/Pattern.astro';
 import EditorialImage from '../../components/EditorialImage.astro';
+import TypeChoiceImage from '../../components/TypeChoiceImage.astro';
 import RegionSelection from '../../components/RegionSelection.astro';
 import {productsFor} from '../../lib/catalog';
 import MarketPrice from '../../components/MarketPrice.astro';
 import {productImageFor} from '../../lib/editorial-images';
+import {productDetailImageFor} from '../../lib/product-detail-images';
+import {typeChoicesFor} from '../../lib/type-choices';
 import {selection} from '../../config/selection';
 import {locales,t,type Locale} from '../../lib/i18n';
 import {pagePath} from '../../config/site';
@@ -15,7 +18,11 @@ const products=productsFor(locale);
 const hero=products.find(p=>p.id===selection.heroProductId)||products[0];
 const heroImage=hero&&productImageFor(hero.id);
 const href=(route='')=>pagePath(route,locale);
-const kinds=[['pierced-earrings','◌',t(locale,'Pierced earrings','ピアス')],['clip-on-earrings','⊂',t(locale,'Non-pierced earrings','イヤリング')],['necklace','◇',t(locale,'Necklaces','ネックレス')],['ring','◉',t(locale,'Rings','リング')],['bracelet','○',t(locale,'Bracelets','ブレスレット')]];
+const typeChoices=typeChoicesFor(products);
+const kinds=[['pierced-earrings',t(locale,'Pierced earrings','ピアス')],['clip-on-earrings',t(locale,'Non-pierced earrings','イヤリング')],['necklace',t(locale,'Necklaces','ネックレス')],['ring',t(locale,'Rings','リング')],['bracelet',t(locale,'Bracelets','ブレスレット')]].flatMap(([type,label])=>{
+ const group=typeChoices.find(group=>group.type===type);
+ return group?[{...group,label,image:productDetailImageFor(group.representative.id)}]:[];
+});
 const materials=[['glass','◈',t(locale,'Glass','ガラス'),t(locale,'Color and light','透明感と、光の表情')],['porcelain','◐',t(locale,'Porcelain','陶磁器'),t(locale,'Sculptural shape and glaze','かたちと、つやを楽しむ')],['cotton','✿',t(locale,'Textile','布'),t(locale,'Color in delicate thread','糸で描く、花の彩り')],['silver','◌',t(locale,'Silver','銀'),t(locale,'Quiet metallic details','繊細な輝きを、ひとつ')],['enamel-glaze','◒',t(locale,'Cloisonné enamel','七宝'),t(locale,'Deep translucent colors','色の奥行きと、つや')],['wood','◇',t(locale,'Wood','木'),t(locale,'Warm geometric patterns','木の色と、幾何学の模様')]].filter(([id])=>products.some(product=>product.materialIds.includes(id)));
 ---
 <Base title={t(locale,'Japanese Craft Jewelry | Earrings, Rings & Necklaces','日本の工芸ジュエリー｜ピアス・イヤリング・ネックレス')} description={t(locale,'Explore Japanese craft jewellery: earrings, clip-ons, rings and necklaces in glass, silver, porcelain and textile. Compare designs, Japan prices and official shops.','ガラス、陶磁器、銀、布、七宝、木。日本各地の工芸ジュエリーを、デザインと装いのヒントから紹介。ピアスやイヤリング、ネックレスを素材から選べます。')} locale={locale}>
@@ -24,7 +31,10 @@ const materials=[['glass','◈',t(locale,'Glass','ガラス'),t(locale,'Color an
  <div class="selection-hero-image">{heroImage?<EditorialImage image={heroImage} locale={locale} priority/>:<Pattern hero locale={locale}/>} {hero&&<a class="selection-hero-product" href={href('objects/'+hero.slug+'/')}><span>{hero.title}<small>{t(locale,'View this piece','この商品を見る')} →</small></span><span><MarketPrice productId={hero.id} locale={locale}/></span></a>}</div>
 </section>
 <div class="wrap section-space"><RegionSelection locale={locale} id="selected-pieces"/></div>
-<section class="wrap selection-categories"><div class="section-heading"><h2>{t(locale,'Find your kind.','種類から選ぶ。')}</h2></div><div class="type-links type-links-four">{kinds.map(([type,icon,label])=><a href={href('objects/?type='+type+'#all-jewelry')}><span class="type-icon" aria-hidden="true">{icon}</span><span>{label}<small>{t(locale,products.filter(p=>p.productType.includes(type)).length+' selected pieces',products.filter(p=>p.productType.includes(type)).length+'点を掲載')}</small></span><span aria-hidden="true">↗</span></a>)}</div></section>
+<section class="wrap selection-categories"><div class="section-heading"><h2>{t(locale,'Find your kind.','種類から選ぶ。')}</h2></div><div class="type-links type-links-four kind-choices">{kinds.map(group=><a href={href('objects/?type='+group.type+'#all-jewelry')} data-home-type-choice={group.type}>
+ <TypeChoiceImage image={group.image} productId={group.representative.id} locale={locale}/>
+ <span class="kind-label">{group.label}<small>{t(locale,group.items.length+' selected pieces',group.items.length+'点を掲載')}</small></span><span class="kind-arrow" aria-hidden="true">↗</span>
+</a>)}</div></section>
 {materials.length>0&&<section class="wrap selection-categories section-space"><div class="section-heading"><h2>{t(locale,'Follow the material.','素材から選ぶ。')}</h2></div><div class="type-links">{materials.map(([id,icon,label,detail])=><a href={href('objects/?material='+id+'#all-jewelry')}><span class="type-icon" aria-hidden="true">{icon}</span><span>{label}<small>{detail}</small></span><span aria-hidden="true">↗</span></a>)}</div></section>}
 
 <section class="selection-region"><div class="wrap selection-region-inner"><div><p class="eyebrow">{t(locale,'CRAFT, ACROSS JAPAN','日本各地から、ひとつずつ')}</p><h2>{t(locale,'Find jewelry by region.','産地から選ぶ。')}</h2><p>{t(locale,'A different place, a different expression of craft. Explore jewelry through its connections to workshops across Japan.','土地が変わると、ものづくりの表情も変わる。日本各地の工房とのつながりから、気になるジュエリーを見つけてみませんか。')}</p></div><a class="button button-light" href={href('places/')}>{t(locale,'Browse regions','産地別の商品を見る')}<span aria-hidden="true">↗</span></a></div></section>
@@ -34,5 +44,13 @@ const materials=[['glass','◈',t(locale,'Glass','ガラス'),t(locale,'Color an
  .selection-hero-product>span:first-child{min-width:0}
  .selection-hero-product>span:last-child{flex:0 0 120px;min-width:120px}
  .selection-hero-product>span:last-child :global(.market-price .market-price-date){white-space:nowrap}
+ .selection-categories .kind-choices{grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;border:0}
+ .selection-categories .kind-choices>a{--type-choice-image-size:100px;position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:11px;min-width:0;min-height:190px;padding:17px 12px;border:1px solid var(--line);text-align:center}
+ .selection-categories .kind-choices>a:focus-visible{outline:2px solid var(--forest);outline-offset:3px}
+ .kind-label{min-width:0;line-height:1.6}
+ .kind-label small{line-height:1.6}
+ .selection-categories .kind-choices>a>.kind-arrow{position:absolute;right:10px;top:10px;margin:0;font-size:12px}
+ @media(max-width:1000px){.selection-categories .kind-choices{grid-template-columns:repeat(3,minmax(0,1fr))}}
+ @media(max-width:720px){.selection-categories .kind-choices{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.selection-categories .kind-choices>a{--type-choice-image-size:76px;min-height:166px;padding:13px 9px;gap:8px;font-size:12px}}
  @media(max-width:720px){.selection-hero-product{gap:15px}}
 </style>

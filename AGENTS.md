@@ -1,7 +1,7 @@
 # 次のAIへの開始手順
 
 1. `README.md`、`docs/handoff.md`、`docs/constitution.md` を読み、現在の公開・申請状態を確認する。
-2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/014-advertising-privacy-product-depth/`、`specs/015-product-details-inline-maps/` で要件と受入条件を確認する。012/013の独自紹介・画像・SEOも継承し、変更目的と影響範囲を先に記録する。
+2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/016-visual-choices-mobile-security/` で要件と受入条件を確認する。012〜015の紹介・画像・SEO・Privacy/地図も継承し、変更目的と影響範囲を先に記録する。
 3. `src/lib/schema.ts`、`src/data/catalog.json`、`src/lib/affiliate.ts`、`src/content.config.ts` を読み、既存の分離を維持する。
 4. 変更後はリスクに応じた検証を実行し、仕様・タスク・変更履歴・引継ぎを実態に合わせて更新する。公開や提携承認を推測しない。
 
@@ -22,7 +22,7 @@
 
 ## コマンドと検証の範囲
 
-Node.js 24.22.1以上、pnpm 11.25.0。初回は `pnpm install --frozen-lockfile`。
+Node.js 24.22.3以上のサポート中の修正版、pnpm 11.25.0。初回は `pnpm install --frozen-lockfile`。Astro起動前とCIで最低版を検査する。
 
 - `pnpm check`：Astro型とコンテンツスキーマ、ID・参照・公開商品本文の整合性。
 - `pnpm test`：広告状態、fallback、URL、公開設定、実データ参照の重要ケース。
@@ -101,3 +101,15 @@ src/lib/seo.tsとBaseは正本から検索文・canonical・WebPage/BreadcrumbLi
 ユーザーの最新Maps依頼により旧008の『外部リンクのみ』より015を優先。Google Share生成の固定HTTPS origin/path/pbを許可したstore-map-embedsだけを使用。表示前iframe/Google接続なし、選択後だけ生成、closeで削除、保存なし。地図/ロゴ/帰属表示を隠さない。CSPはGoogle frame originだけ許可し、親connect none/hashed scripts等を維持。地図のSKU在庫やGoogleの営業表示を自動的な店舗事実にしない。公式確認できない候補はfallback。
 
 新機能の表示/Privacy/Mapsと配信の成否は最新verification/deployment-results。Google掲載/法令/ホスト契約/AdSense接続や合格を検査済と捏造しない。ソース書出しは最新0.14、原本PNGはgenerated-originals/0.14.0へ分ける。
+
+## 0.15 画像の種類選択・スマホ・出典一覧・security
+
+最新016、実測visual-mobile-stage。RegionalChoiceGuide/homeの種類入口には実際の公開商品・産地・種類に属する代表の単体AI図を使い、別カテゴリの図や人気順位を作らない。既存画像bytes/価格/絞込query/hashを維持し、短いAI表示を隠さない。
+
+Sourcesは初期closedのnative details[data-source-disclosure]に統一。価格周辺の確認日は繰り返さず、商品#product-sources内のdata-information-checks/data-market-check・購入根拠へ集約。店舗のdateもvisit-sourcesへ移す。データの確認日を新しくしたり、date/根拠を消したりしない。広告開示/AI/在庫の注意/公式CTAを一緒に隠さない。直接hashとnoJSのnative開閉を検証する。
+
+スマホでは画像/言語/絞込16px・操作域/長い見出し/横向き/固定CTAとfocusを実測し、overflow hiddenだけで症状を隠さない。touch emulationと実機Safariは区別。desktop/meta/日英価格・通常広告のgateも継承する。
+
+外部リンク検査はNode専用safe-outbound transportを使い、各hopのHTTPS/全DNS/addressと接続pin/timeout/body上限を保つ。攻撃用unitはresolver/transport注入で行い、内部IPへ実接続しない。pnpm auditの既知0と全安全を混同せず、Node本体のsecurity floorも確認する。machine global/DNS/契約/アカウントMFA変更やhost header設定を未実施で済みとしない。詳細security-review-v15/security。
+
+最新ソースは0.15。新規画像生成はなく98画像を保持し、PNG原本は0.14別納品を参照。検証/完了/配信/全ファイルSHAは最新handoff/verification/deployment-results/外部package proofを確認する。

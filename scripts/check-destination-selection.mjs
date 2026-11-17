@@ -77,8 +77,10 @@ async function inspectDirectory(page,locale,width){
  assert.ok(noteText.includes(String(research.year)));
  assert.match(noteText,locale==='ja'?/全目的/:/all.*purposes/i);
  assert.match(noteText,locale==='ja'?/複数回答/:/multiple answers/i);
- assert.equal(await note.locator('a').getAttribute('href'),research.dataUrl);
- assert.equal(await note.locator('a').getAttribute('target'),'_blank');
+ const citation=directory.locator('[data-tourism-ranking-sources] a');
+ assert.equal(await citation.getAttribute('href'),research.dataUrl);
+ assert.equal(await citation.getAttribute('target'),'_blank');
+ assert.equal(await citation.isVisible(),false,'The metric stays visible; the source list opens on request.');
  const rows=[];
  for(const expected of expectedRanking){
   const row=directory.locator('[data-region-group="ranked"] [data-region-row="'+expected.prefectureId+'"]');

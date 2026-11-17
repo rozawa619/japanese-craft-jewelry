@@ -1,6 +1,8 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import {safeHttps} from '../src/lib/affiliate.ts';
+import {checkPublicHttps,OutboundPolicyError} from './lib/safe-outbound.ts';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const inputFiles = ['src/data/catalog.json', 'src/data/visits.json', 'docs/research/sources.json', 'docs/research/affiliate-sources.json'];
@@ -10,8 +12,8 @@ function collect(value, source, path = '') {
   if (value && typeof value === 'object') return Object.entries(value).forEach(([key, entry]) => collect(entry, source, `${path}.${key}`));
   if (typeof value !== 'string' || !/^https:\/\/[^\s<>"`]+$/.test(value)) return;
   try {
-    const url = new URL(value);
-    if (url.username || url.password) throw new Error(`Credential-bearing URL in ${source}${path}`);
+    const safe=safeHttps(value);if(!safe)throw new Error(`Unsafe public HTTPS URL in ${source}${path}`);
+    const url = new URL(safe);
     url.hash = '';
     const normalized = url.href;
     if (!urls.has(normalized)) urls.set(normalized, []);
@@ -38,14 +40,12 @@ function classify(status, finalUrl) {
 async function check([url, references]) {
   const started = performance.now();
   try {
-    // A single GET avoids treating merchants that reject HEAD as unavailable.
-    // Cancel the response body: status and headers are enough for this link check.
-    const response = await fetch(url, { method: 'GET', redirect: 'follow', signal: AbortSignal.timeout(15_000), headers: { 'User-Agent': 'JapaneseCraftJewelry-Link-Check/0.11', Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.5' } });
-    const result = { url, references, method: 'GET', status: response.status, finalUrl: response.url, redirected: response.redirected, contentType: response.headers.get('content-type'), classification: classify(response.status, response.url), durationMs: Math.round(performance.now() - started) };
-    await response.body?.cancel();
-    return result;
+    // Every redirect and DNS address is checked before a direct TLS connection.
+    // The transport pins that checked DNS result and discards bodies at headers.
+    const response=await checkPublicHttps(url);
+    return {url,references,method:'GET',status:response.status,finalUrl:response.finalUrl,redirected:response.redirected,contentType:response.contentType,redirectHops:response.hops,classification:classify(response.status,response.finalUrl),durationMs:Math.round(performance.now()-started)};
   } catch (error) {
-    return { url, references, method: 'GET', status: null, finalUrl: null, redirected: null, contentType: null, classification: ['TimeoutError', 'AbortError'].includes(error.name) ? 'review_timeout' : 'review_network_error', error: error.cause?.code || error.name, durationMs: Math.round(performance.now() - started) };
+    return { url, references, method: 'GET', status: null, finalUrl: null, redirected: null, contentType: null, classification:error instanceof OutboundPolicyError?'review_unsafe_destination':['TimeoutError', 'AbortError'].includes(error.name)?'review_timeout':'review_network_error',error:error instanceof OutboundPolicyError?error.code:error.cause?.code||error.name,durationMs:Math.round(performance.now()-started)};
   }
 }
 const pending = [...urls.entries()];
@@ -63,7 +63,7 @@ for (const result of results) summary[result.classification] = (summary[result.c
 const report = {
   checkedAt: new Date().toISOString(),
   checkedDateJapan: new Intl.DateTimeFormat('sv-SE', { timeZone: 'Asia/Tokyo' }).format(new Date()),
-  method: 'HTTPS GET, redirect-follow, 15-second timeout, concurrency 4; response bodies canceled after headers',
+  method:'Direct HTTPS GET, at most5 manual redirects, public-unicast A/AAAA validation and pinned lookup at every hop,15-second whole-chain timeout,concurrency4;TLS certificate verification enabled,environment proxies not used,bodies discarded after headers',
   interpretation: 'Reachability only; does not confirm product facts, eligibility, licensing, active stock or approval. Restricted, missing, temporary and network results require manual recheck; no result alone proves closure.',
   inputFiles, total: results.length, summary, results,
 };

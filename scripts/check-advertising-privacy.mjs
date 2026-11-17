@@ -32,5 +32,5 @@ check('Generated pages contain no Google advertising, analytics or fake consent 
  report.pages=files.length;return {htmlPages:files.length,footerPages,noAdvertisingRequestsInitiatedByTags:true};
 });
 report.completedAt=new Date().toISOString();report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,htmlPages:report.pages,mode:advertisingPrivacy.mode};
-writeFileSync(resolve(root,process.env.CHECK_PRIVACY_REPORT_PATH||'docs/privacy-depth-stage-static-privacy-results.json'),JSON.stringify(report,null,2)+'\n');
+writeFileSync(resolve(root,process.env.CHECK_PRIVACY_REPORT_PATH||'docs/visual-mobile-stage-static-privacy-results.json'),JSON.stringify(report,null,2)+'\n');
 console.log(report.summary);for(const failure of report.failures)console.error(failure);if(report.failures.length)process.exitCode=1;

@@ -18,7 +18,7 @@ const guide=visitGuideForProduct(productId,locale);
  <div class="visit-store-layout"><div class="visit-store-information">
   <h3>{store.name[locale]}</h3><p class="visit-summary">{store.visitSummary[locale]}</p>
   <dl class="visit-meta"><div><dt>{t(locale,'Address','住所')}</dt><dd>{store.address[locale]}</dd></div>{store.hours&&<div><dt>{t(locale,'Opening hours','営業時間')}</dt><dd>{store.hours[locale]}</dd></div>}{store.closedDays&&<div><dt>{t(locale,'Closed','定休日')}</dt><dd>{store.closedDays[locale]}</dd></div>}{store.access&&<div><dt>{t(locale,'Getting there','アクセス')}</dt><dd>{store.access[locale]}</dd></div>}</dl>
-  <p class="visit-stock-note">{store.stockNote[locale]}</p><p class="visit-checked">{t(locale,'Information checked ','情報確認：')}{store.checkedAt}</p>
+  <p class="visit-stock-note">{store.stockNote[locale]}</p>
   <div class="visit-map-actions"><a href={store.officialStoreUrl} target="_blank" rel="noopener noreferrer" data-store-official-url>{t(locale,'Official store guide','公式の店舗案内')} <span aria-hidden="true">↗</span></a>{maps&&<><a href={maps.search} target="_blank" rel="noopener noreferrer" data-map-action="search">{t(locale,'Find on Google Maps','Google マップで見る')} <span aria-hidden="true">↗</span></a><a href={maps.directions} target="_blank" rel="noopener noreferrer" data-map-action="directions">{t(locale,'Directions on Google Maps','Google マップで経路を見る')} <span aria-hidden="true">↗</span></a></>}</div>
  </div>
  {embed&&<aside class="inline-map" data-inline-map data-map-embed={embed} data-map-title={t(locale,'Map: ','地図：')+store.name[locale]} data-map-opened={t(locale,'Map displayed.','地図を表示しました。')} data-map-closed={t(locale,'Map closed.','地図を閉じました。')} aria-label={t(locale,'Map for ','店舗の地図：')+store.name[locale]}>
@@ -28,7 +28,7 @@ const guide=visitGuideForProduct(productId,locale);
  </aside>}
  </div>
  </article>})}</div>:<p class="visit-fallback" data-store-fallback>{guide.fallback||t(locale,'Explore the official product information and store guide for current visiting options.','公式の商品情報や店舗案内から、現在の取扱いをご覧ください。')}</p>}
- {guide.sourceIds.length>0&&<details class="visit-sources"><summary>{t(locale,'Store information sources','店舗情報の出典')}</summary><Sources sourceIds={guide.sourceIds} locale={locale}/></details>}
+ {guide.sourceIds.length>0&&<Sources sourceIds={guide.sourceIds} locale={locale} className="visit-sources"><section class="information-checks" aria-label={t(locale,'Store information checks','店舗情報の確認日')}><h2>{t(locale,'Store information checks','店舗情報の確認日')}</h2><dl>{guide.stores.map(store=><div data-store-information-checked={store.id}><dt>{store.name[locale]}</dt><dd><time datetime={store.checkedAt}>{store.checkedAt}</time></dd></div>)}</dl></section></Sources>}
 </section>
 <script>
  import {reviewedMapEmbedUrl} from '../lib/map-embed-url';
@@ -71,9 +71,9 @@ const guide=visitGuideForProduct(productId,locale);
  .map-canvas{height:100%}
  .map-canvas :global(iframe){display:block;width:100%;height:100%;border:0}
  .map-caption{padding-top:10px}
- .map-caption p,.map-no-script{font-size:10px;line-height:1.8;color:var(--muted);margin:0}
- .map-caption button{display:block;margin:7px 0 0 auto;padding:6px 0;min-height:32px;font:inherit;font-size:10px;color:var(--forest);background:none;border:0;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+ .map-caption p,.map-no-script{font-size:12px;line-height:1.8;color:var(--muted);margin:0}
+ .map-caption button{display:block;margin:7px 0 0 auto;padding:10px 8px;min-height:44px;font:inherit;font-size:12px;color:var(--forest);background:none;border:0;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
  .map-canvas[hidden],.map-placeholder[hidden],.map-caption button[hidden]{display:none}
  @media(max-width:1000px){.visit-store-layout{grid-template-columns:1fr}.inline-map{justify-self:start;max-width:100%}}
- @media(max-width:720px){.map-viewport{height:210px}.map-placeholder{padding:18px}.map-prompt{font-size:15px}.map-caption p{font-size:10px}}
+ @media(max-width:720px){.map-viewport{height:210px}.map-placeholder{padding:18px}.map-prompt{font-size:15px}.map-caption p{font-size:12px}}
 </style>

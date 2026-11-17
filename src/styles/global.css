@@ -223,3 +223,49 @@ html[lang=ja] .purchase-story h2,html[lang=ja] .purchase-next h2{letter-spacing:
 
 .visit-heading{max-width:100%}
 @media(min-width:721px){.visit-store:only-child{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:36px;align-items:start}.visit-store:only-child h3,.visit-store:only-child .visit-summary,.visit-store:only-child .visit-stock-note,.visit-store:only-child .visit-checked{grid-column:1}.visit-store:only-child .visit-meta{grid-column:2;grid-row:1/5}.visit-store:only-child .visit-map-actions{grid-column:1/-1}}
+
+/* 0.15: keep mobile controls readable and clear of the floating product link. */
+.site-header .language-switch{min-height:44px}
+.desktop-nav a{display:inline-flex;align-items:center;min-height:44px}
+@media(max-width:1000px){
+ .filters label select,#price-sort{font-size:16px;min-height:48px;line-height:1.5}
+}
+@media(max-width:720px){
+ html{scroll-padding-block:20px 136px}
+ a,button,summary,select{scroll-margin-block:12px}
+ .site-header .language-switch{min-width:88px;min-height:44px;font-size:12px;padding:9px;gap:6px}
+ .site-header .mobile-nav summary{min-height:44px;font-size:12px;display:flex;align-items:center;gap:6px;padding:10px 0}
+ .site-header .mobile-nav summary span{margin-left:0}
+ .site-header .mobile-nav nav{top:100%;max-height:calc(100dvh - 130px);overflow-y:auto;overscroll-behavior:contain}
+ .site-header .mobile-nav nav a{min-height:44px;display:flex;align-items:center;font-size:14px}
+ .selection-actions .text-link,.hero-secondary,.card-actions .text-link,.card-actions .retailer-link.compact{min-height:44px;display:inline-flex;align-items:center;font-size:12px}
+ .breadcrumbs a{min-height:32px;display:inline-flex;align-items:center}
+ .filters label,.sort-row label{font-size:12px;letter-spacing:.3px}
+ .filters label select,#price-sort{font-size:16px;min-height:48px;line-height:1.5}
+ .filters .reset-button{min-height:48px;font-size:14px}
+ .sort-row>p,.results-bar{font-size:12px;line-height:1.8}
+ .product-card .card-meta{font-size:10px;line-height:1.7}
+ .product-card .maker-name{font-size:12px}
+ html .product-card .card-summary{font-size:13px;line-height:1.85}
+ .purchase-product-name{font-size:13px;line-height:1.7}
+ .purchase-buy .market-official-source a{display:inline-flex;align-items:center;min-height:44px;font-size:12px;line-height:1.7}
+ .purchase-visual .official-visual-link{font-size:12px}
+ .purchase-next h2{font-size:clamp(24px,6.5vw,27px);text-wrap:pretty}
+ .product-sticky-cta{bottom:calc(8px + env(safe-area-inset-bottom));padding:10px 12px;gap:12px}
+ .product-sticky-cta .sticky-product-name{font-size:11px;max-width:145px}
+ .product-sticky-cta .retailer-link{min-height:48px;display:flex;align-items:center;font-size:13px;padding:12px 14px;gap:12px}
+ .site-footer .footer-grid>div:not(:first-child)>a{min-height:44px;display:flex;align-items:center;margin-bottom:2px;font-size:13px}
+ .site-footer .footer-description{font-size:13px;line-height:1.85}
+ [data-source-disclosure]>summary,.visit-sources>summary,.collection-context>summary{min-height:44px;align-content:center;font-size:13px;line-height:1.7;padding-block:10px}
+}
+@media(max-width:420px){
+ #object-filters.filters{grid-template-columns:minmax(0,1fr);padding:18px;gap:16px}
+ #all-jewelry .results-bar{flex-direction:column;gap:8px}
+ #all-jewelry .results-bar>p:last-child{max-width:none;text-align:left}
+ html[lang=ja] .page-heading h1{font-size:clamp(28px,8.5vw,34px);text-wrap:pretty}
+ .site-header .brand-tag{display:none}
+}
+@media(max-width:720px) and (max-height:500px){
+ .product-sticky-cta{display:none}
+ html{scroll-padding-bottom:20px}
+}

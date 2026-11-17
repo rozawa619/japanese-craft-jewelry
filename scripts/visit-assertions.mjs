@@ -26,7 +26,10 @@ export async function assertVisitGuide(page,product,locale,catalog,visits){
   const text=await store.innerText();
   for(const field of ['name','address','visitSummary','stockNote'])assert.ok(text.includes(source[field][locale]),id+' '+field);
   for(const field of ['hours','closedDays','access'])if(source[field])assert.ok(text.includes(source[field][locale]),id+' '+field);
-  assert.ok(text.includes(source.checkedAt));assert.equal(await store.locator('.visit-stock-note').isVisible(),true,'Pre-visit stock/contact guidance must stay visible.');
+  const dates=section.locator('[data-store-information-checked="'+id+'"]');
+  assert.equal(await dates.locator('time').getAttribute('datetime'),source.checkedAt);
+  assert.equal(await dates.isVisible(),false,'Store dates belong to the initially closed source list.');
+  assert.equal(await store.locator('.visit-stock-note').isVisible(),true,'Pre-visit stock/contact guidance must stay visible.');
   assert.equal(await store.locator('[data-store-official-url]').getAttribute('href'),new URL(source.officialStoreUrl).href);
   const maps=storeMapLinks(source);assert.ok(maps);
   for(const action of ['search','directions']){

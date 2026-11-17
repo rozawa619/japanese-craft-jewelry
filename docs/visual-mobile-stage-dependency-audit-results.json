@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-11-17T04:59:13.198Z",
+  "node": "24.22.3",
+  "pnpm": "11.25.0",
+  "command": "pnpm audit --json",
+  "status": "passed",
+  "advisories": {},
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0
+    },
+    "dependencies": 184,
+    "devDependencies": 79,
+    "optionalDependencies": 85,
+    "totalDependencies": 348
+  }
+}

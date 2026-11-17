@@ -1,0 +1,16 @@
+---
+import type {EditorialImage} from '../lib/editorial-images';
+import {t,type Locale} from '../lib/i18n';
+import {path} from '../config/site';
+interface Props{image:EditorialImage;locale:Locale;productId:string}
+const {image,locale,productId}=Astro.props;
+---
+<figure class="type-choice-image" data-type-choice-product={productId} data-type-choice-asset={image.assetId}>
+ <img data-type-choice-image src={path(image.path)} width={image.width} height={image.height} alt={image.alt[locale]} loading="lazy" decoding="async"/>
+ <figcaption>{t(locale,'AI image','AIイメージ')}</figcaption>
+</figure>
+<style>
+ .type-choice-image{flex:none;width:var(--type-choice-image-size,84px);max-width:100%;margin:0;background:#f2efe8;border:1px solid var(--line)}
+ img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain}
+ figcaption{font:10px/1.5 var(--sans);color:var(--muted);padding:4px 3px;text-align:center;border-top:1px solid var(--line)}
+</style>

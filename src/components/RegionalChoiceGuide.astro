@@ -1,7 +1,10 @@
 ---
 import raw from '../data/region-choice-notes.json';
+import TypeChoiceImage from './TypeChoiceImage.astro';
 import {labels} from '../lib/catalog';
 import {marketPricesFor,formatMarketPrice} from '../lib/market-prices';
+import {productDetailImageFor} from '../lib/product-detail-images';
+import {typeChoicesFor} from '../lib/type-choices';
 import {pagePath} from '../config/site';
 import {t,type Locale} from '../lib/i18n';
 import type {Product} from '../lib/schema';
@@ -9,18 +12,22 @@ interface Props{prefectureId:string;products:Product[];locale:Locale}
 const {prefectureId,products,locale}=Astro.props;
 const note=(raw as Record<string,Record<Locale,string>>)[prefectureId]?.[locale];
 if(!note?.trim())throw new Error('A published region needs localized choice context: '+prefectureId+'/'+locale);
-const groups=[...new Set(products.flatMap(product=>product.productType))].map(type=>{
- const items=products.filter(product=>product.productType.includes(type));
+const groups=typeChoicesFor(products,prefectureId).map(group=>{
+ const {items}=group;
  const prices=items.flatMap(product=>{const value=marketPricesFor(product.id).japan;return value?[value]:[]}).sort((a,b)=>a.amount-b.amount);
  const minimum=prices[0],maximum=prices.at(-1);
- return {type,items,minimum,maximum,unknown:items.length-prices.length};
+ return {...group,image:productDetailImageFor(group.representative.id),minimum,maximum,unknown:items.length-prices.length};
 });
 ---
 <section class="regional-choice" data-regional-choice={prefectureId} aria-labelledby={'regional-choice-'+prefectureId}>
  <div><p class="eyebrow">{t(locale,'START WITH YOUR PREFERENCE','好きなかたちを、旅先で')}</p><h2 id={'regional-choice-'+prefectureId}>{t(locale,'Where would you start?','この産地なら、何から選ぶ？')}</h2></div>
- <div><p class="regional-choice-intro">{note}</p><div class="regional-type-choices">{groups.map(group=><a href={pagePath(`objects/?prefecture=${prefectureId}&type=${group.type}#all-jewelry`,locale)} data-regional-type-choice={group.type}><strong>{labels('productTypes',[group.type],locale)} <span>{t(locale,`${group.items.length} ${group.items.length===1?'piece':'pieces'}`,`${group.items.length}点`)}</span></strong><span class="regional-type-price">{group.minimum?formatMarketPrice(group.minimum,locale)+(group.maximum&&group.maximum.amount!==group.minimum.amount?' – '+formatMarketPrice(group.maximum,locale):''):t(locale,'Price not confirmed','価格未確認')}{group.unknown>0&&group.minimum&&<small>{t(locale,'Includes unconfirmed prices','価格未確認の商品を含む')}</small>}</span><span class="regional-choice-arrow" aria-hidden="true">↗</span></a>)}</div><p class="regional-choice-price-note">{t(locale,'Japan online reference prices of the listed pieces, not a confirmed in-store price range.','掲載商品の日本向け通販参考価格です。店頭の価格帯を確認したものではありません。')}</p></div>
+ <div><p class="regional-choice-intro">{note}</p><div class="regional-type-choices">{groups.map(group=><a href={pagePath(`objects/?prefecture=${prefectureId}&type=${group.type}#all-jewelry`,locale)} data-regional-type-choice={group.type}>
+  <TypeChoiceImage image={group.image} productId={group.representative.id} locale={locale}/>
+  <div class="regional-type-copy"><strong>{labels('productTypes',[group.type],locale)} <span>{t(locale,`${group.items.length} ${group.items.length===1?'piece':'pieces'}`,`${group.items.length}点`)}</span></strong><span class="regional-type-price">{group.minimum?formatMarketPrice(group.minimum,locale)+(group.maximum&&group.maximum.amount!==group.minimum.amount?' – '+formatMarketPrice(group.maximum,locale):''):t(locale,'Price not confirmed','価格未確認')}{group.unknown>0&&group.minimum&&<small>{t(locale,'Includes unconfirmed prices','価格未確認の商品を含む')}</small>}</span></div>
+  <span class="regional-choice-arrow" aria-hidden="true">↗</span>
+ </a>)}</div><p class="regional-choice-price-note">{t(locale,'Japan online reference prices of the listed pieces, not a confirmed in-store price range.','掲載商品の日本向け通販参考価格です。店頭の価格帯を確認したものではありません。')}</p></div>
 </section>
 <style>
- .regional-choice{display:grid;grid-template-columns:1fr 1.5fr;gap:7%;padding:36px 0 43px;border-block:1px solid var(--line);margin-bottom:45px}.regional-choice h2{font-size:clamp(27px,3vw,37px);line-height:1.35;margin-top:12px}.regional-choice-intro{font-size:14px;line-height:1.95;margin:0 0 22px}.regional-type-choices{display:grid;gap:9px}.regional-type-choices>a{position:relative;border:1px solid var(--line);padding:14px 35px 14px 15px;text-decoration:none;background:#eeeee5;min-width:0}.regional-type-choices strong{font:14px/1.6 var(--sans);display:flex;gap:15px;justify-content:space-between;align-items:start}.regional-type-choices strong span{font-size:11px;white-space:nowrap}.regional-type-price{display:block;font-size:11px;line-height:1.8;margin-top:5px;overflow-wrap:anywhere}.regional-type-price small{display:block;font-size:9px;color:var(--muted)}.regional-choice-arrow{position:absolute;right:13px;top:17px}.regional-choice-price-note{font-size:10px;line-height:1.8;color:var(--muted);margin:12px 0 0}
- @media(max-width:720px){.regional-choice{grid-template-columns:1fr;gap:22px;padding:29px 0 32px;margin-bottom:30px}.regional-choice-intro{font-size:13px}.regional-type-choices strong{font-size:13px}}
+ .regional-choice{display:grid;grid-template-columns:1fr 1.5fr;gap:7%;padding:36px 0 43px;border-block:1px solid var(--line);margin-bottom:45px}.regional-choice h2{font-size:clamp(27px,3vw,37px);line-height:1.35;margin-top:12px}.regional-choice-intro{font-size:14px;line-height:1.95;margin:0 0 22px}.regional-type-choices{display:grid;gap:9px}.regional-type-choices>a{--type-choice-image-size:84px;position:relative;display:flex;align-items:center;gap:14px;border:1px solid var(--line);padding:12px 32px 12px 12px;text-decoration:none;background:#eeeee5;min-width:0;min-height:44px}.regional-type-choices>a:hover{border-color:var(--muted)}.regional-type-choices>a:focus-visible{outline:2px solid var(--forest);outline-offset:3px}.regional-type-copy{flex:1;min-width:0}.regional-type-choices strong{font:14px/1.6 var(--sans);display:flex;flex-wrap:wrap;gap:3px 12px;justify-content:space-between;align-items:start}.regional-type-choices strong span{font-size:11px;white-space:nowrap}.regional-type-price{display:block;font-size:11px;line-height:1.8;margin-top:5px;overflow-wrap:anywhere}.regional-type-price small{display:block;font-size:9px;color:var(--muted)}.regional-choice-arrow{position:absolute;right:12px;top:50%;transform:translateY(-50%)}.regional-choice-price-note{font-size:10px;line-height:1.8;color:var(--muted);margin:12px 0 0}
+ @media(max-width:720px){.regional-choice{grid-template-columns:1fr;gap:22px;padding:29px 0 32px;margin-bottom:30px}.regional-choice-intro{font-size:13px}.regional-type-choices>a{--type-choice-image-size:76px;gap:12px;padding-right:28px}.regional-type-choices strong{font-size:13px}}
 </style>

@@ -1,6 +1,7 @@
 ---
 import EditorialImage from './EditorialImage.astro';
 import OfficialPreview from './OfficialPreview.astro';
+import Sources from './Sources.astro';
 import {catalogFor,productsFor,labels} from '../lib/catalog';
 import MarketPrice from './MarketPrice.astro';
 import {productImageFor} from '../lib/editorial-images';
@@ -38,7 +39,7 @@ const groups=hasRanking?[
   {showAllLink&&<a class="text-link" href={pagePath('objects/#all-jewelry',locale)}>{t(locale,'Browse all jewelry','すべての商品を探す')}<span aria-hidden="true">→</span></a>}
  </div>
  <p class="region-selector-intro">{t(locale,'Where will Japan take you? Choose a region to explore its jewelry. The piece beside each destination is our starting point for the selection.','次の旅先で出会いたい、身につける工芸。産地を選ぶと、その土地の商品をまとめて見られます。右の一品を入り口に、気になるかたちを探してください。')}</p>
- {hasRanking&&<p class="region-ranking-note" data-tourism-ranking-note>{t(locale,`Ordered by prefectural visit rate in ${tourismRanking.year}: all nationalities and purposes, with multiple answers allowed. This ranks travel destinations; the jewelry is selected by us.`,`${tourismRanking.year}年の訪日客の訪問率順。全目的・全国籍地域・複数回答の調査です。商品の人気順位ではありません。`)} <a href={tourismRanking.sourceUrl!} target="_blank" rel="noopener noreferrer">{tourismRanking.sourceTitle[locale]}<span class="sr-only">{t(locale,' (opens in a new tab)','（新しいタブで開く）')}</span> ↗</a></p>}
+ {hasRanking&&<><p class="region-ranking-note" data-tourism-ranking-note>{t(locale,`Ordered by prefectural visit rate in ${tourismRanking.year}: all nationalities and purposes, with multiple answers allowed. This ranks travel destinations; the jewelry is selected by us.`,`${tourismRanking.year}年の訪日客の訪問率順。全目的・全国籍地域・複数回答の調査です。商品の人気順位ではありません。`)}</p><div data-tourism-ranking-sources><Sources sourceIds={['jta-2025-visit-rates-v9']} locale={locale}/></div></>}
  {groups.filter(group=>group.rows.length>0).map(group=><div class="region-selection-group" data-region-group={group.kind}>
   {group.title&&<h3 class="region-group-title">{group.title}</h3>}
   <div class="region-selection-rows">{group.rows.map(({region,note,local,representative,rank,image})=>{

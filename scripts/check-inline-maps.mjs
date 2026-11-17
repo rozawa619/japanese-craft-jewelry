@@ -5,7 +5,8 @@ import {dirname} from 'node:path';
 import {reviewedMapEmbedUrl} from '../src/lib/map-embed-url.ts';
 
 const origin=process.env.CHECK_BASE_URL||'http://127.0.0.1:4322';
-const reportPath=process.env.CHECK_REPORT_PATH||'artifacts/inline-maps-browser-v14.json';
+const reportPath=process.env.CHECK_REPORT_PATH||'docs/visual-mobile-stage-maps-results.json';
+const prefix=(process.env.CHECK_SCREENSHOT_PREFIX||'visual-mobile-stage-map').replace(/[^a-zA-Z0-9_-]/g,'-');
 const base='/'+(process.env.PUBLIC_BASE_PATH||'japanese-craft-jewelry').split('/').filter(Boolean).join('/')+'/';
 const catalog=JSON.parse(await readFile('src/data/catalog.json','utf8'));
 const visits=JSON.parse(await readFile('src/data/visits.json','utf8'));
@@ -40,7 +41,8 @@ try{
    assert.ok(requests.some(r=>r.origin==='https://www.google.com'&&r.path==='/maps/embed'));
    const dimensions=await iframe.boundingBox();const expectedHeight=width<=720?210:230;assert.ok(Math.abs(Math.round(dimensions.height)-expectedHeight)<=2,'The nominal map height includes its 2px border.');if(width===1440)assert.ok(Math.abs(Math.round(dimensions.width)-320)<=2);
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'The map must fit a 320px page.');
-   await panel.scrollIntoViewIfNeeded();const screenshot='artifacts/inline-map-'+key+'-v14.png';await page.screenshot({path:screenshot,fullPage:false});
+   await frame.locator('body').evaluate(async()=>{await document.fonts.ready;await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))});
+   await panel.scrollIntoViewIfNeeded();const screenshot='artifacts/'+prefix+'-'+key+'.png';await page.screenshot({path:screenshot,fullPage:false});
    await panel.locator('[data-close-map]').click();assert.equal(await panel.locator('iframe').count(),0);assert.equal(await panel.locator('[data-load-map]').isVisible(),true);assert.equal(await panel.locator('[data-load-map]').getAttribute('aria-expanded'),'false');
    const localAfter=await page.evaluate(()=>({local:Object.keys(localStorage),session:Object.keys(sessionStorage)}));assert.deepEqual(localAfter,localBefore,'Map choice must not be persisted by this site.');
    requests.length=0;await page.reload({waitUntil:'networkidle'});assert.equal(await panel.locator('iframe').count(),0);assert.equal(requests.length,0,'Reload must not restore a map or connect to Google.');

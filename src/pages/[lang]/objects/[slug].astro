@@ -20,7 +20,8 @@ import {buyingGuideFor} from '../../../lib/product-buying-guides';
 import PurchaseEvidence from '../../../components/PurchaseEvidence.astro';
 import {selectionNoteFor} from '../../../lib/selection-notes';
 import {catalogFor,productsFor,makerFor,labels} from '../../../lib/catalog';
-import {marketPricesFor} from '../../../lib/market-prices';
+import {marketPricesFor,formatMarketPrice} from '../../../lib/market-prices';
+import {purchaseEvidenceFor} from '../../../lib/purchase-evidence';
 import {contentFor,contentSlug} from '../../../lib/content';
 import {locales,t} from '../../../lib/i18n';
 import {pagePath} from '../../../config/site';
@@ -49,6 +50,8 @@ const seenMaterials=new Set(p.materialIds);
 for(const candidate of candidates){const material=candidate.materialIds[0];if(material&&!seenMaterials.has(material)){related.push(candidate);seenMaterials.add(material)}if(related.length===3)break}
 for(const candidate of candidates){if(related.length===3)break;if(!related.some(item=>item.id===candidate.id))related.push(candidate)}
 const markets=marketPricesFor(p.id);
+const purchaseEvidence=purchaseEvidenceFor(p.id);
+const allSourceIds=[...new Set([...sourceIds,...(markets.japan?.sourceIds||[]),...(markets.international?.sourceIds||[]),...purchaseEvidence.sourceIds])];
 const hasDestination=markets.japanLinks.length>0;
 const showInternational=!!markets.international||markets.internationalLinks.length>0;
 const visibleMarketLinkIds=[...markets.japanLinks,...(showInternational?markets.internationalLinks:[]),...related.flatMap(product=>marketPricesFor(product.id).japanLinks)].map(link=>link.id);
@@ -67,7 +70,6 @@ const destinationNote=t(locale,'Opens the official website in a new tab.','公�
    <div class="purchase-market-block" data-market-section="japan">
     <MarketPrice productId={p.id} locale={locale} variant="detail" primary/>
     <p class="purchase-market-note">{t(locale,'Online reference price in Japan. In-store price is not confirmed.','日本向け通販の参考価格です。実店舗の価格は未確認です。')}</p>
-    <PurchaseEvidence productId={p.id} locale={locale}/>
     {p.availability==='out_of_stock'&&<p class="purchase-stock-note">{t(locale,'Out of stock when checked.','確認時点では欠品しています。')}</p>}
     <div class="purchase-primary" data-product-primary-cta><MarketPurchaseLink productId={p.id} locale={locale} label={destinationLabel}/></div>
     {markets.japanLinks.map(link=><p class="market-official-source"><a href={link.url} target="_blank" rel="noopener noreferrer" data-japan-official-url={link.id}>{t(locale,'Explore the official details & options','公式の仕様・選択肢を見る')} <span aria-hidden="true">↗</span><span class="sr-only">{t(locale,' (official product information, opens in a new tab)','（公式商品情報、新しいタブで開く）')}</span></a></p>)}
@@ -89,9 +91,15 @@ const destinationNote=t(locale,'Opens the official website in a new tab.','公�
  <VisitGuide productId={p.id} locale={locale}/>
  <section class="purchase-next"><div><h2>{t(locale,'Found a detail you love?','気になったら、お店で。')}</h2><p>{t(locale,'Take a closer look on the Japan official listing.','日本向けの公式ページで、気になるデザインをもう一度。')}</p></div><div><MarketPurchaseLink productId={p.id} locale={locale} label={destinationLabel}/><p class="purchase-destination-note">{destinationNote}</p></div></section>
  <div class="purchase-information">
-  <details class="purchase-details" data-product-details><summary>{t(locale,'Materials, size & fittings','素材・サイズ・金具について')}</summary><div class="purchase-details-body"><dl class="spec-list">{specs.map(([label,value])=><div><dt>{label}</dt><dd>{value}</dd></div>)}</dl><h2>{t(locale,'Materials & finish notes','素材・仕上げの補足')}</h2><ul>{p.whatToCheck.map(item=><li>{item}</li>)}</ul><p class="purchase-price-note">{t(locale,'Product information checked ','商品情報の確認：')}{p.lastVerifiedAt}</p></div></details>
+  <details class="purchase-details" data-product-details><summary>{t(locale,'Materials, size & fittings','素材・サイズ・金具について')}</summary><div class="purchase-details-body"><dl class="spec-list">{specs.map(([label,value])=><div><dt>{label}</dt><dd>{value}</dd></div>)}</dl><h2>{t(locale,'Materials & finish notes','素材・仕上げの補足')}</h2><ul>{p.whatToCheck.map(item=><li>{item}</li>)}</ul></div></details>
   <details class="purchase-details"><summary>{t(locale,'Maker, craft & provenance','作り手・工芸・産地について')}</summary><div class="purchase-details-body"><h2><a href={href('makers/'+maker.id+'/')}>{maker.name}</a></h2><p>{maker.productionNote}</p><p>{p.craftClassification.label}</p>{craftNotes.map(note=><p><a href={href('crafts/'+contentSlug(note)+'/')}>{note.data.title} →</a></p>)}</div></details>
-  <details class="purchase-details" id="product-sources"><summary>{t(locale,'Sources & information checks','出典・情報の確認について')}</summary><div class="purchase-details-body"><Sources sourceIds={sourceIds} locale={locale}/></div></details>
+  <Sources sourceIds={allSourceIds} locale={locale} id="product-sources" className="purchase-details">
+   <section class="information-checks" data-information-checks aria-label={t(locale,'Information checks','情報の確認日')}>
+    <h2>{t(locale,'Information checks','情報の確認日')}</h2>
+    <dl><div><dt>{t(locale,'Product information','商品情報')}</dt><dd><time datetime={p.lastVerifiedAt}>{p.lastVerifiedAt}</time></dd></div>{(['japan','international'] as const).map(market=>{const value=markets[market];return value&&<div data-market-check={market}><dt>{market==='japan'?t(locale,'Japan reference price','日本向け通販の参考価格'):t(locale,'International store price','海外通販の参考価格')}</dt><dd>{formatMarketPrice(value,locale)}{value.checkedAt&&<> · <time datetime={value.checkedAt}>{value.checkedAt}</time></>}</dd></div>})}</dl>
+    <PurchaseEvidence productId={p.id} locale={locale}/>
+   </section>
+  </Sources>
  </div>
  <section class="related purchase-related"><h2>{t(locale,'More pieces to love.','こちらのジュエリーも。')}</h2><div class="product-grid">{related.map((product,i)=><ProductCard product={product} index={i} locale={locale}/>)}</div></section>
  {hasDestination&&<aside class="product-sticky-cta" data-product-sticky-cta hidden aria-label={t(locale,'Japan reference price and official listing','日本向け参考価格と公式ページ')}><div><span class="sticky-product-name">{p.title}</span><MarketPrice productId={p.id} locale={locale} variant="sticky"/></div><MarketPurchaseLink productId={p.id} locale={locale} label={t(locale,'Japan listing','国内ページへ')}/></aside>}

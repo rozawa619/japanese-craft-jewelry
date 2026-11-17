@@ -2,6 +2,8 @@ import {createRequire} from 'node:module';
 import {readFileSync} from 'node:fs';
 import {dirname,resolve} from 'node:path';
 import {spawnSync} from 'node:child_process';
+import {assertProjectRuntime} from './check-runtime.mjs';
+assertProjectRuntime();
 const require=createRequire(import.meta.url);
 const packagePath=require.resolve('astro/package.json');
 const pkg=JSON.parse(readFileSync(packagePath,'utf8'));

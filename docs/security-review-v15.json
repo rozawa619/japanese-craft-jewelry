@@ -1,0 +1,384 @@
+{
+  "checkedAt": "2026-11-17T04:47:39.546Z",
+  "scope": "0.15 source/CI/dependency and operator-tool security review. No security guarantee or complete penetration test. Public application remains a static site without a Node server, account, checkout, public write API or database.",
+  "findings": [
+    {
+      "id": "SEC15-01",
+      "title": "External link-check tool automatically followed unvalidated redirects/DNS",
+      "status": "fixed_in_source",
+      "surface": "Operator/CI CLI, not a visitor-callable application endpoint",
+      "before": "scripts/check-external.mjs used fetch redirect:follow, without restricting redirect destinations or the resolved IP addresses. A changed remote source could direct an operator-run GET to a private or insecure destination.",
+      "after": "Node-only safe-outbound transport checks public HTTPS syntax at every hop; resolves all A/AAAA addresses and rejects any non-public result; pins those checked results in the socket lookup; uses an isolated direct TLS-verifying agent without environment proxies; bounds redirects/deadline/headers and discards bodies at headers.",
+      "files": [
+        "scripts/lib/safe-outbound.ts",
+        "scripts/check-external.mjs",
+        "tests/outbound-security.test.ts"
+      ],
+      "limits": [
+        "The IP policy is conservative; some legitimate special-purpose addresses may require manual review. No unsafe-network bypass is provided.",
+        "DNS and TLS trust remain dependent on the operator OS and supported Node runtime.",
+        "Unreachable or policy-blocked URLs are review items; they do not establish shop closure or stock."
+      ]
+    },
+    {
+      "id": "SEC15-02",
+      "title": "Local Node security patch floor lagged the official security release",
+      "status": "fixed_in_project_floor_and_ci; task-local patched runtime_verified",
+      "before": "Project minimum and machine default allowed24.22.1. pnpm audit does not audit the Node executable.",
+      "after": "Minimum>=24.22.3; Astro command wrapper and CI reject lower stable versions. CI resolves latest24 patch with check-latest and checks the floor before package bootstrap. Official portableNode24.22.3 was SHA256-checked for task-local verification, without changing OS-global Node or PATH.",
+      "files": [
+        "package.json",
+        "scripts/check-runtime.mjs",
+        "scripts/astro.mjs",
+        ".github/workflows/deploy.yml",
+        "tests/runtime-security.test.ts"
+      ],
+      "limits": [
+        "The engine floor is a minimum, not a promise that every future runtime is free of vulnerabilities.",
+        "The bundled standalone pnpm launcher initially used a separate old Node. A task-local pnpm.cmd now invokes its existing11.25.0 JS CLI with the verified24.22.3 node.exe; nestedpnpm uses the same PATH wrapper. No machine-global launcher was modified."
+      ]
+    },
+    {
+      "id": "SEC15-03",
+      "title": "Dependency vulnerability auditing was not a CI deployment gate",
+      "status": "fixed_in_source",
+      "before": "Frozen lockfile and weekly update configuration existed, but deploy workflow did not run the registry advisory audit.",
+      "after": "CI now runs pnpm audit --audit-level=low after frozen installation. No ignore/ignore-unfixable/ignore-registry-errors bypass was added. No dependency package or lockfile change was needed for the current zero-advisory snapshot.",
+      "files": [
+        ".github/workflows/deploy.yml"
+      ]
+    }
+  ],
+  "reviewedBoundaries": [
+    {
+      "area": "URL/navigation",
+      "observation": "Existing safeHttps rejects credentials, literal IP/local names, ambiguous control/backslash syntax and nonstandard ports; merchant/affiliate hosts match exactly, and both approval states plus verified date gate sponsored links. Existing negative tests pass."
+    },
+    {
+      "area": "DOM/JSON-LD",
+      "observation": "Browser code uses text/attribute assignments and native controls. The only set:html site sink is serializeJsonLd, which escapes markup delimiters and line separators; the existing script-close injection test passes. Markdown/source editors remain trusted code/content authors."
+    },
+    {
+      "area": "CSP/Maps/ad serving",
+      "observation": "No CSP relaxation was required. Existing strict self/hash policy remains, Google iframe origin is bounded and its reviewed URL guard remains. Maps still requires a separate explicit display action; Google ad serving remains locked off."
+    },
+    {
+      "area": "CI",
+      "observation": "Actions remain full-commit pinned. Checkout persist-credentials:false, read-only build token, privileged deployment isolated to deploy job, no untrusted pull_request_target/workflow_run checkout or interpolated user input found. No account settings were changed."
+    },
+    {
+      "area": "Secrets",
+      "checkedAt": "2026-11-17T04:44:01.507Z",
+      "method": "Signature subset via git grep -lI; file names only, never matched secret text. Current tracked working-tree text, not a complete history or generic-secret audit.",
+      "patterns": [
+        "AWS access-key id",
+        "GitHub token formats",
+        "PEM private-key header",
+        "Slack token format"
+      ],
+      "matchingFiles": [],
+      "sensitiveNamedTrackedFiles": [
+        ".env.example"
+      ],
+      "limits": [
+        "A zero match is not proof that no secret exists. Ignored .env content, external account settings and full Git history were not inspected."
+      ]
+    }
+  ],
+  "dependencyAudit": {
+    "command": "pnpm audit --json through task-local patched-node pnpm JS wrapper",
+    "node": "24.22.3",
+    "pnpm": "11.25.0",
+    "exitCode": 0,
+    "report": {
+      "advisories": {},
+      "metadata": {
+        "vulnerabilities": {
+          "info": 0,
+          "low": 0,
+          "moderate": 0,
+          "high": 0,
+          "critical": 0
+        },
+        "dependencies": 184,
+        "devDependencies": 79,
+        "optionalDependencies": 85,
+        "totalDependencies": 348
+      }
+    },
+    "rawPath": "artifacts/visual-mobile-stage-audit.json",
+    "initialRawPath": "artifacts/security-audit-v15-initial.json",
+    "interpretation": "Zero known package advisories at this time. This is separate from Node executable advisories and does not guarantee no vulnerabilities."
+  },
+  "runtime": {
+    "checkedAt": "2026-11-17T04:38:25.476Z",
+    "version": "24.22.3",
+    "binaryUrl": "https://nodejs.org/dist/v24.22.3/win-x64/node.exe",
+    "sumsUrl": "https://nodejs.org/dist/v24.22.3/SHASUMS256.txt",
+    "expectedSha256": "86fc4785327db5f5c7558dc6156c543b433c313e813a222e088086222ab4afa6",
+    "actualSha256": "86fc4785327db5f5c7558dc6156c543b433c313e813a222e088086222ab4afa6",
+    "checksumMatched": true,
+    "bytes": 93944648,
+    "binaryPath": "C:\\Users\\rozawa\\Documents\\ChatGPT\\アプリ開発\\ito-craft\\artifacts\\runtime\\node-v24.22.3-win-x64\\node.exe",
+    "installationScope": "Task-local executable only; machine-global Node/PATH/OS settings unchanged.",
+    "signatureScope": "SHA256 compared against official HTTPS SHASUMS256.txt. No independent PGP signature verification claimed."
+  },
+  "verification": {
+    "selectedUnit": {
+      "node": "24.22.3",
+      "command": "node --experimental-strip-types --test tests/outbound-security.test.ts tests/runtime-security.test.ts tests/security.test.ts tests/map-embed.test.ts tests/advertising-privacy.test.ts",
+      "tests": 23,
+      "passed": 23,
+      "failed": 0,
+      "log": "artifacts/security-unit-v15.log",
+      "privateConnections": "None. Negative tests use injected DNS/transport and never fetch a private target."
+    },
+    "astro": {
+      "node": "24.22.3",
+      "command": "node scripts/astro.mjs check",
+      "files": 120,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 0,
+      "log": "artifacts/security-astro-check-v15-final.log"
+    },
+    "oldRuntimeRejection": {
+      "node": "24.22.1",
+      "command": "node scripts/check-runtime.mjs",
+      "expectedExitCode": 1,
+      "actualExitCode": 1,
+      "log": "artifacts/security-runtime-old-rejected-v15.log"
+    },
+    "boundedPublicSmoke": {
+      "checkedAt": "2026-11-17T04:42:25.709Z",
+      "node": "v24.22.3",
+      "scope": "Three public HTTPS targets only after network-free unit pass. No private target was fetched, no merchant checkout or full crawl.",
+      "results": [
+        {
+          "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja",
+          "status": 200,
+          "finalUrl": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+          "redirected": true,
+          "contentType": "text/html; charset=utf-8",
+          "hops": [
+            {
+              "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja",
+              "status": 301
+            },
+            {
+              "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+              "status": 200
+            }
+          ],
+          "statusOfCheck": "completed"
+        },
+        {
+          "url": "https://nodejs.org/en/about",
+          "status": 200,
+          "finalUrl": "https://nodejs.org/en/about",
+          "redirected": false,
+          "contentType": "text/html; charset=utf-8",
+          "hops": [
+            {
+              "url": "https://nodejs.org/en/about",
+              "status": 200
+            }
+          ],
+          "statusOfCheck": "completed"
+        },
+        {
+          "url": "https://www.hamamatsuya.co.jp/info/index.html",
+          "status": 200,
+          "finalUrl": "https://www.hamamatsuya.co.jp/info/index.html",
+          "redirected": false,
+          "contentType": "text/html",
+          "hops": [
+            {
+              "url": "https://www.hamamatsuya.co.jp/info/index.html",
+              "status": 200
+            }
+          ],
+          "statusOfCheck": "completed"
+        }
+      ]
+    },
+    "sharedBuild": {
+      "status": "passed_integrated_root_run",
+      "node": "24.22.3",
+      "pnpm": "11.25.0 through task-local JS wrapper",
+      "command": "pnpm verify",
+      "exitCode": 0,
+      "unitTests": 124,
+      "htmlPages": 264,
+      "hrefSrcReferences": 15275,
+      "executableCspHashes": 949,
+      "rawPath": "artifacts/visual-mobile-stage-initial2-verify.log",
+      "scope": "Root-coordinated integrated verification after security code freeze and sourcefold/UI updates. Security agent did not run a competing shared build."
+    },
+    "runtimeWrapper": {
+      "path": "artifacts/runtime/node-v24.22.3-win-x64/pnpm.cmd",
+      "method": "Calls adjacent verified node.exe and existing bundled pnpm/bin/pnpm.mjs; prefixed task-local PATH handles nestedpnpm commands.",
+      "machineGlobalChanged": false
+    },
+    "inlineMaps": {
+      "status": "passed",
+      "node": "24.22.3",
+      "origin": "http://127.0.0.1:4323",
+      "report": "docs/visual-mobile-stage-maps-results.json",
+      "exitCode": 0,
+      "checks": 9,
+      "failures": 0,
+      "finishedAt": "2026-11-17T04:50:23.803Z",
+      "scope": "Two stores×JA/EN×1440/320 (8 live maps) plus invalidprovider rejection. Initial/reload Google requests0; close removesiframe; siteStorage unchanged; readablelinks and nooverflow.",
+      "visualInspection": {
+        "screenshots": [
+          "artifacts/visual-mobile-stage-map-hamamatsuya-hatajuku-main-ja-1440.png",
+          "artifacts/visual-mobile-stage-map-hamamatsuya-hatajuku-main-ja-320.png",
+          "artifacts/visual-mobile-stage-map-hakone-maruyama-main-en-1440.png",
+          "artifacts/visual-mobile-stage-map-hakone-maruyama-main-en-320.png"
+        ],
+        "method": "Directly viewed4 private QA viewport screenshots after fonts-ready capture.",
+        "observations": [
+          "Intended store pin/road map and completeGoogle logo/copyright/Terms visible insideiframe.",
+          "Desktop map remains compact rightcolumn;mobilemap fitscard with attributionvisible."
+        ],
+        "limits": [
+          "All23mapURL registry entries were not re-rendered in this regressioncheck.",
+          "InternalGoogle satellitepreview thumbnail loading is not asserted; live road map/pin/attribution are the verified display.",
+          "Screenshots are privateQA evidence, not published replacement map images."
+        ]
+      }
+    }
+  },
+  "hostOnly": {
+    "baselineObservation": {
+      "checkedAt": "2026-11-17T04:50:38.396Z",
+      "node": "v24.22.3",
+      "method": "Read-only GETs of two fixed publicURLs. Redirects are not automatically followed. No request to a private target or account setting change.",
+      "scope": "Live0.14 public baseline before0.15 deployment; not a promise of future headers.",
+      "https": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+        "status": 200,
+        "headers": {
+          "strict-transport-security": "max-age=31556952",
+          "content-security-policy": null,
+          "x-frame-options": null,
+          "x-content-type-options": null,
+          "referrer-policy": null,
+          "permissions-policy": null
+        },
+        "metaCsp": "default-src 'self';object-src 'none';base-uri 'none';form-action 'none';frame-src https://www.google.com;connect-src 'none';img-src 'self' data:;font-src 'self'; script-src 'self' 'sha256-A+KvS8eaAwtFHbEvMIHFLd838JSw7J8JXe5UyJyWcrA=' 'sha256-wjXxeqiHP1gpBHyIlYtLgd7xLlMm3xted/MQpV/Cd4c=' 'sha256-TxneElSKBL9xSd5ThF5MmAzirxRAawwQxuewnrj9KR4=' 'sha256-a6bSaNrxFai9F/tlj/U3MtSth0PP7TfccFlIGpOB7Qo=' 'sha256-AOFuFJ+8xihjSEyPmq/89KUuF8vsI1btLDldJAuMGKk=' 'sha256-eV/mMT8mWtefTm6sVnsSljdN055i+adVt9Y+ffeAsEM=' 'sha256-xIb/Pa7FUshAu4ihwjchYcQpyCI8eS8kt40GpOAYCz8=' 'sha256-1BvDVWLr3QCC20uHhUDi27eDFVJpk1uMQJGIWKUks2I=' 'sha256-kmZE/W8I1iuTnl1b3yqzv9/DQZenPngd3NjSKMQl7y0=' 'sha256-Y8t0ntteBwH+PqGKUyjWW3CAk+BNJKSoQc0xZ68FjhM=' 'sha256-0O7iB6zr9x0r6X6eWYITC9V5q+yWCGAoFvcysBGbY9Q='; style-src 'self' 'sha256-3lE4LlllaX+V1qndSKL4t5q9wTbTv98upvHk80GGgQw=' 'sha256-wtNuYtw6wOGleVrk2ojLHetmapLOj9a69wn4g/u87Jk=' 'sha256-ALPq3IGyIH0brE003bXo09j4i7Njaz2ibCuUb5U/AB8=' 'sha256-smMEs+Io0ERnxeadDki1rz0jpBV2637Uo5K2OYYTLqU=' 'sha256-QasNWD3D3aEiCyM4YVUZVptN+gXkHg8mRxWchXzEisU=' 'sha256-bw1KcqZrOAuU9j8pzT1ib8LqlF+mVKe37h08VUZEbC8=' 'sha256-ifpKQSPF7cFToy6xiJieRZUxpXZktcQgP93GKb6c2/U=';",
+        "metaReferrer": "strict-origin-when-cross-origin",
+        "httpFrameAncestors": false
+      },
+      "http": {
+        "url": "http://rozawa619.github.io/japanese-craft-jewelry/ja/",
+        "status": 301,
+        "location": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+        "headers": {
+          "strict-transport-security": null,
+          "content-security-policy": null,
+          "x-frame-options": null,
+          "x-content-type-options": null,
+          "referrer-policy": null,
+          "permissions-policy": null
+        }
+      },
+      "interpretation": {
+        "observedProtections": [
+          "HTTPS200",
+          "HTTP redirects to the matchingHTTPS URL",
+          "Host HSTS",
+          "HTMLmetaCSP and metaReferrer policy"
+        ],
+        "absentHeaderDefenses": [
+          "HTTP Content-Security-Policy including frame-ancestors",
+          "X-Frame-Options",
+          "X-Content-Type-Options:nosniff",
+          "Permissions-Policy"
+        ],
+        "riskBoundary": "Absent headers are defense-in-depth gaps on this static site; no account/form/publicwriteAPI exploit was demonstrated. MetaCSP is not equivalent to HTTPframe-ancestors. No JSframebusting substitute or hosting migration was performed."
+      }
+    },
+    "remaining": [
+      "Observed the exact liveURL through manualredirect GETs: HTTPS200 and matchingHTTP→HTTPS301, HSTS and HTMLmetaCSP/metaReferrer are present; HTTP CSP/frame-ancestors, XFO, nosniff and Permissions-Policy are absent. These are defense-in-depth gaps, not a demonstrated account/form/publicwriteAPI exploit on the static application.",
+      "Meta CSP cannot enforce frame-ancestors. No false clickjacking/header-fix claim or ineffective meta header substitute was added.",
+      "MFA, collaborators, branch protection, account recovery and provider/platform controls require operator account settings; not changed or re-certified in this task."
+    ],
+    "outOfScope": [
+      "Hosting/DNS migration",
+      "New accounts, contracts or billing",
+      "Global runtime installation",
+      "Complete source history secret scan",
+      "Third-party product/service penetration testing"
+    ],
+    "snapshotPath": "docs/security-host-observation-v15.json"
+  },
+  "sources": [
+    {
+      "url": "https://nodejs.org/en/blog/release/v24.22.3",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Official24.22.3 is a security release dated2026-11-11, including HTTP/TLS/HTTP2 and other fixes."
+    },
+    {
+      "url": "https://nodejs.org/dist/v24.22.3/SHASUMS256.txt",
+      "checkedAt": "2026-11-17",
+      "access": "downloaded_and_compared",
+      "supports": "Official SHA256 for win-x64/node.exe matched the task-local binary; independent PGP verification is not claimed."
+    },
+    {
+      "url": "https://pnpm.io/cli/audit",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Audit queries package advisory data; a matching remaining advisory at the configured level returns a failing status. This does not audit Node itself."
+    },
+    {
+      "url": "https://nodejs.org/docs/latest-v24.x/api/dns.html",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "dns.lookup all:true exposes all returned address/family records for validation."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/nodejs/node/v24.22.3/doc/api/https.md",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Version-specific HTTPS request/Agent API and lookup support; direct transport was independently smoke-tested on the verified24.22.3 binary."
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Automatic redirect following can bypass destination validation; domain resolution introduces internal-address/DNS-rebinding concerns."
+    },
+    {
+      "url": "https://www.iana.org/assignments/iana-ipv4-special-registry",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Special-purpose IPv4 ranges inform the conservative non-public address policy."
+    },
+    {
+      "url": "https://www.iana.org/assignments/iana-ipv6-special-registry",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Special-purpose IPv6 ranges inform the conservative global-unicast policy."
+    },
+    {
+      "url": "https://www.w3.org/TR/CSP3/#delivery-html-meta-element",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Meta CSP does not support frame-ancestors; delivery is not equivalent to an HTTP CSP header."
+    },
+    {
+      "url": "https://docs.github.com/en/actions/reference/security/secure-use",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Least-privilege token permissions, immutable action references and avoiding untrusted checkout/script injection are reviewed separately from package audit."
+    }
+  ],
+  "limits": [
+    "No complete/zero-vulnerability or security approval guarantee.",
+    "No dependency audit result certifies account/platform security, all transitive source behavior or future advisories.",
+    "App/frontend security boundaries and operator-tool runtime fixes are distinguished."
+  ]
+}

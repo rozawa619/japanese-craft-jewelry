@@ -1,0 +1,35 @@
+{
+  "version": "0.15.0",
+  "recordedAt": "2026-11-17T04:59:13.203Z",
+  "command": "pnpm verify",
+  "status": "passed",
+  "node": "24.22.3",
+  "pnpm": "11.25.0",
+  "typeFiles": 123,
+  "errors": 0,
+  "warnings": 0,
+  "hints": 0,
+  "unitTests": {
+    "total": 124,
+    "passed": 124,
+    "failed": 0
+  },
+  "build": {
+    "htmlPages": 264,
+    "hrefSrcReferences": 15275,
+    "anchors": 2298,
+    "ordinaryRetailerLinks": 1016,
+    "sponsoredLinks": 0,
+    "executableInlineCspHashes": 949,
+    "inertJsonBlocks": 248,
+    "legacyReadingRedirects": 14,
+    "retiredImagesPruned": 10,
+    "outputFiles": 369
+  },
+  "qaOutputUnchangedAfterFinalBuild": true,
+  "log": {
+    "path": "artifacts/visual-mobile-stage-final-verify.log",
+    "sha256": "ecb673da8892e254b8c1b06f0417d42896ff2b8d43aebe5b1df3a3f27d0d76da"
+  },
+  "limits": "Known advisory snapshot and tested static/UI boundaries only; no guarantee of all security, account/header configuration, physical iOS/Safari, legal/contract eligibility, Google search traffic or AdSense approval."
+}
