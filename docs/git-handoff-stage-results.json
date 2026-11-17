@@ -151,7 +151,7 @@
     "report": "docs/git-handoff-stage-docs-results.json",
     "summary": {
       "files": 60,
-      "localLinks": 600,
+      "localLinks": 601,
       "anchors": 8,
       "externalLinksUnchecked": 107,
       "pnpmReferences": 95,
@@ -166,6 +166,13 @@
     "No ad application,contract,account changes or invented personal details"
   ],
   "remoteReadback": {
-    "status": "pending_final_push"
+    "status": "passed",
+    "report": "docs/git-handoff-stage-remote-results.json",
+    "verifiedSourceCommit": "ce57e6129de8d4c994053b11a6e21b044a89e966",
+    "summary": {
+      "files": 18,
+      "sha256Matches": 18,
+      "failures": 0
+    }
   }
 }

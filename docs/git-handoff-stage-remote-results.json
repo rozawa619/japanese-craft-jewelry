@@ -1,0 +1,138 @@
+{
+  "checkedAt": "2026-11-17T14:25:53.862Z",
+  "status": "passed",
+  "sourceCommit": "ce57e6129de8d4c994053b11a6e21b044a89e966",
+  "method": "Anonymous raw GitHub main reads with a commit cache key; actual byte/SHA comparison for handoff entries, metadata, code, workflow, reference previews and proof copies. No credentials.",
+  "files": [
+    {
+      "path": "START_HERE.md",
+      "httpStatus": 200,
+      "bytes": 4215,
+      "sha256": "cc982689b41556bcaecd3b67fc45084482b53a06d2891c35c2bc4deeb552744e"
+    },
+    {
+      "path": "docs/ai-handoff.md",
+      "httpStatus": 200,
+      "bytes": 4440,
+      "sha256": "c44bd600142ec1e118ad8a8b77f6b49e814af02e99f8f06ce5788dbc4c058734"
+    },
+    {
+      "path": "README.md",
+      "httpStatus": 200,
+      "bytes": 6019,
+      "sha256": "022ea4322a714024683f3abaaddb714e46e8c0328b0f73305e696752ec04d3df"
+    },
+    {
+      "path": "AGENTS.md",
+      "httpStatus": 200,
+      "bytes": 9676,
+      "sha256": "6725034231a233875f921ab5f8f66fe02c61726b722c2004edb3706fea5373fc"
+    },
+    {
+      "path": "docs/handoff-assets.json",
+      "httpStatus": 200,
+      "bytes": 5180,
+      "sha256": "390483ead3b3be0acaa7a954a39be274e1e805b1f5d5c9d20153328e18d6a1e9"
+    },
+    {
+      "path": "docs/handoff.md",
+      "httpStatus": 200,
+      "bytes": 9643,
+      "sha256": "11fa88c996be2586ed3067e51a10ae0ef3be7b28abe47b4a45715ab764caa228"
+    },
+    {
+      "path": "docs/handoff-assets.md",
+      "httpStatus": 200,
+      "bytes": 4667,
+      "sha256": "a265b51e6e4a6f9b1d2866d0cfcc4b0a9571912a82b06b74324194ef8f703fba"
+    },
+    {
+      "path": "docs/handoff-status.json",
+      "httpStatus": 200,
+      "bytes": 5427,
+      "sha256": "70d4abd1576ec6ef271fae9d198f5a702a6904dbf82a4d2e6a9574152bc1dd90"
+    },
+    {
+      "path": "docs/git-handoff-stage-ci-results.json",
+      "httpStatus": 200,
+      "bytes": 9808,
+      "sha256": "7d7440d9454da0c6ea6a381d6190f577bd62982de057cbb68c1fb32042da8cbf"
+    },
+    {
+      "path": "scripts/check-handoff-portability.mjs",
+      "httpStatus": 200,
+      "bytes": 4718,
+      "sha256": "dee83cfe1e9573f7d2d256e40b2a69b717b9bcd2f182ca1f6ef0af2b58983f78"
+    },
+    {
+      "path": "scripts/fetch-handoff-asset.mjs",
+      "httpStatus": 200,
+      "bytes": 8146,
+      "sha256": "594d559feb09dcd3380f775efbe1f80032e380e40376f0c80fe6edbc89f8654d"
+    },
+    {
+      "path": "docs/git-handoff-stage-results.json",
+      "httpStatus": 200,
+      "bytes": 5695,
+      "sha256": "dba871daff563d911ae5e80fc20f3c72d9d8adf10ac90c8e05a47a18a88f1001"
+    },
+    {
+      "path": ".github/workflows/verify-handoff.yml",
+      "httpStatus": 200,
+      "bytes": 3439,
+      "sha256": "9321cc1dd25b37ace004742a30ff3f6f539b0cb7ae76e26421328d136c84c80e"
+    },
+    {
+      "path": "docs/delivery-proofs/originals-verification-0.16.0.json",
+      "httpStatus": 200,
+      "bytes": 654,
+      "sha256": "86a0230942f3966aaf4e05d4ae89debaf829d27bf8970ec08150bdcca8504970"
+    },
+    {
+      "path": "docs/previews/home-mobile.png",
+      "httpStatus": 200,
+      "bytes": 148464,
+      "sha256": "56c9ec4f0fbc356e0a0c0476da49f65d646758a4dbaacc92958056ad71da6e5d"
+    },
+    {
+      "path": "docs/previews/home-desktop.png",
+      "httpStatus": 200,
+      "bytes": 335142,
+      "sha256": "4a729a6848425ac9e25c3810f4650e5d2ac4e3f0b4b0ccb0bb5346d13cf0e894"
+    },
+    {
+      "path": "docs/delivery-proofs/package-verification-0.18.0-models-023.json",
+      "httpStatus": 200,
+      "bytes": 1715,
+      "sha256": "0fb0c0cc6aed0d63d1b82706836daad1feee594c4d26df0b501d12d08371af5c"
+    },
+    {
+      "path": "docs/delivery-proofs/originals-verification-0.18.0.json",
+      "httpStatus": 200,
+      "bytes": 711,
+      "sha256": "3c06c65d7f322fa3ad188506a9dd1678ebce49a4e508b94c3d1634af3384e423"
+    }
+  ],
+  "failures": [],
+  "changesAfterCi": {
+    "validatedSourceCommit": "537ee24ca021a9b61801108a4689e22936a3a08a",
+    "files": [
+      "docs/deployment-results.json",
+      "docs/git-handoff-stage-ci-results.json",
+      "docs/git-handoff-stage-docs-results.json",
+      "docs/git-handoff-stage-download-results.json",
+      "docs/git-handoff-stage-fresh-results.json",
+      "docs/git-handoff-stage-results.json",
+      "docs/handoff-status.json",
+      "docs/project-brief.md",
+      "specs/024-git-ai-handoff/tasks.md",
+      "specs/024-git-ai-handoff/validation.md"
+    ],
+    "productionAndValidatedCodeUnchanged": true
+  },
+  "summary": {
+    "files": 18,
+    "sha256Matches": 18,
+    "failures": 0
+  }
+}

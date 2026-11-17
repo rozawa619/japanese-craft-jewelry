@@ -41,6 +41,8 @@
 
 [文書検査](../../docs/git-handoff-stage-docs-results.json)は60ファイルのパス/見出し/実在コマンドを確認。初期添付[project-brief](../../docs/project-brief.md)には履歴であることを明記し、完了023や旧画像方針を現在の作業指示にしません。最終のGit反映/読み戻しは[集約](../../docs/git-handoff-stage-results.json)へ記録します。
 
+[GitHub読み戻し](../../docs/git-handoff-stage-remote-results.json)では、mainに反映したce57e6129de8d4c994053b11a6e21b044a89e966の入口・状態・取得コード・workflow・画面参考・proofなど18ファイルを認証なしで取得し、全SHA一致を確認しました。CI検証後の差分は文書/結果の追加だけで、実装と生成物は不変です。後続の記録commitもアプリ変更として扱いません。
+
 ## 継承する境界
 
 公開appはf2bb423のままです。本文・商品事実・価格・UI・画像・広告/Maps設定は変更せず、全公開出力が一致しました。Node/pnpm/Chrome、ネットワーク、Gitのpush権限は各作業環境で用意します。実機Safariや実契約/本人情報/CMP/AdSense/実提携等の運営条件を、この資料整備やCIで完了にしません。
