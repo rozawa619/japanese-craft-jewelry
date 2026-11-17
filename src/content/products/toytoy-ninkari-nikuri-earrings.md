@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-Yosegi puts pattern across a wooden surface; Ninkari Nikuri also draws attention to the spaces between the lines. We selected it for extending the choice of wooden jewelry from color and surface into silhouette.
+Incised curves give the wooden surface its detail, while the shaped outer edge supplies a second line to follow. Ninkari Nikuri is a candidate for choosing wood through carving and motif, rather than through the joined colors of yosegi. The official product photograph is the reference for that pattern.
 
-The designer identifies himself as Hokkaido Ainu in the brand’s own profile. We present this as a contemporary work by that specific designer, without treating it as a design shared by every Ainu community.
+The brand identifies ToyToy as a Hokkaido Ainu designer. Read the maker's own account when the cultural background is part of your interest, and keep that specific contemporary design in view. It need not be presented as a pattern shared identically by every community to be meaningful as this maker's work.

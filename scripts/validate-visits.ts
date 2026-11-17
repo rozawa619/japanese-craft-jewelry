@@ -13,5 +13,5 @@ export function validateVisits(root=fileURLToPath(new URL('../',import.meta.url)
  return {products:data.products.length,stores:data.stores.length};
 }
 if(process.argv[1]&&pathToFileURL(resolve(process.argv[1])).href===import.meta.url){
- try{const result=validateVisits();console.log('PASS official/visit information: '+result.products+' products, '+result.stores+' source-checked stores; fixed Google Maps URLs, no embeds.')}catch(error){console.error(error instanceof Error?error.message:String(error));process.exitCode=1}
+ try{const result=validateVisits();console.log('PASS official/visit information: '+result.products+' products, '+result.stores+' source-checked stores; fixed external Maps URLs. Reviewed click-loaded embeds are checked separately.')}catch(error){console.error(error instanceof Error?error.message:String(error));process.exitCode=1}
 }

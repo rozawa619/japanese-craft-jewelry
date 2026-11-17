@@ -4,6 +4,6 @@ locale: en
 publishStatus: published
 ---
 
-The useful difference here is the ability to change the displayed pattern within the same outline. Sakura and geometry give two starting points for an outfit without requiring a second necklace.
+A reversible pendant is most useful when both faces earn a place in your wardrobe. Here sakura and geometry share the same pear outline, so the choice changes the detail without changing the scale of the necklace. Look at the reverse with as much care as the face that first caught your eye.
 
-Sugimura’s Hosoge centers a particular ornamental flower. Nakajima leaves room for both a floral and a more graphic direction. The pear shape stays the same while the face you choose changes the detail.
+That makes it a different choice from selecting one permanent flower motif. Consider it when you like a floral accent on some days and a more graphic pattern on others. If only one face appeals, compare that face with a single-motif pendant before deciding that reversibility itself is a benefit.

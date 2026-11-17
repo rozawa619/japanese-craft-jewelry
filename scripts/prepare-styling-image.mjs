@@ -15,7 +15,7 @@ export async function prepareStylingImage(input,output){
  if(resolve(input)===resolve(output)||!output.endsWith('.webp'))throw new Error('Use a separate .webp output');
  if(existsSync(output))throw new Error('Refusing to overwrite an existing image');
  const source=await sharp(input).metadata();
- if(source.width!==1536||source.height!==1024)throw new Error('Review unexpected generator dimensions before converting');
+ if(!source.width||!source.height||source.width<256||source.height<256||source.width>8192||source.height>8192)throw new Error('Review unexpected generator dimensions before converting');
  await sharp(input).withXmp(xmp).webp({quality:84,effort:6}).toFile(output);
  const actual=await sharp(output).metadata();
  if(actual.width!==source.width||actual.height!==source.height||!actual.xmp?.toString().includes(digitalSourceType))throw new Error('Dimensions or AI XMP lost');

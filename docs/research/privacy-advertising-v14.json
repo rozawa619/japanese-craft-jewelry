@@ -1,0 +1,148 @@
+{
+  "version": "0.14.0",
+  "checkedAt": "2026-11-17",
+  "scope": "Primary-source preparation of bilingual privacy disclosures for a currently advertising-inactive Japanese craft jewelry introduction site. Not an AdSense application, consent implementation, legal certification or approval prediction.",
+  "currentStateBasis": {
+    "operator": "SORA",
+    "adSense": "not connected or enabled in the project",
+    "ownAnalyticsAndAdTrackers": "not enabled",
+    "ownCookiesAndAdvertisingConsentStorage": "not implemented",
+    "hosting": "GitHub Pages",
+    "maps": "external links, no embedded maps and no geolocation request",
+    "contact": "intentionally unpublished; no replacement personal details invented",
+    "runtimeVerification": "Root is implementing and testing an advertising privacy lock; this research is not the browser/network/storage verification."
+  },
+  "implementationContract": {
+    "policyFiles": ["src/content/policies/privacy.md", "src/content/policies/ja/privacy.md"],
+    "advertisingPolicyVersion": "2026-11-17-v14",
+    "choicesAnchor": "advertising-choices",
+    "existingSourceIds": ["legal-github-ip-v11", "legal-adsense-privacy-v11", "legal-google-eu-consent-v11", "legal-google-cmp-v11"],
+    "activation": "Advertising remains off until real provider, consent, notices and required settings are ready. Update the current-inactive wording and policy version together before activation.",
+    "notImplemented": ["AdSense account or site connection", "Google-certified CMP integration", "consent collection or persistence", "ad loading", "registration or application submission"]
+  },
+  "sources": [
+    {
+      "id": "privacy-v14-google-required-content",
+      "title": "Google AdSense required privacy content",
+      "url": "https://support.google.com/adsense/answer/1348695?hl=en",
+      "japaneseUrl": "https://support.google.com/adsense/answer/1348695?hl=ja",
+      "checkedAt": "2026-11-17",
+      "access": "official body read in EN and JA",
+      "supports": ["Disclose Google/third-party advertising cookies and use of prior visits to this and other websites.", "Provide personalized-ad controls; name and link actual participating providers when third-party serving is used."],
+      "application": "Public policy contains conditional future-ad disclosure and Google/DAA controls. Actual provider list is not invented before selection.",
+      "limits": "Google does not supply one universally compliant policy text. This source does not certify the site's legal compliance or approval."
+    },
+    {
+      "id": "privacy-v14-google-partner-data",
+      "title": "How Google uses information from sites or apps that use its services",
+      "url": "https://policies.google.com/technologies/partner-sites?hl=en",
+      "japaneseUrl": "https://policies.google.com/technologies/partner-sites?hl=ja",
+      "checkedAt": "2026-11-17",
+      "access": "official relevant body read in EN and JA",
+      "supports": ["Using Google advertising can send page URL/IP and involve reading or setting cookies.", "Stated purposes include service delivery, ad measurement, fraud prevention and personalization according to settings.", "Site/app consent changes should be made at the site/app."],
+      "application": "Explain conditional data transfer and purposes; distinguish Google's settings from future on-site consent.",
+      "limits": "Does not mean the current site sends advertising data to Google. No advertising services are currently enabled."
+    },
+    {
+      "id": "privacy-v14-google-eu-consent",
+      "title": "Google EU user consent policy",
+      "url": "https://www.google.com/about/company/user-consent-policy/",
+      "checkedAt": "2026-11-17",
+      "access": "official policy body read",
+      "supports": ["For applicable Google products and EEA/UK/Swiss users, consent is required for cookies/local storage where legally required and for personalized-ad personal data.", "Identify recipients, retain consent records and provide withdrawal instructions."],
+      "application": "State no ad activation before required arrangements; plan refusal, purpose choices and reopening/withdrawal.",
+      "limits": "No blanket claim that every region and ad mode has identical consent requirements; no consent record is currently collected."
+    },
+    {
+      "id": "privacy-v14-google-certified-cmp",
+      "title": "Google consent management requirements for publishers",
+      "url": "https://support.google.com/adsense/answer/13554116?hl=en",
+      "japaneseUrl": "https://support.google.com/adsense/answer/13554116?hl=ja",
+      "checkedAt": "2026-11-17",
+      "access": "official applicable requirements and certification-scope body read in EN and JA",
+      "supports": ["Personalized Google ads to EEA/UK/Swiss users require a Google-certified CMP integrated with IAB TCF.", "Google certification does not establish complete compliance with applicable privacy laws."],
+      "application": "Conditional public commitment to an actual certified service. A homemade banner/settings link is not described as certified.",
+      "limits": "No provider selected, connected or tested. The live certification list and applicable TCF version must be rechecked before activation."
+    },
+    {
+      "id": "privacy-v14-google-npa",
+      "title": "Google AdSense personalized and non-personalized ads",
+      "url": "https://support.google.com/adsense/answer/9007336?hl=en",
+      "checkedAt": "2026-11-17",
+      "access": "official relevant search body read",
+      "supports": ["Non-personalized ads may still use cookies for frequency capping and aggregate reporting, with consent where legally required."],
+      "application": "Avoid saying non-personalized advertising is cookie-free or automatically removes consent duties.",
+      "limits": "Limited/programmatic-limited ad behavior is a separate implementation decision, not covered by a blanket no-consent statement."
+    },
+    {
+      "id": "privacy-v14-google-partner-ad-controls",
+      "title": "Google My Ad Center Help: personalized ads and partner ad settings",
+      "url": "https://support.google.com/My-Ad-Center-Help/answer/12155656?hl=en",
+      "checkedAt": "2026-11-17",
+      "access": "official relevant partner-site/settings sections read",
+      "supports": ["Official Partner Ad Settings link is https://adssettings.google.com/partnerads.", "Settings' availability and scope vary by account, browser and device; not all networks are covered.", "Turning personalization off does not remove all ads."],
+      "application": "Use partner-specific settings instead of implying My Ad Center's preferred-topic controls universally govern partner websites.",
+      "limits": "Direct Partner Ad Settings fetch redirected through Google's account/browser check and could not be completed by web tool. Link provenance is the official help anchor; no account setting was changed."
+    },
+    {
+      "id": "privacy-v14-daa-webchoices",
+      "title": "Digital Advertising Alliance WebChoices",
+      "url": "https://optout.aboutads.info/",
+      "officialGoogleReferral": "https://support.google.com/adsense/answer/1348695?hl=en",
+      "checkedAt": "2026-11-17",
+      "access": "official Google referral followed; DAA public body read",
+      "supports": ["Opt-out choices apply to participating advertising companies and the browser; not a universal provider/device preference."],
+      "application": "Provide the alternative third-party ad control with its scope stated.",
+      "limits": "No opt-out submitted, extension installed or browser setting changed."
+    },
+    {
+      "id": "privacy-v14-github-pages-data",
+      "title": "GitHub Pages: data collection",
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection",
+      "checkedAt": "2026-11-17",
+      "access": "official data-collection section read",
+      "supports": ["GitHub logs/stores visitors' IP addresses for security irrespective of sign-in."],
+      "application": "Do not equate no own analytics/cookies with no hosting-level information processing.",
+      "limits": "No hosting retention period invented. Hosting suitability for commercial use remains a separate root task."
+    },
+    {
+      "id": "privacy-v14-github-general-policy",
+      "title": "GitHub General Privacy Statement",
+      "url": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+      "checkedAt": "2026-11-17",
+      "access": "official introductory scope/effective-date/topic index read",
+      "effectiveDateObserved": "2026-04-27",
+      "supports": ["Canonical GitHub statement provides its own processing, retention and rights information."],
+      "application": "Link visitors to the hosting provider's statement alongside the specific Pages IP disclosure.",
+      "limits": "No claim of a full clause-by-clause hosting legal audit during this task."
+    },
+    {
+      "id": "privacy-v14-google-general-policy",
+      "title": "Google Privacy Policy",
+      "url": "https://policies.google.com/privacy?hl=en",
+      "japaneseUrl": "https://policies.google.com/privacy?hl=ja",
+      "checkedAt": "2026-11-17",
+      "access": "official introductory scope/effective-date/topic index read in EN and JA; linked by Google partner-data explanation",
+      "effectiveDateObserved": "2026-10-16",
+      "supports": ["Google links its policy for processing, controls, retention and applicable grounds."],
+      "application": "Provide Google privacy information for future advertising and the present external Google Maps link.",
+      "limits": "Do not copy a universal retention period or claim these links replace site-specific information required by applicable laws."
+    }
+  ],
+  "remainingBeforeActivation": [
+    "Confirm hosting commercial-use suitability and an actual AdSense-accepted property/ownership connection.",
+    "Select actual provider/ad mode/geographic operation and identify all relevant recipients.",
+    "Connect and validate a real certified CMP when required; consent records and withdrawal behavior must be operational.",
+    "Assess controller identification, real contact/rights handling, data categories, retention/deletion and transfers for the applicable jurisdiction without inventing personal details.",
+    "Update public current-state wording, provider/control details, date and policy version before enabling ads.",
+    "Test CSP and actual browser/network/storage behavior before consent, after refusal/acceptance/withdrawal and on repeat visits."
+  ],
+  "validation": {
+    "status": "source-writing-and-local-consistency-review-complete; integrated browser/build tests delegated to root",
+    "schemaCommand": "node --experimental-strip-types scripts/validate.ts",
+    "schemaResult": "passed; published50, sources258, assets71 and current EN/JA/source references",
+    "researchAndPolicyConsistency": "passed; JSON parse, matching two policy versions and anchors, eight external references per language",
+    "ownedFilesDiffCheck": "passed",
+    "scope": "Four owned files only; no account, CMP, ad, contact or runtime activation changes."
+  }
+}

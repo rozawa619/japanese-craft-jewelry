@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-Kaisai caught our attention through both color and wire drawing. The maker describes a pure-silver base and silver wires, giving a concrete reason to compare it with jewelry that shows a simpler area of color.
+Kaisai brings drawing into the choice of enamel jewelry. Silver wire supplies part of the design within the sea-like palette, so there are lines to follow as well as an overall area of color. It is the candidate to examine closely when the internal composition matters as much as the outline.
 
-Kato’s SUKE directs attention to translucent color within a clear outline. Kaisai adds drawing within that color. Set them side by side to decide whether a color plane or the lines inside it are the part of cloisonné you want to wear.
+Kato's SUKE emphasizes a simpler color plane, while SIRI SIRI Page Blue reveals stamped marks under enamel. Comparing how each design makes its detail can be more helpful than calling them all blue jewelry. After choosing that visual direction, select the actual fitting type rather than assuming the two options share every component.

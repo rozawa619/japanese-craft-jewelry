@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-We selected Irodori for the pattern within a small round bead. It shows another way to enjoy glass jewelry: choosing a detail to see up close instead of increasing the size of the ornament.
+Irodori offers several decisions inside the idea of a colored glass bead. Hue, transparency and the fine pattern within the round form each affect the choice. A translucent blue and an opaque blue are not merely two labels for the same effect, so the official color photographs are worth comparing closely.
 
-Nanao & Shuka’s Nebula emphasizes a small color-changing effect; Sghr’s Tie-tie emphasizes a long outline. Irodori puts the choice in the bead pattern. Deciding what you want to look at helps separate these quite different glass earrings.
+Choose this direction when the small pattern is more interesting to you than a long glass outline. The Irodori necklace moves the bead to the neckline and gives it a larger role there; these earrings keep the choice beside the face. That is a more useful distinction than expecting every item in one series to look identical.

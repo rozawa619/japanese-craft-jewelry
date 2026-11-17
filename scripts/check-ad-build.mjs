@@ -12,7 +12,7 @@ const runId = new Date().toISOString().replace(/[:.]/g, '-');
 const runRoot = resolve(artifacts, runId);
 if (!runRoot.startsWith(artifacts + sep) || !isAbsolute(runRoot)) throw new Error('Fixture directory must stay inside the project artifacts directory.');
 mkdirSync(runRoot, { recursive: true });
-const reportPath = resolve(root, process.env.CHECK_AD_REPORT_PATH || 'docs/editorial-stage-ad-build-results.json');
+const reportPath = resolve(root, process.env.CHECK_AD_REPORT_PATH || 'docs/privacy-depth-stage-ad-build-results.json');
 const readJson = file => JSON.parse(readFileSync(file, 'utf8'));
 const writeJson = (file, value) => writeFileSync(file, JSON.stringify(value, null, 2) + '\n');
 const walk = directory => existsSync(directory) ? readdirSync(directory, { withFileTypes: true }).flatMap(entry => entry.isDirectory() ? walk(resolve(directory, entry.name)) : [resolve(directory, entry.name)]) : [];

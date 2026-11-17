@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-This is another way into wooden jewelry beyond grain and marquetry. In the urushi bead, the round shape and glossy surface become the main details. We selected it for making a distinction between the base material and the finish you see.
+The wooden base and the surface you see play different roles in these earrings. Iwaya coats mizuki wood with urushi, so the visible choice is a rounded area of lacquer color and gloss rather than exposed grain. That gives another route into wooden jewelry beyond yosegi pattern.
 
-Yosegi supplies geometry, Sangetsu supplies pattern within glass, and Iwaya supplies lacquer luster. Shared circles or wood materials can lead to quite different choices. Start here when a clean area of color is what you want.
+The hook adds a hanging position to that simple bead. Compare it with a round stud if the placement matters more than the material, or with Sangetsu if you want pattern inside a bead. A shared round outline is only the beginning; surface, fitting and the detail you want to look at separate the choices.

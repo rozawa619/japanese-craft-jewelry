@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-Linked circles and the color of brass define the choice. We selected this bangle for someone who sees the changing surface of uncoated metal as part of the finish they want to live with.
+The Shippo pattern is engraved into a broad brass surface. It rewards looking at the linked circles close up, while the width gives the ornament a different presence from a narrow cord bracelet. This is patterned metal, not openwork and not a colored cloisonne surface.
 
-SHOWEN wraps lines of silk around the wrist, while Drake shows sculptural porcelain surfaces. This bangle supplies an open metal pattern. Compare those constructions to decide what you want the wrist ornament to show.
+Uncoated brass also makes the finish over time part of the choice. Consider whether a changing metal color is something you want to live with before concentrating on the motif alone. SHOWEN's silk braid offers a different approach to color and structure; here the broad surface and engraved pattern are the reasons to choose it.

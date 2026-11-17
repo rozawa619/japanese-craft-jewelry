@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-The useful combination in Kolmio is geometry and placement: a triangle at the edge of the ear. It adds an angular glass option alongside the more familiar round bead or hoop.
+Kolmio changes the placement as well as the outline of glass jewelry. A triangle sits at the ear's edge instead of extending into a long drop. It is the geometric option to consider when you want to keep the focal point near that edge.
 
-Sghr’s Tie-tie extends a line downward; Kolmio keeps the glass in a triangular cuff. Once you have chosen the material, where you want it to sit can be the most helpful next decision.
+The visible outside shape does not answer every fitting question, however. Unlike choosing the shape of a pendant, a cuff also needs to match the place it will sit. Settle that practical condition with the maker before deciding whether this triangle or the downward line of Tie-tie better serves the look you want.

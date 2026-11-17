@@ -4,7 +4,13 @@
 
 SORAが日本各地の工芸ジュエリーを選ぶ日英の紹介サイト。ブログ・販売決済・Contactは設けません。公開状態はdocs/deployment-results.jsonのversion/commit/Actions/実測を確認してください。
 
-0.13の対象は、公開50商品のAIイメージを揃えることと、英語圏向けの検索設定・紹介文の改善です。最新仕様は[013](specs/013-complete-imagery-international-seo/spec.md)。以下の0.12の編集・購入根拠を継承し、最終の検証・配信状況は[検証](docs/verification.md)と[公開記録](docs/deployment-results.json)を参照してください。
+0.14は広告導入前のPrivacy、全50商品の選び方、単体の図、小型Mapsを更新。日英各150件の固有Q&Aを追加し、仕様tokenはcatalogの正本から表示します。既存AIスタイリング48枚を保持し、ジュエリー単体のAI図50枚を『惹かれる、その理由。』へ追加。生URLは意味の分かるリンク名に変えました。23店舗のGoogle公式Share埋込みを、説明と表示操作の後だけ読み込みます。閉じる/再読込で停止し、地図の選択を自前Cookie/Storageへ保存しません。
+
+日英PrivacyはGoogle広告Cookie・情報利用・拒否/設定・同意管理と、地図表示後の情報送信を説明します。現状はAdSense offで、認定CMPや実アカウント接続を済んだものとして扱いません。全画像はAIイメージで、実物写真/試着/正確なSKU再現の証拠ではありません。新規50点のPNG原本・実prompt・hashと、Google地図の出典/取得方法を記録しました。内容・画像の増加をAdSense合格保証にしません。
+
+最新仕様は014/015、結果はprivacy-depth-stage。以下の0.13以前はその版の履歴です。通常verifyにPrivacy停止状態・全50単体図のmetadata/hashを含め、pnpm check:depthで日英PCスマホのQ&A/単体図/Privacy導線、check-inline-mapsで選択前後の地図を確認できます。
+
+0.13では公開50商品のAIイメージと英語圏向け検索設定を改善しました。[013](specs/013-complete-imagery-international-seo/spec.md)を継承し、最新の[014](specs/014-advertising-privacy-product-depth/spec.md)・[015](specs/015-product-details-inline-maps/spec.md)で今回の変更を定義します。最終の検証・配信状況は[検証](docs/verification.md)と[公開記録](docs/deployment-results.json)を参照してください。
 
 0.12はThe Good Trade / Who What Wear / マイベスト等の実ページを参照し、既存42点の日英紹介と本文を商品固有の内容へ改稿。全商品で「この一品を選ぶなら」と比較候補の違いを説明し、能作の錫、水引、友禅、銀糸、七宝、久留米絣、伊勢志摩アコヤ真珠の8点を追加しました。50公開商品・14都道府県・24技法・258出典記録。41点は対象商品の有効な公式注文受付、9点は営業中の小売と価格付き現行カタログを確認。これは将来の在庫や注文成立の保証ではありません。
 
@@ -14,7 +20,7 @@ CO.COON2点、欠品中の浜松屋18K、現行の注文/小売根拠を確認�
 
 海外検索には日英の独立URL・相互hreflang・canonicalを維持し、英語見出しと全商品の検索説明文、パンくず、AI画像の構造化データを改善します。実際のGoogle掲載・順位・米英流入はSearch Consoleで未確認です。[海外SEO調査・更新手順](docs/international-seo-v13.md)に一次資料と必要な確認を記録し、HTMLの検査を検索流入の実績と混同しません。
 
-日英とも国内通販の参考価格を主表示。海外ストア価格は別枠で、その購入先と対応させます。独自換算なし。片耳/一組の確認できた単位はpriceUnitで表示し、勝手に倍額へ換算しません。23店舗を43商品へ関連づけ、店舗存在と個別商品の在庫は区別します。Mapsは外部リンクのみ。
+日英とも国内通販の参考価格を主表示。海外ストア価格は別枠で、その購入先と対応させます。独自換算なし。片耳/一組の確認できた単位はpriceUnitで表示し、勝手に倍額へ換算しません。23店舗を43商品へ関連づけ、店舗存在と個別商品の在庫は区別します。Mapsは外部リンクを残し、0.14から表示操作後の小型埋込みを追加しました。
 
 **収益化の前提は未解決です。GitHub Pagesの商用利用条件の適合確認または適した公開先の選択、AdSenseの実ホスト登録/所有確認、広告導入時のPrivacy/同意/CSP対応が残ります。技術テストや商品数は、適法性・契約適合・AdSense合格を証明しません。**
 
@@ -37,6 +43,8 @@ Node.js24.22.1以上、pnpm11.25.0。Astro7.4.12、TypeScript、Markdown、静�
 | pnpm check:prices | 日英の国内/海外価格と購入先 |
 | pnpm check:copy | 旧版からの実改稿、固有コピーの完全一致重複。意味や真偽の自動評価ではない |
 | pnpm check:ads | 実データを変えない隔離広告6ケース |
+| pnpm check:depth | 全50商品の固有Q&A/単体図/Privacy導線を日英3幅で確認 |
+| node --experimental-strip-types scripts/check-inline-maps.mjs | 地図の表示前後・閉じる・再読込・未許可provider拒否 |
 | pnpm check:links | 外部URLの到達性。403/503を即閉鎖としない |
 | pnpm package | 全ソースを隣接納品先へ書出し。ZIPは別途作成 |
 
@@ -44,7 +52,12 @@ Node.js24.22.1以上、pnpm11.25.0。Astro7.4.12、TypeScript、Markdown、静�
 
 | 場所 | 責務 |
 | --- | --- |
-| specs/013-complete-imagery-international-seo/ | 最新の全件画像・海外SEO仕様、設計、タスク、検証 |
+| specs/014-advertising-privacy-product-depth/・015-product-details-inline-maps/ | 最新Privacy/選ぶ内容/単体図/地図の仕様・設計・タスク・検証 |
+| specs/013-complete-imagery-international-seo/ | 継承する全件画像・海外SEO仕様 |
+| product-buying-guides.json・ProductBuyingGuide.astro | 商品固有の日英3問、正本tokenと出典 |
+| product-detail-images.json・ProductDetailImage.astro | 全50単体AI図、alt、実物確認へのリンク |
+| advertising-privacy.json・lib/advertising-privacy.ts | 広告off状態・policy versionの整合、環境flag開始拒否 |
+| lib/store-map-embeds.ts・map-embed-url.ts・VisitGuide.astro | 固定Google Share URL・許可条件・表示後だけiframe生成 |
 | specs/012-distinctive-product-selection/ | 継承する商品固有の紹介・比較・追加商品の仕様 |
 | src/data/catalog.json / translations/ja.json | 商品事実/市場価格/priceUnit/広告、日英の表示文 |
 | src/data/purchase-evidence.json / lib/purchase-evidence.ts | 公開商品の現行注文/小売根拠、出典/日付/商品URLと店舗の整合 |
@@ -73,4 +86,4 @@ Node.js24.22.1以上、pnpm11.25.0。Astro7.4.12、TypeScript、Markdown、静�
 - [海外SEOの一次資料・変更・残確認](docs/international-seo-v13.md)
 - [更新手順](docs/operations.md) / [引継ぎ](docs/handoff.md) / [検証](docs/verification.md)
 
-Contactや本人情報を作らず、申請送信・広告配信・新契約・課金・ドメイン購入を実行していません。プログラム/リンクはすべて未申請。更新時は013とAGENTSを読み、012の固有紹介と011の購入先の再確認・公開除外の派生更新を継承してください。前版の引継ぎ・検証はdocs/archiveのhandoff-v12/verification-v12、012の実測はeditorial-stage、011はquality-stageとして履歴を分けます。
+Contactや本人情報を作らず、申請送信・広告配信・新契約・課金・ドメイン購入を実行していません。プログラム/リンクはすべて未申請。更新時は014/015とAGENTSを読み、013の画像/SEO、012の固有紹介と011の購入先の再確認・公開除外を継承してください。前版はdocs/archiveのv13、013実測はvisual-seo-stage、012はeditorial-stage、011はquality-stageとして履歴を分けます。

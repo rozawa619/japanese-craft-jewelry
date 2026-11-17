@@ -26,7 +26,7 @@ export type ProductVisit=z.infer<typeof productVisitSchema>;
 export type Visits=z.infer<typeof visitsSchema>;
 export const visits=visitsSchema.parse(rawVisits);
 
-/** Fixed Maps URL actions; no API key, embed, origin location or external script. */
+/** Fixed external Maps actions. Optional reviewed embeds live in store-map-embeds.ts. */
 export function storeMapLinks(store:Pick<VisitStore,'mapQuery'>){
  const query=store.mapQuery.trim();
  if(!query||/[\u0000-\u001f\u007f]/.test(query))return null;

@@ -1,51 +1,44 @@
-# 引継ぎ — 0.13 全商品画像と海外検索
+# 引継ぎ — 0.14 選ぶ内容・単体図・小型地図・広告Privacy
 
-更新日2026-11-17。AGENTS → constitution → specs/013-complete-imagery-international-seo/ → 本書 → operationsを読む。前版の引継ぎ・検証・公開結果はdocs/archiveのv12へ保存した。実配信・検証・納品の確定値は最新deployment-results.jsonと各reportを優先する。
+2026-11-17。AGENTS → constitution → specs/014/015 → 本書 → operationsの順で読む。前版はdocs/archiveのv13へ保存。公開の確定状態はdeployment-results.jsonを優先する。
 
-## 変更と現在の内容
+SORAの日英工芸ジュエリーセレクト。公開50/全56商品、14地域、24技法、258商品出典、23店舗を維持。41品の公式注文受付・9品の営業小売/現行価格付きカタログという前版の購入根拠を保持する。今回の本文実読や画像/HTTP検査を将来在庫や注文成立の保証へ置き換えない。
 
-SORAの日英工芸ジュエリーセレクト。公開商品50/全56、14地域、24公開技法、258商品調査の出典記録、23店舗は0.12から継承。商品・価格・広告・公開採否は今回変更していない。通販注文受付41品、営業中小売＋現行価格付きカタログ9品という前回の確認を、今回の画像生成やHTTP応答で再認定しない。将来の在庫・店頭の個別在庫・注文成立は保証しない。
+## 今回の内容
 
-不足23品へbuilt-in image_genでオリジナルAIスタイリング画像を追加。旧25ファイル/27商品を保持し、計48ファイルで公開50商品すべてをカバー。日英altを各画像の見える特徴に変更。新23は27–33歳の架空成人モデル設定で日本7/米国8/英国8、かわいい系11/上品な系統12。国籍を画像から推定せず、商品検索フィルター等には使わない。写真や有名人の複製ではない。
+- 全50品に固有の選び方を日英各3問、計300問答追加。仕様はcatalog/jaのtokenから展開し、価格/URLを複製しない。出典は商品のsourceIdsへ対応。公式本文実読とToyToy/錺之等の旧表現35項目訂正をresearchへ記録。
+- 全50品の『惹かれる、その理由。』へ単体AI図。人物スタイリング48枚を保持し、計98公開WebP。新50枚は1254²/2,509,816bytes/AI XMP付き。短いAI caption、日英alt、実物確認用公式リンクを併設。
+- 生URLを意味の分かるリンク名へ変更し、hrefを維持。
+- 23店舗に小型Google公式Share地図。説明と表示操作後だけ読み込み、閉じる/再読込でiframeを削除。選択を自前Cookie/Storageへ保存しない。外部地図/経路/公式案内のfallbackを保持。地図選択は広告の認定CMPではない。
+- 日英Privacyに現在offと、将来Google広告Cookie/情報利用/設定/拒否/同意管理、地図表示後の送信を分けて明記。footer設定導線と、環境flagだけで広告を開始できないoff固定検査を追加。
 
-公式写真は22件を内部で実見。Nanaoのみ公式画像403で未実見のため、公式本文で確認した小さな丸形・色の概念像に限定。全画像は実物の完全再現・着用実績・仕様の証拠ではない。実物確認用の公式URLを維持し、公開captionはAIイメージ/AI imageだけ。商品写真の許諾50件は未取得のままで、AI生成を写真使用許諾に置き換えない。
+単体図はbuilt-in image_genで既存の自作AIスタイリングを参照して生成。実物写真/正確なSKU再現/試着感/仕様根拠ではない。Tamura/SIMPRICH/PAGEは採用前に修正、PAGEは薄い角丸板のr2を採用。実prompt/参照hash/原本/採否はimage-generation-solo-v14.json。商品写真50件の許諾は未取得。IPTC XMPは署名付きC2PA証明ではない。
 
-新23は1536×1024 WebPに圧縮。旧画像も含む全50商品のpreserveRatioをtrueに揃え、全枠で元画像の顔・耳・手首・ネックレスを保持する。新23WebPにIPTC XMP DigitalSourceTypeのtrainedAlgorithmicMediaを明記。これは署名付きC2PA証明でもライセンス宣言でもない。未加工の元PNGは隣接delivery/generated-originals/0.13.0に23点保存し、元hashと実際に使った全promptをdocs/image-generation-v13.jsonへ記録。
+## 編集入口
 
-英語トップと商品一覧の見出し・導入、商品固有のdescription、WebPage/BreadcrumbList/AI ImageObjectを更新。一般的な英語enを米英で共用し、jewelry/jewelleryを自然な説明で用いる。相互hreflang・canonical・sitemap・noindex境界を保持。Offer/Review/評価を作らない。Googleへの実掲載・順位・米英流入・Search Console所有権は未確認で、HTML検証と区別する。
-
-## 正本と編集入口
-
-| 場所 | 役割 |
+| 正本/実装 | 役割 |
 | --- | --- |
-| src/data/catalog.json・translations/ja.json | 仕様・国内外の実価格・公式URL・広告の正本。独自FX換算なし |
-| product-stories・商品Markdown・selection-notes | 日英の固有紹介・選ぶ理由・公開候補間の違い。未試着の感想を作らない |
-| purchase-evidence・visits・sources | 注文/営業小売根拠・確認日・店舗と固定Maps。現行の根拠を再確認して更新 |
-| src/data/editorial-images.json・docs/assets.json | styling画像の対応・寸法・alt・権利/退役履歴。実物写真と分離 |
-| docs/image-generation-v13.json | 実prompt・架空モデル設定・元PNG/公開WebPのhashと確認限界 |
-| docs/research/image-briefs-v13.json・image-plan-v13.md | 23品の公式参照・形や色・写真が見られなかった範囲 |
-| scripts/prepare-styling-image.mjs | 元PNGを変更せずWebP化しAI XMPを付与。既存出力への上書きは拒否 |
-| src/lib/seo.ts・Base.astro | 共有メタ情報、正規化、日英対応、実表示画像の構造化データ |
-| docs/international-seo-v13.md・research同名JSON | Google/Schema/IPTC一次調査17件、SEOの実装とSearch Consoleで残る作業 |
+| catalog.json・translations/ja.json | 事実/価格/URL。国内JPYと海外実価格を分け、FX換算しない |
+| product-stories・selection-notes・content/products | 固有の魅力/装い/比較。架空レビュー/未確認仕様を作らない |
+| product-buying-guides.json・lib同名・ProductBuyingGuide.astro | 日英3問/対象商品の出典/size・findings・fastening token |
+| editorial-images.json・product-detail-images.json・docs/assets.json | 人物と単体図/alt/権利/退役履歴を分離 |
+| docs/image-generation-solo-v14.json | 実prompt/自作AI参照/hash/PNG原本/目視の限界 |
+| purchase-evidence・visits・docs/research/sources.json | 現行購入根拠/店舗事実/一次資料/確認日 |
+| lib/store-map-embeds.ts・map-embed-url.ts・VisitGuide.astro | 固定Google Share origin/path/pbを検証、選択時だけiframe生成 |
+| advertising-privacy.json・lib同名・AdvertisingPrivacyStatus.astro | off状態/policy version/環境flag拒否/公開状態表示 |
+| content/policies/{ja/,}privacy.md・Base.astro | 日英Privacy/footer/限定CSP、Google frameだけ許可 |
+| lib/affiliate.ts・market-prices.ts | 承認/host/date/localeの二重gate、価格と市場リンクの対応 |
 
-新商品は日英本文/画像/alt/出典・購入根拠を揃えてから公開する。pnpm verifyは全件画像の欠落も拒否。画像がない候補を公開する運用へ変える場合、013仕様・validator・UI fallbackの目的と検証を一緒に見直す。
+## 維持条件・申請前の残作業
 
-## 維持する条件
+ブログ/Contact/販売決済なし、operatorはSORA。同一ページ/query/hashの言語切替、全国構造、TOP10訪問率の出典を維持。COCOON2/欠品18K/販売未確認の畠山2/hairpinはdraft。復帰は現行購入を再調査し日英/比較/画像/地域/sitemapを同時更新。退役10画像を戻さない。
 
-ブログ・Contact・販売/決済・計測広告タグなし。operatorはSORA。右上の言語ボタンで同じページ/query/hashを保持。広告はprogramと商品link両方の承認・完全一致の許可host・HTTPS/date/localeが揃う時だけ切替。現物はすべてnot_applied/通常リンク、申請・承認や広告配信を実行していない。
+提携プログラム/個別リンクは未申請・通常リンク。AdSenseアカウント/実ID/所有確認/実host設定/認定CMP/地域別同意と配信/稼働状態に応じたPrivacy/CSP統合は未実施。GitHub Pagesの商用用途適合確認または適した公開先の選択も残る。off固定は配信可能な完成CMPではない。実アカウントで対応し、秘密をGitへ保存しない。申請/契約/課金/DNS変更は実行していない。
 
-COCOON2/欠品18K/現行販売未確認の畠山2/従来hairpinはdraft維持。復帰時は現行購入を再調査し、本文/比較/画像/地域/sitemapの参照を一緒に更新。退役public10画像はbuild/exportで個別除外する。
-
-011の法務/AdSense/商用ホスト点検を継承。GitHub Pagesの商用用途適合または配信先選択、AdSense実ホスト登録/所有確認、導入時Privacy/同意/CSPは未解決。今回のSEOや商品数、技術PASSで解決したと判断しない。新契約・課金・ドメイン/DNS・公開先移転は行っていない。
+合格/法令/契約適合/実在庫を保証しない。問数や字数をGoogle独自価値の証明とせず、追加も公式情報に基づく固有の選び方を作る。SEOはhreflang/canonical/sitemap/固有metaを維持し、掲載/順位/流入はSearch Consoleで別確認。
 
 ## 検証・納品
 
-最新の全体結果はdocs/visual-seo-stage-*、013/validation、deployment-results.json。editorial-stageは012の履歴。pnpm verify、pnpm check:seo、pnpm readiness、日英PC/スマホの画像・導線、隔離広告6ケースを対象とする。Googleアカウントの管理画面による登録/流入検証は別途必要。
+最終ローカルverifyは113型ファイル0/0/0、111単体、264HTML/370生成物、通常リンク1016/広告0。新機能315、商品導線497、Maps9、隔離広告6、SEO248canonicalを確認。画像r2後にverify/315を再実行。quality497/Maps9/広告6はr2以外の実装が同じ段階の結果。詳細はverification・privacy-depth-verification-v14・inline-maps-v14・各JSON。公開後の確定値はdeployment-resultsを優先する。
 
-全ソースは隣接japanese-craft-jewelry-delivery/sourceとjapanese-craft-jewelry-source.zip。CI/lock/設定例/全ソース/仕様/調査/最終report/公開48画像を含む。.git/.env/認証/node_modules/dist/artifacts/無許諾の内部参照写真/退役public10画像は除外。元PNGはgenerated-originals/0.13.0へ分けて保存。最終版・ファイル集合・全ファイルSHA256は同所package-verification-0.13.0.json。ZIP自身のhashはZIP外で保管する。
-
-最終公開アプリ0608da5370dde9541d9a72241c581f3591e836ec、Actions44005929688 success（2026-11-17T02:51:33Z）。ローカル画像320/quality497、公開quality497/補足24が成功。公開248ページのtitle/description/hreflang/JSON-LD、48画像の200/SHA一致を確認。全体の420画面/402axe画面は問題なし。raw455検査中の1件だけ旧robots固定期待が残っていたため検査を共有helperへ修正し、同じ項目をlocal/公開で各1/1成功。残失敗0、全体455を再実行したと扱わない。詳細full-browser-resolution/verificationを読む。
-
-元PNG23点のZIPはjapanese-craft-jewelry-ai-originals-0.13.0.zip、25エントリー全件SHA照合済み。書出しスクリプトは未取得のartifactsディレクトリがなくてもソースを書き出せる。最終追加は検証/納品用scriptと文書だけで、配信320ファイルの内容は公開検証時から変更していない。
-
-最終書出し対象は643ファイル、公開50商品の画像48枚・日英decision・013仕様/全ソース/検証記録を含め全ファイルSHA256照合を実施。完了文書を含む再書出しにも同じ照合を行い、最終ZIPのhashは外部package-verification-0.13.0.jsonで確認する。
+全ソースは隣接japanese-craft-jewelry-delivery/sourceとjapanese-craft-jewelry-source.zip。CI/lock/全ソース/仕様/調査/台帳/検証/公開98画像を含み、.git/.env/秘密/node_modules/dist/artifacts/内部参照写真/退役10画像は除外。PNG原本50枚はgenerated-originals/0.14.0とjapanese-craft-jewelry-ai-originals-0.14.0.zipへ分離。旧0.13の23原本は別版で保持。全件SHA/集合/ZIP hashは納品先package-verification-0.14.0.jsonとoriginals-verification-0.14.0.json。原本/ソースZIPは引継ぎ資料で、公開アプリの配布物ではない。

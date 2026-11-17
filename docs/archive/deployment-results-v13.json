@@ -1,0 +1,299 @@
+{
+  "version": "0.13.0",
+  "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
+  "branch": "main",
+  "status": "deployed_and_verified",
+  "applicationCommit": "0608da5370dde9541d9a72241c581f3591e836ec",
+  "actions": {
+    "id": 44005929688,
+    "headSha": "0608da5370dde9541d9a72241c581f3591e836ec",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44005929688",
+    "updatedAt": "2026-11-17T02:51:33Z"
+  },
+  "previousDeployedVersion": "0.12.0",
+  "previousDeployedApplicationCommit": "9da1bfb8f671107debb16293e73eea3d50f0924c",
+  "publicUrls": {
+    "entry": "https://rozawa619.github.io/japanese-craft-jewelry/",
+    "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+    "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/"
+  },
+  "content": {
+    "products": 50,
+    "catalogProducts": 56,
+    "regions": 14,
+    "crafts": 24,
+    "sources": 258,
+    "images": 48,
+    "illustratedProducts": 50,
+    "textPreviews": 0,
+    "newImages": 23,
+    "existingImageFilesRetained": 25,
+    "stores": 23,
+    "productsWithStores": 43,
+    "online": 41,
+    "retail": 9
+  },
+  "localVerification": {
+    "reports": {
+      "static": "docs/visual-seo-stage-static-results.json",
+      "quality": "docs/visual-seo-stage-browser-results.json",
+      "full": "docs/visual-seo-stage-full-browser-results.json",
+      "images": "docs/visual-seo-stage-image-browser-results.json",
+      "imageFiles": "docs/visual-seo-stage-image-files-results.json",
+      "imageLayout": "docs/visual-seo-stage-image-layout-results.json",
+      "imageComparison": "docs/visual-seo-stage-image-screenshot-comparison.json",
+      "seo": "docs/visual-seo-stage-seo-results.json",
+      "ads": "docs/visual-seo-stage-ad-build-results.json",
+      "hosted": "docs/visual-seo-stage-hosted-browser-results.json",
+      "supplement": "docs/visual-seo-stage-hosted-supplement-results.json",
+      "fullFollowup": "docs/visual-seo-stage-publication-metadata-results.json",
+      "fullResolution": "docs/visual-seo-stage-full-browser-resolution.json"
+    },
+    "static": {
+      "version": "0.13.0",
+      "recordedAt": "2026-11-17T02:46:44.892Z",
+      "command": "pnpm verify",
+      "status": "passed",
+      "typeFiles": 95,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 0,
+      "unitTests": {
+        "total": 102,
+        "passed": 102,
+        "failed": 0
+      },
+      "build": {
+        "htmlPages": 264,
+        "hrefSrcReferences": 14744,
+        "anchors": 1949,
+        "ordinaryRetailerLinks": 1016,
+        "sponsoredLinks": 0,
+        "executableInlineCspHashes": 601,
+        "inertJsonBlocks": 248,
+        "legacyReadingRedirects": 14,
+        "retiredImagesPruned": 10,
+        "outputFiles": 320
+      },
+      "images": {
+        "checks": 49,
+        "passed": 49,
+        "failed": 0,
+        "publishedProducts": 50,
+        "registeredProducts": 50,
+        "uniqueImages": 48,
+        "baselineFilesPreserved": 25,
+        "retiredFilesExcluded": 10,
+        "totalImageBytes": 4160080,
+        "warnings": 0
+      },
+      "log": "artifacts/visual-seo-stage-final-verify.log (local, omitted from source ZIP)",
+      "visualPolish": {
+        "reason": "Manual review found a cropped face in an old portrait card. All50 registry entries now preserveRatio=true. Existing25 image bytes and published50 products unchanged.",
+        "prePolishReports": [
+          "docs/visual-seo-stage-pre-polish-browser-results.json",
+          "docs/visual-seo-stage-pre-polish-image-browser-results.json"
+        ],
+        "earlierBroadRun": "An earlier full bilingual run was stopped for this visual polish; no success is claimed for that incomplete run.",
+        "finalBuild": true
+      },
+      "limits": "Local source/data/tests/static output, image metadata/bytes and internal links. Google indexing, ranking, traffic, merchant checkout, legal/contract eligibility and AdSense approval are not verified."
+    },
+    "qualitySummary": {
+      "checks": 497,
+      "passed": 497,
+      "failed": 0,
+      "publishedProducts": 50,
+      "withdrawnProducts": 6,
+      "withdrawnRoutesVerified": 12,
+      "withdrawnHtmlFilesScanned": 264,
+      "unknownPricePublishedProducts": 0,
+      "unknownPriceDetailSample": null,
+      "productDetailChecks": 300,
+      "uniqueProductsChecked": 50,
+      "regionalTypeRoundtrips": 222,
+      "axeScreens": 30,
+      "axeViolations": 0,
+      "screenshots": 22,
+      "pageErrors": 0,
+      "consoleErrors": 0,
+      "externalRequests": 0
+    },
+    "fullSummary": {
+      "checks": 455,
+      "passed": 454,
+      "failed": 1,
+      "pages": 420,
+      "pageVisits": 420,
+      "uniqueRoutes": 138,
+      "uniqueProductsChecked": 50,
+      "uniqueRegionsChecked": 14,
+      "productDetailChecks": 306,
+      "regionPageChecks": 84,
+      "axeScreens": 402,
+      "axeViolations": 0,
+      "screenshots": 91,
+      "pageErrors": 0,
+      "consoleErrors": 0
+    },
+    "imageSummary": {
+      "checks": 320,
+      "passed": 320,
+      "failed": 0,
+      "publishedProducts": 50,
+      "newlyIllustratedProducts": 23,
+      "productDetailChecks": 300,
+      "imageChecks": 858,
+      "axeScreens": 30,
+      "axeViolations": 0,
+      "screenshots": 46,
+      "pageErrors": 0,
+      "consoleErrors": 0
+    },
+    "imageFilesSummary": {
+      "checks": 49,
+      "passed": 49,
+      "failed": 0,
+      "publishedProducts": 50,
+      "registeredProducts": 50,
+      "uniqueImages": 48,
+      "baselineFilesPreserved": 25,
+      "retiredFilesExcluded": 10,
+      "totalImageBytes": 4160080,
+      "warnings": 0
+    },
+    "adScenariosPassed": 6,
+    "seo": {
+      "canonicalPages": 248,
+      "productPages": 100,
+      "productImages": 100,
+      "noindexPages": 16,
+      "status": "passed"
+    },
+    "phaseNote": "Manual pre-polish review found an old portrait crop. Final build and both final broad browser reports use all50 preserveRatio flags. Ad fixtures passed before that image-only flag polish; catalog/price/resolver unchanged. Initial interrupted bilingual run is not claimed as a success.",
+    "fullBrowserResolution": {
+      "status": "resolved",
+      "initialReport": "docs/visual-seo-stage-full-browser-results.json",
+      "initialSummary": {
+        "checks": 455,
+        "passed": 454,
+        "failed": 1,
+        "pages": 420,
+        "pageVisits": 420,
+        "uniqueRoutes": 138,
+        "uniqueProductsChecked": 50,
+        "uniqueRegionsChecked": 14,
+        "productDetailChecks": 306,
+        "regionPageChecks": 84,
+        "axeScreens": 402,
+        "axeViolations": 0,
+        "screenshots": 91,
+        "pageErrors": 0,
+        "consoleErrors": 0
+      },
+      "cause": "One stale test expected robots exactly index,follow and rejected the intentional max-image-preview:large directive. The site was already correct.",
+      "fix": "The full suite now calls a shared publication-metadata assertion using the intended robots value. The same assertion was rerun in fresh Chrome locally and on the deployed site.",
+      "runtimeOrDataChanged": false,
+      "localFollowup": {
+        "report": "docs/visual-seo-stage-publication-metadata-results.json",
+        "summary": {
+          "checks": 1,
+          "passed": 1,
+          "failed": 0
+        }
+      },
+      "hostedFollowup": {
+        "report": "docs/visual-seo-stage-hosted-publication-metadata-results.json",
+        "summary": {
+          "checks": 1,
+          "passed": 1,
+          "failed": 0
+        }
+      },
+      "remainingFailures": 0,
+      "limits": "The complete455-check suite was not rerun after correcting its expected value. All420 page visits and402 axe screens in the original run passed; the single failed metadata group passed its focused follow-up."
+    }
+  },
+  "hostedVerification": {
+    "status": "passed",
+    "focused": "docs/visual-seo-stage-hosted-browser-results.json",
+    "focusedSummary": {
+      "checks": 497,
+      "passed": 497,
+      "failed": 0,
+      "publishedProducts": 50,
+      "withdrawnProducts": 6,
+      "withdrawnRoutesVerified": 12,
+      "withdrawnHtmlFilesScanned": 264,
+      "unknownPricePublishedProducts": 0,
+      "unknownPriceDetailSample": null,
+      "productDetailChecks": 300,
+      "uniqueProductsChecked": 50,
+      "regionalTypeRoundtrips": 222,
+      "axeScreens": 30,
+      "axeViolations": 0,
+      "screenshots": 22,
+      "pageErrors": 0,
+      "consoleErrors": 0,
+      "externalRequests": 0
+    },
+    "supplement": "docs/visual-seo-stage-hosted-supplement-results.json",
+    "supplementSummary": {
+      "checks": 24,
+      "passed": 24,
+      "failed": 0,
+      "canonicalUrls": 248,
+      "uniqueImages": 48,
+      "pageErrors": 0,
+      "consoleErrors": 0
+    },
+    "verifiedAt": "2026-11-17T03:00:05.916Z",
+    "metadataFollowup": {
+      "report": "docs/visual-seo-stage-hosted-publication-metadata-results.json",
+      "summary": {
+        "checks": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    }
+  },
+  "searchVerification": {
+    "technical": "passed",
+    "publicCanonicalAndSearchMetadataMatchesLocal": true,
+    "searchConsoleOwnership": "unverified",
+    "googleIndexing": "unverified",
+    "rankings": "unverified",
+    "usUkTraffic": "unverified",
+    "document": "docs/international-seo-v13.md"
+  },
+  "commercialHosting": {
+    "status": "pending_suitability_review_or_migration",
+    "document": "docs/hosting-commercial-readiness-v11.md",
+    "migrationPerformed": false
+  },
+  "adsense": {
+    "status": "not_applied",
+    "adTagsEnabled": false,
+    "eligibilityOrApprovalCertified": false,
+    "document": "docs/adsense-review-v11.md"
+  },
+  "sourceDelivery": {
+    "status": "exported_and_verified",
+    "version": "0.13.0",
+    "directory": "../japanese-craft-jewelry-delivery/source",
+    "zip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-source.zip",
+    "verification": "../japanese-craft-jewelry-delivery/package-verification-0.13.0.json",
+    "publicImages": 48,
+    "illustratedProducts": 50,
+    "originalPng": 23,
+    "originalsArchive": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-ai-originals-0.13.0.zip",
+    "originalsVerification": "../japanese-craft-jewelry-delivery/originals-verification-0.13.0.json",
+    "fileCount": 643,
+    "everyFileSha256Checks": 643,
+    "retiredPublicPathsExcluded": 10,
+    "zipHashStoredOutsideArchive": true
+  },
+  "updatedAt": "2026-11-17T03:03:28.918Z"
+}

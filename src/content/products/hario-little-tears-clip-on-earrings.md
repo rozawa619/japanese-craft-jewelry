@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-We chose Little Tears for the way small glass forms are threaded onto a fine chain. Instead of making one broad glass surface, the design builds the ear ornament from transparent drops and lines.
+Little Tears divides the design between small glass drops and fine chain. Instead of filling a broad surface with glass color, it leaves more of the composition to the lines around the transparent forms. That is the reason to compare it with a solid enamel shape, even before considering material.
 
-Sghr’s Tie-tie makes the glass itself elongated, while 6.KILN combines a white porcelain surface with a tassel. HARIO is the candidate for small clear shapes. Compare the pieces by whether you want to add color, surface or a line.
+Sghr's Tie-tie makes the glass motif itself elongated; HARIO separates the little glass form from the length supplied by chain. Choose between those constructions rather than treating both simply as long glass earrings. The standard fitting and any paid conversion should then be considered as distinct versions.

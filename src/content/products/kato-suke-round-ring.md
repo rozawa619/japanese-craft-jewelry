@@ -4,6 +4,6 @@ locale: en
 publishStatus: published
 ---
 
-Putting enamel into one round surface makes the color choice clear. We included the SUKE ring as a way to choose jewelry through a color itself, rather than through a stone shape or an illustrated motif.
+One round enamel surface makes the choice of color direct. With SUKE, the shade becomes the focal point instead of a flower picture or an elaborate gemstone setting. It is a useful starting point for someone who wants a ring to connect with a sleeve, a bag or another regularly worn color.
 
-Sugimura brings a painted lotus, while SIMPRICH offers two gemstone faces. SUKE keeps the focus on one circle of color. It is a useful candidate when you want a single ring to set the palette at the hand.
+The adjustable construction is a separate part of that decision. Settle which finger you want it on before choosing the palette, rather than treating the free-size wording as a substitute for fitting information. A color you love and a construction that suits the intended finger both matter.

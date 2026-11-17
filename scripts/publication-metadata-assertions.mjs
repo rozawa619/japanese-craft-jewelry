@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 
 /** Shared by the full browser suite and a focused follow-up when metadata
  * changes. This checks HTML directives, never actual Google indexing. */
-export async function assertPublicationMetadata(browser,{route,origin,base,publishMode,siteUrl}){
+export async function assertPublicationMetadata(browser,{route,base,publishMode,siteUrl}){
  const page=await browser.newPage(),results=[];
  try{
   for(const locale of ['en','ja']){

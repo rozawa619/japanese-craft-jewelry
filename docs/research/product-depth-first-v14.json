@@ -1,0 +1,1534 @@
+{
+  "checkedAt": "2026-11-17",
+  "scope": "First25 published catalog products; bilingual product-specific purchase-decision questions. Proposal file for root integration, not a second factual catalog.",
+  "productIds": [
+    "hamamatsuya-catch-pierced",
+    "hamamatsuya-clip",
+    "hamamatsuya-pendant",
+    "maruyama-clip-c",
+    "maruyama-clip-d",
+    "maruyama-pierced-c",
+    "maruyama-pierced-d",
+    "rinzen-seika-amber-pierced-earrings",
+    "six-kiln-half-moon-earrings",
+    "rinzen-leaf-glass-pendant",
+    "six-kiln-blue-bouquet-pierced-earrings",
+    "saskia-diez-drake-porcelain-cuff",
+    "checos-japanese-apricot-pierced-earrings",
+    "morphosphere-ultramarine-pansy-pierced-earrings",
+    "kato-suke-drop-pierced-earrings",
+    "arcos-cosmic-spiral-pendant",
+    "arcos-cosmic-glass-bracelet",
+    "senshu-pearl-stud-earrings",
+    "senshu-pearl-swing-earrings",
+    "sugimura-hosoge-raden-pendant",
+    "sugimura-lotus-makie-ring",
+    "simprich-crystal-bubble-pierced-earrings",
+    "simprich-rose-quartz-necklace",
+    "yukieglass-mint-veil-earrings",
+    "yukieglass-rouge-veil-earrings"
+  ],
+  "entries": {
+    "hamamatsuya-catch-pierced": {
+      "en": {
+        "questions": [
+          {
+            "question": "Can I choose the exact wood pattern in the official catalog?",
+            "answer": "The workshop shows examples from several patterns, with handmade differences in color and arrangement. Choose through the current catalog, then establish which actual pair is offered."
+          },
+          {
+            "question": "What does the surgical-stainless description tell me?",
+            "answer": "The fitting description is {findings}. Use that wording as a starting point; a particular steel grade or identical metal across every component is not established."
+          },
+          {
+            "question": "How can I judge the scale before choosing?",
+            "answer": "The catalog does not give this earring’s dimensions. Ask for the actual pair’s height and width, then compare them with earrings you already enjoy wearing."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "公式カタログと同じ寄木模様を選べる？",
+            "answer": "工房は複数の文様の一部を掲載し、手作りによる色や柄の違いも案内しています。現在のカタログから好みを絞り、実際に選べる一組の模様を確かめる選び方です。"
+          },
+          {
+            "question": "サージカルステンレスの表記で分かることは？",
+            "answer": "金具の案内は「{findings}」。この表記を入口に、特定の鋼種や全パーツが同じ金属かどうかは分けて考えると、素材の条件に合うか判断しやすくなります。"
+          },
+          {
+            "question": "耳元での大きさはどう判断する？",
+            "answer": "このピアスの寸法はカタログにありません。実際の一組の縦横を確かめ、手持ちの好きな耳飾りの大きさと比べると、耳元での面積を考えやすくなります。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "hamamatsuya-earrings",
+        "hamamatsuya-technique",
+        "hamamatsuya-workshop"
+      ]
+    },
+    "hamamatsuya-clip": {
+      "en": {
+        "questions": [
+          {
+            "question": "Is this a fixed motif or a catalog choice?",
+            "answer": "Start here if you want to choose among the workshop’s yosegi examples. For a specifically named outline, Maruyama’s C and D make that choice more explicit."
+          },
+          {
+            "question": "Can I tell which clip mechanism it uses?",
+            "answer": "The catalog calls it a non-pierced earring but does not specify the clip mechanism. If you prefer a particular fastening, settle that detail before choosing the pattern."
+          },
+          {
+            "question": "How closely should I match the official photograph’s colors?",
+            "answer": "Use the official catalog photograph to choose a direction. The workshop notes handmade differences in patterns and wood colors, so review the actual pair currently offered."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "決まった形を選ぶ商品、それとも模様から探す入口？",
+            "answer": "工房の寄木の作例から、好みの模様を探す入口です。輪郭を先に決めたい場合は、C・Dと形が分かれている丸山の候補も並べると選びやすくなります。"
+          },
+          {
+            "question": "イヤリング金具の留め方は分かる？",
+            "answer": "カタログの区分はイヤリングですが、金具の仕組みは未掲載です。留め方に好みがある場合は、模様を決める前に金具の形を確かめたい一品です。"
+          },
+          {
+            "question": "公式写真の木の色に、どこまで合わせて選ぶ？",
+            "answer": "公式カタログの写真は色合わせの方向を探す手がかりに。工房は手作りによる柄や色相の違いを案内しているので、今選べる一組を見て決められます。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "hamamatsuya-earrings",
+        "hamamatsuya-technique",
+        "hamamatsuya-workshop"
+      ]
+    },
+    "hamamatsuya-pendant": {
+      "en": {
+        "questions": [
+          {
+            "question": "How should I picture its position over clothing?",
+            "answer": "The listed construction is {size}. Compare the chain with a necklace you own, especially over a high neck; the actual resting position depends on your neckline and body."
+          },
+          {
+            "question": "Can I shorten the chain to suit an open collar?",
+            "answer": "An adjustment range and closure are not published. If a collarbone-length position is essential, ask about the actual chain rather than assuming the longer chain is adjustable."
+          },
+          {
+            "question": "Will the mosaic match the official catalog photograph?",
+            "answer": "The workshop’s photographs show examples among several patterns. Color and arrangement can differ, so choose the current wooden face as well as the pendant format."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "服の上で、どのあたりに来るか考えたい",
+            "answer": "掲載の構成は「{size}」。特にハイネックに重ねたい場合は、手持ちのネックレスと長さを比べてみてください。実際の位置は襟や体格でも変わります。"
+          },
+          {
+            "question": "開いた襟に合わせて、短くできる？",
+            "answer": "長さの調整幅や留め具は公表されていません。鎖骨近くに着けたいことが条件なら、長いチェーンを自由に短くできる前提では選ばず、実際の仕様を確かめてください。"
+          },
+          {
+            "question": "寄木の組合せは、公式カタログの写真と同じ？",
+            "answer": "工房の掲載写真は、複数の文様の中の作例です。色や柄の並びが異なる場合があるため、ペンダントという形と、現在の木の面の両方を見て選べます。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "hamamatsuya-pendant",
+        "hamamatsuya-technique",
+        "hamamatsuya-workshop"
+      ]
+    },
+    "maruyama-clip-c": {
+      "en": {
+        "questions": [
+          {
+            "question": "What should decide between C and D?",
+            "answer": "Choose C for a spreading, star-like outline or D for a narrow bar. Compare those outlines beside your usual collar before deciding which wood colors you prefer."
+          },
+          {
+            "question": "Is the C pierced version the same purchase option?",
+            "answer": "The retailer gives pierced and non-pierced C separate product pages. Use the page explicitly named non-pierced earrings; the shared letter describes the design, not the fitting."
+          },
+          {
+            "question": "Will the official photograph’s pattern and size be exact?",
+            "answer": "The retailer warns that natural handmade pieces can differ in color, pattern and size. Ask for dimensions and fitting details if those matter more than the general C outline."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "CとDは、何を軸に決める？",
+            "answer": "広がりのある星のような輪郭ならC、細いバーならD。木の色を決める前に、普段の服の襟へどちらの形を合わせたいか比べてみてください。"
+          },
+          {
+            "question": "同じCなら、ピアス用のページから選んでも同じ？",
+            "answer": "販売店ではCのピアスとイヤリングが別の掲載です。共通するCはデザイン名なので、金具の選択は「イヤリング」と書かれた商品ページで確かめてください。"
+          },
+          {
+            "question": "公式写真の柄や大きさを、そのまま目安にできる？",
+            "answer": "販売店は天然素材の手作り品のため、色・柄・大きさに違いが出る場合を案内しています。Cの輪郭より寸法や金具を優先したい場合は、実際の一組の詳細を確かめるのが先です。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "maruyama-clip-c",
+        "maruyama-category",
+        "maruyama-company"
+      ]
+    },
+    "maruyama-clip-d": {
+      "en": {
+        "questions": [
+          {
+            "question": "Where does the long outline help the choice?",
+            "answer": "Use D when you want the earring to read as a line beside a collar. C suits a more recognizable motif; compare the actual outline before deciding on wood color."
+          },
+          {
+            "question": "Does D specify a screw or spring clip?",
+            "answer": "The checked listing does not name its clip mechanism. A preference for a particular clip is a separate decision from liking the long wooden shape."
+          },
+          {
+            "question": "Can I choose solely by the official product photograph?",
+            "answer": "The official photograph establishes the design direction, while the retailer allows handmade variation in color, pattern and size. Request the current dimensions if you want a precise drop length."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "縦長の形を、どう選ぶ理由にする？",
+            "answer": "襟の横へ一本の線を置くように選びたいときはD。モチーフをはっきり見せたい場合はCが候補です。木の色を合わせる前に、実際の輪郭を比べられます。"
+          },
+          {
+            "question": "Dのイヤリングはネジ式、それともバネ式？",
+            "answer": "確認した掲載本文には、金具の仕組みがありません。縦長の木の形が好きということと、好みの金具であることを分けて判断したい商品です。"
+          },
+          {
+            "question": "公式の商品写真だけで長さまで決めてよい？",
+            "answer": "公式写真はデザインの方向を知る手がかりで、販売店は手作りによる色・柄・大きさの違いを案内しています。下がる長さを厳密に決めたい場合は、現在の寸法を確かめてください。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "maruyama-clip-d",
+        "maruyama-category",
+        "maruyama-company"
+      ]
+    },
+    "maruyama-pierced-c": {
+      "en": {
+        "questions": [
+          {
+            "question": "What does C add beyond choosing wooden jewelry?",
+            "answer": "It adds a recognizable star-like edge as well as yosegi pattern. Select C for the motif; select the bar-shaped D when an abstract line matters more."
+          },
+          {
+            "question": "How do I avoid choosing the wrong fitting?",
+            "answer": "Use the retailer page explicitly titled pierced earrings C. Its non-pierced C has a separate listing, and the letter alone does not distinguish the fittings."
+          },
+          {
+            "question": "Are its metal parts specified for material-led shopping?",
+            "answer": "The checked listing does not identify the fitting metal. If the metal is a deciding condition, establish the exact components before choosing C for its outline."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "木の耳飾りの中で、Cを選ぶ決め手は？",
+            "answer": "寄木模様だけでなく、星のように見える外側の輪郭も選べること。モチーフを見せたいならC、抽象的な線を足したいならバー形のDが比べやすい候補です。"
+          },
+          {
+            "question": "Cの金具を取り違えないためには？",
+            "answer": "販売店の「寄木ピアスC」と明記されたページを使います。同じCにも別掲載のイヤリングがあるので、アルファベットだけでは金具の種類を決められません。"
+          },
+          {
+            "question": "金属の素材を条件にして選べる？",
+            "answer": "確認した本文には金具の金属名がありません。素材が選択の条件なら、Cの輪郭に決める前に、肌に触れるパーツも含めて実際の金具を確かめたい商品です。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "maruyama-pierced-c",
+        "maruyama-category",
+        "maruyama-company"
+      ]
+    },
+    "maruyama-pierced-d": {
+      "en": {
+        "questions": [
+          {
+            "question": "How is D different from simply choosing a longer earring?",
+            "answer": "The bar and chevron-like pattern share a straight direction. Choose D for that graphic relationship; compare C when you want a spreading motif beside the face."
+          },
+          {
+            "question": "Does the wood determine the earring’s weight?",
+            "answer": "A per-ear weight is not published. Ask for the actual pair’s weight and dimensions, then compare them with the wooden or metal earrings you already prefer."
+          },
+          {
+            "question": "Can I match the exact wood colors to another accessory?",
+            "answer": "The retailer allows natural differences in color and pattern. For close color matching, compare the retailer’s photographs of the current pair with your accessory."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "単に長いピアスを選ぶのと、Dを選ぶのはどう違う？",
+            "answer": "バーの輪郭と矢羽根のような模様が、直線的な方向にまとまるのがDの軸です。線を揃えるDと、顔の横へモチーフを広げるCという違いから比べられます。"
+          },
+          {
+            "question": "木製なら軽いと考えてよい？",
+            "answer": "片耳の重さは公表されていません。実際の一組の重さと縦横を確かめ、普段好んで使う木や金属の耳飾りの範囲に近いか比べてみてください。"
+          },
+          {
+            "question": "手持ちの木の小物と、色をぴったり揃えられる？",
+            "answer": "販売店は天然素材による色や柄の違いを案内しています。厳密に色を揃えたいときは、販売店が案内する現在の一組の写真を、手持ちの小物と並べて考えられます。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "maruyama-pierced-d",
+        "maruyama-category",
+        "maruyama-company"
+      ]
+    },
+    "rinzen-seika-amber-pierced-earrings": {
+      "en": {
+        "questions": [
+          {
+            "question": "Is the amber part a gemstone?",
+            "answer": "Amber names the color here. The listed material is soda glass, shaped with kiriko cuts; choose this for cut-glass geometry rather than as a piece of fossil amber."
+          },
+          {
+            "question": "How does the chain-through design affect the choice?",
+            "answer": "The chain passes through the piercing rather than using a conventional post-and-catch arrangement. Look at the front and back in the official photographs before choosing your preferred hanging position."
+          },
+          {
+            "question": "Does the size table give the full chain length?",
+            "answer": "The listed dimensions are {size}. Compare the glass ornament’s footprint and the complete hanging length separately when planning its distance from a collar."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "琥珀色の部分は、天然の琥珀？",
+            "answer": "ここでの琥珀は色の呼び方で、掲載素材はソーダガラスです。化石の琥珀を探す選び方ではなく、ガラスに施した切子の幾何学を楽しむ一品として選べます。"
+          },
+          {
+            "question": "チェーンを通す構成は、選ぶときに何が違う？",
+            "answer": "一般的なポストとキャッチではなく、ピアスホールへチェーンを通す構成です。好みの下がり方を考える際は、公式写真で正面だけでなく後ろ側も見比べてください。"
+          },
+          {
+            "question": "サイズ表はチェーンの全長を表している？",
+            "answer": "サイズの案内は「{size}」。ガラスの飾りが占める面積と、全体の下がる長さを分けて比べると、襟との間隔から選びやすくなります。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "becos-rinzen-seika-amber",
+        "becos-rinzen-seika-amber-ja",
+        "rinzen-brand"
+      ]
+    },
+    "six-kiln-half-moon-earrings": {
+      "en": {
+        "questions": [
+          {
+            "question": "Should I think of this as a small porcelain stud?",
+            "answer": "The half-moon continues into chain tassels. Use the listed size, {size}, as a starting point for the whole composition, then compare the drop with your collar."
+          },
+          {
+            "question": "Can I select the reverse color in the official photograph?",
+            "answer": "The current notice allows either the white reverse or the newer fitting-matched reverse, supplied as a matching pair. An exact reverse-color requirement needs confirmation before choosing."
+          },
+          {
+            "question": "Can I polish the gold-colored surface like ordinary metal?",
+            "answer": "The listing warns that strong rubbing can scratch or remove the gold-colored surface. Gentle-care requirements are worth including in your choice, alongside the long tassel shape."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "小さな磁器のスタッドのように考えてよい？",
+            "answer": "半月の下にチェーンタッセルが続く構成です。掲載寸法「{size}」を全体像の入口にし、襟に対してどこまで下がる形が欲しいかを比べてみてください。"
+          },
+          {
+            "question": "公式写真と同じ裏面の色を指定できる？",
+            "answer": "現行の案内は、白い裏面の旧仕様と、金具色に合わせた新仕様のどちらも対象で、左右は同じ仕様です。裏面の色が条件になる場合は、選ぶ前に確かめたい点です。"
+          },
+          {
+            "question": "金色の部分も、普通の金属と同じように磨ける？",
+            "answer": "掲載ページには、強く擦ると金色の部分に傷や剥がれが生じる場合があるとの案内があります。長いタッセルの形とあわせて、やさしく手入れする使い方が合うかも選ぶ軸にできます。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "becos-six-kiln-half-moon",
+        "becos-six-kiln-half-moon-ja",
+        "six-kiln-brand"
+      ]
+    },
+    "rinzen-leaf-glass-pendant": {
+      "en": {
+        "questions": [
+          {
+            "question": "How do I compare the glass size with the necklace length?",
+            "answer": "The construction is {size}. Compare the leaf’s area and the chain’s resting position separately; liking the glass shape does not establish where it will sit on you."
+          },
+          {
+            "question": "Is every metal part surgical stainless steel?",
+            "answer": "No. The published breakdown is {findings}. If a specific metal matters to you, consider the bail and adjuster as well as the chain."
+          },
+          {
+            "question": "Will the cuts and green area match the official photograph exactly?",
+            "answer": "The maker notes differences in glass color, thickness, cuts and bail size. Compare the green and clear areas in current official photographs to choose the particular balance you like."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "葉の大きさと、ネックレスの長さはどう比べる？",
+            "answer": "構成は「{size}」。葉がつくる面積とチェーンが来る位置を分けて考えると、形が好きということと、着けたい位置に合うことを整理できます。"
+          },
+          {
+            "question": "金属部分は、すべてサージカルステンレス？",
+            "answer": "公表されている内訳は「{findings}」。特定の金属が気になる場合は、チェーンだけでなく、バチカンとアジャスターも判断に含めたい一品です。"
+          },
+          {
+            "question": "緑の面やカットは、公式写真と全く同じ？",
+            "answer": "作り手はガラスの色・厚さ・カット・バチカンの大きさに差が出る場合を案内しています。現在の公式写真で緑と透明部分の配分を比べ、好みのバランスを選べます。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "becos-rinzen-leaf",
+        "becos-rinzen-leaf-ja",
+        "rinzen-brand"
+      ]
+    },
+    "six-kiln-blue-bouquet-pierced-earrings": {
+      "en": {
+        "questions": [
+          {
+            "question": "What changes when the hoop is removed?",
+            "answer": "The flower remains the small porcelain focus; adding the hoop introduces an open circle below it. Compare both official arrangements if you want more than one visual scale from the design."
+          },
+          {
+            "question": "Do the table dimensions describe the entire hoop?",
+            "answer": "The size description is {size}. Compare the porcelain element and the hoop separately to decide whether you prefer the complete circle or the flower on its own."
+          },
+          {
+            "question": "Why might the catch differ from an older official photograph?",
+            "answer": "The current notice permits integrated and separate catch-and-hoop versions, alongside a reverse-color transition. Matching pairs are supplied; use the latest specification notice when considering an older official photograph."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "フープを外すと、何が変わる？",
+            "answer": "小さな磁器の花が中心になり、フープを加えるとその下へ円の余白が続きます。ひとつの大きさに決めずに楽しみたい場合は、公式の両方の構成を見比べられます。"
+          },
+          {
+            "question": "サイズ表の数値は、フープ全体の大きさ？",
+            "answer": "サイズの案内は「{size}」。磁器のパーツとフープを分けて見ると、円を加えた全体の形と、花だけの形のどちらを使いたいか考えやすくなります。"
+          },
+          {
+            "question": "古い公式写真とキャッチの構造が違うことがある？",
+            "answer": "現行の案内では、キャッチとフープが一体の旧仕様と別体の新仕様があり、裏面の色も切替中です。左右は揃う案内なので、古い公式写真を見るときは最新の仕様変更案内とあわせて選べます。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "becos-six-kiln-blue-bouquet",
+        "becos-six-kiln-blue-bouquet-ja",
+        "six-kiln-brand"
+      ]
+    },
+    "saskia-diez-drake-porcelain-cuff": {
+      "en": {
+        "questions": [
+          {
+            "question": "Can I open it wider like a flexible metal cuff?",
+            "answer": "The listing describes a rigid porcelain bracelet, without an adjustment mechanism. If opening width is essential, establish the actual opening and fit before treating it like a bendable cuff."
+          },
+          {
+            "question": "Does the listed diameter tell me my wrist size?",
+            "answer": "The measurement is {size}. Because inner and outer diameter are not distinguished, do not convert it directly into a wrist circumference; ask for an internal measurement or fit diagram."
+          },
+          {
+            "question": "Does gray and silver mean a silver bracelet?",
+            "answer": "The body is porcelain, with a silver-colored overpainted accent. Choose it for the combination of a broad sculptural surface and a restrained metallic detail."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "金属のカフのように、開いて幅を変えられる？",
+            "answer": "掲載は硬い磁器のブレスレットで、調整機構の案内はありません。開口部の幅が条件なら、曲げられるカフと同じ感覚で選ばず、実際の開きとフィットを確かめてください。"
+          },
+          {
+            "question": "掲載の直径から、手首に合うか分かる？",
+            "answer": "寸法は「{size}」。内径・外径の区別がないため、そのまま手首まわりへ換算せず、内側の実測値や寸法図をもとに考えたい商品です。"
+          },
+          {
+            "question": "グレイシルバーは、銀製のバングルという意味？",
+            "answer": "本体は磁器で、銀色は上絵付けのアクセントです。幅のある立体的な面と、控えめな金属色の細部を組み合わせたいときに選べる一品です。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "becos-saskia-drake-cuff",
+        "becos-saskia-drake-cuff-ja",
+        "saskia-diez-brand"
+      ]
+    },
+    "checos-japanese-apricot-pierced-earrings": {
+      "en": {
+        "questions": [
+          {
+            "question": "How small is the flower in practical terms?",
+            "answer": "Its listed size is {size}. Compare that circle with a stud you own if you want a close-up floral detail rather than a flower that hangs well below the ear."
+          },
+          {
+            "question": "What should I consider with knitwear or loose hair?",
+            "answer": "The maker notes that fine details may catch fibers or hair. Think about the knit texture or hairstyle you usually wear, and whether it leaves space around the flower."
+          },
+          {
+            "question": "Is a particular silver purity or closure specified?",
+            "answer": "The material description is {findings}. The exact closure is also unpublished, so establish those details if your choice depends on a particular alloy or fastening."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "小さな花は、どのくらいの大きさとして考える？",
+            "answer": "掲載寸法は「{size}」。耳の下へ大きく下がる花ではなく、近くで見る細部を選びたい場合に、手持ちのスタッドの丸い大きさと比べてみてください。"
+          },
+          {
+            "question": "ニットや髪と合わせるときに考えたいことは？",
+            "answer": "作り手は細部が服の繊維や髪に引っかかる場合を案内しています。普段のニットの編み地や髪型を思い浮かべ、花の周りに余白をつくれるか考えてみてください。"
+          },
+          {
+            "question": "銀の純度やキャッチの種類は決まっている？",
+            "answer": "素材の案内は「{findings}」。留め具の具体的な構造も未掲載なので、特定の合金や留め方が条件の場合は、その詳細を確かめて選びたい品です。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "becos-checos-japanese-apricot",
+        "becos-checos-japanese-apricot-ja",
+        "checos-brand"
+      ]
+    },
+    "morphosphere-ultramarine-pansy-pierced-earrings": {
+      "en": {
+        "questions": [
+          {
+            "question": "Is the flower a solid glass or ceramic piece?",
+            "answer": "It is dyed embroidered lace, with cotton and polyester in the material list. Choose for a textile flower’s detailed surface rather than expecting a solid polished ornament."
+          },
+          {
+            "question": "Can I add the flower and chain measurements together?",
+            "answer": "The size description is {size}. Compare the flower’s area and the chain’s drop in the official wearing photographs to judge how much space the whole design occupies."
+          },
+          {
+            "question": "Can I rinse it like other everyday earrings?",
+            "answer": "The maker advises against water washing and wiping with water or detergent. If easy wet cleaning is important to you, consider that care difference before choosing embroidered lace."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "パンジーはガラスや磁器のパーツ？",
+            "answer": "染めた刺繍レースで、素材欄には綿とポリエステルが含まれます。硬い素材を磨いた花というより、布の細かな表面を楽しみたいときに選べるモチーフです。"
+          },
+          {
+            "question": "花とチェーンの寸法は、そのまま足してよい？",
+            "answer": "サイズの案内は「{size}」。公式の着用写真で、花が占める面積とチェーンの下がり方を分けて見ると、デザイン全体に欲しい余白を考えやすくなります。"
+          },
+          {
+            "question": "普段の耳飾りのように、水で洗ってよい？",
+            "answer": "作り手は水洗い、水拭き、洗剤の使用を控えるよう案内しています。濡らして簡単に拭く手入れを重視するなら、その違いも含めて刺繍レースを選びたい一品です。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "becos-morphosphere-ultramarine-pansy",
+        "becos-morphosphere-ultramarine-pansy-ja",
+        "morphosphere-brand"
+      ]
+    },
+    "kato-suke-drop-pierced-earrings": {
+      "en": {
+        "questions": [
+          {
+            "question": "Does this product page cover just one glaze color?",
+            "answer": "Several glaze colors share the product page. Use the official color selector and current photographs to choose the shade you want within the same drop outline."
+          },
+          {
+            "question": "What handling requirements should influence the choice?",
+            "answer": "The maker asks you to protect the glassy surface from strong impact and heat. Consider whether your usual storage keeps the drops separate from hard objects that could knock against them."
+          },
+          {
+            "question": "Does the titanium fitting describe the whole earring?",
+            "answer": "The material breakdown is {findings}. Read the piercing-fitting material separately from the metals beneath the enamel if particular skin-contact components matter to you."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "この商品ページで選べるのは、一色だけ？",
+            "answer": "同じ雫の形に、複数の釉薬の色が用意されています。公式の色選択と現在の写真を使い、形を変えずにどの色を取り入れたいか比べてみてください。"
+          },
+          {
+            "question": "使う場所や保管で、考えたいことは？",
+            "answer": "作り手は、ガラス質の表面を強い衝撃や熱から守るよう案内しています。普段の保管で硬いものとぶつけずに置けるかなど、使い方も含めて選べます。"
+          },
+          {
+            "question": "チタン金具なら、耳飾り全体がチタン？",
+            "answer": "素材の内訳は「{findings}」。特に肌に触れる部品を条件に選ぶ場合は、ピアス金具の表示と七宝の下地の金属を分けて見てください。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "becos-kato-suke-drop",
+        "becos-kato-suke-drop-ja",
+        "kato-shippo-brand"
+      ]
+    },
+    "arcos-cosmic-spiral-pendant": {
+      "en": {
+        "questions": [
+          {
+            "question": "Is this a complete necklace ready to wear?",
+            "answer": "The maker describes a pendant top. Choose the glass piece first, then establish the included cord or chain and the length needed for the neckline you have in mind."
+          },
+          {
+            "question": "How do I plan a chain around the glass top?",
+            "answer": "The dimensions are {size}. Compare the top’s footprint, then ask about the suspension opening so you can judge whether a cord or chain you own will work with it."
+          },
+          {
+            "question": "Is the opal-looking detail a natural opal gemstone?",
+            "answer": "The maker names glass mixtures including frit opal glass. Choose it as a composed glass object; neither that wording nor the cosmic motif establishes a natural-opal stone."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "このまま着けられる完成したネックレス？",
+            "answer": "作り手の案内はペンダントトップです。まずガラスの作品を選び、ひもやチェーンの付属と、着けたい襟元に合う長さを確かめて全体を考えられます。"
+          },
+          {
+            "question": "手持ちのチェーンに合わせたいときは？",
+            "answer": "寸法は「{size}」。まずトップが占める面積を比べ、下げる部分の内寸も確かめると、手持ちのひもやチェーンと合わせられるか考えやすくなります。"
+          },
+          {
+            "question": "オパールのような部分は、天然石のオパール？",
+            "answer": "作り手はフリットオパールガラスを含むガラス素材を挙げています。天然オパールの石を選ぶのではなく、ガラスを組み合わせた作品として見比べられます。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "arcos-cosmic-spiral-v9",
+        "arcos-studio-v9"
+      ]
+    },
+    "arcos-cosmic-glass-bracelet": {
+      "en": {
+        "questions": [
+          {
+            "question": "Do the published dimensions tell me the wrist fit?",
+            "answer": "The size description is {size}. Ask for the wearable circumference as a separate measurement, so the glass element’s size and the wrist fit each inform your choice."
+          },
+          {
+            "question": "Can I assume a stretch cord or adjustable clasp?",
+            "answer": "Neither is specified in the checked description. Ask how the current bracelet opens and what size it fits before comparing it with a stretch-bead bracelet or rigid bangle."
+          },
+          {
+            "question": "Does titanium glass mean a titanium-metal bracelet?",
+            "answer": "The maker describes dichroic titanium glass among the glass materials. That is not a specification for the strap or fastening metal, which remains unconfirmed."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "掲載寸法から、手首まわりに合うか分かる？",
+            "answer": "サイズの案内は「{size}」。ガラスの要素の大きさとは別に、着けられる内周を確かめると、見せたい面積と手首への収まりをそれぞれ判断できます。"
+          },
+          {
+            "question": "伸びるひもや調整できる留め具がある？",
+            "answer": "確認した説明には、どちらも明記されていません。ゴムのビーズブレスレットや硬いバングルと比べる前に、現在の作品の開き方と対応サイズを確かめたい一品です。"
+          },
+          {
+            "question": "チタンガラスは、チタン金属のブレスレットという意味？",
+            "answer": "作り手が挙げているのは、ガラス素材の一つとしてのダイクロのチタンガラスです。ひもや留め具の金属を表すものではなく、その素材は別に確認する部分です。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "arcos-cosmic-bracelet-v9",
+        "arcos-studio-v9"
+      ]
+    },
+    "senshu-pearl-stud-earrings": {
+      "en": {
+        "questions": [
+          {
+            "question": "Are these cultured pearls from an oyster?",
+            "answer": "They are shell-based imitation pearls, not cultured or natural pearls. Choose this material deliberately if you like the round pearl-style appearance; it is a different construction from an Akoya pearl."
+          },
+          {
+            "question": "Do pierced and clip-on versions have the same outline?",
+            "answer": "The size descriptions differ: {size}. Check the chosen fitting’s complete outline, not just the pearl bead, when you want a compact position beside the ear."
+          },
+          {
+            "question": "Can I choose the color first and the fitting later?",
+            "answer": "Choose the color and fitting together in the official selector. The available combinations can differ, so this is the point to settle both the pearl color and the earring type."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "貝から育った養殖真珠？",
+            "answer": "貝パールは模造真珠で、天然真珠・養殖真珠とは異なります。丸いパール風の表情が好きな場合も、アコヤ真珠とは違う素材構成として選び分けられます。"
+          },
+          {
+            "question": "ピアスとイヤリングで、外形の大きさは同じ？",
+            "answer": "掲載されている寸法は別で、「{size}」。耳元にコンパクトに置きたい場合は、珠だけでなく、選んだ金具を含む外形を比べてみてください。"
+          },
+          {
+            "question": "色を先に決めて、金具はあとで選べる？",
+            "answer": "公式の選択欄で、色と金具を一緒に見て選ぶ商品です。選べる組合せは異なるので、珠の色とイヤリング・ピアスの種類をここで揃えて考えられます。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "shopch-senshu-stud-v9",
+        "jpga-izumi-craft-v9"
+      ]
+    },
+    "senshu-pearl-swing-earrings": {
+      "en": {
+        "questions": [
+          {
+            "question": "How should I compare it with a round stud?",
+            "answer": "Use the recorded outline, {size}, to judge the extra drop below the ear. The longer fitting changes the overall shape even when the pearl is round."
+          },
+          {
+            "question": "Which should I select first: metal color or fitting?",
+            "answer": "Treat them as one combination in the official selector. The pierced and clip-on choices may not have the same availability in each color, so check the exact selection."
+          },
+          {
+            "question": "Do gold and silver describe precious-metal construction?",
+            "answer": "They describe the coating colors in this listing. Brass and fitting-specific materials are listed separately; choose the finish color without treating it as solid gold or sterling silver."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "丸いスタッドと、何を比べると選びやすい？",
+            "answer": "掲載の外形「{size}」を見て、耳の下に加わる長さを比べてみてください。珠が丸い点は共通でも、金具を含む輪郭が選ぶ軸になります。"
+          },
+          {
+            "question": "金具の色と種類は、どちらから選ぶ？",
+            "answer": "公式の選択欄では、色とピアス・イヤリングを組合せとして考えます。色ごとに同じ金具が選べるとは限らないため、欲しい組合せを指定して確かめてください。"
+          },
+          {
+            "question": "金色・銀色は、貴金属製という意味？",
+            "answer": "この掲載ではコーティングの色を表しています。真鍮と金具別の素材は別に案内されているため、無垢の金や銀と考えず、仕上げの色として選べます。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "shopch-senshu-swing-v9",
+        "jpga-izumi-craft-v9"
+      ]
+    },
+    "sugimura-hosoge-raden-pendant": {
+      "en": {
+        "questions": [
+          {
+            "question": "What is the main decision after the floral motif appeals?",
+            "answer": "Decide where you want the ornament to sit on the neckline. Dimensions are not published on the checked page, so request the actual scale to compare it with your collar."
+          },
+          {
+            "question": "Does the listing specify which shell and base materials are used?",
+            "answer": "The product is named as a raden pendant, but a shell species and detailed substrate are not supplied. Choose the motif first, then request those details if material provenance matters."
+          },
+          {
+            "question": "Is a particular cord or chain arrangement included?",
+            "answer": "The checked body does not describe it. Ask the maker for current front-and-back product photographs and suspension details so you can judge the whole necklace, as well as the floral face."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "花の図柄が気に入ったら、次に何を決める？",
+            "answer": "胸元のどこへ図柄を置きたいかを考えるのが次の段階です。商品ページには寸法がないため、実際の大きさを確かめて襟とのバランスを比べられます。"
+          },
+          {
+            "question": "螺鈿に使う貝や、土台の素材まで分かる？",
+            "answer": "品名は螺鈿ペンダントですが、貝の種類や土台の詳細は未掲載です。まずモチーフから候補にし、素材の由来が選ぶ条件なら、その内訳を作り手に確かめられます。"
+          },
+          {
+            "question": "ひもやチェーンは、どのような構成？",
+            "answer": "確認した本文には構成の説明がありません。作り手に現在の表裏の商品写真と下げる部分の仕様を確かめると、花の面だけでなくネックレス全体の姿から考えられます。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "sugimura-hosoge-v9",
+        "sugimura-official-v9"
+      ]
+    },
+    "sugimura-lotus-makie-ring": {
+      "en": {
+        "questions": [
+          {
+            "question": "How should I choose the fit of this wooden ring?",
+            "answer": "The maker’s fitting instruction is {fastening}. Begin with the intended finger and size, then discuss that process with the maker before settling on the finished ring."
+          },
+          {
+            "question": "Does the size in the official photograph represent every available ring?",
+            "answer": "The size record is {size}. A photograph’s sample size is not an inventory of ready-made sizes, so establish the intended finger size and the maker’s process separately."
+          },
+          {
+            "question": "Can I use the same care routine as for a metal band?",
+            "answer": "The ring is wooden, while its detailed finish and care method are unpublished. Ask for the maker’s instructions before assuming your usual metal polish or cleaning routine is suitable."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "木のリングのサイズは、どう決める？",
+            "answer": "作り手の案内は「{fastening}」。着けたい指と号数を先に決め、そのサイズに合わせる手順を相談してから、完成したリングを選びたい作品です。"
+          },
+          {
+            "question": "公式写真の号数が、選べるサイズのすべて？",
+            "answer": "サイズの記録は「{size}」。写真の見本サイズは、そのまま即納サイズの一覧ではありません。着けたい指の号数と、作り手の対応手順を分けて確かめられます。"
+          },
+          {
+            "question": "金属の指輪と同じ手入れをしてよい？",
+            "answer": "リングの基材は木で、仕上げと手入れ方法の詳細は未掲載です。普段の金属磨きや洗浄方法をそのまま使えると考えず、作り手の案内に合わせて選びたい一品です。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "sugimura-lotus-v9",
+        "sugimura-official-v9"
+      ]
+    },
+    "simprich-crystal-bubble-pierced-earrings": {
+      "en": {
+        "questions": [
+          {
+            "question": "Is the pale round part a pearl bead?",
+            "answer": "It is a doublet of crystal quartz and mother-of-pearl, rather than a pearl bead. The layered construction is the useful distinction when choosing a pale, compact ear ornament."
+          },
+          {
+            "question": "Is the listing for a pair or a single earring?",
+            "answer": "The maker describes this item as a pair. Keep that unit separate from single-ear products elsewhere in the collection when comparing an official listing and its reference price."
+          },
+          {
+            "question": "What is established about the posts and catches?",
+            "answer": "The fitting material is {findings}, and the fastening is {fastening}. Both post and catch are identified, which helps when fitting composition is part of your selection criteria."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "淡い丸い部分は、パールの珠？",
+            "answer": "水晶と白蝶貝を貼り合わせたダブレットで、真珠の珠とは別の構成です。淡くコンパクトな耳飾りを素材から選ぶときは、この重ね方が比べる軸になります。"
+          },
+          {
+            "question": "掲載はペア、それとも片耳分？",
+            "answer": "作り手はこの商品をペアのピアスとして案内しています。シリーズ内の片耳用商品とは単位を分け、公式の掲載と参考価格を見比べるときに取り違えないようにできます。"
+          },
+          {
+            "question": "ポストとキャッチの素材は分かる？",
+            "answer": "金具の素材は「{findings}」、留め方は「{fastening}」。ポストとキャッチの両方の素材が分かるため、金具の内訳を条件にして選ぶときの手がかりになります。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "simprich-bubble-v9",
+        "simprich-about-v9",
+        "simprich-home-shop-v9",
+        "yamanashi-jewelry-museum-v9",
+        "yamanashi-jewelry-access-v9"
+      ]
+    },
+    "simprich-rose-quartz-necklace": {
+      "en": {
+        "questions": [
+          {
+            "question": "How can I judge the oval against its chain?",
+            "answer": "The arrangement is {size}. Compare the oval’s footprint with a pendant you own, then consider how the chain positions that area of pink against your usual neckline."
+          },
+          {
+            "question": "Can I assume the chain can be shortened freely?",
+            "answer": "An adjustment range and closure are not specified in the checked description. If a particular neckline position matters, establish that requirement before choosing the pale-pink stone."
+          },
+          {
+            "question": "How closely should I match the pink in official product photographs?",
+            "answer": "Compare current official images of the stone in their available lighting. Focus on whether you want pale pink as a quiet color area, allowing for screen and lighting differences."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "楕円の石とチェーンのバランスは、どう考える？",
+            "answer": "構成は「{size}」。手持ちのペンダントと楕円の面積を比べ、次にそのピンクが普段の襟元のどこへ来るか、チェーンの長さから考えられます。"
+          },
+          {
+            "question": "チェーンは自由に短くできると考えてよい？",
+            "answer": "確認した説明には調整幅や留め具の記載がありません。襟元で着けたい位置が決まっている場合は、淡いピンクの好みとあわせて、その条件を確かめたい商品です。"
+          },
+          {
+            "question": "公式の商品写真のピンクに、どこまで合わせて選ぶ？",
+            "answer": "公式の現在の石の画像を、用意されている光の見え方で比べてみてください。画面や光の違いも考えながら、控えめなピンクの面を加えたいかを選ぶ軸にできます。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "simprich-rose-quartz-v9",
+        "simprich-about-v9",
+        "simprich-home-shop-v9",
+        "yamanashi-jewelry-museum-v9",
+        "yamanashi-jewelry-access-v9"
+      ]
+    },
+    "yukieglass-mint-veil-earrings": {
+      "en": {
+        "questions": [
+          {
+            "question": "How should I compare its size and weight?",
+            "answer": "The maker gives {size}. Compare both the broad outline and the per-piece weight with earrings you already enjoy, especially if the length of time you wear them matters."
+          },
+          {
+            "question": "Is the mint color simply painted on the surface?",
+            "answer": "The maker describes clear glass, mica and layered mint-colored glass. That material arrangement, rather than a painted color assumption, is the useful basis for choosing its transparent appearance."
+          },
+          {
+            "question": "Should I choose only by the name Mint Veil?",
+            "answer": "Use the current pair’s official photographs to choose the particular green and shape. These are individual handmade pieces with atelier-shared stock, so check which pair is currently offered."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "大きさと重さを、どう比べる？",
+            "answer": "作り手の案内は「{size}」。広がる輪郭と片方の重さの両方を、普段好んで使う耳飾りと比べてみてください。着けたい時間も考えながら選べます。"
+          },
+          {
+            "question": "ミント色は、表面に塗った色？",
+            "answer": "作り手は透明なガラス、雲母、重ねたミント色のガラスを説明しています。色を塗ったパーツと想像するより、この素材の構成から透ける表情を選べる一品です。"
+          },
+          {
+            "question": "Mint Veilという名前だけで選んでよい？",
+            "answer": "現在の一組の公式写真で、好みの緑と形を選べます。一点ずつ手作りされた作品で在庫はアトリエと共有されるため、今案内されている一組を確かめて選んでください。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "yukie-mint-v9",
+        "yukie-accessory-origin-v9",
+        "yukie-atelier-visits-v9",
+        "kitaichi-yo-store-v9",
+        "kitaichi-hours-v9",
+        "kitaichi-access-v9"
+      ]
+    },
+    "yukieglass-rouge-veil-earrings": {
+      "en": {
+        "questions": [
+          {
+            "question": "How do I estimate the area of red beside the face?",
+            "answer": "The outline is {size}. A paper outline beside your collar can help compare scale; use current official photographs to judge how the red and clear areas share that space."
+          },
+          {
+            "question": "Is the whole drop an even block of red?",
+            "answer": "The selection is about red alongside transparent glass. Compare the red and clear areas in the current pair’s official photographs to decide how you want the color to appear."
+          },
+          {
+            "question": "What matters when choosing for a long day?",
+            "answer": "Compare the published per-piece weight and broad outline with earrings you already enjoy wearing. The size record above helps separate the visual area from the weight you prefer."
+          }
+        ]
+      },
+      "ja": {
+        "questions": [
+          {
+            "question": "顔の横に来る赤の面積は、どう見積もる？",
+            "answer": "輪郭は「{size}」。紙などで襟との大きさを比べる方法もあります。その面の中で赤と透明部分がどう分かれるかは、現在の一組の公式写真を見て選べます。"
+          },
+          {
+            "question": "雫全体が、均一な赤いかたまり？",
+            "answer": "赤だけでなく、透明なガラスが一緒に見えるところを選ぶ候補です。現在の一組の公式写真で赤と透明部分の配分を比べ、好みの色の見せ方を考えられます。"
+          },
+          {
+            "question": "長い時間着けるつもりなら、何を比べる？",
+            "answer": "公表されている片方の重さと広がる輪郭を、普段好んで使う耳飾りと比べてみてください。上のサイズ表記も手がかりに、見せたい面積と好みの重さを分けて考えられます。"
+          }
+        ]
+      },
+      "sourceIds": [
+        "yukie-rouge-v9",
+        "yukie-accessory-origin-v9",
+        "yukie-atelier-visits-v9",
+        "kitaichi-yo-store-v9",
+        "kitaichi-hours-v9",
+        "kitaichi-access-v9"
+      ]
+    }
+  },
+  "research": [
+    {
+      "productId": "hamamatsuya-catch-pierced",
+      "officialUrls": [
+        "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Official catalog identifies the catch-back surgical-stainless option.",
+        "Fresh full body states that pictured patterns are examples and actual handmade pattern/color may differ.",
+        "No dimensions or exact alloy grade are supplied for this option."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/hamamatsuya-catch-pierced.txt"
+    },
+    {
+      "productId": "hamamatsuya-clip",
+      "officialUrls": [
+        "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Official catalog lists the non-pierced earring separately from the catch-back pierced option.",
+        "Fresh full body explicitly states handmade pattern/color differences; clip mechanics and metal are not supplied."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/hamamatsuya-clip.txt"
+    },
+    {
+      "productId": "hamamatsuya-pendant",
+      "officialUrls": [
+        "https://www.hamamatsuya.co.jp/item/muku/accessory.html"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Official pendant page gives wood dimensions and chain length.",
+        "Fresh workshop catalog notes handmade differences; no closure or adjustment range published."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/hamamatsuya-pendant.txt"
+    },
+    {
+      "productId": "maruyama-clip-c",
+      "officialUrls": [
+        "https://www.hakonemaruyama.co.jp/shopdetail/000000000467/"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Retailer lists non-pierced C and pierced C separately.",
+        "Catalog/previous official visual review distinguishes spreading C from bar D.",
+        "Fresh product body warns natural handmade color, pattern and size may differ."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/maruyama-clip-c.txt"
+    },
+    {
+      "productId": "maruyama-clip-d",
+      "officialUrls": [
+        "https://www.hakonemaruyama.co.jp/shopdetail/000000000468/"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Official non-pierced D page names the product but not mechanism or dimensions.",
+        "Fresh retailer variation notice applies to color, pattern and size."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/maruyama-clip-d.txt"
+    },
+    {
+      "productId": "maruyama-pierced-c",
+      "officialUrls": [
+        "https://www.hakonemaruyama.co.jp/shopdetail/000000000473/"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Official pierced C listing is separate from clip-on C.",
+        "Fitting composition is absent from checked body; retailer variation warning retained."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/maruyama-pierced-c.txt"
+    },
+    {
+      "productId": "maruyama-pierced-d",
+      "officialUrls": [
+        "https://www.hakonemaruyama.co.jp/shopdetail/000000000474/"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Retailer D page and category support product type; prior visual review supports bar/chevron outline.",
+        "Exact fitting composition and per-ear weight are not published.",
+        "Fresh natural-material variation warning includes color and pattern."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/maruyama-pierced-d.txt"
+    },
+    {
+      "productId": "rinzen-seika-amber-pierced-earrings",
+      "officialUrls": [
+        "https://www.thebecos.com/products/s0138-028"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Fresh same-SKU Japanese page identifies soda glass and chain-through American pierced construction.",
+        "Dimensions do not separately specify full chain length.",
+        "Care/handmade variation notes retained; no chain-metal or allergy inference."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/rinzen-seika-amber-pierced-earrings.txt"
+    },
+    {
+      "productId": "six-kiln-half-moon-earrings",
+      "officialUrls": [
+        "https://www.thebecos.com/products/s0164-018"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Fresh official same-SKU body contains long tassel construction and a current reverse-color transition notice.",
+        "Information table and narrative dimensions differ in scope; canonical table retained without new measurements.",
+        "Official care note warns against strong rubbing of gold-colored overpainting."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/six-kiln-half-moon-earrings.txt"
+    },
+    {
+      "productId": "rinzen-leaf-glass-pendant",
+      "officialUrls": [
+        "https://www.thebecos.com/products/s0138-099"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Fresh Japanese page specifies chain versus plated-brass bail/adjuster separately.",
+        "Leaf and chain dimensions recorded independently in canonical catalog.",
+        "Official handmade variation includes color, glass thickness, design/cuts and bail size."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/rinzen-leaf-glass-pendant.txt"
+    },
+    {
+      "productId": "six-kiln-blue-bouquet-pierced-earrings",
+      "officialUrls": [
+        "https://www.thebecos.com/products/s0164-016"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Fresh official body confirms removable hoop, separate porcelain and hoop dimensions, and explicit integrated/separate catch transition.",
+        "Current structured notice takes precedence over older narrative about the integrated catch.",
+        "No comfort, corrosion resistance or hypoallergenic marketing claims imported."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/six-kiln-blue-bouquet-pierced-earrings.txt"
+    },
+    {
+      "productId": "saskia-diez-drake-porcelain-cuff",
+      "officialUrls": [
+        "https://www.thebecos.com/products/s0007-054"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Fresh official body lists porcelain, gray gloss and silver-colored overpainting.",
+        "Neither an adjustment mechanism nor inner/outer diameter distinction is established.",
+        "Existing body comparison corrected: KAZARINO selected bangle is engraved brass, not openwork."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/saskia-diez-drake-porcelain-cuff.txt"
+    },
+    {
+      "productId": "checos-japanese-apricot-pierced-earrings",
+      "officialUrls": [
+        "https://www.thebecos.com/products/s0050-015"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Fresh official item lists silver and a small diameter, without purity or closure allocation.",
+        "Official note warns about hair/fiber catching and force.",
+        "Product is treated as a small flower; conflicting botanical wording in official marketing is not repeated as a species claim."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/checos-japanese-apricot-pierced-earrings.txt"
+    },
+    {
+      "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "officialUrls": [
+        "https://www.thebecos.com/products/s0124-032"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Fresh official same-SKU page identifies Yuzen-dyed embroidered lace and cotton/polyester/gold-filled materials.",
+        "Listed flower and chain dimensions are not a defined overall drop.",
+        "Water-washing/water-wiping/detergent restrictions supported; chemical cleaning instructions not reproduced as DIY advice."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/morphosphere-ultramarine-pansy-pierced-earrings.txt"
+    },
+    {
+      "productId": "kato-suke-drop-pierced-earrings",
+      "officialUrls": [
+        "https://www.thebecos.com/products/s0087-093"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Fresh official product page groups color variants and separately identifies titanium piercing fittings.",
+        "Official materials include silver/copper/glaze/alloy; impact and heat precautions are item-specific.",
+        "No allergy-safety guarantee imported from marketing."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/kato-suke-drop-pierced-earrings.txt"
+    },
+    {
+      "productId": "arcos-cosmic-spiral-pendant",
+      "officialUrls": [
+        "https://www.creema.jp/item/9489033/detail"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Fresh maker page explicitly calls the item a pendant top.",
+        "Top dimensions and glass mixture are listed; cord/chain inclusion, length and suspension-opening measurement are not supplied.",
+        "No durability, radiation, health or natural-opal inference made."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/arcos-cosmic-spiral-pendant.txt"
+    },
+    {
+      "productId": "arcos-cosmic-glass-bracelet",
+      "officialUrls": [
+        "https://www.creema.jp/item/18047443/detail"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Fresh maker body lists several unlabeled dimensions and glass mixture, but no wearable circumference or fastening specification.",
+        "Dichroic titanium glass wording is not treated as metal-fitting composition."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/arcos-cosmic-glass-bracelet.txt"
+    },
+    {
+      "productId": "senshu-pearl-stud-earrings",
+      "officialUrls": [
+        "https://www.shopch.jp/pc/product/proddetail?reqprno=819642"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Fresh official listing identifies shell pearls and fitting-specific dimensions.",
+        "Fresh option table shows availability differing by color/fitting; no promise that all listed combinations can be ordered.",
+        "Reviews not used as product facts."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/senshu-pearl-stud-earrings.txt"
+    },
+    {
+      "productId": "senshu-pearl-swing-earrings",
+      "officialUrls": [
+        "https://www.shopch.jp/pc/product/proddetail?reqprno=810335"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Fresh official body distinguishes brass, fitting-specific silicone/stainless and gold-/silver-tone coatings.",
+        "Option availability differs by exact combination; whole-listing presence does not guarantee each option.",
+        "Sizing is overall listed outline, not assumed per-ear weight."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/senshu-pearl-swing-earrings.txt"
+    },
+    {
+      "productId": "sugimura-hosoge-raden-pendant",
+      "officialUrls": [
+        "https://jqppy767.wixsite.com/website/product-page/%E8%9E%BA%E9%88%BF%E3%83%9A%E3%83%B3%E3%83%80%E3%83%B3%E3%83%88-%E5%AE%9D%E7%9B%B8%E8%8F%AF"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Fresh official Wix item has product name, price and cart but no detailed dimensions/material/suspension body.",
+        "No shell species, substrate, chain inclusion or size invented.",
+        "Scope remains a maker-listed floral pendant, not an independently inspected real object."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/sugimura-hosoge-raden-pendant.txt"
+    },
+    {
+      "productId": "sugimura-lotus-makie-ring",
+      "officialUrls": [
+        "https://jqppy767.wixsite.com/website/product-page/%E5%95%86%E5%93%81%E5%90%8D-%E8%92%94%E7%B5%B5%E6%8C%87%E8%BC%AA-%E8%93%AE-makie-ring-lotus"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Fresh official item explicitly states wooden construction, pictured sample size and a plain-ring/remaking process.",
+        "Wix placeholder product/returns/shipping boilerplate is excluded as evidence.",
+        "No sizing availability, finish or care procedure inferred."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/sugimura-lotus-makie-ring.txt"
+    },
+    {
+      "productId": "simprich-crystal-bubble-pierced-earrings",
+      "officialUrls": [
+        "https://shop.simprich.jp/products/oy-k1%EF%BC%98sha-pi-1"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Fresh official item explicitly describes a pair, quartz/mother-of-pearl doublet, and specified gold post/catch.",
+        "Dimensions and fittings remain canonical tokens; handmade appearance variation noted without invented wear testing."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/simprich-crystal-bubble-pierced-earrings.txt"
+    },
+    {
+      "productId": "simprich-rose-quartz-necklace",
+      "officialUrls": [
+        "https://shop.simprich.jp/products/k10%E3%82%A4%E3%82%A8%E3%83%AD%E3%83%BC%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89-%E3%83%AD%E3%83%BC%E3%82%BA%E3%82%AF%E3%82%A9%E3%83%BC%E3%83%84-%E3%83%8D%E3%83%83%E3%82%AF%E3%83%AC%E3%82%B9"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Fresh official item lists rose quartz, oval stone dimensions and chain length.",
+        "Adjustment range and clasp remain unconfirmed.",
+        "No gemstone mining origin, exact photographed color or wearing-position guarantee added."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/simprich-rose-quartz-necklace.txt"
+    },
+    {
+      "productId": "yukieglass-mint-veil-earrings",
+      "officialUrls": [
+        "https://www.yukieglass.net/?pid=192213845"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Fresh official body lists crystal glass/mica/layered mint glass, dimensions and per-piece weight.",
+        "Maker’s thin/light marketing is not adopted as an independently tested comfort claim.",
+        "Individual work and atelier-shared stock note retained without a new availability guarantee."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/yukieglass-mint-veil-earrings.txt"
+    },
+    {
+      "productId": "yukieglass-rouge-veil-earrings",
+      "officialUrls": [
+        "https://www.yukieglass.net/?pid=192213864"
+      ],
+      "checkedAt": "2026-11-17",
+      "access": "fresh-Chrome-official-body-read",
+      "method": "Fresh headless Chrome, official-page body read only; images/fonts/media blocked, no form interaction.",
+      "httpStatus": 200,
+      "observations": [
+        "Fresh official body describes red and clear glass, dimensions, per-piece weight and handmade individual work.",
+        "Color-area interpretation remains editorial; exact current appearance belongs to official actual-product photographs.",
+        "No all-day comfort or universal lightness claim."
+      ],
+      "limits": [
+        "Source HTML body was read; no product handling, purchase, wearing test or maker interview.",
+        "Facts continue to use canonical catalog; no new price or dimensions duplicated into prose.",
+        "Order controls and listed options do not guarantee future availability or every variant."
+      ],
+      "localObservationFile": "artifacts/content-first-v14/yukieglass-rouge-veil-earrings.txt"
+    }
+  ],
+  "editorialApproach": "Short product-specific decision help. Necessary unknowns remain where they change a purchase choice; implementation defenses and blanket comfort/approval disclaimers stay in internal documentation rather than customer answers."
+}

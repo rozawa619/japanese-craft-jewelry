@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-Crossing lines turn colored mizuhiki paper cord into a little round ornament. Tamamusubi keeps the knot itself visible, giving a close-up pattern to enjoy even when a flower or gemstone is not the shape you want.
+A knot turns individual lines into a rounded form while keeping the cord construction visible. Tamamusubi is the candidate to consider when that crossing detail is more interesting than a smooth glass bead or a cast metal flower. The close-up cord colors are part of the choice, not just the overall round outline.
 
-Try choosing a cord color from a scarf or the smaller details of an outfit. Compared with a patterned glass bead, the interest here comes from how the lines overlap. It is our choice for someone who likes a rounded ear detail and wants the construction of a knot to be part of it.
+The knot diameter and hanging length also play different roles. A small knot need not mean an ornament that stays close to the lobe. Compare the complete drop with an earring you already use, then select the color combination whose fine lines you would like to see nearby.

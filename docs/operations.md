@@ -1,6 +1,41 @@
-# 更新手順 — 0.13 全商品画像と海外検索
+# 更新手順 — 0.14 広告Privacy・商品Q&A・単体図・地図
 
-最新仕様は[013](../specs/013-complete-imagery-international-seo/spec.md)。対象は公開50商品、旧25＋新23の計48画像ファイル。前版の編集・購入根拠・価格/広告の分離を継承する。最終の検証数や公開commit/Actionsはverification/deployment-resultsを参照し、仕様の予定値を実測と扱わない。0.12の保存版は[引継ぎ](archive/handoff-v12.md)・[検証](archive/verification-v12.md)。以下に残す012以前の件数・『新画像なし』は当時の履歴で、今回の013を優先する。
+最新仕様は[014](../specs/014-advertising-privacy-product-depth/spec.md)と[015](../specs/015-product-details-inline-maps/spec.md)。公開50商品の各3問×日英、単体AI図50ファイル、既存人物画像48ファイル、店舗内の選択式地図を扱う。以下の014/015手順を優先し、後半の旧版にある件数や「地図埋込みなし」「新画像なし」は各版当時の履歴として読む。現行の公開状態・検証数は[verification](verification.md)と[deployment-results](deployment-results.json)で確認する。
+
+## 0.14 / 0.15 の更新箇所
+
+1. **商品ごとの選び方**：`src/data/product-buying-guides.json`へ公開productIdごとの日英3問と、その商品に属するsourceIdsを揃える。価格・URLを回答へ複製せず、`{size}`・`{findings}`・`{fastening}`だけをcatalog/日本語訳から展開する。未確認値や全商品共通の回答で埋めない。質問が選ぶ判断に役立つか、本文・比較・公式情報と矛盾しないかを読む。表示は共通`ProductBuyingGuide`から出し、出典リンクで`#product-sources`が開く動作を保つ。
+2. **単体AI図**：`product-detail-images.json`を人物用`editorial-images.json`と分離する。公開50商品を全件登録し、`docs/assets.json`と`docs/image-generation-solo-v14.json`の採用path・実寸・SHA・prompt/参照・日英altを一致させる。原本PNGは保持し、公開WebPは元寸法・quality84・AI生成IPTC XMPを保つ。短い「AIイメージ / AI image」、元比率と公式実物確認リンクを維持する。画像を実物の形・素材・裏金具・販売個数の証拠にしない。SIRI PAGEの採用r2は薄い角丸板で、旧筒状候補へ戻さない。
+3. **店舗内の地図**：店舗事実は`visits.json`、取得済み埋込みURLは`store-map-embeds.ts`が正本。新店舗は公式所在地とGoogleの共有→埋込みから対象場所を確認し、[地図手順](inline-maps-v14.md)へ取得日・根拠・限界を残す。`map-embed-url.ts`のprovider/path/query制限、Googleの帰属表示、公式案内と外部Maps検索/経路を保つ。初期iframe/Google通信は0、表示ボタンでのみ読込、閉じるでiframe削除、選択を保存せず再読込でoff。現在地・APIキー・課金機能を追加しない。
+4. **広告用Privacy**：`advertising-privacy.json`はoff固定。日英Privacyの`advertisingPolicyVersion`と共通statusを揃え、footerの言語別`#advertising-choices`を保つ。地図の説明は`#map-privacy`。地図を開く操作を広告同意やGoogle認定CMPと扱わない。広告の実ID、認定CMP、商用host適合、必要な表示と配信試験は未完了で、環境flagだけでは開始できない。[広告Privacyの記録](privacy-advertising-v14.md)の導入前条件を満たす別の実装で見直す。
+5. **検証と記録**：`pnpm verify`は型・参照・unit・build・生成リンクに加え、既存画像、広告Privacy、単体図50件の実ファイル/XMP/SHA/生成物一致を含む。安定した最終buildで下記Chrome検査を実行する。Q&AとPrivacyの未操作検査では外部通信0を要求し、地図の明示表示後に発生する正規Maps通信は別の検査で確認する。結果は[画面検証の説明](privacy-depth-verification-v14.md)へ記録し、ローカルと公開後のreportを分ける。
+
+```powershell
+pnpm verify
+pnpm readiness
+pnpm check:seo
+# 別ターミナルで最終distのpreviewを起動し、実際のportとbaseを指定する。
+$env:CHECK_BASE_URL='http://127.0.0.1:4322'
+$env:PUBLIC_BASE_PATH='/japanese-craft-jewelry/'
+$env:CHECK_REPORT_PATH='docs/privacy-depth-stage-browser-results.json'
+$env:CHECK_SCREENSHOT_PREFIX='privacy-depth-stage'
+pnpm check:depth
+$env:CHECK_REPORT_PATH='docs/privacy-depth-stage-maps-results.json'
+node scripts/check-inline-maps.mjs
+$env:CHECK_REPORT_PATH='docs/privacy-depth-stage-quality-results.json'
+$env:CHECK_SCREENSHOT_PREFIX='privacy-depth-stage-quality'
+pnpm check:quality
+$env:CHECK_REPORT_PATH='docs/privacy-depth-stage-publication-metadata-results.json'
+node scripts/check-publication-metadata.mjs
+```
+
+`CHECK_BASE_URL`はorigin、`PUBLIC_BASE_PATH`は生成物のbaseに合わせる。公開メタの検査にはbuild時と同じ`PUBLIC_SITE_URL`・`PUBLIC_PUBLISH_MODE`も使う。出力名は実行する版に合わせ、保存済みの失敗や旧公開記録を上書きしない。公開後はoriginを実公開先へ変更して別名のreportへ保存する。`check:depth`は全50×日英×3幅とPrivacy/footer、`check-inline-maps`は代表2店舗の表示/閉じるとprovider拒否、`check:quality`は一覧/地域/詳細等、publication-metadataは公開メタの重点検査であり、対象範囲は異なる。検証PASSをAdSense合格、Google掲載、全店舗の営業/在庫、法令適合の保証にしない。
+
+---
+
+# 0.13から継承する全商品画像と海外検索
+
+013の仕様は[こちら](../specs/013-complete-imagery-international-seo/spec.md)。人物スタイリング画像は公開50商品、旧25＋新23の計48画像ファイル。前版の編集・購入根拠・価格/広告の分離を継承する。最終の検証数や公開commit/Actionsはverification/deployment-resultsを参照し、仕様の予定値を実測と扱わない。0.12の保存版は[引継ぎ](archive/handoff-v12.md)・[検証](archive/verification-v12.md)。
 
 ## 全商品のAIイメージを維持する
 

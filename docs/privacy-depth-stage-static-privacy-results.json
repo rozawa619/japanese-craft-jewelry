@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-11-17T04:07:34.778Z",
+  "method": "Inspect the generated HTML and source policy version against the current locked-off Google advertising state. No account, certified CMP, actual consent or law compliance is certified by this check.",
+  "checks": [
+    {
+      "name": "Unconfigured Google advertising cannot be activated by an environment flag",
+      "status": "passed",
+      "detail": {
+        "mode": "off",
+        "policyVersion": "2026-11-17-v14",
+        "accountConnection": "not-configured",
+        "certifiedCmp": "not-configured",
+        "hostingSuitability": "pending-review",
+        "adServingIntegration": "not-enabled"
+      }
+    },
+    {
+      "name": "en policy matches the locked-off version and provides real advertising choices",
+      "status": "passed",
+      "detail": {
+        "version": "2026-11-17-v14",
+        "mode": "off"
+      }
+    },
+    {
+      "name": "ja policy matches the locked-off version and provides real advertising choices",
+      "status": "passed",
+      "detail": {
+        "version": "2026-11-17-v14",
+        "mode": "off"
+      }
+    },
+    {
+      "name": "Generated pages contain no Google advertising, analytics or fake consent integration",
+      "status": "passed",
+      "detail": {
+        "htmlPages": 264,
+        "footerPages": 249,
+        "noAdvertisingRequestsInitiatedByTags": true
+      }
+    }
+  ],
+  "failures": [],
+  "pages": 264,
+  "completedAt": "2026-11-17T04:07:34.891Z",
+  "summary": {
+    "checks": 4,
+    "passed": 4,
+    "failed": 0,
+    "htmlPages": 264,
+    "mode": "off"
+  }
+}

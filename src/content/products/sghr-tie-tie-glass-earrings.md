@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-The reason to choose Tie-tie is its elongated shape as much as the material itself. The tie-like outline extends below the ear, giving transparent glass the role of a line in the composition.
+Tie-tie makes the glass itself the long element. The narrow, tie-like outline supplies a different rhythm from a round bead hanging beneath a fitting. Choose it when an extended transparent shape interests you more than an opaque area of color.
 
-Set it beside the small round Nebula or triangular Kolmio and the choice becomes one of placement and shape. Tie-tie is the candidate when a vertical outline is what you want beside the face.
+Kolmio from the same maker puts a triangle at the ear's edge instead. Comparing the two is a way to decide where the glass belongs before choosing a material simply because it is glass. For Tie-tie, consider the line below the ear together with the collars and scarves you actually use.

@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-11-17T04:08:41.442Z",
+  "origin": "http://127.0.0.1:4322",
+  "method": "Fresh Chrome executes exactly the shared publication-metadata assertion used by the full bilingual suite. Expected robots includes the intentional large image preview directive. No site code/data changed for this follow-up.",
+  "checks": [
+    {
+      "name": "Publication metadata, withdrawn hairpin and empty categories are correct",
+      "status": "passed",
+      "detail": [
+        {
+          "locale": "en",
+          "robots": "index, follow, max-image-preview:large",
+          "canonical": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
+          "withdrawnHairpin": 404,
+          "contact": 404
+        },
+        {
+          "locale": "ja",
+          "robots": "index, follow, max-image-preview:large",
+          "canonical": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+          "withdrawnHairpin": 404,
+          "contact": 404
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "completedAt": "2026-11-17T04:08:43.293Z",
+  "summary": {
+    "checks": 1,
+    "passed": 1,
+    "failed": 0
+  }
+}

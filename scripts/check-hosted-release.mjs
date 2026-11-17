@@ -15,6 +15,7 @@ const catalog=JSON.parse(await readFile(resolve(root,'src/data/catalog.json'),'u
 const translations=JSON.parse(await readFile(resolve(root,'src/data/translations/ja.json'),'utf8'));
 const visits=JSON.parse(await readFile(resolve(root,'src/data/visits.json'),'utf8'));
 const registry=JSON.parse(await readFile(resolve(root,'src/data/editorial-images.json'),'utf8'));
+const detailRegistry=JSON.parse(await readFile(resolve(root,'src/data/product-detail-images.json'),'utf8'));
 const browser=await chromium.launch({channel:'chrome',headless:true});
 const page=await browser.newPage({viewport:{width:390,height:844},reducedMotion:'reduce'});
 page.on('pageerror',e=>report.pageErrors.push({url:page.url(),message:e.message}));
@@ -58,7 +59,7 @@ try{
     const locale=location.includes('/ja/')?'ja':'en';
     for(const caption of [...html.matchAll(/<figure\b[^>]*data-editorial-asset[^>]*>([\s\S]*?)<\/figure>/gi)].map(match=>match[1].match(/<figcaption[^>]*>([\s\S]*?)<\/figcaption>/i)?.[1].replace(/<[^>]+>/g,'').trim()))assert.equal(caption,locale==='ja'?'AIイメージ':'AI image');
     const csp=metas.find(m=>m['http-equiv']?.toLowerCase()==='content-security-policy')?.content||'';
-    for(const directive of ["default-src 'self'","object-src 'none'","base-uri 'none'","form-action 'none'","frame-src 'none'","connect-src 'none'"])assert.ok(csp.includes(directive),location+' '+directive);
+    for(const directive of ["default-src 'self'","object-src 'none'","base-uri 'none'","form-action 'none'","frame-src https://www.google.com","connect-src 'none'"])assert.ok(csp.includes(directive),location+' '+directive);
     assert.equal(/script-src[^;]*(?:unsafe-inline|unsafe-eval)/.test(csp),false);
     let scriptHashes=0,jsonBlocks=0;
     for(const script of html.matchAll(/<script\b((?:"[^"]*"|'[^']*'|[^'">])*)>([\s\S]*?)<\/script\s*>/gi)){
@@ -74,13 +75,13 @@ try{
   return {canonicalUrls:locations.length,executableScriptHashes:report.pages.reduce((sum,p)=>sum+p.scriptHashes,0),validJsonBlocks:report.pages.reduce((sum,p)=>sum+p.jsonBlocks,0)};
  });
  await check('All registered AI image files return 200 and match the final local assets',async()=>{
-  for(const path of new Set(Object.values(registry).map(asset=>asset.path))){
+  for(const path of new Set([...Object.values(registry),...Object.values(detailRegistry)].map(asset=>asset.path))){
    const response=await page.request.get(origin+base+path);assert.equal(response.status(),200);
    assert.match(response.headers()['content-type'],/image\/webp/);
    const deployed=digest(await response.body()),local=digest(await readFile(resolve(root,'public',path)));assert.equal(deployed,local,path);
    report.assets.push({path,status:response.status(),sha256:deployed,localMatch:true});
   }
-  return {uniqueImageFiles:report.assets.length,styledProducts:Object.keys(registry).length};
+  return {uniqueImageFiles:report.assets.length,styledProducts:Object.keys(registry).length,productDetails:Object.keys(detailRegistry).length};
  });
  for(const locale of ['en','ja']){
   await check(locale+' deferred Contact returns 404 and remains outside sitemap/navigation',async()=>{
@@ -125,5 +126,5 @@ try{
  await check('No hosted CSP/client/console errors during supplemental navigation',()=>{assert.deepEqual(report.pageErrors,[]);assert.deepEqual(report.consoleErrors,[])});
 }finally{
  await browser.close();report.completedAt=new Date().toISOString();report.finalizedAt=report.completedAt;report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,canonicalUrls:report.pages.length,uniqueImages:report.assets.length,pageErrors:report.pageErrors.length,consoleErrors:report.consoleErrors.length};
- await writeFile(resolve(root,process.env.CHECK_HOSTED_REPORT_PATH||'docs/visual-seo-stage-hosted-supplement-results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report.summary));if(report.failures.length)process.exitCode=1;
+ await writeFile(resolve(root,process.env.CHECK_HOSTED_REPORT_PATH||'docs/privacy-depth-stage-hosted-supplement-results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report.summary));if(report.failures.length)process.exitCode=1;
 }

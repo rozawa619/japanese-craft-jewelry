@@ -13,6 +13,10 @@ import VisitGuide from '../../../components/VisitGuide.astro';
 import ProductCard from '../../../components/ProductCard.astro';
 import ChoiceDetails from '../../../components/ChoiceDetails.astro';
 import SelectionDecision from '../../../components/SelectionDecision.astro';
+import ProductBuyingGuide from '../../../components/ProductBuyingGuide.astro';
+import ProductDetailImage from '../../../components/ProductDetailImage.astro';
+import {productDetailImageFor} from '../../../lib/product-detail-images';
+import {buyingGuideFor} from '../../../lib/product-buying-guides';
 import PurchaseEvidence from '../../../components/PurchaseEvidence.astro';
 import {selectionNoteFor} from '../../../lib/selection-notes';
 import {catalogFor,productsFor,makerFor,labels} from '../../../lib/catalog';
@@ -30,11 +34,13 @@ const maker=makerFor(p,locale),merchant=catalog.merchants.find(m=>m.id===p.merch
 const notes=(await contentFor('productNotes',locale)).filter(note=>note.data.productId===p.id);
 const Content=notes.length?(await render(notes[0])).Content:null;
 const choiceNote=selectionNoteFor(p.id,locale);
-const sourceIds=[...new Set([...p.sourceIds,...maker.sourceIds,...merchant.sourceIds,...p.craftClassification.sourceIds,...choiceNote.sourceIds])];
+const buyingGuide=buyingGuideFor(p,locale);
+const sourceIds=[...new Set([...p.sourceIds,...maker.sourceIds,...merchant.sourceIds,...p.craftClassification.sourceIds,...choiceNote.sourceIds,...buyingGuide.sourceIds])];
 const craftNotes=(await contentFor('craftNotes',locale)).filter(note=>p.craftIds.includes(note.data.craftId)&&note.body?.trim());
 const earJewelry=p.productType.some(type=>['pierced-earrings','clip-on-earrings','ear-cuff'].includes(type));
 const specs=[[t(locale,'Type','種類'),labels('productTypes',p.productType,locale)],[t(locale,'Materials','素材'),labels('materials',p.materialIds,locale)],[t(locale,'Size','サイズ'),p.size||t(locale,'Not listed in the official information','公式情報に記載なし')],[t(locale,'Weight','重さ'),p.weightPerPieceGrams===null?(earJewelry?t(locale,'Per-ear weight not confirmed','片耳の重さは未確認'):t(locale,'Weight not confirmed','重さは未確認')):p.weightPerPieceGrams+(earJewelry?t(locale,' g per piece','g（片側）'):t(locale,' g','g'))],[t(locale,'Hardware','金具素材'),p.findings||t(locale,'Not listed in the official information','公式情報に記載なし')],[t(locale,'Fastening','留め方'),p.fastening||t(locale,'Not listed in the official information','公式情報に記載なし')]].filter(([label])=>earJewelry||p.weightPerPieceGrams!==null||label!==t(locale,'Weight','重さ'));
 const image=productImageFor(p.id);
+const detailImage=productDetailImageFor(p.id);
 const search=productSearchMetadata(p,locale,labels('crafts',p.craftIds,locale));
 const searchBreadcrumbs=site.url?[{name:t(locale,'The selection','商品セレクト'),url:new URL(href('objects/'),site.url).href},{name:p.title,url:new URL(href('objects/'+p.slug+'/'),site.url).href}]:undefined;
 const candidates=products.filter(v=>v.id!==p.id&&v.availability!=='out_of_stock');
@@ -64,7 +70,7 @@ const destinationNote=t(locale,'Opens the official website in a new tab.','公�
     <PurchaseEvidence productId={p.id} locale={locale}/>
     {p.availability==='out_of_stock'&&<p class="purchase-stock-note">{t(locale,'Out of stock when checked.','確認時点では欠品しています。')}</p>}
     <div class="purchase-primary" data-product-primary-cta><MarketPurchaseLink productId={p.id} locale={locale} label={destinationLabel}/></div>
-    {markets.japanLinks.map(link=><p class="market-official-source"><a href={link.url} target="_blank" rel="noopener noreferrer" data-japan-official-url={link.id}>{link.url}<span class="sr-only">{t(locale,' (official product information, opens in a new tab)','（公式商品情報、新しいタブで開く）')}</span></a></p>)}
+    {markets.japanLinks.map(link=><p class="market-official-source"><a href={link.url} target="_blank" rel="noopener noreferrer" data-japan-official-url={link.id}>{t(locale,'Explore the official details & options','公式の仕様・選択肢を見る')} <span aria-hidden="true">↗</span><span class="sr-only">{t(locale,' (official product information, opens in a new tab)','（公式商品情報、新しいタブで開く）')}</span></a></p>)}
     <a class="market-visit-link" href={'#official-and-visit-'+p.id} data-price-visit-link>{t(locale,'Shop information & visiting Japan','日本のお店・訪問の案内を見る')} <span aria-hidden="true">↓</span></a>
    </div>
    {showInternational&&<section class="purchase-market-international" data-market-section="international" aria-label={t(locale,'International store price and link','海外通販の価格とリンク')}>
@@ -76,20 +82,24 @@ const destinationNote=t(locale,'Opens the official website in a new tab.','公�
   </div>
  </section>
  <SelectionDecision productId={p.id} locale={locale}/>
- <section class="purchase-story" aria-labelledby="why-this-piece"><div><p class="eyebrow">{t(locale,'WHY WE PICKED IT','このひとつを選んだ理由')}</p><h2 id="why-this-piece">{t(locale,'A detail to fall for.','惹かれる、その理由。')}</h2></div><div class="purchase-story-copy">{Content&&<div class="prose"><Content/></div>}</div></section>
+ <section class="purchase-story" aria-labelledby="why-this-piece"><div><p class="eyebrow">{t(locale,'WHY WE PICKED IT','このひとつを選んだ理由')}</p><h2 id="why-this-piece">{t(locale,'A detail to fall for.','惹かれる、その理由。')}</h2></div><div class="purchase-story-copy purchase-story-with-art"><ProductDetailImage image={detailImage} locale={locale} officialUrl={markets.japanLinks[0]?.url}/>{Content&&<div class="prose"><Content/></div>}</div></section>
  <section class="purchase-outfit" aria-labelledby="outfit-title"><div><p class="eyebrow">{t(locale,'PICTURE YOUR OUTFIT','こんな装いの日に')}</p><h2 id="outfit-title">{story.outfit.title}</h2></div><div><p>{story.outfit.body}</p></div></section>
  <ChoiceDetails productId={p.id} locale={locale}/>
+ <ProductBuyingGuide product={p} locale={locale}/>
  <VisitGuide productId={p.id} locale={locale}/>
  <section class="purchase-next"><div><h2>{t(locale,'Found a detail you love?','気になったら、お店で。')}</h2><p>{t(locale,'Take a closer look on the Japan official listing.','日本向けの公式ページで、気になるデザインをもう一度。')}</p></div><div><MarketPurchaseLink productId={p.id} locale={locale} label={destinationLabel}/><p class="purchase-destination-note">{destinationNote}</p></div></section>
  <div class="purchase-information">
   <details class="purchase-details" data-product-details><summary>{t(locale,'Materials, size & fittings','素材・サイズ・金具について')}</summary><div class="purchase-details-body"><dl class="spec-list">{specs.map(([label,value])=><div><dt>{label}</dt><dd>{value}</dd></div>)}</dl><h2>{t(locale,'Materials & finish notes','素材・仕上げの補足')}</h2><ul>{p.whatToCheck.map(item=><li>{item}</li>)}</ul><p class="purchase-price-note">{t(locale,'Product information checked ','商品情報の確認：')}{p.lastVerifiedAt}</p></div></details>
   <details class="purchase-details"><summary>{t(locale,'Maker, craft & provenance','作り手・工芸・産地について')}</summary><div class="purchase-details-body"><h2><a href={href('makers/'+maker.id+'/')}>{maker.name}</a></h2><p>{maker.productionNote}</p><p>{p.craftClassification.label}</p>{craftNotes.map(note=><p><a href={href('crafts/'+contentSlug(note)+'/')}>{note.data.title} →</a></p>)}</div></details>
-  <details class="purchase-details"><summary>{t(locale,'Sources & information checks','出典・情報の確認について')}</summary><div class="purchase-details-body"><Sources sourceIds={sourceIds} locale={locale}/></div></details>
+  <details class="purchase-details" id="product-sources"><summary>{t(locale,'Sources & information checks','出典・情報の確認について')}</summary><div class="purchase-details-body"><Sources sourceIds={sourceIds} locale={locale}/></div></details>
  </div>
  <section class="related purchase-related"><h2>{t(locale,'More pieces to love.','こちらのジュエリーも。')}</h2><div class="product-grid">{related.map((product,i)=><ProductCard product={product} index={i} locale={locale}/>)}</div></section>
  {hasDestination&&<aside class="product-sticky-cta" data-product-sticky-cta hidden aria-label={t(locale,'Japan reference price and official listing','日本向け参考価格と公式ページ')}><div><span class="sticky-product-name">{p.title}</span><MarketPrice productId={p.id} locale={locale} variant="sticky"/></div><MarketPurchaseLink productId={p.id} locale={locale} label={t(locale,'Japan listing','国内ページへ')}/></aside>}
 </div>
 <script>
+ document.querySelector<HTMLAnchorElement>('.buying-guide-sources')?.addEventListener('click',()=>{
+  const sources=document.querySelector<HTMLDetailsElement>('#product-sources');if(sources)sources.open=true;
+ });
  const sticky=document.querySelector<HTMLElement>('[data-product-sticky-cta]');
  const primary=document.querySelector<HTMLElement>('[data-product-primary-cta]');
  const footer=document.querySelector<HTMLElement>('.site-footer');
@@ -101,6 +111,8 @@ const destinationNote=t(locale,'Opens the official website in a new tab.','公�
  }
 </script>
 <style>
+ .purchase-story{grid-template-columns:1fr;gap:26px}.purchase-story-with-art{display:grid;grid-template-columns:minmax(220px,300px) minmax(0,1fr);gap:40px;align-items:start}.purchase-story-with-art .prose{min-width:0}
+ @media(max-width:720px){.purchase-story-with-art{grid-template-columns:1fr;gap:22px}}
  .official-visual-link{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:48px;font-size:11px;line-height:1.7;padding:13px 16px;border:1px solid var(--line);border-top:0;text-decoration:none}.official-visual-link:hover{background:#eeeee5}
  .purchase-market-block{padding-top:3px}
  .purchase-market-note{font-size:10px;line-height:1.75;color:var(--muted);margin:10px 0 14px}

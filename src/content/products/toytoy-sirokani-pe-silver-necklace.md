@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-This piece gathers silver color and curved pattern into a small drop shape. We included it as a candidate for someone choosing a compact metal form rather than a larger top or a bright color accent.
+Sirokani-pe puts a compact arrangement of silver curves at the neckline. The official name Silver Drop carries the maker's story, while the actual motif should be judged from its own photograph. It is a candidate for someone who wants line and silver color without making a large colored stone the focal point.
 
-ToyToy’s wooden Ninkari Nikuri uses an open patterned outline. Sirokani-pe puts detail onto a small silver surface. The same maker offers two different starting points through material and where the jewelry is worn.
+The same maker's wooden earrings offer a different surface and position. This necklace instead asks you to look at the small curved top and its relationship with the chain. Compare the physical scale first, then let the maker's explanation of the motif add another reason for choosing it.

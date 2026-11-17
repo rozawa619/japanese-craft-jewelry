@@ -7,7 +7,7 @@ export default defineConfig({
   markdown: { syntaxHighlight: false },
   security: {
     csp: {
-      directives: ["default-src 'self'", "object-src 'none'", "base-uri 'none'", "form-action 'none'", "frame-src 'none'", "connect-src 'none'", "img-src 'self' data:", "font-src 'self'"],
+      directives: ["default-src 'self'", "object-src 'none'", "base-uri 'none'", "form-action 'none'", "frame-src https://www.google.com", "connect-src 'none'", "img-src 'self' data:", "font-src 'self'"],
     },
   },
 });

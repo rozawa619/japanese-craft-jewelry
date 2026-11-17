@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-Different feather designs on the left and right make asymmetry part of this hand-dyed Yuzen pair. The long textile forms bring a recognizable motif beside the face, with a different composition on each side.
+Peacock asks you to choose the relationship between two different sides. The hand-dyed textile designs are deliberately asymmetric, so a photograph of one ornament cannot describe the whole pair. View both sides before deciding whether the contrast is the detail you want beside your face.
 
-Try the feathers with an uncluttered neckline, leaving a smaller ring to supply the rest of the jewelry. Morphosphere makes a blue lace flower the focus; this design offers a dyed feather motif and a deliberately unequal pair. We chose it for someone who enjoys the difference between the two sides as much as the fabric pattern.
+Its long fabric form also brings care into the selection. The maker's moisture and friction precautions are relevant to wet hair, a scarf and storage with other pieces. Choose it for the pictured textile composition, while allowing for the handling that such a choice requires; we have not worn the pieces to assess durability.

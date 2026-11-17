@@ -1,0 +1,2236 @@
+{
+  "version": "0.14.0",
+  "checkedAt": "2026-11-17",
+  "mode": "Built-in image_gen; no CLI/API-key fallback",
+  "referencePolicy": "Local project-generated AI images inspected before generation. No retailer photographs copied. Generated output is a front-detail illustration, not an actual-product photograph or specification/quantity evidence.",
+  "rejectedCandidates": [
+    {
+      "productId": "sirisiri-page-blue-enamel-pierced-earrings",
+      "reason": "Rolled shape could read as a cuff rather than an ear ornament; replaced before first publication.",
+      "sha256": "d73c8146efb91f0ff2be29c60124f54eeb94b345f569f9b90a40b79ca0d87abb",
+      "originalPngSha256": "45b9d94edf19e910690697b372f046e73bc880211536e80ba1c296691a0c8664",
+      "previousPath": "public/images/solo-sirisiri-page-blue-enamel-pierced-earrings-v14.webp",
+      "privateCopy": "artifacts/solo-candidates-v14/rejected-page-blue-before-r2.webp"
+    }
+  ],
+  "images": [
+    {
+      "productId": "hamamatsuya-catch-pierced",
+      "assetId": "ai-solo-hamamatsuya-catch-pierced-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry detail illustration for an editorial Japanese craft jewelry website. Input image1 is an existing AI styling illustration, used only as a jewelry reference. Create a square1024x1024 original AI illustration/product mockup showing only the visible jewelry from that reference. Subject: One front-facing diamond-shaped wooden drop composed of four angular triangular wood-tone areas, pale cream, honey, reddish brown and deep brown, preserving the reference's simple geometric arrangement. Include only the tiny visible warm-metal round front stud and small link above the diamond; do not add an unseen back or catch. Enlarge and center the ornament with generous warm ivory negative space, keeping the same front shape, colors and visible pattern as the reference. Use soft studio-like lighting, subtle realistic material texture and a restrained editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothing or body fragments. Plain warm ivory background, no props, logos, text, labels, rulers, packaging or boxes. No extra jewelry, extra stones, duplicated ornaments, unseen backs, invented clasps or speculative mechanism. Keep the complete visible front ornament inside the frame. This is an independent AI styling detail concept, not a real product photograph, not an exact product reproduction and not evidence of sale quantity.",
+      "reference": "public/images/hakone-yosegi-pierced-styling-v9.webp",
+      "referenceSha256": "ad9d3b1505f50b0e32ceac11c274917f78293ae87acfcf44509a0c4427dbf5b3",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-4594b878-dc39-4784-a5dc-086bdb02e0a3.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-hamamatsuya-catch-pierced-v14.png",
+      "pngSha256": "8c5029aee2266e2aba378c5b68beab4c55bb03371bdc20933736f11ad7b6134e",
+      "pngBytes": 1299311,
+      "publicPath": "public/images/solo-hamamatsuya-catch-pierced-v14.webp",
+      "sha256": "4b16cb205d6a10a25ad60e6bb1697c2c93393269469b64de14598b6cc7f17ae9",
+      "bytes": 43328,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of one diamond-shaped wooden earring front with cream and brown geometric inlay.",
+        "ja": "菱形の木の飾りに白茶の幾何学模様を配したピアス正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "hamamatsuya-earrings",
+        "hamamatsuya-technique",
+        "hamamatsuya-workshop"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Diamond contour, triangular wood-color arrangement and short visible front link retained."
+      },
+      "checkedAt": "2026-11-17T03:36:10.766Z"
+    },
+    {
+      "productId": "hamamatsuya-clip",
+      "assetId": "ai-solo-hamamatsuya-clip-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry detail illustration for an editorial Japanese craft jewelry website. Input image1 is an existing AI styling illustration, used only as a jewelry reference. Create a square1024x1024 original AI illustration/product mockup showing only the visible jewelry from that reference. Subject: One slender elongated tapered rectangular wooden ear ornament, preserving the stacked downward chevron-like zones in pale cream at the top, honey amber in the middle and dark brown at the bottom. Show the front decorative face only. The hidden clip is not visible in the reference, so do not invent a rear fitting. Enlarge and center the ornament with generous warm ivory negative space, keeping the same front shape, colors and visible pattern as the reference. Use soft studio-like lighting, subtle realistic material texture and a restrained editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothing or body fragments. Plain warm ivory background, no props, logos, text, labels, rulers, packaging or boxes. No extra jewelry, extra stones, duplicated ornaments, unseen backs, invented clasps or speculative mechanism. Keep the complete visible front ornament inside the frame. This is an independent AI styling detail concept, not a real product photograph, not an exact product reproduction and not evidence of sale quantity.",
+      "reference": "public/images/hakone-yosegi-clipon-styling-v9.webp",
+      "referenceSha256": "a0b25e0844fdc5af359f36e7c3e3ae46b93df1b6ff3f7e50541ea8481ac607c9",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-093b7bde-7c79-4c0e-9513-100e8f25eb98.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-hamamatsuya-clip-v14.png",
+      "pngSha256": "856f6f177371e7563a3ee171ec6047fcec52b5d4d176109feb21164873587838",
+      "pngBytes": 1824981,
+      "publicPath": "public/images/solo-hamamatsuya-clip-v14.webp",
+      "sha256": "d288c50409afd679955d98269f7b9eba0f68da60c4212f68e7ddaeb0ee7825a5",
+      "bytes": 48426,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of one elongated wooden earring front with layered cream and brown chevrons.",
+        "ja": "白茶の山形模様が重なる縦長の木製イヤリング正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "hamamatsuya-earrings",
+        "hamamatsuya-technique",
+        "hamamatsuya-workshop"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Long tapered outline and downward chevrons retained; concealed clip is omitted."
+      },
+      "checkedAt": "2026-11-17T03:36:10.719Z"
+    },
+    {
+      "productId": "hamamatsuya-pendant",
+      "assetId": "ai-solo-hamamatsuya-pendant-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: The front of the wood-mosaic pendant seen in the reference, with its polygonal outer contour and radiating star-like triangular wood pattern in cream, honey, rust-brown and dark brown. Show the visible top suspension and only a short dark cord section extending upward; omit the rest of the cord and any hidden closure. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/yosegi-pendant-styling-v9.webp",
+      "referenceSha256": "c6a15efcf482620555c3e355571a9c97c3271029858be8876d9181b69da1001e",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-120369c1-2d05-413b-8bca-39ea05cfd886.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-hamamatsuya-pendant-v14.png",
+      "pngSha256": "241999e88b077a0ae900495158be35ba1183b06020afc22a72a0befdac9cf3dd",
+      "pngBytes": 2266302,
+      "publicPath": "public/images/solo-hamamatsuya-pendant-v14.webp",
+      "sha256": "15430f9240fb340409fa741724cb00a859fe223c950bee791178b6f35101e706",
+      "bytes": 141564,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a polygonal wood-mosaic pendant front with a radiating star and short dark cord.",
+        "ja": "放射状の星模様を配した多角形の寄木ペンダント正面と短い黒紐のAIイメージ。"
+      },
+      "sourceIds": [
+        "hamamatsuya-pendant",
+        "hamamatsuya-technique",
+        "hamamatsuya-workshop"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Polygonal outline, radiating mosaic and short dark cord retained; no clasp shown."
+      },
+      "checkedAt": "2026-11-17T03:38:15.048Z"
+    },
+    {
+      "productId": "maruyama-clip-c",
+      "assetId": "ai-solo-maruyama-clip-c-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: One star-shaped geometric wood ear ornament, with eight projecting points and radiating alternating cream, honey and dark-brown triangular wood areas, as seen in the reference. Keep only the small visible warm-metal front hanging link; do not show an invented hidden clip. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/yosegi-star-styling-v9.webp",
+      "referenceSha256": "a39d6974e9586eb082115c1e9e288173a068646cad2930d07da4173fe7aea09a",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-4f25ce55-e33a-4c02-bd2f-390052e15517.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-maruyama-clip-c-v14.png",
+      "pngSha256": "664411da6e2e0f65d33717868cd0219729f9e25b1e44badafcebb6bea37ff79f",
+      "pngBytes": 1611275,
+      "publicPath": "public/images/solo-maruyama-clip-c-v14.webp",
+      "sha256": "0daaea2edcb5bed0bda85fc506f22fcc364ea0a825d413ad43d88bcb8eda5a85",
+      "bytes": 56158,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of one eight-point wooden star earring front in contrasting light and dark tones.",
+        "ja": "明暗の木色を組み合わせた八角星のイヤリング正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "maruyama-clip-c",
+        "maruyama-category",
+        "maruyama-company"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Eight-point outline, alternating triangular wood tones and visible short link retained."
+      },
+      "checkedAt": "2026-11-17T03:38:14.981Z"
+    },
+    {
+      "productId": "maruyama-clip-d",
+      "assetId": "ai-solo-maruyama-clip-d-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: One narrow straight rectangular wooden ear ornament. Preserve the reference's symmetrical stacked chevron triangles in cream, honey, rusty brown and dark brown, with a fine brown outer border. Front face only; no invented hidden clip or reverse. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/yosegi-bar-styling-v9.webp",
+      "referenceSha256": "582fe36ebc0596254ced7dde0052532d7be11651dbe078138d759ac266087ab5",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-06e550cf-978e-47d3-ba69-00443e7edcb6.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-maruyama-clip-d-v14.png",
+      "pngSha256": "c39312b1d19e469dc87f06c3c9ce779ff32be55cc7522904bb54bfb1b85de249",
+      "pngBytes": 1750667,
+      "publicPath": "public/images/solo-maruyama-clip-d-v14.webp",
+      "sha256": "d2c4a46e377c0d4893df16945e21647e887b19260c449e412c8d21c4a5869b1e",
+      "bytes": 45224,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of one long rectangular wooden earring front with stacked geometric chevrons.",
+        "ja": "山形の幾何学模様が連なる縦長の木製イヤリング正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "maruyama-clip-d",
+        "maruyama-category",
+        "maruyama-company"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Long rectangular front and stacked chevrons retained; concealed clip omitted."
+      },
+      "checkedAt": "2026-11-17T03:39:42.295Z"
+    },
+    {
+      "productId": "maruyama-pierced-c",
+      "assetId": "ai-solo-maruyama-pierced-c-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: One star-shaped geometric wooden ear ornament with eight points and radiating alternating cream, honey and dark-brown triangular wood areas. Preserve the small visible warm-metal front loop; do not invent an unseen post, back or clasp. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/yosegi-star-styling-v9.webp",
+      "referenceSha256": "a39d6974e9586eb082115c1e9e288173a068646cad2930d07da4173fe7aea09a",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-c2074eeb-aa6c-4eac-a419-63695b5beb46.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-maruyama-pierced-c-v14.png",
+      "pngSha256": "26e46a446ca0a495ed6378c13e2c21b435e9fc4e99d8c6ea0a93ea089f7da42a",
+      "pngBytes": 1450913,
+      "publicPath": "public/images/solo-maruyama-pierced-c-v14.webp",
+      "sha256": "da162e8443be8c6ac68b7343044f82216b9f9eff9f327569646633d00457f881",
+      "bytes": 52282,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of one eight-point wooden star pierced-earring front in light and dark tones.",
+        "ja": "明暗の木色を組み合わせた八角星のピアス正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "maruyama-pierced-c",
+        "maruyama-category",
+        "maruyama-company"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Eight-point outline and alternating triangular wood tones retained; no back fitting."
+      },
+      "checkedAt": "2026-11-17T03:39:45.582Z"
+    },
+    {
+      "productId": "maruyama-pierced-d",
+      "assetId": "ai-solo-maruyama-pierced-d-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: One narrow straight rectangular wooden ear ornament with the reference's symmetrical stacked chevron triangles in cream, honey, rusty brown and dark brown, within a fine brown outer border. Show only the front face and what is visible at its top; no invented rear post or catch. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/yosegi-bar-styling-v9.webp",
+      "referenceSha256": "582fe36ebc0596254ced7dde0052532d7be11651dbe078138d759ac266087ab5",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-bf013f39-87fe-431d-b0b0-5bb65705f9a5.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-maruyama-pierced-d-v14.png",
+      "pngSha256": "19d99c0ba9888ada27eaab2960076509170cfbb919045d71660977b32f62c9c7",
+      "pngBytes": 1696803,
+      "publicPath": "public/images/solo-maruyama-pierced-d-v14.webp",
+      "sha256": "48b07a3d670d333abebb0071f66742d72ddb85e2e914eeedfdebd815bf5ce0d7",
+      "bytes": 49910,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of one rectangular wooden pierced-earring front with cream and brown chevrons.",
+        "ja": "白茶の山形模様を配した長方形の木製ピアス正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "maruyama-pierced-d",
+        "maruyama-category",
+        "maruyama-company"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Long rectangular outline and chevron arrangement retained; no hidden post."
+      },
+      "checkedAt": "2026-11-17T03:39:43.170Z"
+    },
+    {
+      "productId": "rinzen-seika-amber-pierced-earrings",
+      "assetId": "ai-solo-rinzen-seika-amber-pierced-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: One amber transparent elongated kite/leaf-shaped glass earring ornament from the reference, warm honey amber glass, crisp faceted edges and delicate radiating star-cut lines near the lower part. Include only the fine short warm-gold-colored chain visible above it, cut before any unknown fastening. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/rinzen-amber-glass-styling-v9.webp",
+      "referenceSha256": "08c55ea2a122ba07a24bba5919e7496339202bf45f6e9c8f0f8522b0a4abf45e",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-53aea1e4-547a-4c46-9a07-a696d09b9bbb.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-rinzen-seika-amber-pierced-earrings-v14.png",
+      "pngSha256": "be9ca9878fbb79f1ad5897701cf8a2343a846c05967e4f10a174a2798037a312",
+      "pngBytes": 1656431,
+      "publicPath": "public/images/solo-rinzen-seika-amber-pierced-earrings-v14.webp",
+      "sha256": "52c2b4778297e9e2143f2302a139429d92539d7c03d7a1bd2e98ede22ced584e",
+      "bytes": 41940,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of one amber-colored glass earring front with radiating cut lines and a short chain.",
+        "ja": "放射状のカットと短いチェーンを配した琥珀色ガラスのピアス正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "becos-rinzen-seika-amber",
+        "becos-rinzen-seika-amber-ja",
+        "rinzen-brand"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Elongated amber kite contour and lower radiating cut motif retained; short chain only."
+      },
+      "checkedAt": "2026-11-17T03:43:44.333Z"
+    },
+    {
+      "productId": "six-kiln-half-moon-earrings",
+      "assetId": "ai-solo-six-kiln-half-moon-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: One front ornament of the white porcelain half-moon earring visible in the reference: upright semicircle with a straight left edge and curved right edge, delicate warm-gold-colored fine border, four separate very fine warm-gold-colored chain tassels hanging from the lower edge in the same arrangement. Do not show an ear fitting or invent the back. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/arita-halfmoon-styling-v9.webp",
+      "referenceSha256": "302bf3fc8e88a77da5fe30feb6ced8c8e1dcdfc3a9d1b64b95e51eaca5819a19",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-e3b5ebfb-23a1-4975-bc4e-9e27df651a05.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-six-kiln-half-moon-earrings-v14.png",
+      "pngSha256": "29889a5b6ed8b116ae7726a395d2227ab62e832e6498b7991b0cba486ed37b46",
+      "pngBytes": 1110597,
+      "publicPath": "public/images/solo-six-kiln-half-moon-earrings-v14.webp",
+      "sha256": "6b9b40d5ca73121730684e09409c8e9b0c84c4141955beed8d65c3cfa2c8fa40",
+      "bytes": 29230,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of one white half-moon earring front with four fine chain tassels.",
+        "ja": "白い半月型の飾りと4本の細いチェーンを組み合わせたピアス正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "becos-six-kiln-half-moon",
+        "becos-six-kiln-half-moon-ja",
+        "six-kiln-brand"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Upright half-moon outline and four separate fine hanging chains retained; no hidden fitting."
+      },
+      "checkedAt": "2026-11-17T03:43:45.308Z"
+    },
+    {
+      "productId": "rinzen-leaf-glass-pendant",
+      "assetId": "ai-solo-rinzen-leaf-glass-pendant-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: The one long pointed leaf-shaped glass pendant visible in the reference, green upper half fading to clear lower half, fine white geometric cut lattice and a radiating star above the middle. Show its visible tiny pale-metal top bail and short fine pale-metal chain segments only, cropped before any unknown clasp. Preserve the pointed leaf silhouette. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/rinzen-green-leaf-styling-v9.webp",
+      "referenceSha256": "cddba5fb05ae46d7b5df6065102740a313cc2aa4e53f360eca801b448ed60f53",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-e09879f8-c0dd-4857-afdc-0e7c0a14b269.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-rinzen-leaf-glass-pendant-v14.png",
+      "pngSha256": "c45ca910ef7e851838ed11912393d9a68ffef59a41750e15c8faf05cfd69b189",
+      "pngBytes": 1354546,
+      "publicPath": "public/images/solo-rinzen-leaf-glass-pendant-v14.webp",
+      "sha256": "18b8ba8ed254c9a2fc87a7df6ec8de90575df47f66af29e1a792c20cdc0d910e",
+      "bytes": 37316,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a green-to-clear leaf-shaped glass pendant front with geometric cut patterns.",
+        "ja": "緑から透明へ移る葉形ガラスに幾何学カットを施したペンダント正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "becos-rinzen-leaf",
+        "becos-rinzen-leaf-ja",
+        "rinzen-brand"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Pointed leaf contour, green upper area and white geometric pattern retained; partial chain only."
+      },
+      "checkedAt": "2026-11-17T03:43:44.757Z"
+    },
+    {
+      "productId": "six-kiln-blue-bouquet-pierced-earrings",
+      "assetId": "ai-solo-six-kiln-blue-bouquet-pierced-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: One front ornament of the blue bouquet earring in the reference: a small rich blue round porcelain disk with a fine white outlined flower and two small leaves, above one much larger thin warm-gold-colored circular hoop. Preserve the disk-to-hoop proportions and white floral drawing. Front view, no hidden ear post. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/arita-blue-bouquet-styling-v9.webp",
+      "referenceSha256": "6cf1828b90904a178c7e74aa1d9a6860c206b387e8e14f9c1300d2347bdb3772",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-e54d1b9b-f478-4d60-988d-0264b47346b9.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-six-kiln-blue-bouquet-pierced-earrings-v14.png",
+      "pngSha256": "29cb1af0b15d7a1b3f018c3afb832e5a78938720879647f3d25500b09f029b8a",
+      "pngBytes": 1666814,
+      "publicPath": "public/images/solo-six-kiln-blue-bouquet-pierced-earrings-v14.webp",
+      "sha256": "16b3624fec4182561c0abdc9cc4ee002ff85aa10b16a4c5056d9fcf91fd48710",
+      "bytes": 45610,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of one blue floral porcelain earring front above a thin golden-colored hoop.",
+        "ja": "青地に白い花を描いた磁器と細い金色フープを組み合わせたピアス正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "becos-six-kiln-blue-bouquet",
+        "becos-six-kiln-blue-bouquet-ja",
+        "six-kiln-brand"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Blue round floral disk and larger thin hoop proportions retained."
+      },
+      "checkedAt": "2026-11-17T03:45:25.816Z"
+    },
+    {
+      "productId": "saskia-diez-drake-porcelain-cuff",
+      "assetId": "ai-solo-saskia-diez-drake-porcelain-cuff-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: Only the visible front-facing curved section of the broad pale-gray porcelain cuff in the reference. Preserve its broad upright curved band silhouette and the overlapping rounded scallop or scale-like front shapes edged in pale ivory. Show the same gentle front angle as on the wrist, with the wrist removed. Avoid rotating to expose or invent a hidden back, opening, clasp or full rear construction. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/saskia-porcelain-cuff-styling-v9.webp",
+      "referenceSha256": "646ac12a72eef2e36892ac9798bdacba7529f00a6bbdecd4a4744edf6adfa0ee",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-995e13c1-a9dc-459f-a9ab-b3e184696bd4.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-saskia-diez-drake-porcelain-cuff-v14.png",
+      "pngSha256": "b5c88f0649534c54050b0cb991550af0e82c8ead739fd15de8d84b9ee22d83ff",
+      "pngBytes": 1647175,
+      "publicPath": "public/images/solo-saskia-diez-drake-porcelain-cuff-v14.webp",
+      "sha256": "b84d3f6f455084e8b19fac4238564587b6b40f54b23982210a86189d6bb48ffb",
+      "bytes": 34706,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of the curved gray cuff front with overlapping scalloped forms.",
+        "ja": "灰色の曲面に鱗状の重なりを表したカフ正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "becos-saskia-drake-cuff",
+        "becos-saskia-drake-cuff-ja",
+        "saskia-diez-brand"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Broad curved gray front with overlapping ivory-edged scallops retained; hidden opening and rear omitted."
+      },
+      "checkedAt": "2026-11-17T03:45:26.376Z"
+    },
+    {
+      "productId": "checos-japanese-apricot-pierced-earrings",
+      "assetId": "ai-solo-checos-japanese-apricot-pierced-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: One silver-colored five-petal flower earring front from the reference. The compact botanical flower has five softly cupped rounded petals, fine etched radiating petal lines, and a small subtly raised circular center. Preserve its quiet silver-white surface, front view only, no post, no back fitting and no extra stone. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/checos-silver-flower-styling-v9.webp",
+      "referenceSha256": "828627f8f41f9b36dff54f9912e25e04f8d22137ed91beaa2de4e8c92ffe5269",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-ae4591dc-12c8-4538-bad8-2838b2419db9.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-checos-japanese-apricot-pierced-earrings-v14.png",
+      "pngSha256": "26828b031cde9493c0c8506a52445f26beb5449f1a827e9bec332ffd0336407e",
+      "pngBytes": 1848544,
+      "publicPath": "public/images/solo-checos-japanese-apricot-pierced-earrings-v14.webp",
+      "sha256": "caad07b89c332bde641e778be6eeaec537bdb99315112d9fcaf2fa5fc123eb24",
+      "bytes": 89376,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of one silver-colored five-petal flower earring front with fine petal lines.",
+        "ja": "細い花びらの線を表した銀色の五弁花ピアス正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "becos-checos-japanese-apricot",
+        "becos-checos-japanese-apricot-ja",
+        "checos-brand"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Five rounded flower petals and subtle radiating petal lines retained; no post or added stone."
+      },
+      "checkedAt": "2026-11-17T03:45:27.285Z"
+    },
+    {
+      "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "assetId": "ai-solo-morphosphere-ultramarine-pansy-pierced-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: One front blue embroidered pansy earring ornament from the reference. Preserve the five softly ruffled pansy petals, ultramarine and periwinkle lace mesh at the petal edges, deep navy-violet central fields, tiny warm-yellow center, and a short fine warm-metal chain above. Thread embroidery and airy lace texture, not a solid resin or gem flower. No hidden ear fitting. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/morphosphere-blue-pansy-styling-v9.webp",
+      "referenceSha256": "b050fd4e55fb8d70e7c9dec44ac6ed13a486262b6cf74828a946bb9caf3ad39a",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-f1f1f924-ab80-4c25-9b96-1b7c50f86e99.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-morphosphere-ultramarine-pansy-pierced-earrings-v14.png",
+      "pngSha256": "657e92cd9ad503a2418eac0bcb993e5783c1d7103a08d2e180f5a868f3a7689f",
+      "pngBytes": 2406582,
+      "publicPath": "public/images/solo-morphosphere-ultramarine-pansy-pierced-earrings-v14.webp",
+      "sha256": "efdd5016fc48d88681de5ff73d70d5c807df5f2200ea1545051e8d8562b84341",
+      "bytes": 193234,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of one blue embroidered pansy earring front with airy lace petals.",
+        "ja": "透けるレース状の花びらを持つ青い刺繍パンジーピアス正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "becos-morphosphere-ultramarine-pansy",
+        "becos-morphosphere-ultramarine-pansy-ja",
+        "morphosphere-brand"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Blue mesh-petal pansy, navy fields and yellow center retained; not converted to solid stone."
+      },
+      "checkedAt": "2026-11-17T03:47:03.455Z"
+    },
+    {
+      "productId": "kato-suke-drop-pierced-earrings",
+      "assetId": "ai-solo-kato-suke-drop-pierced-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: One green teardrop earring front from the reference. The pointed top and rounded bottom enclose translucent emerald and forest green enamel-like color with the same small irregular warm-yellow and muted green mottled areas; a thin pale-metal border and a tiny visible round top loop. Preserve the smooth pear silhouette. Do not add stones or a new ear post. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/kato-green-cloisonne-styling-v9.webp",
+      "referenceSha256": "902f000ffcd13d7ae837d81caba9c5491f0fc7a2b5e529e245410f0937c86e86",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-7ad6714a-2e60-4305-ad28-78fa25e17c6e.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-kato-suke-drop-pierced-earrings-v14.png",
+      "pngSha256": "d7c738d17ba1a5f89d7eed434e4cb377b54b42095e0f7e9364d15372a4bd9651",
+      "pngBytes": 1568624,
+      "publicPath": "public/images/solo-kato-suke-drop-pierced-earrings-v14.webp",
+      "sha256": "c9d70ae49d405c8e2a281183bb9344aa32f4107b08ce84820346467a9f683b02",
+      "bytes": 46450,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of one green teardrop earring front with mottled yellow-green accents.",
+        "ja": "緑のしずく形に黄緑の斑模様を配したピアス正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "becos-kato-suke-drop",
+        "becos-kato-suke-drop-ja",
+        "kato-shippo-brand"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Smooth pear contour and green mottled face retained; no extra gem or hidden fitting."
+      },
+      "checkedAt": "2026-11-17T03:47:03.047Z"
+    },
+    {
+      "productId": "arcos-cosmic-spiral-pendant",
+      "assetId": "ai-solo-arcos-cosmic-spiral-pendant-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: The one oval cosmic glass pendant front from the reference, clear softly domed rim, a vivid swirling deep blue, cyan and pale turquoise spiral with small scattered white star-like points, with its visible clear glass top loop and short dark cord segments entering from above. Preserve the oval outline and visible spiral, omit unknown cord clasp and all rear details. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/arcos-cosmic-spiral-pendant-styling-v9.webp",
+      "referenceSha256": "e5096f550f3eb32f31c77310a9862d48a08c86077e3581dbc87f477534f948b2",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-797025d6-c96e-409e-9bf6-dd745d50e4c8.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-arcos-cosmic-spiral-pendant-v14.png",
+      "pngSha256": "208d37688c7068af2f9f74e5060274b9b599b6bc5defa67ae0acd9c1025c96c3",
+      "pngBytes": 1882479,
+      "publicPath": "public/images/solo-arcos-cosmic-spiral-pendant-v14.webp",
+      "sha256": "de76da507983dd83cdb724a4ee3927e6b4865be367d04483f3cd81100474d2e5",
+      "bytes": 85792,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of an oval blue spiral glass pendant front with a short dark cord.",
+        "ja": "青い渦模様を閉じ込めた楕円形ガラスのペンダント正面と短い黒紐のAIイメージ。"
+      },
+      "sourceIds": [
+        "arcos-cosmic-spiral-v9",
+        "arcos-studio-v9"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Oval clear rim, blue spiral and visible glass loop retained; no rear or cord clasp."
+      },
+      "checkedAt": "2026-11-17T03:47:04.105Z"
+    },
+    {
+      "productId": "arcos-cosmic-glass-bracelet",
+      "assetId": "ai-solo-arcos-cosmic-glass-bracelet-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: Only the visible front oval cosmic-glass bracelet ornament from the reference: a small smooth clear oval dome containing deep blue at its upper end and pale aqua/turquoise at its lower end, scattered pale specks, with the two tiny dark knots and short dark navy cord segments immediately above and below. Keep the front oval upright. Do not create an entire circular bracelet, hidden closure, extra beads or rear construction. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/arcos-cosmic-glass-bracelet-styling-v9.webp",
+      "referenceSha256": "eabc62dcc0ebca5146b7205770a8ba088d267a3a0eba72ce6f91f0b797177b75",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-3b6a43c9-94ab-4d8d-84f4-eae461042726.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-arcos-cosmic-glass-bracelet-v14.png",
+      "pngSha256": "0842c319b17c26a69d31652169fb5f3c5a039c1d51be0c29b0837685be1a5901",
+      "pngBytes": 1726605,
+      "publicPath": "public/images/solo-arcos-cosmic-glass-bracelet-v14.webp",
+      "sha256": "3876aaa42209c9c61abdb4ef73fbaf3b6759c94047206c6e0bfcd26793747d6d",
+      "bytes": 48198,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of the blue-to-aqua oval glass bracelet front with short dark cord segments.",
+        "ja": "青から水色へ移る楕円形ガラスと短い濃色紐のブレスレット正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "arcos-cosmic-bracelet-v9",
+        "arcos-studio-v9"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Upright oval and blue-to-aqua front retained; short knotted cord only, no invented closure."
+      },
+      "checkedAt": "2026-11-17T03:48:31.494Z"
+    },
+    {
+      "productId": "senshu-pearl-stud-earrings",
+      "assetId": "ai-solo-senshu-pearl-stud-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: One visible spherical white imitation-pearl stud earring front from the reference, softly creamy white with restrained pearly luster and very subtle pale pink/gray reflection, clean round outline. Front sphere only; no visible post, no invented setting, no catch, no pair. It is a pearl-like front ornament, not a statement about natural-pearl authenticity. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/senshu-white-pearl-stud-styling-v9.webp",
+      "referenceSha256": "411d59407bb6bbb01c5c19733fa7cdc52c336a9d3498409365187e7b9510ec2e",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-88282d18-69f3-4b8a-b503-ff56ffbdeda8.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-senshu-pearl-stud-earrings-v14.png",
+      "pngSha256": "ee08765538e36cbf6856bf5663067762ea3a4b07144ab494584af76e1ff155c3",
+      "pngBytes": 1205825,
+      "publicPath": "public/images/solo-senshu-pearl-stud-earrings-v14.webp",
+      "sha256": "8bfd20d3055fadb017fe0ec5e3b441bc50e7ef476432dc19d51e0eeda6709cf6",
+      "bytes": 9750,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of one round white pearl-like stud front with a soft pale luster.",
+        "ja": "淡いつやを持つ丸い白色パール調ピアス正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "shopch-senshu-stud-v9",
+        "jpga-izumi-craft-v9"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "One round white front retained; no post or catch invented and no pair quantity implied."
+      },
+      "checkedAt": "2026-11-17T03:48:31.150Z"
+    },
+    {
+      "productId": "senshu-pearl-swing-earrings",
+      "assetId": "ai-solo-senshu-pearl-swing-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: One visible round white imitation-pearl drop earring ornament from the reference, clean creamy white sphere with restrained pink-gray pearly reflection and its small warm-gold-colored top loop and short visible fine suspended wire segment. Preserve the simple one-sphere design. Crop above the short wire rather than inventing an unknown complete hook or rear fastener; no additional pearl or gemstones. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/senshu-white-pearl-swing-styling-v9.webp",
+      "referenceSha256": "657da3e1a528debdf5b0dc631b1adcf16173dab8c5264741b0179421721803a9",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-9b6f57ca-3125-4b62-8479-402be8fa6bf3.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-senshu-pearl-swing-earrings-v14.png",
+      "pngSha256": "16454d8f16fd5c8d01ffdaa1bf02167536cf391ff346596b14e6f69c634690ab",
+      "pngBytes": 1174535,
+      "publicPath": "public/images/solo-senshu-pearl-swing-earrings-v14.webp",
+      "sha256": "cc3f405f4ea12cfd9a9f38b582dbfaf0db49049d4472b3a43bcad701c59ed753",
+      "bytes": 12756,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of one round white pearl-like drop with a short golden-colored top connection.",
+        "ja": "丸い白色パール調の飾りと短い金色の接続部を表したピアス正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "shopch-senshu-swing-v9",
+        "jpga-izumi-craft-v9"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "One white sphere and short top connection retained; unknown upper hook omitted."
+      },
+      "checkedAt": "2026-11-17T03:48:31.976Z"
+    },
+    {
+      "productId": "sugimura-hosoge-raden-pendant",
+      "assetId": "ai-solo-sugimura-hosoge-raden-pendant-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: The single ornamental flower pendant visible in the reference, a broad round lobed flower of pale silvery shell-like overlapping petals with restrained pink/green iridescence, and the same cluster of three small dark red oval petal accents at the center. Preserve the visible petal arrangement and silhouette. Include the visible small pale warm-metal bail and short dark cord segments only. Do not invent pendant back construction, extra stones, or a clasp. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/sugimura-raden-flower-pendant-styling-v9.webp",
+      "referenceSha256": "a9e99897661386c6df1a8f75751ba58ef4f6d11777d950996e8f73a12854aabd",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-3494e712-8b2f-4a1d-93cc-5b36bf8615af.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-sugimura-hosoge-raden-pendant-v14.png",
+      "pngSha256": "0128608387fbc6bd1afbb866856b696565467e998183a1dcb8484c1c03e88154",
+      "pngBytes": 1837990,
+      "publicPath": "public/images/solo-sugimura-hosoge-raden-pendant-v14.webp",
+      "sha256": "98b502899b919e43d6724a85648f3429d76ba8a4aba4feba7005131b0c47d3ea",
+      "bytes": 45984,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a pale iridescent floral pendant front with three red center accents.",
+        "ja": "淡い真珠色の花びらと中央の3つの赤い飾りを表したペンダント正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "sugimura-hosoge-v9",
+        "sugimura-official-v9"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Pale scalloped flower and three red oval center accents retained; short cord only."
+      },
+      "checkedAt": "2026-11-17T03:50:15.316Z"
+    },
+    {
+      "productId": "sugimura-lotus-makie-ring",
+      "assetId": "ai-solo-sugimura-lotus-makie-ring-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: Only the broad curved black front surface of the wooden lotus-motif ring visible in the reference, with the same warm pink and pale peach lotus petals, tiny warm-yellow flower center, fine warm-gold-colored stem and two leaves, narrow warm-gold-colored edging at the visible side. Same front angle as on the finger, but finger completely removed. The image should focus on the front decorated band face and not reveal or invent the hidden inner band, entire rear circle, hidden pattern, or mechanism. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/sugimura-lotus-makie-ring-styling-v9.webp",
+      "referenceSha256": "52ffcb4962b65cf5ffda42c172c7f9e281c98d7a2904c5843fbdc815dfc93c36",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-7971e3cb-6dba-41b6-a087-587d07f5352b.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-sugimura-lotus-makie-ring-v14.png",
+      "pngSha256": "84deb791f2daefcad64e60923eedfb139586a324d529d8f0c9cd40c6a7cdeb91",
+      "pngBytes": 2120356,
+      "publicPath": "public/images/solo-sugimura-lotus-makie-ring-v14.webp",
+      "sha256": "a87e34db3bdbdcaf428e3bd326aae7018135c95ba1f202fc596e170ea13a3b1a",
+      "bytes": 120454,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of the black ring front decorated with a pink lotus and golden-colored leaves.",
+        "ja": "黒地に桃色の蓮と金色の葉を描いた指輪前面のAIイメージ。"
+      },
+      "sourceIds": [
+        "sugimura-lotus-v9",
+        "sugimura-official-v9"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Decorated curved black front retained with lotus motif; hidden inner band is not depicted."
+      },
+      "checkedAt": "2026-11-17T03:50:16.319Z"
+    },
+    {
+      "productId": "simprich-crystal-bubble-pierced-earrings",
+      "assetId": "ai-solo-simprich-crystal-bubble-pierced-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: One small round domed crystal-and-shell front ornament of the bubble stud earring from the reference. Smooth round contour, clear glass-like curved surface over a pale milky iridescent layer with very subtle pink, aqua and cream shifts. Preserve the compact round front; include only the tiny warm-gold-colored rim or support actually visible, no prongs, no faceted stone, no invented post or catch and no extra stone. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/simprich-crystal-bubble-styling-v9.webp",
+      "referenceSha256": "f73ddf0249d161b90cfa789e9efdc610d0af8a8a1ab4f3a3f15e64d324e5b72a",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-0da4edb4-b9aa-41ce-bb40-1104d80444c3.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-simprich-crystal-bubble-pierced-earrings-v14.png",
+      "pngSha256": "0489abf540ce2973bfb566179625b917d846c0320d98d0a2e1582d48f3df120b",
+      "pngBytes": 1690319,
+      "publicPath": "public/images/solo-simprich-crystal-bubble-pierced-earrings-v14.webp",
+      "sha256": "6b48e72bc1bf49ec7014da07f556d5311842608adef9db1cb3d9663c297c553d",
+      "bytes": 26892,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of one round translucent bubble-like earring front with soft pink and aqua tones.",
+        "ja": "淡い桃色と水色が重なる丸い透明感のあるピアス正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "simprich-bubble-v9",
+        "simprich-about-v9",
+        "simprich-home-shop-v9",
+        "yamanashi-jewelry-museum-v9",
+        "yamanashi-jewelry-access-v9"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Round domed iridescent front retained; no additional stone, prongs, post or catch."
+      },
+      "checkedAt": "2026-11-17T03:50:15.712Z"
+    },
+    {
+      "productId": "simprich-rose-quartz-necklace",
+      "assetId": "ai-solo-simprich-rose-quartz-necklace-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: The small soft pink oval rose-quartz pendant visible in the reference, with the same lightly faceted pale pink translucent front and minimal delicate warm-gold-colored edge support. Show its tiny visible warm-metal bail and short fine warm-gold-colored chain segments only. Preserve the upright oval, soft cloudy pink, and restrained setting; do not add a halo, diamonds, rear setting or clasp. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/simprich-rose-quartz-necklace-styling-v9.webp",
+      "referenceSha256": "abd8d1e2a6a9f78ac1413ce033a3b2e552b34f1686b5b67c9407318f58ff27cc",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-7331071a-74fc-45c5-9929-6f01df16afd1.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-simprich-rose-quartz-necklace-v14.png",
+      "pngSha256": "3ebbb236179d2209b8cecb1d7f0e53fc40ad9c5829713bc5ffb3dd3acf7f3763",
+      "pngBytes": 1665150,
+      "publicPath": "public/images/solo-simprich-rose-quartz-necklace-v14.webp",
+      "sha256": "b9fa1c833de94a44f5a06cbf3a6397ad73b4f3c21cd26c646114ab6ec82891c0",
+      "bytes": 23158,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a pale pink oval pendant front with a fine golden-colored chain.",
+        "ja": "淡い桃色の楕円形ペンダント正面と細い金色チェーンのAIイメージ。"
+      },
+      "sourceIds": [
+        "simprich-rose-quartz-v9",
+        "simprich-about-v9",
+        "simprich-home-shop-v9",
+        "yamanashi-jewelry-museum-v9",
+        "yamanashi-jewelry-access-v9"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Upright pale pink faceted oval, minimal visible support and short chain retained; no halo or clasp."
+      },
+      "checkedAt": "2026-11-17T03:51:53.028Z"
+    },
+    {
+      "productId": "yukieglass-mint-veil-earrings",
+      "assetId": "ai-solo-yukieglass-mint-veil-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: One glass teardrop earring front from the reference. Smooth pointed top and rounded broad base, clear glass outer contour, a pale mint-green twisting ribbon or veil suspended inside with the same airy S-shaped curl, and subtle tiny white light points. Show only the tiny pale-metal front loop and short visible connecting segment at top, no invented complete hook or back. Keep the very light translucent mint color. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/yukie-mint-glass-styling-v9.webp",
+      "referenceSha256": "a48b1ffc189f52a29e29624a905d0143780130b6f8a0e524547b90df0742e8f3",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-05cbf66b-b32b-4624-a832-da75ea990f97.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-yukieglass-mint-veil-earrings-v14.png",
+      "pngSha256": "569e62b217250047bba83cdf603e5e014d05d13f58bdeaddc76e0e4b76264498",
+      "pngBytes": 1296311,
+      "publicPath": "public/images/solo-yukieglass-mint-veil-earrings-v14.webp",
+      "sha256": "a56e9b910654fc3f4b95398eabd43c11afdd04bc9b870fe5b00b0aca45465715",
+      "bytes": 22266,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of one clear teardrop earring front containing a pale mint-colored swirl.",
+        "ja": "淡いミント色の渦を閉じ込めた透明なしずく形ピアス正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "yukie-mint-v9",
+        "yukie-accessory-origin-v9",
+        "yukie-atelier-visits-v9",
+        "kitaichi-yo-store-v9",
+        "kitaichi-hours-v9",
+        "kitaichi-access-v9"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Clear teardrop, airy mint ribbon and tiny top connection retained; no hidden hook."
+      },
+      "checkedAt": "2026-11-17T03:51:52.698Z"
+    },
+    {
+      "productId": "yukieglass-rouge-veil-earrings",
+      "assetId": "ai-solo-yukieglass-rouge-veil-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: original AI jewelry-only detail illustration for an editorial Japanese craft jewelry selection website. Input image1 is an existing AI styling image, used only as a visible-jewelry reference. Create a square1024x1024 original AI illustration/product mockup. Subject: One glass teardrop earring front from the reference. Smooth pointed top and rounded broad base, clear glass outer contour, rich ruby-red and crimson ribbon or veil twisting inside in the same broad curved S-like bands with clear spaces between. Show only the tiny pale-metal front loop and short visible connecting segment at top, no invented complete hook or back. Keep the glass red rather than adding a red gemstone. Enlarge and center the visible front ornament with generous warm ivory negative space. Preserve the reference's front outline, color arrangement and visible pattern. Soft studio lighting, subtle material texture, calm editorial illustrative finish. Remove the person completely: no face, ears, skin, hair, hands, clothes or body fragments. Plain warm ivory background; no props, logos, text, labels, rulers, boxes or packaging. Do not invent hidden backs, clasps, stone settings, extra stones or mechanisms. No additional jewelry or duplicate ornaments. Keep the visible front ornament fully inside the frame. This is an independent AI detail concept, not a real product photograph, not an exact retail-product reproduction or evidence of sale quantity.",
+      "reference": "public/images/yukie-rouge-glass-styling-v9.webp",
+      "referenceSha256": "ca33f3c867d75220b039312522aeb5746d3b3ecb947c2230eb7c5dad9ab3f42c",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-69b7-7690-a0dd-98f7cccef1b4\\exec-deebd73f-b34b-43c8-b3a5-41efbb4d3997.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-yukieglass-rouge-veil-earrings-v14.png",
+      "pngSha256": "50344ad3708a6e5cf9a9e105394086de0a7b7df2daa77d4ae6d8f85bd33bbda9",
+      "pngBytes": 1718329,
+      "publicPath": "public/images/solo-yukieglass-rouge-veil-earrings-v14.webp",
+      "sha256": "3e99cc069be0a0c64474476138d8ce084d61ae698b23b28328296277f1f3e18f",
+      "bytes": 45486,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of one clear teardrop earring front containing a red twisting ribbon.",
+        "ja": "赤いリボン状の渦を閉じ込めた透明なしずく形ピアス正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "yukie-rouge-v9",
+        "yukie-accessory-origin-v9",
+        "yukie-atelier-visits-v9",
+        "kitaichi-yo-store-v9",
+        "kitaichi-hours-v9",
+        "kitaichi-access-v9"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Clear teardrop and broad crimson ribbon pattern retained; no extra stone or hidden hook."
+      },
+      "checkedAt": "2026-11-17T03:51:53.621Z"
+    },
+    {
+      "productId": "nakajima-pear-sakura-pendant",
+      "assetId": "ai-solo-nakajima-pear-sakura-pendant-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image, used solely as the visible design reference; it is not a real product photograph.\nPrimary request: create one new square1024x1024 image showing only the jewelry visible in that reference. Remove the woman, all skin, face, ear, hand, fingers, hair and clothing completely.\nReference details to preserve: Keep the visible black pear/teardrop-shaped pendant face, slender silver-colored outline, white cherry blossom and smaller warm-gold blossom with fine gold leaf/stem lines. Preserve this front arrangement rather than creating a different emblem. Include the visible little silver-colored bail and only short fine chain segments that continue upward out of the crop. Do not show or invent its reverse side or necklace clasp.\nScene/backdrop: plain warm ivory seamless background, soft naturalistic light with a very restrained soft shadow. Center the ornament with generous empty margins, make its visible front details readable. Naturalistic original editorial illustration, not a claim of exact manufactured product reproduction.\nConstraints: preserve visible shape, colors, pattern and material impression from image1. Show only the front/parts actually visible; do not invent an unseen back, hidden clasp, catch or hidden fitting. No ruler, measurements or implied sale quantity. No additional jewelry, box, display stand, mannequin, props, text, logos, watermark or people.",
+      "reference": "public/images/nakajima-sakura-damascene-pendant-styling-v9.webp",
+      "referenceSha256": "a1811ce3b7b6af6944f7042f52687ce373fe7637ab3957f6d070464a19bc37b5",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-e4f8de5a-5284-475f-a0c8-dc5f43aed480.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-nakajima-pear-sakura-pendant-v14.png",
+      "pngSha256": "775b5374d0baf92acd124dd0f22b308cc8d33c2f8a8e1ad16c109a6f26976dea",
+      "pngBytes": 1361287,
+      "publicPath": "public/images/solo-nakajima-pear-sakura-pendant-v14.webp",
+      "sha256": "6e6acd3e0b82ae6f37d8d336dac4603d1b2a3c927a1e2e79b378c0b4fc59c915",
+      "bytes": 47364,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a black teardrop pendant front with white and gold cherry blossoms.",
+        "ja": "黒いしずく形に白と金色の桜を配したペンダント正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "nakajima-pear-product-v9",
+        "nakajima-technique-v9",
+        "nakajima-cooperative-v9"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Keep the visible black pear/teardrop-shaped pendant face, slender silver-colored outline, white cherry blossom and smaller warm-gold blossom with fine gold leaf/stem lines. Preserve this front arrangement rather than creating a different emblem. Include the visible little silver-colored bail and only short fine chain segments that continue upward out of the crop. Do not show or invent its reverse side or necklace clasp.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:36:13.611Z"
+    },
+    {
+      "productId": "kato-suke-round-ring",
+      "assetId": "ai-solo-kato-suke-round-ring-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image, used solely as the visible design reference; it is not a real product photograph.\nPrimary request: create one new square1024x1024 image showing only the jewelry visible in that reference. Remove the woman, all skin, face, ear, hand, fingers, hair and clothing completely.\nReference details to preserve: Keep the small domed round deep-blue ring top with the cloudy pale-blue/white speckled visual pattern shown, its thin smooth silver-colored bezel and only the narrow silver-colored band segments that are actually visible beside the top. A near front-on close detail can hide the unseen back of the band. No extra stones, prongs or ornate ring shank.\nScene/backdrop: plain warm ivory seamless background, soft naturalistic light with a very restrained soft shadow. Center the ornament with generous empty margins, make its visible front details readable. Naturalistic original editorial illustration, not a claim of exact manufactured product reproduction.\nConstraints: preserve visible shape, colors, pattern and material impression from image1. Show only the front/parts actually visible; do not invent an unseen back, hidden clasp, catch or hidden fitting. No ruler, measurements or implied sale quantity. No additional jewelry, box, display stand, mannequin, props, text, logos, watermark or people.",
+      "reference": "public/images/kato-blue-round-enamel-ring-styling-v9.webp",
+      "referenceSha256": "831fcb1a47de8312272c81267be664df9696c64bf27ba35571c2ff0cc82b14df",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-1bac9d99-3d1c-4d2f-8c06-1d02a722ea32.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-kato-suke-round-ring-v14.png",
+      "pngSha256": "ff93b9c735639e6bd3017bc815692fc961ee2ebb8b2cfd28799a94d18f817067",
+      "pngBytes": 1150270,
+      "publicPath": "public/images/solo-kato-suke-round-ring-v14.webp",
+      "sha256": "c0b9c9fec42999e04a960a3dcfd85c82f8e6f4c86f5446ef8d7acae5991754f0",
+      "bytes": 27238,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a round deep-blue ring top with a pale speckled pattern and silver-colored rim.",
+        "ja": "淡い斑模様と銀色の縁がある青い丸形リング正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "becos-kato-round-ring-en-v9",
+        "becos-kato-round-ring-ja-v9",
+        "kato-shippo-brand"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Keep the small domed round deep-blue ring top with the cloudy pale-blue/white speckled visual pattern shown, its thin smooth silver-colored bezel and only the narrow silver-colored band segments that are actually visible beside the top. A near front-on close detail can hide the unseen back of the band. No extra stones, prongs or ornate ring shank.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:36:28.081Z"
+    },
+    {
+      "productId": "sangetsu-irodori-tombodama-earrings",
+      "assetId": "ai-solo-sangetsu-irodori-tombodama-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: Show one burgundy-red round glass drop and the visible slender silver-colored curved front hook, with the same fine pale diagonal bands and dark red internal speckles as the dominant visible earring. Do not duplicate it into a pair or invent an unseen rear fitting.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/sangetsu-irodori-tombodama-earrings-styling-v13.webp",
+      "referenceSha256": "f9fd73a6861226a5fc7c23392e536e41d32f3642eb46d85ac4b13b08bc79926d",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-ee5c6d47-46eb-46c3-ac9b-0212f6ca5607.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-sangetsu-irodori-tombodama-earrings-v14.png",
+      "pngSha256": "3908a5cd80c32a515272f2d14e300d56ad86638cc2d9a01972c871b80050bd0d",
+      "pngBytes": 1748698,
+      "publicPath": "public/images/solo-sangetsu-irodori-tombodama-earrings-v14.webp",
+      "sha256": "80916f4f089bb5abcd9ed954fec089f465f8d76a7f5cd1b221c91373c1818f24",
+      "bytes": 37806,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a burgundy glass-like round bead earring with pale curved bands.",
+        "ja": "淡い曲線模様がある赤紫色の丸いガラス風ピアスのAIイメージ。"
+      },
+      "sourceIds": [
+        "sangetsu-irodori-pierced-v11",
+        "sangetsu-maker-access-v11",
+        "sangetsu-storefront-identity-v11"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Show one burgundy-red round glass drop and the visible slender silver-colored curved front hook, with the same fine pale diagonal bands and dark red internal speckles as the dominant visible earring. Do not duplicate it into a pair or invent an unseen rear fitting.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:37:40.091Z"
+    },
+    {
+      "productId": "sangetsu-irodori-tombodama-necklace",
+      "assetId": "ai-solo-sangetsu-irodori-tombodama-necklace-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: Show the single rounded, slightly flattened burgundy-red glass bead with the visible white and warm-yellow small flower/petal marks, green flecks, and a short visible section of fine black cord curving upward out of the image. Keep the threading relationship. No metal chain or clasp.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/sangetsu-irodori-tombodama-necklace-styling-v13.webp",
+      "referenceSha256": "4f82d9b93bb728f36ec897f1224e4f8c312291ea82545958ce6e16ce9333ac95",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-669a7745-0128-4211-8bf7-46da334e0ccc.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-sangetsu-irodori-tombodama-necklace-v14.png",
+      "pngSha256": "ce939fd9e72541067befbf4082e318a8db8e72ceacc99046c359c26724baf58b",
+      "pngBytes": 1693200,
+      "publicPath": "public/images/solo-sangetsu-irodori-tombodama-necklace-v14.webp",
+      "sha256": "2653b9bfb290b6b421c434504d63dcd288f1243b39d9dac8285e8a23876e213b",
+      "bytes": 38800,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a red glass-like bead pendant with small floral patterns and a black cord.",
+        "ja": "小さな花模様を配した赤いガラス風の飾りと黒い紐のAIイメージ。"
+      },
+      "sourceIds": [
+        "sangetsu-irodori-necklace-v11",
+        "sangetsu-maker-access-v11",
+        "sangetsu-storefront-identity-v11"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Show the single rounded, slightly flattened burgundy-red glass bead with the visible white and warm-yellow small flower/petal marks, green flecks, and a short visible section of fine black cord curving upward out of the image. Keep the threading relationship. No metal chain or clasp.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:37:57.945Z"
+    },
+    {
+      "productId": "sghr-tie-tie-glass-earrings",
+      "assetId": "ai-solo-sghr-tie-tie-glass-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: Show one clear, vertically elongated fluted-glass ornament with the visible small gathered knot-like top and long gently twisted ribbed lower form tapering to a rounded point. Retain the small silver-colored ball stud and short connecting links visible above it. Keep the fine longitudinal ribs and transparent color, not a faceted crystal or a leaf carved from opaque metal. Do not add unseen rear posts or backs.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/sghr-tie-tie-glass-earrings-styling-v13.webp",
+      "referenceSha256": "bca904b964fe06e506b4cba591e5d2105d3942ad41fc6e77338405be917b807f",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-20a76047-f6bc-4615-8091-65641ad5f7fb.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-sghr-tie-tie-glass-earrings-v14.png",
+      "pngSha256": "03f3dd3e2840d96412a13da76858f724fc46b262efc855fed0f5c0f5fb24fc0c",
+      "pngBytes": 1633879,
+      "publicPath": "public/images/solo-sghr-tie-tie-glass-earrings-v14.webp",
+      "sha256": "ed8ee668b75c53a12fac2e4b718c34ca2e53750ad336839f1bdf50484d19ba23",
+      "bytes": 31352,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a clear fluted glass-like drop earring with a knotted top.",
+        "ja": "上部が結び目のようになった透明な縦筋のあるピアスのAIイメージ。"
+      },
+      "sourceIds": [
+        "sghr-tietie-pierced-v11",
+        "sghr-kujukuri-workshop-v11"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Show one clear, vertically elongated fluted-glass ornament with the visible small gathered knot-like top and long gently twisted ribbed lower form tapering to a rounded point. Retain the small silver-colored ball stud and short connecting links visible above it. Keep the fine longitudinal ribs and transparent color, not a faceted crystal or a leaf carved from opaque metal. Do not add unseen rear posts or backs.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:38:48.596Z"
+    },
+    {
+      "productId": "sghr-kolmio-glass-ear-cuff",
+      "assetId": "ai-solo-sghr-kolmio-glass-ear-cuff-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: Show the single thick pale blue-gray translucent glass ear cuff as seen at the outer ear: a small smoothly rounded triangular open outline, with its two ends rounding inward and leaving a visible gap along the lower-right side in the reference. Preserve the glass thickness and simple smooth surface. Do not add metal fittings, chain or stone.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/sghr-kolmio-glass-ear-cuff-styling-v13.webp",
+      "referenceSha256": "200fe4af089b63fc6288fc739366639fbda67e1bef9b2f5b23cffe95e9c00822",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-682988af-4234-4d56-b860-21c388c25df9.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-sghr-kolmio-glass-ear-cuff-v14.png",
+      "pngSha256": "27173bfa50ee2f588c86f6fea29b5375ab2bc39a268eedd2924bb8f8db928796",
+      "pngBytes": 1738232,
+      "publicPath": "public/images/solo-sghr-kolmio-glass-ear-cuff-v14.webp",
+      "sha256": "73ca6b76a73b12e945b0cbd9e26d6a7429ffd5da8a807c2d69475c9780f25ce3",
+      "bytes": 14850,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a pale blue-gray open triangular glass-like ear cuff.",
+        "ja": "淡い青灰色をした丸みのある三角形のイヤーカフのAIイメージ。"
+      },
+      "sourceIds": [
+        "sghr-kolmio-earcuff-v11",
+        "sghr-kujukuri-workshop-v11"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Show the single thick pale blue-gray translucent glass ear cuff as seen at the outer ear: a small smoothly rounded triangular open outline, with its two ends rounding inward and leaving a visible gap along the lower-right side in the reference. Preserve the glass thickness and simple smooth surface. Do not add metal fittings, chain or stone.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:39:09.873Z"
+    },
+    {
+      "productId": "kazarino-hanabishi-copper-earrings",
+      "assetId": "ai-solo-kazarino-hanabishi-copper-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: One pink-copper openwork floral-diamond drop as seen beside the face: an elongated scalloped outline around a central four-petal flower, fine vertical/horizontal connecting lines, tiny round copper-colored stud and small joining ring. Keep the open negative spaces and warm copper color; no enamel, added stones, or unseen back post.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/kazarino-hanabishi-copper-earrings-styling-v13.webp",
+      "referenceSha256": "5f10d6c53b0b6471fc7d66226fda7256fc67751924c7f4ebe039c7a1842b13b9",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-f4e77ab3-a234-4ea5-a8dd-8b98d25502a0.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-kazarino-hanabishi-copper-earrings-v14.png",
+      "pngSha256": "67b1d97a341fa66e3072036de3b3a2930b74e54f124789a697763a110adc8c77",
+      "pngBytes": 1660279,
+      "publicPath": "public/images/solo-kazarino-hanabishi-copper-earrings-v14.webp",
+      "sha256": "5886aea3cfb954a9f108c89470d1c0fec8bf4aabb59998b2fe80da43d07cd208",
+      "bytes": 33602,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a pink copper-colored floral openwork diamond earring.",
+        "ja": "花形の透かし模様がある赤銅色の菱形ピアスのAIイメージ。"
+      },
+      "sourceIds": [
+        "kazarino-pierce-v11",
+        "kazarino-maker-v11"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "One pink-copper openwork floral-diamond drop as seen beside the face: an elongated scalloped outline around a central four-petal flower, fine vertical/horizontal connecting lines, tiny round copper-colored stud and small joining ring. Keep the open negative spaces and warm copper color; no enamel, added stones, or unseen back post.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:40:01.814Z"
+    },
+    {
+      "productId": "kazarino-shippo-pattern-brass-bangle",
+      "assetId": "ai-solo-kazarino-shippo-pattern-brass-bangle-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: A front-on close detail of the broad warm-gold-colored cuff band seen on the wrist, preserving the fine engraved repeating interlocking-circle Shippo pattern and narrow plain borders. Show the curved visible front surface and only its short visible side turns, with no invented rear closure, hinge or full unseen rear circumference. No openwork holes, colored enamel, stones, hand or wrist.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/kazarino-shippo-pattern-brass-bangle-styling-v13.webp",
+      "referenceSha256": "69846d9a1195f8a63ce69fcbf7b3938b64e84d4edc860668b1040c39969e2fdd",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-2352e5ec-0a09-4f5c-8b9c-5be269db2778.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-kazarino-shippo-pattern-brass-bangle-v14.png",
+      "pngSha256": "bea88b9688bc8338bded6c4714659f486d5d19709462eb43da5116e68099f742",
+      "pngBytes": 1897675,
+      "publicPath": "public/images/solo-kazarino-shippo-pattern-brass-bangle-v14.webp",
+      "sha256": "0e563871204ff2a7b59e5a5337f7dae291805517b84b5b4ecebd620fed05695f",
+      "bytes": 101554,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a gold-colored cuff front with interlocking circular patterns.",
+        "ja": "円が重なる模様を刻んだ金色のバングル正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "kazarino-bangle-v11",
+        "kazarino-maker-v11"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "A front-on close detail of the broad warm-gold-colored cuff band seen on the wrist, preserving the fine engraved repeating interlocking-circle Shippo pattern and narrow plain borders. Show the curved visible front surface and only its short visible side turns, with no invented rear closure, hinge or full unseen rear circumference. No openwork holes, colored enamel, stones, hand or wrist.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:40:18.668Z"
+    },
+    {
+      "productId": "showen-edo-uchi-silk-bracelet",
+      "assetId": "ai-solo-showen-edo-uchi-silk-bracelet-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: Show just the visible blue double-wrap silk bracelet: two neighboring curved braided cord runs with tiny pale ivory-yellow and muted green diagonal strands, the round blue thread-wrapped ball and its small textile loop join visible in the reference. Preserve the woven textile texture and soft blue palette. Crop away unseen rear cord rather than invent a full rear construction. No metal clasp, extra beads or wrist.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/showen-edo-uchi-silk-bracelet-styling-v13.webp",
+      "referenceSha256": "5c2ed807be7f4b774902f2ca43a45ac58aea4a69af462fa63b2da8d684cfb7f3",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-4ce98f27-7fc5-40b0-9a8b-8d4832087bd7.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-showen-edo-uchi-silk-bracelet-v14.png",
+      "pngSha256": "1fbf283b0237ff797af9dc590fc557624cc93f26cf71a27a0863df304d7b91d6",
+      "pngBytes": 2044734,
+      "publicPath": "public/images/solo-showen-edo-uchi-silk-bracelet-v14.webp",
+      "sha256": "a2edb4d93524873110952c05fa47030851b63ff9259fa1a099d77e536e06f392",
+      "bytes": 79504,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a blue, ivory and muted-green braided bracelet with a textile knot ball.",
+        "ja": "青と生成り、落ち着いた緑を組み、結び玉を添えたブレスレットのAIイメージ。"
+      },
+      "sourceIds": [
+        "showen-edo-uchi-blue-bracelet-v11",
+        "showen-maker-v11"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Show just the visible blue double-wrap silk bracelet: two neighboring curved braided cord runs with tiny pale ivory-yellow and muted green diagonal strands, the round blue thread-wrapped ball and its small textile loop join visible in the reference. Preserve the woven textile texture and soft blue palette. Crop away unseen rear cord rather than invent a full rear construction. No metal clasp, extra beads or wrist.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:41:23.828Z"
+    },
+    {
+      "productId": "iwaya-urushi-9mm-hook-earrings",
+      "assetId": "ai-solo-iwaya-urushi-9mm-hook-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: Show one small smooth glossy deep rusty-red round bead with its visible very slender silver-colored curved hook and tiny joining loop. Keep the simple spherical lacquer-like shine and plain color. No faceted stone, gold leaf, wood mosaic, extra chain or pair, and no invented rear fitting.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/iwaya-urushi-9mm-hook-earrings-styling-v13.webp",
+      "referenceSha256": "e289d53c5aa8294257061f9b977e521878e42675717a56b85ff11cac6a4b1b14",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-9c9f1baa-095f-499c-9955-5d2ac303c164.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-iwaya-urushi-9mm-hook-earrings-v14.png",
+      "pngSha256": "c79191fd8af07ac0a19fe09a3a3da7f3999c773fb917a536ed00e45eb187b53b",
+      "pngBytes": 1614997,
+      "publicPath": "public/images/solo-iwaya-urushi-9mm-hook-earrings-v14.webp",
+      "sha256": "2483f6b54aa93e97586815c76e181c994747d6b12fd326150292f91f6176db4f",
+      "bytes": 14980,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a glossy rust-red round bead with a fine silver-colored ear hook.",
+        "ja": "艶のある赤茶色の丸い飾りと細い銀色フックのAIイメージ。"
+      },
+      "sourceIds": [
+        "iwaya-urushi-9mm-hook-v11",
+        "iwaya-shop-v11"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Show one small smooth glossy deep rusty-red round bead with its visible very slender silver-colored curved hook and tiny joining loop. Keep the simple spherical lacquer-like shine and plain color. No faceted stone, gold leaf, wood mosaic, extra chain or pair, and no invented rear fitting.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:41:40.505Z"
+    },
+    {
+      "productId": "toytoy-ninkari-nikuri-earrings",
+      "assetId": "ai-solo-toytoy-ninkari-nikuri-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: Show the one dominant wooden ear ornament only: a dark brown solid wood diamond-oriented plaque with softly scalloped edges, pale incised symmetrical curling geometric lines, a small brown wooden bead above, and the visible thin warm-metal hook segment. Keep the face solid wood rather than an open lace cutout. Preserve the reference's original curves, no invented text, cultural symbols, brand emblem or unseen rear.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/toytoy-ninkari-nikuri-earrings-styling-v13.webp",
+      "referenceSha256": "1f91e15c4b85876f7de43b90d9032b3110d2c5c6e6a489c0f347b97f93e32774",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-5c2c0592-328f-4ac3-969b-224bf71618c8.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-toytoy-ninkari-nikuri-earrings-v14.png",
+      "pngSha256": "4a691d8c643a2c72f01a15444409675a13be8465ebfce54dcf9596e9187a0d37",
+      "pngBytes": 1501330,
+      "publicPath": "public/images/solo-toytoy-ninkari-nikuri-earrings-v14.webp",
+      "sha256": "83b5e6d7355ee90fa74c887307686644cc316117996901ab120a8cc2356390ba",
+      "bytes": 52450,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a dark wooden diamond-shaped earring with pale incised curves.",
+        "ja": "淡い曲線模様を彫った濃い茶色の木の菱形ピアスのAIイメージ。"
+      },
+      "sourceIds": [
+        "toytoy-ninkari-nikuri-v11",
+        "toytoy-maker-v11"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Show the one dominant wooden ear ornament only: a dark brown solid wood diamond-oriented plaque with softly scalloped edges, pale incised symmetrical curling geometric lines, a small brown wooden bead above, and the visible thin warm-metal hook segment. Keep the face solid wood rather than an open lace cutout. Preserve the reference's original curves, no invented text, cultural symbols, brand emblem or unseen rear.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:42:25.986Z"
+    },
+    {
+      "productId": "toytoy-sirokani-pe-silver-necklace",
+      "assetId": "ai-solo-toytoy-sirokani-pe-silver-necklace-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: Show the compact silver-colored openwork pendant from the neckline, with its four small balanced inward curls and outward pointed tips. Include its small joining ring and a short fine silver-colored chain continuing upward beyond the crop. Preserve the airy curled outline and empty spaces, not a solid or framed teardrop. Do not add gemstones, text, a new emblem or unknown clasp.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/toytoy-sirokani-pe-silver-necklace-styling-v13.webp",
+      "referenceSha256": "a795108675e5588e68ebceafe21a408fcef3979cf377a35cb7580471cb0eed06",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-9372523d-93ed-499a-83aa-d4fff315bb70.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-toytoy-sirokani-pe-silver-necklace-v14.png",
+      "pngSha256": "cbc875d9a5ea296995c6c399b647d6d198ed400377eb969064634d3d6d815740",
+      "pngBytes": 1304437,
+      "publicPath": "public/images/solo-toytoy-sirokani-pe-silver-necklace-v14.webp",
+      "sha256": "085cbbdc3b102cec4a84724eb1fa8382c31d80f15be3ff0afe2ec2d1380a71af",
+      "bytes": 27020,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a silver-colored openwork pendant with four inward curls.",
+        "ja": "内側へ巻く四つの曲線を配した銀色ペンダントのAIイメージ。"
+      },
+      "sourceIds": [
+        "toytoy-sirokani-pe-v11",
+        "toytoy-maker-v11"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Show the compact silver-colored openwork pendant from the neckline, with its four small balanced inward curls and outward pointed tips. Include its small joining ring and a short fine silver-colored chain continuing upward beyond the crop. Preserve the airy curled outline and empty spaces, not a solid or framed teardrop. Do not add gemstones, text, a new emblem or unknown clasp.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:42:44.330Z"
+    },
+    {
+      "productId": "tamura-kaisai-enamel-ear-jewelry",
+      "assetId": "ai-solo-tamura-kaisai-enamel-ear-jewelry-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: This is an EAR ORNAMENT FRONT FACE ONLY, not a necklace or pendant. Show one gently rounded square oriented as a diamond, a thin silver-colored edge and wire lines separating pale aqua, teal and a dark navy flowing wavy band, with a few tiny muted yellow circular accents. Preserve visible front enamel-like wave design. Omit all hardware above the diamond face: NO NECKLACE, NO PENDANT BAIL, NO CHAIN, no hanging loop. Omit unseen back, post or clip. The ornament's front plate alone centered on ivory.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/tamura-kaisai-enamel-ear-jewelry-styling-v13.webp",
+      "referenceSha256": "064e3ff458ae2051503bdee8f140e137fbc12826bd937bf832a0e01b42e22f2d",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-b91196b1-1524-4fa2-973a-25e611dc44df.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-tamura-kaisai-enamel-ear-jewelry-v14.png",
+      "pngSha256": "8380f52129b7e6f448597a715903f264e5309bf0d44f455e25d38ea819370ae9",
+      "pngBytes": 1459566,
+      "publicPath": "public/images/solo-tamura-kaisai-enamel-ear-jewelry-v14.webp",
+      "sha256": "cb9059644abdd21cdb422a717e14ebd3fb72959ecb0b0c2122d9174eeff0a677",
+      "bytes": 45910,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of an aqua and navy wave-patterned diamond-shaped ear ornament front.",
+        "ja": "水色と紺の波模様を配した菱形の耳飾り正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "tamura-kaisai-ear-jewelry-v11",
+        "tamura-official-jewelry-v11"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "This is an EAR ORNAMENT FRONT FACE ONLY, not a necklace or pendant. Show one gently rounded square oriented as a diamond, a thin silver-colored edge and wire lines separating pale aqua, teal and a dark navy flowing wavy band, with a few tiny muted yellow circular accents. Preserve visible front enamel-like wave design. Omit all hardware above the diamond face: NO NECKLACE, NO PENDANT BAIL, NO CHAIN, no hanging loop. Omit unseen back, post or clip. The ornament's front plate alone centered on ivory.",
+        "categoryCorrection": "Category ambiguity in first solo candidate: necklace-like framing. Parent visual QA requested category-correct compact composition."
+      },
+      "checkedAt": "2026-11-17T03:53:08.506Z"
+    },
+    {
+      "productId": "nanao-shuka-nebula-16g-earrings",
+      "assetId": "ai-solo-nanao-shuka-nebula-16g-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: Only the tiny glossy round domed glass stud front that is visible at the earlobe, with the same subtle purple, green and reddish internal iridescent shimmer. Magnify it for a readable detail illustration without a ruler or actual-size implication. Do not show or invent the hidden shaft, catch, rear setting or extra metal surround. No dangling element, gemstones or pair.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/nanao-shuka-nebula-16g-earrings-styling-v13.webp",
+      "referenceSha256": "ba3412ffba09f920db973fa81e09b6cce86475813096027a2bb85ace40ef8159",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-ea39af94-8670-4e7a-a0e4-e210a6754d33.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-nanao-shuka-nebula-16g-earrings-v14.png",
+      "pngSha256": "1d62c5259b601fa750c524d1a02b9cb1c15c50374981ea87fa9094e90f7b3e7f",
+      "pngBytes": 1372416,
+      "publicPath": "public/images/solo-nanao-shuka-nebula-16g-earrings-v14.webp",
+      "sha256": "965e9258dea1744b432d7c2087aebe4866b599213616d18520063a780f116708",
+      "bytes": 41744,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a tiny round glass-like ear ornament front with purple and green shimmer.",
+        "ja": "紫や緑の光を含む小さな丸いガラス風の耳飾り正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "nanao-shuka-nebula-v11",
+        "nanao-shuka-official-v11",
+        "nanao-shuka-profile-v11"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Only the tiny glossy round domed glass stud front that is visible at the earlobe, with the same subtle purple, green and reddish internal iridescent shimmer. Magnify it for a readable detail illustration without a ruler or actual-size implication. Do not show or invent the hidden shaft, catch, rear setting or extra metal surround. No dangling element, gemstones or pair.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:43:48.492Z"
+    },
+    {
+      "productId": "simprich-reversible-topaz-ruby-chain-ring",
+      "assetId": "ai-solo-simprich-reversible-topaz-ruby-chain-ring-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: This is a FINGER RING, not a necklace. Show a tiny four-white-stone clover-like top on a very fine white-metal chain band returning into a SMALL CLOSED FINGER-RING LOOP directly around/behind the stone top. Compact ring silhouette and a modest three-quarter top view that makes a finger-sized circular chain loop evident. Preserve four round pale/white stones and the delicate visible chain impression. No long neck chain, no pendant bail, no neck-size loop, no clasp invention, no rigid solid band, no unseen ruby reverse. Jewelry ONLY; do not include fingers.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/simprich-reversible-topaz-ruby-chain-ring-styling-v13.webp",
+      "referenceSha256": "e0a7c4d84fd1e105ffdafa806fc36ea044227ed56be8a3915ce2eaed1028d296",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-ea87b6c5-ecac-412b-b97d-7de6f8178db1.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-simprich-reversible-topaz-ruby-chain-ring-v14.png",
+      "pngSha256": "f1bd08b2bd86d8191cec8350dafa7cc6ef020bb1409a46b580daaef852c3c50b",
+      "pngBytes": 1684659,
+      "publicPath": "public/images/solo-simprich-reversible-topaz-ruby-chain-ring-v14.webp",
+      "sha256": "86bb3b27748a3f66ba4e1dbd7dc86872be521f76786d87be05f2d70e5230933c",
+      "bytes": 21644,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a fine chain ring loop with a four-white-stone flower-like top.",
+        "ja": "四つの白い石を花のように配した細いチェーンリングのAIイメージ。"
+      },
+      "sourceIds": [
+        "simprich-reversible-chain-ring-v11",
+        "simprich-about-v9"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "This is a FINGER RING, not a necklace. Show a tiny four-white-stone clover-like top on a very fine white-metal chain band returning into a SMALL CLOSED FINGER-RING LOOP directly around/behind the stone top. Compact ring silhouette and a modest three-quarter top view that makes a finger-sized circular chain loop evident. Preserve four round pale/white stones and the delicate visible chain impression. No long neck chain, no pendant bail, no neck-size loop, no clasp invention, no rigid solid band, no unseen ruby reverse. Jewelry ONLY; do not include fingers.",
+        "categoryCorrection": "Category ambiguity in first solo candidate: necklace-like framing. Parent visual QA requested category-correct compact composition."
+      },
+      "checkedAt": "2026-11-17T03:53:25.232Z"
+    },
+    {
+      "productId": "simprich-reversible-silver-piaring-single",
+      "assetId": "ai-solo-simprich-reversible-silver-piaring-single-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: Show the one elongated egg/teardrop-shaped smooth hoop visible on the ear, narrow at the top and fuller on the lower curve. Preserve the visible warm-gold left surface and silver-colored right surface as a restrained two-tone front view. No gemstone, added hanging parts, second earring, invented hinge mechanism or view of an unseen back.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/simprich-reversible-silver-piaring-single-styling-v13.webp",
+      "referenceSha256": "2cc112f4f896896ab0d07574611091ae69f841f03e92f59bc7647747875b7a08",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-770386c3-9c6e-4fc2-aa91-7c57108a7afe.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-simprich-reversible-silver-piaring-single-v14.png",
+      "pngSha256": "4533592fd7b6785b7f024a07f976d1b524db953ef5b82533aceeaa4baa62fe32",
+      "pngBytes": 1643371,
+      "publicPath": "public/images/solo-simprich-reversible-silver-piaring-single-v14.webp",
+      "sha256": "66bbc08a0492c2acc4ad127beec74c1f0394302e5f78b87a7f0b2d88b84d0aef",
+      "bytes": 21404,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of one elongated two-tone hoop ear ornament in silver and gold colors.",
+        "ja": "銀色と金色を組み合わせた縦長フープの耳飾りのAIイメージ。"
+      },
+      "sourceIds": [
+        "simprich-piaring-single-v11",
+        "simprich-about-v9"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Show the one elongated egg/teardrop-shaped smooth hoop visible on the ear, narrow at the top and fuller on the lower curve. Preserve the visible warm-gold left surface and silver-colored right surface as a restrained two-tone front view. No gemstone, added hanging parts, second earring, invented hinge mechanism or view of an unseen back.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:44:57.916Z"
+    },
+    {
+      "productId": "hario-little-tears-clip-on-earrings",
+      "assetId": "ai-solo-hario-little-tears-clip-on-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: Show one visible ear ornament only: a tiny gold-colored front top/loop and three very slender gold-colored chains ending in small clear glass teardrops at staggered lengths, as seen beside the face. Keep the transparent soft drop shapes and delicate uneven heights. No faceted gem, bead row down the chain, extra tassel or invented rear clip/screw.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/hario-little-tears-clip-on-earrings-styling-v13.webp",
+      "referenceSha256": "5ec4e851cb2dda751cdf58285bed72f26716b3508b632e9cd66cd35ee9f390ab",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-49583b76-f760-42ec-b682-1fd3713497ea.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-hario-little-tears-clip-on-earrings-v14.png",
+      "pngSha256": "b5440e05a9b62072793878c6199477902a6ad819a72105593dcb60520bcd1554",
+      "pngBytes": 1197768,
+      "publicPath": "public/images/solo-hario-little-tears-clip-on-earrings-v14.webp",
+      "sha256": "62277f20091cefcdad3e6e18077001deb6d39862b288a58824f0cba8bb7d8372",
+      "bytes": 19780,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of clear teardrop-like ornaments hanging from three fine gold-colored chains.",
+        "ja": "細い金色の三本の鎖に透明なしずく形の飾りが揺れる耳飾りのAIイメージ。"
+      },
+      "sourceIds": [
+        "hario-netshop-product-v11",
+        "hario-lwf-product-v11",
+        "hario-lwf-about-v11",
+        "hario-kodenmacho-v11"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Show one visible ear ornament only: a tiny gold-colored front top/loop and three very slender gold-colored chains ending in small clear glass teardrops at staggered lengths, as seen beside the face. Keep the transparent soft drop shapes and delicate uneven heights. No faceted gem, bead row down the chain, extra tassel or invented rear clip/screw.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:45:48.188Z"
+    },
+    {
+      "productId": "nousaku-dahlia-gerbera-clip-on-earrings",
+      "assetId": "ai-solo-nousaku-dahlia-gerbera-clip-on-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: Only the visible front of the small silver-white flower ear ornament, with densely layered pointed dahlia-like petals and the same uncolored sculptural center. Preserve the pale metallic modeled petal relief. Do not add a colored center stone, painted petals, rear clip/screw, stem, pin, second flower or other objects.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/nousaku-dahlia-gerbera-clip-on-earrings-styling-v13.webp",
+      "referenceSha256": "540fd4bcd41ca8dbe65924bce79d0f49ccc54ac150ec2df12d202640b9e09bd3",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-021fdea7-85ea-4da5-bad6-f124df6371f1.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-nousaku-dahlia-gerbera-clip-on-earrings-v14.png",
+      "pngSha256": "bf9cea31b0885eeb2b233653467fd5e13e996f22e026432fc26b706711c5b52e",
+      "pngBytes": 1740322,
+      "publicPath": "public/images/solo-nousaku-dahlia-gerbera-clip-on-earrings-v14.webp",
+      "sha256": "d2eb7e88f34b4ee6c84f2581262abb2e65bd5569ca5d7184e89d69293320efc0",
+      "bytes": 68940,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a silver-white layered dahlia-like flower ear ornament front.",
+        "ja": "銀白色の花びらが重なるダリア形の耳飾り正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "nousaku-flower-clip-v12",
+        "nousaku-casting-v12",
+        "nousaku-factory-store-v12"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Only the visible front of the small silver-white flower ear ornament, with densely layered pointed dahlia-like petals and the same uncolored sculptural center. Preserve the pale metallic modeled petal relief. Do not add a colored center stone, painted petals, rear clip/screw, stem, pin, second flower or other objects.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:46:05.973Z"
+    },
+    {
+      "productId": "nousaku-aya-tin-pendant",
+      "assetId": "ai-solo-nousaku-aya-tin-pendant-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: The visible broad silver-white diamond-oriented square pendant, with a straight outer square frame and its four quadrants of horizontal and vertical grid-like strips and open rectangular spaces. Preserve the precise straight geometric direction and simple silver finish visible in the reference. Include the little top joining point and short fine chain segments continuing upward out of crop, no unknown clasp, organic curl or gemstone.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/nousaku-aya-tin-pendant-styling-v13.webp",
+      "referenceSha256": "d459f72162d9da40b9e0f9f6251b356eeef87e62f2d2aea4797ff0c2968c683a",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-1630cf87-521b-4d94-83cf-a75837b36b6c.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-nousaku-aya-tin-pendant-v14.png",
+      "pngSha256": "83d63a0f79df7f705ff92bca8cfbdc0517ab82cdacf59aba035f3b17e2b4519f",
+      "pngBytes": 1761865,
+      "publicPath": "public/images/solo-nousaku-aya-tin-pendant-v14.webp",
+      "sha256": "be6b66869d832ee3fff5304ea7348b366f7d22ae208db8d50717f11fd46eb624",
+      "bytes": 34608,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a silver-white diamond-shaped pendant with geometric openwork strips.",
+        "ja": "細い帯を組み合わせた幾何学的な透かしのある銀白色ペンダントのAIイメージ。"
+      },
+      "sourceIds": [
+        "nousaku-aya-pendant-v12",
+        "nousaku-casting-v12",
+        "nousaku-factory-store-v12"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "The visible broad silver-white diamond-oriented square pendant, with a straight outer square frame and its four quadrants of horizontal and vertical grid-like strips and open rectangular spaces. Preserve the precise straight geometric direction and simple silver finish visible in the reference. Include the little top joining point and short fine chain segments continuing upward out of crop, no unknown clasp, organic curl or gemstone.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:47:24.264Z"
+    },
+    {
+      "productId": "coyorimi-tamamusubi-clip-on-earrings",
+      "assetId": "ai-solo-coyorimi-tamamusubi-clip-on-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: Show one long delicate ear ornament from the visible side: a tiny gold-colored front top/curved loop, thin slightly curved gold stem, one small ivory paper-cord knot ball above and one black paper-cord knot ball below. Preserve the fine interlaced cord-line textures. No red bead, pearl, gemstone, tassel or invented hidden rear screw/clip.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/coyorimi-tamamusubi-clip-on-earrings-styling-v13.webp",
+      "referenceSha256": "1fbe4fb2f3bb77ce27e3b61812c97e60a51d056724f5ff7bbe545096dcf3958c",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-22e93385-6867-4535-b1d4-f7068c5a7a18.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-coyorimi-tamamusubi-clip-on-earrings-v14.png",
+      "pngSha256": "02f052273b312b708f4449016566764bdf48805a8c0833b05e724aa69fd2e580",
+      "pngBytes": 1621205,
+      "publicPath": "public/images/solo-coyorimi-tamamusubi-clip-on-earrings-v14.webp",
+      "sha256": "5505bf4b67797d9afb3f26465e140ab6457dac52c53843a0d93760b5c46baedf",
+      "bytes": 31828,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of ivory and black knot balls linked by a delicate gold-colored curve.",
+        "ja": "生成りと黒の結び玉を細い金色の曲線でつないだ耳飾りのAIイメージ。"
+      },
+      "sourceIds": [
+        "coyorimi-tamamusubi-mocad-v12",
+        "coyorimi-maker-v12",
+        "mocad-museum-store-v12"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Show one long delicate ear ornament from the visible side: a tiny gold-colored front top/curved loop, thin slightly curved gold stem, one small ivory paper-cord knot ball above and one black paper-cord knot ball below. Preserve the fine interlaced cord-line textures. No red bead, pearl, gemstone, tassel or invented hidden rear screw/clip.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:47:03.502Z"
+    },
+    {
+      "productId": "somemasa-peacock-clip-on-earrings",
+      "assetId": "ai-solo-somemasa-peacock-clip-on-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: Two intentionally different textile ornaments, both visible in the reference. Small olive-green fabric-covered round tops joined by tiny warm-gold loops to long narrow pointed leaf-shaped drops outlined in fine gold. Left drop rich midnight blue with a curved peacock profile, green/gold flowing feathers and a few gold crest dots; right drop olive green with blue-and-orange peacock-feather-eye motifs and fine gold flowing lines. Preserve that asymmetric visible front arrangement and woven cloth texture; no real feather, no hidden back clips.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/somemasa-peacock-clip-on-earrings-styling-v13.webp",
+      "referenceSha256": "ecefd360d6303c3d1f1a93199370367572cb8779887a209514baadf8d78461b9",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-2a88d9b6-2134-4bfe-8382-0e56ab4e4374.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-somemasa-peacock-clip-on-earrings-v14.png",
+      "pngSha256": "7ee773777a2fdf9c95c58ee45d875c09645de81063a9010d71045496203afa02",
+      "pngBytes": 2108236,
+      "publicPath": "public/images/solo-somemasa-peacock-clip-on-earrings-v14.webp",
+      "sha256": "ccf72d1e58f11f0550f29ae5a56d1bde65b5159bcb4ea8d18a913c894f179dcd",
+      "bytes": 147366,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of two asymmetric blue and green leaf-shaped textile earrings with peacock motifs.",
+        "ja": "孔雀の模様を配した青と緑の左右非対称な布の耳飾りのAIイメージ。"
+      },
+      "sourceIds": [
+        "somemasa-peacock-clip-mocad-v12",
+        "somemasa-maker-v12",
+        "mocad-museum-store-v12"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Two intentionally different textile ornaments, both visible in the reference. Small olive-green fabric-covered round tops joined by tiny warm-gold loops to long narrow pointed leaf-shaped drops outlined in fine gold. Left drop rich midnight blue with a curved peacock profile, green/gold flowing feathers and a few gold crest dots; right drop olive green with blue-and-orange peacock-feather-eye motifs and fine gold flowing lines. Preserve that asymmetric visible front arrangement and woven cloth texture; no real feather, no hidden back clips.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:50:18.243Z"
+    },
+    {
+      "productId": "egaho-gathered-kurume-kasuri-ear-jewelry",
+      "assetId": "ai-solo-egaho-gathered-kurume-kasuri-ear-jewelry-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: One front-facing ornament visible beside the face: a small circular gathered navy-and-ivory fabric rosette, irregular soft folded petals with woven cotton texture, above a single pale ivory rounded bead covered in restrained dark fine interlaced geometric lines with a muted warm-gold edge accent. Tiny thin warm-gold visible ear loop only. Preserve the cloth rosette and one patterned lower bead, without asserting a gemstone material or adding its hidden fitting.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/egaho-gathered-kurume-kasuri-ear-jewelry-styling-v13.webp",
+      "referenceSha256": "97626889bb375d7811d971ac3594c6f1b013c1349e1d2247d71f361e5e63dcb6",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-5d02e1cc-2ae2-4636-ad04-39a76cfa88ea.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-egaho-gathered-kurume-kasuri-ear-jewelry-v14.png",
+      "pngSha256": "aa6e90d1d2bfdb655aae872befddef71d557968422bbf6fbbe073114c9d9c0bb",
+      "pngBytes": 1828444,
+      "publicPath": "public/images/solo-egaho-gathered-kurume-kasuri-ear-jewelry-v14.webp",
+      "sha256": "1951d05ab7724f61521eb21affa49ce5191c626c53a7232666aa42c16cfe0d57",
+      "bytes": 62728,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a navy-and-ivory gathered fabric rosette above a pale patterned bead.",
+        "ja": "紺と生成りの布を寄せた花形に、淡い模様入りの玉を添えた耳飾りのAIイメージ。"
+      },
+      "sourceIds": [
+        "egaho-gathered-kasuri-v12",
+        "egaho-maker-v12"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "One front-facing ornament visible beside the face: a small circular gathered navy-and-ivory fabric rosette, irregular soft folded petals with woven cotton texture, above a single pale ivory rounded bead covered in restrained dark fine interlaced geometric lines with a muted warm-gold edge accent. Tiny thin warm-gold visible ear loop only. Preserve the cloth rosette and one patterned lower bead, without asserting a gemstone material or adding its hidden fitting.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:50:36.465Z"
+    },
+    {
+      "productId": "sirisiri-page-blue-enamel-pierced-earrings",
+      "assetId": "ai-solo-sirisiri-page-blue-enamel-pierced-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration, not an actual product photograph and not an exact manufactured-product reproduction.\nThe single input is an existing AI styling image used only for the pale ice-blue color and delicate surface-pattern impression. Correct the ornament's exaggerated curl: the final ornament must be a near-flat SMALL ROUNDED-SQUARE PALE-BLUE PLATE, like one tiny page, with only ONE corner lifted a few millimeters. Show all FOUR OUTER EDGES clearly and the whole front face nearly parallel to the image plane. The top, left and right edges are almost straight and the lower edge is a single very shallow curve. Thin silver-colored edge; subtle translucent ice-blue enamel-like front surface with small understated leaf sprigs and fan-like stamped patterns. The slight lift belongs to only the upper-right corner, not a rolled whole edge. Front view only; a very thin plate profile, no visible reverse face.\nComposition: one centered single ear ornament, generous warm ivory negative space, square1024x1024. Plain warm ivory seamless background, soft restrained shadow and naturalistic editorial illustration lighting. Remove the entire person, skin, face, ear, hair, hand and clothing.\nStrict constraints: NO TUBE, NO ROLLED CYLINDER, NO BANGLE/CUFF, NO HOLLOW LOOP, NO cylindrical opening, NO wide rolled lower lip, NO doubled sheet, NO wave folded into a tunnel. No back, post, catch, ear hook or invented hardware. No added stone, props, box, ruler, text, logos or watermark. Keep only the simple pale-blue near-flat rounded-square front plate.",
+      "reference": "public/images/sirisiri-page-blue-enamel-pierced-earrings-styling-v13.webp",
+      "referenceSha256": "065ba9ae15adaeeb51f5136c2c681f8a7f972f9502d4036430a799a92ef3e7cc",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-c7b912d6-f927-4bda-9982-29d9d2d85d69.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-sirisiri-page-blue-enamel-pierced-earrings-r2-v14.png",
+      "pngSha256": "f7c3e683ede650308a6bd18486548f76678726350514690cbe792b8e3be7907c",
+      "pngBytes": 1716569,
+      "publicPath": "public/images/solo-sirisiri-page-blue-enamel-pierced-earrings-r2-v14.webp",
+      "sha256": "a736495306034fedff86e9e6696b41bf172380c90900933cc9afbce866995b07",
+      "bytes": 26336,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a near-flat pale blue rounded-square ear ornament, with a slightly lifted corner and subtle leaf and fan patterns.",
+        "ja": "淡い青の角丸四角の小板に葉と扇の模様を配し、一隅がわずかにめくれた耳飾り正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "sirisiri-page-blue-v12",
+        "sirisiri-maker-v12",
+        "sirisiri-akasaka-store-v12"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted-after-root-review",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "Four outer edges are visible; near-flat rounded-square plate, shallow lower curve and only the upper-right corner slightly lifted. No tube/hollow loop/bangle silhouette; pale-blue leaf/fan surface impression retained."
+      },
+      "checkedAt": "2026-11-17",
+      "revision": 2
+    },
+    {
+      "productId": "sirisiri-silver-thread-hoop-mini",
+      "assetId": "ai-solo-sirisiri-silver-thread-hoop-mini-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: One airy pale warm-gold lace-like circular hoop visible in the reference, a large open central circle with a border of connected small rounded scalloped loops. Each loop has a delicate fine fibrous metallic-thread woven texture and tiny interlaced pale-gold threads; light openwork rather than a thick metal hoop. Preserve the visible tiny warm-gold linking loop and slim ear hook. No hidden closure, rattan, stones or solid plate.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/sirisiri-silver-thread-hoop-mini-styling-v13.webp",
+      "referenceSha256": "afebe507be01310666b87feaa4e96ec1bfecfd083f26d98ecd9a1967e0f42364",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-4c79c447-5c17-4036-9873-0bc4733872f5.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-sirisiri-silver-thread-hoop-mini-v14.png",
+      "pngSha256": "dfa2ae324f3e5424318c56a9122588c3fda846f070bba3d000c2672075224c17",
+      "pngBytes": 1791897,
+      "publicPath": "public/images/solo-sirisiri-silver-thread-hoop-mini-v14.webp",
+      "sha256": "2671e288cff56cbc6932ed6939c65fbc0da98bd940536bf639c74914f40905a9",
+      "bytes": 74676,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of an airy pale gold-colored circular hoop made of fine scalloped thread-like loops.",
+        "ja": "細い糸状のループをつないだ、淡い金色の透かしフープのAIイメージ。"
+      },
+      "sourceIds": [
+        "sirisiri-silver-thread-hoop-v12",
+        "sirisiri-maker-v12",
+        "sirisiri-akasaka-store-v12"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "One airy pale warm-gold lace-like circular hoop visible in the reference, a large open central circle with a border of connected small rounded scalloped loops. Each loop has a delicate fine fibrous metallic-thread woven texture and tiny interlaced pale-gold threads; light openwork rather than a thick metal hoop. Preserve the visible tiny warm-gold linking loop and slim ear hook. No hidden closure, rattan, stones or solid plate.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:51:43.894Z"
+    },
+    {
+      "productId": "mie-akoya-oh002-stud-earrings",
+      "assetId": "ai-solo-mie-akoya-oh002-stud-earrings-v14",
+      "tool": "Built-in image_gen",
+      "prompt": "Use case: product-mockup.\nAsset type: original AI jewelry-only detail illustration for a Japanese craft jewelry selection website.\nInput image1 is an existing AI styling image and only a visible-design reference, not a real product photograph.\nCreate a square1024x1024 jewelry-only image. Completely remove every person, skin, ear, hand, fingers, hair and clothing. Preserve the ornament's visible front shape, colors, pattern and material impression.\nReference details: One simple white-pink round pearl front visible in the reference, softly luminous with a restrained ivory/rose sheen. Show just the solitary round pearl front on ivory with soft shadow; no decorative halo, surrounding stones, long chain, long drop or invented unseen stud post/catch. Do not add a gold surround if it is not visible.\nComposition: centered ornament with generous margins on a plain warm ivory seamless background, softly lit, a restrained natural shadow. Naturalistic editorial illustration, not exact manufactured-product reproduction.\nAvoid inventing any unseen reverse, hidden clasp/catch/fitting, extra ornament or gemstones. Show only observed front/visible portions. No implied sale quantity, ruler, measurements, text, logo, watermark, box, props, display stand, mannequin or human traces.",
+      "reference": "public/images/mie-akoya-oh002-stud-earrings-styling-v13.webp",
+      "referenceSha256": "cea788d11e959fc75426165c80be10ef984db54c91a39636ac1483b73f11eb73",
+      "referenceType": "Existing project AI styling illustration, not a real product photograph",
+      "originalGeneratorPath": "C:\\Users\\rozawa\\.codex\\generated_images\\01a1e780-28f5-73f3-8beb-0ed7a9874423\\exec-3fc94623-8c7e-447f-80e5-502798f3e0c3.png",
+      "originalDeliveryPath": "generated-originals/0.14.0/solo-mie-akoya-oh002-stud-earrings-v14.png",
+      "pngSha256": "8411f5e88a5ebcdc9fd22bf67e419afe77b417f991a798d381a2a882526323a2",
+      "pngBytes": 1096520,
+      "publicPath": "public/images/solo-mie-akoya-oh002-stud-earrings-v14.webp",
+      "sha256": "00de05d3422efec219aa42e7d6aad107a95f12092dbf64f4622cde582d3e277b",
+      "bytes": 10842,
+      "width": 1254,
+      "height": 1254,
+      "requestedDimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "conversion": "Same-size WebP quality84 effort6, with IPTC XMP trainedAlgorithmicMedia; no semantic edit outside image_gen",
+      "aiXmp": true,
+      "alt": {
+        "en": "AI image of a simple round white-pink pearl-like stud front.",
+        "ja": "白に淡いピンクの光を帯びた丸いパール風のスタッド正面のAIイメージ。"
+      },
+      "sourceIds": [
+        "mie-akoya-oh002-current-v12",
+        "mie-pearl-union-current-v12",
+        "mie-akoya-shop-list-current-v12"
+      ],
+      "visualReview": {
+        "checkedAt": "2026-11-17",
+        "status": "accepted",
+        "referenceViewedBeforeGeneration": true,
+        "outputViewed": true,
+        "noHumanRemnants": true,
+        "noPropsTextOrLogo": true,
+        "visibleFrontOnly": true,
+        "observations": "One simple white-pink round pearl front visible in the reference, softly luminous with a restrained ivory/rose sheen. Show just the solitary round pearl front on ivory with soft shadow; no decorative halo, surrounding stones, long chain, long drop or invented unseen stud post/catch. Do not add a gold surround if it is not visible.",
+        "categoryCorrection": null
+      },
+      "checkedAt": "2026-11-17T03:52:27.859Z"
+    }
+  ]
+}

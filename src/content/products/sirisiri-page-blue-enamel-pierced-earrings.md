@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-Pale blue enamel lets the stamped marks in the silver remain part of the surface. Page Blue pairs that detail with a turned-page outline, giving the eye a curved shape and a finer pattern to follow up close.
+Page Blue places a second layer of detail beneath the color. Stamped silver marks show through glass enamel, while the outline suggests a turned page. It is a candidate when looking closely into the surface is as important to you as recognizing a blue shape from a distance.
 
-Try the cool color with a gray dress or navy collar, keeping the rest of the neckline restrained. Kato’s SUKE emphasizes a simple area of enamel color, while Tamura’s Kaisai brings silver-wire drawing into it. Page Blue is our choice when the pattern beneath the glaze is what draws you in.
+That is a useful distinction within enamel jewelry. SUKE gathers the eye into a simpler color plane; Kaisai brings silver-wire drawing into the palette. Page Blue instead asks you to notice the pattern under the glaze. Compare those constructions before letting a shared material name decide the choice.

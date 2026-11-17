@@ -1,7 +1,7 @@
 import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
-const common = z.object({ title:z.string(), description:z.string(), locale:z.enum(['en','ja']), publishStatus:z.enum(['published','draft']), updatedAt:z.string(), sourceIds:z.array(z.string()).default([]) });
+const common = z.object({ title:z.string(), description:z.string(), locale:z.enum(['en','ja']), publishStatus:z.enum(['published','draft']), updatedAt:z.string(), sourceIds:z.array(z.string()).default([]), advertisingPolicyVersion:z.string().optional() });
 export const collections = {
   places: defineCollection({loader:glob({pattern:'**/*.md',base:'./src/content/places'}),schema:common.extend({prefectureId:z.string(),relatedMerchantIds:z.array(z.string()).default([])})}),
   craftNotes: defineCollection({loader:glob({pattern:'**/*.md',base:'./src/content/crafts'}),schema:common.extend({craftId:z.string()})}),

@@ -90,7 +90,8 @@ for (const [file, page] of pages) {
   const csp = getMeta('http-equiv', 'content-security-policy');
   const directives = new Map(csp.split(';').map(part => part.trim().split(/\s+/)).filter(parts => parts[0]).map(([name,...values]) => [name,values]));
   for(const name of ['default-src','script-src'])if(!directives.get(name)?.includes("'self'"))fail(file,`CSP ${name} must restrict navigation assets to self`);
-  for(const name of ['object-src','base-uri','form-action','frame-src','connect-src'])if(directives.get(name)?.join(' ')!=="'none'")fail(file,`CSP ${name} must remain none for this static site`);
+  for(const name of ['object-src','base-uri','form-action','connect-src'])if(directives.get(name)?.join(' ')!=="'none'")fail(file,`CSP ${name} must remain none for this static site`);
+  if(directives.get('frame-src')?.join(' ')!=='https://www.google.com')fail(file,'CSP frame-src must allow only the explicitly loaded Google map origin');
   if(directives.get('script-src')?.some(value=>["'unsafe-inline'","'unsafe-eval'",'*'].includes(value)))fail(file,'CSP must not permit unsafe script execution');
   for(const tag of tags)if(Object.keys(tag.attrs).some(name=>/^on[a-z]+$/i.test(name)))fail(file,'inline event-handler attribute bypasses the script policy');
   for(const script of html.matchAll(/<script\b((?:"[^"]*"|'[^']*'|[^'">])*)>([\s\S]*?)<\/script\s*>/gi)){

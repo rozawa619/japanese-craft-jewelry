@@ -4,6 +4,7 @@ import { pathToFileURL } from 'node:url';
 import { loadEnvFile } from 'node:process';
 import { loadProjectData, projectRoot, collectValidationErrors } from './validate.ts';
 import { safeHttps } from '../src/lib/affiliate.ts';
+import {advertisingPrivacy,assertAdvertisingPrivacyLock} from '../src/lib/advertising-privacy.ts';
 
 export type Readiness = { blockers: string[]; information: string[] };
 export function isProductionUrl(value: string | undefined): boolean {
@@ -18,6 +19,8 @@ export function isProductionUrl(value: string | undefined): boolean {
 export function checkReadiness(env: Record<string, string | undefined>): Readiness {
   const blockers: string[] = [];
   const information: string[] = [];
+  try{assertAdvertisingPrivacyLock(advertisingPrivacy,[env.PUBLIC_ADSENSE_ENABLED,env.PUBLIC_GOOGLE_ADS_ENABLED]);}catch(error){blockers.push('Advertising privacy: '+String(error));}
+  information.push('Google AdSense remains locked off. Advertising privacy text and choices are prepared; actual account/CMP integration and commercial-host suitability are not certified. Inline Google maps load only after a separate display choice.');
   if (!isProductionUrl(env.PUBLIC_SITE_URL)) blockers.push('PUBLIC_SITE_URL: set the real public HTTPS URL; local, placeholder and credential-bearing URLs are not publication targets.');
   if (env.PUBLIC_PUBLISH_MODE !== 'public') blockers.push('PUBLIC_PUBLISH_MODE: set public for the actual public URL and operating identity. Preview builds remain noindex.');
   if (!env.PUBLIC_OPERATOR_NAME?.trim()) blockers.push('PUBLIC_OPERATOR_NAME: provide the operator name or verified public operating identity to be shown.');

@@ -1,0 +1,11 @@
+---
+import {advertisingPrivacy} from '../lib/advertising-privacy';
+import {t,type Locale} from '../lib/i18n';
+interface Props{locale:Locale}
+const{locale}=Astro.props;
+---
+<aside class="advertising-privacy-status" data-ad-privacy-status data-ad-serving={advertisingPrivacy.mode} data-ad-policy-version={advertisingPrivacy.policyVersion} aria-label={t(locale,'Current advertising status','現在の広告の状態')}>
+ <p><strong>{t(locale,'Google AdSense ads are currently off.','現在、Google AdSenseの広告は配信していません。')}</strong></p>
+ <p>{t(locale,'This site has no Google advertising tags or advertising consent cookies. The information below explains your choices and what must be in place before advertising can begin.','当サイトにGoogle広告のタグや、広告同意を保存するCookieはありません。以下で、広告に関する選択と導入前の方針をご案内します。')}</p>
+</aside>
+<style>.advertising-privacy-status{border:1px solid var(--line);padding:20px 24px;background:#eeeee5;margin:0 0 32px}.advertising-privacy-status p{font-size:13px;line-height:1.9;margin:0}.advertising-privacy-status p+p{margin-top:8px}@media(max-width:720px){.advertising-privacy-status{padding:16px}}</style>

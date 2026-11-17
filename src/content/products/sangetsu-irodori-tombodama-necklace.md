@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-We chose this design for placing one patterned bead at the neckline rather than linking many little beads together. Its bead is larger than the Irodori earring beads, giving the pattern a more gathered, central role.
+A single patterned bead gives this necklace a clear center. It does not spread many small ornaments around the neckline; instead, the larger bead gathers the color and pattern in one place. That makes it a candidate when the bead itself, rather than a fine chain, is what you want to notice.
 
-The removable cord and bead opening also distinguish it from a fine-chain necklace. Compare the patterned circle with ARCOS’s internal spiral or RINZEN’s leaf outline to decide which kind of glass detail you want to lead.
+Its removable cord also makes the relationship between bead and support part of the choice. Before planning another cord, check the opening and the replacement's fittings together. The possibility of changing a support is useful only when the complete replacement is compatible, not simply because its main strand looks narrow.

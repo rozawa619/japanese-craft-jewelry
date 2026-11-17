@@ -1,0 +1,59 @@
+{
+  "version": "0.14.0",
+  "recordedAt": "2026-11-17T04:14:17.596Z",
+  "command": "pnpm verify",
+  "status": "passed",
+  "typeFiles": 113,
+  "errors": 0,
+  "warnings": 0,
+  "hints": 0,
+  "unitTests": {
+    "total": 111,
+    "passed": 111,
+    "failed": 0
+  },
+  "build": {
+    "htmlPages": 264,
+    "hrefSrcReferences": 15393,
+    "anchors": 2298,
+    "ordinaryRetailerLinks": 1016,
+    "sponsoredLinks": 0,
+    "executableInlineCspHashes": 701,
+    "inertJsonBlocks": 248,
+    "legacyReadingRedirects": 14,
+    "retiredImagesPruned": 10,
+    "outputFiles": 370
+  },
+  "log": {
+    "path": "artifacts/privacy-depth-stage-final2-verify.log",
+    "sha256": "c5cdbd52bd9c2a4090ec9b269dd96ae0d2c661a0909611d7a3cc1ab261b48749",
+    "delivery": "Local log retained; normalized proof included in source."
+  },
+  "heroImages": {
+    "checks": 49,
+    "passed": 49,
+    "failed": 0,
+    "publishedProducts": 50,
+    "registeredProducts": 50,
+    "uniqueImages": 48,
+    "baselineFilesPreserved": 25,
+    "retiredFilesExcluded": 10,
+    "totalImageBytes": 4160080,
+    "warnings": 0
+  },
+  "privacy": {
+    "checks": 4,
+    "passed": 4,
+    "failed": 0,
+    "mode": "off"
+  },
+  "detailImages": {
+    "checks": 51,
+    "passed": 51,
+    "failed": 0,
+    "products": 50,
+    "files": 50,
+    "bytes": 2509816
+  },
+  "limits": "No Google account/AdSense/CMP connection, application, legal certification, commercial-host eligibility, actual indexing/ranking/traffic or future stock guarantee."
+}

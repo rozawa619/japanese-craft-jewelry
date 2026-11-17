@@ -79,5 +79,5 @@ if(withDist)for(const asset of ledger.assets.filter(asset=>asset.status==='retir
 }
 report.completedAt=new Date().toISOString();
 report.summary={checks:report.checks.length,passed:report.checks.filter(check=>check.status==='passed').length,failed:report.failures.length,publishedProducts:published.length,registeredProducts:Object.keys(registry).length,uniqueImages:report.files.length,baselineFilesPreserved:report.baseline.filter(file=>file.status==='passed').length,retiredFilesExcluded:report.retired.filter(file=>file.status==='passed').length,totalImageBytes:report.files.reduce((n,file)=>n+file.bytes,0),warnings:report.warnings.length};
-await writeFile(resolve(root,process.env.CHECK_IMAGE_REPORT_PATH||'docs/visual-seo-stage-image-files-results.json'),JSON.stringify(report,null,2)+'\n');
+await writeFile(resolve(root,process.env.CHECK_IMAGE_REPORT_PATH||'docs/privacy-depth-stage-image-files-results.json'),JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify(report.summary));for(const failure of report.failures)console.error(failure.name+': '+failure.message);if(report.failures.length)process.exitCode=1;

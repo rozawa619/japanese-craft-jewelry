@@ -14,7 +14,7 @@ import {assertPublicationMetadata} from './publication-metadata-assertions.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));
 if(existsSync(resolve(root,'.env')))process.loadEnvFile(resolve(root,'.env'));
 const origin=process.env.CHECK_BASE_URL||'http://127.0.0.1:4321';
-const screenshotPrefix=(process.env.CHECK_SCREENSHOT_PREFIX||'visual-seo-stage-full').replace(/[^a-zA-Z0-9_-]/g,'-');
+const screenshotPrefix=(process.env.CHECK_SCREENSHOT_PREFIX||'privacy-depth-stage-full').replace(/[^a-zA-Z0-9_-]/g,'-');
 const base='/'+(process.env.PUBLIC_BASE_PATH||'').split('/').filter(Boolean).join('/')+((process.env.PUBLIC_BASE_PATH||'').split('/').filter(Boolean).length?'/':'');
 const route=(locale,path='')=>new URL(base+locale+'/'+path,origin).href;
 const catalog=JSON.parse(await readFile(resolve(root,'src/data/catalog.json'),'utf8'));
@@ -332,7 +332,7 @@ try{
  await check('Language entry works without JavaScript',async()=>{
   const context=await browser.newContext({javaScriptEnabled:false,viewport:{width:320,height:740}});const page=await context.newPage();try{await page.goto(new URL(base,origin).href);for(const locale of ['en','ja'])assert.equal(await page.locator('[data-entry-language="'+locale+'"]').isVisible(),true);await page.locator('[data-entry-language="ja"]').click();assert.equal(await page.locator('html').getAttribute('lang'),'ja')}finally{await context.close()}
  });
- await check('Publication metadata, withdrawn hairpin and empty categories are correct',()=>assertPublicationMetadata(browser,{route,origin,base,publishMode:process.env.PUBLIC_PUBLISH_MODE,siteUrl:process.env.PUBLIC_SITE_URL}));
+ await check('Publication metadata, withdrawn hairpin and empty categories are correct',()=>assertPublicationMetadata(browser,{route,base,publishMode:process.env.PUBLIC_PUBLISH_MODE,siteUrl:process.env.PUBLIC_SITE_URL}));
  for(const locale of ['en','ja'])await check(locale+' retired reading routes move to product selections',async()=>{
   const page=await browser.newPage();
   const results=[];
@@ -368,7 +368,7 @@ try{
  report.completedAt=new Date().toISOString();
  report.finalizedAt=report.completedAt;
  report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,pages:report.pages.length,pageVisits:report.pages.length,uniqueRoutes:new Set(report.pages.map(page=>new URL(page.url).pathname)).size,uniqueProductsChecked:new Set(report.pages.flatMap(page=>page.productId?[page.productId]:[])).size,uniqueRegionsChecked:new Set(report.pages.flatMap(page=>page.regionId?[page.regionId]:[])).size,productDetailChecks:report.pages.filter(page=>page.productId).length,regionPageChecks:report.pages.filter(page=>page.regionId).length,axeScreens:report.pages.filter(page=>page.axeViolations!==null).length,axeViolations:report.pages.reduce((sum,page)=>sum+(page.axeViolations?.length||0),0),screenshots:report.screenshots.length,pageErrors:report.pageErrors.length,consoleErrors:report.consoleErrors.length};
- await writeFile(resolve(root,process.env.CHECK_REPORT_PATH||'docs/visual-seo-stage-full-browser-results.json'),JSON.stringify(report,null,2)+'\n');
+ await writeFile(resolve(root,process.env.CHECK_REPORT_PATH||'docs/privacy-depth-stage-full-browser-results.json'),JSON.stringify(report,null,2)+'\n');
  console.log(JSON.stringify(report.summary));
  if(report.failures.length)process.exitCode=1;
 }
