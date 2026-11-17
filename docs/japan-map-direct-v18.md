@@ -1,5 +1,7 @@
 # 大きな日本地図から直接産地を選ぶ — 0.17.1
 
+> 現在の一覧地図枠/沖縄別枠とトップ人物写真の変更先は[022ガイド](compact-layout-v20.md)・[022仕様](../specs/022-compact-map-and-natural-hero/)です。この文書は前段階の操作/写真共通サイズを引き継ぐ資料として読み、新しい実測/公開状態は022 validationとdeployment-resultsを参照してください。
+
 確認日2026-11-17。仕様は[020](../specs/020-direct-region-map/spec.md)、実装/公開/ZIPの確定結果は[verification](verification.md)・[deployment-results](deployment-results.json)を正本とする。初回R1〜R10はebacc3eで公開検証済み。R11/R12は8b53114で実装・公開し、Hero77/77と全HTML照合を確認済み。写真をさらに統一した現在の仕様/最終納品は[021](../specs/021-unified-region-photos/validation.md)・[写真ガイド](region-photos-v19.md)を参照。旧0.17.0の193件や初回公開PASSを最新版へ流用しない。
 
 ## ホーム先頭・TOP10・大きな一覧地図の違い

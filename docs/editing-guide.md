@@ -1,11 +1,14 @@
 # 商品・文章・画像の編集ガイド
 
 プログラムを書かない運営者と、引継ぎ先のAIのための手引きです。まず[README](../README.md)で起動し、詳しい判断は[引継ぎ](handoff.md)・[共通原則](constitution.md)・[運用](operations.md)へ戻ってください。
-2026-11-17の公開版0.17.2が継承する台帳は全66商品、公開60商品、下書き6商品、24県、33店舗（53商品に店舗案内）です。公開関連技法は34（全36）、一次出典293件、人物58＋単体60のAI画像118ファイル。今後の件数は台帳を数えて確かめます。
+2026-11-17の作業版0.17.3が継承する台帳は全66商品、公開60商品、下書き6商品、24県、33店舗（53商品に店舗案内）です。公開関連技法は34（全36）、一次出典293件、人物58＋単体60のAI画像118ファイル。今後の件数は台帳を数えて確かめます。
 
-0.17.2（仕様021）公開済み。app `19f066ee20f4aa8eb1b441a4178dc92ffcb25ae7`、[Actions44072612768](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44072612768) completed/success。実URLの写真37・mobile92・Sources328・補足24が成功。Top10とDISCOVER3の写真を全3ページで統一。確定値はdeployment-results/verificationを参照。
+<!-- TODO_PUBLIC_V20 -->
+0.17.3（仕様022）は公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
 
-PCのホーム先頭は左の人物AI画像・右の日本地図を並べるRegionHeroです。スマホでは写真を全幅で大きく表示し、その下に商品小情報と地図を並べて、顔や耳を切らずに見やすくします。Heroの県はclick/tap/Enter/Spaceで明示選択すると、女性画像と商品/国内参考価格を切り替え、産地CTAから商品一覧へ進みます。hover/focusだけでは切り替えません。有効な公開地域idだけを`?region=`へ反映し、他query/hash・戻る・言語切替で選択を保ちます。Heroの本州〜北海道は余白を詰めて拡大し、沖縄は「拡大」の注記付き別枠から同じ操作で選べます。Heroとは別に、TOP10後の大きい一覧地図は県のnative直接リンクです。TOP10とDISCOVER3県は共通styleの自然比率画像とし、PC最大300×200px・スマホ最大222×148pxのcontainで上下の帯を抑え、地域名/商品/価格/順位を保ちます。顔や耳を切らず、初期Heroは既存selection.heroProductIdを使います。これらは機能・表示の変更であり、訪問数や検索順位の改善を実測したという意味ではありません。
+旧版の公開記録：0.17.2（仕様021）公開済み。app `19f066ee20f4aa8eb1b441a4178dc92ffcb25ae7`、[Actions44072612768](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44072612768) completed/success。実URLの写真37・mobile92・Sources328・補足24が成功。Top10とDISCOVER3の写真を全3ページで統一。確定値はdeployment-results/verificationを参照。 0.17.2の全sourceは1118ファイルを照合済み。これは022の実測/公開/納品結果ではありません。
+
+ホーム先頭のRegionHeroはPCで左に人物AI画像、右に日本地図を並べます。022では写真をheight:autoの元比率・containで表示し、画像/figure/AIcaption前後に人工的な上下letterboxを残さない設計です。顔・耳・ジュエリーとAIcaptionを保ち、スマホも自然高で表示します。Heroはclick/tap/Enter/Spaceの明示県選択で女性画像・商品/国内参考価格・CTAを切り替え、公開idだけのregion queryと他query/hash・戻る・言語切替を維持します。Heroの沖縄拡大枠はPC200px/スマホ80pxを継承。別の一覧地図は外枠をコンパクトにし、本州〜北海道の主図と沖縄の独立拡大枠（設計PC144px/スマホ80px）から、通常hrefのclick/tap/Enterで産地へ直接進みます。preview/select・zoom/内部scroll・noJSも保持します。TOP10/DISCOVER3県の共通写真はPC最大300×200px・スマホ最大222×148pxのままです。実装寸法と最終検証は022 guide/validationを参照し、旧021の37/92や旧020の217/77を今回の成功に加算しません。
 以下の実例は既存記録の**一部の抜粋**です。新しい価格・在庫を調べ直した例でも、レコード全体の貼り替え用テンプレートでもありません。
 
 ## 最初に覚えること
@@ -203,9 +206,9 @@ WebPへ変換しても原本PNGを保管し、AI由来のIPTC XMPを維持しま
 新しい種別や所属は`catalog.json`と日本語名称に登録してから使います。商品を増やしただけではホームの種類項目は自動追加されません。
 観光TOP10は販売人気順ではありません。順位の年・訪問率・一次資料は[地域設定](../src/config/region-selection.ts)と[調査記録](research/tourism-top10-v9.json)を組で更新します。
 
-### 0.17.1のホームHero・地図・3県ピックアップを更新する
+### 現在022のホームHero・一覧地図を更新する
 
-ホーム先頭のHeroとは別に、産地一覧はTOP10→大きい日本地図→DISCOVER3県の順です。観光TOP10順位は維持し、47県のCC0形状から実商品/産地本文のある掲載24県だけを選択可能にします。県のクリック・タップ・Enterは、その産地の商品一覧へ直接進む通常リンクです。hover/focusと地域selectは代表単体AI画像・商品名・国内参考価格のプレビューに使います。地図は大きくし、100/150/200/300%の拡大・縮小・全体表示と、拡大後の地図内スクロールを用意。地方別一覧・地図ジャンプ・JSなしの直接リンクも保ちます。
+ホーム先頭のHeroとは別に、産地一覧はTOP10→コンパクトな日本地図→DISCOVER3県の順です。47県のCC0原形を主図46＋沖縄別枠1へ分け、実商品/産地本文がある掲載24県だけを通常リンクにします。沖縄は島path・枠・labelを押せる拡大表示とし、県のclick/tap/Enterで産地の商品一覧へ直接進みます。pointerenter/focus/selectの代表単体画像/商品/国内参考価格preview、100/150/200/300%のzoom・内部scroll・全体表示、地方別の初期closed details・地図ジャンプ・JSなしのhrefを継承します。外枠/主図/沖縄枠の設計値と実測は最新022の説明で区別します。
 
 日本地図はsrc/data/japan-map-geometry.json（CC0出典/47県形状）、src/config/japan-map.ts（地方とDISCOVER3県）、JapanJewelryMap.astro（native直接リンク・代表preview・ローカルzoom）。店舗の地図はmap-preferences.ts（30日/版/最小値検証）、map-preferences-client.ts（全表示/全停止）、MapPreferences.astro（Privacyの設定UI）へ分離します。商品価格や画像URLを地理JSONへ複製せず、未掲載県へ空URLを作りません。小さな県形状そのものを44pxとは呼ばず、select/地方別リンクを代替にします。[旧版の出典と加工](japan-map-v17.md)を保持し、[現在の直接選択](japan-map-direct-v18.md)を確認してください。県のclickをpreventDefaultで横取りしてpreviewだけに戻さず、href/Enter/修飾clickの通常動作を維持します。小さな県は拡大後に実際の形状内を選べるか確認し、地図内のoverflowとページ全体の横はみ出しを区別します。今回は新bitmapを生成していません。
 
@@ -251,3 +254,7 @@ Node.js 24.22.3以上、pnpm 11.25.0を使います。初回は`pnpm install --f
 公開はGitHubへのpush後のActions成功と、実際の公開URLの表示まで確認します。`build`成功だけで公開済みとは書きません。
 最後に変更ファイル・確認した公式情報・実行した検査結果・残作業を引継ぎへ残し、全ソースの書出しも更新します。
 
+
+### 022の固定高と地図枠を修正する場所
+
+Hero写真はRegionHero.astroのheight:auto/元比率を保ち、固定高の親やcaption前後の帯も測ります。一覧地図の外枠/主図/沖縄独立枠はJapanJewelryMap.astro、設計値は[022ガイド](compact-layout-v20.md)へ集約。Heroの画像選択と一覧のnative直接遷移を混ぜず、TOP10/DISCOVER300×200/222×148は021の共通styleを継承します。

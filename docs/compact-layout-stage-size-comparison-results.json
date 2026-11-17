@@ -1,0 +1,355 @@
+{
+  "version": "0.17.3",
+  "checkedAt": "2026-11-17T12:15:46.987Z",
+  "status": "passed",
+  "method": "Compare8 measured0.17.2 baseline frame/viewport boxes with the same locale/route/width compactGeometry snapshots taken during the final241-case run, immediately after each fresh route membership check and its map jump. This is rendered box size, not a measured bounce-rate improvement. No second browser measurement or application mutation.",
+  "before": {
+    "report": "docs/compact-layout-stage-before-metrics.json",
+    "sha256": "cef285b0712b03f3d93af9654e15d53486cb53930287133e04bf34e0f9d74934",
+    "application": "19f066ee20f4aa8eb1b441a4178dc92ffcb25ae7"
+  },
+  "after": {
+    "report": "docs/compact-layout-stage-map-results.json",
+    "sha256": "e68eaa2e253200d98bb1a74c18f4ce0d0774cb8dabf8bf17a6752c3a02cb58a8",
+    "mapSourceSha256": "405f8c575ccf1a133130b66d1a08718208e440b92bf9fc170f996f3f11403155",
+    "inputUnchanged": true
+  },
+  "cases": [
+    {
+      "lang": "ja",
+      "width": 390,
+      "route": "places/",
+      "before": {
+        "frame": {
+          "width": 350,
+          "height": 1273.828125
+        },
+        "viewport": {
+          "width": 316,
+          "height": 372.84375
+        },
+        "htmlSha256": "c7685bd9408a0f45a9c980ef2f55e7e088ab0a066fb1c9e35895b0aaf39d4523"
+      },
+      "after": {
+        "frame": {
+          "width": 350,
+          "height": 1204.59375
+        },
+        "viewport": {
+          "width": 316,
+          "height": 355.046875
+        },
+        "inset": {
+          "width": 94.796875,
+          "height": 93.390625
+        },
+        "coveredMainlandSamples": 0
+      },
+      "reductionPercent": {
+        "frameWidth": 0,
+        "frameHeight": 5.44,
+        "viewportWidth": 0,
+        "viewportHeight": 4.77
+      }
+    },
+    {
+      "lang": "ja",
+      "width": 390,
+      "route": "",
+      "before": {
+        "frame": {
+          "width": 350,
+          "height": 1273.828125
+        },
+        "viewport": {
+          "width": 316,
+          "height": 372.84375
+        },
+        "htmlSha256": "5f82524da4bbe68415681a8e37e96cc425101fbcfd6c1d9c670b3e632eaad067"
+      },
+      "after": {
+        "frame": {
+          "width": 350,
+          "height": 1204.59375
+        },
+        "viewport": {
+          "width": 316,
+          "height": 355.046875
+        },
+        "inset": {
+          "width": 94.796875,
+          "height": 93.390625
+        },
+        "coveredMainlandSamples": 0
+      },
+      "reductionPercent": {
+        "frameWidth": 0,
+        "frameHeight": 5.44,
+        "viewportWidth": 0,
+        "viewportHeight": 4.77
+      }
+    },
+    {
+      "lang": "ja",
+      "width": 1440,
+      "route": "places/",
+      "before": {
+        "frame": {
+          "width": 1280,
+          "height": 1324.578125
+        },
+        "viewport": {
+          "width": 760,
+          "height": 896.71875
+        },
+        "htmlSha256": "c7685bd9408a0f45a9c980ef2f55e7e088ab0a066fb1c9e35895b0aaf39d4523"
+      },
+      "after": {
+        "frame": {
+          "width": 1040,
+          "height": 912.875
+        },
+        "viewport": {
+          "width": 480,
+          "height": 539.3125
+        },
+        "inset": {
+          "width": 144,
+          "height": 136.96875
+        },
+        "coveredMainlandSamples": 0
+      },
+      "reductionPercent": {
+        "frameWidth": 18.75,
+        "frameHeight": 31.08,
+        "viewportWidth": 36.84,
+        "viewportHeight": 39.86
+      }
+    },
+    {
+      "lang": "ja",
+      "width": 1440,
+      "route": "",
+      "before": {
+        "frame": {
+          "width": 1280,
+          "height": 1324.578125
+        },
+        "viewport": {
+          "width": 760,
+          "height": 896.71875
+        },
+        "htmlSha256": "5f82524da4bbe68415681a8e37e96cc425101fbcfd6c1d9c670b3e632eaad067"
+      },
+      "after": {
+        "frame": {
+          "width": 1040,
+          "height": 912.875
+        },
+        "viewport": {
+          "width": 480,
+          "height": 539.3125
+        },
+        "inset": {
+          "width": 144,
+          "height": 136.96875
+        },
+        "coveredMainlandSamples": 0
+      },
+      "reductionPercent": {
+        "frameWidth": 18.75,
+        "frameHeight": 31.08,
+        "viewportWidth": 36.84,
+        "viewportHeight": 39.86
+      }
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "route": "places/",
+      "before": {
+        "frame": {
+          "width": 350,
+          "height": 1313.078125
+        },
+        "viewport": {
+          "width": 316,
+          "height": 372.84375
+        },
+        "htmlSha256": "96ec44e0c0e87dfb9e909e09fd21a67998dd073dabc26c895644aa659a6359c3"
+      },
+      "after": {
+        "frame": {
+          "width": 350,
+          "height": 1242.640625
+        },
+        "viewport": {
+          "width": 316,
+          "height": 355.046875
+        },
+        "inset": {
+          "width": 94.796875,
+          "height": 93.390625
+        },
+        "coveredMainlandSamples": 0
+      },
+      "reductionPercent": {
+        "frameWidth": 0,
+        "frameHeight": 5.36,
+        "viewportWidth": 0,
+        "viewportHeight": 4.77
+      }
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "route": "",
+      "before": {
+        "frame": {
+          "width": 350,
+          "height": 1313.078125
+        },
+        "viewport": {
+          "width": 316,
+          "height": 372.84375
+        },
+        "htmlSha256": "53044635f6b7ae8f59eb0d91cd4232c058aa4109df683f88ea3c286e5fff13c0"
+      },
+      "after": {
+        "frame": {
+          "width": 350,
+          "height": 1242.640625
+        },
+        "viewport": {
+          "width": 316,
+          "height": 355.046875
+        },
+        "inset": {
+          "width": 94.796875,
+          "height": 93.390625
+        },
+        "coveredMainlandSamples": 0
+      },
+      "reductionPercent": {
+        "frameWidth": 0,
+        "frameHeight": 5.36,
+        "viewportWidth": 0,
+        "viewportHeight": 4.77
+      }
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "route": "places/",
+      "before": {
+        "frame": {
+          "width": 1280,
+          "height": 1323.984375
+        },
+        "viewport": {
+          "width": 760,
+          "height": 896.71875
+        },
+        "htmlSha256": "96ec44e0c0e87dfb9e909e09fd21a67998dd073dabc26c895644aa659a6359c3"
+      },
+      "after": {
+        "frame": {
+          "width": 1040,
+          "height": 929.921875
+        },
+        "viewport": {
+          "width": 480,
+          "height": 539.3125
+        },
+        "inset": {
+          "width": 144,
+          "height": 136.96875
+        },
+        "coveredMainlandSamples": 0
+      },
+      "reductionPercent": {
+        "frameWidth": 18.75,
+        "frameHeight": 29.76,
+        "viewportWidth": 36.84,
+        "viewportHeight": 39.86
+      }
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "route": "",
+      "before": {
+        "frame": {
+          "width": 1280,
+          "height": 1323.984375
+        },
+        "viewport": {
+          "width": 760,
+          "height": 896.71875
+        },
+        "htmlSha256": "53044635f6b7ae8f59eb0d91cd4232c058aa4109df683f88ea3c286e5fff13c0"
+      },
+      "after": {
+        "frame": {
+          "width": 1040,
+          "height": 929.921875
+        },
+        "viewport": {
+          "width": 480,
+          "height": 539.3125
+        },
+        "inset": {
+          "width": 144,
+          "height": 136.96875
+        },
+        "coveredMainlandSamples": 0
+      },
+      "reductionPercent": {
+        "frameWidth": 18.75,
+        "frameHeight": 29.76,
+        "viewportWidth": 36.84,
+        "viewportHeight": 39.86
+      }
+    }
+  ],
+  "summary": {
+    "cases": 8,
+    "allFrameHeightsReduced": true,
+    "desktop": {
+      "width": 1440,
+      "cases": 4,
+      "frameHeightReductionPercent": [
+        29.76,
+        31.08
+      ],
+      "newFrameHeights": [
+        912.875,
+        929.921875
+      ],
+      "newViewportSizes": [
+        {
+          "width": 480,
+          "height": 539.3125
+        }
+      ]
+    },
+    "mobile": {
+      "width": 390,
+      "cases": 4,
+      "frameHeightReductionPercent": [
+        5.36,
+        5.44
+      ],
+      "newFrameHeights": [
+        1204.59375,
+        1242.640625
+      ],
+      "newViewportSizes": [
+        {
+          "width": 316,
+          "height": 355.046875
+        }
+      ]
+    }
+  }
+}

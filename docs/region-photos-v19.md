@@ -1,5 +1,7 @@
 # 産地の写真を大きく統一する — 0.17.2
 
+> 現在の一覧地図枠/沖縄別枠とトップ人物写真の変更先は[022ガイド](compact-layout-v20.md)・[022仕様](../specs/022-compact-map-and-natural-hero/)です。この文書は前段階の操作/写真共通サイズを引き継ぐ資料として読み、新しい実測/公開状態は022 validationとdeployment-resultsを参照してください。
+
 確認日2026-11-17。仕様は[021](../specs/021-unified-region-photos/spec.md)。実装・ローカル/公開検証済み。全source ZIPの確定状態はdeployment-resultsのsourceDeliveryと外部proofを参照。確定結果は[021 validation](../specs/021-unified-region-photos/validation.md)・[verification](verification.md)・[deployment-results](deployment-results.json)を確認してください。
 
 ## 今回の表示

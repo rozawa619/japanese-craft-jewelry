@@ -1,0 +1,1475 @@
+{
+  "checkedAt": "2026-11-17T12:11:05.330Z",
+  "method": "Inspect every published-product detail illustration, active styling-only asset ledger, actual WebP metadata/XMP and hashes; check that final dist preserves the reviewed bytes. These are AI illustrations, not authorised product photographs or a test of real product accuracy.",
+  "checks": [
+    {
+      "name": "Every published product has a documented AI detail illustration",
+      "status": "passed",
+      "detail": {
+        "products": 60,
+        "manifests": [
+          {
+            "path": "docs/image-generation-solo-v14.json",
+            "images": 50
+          },
+          {
+            "path": "docs/image-generation-solo-v16.json",
+            "images": 10
+          }
+        ]
+      }
+    },
+    {
+      "name": "AI detail file hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "productId": "hamamatsuya-catch-pierced",
+        "path": "images/solo-hamamatsuya-catch-pierced-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 43328,
+        "sha256": "4b16cb205d6a10a25ad60e6bb1697c2c93393269469b64de14598b6cc7f17ae9",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file hamamatsuya-clip",
+      "status": "passed",
+      "detail": {
+        "productId": "hamamatsuya-clip",
+        "path": "images/solo-hamamatsuya-clip-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 48426,
+        "sha256": "d288c50409afd679955d98269f7b9eba0f68da60c4212f68e7ddaeb0ee7825a5",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file hamamatsuya-pendant",
+      "status": "passed",
+      "detail": {
+        "productId": "hamamatsuya-pendant",
+        "path": "images/solo-hamamatsuya-pendant-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 141564,
+        "sha256": "15430f9240fb340409fa741724cb00a859fe223c950bee791178b6f35101e706",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file maruyama-clip-c",
+      "status": "passed",
+      "detail": {
+        "productId": "maruyama-clip-c",
+        "path": "images/solo-maruyama-clip-c-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 56158,
+        "sha256": "0daaea2edcb5bed0bda85fc506f22fcc364ea0a825d413ad43d88bcb8eda5a85",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file maruyama-clip-d",
+      "status": "passed",
+      "detail": {
+        "productId": "maruyama-clip-d",
+        "path": "images/solo-maruyama-clip-d-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 45224,
+        "sha256": "d2c4a46e377c0d4893df16945e21647e887b19260c449e412c8d21c4a5869b1e",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file maruyama-pierced-c",
+      "status": "passed",
+      "detail": {
+        "productId": "maruyama-pierced-c",
+        "path": "images/solo-maruyama-pierced-c-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 52282,
+        "sha256": "da162e8443be8c6ac68b7343044f82216b9f9eff9f327569646633d00457f881",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file maruyama-pierced-d",
+      "status": "passed",
+      "detail": {
+        "productId": "maruyama-pierced-d",
+        "path": "images/solo-maruyama-pierced-d-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 49910,
+        "sha256": "48b07a3d670d333abebb0071f66742d72ddb85e2e914eeedfdebd815bf5ce0d7",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file rinzen-seika-amber-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "rinzen-seika-amber-pierced-earrings",
+        "path": "images/solo-rinzen-seika-amber-pierced-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 41940,
+        "sha256": "52c2b4778297e9e2143f2302a139429d92539d7c03d7a1bd2e98ede22ced584e",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "six-kiln-half-moon-earrings",
+        "path": "images/solo-six-kiln-half-moon-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 29230,
+        "sha256": "6b9b40d5ca73121730684e09409c8e9b0c84c4141955beed8d65c3cfa2c8fa40",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "productId": "rinzen-leaf-glass-pendant",
+        "path": "images/solo-rinzen-leaf-glass-pendant-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 37316,
+        "sha256": "18b8ba8ed254c9a2fc87a7df6ec8de90575df47f66af29e1a792c20cdc0d910e",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "six-kiln-blue-bouquet-pierced-earrings",
+        "path": "images/solo-six-kiln-blue-bouquet-pierced-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 45610,
+        "sha256": "16b3624fec4182561c0abdc9cc4ee002ff85aa10b16a4c5056d9fcf91fd48710",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "productId": "saskia-diez-drake-porcelain-cuff",
+        "path": "images/solo-saskia-diez-drake-porcelain-cuff-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 34706,
+        "sha256": "b84d3f6f455084e8b19fac4238564587b6b40f54b23982210a86189d6bb48ffb",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "checos-japanese-apricot-pierced-earrings",
+        "path": "images/solo-checos-japanese-apricot-pierced-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 89376,
+        "sha256": "caad07b89c332bde641e778be6eeaec537bdb99315112d9fcaf2fa5fc123eb24",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+        "path": "images/solo-morphosphere-ultramarine-pansy-pierced-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 193234,
+        "sha256": "efdd5016fc48d88681de5ff73d70d5c807df5f2200ea1545051e8d8562b84341",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "kato-suke-drop-pierced-earrings",
+        "path": "images/solo-kato-suke-drop-pierced-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 46450,
+        "sha256": "c9d70ae49d405c8e2a281183bb9344aa32f4107b08ce84820346467a9f683b02",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file arcos-cosmic-spiral-pendant",
+      "status": "passed",
+      "detail": {
+        "productId": "arcos-cosmic-spiral-pendant",
+        "path": "images/solo-arcos-cosmic-spiral-pendant-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 85792,
+        "sha256": "de76da507983dd83cdb724a4ee3927e6b4865be367d04483f3cd81100474d2e5",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file arcos-cosmic-glass-bracelet",
+      "status": "passed",
+      "detail": {
+        "productId": "arcos-cosmic-glass-bracelet",
+        "path": "images/solo-arcos-cosmic-glass-bracelet-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 48198,
+        "sha256": "3876aaa42209c9c61abdb4ef73fbaf3b6759c94047206c6e0bfcd26793747d6d",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file senshu-pearl-stud-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "senshu-pearl-stud-earrings",
+        "path": "images/solo-senshu-pearl-stud-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 9750,
+        "sha256": "8bfd20d3055fadb017fe0ec5e3b441bc50e7ef476432dc19d51e0eeda6709cf6",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file senshu-pearl-swing-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "senshu-pearl-swing-earrings",
+        "path": "images/solo-senshu-pearl-swing-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 12756,
+        "sha256": "cc3f405f4ea12cfd9a9f38b582dbfaf0db49049d4472b3a43bcad701c59ed753",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file sugimura-hosoge-raden-pendant",
+      "status": "passed",
+      "detail": {
+        "productId": "sugimura-hosoge-raden-pendant",
+        "path": "images/solo-sugimura-hosoge-raden-pendant-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 45984,
+        "sha256": "98b502899b919e43d6724a85648f3429d76ba8a4aba4feba7005131b0c47d3ea",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file sugimura-lotus-makie-ring",
+      "status": "passed",
+      "detail": {
+        "productId": "sugimura-lotus-makie-ring",
+        "path": "images/solo-sugimura-lotus-makie-ring-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 120454,
+        "sha256": "a87e34db3bdbdcaf428e3bd326aae7018135c95ba1f202fc596e170ea13a3b1a",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file simprich-crystal-bubble-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "simprich-crystal-bubble-pierced-earrings",
+        "path": "images/solo-simprich-crystal-bubble-pierced-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 26892,
+        "sha256": "6b48e72bc1bf49ec7014da07f556d5311842608adef9db1cb3d9663c297c553d",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file simprich-rose-quartz-necklace",
+      "status": "passed",
+      "detail": {
+        "productId": "simprich-rose-quartz-necklace",
+        "path": "images/solo-simprich-rose-quartz-necklace-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 23158,
+        "sha256": "b9fa1c833de94a44f5a06cbf3a6397ad73b4f3c21cd26c646114ab6ec82891c0",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file yukieglass-mint-veil-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "yukieglass-mint-veil-earrings",
+        "path": "images/solo-yukieglass-mint-veil-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 22266,
+        "sha256": "a56e9b910654fc3f4b95398eabd43c11afdd04bc9b870fe5b00b0aca45465715",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file yukieglass-rouge-veil-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "yukieglass-rouge-veil-earrings",
+        "path": "images/solo-yukieglass-rouge-veil-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 45486,
+        "sha256": "3e99cc069be0a0c64474476138d8ce084d61ae698b23b28328296277f1f3e18f",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file nakajima-pear-sakura-pendant",
+      "status": "passed",
+      "detail": {
+        "productId": "nakajima-pear-sakura-pendant",
+        "path": "images/solo-nakajima-pear-sakura-pendant-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 47364,
+        "sha256": "6e6acd3e0b82ae6f37d8d336dac4603d1b2a3c927a1e2e79b378c0b4fc59c915",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "productId": "kato-suke-round-ring",
+        "path": "images/solo-kato-suke-round-ring-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 27238,
+        "sha256": "c0b9c9fec42999e04a960a3dcfd85c82f8e6f4c86f5446ef8d7acae5991754f0",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file sangetsu-irodori-tombodama-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "sangetsu-irodori-tombodama-earrings",
+        "path": "images/solo-sangetsu-irodori-tombodama-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 37806,
+        "sha256": "80916f4f089bb5abcd9ed954fec089f465f8d76a7f5cd1b221c91373c1818f24",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file sangetsu-irodori-tombodama-necklace",
+      "status": "passed",
+      "detail": {
+        "productId": "sangetsu-irodori-tombodama-necklace",
+        "path": "images/solo-sangetsu-irodori-tombodama-necklace-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 38800,
+        "sha256": "2653b9bfb290b6b421c434504d63dcd288f1243b39d9dac8285e8a23876e213b",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file sghr-tie-tie-glass-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "sghr-tie-tie-glass-earrings",
+        "path": "images/solo-sghr-tie-tie-glass-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 31352,
+        "sha256": "ed8ee668b75c53a12fac2e4b718c34ca2e53750ad336839f1bdf50484d19ba23",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file sghr-kolmio-glass-ear-cuff",
+      "status": "passed",
+      "detail": {
+        "productId": "sghr-kolmio-glass-ear-cuff",
+        "path": "images/solo-sghr-kolmio-glass-ear-cuff-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 14850,
+        "sha256": "73ca6b76a73b12e945b0cbd9e26d6a7429ffd5da8a807c2d69475c9780f25ce3",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file kazarino-hanabishi-copper-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "kazarino-hanabishi-copper-earrings",
+        "path": "images/solo-kazarino-hanabishi-copper-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 33602,
+        "sha256": "5886aea3cfb954a9f108c89470d1c0fec8bf4aabb59998b2fe80da43d07cd208",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file kazarino-shippo-pattern-brass-bangle",
+      "status": "passed",
+      "detail": {
+        "productId": "kazarino-shippo-pattern-brass-bangle",
+        "path": "images/solo-kazarino-shippo-pattern-brass-bangle-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 101554,
+        "sha256": "0e563871204ff2a7b59e5a5337f7dae291805517b84b5b4ecebd620fed05695f",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file showen-edo-uchi-silk-bracelet",
+      "status": "passed",
+      "detail": {
+        "productId": "showen-edo-uchi-silk-bracelet",
+        "path": "images/solo-showen-edo-uchi-silk-bracelet-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 79504,
+        "sha256": "a2edb4d93524873110952c05fa47030851b63ff9259fa1a099d77e536e06f392",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file iwaya-urushi-9mm-hook-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "iwaya-urushi-9mm-hook-earrings",
+        "path": "images/solo-iwaya-urushi-9mm-hook-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 14980,
+        "sha256": "2483f6b54aa93e97586815c76e181c994747d6b12fd326150292f91f6176db4f",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file toytoy-ninkari-nikuri-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "toytoy-ninkari-nikuri-earrings",
+        "path": "images/solo-toytoy-ninkari-nikuri-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 52450,
+        "sha256": "83b5e6d7355ee90fa74c887307686644cc316117996901ab120a8cc2356390ba",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file toytoy-sirokani-pe-silver-necklace",
+      "status": "passed",
+      "detail": {
+        "productId": "toytoy-sirokani-pe-silver-necklace",
+        "path": "images/solo-toytoy-sirokani-pe-silver-necklace-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 27020,
+        "sha256": "085cbbdc3b102cec4a84724eb1fa8382c31d80f15be3ff0afe2ec2d1380a71af",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file tamura-kaisai-enamel-ear-jewelry",
+      "status": "passed",
+      "detail": {
+        "productId": "tamura-kaisai-enamel-ear-jewelry",
+        "path": "images/solo-tamura-kaisai-enamel-ear-jewelry-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 45910,
+        "sha256": "cb9059644abdd21cdb422a717e14ebd3fb72959ecb0b0c2122d9174eeff0a677",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file nanao-shuka-nebula-16g-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "nanao-shuka-nebula-16g-earrings",
+        "path": "images/solo-nanao-shuka-nebula-16g-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 41744,
+        "sha256": "965e9258dea1744b432d7c2087aebe4866b599213616d18520063a780f116708",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file simprich-reversible-topaz-ruby-chain-ring",
+      "status": "passed",
+      "detail": {
+        "productId": "simprich-reversible-topaz-ruby-chain-ring",
+        "path": "images/solo-simprich-reversible-topaz-ruby-chain-ring-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 21644,
+        "sha256": "86bb3b27748a3f66ba4e1dbd7dc86872be521f76786d87be05f2d70e5230933c",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file simprich-reversible-silver-piaring-single",
+      "status": "passed",
+      "detail": {
+        "productId": "simprich-reversible-silver-piaring-single",
+        "path": "images/solo-simprich-reversible-silver-piaring-single-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 21404,
+        "sha256": "66bbc08a0492c2acc4ad127beec74c1f0394302e5f78b87a7f0b2d88b84d0aef",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file hario-little-tears-clip-on-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "hario-little-tears-clip-on-earrings",
+        "path": "images/solo-hario-little-tears-clip-on-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 19780,
+        "sha256": "62277f20091cefcdad3e6e18077001deb6d39862b288a58824f0cba8bb7d8372",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file nousaku-dahlia-gerbera-clip-on-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "nousaku-dahlia-gerbera-clip-on-earrings",
+        "path": "images/solo-nousaku-dahlia-gerbera-clip-on-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 68940,
+        "sha256": "d2eb7e88f34b4ee6c84f2581262abb2e65bd5569ca5d7184e89d69293320efc0",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file nousaku-aya-tin-pendant",
+      "status": "passed",
+      "detail": {
+        "productId": "nousaku-aya-tin-pendant",
+        "path": "images/solo-nousaku-aya-tin-pendant-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 34608,
+        "sha256": "be6b66869d832ee3fff5304ea7348b366f7d22ae208db8d50717f11fd46eb624",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file coyorimi-tamamusubi-clip-on-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "coyorimi-tamamusubi-clip-on-earrings",
+        "path": "images/solo-coyorimi-tamamusubi-clip-on-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 31828,
+        "sha256": "5505bf4b67797d9afb3f26465e140ab6457dac52c53843a0d93760b5c46baedf",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file somemasa-peacock-clip-on-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "somemasa-peacock-clip-on-earrings",
+        "path": "images/solo-somemasa-peacock-clip-on-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 147366,
+        "sha256": "ccf72d1e58f11f0550f29ae5a56d1bde65b5159bcb4ea8d18a913c894f179dcd",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file egaho-gathered-kurume-kasuri-ear-jewelry",
+      "status": "passed",
+      "detail": {
+        "productId": "egaho-gathered-kurume-kasuri-ear-jewelry",
+        "path": "images/solo-egaho-gathered-kurume-kasuri-ear-jewelry-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 62728,
+        "sha256": "1951d05ab7724f61521eb21affa49ce5191c626c53a7232666aa42c16cfe0d57",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file sirisiri-page-blue-enamel-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "sirisiri-page-blue-enamel-pierced-earrings",
+        "path": "images/solo-sirisiri-page-blue-enamel-pierced-earrings-r2-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 26336,
+        "sha256": "a736495306034fedff86e9e6696b41bf172380c90900933cc9afbce866995b07",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file sirisiri-silver-thread-hoop-mini",
+      "status": "passed",
+      "detail": {
+        "productId": "sirisiri-silver-thread-hoop-mini",
+        "path": "images/solo-sirisiri-silver-thread-hoop-mini-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 74676,
+        "sha256": "2671e288cff56cbc6932ed6939c65fbc0da98bd940536bf639c74914f40905a9",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file mie-akoya-oh002-stud-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "mie-akoya-oh002-stud-earrings",
+        "path": "images/solo-mie-akoya-oh002-stud-earrings-v14.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 10842,
+        "sha256": "00de05d3422efec219aa42e7d6aad107a95f12092dbf64f4622cde582d3e277b",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file applause-awa-indigo-pearl-clip-on-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "applause-awa-indigo-pearl-clip-on-earrings",
+        "path": "images/solo-applause-awa-indigo-pearl-clip-on-earrings-v16.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 24022,
+        "sha256": "8292da43407e2f64bcbbfeed3f9175b956aca1f24a40026fe29d2fa472d4c62a",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file earth-hiroshima-origami-crane-chain-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "earth-hiroshima-origami-crane-chain-earrings",
+        "path": "images/solo-earth-hiroshima-origami-crane-chain-earrings-v16.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 17114,
+        "sha256": "66f17b6e8201125cd5a916b48b09df2b80662a570cd0671986eb7b82dc3810ba",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file menoya-izumo-magatama-n15-necklace",
+      "status": "passed",
+      "detail": {
+        "productId": "menoya-izumo-magatama-n15-necklace",
+        "path": "images/solo-menoya-izumo-magatama-n15-necklace-v16.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 38342,
+        "sha256": "e0676f40cc80ff51d1fb03fc8f21e4283327ea7157ff097163167f01a28da21a",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file mitsusuke-higo-zogan-shizuku-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "mitsusuke-higo-zogan-shizuku-pierced-earrings",
+        "path": "images/solo-mitsusuke-higo-zogan-shizuku-pierced-earrings-v16.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 39272,
+        "sha256": "305eca1dfad06dd3847ab0e2811170bdf2f2208cfece5a52ddc47cfaa746ca9c",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file nanayosha-punu-gold-vanilla-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "nanayosha-punu-gold-vanilla-pierced-earrings",
+        "path": "images/solo-nanayosha-punu-gold-vanilla-pierced-earrings-v16.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 20662,
+        "sha256": "211f88ee3fcd12ae5083a68feb3f87950c38293ab798eb5c78a8633ccbaa0487",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file shimadzu-satsuma-kiriko-hikari-l-pendant",
+      "status": "passed",
+      "detail": {
+        "productId": "shimadzu-satsuma-kiriko-hikari-l-pendant",
+        "path": "images/solo-shimadzu-satsuma-kiriko-hikari-l-pendant-v16.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 91488,
+        "sha256": "f5920315a9e06cf4281900fada86dae2d4005896f084847fe50ccbda156a0eb2",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file sur-basic1-clear-pearl-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "sur-basic1-clear-pearl-pierced-earrings",
+        "path": "images/solo-sur-basic1-clear-pearl-pierced-earrings-v16.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 11344,
+        "sha256": "b395c39399fb9e0f99c6867508c8760b8ccc5c2349fb1a293c944c75cfb0d3f7",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file tete-ryukyu-glass-hanagasa-heart-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "tete-ryukyu-glass-hanagasa-heart-pierced-earrings",
+        "path": "images/solo-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 62546,
+        "sha256": "a006c2624e241b72ef2ce49e18f77d7c09c0a4176641e6187d6292f5d3dafffe",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file yadome-akita-rice-silver-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "yadome-akita-rice-silver-pierced-earrings",
+        "path": "images/solo-yadome-akita-rice-silver-pierced-earrings-v16.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 97500,
+        "sha256": "1f4a7cdf777826cb8dfa10c3a164203d766e02a68949ea9c8f2452e72ebebfe7",
+        "aiXmp": true
+      }
+    },
+    {
+      "name": "AI detail file yoboty-inshu-washi-indigo-long-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "productId": "yoboty-inshu-washi-indigo-long-nonhole-earrings",
+        "path": "images/solo-yoboty-inshu-washi-indigo-long-nonhole-earrings-v16.webp",
+        "format": "webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 25202,
+        "sha256": "84eb9b0e0afcf947034a900fb8af791a121bb257c705627e76d593cd8a25065c",
+        "aiXmp": true
+      }
+    }
+  ],
+  "failures": [],
+  "files": [
+    {
+      "productId": "hamamatsuya-catch-pierced",
+      "path": "images/solo-hamamatsuya-catch-pierced-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 43328,
+      "sha256": "4b16cb205d6a10a25ad60e6bb1697c2c93393269469b64de14598b6cc7f17ae9",
+      "aiXmp": true
+    },
+    {
+      "productId": "hamamatsuya-clip",
+      "path": "images/solo-hamamatsuya-clip-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 48426,
+      "sha256": "d288c50409afd679955d98269f7b9eba0f68da60c4212f68e7ddaeb0ee7825a5",
+      "aiXmp": true
+    },
+    {
+      "productId": "hamamatsuya-pendant",
+      "path": "images/solo-hamamatsuya-pendant-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 141564,
+      "sha256": "15430f9240fb340409fa741724cb00a859fe223c950bee791178b6f35101e706",
+      "aiXmp": true
+    },
+    {
+      "productId": "maruyama-clip-c",
+      "path": "images/solo-maruyama-clip-c-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 56158,
+      "sha256": "0daaea2edcb5bed0bda85fc506f22fcc364ea0a825d413ad43d88bcb8eda5a85",
+      "aiXmp": true
+    },
+    {
+      "productId": "maruyama-clip-d",
+      "path": "images/solo-maruyama-clip-d-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 45224,
+      "sha256": "d2c4a46e377c0d4893df16945e21647e887b19260c449e412c8d21c4a5869b1e",
+      "aiXmp": true
+    },
+    {
+      "productId": "maruyama-pierced-c",
+      "path": "images/solo-maruyama-pierced-c-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 52282,
+      "sha256": "da162e8443be8c6ac68b7343044f82216b9f9eff9f327569646633d00457f881",
+      "aiXmp": true
+    },
+    {
+      "productId": "maruyama-pierced-d",
+      "path": "images/solo-maruyama-pierced-d-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 49910,
+      "sha256": "48b07a3d670d333abebb0071f66742d72ddb85e2e914eeedfdebd815bf5ce0d7",
+      "aiXmp": true
+    },
+    {
+      "productId": "rinzen-seika-amber-pierced-earrings",
+      "path": "images/solo-rinzen-seika-amber-pierced-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 41940,
+      "sha256": "52c2b4778297e9e2143f2302a139429d92539d7c03d7a1bd2e98ede22ced584e",
+      "aiXmp": true
+    },
+    {
+      "productId": "six-kiln-half-moon-earrings",
+      "path": "images/solo-six-kiln-half-moon-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 29230,
+      "sha256": "6b9b40d5ca73121730684e09409c8e9b0c84c4141955beed8d65c3cfa2c8fa40",
+      "aiXmp": true
+    },
+    {
+      "productId": "rinzen-leaf-glass-pendant",
+      "path": "images/solo-rinzen-leaf-glass-pendant-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 37316,
+      "sha256": "18b8ba8ed254c9a2fc87a7df6ec8de90575df47f66af29e1a792c20cdc0d910e",
+      "aiXmp": true
+    },
+    {
+      "productId": "six-kiln-blue-bouquet-pierced-earrings",
+      "path": "images/solo-six-kiln-blue-bouquet-pierced-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 45610,
+      "sha256": "16b3624fec4182561c0abdc9cc4ee002ff85aa10b16a4c5056d9fcf91fd48710",
+      "aiXmp": true
+    },
+    {
+      "productId": "saskia-diez-drake-porcelain-cuff",
+      "path": "images/solo-saskia-diez-drake-porcelain-cuff-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 34706,
+      "sha256": "b84d3f6f455084e8b19fac4238564587b6b40f54b23982210a86189d6bb48ffb",
+      "aiXmp": true
+    },
+    {
+      "productId": "checos-japanese-apricot-pierced-earrings",
+      "path": "images/solo-checos-japanese-apricot-pierced-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 89376,
+      "sha256": "caad07b89c332bde641e778be6eeaec537bdb99315112d9fcaf2fa5fc123eb24",
+      "aiXmp": true
+    },
+    {
+      "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "path": "images/solo-morphosphere-ultramarine-pansy-pierced-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 193234,
+      "sha256": "efdd5016fc48d88681de5ff73d70d5c807df5f2200ea1545051e8d8562b84341",
+      "aiXmp": true
+    },
+    {
+      "productId": "kato-suke-drop-pierced-earrings",
+      "path": "images/solo-kato-suke-drop-pierced-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 46450,
+      "sha256": "c9d70ae49d405c8e2a281183bb9344aa32f4107b08ce84820346467a9f683b02",
+      "aiXmp": true
+    },
+    {
+      "productId": "arcos-cosmic-spiral-pendant",
+      "path": "images/solo-arcos-cosmic-spiral-pendant-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 85792,
+      "sha256": "de76da507983dd83cdb724a4ee3927e6b4865be367d04483f3cd81100474d2e5",
+      "aiXmp": true
+    },
+    {
+      "productId": "arcos-cosmic-glass-bracelet",
+      "path": "images/solo-arcos-cosmic-glass-bracelet-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 48198,
+      "sha256": "3876aaa42209c9c61abdb4ef73fbaf3b6759c94047206c6e0bfcd26793747d6d",
+      "aiXmp": true
+    },
+    {
+      "productId": "senshu-pearl-stud-earrings",
+      "path": "images/solo-senshu-pearl-stud-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 9750,
+      "sha256": "8bfd20d3055fadb017fe0ec5e3b441bc50e7ef476432dc19d51e0eeda6709cf6",
+      "aiXmp": true
+    },
+    {
+      "productId": "senshu-pearl-swing-earrings",
+      "path": "images/solo-senshu-pearl-swing-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 12756,
+      "sha256": "cc3f405f4ea12cfd9a9f38b582dbfaf0db49049d4472b3a43bcad701c59ed753",
+      "aiXmp": true
+    },
+    {
+      "productId": "sugimura-hosoge-raden-pendant",
+      "path": "images/solo-sugimura-hosoge-raden-pendant-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 45984,
+      "sha256": "98b502899b919e43d6724a85648f3429d76ba8a4aba4feba7005131b0c47d3ea",
+      "aiXmp": true
+    },
+    {
+      "productId": "sugimura-lotus-makie-ring",
+      "path": "images/solo-sugimura-lotus-makie-ring-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 120454,
+      "sha256": "a87e34db3bdbdcaf428e3bd326aae7018135c95ba1f202fc596e170ea13a3b1a",
+      "aiXmp": true
+    },
+    {
+      "productId": "simprich-crystal-bubble-pierced-earrings",
+      "path": "images/solo-simprich-crystal-bubble-pierced-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 26892,
+      "sha256": "6b48e72bc1bf49ec7014da07f556d5311842608adef9db1cb3d9663c297c553d",
+      "aiXmp": true
+    },
+    {
+      "productId": "simprich-rose-quartz-necklace",
+      "path": "images/solo-simprich-rose-quartz-necklace-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 23158,
+      "sha256": "b9fa1c833de94a44f5a06cbf3a6397ad73b4f3c21cd26c646114ab6ec82891c0",
+      "aiXmp": true
+    },
+    {
+      "productId": "yukieglass-mint-veil-earrings",
+      "path": "images/solo-yukieglass-mint-veil-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 22266,
+      "sha256": "a56e9b910654fc3f4b95398eabd43c11afdd04bc9b870fe5b00b0aca45465715",
+      "aiXmp": true
+    },
+    {
+      "productId": "yukieglass-rouge-veil-earrings",
+      "path": "images/solo-yukieglass-rouge-veil-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 45486,
+      "sha256": "3e99cc069be0a0c64474476138d8ce084d61ae698b23b28328296277f1f3e18f",
+      "aiXmp": true
+    },
+    {
+      "productId": "nakajima-pear-sakura-pendant",
+      "path": "images/solo-nakajima-pear-sakura-pendant-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 47364,
+      "sha256": "6e6acd3e0b82ae6f37d8d336dac4603d1b2a3c927a1e2e79b378c0b4fc59c915",
+      "aiXmp": true
+    },
+    {
+      "productId": "kato-suke-round-ring",
+      "path": "images/solo-kato-suke-round-ring-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 27238,
+      "sha256": "c0b9c9fec42999e04a960a3dcfd85c82f8e6f4c86f5446ef8d7acae5991754f0",
+      "aiXmp": true
+    },
+    {
+      "productId": "sangetsu-irodori-tombodama-earrings",
+      "path": "images/solo-sangetsu-irodori-tombodama-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 37806,
+      "sha256": "80916f4f089bb5abcd9ed954fec089f465f8d76a7f5cd1b221c91373c1818f24",
+      "aiXmp": true
+    },
+    {
+      "productId": "sangetsu-irodori-tombodama-necklace",
+      "path": "images/solo-sangetsu-irodori-tombodama-necklace-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 38800,
+      "sha256": "2653b9bfb290b6b421c434504d63dcd288f1243b39d9dac8285e8a23876e213b",
+      "aiXmp": true
+    },
+    {
+      "productId": "sghr-tie-tie-glass-earrings",
+      "path": "images/solo-sghr-tie-tie-glass-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 31352,
+      "sha256": "ed8ee668b75c53a12fac2e4b718c34ca2e53750ad336839f1bdf50484d19ba23",
+      "aiXmp": true
+    },
+    {
+      "productId": "sghr-kolmio-glass-ear-cuff",
+      "path": "images/solo-sghr-kolmio-glass-ear-cuff-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 14850,
+      "sha256": "73ca6b76a73b12e945b0cbd9e26d6a7429ffd5da8a807c2d69475c9780f25ce3",
+      "aiXmp": true
+    },
+    {
+      "productId": "kazarino-hanabishi-copper-earrings",
+      "path": "images/solo-kazarino-hanabishi-copper-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 33602,
+      "sha256": "5886aea3cfb954a9f108c89470d1c0fec8bf4aabb59998b2fe80da43d07cd208",
+      "aiXmp": true
+    },
+    {
+      "productId": "kazarino-shippo-pattern-brass-bangle",
+      "path": "images/solo-kazarino-shippo-pattern-brass-bangle-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 101554,
+      "sha256": "0e563871204ff2a7b59e5a5337f7dae291805517b84b5b4ecebd620fed05695f",
+      "aiXmp": true
+    },
+    {
+      "productId": "showen-edo-uchi-silk-bracelet",
+      "path": "images/solo-showen-edo-uchi-silk-bracelet-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 79504,
+      "sha256": "a2edb4d93524873110952c05fa47030851b63ff9259fa1a099d77e536e06f392",
+      "aiXmp": true
+    },
+    {
+      "productId": "iwaya-urushi-9mm-hook-earrings",
+      "path": "images/solo-iwaya-urushi-9mm-hook-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 14980,
+      "sha256": "2483f6b54aa93e97586815c76e181c994747d6b12fd326150292f91f6176db4f",
+      "aiXmp": true
+    },
+    {
+      "productId": "toytoy-ninkari-nikuri-earrings",
+      "path": "images/solo-toytoy-ninkari-nikuri-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 52450,
+      "sha256": "83b5e6d7355ee90fa74c887307686644cc316117996901ab120a8cc2356390ba",
+      "aiXmp": true
+    },
+    {
+      "productId": "toytoy-sirokani-pe-silver-necklace",
+      "path": "images/solo-toytoy-sirokani-pe-silver-necklace-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 27020,
+      "sha256": "085cbbdc3b102cec4a84724eb1fa8382c31d80f15be3ff0afe2ec2d1380a71af",
+      "aiXmp": true
+    },
+    {
+      "productId": "tamura-kaisai-enamel-ear-jewelry",
+      "path": "images/solo-tamura-kaisai-enamel-ear-jewelry-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 45910,
+      "sha256": "cb9059644abdd21cdb422a717e14ebd3fb72959ecb0b0c2122d9174eeff0a677",
+      "aiXmp": true
+    },
+    {
+      "productId": "nanao-shuka-nebula-16g-earrings",
+      "path": "images/solo-nanao-shuka-nebula-16g-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 41744,
+      "sha256": "965e9258dea1744b432d7c2087aebe4866b599213616d18520063a780f116708",
+      "aiXmp": true
+    },
+    {
+      "productId": "simprich-reversible-topaz-ruby-chain-ring",
+      "path": "images/solo-simprich-reversible-topaz-ruby-chain-ring-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 21644,
+      "sha256": "86bb3b27748a3f66ba4e1dbd7dc86872be521f76786d87be05f2d70e5230933c",
+      "aiXmp": true
+    },
+    {
+      "productId": "simprich-reversible-silver-piaring-single",
+      "path": "images/solo-simprich-reversible-silver-piaring-single-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 21404,
+      "sha256": "66bbc08a0492c2acc4ad127beec74c1f0394302e5f78b87a7f0b2d88b84d0aef",
+      "aiXmp": true
+    },
+    {
+      "productId": "hario-little-tears-clip-on-earrings",
+      "path": "images/solo-hario-little-tears-clip-on-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 19780,
+      "sha256": "62277f20091cefcdad3e6e18077001deb6d39862b288a58824f0cba8bb7d8372",
+      "aiXmp": true
+    },
+    {
+      "productId": "nousaku-dahlia-gerbera-clip-on-earrings",
+      "path": "images/solo-nousaku-dahlia-gerbera-clip-on-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 68940,
+      "sha256": "d2eb7e88f34b4ee6c84f2581262abb2e65bd5569ca5d7184e89d69293320efc0",
+      "aiXmp": true
+    },
+    {
+      "productId": "nousaku-aya-tin-pendant",
+      "path": "images/solo-nousaku-aya-tin-pendant-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 34608,
+      "sha256": "be6b66869d832ee3fff5304ea7348b366f7d22ae208db8d50717f11fd46eb624",
+      "aiXmp": true
+    },
+    {
+      "productId": "coyorimi-tamamusubi-clip-on-earrings",
+      "path": "images/solo-coyorimi-tamamusubi-clip-on-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 31828,
+      "sha256": "5505bf4b67797d9afb3f26465e140ab6457dac52c53843a0d93760b5c46baedf",
+      "aiXmp": true
+    },
+    {
+      "productId": "somemasa-peacock-clip-on-earrings",
+      "path": "images/solo-somemasa-peacock-clip-on-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 147366,
+      "sha256": "ccf72d1e58f11f0550f29ae5a56d1bde65b5159bcb4ea8d18a913c894f179dcd",
+      "aiXmp": true
+    },
+    {
+      "productId": "egaho-gathered-kurume-kasuri-ear-jewelry",
+      "path": "images/solo-egaho-gathered-kurume-kasuri-ear-jewelry-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 62728,
+      "sha256": "1951d05ab7724f61521eb21affa49ce5191c626c53a7232666aa42c16cfe0d57",
+      "aiXmp": true
+    },
+    {
+      "productId": "sirisiri-page-blue-enamel-pierced-earrings",
+      "path": "images/solo-sirisiri-page-blue-enamel-pierced-earrings-r2-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 26336,
+      "sha256": "a736495306034fedff86e9e6696b41bf172380c90900933cc9afbce866995b07",
+      "aiXmp": true
+    },
+    {
+      "productId": "sirisiri-silver-thread-hoop-mini",
+      "path": "images/solo-sirisiri-silver-thread-hoop-mini-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 74676,
+      "sha256": "2671e288cff56cbc6932ed6939c65fbc0da98bd940536bf639c74914f40905a9",
+      "aiXmp": true
+    },
+    {
+      "productId": "mie-akoya-oh002-stud-earrings",
+      "path": "images/solo-mie-akoya-oh002-stud-earrings-v14.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 10842,
+      "sha256": "00de05d3422efec219aa42e7d6aad107a95f12092dbf64f4622cde582d3e277b",
+      "aiXmp": true
+    },
+    {
+      "productId": "applause-awa-indigo-pearl-clip-on-earrings",
+      "path": "images/solo-applause-awa-indigo-pearl-clip-on-earrings-v16.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 24022,
+      "sha256": "8292da43407e2f64bcbbfeed3f9175b956aca1f24a40026fe29d2fa472d4c62a",
+      "aiXmp": true
+    },
+    {
+      "productId": "earth-hiroshima-origami-crane-chain-earrings",
+      "path": "images/solo-earth-hiroshima-origami-crane-chain-earrings-v16.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 17114,
+      "sha256": "66f17b6e8201125cd5a916b48b09df2b80662a570cd0671986eb7b82dc3810ba",
+      "aiXmp": true
+    },
+    {
+      "productId": "menoya-izumo-magatama-n15-necklace",
+      "path": "images/solo-menoya-izumo-magatama-n15-necklace-v16.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 38342,
+      "sha256": "e0676f40cc80ff51d1fb03fc8f21e4283327ea7157ff097163167f01a28da21a",
+      "aiXmp": true
+    },
+    {
+      "productId": "mitsusuke-higo-zogan-shizuku-pierced-earrings",
+      "path": "images/solo-mitsusuke-higo-zogan-shizuku-pierced-earrings-v16.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 39272,
+      "sha256": "305eca1dfad06dd3847ab0e2811170bdf2f2208cfece5a52ddc47cfaa746ca9c",
+      "aiXmp": true
+    },
+    {
+      "productId": "nanayosha-punu-gold-vanilla-pierced-earrings",
+      "path": "images/solo-nanayosha-punu-gold-vanilla-pierced-earrings-v16.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 20662,
+      "sha256": "211f88ee3fcd12ae5083a68feb3f87950c38293ab798eb5c78a8633ccbaa0487",
+      "aiXmp": true
+    },
+    {
+      "productId": "shimadzu-satsuma-kiriko-hikari-l-pendant",
+      "path": "images/solo-shimadzu-satsuma-kiriko-hikari-l-pendant-v16.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 91488,
+      "sha256": "f5920315a9e06cf4281900fada86dae2d4005896f084847fe50ccbda156a0eb2",
+      "aiXmp": true
+    },
+    {
+      "productId": "sur-basic1-clear-pearl-pierced-earrings",
+      "path": "images/solo-sur-basic1-clear-pearl-pierced-earrings-v16.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 11344,
+      "sha256": "b395c39399fb9e0f99c6867508c8760b8ccc5c2349fb1a293c944c75cfb0d3f7",
+      "aiXmp": true
+    },
+    {
+      "productId": "tete-ryukyu-glass-hanagasa-heart-pierced-earrings",
+      "path": "images/solo-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 62546,
+      "sha256": "a006c2624e241b72ef2ce49e18f77d7c09c0a4176641e6187d6292f5d3dafffe",
+      "aiXmp": true
+    },
+    {
+      "productId": "yadome-akita-rice-silver-pierced-earrings",
+      "path": "images/solo-yadome-akita-rice-silver-pierced-earrings-v16.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 97500,
+      "sha256": "1f4a7cdf777826cb8dfa10c3a164203d766e02a68949ea9c8f2452e72ebebfe7",
+      "aiXmp": true
+    },
+    {
+      "productId": "yoboty-inshu-washi-indigo-long-nonhole-earrings",
+      "path": "images/solo-yoboty-inshu-washi-indigo-long-nonhole-earrings-v16.webp",
+      "format": "webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 25202,
+      "sha256": "84eb9b0e0afcf947034a900fb8af791a121bb257c705627e76d593cd8a25065c",
+      "aiXmp": true
+    }
+  ],
+  "completedAt": "2026-11-17T12:11:05.454Z",
+  "summary": {
+    "checks": 61,
+    "passed": 61,
+    "failed": 0,
+    "products": 60,
+    "uniqueFiles": 60,
+    "bytes": 2937308
+  }
+}

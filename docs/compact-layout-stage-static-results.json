@@ -1,0 +1,32 @@
+{
+  "version": "0.17.3",
+  "checkedAt": "2026-11-17T12:16:20.337Z",
+  "status": "passed",
+  "command": "pnpm verify",
+  "node": "24.22.3",
+  "pnpm": "11.25.0",
+  "typeFiles": 146,
+  "errors": 0,
+  "warnings": 0,
+  "hints": 0,
+  "unitTests": {
+    "checks": 149,
+    "passed": 149,
+    "failed": 0
+  },
+  "build": {
+    "files": 471,
+    "html": 344,
+    "webp": 118
+  },
+  "canonicalPages": 328,
+  "hrefSrcReferences": 20026,
+  "anchors": 3439,
+  "ordinaryRetailerLinks": 1216,
+  "sponsoredLinks": 0,
+  "inlineScriptCspHashes": 1117,
+  "inertJsonBlocks": 336,
+  "retiredImagesExcluded": 10,
+  "privateLogSha256": "3a2b6ea473db5ab2d5d7e9ee74b4812505f6b6c7f5eef223d525c8f546033b2a",
+  "initialTypeGate": "Pointer event on HTML/SVG union required a property guard; initial type1error log preserved before full verify rerun."
+}

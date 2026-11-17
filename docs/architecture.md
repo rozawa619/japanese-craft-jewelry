@@ -1,10 +1,13 @@
 # 構成とデータの流れ
 
-対象は公開版0.17.2・産地写真の共通サイズ021、文書の入口は保守改訂017を継承。確認日2026-11-17。
+対象は作業版0.17.3・地図枠とトップ写真の調整022、文書の入口は保守改訂017を継承。確認日2026-11-17。
 
-0.17.2（仕様021）公開済み。app `19f066ee20f4aa8eb1b441a4178dc92ffcb25ae7`、[Actions44072612768](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44072612768) completed/success。実URLの写真37・mobile92・Sources328・補足24が成功。Top10とDISCOVER3の写真を全3ページで統一。確定値はdeployment-results/verificationを参照。
+<!-- TODO_PUBLIC_V20 -->
+0.17.3（仕様022）は公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
 
-PCのホーム先頭は左の人物AI画像・右の日本地図を並べるRegionHeroです。スマホでは写真を全幅で大きく表示し、その下に商品小情報と地図を並べて、顔や耳を切らずに見やすくします。Heroの県はclick/tap/Enter/Spaceで明示選択すると、女性画像と商品/国内参考価格を切り替え、産地CTAから商品一覧へ進みます。hover/focusだけでは切り替えません。有効な公開地域idだけを`?region=`へ反映し、他query/hash・戻る・言語切替で選択を保ちます。Heroの本州〜北海道は余白を詰めて拡大し、沖縄は「拡大」の注記付き別枠から同じ操作で選べます。Heroとは別に、TOP10後の大きい一覧地図は県のnative直接リンクです。TOP10とDISCOVER3県は共通styleの自然比率画像とし、PC最大300×200px・スマホ最大222×148pxのcontainで上下の帯を抑え、地域名/商品/価格/順位を保ちます。顔や耳を切らず、初期Heroは既存selection.heroProductIdを使います。これらは機能・表示の変更であり、訪問数や検索順位の改善を実測したという意味ではありません。
+旧版の公開記録：0.17.2（仕様021）公開済み。app `19f066ee20f4aa8eb1b441a4178dc92ffcb25ae7`、[Actions44072612768](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44072612768) completed/success。実URLの写真37・mobile92・Sources328・補足24が成功。Top10とDISCOVER3の写真を全3ページで統一。確定値はdeployment-results/verificationを参照。 0.17.2の全sourceは1118ファイルを照合済み。これは022の実測/公開/納品結果ではありません。
+
+ホーム先頭のRegionHeroはPCで左に人物AI画像、右に日本地図を並べます。022では写真をheight:autoの元比率・containで表示し、画像/figure/AIcaption前後に人工的な上下letterboxを残さない設計です。顔・耳・ジュエリーとAIcaptionを保ち、スマホも自然高で表示します。Heroはclick/tap/Enter/Spaceの明示県選択で女性画像・商品/国内参考価格・CTAを切り替え、公開idだけのregion queryと他query/hash・戻る・言語切替を維持します。Heroの沖縄拡大枠はPC200px/スマホ80pxを継承。別の一覧地図は外枠をコンパクトにし、本州〜北海道の主図と沖縄の独立拡大枠（設計PC144px/スマホ80px）から、通常hrefのclick/tap/Enterで産地へ直接進みます。preview/select・zoom/内部scroll・noJSも保持します。TOP10/DISCOVER3県の共通写真はPC最大300×200px・スマホ最大222×148pxのままです。実装寸法と最終検証は022 guide/validationを参照し、旧021の37/92や旧020の217/77を今回の成功に加算しません。
 
 このサイトは、日本各地の工芸ジュエリーを日英で紹介するAstroの静的サイトです。商品や価格をファイルで編集し、検証してHTMLを生成します。公開先にNodeのアプリサーバー、DB、管理画面、注文・決済APIはありません。Nodeは開発・検証・静的生成のために使います。
 
@@ -126,7 +129,7 @@ specs/               仕様・設計・タスク・検証の対応
 
 ## 全国地図と現在の入口
 
-ホーム先頭のHeroとは別に、産地一覧はTOP10→大きい日本地図→DISCOVER3県の順です。観光TOP10順位は維持し、47県のCC0形状から実商品/産地本文のある掲載24県だけを選択可能にします。県のクリック・タップ・Enterは、その産地の商品一覧へ直接進む通常リンクです。hover/focusと地域selectは代表単体AI画像・商品名・国内参考価格のプレビューに使います。地図は大きくし、100/150/200/300%の拡大・縮小・全体表示と、拡大後の地図内スクロールを用意。地方別一覧・地図ジャンプ・JSなしの直接リンクも保ちます。
+ホーム先頭のHeroとは別に、産地一覧はTOP10→コンパクトな日本地図→DISCOVER3県の順です。47県のCC0原形を主図46＋沖縄別枠1へ分け、実商品/産地本文がある掲載24県だけを通常リンクにします。沖縄は島path・枠・labelを押せる拡大表示とし、県のclick/tap/Enterで産地の商品一覧へ直接進みます。pointerenter/focus/selectの代表単体画像/商品/国内参考価格preview、100/150/200/300%のzoom・内部scroll・全体表示、地方別の初期closed details・地図ジャンプ・JSなしのhrefを継承します。外枠/主図/沖縄枠の設計値と実測は最新022の説明で区別します。
 
 日本地図はsrc/data/japan-map-geometry.json（CC0出典/47県形状）、src/config/japan-map.ts（地方とDISCOVER3県）、JapanJewelryMap.astro（native直接リンク・代表preview・ローカルzoom）。店舗の地図はmap-preferences.ts（30日/版/最小値検証）、map-preferences-client.ts（全表示/全停止）、MapPreferences.astro（Privacyの設定UI）へ分離します。外部JS/タイル/API/現在地/Storageは全国SVG地図では使いません。店舗Googleマップは別機能です。[日本地図の直接選択](japan-map-direct-v18.md)・[残タスク](remaining-task-audit-v17.md)・[法務再確認](legal-review-v17.md)・[商用ホスト移行準備](commercial-host-migration-v17.md)を参照してください。今回は新bitmap生成なし。
 
@@ -144,6 +147,10 @@ specs/               仕様・設計・タスク・検証の対応
 
 生成物は`dist`、正確な公開結果はActionsと公開後report、ソース/ZIPの集合とbytesは納品proofで確認します。これらの成功は別々の出来事です。詳細な起動・更新・検証・書出しの操作は、それぞれのrunbookを参照してください。
 
-## 021 共通の産地写真
+## 継承する021共通の産地写真
 
-RegionSelection.astroのgroup共通styleでTop10とDISCOVER3県を統一。画像列clamp(150px,23vw,300px)、自然高/PC最大200px、スマホ幅最大222px/高148px、行padding18/15px。ranked限定へ戻すとDISCOVERだけ巨大化するので、新しいcheck-region-photosで両groupを測ります。021ではstyle外byteと全1453scriptが不変であることを保全検査が確認します。
+RegionSelection.astroのgroup共通styleでTop10とDISCOVER3県を統一。画像列clamp(150px,23vw,300px)、自然高/PC最大200px、スマホ幅最大222px/高148px、行padding18/15px。ranked限定へ戻すとDISCOVERだけ巨大化するので、写真サイズを変更するときはcheck-region-photosで両groupを測ります。前段階021ではstyle外byteと全1453script不変を保全検査で確認しました。022のHero/一覧地図の変更と新しい保持検査は別に記録します。
+
+## 022 コンパクトな一覧地図と自然高Hero
+
+JapanJewelryMapは外枠/段組を抑え、本州〜北海道の主図と沖縄独立拡大枠へ47原形を分離します。掲載24controlsとnative直接遷移・preview/select/zoom/noJSを継承。RegionHero写真は固定高を廃止し自然比率で配置し、全24県の写真/商品/queryの同期を維持します。実装寸法/測定は[022ガイド](compact-layout-v20.md)とvalidationへ。021のRegionSelection共通写真と、Google店舗Mapsの同意機構は変更しません。
