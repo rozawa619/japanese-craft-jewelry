@@ -42,3 +42,13 @@ SORAの日英工芸ジュエリーセレクト。公開50/全56商品、14地域
 最終ローカルverifyは113型ファイル0/0/0、111単体、264HTML/370生成物、通常リンク1016/広告0。新機能315、商品導線497、Maps9、隔離広告6、SEO248canonicalを確認。画像r2後にverify/315を再実行。quality497/Maps9/広告6はr2以外の実装が同じ段階の結果。詳細はverification・privacy-depth-verification-v14・inline-maps-v14・各JSON。公開後の確定値はdeployment-resultsを優先する。
 
 全ソースは隣接japanese-craft-jewelry-delivery/sourceとjapanese-craft-jewelry-source.zip。CI/lock/全ソース/仕様/調査/台帳/検証/公開98画像を含み、.git/.env/秘密/node_modules/dist/artifacts/内部参照写真/退役10画像は除外。PNG原本50枚はgenerated-originals/0.14.0とjapanese-craft-jewelry-ai-originals-0.14.0.zipへ分離。旧0.13の23原本は別版で保持。全件SHA/集合/ZIP hashは納品先package-verification-0.14.0.jsonとoriginals-verification-0.14.0.json。原本/ソースZIPは引継ぎ資料で、公開アプリの配布物ではない。
+
+## 公開後の最終検証
+
+公開補足の初回は一時503でHTML178件までの部分結果。rawはhosted-first-attempt、同URLのfresh200はhosted-503-recheckへ保存。アプリ変更なしで全件を再実行し、最終248/98・24/24を確認した。
+
+アプリf7805ed9489706d08743da4b8091f2a154ff7131、Actions44016172889 completed/success（2026-11-17T04:18:28Z、GitHub API実測）。公開315/315・商品導線497/497・Maps9/9・公開メタ1/1成功。公開補足24/24で248正規URLの200/meta/hreflang/JSON-LD/CSPと98画像の200/全SHA一致を確認。Mapsを選ばない検査で広告/CMP/外部通信0、Mapsは別の任意表示検査で確認した。全結果はprivacy-depth-stage-hosted-*に保存。公開確認後の追加は文書・証跡と納品scriptのみで、アプリ370生成物のbytesは配信検証時と一致する。
+
+## 最終ソース・原本の納品
+
+全ソース754ファイル、公開98画像を含む集合と全件SHA256を照合。完了記録を含め再書出し・ZIP化し、同じ全件検査を行う。ZIP自身のhash/bytesはZIP外のpackage-verification-0.14.0.json。原本50PNG＋manifest/READMEの52エントリーも全件SHA一致、原本ZIP71,967,973bytes、SHA fbb38b7bbaaebc86d2c1950ff1e389109f56341adebde46d35eeb906f331bfe1（originals-verification-0.14.0.json）。新規画像はbuilt-in image_gen、全実promptはimage-generation-solo-v14.json。私的QA画像と補足JSONは隣接delivery/screenshots/0.14.0へ分離し、文中artifacts参照はローカル証跡で公開素材/ソースZIPの実行依存ではない。

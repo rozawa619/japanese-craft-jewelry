@@ -1,6 +1,6 @@
 # 0.14 / 0.15 プライバシー・商品Q&A・単体AI画像の画面検証
 
-2026-11-17にrootのstable通知後のbuildをChromeで実測し、SIRI PAGEの修正版単体画像採用後にも全体を再実行した。最終自動検査は315/315成功、失敗0。初回の18枚、通常viewportの補足2枚、最終SIRI PAGEの補足2枚を目視した。320pxの長尺撮影に固定バー等が重なる点は、通常スクロール時の表示と分けて確認した。
+2026-11-17にrootのstable通知後のbuildをChromeで実測し、SIRI PAGEの修正版単体画像採用後にも全体を再実行した。最終ローカルと公開版はそれぞれ315/315成功、失敗0。ローカルの初回18枚・通常viewport補足2枚・最終SIRI PAGE補足2枚に加え、公開18枚と通常viewport補足2枚も目視した。320pxの長尺撮影に固定バー等が重なる点は、通常スクロール時の表示と分けて確認した。
 
 ## 実行対象と証跡
 
@@ -12,7 +12,7 @@
 - スクリーンショット：同reportの`screenshots`配列にある18枚。同じprefixの別目的の既存画像は件数に含めない。
 - 既存ソースの編集はこの検証文書のみ。実測reportと撮影証跡を生成し、runtime・data・CSP・policy・検査scriptは変更していない。
 
-## 実測結果
+## 最終ローカルの実測結果
 
 | 検査 | 実測 |
 | --- | ---: |
@@ -95,9 +95,35 @@ fresh Chromeの独立contextでCookie・localStorage・sessionStorageを繰り�
 
 最終315checkにもSIRI PAGEの日英×3幅の6checkが含まれ、全6件が成功した。この目視はAIイメージの表示と形の確認であり、実物の仕様や販売数量の証明として扱わない。
 
+## 公開版の検証
+
+rootがapplication commit `f7805ed9489706d08743da4b8091f2a154ff7131`、Actions run `44016172889`の成功をAPI確認した旨を通知した後に、公開サイトへ同じ検査を実施した。runtimeや公開設定の変更は行っていない。
+
+- 対象：`https://rozawa619.github.io/japanese-craft-jewelry/`。
+- 環境変数：`CHECK_BASE_URL=https://rozawa619.github.io`、`CHECK_REPORT_PATH=docs/privacy-depth-stage-hosted-browser-results.json`、`CHECK_SCREENSHOT_PREFIX=privacy-depth-stage-hosted`。
+- 実行：`node scripts/check-privacy-depth.mjs`。2026-11-17T04:19:00.215Z〜04:24:16.118Z、終了コード0。
+- 公開版正本：[`privacy-depth-stage-hosted-browser-results.json`](privacy-depth-stage-hosted-browser-results.json)。ローカル最終reportと初回reportは保持した。
+
+| 公開版check | 実測 |
+| --- | ---: |
+| 成功 / 失敗 | 315 / 0 |
+| 公開商品 / 商品詳細 / 質問回答照合 | 50 / 300 / 900組 |
+| 出典開閉・表示照合 | 300 |
+| Privacy / Footer実遷移 / storage確認 | 6 / 6 / 312 |
+| axe画面 / 違反 | 12 / 0 |
+| 本scriptの撮影 / 追加通常viewport撮影 | 18 / 2 |
+| page error / console error | 0 / 0 |
+| 外部リソース / 広告・CMPリクエスト | 0 / 0 |
+
+公開版でも全300詳細の単体画像decode・登録src・日英alt・寸法・contain・AI caption・公式実物確認リンクが成功した。SIRI PAGEのr2画像も日英3幅の6件で成功した。Q&A900組の全文と出典、Privacyの広告停止状態・外部設定href、各言語Footerの遷移を確認し、地図未操作時のiframeは0だった。検査対象入力hashは実行中不変で、最終ローカル完了時と公開版開始時の入力hash差分も0だった。
+
+reportの`screenshots`配列にある公開18枚をすべて実際に開いて目視した。PCの3列Q&A、図を左に置いた理由欄、スマホの1列Q&A・上置き単体図、日英Privacyの折返しはローカルと同様だった。単体図・AI caption・公式確認リンクに欠けはなく、新たな見た目の不具合は認めなかった。
+
+長尺captureには固定バーとskip linkの写り込みが同様にあるため、公開版の通常320×844px viewportでも英HARIO・日SIMPRICH ringの第3回答を中央へスクロールし、補足2枚を撮影・目視した。第3回答下端は532.78 / 531.95px、固定バー上端は728.56 / 739.31px。両方で全文がバーより上にあり、skip linkも画面外だった。補足証跡は[`privacy-depth-stage-hosted-normal-viewport-review.json`](../artifacts/privacy-depth-stage-hosted-normal-viewport-review.json)と、そのrecordsに記録した2枚。実UIや撮影用CSSは変更していない。
+
 ## 範囲と引継ぎ
 
-公開版に対する同一検査は、このローカルreportとは別の`CHECK_REPORT_PATH` / `CHECK_SCREENSHOT_PREFIX`で実施する。最終ビルド、広告起動防止の否定fixture、地図を選択した後の動作、公式外部リンクの到達性、SEO全体、公開とソースZIPはroot側の014/015記録を参照する。
+公開版とローカル版の同一検査は、別の`CHECK_REPORT_PATH` / `CHECK_SCREENSHOT_PREFIX`で保存済み。最終ビルド、広告起動防止の否定fixture、地図を選択した後の動作、公式外部リンクの到達性、SEO全体、公開とソースZIPはroot側の014/015記録を参照する。
 
 この画面検査は、記載した幅・遷移・未操作状態での観測であり、AdSenseの合格、法令への適合、将来の広告/CMP接続後の動作を保証するものではない。
 

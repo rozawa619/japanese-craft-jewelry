@@ -2,7 +2,7 @@
 
 最新仕様は[014](../specs/014-advertising-privacy-product-depth/spec.md)と[015](../specs/015-product-details-inline-maps/spec.md)。公開50商品の各3問×日英、単体AI図50ファイル、既存人物画像48ファイル、店舗内の選択式地図を扱う。以下の014/015手順を優先し、後半の旧版にある件数や「地図埋込みなし」「新画像なし」は各版当時の履歴として読む。現行の公開状態・検証数は[verification](verification.md)と[deployment-results](deployment-results.json)で確認する。
 
-## 0.14 / 0.15 の更新箇所
+## 仕様014 / 015の更新箇所（リリース0.14）
 
 1. **商品ごとの選び方**：`src/data/product-buying-guides.json`へ公開productIdごとの日英3問と、その商品に属するsourceIdsを揃える。価格・URLを回答へ複製せず、`{size}`・`{findings}`・`{fastening}`だけをcatalog/日本語訳から展開する。未確認値や全商品共通の回答で埋めない。質問が選ぶ判断に役立つか、本文・比較・公式情報と矛盾しないかを読む。表示は共通`ProductBuyingGuide`から出し、出典リンクで`#product-sources`が開く動作を保つ。
 2. **単体AI図**：`product-detail-images.json`を人物用`editorial-images.json`と分離する。公開50商品を全件登録し、`docs/assets.json`と`docs/image-generation-solo-v14.json`の採用path・実寸・SHA・prompt/参照・日英altを一致させる。原本PNGは保持し、公開WebPは元寸法・quality84・AI生成IPTC XMPを保つ。短い「AIイメージ / AI image」、元比率と公式実物確認リンクを維持する。画像を実物の形・素材・裏金具・販売個数の証拠にしない。SIRI PAGEの採用r2は薄い角丸板で、旧筒状候補へ戻さない。

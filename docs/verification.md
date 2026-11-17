@@ -23,3 +23,13 @@
 長いsection撮影でsticky CTA/Skipリンクが写るスクロール合成の見え方を別確認した。通常320×844の2商品で回答とCTAの非重複、Skipリンク非focus時画面外を確認。撮影用CSSでUIを変更していない。詳細privacy-depth-verification-v14。
 
 Maps選択は認定CMPではない。広告アカウント/CMP/AdSense審査/所有確認/商用host/法的適合/検索順位/流入/将来在庫は未検証。AI図は実物写真や形状一致/写真許諾の証拠ではない。申請/広告配信/契約/DNS変更なし。公開後実測と納品完了はdeployment-resultsと下記追記を確認する。
+
+## 公開後の最終検証
+
+公開補足の初回は1URLで一時503となり23/24、HTML178件までの部分結果だった。rawはhosted-first-attempt、fresh Chromeで同URLの200/正canonical/現本文を確認した記録はhosted-503-recheckへ保存。サイトを変更せず全補足を再実行し、下記の全248/98・24/24を確認した。初回の部分結果を全件成功へ数えていない。
+
+アプリf7805ed9489706d08743da4b8091f2a154ff7131、Actions44016172889 completed/success（2026-11-17T04:18:28Z、GitHub API実測）。公開315/315・商品導線497/497・Maps9/9・公開メタ1/1成功。公開補足24/24で248正規URLの200/meta/hreflang/JSON-LD/CSPと98画像の200/全SHA一致を確認。Mapsを選ばない検査で広告/CMP/外部通信0、Mapsは別の任意表示検査で確認した。全結果はprivacy-depth-stage-hosted-*に保存。公開確認後の追加は文書・証跡と納品scriptのみで、アプリ370生成物のbytesは配信検証時と一致する。
+
+## 最終ソース・原本の納品
+
+全ソース754ファイル、公開98画像を含む集合と全件SHA256を照合。完了記録を含め再書出し・ZIP化し、同じ全件検査を行う。ZIP自身のhash/bytesはZIP外のpackage-verification-0.14.0.json。原本50PNG＋manifest/READMEの52エントリーも全件SHA一致、原本ZIP71,967,973bytes、SHA fbb38b7bbaaebc86d2c1950ff1e389109f56341adebde46d35eeb906f331bfe1（originals-verification-0.14.0.json）。新規画像はbuilt-in image_gen、全実promptはimage-generation-solo-v14.json。私的QA画像と補足JSONは隣接delivery/screenshots/0.14.0へ分離し、文中artifacts参照はローカル証跡で公開素材/ソースZIPの実行依存ではない。
