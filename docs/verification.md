@@ -4,7 +4,7 @@
 
 | ローカル | 実測 |
 | --- | --- |
-| 最終verify | 123型ファイル0error/0warning/0hint、124単体成功、369生成物はbrowser検証済み出力と全SHA一致 |
+| 最終verify | 124型ファイル0error/0warning/0hint、124単体成功、369生成物の全SHAを記録 |
 | 生成物 | 264HTML、15275href/src、2298anchor、通常リンク1016/広告0、949実行CSP hash、248JSON、14旧読物redirect、退役10画像除外 |
 | 人物/単体画像 | 49/49と51/51、98ファイル6,669,896bytes、旧25SHA/全50単体metadata/hash保持 |
 | 価格 | 314/314、300詳細/84地域価格context、axe18画面違反0 |
@@ -18,7 +18,7 @@
 | Maps | 9/9、2店舗JAEN/PC320の8表示と不正provider拒否 |
 | dependency | patched Node24.22.3/pnpm11.25.0、既知全severity0/348依存 |
 
-最終再生成369ファイル全SHAがbrowser検証済みbuildと一致。共有buildは1系列、browser検査中にdistを上書きしていない。初回MJS generic構文error/未使用引数hintはQA scriptだけの問題で修正し、2回目統合verifyが成功。新QA追加後にも最終verifyを実施した。preview4322は旧NodeだったためAstro preview stopで停止し、patched Nodeで4323へ起動。既存pnpm.cmdが別の旧Nodeを使っていたため、task-local wrapperから同梱JS CLIをpatched Nodeで動かしnested pnpmも統一。公開の実測は完了後に追記する。
+初回広範囲QA後の見出しとSource操作の追加調整は、下記の厳密差分と重点回帰を区別して記録。共有buildは1系列で、browser検査中にdistを上書きしていない。初回MJS構文/unused hintはQA scriptの問題を修正し、初回統合から最終までの成功と区別。preview4322は旧NodeだったためAstro preview stopで停止しpatched Nodeで4323へ起動。既存pnpm.cmdの旧Nodeを避け、task-local wrapperから同梱JS CLIをpatched Nodeで動かしnested pnpmも統一。公開の最終実測は完了後に追記する。
 
 出典保持検査はChrome DOMParserで全HTMLを読取り、元のproduct/source registry/dateと比較。スクリプト/画像/Googleは実行せず、UIの開閉・keyboard/hash/noJSはfocused browserで別検査。新種類画像は既存の単体AI図を再利用し、実物写真/仕様証拠とはしない。
 

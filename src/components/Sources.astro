@@ -13,17 +13,30 @@ const items=sources.filter(s=>sourceIds.includes(s.id));
  </div>
 </details>
 <script>
- const revealSourceTarget=()=>{
-  let id:string;try{id=decodeURIComponent(location.hash.slice(1))}catch{return}
+ const sourceTarget=(hash:string)=>{
+  let id:string;try{id=decodeURIComponent(hash.slice(1))}catch{return null}
   const target=id?document.getElementById(id):null;
-  if(!target)return;
-  let matched=false;
-  for(let node:HTMLElement|null=target;node;node=node.parentElement){
-   if(node instanceof HTMLDetailsElement&&node.hasAttribute('data-source-disclosure')){node.open=true;matched=true}
-  }
-  if(matched)requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));
+  return target?.closest<HTMLElement>('details[data-source-disclosure]')?target:null;
  };
- addEventListener('hashchange',revealSourceTarget);revealSourceTarget();
+ const revealSourceTarget=(hash=location.hash,moveFocus=false)=>{
+  const target=sourceTarget(hash);if(!target)return;
+  for(let node:HTMLElement|null=target;node;node=node.parentElement){
+   if(node instanceof HTMLDetailsElement&&node.hasAttribute('data-source-disclosure'))node.open=true;
+  }
+  if(moveFocus)target.closest('details[data-source-disclosure]')?.querySelector<HTMLElement>(':scope > summary')?.focus({preventScroll:true});
+  target.scrollIntoView({block:'start'});
+ };
+ // Own in-page source navigation once. Native hashchange must not reopen a
+ // disclosure after a quick subsequent close or keyboard action.
+ document.addEventListener('click',event=>{
+  if(event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey||!(event.target instanceof Element))return;
+  const link=event.target.closest<HTMLAnchorElement>('a[href^="#"]');
+  if(!link||link.target||link.hasAttribute('download')||!sourceTarget(link.hash))return;
+  event.preventDefault();
+  if(location.hash!==link.hash)history.pushState(null,'',link.hash);
+  revealSourceTarget(link.hash,true);
+ });
+ addEventListener('hashchange',()=>revealSourceTarget());revealSourceTarget();
 </script>
 <style>
  .source-disclosure{border-block:1px solid var(--line);margin-top:24px;min-width:0;scroll-margin-top:24px}

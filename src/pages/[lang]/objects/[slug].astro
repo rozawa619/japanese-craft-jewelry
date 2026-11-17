@@ -105,9 +105,6 @@ const destinationNote=t(locale,'Opens the official website in a new tab.','公�
  {hasDestination&&<aside class="product-sticky-cta" data-product-sticky-cta hidden aria-label={t(locale,'Japan reference price and official listing','日本向け参考価格と公式ページ')}><div><span class="sticky-product-name">{p.title}</span><MarketPrice productId={p.id} locale={locale} variant="sticky"/></div><MarketPurchaseLink productId={p.id} locale={locale} label={t(locale,'Japan listing','国内ページへ')}/></aside>}
 </div>
 <script>
- document.querySelector<HTMLAnchorElement>('.buying-guide-sources')?.addEventListener('click',()=>{
-  const sources=document.querySelector<HTMLDetailsElement>('#product-sources');if(sources)sources.open=true;
- });
  const sticky=document.querySelector<HTMLElement>('[data-product-sticky-cta]');
  const primary=document.querySelector<HTMLElement>('[data-product-primary-cta]');
  const footer=document.querySelector<HTMLElement>('.site-footer');

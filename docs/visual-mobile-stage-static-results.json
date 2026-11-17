@@ -1,11 +1,11 @@
 {
   "version": "0.15.0",
-  "recordedAt": "2026-11-17T04:59:13.203Z",
+  "recordedAt": "2026-11-17T05:27:26.793Z",
   "command": "pnpm verify",
   "status": "passed",
   "node": "24.22.3",
   "pnpm": "11.25.0",
-  "typeFiles": 123,
+  "typeFiles": 124,
   "errors": 0,
   "warnings": 0,
   "hints": 0,
@@ -29,7 +29,7 @@
   "qaOutputUnchangedAfterFinalBuild": true,
   "log": {
     "path": "artifacts/visual-mobile-stage-final-verify.log",
-    "sha256": "ecb673da8892e254b8c1b06f0417d42896ff2b8d43aebe5b1df3a3f27d0d76da"
+    "sha256": "977372ef663fb4ae0afd08db510f9f20eb86999ed0a380616bd3974a06f4e466"
   },
   "limits": "Known advisory snapshot and tested static/UI boundaries only; no guarantee of all security, account/header configuration, physical iOS/Safari, legal/contract eligibility, Google search traffic or AdSense approval."
 }

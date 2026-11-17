@@ -39,6 +39,6 @@ AdSense実アカウント/所有確認/実ID/認定CMP/地域別同意と配信/
 
 ## 納品
 
-最終verify123型ファイル0/0/0・124単体・369生成物。最終再生成の全SHAがbrowser検証済み出力と一致。品質497/価格314/種類画像32（84instances）/mobile92/touch4/source248/Maps9/広告6/SEO/meta1が成功。詳細static-results/build-manifest・各JSON・016validation。121filesは統合途中の型検査値。
+最終verify124型ファイル0/0/0・124単体・369生成物。品質497/価格314/種類画像32（84instances）/source248/Maps9/広告6/SEO/meta1は初回広範囲の成功。見出しと出典操作の追加調整は別の厳密差分・mobile/touch/競合の回帰を記録する。詳細static-results/build-manifest・各JSON・016validation。121/123filesは統合途中の型検査値。
 
 隣接japanese-craft-jewelry-delivery/sourceとjapanese-craft-jewelry-source.zipへ全ソース/設定例/lock/CI/仕様/調査/検証/98画像を書出す。.git/.env/秘密/node_modules/dist/artifacts/退役画像を除外し、package-verification-0.15.0.jsonでrepo→export→ZIPの全件SHAを照合。QA PNG/JSONはscreenshots/0.15.0へ分離。今回新画像生成なし、原本50PNGと生成記録は0.14の別ZIPを保持する。

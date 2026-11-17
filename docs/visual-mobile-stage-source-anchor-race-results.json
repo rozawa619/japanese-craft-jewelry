@@ -1,0 +1,391 @@
+{
+  "checkedAt": "2026-11-17T05:24:11.461Z",
+  "origin": "http://127.0.0.1:4323",
+  "base": "/japanese-craft-jewelry/",
+  "method": "Deterministic same-task source-anchor click then native close, real Enter/close, ordinary settled navigation, direct fragment and history navigation. One temporary generic fragment link tests delegation to a child inside the existing source panel; it is removed after each case. No source files, catalog facts or external links are changed.",
+  "sourceInputs": {
+    "src/components/Sources.astro": "415ed13ebfdf077e6d7a9dcc57d926deca161889e271eb653287bd3349465b0d",
+    "src/pages/[lang]/objects/[slug].astro": "8b7886b1c96e54699e4090c7e3b984358d6f0de94fb2ba00eeaa0c50e2b141a3"
+  },
+  "checks": [
+    {
+      "key": "ja-390-hamamatsuya-surgical-stainless-pierced-earrings",
+      "status": "passed",
+      "rapidSequences": 3,
+      "steps": [
+        {
+          "action": "guide-click-native-close-same-task",
+          "opened": true,
+          "closedImmediately": true,
+          "hash": "#product-sources",
+          "hashEvents": 0
+        },
+        {
+          "action": "guide-close-after-event-queue",
+          "at": 1729.4000000003725,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": false,
+          "hashEvents": 0
+        },
+        {
+          "action": "generic-child-source-click-close-same-task",
+          "opened": true,
+          "closedImmediately": true,
+          "hash": "#source-race-child"
+        },
+        {
+          "action": "real-enter-guide-then-close",
+          "at": 2098.699999999255,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": false,
+          "hashEvents": 0
+        },
+        {
+          "action": "history-forward-fragment",
+          "at": 5466.9000000003725,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": true,
+          "hashEvents": 2
+        }
+      ]
+    },
+    {
+      "key": "ja-390-saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "rapidSequences": 3,
+      "steps": [
+        {
+          "action": "guide-click-native-close-same-task",
+          "opened": true,
+          "closedImmediately": true,
+          "hash": "#product-sources",
+          "hashEvents": 0
+        },
+        {
+          "action": "guide-close-after-event-queue",
+          "at": 1709.800000000745,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": false,
+          "hashEvents": 0
+        },
+        {
+          "action": "generic-child-source-click-close-same-task",
+          "opened": true,
+          "closedImmediately": true,
+          "hash": "#source-race-child"
+        },
+        {
+          "action": "real-enter-guide-then-close",
+          "at": 2100.4000000003725,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": false,
+          "hashEvents": 0
+        },
+        {
+          "action": "history-forward-fragment",
+          "at": 5191,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": true,
+          "hashEvents": 2
+        }
+      ]
+    },
+    {
+      "key": "ja-768-hamamatsuya-surgical-stainless-pierced-earrings",
+      "status": "passed",
+      "rapidSequences": 3,
+      "steps": [
+        {
+          "action": "guide-click-native-close-same-task",
+          "opened": true,
+          "closedImmediately": true,
+          "hash": "#product-sources",
+          "hashEvents": 0
+        },
+        {
+          "action": "guide-close-after-event-queue",
+          "at": 906.3000000007451,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": false,
+          "hashEvents": 0
+        },
+        {
+          "action": "generic-child-source-click-close-same-task",
+          "opened": true,
+          "closedImmediately": true,
+          "hash": "#source-race-child"
+        },
+        {
+          "action": "real-enter-guide-then-close",
+          "at": 1207.300000000745,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": false,
+          "hashEvents": 0
+        },
+        {
+          "action": "history-forward-fragment",
+          "at": 3675.5,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": true,
+          "hashEvents": 2
+        }
+      ]
+    },
+    {
+      "key": "ja-768-saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "rapidSequences": 3,
+      "steps": [
+        {
+          "action": "guide-click-native-close-same-task",
+          "opened": true,
+          "closedImmediately": true,
+          "hash": "#product-sources",
+          "hashEvents": 0
+        },
+        {
+          "action": "guide-close-after-event-queue",
+          "at": 1663.1000000014901,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": false,
+          "hashEvents": 0
+        },
+        {
+          "action": "generic-child-source-click-close-same-task",
+          "opened": true,
+          "closedImmediately": true,
+          "hash": "#source-race-child"
+        },
+        {
+          "action": "real-enter-guide-then-close",
+          "at": 1981.7000000011176,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": false,
+          "hashEvents": 0
+        },
+        {
+          "action": "history-forward-fragment",
+          "at": 4134.9000000003725,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": true,
+          "hashEvents": 2
+        }
+      ]
+    },
+    {
+      "key": "en-390-hamamatsuya-surgical-stainless-pierced-earrings",
+      "status": "passed",
+      "rapidSequences": 3,
+      "steps": [
+        {
+          "action": "guide-click-native-close-same-task",
+          "opened": true,
+          "closedImmediately": true,
+          "hash": "#product-sources",
+          "hashEvents": 0
+        },
+        {
+          "action": "guide-close-after-event-queue",
+          "at": 1468.7000000011176,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": false,
+          "hashEvents": 0
+        },
+        {
+          "action": "generic-child-source-click-close-same-task",
+          "opened": true,
+          "closedImmediately": true,
+          "hash": "#source-race-child"
+        },
+        {
+          "action": "real-enter-guide-then-close",
+          "at": 1840.800000000745,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": false,
+          "hashEvents": 0
+        },
+        {
+          "action": "history-forward-fragment",
+          "at": 4633.5999999996275,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": true,
+          "hashEvents": 2
+        }
+      ]
+    },
+    {
+      "key": "en-390-saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "rapidSequences": 3,
+      "steps": [
+        {
+          "action": "guide-click-native-close-same-task",
+          "opened": true,
+          "closedImmediately": true,
+          "hash": "#product-sources",
+          "hashEvents": 0
+        },
+        {
+          "action": "guide-close-after-event-queue",
+          "at": 1017.8000000007451,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": false,
+          "hashEvents": 0
+        },
+        {
+          "action": "generic-child-source-click-close-same-task",
+          "opened": true,
+          "closedImmediately": true,
+          "hash": "#source-race-child"
+        },
+        {
+          "action": "real-enter-guide-then-close",
+          "at": 1396.7000000011176,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": false,
+          "hashEvents": 0
+        },
+        {
+          "action": "history-forward-fragment",
+          "at": 4629.200000001118,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": true,
+          "hashEvents": 2
+        }
+      ]
+    },
+    {
+      "key": "en-768-hamamatsuya-surgical-stainless-pierced-earrings",
+      "status": "passed",
+      "rapidSequences": 3,
+      "steps": [
+        {
+          "action": "guide-click-native-close-same-task",
+          "opened": true,
+          "closedImmediately": true,
+          "hash": "#product-sources",
+          "hashEvents": 0
+        },
+        {
+          "action": "guide-close-after-event-queue",
+          "at": 1185.4000000003725,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": false,
+          "hashEvents": 0
+        },
+        {
+          "action": "generic-child-source-click-close-same-task",
+          "opened": true,
+          "closedImmediately": true,
+          "hash": "#source-race-child"
+        },
+        {
+          "action": "real-enter-guide-then-close",
+          "at": 1481.5999999996275,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": false,
+          "hashEvents": 0
+        },
+        {
+          "action": "history-forward-fragment",
+          "at": 3964.0999999996275,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": true,
+          "hashEvents": 2
+        }
+      ]
+    },
+    {
+      "key": "en-768-saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "rapidSequences": 3,
+      "steps": [
+        {
+          "action": "guide-click-native-close-same-task",
+          "opened": true,
+          "closedImmediately": true,
+          "hash": "#product-sources",
+          "hashEvents": 0
+        },
+        {
+          "action": "guide-close-after-event-queue",
+          "at": 1096.7000000011176,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": false,
+          "hashEvents": 0
+        },
+        {
+          "action": "generic-child-source-click-close-same-task",
+          "opened": true,
+          "closedImmediately": true,
+          "hash": "#source-race-child"
+        },
+        {
+          "action": "real-enter-guide-then-close",
+          "at": 1338.4000000003725,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": false,
+          "hashEvents": 0
+        },
+        {
+          "action": "history-forward-fragment",
+          "at": 4344.9000000003725,
+          "hash": "#product-sources",
+          "active": "SUMMARY",
+          "open": true,
+          "hashEvents": 2
+        }
+      ]
+    },
+    {
+      "key": "ja-nojs-390",
+      "status": "passed"
+    },
+    {
+      "key": "ja-nojs-768",
+      "status": "passed"
+    },
+    {
+      "key": "en-nojs-390",
+      "status": "passed"
+    },
+    {
+      "key": "en-nojs-768",
+      "status": "passed"
+    }
+  ],
+  "failures": [],
+  "rapidSequences": 24,
+  "sourceInputsUnchanged": true,
+  "completedAt": "2026-11-17T05:25:15.475Z",
+  "summary": {
+    "checks": 12,
+    "passed": 12,
+    "failed": 0,
+    "rapidSequences": 24,
+    "sourceInputsUnchanged": true
+  }
+}
