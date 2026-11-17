@@ -3,10 +3,18 @@
   "specification": "021-unified-region-photos",
   "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
   "branch": "main",
-  "status": "locally_verified_pending_publication",
-  "recordedAt": "2026-11-17T11:16:41.054Z",
-  "applicationCommit": null,
-  "actions": null,
+  "status": "deployed_and_verified",
+  "recordedAt": "2026-11-17T11:24:28.335Z",
+  "applicationCommit": "19f066ee20f4aa8eb1b441a4178dc92ffcb25ae7",
+  "actions": {
+    "id": 44072612768,
+    "headSha": "19f066ee20f4aa8eb1b441a4178dc92ffcb25ae7",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44072612768",
+    "updatedAt": "2026-11-17T11:18:02Z",
+    "observedAt": "2026-11-17T11:20:45.975Z"
+  },
   "previousDeployedVersion": "0.17.1",
   "previousDeployedApplicationCommit": "8b53114d622312392c7e6ebd97928481b4dd02ae",
   "previousRecord": "docs/deployment-v18-before-unified-photos.json",
@@ -213,13 +221,14 @@
       "report": "docs/region-photos-stage-docs-results.json",
       "summary": {
         "files": 44,
-        "localLinks": 456,
+        "localLinks": 470,
         "anchors": 6,
-        "externalLinksUnchecked": 86,
-        "pnpmReferences": 97,
-        "nodeScriptReferences": 31,
+        "externalLinksUnchecked": 95,
+        "pnpmReferences": 96,
+        "nodeScriptReferences": 32,
         "errors": 0
-      }
+      },
+      "scope": "Latest final maintainer-document check; separate from functional/browser checks."
     }
   },
   "reusedFunctionalCoverage": {
@@ -280,7 +289,92 @@
   },
   "buildManifest": "docs/region-photos-stage-build-manifest.json",
   "publicVerification": {
-    "status": "pending"
+    "version": "0.17.2",
+    "checkedAt": "2026-11-17T11:24:28.334Z",
+    "status": "passed",
+    "applicationCommit": "19f066ee20f4aa8eb1b441a4178dc92ffcb25ae7",
+    "actions": {
+      "id": 44072612768,
+      "headSha": "19f066ee20f4aa8eb1b441a4178dc92ffcb25ae7",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44072612768",
+      "updatedAt": "2026-11-17T11:18:02Z",
+      "observedAt": "2026-11-17T11:20:45.975Z"
+    },
+    "suites": {
+      "photos": {
+        "report": "docs/region-photos-stage-hosted-results.json",
+        "summary": {
+          "checks": 37,
+          "passed": 37,
+          "failed": 0,
+          "locales": 2,
+          "surfaces": 3,
+          "viewportWidths": [
+            320,
+            390,
+            768,
+            1024,
+            1440
+          ],
+          "scenes": 30,
+          "imageChecks": 390,
+          "imagesPerScene": 13,
+          "focusChecks": 120,
+          "axeScreens": 6,
+          "axeViolations": 0,
+          "screenshots": 8,
+          "pageErrors": 0,
+          "consoleErrors": 0,
+          "externalRequests": 0,
+          "sourceInputsUnchanged": true
+        }
+      },
+      "mobile": {
+        "report": "docs/region-photos-stage-hosted-mobile-results.json",
+        "summary": {
+          "checks": 92,
+          "passed": 92,
+          "failed": 0,
+          "viewports": 7,
+          "locales": 2,
+          "representativeRoutes": 6,
+          "sourceControls": 120,
+          "typeImageInstances": 112,
+          "axeScreens": 10,
+          "axeViolations": 0,
+          "liveMaps": 2,
+          "screenshots": 16
+        }
+      },
+      "sources": {
+        "report": "docs/region-photos-stage-hosted-sources-results.json",
+        "summary": {
+          "checks": 328,
+          "passed": 328,
+          "failed": 0,
+          "htmlSha256Comparisons": 328,
+          "productPages": 120,
+          "sourceDisclosures": 448,
+          "sourceRecords": 1580
+        }
+      },
+      "release": {
+        "report": "docs/region-photos-stage-hosted-release-results.json",
+        "summary": {
+          "checks": 24,
+          "passed": 24,
+          "failed": 0,
+          "canonicalUrls": 328,
+          "uniqueImages": 118,
+          "pageErrors": 0,
+          "consoleErrors": 0
+        }
+      }
+    },
+    "outputIntegrity": "docs/region-photos-stage-final-output-integrity.json",
+    "scope": "Final live0.17.2; full328 raw canonical HTML and118 images match local. Prior0.17.1 Hero77 is reused only with byte-preservation proof, not claimed as a0.17.2 rerun."
   },
   "security": {
     "dependencyAudit": {
@@ -324,10 +418,19 @@
   "documentationRevision": "021",
   "documentationVerification": {
     "report": "docs/region-photos-stage-docs-results.json",
-    "scope": "44 active maintainer/spec/research files; local paths/anchors/commands; external links not fetched."
+    "scope": "44 active maintainer/spec/research files; local paths/anchors/commands; external links not fetched.",
+    "summary": {
+      "files": 44,
+      "localLinks": 470,
+      "anchors": 6,
+      "externalLinksUnchecked": 95,
+      "pnpmReferences": 96,
+      "nodeScriptReferences": 32,
+      "errors": 0
+    }
   },
   "sourceDelivery": {
-    "status": "pending",
+    "status": "verified",
     "revision": "unified-021",
     "source": "../japanese-craft-jewelry-delivery/source",
     "zip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-source.zip",
@@ -347,9 +450,20 @@
       "sha256": "383cf02e99cdf06d936118e9d071f35df68a1b99191de31442b7f450de386254",
       "everyFileSha256Checks": 26,
       "allFileHashesMatch": true,
-      "recheckedUnchangedAt": "2026-11-17T09:08:43.876Z"
+      "recheckedUnchangedAt": "2026-11-17T11:26:18.226Z"
     },
-    "originalsUnchangedFromVersion": "0.16.0"
+    "originalsUnchangedFromVersion": "0.16.0",
+    "fileCount": 1118,
+    "everyRepositoryFileSha256Checks": 1118,
+    "everyFileSha256Checks": 1118,
+    "repositoryAndExportFileSetsMatch": true,
+    "sourceAndZipFileSetsMatch": true,
+    "allFileHashesMatch": true,
+    "publicImages": 118,
+    "publishedProducts": 60,
+    "retiredImagesExcluded": 10,
+    "publicOutputUnchangedSinceFinalFocusedAndHostedChecks": true,
+    "finalPass": "Final completion notes included by a final export and ZIP SHA pass; ZIP hash is external only."
   },
   "limits": [
     "No physical iOS/Safari or all-law/all-image-rights certification.",

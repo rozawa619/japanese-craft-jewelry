@@ -7,7 +7,7 @@ R1〜R10の初回実装・検証段階。ebacc3eの公開成功は、下記R11/R
 - [x] 県のnative直接リンクとhover/focus/select previewを実装・確認
 - [x] 型/単体/build・日英PCスマホ/実click/touch/keyboard/JSなしを検証（Chrome emulation、実機Safariは未検証）
 - [x] 初回R1〜R10のGit/Actions・実公開の新操作と生成物を確認（ebacc3e/Actions44065533062）
-- [ ] 現在文書/全source ZIPの集合・全SHAを更新して納品
+- [x] 現在文書/全source ZIPの集合・全SHAを更新して納品
 
 ## 追加依頼
 
@@ -23,5 +23,7 @@ R1〜R10の初回実装・検証段階。ebacc3eの公開成功は、下記R11/R
 - [x] 沖縄のclick/tap/Enter/Space・query/hash/言語・noJSと全地域の回帰を検証
 - [x] 日英PC/スマホで写真paint/行寸法・地図/沖縄操作・overflow・画像/商品事実保持を再検証
 - [x] 追加改修版の型/単体/build・専用QAの最終reportを確定
-- [ ] 追加改修版のGit/Actions・実公開の操作と生成物を再確認
-- [ ] 現在文書と最終source ZIPの集合/全SHAを更新して納品
+- [x] 追加改修版のGit/Actions・実公開の操作と生成物を再確認
+- [x] 現在文書と最終source ZIPの集合/全SHAを更新して納品
+
+最終写真依頼は021へ引継ぎ、0.17.2の全source ZIPへ020の全実装/資料も含めて納品。8b53114の公開map/mobile中断は失敗でも全件完了でもなく、021 validationと段階記録で範囲を区別する。

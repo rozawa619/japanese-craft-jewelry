@@ -1,10 +1,9 @@
 # 商品・文章・画像の編集ガイド
 
 プログラムを書かない運営者と、引継ぎ先のAIのための手引きです。まず[README](../README.md)で起動し、詳しい判断は[引継ぎ](handoff.md)・[共通原則](constitution.md)・[運用](operations.md)へ戻ってください。
-2026-11-17の作業版0.17.2が継承する台帳は全66商品、公開60商品、下書き6商品、24県、33店舗（53商品に店舗案内）です。公開関連技法は34（全36）、一次出典293件、人物58＋単体60のAI画像118ファイル。今後の件数は台帳を数えて確かめます。
+2026-11-17の公開版0.17.2が継承する台帳は全66商品、公開60商品、下書き6商品、24県、33店舗（53商品に店舗案内）です。公開関連技法は34（全36）、一次出典293件、人物58＋単体60のAI画像118ファイル。今後の件数は台帳を数えて確かめます。
 
-<!-- TODO_PUBLIC_V19 -->
-0.17.2（仕様021）は公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
+0.17.2（仕様021）公開済み。app `19f066ee20f4aa8eb1b441a4178dc92ffcb25ae7`、[Actions44072612768](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44072612768) completed/success。実URLの写真37・mobile92・Sources328・補足24が成功。Top10とDISCOVER3の写真を全3ページで統一。確定値はdeployment-results/verificationを参照。
 
 PCのホーム先頭は左の人物AI画像・右の日本地図を並べるRegionHeroです。スマホでは写真を全幅で大きく表示し、その下に商品小情報と地図を並べて、顔や耳を切らずに見やすくします。Heroの県はclick/tap/Enter/Spaceで明示選択すると、女性画像と商品/国内参考価格を切り替え、産地CTAから商品一覧へ進みます。hover/focusだけでは切り替えません。有効な公開地域idだけを`?region=`へ反映し、他query/hash・戻る・言語切替で選択を保ちます。Heroの本州〜北海道は余白を詰めて拡大し、沖縄は「拡大」の注記付き別枠から同じ操作で選べます。Heroとは別に、TOP10後の大きい一覧地図は県のnative直接リンクです。TOP10とDISCOVER3県は共通styleの自然比率画像とし、PC最大300×200px・スマホ最大222×148pxのcontainで上下の帯を抑え、地域名/商品/価格/順位を保ちます。顔や耳を切らず、初期Heroは既存selection.heroProductIdを使います。これらは機能・表示の変更であり、訪問数や検索順位の改善を実測したという意味ではありません。
 以下の実例は既存記録の**一部の抜粋**です。新しい価格・在庫を調べ直した例でも、レコード全体の貼り替え用テンプレートでもありません。
@@ -210,7 +209,7 @@ WebPへ変換しても原本PNGを保管し、AI由来のIPTC XMPを維持しま
 
 日本地図はsrc/data/japan-map-geometry.json（CC0出典/47県形状）、src/config/japan-map.ts（地方とDISCOVER3県）、JapanJewelryMap.astro（native直接リンク・代表preview・ローカルzoom）。店舗の地図はmap-preferences.ts（30日/版/最小値検証）、map-preferences-client.ts（全表示/全停止）、MapPreferences.astro（Privacyの設定UI）へ分離します。商品価格や画像URLを地理JSONへ複製せず、未掲載県へ空URLを作りません。小さな県形状そのものを44pxとは呼ばず、select/地方別リンクを代替にします。[旧版の出典と加工](japan-map-v17.md)を保持し、[現在の直接選択](japan-map-direct-v18.md)を確認してください。県のclickをpreventDefaultで横取りしてpreviewだけに戻さず、href/Enter/修飾clickの通常動作を維持します。小さな県は拡大後に実際の形状内を選べるか確認し、地図内のoverflowとページ全体の横はみ出しを区別します。今回は新bitmapを生成していません。
 
-ホーム先頭は[RegionHero.astro](../src/components/RegionHero.astro)、一覧地図は[JapanJewelryMap.astro](../src/components/JapanJewelryMap.astro)、TOP10の行/画像寸法は[RegionSelection.astro](../src/components/RegionSelection.astro)です。Heroでclickを選択として扱う処理を、直接遷移する一覧地図へコピーしません。Heroの24県の小さな商品カードは共通MarketPriceでserver生成し、選択県だけを表示します。画像figureのasset/preserveRatio・imgのsrc/alt/寸法と、表示中カードのURL/title/価格metadata/単位/産地CTAを揃えます。
+ホーム先頭は[RegionHero.astro](../src/components/RegionHero.astro)、一覧地図は[JapanJewelryMap.astro](../src/components/JapanJewelryMap.astro)、TOP10＋DISCOVER共通の行/画像寸法（PC300×200px・スマホ222×148px）は[RegionSelection.astro](../src/components/RegionSelection.astro)です。Heroでclickを選択として扱う処理を、直接遷移する一覧地図へコピーしません。Heroの24県の小さな商品カードは共通MarketPriceでserver生成し、選択県だけを表示します。画像figureのasset/preserveRatio・imgのsrc/alt/寸法と、表示中カードのURL/title/価格metadata/単位/産地CTAを揃えます。
 
 ## 9. 店舗とGoogleマップを更新する
 

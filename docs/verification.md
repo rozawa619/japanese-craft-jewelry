@@ -29,10 +29,12 @@ Top10と「こちらの産地も、見てみませんか。」の3県を、同�
 
 ## 公開・納品
 
-<!-- TODO_PUBLIC_021 -->
+公開app `19f066ee20f4aa8eb1b441a4178dc92ffcb25ae7`、[Actions44072612768](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44072612768) completed/success。[公開集約](region-photos-stage-hosted-summary.json)：写真37/37・mobile92/92・Sources328/328・補足24/24。全328生HTML/118画像SHAは最終localと一致、471生成物のSHAも不変。
 
 全sourceの版付きZIPはjapanese-craft-jewelry-source-0.17.2-unified-021.zip、外部proofはpackage-verification-0.17.2-unified-021.json。確定fileCountとstatusはdeployment-resultsのsourceDeliveryを参照します。
 
 ## 限界
 
 Chrome emulationで、実機iOS/Safari、検索順位/離脱率/売上・将来在庫・AdSense審査を保証する検査ではありません。新たな解析/追跡・商品/画像生成を追加していません。[法務/運営残条件](remaining-task-audit-v17.md)と[商用ホスト移行準備](commercial-host-migration-v17.md)は継承します。
+
+最終全sourceは1118ファイル/118公開画像。repository/export/ZIPの集合と全件SHAを照合し、完了記録を含めて再梱包。確定ZIP hashは外部proofを参照。旧0.16の元PNG ZIPのSHA不変も再確認しました。

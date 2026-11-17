@@ -3,7 +3,7 @@
 ## 0.17.2 — 2026-11-17（制作中・未公開）
 
 - TOP10とDISCOVER3県の人物写真を自然比率でひと回り大きく統一し、日英home/objects/placesの巨大画像を解消する仕様021を追加。共通RegionSelectionのstyleだけを対象とし、行間/顔耳のcontain・AIcaption・既存導線を保つ。
-- HTML/JS・商品正本・118画像・Hero/日本地図のソースを保持し、写真専用QAとSHA照合、mobile/Sources/SEO等で検証する。実装・最終検証・公開・ZIPは未完了。予定値を成功件数とせず、[021 validation](specs/021-unified-region-photos/validation.md)へ確定結果を記録する。
+- HTML/JS・商品正本・118画像・Hero/日本地図のソースを保持し、写真専用QAとSHA照合、mobile/Sources/SEO等で検証する。写真37・保全8・mobile92・Source328と公開37/92/328/24が成功。ZIPの確定値はsourceDeliveryへ記録し、[021 validation](specs/021-unified-region-photos/validation.md)へ確定結果を記録する。
 
 ## 0.17.1 — 2026-11-17
 
