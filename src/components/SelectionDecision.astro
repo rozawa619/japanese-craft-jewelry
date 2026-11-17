@@ -1,0 +1,19 @@
+---
+import {storyFor} from '../lib/product-stories';
+import {pagePath} from '../config/site';
+import {t,type Locale} from '../lib/i18n';
+interface Props {productId:string;locale:Locale}
+const {productId,locale}=Astro.props;
+const {decision}=storyFor(productId,locale);
+---
+<section class="selection-decision" data-selection-decision data-product-decision aria-labelledby={'decision-title-'+productId}>
+ <header><p class="eyebrow">{t(locale,'THE SHORT VERSION','選ぶポイントを、先に。')}</p><h2 id={'decision-title-'+productId}>{t(locale,'Is this your kind of piece?','この一品を選ぶなら。')}</h2></header>
+ <div class="decision-points"><div class="decision-point"><h3>{t(locale,'Choose it for','こんな好みに')}</h3><p data-decision-best-for>{decision.bestFor}</p></div><div class="decision-point decision-consider"><h3>{t(locale,'Keep in mind','迷ったら、ここを比べて')}</h3><p data-decision-consider>{decision.consider}</p></div></div>
+ <p class="decision-method">{t(locale,'SORA’s selection, based on official information.','公式情報をもとに選んだ、SORAからの提案です。')} <a href={pagePath('editorial-policy/',locale)} data-selection-method>{t(locale,'How we select','セレクトの考え方')} <span aria-hidden="true">→</span></a></p>
+</section>
+<style>
+ .selection-decision{padding:30px 34px;background:#e9ece2;border:1px solid var(--line);margin:8px 0 46px}.selection-decision>header{display:flex;justify-content:space-between;align-items:baseline;gap:15px;flex-wrap:wrap}.selection-decision .eyebrow{margin:0;font-size:10px}.selection-decision h2{font-size:clamp(25px,2.4vw,34px);margin:0;line-height:1.4}.decision-points{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:30px;margin:26px 0 20px}.decision-point{min-width:0}.decision-point h3{font:600 12px/1.7 var(--sans);letter-spacing:.04em;margin:0 0 8px}.decision-point p{font-size:14px;line-height:1.9;margin:0;overflow-wrap:anywhere}.decision-consider{padding-left:30px;border-left:1px solid #bfc7b8}.decision-method{font-size:10px;line-height:1.8;color:var(--muted);margin:0;border-top:1px solid #cbd1c4;padding-top:15px}.decision-method a{display:inline-block;margin-left:9px;text-underline-offset:3px}
+ @media(max-width:720px){.selection-decision{padding:23px 22px;margin:3px 0 30px}.selection-decision>header{display:block}.selection-decision .eyebrow{margin-bottom:10px}.selection-decision h2{font-size:26px}.decision-points{grid-template-columns:1fr;gap:20px;margin-top:22px}.decision-point p{font-size:13px;line-height:1.9}.decision-consider{padding:19px 0 0;border-left:0;border-top:1px solid #bfc7b8}.decision-method{font-size:10px}.decision-method a{margin-left:0;margin-right:9px}}
+ .selection-decision h2{text-wrap:balance}
+ @media(max-width:360px){.selection-decision h2{font-size:23px}}
+</style>

@@ -4,6 +4,6 @@ locale: en
 publishStatus: published
 ---
 
-This pendant offers a choice of motif within one piece: delicate sakura on one side and a geometric pattern on the other. The pear-shaped outline gives both patterns a shared frame, so turning it changes the mood without changing the size of the necklace.
+The useful difference here is the ability to change the displayed pattern within the same outline. Sakura and geometry give two starting points for an outfit without requiring a second necklace.
 
-Nakajima Zogan is a Kyoto maker whose general technique involves working fine metal into a prepared base and finishing the surface. The selected product’s exact metal and chain composition are not published in its reviewed description, so the maker’s process is not used as a substitute for a component list. Pattern placement can vary because the work is handmade.
+Sugimura’s Hosoge centers a particular ornamental flower. Nakajima leaves room for both a floral and a more graphic direction. The pear shape stays the same while the face you choose changes the detail.

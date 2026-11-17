@@ -12,15 +12,16 @@ if(existsSync(resolve(root,'.env')))process.loadEnvFile(resolve(root,'.env'));
 const origin=new URL(process.env.CHECK_BASE_URL||'http://127.0.0.1:4321').origin;
 const parts=(process.env.PUBLIC_BASE_PATH||'/').split('/').filter(Boolean);
 const base='/'+parts.join('/')+(parts.length?'/':'');
-const reportPath=process.env.CHECK_REPORT_PATH||'docs/quality-stage-browser-results.json';
-const prefix=(process.env.CHECK_SCREENSHOT_PREFIX||'quality-stage').replace(/[^a-zA-Z0-9_-]/g,'-');
+const reportPath=process.env.CHECK_REPORT_PATH||'docs/editorial-stage-browser-results.json';
+const prefix=(process.env.CHECK_SCREENSHOT_PREFIX||'editorial-stage').replace(/[^a-zA-Z0-9_-]/g,'-');
 const readJson=async path=>JSON.parse(await readFile(resolve(root,path),'utf8'));
-const sourcePaths=['src/data/catalog.json','src/data/translations/ja.json','src/data/selection-notes.json','src/data/region-choice-notes.json','src/data/editorial-images.json','src/data/purchase-evidence.json','src/config/selection.ts'];
+const sourcePaths=['src/data/catalog.json','src/data/translations/ja.json','src/data/product-stories.json','src/data/selection-notes.json','src/data/region-choice-notes.json','src/data/editorial-images.json','src/data/purchase-evidence.json','src/config/selection.ts'];
 const hashInputs=async()=>Object.fromEntries(await Promise.all(sourcePaths.map(async path=>[path,createHash('sha256').update(await readFile(resolve(root,path))).digest('hex')])));
 const sourceInputs=await hashInputs();
 const catalog=await readJson('src/data/catalog.json');
 const ja=await readJson('src/data/translations/ja.json');
 const notes=await readJson('src/data/selection-notes.json');
+const stories=await readJson('src/data/product-stories.json');
 const regionNotes=await readJson('src/data/region-choice-notes.json');
 const registry=await readJson('src/data/editorial-images.json');
 const purchaseEvidence=await readJson('src/data/purchase-evidence.json');
@@ -97,6 +98,14 @@ async function set(page,filters={},sort=''){
  await page.locator('#price-sort').selectOption(sort);
 }
 async function choice(page,product,locale){
+ const story=stories[product.id]?.[locale];assert.ok(story?.decision,'Every published product needs its own localized decision.');
+ assert.equal(norm(await page.locator('[data-product-intro] h1').innerText()),norm(story.headline));
+ assert.equal(norm(await page.locator('.purchase-standfirst').innerText()),norm(story.standfirst));
+ const decision=page.locator('[data-product-decision]');assert.equal(await decision.count(),1);assert.equal(await decision.isVisible(),true);
+ assert.equal(norm(await decision.locator('[data-decision-best-for]').innerText()),norm(story.decision.bestFor));
+ assert.equal(norm(await decision.locator('[data-decision-consider]').innerText()),norm(story.decision.consider));
+ assert.ok(await decision.evaluate(node=>!!(node.compareDocumentPosition(document.querySelector('[data-choice-details]'))&Node.DOCUMENT_POSITION_FOLLOWING)),'Product-specific decision must precede the longer comparison.');
+ assert.equal(new URL(await decision.locator('a[href*="/editorial-policy/"]').getAttribute('href'),page.url()).href,route(locale,'editorial-policy/'));
  await money(page.locator('[data-market-section="japan"]'),product,locale);
  const evidence=purchaseEvidence.products.find(record=>record.productId===product.id);assert.ok(evidence,'A published item requires the real current purchase-evidence record.');
  const purchase=page.locator('[data-purchase-evidence]');assert.equal(await purchase.count(),1);assert.equal(await purchase.getAttribute('data-purchase-evidence'),evidence.kind);assert.equal(await purchase.getAttribute('data-purchase-checked-at'),evidence.checkedAt);
@@ -112,6 +121,8 @@ async function choice(page,product,locale){
  for(const id of ids){
   const p=byId.get(id);assert.ok(p,'Choice comparisons must not expose draft/missing products.');
   const card=section.locator('[data-choice-product="'+id+'"]');
+  assert.equal(norm(await card.locator('[data-choice-hook]').innerText()),norm(stories[id][locale].headline));
+  assert.equal(norm(await card.locator('[data-choice-reason]').innerText()),norm(notes[id][locale].chooseFor));
   assert.ok(norm(await card.locator('h4').innerText()).includes(norm(localeValue(p,'title',locale))));
   if(id!==product.id)assert.equal(new URL(await card.locator('h4 a').getAttribute('href'),page.url()).href,route(locale,'objects/'+p.slug+'/'));
   const info=await card.locator('dl>div').evaluateAll(nodes=>Object.fromEntries(nodes.map(node=>[node.querySelector('dt').textContent,node.querySelector('dd').textContent])));
@@ -167,7 +178,7 @@ try{
     assert.equal(await page.locator('#object-results [data-product-card]').count(),published.length);
     assert.deepEqual(await page.locator('select[name="budget"] option').evaluateAll(nodes=>nodes.map(node=>node.value)),['',...budgets]);
     await state(page,{},'',locale);
-    for(const product of published){const card=page.locator('#object-results [data-product-id="'+product.id+'"]');assert.equal(await card.getAttribute('data-budget'),budgetId(product));assert.equal(await card.getAttribute('data-japan-price'),japanPrice(product)?String(japanPrice(product).amount):null);await money(card,product,locale)}
+    for(const product of published){const card=page.locator('#object-results [data-product-id="'+product.id+'"]');assert.equal(await card.getAttribute('data-budget'),budgetId(product));assert.equal(await card.getAttribute('data-japan-price'),japanPrice(product)?String(japanPrice(product).amount):null);assert.equal(norm(await card.locator('.card-summary').innerText()),norm(localeValue(product,'editorialSummary',locale)));await money(card,product,locale)}
     await noOverflow(page,viewport.width);await axe(page,label+' list controls');const controls='artifacts/'+prefix+'-'+locale+'-'+viewport.name+'-budget-controls.png';await page.locator('#object-filters').screenshot({path:resolve(root,controls)});report.screenshots.push(controls);return {products:published.length,budgetPartition:Object.fromEntries(budgets.map(id=>[id,expected({budget:id}).length]))};
    });
    for(const budget of budgets)await check(label+' budget '+budget,async()=>{await set(page,{budget});const ids=await state(page,{budget},'',locale);assert.equal(new URL(page.url()).searchParams.get('budget'),budget);assert.equal(new URL(page.url()).hash,'#all-jewelry');return {budget,ids}});

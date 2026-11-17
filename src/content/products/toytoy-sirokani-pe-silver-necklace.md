@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-The useful distinction is metal and scale: a small drop in pure silver, paired with a separate sterling-silver chain. The pattern is carried in the shape of one compact pendant.
+This piece gathers silver color and curved pattern into a small drop shape. We included it as a candidate for someone choosing a compact metal form rather than a larger top or a bright color accent.
 
-Compare ToyToy’s wooden earrings for a more open silhouette, or Nakajima’s metal-inlay pendant for a contrasting dark surface. The cultural connection is attributed to this designer and brand, without turning the motif into a claim of protection or health benefit.
+ToyToy’s wooden Ninkari Nikuri uses an open patterned outline. Sirokani-pe puts detail onto a small silver surface. The same maker offers two different starting points through material and where the jewelry is worn.

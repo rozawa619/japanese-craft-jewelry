@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-The small tie is the appeal here: a familiar tailored shape translated into glass. It reads as a long line rather than the round volume of a glass bead, so it is useful when comparing silhouettes.
+The reason to choose Tie-tie is its elongated shape as much as the material itself. The tie-like outline extends below the ear, giving transparent glass the role of a line in the composition.
 
-Sghr’s factory is in Kujukuri, Chiba. The same maker’s Kolmio ear cuff offers a more compact, triangular alternative. The earring’s material list is unusually specific; check the official photographs and the individual parts together.
+Set it beside the small round Nebula or triangular Kolmio and the choice becomes one of placement and shape. Tie-tie is the candidate when a vertical outline is what you want beside the face.

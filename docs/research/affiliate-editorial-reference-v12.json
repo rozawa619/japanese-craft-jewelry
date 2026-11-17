@@ -1,0 +1,109 @@
+{
+  "checkedDateJapan": "2026-11-17",
+  "scope": "First-party editorial and affiliate-disclosure pages observed to improve an independent, bilingual Japanese craft-jewelry selection. Not a traffic, sales, SEO or AdSense approval study.",
+  "method": "Read accessible source-page text through web tools. No source photographs, screenshots, copy, reviews, design assets or test results were imported. No publisher affiliate links were followed to purchase.",
+  "primaryReferences": [
+    {
+      "id": "good-trade-handmade-jewelry-v12",
+      "url": "https://www.thegoodtrade.com/features/handmade-jewelry-brands/",
+      "type": "editorial-product-selection",
+      "bodyRead": true,
+      "observed": "Candidate-level taste summaries, price entry points, specific examples and a visible commission/methodology explanation.",
+      "adaptation": "One clear reason to choose each actual product, with its verified Japan price and official destination.",
+      "notImported": ["brand-level starting prices", "customer reviews", "sustainability or certification claims", "wearing experience"]
+    },
+    {
+      "id": "good-trade-methodology-v12",
+      "url": "https://www.thegoodtrade.com/methodology/",
+      "type": "publisher-method-and-business-model",
+      "bodyRead": true,
+      "observed": "The publisher describes its research/testing and affiliate-supported business model.",
+      "adaptation": "Explain this site's actual official-source research and selection separately from advertising state; do not claim tests or wear."
+    },
+    {
+      "id": "who-what-wear-earring-directions-v12",
+      "url": "https://www.whowhatwear.com/fashion/jewelry/earring-trends-2026",
+      "type": "editorial-shopping-guide",
+      "bodyRead": true,
+      "observed": "Shape-led groups connect styling ideas to shoppable candidates.",
+      "adaptation": "Describe specific forms and outfit relationships in each product page; retain the user's no-blog structure.",
+      "notImported": ["photographs", "celebrity endorsements", "trend authority", "personal ownership or wear"]
+    },
+    {
+      "id": "who-what-wear-standards-v12",
+      "url": "https://www.whowhatwear.com/about-who-what-wear",
+      "type": "publisher-standards-and-affiliate-disclosure",
+      "bodyRead": true,
+      "observed": "Separate sections explain editorial standards, affiliate compensation and labeled advertising.",
+      "adaptation": "Keep editorial choice, observed product facts and approval-based affiliate state distinct."
+    },
+    {
+      "id": "mybest-earcuff-selection-v12",
+      "url": "https://my-best.com/2076",
+      "type": "comparison-publisher",
+      "bodyRead": true,
+      "observed": "Selection axes precede comparison, consistent product fields support comparison, and a commission disclosure appears in the article.",
+      "adaptation": "Show a candidate-specific choice reason before common material/size/price fields; do not invent a popularity rank or test score.",
+      "notImported": ["rankings", "ratings", "product descriptions", "health or allergy claims", "sales volumes"]
+    },
+    {
+      "id": "mybest-policy-access-v12",
+      "url": "https://my-best.com/content_policy",
+      "type": "policy-access-limitation",
+      "bodyRead": false,
+      "observed": "The page exists, but the response exposed only limited shell/footer content, not the detailed policy text.",
+      "adaptation": "Do not present the detailed policy as read; rely only on the accessible comparison page and its visible disclosure."
+    }
+  ],
+  "supplementalReferences": [
+    {
+      "id": "gh-jewelry-selection-v12",
+      "url": "https://www.goodhousekeeping.com/uk/product-reviews/fashion-and-beauty/g73756867/affordable-jewellery-gifts/",
+      "bodyRead": true,
+      "observation": "Short product sections connect an occasion or style reason with a retailer destination and visible commission disclosure."
+    },
+    {
+      "id": "gh-test-method-v12",
+      "url": "https://www.goodhousekeeping.com/about/institute/a19748212/good-housekeeping-institute-product-reviews/",
+      "bodyRead": true,
+      "observation": "The publisher distinguishes its own testing process and affiliate disclosure; this site does not have comparable testing evidence."
+    },
+    {
+      "id": "indybest-jewelry-structure-v12",
+      "url": "https://www.independent.co.uk/extras/indybest/fashion-beauty/womens-accessories/best-tarnish-free-jewellery-gold-b2211228.html",
+      "bodyRead": true,
+      "observation": "Purpose-led picks; separate appeal and caveat sections.",
+      "notImported": "Product claims, text, photographs or wear-test evidence."
+    }
+  ],
+  "unavailableCandidates": [
+    {
+      "url": "https://www.nytimes.com/wirecutter/about/",
+      "result": "Web tool reported a non-retryable open error. Not used as a detailed page observation; no proxy workaround."
+    },
+    {
+      "url": "https://www.nymag.com/strategist/article/best-huggie-earrings.html",
+      "result": "Web tool reported inaccessible. Not used as a detailed page observation."
+    }
+  ],
+  "implementation": {
+    "dataContract": "Each published localized ProductStory includes decision.bestFor and decision.consider, alongside the established headline, standfirst, highlights and outfit fields.",
+    "components": [
+      "src/components/SelectionDecision.astro",
+      "src/components/ChoiceDetails.astro",
+      "src/components/ProductCard.astro",
+      "src/pages/[lang]/objects/[slug].astro",
+      "src/lib/product-stories.ts"
+    ],
+    "browserSelectors": [
+      "[data-product-decision]",
+      "[data-decision-best-for]",
+      "[data-decision-consider]",
+      "[data-selection-method]",
+      "[data-choice-hook]",
+      "[data-choice-reason]",
+      "[data-selection-point]"
+    ],
+    "verificationStatus": "Integration verification and publication must be read from the final spec012/release reports; this research record is not a pass certificate."
+  }
+}

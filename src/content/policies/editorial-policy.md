@@ -3,7 +3,7 @@ title: "Our selection"
 description: "What draws us to a design, how we check the details and how we label AI images and affiliate links."
 locale: "en"
 publishStatus: "published"
-updatedAt: "2026-11-16"
+updatedAt: "2026-11-17"
 sourceIds: []
 ---
 
@@ -16,6 +16,8 @@ We look for colors, shapes and materials we want to wear, from wood and glass to
 ## Details from official sources
 
 We check materials, sizes and regional connections against makers and official shops. Our reasons for choosing a piece and ideas for wearing it are editorial suggestions, rather than first-hand product reviews or test results. We keep unanswered questions clear and update a page when we find new information.
+
+For each piece, we explain the detail that caught our eye, the taste it may suit and what to weigh against an alternative. Comparisons show different directions from our own selection; they are not a popularity ranking or a claim that one piece performs better in a test.
 
 ## A purchase route we can verify
 

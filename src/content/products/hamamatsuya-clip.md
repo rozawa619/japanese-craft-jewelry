@@ -3,6 +3,6 @@ productId: hamamatsuya-clip
 publishStatus: published
 ---
 
-The attraction here is the meeting of wood color and geometric pattern. We chose Hamamatsuya's earrings for the pleasure of bringing that craft detail into a personal jewelry collection.
+Think of an earring as a small patch of pattern beside the face. Hamamatsuya’s yosegi fits that idea: repeated lines and contrasting woods share the same surface, giving the eye more to follow than a single area of color.
 
-Yosegi gives the material itself a role in the design. Explore the maker's actual pairs to find the combination of pattern and color that catches your eye.
+The choice becomes clearer beside other pieces. Maruyama D emphasizes a long outline, while HARIO emphasizes transparency. Start with this workshop catalog when the patterned wood surface is the feature you want to explore.

@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-Little Tears uses a chain as part of the design, with small clear glass shapes threaded onto it. The appeal is the space around the glass and the narrow hanging line. It is a different choice from a broad porcelain shape or a round colored bead.
+We chose Little Tears for the way small glass forms are threaded onto a fine chain. Instead of making one broad glass surface, the design builds the ear ornament from transparent drops and lines.
 
-Compare the ceramic half-moon earrings from 6.KILN for a solid silhouette, or Sghr’s Tie-tie earrings for another long glass shape with different fittings. HARIO’s Kodenmacho shop introduces the maker’s jewelry and adjoining workshop; check opening days and the item you want before planning a visit.
+Sghr’s Tie-tie makes the glass itself elongated, while 6.KILN combines a white porcelain surface with a tassel. HARIO is the candidate for small clear shapes. Compare the pieces by whether you want to add color, surface or a line.

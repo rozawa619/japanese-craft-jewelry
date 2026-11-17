@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-A sea-colored surface combines a pure-silver base, silver-wire drawing and enamel color. Look closely at the way the lines and shades sit together, rather than choosing by color alone.
+Kaisai caught our attention through both color and wire drawing. The maker describes a pure-silver base and silver wires, giving a concrete reason to compare it with jewelry that shows a simpler area of color.
 
-Compare the more transparent Kato SUKE earrings or the porcelain forms of 6.KILN to see how the surface changes the look. Choose the fitting option carefully: the pierced and non-pierced versions do not use the same hardware materials.
+Kato’s SUKE directs attention to translucent color within a clear outline. Kaisai adds drawing within that color. Set them side by side to decide whether a color plane or the lines inside it are the part of cloisonné you want to wear.

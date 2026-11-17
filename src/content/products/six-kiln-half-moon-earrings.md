@@ -3,6 +3,6 @@ productId: six-kiln-half-moon-earrings
 publishStatus: published
 ---
 
-A clean white half-moon at the ear, with a loose fringe of fine chains below: the contrast is what makes this pair interesting. The porcelain gives the design a distinct shape, while the gold-colored lines take it in a more playful direction.
+A solid half-moon followed by fine lines gives this design its reason to be here. 6.KILN combines the clear surface of white porcelain with a more intricate chain tassel, creating interest through two different kinds of shape.
 
-We selected Half-moon as an alternative to a conventional round stud or hoop. Wear it with a soft blouse for an easy contrast, or let the white form stand out against navy. It comes from 6.KILN, a jewelry brand born at Seiroku kiln in Arita, bringing white porcelain into a different part of the wardrobe.
+The same brand’s Blue Bouquet combines a flower and hoop. Compare the two by composition rather than simply by color: a recognizable floral motif, or an abstract half-moon with a long tassel.

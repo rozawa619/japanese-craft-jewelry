@@ -67,7 +67,14 @@ const report = {
   interpretation: 'Reachability only; does not confirm product facts, eligibility, licensing, active stock or approval. Restricted, missing, temporary and network results require manual recheck; no result alone proves closure.',
   inputFiles, total: results.length, summary, results,
 };
-const output = resolve(root, process.env.CHECK_LINK_REPORT_PATH || 'docs/quality-stage-external-links.json');
+const catalog=JSON.parse(await readFile(resolve(root,'src/data/catalog.json'),'utf8'));
+const visits=JSON.parse(await readFile(resolve(root,'src/data/visits.json'),'utf8'));
+const publishedIds=new Set(catalog.products.filter(product=>product.publishStatus==='published').map(product=>product.id));
+const normalize=value=>{const url=new URL(value);url.hash='';return url.href};
+const purchaseAndStoreUrls=[...new Set([...catalog.links.filter(link=>publishedIds.has(link.productId)&&link.officialProductUrl).map(link=>normalize(link.officialProductUrl)),...visits.stores.map(store=>normalize(store.officialStoreUrl))])];
+const unresolved=purchaseAndStoreUrls.flatMap(url=>{const result=results.find(result=>result.url===url);return result?.classification==='reachable'?[]:[{url,status:result?.status??null,classification:result?.classification??'missing-from-scan'}]});
+report.publishedProductAndStoreSubset={uniqueUrls:purchaseAndStoreUrls.length,reachable:purchaseAndStoreUrls.length-unresolved.length,unresolved};
+const output = resolve(root, process.env.CHECK_LINK_REPORT_PATH || 'docs/editorial-stage-external-links.json');
 await mkdir(dirname(output), { recursive: true });
 await writeFile(output, `${JSON.stringify(report, null, 2)}\n`);
 console.log(`Saved ${results.length} results to ${output}: ${JSON.stringify(summary)}`);

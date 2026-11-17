@@ -1,0 +1,177 @@
+{
+  "version": "0.11.0",
+  "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
+  "branch": "main",
+  "status": "deployed_and_verified",
+  "applicationCommit": "f85c757c90fc332d10f62b984b6949824865d812",
+  "actions": {
+    "id": 43890025527,
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/43890025527",
+    "workflowUpdatedAt": "2026-11-16T14:51:29Z"
+  },
+  "previousDeployedVersion": "0.10.0",
+  "previousDeployedApplicationCommit": "9b15f21c5932bb20c1584a99fa0288c8c3e867d0",
+  "publicUrls": {
+    "entry": "https://rozawa619.github.io/japanese-craft-jewelry/",
+    "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+    "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/"
+  },
+  "content": {
+    "products": 42,
+    "regions": 12,
+    "crafts": 18,
+    "sources": 240,
+    "images": 25,
+    "illustrated": 27,
+    "stores": 20,
+    "withStores": 37,
+    "online": 33,
+    "retail": 9
+  },
+  "localVerification": {
+    "typeFiles": 83,
+    "unitTestsPassed": 90,
+    "htmlPages": 220,
+    "hrefSrcReferences": 11878,
+    "anchors": 1617,
+    "ordinaryRetailerLinks": 858,
+    "sponsoredLinks": 0,
+    "inlineScriptHashes": 497,
+    "inertJsonBlocks": 204,
+    "focused": "docs/quality-stage-browser-results.json",
+    "full": "docs/quality-stage-full-browser-results.json",
+    "ads": "docs/quality-stage-ad-build-results.json",
+    "external": "docs/quality-stage-external-links.json",
+    "focusedSummary": {
+      "checks": 437,
+      "passed": 437,
+      "failed": 0,
+      "publishedProducts": 42,
+      "withdrawnProducts": 6,
+      "withdrawnRoutesVerified": 12,
+      "withdrawnHtmlFilesScanned": 220,
+      "unknownPricePublishedProducts": 0,
+      "unknownPriceDetailSample": null,
+      "productDetailChecks": 252,
+      "uniqueProductsChecked": 42,
+      "regionalTypeRoundtrips": 198,
+      "axeScreens": 36,
+      "axeViolations": 0,
+      "screenshots": 26,
+      "pageErrors": 0,
+      "consoleErrors": 0,
+      "externalRequests": 0
+    },
+    "fullStatus": "passed",
+    "adScenariosPassed": 6,
+    "fullSummary": {
+      "checks": 328,
+      "passed": 328,
+      "failed": 0,
+      "pages": 294,
+      "pageVisits": 294,
+      "uniqueRoutes": 96,
+      "axeScreens": 270,
+      "axeViolations": 0,
+      "screenshots": 28
+    },
+    "prices": "docs/quality-stage-prices-results.json",
+    "priceSummary": {
+      "checks": 73,
+      "passed": 73,
+      "failed": 0,
+      "dualMarketProducts": 9,
+      "unknownPricePublishedProducts": 0,
+      "unknownPriceDetailSample": null,
+      "productDetailChecks": 60,
+      "axeScreens": 18,
+      "axeViolations": 0,
+      "screenshots": 6,
+      "pageErrors": 0,
+      "consoleErrors": 0
+    },
+    "externalSummary": {
+      "total": 263,
+      "reachable": 254,
+      "review_access_restricted": 6,
+      "review_temporary_server_error": 2,
+      "review_not_found": 1,
+      "publishedProductAndStoreSubset": {
+        "uniqueUrls": 70,
+        "reachable": 70,
+        "unresolved": []
+      },
+      "supplementalCheckedAt": "2026-11-16T14:56:57.702Z"
+    }
+  },
+  "hostedVerification": {
+    "status": "passed",
+    "focused": "docs/quality-stage-hosted-browser-results.json",
+    "focusedSummary": {
+      "checks": 437,
+      "passed": 437,
+      "failed": 0,
+      "publishedProducts": 42,
+      "withdrawnProducts": 6,
+      "withdrawnRoutesVerified": 12,
+      "withdrawnHtmlFilesScanned": 220,
+      "unknownPricePublishedProducts": 0,
+      "unknownPriceDetailSample": null,
+      "productDetailChecks": 252,
+      "uniqueProductsChecked": 42,
+      "regionalTypeRoundtrips": 198,
+      "axeScreens": 36,
+      "axeViolations": 0,
+      "screenshots": 26,
+      "pageErrors": 0,
+      "consoleErrors": 0,
+      "externalRequests": 0
+    },
+    "supplement": "docs/quality-stage-hosted-supplement-results.json",
+    "supplementSummary": {
+      "checks": 24,
+      "passed": 24,
+      "failed": 0,
+      "canonicalUrls": 204,
+      "uniqueImages": 25,
+      "pageErrors": 0,
+      "consoleErrors": 0
+    },
+    "withdrawn": "docs/quality-stage-hosted-withdrawal-results.json",
+    "withdrawnSummary": {
+      "checks": 22,
+      "passed": 22,
+      "failed": 0,
+      "withdrawnRoutes": 12,
+      "retiredImages": 10
+    },
+    "priority": "docs/quality-stage-hosted-priority-results.json",
+    "prioritySummary": {
+      "passed": 4,
+      "failed": 0,
+      "screenshots": 8
+    },
+    "verifiedAt": "2026-11-16T14:58:04.079Z"
+  },
+  "commercialHosting": {
+    "status": "pending_suitability_review_or_migration",
+    "document": "docs/hosting-commercial-readiness-v11.md",
+    "migrationPerformed": false
+  },
+  "adsense": {
+    "status": "not_applied",
+    "adTagsEnabled": false,
+    "eligibilityOrApprovalCertified": false,
+    "document": "docs/adsense-review-v11.md"
+  },
+  "updatedAt": "2026-11-16T15:01:46.258Z",
+  "sourceDelivery": {
+    "version": "0.11.0",
+    "directory": "../japanese-craft-jewelry-delivery/source",
+    "zip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-source.zip",
+    "verification": "../japanese-craft-jewelry-delivery/package-verification-0.11.0.json",
+    "note": "Archive file set, every file SHA256, version, 25 public images and excluded paths are verified by the adjacent external record; the record is outside the archive to avoid a self-hash cycle."
+  }
+}

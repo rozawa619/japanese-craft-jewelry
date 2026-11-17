@@ -3,6 +3,6 @@ productId: maruyama-clip-c
 publishStatus: published
 ---
 
-The C motif brings wood colors together in a star-like shape. We selected it for the way a playful outline and the geometry of yosegi become one design.
+An outline can be as important as the material inside it. Design C brings a star-like shape together with a radiating wood pattern. We selected it for that combination of restrained wood colors and a recognizable, playful silhouette.
 
-There is pleasure in looking closer at the sections of color. The retailer notes natural variation, so its current photographs can help you choose the pair that appeals to you.
+Design D supplies a narrow vertical line; C makes the small ornament itself the focus. Comparing those two outlines beside your usual collar or hairstyle is a useful way to decide between them.

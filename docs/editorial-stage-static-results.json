@@ -1,0 +1,33 @@
+{
+  "version": "0.12.0",
+  "recordedAt": "2026-11-17T01:43:26.502Z",
+  "command": "pnpm verify",
+  "status": "passed",
+  "typeFiles": 87,
+  "errors": 0,
+  "warnings": 0,
+  "hints": 0,
+  "unitTests": {
+    "total": 92,
+    "passed": 92,
+    "failed": 0
+  },
+  "build": {
+    "htmlPages": 264,
+    "hrefSrcReferences": 14130,
+    "anchors": 1949,
+    "ordinaryRetailerLinks": 1016,
+    "sponsoredLinks": 0,
+    "executableInlineCspHashes": 601,
+    "inertJsonBlocks": 248,
+    "legacyReadingRedirects": 14,
+    "retiredImagesPruned": 10
+  },
+  "initialFailure": {
+    "observed": "The first Astro type check rejected draft-history stories without the newly required decision field.",
+    "fix": "StoredProductStory permits historical draft records without decision. storyFor requires decision before returning a public ProductStory; validation still requires exact localized decision fields for every published product.",
+    "scope": "No draft history was fabricated or published and the required public decision gate was not weakened."
+  },
+  "log": "artifacts/editorial-stage-verify.log (local build artifact; omitted from source ZIP)",
+  "limits": "Type/data/tests/static HTML/CSP/link checks, not browser/hosted or merchant checkout verification."
+}

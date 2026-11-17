@@ -1,0 +1,41 @@
+{
+  "checkedDateJapan": "2026-11-17",
+  "existingProducts": 42,
+  "addedProducts": 8,
+  "totalPublished": 50,
+  "summary": "Merged the 42-entry existing summary patch and 8 new story/choice proposals; runtime catalog, localized text, stories and notes are the maintained sources. Proposal JSON is research history, not an alternative runtime source.",
+  "refinements": [
+    {
+      "products": [
+        "somemasa-peacock-clip-on-earrings",
+        "sirisiri-silver-thread-hoop-mini"
+      ],
+      "change": "Move availability checks and part-material caveats out of the lead; keep specific feather shapes, hand-dyed fabric, metallic thread and open loops first. Existing purchase/parts details stay in the canonical fields."
+    },
+    {
+      "product": "mie-akoya-oh002-stud-earrings",
+      "change": "Remove the stale-cache discussion from the public tax note and duplicate numeric price from material notes. Current numeric Japan price remains only in the canonical price field; the research records retain the fresh 22000 and rejected cached 20000 evidence."
+    },
+    {
+      "region": "kanagawa",
+      "change": "Remove an obsolete 18K explanation for a withdrawn product from the current regional choice guide."
+    },
+    {
+      "product": "somemasa-peacock-clip-on-earrings",
+      "change": "Independent copy review caught an unsupported synthetic-leather backing assignment; the product researcher corrected the proposal to the confirmed list of cotton and synthetic leather before merging."
+    }
+  ],
+  "manualExistingSample": [
+    "hamamatsuya-catch-pierced",
+    "maruyama-clip-c",
+    "rinzen-seika-amber-pierced-earrings",
+    "six-kiln-half-moon-earrings",
+    "saskia-diez-drake-porcelain-cuff",
+    "senshu-pearl-stud-earrings",
+    "sugimura-hosoge-raden-pendant",
+    "simprich-reversible-silver-piaring-single",
+    "morphosphere-ultramarine-pansy-pierced-earrings",
+    "hario-little-tears-clip-on-earrings"
+  ],
+  "limits": "Baseline and exact-copy checks do not establish semantic originality or factual truth. Product research and human review remain separate; no use, wear, test, sales, SEO or approval claim was added."
+}

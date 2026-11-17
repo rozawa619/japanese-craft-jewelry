@@ -3,6 +3,6 @@ productId: morphosphere-ultramarine-pansy-pierced-earrings
 publishStatus: published
 ---
 
-Some days, one strong color is all an outfit needs. This pansy brings ultramarine blue into an embroidered-lace shape, with a fine chain giving the flower room to stand out. We picked it for the contrast between its clear color and its textured surface.
+Morphosphere expresses a familiar flower in an unexpected jewelry material: embroidered lace. We selected the combination of that detailed textile surface and the blue pansy outline as a way to make the flower itself the central ornament.
 
-A white tee and dark denim make an easy starting point. For a softer look, try an ivory blouse and loosely tied hair. Morphosphere’s tint collection uses Yuzen dyeing and embroidery to bring color into everyday accessories; the flower makes that idea immediately visible.
+CHECOS keeps its silver flower compact, while 6.KILN gives blue porcelain a sculptural shape. Here, the surface and outline of lace are the point of interest. A love of flowers can lead to quite different choices of scale and material.

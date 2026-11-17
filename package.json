@@ -1,6 +1,6 @@
 {
   "name": "japanese-craft-jewelry",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@11.25.0",
@@ -20,7 +20,8 @@
     "check:ads": "node scripts/check-ad-build.mjs",
     "package": "node scripts/package-source.mjs",
     "check:prices": "node scripts/check-market-prices.mjs",
-    "check:quality": "node scripts/check-quality-expansion.mjs"
+    "check:quality": "node scripts/check-quality-expansion.mjs",
+    "check:copy": "node scripts/check-editorial-copy.mjs"
   },
   "dependencies": {
     "astro": "7.4.12",

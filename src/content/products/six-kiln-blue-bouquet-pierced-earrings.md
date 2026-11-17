@@ -3,6 +3,6 @@ productId: six-kiln-blue-bouquet-pierced-earrings
 publishStatus: published
 ---
 
-Flowers do not have to be sweet. This small blue bouquet has a crisp, graphic mood, especially when paired with the clean line of its hoop. We like the contrast between the detailed porcelain center and the open circle around it.
+The blue bouquet and the open circle each have a clear place in this composition. We picked it for the small sculptural flower and the space below it, with blue and gold-colored elements making the two shapes distinct.
 
-Choose the hoop when you want a stronger outline, or remove it for a smaller accent. The bouquet is drawn into blue gosu coloring with a needle, bringing Arita porcelain into a piece that feels at home with cotton, denim and a simple everyday wardrobe.
+Compare floral jewelry by material and outline: this is porcelain with a hoop, CHECOS is a compact silver flower, and Morphosphere puts a larger flower into embroidered lace. The shared motif does not make them interchangeable.

@@ -4,6 +4,6 @@ locale: en
 publishStatus: published
 ---
 
-Choose this necklace for its milky pink stone rather than a dense setting of small gems. The oval has a clear outline inside a simple gold frame, making it a useful point of color above a plain top. It offers a different mood from the brand’s compact crystal-and-pearl bubble earrings.
+A color-led necklace does not have to use a strong accent. This design gives pale pink an oval space of its own, with a frame that follows the stone’s outline. That focus is the reason we selected it.
 
-The official page identifies rose quartz and K10 yellow gold, with the stone and chain dimensions listed separately. This is a made-to-order item from Kofu-born SIMPRICH. Gemstone mining origin and individual traditional-craft certification are not established by that regional connection.
+RINZEN combines green with kiriko lines, while Nakajima offers two patterned faces. Here, the interest stays with one stone color. It is a useful candidate when a color you want to wear matters more than the amount of decorative detail.

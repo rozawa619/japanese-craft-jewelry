@@ -4,6 +4,6 @@ locale: en
 publishStatus: published
 ---
 
-The shape is the distinction: this is a broad glass drop flattened into a thin surface, rather than a rounded solid drop. Mint-colored glass and mica are layered with clear crystal glass. Choose it when you want a visible area of soft green beside the face.
+Mint Veil earns its place through both the particular green and the area across which it is shown. A flattened glass drop lets you think in terms of a color plane beside the face, instead of a bead or a small shape at the end of a chain.
 
-Yukie Glass makes its accessories individually at an Otaru atelier. The maker publishes a per-piece weight range, so we do not describe the earrings as weightless or promise comfort. The named piece is one of a kind and shares stock with the atelier gallery; confirm the current listing and fitting details before choosing.
+Rouge Veil from the same studio makes red the stronger color choice. Mint Veil is the pale-green direction. Comparing the two is useful when the broad shape appeals and color becomes the remaining decision.

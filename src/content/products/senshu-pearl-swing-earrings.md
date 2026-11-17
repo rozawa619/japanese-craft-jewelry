@@ -4,8 +4,6 @@ locale: en
 publishStatus: published
 ---
 
-This is the choice for adding a short vertical line rather than keeping the pearl against the ear. The curved fitting and suspended pearl make a different outline from the stud, even though both belong to the same shell-pearl selection.
+Adding a line above a round bead gives it a different role. The suspended outline and curved fitting are the reasons we selected the swing version alongside the studs. It is a choice about where the circle sits around the face.
 
-Choosing the metal color is an easy way to connect it with a watch or another piece of jewelry you already own. Gold-colored metal suggests a warmer pairing; silver-colored metal gives another direction without changing the white pearl.
-
-The regional evidence concerns the pearl component from Senshu, Osaka. The listing identifies the product as made in Japan, while the individual maker and exact assembly location remain unconfirmed.
+Gold-tone and silver-tone fittings also allow a color connection with other jewelry. When comparing pearl materials rather than silhouettes, keep the shell-based imitation-pearl construction part of the decision.

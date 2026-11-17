@@ -4,8 +4,6 @@ locale: en
 publishStatus: published
 ---
 
-A ring can be a place for a motif rather than just a line of metal. We chose the Lotus for that change of scale: a decorative surface brought close to the hand, where a plain outfit can give it space.
+We selected this piece for the idea of enjoying a lotus picture close to the hand. The wooden ring becomes the place for the motif itself, giving it a different focus from a metal band set with a stone.
 
-The wooden construction is also a practical difference from many metal rings. The maker says the photographed piece is Japanese size 16 and cannot be resized, and describes remaking after matching the size with a plain ring. Discuss that process rather than treating the pictured size as a universal fit.
-
-The maker works and exhibits in Nara. Its Hosoge raden pendant provides a different way to bring an ornamental motif into an outfit, at the neckline instead of the hand.
+SUKE supplies a round area of enamel color, and SIMPRICH switches between gemstone faces. Sugimura makes the painted design the reason to choose. Once that design appeals, choosing the fit comes before treating it as an everyday ring option.

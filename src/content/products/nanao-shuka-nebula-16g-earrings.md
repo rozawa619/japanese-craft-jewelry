@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-A small glass motif reveals different colors as the viewing angle changes. The Nara studio uses a glass shaft rather than a metal post for this design.
+We selected Nebula for gathering changing color into a little round top. Where Yukie Glass uses a broad surface, this design concentrates the interest within a small circle.
 
-That construction makes sizing particularly important. Compare its stated gauge and shaft length before choosing; do not substitute a generic claim of skin safety. For another glass shape, compare Sghr’s long Tie-tie earrings or its compact triangular cuff.
+The other important distinction is the glass shaft. When comparing it with metal-post earrings, gauge belongs in the decision alongside material. The color can attract you first, but dimensional compatibility needs to come before choosing it.

@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-A tapered metal shape and reversible color effect make this non-pierced piece a polished alternative to textile or porcelain ear jewelry.
+The reversible color and single-ear unit are the reasons we selected this piece. It invites a different starting point from choosing two matching ornaments. The opening-and-closing SV925 construction also separates it from a hanging-chain design.
 
-The sale unit matters: the official page is titled as a single-ear piece. Treat that difference, the opening mechanism and the made-to-order timing as part of the choice, rather than comparing the number alone.
+HARIO offers clear glass and a vertical line, while 6.KILN offers a white form and tassel. This one places a metal curve on one ear. Consider it if you want to explore both changing the visible color and composing the two sides differently.

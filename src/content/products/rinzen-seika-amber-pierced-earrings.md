@@ -3,6 +3,6 @@ productId: rinzen-seika-amber-pierced-earrings
 publishStatus: published
 ---
 
-Seika brings two different moods into one small form: the warmth of amber and the precision of a clear, star-like cut. The angular glass at the end of a fine chain is the detail that drew us to this pair. It gives a plain shirt or dark dress a point of interest without adding another pattern to your clothes.
+The interesting choice in Seika is the cut as well as the amber color. Its angular outline gives the warm shade a geometric frame, making it a different proposition from a round bead or a flattened glass drop.
 
-Our choice is the amber version, for the way its color works with charcoal and ivory. RINZEN describes hand polishing as central to its kiriko work. Here, the cut pattern lets you enjoy that glassmaking language as jewelry rather than leaving it on a shelf.
+The fine chain is another part of the composition: the cut shape sits at the end of a narrow line. Compare that with the broad colored surface of a Yukie Glass earring to decide whether you want a small cut form or a larger area of color beside the face.

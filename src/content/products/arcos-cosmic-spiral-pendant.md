@@ -4,6 +4,6 @@ locale: en
 publishStatus: published
 ---
 
-Choose a single glass focal point instead of layering tiny stones and chains. Cosmic Spiral is our pick for someone drawn to the miniature world inside a pendant, with a motif worth pausing to look at.
+Where kiriko directs attention to lines across a glass surface, this piece turns the eye inward. A spiral is composed within the top itself. We selected it for the invitation to stop and look more closely at one small glass object.
 
-The bracelet from the same studio puts the accent somewhere different. Pick this pendant for an open neckline, or compare the bracelet if you prefer a feature at your sleeve. Use the maker's current photographs to inspect the individual piece.
+It offers a way to enjoy a cosmic-looking motif without arranging many small stones. Consider it when the glass top is what attracts you first and you are happy to plan the rest of the neckline around it.

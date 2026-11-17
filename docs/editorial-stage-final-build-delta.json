@@ -1,0 +1,1626 @@
+{
+  "checkedAt": "2026-11-17T01:49:32.790Z",
+  "reason": "Final polish after broad checks: replace the unconfirmed Japanese Mie pair expression 一組 with 一品, balance decision headings at narrow widths and regional headings, preserving product facts and price-unit data.",
+  "method": "SHA256 of every generated file before and after the successful final pnpm verify. Astro updates a global style-src hash plus shared hashed CSS references. A page outside product/region routes is accepted only if reversing these exact style metadata substitutions reproduces its complete prior SHA256. The preserved fixture supplies only the previous style directive, and all3 of its CSS files must match the before-build SHA256 first. Script-src and page content are not normalized. Remaining changes are restricted to product/region HTML and compiled CSS. Final focused and hosted checks follow.",
+  "initialFinding": "The initial strict product/region-only expectation failed because a global style-src hash changed in all264HTML. The reverse-style-metadata SHA comparison identifies this expected propagation, not an unrestricted HTML allowance.",
+  "summary": {
+    "status": "passed",
+    "beforeFiles": 296,
+    "afterFiles": 296,
+    "added": 1,
+    "removed": 1,
+    "changed": 264,
+    "sharedStyleMetadataOnlyHtml": 235,
+    "productHtmlBeyondStyleMetadata": 1,
+    "regionHtmlBeyondStyleMetadata": 28
+  },
+  "sharedStyleNormalization": {
+    "previousStyleDist": "artifacts/ad-build-fixture/2026-11-17T01-29-59-921Z/approved-related-product-only/dist",
+    "previousStyleCssVerified": [
+      "_astro/Base.Bk9oRwH_.css",
+      "_astro/RegionSelection.BU9Ha7-Y.css",
+      "_astro/_slug_.BAHxoEWY.css"
+    ],
+    "previousStyle": "style-src 'self' 'sha256-GLAqf9mQtA5v7jxmMQv4ntyutlgcsCIka34520NuIgA=' 'sha256-3lE4LlllaX+V1qndSKL4t5q9wTbTv98upvHk80GGgQw=' 'sha256-wtNuYtw6wOGleVrk2ojLHetmapLOj9a69wn4g/u87Jk=' 'sha256-ALPq3IGyIH0brE003bXo09j4i7Njaz2ibCuUb5U/AB8=' 'sha256-d1azbRwT8cRoJoaN+P38REFH2TQ/U4mrvg1wze4th+A=' 'sha256-bw1KcqZrOAuU9j8pzT1ib8LqlF+mVKe37h08VUZEbC8=' 'sha256-ifpKQSPF7cFToy6xiJieRZUxpXZktcQgP93GKb6c2/U=';",
+    "currentStyle": "style-src 'self' 'sha256-GLAqf9mQtA5v7jxmMQv4ntyutlgcsCIka34520NuIgA=' 'sha256-3lE4LlllaX+V1qndSKL4t5q9wTbTv98upvHk80GGgQw=' 'sha256-wtNuYtw6wOGleVrk2ojLHetmapLOj9a69wn4g/u87Jk=' 'sha256-ALPq3IGyIH0brE003bXo09j4i7Njaz2ibCuUb5U/AB8=' 'sha256-smMEs+Io0ERnxeadDki1rz0jpBV2637Uo5K2OYYTLqU=' 'sha256-bw1KcqZrOAuU9j8pzT1ib8LqlF+mVKe37h08VUZEbC8=' 'sha256-ifpKQSPF7cFToy6xiJieRZUxpXZktcQgP93GKb6c2/U=';"
+  },
+  "cssReplacements": [
+    {
+      "before": "_astro/_slug_.BAHxoEWY.css",
+      "after": "_astro/_slug_.Buz7S89Y.css"
+    }
+  ],
+  "unexpected": [],
+  "added": [
+    "_astro/_slug_.Buz7S89Y.css"
+  ],
+  "removed": [
+    "_astro/_slug_.BAHxoEWY.css"
+  ],
+  "changed": [
+    {
+      "path": "404.html",
+      "before": "23f4ce02b097b31a76fa5e73d6e85bfa6e779631d737e8151a8e16055ff1dbb5",
+      "after": "ed5c3249376d19d14a06ee845a001aa42fb5aa32d42bc9c3fee4e5f0b914dd90",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/about/index.html",
+      "before": "c360489109c1a51a4b894c76f1dda550a5300c6761eab48efc42df44219d8777",
+      "after": "9fd3f9911bf036146d3fe59ae3fcff079a3a9831a85d771eb42b85dd9661cda6",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/affiliate-disclosure/index.html",
+      "before": "96746330d4ffdd0f0c50ea55419a1eb32cff34c0cbbe0ac26cdd2a55afc1e664",
+      "after": "e97a196e3464bb2cd8a1c96d44d8d73348c492baea368ea20b7e393066d0191a",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/ainu-pattern-jewelry/index.html",
+      "before": "187b23bd9e55080fc7841e30dded2e06ca5bf2aaa4281411f51d89d19663aa12",
+      "after": "8ed67b10f8d48487a6e5a19a3ec695f92aece577eeb446cf3eb27ea62f156d99",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/basse-taille-enamel/index.html",
+      "before": "31e641b9c8d432e271bfcc06a86c093a684ff749dde138f5590fd33e2d6a1608",
+      "after": "12873476c1e7f147778bc16ad196a5497cb1a43a74d2a4e837146c4e4de3b5a0",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/burner-worked-glass/index.html",
+      "before": "8b52b50a22c42bea875d470a89a591bdda28274a3bcc7f470c04d52bdc0dc7d5",
+      "after": "2c90d75fbcf66d5547d7ae1fb83c99836e071c0ce1e17e784c0cd1a31e811815",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/hakone-yosegi/index.html",
+      "before": "df2e4eb9205e37e362c0ee84b4f16395847cd8b23bed81d8cb4da25d5d0eec8b",
+      "after": "a3cfcbbcf2b4a1ab72563afb7937120e6dc4ee43e8737a5257a1a8f13b8f67ca",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/imari-arita-ware/index.html",
+      "before": "dcca425f3445ceead25561a99a5d3ae3ce82ca13e8cc6416b17d3b46d2db2ecc",
+      "after": "5fa63b272bc9c496a8fdf6535b5f869354d35a7486a0a4068ce4c9f7f42d4a50",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/ise-shima-akoya-jewelry/index.html",
+      "before": "65a0b36aa6917d3e156e67057ffc2b0e46c853b486d21e9f7f6eb44e0590e33b",
+      "after": "aac9389892d4c10ad5ffb35df11bd476cfe848cf460c49c291a6fec4786647e7",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/izumi-tombodama/index.html",
+      "before": "a2bdb672e2c3f6669fbf3df9a71eb07ba10e63d4df2414897ae6615fd3c49a2e",
+      "after": "0d5fed7bba17394e95ad3afa0832008e5db44312271c76a6f53c2446cdd05cb7",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/kazarikanagu/index.html",
+      "before": "d6d251ed3848dce405d42258cbb4b5eeb86c782360abed29b3c0f26fa2a2c41d",
+      "after": "bc4f9bd3dd5c3da9724f7e18f79b009c3aa9143b74daaff73f7d3c84e8c8e530",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/kiriko/index.html",
+      "before": "07852a4afe29219693c4b867d6031d872347463099a944f10dcb567ccddb4e04",
+      "after": "2f57af29093571a8cfe1af20b9a71a52e441daddfc992c0f788d37a8eda197bf",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/kofu-jewelry/index.html",
+      "before": "6e5211d6a46ebc7e1dadc8cea4ddb954267acc59c28d04d5d4722a0b312679c0",
+      "after": "8aad55bad315400b55f96439efdbe39b6f78c23781dd851c93068843b304823e",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/kujukuri-studio-glass/index.html",
+      "before": "d72dfab49b1cac8321aff727f9fc1b488ba88ff10c514662bffdf6d2e9b063cd",
+      "after": "9d69a47c393dc7023c885c7ba9a811e89d855953a7b34eaf7dc7f995f3eb69a9",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/kurume-kasuri-accessories/index.html",
+      "before": "d1266699e5fc00bde4428d3e75d8d4a2bb5842dc36da8c154a234e68be604161",
+      "after": "1ec33141df662fb6545500aab7a94706bba623e8e062012ec1f02847d2ab32fc",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/kyo-kumihimo/index.html",
+      "before": "7e91e19e7229675c2a14839f1f4fee9f63e6ed0a314df56f952b8ea5f366d896",
+      "after": "65e2b7895c524ef33701049e0481161a6d2c550753b2621f612fb93bb57b803d",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/kyo-zogan/index.html",
+      "before": "57373b3aad9c622b9cd9f7fc7061f77e37e9ed47d59272d5588afaba950a6124",
+      "after": "b57c012fa1b528ecba9517fb2f1b02a22e5062f6d3cf3a9a83c84f112b58b672",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/kyoto-mizuhiki/index.html",
+      "before": "fc7571db0e9620dd761ea29c3d498258eba47dd7813a4dd583d2d4f8580d3ce2",
+      "after": "5c0b4ebab7619c52c22f6b3e617d36e2589c26bcea69c090534518b4edffa0cd",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/kyoto-yuzen/index.html",
+      "before": "17dadc0cc1404c204f7b3d8c893e8d52e6a4d5482caea7ad998bd61bac520c25",
+      "after": "6c69201cb02657d2b404635989a929609502d4705b9cc3239df822c18e5a512e",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/nara-raden-makie/index.html",
+      "before": "65ef6d3b42f81a009496e3c6c583aa6e3cc2f20d1be606e77a256ff3b935e35b",
+      "after": "86f6ec5e12bd3201588d20cbc69c4c69d0142a3b6b46fb966a483cc0b5c09d39",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/otaru-glass/index.html",
+      "before": "d88f2187fdce4e3d442b682030edde3d9690e8b9972961d630d490174c788f6f",
+      "after": "0369dcbce801c7a65a6f853f5f0c96713d03b67bb12421c4a4c06adc644992b4",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/owari-cloisonne/index.html",
+      "before": "32c50f51f6731183f149b5a04b94e8f20602156807582fb6d771372aa9b0ff19",
+      "after": "3eaab18883e8a169a2ba5fd2d4b833a82f9e12abde959712cd437ec843d6dcaf",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/senshu-shell-pearl/index.html",
+      "before": "368d83e1c343fde128d3bd6c602a6fabf2cf79ab0dfd1260dd04d6b05a13f328",
+      "after": "4680d021b60f157bdea21faf2603bf536b5f23ad215f1dbc4d4b2dbfa7999b69",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/silver-thread-work/index.html",
+      "before": "9d6ec3fbc6926300998e9950a7d33c266f66ba24085dd3ab69b977c5cbc0e138",
+      "after": "599b4fa349cbd828ed2d6e3e9f80b90667f34738529807bc6c62cd1e80ae20da",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/silver-work/index.html",
+      "before": "1aaf2252c5ffcfbef489199c213bf30e9b8bc8854d1496a9fa4709bdc70fc888",
+      "after": "4022d5891970ffbb0b7e0f3f74d6966ddc09bfc00f39778ef77338287c0981cc",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/takaoka-tin-casting/index.html",
+      "before": "86273b2f64eee6945ab1f33a4ef2ad87ab07f823962429a6083e009eab369536",
+      "after": "85300dff1e96b28b22f421a2418f8c604d1ba077e3ee8139b85abf51239da6aa",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/crafts/yame-urushi/index.html",
+      "before": "dc5487f679755b846eb04c5178d16a2bd93533267f470423e5718c2115dc70eb",
+      "after": "3d0069cae06cba86919f67ce6a638099af5a2041d626e93387f6021cdb1a1599",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/editorial-policy/index.html",
+      "before": "ca40235ed07715574eb57434b1a2d6f23428951fe6dd053774465d6f6f5e1721",
+      "after": "a0430c2b730d46f2375e6a2303e8181678b7f07a7afa4277d0232158b615267b",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/index.html",
+      "before": "da32c79d4a49221a7f4164556c0f72f318b19d8138f32a68ab46ab52deb48a21",
+      "after": "66eebee1ae0544c92f9ff1b6ea3cc423204108c3393d76e40ed8c94749ddeace",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/journal/buying-from-overseas/index.html",
+      "before": "79544d210114a63b80656551281fc2b92f703f5222d16a3d201778abaee2ce39",
+      "after": "c2cf2e8099f51191521a1b1f3d37f653c93b3132ee904c20cdd28116eecddc96",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/journal/everyday-craft-earrings/index.html",
+      "before": "79544d210114a63b80656551281fc2b92f703f5222d16a3d201778abaee2ce39",
+      "after": "c2cf2e8099f51191521a1b1f3d37f653c93b3132ee904c20cdd28116eecddc96",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/journal/hakone-yosegi-non-pierced-earrings/index.html",
+      "before": "bf310e8a615fb2cbef5963e906309bb66322ac90ea243243509983b1a6814a05",
+      "after": "2a4feece655d64c4e5a11967fe1e98d70baf6798170b909da6d77def0f013782",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/journal/hakone-yosegi-pierced-earrings/index.html",
+      "before": "61a117b0c0e739e0481294e8859bf77a8b3e77917bf6f51222bfa91869b0d110",
+      "after": "cf9b386ff3ef366784a1af781e796deb74262f15205246002e40b951b86a412e",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/journal/index.html",
+      "before": "79544d210114a63b80656551281fc2b92f703f5222d16a3d201778abaee2ce39",
+      "after": "c2cf2e8099f51191521a1b1f3d37f653c93b3132ee904c20cdd28116eecddc96",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/journal/pierced-or-clip-on/index.html",
+      "before": "79544d210114a63b80656551281fc2b92f703f5222d16a3d201778abaee2ce39",
+      "after": "c2cf2e8099f51191521a1b1f3d37f653c93b3132ee904c20cdd28116eecddc96",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/journal/understanding-yosegi/index.html",
+      "before": "02e3947f2820d3ebcf2106a5ffd53acd1d0a7e377a64ade7f1628ae522b10fe5",
+      "after": "b2ddb2d48874d54a67f77d7087ed2c6306f631438d41a3f26cb41467dd217e67",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/arcos/index.html",
+      "before": "ea332fd83d2c75301e193f5141d872bb91e855915d5ff6cdc833e0c876f408a5",
+      "after": "851cbf94d91e64bbc028a41e45fa322a7eaa9916b9dfbd6bcbe6d7285e3d2c19",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/checos/index.html",
+      "before": "566ae779a0d63cb7585f79adfd007fc6f9397b847c732e4b5e41936a6a3172f4",
+      "after": "400d776ec5cf30c587d6268ce61f5bd36615f133410f867f8069e2bc8e511507",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/coyorimi/index.html",
+      "before": "82ee119f38cfa05c5bd7593c3b82ffe5c6b12a5ae2aa045ec8b579fbc3cbcbf0",
+      "after": "2446fdc634aeaaa39878d4a11a44798950c39fb1c2c5db2d41c959fc1fc91342",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/egaho/index.html",
+      "before": "63631df465156e5b12fa2cfb8c83543895adead1dbd7eafff1e0907f8bf97dde",
+      "after": "9fef078758619b061d18fcc9cce83c613afcb590125c95630701e623f5748a28",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/hamamatsuya/index.html",
+      "before": "63ed90d4c700544544172dfd00228ae2fb97352f7959ce4010d1dd61648e0a03",
+      "after": "bdc29e1a38a1cd1eea8cb07e97bf0acb1c94decee7a43f004f3abc7360623137",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/hario-lampwork-factory/index.html",
+      "before": "183fb24bfd0ff1f5601e2de9a82e34b5757d27af4a47105282b76f72b4ff61fd",
+      "after": "230b7cc117c0d808ae6d7006dc4a4599fc7411ee9ce75b89b98706132bef9e33",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/iwaya-urushi/index.html",
+      "before": "b9397c813473536166b0a9d92db528c55d9357b03941910d46eb337b7ab11fb5",
+      "after": "9cd042d385c2272710569f8d8aa5d9500819ccf904e11045834d355df3278764",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/kato-shippo/index.html",
+      "before": "5e90571296f32901a19c5ec87bab9745c9ab67e55b915c173377892017ea76c2",
+      "after": "ac250881f3e42d6d895d7631880f128eedf3e19220772d0cc29bb1e192f9ff33",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/kazarino/index.html",
+      "before": "0f2404cd56b6b2379a012cadf7064add139d63149e240807db7f3a1697ce09a6",
+      "after": "4ac75e62df8fd0afb833fdd21f5f8ecaa607bfed785a9e9a3a2d966f7c153e0b",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/maker-unidentified-maruyama/index.html",
+      "before": "2c9b3dca52734caa632398aaa217c12fa5c9c6e15bc3c199acbfe594651159a3",
+      "after": "6ac6a21b00b2d12f15fdc3b0c536107666cb245381b0e49ee548127849060d27",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/mie-pearl-union/index.html",
+      "before": "593118cf1b89240d0f5c2f13ede6d257aed0b1ee4cea3c86543b843e9e7b1cf6",
+      "after": "73e7d7a2926a429e6d3033871a41aeee9a17f9c8ec7ebdd4d06c3c9ec07e5c61",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/morphosphere/index.html",
+      "before": "85da95f5728ed3040db6abd043637e25a1e9d52e64b1497f74dd553ac351a766",
+      "after": "7a5629f775f70ea7281f15052b4060d8e19771c80014cc7739ba612e586b77fb",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/nakajima-zogan/index.html",
+      "before": "f2fc3b3598f524ce205639e22a6c7859c5d5a75b7d9fc33ac2b6aed1953ac649",
+      "after": "95df961194bfc52beef4ba0f93183fe53626bed265d3b77d6873cb7fab98a24d",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/nanao-shuka/index.html",
+      "before": "80d552395f98bd8a561556903073446f2414b921d4db6338a419e1b6c8d0fb8c",
+      "after": "00a67c68c094fcf30fabcb865c4503d976c081376631eec0cc4a490fb0aa71fb",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/nousaku/index.html",
+      "before": "8c38f10158e32aa942afaedd4f0287a4109d5fe7182d7db10452064cfa52eaec",
+      "after": "b2eac20be786180b48bdd6a46c51116e02663b23dedc92355ebf969ec3d0d6b0",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/premium-pearl-brand/index.html",
+      "before": "e68fa3d15f65e7b38660a87a3a8755e8d3a638937a7f0aa4ec3e0e21b9fbac77",
+      "after": "135bcdb9d89a998be3314b815f11730d6f51e18daa5af757dd99c171b4930f75",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/rinzen/index.html",
+      "before": "99ff603c170dd28c6ecf7458a8401d894d8379ae984724a87cfd489dda53b4a7",
+      "after": "61baf2d522704e86d6f2bc9db55856cd42a133bd21362c9063c4de15e424fcda",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/sangetsu-kobo/index.html",
+      "before": "cc3d5b98af515b2fc343c708195d140dbfc55ad45606c1432599385c5531e628",
+      "after": "4339f5e02b81fbba236cbbe853736217ca42679b0361ae8a89b28275b635acc8",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/saskia-diez-2016/index.html",
+      "before": "3e560b08871d23d3c7eb7f23b566df0d21346cb7fd009660234fe53bf28d94e0",
+      "after": "d08819f5f16f5f405a37b2f59d7c37bea30e6798a240111f5f33f8eb4fe99b0b",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/sghr-sugahara/index.html",
+      "before": "d9afd339c5a93d8c1a1812d8d01c807d03017633963a1b4e86478c6f905fd6d5",
+      "after": "220ca3ed5b105860c121a72824b334411f00359b36f3ec9609e99dbb6e9abeee",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/showen-kumihimo/index.html",
+      "before": "bae8d8d312b8a3c3723228f2af6953e790380ea613e7016262faa5810db48e0a",
+      "after": "aef0cabb83b1006643aa0f16df2a95585e41937c45267455c29a1651ca675ce5",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/simprich/index.html",
+      "before": "d9e0fd48460c6f56635b0c6a426c821a3ac03b08b7c79bfe018a93ca5a9b851e",
+      "after": "76f01401de1e17029af5afaee22c26a9dc5fbbe71c39f759a25716ff76020cac",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/sirisiri/index.html",
+      "before": "5d33c1fb83c85bd4cbbab08675c6bc7217af7d8fd825481d9755acf671125f2c",
+      "after": "b56865bc40cb0d3ea4ee673f9429999f8247ce4fcd08b4c11890ce7eb3a5b627",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/six-kiln/index.html",
+      "before": "281947373410992d15716a3df7df64feba6d8f0c54a2c9c1b6e598e6c8f59be5",
+      "after": "0c4d8d4c555d5714f75367bc6b6ed5160e8295b81d95bccd3c07e57532f17822",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/somemasa-sextile/index.html",
+      "before": "efb72ac63278e8d63f0c7f96b6d7219b98f566f7dcb6f034f8ad22a42fd8908d",
+      "after": "6dc6c6a378d51f889888e54a381f603a860fac61d6ab723f1055a3e6d6f36c1c",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/tamura-shippo/index.html",
+      "before": "084a9122c2d82414a4e6904dd7f28e24def26eabe71761cfa626963b67ffcc97",
+      "after": "7c437a99ce91f0ba92b36af12da0a642c9a2646c5c29c468e66e3856e316d71f",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/toytoy/index.html",
+      "before": "bd8c214bf02e5910f0b28761dbc2f119cb3ebe5d41fd1f7a84d94589b4e4fa83",
+      "after": "abaccfa5b8db19116b8e98a50a11e50e09cbb9c080c57dfd8e9a24db006b612f",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/yamato-urushi-sugimura/index.html",
+      "before": "26ddd136943b9afa81a36e0beb1ed9239d0d532e52ebff6ba35e440d0c1b728d",
+      "after": "3c88d4a752b0a4710c1c62291ad810f11c8f51f1668866f99bf0266829e87c93",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/makers/yukie-glass/index.html",
+      "before": "29ce0b9e73577d706c1da907c9d8e3bf8206fa89cd378a98f381fbfb8ee4afea",
+      "after": "eaee22ffd62f48847c96a896d2d34ef3ca841a5716172e71508898b3229f483f",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/arcos-cosmic-glass-bracelet/index.html",
+      "before": "870212c9b74bee95bbe3ff5bfc59015c74246b436c22e9c389612a788d4fa938",
+      "after": "703825403cc73f570ea551f097aaab61466f85475d354712912404f850e1faf4",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/arcos-cosmic-spiral-pendant/index.html",
+      "before": "217855433eaf793d3b0c9f4671c2d8bdb822b8e85cee3d79b2980c1c288dfcd9",
+      "after": "25d9fe42e680f2e82df5d1ded30ad7b7613d1fcdb2bd6b3feb90d5a4a21ad12f",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/checos-japanese-apricot-pierced-earrings/index.html",
+      "before": "f5eb723bbdac951143fcdc795c7049a5aabe23cb572cdb75d12be651162cb361",
+      "after": "1591e764fdf1d91a1fe7691964b7d60fa62773c92c8417bdcdab54a8092736d0",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/coyorimi-tamamusubi-clip-on-earrings/index.html",
+      "before": "b14bb6224a45246fa1bc0bfdcf05c5c8ccffac8cff1b74ea12df3ef860e884c3",
+      "after": "c2c9484dd97d059cfd58e407f05b6e9648f84f9cfbac2458656b6e47fdb34d72",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/egaho-gathered-kurume-kasuri-ear-jewelry/index.html",
+      "before": "bc5c0e73b573a5cbdd74e5d365fa58754b8616e5070ebaf60b808dc659b67771",
+      "after": "5028a41f79ff44b90e109450e8caa7fb8b0069d079b29d791c5b343a59d0efab",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/hamamatsuya-muku-yosegi-pendant/index.html",
+      "before": "d502eefe6cd100c31ade757f9e3ca27bf23863c588ae0b3eff7657c45fc90f9e",
+      "after": "070cd7ea2a56553e354e6246668e4b90ad98804d0c1a21155f11432ce15406e9",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/hamamatsuya-surgical-stainless-pierced-earrings/index.html",
+      "before": "b354e29913360c587afb5988c0e517addd3eea6f414401a4684ce16746cadccd",
+      "after": "3ddc6042f5d37ef19c14836d4f0b0f7ec15cf9347a5c9b9de1df01b3dac6d845",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/hamamatsuya-yosegi-non-pierced-earrings/index.html",
+      "before": "7d69e5ebfdbcd8cf53a16eb0d83ba0911460f089b7a48c2d78ef391981bb1413",
+      "after": "bc7f129960c61d7dde217b64b641308902bf131f78a6e2402131da03c7bd409d",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/hario-little-tears-clip-on-earrings/index.html",
+      "before": "1d3c6b89deb28727781efdb5a9af71d92f17ca36cdb27b9a7cab81bd0f8a4a28",
+      "after": "3f2b7ad8855bfc436dc4e828411957a7f069fb66bad59528244f0f6770a42180",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/index.html",
+      "before": "710d0288f06c11ca6c59592b26b4aa0e7ba96f3ab17f89229e4e3380480e70cb",
+      "after": "5e10838dba0d854b638dbaea349d7cad34f8aefb6024e94513370e2a24bfa1ff",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/iwaya-urushi-9mm-hook-earrings/index.html",
+      "before": "a78916a66f2cca3f9e38aa02f4fad00d66701eea2fcf2cf5196eaf6d4cd670a2",
+      "after": "c96c1b2916e87b08e27124497ab320c242daebefe264daa7ad7921c65fc9e1f9",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/kato-suke-drop-pierced-earrings/index.html",
+      "before": "a6c8b4035a2a922d68b4778b3e412c6dd7ceaa2a0161601b8f6667269c3a0384",
+      "after": "90407a7ca5d01b41d306cbb950e0271c92a0786e656becd757cbd76f57ecd7d7",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/kato-suke-round-ring/index.html",
+      "before": "e1df1d063166fcab8fc720474af78d987f5c786a3488a23fae074ced208c4ee0",
+      "after": "13482c0e23fa05ec5eb3d6cf4a8e35bfd4511d1dde0efa3e6e280c206f767276",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/kazarino-hanabishi-copper-earrings/index.html",
+      "before": "1fc6cbe73417094a0056aded021f019f7f2a99912501869b2c81e8815b0da336",
+      "after": "f2bf24914f5b6624ea9fd87db5b7a6db260d12b7cdd18e6cdb50c429a4192a92",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/kazarino-shippo-pattern-brass-bangle/index.html",
+      "before": "1212362c05bd73b2d8d02182d4dd1b9d06f31bcd983bc2599ee5bf1a117b6396",
+      "after": "14ae7723982770b5297883a322281a411fa9924058068449e7a889f99c265352",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/maruyama-yosegi-non-pierced-c/index.html",
+      "before": "7d105fa94b1ab201f762df0d98e35c357b7b974b7b3c993419d7338239821c58",
+      "after": "126c342b6039bd682bfd5cf8c59f7529e85e05491545a6812a7464303a044080",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/maruyama-yosegi-non-pierced-d/index.html",
+      "before": "a16d808c4bb314ac1530cd4346512a875cf920bd1e05b813fc14f7432d3d57f0",
+      "after": "90e46bff8130682b3ebe71bb4932641cc7e4866cafd18523f35ec96d976fad4a",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/maruyama-yosegi-pierced-c/index.html",
+      "before": "f1bc462785a431b1f01b10b79b7c0c23bc4ac4d6736b3f7c7af84fdde35b2018",
+      "after": "6d97a5a0a4491f67b2d4ace2e1e84daf7983f3f6b0ccc35b2f0eefc452ba2c33",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/maruyama-yosegi-pierced-d/index.html",
+      "before": "6698087a9c8a506b9d8a8f1db1a0dc846237146dd03ecb266616dc57110d8941",
+      "after": "980459b41ba9f1c48d40f393b582d2f9c17a7cc807408e722dcc59b653f07b39",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/mie-akoya-oh002-stud-earrings/index.html",
+      "before": "13b1eb06e217cb82820ea245569f1be8e3f139ae2ba02a81526758d6f1e98199",
+      "after": "ee800444565ad9fb4788fe5987ece50eef73e7dadeb1b6ab01124a2dd290a811",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/morphosphere-ultramarine-pansy-pierced-earrings/index.html",
+      "before": "056043c1024e3e919d00b234f95c95a54ef776a69ba1af4a301206227a790f24",
+      "after": "e563f48b4e9d2ee12d6408636805d7eeaa0fe89d167e81b502d4f598e7246dfd",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/nakajima-pear-sakura-pendant/index.html",
+      "before": "8e5c95859c3985e79d645f4423afab4a0e5db036b279f56163ef1b4d92749670",
+      "after": "90b45ddbfddce75d9790ae39a2c5dd2206b94c778aa3af1f50b688398220c80b",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/nanao-shuka-nebula-16g-earrings/index.html",
+      "before": "8a7f34a9dcf6ad27cbcbfa754278627d83b62ced9f60ee6e6c56b29c57656337",
+      "after": "5a031a91423ecd613758d4e742c731e56bfab695aa79e2ef4fd199571739bdc5",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/nousaku-aya-tin-pendant/index.html",
+      "before": "c4cd9d238d3d591cc4302cef2f0f4a3b385c688ea0c72f615e68f48566123576",
+      "after": "42a5c107a7c4b1dc477ffe60d081cd837c420d37c794fab38f2cc3df91c44021",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/nousaku-dahlia-gerbera-clip-on-earrings/index.html",
+      "before": "23a61714abfd76065d6534f2645413cf6a5d5778b36e923eebd05ba80379c5d6",
+      "after": "2eb76ec007df3b10d31da024d7f365f125e2b5a651f24a0971a663db24d4b0e5",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/rinzen-leaf-glass-pendant/index.html",
+      "before": "68843953e53bf47a57cea9598a1eab1bca30d31d83ca5121904e67d5e4be72f5",
+      "after": "83dac98290f2f8257efcc64b2a3f7d0332c8ac0448b85bee67df8f51ba1f23b5",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/rinzen-seika-amber-pierced-earrings/index.html",
+      "before": "e5c0f3177763213e6b22680845af1c392b6a1c8b8aab919c92db3ec07acd22af",
+      "after": "48bbba75c48228b85246ae98b4cb0220650591e46d1ade183d7a5d400cf69a15",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/sangetsu-irodori-tombodama-earrings/index.html",
+      "before": "2ab0097872ea206a8954ba1b958ddee90125c93c97f3d213036ff37a6db889a8",
+      "after": "093f5489bda9fa0a62839154f59ec1041ec9d8edfbbf563781cef07c08e553fe",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/sangetsu-irodori-tombodama-necklace/index.html",
+      "before": "64f75a7ec03d5d0f1175183add91200592e484b87bb7efa13e52cccd3fe4b884",
+      "after": "32fa540c7e11f31b4e4bfd7b94d042aff6a6ad0af921a716b8d3956ecab70d22",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/saskia-diez-drake-porcelain-cuff/index.html",
+      "before": "814a5d17f45519b69531de7eecbb5da17061741897f89aa5f2d01c11e4501f26",
+      "after": "d4d607fb2597ea0c0b841639dc506d834609c561609ef29073be531c7f600d5b",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/senshu-pearl-stud-earrings/index.html",
+      "before": "0f012ff96d9f61e2cdff1783aee93cccbf275a1e86a57574d96c90a40679f62d",
+      "after": "8c4ed69ab0a70c5358b1921de463d6830c0ca47a4925c097819e20f11ccc5486",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/senshu-pearl-swing-earrings/index.html",
+      "before": "41d72999bfceddc5743032c1b4d86cd0299f01c9efde7d283e8adec9505172e7",
+      "after": "4da02b84a0fbd3ab5f21dadd82c60ca935e4aa5e56d4b7700e997cd1ed0a5e33",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/sghr-kolmio-glass-ear-cuff/index.html",
+      "before": "f0838467617737a4430bb9926844b2d1d7222f0c577ba6fc8e9a7708ebad880f",
+      "after": "92d46e91abf1f8be02981984a529e57fdfacdb98cc89f0157c6096bc23881a96",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/sghr-tie-tie-glass-earrings/index.html",
+      "before": "da23a5b5ad62985aa06a76de93470c5ce79bf41e310d4f6372ce1af503643525",
+      "after": "f1b1202ace29decd12eba29b1c7f1fad7eae171865d63465e27f6ea9ae1bee7f",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/showen-edo-uchi-silk-bracelet/index.html",
+      "before": "67d809123c3ec243824b149bb89fa7b2df0647043c16c629ca3824d2464fbcdc",
+      "after": "0fff569fc414de5f33e54fb11d1b0b57b38865078d6633790bd0b9427cf0d067",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/simprich-crystal-bubble-pierced-earrings/index.html",
+      "before": "06ea19d80735b443ac26a43b6cdf8f54d5bb28c407b7289d483f429cb5d19c89",
+      "after": "ec009f93137126edb5ed59f2768f8e67a79a8925d1a0f24aceb990c57d689cf3",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/simprich-reversible-silver-piaring-single/index.html",
+      "before": "fe49523ef4720b40d8a3abe36888aa85399f612eae15edb7581a25939a1182c9",
+      "after": "fd7d6f02ff5e8a88ba73a700bbee2a81fecca4f1f639239c19e205bf918357dd",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/simprich-reversible-topaz-ruby-chain-ring/index.html",
+      "before": "ae7867960228f11347ea45b2257c6dfc479f39351032b3b0c5e054239fdb2ded",
+      "after": "c3f25569cc310b46b7a1bcdffdaf98057fb361439df9d69a6ffa184e00cce2c0",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/simprich-rose-quartz-necklace/index.html",
+      "before": "29a60052b29cfa4e77740bfb97c498863ebe9ff300a1ecb406091b323986bc4b",
+      "after": "748fca433df6eaab7128d42237a1e423195a31ebd10ea591472cf86c34cd5f3b",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/sirisiri-page-blue-enamel-pierced-earrings/index.html",
+      "before": "c1b11ae07bc166f62f97b7e4c2b21d26dede5fbf5fbcc818ba6cc975678380c6",
+      "after": "0e5e6edff33f4c0f398fbf54e76efdecfa60026238e566aab11de4031378f902",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/sirisiri-silver-thread-hoop-mini/index.html",
+      "before": "6cf9978cb8e35afa4f6ea7214f0edda7292ba0685dc3237888bed45ddf5a657f",
+      "after": "9ecf5c19cdcce3913439f8105892f6a24385bfa661599ebf03f6d5437d1d7a8c",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/six-kiln-blue-bouquet-pierced-earrings/index.html",
+      "before": "ed2276c128e247a952cdb4eb85f761504d4fa780e3d440a383b2a116da8541e5",
+      "after": "26eb73a584ba395a2191ddc7e6f83886c65474c4a0daf7263b9eaa9b55d08257",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/six-kiln-half-moon-earrings/index.html",
+      "before": "bccea45c5c4e62cbb2206be43fbc543b76efe534360b48b392fc2e7708e94ded",
+      "after": "7258871afd5ab6bda58e0db6bcc78d61b6601ddb5351e4ff2d11e0020bd8f435",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/somemasa-peacock-clip-on-earrings/index.html",
+      "before": "89aff7aa85c4666df69f5f22002a181b17d21f8e2ff8e16c5e960497c1706106",
+      "after": "11bea0e1e580325522937bb123bfed3bb3742b4bcac137a1b8f18fe168e12eeb",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/sugimura-hosoge-raden-pendant/index.html",
+      "before": "4a0c5c6afdff90a770b327a48ffeda3588beea2d172466fb8be36dcde3f5a52c",
+      "after": "d80fd14ba6bf7a5fbf7f696c0d4387ffcb295a654c728ef55d6cfcd7c5af8338",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/sugimura-lotus-makie-ring/index.html",
+      "before": "17b3fc3563ef4863d3079a3dfad60d059b5f55d4e6447937cbc80b4adcecdd14",
+      "after": "b9c46e9ea042a3dc428a4c45a86b1fcedac851f55b83d422bd41775c498ce2a3",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/tamura-kaisai-enamel-ear-jewelry/index.html",
+      "before": "8b94c8bc2bd8dec8bebff2e8044d4952a51cc0e929ed96a5348371e99c23291c",
+      "after": "16e5c628fca028af4d8c377ccaeb1d50b9ac9314aa2baa3470ac140ba587bc7a",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/toytoy-ninkari-nikuri-earrings/index.html",
+      "before": "afe40571d3063f142c91f4f5cf1d1d371fd85917fbe5f37fff23190499af53a1",
+      "after": "40bee81349ac5d15cb906efffc60a31e0d1926e40b4447328eff8d38dab00ed3",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/toytoy-sirokani-pe-silver-necklace/index.html",
+      "before": "897b4c8c97ec6c65d4e02e06107994bde4a0a7b0a28f771ccdd61600887f991e",
+      "after": "62b8396d7bf9e67ce89a962d812f2fcebcc1c48e5595caae2aec47065c2c432d",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/yukieglass-mint-veil-earrings/index.html",
+      "before": "723a86a9303f3fd9b226549e4ee020ade7e1846ac91098ba286411f6ab45ae49",
+      "after": "d6829e1c374fed33637e79a3c9b9b34fb1b1c61086b7334eed242546067afc4f",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/objects/yukieglass-rouge-veil-earrings/index.html",
+      "before": "13a1b1b90f09c4ca153bbf22fc12a4ce84e0e7bcf9b87b11aff8079550e2726a",
+      "after": "f9badbac36f7397c6953c12f1377d21777e8f5fd7f277fde2488230ccc3f2fa3",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/places/aichi/index.html",
+      "before": "f838822527b14fa0e1efeb5714051b3fd9ad936d510effa72c4f2632989eb35f",
+      "after": "7f1fc7de3445d1876674a5d60aed6b4238a29356c4e983127a92c4c569e61479",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "en/places/chiba/index.html",
+      "before": "69c193f95bcd0fe69a52b29e8368c7ae58c859c135dacfd920c3ba57daea244a",
+      "after": "02ae457d56bc9fde73dd54f6450dbfc6e1f4ab15c6de0d1c41aae4ea4749b77f",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "en/places/fukuoka/index.html",
+      "before": "390b9d27f943da7d372632c95f23f40721ef92b7775aacacd4c0d8cae62b9ef9",
+      "after": "6561336c45fb008126ce4401681bcd55cab013bcd63553af5eeb2bd6d04df28a",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "en/places/hokkaido/index.html",
+      "before": "6690d4a067c905cb4478a0d6f0c10e65344b5fabcc275626fbaf1d6cf2e75528",
+      "after": "f9d33bc65b219e0a7a1c9a2b8623a823bc3d4e7364630a78f8259bfcb6370d2e",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "en/places/index.html",
+      "before": "10f2c9817398a41271ea72e603f43a6598727fb75a1bb761af406702ccc8a295",
+      "after": "c870e695fa80b07a56121cbdc1452bf5297e280aedcb0884a4761331ad1c5d4c",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "en/places/ishikawa/index.html",
+      "before": "23e00fb01dd781acf1034b8a5cce9aff7c6a350fa397d44fc1d1e4f4c64a121f",
+      "after": "5ff78f44c0841a67e331d75c0fe1214a45dc87cf643cf8a91e3405a678c98e66",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "en/places/kanagawa/index.html",
+      "before": "e7a03afe0bcc40823276f9d2a0eb3588c52c45f8f1d77cc1fbdea9d945028c9b",
+      "after": "c1f8d8197acfe02812bd1bcb1adcac1ea8f998b2c1b41d1577e47584236c6a49",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "en/places/kyoto/index.html",
+      "before": "01f6d7e02f2f04efc0172e89d5feed04e0a510f7bf1f1c3e26d5cbdf1609d5a9",
+      "after": "8dd256bd1859f621f74d8fe7f81e9d86c419e6f63e83e0409e11fe1fbd73fb77",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "en/places/mie/index.html",
+      "before": "476732a0aa971ecf61106db40d9af6a8da26ceaf8226556c4f2435f606ee0193",
+      "after": "518d4ebd99726647ae3874375b21104b8dcd417a96bd12397d2933d6e58167ba",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "en/places/nara/index.html",
+      "before": "0dcaae56ad8d7d75688d93d90671b02477cd9c29f9f5854f78df34bcde9ae76f",
+      "after": "86bf25edf68b6bbe99331c6fd2ee87a10836b5172e290d616c2a394039f81c3e",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "en/places/osaka/index.html",
+      "before": "5937293cc867cd7232535595c02e9243cd04313be8cc4a336acc5aea9622ce35",
+      "after": "27d9807080fbe93f35e09749956b1c50427018e2250f208aa7c45fb1afb8cd90",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "en/places/saga/index.html",
+      "before": "70b1bd4a14c8f42c7def7ae3b9c4370c3146db7232514ee3df80136f04a6ce32",
+      "after": "02630d7a13cb964878f838e453334fe9fcf525dafcc6964eff96e2b71983afa1",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "en/places/tokyo/index.html",
+      "before": "b641b533fbeb3afb898a29c7d64e09fe26a2897900e6dab4cddeac709da6cfa1",
+      "after": "3d4dc10e7d78d7e1107e66a2af7a9cc62f89b7d396d084dc6aec194a71cae48c",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "en/places/toyama/index.html",
+      "before": "9d350a2df1456cf80a74c2e4a5acf54ebc5ec357fa94c7a908a7a63aaaf4a79e",
+      "after": "197f262e2702a40e41787c5240a8f1c897b68d74267da34ea502c18b8a349bfb",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "en/places/yamanashi/index.html",
+      "before": "caf63ad095237789f4c84848b860ca3c0fb9fea2587d77d6669d6f5cdb9a2ae9",
+      "after": "470d705a724fbf1f636dbf1d795b841f3c313b2c5e539bb41bd68f9746b2232d",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "en/privacy/index.html",
+      "before": "246d8b40c29370788c30467f92450823f31b5a82b0c4db2b27648d5d02a6574d",
+      "after": "d23984dfcfa04819de9e726f6b7da2104964ac42cf7cbbfee55629e7b5c96ead",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "index.html",
+      "before": "246130cc6229fa36c4864931e04a59c5218a879d8d76229cf7953a31fb27db6b",
+      "after": "9435cdbca32f90a9c1b46fb8e56190e955c16a3e0dd4f139b9c15456628a3a9b",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/about/index.html",
+      "before": "b66216eafd816d179a81eca808675d2868552c1982acef97c89fc9591b00f19f",
+      "after": "cfb473a6895e041ba6c2dbba452d3e47d99a17b4822e22d99ed461573eb15b90",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/affiliate-disclosure/index.html",
+      "before": "29c1c78b17a16b97c1fe7510e1cb338eaf9f89a61e69ce5ea0b07ee7ebd4598b",
+      "after": "8b73846039239685414b010399cd483ac5dc5f330468746687979a5bc58b2e77",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/ainu-pattern-jewelry/index.html",
+      "before": "f46106cdf18b7cef294fbac69113ed41bc75f69e58706d3095514fd8820be962",
+      "after": "d9bf83e484491ca870c1f7153e1a83ec44a7cd82d7d3ba882c34a8df7661afc0",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/basse-taille-enamel/index.html",
+      "before": "1b7d0c8e9d50149c8f0379223e6808ab71b0f6c8fc9718a013db4734c9943d33",
+      "after": "66c8a29d41de902417bc4c839327b4041924a815d6763db14cab6c260892e0d6",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/burner-worked-glass/index.html",
+      "before": "8dc2c7ba1f467e57bef4a57d6d9be3acd8e87e01f2da819164dc5526f75b87a4",
+      "after": "e253eb7e9d03a266a351cae9c97ca09077572b22268ccc93d85dda8fba98a48d",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/hakone-yosegi/index.html",
+      "before": "1035ab4c6139f361d901303106ce21fd8551b413a9b4259069f1882cb5491d5b",
+      "after": "16272425bfba3b73e472c0baa45ce4cffe42d65c6cacfef22dd67ffd97cd4d53",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/imari-arita-ware/index.html",
+      "before": "083660ef24923898752646c1da7a81e7862c104d74ebc805576064dc9f1b7f5b",
+      "after": "ed0053842c0fd47af8c6d58f19c5521e1ba83d461add05453087d471e6962f4f",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/ise-shima-akoya-jewelry/index.html",
+      "before": "d7960e90b70868666c1d79f50190fe88fffb355ac812099e09615ba219f19204",
+      "after": "beaa3ff1127c527bfcdb5c154eea65138d0bfef2e76bd5b60c9d145b9c0c94d4",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/izumi-tombodama/index.html",
+      "before": "cfc1793cadb11758c4f6c0416a210159f45951109dec387ce7218f5d5180cbd8",
+      "after": "f1c3937dbb958187a834419c4fd2224071f01f12df5127c7c701efacbf5ee491",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/kazarikanagu/index.html",
+      "before": "26482af7aaa2ba8d17191b045f343e43026abed8f39d53affcb5af426be2c5a9",
+      "after": "ec2e56ecde95738d1af8c3308abf6c5b71841433c77d4ddde87c3b6652a750e9",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/kiriko/index.html",
+      "before": "f13b4be1ced908b676fbe1ea170d1d6c6e4e9105fe442a71821125cd9fde6430",
+      "after": "75920ea3ba1b5200943b45b7f1152730dc735217b1fa5e04c11c60c940c98012",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/kofu-jewelry/index.html",
+      "before": "0a9aa10224cac111fb8038899f6206fd7f7a6c62c5afe563227176ad736d9ee0",
+      "after": "3b271eb766354fe7b2c9e849eb14897071349f3b133bd7acc402f6a2ac304cc9",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/kujukuri-studio-glass/index.html",
+      "before": "b449e53f4357954ec875131a1f6768b671f184297d0da376fdb2a7e248632d25",
+      "after": "463103d95817fb0de7c1dfa2da8886f5018f5dc495ac4bf26cb39c5f7cc021ca",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/kurume-kasuri-accessories/index.html",
+      "before": "b6bf77b6d8d67344cdaad9b367da59bbed61a38b9ec7838e74b9dd88bfbcc3eb",
+      "after": "524a1246b7f5402fcac32fc355d354a57116505e94c5bf670ba5bbcb891b54d4",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/kyo-kumihimo/index.html",
+      "before": "146ea44197b8496bd669e9092e902c76b34d6d4673404d3533099c2a7ed8e915",
+      "after": "799a63ecfd972e7dd6feb087d420d1bb683cfbfd29423637cc7f5179c9dbc027",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/kyo-zogan/index.html",
+      "before": "65e95b6bed5893aab29693b64c445da0db803ce2a58e08f34432020f7faf48d6",
+      "after": "82dbdaf439c80f31a2265255062560f5cb02efea183853ae98c3bdd46f79c04f",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/kyoto-mizuhiki/index.html",
+      "before": "3311f83644b92d1da180062ab141e1f37460ba5ab32f127a925dd33fe44dcbca",
+      "after": "922eed6a38586df6b2d113584f24275e2a012d04f5b66627c4008d9475d1a235",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/kyoto-yuzen/index.html",
+      "before": "e58e52e021d35a1c5c108318e27841a2364cc302f11ed54b2ecb836a4b9767b6",
+      "after": "af1465b898fc05bea98edaa6718e3b144a6265ee2babe49bd4d36e3e69384b5f",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/nara-raden-makie/index.html",
+      "before": "822d4f7f80986846c8267956d9dfe985b8ea2e0d74ba373cf43c359e63e8c307",
+      "after": "1650c975714ac92b1f57cfd962145698faa8dc22fd352fbca94a7c0fa6dbd5bb",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/otaru-glass/index.html",
+      "before": "c31cda6ceb5f11c8662904040d782f54bbc0dd68b27b1ef3a86606190fec85b6",
+      "after": "a23eb3d585080875d8f031d4a3bbc88fb064237cb35ba963b2ec81d750d56495",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/owari-cloisonne/index.html",
+      "before": "2724ad4754a0019525bd270a5e6994b5ca2e80807eb5394da4c9eea00e7a573a",
+      "after": "b96bf803912932b7070c81e2f7f8cd8b1aa31bc8fa891d40755fbc91812e8af2",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/senshu-shell-pearl/index.html",
+      "before": "c0b227f239a4a482c35a5cd2e995f27c25e93049b1f5bbe8541e6dedf3308086",
+      "after": "a2a6cb621cb19658839be76a236ff951cc7cc2170b2277c169a4826fa9d489bb",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/silver-thread-work/index.html",
+      "before": "53035dbac6a8cba945205f996327ed589427f63ef72dad49056fdb82f18aec32",
+      "after": "f3e9f7a2e53d079dec5d60427f9ee090c6776fb307e23a9bfe2e3f423d410e5f",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/silver-work/index.html",
+      "before": "5e283e9df26f3d449f7e68ce6ec71e4f3e87fd449d47baf2d55debb399bb888c",
+      "after": "f4a0de760c2fb9a526a29d1d7dc610974141a62b2be71b2b71a38c40f5acb771",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/takaoka-tin-casting/index.html",
+      "before": "8e6a3b75ef6aaa330ff8e580cf9335a5d35d71e4dfa5910028e56fbf7f3373d8",
+      "after": "d4a71892a4624270cef54144df89484761d36bd8be988359445295bb77b4d7f1",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/crafts/yame-urushi/index.html",
+      "before": "1275f467aa2a19f62acfb4e27067b28bf9fd31b4af841088b717cbcc8d600a6e",
+      "after": "f43e9b9c409d3a77a39119f8b3acd97ba409e01124ca3f2fadf6ce0ea411b157",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/editorial-policy/index.html",
+      "before": "b4de788bf11e5386f5b0d4261d86e68dce1346ec4baac9c64ac3af943d90d0db",
+      "after": "02282493c08a935d3b29e02a17e5646561495028a6094ac4c635a07743f5dc17",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/index.html",
+      "before": "7105dc605260f610785808a70a818f3670300d1b47c9aca7290bb776f808f9c4",
+      "after": "7a8c91c6e9c62dd09b7e051e431419b901c08f0f953bf272979272499ac9dd71",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/journal/buying-from-overseas/index.html",
+      "before": "6ef8d43fe333d326ce3b1faad6cc133a3b5d9aa9387b1603e60d9ca96943fa89",
+      "after": "86d27a8403d28e01e866addc7be730758d0d8bca1e9f90a3c1932dc455304010",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/journal/everyday-craft-earrings/index.html",
+      "before": "6ef8d43fe333d326ce3b1faad6cc133a3b5d9aa9387b1603e60d9ca96943fa89",
+      "after": "86d27a8403d28e01e866addc7be730758d0d8bca1e9f90a3c1932dc455304010",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/journal/hakone-yosegi-non-pierced-earrings/index.html",
+      "before": "7eb9dbd4e203de3c28459e9bc4f512a3a92b32aa0e17b79e372702a71c2eeae2",
+      "after": "cfc210efd3ccda0db7d4acd55fcffb6b7335506aa7b56a7a82afac8468b97722",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/journal/hakone-yosegi-pierced-earrings/index.html",
+      "before": "85166789b2347b179a9f0ea2bc63cc6f739c46c9ee407e20707ed3f724d6b9a6",
+      "after": "8bf679cc165f9d79b914a533877809eda1d8d0c20ee4c8124a7b494a9515cbfa",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/journal/index.html",
+      "before": "6ef8d43fe333d326ce3b1faad6cc133a3b5d9aa9387b1603e60d9ca96943fa89",
+      "after": "86d27a8403d28e01e866addc7be730758d0d8bca1e9f90a3c1932dc455304010",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/journal/pierced-or-clip-on/index.html",
+      "before": "6ef8d43fe333d326ce3b1faad6cc133a3b5d9aa9387b1603e60d9ca96943fa89",
+      "after": "86d27a8403d28e01e866addc7be730758d0d8bca1e9f90a3c1932dc455304010",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/journal/understanding-yosegi/index.html",
+      "before": "005e9b47915ddb2af855df1466515f1b2e794385b4148f90fb1861efc0e6d30d",
+      "after": "4a71ba42397958310b4339ff17dc3e5b1de4285e239bb9bbea5e962714390546",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/arcos/index.html",
+      "before": "8d2bdb448922c461456f49f13539eda6f9012744be85dbe1ba0b68850f9c9ee4",
+      "after": "35dcbac0803645b34b526c6c4f55a00811020aebc5b38b0d46f2be5a830cc88f",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/checos/index.html",
+      "before": "5ef9288f9f0b0a9d1cba3e7b32490381df7e3a718decf791f35982264549e0d2",
+      "after": "c19f3a92f35ed400e2ff4f2fcaf4082a66ffa9dc0e248c85ed28467dc4071c31",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/coyorimi/index.html",
+      "before": "3a90f017d36da83ab094b4ad76ec2bd3c56cb31bb815971b197a905aec559ef4",
+      "after": "7111864ee7d9eee3a0a3a2b132246c3df9198de22776162f88660f4c44235b40",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/egaho/index.html",
+      "before": "2d595c4b8b2c7ba9475d77790e4cdd37d4463691f989b97b7da4b73c6efac7cc",
+      "after": "bfce22eb066621b7110a763829734e0ba5b12f1a0d44e7ec89f089e7f2a7237b",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/hamamatsuya/index.html",
+      "before": "6655623ce8cd76d8ebb9ed958c657af0aca74dc8ae46415bb4ee6416d64c8c15",
+      "after": "aee1835cc460cb7b695d43fa9ec9a292305481d8123e96f623e2938daff1fffb",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/hario-lampwork-factory/index.html",
+      "before": "65caa7a44b80bfa0db524a71fbf8f6d44d8dbf223655354ffda4ca105fb8a3bb",
+      "after": "266dcbb6c8dbb7c025b42bbc8eb66ff87c1dba1af461ace7ca354c397926cca5",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/iwaya-urushi/index.html",
+      "before": "cb9e9244f4095f8f87f2f838ecc13af22ba100d290c5fd3ca3cc99a31a9c2978",
+      "after": "b8e12992760ab525f7da421c087c2d2f6456126a1a190aa4601180218e2ea567",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/kato-shippo/index.html",
+      "before": "e968579056d2f3ce7cc5498976c69bf330881b2f9dd4959fab3fdcf9e81decb8",
+      "after": "abee1cd9227f22f028570c891a17dddbae31b7fbc03581d2daafd23af7552add",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/kazarino/index.html",
+      "before": "43f8ee4d4922454dbc32aeade22e106a91c5a995633d05671091fb88a182d1dc",
+      "after": "39ee30be1154e988a983b9dc32f32d3d8da03dc519e8e62bca4ea9467eb9708a",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/maker-unidentified-maruyama/index.html",
+      "before": "68100b47c4d85ea81da3dd4862553ba50c57246b20dc322e5f1d6f36736134ce",
+      "after": "3dac3ffa6d0a189c9ab7672a5075a7ea1a117663d3d598c375fe7fbc16250a23",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/mie-pearl-union/index.html",
+      "before": "602c467e548d8f6c017ff9ace22c49af1d52309f17d92ab9ea89d71ac3efc32d",
+      "after": "3d44c7d4dc68b2ad6746218f60ca6ff1f78263c5e2a65005ac043a38b75ba375",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/morphosphere/index.html",
+      "before": "566f398d3e04ee5b84f3b9d95b51b393ad9e968ec53474fefe916a3641e9da6e",
+      "after": "067fce1b6c16825278b05749cb0c7ba63129012d3d5549c842c1a66386965809",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/nakajima-zogan/index.html",
+      "before": "1e31ad235fff8f599fa84dd4574a816219c2fb0caa308508b5ae02b123d40a6f",
+      "after": "27e7a8c9547aa37da56f7dbe8c597390a2cf5eb31f2150a93a6cd4a43b15d4a6",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/nanao-shuka/index.html",
+      "before": "8596cfc5ab8624fa5b30888337b54ec3a1f291d466eaf3d7deb876f56e6f44c0",
+      "after": "4246ea0c0c05fd3bd9327129ad84d509dac3cb03b76ce12822cdd31f1c951835",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/nousaku/index.html",
+      "before": "15db9ee11114783bc3c17594388926ec5cd795c6db2a9cd5d419b26de8e19f5f",
+      "after": "d28351fd4bb5125acfa1eec0a0dd89fad0d41537d550d96ea79286c63a9be80a",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/premium-pearl-brand/index.html",
+      "before": "9947849b0552dfe840411217c5c4a7dca5134b1e682437dea2b658c5404b79a3",
+      "after": "9c36b14b744fc91d215198a0ffd86cc179f410c22cc91daadd043c20fa50a92b",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/rinzen/index.html",
+      "before": "fea834edf4fc4c56e71d77b9b1a60c500b2a4b34a82de61357dc20ce72754069",
+      "after": "30c77ae2d9fc787db4675a5e6bc0d50f04c2fab5d41d3463a066ed3ba0c6fd7b",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/sangetsu-kobo/index.html",
+      "before": "f68653dee8c7984686e59d40d1e5f90ff85c6c1daf3ae795eedd1d3969f2dfb3",
+      "after": "a92fc0b9cba602f2e4dd4fe9570c0c1bd470675f6123952875a737659d6e27be",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/saskia-diez-2016/index.html",
+      "before": "d302d1c9ea0f7d62408b87febe4be477bd4dc8e943abd8e6da3eb871b6b3fee2",
+      "after": "6557896d4dd7ecc6b2c0c279e3b0d50f6b1dfb49313bd69ae4fe3609b5fda88b",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/sghr-sugahara/index.html",
+      "before": "05f0ac339465ea5a6314f1f4ff5978b9662c373846f377ca32f1e7f136100acf",
+      "after": "0ba28050ee1aca1ee920c1e333b6d84f6bc6677c52a0412f7fa1909e40229c89",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/showen-kumihimo/index.html",
+      "before": "46ae6ed0abf9e79aa29c77f492bfc7761354184c69cd3e6e92267be62da8622d",
+      "after": "e38c8f02f934357bbde7bf137d0594a6177060cf427ca5d65950bd970426eb6b",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/simprich/index.html",
+      "before": "0c028bc96ca75e6a4c0261c847b0fe190bd742cb17a90ca67d7bfbce874c71e4",
+      "after": "f8f2118c0254a3a80e39c31c627b176ed4579ed8fda4b31b5318ff98affa0b5a",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/sirisiri/index.html",
+      "before": "f03a62cadcd7dec402fe0cd24a6844b2fc99e3e05f0401a28ded1310be511f44",
+      "after": "dc95b16338dda5b3d33762368618879923e48f24e590144d5d45285c9bd5f3a2",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/six-kiln/index.html",
+      "before": "fd43c59f5c3c891d6e2970ec1675ddeabf9c33776161898984a9e467b2cf9f45",
+      "after": "061e25d738c9bfabdbab8d6242546ce8c0f57a1a79a69f264a4c3db1ee4472ac",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/somemasa-sextile/index.html",
+      "before": "8c7665498f0ae4bf7848e7f99f790d217286b8f37d8572410e83f0a6db7610fa",
+      "after": "f92162d5322bbfa35b62fea551216a0d58e35cc96eb0412e78fe1cfaf8324a28",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/tamura-shippo/index.html",
+      "before": "669cb708a7dbd6852614f31e6543fdfcb1783b640d299c0a497044608fa619c0",
+      "after": "da3c10a501d95eb2dad492d2f1f671f76c7abb2ac8f789585b0929a4fa61d7f0",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/toytoy/index.html",
+      "before": "aa356c5f85e1618a9ed65d2392c20a3f06567310601a5fb0914fb5b7c066a206",
+      "after": "f0f2b021015263ba151986bd9f8d4763d2659b1b6f31c407ef4a78b81a8ddaff",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/yamato-urushi-sugimura/index.html",
+      "before": "c968ab66787dee0a81f6e733bb3bfeeddaee646642497693f2b755b6a8690fbc",
+      "after": "da27fcedd13860ec459b5891b2871434d255b407a852bfbd9283749a473ed249",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/makers/yukie-glass/index.html",
+      "before": "8dad82f8b10a013713028963af68d56441d1cd6239542151514ca9476f25d66a",
+      "after": "c0927223e79e657ac53f2416d5319a8a5f475fc60cab67d8880a06b2f2ce47ed",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/arcos-cosmic-glass-bracelet/index.html",
+      "before": "43b3be3e08189f623a23d47546ffecb53e00ee4c17026550658322bbacdce56a",
+      "after": "31fbf5ebc533dc9b88ab722078c98ca23ea731ccd3cd5cbedb767785bb9356e0",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/arcos-cosmic-spiral-pendant/index.html",
+      "before": "65bfc4d3f235e4cb13dab00dccd46cadfe70baa75412a787b0dac3d77141da8f",
+      "after": "be38a56ecabc62f6cf5bb80b7e0a2fe07549bc9fd34c410f52d5dbc2cbffadc9",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/checos-japanese-apricot-pierced-earrings/index.html",
+      "before": "b4b6663f52079bda4fd62cd4045de4f4689b44a13dfab0a23d8beba936a9d565",
+      "after": "f64039a706e4662dc91b2b5be7ae00f7d18ea8caf917131e9f5a90df2e1712f0",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/coyorimi-tamamusubi-clip-on-earrings/index.html",
+      "before": "6345d45cf10fb31d166e99764e8752695a024e0511307dadd148e0764aa1fd3a",
+      "after": "457595b5102b569a3e77555207db9ca381f66dc81919ea95b6e75f0856ae9b86",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/egaho-gathered-kurume-kasuri-ear-jewelry/index.html",
+      "before": "f81acd1f6ae750fc7b482d7d1fc0f9efeeba7555fd6bb3d1565ef8786d5823ca",
+      "after": "54cfa9529af3f669eb7b76a9e759bf3c5ee75b2b23d472b52244cdf16788b4f3",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/hamamatsuya-muku-yosegi-pendant/index.html",
+      "before": "886115ba95465b20ca4c5bec4594832c58f1cba4d709fc0daa0f06d06dc83b9a",
+      "after": "47172cf80e92c6fa533446ffc98c9b2482163b057d4d4c3241ca03eb98ad20ec",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/index.html",
+      "before": "a5f1e9539ad3b9cb36f5bdddf1e9701d3db9e4d79367e4a1f2d5c725bda05d07",
+      "after": "c6d3bef3648e03fe64f88ae8bc5ba1589ae39def5e05d4846d3ad862962e128c",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/hamamatsuya-yosegi-non-pierced-earrings/index.html",
+      "before": "d9927f8434dcbb388483e7c15d290a4d5e72af8dd78a4b7e6237cd56e05b134e",
+      "after": "a93e6fd9db287c8e01689f4333d1725ff9ac65f240c977fd4d24327667f5d6bd",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/hario-little-tears-clip-on-earrings/index.html",
+      "before": "640cbcccf0442e5cbaf42e4304299c49c12af2c94d04ec2d88475be9e099a762",
+      "after": "0a2c6e5954b0b9db4ddb4afc5aff617f7aacab540f0cd5a5e3ebe0959774d215",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/index.html",
+      "before": "95a01ea3c5026d13530e85c83b0656b05a95ed386eeb5c88ba615429fcf6f878",
+      "after": "3360f6de3754f3760a21e7111d088adffa3a04877224963ba6822876da3ad311",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/iwaya-urushi-9mm-hook-earrings/index.html",
+      "before": "14793451dddd542ce44481deee299a1d63b4f11e5e4b1409670972ca8b9f94e3",
+      "after": "95ae99b803f616ba8fb9cbcb564d4961366984f43850f3af7f462de5e33cf776",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/kato-suke-drop-pierced-earrings/index.html",
+      "before": "06ea932bfe89fa3c049661a3f6988d49e4a02800691134c77eb8f14e7acd8cea",
+      "after": "8ac0492fd67b40c9d60624d55030e952e98d55b4102196da050e74d0acbca311",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/kato-suke-round-ring/index.html",
+      "before": "21350897752817e6a2447b2718df0f9f506183817ae8214410e391c47343b37e",
+      "after": "bcf594624437a98161834c2a95c7bcb7bc4e69852aa6aa5c826a4fc2aa0cea02",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/kazarino-hanabishi-copper-earrings/index.html",
+      "before": "956acac40d47aa8ff1a9c8b9b9f6b1bfdbc6df6cd67e24d513eeccf11fe293a8",
+      "after": "9b329d46e74564cd22062a9f48f646c007581ceff7c1dcac1764e0eb278ab299",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/kazarino-shippo-pattern-brass-bangle/index.html",
+      "before": "94ef65ba30caee8c1e280663633d1384db1007255b2c15a5f14f3e8a47ce8527",
+      "after": "62b8a978fee8f4890f577fd2f2dd39f19f7626e5bfdb1b327dc96213a2f13aeb",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/maruyama-yosegi-non-pierced-c/index.html",
+      "before": "dd9f1e9d0634d866a6d57738e2fb6b8416238b1c012af92e7de404547b00e561",
+      "after": "89d1df4ab1d53292b7cecdce948714179cec32eb81dd1a9cfd1301dab88707e5",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/maruyama-yosegi-non-pierced-d/index.html",
+      "before": "0b19e582cc58a17aadb17f5e441b1f7476ca5d243b7e09d29b469f429db7af07",
+      "after": "c87e70943e9e8952f29338b0e4f3461d9abef5b7ca2f855cee68e7162a3095bb",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/maruyama-yosegi-pierced-c/index.html",
+      "before": "456b531e79391c75cb5209b72dd9fde690543074f5a76034fde372ea2e4cce1f",
+      "after": "afa7caecbeeb7dfbc61114d3555be98de7976cda01c0bb7070d1a310c14304ee",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/maruyama-yosegi-pierced-d/index.html",
+      "before": "d43e239cbd23ab6a5b6f802f45c48acc4ae3368a00b65b09132c1a304f49f635",
+      "after": "eac795e953de7d72353f9b29f19468fb5fe4f4cf336db9b950c4ebceebe7a2fe",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/mie-akoya-oh002-stud-earrings/index.html",
+      "before": "f4f5596fdc600c10ebe2804b3f2b1ea0a4f59352406775e5a36596271091b17c",
+      "after": "f0bf529e3fc57dde06337db9d59707ab0bbce91806f2c034878658b1723766b2",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "ja/objects/morphosphere-ultramarine-pansy-pierced-earrings/index.html",
+      "before": "b692fecd0da741c22dcd7e803bc6610a9d2fd4c6ba81d0a20f4dab560616dcf8",
+      "after": "7a031eaa7bec1609af08574fda3b285e304307ee4d0f19c44c62494fcafdf4bc",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/nakajima-pear-sakura-pendant/index.html",
+      "before": "ba646b8a6b0c7632bd0148279dc286d836f60171b663b1ce0752c5b29035de02",
+      "after": "fb6275e8f5074245ddc8f58495ead78c5837971594624bdacaea43f79f299178",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/nanao-shuka-nebula-16g-earrings/index.html",
+      "before": "46d27b41f42d026c35c31a95f23de4d1114a729d17b730bab029c92407836831",
+      "after": "abf413681afcbe4e178000ea8fb79599560e43b4e02c691cf92b70066733c25b",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/nousaku-aya-tin-pendant/index.html",
+      "before": "5f579ee2e72d171317c9bc29dc078c74f1cdafc6a3bc85377064a288201f9008",
+      "after": "10bfca34df5b5650d86d738cc998a38400b6e1399a26427381bdc4b157dec158",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/nousaku-dahlia-gerbera-clip-on-earrings/index.html",
+      "before": "218c80b780402523059f0e2637a44ea62144ffe8f554219aa50f1ecd153ad0aa",
+      "after": "8779c53536c36cf051b2482e710cb63409bf220fc6956183b7fbb84e2aa13fe4",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/rinzen-leaf-glass-pendant/index.html",
+      "before": "f9e783d22be3a9fb36565f305c9a71a7ae087fccf53e320061244ebfdbc554d4",
+      "after": "53013ebbc594c486000271ac85daf45ed37979caa45a0373e8530b2a36f6574e",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/rinzen-seika-amber-pierced-earrings/index.html",
+      "before": "dd4b84e1ef162b65a7ce0ce2e09c111111c5f254eb1bdd729973651d1570f653",
+      "after": "5502037617f955ff147e2a1fdb22a4a347577f6f1a67d1e288ff21cf7018ca15",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/sangetsu-irodori-tombodama-earrings/index.html",
+      "before": "32af6c1aed33366eea1895aed3cd2e855042ad8462fc9361d5fb4ecdb8e555bc",
+      "after": "c97a5566b3ebbf4d354fce2d80b3a8106bfa1248307dba026694548a1f3e7786",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/sangetsu-irodori-tombodama-necklace/index.html",
+      "before": "f64817f9931220049dac064a6d066dc07f9dd9d3ac4a5947f2a6b396e1e4b048",
+      "after": "0ac749e39ee591bfd5d4c74763a9ba07a6f38933e10d5de7ae2a9fd9c5ed5072",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/saskia-diez-drake-porcelain-cuff/index.html",
+      "before": "7bf5dfba3f3e6554e34818a92113fb85ebf48b72dca05d14c985711fafff03bd",
+      "after": "c886a8235b4be3c94798e2a27128571f839db822ec8b595f8d49f6d6887643e0",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/senshu-pearl-stud-earrings/index.html",
+      "before": "7a12c26a43a2ccbf55762e6b0aeddfbd3ff5ff01e4751d6516c8af3cef901eb4",
+      "after": "4cb6ebd4415c641cd5e9846f4e367b64cf4676782c6621ca924ca6ea01870768",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/senshu-pearl-swing-earrings/index.html",
+      "before": "693f9daa2777894ff470b90fce47beda3509f4cb4cede0d220612fda4ec001dc",
+      "after": "f93f8f0b82f29da11388509dd633992cec8765759ffdd81d605bbae1221b37dd",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/sghr-kolmio-glass-ear-cuff/index.html",
+      "before": "4f047d1a3a3344d031cad996b5c79ab9db4e1f2ba09641d690e0130a51883900",
+      "after": "763373d3222e6a87313d78ad8b7639b301cb2b20b051c631ea0449d606e62e60",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/sghr-tie-tie-glass-earrings/index.html",
+      "before": "a8c6495bfddbb94e230aaaf0db8237f29d3c804e7ff8dc4309a638ec044f880c",
+      "after": "08d25fb895de5742a4b0fceaf3c177709999eb6145d5f09061fa84b793895829",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/showen-edo-uchi-silk-bracelet/index.html",
+      "before": "65f4457d6dcae1f9276e17e2f342086960d282e0e2d8c4d1d2f88a1717ecf000",
+      "after": "667c6a41db4c0eb05cc3fc4e19b295c1128b5c4e2d7572909b6929c06b2da6f2",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/simprich-crystal-bubble-pierced-earrings/index.html",
+      "before": "def9d5d5a2b002f302b326987c3c756d594ce0b0ed93ab7da639a82530b518db",
+      "after": "f346b03ece39cf8a85ca928d638089b0622085ec5a25f7f2a45b08bf02452457",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/simprich-reversible-silver-piaring-single/index.html",
+      "before": "37dd717211cf3ea0143cb0ebf2a680ea16e24146148611550b2697bce1f994e6",
+      "after": "499201ec0fc797c9572a929e53aa5cec87e7eab9d4498d4ee2e82d55cc51d50e",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/simprich-reversible-topaz-ruby-chain-ring/index.html",
+      "before": "b903768ef47ab12bced4d611eb5a470d7bb393e1e6b36a62532950c9fcdf565c",
+      "after": "51f658e453b611f5fde7dda5eea7a7e682019d86f5fd02afe92fbeeb8370d0a2",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/simprich-rose-quartz-necklace/index.html",
+      "before": "33f11b05beda174df14b7c9e641629857c2b010a9e981bf883fa8f784056d96b",
+      "after": "244879ee3a0ca3b50764ae22e72652a2673c53e4777b377235308863fcca9d04",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/sirisiri-page-blue-enamel-pierced-earrings/index.html",
+      "before": "54b6f6017b1098446a9e65832938622d3fa09b758b2f173c3e082710ab669366",
+      "after": "5c008e428d310065a204914b706eeb05fafbcfc8453bc3d30f0c38e2d43ca0e8",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/sirisiri-silver-thread-hoop-mini/index.html",
+      "before": "649e0ea93a631978ae7e8cba49265e10ea6968d6805c3923ac437aa1d4feaad2",
+      "after": "e10d17cd2eb95b552281cadcddd8334ab65cee7045c3cdf333d256a6eb7f1a70",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/six-kiln-blue-bouquet-pierced-earrings/index.html",
+      "before": "f657be16a25414bf7210a386ffca3398b7a6e71557d9fba5fe2b6e71e9d54e90",
+      "after": "586b010b0938bac862168d0e7c48f7a232af2be7ec8baa1fa2d13bfe5ba5600d",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/six-kiln-half-moon-earrings/index.html",
+      "before": "9bc9288f2848860bda265b4a405c7e48aa976d06651527c03eab03fe4ce39cf4",
+      "after": "3a5461971f420af06c898509ca9e88b81e6decddbc6d8d01eaf25b6b500397a6",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/somemasa-peacock-clip-on-earrings/index.html",
+      "before": "e0ac1f0ea438d0c87763ab5f5957d489b1e2e45653412dd3556b646166d231e3",
+      "after": "98d7322fbf8bb8276b9ad803f86e6a02f56e4055923e633669053499d71dff28",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/sugimura-hosoge-raden-pendant/index.html",
+      "before": "829a5eb067cee3af18c6cb84cc566d7646f62eb00df1b6796ff0a26dd216d346",
+      "after": "4a30d059d5d12c882843cb13f1eb760a5ec8a62292231ab16f0b0ae3ab7e284d",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/sugimura-lotus-makie-ring/index.html",
+      "before": "40cd7022305e3df5c9ca1344e7629fb151c930812e3e8fc547312c8e45f08b0b",
+      "after": "2bcd5ec92f457616d376411b48dbdd45c176a2f5948e33e27bda9f8cba398a01",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/tamura-kaisai-enamel-ear-jewelry/index.html",
+      "before": "8f31007e7cbaf7ab234a2ad9a8d91030ecd0471338a90486a50a5ed8a5d88ddf",
+      "after": "f6a7ab1d3de8be6eb364db0b72f450266e9b1953fa9b825b2096b5b3524ff37b",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/toytoy-ninkari-nikuri-earrings/index.html",
+      "before": "123e71875938ee270de6799e4317b807e84b093fa1df88ac47fa3f2989543889",
+      "after": "ec8c9164373e9eed146bc1d451bfb6f81fc706de44ec88c7e89edb8f2bf7267b",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/toytoy-sirokani-pe-silver-necklace/index.html",
+      "before": "2ba3a010551069c10127a30859b32d86d69c49bc5b7e2e7db0cd54a4651f4f3b",
+      "after": "37b7e0d38d45416fd7b4108d1c657285f4d17b4fe247ddf8648aea89582fe93e",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/yukieglass-mint-veil-earrings/index.html",
+      "before": "c9e1a69950ef0802b3e2ab31f766bcd502cbb0e4e8143efa6d01be395bae1de2",
+      "after": "c1480dda6907695d45532fd95bcb1f1fdda4aa7ce0a93a171c79f50a624f8cae",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/objects/yukieglass-rouge-veil-earrings/index.html",
+      "before": "e54167082e3f493c8aff055a874b4760dfc815ce6e587de8656482f356355cf5",
+      "after": "727426b5f7f858e05d49bbce43fa939e373a4b851182af7ea0ec8248da875e54",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/places/aichi/index.html",
+      "before": "53ee986eba2a64c06003664916fa065f53f65fabfa55ff23de60695ff3b34424",
+      "after": "3c9b199b9cf00e7cd39db96c3bfd97bf65a35e031bb80f0c927d255446843e3f",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "ja/places/chiba/index.html",
+      "before": "5a0850b742bcc4ae105cadc265f92fd882b89688847a0d830a7cd05f978be7bd",
+      "after": "7338fb8b3da055fba12bd4fb310b5bbc12dad1c054650372e5572ad98638c16b",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "ja/places/fukuoka/index.html",
+      "before": "c61bda89185d034c6cd1c6135cf1df680eb405e2cf7e60bc85806735c85bbeaf",
+      "after": "958267e2a3ef7fb3b69111c230bbbef3cd98baa39929893ad815babd6c1aa58d",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "ja/places/hokkaido/index.html",
+      "before": "d10cb510a966e3cecc827fc9b6bd157972c9a07052a7471751c5f8664ca6db9c",
+      "after": "c602b90bbb6cb481efd84153f6d77a3fb0ef41ab9e88a26808a85f39f65e91d2",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "ja/places/index.html",
+      "before": "959fd7afe2b33fe8bcf1f7bfe25ae138a0ecb6a5cedc52eaf8703b48b09952f2",
+      "after": "d61c23f88f1800718854e3a13054126c99f10556d95b1b85025de5c2c769243d",
+      "sharedStyleMetadataOnly": true
+    },
+    {
+      "path": "ja/places/ishikawa/index.html",
+      "before": "8c305c06fc5bdd2de16aa909fb92eb878649d36cbd29e89e80979fd078c69852",
+      "after": "5d09399def180b4c0cc16d1e72cffc73494cfacbdd0adeeac545b829325cc60f",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "ja/places/kanagawa/index.html",
+      "before": "888849299addb561554633bebd1d80e4ac73f77c35880f94aec0c6388c178aa9",
+      "after": "ac9c2fae99e03e4710ef8316986e222d9d6b8eb28b4b3316607e3880d6ff4dc3",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "ja/places/kyoto/index.html",
+      "before": "d6c5b4f651237c646d8f2f508a640f161cdcfacda9f68ab05a438e10f7e9a697",
+      "after": "af07977916c10aaeb959ceb876b85c8151f19f667bc4d8a11a9aceee7fa818ec",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "ja/places/mie/index.html",
+      "before": "951f70d14a68fec8fdf5f063808e75da0a55aa1f31e3e7a0b2c5fd1e0c29b8d9",
+      "after": "1b94f530a6e96e88158c345207f0622beb31c83217afa48fd7d11f5d8ae6f141",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "ja/places/nara/index.html",
+      "before": "64108387ab966822790e51d0d04118c191aff0dd1276f9ae730fcded1d0fb286",
+      "after": "cd836271ce9a8a75fb0e25e617e1f4054867813389cb377f43a5f5046d7dda3e",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "ja/places/osaka/index.html",
+      "before": "43275e41033921312fe41a064134032860e905c860ba19e619b25382dc7d65ef",
+      "after": "8fb385e3323df338471275da9abb1dbca9c5b549b0b7804aeb5d69cfa6a39451",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "ja/places/saga/index.html",
+      "before": "469ab88871875acde5fb6de7785c264e6a5059c8bfe618ba87e466ff4c3a03a5",
+      "after": "9002d4abe3d1f6464467c0b4a32012c3c669ee532b385b533a514af21f1fbec9",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "ja/places/tokyo/index.html",
+      "before": "1b2f745c8b7f367b73dd38892f735b092d03420b68f4f437f6fe761fc86e2191",
+      "after": "6cdc7f22cea3d258e670a59e486e0ff22723057eebd9690a62efafd627c49002",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "ja/places/toyama/index.html",
+      "before": "3b80a9c108eb4b7f02edfa202fa326668233a14966aafedb0f3c370723e037a0",
+      "after": "d0552c0e4bfcb5c082e2fe058b74ec3bb3093fc2fe293b25dd11179e3a6f76fa",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "ja/places/yamanashi/index.html",
+      "before": "77355d5c65b26710087d2c69d6974198ab78a7a733d8f7f88b57d265aa809a08",
+      "after": "f6f202117608f03d37717b59717d2c576976e480a3678c62faf99c6c6f2087b0",
+      "sharedStyleMetadataOnly": false
+    },
+    {
+      "path": "ja/privacy/index.html",
+      "before": "aa4fb2e610dbd0c7ca280b26e116fb13d3df23bcdf64d86a90a123e7829cb653",
+      "after": "ae3cdf271b5c84ce552add1801b30cdba738e2b457796f70d4c112c307bf7d7b",
+      "sharedStyleMetadataOnly": true
+    }
+  ]
+}

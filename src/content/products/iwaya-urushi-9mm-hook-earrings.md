@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-The difference is in the finish: a rounded wood base is covered in lacquer, creating a glossy color surface. It gives Fukuoka another material direction beside CO.COON’s silk-thread jewelry.
+This is another way into wooden jewelry beyond grain and marquetry. In the urushi bead, the round shape and glossy surface become the main details. We selected it for making a distinction between the base material and the finish you see.
 
-If you enjoy the bead shape, compare Osaka’s patterned glass beads. If the wood itself is what draws you, compare Hamamatsuya’s visible marquetry. Iwaya’s public Yame shop is separate from a promise of a particular color in stock.
+Yosegi supplies geometry, Sangetsu supplies pattern within glass, and Iwaya supplies lacquer luster. Shared circles or wood materials can lead to quite different choices. Start here when a clean area of color is what you want.

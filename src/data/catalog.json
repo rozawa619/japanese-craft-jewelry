@@ -57,6 +57,16 @@
       "id": "hokkaido",
       "name": "Hokkaido",
       "description": "Handmade crystal-glass jewelry from Yukie Glass in Otaru."
+    },
+    {
+      "id": "toyama",
+      "name": "Toyama",
+      "description": "Tin jewelry linked with NOUSAKU in Takaoka; an individual accessory certificate is not implied."
+    },
+    {
+      "id": "mie",
+      "name": "Mie",
+      "description": "Ise-Shima Akoya pearl jewelry from a producer cooperative; each selected product records its own material origin."
     }
   ],
   "crafts": [
@@ -241,6 +251,60 @@
       "sourceIds": [
         "toytoy-maker-v11"
       ]
+    },
+    {
+      "id": "takaoka-tin-casting",
+      "name": "Takaoka tin casting",
+      "description": "Tin jewelry from NOUSAKU, in the context of Takaoka casting. The exact casting method is not separately identified for each SKU.",
+      "sourceIds": [
+        "nousaku-casting-v12"
+      ]
+    },
+    {
+      "id": "kyoto-mizuhiki",
+      "name": "Kyoto mizuhiki cord work",
+      "description": "Decorative paper-cord jewelry from COYORIMI in Kyoto.",
+      "sourceIds": [
+        "coyorimi-maker-v12",
+        "coyorimi-tamamusubi-mocad-v12"
+      ]
+    },
+    {
+      "id": "kurume-kasuri-accessories",
+      "name": "Kurume-kasuri textile accessories",
+      "description": "Accessories using Kurume-kasuri fabric. The fabric identity does not establish the assembly location or certification of the accessory.",
+      "sourceIds": [
+        "egaho-gathered-kasuri-v12",
+        "egaho-maker-v12"
+      ]
+    },
+    {
+      "id": "basse-taille-enamel",
+      "name": "Basse-taille enamel",
+      "description": "Patterned silver under glass enamel in the selected SIRI SIRI design; exact workshop location is not identified.",
+      "sourceIds": [
+        "sirisiri-page-blue-v12",
+        "sirisiri-maker-v12"
+      ]
+    },
+    {
+      "id": "silver-thread-work",
+      "name": "Silver-thread handwork",
+      "description": "Kyoto-made metallic thread shaped by rattan craftspeople for a Tokyo-founded brand; rattan is not inferred as the material.",
+      "sourceIds": [
+        "sirisiri-silver-thread-hoop-v12",
+        "sirisiri-maker-v12"
+      ]
+    },
+    {
+      "id": "ise-shima-akoya-jewelry",
+      "name": "Ise-Shima Akoya pearl jewelry",
+      "description": "Jewelry with Akoya pearls identified as originating in Ise-Shima. Pearl cultivation, jewelry assembly location and individual certification are separate claims.",
+      "sourceIds": [
+        "mie-akoya-oh002-current-v12",
+        "mie-pearl-union-current-v12",
+        "mie-akoya-shop-list-current-v12"
+      ]
     }
   ],
   "materials": [
@@ -406,6 +470,35 @@
       "id": "luster-powder",
       "name": "Luster powder",
       "description": "Maker names luster powder in the glass earring; exact formulation is not published."
+    },
+    {
+      "id": "tin",
+      "name": "Tin"
+    },
+    {
+      "id": "paper-cord",
+      "name": "Mizuhiki paper cord"
+    },
+    {
+      "id": "synthetic-leather",
+      "name": "Synthetic leather"
+    },
+    {
+      "id": "rayon",
+      "name": "Rayon"
+    },
+    {
+      "id": "silver-950",
+      "name": "Silver 950"
+    },
+    {
+      "id": "textile",
+      "name": "Textile"
+    },
+    {
+      "id": "akoya-pearl",
+      "name": "Akoya pearl",
+      "description": "Akoya pearl from a pearl-producer cooperative; distinct from shell-based imitation pearls. Exact farmer and treatments are not established."
     }
   ],
   "productTypes": [
@@ -716,6 +809,73 @@
         "hario-lwf-about-v11",
         "hario-kodenmacho-v11",
         "hario-lwf-burner-v11"
+      ]
+    },
+    {
+      "id": "nousaku",
+      "name": "NOUSAKU",
+      "location": "Takaoka, Toyama",
+      "url": "https://www.nousaku.co.jp/",
+      "productionNote": "A Takaoka casting maker. Pure tin applies to the stated main ornament; jewelry fittings have separate materials.",
+      "sourceIds": [
+        "nousaku-casting-v12",
+        "nousaku-factory-store-v12"
+      ]
+    },
+    {
+      "id": "coyorimi",
+      "name": "COYORIMI",
+      "location": "Kyoto",
+      "url": "https://coyorimi.com/",
+      "productionNote": "A Kyoto mizuhiki brand. The selected retail item is attributed to COYORIMI by MOCAD.",
+      "sourceIds": [
+        "coyorimi-maker-v12",
+        "coyorimi-tamamusubi-mocad-v12"
+      ]
+    },
+    {
+      "id": "somemasa-sextile",
+      "name": "Somemasa × Sextile",
+      "location": "Kyoto maker connection",
+      "url": "https://www.uenakamasashige.com/",
+      "productionNote": "The selected design is a collaboration between Yuzen maker Masashige Uenaka/Somemasa and textile-jewelry brand Sextile; exact component origins are not identified.",
+      "sourceIds": [
+        "somemasa-maker-v12",
+        "somemasa-peacock-clip-mocad-v12"
+      ]
+    },
+    {
+      "id": "egaho",
+      "name": "EGAHO",
+      "location": "Workshop location unconfirmed",
+      "url": "https://egaho.base.shop/",
+      "productionNote": "Makes accessories with Kurume-kasuri fabric. The selected fabric connection is not proof of an accessory-making workshop in Fukuoka.",
+      "sourceIds": [
+        "egaho-maker-v12",
+        "egaho-gathered-kasuri-v12"
+      ]
+    },
+    {
+      "id": "sirisiri",
+      "name": "SIRI SIRI",
+      "location": "Tokyo-founded; artisans across Japan",
+      "url": "https://sirisiri.jp/",
+      "productionNote": "Founded in Tokyo and works with artisans across Japan. The exact making workshop for each selected SKU is not identified.",
+      "sourceIds": [
+        "sirisiri-maker-v12",
+        "sirisiri-akasaka-store-v12"
+      ]
+    },
+    {
+      "id": "mie-pearl-union",
+      "name": "Mie Pearl Cultivating Industry Union",
+      "location": "Shima, Mie",
+      "productionNote": "The supplier is a Mie pearl-producer cooperative. OH-002 identifies its pearls with Ise-Shima; the individual pearl farmer and jewelry-assembly workshop are not specified.",
+      "url": "https://www.mie-pearl.net/",
+      "sourceIds": [
+        "mie-akoya-oh002-current-v12",
+        "mie-pearl-union-current-v12",
+        "mie-akoya-shop-list-current-v12"
       ]
     }
   ],
@@ -1098,6 +1258,108 @@
       "sourceIds": [
         "hario-netshop-product-v11",
         "hario-netshop-company-v11"
+      ]
+    },
+    {
+      "id": "nousaku-official",
+      "name": "NOUSAKU official online shop",
+      "url": "https://www.shopnousaku.com/",
+      "language": "Japanese; English information varies by page",
+      "shipping": {
+        "status": "unavailable",
+        "summary": "The official shop states it does not deliver outside Japan.",
+        "countries": [],
+        "sourceIds": [
+          "nousaku-flower-clip-v12",
+          "nousaku-aya-pendant-v12"
+        ]
+      },
+      "returns": "Confirm current item-specific return conditions at the official shop.",
+      "sourceIds": [
+        "nousaku-flower-clip-v12",
+        "nousaku-aya-pendant-v12"
+      ]
+    },
+    {
+      "id": "mocad-official",
+      "name": "MOCAD official museum shop",
+      "url": "https://mocad-shop.com/",
+      "language": "Japanese; English information varies by page",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Destination-specific shipping conditions remain to be checked.",
+        "countries": null,
+        "sourceIds": [
+          "coyorimi-tamamusubi-mocad-v12",
+          "mocad-museum-store-v12"
+        ]
+      },
+      "returns": "Confirm current item-specific return conditions at the official shop.",
+      "sourceIds": [
+        "coyorimi-tamamusubi-mocad-v12",
+        "mocad-museum-store-v12"
+      ]
+    },
+    {
+      "id": "egaho-official",
+      "name": "EGAHO official shop",
+      "url": "https://egaho.base.shop/",
+      "language": "Japanese; English information varies by page",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Destination-specific shipping conditions remain to be checked.",
+        "countries": null,
+        "sourceIds": [
+          "egaho-gathered-kasuri-v12",
+          "egaho-maker-v12"
+        ]
+      },
+      "returns": "Confirm current item-specific return conditions at the official shop.",
+      "sourceIds": [
+        "egaho-gathered-kasuri-v12",
+        "egaho-maker-v12"
+      ]
+    },
+    {
+      "id": "sirisiri-official",
+      "name": "SIRI SIRI official shop",
+      "url": "https://sirisiri.jp/",
+      "language": "Japanese; English information varies by page",
+      "shipping": {
+        "status": "unknown",
+        "summary": "The selected listing links an international shipping guide; destination/item terms are not established here.",
+        "countries": null,
+        "sourceIds": [
+          "sirisiri-page-blue-v12",
+          "sirisiri-silver-thread-hoop-v12"
+        ]
+      },
+      "returns": "Confirm current item-specific return conditions at the official shop.",
+      "sourceIds": [
+        "sirisiri-page-blue-v12",
+        "sirisiri-silver-thread-hoop-v12"
+      ]
+    },
+    {
+      "id": "mie-pearl-union-official",
+      "name": "Mie Pearl Union official shop",
+      "url": "https://shop.mie-pearl.net/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Current destination/item-specific shipping conditions remain to be checked.",
+        "countries": null,
+        "sourceIds": [
+          "mie-akoya-oh002-current-v12",
+          "mie-pearl-union-current-v12",
+          "mie-akoya-shop-list-current-v12"
+        ]
+      },
+      "returns": "Confirm current item-specific return conditions at the official shop.",
+      "sourceIds": [
+        "mie-akoya-oh002-current-v12",
+        "mie-pearl-union-current-v12",
+        "mie-akoya-shop-list-current-v12"
       ]
     }
   ],
@@ -1717,6 +1979,86 @@
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
       "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "nousaku-dahlia-gerbera-clip-on-earrings-official",
+      "productId": "nousaku-dahlia-gerbera-clip-on-earrings",
+      "merchantId": "nousaku-official",
+      "programId": null,
+      "officialProductUrl": "https://www.shopnousaku.com/view/item/000000001085",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "nousaku-aya-tin-pendant-official",
+      "productId": "nousaku-aya-tin-pendant",
+      "merchantId": "nousaku-official",
+      "programId": null,
+      "officialProductUrl": "https://www.shopnousaku.com/view/item/000000000199",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "coyorimi-tamamusubi-clip-on-earrings-official",
+      "productId": "coyorimi-tamamusubi-clip-on-earrings",
+      "merchantId": "mocad-official",
+      "programId": null,
+      "officialProductUrl": "https://mocad-shop.com/products/tamamusubi-earrings?currency=JPY",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "somemasa-peacock-clip-on-earrings-official",
+      "productId": "somemasa-peacock-clip-on-earrings",
+      "merchantId": "mocad-official",
+      "programId": null,
+      "officialProductUrl": "https://mocad-shop.com/products/earrings-peacock?variant=43042958835903&currency=JPY",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "egaho-gathered-kurume-kasuri-ear-jewelry-official",
+      "productId": "egaho-gathered-kurume-kasuri-ear-jewelry",
+      "merchantId": "egaho-official",
+      "programId": null,
+      "officialProductUrl": "https://egaho.base.shop/items/147933458",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "sirisiri-page-blue-enamel-pierced-earrings-official",
+      "productId": "sirisiri-page-blue-enamel-pierced-earrings",
+      "merchantId": "sirisiri-official",
+      "programId": null,
+      "officialProductUrl": "https://sirisiri.jp/products/shippo-earrings-page-blue",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "sirisiri-silver-thread-hoop-mini-official",
+      "productId": "sirisiri-silver-thread-hoop-mini",
+      "merchantId": "sirisiri-official",
+      "programId": null,
+      "officialProductUrl": "https://sirisiri.jp/products/arabesque-earrings-hoop-sv-mini",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "mie-akoya-oh002-stud-earrings-official",
+      "productId": "mie-akoya-oh002-stud-earrings",
+      "merchantId": "mie-pearl-union-official",
+      "programId": null,
+      "officialProductUrl": "https://shop.mie-pearl.net/product/akoya-pearl-stud-earrings-oh-002",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
     }
   ],
   "products": [
@@ -1768,8 +2110,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "Bring yosegi wood pattern to a white shirt or a favourite knit. An everyday outfit, with a little more character.",
-      "whoItMaySuit": "For anyone who likes simple clothes and wants the jewelry to bring the pattern.",
+      "editorialSummary": "Different woods come together as a small geometric pattern. We picked these yosegi earrings for someone drawn to intricate arrangement and wood tones as much as to a sparkling stone.",
+      "whoItMaySuit": "Someone who values a close-up pattern more than gemstone sparkle.",
       "whatToCheck": [
         "Wood species, surface finish and the exact steel grade are not specified in the checked official information."
       ]
@@ -1821,8 +2163,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "Let yosegi's wooden geometry be the detail in an otherwise simple outfit. An inviting accent for a cardigan or a favourite dress.",
-      "whoItMaySuit": "For soft colors, simple silhouettes and a taste for pattern in the finishing details.",
+      "editorialSummary": "Yosegi puts fine geometry across the wooden surface of these non-pierced earrings. This is a choice for someone interested in repeated pattern as the main ornament.",
+      "whoItMaySuit": "Someone who keeps clothing plain and enjoys pattern in an ear ornament.",
       "whatToCheck": [
         "The exact clip mechanism and skin-contact metal are not specified in the checked official information."
       ]
@@ -1928,8 +2270,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "A wooden mosaic focal point for a plain knit or a simple dress. Bring yosegi color and geometry to the centre of your outfit.",
-      "whoItMaySuit": "For simple necklines that leave room for one distinctive pendant.",
+      "editorialSummary": "This muku yosegi pendant moves the patterned wooden surface to the center of the outfit. Choose it when you want a whole area of geometry to become the focal point.",
+      "whoItMaySuit": "Someone who prefers a visible area of pattern to a tiny stone pendant.",
       "whatToCheck": [
         "The chain metal, closure and length-adjustment options are not specified in the checked official information."
       ]
@@ -2034,8 +2376,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "A star-like wooden motif, with colors radiating from the centre. Choose it for a playful detail that puts yosegi in the spotlight.",
-      "whoItMaySuit": "For anyone drawn to a playful motif and the color combinations of wooden jewelry.",
+      "editorialSummary": "Maruyama’s C design combines radiating yosegi with a star-like outline. We chose it for someone who wants the shape of the ornament to be part of its charm.",
+      "whoItMaySuit": "Someone who wants a playful motif as well as the colors of wood.",
       "whatToCheck": [
         "The fitting metal, dimensions and per-ear weight are not specified in the checked product listing."
       ]
@@ -2085,8 +2427,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "A long wooden bar traced with chevron-like pattern. A clear, geometric accent for linen, shirts and earthy colors.",
-      "whoItMaySuit": "For a love of straight lines, natural textures and beige, brown or olive palettes.",
+      "editorialSummary": "A long bar carries a chevron-like wood pattern in Maruyama’s D design. It is our linear choice for someone drawn to geometry rather than a flower or star motif.",
+      "whoItMaySuit": "Someone who chooses jewelry through straight lines and geometry.",
       "whatToCheck": [
         "The fitting metal, dimensions and per-ear weight are not specified in the checked product listing."
       ]
@@ -2136,8 +2478,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "Star-like yosegi earrings for a little playfulness with a white T-shirt or denim. Enjoy the wood colors radiating through the motif.",
-      "whoItMaySuit": "For relaxed outfits that welcome a playful, patterned finishing touch.",
+      "editorialSummary": "A radiating pattern and star-like outline meet in these yosegi pierced earrings. We picked C for someone who likes a playful shape expressed in restrained wood tones.",
+      "whoItMaySuit": "Someone who wants a star-like motif in wood tones for everyday clothing.",
       "whatToCheck": [
         "The fitting metal, dimensions and per-ear weight are not specified in the checked product listing."
       ]
@@ -2187,8 +2529,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "Long wooden bars and chevron-like pattern give these yosegi earrings a graphic feel. Try them with a black top or an understated shirt.",
-      "whoItMaySuit": "For understated wardrobes that use jewelry to bring in color and a stronger line.",
+      "editorialSummary": "A chevron-like yosegi pattern sits within a narrow bar. This is our choice for someone who enjoys wood colors and prefers a straight silhouette to a sweet motif.",
+      "whoItMaySuit": "Someone who wants a geometric, tailored approach to wooden jewelry.",
       "whatToCheck": [
         "The fitting metal, dimensions and per-ear weight are not specified in the checked product listing."
       ]
@@ -2251,8 +2593,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "Amber glass, a star-like cut and a fine chain: a warm point of light to wear with charcoal, black or a crisp white shirt.",
-      "whoItMaySuit": "For a wardrobe of clean lines, or anyone drawn to warm amber and a little geometric sparkle.",
+      "editorialSummary": "RINZEN’s Seika combines warm-colored glass, angular kiriko cuts and a fine chain. We chose it for someone who wants both color and close-up geometry in a hanging earring.",
+      "whoItMaySuit": "Someone drawn to the geometry of cut glass as much as to transparency.",
       "whatToCheck": [
         "The exact chain metal and skin-contact components are not specified in the checked product material list.",
         "The listed weight is 10 g without a clear per-ear or pair basis; full chain length is not specified.",
@@ -2319,8 +2661,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "Glossy white half-moons and fine gold-colored tassels give a simple outfit a playful, dressed-up finish.",
-      "whoItMaySuit": "For those who like sculptural shapes, white porcelain and an accent that moves with the outfit.",
+      "editorialSummary": "Glossy porcelain meets a fine chain tassel in this 6.KILN design. We selected it for someone who likes an abstract composition of solid shape and hanging lines.",
+      "whoItMaySuit": "Someone who prefers abstract shapes and longer ornament to a flower or compact stud.",
       "whatToCheck": [
         "The maker is transitioning the reverse from white to a color matched to the fittings; either version may be supplied as a matching pair.",
         "The listing gives a weight of 8 g without clarifying whether this is per earring or per pair. The component covered by sv925 is not specified.",
@@ -2387,8 +2729,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "Fresh green glass with a leaf-like outline: an easy color accent for charcoal, navy and a simple white shirt.",
-      "whoItMaySuit": "For someone drawn to green accents and a sculptural pendant rather than a conventional gemstone.",
+      "editorialSummary": "RINZEN brings a leaf outline, transparent green glass and kiriko cuts into one pendant. It is a color-led choice with a recognizable natural motif and details to see up close.",
+      "whoItMaySuit": "Someone who prefers a leaf to a flower and wants green glass to lead the outfit.",
       "whatToCheck": [
         "The listing gives a weight of 10 g without separately describing the weighing scope.",
         "Glass color, thickness, cuts and bail size may vary; the glass is not heat resistant."
@@ -2454,8 +2796,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "A tiny blue bouquet above a clean gold-colored hoop. Try this porcelain pair with white cotton, denim or a soft navy knit.",
-      "whoItMaySuit": "For those who like floral detail, deep blue and the graphic line of a hoop.",
+      "editorialSummary": "A small porcelain bouquet and a gold-colored hoop share this 6.KILN design. Choose it when both the flower and the open circular outline are part of the appeal.",
+      "whoItMaySuit": "Someone who enjoys both a flower motif and the geometry of a hoop.",
       "whatToCheck": [
         "The reverse is transitioning from white to a color matched to the fittings, and the catch-and-hoop construction is changing from integrated to separate. Either matching-pair version may be supplied.",
         "The listed 5 g weight does not identify whether it is per earring or per pair.",
@@ -2520,8 +2862,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "Glossy gray porcelain, overlapping scales and a silver-colored accent: a sculptural finish for a bare wrist or a rolled shirt cuff.",
-      "whoItMaySuit": "For a minimal wardrobe that needs one expressive shape at the wrist.",
+      "editorialSummary": "Overlapping scale-like forms give this gray porcelain cuff its sculptural surface. We selected it for someone who wants one substantial form to lead the wrist composition.",
+      "whoItMaySuit": "Someone who wants a small sculptural object at the wrist.",
       "whatToCheck": [
         "The product information lists a weight of 130 g.",
         "The material field names porcelain. The silver color is a visual finish, not a claim that the bracelet is made of solid silver.",
@@ -2586,8 +2928,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "A silver flower close to the ear, with petal details to discover up close. An understated accent for a shirt, tee or dark dress.",
-      "whoItMaySuit": "For a small floral detail and the quiet texture of silver.",
+      "editorialSummary": "CHECOS shapes a small Japanese apricot blossom in silver. We selected it for someone who likes a floral motif without adding pink, blue or another strong color.",
+      "whoItMaySuit": "Someone who likes flowers but wants to keep the color palette restrained.",
       "whatToCheck": [
         "The listing states 1 g without identifying whether that means one earring or the pair.",
         "The fine details can catch on hair or fibers. Avoid force and follow the maker’s silver-care instructions."
@@ -2653,8 +2995,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "A vivid blue pansy made from dyed embroidered lace, suspended on a fine chain. Let one flower brighten a white tee or ivory blouse.",
-      "whoItMaySuit": "For a statement flower, a clear blue accent and the texture of embroidered lace.",
+      "editorialSummary": "Dyed lace forms a recognizable pansy on a fine chain. We picked Morphosphere for someone who wants the flower’s outline and area of blue to lead the look.",
+      "whoItMaySuit": "Someone who wants a visible floral shape and a clear blue color accent.",
       "whatToCheck": [
         "The listing states 1 g without identifying a per-ear or pair basis.",
         "The maker advises against water washing or wiping with water/detergent. Fabric and pattern placement may vary."
@@ -2722,8 +3064,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "Deep color inside a glossy teardrop, framed with a fine metallic edge. Choose from six colors to bring a jewel-like accent to a plain blouse.",
-      "whoItMaySuit": "For saturated color, a teardrop silhouette and the reflective surface of cloisonne.",
+      "editorialSummary": "A metal edge frames the glossy color of Kato’s SUKE earrings. We chose the simple drop for someone interested in enamel color without a more elaborate motif.",
+      "whoItMaySuit": "Someone who prefers a clear color choice and a simple drop shape to a detailed pattern.",
       "whatToCheck": [
         "Six colors are listed. This product handle covers the color variants, rather than a single fixed color.",
         "Weight is not supplied. The glassy surface needs protection from strong impact and heat.",
@@ -2775,8 +3117,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "A little cosmic movement inside glass: choose a pendant that invites a closer look rather than a row of stones.",
-      "whoItMaySuit": "For a single sculptural accent and a fascination with swirling glass.",
+      "editorialSummary": "A spiral pattern sits within this ARCOS glass pendant top. We chose it for the interest inside the glass, giving it a different role from surface-cut kiriko.",
+      "whoItMaySuit": "Someone drawn to internal pattern and a sense of depth within glass.",
       "whatToCheck": [
         "This is a pendant-top listing. Confirm the included cord or chain before ordering.",
         "The glass mixture and33×23mm size are listed, but weight and fastening specifications are not supplied.",
@@ -2828,8 +3170,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "Keep the glass at your wrist: a small sculptural focal point for a rolled sleeve and an uncluttered hand.",
-      "whoItMaySuit": "For someone who prefers a statement at the wrist to a necklace.",
+      "editorialSummary": "This ARCOS bracelet moves the studio’s glass work from the neckline to the hand. It is a candidate for someone who would rather choose one glass motif than layer several thin chains.",
+      "whoItMaySuit": "Someone who wants the glass detail at the wrist, where they can see it themselves.",
       "whatToCheck": [
         "Ask the maker about wrist fit and fastening; neither is specified in the checked text.",
         "The listing gives several dimensions and13g without explaining every measurement basis.",
@@ -2886,8 +3228,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "A simple pearl circle at the ear: choose white for a bright accent or peacock for a darker, more graphic mood.",
-      "whoItMaySuit": "For the clean outline of a stud rather than a dangling earring.",
+      "editorialSummary": "These shell-pearl studs keep the round form close to the ear. Choose between bright white and a deeper peacock shade to change the impression within the same simple shape.",
+      "whoItMaySuit": "Someone who wants a round, lustrous ear detail without extra length.",
       "whatToCheck": [
         "Shell pearls are imitation pearls, not cultured or natural pearls.",
         "The product offers pierced and clip-on fittings; color and fitting availability differ.",
@@ -2944,8 +3286,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "A white pearl suspended below a curved fitting adds a longer line than the stud. Choose gold- or silver-colored metal to suit your other jewelry.",
-      "whoItMaySuit": "For a pearl drop with movement and a little space below the ear.",
+      "editorialSummary": "A white shell pearl hangs beneath a curved fitting in this Senshu design. We chose it as the longer alternative for someone who wants more outline than a compact stud.",
+      "whoItMaySuit": "Someone who wants a white pearl form with a longer silhouette below the ear.",
       "whatToCheck": [
         "Shell pearls are imitation pearls, not cultured or natural pearls.",
         "Gold and silver refer to coating colors here, not a solid-gold or sterling-silver claim.",
@@ -2996,8 +3338,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "A Hosoge floral motif brings raden to the neckline. A choice for making one craft detail the focus of a simple dress.",
-      "whoItMaySuit": "For an ornamental pendant rather than an earring or a plain chain.",
+      "editorialSummary": "Sugimura’s Hosoge raden pendant centers an ornamental floral motif. We selected it for someone who would rather choose a complete patterned design than a single colored stone.",
+      "whoItMaySuit": "Someone who wants an ornamental floral design rather than a plain stone.",
       "whatToCheck": [
         "The official product is named as a raden pendant; detailed substrate, dimensions, weight and fittings are not supplied in the checked body.",
         "Confirm the current piece, its dimensions and the cord or chain arrangement with the maker before choosing.",
@@ -3049,8 +3391,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "A lotus motif turns a wooden ring into a small focal point for the hand. Choose it for the painted detail and the contrast with a simple outfit.",
-      "whoItMaySuit": "For a decorative wooden ring, with sizing discussed directly with the maker.",
+      "editorialSummary": "A lotus motif is worked onto this wooden makie ring. We chose it for someone who starts with a picture or craft motif when choosing jewelry, rather than the size of a gemstone.",
+      "whoItMaySuit": "Someone drawn to painted motifs and craft rather than a gemstone-led ring.",
       "whatToCheck": [
         "The maker says the pictured ring is Japanese size 16; this is not a promise that every size is immediately available.",
         "A wooden ring cannot be resized. The maker describes remaking after matching size with a plain ring.",
@@ -3220,8 +3562,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "Crystal quartz layered over white mother-of-pearl gives these small round earrings a softly shifting color. A compact alternative to a long drop.",
-      "whoItMaySuit": "Crystal and white mother-of-pearl doublet.",
+      "editorialSummary": "Clear quartz is bonded to mother-of-pearl in these small round earrings. We chose them for a layered pale appearance rather than a strong new color in the outfit.",
+      "whoItMaySuit": "Someone who likes a compact circle and subtle layered color more than a large colored stone.",
       "whatToCheck": [
         "The stone combines crystal with mother-of-pearl; it is not unbacked crystal.",
         "Inspect the current official photographs for the individual stone appearance and confirm the fitting details."
@@ -3279,8 +3621,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "A pale rose-quartz oval held in a simple yellow-gold frame. This necklace puts the stone’s milky color ahead of elaborate decoration.",
-      "whoItMaySuit": "A pale pink rose-quartz center.",
+      "editorialSummary": "An oval rose quartz sits within a K10 yellow-gold frame. We selected this necklace for someone who wants one pale stone color rather than a more detailed motif.",
+      "whoItMaySuit": "Someone who wants the pale color of a stone to be the main feature.",
       "whatToCheck": [
         "Check the current official photographs for the individual stone color.",
         "The raw stone mining country and an individual traditional-craft certification have not been established."
@@ -3340,8 +3682,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "Wide, flattened glass drops spread a wash of mint beside the face. A statement shape for those who want color across a larger surface.",
-      "whoItMaySuit": "A broad, flattened teardrop shape.",
+      "editorialSummary": "A broad, flattened drop carries the mint green of Yukie Glass’s Mint Veil. We selected it for someone who wants an area of color beside the face rather than a tiny point of sparkle.",
+      "whoItMaySuit": "Someone who wants a visible area of pale green rather than a small bright point.",
       "whatToCheck": [
         "The maker lists approximately8–10g per piece; consider the stated weight when choosing.",
         "Fitting material and current individual-piece availability require confirmation with the maker."
@@ -3400,8 +3742,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "Deep red and clear glass meet in a broad, thin drop. Rouge Veil is the stronger color choice beside the softer mint version.",
-      "whoItMaySuit": "A broad drop of clear and red glass.",
+      "editorialSummary": "Deep red and clear glass share the thin drop of Rouge Veil. We picked it for someone who wants red shown across a surface rather than confined to a tiny gemstone.",
+      "whoItMaySuit": "Someone who wants red to lead the outfit while keeping the transparent part of the glass visible.",
       "whatToCheck": [
         "These are individual pieces with stock shared with the atelier; confirm the current availability.",
         "The maker lists approximately8–10g per piece. Fitting material is not confirmed."
@@ -3452,8 +3794,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "Sakura on one face, a geometric pattern on the other. A pear-shaped Kyoto inlay pendant that lets you change the motif with your outfit.",
-      "whoItMaySuit": "For those who want a floral pendant with a second, more graphic face.",
+      "editorialSummary": "Sakura on one face and a geometric pattern on the other share this pear-shaped Kyoto inlay pendant. The choice of which side to show is part of the design.",
+      "whoItMaySuit": "Someone who likes both floral and geometric patterns and wants to switch between them.",
       "whatToCheck": [
         "The handmade pattern placement may vary. Exact metal composition of the pendant and chain is not published in the reviewed product body."
       ]
@@ -3520,8 +3862,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "A round surface of deep cloisonne color for the hand. Choose one of six colors as a compact statement beside a simple cuff or sleeve.",
-      "whoItMaySuit": "For those who prefer a round color accent on the hand to a hanging earring.",
+      "editorialSummary": "SUKE puts glossy enamel into a simple round ring. We selected it for someone who wants one color at the hand rather than a picture or a larger gemstone composition.",
+      "whoItMaySuit": "Someone who prefers a simple outline and enamel color to a floral or painted motif.",
       "whatToCheck": [
         "Six colors share this product listing; confirm the chosen color. The ring is adjustable and its fitting is plated alloy.",
         "The glassy surface needs protection from strong impact and heat. The listing’s zero weight field is not a meaningful measured weight."
@@ -3683,8 +4025,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "Small glass beads carry a close-up pattern and a choice of rich colors. Try a restrained bead accent with an everyday cotton shirt.",
-      "whoItMaySuit": "Choose it for patterned glass beads with a modest scale, as an alternative to a pearl stud.",
+      "editorialSummary": "Sangetsu’s Irodori puts fine pattern inside a small round bead. We chose the pierced version for someone who wants the detail within the shape to matter more than a large outline.",
+      "whoItMaySuit": "Someone who wants color and pattern inside a small shape rather than a larger silhouette.",
       "whatToCheck": [
         "Bead color names such as hisui or coral-like orange are glass-color labels, not gemstone material claims.",
         "The exact total length, weight and sale unit should be checked before ordering. Handmade beads vary."
@@ -3737,8 +4079,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "A patterned round glass bead becomes the single color point on a plain top. The removable cord leaves room to restyle it later.",
-      "whoItMaySuit": "Choose it for a visible single bead and the option of changing the supplied cord, rather than a fine fixed chain.",
+      "editorialSummary": "Irodori threads one patterned glass bead onto a cord. We selected it for someone who likes the bead-and-cord composition as an alternative to a fine metal-chain necklace.",
+      "whoItMaySuit": "Someone drawn to a glass bead and cord rather than a fine-chain composition.",
       "whatToCheck": [
         "A replacement cord or chain must fit the approximately 5mm hole; the maker does not specify every compatible fitting.",
         "Cord length, cord material, closure and weight remain unconfirmed."
@@ -3793,8 +4135,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "A narrow glass tie brings a crisp line to the ear. Pair the long shape with a plain shirt and let the glass show its changing light.",
-      "whoItMaySuit": "Choose it for a slender hanging shape rather than a round bead or a compact stud.",
+      "editorialSummary": "Sghr’s Tie-tie makes a narrow hanging shape the main feature. We selected it for someone who wants a vertical glass line rather than a round bead or broad drop.",
+      "whoItMaySuit": "Someone who wants glass expressed as a vertical line rather than a flower or bead.",
       "whatToCheck": [
         "Titanium posts do not mean every part is titanium. Check the full material list if individual metals matter to you.",
         "The maker warns about glass impact and recommends drying promptly after water contact."
@@ -3845,8 +4187,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "A small triangular outline catches light at the edge of the ear. An alternative shape to compare with round glass beads and dangling earrings.",
-      "whoItMaySuit": "Choose it when you prefer a compact geometric ear accent; check the fit before choosing it as a surprise gift.",
+      "editorialSummary": "Sghr’s Kolmio puts a small triangular outline into an ear cuff. We chose it as a geometric glass option with a different placement from a hanging drop.",
+      "whoItMaySuit": "Someone who wants glass at the edge of the ear without adding a long drop.",
       "whatToCheck": [
         "The maker does not publish the opening gap or a guaranteed fit for every ear. Confirm the sale unit and sizing on the official page.",
         "Glass can break on impact; remove it for activities described in the maker’s handling notes."
@@ -3898,8 +4240,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "An open floral diamond turns warm copper into a graphic ear accent. Try it against black or ivory for a clear outline.",
-      "whoItMaySuit": "Choose it for a warm metal tone and open patterned shape, rather than a colored glass surface.",
+      "editorialSummary": "KAZARINO outlines Hanabishi in warm copper with open space within the pattern. We selected it for someone who prefers a drawn metal motif to a solid area of stone color.",
+      "whoItMaySuit": "Someone who likes a metal pattern drawn with lines and open spaces.",
       "whatToCheck": [
         "The maker explicitly says this is not an allergy-compatible product. Do not treat surgical-stainless wording as an all-parts guarantee.",
         "The maker does not support conversion to non-pierced fittings for this design."
@@ -3950,8 +4292,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "A broad brass surface carries repeating circles. Wear it with a rolled shirt cuff and let the uncoated metal’s changing tone become part of the look.",
-      "whoItMaySuit": "Choose it for a broad metal wrist accent and visible aging, rather than a fine chain bracelet.",
+      "editorialSummary": "A repeating Shippo pattern forms this broad brass bangle. We chose it for someone who wants a metal motif and is interested in how uncoated brass changes with use.",
+      "whoItMaySuit": "Someone who welcomes changes in metal color as part of owning the piece.",
       "whatToCheck": [
         "S and M have different circumferences and maker-listed weights of 30g and 40g. Check wrist dimensions; adjustment is limited.",
         "The maker says it is not allergy compatible. Uncoated brass changes color with use."
@@ -4002,8 +4344,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "Blue braided silk wraps twice around the wrist, finished with a small round knot. A textile accent to compare with the shine of metal or glass.",
-      "whoItMaySuit": "Choose it for color and braided texture when a broad metal bangle would feel visually too strong.",
+      "editorialSummary": "SHOWEN wraps a silk braid twice and closes it with a small ball. We chose it for someone interested in color and braided texture rather than another stone or metal surface.",
+      "whoItMaySuit": "Someone who values silk color and braided texture over metal shine.",
       "whatToCheck": [
         "One size is listed. The maker’s free-size label is not a guarantee of fit for every wrist.",
         "It is 100% silk; this does not establish entirely hand-braided production or water resistance."
@@ -4056,8 +4398,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "A glossy lacquer bead gives a rounded color accent. Try the rich surface with a plain cream blouse or a dark top.",
-      "whoItMaySuit": "Choose it for a glossy rounded surface rather than the visible grain of unfinished wood or transparent glass.",
+      "editorialSummary": "A wooden bead receives an urushi surface in Iwaya’s hook earrings. We chose it for someone who wants glossy color rather than yosegi pattern or transparent glass.",
+      "whoItMaySuit": "Someone who enjoys wood but wants a round form and lacquer gloss rather than a wood pattern.",
       "whatToCheck": [
         "The maker does not give an exact weight or stainless grade. Lightness in its promotional text is not treated as a measured fact.",
         "Urushi and metal suitability depend on the wearer; no allergy-free claim is adopted."
@@ -4109,8 +4451,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "An open wooden pattern brings a graphic silhouette near the face. A contemporary ToyToy design for those drawn to a carved outline.",
-      "whoItMaySuit": "Choose it for a bold open pattern and wood tone, rather than a glossy glass or enamel surface.",
+      "editorialSummary": "ToyToy’s wooden earrings leave open space within the pattern. We chose this contemporary design for someone who wants a silhouette shaped by lines and gaps.",
+      "whoItMaySuit": "Someone drawn to wood tones and an open patterned silhouette.",
       "whatToCheck": [
         "Wood species, finish and exact weight are not published in this listing.",
         "Clip-on conversion is mentioned as an inquiry option; its price and fitting material are not confirmed. Surgical-stainless wording is not an allergy guarantee."
@@ -4162,8 +4504,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "A small silver drop carries a curved pattern. Choose it for metal tone and a compact shape against a simple neckline.",
-      "whoItMaySuit": "Choose it for a small metal pendant with different silver grades stated for the top and chain.",
+      "editorialSummary": "ToyToy’s Sirokani-pe puts its pattern within a compact drop-shaped pendant. We chose it for someone who wants silver color and curves rather than another colored stone.",
+      "whoItMaySuit": "Someone who prefers a small silver form and pattern to a colored stone.",
       "whatToCheck": [
         "The pure-silver statement applies to the top; the chain is SV925, not SV1000.",
         "Weight and the exact clasp design are not published. Silver suitability and maintenance should be checked with the maker."
@@ -4217,8 +4559,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "Blue and green enamel create a layered sea-like color. An alternative to transparent glass when you want a glossy surface with drawn lines.",
-      "whoItMaySuit": "Choose it for enamel color and silver-wire detail, with a choice of pierced or non-pierced fittings to confirm on the official listing.",
+      "editorialSummary": "Tamura’s Kaisai combines a pure-silver base, silver wire and fired color. We selected it for someone who wants the drawn detail as well as the sea-like enamel palette.",
+      "whoItMaySuit": "Someone who wants the silver-wire drawing as well as glossy enamel color.",
       "whatToCheck": [
         "Dimensions, weight and the exact non-pierced base alloy are not published in the product body.",
         "The two fitting options use different materials. No all-parts allergy guarantee is adopted."
@@ -4273,8 +4615,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "Green, purple and red appear differently as the small glass motif turns. A compact alternative to a long glass drop, with a specific glass-shaft size to check.",
-      "whoItMaySuit": "Choose it for a small color-changing effect, after confirming that the stated 16G glass shaft dimensions suit your existing fitting needs.",
+      "editorialSummary": "Nebula brings green, purple and red effects into a little round top. The glass shaft as well as the ornament makes its construction an important part of the choice.",
+      "whoItMaySuit": "Someone drawn to color changes within a small shape rather than a larger silhouette.",
       "whatToCheck": [
         "16G is approximately 1.2mm, and the maker states dimensional variation. Do not force a mismatched shaft or assume first-piercing suitability.",
         "The current body contains conflicting box-included/box-not-included wording; confirm gift packaging. No allergy-free guarantee is adopted."
@@ -4328,8 +4670,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "White topaz on one face, ruby on the other. A small reversible ring for changing the color of a hand detail without changing the whole outfit.",
-      "whoItMaySuit": "Choose it if you enjoy switching a small ring’s color; first check the maker’s Japanese size range and made-to-order timing.",
+      "editorialSummary": "White topaz and ruby sit on opposite faces of this chain ring. We chose it for someone who likes changing the small stone color to suit the day’s clothing.",
+      "whoItMaySuit": "Someone who would rather switch a small stone color than add another ring.",
       "whatToCheck": [
         "The maker lists sizes 1–12. Do not interpret free sizing as fitting every finger or size.",
         "Made to order, with a stated 1–4 week dispatch window when checked; immediate in-store availability is not confirmed."
@@ -4380,8 +4722,8 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "A tapered hoop-like shape with two color faces. This single-ear piece offers a polished metal alternative to textile or porcelain non-pierced jewelry.",
-      "whoItMaySuit": "Choose it for a single metal ear accent with a reversible color effect; check both the sale unit and the fitting.",
+      "editorialSummary": "This tapered, hoop-like Piaring offers a reversible two-tone effect. We selected it for someone who wants to compose an ear combination one side at a time.",
+      "whoItMaySuit": "Someone who likes an asymmetric combination or a single metal ear accent.",
       "whatToCheck": [
         "The page title specifies one ear. Do not compare its displayed price as if it were a two-piece pair.",
         "Made to order with a stated 1–4 week dispatch window. No pain-free, loss-proof or allergy guarantee is adopted."
@@ -4438,12 +4780,456 @@
       ],
       "lastVerifiedAt": "2026-11-16",
       "imageAssetIds": [],
-      "editorialSummary": "Clear glass drops move along fine chains. Try the transparent detail beside a white shirt or navy knit, with the neckline kept simple.",
-      "whoItMaySuit": "Choose it for a clear hanging line and small teardrop shapes, as an alternative to a colored bead or a solid ceramic motif.",
+      "editorialSummary": "HARIO threads small teardrop-shaped glass forms onto chains in Little Tears. We chose it for someone who wants transparent shapes and fine lines without a new strong color.",
+      "whoItMaySuit": "Someone who wants transparent detail and a hanging line without adding a strong new color.",
       "whatToCheck": [
         "The standard fitting is gold-plated brass. Paid K10 conversion is a separate option, not the material of the reference-priced model.",
         "Exact weight and the detailed clip-on closing mechanism are not specified in the product body. Glass needs careful handling.",
         "The maker works in Nihonbashi and other regions. This item’s exact workshop and current Kodenmacho shelf stock are unconfirmed."
+      ]
+    },
+    {
+      "id": "nousaku-dahlia-gerbera-clip-on-earrings",
+      "slug": "nousaku-dahlia-gerbera-clip-on-earrings",
+      "locale": "en",
+      "title": "NOUSAKU Dahlia / Gerbera tin clip-on earrings",
+      "originalTitle": "イヤリング - ダリア/ガーベラ",
+      "publishStatus": "published",
+      "productType": [
+        "clip-on-earrings"
+      ],
+      "prefectureIds": [
+        "toyama"
+      ],
+      "craftIds": [
+        "takaoka-tin-casting"
+      ],
+      "materialIds": [
+        "tin",
+        "silver-925"
+      ],
+      "makerId": "nousaku",
+      "craftClassification": {
+        "label": "Contemporary tin jewelry from Takaoka maker NOUSAKU; no individual traditional-craft certificate is asserted.",
+        "sourceIds": [
+          "nousaku-flower-clip-v12",
+          "nousaku-casting-v12",
+          "nousaku-factory-store-v12"
+        ]
+      },
+      "size": "Ornament diameter 9 mm; silver fitting H12 × D11mm.",
+      "weightPerPieceGrams": null,
+      "findings": "SV925 with rhodium plating.",
+      "fastening": null,
+      "priceAmount": 8800,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-17",
+      "taxNote": "Current Japanese official shop price including consumption tax. Delivery and optional services are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "nousaku-official"
+      ],
+      "sourceIds": [
+        "nousaku-flower-clip-v12",
+        "nousaku-casting-v12",
+        "nousaku-factory-store-v12"
+      ],
+      "lastVerifiedAt": "2026-11-17",
+      "imageAssetIds": [],
+      "editorialSummary": "A small flower in uncolored tin: the modeled petals give these clip-ons detail without a colored stone.",
+      "whoItMaySuit": "Choose it for a compact flower motif and a silver-colored palette, rather than a long drop.",
+      "whatToCheck": [
+        "Pure tin refers to the main ornament; the fittings are a different metal.",
+        "Published box weight is not an earring weight. Per-ear weight is unconfirmed."
+      ]
+    },
+    {
+      "id": "nousaku-aya-tin-pendant",
+      "slug": "nousaku-aya-tin-pendant",
+      "locale": "en",
+      "title": "NOUSAKU Aya tin pendant",
+      "originalTitle": "ペンダント - Aya",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "toyama"
+      ],
+      "craftIds": [
+        "takaoka-tin-casting"
+      ],
+      "materialIds": [
+        "tin",
+        "silver-925"
+      ],
+      "makerId": "nousaku",
+      "craftClassification": {
+        "label": "Contemporary tin pendant by Takaoka maker NOUSAKU. The exact item casting method is not identified.",
+        "sourceIds": [
+          "nousaku-aya-pendant-v12",
+          "nousaku-casting-v12",
+          "nousaku-factory-store-v12"
+        ]
+      },
+      "size": "Main part H2 × W50 × D50mm; adjustable chain600mm.",
+      "weightPerPieceGrams": null,
+      "findings": "Chain: rhodium-plated SV925.",
+      "fastening": null,
+      "priceAmount": 13750,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-17",
+      "taxNote": "Current Japanese official shop price including consumption tax. Delivery and optional services are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "nousaku-official"
+      ],
+      "sourceIds": [
+        "nousaku-aya-pendant-v12",
+        "nousaku-casting-v12",
+        "nousaku-factory-store-v12"
+      ],
+      "lastVerifiedAt": "2026-11-17",
+      "imageAssetIds": [],
+      "editorialSummary": "A broad tin motif on a long silver chain. Aya gives the neckline a metal focal point instead of a small gemstone.",
+      "whoItMaySuit": "Choose it when you want one broad focal point over clothing instead of a fine chain alone.",
+      "whatToCheck": [
+        "The main ornament is tin100%; the chain is rhodium-plated SV925.",
+        "The official70g value is boxed weight, not a necklace or per-piece weight."
+      ]
+    },
+    {
+      "id": "coyorimi-tamamusubi-clip-on-earrings",
+      "slug": "coyorimi-tamamusubi-clip-on-earrings",
+      "locale": "en",
+      "title": "COYORIMI Tamamusubi mizuhiki clip-on earrings",
+      "originalTitle": "水引 玉結びイヤリング 全5色 / no.1927",
+      "publishStatus": "published",
+      "productType": [
+        "clip-on-earrings"
+      ],
+      "prefectureIds": [
+        "kyoto"
+      ],
+      "craftIds": [
+        "kyoto-mizuhiki"
+      ],
+      "materialIds": [
+        "paper-cord",
+        "alloy"
+      ],
+      "makerId": "coyorimi",
+      "craftClassification": {
+        "label": "Contemporary decorative mizuhiki jewelry by Kyoto brand COYORIMI; no individual accessory certification is claimed.",
+        "sourceIds": [
+          "coyorimi-tamamusubi-mocad-v12",
+          "coyorimi-maker-v12",
+          "mocad-museum-store-v12"
+        ]
+      },
+      "size": "Knot diameter approximately7–8mm; total length approximately40mm.",
+      "weightPerPieceGrams": null,
+      "findings": "Alloy; detailed composition is not specified.",
+      "fastening": null,
+      "priceAmount": 3740,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-17",
+      "taxNote": "Current Japanese official shop price including consumption tax. Delivery and optional services are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "mocad-official"
+      ],
+      "sourceIds": [
+        "coyorimi-tamamusubi-mocad-v12",
+        "coyorimi-maker-v12",
+        "mocad-museum-store-v12"
+      ],
+      "lastVerifiedAt": "2026-11-17",
+      "imageAssetIds": [],
+      "editorialSummary": "A small knot of colored paper cord, suspended rather than set like a stone. Its close-up interest is in the overlapping lines.",
+      "whoItMaySuit": "Choose it for visible cord texture and layered color rather than a glossy glass or metal surface.",
+      "whatToCheck": [
+        "The current reference price comes from the selected MOCAD SKU, not another maker-shop design or an old foreign-currency display.",
+        "Fitting composition is stated only as alloy. This is not an allergy-suitability claim."
+      ]
+    },
+    {
+      "id": "somemasa-peacock-clip-on-earrings",
+      "slug": "somemasa-peacock-clip-on-earrings",
+      "locale": "en",
+      "title": "Somemasa × Sextile Peacock Yuzen clip-on earrings",
+      "originalTitle": "手描友禅 孔雀 ピアス / イヤリング（イヤリング仕様）",
+      "publishStatus": "published",
+      "productType": [
+        "clip-on-earrings"
+      ],
+      "prefectureIds": [
+        "kyoto"
+      ],
+      "craftIds": [
+        "kyoto-yuzen"
+      ],
+      "materialIds": [
+        "cotton",
+        "synthetic-leather",
+        "brass"
+      ],
+      "makerId": "somemasa-sextile",
+      "craftClassification": {
+        "label": "Hand-dyed Yuzen textile jewelry by Somemasa × Sextile, connected with a Kyoto maker; no individual certification is asserted.",
+        "sourceIds": [
+          "somemasa-peacock-clip-mocad-v12",
+          "somemasa-maker-v12",
+          "mocad-museum-store-v12"
+        ]
+      },
+      "size": "Length approximately60mm.",
+      "weightPerPieceGrams": null,
+      "findings": "Brass fittings for the selected non-pierced variant.",
+      "fastening": null,
+      "priceAmount": 8525,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-17",
+      "taxNote": "Current Japanese official shop price including consumption tax. Delivery and optional services are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "mocad-official"
+      ],
+      "sourceIds": [
+        "somemasa-peacock-clip-mocad-v12",
+        "somemasa-maker-v12",
+        "mocad-museum-store-v12"
+      ],
+      "lastVerifiedAt": "2026-11-17",
+      "imageAssetIds": [],
+      "editorialSummary": "Different feather designs turn hand-dyed cotton into an asymmetric ornament. Choose the long peacock forms when you want the earrings to lead the outfit.",
+      "whoItMaySuit": "Choose it for a long, asymmetric textile motif with a recognizable feather design.",
+      "whatToCheck": [
+        "Only the clip-on version is included here; the pierced version was unavailable when checked.",
+        "Keep dry; the maker warns about staining, prolonged damp contact and friction."
+      ]
+    },
+    {
+      "id": "egaho-gathered-kurume-kasuri-ear-jewelry",
+      "slug": "egaho-gathered-kurume-kasuri-ear-jewelry",
+      "locale": "en",
+      "title": "EGAHO gathered Kurume-kasuri ear jewelry",
+      "originalTitle": "くしゅくしゅ久留米絣と切子ビーズ",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings",
+        "clip-on-earrings"
+      ],
+      "prefectureIds": [],
+      "craftIds": [
+        "kurume-kasuri-accessories"
+      ],
+      "materialIds": [
+        "textile",
+        "stainless-steel"
+      ],
+      "makerId": "egaho",
+      "craftClassification": {
+        "label": "Contemporary accessories using Kurume-kasuri fabric. The accessory workshop location and individual craft certification are not established.",
+        "sourceIds": [
+          "egaho-gathered-kasuri-v12",
+          "egaho-maker-v12"
+        ]
+      },
+      "size": null,
+      "weightPerPieceGrams": null,
+      "findings": "The maker uses surgical-stainless wording. Detailed grade and coverage of all fitting options are not confirmed.",
+      "fastening": "Pierced, screw-spring clip-on or hoop clip-on options.",
+      "priceAmount": 1600,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-17",
+      "taxNote": "Current official displayed JPY price. Tax treatment is not separately stated in the observed product body; options and delivery are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "egaho-official"
+      ],
+      "sourceIds": [
+        "egaho-gathered-kasuri-v12",
+        "egaho-maker-v12"
+      ],
+      "lastVerifiedAt": "2026-11-17",
+      "imageAssetIds": [],
+      "editorialSummary": "Gathered kasuri fabric makes a flower-like volume, with a patterned bead below. The folds keep the cloth itself at the center of the design.",
+      "whoItMaySuit": "Choose it when visible folds and cloth texture appeal more than a flat motif.",
+      "whatToCheck": [
+        "Detailed bead material, size and per-ear weight are not published in the observed body.",
+        "The stainless wording is not an allergy-free guarantee; choose the actual fitting on the official page."
+      ]
+    },
+    {
+      "id": "sirisiri-page-blue-enamel-pierced-earrings",
+      "slug": "sirisiri-page-blue-enamel-pierced-earrings",
+      "locale": "en",
+      "title": "SIRI SIRI SHIPPO Page Blue enamel earrings",
+      "originalTitle": "SHIPPŌ Earrings Page Blue",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "tokyo"
+      ],
+      "craftIds": [
+        "basse-taille-enamel"
+      ],
+      "materialIds": [
+        "silver-950",
+        "enamel-glaze",
+        "silver-925"
+      ],
+      "makerId": "sirisiri",
+      "craftClassification": {
+        "label": "Japanese-made basse-taille enamel jewelry from Tokyo-founded SIRI SIRI; exact workshop prefecture is not specified.",
+        "sourceIds": [
+          "sirisiri-page-blue-v12",
+          "sirisiri-maker-v12",
+          "sirisiri-akasaka-store-v12"
+        ]
+      },
+      "size": "Motif19.5 ×16.25mm; post diameter0.7mm.",
+      "weightPerPieceGrams": null,
+      "findings": "SV950 main silver body; SV925 posts.",
+      "fastening": null,
+      "priceAmount": 39600,
+      "priceCurrency": "JPY",
+      "priceUnit": "pair",
+      "priceCheckedAt": "2026-11-17",
+      "taxNote": "Current Japanese official shop price including consumption tax. Delivery and optional services are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "sirisiri-official"
+      ],
+      "sourceIds": [
+        "sirisiri-page-blue-v12",
+        "sirisiri-maker-v12",
+        "sirisiri-akasaka-store-v12"
+      ],
+      "lastVerifiedAt": "2026-11-17",
+      "imageAssetIds": [],
+      "editorialSummary": "A curled-page shape lets pale blue enamel and the marks beneath it share the surface. The detail comes from stamped silver under glass glaze.",
+      "whoItMaySuit": "Choose it for a broad enamel surface with a pattern underneath, rather than a single solid color.",
+      "whatToCheck": [
+        "Official weight is6.5g per pair; an independently confirmed per-ear weight is not available.",
+        "The brand was founded in Tokyo and works across Japan; Tokyo assembly is not established for this item."
+      ]
+    },
+    {
+      "id": "sirisiri-silver-thread-hoop-mini",
+      "slug": "sirisiri-silver-thread-hoop-mini",
+      "locale": "en",
+      "title": "SIRI SIRI ARABESQUE silver-thread HOOP SV mini earrings",
+      "originalTitle": "ARABESQUE Earrings HOOP SV mini",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "tokyo"
+      ],
+      "craftIds": [
+        "silver-thread-work"
+      ],
+      "materialIds": [
+        "silver",
+        "rayon",
+        "gold-filled",
+        "gold-10k",
+        "silicone"
+      ],
+      "makerId": "sirisiri",
+      "craftClassification": {
+        "label": "Japanese-made metallic-thread jewelry shaped by rattan craftspeople for Tokyo-founded SIRI SIRI; exact assembly prefecture is not identified.",
+        "sourceIds": [
+          "sirisiri-silver-thread-hoop-v12",
+          "sirisiri-maker-v12",
+          "sirisiri-akasaka-store-v12"
+        ]
+      },
+      "size": "Height50 × width43mm.",
+      "weightPerPieceGrams": null,
+      "findings": "Gold-colored pure silver and rayon thread; hoop14KGF; catch10K yellow gold and silicone.",
+      "fastening": null,
+      "priceAmount": 29700,
+      "priceCurrency": "JPY",
+      "priceUnit": "pair",
+      "priceCheckedAt": "2026-11-17",
+      "taxNote": "Current Japanese official shop price including consumption tax. Delivery and optional services are separate.",
+      "availability": "listed",
+      "merchantIds": [
+        "sirisiri-official"
+      ],
+      "sourceIds": [
+        "sirisiri-silver-thread-hoop-v12",
+        "sirisiri-maker-v12",
+        "sirisiri-akasaka-store-v12"
+      ],
+      "lastVerifiedAt": "2026-11-17",
+      "imageAssetIds": [],
+      "editorialSummary": "Kyoto-made metallic thread becomes open loops in the hands of rattan craftspeople. Choose the gold-colored lines and the spaces between them, rather than a solid metal hoop.",
+      "whoItMaySuit": "Choose it for a large open outline and textile-like metallic thread rather than a solid hoop.",
+      "whatToCheck": [
+        "Published weight is3g per pair, not per ear.",
+        "Metallic thread may change with use; material descriptions apply to the specified parts, not the whole earring in solid gold."
+      ]
+    },
+    {
+      "id": "mie-akoya-oh002-stud-earrings",
+      "slug": "mie-akoya-oh002-stud-earrings",
+      "locale": "en",
+      "title": "Mie Pearl Union Ise-Shima Akoya stud earrings OH-002",
+      "originalTitle": "アコヤ真珠7.0〜7.5mm 一粒パールピアス OH-002",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "mie"
+      ],
+      "craftIds": [
+        "ise-shima-akoya-jewelry"
+      ],
+      "materialIds": [
+        "akoya-pearl",
+        "gold-18k"
+      ],
+      "makerId": "mie-pearl-union",
+      "craftClassification": {
+        "label": "Akoya pearl jewelry supplied by a Mie producer cooperative. The pearls are identified with Ise-Shima; the individual jewelry assembly workshop and product certification are not established.",
+        "sourceIds": [
+          "mie-akoya-oh002-current-v12",
+          "mie-pearl-union-current-v12",
+          "mie-akoya-shop-list-current-v12"
+        ]
+      },
+      "size": "Pearl diameter7.0–7.5mm.",
+      "weightPerPieceGrams": null,
+      "findings": "Fittings listed as K18 yellow gold; separate catch composition is not specified.",
+      "fastening": "Stud earrings; detailed catch construction is not separately stated.",
+      "priceAmount": 22000,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-17",
+      "taxNote": "Japan official online reference price including consumption tax.",
+      "availability": "listed",
+      "merchantIds": [
+        "mie-pearl-union-official"
+      ],
+      "sourceIds": [
+        "mie-akoya-oh002-current-v12",
+        "mie-pearl-union-current-v12",
+        "mie-akoya-shop-list-current-v12"
+      ],
+      "lastVerifiedAt": "2026-11-17",
+      "imageAssetIds": [],
+      "editorialSummary": "A single Ise-Shima Akoya pearl keeps the focus on the pearl itself. A simple stud shape adds a different choice from imitation shell pearls.",
+      "whoItMaySuit": "Choose it for a close-to-ear pearl shape and a restrained focal point rather than a long ornament.",
+      "whatToCheck": [
+        "The selected product identifies Akoya pearls from Ise-Shima. This is not a claim of wild natural pearls or an independently established treatment history.",
+        "K18 yellow gold is stated for the fittings; separate catch composition and per-ear weight are unconfirmed."
       ]
     }
   ]

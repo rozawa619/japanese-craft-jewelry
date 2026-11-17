@@ -12,6 +12,7 @@ import Sources from '../../../components/Sources.astro';
 import VisitGuide from '../../../components/VisitGuide.astro';
 import ProductCard from '../../../components/ProductCard.astro';
 import ChoiceDetails from '../../../components/ChoiceDetails.astro';
+import SelectionDecision from '../../../components/SelectionDecision.astro';
 import PurchaseEvidence from '../../../components/PurchaseEvidence.astro';
 import {selectionNoteFor} from '../../../lib/selection-notes';
 import {catalogFor,productsFor,makerFor,labels} from '../../../lib/catalog';
@@ -70,6 +71,7 @@ const destinationNote=t(locale,'Opens the official website in a new tab.','公�
    <ul class="purchase-highlights">{story.highlights.map(highlight=><li>{highlight}</li>)}</ul>
   </div>
  </section>
+ <SelectionDecision productId={p.id} locale={locale}/>
  <section class="purchase-story" aria-labelledby="why-this-piece"><div><p class="eyebrow">{t(locale,'WHY WE PICKED IT','このひとつを選んだ理由')}</p><h2 id="why-this-piece">{t(locale,'A detail to fall for.','惹かれる、その理由。')}</h2></div><div class="purchase-story-copy">{Content&&<div class="prose"><Content/></div>}</div></section>
  <section class="purchase-outfit" aria-labelledby="outfit-title"><div><p class="eyebrow">{t(locale,'PICTURE YOUR OUTFIT','こんな装いの日に')}</p><h2 id="outfit-title">{story.outfit.title}</h2></div><div><p>{story.outfit.body}</p></div></section>
  <ChoiceDetails productId={p.id} locale={locale}/>

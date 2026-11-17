@@ -4,6 +4,6 @@ locale: en
 publishStatus: published
 ---
 
-A bracelet makes sense when a neckline would hide a pendant, or when you simply prefer jewelry you can see at your own wrist. Cosmic Sparkle brings the studio's glass work into that part of an outfit.
+Changing where you wear glass changes the reason to choose it. We included the ARCOS bracelet for someone who wants a glass detail at the hand rather than at the center of the neckline.
 
-Compare it with Cosmic Spiral by thinking about the clothes you wear: an open neckline points toward the pendant, while shorter sleeves give the bracelet room. Ask the maker for wrist-fit and fastening information before choosing.
+Drake offers a sculptural porcelain surface, while KAZARINO shows a brass pattern. Glass is the comparison point here. Once the material appeals, the actual fastening and wrist fit are the next details to establish for the current piece.

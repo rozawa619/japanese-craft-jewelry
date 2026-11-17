@@ -24,5 +24,5 @@ for(let offset=0;offset<targets.length;offset+=4){
 }
 report.completedAt=new Date().toISOString();
 report.summary={checks:report.results.length,passed:report.results.filter(item=>item.status==='passed').length,failed:report.results.filter(item=>item.status!=='passed').length,withdrawnRoutes:report.results.filter(item=>item.kind==='withdrawn-product').length,retiredImages:report.results.filter(item=>item.kind==='retired-image').length};
-await writeFile(resolve(root,process.env.CHECK_WITHDRAWN_REPORT_PATH||'docs/quality-stage-hosted-withdrawal-results.json'),JSON.stringify(report,null,2)+'\n');
+await writeFile(resolve(root,process.env.CHECK_WITHDRAWN_REPORT_PATH||'docs/editorial-stage-hosted-withdrawal-results.json'),JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify(report.summary));if(report.summary.failed){for(const result of report.results.filter(item=>item.status==='failed'))console.log(JSON.stringify(result));process.exitCode=1}

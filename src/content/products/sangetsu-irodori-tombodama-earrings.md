@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-For Osaka, these glass beads offer a different direction from Senshu shell pearls. The point is the small round volume and the fine pattern within it, with opaque or translucent color choices.
+We selected Irodori for the pattern within a small round bead. It shows another way to enjoy glass jewelry: choosing a detail to see up close instead of increasing the size of the ornament.
 
-If you like the bead itself but prefer a necklace, compare the matching Irodori pendant. Ask the public Sakaihigashi shop about the color and fitting you want; the non-retail workshop address is not a shopping destination.
+Nanao & Shuka’s Nebula emphasizes a small color-changing effect; Sghr’s Tie-tie emphasizes a long outline. Irodori puts the choice in the bead pattern. Deciding what you want to look at helps separate these quite different glass earrings.

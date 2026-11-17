@@ -3,6 +3,6 @@ productId: kato-suke-drop-pierced-earrings
 publishStatus: published
 ---
 
-A simple drop gives the color space to do the talking. The SUKE series layers transparent glaze over a metallic base, creating a glossy surface with depth. We were drawn to the fine border and the way the color seems to change as it catches the light in the official photographs.
+SUKE earns its place through a simple setting for cloisonné color. The fine metal edge defines the drop, leaving the translucent glaze to provide the main detail. It is an approachable comparison point for someone choosing by color rather than ornament.
 
-Try green with an ivory blouse for a rich accent, or navy with a white shirt for a cooler palette. There are six colors to explore. Kato Shippo brings its Owari cloisonne practice into a familiar jewelry shape, so the pleasure begins with choosing a color you want to wear.
+Tamura’s Kaisai draws attention to silver-wire pattern within the enamel. SUKE keeps the choice closer to a color and an outline. Even within the same craft, that distinction can be more useful than choosing by region alone.

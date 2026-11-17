@@ -63,7 +63,7 @@ export function loadProjectData(root = projectRoot): ProjectData {
 export function collectValidationErrors(data: ProjectData): string[] {
   const errors: string[] = [];
   const { catalog, sources, assets } = data;
-  const storyFields=new Set(['headline','standfirst','highlights','outfit']);
+  const storyFields=new Set(['headline','standfirst','highlights','outfit','decision']);
   const text=(value:unknown)=>typeof value==='string'&&!!value.trim();
   for(const id of Object.keys(data.stories))if(!catalog.products.some(product=>product.id===id))errors.push('stories: unknown product '+id);
   for(const product of catalog.products.filter(product=>product.publishStatus==='published')){
@@ -76,12 +76,16 @@ export function collectValidationErrors(data: ProjectData): string[] {
       const outfit=story.outfit;
       if(!outfit||typeof outfit!=='object'||Array.isArray(outfit))errors.push('stories: outfit required for '+product.id+'/'+locale);
       else{const value=outfit as Record<string,unknown>;if(!text(value.title)||!text(value.body)||Object.keys(value).some(key=>!['title','body'].includes(key)))errors.push('stories: outfit title/body only for '+product.id+'/'+locale);}
+      const decision=story.decision;
+      if(!decision||typeof decision!=='object'||Array.isArray(decision))errors.push('stories: localized decision required for '+product.id+'/'+locale);
+      else{const value=decision as Record<string,unknown>;if(!text(value.bestFor)||!text(value.consider)||Object.keys(value).some(key=>!['bestFor','consider'].includes(key)))errors.push('stories: decision bestFor/consider only for '+product.id+'/'+locale);}
     }
   }
 
   const selectedIds=[...selection.featuredProductIds];
   if(new Set(selectedIds).size!==selectedIds.length)errors.push('selection: duplicate featured product ID');
-  for(const id of new Set<string>([selection.heroProductId,...selectedIds])){
+  if(new Set(selection.catalogProductIds).size!==selection.catalogProductIds.length)errors.push('selection: duplicate catalog product ID');
+  for(const id of new Set<string>([selection.heroProductId,...selectedIds,...selection.catalogProductIds])){
     if(!catalog.products.some(product=>product.id===id&&product.publishStatus==='published'))errors.push('selection: published product required for '+id);
   }
   const groups = { ...catalog, sources, assets };

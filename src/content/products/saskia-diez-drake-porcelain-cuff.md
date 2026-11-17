@@ -3,6 +3,6 @@ productId: saskia-diez-drake-porcelain-cuff
 publishStatus: published
 ---
 
-Porcelain at the wrist is a pleasing change from a familiar metal bangle. Here, curved, overlapping scales create a strong silhouette, while glossy gray and a silver-colored finish keep the palette restrained. We chose it for the balance of quiet color and expressive shape.
+Drake gives porcelain a different jewelry role: a form around the wrist rather than a tiny flower at the ear. The scale-like surface creates detail within a focused gray palette. That unusual meeting of material and form is why we selected it.
 
-The Drake collection is designed by Saskia Diez and produced as Imari-Arita porcelain. Wear this cuff as a single statement with a short sleeve or a rolled shirt cuff. Let the curved surface and the spaces between its shapes do the talking.
+KAZARINO supplies an open brass pattern, while SHOWEN offers lines of silk. This piece brings porcelain surface and volume to the comparison. Look at those different constructions when choosing what you want a bracelet to contribute.

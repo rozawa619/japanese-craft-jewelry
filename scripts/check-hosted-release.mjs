@@ -115,5 +115,5 @@ try{
  await check('No hosted CSP/client/console errors during supplemental navigation',()=>{assert.deepEqual(report.pageErrors,[]);assert.deepEqual(report.consoleErrors,[])});
 }finally{
  await browser.close();report.completedAt=new Date().toISOString();report.finalizedAt=report.completedAt;report.summary={checks:report.checks.length,passed:report.checks.filter(c=>c.status==='passed').length,failed:report.failures.length,canonicalUrls:report.pages.length,uniqueImages:report.assets.length,pageErrors:report.pageErrors.length,consoleErrors:report.consoleErrors.length};
- await writeFile(resolve(root,process.env.CHECK_HOSTED_REPORT_PATH||'docs/quality-stage-hosted-supplement-results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report.summary));if(report.failures.length)process.exitCode=1;
+ await writeFile(resolve(root,process.env.CHECK_HOSTED_REPORT_PATH||'docs/editorial-stage-hosted-supplement-results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report.summary));if(report.failures.length)process.exitCode=1;
 }

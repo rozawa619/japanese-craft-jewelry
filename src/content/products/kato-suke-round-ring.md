@@ -4,6 +4,6 @@ locale: en
 publishStatus: published
 ---
 
-Choose the ring when you want SUKE’s color to sit on the hand rather than hang beside the face. Its round surface is a different silhouette from the collection’s drop earrings, while the six-color range gives you a way to coordinate or contrast them.
+Putting enamel into one round surface makes the color choice clear. We included the SUKE ring as a way to choose jewelry through a color itself, rather than through a stone shape or an illustrated motif.
 
-The product information identifies Aichi and Owari cloisonne, with silver, copper, glaze and alloy listed as materials. The adjustable ring fitting itself is plated alloy. Treat the glossy surface with care around strong impact and heat, and check the selected color rather than assuming the first photograph represents every variant.
+Sugimura brings a painted lotus, while SIMPRICH offers two gemstone faces. SUKE keeps the focus on one circle of color. It is a useful candidate when you want a single ring to set the palette at the hand.

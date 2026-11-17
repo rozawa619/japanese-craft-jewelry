@@ -1,0 +1,534 @@
+{
+  "checkedAt": "2026-11-17T01:49:33.995Z",
+  "origin": "http://127.0.0.1:4322",
+  "base": "/japanese-craft-jewelry/",
+  "method": "Focused verification after the one-word Japanese Mie body correction. Fresh Chrome, both languages and 1440/390/320px, raw source price and decision, official destination, unconfirmed price-unit remains absent, corrected body, overflow and every axe rule. No merchant navigation or checkout.",
+  "checks": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "status": "passed",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/en/objects/mie-akoya-oh002-stud-earrings/",
+      "price": 22000,
+      "priceUnitNotInvented": true,
+      "axeViolations": 0,
+      "correctedBody": false,
+      "dimensions": {
+        "width": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "locale": "ja",
+      "width": 1440,
+      "status": "passed",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/objects/mie-akoya-oh002-stud-earrings/",
+      "price": 22000,
+      "priceUnitNotInvented": true,
+      "axeViolations": 0,
+      "correctedBody": true,
+      "dimensions": {
+        "width": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "status": "passed",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/en/objects/mie-akoya-oh002-stud-earrings/",
+      "price": 22000,
+      "priceUnitNotInvented": true,
+      "axeViolations": 0,
+      "correctedBody": false,
+      "dimensions": {
+        "width": 390,
+        "document": 390
+      }
+    },
+    {
+      "locale": "ja",
+      "width": 390,
+      "status": "passed",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/objects/mie-akoya-oh002-stud-earrings/",
+      "price": 22000,
+      "priceUnitNotInvented": true,
+      "axeViolations": 0,
+      "correctedBody": true,
+      "dimensions": {
+        "width": 390,
+        "document": 390
+      }
+    },
+    {
+      "locale": "en",
+      "width": 320,
+      "status": "passed",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/en/objects/mie-akoya-oh002-stud-earrings/",
+      "price": 22000,
+      "priceUnitNotInvented": true,
+      "axeViolations": 0,
+      "correctedBody": false,
+      "dimensions": {
+        "width": 320,
+        "document": 320
+      }
+    },
+    {
+      "locale": "ja",
+      "width": 320,
+      "status": "passed",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/objects/mie-akoya-oh002-stud-earrings/",
+      "price": 22000,
+      "priceUnitNotInvented": true,
+      "axeViolations": 0,
+      "correctedBody": true,
+      "dimensions": {
+        "width": 320,
+        "document": 320
+      }
+    },
+    {
+      "region": "kanagawa",
+      "locale": "ja",
+      "width": 320,
+      "status": "passed",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/places/kanagawa/",
+      "headings": [
+        {
+          "text": "神奈川に関わるジュエリー",
+          "lines": [
+            "神奈川に関わ",
+            "るジュエリー"
+          ],
+          "balance": "balance"
+        },
+        {
+          "text": "この産地のジュエリー。",
+          "lines": [
+            "この産地の",
+            "ジュエリー。"
+          ],
+          "balance": "balance"
+        }
+      ],
+      "dimensions": {
+        "width": 320,
+        "document": 320
+      },
+      "axeViolations": null
+    },
+    {
+      "region": "tokyo",
+      "locale": "ja",
+      "width": 320,
+      "status": "passed",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/places/tokyo/",
+      "headings": [
+        {
+          "text": "東京の作り手と、ガラスのジュエリー",
+          "lines": [
+            "東京の作り手",
+            "と、ガラス",
+            "のジュエリー"
+          ],
+          "balance": "balance"
+        },
+        {
+          "text": "この産地のジュエリー。",
+          "lines": [
+            "この産地の",
+            "ジュエリー。"
+          ],
+          "balance": "balance"
+        }
+      ],
+      "dimensions": {
+        "width": 320,
+        "document": 320
+      },
+      "axeViolations": null
+    },
+    {
+      "region": "saga",
+      "locale": "ja",
+      "width": 320,
+      "status": "passed",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/places/saga/",
+      "headings": [
+        {
+          "text": "佐賀の工芸ジュエリー",
+          "lines": [
+            "佐賀の工芸",
+            "ジュエリー"
+          ],
+          "balance": "balance"
+        },
+        {
+          "text": "この産地のジュエリー。",
+          "lines": [
+            "この産地の",
+            "ジュエリー。"
+          ],
+          "balance": "balance"
+        }
+      ],
+      "dimensions": {
+        "width": 320,
+        "document": 320
+      },
+      "axeViolations": null
+    },
+    {
+      "region": "ishikawa",
+      "locale": "ja",
+      "width": 320,
+      "status": "passed",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/places/ishikawa/",
+      "headings": [
+        {
+          "text": "石川県の工芸ジュエリー",
+          "lines": [
+            "石川県の工芸",
+            "ジュエリー"
+          ],
+          "balance": "balance"
+        },
+        {
+          "text": "この産地のジュエリー。",
+          "lines": [
+            "この産地の",
+            "ジュエリー。"
+          ],
+          "balance": "balance"
+        }
+      ],
+      "dimensions": {
+        "width": 320,
+        "document": 320
+      },
+      "axeViolations": null
+    },
+    {
+      "region": "kyoto",
+      "locale": "ja",
+      "width": 320,
+      "status": "passed",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/places/kyoto/",
+      "headings": [
+        {
+          "text": "京都府の工芸ジュエリー",
+          "lines": [
+            "京都府の工芸",
+            "ジュエリー"
+          ],
+          "balance": "balance"
+        },
+        {
+          "text": "この産地のジュエリー。",
+          "lines": [
+            "この産地の",
+            "ジュエリー。"
+          ],
+          "balance": "balance"
+        }
+      ],
+      "dimensions": {
+        "width": 320,
+        "document": 320
+      },
+      "axeViolations": null
+    },
+    {
+      "region": "aichi",
+      "locale": "ja",
+      "width": 320,
+      "status": "passed",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/places/aichi/",
+      "headings": [
+        {
+          "text": "愛知県の工芸ジュエリー",
+          "lines": [
+            "愛知県の工芸",
+            "ジュエリー"
+          ],
+          "balance": "balance"
+        },
+        {
+          "text": "この産地のジュエリー。",
+          "lines": [
+            "この産地の",
+            "ジュエリー。"
+          ],
+          "balance": "balance"
+        }
+      ],
+      "dimensions": {
+        "width": 320,
+        "document": 320
+      },
+      "axeViolations": null
+    },
+    {
+      "region": "chiba",
+      "locale": "ja",
+      "width": 320,
+      "status": "passed",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/places/chiba/",
+      "headings": [
+        {
+          "text": "千葉県の工芸ジュエリー",
+          "lines": [
+            "千葉県の工芸",
+            "ジュエリー"
+          ],
+          "balance": "balance"
+        },
+        {
+          "text": "この産地のジュエリー。",
+          "lines": [
+            "この産地の",
+            "ジュエリー。"
+          ],
+          "balance": "balance"
+        }
+      ],
+      "dimensions": {
+        "width": 320,
+        "document": 320
+      },
+      "axeViolations": null
+    },
+    {
+      "region": "osaka",
+      "locale": "ja",
+      "width": 320,
+      "status": "passed",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/places/osaka/",
+      "headings": [
+        {
+          "text": "大阪の工芸ジュエリー",
+          "lines": [
+            "大阪の工芸",
+            "ジュエリー"
+          ],
+          "balance": "balance"
+        },
+        {
+          "text": "この産地のジュエリー。",
+          "lines": [
+            "この産地の",
+            "ジュエリー。"
+          ],
+          "balance": "balance"
+        }
+      ],
+      "dimensions": {
+        "width": 320,
+        "document": 320
+      },
+      "axeViolations": null
+    },
+    {
+      "region": "nara",
+      "locale": "ja",
+      "width": 320,
+      "status": "passed",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/places/nara/",
+      "headings": [
+        {
+          "text": "奈良の工芸ジュエリー",
+          "lines": [
+            "奈良の工芸",
+            "ジュエリー"
+          ],
+          "balance": "balance"
+        },
+        {
+          "text": "この産地のジュエリー。",
+          "lines": [
+            "この産地の",
+            "ジュエリー。"
+          ],
+          "balance": "balance"
+        }
+      ],
+      "dimensions": {
+        "width": 320,
+        "document": 320
+      },
+      "axeViolations": null
+    },
+    {
+      "region": "yamanashi",
+      "locale": "ja",
+      "width": 320,
+      "status": "passed",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/places/yamanashi/",
+      "headings": [
+        {
+          "text": "山梨のジュエリー",
+          "lines": [
+            "山梨のジュエリー"
+          ],
+          "balance": "balance"
+        },
+        {
+          "text": "この産地のジュエリー。",
+          "lines": [
+            "この産地の",
+            "ジュエリー。"
+          ],
+          "balance": "balance"
+        }
+      ],
+      "dimensions": {
+        "width": 320,
+        "document": 320
+      },
+      "axeViolations": null
+    },
+    {
+      "region": "hokkaido",
+      "locale": "ja",
+      "width": 320,
+      "status": "passed",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/places/hokkaido/",
+      "headings": [
+        {
+          "text": "北海道のジュエリー",
+          "lines": [
+            "北海道の",
+            "ジュエリー"
+          ],
+          "balance": "balance"
+        },
+        {
+          "text": "この産地のジュエリー。",
+          "lines": [
+            "この産地の",
+            "ジュエリー。"
+          ],
+          "balance": "balance"
+        }
+      ],
+      "dimensions": {
+        "width": 320,
+        "document": 320
+      },
+      "axeViolations": null
+    },
+    {
+      "region": "fukuoka",
+      "locale": "ja",
+      "width": 320,
+      "status": "passed",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/places/fukuoka/",
+      "headings": [
+        {
+          "text": "福岡に関わるジュエリー",
+          "lines": [
+            "福岡に関わる",
+            "ジュエリー"
+          ],
+          "balance": "balance"
+        },
+        {
+          "text": "この産地のジュエリー。",
+          "lines": [
+            "この産地の",
+            "ジュエリー。"
+          ],
+          "balance": "balance"
+        }
+      ],
+      "dimensions": {
+        "width": 320,
+        "document": 320
+      },
+      "axeViolations": null
+    },
+    {
+      "region": "toyama",
+      "locale": "ja",
+      "width": 320,
+      "status": "passed",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/places/toyama/",
+      "headings": [
+        {
+          "text": "富山・高岡につながる錫のジュエリー",
+          "lines": [
+            "富山・高岡に",
+            "つながる錫",
+            "のジュエリー"
+          ],
+          "balance": "balance"
+        },
+        {
+          "text": "この産地のジュエリー。",
+          "lines": [
+            "この産地の",
+            "ジュエリー。"
+          ],
+          "balance": "balance"
+        }
+      ],
+      "dimensions": {
+        "width": 320,
+        "document": 320
+      },
+      "axeViolations": 0
+    },
+    {
+      "region": "mie",
+      "locale": "ja",
+      "width": 320,
+      "status": "passed",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/places/mie/",
+      "headings": [
+        {
+          "text": "三重・伊勢志摩のアコヤ真珠ジュエリー",
+          "lines": [
+            "三重・伊勢志",
+            "摩のアコヤ真",
+            "珠ジュエリー"
+          ],
+          "balance": "balance"
+        },
+        {
+          "text": "この産地のジュエリー。",
+          "lines": [
+            "この産地の",
+            "ジュエリー。"
+          ],
+          "balance": "balance"
+        }
+      ],
+      "dimensions": {
+        "width": 320,
+        "document": 320
+      },
+      "axeViolations": 0
+    }
+  ],
+  "failures": [],
+  "screenshots": [
+    "artifacts/editorial-stage-final-copy-ja-320.png",
+    "artifacts/editorial-stage-final-copy-ja-320-decision.png",
+    "artifacts/editorial-stage-final-copy-toyama-ja-320.png",
+    "artifacts/editorial-stage-final-copy-mie-ja-320.png"
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "completedAt": "2026-11-17T01:49:45.905Z",
+  "summary": {
+    "checks": 20,
+    "passed": 20,
+    "failed": 0,
+    "axeScreens": 8,
+    "axeViolations": 0,
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "screenshots": 4
+  }
+}

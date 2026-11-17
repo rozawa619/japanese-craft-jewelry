@@ -3,6 +3,6 @@ productId: checos-japanese-apricot-pierced-earrings
 publishStatus: published
 ---
 
-A tiny flower can change the mood of a plain shirt. CHECOS turns curved petals into a silver detail that sits close to the ear, with fine lines and a little center that reward a closer look. That balance of botanical shape and quiet color is what drew us to this pair.
+We chose CHECOS for a flower expressed through its petal shape and metal color. The small apricot blossom makes close-up detail the reason to look again, rather than relying on a large area of bright color.
 
-Try them with a pale-blue shirt, a white tee or a dark dress. Rather than making a big color statement, they let the texture of the metal become the detail. CHECOS works with silver wirework and engraving to express forms from nature; this selection offers a small introduction to that approach.
+The floral comparison is useful: 6.KILN pairs blue porcelain with a hoop, while Morphosphere gives the lace flower more visual space. CHECOS keeps the motif compact and the palette metallic. Choose by how much color and floral shape you want to add.

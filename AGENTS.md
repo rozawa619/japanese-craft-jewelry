@@ -1,7 +1,7 @@
 # 次のAIへの開始手順
 
 1. `README.md`、`docs/handoff.md`、`docs/constitution.md` を読み、現在の公開・申請状態を確認する。
-2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/011-legal-quality-expansion/` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
+2. `specs/001-media-launch/spec.md`、`plan.md`、`tasks.md` と最新の `specs/012-distinctive-product-selection/` で該当要件と受入条件を確認する。変更目的と影響範囲を先に記録する。
 3. `src/lib/schema.ts`、`src/data/catalog.json`、`src/lib/affiliate.ts`、`src/content.config.ts` を読み、既存の分離を維持する。
 4. 変更後はリスクに応じた検証を実行し、仕様・タスク・変更履歴・引継ぎを実態に合わせて更新する。公開や提携承認を推測しない。
 
@@ -71,3 +71,9 @@ Node.js 24.22.1以上、pnpm 11.25.0。初回は `pnpm install --frozen-lockfile
 42品/12地域/18公開技法/240出典、25AIで27品・公式preview15品。新規写真転載なし。note比較はpublishedの正本を参照、未知価格やサイズを埋めず、priceUnitがある片耳/一組のみ明示。ソートはunknown末尾/同額編集順、地域の種類別価格と件数は公開集合から。退役10画像は個別prune/Git除外/export除外で管理。
 
 法務点検は免責で権利問題が消える判断ではない。GitHubPagesの商用hosting適合/AdSense実ホスト受理・接続/広告導入時Privacy・同意・CSPは未解決。SORA/Contact非公開/ブログなしを維持し、新契約・課金・ドメイン・申請を捏造しない。詳細legal/adsense/hosting-commercial-readiness/operations。
+
+## 0.12 商品固有の紹介と候補の違い
+
+最新は012とeditorial-stage。The Good Trade/Who What Wear/mybest等の実読記録はaffiliate-editorial-reference-v12。一般的な購買支援の構造だけを参照し、表現・レビュー・試験や人気実績を移植しない。storyは日英のheadline/standfirst/highlights3件/outfitに加えdecision.bestFor/considerが必須。実際の使い心地を作らず、その品を選ぶ好みと比較上の取捨選択を固有の言葉で説明する。
+
+SelectionDecisionはheroの直後。ChoiceDetailsは実在の公開候補の固有見出しとchooseForを参照し、素材/サイズ/価格は正本から読む。カードのeditorialSummaryも商品ごとに更新。pnpm check:copyは011固定コピーとの差分と完全一致の重複を検査する補助で、意味の独自性や真偽を自動認定しない。新商品は011の購入gate/公式/店舗fallbackを維持し、旧キャッシュや別金具の注文受付を流用しない。価格矛盾・対象variant欠品・営業停止は採否を調査記録に残す。

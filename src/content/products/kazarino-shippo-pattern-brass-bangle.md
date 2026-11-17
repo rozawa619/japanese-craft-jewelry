@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-This is a choice for the wrist: a broad patterned surface, rather than a little charm on a chain. Its warm tone comes from the brass itself, and the maker leaves the surface uncoated so it can develop a changing finish.
+Linked circles and the color of brass define the choice. We selected this bangle for someone who sees the changing surface of uncoated metal as part of the finish they want to live with.
 
-The Shippo name can be confusing beside enamel jewelry. Here it describes interlocking circles, not a glassy glaze. Compare the silk SHOWEN bracelet for a softer wrist accent, or the porcelain cuff for a different material and shape.
+SHOWEN wraps lines of silk around the wrist, while Drake shows sculptural porcelain surfaces. This bangle supplies an open metal pattern. Compare those constructions to decide what you want the wrist ornament to show.

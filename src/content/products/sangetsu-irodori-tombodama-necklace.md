@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-A round bead gives a necklace a different presence from a thin metal pendant. Choose this one for its pattern and glass color, then use a plain neckline as the background.
+We chose this design for placing one patterned bead at the neckline rather than linking many little beads together. Its bead is larger than the Irodori earring beads, giving the pattern a more gathered, central role.
 
-The removable cord is a useful distinction, but its length and material are not published. Compare the matching earrings for a smaller accent, or Nakajima’s flat metal-inlay pendant for a more graphic outline.
+The removable cord and bead opening also distinguish it from a fine-chain necklace. Compare the patterned circle with ARCOS’s internal spiral or RINZEN’s leaf outline to decide which kind of glass detail you want to lead.

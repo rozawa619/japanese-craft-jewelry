@@ -3,6 +3,6 @@ productId: rinzen-leaf-glass-pendant
 publishStatus: published
 ---
 
-A single fresh color can change the mood of a plain outfit. This leaf-shaped pendant combines green, transparent cuts and a rippled surface, so there is more to look at than a flat colored charm. We chose it for the way its soft outline and crisp cut details sit together.
+The interest here comes from three layers of choice: transparent green, a familiar leaf outline and the finer lines of kiriko. We selected it for that combination rather than treating it simply as a colored glass pendant.
 
-Try it against a dark knit for a clear contrast, or over a white shirt for a brighter look. RINZEN is a Tokyo glass studio working in kiriko. Here, the familiar idea of a leaf becomes a piece of glass to wear near the heart.
+Nakajima directs attention to two patterned metal faces, while ARCOS invites a closer look inside the glass. RINZEN is the candidate when you want a recognizable natural motif and one transparent color to remain the main idea.

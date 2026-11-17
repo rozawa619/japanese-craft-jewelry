@@ -3,6 +3,6 @@ productId: maruyama-pierced-c
 publishStatus: published
 ---
 
-The C design turns radiating wood colors into a star-like motif. We chose it for the pleasure of finding a playful shape within a traditional pattern-making craft.
+This is a way to choose yosegi by its outline as well as its wood colors. The star-like edge and radiating interior give C two points of interest: the shape around the pattern and the arrangement within it.
 
-Look closely and the arrangement of the wooden sections becomes part of the appeal. It is a way to choose craft jewelry through curiosity and a sense of play.
+The comparison with the same retailer’s D is straightforward: D adds a line, while C adds a motif. The retailer lists pierced and non-pierced versions separately, so the shared design name need not obscure the fitting choice.

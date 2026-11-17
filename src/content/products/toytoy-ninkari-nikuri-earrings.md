@@ -4,6 +4,6 @@ locale: "en"
 publishStatus: "published"
 ---
 
-A open wooden outline brings the pattern into view, with open space between its lines. ToyToy’s contemporary design offers a different silhouette from a rounded bead or a solid marquetry motif.
+Yosegi puts pattern across a wooden surface; Ninkari Nikuri also draws attention to the spaces between the lines. We selected it for extending the choice of wooden jewelry from color and surface into silhouette.
 
-Compare the geometric marquetry of Hamamatsuya if you prefer a filled surface, or ToyToy’s silver pendant for another material from the same designer. Any cultural meanings should be read in the designer’s own words rather than treated as a promised protective effect.
+The designer identifies himself as Hokkaido Ainu in the brand’s own profile. We present this as a contemporary work by that specific designer, without treating it as a design shared by every Ainu community.

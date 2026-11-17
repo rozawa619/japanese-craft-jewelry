@@ -1,41 +1,43 @@
-# 引継ぎ — 0.11 法務点検と購入経路を確認したセレクト
+# 引継ぎ — 0.12 商品固有の選ぶ理由と8商品の追加
 
-更新日2026-11-16。AGENTS → constitution → specs/011-legal-quality-expansion/ → 本書 → operationsを読む。公開成否はdeployment-resultsのversion/commit/Actions/実測を優先。前版はarchive/handoff-v10.md、archive/deployment-results-v10.json。
+更新日2026-11-17。AGENTS → constitution → specs/012-distinctive-product-selection/ → 本書 → operationsを読む。前版はarchive/handoff-v11.mdとarchive/deployment-results-v11.json。実配信の成否・アプリcommit・Actionsは最新deployment-resultsを優先し、過去の成功を流用しない。
 
-## 最新の方針
+## 今回の変更
 
-SORAの日英商品紹介。ブログ/Contact/販売決済/計測広告タグなし。右上1ボタンは同じページ/query/hashを維持。国内価格を主、海外価格は別枠、換算なし。二重承認/許可host完全一致/HTTPS/date/localeの広告ゲートは不変。
+SORAの日英工芸ジュエリーセレクト。The Good Trade / Who What Wear / マイベスト等の実ページから一般的な選択支援の構造を参照し、既存42商品の見出し・冒頭・本文・カード・選択メモを日英で改稿。白シャツ/ニットの一般論から、その品の素材・形・モチーフと比較時の取捨選択へ変えた。新8点の本文も日英各2段落に整えた。
 
-全42商品・12都道府県・18公開技法、240出典記録。現行25AI画像が27品に対応し、15品は公式ページへの独自テキストプレビュー。全品に公式URLと販売証跡、20店舗を37品に案内。店頭SKU在庫は未確認。製造地が未確認の丸山4品は神奈川小売枠であり、神奈川製と数えない。
+ProductStoryはheadline/standfirst/highlights3件/outfitに加え、decision.bestFor/considerが日英で必須。SelectionDecisionはhero直後に表示する。ChoiceDetailsは実掲載候補の固有見出しとchooseForを先に出し、種類/素材/寸法/価格を正本から参照する。人気順位・星・未試着の感想を作らない。カードは『選んだ理由を見る』から詳細へ進む。
 
-## 重要な追加指示：紹介サイトだけでは公開しない
+能作2、水引1、友禅1、久留米絣1、SIRI SIRI七宝/銀糸2、伊勢志摩アコヤ1の8点を追加。現在50公開/全56商品、14地域、24公開技法、258出典記録。25AI画像が27品、23品は文字previewと公式実物へのリンク。今回画像生成・写真転載なし。全国一覧の前方に新しい素材/技法を混ぜ、木だけが続く順序を減らした。
 
-purchase-evidence.jsonは公開42品と完全に一致する。33品は対象注文UIと価格、9品は現行小売取扱い＋価格付きカタログを確認。紹介/galleryだけ、古い催事、明示欠品、現行確認できない403候補は保留。購入受付の観測は注文成立や将来在庫の保証ではない。
+## 購入経路と価格
 
-COCOON2/浜松屋18K/畠山2はdraft。hairpinも従来からdraft。商品本文/未使用技法/画像registry/比較/地域代表/visits/selection/サイトマップの派生参照も更新済み。退役3画像はdocs/archive/withdrawn-v11へ保存しlocalRetiredPath/Git除外/pruneで配信と納品public画像から除外。退役全10をまとめて消す再帰操作は不要。写真の未取得権利をAIのユーザー依頼で埋めない。
+購入証跡はpublished50と一致。41品は注文受付、9品は営業中小売＋現行価格付きカタログ。23店舗を43品へ案内し、7品は公式通販/店舗案内へのfallback。店頭の個別商品在庫、将来の受付・注文成立は保証しない。
 
-一次追査はresearch/existing-availability-v11.json、availability-gate-v11.json、hario-addition-v11.json、excluded-products-v11.json。旧regional-product-researchの16候補原案は検討履歴で、全16が公開という意味ではない。最終は14採用+HARIO1。HARIO価格8250、ペア、標準金具。旧cache7480不採用。個別SKUの製作工房は未特定で、東京との工房/作り手関連と全工程東京製を区別。
+正茂の孔雀はイヤリングvariantだけを採用し、欠品中ピアスに受付を流用しない。アコヤはfresh Chromeで現行商品/一覧とも税込22000を確認、readerの古い20000不採用。こよりみはMOCADの確認済み対象品で、別サイト/別仕様/外貨価格を流用しない。貝パールと養殖アコヤは別素材。合皮を裏材と決めつけず、ヱガホを無樹脂と宣言せず、SIRIの銀糸を籐/無垢金と扱わない。
 
-## 実装と更新
+富山/三重は実商品と非空の地域本文を追加。SIRIは東京発ブランドと全国の職人を区別し、全工程東京製としない。ヱガホは久留米絣の素材が分かっても工房所在地未確認なのでprefectureIds空。丸山4品も製造地を神奈川と推定せず地域小売枠。都道府県所属の合計が全商品数に一致しなくても正しい。
 
-catalogが数値/価格/priceUnit/広告の正本。notesは商品固有の違いと嗜好、比較IDと当該商品sourceIdsのみ。比較はcanonicalの種類/素材/寸法/国内価格を読む。新カードや比較を広告として追加するのでなく、商品詳細へ進む通常内部リンク。地域はnoteの短い選び方と種類別の実件数/価格帯。予算/価格順は国内実額のみ、未知は低予算扱いせず両方向で末尾。同額は編集順。
+箔一はfresh503の公式停止表示で保留。こよりみSTORESの別品は403を閉店/欠品とせず保留、松井真珠/長崎べっ甲等も調査限界を記録。COCOON2/明示欠品18K/畠山2、従来hairpinはdraft維持。復帰は現行購入の再確認と派生参照更新が必要。
 
-公開時にはpurchase evidenceのlinkIdを本当に観測した商品へ結び、商品ID queryを別SKUと混同しない。pid等を落とさず、currency/utm等の非identityだけを正規化。ホーム/galleryをonline-orderと宣言しない。小売の場合はvisitsの当該商品との関係と現行店出典が必要。自動validatorだけで実在庫を確認したとは報告しない。
+## 正本と調査記録
 
-## 法務・AdSense・ホストの未解決事項
+- catalog/ja：商品事実・価格・表示文。priceUnitは根拠がある場合だけ。日本向け実価格を両言語の主表示、海外実価格は別枠、FX換算なし。
+- product-stories/商品MD：独自の見出し・冒頭・装い・decision・本文。sourceのない性能/着心地/レビューを作らない。
+- selection-notes：商品固有の違い・chooseFor・公開比較ID。価格/URLは複製しない。
+- purchase-evidence/visits/sources：現行注文または小売根拠・公式URL・確認日・店舗/固定Maps。HTTP200やvalidatorだけで在庫確認済みとしない。
+- affiliate-editorial-reference-v12、editorial-copy-review-v12、essential-products-v12とresearchの同名JSON：一次観察、採否、編集の限界。
+- existing-summary-patch/new-editorial-entriesは実装時の提案履歴。統合時の表現修正はeditorial-integration-v12。更新時の別正本にしない。
+- editorial-baseline-v11は比較用の固定コピー。check:copyは実改稿と完全一致重複の補助検査で、意味上の独自性・事実・売上を証明しない。
 
-legal-audit-v11は15論点と新17候補の追査。英語18K限定、AIの非実物/非体験説明、公式実物確認の入口、GitHub IP保存の説明、未確認ToyToy工程語を修正。全面適法/個別権利クリア/申請合格は未確認。既存AIの個別類似性等の残余リスクはある。
+## 維持する条件
 
-GitHub Pagesの商取引促進を主目的とする無料hosting利用条件は高優先の適合確認事項。収益化前に適合を確認するか適切な公開先を選ぶ。移行準備文書はあるが、Cloudflare契約/新アカウント/DNS/ドメイン/公開移転は実行していない。ソースGitHub継続とPagesの公開先を分ける。
+ブログ/Contact/販売決済/独自計測広告タグなし。右上の1言語ボタンで同じページ/query/hashを維持。広告はプログラム/商品リンク両方の承認、許可host完全一致、HTTPS/date/localeが揃う場合だけ切替。今回は全not_applied/通常リンクで、申請/承認/広告送信は行っていない。
 
-AdSenseは固定の商品/記事/文字数で合格判定しない。PSL対象のgithub.io/pages.devを一般subdomainとして一律不可にしない一方、現在host root404、実サイト登録/所有確認/審査/本人情報/CMP/Privacy/CSPは未完了。Googleタグ/ads.txtの架空IDを作らない。公開Contactを無条件追加しない。競合の文章/写真/レビュー/スコアや実績を流用しない。
+法務15論点の011監査と商用ホスト/AdSense残条件を継承。GitHub Pagesの用途制限について適合確認または適切な配信先の選択が未解決。移行準備はあるが契約/課金/ドメイン/DNS/配信移転は未実施。AdSenseの登録URL/root配信/所有確認/本人情報/Privacy/CMP/CSPも未完了。商品数・技術PASSを適法/許諾/契約適合/合格に読み替えない。
 
-## 検証・公開・納品
+## 検証と納品
 
-型83files0/0/0、90単体、220HTML/11878href-src/1617anchor/858通常0広告/497実行CSP hash/204JSON/旧journal14を検証。最終browser/ad/外部/公開の件数と時刻はquality-stage各report、011validationとdeployment-resultsを確認。46件の中断テストと旧版の成功を42件の完了へ流用しない。
+今回の型/単体/生成物/日英全商品/全地域/価格/広告/外部/公開はeditorial-stage各reportと012validationへ分けて記録する。quality-stageは011、market-stageは010の履歴。維持用コマンドはREADMEとoperations。実際の完了件数・時刻は機械可読reportとdeployment-resultsを参照。
 
-最終ローカルfocused437/437、維持全体328/328（294画面訪問、axe270画面0）、価格73/73、隔離広告6/6。公開アプリf85c757、Actions43890025527 success。公開focused437/437、補足24/24（204正規URL/25画像全200・SHA一致）、除外22/22（draft12URL+退役10画像404）、重点4/4。公開とローカルの入力7ファイルSHA一致。公開商品/店舗の公式70URL全200。サイトの購入証跡は本文/UIを別に確認した記録で、HTTP200だけを根拠にしていない。全最終QA workerの正常終了を確認。
-
-全ソースは隣接japanese-craft-jewelry-delivery/sourceとZIPへ出力し、最終版/全ファイル/25公開画像/秘密・生成物・退役public画像の除外を検証する。確定のZIP内容とSHAは同所package-verification-0.11.0.json。運用はoperations、申請前はpre-application-checklist/adsense-review/affiliate-readiness。
-
-0.11の書出し検証は511/511ファイルの集合と全件SHA256一致、公開WebP25、退役public10パス除外、必須CI/lock/設定/011仕様/最終公開reportの同梱を確認した。ZIP自体のSHA256は自己参照を避けて外部の検証JSONへ記録。文書確定後の最終ZIPでも同じ検証を再実行する。
+全ソースは隣接japanese-craft-jewelry-delivery/sourceとZIPへ書出す。必要設定/CI/lock/仕様/出典/全ソース/最終検証/25公開画像を含め、.git/.env/認証/node_modules/dist/artifacts/無許諾の内部参照写真/退役public10画像を除外する。最終のZIPファイル集合・全件SHA256・版・除外・必須ファイルは同所package-verification-0.12.0.jsonを証跡とし、ZIPの自己hash参照は避ける。

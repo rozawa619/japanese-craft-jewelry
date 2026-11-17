@@ -4,6 +4,6 @@ locale: en
 publishStatus: published
 ---
 
-Rouge Veil uses a deep red layer within transparent crystal glass. Compared with Mint Veil, it makes color more decisive and has a slightly taller listed silhouette. A plain dark top is one way to give that red outline room without introducing more patterns.
+This is a way to choose red jewelry through a plane of glass rather than a tiny stone. The clear area shares the shape with the red, creating a different composition from a uniformly colored motif. That placement of color is why we selected it.
 
-The Otaru maker identifies this as a flattened glass pierced earring design. Its stated weight is a range per piece, not a comfort test. Each piece is handmade and the current listing shares stock with the atelier. A physical stockist may carry different Yukie Glass collections, so do not assume the named Veil piece will be in that shop.
+Mint Veil is the pale-green direction; Rouge Veil is the deep-red one. Within the same broad-drop idea, the role you give color can change the whole choice. Start with this piece when red is what attracts you first.

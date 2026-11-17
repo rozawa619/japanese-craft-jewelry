@@ -1,4 +1,22 @@
-# 更新手順 — 0.11 購入先の確認を公開条件にする
+# 更新手順 — 0.12 商品固有の選ぶ理由
+
+最新はspecs/012-distinctive-product-selection/とeditorial-stage各実測。以下の011の購入経路確認・010の価格/広告の分離を継承する。現行件数と配信結果はcatalogのpublished集合とdeployment-resultsを参照し、旧版の固定件数を新商品の上限や公開条件にしない。
+
+## 紹介文を追加・更新する
+
+1. その品の素材・構造・モチーフと、確認済みの作り手との接点から、他候補と異なる選ぶ理由を決める。白シャツ/ニット/アクセントだけで全品を説明せず、どこを見て選ぶかを具体化する。
+2. product-stories.jsonの日英にheadline、standfirst、highlights3件、outfit.title/body、**decision.bestFor/consider**を揃える。bestForは選ぶ好み・場面、considerは実質的な取捨選択。耳穴の有無のような自明な条件、全品同文の『公式で確認』、未試着の快適性・耐久性・低アレルギーは使わない。
+3. カードはcatalog.editorialSummaryとtranslations/jaの同欄、本文はproductsの両言語、比較はselection-notesを更新する。数値・価格・URLを紹介文へコピーせず、出典と正本を先に直す。SelectionDecision/ChoiceDetailsはこれらのIDから読むため、部品へ紹介文を直書きしない。
+4. compareWithは公開商品の中から、読者が迷う具体的な軸を持つ2〜3品を選ぶ。各候補の固有見出しと理由はその候補自身のstory/noteを参照する。別商品の金具・重量・価格やレビューを流用しない。
+5. 商品追加には下の011購入gateを必ず実行。新規の写真は許諾前に転載せずOfficialPreviewを使用。素材産地・作り手所在地・店の所在地を分け、所在地不明を埋めない。対象variantが欠品なら別の金具の受付で公開しない。
+6. `pnpm verify`と`pnpm check:copy`を実行する。後者は011の固定基準との実変更・完全一致の重複を確認する補助であり、意味の独自性・事実・適法性を自動評価するものではない。基準fixtureはdocs/research/editorial-baseline-v11.json（runtimeの正本ではない）。
+7. UI変更はPC1440/スマホ390・320、日英、長い商品名/コピー/画像なし、冒頭CTA→選ぶポイント→比較→公式/店舗の動作を確認。`pnpm check:quality`、`check:browser`、`check:prices`、`check:ads`、`check:links`を影響範囲に応じて実行し、公開後の結果と分けて保存する。
+
+参照の記録はaffiliate-editorial-reference-v12。紹介文・写真・レビュー・固有意匠・試験結果・人気/売上を移植しない。新商品の採否はessential-products-v12と一次資料で判断。今回も申請/承認・広告送信・商用ホスト移転・契約/課金/DNSを実施したことにはしない。
+
+---
+
+# 011から継承する購入経路の確認（以下の件数は011時点）
 
 最新版はspecs/011-legal-quality-expansion/、docs/handoff、legal-audit、adsense-review。現在42品/12都道府県/18公開技法、25AI画像/27品と公式preview15品、20店舗/37品。前版010以下の価格/広告/店舗手順は基礎として継承し、公開条件は以下を優先。
 

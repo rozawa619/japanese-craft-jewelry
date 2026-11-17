@@ -25,9 +25,9 @@ const attribution=maker.id.includes('unidentified')&&merchant?t(locale,'Availabl
  <div class="card-meta">{labels('productTypes',p.productType,locale)} <span>•</span> {labels('crafts',p.craftIds,locale)}</div>
  <h3><a href={detail}>{p.title}</a></h3>
  <p class="maker-name">{attribution}</p>
- <p class="card-summary">{p.editorialSummary}</p>
+ <p class="card-summary" data-selection-point>{p.editorialSummary}</p>
  <div class="card-price"><MarketPrice productId={p.id} locale={locale}/>{p.availability==='out_of_stock'&&<small>{t(locale,'Sold out when checked','確認時点で欠品')}</small>}</div>
- <div class="card-actions"><a class="text-link" href={detail}>{t(locale,'Explore the details','詳しく見る')} <span aria-hidden="true">→</span></a><MarketPurchaseLink productId={p.id} compact locale={locale}/></div>
+ <div class="card-actions"><a class="text-link" href={detail}>{t(locale,'Why this piece','選んだ理由を見る')} <span aria-hidden="true">→</span></a><MarketPurchaseLink productId={p.id} compact locale={locale}/></div>
 </article>
 <style>
  .card-art-link :global(.editorial-image){margin:0}
