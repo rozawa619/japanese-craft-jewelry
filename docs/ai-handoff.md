@@ -1,6 +1,6 @@
 # 別のAIへ引き継ぐ
 
-確認日：2026-11-17、作業版0.16.0・全国追加018。まずこの文書と[検証ガイド](verification-guide.md)を読めば、過去の会話や全世代の文書を読み直さず着手できる。実際の依頼・AGENTS.md・最新の公開/納品記録を優先する。
+確認日：2026-11-17、公開版0.16.0・全国追加018。まずこの文書と[検証ガイド](verification-guide.md)を読めば、過去の会話や全世代の文書を読み直さず着手できる。実際の依頼・AGENTS.md・最新の公開/納品記録を優先する。
 
 構造を調べるときは[architecture.md](architecture.md)、項目別に更新するときは[editing-guide.md](editing-guide.md)へ進む。無関係な履歴文書まで開始時に通読する必要はない。
 
@@ -11,17 +11,16 @@
 | サイト | Japanese Craft Jewelry。全国の工芸ジュエリーを選んで紹介する日英メディア。運営者表示はSORA |
 | 公開 | [日本語](https://rozawa619.github.io/japanese-craft-jewelry/ja/) / [English](https://rozawa619.github.io/japanese-craft-jewelry/en/) |
 | リポジトリ | [rozawa619/japanese-craft-jewelry](https://github.com/rozawa619/japanese-craft-jewelry)、main |
-| 公開確認済みの基準（旧0.15） | `1f0021306e87ce9e7dc43bdf446cffedc59e4134`。[Actions 44024678465](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44024678465)、2026-11-17 05:32:16 UTCにsuccessを確認 |
+| 公開アプリ0.16 | `86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb`。[Actions44042180272](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44042180272) completed/success。2026-11-17T07:54:26Z更新、07:54:34.367ZにAPI観測 |
 | ソースの基準 | 全国追加018の開始時HEADは`1082263175de9d6b284d8760d2c8d34d09caafd6`。公開アプリSHAと、証跡・文書を含むrepo HEADは区別する。作業時に`git rev-parse HEAD`で取り直す |
-| 版 / 実装 | 作業版0.16.0、Astroの静的サイト。公開先にNodeサーバー、DB、会員、注文、決済、発送機能はない |
-| データ | 公開対象60商品 / 登録66商品・draft6商品、24県、公開商品が関連する技法34（全36）、一次出典293、33店舗。53商品に店舗案内。購入根拠は通販51・店舗＋現行カタログ9 |
+| 版 / 実装 | 公開版0.16.0、Astroの静的サイト。公開先にNodeサーバー、DB、会員、注文、決済、発送機能はない |
+| データ | 公開60商品 / 登録66商品・draft6商品、24県、公開商品が関連する技法34（全36）、一次出典293、33店舗。53商品に店舗案内。購入根拠は通販51・店舗＋現行カタログ9 |
 | 画像 | WebP118ファイル＝人物スタイリング58＋ジュエリー単体60。全60商品へ両方を対応。0.16の新規生成は23PNG＝採用20・棄却3で、旧98公開画像のbytesを保持 |
 | 導線 | home/産地の種類別入口に代表単体図。地域・種類・素材・予算の絞込、公式リンク、店舗案内、任意表示のGoogleマップ |
 | 出典 | 最初は閉じたnative details。価格・商品・店舗の確認日も一覧の中へ。情報そのものを削除していない |
 | 広告 | AdSenseはoff固定、実アカウント/認定CMPは未接続。提携リンクも未申請で、現在は通常リンク。アカウント登録・申請・契約・課金はしていない |
 
-<!-- TODO_PUBLIC_V16: 0.16の実公開確認後に次の状態を更新する。旧0.15の履歴は別に残す。 -->
-0.16は作業/QA中で、上表の新しい件数を公開済みと扱わない。数やSHAの最終正本は[deployment-results.json](deployment-results.json)。新しい依頼で数が変わったら、上表の数を維持するために商品を作らず、正本と検証結果を更新する。
+0.16は実公開確認済み。公開Source328/328HTMLのSHA、補足24/24で328正規URL・118画像のSHA、mobile92/92を確認した。数・公開app・納品ZIPの最終正本は[deployment-results.json](deployment-results.json)。新しい依頼で数が変わったら、上表の数を維持するために商品を作らず、正本と検証結果を更新する。
 
 018で秋田・福井・岐阜・広島・鹿児島・徳島・鳥取・沖縄・熊本・島根の10県に10品を追加した。対象色・金具・購入受付を確認し、10県それぞれに実商品と日英の地域案内を持つ。新規生成記録は人物の`docs/image-generation-v16.json`と単体の`docs/image-generation-solo-v16.json`。単体の共通readerは旧v14＋新v16を併読する。
 
@@ -81,6 +80,7 @@
 
 ## 確認済みと未解決を混同しない
 
+- 0.16の実公開は[Source328](national-stage-hosted-sources-results.json)・[補足24](national-stage-hosted-release-results.json)・[mobile92](national-stage-hosted-mobile-results.json)が全件成功。対象は上表の公開appであり、以後の文書/納品commitを同じ公開SHAとして扱わない。
 - 旧0.15は静的生成・公開・Source保持・スマホ・出典競合を確認した。旧版の最終公開mobile92、touch4、source race12、Source248、種類画像32、見出し12、補足24、共有meta1等は当時の記録であり、0.16の公開成功ではない。
 - 広範囲quality497と価格314、広告fixture6等は初回0.15の結果。旧0.15の最終修正後に497を再実行した記録ではない。限定した見出しCSSとSource操作JSの厳密差分、および当時の重点回帰を別に残した。[段階別の検証表](verification-guide.md#015の記録を読む)を参照する。0.16はnational-stageと018の実測を確認する。
 - セキュリティ監査は既知advisory・コード/CI/公開境界の範囲。実機Safari/iOS、未知の全脆弱性、全Git履歴、全法令への適合、検索順位/流入、将来の店頭在庫を認定していない。
@@ -93,9 +93,9 @@
 
 リポジトリのcheckoutがある場合はそこを修正元とし、隣接deliveryのsource/ZIPだけを修正しない。ZIPだけで引き継ぐ場合は、別の作業用ディレクトリへ展開したsource一式を修正元とし、元の納品物を直接書き換えない。`pnpm package`はsourceを書き出し、旧sourceをbackupへ残す。ZIP作成/全SHAの手順は検証ガイドとREADMEから辿る。
 
-最終納品のファイル数・ZIP SHAは、deployment-resultsのsourceDelivery.proofや同梱の外部proofを優先する。保守用CLIのproof名は`package-verification-<version>-<revision>.json`で、初回0.15の`package-verification-0.15.0.json`と区別する。今回のような文書追加でファイル数は増えるため、以前の822を固定条件にしない。ZIP自身のSHAをZIP内へ入れると自己参照になるので外部proofへ置く。node_modules/dist/artifacts/.git/.env/秘密/退役画像をsourceへ入れない。
+最終納品のファイル数・ZIP SHA・検証完了状態は、deployment-resultsのsourceDelivery.proofや同梱の外部proofを優先する。0.16用の版付きsource ZIP名は`japanese-craft-jewelry-source-0.16.0-national-018.zip`、外部proof名は`package-verification-0.16.0-national-018.json`。名前だけで納品検証済みとしない。初回0.15の`package-verification-0.15.0.json`と区別する。文書追加でファイル数は増えるため、以前の822を固定条件にしない。ZIP自身のSHAをZIP内へ入れると自己参照になるので外部proofへ置く。node_modules/dist/artifacts/.git/.env/秘密/退役画像をsourceへ入れない。
 
-スクリーンショット等は別の私的QA証跡。文中のartifactsという平文パスはローカル/納品証跡の所在で、アプリ実行依存ではない。存在しないartifactをMarkdownリンクにせず、実行可能な手順と履歴を分ける。AI原本50PNGの0.14別ZIPを保持し、0.16の新規23PNG（採用20・棄却3）は新しい生成/採否記録と分ける。原本の最終納品先・proofはdeployment-resultsを確認する。
+スクリーンショット等は別の私的QA証跡。文中のartifactsという平文パスはローカル/納品証跡の所在で、アプリ実行依存ではない。存在しないartifactをMarkdownリンクにせず、実行可能な手順と履歴を分ける。AI原本50PNGの0.14別ZIPを保持し、0.16の新規23PNG（採用20・棄却3）は新しい生成/採否記録と分ける。0.16原本ZIPは26ファイル・35,561,799bytes、SHA256 `383cf02e99cdf06d936118e9d071f35df68a1b99191de31442b7f450de386254`を外部`originals-verification-0.16.0.json`で検証済み。最終納品先・proofはdeployment-resultsを確認する。
 
 ## 別のAIへ貼る依頼文
 
@@ -106,8 +106,10 @@
 【今回の依頼】を実装・検証し、修正内容と根拠を引き継げる状態にしてください。
 計画だけで終わらず、依頼範囲の可逆的な作業を進めてください。
 
-現在の作業ソースはJapanese Craft Jewelry0.16.0、SORA運営、日英、
-公開対象60/登録66商品・24県、AI WebP118ファイルです。
+現在の公開版はJapanese Craft Jewelry0.16.0、SORA運営、日英、
+公開60/登録66商品・24県、AI WebP118ファイルです。
+公開appは86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb、
+Actions44042180272 completed/successで、実公開のSource328・補足24・mobile92は成功しています。
 商品販売・決済・発送、ブログ、お問い合わせはありません。
 神奈川専用にせず、全国へ拡張する構造を保ってください。
 AdSenseはoff、アカウント/CMP未接続、アフィリエイトは未申請・通常リンクです。

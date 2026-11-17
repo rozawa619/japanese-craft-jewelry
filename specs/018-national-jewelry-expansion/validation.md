@@ -31,4 +31,20 @@ AI画像の候補3点は、ネックレス状の折り鶴・4粒の米モチー�
 
 Maps20flowは外部要求を遮断したapp側の操作検査。Google本体のタイル/ピン/帰属の描画はその検査で認定しない。別の取得段階で、公式公開iframe4件とGoogle Share UI6件の店舗名・住所を照合し、[記録](../../docs/research/national-map-embeds-v16.json)へ残した。第三者API keyは転用しない。
 
-公開と最終ZIPは、このローカル成功をもって実施済みとはせず、Actions/実URL/全SHAを確認して追記する。
+## 公開後の検証
+
+公開アプリは86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb。[Actions44042180272](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44042180272)のcompleted/success（updatedAt 2026-11-17T07:54:26Z）を07:54:34.367ZにGitHub APIで確認した。
+
+[公開集約](../../docs/national-stage-hosted-results.json)のとおり、Source328/328の生HTML SHAが最終distと全件一致。[補足24/24](../../docs/national-stage-hosted-release-results.json)で328正規URLのmetadata/CSPと118画像200/SHA、[mobile92/92](../../docs/national-stage-hosted-mobile-results.json)（7viewport・axe10画面0・実Maps2）、[種類52/52](../../docs/national-stage-hosted-types-results.json)（24県・104画像）、[touch4/4](../../docs/national-stage-hosted-touch-results.json)を確認した。ローカル617/374を公開で再走査したとはしない。
+
+公開種類検査の[初回50/52](../../docs/national-stage-hosted-types-first-attempt-results.json)は広島ENの一時503と付随consoleエラー。原記録を保持し、[fresh200と公開/dist/manifestの三者SHA一致](../../docs/national-stage-hosted-types-recheck-results.json)を確認後、アプリを変えず全52を再走査して成功した。初回を成功として合算しない。
+
+公開検証後にも[469生成物の集合/全SHA一致](../../docs/national-stage-final-output-integrity.json)を確認。以降の変更は文書・証跡・文書検査対象の追加だけで、公開テンプレートやデータは変更しない。
+
+## 納品と引継ぎ
+
+現在のREADME・AGENTS・人向け編集/検証/構造ガイドとAI用コピーpromptを0.16へ更新。旧0.15の公開/検証記録を保存し、[現行検証](../../docs/verification.md)へ入口を統一した。[文書検査](../../docs/national-stage-docs-results.json)で24文書のlocal link/fragment/commandを確認した。外部URLの一括到達性をこの文書検査で認定しない。
+
+全sourceは971ファイル・公開画像118・公開商品60。初回exportと版付きZIPはrepository→export→ZIPの集合/全件SHAに成功。完了記録の反映後にも同じ検証で再梱包する。版付きZIPはjapanese-craft-jewelry-source-0.16.0-national-018.zip、latestはjapanese-craft-jewelry-source.zip、最終bytes/SHAと全件結果はZIP外のpackage-verification-0.16.0-national-018.jsonを正本とする。ZIP自身のhashをZIP内へ自己参照させない。
+
+0.16の原本別ZIPは23PNG（採用20・棄却3）＋生成記録2＋READMEの26ファイルを全SHA照合済み。35,561,799bytes、SHA256383cf02e99cdf06d936118e9d071f35df68a1b99191de31442b7f450de386254。外部originals-verification-0.16.0.jsonに証拠を置き、過去の原本ZIPも保持した。通常buildは同梱WebP/生成記録から動作し、artifactsや原本ZIPへ依存しない。

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-17T07:51:03.254Z",
+  "checkedAt": "2026-11-17T08:07:28.778Z",
   "method": "Read-only local link, Markdown heading/fragment and pnpm/node-script reference checks on active maintainer documents. External URLs are counted, not requested. Legacy operations after its explicit marker and historical research/report prose are not treated as the current runbook.",
   "files": [
     "README.md",
@@ -13,6 +13,7 @@
     "docs/architecture.md",
     "docs/editing-guide.md",
     "docs/verification-guide.md",
+    "docs/verification.md",
     "docs/operations.md",
     "docs/national-expansion-v16.md",
     "docs/research/national-expansion-east-2026-11-17.md",
@@ -27,10 +28,10 @@
     "specs/018-national-jewelry-expansion/validation.md"
   ],
   "errors": [],
-  "localLinks": 236,
-  "anchors": 5,
-  "externalLinks": 48,
-  "commands": 81,
+  "localLinks": 314,
+  "anchors": 6,
+  "externalLinks": 55,
+  "commands": 84,
   "scriptPaths": 19,
   "snapshot": {
     "packageVersion": "0.16.0",
@@ -41,11 +42,11 @@
   },
   "status": "passed",
   "summary": {
-    "files": 23,
-    "localLinks": 236,
-    "anchors": 5,
-    "externalLinksUnchecked": 48,
-    "pnpmReferences": 81,
+    "files": 24,
+    "localLinks": 314,
+    "anchors": 6,
+    "externalLinksUnchecked": 55,
+    "pnpmReferences": 84,
     "nodeScriptReferences": 19,
     "errors": 0
   }

@@ -1,0 +1,60 @@
+{
+  "version": "0.16.0",
+  "recordedAt": "2026-11-17T08:04:39.664Z",
+  "status": "passed",
+  "node": "24.22.3",
+  "pnpm": "11.25.0",
+  "firstFullVerify": {
+    "command": "pnpm verify",
+    "typeFiles": 130,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0,
+    "unitTests": {
+      "total": 135,
+      "passed": 135,
+      "failed": 0
+    },
+    "log": {
+      "path": "artifacts/national-stage/verify.log",
+      "sha256": "214e96eed56720e45043c9f57397bc28e4a68c774cf73fd1b919fbc114a8d46f"
+    }
+  },
+  "finalCheck": {
+    "command": "pnpm check",
+    "typeFiles": 131,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0,
+    "log": {
+      "path": "artifacts/national-stage/final-check.log",
+      "sha256": "38cc8185d35ba99a8ac35eb1c789150d73b4e6144b7082d7a19b0d65f8e62ae3"
+    }
+  },
+  "finalUnit": {
+    "command": "pnpm test",
+    "total": 144,
+    "passed": 144,
+    "failed": 0,
+    "log": {
+      "path": "artifacts/national-stage/final-test.log",
+      "sha256": "bf6c9c90393c0b15833abf9dec7c80cee41a52577e949a1ee982d7d99cd1be80"
+    }
+  },
+  "phaseExplanation": "Nine manifest-reader tests were added after the full verify. Final check and all144 unit tests passed. Browser-tested dist was not rebuilt; app bytes are those of the full verify. Documentation/evidence added afterward do not feed public templates.",
+  "build": {
+    "htmlPages": 344,
+    "canonicalPages": 328,
+    "hrefSrcReferences": 19565,
+    "anchors": 2998,
+    "ordinaryRetailerLinks": 1216,
+    "sponsoredLinks": 0,
+    "executableInlineCspHashes": 1229,
+    "inertJsonBlocks": 328,
+    "legacyReadingRedirects": 14,
+    "retiredImagesPruned": 10,
+    "outputFiles": 469,
+    "publicWebpImages": 118,
+    "manifest": "docs/national-stage-build-manifest.json"
+  }
+}

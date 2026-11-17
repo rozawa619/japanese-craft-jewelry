@@ -1,0 +1,705 @@
+{
+  "checkedAt": "2026-11-17T07:55:22.495Z",
+  "origin": "https://rozawa619.github.io",
+  "base": "/japanese-craft-jewelry/",
+  "method": "Focused responsive browser checks against a stable build. Raw catalog, display-order IDs and image registry independently supply expected representatives. No product/cookie/advertising data is changed. Standalone controls target44px; normal inline prose links and decorative captions are not claimed to be44px targets.",
+  "sourceInputs": {
+    "src/styles/global.css": "9c4c64dee71083ced55f29c7c3f324c8efb1c7dbc3ee5d3340cb9e0f58feb058",
+    "src/components/RegionalChoiceGuide.astro": "e4bb91b4604530e1ed7c73f617e9212c53adf83d5faa614b938b84231fac02ca",
+    "src/components/TypeChoiceImage.astro": "bee774ecee5d786e0b94b8b6902b5e5927020ac1abee94477cdeca443bdbee59",
+    "src/components/Sources.astro": "415ed13ebfdf077e6d7a9dcc57d926deca161889e271eb653287bd3349465b0d",
+    "src/components/MarketPrice.astro": "da1903d13392ac122002da4dbdf9473d1e8f8f2920b043a9458e4a2ca9d2c544",
+    "src/components/PurchaseEvidence.astro": "651d5dfd031a48aae5579478922a6e19038d1b4651ac9e2811535b4bb06ef534",
+    "src/components/VisitGuide.astro": "2f714933f8a23836449e47334e22e263b2987b75383d2d32fa8879ade7022f0b",
+    "src/components/ProductBuyingGuide.astro": "6b54b3c98cacb77bf196f2cf07440c35f41a0d42906141866f6c11abc99a69a5",
+    "src/layouts/Base.astro": "1448a6ed26cf0a6dd18c04c40e18afe2534fc8901b4f77a2ddeb428c0936ca15",
+    "src/pages/[lang]/index.astro": "b9f78220191607c883de94623c20829b4568827abaeb5a01e14ef6ae8291e0cc",
+    "src/pages/[lang]/objects/index.astro": "3ce941bb319f4d59ab5456fc558ce5b1cbcc0114062cac424fc6093f0954666c",
+    "src/pages/[lang]/objects/[slug].astro": "8b7886b1c96e54699e4090c7e3b984358d6f0de94fb2ba00eeaa0c50e2b141a3",
+    "src/data/product-detail-images.json": "1fc02f8dc9f625b9badc584770e57bf60a114ec48c06c37f4fb5c1a1d03057c9",
+    "src/data/catalog.json": "2f12215f009e327bc8b4a307f8baf2c3df2dd8e757b655870a9ac47bd1b781b2"
+  },
+  "views": [
+    {
+      "width": 320,
+      "height": 740
+    },
+    {
+      "width": 360,
+      "height": 780
+    },
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "width": 768,
+      "height": 430
+    },
+    {
+      "width": 667,
+      "height": 375
+    },
+    {
+      "width": 1440,
+      "height": 1000
+    }
+  ],
+  "routes": [
+    {
+      "name": "home",
+      "path": ""
+    },
+    {
+      "name": "listing",
+      "path": "objects/"
+    },
+    {
+      "name": "region",
+      "path": "places/kanagawa/"
+    },
+    {
+      "name": "detail",
+      "path": "objects/hamamatsuya-surgical-stainless-pierced-earrings/"
+    },
+    {
+      "name": "long-detail",
+      "path": "objects/shimadzu-satsuma-kiriko-hikari-l-pendant/"
+    },
+    {
+      "name": "privacy",
+      "path": "privacy/"
+    }
+  ],
+  "checks": [
+    {
+      "key": "ja-home-320x740",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-listing-320x740",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-region-320x740",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-detail-320x740",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-long-detail-320x740",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-privacy-320x740",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-home-360x780",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-listing-360x780",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-region-360x780",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-detail-360x780",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-long-detail-360x780",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-privacy-360x780",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-home-390x844",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-listing-390x844",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-region-390x844",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-detail-390x844",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-long-detail-390x844",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-privacy-390x844",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-home-768x1024",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-listing-768x1024",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-region-768x1024",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-detail-768x1024",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-long-detail-768x1024",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-privacy-768x1024",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-home-768x430",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-listing-768x430",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-region-768x430",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-detail-768x430",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-long-detail-768x430",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-privacy-768x430",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-home-667x375",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-listing-667x375",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-region-667x375",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-detail-667x375",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-long-detail-667x375",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-privacy-667x375",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-home-1440x1000",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-listing-1440x1000",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-region-1440x1000",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-detail-1440x1000",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-long-detail-1440x1000",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-privacy-1440x1000",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-home-320x740",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-listing-320x740",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-region-320x740",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-detail-320x740",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-long-detail-320x740",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-privacy-320x740",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-home-360x780",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-listing-360x780",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-region-360x780",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-detail-360x780",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-long-detail-360x780",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-privacy-360x780",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-home-390x844",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-listing-390x844",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-region-390x844",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-detail-390x844",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-long-detail-390x844",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-privacy-390x844",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-home-768x1024",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-listing-768x1024",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-region-768x1024",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-detail-768x1024",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-long-detail-768x1024",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-privacy-768x1024",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-home-768x430",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-listing-768x430",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-region-768x430",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-detail-768x430",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-long-detail-768x430",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-privacy-768x430",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-home-667x375",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-listing-667x375",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-region-667x375",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-detail-667x375",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-long-detail-667x375",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-privacy-667x375",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-home-1440x1000",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-listing-1440x1000",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-region-1440x1000",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-detail-1440x1000",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-long-detail-1440x1000",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "en-privacy-1440x1000",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-source-hash",
+      "status": "passed"
+    },
+    {
+      "key": "en-source-hash",
+      "status": "passed"
+    },
+    {
+      "key": "ja-nojs-sources-320",
+      "status": "passed"
+    },
+    {
+      "key": "ja-nojs-sources-768",
+      "status": "passed"
+    },
+    {
+      "key": "en-nojs-sources-320",
+      "status": "passed"
+    },
+    {
+      "key": "en-nojs-sources-768",
+      "status": "passed"
+    },
+    {
+      "key": "ja-live-map-320",
+      "status": "passed"
+    },
+    {
+      "key": "en-live-map-390",
+      "status": "passed"
+    }
+  ],
+  "failures": [],
+  "screenshots": [
+    "artifacts/national-stage-hosted-mobile-ja-home-320x740-menu.png",
+    "artifacts/national-stage-hosted-mobile-ja-home-320x740-top.png",
+    "artifacts/national-stage-hosted-mobile-ja-listing-320x740-filters.png",
+    "artifacts/national-stage-hosted-mobile-ja-region-320x740-top.png",
+    "artifacts/national-stage-hosted-mobile-ja-detail-320x740-sources.png",
+    "artifacts/national-stage-hosted-mobile-ja-privacy-320x740-top.png",
+    "artifacts/national-stage-hosted-mobile-ja-listing-768x430-filters.png",
+    "artifacts/national-stage-hosted-mobile-en-home-320x740-menu.png",
+    "artifacts/national-stage-hosted-mobile-en-home-320x740-top.png",
+    "artifacts/national-stage-hosted-mobile-en-listing-320x740-filters.png",
+    "artifacts/national-stage-hosted-mobile-en-region-320x740-top.png",
+    "artifacts/national-stage-hosted-mobile-en-detail-320x740-sources.png",
+    "artifacts/national-stage-hosted-mobile-en-privacy-320x740-top.png",
+    "artifacts/national-stage-hosted-mobile-en-listing-768x430-filters.png",
+    "artifacts/national-stage-hosted-mobile-ja-live-map-320.png",
+    "artifacts/national-stage-hosted-mobile-en-live-map-390.png"
+  ],
+  "axe": [
+    {
+      "key": "ja-home-320x740",
+      "violations": []
+    },
+    {
+      "key": "ja-listing-320x740",
+      "violations": []
+    },
+    {
+      "key": "ja-detail-320x740",
+      "violations": []
+    },
+    {
+      "key": "ja-privacy-320x740",
+      "violations": []
+    },
+    {
+      "key": "ja-region-768x1024",
+      "violations": []
+    },
+    {
+      "key": "en-home-320x740",
+      "violations": []
+    },
+    {
+      "key": "en-listing-320x740",
+      "violations": []
+    },
+    {
+      "key": "en-detail-320x740",
+      "violations": []
+    },
+    {
+      "key": "en-privacy-320x740",
+      "violations": []
+    },
+    {
+      "key": "en-region-768x1024",
+      "violations": []
+    }
+  ],
+  "maps": [
+    {
+      "key": "ja-live-map-320",
+      "status": "passed"
+    },
+    {
+      "key": "en-live-map-390",
+      "status": "passed"
+    }
+  ],
+  "sourceControls": 120,
+  "typeImages": 112,
+  "sourceInputsUnchanged": true,
+  "completedAt": "2026-11-17T07:58:50.806Z",
+  "summary": {
+    "checks": 92,
+    "passed": 92,
+    "failed": 0,
+    "viewports": 7,
+    "locales": 2,
+    "representativeRoutes": 6,
+    "sourceControls": 120,
+    "typeImageInstances": 112,
+    "axeScreens": 10,
+    "axeViolations": 0,
+    "liveMaps": 2,
+    "screenshots": 16
+  }
+}

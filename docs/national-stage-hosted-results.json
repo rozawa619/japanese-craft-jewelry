@@ -1,0 +1,108 @@
+{
+  "version": "0.16.0",
+  "recordedAt": "2026-11-17T08:04:39.674Z",
+  "status": "passed",
+  "applicationCommit": "86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb",
+  "actions": {
+    "id": 44042180272,
+    "headSha": "86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44042180272",
+    "updatedAt": "2026-11-17T07:54:26Z",
+    "observedAt": "2026-11-17T07:54:34.367Z"
+  },
+  "origin": "https://rozawa619.github.io",
+  "base": "/japanese-craft-jewelry/",
+  "reports": {
+    "sources": "docs/national-stage-hosted-sources-results.json",
+    "release": "docs/national-stage-hosted-release-results.json",
+    "mobile": "docs/national-stage-hosted-mobile-results.json",
+    "types": "docs/national-stage-hosted-types-results.json",
+    "touch": "docs/national-stage-hosted-touch-results.json"
+  },
+  "results": {
+    "sources": {
+      "checks": 328,
+      "passed": 328,
+      "failed": 0,
+      "htmlSha256Comparisons": 328,
+      "productPages": 120,
+      "sourceDisclosures": 448,
+      "sourceRecords": 1580
+    },
+    "release": {
+      "checks": 24,
+      "passed": 24,
+      "failed": 0,
+      "canonicalUrls": 328,
+      "uniqueImages": 118,
+      "pageErrors": 0,
+      "consoleErrors": 0
+    },
+    "mobile": {
+      "checks": 92,
+      "passed": 92,
+      "failed": 0,
+      "viewports": 7,
+      "locales": 2,
+      "representativeRoutes": 6,
+      "sourceControls": 120,
+      "typeImageInstances": 112,
+      "axeScreens": 10,
+      "axeViolations": 0,
+      "liveMaps": 2,
+      "screenshots": 16
+    },
+    "types": {
+      "checks": 52,
+      "passed": 52,
+      "failed": 0,
+      "regions": 24,
+      "locales": 2,
+      "imagesChecked": 104,
+      "screenshots": 4,
+      "pageErrors": 0,
+      "consoleErrors": 0
+    },
+    "touch": {
+      "checks": 4,
+      "passed": 4,
+      "failed": 0,
+      "mobileTouchFlows": 2,
+      "screenshots": 8
+    }
+  },
+  "scope": "Read-only live verification. Source scan compares328 raw HTML SHA to stable local dist; release checks328 canonical metadata routes and118 raster SHA. Hosted responsive/type/touch are separate targeted checks. Broad617/price374 are local, not a hosted rerun.",
+  "retryHistory": [
+    {
+      "initialReport": "docs/national-stage-hosted-types-first-attempt-results.json",
+      "initialSummary": {
+        "checks": 52,
+        "passed": 50,
+        "failed": 2,
+        "regions": 24,
+        "locales": 2,
+        "imagesChecked": 103,
+        "screenshots": 4,
+        "pageErrors": 0,
+        "consoleErrors": 2
+      },
+      "reason": "One transient HTTP503 at EN Hiroshima caused the route failure and a dependent console-error check. No app change.",
+      "freshRecheck": "docs/national-stage-hosted-types-recheck-results.json",
+      "freshRecheckPassed": true,
+      "fullRerunReport": "docs/national-stage-hosted-types-results.json",
+      "finalSummary": {
+        "checks": 52,
+        "passed": 52,
+        "failed": 0,
+        "regions": 24,
+        "locales": 2,
+        "imagesChecked": 104,
+        "screenshots": 4,
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    }
+  ]
+}

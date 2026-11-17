@@ -6,5 +6,5 @@
 - [x] 人物10＋単体10のAI画像と権利/生成記録、既存画像保持
 - [x] 地図または公式行き方fallbackと選択導線を統合
 - [x] 型・unit・データ・build・画像・SEOと追加UIを検証
-- [ ] mainへ反映しActions/公開URLと生成物を照合
-- [ ] 引継ぎ・全source・原本・ZIPを照合して納品
+- [x] mainへ反映しActions/公開URLと生成物を照合
+- [x] 引継ぎ・全source・原本・ZIPを照合して納品

@@ -14,7 +14,7 @@
 
 - 運営者表示SORA、日本全国の工芸ジュエリーを選ぶJA/ENサイト。神奈川専用やiTOへ戻さない。
 - ブログ/Contact/販売・決済・発送の機能を作らず、不要な販売責任説明をUIに再導入しない。提供されていない氏名/住所/メールを作らない。
-- 0.16作業ソースの60公開対象/66登録・24県・34公開関連技法/全36・118AI画像は観測値。固定上限や各県同数の条件ではない。空の地域/技法とdraftを一覧やsitemapへ出さない。
+- 0.16公開版の60公開/66登録・24県・34公開関連技法/全36・118AI画像は観測値。固定上限や各県同数の条件ではない。空の地域/技法とdraftを一覧やsitemapへ出さない。
 - COCOON2/欠品18K/販売未確認の畠山2/hairpinはdraft。復帰には対象variantの現行購入根拠と派生参照の再確認が必要。403を閉店/売切れとしない。
 
 ## 正本と編集
@@ -47,8 +47,7 @@
 
 ## 検証・完了の記録
 
-<!-- TODO_PUBLIC_V16: 0.16公開確認後に次の状態を更新する。 -->
-- 現在は0.16作業/QA中。公開確認の基準は旧0.15のapp1f0021306e87ce9e7dc43bdf446cffedc59e4134・Actions44024678465。0.16の公開成功は実SHA/Actions/実URLの観測後に記録する。
+- 0.16公開appは86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb、Actions44042180272 completed/success（2026-11-17T07:54:26Z更新、07:54:34.367ZにAPI観測）。実公開Source328/328HTML SHA・release24/24（328canonical/118画像SHA）・mobile92/92成功。正本はdeployment-results/verificationとnational-stage-hostedの各記録で、以後の文書commitを公開appと混同しない。
 
 - JSON/広告変更はpnpm verify。文言/画面は影響とriskに応じたtype/build/JAEN/mobile等。docs-onlyに497全走査を要求せず、リンク/コマンド/整合と必要なbuildを確認する。
 - build中に共有distへbrowser検査しない。ローカル/公開/途中/最終を区別し、CHECK_REPORT_PATH等を作業固有名へ。0.15の既存証跡を上書きしない。

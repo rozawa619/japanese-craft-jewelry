@@ -1,327 +1,397 @@
 {
-  "version": "0.15.0",
+  "version": "0.16.0",
+  "specification": "018-national-jewelry-expansion",
   "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
   "branch": "main",
   "status": "deployed_and_verified",
-  "recordedAt": "2026-11-17T05:45:04.045Z",
-  "applicationCommit": "1f0021306e87ce9e7dc43bdf446cffedc59e4134",
+  "recordedAt": "2026-11-17T08:04:39.675Z",
+  "applicationCommit": "86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb",
   "actions": {
-    "id": 44024678465,
-    "headSha": "1f0021306e87ce9e7dc43bdf446cffedc59e4134",
+    "id": 44042180272,
+    "headSha": "86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb",
     "status": "completed",
     "conclusion": "success",
-    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44024678465",
-    "updatedAt": "2026-11-17T05:32:16Z",
-    "verification": "GitHub API observation after final push; not inferred from local build."
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44042180272",
+    "updatedAt": "2026-11-17T07:54:26Z",
+    "observedAt": "2026-11-17T07:54:34.367Z"
   },
-  "previousDeployedVersion": "0.15.0 initial pass",
-  "previousDeployedApplicationCommit": "dc90c1d7893ba07d60ff8e462a1e5750c0c070ac",
+  "previousDeployedVersion": "0.15.0",
+  "previousDeployedApplicationCommit": "1f0021306e87ce9e7dc43bdf446cffedc59e4134",
+  "previousRecord": "docs/deployment-v15-before-national.json",
   "publicUrls": {
     "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
     "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
-    "example": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/tokyo/"
+    "places": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/"
   },
   "content": {
-    "publishedProducts": 50,
-    "catalogProducts": 56,
-    "regions": 14,
-    "crafts": 24,
-    "sources": 258,
-    "stores": 23,
-    "productsWithStores": 43,
-    "onlineEvidence": 41,
+    "publishedProducts": 60,
+    "catalogProducts": 66,
+    "draftProducts": 6,
+    "regions": 24,
+    "activeCrafts": 34,
+    "catalogCrafts": 36,
+    "sources": 293,
+    "stores": 33,
+    "productsWithStores": 53,
+    "onlineEvidence": 51,
     "retailCatalogEvidence": 9,
-    "publicImages": 98,
-    "newImageFiles": 0,
-    "existingImageBytesRetained": true
+    "publicImages": 118,
+    "stylingImages": 58,
+    "soloImages": 60,
+    "newProducts": 10,
+    "newRegions": 10,
+    "newImageFiles": 20,
+    "existingImageBytesRetained": 98
+  },
+  "expansion": {
+    "overview": "docs/national-expansion-v16.md",
+    "regions": [
+      "Akita",
+      "Fukui",
+      "Gifu",
+      "Hiroshima",
+      "Kagoshima",
+      "Tokushima",
+      "Tottori",
+      "Okinawa",
+      "Kumamoto",
+      "Shimane"
+    ],
+    "purchaseChecks": "Exact listed options accepting orders at source-check time; no future stock guarantee.",
+    "preservation": "docs/national-stage-preservation-results.json",
+    "maps": "docs/research/national-map-embeds-v16.json"
   },
   "localVerification": {
     "static": {
-      "version": "0.15.0",
-      "recordedAt": "2026-11-17T05:27:26.793Z",
-      "command": "pnpm verify",
+      "version": "0.16.0",
+      "recordedAt": "2026-11-17T08:04:39.664Z",
       "status": "passed",
       "node": "24.22.3",
       "pnpm": "11.25.0",
-      "typeFiles": 124,
-      "errors": 0,
-      "warnings": 0,
-      "hints": 0,
-      "unitTests": {
-        "total": 124,
-        "passed": 124,
-        "failed": 0
+      "firstFullVerify": {
+        "command": "pnpm verify",
+        "typeFiles": 130,
+        "errors": 0,
+        "warnings": 0,
+        "hints": 0,
+        "unitTests": {
+          "total": 135,
+          "passed": 135,
+          "failed": 0
+        },
+        "log": {
+          "path": "artifacts/national-stage/verify.log",
+          "sha256": "214e96eed56720e45043c9f57397bc28e4a68c774cf73fd1b919fbc114a8d46f"
+        }
       },
+      "finalCheck": {
+        "command": "pnpm check",
+        "typeFiles": 131,
+        "errors": 0,
+        "warnings": 0,
+        "hints": 0,
+        "log": {
+          "path": "artifacts/national-stage/final-check.log",
+          "sha256": "38cc8185d35ba99a8ac35eb1c789150d73b4e6144b7082d7a19b0d65f8e62ae3"
+        }
+      },
+      "finalUnit": {
+        "command": "pnpm test",
+        "total": 144,
+        "passed": 144,
+        "failed": 0,
+        "log": {
+          "path": "artifacts/national-stage/final-test.log",
+          "sha256": "bf6c9c90393c0b15833abf9dec7c80cee41a52577e949a1ee982d7d99cd1be80"
+        }
+      },
+      "phaseExplanation": "Nine manifest-reader tests were added after the full verify. Final check and all144 unit tests passed. Browser-tested dist was not rebuilt; app bytes are those of the full verify. Documentation/evidence added afterward do not feed public templates.",
       "build": {
-        "htmlPages": 264,
-        "hrefSrcReferences": 15275,
-        "anchors": 2298,
-        "ordinaryRetailerLinks": 1016,
+        "htmlPages": 344,
+        "canonicalPages": 328,
+        "hrefSrcReferences": 19565,
+        "anchors": 2998,
+        "ordinaryRetailerLinks": 1216,
         "sponsoredLinks": 0,
-        "executableInlineCspHashes": 949,
-        "inertJsonBlocks": 248,
+        "executableInlineCspHashes": 1229,
+        "inertJsonBlocks": 328,
         "legacyReadingRedirects": 14,
         "retiredImagesPruned": 10,
-        "outputFiles": 369
-      },
-      "qaOutputUnchangedAfterFinalBuild": true,
-      "log": {
-        "path": "artifacts/visual-mobile-stage-final-verify.log",
-        "sha256": "977372ef663fb4ae0afd08db510f9f20eb86999ed0a380616bd3974a06f4e466"
-      },
-      "limits": "Known advisory snapshot and tested static/UI boundaries only; no guarantee of all security, account/header configuration, physical iOS/Safari, legal/contract eligibility, Google search traffic or AdSense approval."
+        "outputFiles": 469,
+        "publicWebpImages": 118,
+        "manifest": "docs/national-stage-build-manifest.json"
+      }
     },
     "reports": {
-      "static": "docs/visual-mobile-stage-static-results.json",
-      "dependency-audit": "docs/visual-mobile-stage-dependency-audit-results.json",
-      "quality": "docs/visual-mobile-stage-quality-results.json",
-      "prices": "docs/visual-mobile-stage-prices-results.json",
-      "sources": "docs/visual-mobile-stage-sources-results.json",
-      "mobile": "docs/visual-mobile-stage-mobile-results.json",
-      "touch": "docs/visual-mobile-stage-touch-results.json",
-      "type-images": "docs/visual-mobile-stage-type-images-results.json",
-      "maps": "docs/visual-mobile-stage-maps-results.json",
-      "seo": "docs/visual-mobile-stage-seo-results.json",
-      "ad-build": "docs/visual-mobile-stage-ad-build-results.json",
-      "heading-browser": "docs/visual-mobile-stage-heading-browser-results.json",
-      "source-anchor-race": "docs/visual-mobile-stage-source-anchor-race-results.json"
+      "quality": "docs/national-stage-quality-results.json",
+      "prices": "docs/national-stage-prices-results.json",
+      "sources": "docs/national-stage-sources-results.json",
+      "mobile": "docs/national-stage-mobile-results.json",
+      "type-images": "docs/national-stage-type-images-results.json",
+      "touch": "docs/national-stage-touch-results.json",
+      "new-maps": "docs/national-stage-new-maps-results.json",
+      "copy": "docs/national-stage-copy-results.json",
+      "editorial-images": "docs/national-stage-editorial-images-results.json",
+      "detail-images": "docs/national-stage-detail-images-results.json",
+      "privacy": "docs/national-stage-privacy-results.json",
+      "seo": "docs/national-stage-seo-results.json",
+      "preservation": "docs/national-stage-preservation-results.json"
     },
-    "quality": {
-      "checks": 497,
-      "passed": 497,
-      "failed": 0,
-      "publishedProducts": 50,
-      "withdrawnProducts": 6,
-      "withdrawnRoutesVerified": 12,
-      "withdrawnHtmlFilesScanned": 264,
-      "unknownPricePublishedProducts": 0,
-      "unknownPriceDetailSample": null,
-      "productDetailChecks": 300,
-      "uniqueProductsChecked": 50,
-      "regionalTypeRoundtrips": 222,
-      "axeScreens": 30,
-      "axeViolations": 0,
-      "screenshots": 22,
-      "pageErrors": 0,
-      "consoleErrors": 0,
-      "externalRequests": 0
+    "results": {
+      "quality": {
+        "checks": 617,
+        "passed": 617,
+        "failed": 0,
+        "publishedProducts": 60,
+        "withdrawnProducts": 6,
+        "withdrawnRoutesVerified": 12,
+        "withdrawnHtmlFilesScanned": 344,
+        "unknownPricePublishedProducts": 0,
+        "unknownPriceDetailSample": null,
+        "productDetailChecks": 360,
+        "uniqueProductsChecked": 60,
+        "regionalTypeRoundtrips": 282,
+        "axeScreens": 30,
+        "axeViolations": 0,
+        "screenshots": 22,
+        "pageErrors": 0,
+        "consoleErrors": 0,
+        "externalRequests": 0
+      },
+      "prices": {
+        "checks": 374,
+        "passed": 374,
+        "failed": 0,
+        "publishedProducts": 60,
+        "uniqueProductsChecked": 60,
+        "dualMarketProducts": 9,
+        "unknownPricePublishedProducts": 0,
+        "unknownPriceDetailSample": null,
+        "productDetailChecks": 360,
+        "regionsChecked": 24,
+        "regionContextChecks": 144,
+        "axeScreens": 18,
+        "axeViolations": 0,
+        "screenshots": 6,
+        "pageErrors": 0,
+        "consoleErrors": 0
+      },
+      "sources": {
+        "checks": 328,
+        "passed": 328,
+        "failed": 0,
+        "htmlSha256Comparisons": 328,
+        "productPages": 120,
+        "sourceDisclosures": 448,
+        "sourceRecords": 1580
+      },
+      "mobile": {
+        "checks": 92,
+        "passed": 92,
+        "failed": 0,
+        "viewports": 7,
+        "locales": 2,
+        "representativeRoutes": 6,
+        "sourceControls": 120,
+        "typeImageInstances": 112,
+        "axeScreens": 10,
+        "axeViolations": 0,
+        "liveMaps": 2,
+        "screenshots": 16
+      },
+      "type-images": {
+        "checks": 52,
+        "passed": 52,
+        "failed": 0,
+        "regions": 24,
+        "locales": 2,
+        "imagesChecked": 104,
+        "screenshots": 4,
+        "pageErrors": 0,
+        "consoleErrors": 0
+      },
+      "touch": {
+        "checks": 4,
+        "passed": 4,
+        "failed": 0,
+        "mobileTouchFlows": 2,
+        "screenshots": 8
+      },
+      "new-maps": {
+        "expectedFlows": 20,
+        "checks": 20,
+        "passed": 20,
+        "failed": 0,
+        "products": 10,
+        "uniqueStores": 10,
+        "locales": 2,
+        "initialExternalAttempts": 0,
+        "explicitGoogleAttempts": 20,
+        "reloadExternalAttempts": 0,
+        "screenshots": 20,
+        "sourceInputsUnchanged": true
+      },
+      "copy": {
+        "checks": 94,
+        "passed": 94,
+        "failed": 0,
+        "publishedProducts": 60,
+        "existingProducts": 42,
+        "newProducts": 18
+      },
+      "editorial-images": {
+        "checks": 59,
+        "passed": 59,
+        "failed": 0,
+        "publishedProducts": 60,
+        "registeredProducts": 60,
+        "uniqueImages": 58,
+        "baselineFilesPreserved": 25,
+        "retiredFilesExcluded": 10,
+        "totalImageBytes": 4933572,
+        "warnings": 0
+      },
+      "detail-images": {
+        "checks": 61,
+        "passed": 61,
+        "failed": 0,
+        "products": 60,
+        "uniqueFiles": 60,
+        "bytes": 2937308
+      },
+      "privacy": {
+        "checks": 4,
+        "passed": 4,
+        "failed": 0,
+        "htmlPages": 344,
+        "mode": "off"
+      }
     },
-    "prices": {
-      "checks": 314,
-      "passed": 314,
-      "failed": 0,
-      "publishedProducts": 50,
-      "uniqueProductsChecked": 50,
-      "dualMarketProducts": 9,
-      "unknownPricePublishedProducts": 0,
-      "unknownPriceDetailSample": null,
-      "productDetailChecks": 300,
-      "regionsChecked": 14,
-      "regionContextChecks": 84,
-      "axeScreens": 18,
-      "axeViolations": 0,
-      "screenshots": 6,
-      "pageErrors": 0,
-      "consoleErrors": 0
+    "seo": {
+      "status": "passed",
+      "canonicalPages": 328,
+      "noindexPages": 16,
+      "productPages": 120
     },
-    "sources": {
-      "checks": 248,
-      "passed": 248,
-      "failed": 0,
-      "productPages": 100,
-      "sourceDisclosures": 348,
-      "sourceRecords": 1246
-    },
-    "mobile": {
-      "checks": 92,
-      "passed": 92,
-      "failed": 0,
-      "viewports": 7,
-      "locales": 2,
-      "representativeRoutes": 6,
-      "sourceControls": 120,
-      "typeImageInstances": 112,
-      "axeScreens": 10,
-      "axeViolations": 0,
-      "liveMaps": 2,
-      "screenshots": 16
-    },
-    "touch": {
-      "checks": 4,
-      "passed": 4,
-      "failed": 0,
-      "mobileTouchFlows": 2,
-      "screenshots": 8
-    },
-    "typeImages": {
-      "checks": 32,
-      "passed": 32,
-      "failed": 0,
-      "regions": 14,
-      "locales": 2,
-      "imagesChecked": 84,
-      "screenshots": 4,
-      "pageErrors": 0,
-      "consoleErrors": 0
-    },
-    "maps": {
-      "checks": 9,
-      "passed": 9,
-      "failed": 0
-    },
-    "isolatedAds": {
-      "checks": 6,
-      "passed": 6,
-      "failed": 0,
-      "rootDistUnchanged": true,
-      "realCatalogUnchanged": true
-    },
-    "sourceAnchorRace": {
-      "checks": 12,
-      "passed": 12,
-      "failed": 0,
-      "rapidSequences": 24,
-      "sourceInputsUnchanged": true
-    },
-    "heading": {
-      "checks": 12,
-      "passed": 12,
-      "failed": 0,
-      "thumbChecks": 36,
-      "sourceControls": 12,
-      "queryRoundtrips": 36,
-      "ja390LineChecks": 2,
-      "screenshots": 2,
-      "pageErrors": 0,
-      "consoleErrors": 0
-    }
+    "newMapsLimit": "Twenty JA/EN new-store app flows block explicit Google requests; validates app opt-in/removal/reload, not live tiles/pins. Two existing representative live Maps separately exercised in mobile checks.",
+    "finalOutputIntegrity": "docs/national-stage-final-output-integrity.json"
   },
   "hostedVerification": {
+    "version": "0.16.0",
+    "recordedAt": "2026-11-17T08:04:39.674Z",
+    "status": "passed",
+    "applicationCommit": "86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb",
+    "actions": {
+      "id": 44042180272,
+      "headSha": "86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44042180272",
+      "updatedAt": "2026-11-17T07:54:26Z",
+      "observedAt": "2026-11-17T07:54:34.367Z"
+    },
+    "origin": "https://rozawa619.github.io",
+    "base": "/japanese-craft-jewelry/",
     "reports": {
-      "hosted-quality": "docs/visual-mobile-stage-hosted-quality-results.json",
-      "hosted-type-images": "docs/visual-mobile-stage-hosted-type-images-results.json",
-      "hosted-sources": "docs/visual-mobile-stage-hosted-sources-results.json",
-      "hosted-mobile": "docs/visual-mobile-stage-hosted-mobile-results.json",
-      "hosted-touch": "docs/visual-mobile-stage-hosted-touch-results.json",
-      "hosted-supplement": "docs/visual-mobile-stage-hosted-supplement-results.json",
-      "hosted-publication-metadata": "docs/visual-mobile-stage-hosted-publication-metadata-results.json",
-      "hosted-security-headers": "docs/visual-mobile-stage-hosted-security-headers-results.json",
-      "hosted-heading-browser": "docs/visual-mobile-stage-hosted-heading-browser-results.json",
-      "hosted-source-anchor-race": "docs/visual-mobile-stage-hosted-source-anchor-race-results.json"
+      "sources": "docs/national-stage-hosted-sources-results.json",
+      "release": "docs/national-stage-hosted-release-results.json",
+      "mobile": "docs/national-stage-hosted-mobile-results.json",
+      "types": "docs/national-stage-hosted-types-results.json",
+      "touch": "docs/national-stage-hosted-touch-results.json"
     },
-    "quality": {
-      "checks": 497,
-      "passed": 497,
-      "failed": 0,
-      "publishedProducts": 50,
-      "withdrawnProducts": 6,
-      "withdrawnRoutesVerified": 12,
-      "withdrawnHtmlFilesScanned": 264,
-      "unknownPricePublishedProducts": 0,
-      "unknownPriceDetailSample": null,
-      "productDetailChecks": 300,
-      "uniqueProductsChecked": 50,
-      "regionalTypeRoundtrips": 222,
-      "axeScreens": 30,
-      "axeViolations": 0,
-      "screenshots": 22,
-      "pageErrors": 0,
-      "consoleErrors": 0,
-      "externalRequests": 0
+    "results": {
+      "sources": {
+        "checks": 328,
+        "passed": 328,
+        "failed": 0,
+        "htmlSha256Comparisons": 328,
+        "productPages": 120,
+        "sourceDisclosures": 448,
+        "sourceRecords": 1580
+      },
+      "release": {
+        "checks": 24,
+        "passed": 24,
+        "failed": 0,
+        "canonicalUrls": 328,
+        "uniqueImages": 118,
+        "pageErrors": 0,
+        "consoleErrors": 0
+      },
+      "mobile": {
+        "checks": 92,
+        "passed": 92,
+        "failed": 0,
+        "viewports": 7,
+        "locales": 2,
+        "representativeRoutes": 6,
+        "sourceControls": 120,
+        "typeImageInstances": 112,
+        "axeScreens": 10,
+        "axeViolations": 0,
+        "liveMaps": 2,
+        "screenshots": 16
+      },
+      "types": {
+        "checks": 52,
+        "passed": 52,
+        "failed": 0,
+        "regions": 24,
+        "locales": 2,
+        "imagesChecked": 104,
+        "screenshots": 4,
+        "pageErrors": 0,
+        "consoleErrors": 0
+      },
+      "touch": {
+        "checks": 4,
+        "passed": 4,
+        "failed": 0,
+        "mobileTouchFlows": 2,
+        "screenshots": 8
+      }
     },
-    "sources": {
-      "checks": 248,
-      "passed": 248,
-      "failed": 0,
-      "htmlSha256Comparisons": 248,
-      "productPages": 100,
-      "sourceDisclosures": 348,
-      "sourceRecords": 1246
-    },
-    "mobile": {
-      "checks": 92,
-      "passed": 92,
-      "failed": 0,
-      "viewports": 7,
-      "locales": 2,
-      "representativeRoutes": 6,
-      "sourceControls": 120,
-      "typeImageInstances": 112,
-      "axeScreens": 10,
-      "axeViolations": 0,
-      "liveMaps": 2,
-      "screenshots": 16
-    },
-    "touch": {
-      "checks": 4,
-      "passed": 4,
-      "failed": 0,
-      "mobileTouchFlows": 2,
-      "screenshots": 8
-    },
-    "typeImages": {
-      "checks": 32,
-      "passed": 32,
-      "failed": 0,
-      "regions": 14,
-      "locales": 2,
-      "imagesChecked": 84,
-      "screenshots": 4,
-      "pageErrors": 0,
-      "consoleErrors": 0
-    },
-    "release": {
-      "checks": 24,
-      "passed": 24,
-      "failed": 0,
-      "canonicalUrls": 248,
-      "uniqueImages": 98,
-      "pageErrors": 0,
-      "consoleErrors": 0
-    },
-    "publication": {
-      "checks": 1,
-      "passed": 1,
-      "failed": 0
-    },
-    "sourceAnchorRace": {
-      "checks": 12,
-      "passed": 12,
-      "failed": 0,
-      "rapidSequences": 24,
-      "sourceInputsUnchanged": true
-    },
-    "heading": {
-      "checks": 12,
-      "passed": 12,
-      "failed": 0,
-      "thumbChecks": 36,
-      "sourceControls": 12,
-      "queryRoundtrips": 36,
-      "ja390LineChecks": 2,
-      "screenshots": 2,
-      "pageErrors": 0,
-      "consoleErrors": 0
-    }
+    "scope": "Read-only live verification. Source scan compares328 raw HTML SHA to stable local dist; release checks328 canonical metadata routes and118 raster SHA. Hosted responsive/type/touch are separate targeted checks. Broad617/price374 are local, not a hosted rerun.",
+    "retryHistory": [
+      {
+        "initialReport": "docs/national-stage-hosted-types-first-attempt-results.json",
+        "initialSummary": {
+          "checks": 52,
+          "passed": 50,
+          "failed": 2,
+          "regions": 24,
+          "locales": 2,
+          "imagesChecked": 103,
+          "screenshots": 4,
+          "pageErrors": 0,
+          "consoleErrors": 2
+        },
+        "reason": "One transient HTTP503 at EN Hiroshima caused the route failure and a dependent console-error check. No app change.",
+        "freshRecheck": "docs/national-stage-hosted-types-recheck-results.json",
+        "freshRecheckPassed": true,
+        "fullRerunReport": "docs/national-stage-hosted-types-results.json",
+        "finalSummary": {
+          "checks": 52,
+          "passed": 52,
+          "failed": 0,
+          "regions": 24,
+          "locales": 2,
+          "imagesChecked": 104,
+          "screenshots": 4,
+          "pageErrors": 0,
+          "consoleErrors": 0
+        }
+      }
+    ]
   },
   "security": {
+    "runtime": "24.22.3",
+    "dependencyAndWorkflowChanges": false,
     "review": "docs/security-review-v15.md",
     "evidence": "docs/security-review-v15.json",
-    "hostObservation": "docs/visual-mobile-stage-hosted-security-headers-results.json",
-    "node": "24.22.3",
-    "pnpm": "11.25.0",
-    "knownAdvisories": {
-      "info": 0,
-      "low": 0,
-      "moderate": 0,
-      "high": 0,
-      "critical": 0
-    },
-    "dependencies": 348,
-    "outboundRedirectAndDnsPinning": "implemented and tested using injected negative cases; no real private requests",
+    "currentCi": "Successful Actions runs existing runtime/dependency-audit/build gates; no fresh all-scope security certification claimed.",
     "hostAccountChangesPerformed": false,
-    "remaining": "Host response-header control, account MFA/branch/recovery administration and ongoing updates are not completed by this source change; these are separate from proven exploitable app flaws. No guarantee of all security.",
-    "preDeployHostObservation": "docs/security-host-observation-v15.json"
+    "remaining": "Host response-header control, account MFA/branch/recovery administration and commercial-host eligibility remain separate open work."
   },
   "advertising": {
     "adsense": "off",
@@ -332,51 +402,48 @@
   },
   "sourceDelivery": {
     "status": "verified",
-    "revision": "docs-017",
+    "revision": "national-018",
     "source": "../japanese-craft-jewelry-delivery/source",
     "zip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-source.zip",
-    "versionedZip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-source-0.15.0-docs-017.zip",
-    "proof": "../japanese-craft-jewelry-delivery/package-verification-0.15.0-docs-017.json",
-    "previousProofPreserved": "../japanese-craft-jewelry-delivery/package-verification-0.15.0.json",
-    "fileCount": 851,
-    "everyRepositoryFileSha256Checks": 851,
-    "everyFileSha256Checks": 851,
+    "versionedZip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-source-0.16.0-national-018.zip",
+    "proof": "../japanese-craft-jewelry-delivery/package-verification-0.16.0-national-018.json",
+    "zipHashLocation": "External revisioned package-verification JSON; never self-referenced inside ZIP",
+    "originals": {
+      "status": "verified",
+      "zip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-originals-0.16.0.zip",
+      "proof": "../japanese-craft-jewelry-delivery/originals-verification-0.16.0.json",
+      "fileCount": 26,
+      "pngCount": 23,
+      "acceptedPngs": 20,
+      "rejectedPngs": 3,
+      "bytes": 35561799,
+      "sha256": "383cf02e99cdf06d936118e9d071f35df68a1b99191de31442b7f450de386254",
+      "everyFileSha256Checks": 26,
+      "allFileHashesMatch": true
+    },
+    "fileCount": 971,
+    "everyRepositoryFileSha256Checks": 971,
+    "everyFileSha256Checks": 971,
     "repositoryAndExportFileSetsMatch": true,
     "sourceAndZipFileSetsMatch": true,
     "allFileHashesMatch": true,
-    "publicImages": 98,
-    "publishedProducts": 50,
+    "publicImages": 118,
+    "publishedProducts": 60,
     "retiredImagesExcluded": 10,
     "explicitExcludedEntries": 0,
-    "newImageGeneration": false,
-    "originals": "Existing0.14 originals ZIP retained separately",
+    "newImageGeneration": true,
     "publicOutputUnchangedSinceLocalBrowserChecks": true,
-    "zipHashLocation": "External revisioned package-verification JSON; not self-referenced inside ZIP",
-    "finalPass": "Completion notes included; repository/export/ZIP sets and every SHA rechecked.",
+    "finalPass": "Completion notes added after the first successful package; final export and all hashes checked again. ZIP bytes/hash are only in the external proof.",
     "limits": "File integrity and explicit excluded paths only; not a whole-history credential audit or app/AdSense/legal certification."
   },
+  "documentationRevision": "018",
   "limits": [
     "No physical iOS/Safari certification.",
-    "No guarantee of all vulnerabilities, legal/contract eligibility, search ranking/traffic, store stock or AdSense approval.",
+    "No guarantee of all vulnerabilities, legal/contract eligibility, search ranking/traffic, future store stock or AdSense approval.",
     "No application, registration, fees, DNS, migration or account-setting changes."
   ],
-  "priorTaskVersion": "0.14.0",
-  "refinement": {
-    "heading": "Scoped mobile text-wrap:balance; JA390 last line now6chars.",
-    "sourceNavigation": "Single owner for in-page source links, pushState avoids duplicate deferred hashchange opening; destination summary receives focus.",
-    "cssDelta": "docs/visual-mobile-stage-heading-build-delta.json",
-    "navigationDelta": "docs/visual-mobile-stage-source-nav-build-delta.json",
-    "broadQaPhase": "Local497/314/source248/Maps9/ads6 and hosted497 precede the heading and source-navigation refinements. Final local/public mobile92/touch4/race12/heading12 plus final release/source/type checks cover the final output. No facts/price/image/destination changes."
-  },
-  "documentationRevision": "017",
-  "maintenance": {
-    "revision": "017",
-    "recordedAt": "2026-11-17T06:47:24.570Z",
-    "scope": "AI handoff, human editing guides, reproducible checks and source packaging; app0.15.0 unchanged",
-    "implementationCommit": "918f1c1",
-    "validation": "docs/handoff-stage-validation-results.json",
-    "specification": "specs/017-maintainer-handoff/validation.md",
-    "applicationOutputSha256Matches": 369,
-    "publicDeploymentPerformed": false
+  "documentationVerification": {
+    "report": "docs/national-stage-docs-results.json",
+    "scope": "24 current maintainer/spec/research documents; local paths/anchors and command names only. External URLs counted, not fetched."
   }
 }

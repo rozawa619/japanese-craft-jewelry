@@ -1,9 +1,8 @@
 # 変更に合わせて検証する
 
-確認日：2026-11-17、作業版0.16.0・全国追加018。目的は、変更に必要な証拠を得て、過去の成功を今回の成功と混同しないこと。最初に[AI引継ぎ](ai-handoff.md)とAGENTS.mdを読む。公開と納品の確定値は[deployment-results.json](deployment-results.json)、実際の入力・対象・失敗は各JSONを正本とする。
+確認日：2026-11-17、公開版0.16.0・全国追加018。目的は、変更に必要な証拠を得て、過去の成功を今回の成功と混同しないこと。最初に[AI引継ぎ](ai-handoff.md)とAGENTS.mdを読む。公開と納品の確定値は[deployment-results.json](deployment-results.json)、実際の入力・対象・失敗は各JSONを正本とする。
 
-<!-- TODO_PUBLIC_V16: 0.16の公開確認後に次の配信状態を更新する。0.15の履歴はそのまま保持する。 -->
-0.16は作業/QA中。公開確認済みの基準は旧0.15のapp1f0021306e87ce9e7dc43bdf446cffedc59e4134・Actions44024678465であり、0.16のローカル検査を実公開成功として扱わない。
+0.16の公開appは`86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb`、[Actions44042180272](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44042180272) completed/success。更新は2026-11-17T07:54:26Z、API観測は07:54:34.367Z。下記の実公開検査はこのappを対象とし、旧0.15の検査や以後の文書commitと区別する。
 
 ## 変更別に検証を選ぶ
 
@@ -30,9 +29,9 @@
 
 ## 0.16の記録を読む
 
-[全国追加018](../specs/018-national-jewelry-expansion/)は10県の10商品を加える変更。作業台帳は公開対象60/全66商品・下書き6商品、24県、公開関連34技法（全36）、一次出典293件、33店舗/53商品の関連、人物58＋単体60の118画像。購入根拠は国内通販51商品、小売＋公式カタログ9商品であり、全品を通販在庫ありと読み替えない。
+[全国追加018](../specs/018-national-jewelry-expansion/)は10県の10商品を加える変更。台帳は公開60/全66商品・下書き6商品、24県、公開関連34技法（全36）、一次出典293件、33店舗/53商品の関連、人物58＋単体60の118画像。購入根拠は国内通販51商品、小売＋公式カタログ9商品であり、全品を通販在庫ありと読み替えない。
 
-今回の実測はnational-stageの記録と[verification.md](verification.md)で追う。公開前のローカル整合確認では型130ファイル・既存unit135・verify成功、stable dist344HTML/328canonical/118画像を確認した段階で、ブラウザーQA・実公開の成否は個別の最終記録で確かめる。旧0.15の497/314や14地域の画像検査件数を、拡張後の対象数・実行成功として転記しない。
+今回の実測はnational-stageの記録と[verification.md](verification.md)で追う。ローカルでは型130ファイル・既存unit135・verify成功、stable dist344HTML/328canonical/118画像を確認。実公開の[Source328/328HTML SHA](national-stage-hosted-sources-results.json)、[補足24/24と328正規URL・118画像SHA](national-stage-hosted-release-results.json)、[mobile92/92](national-stage-hosted-mobile-results.json)もすべて成功した。旧0.15の497/314や14地域の画像検査件数を、拡張後の対象数・実行成功として転記しない。
 
 単体画像は[共通reader](../scripts/lib/image-generation-manifests.mjs)が旧v14と新v16のmanifestを併読し、active registry全60商品の対応、重複、実ファイル、distのSHAを検査する。人物の新生成ログは単体ログと別資料。旧98画像の不変、新規23PNGの採用20・棄却3、公開118WebPの整合を分けて確認し、PNG原本を通常buildの入力にしない。
 

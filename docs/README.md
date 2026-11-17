@@ -1,9 +1,8 @@
 # 文書の入口
 
-作業版0.16.0・全国追加018（2026-11-17）。文書の入口は保守改訂017を引き継ぎます。この一覧の「現在の保守」が通常の入口で、過去の報告を新しい仕様・現在値として読む必要はありません。
+公開版0.16.0・全国追加018（2026-11-17）。文書の入口は保守改訂017を引き継ぎます。この一覧の「現在の保守」が通常の入口で、過去の報告を新しい仕様・現在値として読む必要はありません。
 
-<!-- TODO_PUBLIC_V16: 0.16公開確認後にこの配信状態を更新する。 -->
-0.16は作業/QA中です。公開確認済みの基準は旧0.15のapp1f0021306e87ce9e7dc43bdf446cffedc59e4134・Actions44024678465。ローカルの60公開対象/66登録商品・24県・118画像を、公開反映済みとは扱いません。
+公開appは86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb、[Actions44042180272](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44042180272) completed/success。60公開/66登録商品・24県・118画像を実公開し、[Source328HTML照合](national-stage-hosted-sources-results.json)・[公開補足24](national-stage-hosted-release-results.json)・[mobile92](national-stage-hosted-mobile-results.json)が成功しました。納品ZIPの確定状態は[deployment-results.json](deployment-results.json)を参照します。
 
 ## 現在の保守
 

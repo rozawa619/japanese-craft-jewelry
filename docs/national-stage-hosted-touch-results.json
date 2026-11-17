@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-11-17T08:01:17.680Z",
+  "origin": "https://rozawa619.github.io",
+  "base": "/japanese-craft-jewelry/",
+  "method": "Fresh Chrome mobile emulation at390x844, touch enabled and DPR2. Real tap events exercise menu, filter, language and source controls. This is not physical-device, Safari or iOS testing. Additional section screenshots support visual review only.",
+  "checks": [
+    {
+      "key": "ja-touch-navigation-filter-language-source",
+      "status": "passed",
+      "width": 390,
+      "height": 844,
+      "isMobile": true,
+      "hasTouch": true,
+      "deviceScaleFactor": 2,
+      "externalRequests": 0,
+      "pageErrors": 0,
+      "filteredProductCount": 1
+    },
+    {
+      "key": "en-touch-navigation-filter-language-source",
+      "status": "passed",
+      "width": 390,
+      "height": 844,
+      "isMobile": true,
+      "hasTouch": true,
+      "deviceScaleFactor": 2,
+      "externalRequests": 0,
+      "pageErrors": 0,
+      "filteredProductCount": 1
+    },
+    {
+      "key": "ja-supplemental-section-captures",
+      "status": "passed"
+    },
+    {
+      "key": "en-supplemental-section-captures",
+      "status": "passed"
+    }
+  ],
+  "failures": [],
+  "screenshots": [
+    "artifacts/national-stage-hosted-touch-ja-390-sources.png",
+    "artifacts/national-stage-hosted-touch-en-390-sources.png",
+    "artifacts/national-stage-hosted-touch-ja-home-kinds-320.png",
+    "artifacts/national-stage-hosted-touch-ja-region-choices-320.png",
+    "artifacts/national-stage-hosted-touch-ja-listing-heading-320.png",
+    "artifacts/national-stage-hosted-touch-en-home-kinds-320.png",
+    "artifacts/national-stage-hosted-touch-en-region-choices-320.png",
+    "artifacts/national-stage-hosted-touch-en-listing-heading-320.png"
+  ],
+  "completedAt": "2026-11-17T08:02:26.105Z",
+  "summary": {
+    "checks": 4,
+    "passed": 4,
+    "failed": 0,
+    "mobileTouchFlows": 2,
+    "screenshots": 8
+  }
+}
