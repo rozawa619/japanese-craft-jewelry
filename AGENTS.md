@@ -6,7 +6,7 @@
 
 1. README → docs/ai-handoff.md → docs/handoff.md → docs/architecture.md。
 2. Git checkoutならgit status --short、ZIPなら元ZIP/proofと別の作業用コピーを確認。package.json、docs/deployment-results.jsonを読み、公開app commitと文書/作業HEAD、最新ZIPを区別。ZIPに.gitがないことをエラーにしない。
-3. 現在の作業はspecs/019-geographic-discovery-map-privacy。直前の商品追加は018、引き継ぐUI/securityは016、保守文書の意図は017。必要な領域だけ過去仕様へ戻る。
+3. 現在の作業はspecs/020-direct-region-map。直前の地図/表示設定は019、商品追加は018、引き継ぐUI/securityは016、保守文書の意図は017。必要な領域だけ過去仕様へ戻る。
 4. docs/setup.mdでruntime/env/base/Chromeを確認。docsのJSONはbuild入力なので削除しない。
 5. 変更する正本を特定し、docs/verification-guide.mdで必要な検査を選び、実装と仕様・引継ぎを合わせる。
 
@@ -14,7 +14,7 @@
 
 - 運営者表示SORA、日本全国の工芸ジュエリーを選ぶJA/ENサイト。神奈川専用やiTOへ戻さない。
 - ブログ/Contact/販売・決済・発送の機能を作らず、不要な販売責任説明をUIに再導入しない。提供されていない氏名/住所/メールを作らない。
-- 0.17公開版は0.16の60公開/66登録・24県・34公開関連技法/全36・118AI画像を継承。固定上限や各県同数の条件ではない。地図47県の未掲載県は非リンクで、空の地域/技法やdraftの公開URLを作らない。
+- 作業版0.17.1は0.16の60公開/66登録・24県・34公開関連技法/全36・118AI画像を継承。固定上限や各県同数の条件ではない。地図47県の未掲載県は非リンクで、空の地域/技法やdraftの公開URLを作らない。
 - COCOON2/欠品18K/販売未確認の畠山2/hairpinはdraft。復帰には対象variantの現行購入根拠と派生参照の再確認が必要。403を閉店/売切れとしない。
 
 ## 正本と編集
@@ -28,8 +28,8 @@
 
 ## 画像とUI
 
-- 産地の共通入口はTOP10→日本地図→DISCOVER3県。観光TOP10順位は維持し、47県のCC0形状から実商品/産地本文のある掲載24県だけを選択可能にします。代表単体AI画像・商品名・国内参考価格を正本から表示し、select・地方別一覧・地図ジャンプも用意します。hoverだけに頼らず、タップ/keyboard/JSなしの通常リンクを保ちます。
-- [日本地図](docs/japan-map-v17.md)・[残タスク](docs/remaining-task-audit-v17.md)・[法務再確認](docs/legal-review-v17.md)・[商用ホスト移行準備](docs/commercial-host-migration-v17.md)を参照。対応ホスト向けpublic/_headersは移行準備です。現GitHub PagesのHTTPヘッダーを設定済みとはせず、実契約/本人情報/広告実ID・CMP/ドメイン・DNS/アカウント管理/検索実績を技術PASSで完了化しません。AdSense off・実提携未申請/通常URLを維持します。今回は新bitmapを生成せず0.16原本を保持。
+- ホーム先頭のHeroとは別に、産地一覧はTOP10→大きい日本地図→DISCOVER3県の順です。観光TOP10順位は維持し、47県のCC0形状から実商品/産地本文のある掲載24県だけを選択可能にします。県のクリック・タップ・Enterは、その産地の商品一覧へ直接進む通常リンクです。hover/focusと地域selectは代表単体AI画像・商品名・国内参考価格のプレビューに使います。地図は大きくし、100/150/200/300%の拡大・縮小・全体表示と、拡大後の地図内スクロールを用意。地方別一覧・地図ジャンプ・JSなしの直接リンクも保ちます。
+- [日本地図の直接選択](docs/japan-map-direct-v18.md)・[残タスク](docs/remaining-task-audit-v17.md)・[法務再確認](docs/legal-review-v17.md)・[商用ホスト移行準備](docs/commercial-host-migration-v17.md)を参照。対応ホスト向けpublic/_headersは移行準備です。現GitHub PagesのHTTPヘッダーを設定済みとはせず、実契約/本人情報/広告実ID・CMP/ドメイン・DNS/アカウント管理/検索実績を技術PASSで完了化しません。AdSense off・実提携未申請/通常URLを維持します。今回は新bitmapを生成せず0.16原本を保持。
 
 - 公式写真を許可なく取得/転載/hotlink/生成入力へ転用しない。AI図は実物写真・完全なSKU再現・金具/個数・装着実績の証拠ではない。
 - 人物editorial-imagesと単体product-detail-images、権利docs/assets、生成記録を分離。0.16の新規生成記録はimage-generation-v16とimage-generation-solo-v16。単体readerは旧v14＋新v16を併読し、旧記録を上書きしない。画像必須の公開gateをtext previewだけで迂回しない。
@@ -50,9 +50,12 @@
 
 ## 検証・完了の記録
 
-0.17.0（仕様019）は公開・実URL確認済みです。app `b8edee4e26c92a9a62c9133bf432aecc4666199a`、[Actions44051153186](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44051153186) completed/success（2026-11-17T08:58:25Z更新、08:58:40.558ZにAPI観測）。公開Source328HTML SHA・補足24（328正規URL/118画像SHA）・日本地図193・表示設定22・mobile92が成功しました。詳細と最新納品状態はdeployment-resultsを正本にします。
+<!-- TODO_PUBLIC_V18 -->
+0.17.1（仕様020）は公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
 
-- 0.16のnational-stageは当時の証跡。019の新地図/保存方式を旧検査で合格にしない。最新の実測は019 validation・deployment-results・verificationを確認する。
+PCのホーム先頭は左の人物AI画像・右の日本地図を並べるRegionHeroです。スマホでは写真を全幅で大きく表示し、その下に商品小情報と地図を並べて、顔や耳を切らずに見やすくします。Heroの県はclick/tap/Enter/Spaceで明示選択すると、女性画像と商品/国内参考価格を切り替え、産地CTAから商品一覧へ進みます。hover/focusだけでは切り替えません。有効な公開地域idだけを`?region=`へ反映し、他query/hash・戻る・言語切替で選択を保ちます。Heroとは別に、TOP10後の大きい一覧地図は県のnative直接リンクです。TOP10の人物AI画像はPC180px・狭幅110px/98pxのコンパクトな枠を基本にcontainで表示し、地域名/商品/価格/順位を保ちます。顔や耳を切らず、初期Heroは既存selection.heroProductIdを使います。これらは機能・表示の変更であり、訪問数や検索順位の改善を実測したという意味ではありません。
+
+- 0.17.0のdiscovery-map-stageは当時の証跡。020の直接クリック/拡大を旧193件のpreview操作で合格にしない。最新の実測は020 validation・click-map-stage・deployment-results・verificationを確認する。
 
 - JSON/広告変更はpnpm verify。文言/画面は影響とriskに応じたtype/build/JAEN/mobile等。docs-onlyに497全走査を要求せず、リンク/コマンド/整合と必要なbuildを確認する。
 - build中に共有distへbrowser検査しない。ローカル/公開/途中/最終を区別し、CHECK_REPORT_PATH等を作業固有名へ。0.15の既存証跡を上書きしない。

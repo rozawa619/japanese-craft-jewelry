@@ -1,0 +1,43 @@
+{
+  "version": "0.17.1",
+  "checkedAt": "2026-11-17T10:19:55.654Z",
+  "status": "passed",
+  "baseline": "docs/discovery-map-stage-build-manifest.json",
+  "protectedSourceSha256Checks": 22,
+  "protectedSources": [
+    "src/data/catalog.json",
+    "src/data/translations/ja.json",
+    "src/data/product-stories.json",
+    "src/data/selection-notes.json",
+    "src/data/product-buying-guides.json",
+    "src/data/region-choice-notes.json",
+    "src/data/purchase-evidence.json",
+    "src/data/visits.json",
+    "src/data/editorial-images.json",
+    "src/data/product-detail-images.json",
+    "docs/research/sources.json",
+    "docs/assets.json",
+    "docs/image-generation-v16.json",
+    "docs/image-generation-solo-v16.json",
+    "src/lib/store-map-embeds.ts",
+    "src/components/VisitGuide.astro",
+    "src/components/MapPreferences.astro",
+    "src/lib/map-preferences.ts",
+    "src/lib/map-preferences-client.ts",
+    "src/lib/map-embed-url.ts",
+    "src/content/policies/privacy.md",
+    "src/content/policies/ja/privacy.md"
+  ],
+  "unchangedImageSha256Checks": 118,
+  "outputFiles": 471,
+  "changedOutputFiles": 344,
+  "changedHtmlFiles": 344,
+  "addedOutputPaths": [
+    "_astro/index.B5L8Qs07.css",
+    "_astro/RegionSelection.Co798kW0.css"
+  ],
+  "removedOutputPaths": [
+    "_astro/RegionSelection.BFXvAOLH.css"
+  ],
+  "scope": "Product facts/copy/prices/sources/official visits/Google map preference and Privacy inputs are byte-identical to0.17, and118 image bytes match. Astro rebuilds shared stylesheet references and CSP hash allowlists, so changed HTML hashes across routes are not described as byte-identical. Final route/browser/HTML checks verify the new output."
+}

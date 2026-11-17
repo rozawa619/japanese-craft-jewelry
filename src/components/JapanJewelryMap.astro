@@ -31,16 +31,17 @@ const areas=japanMapAreas.flatMap(area=>{const items=area.prefectures.flatMap(pr
 const uid=id+'-japan-map';
 ---
 <section class="jewelry-map" id={uid} data-japan-map aria-labelledby={uid+'-heading'} tabindex="-1">
- <header class="map-heading"><p class="eyebrow">{t(locale,'FIND YOUR PLACE ON THE MAP','地図で見つける、旅先のひとつ')}</p><h3 id={uid+'-heading'}>{t(locale,'Where in Japan are you going?','日本の「ここ」へ行くなら。')}</h3><p>{t(locale,'Hover over or select a highlighted prefecture to see a piece from that place. Tap on mobile, then open its selection.','色の付いた都道府県にカーソルを合わせるか、タップすると、その土地の一品が見られます。気になったら、産地の商品へ。')}</p></header>
+ <header class="map-heading"><p class="eyebrow">{t(locale,'FIND YOUR PLACE ON THE MAP','地図で見つける、旅先のひとつ')}</p><h3 id={uid+'-heading'}>{t(locale,'Where in Japan are you going?','日本の「ここ」へ行くなら。')}</h3><p>{t(locale,'Click or tap a highlighted prefecture to open its jewelry selection. Hover to preview a piece; zoom in to choose smaller areas.','色の付いた都道府県をクリック・タップすると、その産地の商品へ進みます。小さな県は地図を拡大して選べます。')}</p></header>
  <div class="map-layout">
   <div class="map-geography">
    <div class="map-legend"><span><i class="map-legend-available"></i>{t(locale,'Jewelry to explore','掲載商品がある産地')}</span><span><i></i>{t(locale,'Not featured yet','未掲載の産地')}</span></div>
-   <svg viewBox={geometry.viewBox} class="map-svg" role="group" aria-label={t(locale,'Map of Japan’s prefectures. Highlighted destinations have published jewelry.','日本の都道府県地図。色の付いた産地でジュエリーを紹介しています。')} data-japan-map-svg>
+   <div class="map-zoom-controls" data-map-zoom-controls hidden aria-label={t(locale,'Map zoom','日本地図の拡大・縮小')}><button type="button" data-map-zoom-out aria-controls={uid+'-viewport'} aria-label={t(locale,'Zoom out','地図を縮小')}>−</button><output data-map-zoom-status aria-live="polite">100%</output><button type="button" data-map-zoom-in aria-controls={uid+'-viewport'} aria-label={t(locale,'Zoom in','地図を拡大')}>＋</button><button type="button" data-map-zoom-reset aria-controls={uid+'-viewport'}>{t(locale,'Fit Japan','全体表示')}</button><span>{t(locale,'Scroll to move around when zoomed in.','拡大後は地図の中をスクロールできます。')}</span></div>
+   <div class="map-viewport" id={uid+'-viewport'} data-map-viewport data-map-zoom="1" tabindex="0" role="region" aria-label={t(locale,'Japan map. Scroll to move around when zoomed in.','日本地図。拡大時は上下左右にスクロールできます。')}><div class="map-drawing" data-map-drawing><svg viewBox={geometry.viewBox} class="map-svg" role="group" aria-label={t(locale,'Map of Japan’s prefectures. Highlighted destinations have published jewelry.','日本の都道府県地図。色の付いた産地でジュエリーを紹介しています。')} data-japan-map-svg>
     {geometry.prefectures.map(prefecture=>{
      const region=available.get(prefecture.id);
-     return region?<a href={region.url} data-map-choice={region.id} data-map-code={prefecture.code} aria-label={t(locale,`Preview ${region.name}, ${region.countLabel}`,`${region.name}、${region.countLabel}をプレビュー`)} aria-current={region.id===first.id?'true':undefined}><title>{region.name}</title><path d={prefecture.d}/></a>:<path d={prefecture.d} class="map-unlisted" data-map-unlisted={prefecture.id}><title>{prefecture.name[locale]} — {t(locale,'not featured yet','未掲載')}</title></path>;
+     return region?<a href={region.url} data-map-choice={region.id} data-map-code={prefecture.code} aria-label={t(locale,`Explore jewelry from ${region.name}, ${region.countLabel}`,`${region.name}の商品を見る、${region.countLabel}`)} aria-current={region.id===first.id?'true':undefined}><title>{region.name}</title><path d={prefecture.d}/></a>:<path d={prefecture.d} class="map-unlisted" data-map-unlisted={prefecture.id}><title>{prefecture.name[locale]} — {t(locale,'not featured yet','未掲載')}</title></path>;
     })}
-   </svg>
+   </svg></div></div>
    <p class="map-overview-note">{t(locale,'An overview for finding destinations, not a navigation map.','旅先を探すための略図です。')}</p>
   </div>
   <div class="map-selection-column">
@@ -85,30 +86,43 @@ const uid=id+'-japan-map';
   }
   root.querySelector<HTMLElement>('[data-map-select-field]')?.removeAttribute('hidden');
   root.dataset.mapEnhanced='true';
-  function revealPreview(){
-   // A tap on the tall mobile map should reveal its result. Hover and focus
-   // only change the preview; they never move the reader's scroll position.
-   if(window.matchMedia('(max-width:620px)').matches)preview?.scrollIntoView({block:'nearest',inline:'nearest',behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
-  }
   root.querySelectorAll<SVGAElement>('[data-map-choice]').forEach(control=>{
    const id=control.dataset.mapChoice;if(!id)return;
    control.addEventListener('pointerenter',event=>{if(event.pointerType!=='touch')choose(id)});
    control.addEventListener('focus',()=>choose(id));
-   control.addEventListener('click',event=>{if(event.ctrlKey||event.metaKey||event.altKey||event.shiftKey||event.button!==0)return;event.preventDefault();choose(id);revealPreview()});
-   control.addEventListener('keydown',event=>{if(event.key===' '){event.preventDefault();choose(id);revealPreview()}});
+   // Keep the real href: one click/tap/Enter opens the selected region.
   });
   select.addEventListener('change',()=>choose(select.value));
+  const viewport=root.querySelector<HTMLElement>('[data-map-viewport]');
+  const drawing=root.querySelector<HTMLElement>('[data-map-drawing]');
+  const controls=root.querySelector<HTMLElement>('[data-map-zoom-controls]');
+  const zoomIn=root.querySelector<HTMLButtonElement>('[data-map-zoom-in]');
+  const zoomOut=root.querySelector<HTMLButtonElement>('[data-map-zoom-out]');
+  const reset=root.querySelector<HTMLButtonElement>('[data-map-zoom-reset]');
+  const zoomStatus=root.querySelector<HTMLOutputElement>('[data-map-zoom-status]');
+  if(viewport&&drawing&&controls&&zoomIn&&zoomOut&&reset&&zoomStatus){
+   const scales=[1,1.5,2,3];let index=0;
+   function zoom(next:number){
+    if(!viewport||!drawing||!zoomIn||!zoomOut||!zoomStatus)return;
+    const previous=scales[index],centerX=(viewport.scrollLeft+viewport.clientWidth/2)/previous,centerY=(viewport.scrollTop+viewport.clientHeight/2)/previous;
+    index=Math.max(0,Math.min(scales.length-1,next));const scale=scales[index];
+    drawing.style.width=String(scale*100)+'%';drawing.style.height=String(scale*100)+'%';viewport.dataset.mapZoom=String(scale);
+    viewport.scrollTo({left:index?centerX*scale-viewport.clientWidth/2:0,top:index?centerY*scale-viewport.clientHeight/2:0,behavior:'instant'});
+    zoomIn.disabled=index===scales.length-1;zoomOut.disabled=index===0;zoomStatus.textContent=String(scale*100)+'%';
+   }
+   zoomIn.addEventListener('click',()=>zoom(index+1));zoomOut.addEventListener('click',()=>zoom(index-1));reset.addEventListener('click',()=>zoom(0));controls.hidden=false;zoom(0);
+  }
  });
 </script>
 <style>
  .jewelry-map{margin-block:60px;padding:36px;border:1px solid var(--line);background:#eeeee5;scroll-margin-top:28px}
  .map-heading h3{font-size:clamp(26px,3.2vw,40px);line-height:1.4;margin:12px 0 17px;text-wrap:balance}
  .map-heading>p:last-child{max-width:780px;font-size:13px;line-height:1.9;margin:0;color:var(--muted)}
- .map-layout{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.85fr);gap:38px;align-items:center;margin-top:28px}
- .map-geography,.map-selection-column{min-width:0}
+ .map-layout{display:grid;grid-template-columns:minmax(0,2.3fr) minmax(240px,.8fr);gap:28px;align-items:start;margin-top:28px}
+ .map-geography,.map-selection-column{min-width:0}.map-geography{width:100%;max-width:760px;justify-self:center}
  .map-legend{display:flex;gap:15px;flex-wrap:wrap;font-size:11px;line-height:1.8;justify-content:center;color:var(--muted)}
  .map-legend span{display:inline-flex;align-items:center;gap:7px}.map-legend i{display:inline-block;width:11px;height:11px;background:#dcdcd3;border:1px solid #c2c5bb}.map-legend i.map-legend-available{background:#637d72;border-color:#637d72}
- .map-svg{display:block;width:100%;max-height:560px;aspect-ratio:437.33432/516.01587;margin:12px auto 0;overflow:visible}
+ .map-viewport{width:100%;aspect-ratio:437.33432/516.01587;max-height:900px;overflow:auto;overscroll-behavior:contain;scroll-behavior:auto;touch-action:pan-x pan-y pinch-zoom;border:1px solid transparent}.map-viewport:focus-visible{outline:2px solid var(--accent);outline-offset:3px}.map-drawing{width:100%;height:100%}.map-svg{display:block;width:100%;height:100%;max-width:none;margin:0;overflow:visible}.map-zoom-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:14px 0 12px}.map-zoom-controls button{min-width:44px;min-height:44px;padding:8px 12px;font:inherit;font-size:14px;background:var(--paper);color:var(--forest);border:1px solid var(--line);cursor:pointer}.map-zoom-controls button:disabled{opacity:.45;cursor:default}.map-zoom-controls button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}.map-zoom-controls output{min-width:44px;text-align:center;font-size:12px}.map-zoom-controls>span{font-size:11px;color:var(--muted);line-height:1.7}
  .map-svg path{stroke:#eeeee5;stroke-width:.75;stroke-linejoin:round;vector-effect:non-scaling-stroke}.map-svg a{fill:#637d72;cursor:pointer;outline:none}.map-svg a:hover,.map-svg a:focus-visible,.map-svg a[aria-current=true]{fill:#a86042;stroke:var(--ink)}.map-svg a:focus-visible path{stroke:var(--ink);stroke-width:2}.map-svg .map-unlisted{fill:#dcdcd3}
  .map-overview-note{font-size:10px;line-height:1.7;text-align:center;color:var(--muted);margin:4px 0 0}
  .map-select-field{margin-bottom:16px}.map-select-field label{display:block;font-size:11px;margin-bottom:7px}.map-select-field select{display:block;width:100%;min-height:46px;min-width:0;border:1px solid var(--muted);border-radius:0;background:var(--paper);color:var(--ink);font:16px/1.5 var(--sans);padding:9px 32px 9px 11px}
@@ -118,7 +132,7 @@ const uid=id+'-japan-map';
  .map-destination-link{display:flex;justify-content:space-between;align-items:center;gap:15px;text-decoration:none;background:var(--forest);color:var(--paper);font-size:12px;line-height:1.7;min-height:48px;padding:11px 15px}.map-destination-link:hover{background:#354a41}
  .map-destination-list{margin-top:30px;border-top:1px solid var(--line);padding-top:9px}.map-destination-list summary{cursor:pointer;min-height:46px;align-content:center;font-size:12px;padding:10px 0;line-height:1.8}.map-area-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:16px}.map-area-list h4{font:16px/1.6 var(--serif);margin:0 0 10px}.map-area-list ul{list-style:none;padding:0;margin:0}.map-area-list li+li{border-top:1px solid var(--line)}.map-area-list a{display:flex;align-items:center;gap:8px;min-height:46px;font-size:12px;line-height:1.6;text-decoration:none;padding:8px 0}.map-area-list a:hover{text-decoration:underline}.map-area-list a>span:first-child{flex:1}.map-area-list small{font-size:10px;color:var(--muted)}
  .map-preview a:focus-visible,.map-destination-list a:focus-visible,.map-destination-list summary:focus-visible,.map-select-field select:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
- @media(max-width:900px){.jewelry-map{padding:26px}.map-layout{gap:24px;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}.map-preview{padding:17px}.map-preview h4{font-size:29px}.map-area-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
- @media(max-width:620px){.jewelry-map{margin-block:36px;padding:20px 16px}.map-heading h3{font-size:27px}.map-heading>p:last-child{font-size:12px}.map-layout{grid-template-columns:1fr;gap:20px;margin-top:20px}.map-svg{max-height:420px}.map-legend{font-size:10px;gap:11px}.map-selection-column{display:grid;gap:0}.map-select-field{margin-bottom:14px}.map-preview{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);column-gap:16px;padding:16px}.map-preview-meta{grid-column:1/-1}.map-preview h4{font-size:29px;margin-bottom:7px}.map-preview-crafts{margin-bottom:15px}.map-preview-image{grid-column:1;grid-row:2/4;align-self:start}.map-preview img{aspect-ratio:1}.map-preview-title{grid-column:2;margin:0 0 7px;font-size:15px}.map-preview-price{grid-column:2;font-size:12px;align-self:start;margin-bottom:14px}.map-destination-link{grid-column:1/-1;margin-top:16px;font-size:12px}.map-area-list{column-gap:18px;row-gap:20px}.map-area-list h4{font-size:15px}.map-area-list a{font-size:11px;flex-wrap:wrap}.map-area-list small{font-size:9px}.map-destination-list{margin-top:24px}}
- @media(max-width:360px){.jewelry-map{padding-inline:12px}.map-heading h3{font-size:24px}.map-preview{padding:13px;column-gap:12px}.map-preview-title{font-size:14px}.map-area-list{grid-template-columns:1fr}.map-svg{max-height:380px}}
+ @media(max-width:900px){.jewelry-map{padding:26px}.map-layout{gap:24px;grid-template-columns:minmax(0,1.8fr) minmax(220px,.85fr)}.map-preview{padding:17px}.map-preview h4{font-size:29px}.map-area-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+ @media(max-width:740px){.jewelry-map{margin-block:36px;padding:20px 16px}.map-heading h3{font-size:27px}.map-heading>p:last-child{font-size:12px}.map-layout{grid-template-columns:1fr;gap:20px;margin-top:20px}.map-geography{max-width:620px}.map-viewport{max-height:740px}.map-legend{font-size:10px;gap:11px}.map-selection-column{display:grid;gap:0}.map-select-field{margin-bottom:14px}.map-preview{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);column-gap:16px;padding:16px}.map-preview-meta{grid-column:1/-1}.map-preview h4{font-size:29px;margin-bottom:7px}.map-preview-crafts{margin-bottom:15px}.map-preview-image{grid-column:1;grid-row:2/4;align-self:start}.map-preview img{aspect-ratio:1}.map-preview-title{grid-column:2;margin:0 0 7px;font-size:15px}.map-preview-price{grid-column:2;font-size:12px;align-self:start;margin-bottom:14px}.map-destination-link{grid-column:1/-1;margin-top:16px;font-size:12px}.map-area-list{column-gap:18px;row-gap:20px}.map-area-list h4{font-size:15px}.map-area-list a{font-size:11px;flex-wrap:wrap}.map-area-list small{font-size:9px}.map-destination-list{margin-top:24px}}
+ @media(max-width:360px){.jewelry-map{padding-inline:12px}.map-heading h3{font-size:24px}.map-preview{padding:13px;column-gap:12px}.map-preview-title{font-size:14px}.map-area-list{grid-template-columns:1fr}.map-zoom-controls{gap:6px}.map-zoom-controls>span{width:100%}}
 </style>

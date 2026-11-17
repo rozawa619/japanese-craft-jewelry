@@ -1,0 +1,21 @@
+# 設計と実装範囲
+
+正本はsrc/components/JapanJewelryMap.astro。CC0由来の地理JSON、catalog/画像/価格・地域分類、RegionSelectionの順序設定は変更せず、表示とブラウザー操作を調整する。Google店舗地図のiframe/30日設定とは別の機能。
+
+県のSVG aへ既存の地域hrefを残し、hover/focusはchooseでpreviewを更新する。click/Enterはブラウザー標準遷移に任せ、旧preview scrollとclick preventDefaultを削除する。地域selectは文脈を勝手に変えずpreviewだけを更新する。
+
+地図側の列を広げ、最大760px幅/900px高を上限として画面に合わせる。旧max-height560pxでの縮小を解除し、viewportとdrawingを分ける。100/150/200/300%はdrawingだけの大きさで制御し、拡大時はviewport内でpanする。拡大/縮小は中央を保ち、全体表示で倍率とscroll位置を初期化する。URL・地理情報・商品事実をzoomに複製しない。
+
+実サイズとスクロール境界は安定buildのChromeで確認する。小さな県は実際のpath内の座標で通常click/touchを行い、遷移先と商品一覧を確認する。QA sourceとreportはclick-map-stageへ分離。buildはrootが一度ずつ行い、ブラウザー検証中にdist/アプリ入力を変えない。
+
+詳細な保守説明はdocs/japan-map-direct-v18.md。旧019/0.17.0の調査・ライセンス・失敗raw/実測を保持し、今回の実測とは区別する。
+
+## ホームHeroの追加設計
+
+RegionHero.astroへ初期画像/商品、24地域のモデル/商品/価格とSVG選択を分離。home indexの旧Heroだけを置換し、既存商品/地域JSON・画像bytes・Google店舗地図の同意codeには触れない。初期はselection.heroProductId、その他はregionalRepresentativesまたは地域の公開編集順先頭。本文のある産地と人物画像の対応を確認してから描画する。
+
+HeroのSVG aはJSなしでは通常の地域href。JS有効時だけrole=button/aria-pressedと明示入力を用い、画像/商品カードを切り替える。大きい一覧地図は引き続きnative直接リンクである。県別カードを共通MarketPriceでserver生成して選択した1件だけ表示し、価格/通貨/日付/単位の手作業更新漏れを避ける。人物figureのasset id/preserveRatioとimg属性は同時に更新する。
+
+region queryはMapに登録された公開idのみを受け付け、他query/hashとhistory.stateを保ったreplaceStateを使う。popstateで復元、不正idは既定へ戻しregionだけ除去する。言語切替の既存処理は変更しない。Heroにはzoom/外部API/現在地/Storageを追加しない。
+
+Heroの480px以下はresponsive例外としてmodel-panelをdisplay:contentsにし、写真を全幅180〜200px高の1行目、商品小情報左/地図右を2行目へ配置する。元3:2画像を細い列の高い枠へ入れたletterboxを減らし、containとAIcaptionを保つ。PCは左写真/右地図を維持。mobileのwrapperはboxを持たないため、検証は実際の画像frameとmap-panelを測る。

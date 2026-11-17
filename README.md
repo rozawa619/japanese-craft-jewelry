@@ -20,19 +20,22 @@ AIは最初に[AGENTS.md](AGENTS.md)を読みます。過去の会話がなく�
 
 ## 現在の基準
 
-公開版0.17.0・産地地図/地図表示設定019、2026-11-17。台帳は0.16から公開60/登録66商品・下書き6、24県、公開関連34技法（全36）、一次出典293、33店舗/53商品、人物58＋単体60の118画像を継承します。今後の件数上限ではありません。公開/納品の確定値は[deployment-results](docs/deployment-results.json)、実測は[verification](docs/verification.md)を正本にします。
+作業版0.17.1・日本地図拡大/直接選択020、2026-11-17。台帳は0.16から公開60/登録66商品・下書き6、24県、公開関連34技法（全36）、一次出典293、33店舗/53商品、人物58＋単体60の118画像を継承します。今後の件数上限ではありません。公開/納品の確定値は[deployment-results](docs/deployment-results.json)、実測は[verification](docs/verification.md)を正本にします。
 
-0.17.0（仕様019）は公開・実URL確認済みです。app `b8edee4e26c92a9a62c9133bf432aecc4666199a`、[Actions44051153186](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44051153186) completed/success（2026-11-17T08:58:25Z更新、08:58:40.558ZにAPI観測）。公開Source328HTML SHA・補足24（328正規URL/118画像SHA）・日本地図193・表示設定22・mobile92が成功しました。詳細と最新納品状態はdeployment-resultsを正本にします。
+<!-- TODO_PUBLIC_V18 -->
+0.17.1（仕様020）は公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
 
-産地の共通入口はTOP10→日本地図→DISCOVER3県。観光TOP10順位は維持し、47県のCC0形状から実商品/産地本文のある掲載24県だけを選択可能にします。代表単体AI画像・商品名・国内参考価格を正本から表示し、select・地方別一覧・地図ジャンプも用意します。hoverだけに頼らず、タップ/keyboard/JSなしの通常リンクを保ちます。
+PCのホーム先頭は左の人物AI画像・右の日本地図を並べるRegionHeroです。スマホでは写真を全幅で大きく表示し、その下に商品小情報と地図を並べて、顔や耳を切らずに見やすくします。Heroの県はclick/tap/Enter/Spaceで明示選択すると、女性画像と商品/国内参考価格を切り替え、産地CTAから商品一覧へ進みます。hover/focusだけでは切り替えません。有効な公開地域idだけを`?region=`へ反映し、他query/hash・戻る・言語切替で選択を保ちます。Heroとは別に、TOP10後の大きい一覧地図は県のnative直接リンクです。TOP10の人物AI画像はPC180px・狭幅110px/98pxのコンパクトな枠を基本にcontainで表示し、地域名/商品/価格/順位を保ちます。顔や耳を切らず、初期Heroは既存selection.heroProductIdを使います。これらは機能・表示の変更であり、訪問数や検索順位の改善を実測したという意味ではありません。
+
+ホーム先頭のHeroとは別に、産地一覧はTOP10→大きい日本地図→DISCOVER3県の順です。観光TOP10順位は維持し、47県のCC0形状から実商品/産地本文のある掲載24県だけを選択可能にします。県のクリック・タップ・Enterは、その産地の商品一覧へ直接進む通常リンクです。hover/focusと地域selectは代表単体AI画像・商品名・国内参考価格のプレビューに使います。地図は大きくし、100/150/200/300%の拡大・縮小・全体表示と、拡大後の地図内スクロールを用意。地方別一覧・地図ジャンプ・JSなしの直接リンクも保ちます。
 
 Googleマップは初回の明示許可後、日英・全店舗で30日間自動表示します。未選択/拒否/期限切れではGoogle通信0、オフ操作で全iframeを停止。localStorageには地図専用choice/version/savedAt/expiresAtだけを保存し、不正/旧版の値は削除し、有効期限30日を過ぎた値は次の読込/再表示時に削除します。保存不可はページ限りです。複数タブ/戻る/再訪でも撤回を尊重します。PC330px/スマホ280pxの枠高を基本に、Google帰属・fullscreen・公式/外部リンクを保ちます。地図設定版maps-v17と広告Privacy版v14は別で、地図設定は広告同意/CMPではありません。
 
 日英は同じページ/query/hashへ切替可能。国内JPYと海外実価格は別市場で、為替換算しません。出典/dateは閉じた一覧、画像はAIイメージです。実物写真・試着の証拠にはしません。
 
-[日本地図](docs/japan-map-v17.md)・[残タスク](docs/remaining-task-audit-v17.md)・[法務再確認](docs/legal-review-v17.md)・[商用ホスト移行準備](docs/commercial-host-migration-v17.md)を同梱。対応ホスト向けpublic/_headersは移行準備です。現GitHub PagesのHTTPヘッダーを設定済みとはせず、実契約/本人情報/広告実ID・CMP/ドメイン・DNS/アカウント管理/検索実績を技術PASSで完了化しません。AdSense off・実提携未申請/通常URLを維持します。
+[日本地図の直接選択](docs/japan-map-direct-v18.md)・[残タスク](docs/remaining-task-audit-v17.md)・[法務再確認](docs/legal-review-v17.md)・[商用ホスト移行準備](docs/commercial-host-migration-v17.md)を同梱。対応ホスト向けpublic/_headersは移行準備です。現GitHub PagesのHTTPヘッダーを設定済みとはせず、実契約/本人情報/広告実ID・CMP/ドメイン・DNS/アカウント管理/検索実績を技術PASSで完了化しません。AdSense off・実提携未申請/通常URLを維持します。
 
-0.17用の予定版付きZIPは`japanese-craft-jewelry-source-0.17.0-geo-019.zip`、外部proofは`package-verification-0.17.0-geo-019.json`です。最終状態はdeployment-resultsのsourceDeliveryと外部proofを参照し、予定名だけで完成としません。今回新bitmap生成なし。0.16の118WebPと元PNG23枚（採用20・棄却3）/生成記録/別ZIPを保持し、旧原本を上書きしません。
+0.17.1用の版付きZIP名は`japanese-craft-jewelry-source-0.17.1-direct-020.zip`、外部proof名は`package-verification-0.17.1-direct-020.json`です。最終状態はdeployment-resultsのsourceDeliveryと外部proofを参照し、予定名だけで完成としません。今回新bitmap生成なし。0.16の118WebPと元PNG23枚（採用20・棄却3）/生成記録/別ZIPを保持し、旧原本を上書きしません。
 
 ## まず起動する
 

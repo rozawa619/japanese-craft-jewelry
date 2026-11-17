@@ -1,8 +1,11 @@
 # 構成とデータの流れ
 
-対象は公開版0.17.0・産地地図/地図表示設定019、文書の入口は保守改訂017を継承。確認日2026-11-17。
+対象は作業版0.17.1・日本地図拡大/直接選択020、文書の入口は保守改訂017を継承。確認日2026-11-17。
 
-0.17.0（仕様019）は公開・実URL確認済みです。app `b8edee4e26c92a9a62c9133bf432aecc4666199a`、[Actions44051153186](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44051153186) completed/success（2026-11-17T08:58:25Z更新、08:58:40.558ZにAPI観測）。公開Source328HTML SHA・補足24（328正規URL/118画像SHA）・日本地図193・表示設定22・mobile92が成功しました。詳細と最新納品状態はdeployment-resultsを正本にします。
+<!-- TODO_PUBLIC_V18 -->
+0.17.1（仕様020）は公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
+
+PCのホーム先頭は左の人物AI画像・右の日本地図を並べるRegionHeroです。スマホでは写真を全幅で大きく表示し、その下に商品小情報と地図を並べて、顔や耳を切らずに見やすくします。Heroの県はclick/tap/Enter/Spaceで明示選択すると、女性画像と商品/国内参考価格を切り替え、産地CTAから商品一覧へ進みます。hover/focusだけでは切り替えません。有効な公開地域idだけを`?region=`へ反映し、他query/hash・戻る・言語切替で選択を保ちます。Heroとは別に、TOP10後の大きい一覧地図は県のnative直接リンクです。TOP10の人物AI画像はPC180px・狭幅110px/98pxのコンパクトな枠を基本にcontainで表示し、地域名/商品/価格/順位を保ちます。顔や耳を切らず、初期Heroは既存selection.heroProductIdを使います。これらは機能・表示の変更であり、訪問数や検索順位の改善を実測したという意味ではありません。
 
 このサイトは、日本各地の工芸ジュエリーを日英で紹介するAstroの静的サイトです。商品や価格をファイルで編集し、検証してHTMLを生成します。公開先にNodeのアプリサーバー、DB、管理画面、注文・決済APIはありません。Nodeは開発・検証・静的生成のために使います。
 
@@ -104,7 +107,8 @@ specs/               仕様・設計・タスク・検証の対応
 | 出典リンクと開閉 | `Sources.astro` | native detailsとanchorを維持し、明示リンクを一度だけ処理 |
 | 下部の購入CTA | 商品templateのscript | 主CTAやfooterの位置・狭幅に応じて表示。購入市場は共通部品に任せる |
 | 地図の表示/全停止 | map-preferences-client.ts・VisitGuide・MapPreferences | 初回許可後30日自動表示。未選択/拒否/期限切れではiframeなし、全撤回/旧版/不正/保存不可も確認 |
-| 全国地図のpreview | JapanJewelryMap.astro | hover/focus/tap/select、代表単体画像/価格、地方一覧とJSなしの通常リンク |
+| ホームのモデル/地図Hero | RegionHero.astro・home index | 明示選択だけで人物と1件の価格カードを切替。公開region queryを復元し、他query/hash/言語切替を保持 |
+| 全国地図の直接選択とpreview | JapanJewelryMap.astro | 県のnative hrefで直接移動。hover/focus/selectで代表単体画像/価格、ローカルzoom/内部scroll、地方一覧とJSなしの直接リンク |
 | 横スクロール表等の補助 | `Base.astro`の共通script | 画面/キーボードの操作を補助。商品事実を再計算しない |
 
 通常の紹介・公式リンク・native detailsはJSなしでも使えます。JSなしの絞込や地図表示には制約があるため、各ページの説明と通常リンクを残します。
@@ -123,9 +127,9 @@ specs/               仕様・設計・タスク・検証の対応
 
 ## 全国地図と現在の入口
 
-産地の共通入口はTOP10→日本地図→DISCOVER3県。観光TOP10順位は維持し、47県のCC0形状から実商品/産地本文のある掲載24県だけを選択可能にします。代表単体AI画像・商品名・国内参考価格を正本から表示し、select・地方別一覧・地図ジャンプも用意します。hoverだけに頼らず、タップ/keyboard/JSなしの通常リンクを保ちます。
+ホーム先頭のHeroとは別に、産地一覧はTOP10→大きい日本地図→DISCOVER3県の順です。観光TOP10順位は維持し、47県のCC0形状から実商品/産地本文のある掲載24県だけを選択可能にします。県のクリック・タップ・Enterは、その産地の商品一覧へ直接進む通常リンクです。hover/focusと地域selectは代表単体AI画像・商品名・国内参考価格のプレビューに使います。地図は大きくし、100/150/200/300%の拡大・縮小・全体表示と、拡大後の地図内スクロールを用意。地方別一覧・地図ジャンプ・JSなしの直接リンクも保ちます。
 
-日本地図はsrc/data/japan-map-geometry.json（CC0出典/47県形状）、src/config/japan-map.ts（地方とDISCOVER3県）、JapanJewelryMap.astro（代表preview）。店舗の地図はmap-preferences.ts（30日/版/最小値検証）、map-preferences-client.ts（全表示/全停止）、MapPreferences.astro（Privacyの設定UI）へ分離します。外部JS/タイル/API/現在地/Storageは全国SVG地図では使いません。店舗Googleマップは別機能です。[日本地図](japan-map-v17.md)・[残タスク](remaining-task-audit-v17.md)・[法務再確認](legal-review-v17.md)・[商用ホスト移行準備](commercial-host-migration-v17.md)を参照してください。今回は新bitmap生成なし。
+日本地図はsrc/data/japan-map-geometry.json（CC0出典/47県形状）、src/config/japan-map.ts（地方とDISCOVER3県）、JapanJewelryMap.astro（native直接リンク・代表preview・ローカルzoom）。店舗の地図はmap-preferences.ts（30日/版/最小値検証）、map-preferences-client.ts（全表示/全停止）、MapPreferences.astro（Privacyの設定UI）へ分離します。外部JS/タイル/API/現在地/Storageは全国SVG地図では使いません。店舗Googleマップは別機能です。[日本地図の直接選択](japan-map-direct-v18.md)・[残タスク](remaining-task-audit-v17.md)・[法務再確認](legal-review-v17.md)・[商用ホスト移行準備](commercial-host-migration-v17.md)を参照してください。今回は新bitmap生成なし。
 
 ## 検証・CSP・配信
 

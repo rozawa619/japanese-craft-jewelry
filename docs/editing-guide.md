@@ -1,9 +1,12 @@
 # 商品・文章・画像の編集ガイド
 
 プログラムを書かない運営者と、引継ぎ先のAIのための手引きです。まず[README](../README.md)で起動し、詳しい判断は[引継ぎ](handoff.md)・[共通原則](constitution.md)・[運用](operations.md)へ戻ってください。
-2026-11-17の0.17公開版が継承する台帳は全66商品、公開60商品、下書き6商品、24県、33店舗（53商品に店舗案内）です。公開関連技法は34（全36）、一次出典293件、人物58＋単体60のAI画像118ファイル。今後の件数は台帳を数えて確かめます。
+2026-11-17の作業版0.17.1が継承する台帳は全66商品、公開60商品、下書き6商品、24県、33店舗（53商品に店舗案内）です。公開関連技法は34（全36）、一次出典293件、人物58＋単体60のAI画像118ファイル。今後の件数は台帳を数えて確かめます。
 
-0.17.0（仕様019）は公開・実URL確認済みです。app `b8edee4e26c92a9a62c9133bf432aecc4666199a`、[Actions44051153186](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44051153186) completed/success（2026-11-17T08:58:25Z更新、08:58:40.558ZにAPI観測）。公開Source328HTML SHA・補足24（328正規URL/118画像SHA）・日本地図193・表示設定22・mobile92が成功しました。詳細と最新納品状態はdeployment-resultsを正本にします。
+<!-- TODO_PUBLIC_V18 -->
+0.17.1（仕様020）は公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
+
+PCのホーム先頭は左の人物AI画像・右の日本地図を並べるRegionHeroです。スマホでは写真を全幅で大きく表示し、その下に商品小情報と地図を並べて、顔や耳を切らずに見やすくします。Heroの県はclick/tap/Enter/Spaceで明示選択すると、女性画像と商品/国内参考価格を切り替え、産地CTAから商品一覧へ進みます。hover/focusだけでは切り替えません。有効な公開地域idだけを`?region=`へ反映し、他query/hash・戻る・言語切替で選択を保ちます。Heroとは別に、TOP10後の大きい一覧地図は県のnative直接リンクです。TOP10の人物AI画像はPC180px・狭幅110px/98pxのコンパクトな枠を基本にcontainで表示し、地域名/商品/価格/順位を保ちます。顔や耳を切らず、初期Heroは既存selection.heroProductIdを使います。これらは機能・表示の変更であり、訪問数や検索順位の改善を実測したという意味ではありません。
 以下の実例は既存記録の**一部の抜粋**です。新しい価格・在庫を調べ直した例でも、レコード全体の貼り替え用テンプレートでもありません。
 
 ## 最初に覚えること
@@ -201,11 +204,13 @@ WebPへ変換しても原本PNGを保管し、AI由来のIPTC XMPを維持しま
 新しい種別や所属は`catalog.json`と日本語名称に登録してから使います。商品を増やしただけではホームの種類項目は自動追加されません。
 観光TOP10は販売人気順ではありません。順位の年・訪問率・一次資料は[地域設定](../src/config/region-selection.ts)と[調査記録](research/tourism-top10-v9.json)を組で更新します。
 
-### 0.17の地図/3県ピックアップを更新する
+### 0.17.1のホームHero・地図・3県ピックアップを更新する
 
-産地の共通入口はTOP10→日本地図→DISCOVER3県。観光TOP10順位は維持し、47県のCC0形状から実商品/産地本文のある掲載24県だけを選択可能にします。代表単体AI画像・商品名・国内参考価格を正本から表示し、select・地方別一覧・地図ジャンプも用意します。hoverだけに頼らず、タップ/keyboard/JSなしの通常リンクを保ちます。
+ホーム先頭のHeroとは別に、産地一覧はTOP10→大きい日本地図→DISCOVER3県の順です。観光TOP10順位は維持し、47県のCC0形状から実商品/産地本文のある掲載24県だけを選択可能にします。県のクリック・タップ・Enterは、その産地の商品一覧へ直接進む通常リンクです。hover/focusと地域selectは代表単体AI画像・商品名・国内参考価格のプレビューに使います。地図は大きくし、100/150/200/300%の拡大・縮小・全体表示と、拡大後の地図内スクロールを用意。地方別一覧・地図ジャンプ・JSなしの直接リンクも保ちます。
 
-日本地図はsrc/data/japan-map-geometry.json（CC0出典/47県形状）、src/config/japan-map.ts（地方とDISCOVER3県）、JapanJewelryMap.astro（代表preview）。店舗の地図はmap-preferences.ts（30日/版/最小値検証）、map-preferences-client.ts（全表示/全停止）、MapPreferences.astro（Privacyの設定UI）へ分離します。商品価格や画像URLを地理JSONへ複製せず、未掲載県へ空URLを作りません。小さな県形状そのものを44pxとは呼ばず、select/地方別リンクを代替にします。[出典と加工](japan-map-v17.md)を保持してください。今回は新bitmapを生成していません。
+日本地図はsrc/data/japan-map-geometry.json（CC0出典/47県形状）、src/config/japan-map.ts（地方とDISCOVER3県）、JapanJewelryMap.astro（native直接リンク・代表preview・ローカルzoom）。店舗の地図はmap-preferences.ts（30日/版/最小値検証）、map-preferences-client.ts（全表示/全停止）、MapPreferences.astro（Privacyの設定UI）へ分離します。商品価格や画像URLを地理JSONへ複製せず、未掲載県へ空URLを作りません。小さな県形状そのものを44pxとは呼ばず、select/地方別リンクを代替にします。[旧版の出典と加工](japan-map-v17.md)を保持し、[現在の直接選択](japan-map-direct-v18.md)を確認してください。県のclickをpreventDefaultで横取りしてpreviewだけに戻さず、href/Enter/修飾clickの通常動作を維持します。小さな県は拡大後に実際の形状内を選べるか確認し、地図内のoverflowとページ全体の横はみ出しを区別します。今回は新bitmapを生成していません。
+
+ホーム先頭は[RegionHero.astro](../src/components/RegionHero.astro)、一覧地図は[JapanJewelryMap.astro](../src/components/JapanJewelryMap.astro)、TOP10の行/画像寸法は[RegionSelection.astro](../src/components/RegionSelection.astro)です。Heroでclickを選択として扱う処理を、直接遷移する一覧地図へコピーしません。Heroの24県の小さな商品カードは共通MarketPriceでserver生成し、選択県だけを表示します。画像figureのasset/preserveRatio・imgのsrc/alt/寸法と、表示中カードのURL/title/価格metadata/単位/産地CTAを揃えます。
 
 ## 9. 店舗とGoogleマップを更新する
 
@@ -222,7 +227,7 @@ provider/目的/条件を変える場合はmap-preferences.tsの版と日英説�
 
 ## 10. 広告・運営者・連絡先は事実どおりに
 
-[日本地図](japan-map-v17.md)・[残タスク](remaining-task-audit-v17.md)・[法務再確認](legal-review-v17.md)・[商用ホスト移行準備](commercial-host-migration-v17.md)を参照。対応ホスト向けpublic/_headersは移行準備です。現GitHub PagesのHTTPヘッダーを設定済みとはせず、実契約/本人情報/広告実ID・CMP/ドメイン・DNS/アカウント管理/検索実績を技術PASSで完了化しません。AdSense off・実提携未申請/通常URLを維持します。
+[日本地図の直接選択](japan-map-direct-v18.md)・[残タスク](remaining-task-audit-v17.md)・[法務再確認](legal-review-v17.md)・[商用ホスト移行準備](commercial-host-migration-v17.md)を参照。対応ホスト向けpublic/_headersは移行準備です。現GitHub PagesのHTTPヘッダーを設定済みとはせず、実契約/本人情報/広告実ID・CMP/ドメイン・DNS/アカウント管理/検索実績を技術PASSで完了化しません。AdSense off・実提携未申請/通常URLを維持します。
 
 運営者はSORAです。Contact・会員登録・販売決済・ブログを追加する前提にはしません。未提供の氏名・連絡先も作りません。
 提携は`programs`と個別`links`の両方が承認済みで、実URL・許可ホスト・確認日が揃うときだけ広告化します。`not_applied`を仮に`approved`へ変えません。

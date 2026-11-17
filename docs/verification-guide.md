@@ -1,8 +1,11 @@
 # 変更に合わせて検証する
 
-確認日：2026-11-17、公開版0.17.0・産地地図/地図表示設定019。目的は、変更に必要な証拠を得て、過去の成功を今回の成功と混同しないこと。最初に[AI引継ぎ](ai-handoff.md)とAGENTS.mdを読む。公開と納品の確定値は[deployment-results.json](deployment-results.json)、実際の入力・対象・失敗は各JSONを正本とする。
+確認日：2026-11-17、作業版0.17.1・日本地図拡大/直接選択020。目的は、変更に必要な証拠を得て、過去の成功を今回の成功と混同しないこと。最初に[AI引継ぎ](ai-handoff.md)とAGENTS.mdを読む。公開と納品の確定値は[deployment-results.json](deployment-results.json)、実際の入力・対象・失敗は各JSONを正本とする。
 
-0.17.0（仕様019）は公開・実URL確認済みです。app `b8edee4e26c92a9a62c9133bf432aecc4666199a`、[Actions44051153186](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44051153186) completed/success（2026-11-17T08:58:25Z更新、08:58:40.558ZにAPI観測）。公開Source328HTML SHA・補足24（328正規URL/118画像SHA）・日本地図193・表示設定22・mobile92が成功しました。詳細と最新納品状態はdeployment-resultsを正本にします。
+<!-- TODO_PUBLIC_V18 -->
+0.17.1（仕様020）は公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
+
+PCのホーム先頭は左の人物AI画像・右の日本地図を並べるRegionHeroです。スマホでは写真を全幅で大きく表示し、その下に商品小情報と地図を並べて、顔や耳を切らずに見やすくします。Heroの県はclick/tap/Enter/Spaceで明示選択すると、女性画像と商品/国内参考価格を切り替え、産地CTAから商品一覧へ進みます。hover/focusだけでは切り替えません。有効な公開地域idだけを`?region=`へ反映し、他query/hash・戻る・言語切替で選択を保ちます。Heroとは別に、TOP10後の大きい一覧地図は県のnative直接リンクです。TOP10の人物AI画像はPC180px・狭幅110px/98pxのコンパクトな枠を基本にcontainで表示し、地域名/商品/価格/順位を保ちます。顔や耳を切らず、初期Heroは既存selection.heroProductIdを使います。これらは機能・表示の変更であり、訪問数や検索順位の改善を実測したという意味ではありません。
 
 ## 変更別に検証を選ぶ
 
@@ -19,7 +22,7 @@
 | 種類の代表図・産地見出し | `pnpm verify`、`check:types` / `check:headings` | 所属/編集順/価格帯/件数/query/hash/AI表示/元比率。新画像生成と既存図の再利用を区別 |
 | SourceのHTML/確認日/開閉 | `pnpm verify`、`check:sources`、`node scripts/check-source-anchor-race.mjs` | `check:mobile`、必要なら`check-mobile-touch.mjs`。初期closed、直接hash、history、迅速close、focus/Tab、noJS |
 | 価格共通処理・通貨/市場の行き先 | `pnpm verify`、`check:prices` | 単品/片耳/一組、JPY/海外実額、未知価格、言語往復、sticky、広告の別市場への流用防止 |
-| 全国地図 | `pnpm verify`、`node scripts/check-japan-map.mjs` | 47形状/掲載県、代表画像/価格/行き先、TOP10→地図→DISCOVER3、hover/focus/tap/select/地方一覧/noJS、320px |
+| 全国地図 | `pnpm verify`、`node scripts/check-japan-map.mjs` | 47形状/掲載県、代表画像/価格/行き先、TOP10→地図→DISCOVER3、hover/focus/selectのpreview、県のnative click/tap/Enter直接移動、zoom/内部pan/reset/地方一覧/noJS、320px |
 | 店舗・Googleマップ | `pnpm verify`、公式所在地/地図、`node scripts/check-map-preferences.mjs`・`node scripts/check-inline-maps.mjs` | 未選択/拒否/期限切れ通信0、初回許可後30日の全店舗/日英自動表示、全撤回/不正/旧版/保存不可/複数タブ/戻る、帰属/fullscreen |
 | 広告リンク/Privacy/CMP/外部送信 | `pnpm verify`、`check:privacy`、`check:ads` | 実際の状態と日英Privacy、最初の広告前開示、承認/host/fallback、送信/拒否/撤回。実広告導入は現在のoff版と別の実装 |
 | 依存・Node・URL境界・CI/CSP | runtime check、`pnpm audit --audit-level=low`、関連unit、`pnpm verify` | URLなら`outbound-security.test.ts`、CI権限、公開header/console、対象の実host。監査0件を完全安全としない |
@@ -28,13 +31,19 @@
 
 関連unitだけ先に実行する例は`node --experimental-strip-types --test tests/market-prices.test.ts`。最終の必要範囲は変更の広がりで決める。CIは独立した公開gateであり、ローカルの小修正検査を省略する理由にも、毎回497を走らせる理由にもしない。
 
+## 0.17.1の記録を読む
+
+追加のホームHeroは一覧地図と別に検査します。全24県の明示選択で女性画像/asset/alt/寸法・商品/価格metadata/単位・産地CTAが一致し、hover/focusで勝手に変わらず、region query/言語/他query/hash/戻る/不正id/noJSが正しいことを確認します。TOP10の縮小は枠の実寸とcontain/可読性/導線で確認し、訪問数の改善とは呼びません。
+
+[地図拡大/直接選択020](../specs/020-direct-region-map/)が現在の作業。旧0.17.0の193件はpreview選択を確かめたもので、今回のクリック遷移や拡大の成功には流用しません。検証はclick-map-stageの専用reportへ分離し、日英home/objects/places、24県の有効href、native click/tap/Enterの実遷移と戻る、hover/focus/selectのpreview、100/150/200/300%と内部scroll/全体表示、JSなし、320/390/1440を確認します。SVGのbbox中心が海や別県になることがあるため、県の実際の塗り領域へ通常の入力を行い、force/DOMclickで合格させません。商品事実・Google店舗Mapsの30日設定は変更しません。実測/公開/ZIPの確定値は020 validationと[verification](verification.md)を正本にします。
+
 ## 0.17の記録を読む
 
-[地図と表示設定019](../specs/019-geographic-discovery-map-privacy/)が今回の作業。産地の共通入口はTOP10→日本地図→DISCOVER3県。観光TOP10順位は維持し、47県のCC0形状から実商品/産地本文のある掲載24県だけを選択可能にします。代表単体AI画像・商品名・国内参考価格を正本から表示し、select・地方別一覧・地図ジャンプも用意します。hoverだけに頼らず、タップ/keyboard/JSなしの通常リンクを保ちます。
+[地図と表示設定019](../specs/019-geographic-discovery-map-privacy/)は直前0.17.0の記録。産地の共通入口はTOP10→日本地図→DISCOVER3県。観光TOP10順位は維持し、47県のCC0形状から実商品/産地本文のある掲載24県だけを選択可能にします。代表単体AI画像・商品名・国内参考価格を正本から表示し、select・地方別一覧・地図ジャンプも用意します。hoverだけに頼らず、タップ/keyboard/JSなしの通常リンクを保ちます。
 
 Googleマップは初回の明示許可後、日英・全店舗で30日間自動表示します。未選択/拒否/期限切れではGoogle通信0、オフ操作で全iframeを停止。localStorageには地図専用choice/version/savedAt/expiresAtだけを保存し、不正/旧版の値は削除し、有効期限30日を過ぎた値は次の読込/再表示時に削除します。保存不可はページ限りです。複数タブ/戻る/再訪でも撤回を尊重します。PC330px/スマホ280pxの枠高を基本に、Google帰属・fullscreen・公式/外部リンクを保ちます。地図設定版maps-v17と広告Privacy版v14は別で、地図設定は広告同意/CMPではありません。
 
-型/単体/build/新UI/実公開の結果は019 validationと[verification](verification.md)へ段階別に記録します。旧検査の「再読込off/Storageなし」を今回へ流用しません。新bitmap生成はなく、旧画像/原本と商品事実を保持した証拠を確認します。[日本地図](japan-map-v17.md)・[残タスク](remaining-task-audit-v17.md)・[法務再確認](legal-review-v17.md)・[商用ホスト移行準備](commercial-host-migration-v17.md)を参照。対応ホストを模したheader試験と、GitHubの実HTTP header観測も分けます。
+0.17.0当時の型/単体/build/新UI/実公開の結果は019 validationとdiscovery-map-stageの各reportへ記録しています。旧検査の「再読込off/Storageなし」を今回へ流用しません。新bitmap生成はなく、旧画像/原本と商品事実を保持した証拠を確認します。[日本地図の直接選択](japan-map-direct-v18.md)・[残タスク](remaining-task-audit-v17.md)・[法務再確認](legal-review-v17.md)・[商用ホスト移行準備](commercial-host-migration-v17.md)を参照。対応ホストを模したheader試験と、GitHubの実HTTP header観測も分けます。
 
 ## 0.16の記録を読む
 
