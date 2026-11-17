@@ -29,5 +29,15 @@
     "scope": "No draft history was fabricated or published and the required public decision gate was not weakened."
   },
   "log": "artifacts/editorial-stage-verify.log (local build artifact; omitted from source ZIP)",
-  "limits": "Type/data/tests/static HTML/CSP/link checks, not browser/hosted or merchant checkout verification."
+  "limits": "Type/data/tests/static HTML/CSP/link checks, not browser/hosted or merchant checkout verification.",
+  "finalPolishFollowup": {
+    "checkedAt": "2026-11-17T01:52:29.969Z",
+    "command": "pnpm build; node scripts/check-built.mjs",
+    "status": "passed",
+    "reason": "One final scoped CSS line-break:strict declaration after the last full verify; no data, scripts, advertising or type contracts changed.",
+    "buildResult": "264HTML,14130refs,1949anchors,1016ordinary0ads,601scriptHashes,248JSON,14legacy,10retiredPruned",
+    "deltaReport": "docs/editorial-stage-final-build-delta.json",
+    "focusedReport": "docs/editorial-stage-final-copy-results.json",
+    "visualReport": "docs/editorial-stage-final-visual-results.json"
+  }
 }

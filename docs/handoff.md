@@ -41,3 +41,9 @@ ProductStoryはheadline/standfirst/highlights3件/outfitに加え、decision.bes
 今回の型/単体/生成物/日英全商品/全地域/価格/広告/外部/公開はeditorial-stage各reportと012validationへ分けて記録する。quality-stageは011、market-stageは010の履歴。維持用コマンドはREADMEとoperations。実際の完了件数・時刻は機械可読reportとdeployment-resultsを参照。
 
 全ソースは隣接japanese-craft-jewelry-delivery/sourceとZIPへ書出す。必要設定/CI/lock/仕様/出典/全ソース/最終検証/25公開画像を含め、.git/.env/認証/node_modules/dist/artifacts/無許諾の内部参照写真/退役public10画像を除外する。最終のZIPファイル集合・全件SHA256・版・除外・必須ファイルは同所package-verification-0.12.0.jsonを証跡とし、ZIPの自己hash参照は避ける。
+
+<!-- v12-final-verification -->
+
+最終確定：アプリ9da1bfb、Actions43998680246 success。ローカル92単体/コピー94/UI497/維持455/価格314/広告6/最終20/目視4、公開UI497/補足24/除外22/最終20が成功。公開正規248URL/25画像全200、画像SHA一致。全最終QA/補助workerを正常終了で回収済み。broad後の小調整と全296生成物の差分はfinal-build-deltaに分け、最終公開UIで全50点を確認した。
+
+最終書出しは577ファイル/全件SHA256一致、公開50点の日英decisionと25画像を確認。完了文書を含むZIPも同じ照合を実施し、最終SHAは外部package-verification-0.12.0.jsonに保存する。

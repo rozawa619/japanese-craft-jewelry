@@ -1,99 +1,91 @@
 {
-  "checkedAt": "2026-11-17T01:46:51.935Z",
+  "checkedAt": "2026-11-17T01:51:03.717Z",
   "origin": "http://127.0.0.1:4322/japanese-craft-jewelry/",
-  "method": "Fresh headless Chrome at 320px. Actual source-derived longest names/decision plus an OfficialPreview and new-region pages. Images are screenshots of this site only; no retailer images or pages are fetched. Visual inspection is recorded separately after viewing.",
+  "scope": "Final build after decision/region typography polish, strict Japanese line breaking and the Mie JA one-word correction.",
+  "method": "Fresh headless Chrome at 320px; all lazy images scrolled into view and decoded before full-page screenshots. Actual visual inspection is recorded after opening the saved images. Not a product wear test or a review by operator SORA.",
   "checks": [
     {
-      "locale": "en",
-      "productId": "saskia-diez-drake-porcelain-cuff",
-      "reason": "longest-English-title",
-      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/en/objects/saskia-diez-drake-porcelain-cuff/",
+      "name": "Mie Japanese product at 320px",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/objects/mie-akoya-oh002-stud-earrings/",
+      "status": "passed",
       "dimensions": {
         "width": 320,
-        "scroll": 320
+        "document": 320,
+        "body": 320
       },
-      "status": "passed"
+      "image": "artifacts/editorial-stage-final-visual-ja-320.png"
     },
     {
-      "locale": "ja",
-      "productId": "sirisiri-silver-thread-hoop-mini",
-      "reason": "longest-Japanese-title",
-      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/objects/sirisiri-silver-thread-hoop-mini/",
-      "dimensions": {
-        "width": 320,
-        "scroll": 320
-      },
-      "status": "passed"
+      "name": "Final decision heading and long copy",
+      "status": "passed",
+      "fontSize": "23px",
+      "image": "artifacts/editorial-stage-final-visual-ja-320-decision.png"
     },
     {
-      "locale": "ja",
-      "productId": "yukieglass-mint-veil-earrings",
-      "reason": "longest-decision-copy",
-      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/objects/yukieglass-mint-veil-earrings/",
-      "dimensions": {
-        "width": 320,
-        "scroll": 320
-      },
-      "status": "passed"
-    },
-    {
-      "locale": "en",
-      "productId": "nousaku-dahlia-gerbera-clip-on-earrings",
-      "reason": "new-region-OfficialPreview",
-      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/en/objects/nousaku-dahlia-gerbera-clip-on-earrings/",
-      "dimensions": {
-        "width": 320,
-        "scroll": 320
-      },
-      "status": "passed"
-    },
-    {
-      "locale": "ja",
-      "regionId": "toyama",
+      "name": "toyama regional heading at 320px",
       "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/places/toyama/",
+      "status": "passed",
+      "lines": [
+        "この産地の",
+        "ジュエリー。"
+      ],
       "dimensions": {
         "width": 320,
-        "scroll": 320
+        "document": 320,
+        "body": 320
       },
-      "status": "passed"
+      "image": "artifacts/editorial-stage-final-visual-toyama-ja-320.png"
     },
     {
-      "locale": "en",
-      "regionId": "mie",
-      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/en/places/mie/",
+      "name": "mie regional heading at 320px",
+      "url": "http://127.0.0.1:4322/japanese-craft-jewelry/ja/places/mie/",
+      "status": "passed",
+      "lines": [
+        "この産地の",
+        "ジュエリー。"
+      ],
       "dimensions": {
         "width": 320,
-        "scroll": 320
+        "document": 320,
+        "body": 320
       },
-      "status": "passed"
+      "image": "artifacts/editorial-stage-final-visual-mie-ja-320.png"
     }
   ],
   "screenshots": [
-    "artifacts/editorial-stage-final-visual-en-longest-English-title-intro.png",
-    "artifacts/editorial-stage-final-visual-en-longest-English-title-visual.png",
-    "artifacts/editorial-stage-final-visual-en-longest-English-title-decision.png",
-    "artifacts/editorial-stage-final-visual-en-longest-English-title-comparison.png",
-    "artifacts/editorial-stage-final-visual-ja-longest-Japanese-title-intro.png",
-    "artifacts/editorial-stage-final-visual-ja-longest-Japanese-title-visual.png",
-    "artifacts/editorial-stage-final-visual-ja-longest-Japanese-title-decision.png",
-    "artifacts/editorial-stage-final-visual-ja-longest-Japanese-title-comparison.png",
-    "artifacts/editorial-stage-final-visual-ja-longest-decision-copy-intro.png",
-    "artifacts/editorial-stage-final-visual-ja-longest-decision-copy-visual.png",
-    "artifacts/editorial-stage-final-visual-ja-longest-decision-copy-decision.png",
-    "artifacts/editorial-stage-final-visual-ja-longest-decision-copy-comparison.png",
-    "artifacts/editorial-stage-final-visual-en-new-region-OfficialPreview-intro.png",
-    "artifacts/editorial-stage-final-visual-en-new-region-OfficialPreview-visual.png",
-    "artifacts/editorial-stage-final-visual-en-new-region-OfficialPreview-decision.png",
-    "artifacts/editorial-stage-final-visual-en-new-region-OfficialPreview-comparison.png",
-    "artifacts/editorial-stage-final-visual-ja-region-toyama.png",
-    "artifacts/editorial-stage-final-visual-en-region-mie.png"
+    "artifacts/editorial-stage-final-visual-ja-320.png",
+    "artifacts/editorial-stage-final-visual-ja-320-decision.png",
+    "artifacts/editorial-stage-final-visual-toyama-ja-320.png",
+    "artifacts/editorial-stage-final-visual-mie-ja-320.png"
   ],
   "pageErrors": [],
-  "completedAt": "2026-11-17T01:46:56.733Z",
+  "completedAt": "2026-11-17T01:51:06.781Z",
   "summary": {
-    "checks": 6,
-    "passed": 6,
-    "screenshots": 18,
+    "checks": 4,
+    "passed": 4,
+    "failed": 0,
+    "screenshots": 4,
     "pageErrors": 0
+  },
+  "manualReview": {
+    "reviewedAt": "2026-11-17T01:51:29.457Z",
+    "reviewedScreenshots": [
+      "artifacts/editorial-stage-final-visual-ja-320.png",
+      "artifacts/editorial-stage-final-visual-ja-320-decision.png",
+      "artifacts/editorial-stage-final-visual-toyama-ja-320.png",
+      "artifacts/editorial-stage-final-visual-mie-ja-320.png"
+    ],
+    "status": "passed",
+    "observations": [
+      "Viewed all four final images after the strict line-breaking rebuild. The Mie product has its visible primary price and official destination before choice guidance; the new decision heading fits at 320px.",
+      "Toyama and Mie region headings no longer isolate the long-vowel glyph or begin the common jewelry heading with small kana. Actual measured common-heading lines are recorded in the checks.",
+      "OfficialPreview remains text rather than a fabricated photograph. The Mie full-page screenshot was captured after decoding the related AI images, which are present with the exact AI label.",
+      "No text clipping, horizontal overflow or overlapping CTA/content was found in these representative final views."
+    ]
+  },
+  "priorBroadReports": {
+    "full": "docs/editorial-stage-full-browser-results.json",
+    "prices": "docs/editorial-stage-prices-results.json",
+    "note": "Broad local reports preceded the final typography and Mie one-word correction; root records the build delta and focused final checks separately, and the final hosted all-product run is still pending."
   }
 }
