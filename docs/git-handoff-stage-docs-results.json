@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-17T13:48:20.790Z",
+  "checkedAt": "2026-11-17T14:05:32.641Z",
   "method": "Read-only local link, Markdown heading/fragment and pnpm/node-script reference checks on active maintainer documents. External URLs are counted, not requested. Legacy operations after its explicit marker and historical research/report prose are not treated as the current runbook.",
   "files": [
     "README.md",
@@ -64,11 +64,11 @@
     "specs/024-git-ai-handoff/validation.md"
   ],
   "errors": [],
-  "localLinks": 581,
+  "localLinks": 589,
   "anchors": 8,
   "externalLinks": 104,
-  "commands": 93,
-  "scriptPaths": 42,
+  "commands": 94,
+  "scriptPaths": 43,
   "snapshot": {
     "packageVersion": "0.18.0",
     "nodeRequirement": ">=24.22.3",
@@ -79,11 +79,11 @@
   "status": "passed",
   "summary": {
     "files": 60,
-    "localLinks": 581,
+    "localLinks": 589,
     "anchors": 8,
     "externalLinksUnchecked": 104,
-    "pnpmReferences": 93,
-    "nodeScriptReferences": 42,
+    "pnpmReferences": 94,
+    "nodeScriptReferences": 43,
     "errors": 0
   }
 }

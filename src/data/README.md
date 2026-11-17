@@ -17,3 +17,5 @@
 | [advertising-privacy.json](advertising-privacy.json) | 現状off固定の広告Privacy状態 |
 
 source/権利はdocs側にも正本があります：[出典](../../docs/research/sources.json)・[画像台帳](../../docs/assets.json)。商品本文はcontent/products、掲載順はconfig/selection.ts。画像/広告/不明値のgateを弱めてエラーを消さず、対応するデータを確認します。
+
+現在の入口は[START_HERE](../../START_HERE.md)、機械可読の状態は[handoff-status](../../docs/handoff-status.json)です。人物画像は架空の日本人成人女性25〜33歳・かわいい/綺麗なタイプで統一済み。画像変更はassetId/path/寸法/日英altと台帳・[生成記録](../../docs/image-generation-japanese-v23.json)を対応させます。PNG原本は[GitHubから任意取得](../../docs/handoff-assets.md)でき、通常buildの依存ではありません。事実・価格・在庫は画像から推定しません。

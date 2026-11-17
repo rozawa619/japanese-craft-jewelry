@@ -1,0 +1,48 @@
+name: Verify Git-only AI handoff
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PUBLIC_SITE_URL: https://rozawa619.github.io
+      PUBLIC_BASE_PATH: /japanese-craft-jewelry/
+      PUBLIC_PUBLISH_MODE: public
+      PUBLIC_REPOSITORY_URL: https://github.com/rozawa619/japanese-craft-jewelry
+      PUBLIC_OPERATOR_NAME: SORA
+      PUBLIC_CONTACT_EMAIL: ''
+      CHECK_IMAGE_REPORT_PATH: artifacts/checks/images.json
+      CHECK_DETAIL_IMAGE_REPORT_PATH: artifacts/checks/detail-images.json
+      CHECK_PRIVACY_REPORT_PATH: artifacts/checks/privacy.json
+      SEO_REPORT_PATH: artifacts/checks/seo.json
+      CHECK_JAPANESE_MODEL_REPORT_PATH: artifacts/checks/models.json
+      CHECK_DOC_REPORT_PATH: artifacts/checks/docs.json
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+          check-latest: true
+      - name: Check Node security floor
+        run: node scripts/check-runtime.mjs
+      - name: Verify no creator-specific inputs exist
+        run: node scripts/check-handoff-portability.mjs --preflight
+      - name: Install the pinned package manager
+        run: npm install -g pnpm@11.25.0
+      - name: Install dependencies from the frozen lockfile
+        run: pnpm install --frozen-lockfile
+      - name: Type, unit, build, links, image and privacy checks
+        run: pnpm verify
+      - name: Check international search metadata
+        run: pnpm check:seo
+      - name: Check Japanese model records without private PNGs
+        run: node --experimental-strip-types scripts/check-japanese-model-styling.mjs --dist
+      - name: Check maintainer documentation
+        run: pnpm check:docs
+      - name: Compare every published output hash
+        run: node scripts/check-handoff-portability.mjs --dist

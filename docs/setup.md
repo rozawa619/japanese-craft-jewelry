@@ -129,6 +129,7 @@ pnpm --versionはpnpm自体が使うNode版の証明ではなく、pnpm exec nod
 | Another astro preview server | 表示されたPID/URLがこの作業のものか確認。該当するならnode scripts/astro.mjs preview stopで停止して再起動 |
 | missing source/image/guide/reference | [編集ガイド](editing-guide.md)の更新単位を確認。validatorを緩めて隠さない |
 | 外部URLが403/503 | 一時/閲覧制約と事実変更を区別。生結果を残しfresh browserで再確認してから判断 |
+| npm取得がETIMEDOUT | 公式registryへの通信条件を確認し、生ログを残す。lockfile固定版が標準pnpm cacheに揃っている場合だけ`pnpm install --frozen-lockfile --offline`で再現可能。cacheがなければ通信復旧が必要。TLS検査やlockfileを無効化しない |
 | 日本語JSONが読めない | UTF-8で保存、JSONの引用符/末尾カンマ/重複IDを確認。Windows旧PowerShellの文字コードにも注意 |
 
 ## 公開と復旧
@@ -140,6 +141,12 @@ pnpm --versionはpnpm自体が使うNode版の証明ではなく、pnpm exec nod
 問題があれば、未commit差分を保存してから対象commitの差分を確認し、公開に問題を入れたcommitをgit revertで打ち消す方法を優先します。未関係の変更が混ざったcommitを丸ごと戻したり、reset --hard/force pushで履歴を消したりしません。戻した後もverify→Actions→実URLを確認します。現在の最終appはdeployment-results.applicationCommitに記録されています。
 
 文書/tool/コメントだけで生成物が最終公開版と同じ場合は、今回のように検査とSHA一致を残し、不要な再公開を避けた文書commitにできます。skip ciを、実アプリの未検証変更を隠すために使いません。
+
+## Gitだけからの引継ぎを再確認する
+
+[検証専用workflow](../.github/workflows/verify-handoff.yml)はGitHub Actionsから手動実行できます。新しいrunnerのcheckoutからNode・固定pnpm・依存導入・通常verify・SEO・元PNGなしモデルQA・文書・公開出力の全SHAを確認します。権限はcontents:readのみで、Pagesへの公開は行いません。結果と対象SHAを確認してから引継ぎ状態へ記録してください。
+
+ローカルでは`node scripts/check-handoff-portability.mjs --dist`で、引継ぎ入口・Git内proofのbytes・現在記録された公開manifestとの全出力一致を確認できます。`--preflight`はnode_modules等がまだないfresh clone専用です。将来アプリを変更したら、比較対象の公開manifestも実際の検証結果に合わせて更新します。
 
 ## 納品ZIPを作る
 
