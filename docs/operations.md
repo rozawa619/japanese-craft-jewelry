@@ -1,3 +1,19 @@
+# 運用手順の入口と過去の記録
+
+現在の手順は文書改訂017で目的別に分けました。
+
+- 初回/別PC/環境エラー：[setup](setup.md)
+- 商品・文章・価格・画像：[編集ガイド](editing-guide.md)
+- 変更後の確認とreport保存：[検証ガイド](verification-guide.md)
+- 全体構造：[architecture](architecture.md)
+- AIへ渡す内容：[ai-handoff](ai-handoff.md)、現在状態は[handoff](handoff.md)
+
+以下は0.15以前の作業履歴です。複数世代の件数/Node版/Maps方式が残り、現在有効な手順として順に実行するものではありません。最新値はdeployment-resultsとcatalogを確認してください。
+
+<!-- LEGACY-HISTORY: old links and examples below are historical, not the active runbook. -->
+<details>
+<summary>0.15以前の手順・判断の履歴を開く</summary>
+
 # 更新手順 — 0.15 画像の種類選択・スマホ・出典一覧・security
 
 最新は[016](../specs/016-visual-choices-mobile-security/spec.md)。以下の0.15手順を優先し、後半の014/015以前を継承する。現行の公開・検証数は[verification](verification.md)と[deployment-results](deployment-results.json)で確認する。実行環境はサポート中の修正版Node24.22.3以上とpnpm11.25.0。古いNodeは起動前検査で停止する。
@@ -274,3 +290,5 @@ pnpm packageで隣接するjapanese-craft-jewelry-delivery/sourceへ書出し、
 6. 価格差を説明する際、Global公式FAQが示す海外向けサービスの説明と、商品別差額内訳が未確認であることを分ける。差額全部が送料/全税送料込とは断定しない。market-price-review-v10.jsonが調査記録。最新検証は010validationとmarket-stage結果。
 
 fresh sourceのローカルbase既定は/。公開の価格browserはCHECK_BASE_URL=https://rozawa619.github.ioとPUBLIC_BASE_PATH=/japanese-craft-jewelry/を設定し、CHECK_REPORT_PATH/CHECK_SCREENSHOT_PREFIXでhosted結果を分ける。公開設定を含む.envは納品/Gitへ入れない。
+
+</details>

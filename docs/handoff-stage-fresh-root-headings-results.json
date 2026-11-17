@@ -1,0 +1,768 @@
+{
+  "checkedAt": "2026-11-17T06:40:07.994Z",
+  "origin": "http://127.0.0.1:4321",
+  "base": "/",
+  "node": "v24.22.3",
+  "method": "Twelve real regional pages: Kanagawa/Tokyo, EN/JA, 320/390/1440px. Measure each visible h2 text character with DOM Range and group by physical line; JA390 final line must exceed two characters. Independently check catalog/editorial-order representatives, image decode/registry, JPY range/count, source disclosure/date/URLs, actual filter click/back, and overflow. Ordinary viewport screenshots, no stylesheet overrides or CSS-property mirror assertions.",
+  "sourceInputs": {
+    "started": {
+      "src/components/RegionalChoiceGuide.astro": "e4bb91b4604530e1ed7c73f617e9212c53adf83d5faa614b938b84231fac02ca",
+      "src/components/TypeChoiceImage.astro": "bee774ecee5d786e0b94b8b6902b5e5927020ac1abee94477cdeca443bdbee59",
+      "src/lib/type-choices.ts": "b90f84917948c30ae8b14b41b790e34ecdb2eccb3a601235c86ec9fb1c95f510",
+      "src/data/catalog.json": "4114e45fc5a1d92b8a2fbd75f56badcb9b6a1825d38a4f19f82e5fb5a03cf237",
+      "src/data/product-detail-images.json": "f1c4a823455ba433a4bfdf5ecabb7d497b390f95f605d0643d2b97a55812aaac",
+      "src/data/translations/ja.json": "6e2af4fee073673e1fdcc826ea1c7f22e1f6f805cd3800f708dfc61ad13c9a65",
+      "src/data/region-choice-notes.json": "53e5fe722bc2e1094ad6e9ba7a5b53efc8eeb2a70862035a13ed0b4a987a52ba",
+      "src/config/selection.ts": "c5769f3b0a880e7acb686c02f458e31ae3abe67b36e0279ad3cfc6c68bead31f",
+      "src/styles/global.css": "9c4c64dee71083ced55f29c7c3f324c8efb1c7dbc3ee5d3340cb9e0f58feb058",
+      "docs/research/sources.json": "f8efad3ff10a9387550186fcf40dda96a2a7f065edb4a261761ea2f659333271",
+      "src/content/places/kanagawa.md": "3b69ec191d6edd915e84e85c8008187fe7a1bab248a1986ecb2a295dc15f4bbb",
+      "src/content/places/tokyo.md": "ca4be00534f6644fd7ff3fe817f2ad21dbf3b4c37be0c3fb65a8ad3e55a259e0",
+      "src/content/places/ja/kanagawa.md": "c63c6ce1865b7799ad0af4c6924ab1e909a3d021eb42d1bebe1461f5c334dfe5",
+      "src/content/places/ja/tokyo.md": "f6716e08311adf89fa26b07be96ca90a5e5f128383a29942641dbe8b3333290e"
+    },
+    "completed": {
+      "src/components/RegionalChoiceGuide.astro": "e4bb91b4604530e1ed7c73f617e9212c53adf83d5faa614b938b84231fac02ca",
+      "src/components/TypeChoiceImage.astro": "bee774ecee5d786e0b94b8b6902b5e5927020ac1abee94477cdeca443bdbee59",
+      "src/lib/type-choices.ts": "b90f84917948c30ae8b14b41b790e34ecdb2eccb3a601235c86ec9fb1c95f510",
+      "src/data/catalog.json": "4114e45fc5a1d92b8a2fbd75f56badcb9b6a1825d38a4f19f82e5fb5a03cf237",
+      "src/data/product-detail-images.json": "f1c4a823455ba433a4bfdf5ecabb7d497b390f95f605d0643d2b97a55812aaac",
+      "src/data/translations/ja.json": "6e2af4fee073673e1fdcc826ea1c7f22e1f6f805cd3800f708dfc61ad13c9a65",
+      "src/data/region-choice-notes.json": "53e5fe722bc2e1094ad6e9ba7a5b53efc8eeb2a70862035a13ed0b4a987a52ba",
+      "src/config/selection.ts": "c5769f3b0a880e7acb686c02f458e31ae3abe67b36e0279ad3cfc6c68bead31f",
+      "src/styles/global.css": "9c4c64dee71083ced55f29c7c3f324c8efb1c7dbc3ee5d3340cb9e0f58feb058",
+      "docs/research/sources.json": "f8efad3ff10a9387550186fcf40dda96a2a7f065edb4a261761ea2f659333271",
+      "src/content/places/kanagawa.md": "3b69ec191d6edd915e84e85c8008187fe7a1bab248a1986ecb2a295dc15f4bbb",
+      "src/content/places/tokyo.md": "ca4be00534f6644fd7ff3fe817f2ad21dbf3b4c37be0c3fb65a8ad3e55a259e0",
+      "src/content/places/ja/kanagawa.md": "c63c6ce1865b7799ad0af4c6924ab1e909a3d021eb42d1bebe1461f5c334dfe5",
+      "src/content/places/ja/tokyo.md": "f6716e08311adf89fa26b07be96ca90a5e5f128383a29942641dbe8b3333290e"
+    }
+  },
+  "checks": [
+    {
+      "name": "ja 320 kanagawa",
+      "status": "passed",
+      "detail": {
+        "locale": "ja",
+        "width": 320,
+        "region": "kanagawa",
+        "actualLines": [
+          {
+            "top": 515.171875,
+            "text": "この産地なら、"
+          },
+          {
+            "top": 551.609375,
+            "text": "何から選ぶ？"
+          }
+        ],
+        "lastLineLength": 6,
+        "dimensions": {
+          "width": 320,
+          "document": 320,
+          "body": 320
+        },
+        "sourceIds": [
+          "hamamatsuya-workshop",
+          "hamamatsuya-technique",
+          "hamamatsuya-earrings",
+          "maruyama-company"
+        ],
+        "typeChecks": [
+          {
+            "type": "pierced-earrings",
+            "representative": "hamamatsuya-catch-pierced",
+            "priceRange": "JPY 3,500",
+            "ids": [
+              "hamamatsuya-catch-pierced"
+            ]
+          },
+          {
+            "type": "clip-on-earrings",
+            "representative": "hamamatsuya-clip",
+            "priceRange": "JPY 2,500",
+            "ids": [
+              "hamamatsuya-clip"
+            ]
+          },
+          {
+            "type": "necklace",
+            "representative": "hamamatsuya-pendant",
+            "priceRange": "JPY 3,500",
+            "ids": [
+              "hamamatsuya-pendant"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "ja 320 tokyo",
+      "status": "passed",
+      "detail": {
+        "locale": "ja",
+        "width": 320,
+        "region": "tokyo",
+        "actualLines": [
+          {
+            "top": 515.171875,
+            "text": "この産地なら、"
+          },
+          {
+            "top": 551.609375,
+            "text": "何から選ぶ？"
+          }
+        ],
+        "lastLineLength": 6,
+        "dimensions": {
+          "width": 320,
+          "document": 320,
+          "body": 320
+        },
+        "sourceIds": [
+          "becos-rinzen-seika-amber",
+          "becos-rinzen-seika-amber-ja",
+          "rinzen-brand",
+          "becos-rinzen-leaf",
+          "becos-rinzen-leaf-ja",
+          "hario-netshop-product-v11",
+          "hario-lwf-product-v11",
+          "hario-lwf-about-v11",
+          "hario-kodenmacho-v11"
+        ],
+        "typeChecks": [
+          {
+            "type": "pierced-earrings",
+            "representative": "rinzen-seika-amber-pierced-earrings",
+            "priceRange": "JPY 26,400 – JPY 39,600",
+            "ids": [
+              "rinzen-seika-amber-pierced-earrings",
+              "sirisiri-page-blue-enamel-pierced-earrings",
+              "sirisiri-silver-thread-hoop-mini"
+            ]
+          },
+          {
+            "type": "clip-on-earrings",
+            "representative": "hario-little-tears-clip-on-earrings",
+            "priceRange": "JPY 8,250",
+            "ids": [
+              "hario-little-tears-clip-on-earrings"
+            ]
+          },
+          {
+            "type": "necklace",
+            "representative": "rinzen-leaf-glass-pendant",
+            "priceRange": "JPY 27,500",
+            "ids": [
+              "rinzen-leaf-glass-pendant"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "en 320 kanagawa",
+      "status": "passed",
+      "detail": {
+        "locale": "en",
+        "width": 320,
+        "region": "kanagawa",
+        "actualLines": [
+          {
+            "top": 595.578125,
+            "text": "Where would you start?"
+          }
+        ],
+        "lastLineLength": 19,
+        "dimensions": {
+          "width": 320,
+          "document": 320,
+          "body": 320
+        },
+        "sourceIds": [
+          "hamamatsuya-workshop",
+          "hamamatsuya-technique",
+          "hamamatsuya-earrings",
+          "maruyama-company"
+        ],
+        "typeChecks": [
+          {
+            "type": "pierced-earrings",
+            "representative": "hamamatsuya-catch-pierced",
+            "priceRange": "JPY 3,500",
+            "ids": [
+              "hamamatsuya-catch-pierced"
+            ]
+          },
+          {
+            "type": "clip-on-earrings",
+            "representative": "hamamatsuya-clip",
+            "priceRange": "JPY 2,500",
+            "ids": [
+              "hamamatsuya-clip"
+            ]
+          },
+          {
+            "type": "necklace",
+            "representative": "hamamatsuya-pendant",
+            "priceRange": "JPY 3,500",
+            "ids": [
+              "hamamatsuya-pendant"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "en 320 tokyo",
+      "status": "passed",
+      "detail": {
+        "locale": "en",
+        "width": 320,
+        "region": "tokyo",
+        "actualLines": [
+          {
+            "top": 645.015625,
+            "text": "Where would you start?"
+          }
+        ],
+        "lastLineLength": 19,
+        "dimensions": {
+          "width": 320,
+          "document": 320,
+          "body": 320
+        },
+        "sourceIds": [
+          "becos-rinzen-seika-amber",
+          "becos-rinzen-seika-amber-ja",
+          "rinzen-brand",
+          "becos-rinzen-leaf",
+          "becos-rinzen-leaf-ja",
+          "hario-netshop-product-v11",
+          "hario-lwf-product-v11",
+          "hario-lwf-about-v11",
+          "hario-kodenmacho-v11"
+        ],
+        "typeChecks": [
+          {
+            "type": "pierced-earrings",
+            "representative": "rinzen-seika-amber-pierced-earrings",
+            "priceRange": "JPY 26,400 – JPY 39,600",
+            "ids": [
+              "rinzen-seika-amber-pierced-earrings",
+              "sirisiri-page-blue-enamel-pierced-earrings",
+              "sirisiri-silver-thread-hoop-mini"
+            ]
+          },
+          {
+            "type": "clip-on-earrings",
+            "representative": "hario-little-tears-clip-on-earrings",
+            "priceRange": "JPY 8,250",
+            "ids": [
+              "hario-little-tears-clip-on-earrings"
+            ]
+          },
+          {
+            "type": "necklace",
+            "representative": "rinzen-leaf-glass-pendant",
+            "priceRange": "JPY 27,500",
+            "ids": [
+              "rinzen-leaf-glass-pendant"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "ja 390 kanagawa",
+      "status": "passed",
+      "detail": {
+        "locale": "ja",
+        "width": 390,
+        "region": "kanagawa",
+        "actualLines": [
+          {
+            "top": 530.640625,
+            "text": "この産地なら、"
+          },
+          {
+            "top": 567.078125,
+            "text": "何から選ぶ？"
+          }
+        ],
+        "lastLineLength": 6,
+        "dimensions": {
+          "width": 390,
+          "document": 390,
+          "body": 390
+        },
+        "sourceIds": [
+          "hamamatsuya-workshop",
+          "hamamatsuya-technique",
+          "hamamatsuya-earrings",
+          "maruyama-company"
+        ],
+        "typeChecks": [
+          {
+            "type": "pierced-earrings",
+            "representative": "hamamatsuya-catch-pierced",
+            "priceRange": "JPY 3,500",
+            "ids": [
+              "hamamatsuya-catch-pierced"
+            ]
+          },
+          {
+            "type": "clip-on-earrings",
+            "representative": "hamamatsuya-clip",
+            "priceRange": "JPY 2,500",
+            "ids": [
+              "hamamatsuya-clip"
+            ]
+          },
+          {
+            "type": "necklace",
+            "representative": "hamamatsuya-pendant",
+            "priceRange": "JPY 3,500",
+            "ids": [
+              "hamamatsuya-pendant"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "ja 390 tokyo",
+      "status": "passed",
+      "detail": {
+        "locale": "ja",
+        "width": 390,
+        "region": "tokyo",
+        "actualLines": [
+          {
+            "top": 530.640625,
+            "text": "この産地なら、"
+          },
+          {
+            "top": 567.078125,
+            "text": "何から選ぶ？"
+          }
+        ],
+        "lastLineLength": 6,
+        "dimensions": {
+          "width": 390,
+          "document": 390,
+          "body": 390
+        },
+        "sourceIds": [
+          "becos-rinzen-seika-amber",
+          "becos-rinzen-seika-amber-ja",
+          "rinzen-brand",
+          "becos-rinzen-leaf",
+          "becos-rinzen-leaf-ja",
+          "hario-netshop-product-v11",
+          "hario-lwf-product-v11",
+          "hario-lwf-about-v11",
+          "hario-kodenmacho-v11"
+        ],
+        "typeChecks": [
+          {
+            "type": "pierced-earrings",
+            "representative": "rinzen-seika-amber-pierced-earrings",
+            "priceRange": "JPY 26,400 – JPY 39,600",
+            "ids": [
+              "rinzen-seika-amber-pierced-earrings",
+              "sirisiri-page-blue-enamel-pierced-earrings",
+              "sirisiri-silver-thread-hoop-mini"
+            ]
+          },
+          {
+            "type": "clip-on-earrings",
+            "representative": "hario-little-tears-clip-on-earrings",
+            "priceRange": "JPY 8,250",
+            "ids": [
+              "hario-little-tears-clip-on-earrings"
+            ]
+          },
+          {
+            "type": "necklace",
+            "representative": "rinzen-leaf-glass-pendant",
+            "priceRange": "JPY 27,500",
+            "ids": [
+              "rinzen-leaf-glass-pendant"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "en 390 kanagawa",
+      "status": "passed",
+      "detail": {
+        "locale": "en",
+        "width": 390,
+        "region": "kanagawa",
+        "actualLines": [
+          {
+            "top": 546.140625,
+            "text": "Where would you start?"
+          }
+        ],
+        "lastLineLength": 19,
+        "dimensions": {
+          "width": 390,
+          "document": 390,
+          "body": 390
+        },
+        "sourceIds": [
+          "hamamatsuya-workshop",
+          "hamamatsuya-technique",
+          "hamamatsuya-earrings",
+          "maruyama-company"
+        ],
+        "typeChecks": [
+          {
+            "type": "pierced-earrings",
+            "representative": "hamamatsuya-catch-pierced",
+            "priceRange": "JPY 3,500",
+            "ids": [
+              "hamamatsuya-catch-pierced"
+            ]
+          },
+          {
+            "type": "clip-on-earrings",
+            "representative": "hamamatsuya-clip",
+            "priceRange": "JPY 2,500",
+            "ids": [
+              "hamamatsuya-clip"
+            ]
+          },
+          {
+            "type": "necklace",
+            "representative": "hamamatsuya-pendant",
+            "priceRange": "JPY 3,500",
+            "ids": [
+              "hamamatsuya-pendant"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "en 390 tokyo",
+      "status": "passed",
+      "detail": {
+        "locale": "en",
+        "width": 390,
+        "region": "tokyo",
+        "actualLines": [
+          {
+            "top": 621.921875,
+            "text": "Where would you start?"
+          }
+        ],
+        "lastLineLength": 19,
+        "dimensions": {
+          "width": 390,
+          "document": 390,
+          "body": 390
+        },
+        "sourceIds": [
+          "becos-rinzen-seika-amber",
+          "becos-rinzen-seika-amber-ja",
+          "rinzen-brand",
+          "becos-rinzen-leaf",
+          "becos-rinzen-leaf-ja",
+          "hario-netshop-product-v11",
+          "hario-lwf-product-v11",
+          "hario-lwf-about-v11",
+          "hario-kodenmacho-v11"
+        ],
+        "typeChecks": [
+          {
+            "type": "pierced-earrings",
+            "representative": "rinzen-seika-amber-pierced-earrings",
+            "priceRange": "JPY 26,400 – JPY 39,600",
+            "ids": [
+              "rinzen-seika-amber-pierced-earrings",
+              "sirisiri-page-blue-enamel-pierced-earrings",
+              "sirisiri-silver-thread-hoop-mini"
+            ]
+          },
+          {
+            "type": "clip-on-earrings",
+            "representative": "hario-little-tears-clip-on-earrings",
+            "priceRange": "JPY 8,250",
+            "ids": [
+              "hario-little-tears-clip-on-earrings"
+            ]
+          },
+          {
+            "type": "necklace",
+            "representative": "rinzen-leaf-glass-pendant",
+            "priceRange": "JPY 27,500",
+            "ids": [
+              "rinzen-leaf-glass-pendant"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "ja 1440 kanagawa",
+      "status": "passed",
+      "detail": {
+        "locale": "ja",
+        "width": 1440,
+        "region": "kanagawa",
+        "actualLines": [
+          {
+            "top": 549.953125,
+            "text": "この産地なら、何から選"
+          },
+          {
+            "top": 599.890625,
+            "text": "ぶ？"
+          }
+        ],
+        "lastLineLength": 2,
+        "dimensions": {
+          "width": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "sourceIds": [
+          "hamamatsuya-workshop",
+          "hamamatsuya-technique",
+          "hamamatsuya-earrings",
+          "maruyama-company"
+        ],
+        "typeChecks": [
+          {
+            "type": "pierced-earrings",
+            "representative": "hamamatsuya-catch-pierced",
+            "priceRange": "JPY 3,500",
+            "ids": [
+              "hamamatsuya-catch-pierced"
+            ]
+          },
+          {
+            "type": "clip-on-earrings",
+            "representative": "hamamatsuya-clip",
+            "priceRange": "JPY 2,500",
+            "ids": [
+              "hamamatsuya-clip"
+            ]
+          },
+          {
+            "type": "necklace",
+            "representative": "hamamatsuya-pendant",
+            "priceRange": "JPY 3,500",
+            "ids": [
+              "hamamatsuya-pendant"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "ja 1440 tokyo",
+      "status": "passed",
+      "detail": {
+        "locale": "ja",
+        "width": 1440,
+        "region": "tokyo",
+        "actualLines": [
+          {
+            "top": 636.953125,
+            "text": "この産地なら、何から選"
+          },
+          {
+            "top": 686.890625,
+            "text": "ぶ？"
+          }
+        ],
+        "lastLineLength": 2,
+        "dimensions": {
+          "width": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "sourceIds": [
+          "becos-rinzen-seika-amber",
+          "becos-rinzen-seika-amber-ja",
+          "rinzen-brand",
+          "becos-rinzen-leaf",
+          "becos-rinzen-leaf-ja",
+          "hario-netshop-product-v11",
+          "hario-lwf-product-v11",
+          "hario-lwf-about-v11",
+          "hario-kodenmacho-v11"
+        ],
+        "typeChecks": [
+          {
+            "type": "pierced-earrings",
+            "representative": "rinzen-seika-amber-pierced-earrings",
+            "priceRange": "JPY 26,400 – JPY 39,600",
+            "ids": [
+              "rinzen-seika-amber-pierced-earrings",
+              "sirisiri-page-blue-enamel-pierced-earrings",
+              "sirisiri-silver-thread-hoop-mini"
+            ]
+          },
+          {
+            "type": "clip-on-earrings",
+            "representative": "hario-little-tears-clip-on-earrings",
+            "priceRange": "JPY 8,250",
+            "ids": [
+              "hario-little-tears-clip-on-earrings"
+            ]
+          },
+          {
+            "type": "necklace",
+            "representative": "rinzen-leaf-glass-pendant",
+            "priceRange": "JPY 27,500",
+            "ids": [
+              "rinzen-leaf-glass-pendant"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "en 1440 kanagawa",
+      "status": "passed",
+      "detail": {
+        "locale": "en",
+        "width": 1440,
+        "region": "kanagawa",
+        "actualLines": [
+          {
+            "top": 560.390625,
+            "text": "Where would you start?"
+          }
+        ],
+        "lastLineLength": 19,
+        "dimensions": {
+          "width": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "sourceIds": [
+          "hamamatsuya-workshop",
+          "hamamatsuya-technique",
+          "hamamatsuya-earrings",
+          "maruyama-company"
+        ],
+        "typeChecks": [
+          {
+            "type": "pierced-earrings",
+            "representative": "hamamatsuya-catch-pierced",
+            "priceRange": "JPY 3,500",
+            "ids": [
+              "hamamatsuya-catch-pierced"
+            ]
+          },
+          {
+            "type": "clip-on-earrings",
+            "representative": "hamamatsuya-clip",
+            "priceRange": "JPY 2,500",
+            "ids": [
+              "hamamatsuya-clip"
+            ]
+          },
+          {
+            "type": "necklace",
+            "representative": "hamamatsuya-pendant",
+            "priceRange": "JPY 3,500",
+            "ids": [
+              "hamamatsuya-pendant"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "en 1440 tokyo",
+      "status": "passed",
+      "detail": {
+        "locale": "en",
+        "width": 1440,
+        "region": "tokyo",
+        "actualLines": [
+          {
+            "top": 637.4375,
+            "text": "Where would you start?"
+          }
+        ],
+        "lastLineLength": 19,
+        "dimensions": {
+          "width": 1440,
+          "document": 1440,
+          "body": 1440
+        },
+        "sourceIds": [
+          "becos-rinzen-seika-amber",
+          "becos-rinzen-seika-amber-ja",
+          "rinzen-brand",
+          "becos-rinzen-leaf",
+          "becos-rinzen-leaf-ja",
+          "hario-netshop-product-v11",
+          "hario-lwf-product-v11",
+          "hario-lwf-about-v11",
+          "hario-kodenmacho-v11"
+        ],
+        "typeChecks": [
+          {
+            "type": "pierced-earrings",
+            "representative": "rinzen-seika-amber-pierced-earrings",
+            "priceRange": "JPY 26,400 – JPY 39,600",
+            "ids": [
+              "rinzen-seika-amber-pierced-earrings",
+              "sirisiri-page-blue-enamel-pierced-earrings",
+              "sirisiri-silver-thread-hoop-mini"
+            ]
+          },
+          {
+            "type": "clip-on-earrings",
+            "representative": "hario-little-tears-clip-on-earrings",
+            "priceRange": "JPY 8,250",
+            "ids": [
+              "hario-little-tears-clip-on-earrings"
+            ]
+          },
+          {
+            "type": "necklace",
+            "representative": "rinzen-leaf-glass-pendant",
+            "priceRange": "JPY 27,500",
+            "ids": [
+              "rinzen-leaf-glass-pendant"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "failures": [],
+  "screenshots": [
+    "artifacts/handoff-root-headings-ja-390-kanagawa.png",
+    "artifacts/handoff-root-headings-ja-390-tokyo.png"
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "thumbChecks": 36,
+  "sourceControls": 12,
+  "queryRoundtrips": 36,
+  "completedAt": "2026-11-17T06:41:26.213Z",
+  "summary": {
+    "checks": 12,
+    "passed": 12,
+    "failed": 0,
+    "thumbChecks": 36,
+    "sourceControls": 12,
+    "queryRoundtrips": 36,
+    "ja390LineChecks": 2,
+    "screenshots": 2,
+    "pageErrors": 0,
+    "consoleErrors": 0
+  }
+}

@@ -28,7 +28,11 @@
     "check:depth": "node scripts/check-privacy-depth.mjs",
     "check:detail-images": "node --experimental-strip-types scripts/check-product-detail-images.mjs",
     "check:sources": "node scripts/check-source-lists.mjs",
-    "check:mobile": "node scripts/check-mobile-refinement.mjs"
+    "check:mobile": "node scripts/check-mobile-refinement.mjs",
+    "check:types": "node scripts/check-type-choice-images.mjs",
+    "check:headings": "node scripts/check-regional-headings.mjs",
+    "package:delivery": "pwsh -NoProfile -File scripts/package-delivery.ps1",
+    "check:docs": "node scripts/check-docs.mjs"
   },
   "dependencies": {
     "astro": "7.4.12",

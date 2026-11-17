@@ -18,7 +18,9 @@ export interface MarketPrices {japan:MarketPrice|null;international:MarketPrice|
 export type MarketCatalog=Pick<Catalog,'products'|'links'|'merchants'>;
 const known=(amount:unknown,currency:unknown):amount is number=>typeof amount==='number'&&Number.isFinite(amount)&&amount>=0&&typeof currency==='string'&&/^[A-Z]{3}$/.test(currency);
 
-/** Language changes the wording, never the verified market price or destination. */
+/** Read canonical market facts, not catalogFor(locale)'s display-price overlay.
+ * localizedPrices.ja is a researched Japan storefront price, never an FX result.
+ * Components handle UI formatting and locale-bound ad eligibility separately. */
 export function marketPricesFor(productId:string,source:MarketCatalog=catalog):MarketPrices {
  const product=source.products.find(product=>product.id===productId);
  if(!product)return {japan:null,international:null,japanLinks:[],internationalLinks:[]};

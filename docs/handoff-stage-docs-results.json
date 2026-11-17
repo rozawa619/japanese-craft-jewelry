@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-11-17T06:44:58.334Z",
+  "method": "Read-only local link, Markdown heading/fragment and pnpm/node-script reference checks on active maintainer documents. External URLs are counted, not requested. Legacy operations after its explicit marker and historical research/report prose are not treated as the current runbook.",
+  "files": [
+    "README.md",
+    "AGENTS.md",
+    "src/README.md",
+    "src/data/README.md",
+    "docs/README.md",
+    "docs/setup.md",
+    "docs/handoff.md",
+    "docs/ai-handoff.md",
+    "docs/architecture.md",
+    "docs/editing-guide.md",
+    "docs/verification-guide.md",
+    "docs/operations.md",
+    "specs/017-maintainer-handoff/spec.md",
+    "specs/017-maintainer-handoff/plan.md",
+    "specs/017-maintainer-handoff/tasks.md",
+    "specs/017-maintainer-handoff/validation.md"
+  ],
+  "errors": [],
+  "localLinks": 212,
+  "anchors": 5,
+  "externalLinks": 9,
+  "commands": 81,
+  "scriptPaths": 19,
+  "snapshot": {
+    "packageVersion": "0.15.0",
+    "nodeRequirement": ">=24.22.3",
+    "pnpm": "pnpm@11.25.0",
+    "publishedProducts": 50,
+    "catalogProducts": 56
+  },
+  "status": "passed",
+  "summary": {
+    "files": 16,
+    "localLinks": 212,
+    "anchors": 5,
+    "externalLinksUnchecked": 9,
+    "pnpmReferences": 81,
+    "nodeScriptReferences": 19,
+    "errors": 0
+  }
+}

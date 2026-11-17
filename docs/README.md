@@ -1,0 +1,41 @@
+# 文書の入口
+
+文書改訂017（2026-11-17）。この一覧の「現在の保守」が通常の入口です。過去の報告を新しい仕様・現在値として読む必要はありません。
+
+## 現在の保守
+
+| 資料 | 読むとき |
+| --- | --- |
+| [現在状態・残作業](handoff.md) | 公開app/最新source/未完了を知る |
+| [別AIへ渡すprompt](ai-handoff.md) | 会話履歴なしで再開する |
+| [起動・公開・復旧・ZIP](setup.md) | 初回や別PC、環境エラー、公開/納品 |
+| [編集cookbook](editing-guide.md) | 商品・日英・価格・画像・店舗を直す |
+| [構造と正本](architecture.md) | データ/表示/ブラウザーの分担を理解する |
+| [検証matrix](verification-guide.md) | 必要な検査とreport保存先を選ぶ |
+| [運用の旧記録](operations.md) | 従来手順の背景だけを調べる |
+| [共通原則](constitution.md) / [AI規則](../AGENTS.md) | 捏造禁止・権利・広告gate・作業方針 |
+
+## 検証と未完了条件
+
+- [公開/納品の機械記録](deployment-results.json)と[0.15の実測説明](verification.md)。HTML生成の成功、公開成功、Googleの審査は別です。
+- [保守文書017の検証](../specs/017-maintainer-handoff/validation.md)。文書と再実行手順の確認は、過去の画面改修の検査から分けています。
+- [security監査](security-review-v15.md) / [現在の境界](security.md) / [host観測](visual-mobile-stage-hosted-security-headers-results.json)。検出した問題とhost/accountの残範囲を区別します。
+- [申請前チェック](pre-application-checklist.md) / [商用hostの確認](hosting-commercial-readiness-v11.md) / [AdSense点検の履歴](adsense-review-v11.md)。未申請を承認済みにしません。
+- [画像生成記録](image-generation-solo-v14.json) / [地図の取得と実装](inline-maps-v14.md) / [海外SEO](international-seo-v13.md)。実画像/実地図/検索実績の限界も記録しています。
+
+## 説明書でもありbuild入力でもある資料
+
+| ファイル | 使用箇所 |
+| --- | --- |
+| [research/sources.json](research/sources.json) | catalog loader/商品・地域等の出典表示、validator |
+| [assets.json](assets.json) | 画像権利・退役・data/build validator・export |
+| [image-generation-solo-v14.json](image-generation-solo-v14.json) | 単体AI画像50点のhash/生成記録の検査 |
+| [image-baseline-v12.json](research/image-baseline-v12.json) | 保持する旧画像のSHA検査 |
+
+この4件だけで全依存を網羅した表ではありません。新しい環境へはdocs全体を含む全sourceを渡し、docsを一括削除しないでください。
+
+## 履歴の読み方
+
+archiveと番号付きの旧報告は、当時の判断/失敗raw/出典の確認範囲を保つ資料です。design.mdやcontent-inventory.mdなど古い説明にも当時の件数・UIが残っています。現行の仕様は[016](../specs/016-visual-choices-mobile-security/spec.md)、今回の保守文書の仕様は[017](../specs/017-maintainer-handoff/spec.md)。
+
+0.15の一次実測はvisual-mobile-stage、0.14はprivacy-depth-stage、0.13はvisual-seo-stage。これより古いeditorial/quality/market/destination-stage等を最新検証へ転用しません。今回のdocs/tool検査はhandoff-stageで分けます。私的スクリーンショット/元PNG/artifactsはZIPの実行依存ではなく、納品先の別資料です。

@@ -1,28 +1,42 @@
-import {cpSync,existsSync,mkdirSync,readdirSync,renameSync,readFileSync} from 'node:fs';
-import {dirname,resolve,sep} from 'node:path';
-import {fileURLToPath} from 'node:url';
-const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
-const workspace=resolve(root,'..');
-const delivery=resolve(workspace,'japanese-craft-jewelry-delivery');
-const source=resolve(delivery,'source');
-if(!source.startsWith(delivery+sep)||!delivery.startsWith(workspace+sep)||dirname(source)!==delivery)throw new Error('Unsafe export destination');
-mkdirSync(delivery,{recursive:true});
-if(existsSync(source)){
- const backup=resolve(delivery,'source-backup-'+Date.now());
- if(!backup.startsWith(delivery+sep))throw new Error('Unsafe export backup');
- renameSync(source,backup);
+import { cpSync, existsSync, lstatSync, mkdirSync, readdirSync, renameSync } from 'node:fs';
+import { randomUUID } from 'node:crypto';
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { assertPlainPath, preflightExport, verifySourceExport } from './lib/source-export.mjs';
+
+const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+// Eligible inputs and destination ancestors are checked before any write or
+// backup rename. pnpm package and ZIP creation share the same selection policy.
+const plan = preflightExport(root);
+const evidenceFiles = [];
+const artifacts = resolve(root, 'artifacts');
+assertPlainPath(artifacts);
+for (const entry of (existsSync(artifacts) ? readdirSync(artifacts) : []).filter(entry => entry.startsWith('visual-mobile-stage-') && !entry.includes('-pre-polish-') && /\.(?:png|json)$/.test(entry))) {
+  const path = resolve(artifacts, entry);
+  assertPlainPath(path);
+  if (!lstatSync(path).isFile()) throw new Error('Evidence must be a regular file: ' + path);
+  evidenceFiles.push({ from: path, to: resolve(plan.evidence, entry) });
 }
-mkdirSync(source,{recursive:true});
-const retiredLocalPaths=new Set(JSON.parse(readFileSync(resolve(root,'docs/assets.json'),'utf8')).assets.flatMap(asset=>asset.status==='retired'&&typeof asset.localRetiredPath==='string'&&/^public\/images\/[a-z0-9-]+\.webp$/.test(asset.localRetiredPath)?[resolve(root,asset.localRetiredPath)]:[]));
-const skip=new Set(['node_modules','dist','.git','.astro','artifacts','test-results','playwright-report']);
-for(const entry of readdirSync(root)){
- if(skip.has(entry)||entry.endsWith('.log')||(entry.startsWith('.env')&&entry!=='.env.example'))continue;
- cpSync(resolve(root,entry),resolve(source,entry),{recursive:true,filter:sourcePath=>!retiredLocalPaths.has(sourcePath)});
+
+mkdirSync(plan.delivery, { recursive: true });
+if (existsSync(plan.source)) {
+  const backup = resolve(plan.delivery, 'source-backup-' + Date.now() + '-' + randomUUID());
+  assertPlainPath(backup);
+  renameSync(plan.source, backup);
 }
-const evidence=resolve(delivery,'screenshots',JSON.parse(readFileSync(resolve(root,'package.json'),'utf8')).version);
-mkdirSync(evidence,{recursive:true});
-const artifacts=resolve(root,'artifacts');
-for(const entry of (existsSync(artifacts)?readdirSync(artifacts):[]).filter(entry=>entry.startsWith('visual-mobile-stage-')&&!entry.includes('-pre-polish-')&&/\.(?:png|json)$/.test(entry))){
- const image=resolve(artifacts,entry);if(existsSync(image))cpSync(image,resolve(evidence,entry));
+mkdirSync(plan.source);
+for (const name of plan.files) {
+  const from = resolve(root, name);
+  const to = resolve(plan.source, name);
+  assertPlainPath(from);
+  assertPlainPath(to);
+  mkdirSync(dirname(to), { recursive: true });
+  cpSync(from, to);
 }
-console.log('Current source exported; any previous export was preserved as a backup:',source);
+verifySourceExport(root);
+mkdirSync(plan.evidence, { recursive: true });
+for (const { from, to } of evidenceFiles) {
+  assertPlainPath(to);
+  cpSync(from, to);
+}
+console.log('Current source exported; any previous export was preserved as a backup:', plan.source);

@@ -7,7 +7,8 @@ import {dirname} from 'node:path';
 import {selection} from '../src/config/selection.ts';
 
 const origin=new URL(process.env.CHECK_BASE_URL||'http://127.0.0.1:4322').origin;
-const base='/'+(process.env.PUBLIC_BASE_PATH||'japanese-craft-jewelry').split('/').filter(Boolean).join('/')+'/';
+const baseParts=(process.env.PUBLIC_BASE_PATH||'japanese-craft-jewelry').split('/').filter(Boolean);
+const base='/'+baseParts.join('/')+(baseParts.length?'/':'');
 const reportPath=process.env.CHECK_REPORT_PATH||'docs/mobile-refinement-stage-results.json';
 const prefix=(process.env.CHECK_SCREENSHOT_PREFIX||'mobile-refinement-stage').replace(/[^a-zA-Z0-9_-]/g,'-');
 const raw=async p=>JSON.parse(await readFile(p,'utf8'));

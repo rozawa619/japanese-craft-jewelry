@@ -1,52 +1,56 @@
-# 引継ぎ — 0.15 画像で選ぶ・スマホ・閉じた出典・security
+# 現在状態と引継ぎ
 
-更新2026-11-17。AGENTS → constitution → specs/016 → 本書 → operations。0.14の確定結果はdocs/archiveのv14へ保存。公開/納品の確定値はdeployment-results.jsonと各visual-mobile-stage reportを優先。
+文書改訂017、2026-11-17。別AIは[コピー用prompt](ai-handoff.md)、人は[編集ガイド](editing-guide.md)から始められます。過去の途中値を積み上げた説明は[0.15保存版](archive/handoff-v15.md)へ退避しました。
 
-## 変更内容
+## 何を作っているか
 
-産地の種類別行とhome5種類に、実際の公開商品/地域/種類に属する小さな単体AI画像を表示。既存98ファイルのbytesを保持し、新規生成/写真転載なし。type-choices helperは呼出し元の編集順を保ち、draft/別地域を除外。価格/件数/URL query/hashを保持し、人気順位とはしない。
+Japanese Craft Jewelryは、SORAが全国の工芸ジュエリーを選ぶ日英サイトです。販売/決済/発送・ブログ・Contactはありません。現時点で公開50/全56商品、14地域、24技法、23店舗/43商品の関連、人物48＋単体50のAI画像98ファイル。今後の追加上限ではありません。
 
-Sourcesを初期closedのnative detailsへ統一。商品#product-sourcesには商品/市場価格/購入根拠の実確認日と公式出典、店舗visit-sourcesには店舗日付を集約。MarketPriceの繰返し日付を除きdata-price-checked-atは保持。工房/技法/産地/方針/観光統計の出典も閉じる。公式CTA・価格市場・在庫注意・AI/広告開示は見えるまま。直接hashで対象を開き、JavaScript無効時もnative開閉可能。
+41品の公式注文受付と9品の小売/現行カタログという既存根拠を保持します。将来在庫や店頭の個別在庫は保証しません。COCOON2、欠品18K、現行販売未確認の畠山2、hairpinはdraftを維持。復帰は対象variantの現行販売を再調査します。
 
-狭幅はfilter1列/16px・48px、言語/Menu・副導線44px、長いJA見出し、footer、safe-area、短い横画面の固定CTA抑制、focusスクロール余白を修正。市場ラベル/地図説明/閉じるも読みやすくした。Chrome touch emulationであり実機Safari検証とはしない。
+## 公開版・source・証拠の区別
 
-外部リンク検査ツールの自動redirect/DNS接続を、各hopのHTTPS/全DNS公開IP判定/接続先pin/timeout/body破棄のNode専用transportへ変更。悪意の負例はmockでprivateへ実接続なし。Node最低版24.22.3、起動前/CIのfloor、CI全severity auditを追加。rootはworkspace内portable Nodeと既存pnpm JS CLIのtask-local wrapperで検証し、OSglobal変更なし。詳細security-review-v15、host-observation-v15。
-
-## 正本と不変条件
-
-catalog/jaは事実/価格/URL、product-stories/MD/choice/guideは紹介、purchase-evidence/visits/sourcesは根拠。今回事実・確認日・画像bytes・50公開/56総数・14地域・24技法・258商品出典・23店舗/43品を変更していない。41通販/9小売カタログの既存根拠を将来在庫/注文成立の保証にしない。
-
-SORA、JAEN同一ページ/query/hash切替、全国構造、ブログ/Contact/決済なし。広告program/item両承認/host/date/locale gateを維持、全実データは未申請/通常リンク。AdSense off、地図opt-inの選択は広告認定CMPではない。COCOON2/欠品18K/畠山2/hairpinはdraft、退役10画像は公開/ZIPから除外。復帰は現行購入根拠を再調査。
-
-## 更新入口
-
-| 場所 | 役割 |
+| 対象 | 正本 |
 | --- | --- |
-| type-choices.ts・TypeChoiceImage・RegionalChoiceGuide・home | 実公開集合の画像入口。件数/価格/絞込を維持 |
-| Sources・product template・VisitGuide | 閉じた出典と確認日、data-information-checks/data-market-check/data-store-information-checked |
-| MarketPrice・PurchaseEvidence | 価格正本/metadata、購入根拠は閉じた一覧内 |
-| global.css・scoped style | 入力/操作域/長文/固定CTA/画像比率/横向き |
-| safe-outbound.ts・check-external.mjs | DNS/redirect/接続固定。private実アクセスで試さない |
-| check-runtime.mjs・astro.mjs・workflow | サポート中のpatched Node最低版/CI監査 |
+| 公開アプリ | commit 1f0021306e87ce9e7dc43bdf446cffedc59e4134、[Actions44024678465](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44024678465) success |
+| 現在の作業source | git status / git logと[package.json](../package.json)。文書/task更新のcommitは公開appと異なる場合がある |
+| 最新の公開/納品状態 | [deployment-results.json](deployment-results.json) |
+| 0.15検証の段階と限界 | [verification.md](verification.md)・[mobile検証](mobile-refinement-v15.md) |
+| 今回の保守文書の検査 | [017 validation](../specs/017-maintainer-handoff/validation.md)とhandoff-stageの記録 |
 
-## 検証と残る範囲
+今回の依頼は引継ぎ・人の編集性です。アプリ0.15.0/商品事実/価格/画像/広告状態を変更せず、文書/保守toolと必要なコメントを整備しました。公開appの成功を、新しいdocs commitの公開成功と混同しません。
 
-ローカル統合verifyは121型ファイル0/0/0、124単体、264HTML、通常1016/広告0、949実行script CSP hash、248JSONが成功。価格314、source全248（100商品/348閉じた一覧/1246source行）、mobile92が成功。その他の完了値/最終型file数/公開結果はverificationとdeployment-resultsへ追記する。初回QAのMJS構文/unused hintは修正後のverify成功と区別し、失敗logもローカル保持。
+## 再開の順序
 
-既知audit0/348依存は時点監査で、未知問題や全安全を保証しない。現hostではHTTPS/HSTS/meta CSPがある一方、HTTP CSP/frame-ancestors/XFO/nosniff/PermissionsPolicyは未設定。静的でログイン/送信/決済なしの現構成に対する未実証の多層防御gapとし、効かないmeta/JS framebustで解決済みにしない。任意ヘッダー制御は対応hostでの別実装/実測が必要。MFA/branch保護/復旧等のアカウント設定も未操作。
+1. [AGENTS](../AGENTS.md)とユーザーの最新依頼を読む。
+2. [setup](setup.md)でruntime・env・baseを揃え、[architecture](architecture.md)で正本を特定。
+3. [editing-guide](editing-guide.md)に沿い必要なファイルだけ変更。docs JSONはbuild依存なので保持。
+4. [verification-guide](verification-guide.md)の影響別検査を行い、Gitならgit diff、ZIPなら保管した展開元とのフォルダー比較。必要なら公開と公開後確認。
+5. 仕様/引継ぎ/実測を更新し、[納品手順](setup.md#納品zipを作る)で全sourceとSHAを再作成。
 
-AdSense実アカウント/所有確認/実ID/認定CMP/地域別同意と配信/稼働状態のPrivacy/CSP統合、GitHub Pages商用用途適合または配信先選択は残る。検索掲載/順位/流入はSearch Consoleで別確認。申請/契約/課金/移転/DNS変更は実行していない。
+## 守る既存の挙動
 
-## 納品
+- 国内JPY/海外実額/表示言語を分ける。未承認広告を使わず共通resolverの両承認/host/date/locale gateを保つ。
+- AI図は実物の証拠ではない。短いcaption/alt/元比率、画像権利と生成記録、退役10画像の除外を維持。
+- 出典/dateは初期closed。Sourcesだけが同ページリンクを処理し、pushState→open/scroll/summary focus。重複handlerで即閉じ後の再openを再導入しない。
+- Google Mapsは明示表示後だけ。Google帰属表示を隠さず、広告CMPと分け、自前Cookie/Storageで選択を保存しない。
+- 日英の同ページ/query/hash、種類画像の実地域/種類との一致、320px/横向き/keyboardの操作性を維持。
 
-最終verify124型ファイル0/0/0・124単体・369生成物。品質497/価格314/種類画像32（84instances）/source248/Maps9/広告6/SEO/meta1は初回広範囲の成功。見出しと出典操作の追加調整は別の厳密差分・mobile/touch/競合の回帰を記録する。詳細static-results/build-manifest・各JSON・016validation。121/123filesは統合途中の型検査値。
+## 未完了・判断が必要な事項
 
-隣接japanese-craft-jewelry-delivery/sourceとjapanese-craft-jewelry-source.zipへ全ソース/設定例/lock/CI/仕様/調査/検証/98画像を書出す。.git/.env/秘密/node_modules/dist/artifacts/退役画像を除外し、package-verification-0.15.0.jsonでrepo→export→ZIPの全件SHAを照合。QA PNG/JSONはscreenshots/0.15.0へ分離。今回新画像生成なし、原本50PNGと生成記録は0.14の別ZIPを保持する。
+| 項目 | 状態/次に必要なこと |
+| --- | --- |
+| AdSense | off固定。実アカウント/所有確認/実ID/認定CMP/地域別同意・配信の実装は未完了 |
+| 提携 | 全program/link未申請・通常URL。申請先の現行条件と真実の申請者情報が必要 |
+| 商用host | GitHub Pages用途適合の確認または適した公開先の判断が残る。今回契約/移転/DNSなし |
+| security | 実装上の検出問題は修正。HTTP保護header制御やMFA/branch/recovery等はhost/account側の未操作範囲。全安全/侵入試験済みとはしない |
+| 実物写真 | 50品とも写真使用許諾は未取得。AI図から仕様や試着を認定しない |
+| 検索/端末 | Google掲載/順位/流入は未測定。Chrome emulationを実機Safari/iOSと呼ばない |
 
-## 公開後の最終検証
+0.15の広範囲497/価格314/広告6等と、最後の見出し/Source変更後92・tap4・race12・heading12等は別の段階です。最終公開248HTML/98画像のSHAとSource保持も確認しています。正確な範囲はverificationを読み、全検査を最終版で再実行したと書き換えません。
 
-最終アプリ1f0021306e87ce9e7dc43bdf446cffedc59e4134、Actions44024678465 completed/success（2026-11-17T05:32:16Z、GitHub API実測）。最終公開source248/248、mobile92/92、実tap4/4、出典操作競合12/12、見出し12/12、全種類画像32/32（84instances）、共有meta1/1、補足24/24が成功。248正規URLの200/meta/hreflang/JSON-LD/CSPと98画像200/SHAを最終distと照合。公開mobile Maps2とローカルMaps9を区別。広範囲のquality497/価格314/広告6等と初回公開quality497は見出し・出典操作の追加調整前の実測で、最終版で497を再実行したとしない。追加調整の厳密差分と重点回帰結果を併記し、事実/価格/画像/行き先は不変。最終出力は最終mobile/race/heading検証時から不変。公開後の追加は証跡・文書・納品だけ。結果はvisual-mobile-stage-hosted-*。
+## 納品物
 
-## 最終ソース納品
+全sourceは隣接japanese-craft-jewelry-delivery/sourceとlatestのjapanese-craft-jewelry-source.zip。新しい同梱scriptは版付きZIPと外部package-verification JSONも作成します。全件repo/export/ZIP SHAを照合し、ZIP自身hashはZIP外に置きます。新しい件数/最新proof名はdeployment-resultsのsourceDeliveryを参照。
 
-全ソース822ファイル・98公開画像。repository→export→ZIPの集合と全件SHA256を照合し、完了記録を含む再書出しにも同じ検証を行う。ZIP自身のbytes/SHAは隣接delivery/package-verification-0.15.0.jsonへ置き、自己参照を避ける。.git/.env/秘密/node_modules/dist/artifacts/退役10画像を除外。QA PNG/JSONはscreenshots/0.15.0に分離し、文中artifacts参照は私的ローカル証跡でアプリの実行依存ではない。新画像生成なし、0.14原本50PNGと制作記録は既存の別ZIPを保持。
+.git/.env/指定した認証ファイル名・秘密鍵拡張子/依存実体/dist/.astro/artifacts/退役画像を除外。自動検査は指定パス・リンク/ジャンクション・ファイル集合・SHAの確認で、任意ファイルの内容やGit全履歴の機密検査ではありません。PNG原本とQA画面は別資料で、fresh cloneのbuildに不要です。元PNG50枚は0.14の別ZIPを保持。task-local Node/pnpm wrapperはこのPC固有の便宜で、他PCはsetupの要件から構築できます。

@@ -1,0 +1,177 @@
+{
+  "revision": "017",
+  "applicationVersion": "0.15.0",
+  "recordedAt": "2026-11-17T06:44:12.579Z",
+  "status": "passed",
+  "documentation": "docs/handoff-stage-docs-results.json",
+  "applicationOutput": {
+    "checkedAt": "2026-11-17T06:30:10.206Z",
+    "status": "passed",
+    "applicationCommit": "1f0021306e87ce9e7dc43bdf446cffedc59e4134",
+    "reference": "docs/visual-mobile-stage-build-manifest.json",
+    "fileSetMatches": true,
+    "everyOutputFileSha256Matches": true,
+    "filesChecked": 369,
+    "htmlFiles": 264,
+    "webpFiles": 98,
+    "limits": "Local public-profile rebuild compared byte-for-byte with final v0.15 manifest. No new deployment or current hosted HTTP assertion."
+  },
+  "rootVerifyBeforeAdditionalPackagingTests": {
+    "typeFiles": 127,
+    "unitTests": 124,
+    "failed": 0,
+    "log": {
+      "path": "artifacts/handoff-stage/verify.log",
+      "sha256": "3dd0cb14f46e5204343c2c706c1049e91463a75c62c0a2b2b2363a4689f315e9"
+    }
+  },
+  "freshSourceSetup": {
+    "source": "C:\\Users\\rozawa\\Documents\\ChatGPT\\アプリ開発\\japanese-craft-jewelry-delivery\\source",
+    "fixture": "C:\\Users\\rozawa\\Documents\\ChatGPT\\アプリ開発\\ito-craft\\artifacts\\handoff-fresh-017",
+    "checkedAt": "2026-11-17T06:37:13.065Z",
+    "privatePathsAbsentBeforeSetup": true,
+    "originalPngsOrLocalRuntimeRequired": false,
+    "dependencies": "Reuse unchanged locked root node_modules through an explicit junction. This validates source-only startup/build, not a new network install or pnpm store availability.",
+    "version": "0.15.0"
+  },
+  "freshSourceNoEnvVerify": {
+    "typeFiles": 129,
+    "unitTests": 135,
+    "failed": 0,
+    "log": {
+      "path": "artifacts/handoff-fresh-017/artifacts/checks/verify.log",
+      "sha256": "b3678e176a0232667c33c116dc215b80ed14734c69fb4c7045c1bce09bba0397"
+    }
+  },
+  "freshRootDevStartup": {
+    "checkedAt": "2026-11-17T06:39:51.099Z",
+    "command": "pnpm dev",
+    "noEnv": true,
+    "checks": [
+      {
+        "url": "http://127.0.0.1:4321/ja/",
+        "status": 200,
+        "noindex": true,
+        "rootBase": true
+      },
+      {
+        "url": "http://127.0.0.1:4321/en/",
+        "status": 200,
+        "noindex": true,
+        "rootBase": true
+      }
+    ],
+    "passed": 2,
+    "failed": 0
+  },
+  "browser": {
+    "projectSubpathTypes": {
+      "checks": 32,
+      "passed": 32,
+      "failed": 0,
+      "regions": 14,
+      "locales": 2,
+      "imagesChecked": 84,
+      "screenshots": 4,
+      "pageErrors": 0,
+      "consoleErrors": 0,
+      "origin": "http://127.0.0.1:4323",
+      "base": "/japanese-craft-jewelry/",
+      "rawReport": {
+        "path": "docs/handoff-stage-project-subpath-types-results.json",
+        "sha256": "a21a72fa77af99ef7cf925ca439bb7bf518cdf7e4e1b94cd67f2fcc650ce2852"
+      }
+    },
+    "projectSubpathHeadings": {
+      "checks": 12,
+      "passed": 12,
+      "failed": 0,
+      "thumbChecks": 36,
+      "sourceControls": 12,
+      "queryRoundtrips": 36,
+      "ja390LineChecks": 2,
+      "screenshots": 2,
+      "pageErrors": 0,
+      "consoleErrors": 0,
+      "origin": "http://127.0.0.1:4323",
+      "base": "/japanese-craft-jewelry/",
+      "rawReport": {
+        "path": "docs/handoff-stage-project-subpath-headings-results.json",
+        "sha256": "14a2463a5b0ce6644ce849a1a814820fff24e50886dec7667b1e4286c95350c2"
+      }
+    },
+    "freshRootTypes": {
+      "checks": 32,
+      "passed": 32,
+      "failed": 0,
+      "regions": 14,
+      "locales": 2,
+      "imagesChecked": 84,
+      "screenshots": 4,
+      "pageErrors": 0,
+      "consoleErrors": 0,
+      "origin": "http://127.0.0.1:4321",
+      "base": "/",
+      "rawReport": {
+        "path": "docs/handoff-stage-fresh-root-types-results.json",
+        "sha256": "e6d0bf17e5f2e1a099d650c9a628a1268f1bce9e2eaf582a31703df614aa2273"
+      }
+    },
+    "freshRootHeadings": {
+      "checks": 12,
+      "passed": 12,
+      "failed": 0,
+      "thumbChecks": 36,
+      "sourceControls": 12,
+      "queryRoundtrips": 36,
+      "ja390LineChecks": 2,
+      "screenshots": 2,
+      "pageErrors": 0,
+      "consoleErrors": 0,
+      "origin": "http://127.0.0.1:4321",
+      "base": "/",
+      "rawReport": {
+        "path": "docs/handoff-stage-fresh-root-headings-results.json",
+        "sha256": "6b21c589d5d80ab6ed91f4ae8d9309a99e778da7a47fff003cc2fb4691cd85bd"
+      }
+    },
+    "freshRootSources": {
+      "checks": 248,
+      "passed": 248,
+      "failed": 0,
+      "htmlSha256Comparisons": 248,
+      "productPages": 100,
+      "sourceDisclosures": 348,
+      "sourceRecords": 1246,
+      "origin": "http://127.0.0.1:4324",
+      "rawReport": {
+        "path": "docs/handoff-stage-fresh-root-sources-results.json",
+        "sha256": "7043573567d9502a9f5eda1e8c098053d80d597e5fbebb2e4dbcd2739bee2a04"
+      }
+    },
+    "freshRootSourceRace": {
+      "checks": 12,
+      "passed": 12,
+      "failed": 0,
+      "rapidSequences": 24,
+      "sourceInputsUnchanged": true,
+      "origin": "http://127.0.0.1:4324",
+      "base": "/",
+      "rawReport": {
+        "path": "docs/handoff-stage-fresh-root-source-race-results.json",
+        "sha256": "331adbec7109a5ee0d7eb3d7f8e14b3793369326f4b5611360a8b71059a168d7"
+      }
+    }
+  },
+  "packaging": {
+    "command": "pnpm package:delivery or pwsh -NoProfile -File scripts/package-delivery.ps1 -Revision docs-017",
+    "proof": "../japanese-craft-jewelry-delivery/package-verification-0.15.0-docs-017.json",
+    "verification": "Shared repository file selection; repository/export set and all SHA, export/ZIP set and all SHA, checked delivery ancestors and explicit private/generated exclusions. External proof records final file count, ZIP bytes and SHA."
+  },
+  "limits": [
+    "Fresh source fixture reuses existing unchanged locked dependencies through a junction; no new network install was performed.",
+    "The no-env build is a local root preview/noindex. Root source/race checks use a second public-metadata root build on localhost only.",
+    "No new deployment or hosted HTTP check; all369 public-profile rebuild files match the final deployed-app manifest.",
+    "Chrome automation, not a physical iOS/Safari test, arbitrary-content secret scan, whole-history audit or AdSense/legal/security certification."
+  ]
+}
