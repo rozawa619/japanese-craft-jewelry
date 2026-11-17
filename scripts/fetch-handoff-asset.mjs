@@ -46,7 +46,9 @@ async function downloadHandoffAsset(asset){
  mkdirSync(directory,{recursive:true});assertPlainPath(directory);
  const candidate=resolve(directory,'.'+asset.name+'.candidate-'+randomUUID());
  assertPlainPath(candidate);
- let downloaded=false,bodyCompletion;
+ let downloaded=false;
+ /** @type {Promise<void> | undefined} */
+ let bodyCompletion;
  const transferController=new AbortController(),transferTimer=setTimeout(()=>transferController.abort(new DOMException('Handoff asset transfer timed out','TimeoutError')),120000);
  try{
   const result=await checkPublicHttps(asset.url,{

@@ -14,6 +14,7 @@ jobs:
       PUBLIC_REPOSITORY_URL: https://github.com/rozawa619/japanese-craft-jewelry
       PUBLIC_OPERATOR_NAME: SORA
       PUBLIC_CONTACT_EMAIL: ''
+      NO_COLOR: '1'
       CHECK_IMAGE_REPORT_PATH: artifacts/checks/images.json
       CHECK_DETAIL_IMAGE_REPORT_PATH: artifacts/checks/detail-images.json
       CHECK_PRIVACY_REPORT_PATH: artifacts/checks/privacy.json
@@ -33,11 +34,33 @@ jobs:
       - name: Verify no creator-specific inputs exist
         run: node scripts/check-handoff-portability.mjs --preflight
       - name: Install the pinned package manager
-        run: npm install -g pnpm@11.25.0
+        shell: bash
+        run: |
+          if ! npm install --prefix "$RUNNER_TEMP/handoff-pnpm" --no-save pnpm@11.25.0 > "$RUNNER_TEMP/handoff-pnpm.log" 2>&1; then
+            cat "$RUNNER_TEMP/handoff-pnpm.log"
+            BOOTSTRAP_LOG="$RUNNER_TEMP/handoff-pnpm.log" node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const message=fs.readFileSync(process.env.BOOTSTRAP_LOG,'utf8').slice(-2500).replaceAll('%','%25').replaceAll('\r','%0D').replaceAll('\n','%0A');
+          console.log('::error title=Pinned pnpm setup::'+message);
+          NODE
+            exit 1
+          fi
+          echo "$RUNNER_TEMP/handoff-pnpm/node_modules/.bin" >> "$GITHUB_PATH"
       - name: Install dependencies from the frozen lockfile
         run: pnpm install --frozen-lockfile
       - name: Type, unit, build, links, image and privacy checks
-        run: pnpm verify
+        shell: bash
+        run: |
+          pnpm verify > artifacts/checks/verify.log 2>&1
+          cat artifacts/checks/verify.log
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';import assert from 'node:assert/strict';
+          const log=fs.readFileSync('artifacts/checks/verify.log','utf8');
+          const type=/Result \((\d+) files\)/.exec(log),tests=/\btests (\d+)/.exec(log);
+          assert.ok(type&&tests);assert.match(log,/0 errors/);assert.match(log,/0 warnings/);assert.match(log,/0 hints/);assert.match(log,/\bfail 0/);
+          const summary={typeFiles:Number(type[1]),unitTests:Number(tests[1]),errors:0,warnings:0,hints:0};
+          console.log('::notice title=Git handoff static summary::'+JSON.stringify(summary));
+          NODE
       - name: Check international search metadata
         run: pnpm check:seo
       - name: Check Japanese model records without private PNGs

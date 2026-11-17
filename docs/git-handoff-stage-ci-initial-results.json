@@ -1,0 +1,116 @@
+{
+  "checkedAt": "2026-11-17T14:06:45.966Z",
+  "status": "failed",
+  "workflow": "verify-handoff.yml",
+  "method": "Manual read-only clean-runner verification from GitHub main. No Pages deployment, private originals, creator workspace, node_modules copy or dependency cache action.",
+  "actions": {
+    "checkedAt": "2026-11-17T14:06:45.637Z",
+    "id": 44099414779,
+    "headSha": "9607a802e47faedadbff7170204a88fe64254a59",
+    "status": "completed",
+    "conclusion": "failure",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44099414779",
+    "updatedAt": "2026-11-17T14:06:29Z"
+  },
+  "jobs": [
+    {
+      "id": 134095073688,
+      "name": "verify",
+      "status": "completed",
+      "conclusion": "failure",
+      "runner": "GitHub Actions 1000000059",
+      "steps": [
+        {
+          "name": "Set up job",
+          "number": 1,
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "number": 2,
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+          "number": 3,
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check Node security floor",
+          "number": 4,
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify no creator-specific inputs exist",
+          "number": 5,
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install the pinned package manager",
+          "number": 6,
+          "status": "completed",
+          "conclusion": "failure"
+        },
+        {
+          "name": "Install dependencies from the frozen lockfile",
+          "number": 7,
+          "status": "completed",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "Type, unit, build, links, image and privacy checks",
+          "number": 8,
+          "status": "completed",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "Check international search metadata",
+          "number": 9,
+          "status": "completed",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "Check Japanese model records without private PNGs",
+          "number": 10,
+          "status": "completed",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "Check maintainer documentation",
+          "number": 11,
+          "status": "completed",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "Compare every published output hash",
+          "number": 12,
+          "status": "completed",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+          "number": 23,
+          "status": "completed",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "number": 24,
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "number": 25,
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ]
+}
