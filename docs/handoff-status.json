@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-17T13:43:00.429Z",
+  "entryPoint": "START_HERE.md",
+  "project": {
+    "name": "Japanese Craft Jewelry",
+    "operator": "SORA",
+    "locales": [
+      "ja",
+      "en"
+    ],
+    "scope": "Japan-wide craft jewelry selection media; no checkout,shipping,blog or Contact"
+  },
+  "handoff": {
+    "specification": "024-git-ai-handoff",
+    "status": "verifying_git_only_setup",
+    "basedOnDocumentationCommit": "b6ac11fcf589daa1b7b4786bc98702b36bfee482",
+    "activeSiteImplementationTask": null,
+    "nextAction": "Read the current user request, then choose the source and checks. Completed023 is not pending work.",
+    "currentGitHeadCommand": "git rev-parse HEAD",
+    "verificationReport": "docs/git-handoff-stage-results.json"
+  },
+  "production": {
+    "version": "0.18.0",
+    "applicationCommit": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
+    "actions": {
+      "id": 44089370227,
+      "headSha": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44089370227",
+      "updatedAt": "2026-11-17T13:07:12Z",
+      "observedAt": "2026-11-17T13:07:30.738Z"
+    },
+    "urls": {
+      "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+      "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
+      "places": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/"
+    },
+    "report": "docs/deployment-results.json",
+    "verification": "docs/verification.md",
+    "outputManifest": "docs/japanese-models-stage-build-manifest.json"
+  },
+  "snapshot": {
+    "publishedProducts": 60,
+    "catalogProducts": 66,
+    "draftProducts": 6,
+    "regions": 24,
+    "activeCrafts": 34,
+    "catalogCrafts": 36,
+    "sources": 293,
+    "stores": 33,
+    "productsWithStores": 53,
+    "onlineEvidence": 51,
+    "retailCatalogEvidence": 9,
+    "publicImages": 118,
+    "stylingImages": 58,
+    "soloImages": 60,
+    "newProducts": 0,
+    "newRegions": 0,
+    "newImageFiles": 22,
+    "existingImageBytesRetained": 96
+  },
+  "currentImagePolicy": {
+    "fictionalNationalitySetting": "Japanese",
+    "adultAgeRange": [
+      25,
+      33
+    ],
+    "cuteAndElegant": true,
+    "clearSkin": true,
+    "visibleCaption": "AIイメージ / AI image",
+    "stylingImages": 58,
+    "standaloneImages": 60,
+    "replacedIn023": 22,
+    "retainedIn023": 36,
+    "retiredLocalImages": 32,
+    "manifest": "docs/image-generation-japanese-v23.json"
+  },
+  "setup": {
+    "nodeMinimum": "24.22.3",
+    "pnpm": "11.25.0",
+    "commandGuide": "docs/setup.md",
+    "regularBuildNeedsOriginals": false,
+    "regularBuildNeedsLocalArtifacts": false,
+    "regularBuildNeedsDotEnv": false,
+    "browserTestsNeedChrome": true,
+    "pushNeedsOwnGitHubAuthorization": true
+  },
+  "assets": {
+    "manifest": "docs/handoff-assets.json",
+    "guide": "docs/handoff-assets.md",
+    "fetchCommand": "node scripts/fetch-handoff-asset.mjs originals-0.18.0",
+    "historicalSourceSnapshot": "source-models-023"
+  },
+  "sourceOfTruth": {
+    "sharedFacts": "src/data/catalog.json",
+    "japanese": "src/data/translations/ja.json",
+    "copy": "src/content/products/",
+    "stylingRegistry": "src/data/editorial-images.json",
+    "standaloneRegistry": "src/data/product-detail-images.json",
+    "imageRights": "docs/assets.json",
+    "research": "docs/research/sources.json",
+    "purchase": "src/data/purchase-evidence.json",
+    "visits": "src/data/visits.json",
+    "advertising": "src/data/advertising-privacy.json",
+    "hero": "src/components/RegionHero.astro",
+    "directoryMap": "src/components/JapanJewelryMap.astro",
+    "regionalPhotos": "src/components/RegionSelection.astro"
+  },
+  "completedSpecifications": [
+    "018-national-jewelry-expansion",
+    "019-geographic-discovery-map-privacy",
+    "020-direct-region-map",
+    "021-unified-region-photos",
+    "022-compact-map-and-natural-hero",
+    "023-japanese-model-styling"
+  ],
+  "historicalOnlyScripts": [
+    {
+      "path": "scripts/apply-japanese-model-styling.mjs",
+      "reason": "Completed023 migration; not startup or a pending batch."
+    },
+    {
+      "path": "scripts/check-japanese-model-preservation.mjs",
+      "reason": "One-time495-input proof needs retired files in the historical reviewed checkout."
+    }
+  ],
+  "externalConditions": [
+    {
+      "id": "adsense",
+      "state": "off; no real publisher ID/CMP/application",
+      "guide": "docs/pre-application-checklist.md"
+    },
+    {
+      "id": "affiliates",
+      "state": "not applied; ordinary official links",
+      "guide": "docs/affiliate-readiness.md"
+    },
+    {
+      "id": "hosting-and-account",
+      "state": "Commercial eligibility,hosting migration,real identity/contact,contracts and account MFA/branch protection require real operator decisions.",
+      "guide": "docs/remaining-task-audit-v17.md"
+    }
+  ]
+}

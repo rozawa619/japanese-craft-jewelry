@@ -586,7 +586,13 @@
     "publishedProducts": 60,
     "retiredImagesExcluded": 32,
     "publicOutputUnchangedSinceFinalFocusedAndHostedChecks": true,
-    "finalPass": "Completion notes included by final export; all repository/export/ZIP file sets and SHA checked again. ZIP hash stays in external proof."
+    "finalPass": "Completion notes included by final export; all repository/export/ZIP file sets and SHA checked again. ZIP hash stays in external proof.",
+    "gitHubCopies": {
+      "release": "https://github.com/rozawa619/japanese-craft-jewelry/releases/tag/ai-handoff-2026-11-17",
+      "sourceAssetId": "source-models-023",
+      "proof": "docs/delivery-proofs/package-verification-0.18.0-models-023.json",
+      "note": "Historical1198-file models-023 snapshot; current editable source is main, which includes later handoff docs."
+    }
   },
   "limits": [
     "No physical iOS/Safari or all-law/all-image-rights certification.",
@@ -601,5 +607,14 @@
     "cause": "A fixed75ms assertion raced the existing scroll-to-requestAnimationFrame CTA update; actual predicates were true before hidden was updated. Reproduced once in10 targeted attempts; visible after waiting without interaction.",
     "change": "QA only: wait for actual scroll predicates and rendered visibility through animation-frame polling; all visibility,44px,geometry/source assertions retained. No app/CSS/client bundle change.",
     "finalTypeReport": "docs/japanese-models-stage-final-type-results.json"
+  },
+  "gitHandoff": {
+    "specification": "024-git-ai-handoff",
+    "entryPoint": "START_HERE.md",
+    "statusFile": "docs/handoff-status.json",
+    "assetManifest": "docs/handoff-assets.json",
+    "githubRelease": "https://github.com/rozawa619/japanese-craft-jewelry/releases/tag/ai-handoff-2026-11-17",
+    "verification": "docs/git-handoff-stage-results.json",
+    "productionAppUnchanged": true
   }
 }

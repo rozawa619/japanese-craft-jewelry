@@ -1,0 +1,81 @@
+{
+  "checkedAt": "2026-11-17T13:40:58.574Z",
+  "status": "passed",
+  "release": {
+    "tag": "ai-handoff-2026-11-17",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/releases/tag/ai-handoff-2026-11-17",
+    "status": "published",
+    "id": 448683725,
+    "publishedAt": "2026-11-17T13:40:58Z"
+  },
+  "method": "Existing GitHub repository authorization; draft upload, byte/SHA checks against GitHub asset digest, then publish. No credentials logged/persisted. Public download is checked separately.",
+  "assets": [
+    {
+      "id": "originals-0.13.0",
+      "assetId": 759216371,
+      "name": "japanese-craft-jewelry-ai-originals-0.13.0.zip",
+      "bytes": 46896708,
+      "digest": "sha256:b6ba21bb31f584be3f558578e1812f11a830c210a52bd27498fa384042a981b8",
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/releases/download/ai-handoff-2026-11-17/japanese-craft-jewelry-ai-originals-0.13.0.zip"
+    },
+    {
+      "id": "originals-0.14.0",
+      "assetId": 759218933,
+      "name": "japanese-craft-jewelry-ai-originals-0.14.0.zip",
+      "bytes": 71967973,
+      "digest": "sha256:fbb38b7bbaaebc86d2c1950ff1e389109f56341adebde46d35eeb906f331bfe1",
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/releases/download/ai-handoff-2026-11-17/japanese-craft-jewelry-ai-originals-0.14.0.zip"
+    },
+    {
+      "id": "originals-0.16.0",
+      "assetId": 759219323,
+      "name": "japanese-craft-jewelry-originals-0.16.0.zip",
+      "bytes": 35561799,
+      "digest": "sha256:383cf02e99cdf06d936118e9d071f35df68a1b99191de31442b7f450de386254",
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/releases/download/ai-handoff-2026-11-17/japanese-craft-jewelry-originals-0.16.0.zip"
+    },
+    {
+      "id": "originals-0.18.0",
+      "assetId": 759219577,
+      "name": "japanese-craft-jewelry-originals-0.18.0.zip",
+      "bytes": 44104939,
+      "digest": "sha256:20422809c6f97d93c50176e84abd5bc81161a7d344a8620c9d40050d4225e942",
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/releases/download/ai-handoff-2026-11-17/japanese-craft-jewelry-originals-0.18.0.zip"
+    },
+    {
+      "id": "source-models-023",
+      "assetId": 759219921,
+      "name": "japanese-craft-jewelry-source-0.18.0-models-023.zip",
+      "bytes": 14480497,
+      "digest": "sha256:1e47003313c1f81e22337c1d61f912e3fa175809ad8454ba2e666d17de8b153a",
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/releases/download/ai-handoff-2026-11-17/japanese-craft-jewelry-source-0.18.0-models-023.zip"
+    },
+    {
+      "id": "proof-originals-0.16.0",
+      "assetId": 759220098,
+      "name": "originals-verification-0.16.0.json",
+      "bytes": 654,
+      "digest": "sha256:86a0230942f3966aaf4e05d4ae89debaf829d27bf8970ec08150bdcca8504970",
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/releases/download/ai-handoff-2026-11-17/originals-verification-0.16.0.json"
+    },
+    {
+      "id": "proof-originals-0.18.0",
+      "assetId": 759220146,
+      "name": "originals-verification-0.18.0.json",
+      "bytes": 711,
+      "digest": "sha256:3c06c65d7f322fa3ad188506a9dd1678ebce49a4e508b94c3d1634af3384e423",
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/releases/download/ai-handoff-2026-11-17/originals-verification-0.18.0.json"
+    },
+    {
+      "id": "proof-source-models-023",
+      "assetId": 759220207,
+      "name": "package-verification-0.18.0-models-023.json",
+      "bytes": 1715,
+      "digest": "sha256:0fb0c0cc6aed0d63d1b82706836daad1feee594c4d26df0b501d12d08371af5c",
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/releases/download/ai-handoff-2026-11-17/package-verification-0.18.0-models-023.json"
+    }
+  ],
+  "notes": [
+    "Draft assets use a temporary untagged URL. Publication resolves the stable tag URLs; public download is independently checked."
+  ]
+}

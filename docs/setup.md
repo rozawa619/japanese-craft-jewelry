@@ -29,6 +29,8 @@ npm install --global pnpm@11.25.0
 
 GitならREADMEのrepoをcloneして移動、ZIPなら展開してpackage.jsonがある階層へ移動します。.git/.env/node_modules/dist/artifactsや元PNGがないのは正常です。**docsはbuild依存のJSONを含むので全体を残します。**
 
+[START_HERE](../START_HERE.md)が別AI向けの入口、[handoff-assets](handoff-assets.md)がGitHub原本の取得先です。`.gitattributes`はcheckoutのbytesを維持し、Windowsのautocrlfによる固定SHA記録の変更を防ぎます。新規のソース/文書はUTF-8/LFで保存し、過去のmanifest/proofを一括整形しません。
+
 ~~~sh
 pnpm install --frozen-lockfile
 pnpm dev

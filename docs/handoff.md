@@ -1,97 +1,73 @@
-# 現在状態と引継ぎ
+# 現在の状態と保守の引継ぎ
 
-公開版0.18.0・日本人女性の着用画像023、2026-11-17。文書の入口は保守改訂017を引き継ぎます。別AIは[コピー用prompt](ai-handoff.md)、人は[編集ガイド](editing-guide.md)から始められます。過去の途中値を積み上げた説明は[0.15保存版](archive/handoff-v15.md)へ退避しました。
+2026-11-17。最初に[START_HERE](../START_HERE.md)と[AGENTS](../AGENTS.md)を読みます。[handoff-status.json](handoff-status.json)がGitから再開するための状態、[deployment-results.json](deployment-results.json)が公開アプリの実績です。Git HEADは取得時に確認し、公開appや過去の納品ZIPと混同しません。
 
-## 何を作っているか
+## 完了しているもの
 
-Japanese Craft Jewelryは、SORAが全国の工芸ジュエリーを選ぶ日英サイトです。販売/決済/発送・ブログ・Contactはありません。公開版0.18.0は0.16の台帳である公開60/全66商品・下書き6商品、24県、公開関連34技法（全36）、33店舗/53商品の関連、一次出典293件、人物58＋単体60のAI画像118ファイル。今後の追加上限ではありません。
-
-51品の公式注文受付と9品の小売/現行カタログを購入根拠とします。将来在庫や店頭の個別在庫は保証しません。COCOON2、欠品18K、現行販売未確認の畠山2、hairpinはdraftを維持。復帰は対象variantの現行販売を再調査します。
-
-## 公開版・source・証拠の区別
-
-| 対象 | 正本 |
+| 項目 | 現在の基準 |
 | --- | --- |
-| 公開appの正本 | [deployment-results](deployment-results.json)。作業/文書HEADと実配信appを区別 |
-| 現在の作業source | git status / git logと[package.json](../package.json)。文書/task更新のcommitは公開appと異なる場合がある |
-| 最新の公開/納品状態 | [deployment-results.json](deployment-results.json) |
-| 現在の人物生成/差し替え | [023仕様と検証](../specs/023-japanese-model-styling/)・[画像ガイド](japanese-model-styling-v21.md) |
-| 継承する地図枠/Hero自然高 | [022仕様と検証](../specs/022-compact-map-and-natural-hero/)・[編集手順](compact-layout-v20.md) |
-| 継承する写真サイズ・全ページ共通化 | [021仕様と検証](../specs/021-unified-region-photos/)・[編集手順](region-photos-v19.md) |
-| 旧0.16の実公開検証 | [Source328HTML](national-stage-hosted-sources-results.json)・[補足24](national-stage-hosted-release-results.json)・[mobile92](national-stage-hosted-mobile-results.json)、当時全件成功。概要は[0.16保存版](verification-v16.md) |
-| 旧0.15の段階と限界 | [検証ガイドの履歴](verification-guide.md#015の記録を読む)・[mobile検証](mobile-refinement-v15.md) |
-| 継承した保守文書の検査 | [017 validation](../specs/017-maintainer-handoff/validation.md)とhandoff-stageの記録 |
-| 前段階から継承する地図・Hero | [020仕様と検証](../specs/020-direct-region-map/)と[最新verification](verification.md) |
-| 直前の地図/店舗Maps設定 | [019](../specs/019-geographic-discovery-map-privacy/)とdiscovery-map-stage。当時の結果と区別 |
-| 全国追加の仕様・検査 | [018](../specs/018-national-jewelry-expansion/)とnational-stageの記録。0.15の証跡とは別 |
+| サイト | Japanese Craft Jewelry。全国の工芸ジュエリーを選ぶJA/EN紹介メディア。運営者SORA |
+| 公開URL | [日本語](https://rozawa619.github.io/japanese-craft-jewelry/ja/)・[English](https://rozawa619.github.io/japanese-craft-jewelry/en/) |
+| リポジトリ | [rozawa619/japanese-craft-jewelry](https://github.com/rozawa619/japanese-craft-jewelry)・main |
+| 最新公開アプリ | 0.18.0 / 仕様023、app f2bb423f4c4cf476e449d8ec37837243f764cfee、[Actions44089370227](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44089370227) success |
+| 最新の引継ぎ整備 | [仕様024](../specs/024-git-ai-handoff/spec.md)。Gitからの再開に必要な入口・資料・手順の整備で、アプリを再制作する作業ではない |
+| 内容 | 公開60/登録66商品、下書き6、掲載24県、公開関連技法34/全36、一次出典293、33店舗/53商品に店舗案内 |
+| 画像 | 人物58＋商品単体60＝118公開AI画像。人物は架空の日本人成人女性25〜33歳の生成設定 |
+| 完了した023の変更 | 22人物を新生成・採用・公開、既存36人物と単体60を保持。新22枚は25〜30歳、かわいい系11/綺麗な系統11 |
+| 退役画像 | 旧10＋023の旧22＝32画像を配信/新Git tree/source ZIPから除外。旧原本と生成記録は保持 |
+| 収益化 | AdSense off、実提携未申請、商品リンクは通常URL。広告resolverとPrivacyの土台は実装済み |
 
-直前018の依頼は、全国で追加する価値のあるジュエリーを増やすことでした。秋田・福井・岐阜・広島・鹿児島・徳島・鳥取・沖縄・熊本・島根の10県に10商品を追加し、日英の紹介・比較・3問・公式購入先・店舗案内・人物と単体のAI図を揃えました。広告は通常リンク/offを保ちます。
+上の件数はこの公開版の記録で、全国拡張時の固定上限ではありません。神奈川専用・iTOへ戻さず、空の産地ページや件数合わせの未確認商品を作りません。人物の国籍・年齢は生成設定で、実在人物の属性を見た目から認定したものではありません。
 
-<!-- PUBLIC_V23 -->
-0.18.0（仕様023）公開済み。人物は架空の日本人成人女性25〜33歳という生成設定へ統一。新22枚（25〜30歳、かわいい11/綺麗11）を採用、既存36枚と単体60枚を保持。app `f2bb423f4c4cf476e449d8ec37837243f764cfee`、[Actions44089370227](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44089370227) completed/success。実URLでHero・TOP10/DISCOVER・日英/スマホ・全商品画像・旧22URL非配信を検証済み。詳細はdeployment-results.json。
+## 次のAIが始めること
 
-0.18.0の全sourceは1198ファイル・公開画像118枚。repository/export/ZIPの集合と全SHAを照合済み。全source ZIPはjapanese-craft-jewelry-source-0.18.0-models-023.zip、外部proofはpackage-verification-0.18.0-models-023.json、原本ZIPはjapanese-craft-jewelry-originals-0.18.0.zip（47ファイル）。完了記録を含め最終再梱包し、ZIP hashは自己参照を避け外部proofへ保存する。正本はdeployment-results.jsonのsourceDelivery。
+1. 今回のユーザー依頼を確認し、`git status --short`と`git rev-parse HEAD`で他者の差分を保護します。023は完了済みなので、22画像差し替えを新しい指示として再開しません。
+2. [setup](setup.md)でNode>=24.22.3、pnpm11.25.0、必要ならChromeを揃えます。`pnpm install --frozen-lockfile`→`pnpm dev`で起動できます。.envなしの初期状態はルート配置/noindexプレビューです。
+3. [architecture](architecture.md)と[editing-guide](editing-guide.md)から正本を特定します。商品/価格/URL、訳文、本文、比較、出典、購入根拠、店舗、人物/単体画像、広告、部品を分離したまま変更します。
+4. 該当する仕様とタスクを作成・更新し、[verification-guide](verification-guide.md)の影響別検査を行います。公開設定/base/originを合わせ、安定した一つのdistを検査します。
+5. 実行した結果と未実行範囲を記録し、必要なら公開後のSHA/Actions/実URLを確認します。仕様・handoff-status・関係文書を更新します。
 
-023で人物着用画像を、架空の日本人成人女性という生成設定へ統一しました。58人物画像/60商品参照のうち22枚を新生成・採用・公開し、日本人設定の36枚を保持しました。新規は25〜30歳（25歳6枚）、全体は25〜33歳、かわいい系11/綺麗な系統11です。実在人物の国籍・年齢を見た目から認定しません。生成logはdocs/image-generation-japanese-v23.json、readerはscripts/lib/styling-generation-manifests.mjs、専用QAはscripts/check-japanese-model-styling.mjs。旧22画像はbytesを上書きせずretired/Git追跡解除/ignoreとし、dist/ZIPから除外。v12baseline・保持36人物・単体60・商品facts/レイアウト/広告off/Google Maps同意を維持しました。新元PNG22枚と旧自作AI参照22枚・全prompt/目視記録を別原本ZIPへ保存しました。
+通常の起動・build・検証には前任PCのartifacts、元PNG、外部proofは不要です。`docs/`はbuild入力のJSONを含むため残します。原本編集や過去の厳密な照合が必要なときだけ、[配布資料](handoff-assets.md)をGitHubから取得します。
 
-旧版の公開記録：0.17.3（仕様022）公開済み。app `ef8ae160e7fc7d2b41cdce1063094313b719df6e`、[Actions44081729750](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44081729750) completed/success。実URLで一覧地図241・Hero77・mobile92・Sources328・補足24を確認。地図枠縮小/一覧沖縄別枠とトップ写真の自然比率を反映。確定値はdeployment-results/verificationを参照。 0.17.3の全sourceは1155ファイルを照合済み。これは023の生成/検証/公開/納品結果ではありません。
+`scripts/apply-japanese-model-styling.mjs`は完了済み023の移行専用です。fresh cloneの初回処理や次回の画像編集ツールとして実行しません。`check-japanese-model-preservation.mjs`も旧495入力/退役bytesが揃うreviewed checkout向けの一回限りの照合で、通常buildの依存ではありません。現在の画像検査は`check-japanese-model-styling.mjs`を使い、元PNG検査の`--originals`は原本取得後にだけ指定します。
 
-旧版の公開記録：0.17.2（仕様021）公開済み。app `19f066ee20f4aa8eb1b441a4178dc92ffcb25ae7`、[Actions44072612768](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44072612768) completed/success。実URLの写真37・mobile92・Sources328・補足24が成功。Top10とDISCOVER3の写真を全3ページで統一。確定値はdeployment-results/verificationを参照。 0.17.2の全sourceは1118ファイルを照合済み。これは022の実測/公開/納品結果ではありません。
+## 維持する画面と表示方針
 
-ホーム先頭のRegionHeroはPCで左に人物AI画像、右に日本地図を並べます。022では写真をheight:autoの元比率・containで表示し、画像/figure/AIcaption前後に人工的な上下letterboxを残さない設計です。顔・耳・ジュエリーとAIcaptionを保ち、スマホも自然高で表示します。Heroはclick/tap/Enter/Spaceの明示県選択で女性画像・商品/国内参考価格・CTAを切り替え、公開idだけのregion queryと他query/hash・戻る・言語切替を維持します。Heroの沖縄拡大枠はPC200px/スマホ80pxを継承。別の一覧地図は外枠をコンパクトにし、本州〜北海道の主図と沖縄の独立拡大枠（設計PC144px/スマホ80px）から、通常hrefのclick/tap/Enterで産地へ直接進みます。preview/select・zoom/内部scroll・noJSも保持します。TOP10/DISCOVER3県の共通写真はPC最大300×200px・スマホ最大222×148pxのままです。実装寸法と最終検証は022 guide/validationを参照し、旧021の37/92や旧020の217/77を今回の成功に加算しません。
+- ブログ、Contact、商品販売/決済/発送の機能はありません。紹介に不要な販売責任の説明や未提供の連絡先を追加しません。
+- 右上の一つのJA/ENボタンは同じページ・商品・query/hashを引き継ぎます。国内JPYと海外ストアの実価格は別市場で、言語切替による為替換算をしません。
+- HeroはPC左に女性AI画像、右に日本地図。明示県選択で写真/商品/国内参考価格が切り替わり、region query・他query/hash・戻る/言語を保ちます。写真は自然比率で人工的な上下帯を付けません。沖縄枠はPC200px/スマホ80pxを継承します。
+- TOP10とDISCOVER3県の写真は同じstyleでPC最大300×200px/スマホ222×148px。産地一覧はTOP10→コンパクトな日本地図→DISCOVER3。掲載県だけを通常hrefにし、沖縄は独立拡大枠からも直接移動します。preview、zoom、内部scroll、keyboard/noJSを保ちます。詳細は[022](compact-layout-v20.md)と[写真共通化021](region-photos-v19.md)。
+- 種類の小画像はその産地・種類に属する実公開商品から選びます。AI caption・日英alt・顔や装身具の見切れ防止を維持します。実物写真や試着の証拠にはしません。[023画像ガイド](japanese-model-styling-v21.md)と[全生成記録](image-generation-japanese-v23.json)を参照します。
+- Sourcesは初期closed。出典/dateを消さず、必要時に一覧表示します。ページ内移動のopen/scroll/focusはSources共通処理に任せ、商品側の重複handlerを戻しません。
+- 店舗Mapsは初回明示許可後30日自動表示、オフで全停止。未選択/拒否/期限切れはGoogle通信0。Google帰属・外部fallback・最小Storageを保ちます。地図設定maps-v17と広告Privacy v14/広告CMPは別です。
 
-前段階020から継承する構成は次のとおりです。ホーム先頭のHeroとは別に、産地一覧はTOP10→コンパクトな日本地図→DISCOVER3県の順です。47県のCC0原形を主図46＋沖縄別枠1へ分け、実商品/産地本文がある掲載24県だけを通常リンクにします。沖縄は島path・枠・labelを押せる拡大表示とし、県のclick/tap/Enterで産地の商品一覧へ直接進みます。pointerenter/focus/selectの代表単体画像/商品/国内参考価格preview、100/150/200/300%のzoom・内部scroll・全体表示、地方別の初期closed details・地図ジャンプ・JSなしのhrefを継承します。外枠/主図/沖縄枠の設計値と実測は最新022の説明で区別します。
+## 公開版の検証記録
 
-Googleマップは初回の明示許可後、日英・全店舗で30日間自動表示します。未選択/拒否/期限切れではGoogle通信0、オフ操作で全iframeを停止。localStorageには地図専用choice/version/savedAt/expiresAtだけを保存し、不正/旧版の値は削除し、有効期限30日を過ぎた値は次の読込/再表示時に削除します。保存不可はページ限りです。複数タブ/戻る/再訪でも撤回を尊重します。PC330px/スマホ280pxの枠高を基本に、Google帰属・fullscreen・公式/外部リンクを保ちます。地図設定版maps-v17と広告Privacy版v14は別で、地図設定は広告同意/CMPではありません。
+0.18.0は公開実URLでHero77・共通写真37・mobile92・全商品browser146・Sources328・公開補足24が成功しています。browserは日英120商品ページ/58画像decodeと旧22画像URLの404、公開補足は328canonical/118画像のlocal SHA一致を確認しました。詳細は[verification](verification.md)と[公開集約](japanese-models-stage-hosted-summary.json)を正本にします。
 
-[日本地図の直接選択](japan-map-direct-v18.md)・[残タスク](remaining-task-audit-v17.md)・[法務再確認](legal-review-v17.md)・[商用ホスト移行準備](commercial-host-migration-v17.md)を参照。対応ホスト向けpublic/_headersは移行準備です。現GitHub PagesのHTTPヘッダーを設定済みとはせず、実契約/本人情報/広告実ID・CMP/ドメイン・DNS/アカウント管理/検索実績を技術PASSで完了化しません。AdSense off・実提携未申請/通常URLを維持します。
+公開mobile初回90/92は、固定75ms待機とscroll→rAF描画更新の競合を再現し、QA側を実条件/可視状態待機へ修正したものです。アプリ表示を変更せず全92を再実行し、[初回](japanese-models-stage-hosted-mobile-initial-results.json)・[診断](japanese-models-stage-hosted-mobile-timing-diagnostic.json)・[最終](japanese-models-stage-hosted-mobile-results.json)を保持しています。
 
-## 再開の順序
+これらは0.18.0に対する当時の検証です。次の変更の成功件数として転記しません。文書/toolだけの変更と、アプリの変更・公開を区別します。初回full verifyの型150ファイルと、QA修正後の最終型151ファイルも別記録です。
 
-1. [AGENTS](../AGENTS.md)とユーザーの最新依頼を読む。
-2. [setup](setup.md)でruntime・env・baseを揃え、[architecture](architecture.md)で正本を特定。
-3. [editing-guide](editing-guide.md)に沿い必要なファイルだけ変更。docs JSONはbuild依存なので保持。
-4. [verification-guide](verification-guide.md)の影響別検査を行い、Gitならgit diff、ZIPなら保管した展開元とのフォルダー比較。必要なら公開と公開後確認。
-5. 仕様/引継ぎ/実測を更新し、[納品手順](setup.md#納品zipを作る)で全sourceとSHAを再作成。
+<a id="未完了判断が必要な事項"></a>
 
-## 守る既存の挙動
+## 本人・契約・外部審査に依存するもの
 
-- 国内JPY/海外実額/表示言語を分ける。未承認広告を使わず共通resolverの両承認/host/date/locale gateを保つ。
-- AI図は実物の証拠ではない。短いcaption/alt/元比率、画像権利と生成記録、退役10画像の除外を維持。
-- 出典/dateは初期closed。Sourcesだけが同ページリンクを処理し、pushState→open/scroll/summary focus。重複handlerで即閉じ後の再openを再導入しない。
-- 店舗Mapsは初回許可後30日自動表示、オフで全停止。未選択/拒否/期限切れはGoogle0。地図専用の最小Storageのみ、保存不可はページ限り。Google帰属と外部fallback、広告同意との分離を保つ。
-- 日英の同ページ/query/hash、種類画像の実地域/種類との一致、320px/横向き/keyboardの操作性を維持。
-
-## 未完了・判断が必要な事項
-
-| 項目 | 状態/次に必要なこと |
+| 項目 | 残る条件 |
 | --- | --- |
-| AdSense | off固定。実アカウント/所有確認/実ID/認定CMP/地域別同意・配信の実装は未完了 |
-| 提携 | 全program/link未申請・通常URL。申請先の現行条件と真実の申請者情報が必要 |
-| 商用host | GitHub Pages用途適合の確認または適した公開先の判断が残る。今回契約/移転/DNSなし |
-| security | 実装上の検出問題は修正。HTTP保護header制御やMFA/branch/recovery等はhost/account側の未操作範囲。全安全/侵入試験済みとはしない |
-| 実物写真 | 60品とも写真使用許諾は未取得。AI図から仕様や試着を認定しない |
-| 検索/端末 | Google掲載/順位/流入は未測定。Chrome emulationを実機Safari/iOSと呼ばない |
+| AdSense | 実アカウント/所有確認/実ID/認定CMP/地域別同意・配信。offを架空設定で解除しない |
+| 実提携 | 現行提携条件・対象商品/媒体/市場の確認と、真実の申請者/支払情報・審査 |
+| 商用host | GitHub Pages用途適合の確認または適した公開先の判断。契約/移転/DNSは未実施 |
+| セキュリティ運営 | HTTP保護headerの実配信、MFA/復旧/共同管理/branch保護などhost/account側。全安全/侵入試験済みとはしない |
+| 画像・使用経験 | 実物写真の許諾/実物試用は未取得・未実施。AI図から素材安全性や装着実績を認定しない |
+| 検索/端末 | Search Consoleの実プロパティ/掲載・流入の観測、実機iOS/Safari等は別途必要 |
 
-過去の0.15では、広範囲497/価格314/広告6等と、最後の見出し/Source変更後92・tap4・race12・heading12等が別の段階です。旧0.15最終公開248HTML/98画像の確認を、0.16の公開検査へ転用しません。正確な範囲はverificationを読み、全検査を最終版で再実行したと書き換えません。
+[残タスクと外部条件](remaining-task-audit-v17.md)・[法務記録](legal-review-v17.md)・[申請前手順](pre-application-checklist.md)を確認します。資料を読んだだけで、未依頼の契約/申請/アカウント操作に進みません。
 
-## 納品物
+## Gitと過去の配布物の違い
 
-023では監査済み22人物が新規生成/置換の対象です。保持36人物と単体60のbytes、旧原本/生成記録を保持します。
+現在のmainが次の保守を始めるソースです。公開アプリ0.18.0の元のsource ZIPは`japanese-craft-jewelry-source-0.18.0-models-023.zip`で、1198ファイル/118公開画像の集合・全SHAを照合した履歴です。この1198を、引継ぎ文書が増えた現在のGitファイル数や、新しく作るZIPの期待値に固定しません。
 
-全sourceは隣接japanese-craft-jewelry-delivery/sourceとlatestのjapanese-craft-jewelry-source.zip。0.18.0用の版付きZIP名は`japanese-craft-jewelry-source-0.18.0-models-023.zip`、外部proof名は`package-verification-0.18.0-models-023.json`です。最終のファイル集合・SHA・検証完了状態は[deployment-results.json](deployment-results.json)のsourceDeliveryと外部proofを参照し、予定名だけで完了としません。ZIP自身hashはZIP外に置きます。
+原本ZIP・各proof・取得/検証方法は[handoff-assets](handoff-assets.md)を参照します。0.18.0原本ZIPは新PNG22/旧自作AI参照22/記録3の47ファイルです。原本や過去のsource ZIPは必要時だけ取得し、通常buildに前任PCの隣接delivery directoryや絶対パスを要求しません。
 
-.git/.env/指定した認証ファイル名・秘密鍵拡張子/依存実体/dist/.astro/artifacts/退役画像を除外。自動検査は指定パス・リンク/ジャンクション・ファイル集合・SHAの確認で、任意ファイルの内容やGit全履歴の機密検査ではありません。PNG原本とQA画面は別資料で、fresh cloneのbuildに不要です。元PNG50枚の0.14別ZIPは保持し、0.16の新規23PNG（採用20・棄却3）は別の生成/採否記録とともに扱います。0.16原本ZIPは26ファイル・35,561,799bytes、SHA256 `383cf02e99cdf06d936118e9d071f35df68a1b99191de31442b7f450de386254`を外部`originals-verification-0.16.0.json`で検証済みです。task-local Node/pnpm wrapperはこのPC固有の便宜で、他PCはsetupの要件から構築できます。
-
-## 写真の統一021
-
-Top10とDISCOVER3県は同じstyleでPC最大300×200px/スマホ最大222×148px。ホーム/商品一覧/産地一覧すべてに適用。変更先はRegionSelection.astro末尾の共通group styleで、rankedだけの指定へ戻さない。[更新手順](region-photos-v19.md)と[最新実測](verification.md)を参照。020の公開map/mobileの中止分、021の最終37/92/328/24、022の新しい検証は別の段階として記録します。
-
-## 地図枠とHero自然高022
-
-022から継承するレイアウトは一覧地図のコンパクト枠と沖縄独立拡大枠、Hero人物写真のheight:auto/上下余白なしです。023は人物画像/生成設定だけを更新します。Top10/DISCOVER共通写真は021を継承します。022当時の実装寸法/検証は[022の説明](compact-layout-v20.md)・[最新verification](verification.md)を確認し、旧1118ファイルや旧37/92を今回の納品/実測にしません。
-
-
-## 日本人女性の人物画像023
-
-0.18.0の人物生成/編集・監査・退役と検証の方針は[023ガイド](japanese-model-styling-v21.md)・[仕様と検証](../specs/023-japanese-model-styling/)を確認します。新規22枚の生成/採用/公開と全source ZIPの照合は完了し、最終件数・app/Actions・集合/全SHAはdeployment-resultsと外部proofが正本です。旧生成logのUS/UK等は歴史として残し、現在のactive registryに対応する生成設定だけを監査します。023の新画像を、旧022の241/77/92や旧「全画像不変」の成功へ加算しません。
+Git/sourceには.gitの実体、.env/秘密、依存実体、dist/.astro/artifacts、退役画像を追加しません。過去ZIPの外部proofと、現在Gitから行った検証は分けて保存します。過去の公開appを記録するdeployment-resultsを、文書更新だけで新アプリ公開のように書き換えません。

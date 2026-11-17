@@ -1,0 +1,7 @@
+# Preserve the recorded bytes across Windows/macOS/Linux and user autocrlf settings.
+# Historical JSON manifests/proofs contain pinned SHA256 values. Do not renormalize them.
+# Save new source and documentation as UTF-8/LF in the editor.
+* -text
+*.png binary
+*.webp binary
+*.zip binary

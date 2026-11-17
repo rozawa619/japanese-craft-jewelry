@@ -1,77 +1,61 @@
 # AIの開始手順と有効な制約
 
-このファイルは現在有効な規則です。過去の版ごとの記述は[旧AGENTS](docs/archive/AGENTS-before-017.md)へ保存しました。ユーザーの最新依頼を優先し、この文書だけから未依頼の申請・契約・移転を始めません。
+ユーザーの最新依頼を優先し、この文書を根拠に未依頼の商品追加・画像再生成・申請・契約・移転を始めない。過去の会話や前任AIのローカル環境は開始条件にしない。
 
 ## 最初の5分
 
-1. README → docs/ai-handoff.md → docs/handoff.md → docs/architecture.md。
-2. Git checkoutならgit status --short、ZIPなら元ZIP/proofと別の作業用コピーを確認。package.json、docs/deployment-results.jsonを読み、公開app commitと文書/作業HEAD、最新ZIPを区別。ZIPに.gitがないことをエラーにしない。
-3. 現在の作業はspecs/023-japanese-model-styling。直前の地図/Hero自然高は022、写真共通化は021、地図/Hero/沖縄の前段階は020。直前の地図/表示設定は019、商品追加は018、引き継ぐUI/securityは016、保守文書の意図は017。必要な領域だけ過去仕様へ戻る。
-4. docs/setup.mdでruntime/env/base/Chromeを確認。docsのJSONはbuild入力なので削除しない。
-5. 変更する正本を特定し、docs/verification-guide.mdで必要な検査を選び、実装と仕様・引継ぎを合わせる。
+1. [START_HERE.md](START_HERE.md)を読む。次に[引継ぎ状態](docs/handoff-status.json)と[公開アプリの記録](docs/deployment-results.json)を確認する。
+2. `git status --short`と`git rev-parse HEAD`で作業対象・未保存変更を確認する。公開appのSHA、現在のGit HEAD、過去の納品ZIPを区別する。他者の変更を上書きしない。
+3. 最新の引継ぎ整備は[仕様024](specs/024-git-ai-handoff/spec.md)。直近のアプリ変更[023](specs/023-japanese-model-styling/spec.md)は完了済みで、22画像の再生成・差し替えを再開する指示ではない。次の実装対象はユーザーの今回の依頼から決める。
+4. [setup](docs/setup.md)でNode・pnpm・env・base・Chromeを揃え、[architecture](docs/architecture.md)と[editing-guide](docs/editing-guide.md)で変更する正本を特定する。`docs/`のJSONもbuild入力なので削除しない。
+5. [verification-guide](docs/verification-guide.md)から影響に合う検査を選び、仕様・実装・検証・引継ぎを対応させる。全旧版を通読したり過去の検査を全再実行したりすることは開始条件ではない。
 
 ## サイトの境界
 
-- 運営者表示SORA、日本全国の工芸ジュエリーを選ぶJA/ENサイト。神奈川専用やiTOへ戻さない。
-- ブログ/Contact/販売・決済・発送の機能を作らず、不要な販売責任説明をUIに再導入しない。提供されていない氏名/住所/メールを作らない。
-- 公開版0.18.0は0.16の60公開/66登録・24県・34公開関連技法/全36・118AI画像を継承。固定上限や各県同数の条件ではない。地図47県の未掲載県は非リンクで、空の地域/技法やdraftの公開URLを作らない。
-- COCOON2/欠品18K/販売未確認の畠山2/hairpinはdraft。復帰には対象variantの現行購入根拠と派生参照の再確認が必要。403を閉店/売切れとしない。
+- 運営者表示はSORA。日本全国の工芸ジュエリーを選ぶJA/ENの紹介サイト。神奈川専用やiTOへ戻さない。
+- ブログ、Contact、販売・決済・発送の機能を作らず、不要な販売責任説明をUIへ再導入しない。未提供の氏名・住所・メール・経歴を作らない。
+- 最新公開アプリ0.18.0の基準は60公開/66登録商品・24県・34公開関連技法/全36・118AI画像。件数上限や各県同数という条件ではない。未掲載県・空の技法・draftの公開ページを作らない。
+- COCOON2、欠品18K、販売未確認の畠山2、hairpinはdraft。復帰には対象variantの現行購入根拠と派生参照の再確認が必要。403を閉店・売切れと判定しない。
 
 ## 正本と編集
 
-- 商品/工房/販売店/地域/技法/素材/広告program/linkはcatalogの独立した配列とIDで関連付ける。数値・URLは本文や部品に重複させない。
-- 英語/共有事実catalog、日本語表示translations/ja、紹介product-storiesと日英Markdown、比較selection-notes、選び方product-buying-guides。詳しい変更単位はediting-guide。
-- id/slugを不用意に変えない。同じ商品でもidとslugが異なる例がある。変更時は全参照・URL移行・画像・比較・地域・sitemapを検査。
-- 国内JPYは国内の実参考値、海外ストアの実額は別。表示言語と購入市場を混同せず、FX換算や片耳価格の勝手な倍額化をしない。
-- 新商品はdraftから。gallery/古い催事/企業住所だけ/明示欠品/販売未確認で公開しない。日英本文・選定/比較・3問・出典・購入・訪問案内/正直なfallback・画像の公開gateを満たす。
-- 一次情報のURL/実確認日/支える主張を残す。未確認仕様/重量/原産地/認証/低アレルギー、レビュー/試着/取材/人気/販売実績/承認/許諾を作らない。
+- 商品・工房・販売店・地域・技法・素材・広告program/linkはcatalogの独立した配列とIDで関連付ける。数値・URLを本文や部品へ重複入力しない。
+- 英語/共有事実はcatalog、日本語表示はtranslations/ja、紹介はproduct-storiesと日英Markdown、比較はselection-notes、選び方はproduct-buying-guides。変更単位はediting-guideを確認する。
+- id/slugを不用意に変えない。変更時は全参照・URL移行・画像・比較・地域・sitemapを検査する。
+- 国内JPYと海外ストアの実額は別市場。表示言語と購入市場を混同せず、FX換算や片耳価格の勝手な倍額化をしない。
+- 新商品はdraftから。gallery、古い催事、企業住所だけ、明示欠品、販売未確認の商品を公開しない。日英本文・選定/比較・3問・出典・購入・店舗案内または正直なfallback・画像の公開gateを満たす。
+- 一次情報のURL・実確認日・支える主張を残す。未確認仕様、重量、原産地、認証、低アレルギー、レビュー、試着、取材、人気、売上、承認、許諾を作らない。
 
 ## 画像とUI
 
-- ホーム先頭のHeroとは別に、産地一覧はTOP10→コンパクトな日本地図→DISCOVER3県の順です。47県のCC0原形を主図46＋沖縄別枠1へ分け、実商品/産地本文がある掲載24県だけを通常リンクにします。沖縄は島path・枠・labelを押せる拡大表示とし、県のclick/tap/Enterで産地の商品一覧へ直接進みます。pointerenter/focus/selectの代表単体画像/商品/国内参考価格preview、100/150/200/300%のzoom・内部scroll・全体表示、地方別の初期closed details・地図ジャンプ・JSなしのhrefを継承します。外枠/主図/沖縄枠の設計値と実測は最新022の説明で区別します。
-- [日本地図の直接選択](docs/japan-map-direct-v18.md)・[残タスク](docs/remaining-task-audit-v17.md)・[法務再確認](docs/legal-review-v17.md)・[商用ホスト移行準備](docs/commercial-host-migration-v17.md)を参照。対応ホスト向けpublic/_headersは移行準備です。現GitHub PagesのHTTPヘッダーを設定済みとはせず、実契約/本人情報/広告実ID・CMP/ドメイン・DNS/アカウント管理/検索実績を技術PASSで完了化しません。AdSense off・実提携未申請/通常URLを維持します。023では監査済み22人物の新規生成を対象とし、保持36人物・単体60と旧原本/生成記録を保持します。
-
-- 公式写真を許可なく取得/転載/hotlink/生成入力へ転用しない。AI図は実物写真・完全なSKU再現・金具/個数・装着実績の証拠ではない。
-- 人物editorial-imagesと単体product-detail-images、権利docs/assets、生成記録を分離。023人物の新logはdocs/image-generation-japanese-v23.json、readerはscripts/lib/styling-generation-manifests.mjs。監査済み22置換だけを旧不変条件の例外とし、v12baselineは変更しない。旧22のledger retired/Gitignore/Git追跡解除・dist/ZIP除外はrootが対応する。0.16の新規生成記録はimage-generation-v16とimage-generation-solo-v16。単体readerは旧v14＋新v16を併読し、旧記録を上書きしない。画像必須の公開gateをtext previewだけで迂回しない。
-- captionは常時AIイメージ/AI image。日英alt、元比率/contain、顔や装身具の切れを検査。人物は架空の日本人成人女性25〜33歳の生成設定へ統一し、25歳を含め、かわいい/綺麗なタイプを混ぜる。旧日本/米国/英国混在・27〜33歳方針は最新依頼で更新し、見た目から実在人物の国籍・年齢を認定しない。ほくろ/シミなしの方向性を保つ。
-- 種類の小画像は実際の公開商品・同地域・同種類から選び、人気順位としない。今回の監査済み22人物だけを旧bytes不変条件の明示例外とし、保持36人物/単体60・既存retired管理の条件を一括解除しない。
-- Sourcesは初期closedのnative details。出典/dateは消さず必要時に一覧表示。公式CTA/在庫注意/AI/広告開示を一緒に隠さない。
-- 同ページSource anchorはSourcesが一元管理。pushState→open/scroll/summary focus。商品templateへ重複openを足さない。直接hash/history/noJS/rapidcloseの回帰を保つ。
-- 同ページ/query/hashの言語切替、filter/reset/0件、スマホの44px操作域・16px select、横向き/focus/stickyの非遮蔽を確認。overflow:hiddenだけで不具合を隠さない。
+- 人物画像は架空の日本人成人女性25〜33歳の生成設定。25歳を含め、かわいい系・綺麗な系統と髪型/表情/服装に変化を付け、目立つほくろ/シミなしの方向性を保つ。見た目から実在人物の国籍・正確な年齢を認定しない。旧US/UK混在方針は履歴である。
+- captionは常時AIイメージ/AI image。日英alt・元比率/contain・顔/装身具の切れを確認する。AI図を実物写真・完全なSKU再現・素材/寸法/金具/個数・装着実績の証拠にしない。
+- 公式写真を許可なく取得・転載・hotlink・生成入力に流用しない。人物editorial-imagesと単体product-detail-images、docs/assets、生成記録を分離する。[画像ガイド023](docs/japanese-model-styling-v21.md)と[原本の取得手順](docs/handoff-assets.md)を使う。
+- 023の22置換・36人物保持・単体60保持は完了。旧22はretired/Git追跡解除/ignore・dist/ZIP除外済みで、旧ログ/原本は保持。現在のretired除外対象は32画像。既存v12baselineや全画像の不変条件を一括解除しない。
+- `scripts/apply-japanese-model-styling.mjs`は完了した023移行専用。起動・通常検証・次の画像更新のために再実行しない。旧bytesを必要とする一回限りのpreservation検査も通常buildの条件にしない。
+- Heroは左の人物画像/右の日本地図。明示的な県選択で画像・商品・国内参考価格を切り替え、region query・他query/hash・履歴・言語を保持する。写真は自然比率・上下人工帯なし。沖縄別枠はPC200px/スマホ80pxを継承する。
+- 産地一覧はTOP10→コンパクトな日本地図→DISCOVER3県。47県の原形を主図46＋沖縄別枠1へ分け、実商品がある掲載県のみ通常hrefにする。島・枠・labelの直接click/tap/Enter、preview、zoom/内部scroll、地方一覧、keyboard/noJSを保つ。詳細は[022](docs/compact-layout-v20.md)。
+- TOP10/DISCOVER共通写真はPC最大300×200px、スマホ最大222×148px。種類の小画像は同じ地域・種類の実公開商品から選び、人気順位としない。
+- Sourcesは初期closedのnative details。出典/dateは保持し、希望時に一覧表示する。公式CTA・在庫注意・AI/広告開示まで一緒に隠さない。
+- Sourcesが同ページanchorを一元処理する。pushState→open/scroll/summary focusを保ち、商品templateへ重複open処理を足さない。直接hash/history/noJS/rapidcloseも確認する。
+- 同ページ/query/hashの言語切替、filter/reset/0件、44px操作域、16px select、横向き/focus/stickyの非遮蔽を確認する。overflow:hiddenだけで不具合を隠さない。
 
 ## 広告・地図・security
 
-- 実提携は未申請/通常リンク。広告はprogram/item両承認、対象merchant、HTTPS・完全一致host・実確認日・localeを満たす共通resolverだけ。欠落/停止は通常URLへ戻す。
-- AdSenseはoff固定。環境flagや架空ID/自作CMPで有効化しない。認定CMP/実ID/所有確認/同意・配信/CSP/Privacy/host適合は別の未完了作業。
-- Google Mapsはregistryの固定Share URLのみ。Googleマップは初回の明示許可後、日英・全店舗で30日間自動表示します。未選択/拒否/期限切れではGoogle通信0、オフ操作で全iframeを停止。localStorageには地図専用choice/version/savedAt/expiresAtだけを保存し、不正/旧版の値は削除し、有効期限30日を過ぎた値は次の読込/再表示時に削除します。保存不可はページ限りです。複数タブ/戻る/再訪でも撤回を尊重します。PC330px/スマホ280pxの枠高を基本に、Google帰属・fullscreen・公式/外部リンクを保ちます。地図設定版maps-v17と広告Privacy版v14は別で、地図設定は広告同意/CMPではありません。
-- JSON-LD escape、HTTPS/host/locale gate、限定CSPを維持。外部検査はsafe-outboundの各hop DNS/公開IP/接続pin/timeoutを使い、負例はmock。privateへ実接続しない。
-- Node最低版24.22.3のサポート中の修正版/pnpm11.25.0。PUBLIC_は公開値で秘密を置かない。.env/秘密/依存実体/生成物をGitやZIPへ混ぜない。
-- host header/MFA等の未確認・未操作を完了にせず、既知audit0と未知も含む全安全を混同しない。
+- 実提携は未申請・通常リンク。広告はprogram/item両承認、対象merchant、HTTPS・完全一致host・実確認日・localeを満たす共通resolverのみ。欠落・停止時は通常URLへ戻す。
+- AdSenseはoff。環境flag・架空ID・自作CMPで有効化しない。認定CMP、実ID、所有確認、同意/配信、CSP/Privacy、host適合は別の未完了作業。
+- 店舗Google Mapsはregistryの固定Share URLのみ。初回の明示許可後は日英・全店舗で30日自動表示し、未選択/拒否/期限切れではGoogle通信0、オフで全iframe停止。地図専用choice/version/savedAt/expiresAtのみ保存し、不正/旧版/期限切れ値は削除。保存不可はページ限り。複数タブ/戻る/再訪で撤回を尊重する。
+- MapsはPC330px/スマホ280pxの枠高を基本とし、Google帰属・fullscreen・公式/外部fallbackを保つ。maps-v17の地図設定と広告Privacy v14/広告CMPは別物である。
+- JSON-LD escape、HTTPS/host/locale gate、限定CSPを維持する。外部検査はsafe-outboundの各hop DNS/公開IP/接続pin/timeoutを使う。負例はmockにし、privateへ実接続しない。
+- Nodeは24.22.3以上のサポート中の修正版、pnpm11.25.0。PUBLIC_は公開値であり秘密を入れない。.env・秘密・依存実体・生成物をGit/ZIPへ混ぜない。
+- HTTPヘッダー、MFA/復旧/branch管理、契約・法令・許諾の未確認を完了扱いにしない。既知audit0と未知も含む全安全を混同しない。[外部条件](docs/remaining-task-audit-v17.md)は画像/UI検査で解消したとしない。
 
-## 検証・完了の記録
+## 検証・公開・引継ぎ
 
-<!-- PUBLIC_V23 -->
-0.18.0（仕様023）公開済み。人物は架空の日本人成人女性25〜33歳という生成設定へ統一。新22枚（25〜30歳、かわいい11/綺麗11）を採用、既存36枚と単体60枚を保持。app `f2bb423f4c4cf476e449d8ec37837243f764cfee`、[Actions44089370227](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44089370227) completed/success。実URLでHero・TOP10/DISCOVER・日英/スマホ・全商品画像・旧22URL非配信を検証済み。詳細はdeployment-results.json。
-
-0.18.0の全sourceは1198ファイル・公開画像118枚。repository/export/ZIPの集合と全SHAを照合済み。全source ZIPはjapanese-craft-jewelry-source-0.18.0-models-023.zip、外部proofはpackage-verification-0.18.0-models-023.json、原本ZIPはjapanese-craft-jewelry-originals-0.18.0.zip（47ファイル）。完了記録を含め最終再梱包し、ZIP hashは自己参照を避け外部proofへ保存する。正本はdeployment-results.jsonのsourceDelivery。
-
-023で人物着用画像を、架空の日本人成人女性という生成設定へ統一しました。58人物画像/60商品参照のうち22枚を新生成・採用・公開し、日本人設定の36枚を保持しました。新規は25〜30歳（25歳6枚）、全体は25〜33歳、かわいい系11/綺麗な系統11です。実在人物の国籍・年齢を見た目から認定しません。生成logはdocs/image-generation-japanese-v23.json、readerはscripts/lib/styling-generation-manifests.mjs、専用QAはscripts/check-japanese-model-styling.mjs。旧22画像はbytesを上書きせずretired/Git追跡解除/ignoreとし、dist/ZIPから除外。v12baseline・保持36人物・単体60・商品facts/レイアウト/広告off/Google Maps同意を維持しました。新元PNG22枚と旧自作AI参照22枚・全prompt/目視記録を別原本ZIPへ保存しました。
-
-旧版の公開記録：0.17.3（仕様022）公開済み。app `ef8ae160e7fc7d2b41cdce1063094313b719df6e`、[Actions44081729750](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44081729750) completed/success。実URLで一覧地図241・Hero77・mobile92・Sources328・補足24を確認。地図枠縮小/一覧沖縄別枠とトップ写真の自然比率を反映。確定値はdeployment-results/verificationを参照。 0.17.3の全sourceは1155ファイルを照合済み。これは023の生成/検証/公開/納品結果ではありません。
-
-旧版の公開記録：0.17.2（仕様021）公開済み。app `19f066ee20f4aa8eb1b441a4178dc92ffcb25ae7`、[Actions44072612768](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44072612768) completed/success。実URLの写真37・mobile92・Sources328・補足24が成功。Top10とDISCOVER3の写真を全3ページで統一。確定値はdeployment-results/verificationを参照。 0.17.2の全sourceは1118ファイルを照合済み。これは022の実測/公開/納品結果ではありません。
-
-ホーム先頭のRegionHeroはPCで左に人物AI画像、右に日本地図を並べます。022では写真をheight:autoの元比率・containで表示し、画像/figure/AIcaption前後に人工的な上下letterboxを残さない設計です。顔・耳・ジュエリーとAIcaptionを保ち、スマホも自然高で表示します。Heroはclick/tap/Enter/Spaceの明示県選択で女性画像・商品/国内参考価格・CTAを切り替え、公開idだけのregion queryと他query/hash・戻る・言語切替を維持します。Heroの沖縄拡大枠はPC200px/スマホ80pxを継承。別の一覧地図は外枠をコンパクトにし、本州〜北海道の主図と沖縄の独立拡大枠（設計PC144px/スマホ80px）から、通常hrefのclick/tap/Enterで産地へ直接進みます。preview/select・zoom/内部scroll・noJSも保持します。TOP10/DISCOVER3県の共通写真はPC最大300×200px・スマホ最大222×148pxのままです。実装寸法と最終検証は022 guide/validationを参照し、旧021の37/92や旧020の217/77を今回の成功に加算しません。
-
-- 0.17.0のdiscovery-map-stageは当時の証跡。020の直接クリック/拡大を旧193件のpreview操作で合格にしない。現在の023はjapanese-models-stage・023 validation・deployment-results・verificationで確認する。022はコンパクト地図/Hero自然高を実装した前段階として保持する。021の37/92と020の217/77は当時の結果で、新しい一覧枠/沖縄別枠/Hero自然高の検証へ流用しない。
-
-- JSON/広告変更はpnpm verify。文言/画面は影響とriskに応じたtype/build/JAEN/mobile等。docs-onlyに497全走査を要求せず、リンク/コマンド/整合と必要なbuildを確認する。
-- build中に共有distへbrowser検査しない。ローカル/公開/途中/最終を区別し、CHECK_REPORT_PATH等を作業固有名へ。0.15の既存証跡を上書きしない。
-- old497/314/広告6と、最後のheading/Source修正後92/4/race12等を混同しない。最新の事実はdeployment-results/verification。
-- 失敗raw→原因→修正→再検証を残し、未実行テスト・公開・承認・Google掲載を成功と書かない。実機SafariとChrome emulationを区別。
-- source/README/引継ぎを更新し、package:deliveryで版付きZIPと全SHAを確認。private artifacts/元PNGは外部資料で、全sourceのbuild依存にしない。
-
-
-## 日本人女性の人物画像023
-
-0.18.0の人物生成/編集・監査・退役と検証の方針は[023ガイド](docs/japanese-model-styling-v21.md)・[仕様と検証](specs/023-japanese-model-styling/)を確認します。新規22枚の生成/採用/公開と全source ZIPの照合は完了し、最終件数・app/Actions・集合/全SHAはdeployment-resultsと外部proofが正本です。旧生成logのUS/UK等は歴史として残し、現在のactive registryに対応する生成設定だけを監査します。023の新画像を、旧022の241/77/92や旧「全画像不変」の成功へ加算しません。
+- [公開記録](docs/deployment-results.json)は公開app、[引継ぎ状態](docs/handoff-status.json)はGitから再開する入口。023は完了したアプリ変更、024はGit引継ぎの整備。文書/toolだけの変更をアプリ公開と呼ばない。
+- JSON/広告変更はpnpm verify。文言/画面は影響に合うtype/build/JAEN/mobile等を選ぶ。docs-onlyに過去497画面等の全走査を機械的に要求しない。
+- build担当は一つにし、browser検査中に共有distや入力を変えない。env/base/originを一致させ、CHECK_REPORT_PATH等を作業固有名にする。過去の成功・失敗・部分結果を上書きしない。
+- 0.18.0公開のHero77/写真37/mobile92/browser146/Sources328/補足24は当時の結果。新しい変更を検査した成功件数へ流用しない。詳細は[verification](docs/verification.md)。
+- 失敗raw→原因→修正→再検証を残す。75msの固定待機競合はQA側で実条件/rAF待機へ修正済み。未実施の検査・公開・承認・Google掲載を成功と書かず、Chrome emulationと実機Safari/iOSを区別する。
+- 次の作業完了時は仕様・引継ぎ・実測を更新する。必要な納品はpackage:deliveryで新しい版付きZIP/全SHAを確認し、過去0.18.0の1198ファイルの履歴を現在のGit全件数へ読み替えない。
+- fresh cloneの通常buildに私的artifacts、元PNG、外部ZIP/proofは不要。原本編集・歴史的照合が必要な場合だけ[GitHub上の配布資料](docs/handoff-assets.md)を取得する。認証情報や前任PCの絶対パスを必須にしない。
