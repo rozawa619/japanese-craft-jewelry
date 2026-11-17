@@ -1,0 +1,246 @@
+{
+  "checkedAt": "2026-11-17T11:11:15.562Z",
+  "status": "passed",
+  "method": "A SHA-pinned snapshot captured from immutable app 8b53114 supplies original source/public hashes, style-stripped component bytes, per-route script content/attributes and the complete old build manifest. Compare all protected inputs and build files without rebuilding or network access. Script blocks are lexed from Astro-generated HTML, including JSON blocks; executable JavaScript assets are compared separately. Only the scoped RegionSelection style and package version may change.",
+  "limits": "This proves source/build preservation within the enumerated inputs. It does not replace responsive layout, link interaction, accessibility or public deployment checks. It does not assert that every HTML byte is unchanged: hashed stylesheet references and Astro style scope tokens can change with CSS compilation.",
+  "baseline": {
+    "path": "docs/region-photos-stage-preservation-baseline.json",
+    "sha256": "a1c180d27244502781544bd9c68b2b0d82efec78e5ef9610f7e518b7032f9ee1",
+    "appCommit": "8b53114d622312392c7e6ebd97928481b4dd02ae",
+    "beforeBuildManifest": {
+      "path": "docs/region-photos-stage-before-build-manifest.json",
+      "sha256": "9fb860c6d5659ff18ff1a487291a8134c45c3cbf63dd00aa669dbb5820eba1fc"
+    }
+  },
+  "checks": [
+    {
+      "name": "The component frontmatter and HTML bytes outside its scoped style are unchanged",
+      "status": "passed",
+      "detail": {
+        "path": "src/components/RegionSelection.astro",
+        "beforeSha256": "396daaf23c00803ba7985f0e47e257e3cc04aabcdbb0b95fe12adedacc5c586b",
+        "afterSha256": "0ad96fd3a8a9e8f68a317e6275ba24074a3b07a956da8bd0cc533a3ee37851b8",
+        "unchangedOutsideStyleSha256": "54f35c85b67a9bbe8796cd7a5227df340dbc3c3482be5680cb4a41994f237a4a"
+      }
+    },
+    {
+      "name": "Only the intended package version changed in package.json",
+      "status": "passed",
+      "detail": {
+        "beforeVersion": "0.17.1",
+        "afterVersion": "0.17.2",
+        "otherKeysUnchanged": true
+      }
+    },
+    {
+      "name": "All other application, catalog, public assets and deployment inputs retain their hashes",
+      "status": "passed",
+      "detail": {
+        "inputs": 494,
+        "unchanged": 492,
+        "allowedChanges": [
+          "package.json",
+          "src/components/RegionSelection.astro"
+        ],
+        "protectedPaths": [
+          "src/components/RegionHero.astro",
+          "src/components/JapanJewelryMap.astro",
+          "src/styles/global.css",
+          "src/data/catalog.json"
+        ],
+        "unchangedPublicWebp": 128
+      }
+    },
+    {
+      "name": "Every built HTML script block has identical content, attributes and order",
+      "status": "passed",
+      "detail": {
+        "html": 344,
+        "allScriptBlocks": 1453,
+        "executableScriptBlocks": 1117,
+        "jsonOrOtherBlocks": 336
+      }
+    },
+    {
+      "name": "External executable assets and all118 delivered image bytes are unchanged",
+      "status": "passed",
+      "detail": {
+        "webp": 118,
+        "externalJavascriptAssets": 0
+      }
+    },
+    {
+      "name": "The only changed stylesheet bundle is RegionSelection",
+      "status": "passed",
+      "detail": {
+        "stylesheets": 4,
+        "changed": 1,
+        "unchanged": 3
+      }
+    },
+    {
+      "name": "Build changes are limited to HTML and the stylesheet filename/content",
+      "status": "passed",
+      "detail": {
+        "before": {
+          "files": 471,
+          "html": 344,
+          "webp": 118
+        },
+        "after": {
+          "files": 471,
+          "html": 344,
+          "webp": 118
+        },
+        "added": 1,
+        "removed": 1,
+        "changedHtml": 6,
+        "changedOther": 0,
+        "unchanged": 464
+      }
+    },
+    {
+      "name": "Inputs and build remained stable throughout the proof",
+      "status": "passed",
+      "detail": {
+        "sourceInputs": 494,
+        "buildFiles": 471
+      }
+    }
+  ],
+  "failures": [],
+  "sourceChanges": [
+    {
+      "path": "package.json",
+      "beforeSha256": "61af077708c1ab718bd9ffbbf69756fe27f0184b16d620242403e26802f4dd1d",
+      "afterSha256": "1ad38f7a831b7b6aa710e659a35f125a326e3ec25ed256822b4468dab8c39198"
+    },
+    {
+      "path": "src/components/RegionSelection.astro",
+      "beforeSha256": "396daaf23c00803ba7985f0e47e257e3cc04aabcdbb0b95fe12adedacc5c586b",
+      "afterSha256": "0ad96fd3a8a9e8f68a317e6275ba24074a3b07a956da8bd0cc533a3ee37851b8"
+    }
+  ],
+  "cssChanges": [
+    {
+      "bundle": "_slug_.css",
+      "changed": false,
+      "before": {
+        "path": "_astro/_slug_.CZM06OVl.css",
+        "bytes": 13151,
+        "sha256": "e2824ab748c99044c8c5d54c322181d04e82844fab4d64e827f34d645ab3c59d"
+      },
+      "after": {
+        "path": "_astro/_slug_.CZM06OVl.css",
+        "bytes": 13151,
+        "sha256": "e2824ab748c99044c8c5d54c322181d04e82844fab4d64e827f34d645ab3c59d"
+      }
+    },
+    {
+      "bundle": "Base.css",
+      "changed": false,
+      "before": {
+        "path": "_astro/Base.DTavr-FU.css",
+        "bytes": 41575,
+        "sha256": "01bdf11ca9a1241d9b03f7212baff899ce3883a9be8e5f8783110a7b1bed8147"
+      },
+      "after": {
+        "path": "_astro/Base.DTavr-FU.css",
+        "bytes": 41575,
+        "sha256": "01bdf11ca9a1241d9b03f7212baff899ce3883a9be8e5f8783110a7b1bed8147"
+      }
+    },
+    {
+      "bundle": "index.css",
+      "changed": false,
+      "before": {
+        "path": "_astro/index.Cj0tfQOe.css",
+        "bytes": 13467,
+        "sha256": "f8fee83b1463a4d562e85d419475ddd574423366fd434ad55180425d2c1cea16"
+      },
+      "after": {
+        "path": "_astro/index.Cj0tfQOe.css",
+        "bytes": 13467,
+        "sha256": "f8fee83b1463a4d562e85d419475ddd574423366fd434ad55180425d2c1cea16"
+      }
+    },
+    {
+      "bundle": "RegionSelection.css",
+      "changed": true,
+      "before": {
+        "path": "_astro/RegionSelection.1ZcP4ub0.css",
+        "bytes": 26421,
+        "sha256": "4b20901b40b204df61b5bae13168ee661c3614f9eb953978c1582cd213d60dae"
+      },
+      "after": {
+        "path": "_astro/RegionSelection.DFzu0jxd.css",
+        "bytes": 25668,
+        "sha256": "b47f801d9327378b10653bcdc39e8ed73d7ad45269cc3c7d790f70241e965545"
+      },
+      "firstDifference": 19419,
+      "beforeExcerpt": "a-astro-cid-lf53zzwh][data-region-group=ranked] .region-selection-row[data-astro-cid-lf53zzwh]{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;gap:28px;min-",
+      "afterExcerpt": "a-astro-cid-lf53zzwh][data-region-group=additional] .region-selection-kicker[data-astro-cid-lf53zzwh]{display:none}.region-selection-group[data-astro-cid-lf53zzwh] .region-selectio"
+    }
+  ],
+  "buildChanges": {
+    "added": [
+      {
+        "path": "_astro/RegionSelection.DFzu0jxd.css",
+        "bytes": 25668,
+        "sha256": "b47f801d9327378b10653bcdc39e8ed73d7ad45269cc3c7d790f70241e965545"
+      }
+    ],
+    "removed": [
+      {
+        "path": "_astro/RegionSelection.1ZcP4ub0.css",
+        "bytes": 26421,
+        "sha256": "4b20901b40b204df61b5bae13168ee661c3614f9eb953978c1582cd213d60dae"
+      }
+    ],
+    "changed": [
+      {
+        "path": "en/index.html",
+        "bytes": 305101,
+        "sha256": "53044635f6b7ae8f59eb0d91cd4232c058aa4109df683f88ea3c286e5fff13c0"
+      },
+      {
+        "path": "en/objects/index.html",
+        "bytes": 390942,
+        "sha256": "fe629a0b8ec87110410bd7303dafb4d9230a31e3555109f35fe47afb4a26593a"
+      },
+      {
+        "path": "en/places/index.html",
+        "bytes": 162086,
+        "sha256": "96ec44e0c0e87dfb9e909e09fd21a67998dd073dabc26c895644aa659a6359c3"
+      },
+      {
+        "path": "ja/index.html",
+        "bytes": 313264,
+        "sha256": "5f82524da4bbe68415681a8e37e96cc425101fbcfd6c1d9c670b3e632eaad067"
+      },
+      {
+        "path": "ja/objects/index.html",
+        "bytes": 404666,
+        "sha256": "35525698a2e77ef13f2e81e1ce357128f534d177b5eec337936052a6ac297f8b"
+      },
+      {
+        "path": "ja/places/index.html",
+        "bytes": 166933,
+        "sha256": "c7685bd9408a0f45a9c980ef2f55e7e088ab0a066fb1c9e35895b0aaf39d4523"
+      }
+    ],
+    "unchanged": 464
+  },
+  "completedAt": "2026-11-17T11:11:15.933Z",
+  "summary": {
+    "checks": 8,
+    "passed": 8,
+    "failed": 0,
+    "sourceInputs": 494,
+    "buildFiles": 471
+  },
+  "afterBuildManifest": {
+    "path": "docs/region-photos-stage-build-manifest.json",
+    "sha256": "3ee214848e9114ebb780e81689aaa119b1c961e381b8ada8bb4160240d06378e"
+  }
+}

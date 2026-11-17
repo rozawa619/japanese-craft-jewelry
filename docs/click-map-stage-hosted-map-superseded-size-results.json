@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-11-17T11:02:23.2519992Z",
+  "status": "superseded",
+  "completed": false,
+  "reason": "Stopped by request during the public scan because a new image-size change superseded this app build.",
+  "appCommit": "8b53114d622312392c7e6ebd97928481b4dd02ae",
+  "expectedChecks": 217,
+  "completedPasses": 146,
+  "completedFailures": 0,
+  "log": "artifacts/click-map-stage/hosted-map-superseded-size.log",
+  "finalReportWritten": false,
+  "limitations": "Only146 cases are evidenced by this interrupted run. The existing hosted-map-results file is from the earlier completed build and is not this run."
+}

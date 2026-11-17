@@ -143,7 +143,7 @@ try{
       const paintScale=Math.min(contentWidth/el.naturalWidth,contentHeight/el.naturalHeight),paintedWidth=el.naturalWidth*paintScale,paintedHeight=el.naturalHeight*paintScale;
       return{width:b.width,height:b.height,contentWidth,contentHeight,paintedWidth,paintedHeight,horizontalLetterbox:Math.max(0,contentWidth-paintedWidth),verticalLetterbox:Math.max(0,contentHeight-paintedHeight),fit:style.objectFit,naturalWidth:el.naturalWidth,naturalHeight:el.naturalHeight,sourceWidth:Number(el.getAttribute('width')),sourceHeight:Number(el.getAttribute('height'))};
      });
-     assert.ok(image.width>0&&image.height>0&&image.height<=(width<=720?133:180)+1,'Top10 thumbnails remain compact at this viewport.');
+     assert.ok(image.width>0&&image.height>0&&image.height<=(width<=720?148:200)+1,'Regional thumbnails use the shared medium size at this viewport.');
      assert.equal(image.fit,'contain');assert.equal(image.naturalWidth,asset.width);assert.equal(image.naturalHeight,asset.height);assert.equal(image.sourceWidth,asset.width);assert.equal(image.sourceHeight,asset.height);
      assert.ok([image.contentWidth,image.contentHeight,image.paintedWidth,image.paintedHeight,image.verticalLetterbox].every(n=>Number.isFinite(n)&&n>=0),'Contain paint metrics must be finite content-box measurements.');
      assert.ok(image.paintedWidth>0&&image.paintedHeight>0&&image.paintedWidth<=image.contentWidth+0.01&&image.paintedHeight<=image.contentHeight+0.01,'The complete image fits inside its content box.');

@@ -1,6 +1,6 @@
 # 別のAIへ引き継ぐ
 
-確認日：2026-11-17、作業版0.17.1・地図/着用画像/沖縄拡大枠020。まずこの文書と[検証ガイド](verification-guide.md)を読めば、過去の会話や全世代の文書を読み直さず着手できる。実際の依頼・AGENTS.md・最新の公開/納品記録を優先する。
+確認日：2026-11-17、作業版0.17.2・産地写真の共通サイズ021。まずこの文書と[検証ガイド](verification-guide.md)を読めば、過去の会話や全世代の文書を読み直さず着手できる。実際の依頼・AGENTS.md・最新の公開/納品記録を優先する。
 
 構造を調べるときは[architecture.md](architecture.md)、項目別に更新するときは[editing-guide.md](editing-guide.md)へ進む。無関係な履歴文書まで開始時に通読する必要はない。
 
@@ -12,18 +12,18 @@
 | 公開 | [日本語](https://rozawa619.github.io/japanese-craft-jewelry/ja/) / [English](https://rozawa619.github.io/japanese-craft-jewelry/en/) |
 | リポジトリ | [rozawa619/japanese-craft-jewelry](https://github.com/rozawa619/japanese-craft-jewelry)、main |
 | 公開appの正本 | [deployment-results](deployment-results.json)と実Actions/公開URLを確認。作業版・文書HEADから推定しない |
-| ソースの基準 | 仕様020のソース。`git status`と`git rev-parse HEAD`で取り直し、公開app SHAと文書/証跡を含むHEADを区別 |
-| 版 / 実装 | 作業版0.17.1、Astroの静的サイト。公開先にNodeサーバー、DB、会員、注文、決済、発送機能はない |
+| ソースの基準 | 仕様021のソース。`git status`と`git rev-parse HEAD`で取り直し、公開app SHAと文書/証跡を含むHEADを区別 |
+| 版 / 実装 | 作業版0.17.2、Astroの静的サイト。公開先にNodeサーバー、DB、会員、注文、決済、発送機能はない |
 | データ | 公開60商品 / 登録66商品・draft6商品、24県、公開商品が関連する技法34（全36）、一次出典293、33店舗。53商品に店舗案内。購入根拠は通販51・店舗＋現行カタログ9 |
 | 画像 | WebP118ファイル＝人物スタイリング58＋ジュエリー単体60。全60商品へ両方を対応。0.16の新規生成は23PNG＝採用20・棄却3で、旧98公開画像のbytesを保持 |
 | 導線 | TOP10→47県の日本地図（掲載24県）→DISCOVER3県をhome/objects/placesで共通表示。代表単体画像/価格、select/地方一覧/地図ジャンプと従来の絞込 |
 | 出典 | 最初は閉じたnative details。価格・商品・店舗の確認日も一覧の中へ。情報そのものを削除していない |
 | 広告 | AdSenseはoff固定、実アカウント/認定CMPは未接続。提携リンクも未申請で、現在は通常リンク。アカウント登録・申請・契約・課金はしていない |
 
-<!-- TODO_PUBLIC_V18 -->
-0.17.1（仕様020）は公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
+<!-- TODO_PUBLIC_V19 -->
+0.17.2（仕様021）は公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
 
-PCのホーム先頭は左の人物AI画像・右の日本地図を並べるRegionHeroです。スマホでは写真を全幅で大きく表示し、その下に商品小情報と地図を並べて、顔や耳を切らずに見やすくします。Heroの県はclick/tap/Enter/Spaceで明示選択すると、女性画像と商品/国内参考価格を切り替え、産地CTAから商品一覧へ進みます。hover/focusだけでは切り替えません。有効な公開地域idだけを`?region=`へ反映し、他query/hash・戻る・言語切替で選択を保ちます。Heroの本州〜北海道は余白を詰めて拡大し、沖縄は「拡大」の注記付き別枠から同じ操作で選べます。Heroとは別に、TOP10後の大きい一覧地図は県のnative直接リンクです。TOP10の人物AI画像は横幅を広げ、元比率とPC最大180px・スマホ最大132pxのcontainで上下の帯を抑え、地域名/商品/価格/順位を保ちます。顔や耳を切らず、初期Heroは既存selection.heroProductIdを使います。これらは機能・表示の変更であり、訪問数や検索順位の改善を実測したという意味ではありません。
+PCのホーム先頭は左の人物AI画像・右の日本地図を並べるRegionHeroです。スマホでは写真を全幅で大きく表示し、その下に商品小情報と地図を並べて、顔や耳を切らずに見やすくします。Heroの県はclick/tap/Enter/Spaceで明示選択すると、女性画像と商品/国内参考価格を切り替え、産地CTAから商品一覧へ進みます。hover/focusだけでは切り替えません。有効な公開地域idだけを`?region=`へ反映し、他query/hash・戻る・言語切替で選択を保ちます。Heroの本州〜北海道は余白を詰めて拡大し、沖縄は「拡大」の注記付き別枠から同じ操作で選べます。Heroとは別に、TOP10後の大きい一覧地図は県のnative直接リンクです。TOP10とDISCOVER3県は共通styleの自然比率画像とし、PC最大300×200px・スマホ最大222×148pxのcontainで上下の帯を抑え、地域名/商品/価格/順位を保ちます。顔や耳を切らず、初期Heroは既存selection.heroProductIdを使います。これらは機能・表示の変更であり、訪問数や検索順位の改善を実測したという意味ではありません。
 
 Googleマップは初回の明示許可後、日英・全店舗で30日間自動表示します。未選択/拒否/期限切れではGoogle通信0、オフ操作で全iframeを停止。localStorageには地図専用choice/version/savedAt/expiresAtだけを保存し、不正/旧版の値は削除し、有効期限30日を過ぎた値は次の読込/再表示時に削除します。保存不可はページ限りです。複数タブ/戻る/再訪でも撤回を尊重します。PC330px/スマホ280pxの枠高を基本に、Google帰属・fullscreen・公式/外部リンクを保ちます。地図設定版maps-v17と広告Privacy版v14は別で、地図設定は広告同意/CMPではありません。
 
@@ -101,7 +101,7 @@ Googleマップは初回の明示許可後、日英・全店舗で30日間自動
 
 リポジトリのcheckoutがある場合はそこを修正元とし、隣接deliveryのsource/ZIPだけを修正しない。ZIPだけで引き継ぐ場合は、別の作業用ディレクトリへ展開したsource一式を修正元とし、元の納品物を直接書き換えない。`pnpm package`はsourceを書き出し、旧sourceをbackupへ残す。ZIP作成/全SHAの手順は検証ガイドとREADMEから辿る。
 
-最終納品のファイル数・ZIP SHA・検証完了状態は、deployment-resultsのsourceDelivery.proofや同梱の外部proofを優先する。0.17.1用の版付きsource ZIP名は`japanese-craft-jewelry-source-0.17.1-direct-020.zip`、外部proof名は`package-verification-0.17.1-direct-020.json`。名前だけで納品検証済みとしない。初回0.15の`package-verification-0.15.0.json`と区別する。文書追加でファイル数は増えるため、以前の822を固定条件にしない。ZIP自身のSHAをZIP内へ入れると自己参照になるので外部proofへ置く。node_modules/dist/artifacts/.git/.env/秘密/退役画像をsourceへ入れない。
+最終納品のファイル数・ZIP SHA・検証完了状態は、deployment-resultsのsourceDelivery.proofや同梱の外部proofを優先する。0.17.2用の版付きsource ZIP名は`japanese-craft-jewelry-source-0.17.2-unified-021.zip`、外部proof名は`package-verification-0.17.2-unified-021.json`。名前だけで納品検証済みとしない。初回0.15の`package-verification-0.15.0.json`と区別する。文書追加でファイル数は増えるため、以前の822を固定条件にしない。ZIP自身のSHAをZIP内へ入れると自己参照になるので外部proofへ置く。node_modules/dist/artifacts/.git/.env/秘密/退役画像をsourceへ入れない。
 
 スクリーンショット等は別の私的QA証跡。文中のartifactsという平文パスはローカル/納品証跡の所在で、アプリ実行依存ではない。存在しないartifactをMarkdownリンクにせず、実行可能な手順と履歴を分ける。AI原本50PNGの0.14別ZIPを保持し、0.16の新規23PNG（採用20・棄却3）は新しい生成/採否記録と分ける。0.16原本ZIPは26ファイル・35,561,799bytes、SHA256 `383cf02e99cdf06d936118e9d071f35df68a1b99191de31442b7f450de386254`を外部`originals-verification-0.16.0.json`で検証済み。最終納品先・proofはdeployment-resultsを確認する。
 
@@ -114,7 +114,7 @@ Googleマップは初回の明示許可後、日英・全店舗で30日間自動
 【今回の依頼】を実装・検証し、修正内容と根拠を引き継げる状態にしてください。
 計画だけで終わらず、依頼範囲の可逆的な作業を進めてください。
 
-現在の作業版はJapanese Craft Jewelry0.17.1（仕様020）、SORA運営、日英、
+現在の作業版はJapanese Craft Jewelry0.17.2（仕様021）、SORA運営、日英、
 公開60/登録66商品・24県、AI WebP118ファイルです。
 公開app/Actions/実URL結果はdocs/deployment-results.jsonの確定値を確認し、
 ローカル成功を公開成功に読み替えないでください。
@@ -135,7 +135,7 @@ AdSenseはoff、アカウント/CMP未接続、アフィリエイトは未申請
 
 先にAGENTS.md、README.md、docs/ai-handoff.md、
 docs/verification-guide.md、docs/deployment-results.json、該当specを読んでください。
-現在の仕様はspecs/020-direct-region-map、直前の地図/表示設定は019、商品追加は018、
+現在の仕様はspecs/021-unified-region-photos、直前の地図/Hero/沖縄仕様は020、地図/表示設定は019、商品追加は018、
 引き継ぐUI/securityは016、保守文書は017です。
 公開状態はdocs/deployment-results.jsonと実URLで取り直し、
 作業ソースの版と過去の公開成功を混同しないでください。

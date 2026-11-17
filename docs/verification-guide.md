@@ -1,11 +1,11 @@
 # 変更に合わせて検証する
 
-確認日：2026-11-17、作業版0.17.1・地図/着用画像/沖縄拡大枠020。目的は、変更に必要な証拠を得て、過去の成功を今回の成功と混同しないこと。最初に[AI引継ぎ](ai-handoff.md)とAGENTS.mdを読む。公開と納品の確定値は[deployment-results.json](deployment-results.json)、実際の入力・対象・失敗は各JSONを正本とする。
+確認日：2026-11-17、作業版0.17.2・産地写真の共通サイズ021。目的は、変更に必要な証拠を得て、過去の成功を今回の成功と混同しないこと。最初に[AI引継ぎ](ai-handoff.md)とAGENTS.mdを読む。公開と納品の確定値は[deployment-results.json](deployment-results.json)、実際の入力・対象・失敗は各JSONを正本とする。
 
-<!-- TODO_PUBLIC_V18 -->
-0.17.1（仕様020）は公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
+<!-- TODO_PUBLIC_V19 -->
+0.17.2（仕様021）は公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
 
-PCのホーム先頭は左の人物AI画像・右の日本地図を並べるRegionHeroです。スマホでは写真を全幅で大きく表示し、その下に商品小情報と地図を並べて、顔や耳を切らずに見やすくします。Heroの県はclick/tap/Enter/Spaceで明示選択すると、女性画像と商品/国内参考価格を切り替え、産地CTAから商品一覧へ進みます。hover/focusだけでは切り替えません。有効な公開地域idだけを`?region=`へ反映し、他query/hash・戻る・言語切替で選択を保ちます。Heroの本州〜北海道は余白を詰めて拡大し、沖縄は「拡大」の注記付き別枠から同じ操作で選べます。Heroとは別に、TOP10後の大きい一覧地図は県のnative直接リンクです。TOP10の人物AI画像は横幅を広げ、元比率とPC最大180px・スマホ最大132pxのcontainで上下の帯を抑え、地域名/商品/価格/順位を保ちます。顔や耳を切らず、初期Heroは既存selection.heroProductIdを使います。これらは機能・表示の変更であり、訪問数や検索順位の改善を実測したという意味ではありません。
+PCのホーム先頭は左の人物AI画像・右の日本地図を並べるRegionHeroです。スマホでは写真を全幅で大きく表示し、その下に商品小情報と地図を並べて、顔や耳を切らずに見やすくします。Heroの県はclick/tap/Enter/Spaceで明示選択すると、女性画像と商品/国内参考価格を切り替え、産地CTAから商品一覧へ進みます。hover/focusだけでは切り替えません。有効な公開地域idだけを`?region=`へ反映し、他query/hash・戻る・言語切替で選択を保ちます。Heroの本州〜北海道は余白を詰めて拡大し、沖縄は「拡大」の注記付き別枠から同じ操作で選べます。Heroとは別に、TOP10後の大きい一覧地図は県のnative直接リンクです。TOP10とDISCOVER3県は共通styleの自然比率画像とし、PC最大300×200px・スマホ最大222×148pxのcontainで上下の帯を抑え、地域名/商品/価格/順位を保ちます。顔や耳を切らず、初期Heroは既存selection.heroProductIdを使います。これらは機能・表示の変更であり、訪問数や検索順位の改善を実測したという意味ではありません。
 
 ## 変更別に検証を選ぶ
 
@@ -35,7 +35,7 @@ PCのホーム先頭は左の人物AI画像・右の日本地図を並べるRegi
 
 追加のホームHeroは一覧地図と別に検査します。全24県の明示選択で女性画像/asset/alt/寸法・商品/価格metadata/単位・産地CTAが一致し、hover/focusで勝手に変わらず、region query/言語/他query/hash/戻る/不正id/noJSが正しいことを確認します。TOP10の縮小は枠の実寸とcontain/可読性/導線で確認し、訪問数の改善とは呼びません。
 
-[地図拡大/直接選択020](../specs/020-direct-region-map/)が現在の作業。旧0.17.0の193件はpreview選択を確かめたもので、今回のクリック遷移や拡大の成功には流用しません。検証はclick-map-stageの専用reportへ分離し、日英home/objects/places、24県の有効href、native click/tap/Enterの実遷移と戻る、hover/focus/selectのpreview、100/150/200/300%と内部scroll/全体表示、JSなし、320/390/1440を確認します。SVGのbbox中心が海や別県になることがあるため、県の実際の塗り領域へ通常の入力を行い、force/DOMclickで合格させません。商品事実・Google店舗Mapsの30日設定は変更しません。実測/公開/ZIPの確定値は020 validationと[verification](verification.md)を正本にします。
+[地図拡大/直接選択020](../specs/020-direct-region-map/)は地図/Heroを変更する際の前段階の基準。旧0.17.0の193件はpreview選択を確かめたもので、今回のクリック遷移や拡大の成功には流用しません。検証はclick-map-stageの専用reportへ分離し、日英home/objects/places、24県の有効href、native click/tap/Enterの実遷移と戻る、hover/focus/selectのpreview、100/150/200/300%と内部scroll/全体表示、JSなし、320/390/1440を確認します。SVGのbbox中心が海や別県になることがあるため、県の実際の塗り領域へ通常の入力を行い、force/DOMclickで合格させません。商品事実・Google店舗Mapsの30日設定は変更しません。実測/公開/ZIPの確定値は020 validationと[verification](verification.md)を正本にします。
 
 ## 0.17の記録を読む
 
@@ -184,3 +184,7 @@ ZIP検証後に完了記録を更新した場合は、もう一度export/ZIP/全
 
 最新の納品/公開の概要は[deployment-results.json](deployment-results.json)。現在019の地図/保存設定、直前018の全国追加、017の文書整備・旧0.15の公開検査を区別し、過去の件数や実行時刻を書き換えない。
 
+
+## 0.17.2 写真共通サイズ021
+
+現在の写真は[021](../specs/021-unified-region-photos/)・[運用説明](region-photos-v19.md)。安定buildに対してnode scripts/check-region-photos.mjs、node scripts/check-region-style-preservation.mjs、必要なmobile/Source/SEOを実行します。37検査は全3画面・日英・5幅/390画像と両group寸法/実paint・focus/axe、保全8検査は494入力と全1453script/画像の差分です。前段階の地図217/Hero77を新写真サイズ検証へ加算しません。

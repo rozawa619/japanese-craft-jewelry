@@ -6,7 +6,7 @@
 
 1. README → docs/ai-handoff.md → docs/handoff.md → docs/architecture.md。
 2. Git checkoutならgit status --short、ZIPなら元ZIP/proofと別の作業用コピーを確認。package.json、docs/deployment-results.jsonを読み、公開app commitと文書/作業HEAD、最新ZIPを区別。ZIPに.gitがないことをエラーにしない。
-3. 現在の作業はspecs/020-direct-region-map。直前の地図/表示設定は019、商品追加は018、引き継ぐUI/securityは016、保守文書の意図は017。必要な領域だけ過去仕様へ戻る。
+3. 現在の作業はspecs/021-unified-region-photos。地図/Hero/沖縄の直前仕様は020。直前の地図/表示設定は019、商品追加は018、引き継ぐUI/securityは016、保守文書の意図は017。必要な領域だけ過去仕様へ戻る。
 4. docs/setup.mdでruntime/env/base/Chromeを確認。docsのJSONはbuild入力なので削除しない。
 5. 変更する正本を特定し、docs/verification-guide.mdで必要な検査を選び、実装と仕様・引継ぎを合わせる。
 
@@ -14,7 +14,7 @@
 
 - 運営者表示SORA、日本全国の工芸ジュエリーを選ぶJA/ENサイト。神奈川専用やiTOへ戻さない。
 - ブログ/Contact/販売・決済・発送の機能を作らず、不要な販売責任説明をUIに再導入しない。提供されていない氏名/住所/メールを作らない。
-- 作業版0.17.1は0.16の60公開/66登録・24県・34公開関連技法/全36・118AI画像を継承。固定上限や各県同数の条件ではない。地図47県の未掲載県は非リンクで、空の地域/技法やdraftの公開URLを作らない。
+- 作業版0.17.2は0.16の60公開/66登録・24県・34公開関連技法/全36・118AI画像を継承。固定上限や各県同数の条件ではない。地図47県の未掲載県は非リンクで、空の地域/技法やdraftの公開URLを作らない。
 - COCOON2/欠品18K/販売未確認の畠山2/hairpinはdraft。復帰には対象variantの現行購入根拠と派生参照の再確認が必要。403を閉店/売切れとしない。
 
 ## 正本と編集
@@ -50,12 +50,12 @@
 
 ## 検証・完了の記録
 
-<!-- TODO_PUBLIC_V18 -->
-0.17.1（仕様020）は公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
+<!-- TODO_PUBLIC_V19 -->
+0.17.2（仕様021）は公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
 
-PCのホーム先頭は左の人物AI画像・右の日本地図を並べるRegionHeroです。スマホでは写真を全幅で大きく表示し、その下に商品小情報と地図を並べて、顔や耳を切らずに見やすくします。Heroの県はclick/tap/Enter/Spaceで明示選択すると、女性画像と商品/国内参考価格を切り替え、産地CTAから商品一覧へ進みます。hover/focusだけでは切り替えません。有効な公開地域idだけを`?region=`へ反映し、他query/hash・戻る・言語切替で選択を保ちます。Heroの本州〜北海道は余白を詰めて拡大し、沖縄は「拡大」の注記付き別枠から同じ操作で選べます。Heroとは別に、TOP10後の大きい一覧地図は県のnative直接リンクです。TOP10の人物AI画像は横幅を広げ、元比率とPC最大180px・スマホ最大132pxのcontainで上下の帯を抑え、地域名/商品/価格/順位を保ちます。顔や耳を切らず、初期Heroは既存selection.heroProductIdを使います。これらは機能・表示の変更であり、訪問数や検索順位の改善を実測したという意味ではありません。
+PCのホーム先頭は左の人物AI画像・右の日本地図を並べるRegionHeroです。スマホでは写真を全幅で大きく表示し、その下に商品小情報と地図を並べて、顔や耳を切らずに見やすくします。Heroの県はclick/tap/Enter/Spaceで明示選択すると、女性画像と商品/国内参考価格を切り替え、産地CTAから商品一覧へ進みます。hover/focusだけでは切り替えません。有効な公開地域idだけを`?region=`へ反映し、他query/hash・戻る・言語切替で選択を保ちます。Heroの本州〜北海道は余白を詰めて拡大し、沖縄は「拡大」の注記付き別枠から同じ操作で選べます。Heroとは別に、TOP10後の大きい一覧地図は県のnative直接リンクです。TOP10とDISCOVER3県は共通styleの自然比率画像とし、PC最大300×200px・スマホ最大222×148pxのcontainで上下の帯を抑え、地域名/商品/価格/順位を保ちます。顔や耳を切らず、初期Heroは既存selection.heroProductIdを使います。これらは機能・表示の変更であり、訪問数や検索順位の改善を実測したという意味ではありません。
 
-- 0.17.0のdiscovery-map-stageは当時の証跡。020の直接クリック/拡大を旧193件のpreview操作で合格にしない。最新の実測は020 validation・click-map-stage・deployment-results・verificationを確認する。
+- 0.17.0のdiscovery-map-stageは当時の証跡。020の直接クリック/拡大を旧193件のpreview操作で合格にしない。最新の写真サイズは021 validation・region-photos-stage・deployment-results・verificationを確認する。020の217/77は地図/Heroの旧段階で、021のstyle外/実行script不変証明と区別する。
 
 - JSON/広告変更はpnpm verify。文言/画面は影響とriskに応じたtype/build/JAEN/mobile等。docs-onlyに497全走査を要求せず、リンク/コマンド/整合と必要なbuildを確認する。
 - build中に共有distへbrowser検査しない。ローカル/公開/途中/最終を区別し、CHECK_REPORT_PATH等を作業固有名へ。0.15の既存証跡を上書きしない。

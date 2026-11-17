@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-17T10:33:45.609Z",
+  "checkedAt": "2026-11-17T10:59:53.428Z",
   "origin": "https://rozawa619.github.io",
   "base": "/japanese-craft-jewelry/",
   "method": "Focused responsive browser checks against a stable build. Raw catalog, display-order IDs and image registry independently supply expected representatives. No product/cookie/advertising data is changed. Standalone controls target44px; normal inline prose links and decorative captions are not claimed to be44px targets.",
@@ -22,7 +22,7 @@
     "src/lib/map-preferences-client.ts": "a533e0b8135acd65ce96c161ce13a4cea82be95f922fcce3fc68c67487110e8f",
     "src/components/MapPreferences.astro": "7b0ec812f5169c735cd997417fb01489c7d38079cc49ea1919c4358eff05e16f",
     "src/components/JapanJewelryMap.astro": "45666cf0dbe7f33780d06eaa83b5626999380f9e96126fe2f2b2dac3d159bda7",
-    "src/components/RegionSelection.astro": "7b1cfa43e11e5cf11eca2c0bc526a5e00651a94e62b831d33646dafe6781aef8"
+    "src/components/RegionSelection.astro": "396daaf23c00803ba7985f0e47e257e3cc04aabcdbb0b95fe12adedacc5c586b"
   },
   "views": [
     {
@@ -440,182 +440,6 @@
       "status": "passed",
       "externalRequests": 0,
       "pageErrors": 0
-    },
-    {
-      "key": "en-home-768x1024",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-listing-768x1024",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-region-768x1024",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-detail-768x1024",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-long-detail-768x1024",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-privacy-768x1024",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-home-768x430",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-listing-768x430",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-region-768x430",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-detail-768x430",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-long-detail-768x430",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-privacy-768x430",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-home-667x375",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-listing-667x375",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-region-667x375",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-detail-667x375",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-long-detail-667x375",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-privacy-667x375",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-home-1440x1000",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-listing-1440x1000",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-region-1440x1000",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-detail-1440x1000",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-long-detail-1440x1000",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "en-privacy-1440x1000",
-      "status": "passed",
-      "externalRequests": 0,
-      "pageErrors": 0
-    },
-    {
-      "key": "ja-source-hash",
-      "status": "passed"
-    },
-    {
-      "key": "en-source-hash",
-      "status": "passed"
-    },
-    {
-      "key": "ja-nojs-sources-320",
-      "status": "passed"
-    },
-    {
-      "key": "ja-nojs-sources-768",
-      "status": "passed"
-    },
-    {
-      "key": "en-nojs-sources-320",
-      "status": "passed"
-    },
-    {
-      "key": "en-nojs-sources-768",
-      "status": "passed"
-    },
-    {
-      "key": "ja-live-map-320",
-      "status": "passed"
-    },
-    {
-      "key": "en-live-map-390",
-      "status": "passed"
     }
   ],
   "failures": [],
@@ -632,10 +456,7 @@
     "artifacts/click-map-stage-hosted-mobile-en-listing-320x740-filters.png",
     "artifacts/click-map-stage-hosted-mobile-en-region-320x740-top.png",
     "artifacts/click-map-stage-hosted-mobile-en-detail-320x740-sources.png",
-    "artifacts/click-map-stage-hosted-mobile-en-privacy-320x740-top.png",
-    "artifacts/click-map-stage-hosted-mobile-en-listing-768x430-filters.png",
-    "artifacts/click-map-stage-hosted-mobile-ja-live-map-320.png",
-    "artifacts/click-map-stage-hosted-mobile-en-live-map-390.png"
+    "artifacts/click-map-stage-hosted-mobile-en-privacy-320x740-top.png"
   ],
   "axe": [
     {
@@ -673,38 +494,9 @@
     {
       "key": "en-privacy-320x740",
       "violations": []
-    },
-    {
-      "key": "en-region-768x1024",
-      "violations": []
     }
   ],
-  "maps": [
-    {
-      "key": "ja-live-map-320",
-      "status": "passed"
-    },
-    {
-      "key": "en-live-map-390",
-      "status": "passed"
-    }
-  ],
-  "sourceControls": 120,
-  "typeImages": 112,
-  "sourceInputsUnchanged": true,
-  "completedAt": "2026-11-17T10:37:09.166Z",
-  "summary": {
-    "checks": 92,
-    "passed": 92,
-    "failed": 0,
-    "viewports": 7,
-    "locales": 2,
-    "representativeRoutes": 6,
-    "sourceControls": 120,
-    "typeImageInstances": 112,
-    "axeScreens": 10,
-    "axeViolations": 0,
-    "liveMaps": 2,
-    "screenshots": 16
-  }
+  "maps": [],
+  "sourceControls": 80,
+  "typeImages": 80
 }

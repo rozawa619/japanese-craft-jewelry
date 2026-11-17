@@ -1,13 +1,17 @@
 # 文書の入口
 
-作業版0.17.1・地図/着用画像/沖縄拡大枠020（2026-11-17）。文書入口は017を継承し、旧版を現在値へ読み替えません。
+作業版0.17.2・産地写真の共通サイズ021（2026-11-17）。文書入口は017を継承し、旧版を現在値へ読み替えません。
 
-<!-- TODO_PUBLIC_V18 -->
-0.17.1（仕様020）は公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
+<!-- TODO_PUBLIC_V19 -->
+0.17.2（仕様021）は公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
 
-PCのホーム先頭は左の人物AI画像・右の日本地図を並べるRegionHeroです。スマホでは写真を全幅で大きく表示し、その下に商品小情報と地図を並べて、顔や耳を切らずに見やすくします。Heroの県はclick/tap/Enter/Spaceで明示選択すると、女性画像と商品/国内参考価格を切り替え、産地CTAから商品一覧へ進みます。hover/focusだけでは切り替えません。有効な公開地域idだけを`?region=`へ反映し、他query/hash・戻る・言語切替で選択を保ちます。Heroの本州〜北海道は余白を詰めて拡大し、沖縄は「拡大」の注記付き別枠から同じ操作で選べます。Heroとは別に、TOP10後の大きい一覧地図は県のnative直接リンクです。TOP10の人物AI画像は横幅を広げ、元比率とPC最大180px・スマホ最大132pxのcontainで上下の帯を抑え、地域名/商品/価格/順位を保ちます。顔や耳を切らず、初期Heroは既存selection.heroProductIdを使います。これらは機能・表示の変更であり、訪問数や検索順位の改善を実測したという意味ではありません。
+PCのホーム先頭は左の人物AI画像・右の日本地図を並べるRegionHeroです。スマホでは写真を全幅で大きく表示し、その下に商品小情報と地図を並べて、顔や耳を切らずに見やすくします。Heroの県はclick/tap/Enter/Spaceで明示選択すると、女性画像と商品/国内参考価格を切り替え、産地CTAから商品一覧へ進みます。hover/focusだけでは切り替えません。有効な公開地域idだけを`?region=`へ反映し、他query/hash・戻る・言語切替で選択を保ちます。Heroの本州〜北海道は余白を詰めて拡大し、沖縄は「拡大」の注記付き別枠から同じ操作で選べます。Heroとは別に、TOP10後の大きい一覧地図は県のnative直接リンクです。TOP10とDISCOVER3県は共通styleの自然比率画像とし、PC最大300×200px・スマホ最大222×148pxのcontainで上下の帯を抑え、地域名/商品/価格/順位を保ちます。顔や耳を切らず、初期Heroは既存selection.heroProductIdを使います。これらは機能・表示の変更であり、訪問数や検索順位の改善を実測したという意味ではありません。
 
 台帳は60公開/66登録・24県・118画像を継承。確定状態は[deployment-results](deployment-results.json)を参照します。
+
+## 写真サイズの現在仕様
+
+[写真共通サイズ021](../specs/021-unified-region-photos/)・[操作と更新](region-photos-v19.md)。Top10/DISCOVERを日英3画面で共通化し、37検査/390画像と保全8検査で確認する。
 
 ## 現在の保守
 
@@ -52,4 +56,4 @@ PCのホーム先頭は左の人物AI画像・右の日本地図を並べるRegi
 
 archiveと番号付きの旧報告は、当時の判断/失敗raw/出典の確認範囲を保つ資料です。design.mdやcontent-inventory.mdなど古い説明にも当時の件数・UIが残っています。現在は[020](../specs/020-direct-region-map/spec.md)、直前の地図/表示設定は[019](../specs/019-geographic-discovery-map-privacy/spec.md)、全国追加は[018](../specs/018-national-jewelry-expansion/spec.md)、引き継ぐUI/securityは[016](../specs/016-visual-choices-mobile-security/spec.md)、保守文書は[017](../specs/017-maintainer-handoff/spec.md)。
 
-0.17.1の実測は020 validation・click-map-stage・verificationを正本にし、0.17.0の実測は019 validation・discovery-map-stage、0.16の一次実測はnational-stage、0.15はvisual-mobile-stage、0.14はprivacy-depth-stage、0.13はvisual-seo-stage。旧editorial/quality/market/destination-stage等を最新検証へ転用しません。017のdocs/tool検査はhandoff-stageで区別します。私的スクリーンショット/元PNG/artifactsはZIPの実行依存ではなく、納品先の別資料です。
+0.17.2の実測は021 validation・region-photos-stage・verificationを正本にし、0.17.1は020 validation・click-map-stageで区別し、0.17.0の実測は019 validation・discovery-map-stage、0.16の一次実測はnational-stage、0.15はvisual-mobile-stage、0.14はprivacy-depth-stage、0.13はvisual-seo-stage。旧editorial/quality/market/destination-stage等を最新検証へ転用しません。017のdocs/tool検査はhandoff-stageで区別します。私的スクリーンショット/元PNG/artifactsはZIPの実行依存ではなく、納品先の別資料です。

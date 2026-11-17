@@ -1,0 +1,136 @@
+{
+  "version": "0.17.1",
+  "status": "deployed_and_core_verified_superseded_by_user_size_refinement",
+  "applicationCommit": "8b53114d622312392c7e6ebd97928481b4dd02ae",
+  "actions": {
+    "id": 44069624893,
+    "headSha": "8b53114d622312392c7e6ebd97928481b4dd02ae",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44069624893",
+    "updatedAt": "2026-11-17T10:58:49Z"
+  },
+  "local": {
+    "map": {
+      "checks": 217,
+      "passed": 217,
+      "failed": 0,
+      "regions": 24,
+      "geographicShapes": 47,
+      "locales": 2,
+      "surfaces": 3,
+      "viewports": 3,
+      "selectionChecks": 186,
+      "nativeNavigations": 32,
+      "zoomCases": 6,
+      "mobilePanCases": 2,
+      "compactScenes": 18,
+      "topTenImageChecks": 180,
+      "axeScreens": 6,
+      "axeViolations": 0,
+      "screenshots": 6,
+      "pageErrors": 0,
+      "consoleErrors": 0,
+      "externalRequests": 0
+    },
+    "hero": {
+      "checks": 77,
+      "passed": 77,
+      "failed": 0,
+      "locales": 2,
+      "viewports": 4,
+      "regions": 24,
+      "selections": 172,
+      "modelSwitches": 124,
+      "firstFoldScreens": 8,
+      "enlargedGeometryScreens": 8,
+      "uniquePrefectureShapes": 47,
+      "okinawaInset": true,
+      "axeScreens": 4,
+      "axeViolations": 0,
+      "screenshots": 8,
+      "pageErrors": 0,
+      "consoleErrors": 0,
+      "externalRequests": 0,
+      "sourceInputsUnchanged": true
+    },
+    "mobile": {
+      "checks": 92,
+      "passed": 92,
+      "failed": 0,
+      "viewports": 7,
+      "locales": 2,
+      "representativeRoutes": 6,
+      "sourceControls": 120,
+      "typeImageInstances": 112,
+      "axeScreens": 10,
+      "axeViolations": 0,
+      "liveMaps": 2,
+      "screenshots": 16
+    }
+  },
+  "public": {
+    "hero": {
+      "report": "docs/click-map-stage-hosted-hero-results.json",
+      "summary": {
+        "checks": 77,
+        "passed": 77,
+        "failed": 0,
+        "locales": 2,
+        "viewports": 4,
+        "regions": 24,
+        "selections": 172,
+        "modelSwitches": 124,
+        "firstFoldScreens": 8,
+        "enlargedGeometryScreens": 8,
+        "uniquePrefectureShapes": 47,
+        "okinawaInset": true,
+        "axeScreens": 4,
+        "axeViolations": 0,
+        "screenshots": 8,
+        "pageErrors": 0,
+        "consoleErrors": 0,
+        "externalRequests": 0,
+        "sourceInputsUnchanged": true
+      }
+    },
+    "sources": {
+      "report": "docs/click-map-stage-hosted-sources-results.json",
+      "summary": {
+        "checks": 328,
+        "passed": 328,
+        "failed": 0,
+        "htmlSha256Comparisons": 328,
+        "productPages": 120,
+        "sourceDisclosures": 448,
+        "sourceRecords": 1580
+      }
+    },
+    "release": {
+      "report": "docs/click-map-stage-hosted-release-results.json",
+      "summary": {
+        "checks": 24,
+        "passed": 24,
+        "failed": 0,
+        "canonicalUrls": 328,
+        "uniqueImages": 118,
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    "map": {
+      "completed": 146,
+      "failed": 0,
+      "status": "cancelled_superseded",
+      "report": "docs/click-map-stage-hosted-map-superseded-size-results.json"
+    },
+    "mobile": {
+      "completed": 61,
+      "failed": 0,
+      "status": "cancelled_superseded",
+      "log": "artifacts/click-map-stage/hosted-mobile-superseded-size.log"
+    }
+  },
+  "sourcePackage": "Final packaging was superseded by the next user size-unification request; latest full source will be0.17.2.",
+  "scope": "No final217/92 hosted completion claimed for this interim release. New021 style checks and preservation evidence validate the final photo size."
+}
