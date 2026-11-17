@@ -29,8 +29,13 @@
 ## 公開・納品
 
 <!-- PUBLIC_STATUS_V23 -->
-公開前の最終検証中。新app・Actions・実URL・source ZIPの確定結果を追記する。
+公開app f2bb423f4c4cf476e449d8ec37837243f764cfee、[Actions44089370227](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44089370227) completed/success。[公開集約](japanese-models-stage-hosted-summary.json)でHero77・写真37・mobile92・全商品browser146・Source328・補足24が成功。全328生HTML/118画像SHAは最終local一致、旧22画像URLすべて404。471生成物のSHAも不変。
+
+公開mobileの初回は90/92。[初回記録](japanese-models-stage-hosted-mobile-initial-results.json)を保持し、[対象診断](japanese-models-stage-hosted-mobile-timing-diagnostic.json)の10試行中1回で、表示条件成立後も固定75msではscroll→requestAnimationFrameの更新前だったことを再現。操作せず待つと表示された。QAだけを実際の条件と可視状態のrAF待機へ直し、可視/44px/位置/出典のassertionは全て維持した。[最終mobile](japanese-models-stage-hosted-mobile-results.json)は92/92、待機12件の最大294ms。アプリ/CSS/生成物は変更していない。[最終型検査](japanese-models-stage-final-type-results.json)は151files・0 error/warning/hintで、初回full verifyの150filesと区別する。
 
 元PNG22・旧AI参照WebP22・manifest/目視記録/READMEを別ZIPに保存、47ファイルの集合/全SHAを照合。全source/原本ZIPの最終状態はdeployment-resultsのsourceDeliveryと外部proofを正本とする。CLI/API keyへ切り替えていない。
 
 Chromeのresponsive emulationであり、実機iOS/Safari、実物の完全再現、検索順位/離脱率/AdSense承認や全法域適合を認定しない。[法務/運営残条件](remaining-task-audit-v17.md)は継承する。
+
+<!-- DELIVERY_V23 -->
+0.18.0の全sourceは1198ファイル・公開画像118枚。repository/export/ZIPの集合と全SHAを照合済み。全source ZIPはjapanese-craft-jewelry-source-0.18.0-models-023.zip、外部proofはpackage-verification-0.18.0-models-023.json、原本ZIPはjapanese-craft-jewelry-originals-0.18.0.zip（47ファイル）。完了記録を含め最終再梱包し、ZIP hashは自己参照を避け外部proofへ保存する。正本はdeployment-results.jsonのsourceDelivery。

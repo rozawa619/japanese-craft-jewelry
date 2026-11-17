@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-17T13:04:48.599Z",
+  "checkedAt": "2026-11-17T13:28:17.377Z",
   "method": "Read-only local link, Markdown heading/fragment and pnpm/node-script reference checks on active maintainer documents. External URLs are counted, not requested. Legacy operations after its explicit marker and historical research/report prose are not treated as the current runbook.",
   "files": [
     "README.md",
@@ -58,9 +58,9 @@
     "specs/023-japanese-model-styling/validation.md"
   ],
   "errors": [],
-  "localLinks": 585,
+  "localLinks": 604,
   "anchors": 6,
-  "externalLinks": 104,
+  "externalLinks": 117,
   "commands": 98,
   "scriptPaths": 39,
   "snapshot": {
@@ -73,9 +73,9 @@
   "status": "passed",
   "summary": {
     "files": 54,
-    "localLinks": 585,
+    "localLinks": 604,
     "anchors": 6,
-    "externalLinksUnchecked": 104,
+    "externalLinksUnchecked": 117,
     "pnpmReferences": 98,
     "nodeScriptReferences": 39,
     "errors": 0

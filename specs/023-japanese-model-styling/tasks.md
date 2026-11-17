@@ -8,10 +8,13 @@
 - [x] 旧22人物をretiredにし、active参照/ローカルdistから除外。Git追跡解除/ignore、旧bytes/生成記録を保持
 - [x] 保全9項目で保持36人物/単体60・旧22bytes・商品/価格/出典/店舗/広告/Maps設定とUI sourceの不変を照合
 - [x] 日本人設定/原本/配信QA63・人物59・単体61、Hero77（全24県/日英/スマホ/自然高/AIcaption）・全商品日英browser124・写真37を確認
-- [x] 型150ファイル/単体149/build344HTML・リンク/CSP/広告off4・Sources328・SEO7を確認
+- [x] 型150ファイル/単体149/build344HTML（QA修正後の最終型151ファイルもエラー等0）・リンク/CSP/広告off4・Sources328・SEO7を確認
 - [x] スマホ92（7viewport/日英/Source操作/種類画像/実Maps）を確認し、一覧地図を含むUI source/JS・CSS不変と併せて回帰範囲を記録
-- [ ] Git/Actions・実URLで新22配信/旧22非配信/日英・画像切替/生成物を確認
-- [ ] 現在入口/AI prompt/編集・検証手順の公開状態を確定結果へ更新
-- [ ] 全source ZIPからretired旧画像の除外、0.18.0全source/元PNG・外部proofの集合/全SHAを照合して納品
+- [x] Git/Actions・実URLで新22配信/旧22非配信/日英・画像切替/生成物を確認
+- [x] 現在入口/AI prompt/編集・検証手順の公開状態を確定結果へ更新
+- [x] 全source ZIPからretired旧画像の除外、0.18.0全source/元PNG・外部proofの集合/全SHAを照合して納品
 
-生成/採用・local結果は[validation](validation.md)へ対応付けた。公開とZIPは別段階で、途中失敗や棄却があれば理由とrawを最終成功と区別して追記する。本人/契約/申請/CMP/ホスト等の残条件は画像更新で完了扱いにしない。
+生成/採用・local/公開結果は[validation](validation.md)へ対応付けた。公開とZIPは別段階で、途中失敗や棄却があれば理由とrawを最終成功と区別して追記する。本人/契約/申請/CMP/ホスト等の残条件は画像更新で完了扱いにしない。
+
+<!-- DELIVERY_V23 -->
+0.18.0の全sourceは1198ファイル・公開画像118枚。repository/export/ZIPの集合と全SHAを照合済み。全source ZIPはjapanese-craft-jewelry-source-0.18.0-models-023.zip、外部proofはpackage-verification-0.18.0-models-023.json、原本ZIPはjapanese-craft-jewelry-originals-0.18.0.zip（47ファイル）。完了記録を含め最終再梱包し、ZIP hashは自己参照を避け外部proofへ保存する。正本はdeployment-results.jsonのsourceDelivery。

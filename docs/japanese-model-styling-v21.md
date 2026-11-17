@@ -1,6 +1,6 @@
 # 日本人女性の生成設定へ着用画像を統一する — 0.18.0
 
-確認日2026-11-17。仕様は[023](../specs/023-japanese-model-styling/spec.md)。**新22人物画像の生成・個別目視採用・ローカル参照切替と保全/build検証を完了しました。公開app/Actions・実URLと全source ZIPは後続段階です。** 確定状態は[023 validation](../specs/023-japanese-model-styling/validation.md)・[verification](verification.md)・[deployment-results](deployment-results.json)を確認してください。
+確認日2026-11-17。仕様は[023](../specs/023-japanese-model-styling/spec.md)。**新22人物画像の生成・個別目視採用・参照切替とローカル/公開検証を完了しました。** 公開app `f2bb423f4c4cf476e449d8ec37837243f764cfee`、[Actions44089370227](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44089370227) completed/success。全source1198ファイルの集合/全SHAも照合済みです。 確定状態は[023 validation](../specs/023-japanese-model-styling/validation.md)・[verification](verification.md)・[deployment-results](deployment-results.json)を確認してください。
 
 ## 最新の画像方針
 
@@ -8,7 +8,7 @@
 
 ここでのJapaneseや年齢は創作上の設定です。見た目から実在人物の国籍・民族・年齢を判断したり、AIが魅力度を客観判定したりしたという説明はしません。サイト上は従来どおり「AIイメージ/AI image」を表示し、実物写真や実際の試着/レビューと誤認させません。
 
-生成記録を根拠とする監査では、現行58unique人物画像/60商品参照のうち22画像が置換対象、36画像は既存のJapanese設定を保持、不明0でした。その22画像を新規生成し、旧自作AI参照22枚と個別に比較して22採用/棄却0。新設定は25〜30歳（25歳6枚）で、かわいい系11/綺麗な系統11です。全60商品がJapaneseと明記された架空成人女性の生成記録に対応し、保持36人物＋新22人物＋単体60＝118公開画像をローカルdistと照合しました。これは公開app/ZIPの確認結果とは分けて扱います。
+生成記録を根拠とする監査では、現行58unique人物画像/60商品参照のうち22画像が置換対象、36画像は既存のJapanese設定を保持、不明0でした。その22画像を新規生成し、旧自作AI参照22枚と個別に比較して22採用/棄却0。新設定は25〜30歳（25歳6枚）で、かわいい系11/綺麗な系統11です。全60商品がJapaneseと明記された架空成人女性の生成記録に対応し、保持36人物＋新22人物＋単体60＝118公開画像をローカルdistと照合しました。公開実URLのhero77・photos37・mobile92・browser146・sources328・release24も確認済みで、[hosted summary](japanese-models-stage-hosted-summary.json)を根拠とします。全source1198ファイルの集合/全SHAも独立に照合済みです。
 
 ## 変更する正本
 
@@ -33,6 +33,8 @@
 
 この一回の保全は旧retired WebPを残したreviewed checkoutで実行し、fresh clone/新source ZIPの通常build依存へは加えません。CLIは`node scripts/check-japanese-model-preservation.mjs`。`CHECK_REPORT_PATH`/`CHECK_BUILD_MANIFEST_PATH`はrepo内docs/artifacts配下のJSONへ変更できます。旧画像は台帳retired/ignore・Git追跡解除により配信/全sourceから除外し、既存v12 baselineは変更しません。
 
+公開スマホの初回90/92は、75ms固定待ちとsticky表示のrAF更新との競合でした。QAの待ちを実条件/visible pollingへ変更し、全assertion・UI source/buildを保持したうえで全92件を再実行しています。初回/診断/最終reportを[validation](../specs/023-japanese-model-styling/validation.md)へ分け、full verify時の型150とQA修正後の最終型151（エラー等0）も区別しています。
+
 ## 人・別AIが更新するとき
 
 1. 監査集合・現在のregistry・元のpromptを先に確認します。不明な履歴をJapanese設定だったと後付けせず、必要なら新規生成して記録します。
@@ -49,4 +51,7 @@
 
 旧0.17.3のMap241/Hero77/mobile92等は当時の実測です。今回の画像切替後にも必要な専用/既存QAで確認し、旧検査を新画像の成功件数として加算しません。生成設定や画像の目視は、実物/実在人物の属性や全権利適合・AdSense承認を保証しません。本人/契約/商用ホスト等の[運営残条件](remaining-task-audit-v17.md)を画像更新の成功で完了扱いにしません。
 
-予定の全source ZIPは`japanese-craft-jewelry-source-0.18.0-models-023.zip`、外部proofは`package-verification-0.18.0-models-023.json`。別資料の原本ZIP `japanese-craft-jewelry-originals-0.18.0.zip`は47ファイル（新PNG22/旧自作AI参照22/記録3）を照合済み、44,104,939 bytes、SHA256 `20422809c6f97d93c50176e84abd5bc81161a7d344a8620c9d40050d4225e942`。全sourceの集合/全SHA・公開/納品状態はdeployment-resultsのsourceDeliveryと外部proofを正本にし、原本ZIPの成功で公開/source ZIPの確認を代替しません。
+最終の全source ZIPは`japanese-craft-jewelry-source-0.18.0-models-023.zip`、外部proofは`package-verification-0.18.0-models-023.json`。別資料の原本ZIP `japanese-craft-jewelry-originals-0.18.0.zip`は47ファイル（新PNG22/旧自作AI参照22/記録3）を照合済み、44,104,939 bytes、SHA256 `20422809c6f97d93c50176e84abd5bc81161a7d344a8620c9d40050d4225e942`。全sourceの集合/全SHA・公開/納品状態はdeployment-resultsのsourceDeliveryと外部proofを正本にし、原本ZIP/公開検証の成功で全source ZIPの照合を代替しません。
+
+<!-- DELIVERY_V23 -->
+0.18.0の全sourceは1198ファイル・公開画像118枚。repository/export/ZIPの集合と全SHAを照合済み。全source ZIPはjapanese-craft-jewelry-source-0.18.0-models-023.zip、外部proofはpackage-verification-0.18.0-models-023.json、原本ZIPはjapanese-craft-jewelry-originals-0.18.0.zip（47ファイル）。完了記録を含め最終再梱包し、ZIP hashは自己参照を避け外部proofへ保存する。正本はdeployment-results.jsonのsourceDelivery。

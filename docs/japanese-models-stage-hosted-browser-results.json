@@ -1,0 +1,4051 @@
+{
+  "checkedAt": "2026-11-17T13:07:52.440Z",
+  "origin": "https://rozawa619.github.io",
+  "base": "/japanese-craft-jewelry/",
+  "hosted": true,
+  "method": "Fresh headless installed Chrome at390×844; real page.goto GET navigation of every published JA/EN product detail. Registry-oracle comparison of styling source, asset id, localized alt, width/height attributes, actual decoded intrinsic dimensions, full-frame ratio, contain fit and visible AI caption; per-page console/page exceptions and horizontal overflow. Four representative replacement figures only are captured. Hosted-only GET of every replaced public image requires404; local preview is explicitly skipped because fallback200 is not an availability test. No nationality/ethnicity/exact-age inference or real SKU reproduction claim; no merchant navigation or form submission.",
+  "scope": {
+    "browser": "installed Google Chrome, headless",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "locales": [
+      "ja",
+      "en"
+    ],
+    "publishedProducts": 60,
+    "expectedProductNavigations": 120,
+    "uniqueRegistryImages": 58,
+    "replacementProducts": 22,
+    "oldImageUrls": 22
+  },
+  "sourceInputs": {
+    "started": {
+      "src/data/catalog.json": "2f12215f009e327bc8b4a307f8baf2c3df2dd8e757b655870a9ac47bd1b781b2",
+      "src/data/editorial-images.json": "a32cbc33a3384ab112c47d7b06f1e062d0cb5f424c41d91943bb61b8cffe21da",
+      "src/components/EditorialImage.astro": "39b82dafbbda6a2502c167fef2ab078b2f73b16cd274f0ecc47a4c11d6542e0a",
+      "docs/image-generation-japanese-v23.json": "beaccdb26898bb752b287f1dbb5686091ff317a39eecb9fdf1af119ea5f94031"
+    },
+    "completed": {
+      "src/data/catalog.json": "2f12215f009e327bc8b4a307f8baf2c3df2dd8e757b655870a9ac47bd1b781b2",
+      "src/data/editorial-images.json": "a32cbc33a3384ab112c47d7b06f1e062d0cb5f424c41d91943bb61b8cffe21da",
+      "src/components/EditorialImage.astro": "39b82dafbbda6a2502c167fef2ab078b2f73b16cd274f0ecc47a4c11d6542e0a",
+      "docs/image-generation-japanese-v23.json": "beaccdb26898bb752b287f1dbb5686091ff317a39eecb9fdf1af119ea5f94031"
+    }
+  },
+  "checks": [
+    {
+      "name": "Registry covers exactly the published catalog",
+      "status": "passed",
+      "detail": {
+        "products": 60,
+        "images": 58
+      }
+    },
+    {
+      "name": "ja mobile styling hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "hamamatsuya-catch-pierced",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-hakone-yosegi-pierced-styling-v9",
+          "path": "images/hakone-yosegi-pierced-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/hakone-yosegi-pierced-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling hamamatsuya-clip",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "hamamatsuya-clip",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-hakone-yosegi-clipon-styling-v9",
+          "path": "images/hakone-yosegi-clipon-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/hakone-yosegi-clipon-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling hamamatsuya-pendant",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-muku-yosegi-pendant/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "hamamatsuya-pendant",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-yosegi-pendant-styling-v9",
+          "path": "images/yosegi-pendant-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/yosegi-pendant-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling maruyama-clip-c",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-non-pierced-c/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "maruyama-clip-c",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-yosegi-star-styling-v9",
+          "path": "images/yosegi-star-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/yosegi-star-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling maruyama-clip-d",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-non-pierced-d/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "maruyama-clip-d",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-yosegi-bar-styling-v9",
+          "path": "images/yosegi-bar-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/yosegi-bar-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling maruyama-pierced-c",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-pierced-c/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "maruyama-pierced-c",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-yosegi-star-styling-v9",
+          "path": "images/yosegi-star-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/yosegi-star-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling maruyama-pierced-d",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-pierced-d/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "maruyama-pierced-d",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-yosegi-bar-styling-v9",
+          "path": "images/yosegi-bar-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/yosegi-bar-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling rinzen-seika-amber-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/rinzen-seika-amber-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "rinzen-seika-amber-pierced-earrings",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-rinzen-amber-glass-styling-v9",
+          "path": "images/rinzen-amber-glass-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/rinzen-amber-glass-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/six-kiln-half-moon-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "six-kiln-half-moon-earrings",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-arita-halfmoon-styling-v9",
+          "path": "images/arita-halfmoon-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/arita-halfmoon-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/rinzen-leaf-glass-pendant/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "rinzen-leaf-glass-pendant",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-rinzen-green-leaf-styling-v9",
+          "path": "images/rinzen-green-leaf-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/rinzen-green-leaf-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/six-kiln-blue-bouquet-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "six-kiln-blue-bouquet-pierced-earrings",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-arita-blue-bouquet-styling-v9",
+          "path": "images/arita-blue-bouquet-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/arita-blue-bouquet-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/saskia-diez-drake-porcelain-cuff/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "saskia-diez-drake-porcelain-cuff",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-saskia-porcelain-cuff-styling-v9",
+          "path": "images/saskia-porcelain-cuff-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/saskia-porcelain-cuff-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/checos-japanese-apricot-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "checos-japanese-apricot-pierced-earrings",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-checos-silver-flower-styling-v9",
+          "path": "images/checos-silver-flower-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/checos-silver-flower-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/morphosphere-ultramarine-pansy-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-morphosphere-blue-pansy-styling-v9",
+          "path": "images/morphosphere-blue-pansy-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/morphosphere-blue-pansy-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/kato-suke-drop-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "kato-suke-drop-pierced-earrings",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-kato-green-cloisonne-styling-v9",
+          "path": "images/kato-green-cloisonne-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/kato-green-cloisonne-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling arcos-cosmic-spiral-pendant",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/arcos-cosmic-spiral-pendant/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "arcos-cosmic-spiral-pendant",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-arcos-cosmic-spiral-pendant-styling-v9",
+          "path": "images/arcos-cosmic-spiral-pendant-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/arcos-cosmic-spiral-pendant-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling arcos-cosmic-glass-bracelet",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/arcos-cosmic-glass-bracelet/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "arcos-cosmic-glass-bracelet",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-arcos-cosmic-glass-bracelet-styling-v9",
+          "path": "images/arcos-cosmic-glass-bracelet-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/arcos-cosmic-glass-bracelet-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling senshu-pearl-stud-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/senshu-pearl-stud-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "senshu-pearl-stud-earrings",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-senshu-white-pearl-stud-styling-v9",
+          "path": "images/senshu-white-pearl-stud-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/senshu-white-pearl-stud-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling senshu-pearl-swing-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/senshu-pearl-swing-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "senshu-pearl-swing-earrings",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-senshu-white-pearl-swing-styling-v9",
+          "path": "images/senshu-white-pearl-swing-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/senshu-white-pearl-swing-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling sugimura-hosoge-raden-pendant",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/sugimura-hosoge-raden-pendant/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "sugimura-hosoge-raden-pendant",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-sugimura-raden-flower-pendant-styling-v9",
+          "path": "images/sugimura-raden-flower-pendant-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/sugimura-raden-flower-pendant-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling sugimura-lotus-makie-ring",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/sugimura-lotus-makie-ring/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "sugimura-lotus-makie-ring",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-sugimura-lotus-makie-ring-styling-v9",
+          "path": "images/sugimura-lotus-makie-ring-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/sugimura-lotus-makie-ring-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling simprich-crystal-bubble-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/simprich-crystal-bubble-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "simprich-crystal-bubble-pierced-earrings",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-simprich-crystal-bubble-styling-v9",
+          "path": "images/simprich-crystal-bubble-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/simprich-crystal-bubble-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling simprich-rose-quartz-necklace",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/simprich-rose-quartz-necklace/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "simprich-rose-quartz-necklace",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-simprich-rose-quartz-necklace-styling-v9",
+          "path": "images/simprich-rose-quartz-necklace-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/simprich-rose-quartz-necklace-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling yukieglass-mint-veil-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/yukieglass-mint-veil-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "yukieglass-mint-veil-earrings",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-yukie-mint-glass-styling-v9",
+          "path": "images/yukie-mint-glass-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/yukie-mint-glass-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling yukieglass-rouge-veil-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/yukieglass-rouge-veil-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "yukieglass-rouge-veil-earrings",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-yukie-rouge-glass-styling-v9",
+          "path": "images/yukie-rouge-glass-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/yukie-rouge-glass-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling nakajima-pear-sakura-pendant",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/nakajima-pear-sakura-pendant/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "nakajima-pear-sakura-pendant",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-nakajima-sakura-damascene-pendant-styling-v9",
+          "path": "images/nakajima-sakura-damascene-pendant-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/nakajima-sakura-damascene-pendant-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/kato-suke-round-ring/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "kato-suke-round-ring",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-kato-blue-round-enamel-ring-styling-v9",
+          "path": "images/kato-blue-round-enamel-ring-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/kato-blue-round-enamel-ring-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling sangetsu-irodori-tombodama-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/sangetsu-irodori-tombodama-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "sangetsu-irodori-tombodama-earrings",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-sangetsu-irodori-tombodama-earrings-v23",
+          "path": "images/styling-jp-sangetsu-irodori-tombodama-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-sangetsu-irodori-tombodama-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling sangetsu-irodori-tombodama-necklace",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/sangetsu-irodori-tombodama-necklace/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "sangetsu-irodori-tombodama-necklace",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-sangetsu-irodori-tombodama-necklace-v23",
+          "path": "images/styling-jp-sangetsu-irodori-tombodama-necklace-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-sangetsu-irodori-tombodama-necklace-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling sghr-tie-tie-glass-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/sghr-tie-tie-glass-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "sghr-tie-tie-glass-earrings",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-sghr-tie-tie-glass-earrings-styling-v13",
+          "path": "images/sghr-tie-tie-glass-earrings-styling-v13.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/sghr-tie-tie-glass-earrings-styling-v13.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling sghr-kolmio-glass-ear-cuff",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/sghr-kolmio-glass-ear-cuff/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "sghr-kolmio-glass-ear-cuff",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-sghr-kolmio-glass-ear-cuff-v23",
+          "path": "images/styling-jp-sghr-kolmio-glass-ear-cuff-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-sghr-kolmio-glass-ear-cuff-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling kazarino-hanabishi-copper-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/kazarino-hanabishi-copper-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "kazarino-hanabishi-copper-earrings",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-kazarino-hanabishi-copper-earrings-v23",
+          "path": "images/styling-jp-kazarino-hanabishi-copper-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-kazarino-hanabishi-copper-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling kazarino-shippo-pattern-brass-bangle",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/kazarino-shippo-pattern-brass-bangle/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "kazarino-shippo-pattern-brass-bangle",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-kazarino-shippo-pattern-brass-bangle-styling-v13",
+          "path": "images/kazarino-shippo-pattern-brass-bangle-styling-v13.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/kazarino-shippo-pattern-brass-bangle-styling-v13.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling showen-edo-uchi-silk-bracelet",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/showen-edo-uchi-silk-bracelet/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "showen-edo-uchi-silk-bracelet",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-showen-edo-uchi-silk-bracelet-v23",
+          "path": "images/styling-jp-showen-edo-uchi-silk-bracelet-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-showen-edo-uchi-silk-bracelet-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling iwaya-urushi-9mm-hook-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/iwaya-urushi-9mm-hook-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "iwaya-urushi-9mm-hook-earrings",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-iwaya-urushi-9mm-hook-earrings-v23",
+          "path": "images/styling-jp-iwaya-urushi-9mm-hook-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-iwaya-urushi-9mm-hook-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling toytoy-ninkari-nikuri-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/toytoy-ninkari-nikuri-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "toytoy-ninkari-nikuri-earrings",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-toytoy-ninkari-nikuri-earrings-styling-v13",
+          "path": "images/toytoy-ninkari-nikuri-earrings-styling-v13.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/toytoy-ninkari-nikuri-earrings-styling-v13.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling toytoy-sirokani-pe-silver-necklace",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/toytoy-sirokani-pe-silver-necklace/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "toytoy-sirokani-pe-silver-necklace",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-toytoy-sirokani-pe-silver-necklace-v23",
+          "path": "images/styling-jp-toytoy-sirokani-pe-silver-necklace-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-toytoy-sirokani-pe-silver-necklace-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling tamura-kaisai-enamel-ear-jewelry",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/tamura-kaisai-enamel-ear-jewelry/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "tamura-kaisai-enamel-ear-jewelry",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-tamura-kaisai-enamel-ear-jewelry-v23",
+          "path": "images/styling-jp-tamura-kaisai-enamel-ear-jewelry-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-tamura-kaisai-enamel-ear-jewelry-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling nanao-shuka-nebula-16g-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/nanao-shuka-nebula-16g-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "nanao-shuka-nebula-16g-earrings",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-nanao-shuka-nebula-16g-earrings-styling-v13",
+          "path": "images/nanao-shuka-nebula-16g-earrings-styling-v13.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/nanao-shuka-nebula-16g-earrings-styling-v13.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling simprich-reversible-topaz-ruby-chain-ring",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/simprich-reversible-topaz-ruby-chain-ring/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "simprich-reversible-topaz-ruby-chain-ring",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-simprich-reversible-topaz-ruby-chain-ring-v23",
+          "path": "images/styling-jp-simprich-reversible-topaz-ruby-chain-ring-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-simprich-reversible-topaz-ruby-chain-ring-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling simprich-reversible-silver-piaring-single",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/simprich-reversible-silver-piaring-single/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "simprich-reversible-silver-piaring-single",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-simprich-reversible-silver-piaring-single-v23",
+          "path": "images/styling-jp-simprich-reversible-silver-piaring-single-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-simprich-reversible-silver-piaring-single-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling hario-little-tears-clip-on-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hario-little-tears-clip-on-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "hario-little-tears-clip-on-earrings",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-hario-little-tears-clip-on-earrings-styling-v13",
+          "path": "images/hario-little-tears-clip-on-earrings-styling-v13.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/hario-little-tears-clip-on-earrings-styling-v13.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling nousaku-dahlia-gerbera-clip-on-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/nousaku-dahlia-gerbera-clip-on-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "nousaku-dahlia-gerbera-clip-on-earrings",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-nousaku-dahlia-gerbera-clip-on-earrings-v23",
+          "path": "images/styling-jp-nousaku-dahlia-gerbera-clip-on-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-nousaku-dahlia-gerbera-clip-on-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling nousaku-aya-tin-pendant",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/nousaku-aya-tin-pendant/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "nousaku-aya-tin-pendant",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-nousaku-aya-tin-pendant-v23",
+          "path": "images/styling-jp-nousaku-aya-tin-pendant-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-nousaku-aya-tin-pendant-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling coyorimi-tamamusubi-clip-on-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/coyorimi-tamamusubi-clip-on-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "coyorimi-tamamusubi-clip-on-earrings",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-coyorimi-tamamusubi-clip-on-earrings-styling-v13",
+          "path": "images/coyorimi-tamamusubi-clip-on-earrings-styling-v13.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/coyorimi-tamamusubi-clip-on-earrings-styling-v13.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling somemasa-peacock-clip-on-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/somemasa-peacock-clip-on-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "somemasa-peacock-clip-on-earrings",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-somemasa-peacock-clip-on-earrings-v23",
+          "path": "images/styling-jp-somemasa-peacock-clip-on-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-somemasa-peacock-clip-on-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling egaho-gathered-kurume-kasuri-ear-jewelry",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/egaho-gathered-kurume-kasuri-ear-jewelry/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "egaho-gathered-kurume-kasuri-ear-jewelry",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-egaho-gathered-kurume-kasuri-ear-jewelry-v23",
+          "path": "images/styling-jp-egaho-gathered-kurume-kasuri-ear-jewelry-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-egaho-gathered-kurume-kasuri-ear-jewelry-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling sirisiri-page-blue-enamel-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/sirisiri-page-blue-enamel-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "sirisiri-page-blue-enamel-pierced-earrings",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-sirisiri-page-blue-enamel-pierced-earrings-styling-v13",
+          "path": "images/sirisiri-page-blue-enamel-pierced-earrings-styling-v13.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/sirisiri-page-blue-enamel-pierced-earrings-styling-v13.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling sirisiri-silver-thread-hoop-mini",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/sirisiri-silver-thread-hoop-mini/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "sirisiri-silver-thread-hoop-mini",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-sirisiri-silver-thread-hoop-mini-v23",
+          "path": "images/styling-jp-sirisiri-silver-thread-hoop-mini-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-sirisiri-silver-thread-hoop-mini-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling mie-akoya-oh002-stud-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/mie-akoya-oh002-stud-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "mie-akoya-oh002-stud-earrings",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-mie-akoya-oh002-stud-earrings-v23",
+          "path": "images/styling-jp-mie-akoya-oh002-stud-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-mie-akoya-oh002-stud-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling yadome-akita-rice-silver-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/yadome-akita-rice-silver-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "yadome-akita-rice-silver-pierced-earrings",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-yadome-akita-rice-silver-pierced-earrings-v23",
+          "path": "images/styling-jp-yadome-akita-rice-silver-pierced-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-yadome-akita-rice-silver-pierced-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling sur-basic1-clear-pearl-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/sur-basic1-clear-pearl-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "sur-basic1-clear-pearl-pierced-earrings",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-sur-basic1-clear-pearl-pierced-earrings-v23",
+          "path": "images/styling-jp-sur-basic1-clear-pearl-pierced-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-sur-basic1-clear-pearl-pierced-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling nanayosha-punu-gold-vanilla-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/nanayosha-punu-gold-vanilla-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "nanayosha-punu-gold-vanilla-pierced-earrings",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-nanayosha-punu-gold-vanilla-pierced-earrings-v23",
+          "path": "images/styling-jp-nanayosha-punu-gold-vanilla-pierced-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-nanayosha-punu-gold-vanilla-pierced-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling earth-hiroshima-origami-crane-chain-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/earth-hiroshima-origami-crane-chain-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "earth-hiroshima-origami-crane-chain-earrings",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-styling-earth-hiroshima-origami-crane-chain-earrings-v16",
+          "path": "images/styling-earth-hiroshima-origami-crane-chain-earrings-v16.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-earth-hiroshima-origami-crane-chain-earrings-v16.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling shimadzu-satsuma-kiriko-hikari-l-pendant",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/shimadzu-satsuma-kiriko-hikari-l-pendant/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "shimadzu-satsuma-kiriko-hikari-l-pendant",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-shimadzu-satsuma-kiriko-hikari-l-pendant-v23",
+          "path": "images/styling-jp-shimadzu-satsuma-kiriko-hikari-l-pendant-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-shimadzu-satsuma-kiriko-hikari-l-pendant-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling applause-awa-indigo-pearl-clip-on-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/applause-awa-indigo-pearl-clip-on-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "applause-awa-indigo-pearl-clip-on-earrings",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-styling-applause-awa-indigo-pearl-clip-on-earrings-v16",
+          "path": "images/styling-applause-awa-indigo-pearl-clip-on-earrings-v16.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-applause-awa-indigo-pearl-clip-on-earrings-v16.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling yoboty-inshu-washi-indigo-long-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/yoboty-inshu-washi-indigo-long-nonhole-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "yoboty-inshu-washi-indigo-long-nonhole-earrings",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-yoboty-inshu-washi-indigo-long-nonhole-earrings-v23",
+          "path": "images/styling-jp-yoboty-inshu-washi-indigo-long-nonhole-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-yoboty-inshu-washi-indigo-long-nonhole-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling tete-ryukyu-glass-hanagasa-heart-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/tete-ryukyu-glass-hanagasa-heart-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "tete-ryukyu-glass-hanagasa-heart-pierced-earrings",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-styling-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16",
+          "path": "images/styling-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling mitsusuke-higo-zogan-shizuku-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/mitsusuke-higo-zogan-shizuku-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "mitsusuke-higo-zogan-shizuku-pierced-earrings",
+        "locale": "ja",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-mitsusuke-higo-zogan-shizuku-pierced-earrings-v23",
+          "path": "images/styling-jp-mitsusuke-higo-zogan-shizuku-pierced-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-mitsusuke-higo-zogan-shizuku-pierced-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "ja mobile styling menoya-izumo-magatama-n15-necklace",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/menoya-izumo-magatama-n15-necklace/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "menoya-izumo-magatama-n15-necklace",
+        "locale": "ja",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-styling-menoya-izumo-magatama-n15-necklace-v16",
+          "path": "images/styling-menoya-izumo-magatama-n15-necklace-v16.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-menoya-izumo-magatama-n15-necklace-v16.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling hamamatsuya-catch-pierced",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-surgical-stainless-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "hamamatsuya-catch-pierced",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-hakone-yosegi-pierced-styling-v9",
+          "path": "images/hakone-yosegi-pierced-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/hakone-yosegi-pierced-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling hamamatsuya-clip",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-yosegi-non-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "hamamatsuya-clip",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-hakone-yosegi-clipon-styling-v9",
+          "path": "images/hakone-yosegi-clipon-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/hakone-yosegi-clipon-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling hamamatsuya-pendant",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hamamatsuya-muku-yosegi-pendant/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "hamamatsuya-pendant",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-yosegi-pendant-styling-v9",
+          "path": "images/yosegi-pendant-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/yosegi-pendant-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling maruyama-clip-c",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/maruyama-yosegi-non-pierced-c/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "maruyama-clip-c",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-yosegi-star-styling-v9",
+          "path": "images/yosegi-star-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/yosegi-star-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling maruyama-clip-d",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/maruyama-yosegi-non-pierced-d/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "maruyama-clip-d",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-yosegi-bar-styling-v9",
+          "path": "images/yosegi-bar-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/yosegi-bar-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling maruyama-pierced-c",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/maruyama-yosegi-pierced-c/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "maruyama-pierced-c",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-yosegi-star-styling-v9",
+          "path": "images/yosegi-star-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/yosegi-star-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling maruyama-pierced-d",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/maruyama-yosegi-pierced-d/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "maruyama-pierced-d",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-yosegi-bar-styling-v9",
+          "path": "images/yosegi-bar-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/yosegi-bar-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling rinzen-seika-amber-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/rinzen-seika-amber-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "rinzen-seika-amber-pierced-earrings",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-rinzen-amber-glass-styling-v9",
+          "path": "images/rinzen-amber-glass-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/rinzen-amber-glass-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling six-kiln-half-moon-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/six-kiln-half-moon-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "six-kiln-half-moon-earrings",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-arita-halfmoon-styling-v9",
+          "path": "images/arita-halfmoon-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/arita-halfmoon-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling rinzen-leaf-glass-pendant",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/rinzen-leaf-glass-pendant/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "rinzen-leaf-glass-pendant",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-rinzen-green-leaf-styling-v9",
+          "path": "images/rinzen-green-leaf-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/rinzen-green-leaf-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling six-kiln-blue-bouquet-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/six-kiln-blue-bouquet-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "six-kiln-blue-bouquet-pierced-earrings",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-arita-blue-bouquet-styling-v9",
+          "path": "images/arita-blue-bouquet-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/arita-blue-bouquet-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling saskia-diez-drake-porcelain-cuff",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/saskia-diez-drake-porcelain-cuff/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "saskia-diez-drake-porcelain-cuff",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-saskia-porcelain-cuff-styling-v9",
+          "path": "images/saskia-porcelain-cuff-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/saskia-porcelain-cuff-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling checos-japanese-apricot-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/checos-japanese-apricot-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "checos-japanese-apricot-pierced-earrings",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-checos-silver-flower-styling-v9",
+          "path": "images/checos-silver-flower-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/checos-silver-flower-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling morphosphere-ultramarine-pansy-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/morphosphere-ultramarine-pansy-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-morphosphere-blue-pansy-styling-v9",
+          "path": "images/morphosphere-blue-pansy-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/morphosphere-blue-pansy-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling kato-suke-drop-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/kato-suke-drop-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "kato-suke-drop-pierced-earrings",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-kato-green-cloisonne-styling-v9",
+          "path": "images/kato-green-cloisonne-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/kato-green-cloisonne-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling arcos-cosmic-spiral-pendant",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/arcos-cosmic-spiral-pendant/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "arcos-cosmic-spiral-pendant",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-arcos-cosmic-spiral-pendant-styling-v9",
+          "path": "images/arcos-cosmic-spiral-pendant-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/arcos-cosmic-spiral-pendant-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling arcos-cosmic-glass-bracelet",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/arcos-cosmic-glass-bracelet/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "arcos-cosmic-glass-bracelet",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-arcos-cosmic-glass-bracelet-styling-v9",
+          "path": "images/arcos-cosmic-glass-bracelet-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/arcos-cosmic-glass-bracelet-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling senshu-pearl-stud-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/senshu-pearl-stud-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "senshu-pearl-stud-earrings",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-senshu-white-pearl-stud-styling-v9",
+          "path": "images/senshu-white-pearl-stud-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/senshu-white-pearl-stud-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling senshu-pearl-swing-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/senshu-pearl-swing-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "senshu-pearl-swing-earrings",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-senshu-white-pearl-swing-styling-v9",
+          "path": "images/senshu-white-pearl-swing-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/senshu-white-pearl-swing-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling sugimura-hosoge-raden-pendant",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/sugimura-hosoge-raden-pendant/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "sugimura-hosoge-raden-pendant",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-sugimura-raden-flower-pendant-styling-v9",
+          "path": "images/sugimura-raden-flower-pendant-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/sugimura-raden-flower-pendant-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling sugimura-lotus-makie-ring",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/sugimura-lotus-makie-ring/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "sugimura-lotus-makie-ring",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-sugimura-lotus-makie-ring-styling-v9",
+          "path": "images/sugimura-lotus-makie-ring-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/sugimura-lotus-makie-ring-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling simprich-crystal-bubble-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/simprich-crystal-bubble-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "simprich-crystal-bubble-pierced-earrings",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-simprich-crystal-bubble-styling-v9",
+          "path": "images/simprich-crystal-bubble-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/simprich-crystal-bubble-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling simprich-rose-quartz-necklace",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/simprich-rose-quartz-necklace/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "simprich-rose-quartz-necklace",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-simprich-rose-quartz-necklace-styling-v9",
+          "path": "images/simprich-rose-quartz-necklace-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/simprich-rose-quartz-necklace-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling yukieglass-mint-veil-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/yukieglass-mint-veil-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "yukieglass-mint-veil-earrings",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-yukie-mint-glass-styling-v9",
+          "path": "images/yukie-mint-glass-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/yukie-mint-glass-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling yukieglass-rouge-veil-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/yukieglass-rouge-veil-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "yukieglass-rouge-veil-earrings",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-yukie-rouge-glass-styling-v9",
+          "path": "images/yukie-rouge-glass-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/yukie-rouge-glass-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling nakajima-pear-sakura-pendant",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/nakajima-pear-sakura-pendant/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "nakajima-pear-sakura-pendant",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-nakajima-sakura-damascene-pendant-styling-v9",
+          "path": "images/nakajima-sakura-damascene-pendant-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/nakajima-sakura-damascene-pendant-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling kato-suke-round-ring",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/kato-suke-round-ring/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "kato-suke-round-ring",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-kato-blue-round-enamel-ring-styling-v9",
+          "path": "images/kato-blue-round-enamel-ring-styling-v9.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/kato-blue-round-enamel-ring-styling-v9.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling sangetsu-irodori-tombodama-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/sangetsu-irodori-tombodama-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "sangetsu-irodori-tombodama-earrings",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-sangetsu-irodori-tombodama-earrings-v23",
+          "path": "images/styling-jp-sangetsu-irodori-tombodama-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-sangetsu-irodori-tombodama-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling sangetsu-irodori-tombodama-necklace",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/sangetsu-irodori-tombodama-necklace/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "sangetsu-irodori-tombodama-necklace",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-sangetsu-irodori-tombodama-necklace-v23",
+          "path": "images/styling-jp-sangetsu-irodori-tombodama-necklace-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-sangetsu-irodori-tombodama-necklace-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling sghr-tie-tie-glass-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/sghr-tie-tie-glass-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "sghr-tie-tie-glass-earrings",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-sghr-tie-tie-glass-earrings-styling-v13",
+          "path": "images/sghr-tie-tie-glass-earrings-styling-v13.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/sghr-tie-tie-glass-earrings-styling-v13.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling sghr-kolmio-glass-ear-cuff",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/sghr-kolmio-glass-ear-cuff/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "sghr-kolmio-glass-ear-cuff",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-sghr-kolmio-glass-ear-cuff-v23",
+          "path": "images/styling-jp-sghr-kolmio-glass-ear-cuff-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-sghr-kolmio-glass-ear-cuff-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling kazarino-hanabishi-copper-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/kazarino-hanabishi-copper-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "kazarino-hanabishi-copper-earrings",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-kazarino-hanabishi-copper-earrings-v23",
+          "path": "images/styling-jp-kazarino-hanabishi-copper-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-kazarino-hanabishi-copper-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling kazarino-shippo-pattern-brass-bangle",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/kazarino-shippo-pattern-brass-bangle/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "kazarino-shippo-pattern-brass-bangle",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-kazarino-shippo-pattern-brass-bangle-styling-v13",
+          "path": "images/kazarino-shippo-pattern-brass-bangle-styling-v13.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/kazarino-shippo-pattern-brass-bangle-styling-v13.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling showen-edo-uchi-silk-bracelet",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/showen-edo-uchi-silk-bracelet/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "showen-edo-uchi-silk-bracelet",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-showen-edo-uchi-silk-bracelet-v23",
+          "path": "images/styling-jp-showen-edo-uchi-silk-bracelet-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-showen-edo-uchi-silk-bracelet-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling iwaya-urushi-9mm-hook-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/iwaya-urushi-9mm-hook-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "iwaya-urushi-9mm-hook-earrings",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-iwaya-urushi-9mm-hook-earrings-v23",
+          "path": "images/styling-jp-iwaya-urushi-9mm-hook-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-iwaya-urushi-9mm-hook-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling toytoy-ninkari-nikuri-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/toytoy-ninkari-nikuri-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "toytoy-ninkari-nikuri-earrings",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-toytoy-ninkari-nikuri-earrings-styling-v13",
+          "path": "images/toytoy-ninkari-nikuri-earrings-styling-v13.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/toytoy-ninkari-nikuri-earrings-styling-v13.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling toytoy-sirokani-pe-silver-necklace",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/toytoy-sirokani-pe-silver-necklace/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "toytoy-sirokani-pe-silver-necklace",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-toytoy-sirokani-pe-silver-necklace-v23",
+          "path": "images/styling-jp-toytoy-sirokani-pe-silver-necklace-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-toytoy-sirokani-pe-silver-necklace-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling tamura-kaisai-enamel-ear-jewelry",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/tamura-kaisai-enamel-ear-jewelry/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "tamura-kaisai-enamel-ear-jewelry",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-tamura-kaisai-enamel-ear-jewelry-v23",
+          "path": "images/styling-jp-tamura-kaisai-enamel-ear-jewelry-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-tamura-kaisai-enamel-ear-jewelry-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling nanao-shuka-nebula-16g-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/nanao-shuka-nebula-16g-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "nanao-shuka-nebula-16g-earrings",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-nanao-shuka-nebula-16g-earrings-styling-v13",
+          "path": "images/nanao-shuka-nebula-16g-earrings-styling-v13.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/nanao-shuka-nebula-16g-earrings-styling-v13.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling simprich-reversible-topaz-ruby-chain-ring",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/simprich-reversible-topaz-ruby-chain-ring/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "simprich-reversible-topaz-ruby-chain-ring",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-simprich-reversible-topaz-ruby-chain-ring-v23",
+          "path": "images/styling-jp-simprich-reversible-topaz-ruby-chain-ring-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-simprich-reversible-topaz-ruby-chain-ring-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling simprich-reversible-silver-piaring-single",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/simprich-reversible-silver-piaring-single/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "simprich-reversible-silver-piaring-single",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-simprich-reversible-silver-piaring-single-v23",
+          "path": "images/styling-jp-simprich-reversible-silver-piaring-single-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-simprich-reversible-silver-piaring-single-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling hario-little-tears-clip-on-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hario-little-tears-clip-on-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "hario-little-tears-clip-on-earrings",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-hario-little-tears-clip-on-earrings-styling-v13",
+          "path": "images/hario-little-tears-clip-on-earrings-styling-v13.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/hario-little-tears-clip-on-earrings-styling-v13.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling nousaku-dahlia-gerbera-clip-on-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/nousaku-dahlia-gerbera-clip-on-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "nousaku-dahlia-gerbera-clip-on-earrings",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-nousaku-dahlia-gerbera-clip-on-earrings-v23",
+          "path": "images/styling-jp-nousaku-dahlia-gerbera-clip-on-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-nousaku-dahlia-gerbera-clip-on-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling nousaku-aya-tin-pendant",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/nousaku-aya-tin-pendant/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "nousaku-aya-tin-pendant",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-nousaku-aya-tin-pendant-v23",
+          "path": "images/styling-jp-nousaku-aya-tin-pendant-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-nousaku-aya-tin-pendant-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling coyorimi-tamamusubi-clip-on-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/coyorimi-tamamusubi-clip-on-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "coyorimi-tamamusubi-clip-on-earrings",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-coyorimi-tamamusubi-clip-on-earrings-styling-v13",
+          "path": "images/coyorimi-tamamusubi-clip-on-earrings-styling-v13.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/coyorimi-tamamusubi-clip-on-earrings-styling-v13.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling somemasa-peacock-clip-on-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/somemasa-peacock-clip-on-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "somemasa-peacock-clip-on-earrings",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-somemasa-peacock-clip-on-earrings-v23",
+          "path": "images/styling-jp-somemasa-peacock-clip-on-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-somemasa-peacock-clip-on-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling egaho-gathered-kurume-kasuri-ear-jewelry",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/egaho-gathered-kurume-kasuri-ear-jewelry/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "egaho-gathered-kurume-kasuri-ear-jewelry",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-egaho-gathered-kurume-kasuri-ear-jewelry-v23",
+          "path": "images/styling-jp-egaho-gathered-kurume-kasuri-ear-jewelry-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-egaho-gathered-kurume-kasuri-ear-jewelry-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling sirisiri-page-blue-enamel-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/sirisiri-page-blue-enamel-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "sirisiri-page-blue-enamel-pierced-earrings",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-sirisiri-page-blue-enamel-pierced-earrings-styling-v13",
+          "path": "images/sirisiri-page-blue-enamel-pierced-earrings-styling-v13.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/sirisiri-page-blue-enamel-pierced-earrings-styling-v13.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling sirisiri-silver-thread-hoop-mini",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/sirisiri-silver-thread-hoop-mini/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "sirisiri-silver-thread-hoop-mini",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-sirisiri-silver-thread-hoop-mini-v23",
+          "path": "images/styling-jp-sirisiri-silver-thread-hoop-mini-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-sirisiri-silver-thread-hoop-mini-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling mie-akoya-oh002-stud-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/mie-akoya-oh002-stud-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "mie-akoya-oh002-stud-earrings",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-mie-akoya-oh002-stud-earrings-v23",
+          "path": "images/styling-jp-mie-akoya-oh002-stud-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-mie-akoya-oh002-stud-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling yadome-akita-rice-silver-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/yadome-akita-rice-silver-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "yadome-akita-rice-silver-pierced-earrings",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-yadome-akita-rice-silver-pierced-earrings-v23",
+          "path": "images/styling-jp-yadome-akita-rice-silver-pierced-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-yadome-akita-rice-silver-pierced-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling sur-basic1-clear-pearl-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/sur-basic1-clear-pearl-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "sur-basic1-clear-pearl-pierced-earrings",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-sur-basic1-clear-pearl-pierced-earrings-v23",
+          "path": "images/styling-jp-sur-basic1-clear-pearl-pierced-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-sur-basic1-clear-pearl-pierced-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling nanayosha-punu-gold-vanilla-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/nanayosha-punu-gold-vanilla-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "nanayosha-punu-gold-vanilla-pierced-earrings",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-nanayosha-punu-gold-vanilla-pierced-earrings-v23",
+          "path": "images/styling-jp-nanayosha-punu-gold-vanilla-pierced-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-nanayosha-punu-gold-vanilla-pierced-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling earth-hiroshima-origami-crane-chain-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/earth-hiroshima-origami-crane-chain-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "earth-hiroshima-origami-crane-chain-earrings",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-styling-earth-hiroshima-origami-crane-chain-earrings-v16",
+          "path": "images/styling-earth-hiroshima-origami-crane-chain-earrings-v16.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-earth-hiroshima-origami-crane-chain-earrings-v16.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling shimadzu-satsuma-kiriko-hikari-l-pendant",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/shimadzu-satsuma-kiriko-hikari-l-pendant/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "shimadzu-satsuma-kiriko-hikari-l-pendant",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-shimadzu-satsuma-kiriko-hikari-l-pendant-v23",
+          "path": "images/styling-jp-shimadzu-satsuma-kiriko-hikari-l-pendant-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-shimadzu-satsuma-kiriko-hikari-l-pendant-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling applause-awa-indigo-pearl-clip-on-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/applause-awa-indigo-pearl-clip-on-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "applause-awa-indigo-pearl-clip-on-earrings",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-styling-applause-awa-indigo-pearl-clip-on-earrings-v16",
+          "path": "images/styling-applause-awa-indigo-pearl-clip-on-earrings-v16.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-applause-awa-indigo-pearl-clip-on-earrings-v16.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling yoboty-inshu-washi-indigo-long-nonhole-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/yoboty-inshu-washi-indigo-long-nonhole-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "yoboty-inshu-washi-indigo-long-nonhole-earrings",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-yoboty-inshu-washi-indigo-long-nonhole-earrings-v23",
+          "path": "images/styling-jp-yoboty-inshu-washi-indigo-long-nonhole-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-yoboty-inshu-washi-indigo-long-nonhole-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling tete-ryukyu-glass-hanagasa-heart-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/tete-ryukyu-glass-hanagasa-heart-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "tete-ryukyu-glass-hanagasa-heart-pierced-earrings",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-styling-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16",
+          "path": "images/styling-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling mitsusuke-higo-zogan-shizuku-pierced-earrings",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/mitsusuke-higo-zogan-shizuku-pierced-earrings/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "mitsusuke-higo-zogan-shizuku-pierced-earrings",
+        "locale": "en",
+        "isNewReplacement": true,
+        "image": {
+          "assetId": "ai-styling-jp-mitsusuke-higo-zogan-shizuku-pierced-earrings-v23",
+          "path": "images/styling-jp-mitsusuke-higo-zogan-shizuku-pierced-earrings-v23.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-jp-mitsusuke-higo-zogan-shizuku-pierced-earrings-v23.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "en mobile styling menoya-izumo-magatama-n15-necklace",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/menoya-izumo-magatama-n15-necklace/",
+        "method": "GET page.goto",
+        "status": 200,
+        "productId": "menoya-izumo-magatama-n15-necklace",
+        "locale": "en",
+        "isNewReplacement": false,
+        "image": {
+          "assetId": "ai-styling-menoya-izumo-magatama-n15-necklace-v16",
+          "path": "images/styling-menoya-izumo-magatama-n15-necklace-v16.webp",
+          "fullFrame": true,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "width": 348,
+          "height": 232,
+          "objectFit": "contain"
+        },
+        "actualSrc": "/japanese-craft-jewelry/images/styling-menoya-izumo-magatama-n15-necklace-v16.webp",
+        "overflow": {
+          "viewport": 390,
+          "document": 390,
+          "body": 390
+        },
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/styling-shimadzu-satsuma-kiriko-hikari-l-pendant-v16.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/styling-shimadzu-satsuma-kiriko-hikari-l-pendant-v16.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/styling-mitsusuke-higo-zogan-shizuku-pierced-earrings-v16.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/styling-mitsusuke-higo-zogan-shizuku-pierced-earrings-v16.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/styling-yadome-akita-rice-silver-pierced-earrings-v16.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/styling-yadome-akita-rice-silver-pierced-earrings-v16.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/styling-nanayosha-punu-gold-vanilla-pierced-earrings-v16.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/styling-nanayosha-punu-gold-vanilla-pierced-earrings-v16.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/iwaya-urushi-9mm-hook-earrings-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/iwaya-urushi-9mm-hook-earrings-styling-v13.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/styling-sur-basic1-clear-pearl-pierced-earrings-v16.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/styling-sur-basic1-clear-pearl-pierced-earrings-v16.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/styling-yoboty-inshu-washi-indigo-long-nonhole-earrings-v16.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/styling-yoboty-inshu-washi-indigo-long-nonhole-earrings-v16.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/mie-akoya-oh002-stud-earrings-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/mie-akoya-oh002-stud-earrings-styling-v13.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/sangetsu-irodori-tombodama-necklace-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/sangetsu-irodori-tombodama-necklace-styling-v13.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/sangetsu-irodori-tombodama-earrings-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/sangetsu-irodori-tombodama-earrings-styling-v13.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/simprich-reversible-topaz-ruby-chain-ring-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/simprich-reversible-topaz-ruby-chain-ring-styling-v13.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/simprich-reversible-silver-piaring-single-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/simprich-reversible-silver-piaring-single-styling-v13.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/sirisiri-silver-thread-hoop-mini-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/sirisiri-silver-thread-hoop-mini-styling-v13.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/nousaku-aya-tin-pendant-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/nousaku-aya-tin-pendant-styling-v13.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/nousaku-dahlia-gerbera-clip-on-earrings-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/nousaku-dahlia-gerbera-clip-on-earrings-styling-v13.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/sghr-kolmio-glass-ear-cuff-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/sghr-kolmio-glass-ear-cuff-styling-v13.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/somemasa-peacock-clip-on-earrings-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/somemasa-peacock-clip-on-earrings-styling-v13.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/toytoy-sirokani-pe-silver-necklace-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/toytoy-sirokani-pe-silver-necklace-styling-v13.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/tamura-kaisai-enamel-ear-jewelry-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/tamura-kaisai-enamel-ear-jewelry-styling-v13.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/egaho-gathered-kurume-kasuri-ear-jewelry-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/egaho-gathered-kurume-kasuri-ear-jewelry-styling-v13.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/showen-edo-uchi-silk-bracelet-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/showen-edo-uchi-silk-bracelet-styling-v13.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "Retired hosted image returns404 images/kazarino-hanabishi-copper-earrings-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/kazarino-hanabishi-copper-earrings-styling-v13.webp",
+        "method": "GET Playwright APIRequestContext",
+        "status": 404
+      }
+    },
+    {
+      "name": "No client exceptions or console errors across all detail navigations",
+      "status": "passed",
+      "detail": {
+        "pageErrors": 0,
+        "consoleErrors": 0
+      }
+    },
+    {
+      "name": "Browser pass covered every product and localized route",
+      "status": "passed",
+      "detail": {
+        "productDetailNavigations": 120,
+        "replacementNavigations": 44
+      }
+    },
+    {
+      "name": "Browser QA inputs were unchanged during this run",
+      "status": "passed",
+      "detail": {
+        "inputFiles": 4
+      }
+    }
+  ],
+  "failures": [],
+  "screenshots": [
+    {
+      "path": "artifacts/japanese-models-stage-hosted-browser-sghr-kolmio-glass-ear-cuff-ja-390.png",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/sghr-kolmio-glass-ear-cuff/",
+      "productId": "sghr-kolmio-glass-ear-cuff",
+      "locale": "ja",
+      "kind": "styling figure including AI caption",
+      "recordedStyle": "elegant"
+    },
+    {
+      "path": "artifacts/japanese-models-stage-hosted-browser-simprich-reversible-topaz-ruby-chain-ring-ja-390.png",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/simprich-reversible-topaz-ruby-chain-ring/",
+      "productId": "simprich-reversible-topaz-ruby-chain-ring",
+      "locale": "ja",
+      "kind": "styling figure including AI caption",
+      "recordedStyle": "elegant"
+    },
+    {
+      "path": "artifacts/japanese-models-stage-hosted-browser-yadome-akita-rice-silver-pierced-earrings-ja-390.png",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/yadome-akita-rice-silver-pierced-earrings/",
+      "productId": "yadome-akita-rice-silver-pierced-earrings",
+      "locale": "ja",
+      "kind": "styling figure including AI caption",
+      "recordedStyle": "cute"
+    },
+    {
+      "path": "artifacts/japanese-models-stage-hosted-browser-shimadzu-satsuma-kiriko-hikari-l-pendant-ja-390.png",
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/shimadzu-satsuma-kiriko-hikari-l-pendant/",
+      "productId": "shimadzu-satsuma-kiriko-hikari-l-pendant",
+      "locale": "ja",
+      "kind": "styling figure including AI caption",
+      "recordedStyle": "cute"
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "externalRequests": [],
+  "retiredImages": [
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/styling-shimadzu-satsuma-kiriko-hikari-l-pendant-v16.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/styling-mitsusuke-higo-zogan-shizuku-pierced-earrings-v16.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/styling-yadome-akita-rice-silver-pierced-earrings-v16.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/styling-nanayosha-punu-gold-vanilla-pierced-earrings-v16.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/iwaya-urushi-9mm-hook-earrings-styling-v13.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/styling-sur-basic1-clear-pearl-pierced-earrings-v16.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/styling-yoboty-inshu-washi-indigo-long-nonhole-earrings-v16.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/mie-akoya-oh002-stud-earrings-styling-v13.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/sangetsu-irodori-tombodama-necklace-styling-v13.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/sangetsu-irodori-tombodama-earrings-styling-v13.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/simprich-reversible-topaz-ruby-chain-ring-styling-v13.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/simprich-reversible-silver-piaring-single-styling-v13.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/sirisiri-silver-thread-hoop-mini-styling-v13.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/nousaku-aya-tin-pendant-styling-v13.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/nousaku-dahlia-gerbera-clip-on-earrings-styling-v13.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/sghr-kolmio-glass-ear-cuff-styling-v13.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/somemasa-peacock-clip-on-earrings-styling-v13.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/toytoy-sirokani-pe-silver-necklace-styling-v13.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/tamura-kaisai-enamel-ear-jewelry-styling-v13.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/egaho-gathered-kurume-kasuri-ear-jewelry-styling-v13.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/showen-edo-uchi-silk-bracelet-styling-v13.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/kazarino-hanabishi-copper-earrings-styling-v13.webp",
+      "method": "GET Playwright APIRequestContext",
+      "status": 404
+    }
+  ],
+  "completedAt": "2026-11-17T13:08:33.179Z",
+  "summary": {
+    "checks": 146,
+    "passed": 146,
+    "failed": 0,
+    "publishedProducts": 60,
+    "productDetailNavigations": 120,
+    "newReplacementNavigations": 44,
+    "locales": [
+      "ja",
+      "en"
+    ],
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "uniqueImagesDecoded": 58,
+    "screenshots": 4,
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "externalRequests": 0,
+    "hostedRetired404Checks": 22,
+    "localRetiredUrlsSkipped": 0
+  },
+  "screenshotVisualReview": {
+    "checkedAt": "2026-11-17T13:09:03.009Z",
+    "tool": "view_image",
+    "individuallyViewed": 4,
+    "accepted": 4,
+    "blockingIssues": [],
+    "observations": "All four actual hosted390px Chrome figure captures were individually displayed. Full face and selected pendant/ear ornament/ear cuff/hand ring remain visible, with the original landscape composition and visible AIイメージ caption. No artificial blank bands or crop of the selected accessory were observed. Hair may touch the original image edge. This confirms the hosted layout, not real fitting or exact retail SKU reproduction."
+  },
+  "log": "artifacts/japanese-models-stage-hosted-browser.log"
+}

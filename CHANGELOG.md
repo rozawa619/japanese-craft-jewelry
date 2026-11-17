@@ -1,10 +1,10 @@
 # 更新履歴
 
-## 0.18.0 — 2026-11-17（ローカル反映済み・公開/納品確認待ち）
+## 0.18.0 — 2026-11-17
 
 - 最新依頼により、人物着用イメージを架空の日本人女性の生成設定へ統一する仕様023を追加。新規は25歳を含む25〜33歳の成人設定とし、華やかなかわいさ/洗練された綺麗さと髪型・表情・装いの変化を含める。実在人物の国籍・年齢を見た目から認定しない。
 - 監査22置換/36保持/不明0に基づき、新22人物を生成し、旧自作AI参照と個別に目視して22採用。新規は25〜30歳（25歳6枚）、かわいい系11/綺麗な系統11。versioned WebP/元PNG/新manifest・日英alt/asset台帳を揃え、旧22はbytesを残してretiredへ。単体60/保持36人物・商品facts/レイアウト/広告/Maps設定を維持した。
-- ローカル設定QA63/人物59/単体61・保全9・型150ファイル/単体149/344HTML、Hero77・全商品日英browser124・共通写真37・スマホ92・Sources328・Privacy4・SEO7が成功。旧495 inputsで許可済み2ファイルだけを変更、dist旧22out/新22in・118画像、`_astro`全SHA一致。原本ZIP47ファイルは照合済み。公開app/Actions/実URL・全source ZIPの確定は後続で、旧241/77/92等は今回の成功へ加算しない。範囲と実測は[023 validation](specs/023-japanese-model-styling/validation.md)・[deployment-results](docs/deployment-results.json)。
+- ローカル設定QA63/人物59/単体61・保全9・型150ファイル/単体149/344HTML、Hero77・全商品日英browser124・共通写真37・スマホ92・Sources328・Privacy4・SEO7が成功。旧495 inputsで許可済み2ファイルだけを変更、dist旧22out/新22in・118画像、`_astro`全SHA一致。原本ZIP47ファイルは照合済み。公開スマホ初回90/92の固定待ち/rAF競合はQA待ちだけを実条件pollingへ修正し、UI/build不変のまま全92件を再実行。最終型151ファイルもエラー等0で、full verify時の150と分離。公開app `f2bb423f4c4cf476e449d8ec37837243f764cfee`/[Actions44089370227](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44089370227) completed/success、実URLのhero77・photos37・mobile92・browser146・sources328・release24も成功。全source1198ファイルの集合/全SHAも照合し、旧241/77/92等は今回の成功へ加算しない。範囲と実測は[023 validation](specs/023-japanese-model-styling/validation.md)・[deployment-results](docs/deployment-results.json)。
 
 ## 0.17.3 — 2026-11-17
 
@@ -158,3 +158,6 @@
 - product-storiesを安定IDで分離し、対訳/許可フィールドを検証。商品事実と広告設定は不変。
 - mobile追従CTAは主CTA通過後のみ表示し、footerでは隠す。同じ共通広告resolverを使用。
 - 実売上や購買率の改善を実測したとは主張しない。
+
+<!-- DELIVERY_V23 -->
+0.18.0の全sourceは1198ファイル・公開画像118枚。repository/export/ZIPの集合と全SHAを照合済み。全source ZIPはjapanese-craft-jewelry-source-0.18.0-models-023.zip、外部proofはpackage-verification-0.18.0-models-023.json、原本ZIPはjapanese-craft-jewelry-originals-0.18.0.zip（47ファイル）。完了記録を含め最終再梱包し、ZIP hashは自己参照を避け外部proofへ保存する。正本はdeployment-results.jsonのsourceDelivery。

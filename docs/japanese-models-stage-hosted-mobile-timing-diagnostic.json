@@ -1,0 +1,1603 @@
+{
+  "checkedAt": "2026-11-17T13:18:11.544Z",
+  "origin": "https://rozawa619.github.io",
+  "base": "/japanese-craft-jewelry/",
+  "method": "Focused responsive browser checks against a stable build. Raw catalog, display-order IDs and image registry independently supply expected representatives. No product/cookie/advertising data is changed. Standalone controls target44px; normal inline prose links and decorative captions are not claimed to be44px targets.",
+  "sourceInputs": {
+    "src/styles/global.css": "9c4c64dee71083ced55f29c7c3f324c8efb1c7dbc3ee5d3340cb9e0f58feb058",
+    "src/components/RegionalChoiceGuide.astro": "e4bb91b4604530e1ed7c73f617e9212c53adf83d5faa614b938b84231fac02ca",
+    "src/components/TypeChoiceImage.astro": "bee774ecee5d786e0b94b8b6902b5e5927020ac1abee94477cdeca443bdbee59",
+    "src/components/Sources.astro": "415ed13ebfdf077e6d7a9dcc57d926deca161889e271eb653287bd3349465b0d",
+    "src/components/MarketPrice.astro": "da1903d13392ac122002da4dbdf9473d1e8f8f2920b043a9458e4a2ca9d2c544",
+    "src/components/PurchaseEvidence.astro": "651d5dfd031a48aae5579478922a6e19038d1b4651ac9e2811535b4bb06ef534",
+    "src/components/VisitGuide.astro": "7f57b24cb46c16183da101801975f641871c928dd1c1293fa71e10aa4b245092",
+    "src/components/ProductBuyingGuide.astro": "6b54b3c98cacb77bf196f2cf07440c35f41a0d42906141866f6c11abc99a69a5",
+    "src/layouts/Base.astro": "a5d5f06b49653d3a287748f0c9a832c767501303ebace7adaf21ca219af4d8b2",
+    "src/pages/[lang]/index.astro": "69cad59a53f31d0b3906c76fc1513e59857bacba9731761673b720f725312aa4",
+    "src/pages/[lang]/objects/index.astro": "3ce941bb319f4d59ab5456fc558ce5b1cbcc0114062cac424fc6093f0954666c",
+    "src/pages/[lang]/objects/[slug].astro": "8b7886b1c96e54699e4090c7e3b984358d6f0de94fb2ba00eeaa0c50e2b141a3",
+    "src/data/product-detail-images.json": "1fc02f8dc9f625b9badc584770e57bf60a114ec48c06c37f4fb5c1a1d03057c9",
+    "src/data/catalog.json": "2f12215f009e327bc8b4a307f8baf2c3df2dd8e757b655870a9ac47bd1b781b2",
+    "src/lib/map-preferences.ts": "88db0345f33fb11c8cbfb656591ecf7cd7ed6ab7c145ca9b7ded683f2e82f022",
+    "src/lib/map-preferences-client.ts": "a533e0b8135acd65ce96c161ce13a4cea82be95f922fcce3fc68c67487110e8f",
+    "src/components/MapPreferences.astro": "7b0ec812f5169c735cd997417fb01489c7d38079cc49ea1919c4358eff05e16f",
+    "src/components/JapanJewelryMap.astro": "405f8c575ccf1a133130b66d1a08718208e440b92bf9fc170f996f3f11403155",
+    "src/components/RegionSelection.astro": "0ad96fd3a8a9e8f68a317e6275ba24074a3b07a956da8bd0cc533a3ee37851b8"
+  },
+  "views": [
+    {
+      "width": 320,
+      "height": 740
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "routes": [
+    {
+      "name": "home",
+      "path": ""
+    },
+    {
+      "name": "listing",
+      "path": "objects/"
+    },
+    {
+      "name": "region",
+      "path": "places/kanagawa/"
+    },
+    {
+      "name": "detail",
+      "path": "objects/hamamatsuya-surgical-stainless-pierced-earrings/"
+    },
+    {
+      "name": "long-detail",
+      "path": "objects/shimadzu-satsuma-kiriko-hikari-l-pendant/"
+    },
+    {
+      "name": "privacy",
+      "path": "privacy/"
+    }
+  ],
+  "checks": [
+    {
+      "key": "ja-long-detail-320x740-attempt1",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-detail-390x844-attempt1",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-long-detail-320x740-attempt2",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-detail-390x844-attempt2",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-long-detail-320x740-attempt3",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-detail-390x844-attempt3",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-long-detail-320x740-attempt4",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-detail-390x844-attempt4",
+      "status": "failed",
+      "message": "AssertionError [ERR_ASSERTION]: Sticky CTA visible after 75ms scroll\n\nfalse !== true\n"
+    },
+    {
+      "key": "ja-long-detail-320x740-attempt5",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    },
+    {
+      "key": "ja-detail-390x844-attempt5",
+      "status": "passed",
+      "externalRequests": 0,
+      "pageErrors": 0
+    }
+  ],
+  "failures": [
+    {
+      "key": "ja-detail-390x844-attempt4",
+      "message": "AssertionError [ERR_ASSERTION]: Sticky CTA visible after 75ms scroll\n\nfalse !== true\n",
+      "stack": "AssertionError [ERR_ASSERTION]: Sticky CTA visible after 75ms scroll\n\nfalse !== true\n\n    at file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/artifacts/japanese-models-stage/mobile-targeted-diagnostic.mjs:112:100"
+    }
+  ],
+  "screenshots": [],
+  "axe": [],
+  "maps": [],
+  "sourceControls": 18,
+  "typeImages": 0,
+  "diagnostics": [
+    {
+      "key": "ja-long-detail-320x740-attempt1",
+      "stage": "sticky-probe",
+      "shown": true,
+      "state": {
+        "at": 1735.3999999985099,
+        "scrollY": 5118,
+        "innerWidth": 320,
+        "innerHeight": 740,
+        "readyState": "complete",
+        "fonts": "loaded",
+        "sticky": {
+          "x": 12,
+          "y": 635.515625,
+          "width": 296,
+          "height": 96.484375,
+          "top": 635.515625,
+          "bottom": 732,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "primary": {
+          "x": 16,
+          "y": -4171.90625,
+          "width": 288,
+          "height": 54.59375,
+          "top": -4171.90625,
+          "bottom": -4117.3125,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "footer": {
+          "x": 0,
+          "y": 4444.9375,
+          "width": 320,
+          "height": 919.46875,
+          "top": 4444.9375,
+          "bottom": 5364.40625,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sourceLink": {
+          "x": 16,
+          "y": 548.328125,
+          "width": 181.84375,
+          "height": 44,
+          "top": 548.328125,
+          "bottom": 592.328125,
+          "hidden": false,
+          "display": "inline-flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sources": {
+          "x": 16,
+          "y": 2832.078125,
+          "width": 288,
+          "height": 74.390625,
+          "top": 2832.078125,
+          "bottom": 2906.46875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "open": false
+        },
+        "information": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "bottom": 0,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "purchaseEvidence": {
+          "x": 20,
+          "y": 3074.84375,
+          "width": 280,
+          "height": 17,
+          "top": 3074.84375,
+          "bottom": 3091.84375,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "activeElement": {
+          "tag": "SUMMARY",
+          "class": ""
+        },
+        "hash": ""
+      }
+    },
+    {
+      "key": "ja-detail-390x844-attempt1",
+      "stage": "sticky-probe",
+      "shown": true,
+      "state": {
+        "at": 2105.4000000059605,
+        "scrollY": 4493,
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "readyState": "complete",
+        "fonts": "loaded",
+        "sticky": {
+          "x": 12,
+          "y": 755.515625,
+          "width": 366,
+          "height": 80.484375,
+          "top": 755.515625,
+          "bottom": 836,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "primary": {
+          "x": 20,
+          "y": -3577.140625,
+          "width": 350,
+          "height": 54.59375,
+          "top": -3577.140625,
+          "bottom": -3522.546875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "footer": {
+          "x": 0,
+          "y": 4060.75,
+          "width": 390,
+          "height": 846.6875,
+          "top": 4060.75,
+          "bottom": 4907.4375,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sourceLink": {
+          "x": 20,
+          "y": 651.9375,
+          "width": 181.84375,
+          "height": 44,
+          "top": 651.9375,
+          "bottom": 695.9375,
+          "hidden": false,
+          "display": "inline-flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sources": {
+          "x": 20,
+          "y": 2709.78125,
+          "width": 350,
+          "height": 74.390625,
+          "top": 2709.78125,
+          "bottom": 2784.171875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "open": false
+        },
+        "information": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "bottom": 0,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "purchaseEvidence": {
+          "x": 24,
+          "y": 2952.546875,
+          "width": 342,
+          "height": 17,
+          "top": 2952.546875,
+          "bottom": 2969.546875,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "activeElement": {
+          "tag": "SUMMARY",
+          "class": ""
+        },
+        "hash": ""
+      }
+    },
+    {
+      "key": "ja-long-detail-320x740-attempt2",
+      "stage": "sticky-probe",
+      "shown": true,
+      "state": {
+        "at": 2454.2000000029802,
+        "scrollY": 5118,
+        "innerWidth": 320,
+        "innerHeight": 740,
+        "readyState": "complete",
+        "fonts": "loaded",
+        "sticky": {
+          "x": 12,
+          "y": 635.515625,
+          "width": 296,
+          "height": 96.484375,
+          "top": 635.515625,
+          "bottom": 732,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "primary": {
+          "x": 16,
+          "y": -4171.90625,
+          "width": 288,
+          "height": 54.59375,
+          "top": -4171.90625,
+          "bottom": -4117.3125,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "footer": {
+          "x": 0,
+          "y": 4444.9375,
+          "width": 320,
+          "height": 919.46875,
+          "top": 4444.9375,
+          "bottom": 5364.40625,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sourceLink": {
+          "x": 16,
+          "y": 548.328125,
+          "width": 181.84375,
+          "height": 44,
+          "top": 548.328125,
+          "bottom": 592.328125,
+          "hidden": false,
+          "display": "inline-flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sources": {
+          "x": 16,
+          "y": 2832.078125,
+          "width": 288,
+          "height": 74.390625,
+          "top": 2832.078125,
+          "bottom": 2906.46875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "open": false
+        },
+        "information": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "bottom": 0,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "purchaseEvidence": {
+          "x": 20,
+          "y": 3074.84375,
+          "width": 280,
+          "height": 17,
+          "top": 3074.84375,
+          "bottom": 3091.84375,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "activeElement": {
+          "tag": "SUMMARY",
+          "class": ""
+        },
+        "hash": ""
+      }
+    },
+    {
+      "key": "ja-detail-390x844-attempt2",
+      "stage": "sticky-probe",
+      "shown": true,
+      "state": {
+        "at": 2007.3999999985099,
+        "scrollY": 4493,
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "readyState": "complete",
+        "fonts": "loaded",
+        "sticky": {
+          "x": 12,
+          "y": 755.515625,
+          "width": 366,
+          "height": 80.484375,
+          "top": 755.515625,
+          "bottom": 836,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "primary": {
+          "x": 20,
+          "y": -3577.140625,
+          "width": 350,
+          "height": 54.59375,
+          "top": -3577.140625,
+          "bottom": -3522.546875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "footer": {
+          "x": 0,
+          "y": 4060.75,
+          "width": 390,
+          "height": 846.6875,
+          "top": 4060.75,
+          "bottom": 4907.4375,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sourceLink": {
+          "x": 20,
+          "y": 651.9375,
+          "width": 181.84375,
+          "height": 44,
+          "top": 651.9375,
+          "bottom": 695.9375,
+          "hidden": false,
+          "display": "inline-flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sources": {
+          "x": 20,
+          "y": 2709.78125,
+          "width": 350,
+          "height": 74.390625,
+          "top": 2709.78125,
+          "bottom": 2784.171875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "open": false
+        },
+        "information": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "bottom": 0,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "purchaseEvidence": {
+          "x": 24,
+          "y": 2952.546875,
+          "width": 342,
+          "height": 17,
+          "top": 2952.546875,
+          "bottom": 2969.546875,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "activeElement": {
+          "tag": "SUMMARY",
+          "class": ""
+        },
+        "hash": ""
+      }
+    },
+    {
+      "key": "ja-long-detail-320x740-attempt3",
+      "stage": "sticky-probe",
+      "shown": true,
+      "state": {
+        "at": 2356.39999999851,
+        "scrollY": 5118,
+        "innerWidth": 320,
+        "innerHeight": 740,
+        "readyState": "complete",
+        "fonts": "loaded",
+        "sticky": {
+          "x": 12,
+          "y": 635.515625,
+          "width": 296,
+          "height": 96.484375,
+          "top": 635.515625,
+          "bottom": 732,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "primary": {
+          "x": 16,
+          "y": -4171.90625,
+          "width": 288,
+          "height": 54.59375,
+          "top": -4171.90625,
+          "bottom": -4117.3125,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "footer": {
+          "x": 0,
+          "y": 4444.9375,
+          "width": 320,
+          "height": 919.46875,
+          "top": 4444.9375,
+          "bottom": 5364.40625,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sourceLink": {
+          "x": 16,
+          "y": 548.328125,
+          "width": 181.84375,
+          "height": 44,
+          "top": 548.328125,
+          "bottom": 592.328125,
+          "hidden": false,
+          "display": "inline-flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sources": {
+          "x": 16,
+          "y": 2832.078125,
+          "width": 288,
+          "height": 74.390625,
+          "top": 2832.078125,
+          "bottom": 2906.46875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "open": false
+        },
+        "information": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "bottom": 0,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "purchaseEvidence": {
+          "x": 20,
+          "y": 3074.84375,
+          "width": 280,
+          "height": 17,
+          "top": 3074.84375,
+          "bottom": 3091.84375,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "activeElement": {
+          "tag": "SUMMARY",
+          "class": ""
+        },
+        "hash": ""
+      }
+    },
+    {
+      "key": "ja-detail-390x844-attempt3",
+      "stage": "sticky-probe",
+      "shown": true,
+      "state": {
+        "at": 1625.3000000044703,
+        "scrollY": 4493,
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "readyState": "complete",
+        "fonts": "loaded",
+        "sticky": {
+          "x": 12,
+          "y": 755.515625,
+          "width": 366,
+          "height": 80.484375,
+          "top": 755.515625,
+          "bottom": 836,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "primary": {
+          "x": 20,
+          "y": -3577.140625,
+          "width": 350,
+          "height": 54.59375,
+          "top": -3577.140625,
+          "bottom": -3522.546875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "footer": {
+          "x": 0,
+          "y": 4060.75,
+          "width": 390,
+          "height": 846.6875,
+          "top": 4060.75,
+          "bottom": 4907.4375,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sourceLink": {
+          "x": 20,
+          "y": 651.9375,
+          "width": 181.84375,
+          "height": 44,
+          "top": 651.9375,
+          "bottom": 695.9375,
+          "hidden": false,
+          "display": "inline-flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sources": {
+          "x": 20,
+          "y": 2709.78125,
+          "width": 350,
+          "height": 74.390625,
+          "top": 2709.78125,
+          "bottom": 2784.171875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "open": false
+        },
+        "information": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "bottom": 0,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "purchaseEvidence": {
+          "x": 24,
+          "y": 2952.546875,
+          "width": 342,
+          "height": 17,
+          "top": 2952.546875,
+          "bottom": 2969.546875,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "activeElement": {
+          "tag": "SUMMARY",
+          "class": ""
+        },
+        "hash": ""
+      }
+    },
+    {
+      "key": "ja-long-detail-320x740-attempt4",
+      "stage": "sticky-probe",
+      "shown": true,
+      "state": {
+        "at": 1601.4000000059605,
+        "scrollY": 5118,
+        "innerWidth": 320,
+        "innerHeight": 740,
+        "readyState": "complete",
+        "fonts": "loaded",
+        "sticky": {
+          "x": 12,
+          "y": 635.515625,
+          "width": 296,
+          "height": 96.484375,
+          "top": 635.515625,
+          "bottom": 732,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "primary": {
+          "x": 16,
+          "y": -4171.90625,
+          "width": 288,
+          "height": 54.59375,
+          "top": -4171.90625,
+          "bottom": -4117.3125,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "footer": {
+          "x": 0,
+          "y": 4444.9375,
+          "width": 320,
+          "height": 919.46875,
+          "top": 4444.9375,
+          "bottom": 5364.40625,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sourceLink": {
+          "x": 16,
+          "y": 548.328125,
+          "width": 181.84375,
+          "height": 44,
+          "top": 548.328125,
+          "bottom": 592.328125,
+          "hidden": false,
+          "display": "inline-flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sources": {
+          "x": 16,
+          "y": 2832.078125,
+          "width": 288,
+          "height": 74.390625,
+          "top": 2832.078125,
+          "bottom": 2906.46875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "open": false
+        },
+        "information": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "bottom": 0,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "purchaseEvidence": {
+          "x": 20,
+          "y": 3074.84375,
+          "width": 280,
+          "height": 17,
+          "top": 3074.84375,
+          "bottom": 3091.84375,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "activeElement": {
+          "tag": "SUMMARY",
+          "class": ""
+        },
+        "hash": ""
+      }
+    },
+    {
+      "key": "ja-detail-390x844-attempt4",
+      "stage": "sticky-probe",
+      "shown": false,
+      "state": {
+        "at": 1650.5,
+        "scrollY": 4493,
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "readyState": "complete",
+        "fonts": "loaded",
+        "sticky": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "bottom": 0,
+          "hidden": true,
+          "display": "none",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "primary": {
+          "x": 20,
+          "y": -3577.140625,
+          "width": 350,
+          "height": 54.59375,
+          "top": -3577.140625,
+          "bottom": -3522.546875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "footer": {
+          "x": 0,
+          "y": 4060.75,
+          "width": 390,
+          "height": 846.6875,
+          "top": 4060.75,
+          "bottom": 4907.4375,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sourceLink": {
+          "x": 20,
+          "y": 651.9375,
+          "width": 181.84375,
+          "height": 44,
+          "top": 651.9375,
+          "bottom": 695.9375,
+          "hidden": false,
+          "display": "inline-flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sources": {
+          "x": 20,
+          "y": 2709.78125,
+          "width": 350,
+          "height": 74.390625,
+          "top": 2709.78125,
+          "bottom": 2784.171875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "open": false
+        },
+        "information": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "bottom": 0,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "purchaseEvidence": {
+          "x": 24,
+          "y": 2952.546875,
+          "width": 342,
+          "height": 17,
+          "top": 2952.546875,
+          "bottom": 2969.546875,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "activeElement": {
+          "tag": "SUMMARY",
+          "class": ""
+        },
+        "hash": ""
+      }
+    },
+    {
+      "key": "ja-detail-390x844-attempt4",
+      "stage": "caught-immediate",
+      "error": "AssertionError [ERR_ASSERTION]: Sticky CTA visible after 75ms scroll\n\nfalse !== true\n",
+      "stack": "AssertionError [ERR_ASSERTION]: Sticky CTA visible after 75ms scroll\n\nfalse !== true\n\n    at file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/artifacts/japanese-models-stage/mobile-targeted-diagnostic.mjs:112:100",
+      "state": {
+        "at": 1662.1000000014901,
+        "scrollY": 4493,
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "readyState": "complete",
+        "fonts": "loaded",
+        "sticky": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "bottom": 0,
+          "hidden": true,
+          "display": "none",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "primary": {
+          "x": 20,
+          "y": -3577.140625,
+          "width": 350,
+          "height": 54.59375,
+          "top": -3577.140625,
+          "bottom": -3522.546875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "footer": {
+          "x": 0,
+          "y": 4060.75,
+          "width": 390,
+          "height": 846.6875,
+          "top": 4060.75,
+          "bottom": 4907.4375,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sourceLink": {
+          "x": 20,
+          "y": 651.9375,
+          "width": 181.84375,
+          "height": 44,
+          "top": 651.9375,
+          "bottom": 695.9375,
+          "hidden": false,
+          "display": "inline-flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sources": {
+          "x": 20,
+          "y": 2709.78125,
+          "width": 350,
+          "height": 74.390625,
+          "top": 2709.78125,
+          "bottom": 2784.171875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "open": false
+        },
+        "information": {
+          "x": 24,
+          "y": 2789.171875,
+          "width": 342,
+          "height": 211.375,
+          "top": 2789.171875,
+          "bottom": 3000.546875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "purchaseEvidence": {
+          "x": 24,
+          "y": 2952.546875,
+          "width": 342,
+          "height": 17,
+          "top": 2952.546875,
+          "bottom": 2969.546875,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "activeElement": {
+          "tag": "SUMMARY",
+          "class": ""
+        },
+        "hash": ""
+      }
+    },
+    {
+      "key": "ja-detail-390x844-attempt4",
+      "stage": "caught-after100ms",
+      "state": {
+        "at": 1870.7000000029802,
+        "scrollY": 4493,
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "readyState": "complete",
+        "fonts": "loaded",
+        "sticky": {
+          "x": 12,
+          "y": 755.515625,
+          "width": 366,
+          "height": 80.484375,
+          "top": 755.515625,
+          "bottom": 836,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "primary": {
+          "x": 20,
+          "y": -3577.140625,
+          "width": 350,
+          "height": 54.59375,
+          "top": -3577.140625,
+          "bottom": -3522.546875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "footer": {
+          "x": 0,
+          "y": 4060.75,
+          "width": 390,
+          "height": 846.6875,
+          "top": 4060.75,
+          "bottom": 4907.4375,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sourceLink": {
+          "x": 20,
+          "y": 651.9375,
+          "width": 181.84375,
+          "height": 44,
+          "top": 651.9375,
+          "bottom": 695.9375,
+          "hidden": false,
+          "display": "inline-flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sources": {
+          "x": 20,
+          "y": 2709.78125,
+          "width": 350,
+          "height": 74.390625,
+          "top": 2709.78125,
+          "bottom": 2784.171875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "open": false
+        },
+        "information": {
+          "x": 24,
+          "y": 2789.171875,
+          "width": 342,
+          "height": 211.375,
+          "top": 2789.171875,
+          "bottom": 3000.546875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "purchaseEvidence": {
+          "x": 24,
+          "y": 2952.546875,
+          "width": 342,
+          "height": 17,
+          "top": 2952.546875,
+          "bottom": 2969.546875,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "activeElement": {
+          "tag": "SUMMARY",
+          "class": ""
+        },
+        "hash": ""
+      }
+    },
+    {
+      "key": "ja-detail-390x844-attempt4",
+      "stage": "caught-after500ms",
+      "state": {
+        "at": 2285.39999999851,
+        "scrollY": 4493,
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "readyState": "complete",
+        "fonts": "loaded",
+        "sticky": {
+          "x": 12,
+          "y": 755.515625,
+          "width": 366,
+          "height": 80.484375,
+          "top": 755.515625,
+          "bottom": 836,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "primary": {
+          "x": 20,
+          "y": -3577.140625,
+          "width": 350,
+          "height": 54.59375,
+          "top": -3577.140625,
+          "bottom": -3522.546875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "footer": {
+          "x": 0,
+          "y": 4060.75,
+          "width": 390,
+          "height": 846.6875,
+          "top": 4060.75,
+          "bottom": 4907.4375,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sourceLink": {
+          "x": 20,
+          "y": 651.9375,
+          "width": 181.84375,
+          "height": 44,
+          "top": 651.9375,
+          "bottom": 695.9375,
+          "hidden": false,
+          "display": "inline-flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sources": {
+          "x": 20,
+          "y": 2709.78125,
+          "width": 350,
+          "height": 74.390625,
+          "top": 2709.78125,
+          "bottom": 2784.171875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "open": false
+        },
+        "information": {
+          "x": 24,
+          "y": 2789.171875,
+          "width": 342,
+          "height": 211.375,
+          "top": 2789.171875,
+          "bottom": 3000.546875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "purchaseEvidence": {
+          "x": 24,
+          "y": 2952.546875,
+          "width": 342,
+          "height": 17,
+          "top": 2952.546875,
+          "bottom": 2969.546875,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "activeElement": {
+          "tag": "SUMMARY",
+          "class": ""
+        },
+        "hash": ""
+      }
+    },
+    {
+      "key": "ja-long-detail-320x740-attempt5",
+      "stage": "sticky-probe",
+      "shown": true,
+      "state": {
+        "at": 1606.3000000044703,
+        "scrollY": 5118,
+        "innerWidth": 320,
+        "innerHeight": 740,
+        "readyState": "complete",
+        "fonts": "loaded",
+        "sticky": {
+          "x": 12,
+          "y": 635.515625,
+          "width": 296,
+          "height": 96.484375,
+          "top": 635.515625,
+          "bottom": 732,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "primary": {
+          "x": 16,
+          "y": -4171.90625,
+          "width": 288,
+          "height": 54.59375,
+          "top": -4171.90625,
+          "bottom": -4117.3125,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "footer": {
+          "x": 0,
+          "y": 4444.9375,
+          "width": 320,
+          "height": 919.46875,
+          "top": 4444.9375,
+          "bottom": 5364.40625,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sourceLink": {
+          "x": 16,
+          "y": 548.328125,
+          "width": 181.84375,
+          "height": 44,
+          "top": 548.328125,
+          "bottom": 592.328125,
+          "hidden": false,
+          "display": "inline-flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sources": {
+          "x": 16,
+          "y": 2832.078125,
+          "width": 288,
+          "height": 74.390625,
+          "top": 2832.078125,
+          "bottom": 2906.46875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "open": false
+        },
+        "information": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "bottom": 0,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "purchaseEvidence": {
+          "x": 20,
+          "y": 3074.84375,
+          "width": 280,
+          "height": 17,
+          "top": 3074.84375,
+          "bottom": 3091.84375,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "activeElement": {
+          "tag": "SUMMARY",
+          "class": ""
+        },
+        "hash": ""
+      }
+    },
+    {
+      "key": "ja-detail-390x844-attempt5",
+      "stage": "sticky-probe",
+      "shown": true,
+      "state": {
+        "at": 1609,
+        "scrollY": 4493,
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "readyState": "complete",
+        "fonts": "loaded",
+        "sticky": {
+          "x": 12,
+          "y": 755.515625,
+          "width": 366,
+          "height": 80.484375,
+          "top": 755.515625,
+          "bottom": 836,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "primary": {
+          "x": 20,
+          "y": -3577.140625,
+          "width": 350,
+          "height": 54.59375,
+          "top": -3577.140625,
+          "bottom": -3522.546875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "footer": {
+          "x": 0,
+          "y": 4060.75,
+          "width": 390,
+          "height": 846.6875,
+          "top": 4060.75,
+          "bottom": 4907.4375,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sourceLink": {
+          "x": 20,
+          "y": 651.9375,
+          "width": 181.84375,
+          "height": 44,
+          "top": 651.9375,
+          "bottom": 695.9375,
+          "hidden": false,
+          "display": "inline-flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "sources": {
+          "x": 20,
+          "y": 2709.78125,
+          "width": 350,
+          "height": 74.390625,
+          "top": 2709.78125,
+          "bottom": 2784.171875,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "open": false
+        },
+        "information": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "bottom": 0,
+          "hidden": false,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "purchaseEvidence": {
+          "x": 24,
+          "y": 2952.546875,
+          "width": 342,
+          "height": 17,
+          "top": 2952.546875,
+          "bottom": 2969.546875,
+          "hidden": false,
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "activeElement": {
+          "tag": "SUMMARY",
+          "class": ""
+        },
+        "hash": ""
+      }
+    }
+  ],
+  "sourceInputsUnchanged": true,
+  "completedAt": "2026-11-17T13:18:35.410Z",
+  "summary": {
+    "checks": 10,
+    "passed": 9,
+    "failed": 1,
+    "viewports": 2,
+    "locales": 2,
+    "representativeRoutes": 6,
+    "sourceControls": 18,
+    "typeImageInstances": 0,
+    "axeScreens": 0,
+    "axeViolations": 0,
+    "liveMaps": 0,
+    "screenshots": 0
+  },
+  "diagnosticContext": {
+    "kind": "Two-case repeated diagnostic of an animation-frame synchronization race in the QA checker",
+    "copiedFrom": "artifacts/japanese-models-stage/hosted-mobile-targeted-diagnostic.json",
+    "actualLocales": [
+      "ja"
+    ],
+    "actualRoutes": [
+      {
+        "name": "long-detail",
+        "slug": "shimadzu-satsuma-kiriko-hikari-l-pendant",
+        "viewport": {
+          "width": 320,
+          "height": 740
+        }
+      },
+      {
+        "name": "detail",
+        "slug": "hamamatsuya-surgical-stainless-pierced-earrings",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      }
+    ],
+    "repetitionsPerCase": 5,
+    "executions": 10,
+    "note": "The embedded legacy summary reports its original loop definitions; actual execution scope is the ten named checks and diagnostics retained above.",
+    "initialRun": {
+      "reportPath": "docs/japanese-models-stage-hosted-mobile-initial-results.json",
+      "reportSha256": "ffe4189574c792e1f3d39688f7f8256455e4f428f908ab8b96e510a44188bb1d",
+      "logPath": "artifacts/japanese-models-stage/hosted-mobile-initial.log",
+      "checkerPath": "scripts/check-mobile-refinement.mjs",
+      "checkerSha256": "0a2ae9d3404e496cceb349360b93b5c7b99ad0cf4718369fc835854b82d57fd3",
+      "preservedCheckerCopy": "artifacts/japanese-models-stage/check-mobile-refinement-initial.mjs",
+      "summary": {
+        "checks": 92,
+        "passed": 90,
+        "failed": 2,
+        "viewports": 7,
+        "locales": 2,
+        "representativeRoutes": 6,
+        "sourceControls": 116,
+        "typeImageInstances": 112,
+        "axeScreens": 10,
+        "axeViolations": 0,
+        "liveMaps": 2,
+        "screenshots": 16
+      }
+    },
+    "fixedChecker": {
+      "path": "scripts/check-mobile-refinement.mjs",
+      "sha256": "abd7d820187fbb4619a2b5609dd921f92e173be73bec4134daed3d380b4285ff",
+      "finalFullRunReportPath": "docs/japanese-models-stage-hosted-mobile-results.json",
+      "change": "Replace the fixed 75ms sleep with animation-frame polling for the actual sticky display predicates plus rendered visibility; retain all assertions; include stacks and checker hash in QA reports."
+    },
+    "observedRace": {
+      "key": "ja-detail-390x844-attempt4",
+      "failureMessage": "AssertionError [ERR_ASSERTION]: Sticky CTA visible after 75ms scroll\n\nfalse !== true\n",
+      "stack": "AssertionError [ERR_ASSERTION]: Sticky CTA visible after 75ms scroll\n\nfalse !== true\n\n    at file:///C:/Users/rozawa/Documents/ChatGPT/%E3%82%A2%E3%83%97%E3%83%AA%E9%96%8B%E7%99%BA/ito-craft/artifacts/japanese-models-stage/mobile-targeted-diagnostic.mjs:112:100",
+      "controller": "scroll event schedules requestAnimationFrame update()",
+      "requiredPredicates": "viewport <= 720px, primary.bottom < 0 and footer.top >= viewport height",
+      "atAssertion": {
+        "performanceMs": 1662.1000000014901,
+        "scrollY": 4493,
+        "primaryBottom": -3522.546875,
+        "footerTop": 4060.75,
+        "viewportHeight": 844,
+        "stickyHidden": true,
+        "stickyDisplay": "none",
+        "sourceOpen": false,
+        "fonts": "loaded"
+      },
+      "afterWait100msObservation": {
+        "performanceMs": 1870.7000000029802,
+        "actualObservationElapsedMs": 208.60000000149012,
+        "scrollY": 4493,
+        "primaryBottom": -3522.546875,
+        "footerTop": 4060.75,
+        "viewportHeight": 844,
+        "stickyHidden": false,
+        "stickyDisplay": "flex",
+        "sourceOpen": false,
+        "fonts": "loaded"
+      },
+      "noPageInteractionBetweenObservations": true,
+      "interpretation": "The expected predicates and layout were already stable while the hidden flag lagged; waiting for the scheduled rendering update made the same page visible without changing the app, scrolling again, opening sources or retrying the assertion."
+    },
+    "applicationChanged": false,
+    "applicationSourceInputsUnchanged": {
+      "src/styles/global.css": true,
+      "src/components/RegionalChoiceGuide.astro": true,
+      "src/components/TypeChoiceImage.astro": true,
+      "src/components/Sources.astro": true,
+      "src/components/MarketPrice.astro": true,
+      "src/components/PurchaseEvidence.astro": true,
+      "src/components/VisitGuide.astro": true,
+      "src/components/ProductBuyingGuide.astro": true,
+      "src/layouts/Base.astro": true,
+      "src/pages/[lang]/index.astro": true,
+      "src/pages/[lang]/objects/index.astro": true,
+      "src/pages/[lang]/objects/[slug].astro": true,
+      "src/data/product-detail-images.json": true,
+      "src/data/catalog.json": true,
+      "src/lib/map-preferences.ts": true,
+      "src/lib/map-preferences-client.ts": true,
+      "src/components/MapPreferences.astro": true,
+      "src/components/JapanJewelryMap.astro": true,
+      "src/components/RegionSelection.astro": true
+    },
+    "recordedAt": "2026-11-17T13:21:11.456Z"
+  }
+}

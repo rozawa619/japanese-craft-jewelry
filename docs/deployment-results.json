@@ -3,10 +3,18 @@
   "specification": "023-japanese-model-styling",
   "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
   "branch": "main",
-  "status": "locally_verified_pending_publication",
-  "recordedAt": "2026-11-17T13:04:22.073Z",
-  "applicationCommit": null,
-  "actions": null,
+  "status": "deployed_and_verified",
+  "recordedAt": "2026-11-17T13:24:29.069Z",
+  "applicationCommit": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
+  "actions": {
+    "id": 44089370227,
+    "headSha": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44089370227",
+    "updatedAt": "2026-11-17T13:07:12Z",
+    "observedAt": "2026-11-17T13:07:30.738Z"
+  },
   "previousDeployedVersion": "0.17.3",
   "previousDeployedApplicationCommit": "ef8ae160e7fc7d2b41cdce1063094313b719df6e",
   "previousRecord": "docs/deployment-v20-before-japanese-models.json",
@@ -312,6 +320,15 @@
         "nodeScriptReferences": 37,
         "errors": 0
       }
+    },
+    "finalTypes": {
+      "report": "docs/japanese-models-stage-final-type-results.json",
+      "summary": {
+        "typeFiles": 151,
+        "errors": 0,
+        "warnings": 0,
+        "hints": 0
+      }
     }
   },
   "reusedFunctionalCoverage": {
@@ -324,7 +341,146 @@
   },
   "buildManifest": "docs/japanese-models-stage-build-manifest.json",
   "publicVerification": {
-    "status": "pending"
+    "version": "0.18.0",
+    "checkedAt": "2026-11-17T13:24:29.068Z",
+    "status": "passed",
+    "applicationCommit": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
+    "actions": {
+      "id": 44089370227,
+      "headSha": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44089370227",
+      "updatedAt": "2026-11-17T13:07:12Z",
+      "observedAt": "2026-11-17T13:07:30.738Z"
+    },
+    "suites": {
+      "hero": {
+        "report": "docs/japanese-models-stage-hosted-hero-results.json",
+        "summary": {
+          "checks": 77,
+          "passed": 77,
+          "failed": 0,
+          "locales": 2,
+          "viewports": 4,
+          "regions": 24,
+          "selections": 172,
+          "modelSwitches": 124,
+          "firstFoldScreens": 8,
+          "enlargedGeometryScreens": 8,
+          "uniquePrefectureShapes": 47,
+          "okinawaInset": true,
+          "naturalImagePaintChecks": 174,
+          "maxVerticalLetterbox": 0,
+          "maxNaturalRatioError": 0.010416666666685614,
+          "maxContainerBlank": 0,
+          "axeScreens": 4,
+          "axeViolations": 0,
+          "screenshots": 8,
+          "pageErrors": 0,
+          "consoleErrors": 0,
+          "externalRequests": 0,
+          "sourceInputsUnchanged": true
+        }
+      },
+      "photos": {
+        "report": "docs/japanese-models-stage-hosted-photos-results.json",
+        "summary": {
+          "checks": 37,
+          "passed": 37,
+          "failed": 0,
+          "locales": 2,
+          "surfaces": 3,
+          "viewportWidths": [
+            320,
+            390,
+            768,
+            1024,
+            1440
+          ],
+          "scenes": 30,
+          "imageChecks": 390,
+          "imagesPerScene": 13,
+          "focusChecks": 120,
+          "axeScreens": 6,
+          "axeViolations": 0,
+          "screenshots": 8,
+          "pageErrors": 0,
+          "consoleErrors": 0,
+          "externalRequests": 0,
+          "sourceInputsUnchanged": true
+        }
+      },
+      "mobile": {
+        "report": "docs/japanese-models-stage-hosted-mobile-results.json",
+        "summary": {
+          "checks": 92,
+          "passed": 92,
+          "failed": 0,
+          "viewports": 7,
+          "locales": 2,
+          "representativeRoutes": 6,
+          "sourceControls": 120,
+          "typeImageInstances": 112,
+          "axeScreens": 10,
+          "axeViolations": 0,
+          "liveMaps": 2,
+          "screenshots": 16
+        }
+      },
+      "browser": {
+        "report": "docs/japanese-models-stage-hosted-browser-results.json",
+        "summary": {
+          "checks": 146,
+          "passed": 146,
+          "failed": 0,
+          "publishedProducts": 60,
+          "productDetailNavigations": 120,
+          "newReplacementNavigations": 44,
+          "locales": [
+            "ja",
+            "en"
+          ],
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "uniqueImagesDecoded": 58,
+          "screenshots": 4,
+          "pageErrors": 0,
+          "consoleErrors": 0,
+          "externalRequests": 0,
+          "hostedRetired404Checks": 22,
+          "localRetiredUrlsSkipped": 0
+        }
+      },
+      "sources": {
+        "report": "docs/japanese-models-stage-hosted-sources-results.json",
+        "summary": {
+          "checks": 328,
+          "passed": 328,
+          "failed": 0,
+          "htmlSha256Comparisons": 328,
+          "productPages": 120,
+          "sourceDisclosures": 448,
+          "sourceRecords": 1580
+        }
+      },
+      "release": {
+        "report": "docs/japanese-models-stage-hosted-release-results.json",
+        "summary": {
+          "checks": 24,
+          "passed": 24,
+          "failed": 0,
+          "canonicalUrls": 328,
+          "uniqueImages": 118,
+          "pageErrors": 0,
+          "consoleErrors": 0
+        }
+      }
+    },
+    "outputIntegrity": "docs/japanese-models-stage-final-output-integrity.json",
+    "scope": "Live0.18.0 after successful Actions.328canonical raw HTML and118current public images match local bytes; old22 image URLs404. Japanese-fictional intent audited through exact generation records, not inferred identity."
   },
   "security": {
     "dependencyAudit": {
@@ -371,16 +527,16 @@
     "scope": "54 current maintainer/spec documents; paths/headings/commands checked; external URLs counted without fetching.",
     "summary": {
       "files": 54,
-      "localLinks": 585,
+      "localLinks": 604,
       "anchors": 6,
-      "externalLinksUnchecked": 104,
+      "externalLinksUnchecked": 117,
       "pnpmReferences": 98,
       "nodeScriptReferences": 39,
       "errors": 0
     }
   },
   "sourceDelivery": {
-    "status": "pending",
+    "status": "verified",
     "revision": "models-023",
     "source": "../japanese-craft-jewelry-delivery/source",
     "zip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-source.zip",
@@ -418,13 +574,32 @@
       "sha256": "383cf02e99cdf06d936118e9d071f35df68a1b99191de31442b7f450de386254",
       "everyFileSha256Checks": 26,
       "allFileHashesMatch": true,
-      "recheckedUnchangedAt": "2026-11-17T12:24:43.025Z"
-    }
+      "recheckedUnchangedAt": "2026-11-17T13:26:59.474Z"
+    },
+    "fileCount": 1198,
+    "everyRepositoryFileSha256Checks": 1198,
+    "everyFileSha256Checks": 1198,
+    "repositoryAndExportFileSetsMatch": true,
+    "sourceAndZipFileSetsMatch": true,
+    "allFileHashesMatch": true,
+    "publicImages": 118,
+    "publishedProducts": 60,
+    "retiredImagesExcluded": 32,
+    "publicOutputUnchangedSinceFinalFocusedAndHostedChecks": true,
+    "finalPass": "Completion notes included by final export; all repository/export/ZIP file sets and SHA checked again. ZIP hash stays in external proof."
   },
   "limits": [
     "No physical iOS/Safari or all-law/all-image-rights certification.",
     "Commercial-host eligibility, real applicant/privacy rights-contact information, accounts/contracts/CMP and account security settings depend on real information or authority.",
     "No ad application, contract, fees, account-setting, DNS or host migration performed.",
     "No search ranking/traffic, future stock or AdSense approval guarantee."
-  ]
+  ],
+  "qaTimingCorrection": {
+    "initialReport": "docs/japanese-models-stage-hosted-mobile-initial-results.json",
+    "diagnostic": "docs/japanese-models-stage-hosted-mobile-timing-diagnostic.json",
+    "finalReport": "docs/japanese-models-stage-hosted-mobile-results.json",
+    "cause": "A fixed75ms assertion raced the existing scroll-to-requestAnimationFrame CTA update; actual predicates were true before hidden was updated. Reproduced once in10 targeted attempts; visible after waiting without interaction.",
+    "change": "QA only: wait for actual scroll predicates and rendered visibility through animation-frame polling; all visibility,44px,geometry/source assertions retained. No app/CSS/client bundle change.",
+    "finalTypeReport": "docs/japanese-models-stage-final-type-results.json"
+  }
 }

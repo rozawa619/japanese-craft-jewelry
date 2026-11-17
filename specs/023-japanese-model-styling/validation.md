@@ -1,6 +1,6 @@
 # 検証記録
 
-2026-11-17。アプリ0.18.0/仕様023。**新22画像の生成・個別目視採用・ローカル参照切替と下記の検証を完了。公開app/Actions・実URL・全source ZIPの確認は後続段階。** 予定と確定結果を区別する。
+2026-11-17。アプリ0.18.0/仕様023。**新22画像の生成・個別目視採用・参照切替とローカル/公開検証を完了。全source1198ファイルの最終集合/全SHA照合も完了。** 予定と確定結果を区別する。
 
 ## 開始基準
 
@@ -39,16 +39,36 @@ Japanese/年齢は架空の生成設定の監査であり、実在人物の国�
 
 browser検査はChrome emulationで、実機Safariの確認とは区別する。一覧地図を含むUI source/JSとCSS bundleは保全9で不変を確認し、関連する画像表示と日英/スマホ回帰を今回のbrowserで検査した。022の一覧地図241を今回再実行したという主張はしない。
 
+## 公開スマホ検査の初回失敗と修正
+
+公開スマホの[初回report](../../docs/japanese-models-stage-hosted-mobile-initial-results.json)は90/92で、sticky CTAのscroll後75ms固定待ちとrequestAnimationFrame更新の競合2件を記録した。[独立診断](../../docs/japanese-models-stage-hosted-mobile-timing-diagnostic.json)では同条件10回のうち1回、表示条件を満たすがhiddenが残り、追加操作なしの100ms後にvisibleへ変わることを再現した。QA側の待ちだけを実際の表示条件とvisibleのrAF polling（上限5秒）へ変更し、assertionはすべて保持。UI source/配信buildは変更していない。
+
+修正後の全92件再実行は下記公開mobile reportへ成功として記録した。最初の失敗を最終成功に混ぜず、raw/診断/修正/再実行を分離した。[最終型検査](../../docs/japanese-models-stage-final-type-results.json)は151ファイルでエラー/警告/hint0。上表のfull pnpm verifyは修正前の150ファイル/149単体/344HTMLで、QA修正後にfull verifyを再実行したという意味ではない。
+
 ## 保全の再現方法と制約
 
 `node scripts/check-japanese-model-preservation.mjs`を、確定manifestと安定buildで実行する。既定のreportとbuild manifestは上表の2ファイル。`CHECK_REPORT_PATH`/`CHECK_BUILD_MANIFEST_PATH`はrepo内docs/artifacts配下のJSONへ変更できる。監査中にbuild/元データを変更しない。
 
-旧495 inputsには退役した旧WebPが含まれる。9項目の完全な保全証明はそれらの旧bytesが残るreviewed checkoutで再現し、通常build/新source ZIPの依存へ加えない。旧画像は同名上書きせず、Git追跡解除/ignore・retired/pruneで配信と納品から外す。source ZIPの除外と全SHA照合は納品段階で別に確認する。v12 baselineは変更しない。
+旧495 inputsには退役した旧WebPが含まれる。9項目の完全な保全証明はそれらの旧bytesが残るreviewed checkoutで再現し、通常build/新source ZIPの依存へ加えない。旧画像は同名上書きせず、Git追跡解除/ignore・retired/pruneで配信と納品から外す。source ZIPでの旧retired32画像の除外と1198ファイルの集合/全SHA照合も確認済み。v12 baselineは変更しない。
 
 ## 公開・文書・納品
 
-公開app/Actions・実URLの新22配信/旧22非配信と日英/スマホ・画像切替の確認は後続。現在入口8文書の公開状態はrootが確定後に更新する。
+公開app `f2bb423f4c4cf476e449d8ec37837243f764cfee`、[Actions44089370227](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44089370227) completed/success。実URLの新22配信/旧22非配信、日英/スマホ・画像切替と生成物を確認済み。[hosted summary](../../docs/japanese-models-stage-hosted-summary.json)が今回の公開結果の正本。公開browser146には全60商品×日英の120ナビゲーション/58unique人物画像decode/旧22URLの404確認を含む。
 
-予定ZIPは`japanese-craft-jewelry-source-0.18.0-models-023.zip`、外部proofは`package-verification-0.18.0-models-023.json`。元PNGは納品先の`generated-originals/0.18.0/`へ保存済み。別の原本ZIP `japanese-craft-jewelry-originals-0.18.0.zip`は47ファイル（新PNG22/旧自作AI参照22/記録3）を照合済み、44,104,939 bytes、SHA256 `20422809c6f97d93c50176e84abd5bc81161a7d344a8620c9d40050d4225e942`。全sourceの集合/全SHA・fileCount/statusはdeployment-resultsのsourceDeliveryと外部proofへ記録する。原本ZIPの成功を、未作成source ZIP・未実行の公開検証の成功へ読み替えない。
+| 公開検査 | 結果 | 証跡 |
+| --- | --- | --- |
+| hero | 77/77、failed0 | [report](../../docs/japanese-models-stage-hosted-hero-results.json) |
+| photos | 37/37、failed0 | [report](../../docs/japanese-models-stage-hosted-photos-results.json) |
+| mobile | 92/92、failed0 | [report](../../docs/japanese-models-stage-hosted-mobile-results.json) |
+| browser | 146/146、failed0 | [report](../../docs/japanese-models-stage-hosted-browser-results.json) |
+| sources | 328/328、failed0 | [report](../../docs/japanese-models-stage-hosted-sources-results.json) |
+| release | 24/24、failed0 | [report](../../docs/japanese-models-stage-hosted-release-results.json) |
+
+上表は今回の0.18.0実URLから取得した結果で、旧0.17.3の検査件数の流用ではない。
+
+最終ZIPは`japanese-craft-jewelry-source-0.18.0-models-023.zip`、外部proofは`package-verification-0.18.0-models-023.json`。元PNGは納品先の`generated-originals/0.18.0/`へ保存済み。別の原本ZIP `japanese-craft-jewelry-originals-0.18.0.zip`は47ファイル（新PNG22/旧自作AI参照22/記録3）を照合済み、44,104,939 bytes、SHA256 `20422809c6f97d93c50176e84abd5bc81161a7d344a8620c9d40050d4225e942`。全sourceの集合/全SHA・fileCount/statusはdeployment-resultsのsourceDeliveryと外部proofへ記録する。原本ZIP/公開検証の成功を、全source ZIPの集合/全SHA照合の成功へ読み替えない。
 
 技術PASSは全権利/全法域適合・検索順位/離脱率・AdSense承認を認定しない。本人/契約/商用ホスト/認定CMP等の[運営残条件](../../docs/remaining-task-audit-v17.md)は継承する。
+
+<!-- DELIVERY_V23 -->
+0.18.0の全sourceは1198ファイル・公開画像118枚。repository/export/ZIPの集合と全SHAを照合済み。全source ZIPはjapanese-craft-jewelry-source-0.18.0-models-023.zip、外部proofはpackage-verification-0.18.0-models-023.json、原本ZIPはjapanese-craft-jewelry-originals-0.18.0.zip（47ファイル）。完了記録を含め最終再梱包し、ZIP hashは自己参照を避け外部proofへ保存する。正本はdeployment-results.jsonのsourceDelivery。

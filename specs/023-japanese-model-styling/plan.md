@@ -28,10 +28,13 @@ built-in image_genを使い、既存画像を編集する場合は事前に対�
 4. 安定buildでHero全24県の画像/商品/価格/言語/query、Top10/DISCOVER、商品詳細、日英/スマホ/自然比率・余白・focus/リンクを確認。browser中に共有distをbuildしない。
 5. 型/単体/build・Source/SEO・広告off等の必要な検査、Git/Actions/実URLを確認し、全source ZIPと元PNG/外部proofの集合/全SHAを確定する。
 
-新規22画像の生成/個別目視採用、設定監査63、画像59/単体61、保全9、型150ファイル/単体149・344HTMLのローカル結果を確認した。新規設定は25〜30歳（25歳6枚）、かわいい系11/綺麗な系統11で、25〜33歳の成人設定要件を満たす。各検査の対象とbrowser結果は[validation](validation.md)へ分離する。公開app/Actions・実URL・ZIPは後続段階であり、ローカル成功を公開/納品へ読み替えない。
+新規22画像の生成/個別目視採用、設定監査63、画像59/単体61、保全9、型150ファイル/単体149・344HTMLのローカル結果を確認した。新規設定は25〜30歳（25歳6枚）、かわいい系11/綺麗な系統11で、25〜33歳の成人設定要件を満たす。各検査の対象とbrowser結果は[validation](validation.md)へ分離する。公開app f2bb423f4c4cf476e449d8ec37837243f764cfee、[Actions44089370227](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44089370227) completed/success。実URLのhero77・photos37・mobile92・browser146・sources328・release24を今回の公開版で確認した。全source1198ファイルも独立に集合/全SHAを照合し、公開成功とは別の証拠として記録した。
 
 ## 画像だけを変えたことの独立した保全
 
 `scripts/check-japanese-model-preservation.mjs`は旧495 app inputs/監査/旧build manifestをpinし、packageのversionだけと`src/data/editorial-images.json`の22対象の参照切替を許可する。他493 inputs・保持画像・単体・旧22ローカルbytesはSHA一致、追加app inputsは新22 WebPだけ、distは旧22out/新22inで118画像、`_astro`4件は名前/全SHA一致、HTML344 routeは同じと確認した。HTML本文のbytesは画像/alt/metadataの更新に伴い変わるため同一を主張しない。
 
 この一回の保全監査は旧retired WebPが残るreviewed checkoutで再現する。source ZIPから旧retired画像を省く方針と矛盾せず、fresh clone/ZIPの通常build依存へは加えない。出力先は`CHECK_REPORT_PATH`/`CHECK_BUILD_MANIFEST_PATH`でrepo内docs/artifacts配下のJSONへ変更できる。既定は`docs/japanese-models-stage-preservation-results.json`と`docs/japanese-models-stage-build-manifest.json`。
+
+<!-- DELIVERY_V23 -->
+0.18.0の全sourceは1198ファイル・公開画像118枚。repository/export/ZIPの集合と全SHAを照合済み。全source ZIPはjapanese-craft-jewelry-source-0.18.0-models-023.zip、外部proofはpackage-verification-0.18.0-models-023.json、原本ZIPはjapanese-craft-jewelry-originals-0.18.0.zip（47ファイル）。完了記録を含め最終再梱包し、ZIP hashは自己参照を避け外部proofへ保存する。正本はdeployment-results.jsonのsourceDelivery。

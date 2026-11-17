@@ -1,12 +1,14 @@
 # 商品・文章・画像の編集ガイド
 
 プログラムを書かない運営者と、引継ぎ先のAIのための手引きです。まず[README](../README.md)で起動し、詳しい判断は[引継ぎ](handoff.md)・[共通原則](constitution.md)・[運用](operations.md)へ戻ってください。
-2026-11-17の作業版0.18.0が継承する台帳は全66商品、公開60商品、下書き6商品、24県、33店舗（53商品に店舗案内）です。公開関連技法は34（全36）、一次出典293件、人物58＋単体60のAI画像118ファイル。今後の件数は台帳を数えて確かめます。
+2026-11-17の公開版0.18.0が継承する台帳は全66商品、公開60商品、下書き6商品、24県、33店舗（53商品に店舗案内）です。公開関連技法は34（全36）、一次出典293件、人物58＋単体60のAI画像118ファイル。今後の件数は台帳を数えて確かめます。
 
-<!-- TODO_PUBLIC_V21 -->
-0.18.0（仕様023）は画像差し替え・公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
+<!-- PUBLIC_V23 -->
+0.18.0（仕様023）公開済み。人物は架空の日本人成人女性25〜33歳という生成設定へ統一。新22枚（25〜30歳、かわいい11/綺麗11）を採用、既存36枚と単体60枚を保持。app `f2bb423f4c4cf476e449d8ec37837243f764cfee`、[Actions44089370227](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44089370227) completed/success。実URLでHero・TOP10/DISCOVER・日英/スマホ・全商品画像・旧22URL非配信を検証済み。詳細はdeployment-results.json。
 
-023では人物着用画像を、架空の日本人成人女性という生成設定へ統一する作業中です。新規は25歳を含む25〜33歳、華やかなかわいさ/洗練された綺麗さと髪型・表情・装いの変化を使います。見た目から実在人物の国籍・年齢を推定/認定しません。監査は22画像置換/36画像保持/不明0で、新画像の生成・採用・公開の完了数ではありません。新logはdocs/image-generation-japanese-v23.json、readerはscripts/lib/styling-generation-manifests.mjs、専用QAはscripts/check-japanese-model-styling.mjs。旧22画像のbytesを上書きせずasset台帳でretiredへ移し、dist/ZIP除外とGitの追跡解除/ignoreを対応付けます。v12baselineは変更せず、保持36人物・単体60・商品facts/レイアウト/広告off/Google Maps同意を維持します。新元PNGは納品先のgenerated-originals/0.18.0/へ別保存し、旧記録/原本も残します。
+0.18.0の全sourceは1198ファイル・公開画像118枚。repository/export/ZIPの集合と全SHAを照合済み。全source ZIPはjapanese-craft-jewelry-source-0.18.0-models-023.zip、外部proofはpackage-verification-0.18.0-models-023.json、原本ZIPはjapanese-craft-jewelry-originals-0.18.0.zip（47ファイル）。完了記録を含め最終再梱包し、ZIP hashは自己参照を避け外部proofへ保存する。正本はdeployment-results.jsonのsourceDelivery。
+
+023で人物着用画像を、架空の日本人成人女性という生成設定へ統一しました。58人物画像/60商品参照のうち22枚を新生成・採用・公開し、日本人設定の36枚を保持しました。新規は25〜30歳（25歳6枚）、全体は25〜33歳、かわいい系11/綺麗な系統11です。実在人物の国籍・年齢を見た目から認定しません。生成logはdocs/image-generation-japanese-v23.json、readerはscripts/lib/styling-generation-manifests.mjs、専用QAはscripts/check-japanese-model-styling.mjs。旧22画像はbytesを上書きせずretired/Git追跡解除/ignoreとし、dist/ZIPから除外。v12baseline・保持36人物・単体60・商品facts/レイアウト/広告off/Google Maps同意を維持しました。新元PNG22枚と旧自作AI参照22枚・全prompt/目視記録を別原本ZIPへ保存しました。
 
 旧版の公開記録：0.17.3（仕様022）公開済み。app `ef8ae160e7fc7d2b41cdce1063094313b719df6e`、[Actions44081729750](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44081729750) completed/success。実URLで一覧地図241・Hero77・mobile92・Sources328・補足24を確認。地図枠縮小/一覧沖縄別枠とトップ写真の自然比率を反映。確定値はdeployment-results/verificationを参照。 0.17.3の全sourceは1155ファイルを照合済み。これは023の生成/検証/公開/納品結果ではありません。
 
@@ -270,4 +272,4 @@ Hero写真はRegionHero.astroのheight:auto/元比率を保ち、固定高の親
 
 ## 日本人女性の人物画像023
 
-0.18.0の人物生成/編集・監査・退役と検証の方針は[023ガイド](japanese-model-styling-v21.md)・[仕様と検証](../specs/023-japanese-model-styling/)を確認します。新規生成/採用/公開/ZIPは作業中で、最終件数・app/Actions・集合/全SHAはdeployment-resultsと外部proofが正本です。旧生成logのUS/UK等は歴史として残し、現在のactive registryに対応する生成設定だけを監査します。023の新画像を、旧022の241/77/92や旧「全画像不変」の成功へ加算しません。
+0.18.0の人物生成/編集・監査・退役と検証の方針は[023ガイド](japanese-model-styling-v21.md)・[仕様と検証](../specs/023-japanese-model-styling/)を確認します。新規22枚の生成/採用/公開と全source ZIPの照合は完了し、最終件数・app/Actions・集合/全SHAはdeployment-resultsと外部proofが正本です。旧生成logのUS/UK等は歴史として残し、現在のactive registryに対応する生成設定だけを監査します。023の新画像を、旧022の241/77/92や旧「全画像不変」の成功へ加算しません。
