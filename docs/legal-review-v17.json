@@ -1,0 +1,419 @@
+{
+  "version": "0.17.0",
+  "checkedAt": "2026-11-17",
+  "status": "primary_source_review_completed_not_legal_certification",
+  "baseline": {
+    "publishedApplicationVersion": "0.16.0",
+    "publishedApplicationCommit": "86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb",
+    "publishedProducts": 60,
+    "regions": 24,
+    "operator": "SORA"
+  },
+  "scope": "Legal, privacy and provider-contract review for an introduction-only bilingual Japanese craft jewelry site, its third-party store maps and new Japan region navigation. This is research and implementation criteria, not runtime test evidence or full worldwide rights clearance.",
+  "sources": [
+    {
+      "id": "google-geo-v17",
+      "url": "https://about.google/brand-resource-center/products-and-services/geo-guidelines/",
+      "publisher": "Google",
+      "title": "Geo Guidelines",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Ordinary web embeds and map links are described; preserve attribution and use supplied tools. More integrated commercial map uses have separate Platform conditions."
+    },
+    {
+      "id": "ico-storage-consent-v17",
+      "url": "https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/how-do-we-manage-consent-in-practice/",
+      "publisher": "UK ICO",
+      "title": "How do we manage consent in practice?",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Prior consent for non-exempt storage/access, informed third-party/purpose-specific choices and withdrawal with equivalent ease. Remembered settings need appropriate explanation. No fixed universal statutory consent lifetime."
+    },
+    {
+      "id": "eu-online-privacy-v17",
+      "url": "https://europa.eu/youreurope/business/growing/digitalising/online-privacy/index_en.htm",
+      "publisher": "European Union Your Europe",
+      "title": "Online privacy",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Cookie purposes determine exemptions; required consent precedes use and must be withdrawable while preserving minimum access."
+    },
+    {
+      "id": "google-privacy-v17",
+      "url": "https://policies.google.com/privacy",
+      "publisher": "Google",
+      "title": "Privacy Policy",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Connection/device/IP and cookie information, purposes and controls. Not a claim every possible Google purpose occurs in each specific embed.",
+      "entityFollowup": {
+        "checkedAt": "2026-11-17",
+        "url": "https://policies.google.com/privacy?hl=en",
+        "section": "European requirements / Data controller",
+        "summary": "Unless otherwise stated in a service-specific notice, EEA/Swiss user-information controller is Google Ireland Limited, UK is Google LLC. Information indexed/displayed in services including Maps has a separate worldwide Google LLC statement. Do not conflate displayed public information with all visitor connection data."
+      }
+    },
+    {
+      "id": "google-jp-transmission-v17",
+      "url": "https://business.safety.google/intl/ja/tba-jp/",
+      "publisher": "Google",
+      "title": "電気通信事業法27条の12に基づく通知・公表のための参考情報",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "General provider purposes and disclosure reference. The service table does not establish a Maps-specific field list; do not copy Analytics fields as Maps facts."
+    },
+    {
+      "id": "jp-parliament-transmission-v17",
+      "url": "https://www.shugiin.go.jp/internet/itdb_kaigiroku.nsf/html/kaigiroku/009420820220512017.htm",
+      "publisher": "House of Representatives Japan",
+      "title": "第208回国会 総務委員会 第17号 2022-05-12",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Government explanation of notification/publication, consent or opt-out confirmation opportunities. Historical legislative explanation; not a complete current-rule applicability opinion."
+    },
+    {
+      "id": "edpb-territorial-v17",
+      "url": "https://www.edpb.europa.eu/sme/learn-the-basics/data-protection-basics_en",
+      "publisher": "EDPB",
+      "title": "Data protection basics",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "GDPR territorial scope for offering services or monitoring individuals in EEA and personal-data fundamentals; project-specific applicability still requires factual assessment."
+    },
+    {
+      "id": "ec-obligations-v17",
+      "url": "https://commission.europa.eu/law/law-topic/data-protection/information-business-and-organisations/obligations_en",
+      "publisher": "European Commission",
+      "title": "Obligations",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Information about controller, purposes, categories, legal basis, retention and rights; privacy by default. A map preference switch alone is not all GDPR duties."
+    },
+    {
+      "id": "ppc-public-data-v17",
+      "url": "https://www.ppc.go.jp/all_faq_index/faq1-q1-5/",
+      "publisher": "Personal Information Protection Commission Japan",
+      "title": "新聞やインターネットなどで既に公表されている個人情報は保護されるか",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Published personal information is still protected; professional/public source alone is not exemption."
+    },
+    {
+      "id": "caa-stealth-v17",
+      "url": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/faq/stealth_marketing/",
+      "publisher": "Consumer Affairs Agency Japan",
+      "title": "ステルスマーケティングに関するQ&A",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Direct-regulation target, advertiser involvement and joint-supply exceptions; transparent actual relationships."
+    },
+    {
+      "id": "ftc-endorsement-v17",
+      "url": "https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking",
+      "publisher": "US FTC",
+      "title": "The FTC's Endorsement Guides: What People Are Asking",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Honest endorsements and clear conspicuous material-connection/affiliate disclosures; no invented use or endorsement."
+    },
+    {
+      "id": "google-cmp-v17",
+      "url": "https://support.google.com/adsense/answer/13554116?hl=en",
+      "publisher": "Google AdSense Help",
+      "title": "Google consent management requirements for publishers",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Certified TCF CMP for personalized ads in EEA/UK/Switzerland; current text also describes possible non-personalized/limited eligibility for non-certified CMP traffic. Not a universal statement that all Google maps require certified CMP."
+    },
+    {
+      "id": "google-consent-setup-v17",
+      "url": "https://support.google.com/adsense/answer/7670013?hl=en",
+      "publisher": "Google AdSense Help",
+      "title": "Set up and manage your Consent Management Platform",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Disclosure and required consent for cookies/local storage and ads personalization; non-personalized is not necessarily consent-free."
+    },
+    {
+      "id": "bunka-ai-index-v17",
+      "url": "https://www.bunka.go.jp/seisaku/chosakuken/aiandcopyright.html",
+      "publisher": "Agency for Cultural Affairs Japan",
+      "title": "AIと著作権について",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Primary index of AI copyright understanding and checklist/guidance; AI does not replace individual copyright assessment."
+    },
+    {
+      "id": "bunka-ai-use-v17",
+      "url": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/bunkakai/68/pdf/93906201_09.pdf",
+      "publisher": "Agency for Cultural Affairs Japan",
+      "title": "AIと著作権の関係等について",
+      "checkedAt": "2026-11-17",
+      "access": "official_search_text_read",
+      "supports": "Generated-use infringement still considers similarity and reliance. AI caption is not permission."
+    },
+    {
+      "id": "ftc-claims-v17",
+      "url": "https://www.ftc.gov/business-guidance/resources/advertising-faqs-guide-small-business",
+      "publisher": "US FTC",
+      "title": "Advertising FAQ's: A Guide for Small Business",
+      "checkedAt": "2026-11-17",
+      "access": "official_search_text_read",
+      "supports": "Claims and endorsements need truthful substantiation; not a product-specific safety certification."
+    },
+    {
+      "id": "caa-mailorder-v17",
+      "url": "https://www.no-trouble.caa.go.jp/what/mailorder/",
+      "publisher": "Consumer Affairs Agency Japan",
+      "title": "通信販売",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Seller/service-provider mail-order transaction scope. Introduction-only role is an application inference, not an official ruling on this site."
+    },
+    {
+      "id": "github-pages-limits-v17",
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits",
+      "publisher": "GitHub",
+      "title": "GitHub Pages limits",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Online-business/commercial-transaction facilitating hosting restrictions remain. No affiliate-editorial blanket exception confirmed."
+    },
+    {
+      "id": "egov-api-spec-v17",
+      "url": "https://laws.e-gov.go.jp/docs/law-data-basic/8529371-law-api-v1/",
+      "publisher": "e-Gov",
+      "title": "法令API Version1 documentation",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "lawdata returns current in-force law XML. The documented wrapper LawNum can be empty; the full Law contains its own LawNum."
+    },
+    {
+      "id": "egov-359AC0000000086-v17",
+      "url": "https://laws.e-gov.go.jp/api/1/lawdata/359AC0000000086",
+      "publisher": "e-Gov",
+      "title": "電気通信事業法",
+      "lawNum": "昭和五十九年法律第八十六号",
+      "checkedAt": "2026-11-17T08:44:25.4560842Z",
+      "access": "official_api_xml_fetched_selected_main_provision_read",
+      "sha256": "b7a89273e3c6dc9c834977cb929f704de841f232940d01f34cc58f2258dac2b3",
+      "record": "docs/legal-egov-followup-v17.json",
+      "supports": "第二十七条の十二; original XML SHA and selected MainProvision text match independently verified. Not all-law interpretation or project-specific legal certification."
+    },
+    {
+      "id": "egov-360M50001000025-v17",
+      "url": "https://laws.e-gov.go.jp/api/1/lawdata/360M50001000025",
+      "publisher": "e-Gov",
+      "title": "電気通信事業法施行規則",
+      "lawNum": "昭和六十年郵政省令第二十五号",
+      "checkedAt": "2026-11-17T08:44:36.9856324Z",
+      "access": "official_api_xml_fetched_selected_main_provision_read",
+      "sha256": "ac18f52e054129129a3388846c0075053b0de7fdd47717281cf109dff93702e9",
+      "record": "docs/legal-egov-followup-v17.json",
+      "supports": "第二十二条の二の二十七, 第二十二条の二の二十八, 第二十二条の二の二十九; original XML SHA and selected MainProvision text match independently verified. Not all-law interpretation or project-specific legal certification."
+    },
+    {
+      "id": "egov-351AC0000000057-v17",
+      "url": "https://laws.e-gov.go.jp/api/1/lawdata/351AC0000000057",
+      "publisher": "e-Gov",
+      "title": "特定商取引に関する法律",
+      "lawNum": "昭和五十一年法律第五十七号",
+      "checkedAt": "2026-11-17T08:44:38.5948241Z",
+      "access": "official_api_xml_fetched_selected_main_provision_read",
+      "sha256": "baf61a5d0431aa34e88271fb3502a14e02c7491052143c170cae0a0f9ef77d54",
+      "record": "docs/legal-egov-followup-v17.json",
+      "supports": "第十一条; original XML SHA and selected MainProvision text match independently verified. Not all-law interpretation or project-specific legal certification."
+    },
+    {
+      "id": "google-terms-provider-v17",
+      "url": "https://policies.google.com/terms?hl=en",
+      "publisher": "Google",
+      "title": "Terms of Service, service provider and affiliate definitions",
+      "checkedAt": "2026-11-17",
+      "access": "body_read",
+      "supports": "Google LLC and affiliates identified; embedded Maps included in service examples. Entity varies with applicable country/service terms; not a universal recipient/controller assignment."
+    }
+  ],
+  "unsuccessfulAccess": [
+    {
+      "url": "https://www.soumu.go.jp/main_sosiki/joho_tsusin/d_syohi/gaibusoushin_kiritsu.html",
+      "result": "non-retryable web-tool error; current MIC body not read"
+    },
+    {
+      "url": "https://www.soumu.go.jp/main_sosiki/joho_tsusin/d_syohi/gaibusoushin_kiritsu_00002.html",
+      "result": "non-retryable web-tool error; current MIC FAQ not read"
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/law/359AC0000000086",
+      "result": "No readable body lines; current full statute not claimed read"
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/api/1/lawdata/359AC0000000086",
+      "result": "not accessible through web tool"
+    },
+    {
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+      "result": "Only bot-verification text; official EU/EDPB explanatory pages used, not claimed full-GDPR read"
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679",
+      "result": "Only bot-verification text"
+    },
+    {
+      "url": "https://commission.europa.eu/law/law-topic/data-protection/information-business-and-organisations/application-gdpr_en",
+      "result": "429 on direct open; EDPB body used for applicability instead"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "maps-default",
+      "classification": "implementation_requirement",
+      "conclusion": "Do not globally auto-connect Google for unchosen visitors. Offer informed map-specific choice; remembered permission may auto-show larger maps on later pages until expiry/withdrawal.",
+      "sourceIds": [
+        "ico-storage-consent-v17",
+        "eu-online-privacy-v17",
+        "google-privacy-v17"
+      ]
+    },
+    {
+      "id": "maps-persistence",
+      "classification": "implementation_requirement",
+      "conclusion": "Minimize/version/expire remembered preference; equal refusal, easy withdrawal, storage failure safe fallback, cross-tab/back-forward behavior, no ad-consent conflation. A30-day duration is a project choice, not statutory universal rule.",
+      "sourceIds": [
+        "ico-storage-consent-v17",
+        "eu-online-privacy-v17"
+      ]
+    },
+    {
+      "id": "maps-license",
+      "classification": "maintained_control",
+      "conclusion": "Use reviewed official Share embeds, preserve provider attribution, avoid copied screenshot/maps imagery and others' API keys.",
+      "sourceIds": [
+        "google-geo-v17"
+      ]
+    },
+    {
+      "id": "jp-external-transmission",
+      "classification": "current_statute_and_subordinate_rules_rechecked_applicability_conditional",
+      "conclusion": "Initial browser failure followed by successful official e-Gov API retrieval. Current law27-12 and rule22-2-27/28/29 read: information-viewing services can be within specified categories; applicable disclosures/conditions concern readable Japanese/easy access, transmitted information, handling entity name and purpose, with statutory exceptions including qualifying consent. Compare actual role/service/data flows; do not call all introduction sites exempt or all project operations certified.",
+      "sourceIds": [
+        "jp-parliament-transmission-v17",
+        "google-jp-transmission-v17",
+        "egov-api-spec-v17",
+        "egov-359AC0000000086-v17",
+        "egov-360M50001000025-v17"
+      ]
+    },
+    {
+      "id": "global-privacy",
+      "classification": "operator_fact_dependent",
+      "conclusion": "Assess actual targeting and processing; where GDPR or other privacy duties apply they can apply to current operations independently of advertising or monetization. Necessary real controller/rights-response information cannot be invented or deferred merely because AdSense is off. Actual required operator information and applicability remain unresolved.",
+      "sourceIds": [
+        "edpb-territorial-v17",
+        "ec-obligations-v17",
+        "ppc-public-data-v17"
+      ]
+    },
+    {
+      "id": "affiliate-disclosure",
+      "classification": "maintained_control",
+      "conclusion": "Keep ordinary links until genuine program/item approval, clear notices before earning links, record material connections and no invented reviewer/AI-person endorsement.",
+      "sourceIds": [
+        "caa-stealth-v17",
+        "ftc-endorsement-v17"
+      ]
+    },
+    {
+      "id": "adsense",
+      "classification": "future_account_dependent",
+      "conclusion": "Keep off. Actual account/site ownership, ad mode, privacy/CMP and provider conditions are separate. No guaranteed approval; map choice is not a Google-certified ad CMP.",
+      "sourceIds": [
+        "google-cmp-v17",
+        "google-consent-setup-v17"
+      ]
+    },
+    {
+      "id": "image-rights",
+      "classification": "ongoing_item_specific_risk",
+      "conclusion": "No unauthorized official photographs/hotlinks or creative-expression copying. AI output requires similarity/reliance review and non-misleading presentation; AI label alone is not permission or rights clearance.",
+      "sourceIds": [
+        "bunka-ai-index-v17",
+        "bunka-ai-use-v17"
+      ]
+    },
+    {
+      "id": "claims-origin-prices-ranking",
+      "classification": "maintained_editorial_control",
+      "conclusion": "Keep source-backed materials/price markets and verified purchase-option limits. No medical/allergy/comfort guarantee, fabricated use, tax-free/lowest-price assumption or product-sales ranking disguised as tourism ranking.",
+      "sourceIds": [
+        "ftc-claims-v17",
+        "ftc-endorsement-v17"
+      ]
+    },
+    {
+      "id": "seller-disclosures",
+      "classification": "role_based_inference",
+      "conclusion": "Official current Article11 checked against actual introduction-only functionality. No on-site order/booking/payment/paid service or joint-supply seller role identified; do not fabricate seller identity. Re-evaluate actual role/contracts if they change; no universal exemption certified.",
+      "sourceIds": [
+        "caa-mailorder-v17",
+        "egov-351AC0000000057-v17"
+      ]
+    },
+    {
+      "id": "hosting-commercial",
+      "classification": "open_provider_contract_dependency",
+      "conclusion": "GitHub Pages commercial hosting suitability remains unresolved and important before monetization. Verify with provider or migrate to suitable host; no explicit affiliate-editorial safe harbor confirmed.",
+      "sourceIds": [
+        "github-pages-limits-v17"
+      ]
+    },
+    {
+      "id": "new-region-map",
+      "classification": "implementation_requirement",
+      "conclusion": "Use own schematic geometry or licensed geographic data with provenance and required attribution. Do not repurpose Google imagery; indicate editorial/approximate nature and no empty-prefecture product promises.",
+      "sourceIds": [
+        "google-geo-v17",
+        "bunka-ai-index-v17"
+      ]
+    },
+    {
+      "id": "google-recipient-entity",
+      "classification": "clarification_recommended_not_violation_ruling",
+      "conclusion": "Current compared UI said Google with an official Privacy link. For clearer rule22-2-29 handling-entity identification, recommend naming Google LLC and Google Ireland Limited as applicable to region/processing in the map Privacy section. The generic label alone does not establish a legal violation; neither does the Google name establish compliance. UK and EEA/Swiss controller assignments must not be conflated; do not assign all Maps visitor data to the separate indexed/displayed-information controller.",
+      "sourceIds": [
+        "egov-360M50001000025-v17",
+        "google-privacy-v17",
+        "google-terms-provider-v17"
+      ]
+    }
+  ],
+  "verificationBoundary": "This review does not assert final0.17 UI/network/storage tests passed. Root records actual implementation/public results in verification/deployment and task-specific reports. No application, contract, support inquiry, payment, DNS or account changes performed by this research agent.",
+  "limits": [
+    "No complete worldwide trademark/design/copyright clearance.",
+    "No legal opinion resolving every jurisdiction or actual business/service applicability; specified current Japanese statute/rule articles were rechecked via official API.",
+    "No current or future stock, search traffic, AdSense acceptance or universal security guarantee.",
+    "No invention of operator private/contact/account information."
+  ],
+  "unsuccessfulAccessStage": "Initial browser-tool attempts, preserved verbatim as history. Subsequent successful direct e-Gov API retrieval is separately recorded below; no claim that the same browser attempts succeeded.",
+  "retrievalFollowup": {
+    "checkedAt": "2026-11-17",
+    "record": "docs/legal-egov-followup-v17.json",
+    "officialApiSpecification": "https://laws.e-gov.go.jp/docs/law-data-basic/8529371-law-api-v1/",
+    "successfulCurrentLawXmls": 3,
+    "reviewedMainProvisionArticles": 5,
+    "originalXmlHashesVerified": true,
+    "selectedArticleTextsMatchXml": true,
+    "historyPreservedInitialFailures": 7,
+    "contentResolvedByAlternateOfficialAccess": [
+      "電気通信事業法27条の12",
+      "電気通信事業法施行規則22条の2の27/28/29",
+      "特定商取引法11条"
+    ],
+    "remainingAcquisitionLimits": [
+      "Current MIC guidance/FAQ bodies were not obtained through the browser tool.",
+      "Full EUR-Lex GDPR original text remained bot-blocked; official EU/EDPB explanations were read.",
+      "European Commission application-GDPR direct endpoint returned429; EDPB territorial-scope body was used."
+    ],
+    "scope": "Full XMLs fetched; only specified current MainProvision articles independently interpreted/compared. Actual service/business/jurisdiction applicability remains factual and conditional."
+  }
+}

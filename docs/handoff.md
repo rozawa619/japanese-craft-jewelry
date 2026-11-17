@@ -1,10 +1,10 @@
 # 現在状態と引継ぎ
 
-アプリ0.16.0・全国追加018、2026-11-17。文書の入口は保守改訂017を引き継ぎます。別AIは[コピー用prompt](ai-handoff.md)、人は[編集ガイド](editing-guide.md)から始められます。過去の途中値を積み上げた説明は[0.15保存版](archive/handoff-v15.md)へ退避しました。
+作業版0.17.0・産地地図/地図表示設定019、2026-11-17。文書の入口は保守改訂017を引き継ぎます。別AIは[コピー用prompt](ai-handoff.md)、人は[編集ガイド](editing-guide.md)から始められます。過去の途中値を積み上げた説明は[0.15保存版](archive/handoff-v15.md)へ退避しました。
 
 ## 何を作っているか
 
-Japanese Craft Jewelryは、SORAが全国の工芸ジュエリーを選ぶ日英サイトです。販売/決済/発送・ブログ・Contactはありません。0.16公開版は公開60/全66商品・下書き6商品、24県、公開関連34技法（全36）、33店舗/53商品の関連、一次出典293件、人物58＋単体60のAI画像118ファイル。今後の追加上限ではありません。
+Japanese Craft Jewelryは、SORAが全国の工芸ジュエリーを選ぶ日英サイトです。販売/決済/発送・ブログ・Contactはありません。0.17作業版は0.16の台帳である公開60/全66商品・下書き6商品、24県、公開関連34技法（全36）、33店舗/53商品の関連、一次出典293件、人物58＋単体60のAI画像118ファイル。今後の追加上限ではありません。
 
 51品の公式注文受付と9品の小売/現行カタログを購入根拠とします。将来在庫や店頭の個別在庫は保証しません。COCOON2、欠品18K、現行販売未確認の畠山2、hairpinはdraftを維持。復帰は対象variantの現行販売を再調査します。
 
@@ -12,17 +12,25 @@ Japanese Craft Jewelryは、SORAが全国の工芸ジュエリーを選ぶ日英
 
 | 対象 | 正本 |
 | --- | --- |
-| 公開アプリ0.16 | commit 86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb、[Actions44042180272](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44042180272) completed/success。2026-11-17T07:54:26Z更新、07:54:34.367ZにAPI観測 |
+| 公開appの正本 | [deployment-results](deployment-results.json)。作業/文書HEADと実配信appを区別 |
 | 現在の作業source | git status / git logと[package.json](../package.json)。文書/task更新のcommitは公開appと異なる場合がある |
 | 最新の公開/納品状態 | [deployment-results.json](deployment-results.json) |
-| 0.16の実公開検証 | [Source328HTML](national-stage-hosted-sources-results.json)・[補足24](national-stage-hosted-release-results.json)・[mobile92](national-stage-hosted-mobile-results.json)、全件成功。概要は[verification.md](verification.md) |
+| 旧0.16の実公開検証 | [Source328HTML](national-stage-hosted-sources-results.json)・[補足24](national-stage-hosted-release-results.json)・[mobile92](national-stage-hosted-mobile-results.json)、当時全件成功。概要は[0.16保存版](verification-v16.md) |
 | 旧0.15の段階と限界 | [検証ガイドの履歴](verification-guide.md#015の記録を読む)・[mobile検証](mobile-refinement-v15.md) |
 | 継承した保守文書の検査 | [017 validation](../specs/017-maintainer-handoff/validation.md)とhandoff-stageの記録 |
+| 今回の地図・設定 | [019仕様と検証](../specs/019-geographic-discovery-map-privacy/)と[最新verification](verification.md) |
 | 全国追加の仕様・検査 | [018](../specs/018-national-jewelry-expansion/)とnational-stageの記録。0.15の証跡とは別 |
 
-今回の依頼は、全国で追加する価値のあるジュエリーを増やすことです。秋田・福井・岐阜・広島・鹿児島・徳島・鳥取・沖縄・熊本・島根の10県に10商品を追加し、日英の紹介・比較・3問・公式購入先・店舗案内・人物と単体のAI図を揃えました。広告は通常リンク/offを保ちます。
+直前018の依頼は、全国で追加する価値のあるジュエリーを増やすことでした。秋田・福井・岐阜・広島・鹿児島・徳島・鳥取・沖縄・熊本・島根の10県に10商品を追加し、日英の紹介・比較・3問・公式購入先・店舗案内・人物と単体のAI図を揃えました。広告は通常リンク/offを保ちます。
 
-0.16は実公開確認済みです。Source328/328HTMLのSHA、補足24/24で328正規URL・118画像のSHA、mobile92/92を確認しました。公開appと、その後の文書・納品更新を含むrepo HEADは区別します。
+<!-- TODO_PUBLIC_V17 -->
+0.17.0（仕様019）は作業・検証中です。今回の公開app・Actions・実URL検証は未確定のため、確定後にこの段落を更新します。公開確認済みの基準は0.16.0（app86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb、Actions44042180272）です。
+
+今回019の構成は次のとおりです。産地の共通入口はTOP10→日本地図→DISCOVER3県。観光TOP10順位は維持し、47県のCC0形状から実商品/産地本文のある掲載24県だけを選択可能にします。代表単体AI画像・商品名・国内参考価格を正本から表示し、select・地方別一覧・地図ジャンプも用意します。hoverだけに頼らず、タップ/keyboard/JSなしの通常リンクを保ちます。
+
+Googleマップは初回の明示許可後、日英・全店舗で30日間自動表示します。未選択/拒否/期限切れではGoogle通信0、オフ操作で全iframeを停止。localStorageには地図専用choice/version/savedAt/expiresAtだけを保存し、不正/旧版の値は削除し、有効期限30日を過ぎた値は次の読込/再表示時に削除します。保存不可はページ限りです。複数タブ/戻る/再訪でも撤回を尊重します。PC330px/スマホ280pxの枠高を基本に、Google帰属・fullscreen・公式/外部リンクを保ちます。地図設定版maps-v17と広告Privacy版v14は別で、地図設定は広告同意/CMPではありません。
+
+[日本地図](japan-map-v17.md)・[残タスク](remaining-task-audit-v17.md)・[法務再確認](legal-review-v17.md)・[商用ホスト移行準備](commercial-host-migration-v17.md)を参照。対応ホスト向けpublic/_headersは移行準備です。現GitHub PagesのHTTPヘッダーを設定済みとはせず、実契約/本人情報/広告実ID・CMP/ドメイン・DNS/アカウント管理/検索実績を技術PASSで完了化しません。AdSense off・実提携未申請/通常URLを維持します。
 
 ## 再開の順序
 
@@ -37,7 +45,7 @@ Japanese Craft Jewelryは、SORAが全国の工芸ジュエリーを選ぶ日英
 - 国内JPY/海外実額/表示言語を分ける。未承認広告を使わず共通resolverの両承認/host/date/locale gateを保つ。
 - AI図は実物の証拠ではない。短いcaption/alt/元比率、画像権利と生成記録、退役10画像の除外を維持。
 - 出典/dateは初期closed。Sourcesだけが同ページリンクを処理し、pushState→open/scroll/summary focus。重複handlerで即閉じ後の再openを再導入しない。
-- Google Mapsは明示表示後だけ。Google帰属表示を隠さず、広告CMPと分け、自前Cookie/Storageで選択を保存しない。
+- 店舗Mapsは初回許可後30日自動表示、オフで全停止。未選択/拒否/期限切れはGoogle0。地図専用の最小Storageのみ、保存不可はページ限り。Google帰属と外部fallback、広告同意との分離を保つ。
 - 日英の同ページ/query/hash、種類画像の実地域/種類との一致、320px/横向き/keyboardの操作性を維持。
 
 ## 未完了・判断が必要な事項
@@ -55,6 +63,8 @@ Japanese Craft Jewelryは、SORAが全国の工芸ジュエリーを選ぶ日英
 
 ## 納品物
 
-全sourceは隣接japanese-craft-jewelry-delivery/sourceとlatestのjapanese-craft-jewelry-source.zip。0.16用の版付きZIP名は`japanese-craft-jewelry-source-0.16.0-national-018.zip`、外部proof名は`package-verification-0.16.0-national-018.json`です。最終のファイル集合・SHA・検証完了状態は[deployment-results.json](deployment-results.json)のsourceDeliveryと外部proofを参照し、予定名だけで完了としません。ZIP自身hashはZIP外に置きます。
+今回新bitmapは生成せず、0.16のWebP118枚・原本/生成記録を保持します。
+
+全sourceは隣接japanese-craft-jewelry-delivery/sourceとlatestのjapanese-craft-jewelry-source.zip。0.17用の予定版付きZIP名は`japanese-craft-jewelry-source-0.17.0-geo-019.zip`、外部proof名は`package-verification-0.17.0-geo-019.json`です。最終のファイル集合・SHA・検証完了状態は[deployment-results.json](deployment-results.json)のsourceDeliveryと外部proofを参照し、予定名だけで完了としません。ZIP自身hashはZIP外に置きます。
 
 .git/.env/指定した認証ファイル名・秘密鍵拡張子/依存実体/dist/.astro/artifacts/退役画像を除外。自動検査は指定パス・リンク/ジャンクション・ファイル集合・SHAの確認で、任意ファイルの内容やGit全履歴の機密検査ではありません。PNG原本とQA画面は別資料で、fresh cloneのbuildに不要です。元PNG50枚の0.14別ZIPは保持し、0.16の新規23PNG（採用20・棄却3）は別の生成/採否記録とともに扱います。0.16原本ZIPは26ファイル・35,561,799bytes、SHA256 `383cf02e99cdf06d936118e9d071f35df68a1b99191de31442b7f450de386254`を外部`originals-verification-0.16.0.json`で検証済みです。task-local Node/pnpm wrapperはこのPC固有の便宜で、他PCはsetupの要件から構築できます。

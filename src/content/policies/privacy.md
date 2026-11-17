@@ -22,9 +22,15 @@ Selecting an official-site, retailer or external Google Maps link opens another 
 
 <h2 id="map-privacy">Displaying a map on this page</h2>
 
-Choosing “Show map on this page” in a store section loads an embedded Google map and sends connection information, including your IP address, to Google. Google may use cookies or similar technologies. We do not connect to the map before you choose to display it, and we do not collect your current location.
+Choosing “Allow maps for 30 days” in a store section loads Google Maps. Your IP address and browser information are sent to Google, which may use cookies or similar technologies. Google processes this data to deliver maps and under its own privacy policy. No map connection is made while your choice is unset, off or expired. We do not collect your current location.
 
-Closing the map stops displaying it in that page. We do not store your choice in our own cookies or browser storage; reopening the page returns it to the unloaded state. Closing a map does not erase information already stored by Google. You can delete cookies through your browser settings. See [Google’s privacy policy](https://policies.google.com/privacy?hl=en). The map display choice is separate from advertising consent.
+The Google entities handling information include Google LLC and, depending on your region and the processing involved, Google Ireland Limited. Google’s privacy policy explains their respective roles.
+
+Your choice applies to all store maps on this site in both languages. We store only the on/off choice, policy version, save time and expiry in this device’s localStorage for 30 days; these are not sent to our server. While on, maps display automatically on later product pages. The 30-day period is our choice. An expired or outdated record is removed when next read and a fresh choice is needed. If browser storage is unavailable, your choice applies only on the current page.
+
+Choose “Turn automatic maps off” below a map, or use “Google map settings” in any page footer, to stop automatic maps for all stores. This also updates other open tabs on the same site. Turning maps off cannot erase information already sent to Google or cookies set by Google. You can delete cookies in your browser settings. See [Google’s privacy policy](https://policies.google.com/privacy?hl=en).
+
+Jewelry, addresses and official store guides remain available with maps off. Choosing an external Google Maps link opens Google’s website. Map settings are separate from Google advertising consent and do not activate ads. Change your choice in the [map display settings](#map-preferences) below.
 
 ## If Google advertising is introduced
 

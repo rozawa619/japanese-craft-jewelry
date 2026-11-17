@@ -1,0 +1,18 @@
+---
+import{t,type Locale}from'../lib/i18n';
+interface Props{locale:Locale}
+const{locale}=Astro.props;
+---
+<section class="map-preferences" id="map-preferences" data-map-settings
+ data-allowed={t(locale,'Google maps: on. Store maps display automatically for 30 days after your choice.','Google マップ：オン。選択した日から30日間、店舗の地図を自動表示します。')}
+ data-denied={t(locale,'Google maps: off. No store map is loaded.','Google マップ：オフ。店舗の地図は読み込みません。')}
+ data-unselected={t(locale,'Google maps: not selected. No store map is loaded.','Google マップ：未選択。店舗の地図は読み込みません。')}
+ data-unsaved={t(locale,'Your browser could not save this choice. It applies on this page only.','このブラウザでは設定を保存できません。このページだけに適用します。')}>
+ <h2>{t(locale,'Google map display settings','Google マップの表示設定')}</h2>
+ <p>{t(locale,'Choose whether to display Google maps in store guides. Displaying them sends your IP address and browser information to Google, which may use cookies. Google processes the data to deliver maps and under its own privacy policy. You can browse the jewelry without enabling maps.','店舗案内のGoogle マップを表示するか選べます。表示するとIPアドレスやブラウザ情報がGoogleへ送信され、Cookie等が使われる場合があります。Googleは地図の提供と自社のプライバシーポリシーに従って情報を扱います。地図をオンにしなくても商品を閲覧できます。')}</p>
+ <p>{t(locale,'Only your allowed/off choice, policy version and timestamps are stored locally for 30 days; they are not sent to our server. This setting covers all store maps on this site, across both languages. It is separate from advertising consent. Turning maps off removes the embedded maps but cannot erase data already sent to Google.','このサイトの端末保存領域に、オン／オフ・方針の版・日時だけを30日間保存します。当サイトのサーバーへは送信しません。設定は日英共通で、このサイトの全店舗の地図に適用します。広告の同意とは別です。オフにすると埋込地図を停止しますが、Googleへ送信済みの情報は削除できません。')}</p>
+ <div class="map-preference-actions"><button type="button" data-map-allow-all>{t(locale,'Allow maps for 30 days','地図を30日間、自動表示する')}</button><button type="button" data-map-deny-all>{t(locale,'Keep Google maps off','Google マップをオフにする')}</button></div>
+ <p data-map-settings-status role="status">{t(locale,'Google maps are not loaded until you choose.','選択するまでGoogle マップを読み込みません。')}</p>
+ <noscript><p>{t(locale,'JavaScript is required for embedded maps. External location links remain available.','埋込地図にはJavaScriptが必要です。外部の地図リンクはそのまま使えます。')}</p></noscript>
+</section>
+<style>.map-preferences{border:1px solid var(--line);padding:24px;background:var(--green);margin:28px 0;scroll-margin-top:24px}.map-preferences h2{margin-top:0}.map-preference-actions{display:flex;flex-wrap:wrap;gap:12px}.map-preference-actions button{font:inherit;font-size:14px;min-height:44px;border:1px solid var(--forest);background:var(--paper);color:var(--forest);padding:12px 16px;cursor:pointer}.map-preference-actions button:focus-visible{outline:2px solid var(--forest);outline-offset:4px}.map-preferences [role=status]{font-size:13px;margin-bottom:0}@media(max-width:540px){.map-preferences{padding:18px}.map-preference-actions{display:grid;grid-template-columns:1fr}.map-preference-actions button{text-align:left}}</style>

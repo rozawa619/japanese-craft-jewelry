@@ -1,0 +1,36 @@
+{
+  "version": "0.17.0",
+  "checkedAt": "2026-11-17T08:54:27.874Z",
+  "status": "passed",
+  "node": "24.22.3",
+  "pnpm": "11.25.0",
+  "command": "pnpm verify",
+  "typeFiles": 141,
+  "errors": 0,
+  "warnings": 0,
+  "hints": 0,
+  "unitTests": {
+    "total": 149,
+    "passed": 149,
+    "failed": 0
+  },
+  "build": {
+    "outputFiles": 470,
+    "htmlPages": 344,
+    "canonicalPages": 328,
+    "publicWebpImages": 118,
+    "hrefSrcReferences": 19884,
+    "anchors": 3443,
+    "ordinaryRetailerLinks": 1216,
+    "sponsoredLinks": 0,
+    "executableInlineCspHashes": 1115,
+    "inertJsonBlocks": 334,
+    "legacyReadingRedirects": 14,
+    "retiredImagesPruned": 10
+  },
+  "log": {
+    "path": "artifacts/discovery-map-stage/verify.log",
+    "sha256": "af5f7d0a598832e5ec66e4e9aeb922ff3e78e8ff5e3aa20b4f4f675e635ae61a"
+  },
+  "phase": "Final full verify after all application changes including the two provider-name Privacy paragraphs. Broad UI suites preceded only that exact two-paragraph delta; see provider-clarification-delta and focused Privacy4."
+}

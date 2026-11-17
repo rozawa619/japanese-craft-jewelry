@@ -1,8 +1,9 @@
 # 構成とデータの流れ
 
-対象は公開版0.16.0・全国追加018、文書の入口は保守改訂017を継承。確認日2026-11-17。
+対象は作業版0.17.0・産地地図/地図表示設定019、文書の入口は保守改訂017を継承。確認日2026-11-17。
 
-0.16の公開appは86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb、[Actions44042180272](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44042180272) completed/success。60公開/66登録商品・24県・34公開関連技法（全36）・118画像を持ち、実公開328正規URL/118画像を最終distのSHAと照合しました。実測の正本は[verification.md](verification.md)です。
+<!-- TODO_PUBLIC_V17 -->
+0.17.0（仕様019）は作業・検証中です。今回の公開app・Actions・実URL検証は未確定のため、確定後にこの段落を更新します。公開確認済みの基準は0.16.0（app86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb、Actions44042180272）です。
 
 このサイトは、日本各地の工芸ジュエリーを日英で紹介するAstroの静的サイトです。商品や価格をファイルで編集し、検証してHTMLを生成します。公開先にNodeのアプリサーバー、DB、管理画面、注文・決済APIはありません。Nodeは開発・検証・静的生成のために使います。
 
@@ -16,7 +17,7 @@ flowchart LR
   B --> C["dist: 生成HTML・画像・robots・sitemap"]
   C --> D["静的preview / GitHub Pages"]
   D --> E["ブラウザー: 絞込・言語・出典開閉"]
-  E -->|"明示操作"| F["公式の外部リンク / Google Maps"]
+  E -->|"通常リンク / 地図の有効な許可"| F["公式サイト / Google Maps"]
 ```
 
 buildは商品の最新在庫を外部サイトから取得しません。購入根拠の論理的な整合を検査し、保存済みの事実・確認日を表示します。現行の商品/店舗情報は、更新担当が一次情報を読んでから正本へ反映します。
@@ -57,6 +58,8 @@ specs/               仕様・設計・タスク・検証の対応
 | 画像bytes・alt・用途/退役の根拠 | `public/images/`、`docs/assets.json`、生成記録JSON | image validator、WebP/XMP/SHA確認、退役ファイルの除外 |
 | 編集順、観光訪問率の表示、産地の代表 | `config/selection.ts`、`config/region-selection.ts`、`region-choice-notes.json` | `RegionSelection`、`RegionalChoiceGuide`、`type-choices.ts` |
 | Google地図の取得済み埋込みURL | `lib/store-map-embeds.ts` | `map-embed-url.ts`が許可URLを判定し`VisitGuide`へ |
+| 日本地図/3県 | data/japan-map-geometry.json・config/japan-map.ts | CC0の47県path、JapanJewelryMapが公開商品/地域本文から選択県/代表を導出 |
+| 地図の30日設定 | lib/map-preferences.ts・map-preferences-client.ts | 最小Storageと版/期限の検証、全iframe表示/停止、MapPreferencesの状態を共通化 |
 | Google広告の現在状態 | `advertising-privacy.json` | `advertising-privacy.ts`の固定off schema、`AdvertisingPrivacyStatus`、`Base` |
 
 表で`src/data/`を省略したJSONは同ディレクトリにあります。本文やQ&Aへ価格・販売URLを複製すると更新先が二つになります。Q&Aの`{size}`・`{findings}`・`{fastening}`は、表示する言語のcatalog値から展開します。不明な値でtokenを埋めたり、AI画像から仕様を補ったりしません。
@@ -101,7 +104,8 @@ specs/               仕様・設計・タスク・検証の対応
 | 言語入口と切替 | `pages/index.astro`、`LanguageSwitch` | 強制翻訳/転送をせず、同ページ/query/hashへ |
 | 出典リンクと開閉 | `Sources.astro` | native detailsとanchorを維持し、明示リンクを一度だけ処理 |
 | 下部の購入CTA | 商品templateのscript | 主CTAやfooterの位置・狭幅に応じて表示。購入市場は共通部品に任せる |
-| 地図の表示/閉じる | `VisitGuide.astro` | 明示操作前はiframeなし。URL再検証後だけ作成し、閉じると削除 |
+| 地図の表示/全停止 | map-preferences-client.ts・VisitGuide・MapPreferences | 初回許可後30日自動表示。未選択/拒否/期限切れではiframeなし、全撤回/旧版/不正/保存不可も確認 |
+| 全国地図のpreview | JapanJewelryMap.astro | hover/focus/tap/select、代表単体画像/価格、地方一覧とJSなしの通常リンク |
 | 横スクロール表等の補助 | `Base.astro`の共通script | 画面/キーボードの操作を補助。商品事実を再計算しない |
 
 通常の紹介・公式リンク・native detailsはJSなしでも使えます。JSなしの絞込や地図表示には制約があるため、各ページの説明と通常リンクを残します。
@@ -114,7 +118,15 @@ specs/               仕様・設計・タスク・検証の対応
 
 ### 地図と外部接続
 
-地図URLはGoogleの共有埋込みから確認して登録します。`reviewedMapEmbedUrl`はHTTPS・`www.google.com`・`/maps/embed`・単一の`pb`を許可する境界です。表示前にはGoogleへのiframe接続を行わず、表示/閉じるの選択は自サイトのCookie/Storageへ保存しません。再読込でoffになります。閉じてもGoogleが既に受信/保存した情報を削除する機能にはなりません。公式店舗・外部MapsリンクとGoogleの帰属表示を維持します。詳細は[Maps記録](inline-maps-v14.md)。
+地図URLはGoogle Shareから確認したregistryだけを使います。reviewedMapEmbedUrlがHTTPS・www.google.com・/maps/embed・単一pbを制限します。Googleマップは初回の明示許可後、日英・全店舗で30日間自動表示します。未選択/拒否/期限切れではGoogle通信0、オフ操作で全iframeを停止。localStorageには地図専用choice/version/savedAt/expiresAtだけを保存し、不正/旧版の値は削除し、有効期限30日を過ぎた値は次の読込/再表示時に削除します。保存不可はページ限りです。複数タブ/戻る/再訪でも撤回を尊重します。PC330px/スマホ280pxの枠高を基本に、Google帰属・fullscreen・公式/外部リンクを保ちます。地図設定版maps-v17と広告Privacy版v14は別で、地図設定は広告同意/CMPではありません。
+
+設定keyはjcj.map-choice.v1、設定版は2026-11-17-maps-v17です。Googleへ受信済みの情報やCookieを当サイトが消すことはできません。旧方式は[0.14 Maps記録](inline-maps-v14.md)に履歴として保持します。
+
+## 全国地図と現在の入口
+
+産地の共通入口はTOP10→日本地図→DISCOVER3県。観光TOP10順位は維持し、47県のCC0形状から実商品/産地本文のある掲載24県だけを選択可能にします。代表単体AI画像・商品名・国内参考価格を正本から表示し、select・地方別一覧・地図ジャンプも用意します。hoverだけに頼らず、タップ/keyboard/JSなしの通常リンクを保ちます。
+
+日本地図はsrc/data/japan-map-geometry.json（CC0出典/47県形状）、src/config/japan-map.ts（地方とDISCOVER3県）、JapanJewelryMap.astro（代表preview）。店舗の地図はmap-preferences.ts（30日/版/最小値検証）、map-preferences-client.ts（全表示/全停止）、MapPreferences.astro（Privacyの設定UI）へ分離します。外部JS/タイル/API/現在地/Storageは全国SVG地図では使いません。店舗Googleマップは別機能です。[日本地図](japan-map-v17.md)・[残タスク](remaining-task-audit-v17.md)・[法務再確認](legal-review-v17.md)・[商用ホスト移行準備](commercial-host-migration-v17.md)を参照してください。今回は新bitmap生成なし。
 
 ## 検証・CSP・配信
 
@@ -124,7 +136,7 @@ specs/               仕様・設計・タスク・検証の対応
 
 `astro.config.mjs`はHTMLのhashベースCSPを生成します。現行buildでは、一つのscoped CSSや共通scriptの変更でも、全ページのCSP hash一覧が変わることがあります。変更HTML数を見て影響を推定せず、CSP・実CSS/JS・本文を分けて調べます。実例は[見出し差分](visual-mobile-stage-heading-build-delta.json)と[出典操作差分](visual-mobile-stage-source-nav-build-delta.json)です。
 
-実行scriptはself/hash、外部connectはnone、iframeはGoogleの固定origin等に制限しています。JSON-LDには`serializeJsonLd`を使い、HTMLの終了タグを混ぜないようにします。これは安全性の保証ではありません。meta CSPで設定できないframe-ancestors等のホスト側範囲は[security review](security-review-v15.md)に記録しています。
+実行scriptはself/hash、外部connectはnone、iframeはGoogleの固定origin等に制限しています。JSON-LDには`serializeJsonLd`を使い、HTMLの終了タグを混ぜないようにします。これは安全性の保証ではありません。meta CSPで設定できないframe-ancestors等に対するpublic/_headersを同梱しますが、Cloudflare Pages等の対応ホスト向け移行準備です。GitHub PagesのHTTP header設定にはならず、現host/accountの未完了を解消済みにしません。[移行手順](commercial-host-migration-v17.md)と[security review](security-review-v15.md)を参照してください。
 
 外部URLの到達性確認は別の運用ツールです。`check-external.mjs`→Node専用`safe-outbound.ts`で各redirect/全DNSの公開IPを確認し、接続IPを固定してTLS接続します。ブラウザー用の一般fetch helperへ流用しません。HTTP成功だけでは商品仕様、在庫、権利、提携資格は確認できません。
 

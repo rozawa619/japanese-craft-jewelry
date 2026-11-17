@@ -1,0 +1,2362 @@
+{
+  "version": "0.17.0",
+  "recordedAt": "2026-11-17T08:50:16.958Z",
+  "phase": "Stable output after gesture/storage refinement; used by quality617, mobile92, map193, preference22, maps9, headers7 and ad6. Only the following JA/EN Privacy provider-name clarification changes after this point.",
+  "summary": {
+    "files": 470,
+    "html": 344,
+    "webp": 118
+  },
+  "files": [
+    {
+      "path": "_astro/_slug_.CZM06OVl.css",
+      "bytes": 13151,
+      "sha256": "e2824ab748c99044c8c5d54c322181d04e82844fab4d64e827f34d645ab3c59d"
+    },
+    {
+      "path": "_astro/Base.DTavr-FU.css",
+      "bytes": 41575,
+      "sha256": "01bdf11ca9a1241d9b03f7212baff899ce3883a9be8e5f8783110a7b1bed8147"
+    },
+    {
+      "path": "_astro/RegionSelection.BFXvAOLH.css",
+      "bytes": 17898,
+      "sha256": "4eea20ff9152de988587d22b8a091f1c349d5cd6b20018be0edba5c639d76d65"
+    },
+    {
+      "path": "_headers",
+      "bytes": 392,
+      "sha256": "a978caa46351a4f9c137f13eea37caeff5a8d470c119373dc5d26a54f1f8ff98"
+    },
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "404.html",
+      "bytes": 10876,
+      "sha256": "b36ace0754dfb594ad5a740e835e75f07a59518d5a5583668176475ae1be2d6a"
+    },
+    {
+      "path": "en/about/index.html",
+      "bytes": 17480,
+      "sha256": "ce2398aaaf437e16a7dae781c79016bc32e40105b8675ca9325070812df6c48a"
+    },
+    {
+      "path": "en/affiliate-disclosure/index.html",
+      "bytes": 17529,
+      "sha256": "42e37b90b6c5de4be02004d544fc47b0bf0a2f047d3666f1744feb314d0db4c5"
+    },
+    {
+      "path": "en/crafts/ainu-pattern-jewelry/index.html",
+      "bytes": 27167,
+      "sha256": "3c9a0e2dc8ae500abc53a2eb6c06f8a3b734b2c5c2223be493639ad064019cf5"
+    },
+    {
+      "path": "en/crafts/akita-silver-filigree/index.html",
+      "bytes": 25273,
+      "sha256": "e53723a02972b38b2ec0cad2c4bb836369aec4c03b995e4cc1ac028da676b3f9"
+    },
+    {
+      "path": "en/crafts/awa-indigo-pearl-jewelry/index.html",
+      "bytes": 25224,
+      "sha256": "5891da08277a959c7bf1a972310b9fa0fbd447f22c8a70c6ce779f8fcc704a9f"
+    },
+    {
+      "path": "en/crafts/basse-taille-enamel/index.html",
+      "bytes": 24495,
+      "sha256": "7df3e77154f0aba5d3f7799d7bcded398aa0a2cc2fa08b721a6dcb16e3f3c5ee"
+    },
+    {
+      "path": "en/crafts/burner-worked-glass/index.html",
+      "bytes": 35619,
+      "sha256": "776bd7d3dc9d82c6cfc437736bf412d560628a2fe1ebb1b29ba920bd81f9b6cc"
+    },
+    {
+      "path": "en/crafts/hakone-yosegi/index.html",
+      "bytes": 41445,
+      "sha256": "e819285c4513fa28c011a32492a05e64650784d15e8cc544562583c6d46ad215"
+    },
+    {
+      "path": "en/crafts/higo-zogan/index.html",
+      "bytes": 24370,
+      "sha256": "30fef88ccdc657769176053658a13d85eee08edb604146443d8ed4c53c9282df"
+    },
+    {
+      "path": "en/crafts/hiroshima-origami-jewelry/index.html",
+      "bytes": 25658,
+      "sha256": "0beb03330d355b3f1b8829affeaf7e7becf675f9ea73620048a8fe9c476b0c15"
+    },
+    {
+      "path": "en/crafts/imari-arita-ware/index.html",
+      "bytes": 30068,
+      "sha256": "e9c0311444261cbd258474193e2f870099b9208ffdf1a756657c10ad0e8df166"
+    },
+    {
+      "path": "en/crafts/inshu-washi-jewelry/index.html",
+      "bytes": 26137,
+      "sha256": "0390f1909554301c814e881db1d05030d91f8c120c061264ea8ddc1d0d7f4f33"
+    },
+    {
+      "path": "en/crafts/ise-shima-akoya-jewelry/index.html",
+      "bytes": 24788,
+      "sha256": "64e4d671e9ff917e96c6a04cb0853d4a5aa0c001ed7e6fc783189650efbe2ee3"
+    },
+    {
+      "path": "en/crafts/izumi-tombodama/index.html",
+      "bytes": 27541,
+      "sha256": "6b5a288d1cc335436ac0a4261bb2bd0c17e30bc0518f03fc89e7a35f15db9b91"
+    },
+    {
+      "path": "en/crafts/izumo-magatama-jewelry/index.html",
+      "bytes": 25175,
+      "sha256": "5be37d3d983e5491d7a5e6325e3511d914b8730149d2b2d9869c3cf59ca4b828"
+    },
+    {
+      "path": "en/crafts/kazarikanagu/index.html",
+      "bytes": 26941,
+      "sha256": "e07029b961c6886760404da2e514369e3e7204534413a4368fc27046f65342f6"
+    },
+    {
+      "path": "en/crafts/kiriko/index.html",
+      "bytes": 27035,
+      "sha256": "600c65df090f2fd5ae9bceb6c2107b8536b21fbe5677d6163cc3078fad534b95"
+    },
+    {
+      "path": "en/crafts/kofu-jewelry/index.html",
+      "bytes": 33149,
+      "sha256": "1e33cefbd2326eff943b9b4f242488faf6361d89e6d3f1a89d3dcee4da241007"
+    },
+    {
+      "path": "en/crafts/kujukuri-studio-glass/index.html",
+      "bytes": 26774,
+      "sha256": "52ba919711d64dc0b2d5a63efbb6eadca0b5a29f6646e32beda747d317ff8aaf"
+    },
+    {
+      "path": "en/crafts/kurume-kasuri-accessories/index.html",
+      "bytes": 24622,
+      "sha256": "3e3ffdb3d1bde11c45baf81dc81cb83427a7d145bd2015ae82ea2a95ce30507b"
+    },
+    {
+      "path": "en/crafts/kyo-kumihimo/index.html",
+      "bytes": 24600,
+      "sha256": "68cb11254fe8a50b81429fa5a066789d0f2408157be4f50905a19faa38b8c655"
+    },
+    {
+      "path": "en/crafts/kyo-zogan/index.html",
+      "bytes": 24231,
+      "sha256": "cdcdd122e4279eaf4a52bcfb28f0dbb5f81b14e15a9996e3cf08c7a5e1682ba9"
+    },
+    {
+      "path": "en/crafts/kyoto-mizuhiki/index.html",
+      "bytes": 24103,
+      "sha256": "e70aaf916f61b5f9c4fa7143e0aa11e94a456892114e6f24783d4cdd2740314d"
+    },
+    {
+      "path": "en/crafts/kyoto-yuzen/index.html",
+      "bytes": 27322,
+      "sha256": "8632595a450198c5b1300f1395b7c93e1959935133a71e6e958a78c7f57bfd1d"
+    },
+    {
+      "path": "en/crafts/mino-ceramic-jewelry/index.html",
+      "bytes": 25214,
+      "sha256": "38ad21fd70a7a132023590505be0ee776f8b44a6587742069b68154bee9c35fd"
+    },
+    {
+      "path": "en/crafts/nara-raden-makie/index.html",
+      "bytes": 28036,
+      "sha256": "ac079db9115af275e82545dfccc0035ba568fe16bcb312c9a146ab15d6f2ae5d"
+    },
+    {
+      "path": "en/crafts/otaru-glass/index.html",
+      "bytes": 26812,
+      "sha256": "48185329f5eb1af138dbc46bb40e208a9f91596b29f616180ca42e3863b9a148"
+    },
+    {
+      "path": "en/crafts/owari-cloisonne/index.html",
+      "bytes": 31118,
+      "sha256": "329f3f53760408d19e26f61b942d7509b44a77f7222fc87b1f3bdfe694104d3c"
+    },
+    {
+      "path": "en/crafts/ryukyu-glass-fragment-jewelry/index.html",
+      "bytes": 25565,
+      "sha256": "44d927578ea9fcc666954a4566ef4f7097a6f7ad434a1d1670dae76dd1d5a4cd"
+    },
+    {
+      "path": "en/crafts/sabae-eyeglass-acetate-jewelry/index.html",
+      "bytes": 25268,
+      "sha256": "da14d963fbd92d1f1aef7637d28b1c04160f738abee977588eeda1365a6d1e4c"
+    },
+    {
+      "path": "en/crafts/satsuma-kiriko/index.html",
+      "bytes": 25976,
+      "sha256": "0a7fba6a8e81658235e822d6f0a9697556afd3aafacd83a3f23da5265abc0f6d"
+    },
+    {
+      "path": "en/crafts/senshu-shell-pearl/index.html",
+      "bytes": 28320,
+      "sha256": "c321e7802549693b4ca77b881523039af2d0930f2eef981ecba35d3f956afa9c"
+    },
+    {
+      "path": "en/crafts/silver-thread-work/index.html",
+      "bytes": 24559,
+      "sha256": "309e2e285943e5399d995870bad855434ddf3fac5ff1b2b5b0ae423ce7a546bb"
+    },
+    {
+      "path": "en/crafts/silver-work/index.html",
+      "bytes": 24236,
+      "sha256": "62fdd26c1c2d1b2a007b330e7836d7e65916ff22a12b568a0b942acbda9e8958"
+    },
+    {
+      "path": "en/crafts/takaoka-tin-casting/index.html",
+      "bytes": 26666,
+      "sha256": "2d26e1a332fbafb14a96c83e6e2711530ee16b0346229218b8301cabac1865e3"
+    },
+    {
+      "path": "en/crafts/yame-urushi/index.html",
+      "bytes": 24035,
+      "sha256": "faf1e1a904462e3fc424880ed9eaf9504638239f6e1dc11ee1f7413eb9c1ac5f"
+    },
+    {
+      "path": "en/editorial-policy/index.html",
+      "bytes": 18834,
+      "sha256": "7a2a9eda5a4c5de252091eae369c76ddce63ed805bfbf591ae3532112f27b135"
+    },
+    {
+      "path": "en/index.html",
+      "bytes": 173466,
+      "sha256": "3b9127a3d4f69c5345e5630e9d095d67df5dfbb67d0e2da8e8e9686a68473272"
+    },
+    {
+      "path": "en/journal/buying-from-overseas/index.html",
+      "bytes": 2486,
+      "sha256": "5a214668f996ac81809a1ef7a98b04ef942dfacc783e03761b0e72fbfafd7904"
+    },
+    {
+      "path": "en/journal/everyday-craft-earrings/index.html",
+      "bytes": 2486,
+      "sha256": "5a214668f996ac81809a1ef7a98b04ef942dfacc783e03761b0e72fbfafd7904"
+    },
+    {
+      "path": "en/journal/hakone-yosegi-non-pierced-earrings/index.html",
+      "bytes": 2606,
+      "sha256": "1939530438a3e3154c8494ad924da32e4fde533e0009b79747f9e57737be6869"
+    },
+    {
+      "path": "en/journal/hakone-yosegi-pierced-earrings/index.html",
+      "bytes": 2630,
+      "sha256": "cf2c0e2e67fe0064871c2b0d55704ff5d2a5c0d1add3eddacac8793c1f7e9dca"
+    },
+    {
+      "path": "en/journal/index.html",
+      "bytes": 2486,
+      "sha256": "5a214668f996ac81809a1ef7a98b04ef942dfacc783e03761b0e72fbfafd7904"
+    },
+    {
+      "path": "en/journal/pierced-or-clip-on/index.html",
+      "bytes": 2486,
+      "sha256": "5a214668f996ac81809a1ef7a98b04ef942dfacc783e03761b0e72fbfafd7904"
+    },
+    {
+      "path": "en/journal/understanding-yosegi/index.html",
+      "bytes": 2525,
+      "sha256": "bd71340613a0ae4dfa9f57488003d19bb223d0c664055c8a65d2a20b32e241bb"
+    },
+    {
+      "path": "en/makers/arcos/index.html",
+      "bytes": 27171,
+      "sha256": "d46a0a564ff65c7ac0c54629a69464a9a14992504ab6d00e8f8ecf3c3991e0d8"
+    },
+    {
+      "path": "en/makers/checos/index.html",
+      "bytes": 24942,
+      "sha256": "5fe50dd72632c148d431fb7658d01b36b7c87f5d58edab2c11727d94d5519390"
+    },
+    {
+      "path": "en/makers/coyorimi/index.html",
+      "bytes": 24014,
+      "sha256": "0da1cf8a700af9b8c35a2108e9dab77f239ef2ab5cd27768423e3b19edae7b13"
+    },
+    {
+      "path": "en/makers/earth-hiroshima/index.html",
+      "bytes": 26038,
+      "sha256": "3283d53bc2539a07a61d119cf4d73fe41b2b685257879416b5f1b7fa9fe121ee"
+    },
+    {
+      "path": "en/makers/egaho/index.html",
+      "bytes": 24252,
+      "sha256": "072ce4b91285ec079e9d66181e92e04f03cfb70841dc7ad9cb8e80cd6508a115"
+    },
+    {
+      "path": "en/makers/hamamatsuya/index.html",
+      "bytes": 29933,
+      "sha256": "d025d4101edf4c24d1090a4f183ab1cbf708a4212cd30188bc5999590a745619"
+    },
+    {
+      "path": "en/makers/hario-lampwork-factory/index.html",
+      "bytes": 25474,
+      "sha256": "f76beaa77ea6302ac4997c02dbcab3acaa9f679426e176e30d9328cade05208a"
+    },
+    {
+      "path": "en/makers/iwaya-urushi/index.html",
+      "bytes": 24022,
+      "sha256": "518725db809fb2aa2865e440472961b33b8d41b3464dc4392cb5d8436a7f2aaf"
+    },
+    {
+      "path": "en/makers/jewelry-applause/index.html",
+      "bytes": 25145,
+      "sha256": "776f7f480dff79b1af90e901d482a149c12c427f2ca6833f04c5f5caa986029c"
+    },
+    {
+      "path": "en/makers/kato-shippo/index.html",
+      "bytes": 27875,
+      "sha256": "74bceb9560db17252cf67c7702fb3e25e11c5718c6386f9c6079c4ef6d49ad0d"
+    },
+    {
+      "path": "en/makers/kazarino/index.html",
+      "bytes": 27348,
+      "sha256": "53197292b8d0d39274c7dd999be487807d3b93458755a7c909608326dc73c100"
+    },
+    {
+      "path": "en/makers/maker-unidentified-maruyama/index.html",
+      "bytes": 33488,
+      "sha256": "d8b03a5e2c0745a058313dd609ca84a988da1b4feecb65ac134241949a73e139"
+    },
+    {
+      "path": "en/makers/menoya/index.html",
+      "bytes": 25136,
+      "sha256": "ce2263edbd9cae3da980104fe849ac2a0af895f16ab713bacdcaabea3e9081d4"
+    },
+    {
+      "path": "en/makers/mie-pearl-union/index.html",
+      "bytes": 25156,
+      "sha256": "227b32ce052f21fd386f32016d96a8f5f763982327322ac289f30b0673e04172"
+    },
+    {
+      "path": "en/makers/mitsusuke/index.html",
+      "bytes": 24915,
+      "sha256": "f133ac4380d245c2b46cc8482992eb899bc13ea066900569d069994c21d69156"
+    },
+    {
+      "path": "en/makers/morphosphere/index.html",
+      "bytes": 25070,
+      "sha256": "8722e34773987b5754cdb4f92bfd0b5c6654ce3179e88eac2e010adf7c5acaf6"
+    },
+    {
+      "path": "en/makers/nakajima-zogan/index.html",
+      "bytes": 25097,
+      "sha256": "277b7d3dd60b787434e06340195b02e846ef9e677a676e0229583ddb2243c2c3"
+    },
+    {
+      "path": "en/makers/nanao-shuka/index.html",
+      "bytes": 24565,
+      "sha256": "46a5f37bf9eb54b60826b591c9e4c016d73262739e2df018ab80484d1b9cc35a"
+    },
+    {
+      "path": "en/makers/nanayosha/index.html",
+      "bytes": 24964,
+      "sha256": "3390c95fd031964c1fdf63ae05eaa510a3c4a1449ad750b338708187c19bddbd"
+    },
+    {
+      "path": "en/makers/nousaku/index.html",
+      "bytes": 26839,
+      "sha256": "b237dadb78e89ddb5cce0012679d8fe133e2ed46664d0dcea2b1508efba93e68"
+    },
+    {
+      "path": "en/makers/ponzu-okinawa/index.html",
+      "bytes": 25113,
+      "sha256": "569a63b2da41b6680dce24bdc670c4ee00236d164ba0a5d21231e015016b5885"
+    },
+    {
+      "path": "en/makers/premium-pearl-brand/index.html",
+      "bytes": 28204,
+      "sha256": "7527f8e269dbf116b79219184b6f0f16d3d247787c9d833ec4a2138f3400c18e"
+    },
+    {
+      "path": "en/makers/rinzen/index.html",
+      "bytes": 27663,
+      "sha256": "34ddb1f583fba6644dfd52bfd7e8200356f627d1c7e181067eee50017daf1fe9"
+    },
+    {
+      "path": "en/makers/sangetsu-kobo/index.html",
+      "bytes": 27289,
+      "sha256": "adf83375e57f31c5e40c508ff53b247f968a01d599691cfbc6c0c7db5921b09b"
+    },
+    {
+      "path": "en/makers/saskia-diez-2016/index.html",
+      "bytes": 25221,
+      "sha256": "59b09768edd10def34fdd618df8214e1661b39a42700050813f923650c57a8d2"
+    },
+    {
+      "path": "en/makers/sghr-sugahara/index.html",
+      "bytes": 26490,
+      "sha256": "be5b7eac4e88bbaca501fe3beb8aaa01f732f338fbbf3b4b85c0d904b0bca3e8"
+    },
+    {
+      "path": "en/makers/shimadzu-satsuma-kiriko/index.html",
+      "bytes": 25858,
+      "sha256": "5361adc8ea984c10dea0b8a0c593a8921f4fb3668b535c83b4ad5d60c0057d62"
+    },
+    {
+      "path": "en/makers/showen-kumihimo/index.html",
+      "bytes": 24314,
+      "sha256": "f8c644b1e2fb37b735222081c8389f316e16e454c00bea9c87c81089adbe01fa"
+    },
+    {
+      "path": "en/makers/simprich/index.html",
+      "bytes": 33151,
+      "sha256": "e80a327153134971cc8a81e03f7ed7de813721d5b4fb6ad56ca7cf26e8cfaf60"
+    },
+    {
+      "path": "en/makers/sirisiri/index.html",
+      "bytes": 27372,
+      "sha256": "820f8ec2e8e3eb493c8c546a798dc64c5d9431c3d5a36729a0aedb65f000265e"
+    },
+    {
+      "path": "en/makers/six-kiln/index.html",
+      "bytes": 28310,
+      "sha256": "6967ab635b85410e09f4a640e0f107160bb6a46d5dea8e64cdaa6051f7acabf4"
+    },
+    {
+      "path": "en/makers/somemasa-sextile/index.html",
+      "bytes": 24601,
+      "sha256": "5b993dd98cdcc838bfa6a148d318a8d935f1cd4f06997f35b2a9e81a1a5346f0"
+    },
+    {
+      "path": "en/makers/sur-tsugi/index.html",
+      "bytes": 24917,
+      "sha256": "cd3fd3f4c4ce358cafac2e65b17b58f74df6322adcdfe9dab53ae7c58516f995"
+    },
+    {
+      "path": "en/makers/tamura-shippo/index.html",
+      "bytes": 24038,
+      "sha256": "5e18d29ffdb65202fcd9da77a811c269067214b9fe99ed5e5a967460b264f054"
+    },
+    {
+      "path": "en/makers/toytoy/index.html",
+      "bytes": 27299,
+      "sha256": "9f0c983366f7217a93f42546a1bb6394a75c681ac1c8851152575820d9533ad7"
+    },
+    {
+      "path": "en/makers/yadome-silver-atelier/index.html",
+      "bytes": 25175,
+      "sha256": "48b11bb699b496280ae54c8aa844f203687313c6bd50c33a4faba110bf0a02e3"
+    },
+    {
+      "path": "en/makers/yamato-urushi-sugimura/index.html",
+      "bytes": 27066,
+      "sha256": "3ac7951dd600cc736a713b91f29258c00bccad6936da3769320055bf4abb88d3"
+    },
+    {
+      "path": "en/makers/yoboty-tsp/index.html",
+      "bytes": 26039,
+      "sha256": "351c937b049adfeb341c1e9543a10ed2066a1bded10079269316a56a1052854f"
+    },
+    {
+      "path": "en/makers/yukie-glass/index.html",
+      "bytes": 26820,
+      "sha256": "949cef78a894949109e51d60fe2bdae46f3d0d20242c2dd9392f9fa4ae1b80cd"
+    },
+    {
+      "path": "en/objects/applause-awa-indigo-pearl-clip-on-earrings/index.html",
+      "bytes": 63943,
+      "sha256": "5b3422b7fe82637c8f062365b66164b907d9795db2eaffa0bf5a483ae98ec410"
+    },
+    {
+      "path": "en/objects/arcos-cosmic-glass-bracelet/index.html",
+      "bytes": 61742,
+      "sha256": "28b8283b113fea57bdbed6b371db27b0d80be4d66572040056c5614ef75442ed"
+    },
+    {
+      "path": "en/objects/arcos-cosmic-spiral-pendant/index.html",
+      "bytes": 61533,
+      "sha256": "8afa26ec9cf500bd96bcf00b5228d53ef7d1f9466bfabb128d0b370bd4a1080f"
+    },
+    {
+      "path": "en/objects/checos-japanese-apricot-pierced-earrings/index.html",
+      "bytes": 59758,
+      "sha256": "bd3261ffb3c26b7e642dc5032009ba8eff611a6483acea53262ac96d42d6e0f8"
+    },
+    {
+      "path": "en/objects/coyorimi-tamamusubi-clip-on-earrings/index.html",
+      "bytes": 63462,
+      "sha256": "e4b82738a39c67aa47835ce297f727e87df719edac817e26bf4cf99c37d390fa"
+    },
+    {
+      "path": "en/objects/earth-hiroshima-origami-crane-chain-earrings/index.html",
+      "bytes": 64925,
+      "sha256": "72127329f641e2f4b9077fc3ea0b56f455ef33af921e1e2d0a9991a5c868348b"
+    },
+    {
+      "path": "en/objects/egaho-gathered-kurume-kasuri-ear-jewelry/index.html",
+      "bytes": 56921,
+      "sha256": "99214a4d9500fc29245aee03fe7c6a050712d4c20165cb8026b9f07713dae258"
+    },
+    {
+      "path": "en/objects/hamamatsuya-muku-yosegi-pendant/index.html",
+      "bytes": 62388,
+      "sha256": "8c3a2ea9e421f0940d4bddc77ad26ad054c8e7789bb32b11efdd87234810a4fb"
+    },
+    {
+      "path": "en/objects/hamamatsuya-surgical-stainless-pierced-earrings/index.html",
+      "bytes": 63000,
+      "sha256": "1cb4941370ff737cc86386b5c3365979d1eab9851f2f30e3e0a29e1a130c611a"
+    },
+    {
+      "path": "en/objects/hamamatsuya-yosegi-non-pierced-earrings/index.html",
+      "bytes": 62671,
+      "sha256": "ef943957b71da4c1f4a775118b10bcaa08c3cd1215e4febe251e552b21e6e6c7"
+    },
+    {
+      "path": "en/objects/hario-little-tears-clip-on-earrings/index.html",
+      "bytes": 65245,
+      "sha256": "41ce4887d858ba6b74168db522a60514ed45271278aa81e3636eaffa404ad084"
+    },
+    {
+      "path": "en/objects/index.html",
+      "bytes": 389104,
+      "sha256": "12810b62cb851ef2d518810d2a420c3489c678924b5604deccd3aa6cb5b7d337"
+    },
+    {
+      "path": "en/objects/iwaya-urushi-9mm-hook-earrings/index.html",
+      "bytes": 61276,
+      "sha256": "f2711c27440269d5bc44affeabfd0534e029648daac8da4d75077ed72b9791e7"
+    },
+    {
+      "path": "en/objects/kato-suke-drop-pierced-earrings/index.html",
+      "bytes": 64091,
+      "sha256": "dc185440633837fedd0129d715988bc87aa5207d01c94eb15bdf2bf896dcfc2a"
+    },
+    {
+      "path": "en/objects/kato-suke-round-ring/index.html",
+      "bytes": 65643,
+      "sha256": "091d180d520aec36eafb3d0cc7e36e898923cc4801837724af9ba23496a5ca3e"
+    },
+    {
+      "path": "en/objects/kazarino-hanabishi-copper-earrings/index.html",
+      "bytes": 64904,
+      "sha256": "1f12752f67e2e8123549d8d4a7693b451214ad382e11b779f385d4e7b3be8e3e"
+    },
+    {
+      "path": "en/objects/kazarino-shippo-pattern-brass-bangle/index.html",
+      "bytes": 64718,
+      "sha256": "5590aef29ccc51678685dc1e142d42d1f040ff038c1b92be64ccc3d1eaeb4f21"
+    },
+    {
+      "path": "en/objects/maruyama-yosegi-non-pierced-c/index.html",
+      "bytes": 64540,
+      "sha256": "4db90bfa8b43f1dc9af0a167bf47f2ad34154b89e610b278449affdca4c29e49"
+    },
+    {
+      "path": "en/objects/maruyama-yosegi-non-pierced-d/index.html",
+      "bytes": 64376,
+      "sha256": "e153092be6f80285c3acf6e65aefe4de1d423c6122e27633ff5e481bad91fa9f"
+    },
+    {
+      "path": "en/objects/maruyama-yosegi-pierced-c/index.html",
+      "bytes": 64359,
+      "sha256": "5b995fdeab3607ff52974bdbe9d12724a92d9b9df564a45e2d65f1daf01520ca"
+    },
+    {
+      "path": "en/objects/maruyama-yosegi-pierced-d/index.html",
+      "bytes": 64289,
+      "sha256": "e562f5753684ff8b49a755b75d1b6683c1be3ebf2b91472080569dc872e2ef6e"
+    },
+    {
+      "path": "en/objects/menoya-izumo-magatama-n15-necklace/index.html",
+      "bytes": 63143,
+      "sha256": "62ba1a86b61120effbc959896c68c4a84d2050195e7adb14301d0ac44cbec7b0"
+    },
+    {
+      "path": "en/objects/mie-akoya-oh002-stud-earrings/index.html",
+      "bytes": 58137,
+      "sha256": "51095c1b7bbfa2d2313e547e41f93c6b70b545e88fb8041a7f19fc0127ab2c85"
+    },
+    {
+      "path": "en/objects/mitsusuke-higo-zogan-shizuku-pierced-earrings/index.html",
+      "bytes": 62846,
+      "sha256": "fc77b100787afa5105561a4d9a3770a5950dd3b54aedf0b61021ff84b8488690"
+    },
+    {
+      "path": "en/objects/morphosphere-ultramarine-pansy-pierced-earrings/index.html",
+      "bytes": 73197,
+      "sha256": "05a65a5e13a3ccc8199fbe7cf7aa05a1aa7ac40384d15d913ccdf81c255211af"
+    },
+    {
+      "path": "en/objects/nakajima-pear-sakura-pendant/index.html",
+      "bytes": 62516,
+      "sha256": "33506afd24ba462b1a7ec0799d2fed2f9f5d0b62d563da873b3cc283a5e1591e"
+    },
+    {
+      "path": "en/objects/nanao-shuka-nebula-16g-earrings/index.html",
+      "bytes": 58073,
+      "sha256": "1a15ef4790420faec72c33c7b015cb095fdf205825502bd3f8a41755fc4ad615"
+    },
+    {
+      "path": "en/objects/nanayosha-punu-gold-vanilla-pierced-earrings/index.html",
+      "bytes": 63305,
+      "sha256": "b45f6d1c1dd7309e0d678010608b55d7f0f9f1234c1a6af965d05de904c378bc"
+    },
+    {
+      "path": "en/objects/nousaku-aya-tin-pendant/index.html",
+      "bytes": 61688,
+      "sha256": "f81f8264364934391ea6685ee206b68c531e33c6c09d85e5ee26290d79f43044"
+    },
+    {
+      "path": "en/objects/nousaku-dahlia-gerbera-clip-on-earrings/index.html",
+      "bytes": 62970,
+      "sha256": "e9470c7b0790eeda2cdb385f7d389e398d94f9d0bfc7a29c9740064a90070f11"
+    },
+    {
+      "path": "en/objects/rinzen-leaf-glass-pendant/index.html",
+      "bytes": 64721,
+      "sha256": "c730c2e36bbb5c6de5eb0bd5d9548d8ba9ab41df3ff73d59d826dd69f4b6a546"
+    },
+    {
+      "path": "en/objects/rinzen-seika-amber-pierced-earrings/index.html",
+      "bytes": 64407,
+      "sha256": "0fa4e07ed2466cf9f133fa6fc8e5a44103088ccd22d3d685693876e240e0f4aa"
+    },
+    {
+      "path": "en/objects/sangetsu-irodori-tombodama-earrings/index.html",
+      "bytes": 64419,
+      "sha256": "598c46c89c57c6c87e8859e3342f79259520d74b268d18dada3cb60292307dae"
+    },
+    {
+      "path": "en/objects/sangetsu-irodori-tombodama-necklace/index.html",
+      "bytes": 64055,
+      "sha256": "74bf7d2a0fa65445cad99f6aa03b4ee05d1c6269002d234d0d69c6c87493e1bc"
+    },
+    {
+      "path": "en/objects/saskia-diez-drake-porcelain-cuff/index.html",
+      "bytes": 65189,
+      "sha256": "4d04cb039f54e1bc085144378b0c565b53a1df1c76f2c0e6f688b86a02495260"
+    },
+    {
+      "path": "en/objects/senshu-pearl-stud-earrings/index.html",
+      "bytes": 58207,
+      "sha256": "8de4763ec2b42f7599c21e6cbfe33ceb2b6f26a0441e3ebf007f3117731ad296"
+    },
+    {
+      "path": "en/objects/senshu-pearl-swing-earrings/index.html",
+      "bytes": 58282,
+      "sha256": "798e0a7d3fe6b5c01372d02833fba152c30c4b2edb7cca25e50d4bff5505da61"
+    },
+    {
+      "path": "en/objects/sghr-kolmio-glass-ear-cuff/index.html",
+      "bytes": 61646,
+      "sha256": "3bd5ceaa2ec6eb0f8aba54bfcda6e864fe86cc95b12443caf7bddc2fc168e7b3"
+    },
+    {
+      "path": "en/objects/sghr-tie-tie-glass-earrings/index.html",
+      "bytes": 61875,
+      "sha256": "cc0db5fc658afa740e08562a6c74edc0673f3c34e3a4b684ffa13fb3034559c6"
+    },
+    {
+      "path": "en/objects/shimadzu-satsuma-kiriko-hikari-l-pendant/index.html",
+      "bytes": 65072,
+      "sha256": "76b0659ca57b775e2eb120c1dac7bcd71e260f5f65cc3856d886eb2544fe5b90"
+    },
+    {
+      "path": "en/objects/showen-edo-uchi-silk-bracelet/index.html",
+      "bytes": 63234,
+      "sha256": "d9587469efca31d47e2b4dd4fa1f9f42ce77b09890004f39e7e91cc58892150b"
+    },
+    {
+      "path": "en/objects/simprich-crystal-bubble-pierced-earrings/index.html",
+      "bytes": 64820,
+      "sha256": "0b0ab77a9c50d8ef62df838cd76b2bf4378dec88a94598f367ddd1cd475207d9"
+    },
+    {
+      "path": "en/objects/simprich-reversible-silver-piaring-single/index.html",
+      "bytes": 64844,
+      "sha256": "935c2aa05f05e017804e7a6042860c9bcd5ca92499a1845e7a8b29dd54e89009"
+    },
+    {
+      "path": "en/objects/simprich-reversible-topaz-ruby-chain-ring/index.html",
+      "bytes": 64117,
+      "sha256": "cb2083d6070161e32b519e05b29981b7729a7852019eb08bb3a63b7d6fe2ad86"
+    },
+    {
+      "path": "en/objects/simprich-rose-quartz-necklace/index.html",
+      "bytes": 65637,
+      "sha256": "f4805d3a03dbfbae1b7acab093ab881d89faef27eb2a7353cf666f1f6a29d343"
+    },
+    {
+      "path": "en/objects/sirisiri-page-blue-enamel-pierced-earrings/index.html",
+      "bytes": 63103,
+      "sha256": "b8c803b7889e9afcb71c4c1476739f262d6f0d89caa346eddc70d8dd50a55355"
+    },
+    {
+      "path": "en/objects/sirisiri-silver-thread-hoop-mini/index.html",
+      "bytes": 63201,
+      "sha256": "0719736a4d2e5e7ec33aa68aa87e2f1bed9b1b31afe0fb34a6ca5227ae776546"
+    },
+    {
+      "path": "en/objects/six-kiln-blue-bouquet-pierced-earrings/index.html",
+      "bytes": 66897,
+      "sha256": "62f8d80adf437bed92e6ababbb2be9dc6c2cb5596b96362e0c3f815d23e050bd"
+    },
+    {
+      "path": "en/objects/six-kiln-half-moon-earrings/index.html",
+      "bytes": 65229,
+      "sha256": "c025dc490305b4c1a78a36adc4e77e3b304da07fd3f5bc363a24e9a862089f30"
+    },
+    {
+      "path": "en/objects/somemasa-peacock-clip-on-earrings/index.html",
+      "bytes": 64189,
+      "sha256": "d4b05e418ab17af417a62d373c283ac499fb7275344f65802292b63f7f928e15"
+    },
+    {
+      "path": "en/objects/sugimura-hosoge-raden-pendant/index.html",
+      "bytes": 62339,
+      "sha256": "2d9ce7edb62c75d602e31c387bb2573ca19142d5628c32fcd0bf8303d10d62b3"
+    },
+    {
+      "path": "en/objects/sugimura-lotus-makie-ring/index.html",
+      "bytes": 62433,
+      "sha256": "234d626be1da420120019233a524ddca4d430ddc21c0aa25ed8e9e84ab2a66f0"
+    },
+    {
+      "path": "en/objects/sur-basic1-clear-pearl-pierced-earrings/index.html",
+      "bytes": 62538,
+      "sha256": "a02a76c73ef7e625dc02b05b52184f694d3b9b3b8f332e68264fb22af2f58b20"
+    },
+    {
+      "path": "en/objects/tamura-kaisai-enamel-ear-jewelry/index.html",
+      "bytes": 57050,
+      "sha256": "2f942fa71f221e7e043a44f5fe7f8303d8359053d7937f1617dc10856fa761c3"
+    },
+    {
+      "path": "en/objects/tete-ryukyu-glass-hanagasa-heart-pierced-earrings/index.html",
+      "bytes": 63233,
+      "sha256": "0ad3ae5273b3aeeee57000ce61ecec8f0a45909e2cfd173f0770dc65b81ab450"
+    },
+    {
+      "path": "en/objects/toytoy-ninkari-nikuri-earrings/index.html",
+      "bytes": 64487,
+      "sha256": "b548235baa0bf77acb6b289a84c8a2bb7a3c157825080ba00bcd52e436390c9f"
+    },
+    {
+      "path": "en/objects/toytoy-sirokani-pe-silver-necklace/index.html",
+      "bytes": 64536,
+      "sha256": "a50c19a6658a2efbcc0f85f0b1aab7a7708faae06bb7d9e16936959a44d172f7"
+    },
+    {
+      "path": "en/objects/yadome-akita-rice-silver-pierced-earrings/index.html",
+      "bytes": 63239,
+      "sha256": "cc1600032289fb929e03cf7eb207d4740435fb57191b06615c8b522d30818691"
+    },
+    {
+      "path": "en/objects/yoboty-inshu-washi-indigo-long-nonhole-earrings/index.html",
+      "bytes": 65286,
+      "sha256": "2a50d617170c453cee126e4b7a06093a0fa90bdcba02f620049b2b5723c3a467"
+    },
+    {
+      "path": "en/objects/yukieglass-mint-veil-earrings/index.html",
+      "bytes": 64601,
+      "sha256": "75bd8b7a6abec4924e328be8c833e1f529f6ce26b4f73b0e7be8a66f016a71f2"
+    },
+    {
+      "path": "en/objects/yukieglass-rouge-veil-earrings/index.html",
+      "bytes": 64547,
+      "sha256": "f26b6a4335335333cebb67834880ac42835db9ded8c1eac1074ba56c64aba161"
+    },
+    {
+      "path": "en/places/aichi/index.html",
+      "bytes": 40273,
+      "sha256": "00a17878f2c5c01a4a447aede4216edc3e0bb537101912ba580e65883b843271"
+    },
+    {
+      "path": "en/places/akita/index.html",
+      "bytes": 30557,
+      "sha256": "5afc4142491a05c20b57d837bac68d609eea9c944f54f07f36bf6c335609886c"
+    },
+    {
+      "path": "en/places/chiba/index.html",
+      "bytes": 43948,
+      "sha256": "72e6454d73e1d6f4bbc78dc9bb6d3e0a8a2db1ad72275493c1c97861a0fc7333"
+    },
+    {
+      "path": "en/places/fukui/index.html",
+      "bytes": 30410,
+      "sha256": "72e7752437618c04a3a2e86ce60a5062ba5f6e677b7d007f411b9b878f251215"
+    },
+    {
+      "path": "en/places/fukuoka/index.html",
+      "bytes": 30038,
+      "sha256": "9033173c6d8bae62b8d143c113d59be41ecb5a496f10818b29664d2fffd2892b"
+    },
+    {
+      "path": "en/places/gifu/index.html",
+      "bytes": 30375,
+      "sha256": "f608690a6c4a3393f97cb088cbfb566a7264334104c384fa509c294fbc7c2478"
+    },
+    {
+      "path": "en/places/hiroshima/index.html",
+      "bytes": 30937,
+      "sha256": "2d2e70a813b2b566f387dcd70f4f82e9cfeafbe31953bf2b32ada1d032c8fe5a"
+    },
+    {
+      "path": "en/places/hokkaido/index.html",
+      "bytes": 43529,
+      "sha256": "5d8f208b59db4fce66803674302e9dbfc53b087e3fc838d4b595c4ce604bd301"
+    },
+    {
+      "path": "en/places/index.html",
+      "bytes": 160248,
+      "sha256": "9ab03375e154afeccdc70209b568690b5732d0005cbd39d88fd0b25d01e5a94f"
+    },
+    {
+      "path": "en/places/ishikawa/index.html",
+      "bytes": 29811,
+      "sha256": "aadc1675f184cb74113a7e0eab78b44b7ea0a4c302ccc2256b37cf70b55220e6"
+    },
+    {
+      "path": "en/places/kagoshima/index.html",
+      "bytes": 31688,
+      "sha256": "29ef2d0db93e3f854e58e89be95bf217bd25b5b623ef2076865aeeb7e5ca80dc"
+    },
+    {
+      "path": "en/places/kanagawa/index.html",
+      "bytes": 50451,
+      "sha256": "77620c656ad2ad4343aa962c0ecd76573c0dc3ef0995ecd3e93154c410159a20"
+    },
+    {
+      "path": "en/places/kumamoto/index.html",
+      "bytes": 30768,
+      "sha256": "f31e5361d0d94812e9ea5f9139007ce3ba9e96c490235dcb6ccf1d174c317767"
+    },
+    {
+      "path": "en/places/kyoto/index.html",
+      "bytes": 55348,
+      "sha256": "c89312ef32860e50246b693f56cbe00b0aa58caa1d26f9e02db50ce748db4529"
+    },
+    {
+      "path": "en/places/mie/index.html",
+      "bytes": 31141,
+      "sha256": "6ab56e890c1050fc095962ec9e14046aa5400ecd7aee700526b8637874a6ece2"
+    },
+    {
+      "path": "en/places/nara/index.html",
+      "bytes": 40215,
+      "sha256": "1b4644a0d7378d6eb49f666d0f03a52666783353a97d3ae0e096fe10a2176e95"
+    },
+    {
+      "path": "en/places/okinawa/index.html",
+      "bytes": 31058,
+      "sha256": "7142b9a0fee04f4c2a226e97cf2c557873b4163f9d2f7a3b8b44b7572f85178d"
+    },
+    {
+      "path": "en/places/osaka/index.html",
+      "bytes": 43825,
+      "sha256": "7023ed07ea9c920a881a483672521c40a81033f323730d3dfebc3720eda6c878"
+    },
+    {
+      "path": "en/places/saga/index.html",
+      "bytes": 37495,
+      "sha256": "76da9dc5aac90caa608c93adac9e95cb74b9975fcf99d2e3e671cad3c3003cd4"
+    },
+    {
+      "path": "en/places/shimane/index.html",
+      "bytes": 31294,
+      "sha256": "b69365fc2d7a6d8a6c003e7f6f6f759f1c02b618be20c7cd61b0ebfd1da1615a"
+    },
+    {
+      "path": "en/places/tokushima/index.html",
+      "bytes": 31045,
+      "sha256": "925833ce93383a4439676cbeb2f29eb106c23875693ead11454bbd1930e46939"
+    },
+    {
+      "path": "en/places/tokyo/index.html",
+      "bytes": 47782,
+      "sha256": "747a5eb77f55de0086a6b564b2a4d022ad2efb890ca3ec23d5b1e30a0a8c43c8"
+    },
+    {
+      "path": "en/places/tottori/index.html",
+      "bytes": 31880,
+      "sha256": "395855698f7f08168ba7726fff86e2789d3e775b4c968599888276e79e747360"
+    },
+    {
+      "path": "en/places/toyama/index.html",
+      "bytes": 35368,
+      "sha256": "990510cc0c1935198ee232aab00d9cbffabeed76c111854f069364c2c71df2c3"
+    },
+    {
+      "path": "en/places/yamanashi/index.html",
+      "bytes": 45466,
+      "sha256": "b484007d2c45a7f56743536da0f7da40c94556ebbcd917cbc62960186dfdaa51"
+    },
+    {
+      "path": "en/privacy/index.html",
+      "bytes": 27200,
+      "sha256": "94ff91f693a3ea1bae5edf379aec24b5d0ba6a3e0d95a815d00b4ef7995ff73f"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 303,
+      "sha256": "f78d2e377f9ec36d24673a1cbbca4c4c102703c67684c7552b27d2cbd827abec"
+    },
+    {
+      "path": "images/arcos-cosmic-glass-bracelet-styling-v9.webp",
+      "bytes": 62518,
+      "sha256": "eabc62dcc0ebca5146b7205770a8ba088d267a3a0eba72ce6f91f0b797177b75"
+    },
+    {
+      "path": "images/arcos-cosmic-spiral-pendant-styling-v9.webp",
+      "bytes": 114714,
+      "sha256": "e5096f550f3eb32f31c77310a9862d48a08c86077e3581dbc87f477534f948b2"
+    },
+    {
+      "path": "images/arita-blue-bouquet-styling-v9.webp",
+      "bytes": 92982,
+      "sha256": "6cf1828b90904a178c7e74aa1d9a6860c206b387e8e14f9c1300d2347bdb3772"
+    },
+    {
+      "path": "images/arita-halfmoon-styling-v9.webp",
+      "bytes": 78276,
+      "sha256": "302bf3fc8e88a77da5fe30feb6ced8c8e1dcdfc3a9d1b64b95e51eaca5819a19"
+    },
+    {
+      "path": "images/checos-silver-flower-styling-v9.webp",
+      "bytes": 120518,
+      "sha256": "828627f8f41f9b36dff54f9912e25e04f8d22137ed91beaa2de4e8c92ffe5269"
+    },
+    {
+      "path": "images/coyorimi-tamamusubi-clip-on-earrings-styling-v13.webp",
+      "bytes": 75044,
+      "sha256": "1fbe4fb2f3bb77ce27e3b61812c97e60a51d056724f5ff7bbe545096dcf3958c"
+    },
+    {
+      "path": "images/egaho-gathered-kurume-kasuri-ear-jewelry-styling-v13.webp",
+      "bytes": 106336,
+      "sha256": "97626889bb375d7811d971ac3594c6f1b013c1349e1d2247d71f361e5e63dcb6"
+    },
+    {
+      "path": "images/hakone-yosegi-clipon-styling-v9.webp",
+      "bytes": 107560,
+      "sha256": "a0b25e0844fdc5af359f36e7c3e3ae46b93df1b6ff3f7e50541ea8481ac607c9"
+    },
+    {
+      "path": "images/hakone-yosegi-pierced-styling-v9.webp",
+      "bytes": 96330,
+      "sha256": "ad9d3b1505f50b0e32ceac11c274917f78293ae87acfcf44509a0c4427dbf5b3"
+    },
+    {
+      "path": "images/hario-little-tears-clip-on-earrings-styling-v13.webp",
+      "bytes": 102226,
+      "sha256": "5ec4e851cb2dda751cdf58285bed72f26716b3508b632e9cd66cd35ee9f390ab"
+    },
+    {
+      "path": "images/iwaya-urushi-9mm-hook-earrings-styling-v13.webp",
+      "bytes": 79480,
+      "sha256": "e289d53c5aa8294257061f9b977e521878e42675717a56b85ff11cac6a4b1b14"
+    },
+    {
+      "path": "images/kato-blue-round-enamel-ring-styling-v9.webp",
+      "bytes": 62514,
+      "sha256": "831fcb1a47de8312272c81267be664df9696c64bf27ba35571c2ff0cc82b14df"
+    },
+    {
+      "path": "images/kato-green-cloisonne-styling-v9.webp",
+      "bytes": 106422,
+      "sha256": "902f000ffcd13d7ae837d81caba9c5491f0fc7a2b5e529e245410f0937c86e86"
+    },
+    {
+      "path": "images/kazarino-hanabishi-copper-earrings-styling-v13.webp",
+      "bytes": 73338,
+      "sha256": "5f10d6c53b0b6471fc7d66226fda7256fc67751924c7f4ebe039c7a1842b13b9"
+    },
+    {
+      "path": "images/kazarino-shippo-pattern-brass-bangle-styling-v13.webp",
+      "bytes": 75128,
+      "sha256": "69846d9a1195f8a63ce69fcbf7b3938b64e84d4edc860668b1040c39969e2fdd"
+    },
+    {
+      "path": "images/mie-akoya-oh002-stud-earrings-styling-v13.webp",
+      "bytes": 74812,
+      "sha256": "cea788d11e959fc75426165c80be10ef984db54c91a39636ac1483b73f11eb73"
+    },
+    {
+      "path": "images/morphosphere-blue-pansy-styling-v9.webp",
+      "bytes": 96910,
+      "sha256": "b050fd4e55fb8d70e7c9dec44ac6ed13a486262b6cf74828a946bb9caf3ad39a"
+    },
+    {
+      "path": "images/nakajima-sakura-damascene-pendant-styling-v9.webp",
+      "bytes": 58776,
+      "sha256": "a1811ce3b7b6af6944f7042f52687ce373fe7637ab3957f6d070464a19bc37b5"
+    },
+    {
+      "path": "images/nanao-shuka-nebula-16g-earrings-styling-v13.webp",
+      "bytes": 100986,
+      "sha256": "ba3412ffba09f920db973fa81e09b6cce86475813096027a2bb85ace40ef8159"
+    },
+    {
+      "path": "images/nousaku-aya-tin-pendant-styling-v13.webp",
+      "bytes": 58292,
+      "sha256": "d459f72162d9da40b9e0f9f6251b356eeef87e62f2d2aea4797ff0c2968c683a"
+    },
+    {
+      "path": "images/nousaku-dahlia-gerbera-clip-on-earrings-styling-v13.webp",
+      "bytes": 100058,
+      "sha256": "540fd4bcd41ca8dbe65924bce79d0f49ccc54ac150ec2df12d202640b9e09bd3"
+    },
+    {
+      "path": "images/rinzen-amber-glass-styling-v9.webp",
+      "bytes": 78876,
+      "sha256": "08c55ea2a122ba07a24bba5919e7496339202bf45f6e9c8f0f8522b0a4abf45e"
+    },
+    {
+      "path": "images/rinzen-green-leaf-styling-v9.webp",
+      "bytes": 107664,
+      "sha256": "cddba5fb05ae46d7b5df6065102740a313cc2aa4e53f360eca801b448ed60f53"
+    },
+    {
+      "path": "images/sangetsu-irodori-tombodama-earrings-styling-v13.webp",
+      "bytes": 116154,
+      "sha256": "f9fd73a6861226a5fc7c23392e536e41d32f3642eb46d85ac4b13b08bc79926d"
+    },
+    {
+      "path": "images/sangetsu-irodori-tombodama-necklace-styling-v13.webp",
+      "bytes": 121252,
+      "sha256": "4f82d9b93bb728f36ec897f1224e4f8c312291ea82545958ce6e16ce9333ac95"
+    },
+    {
+      "path": "images/saskia-porcelain-cuff-styling-v9.webp",
+      "bytes": 46866,
+      "sha256": "646ac12a72eef2e36892ac9798bdacba7529f00a6bbdecd4a4744edf6adfa0ee"
+    },
+    {
+      "path": "images/senshu-white-pearl-stud-styling-v9.webp",
+      "bytes": 51554,
+      "sha256": "411d59407bb6bbb01c5c19733fa7cdc52c336a9d3498409365187e7b9510ec2e"
+    },
+    {
+      "path": "images/senshu-white-pearl-swing-styling-v9.webp",
+      "bytes": 78612,
+      "sha256": "657da3e1a528debdf5b0dc631b1adcf16173dab8c5264741b0179421721803a9"
+    },
+    {
+      "path": "images/sghr-kolmio-glass-ear-cuff-styling-v13.webp",
+      "bytes": 92898,
+      "sha256": "200fe4af089b63fc6288fc739366639fbda67e1bef9b2f5b23cffe95e9c00822"
+    },
+    {
+      "path": "images/sghr-tie-tie-glass-earrings-styling-v13.webp",
+      "bytes": 57594,
+      "sha256": "bca904b964fe06e506b4cba591e5d2105d3942ad41fc6e77338405be917b807f"
+    },
+    {
+      "path": "images/showen-edo-uchi-silk-bracelet-styling-v13.webp",
+      "bytes": 107902,
+      "sha256": "5c2ed807be7f4b774902f2ca43a45ac58aea4a69af462fa63b2da8d684cfb7f3"
+    },
+    {
+      "path": "images/simprich-crystal-bubble-styling-v9.webp",
+      "bytes": 123332,
+      "sha256": "f73ddf0249d161b90cfa789e9efdc610d0af8a8a1ab4f3a3f15e64d324e5b72a"
+    },
+    {
+      "path": "images/simprich-reversible-silver-piaring-single-styling-v13.webp",
+      "bytes": 78788,
+      "sha256": "2cc112f4f896896ab0d07574611091ae69f841f03e92f59bc7647747875b7a08"
+    },
+    {
+      "path": "images/simprich-reversible-topaz-ruby-chain-ring-styling-v13.webp",
+      "bytes": 76414,
+      "sha256": "e0a7c4d84fd1e105ffdafa806fc36ea044227ed56be8a3915ce2eaed1028d296"
+    },
+    {
+      "path": "images/simprich-rose-quartz-necklace-styling-v9.webp",
+      "bytes": 67028,
+      "sha256": "abd8d1e2a6a9f78ac1413ce033a3b2e552b34f1686b5b67c9407318f58ff27cc"
+    },
+    {
+      "path": "images/sirisiri-page-blue-enamel-pierced-earrings-styling-v13.webp",
+      "bytes": 66118,
+      "sha256": "065ba9ae15adaeeb51f5136c2c681f8a7f972f9502d4036430a799a92ef3e7cc"
+    },
+    {
+      "path": "images/sirisiri-silver-thread-hoop-mini-styling-v13.webp",
+      "bytes": 98412,
+      "sha256": "afebe507be01310666b87feaa4e96ec1bfecfd083f26d98ecd9a1967e0f42364"
+    },
+    {
+      "path": "images/solo-applause-awa-indigo-pearl-clip-on-earrings-v16.webp",
+      "bytes": 24022,
+      "sha256": "8292da43407e2f64bcbbfeed3f9175b956aca1f24a40026fe29d2fa472d4c62a"
+    },
+    {
+      "path": "images/solo-arcos-cosmic-glass-bracelet-v14.webp",
+      "bytes": 48198,
+      "sha256": "3876aaa42209c9c61abdb4ef73fbaf3b6759c94047206c6e0bfcd26793747d6d"
+    },
+    {
+      "path": "images/solo-arcos-cosmic-spiral-pendant-v14.webp",
+      "bytes": 85792,
+      "sha256": "de76da507983dd83cdb724a4ee3927e6b4865be367d04483f3cd81100474d2e5"
+    },
+    {
+      "path": "images/solo-checos-japanese-apricot-pierced-earrings-v14.webp",
+      "bytes": 89376,
+      "sha256": "caad07b89c332bde641e778be6eeaec537bdb99315112d9fcaf2fa5fc123eb24"
+    },
+    {
+      "path": "images/solo-coyorimi-tamamusubi-clip-on-earrings-v14.webp",
+      "bytes": 31828,
+      "sha256": "5505bf4b67797d9afb3f26465e140ab6457dac52c53843a0d93760b5c46baedf"
+    },
+    {
+      "path": "images/solo-earth-hiroshima-origami-crane-chain-earrings-v16.webp",
+      "bytes": 17114,
+      "sha256": "66f17b6e8201125cd5a916b48b09df2b80662a570cd0671986eb7b82dc3810ba"
+    },
+    {
+      "path": "images/solo-egaho-gathered-kurume-kasuri-ear-jewelry-v14.webp",
+      "bytes": 62728,
+      "sha256": "1951d05ab7724f61521eb21affa49ce5191c626c53a7232666aa42c16cfe0d57"
+    },
+    {
+      "path": "images/solo-hamamatsuya-catch-pierced-v14.webp",
+      "bytes": 43328,
+      "sha256": "4b16cb205d6a10a25ad60e6bb1697c2c93393269469b64de14598b6cc7f17ae9"
+    },
+    {
+      "path": "images/solo-hamamatsuya-clip-v14.webp",
+      "bytes": 48426,
+      "sha256": "d288c50409afd679955d98269f7b9eba0f68da60c4212f68e7ddaeb0ee7825a5"
+    },
+    {
+      "path": "images/solo-hamamatsuya-pendant-v14.webp",
+      "bytes": 141564,
+      "sha256": "15430f9240fb340409fa741724cb00a859fe223c950bee791178b6f35101e706"
+    },
+    {
+      "path": "images/solo-hario-little-tears-clip-on-earrings-v14.webp",
+      "bytes": 19780,
+      "sha256": "62277f20091cefcdad3e6e18077001deb6d39862b288a58824f0cba8bb7d8372"
+    },
+    {
+      "path": "images/solo-iwaya-urushi-9mm-hook-earrings-v14.webp",
+      "bytes": 14980,
+      "sha256": "2483f6b54aa93e97586815c76e181c994747d6b12fd326150292f91f6176db4f"
+    },
+    {
+      "path": "images/solo-kato-suke-drop-pierced-earrings-v14.webp",
+      "bytes": 46450,
+      "sha256": "c9d70ae49d405c8e2a281183bb9344aa32f4107b08ce84820346467a9f683b02"
+    },
+    {
+      "path": "images/solo-kato-suke-round-ring-v14.webp",
+      "bytes": 27238,
+      "sha256": "c0b9c9fec42999e04a960a3dcfd85c82f8e6f4c86f5446ef8d7acae5991754f0"
+    },
+    {
+      "path": "images/solo-kazarino-hanabishi-copper-earrings-v14.webp",
+      "bytes": 33602,
+      "sha256": "5886aea3cfb954a9f108c89470d1c0fec8bf4aabb59998b2fe80da43d07cd208"
+    },
+    {
+      "path": "images/solo-kazarino-shippo-pattern-brass-bangle-v14.webp",
+      "bytes": 101554,
+      "sha256": "0e563871204ff2a7b59e5a5337f7dae291805517b84b5b4ecebd620fed05695f"
+    },
+    {
+      "path": "images/solo-maruyama-clip-c-v14.webp",
+      "bytes": 56158,
+      "sha256": "0daaea2edcb5bed0bda85fc506f22fcc364ea0a825d413ad43d88bcb8eda5a85"
+    },
+    {
+      "path": "images/solo-maruyama-clip-d-v14.webp",
+      "bytes": 45224,
+      "sha256": "d2c4a46e377c0d4893df16945e21647e887b19260c449e412c8d21c4a5869b1e"
+    },
+    {
+      "path": "images/solo-maruyama-pierced-c-v14.webp",
+      "bytes": 52282,
+      "sha256": "da162e8443be8c6ac68b7343044f82216b9f9eff9f327569646633d00457f881"
+    },
+    {
+      "path": "images/solo-maruyama-pierced-d-v14.webp",
+      "bytes": 49910,
+      "sha256": "48b07a3d670d333abebb0071f66742d72ddb85e2e914eeedfdebd815bf5ce0d7"
+    },
+    {
+      "path": "images/solo-menoya-izumo-magatama-n15-necklace-v16.webp",
+      "bytes": 38342,
+      "sha256": "e0676f40cc80ff51d1fb03fc8f21e4283327ea7157ff097163167f01a28da21a"
+    },
+    {
+      "path": "images/solo-mie-akoya-oh002-stud-earrings-v14.webp",
+      "bytes": 10842,
+      "sha256": "00de05d3422efec219aa42e7d6aad107a95f12092dbf64f4622cde582d3e277b"
+    },
+    {
+      "path": "images/solo-mitsusuke-higo-zogan-shizuku-pierced-earrings-v16.webp",
+      "bytes": 39272,
+      "sha256": "305eca1dfad06dd3847ab0e2811170bdf2f2208cfece5a52ddc47cfaa746ca9c"
+    },
+    {
+      "path": "images/solo-morphosphere-ultramarine-pansy-pierced-earrings-v14.webp",
+      "bytes": 193234,
+      "sha256": "efdd5016fc48d88681de5ff73d70d5c807df5f2200ea1545051e8d8562b84341"
+    },
+    {
+      "path": "images/solo-nakajima-pear-sakura-pendant-v14.webp",
+      "bytes": 47364,
+      "sha256": "6e6acd3e0b82ae6f37d8d336dac4603d1b2a3c927a1e2e79b378c0b4fc59c915"
+    },
+    {
+      "path": "images/solo-nanao-shuka-nebula-16g-earrings-v14.webp",
+      "bytes": 41744,
+      "sha256": "965e9258dea1744b432d7c2087aebe4866b599213616d18520063a780f116708"
+    },
+    {
+      "path": "images/solo-nanayosha-punu-gold-vanilla-pierced-earrings-v16.webp",
+      "bytes": 20662,
+      "sha256": "211f88ee3fcd12ae5083a68feb3f87950c38293ab798eb5c78a8633ccbaa0487"
+    },
+    {
+      "path": "images/solo-nousaku-aya-tin-pendant-v14.webp",
+      "bytes": 34608,
+      "sha256": "be6b66869d832ee3fff5304ea7348b366f7d22ae208db8d50717f11fd46eb624"
+    },
+    {
+      "path": "images/solo-nousaku-dahlia-gerbera-clip-on-earrings-v14.webp",
+      "bytes": 68940,
+      "sha256": "d2eb7e88f34b4ee6c84f2581262abb2e65bd5569ca5d7184e89d69293320efc0"
+    },
+    {
+      "path": "images/solo-rinzen-leaf-glass-pendant-v14.webp",
+      "bytes": 37316,
+      "sha256": "18b8ba8ed254c9a2fc87a7df6ec8de90575df47f66af29e1a792c20cdc0d910e"
+    },
+    {
+      "path": "images/solo-rinzen-seika-amber-pierced-earrings-v14.webp",
+      "bytes": 41940,
+      "sha256": "52c2b4778297e9e2143f2302a139429d92539d7c03d7a1bd2e98ede22ced584e"
+    },
+    {
+      "path": "images/solo-sangetsu-irodori-tombodama-earrings-v14.webp",
+      "bytes": 37806,
+      "sha256": "80916f4f089bb5abcd9ed954fec089f465f8d76a7f5cd1b221c91373c1818f24"
+    },
+    {
+      "path": "images/solo-sangetsu-irodori-tombodama-necklace-v14.webp",
+      "bytes": 38800,
+      "sha256": "2653b9bfb290b6b421c434504d63dcd288f1243b39d9dac8285e8a23876e213b"
+    },
+    {
+      "path": "images/solo-saskia-diez-drake-porcelain-cuff-v14.webp",
+      "bytes": 34706,
+      "sha256": "b84d3f6f455084e8b19fac4238564587b6b40f54b23982210a86189d6bb48ffb"
+    },
+    {
+      "path": "images/solo-senshu-pearl-stud-earrings-v14.webp",
+      "bytes": 9750,
+      "sha256": "8bfd20d3055fadb017fe0ec5e3b441bc50e7ef476432dc19d51e0eeda6709cf6"
+    },
+    {
+      "path": "images/solo-senshu-pearl-swing-earrings-v14.webp",
+      "bytes": 12756,
+      "sha256": "cc3f405f4ea12cfd9a9f38b582dbfaf0db49049d4472b3a43bcad701c59ed753"
+    },
+    {
+      "path": "images/solo-sghr-kolmio-glass-ear-cuff-v14.webp",
+      "bytes": 14850,
+      "sha256": "73ca6b76a73b12e945b0cbd9e26d6a7429ffd5da8a807c2d69475c9780f25ce3"
+    },
+    {
+      "path": "images/solo-sghr-tie-tie-glass-earrings-v14.webp",
+      "bytes": 31352,
+      "sha256": "ed8ee668b75c53a12fac2e4b718c34ca2e53750ad336839f1bdf50484d19ba23"
+    },
+    {
+      "path": "images/solo-shimadzu-satsuma-kiriko-hikari-l-pendant-v16.webp",
+      "bytes": 91488,
+      "sha256": "f5920315a9e06cf4281900fada86dae2d4005896f084847fe50ccbda156a0eb2"
+    },
+    {
+      "path": "images/solo-showen-edo-uchi-silk-bracelet-v14.webp",
+      "bytes": 79504,
+      "sha256": "a2edb4d93524873110952c05fa47030851b63ff9259fa1a099d77e536e06f392"
+    },
+    {
+      "path": "images/solo-simprich-crystal-bubble-pierced-earrings-v14.webp",
+      "bytes": 26892,
+      "sha256": "6b48e72bc1bf49ec7014da07f556d5311842608adef9db1cb3d9663c297c553d"
+    },
+    {
+      "path": "images/solo-simprich-reversible-silver-piaring-single-v14.webp",
+      "bytes": 21404,
+      "sha256": "66bbc08a0492c2acc4ad127beec74c1f0394302e5f78b87a7f0b2d88b84d0aef"
+    },
+    {
+      "path": "images/solo-simprich-reversible-topaz-ruby-chain-ring-v14.webp",
+      "bytes": 21644,
+      "sha256": "86bb3b27748a3f66ba4e1dbd7dc86872be521f76786d87be05f2d70e5230933c"
+    },
+    {
+      "path": "images/solo-simprich-rose-quartz-necklace-v14.webp",
+      "bytes": 23158,
+      "sha256": "b9fa1c833de94a44f5a06cbf3a6397ad73b4f3c21cd26c646114ab6ec82891c0"
+    },
+    {
+      "path": "images/solo-sirisiri-page-blue-enamel-pierced-earrings-r2-v14.webp",
+      "bytes": 26336,
+      "sha256": "a736495306034fedff86e9e6696b41bf172380c90900933cc9afbce866995b07"
+    },
+    {
+      "path": "images/solo-sirisiri-silver-thread-hoop-mini-v14.webp",
+      "bytes": 74676,
+      "sha256": "2671e288cff56cbc6932ed6939c65fbc0da98bd940536bf639c74914f40905a9"
+    },
+    {
+      "path": "images/solo-six-kiln-blue-bouquet-pierced-earrings-v14.webp",
+      "bytes": 45610,
+      "sha256": "16b3624fec4182561c0abdc9cc4ee002ff85aa10b16a4c5056d9fcf91fd48710"
+    },
+    {
+      "path": "images/solo-six-kiln-half-moon-earrings-v14.webp",
+      "bytes": 29230,
+      "sha256": "6b9b40d5ca73121730684e09409c8e9b0c84c4141955beed8d65c3cfa2c8fa40"
+    },
+    {
+      "path": "images/solo-somemasa-peacock-clip-on-earrings-v14.webp",
+      "bytes": 147366,
+      "sha256": "ccf72d1e58f11f0550f29ae5a56d1bde65b5159bcb4ea8d18a913c894f179dcd"
+    },
+    {
+      "path": "images/solo-sugimura-hosoge-raden-pendant-v14.webp",
+      "bytes": 45984,
+      "sha256": "98b502899b919e43d6724a85648f3429d76ba8a4aba4feba7005131b0c47d3ea"
+    },
+    {
+      "path": "images/solo-sugimura-lotus-makie-ring-v14.webp",
+      "bytes": 120454,
+      "sha256": "a87e34db3bdbdcaf428e3bd326aae7018135c95ba1f202fc596e170ea13a3b1a"
+    },
+    {
+      "path": "images/solo-sur-basic1-clear-pearl-pierced-earrings-v16.webp",
+      "bytes": 11344,
+      "sha256": "b395c39399fb9e0f99c6867508c8760b8ccc5c2349fb1a293c944c75cfb0d3f7"
+    },
+    {
+      "path": "images/solo-tamura-kaisai-enamel-ear-jewelry-v14.webp",
+      "bytes": 45910,
+      "sha256": "cb9059644abdd21cdb422a717e14ebd3fb72959ecb0b0c2122d9174eeff0a677"
+    },
+    {
+      "path": "images/solo-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16.webp",
+      "bytes": 62546,
+      "sha256": "a006c2624e241b72ef2ce49e18f77d7c09c0a4176641e6187d6292f5d3dafffe"
+    },
+    {
+      "path": "images/solo-toytoy-ninkari-nikuri-earrings-v14.webp",
+      "bytes": 52450,
+      "sha256": "83b5e6d7355ee90fa74c887307686644cc316117996901ab120a8cc2356390ba"
+    },
+    {
+      "path": "images/solo-toytoy-sirokani-pe-silver-necklace-v14.webp",
+      "bytes": 27020,
+      "sha256": "085cbbdc3b102cec4a84724eb1fa8382c31d80f15be3ff0afe2ec2d1380a71af"
+    },
+    {
+      "path": "images/solo-yadome-akita-rice-silver-pierced-earrings-v16.webp",
+      "bytes": 97500,
+      "sha256": "1f4a7cdf777826cb8dfa10c3a164203d766e02a68949ea9c8f2452e72ebebfe7"
+    },
+    {
+      "path": "images/solo-yoboty-inshu-washi-indigo-long-nonhole-earrings-v16.webp",
+      "bytes": 25202,
+      "sha256": "84eb9b0e0afcf947034a900fb8af791a121bb257c705627e76d593cd8a25065c"
+    },
+    {
+      "path": "images/solo-yukieglass-mint-veil-earrings-v14.webp",
+      "bytes": 22266,
+      "sha256": "a56e9b910654fc3f4b95398eabd43c11afdd04bc9b870fe5b00b0aca45465715"
+    },
+    {
+      "path": "images/solo-yukieglass-rouge-veil-earrings-v14.webp",
+      "bytes": 45486,
+      "sha256": "3e99cc069be0a0c64474476138d8ce084d61ae698b23b28328296277f1f3e18f"
+    },
+    {
+      "path": "images/somemasa-peacock-clip-on-earrings-styling-v13.webp",
+      "bytes": 93640,
+      "sha256": "ecefd360d6303c3d1f1a93199370367572cb8779887a209514baadf8d78461b9"
+    },
+    {
+      "path": "images/styling-applause-awa-indigo-pearl-clip-on-earrings-v16.webp",
+      "bytes": 68602,
+      "sha256": "8fa8a81a9210f2ab6666b21936b520f63311b76e137c5ace8bdb911dcb55ae7d"
+    },
+    {
+      "path": "images/styling-earth-hiroshima-origami-crane-chain-earrings-v16.webp",
+      "bytes": 60058,
+      "sha256": "bdb09652065e2f8b59038117620cfeb384b798b9b42e18900ad20c9c5dbd8526"
+    },
+    {
+      "path": "images/styling-menoya-izumo-magatama-n15-necklace-v16.webp",
+      "bytes": 77780,
+      "sha256": "536ddc22a6f7b049805f6b4a91ae9047c9ae3ee668abd0e61d5e34f902324878"
+    },
+    {
+      "path": "images/styling-mitsusuke-higo-zogan-shizuku-pierced-earrings-v16.webp",
+      "bytes": 77702,
+      "sha256": "745396a3244fc0c599df165d3e3469fa889c5accf1344caa45ae6eb6456ee178"
+    },
+    {
+      "path": "images/styling-nanayosha-punu-gold-vanilla-pierced-earrings-v16.webp",
+      "bytes": 87440,
+      "sha256": "06fa2967cf252621a849b97f2d2ed13f6275416bd5ccdae11139f0257579267e"
+    },
+    {
+      "path": "images/styling-shimadzu-satsuma-kiriko-hikari-l-pendant-v16.webp",
+      "bytes": 81818,
+      "sha256": "b7bb401c87c5a3df32ab58c8588f47fa1879496dbca99bbd05ccce2bacc2e4e5"
+    },
+    {
+      "path": "images/styling-sur-basic1-clear-pearl-pierced-earrings-v16.webp",
+      "bytes": 78122,
+      "sha256": "4621a9bbc995e2a61c35621cacd2cde05e0a503306656350240b92ac76243603"
+    },
+    {
+      "path": "images/styling-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16.webp",
+      "bytes": 72682,
+      "sha256": "0c0f9de0eee38df8cc7d3c4c5f74582b74ab833d4fb01e23ab245d141f182fea"
+    },
+    {
+      "path": "images/styling-yadome-akita-rice-silver-pierced-earrings-v16.webp",
+      "bytes": 79996,
+      "sha256": "8c3007d32da7f813446fd741b3128c129e35f9a543960c49f8eeee0b5dbe890e"
+    },
+    {
+      "path": "images/styling-yoboty-inshu-washi-indigo-long-nonhole-earrings-v16.webp",
+      "bytes": 89292,
+      "sha256": "0d4ccdb4a916b6cf46794358e69e4c7f6beb298b0b40f55dd6c1a76df39201e5"
+    },
+    {
+      "path": "images/sugimura-lotus-makie-ring-styling-v9.webp",
+      "bytes": 66694,
+      "sha256": "52ffcb4962b65cf5ffda42c172c7f9e281c98d7a2904c5843fbdc815dfc93c36"
+    },
+    {
+      "path": "images/sugimura-raden-flower-pendant-styling-v9.webp",
+      "bytes": 79976,
+      "sha256": "a9e99897661386c6df1a8f75751ba58ef4f6d11777d950996e8f73a12854aabd"
+    },
+    {
+      "path": "images/tamura-kaisai-enamel-ear-jewelry-styling-v13.webp",
+      "bytes": 93844,
+      "sha256": "064e3ff458ae2051503bdee8f140e137fbc12826bd937bf832a0e01b42e22f2d"
+    },
+    {
+      "path": "images/toytoy-ninkari-nikuri-earrings-styling-v13.webp",
+      "bytes": 91044,
+      "sha256": "1f91e15c4b85876f7de43b90d9032b3110d2c5c6e6a489c0f347b97f93e32774"
+    },
+    {
+      "path": "images/toytoy-sirokani-pe-silver-necklace-styling-v13.webp",
+      "bytes": 79806,
+      "sha256": "a795108675e5588e68ebceafe21a408fcef3979cf377a35cb7580471cb0eed06"
+    },
+    {
+      "path": "images/yosegi-bar-styling-v9.webp",
+      "bytes": 104398,
+      "sha256": "582fe36ebc0596254ced7dde0052532d7be11651dbe078138d759ac266087ab5"
+    },
+    {
+      "path": "images/yosegi-pendant-styling-v9.webp",
+      "bytes": 82082,
+      "sha256": "c6a15efcf482620555c3e355571a9c97c3271029858be8876d9181b69da1001e"
+    },
+    {
+      "path": "images/yosegi-star-styling-v9.webp",
+      "bytes": 87782,
+      "sha256": "a39d6974e9586eb082115c1e9e288173a068646cad2930d07da4173fe7aea09a"
+    },
+    {
+      "path": "images/yukie-mint-glass-styling-v9.webp",
+      "bytes": 89474,
+      "sha256": "a48b1ffc189f52a29e29624a905d0143780130b6f8a0e524547b90df0742e8f3"
+    },
+    {
+      "path": "images/yukie-rouge-glass-styling-v9.webp",
+      "bytes": 78656,
+      "sha256": "ca33f3c867d75220b039312522aeb5746d3b3ecb947c2230eb7c5dad9ab3f42c"
+    },
+    {
+      "path": "index.html",
+      "bytes": 6263,
+      "sha256": "dfd342b82caf2c130f45d59c5c08d35da9da06f2f205a13e45e8ca2b2415acc5"
+    },
+    {
+      "path": "ja/about/index.html",
+      "bytes": 18103,
+      "sha256": "ffdf2a8c924608289f72de36f3b4ed3dbf4374b99da3005d59630ec2a6188ff7"
+    },
+    {
+      "path": "ja/affiliate-disclosure/index.html",
+      "bytes": 18208,
+      "sha256": "ce0955a9ec7ad15b226290659a0e44d7f7d3b10a91ebeff5142fba9e1e8fbe7d"
+    },
+    {
+      "path": "ja/crafts/ainu-pattern-jewelry/index.html",
+      "bytes": 27826,
+      "sha256": "34113c80045cf50307c66e5ba4048226e7e9e2dfb1277d3137dd77c214def1a2"
+    },
+    {
+      "path": "ja/crafts/akita-silver-filigree/index.html",
+      "bytes": 25737,
+      "sha256": "5fe0d2f4745de79c9db4e91e098db99f90088c2263b2950220bd8389ccc00542"
+    },
+    {
+      "path": "ja/crafts/awa-indigo-pearl-jewelry/index.html",
+      "bytes": 26110,
+      "sha256": "766cab7cdf16a8204ef923fdede51ab5567e50b1888fdbf85ca01052416b34a1"
+    },
+    {
+      "path": "ja/crafts/basse-taille-enamel/index.html",
+      "bytes": 25088,
+      "sha256": "b9c17cd9ebce47ac327b81806201bd74a4da318bcf13e9b308b5c66025706b77"
+    },
+    {
+      "path": "ja/crafts/burner-worked-glass/index.html",
+      "bytes": 37019,
+      "sha256": "a07d362a448cabfe4c77db780ba7f39326fc264d8d35ac57776594ba53fc6e0d"
+    },
+    {
+      "path": "ja/crafts/hakone-yosegi/index.html",
+      "bytes": 42784,
+      "sha256": "11561c68640eba491472823db805985255aae060eae024abfc916663be5f5070"
+    },
+    {
+      "path": "ja/crafts/higo-zogan/index.html",
+      "bytes": 24937,
+      "sha256": "618ff567d0c346231d9cb5204ac0792f019fee954c0263ee1bc4bbeb615e0da6"
+    },
+    {
+      "path": "ja/crafts/hiroshima-origami-jewelry/index.html",
+      "bytes": 26363,
+      "sha256": "dd870fd2b97a35c9d2f60021f5864ebe97eac5f6de7aeedf620f478674ca3e07"
+    },
+    {
+      "path": "ja/crafts/imari-arita-ware/index.html",
+      "bytes": 31128,
+      "sha256": "5fcfb161c169f10bb2a07702946a46ea9b0df1c053ea8327736db580b8e20fc9"
+    },
+    {
+      "path": "ja/crafts/inshu-washi-jewelry/index.html",
+      "bytes": 26867,
+      "sha256": "5f9972814a26e3f47ea848026e781f7a3221963811d51161bfa4ea8744820d1e"
+    },
+    {
+      "path": "ja/crafts/ise-shima-akoya-jewelry/index.html",
+      "bytes": 25694,
+      "sha256": "ce878b74a81d16e80dd04a87605a5d1669c377893239440733761292e7f50da9"
+    },
+    {
+      "path": "ja/crafts/izumi-tombodama/index.html",
+      "bytes": 28127,
+      "sha256": "c513f027572de1617e40d9e92b1c31242dcaf1de4723db85137bfd887c48ddc5"
+    },
+    {
+      "path": "ja/crafts/izumo-magatama-jewelry/index.html",
+      "bytes": 25842,
+      "sha256": "c0db38668ce38cdbe2de248e2843d53ce83294d92fa21c3fc2af877c82347763"
+    },
+    {
+      "path": "ja/crafts/kazarikanagu/index.html",
+      "bytes": 27512,
+      "sha256": "716a17f066253e1d10881ca9700bf6e14e96a7d2ec4e8bacf02e406350d2edd6"
+    },
+    {
+      "path": "ja/crafts/kiriko/index.html",
+      "bytes": 27856,
+      "sha256": "afcb007d687898be036fb67f45f235c462f0a157c9bcdedd4bad0cb86dfb886e"
+    },
+    {
+      "path": "ja/crafts/kofu-jewelry/index.html",
+      "bytes": 34389,
+      "sha256": "ef2b60b02eb8f69740332343ec5f83fdc297e3ef48499e6e79fc0071a21d6ca3"
+    },
+    {
+      "path": "ja/crafts/kujukuri-studio-glass/index.html",
+      "bytes": 27683,
+      "sha256": "64f62f99fe905d29aa5100be521ae9d9bc9caf27582132e5d791bc1c707eff14"
+    },
+    {
+      "path": "ja/crafts/kurume-kasuri-accessories/index.html",
+      "bytes": 25179,
+      "sha256": "389c0e1d71b96a1ca1e1e132ff9b1a3d1a2f5cb818041a695bdc61d084878ee2"
+    },
+    {
+      "path": "ja/crafts/kyo-kumihimo/index.html",
+      "bytes": 25306,
+      "sha256": "ced45a5a9331191fee4f4925e31f4b6f6388fe62d6155d22ba3f88cb37f56e0b"
+    },
+    {
+      "path": "ja/crafts/kyo-zogan/index.html",
+      "bytes": 24943,
+      "sha256": "9f358e0bc95a5b5097b340cb1ad8e02e22e4e8a96ed7701ba839f37e1b00eb0f"
+    },
+    {
+      "path": "ja/crafts/kyoto-mizuhiki/index.html",
+      "bytes": 24737,
+      "sha256": "edfcd9d15f73cbf2261bd4a64cbf0b8470af21b02a4ba9dac1cace03e9ddf6eb"
+    },
+    {
+      "path": "ja/crafts/kyoto-yuzen/index.html",
+      "bytes": 28064,
+      "sha256": "0b1e9d91642361872cc3272e4740e2376d400b17ec79eb6675ee14e86dc7306a"
+    },
+    {
+      "path": "ja/crafts/mino-ceramic-jewelry/index.html",
+      "bytes": 25946,
+      "sha256": "942c2cf7b008aae224f7ee479dfffe04c028ecc86e8b7747e35a5f6251efb5cb"
+    },
+    {
+      "path": "ja/crafts/nara-raden-makie/index.html",
+      "bytes": 28873,
+      "sha256": "140a47a9225d72a8d13f43a3177955e49651e4c6db2259f91b923deb99001cd3"
+    },
+    {
+      "path": "ja/crafts/otaru-glass/index.html",
+      "bytes": 27497,
+      "sha256": "551a88ddc0e4b3fd939298086a2d3b7ba1b4096dd4afe14be5b43aaf77df865a"
+    },
+    {
+      "path": "ja/crafts/owari-cloisonne/index.html",
+      "bytes": 32125,
+      "sha256": "1f46266f7b9751f47f5295973a9d4f4eae1592f0efb13cf10ce9004c5d4e7245"
+    },
+    {
+      "path": "ja/crafts/ryukyu-glass-fragment-jewelry/index.html",
+      "bytes": 26423,
+      "sha256": "b16ada61af8c4ce25f05f3e85094e4995954cf90d926e2c04dcc0990c61f864a"
+    },
+    {
+      "path": "ja/crafts/sabae-eyeglass-acetate-jewelry/index.html",
+      "bytes": 25969,
+      "sha256": "0dc579ddc642efb538fbec3be6b67d39cbc1787a1e3fe4db3d0368e97619ad90"
+    },
+    {
+      "path": "ja/crafts/satsuma-kiriko/index.html",
+      "bytes": 26580,
+      "sha256": "38c0983ca7ac0ce8c97de97bee73ef6e7147dff078b905fafb66e10f5f5d29b1"
+    },
+    {
+      "path": "ja/crafts/senshu-shell-pearl/index.html",
+      "bytes": 29172,
+      "sha256": "c8811b04d9589313d4cf9a8335ece21c44dab57ebdefdeee4a0e373cf6822401"
+    },
+    {
+      "path": "ja/crafts/silver-thread-work/index.html",
+      "bytes": 25140,
+      "sha256": "0a2b5b5c69d81574727ebcce6680ca63fc2f012c590ec9ad3c4ca2fd4ffb7eff"
+    },
+    {
+      "path": "ja/crafts/silver-work/index.html",
+      "bytes": 24770,
+      "sha256": "f92016e2f2b02a4f0c0b77d0966a9850b4ef1946e8cb6542ada96947a4dca1b3"
+    },
+    {
+      "path": "ja/crafts/takaoka-tin-casting/index.html",
+      "bytes": 27335,
+      "sha256": "f69d9c0300b88156ff996f9c6ca0cb30d21093fb43a7d77b0d421a3602e7887f"
+    },
+    {
+      "path": "ja/crafts/yame-urushi/index.html",
+      "bytes": 24489,
+      "sha256": "0f0cb4f9eb614a4ae0ae168d34fa4cb35d9d0459f80a2c9aa850cf2851504ba8"
+    },
+    {
+      "path": "ja/editorial-policy/index.html",
+      "bytes": 19704,
+      "sha256": "97f13062dfc8fc96b02f1c554de023b92851d9f0d52ecc9f57dd1869704f2680"
+    },
+    {
+      "path": "ja/index.html",
+      "bytes": 178928,
+      "sha256": "309e6bf7ef999fa382c3921192d6e5643722cfce0994273748dd193e1e18b81e"
+    },
+    {
+      "path": "ja/journal/buying-from-overseas/index.html",
+      "bytes": 2506,
+      "sha256": "4266f45ee193e901bee5e030569c2f73e41a16d790f0827fcfa6c5e4dbfa15e0"
+    },
+    {
+      "path": "ja/journal/everyday-craft-earrings/index.html",
+      "bytes": 2506,
+      "sha256": "4266f45ee193e901bee5e030569c2f73e41a16d790f0827fcfa6c5e4dbfa15e0"
+    },
+    {
+      "path": "ja/journal/hakone-yosegi-non-pierced-earrings/index.html",
+      "bytes": 2626,
+      "sha256": "095e35206f7f8f3962fbe1586b1dc945aec23d1301661d49be71bf395e80c96e"
+    },
+    {
+      "path": "ja/journal/hakone-yosegi-pierced-earrings/index.html",
+      "bytes": 2650,
+      "sha256": "3e470690f025e09760710fdfe0df6add7e4dc6ccd5717352b33926f4208aa3b5"
+    },
+    {
+      "path": "ja/journal/index.html",
+      "bytes": 2506,
+      "sha256": "4266f45ee193e901bee5e030569c2f73e41a16d790f0827fcfa6c5e4dbfa15e0"
+    },
+    {
+      "path": "ja/journal/pierced-or-clip-on/index.html",
+      "bytes": 2506,
+      "sha256": "4266f45ee193e901bee5e030569c2f73e41a16d790f0827fcfa6c5e4dbfa15e0"
+    },
+    {
+      "path": "ja/journal/understanding-yosegi/index.html",
+      "bytes": 2545,
+      "sha256": "454397187c2cbcff1189b73206d7d995aa1d5b3772adea349f7456ee8de1fc1d"
+    },
+    {
+      "path": "ja/makers/arcos/index.html",
+      "bytes": 28100,
+      "sha256": "78c3a091fd9f269f2059f69e4cb0e1646566f5393faca875e0080a75458d6c46"
+    },
+    {
+      "path": "ja/makers/checos/index.html",
+      "bytes": 25472,
+      "sha256": "15f87a38e71a81cb2b0f631061e169663c0e39b494defd665e2dc5a75cf010c1"
+    },
+    {
+      "path": "ja/makers/coyorimi/index.html",
+      "bytes": 24790,
+      "sha256": "fc16586a30b5464a6c121c151f89cce7c938c5f68ae323fe92c7bdba6a74f6d0"
+    },
+    {
+      "path": "ja/makers/earth-hiroshima/index.html",
+      "bytes": 26792,
+      "sha256": "076bdab1f5b4133a6066b6ebf538382f61ee5bed013a63364fb90513ec62bd29"
+    },
+    {
+      "path": "ja/makers/egaho/index.html",
+      "bytes": 24906,
+      "sha256": "4cb7fb3bfab15ef2351dbb8faba98d759888b0c72a8222741d10049143a0ff68"
+    },
+    {
+      "path": "ja/makers/hamamatsuya/index.html",
+      "bytes": 30814,
+      "sha256": "9673b10d40e464157a1f78a8acba211de1c7938e983d8d998de81e1ddb2a6300"
+    },
+    {
+      "path": "ja/makers/hario-lampwork-factory/index.html",
+      "bytes": 26230,
+      "sha256": "cb98d3dd3a5fa76ebe0f99cc4c6b82dcb32e490a0d13ee2b2abb28c755f5105a"
+    },
+    {
+      "path": "ja/makers/iwaya-urushi/index.html",
+      "bytes": 24597,
+      "sha256": "13f2164546230d4d29ae0ff0fb24c5409fda0a0b6c02fc0908915a3dddcbf19b"
+    },
+    {
+      "path": "ja/makers/jewelry-applause/index.html",
+      "bytes": 25981,
+      "sha256": "4132e014f01690da3d0cbaaa08d7a99f1cb480375b08fffa5d532969b597fe71"
+    },
+    {
+      "path": "ja/makers/kato-shippo/index.html",
+      "bytes": 28632,
+      "sha256": "737c6fe89a7fda3992b1d3fb32dc268e075a24c6014ef429bda27b6a32510bfd"
+    },
+    {
+      "path": "ja/makers/kazarino/index.html",
+      "bytes": 28025,
+      "sha256": "08a40f6f1779fde2e7b321e4c946cc1359ae3c235ce4cd6e973340c9b3881995"
+    },
+    {
+      "path": "ja/makers/maker-unidentified-maruyama/index.html",
+      "bytes": 34398,
+      "sha256": "caaf2875fb3a39cd995fd845d4bc1577e7627604d5f3afd4ffe6fa8e444c1af9"
+    },
+    {
+      "path": "ja/makers/menoya/index.html",
+      "bytes": 25843,
+      "sha256": "0a4501773f57af3d64c2d0f189e74a97fdd0ac578da924ab71a75ba3416aa20e"
+    },
+    {
+      "path": "ja/makers/mie-pearl-union/index.html",
+      "bytes": 25971,
+      "sha256": "00e414310ed2f6b9e3fac44431a9ccc7506688fd387d5d163d4ddc1d6da9d562"
+    },
+    {
+      "path": "ja/makers/mitsusuke/index.html",
+      "bytes": 25529,
+      "sha256": "67eddccc184bb90384129584dff3fc21446c406425876e0b51f9ac35d22c386e"
+    },
+    {
+      "path": "ja/makers/morphosphere/index.html",
+      "bytes": 25728,
+      "sha256": "d0d5c30f96665c5f9f9bc9a7842f6064f2eda2b68b07d5cfdb063e5168a5f8d2"
+    },
+    {
+      "path": "ja/makers/nakajima-zogan/index.html",
+      "bytes": 25469,
+      "sha256": "09c3f3713a750864eeabbc3845c74ae5c976c8a5be74765ddfa207a07fbb3faf"
+    },
+    {
+      "path": "ja/makers/nanao-shuka/index.html",
+      "bytes": 25256,
+      "sha256": "1b9073df66979f23d448677e1951f5eb91133c66ba78e61929f883342397fe5c"
+    },
+    {
+      "path": "ja/makers/nanayosha/index.html",
+      "bytes": 25647,
+      "sha256": "603d905afa8581ad8095321000559fba9506c836c2c8cf8f86832b4aa87ef8d9"
+    },
+    {
+      "path": "ja/makers/nousaku/index.html",
+      "bytes": 27620,
+      "sha256": "aef19c725c4659413125f615fffa42e9894a03706bfdd88ad314ffa7ae2e68e2"
+    },
+    {
+      "path": "ja/makers/ponzu-okinawa/index.html",
+      "bytes": 25796,
+      "sha256": "1aaa3f5e9f0470178dd58a27146fe147fc899b59b4be73bbc6f48bb5ee534fc8"
+    },
+    {
+      "path": "ja/makers/premium-pearl-brand/index.html",
+      "bytes": 28966,
+      "sha256": "959e75b9ec6d5f83c7bc788ab97b79671f8e88295608d36b169a33930d6674ad"
+    },
+    {
+      "path": "ja/makers/rinzen/index.html",
+      "bytes": 28636,
+      "sha256": "fd187bffefab5cc34438373ac189817700f32cebc0e7374a29badefc63a83f87"
+    },
+    {
+      "path": "ja/makers/sangetsu-kobo/index.html",
+      "bytes": 28042,
+      "sha256": "233f7632df01194b88a5e2fdf9ea7e5b7684213ff9f9eb15f566ab91d0bc4f55"
+    },
+    {
+      "path": "ja/makers/saskia-diez-2016/index.html",
+      "bytes": 26148,
+      "sha256": "b1f308638046c4c2b64dc5b5de1b7b74474c3afd4f595f221bd2307ecf633fa3"
+    },
+    {
+      "path": "ja/makers/sghr-sugahara/index.html",
+      "bytes": 27585,
+      "sha256": "d1cd20ec7c278ba319158a5d62bccb3e5efbb2b39beceb786d37d1ad957028cb"
+    },
+    {
+      "path": "ja/makers/shimadzu-satsuma-kiriko/index.html",
+      "bytes": 26657,
+      "sha256": "4272f755b2888dcf36bbb06883d049d829d6647a044bbb239d6c78055cf7db5a"
+    },
+    {
+      "path": "ja/makers/showen-kumihimo/index.html",
+      "bytes": 25255,
+      "sha256": "764c767f42f120de464acc63ceaa1473aa82ca0d52cd7a13999563aa8d4f9995"
+    },
+    {
+      "path": "ja/makers/simprich/index.html",
+      "bytes": 34220,
+      "sha256": "169a71a168f59d52f4913607ba54e4f680cbe9e933e82cf3d5239470ff23c183"
+    },
+    {
+      "path": "ja/makers/sirisiri/index.html",
+      "bytes": 28042,
+      "sha256": "b50bc1de94fdb8c20f37aa45c72e364b8988a83bb8a78f2773134193ba839781"
+    },
+    {
+      "path": "ja/makers/six-kiln/index.html",
+      "bytes": 29214,
+      "sha256": "17c5645cde35bfc675b63b35c0964abb0750076945d2f2eb2eb43461dbb42561"
+    },
+    {
+      "path": "ja/makers/somemasa-sextile/index.html",
+      "bytes": 25149,
+      "sha256": "4403c828e4a561b4b1e4a831c229b960182254e99b6e03ee72ad61c660039535"
+    },
+    {
+      "path": "ja/makers/sur-tsugi/index.html",
+      "bytes": 25606,
+      "sha256": "71768ef64f7b3b55bceda358ca39003bc40ea0206f589a8188b37f61d6fc1b4a"
+    },
+    {
+      "path": "ja/makers/tamura-shippo/index.html",
+      "bytes": 24574,
+      "sha256": "9bcddab386996566232c39f05f942fcc0bdfa60f4126f38667717fefdcfe5bd2"
+    },
+    {
+      "path": "ja/makers/toytoy/index.html",
+      "bytes": 28209,
+      "sha256": "a13ee7a809f4b29751cdd24c1af943070202c604c38fadd88f143e514935216f"
+    },
+    {
+      "path": "ja/makers/yadome-silver-atelier/index.html",
+      "bytes": 25647,
+      "sha256": "2c8fb3539e2bf0e2207f3c540341ad7c853a72c9512bd0d5a085c53779ecbb94"
+    },
+    {
+      "path": "ja/makers/yamato-urushi-sugimura/index.html",
+      "bytes": 27835,
+      "sha256": "9e229ac7710faea57592fb75572fb05d83f8c43564f6f630dd2c80d8a7a71cac"
+    },
+    {
+      "path": "ja/makers/yoboty-tsp/index.html",
+      "bytes": 26885,
+      "sha256": "da09fc6b13e3c590c7466b7e8c7258e7f33fe003f67ddaf46ead06a45a0ee6e8"
+    },
+    {
+      "path": "ja/makers/yukie-glass/index.html",
+      "bytes": 27388,
+      "sha256": "e1271f9500403de18de5cc65ff3532c80c10e22a66c062f6b3ea0255333e81e0"
+    },
+    {
+      "path": "ja/objects/applause-awa-indigo-pearl-clip-on-earrings/index.html",
+      "bytes": 66813,
+      "sha256": "adeda1ece1a82ea88e72c2517327091315f06c27c9479c6bad20ecd779c5e98b"
+    },
+    {
+      "path": "ja/objects/arcos-cosmic-glass-bracelet/index.html",
+      "bytes": 65019,
+      "sha256": "364f4d7b1446b53a0f14a4e2baf2c927a06519c51b8b43370f2e84332fca6fb1"
+    },
+    {
+      "path": "ja/objects/arcos-cosmic-spiral-pendant/index.html",
+      "bytes": 64768,
+      "sha256": "a8d36a820ca0dfac4c0f0b340a628c398d87532c1e8e66f740ab73cadb673955"
+    },
+    {
+      "path": "ja/objects/checos-japanese-apricot-pierced-earrings/index.html",
+      "bytes": 61813,
+      "sha256": "0b157d3cb02c54d21560b18370fa83d40706e770f90a253f8ea94aabe50c3751"
+    },
+    {
+      "path": "ja/objects/coyorimi-tamamusubi-clip-on-earrings/index.html",
+      "bytes": 65987,
+      "sha256": "b1e1bb4e413a06288f1fa851743af406d72908348344e87218162bd02a2dea47"
+    },
+    {
+      "path": "ja/objects/earth-hiroshima-origami-crane-chain-earrings/index.html",
+      "bytes": 68180,
+      "sha256": "436e1af576aec06b0508c1b9526a6cde727fa6998aa3b1bbf9abe9eff7e897c9"
+    },
+    {
+      "path": "ja/objects/egaho-gathered-kurume-kasuri-ear-jewelry/index.html",
+      "bytes": 59352,
+      "sha256": "aec0ced869ac4a43637ab35c05b75123a7d8f0e25b33c8e283e36e18bbc6367b"
+    },
+    {
+      "path": "ja/objects/hamamatsuya-muku-yosegi-pendant/index.html",
+      "bytes": 64830,
+      "sha256": "afa868a4ccd9e822b10998e8b6d11c0aa8a1e5319252191c46134e3d77aeeb27"
+    },
+    {
+      "path": "ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/index.html",
+      "bytes": 65407,
+      "sha256": "d63406de39a435f69d2f1be67936ca88a4761382f401a4ed6e0593019c77550a"
+    },
+    {
+      "path": "ja/objects/hamamatsuya-yosegi-non-pierced-earrings/index.html",
+      "bytes": 64836,
+      "sha256": "86aea23d5e1441b08e84b3529baf56b5f86049c85612898908642a31d929358a"
+    },
+    {
+      "path": "ja/objects/hario-little-tears-clip-on-earrings/index.html",
+      "bytes": 67912,
+      "sha256": "f0cf56b09cd2c02de4efe4fcff8261e2a45c2ffdab67cda968c1dfac6f06389b"
+    },
+    {
+      "path": "ja/objects/index.html",
+      "bytes": 403078,
+      "sha256": "6d61c90628b64b11076ab8d7aabcb92d2b62c4875b0fb164ecce5233c36ac151"
+    },
+    {
+      "path": "ja/objects/iwaya-urushi-9mm-hook-earrings/index.html",
+      "bytes": 63629,
+      "sha256": "225be6bf0e102e09ba72490fac9225319b72f3bafd4501ac63250628e9131e9f"
+    },
+    {
+      "path": "ja/objects/kato-suke-drop-pierced-earrings/index.html",
+      "bytes": 66613,
+      "sha256": "890a562d80738f352f0cda0dcb2445c8f81d864b2a4418651545a3924c2b3801"
+    },
+    {
+      "path": "ja/objects/kato-suke-round-ring/index.html",
+      "bytes": 68306,
+      "sha256": "202202cd91439c9db652a1765d0918bedab45d92f1a0ba972f58d0e96e63ea3d"
+    },
+    {
+      "path": "ja/objects/kazarino-hanabishi-copper-earrings/index.html",
+      "bytes": 67524,
+      "sha256": "db310e5c2f5f9f4ee2847b79dbb3a44ab0a05f7f0852fdce79bf8b6a29f68cbb"
+    },
+    {
+      "path": "ja/objects/kazarino-shippo-pattern-brass-bangle/index.html",
+      "bytes": 67332,
+      "sha256": "93dcb61223e24185e5cb9ea25435dc2462705b6293afa44297bc80d1de7bc1d3"
+    },
+    {
+      "path": "ja/objects/maruyama-yosegi-non-pierced-c/index.html",
+      "bytes": 66922,
+      "sha256": "960d1d3924c2e33e4a7223d3f005873eaf561b89cfcf0eb2690262170b13b739"
+    },
+    {
+      "path": "ja/objects/maruyama-yosegi-non-pierced-d/index.html",
+      "bytes": 66606,
+      "sha256": "4ca573c5eaaa104b1fe68c55d0f207a84fb0124f134cf74ea5a8367b9fe76d78"
+    },
+    {
+      "path": "ja/objects/maruyama-yosegi-pierced-c/index.html",
+      "bytes": 66551,
+      "sha256": "304d5bb67d8d0a9564fa05a674141bf20cef89bfc290707c678a93ff90c629c9"
+    },
+    {
+      "path": "ja/objects/maruyama-yosegi-pierced-d/index.html",
+      "bytes": 66583,
+      "sha256": "4fae78a5a841ff0fe3f021ffb510e7518ce3b5f77a655844cab8da4701869622"
+    },
+    {
+      "path": "ja/objects/menoya-izumo-magatama-n15-necklace/index.html",
+      "bytes": 65671,
+      "sha256": "d6dd19c492798109e3f8d815345153cdc48670a7fbc1fc9badbd4dcd23846fd3"
+    },
+    {
+      "path": "ja/objects/mie-akoya-oh002-stud-earrings/index.html",
+      "bytes": 61153,
+      "sha256": "dbb2d068b17c5d7e814134dd0beaf581d00cc45a33131e670551aafff0e41c5d"
+    },
+    {
+      "path": "ja/objects/mitsusuke-higo-zogan-shizuku-pierced-earrings/index.html",
+      "bytes": 65402,
+      "sha256": "441e27823905d6f7dfdf8e89f23069654037f78f1263c3fa82588f3e81a298d8"
+    },
+    {
+      "path": "ja/objects/morphosphere-ultramarine-pansy-pierced-earrings/index.html",
+      "bytes": 76477,
+      "sha256": "348e9b3926832e28592fc7e78f5e2cf99d28fc9a87badd325469016fe0113df6"
+    },
+    {
+      "path": "ja/objects/nakajima-pear-sakura-pendant/index.html",
+      "bytes": 64981,
+      "sha256": "ca7d6f00f82ff431a43ffdd5768015fb1c661b8b37b4c8e40709eb685dc71c36"
+    },
+    {
+      "path": "ja/objects/nanao-shuka-nebula-16g-earrings/index.html",
+      "bytes": 60557,
+      "sha256": "972e00de5fc2bdd6db5b7bc0d8b47daea548581b1662d1cd8346bf5be57655e9"
+    },
+    {
+      "path": "ja/objects/nanayosha-punu-gold-vanilla-pierced-earrings/index.html",
+      "bytes": 65857,
+      "sha256": "ee4428f9535b90ad6c8d7eb71726c8fcf07b5b0c344a60f88fc98fc2d9ed193c"
+    },
+    {
+      "path": "ja/objects/nousaku-aya-tin-pendant/index.html",
+      "bytes": 64705,
+      "sha256": "6610eae19e199acc24ea7bbb8ee1e73f614106de63702c53a4c2c9164e7e761f"
+    },
+    {
+      "path": "ja/objects/nousaku-dahlia-gerbera-clip-on-earrings/index.html",
+      "bytes": 65290,
+      "sha256": "cea53a585d8d0777a0d42939e04b12dcac4c9babc6ef883581f38fb034db238f"
+    },
+    {
+      "path": "ja/objects/rinzen-leaf-glass-pendant/index.html",
+      "bytes": 67745,
+      "sha256": "1e4a6935ec572a62496ea6e31744b554f998f5a6b11bed29247cb6263875f277"
+    },
+    {
+      "path": "ja/objects/rinzen-seika-amber-pierced-earrings/index.html",
+      "bytes": 67096,
+      "sha256": "df88e571c81f7a8b3a00a0310b3d7caf62077319ef988e807ddf2a342f0298ab"
+    },
+    {
+      "path": "ja/objects/sangetsu-irodori-tombodama-earrings/index.html",
+      "bytes": 66896,
+      "sha256": "31451eb97fe5345a7d0cc04b3489ce5a13d30845e4d98537557331a63b9b92ae"
+    },
+    {
+      "path": "ja/objects/sangetsu-irodori-tombodama-necklace/index.html",
+      "bytes": 66678,
+      "sha256": "44093f73862047955d37f40b3408c3745fd262d46c28eeb00b6cbaf2dc100c0d"
+    },
+    {
+      "path": "ja/objects/saskia-diez-drake-porcelain-cuff/index.html",
+      "bytes": 68043,
+      "sha256": "aea6cdfbdf4b6b8401d3190e56013fb00d792339d6652965a370b02aa89251c2"
+    },
+    {
+      "path": "ja/objects/senshu-pearl-stud-earrings/index.html",
+      "bytes": 60719,
+      "sha256": "a3bd273044a98cbc863ac4737d5327368f2b53bc355f1856ac14bde8f76c53ce"
+    },
+    {
+      "path": "ja/objects/senshu-pearl-swing-earrings/index.html",
+      "bytes": 60780,
+      "sha256": "ef96e3ca293ba7c8e24e608c69bf647df8f4b864ab08dd7ea40034985dea5034"
+    },
+    {
+      "path": "ja/objects/sghr-kolmio-glass-ear-cuff/index.html",
+      "bytes": 64612,
+      "sha256": "a7ec14689700478c4dda7e43fb34533d5116c2445b34a6364c652bdfd9b16384"
+    },
+    {
+      "path": "ja/objects/sghr-tie-tie-glass-earrings/index.html",
+      "bytes": 65035,
+      "sha256": "0a6283bf21fe06a75e5ab5ac64e5457de6b1b2e8c6918aed2e61236f07b04d86"
+    },
+    {
+      "path": "ja/objects/shimadzu-satsuma-kiriko-hikari-l-pendant/index.html",
+      "bytes": 67993,
+      "sha256": "60b5a0e206783fa00448cf6b6bbabdc04bf1e9e617433e806cf651ca4942bea9"
+    },
+    {
+      "path": "ja/objects/showen-edo-uchi-silk-bracelet/index.html",
+      "bytes": 66070,
+      "sha256": "655361e577a77b53a9c3714c8b250247c7ba670ea2dccfcd3e7630d03a94f2d6"
+    },
+    {
+      "path": "ja/objects/simprich-crystal-bubble-pierced-earrings/index.html",
+      "bytes": 67755,
+      "sha256": "7bdc0c82c219d99c2e78b4597040c03b13e6a5b53c70587c6a55cab5dbaf24e4"
+    },
+    {
+      "path": "ja/objects/simprich-reversible-silver-piaring-single/index.html",
+      "bytes": 67677,
+      "sha256": "8a952bf939e0cd8349cf466e46cf0d1c79bfe9ff91d63a3b1f8ac301acf89342"
+    },
+    {
+      "path": "ja/objects/simprich-reversible-topaz-ruby-chain-ring/index.html",
+      "bytes": 67336,
+      "sha256": "d5eaf9dfe5305137affcdacd463f70002b42bb4a66b82a0eeb86f29fe7bbc9ff"
+    },
+    {
+      "path": "ja/objects/simprich-rose-quartz-necklace/index.html",
+      "bytes": 68791,
+      "sha256": "02fbb0a8f90132c8b50ae27fd163c746551f7a65b2e26ac0795a5dfce0667063"
+    },
+    {
+      "path": "ja/objects/sirisiri-page-blue-enamel-pierced-earrings/index.html",
+      "bytes": 65658,
+      "sha256": "745ce808ae8f070cc741c2d46115d04edaff061f9d9371c7df29846d067842a2"
+    },
+    {
+      "path": "ja/objects/sirisiri-silver-thread-hoop-mini/index.html",
+      "bytes": 65797,
+      "sha256": "ce3f47ca5ef4bb86c39f334c954a9b7793e615504d6fd1da99e9f2ddc29593b5"
+    },
+    {
+      "path": "ja/objects/six-kiln-blue-bouquet-pierced-earrings/index.html",
+      "bytes": 69614,
+      "sha256": "fcc5980487d754af7dc33e42881d5f13a3b46bfb26b4cac9dd3f8234bb2ca8c6"
+    },
+    {
+      "path": "ja/objects/six-kiln-half-moon-earrings/index.html",
+      "bytes": 67973,
+      "sha256": "dc1b5c8e74032bb787551062f9220e6c76cdba811aba85674f594af485669cf8"
+    },
+    {
+      "path": "ja/objects/somemasa-peacock-clip-on-earrings/index.html",
+      "bytes": 66903,
+      "sha256": "29bc342fd4c3264c026260ec0077b9bdf4d824c052258b4906eddda1104baa8f"
+    },
+    {
+      "path": "ja/objects/sugimura-hosoge-raden-pendant/index.html",
+      "bytes": 65070,
+      "sha256": "b59aaab1cbc245ec8a8e4f701bb79c98eab9079eeabbd136bb89b2da0c19f6c8"
+    },
+    {
+      "path": "ja/objects/sugimura-lotus-makie-ring/index.html",
+      "bytes": 65072,
+      "sha256": "d90865585fd3298dbc82e3fa2b4edf47acaea4d8b292ac4fd65950c2eb775d40"
+    },
+    {
+      "path": "ja/objects/sur-basic1-clear-pearl-pierced-earrings/index.html",
+      "bytes": 65477,
+      "sha256": "c5f70c96acdec61b7239e7ac899bb4984d2d1f9fd8ff379ca8bd24598bfd1ce8"
+    },
+    {
+      "path": "ja/objects/tamura-kaisai-enamel-ear-jewelry/index.html",
+      "bytes": 59106,
+      "sha256": "0e5d35fce3d1af02aa44da8d040468b7003f7adb0d6c27bf462a1cf446a3eb16"
+    },
+    {
+      "path": "ja/objects/tete-ryukyu-glass-hanagasa-heart-pierced-earrings/index.html",
+      "bytes": 66001,
+      "sha256": "73d8633fc8c9f6f30f7fc0fc64d1f6fbbc26ce46fa87da25af7700454dde0824"
+    },
+    {
+      "path": "ja/objects/toytoy-ninkari-nikuri-earrings/index.html",
+      "bytes": 67073,
+      "sha256": "a3f34aa0aa9a7b0ea192200c64423b087747f95a49201fb3372a5ee114032584"
+    },
+    {
+      "path": "ja/objects/toytoy-sirokani-pe-silver-necklace/index.html",
+      "bytes": 67352,
+      "sha256": "c6dbf36e372793aa83603da6cc9eb7e6a93f6581271de73b55ea9c71da895628"
+    },
+    {
+      "path": "ja/objects/yadome-akita-rice-silver-pierced-earrings/index.html",
+      "bytes": 65684,
+      "sha256": "2ef1dfd5429e708d30ec00a8cc5154f135e0d3af70d3040c0e0210c13dd9fae6"
+    },
+    {
+      "path": "ja/objects/yoboty-inshu-washi-indigo-long-nonhole-earrings/index.html",
+      "bytes": 68142,
+      "sha256": "3dfecf5d9d4793479f5fb5dce4eb015a3aad617ece2c1eb8eedfb156810c91e2"
+    },
+    {
+      "path": "ja/objects/yukieglass-mint-veil-earrings/index.html",
+      "bytes": 66976,
+      "sha256": "9c4874203734429fb84a5a58ed6324a88e1f1f823cf60d28cf09e83af5a1e1fc"
+    },
+    {
+      "path": "ja/objects/yukieglass-rouge-veil-earrings/index.html",
+      "bytes": 67009,
+      "sha256": "dc09055bfae7d855aeb16a6f8cc7ab7121cad7d9de0a99522e907a4a2701d40e"
+    },
+    {
+      "path": "ja/places/aichi/index.html",
+      "bytes": 41266,
+      "sha256": "34f5b0efc71ce65bf96177c0e5cbf41938e3da2707842ce439b8f33af59d8ecb"
+    },
+    {
+      "path": "ja/places/akita/index.html",
+      "bytes": 31474,
+      "sha256": "497e79f28da5712a750096b3f9511003805965a330f518ccabc367ab7a9c745e"
+    },
+    {
+      "path": "ja/places/chiba/index.html",
+      "bytes": 45589,
+      "sha256": "627d4ed27aea7870dffa34c42b0fa000b9bd07140e8ef345cc2efe87108b89ab"
+    },
+    {
+      "path": "ja/places/fukui/index.html",
+      "bytes": 31165,
+      "sha256": "3f063ab6cb9a65ebb1c6f4bd962aa2ae710cf55275047635b3621bb71a564149"
+    },
+    {
+      "path": "ja/places/fukuoka/index.html",
+      "bytes": 30756,
+      "sha256": "88b4b419f0e4f24dd9f5c847ba3c6ef85eb7c88c483e2c6f34de4d6e0f3dfa00"
+    },
+    {
+      "path": "ja/places/gifu/index.html",
+      "bytes": 31339,
+      "sha256": "1423dce59781532532b91428cf04220a12a6d84ab4b3a91903f772022bc10507"
+    },
+    {
+      "path": "ja/places/hiroshima/index.html",
+      "bytes": 31708,
+      "sha256": "e6e9495a1814d37133d067b07ae60a1f8edd18d902433c57ffa4b7fbfbb5f99e"
+    },
+    {
+      "path": "ja/places/hokkaido/index.html",
+      "bytes": 44754,
+      "sha256": "334e6e397c0b04572359ff7310e8c416f6ce0d64a510c2ebc84bf76f632c184f"
+    },
+    {
+      "path": "ja/places/index.html",
+      "bytes": 165345,
+      "sha256": "2ad284890319d9f2e8b51c711184705561d646fd957af6567c4f6c17ab2e1bfc"
+    },
+    {
+      "path": "ja/places/ishikawa/index.html",
+      "bytes": 30453,
+      "sha256": "51521da4d6b4c4c2a9ce533b578162a23514e46c3c8198d46613d0c4e8839f21"
+    },
+    {
+      "path": "ja/places/kagoshima/index.html",
+      "bytes": 32604,
+      "sha256": "3b9f9ef781959d102db8ad3c63014159f64763526abdd557b0aca02aff710e4e"
+    },
+    {
+      "path": "ja/places/kanagawa/index.html",
+      "bytes": 52068,
+      "sha256": "992f276684cb3d9a24b13671c88154d95710206c131ddb170b75a2fc5ab54824"
+    },
+    {
+      "path": "ja/places/kumamoto/index.html",
+      "bytes": 31599,
+      "sha256": "83684beda7f9b9fbcc3649b2c5c563e9794c26e2660905c2b47bcfe5bdccc046"
+    },
+    {
+      "path": "ja/places/kyoto/index.html",
+      "bytes": 57161,
+      "sha256": "61ffbe37613954ace54e23cde2bcc47172487b0886ed0e296577f1496001e7dc"
+    },
+    {
+      "path": "ja/places/mie/index.html",
+      "bytes": 32195,
+      "sha256": "c85861a1c0af50cade90522861c5013939f66667740599b08329cddf4d618f75"
+    },
+    {
+      "path": "ja/places/nara/index.html",
+      "bytes": 41432,
+      "sha256": "3cb4666425fb0f44b5540e404e9cbc3e46c4bdff2d914c5c4782e3d10ffd26d9"
+    },
+    {
+      "path": "ja/places/okinawa/index.html",
+      "bytes": 31913,
+      "sha256": "3ba5c934432b6dbf00ae0972745007bfa6c7d3a0298c8196aef55570cb967ada"
+    },
+    {
+      "path": "ja/places/osaka/index.html",
+      "bytes": 45091,
+      "sha256": "1aad1bb950549c15616d8d2b3334c1dfed02f9b0fa9e0a47f7a81a1b75d296e4"
+    },
+    {
+      "path": "ja/places/saga/index.html",
+      "bytes": 38622,
+      "sha256": "2a29ab9f564752305271a22888559e764334a1f8ab84d90f32232f7c158cd659"
+    },
+    {
+      "path": "ja/places/shimane/index.html",
+      "bytes": 32066,
+      "sha256": "8298adde13e565235b517e70090b947c8d43d1c1c0527d7ebb512f6cc62e7e29"
+    },
+    {
+      "path": "ja/places/tokushima/index.html",
+      "bytes": 32046,
+      "sha256": "7d07cafdf6d4841cab9fa3de801e627aa078c8eaef200405d4749c9bb8b96151"
+    },
+    {
+      "path": "ja/places/tokyo/index.html",
+      "bytes": 49202,
+      "sha256": "b4c6d14981cdefc011cd83b30edf1c136847453771074be95381703ffd67bab3"
+    },
+    {
+      "path": "ja/places/tottori/index.html",
+      "bytes": 32839,
+      "sha256": "714637434db50f0f268e20686f5e85d0568ad67442492670e36ba08720e2f4d3"
+    },
+    {
+      "path": "ja/places/toyama/index.html",
+      "bytes": 36260,
+      "sha256": "d7f2c8e2634f226ce0469f67f2882a89edefe9777cab74eb8eadd59b754f5fe1"
+    },
+    {
+      "path": "ja/places/yamanashi/index.html",
+      "bytes": 46906,
+      "sha256": "3957818404aee1c3e235a0e6b815632b03ffb36ec034a85c93544426fe569773"
+    },
+    {
+      "path": "ja/privacy/index.html",
+      "bytes": 29334,
+      "sha256": "9c79e846f4dbe2be5bea72e448e5209f7cdf7950b801f6a39c3071a3f1ae7b21"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 95,
+      "sha256": "bc2a39f6b960e3aee2905a86684891f959dd7bbc86bb94d1f085059f2ac78084"
+    },
+    {
+      "path": "sitemap.xml",
+      "bytes": 34287,
+      "sha256": "0d09021a41895beb0a452f399c65790349f76b9d71c9492de3e1bea5df6f2344"
+    }
+  ]
+}

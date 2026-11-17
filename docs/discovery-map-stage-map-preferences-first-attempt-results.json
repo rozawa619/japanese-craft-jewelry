@@ -1,0 +1,333 @@
+{
+  "checkedAt": "2026-11-17T08:23:39.282Z",
+  "origin": "http://127.0.0.1:4323",
+  "base": "/japanese-craft-jewelry/",
+  "expectedChecks": 21,
+  "method": "Fresh Chrome contexts test real map controls, preference persistence across products/languages/reload, global revocation, invalid/expired state, blocked storage, cross-tab synchronization, no-JavaScript fallback, keyboard and responsive accessibility. Normal tests intercept and abort every external request, including Google iframe navigation; expected blocked-resource console messages are recorded separately from application errors.",
+  "limits": "Aborted Google requests prove connection intent, not rendered geographical accuracy, tiles, attribution or third-party cookie behavior. Optional live-provider checks are separate and require CHECK_LIVE_GOOGLE_MAPS=1. Chrome emulation is not physical iOS/Safari certification. Browser storage is functional map preference, not an advertising CMP.",
+  "sourceInputs": {
+    "started": {
+      "src/components/VisitGuide.astro": "7f57b24cb46c16183da101801975f641871c928dd1c1293fa71e10aa4b245092",
+      "src/components/MapPreferences.astro": "7b0ec812f5169c735cd997417fb01489c7d38079cc49ea1919c4358eff05e16f",
+      "src/lib/map-preferences.ts": "86d7830245efca42b151c60897e71eca15af27578dbfa423966e286a80f8ec19",
+      "src/lib/map-preferences-client.ts": "1dcb4d4465e72a11337f489fba5f9c44427fbf706eb3e57f72877815a51079ab",
+      "src/lib/map-embed-url.ts": "7211017dc8651c453c79cadee5bdb5bcd0e6148dbbd63ea9b5568a1579e2d3c0",
+      "src/lib/store-map-embeds.ts": "9b6150aebff22c510c44db0a845d63d8e53dd6087e4e314638e387010241a52e",
+      "src/data/catalog.json": "2f12215f009e327bc8b4a307f8baf2c3df2dd8e757b655870a9ac47bd1b781b2",
+      "src/data/visits.json": "ce52378eec5df52edd02752b63e7b4e3d064cd470a3bdac462b94b3c78b8e008",
+      "src/content/policies/privacy.md": "cc7d2ce81d0728fe80f1a14c579b71b7566cb58daf89fdbef78b3f96ef11926c",
+      "src/content/policies/ja/privacy.md": "94a41ba62587e792ef5feb6b3481b8053551e22d351a8e4944014658ac86a46e"
+    },
+    "finished": {
+      "src/components/VisitGuide.astro": "7f57b24cb46c16183da101801975f641871c928dd1c1293fa71e10aa4b245092",
+      "src/components/MapPreferences.astro": "7b0ec812f5169c735cd997417fb01489c7d38079cc49ea1919c4358eff05e16f",
+      "src/lib/map-preferences.ts": "86d7830245efca42b151c60897e71eca15af27578dbfa423966e286a80f8ec19",
+      "src/lib/map-preferences-client.ts": "1dcb4d4465e72a11337f489fba5f9c44427fbf706eb3e57f72877815a51079ab",
+      "src/lib/map-embed-url.ts": "7211017dc8651c453c79cadee5bdb5bcd0e6148dbbd63ea9b5568a1579e2d3c0",
+      "src/lib/store-map-embeds.ts": "9b6150aebff22c510c44db0a845d63d8e53dd6087e4e314638e387010241a52e",
+      "src/data/catalog.json": "2f12215f009e327bc8b4a307f8baf2c3df2dd8e757b655870a9ac47bd1b781b2",
+      "src/data/visits.json": "ce52378eec5df52edd02752b63e7b4e3d064cd470a3bdac462b94b3c78b8e008",
+      "src/content/policies/privacy.md": "cc7d2ce81d0728fe80f1a14c579b71b7566cb58daf89fdbef78b3f96ef11926c",
+      "src/content/policies/ja/privacy.md": "94a41ba62587e792ef5feb6b3481b8053551e22d351a8e4944014658ac86a46e"
+    },
+    "unchanged": true
+  },
+  "representatives": {
+    "primary": {
+      "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "slug": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "storeIds": [
+        "kanra-shop-kyoto",
+        "mocad-museum-shop"
+      ]
+    },
+    "secondary": {
+      "productId": "hamamatsuya-catch-pierced",
+      "slug": "hamamatsuya-surgical-stainless-pierced-earrings",
+      "storeIds": [
+        "hamamatsuya-hatajuku-main"
+      ]
+    }
+  },
+  "liveGoogleRequested": false,
+  "checks": [
+    {
+      "name": "ja-responsive-consent-320",
+      "status": "passed",
+      "locale": "ja",
+      "width": 320,
+      "productStores": 2,
+      "initialFrames": 0,
+      "initialExternalAttempts": 0,
+      "googleAttempts": 4,
+      "expectedBlockedConsole": 0,
+      "storageKeys": [
+        "jcj.map-choice.v1"
+      ],
+      "expiryMilliseconds": 2592000000,
+      "screenshot": "artifacts/discovery-map-stage-consent-ja-off-320.png",
+      "applicationErrors": 0
+    },
+    {
+      "name": "ja-responsive-consent-390",
+      "status": "passed",
+      "locale": "ja",
+      "width": 390,
+      "productStores": 2,
+      "initialFrames": 0,
+      "initialExternalAttempts": 0,
+      "googleAttempts": 4,
+      "expectedBlockedConsole": 0,
+      "storageKeys": [
+        "jcj.map-choice.v1"
+      ],
+      "expiryMilliseconds": 2592000000,
+      "screenshot": "artifacts/discovery-map-stage-consent-ja-off-390.png",
+      "applicationErrors": 0
+    },
+    {
+      "name": "ja-responsive-consent-1440",
+      "status": "passed",
+      "locale": "ja",
+      "width": 1440,
+      "productStores": 2,
+      "initialFrames": 0,
+      "initialExternalAttempts": 0,
+      "googleAttempts": 4,
+      "expectedBlockedConsole": 0,
+      "storageKeys": [
+        "jcj.map-choice.v1"
+      ],
+      "expiryMilliseconds": 2592000000,
+      "screenshot": "artifacts/discovery-map-stage-consent-ja-off-1440.png",
+      "applicationErrors": 0
+    },
+    {
+      "name": "en-responsive-consent-320",
+      "status": "passed",
+      "locale": "en",
+      "width": 320,
+      "productStores": 2,
+      "initialFrames": 0,
+      "initialExternalAttempts": 0,
+      "googleAttempts": 4,
+      "expectedBlockedConsole": 0,
+      "storageKeys": [
+        "jcj.map-choice.v1"
+      ],
+      "expiryMilliseconds": 2592000000,
+      "screenshot": "artifacts/discovery-map-stage-consent-en-off-320.png",
+      "applicationErrors": 0
+    },
+    {
+      "name": "en-responsive-consent-390",
+      "status": "passed",
+      "locale": "en",
+      "width": 390,
+      "productStores": 2,
+      "initialFrames": 0,
+      "initialExternalAttempts": 0,
+      "googleAttempts": 4,
+      "expectedBlockedConsole": 0,
+      "storageKeys": [
+        "jcj.map-choice.v1"
+      ],
+      "expiryMilliseconds": 2592000000,
+      "screenshot": "artifacts/discovery-map-stage-consent-en-off-390.png",
+      "applicationErrors": 0
+    },
+    {
+      "name": "en-responsive-consent-1440",
+      "status": "failed",
+      "message": "TimeoutError: page.waitForURL: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/ja/objects/morphosphere-ultramarine-pansy-pierced-earrings/\" until \"load\"\n============================================================"
+    },
+    {
+      "name": "reject-expired",
+      "status": "passed",
+      "invalidSeed": "expired",
+      "frames": 0,
+      "externalAttempts": 0,
+      "invalidRecordRemoved": true
+    },
+    {
+      "name": "reject-old-version",
+      "status": "passed",
+      "invalidSeed": "old-version",
+      "frames": 0,
+      "externalAttempts": 0,
+      "invalidRecordRemoved": true
+    },
+    {
+      "name": "reject-malformed-json",
+      "status": "passed",
+      "invalidSeed": "malformed-json",
+      "frames": 0,
+      "externalAttempts": 0,
+      "invalidRecordRemoved": true
+    },
+    {
+      "name": "reject-extra-tracking-field",
+      "status": "passed",
+      "invalidSeed": "extra-tracking-field",
+      "frames": 0,
+      "externalAttempts": 0,
+      "invalidRecordRemoved": true
+    },
+    {
+      "name": "reject-extended-lifetime",
+      "status": "passed",
+      "invalidSeed": "extended-lifetime",
+      "frames": 0,
+      "externalAttempts": 0,
+      "invalidRecordRemoved": true
+    },
+    {
+      "name": "reject-future-timestamp",
+      "status": "passed",
+      "invalidSeed": "future-timestamp",
+      "frames": 0,
+      "externalAttempts": 0,
+      "invalidRecordRemoved": true
+    },
+    {
+      "name": "ja-blocked-storage",
+      "status": "passed",
+      "locale": "ja",
+      "pageContinuesWithoutStorage": true,
+      "reloadFrames": 0,
+      "applicationErrors": 0
+    },
+    {
+      "name": "en-blocked-storage",
+      "status": "passed",
+      "locale": "en",
+      "pageContinuesWithoutStorage": true,
+      "reloadFrames": 0,
+      "applicationErrors": 0
+    },
+    {
+      "name": "cross-tab-global-revocation-and-clear",
+      "status": "passed",
+      "tabs": 2,
+      "sharedAcrossLanguages": true,
+      "revocationStopsOtherTab": true,
+      "privacySettingsStopActiveOtherTab": true,
+      "storageClearStopsOtherTab": true
+    },
+    {
+      "name": "reject-embed-other-provider",
+      "status": "passed",
+      "maliciousKind": "other-provider",
+      "frames": 0,
+      "externalAttempts": 0
+    },
+    {
+      "name": "reject-embed-script-scheme",
+      "status": "passed",
+      "maliciousKind": "script-scheme",
+      "frames": 0,
+      "externalAttempts": 0
+    },
+    {
+      "name": "reject-embed-extra-api-key",
+      "status": "passed",
+      "maliciousKind": "extra-api-key",
+      "frames": 0,
+      "externalAttempts": 0
+    },
+    {
+      "name": "ja-javascript-disabled-fallback",
+      "status": "passed",
+      "locale": "ja",
+      "externalMapLinks": 4,
+      "storedAllowDoesNotBypassNoJs": true,
+      "initialExternalAttempts": 0
+    },
+    {
+      "name": "en-javascript-disabled-fallback",
+      "status": "passed",
+      "locale": "en",
+      "externalMapLinks": 4,
+      "storedAllowDoesNotBypassNoJs": true,
+      "initialExternalAttempts": 0
+    },
+    {
+      "name": "active-choice-expires-without-navigation",
+      "status": "passed",
+      "simulatedElapsedMilliseconds": 2592001000,
+      "expiredFrames": 0,
+      "expiredRecordRemoved": true
+    }
+  ],
+  "failures": [
+    {
+      "name": "en-responsive-consent-1440",
+      "status": "failed",
+      "message": "TimeoutError: page.waitForURL: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/ja/objects/morphosphere-ultramarine-pansy-pierced-earrings/\" until \"load\"\n============================================================"
+    }
+  ],
+  "axe": [
+    {
+      "name": "ja-map-off-320",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/morphosphere-ultramarine-pansy-pierced-earrings/",
+      "violations": []
+    },
+    {
+      "name": "ja-map-off-390",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/morphosphere-ultramarine-pansy-pierced-earrings/",
+      "violations": []
+    },
+    {
+      "name": "ja-privacy-settings-390",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/privacy/#map-preferences",
+      "violations": []
+    },
+    {
+      "name": "ja-map-off-1440",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/ja/objects/morphosphere-ultramarine-pansy-pierced-earrings/",
+      "violations": []
+    },
+    {
+      "name": "en-map-off-320",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/morphosphere-ultramarine-pansy-pierced-earrings/",
+      "violations": []
+    },
+    {
+      "name": "en-map-off-390",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/morphosphere-ultramarine-pansy-pierced-earrings/",
+      "violations": []
+    },
+    {
+      "name": "en-privacy-settings-390",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/en/privacy/#map-preferences",
+      "violations": []
+    },
+    {
+      "name": "en-map-off-1440",
+      "url": "http://127.0.0.1:4323/japanese-craft-jewelry/en/objects/morphosphere-ultramarine-pansy-pierced-earrings/",
+      "violations": []
+    }
+  ],
+  "screenshots": [
+    "artifacts/discovery-map-stage-consent-ja-off-320.png",
+    "artifacts/discovery-map-stage-consent-ja-off-390.png",
+    "artifacts/discovery-map-stage-consent-ja-off-1440.png",
+    "artifacts/discovery-map-stage-consent-en-off-320.png",
+    "artifacts/discovery-map-stage-consent-en-off-390.png",
+    "artifacts/discovery-map-stage-consent-en-off-1440.png"
+  ],
+  "completedAt": "2026-11-17T08:25:39.794Z",
+  "summary": {
+    "checks": 21,
+    "passed": 20,
+    "failed": 1,
+    "responsiveFlows": 6,
+    "invalidPreferenceCases": 6,
+    "blockedStorageFlows": 2,
+    "axeScreens": 8,
+    "axeViolations": 0,
+    "screenshots": 6,
+    "liveGoogleChecks": 0,
+    "sourceInputsUnchanged": true
+  }
+}

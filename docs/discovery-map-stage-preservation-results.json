@@ -1,0 +1,71 @@
+{
+  "version": "0.17.0",
+  "checkedAt": "2026-11-17T08:25:23.315Z",
+  "status": "passed",
+  "baselineCommit": "886fc2ea12b95cc8808ed9f3eb195752b961e0df",
+  "protectedSourceFiles": [
+    {
+      "path": "src/data/catalog.json",
+      "sha256": "2f12215f009e327bc8b4a307f8baf2c3df2dd8e757b655870a9ac47bd1b781b2"
+    },
+    {
+      "path": "src/data/translations/ja.json",
+      "sha256": "62998e567f02a59c54e40f19b84bdc72e95eeb0e4e33e33fbc685b8c7ecdfcbf"
+    },
+    {
+      "path": "src/data/product-stories.json",
+      "sha256": "4480ab18c3dd481352161273faeb9d1dd44e4e6729f5ea921f849576a6b8ad88"
+    },
+    {
+      "path": "src/data/selection-notes.json",
+      "sha256": "d4fbc2abbf4f26f652c7c997e157e2daf90971e617bbb79754662a7d387272c5"
+    },
+    {
+      "path": "src/data/product-buying-guides.json",
+      "sha256": "c22cd43ab0f3d52fd5442ed41505f849b3989b66284e5c5d448b9b92f2177d7b"
+    },
+    {
+      "path": "src/data/region-choice-notes.json",
+      "sha256": "316409db73888dd3c263f53b5ff45ba300dde8119de34ea9ce40035ad37b24ee"
+    },
+    {
+      "path": "src/data/purchase-evidence.json",
+      "sha256": "247580116e4e24cf9083b3086852c13b89725bf99fdf16aefde1049749884ab8"
+    },
+    {
+      "path": "src/data/visits.json",
+      "sha256": "ce52378eec5df52edd02752b63e7b4e3d064cd470a3bdac462b94b3c78b8e008"
+    },
+    {
+      "path": "src/data/editorial-images.json",
+      "sha256": "175e8a4a3fb37f603791160eab83b9a028976a78f3363ea9d5df891a73f11ca5"
+    },
+    {
+      "path": "src/data/product-detail-images.json",
+      "sha256": "1fc02f8dc9f625b9badc584770e57bf60a114ec48c06c37f4fb5c1a1d03057c9"
+    },
+    {
+      "path": "docs/research/sources.json",
+      "sha256": "6a24ba116173fe93c1ea6f74d0a4a1528061d9ebabff30b05f7fb6fca56f2c1f"
+    },
+    {
+      "path": "docs/assets.json",
+      "sha256": "b45215c892da1db38f9a04ee4017b52dae5baed64788c5900722fdf7bbde7fc9"
+    },
+    {
+      "path": "docs/image-generation-v16.json",
+      "sha256": "c5f6f416566ee2253f433871acce699444351a4a52ab5c413f67007184d871b4"
+    },
+    {
+      "path": "docs/image-generation-solo-v16.json",
+      "sha256": "464dc5924571270524c23e63fa934e2dd83d40189dcc4b14cab83da1850a6968"
+    },
+    {
+      "path": "src/lib/store-map-embeds.ts",
+      "sha256": "9b6150aebff22c510c44db0a845d63d8e53dd6087e4e314638e387010241a52e"
+    }
+  ],
+  "publicImageSha256Checks": 118,
+  "allImagesUnchanged": true,
+  "scope": "All original product facts, copy, prices, purchase evidence, official store URLs, sources, assets, image registries, generation logs and118 image bytes unchanged. UI, Privacy, docs and new local geography intentionally change."
+}

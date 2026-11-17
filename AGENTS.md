@@ -6,7 +6,7 @@
 
 1. README → docs/ai-handoff.md → docs/handoff.md → docs/architecture.md。
 2. Git checkoutならgit status --short、ZIPなら元ZIP/proofと別の作業用コピーを確認。package.json、docs/deployment-results.jsonを読み、公開app commitと文書/作業HEAD、最新ZIPを区別。ZIPに.gitがないことをエラーにしない。
-3. 全国追加はspecs/018-national-jewelry-expansion、引き継ぐUI/securityは016、保守文書の意図は017。必要な領域だけ過去仕様へ戻る。
+3. 現在の作業はspecs/019-geographic-discovery-map-privacy。直前の商品追加は018、引き継ぐUI/securityは016、保守文書の意図は017。必要な領域だけ過去仕様へ戻る。
 4. docs/setup.mdでruntime/env/base/Chromeを確認。docsのJSONはbuild入力なので削除しない。
 5. 変更する正本を特定し、docs/verification-guide.mdで必要な検査を選び、実装と仕様・引継ぎを合わせる。
 
@@ -14,7 +14,7 @@
 
 - 運営者表示SORA、日本全国の工芸ジュエリーを選ぶJA/ENサイト。神奈川専用やiTOへ戻さない。
 - ブログ/Contact/販売・決済・発送の機能を作らず、不要な販売責任説明をUIに再導入しない。提供されていない氏名/住所/メールを作らない。
-- 0.16公開版の60公開/66登録・24県・34公開関連技法/全36・118AI画像は観測値。固定上限や各県同数の条件ではない。空の地域/技法とdraftを一覧やsitemapへ出さない。
+- 0.17作業版は0.16の60公開/66登録・24県・34公開関連技法/全36・118AI画像を継承。固定上限や各県同数の条件ではない。地図47県の未掲載県は非リンクで、空の地域/技法やdraftの公開URLを作らない。
 - COCOON2/欠品18K/販売未確認の畠山2/hairpinはdraft。復帰には対象variantの現行購入根拠と派生参照の再確認が必要。403を閉店/売切れとしない。
 
 ## 正本と編集
@@ -28,6 +28,9 @@
 
 ## 画像とUI
 
+- 産地の共通入口はTOP10→日本地図→DISCOVER3県。観光TOP10順位は維持し、47県のCC0形状から実商品/産地本文のある掲載24県だけを選択可能にします。代表単体AI画像・商品名・国内参考価格を正本から表示し、select・地方別一覧・地図ジャンプも用意します。hoverだけに頼らず、タップ/keyboard/JSなしの通常リンクを保ちます。
+- [日本地図](docs/japan-map-v17.md)・[残タスク](docs/remaining-task-audit-v17.md)・[法務再確認](docs/legal-review-v17.md)・[商用ホスト移行準備](docs/commercial-host-migration-v17.md)を参照。対応ホスト向けpublic/_headersは移行準備です。現GitHub PagesのHTTPヘッダーを設定済みとはせず、実契約/本人情報/広告実ID・CMP/ドメイン・DNS/アカウント管理/検索実績を技術PASSで完了化しません。AdSense off・実提携未申請/通常URLを維持します。今回は新bitmapを生成せず0.16原本を保持。
+
 - 公式写真を許可なく取得/転載/hotlink/生成入力へ転用しない。AI図は実物写真・完全なSKU再現・金具/個数・装着実績の証拠ではない。
 - 人物editorial-imagesと単体product-detail-images、権利docs/assets、生成記録を分離。0.16の新規生成記録はimage-generation-v16とimage-generation-solo-v16。単体readerは旧v14＋新v16を併読し、旧記録を上書きしない。画像必須の公開gateをtext previewだけで迂回しない。
 - captionは常時AIイメージ/AI image。日英alt、元比率/contain、顔や装身具の切れを検査。人物は架空成人27〜33歳目安、日本/米国/英国の可愛い・美人系という依頼を継承し、国籍を見た目から認定しない。ほくろ/シミなしの方向性を保つ。
@@ -40,14 +43,17 @@
 
 - 実提携は未申請/通常リンク。広告はprogram/item両承認、対象merchant、HTTPS・完全一致host・実確認日・localeを満たす共通resolverだけ。欠落/停止は通常URLへ戻す。
 - AdSenseはoff固定。環境flagや架空ID/自作CMPで有効化しない。認定CMP/実ID/所有確認/同意・配信/CSP/Privacy/host適合は別の未完了作業。
-- Google Mapsはregistryの固定Share URLだけ。表示前Google通信0、表示後だけiframe、閉じる/再読込でoff、選択をCookie/Storageへ保存しない。広告CMPと呼ばず、Google帰属表示と公式/外部fallbackを維持。
+- Google Mapsはregistryの固定Share URLのみ。Googleマップは初回の明示許可後、日英・全店舗で30日間自動表示します。未選択/拒否/期限切れではGoogle通信0、オフ操作で全iframeを停止。localStorageには地図専用choice/version/savedAt/expiresAtだけを保存し、不正/旧版の値は削除し、有効期限30日を過ぎた値は次の読込/再表示時に削除します。保存不可はページ限りです。複数タブ/戻る/再訪でも撤回を尊重します。PC330px/スマホ280pxの枠高を基本に、Google帰属・fullscreen・公式/外部リンクを保ちます。地図設定版maps-v17と広告Privacy版v14は別で、地図設定は広告同意/CMPではありません。
 - JSON-LD escape、HTTPS/host/locale gate、限定CSPを維持。外部検査はsafe-outboundの各hop DNS/公開IP/接続pin/timeoutを使い、負例はmock。privateへ実接続しない。
 - Node最低版24.22.3のサポート中の修正版/pnpm11.25.0。PUBLIC_は公開値で秘密を置かない。.env/秘密/依存実体/生成物をGitやZIPへ混ぜない。
 - host header/MFA等の未確認・未操作を完了にせず、既知audit0と未知も含む全安全を混同しない。
 
 ## 検証・完了の記録
 
-- 0.16公開appは86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb、Actions44042180272 completed/success（2026-11-17T07:54:26Z更新、07:54:34.367ZにAPI観測）。実公開Source328/328HTML SHA・release24/24（328canonical/118画像SHA）・mobile92/92成功。正本はdeployment-results/verificationとnational-stage-hostedの各記録で、以後の文書commitを公開appと混同しない。
+<!-- TODO_PUBLIC_V17 -->
+0.17.0（仕様019）は作業・検証中です。今回の公開app・Actions・実URL検証は未確定のため、確定後にこの段落を更新します。公開確認済みの基準は0.16.0（app86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb、Actions44042180272）です。
+
+- 0.16のnational-stageは当時の証跡。019の新地図/保存方式を旧検査で合格にしない。最新の実測は019 validation・deployment-results・verificationを確認する。
 
 - JSON/広告変更はpnpm verify。文言/画面は影響とriskに応じたtype/build/JAEN/mobile等。docs-onlyに497全走査を要求せず、リンク/コマンド/整合と必要なbuildを確認する。
 - build中に共有distへbrowser検査しない。ローカル/公開/途中/最終を区別し、CHECK_REPORT_PATH等を作業固有名へ。0.15の既存証跡を上書きしない。

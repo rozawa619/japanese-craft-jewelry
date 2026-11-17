@@ -1,0 +1,16 @@
+{
+  "version": "0.17.0",
+  "checkedAt": "2026-11-17T08:52:05.101Z",
+  "status": "passed",
+  "baselineManifest": "docs/discovery-map-stage-before-provider-clarification-build-manifest.json",
+  "fileSetMatch": true,
+  "outputFiles": 470,
+  "unchangedOutputSha256Checks": 468,
+  "changedPaths": [
+    "en/privacy/index.html",
+    "ja/privacy/index.html"
+  ],
+  "onlyExactProviderParagraphAdded": true,
+  "unchangedExecutableCodeCspStylesMetadataUrls": true,
+  "scope": "All broad UI checks cover the preceding build; only two Privacy paragraphs changed afterward, with exact paragraph-removal equality. Final full verify149 and focused Privacy browser checks cover this addition."
+}

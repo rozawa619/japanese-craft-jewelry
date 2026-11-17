@@ -1,9 +1,10 @@
 # 商品・文章・画像の編集ガイド
 
 プログラムを書かない運営者と、引継ぎ先のAIのための手引きです。まず[README](../README.md)で起動し、詳しい判断は[引継ぎ](handoff.md)・[共通原則](constitution.md)・[運用](operations.md)へ戻ってください。
-2026-11-17の0.16台帳は全66商品、公開60商品、下書き6商品、24県、33店舗（53商品に店舗案内）です。公開関連技法は34（全36）、一次出典293件、人物58＋単体60のAI画像118ファイル。今後の件数は台帳を数えて確かめます。
+2026-11-17の0.17作業版が継承する台帳は全66商品、公開60商品、下書き6商品、24県、33店舗（53商品に店舗案内）です。公開関連技法は34（全36）、一次出典293件、人物58＋単体60のAI画像118ファイル。今後の件数は台帳を数えて確かめます。
 
-全国追加018はapp86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb・[Actions44042180272](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44042180272) completed/successで公開し、Source328HTML・328正規URL/118画像のSHA照合とmobile92を確認しました。公開と納品の確定状態は[deployment-results.json](deployment-results.json)を参照します。
+<!-- TODO_PUBLIC_V17 -->
+0.17.0（仕様019）は作業・検証中です。今回の公開app・Actions・実URL検証は未確定のため、確定後にこの段落を更新します。公開確認済みの基準は0.16.0（app86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb、Actions44042180272）です。
 以下の実例は既存記録の**一部の抜粋**です。新しい価格・在庫を調べ直した例でも、レコード全体の貼り替え用テンプレートでもありません。
 
 ## 最初に覚えること
@@ -201,6 +202,12 @@ WebPへ変換しても原本PNGを保管し、AI由来のIPTC XMPを維持しま
 新しい種別や所属は`catalog.json`と日本語名称に登録してから使います。商品を増やしただけではホームの種類項目は自動追加されません。
 観光TOP10は販売人気順ではありません。順位の年・訪問率・一次資料は[地域設定](../src/config/region-selection.ts)と[調査記録](research/tourism-top10-v9.json)を組で更新します。
 
+### 0.17の地図/3県ピックアップを更新する
+
+産地の共通入口はTOP10→日本地図→DISCOVER3県。観光TOP10順位は維持し、47県のCC0形状から実商品/産地本文のある掲載24県だけを選択可能にします。代表単体AI画像・商品名・国内参考価格を正本から表示し、select・地方別一覧・地図ジャンプも用意します。hoverだけに頼らず、タップ/keyboard/JSなしの通常リンクを保ちます。
+
+日本地図はsrc/data/japan-map-geometry.json（CC0出典/47県形状）、src/config/japan-map.ts（地方とDISCOVER3県）、JapanJewelryMap.astro（代表preview）。店舗の地図はmap-preferences.ts（30日/版/最小値検証）、map-preferences-client.ts（全表示/全停止）、MapPreferences.astro（Privacyの設定UI）へ分離します。商品価格や画像URLを地理JSONへ複製せず、未掲載県へ空URLを作りません。小さな県形状そのものを44pxとは呼ばず、select/地方別リンクを代替にします。[出典と加工](japan-map-v17.md)を保持してください。今回は新bitmapを生成していません。
+
 ## 9. 店舗とGoogleマップを更新する
 
 `visits.json → stores`が店舗、`products`が商品との対応です。店名・住所などの文章は`{"ja":"…","en":"…"}`の形です。
@@ -210,9 +217,13 @@ WebPへ変換しても原本PNGを保管し、AI由来のIPTC XMPを維持しま
 浜松屋の店舗例は上記の`hamamatsuya-hatajuku-main`。店舗の存在と、その商品の現物・柄・在庫は別に確認します。
 `mapQuery`は外部Googleマップ検索と経路案内の検索語です。埋込みは[store-map-embeds.ts](../src/lib/store-map-embeds.ts)の店舗ID別`ja / en`へ、Google公式の共有機能で取得・確認したURLを置きます。
 埋込みURLや`pb`を推測で組み立てず、[URL制限](../src/lib/map-embed-url.ts)・[地図の確認記録](research/inline-maps-v14.json)も合わせます。
-変更後は「表示前は接続しない／選ぶと表示／閉じると削除／再読込では未表示」を確認。地図・ロゴ・帰属を隠さず、Privacy（プライバシー方針）とCSP（ブラウザの接続先制限）の説明も維持します。
+Googleマップは初回の明示許可後、日英・全店舗で30日間自動表示します。未選択/拒否/期限切れではGoogle通信0、オフ操作で全iframeを停止。localStorageには地図専用choice/version/savedAt/expiresAtだけを保存し、不正/旧版の値は削除し、有効期限30日を過ぎた値は次の読込/再表示時に削除します。保存不可はページ限りです。複数タブ/戻る/再訪でも撤回を尊重します。PC330px/スマホ280pxの枠高を基本に、Google帰属・fullscreen・公式/外部リンクを保ちます。地図設定版maps-v17と広告Privacy版v14は別で、地図設定は広告同意/CMPではありません。
+
+provider/目的/条件を変える場合はmap-preferences.tsの版と日英説明を更新して再選択させます。30日は法定期限とは説明しません。未選択→許可→別商品/言語/再読込→全撤回、拒否/旧版/不正/期限/保存不可/複数タブを確認。旧「再読込off/Storageなし」の期待を流用しません。
 
 ## 10. 広告・運営者・連絡先は事実どおりに
+
+[日本地図](japan-map-v17.md)・[残タスク](remaining-task-audit-v17.md)・[法務再確認](legal-review-v17.md)・[商用ホスト移行準備](commercial-host-migration-v17.md)を参照。対応ホスト向けpublic/_headersは移行準備です。現GitHub PagesのHTTPヘッダーを設定済みとはせず、実契約/本人情報/広告実ID・CMP/ドメイン・DNS/アカウント管理/検索実績を技術PASSで完了化しません。AdSense off・実提携未申請/通常URLを維持します。
 
 運営者はSORAです。Contact・会員登録・販売決済・ブログを追加する前提にはしません。未提供の氏名・連絡先も作りません。
 提携は`programs`と個別`links`の両方が承認済みで、実URL・許可ホスト・確認日が揃うときだけ広告化します。`not_applied`を仮に`approved`へ変えません。
@@ -225,7 +236,7 @@ Node.js 24.22.3以上、pnpm 11.25.0を使います。初回は`pnpm install --f
 内容・データ・画像を変えたら、基本は`pnpm verify`。エラーを無視して公開せず、どのファイル・参照IDが原因かを直します。
 本番生成後はpreviewを起動し、表示URLのoriginだけ（例：http://127.0.0.1:4323）を`CHECK_BASE_URL`へ指定します。repo名のpathは付けず、別ターミナルにもbuildと同じ`PUBLIC_BASE_PATH`を設定します。具体例は[setup](setup.md)を参照してください。
 商品追加や価格変更は影響範囲に応じて`pnpm check:quality`・`pnpm check:prices`・`pnpm check:browser`、本文の比較は`pnpm check:copy`も対象です。
-出典は`pnpm check:sources`、スマホは`pnpm check:mobile`、Q&A/Privacy/単体図は`pnpm check:depth`。地図は`node scripts/check-inline-maps.mjs`で選択前後を確認します。
+出典は`pnpm check:sources`、スマホは`pnpm check:mobile`、Q&A/Privacy/単体図は`pnpm check:depth`。全国地図は`node scripts/check-japan-map.mjs`、地図設定は`node scripts/check-map-preferences.mjs`、実Google表示は`node scripts/check-inline-maps.mjs`を使います。
 過去の結果は上書きせず、各scriptのreport/prefix指定を確認して別名に保存します。検査の選択は[検証ガイド](verification-guide.md)、起動・公開設定は[setup](setup.md)を使ってください。
 
 - 日英を切り替えて同じページ・絞込・位置へ戻れるか。

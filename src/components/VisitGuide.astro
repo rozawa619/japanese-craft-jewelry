@@ -21,59 +21,36 @@ const guide=visitGuideForProduct(productId,locale);
   <p class="visit-stock-note">{store.stockNote[locale]}</p>
   <div class="visit-map-actions"><a href={store.officialStoreUrl} target="_blank" rel="noopener noreferrer" data-store-official-url>{t(locale,'Official store guide','公式の店舗案内')} <span aria-hidden="true">↗</span></a>{maps&&<><a href={maps.search} target="_blank" rel="noopener noreferrer" data-map-action="search">{t(locale,'Find on Google Maps','Google マップで見る')} <span aria-hidden="true">↗</span></a><a href={maps.directions} target="_blank" rel="noopener noreferrer" data-map-action="directions">{t(locale,'Directions on Google Maps','Google マップで経路を見る')} <span aria-hidden="true">↗</span></a></>}</div>
  </div>
- {embed&&<aside class="inline-map" data-inline-map data-map-embed={embed} data-map-title={t(locale,'Map: ','地図：')+store.name[locale]} data-map-opened={t(locale,'Map displayed.','地図を表示しました。')} data-map-closed={t(locale,'Map closed.','地図を閉じました。')} aria-label={t(locale,'Map for ','店舗の地図：')+store.name[locale]}>
-  <div class="map-viewport"><div class="map-placeholder" data-map-placeholder><p class="map-eyebrow">{t(locale,'A LOCAL STOP','訪ねる場所')}</p><p class="map-prompt">{t(locale,'A closer look at the neighbourhood.','周辺の様子を、地図で。')}</p><button type="button" data-load-map aria-controls={mapId} aria-expanded="false">{t(locale,'Show map on this page','地図をこのページで表示')}</button></div><div class="map-canvas" id={mapId} data-map-canvas hidden></div></div>
-  <div class="map-caption"><p>{t(locale,'Showing the map connects to Google and may send your IP address and browser information or use cookies.','地図を表示するとGoogleに接続し、IPアドレスなどのブラウザー情報が送信され、Cookieが使われる場合があります。')} <a href={pagePath('privacy/',locale)}>{t(locale,'Privacy','プライバシー')}</a></p><button type="button" data-close-map hidden>{t(locale,'Close map','地図を閉じる')}</button></div>
+ {embed&&<aside class="inline-map" data-inline-map data-map-embed={embed} data-map-title={t(locale,'Map: ','地図：')+store.name[locale]} data-map-opened={t(locale,'Google maps display automatically for 30 days.','30日間、Google マップを自動表示します。')} data-map-closed={t(locale,'Google maps are off.','Google マップをオフにしました。')} data-map-unselected={t(locale,'Choose whether to display Google maps.','Google マップの表示を選べます。')} data-map-unsaved={t(locale,'Your browser could not save this choice. It applies on this page only.','このブラウザでは設定を保存できません。このページだけに適用します。')} aria-label={t(locale,'Map for ','店舗の地図：')+store.name[locale]}>
+  <div class="map-viewport"><div class="map-placeholder" data-map-placeholder><p class="map-eyebrow">GOOGLE MAPS</p><p class="map-prompt">{t(locale,'Find your way to this little discovery.','気になるお店へ、地図をたよりに。')}</p><p class="map-choice-note">{t(locale,'Google receives your IP address and browser information and may use cookies. Your choice applies to all store maps and is saved on this device for 30 days.','GoogleへIPアドレスやブラウザ情報が送信され、Cookie等が使われる場合があります。この端末に30日間保存し、全店舗の地図に適用します。')}</p><div class="map-choice-actions"><button type="button" data-load-map aria-controls={mapId} aria-expanded="false">{t(locale,'Allow maps for 30 days','地図を30日間、自動表示する')}</button><button type="button" data-deny-map>{t(locale,'Keep maps off','地図を表示しない')}</button></div></div><div class="map-canvas" id={mapId} data-map-canvas hidden></div></div>
+  <div class="map-caption"><p>{t(locale,'Google map · Your display choice can be changed at any time.','Google マップ · 表示設定はいつでも変更できます。')} <a href={pagePath('privacy/#map-preferences',locale)}>{t(locale,'Privacy','プライバシー')}</a></p><button type="button" data-close-map hidden>{t(locale,'Turn automatic maps off','地図の自動表示をオフにする')}</button></div>
   <p class="sr-only" data-map-status aria-live="polite"></p><noscript><p class="map-no-script">{t(locale,'Use the Google Maps links to view the location.','場所の確認にはGoogle マップのリンクをご利用ください。')}</p></noscript>
  </aside>}
  </div>
  </article>})}</div>:<p class="visit-fallback" data-store-fallback>{guide.fallback||t(locale,'Explore the official product information and store guide for current visiting options.','公式の商品情報や店舗案内から、現在の取扱いをご覧ください。')}</p>}
  {guide.sourceIds.length>0&&<Sources sourceIds={guide.sourceIds} locale={locale} className="visit-sources"><section class="information-checks" aria-label={t(locale,'Store information checks','店舗情報の確認日')}><h2>{t(locale,'Store information checks','店舗情報の確認日')}</h2><dl>{guide.stores.map(store=><div data-store-information-checked={store.id}><dt>{store.name[locale]}</dt><dd><time datetime={store.checkedAt}>{store.checkedAt}</time></dd></div>)}</dl></section></Sources>}
 </section>
-<script>
- import {reviewedMapEmbedUrl} from '../lib/map-embed-url';
- for(const panel of document.querySelectorAll<HTMLElement>('[data-inline-map]')){
-  const open=panel.querySelector<HTMLButtonElement>('[data-load-map]');
-  const close=panel.querySelector<HTMLButtonElement>('[data-close-map]');
-  const canvas=panel.querySelector<HTMLElement>('[data-map-canvas]');
-  const placeholder=panel.querySelector<HTMLElement>('[data-map-placeholder]');
-  const status=panel.querySelector<HTMLElement>('[data-map-status]');
-  if(!open||!close||!canvas||!placeholder||!status)continue;
-  open.addEventListener('click',()=>{
-   const url=reviewedMapEmbedUrl(panel.dataset.mapEmbed);
-   if(!url||canvas.querySelector('iframe'))return;
-   const frame=document.createElement('iframe');
-   frame.dataset.inlineMapFrame='';frame.title=panel.dataset.mapTitle||'Google Maps';
-   frame.width='320';frame.height='230';frame.referrerPolicy='strict-origin-when-cross-origin';frame.allowFullscreen=true;
-   frame.src=url;canvas.append(frame);canvas.hidden=false;placeholder.hidden=true;close.hidden=false;open.setAttribute('aria-expanded','true');
-   status.textContent=panel.dataset.mapOpened||'';close.focus();
-  });
-  close.addEventListener('click',()=>{
-   canvas.replaceChildren();canvas.hidden=true;placeholder.hidden=false;close.hidden=true;open.setAttribute('aria-expanded','false');
-   status.textContent=panel.dataset.mapClosed||'';open.focus();
-  });
- }
-</script>
+
 <style>
  .visit-link-context{display:block;font-size:11px;color:var(--muted);margin-top:7px}
  .visit-guide .visit-stores{grid-template-columns:1fr}
  .visit-guide .visit-store:only-child{display:block}
- .visit-store-layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:28px;align-items:start}
+ .visit-store-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,.95fr);gap:36px;align-items:start}
  .visit-store-information{min-width:0}
- .inline-map{width:100%;max-width:320px;justify-self:end}
- .map-viewport{height:230px;border:1px solid var(--line);background:var(--paper)}
- .map-placeholder{height:100%;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:22px;box-sizing:border-box}
+ .inline-map{width:100%;max-width:560px;justify-self:end}
+ .map-viewport{min-height:330px;border:1px solid var(--line);background:var(--paper)}
+ .map-placeholder{min-height:330px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:22px;box-sizing:border-box}
  .map-eyebrow{font-size:9px;letter-spacing:.15em;color:var(--muted);margin:0 0 10px}
  .map-prompt{font-size:16px;line-height:1.65;margin:0 0 18px}
- .map-placeholder button{font:inherit;font-size:11px;line-height:1.5;padding:11px 13px;min-height:44px;border:1px solid var(--forest);background:transparent;color:var(--forest);cursor:pointer;text-align:left}
+ .map-placeholder button{font:inherit;font-size:12px;line-height:1.5;padding:11px 13px;min-height:44px;border:1px solid var(--forest);background:transparent;color:var(--forest);cursor:pointer;text-align:left}
  .map-placeholder button:hover{background:var(--green)}
  .map-placeholder button:focus-visible,.map-caption button:focus-visible{outline:2px solid var(--forest);outline-offset:4px}
- .map-canvas{height:100%}
+ .map-canvas{height:330px}
  .map-canvas :global(iframe){display:block;width:100%;height:100%;border:0}
  .map-caption{padding-top:10px}
  .map-caption p,.map-no-script{font-size:12px;line-height:1.8;color:var(--muted);margin:0}
  .map-caption button{display:block;margin:7px 0 0 auto;padding:10px 8px;min-height:44px;font:inherit;font-size:12px;color:var(--forest);background:none;border:0;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
- .map-canvas[hidden],.map-placeholder[hidden],.map-caption button[hidden]{display:none}
+ .map-canvas[hidden],.map-placeholder[hidden],.map-caption button[hidden]{display:none}.map-choice-note{font-size:12px;line-height:1.8;margin:0 0 16px;color:var(--muted)}.map-choice-actions{display:flex;flex-wrap:wrap;gap:10px}.map-choice-actions button{background:var(--paper)}
  @media(max-width:1000px){.visit-store-layout{grid-template-columns:1fr}.inline-map{justify-self:start;max-width:100%}}
- @media(max-width:720px){.map-viewport{height:210px}.map-placeholder{padding:18px}.map-prompt{font-size:15px}.map-caption p{font-size:12px}}
+ @media(max-width:720px){.map-viewport,.map-placeholder{min-height:280px}.map-canvas{height:280px}.map-placeholder{padding:18px}.map-prompt{font-size:15px}.map-caption p{font-size:12px}}
 </style>

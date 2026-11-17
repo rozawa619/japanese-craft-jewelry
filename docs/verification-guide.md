@@ -1,8 +1,9 @@
 # 変更に合わせて検証する
 
-確認日：2026-11-17、公開版0.16.0・全国追加018。目的は、変更に必要な証拠を得て、過去の成功を今回の成功と混同しないこと。最初に[AI引継ぎ](ai-handoff.md)とAGENTS.mdを読む。公開と納品の確定値は[deployment-results.json](deployment-results.json)、実際の入力・対象・失敗は各JSONを正本とする。
+確認日：2026-11-17、作業版0.17.0・産地地図/地図表示設定019。目的は、変更に必要な証拠を得て、過去の成功を今回の成功と混同しないこと。最初に[AI引継ぎ](ai-handoff.md)とAGENTS.mdを読む。公開と納品の確定値は[deployment-results.json](deployment-results.json)、実際の入力・対象・失敗は各JSONを正本とする。
 
-0.16の公開appは`86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb`、[Actions44042180272](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44042180272) completed/success。更新は2026-11-17T07:54:26Z、API観測は07:54:34.367Z。下記の実公開検査はこのappを対象とし、旧0.15の検査や以後の文書commitと区別する。
+<!-- TODO_PUBLIC_V17 -->
+0.17.0（仕様019）は作業・検証中です。今回の公開app・Actions・実URL検証は未確定のため、確定後にこの段落を更新します。公開確認済みの基準は0.16.0（app86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb、Actions44042180272）です。
 
 ## 変更別に検証を選ぶ
 
@@ -19,7 +20,8 @@
 | 種類の代表図・産地見出し | `pnpm verify`、`check:types` / `check:headings` | 所属/編集順/価格帯/件数/query/hash/AI表示/元比率。新画像生成と既存図の再利用を区別 |
 | SourceのHTML/確認日/開閉 | `pnpm verify`、`check:sources`、`node scripts/check-source-anchor-race.mjs` | `check:mobile`、必要なら`check-mobile-touch.mjs`。初期closed、直接hash、history、迅速close、focus/Tab、noJS |
 | 価格共通処理・通貨/市場の行き先 | `pnpm verify`、`check:prices` | 単品/片耳/一組、JPY/海外実額、未知価格、言語往復、sticky、広告の別市場への流用防止 |
-| 店舗・Googleマップ | `pnpm verify`、対象の公式所在地・地図を目視、`node scripts/check-inline-maps.mjs` | 表示前通信0→明示表示→閉じる/再読込、帰属表示、fallback。現在地/同意/経路送信は別行為 |
+| 全国地図 | `pnpm verify`、`node scripts/check-japan-map.mjs` | 47形状/掲載県、代表画像/価格/行き先、TOP10→地図→DISCOVER3、hover/focus/tap/select/地方一覧/noJS、320px |
+| 店舗・Googleマップ | `pnpm verify`、公式所在地/地図、`node scripts/check-map-preferences.mjs`・`node scripts/check-inline-maps.mjs` | 未選択/拒否/期限切れ通信0、初回許可後30日の全店舗/日英自動表示、全撤回/不正/旧版/保存不可/複数タブ/戻る、帰属/fullscreen |
 | 広告リンク/Privacy/CMP/外部送信 | `pnpm verify`、`check:privacy`、`check:ads` | 実際の状態と日英Privacy、最初の広告前開示、承認/host/fallback、送信/拒否/撤回。実広告導入は現在のoff版と別の実装 |
 | 依存・Node・URL境界・CI/CSP | runtime check、`pnpm audit --audit-level=low`、関連unit、`pnpm verify` | URLなら`outbound-security.test.ts`、CI権限、公開header/console、対象の実host。監査0件を完全安全としない |
 | origin/base/公開設定・SEO・配信 | `pnpm verify`、`pnpm readiness`、`check:seo` | preview/public、canonical/hreflang/sitemap/robots、公開meta、実URL、最終HTML/画像照合 |
@@ -27,11 +29,19 @@
 
 関連unitだけ先に実行する例は`node --experimental-strip-types --test tests/market-prices.test.ts`。最終の必要範囲は変更の広がりで決める。CIは独立した公開gateであり、ローカルの小修正検査を省略する理由にも、毎回497を走らせる理由にもしない。
 
+## 0.17の記録を読む
+
+[地図と表示設定019](../specs/019-geographic-discovery-map-privacy/)が今回の作業。産地の共通入口はTOP10→日本地図→DISCOVER3県。観光TOP10順位は維持し、47県のCC0形状から実商品/産地本文のある掲載24県だけを選択可能にします。代表単体AI画像・商品名・国内参考価格を正本から表示し、select・地方別一覧・地図ジャンプも用意します。hoverだけに頼らず、タップ/keyboard/JSなしの通常リンクを保ちます。
+
+Googleマップは初回の明示許可後、日英・全店舗で30日間自動表示します。未選択/拒否/期限切れではGoogle通信0、オフ操作で全iframeを停止。localStorageには地図専用choice/version/savedAt/expiresAtだけを保存し、不正/旧版の値は削除し、有効期限30日を過ぎた値は次の読込/再表示時に削除します。保存不可はページ限りです。複数タブ/戻る/再訪でも撤回を尊重します。PC330px/スマホ280pxの枠高を基本に、Google帰属・fullscreen・公式/外部リンクを保ちます。地図設定版maps-v17と広告Privacy版v14は別で、地図設定は広告同意/CMPではありません。
+
+型/単体/build/新UI/実公開の結果は019 validationと[verification](verification.md)へ段階別に記録します。旧検査の「再読込off/Storageなし」を今回へ流用しません。新bitmap生成はなく、旧画像/原本と商品事実を保持した証拠を確認します。[日本地図](japan-map-v17.md)・[残タスク](remaining-task-audit-v17.md)・[法務再確認](legal-review-v17.md)・[商用ホスト移行準備](commercial-host-migration-v17.md)を参照。対応ホストを模したheader試験と、GitHubの実HTTP header観測も分けます。
+
 ## 0.16の記録を読む
 
 [全国追加018](../specs/018-national-jewelry-expansion/)は10県の10商品を加える変更。台帳は公開60/全66商品・下書き6商品、24県、公開関連34技法（全36）、一次出典293件、33店舗/53商品の関連、人物58＋単体60の118画像。購入根拠は国内通販51商品、小売＋公式カタログ9商品であり、全品を通販在庫ありと読み替えない。
 
-今回の実測はnational-stageの記録と[verification.md](verification.md)で追う。ローカルでは型130ファイル・既存unit135・verify成功、stable dist344HTML/328canonical/118画像を確認。実公開の[Source328/328HTML SHA](national-stage-hosted-sources-results.json)、[補足24/24と328正規URL・118画像SHA](national-stage-hosted-release-results.json)、[mobile92/92](national-stage-hosted-mobile-results.json)もすべて成功した。旧0.15の497/314や14地域の画像検査件数を、拡張後の対象数・実行成功として転記しない。
+0.16当時の実測はnational-stageと[保存版verification](verification-v16.md)で追う。ローカルでは型130ファイル・既存unit135・verify成功、stable dist344HTML/328canonical/118画像を確認。実公開の[Source328/328HTML SHA](national-stage-hosted-sources-results.json)、[補足24/24と328正規URL・118画像SHA](national-stage-hosted-release-results.json)、[mobile92/92](national-stage-hosted-mobile-results.json)もすべて成功した。旧0.15の497/314や14地域の画像検査件数を、拡張後の対象数・実行成功として転記しない。
 
 単体画像は[共通reader](../scripts/lib/image-generation-manifests.mjs)が旧v14と新v16のmanifestを併読し、active registry全60商品の対応、重複、実ファイル、distのSHAを検査する。人物の新生成ログは単体ログと別資料。旧98画像の不変、新規23PNGの採用20・棄却3、公開118WebPの整合を分けて確認し、PNG原本を通常buildの入力にしない。
 
@@ -121,7 +131,9 @@ pnpm check:mobile
 | `pnpm check:quality` | 全商品詳細・分類/地域・除外/0件等。件数は公開集合から算出し、旧0.15の497へ固定しない。共通report/prefix |
 | `pnpm check:prices` | 全価格/市場・行き先・地域。件数は公開集合から算出し、旧0.15の314へ固定しない。共通report/prefix |
 | `pnpm check:depth` | 全商品の日英3問、Source操作、Privacy、単体図。共通report/prefix |
-| `node scripts/check-inline-maps.mjs` | opt-in Mapsの代表9。共通report/prefix。Source/current location/CMPとは別の操作 |
+| `node scripts/check-japan-map.mjs` | 全国地図の47形状/代表画像/価格/選択/代替操作と3県。共通report/prefix |
+| `node scripts/check-map-preferences.mjs` | 30日設定/全撤回/保存不可/不正/旧版/期限/複数タブ/Privacy。共通report/prefix |
+| `node scripts/check-inline-maps.mjs` | 実Google埋込と帰属/全撤回。新設定の前提で実行し、旧9ケースを最新成功にしない。共通report/prefix |
 | `pnpm check:seo` | 生成HTMLのSEO。`SEO_REPORT_PATH`、任意の`CHECK_DIST_DIR`。本番origin/base/public設定が必要 |
 | `node scripts/check-publication-metadata.mjs` | 共有公開metaの重点確認。`CHECK_REPORT_PATH`、本番のPUBLIC_SITE_URL/PUBLIC_PUBLISH_MODE |
 | `node scripts/check-hosted-release.mjs` | 公開HTML/画像とlocalの補足。出力は`CHECK_HOSTED_REPORT_PATH`であり、共通CHECK_REPORT_PATHではない |
@@ -162,5 +174,5 @@ repository→export→ZIPのファイル集合・必須設定/spec/正本/検査
 
 ZIP検証後に完了記録を更新した場合は、もう一度export/ZIP/全SHAを検証する。ZIP自身のbytes/SHAは外部の`package-verification-<version>-<revision>.json`へ置き、ZIP内へ自己参照させない。初回0.15の`package-verification-0.15.0.json`は当時の記録として保持する。旧0.15の私的QAのPNG/JSONは別のscreenshots/0.15.0へ分離した資料で、0.16の新しい証跡を上書き保存しない。
 
-最新の納品/公開の概要は[deployment-results.json](deployment-results.json)。現在の0.16全国追加と、017の文書整備・旧0.15の公開検査を区別し、過去の件数や実行時刻を書き換えない。
+最新の納品/公開の概要は[deployment-results.json](deployment-results.json)。現在019の地図/保存設定、直前018の全国追加、017の文書整備・旧0.15の公開検査を区別し、過去の件数や実行時刻を書き換えない。
 

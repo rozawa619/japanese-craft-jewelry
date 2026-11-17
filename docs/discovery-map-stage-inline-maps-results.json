@@ -1,0 +1,182 @@
+{
+  "checkedAt": "2026-11-17T08:36:51.169Z",
+  "origin": "http://127.0.0.1:4323",
+  "base": "/japanese-craft-jewelry/",
+  "method": "Fresh Chrome contexts with no existing profile. Only public map display controls are clicked; no forms, directions or retailer links are submitted. Screenshots are private QA evidence and are not site map assets.",
+  "checks": [
+    {
+      "key": "hamamatsuya-hatajuku-main-ja-1440",
+      "status": "passed",
+      "dimensions": {
+        "x": 772,
+        "y": 108.046875,
+        "width": 558,
+        "height": 330
+      },
+      "attribution": [
+        "地図データ ©2026 Google",
+        "利用規約"
+      ],
+      "screenshot": "artifacts/discovery-map-stage-inline-hamamatsuya-hatajuku-main-ja-1440.png",
+      "initialGoogleRequests": 0,
+      "reloadedGoogleRequests": 0,
+      "closedIframeCount": 0,
+      "ownStorageChanged": true,
+      "onlyMapPreferenceStored": true,
+      "officialLinkNames": true
+    },
+    {
+      "key": "hamamatsuya-hatajuku-main-ja-320",
+      "status": "passed",
+      "dimensions": {
+        "x": 36,
+        "y": 78.4375,
+        "width": 248,
+        "height": 280
+      },
+      "attribution": [
+        "地図データ ©2026 Google",
+        "利用規約"
+      ],
+      "screenshot": "artifacts/discovery-map-stage-inline-hamamatsuya-hatajuku-main-ja-320.png",
+      "initialGoogleRequests": 0,
+      "reloadedGoogleRequests": 0,
+      "closedIframeCount": 0,
+      "ownStorageChanged": true,
+      "onlyMapPreferenceStored": true,
+      "officialLinkNames": true
+    },
+    {
+      "key": "hamamatsuya-hatajuku-main-en-1440",
+      "status": "passed",
+      "dimensions": {
+        "x": 772,
+        "y": 108.421875,
+        "width": 558,
+        "height": 330
+      },
+      "attribution": [
+        "Map data ©2026 Google",
+        "Terms"
+      ],
+      "screenshot": "artifacts/discovery-map-stage-inline-hamamatsuya-hatajuku-main-en-1440.png",
+      "initialGoogleRequests": 0,
+      "reloadedGoogleRequests": 0,
+      "closedIframeCount": 0,
+      "ownStorageChanged": true,
+      "onlyMapPreferenceStored": true,
+      "officialLinkNames": true
+    },
+    {
+      "key": "hamamatsuya-hatajuku-main-en-320",
+      "status": "passed",
+      "dimensions": {
+        "x": 36,
+        "y": 78.328125,
+        "width": 248,
+        "height": 280
+      },
+      "attribution": [
+        "Map data ©2026 Google",
+        "Terms"
+      ],
+      "screenshot": "artifacts/discovery-map-stage-inline-hamamatsuya-hatajuku-main-en-320.png",
+      "initialGoogleRequests": 0,
+      "reloadedGoogleRequests": 0,
+      "closedIframeCount": 0,
+      "ownStorageChanged": true,
+      "onlyMapPreferenceStored": true,
+      "officialLinkNames": true
+    },
+    {
+      "key": "hakone-maruyama-main-ja-1440",
+      "status": "passed",
+      "dimensions": {
+        "x": 772,
+        "y": 108.640625,
+        "width": 558,
+        "height": 330
+      },
+      "attribution": [
+        "地図データ ©2026 Google",
+        "利用規約"
+      ],
+      "screenshot": "artifacts/discovery-map-stage-inline-hakone-maruyama-main-ja-1440.png",
+      "initialGoogleRequests": 0,
+      "reloadedGoogleRequests": 0,
+      "closedIframeCount": 0,
+      "ownStorageChanged": true,
+      "onlyMapPreferenceStored": true,
+      "officialLinkNames": true
+    },
+    {
+      "key": "hakone-maruyama-main-ja-320",
+      "status": "passed",
+      "dimensions": {
+        "x": 36,
+        "y": 78.796875,
+        "width": 248,
+        "height": 280
+      },
+      "attribution": [
+        "地図データ ©2026 Google",
+        "利用規約"
+      ],
+      "screenshot": "artifacts/discovery-map-stage-inline-hakone-maruyama-main-ja-320.png",
+      "initialGoogleRequests": 0,
+      "reloadedGoogleRequests": 0,
+      "closedIframeCount": 0,
+      "ownStorageChanged": true,
+      "onlyMapPreferenceStored": true,
+      "officialLinkNames": true
+    },
+    {
+      "key": "hakone-maruyama-main-en-1440",
+      "status": "passed",
+      "dimensions": {
+        "x": 772,
+        "y": 108.875,
+        "width": 558,
+        "height": 330
+      },
+      "attribution": [
+        "Map data ©2026 Google",
+        "Terms"
+      ],
+      "screenshot": "artifacts/discovery-map-stage-inline-hakone-maruyama-main-en-1440.png",
+      "initialGoogleRequests": 0,
+      "reloadedGoogleRequests": 0,
+      "closedIframeCount": 0,
+      "ownStorageChanged": true,
+      "onlyMapPreferenceStored": true,
+      "officialLinkNames": true
+    },
+    {
+      "key": "hakone-maruyama-main-en-320",
+      "status": "passed",
+      "dimensions": {
+        "x": 36,
+        "y": 78.390625,
+        "width": 248,
+        "height": 280
+      },
+      "attribution": [
+        "Map data ©2026 Google",
+        "Terms"
+      ],
+      "screenshot": "artifacts/discovery-map-stage-inline-hakone-maruyama-main-en-320.png",
+      "initialGoogleRequests": 0,
+      "reloadedGoogleRequests": 0,
+      "closedIframeCount": 0,
+      "ownStorageChanged": true,
+      "onlyMapPreferenceStored": true,
+      "officialLinkNames": true
+    },
+    {
+      "key": "untrusted-provider-rejected-with-fallback",
+      "status": "passed"
+    }
+  ],
+  "failures": [],
+  "finishedAt": "2026-11-17T08:37:56.147Z"
+}

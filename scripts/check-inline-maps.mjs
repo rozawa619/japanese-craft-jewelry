@@ -40,15 +40,15 @@ try{
    await frame.getByText(/©\s*\d{4}\s*Google|Map data.*©|地図データ.*©/).first().waitFor({timeout:30000});
    const body=await frame.locator('body').innerText();const attribution=body.split('\n').filter(s=>/©|Terms|利用規約|地図データ/.test(s));assert.ok(attribution.length>0);
    assert.ok(requests.some(r=>r.origin==='https://www.google.com'&&r.path==='/maps/embed'));
-   const dimensions=await iframe.boundingBox();const expectedHeight=width<=720?210:230;assert.ok(Math.abs(Math.round(dimensions.height)-expectedHeight)<=2,'The nominal map height includes its 2px border.');if(width===1440)assert.ok(Math.abs(Math.round(dimensions.width)-320)<=2);
+   const dimensions=await iframe.boundingBox();const expectedHeight=width<=720?280:330;assert.ok(Math.abs(Math.round(dimensions.height)-expectedHeight)<=2,'The nominal map height includes its 2px border.');if(width===1440)assert.ok(dimensions.width>=400&&dimensions.width<=562,'The desktop map uses the available column without filling the whole card.');
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,'The map must fit a 320px page.');
    await frame.locator('body').evaluate(async()=>{await document.fonts.ready;await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))});
    await panel.scrollIntoViewIfNeeded();const screenshot='artifacts/'+prefix+'-'+key+'.png';await page.screenshot({path:screenshot,fullPage:false});
    await panel.locator('[data-close-map]').click();assert.equal(await panel.locator('iframe').count(),0);assert.equal(await panel.locator('[data-load-map]').isVisible(),true);assert.equal(await panel.locator('[data-load-map]').getAttribute('aria-expanded'),'false');
-   const localAfter=await page.evaluate(()=>({local:Object.keys(localStorage),session:Object.keys(sessionStorage)}));assert.deepEqual(localAfter,localBefore,'Map choice must not be persisted by this site.');
-   requests.length=0;await page.reload({waitUntil:'networkidle'});assert.equal(await panel.locator('iframe').count(),0);assert.equal(requests.length,0,'Reload must not restore a map or connect to Google.');
+   const localAfter=await page.evaluate(()=>({local:Object.keys(localStorage),session:Object.keys(sessionStorage)}));assert.deepEqual(localBefore,{local:[],session:[]});assert.deepEqual(localAfter,{local:['jcj.map-choice.v1'],session:[]});const record=await page.evaluate(()=>JSON.parse(localStorage.getItem('jcj.map-choice.v1')));assert.equal(record.choice,'denied');assert.equal(record.expiresAt-record.savedAt,30*24*60*60*1000);
+   requests.length=0;await page.reload({waitUntil:'networkidle'});assert.equal(await panel.locator('iframe').count(),0);assert.equal(requests.length,0,'Reload after withdrawal must not restore a map or connect to Google.');
    assert.equal(errors.length,0);
-   report.checks.push({key,status:'passed',dimensions,attribution,screenshot,initialGoogleRequests:0,reloadedGoogleRequests:0,closedIframeCount:0,ownStorageChanged:false,officialLinkNames:true});console.log('PASS '+key);
+   report.checks.push({key,status:'passed',dimensions,attribution,screenshot,initialGoogleRequests:0,reloadedGoogleRequests:0,closedIframeCount:0,ownStorageChanged:true,onlyMapPreferenceStored:true,officialLinkNames:true});console.log('PASS '+key);
   }catch(error){const message=String(error);report.checks.push({key,status:'failed',message});report.failures.push({key,message});console.error('FAIL '+key+' '+message)}finally{await context.close()}
   await writeFile(reportPath,JSON.stringify(report,null,2)+'\n');
  }

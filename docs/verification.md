@@ -1,59 +1,50 @@
-# 検証結果 — 0.16.0・全国追加018
+# 検証結果 — 0.17.0・地図で選ぶ019
 
-2026-11-17。10県10商品を追加し、公開60商品・24県へ拡張しました。公開アプリは`86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb`。[Actions44042180272](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44042180272)のsuccessをGitHub APIで確認し、実際の公開ページも検証しました。確定値の正本は[deployment-results.json](deployment-results.json)です。
+2026-11-17。ローカルの実装・検証を完了。公開Actionsと実URLの確認はこれから行います。実数と段階の正本は[deployment-results.json](deployment-results.json)です。
 
-## 今回の内容
+## 実装したこと
 
-秋田・福井・岐阜・広島・鹿児島・徳島・鳥取・沖縄・熊本・島根から、注文を受け付けていた対象色・金具の10品を選びました。各商品に日英の紹介、比較、3問の選び方、公式購入先、実店舗の案内、人物と単体のAI図を追加しています。[追加商品一覧](national-expansion-v16.md)と[仕様018](../specs/018-national-jewelry-expansion/spec.md)を参照してください。
+- TOP10→日本地図→DISCOVER3県へ整理。日英のhome・商品一覧・産地一覧に共通適用。
+- CC0由来の47県形状と、実商品がある24県を対応。hover/focus/tapで代表単体AI画像・価格・商品数が変わり、その県の商品へ進める。地図ジャンプ、行き先select、地方別一覧、JSなしの通常リンクも用意。
+- 店舗Googleマップを最大560px幅・330px高、スマホ280px高へ拡大。初回の明示許可後は全店舗・日英で30日間自動表示。拒否・撤回・期限・旧版・不正値・Storage拒否を処理し、Privacyからも設定を変更可能。
+- [残タスク](remaining-task-audit-v17.md)と[法務](legal-review-v17.md)を再点検。商用ホスト用ヘッダーと[移行手順](commercial-host-migration-v17.md)を準備。本人・契約・権利・アカウントに依存する事項を制作の完了と区別。
 
-全66登録のうち公開60・下書き6。公開関連技法34（登録36）、一次出典293、店舗33、店舗案内に関連する商品53、購入根拠は公式通販受付51品と店舗＋現行カタログ9品です。在庫は確認時点の情報で、将来の通販在庫や個別の店頭在庫を認定しません。
+商品60/登録66・24県・出典293・33店舗/53商品の訪問案内・AI画像118は継承。商品事実・価格・購入根拠・画像を増減していません。[保持検査](discovery-map-stage-preservation-results.json)で正本15ファイルと118画像のbytesを旧Gitへ照合しています。
 
-## ローカルの検証
+## ローカル検証
 
-| 対象 | 結果 |
+| 対象 | 実測 |
 | --- | --- |
-| 型・データ・単体・生成 | 初回`pnpm verify`は型130ファイル・unit135件・生成344HTMLが成功。その後追加した画像manifestの負例等9件を含め、最終`pnpm check`は型131ファイルでエラー/警告/ヒント0、`pnpm test`は144/144成功 |
-| 商品/分類/絞込/比較/JSなし | [617/617](national-stage-quality-results.json)。全60商品、詳細360検査、地域/種類282往復。axe30画面で違反0、page/console error0 |
-| 国内価格と別市場 | [374/374](national-stage-prices-results.json)。60商品/24県、既存9商品の別市場を保持。axe18画面で違反0 |
-| 出典の一覧 | [328/328](national-stage-sources-results.json)。120商品ページ、出典一覧448、出典レコード1580。確認日は閉じた一覧の中に保持 |
-| スマホ等 | [92/92](national-stage-mobile-results.json)。7viewport・日英、出典操作120、種類画像112、axe10画面で違反0、既存代表店舗の実Maps2件 |
-| 種類画像/タップ | [種類52/52](national-stage-type-images-results.json)、24地域・104画像。[touch4/4](national-stage-touch-results.json)、実tap2flow |
-| 新店舗の地図 | [20/20](national-stage-new-maps-results.json)。10商品×日英。初期/再読込の外部通信0、明示表示時のみGoogle要求20、閉じるとiframe削除、cookie/storageなし |
-| 画像 | [人物59/59](national-stage-editorial-images-results.json)・[単体61/61](national-stage-detail-images-results.json)。合計118WebP、全60商品に対応 |
-| SEO | [328正規URL](national-stage-seo-results.json)。相互hreflang/canonical/sitemap/JSON-LD、商品120ページ、noindex16ページ |
-| 広告Privacy | [4/4](national-stage-privacy-results.json)。AdSenseはoff、未承認リンクは通常リンク |
-| 既存の保持 | [旧Gitとの比較](national-stage-preservation-results.json)。旧56商品を含む267catalog record、199訳、258出典、98画像、旧生成記録3ファイルを保持 |
+| 最終静的検証 | [pnpm verify](discovery-map-stage-static-results.json)：型141ファイルでerror/warning/hint0、unit149/149、344HTML・470生成物 |
+| 商品・分類・絞込・比較・JSなし | [617/617](discovery-map-stage-quality-results.json)、60商品/360詳細、地域種類282往復、axe30画面違反0 |
+| 日本地図 | [193/193](discovery-map-stage-japan-map-results.json)、47形状/24県、日英×3面×3幅、選択188、実touch/noJS、axe6画面違反0 |
+| 地図の表示設定 | [22/22](discovery-map-stage-map-preferences-results.json)、6responsive flow、無効6、Storage全面拒否2＋書込拒否1、タブ同期・Privacy全撤回、悪意URL3、noJS2、開いたまま期限切れ。axe8画面違反0 |
+| スマホ/横向き/keyboard | [92/92](discovery-map-stage-mobile-results.json)、7viewport・日英、出典120・種類画像112、axe10画面違反0、実Maps2 |
+| 実際のGoogleマップ | [9/9](discovery-map-stage-inline-maps-results.json)、8表示で日英/320/1440のGoogle帰属を確認、悪意provider1拒否。地図を閉じて再読込するとoff |
+| 出典/HTML | [328/328](discovery-map-stage-sources-results.json)、最終distと全生HTML SHA一致、出典448一覧/1580records |
+| SEO | [328正規URL](discovery-map-stage-seo-results.json)、相互canonical/hreflang/JSON-LD/sitemap、120商品画像、16noindex |
+| 広告切替 | [隔離6/6](discovery-map-stage-ad-build-results.json)、承認/停止/不許可host/言語/市場・通常fallback、本番catalog/dist不変。現在は未申請通常URL/AdSense off |
+| 画像と広告Privacy | [人物59/59](discovery-map-stage-editorial-images-results.json)・[単体61/61](discovery-map-stage-detail-images-results.json)・[Privacy4/4](discovery-map-stage-privacy-results.json) |
+| 既知依存脆弱性 | [最新audit](discovery-map-stage-dependency-audit-results.json)、348依存・全severity0 |
+| 移行用HTTPヘッダー | [7/7](discovery-map-stage-migration-headers-results.json)。対応ホストを模したloopback配信で実応答/親frame拒否/商品自身のGoogle許可を確認。GitHubへ適用済みという結果ではない |
 
-9件の追加テストはアプリ生成物を変えません。ブラウザー検証中の再buildは行わず、[安定した469ファイルのmanifest](national-stage-build-manifest.json)を基準にしました。初回verifyと最終check/unitの段階は[静的検証記録](national-stage-static-results.json)で区別しています。
+### 最後の法務追補との対応
 
-新店舗のMaps20flowはGoogle要求を遮断したアプリ操作の検査です。タイル・ピン・帰属表示を20店舗すべてで実描画した検査ではありません。別段階で公式埋込4件とGoogle Share UI6件の店舗名・住所・埋込URLを確認し、[地図の調査記録](research/national-map-embeds-v16.json)へ残しました。第三者のAPI keyは転用していません。
+広範囲617・地図193・表示設定22・mobile92・Maps9・広告6・移行7の後に、日英PrivacyへGoogleの処理主体名を各1段落だけ追加しました。[厳密差分](discovery-map-stage-provider-clarification-delta.json)は470生成物中468ファイルのSHA不変を確認し、変更した2HTMLもその段落を取り除くと旧bytesと完全一致。JS/CSP/style/metadata/URLは不変です。その後の最終verify141/149、Source328と[Privacy4画面](discovery-map-stage-provider-privacy-results.json)（JAEN/320/1440・axe2画面違反0）が追補を確認しました。広範囲617を追補後にも再走査したとは扱いません。
 
-## 実際の公開サイト
+## 途中で確認したこと
 
-ローカル成功を公開成功に読み替えず、Actions成功後に公開URLへアクセスしました。[集約記録](national-stage-hosted-results.json)と各JSONが実測の範囲です。
+- 初回地図193/193後、狭幅で選択結果が画面外に隠れる点を改善し、明示tap/Enter後のカード可視を追加して再193/193。
+- 読み取りだけできるStorageに旧許可が残る境界を補強。一時値で書込可否を確認して即削除し、他タブの新しい拒否を古い値で上書きしない。書込不可は自動復帰させず、明示選択をそのページ内だけに適用。
+- 表示設定検査の初回/再走査20/21は、EN1440でdriverのヘッダー自動スクロール後にpointerが主documentへ届かなかったケース。原記録を保持し、固定sleep/force/DOMclickではなく、scroll位置とhit-testの条件を確認してnative mouse入力を記録。主documentへのpointerdown/up/click・正常言語遷移を確認し、全22成功。
+- 移行ヘッダー検査の初回5/7はmeta属性名を大文字固定で検索したQA側の誤り。HTMLの大小文字を区別しない照合へ修正して全7成功。初回raw/logはprivate artifactsへ保持。
 
-| 公開検証 | 結果 |
-| --- | --- |
-| 出典/配信内容 | [328/328](national-stage-hosted-sources-results.json)。同じHTTP応答の生HTML SHA256が最終distと全件一致 |
-| メタ/画像/補足 | [24/24](national-stage-hosted-release-results.json)。328正規URLの200・metadata・CSP等、118画像の200・SHA一致 |
-| スマホ等 | [92/92](national-stage-hosted-mobile-results.json)。7viewport・日英、axe10画面で違反0、実Maps2件 |
-| 種類画像 | [52/52](national-stage-hosted-types-results.json)。24県・日英・104画像instance、page/console error0 |
-| タップ | [4/4](national-stage-hosted-touch-results.json)。実tap2flow |
+## 法務と残る運営条件
 
-広範囲617・価格374はローカルの検査です。公開で同じ全件UI検査を再実行したとは記載しません。Chrome emulationの結果を実機Safari/iOSの認定にはしません。検索への掲載・順位・訪問数は未測定です。
+[法務の一次資料23件・判断13項目](legal-review-v17.json)と[e-Gov現行XML追補](legal-egov-followup-v17.json)を記録。外部送信・ステマ/広告・Google Maps/同意・著作権/AI・特商法・ホスト契約を分けて確認しました。初回の本文取得失敗と、公式APIで取得できた3法令・対象5条文も区別しています。
 
-種類検査の[初回50/52](national-stage-hosted-types-first-attempt-results.json)は広島ENの一時503と付随consoleエラーでした。[fresh200と公開/dist/manifestの全SHA一致](national-stage-hosted-types-recheck-results.json)を確認し、アプリを変えず全52を再走査して成功しました。初回も保存しています。最後に[469生成物の集合/全SHA一致](national-stage-final-output-integrity.json)を確認しました。
+GitHub Pagesの商用用途適合、適用される場合の実主体/権利対応情報、実広告アカウント/CMP・本人契約・MFA等は未完了です。全法域・全画像権利、実機iOS/Safari、将来在庫、検索掲載/順位、AdSense審査を認定する検査ではありません。具体的な次の作業は[棚卸し](remaining-task-audit-v17.md)と[移行準備](commercial-host-migration-v17.md)から確認できます。
 
-## 画像と納品
+## 公開・納品
 
-新規採用は人物10・単体10。候補3枚を棄却して生成toolで修正し、元PNGは採用20・棄却3を分離保管しました。[人物の実prompt/採否](image-generation-v16.json)と[単体の実prompt/採否](image-generation-solo-v16.json)を同梱しています。公式写真を転載せず、AI図から正確な仕様・試着・数量を認定しません。
-
-元PNG23枚＋生成記録2件＋READMEの別ZIPは26ファイル全SHA照合済み。全ソースの最新版ZIPと全件整合性proofは[引継ぎ](handoff.md)・deployment-resultsのsourceDeliveryから辿れます。ZIP自体のSHAはZIP外のproofに置き、完了記録を追加した後にも再export/全SHA照合します。
-
-## 引き継ぐ範囲
-
-依存とCI設定は変更していません。現行CIのruntime/依存監査/build gateは成功しています。以前の[セキュリティレビュー](security-review-v15.md)と、アカウント管理・レスポンスヘッダー・商用ホスト判断などの未完了事項は維持しています。今回の追加を全脆弱性・全法令・AdSense合格の認定にはしません。
-
-旧0.15の段階別検証は[保存版](verification-v15.md)と[旧deployment](deployment-v15-before-national.json)へ分離しました。追試のコマンドと選び方は[検証ガイド](verification-guide.md)、途中修正も含む記録は[018 validation](../specs/018-national-jewelry-expansion/validation.md)を参照してください。
-
-最終ソースは971ファイル・118公開画像です。repository/export/ZIPの集合と全件SHAを照合し、完了記録を含めて再梱包します。版付きZIP・latest・外部proofはdeployment-resultsのsourceDeliveryを参照してください。
+現在は公開後の検証と最終ZIPの作成前です。Actions成功・実URL/全HTML画像の照合、ソースexport/ZIPの全件SHAを確認して追記します。旧0.16の実測は[保存版](verification-v16.md)・[旧deployment](deployment-v16-before-map.json)を保持しています。

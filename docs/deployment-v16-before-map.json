@@ -1,0 +1,449 @@
+{
+  "version": "0.16.0",
+  "specification": "018-national-jewelry-expansion",
+  "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
+  "branch": "main",
+  "status": "deployed_and_verified",
+  "recordedAt": "2026-11-17T08:04:39.675Z",
+  "applicationCommit": "86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb",
+  "actions": {
+    "id": 44042180272,
+    "headSha": "86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44042180272",
+    "updatedAt": "2026-11-17T07:54:26Z",
+    "observedAt": "2026-11-17T07:54:34.367Z"
+  },
+  "previousDeployedVersion": "0.15.0",
+  "previousDeployedApplicationCommit": "1f0021306e87ce9e7dc43bdf446cffedc59e4134",
+  "previousRecord": "docs/deployment-v15-before-national.json",
+  "publicUrls": {
+    "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+    "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
+    "places": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/"
+  },
+  "content": {
+    "publishedProducts": 60,
+    "catalogProducts": 66,
+    "draftProducts": 6,
+    "regions": 24,
+    "activeCrafts": 34,
+    "catalogCrafts": 36,
+    "sources": 293,
+    "stores": 33,
+    "productsWithStores": 53,
+    "onlineEvidence": 51,
+    "retailCatalogEvidence": 9,
+    "publicImages": 118,
+    "stylingImages": 58,
+    "soloImages": 60,
+    "newProducts": 10,
+    "newRegions": 10,
+    "newImageFiles": 20,
+    "existingImageBytesRetained": 98
+  },
+  "expansion": {
+    "overview": "docs/national-expansion-v16.md",
+    "regions": [
+      "Akita",
+      "Fukui",
+      "Gifu",
+      "Hiroshima",
+      "Kagoshima",
+      "Tokushima",
+      "Tottori",
+      "Okinawa",
+      "Kumamoto",
+      "Shimane"
+    ],
+    "purchaseChecks": "Exact listed options accepting orders at source-check time; no future stock guarantee.",
+    "preservation": "docs/national-stage-preservation-results.json",
+    "maps": "docs/research/national-map-embeds-v16.json"
+  },
+  "localVerification": {
+    "static": {
+      "version": "0.16.0",
+      "recordedAt": "2026-11-17T08:04:39.664Z",
+      "status": "passed",
+      "node": "24.22.3",
+      "pnpm": "11.25.0",
+      "firstFullVerify": {
+        "command": "pnpm verify",
+        "typeFiles": 130,
+        "errors": 0,
+        "warnings": 0,
+        "hints": 0,
+        "unitTests": {
+          "total": 135,
+          "passed": 135,
+          "failed": 0
+        },
+        "log": {
+          "path": "artifacts/national-stage/verify.log",
+          "sha256": "214e96eed56720e45043c9f57397bc28e4a68c774cf73fd1b919fbc114a8d46f"
+        }
+      },
+      "finalCheck": {
+        "command": "pnpm check",
+        "typeFiles": 131,
+        "errors": 0,
+        "warnings": 0,
+        "hints": 0,
+        "log": {
+          "path": "artifacts/national-stage/final-check.log",
+          "sha256": "38cc8185d35ba99a8ac35eb1c789150d73b4e6144b7082d7a19b0d65f8e62ae3"
+        }
+      },
+      "finalUnit": {
+        "command": "pnpm test",
+        "total": 144,
+        "passed": 144,
+        "failed": 0,
+        "log": {
+          "path": "artifacts/national-stage/final-test.log",
+          "sha256": "bf6c9c90393c0b15833abf9dec7c80cee41a52577e949a1ee982d7d99cd1be80"
+        }
+      },
+      "phaseExplanation": "Nine manifest-reader tests were added after the full verify. Final check and all144 unit tests passed. Browser-tested dist was not rebuilt; app bytes are those of the full verify. Documentation/evidence added afterward do not feed public templates.",
+      "build": {
+        "htmlPages": 344,
+        "canonicalPages": 328,
+        "hrefSrcReferences": 19565,
+        "anchors": 2998,
+        "ordinaryRetailerLinks": 1216,
+        "sponsoredLinks": 0,
+        "executableInlineCspHashes": 1229,
+        "inertJsonBlocks": 328,
+        "legacyReadingRedirects": 14,
+        "retiredImagesPruned": 10,
+        "outputFiles": 469,
+        "publicWebpImages": 118,
+        "manifest": "docs/national-stage-build-manifest.json"
+      }
+    },
+    "reports": {
+      "quality": "docs/national-stage-quality-results.json",
+      "prices": "docs/national-stage-prices-results.json",
+      "sources": "docs/national-stage-sources-results.json",
+      "mobile": "docs/national-stage-mobile-results.json",
+      "type-images": "docs/national-stage-type-images-results.json",
+      "touch": "docs/national-stage-touch-results.json",
+      "new-maps": "docs/national-stage-new-maps-results.json",
+      "copy": "docs/national-stage-copy-results.json",
+      "editorial-images": "docs/national-stage-editorial-images-results.json",
+      "detail-images": "docs/national-stage-detail-images-results.json",
+      "privacy": "docs/national-stage-privacy-results.json",
+      "seo": "docs/national-stage-seo-results.json",
+      "preservation": "docs/national-stage-preservation-results.json"
+    },
+    "results": {
+      "quality": {
+        "checks": 617,
+        "passed": 617,
+        "failed": 0,
+        "publishedProducts": 60,
+        "withdrawnProducts": 6,
+        "withdrawnRoutesVerified": 12,
+        "withdrawnHtmlFilesScanned": 344,
+        "unknownPricePublishedProducts": 0,
+        "unknownPriceDetailSample": null,
+        "productDetailChecks": 360,
+        "uniqueProductsChecked": 60,
+        "regionalTypeRoundtrips": 282,
+        "axeScreens": 30,
+        "axeViolations": 0,
+        "screenshots": 22,
+        "pageErrors": 0,
+        "consoleErrors": 0,
+        "externalRequests": 0
+      },
+      "prices": {
+        "checks": 374,
+        "passed": 374,
+        "failed": 0,
+        "publishedProducts": 60,
+        "uniqueProductsChecked": 60,
+        "dualMarketProducts": 9,
+        "unknownPricePublishedProducts": 0,
+        "unknownPriceDetailSample": null,
+        "productDetailChecks": 360,
+        "regionsChecked": 24,
+        "regionContextChecks": 144,
+        "axeScreens": 18,
+        "axeViolations": 0,
+        "screenshots": 6,
+        "pageErrors": 0,
+        "consoleErrors": 0
+      },
+      "sources": {
+        "checks": 328,
+        "passed": 328,
+        "failed": 0,
+        "htmlSha256Comparisons": 328,
+        "productPages": 120,
+        "sourceDisclosures": 448,
+        "sourceRecords": 1580
+      },
+      "mobile": {
+        "checks": 92,
+        "passed": 92,
+        "failed": 0,
+        "viewports": 7,
+        "locales": 2,
+        "representativeRoutes": 6,
+        "sourceControls": 120,
+        "typeImageInstances": 112,
+        "axeScreens": 10,
+        "axeViolations": 0,
+        "liveMaps": 2,
+        "screenshots": 16
+      },
+      "type-images": {
+        "checks": 52,
+        "passed": 52,
+        "failed": 0,
+        "regions": 24,
+        "locales": 2,
+        "imagesChecked": 104,
+        "screenshots": 4,
+        "pageErrors": 0,
+        "consoleErrors": 0
+      },
+      "touch": {
+        "checks": 4,
+        "passed": 4,
+        "failed": 0,
+        "mobileTouchFlows": 2,
+        "screenshots": 8
+      },
+      "new-maps": {
+        "expectedFlows": 20,
+        "checks": 20,
+        "passed": 20,
+        "failed": 0,
+        "products": 10,
+        "uniqueStores": 10,
+        "locales": 2,
+        "initialExternalAttempts": 0,
+        "explicitGoogleAttempts": 20,
+        "reloadExternalAttempts": 0,
+        "screenshots": 20,
+        "sourceInputsUnchanged": true
+      },
+      "copy": {
+        "checks": 94,
+        "passed": 94,
+        "failed": 0,
+        "publishedProducts": 60,
+        "existingProducts": 42,
+        "newProducts": 18
+      },
+      "editorial-images": {
+        "checks": 59,
+        "passed": 59,
+        "failed": 0,
+        "publishedProducts": 60,
+        "registeredProducts": 60,
+        "uniqueImages": 58,
+        "baselineFilesPreserved": 25,
+        "retiredFilesExcluded": 10,
+        "totalImageBytes": 4933572,
+        "warnings": 0
+      },
+      "detail-images": {
+        "checks": 61,
+        "passed": 61,
+        "failed": 0,
+        "products": 60,
+        "uniqueFiles": 60,
+        "bytes": 2937308
+      },
+      "privacy": {
+        "checks": 4,
+        "passed": 4,
+        "failed": 0,
+        "htmlPages": 344,
+        "mode": "off"
+      }
+    },
+    "seo": {
+      "status": "passed",
+      "canonicalPages": 328,
+      "noindexPages": 16,
+      "productPages": 120
+    },
+    "newMapsLimit": "Twenty JA/EN new-store app flows block explicit Google requests; validates app opt-in/removal/reload, not live tiles/pins. Two existing representative live Maps separately exercised in mobile checks.",
+    "finalOutputIntegrity": "docs/national-stage-final-output-integrity.json"
+  },
+  "hostedVerification": {
+    "version": "0.16.0",
+    "recordedAt": "2026-11-17T08:04:39.674Z",
+    "status": "passed",
+    "applicationCommit": "86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb",
+    "actions": {
+      "id": 44042180272,
+      "headSha": "86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44042180272",
+      "updatedAt": "2026-11-17T07:54:26Z",
+      "observedAt": "2026-11-17T07:54:34.367Z"
+    },
+    "origin": "https://rozawa619.github.io",
+    "base": "/japanese-craft-jewelry/",
+    "reports": {
+      "sources": "docs/national-stage-hosted-sources-results.json",
+      "release": "docs/national-stage-hosted-release-results.json",
+      "mobile": "docs/national-stage-hosted-mobile-results.json",
+      "types": "docs/national-stage-hosted-types-results.json",
+      "touch": "docs/national-stage-hosted-touch-results.json"
+    },
+    "results": {
+      "sources": {
+        "checks": 328,
+        "passed": 328,
+        "failed": 0,
+        "htmlSha256Comparisons": 328,
+        "productPages": 120,
+        "sourceDisclosures": 448,
+        "sourceRecords": 1580
+      },
+      "release": {
+        "checks": 24,
+        "passed": 24,
+        "failed": 0,
+        "canonicalUrls": 328,
+        "uniqueImages": 118,
+        "pageErrors": 0,
+        "consoleErrors": 0
+      },
+      "mobile": {
+        "checks": 92,
+        "passed": 92,
+        "failed": 0,
+        "viewports": 7,
+        "locales": 2,
+        "representativeRoutes": 6,
+        "sourceControls": 120,
+        "typeImageInstances": 112,
+        "axeScreens": 10,
+        "axeViolations": 0,
+        "liveMaps": 2,
+        "screenshots": 16
+      },
+      "types": {
+        "checks": 52,
+        "passed": 52,
+        "failed": 0,
+        "regions": 24,
+        "locales": 2,
+        "imagesChecked": 104,
+        "screenshots": 4,
+        "pageErrors": 0,
+        "consoleErrors": 0
+      },
+      "touch": {
+        "checks": 4,
+        "passed": 4,
+        "failed": 0,
+        "mobileTouchFlows": 2,
+        "screenshots": 8
+      }
+    },
+    "scope": "Read-only live verification. Source scan compares328 raw HTML SHA to stable local dist; release checks328 canonical metadata routes and118 raster SHA. Hosted responsive/type/touch are separate targeted checks. Broad617/price374 are local, not a hosted rerun.",
+    "retryHistory": [
+      {
+        "initialReport": "docs/national-stage-hosted-types-first-attempt-results.json",
+        "initialSummary": {
+          "checks": 52,
+          "passed": 50,
+          "failed": 2,
+          "regions": 24,
+          "locales": 2,
+          "imagesChecked": 103,
+          "screenshots": 4,
+          "pageErrors": 0,
+          "consoleErrors": 2
+        },
+        "reason": "One transient HTTP503 at EN Hiroshima caused the route failure and a dependent console-error check. No app change.",
+        "freshRecheck": "docs/national-stage-hosted-types-recheck-results.json",
+        "freshRecheckPassed": true,
+        "fullRerunReport": "docs/national-stage-hosted-types-results.json",
+        "finalSummary": {
+          "checks": 52,
+          "passed": 52,
+          "failed": 0,
+          "regions": 24,
+          "locales": 2,
+          "imagesChecked": 104,
+          "screenshots": 4,
+          "pageErrors": 0,
+          "consoleErrors": 0
+        }
+      }
+    ]
+  },
+  "security": {
+    "runtime": "24.22.3",
+    "dependencyAndWorkflowChanges": false,
+    "review": "docs/security-review-v15.md",
+    "evidence": "docs/security-review-v15.json",
+    "currentCi": "Successful Actions runs existing runtime/dependency-audit/build gates; no fresh all-scope security certification claimed.",
+    "hostAccountChangesPerformed": false,
+    "remaining": "Host response-header control, account MFA/branch/recovery administration and commercial-host eligibility remain separate open work."
+  },
+  "advertising": {
+    "adsense": "off",
+    "affiliateLinks": "not_applied;ordinary",
+    "certifiedCmp": "not-configured",
+    "googleAccount": "not-configured",
+    "applicationsSubmitted": false
+  },
+  "sourceDelivery": {
+    "status": "verified",
+    "revision": "national-018",
+    "source": "../japanese-craft-jewelry-delivery/source",
+    "zip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-source.zip",
+    "versionedZip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-source-0.16.0-national-018.zip",
+    "proof": "../japanese-craft-jewelry-delivery/package-verification-0.16.0-national-018.json",
+    "zipHashLocation": "External revisioned package-verification JSON; never self-referenced inside ZIP",
+    "originals": {
+      "status": "verified",
+      "zip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-originals-0.16.0.zip",
+      "proof": "../japanese-craft-jewelry-delivery/originals-verification-0.16.0.json",
+      "fileCount": 26,
+      "pngCount": 23,
+      "acceptedPngs": 20,
+      "rejectedPngs": 3,
+      "bytes": 35561799,
+      "sha256": "383cf02e99cdf06d936118e9d071f35df68a1b99191de31442b7f450de386254",
+      "everyFileSha256Checks": 26,
+      "allFileHashesMatch": true
+    },
+    "fileCount": 971,
+    "everyRepositoryFileSha256Checks": 971,
+    "everyFileSha256Checks": 971,
+    "repositoryAndExportFileSetsMatch": true,
+    "sourceAndZipFileSetsMatch": true,
+    "allFileHashesMatch": true,
+    "publicImages": 118,
+    "publishedProducts": 60,
+    "retiredImagesExcluded": 10,
+    "explicitExcludedEntries": 0,
+    "newImageGeneration": true,
+    "publicOutputUnchangedSinceLocalBrowserChecks": true,
+    "finalPass": "Completion notes added after the first successful package; final export and all hashes checked again. ZIP bytes/hash are only in the external proof.",
+    "limits": "File integrity and explicit excluded paths only; not a whole-history credential audit or app/AdSense/legal certification."
+  },
+  "documentationRevision": "018",
+  "limits": [
+    "No physical iOS/Safari certification.",
+    "No guarantee of all vulnerabilities, legal/contract eligibility, search ranking/traffic, future store stock or AdSense approval.",
+    "No application, registration, fees, DNS, migration or account-setting changes."
+  ],
+  "documentationVerification": {
+    "report": "docs/national-stage-docs-results.json",
+    "scope": "24 current maintainer/spec/research documents; local paths/anchors and command names only. External URLs counted, not fetched."
+  }
+}

@@ -1,3 +1,5 @@
+/** Historical0.16 release flow: per-page maps without stored preferences.
+ * Use check-map-preferences.mjs for the current0.17 map behavior. */
 /** New national-expansion store records through the real mobile UI.
  * Run against a stable preview; never build while this check is running.
  * CHECK_BASE_URL must be an origin, PUBLIC_BASE_PATH must match that build.
