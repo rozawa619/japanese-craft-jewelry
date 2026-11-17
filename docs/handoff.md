@@ -43,3 +43,9 @@ COCOON2/欠品18K/現行販売未確認の畠山2/従来hairpinはdraft維持。
 最新の全体結果はdocs/visual-seo-stage-*、013/validation、deployment-results.json。editorial-stageは012の履歴。pnpm verify、pnpm check:seo、pnpm readiness、日英PC/スマホの画像・導線、隔離広告6ケースを対象とする。Googleアカウントの管理画面による登録/流入検証は別途必要。
 
 全ソースは隣接japanese-craft-jewelry-delivery/sourceとjapanese-craft-jewelry-source.zip。CI/lock/設定例/全ソース/仕様/調査/最終report/公開48画像を含む。.git/.env/認証/node_modules/dist/artifacts/無許諾の内部参照写真/退役public10画像は除外。元PNGはgenerated-originals/0.13.0へ分けて保存。最終版・ファイル集合・全ファイルSHA256は同所package-verification-0.13.0.json。ZIP自身のhashはZIP外で保管する。
+
+最終公開アプリ0608da5370dde9541d9a72241c581f3591e836ec、Actions44005929688 success（2026-11-17T02:51:33Z）。ローカル画像320/quality497、公開quality497/補足24が成功。公開248ページのtitle/description/hreflang/JSON-LD、48画像の200/SHA一致を確認。全体の420画面/402axe画面は問題なし。raw455検査中の1件だけ旧robots固定期待が残っていたため検査を共有helperへ修正し、同じ項目をlocal/公開で各1/1成功。残失敗0、全体455を再実行したと扱わない。詳細full-browser-resolution/verificationを読む。
+
+元PNG23点のZIPはjapanese-craft-jewelry-ai-originals-0.13.0.zip、25エントリー全件SHA照合済み。書出しスクリプトは未取得のartifactsディレクトリがなくてもソースを書き出せる。最終追加は検証/納品用scriptと文書だけで、配信320ファイルの内容は公開検証時から変更していない。
+
+最終書出し対象は643ファイル、公開50商品の画像48枚・日英decision・013仕様/全ソース/検証記録を含め全ファイルSHA256照合を実施。完了文書を含む再書出しにも同じ照合を行い、最終ZIPのhashは外部package-verification-0.13.0.jsonで確認する。

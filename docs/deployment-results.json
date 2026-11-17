@@ -1,19 +1,19 @@
 {
-  "version": "0.12.0",
+  "version": "0.13.0",
   "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
   "branch": "main",
   "status": "deployed_and_verified",
-  "applicationCommit": "9da1bfb8f671107debb16293e73eea3d50f0924c",
+  "applicationCommit": "0608da5370dde9541d9a72241c581f3591e836ec",
   "actions": {
-    "id": 43998680246,
-    "headSha": "9da1bfb8f671107debb16293e73eea3d50f0924c",
+    "id": 44005929688,
+    "headSha": "0608da5370dde9541d9a72241c581f3591e836ec",
     "status": "completed",
     "conclusion": "success",
-    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/43998680246",
-    "updatedAt": "2026-11-17T01:52:06Z"
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44005929688",
+    "updatedAt": "2026-11-17T02:51:33Z"
   },
-  "previousDeployedVersion": "0.11.0",
-  "previousDeployedApplicationCommit": "f85c757c90fc332d10f62b984b6949824865d812",
+  "previousDeployedVersion": "0.12.0",
+  "previousDeployedApplicationCommit": "9da1bfb8f671107debb16293e73eea3d50f0924c",
   "publicUrls": {
     "entry": "https://rozawa619.github.io/japanese-craft-jewelry/",
     "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
@@ -25,9 +25,11 @@
     "regions": 14,
     "crafts": 24,
     "sources": 258,
-    "images": 25,
-    "illustratedProducts": 27,
-    "textPreviews": 23,
+    "images": 48,
+    "illustratedProducts": 50,
+    "textPreviews": 0,
+    "newImages": 23,
+    "existingImageFilesRetained": 25,
     "stores": 23,
     "productsWithStores": 43,
     "online": 41,
@@ -35,68 +37,71 @@
   },
   "localVerification": {
     "reports": {
-      "static": "docs/editorial-stage-static-results.json",
-      "copy": "docs/editorial-stage-copy-results.json",
-      "focused": "docs/editorial-stage-browser-results.json",
-      "full": "docs/editorial-stage-full-browser-results.json",
-      "prices": "docs/editorial-stage-prices-results.json",
-      "ads": "docs/editorial-stage-ad-build-results.json",
-      "external": "docs/editorial-stage-external-links.json",
-      "finalCopy": "docs/editorial-stage-final-copy-results.json",
-      "buildDelta": "docs/editorial-stage-final-build-delta.json"
+      "static": "docs/visual-seo-stage-static-results.json",
+      "quality": "docs/visual-seo-stage-browser-results.json",
+      "full": "docs/visual-seo-stage-full-browser-results.json",
+      "images": "docs/visual-seo-stage-image-browser-results.json",
+      "imageFiles": "docs/visual-seo-stage-image-files-results.json",
+      "imageLayout": "docs/visual-seo-stage-image-layout-results.json",
+      "imageComparison": "docs/visual-seo-stage-image-screenshot-comparison.json",
+      "seo": "docs/visual-seo-stage-seo-results.json",
+      "ads": "docs/visual-seo-stage-ad-build-results.json",
+      "hosted": "docs/visual-seo-stage-hosted-browser-results.json",
+      "supplement": "docs/visual-seo-stage-hosted-supplement-results.json",
+      "fullFollowup": "docs/visual-seo-stage-publication-metadata-results.json",
+      "fullResolution": "docs/visual-seo-stage-full-browser-resolution.json"
     },
     "static": {
-      "version": "0.12.0",
-      "recordedAt": "2026-11-17T01:43:26.502Z",
+      "version": "0.13.0",
+      "recordedAt": "2026-11-17T02:46:44.892Z",
       "command": "pnpm verify",
       "status": "passed",
-      "typeFiles": 87,
+      "typeFiles": 95,
       "errors": 0,
       "warnings": 0,
       "hints": 0,
       "unitTests": {
-        "total": 92,
-        "passed": 92,
+        "total": 102,
+        "passed": 102,
         "failed": 0
       },
       "build": {
         "htmlPages": 264,
-        "hrefSrcReferences": 14130,
+        "hrefSrcReferences": 14744,
         "anchors": 1949,
         "ordinaryRetailerLinks": 1016,
         "sponsoredLinks": 0,
         "executableInlineCspHashes": 601,
         "inertJsonBlocks": 248,
         "legacyReadingRedirects": 14,
-        "retiredImagesPruned": 10
+        "retiredImagesPruned": 10,
+        "outputFiles": 320
       },
-      "initialFailure": {
-        "observed": "The first Astro type check rejected draft-history stories without the newly required decision field.",
-        "fix": "StoredProductStory permits historical draft records without decision. storyFor requires decision before returning a public ProductStory; validation still requires exact localized decision fields for every published product.",
-        "scope": "No draft history was fabricated or published and the required public decision gate was not weakened."
+      "images": {
+        "checks": 49,
+        "passed": 49,
+        "failed": 0,
+        "publishedProducts": 50,
+        "registeredProducts": 50,
+        "uniqueImages": 48,
+        "baselineFilesPreserved": 25,
+        "retiredFilesExcluded": 10,
+        "totalImageBytes": 4160080,
+        "warnings": 0
       },
-      "log": "artifacts/editorial-stage-verify.log (local build artifact; omitted from source ZIP)",
-      "limits": "Type/data/tests/static HTML/CSP/link checks, not browser/hosted or merchant checkout verification.",
-      "finalPolishFollowup": {
-        "checkedAt": "2026-11-17T01:52:29.969Z",
-        "command": "pnpm build; node scripts/check-built.mjs",
-        "status": "passed",
-        "reason": "One final scoped CSS line-break:strict declaration after the last full verify; no data, scripts, advertising or type contracts changed.",
-        "buildResult": "264HTML,14130refs,1949anchors,1016ordinary0ads,601scriptHashes,248JSON,14legacy,10retiredPruned",
-        "deltaReport": "docs/editorial-stage-final-build-delta.json",
-        "focusedReport": "docs/editorial-stage-final-copy-results.json",
-        "visualReport": "docs/editorial-stage-final-visual-results.json"
-      }
+      "log": "artifacts/visual-seo-stage-final-verify.log (local, omitted from source ZIP)",
+      "visualPolish": {
+        "reason": "Manual review found a cropped face in an old portrait card. All50 registry entries now preserveRatio=true. Existing25 image bytes and published50 products unchanged.",
+        "prePolishReports": [
+          "docs/visual-seo-stage-pre-polish-browser-results.json",
+          "docs/visual-seo-stage-pre-polish-image-browser-results.json"
+        ],
+        "earlierBroadRun": "An earlier full bilingual run was stopped for this visual polish; no success is claimed for that incomplete run.",
+        "finalBuild": true
+      },
+      "limits": "Local source/data/tests/static output, image metadata/bytes and internal links. Google indexing, ranking, traffic, merchant checkout, legal/contract eligibility and AdSense approval are not verified."
     },
-    "copySummary": {
-      "checks": 94,
-      "passed": 94,
-      "failed": 0,
-      "publishedProducts": 50,
-      "existingProducts": 42,
-      "newProducts": 8
-    },
-    "focusedSummary": {
+    "qualitySummary": {
       "checks": 497,
       "passed": 497,
       "failed": 0,
@@ -109,17 +114,17 @@
       "productDetailChecks": 300,
       "uniqueProductsChecked": 50,
       "regionalTypeRoundtrips": 222,
-      "axeScreens": 36,
+      "axeScreens": 30,
       "axeViolations": 0,
-      "screenshots": 26,
+      "screenshots": 22,
       "pageErrors": 0,
       "consoleErrors": 0,
       "externalRequests": 0
     },
     "fullSummary": {
       "checks": 455,
-      "passed": 455,
-      "failed": 0,
+      "passed": 454,
+      "failed": 1,
       "pages": 420,
       "pageVisits": 420,
       "uniqueRoutes": 138,
@@ -129,75 +134,91 @@
       "regionPageChecks": 84,
       "axeScreens": 402,
       "axeViolations": 0,
-      "screenshots": 74,
+      "screenshots": 91,
       "pageErrors": 0,
       "consoleErrors": 0
     },
-    "priceSummary": {
-      "checks": 314,
-      "passed": 314,
+    "imageSummary": {
+      "checks": 320,
+      "passed": 320,
       "failed": 0,
       "publishedProducts": 50,
-      "uniqueProductsChecked": 50,
-      "dualMarketProducts": 9,
-      "unknownPricePublishedProducts": 0,
-      "unknownPriceDetailSample": null,
+      "newlyIllustratedProducts": 23,
       "productDetailChecks": 300,
-      "regionsChecked": 14,
-      "regionContextChecks": 84,
-      "axeScreens": 18,
+      "imageChecks": 858,
+      "axeScreens": 30,
       "axeViolations": 0,
-      "screenshots": 6,
+      "screenshots": 46,
       "pageErrors": 0,
       "consoleErrors": 0
     },
+    "imageFilesSummary": {
+      "checks": 49,
+      "passed": 49,
+      "failed": 0,
+      "publishedProducts": 50,
+      "registeredProducts": 50,
+      "uniqueImages": 48,
+      "baselineFilesPreserved": 25,
+      "retiredFilesExcluded": 10,
+      "totalImageBytes": 4160080,
+      "warnings": 0
+    },
     "adScenariosPassed": 6,
-    "externalSummary": {
-      "total": 288,
-      "reachable": 279,
-      "review_access_restricted": 6,
-      "review_temporary_server_error": 2,
-      "review_not_found": 1,
-      "publishedProductAndStoreSubset": {
-        "uniqueUrls": 81,
-        "reachable": 81,
-        "unresolved": []
-      }
+    "seo": {
+      "canonicalPages": 248,
+      "productPages": 100,
+      "productImages": 100,
+      "noindexPages": 16,
+      "status": "passed"
     },
-    "finalCopySummary": {
-      "checks": 20,
-      "passed": 20,
-      "failed": 0,
-      "axeScreens": 8,
-      "axeViolations": 0,
-      "pageErrors": 0,
-      "consoleErrors": 0,
-      "screenshots": 4
-    },
-    "finalBuildDelta": {
-      "status": "passed",
-      "beforeFiles": 296,
-      "afterFiles": 296,
-      "added": 1,
-      "removed": 1,
-      "changed": 264,
-      "sharedStyleMetadataOnlyHtml": 235,
-      "productHtmlBeyondStyleMetadata": 1,
-      "regionHtmlBeyondStyleMetadata": 28
-    },
-    "note": "Broad UI/price/ad runs preceded the final one-word Mie Japanese correction and heading polish. Final full verify, file-by-file build delta,20 focused checks and hosted verification cover the final change; broad results are not represented as rerun after the polish.",
-    "finalVisual": "docs/editorial-stage-final-visual-results.json",
-    "finalVisualSummary": {
-      "checks": 4,
-      "passed": 4,
-      "failed": 0,
-      "screenshots": 4,
-      "pageErrors": 0
+    "phaseNote": "Manual pre-polish review found an old portrait crop. Final build and both final broad browser reports use all50 preserveRatio flags. Ad fixtures passed before that image-only flag polish; catalog/price/resolver unchanged. Initial interrupted bilingual run is not claimed as a success.",
+    "fullBrowserResolution": {
+      "status": "resolved",
+      "initialReport": "docs/visual-seo-stage-full-browser-results.json",
+      "initialSummary": {
+        "checks": 455,
+        "passed": 454,
+        "failed": 1,
+        "pages": 420,
+        "pageVisits": 420,
+        "uniqueRoutes": 138,
+        "uniqueProductsChecked": 50,
+        "uniqueRegionsChecked": 14,
+        "productDetailChecks": 306,
+        "regionPageChecks": 84,
+        "axeScreens": 402,
+        "axeViolations": 0,
+        "screenshots": 91,
+        "pageErrors": 0,
+        "consoleErrors": 0
+      },
+      "cause": "One stale test expected robots exactly index,follow and rejected the intentional max-image-preview:large directive. The site was already correct.",
+      "fix": "The full suite now calls a shared publication-metadata assertion using the intended robots value. The same assertion was rerun in fresh Chrome locally and on the deployed site.",
+      "runtimeOrDataChanged": false,
+      "localFollowup": {
+        "report": "docs/visual-seo-stage-publication-metadata-results.json",
+        "summary": {
+          "checks": 1,
+          "passed": 1,
+          "failed": 0
+        }
+      },
+      "hostedFollowup": {
+        "report": "docs/visual-seo-stage-hosted-publication-metadata-results.json",
+        "summary": {
+          "checks": 1,
+          "passed": 1,
+          "failed": 0
+        }
+      },
+      "remainingFailures": 0,
+      "limits": "The complete455-check suite was not rerun after correcting its expected value. All420 page visits and402 axe screens in the original run passed; the single failed metadata group passed its focused follow-up."
     }
   },
   "hostedVerification": {
     "status": "passed",
-    "focused": "docs/editorial-stage-hosted-browser-results.json",
+    "focused": "docs/visual-seo-stage-hosted-browser-results.json",
     "focusedSummary": {
       "checks": 497,
       "passed": 497,
@@ -211,43 +232,41 @@
       "productDetailChecks": 300,
       "uniqueProductsChecked": 50,
       "regionalTypeRoundtrips": 222,
-      "axeScreens": 36,
+      "axeScreens": 30,
       "axeViolations": 0,
-      "screenshots": 26,
+      "screenshots": 22,
       "pageErrors": 0,
       "consoleErrors": 0,
       "externalRequests": 0
     },
-    "supplement": "docs/editorial-stage-hosted-supplement-results.json",
+    "supplement": "docs/visual-seo-stage-hosted-supplement-results.json",
     "supplementSummary": {
       "checks": 24,
       "passed": 24,
       "failed": 0,
       "canonicalUrls": 248,
-      "uniqueImages": 25,
+      "uniqueImages": 48,
       "pageErrors": 0,
       "consoleErrors": 0
     },
-    "withdrawn": "docs/editorial-stage-hosted-withdrawal-results.json",
-    "withdrawnSummary": {
-      "checks": 22,
-      "passed": 22,
-      "failed": 0,
-      "withdrawnRoutes": 12,
-      "retiredImages": 10
-    },
-    "finalCopy": "docs/editorial-stage-hosted-final-copy-results.json",
-    "finalCopySummary": {
-      "checks": 20,
-      "passed": 20,
-      "failed": 0,
-      "axeScreens": 8,
-      "axeViolations": 0,
-      "pageErrors": 0,
-      "consoleErrors": 0,
-      "screenshots": 4
-    },
-    "verifiedAt": "2026-11-17T01:57:52.051Z"
+    "verifiedAt": "2026-11-17T03:00:05.916Z",
+    "metadataFollowup": {
+      "report": "docs/visual-seo-stage-hosted-publication-metadata-results.json",
+      "summary": {
+        "checks": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    }
+  },
+  "searchVerification": {
+    "technical": "passed",
+    "publicCanonicalAndSearchMetadataMatchesLocal": true,
+    "searchConsoleOwnership": "unverified",
+    "googleIndexing": "unverified",
+    "rankings": "unverified",
+    "usUkTraffic": "unverified",
+    "document": "docs/international-seo-v13.md"
   },
   "commercialHosting": {
     "status": "pending_suitability_review_or_migration",
@@ -262,17 +281,19 @@
   },
   "sourceDelivery": {
     "status": "exported_and_verified",
-    "version": "0.12.0",
-    "zip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-source.zip",
-    "verification": "../japanese-craft-jewelry-delivery/package-verification-0.12.0.json",
+    "version": "0.13.0",
     "directory": "../japanese-craft-jewelry-delivery/source",
-    "fileCount": 577,
-    "everyFileSha256Checks": 577,
-    "publishedProducts": 50,
-    "localizedDecisionPairs": 50,
-    "publicImages": 25,
+    "zip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-source.zip",
+    "verification": "../japanese-craft-jewelry-delivery/package-verification-0.13.0.json",
+    "publicImages": 48,
+    "illustratedProducts": 50,
+    "originalPng": 23,
+    "originalsArchive": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-ai-originals-0.13.0.zip",
+    "originalsVerification": "../japanese-craft-jewelry-delivery/originals-verification-0.13.0.json",
+    "fileCount": 643,
+    "everyFileSha256Checks": 643,
     "retiredPublicPathsExcluded": 10,
     "zipHashStoredOutsideArchive": true
   },
-  "updatedAt": "2026-11-17T02:00:10.365Z"
+  "updatedAt": "2026-11-17T03:03:28.918Z"
 }

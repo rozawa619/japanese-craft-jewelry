@@ -5,6 +5,7 @@
 - 新規は27–33歳の架空成人モデル設定で日本7/米国8/英国8、かわいい系/上品な系統を混在。日英alt、実prompt、元PNG、出典・権利台帳、WebPのAI XMPを記録。
 - 英語の検索意図を伝えるトップ/商品一覧と固有descriptionを改善。日英canonical/hreflang/sitemap、WebPage/BreadcrumbList/AI ImageObjectを検証。検索掲載・順位・米英流入は未確認。
 - 画像の全件gateと本番SEO gateをCIへ追加。検証/公開/納品の確定値は013validation、visual-seo-stage各report、deployment-resultsを参照。
+- アプリ0608da5、Actions44005929688 success。画像320/商品UI497/公開UI497/公開補足24成功。全体検証の旧robots期待1件は検査を修正しlocal/公開の同一項目を再確認。全ソース643ファイルと48画像、元PNG23点を別ZIPも含めSHA照合。
 
 ## 0.12.0 — 2026-11-17
 - The Good Trade/Who What Wear/mybest等の実ページを参照し、既存42点の日英紹介と本文を商品固有の内容へ改稿。全50点にdecisionと、固有の見出し/理由から読む比較を用意。

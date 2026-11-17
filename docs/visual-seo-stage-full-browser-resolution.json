@@ -1,0 +1,42 @@
+{
+  "status": "resolved",
+  "initialReport": "docs/visual-seo-stage-full-browser-results.json",
+  "initialSummary": {
+    "checks": 455,
+    "passed": 454,
+    "failed": 1,
+    "pages": 420,
+    "pageVisits": 420,
+    "uniqueRoutes": 138,
+    "uniqueProductsChecked": 50,
+    "uniqueRegionsChecked": 14,
+    "productDetailChecks": 306,
+    "regionPageChecks": 84,
+    "axeScreens": 402,
+    "axeViolations": 0,
+    "screenshots": 91,
+    "pageErrors": 0,
+    "consoleErrors": 0
+  },
+  "cause": "One stale test expected robots exactly index,follow and rejected the intentional max-image-preview:large directive. The site was already correct.",
+  "fix": "The full suite now calls a shared publication-metadata assertion using the intended robots value. The same assertion was rerun in fresh Chrome locally and on the deployed site.",
+  "runtimeOrDataChanged": false,
+  "localFollowup": {
+    "report": "docs/visual-seo-stage-publication-metadata-results.json",
+    "summary": {
+      "checks": 1,
+      "passed": 1,
+      "failed": 0
+    }
+  },
+  "hostedFollowup": {
+    "report": "docs/visual-seo-stage-hosted-publication-metadata-results.json",
+    "summary": {
+      "checks": 1,
+      "passed": 1,
+      "failed": 0
+    }
+  },
+  "remainingFailures": 0,
+  "limits": "The complete455-check suite was not rerun after correcting its expected value. All420 page visits and402 axe screens in the original run passed; the single failed metadata group passed its focused follow-up."
+}

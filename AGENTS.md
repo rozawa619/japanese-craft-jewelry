@@ -80,6 +80,8 @@ SelectionDecisionはheroの直後。ChoiceDetailsは実在の公開候補の固�
 
 ## 0.13 全商品画像と海外検索
 
+全50商品のpreserveRatioをtrueへ統一した。旧画像の顔端cropも含め、一覧/代表/hero/詳細の元比率を確認する。維持用の公開メタ検査はpublication-metadata-assertionsを全体/重点で共用し、robotsのmax-image-preview:largeを意図した本番値とする。重点再確認はCHECK_BASE_URLを設定してnode scripts/check-publication-metadata.mjs。raw失敗を消さず、原因/修正/再検証をfull-browser-resolutionへ残す。
+
 最新仕様は013。012の『今回は新画像なし』より今回の追加依頼を優先し、公開50商品の全件に登録AIイメージを必要とする。旧25ファイル/27品はbytesを変えずに保持し、新23ファイルを加えた計48ファイルが対象。画像なしの新商品は公開前に生成・実見・台帳登録を揃え、OfficialPreviewだけで画像必須gateを迂回しない。正本はsrc/data/editorial-images.json、docs/assets.json、生成・採用記録。商品事実や実物写真の権利と混ぜない。
 
 新23人は27〜33歳の架空成人モデル、日本7/米国8/英国8、cute11/elegant12の制作設定。見た目から国籍を推定せず、国籍を人種の固定記号にしない。ほくろ/シミなしの希望を継承。captionはAIイメージ/AI image、日英altは実際に見える装身具とAI性を簡潔に説明する。新23ファイルにはIPTC XMPのDigitalSourceType=`http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia`を埋め、変換・配信後の保持を確認する。旧25へ遡及埋込みしたとは扱わず、実ファイル・SHA・元比率とcropの検証を分ける。

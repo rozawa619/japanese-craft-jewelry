@@ -9,6 +9,7 @@ import {resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {assertStylingFigure,assertPageStylingFigures} from './image-display-assertions.mjs';
+import {assertPublicationMetadata} from './publication-metadata-assertions.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
 if(existsSync(resolve(root,'.env')))process.loadEnvFile(resolve(root,'.env'));
@@ -331,26 +332,7 @@ try{
  await check('Language entry works without JavaScript',async()=>{
   const context=await browser.newContext({javaScriptEnabled:false,viewport:{width:320,height:740}});const page=await context.newPage();try{await page.goto(new URL(base,origin).href);for(const locale of ['en','ja'])assert.equal(await page.locator('[data-entry-language="'+locale+'"]').isVisible(),true);await page.locator('[data-entry-language="ja"]').click();assert.equal(await page.locator('html').getAttribute('lang'),'ja')}finally{await context.close()}
  });
- await check('Publication metadata, withdrawn hairpin and empty categories are correct',async()=>{
-  const page=await browser.newPage();
-  for(const locale of ['en','ja']){
-   await page.goto(route(locale));
-   if(process.env.PUBLIC_PUBLISH_MODE==='public'){
-    assert.match(await page.locator('meta[name="robots"]').getAttribute('content'),/^index, follow$/);
-    assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'),new URL(base+locale+'/',process.env.PUBLIC_SITE_URL).href);
-    assert.equal(await page.locator('link[hreflang]').count(),3);
-    assert.equal(await page.locator('link[hreflang="x-default"]').getAttribute('href'),new URL(base+'en/',process.env.PUBLIC_SITE_URL).href);
-    const ogImage=await page.locator('meta[property="og:image"]').getAttribute('content');assert.ok(ogImage?.startsWith(new URL(base,process.env.PUBLIC_SITE_URL).href));
-    assert.equal(await page.locator('meta[name="twitter:card"]').getAttribute('content'),'summary_large_image');
-   }else{
-    assert.match(await page.locator('meta[name="robots"]').getAttribute('content'),/noindex/);
-    assert.equal(await page.locator('link[rel="canonical"]').count(),0);
-   }
-   assert.equal((await page.request.get(route(locale,'objects/hamamatsuya-yosegi-kanzashi/'))).status(),404);
-   assert.equal((await page.request.get(route(locale,'contact/'))).status(),404,'Deferred Contact route must return 404.');
-  }
-  await page.close();
- });
+ await check('Publication metadata, withdrawn hairpin and empty categories are correct',()=>assertPublicationMetadata(browser,{route,origin,base,publishMode:process.env.PUBLIC_PUBLISH_MODE,siteUrl:process.env.PUBLIC_SITE_URL}));
  for(const locale of ['en','ja'])await check(locale+' retired reading routes move to product selections',async()=>{
   const page=await browser.newPage();
   const results=[];
