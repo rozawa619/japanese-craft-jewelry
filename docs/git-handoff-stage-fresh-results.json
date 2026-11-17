@@ -1,0 +1,590 @@
+{
+  "checkedAt": "2026-11-17T14:15:30.854Z",
+  "status": "local_reproduction_passed_with_install_limitation",
+  "scope": "Source, documents, public images and configuration originate from the anonymous public Git clone. Standard host Node/pnpm and a standard dependency content cache were used. No project node_modules or generated image originals were copied from the primary checkout. This is NOT a successful cold pnpm install/verify claim.",
+  "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
+  "candidateCommit": "88949fd45137de57b62913c2e66a3ee961c9b7ea",
+  "cloneMethod": "Anonymous public clone prepared by parent agent; commit, tracked-byte identity and independence verified here",
+  "runtime": {
+    "node": "v24.22.3",
+    "pnpmVersion": "11.25.0",
+    "hostSuppliedToolchain": true,
+    "taskRuntimeInClone": false
+  },
+  "before": {
+    "checkedAt": "2026-11-17T13:50:44.269Z",
+    "cwd": "C:\\Users\\rozawa\\Documents\\ChatGPT\\アプリ開発\\ito-craft\\artifacts\\git-handoff-stage\\fresh-clone",
+    "node": "v24.22.3",
+    "commit": "88949fd45137de57b62913c2e66a3ee961c9b7ea",
+    "gitAutocrlf": "true",
+    "trackedFiles": 1217,
+    "trackedPngs": 2,
+    "environmentFiles": [],
+    "absent": {
+      "nodeModules": true,
+      "artifacts": true,
+      "taskRuntime": true,
+      "dist": true,
+      "astro": true,
+      "siblingDelivery": true
+    },
+    "runtimeProvidedByHostNotClone": true,
+    "gitBlobComparisons": {
+      "checks": 1217,
+      "mismatches": []
+    }
+  },
+  "dependencyInstallation": {
+    "status": "not_completed_due_to_registry_metadata_unavailability",
+    "attempts": [
+      {
+        "command": "pnpm install --frozen-lockfile",
+        "result": "Interrupted after repeated npm registry ETIMEDOUT",
+        "log": "git-only-install-default-network-failure.log"
+      },
+      {
+        "command": "pnpm install --frozen-lockfile --store-dir artifacts/pnpm-store --cache-dir artifacts/pnpm-cache",
+        "escalated": true,
+        "result": "Interrupted after repeated npm registry ETIMEDOUT",
+        "log": "git-only-install-escalated-network-failure.log"
+      },
+      {
+        "command": "pnpm install --frozen-lockfile --offline --store-dir artifacts/offline-package-store --cache-dir artifacts/pnpm-cache",
+        "exitCode": 1,
+        "reusedPackages": 270,
+        "materializedPackages": 270,
+        "downloadedPackages": 0,
+        "result": "ERR_PNPM_NO_OFFLINE_META: full registry metadata for supply-chain policy was not present in the available standard cache",
+        "log": "git-only-offline-install.log"
+      }
+    ],
+    "normalPnpmVerifySucceeded": false,
+    "normalPnpmDevSucceeded": false,
+    "nodeModulesCopied": false,
+    "securityPolicyRelaxed": false,
+    "registryMetadataVerified": false,
+    "cacheSource": "Copy of standard workspace pnpm content-addressable cache isolated inside the fresh clone; not a source requirement or a fixed path required by documentation",
+    "cacheFiles": 11046,
+    "cacheBytes": "211.56 MiB from robocopy summary",
+    "freshPackageGraph": {
+      "checkedAt": "2026-11-17T14:08:01.476Z",
+      "root": "C:\\Users\\rozawa\\Documents\\ChatGPT\\アプリ開発\\ito-craft\\artifacts\\git-handoff-stage\\fresh-clone",
+      "modules": [
+        {
+          "name": "astro/package.json",
+          "resolved": "C:\\Users\\rozawa\\Documents\\ChatGPT\\アプリ開発\\ito-craft\\artifacts\\git-handoff-stage\\fresh-clone\\node_modules\\.pnpm\\astro@7.4.12_@types+node@24.19.2_yaml@2.9.1\\node_modules\\astro\\package.json",
+          "insideFresh": true
+        },
+        {
+          "name": "zod/package.json",
+          "resolved": "C:\\Users\\rozawa\\Documents\\ChatGPT\\アプリ開発\\ito-craft\\artifacts\\git-handoff-stage\\fresh-clone\\node_modules\\.pnpm\\zod@4.6.7\\node_modules\\zod\\package.json",
+          "insideFresh": true
+        },
+        {
+          "name": "typescript/package.json",
+          "resolved": "C:\\Users\\rozawa\\Documents\\ChatGPT\\アプリ開発\\ito-craft\\artifacts\\git-handoff-stage\\fresh-clone\\node_modules\\.pnpm\\typescript@5.9.3\\node_modules\\typescript\\package.json",
+          "insideFresh": true
+        },
+        {
+          "name": "@playwright/test/package.json",
+          "resolved": "C:\\Users\\rozawa\\Documents\\ChatGPT\\アプリ開発\\ito-craft\\artifacts\\git-handoff-stage\\fresh-clone\\node_modules\\.pnpm\\@playwright+test@1.65.1\\node_modules\\@playwright\\test\\package.json",
+          "insideFresh": true
+        },
+        {
+          "name": "@types/node/package.json",
+          "resolved": "C:\\Users\\rozawa\\Documents\\ChatGPT\\アプリ開発\\ito-craft\\artifacts\\git-handoff-stage\\fresh-clone\\node_modules\\.pnpm\\@types+node@24.19.2\\node_modules\\@types\\node\\package.json",
+          "insideFresh": true
+        },
+        {
+          "name": "@astrojs/check",
+          "resolved": "C:\\Users\\rozawa\\Documents\\ChatGPT\\アプリ開発\\ito-craft\\artifacts\\git-handoff-stage\\fresh-clone\\node_modules\\.pnpm\\@astrojs+check@0.9.12_prettier@3.10.1_typescript@5.9.3\\node_modules\\@astrojs\\check\\dist\\index.js",
+          "insideFresh": true,
+          "packageJsonExportRestricted": true
+        }
+      ],
+      "symbolicLinksChecked": 698,
+      "outside": [],
+      "broken": [],
+      "moduleResolutionAllInsideFresh": true
+    }
+  },
+  "directNodeChecks": {
+    "status": "passed",
+    "method": "Direct Node implementation checks on pnpm reconstructed locked packages. pnpm install/verify is NOT claimed successful: offline install could not complete its registry metadata policy check. No security policy configuration was relaxed.",
+    "commandCount": 14,
+    "commands": [
+      {
+        "name": "type",
+        "tool": "node",
+        "arguments": [
+          "scripts/astro.mjs",
+          "check"
+        ],
+        "startedAt": "2026-11-17T14:09:44.8970801Z",
+        "completedAt": "2026-11-17T14:09:55.9441928Z",
+        "exitCode": 0,
+        "log": "artifacts/checks/git-only-type.log"
+      },
+      {
+        "name": "schema",
+        "tool": "node",
+        "arguments": [
+          "--experimental-strip-types",
+          "scripts/validate.ts"
+        ],
+        "startedAt": "2026-11-17T14:09:56.0332308Z",
+        "completedAt": "2026-11-17T14:09:56.3199455Z",
+        "exitCode": 0,
+        "log": "artifacts/checks/git-only-schema.log"
+      },
+      {
+        "name": "visits",
+        "tool": "node",
+        "arguments": [
+          "--experimental-strip-types",
+          "scripts/validate-visits.ts"
+        ],
+        "startedAt": "2026-11-17T14:09:56.3245048Z",
+        "completedAt": "2026-11-17T14:09:56.5632163Z",
+        "exitCode": 0,
+        "log": "artifacts/checks/git-only-visits.log"
+      },
+      {
+        "name": "selection",
+        "tool": "node",
+        "arguments": [
+          "--experimental-strip-types",
+          "scripts/validate-selection.ts"
+        ],
+        "startedAt": "2026-11-17T14:09:56.5682160Z",
+        "completedAt": "2026-11-17T14:09:56.8671793Z",
+        "exitCode": 0,
+        "log": "artifacts/checks/git-only-selection.log"
+      },
+      {
+        "name": "unit",
+        "tool": "node",
+        "arguments": [
+          "--experimental-strip-types",
+          "--test",
+          "tests/*.test.ts"
+        ],
+        "startedAt": "2026-11-17T14:09:56.8722322Z",
+        "completedAt": "2026-11-17T14:09:58.5725642Z",
+        "exitCode": 0,
+        "log": "artifacts/checks/git-only-unit.log"
+      },
+      {
+        "name": "build",
+        "tool": "node",
+        "arguments": [
+          "scripts/astro.mjs",
+          "build"
+        ],
+        "startedAt": "2026-11-17T14:09:58.5780057Z",
+        "completedAt": "2026-11-17T14:10:04.2782027Z",
+        "exitCode": 0,
+        "log": "artifacts/checks/git-only-build.log"
+      },
+      {
+        "name": "prune",
+        "tool": "node",
+        "arguments": [
+          "scripts/prune-retired-images.mjs"
+        ],
+        "startedAt": "2026-11-17T14:10:04.2821181Z",
+        "completedAt": "2026-11-17T14:10:04.3690883Z",
+        "exitCode": 0,
+        "log": "artifacts/checks/git-only-prune.log"
+      },
+      {
+        "name": "built",
+        "tool": "node",
+        "arguments": [
+          "scripts/check-built.mjs"
+        ],
+        "startedAt": "2026-11-17T14:10:04.3727279Z",
+        "completedAt": "2026-11-17T14:10:06.6599291Z",
+        "exitCode": 0,
+        "log": "artifacts/checks/git-only-built.log"
+      },
+      {
+        "name": "editorial-images",
+        "tool": "node",
+        "arguments": [
+          "--experimental-strip-types",
+          "scripts/check-editorial-images.mjs",
+          "--dist"
+        ],
+        "startedAt": "2026-11-17T14:10:06.6639712Z",
+        "completedAt": "2026-11-17T14:10:06.9011689Z",
+        "exitCode": 0,
+        "log": "artifacts/checks/git-only-editorial-images.log"
+      },
+      {
+        "name": "privacy",
+        "tool": "node",
+        "arguments": [
+          "--experimental-strip-types",
+          "scripts/check-advertising-privacy.mjs"
+        ],
+        "startedAt": "2026-11-17T14:10:06.9050513Z",
+        "completedAt": "2026-11-17T14:10:07.2328477Z",
+        "exitCode": 0,
+        "log": "artifacts/checks/git-only-privacy.log"
+      },
+      {
+        "name": "detail-images",
+        "tool": "node",
+        "arguments": [
+          "--experimental-strip-types",
+          "scripts/check-product-detail-images.mjs"
+        ],
+        "startedAt": "2026-11-17T14:10:07.2366779Z",
+        "completedAt": "2026-11-17T14:10:07.5733221Z",
+        "exitCode": 0,
+        "log": "artifacts/checks/git-only-detail-images.log"
+      },
+      {
+        "name": "seo",
+        "tool": "node",
+        "arguments": [
+          "scripts/check-international-seo.mjs"
+        ],
+        "startedAt": "2026-11-17T14:10:07.5771672Z",
+        "completedAt": "2026-11-17T14:10:08.0779024Z",
+        "exitCode": 0,
+        "log": "artifacts/checks/git-only-seo.log"
+      },
+      {
+        "name": "japanese-models",
+        "tool": "node",
+        "arguments": [
+          "--experimental-strip-types",
+          "scripts/check-japanese-model-styling.mjs",
+          "--dist"
+        ],
+        "startedAt": "2026-11-17T14:10:08.0824445Z",
+        "completedAt": "2026-11-17T14:10:08.6480322Z",
+        "exitCode": 0,
+        "log": "artifacts/checks/git-only-japanese-models.log"
+      },
+      {
+        "name": "docs",
+        "tool": "node",
+        "arguments": [
+          "scripts/check-docs.mjs"
+        ],
+        "startedAt": "2026-11-17T14:10:08.6521202Z",
+        "completedAt": "2026-11-17T14:10:08.8949245Z",
+        "exitCode": 0,
+        "log": "artifacts/checks/git-only-docs.log"
+      }
+    ],
+    "type": {
+      "files": 152,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 1,
+      "hint": "scripts/fetch-handoff-asset.mjs:100 ts80007: await has no effect on the type of bodyCompletion"
+    },
+    "unit": {
+      "tests": 149,
+      "passed": 149,
+      "failed": 0
+    },
+    "reports": {
+      "editorial-images": {
+        "checks": 59,
+        "passed": 59,
+        "failed": 0,
+        "publishedProducts": 60,
+        "registeredProducts": 60,
+        "uniqueImages": 58,
+        "baselineFilesPreserved": 25,
+        "retiredFilesExcluded": 32,
+        "totalImageBytes": 4807666,
+        "warnings": 0
+      },
+      "privacy": {
+        "checks": 4,
+        "passed": 4,
+        "failed": 0,
+        "htmlPages": 344,
+        "mode": "off"
+      },
+      "detail-images": {
+        "checks": 61,
+        "passed": 61,
+        "failed": 0,
+        "products": 60,
+        "uniqueFiles": 60,
+        "bytes": 2937308
+      },
+      "seo": {
+        "checks": 7,
+        "canonicalPages": 328,
+        "noindexPages": 16,
+        "errors": 0
+      },
+      "japanese-models": {
+        "checks": 63,
+        "passed": 63,
+        "failed": 0,
+        "publishedProducts": 60,
+        "uniqueImages": 58,
+        "originalPngsChecked": 0,
+        "distChecked": true
+      },
+      "docs": {
+        "files": 60,
+        "localLinks": 581,
+        "anchors": 8,
+        "externalLinksUnchecked": 104,
+        "pnpmReferences": 93,
+        "nodeScriptReferences": 42,
+        "errors": 0
+      }
+    }
+  },
+  "productionOutputReproduction": {
+    "status": "passed",
+    "reference": "docs/japanese-models-stage-build-manifest.json",
+    "referenceVersion": "0.18.0",
+    "files": 471,
+    "html": 344,
+    "webp": 118,
+    "pathSetsIdentical": true,
+    "everyFileSha256Checks": 471,
+    "sha256Mismatches": [],
+    "checkedAgainAfterDev": true
+  },
+  "defaultEnvironmentDevelopment": {
+    "checkedAt": "2026-11-17T14:12:18.781Z",
+    "origin": "http://127.0.0.1:4337",
+    "mode": "default environment; direct Node dev entrypoint; pnpm install policy verification remains blocked by registry access",
+    "pages": [
+      {
+        "lang": "ja",
+        "url": "http://127.0.0.1:4337/ja/",
+        "status": 200,
+        "noindex": true,
+        "htmlSha256": "fbb005b6633d24e8206c30f7ea57d9653b8642d6849a6ab45c5dc07b0295d560"
+      },
+      {
+        "lang": "en",
+        "url": "http://127.0.0.1:4337/en/",
+        "status": 200,
+        "noindex": true,
+        "htmlSha256": "7f0cb66c7fa75ff26ee1f96420f7635a24662f25c94516cb3d2a69f2a531df8e"
+      }
+    ],
+    "image": {
+      "path": "/images/morphosphere-blue-pansy-styling-v9.webp",
+      "status": 200,
+      "bytes": 96910,
+      "sha256": "b050fd4e55fb8d70e7c9dec44ac6ed13a486262b6cf74828a946bb9caf3ad39a"
+    },
+    "status": "passed",
+    "shutdown": {
+      "checkedAt": "2026-11-17T14:14:05.287Z",
+      "ownSession": 67847,
+      "method": "Native Stop-Process only after listener PID matched fresh-clone command path and port4337; CIM inspection required escalation",
+      "stopped": true,
+      "detail": "ECONNREFUSED",
+      "stoppedPids": 36932
+    }
+  },
+  "finalSourceIntegrity": {
+    "trackedFiles": 1217,
+    "everyGitBlobByteChecks": 1217,
+    "mismatches": [],
+    "gitStatus": "clean",
+    "environmentFiles": [],
+    "imageOriginalsRequested": false,
+    "siblingDeliveryAbsent": true,
+    "trackedPngFiles": [
+      "docs/previews/home-desktop.png",
+      "docs/previews/home-mobile.png"
+    ],
+    "note": "The two tracked PNGs are handoff previews, not image-generation originals."
+  },
+  "limits": [
+    "Cold registry install and pnpm supply-chain metadata verification could not complete in this local network environment; no policy was disabled. Separate clean CI must cover those commands.",
+    "Direct Node checks and development smoke test use the graph reconstructed by pnpm from the existing standard public package cache. They are distinct from pnpm install/verify success.",
+    "No browser emulation was rerun here: all471 generated outputs, including HTML, scripts, styles and images, are byte-identical to the verified0.18.0 public build.",
+    "Optional original-image retrieval/--originals and historical one-release preservation helper were intentionally not required for clone startup/build."
+  ],
+  "evidence": [
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-before.json",
+      "bytes": 610,
+      "sha256": "7b1b6c078dd67f69146cc48f934be1c0a9818251802343cfd6363525f31e3028"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-build.log",
+      "bytes": 24934,
+      "sha256": "9e77b79bcf920cf6c2e95e40bd85f9d70c9f60209f6a709700b69adbeafe0316"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-built.log",
+      "bytes": 285,
+      "sha256": "f386460c8faaa3040824d6feed254a0effa4b6469189e101893368b7d5d01337"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-cache-copy.log",
+      "bytes": 478,
+      "sha256": "b995964cbbee0357d427f0310ad7f68ecfbeabe2d23b0b039e9df45acf635687"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-dependency-paths.json",
+      "bytes": 2128,
+      "sha256": "7c664a287a6b03ec8ff8a275af29bc550a69a429650cb63d50a37e576e7c6d3e"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-detail-images.json",
+      "bytes": 48890,
+      "sha256": "6a6d0e3e449e9a8f07177c7e248a3a1d61a68f04cc1fe473354ead0c30b59d6b"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-detail-images.log",
+      "bytes": 105,
+      "sha256": "254c8c579879e2976967f95a911ddbad476f29cb09dec1b9ad94f0673bf06475"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-dev-environment.json",
+      "bytes": 509,
+      "sha256": "8f4ce98123e8514ab22aaf3168dcd6694b8e5c2e9d0142337dc9f14fb3437e54"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-dev-results.json",
+      "bytes": 1175,
+      "sha256": "6e5a2ccd8de1597c86e7e91b1b494d40343864fb5e636da8221105e9e01dd504"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-dev-stopped-pids.json",
+      "bytes": 7,
+      "sha256": "e32c27c5cd2053cc30443f01aaa737d6d7d3f7cdc79cff7f404676701214e788"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-dev.log",
+      "bytes": 729,
+      "sha256": "07a77d9bf9b364782853a4930da0b60972536e057120e60f31b1872f4d13497b"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-direct-command-status.json",
+      "bytes": 5292,
+      "sha256": "90e89bfb959578bf30b0d5a0749954f3926f733a4726b2508c5e62840f7428d4"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-dist-comparison.json",
+      "bytes": 275,
+      "sha256": "f146b6d414bbd5a6d8f7f1277291007aa545333049fcf705683fd57115a8fbfc"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-docs.json",
+      "bytes": 3348,
+      "sha256": "dc53b9c8cb88e2fd43945429052314a1c8374377b855ac2b12b2d74908cb42c7"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-docs.log",
+      "bytes": 152,
+      "sha256": "f00322379df6a93d4fd8016791bdb6353d9a68f48d5c14f931b296263d0df3d3"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-editorial-images.json",
+      "bytes": 48528,
+      "sha256": "667b6e23d8c6aa7d29944adabd9bfc5e560c60887a3f8b733d6717fa285c7fcb"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-editorial-images.log",
+      "bytes": 196,
+      "sha256": "795b0c1e04305d667e10f76f939a22a03c59de47190946a697c9b04d26112fc3"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-install-default-network-failure.log",
+      "bytes": 14490,
+      "sha256": "b5b08a4586d1d425281053717657a623122007adf4633ddda7e35d047f122350"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-install.log",
+      "bytes": 13174,
+      "sha256": "a7acb2c80c9da7eeadfde2d8fb631be6b137970c5fc7f36f182802418330ab37"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-japanese-models.json",
+      "bytes": 90688,
+      "sha256": "23e14c40f1e3b478e2bf0bae6135790d7c13dfaec31a8cdc336df9e21f51fcdc"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-japanese-models.log",
+      "bytes": 145,
+      "sha256": "2de5ce47d7ced6348d435bd3d1a148472269ff3c855e67cbba6c4c47a575e674"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-offline-install.log",
+      "bytes": 1676,
+      "sha256": "b34c3e71e12f11bea3f5ac1ac6f9c588dc045b45d8b104d5e48580e93503b9eb"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-offline-metadata-missing.log",
+      "bytes": 1676,
+      "sha256": "b34c3e71e12f11bea3f5ac1ac6f9c588dc045b45d8b104d5e48580e93503b9eb"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-privacy.json",
+      "bytes": 1587,
+      "sha256": "8c202746a60042d98b1430a9f92a118d99be3f21ec5fb7ae2812e31f8c7e90c8"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-privacy.log",
+      "bytes": 66,
+      "sha256": "ba79dba78bd860470ef6248a1862b4e8ee4313f6cec28b710e2caef88b02dd1a"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-prune.log",
+      "bytes": 86,
+      "sha256": "7ecbbdfc264197b5289f7a53fc6e83cf9b3802c406552d069988a3f2e1434973"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-schema.log",
+      "bytes": 183,
+      "sha256": "9de164fe4587779b5af3c1b944f07eedbcfc25a3cfc4b5c95a3f0fd4310d469f"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-selection.log",
+      "bytes": 124,
+      "sha256": "723a317ad4efec26253174883c6726ad1cd20514481ac318dd39713c44314fa2"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-seo.json",
+      "bytes": 931,
+      "sha256": "01c740ffde44b687da859262e340937038d3ad40deb68a3b2d5d5b5b259ab8e4"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-seo.log",
+      "bytes": 178,
+      "sha256": "6d2f43f874e1fc40189935eab834df5a418077c8cef59bfe2cce811b51eab6c1"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-type.log",
+      "bytes": 630,
+      "sha256": "dab376d5909a7255f368d610271f20ba41f56302b22505772f889d7a6f123420"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-unit.log",
+      "bytes": 13923,
+      "sha256": "1d330330e91b60988a03ccdb42e18e3ab8d2795b30f861badf4a4bfd5aed64fc"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-verify.log",
+      "bytes": 50053,
+      "sha256": "59df8f3b8a9610db33db4c3893e5b60aab54e58968a6531c3c763da33e968b54"
+    },
+    {
+      "path": "artifacts/git-handoff-stage/fresh-clone/artifacts/checks/git-only-visits.log",
+      "bytes": 152,
+      "sha256": "55c8669052517eb82a128c37f8094663a772f27dd4eb6588cc1490a1205d3849"
+    }
+  ]
+}

@@ -1,24 +1,24 @@
 {
-  "checkedAt": "2026-11-17T14:06:45.966Z",
-  "status": "failed",
+  "checkedAt": "2026-11-17T14:16:06.603Z",
+  "status": "passed",
   "workflow": "verify-handoff.yml",
   "method": "Manual read-only clean-runner verification from GitHub main. No Pages deployment, private originals, creator workspace, node_modules copy or dependency cache action.",
   "actions": {
-    "checkedAt": "2026-11-17T14:06:45.637Z",
-    "id": 44099414779,
-    "headSha": "9607a802e47faedadbff7170204a88fe64254a59",
+    "checkedAt": "2026-11-17T14:16:06.244Z",
+    "id": 44100922768,
+    "headSha": "537ee24ca021a9b61801108a4689e22936a3a08a",
     "status": "completed",
-    "conclusion": "failure",
-    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44099414779",
-    "updatedAt": "2026-11-17T14:06:29Z"
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44100922768",
+    "updatedAt": "2026-11-17T14:15:01Z"
   },
   "jobs": [
     {
-      "id": 134095073688,
+      "id": 134100391201,
       "name": "verify",
       "status": "completed",
-      "conclusion": "failure",
-      "runner": "GitHub Actions 1000000059",
+      "conclusion": "success",
+      "runner": "GitHub Actions 1000000060",
       "steps": [
         {
           "name": "Set up job",
@@ -54,49 +54,49 @@
           "name": "Install the pinned package manager",
           "number": 6,
           "status": "completed",
-          "conclusion": "failure"
+          "conclusion": "success"
         },
         {
           "name": "Install dependencies from the frozen lockfile",
           "number": 7,
           "status": "completed",
-          "conclusion": "skipped"
+          "conclusion": "success"
         },
         {
           "name": "Type, unit, build, links, image and privacy checks",
           "number": 8,
           "status": "completed",
-          "conclusion": "skipped"
+          "conclusion": "success"
         },
         {
           "name": "Check international search metadata",
           "number": 9,
           "status": "completed",
-          "conclusion": "skipped"
+          "conclusion": "success"
         },
         {
           "name": "Check Japanese model records without private PNGs",
           "number": 10,
           "status": "completed",
-          "conclusion": "skipped"
+          "conclusion": "success"
         },
         {
           "name": "Check maintainer documentation",
           "number": 11,
           "status": "completed",
-          "conclusion": "skipped"
+          "conclusion": "success"
         },
         {
           "name": "Compare every published output hash",
           "number": 12,
           "status": "completed",
-          "conclusion": "skipped"
+          "conclusion": "success"
         },
         {
           "name": "Post Run actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
           "number": 23,
           "status": "completed",
-          "conclusion": "skipped"
+          "conclusion": "success"
         },
         {
           "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
@@ -112,5 +112,135 @@
         }
       ]
     }
-  ]
+  ],
+  "annotations": [
+    {
+      "title": "",
+      "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262, actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+      "level": "warning"
+    },
+    {
+      "title": "Git handoff result",
+      "message": "{\"checkedAt\":\"2026-11-17T14:14:57.654Z\",\"mode\":\"built-output-and-handoff\",\"node\":\"v24.22.3\",\"sourceCommit\":\"537ee24ca021a9b61801108a4689e22936a3a08a\",\"productionApplication\":\"f2bb423f4c4cf476e449d8ec37837243f764cfee\",\"checks\":[{\"name\":\"Entry, current state and every required source are Git-contained\",\"status\":\"passed\",\"detail\":{\"entry\":\"START_HERE.md\",\"completedSiteSpecification\":\"023\",\"pendingSiteBatch\":false}},{\"name\":\"All three proof copies preserve the exact published bytes\",\"status\":\"passed\",\"detail\":{\"proofs\":3,\"release\":\"https://github.com/rozawa619/japanese-craft-jewelry/releases/tag/ai-handoff-2026-11-17\"}},{\"name\":\"Every generated file matches the published app baseline\",\"status\":\"passed\",\"detail\":{\"files\":471,\"html\":344,\"webp\":118,\"allSha256Match\":true,\"baseline\":\"docs/japanese-models-stage-build-manifest.json\"}}],\"failures\":[],\"status\":\"passed\",\"summary\":{\"checks\":3,\"passed\":3,\"failed\":0}}",
+      "level": "notice"
+    },
+    {
+      "title": "Git handoff static summary",
+      "message": "{\"typeFiles\":153,\"unitTests\":149,\"errors\":0,\"warnings\":0,\"hints\":0}",
+      "level": "notice"
+    },
+    {
+      "title": "Git handoff result",
+      "message": "{\"checkedAt\":\"2026-11-17T14:14:35.125Z\",\"mode\":\"fresh-clone-preflight\",\"node\":\"v24.22.3\",\"sourceCommit\":\"537ee24ca021a9b61801108a4689e22936a3a08a\",\"productionApplication\":\"f2bb423f4c4cf476e449d8ec37837243f764cfee\",\"checks\":[{\"name\":\"Entry, current state and every required source are Git-contained\",\"status\":\"passed\",\"detail\":{\"entry\":\"START_HERE.md\",\"completedSiteSpecification\":\"023\",\"pendingSiteBatch\":false}},{\"name\":\"All three proof copies preserve the exact published bytes\",\"status\":\"passed\",\"detail\":{\"proofs\":3,\"release\":\"https://github.com/rozawa619/japanese-craft-jewelry/releases/tag/ai-handoff-2026-11-17\"}},{\"name\":\"Fresh clone has no private environment or dependency/original folders\",\"status\":\"passed\",\"detail\":{\"presence\":{\"node_modules\":false,\"dist\":false,\".astro\":false,\".env\":false,\".env.local\":false,\".env.production\":false,\".env.production.local\":false,\"artifacts/runtime\":false,\"generated-originals\":false},\"siblingDelivery\":false}}],\"failures\":[],\"status\":\"passed\",\"summary\":{\"checks\":3,\"passed\":3,\"failed\":0}}",
+      "level": "notice"
+    },
+    {
+      "title": "",
+      "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+      "level": "notice"
+    }
+  ],
+  "summary": {
+    "typeFiles": 153,
+    "unitTests": 149,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0,
+    "allStepsSucceeded": true,
+    "preflight": {
+      "checkedAt": "2026-11-17T14:14:35.125Z",
+      "mode": "fresh-clone-preflight",
+      "node": "v24.22.3",
+      "sourceCommit": "537ee24ca021a9b61801108a4689e22936a3a08a",
+      "productionApplication": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
+      "checks": [
+        {
+          "name": "Entry, current state and every required source are Git-contained",
+          "status": "passed",
+          "detail": {
+            "entry": "START_HERE.md",
+            "completedSiteSpecification": "023",
+            "pendingSiteBatch": false
+          }
+        },
+        {
+          "name": "All three proof copies preserve the exact published bytes",
+          "status": "passed",
+          "detail": {
+            "proofs": 3,
+            "release": "https://github.com/rozawa619/japanese-craft-jewelry/releases/tag/ai-handoff-2026-11-17"
+          }
+        },
+        {
+          "name": "Fresh clone has no private environment or dependency/original folders",
+          "status": "passed",
+          "detail": {
+            "presence": {
+              "node_modules": false,
+              "dist": false,
+              ".astro": false,
+              ".env": false,
+              ".env.local": false,
+              ".env.production": false,
+              ".env.production.local": false,
+              "artifacts/runtime": false,
+              "generated-originals": false
+            },
+            "siblingDelivery": false
+          }
+        }
+      ],
+      "failures": [],
+      "status": "passed",
+      "summary": {
+        "checks": 3,
+        "passed": 3,
+        "failed": 0
+      }
+    },
+    "output": {
+      "checkedAt": "2026-11-17T14:14:57.654Z",
+      "mode": "built-output-and-handoff",
+      "node": "v24.22.3",
+      "sourceCommit": "537ee24ca021a9b61801108a4689e22936a3a08a",
+      "productionApplication": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
+      "checks": [
+        {
+          "name": "Entry, current state and every required source are Git-contained",
+          "status": "passed",
+          "detail": {
+            "entry": "START_HERE.md",
+            "completedSiteSpecification": "023",
+            "pendingSiteBatch": false
+          }
+        },
+        {
+          "name": "All three proof copies preserve the exact published bytes",
+          "status": "passed",
+          "detail": {
+            "proofs": 3,
+            "release": "https://github.com/rozawa619/japanese-craft-jewelry/releases/tag/ai-handoff-2026-11-17"
+          }
+        },
+        {
+          "name": "Every generated file matches the published app baseline",
+          "status": "passed",
+          "detail": {
+            "files": 471,
+            "html": 344,
+            "webp": 118,
+            "allSha256Match": true,
+            "baseline": "docs/japanese-models-stage-build-manifest.json"
+          }
+        }
+      ],
+      "failures": [],
+      "status": "passed",
+      "summary": {
+        "checks": 3,
+        "passed": 3,
+        "failed": 0
+      }
+    }
+  }
 }

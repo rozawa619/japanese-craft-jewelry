@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-17T13:43:00.429Z",
+  "updatedAt": "2026-11-17T14:22:25.927Z",
   "entryPoint": "START_HERE.md",
   "project": {
     "name": "Japanese Craft Jewelry",
@@ -13,12 +13,14 @@
   },
   "handoff": {
     "specification": "024-git-ai-handoff",
-    "status": "verifying_git_only_setup",
+    "status": "ready",
     "basedOnDocumentationCommit": "b6ac11fcf589daa1b7b4786bc98702b36bfee482",
     "activeSiteImplementationTask": null,
     "nextAction": "Read the current user request, then choose the source and checks. Completed023 is not pending work.",
     "currentGitHeadCommand": "git rev-parse HEAD",
-    "verificationReport": "docs/git-handoff-stage-results.json"
+    "verificationReport": "docs/git-handoff-stage-results.json",
+    "validatedSourceCommit": "537ee24ca021a9b61801108a4689e22936a3a08a",
+    "cleanRunnerVerification": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44100922768"
   },
   "production": {
     "version": "0.18.0",
@@ -142,5 +144,12 @@
       "state": "Commercial eligibility,hosting migration,real identity/contact,contracts and account MFA/branch protection require real operator decisions.",
       "guide": "docs/remaining-task-audit-v17.md"
     }
-  ]
+  ],
+  "verification": {
+    "ci": "docs/git-handoff-stage-ci-results.json",
+    "local": "docs/git-handoff-stage-fresh-results.json",
+    "assets": "docs/git-handoff-stage-download-results.json",
+    "documentation": "docs/git-handoff-stage-docs-results.json",
+    "summary": "docs/git-handoff-stage-results.json"
+  }
 }

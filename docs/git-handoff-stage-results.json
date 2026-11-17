@@ -1,7 +1,171 @@
 {
-  "checkedAt": "2026-11-17T13:43:00.433Z",
-  "status": "pending",
+  "checkedAt": "2026-11-17T14:22:25.934Z",
+  "status": "passed",
   "specification": "024-git-ai-handoff",
-  "productionAppUnchanged": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
-  "checks": []
+  "entryPoint": "START_HERE.md",
+  "productionApplication": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
+  "productionOutputUnchanged": true,
+  "validatedSourceCommit": "537ee24ca021a9b61801108a4689e22936a3a08a",
+  "cleanRunner": {
+    "report": "docs/git-handoff-stage-ci-results.json",
+    "actions": {
+      "checkedAt": "2026-11-17T14:16:06.244Z",
+      "id": 44100922768,
+      "headSha": "537ee24ca021a9b61801108a4689e22936a3a08a",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44100922768",
+      "updatedAt": "2026-11-17T14:15:01Z"
+    },
+    "typeFiles": 153,
+    "unitTests": 149,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0,
+    "allStepsSucceeded": true,
+    "preflight": {
+      "checkedAt": "2026-11-17T14:14:35.125Z",
+      "mode": "fresh-clone-preflight",
+      "node": "v24.22.3",
+      "sourceCommit": "537ee24ca021a9b61801108a4689e22936a3a08a",
+      "productionApplication": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
+      "checks": [
+        {
+          "name": "Entry, current state and every required source are Git-contained",
+          "status": "passed",
+          "detail": {
+            "entry": "START_HERE.md",
+            "completedSiteSpecification": "023",
+            "pendingSiteBatch": false
+          }
+        },
+        {
+          "name": "All three proof copies preserve the exact published bytes",
+          "status": "passed",
+          "detail": {
+            "proofs": 3,
+            "release": "https://github.com/rozawa619/japanese-craft-jewelry/releases/tag/ai-handoff-2026-11-17"
+          }
+        },
+        {
+          "name": "Fresh clone has no private environment or dependency/original folders",
+          "status": "passed",
+          "detail": {
+            "presence": {
+              "node_modules": false,
+              "dist": false,
+              ".astro": false,
+              ".env": false,
+              ".env.local": false,
+              ".env.production": false,
+              ".env.production.local": false,
+              "artifacts/runtime": false,
+              "generated-originals": false
+            },
+            "siblingDelivery": false
+          }
+        }
+      ],
+      "failures": [],
+      "status": "passed",
+      "summary": {
+        "checks": 3,
+        "passed": 3,
+        "failed": 0
+      }
+    },
+    "output": {
+      "checkedAt": "2026-11-17T14:14:57.654Z",
+      "mode": "built-output-and-handoff",
+      "node": "v24.22.3",
+      "sourceCommit": "537ee24ca021a9b61801108a4689e22936a3a08a",
+      "productionApplication": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
+      "checks": [
+        {
+          "name": "Entry, current state and every required source are Git-contained",
+          "status": "passed",
+          "detail": {
+            "entry": "START_HERE.md",
+            "completedSiteSpecification": "023",
+            "pendingSiteBatch": false
+          }
+        },
+        {
+          "name": "All three proof copies preserve the exact published bytes",
+          "status": "passed",
+          "detail": {
+            "proofs": 3,
+            "release": "https://github.com/rozawa619/japanese-craft-jewelry/releases/tag/ai-handoff-2026-11-17"
+          }
+        },
+        {
+          "name": "Every generated file matches the published app baseline",
+          "status": "passed",
+          "detail": {
+            "files": 471,
+            "html": 344,
+            "webp": 118,
+            "allSha256Match": true,
+            "baseline": "docs/japanese-models-stage-build-manifest.json"
+          }
+        }
+      ],
+      "failures": [],
+      "status": "passed",
+      "summary": {
+        "checks": 3,
+        "passed": 3,
+        "failed": 0
+      }
+    }
+  },
+  "local": {
+    "report": "docs/git-handoff-stage-fresh-results.json",
+    "status": "local_reproduction_passed_with_install_limitation",
+    "note": "Local registry/metadata timeout is preserved. Official frozen install and pnpm verify succeeded on the independent GitHub runner."
+  },
+  "assets": {
+    "report": "docs/git-handoff-stage-download-results.json",
+    "assets": 8,
+    "downloaded": 8,
+    "independentFileSha256Comparisons": 8,
+    "bytes": 213014996,
+    "reuseChecks": 1,
+    "policyChecks": 12,
+    "failures": 0,
+    "typedHelperRecheck": {
+      "checkedAt": "2026-11-17T14:19:28.831Z",
+      "change": "Only an explicit Promise<void>|undefined JSDoc declaration was added to an asynchronously assigned transfer promise; runtime algorithm unchanged.",
+      "helperSha256": "594d559feb09dcd3380f775efbe1f80032e380e40376f0c80fe6edbc89f8654d",
+      "freshPublicDownload": {
+        "status": "downloaded-and-verified",
+        "id": "proof-originals-0.18.0",
+        "path": "artifacts/handoff-assets/originals-verification-0.18.0.json",
+        "bytes": 711,
+        "sha256": "3c06c65d7f322fa3ad188506a9dd1678ebce49a4e508b94c3d1634af3384e423"
+      },
+      "status": "passed"
+    }
+  },
+  "documentation": {
+    "report": "docs/git-handoff-stage-docs-results.json",
+    "summary": {
+      "files": 60,
+      "localLinks": 600,
+      "anchors": 8,
+      "externalLinksUnchecked": 107,
+      "pnpmReferences": 95,
+      "nodeScriptReferences": 43,
+      "errors": 0
+    }
+  },
+  "preservedBoundaries": [
+    "No site redesign or product/price/image/configuration changes",
+    "No Pages redeploy",
+    "No secrets or credentials in Git",
+    "No ad application,contract,account changes or invented personal details"
+  ],
+  "remoteReadback": {
+    "status": "pending_final_push"
+  }
 }

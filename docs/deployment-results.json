@@ -615,6 +615,14 @@
     "assetManifest": "docs/handoff-assets.json",
     "githubRelease": "https://github.com/rozawa619/japanese-craft-jewelry/releases/tag/ai-handoff-2026-11-17",
     "verification": "docs/git-handoff-stage-results.json",
-    "productionAppUnchanged": true
+    "productionAppUnchanged": true,
+    "status": "ready",
+    "cleanRunnerVerification": {
+      "id": 44100922768,
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44100922768",
+      "headSha": "537ee24ca021a9b61801108a4689e22936a3a08a",
+      "conclusion": "success",
+      "productionDeploymentPerformed": false
+    }
   }
 }

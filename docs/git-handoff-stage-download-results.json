@@ -185,5 +185,18 @@
     "reuseChecks": 1,
     "policyChecks": 12,
     "failures": 0
+  },
+  "afterTypeAnnotation": {
+    "checkedAt": "2026-11-17T14:19:28.831Z",
+    "change": "Only an explicit Promise<void>|undefined JSDoc declaration was added to an asynchronously assigned transfer promise; runtime algorithm unchanged.",
+    "helperSha256": "594d559feb09dcd3380f775efbe1f80032e380e40376f0c80fe6edbc89f8654d",
+    "freshPublicDownload": {
+      "status": "downloaded-and-verified",
+      "id": "proof-originals-0.18.0",
+      "path": "artifacts/handoff-assets/originals-verification-0.18.0.json",
+      "bytes": 711,
+      "sha256": "3c06c65d7f322fa3ad188506a9dd1678ebce49a4e508b94c3d1634af3384e423"
+    },
+    "status": "passed"
   }
 }
