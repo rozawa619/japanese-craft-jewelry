@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-17T05:02:48.870Z",
+  "checkedAt": "2026-11-17T05:34:25.873Z",
   "origin": "https://rozawa619.github.io",
   "base": "/japanese-craft-jewelry/",
   "node": "v24.22.3",
@@ -10,7 +10,7 @@
       "src/config/selection.ts": "c5769f3b0a880e7acb686c02f458e31ae3abe67b36e0279ad3cfc6c68bead31f",
       "src/lib/type-choices.ts": "b90f84917948c30ae8b14b41b790e34ecdb2eccb3a601235c86ec9fb1c95f510",
       "src/components/TypeChoiceImage.astro": "bee774ecee5d786e0b94b8b6902b5e5927020ac1abee94477cdeca443bdbee59",
-      "src/components/RegionalChoiceGuide.astro": "98c41b2b46e6acf43bf3728d4dab5154001e62f53939f0fcf4dd47e55d1b42bb",
+      "src/components/RegionalChoiceGuide.astro": "e4bb91b4604530e1ed7c73f617e9212c53adf83d5faa614b938b84231fac02ca",
       "src/pages/[lang]/index.astro": "b9f78220191607c883de94623c20829b4568827abaeb5a01e14ef6ae8291e0cc",
       "src/styles/global.css": "9c4c64dee71083ced55f29c7c3f324c8efb1c7dbc3ee5d3340cb9e0f58feb058"
     },
@@ -20,7 +20,7 @@
       "src/config/selection.ts": "c5769f3b0a880e7acb686c02f458e31ae3abe67b36e0279ad3cfc6c68bead31f",
       "src/lib/type-choices.ts": "b90f84917948c30ae8b14b41b790e34ecdb2eccb3a601235c86ec9fb1c95f510",
       "src/components/TypeChoiceImage.astro": "bee774ecee5d786e0b94b8b6902b5e5927020ac1abee94477cdeca443bdbee59",
-      "src/components/RegionalChoiceGuide.astro": "98c41b2b46e6acf43bf3728d4dab5154001e62f53939f0fcf4dd47e55d1b42bb",
+      "src/components/RegionalChoiceGuide.astro": "e4bb91b4604530e1ed7c73f617e9212c53adf83d5faa614b938b84231fac02ca",
       "src/pages/[lang]/index.astro": "b9f78220191607c883de94623c20829b4568827abaeb5a01e14ef6ae8291e0cc",
       "src/styles/global.css": "9c4c64dee71083ced55f29c7c3f324c8efb1c7dbc3ee5d3340cb9e0f58feb058"
     }
@@ -1142,15 +1142,15 @@
   ],
   "failures": [],
   "screenshots": [
-    "artifacts/visual-mobile-stage-hosted-type-images-en-home-320.png",
-    "artifacts/visual-mobile-stage-hosted-type-images-en-tokyo-320.png",
-    "artifacts/visual-mobile-stage-hosted-type-images-ja-home-320.png",
-    "artifacts/visual-mobile-stage-hosted-type-images-ja-tokyo-320.png"
+    "artifacts/visual-mobile-stage-final2-hosted-type-images-en-home-320.png",
+    "artifacts/visual-mobile-stage-final2-hosted-type-images-en-tokyo-320.png",
+    "artifacts/visual-mobile-stage-final2-hosted-type-images-ja-home-320.png",
+    "artifacts/visual-mobile-stage-final2-hosted-type-images-ja-tokyo-320.png"
   ],
   "imagesChecked": 84,
   "pageErrors": [],
   "consoleErrors": [],
-  "completedAt": "2026-11-17T05:03:28.353Z",
+  "completedAt": "2026-11-17T05:35:19.250Z",
   "summary": {
     "checks": 32,
     "passed": 32,
@@ -1162,22 +1162,25 @@
     "pageErrors": 0,
     "consoleErrors": 0
   },
+  "phase": {
+    "appCommit": "1f0021306e87ce9e7dc43bdf446cffedc59e4134",
+    "scope": "Final targeted check after heading and shared source handler updates. The broad hosted quality497 record belongs to the earlier dc90 app and is preserved separately."
+  },
   "visualReview": {
-    "checkedAt": "2026-11-17T05:06:41.899Z",
+    "checkedAt": "2026-11-17T05:38:27.984Z",
     "reviewed": [
-      "artifacts/visual-mobile-stage-hosted-type-images-en-home-320.png",
-      "artifacts/visual-mobile-stage-hosted-type-images-ja-home-320.png",
-      "artifacts/visual-mobile-stage-hosted-type-images-en-tokyo-320.png",
-      "artifacts/visual-mobile-stage-hosted-type-images-ja-tokyo-320.png",
-      "artifacts/visual-mobile-stage-hosted-type-images-normal-ja-home-320.png",
-      "artifacts/visual-mobile-stage-hosted-type-images-normal-en-home-320.png"
+      "artifacts/visual-mobile-stage-final2-hosted-type-images-en-home-320.png",
+      "artifacts/visual-mobile-stage-final2-hosted-type-images-ja-home-320.png",
+      "artifacts/visual-mobile-stage-final2-hosted-type-images-en-tokyo-320.png",
+      "artifacts/visual-mobile-stage-final2-hosted-type-images-ja-tokyo-320.png",
+      "artifacts/visual-mobile-stage-final2-hosted-type-images-normal-en-home-320.png",
+      "artifacts/visual-mobile-stage-final2-hosted-type-images-normal-ja-home-320.png"
     ],
     "observations": [
-      "Hosted region rows retain whole jewelry images and captions next to localized labels/counts/Japan reference prices at320px.",
-      "Hosted home cards in the normal viewport show all five complete jewelry fronts with AI captions, labels/counts and whole-card links.",
-      "As in local QA, the element-only JA home capture shows a partial second-row composite. The normal viewport after decode and three settled animation frames shows whole images without CSS or runtime changes; both are preserved."
+      "Final hosted region320 images and localized AI captions remain intact and aligned with their type/count/price.",
+      "Final normal320 home views in EN/JA show all five complete jewelry fronts, captions and labels/counts.",
+      "The EN element-only home capture has a partial second-row composite; the normal viewport after decode and three settled frames confirms whole images without CSS or runtime changes. Raw and normal captures are both preserved."
     ],
-    "normalViewportEvidence": "artifacts/visual-mobile-stage-hosted-type-images-normal-home-review.json",
     "runtimeChanged": false
   }
 }

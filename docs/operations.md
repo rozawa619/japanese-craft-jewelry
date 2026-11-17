@@ -12,6 +12,17 @@
 
 結果名はvisual-mobile-stage。ローカルと公開を混ぜず、失敗raw→原因/修正→再検証の順を残す。0.15は新規画像生成なし、原本は0.14別納品を保持。以降の014/015手順の古い件数/実行環境は当時の履歴として読む。
 
+この作業環境のglobal Node24.22.1は変更していない。公式SHA照合済みのtask-local Nodeはrepo内artifacts/runtime/node-v24.22.3-win-x64にあり、同dirのpnpm.cmdが既存pnpm11.25.0のJS CLIをpatched Nodeで実行する。現在のworkspaceではPowerShellで下記のように当該プロセスのPATHだけを変更して使える。別の環境ではサポート中のpatched Node/pnpmを用意し直す。バイナリ/artifactsはソースZIPに含めない。
+
+~~~powershell
+$env:PATH=(Join-Path (Get-Location) 'artifacts/runtime/node-v24.22.3-win-x64')+';'+$env:PATH
+node --version
+pnpm --version
+pnpm verify
+~~~
+
+Source anchorの処理はSourcesだけが持つ。同ページの明示リンクはpushStateでfragmentを更新し、開く/scroll/summary focusを1回で行う。商品templateへ別のopen handlerを足すと、後着hashchangeが手動closeを戻す競合を再導入する。更新時はcheck-source-anchor-race.mjsのrapid24・focus/Tab・history/noJSを実行する。
+
 ## 仕様014 / 015の更新箇所（リリース0.14）
 
 1. **商品ごとの選び方**：`src/data/product-buying-guides.json`へ公開productIdごとの日英3問と、その商品に属するsourceIdsを揃える。価格・URLを回答へ複製せず、`{size}`・`{findings}`・`{fastening}`だけをcatalog/日本語訳から展開する。未確認値や全商品共通の回答で埋めない。質問が選ぶ判断に役立つか、本文・比較・公式情報と矛盾しないかを読む。表示は共通`ProductBuyingGuide`から出し、出典リンクで`#product-sources`が開く動作を保つ。

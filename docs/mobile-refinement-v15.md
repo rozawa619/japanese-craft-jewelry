@@ -1,6 +1,6 @@
 # 0.15 モバイル調整と画面検証
 
-2026-11-17。最終ローカルは見出しと出典処理の競合を修正後、92＋4＋12検査が成功した。共通スタイルはsrc/styles/global.css、再実行する検査はscripts/check-mobile-refinement.mjs・check-mobile-touch.mjs・check-source-anchor-race.mjs。地域の代表画像・Sources・価格・店舗表示の各部品は担当を分けて統合した。初回、初回公開、失敗履歴、最終ローカルを以下で区別し、最終版の公開確認は別途記録する。
+2026-11-17。見出しと出典処理の競合を修正後、最終ローカルと最終公開の両方で92＋4＋12検査が成功した。最終公開アプリは1f0021306e87ce9e7dc43bdf446cffedc59e4134。共通スタイルはsrc/styles/global.css、再実行する検査はscripts/check-mobile-refinement.mjs・check-mobile-touch.mjs・check-source-anchor-race.mjs。地域の代表画像・Sources・価格・店舗表示の各部品は担当を分けて統合した。初回、初回公開、失敗履歴、最終ローカル、最終公開を以下で区別する。
 
 ## 調整の根拠と変更
 
@@ -109,5 +109,23 @@ rootはSourcesの共通moduleにページ内source anchor処理を一本化し�
 
 競合回帰は日英×390/768px×浜松屋/長文カフの8flowで、実guide link→native summary closeを同一taskで実行、一時的なgeneric source子anchor→closeも同一taskで実行、実Enter→summary Enterで直ちに閉じる、の計24迅速操作を確認した。イベントキュー後も閉じたままで、対象のページ内移動によるhashchange二重処理は0だった。通常クリック、summary focus、次TabがSource内へ進むこと、直接fragment、戻る/進むでも確認した。さらにJavaScript無効の日英×390/768pxの4ケースでnative summaryの開閉と情報表示を確認した。回帰検査の対象2入力も前後SHA256が一致した。
 
-この最終ローカルの92＋4＋12は、出典競合修正後の公開成功をまだ表さない。次の配信commit/Actions成功後に同じ検査を別のhosted reportへ実行する。
+この段階ではローカルの確認までを完了した。配信後の確認は次節の別hosted reportへ記録する。
+
+## 最終公開確認（見出し・出典競合修正後）
+
+アプリ1f0021306e87ce9e7dc43bdf446cffedc59e4134、Actions44024678465のcompleted/success（2026-11-17T05:32:16Z、rootがGitHub APIで観測）通知後、https://rozawa619.github.io/japanese-craft-jewelry/ で同じ3検査をNode24.22.3・fresh Chromeで実行した。
+
+| 最終公開検査 | 結果・時刻 |
+| --- | --- |
+| [responsive本体](visual-mobile-stage-hosted-mobile-results.json) | 92/92成功、失敗0、終了コード0。05:38:45.804Z〜05:44:25.582Z |
+| [実タップ補足](visual-mobile-stage-hosted-touch-results.json) | 4/4成功、失敗0、終了コード0。05:38:42.824Z〜05:39:56.130Z |
+| [Source競合回帰](visual-mobile-stage-hosted-source-anchor-race-results.json) | 12/12成功、失敗0、終了コード0。05:38:39.898Z〜05:41:26.337Z |
+
+92本体は日英6ルート×7サイズの84画面、直接hash2・JavaScript無効4・実地図2、source開閉120、代表図112表示、axe10画面/違反0、撮影16枚。14入力の開始前後SHA256は同じだった。実タップ4は390pxのmobile/touch/DPR2による日英2操作flowと日英2撮影groupで、撮影8枚。絞込・解除、言語切替後のquery/hash、商品への移動、出典開閉を確認した。
+
+公開の競合回帰でも24迅速操作すべてで閉じた状態を保持した。guideとgeneric子anchorによる同一taskのクリック→閉じる、実Enter→即閉じる、明示移動後のsummary focus→次TabがSource内、通常の開閉、直接fragment、戻る/進む、JavaScript無効4ケースを確認した。対象2入力も開始前後SHA256が一致した。
+
+画像はvisual-mobile-stage-final2-hosted-mobileとfinal2-hosted-touch prefixで保存した。日本語/英語のhome種類別画像、一覧見出し、メニュー、Source本文を直接目視し、公開最終版への反映を確認した。初回dc90の公開記録はbefore-heading、88/92の実失敗と16画像はfinal-first-attempt、最終ローカルはfinal2として保持している。撮影は上記rawのscroll/paintタイミングによる限界を継承し、最終公開の操作・focus・状態判定は各reportを正本とする。
+
+検証中に共有アプリsource・CSS・buildを変更していない。Chromeのエミュレーションの範囲であり、Safari・iOS・物理端末や将来のすべての表示を保証するものではない。注文・申請・問い合わせや、広告の有効化は行っていない。
 

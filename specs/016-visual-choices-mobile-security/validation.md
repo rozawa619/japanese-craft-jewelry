@@ -23,3 +23,13 @@ JA390の見出し末尾2字を目視で発見しmobile h2をbalanceへ。12重�
 再検査88/92の4失敗は、単なる検査待ち時間でなく実競合だった。guide同期open→即close後に遅れたhashchangeで再openするtraceを再現し、Sourcesへ処理を一本化。通常同ページanchorはpushStateでfragmentを更新してopen/scroll/focusを1回だけ行い、商品側の重複処理を削除。直接hash/historyは別のnativeイベントを保つ。source-nav-build-deltaで264HTMLは許可したSources/product2scriptとCSP置換だけ、JSON-LD/CSS/URL/その他markup・98画像不変を確認。
 
 最終verify124型ファイル0/0/0、124unit、264HTML/369生成物。修正後mobile92/92・touch4/4・新しい競合回帰12/12（rapid24、focus/次Tab、通常/子anchor/Enter、直接hash/back/forward/noJS）が成功。最終Source入力hash不変。初回広範囲497/314/広告6と、修正後の重点回帰を混同せず、公開後も最終版で重点検証する。
+
+## 公開後の最終検証
+
+補足の初回2つの503は別rawへ保存し対象URLをfresh200/SHA一致で再確認後、全補足24/24を再実行した。Source248は初回で248rawHTML SHA一致。下記は最終の完走結果で、初回部分走査を248/98成功に数えない。
+
+最終アプリ1f0021306e87ce9e7dc43bdf446cffedc59e4134、Actions44024678465 completed/success（2026-11-17T05:32:16Z、GitHub API実測）。最終公開source248/248、mobile92/92、実tap4/4、出典操作競合12/12、見出し12/12、全種類画像32/32（84instances）、共有meta1/1、補足24/24が成功。248正規URLの200/meta/hreflang/JSON-LD/CSPと98画像200/SHAを最終distと照合。公開mobile Maps2とローカルMaps9を区別。広範囲のquality497/価格314/広告6等と初回公開quality497は見出し・出典操作の追加調整前の実測で、最終版で497を再実行したとしない。追加調整の厳密差分と重点回帰結果を併記し、事実/価格/画像/行き先は不変。最終出力は最終mobile/race/heading検証時から不変。公開後の追加は証跡・文書・納品だけ。結果はvisual-mobile-stage-hosted-*。
+
+## 最終ソース納品
+
+全ソース822ファイル・98公開画像。repository→export→ZIPの集合と全件SHA256を照合し、完了記録を含む再書出しにも同じ検証を行う。ZIP自身のbytes/SHAは隣接delivery/package-verification-0.15.0.jsonへ置き、自己参照を避ける。.git/.env/秘密/node_modules/dist/artifacts/退役10画像を除外。QA PNG/JSONはscreenshots/0.15.0に分離し、文中artifacts参照は私的ローカル証跡でアプリの実行依存ではない。新画像生成なし、0.14原本50PNGと制作記録は既存の別ZIPを保持。

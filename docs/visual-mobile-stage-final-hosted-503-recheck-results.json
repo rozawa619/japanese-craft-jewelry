@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-17T05:36:09.825Z",
+  "applicationCommit": "1f0021306e87ce9e7dc43bdf446cffedc59e4134",
+  "actionsRun": 44024678465,
+  "method": "Fresh Chrome context read-only GET of the two exact first-attempt503 targets. Raw bytes SHA256 are compared with final localdist/current publicimage, without querycachebypass or sourcechange.",
+  "firstAttemptReport": "docs/visual-mobile-stage-final-hosted-first-attempt-results.json",
+  "checks": [
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/maruyama-yosegi-pierced-d/",
+      "status": 200,
+      "sha256": "a5aa990b4888c19419780ecf878175ff3fea7a5bf2d907e205cb0fe33f46b1ea",
+      "expectedSha256": "a5aa990b4888c19419780ecf878175ff3fea7a5bf2d907e205cb0fe33f46b1ea",
+      "localMatch": true,
+      "passed": true
+    },
+    {
+      "url": "https://rozawa619.github.io/japanese-craft-jewelry/images/nousaku-aya-tin-pendant-styling-v13.webp",
+      "status": 200,
+      "sha256": "d459f72162d9da40b9e0f9f6251b356eeef87e62f2d2aea4797ff0c2968c683a",
+      "expectedSha256": "d459f72162d9da40b9e0f9f6251b356eeef87e62f2d2aea4797ff0c2968c683a",
+      "localMatch": true,
+      "passed": true
+    }
+  ],
+  "summary": {
+    "checks": 2,
+    "passed": 2,
+    "failed": 0
+  }
+}
