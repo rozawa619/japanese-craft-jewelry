@@ -1,41 +1,36 @@
-# 検証結果 — 0.17.3・地図枠とトップ写真022
+# 検証結果 — 0.18.0・日本人モデル画像023
 
-2026-11-17。[仕様022](../specs/022-compact-map-and-natural-hero/spec.md)、公開app/Actions/納品の正本は[deployment-results.json](deployment-results.json)。前の0.17.2は[保存版](verification-v19-before-compact-layout.md)・[旧deployment](deployment-v19-before-compact-layout.json)。
+2026-11-17。[仕様023](../specs/023-japanese-model-styling/spec.md)。公開app・Actions・納品の正本は[deployment-results.json](deployment-results.json)。前版は[旧検証](verification-v20-before-japanese-models.md)・[旧deployment](deployment-v20-before-japanese-models.json)。
 
 ## 変更
 
-「日本の『ここ』へ行くなら。」の枠を最大1040pxへ、主図を本州〜北海道の最大480×540pxへ縮小。沖縄は既存CC0原形を別枠へ移し、島/ラベル/枠全体から直接産地へ進む通常リンクに。元47形状/掲載24県を保ち、zoom/内部scroll・hover/focus/select preview・noJSも維持。
+全58人物画像・60商品の生成記録を監査。日本人設定の36枚を保持し、米国/英国設定だった22枚を架空の日本人成人女性へ差し替えた。新22枚は25〜30歳、かわいい11/綺麗11、全体の設定範囲は25〜33歳。実在人物の国籍・正確な年齢を画像から認定していない。
 
-ホーム写真は全幅/自然比率のheight:autoに変更し、写真内とfigure/AIcaption前後の人工的な上下帯を除去。顔やジュエリーを切り取らず、AI表記・24県の画像/価格切替・query/言語/historyを維持。最小幅の行gapを4px調整し、英語320pxでも初期画面に地図150px以上を表示。
+[監査](japanese-models-stage-audit.json)・[全prompt/原本/新旧SHA](image-generation-japanese-v23.json)・[全22枚の目視](japanese-models-stage-visual-review.json)を保存。built-in image_genを使用、参照は旧プロジェクトAI画像のみ。公式写真の入力/転載なし。顔・耳・装身具・手と、目立つほくろ/シミ・文字/帯を目視し22採用/棄却0。実物SKU/素材/寸法/装着実績の証拠ではなく、AIイメージ表示を保つ。
 
-## 最終ローカル
+## ローカル
 
 | 検査 | 結果 | 証跡 |
 | --- | --- | --- |
-| type/schema/unit/build/link/CSP | 146files・0 error/warning/hint、149/149、344HTML/471生成物 | [static](compact-layout-stage-static-results.json) |
-| 一覧地図・沖縄独立枠 | 241/241、47原形/24県・native操作・zoom/touch/noJS、axe違反0 | [map](compact-layout-stage-map-results.json) |
-| Hero自然比率 | 77/77、24県の画像/商品/価格、上下letterbox0・AIcaption維持、axe4違反0 | [hero](compact-layout-stage-hero-results.json) |
-| スマホ全体 | 92/92、日英7viewport/6route、Source操作120・種類画像112、axe10違反0・実Maps2 | [mobile](compact-layout-stage-mobile-results.json) |
-| 出典/生HTML | 328/328・全正規URL raw SHA一致 | [sources](compact-layout-stage-sources-results.json) |
-| SEO | 328canonical・相互hreflang・sitemap・120商品画像・16noindex、error0 | [SEO](compact-layout-stage-seo-results.json) |
-| 変更保全 | 6/6、494入力のうち2UI/版番号だけ変更、他491不変・118画像不変 | [preservation](compact-layout-stage-preservation-results.json) |
-| 画像/広告off | 人物59/59・単体61/61・Privacy4/4 | [人物](compact-layout-stage-editorial-images-results.json)・[単体](compact-layout-stage-detail-images-results.json)・[Privacy](compact-layout-stage-privacy-results.json) |
-| 引継ぎ文書 | 49ファイルのlocal link/heading/command | [docs](compact-layout-stage-docs-results.json) |
+| 型/単体/build/link/CSP | 150files・0 error/warning/hint、149unit、344HTML/471生成物 | [static](japanese-models-stage-static-results.json) |
+| 生成設定/原本・旧画像除外 | 63/63、全58人物Japanese設定、22PNG照合、retired32非配信 | [models](japanese-models-stage-results.json) |
+| Hero/地図切替 | 77/77、日英24県・124切替、人工上下帯0、axe違反0 | [hero](japanese-models-stage-hero-results.json) |
+| TOP10/DISCOVER共通写真 | 37/37、390画像照合、Tab120、axe6違反0 | [photos](japanese-models-stage-photos-results.json) |
+| 全商品実表示 | 124/124、日英120ページnavigation・58画像decode、新22×日英44、390幅横溢れ0 | [browser](japanese-models-stage-browser-results.json) |
+| スマホ全体 | 92/92、日英7viewport/6route、Source120/種類画像112・axe10違反0 | [mobile](japanese-models-stage-mobile-results.json) |
+| 出典/生HTML | 328/328、120商品ページ、local SHA328一致 | [sources](japanese-models-stage-sources-results.json) |
+| SEO | 328canonical・相互hreflang・sitemap・120商品画像・16noindex、error0 | [SEO](japanese-models-stage-seo-results.json) |
+| 保全 | 9/9、旧495入力の493不変・版番号/22画像mappingだけ変更、_astro全SHA不変 | [preservation](japanese-models-stage-preservation-results.json) |
+| 画像/広告off | 人物59/単体61/Privacy4すべて成功 | [人物](japanese-models-stage-editorial-images-results.json)・[単体](japanese-models-stage-detail-images-results.json)・[Privacy](japanese-models-stage-privacy-results.json) |
+| 引継ぎ文書 | 54ファイルのlink/heading/command | [docs](japanese-models-stage-docs-results.json) |
 
-[枠の新旧比較](compact-layout-stage-size-comparison-results.json)は、旧8HTMLすべてのSHAが0.17.2manifestに一致した[baseline](compact-layout-stage-before-metrics.json)と同じ条件を対応付ける。PCでは外枠高が約30%縮小、390幅では約5%縮小。幅・言語で実寸は異なり、全端末で同率とは説明しない。沖縄枠はPC144px・スマホ最低80px（390幅実測94.8px）。
-
-[source baseline](compact-layout-stage-source-baseline.json)・[最終manifest](compact-layout-stage-build-manifest.json)により、商品・価格・出典・公式URL・店舗/Google表示設定・広告/Privacy・依存設定・Top10/DISCOVERの共通写真styleを維持。Heroはstyle以外のHTML/JSもbyte同一。旧021写真37を022の再実行件数へ加算しない。
-
-## 途中の修正
-
-HTML/SVG共通リンクのpointer eventで型error1を検出し、property guardへ修正後にverify全体を再実行。Hero初回[76/77](compact-layout-stage-hero-first-attempt-results.json)はEN320の地図可視147.52pxが150px基準を2.48px下回ったため、写真を縮めず行gapを4px詰めて全77再実行。Map初回[239/241](compact-layout-stage-map-first-pointer-results.json)は数学的fillの最初の点が隣県strokeに重なるdriver問題。[診断](compact-layout-stage-pointer-diagnostic-results.json)で可視Tokyo点を複数確認し、実hit-testを通る座標へnative入力するQAへ改善して全件再走査。force/DOMclickは使わない。4px調整前の[mobile92](compact-layout-stage-mobile-before-gap-results.json)も保存し、最終buildでも92を再実行。
+保持36人物・単体60画像、旧22のローカル原本はbyte不変。旧22はactive参照/build/Git新tree/source ZIPから除外。商品/価格/出典/公式URL/店舗・UI/CSS・地図/広告/Privacy/依存設定を保持。[最終manifest](japanese-models-stage-build-manifest.json)で差分と全出力SHAを記録。一覧地図241の機能検証は前版022の実績で、今回の件数へ加算しない。
 
 ## 公開・納品
 
-公開app `ef8ae160e7fc7d2b41cdce1063094313b719df6e`、[Actions44081729750](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44081729750) completed/success。[公開集約](compact-layout-stage-hosted-summary.json)：一覧地図241・Hero77・mobile92・Source328・補足24が成功。全328生HTML/118画像SHAは最終local一致、471生成物のSHAも不変。
+<!-- PUBLIC_STATUS_V23 -->
+公開前の最終検証中。新app・Actions・実URL・source ZIPの確定結果を追記する。
 
-全source ZIPはjapanese-craft-jewelry-source-0.17.3-compact-022.zip、外部proofはpackage-verification-0.17.3-compact-022.json。集合/全SHA・fileCount/statusはdeployment-resultsのsourceDeliveryと外部proofが正本。今回新bitmapはなし。
+元PNG22・旧AI参照WebP22・manifest/目視記録/READMEを別ZIPに保存、47ファイルの集合/全SHAを照合。全source/原本ZIPの最終状態はdeployment-resultsのsourceDeliveryと外部proofを正本とする。CLI/API keyへ切り替えていない。
 
-Chrome emulationであり実機iOS/Safari・検索順位/離脱率/売上・将来在庫・AdSense審査の保証ではない。[法務/運営残条件](remaining-task-audit-v17.md)をUI合格で完了扱いにしない。
-
-最終全sourceは1155ファイル/118画像。repository/export/ZIP集合と全件SHAを確認し、完了記録を含めて再梱包。ZIP hashは外部proof、0.16元PNG ZIPもSHA不変を再確認。
+Chromeのresponsive emulationであり、実機iOS/Safari、実物の完全再現、検索順位/離脱率/AdSense承認や全法域適合を認定しない。[法務/運営残条件](remaining-task-audit-v17.md)は継承する。

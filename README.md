@@ -11,7 +11,8 @@ SORAが日本各地の工芸ジュエリーを選んで紹介する、日本語�
 | 別のAIへそのまま渡す | [AI引継ぎとコピー用prompt](docs/ai-handoff.md) → [現在状態](docs/handoff.md) |
 | 初めて起動する・環境エラーを直す | [セットアップ](docs/setup.md) |
 | 商品名・文章・価格・画像・店舗を直す | [編集ガイド](docs/editing-guide.md) |
-| 一覧地図の枠・沖縄別枠・トップ写真を直す | [現在022の編集手順](docs/compact-layout-v20.md) |
+| 人物画像の日本人設定・生成/差し替え | [現在023の画像ガイド](docs/japanese-model-styling-v21.md) |
+| 一覧地図の枠・沖縄別枠・自然高を直す | [継承する022の編集手順](docs/compact-layout-v20.md) |
 | sourceの構造を知る | [構造とデータflow](docs/architecture.md) → [srcの案内](src/README.md) |
 | 変更に必要な検査を選ぶ | [検証ガイド](docs/verification-guide.md) |
 | 公開・元に戻す・ZIPを作る | [公開と納品](docs/setup.md#公開と復旧) |
@@ -21,9 +22,14 @@ AIは最初に[AGENTS.md](AGENTS.md)を読みます。過去の会話がなく�
 
 ## 現在の基準
 
-公開版0.17.3・地図枠とトップ写真の調整022、2026-11-17。台帳は0.16から公開60/登録66商品・下書き6、24県、公開関連34技法（全36）、一次出典293、33店舗/53商品、人物58＋単体60の118画像を継承します。今後の件数上限ではありません。公開/納品の確定値は[deployment-results](docs/deployment-results.json)、実測は[verification](docs/verification.md)を正本にします。
+作業版0.18.0・日本人女性の着用画像023、2026-11-17。台帳は0.16から公開60/登録66商品・下書き6、24県、公開関連34技法（全36）、一次出典293、33店舗/53商品、人物58＋単体60の118画像を継承します。今後の件数上限ではありません。公開/納品の確定値は[deployment-results](docs/deployment-results.json)、実測は[verification](docs/verification.md)を正本にします。
 
-0.17.3（仕様022）公開済み。app `ef8ae160e7fc7d2b41cdce1063094313b719df6e`、[Actions44081729750](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44081729750) completed/success。実URLで一覧地図241・Hero77・mobile92・Sources328・補足24を確認。地図枠縮小/一覧沖縄別枠とトップ写真の自然比率を反映。確定値はdeployment-results/verificationを参照。
+<!-- TODO_PUBLIC_V21 -->
+0.18.0（仕様023）は画像差し替え・公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
+
+023では人物着用画像を、架空の日本人成人女性という生成設定へ統一する作業中です。新規は25歳を含む25〜33歳、華やかなかわいさ/洗練された綺麗さと髪型・表情・装いの変化を使います。見た目から実在人物の国籍・年齢を推定/認定しません。監査は22画像置換/36画像保持/不明0で、新画像の生成・採用・公開の完了数ではありません。新logはdocs/image-generation-japanese-v23.json、readerはscripts/lib/styling-generation-manifests.mjs、専用QAはscripts/check-japanese-model-styling.mjs。旧22画像のbytesを上書きせずasset台帳でretiredへ移し、dist/ZIP除外とGitの追跡解除/ignoreを対応付けます。v12baselineは変更せず、保持36人物・単体60・商品facts/レイアウト/広告off/Google Maps同意を維持します。新元PNGは納品先のgenerated-originals/0.18.0/へ別保存し、旧記録/原本も残します。
+
+旧版の公開記録：0.17.3（仕様022）公開済み。app `ef8ae160e7fc7d2b41cdce1063094313b719df6e`、[Actions44081729750](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44081729750) completed/success。実URLで一覧地図241・Hero77・mobile92・Sources328・補足24を確認。地図枠縮小/一覧沖縄別枠とトップ写真の自然比率を反映。確定値はdeployment-results/verificationを参照。 0.17.3の全sourceは1155ファイルを照合済み。これは023の生成/検証/公開/納品結果ではありません。
 
 旧版の公開記録：0.17.2（仕様021）公開済み。app `19f066ee20f4aa8eb1b441a4178dc92ffcb25ae7`、[Actions44072612768](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44072612768) completed/success。実URLの写真37・mobile92・Sources328・補足24が成功。Top10とDISCOVER3の写真を全3ページで統一。確定値はdeployment-results/verificationを参照。 0.17.2の全sourceは1118ファイルを照合済み。これは022の実測/公開/納品結果ではありません。
 
@@ -37,7 +43,7 @@ Googleマップは初回の明示許可後、日英・全店舗で30日間自動
 
 [日本地図の直接選択](docs/japan-map-direct-v18.md)・[残タスク](docs/remaining-task-audit-v17.md)・[法務再確認](docs/legal-review-v17.md)・[商用ホスト移行準備](docs/commercial-host-migration-v17.md)を同梱。対応ホスト向けpublic/_headersは移行準備です。現GitHub PagesのHTTPヘッダーを設定済みとはせず、実契約/本人情報/広告実ID・CMP/ドメイン・DNS/アカウント管理/検索実績を技術PASSで完了化しません。AdSense off・実提携未申請/通常URLを維持します。
 
-0.17.3用の版付きZIP名は`japanese-craft-jewelry-source-0.17.3-compact-022.zip`、外部proof名は`package-verification-0.17.3-compact-022.json`です。最終状態はdeployment-resultsのsourceDeliveryと外部proofを参照し、予定名だけで完成としません。今回新bitmap生成なし。0.16の118WebPと元PNG23枚（採用20・棄却3）/生成記録/別ZIPを保持し、旧原本を上書きしません。
+0.18.0用の版付きZIP名は`japanese-craft-jewelry-source-0.18.0-models-023.zip`、外部proof名は`package-verification-0.18.0-models-023.json`です。最終状態はdeployment-resultsのsourceDeliveryと外部proofを参照し、予定名だけで完成としません。023では22人物画像を新規生成の対象とし、保持36人物・単体60を維持します。0.16等の旧元PNG/生成記録/版付きZIPを残し、新元PNGはgenerated-originals/0.18.0/へ別保存します。
 
 ## まず起動する
 
@@ -93,3 +99,8 @@ JSONの部分例は[編集ガイド](docs/editing-guide.md)にあります。id�
 | pnpm package:delivery | PowerShell7で書出し→ZIP→repo/export/ZIP全件SHA。旧ZIPを保持 |
 
 Chrome検査はbuildと同じPUBLIC_BASE_PATH、正しいCHECK_BASE_URL、別のreport保存先を使います。既存0.15の証跡を上書きしない具体例は[検証ガイド](docs/verification-guide.md)。新規課金・申請・DNS/アカウント設定は実行していません。内容量やテストPASSをAdSense合格・在庫・全安全の保証にしません。
+
+
+## 日本人女性の人物画像023
+
+0.18.0の人物生成/編集・監査・退役と検証の方針は[023ガイド](docs/japanese-model-styling-v21.md)・[仕様と検証](specs/023-japanese-model-styling/)を確認します。新規生成/採用/公開/ZIPは作業中で、最終件数・app/Actions・集合/全SHAはdeployment-resultsと外部proofが正本です。旧生成logのUS/UK等は歴史として残し、現在のactive registryに対応する生成設定だけを監査します。023の新画像を、旧022の241/77/92や旧「全画像不変」の成功へ加算しません。

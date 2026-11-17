@@ -1,9 +1,14 @@
 # 商品・文章・画像の編集ガイド
 
 プログラムを書かない運営者と、引継ぎ先のAIのための手引きです。まず[README](../README.md)で起動し、詳しい判断は[引継ぎ](handoff.md)・[共通原則](constitution.md)・[運用](operations.md)へ戻ってください。
-2026-11-17の公開版0.17.3が継承する台帳は全66商品、公開60商品、下書き6商品、24県、33店舗（53商品に店舗案内）です。公開関連技法は34（全36）、一次出典293件、人物58＋単体60のAI画像118ファイル。今後の件数は台帳を数えて確かめます。
+2026-11-17の作業版0.18.0が継承する台帳は全66商品、公開60商品、下書き6商品、24県、33店舗（53商品に店舗案内）です。公開関連技法は34（全36）、一次出典293件、人物58＋単体60のAI画像118ファイル。今後の件数は台帳を数えて確かめます。
 
-0.17.3（仕様022）公開済み。app `ef8ae160e7fc7d2b41cdce1063094313b719df6e`、[Actions44081729750](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44081729750) completed/success。実URLで一覧地図241・Hero77・mobile92・Sources328・補足24を確認。地図枠縮小/一覧沖縄別枠とトップ写真の自然比率を反映。確定値はdeployment-results/verificationを参照。
+<!-- TODO_PUBLIC_V21 -->
+0.18.0（仕様023）は画像差し替え・公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
+
+023では人物着用画像を、架空の日本人成人女性という生成設定へ統一する作業中です。新規は25歳を含む25〜33歳、華やかなかわいさ/洗練された綺麗さと髪型・表情・装いの変化を使います。見た目から実在人物の国籍・年齢を推定/認定しません。監査は22画像置換/36画像保持/不明0で、新画像の生成・採用・公開の完了数ではありません。新logはdocs/image-generation-japanese-v23.json、readerはscripts/lib/styling-generation-manifests.mjs、専用QAはscripts/check-japanese-model-styling.mjs。旧22画像のbytesを上書きせずasset台帳でretiredへ移し、dist/ZIP除外とGitの追跡解除/ignoreを対応付けます。v12baselineは変更せず、保持36人物・単体60・商品facts/レイアウト/広告off/Google Maps同意を維持します。新元PNGは納品先のgenerated-originals/0.18.0/へ別保存し、旧記録/原本も残します。
+
+旧版の公開記録：0.17.3（仕様022）公開済み。app `ef8ae160e7fc7d2b41cdce1063094313b719df6e`、[Actions44081729750](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44081729750) completed/success。実URLで一覧地図241・Hero77・mobile92・Sources328・補足24を確認。地図枠縮小/一覧沖縄別枠とトップ写真の自然比率を反映。確定値はdeployment-results/verificationを参照。 0.17.3の全sourceは1155ファイルを照合済み。これは023の生成/検証/公開/納品結果ではありません。
 
 旧版の公開記録：0.17.2（仕様021）公開済み。app `19f066ee20f4aa8eb1b441a4178dc92ffcb25ae7`、[Actions44072612768](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44072612768) completed/success。実URLの写真37・mobile92・Sources328・補足24が成功。Top10とDISCOVER3の写真を全3ページで統一。確定値はdeployment-results/verificationを参照。 0.17.2の全sourceは1118ファイルを照合済み。これは022の実測/公開/納品結果ではありません。
 
@@ -166,6 +171,10 @@ Q&Aへ価格・URLを埋め込んだり、別商品の回答全文をコピー�
 
 ## 7. 画像を差し替える
 
+023の人物更新では[日本人女性の画像ガイド](japanese-model-styling-v21.md)を先に読みます。新logはdocs/image-generation-japanese-v23.json、readerはscripts/lib/styling-generation-manifests.mjs。対象22だけを例外にし、保持36人物/単体60/v12baselineを変更しません。旧22は同名上書きせずledgerのretired/localRetiredPathとGitignore/追跡解除・dist/ZIP除外を揃え、旧原本を保ちます。Git操作は今回rootが担当します。
+
+新WebPはstyling-jp-<productId>-v23.webp、元PNGは納品先generated-originals/0.18.0/へ。人物は架空の日本人成人25〜33歳の設定で、25歳を含めます。altはAIと見える装い/装身具を説明し、画像から国籍/年齢を認定しません。過去logのUS/UK等を削除せず、現在のactive assetIdに対応する採用設定を新QAで確認します。
+
 人物用とジュエリー単体用は別の対応表です。同じ商品IDで結び、`public/images/`に実ファイルを置きます。
 単体画像の既存例では、`path`に`public/`を付けません。
 ```json
@@ -190,7 +199,7 @@ Q&Aへ価格・URLを埋め込んだり、別商品の回答全文をコピー�
 生成記録には実prompt・参照・原本PNG・変換・確認を残します。記録ファイルを新設する場合は検査側の参照先も合わせ、旧履歴を別画像の記録に書き換えません。
 
 0.16では人物用`image-generation-v16.json`と単体用`image-generation-solo-v16.json`を新設し、それぞれ採用10点を記録しました。新規原本は合計23PNGで、採用20・棄却3。棄却は`rejectedCandidates`に残し、activeな画像対応表へ混ぜません。人物ログと単体ログを取り違えず、旧v14の画像例・履歴はそのまま保持します。PNG原本は別資料で、通常buildは同梱WebPとdocsの記録を使います。
-WebPへ変換しても原本PNGを保管し、AI由来のIPTC XMPを維持します。詳細は[画像方針](image-plan-v13.md)・[単体図記録](image-generation-solo-v14.json)へ。
+WebPへ変換しても原本PNGを保管し、AI由来のIPTC XMPを維持します。旧生成の経緯は[当時の画像方針](image-plan-v13.md)・[単体図記録](image-generation-solo-v14.json)、現在の人物設定は023ガイドへ。
 公式写真は、URLがあるだけでは転載できません。許諾なしの保存・掲載・ホットリンクを避け、AI図を実物写真・寸法・金具・販売数量の証拠にしません。
 
 ## 8. 商品順・地域・種類別の代表を変える
@@ -205,11 +214,11 @@ WebPへ変換しても原本PNGを保管し、AI由来のIPTC XMPを維持しま
 新しい種別や所属は`catalog.json`と日本語名称に登録してから使います。商品を増やしただけではホームの種類項目は自動追加されません。
 観光TOP10は販売人気順ではありません。順位の年・訪問率・一次資料は[地域設定](../src/config/region-selection.ts)と[調査記録](research/tourism-top10-v9.json)を組で更新します。
 
-### 現在022のホームHero・一覧地図を更新する
+### 継承する022のホームHero・一覧地図を更新する
 
 ホーム先頭のHeroとは別に、産地一覧はTOP10→コンパクトな日本地図→DISCOVER3県の順です。47県のCC0原形を主図46＋沖縄別枠1へ分け、実商品/産地本文がある掲載24県だけを通常リンクにします。沖縄は島path・枠・labelを押せる拡大表示とし、県のclick/tap/Enterで産地の商品一覧へ直接進みます。pointerenter/focus/selectの代表単体画像/商品/国内参考価格preview、100/150/200/300%のzoom・内部scroll・全体表示、地方別の初期closed details・地図ジャンプ・JSなしのhrefを継承します。外枠/主図/沖縄枠の設計値と実測は最新022の説明で区別します。
 
-日本地図はsrc/data/japan-map-geometry.json（CC0出典/47県形状）、src/config/japan-map.ts（地方とDISCOVER3県）、JapanJewelryMap.astro（native直接リンク・代表preview・ローカルzoom）。店舗の地図はmap-preferences.ts（30日/版/最小値検証）、map-preferences-client.ts（全表示/全停止）、MapPreferences.astro（Privacyの設定UI）へ分離します。商品価格や画像URLを地理JSONへ複製せず、未掲載県へ空URLを作りません。小さな県形状そのものを44pxとは呼ばず、select/地方別リンクを代替にします。[旧版の出典と加工](japan-map-v17.md)を保持し、[現在の直接選択](japan-map-direct-v18.md)を確認してください。県のclickをpreventDefaultで横取りしてpreviewだけに戻さず、href/Enter/修飾clickの通常動作を維持します。小さな県は拡大後に実際の形状内を選べるか確認し、地図内のoverflowとページ全体の横はみ出しを区別します。今回は新bitmapを生成していません。
+日本地図はsrc/data/japan-map-geometry.json（CC0出典/47県形状）、src/config/japan-map.ts（地方とDISCOVER3県）、JapanJewelryMap.astro（native直接リンク・代表preview・ローカルzoom）。店舗の地図はmap-preferences.ts（30日/版/最小値検証）、map-preferences-client.ts（全表示/全停止）、MapPreferences.astro（Privacyの設定UI）へ分離します。商品価格や画像URLを地理JSONへ複製せず、未掲載県へ空URLを作りません。小さな県形状そのものを44pxとは呼ばず、select/地方別リンクを代替にします。[旧版の出典と加工](japan-map-v17.md)を保持し、[現在の直接選択](japan-map-direct-v18.md)を確認してください。県のclickをpreventDefaultで横取りしてpreviewだけに戻さず、href/Enter/修飾clickの通常動作を維持します。小さな県は拡大後に実際の形状内を選べるか確認し、地図内のoverflowとページ全体の横はみ出しを区別します。022の地図更新では新bitmapを生成していません。023の人物画像更新は別に記録します。
 
 ホーム先頭は[RegionHero.astro](../src/components/RegionHero.astro)、一覧地図は[JapanJewelryMap.astro](../src/components/JapanJewelryMap.astro)、TOP10＋DISCOVER共通の行/画像寸法（PC300×200px・スマホ222×148px）は[RegionSelection.astro](../src/components/RegionSelection.astro)です。Heroでclickを選択として扱う処理を、直接遷移する一覧地図へコピーしません。Heroの24県の小さな商品カードは共通MarketPriceでserver生成し、選択県だけを表示します。画像figureのasset/preserveRatio・imgのsrc/alt/寸法と、表示中カードのURL/title/価格metadata/単位/産地CTAを揃えます。
 
@@ -257,3 +266,8 @@ Node.js 24.22.3以上、pnpm 11.25.0を使います。初回は`pnpm install --f
 ### 022の固定高と地図枠を修正する場所
 
 Hero写真はRegionHero.astroのheight:auto/元比率を保ち、固定高の親やcaption前後の帯も測ります。一覧地図の外枠/主図/沖縄独立枠はJapanJewelryMap.astro、設計値は[022ガイド](compact-layout-v20.md)へ集約。Heroの画像選択と一覧のnative直接遷移を混ぜず、TOP10/DISCOVER300×200/222×148は021の共通styleを継承します。
+
+
+## 日本人女性の人物画像023
+
+0.18.0の人物生成/編集・監査・退役と検証の方針は[023ガイド](japanese-model-styling-v21.md)・[仕様と検証](../specs/023-japanese-model-styling/)を確認します。新規生成/採用/公開/ZIPは作業中で、最終件数・app/Actions・集合/全SHAはdeployment-resultsと外部proofが正本です。旧生成logのUS/UK等は歴史として残し、現在のactive registryに対応する生成設定だけを監査します。023の新画像を、旧022の241/77/92や旧「全画像不変」の成功へ加算しません。

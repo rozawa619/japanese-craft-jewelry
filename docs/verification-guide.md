@@ -1,8 +1,13 @@
 # 変更に合わせて検証する
 
-確認日：2026-11-17、公開版0.17.3・地図枠とトップ写真の調整022。目的は、変更に必要な証拠を得て、過去の成功を今回の成功と混同しないこと。最初に[AI引継ぎ](ai-handoff.md)とAGENTS.mdを読む。公開と納品の確定値は[deployment-results.json](deployment-results.json)、実際の入力・対象・失敗は各JSONを正本とする。
+確認日：2026-11-17、作業版0.18.0・日本人女性の着用画像023。目的は、変更に必要な証拠を得て、過去の成功を今回の成功と混同しないこと。最初に[AI引継ぎ](ai-handoff.md)とAGENTS.mdを読む。公開と納品の確定値は[deployment-results.json](deployment-results.json)、実際の入力・対象・失敗は各JSONを正本とする。
 
-0.17.3（仕様022）公開済み。app `ef8ae160e7fc7d2b41cdce1063094313b719df6e`、[Actions44081729750](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44081729750) completed/success。実URLで一覧地図241・Hero77・mobile92・Sources328・補足24を確認。地図枠縮小/一覧沖縄別枠とトップ写真の自然比率を反映。確定値はdeployment-results/verificationを参照。
+<!-- TODO_PUBLIC_V21 -->
+0.18.0（仕様023）は画像差し替え・公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
+
+023では人物着用画像を、架空の日本人成人女性という生成設定へ統一する作業中です。新規は25歳を含む25〜33歳、華やかなかわいさ/洗練された綺麗さと髪型・表情・装いの変化を使います。見た目から実在人物の国籍・年齢を推定/認定しません。監査は22画像置換/36画像保持/不明0で、新画像の生成・採用・公開の完了数ではありません。新logはdocs/image-generation-japanese-v23.json、readerはscripts/lib/styling-generation-manifests.mjs、専用QAはscripts/check-japanese-model-styling.mjs。旧22画像のbytesを上書きせずasset台帳でretiredへ移し、dist/ZIP除外とGitの追跡解除/ignoreを対応付けます。v12baselineは変更せず、保持36人物・単体60・商品facts/レイアウト/広告off/Google Maps同意を維持します。新元PNGは納品先のgenerated-originals/0.18.0/へ別保存し、旧記録/原本も残します。
+
+旧版の公開記録：0.17.3（仕様022）公開済み。app `ef8ae160e7fc7d2b41cdce1063094313b719df6e`、[Actions44081729750](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44081729750) completed/success。実URLで一覧地図241・Hero77・mobile92・Sources328・補足24を確認。地図枠縮小/一覧沖縄別枠とトップ写真の自然比率を反映。確定値はdeployment-results/verificationを参照。 0.17.3の全sourceは1155ファイルを照合済み。これは023の生成/検証/公開/納品結果ではありません。
 
 旧版の公開記録：0.17.2（仕様021）公開済み。app `19f066ee20f4aa8eb1b441a4178dc92ffcb25ae7`、[Actions44072612768](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44072612768) completed/success。実URLの写真37・mobile92・Sources328・補足24が成功。Top10とDISCOVER3の写真を全3ページで統一。確定値はdeployment-results/verificationを参照。 0.17.2の全sourceは1118ファイルを照合済み。これは022の実測/公開/納品結果ではありません。
 
@@ -183,7 +188,7 @@ repository→export→ZIPのファイル集合・必須設定/spec/正本/検査
 
 ZIP検証後に完了記録を更新した場合は、もう一度export/ZIP/全SHAを検証する。ZIP自身のbytes/SHAは外部の`package-verification-<version>-<revision>.json`へ置き、ZIP内へ自己参照させない。初回0.15の`package-verification-0.15.0.json`は当時の記録として保持する。旧0.15の私的QAのPNG/JSONは別のscreenshots/0.15.0へ分離した資料で、0.16の新しい証跡を上書き保存しない。
 
-最新の納品/公開の概要は[deployment-results.json](deployment-results.json)。現在022のコンパクト一覧地図/Hero自然高、前段階021の写真共通化、020の地図/Hero、019の地図/保存設定、018の全国追加、017の文書整備・旧0.15の公開検査を区別し、過去の件数や実行時刻を書き換えない。
+最新の納品/公開の概要は[deployment-results.json](deployment-results.json)。現在023の人物画像更新、前段階022のコンパクト一覧地図/Hero自然高、021の写真共通化、020の地図/Hero、019の地図/保存設定、018の全国追加、017の文書整備・旧0.15の公開検査を区別し、過去の件数や実行時刻を書き換えない。
 
 
 ## 継承する0.17.2の写真共通サイズ021
@@ -192,4 +197,16 @@ TOP10/DISCOVERの共通写真サイズは[021](../specs/021-unified-region-photo
 
 ## 0.17.3 一覧地図とトップ写真022
 
-現在は[022](../specs/022-compact-map-and-natural-hero/)・[操作/編集ガイド](compact-layout-v20.md)。node scripts/check-japan-map.mjsでコンパクト枠・47原形/24controls・沖縄別枠のnative遷移・preview/zoom/scroll/noJSを、node scripts/check-region-hero.mjsで全24県の自然比率/実paint/画像とAIcaption前後の上下余白・選択/query/言語を確認します。component全体と地図viewport、画像content-boxと実paintを区別。CHECK_REPORT_PATH/SCREENSHOT_PREFIXはcompact-layout-stage専用とし、旧021の37/92・旧020の217/77を新表示の検証と呼びません。必要なmobile/Source/SEOと実公開/ZIPの確定値は022 validationへ記録します。
+地図/Heroレイアウトの継承基準は[022](../specs/022-compact-map-and-natural-hero/)・[操作/編集ガイド](compact-layout-v20.md)。node scripts/check-japan-map.mjsでコンパクト枠・47原形/24controls・沖縄別枠のnative遷移・preview/zoom/scroll/noJSを、node scripts/check-region-hero.mjsで全24県の自然比率/実paint/画像とAIcaption前後の上下余白・選択/query/言語を確認します。component全体と地図viewport、画像content-boxと実paintを区別。CHECK_REPORT_PATH/SCREENSHOT_PREFIXはcompact-layout-stage専用とし、旧021の37/92・旧020の217/77を新表示の検証と呼びません。必要なmobile/Source/SEOと実公開/ZIPの確定値は022 validationへ記録します。
+
+
+## 日本人女性の人物画像023
+
+0.18.0の人物生成/編集・監査・退役と検証の方針は[023ガイド](japanese-model-styling-v21.md)・[仕様と検証](../specs/023-japanese-model-styling/)を確認します。新規生成/採用/公開/ZIPは作業中で、最終件数・app/Actions・集合/全SHAはdeployment-resultsと外部proofが正本です。旧生成logのUS/UK等は歴史として残し、現在のactive registryに対応する生成設定だけを監査します。023の新画像を、旧022の241/77/92や旧「全画像不変」の成功へ加算しません。
+
+
+### 023の新しい人物画像を検査する
+
+監査で確定した22置換/36保持を基準に、scripts/check-japanese-model-styling.mjsでactive人物の明示的なJapanese成人設定・manifest/registry/ledger・実bytes/AI metadata・採用記録を確認します。新readerはscripts/lib/styling-generation-manifests.mjs。保持36人物/単体60/v12baselineは不変、旧22はretired/Gitignore/Git追跡解除とdist/ZIP除外を確認します。旧生成logにUS/UKが残っていても歴史として保存し、active集合へ混ざらないことを検査します。国籍/年齢/魅力度のピクセル分類を合格根拠にしません。
+
+v12baselineや023以外の全画像不変gateを一括書換えせず、今回の対象だけを明示例外へ。Hero全24県・商品ページ・Top10/DISCOVERの日英/スマホ/自然比率/AIcaption・Source/SEO/公開URLを必要範囲で検査します。旧022の固定保全6はUI差分の歴史で、新しい人物画像の保全結果として再利用しません。画像/商品factsやレイアウトJS・広告/Maps設定の保全と、生成/採用の確認を別に記録します。専用QAの件数・成功・公開/ZIPはまだ未確定です。

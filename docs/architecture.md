@@ -1,8 +1,13 @@
 # 構成とデータの流れ
 
-対象は公開版0.17.3・地図枠とトップ写真の調整022、文書の入口は保守改訂017を継承。確認日2026-11-17。
+対象は作業版0.18.0・日本人女性の着用画像023、文書の入口は保守改訂017を継承。確認日2026-11-17。
 
-0.17.3（仕様022）公開済み。app `ef8ae160e7fc7d2b41cdce1063094313b719df6e`、[Actions44081729750](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44081729750) completed/success。実URLで一覧地図241・Hero77・mobile92・Sources328・補足24を確認。地図枠縮小/一覧沖縄別枠とトップ写真の自然比率を反映。確定値はdeployment-results/verificationを参照。
+<!-- TODO_PUBLIC_V21 -->
+0.18.0（仕様023）は画像差し替え・公開前の検証中です。公開app・Actions・実URL結果は確定後に更新します。
+
+023では人物着用画像を、架空の日本人成人女性という生成設定へ統一する作業中です。新規は25歳を含む25〜33歳、華やかなかわいさ/洗練された綺麗さと髪型・表情・装いの変化を使います。見た目から実在人物の国籍・年齢を推定/認定しません。監査は22画像置換/36画像保持/不明0で、新画像の生成・採用・公開の完了数ではありません。新logはdocs/image-generation-japanese-v23.json、readerはscripts/lib/styling-generation-manifests.mjs、専用QAはscripts/check-japanese-model-styling.mjs。旧22画像のbytesを上書きせずasset台帳でretiredへ移し、dist/ZIP除外とGitの追跡解除/ignoreを対応付けます。v12baselineは変更せず、保持36人物・単体60・商品facts/レイアウト/広告off/Google Maps同意を維持します。新元PNGは納品先のgenerated-originals/0.18.0/へ別保存し、旧記録/原本も残します。
+
+旧版の公開記録：0.17.3（仕様022）公開済み。app `ef8ae160e7fc7d2b41cdce1063094313b719df6e`、[Actions44081729750](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44081729750) completed/success。実URLで一覧地図241・Hero77・mobile92・Sources328・補足24を確認。地図枠縮小/一覧沖縄別枠とトップ写真の自然比率を反映。確定値はdeployment-results/verificationを参照。 0.17.3の全sourceは1155ファイルを照合済み。これは023の生成/検証/公開/納品結果ではありません。
 
 旧版の公開記録：0.17.2（仕様021）公開済み。app `19f066ee20f4aa8eb1b441a4178dc92ffcb25ae7`、[Actions44072612768](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44072612768) completed/success。実URLの写真37・mobile92・Sources328・補足24が成功。Top10とDISCOVER3の写真を全3ページで統一。確定値はdeployment-results/verificationを参照。 0.17.2の全sourceは1118ファイルを照合済み。これは022の実測/公開/納品結果ではありません。
 
@@ -57,6 +62,7 @@ specs/               仕様・設計・タスク・検証の対応
 | 国内通販/小売＋カタログの購入根拠 | `purchase-evidence.json` | `purchase-evidence.ts`、`PurchaseEvidence`、validator |
 | 店舗、商品との対応、公式home、訪問の注意 | `visits.json` | `visits.ts`、`VisitGuide` |
 | 出典URL・タイトル・実確認日・閲覧状態 | `docs/research/sources.json` | `catalog.ts`が直接importし、`Sources`が表示する |
+| 023人物の生成/採用設定 | docs/image-generation-japanese-v23.json・editorial-images.json・docs/assets.json | scripts/lib/styling-generation-manifests.mjs・scripts/check-japanese-model-styling.mjsでactive assetIdと明示設定を照合。旧logは保持 |
 | 人物AIイメージ / 単体AIイメージ | `editorial-images.json` / `product-detail-images.json` | 各画像helper、`EditorialImage` / `ProductDetailImage` / `TypeChoiceImage` |
 | 画像bytes・alt・用途/退役の根拠 | `public/images/`、`docs/assets.json`、生成記録JSON | image validator、WebP/XMP/SHA確認、退役ファイルの除外 |
 | 編集順、観光訪問率の表示、産地の代表 | `config/selection.ts`、`config/region-selection.ts`、`region-choice-notes.json` | `RegionSelection`、`RegionalChoiceGuide`、`type-choices.ts` |
@@ -130,7 +136,7 @@ specs/               仕様・設計・タスク・検証の対応
 
 ホーム先頭のHeroとは別に、産地一覧はTOP10→コンパクトな日本地図→DISCOVER3県の順です。47県のCC0原形を主図46＋沖縄別枠1へ分け、実商品/産地本文がある掲載24県だけを通常リンクにします。沖縄は島path・枠・labelを押せる拡大表示とし、県のclick/tap/Enterで産地の商品一覧へ直接進みます。pointerenter/focus/selectの代表単体画像/商品/国内参考価格preview、100/150/200/300%のzoom・内部scroll・全体表示、地方別の初期closed details・地図ジャンプ・JSなしのhrefを継承します。外枠/主図/沖縄枠の設計値と実測は最新022の説明で区別します。
 
-日本地図はsrc/data/japan-map-geometry.json（CC0出典/47県形状）、src/config/japan-map.ts（地方とDISCOVER3県）、JapanJewelryMap.astro（native直接リンク・代表preview・ローカルzoom）。店舗の地図はmap-preferences.ts（30日/版/最小値検証）、map-preferences-client.ts（全表示/全停止）、MapPreferences.astro（Privacyの設定UI）へ分離します。外部JS/タイル/API/現在地/Storageは全国SVG地図では使いません。店舗Googleマップは別機能です。[日本地図の直接選択](japan-map-direct-v18.md)・[残タスク](remaining-task-audit-v17.md)・[法務再確認](legal-review-v17.md)・[商用ホスト移行準備](commercial-host-migration-v17.md)を参照してください。今回は新bitmap生成なし。
+日本地図はsrc/data/japan-map-geometry.json（CC0出典/47県形状）、src/config/japan-map.ts（地方とDISCOVER3県）、JapanJewelryMap.astro（native直接リンク・代表preview・ローカルzoom）。店舗の地図はmap-preferences.ts（30日/版/最小値検証）、map-preferences-client.ts（全表示/全停止）、MapPreferences.astro（Privacyの設定UI）へ分離します。外部JS/タイル/API/現在地/Storageは全国SVG地図では使いません。店舗Googleマップは別機能です。[日本地図の直接選択](japan-map-direct-v18.md)・[残タスク](remaining-task-audit-v17.md)・[法務再確認](legal-review-v17.md)・[商用ホスト移行準備](commercial-host-migration-v17.md)を参照してください。022の地図更新では新bitmap生成なし。023の人物画像更新は別に記録します。
 
 ## 検証・CSP・配信
 
@@ -153,3 +159,8 @@ RegionSelection.astroのgroup共通styleでTop10とDISCOVER3県を統一。画�
 ## 022 コンパクトな一覧地図と自然高Hero
 
 JapanJewelryMapは外枠/段組を抑え、本州〜北海道の主図と沖縄独立拡大枠へ47原形を分離します。掲載24controlsとnative直接遷移・preview/select/zoom/noJSを継承。RegionHero写真は固定高を廃止し自然比率で配置し、全24県の写真/商品/queryの同期を維持します。実装寸法/測定は[022ガイド](compact-layout-v20.md)とvalidationへ。021のRegionSelection共通写真と、Google店舗Mapsの同意機構は変更しません。
+
+
+## 日本人女性の人物画像023
+
+0.18.0の人物生成/編集・監査・退役と検証の方針は[023ガイド](japanese-model-styling-v21.md)・[仕様と検証](../specs/023-japanese-model-styling/)を確認します。新規生成/採用/公開/ZIPは作業中で、最終件数・app/Actions・集合/全SHAはdeployment-resultsと外部proofが正本です。旧生成logのUS/UK等は歴史として残し、現在のactive registryに対応する生成設定だけを監査します。023の新画像を、旧022の241/77/92や旧「全画像不変」の成功へ加算しません。

@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-11-17",
-  "policy": "No unlicensed third-party product/store/map photos, logos or reviews published. Current registry controls project-created AI styling, late-twenties/early-thirties fictional adults with clear skin and mixed cute/elegant styling. Visible AIイメージ/AI image captions; no real specifications or actual fit inferred. Historical artwork archived outside public; exclude any localRetiredPath from Git and source export.",
+  "policy": "No unlicensed third-party product/store/map photos, logos or reviews published. Current registry controls project-created AI styling: fictional adult Japanese women25–33, including mid-twenties and varied cute/elegant styling, with clear skin. Nationality and ages are generation settings, not inferred identities. Visible AIイメージ/AI image captions; no real specifications or actual fit inferred. Historical artwork archived outside public; exclude every localRetiredPath from Git and source export.",
   "assets": [
     {
       "id": "original-abstract-craft-patterns",
@@ -699,8 +699,14 @@
       "scope": "Styling only, visibly captioned AIイメージ/AI image; not actual product photography or fit/material evidence.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v13.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v13.json",
+      "localRetiredPath": "public/images/mie-akoya-oh002-stud-earrings-styling-v13.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-mie-akoya-oh002-stud-earrings-v23",
+      "retiredSha256": "cea788d11e959fc75426165c80be10ef984db54c91a39636ac1483b73f11eb73"
     },
     {
       "id": "ai-sangetsu-irodori-tombodama-necklace-styling-v13",
@@ -712,8 +718,14 @@
       "scope": "Styling only, visibly captioned AIイメージ/AI image; not actual product photography or fit/material evidence.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v13.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v13.json",
+      "localRetiredPath": "public/images/sangetsu-irodori-tombodama-necklace-styling-v13.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-sangetsu-irodori-tombodama-necklace-v23",
+      "retiredSha256": "4f82d9b93bb728f36ec897f1224e4f8c312291ea82545958ce6e16ce9333ac95"
     },
     {
       "id": "ai-sangetsu-irodori-tombodama-earrings-styling-v13",
@@ -725,8 +737,14 @@
       "scope": "Styling only, visibly captioned AIイメージ/AI image; not actual product photography or fit/material evidence.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v13.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v13.json",
+      "localRetiredPath": "public/images/sangetsu-irodori-tombodama-earrings-styling-v13.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-sangetsu-irodori-tombodama-earrings-v23",
+      "retiredSha256": "f9fd73a6861226a5fc7c23392e536e41d32f3642eb46d85ac4b13b08bc79926d"
     },
     {
       "id": "ai-simprich-reversible-topaz-ruby-chain-ring-styling-v13",
@@ -738,8 +756,14 @@
       "scope": "Styling only, visibly captioned AIイメージ/AI image; not actual product photography or fit/material evidence.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v13.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v13.json",
+      "localRetiredPath": "public/images/simprich-reversible-topaz-ruby-chain-ring-styling-v13.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-simprich-reversible-topaz-ruby-chain-ring-v23",
+      "retiredSha256": "e0a7c4d84fd1e105ffdafa806fc36ea044227ed56be8a3915ce2eaed1028d296"
     },
     {
       "id": "ai-simprich-reversible-silver-piaring-single-styling-v13",
@@ -751,8 +775,14 @@
       "scope": "Styling only, visibly captioned AIイメージ/AI image; not actual product photography or fit/material evidence.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v13.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v13.json",
+      "localRetiredPath": "public/images/simprich-reversible-silver-piaring-single-styling-v13.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-simprich-reversible-silver-piaring-single-v23",
+      "retiredSha256": "2cc112f4f896896ab0d07574611091ae69f841f03e92f59bc7647747875b7a08"
     },
     {
       "id": "ai-sirisiri-silver-thread-hoop-mini-styling-v13",
@@ -764,8 +794,14 @@
       "scope": "Styling only, visibly captioned AIイメージ/AI image; not actual product photography or fit/material evidence.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v13.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v13.json",
+      "localRetiredPath": "public/images/sirisiri-silver-thread-hoop-mini-styling-v13.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-sirisiri-silver-thread-hoop-mini-v23",
+      "retiredSha256": "afebe507be01310666b87feaa4e96ec1bfecfd083f26d98ecd9a1967e0f42364"
     },
     {
       "id": "ai-nousaku-aya-tin-pendant-styling-v13",
@@ -777,8 +813,14 @@
       "scope": "Styling only, visibly captioned AIイメージ/AI image; not actual product photography or fit/material evidence.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v13.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v13.json",
+      "localRetiredPath": "public/images/nousaku-aya-tin-pendant-styling-v13.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-nousaku-aya-tin-pendant-v23",
+      "retiredSha256": "d459f72162d9da40b9e0f9f6251b356eeef87e62f2d2aea4797ff0c2968c683a"
     },
     {
       "id": "ai-sghr-tie-tie-glass-earrings-styling-v13",
@@ -803,8 +845,14 @@
       "scope": "Styling only, visibly captioned AIイメージ/AI image; not actual product photography or fit/material evidence.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v13.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v13.json",
+      "localRetiredPath": "public/images/nousaku-dahlia-gerbera-clip-on-earrings-styling-v13.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-nousaku-dahlia-gerbera-clip-on-earrings-v23",
+      "retiredSha256": "540fd4bcd41ca8dbe65924bce79d0f49ccc54ac150ec2df12d202640b9e09bd3"
     },
     {
       "id": "ai-sghr-kolmio-glass-ear-cuff-styling-v13",
@@ -816,8 +864,14 @@
       "scope": "Styling only, visibly captioned AIイメージ/AI image; not actual product photography or fit/material evidence.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v13.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v13.json",
+      "localRetiredPath": "public/images/sghr-kolmio-glass-ear-cuff-styling-v13.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-sghr-kolmio-glass-ear-cuff-v23",
+      "retiredSha256": "200fe4af089b63fc6288fc739366639fbda67e1bef9b2f5b23cffe95e9c00822"
     },
     {
       "id": "ai-toytoy-ninkari-nikuri-earrings-styling-v13",
@@ -842,8 +896,14 @@
       "scope": "Styling only, visibly captioned AIイメージ/AI image; not actual product photography or fit/material evidence.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v13.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v13.json",
+      "localRetiredPath": "public/images/somemasa-peacock-clip-on-earrings-styling-v13.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-somemasa-peacock-clip-on-earrings-v23",
+      "retiredSha256": "ecefd360d6303c3d1f1a93199370367572cb8779887a209514baadf8d78461b9"
     },
     {
       "id": "ai-toytoy-sirokani-pe-silver-necklace-styling-v13",
@@ -855,8 +915,14 @@
       "scope": "Styling only, visibly captioned AIイメージ/AI image; not actual product photography or fit/material evidence.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v13.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v13.json",
+      "localRetiredPath": "public/images/toytoy-sirokani-pe-silver-necklace-styling-v13.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-toytoy-sirokani-pe-silver-necklace-v23",
+      "retiredSha256": "a795108675e5588e68ebceafe21a408fcef3979cf377a35cb7580471cb0eed06"
     },
     {
       "id": "ai-tamura-kaisai-enamel-ear-jewelry-styling-v13",
@@ -868,8 +934,14 @@
       "scope": "Styling only, visibly captioned AIイメージ/AI image; not actual product photography or fit/material evidence.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v13.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v13.json",
+      "localRetiredPath": "public/images/tamura-kaisai-enamel-ear-jewelry-styling-v13.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-tamura-kaisai-enamel-ear-jewelry-v23",
+      "retiredSha256": "064e3ff458ae2051503bdee8f140e137fbc12826bd937bf832a0e01b42e22f2d"
     },
     {
       "id": "ai-coyorimi-tamamusubi-clip-on-earrings-styling-v13",
@@ -894,8 +966,14 @@
       "scope": "Styling only, visibly captioned AIイメージ/AI image; not actual product photography or fit/material evidence.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v13.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v13.json",
+      "localRetiredPath": "public/images/iwaya-urushi-9mm-hook-earrings-styling-v13.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-iwaya-urushi-9mm-hook-earrings-v23",
+      "retiredSha256": "e289d53c5aa8294257061f9b977e521878e42675717a56b85ff11cac6a4b1b14"
     },
     {
       "id": "ai-egaho-gathered-kurume-kasuri-ear-jewelry-styling-v13",
@@ -907,8 +985,14 @@
       "scope": "Styling only, visibly captioned AIイメージ/AI image; not actual product photography or fit/material evidence.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v13.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v13.json",
+      "localRetiredPath": "public/images/egaho-gathered-kurume-kasuri-ear-jewelry-styling-v13.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-egaho-gathered-kurume-kasuri-ear-jewelry-v23",
+      "retiredSha256": "97626889bb375d7811d971ac3594c6f1b013c1349e1d2247d71f361e5e63dcb6"
     },
     {
       "id": "ai-showen-edo-uchi-silk-bracelet-styling-v13",
@@ -920,8 +1004,14 @@
       "scope": "Styling only, visibly captioned AIイメージ/AI image; not actual product photography or fit/material evidence.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v13.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v13.json",
+      "localRetiredPath": "public/images/showen-edo-uchi-silk-bracelet-styling-v13.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-showen-edo-uchi-silk-bracelet-v23",
+      "retiredSha256": "5c2ed807be7f4b774902f2ca43a45ac58aea4a69af462fa63b2da8d684cfb7f3"
     },
     {
       "id": "ai-kazarino-hanabishi-copper-earrings-styling-v13",
@@ -933,8 +1023,14 @@
       "scope": "Styling only, visibly captioned AIイメージ/AI image; not actual product photography or fit/material evidence.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v13.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v13.json",
+      "localRetiredPath": "public/images/kazarino-hanabishi-copper-earrings-styling-v13.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-kazarino-hanabishi-copper-earrings-v23",
+      "retiredSha256": "5f10d6c53b0b6471fc7d66226fda7256fc67751924c7f4ebe039c7a1842b13b9"
     },
     {
       "id": "ai-kazarino-shippo-pattern-brass-bangle-styling-v13",
@@ -1715,8 +1811,14 @@
       "scope": "Original fictional-adult styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of real wear, fit or materials.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v16.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v16.json",
+      "localRetiredPath": "public/images/styling-mitsusuke-higo-zogan-shizuku-pierced-earrings-v16.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-mitsusuke-higo-zogan-shizuku-pierced-earrings-v23",
+      "retiredSha256": "745396a3244fc0c599df165d3e3469fa889c5accf1344caa45ae6eb6456ee178"
     },
     {
       "id": "ai-solo-nanayosha-punu-gold-vanilla-pierced-earrings-v16",
@@ -1741,8 +1843,14 @@
       "scope": "Original fictional-adult styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of real wear, fit or materials.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v16.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v16.json",
+      "localRetiredPath": "public/images/styling-nanayosha-punu-gold-vanilla-pierced-earrings-v16.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-nanayosha-punu-gold-vanilla-pierced-earrings-v23",
+      "retiredSha256": "06fa2967cf252621a849b97f2d2ed13f6275416bd5ccdae11139f0257579267e"
     },
     {
       "id": "ai-solo-shimadzu-satsuma-kiriko-hikari-l-pendant-v16",
@@ -1767,8 +1875,14 @@
       "scope": "Original fictional-adult styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of real wear, fit or materials.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v16.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v16.json",
+      "localRetiredPath": "public/images/styling-shimadzu-satsuma-kiriko-hikari-l-pendant-v16.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-shimadzu-satsuma-kiriko-hikari-l-pendant-v23",
+      "retiredSha256": "b7bb401c87c5a3df32ab58c8588f47fa1879496dbca99bbd05ccce2bacc2e4e5"
     },
     {
       "id": "ai-solo-sur-basic1-clear-pearl-pierced-earrings-v16",
@@ -1793,8 +1907,14 @@
       "scope": "Original fictional-adult styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of real wear, fit or materials.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v16.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v16.json",
+      "localRetiredPath": "public/images/styling-sur-basic1-clear-pearl-pierced-earrings-v16.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-sur-basic1-clear-pearl-pierced-earrings-v23",
+      "retiredSha256": "4621a9bbc995e2a61c35621cacd2cde05e0a503306656350240b92ac76243603"
     },
     {
       "id": "ai-solo-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16",
@@ -1845,8 +1965,14 @@
       "scope": "Original fictional-adult styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of real wear, fit or materials.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v16.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v16.json",
+      "localRetiredPath": "public/images/styling-yadome-akita-rice-silver-pierced-earrings-v16.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-yadome-akita-rice-silver-pierced-earrings-v23",
+      "retiredSha256": "8c3007d32da7f813446fd741b3128c129e35f9a543960c49f8eeee0b5dbe890e"
     },
     {
       "id": "ai-solo-yoboty-inshu-washi-indigo-long-nonhole-earrings-v16",
@@ -1871,8 +1997,300 @@
       "scope": "Original fictional-adult styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of real wear, fit or materials.",
       "checkedAt": "2026-11-17",
       "productImage": false,
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v16.json",
+      "localRetiredPath": "public/images/styling-yoboty-inshu-washi-indigo-long-nonhole-earrings-v16.webp",
+      "localRetiredNote": "Historical local AI output. Exclude from public build, source ZIP and new Git tree; original bytes remain in historical release/Git evidence.",
+      "retiredAt": "2026-11-17",
+      "retiredReason": "Explicit Japanese-only fictional-model request for023.",
+      "replacedBy": "ai-styling-jp-yoboty-inshu-washi-indigo-long-nonhole-earrings-v23",
+      "retiredSha256": "0d4ccdb4a916b6cf46794358e69e4c7f6beb298b0b40f55dd6c1a76df39201e5"
+    },
+    {
+      "id": "ai-styling-jp-mie-akoya-oh002-stud-earrings-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-mie-akoya-oh002-stud-earrings-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
       "status": "active",
-      "promptRecord": "docs/image-generation-v16.json"
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-sangetsu-irodori-tombodama-necklace-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-sangetsu-irodori-tombodama-necklace-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-sangetsu-irodori-tombodama-earrings-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-sangetsu-irodori-tombodama-earrings-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-simprich-reversible-topaz-ruby-chain-ring-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-simprich-reversible-topaz-ruby-chain-ring-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-simprich-reversible-silver-piaring-single-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-simprich-reversible-silver-piaring-single-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-sirisiri-silver-thread-hoop-mini-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-sirisiri-silver-thread-hoop-mini-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-nousaku-aya-tin-pendant-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-nousaku-aya-tin-pendant-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-nousaku-dahlia-gerbera-clip-on-earrings-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-nousaku-dahlia-gerbera-clip-on-earrings-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-sghr-kolmio-glass-ear-cuff-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-sghr-kolmio-glass-ear-cuff-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-somemasa-peacock-clip-on-earrings-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-somemasa-peacock-clip-on-earrings-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-toytoy-sirokani-pe-silver-necklace-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-toytoy-sirokani-pe-silver-necklace-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-tamura-kaisai-enamel-ear-jewelry-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-tamura-kaisai-enamel-ear-jewelry-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-iwaya-urushi-9mm-hook-earrings-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-iwaya-urushi-9mm-hook-earrings-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-egaho-gathered-kurume-kasuri-ear-jewelry-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-egaho-gathered-kurume-kasuri-ear-jewelry-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-showen-edo-uchi-silk-bracelet-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-showen-edo-uchi-silk-bracelet-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-kazarino-hanabishi-copper-earrings-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-kazarino-hanabishi-copper-earrings-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-mitsusuke-higo-zogan-shizuku-pierced-earrings-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-mitsusuke-higo-zogan-shizuku-pierced-earrings-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-nanayosha-punu-gold-vanilla-pierced-earrings-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-nanayosha-punu-gold-vanilla-pierced-earrings-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-shimadzu-satsuma-kiriko-hikari-l-pendant-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-shimadzu-satsuma-kiriko-hikari-l-pendant-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-sur-basic1-clear-pearl-pierced-earrings-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-sur-basic1-clear-pearl-pierced-earrings-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-yadome-akita-rice-silver-pierced-earrings-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-yadome-akita-rice-silver-pierced-earrings-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
+    },
+    {
+      "id": "ai-styling-jp-yoboty-inshu-washi-indigo-long-nonhole-earrings-v23",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-yoboty-inshu-washi-indigo-long-nonhole-earrings-v23.webp",
+      "rightsHolder": "Project AI output; no claim of third-party photograph rights or exclusive copyright",
+      "permissionBasis": "User explicitly requested Japanese-only fictional adult styling models, including mid-twenties and cute/elegant directions, on2026-11-17. Reviewed built-in image_gen output; no retailer photograph supplied or copied.",
+      "creditRequired": false,
+      "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
+      "checkedAt": "2026-11-17",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-japanese-v23.json"
     }
   ],
   "productPhotography": [
@@ -2520,5 +2938,15 @@
     "totalActiveRasterFiles": 98,
     "record": "docs/image-generation-solo-v14.json",
     "scope": "Original AI detail illustrations with original PNGs retained separately. Product photograph permissions remain unapproved."
+  },
+  "japaneseModelReviewV23": {
+    "checkedAt": "2026-11-17",
+    "request": "Japanese-only fictional adult models25–33; include mid-twenties, cute and elegant directions",
+    "newGenerationManifest": "docs/image-generation-japanese-v23.json",
+    "replacementAudit": "docs/japanese-models-stage-audit.json",
+    "retainedJapaneseImages": 36,
+    "replacedNonJapaneseImages": 22,
+    "nationalityInferenceFromAppearance": false,
+    "thirdPartyPhotographsUsed": false
   }
 }

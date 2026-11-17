@@ -1,0 +1,2925 @@
+{
+  "checkedAt": "2026-11-17T12:57:12.795Z",
+  "method": "Exact registry/asset/generation-record linkage, recorded fictional Japanese-adult settings, source bytes/XMP and declared replacement scope. No ethnicity, nationality, age or attractiveness inference from appearance. Human visual review remains necessary.",
+  "scope": {
+    "dist": true,
+    "originals": true
+  },
+  "checks": [
+    {
+      "name": "Pinned pre-replacement audit and unchanged solo-image build remain available",
+      "status": "passed",
+      "detail": {
+        "audit": "docs/japanese-models-stage-audit.json",
+        "previousBuild": "docs/compact-layout-stage-build-manifest.json",
+        "oldJapanese": 36,
+        "explicitlyReplaced": 22
+      }
+    },
+    {
+      "name": "Every published product maps to an active image with exact generation evidence",
+      "status": "passed",
+      "detail": {
+        "products": 60,
+        "uniqueImages": 58,
+        "manifests": [
+          {
+            "path": "docs/image-generation-v9.json",
+            "records": 28
+          },
+          {
+            "path": "docs/image-generation-v13.json",
+            "records": 23
+          },
+          {
+            "path": "docs/image-generation-v16.json",
+            "records": 10
+          },
+          {
+            "path": "docs/image-generation-japanese-v23.json",
+            "records": 22
+          }
+        ]
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/hakone-yosegi-pierced-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "hamamatsuya-catch-pierced"
+        ],
+        "assetId": "ai-hakone-yosegi-pierced-styling-v9",
+        "path": "images/hakone-yosegi-pierced-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/3",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            28,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 96330,
+        "sha256": "ad9d3b1505f50b0e32ceac11c274917f78293ae87acfcf44509a0c4427dbf5b3"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/hakone-yosegi-clipon-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "hamamatsuya-clip"
+        ],
+        "assetId": "ai-hakone-yosegi-clipon-styling-v9",
+        "path": "images/hakone-yosegi-clipon-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/4",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            28,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 107560,
+        "sha256": "a0b25e0844fdc5af359f36e7c3e3ae46b93df1b6ff3f7e50541ea8481ac607c9"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/rinzen-amber-glass-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "rinzen-seika-amber-pierced-earrings"
+        ],
+        "assetId": "ai-rinzen-amber-glass-styling-v9",
+        "path": "images/rinzen-amber-glass-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/0",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            28,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 78876,
+        "sha256": "08c55ea2a122ba07a24bba5919e7496339202bf45f6e9c8f0f8522b0a4abf45e"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/arita-halfmoon-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "six-kiln-half-moon-earrings"
+        ],
+        "assetId": "ai-arita-halfmoon-styling-v9",
+        "path": "images/arita-halfmoon-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/7",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            28,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 78276,
+        "sha256": "302bf3fc8e88a77da5fe30feb6ced8c8e1dcdfc3a9d1b64b95e51eaca5819a19"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/yosegi-star-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "maruyama-clip-c",
+          "maruyama-pierced-c"
+        ],
+        "assetId": "ai-yosegi-star-styling-v9",
+        "path": "images/yosegi-star-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/9",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            28,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 87782,
+        "sha256": "a39d6974e9586eb082115c1e9e288173a068646cad2930d07da4173fe7aea09a"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/yosegi-bar-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "maruyama-clip-d",
+          "maruyama-pierced-d"
+        ],
+        "assetId": "ai-yosegi-bar-styling-v9",
+        "path": "images/yosegi-bar-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/5",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            28,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 104398,
+        "sha256": "582fe36ebc0596254ced7dde0052532d7be11651dbe078138d759ac266087ab5"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/yosegi-pendant-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "hamamatsuya-pendant"
+        ],
+        "assetId": "ai-yosegi-pendant-styling-v9",
+        "path": "images/yosegi-pendant-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/6",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            28,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 82082,
+        "sha256": "c6a15efcf482620555c3e355571a9c97c3271029858be8876d9181b69da1001e"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/checos-silver-flower-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "checos-japanese-apricot-pierced-earrings"
+        ],
+        "assetId": "ai-checos-silver-flower-styling-v9",
+        "path": "images/checos-silver-flower-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/8",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            28,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 120518,
+        "sha256": "828627f8f41f9b36dff54f9912e25e04f8d22137ed91beaa2de4e8c92ffe5269"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/morphosphere-blue-pansy-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "morphosphere-ultramarine-pansy-pierced-earrings"
+        ],
+        "assetId": "ai-morphosphere-blue-pansy-styling-v9",
+        "path": "images/morphosphere-blue-pansy-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/10",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            28,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 96910,
+        "sha256": "b050fd4e55fb8d70e7c9dec44ac6ed13a486262b6cf74828a946bb9caf3ad39a"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/kato-green-cloisonne-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "kato-suke-drop-pierced-earrings"
+        ],
+        "assetId": "ai-kato-green-cloisonne-styling-v9",
+        "path": "images/kato-green-cloisonne-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/1",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            28,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 106422,
+        "sha256": "902f000ffcd13d7ae837d81caba9c5491f0fc7a2b5e529e245410f0937c86e86"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/arita-blue-bouquet-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "six-kiln-blue-bouquet-pierced-earrings"
+        ],
+        "assetId": "ai-arita-blue-bouquet-styling-v9",
+        "path": "images/arita-blue-bouquet-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/11",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            28,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 92982,
+        "sha256": "6cf1828b90904a178c7e74aa1d9a6860c206b387e8e14f9c1300d2347bdb3772"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/rinzen-green-leaf-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "rinzen-leaf-glass-pendant"
+        ],
+        "assetId": "ai-rinzen-green-leaf-styling-v9",
+        "path": "images/rinzen-green-leaf-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/12",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            28,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 107664,
+        "sha256": "cddba5fb05ae46d7b5df6065102740a313cc2aa4e53f360eca801b448ed60f53"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/saskia-porcelain-cuff-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "saskia-diez-drake-porcelain-cuff"
+        ],
+        "assetId": "ai-saskia-porcelain-cuff-styling-v9",
+        "path": "images/saskia-porcelain-cuff-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/13",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            28,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 46866,
+        "sha256": "646ac12a72eef2e36892ac9798bdacba7529f00a6bbdecd4a4744edf6adfa0ee"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/senshu-white-pearl-stud-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "senshu-pearl-stud-earrings"
+        ],
+        "assetId": "ai-senshu-white-pearl-stud-styling-v9",
+        "path": "images/senshu-white-pearl-stud-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/14",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            28,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 51554,
+        "sha256": "411d59407bb6bbb01c5c19733fa7cdc52c336a9d3498409365187e7b9510ec2e"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/simprich-crystal-bubble-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "simprich-crystal-bubble-pierced-earrings"
+        ],
+        "assetId": "ai-simprich-crystal-bubble-styling-v9",
+        "path": "images/simprich-crystal-bubble-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/16",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            27,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 123332,
+        "sha256": "f73ddf0249d161b90cfa789e9efdc610d0af8a8a1ab4f3a3f15e64d324e5b72a"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/yukie-mint-glass-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "yukieglass-mint-veil-earrings"
+        ],
+        "assetId": "ai-yukie-mint-glass-styling-v9",
+        "path": "images/yukie-mint-glass-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/17",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            27,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 89474,
+        "sha256": "a48b1ffc189f52a29e29624a905d0143780130b6f8a0e524547b90df0742e8f3"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/sugimura-raden-flower-pendant-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "sugimura-hosoge-raden-pendant"
+        ],
+        "assetId": "ai-sugimura-raden-flower-pendant-styling-v9",
+        "path": "images/sugimura-raden-flower-pendant-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/18",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            27,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 79976,
+        "sha256": "a9e99897661386c6df1a8f75751ba58ef4f6d11777d950996e8f73a12854aabd"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/arcos-cosmic-spiral-pendant-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "arcos-cosmic-spiral-pendant"
+        ],
+        "assetId": "ai-arcos-cosmic-spiral-pendant-styling-v9",
+        "path": "images/arcos-cosmic-spiral-pendant-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/19",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            27,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 114714,
+        "sha256": "e5096f550f3eb32f31c77310a9862d48a08c86077e3581dbc87f477534f948b2"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/arcos-cosmic-glass-bracelet-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "arcos-cosmic-glass-bracelet"
+        ],
+        "assetId": "ai-arcos-cosmic-glass-bracelet-styling-v9",
+        "path": "images/arcos-cosmic-glass-bracelet-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/20",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            27,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 62518,
+        "sha256": "eabc62dcc0ebca5146b7205770a8ba088d267a3a0eba72ce6f91f0b797177b75"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/senshu-white-pearl-swing-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "senshu-pearl-swing-earrings"
+        ],
+        "assetId": "ai-senshu-white-pearl-swing-styling-v9",
+        "path": "images/senshu-white-pearl-swing-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/21",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            27,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 78612,
+        "sha256": "657da3e1a528debdf5b0dc631b1adcf16173dab8c5264741b0179421721803a9"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/sugimura-lotus-makie-ring-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "sugimura-lotus-makie-ring"
+        ],
+        "assetId": "ai-sugimura-lotus-makie-ring-styling-v9",
+        "path": "images/sugimura-lotus-makie-ring-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/22",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            27,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 66694,
+        "sha256": "52ffcb4962b65cf5ffda42c172c7f9e281c98d7a2904c5843fbdc815dfc93c36"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/simprich-rose-quartz-necklace-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "simprich-rose-quartz-necklace"
+        ],
+        "assetId": "ai-simprich-rose-quartz-necklace-styling-v9",
+        "path": "images/simprich-rose-quartz-necklace-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/24",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            27,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 67028,
+        "sha256": "abd8d1e2a6a9f78ac1413ce033a3b2e552b34f1686b5b67c9407318f58ff27cc"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/yukie-rouge-glass-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "yukieglass-rouge-veil-earrings"
+        ],
+        "assetId": "ai-yukie-rouge-glass-styling-v9",
+        "path": "images/yukie-rouge-glass-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/25",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            27,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 78656,
+        "sha256": "ca33f3c867d75220b039312522aeb5746d3b3ecb947c2230eb7c5dad9ab3f42c"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/nakajima-sakura-damascene-pendant-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "nakajima-pear-sakura-pendant"
+        ],
+        "assetId": "ai-nakajima-sakura-damascene-pendant-styling-v9",
+        "path": "images/nakajima-sakura-damascene-pendant-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/26",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            27,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 58776,
+        "sha256": "a1811ce3b7b6af6944f7042f52687ce373fe7637ab3957f6d070464a19bc37b5"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/kato-blue-round-enamel-ring-styling-v9.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "kato-suke-round-ring"
+        ],
+        "assetId": "ai-kato-blue-round-enamel-ring-styling-v9",
+        "path": "images/kato-blue-round-enamel-ring-styling-v9.webp",
+        "manifest": "docs/image-generation-v9.json",
+        "pointer": "/assets/27",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            27,
+            31
+          ],
+          "style": null,
+          "evidence": "explicit-person-prompt"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 62514,
+        "sha256": "831fcb1a47de8312272c81267be664df9696c64bf27ba35571c2ff0cc82b14df"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/hario-little-tears-clip-on-earrings-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "hario-little-tears-clip-on-earrings"
+        ],
+        "assetId": "ai-hario-little-tears-clip-on-earrings-styling-v13",
+        "path": "images/hario-little-tears-clip-on-earrings-styling-v13.webp",
+        "manifest": "docs/image-generation-v13.json",
+        "pointer": "/images/0",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            28
+          ],
+          "style": "cute",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 102226,
+        "sha256": "5ec4e851cb2dda751cdf58285bed72f26716b3508b632e9cd66cd35ee9f390ab"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/sirisiri-page-blue-enamel-pierced-earrings-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "sirisiri-page-blue-enamel-pierced-earrings"
+        ],
+        "assetId": "ai-sirisiri-page-blue-enamel-pierced-earrings-styling-v13",
+        "path": "images/sirisiri-page-blue-enamel-pierced-earrings-styling-v13.webp",
+        "manifest": "docs/image-generation-v13.json",
+        "pointer": "/images/1",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            31
+          ],
+          "style": "elegant",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 66118,
+        "sha256": "065ba9ae15adaeeb51f5136c2c681f8a7f972f9502d4036430a799a92ef3e7cc"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-mie-akoya-oh002-stud-earrings-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "mie-akoya-oh002-stud-earrings"
+        ],
+        "assetId": "ai-styling-jp-mie-akoya-oh002-stud-earrings-v23",
+        "path": "images/styling-jp-mie-akoya-oh002-stud-earrings-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/7",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            27
+          ],
+          "style": "elegant",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 76372,
+        "sha256": "c9b1bb1240d6e84c6f725e11f46a892bf3eabc1a6d009ae256e63ca5488d83c8"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-sangetsu-irodori-tombodama-necklace-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "sangetsu-irodori-tombodama-necklace"
+        ],
+        "assetId": "ai-styling-jp-sangetsu-irodori-tombodama-necklace-v23",
+        "path": "images/styling-jp-sangetsu-irodori-tombodama-necklace-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/8",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            30
+          ],
+          "style": "elegant",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 109774,
+        "sha256": "4699434041fc3b1f09967c83d9bb46829033f4ecd8d7530b5221fa90961039b9"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-sangetsu-irodori-tombodama-earrings-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "sangetsu-irodori-tombodama-earrings"
+        ],
+        "assetId": "ai-styling-jp-sangetsu-irodori-tombodama-earrings-v23",
+        "path": "images/styling-jp-sangetsu-irodori-tombodama-earrings-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/9",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            26
+          ],
+          "style": "cute",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 103924,
+        "sha256": "0c8f76286c55b747e49474bbe6c44a9af59b12efec83599f50fc4ccb894b60cf"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-simprich-reversible-topaz-ruby-chain-ring-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "simprich-reversible-topaz-ruby-chain-ring"
+        ],
+        "assetId": "ai-styling-jp-simprich-reversible-topaz-ruby-chain-ring-v23",
+        "path": "images/styling-jp-simprich-reversible-topaz-ruby-chain-ring-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/10",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            30
+          ],
+          "style": "elegant",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 57754,
+        "sha256": "2900734a1c51aace0688cc92a326d34f3fce75083de09eaf8e9c61b3c551647f"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-simprich-reversible-silver-piaring-single-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "simprich-reversible-silver-piaring-single"
+        ],
+        "assetId": "ai-styling-jp-simprich-reversible-silver-piaring-single-v23",
+        "path": "images/styling-jp-simprich-reversible-silver-piaring-single-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/11",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            26
+          ],
+          "style": "elegant",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 92768,
+        "sha256": "56d43f233a66da4cba9405446fe94537a6d325cc367cfa2158ce08011cebefb4"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-sirisiri-silver-thread-hoop-mini-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "sirisiri-silver-thread-hoop-mini"
+        ],
+        "assetId": "ai-styling-jp-sirisiri-silver-thread-hoop-mini-v23",
+        "path": "images/styling-jp-sirisiri-silver-thread-hoop-mini-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/12",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            25
+          ],
+          "style": "cute",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 91100,
+        "sha256": "72c475efca7d7f901e9e671f1e6863676d578697fc9bf9d8ff110711e85a6a1b"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-nousaku-aya-tin-pendant-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "nousaku-aya-tin-pendant"
+        ],
+        "assetId": "ai-styling-jp-nousaku-aya-tin-pendant-v23",
+        "path": "images/styling-jp-nousaku-aya-tin-pendant-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/13",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            30
+          ],
+          "style": "elegant",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 49864,
+        "sha256": "e9414321527d70ee428843a2dc6b8c7148b9f4257398b9f930f2a2974955bcd0"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/sghr-tie-tie-glass-earrings-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "sghr-tie-tie-glass-earrings"
+        ],
+        "assetId": "ai-sghr-tie-tie-glass-earrings-styling-v13",
+        "path": "images/sghr-tie-tie-glass-earrings-styling-v13.webp",
+        "manifest": "docs/image-generation-v13.json",
+        "pointer": "/images/9",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            30
+          ],
+          "style": "elegant",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 57594,
+        "sha256": "bca904b964fe06e506b4cba591e5d2105d3942ad41fc6e77338405be917b807f"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-nousaku-dahlia-gerbera-clip-on-earrings-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "nousaku-dahlia-gerbera-clip-on-earrings"
+        ],
+        "assetId": "ai-styling-jp-nousaku-dahlia-gerbera-clip-on-earrings-v23",
+        "path": "images/styling-jp-nousaku-dahlia-gerbera-clip-on-earrings-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/14",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            25
+          ],
+          "style": "cute",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 86790,
+        "sha256": "7666f0decf13575f459ac5917d4b63d181220c67a6b1acdc5ff5dddd7bfc9eec"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-sghr-kolmio-glass-ear-cuff-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "sghr-kolmio-glass-ear-cuff"
+        ],
+        "assetId": "ai-styling-jp-sghr-kolmio-glass-ear-cuff-v23",
+        "path": "images/styling-jp-sghr-kolmio-glass-ear-cuff-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/15",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            28
+          ],
+          "style": "elegant",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 88122,
+        "sha256": "3fc21b381d3ac7368d656632c65c266283047ac9809c853bb1e9bab93b2d543a"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/toytoy-ninkari-nikuri-earrings-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "toytoy-ninkari-nikuri-earrings"
+        ],
+        "assetId": "ai-toytoy-ninkari-nikuri-earrings-styling-v13",
+        "path": "images/toytoy-ninkari-nikuri-earrings-styling-v13.webp",
+        "manifest": "docs/image-generation-v13.json",
+        "pointer": "/images/12",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            28
+          ],
+          "style": "cute",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 91044,
+        "sha256": "1f91e15c4b85876f7de43b90d9032b3110d2c5c6e6a489c0f347b97f93e32774"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-somemasa-peacock-clip-on-earrings-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "somemasa-peacock-clip-on-earrings"
+        ],
+        "assetId": "ai-styling-jp-somemasa-peacock-clip-on-earrings-v23",
+        "path": "images/styling-jp-somemasa-peacock-clip-on-earrings-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/16",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            29
+          ],
+          "style": "elegant",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 88868,
+        "sha256": "f6365eefb124e4661387dacfdc66a949535dcda8d3d60cace998067fc9dd8be4"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-toytoy-sirokani-pe-silver-necklace-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "toytoy-sirokani-pe-silver-necklace"
+        ],
+        "assetId": "ai-styling-jp-toytoy-sirokani-pe-silver-necklace-v23",
+        "path": "images/styling-jp-toytoy-sirokani-pe-silver-necklace-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/17",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            26
+          ],
+          "style": "cute",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 77220,
+        "sha256": "e8f7b7b1ff53aa3a3392661a165ed14df3b6608af73e681a3a6c9b1f44f26876"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-tamura-kaisai-enamel-ear-jewelry-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "tamura-kaisai-enamel-ear-jewelry"
+        ],
+        "assetId": "ai-styling-jp-tamura-kaisai-enamel-ear-jewelry-v23",
+        "path": "images/styling-jp-tamura-kaisai-enamel-ear-jewelry-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/18",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            30
+          ],
+          "style": "elegant",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 87078,
+        "sha256": "b6d60f54ba6bf1bc03ad86225add3156b0439c106bc987f08b8f8c2a3948c222"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/coyorimi-tamamusubi-clip-on-earrings-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "coyorimi-tamamusubi-clip-on-earrings"
+        ],
+        "assetId": "ai-coyorimi-tamamusubi-clip-on-earrings-styling-v13",
+        "path": "images/coyorimi-tamamusubi-clip-on-earrings-styling-v13.webp",
+        "manifest": "docs/image-generation-v13.json",
+        "pointer": "/images/16",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            27
+          ],
+          "style": "cute",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 75044,
+        "sha256": "1fbe4fb2f3bb77ce27e3b61812c97e60a51d056724f5ff7bbe545096dcf3958c"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-iwaya-urushi-9mm-hook-earrings-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "iwaya-urushi-9mm-hook-earrings"
+        ],
+        "assetId": "ai-styling-jp-iwaya-urushi-9mm-hook-earrings-v23",
+        "path": "images/styling-jp-iwaya-urushi-9mm-hook-earrings-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/4",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            28
+          ],
+          "style": "elegant",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 74360,
+        "sha256": "5c0d35c5caa8c1f955be05217dad557f442492db8acb30395bfee145cf1eb988"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-egaho-gathered-kurume-kasuri-ear-jewelry-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "egaho-gathered-kurume-kasuri-ear-jewelry"
+        ],
+        "assetId": "ai-styling-jp-egaho-gathered-kurume-kasuri-ear-jewelry-v23",
+        "path": "images/styling-jp-egaho-gathered-kurume-kasuri-ear-jewelry-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/19",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            25
+          ],
+          "style": "cute",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 96638,
+        "sha256": "001fee4ab251ea06e5229ea4b60c113c7d3b294023e6cc7dee80c271515ae5e9"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-showen-edo-uchi-silk-bracelet-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "showen-edo-uchi-silk-bracelet"
+        ],
+        "assetId": "ai-styling-jp-showen-edo-uchi-silk-bracelet-v23",
+        "path": "images/styling-jp-showen-edo-uchi-silk-bracelet-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/20",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            26
+          ],
+          "style": "cute",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 104550,
+        "sha256": "701f4bfa92b1854ce9e80ad5fe28f95dc3504fa5ab767f5f4d9cdb2813edb3d3"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-kazarino-hanabishi-copper-earrings-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "kazarino-hanabishi-copper-earrings"
+        ],
+        "assetId": "ai-styling-jp-kazarino-hanabishi-copper-earrings-v23",
+        "path": "images/styling-jp-kazarino-hanabishi-copper-earrings-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/21",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            27
+          ],
+          "style": "cute",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 65758,
+        "sha256": "26ec7464f5e69eceb490ae5109786c837caea4459b124521587ea2cbd39cbd26"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/kazarino-shippo-pattern-brass-bangle-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "kazarino-shippo-pattern-brass-bangle"
+        ],
+        "assetId": "ai-kazarino-shippo-pattern-brass-bangle-styling-v13",
+        "path": "images/kazarino-shippo-pattern-brass-bangle-styling-v13.webp",
+        "manifest": "docs/image-generation-v13.json",
+        "pointer": "/images/21",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            32
+          ],
+          "style": "elegant",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 75128,
+        "sha256": "69846d9a1195f8a63ce69fcbf7b3938b64e84d4edc860668b1040c39969e2fdd"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/nanao-shuka-nebula-16g-earrings-styling-v13.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "nanao-shuka-nebula-16g-earrings"
+        ],
+        "assetId": "ai-nanao-shuka-nebula-16g-earrings-styling-v13",
+        "path": "images/nanao-shuka-nebula-16g-earrings-styling-v13.webp",
+        "manifest": "docs/image-generation-v13.json",
+        "pointer": "/images/22",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            27
+          ],
+          "style": "cute",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 100986,
+        "sha256": "ba3412ffba09f920db973fa81e09b6cce86475813096027a2bb85ace40ef8159"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-applause-awa-indigo-pearl-clip-on-earrings-v16.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "applause-awa-indigo-pearl-clip-on-earrings"
+        ],
+        "assetId": "ai-styling-applause-awa-indigo-pearl-clip-on-earrings-v16",
+        "path": "images/styling-applause-awa-indigo-pearl-clip-on-earrings-v16.webp",
+        "manifest": "docs/image-generation-v16.json",
+        "pointer": "/images/0",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            30
+          ],
+          "style": "elegant",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 68602,
+        "sha256": "8fa8a81a9210f2ab6666b21936b520f63311b76e137c5ace8bdb911dcb55ae7d"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-earth-hiroshima-origami-crane-chain-earrings-v16.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "earth-hiroshima-origami-crane-chain-earrings"
+        ],
+        "assetId": "ai-styling-earth-hiroshima-origami-crane-chain-earrings-v16",
+        "path": "images/styling-earth-hiroshima-origami-crane-chain-earrings-v16.webp",
+        "manifest": "docs/image-generation-v16.json",
+        "pointer": "/images/1",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            29
+          ],
+          "style": "elegant",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 60058,
+        "sha256": "bdb09652065e2f8b59038117620cfeb384b798b9b42e18900ad20c9c5dbd8526"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-menoya-izumo-magatama-n15-necklace-v16.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "menoya-izumo-magatama-n15-necklace"
+        ],
+        "assetId": "ai-styling-menoya-izumo-magatama-n15-necklace-v16",
+        "path": "images/styling-menoya-izumo-magatama-n15-necklace-v16.webp",
+        "manifest": "docs/image-generation-v16.json",
+        "pointer": "/images/2",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            29
+          ],
+          "style": "cute",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 77780,
+        "sha256": "536ddc22a6f7b049805f6b4a91ae9047c9ae3ee668abd0e61d5e34f902324878"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-mitsusuke-higo-zogan-shizuku-pierced-earrings-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "mitsusuke-higo-zogan-shizuku-pierced-earrings"
+        ],
+        "assetId": "ai-styling-jp-mitsusuke-higo-zogan-shizuku-pierced-earrings-v23",
+        "path": "images/styling-jp-mitsusuke-higo-zogan-shizuku-pierced-earrings-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/1",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            29
+          ],
+          "style": "elegant",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 67318,
+        "sha256": "3b546a03c2a8c795ae24db229774d58012efdb711ad251ec47a007bea2ece584"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-nanayosha-punu-gold-vanilla-pierced-earrings-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "nanayosha-punu-gold-vanilla-pierced-earrings"
+        ],
+        "assetId": "ai-styling-jp-nanayosha-punu-gold-vanilla-pierced-earrings-v23",
+        "path": "images/styling-jp-nanayosha-punu-gold-vanilla-pierced-earrings-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/3",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            27
+          ],
+          "style": "cute",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 88336,
+        "sha256": "506f8c47a158857ef00c99510ab46b9555bcf426a017b4e699dbb7ecdfdf50cb"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-shimadzu-satsuma-kiriko-hikari-l-pendant-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "shimadzu-satsuma-kiriko-hikari-l-pendant"
+        ],
+        "assetId": "ai-styling-jp-shimadzu-satsuma-kiriko-hikari-l-pendant-v23",
+        "path": "images/styling-jp-shimadzu-satsuma-kiriko-hikari-l-pendant-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/0",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            25
+          ],
+          "style": "cute",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 73200,
+        "sha256": "00693dc13b4cbd6e8a07a4d7fb11a6f1ab375e0b706226596469b1055c6471c5"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-sur-basic1-clear-pearl-pierced-earrings-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "sur-basic1-clear-pearl-pierced-earrings"
+        ],
+        "assetId": "ai-styling-jp-sur-basic1-clear-pearl-pierced-earrings-v23",
+        "path": "images/styling-jp-sur-basic1-clear-pearl-pierced-earrings-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/5",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            29
+          ],
+          "style": "elegant",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 73726,
+        "sha256": "0c02c330ed1cafe4dc0798d51cd8aacc95ae969cdacbc37b49a189e1be2a5a7d"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "tete-ryukyu-glass-hanagasa-heart-pierced-earrings"
+        ],
+        "assetId": "ai-styling-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16",
+        "path": "images/styling-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16.webp",
+        "manifest": "docs/image-generation-v16.json",
+        "pointer": "/images/7",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            28
+          ],
+          "style": "cute",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 72682,
+        "sha256": "0c0f9de0eee38df8cc7d3c4c5f74582b74ab833d4fb01e23ab245d141f182fea"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-yadome-akita-rice-silver-pierced-earrings-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "yadome-akita-rice-silver-pierced-earrings"
+        ],
+        "assetId": "ai-styling-jp-yadome-akita-rice-silver-pierced-earrings-v23",
+        "path": "images/styling-jp-yadome-akita-rice-silver-pierced-earrings-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/2",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            25
+          ],
+          "style": "cute",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 75384,
+        "sha256": "bd183ed3d8c5092627c294b9ab7e7ce4f1e03365a77ff465c9204b7bbd4292b6"
+      }
+    },
+    {
+      "name": "Recorded Japanese adult and reviewed bytes images/styling-jp-yoboty-inshu-washi-indigo-long-nonhole-earrings-v23.webp",
+      "status": "passed",
+      "detail": {
+        "productIds": [
+          "yoboty-inshu-washi-indigo-long-nonhole-earrings"
+        ],
+        "assetId": "ai-styling-jp-yoboty-inshu-washi-indigo-long-nonhole-earrings-v23",
+        "path": "images/styling-jp-yoboty-inshu-washi-indigo-long-nonhole-earrings-v23.webp",
+        "manifest": "docs/image-generation-japanese-v23.json",
+        "pointer": "/images/6",
+        "recordedModel": {
+          "fictionalNationality": "Japanese",
+          "ages": [
+            25
+          ],
+          "style": "cute",
+          "evidence": "explicit-model-setting"
+        },
+        "width": 1536,
+        "height": 1024,
+        "bytes": 90986,
+        "sha256": "ffc1cd332d6c4ea744db729a9914853e26c26968aece8a3e2c641371ef1ab571"
+      }
+    },
+    {
+      "name": "Only the22 explicitly authorised models change and all36 Japanese images retain bytes",
+      "status": "passed",
+      "detail": {
+        "retainedJapanese": 36,
+        "authorisedReplacements": 22,
+        "newAgeRange": [
+          25,
+          30
+        ],
+        "styleSettings": [
+          "cute",
+          "elegant"
+        ]
+      }
+    },
+    {
+      "name": "All60 standalone product-concept images stay byte-identical",
+      "status": "passed",
+      "detail": {
+        "standaloneImages": 60
+      }
+    },
+    {
+      "name": "Retired model images are absent from every generated page and asset",
+      "status": "passed",
+      "detail": {
+        "htmlPages": 344,
+        "retiredLocalImages": 32
+      }
+    }
+  ],
+  "failures": [],
+  "files": [
+    {
+      "productIds": [
+        "hamamatsuya-catch-pierced"
+      ],
+      "assetId": "ai-hakone-yosegi-pierced-styling-v9",
+      "path": "images/hakone-yosegi-pierced-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/3",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          28,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 96330,
+      "sha256": "ad9d3b1505f50b0e32ceac11c274917f78293ae87acfcf44509a0c4427dbf5b3"
+    },
+    {
+      "productIds": [
+        "hamamatsuya-clip"
+      ],
+      "assetId": "ai-hakone-yosegi-clipon-styling-v9",
+      "path": "images/hakone-yosegi-clipon-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/4",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          28,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 107560,
+      "sha256": "a0b25e0844fdc5af359f36e7c3e3ae46b93df1b6ff3f7e50541ea8481ac607c9"
+    },
+    {
+      "productIds": [
+        "rinzen-seika-amber-pierced-earrings"
+      ],
+      "assetId": "ai-rinzen-amber-glass-styling-v9",
+      "path": "images/rinzen-amber-glass-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/0",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          28,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 78876,
+      "sha256": "08c55ea2a122ba07a24bba5919e7496339202bf45f6e9c8f0f8522b0a4abf45e"
+    },
+    {
+      "productIds": [
+        "six-kiln-half-moon-earrings"
+      ],
+      "assetId": "ai-arita-halfmoon-styling-v9",
+      "path": "images/arita-halfmoon-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/7",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          28,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 78276,
+      "sha256": "302bf3fc8e88a77da5fe30feb6ced8c8e1dcdfc3a9d1b64b95e51eaca5819a19"
+    },
+    {
+      "productIds": [
+        "maruyama-clip-c",
+        "maruyama-pierced-c"
+      ],
+      "assetId": "ai-yosegi-star-styling-v9",
+      "path": "images/yosegi-star-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/9",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          28,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 87782,
+      "sha256": "a39d6974e9586eb082115c1e9e288173a068646cad2930d07da4173fe7aea09a"
+    },
+    {
+      "productIds": [
+        "maruyama-clip-d",
+        "maruyama-pierced-d"
+      ],
+      "assetId": "ai-yosegi-bar-styling-v9",
+      "path": "images/yosegi-bar-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/5",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          28,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 104398,
+      "sha256": "582fe36ebc0596254ced7dde0052532d7be11651dbe078138d759ac266087ab5"
+    },
+    {
+      "productIds": [
+        "hamamatsuya-pendant"
+      ],
+      "assetId": "ai-yosegi-pendant-styling-v9",
+      "path": "images/yosegi-pendant-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/6",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          28,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 82082,
+      "sha256": "c6a15efcf482620555c3e355571a9c97c3271029858be8876d9181b69da1001e"
+    },
+    {
+      "productIds": [
+        "checos-japanese-apricot-pierced-earrings"
+      ],
+      "assetId": "ai-checos-silver-flower-styling-v9",
+      "path": "images/checos-silver-flower-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/8",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          28,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 120518,
+      "sha256": "828627f8f41f9b36dff54f9912e25e04f8d22137ed91beaa2de4e8c92ffe5269"
+    },
+    {
+      "productIds": [
+        "morphosphere-ultramarine-pansy-pierced-earrings"
+      ],
+      "assetId": "ai-morphosphere-blue-pansy-styling-v9",
+      "path": "images/morphosphere-blue-pansy-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/10",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          28,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 96910,
+      "sha256": "b050fd4e55fb8d70e7c9dec44ac6ed13a486262b6cf74828a946bb9caf3ad39a"
+    },
+    {
+      "productIds": [
+        "kato-suke-drop-pierced-earrings"
+      ],
+      "assetId": "ai-kato-green-cloisonne-styling-v9",
+      "path": "images/kato-green-cloisonne-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/1",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          28,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 106422,
+      "sha256": "902f000ffcd13d7ae837d81caba9c5491f0fc7a2b5e529e245410f0937c86e86"
+    },
+    {
+      "productIds": [
+        "six-kiln-blue-bouquet-pierced-earrings"
+      ],
+      "assetId": "ai-arita-blue-bouquet-styling-v9",
+      "path": "images/arita-blue-bouquet-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/11",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          28,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 92982,
+      "sha256": "6cf1828b90904a178c7e74aa1d9a6860c206b387e8e14f9c1300d2347bdb3772"
+    },
+    {
+      "productIds": [
+        "rinzen-leaf-glass-pendant"
+      ],
+      "assetId": "ai-rinzen-green-leaf-styling-v9",
+      "path": "images/rinzen-green-leaf-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/12",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          28,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 107664,
+      "sha256": "cddba5fb05ae46d7b5df6065102740a313cc2aa4e53f360eca801b448ed60f53"
+    },
+    {
+      "productIds": [
+        "saskia-diez-drake-porcelain-cuff"
+      ],
+      "assetId": "ai-saskia-porcelain-cuff-styling-v9",
+      "path": "images/saskia-porcelain-cuff-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/13",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          28,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 46866,
+      "sha256": "646ac12a72eef2e36892ac9798bdacba7529f00a6bbdecd4a4744edf6adfa0ee"
+    },
+    {
+      "productIds": [
+        "senshu-pearl-stud-earrings"
+      ],
+      "assetId": "ai-senshu-white-pearl-stud-styling-v9",
+      "path": "images/senshu-white-pearl-stud-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/14",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          28,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 51554,
+      "sha256": "411d59407bb6bbb01c5c19733fa7cdc52c336a9d3498409365187e7b9510ec2e"
+    },
+    {
+      "productIds": [
+        "simprich-crystal-bubble-pierced-earrings"
+      ],
+      "assetId": "ai-simprich-crystal-bubble-styling-v9",
+      "path": "images/simprich-crystal-bubble-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/16",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          27,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 123332,
+      "sha256": "f73ddf0249d161b90cfa789e9efdc610d0af8a8a1ab4f3a3f15e64d324e5b72a"
+    },
+    {
+      "productIds": [
+        "yukieglass-mint-veil-earrings"
+      ],
+      "assetId": "ai-yukie-mint-glass-styling-v9",
+      "path": "images/yukie-mint-glass-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/17",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          27,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 89474,
+      "sha256": "a48b1ffc189f52a29e29624a905d0143780130b6f8a0e524547b90df0742e8f3"
+    },
+    {
+      "productIds": [
+        "sugimura-hosoge-raden-pendant"
+      ],
+      "assetId": "ai-sugimura-raden-flower-pendant-styling-v9",
+      "path": "images/sugimura-raden-flower-pendant-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/18",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          27,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 79976,
+      "sha256": "a9e99897661386c6df1a8f75751ba58ef4f6d11777d950996e8f73a12854aabd"
+    },
+    {
+      "productIds": [
+        "arcos-cosmic-spiral-pendant"
+      ],
+      "assetId": "ai-arcos-cosmic-spiral-pendant-styling-v9",
+      "path": "images/arcos-cosmic-spiral-pendant-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/19",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          27,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 114714,
+      "sha256": "e5096f550f3eb32f31c77310a9862d48a08c86077e3581dbc87f477534f948b2"
+    },
+    {
+      "productIds": [
+        "arcos-cosmic-glass-bracelet"
+      ],
+      "assetId": "ai-arcos-cosmic-glass-bracelet-styling-v9",
+      "path": "images/arcos-cosmic-glass-bracelet-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/20",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          27,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 62518,
+      "sha256": "eabc62dcc0ebca5146b7205770a8ba088d267a3a0eba72ce6f91f0b797177b75"
+    },
+    {
+      "productIds": [
+        "senshu-pearl-swing-earrings"
+      ],
+      "assetId": "ai-senshu-white-pearl-swing-styling-v9",
+      "path": "images/senshu-white-pearl-swing-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/21",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          27,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 78612,
+      "sha256": "657da3e1a528debdf5b0dc631b1adcf16173dab8c5264741b0179421721803a9"
+    },
+    {
+      "productIds": [
+        "sugimura-lotus-makie-ring"
+      ],
+      "assetId": "ai-sugimura-lotus-makie-ring-styling-v9",
+      "path": "images/sugimura-lotus-makie-ring-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/22",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          27,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 66694,
+      "sha256": "52ffcb4962b65cf5ffda42c172c7f9e281c98d7a2904c5843fbdc815dfc93c36"
+    },
+    {
+      "productIds": [
+        "simprich-rose-quartz-necklace"
+      ],
+      "assetId": "ai-simprich-rose-quartz-necklace-styling-v9",
+      "path": "images/simprich-rose-quartz-necklace-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/24",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          27,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 67028,
+      "sha256": "abd8d1e2a6a9f78ac1413ce033a3b2e552b34f1686b5b67c9407318f58ff27cc"
+    },
+    {
+      "productIds": [
+        "yukieglass-rouge-veil-earrings"
+      ],
+      "assetId": "ai-yukie-rouge-glass-styling-v9",
+      "path": "images/yukie-rouge-glass-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/25",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          27,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 78656,
+      "sha256": "ca33f3c867d75220b039312522aeb5746d3b3ecb947c2230eb7c5dad9ab3f42c"
+    },
+    {
+      "productIds": [
+        "nakajima-pear-sakura-pendant"
+      ],
+      "assetId": "ai-nakajima-sakura-damascene-pendant-styling-v9",
+      "path": "images/nakajima-sakura-damascene-pendant-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/26",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          27,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 58776,
+      "sha256": "a1811ce3b7b6af6944f7042f52687ce373fe7637ab3957f6d070464a19bc37b5"
+    },
+    {
+      "productIds": [
+        "kato-suke-round-ring"
+      ],
+      "assetId": "ai-kato-blue-round-enamel-ring-styling-v9",
+      "path": "images/kato-blue-round-enamel-ring-styling-v9.webp",
+      "manifest": "docs/image-generation-v9.json",
+      "pointer": "/assets/27",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          27,
+          31
+        ],
+        "style": null,
+        "evidence": "explicit-person-prompt"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 62514,
+      "sha256": "831fcb1a47de8312272c81267be664df9696c64bf27ba35571c2ff0cc82b14df"
+    },
+    {
+      "productIds": [
+        "hario-little-tears-clip-on-earrings"
+      ],
+      "assetId": "ai-hario-little-tears-clip-on-earrings-styling-v13",
+      "path": "images/hario-little-tears-clip-on-earrings-styling-v13.webp",
+      "manifest": "docs/image-generation-v13.json",
+      "pointer": "/images/0",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          28
+        ],
+        "style": "cute",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 102226,
+      "sha256": "5ec4e851cb2dda751cdf58285bed72f26716b3508b632e9cd66cd35ee9f390ab"
+    },
+    {
+      "productIds": [
+        "sirisiri-page-blue-enamel-pierced-earrings"
+      ],
+      "assetId": "ai-sirisiri-page-blue-enamel-pierced-earrings-styling-v13",
+      "path": "images/sirisiri-page-blue-enamel-pierced-earrings-styling-v13.webp",
+      "manifest": "docs/image-generation-v13.json",
+      "pointer": "/images/1",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          31
+        ],
+        "style": "elegant",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 66118,
+      "sha256": "065ba9ae15adaeeb51f5136c2c681f8a7f972f9502d4036430a799a92ef3e7cc"
+    },
+    {
+      "productIds": [
+        "mie-akoya-oh002-stud-earrings"
+      ],
+      "assetId": "ai-styling-jp-mie-akoya-oh002-stud-earrings-v23",
+      "path": "images/styling-jp-mie-akoya-oh002-stud-earrings-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/7",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          27
+        ],
+        "style": "elegant",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 76372,
+      "sha256": "c9b1bb1240d6e84c6f725e11f46a892bf3eabc1a6d009ae256e63ca5488d83c8"
+    },
+    {
+      "productIds": [
+        "sangetsu-irodori-tombodama-necklace"
+      ],
+      "assetId": "ai-styling-jp-sangetsu-irodori-tombodama-necklace-v23",
+      "path": "images/styling-jp-sangetsu-irodori-tombodama-necklace-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/8",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          30
+        ],
+        "style": "elegant",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 109774,
+      "sha256": "4699434041fc3b1f09967c83d9bb46829033f4ecd8d7530b5221fa90961039b9"
+    },
+    {
+      "productIds": [
+        "sangetsu-irodori-tombodama-earrings"
+      ],
+      "assetId": "ai-styling-jp-sangetsu-irodori-tombodama-earrings-v23",
+      "path": "images/styling-jp-sangetsu-irodori-tombodama-earrings-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/9",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          26
+        ],
+        "style": "cute",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 103924,
+      "sha256": "0c8f76286c55b747e49474bbe6c44a9af59b12efec83599f50fc4ccb894b60cf"
+    },
+    {
+      "productIds": [
+        "simprich-reversible-topaz-ruby-chain-ring"
+      ],
+      "assetId": "ai-styling-jp-simprich-reversible-topaz-ruby-chain-ring-v23",
+      "path": "images/styling-jp-simprich-reversible-topaz-ruby-chain-ring-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/10",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          30
+        ],
+        "style": "elegant",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 57754,
+      "sha256": "2900734a1c51aace0688cc92a326d34f3fce75083de09eaf8e9c61b3c551647f"
+    },
+    {
+      "productIds": [
+        "simprich-reversible-silver-piaring-single"
+      ],
+      "assetId": "ai-styling-jp-simprich-reversible-silver-piaring-single-v23",
+      "path": "images/styling-jp-simprich-reversible-silver-piaring-single-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/11",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          26
+        ],
+        "style": "elegant",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 92768,
+      "sha256": "56d43f233a66da4cba9405446fe94537a6d325cc367cfa2158ce08011cebefb4"
+    },
+    {
+      "productIds": [
+        "sirisiri-silver-thread-hoop-mini"
+      ],
+      "assetId": "ai-styling-jp-sirisiri-silver-thread-hoop-mini-v23",
+      "path": "images/styling-jp-sirisiri-silver-thread-hoop-mini-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/12",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          25
+        ],
+        "style": "cute",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 91100,
+      "sha256": "72c475efca7d7f901e9e671f1e6863676d578697fc9bf9d8ff110711e85a6a1b"
+    },
+    {
+      "productIds": [
+        "nousaku-aya-tin-pendant"
+      ],
+      "assetId": "ai-styling-jp-nousaku-aya-tin-pendant-v23",
+      "path": "images/styling-jp-nousaku-aya-tin-pendant-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/13",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          30
+        ],
+        "style": "elegant",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 49864,
+      "sha256": "e9414321527d70ee428843a2dc6b8c7148b9f4257398b9f930f2a2974955bcd0"
+    },
+    {
+      "productIds": [
+        "sghr-tie-tie-glass-earrings"
+      ],
+      "assetId": "ai-sghr-tie-tie-glass-earrings-styling-v13",
+      "path": "images/sghr-tie-tie-glass-earrings-styling-v13.webp",
+      "manifest": "docs/image-generation-v13.json",
+      "pointer": "/images/9",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          30
+        ],
+        "style": "elegant",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 57594,
+      "sha256": "bca904b964fe06e506b4cba591e5d2105d3942ad41fc6e77338405be917b807f"
+    },
+    {
+      "productIds": [
+        "nousaku-dahlia-gerbera-clip-on-earrings"
+      ],
+      "assetId": "ai-styling-jp-nousaku-dahlia-gerbera-clip-on-earrings-v23",
+      "path": "images/styling-jp-nousaku-dahlia-gerbera-clip-on-earrings-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/14",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          25
+        ],
+        "style": "cute",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 86790,
+      "sha256": "7666f0decf13575f459ac5917d4b63d181220c67a6b1acdc5ff5dddd7bfc9eec"
+    },
+    {
+      "productIds": [
+        "sghr-kolmio-glass-ear-cuff"
+      ],
+      "assetId": "ai-styling-jp-sghr-kolmio-glass-ear-cuff-v23",
+      "path": "images/styling-jp-sghr-kolmio-glass-ear-cuff-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/15",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          28
+        ],
+        "style": "elegant",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 88122,
+      "sha256": "3fc21b381d3ac7368d656632c65c266283047ac9809c853bb1e9bab93b2d543a"
+    },
+    {
+      "productIds": [
+        "toytoy-ninkari-nikuri-earrings"
+      ],
+      "assetId": "ai-toytoy-ninkari-nikuri-earrings-styling-v13",
+      "path": "images/toytoy-ninkari-nikuri-earrings-styling-v13.webp",
+      "manifest": "docs/image-generation-v13.json",
+      "pointer": "/images/12",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          28
+        ],
+        "style": "cute",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 91044,
+      "sha256": "1f91e15c4b85876f7de43b90d9032b3110d2c5c6e6a489c0f347b97f93e32774"
+    },
+    {
+      "productIds": [
+        "somemasa-peacock-clip-on-earrings"
+      ],
+      "assetId": "ai-styling-jp-somemasa-peacock-clip-on-earrings-v23",
+      "path": "images/styling-jp-somemasa-peacock-clip-on-earrings-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/16",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          29
+        ],
+        "style": "elegant",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 88868,
+      "sha256": "f6365eefb124e4661387dacfdc66a949535dcda8d3d60cace998067fc9dd8be4"
+    },
+    {
+      "productIds": [
+        "toytoy-sirokani-pe-silver-necklace"
+      ],
+      "assetId": "ai-styling-jp-toytoy-sirokani-pe-silver-necklace-v23",
+      "path": "images/styling-jp-toytoy-sirokani-pe-silver-necklace-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/17",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          26
+        ],
+        "style": "cute",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 77220,
+      "sha256": "e8f7b7b1ff53aa3a3392661a165ed14df3b6608af73e681a3a6c9b1f44f26876"
+    },
+    {
+      "productIds": [
+        "tamura-kaisai-enamel-ear-jewelry"
+      ],
+      "assetId": "ai-styling-jp-tamura-kaisai-enamel-ear-jewelry-v23",
+      "path": "images/styling-jp-tamura-kaisai-enamel-ear-jewelry-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/18",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          30
+        ],
+        "style": "elegant",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 87078,
+      "sha256": "b6d60f54ba6bf1bc03ad86225add3156b0439c106bc987f08b8f8c2a3948c222"
+    },
+    {
+      "productIds": [
+        "coyorimi-tamamusubi-clip-on-earrings"
+      ],
+      "assetId": "ai-coyorimi-tamamusubi-clip-on-earrings-styling-v13",
+      "path": "images/coyorimi-tamamusubi-clip-on-earrings-styling-v13.webp",
+      "manifest": "docs/image-generation-v13.json",
+      "pointer": "/images/16",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          27
+        ],
+        "style": "cute",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 75044,
+      "sha256": "1fbe4fb2f3bb77ce27e3b61812c97e60a51d056724f5ff7bbe545096dcf3958c"
+    },
+    {
+      "productIds": [
+        "iwaya-urushi-9mm-hook-earrings"
+      ],
+      "assetId": "ai-styling-jp-iwaya-urushi-9mm-hook-earrings-v23",
+      "path": "images/styling-jp-iwaya-urushi-9mm-hook-earrings-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/4",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          28
+        ],
+        "style": "elegant",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 74360,
+      "sha256": "5c0d35c5caa8c1f955be05217dad557f442492db8acb30395bfee145cf1eb988"
+    },
+    {
+      "productIds": [
+        "egaho-gathered-kurume-kasuri-ear-jewelry"
+      ],
+      "assetId": "ai-styling-jp-egaho-gathered-kurume-kasuri-ear-jewelry-v23",
+      "path": "images/styling-jp-egaho-gathered-kurume-kasuri-ear-jewelry-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/19",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          25
+        ],
+        "style": "cute",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 96638,
+      "sha256": "001fee4ab251ea06e5229ea4b60c113c7d3b294023e6cc7dee80c271515ae5e9"
+    },
+    {
+      "productIds": [
+        "showen-edo-uchi-silk-bracelet"
+      ],
+      "assetId": "ai-styling-jp-showen-edo-uchi-silk-bracelet-v23",
+      "path": "images/styling-jp-showen-edo-uchi-silk-bracelet-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/20",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          26
+        ],
+        "style": "cute",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 104550,
+      "sha256": "701f4bfa92b1854ce9e80ad5fe28f95dc3504fa5ab767f5f4d9cdb2813edb3d3"
+    },
+    {
+      "productIds": [
+        "kazarino-hanabishi-copper-earrings"
+      ],
+      "assetId": "ai-styling-jp-kazarino-hanabishi-copper-earrings-v23",
+      "path": "images/styling-jp-kazarino-hanabishi-copper-earrings-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/21",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          27
+        ],
+        "style": "cute",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 65758,
+      "sha256": "26ec7464f5e69eceb490ae5109786c837caea4459b124521587ea2cbd39cbd26"
+    },
+    {
+      "productIds": [
+        "kazarino-shippo-pattern-brass-bangle"
+      ],
+      "assetId": "ai-kazarino-shippo-pattern-brass-bangle-styling-v13",
+      "path": "images/kazarino-shippo-pattern-brass-bangle-styling-v13.webp",
+      "manifest": "docs/image-generation-v13.json",
+      "pointer": "/images/21",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          32
+        ],
+        "style": "elegant",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 75128,
+      "sha256": "69846d9a1195f8a63ce69fcbf7b3938b64e84d4edc860668b1040c39969e2fdd"
+    },
+    {
+      "productIds": [
+        "nanao-shuka-nebula-16g-earrings"
+      ],
+      "assetId": "ai-nanao-shuka-nebula-16g-earrings-styling-v13",
+      "path": "images/nanao-shuka-nebula-16g-earrings-styling-v13.webp",
+      "manifest": "docs/image-generation-v13.json",
+      "pointer": "/images/22",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          27
+        ],
+        "style": "cute",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 100986,
+      "sha256": "ba3412ffba09f920db973fa81e09b6cce86475813096027a2bb85ace40ef8159"
+    },
+    {
+      "productIds": [
+        "applause-awa-indigo-pearl-clip-on-earrings"
+      ],
+      "assetId": "ai-styling-applause-awa-indigo-pearl-clip-on-earrings-v16",
+      "path": "images/styling-applause-awa-indigo-pearl-clip-on-earrings-v16.webp",
+      "manifest": "docs/image-generation-v16.json",
+      "pointer": "/images/0",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          30
+        ],
+        "style": "elegant",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 68602,
+      "sha256": "8fa8a81a9210f2ab6666b21936b520f63311b76e137c5ace8bdb911dcb55ae7d"
+    },
+    {
+      "productIds": [
+        "earth-hiroshima-origami-crane-chain-earrings"
+      ],
+      "assetId": "ai-styling-earth-hiroshima-origami-crane-chain-earrings-v16",
+      "path": "images/styling-earth-hiroshima-origami-crane-chain-earrings-v16.webp",
+      "manifest": "docs/image-generation-v16.json",
+      "pointer": "/images/1",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          29
+        ],
+        "style": "elegant",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 60058,
+      "sha256": "bdb09652065e2f8b59038117620cfeb384b798b9b42e18900ad20c9c5dbd8526"
+    },
+    {
+      "productIds": [
+        "menoya-izumo-magatama-n15-necklace"
+      ],
+      "assetId": "ai-styling-menoya-izumo-magatama-n15-necklace-v16",
+      "path": "images/styling-menoya-izumo-magatama-n15-necklace-v16.webp",
+      "manifest": "docs/image-generation-v16.json",
+      "pointer": "/images/2",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          29
+        ],
+        "style": "cute",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 77780,
+      "sha256": "536ddc22a6f7b049805f6b4a91ae9047c9ae3ee668abd0e61d5e34f902324878"
+    },
+    {
+      "productIds": [
+        "mitsusuke-higo-zogan-shizuku-pierced-earrings"
+      ],
+      "assetId": "ai-styling-jp-mitsusuke-higo-zogan-shizuku-pierced-earrings-v23",
+      "path": "images/styling-jp-mitsusuke-higo-zogan-shizuku-pierced-earrings-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/1",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          29
+        ],
+        "style": "elegant",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 67318,
+      "sha256": "3b546a03c2a8c795ae24db229774d58012efdb711ad251ec47a007bea2ece584"
+    },
+    {
+      "productIds": [
+        "nanayosha-punu-gold-vanilla-pierced-earrings"
+      ],
+      "assetId": "ai-styling-jp-nanayosha-punu-gold-vanilla-pierced-earrings-v23",
+      "path": "images/styling-jp-nanayosha-punu-gold-vanilla-pierced-earrings-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/3",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          27
+        ],
+        "style": "cute",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 88336,
+      "sha256": "506f8c47a158857ef00c99510ab46b9555bcf426a017b4e699dbb7ecdfdf50cb"
+    },
+    {
+      "productIds": [
+        "shimadzu-satsuma-kiriko-hikari-l-pendant"
+      ],
+      "assetId": "ai-styling-jp-shimadzu-satsuma-kiriko-hikari-l-pendant-v23",
+      "path": "images/styling-jp-shimadzu-satsuma-kiriko-hikari-l-pendant-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/0",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          25
+        ],
+        "style": "cute",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 73200,
+      "sha256": "00693dc13b4cbd6e8a07a4d7fb11a6f1ab375e0b706226596469b1055c6471c5"
+    },
+    {
+      "productIds": [
+        "sur-basic1-clear-pearl-pierced-earrings"
+      ],
+      "assetId": "ai-styling-jp-sur-basic1-clear-pearl-pierced-earrings-v23",
+      "path": "images/styling-jp-sur-basic1-clear-pearl-pierced-earrings-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/5",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          29
+        ],
+        "style": "elegant",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 73726,
+      "sha256": "0c02c330ed1cafe4dc0798d51cd8aacc95ae969cdacbc37b49a189e1be2a5a7d"
+    },
+    {
+      "productIds": [
+        "tete-ryukyu-glass-hanagasa-heart-pierced-earrings"
+      ],
+      "assetId": "ai-styling-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16",
+      "path": "images/styling-tete-ryukyu-glass-hanagasa-heart-pierced-earrings-v16.webp",
+      "manifest": "docs/image-generation-v16.json",
+      "pointer": "/images/7",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          28
+        ],
+        "style": "cute",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 72682,
+      "sha256": "0c0f9de0eee38df8cc7d3c4c5f74582b74ab833d4fb01e23ab245d141f182fea"
+    },
+    {
+      "productIds": [
+        "yadome-akita-rice-silver-pierced-earrings"
+      ],
+      "assetId": "ai-styling-jp-yadome-akita-rice-silver-pierced-earrings-v23",
+      "path": "images/styling-jp-yadome-akita-rice-silver-pierced-earrings-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/2",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          25
+        ],
+        "style": "cute",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 75384,
+      "sha256": "bd183ed3d8c5092627c294b9ab7e7ce4f1e03365a77ff465c9204b7bbd4292b6"
+    },
+    {
+      "productIds": [
+        "yoboty-inshu-washi-indigo-long-nonhole-earrings"
+      ],
+      "assetId": "ai-styling-jp-yoboty-inshu-washi-indigo-long-nonhole-earrings-v23",
+      "path": "images/styling-jp-yoboty-inshu-washi-indigo-long-nonhole-earrings-v23.webp",
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "pointer": "/images/6",
+      "recordedModel": {
+        "fictionalNationality": "Japanese",
+        "ages": [
+          25
+        ],
+        "style": "cute",
+        "evidence": "explicit-model-setting"
+      },
+      "width": 1536,
+      "height": 1024,
+      "bytes": 90986,
+      "sha256": "ffc1cd332d6c4ea744db729a9914853e26c26968aece8a3e2c641371ef1ab571"
+    }
+  ],
+  "originals": [
+    {
+      "path": "generated-originals/0.18.0/styling-jp-mie-akoya-oh002-stud-earrings-v23.png",
+      "sha256": "460b2cb18426c458bba581a731a746bd7299e1bad74aea2706f0aefbcb66ac85",
+      "bytes": 2094680
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-sangetsu-irodori-tombodama-necklace-v23.png",
+      "sha256": "f495cd9f1d2b3f2739e1171c51eab015a32df0d7c126cbfd4bee464adfb2cbda",
+      "bytes": 2221537
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-sangetsu-irodori-tombodama-earrings-v23.png",
+      "sha256": "c52008c8d98804e679c8429f1163a30bf9194f0e858ca23432055d5c6ce0c6da",
+      "bytes": 2172667
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-simprich-reversible-topaz-ruby-chain-ring-v23.png",
+      "sha256": "074ef104572b43c3df1e674343aa0a2d42fe1dfc13a83899e3b7a202e0d93f72",
+      "bytes": 1896584
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-simprich-reversible-silver-piaring-single-v23.png",
+      "sha256": "3aec6b4e5f55901754e301693621e1695f306aa00e610a13bf9fbdc6c80e77fe",
+      "bytes": 2124064
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-sirisiri-silver-thread-hoop-mini-v23.png",
+      "sha256": "9675ed3dcbee648d350aae98f23b4b6c7947f218a6f0c5b0f3144f35bbe7e74b",
+      "bytes": 2056515
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-nousaku-aya-tin-pendant-v23.png",
+      "sha256": "3196559a3ccdc6686ad0ce37fbfb081504e1aee24ba399f2cc23bff96479f008",
+      "bytes": 1886356
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-nousaku-dahlia-gerbera-clip-on-earrings-v23.png",
+      "sha256": "101d78d77eaf20114548edd58ef436bd6ffbc03ba9ffac7ef185edccf9297a4f",
+      "bytes": 2072333
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-sghr-kolmio-glass-ear-cuff-v23.png",
+      "sha256": "83607d154302d853ffd2f06fcac6ebdd51cafc0ed5e56ad677c4a616caf13536",
+      "bytes": 2118156
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-somemasa-peacock-clip-on-earrings-v23.png",
+      "sha256": "f6e6684b79e4e0c28de085597202ef3613358bc4ed9ee321b41848eb00331b0a",
+      "bytes": 2067279
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-toytoy-sirokani-pe-silver-necklace-v23.png",
+      "sha256": "b4bb4e3301dc1b9b9f797bdcc86734f503c3ecd3dc36b60b659f23844ba62683",
+      "bytes": 2035521
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-tamura-kaisai-enamel-ear-jewelry-v23.png",
+      "sha256": "181d0052efd4dfd7b37f76ab56ce6d3775225cb4d306e4003c64b180e67c0b46",
+      "bytes": 2066001
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-iwaya-urushi-9mm-hook-earrings-v23.png",
+      "sha256": "04c5a55271f83045f9c84e3463a13864e0a187ee2421ce963a66aed4a4ce1681",
+      "bytes": 2014954
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-egaho-gathered-kurume-kasuri-ear-jewelry-v23.png",
+      "sha256": "db703405417e85b4b04be8031ec1287898d54b4b063104dd1d72dcca01c40d2e",
+      "bytes": 2083308
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-showen-edo-uchi-silk-bracelet-v23.png",
+      "sha256": "914ad36298f8dc3d3fdeba21bff5851793616cf463867d4079926af217e0c077",
+      "bytes": 2156945
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-kazarino-hanabishi-copper-earrings-v23.png",
+      "sha256": "aa434970cb23b4f01a4f31d3c91df2f73590c238d1c38e6d0b2c40abb32efd7b",
+      "bytes": 1931532
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-mitsusuke-higo-zogan-shizuku-pierced-earrings-v23.png",
+      "sha256": "6a32a1a884a3b3db434062bcdc5be80b52efc673fdd46c20995ff2883555c8ec",
+      "bytes": 1943810
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-nanayosha-punu-gold-vanilla-pierced-earrings-v23.png",
+      "sha256": "cabbd17c9b0c90799e7a812dae1649866f683ae1d5772dabf19c8fd854e3f6ae",
+      "bytes": 2036407
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-shimadzu-satsuma-kiriko-hikari-l-pendant-v23.png",
+      "sha256": "5a9e248386104963d2dc371f8ac607285511d06f86d09e4c98239eaffbbc9d97",
+      "bytes": 1989275
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-sur-basic1-clear-pearl-pierced-earrings-v23.png",
+      "sha256": "cc9787badd1c754568129c0e55648597244ba76e0afce83288d79ef89775dbd6",
+      "bytes": 1989542
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-yadome-akita-rice-silver-pierced-earrings-v23.png",
+      "sha256": "66c528d327af89617e6c82ffb7999c31cdd5a952a9130d1bf533a86f8a348cdf",
+      "bytes": 2010464
+    },
+    {
+      "path": "generated-originals/0.18.0/styling-jp-yoboty-inshu-washi-indigo-long-nonhole-earrings-v23.png",
+      "sha256": "2b79f49c92d85e664e6f0da862875440c2a858077bc2b61c1a548d8d60f5ea0a",
+      "bytes": 2059808
+    }
+  ],
+  "completedAt": "2026-11-17T12:57:13.171Z",
+  "status": "passed",
+  "summary": {
+    "checks": 63,
+    "passed": 63,
+    "failed": 0,
+    "publishedProducts": 60,
+    "uniqueImages": 58,
+    "originalPngsChecked": 22,
+    "distChecked": true
+  }
+}
