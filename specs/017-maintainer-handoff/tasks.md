@@ -7,4 +7,4 @@
 - [x] R4 構造/flow/必要コメント
 - [x] R5 主要検査とZIP全件検証をsourceへ同梱
 - [x] R6 文書リンク/手順/tool/verify/アプリ不変を確認
-- [ ] R6 Git保存・最新版source/ZIP再納品
+- [x] R6 Git保存・最新版source/ZIP再納品

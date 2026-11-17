@@ -26,3 +26,7 @@
 整備中は文書checkerが説明文のpnpm wrapperをコマンドと誤検出したため、コード/命令部分だけを検査するよう修正した。またpnpm経由の`-- -Revision`はPowerShellへ余計な`--`を渡したため、既定aliasまたは直接pwshの正しい手順へ変更した。初版PSのsummary出力も修正し、上記alias成功時に実値を確認した。raw logはartifacts/handoff-stage等へ別名保存し、旧0.15の結果を上書きしていない。
 
 ZIP対象の除外・保存先/入力のリンク検査・集合/SHA整合は、任意file内容やGit全履歴の機密監査ではない。PS7.0互換APIへの置換は構文/APIの範囲で、実行はPowerShell7.6.9。公開アプリが全369ファイルで不変なので、文書/toolをGitへ保存し、[skip ci]で不要な再配信を避ける。新たなActionsや実公開の検査を実施済みと記録しない。
+
+## 完了記録
+
+主要な文書/source/toolは918f1c1でGit保存。docs-017のsource・版付きZIP・latest ZIPは851ファイル、repository→export/ZIPの全SHA・集合一致、公開98画像と50商品対応を確認した。完了記録とdeployment-results.sourceDeliveryを含めて同じdocs-017で再export・全件照合したものを最終納品とする。旧source/ZIP/proofはbackupへ保持し、初回0.15のproofも残す。ZIP自身の最終bytes/SHAは外部proofにのみ記録する。

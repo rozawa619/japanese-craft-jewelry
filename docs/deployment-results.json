@@ -332,23 +332,28 @@
   },
   "sourceDelivery": {
     "status": "verified",
+    "revision": "docs-017",
     "source": "../japanese-craft-jewelry-delivery/source",
     "zip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-source.zip",
-    "proof": "../japanese-craft-jewelry-delivery/package-verification-0.15.0.json",
+    "versionedZip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-source-0.15.0-docs-017.zip",
+    "proof": "../japanese-craft-jewelry-delivery/package-verification-0.15.0-docs-017.json",
+    "previousProofPreserved": "../japanese-craft-jewelry-delivery/package-verification-0.15.0.json",
+    "fileCount": 851,
+    "everyRepositoryFileSha256Checks": 851,
+    "everyFileSha256Checks": 851,
+    "repositoryAndExportFileSetsMatch": true,
+    "sourceAndZipFileSetsMatch": true,
+    "allFileHashesMatch": true,
+    "publicImages": 98,
+    "publishedProducts": 50,
+    "retiredImagesExcluded": 10,
+    "explicitExcludedEntries": 0,
     "newImageGeneration": false,
     "originals": "Existing0.14 originals ZIP retained separately",
     "publicOutputUnchangedSinceLocalBrowserChecks": true,
-    "fileCount": 822,
-    "publicImages": 98,
-    "publishedProducts": 50,
-    "everyFileSha256Checks": 822,
-    "everyRepositoryFileSha256Checks": 822,
-    "sourceAndZipFileSetsMatch": true,
-    "allFileHashesMatch": true,
-    "retiredImagesExcluded": 10,
-    "secretOrBuildEntries": 0,
-    "zipHashLocation": "External package-verification-0.15.0.json; no self-referential archive hash.",
-    "finalPass": "Re-export after completion notes and repeat all repository/export/ZIP hashes."
+    "zipHashLocation": "External revisioned package-verification JSON; not self-referenced inside ZIP",
+    "finalPass": "Completion notes included; repository/export/ZIP sets and every SHA rechecked.",
+    "limits": "File integrity and explicit excluded paths only; not a whole-history credential audit or app/AdSense/legal certification."
   },
   "limits": [
     "No physical iOS/Safari certification.",
@@ -362,5 +367,16 @@
     "cssDelta": "docs/visual-mobile-stage-heading-build-delta.json",
     "navigationDelta": "docs/visual-mobile-stage-source-nav-build-delta.json",
     "broadQaPhase": "Local497/314/source248/Maps9/ads6 and hosted497 precede the heading and source-navigation refinements. Final local/public mobile92/touch4/race12/heading12 plus final release/source/type checks cover the final output. No facts/price/image/destination changes."
+  },
+  "documentationRevision": "017",
+  "maintenance": {
+    "revision": "017",
+    "recordedAt": "2026-11-17T06:47:24.570Z",
+    "scope": "AI handoff, human editing guides, reproducible checks and source packaging; app0.15.0 unchanged",
+    "implementationCommit": "918f1c1",
+    "validation": "docs/handoff-stage-validation-results.json",
+    "specification": "specs/017-maintainer-handoff/validation.md",
+    "applicationOutputSha256Matches": 369,
+    "publicDeploymentPerformed": false
   }
 }
