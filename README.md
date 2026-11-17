@@ -20,10 +20,9 @@ AIは最初に[AGENTS.md](AGENTS.md)を読みます。過去の会話がなく�
 
 ## 現在の基準
 
-作業版0.17.0・産地地図/地図表示設定019、2026-11-17。台帳は0.16から公開60/登録66商品・下書き6、24県、公開関連34技法（全36）、一次出典293、33店舗/53商品、人物58＋単体60の118画像を継承します。今後の件数上限ではありません。公開/納品の確定値は[deployment-results](docs/deployment-results.json)、実測は[verification](docs/verification.md)を正本にします。
+公開版0.17.0・産地地図/地図表示設定019、2026-11-17。台帳は0.16から公開60/登録66商品・下書き6、24県、公開関連34技法（全36）、一次出典293、33店舗/53商品、人物58＋単体60の118画像を継承します。今後の件数上限ではありません。公開/納品の確定値は[deployment-results](docs/deployment-results.json)、実測は[verification](docs/verification.md)を正本にします。
 
-<!-- TODO_PUBLIC_V17 -->
-0.17.0（仕様019）は作業・検証中です。今回の公開app・Actions・実URL検証は未確定のため、確定後にこの段落を更新します。公開確認済みの基準は0.16.0（app86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb、Actions44042180272）です。
+0.17.0（仕様019）は公開・実URL確認済みです。app `b8edee4e26c92a9a62c9133bf432aecc4666199a`、[Actions44051153186](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44051153186) completed/success（2026-11-17T08:58:25Z更新、08:58:40.558ZにAPI観測）。公開Source328HTML SHA・補足24（328正規URL/118画像SHA）・日本地図193・表示設定22・mobile92が成功しました。詳細と最新納品状態はdeployment-resultsを正本にします。
 
 産地の共通入口はTOP10→日本地図→DISCOVER3県。観光TOP10順位は維持し、47県のCC0形状から実商品/産地本文のある掲載24県だけを選択可能にします。代表単体AI画像・商品名・国内参考価格を正本から表示し、select・地方別一覧・地図ジャンプも用意します。hoverだけに頼らず、タップ/keyboard/JSなしの通常リンクを保ちます。
 

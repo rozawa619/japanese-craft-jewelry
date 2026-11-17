@@ -1,0 +1,90 @@
+{
+  "version": "0.17.0",
+  "recordedAt": "2026-11-17T09:06:12.812Z",
+  "status": "passed",
+  "applicationCommit": "b8edee4e26c92a9a62c9133bf432aecc4666199a",
+  "actions": {
+    "id": 44051153186,
+    "headSha": "b8edee4e26c92a9a62c9133bf432aecc4666199a",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44051153186",
+    "updatedAt": "2026-11-17T08:58:25Z",
+    "observedAt": "2026-11-17T08:58:40.558Z"
+  },
+  "origin": "https://rozawa619.github.io",
+  "base": "/japanese-craft-jewelry/",
+  "reports": {
+    "sources": "docs/discovery-map-stage-hosted-sources-results.json",
+    "release": "docs/discovery-map-stage-hosted-release-results.json",
+    "japan-map": "docs/discovery-map-stage-hosted-japan-map-results.json",
+    "map-preferences": "docs/discovery-map-stage-hosted-map-preferences-results.json",
+    "mobile": "docs/discovery-map-stage-hosted-mobile-results.json"
+  },
+  "results": {
+    "sources": {
+      "checks": 328,
+      "passed": 328,
+      "failed": 0,
+      "htmlSha256Comparisons": 328,
+      "productPages": 120,
+      "sourceDisclosures": 448,
+      "sourceRecords": 1580
+    },
+    "release": {
+      "checks": 24,
+      "passed": 24,
+      "failed": 0,
+      "canonicalUrls": 328,
+      "uniqueImages": 118,
+      "pageErrors": 0,
+      "consoleErrors": 0
+    },
+    "japan-map": {
+      "checks": 193,
+      "passed": 193,
+      "failed": 0,
+      "regions": 24,
+      "geographicShapes": 47,
+      "locales": 2,
+      "surfaces": 3,
+      "viewports": 3,
+      "selectionChecks": 188,
+      "axeScreens": 6,
+      "axeViolations": 0,
+      "screenshots": 6,
+      "pageErrors": 0,
+      "consoleErrors": 0,
+      "externalRequests": 0
+    },
+    "map-preferences": {
+      "checks": 22,
+      "passed": 22,
+      "failed": 0,
+      "responsiveFlows": 6,
+      "invalidPreferenceCases": 6,
+      "blockedStorageFlows": 2,
+      "axeScreens": 8,
+      "axeViolations": 0,
+      "screenshots": 6,
+      "liveGoogleChecks": 0,
+      "sourceInputsUnchanged": true
+    },
+    "mobile": {
+      "checks": 92,
+      "passed": 92,
+      "failed": 0,
+      "viewports": 7,
+      "locales": 2,
+      "representativeRoutes": 6,
+      "sourceControls": 120,
+      "typeImageInstances": 112,
+      "axeScreens": 10,
+      "axeViolations": 0,
+      "liveMaps": 2,
+      "screenshots": 16
+    }
+  },
+  "securityHeaders": "docs/discovery-map-stage-hosted-security-headers-results.json",
+  "scope": "Live public site, after successful Actions. All five suites succeeded on their first public run. Source328 raw HTML and118 images match final local bytes. Broad quality617 is local; not claimed as a hosted rerun. Chrome emulation is not physical iOS/Safari."
+}

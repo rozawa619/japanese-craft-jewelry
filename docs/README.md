@@ -1,9 +1,8 @@
 # 文書の入口
 
-作業版0.17.0・産地地図/地図表示設定019（2026-11-17）。文書入口は017を継承し、旧版を現在値へ読み替えません。
+公開版0.17.0・産地地図/地図表示設定019（2026-11-17）。文書入口は017を継承し、旧版を現在値へ読み替えません。
 
-<!-- TODO_PUBLIC_V17 -->
-0.17.0（仕様019）は作業・検証中です。今回の公開app・Actions・実URL検証は未確定のため、確定後にこの段落を更新します。公開確認済みの基準は0.16.0（app86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb、Actions44042180272）です。
+0.17.0（仕様019）は公開・実URL確認済みです。app `b8edee4e26c92a9a62c9133bf432aecc4666199a`、[Actions44051153186](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44051153186) completed/success（2026-11-17T08:58:25Z更新、08:58:40.558ZにAPI観測）。公開Source328HTML SHA・補足24（328正規URL/118画像SHA）・日本地図193・表示設定22・mobile92が成功しました。詳細と最新納品状態はdeployment-resultsを正本にします。
 
 台帳は60公開/66登録・24県・118画像を継承。確定状態は[deployment-results](deployment-results.json)を参照します。
 

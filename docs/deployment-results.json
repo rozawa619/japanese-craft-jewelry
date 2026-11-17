@@ -3,10 +3,18 @@
   "specification": "019-geographic-discovery-map-privacy",
   "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
   "branch": "main",
-  "status": "locally_verified_pending_deployment",
-  "recordedAt": "2026-11-17T08:54:27.878Z",
-  "applicationCommit": null,
-  "actions": null,
+  "status": "deployed_and_verified",
+  "recordedAt": "2026-11-17T09:06:12.940Z",
+  "applicationCommit": "b8edee4e26c92a9a62c9133bf432aecc4666199a",
+  "actions": {
+    "id": 44051153186,
+    "headSha": "b8edee4e26c92a9a62c9133bf432aecc4666199a",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44051153186",
+    "updatedAt": "2026-11-17T08:58:25Z",
+    "observedAt": "2026-11-17T08:58:40.558Z"
+  },
   "previousDeployedVersion": "0.16.0",
   "previousDeployedApplicationCommit": "86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb",
   "previousRecord": "docs/deployment-v16-before-map.json",
@@ -256,10 +264,98 @@
     },
     "providerClarificationDelta": "docs/discovery-map-stage-provider-clarification-delta.json",
     "stableOutput": "docs/discovery-map-stage-build-manifest.json",
-    "phaseExplanation": "617/193/22/92/9/7/6 run on the refined app before one provider-name paragraph per Privacy locale. Exact removal of those two paragraphs restores the prior HTML bytes; all other468 output SHA and all executable code/styles/CSP/metadata/URLs remain identical. Final full verify141/149, Source328 and focused Privacy4 cover the clarification."
+    "phaseExplanation": "617/193/22/92/9/7/6 run on the refined app before one provider-name paragraph per Privacy locale. Exact removal of those two paragraphs restores the prior HTML bytes; all other468 output SHA and all executable code/styles/CSP/metadata/URLs remain identical. Final full verify141/149, Source328 and focused Privacy4 cover the clarification.",
+    "finalOutputIntegrity": "docs/discovery-map-stage-final-output-integrity.json"
   },
   "hostedVerification": {
-    "status": "pending"
+    "version": "0.17.0",
+    "recordedAt": "2026-11-17T09:06:12.812Z",
+    "status": "passed",
+    "applicationCommit": "b8edee4e26c92a9a62c9133bf432aecc4666199a",
+    "actions": {
+      "id": 44051153186,
+      "headSha": "b8edee4e26c92a9a62c9133bf432aecc4666199a",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44051153186",
+      "updatedAt": "2026-11-17T08:58:25Z",
+      "observedAt": "2026-11-17T08:58:40.558Z"
+    },
+    "origin": "https://rozawa619.github.io",
+    "base": "/japanese-craft-jewelry/",
+    "reports": {
+      "sources": "docs/discovery-map-stage-hosted-sources-results.json",
+      "release": "docs/discovery-map-stage-hosted-release-results.json",
+      "japan-map": "docs/discovery-map-stage-hosted-japan-map-results.json",
+      "map-preferences": "docs/discovery-map-stage-hosted-map-preferences-results.json",
+      "mobile": "docs/discovery-map-stage-hosted-mobile-results.json"
+    },
+    "results": {
+      "sources": {
+        "checks": 328,
+        "passed": 328,
+        "failed": 0,
+        "htmlSha256Comparisons": 328,
+        "productPages": 120,
+        "sourceDisclosures": 448,
+        "sourceRecords": 1580
+      },
+      "release": {
+        "checks": 24,
+        "passed": 24,
+        "failed": 0,
+        "canonicalUrls": 328,
+        "uniqueImages": 118,
+        "pageErrors": 0,
+        "consoleErrors": 0
+      },
+      "japan-map": {
+        "checks": 193,
+        "passed": 193,
+        "failed": 0,
+        "regions": 24,
+        "geographicShapes": 47,
+        "locales": 2,
+        "surfaces": 3,
+        "viewports": 3,
+        "selectionChecks": 188,
+        "axeScreens": 6,
+        "axeViolations": 0,
+        "screenshots": 6,
+        "pageErrors": 0,
+        "consoleErrors": 0,
+        "externalRequests": 0
+      },
+      "map-preferences": {
+        "checks": 22,
+        "passed": 22,
+        "failed": 0,
+        "responsiveFlows": 6,
+        "invalidPreferenceCases": 6,
+        "blockedStorageFlows": 2,
+        "axeScreens": 8,
+        "axeViolations": 0,
+        "screenshots": 6,
+        "liveGoogleChecks": 0,
+        "sourceInputsUnchanged": true
+      },
+      "mobile": {
+        "checks": 92,
+        "passed": 92,
+        "failed": 0,
+        "viewports": 7,
+        "locales": 2,
+        "representativeRoutes": 6,
+        "sourceControls": 120,
+        "typeImageInstances": 112,
+        "axeScreens": 10,
+        "axeViolations": 0,
+        "liveMaps": 2,
+        "screenshots": 16
+      }
+    },
+    "securityHeaders": "docs/discovery-map-stage-hosted-security-headers-results.json",
+    "scope": "Live public site, after successful Actions. All five suites succeeded on their first public run. Source328 raw HTML and118 images match final local bytes. Broad quality617 is local; not claimed as a hosted rerun. Chrome emulation is not physical iOS/Safari."
   },
   "security": {
     "dependencyAudit": {
@@ -279,7 +375,8 @@
     "migrationHeaderSimulation": "docs/discovery-map-stage-migration-headers-results.json",
     "currentGitHubHeaderApplication": "not-applied; must observe actual headers separately",
     "hostAccountChangesPerformed": false,
-    "limits": "Known dependency advisories and tested app boundaries only; no all-vulnerability or physical-device certification."
+    "limits": "Known dependency advisories and tested app boundaries only; no all-vulnerability or physical-device certification.",
+    "actualHostedHeaders": "docs/discovery-map-stage-hosted-security-headers-results.json"
   },
   "legal": {
     "review": "docs/legal-review-v17.md",
@@ -299,7 +396,7 @@
     "applicationsSubmitted": false
   },
   "sourceDelivery": {
-    "status": "pending_final_source_package",
+    "status": "verified",
     "revision": "geo-019",
     "source": "../japanese-craft-jewelry-delivery/source",
     "zip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-source.zip",
@@ -318,8 +415,23 @@
       "bytes": 35561799,
       "sha256": "383cf02e99cdf06d936118e9d071f35df68a1b99191de31442b7f450de386254",
       "everyFileSha256Checks": 26,
-      "allFileHashesMatch": true
-    }
+      "allFileHashesMatch": true,
+      "recheckedUnchangedAt": "2026-11-17T09:08:43.876Z"
+    },
+    "fileCount": 1031,
+    "everyRepositoryFileSha256Checks": 1031,
+    "everyFileSha256Checks": 1031,
+    "repositoryAndExportFileSetsMatch": true,
+    "sourceAndZipFileSetsMatch": true,
+    "allFileHashesMatch": true,
+    "publicImages": 118,
+    "publishedProducts": 60,
+    "retiredImagesExcluded": 10,
+    "explicitExcludedEntries": 0,
+    "originalsUnchangedFromVersion": "0.16.0",
+    "publicOutputUnchangedSinceFinalFocusedAndHostedChecks": true,
+    "finalPass": "Completion notes included by final export; repository/export/ZIP sets and every SHA checked again. ZIP bytes/hash are in the external proof only.",
+    "limits": "File integrity and explicit excluded paths only; not a whole-history credential audit or app/AdSense/legal certification."
   },
   "documentationRevision": "019",
   "limits": [
@@ -327,5 +439,9 @@
     "Commercial-host eligibility, real applicant/privacy rights-contact information, accounts/contracts/CMP and account security settings depend on real information or authority.",
     "No ad application, contract, fees, account-setting, DNS or host migration performed.",
     "No search ranking/traffic, future stock or AdSense approval guarantee."
-  ]
+  ],
+  "documentationVerification": {
+    "report": "docs/discovery-map-stage-docs-results.json",
+    "scope": "34 active maintainer/spec/research documents; local paths/anchors/commands. External URLs counted, not fetched."
+  }
 }

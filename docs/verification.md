@@ -1,6 +1,6 @@
 # 検証結果 — 0.17.0・地図で選ぶ019
 
-2026-11-17。ローカルの実装・検証を完了。公開Actionsと実URLの確認はこれから行います。実数と段階の正本は[deployment-results.json](deployment-results.json)です。
+2026-11-17。公開app `b8edee4e26c92a9a62c9133bf432aecc4666199a`、[Actions44051153186](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44051153186) completed/successと実URLを確認しました。実数と段階の正本は[deployment-results.json](deployment-results.json)です。
 
 ## 実装したこと
 
@@ -47,4 +47,10 @@ GitHub Pagesの商用用途適合、適用される場合の実主体/権利対�
 
 ## 公開・納品
 
-現在は公開後の検証と最終ZIPの作成前です。Actions成功・実URL/全HTML画像の照合、ソースexport/ZIPの全件SHAを確認して追記します。旧0.16の実測は[保存版](verification-v16.md)・[旧deployment](deployment-v16-before-map.json)を保持しています。
+[公開集約](discovery-map-stage-hosted-results.json)：Source328/328の生HTML SHA、補足24/24で328正規URLと118画像SHA、日本地図193/193、表示設定22/22、mobile92/92が初回で成功しました。公開mobileでは実Maps2・axe10画面違反0も確認。公開後にも[470生成物の全SHA不変](discovery-map-stage-final-output-integrity.json)を照合しました。
+
+[実HTTPヘッダー](discovery-map-stage-hosted-security-headers-results.json)はHTTPS/HSTSとmeta CSPを確認しましたが、HTTP CSP/frame-ancestors・X-Frame-Options・nosniff・Referrer/Permissions-Policyは未設定です。互換ホスト用_headersの準備・loopback7検査と、現在のGitHubへの適用を混同しません。
+
+最終source ZIPと全件SHAの確定値はdeployment-resultsのsourceDeliveryおよび外部proofへ記録します。旧0.16の実測は[保存版](verification-v16.md)・[旧deployment](deployment-v16-before-map.json)を保持しています。
+
+最終全sourceは1031ファイル・118公開画像。repository/export/ZIPの集合と全件SHAを照合し、完了記録を含めて再梱包します。最新ZIP/proofはdeployment-resultsのsourceDeliveryから辿れます。新bitmapはなく、0.16原本ZIPもSHA不変を再照合しました。

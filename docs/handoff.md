@@ -1,10 +1,10 @@
 # 現在状態と引継ぎ
 
-作業版0.17.0・産地地図/地図表示設定019、2026-11-17。文書の入口は保守改訂017を引き継ぎます。別AIは[コピー用prompt](ai-handoff.md)、人は[編集ガイド](editing-guide.md)から始められます。過去の途中値を積み上げた説明は[0.15保存版](archive/handoff-v15.md)へ退避しました。
+公開版0.17.0・産地地図/地図表示設定019、2026-11-17。文書の入口は保守改訂017を引き継ぎます。別AIは[コピー用prompt](ai-handoff.md)、人は[編集ガイド](editing-guide.md)から始められます。過去の途中値を積み上げた説明は[0.15保存版](archive/handoff-v15.md)へ退避しました。
 
 ## 何を作っているか
 
-Japanese Craft Jewelryは、SORAが全国の工芸ジュエリーを選ぶ日英サイトです。販売/決済/発送・ブログ・Contactはありません。0.17作業版は0.16の台帳である公開60/全66商品・下書き6商品、24県、公開関連34技法（全36）、33店舗/53商品の関連、一次出典293件、人物58＋単体60のAI画像118ファイル。今後の追加上限ではありません。
+Japanese Craft Jewelryは、SORAが全国の工芸ジュエリーを選ぶ日英サイトです。販売/決済/発送・ブログ・Contactはありません。0.17公開版は0.16の台帳である公開60/全66商品・下書き6商品、24県、公開関連34技法（全36）、33店舗/53商品の関連、一次出典293件、人物58＋単体60のAI画像118ファイル。今後の追加上限ではありません。
 
 51品の公式注文受付と9品の小売/現行カタログを購入根拠とします。将来在庫や店頭の個別在庫は保証しません。COCOON2、欠品18K、現行販売未確認の畠山2、hairpinはdraftを維持。復帰は対象variantの現行販売を再調査します。
 
@@ -23,8 +23,7 @@ Japanese Craft Jewelryは、SORAが全国の工芸ジュエリーを選ぶ日英
 
 直前018の依頼は、全国で追加する価値のあるジュエリーを増やすことでした。秋田・福井・岐阜・広島・鹿児島・徳島・鳥取・沖縄・熊本・島根の10県に10商品を追加し、日英の紹介・比較・3問・公式購入先・店舗案内・人物と単体のAI図を揃えました。広告は通常リンク/offを保ちます。
 
-<!-- TODO_PUBLIC_V17 -->
-0.17.0（仕様019）は作業・検証中です。今回の公開app・Actions・実URL検証は未確定のため、確定後にこの段落を更新します。公開確認済みの基準は0.16.0（app86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb、Actions44042180272）です。
+0.17.0（仕様019）は公開・実URL確認済みです。app `b8edee4e26c92a9a62c9133bf432aecc4666199a`、[Actions44051153186](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44051153186) completed/success（2026-11-17T08:58:25Z更新、08:58:40.558ZにAPI観測）。公開Source328HTML SHA・補足24（328正規URL/118画像SHA）・日本地図193・表示設定22・mobile92が成功しました。詳細と最新納品状態はdeployment-resultsを正本にします。
 
 今回019の構成は次のとおりです。産地の共通入口はTOP10→日本地図→DISCOVER3県。観光TOP10順位は維持し、47県のCC0形状から実商品/産地本文のある掲載24県だけを選択可能にします。代表単体AI画像・商品名・国内参考価格を正本から表示し、select・地方別一覧・地図ジャンプも用意します。hoverだけに頼らず、タップ/keyboard/JSなしの通常リンクを保ちます。
 
@@ -65,6 +64,6 @@ Googleマップは初回の明示許可後、日英・全店舗で30日間自動
 
 今回新bitmapは生成せず、0.16のWebP118枚・原本/生成記録を保持します。
 
-全sourceは隣接japanese-craft-jewelry-delivery/sourceとlatestのjapanese-craft-jewelry-source.zip。0.17用の予定版付きZIP名は`japanese-craft-jewelry-source-0.17.0-geo-019.zip`、外部proof名は`package-verification-0.17.0-geo-019.json`です。最終のファイル集合・SHA・検証完了状態は[deployment-results.json](deployment-results.json)のsourceDeliveryと外部proofを参照し、予定名だけで完了としません。ZIP自身hashはZIP外に置きます。
+全sourceは隣接japanese-craft-jewelry-delivery/sourceとlatestのjapanese-craft-jewelry-source.zip。0.17用の版付きZIP名は`japanese-craft-jewelry-source-0.17.0-geo-019.zip`、外部proof名は`package-verification-0.17.0-geo-019.json`です。最終のファイル集合・SHA・検証完了状態は[deployment-results.json](deployment-results.json)のsourceDeliveryと外部proofを参照し、予定名だけで完了としません。ZIP自身hashはZIP外に置きます。
 
 .git/.env/指定した認証ファイル名・秘密鍵拡張子/依存実体/dist/.astro/artifacts/退役画像を除外。自動検査は指定パス・リンク/ジャンクション・ファイル集合・SHAの確認で、任意ファイルの内容やGit全履歴の機密検査ではありません。PNG原本とQA画面は別資料で、fresh cloneのbuildに不要です。元PNG50枚の0.14別ZIPは保持し、0.16の新規23PNG（採用20・棄却3）は別の生成/採否記録とともに扱います。0.16原本ZIPは26ファイル・35,561,799bytes、SHA256 `383cf02e99cdf06d936118e9d071f35df68a1b99191de31442b7f450de386254`を外部`originals-verification-0.16.0.json`で検証済みです。task-local Node/pnpm wrapperはこのPC固有の便宜で、他PCはsetupの要件から構築できます。

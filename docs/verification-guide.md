@@ -1,9 +1,8 @@
 # 変更に合わせて検証する
 
-確認日：2026-11-17、作業版0.17.0・産地地図/地図表示設定019。目的は、変更に必要な証拠を得て、過去の成功を今回の成功と混同しないこと。最初に[AI引継ぎ](ai-handoff.md)とAGENTS.mdを読む。公開と納品の確定値は[deployment-results.json](deployment-results.json)、実際の入力・対象・失敗は各JSONを正本とする。
+確認日：2026-11-17、公開版0.17.0・産地地図/地図表示設定019。目的は、変更に必要な証拠を得て、過去の成功を今回の成功と混同しないこと。最初に[AI引継ぎ](ai-handoff.md)とAGENTS.mdを読む。公開と納品の確定値は[deployment-results.json](deployment-results.json)、実際の入力・対象・失敗は各JSONを正本とする。
 
-<!-- TODO_PUBLIC_V17 -->
-0.17.0（仕様019）は作業・検証中です。今回の公開app・Actions・実URL検証は未確定のため、確定後にこの段落を更新します。公開確認済みの基準は0.16.0（app86d6c6e6cb1567839c80d43bcf26f4a509e4a8bb、Actions44042180272）です。
+0.17.0（仕様019）は公開・実URL確認済みです。app `b8edee4e26c92a9a62c9133bf432aecc4666199a`、[Actions44051153186](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44051153186) completed/success（2026-11-17T08:58:25Z更新、08:58:40.558ZにAPI観測）。公開Source328HTML SHA・補足24（328正規URL/118画像SHA）・日本地図193・表示設定22・mobile92が成功しました。詳細と最新納品状態はdeployment-resultsを正本にします。
 
 ## 変更別に検証を選ぶ
 
