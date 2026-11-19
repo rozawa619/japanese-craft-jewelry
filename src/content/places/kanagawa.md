@@ -1,19 +1,20 @@
 ---
 title: "Jewelry connected to Kanagawa"
-description: "Browse our selection connected to Kanagawa workshops, plus separately identified jewelry sold by regional retailers."
+description: "Compare Hakone yosegi, Kamakura-bori lacquer and Kamakura silver openwork jewelry. See pieces stocked by a regional retailer in a dedicated section."
 locale: "en"
 publishStatus: "published"
-updatedAt: "2026-11-16"
-sourceIds: ["hamamatsuya-workshop", "hamamatsuya-technique", "hamamatsuya-earrings", "maruyama-company"]
+updatedAt: "2026-11-19"
+sourceIds: ["hamamatsuya-workshop","hamamatsuya-technique","hamamatsuya-earrings","maruyama-company","kamakura-city-bori","yogado-kamakura-workshop","dahliacyan-kamakura-atelier"]
 prefectureId: "kanagawa"
 relatedMerchantIds: ["hakone-maruyama"]
 ---
-## A place is more than a label.
 
-Our first stop is Hakone. Here, yosegi offers a way to look at wood through geometry, natural colour and the scale of a wearable object.
+## Three ways to work a surface
 
-Hamamatsuya documents a shop and visible workshop in Hatajuku, Hakone, Kanagawa. Its catalog groups the jewelry in this edit under muku yosegi. That gives us a traceable workshop connection; it does not certify the origin of every component.
+In Hatajuku, Hakone, Hamamatsuya combines woods of different colours. The arrangement is the design, whether it sits near your face or at the neckline. Its workshop and the woodwork catalog connect these pieces to Hatajuku.
 
-The broader craft tradition and a particular piece are separate questions. We do not apply a traditional-craft certification to an item simply because it uses a familiar technique.
+In Kamakura, Yogado’s brooches and pendant show a different use of wood. Carving gives the leaves and petals their depth before the lacquer finish goes on. The listings document the technique and materials, with the maker and workshop connection recorded in the sources.
 
-Hakone Maruyama lists another set of yosegi earrings. The shop is in Kanagawa, but the individual maker and manufacturing location are not identified in the checked listings. Those objects are kept out of the maker-region filter.
+Dahliacyan’s Kamakura atelier works in silver. Its openwork makes the background part of the pattern, whether you see it at the ear or on the wrist.
+
+Hakone Maruyama lists yosegi earrings at its Kanagawa shop. The individual makers and production sites for those items remain unconfirmed, so the listings are shown under the regional retailer section.

@@ -1133,5 +1133,95 @@
       "difference": "丸い石だけでなく、紐の表情も含めて選ぶネックレスです。ローズクォーツの品は淡い一石を金の枠で見せ、ToyToyの銀のペンダントは石のない金属の曲線を見せます。",
       "chooseFor": "勾玉の輪郭と組紐を、どちらも見せたい装いならこの組合せを。"
     }
+  },
+  "yogado-kamakura-bori-camellia-brooch": {
+    "sourceIds": [
+      "yogado-wb0003",
+      "yogado-kamakura-workshop"
+    ],
+    "compareWith": [
+      "yogado-kamakura-bori-maple-brooch",
+      "yogado-kamakura-bori-camellia-pendant"
+    ],
+    "en": {
+      "difference": "The camellia makes a rounded accent against a lapel. The maple’s pointed leaf shapes change the outline, while the pendant places a flower at the neckline.",
+      "chooseFor": "Someone looking for a sculptural flower on a plain jacket."
+    },
+    "ja": {
+      "difference": "椿ブローチは襟元に丸い輪郭が出ます。もみじは葉の先がとがり、椿ペンダントなら同じ花の意匠を胸の中央に置けます。",
+      "chooseFor": "無地のジャケットに、立体感のある花を一点添えたい人に。"
+    }
+  },
+  "yogado-kamakura-bori-maple-brooch": {
+    "sourceIds": [
+      "yogado-wb0030",
+      "yogado-kamakura-workshop"
+    ],
+    "compareWith": [
+      "yogado-kamakura-bori-camellia-brooch",
+      "dahliacyan-openwork-rhodochrosite-bracelet"
+    ],
+    "en": {
+      "difference": "The two leaves offer a more angular outline than the camellia brooch. The pattern is carved into the wood, while Dahliacyan’s bracelet creates openings through silver.",
+      "chooseFor": "Someone drawn to a botanical motif with clean, pointed edges."
+    },
+    "ja": {
+      "difference": "椿ブローチと比べて葉先に角があります。木を彫って陰影を出す鎌倉彫と、銀板を切り抜いて向こう側が見える透かし彫りも見比べられます。",
+      "chooseFor": "植物の意匠のなかでも、輪郭がすっきりとしたものを選びたい人に。"
+    }
+  },
+  "yogado-kamakura-bori-camellia-pendant": {
+    "sourceIds": [
+      "yogado-wp0006",
+      "yogado-kamakura-workshop"
+    ],
+    "compareWith": [
+      "hamamatsuya-pendant",
+      "yogado-kamakura-bori-camellia-brooch"
+    ],
+    "en": {
+      "difference": "The polished carved flower has a readable botanical shape. Hamamatsuya’s wooden pendant puts the focus on repeated geometry created from different woods.",
+      "chooseFor": "Someone who wants a visible carved accent lower on the chest."
+    },
+    "ja": {
+      "difference": "つやのある木彫りの椿は花の形が軸です。浜松屋のペンダントは、木の色を組み合わせた幾何学模様が軸になります。",
+      "chooseFor": "胸元に彫りのあるアクセントを置きたい人に。"
+    }
+  },
+  "dahliacyan-openwork-moonstone-earrings": {
+    "sourceIds": [
+      "dahliacyan-54925842",
+      "dahliacyan-kamakura-atelier"
+    ],
+    "compareWith": [
+      "hamamatsuya-catch-pierced",
+      "dahliacyan-openwork-rhodochrosite-bracelet"
+    ],
+    "en": {
+      "difference": "Dahliacyan cuts away silver to form the pattern. Hamamatsuya builds pattern by juxtaposing woods, so the texture and degree of openness differ.",
+      "chooseFor": "Someone who wants a longer earring with a small warm stone accent."
+    },
+    "ja": {
+      "difference": "Dahliacyanは銀板を切り抜いて模様を作ります。異なる木を組んで柄を作る浜松屋の寄木ピアスとは、模様の向こうが透けるかどうかも違います。",
+      "chooseFor": "長さのあるピアスに、暖色の石を取り入れたい人に。"
+    }
+  },
+  "dahliacyan-openwork-rhodochrosite-bracelet": {
+    "sourceIds": [
+      "dahliacyan-164454644",
+      "dahliacyan-kamakura-atelier"
+    ],
+    "compareWith": [
+      "dahliacyan-openwork-moonstone-earrings",
+      "showen-edo-uchi-silk-bracelet"
+    ],
+    "en": {
+      "difference": "The same maker’s moonstone earrings show pierced silver at the ear. The bracelet provides a pink stone and a clasp position you can vary, while Showen’s braid offers a textile wrist piece.",
+      "chooseFor": "Someone who wants a stone accent on the wrist with adjustable placement."
+    },
+    "ja": {
+      "difference": "同じ工房のピアスが耳元で銀の透かしを見せるのに対し、こちらは手元でピンクの石と銀を楽しめます。昇苑くみひものブレスレットは、布に近い質感が好きな場合の比較候補です。",
+      "chooseFor": "手首の石のアクセントと、留める位置の調整を重視する人に。"
+    }
   }
 }

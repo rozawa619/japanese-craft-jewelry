@@ -1276,6 +1276,78 @@
         "menoya-shops-v16"
       ],
       "checkedAt": "2026-11-17"
+    },
+    {
+      "id": "yogado-kamakura-shop",
+      "name": {
+        "en": "Yogado Kamakura shop",
+        "ja": "陽雅堂 鎌倉本店"
+      },
+      "address": {
+        "en": "1-8-30 Yukinoshita, Kamakura, Kanagawa, Japan",
+        "ja": "神奈川県鎌倉市雪ノ下1-8-30"
+      },
+      "kind": "maker-shop",
+      "officialUrl": "https://yogado.jp/",
+      "officialStoreUrl": "https://yogado.jp/access/",
+      "hours": {
+        "en": "09:00–18:00, as listed by Kamakura City",
+        "ja": "9:00〜18:00（鎌倉市掲載）"
+      },
+      "closedDays": {
+        "en": "Open year-round, as listed by Kamakura City",
+        "ja": "年中無休（鎌倉市掲載）"
+      },
+      "access": null,
+      "visitSummary": {
+        "en": "The shop faces Tsurugaoka Hachimangu and lists carved brooches and pendants among its ranges.",
+        "ja": "鶴岡八幡宮正面の鎌倉彫専門店。鎌倉市の案内ではブローチやペンダントを扱っています。"
+      },
+      "stockNote": {
+        "en": "In-store stock of the featured piece has not been checked. Consult the shop before visiting.",
+        "ja": "紹介商品の店頭在庫は未確認です。訪問前に店舗にご確認ください。"
+      },
+      "mapQuery": "陽雅堂 鎌倉市雪ノ下1-8-30",
+      "sourceIds": [
+        "yogado-kamakura-store"
+      ],
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "dahliacyan-sakanoshita-atelier",
+      "name": {
+        "en": "Dahliacyan Sakanoshita shop and atelier",
+        "ja": "Dahliacyan 坂ノ下 店舗・工房"
+      },
+      "address": {
+        "en": "22-3 Sakanoshita, Kamakura, Kanagawa 248-0021, Japan",
+        "ja": "〒248-0021 神奈川県鎌倉市坂ノ下22-3"
+      },
+      "kind": "maker-shop",
+      "officialUrl": "https://www.dahliacyan.com/",
+      "officialStoreUrl": "https://www.dahliacyan.com/",
+      "hours": {
+        "en": "10:00–18:00, as listed by the maker",
+        "ja": "10:00〜18:00（工房公式掲載）"
+      },
+      "closedDays": {
+        "en": "Tuesday",
+        "ja": "火曜日"
+      },
+      "access": null,
+      "visitSummary": {
+        "en": "Shop and working atelier in Sakanoshita, the address announced by the maker after its 2026 move.",
+        "ja": "2026年の移転後に公式が案内する坂ノ下の店舗。彫金の工房を併設しています。"
+      },
+      "stockNote": {
+        "en": "The workshop lists one-off pieces. Check the item’s availability before making a trip.",
+        "ja": "一点物です。来店前に、紹介商品の販売状況を店舗に確認してください。"
+      },
+      "mapQuery": "Dahliacyan 鎌倉市坂ノ下22-3",
+      "sourceIds": [
+        "dahliacyan-kamakura-atelier"
+      ],
+      "checkedAt": "2026-11-19"
     }
   ],
   "products": [
@@ -2195,6 +2267,76 @@
       ],
       "fallback": null,
       "checkedAt": "2026-11-17"
+    },
+    {
+      "productId": "yogado-kamakura-bori-camellia-brooch",
+      "storeIds": [
+        "yogado-kamakura-shop"
+      ],
+      "officialHomeUrl": "https://yogado.jp/about-us/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "yogado-wb0003",
+        "yogado-kamakura-workshop"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "productId": "yogado-kamakura-bori-maple-brooch",
+      "storeIds": [
+        "yogado-kamakura-shop"
+      ],
+      "officialHomeUrl": "https://yogado.jp/about-us/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "yogado-wb0030",
+        "yogado-kamakura-workshop"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "productId": "yogado-kamakura-bori-camellia-pendant",
+      "storeIds": [
+        "yogado-kamakura-shop"
+      ],
+      "officialHomeUrl": "https://yogado.jp/about-us/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "yogado-wp0006",
+        "yogado-kamakura-workshop"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "productId": "dahliacyan-openwork-moonstone-earrings",
+      "storeIds": [
+        "dahliacyan-sakanoshita-atelier"
+      ],
+      "officialHomeUrl": "https://www.dahliacyan.com/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "dahliacyan-54925842",
+        "dahliacyan-kamakura-atelier"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "productId": "dahliacyan-openwork-rhodochrosite-bracelet",
+      "storeIds": [
+        "dahliacyan-sakanoshita-atelier"
+      ],
+      "officialHomeUrl": "https://www.dahliacyan.com/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "dahliacyan-164454644",
+        "dahliacyan-kamakura-atelier"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-19"
     }
   ]
 }

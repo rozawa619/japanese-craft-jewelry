@@ -6,6 +6,7 @@ import {resolve} from 'node:path';
 const soloManifests=[
  {path:'docs/image-generation-solo-v14.json',required:true},
  {path:'docs/image-generation-solo-v16.json',required:false},
+ {path:'docs/image-generation-solo-v25.json',required:false},
 ];
 export const trainedAlgorithmicMedia='http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia';
 

@@ -458,6 +458,24 @@
         "menoya-company-v16",
         "menoya-n15-current-v16"
       ]
+    },
+    {
+      "id": "kamakura-bori",
+      "name": "Kamakura-bori",
+      "description": "Carved wood finished with urushi, a craft tradition associated with Kamakura.",
+      "sourceIds": [
+        "kamakura-city-bori",
+        "yogado-kamakura-workshop"
+      ]
+    },
+    {
+      "id": "dahliacyan-silver-openwork",
+      "name": "Hand-sawn silver openwork",
+      "description": "Patterns cut through silver sheet with a fine jeweller’s saw, as documented by Dahliacyan in Kamakura.",
+      "sourceIds": [
+        "dahliacyan-164454644",
+        "dahliacyan-kamakura-atelier"
+      ]
     }
   ],
   "materials": [
@@ -722,6 +740,14 @@
       "id": "freshwater-pearl",
       "name": "Freshwater pearl",
       "description": "Freshwater pearl named by the seller. Individual farm, country of origin and treatment details are not established."
+    },
+    {
+      "id": "orange-moonstone",
+      "name": "Orange moonstone"
+    },
+    {
+      "id": "rhodochrosite",
+      "name": "Rhodochrosite"
     }
   ],
   "productTypes": [
@@ -752,6 +778,10 @@
     {
       "id": "ear-cuff",
       "name": "Ear cuffs"
+    },
+    {
+      "id": "brooch",
+      "name": "Brooches"
     }
   ],
   "makers": [
@@ -1223,6 +1253,27 @@
         "menoya-company-v16",
         "menoya-izumo-form-v16",
         "menoya-n15-current-v16"
+      ]
+    },
+    {
+      "id": "yogado",
+      "name": "Yogado",
+      "location": "Kamakura, Kanagawa, Japan",
+      "productionNote": "Yogado documents wood forming, carving and lacquer finishing by craftspeople connected to the Kamakura-bori tradition. The item listings do not identify the individual carver or origin of every component.",
+      "url": "https://yogado.jp/about-us/",
+      "sourceIds": [
+        "yogado-kamakura-workshop",
+        "yogado-kamakura-store"
+      ]
+    },
+    {
+      "id": "dahliacyan",
+      "name": "Dahliacyan",
+      "location": "Sakanoshita, Kamakura, Kanagawa, Japan",
+      "productionNote": "The maker documents production of its original metalwork jewelry at the atelier attached to its Kamakura shop, which moved to Sakanoshita in August 2026.",
+      "url": "https://www.dahliacyan.com/",
+      "sourceIds": [
+        "dahliacyan-kamakura-atelier"
       ]
     }
   ],
@@ -1926,6 +1977,45 @@
         "menoya-n15-current-v16",
         "menoya-company-v16",
         "menoya-shops-v16"
+      ]
+    },
+    {
+      "id": "yogado-official",
+      "name": "Yogado official online shop",
+      "url": "https://shop.yogado.jp/",
+      "language": "Japanese product listings",
+      "shipping": {
+        "status": "unavailable",
+        "summary": "Yogado specifies shipping within Japan. For delivery details, see the official shop.",
+        "countries": [
+          "JP"
+        ],
+        "sourceIds": [
+          "yogado-wb0003"
+        ]
+      },
+      "returns": "The official shop asks for contact within five days of delivery for returns. Check the seller’s full terms before ordering.",
+      "sourceIds": [
+        "yogado-wb0003"
+      ]
+    },
+    {
+      "id": "dahliacyan-official",
+      "name": "Dahliacyan official online shop",
+      "url": "https://dahliacyan.thebase.in/",
+      "language": "Japanese product descriptions",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Domestic postage is listed. Direct international delivery for the individual piece has not been verified.",
+        "countries": null,
+        "sourceIds": [
+          "dahliacyan-54925842",
+          "dahliacyan-retail-terms"
+        ]
+      },
+      "returns": "The seller generally accepts returns for defects only and states a seven-day limit after delivery. Check its current terms.",
+      "sourceIds": [
+        "dahliacyan-retail-terms"
       ]
     }
   ],
@@ -2722,6 +2812,56 @@
       "merchantId": "menoya-anahita-official",
       "programId": null,
       "officialProductUrl": "https://www.anahitastyle.com/view/item/000000027267",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "yogado-kamakura-bori-camellia-brooch-official",
+      "productId": "yogado-kamakura-bori-camellia-brooch",
+      "merchantId": "yogado-official",
+      "programId": null,
+      "officialProductUrl": "https://shop.yogado.jp/item/detail/wb0003.html",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "yogado-kamakura-bori-maple-brooch-official",
+      "productId": "yogado-kamakura-bori-maple-brooch",
+      "merchantId": "yogado-official",
+      "programId": null,
+      "officialProductUrl": "https://shop.yogado.jp/item/detail/wb0030.html",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "yogado-kamakura-bori-camellia-pendant-official",
+      "productId": "yogado-kamakura-bori-camellia-pendant",
+      "merchantId": "yogado-official",
+      "programId": null,
+      "officialProductUrl": "https://shop.yogado.jp/item/detail/wp0006.html",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "dahliacyan-openwork-moonstone-earrings-official",
+      "productId": "dahliacyan-openwork-moonstone-earrings",
+      "merchantId": "dahliacyan-official",
+      "programId": null,
+      "officialProductUrl": "https://dahliacyan.thebase.in/items/54925842",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "dahliacyan-openwork-rhodochrosite-bracelet-official",
+      "productId": "dahliacyan-openwork-rhodochrosite-bracelet",
+      "merchantId": "dahliacyan-official",
+      "programId": null,
+      "officialProductUrl": "https://dahliacyan.thebase.in/items/164454644",
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
       "affiliateLinkVerifiedAt": null
@@ -6466,6 +6606,268 @@
       "whatToCheck": [
         "This is a limited N-15 listing. Current order acceptance was checked, but future stock, restocking and identical stone patterns are not promised.",
         "The Izumo-style connection does not establish that the stones were mined in Shimane. Cord-fibre composition, closure construction and weight remain unconfirmed."
+      ]
+    },
+    {
+      "id": "yogado-kamakura-bori-camellia-brooch",
+      "slug": "yogado-kamakura-bori-camellia-brooch",
+      "locale": "en",
+      "title": "Yogado Kamakura-bori camellia brooch",
+      "originalTitle": "ブローチ 椿",
+      "publishStatus": "published",
+      "productType": [
+        "brooch"
+      ],
+      "prefectureIds": [
+        "kanagawa"
+      ],
+      "craftIds": [
+        "kamakura-bori"
+      ],
+      "materialIds": [
+        "wood",
+        "urushi-lacquer"
+      ],
+      "makerId": "yogado",
+      "craftClassification": {
+        "label": "Kamakura-bori carved and lacquered wood. The regional craft designation does not establish certification of this individual item.",
+        "sourceIds": [
+          "yogado-wb0003",
+          "yogado-kamakura-workshop"
+        ]
+      },
+      "size": "Approximately 6 cm overall length.",
+      "weightPerPieceGrams": null,
+      "findings": "Pin fitting. The metal is not specified.",
+      "fastening": "Brooch pin on the reverse.",
+      "priceAmount": 7500,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-19",
+      "taxNote": "Tax-inclusive Japanese online shop price at the recorded date.",
+      "availability": "listed",
+      "merchantIds": [
+        "yogado-official"
+      ],
+      "sourceIds": [
+        "yogado-wb0003",
+        "yogado-kamakura-workshop"
+      ],
+      "lastVerifiedAt": "2026-11-19",
+      "imageAssetIds": [],
+      "editorialSummary": "A partly open camellia takes shape in carved wood and urushi. Choose it for the depth of the petals and the broad, rounded silhouette at the lapel.",
+      "whoItMaySuit": "Someone looking for a sculptural flower on a plain jacket.",
+      "whatToCheck": [
+        "The pin alloy and weight are unpublished. Check whether your intended fabric can take a pin."
+      ]
+    },
+    {
+      "id": "yogado-kamakura-bori-maple-brooch",
+      "slug": "yogado-kamakura-bori-maple-brooch",
+      "locale": "en",
+      "title": "Yogado Kamakura-bori maple brooch",
+      "originalTitle": "ブローチ もみじ",
+      "publishStatus": "published",
+      "productType": [
+        "brooch"
+      ],
+      "prefectureIds": [
+        "kanagawa"
+      ],
+      "craftIds": [
+        "kamakura-bori"
+      ],
+      "materialIds": [
+        "wood",
+        "urushi-lacquer"
+      ],
+      "makerId": "yogado",
+      "craftClassification": {
+        "label": "Kamakura-bori carved and lacquered wood. The regional craft designation does not establish certification of this individual item.",
+        "sourceIds": [
+          "yogado-wb0030",
+          "yogado-kamakura-workshop"
+        ]
+      },
+      "size": "Approximately 5.5 cm overall length.",
+      "weightPerPieceGrams": null,
+      "findings": "Pin fitting. The metal is not specified.",
+      "fastening": "Brooch pin on the reverse.",
+      "priceAmount": 7500,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-19",
+      "taxNote": "Tax-inclusive Japanese online shop price at the recorded date.",
+      "availability": "listed",
+      "merchantIds": [
+        "yogado-official"
+      ],
+      "sourceIds": [
+        "yogado-wb0030",
+        "yogado-kamakura-workshop"
+      ],
+      "lastVerifiedAt": "2026-11-19",
+      "imageAssetIds": [],
+      "editorialSummary": "Two carved maple leaves create a sharper outline than a floral brooch. The pointed lobes make this an easy motif to see against a smooth jacket or coat.",
+      "whoItMaySuit": "Someone drawn to a botanical motif with clean, pointed edges.",
+      "whatToCheck": [
+        "The actual weight and the pin alloy are not listed. Check the pin against the density of your garment."
+      ]
+    },
+    {
+      "id": "yogado-kamakura-bori-camellia-pendant",
+      "slug": "yogado-kamakura-bori-camellia-pendant",
+      "locale": "en",
+      "title": "Yogado Kamakura-bori camellia pendant",
+      "originalTitle": "ペンダント 椿",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "kanagawa"
+      ],
+      "craftIds": [
+        "kamakura-bori"
+      ],
+      "materialIds": [
+        "wood",
+        "urushi-lacquer"
+      ],
+      "makerId": "yogado",
+      "craftClassification": {
+        "label": "Kamakura-bori carved and lacquered wood. The regional craft designation does not establish certification of this individual item.",
+        "sourceIds": [
+          "yogado-wp0006",
+          "yogado-kamakura-workshop"
+        ]
+      },
+      "size": "Top 5.5 × 5.5 cm. Chain 60 cm in total.",
+      "weightPerPieceGrams": null,
+      "findings": "Chain material and clasp type are not published.",
+      "fastening": null,
+      "priceAmount": 8500,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-19",
+      "taxNote": "Tax-inclusive Japanese online shop price at the recorded date.",
+      "availability": "listed",
+      "merchantIds": [
+        "yogado-official"
+      ],
+      "sourceIds": [
+        "yogado-wp0006",
+        "yogado-kamakura-workshop"
+      ],
+      "lastVerifiedAt": "2026-11-19",
+      "imageAssetIds": [],
+      "editorialSummary": "A carved and lacquered camellia makes a deliberate accent over a knit or blouse. A long chain brings the flower to the centre of the outfit.",
+      "whoItMaySuit": "Someone who wants a visible carved accent lower on the chest.",
+      "whatToCheck": [
+        "The seller lists the chain length but does not identify the chain metal, clasp or weight."
+      ]
+    },
+    {
+      "id": "dahliacyan-openwork-moonstone-earrings",
+      "slug": "dahliacyan-openwork-moonstone-earrings",
+      "locale": "en",
+      "title": "Dahliacyan orange-moonstone openwork earrings",
+      "originalTitle": "透かし彫りピアス【オレンジ ムーンストーン】",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "kanagawa"
+      ],
+      "craftIds": [
+        "dahliacyan-silver-openwork"
+      ],
+      "materialIds": [
+        "silver-950",
+        "orange-moonstone"
+      ],
+      "makerId": "dahliacyan",
+      "craftClassification": {
+        "label": "Contemporary openwork metalwork from the maker’s Kamakura atelier.",
+        "sourceIds": [
+          "dahliacyan-54925842",
+          "dahliacyan-kamakura-atelier"
+        ]
+      },
+      "size": "55 × 28 mm excluding hooks; stone 7 × 9 mm.",
+      "weightPerPieceGrams": null,
+      "findings": "The listing states silver 950 for the piece. Hook metal is not separately specified.",
+      "fastening": "Hook-type pierced earrings.",
+      "priceAmount": 33000,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-19",
+      "taxNote": "Tax-inclusive Japanese online shop price at the recorded date.",
+      "availability": "listed",
+      "merchantIds": [
+        "dahliacyan-official"
+      ],
+      "sourceIds": [
+        "dahliacyan-54925842",
+        "dahliacyan-kamakura-atelier"
+      ],
+      "lastVerifiedAt": "2026-11-19",
+      "imageAssetIds": [],
+      "editorialSummary": "Orange moonstone sits inside a long, pierced silver form. The saw-cut openings show through at the edge, which gives the pair a different profile from a solid drop.",
+      "whoItMaySuit": "Someone who wants a longer earring with a small warm stone accent.",
+      "whatToCheck": [
+        "The listed length excludes the hooks and no measured weight is published.",
+        "The maker describes a one-off piece. Confirm availability on the official page."
+      ]
+    },
+    {
+      "id": "dahliacyan-openwork-rhodochrosite-bracelet",
+      "slug": "dahliacyan-openwork-rhodochrosite-bracelet",
+      "locale": "en",
+      "title": "Dahliacyan rhodochrosite openwork bracelet",
+      "originalTitle": "透かし彫りのブレスレット（インカローズ）",
+      "publishStatus": "published",
+      "productType": [
+        "bracelet"
+      ],
+      "prefectureIds": [
+        "kanagawa"
+      ],
+      "craftIds": [
+        "dahliacyan-silver-openwork"
+      ],
+      "materialIds": [
+        "silver-950",
+        "rhodochrosite"
+      ],
+      "makerId": "dahliacyan",
+      "craftClassification": {
+        "label": "Contemporary openwork metalwork from the maker’s Kamakura atelier.",
+        "sourceIds": [
+          "dahliacyan-164454644",
+          "dahliacyan-kamakura-atelier"
+        ]
+      },
+      "size": "12–17 cm adjustable length; 17 cm total. Centre plate 16 × 22 mm; stone diameter 8 mm.",
+      "weightPerPieceGrams": null,
+      "findings": "Listed as silver 950 and natural rhodochrosite. Clasp alloy is not given separately.",
+      "fastening": "Fastens at any of the round links, according to the maker.",
+      "priceAmount": 47300,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-19",
+      "taxNote": "Tax-inclusive Japanese online shop price at the recorded date.",
+      "availability": "listed",
+      "merchantIds": [
+        "dahliacyan-official"
+      ],
+      "sourceIds": [
+        "dahliacyan-164454644",
+        "dahliacyan-kamakura-atelier"
+      ],
+      "lastVerifiedAt": "2026-11-19",
+      "imageAssetIds": [],
+      "editorialSummary": "A round rhodochrosite sits inside a lace-like silver plate. The adjustable round links give you more than one way to position the openwork on the wrist.",
+      "whoItMaySuit": "Someone who wants a stone accent on the wrist with adjustable placement.",
+      "whatToCheck": [
+        "Measure your wrist before choosing a link within the stated adjustment range.",
+        "The workshop describes this as a one-off piece. Confirm ordering or in-store availability."
       ]
     }
   ]

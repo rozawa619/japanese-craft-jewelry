@@ -7,6 +7,7 @@ const manifests=[
  {path:'docs/image-generation-v13.json',key:'images',required:true},
  {path:'docs/image-generation-v16.json',key:'images',required:true},
  {path:japaneseStylingManifestPath,key:'images',required:false},
+ {path:'docs/image-generation-styling-v25.json',key:'images',required:false},
 ];
 const publicImage=/^public\/images\/[a-z0-9-]+\.webp$/;
 
