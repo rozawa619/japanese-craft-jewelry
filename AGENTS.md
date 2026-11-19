@@ -6,7 +6,7 @@
 
 1. [START_HERE.md](START_HERE.md)を読む。次に[引継ぎ状態](docs/handoff-status.json)と[公開アプリの記録](docs/deployment-results.json)を確認する。
 2. `git status --short`と`git rev-parse HEAD`で作業対象・未保存変更を確認する。公開appのSHA、現在のGit HEAD、過去の納品ZIPを区別する。他者の変更を上書きしない。
-3. 最新の引継ぎ整備は[仕様024](specs/024-git-ai-handoff/spec.md)。直近のアプリ変更[023](specs/023-japanese-model-styling/spec.md)は完了済みで、22画像の再生成・差し替えを再開する指示ではない。次の実装対象はユーザーの今回の依頼から決める。
+3. 最新の引継ぎ整備は[仕様024](specs/024-git-ai-handoff/spec.md)。最新のアプリ変更は[025](specs/025-kanagawa-accessories/spec.md)。[023](specs/023-japanese-model-styling/spec.md)の画像差し替えは完了済み。次の実装対象はユーザーの今回の依頼から決める。
 4. [setup](docs/setup.md)でNode・pnpm・env・base・Chromeを揃え、[architecture](docs/architecture.md)と[editing-guide](docs/editing-guide.md)で変更する正本を特定する。`docs/`のJSONもbuild入力なので削除しない。
 5. [verification-guide](docs/verification-guide.md)から影響に合う検査を選び、仕様・実装・検証・引継ぎを対応させる。全旧版を通読したり過去の検査を全再実行したりすることは開始条件ではない。
 
@@ -14,7 +14,7 @@
 
 - 運営者表示はSORA。日本全国の工芸ジュエリーを選ぶJA/ENの紹介サイト。神奈川専用やiTOへ戻さない。
 - ブログ、Contact、販売・決済・発送の機能を作らず、不要な販売責任説明をUIへ再導入しない。未提供の氏名・住所・メール・経歴を作らない。
-- 最新公開アプリ0.18.0の基準は60公開/66登録商品・24県・34公開関連技法/全36・118AI画像。件数上限や各県同数という条件ではない。未掲載県・空の技法・draftの公開ページを作らない。
+- 最新公開アプリ0.19.0の基準は65公開/71登録商品・24県・36公開関連技法/全38・128AI画像。件数上限や各県同数という条件ではない。未掲載県・空の技法・draftの公開ページを作らない。
 - COCOON2、欠品18K、販売未確認の畠山2、hairpinはdraft。復帰には対象variantの現行購入根拠と派生参照の再確認が必要。403を閉店・売切れと判定しない。
 
 ## 正本と編集
@@ -44,7 +44,7 @@
 
 - 実提携は未申請・通常リンク。広告はprogram/item両承認、対象merchant、HTTPS・完全一致host・実確認日・localeを満たす共通resolverのみ。欠落・停止時は通常URLへ戻す。
 - AdSenseはoff。環境flag・架空ID・自作CMPで有効化しない。認定CMP、実ID、所有確認、同意/配信、CSP/Privacy、host適合は別の未完了作業。
-- 店舗Google Mapsはregistryの固定Share URLのみ。初回の明示許可後は日英・全店舗で30日自動表示し、未選択/拒否/期限切れではGoogle通信0、オフで全iframe停止。地図専用choice/version/savedAt/expiresAtのみ保存し、不正/旧版/期限切れ値は削除。保存不可はページ限り。複数タブ/戻る/再訪で撤回を尊重する。
+- 店舗Google Mapsはregistryの固定Share URLのみ。初回の明示許可後は日英の登録済み地図を30日自動表示し、未選択/拒否/期限切れではGoogle通信0、オフで全iframe停止。確認済みの埋め込みがない店舗は公式案内と外部地図を表示する。地図専用choice/version/savedAt/expiresAtのみ保存し、不正/旧版/期限切れ値は削除。保存不可はページ限り。複数タブ/戻る/再訪で撤回を尊重する。
 - MapsはPC330px/スマホ280pxの枠高を基本とし、Google帰属・fullscreen・公式/外部fallbackを保つ。maps-v17の地図設定と広告Privacy v14/広告CMPは別物である。
 - JSON-LD escape、HTTPS/host/locale gate、限定CSPを維持する。外部検査はsafe-outboundの各hop DNS/公開IP/接続pin/timeoutを使う。負例はmockにし、privateへ実接続しない。
 - Nodeは24.22.3以上のサポート中の修正版、pnpm11.25.0。PUBLIC_は公開値であり秘密を入れない。.env・秘密・依存実体・生成物をGit/ZIPへ混ぜない。

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-17T14:22:25.927Z",
+  "updatedAt": "2026-11-19T12:43:14.401Z",
   "entryPoint": "START_HERE.md",
   "project": {
     "name": "Japanese Craft Jewelry",
@@ -16,52 +16,62 @@
     "status": "ready",
     "basedOnDocumentationCommit": "b6ac11fcf589daa1b7b4786bc98702b36bfee482",
     "activeSiteImplementationTask": null,
-    "nextAction": "Read the current user request, then choose the source and checks. Completed023 is not pending work.",
+    "nextAction": "Read the current user request. See specification 025 for the latest Kanagawa release and use the regular verification commands for catalog changes.",
     "currentGitHeadCommand": "git rev-parse HEAD",
     "verificationReport": "docs/git-handoff-stage-results.json",
     "validatedSourceCommit": "537ee24ca021a9b61801108a4689e22936a3a08a",
-    "cleanRunnerVerification": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44100922768"
+    "cleanRunnerVerification": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44100922768",
+    "historicalVerification": {
+      "appVersion": "0.18.0",
+      "applicationCommit": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
+      "validatedSourceCommit": "537ee24ca021a9b61801108a4689e22936a3a08a",
+      "report": "docs/git-handoff-stage-results.json"
+    }
   },
   "production": {
-    "version": "0.18.0",
-    "applicationCommit": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
+    "version": "0.19.0",
+    "applicationCommit": "98d25ce1aa16dc82d4578626e9d06d451e172ed8",
     "actions": {
-      "id": 44089370227,
-      "headSha": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
+      "id": 44525574136,
+      "headSha": "98d25ce1aa16dc82d4578626e9d06d451e172ed8",
       "status": "completed",
       "conclusion": "success",
-      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44089370227",
-      "updatedAt": "2026-11-17T13:07:12Z",
-      "observedAt": "2026-11-17T13:07:30.738Z"
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44525574136",
+      "updatedAt": "2026-11-19T12:38:15Z",
+      "observedAt": "2026-11-19T12:43:14.401Z"
     },
     "urls": {
       "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
       "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
-      "places": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/"
+      "places": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/",
+      "kanagawaJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/kanagawa/",
+      "kanagawaEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/kanagawa/"
     },
     "report": "docs/deployment-results.json",
-    "verification": "docs/verification.md",
-    "outputManifest": "docs/japanese-models-stage-build-manifest.json"
+    "verification": "specs/025-kanagawa-accessories/validation.md",
+    "outputManifest": "docs/kanagawa-v25-build-manifest.json"
   },
   "snapshot": {
-    "publishedProducts": 60,
-    "catalogProducts": 66,
+    "publishedProducts": 65,
+    "catalogProducts": 71,
     "draftProducts": 6,
     "regions": 24,
-    "activeCrafts": 34,
-    "catalogCrafts": 36,
-    "sources": 293,
-    "stores": 33,
-    "productsWithStores": 53,
-    "onlineEvidence": 51,
+    "activeCrafts": 36,
+    "catalogCrafts": 38,
+    "sources": 304,
+    "stores": 35,
+    "productsWithStores": 58,
+    "onlineEvidence": 56,
     "retailCatalogEvidence": 9,
-    "publicImages": 118,
-    "stylingImages": 58,
-    "soloImages": 60,
-    "newProducts": 0,
+    "publicImages": 128,
+    "stylingImages": 63,
+    "soloImages": 65,
+    "newProducts": 5,
     "newRegions": 0,
-    "newImageFiles": 22,
-    "existingImageBytesRetained": 96
+    "newImageFiles": 10,
+    "existingImageBytesRetained": 118,
+    "kanagawaWorkshopLinked": 8,
+    "kanagawaRegionalRetailer": 4
   },
   "currentImagePolicy": {
     "fictionalNationalitySetting": "Japanese",
@@ -72,12 +82,16 @@
     "cuteAndElegant": true,
     "clearSkin": true,
     "visibleCaption": "AIイメージ / AI image",
-    "stylingImages": 58,
-    "standaloneImages": 60,
+    "stylingImages": 63,
+    "standaloneImages": 65,
     "replacedIn023": 22,
     "retainedIn023": 36,
     "retiredLocalImages": 32,
-    "manifest": "docs/image-generation-japanese-v23.json"
+    "manifest": "docs/image-generation-japanese-v23.json",
+    "latestGenerationRecords": [
+      "docs/image-generation-styling-v25.json",
+      "docs/image-generation-solo-v25.json"
+    ]
   },
   "setup": {
     "nodeMinimum": "24.22.3",
@@ -116,7 +130,8 @@
     "020-direct-region-map",
     "021-unified-region-photos",
     "022-compact-map-and-natural-hero",
-    "023-japanese-model-styling"
+    "023-japanese-model-styling",
+    "025-kanagawa-accessories"
   ],
   "historicalOnlyScripts": [
     {

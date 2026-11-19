@@ -1,6 +1,6 @@
 # 現在の状態と保守の引継ぎ
 
-2026-11-17。最初に[START_HERE](../START_HERE.md)と[AGENTS](../AGENTS.md)を読みます。[handoff-status.json](handoff-status.json)がGitから再開するための状態、[deployment-results.json](deployment-results.json)が公開アプリの実績です。Git HEADは取得時に確認し、公開appや過去の納品ZIPと混同しません。
+2026-11-19。最初に[START_HERE](../START_HERE.md)と[AGENTS](../AGENTS.md)を読みます。[handoff-status.json](handoff-status.json)がGitから再開するための状態、[deployment-results.json](deployment-results.json)が公開アプリの実績です。Git HEADは取得時に確認し、公開appや過去の納品ZIPと混同しません。
 
 ## 完了しているもの
 
@@ -9,10 +9,10 @@
 | サイト | Japanese Craft Jewelry。全国の工芸ジュエリーを選ぶJA/EN紹介メディア。運営者SORA |
 | 公開URL | [日本語](https://rozawa619.github.io/japanese-craft-jewelry/ja/)・[English](https://rozawa619.github.io/japanese-craft-jewelry/en/) |
 | リポジトリ | [rozawa619/japanese-craft-jewelry](https://github.com/rozawa619/japanese-craft-jewelry)・main |
-| 最新公開アプリ | 0.18.0 / 仕様023、app f2bb423f4c4cf476e449d8ec37837243f764cfee、[Actions44089370227](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44089370227) success |
+| 最新公開アプリ | 0.19.0 / 仕様025、app `98d25ce1aa16dc82d4578626e9d06d451e172ed8`、[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44525574136) success |
 | 最新の引継ぎ整備 | [仕様024](../specs/024-git-ai-handoff/spec.md)。Gitからの再開に必要な入口・資料・手順の整備で、アプリを再制作する作業ではない |
-| 内容 | 公開60/登録66商品、下書き6、掲載24県、公開関連技法34/全36、一次出典293、33店舗/53商品に店舗案内 |
-| 画像 | 人物58＋商品単体60＝118公開AI画像。人物は架空の日本人成人女性25〜33歳の生成設定 |
+| 内容 | 公開65/登録71商品、下書き6、掲載24県、公開関連技法36/全38、一次出典304、35店舗/58商品に店舗案内 |
+| 画像 | 人物63＋商品単体65のAI画像128枚。架空の日本人成人女性25〜33歳の生成設定 |
 | 完了した023の変更 | 22人物を新生成・採用・公開、既存36人物と単体60を保持。新22枚は25〜30歳、かわいい系11/綺麗な系統11 |
 | 退役画像 | 旧10＋023の旧22＝32画像を配信/新Git tree/source ZIPから除外。旧原本と生成記録は保持 |
 | 収益化 | AdSense off、実提携未申請、商品リンクは通常URL。広告resolverとPrivacyの土台は実装済み |
@@ -42,6 +42,10 @@
 - 店舗Mapsは初回明示許可後30日自動表示、オフで全停止。未選択/拒否/期限切れはGoogle通信0。Google帰属・外部fallback・最小Storageを保ちます。地図設定maps-v17と広告Privacy v14/広告CMPは別です。
 
 ## 公開版の検証記録
+
+[0.19.0の検証](../specs/025-kanagawa-accessories/validation.md)では、公開の日英神奈川特集、ブローチの絞り込み、CIの149件の単体テストを確認しました。
+
+0.18.0の出力ハッシュと023専用の検査は、[024で検証したコミット](https://github.com/rozawa619/japanese-craft-jewelry/commit/537ee24ca021a9b61801108a4689e22936a3a08a)を対象に再現できます。現行版の検証コマンドは[検証ガイド](verification-guide.md)を参照してください。
 
 0.18.0は公開実URLでHero77・共通写真37・mobile92・全商品browser146・Sources328・公開補足24が成功しています。browserは日英120商品ページ/58画像decodeと旧22画像URLの404、公開補足は328canonical/118画像のlocal SHA一致を確認しました。詳細は[verification](verification.md)と[公開集約](japanese-models-stage-hosted-summary.json)を正本にします。
 

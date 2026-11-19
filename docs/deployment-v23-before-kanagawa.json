@@ -1,0 +1,628 @@
+{
+  "version": "0.18.0",
+  "specification": "023-japanese-model-styling",
+  "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
+  "branch": "main",
+  "status": "deployed_and_verified",
+  "recordedAt": "2026-11-17T13:24:29.069Z",
+  "applicationCommit": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
+  "actions": {
+    "id": 44089370227,
+    "headSha": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44089370227",
+    "updatedAt": "2026-11-17T13:07:12Z",
+    "observedAt": "2026-11-17T13:07:30.738Z"
+  },
+  "previousDeployedVersion": "0.17.3",
+  "previousDeployedApplicationCommit": "ef8ae160e7fc7d2b41cdce1063094313b719df6e",
+  "previousRecord": "docs/deployment-v20-before-japanese-models.json",
+  "publicUrls": {
+    "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+    "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
+    "places": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/"
+  },
+  "content": {
+    "publishedProducts": 60,
+    "catalogProducts": 66,
+    "draftProducts": 6,
+    "regions": 24,
+    "activeCrafts": 34,
+    "catalogCrafts": 36,
+    "sources": 293,
+    "stores": 33,
+    "productsWithStores": 53,
+    "onlineEvidence": 51,
+    "retailCatalogEvidence": 9,
+    "publicImages": 118,
+    "stylingImages": 58,
+    "soloImages": 60,
+    "newProducts": 0,
+    "newRegions": 0,
+    "newImageFiles": 22,
+    "existingImageBytesRetained": 96
+  },
+  "features": {
+    "regionalPhotos": {
+      "groups": [
+        "TOP10",
+        "DISCOVER3"
+      ],
+      "surfaces": [
+        "home",
+        "objects",
+        "places"
+      ],
+      "locales": [
+        "ja",
+        "en"
+      ],
+      "desktopMaximum": [
+        300,
+        200
+      ],
+      "mobileMaximum": [
+        222,
+        148
+      ],
+      "naturalRatio": "3:2",
+      "fit": "contain; no vertical letterbox",
+      "rowPadding": {
+        "desktop": 18,
+        "mobile": 15
+      },
+      "desktopRowMinHeight": 264
+    },
+    "directoryMap": {
+      "outerMaxWidth": 1040,
+      "desktopPadding": 24,
+      "mainlandMaxWidth": 480,
+      "mainlandMaxHeight": 540,
+      "okinawaInset": {
+        "mobileMin": 80,
+        "desktop": 144
+      },
+      "uniqueShapes": 47,
+      "uniqueControls": 24,
+      "navigation": "Native href on all shapes/inset/labels; click/tap/Enter directly opens regional products",
+      "zoom": [
+        1,
+        1.5,
+        2,
+        3
+      ]
+    },
+    "googleMaps": "Explicit choice and30day functional preference unchanged",
+    "hero": {
+      "imageHeight": "auto from original image ratio; no crop or artificial letterbox",
+      "prefectureShapes": 47,
+      "selectableRegions": 24,
+      "okinawaInset": {
+        "mobile": 80,
+        "desktop": 200
+      },
+      "explicitSelection": "image/product/price switch; region query/locale/history retained"
+    },
+    "stylingModels": {
+      "fictionalNationalitySetting": "Japanese",
+      "recordedAdultAgeRange": [
+        25,
+        33
+      ],
+      "newAgeRange": [
+        25,
+        30
+      ],
+      "newImages": 22,
+      "retainedImages": 36,
+      "cuteNewImages": 11,
+      "elegantNewImages": 11,
+      "manifest": "docs/image-generation-japanese-v23.json",
+      "visualReview": "docs/japanese-models-stage-visual-review.json",
+      "nationalityInferredFromAppearance": false,
+      "realWearOrExactSkuClaim": false
+    }
+  },
+  "localVerification": {
+    "static": {
+      "report": "docs/japanese-models-stage-static-results.json",
+      "summary": {
+        "status": "passed"
+      }
+    },
+    "models": {
+      "report": "docs/japanese-models-stage-results.json",
+      "summary": {
+        "checks": 63,
+        "passed": 63,
+        "failed": 0,
+        "publishedProducts": 60,
+        "uniqueImages": 58,
+        "originalPngsChecked": 22,
+        "distChecked": true
+      }
+    },
+    "hero": {
+      "report": "docs/japanese-models-stage-hero-results.json",
+      "summary": {
+        "checks": 77,
+        "passed": 77,
+        "failed": 0,
+        "locales": 2,
+        "viewports": 4,
+        "regions": 24,
+        "selections": 172,
+        "modelSwitches": 124,
+        "firstFoldScreens": 8,
+        "enlargedGeometryScreens": 8,
+        "uniquePrefectureShapes": 47,
+        "okinawaInset": true,
+        "naturalImagePaintChecks": 174,
+        "maxVerticalLetterbox": 0,
+        "maxNaturalRatioError": 0.010416666666685614,
+        "maxContainerBlank": 0,
+        "axeScreens": 4,
+        "axeViolations": 0,
+        "screenshots": 8,
+        "pageErrors": 0,
+        "consoleErrors": 0,
+        "externalRequests": 0,
+        "sourceInputsUnchanged": true
+      }
+    },
+    "photos": {
+      "report": "docs/japanese-models-stage-photos-results.json",
+      "summary": {
+        "checks": 37,
+        "passed": 37,
+        "failed": 0,
+        "locales": 2,
+        "surfaces": 3,
+        "viewportWidths": [
+          320,
+          390,
+          768,
+          1024,
+          1440
+        ],
+        "scenes": 30,
+        "imageChecks": 390,
+        "imagesPerScene": 13,
+        "focusChecks": 120,
+        "axeScreens": 6,
+        "axeViolations": 0,
+        "screenshots": 8,
+        "pageErrors": 0,
+        "consoleErrors": 0,
+        "externalRequests": 0,
+        "sourceInputsUnchanged": true
+      }
+    },
+    "mobile": {
+      "report": "docs/japanese-models-stage-mobile-results.json",
+      "summary": {
+        "checks": 92,
+        "passed": 92,
+        "failed": 0,
+        "viewports": 7,
+        "locales": 2,
+        "representativeRoutes": 6,
+        "sourceControls": 120,
+        "typeImageInstances": 112,
+        "axeScreens": 10,
+        "axeViolations": 0,
+        "liveMaps": 2,
+        "screenshots": 16
+      }
+    },
+    "browser": {
+      "report": "docs/japanese-models-stage-browser-results.json",
+      "summary": {
+        "checks": 124,
+        "passed": 124,
+        "failed": 0,
+        "publishedProducts": 60,
+        "productDetailNavigations": 120,
+        "newReplacementNavigations": 44,
+        "locales": [
+          "ja",
+          "en"
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "uniqueImagesDecoded": 58,
+        "screenshots": 4,
+        "pageErrors": 0,
+        "consoleErrors": 0,
+        "externalRequests": 0,
+        "hostedRetired404Checks": 0,
+        "localRetiredUrlsSkipped": 22
+      }
+    },
+    "sources": {
+      "report": "docs/japanese-models-stage-sources-results.json",
+      "summary": {
+        "checks": 328,
+        "passed": 328,
+        "failed": 0,
+        "htmlSha256Comparisons": 328,
+        "productPages": 120,
+        "sourceDisclosures": 448,
+        "sourceRecords": 1580
+      }
+    },
+    "seo": {
+      "report": "docs/japanese-models-stage-seo-results.json",
+      "summary": {
+        "status": "passed",
+        "checks": 7
+      }
+    },
+    "preservation": {
+      "report": "docs/japanese-models-stage-preservation-results.json",
+      "summary": {
+        "checks": 9,
+        "passed": 9,
+        "failed": 0,
+        "sourceInputs": 495,
+        "authorizedOldImages": 22,
+        "expectedNewImages": 22,
+        "buildFiles": 471
+      }
+    },
+    "editorialImages": {
+      "report": "docs/japanese-models-stage-editorial-images-results.json",
+      "summary": {
+        "checks": 59,
+        "passed": 59,
+        "failed": 0,
+        "publishedProducts": 60,
+        "registeredProducts": 60,
+        "uniqueImages": 58,
+        "baselineFilesPreserved": 25,
+        "retiredFilesExcluded": 32,
+        "totalImageBytes": 4807666,
+        "warnings": 0
+      }
+    },
+    "detailImages": {
+      "report": "docs/japanese-models-stage-detail-images-results.json",
+      "summary": {
+        "checks": 61,
+        "passed": 61,
+        "failed": 0,
+        "products": 60,
+        "uniqueFiles": 60,
+        "bytes": 2937308
+      }
+    },
+    "privacy": {
+      "report": "docs/japanese-models-stage-privacy-results.json",
+      "summary": {
+        "checks": 4,
+        "passed": 4,
+        "failed": 0,
+        "htmlPages": 344,
+        "mode": "off"
+      }
+    },
+    "documentation": {
+      "report": "docs/japanese-models-stage-docs-results.json",
+      "summary": {
+        "files": 54,
+        "localLinks": 562,
+        "anchors": 6,
+        "externalLinksUnchecked": 105,
+        "pnpmReferences": 96,
+        "nodeScriptReferences": 37,
+        "errors": 0
+      }
+    },
+    "finalTypes": {
+      "report": "docs/japanese-models-stage-final-type-results.json",
+      "summary": {
+        "typeFiles": 151,
+        "errors": 0,
+        "warnings": 0,
+        "hints": 0
+      }
+    }
+  },
+  "reusedFunctionalCoverage": {
+    "directoryMap": {
+      "report": "docs/compact-layout-stage-hosted-map-results.json",
+      "application": "ef8ae160e7fc7d2b41cdce1063094313b719df6e",
+      "scope": "Unchanged map code, geometry, CSS, settings and client scripts; current image swapping is tested in023 Hero/mobile."
+    },
+    "proof": "docs/japanese-models-stage-preservation-results.json"
+  },
+  "buildManifest": "docs/japanese-models-stage-build-manifest.json",
+  "publicVerification": {
+    "version": "0.18.0",
+    "checkedAt": "2026-11-17T13:24:29.068Z",
+    "status": "passed",
+    "applicationCommit": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
+    "actions": {
+      "id": 44089370227,
+      "headSha": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44089370227",
+      "updatedAt": "2026-11-17T13:07:12Z",
+      "observedAt": "2026-11-17T13:07:30.738Z"
+    },
+    "suites": {
+      "hero": {
+        "report": "docs/japanese-models-stage-hosted-hero-results.json",
+        "summary": {
+          "checks": 77,
+          "passed": 77,
+          "failed": 0,
+          "locales": 2,
+          "viewports": 4,
+          "regions": 24,
+          "selections": 172,
+          "modelSwitches": 124,
+          "firstFoldScreens": 8,
+          "enlargedGeometryScreens": 8,
+          "uniquePrefectureShapes": 47,
+          "okinawaInset": true,
+          "naturalImagePaintChecks": 174,
+          "maxVerticalLetterbox": 0,
+          "maxNaturalRatioError": 0.010416666666685614,
+          "maxContainerBlank": 0,
+          "axeScreens": 4,
+          "axeViolations": 0,
+          "screenshots": 8,
+          "pageErrors": 0,
+          "consoleErrors": 0,
+          "externalRequests": 0,
+          "sourceInputsUnchanged": true
+        }
+      },
+      "photos": {
+        "report": "docs/japanese-models-stage-hosted-photos-results.json",
+        "summary": {
+          "checks": 37,
+          "passed": 37,
+          "failed": 0,
+          "locales": 2,
+          "surfaces": 3,
+          "viewportWidths": [
+            320,
+            390,
+            768,
+            1024,
+            1440
+          ],
+          "scenes": 30,
+          "imageChecks": 390,
+          "imagesPerScene": 13,
+          "focusChecks": 120,
+          "axeScreens": 6,
+          "axeViolations": 0,
+          "screenshots": 8,
+          "pageErrors": 0,
+          "consoleErrors": 0,
+          "externalRequests": 0,
+          "sourceInputsUnchanged": true
+        }
+      },
+      "mobile": {
+        "report": "docs/japanese-models-stage-hosted-mobile-results.json",
+        "summary": {
+          "checks": 92,
+          "passed": 92,
+          "failed": 0,
+          "viewports": 7,
+          "locales": 2,
+          "representativeRoutes": 6,
+          "sourceControls": 120,
+          "typeImageInstances": 112,
+          "axeScreens": 10,
+          "axeViolations": 0,
+          "liveMaps": 2,
+          "screenshots": 16
+        }
+      },
+      "browser": {
+        "report": "docs/japanese-models-stage-hosted-browser-results.json",
+        "summary": {
+          "checks": 146,
+          "passed": 146,
+          "failed": 0,
+          "publishedProducts": 60,
+          "productDetailNavigations": 120,
+          "newReplacementNavigations": 44,
+          "locales": [
+            "ja",
+            "en"
+          ],
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "uniqueImagesDecoded": 58,
+          "screenshots": 4,
+          "pageErrors": 0,
+          "consoleErrors": 0,
+          "externalRequests": 0,
+          "hostedRetired404Checks": 22,
+          "localRetiredUrlsSkipped": 0
+        }
+      },
+      "sources": {
+        "report": "docs/japanese-models-stage-hosted-sources-results.json",
+        "summary": {
+          "checks": 328,
+          "passed": 328,
+          "failed": 0,
+          "htmlSha256Comparisons": 328,
+          "productPages": 120,
+          "sourceDisclosures": 448,
+          "sourceRecords": 1580
+        }
+      },
+      "release": {
+        "report": "docs/japanese-models-stage-hosted-release-results.json",
+        "summary": {
+          "checks": 24,
+          "passed": 24,
+          "failed": 0,
+          "canonicalUrls": 328,
+          "uniqueImages": 118,
+          "pageErrors": 0,
+          "consoleErrors": 0
+        }
+      }
+    },
+    "outputIntegrity": "docs/japanese-models-stage-final-output-integrity.json",
+    "scope": "Live0.18.0 after successful Actions.328canonical raw HTML and118current public images match local bytes; old22 image URLs404. Japanese-fictional intent audited through exact generation records, not inferred identity."
+  },
+  "security": {
+    "dependencyAudit": {
+      "vulnerabilities": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "dependencies": 184,
+      "devDependencies": 79,
+      "optionalDependencies": 85,
+      "totalDependencies": 348
+    },
+    "compatibleHostHeaderPreparation": "public/_headers",
+    "migrationHeaderSimulation": "docs/discovery-map-stage-migration-headers-results.json",
+    "currentGitHubHeaderApplication": "not-applied; must observe actual headers separately",
+    "hostAccountChangesPerformed": false,
+    "limits": "Known dependency advisories and tested app boundaries only; no all-vulnerability or physical-device certification.",
+    "actualHostedHeaders": "docs/discovery-map-stage-hosted-security-headers-results.json",
+    "scope": "Image replacement only: dependency, UI, maps/privacy/ads/security source and compiled scripts remain unchanged; current type/unit/build/CSP/link/image/browser checks. Prior legal/security observations remain dated evidence."
+  },
+  "legal": {
+    "review": "docs/legal-review-v17.md",
+    "evidence": "docs/legal-review-v17.json",
+    "egovFollowup": "docs/legal-egov-followup-v17.json",
+    "sourceRecords": 23,
+    "judgments": 13,
+    "remainingAudit": "docs/remaining-task-audit-v17.md",
+    "commercialHostPreparation": "docs/commercial-host-migration-v17.md",
+    "allLegalEligibilityCertified": false
+  },
+  "advertising": {
+    "adsense": "off",
+    "affiliateLinks": "not_applied;ordinary",
+    "certifiedCmp": "not-configured",
+    "googleAccount": "not-configured",
+    "applicationsSubmitted": false
+  },
+  "documentationRevision": "023",
+  "documentationVerification": {
+    "report": "docs/japanese-models-stage-docs-results.json",
+    "scope": "54 current maintainer/spec documents; paths/headings/commands checked; external URLs counted without fetching.",
+    "summary": {
+      "files": 54,
+      "localLinks": 604,
+      "anchors": 6,
+      "externalLinksUnchecked": 117,
+      "pnpmReferences": 98,
+      "nodeScriptReferences": 39,
+      "errors": 0
+    }
+  },
+  "sourceDelivery": {
+    "status": "verified",
+    "revision": "models-023",
+    "source": "../japanese-craft-jewelry-delivery/source",
+    "zip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-source.zip",
+    "versionedZip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-source-0.18.0-models-023.zip",
+    "proof": "../japanese-craft-jewelry-delivery/package-verification-0.18.0-models-023.json",
+    "zipHashLocation": "External revisioned proof; no self-reference inside ZIP",
+    "newImageGeneration": true,
+    "originals": {
+      "version": "0.18.0",
+      "checkedAt": "2026-11-17T12:56:41.3706922Z",
+      "status": "passed",
+      "zip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-originals-0.18.0.zip",
+      "fileCount": 47,
+      "pngCount": 22,
+      "referenceWebps": 22,
+      "acceptedPngs": 22,
+      "rejectedPngs": 0,
+      "sourceAndZipFileSetsMatch": true,
+      "allFileHashesMatch": true,
+      "everyFileSha256Checks": 47,
+      "bytes": 44104939,
+      "sha256": "20422809c6f97d93c50176e84abd5bc81161a7d344a8620c9d40050d4225e942",
+      "scope": "Unchanged original PNG outputs, prior project-AI references, prompts and visual review. Companion source ZIP is independently buildable.",
+      "proof": "../japanese-craft-jewelry-delivery/originals-verification-0.18.0.json"
+    },
+    "previousOriginals": {
+      "status": "verified",
+      "zip": "../japanese-craft-jewelry-delivery/japanese-craft-jewelry-originals-0.16.0.zip",
+      "proof": "../japanese-craft-jewelry-delivery/originals-verification-0.16.0.json",
+      "fileCount": 26,
+      "pngCount": 23,
+      "acceptedPngs": 20,
+      "rejectedPngs": 3,
+      "bytes": 35561799,
+      "sha256": "383cf02e99cdf06d936118e9d071f35df68a1b99191de31442b7f450de386254",
+      "everyFileSha256Checks": 26,
+      "allFileHashesMatch": true,
+      "recheckedUnchangedAt": "2026-11-17T13:26:59.474Z"
+    },
+    "fileCount": 1198,
+    "everyRepositoryFileSha256Checks": 1198,
+    "everyFileSha256Checks": 1198,
+    "repositoryAndExportFileSetsMatch": true,
+    "sourceAndZipFileSetsMatch": true,
+    "allFileHashesMatch": true,
+    "publicImages": 118,
+    "publishedProducts": 60,
+    "retiredImagesExcluded": 32,
+    "publicOutputUnchangedSinceFinalFocusedAndHostedChecks": true,
+    "finalPass": "Completion notes included by final export; all repository/export/ZIP file sets and SHA checked again. ZIP hash stays in external proof.",
+    "gitHubCopies": {
+      "release": "https://github.com/rozawa619/japanese-craft-jewelry/releases/tag/ai-handoff-2026-11-17",
+      "sourceAssetId": "source-models-023",
+      "proof": "docs/delivery-proofs/package-verification-0.18.0-models-023.json",
+      "note": "Historical1198-file models-023 snapshot; current editable source is main, which includes later handoff docs."
+    }
+  },
+  "limits": [
+    "No physical iOS/Safari or all-law/all-image-rights certification.",
+    "Commercial-host eligibility, real applicant/privacy rights-contact information, accounts/contracts/CMP and account security settings depend on real information or authority.",
+    "No ad application, contract, fees, account-setting, DNS or host migration performed.",
+    "No search ranking/traffic, future stock or AdSense approval guarantee."
+  ],
+  "qaTimingCorrection": {
+    "initialReport": "docs/japanese-models-stage-hosted-mobile-initial-results.json",
+    "diagnostic": "docs/japanese-models-stage-hosted-mobile-timing-diagnostic.json",
+    "finalReport": "docs/japanese-models-stage-hosted-mobile-results.json",
+    "cause": "A fixed75ms assertion raced the existing scroll-to-requestAnimationFrame CTA update; actual predicates were true before hidden was updated. Reproduced once in10 targeted attempts; visible after waiting without interaction.",
+    "change": "QA only: wait for actual scroll predicates and rendered visibility through animation-frame polling; all visibility,44px,geometry/source assertions retained. No app/CSS/client bundle change.",
+    "finalTypeReport": "docs/japanese-models-stage-final-type-results.json"
+  },
+  "gitHandoff": {
+    "specification": "024-git-ai-handoff",
+    "entryPoint": "START_HERE.md",
+    "statusFile": "docs/handoff-status.json",
+    "assetManifest": "docs/handoff-assets.json",
+    "githubRelease": "https://github.com/rozawa619/japanese-craft-jewelry/releases/tag/ai-handoff-2026-11-17",
+    "verification": "docs/git-handoff-stage-results.json",
+    "productionAppUnchanged": true,
+    "status": "ready",
+    "cleanRunnerVerification": {
+      "id": 44100922768,
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44100922768",
+      "headSha": "537ee24ca021a9b61801108a4689e22936a3a08a",
+      "conclusion": "success",
+      "productionDeploymentPerformed": false
+    }
+  }
+}

@@ -19,3 +19,4 @@
 - [出典データ](../../docs/research/sources.json)
 - [購入根拠](../../src/data/purchase-evidence.json)
 - [商品データ](../../src/data/catalog.json)
+- [公開後の検証](validation.md)
