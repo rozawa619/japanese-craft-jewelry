@@ -122,7 +122,8 @@ async function compactGeometry(map,width,lang){
  });
  assert.ok(metrics.inset.width>=80&&metrics.inset.height>=44,'Okinawa has a large whole-inset target.');assert.equal(metrics.coveredMainlandSamples,0,'The separate Okinawa inset must not cover mainland prefectures.');assert.ok(metrics.sampledMainlandPoints>500);assert.equal(metrics.localListInitiallyClosed,true);
  if(width===1440){assert.ok(metrics.frame.width<=1041,'The whole frame is narrower than the page.');assert.ok(metrics.viewport.width<=481&&metrics.viewport.height<=541,'The mainland uses the compact480x540 maximum.');assert.ok(metrics.viewport.height>=440,'Compact geometry remains large enough to choose prefectures.');}
- report.geometryScenes++;return{...metrics,originalPaths:47,uniqueControls:24,relocatedOkinawaLabel:label};
+ const uniqueControls=await map.locator('[data-map-choice]').evaluateAll(nodes=>new Set(nodes.map(node=>node.getAttribute('data-map-choice'))).size);
+ report.geometryScenes++;return{...metrics,originalPaths:47,uniqueControls,relocatedOkinawaLabel:label};
 }
 try{
  await check('Validated local geography has47 distinct safe prefecture paths',async()=>{assert.equal(geometry.prefectures.length,47);assert.equal(new Set(geometry.prefectures.map(p=>p.id)).size,47);assert.deepEqual(geometry.prefectures.map(p=>p.code),Array.from({length:47},(_,i)=>'JP-'+String(i+1).padStart(2,'0')));for(const p of geometry.prefectures)assert.match(p.d,/^[MmLlHhVvCcSsQqTtAaZz0-9eE,.\s+-]+$/);assert.equal(geometry.source.license,'CC0-1.0');return {paths:47,license:geometry.source.license};});

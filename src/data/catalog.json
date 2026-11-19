@@ -117,6 +117,26 @@
       "id": "shimane",
       "name": "Shimane",
       "description": "Izumo-style magatama jewelry connected to a Shimane maker; stone origins are recorded separately."
+    },
+    {
+      "id": "aomori",
+      "name": "Aomori",
+      "description": "Glossy lacquer from an Aomori City workshop, shaped into angular earrings."
+    },
+    {
+      "id": "iwate",
+      "name": "Iwate",
+      "description": "Amber mined near Kuji and worked there into jewelry."
+    },
+    {
+      "id": "yamagata",
+      "name": "Yamagata",
+      "description": "Safflower-dyed silk from Yonezawa, finished as jewelry by Oriori in Yuza."
+    },
+    {
+      "id": "oita",
+      "name": "Oita",
+      "description": "Beppu bamboo craft expressed as a curved non-pierced earring."
     }
   ],
   "crafts": [
@@ -476,6 +496,46 @@
         "dahliacyan-164454644",
         "dahliacyan-kamakura-atelier"
       ]
+    },
+    {
+      "id": "tsugaru-nuri",
+      "name": "Tsugaru-nuri lacquerwork",
+      "description": "A lacquer tradition of Aomori in which layers are worked and polished to bring out surface patterns.",
+      "sourceIds": [
+        "aomori-prefecture-tsugaru-nuri",
+        "tsugarunuri-cooperative",
+        "fukushi-blue-triangle-102338108"
+      ]
+    },
+    {
+      "id": "kuji-amber-working",
+      "name": "Kuji amber working",
+      "description": "Local processing of fossil resin by sorting, shaping and polishing amber in Kuji.",
+      "sourceIds": [
+        "kuji-amber-studio",
+        "kuji-city-amber",
+        "kuji-amber-20260906ep-13"
+      ]
+    },
+    {
+      "id": "yamagata-safflower-dyeing",
+      "name": "Yamagata safflower dyeing",
+      "description": "A regional dyeing tradition using safflower petals, carried forward for silk by makers in Yonezawa.",
+      "sourceIds": [
+        "maff-yamagata-benibana",
+        "yonezawa-nitta-company",
+        "juyoukan-benibana-115161363"
+      ]
+    },
+    {
+      "id": "beppu-bamboo-craft",
+      "name": "Beppu bamboo craft",
+      "description": "The fine bamboo work of Beppu, where strip preparation and shaping underpin a long local craft tradition.",
+      "sourceIds": [
+        "beppu-bamboo-centre",
+        "beppu-bamboo-cooperative",
+        "cotake-taoyame-9101341"
+      ]
     }
   ],
   "materials": [
@@ -748,6 +808,14 @@
     {
       "id": "rhodochrosite",
       "name": "Rhodochrosite"
+    },
+    {
+      "id": "amber",
+      "name": "Amber"
+    },
+    {
+      "id": "bamboo",
+      "name": "Bamboo"
     }
   ],
   "productTypes": [
@@ -1274,6 +1342,50 @@
       "url": "https://www.dahliacyan.com/",
       "sourceIds": [
         "dahliacyan-kamakura-atelier"
+      ]
+    },
+    {
+      "id": "fukushi-tsugaru-nuri",
+      "name": "Fukushi Tsugaru-nuri Workshop",
+      "location": "Aomori City, Aomori, Japan",
+      "productionNote": "The workshop makes and sells Tsugaru-nuri lacquerware in Aomori City.",
+      "url": "https://294koubou.base.shop/about",
+      "sourceIds": [
+        "fukushi-aomori-workshop"
+      ]
+    },
+    {
+      "id": "kuji-kohaku",
+      "name": "Kuji Kohaku",
+      "location": "Kokuji, Kuji, Iwate, Japan",
+      "productionNote": "Kuji Kohaku mines Kuji amber and documents in-house selection, shaping and polishing. The source listing states the amber used in this piece was mined in Kuji.",
+      "url": "https://www.kuji.co.jp/",
+      "sourceIds": [
+        "kuji-amber-studio",
+        "kuji-amber-20260906ep-13"
+      ]
+    },
+    {
+      "id": "oriori-yuza",
+      "name": "Oriori",
+      "location": "Yuza, Yamagata, Japan",
+      "productionNote": "The retailer identifies Oriori in Yuza as the maker of the earrings and Yonezawa Nitta as the dyer of the silk thread.",
+      "url": "https://oriori-japan.com/",
+      "sourceIds": [
+        "juyoukan-benibana-115161363",
+        "yonezawa-nitta-company",
+        "oriori-yuza-company"
+      ]
+    },
+    {
+      "id": "cotake-beppu",
+      "name": "cotake",
+      "location": "Yumigahama, Beppu, Oita, Japan",
+      "productionNote": "The Beppu bamboo shop and workshop is led by craftsperson Mikiko Sato. Its shop lists Taoyame among its bamboo accessories.",
+      "url": "https://www.cotake-beppu.com/",
+      "sourceIds": [
+        "cotake-beppu-workshop",
+        "cotake-taoyame-9101341"
       ]
     }
   ],
@@ -2016,6 +2128,82 @@
       "returns": "The seller generally accepts returns for defects only and states a seven-day limit after delivery. Check its current terms.",
       "sourceIds": [
         "dahliacyan-retail-terms"
+      ]
+    },
+    {
+      "id": "fukushi-tsugaru-official",
+      "name": "Fukushi Workshop online shop",
+      "url": "https://294koubou.base.shop/",
+      "language": "Japanese product descriptions",
+      "shipping": {
+        "status": "unknown",
+        "summary": "The item page lists Japan delivery. Confirm international ordering for your address with the seller.",
+        "countries": null,
+        "sourceIds": [
+          "fukushi-blue-triangle-102338108",
+          "fukushi-store-terms"
+        ]
+      },
+      "returns": "The seller generally accepts returns for defects only. See the current shop terms.",
+      "sourceIds": [
+        "fukushi-store-terms"
+      ]
+    },
+    {
+      "id": "kuji-kohaku-official",
+      "name": "Kuji Kohaku online shop",
+      "url": "https://www.kujikohaku.net/",
+      "language": "Japanese product descriptions",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Check the seller's delivery terms for your address. Direct international delivery for this item is unconfirmed.",
+        "countries": null,
+        "sourceIds": [
+          "kuji-amber-20260906ep-13",
+          "kuji-amber-online-terms"
+        ]
+      },
+      "returns": "The shop asks buyers to contact it within seven days of receipt for a customer-requested return. Conditions and shipping charges are listed in its terms.",
+      "sourceIds": [
+        "kuji-amber-online-terms"
+      ]
+    },
+    {
+      "id": "juyoukan-official",
+      "name": "JUYOUKAN online shop",
+      "url": "https://shop.juyoukan.jp/",
+      "language": "Japanese product descriptions",
+      "shipping": {
+        "status": "unknown",
+        "summary": "International ordering appears for some storefront locales. Check whether the seller serves your destination and the total cost before ordering.",
+        "countries": null,
+        "sourceIds": [
+          "juyoukan-benibana-115161363",
+          "juyoukan-online-terms"
+        ]
+      },
+      "returns": "The retailer generally accepts returns for defects only. Check the current terms before ordering.",
+      "sourceIds": [
+        "juyoukan-online-terms"
+      ]
+    },
+    {
+      "id": "cotake-beppu-official",
+      "name": "cotake online shop",
+      "url": "https://cotake.thebase.in/",
+      "language": "Japanese product descriptions",
+      "shipping": {
+        "status": "unknown",
+        "summary": "The item page offers an international ordering option. Check eligible destinations and fees at the shop before purchase.",
+        "countries": null,
+        "sourceIds": [
+          "cotake-taoyame-9101341",
+          "cotake-online-terms"
+        ]
+      },
+      "returns": "The shop generally accepts returns for defects only. Check the retailer's current terms, including any international order conditions.",
+      "sourceIds": [
+        "cotake-online-terms"
       ]
     }
   ],
@@ -2862,6 +3050,46 @@
       "merchantId": "dahliacyan-official",
       "programId": null,
       "officialProductUrl": "https://dahliacyan.thebase.in/items/164454644",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "fukushi-tsugaru-blue-triangle-clip-on-earrings-official",
+      "productId": "fukushi-tsugaru-blue-triangle-clip-on-earrings",
+      "merchantId": "fukushi-tsugaru-official",
+      "programId": null,
+      "officialProductUrl": "https://294koubou.base.shop/items/102338108",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "kuji-amber-dark-teardrop-pierced-earrings-official",
+      "productId": "kuji-amber-dark-teardrop-pierced-earrings",
+      "merchantId": "kuji-kohaku-official",
+      "programId": null,
+      "officialProductUrl": "https://www.kujikohaku.net/product/6139",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "oriori-benibana-crimson-silk-pierced-earrings-official",
+      "productId": "oriori-benibana-crimson-silk-pierced-earrings",
+      "merchantId": "juyoukan-official",
+      "programId": null,
+      "officialProductUrl": "https://shop.juyoukan.jp/items/115161363",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "cotake-taoyame-white-bamboo-clip-on-earrings-official",
+      "productId": "cotake-taoyame-white-bamboo-clip-on-earrings",
+      "merchantId": "cotake-beppu-official",
+      "programId": null,
+      "officialProductUrl": "https://cotake.thebase.in/items/9101341",
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
       "affiliateLinkVerifiedAt": null
@@ -6868,6 +7096,233 @@
       "whatToCheck": [
         "Measure your wrist before choosing a link within the stated adjustment range.",
         "The workshop describes this as a one-off piece. Confirm ordering or in-store availability."
+      ]
+    },
+    {
+      "id": "fukushi-tsugaru-blue-triangle-clip-on-earrings",
+      "slug": "fukushi-tsugaru-blue-triangle-clip-on-earrings",
+      "locale": "en",
+      "title": "Fukushi Tsugaru-nuri blue triangle clip-on earrings",
+      "originalTitle": "津軽塗三角イヤリング(青)",
+      "publishStatus": "published",
+      "productType": [
+        "clip-on-earrings"
+      ],
+      "prefectureIds": [
+        "aomori"
+      ],
+      "craftIds": [
+        "tsugaru-nuri"
+      ],
+      "materialIds": [
+        "urushi-lacquer"
+      ],
+      "makerId": "fukushi-tsugaru-nuri",
+      "craftClassification": {
+        "label": "Contemporary jewelry finished in Tsugaru-nuri by an Aomori City workshop.",
+        "sourceIds": [
+          "aomori-prefecture-tsugaru-nuri",
+          "tsugarunuri-cooperative",
+          "fukushi-blue-triangle-102338108"
+        ]
+      },
+      "size": "Ornament about 40 mm long, 15 mm across the base and 5 mm thick.",
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": null,
+      "priceAmount": 6000,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-19",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date.",
+      "availability": "listed",
+      "merchantIds": [
+        "fukushi-tsugaru-official"
+      ],
+      "sourceIds": [
+        "fukushi-blue-triangle-102338108",
+        "fukushi-aomori-workshop",
+        "aomori-prefecture-tsugaru-nuri",
+        "tsugarunuri-cooperative",
+        "fukushi-store-terms"
+      ],
+      "lastVerifiedAt": "2026-11-19",
+      "imageAssetIds": [],
+      "editorialSummary": "Deep blue lacquer covers both faces of a narrow triangle. Choose this clip-on for the change in sheen as it turns.",
+      "whoItMaySuit": "For someone who wears clip-ons and wants a geometric accent with a lacquered surface.",
+      "whatToCheck": [
+        "Compare the stated drop with your usual length.",
+        "Ask the workshop if you need the fitting metal, weight or the exact lacquer subtype."
+      ]
+    },
+    {
+      "id": "kuji-amber-dark-teardrop-pierced-earrings",
+      "slug": "kuji-amber-dark-teardrop-pierced-earrings",
+      "locale": "en",
+      "title": "Kuji Kohaku dark amber teardrop earrings",
+      "originalTitle": "久慈産琥珀ピアス [20260906EP-13]",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "iwate"
+      ],
+      "craftIds": [
+        "kuji-amber-working"
+      ],
+      "materialIds": [
+        "amber",
+        "gold-10k"
+      ],
+      "makerId": "kuji-kohaku",
+      "craftClassification": {
+        "label": "Jewelry made in Kuji using locally mined amber and the workshop's amber-working techniques.",
+        "sourceIds": [
+          "kuji-amber-studio",
+          "kuji-city-amber",
+          "kuji-amber-20260906ep-13"
+        ]
+      },
+      "size": "Amber about 10 × 7 × 5 mm. Measurements are for the stone.",
+      "weightPerPieceGrams": null,
+      "findings": "K10 (10-karat gold) hardware, as listed. For exact fastening details, ask the seller.",
+      "fastening": null,
+      "priceAmount": 14300,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-19",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date.",
+      "availability": "listed",
+      "merchantIds": [
+        "kuji-kohaku-official"
+      ],
+      "sourceIds": [
+        "kuji-amber-20260906ep-13",
+        "kuji-amber-studio",
+        "kuji-city-amber",
+        "kuji-amber-online-terms"
+      ],
+      "lastVerifiedAt": "2026-11-19",
+      "imageAssetIds": [],
+      "editorialSummary": "Dark Kuji amber, polished into a small drop that reveals its faint stripes in the light.",
+      "whoItMaySuit": "For a small, warm-toned accent with a traceable local source.",
+      "whatToCheck": [
+        "The dimensions cover the stone. Ask the shop if you need the length including the fitting.",
+        "The offer is for the numbered listing. Check its current availability before ordering."
+      ]
+    },
+    {
+      "id": "oriori-benibana-crimson-silk-pierced-earrings",
+      "slug": "oriori-benibana-crimson-silk-pierced-earrings",
+      "locale": "en",
+      "title": "Oriori safflower-dyed silk earrings in beniaka red",
+      "originalTitle": "BENIBANA ACCESSORY 紅赤ピアス",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "yamagata"
+      ],
+      "craftIds": [
+        "yamagata-safflower-dyeing"
+      ],
+      "materialIds": [
+        "silk",
+        "surgical-stainless-steel"
+      ],
+      "makerId": "oriori-yuza",
+      "craftClassification": {
+        "label": "Contemporary ear jewelry made by Oriori in Yamagata from Yonezawa safflower-dyed silk.",
+        "sourceIds": [
+          "maff-yamagata-benibana",
+          "yonezawa-nitta-company",
+          "juyoukan-benibana-115161363"
+        ]
+      },
+      "size": null,
+      "weightPerPieceGrams": null,
+      "findings": "The seller lists surgical stainless steel for the hardware. Grade and fastening details are unspecified.",
+      "fastening": null,
+      "priceAmount": 6050,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-19",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date.",
+      "availability": "listed",
+      "merchantIds": [
+        "juyoukan-official"
+      ],
+      "sourceIds": [
+        "juyoukan-benibana-115161363",
+        "yonezawa-nitta-company",
+        "oriori-yuza-company",
+        "maff-yamagata-benibana",
+        "juyoukan-online-terms"
+      ],
+      "lastVerifiedAt": "2026-11-19",
+      "imageAssetIds": [],
+      "editorialSummary": "Beniaka red on silk thread: a small way to wear the colour of Yamagata safflower with an everyday outfit.",
+      "whoItMaySuit": "For a clear red accent with the texture and sheen of dyed silk.",
+      "whatToCheck": [
+        "Choose 紅赤ピアス on the product page; the retailer also displays different colours and non-pierced variants.",
+        "Protect the safflower-dyed silk from strong light and rubbing when damp."
+      ]
+    },
+    {
+      "id": "cotake-taoyame-white-bamboo-clip-on-earrings",
+      "slug": "cotake-taoyame-white-bamboo-clip-on-earrings",
+      "locale": "en",
+      "title": "cotake Taoyame polished bamboo clip-on earrings",
+      "originalTitle": "たおやめ 白 イヤリング（シリコンパーツ）",
+      "publishStatus": "published",
+      "productType": [
+        "clip-on-earrings"
+      ],
+      "prefectureIds": [
+        "oita"
+      ],
+      "craftIds": [
+        "beppu-bamboo-craft"
+      ],
+      "materialIds": [
+        "bamboo",
+        "silicone",
+        "gold-filled"
+      ],
+      "makerId": "cotake-beppu",
+      "craftClassification": {
+        "label": "Contemporary non-pierced jewelry made using the Beppu bamboo craft tradition.",
+        "sourceIds": [
+          "beppu-bamboo-centre",
+          "beppu-bamboo-cooperative",
+          "cotake-taoyame-9101341"
+        ]
+      },
+      "size": "About 10 mm wide and 40 mm tall, or 55 mm tall including the hardware, as listed.",
+      "weightPerPieceGrams": null,
+      "findings": "Selected version has silicone earring fittings. The maker lists 14K gold-filled chain and jump rings.",
+      "fastening": "Non-pierced silicone fitting, selected as 白 イヤリング（シリコンパーツ）.",
+      "priceAmount": 5830,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-19",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date.",
+      "availability": "listed",
+      "merchantIds": [
+        "cotake-beppu-official"
+      ],
+      "sourceIds": [
+        "cotake-taoyame-9101341",
+        "cotake-beppu-workshop",
+        "beppu-bamboo-centre",
+        "beppu-bamboo-cooperative",
+        "cotake-online-terms"
+      ],
+      "lastVerifiedAt": "2026-11-19",
+      "imageAssetIds": [],
+      "editorialSummary": "Slender curves in polished bamboo, with a delicate chain on only one side. The pale bamboo can deepen towards amber over time.",
+      "whoItMaySuit": "For asymmetry, visible plant material and a non-pierced fitting.",
+      "whatToCheck": [
+        "Select the white silicone version rather than the hook or metal clip variants.",
+        "Allow for colour change as the polished bamboo ages and avoid dropping or bending the ornament."
       ]
     }
   ]

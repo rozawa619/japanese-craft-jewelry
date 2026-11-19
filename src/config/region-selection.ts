@@ -35,6 +35,10 @@ export const tourismRanking: {
 
 /** One editorial choice per prefecture, never a claim of sales popularity. */
 export const regionalRepresentatives: Record<string,string> = {
+  oita:'cotake-taoyame-white-bamboo-clip-on-earrings',
+  yamagata:'oriori-benibana-crimson-silk-pierced-earrings',
+  iwate:'kuji-amber-dark-teardrop-pierced-earrings',
+  aomori:'fukushi-tsugaru-blue-triangle-clip-on-earrings',
   akita:'yadome-akita-rice-silver-pierced-earrings',
   fukui:'sur-basic1-clear-pearl-pierced-earrings',
   gifu:'nanayosha-punu-gold-vanilla-pierced-earrings',

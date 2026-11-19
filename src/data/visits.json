@@ -1352,6 +1352,107 @@
         "dahliacyan-sakanoshita-access"
       ],
       "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "kuji-kohaku-main-shop",
+      "name": {
+        "en": "Kuji Kohaku main shop",
+        "ja": "久慈琥珀 本店"
+      },
+      "address": {
+        "en": "Amber Museum site, 19-156-133 Kokuji-cho, Kuji, Iwate, Japan",
+        "ja": "岩手県久慈市小久慈町19-156-133（久慈琥珀博物館敷地内）"
+      },
+      "kind": "maker-shop",
+      "officialUrl": "https://www.kuji.co.jp/",
+      "officialStoreUrl": "https://www.kuji.co.jp/purchase",
+      "hours": {
+        "en": "Usually 09:00–17:00; check the official schedule.",
+        "ja": "通常9:00〜17:00。公式の営業案内をご確認ください。"
+      },
+      "closedDays": null,
+      "access": {
+        "en": "Kuji City lists city buses to the Amber Museum from Kuji Station. Ask the museum in advance about pickup from the bus stop.",
+        "ja": "久慈駅から市民バスで琥珀博物館下車（久慈市の案内）。バス停からの送迎は博物館へ事前にお問い合わせください。"
+      },
+      "visitSummary": {
+        "en": "The maker's shop at the museum site sells amber jewelry and can advise on pieces and maintenance.",
+        "ja": "琥珀博物館の敷地内にある直営店。琥珀のジュエリーのほか、購入後のメンテナンスについても相談できます。"
+      },
+      "stockNote": {
+        "en": "The photographed piece has a specific item number. Check whether it is available to see before making a trip.",
+        "ja": "品番のある商品です。実物を見たい場合は、来店前に店頭で見られるかご確認ください。"
+      },
+      "mapQuery": "久慈琥珀 本店 岩手県久慈市小久慈町",
+      "sourceIds": [
+        "kuji-amber-shop-guide",
+        "kuji-amber-shop-hours",
+        "kuji-city-museum-access"
+      ],
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "juyoukan-yonezawa-kura-shop",
+      "name": {
+        "en": "JUYOUKAN Kura select shop",
+        "ja": "JUYOUKAN 蔵のセレクトショップ"
+      },
+      "address": {
+        "en": "1-7-32 Chuo, Yonezawa, Yamagata 992-0045, Japan",
+        "ja": "〒992-0045 山形県米沢市中央1丁目7-32"
+      },
+      "kind": "retailer",
+      "officialUrl": "https://juyoukan.jp/home/",
+      "officialStoreUrl": "https://juyoukan.jp/home/",
+      "hours": null,
+      "closedDays": null,
+      "access": null,
+      "visitSummary": {
+        "en": "The retailer’s Yonezawa select shop occupies a converted storehouse beside the former company building.",
+        "ja": "販売店が米沢の旧社屋に隣接する蔵を改装したセレクトショップです。"
+      },
+      "stockNote": {
+        "en": "Ask the shop for current opening times and whether the beniaka pierced variant can be seen in person.",
+        "ja": "営業日と紅赤ピアスの店頭取扱いは、訪問前に店舗へご確認ください。"
+      },
+      "mapQuery": "JUYOUKAN 米沢市中央1丁目7-32",
+      "sourceIds": [
+        "juyoukan-kura-shop"
+      ],
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "cotake-beppu-shop",
+      "name": {
+        "en": "cotake Beppu shop and workshop",
+        "ja": "cotake 別府 店舗・工房"
+      },
+      "address": {
+        "en": "2-28 Yumigahama-machi, Beppu, Oita 874-0927, Japan",
+        "ja": "〒874-0927 大分県別府市弓ケ浜町2-28"
+      },
+      "kind": "maker-shop",
+      "officialUrl": "https://www.cotake-beppu.com/",
+      "officialStoreUrl": "https://www.cotake-beppu.com/",
+      "hours": {
+        "en": "10:00–17:00 as listed by the workshop.",
+        "ja": "10:00〜17:00（工房公式掲載）。"
+      },
+      "closedDays": null,
+      "access": null,
+      "visitSummary": {
+        "en": "A bamboo craft shop and workshop whose display includes everyday objects and accessories.",
+        "ja": "竹細工の生活道具やアクセサリーを扱う工房兼店舗です。"
+      },
+      "stockNote": {
+        "en": "Ask the maker before travelling if you want to see the white silicone Taoyame earrings in person.",
+        "ja": "白のシリコン仕様の「たおやめ」を実物で見たい場合は、来店前に店舗へご確認ください。"
+      },
+      "mapQuery": "cotake 別府市弓ケ浜町2-28",
+      "sourceIds": [
+        "cotake-beppu-workshop"
+      ],
+      "checkedAt": "2026-11-19"
     }
   ],
   "products": [
@@ -2338,6 +2439,68 @@
       "sourceIds": [
         "dahliacyan-164454644",
         "dahliacyan-kamakura-atelier"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "productId": "fukushi-tsugaru-blue-triangle-clip-on-earrings",
+      "storeIds": [],
+      "officialHomeUrl": "https://294koubou.base.shop/about",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "fukushi-blue-triangle-102338108",
+        "fukushi-aomori-workshop"
+      ],
+      "fallback": {
+        "en": "The workshop’s online shop is the verified route. Ask the maker before planning an in-person visit.",
+        "ja": "公式通販で注文できます。工房での対面販売や見学は、訪問前に工房へご確認ください。"
+      },
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "productId": "kuji-amber-dark-teardrop-pierced-earrings",
+      "storeIds": [
+        "kuji-kohaku-main-shop"
+      ],
+      "officialHomeUrl": "https://www.kuji.co.jp/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "kuji-amber-20260906ep-13",
+        "kuji-amber-studio",
+        "kuji-amber-shop-guide",
+        "kuji-amber-shop-hours",
+        "kuji-city-museum-access"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "productId": "oriori-benibana-crimson-silk-pierced-earrings",
+      "storeIds": [
+        "juyoukan-yonezawa-kura-shop"
+      ],
+      "officialHomeUrl": "https://oriori-japan.com/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "juyoukan-benibana-115161363",
+        "yonezawa-nitta-company",
+        "oriori-yuza-company",
+        "juyoukan-kura-shop"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "productId": "cotake-taoyame-white-bamboo-clip-on-earrings",
+      "storeIds": [
+        "cotake-beppu-shop"
+      ],
+      "officialHomeUrl": "https://www.cotake-beppu.com/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "cotake-taoyame-9101341",
+        "cotake-beppu-workshop"
       ],
       "fallback": null,
       "checkedAt": "2026-11-19"
