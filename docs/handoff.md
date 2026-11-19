@@ -9,12 +9,12 @@
 | サイト | Japanese Craft Jewelry。全国の工芸ジュエリーを選ぶJA/EN紹介メディア。運営者SORA |
 | 公開URL | [日本語](https://rozawa619.github.io/japanese-craft-jewelry/ja/)・[English](https://rozawa619.github.io/japanese-craft-jewelry/en/) |
 | リポジトリ | [rozawa619/japanese-craft-jewelry](https://github.com/rozawa619/japanese-craft-jewelry)・main |
-| 最新公開アプリ | 0.19.0 / 仕様025、app `98d25ce1aa16dc82d4578626e9d06d451e172ed8`、[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44525574136) success |
+| 最新公開アプリ | 0.19.1 / 仕様026、app `66988d480f1b7ab2267fdb9c8dc5700add6731d9`、[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44531101682) success |
 | 最新の引継ぎ整備 | [仕様024](../specs/024-git-ai-handoff/spec.md)。Gitからの再開に必要な入口・資料・手順の整備で、アプリを再制作する作業ではない |
 | 内容 | 公開65/登録71商品、下書き6、掲載24県、公開関連技法36/全38、一次出典304、35店舗/58商品に店舗案内 |
-| 画像 | 人物63＋商品単体65のAI画像128枚。架空の日本人成人女性25〜33歳の生成設定 |
+| 画像 | 人物63＋商品単体65のAI画像128枚。架空の日本人成人女性21〜33歳の生成設定 |
 | 完了した023の変更 | 22人物を新生成・採用・公開、既存36人物と単体60を保持。新22枚は25〜30歳、かわいい系11/綺麗な系統11 |
-| 退役画像 | 旧10＋023の旧22＝32画像を配信/新Git tree/source ZIPから除外。旧原本と生成記録は保持 |
+| 退役画像 | 旧10＋023の旧22＋026の旧5＝37画像を配信/新Git tree/source ZIPから除外。旧原本と生成記録は保持 |
 | 収益化 | AdSense off、実提携未申請、商品リンクは通常URL。広告resolverとPrivacyの土台は実装済み |
 
 上の件数はこの公開版の記録で、全国拡張時の固定上限ではありません。神奈川専用・iTOへ戻さず、空の産地ページや件数合わせの未確認商品を作りません。人物の国籍・年齢は生成設定で、実在人物の属性を見た目から認定したものではありません。
@@ -42,6 +42,8 @@
 - 店舗Mapsは初回明示許可後30日自動表示、オフで全停止。未選択/拒否/期限切れはGoogle通信0。Google帰属・外部fallback・最小Storageを保ちます。地図設定maps-v17と広告Privacy v14/広告CMPは別です。
 
 ## 公開版の検証記録
+
+[0.19.1の検証](../specs/026-kanagawa-styling-refresh/validation.md)で、神奈川の日英特集と追加5商品の着用画像、差し替え対象外の画像123枚のハッシュを確認しました。
 
 [0.19.0の検証](../specs/025-kanagawa-accessories/validation.md)では、公開の日英神奈川特集、ブローチの絞り込み、CIの149件の単体テストを確認しました。
 

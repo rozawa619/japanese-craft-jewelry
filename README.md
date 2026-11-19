@@ -20,11 +20,11 @@ SORAが日本各地の工芸ジュエリーを選んで紹介する、日本語�
 
 ## 現在の基準
 
-0.19.0を公開しました。[仕様025](specs/025-kanagawa-accessories/spec.md)で、鎌倉彫の陽雅堂と銀の透かし彫りのDahliacyanから5点を追加。神奈川の工房・作り手に関連する掲載は8点です。
+0.19.1を公開しました。[仕様026](specs/026-kanagawa-styling-refresh/spec.md)で、神奈川5商品の着用イメージを20代前半の成人モデルと淡い室内背景に揃えています。神奈川の工房・作り手に関連する掲載は8点です。
 
 公開65/登録71商品、24県、一次出典304件、35店舗、人物63＋単体65のAI画像128枚を掲載。日英の公開ページとブローチの絞り込みを確認済みです。
 
-公開コミットは `98d25ce1aa16dc82d4578626e9d06d451e172ed8`。[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44525574136)で型・単体テスト・生成ページ・画像・SEO・公開が成功しました。[検証記録](specs/025-kanagawa-accessories/validation.md)に確認範囲を記録しています。
+公開コミットは `66988d480f1b7ab2267fdb9c8dc5700add6731d9`。[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44531101682)で型・単体テスト・生成ページ・画像・SEO・公開が成功しました。[検証記録](specs/026-kanagawa-styling-refresh/validation.md)に確認範囲を記録しています。
 
 AdSenseはoff、実アフィリエイトは未申請/通常リンクです。実ID/CMP/本人情報/契約/商用ホスト等は[運営上の残条件](docs/remaining-task-audit-v17.md)。申請や契約を資料だけで済んだことにしません。
 

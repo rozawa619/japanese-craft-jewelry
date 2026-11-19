@@ -1,6 +1,6 @@
 # 別のAIへ引き継ぐ入口
 
-このリポジトリとGitHub上の資料から、Japanese Craft Jewelryの保守を再開できます。前の会話や作成者のPCは不要です。2026-11-19現在、[仕様025](specs/025-kanagawa-accessories/spec.md)で神奈川に5商品を追加した0.19.0を公開・検証済みです。
+このリポジトリとGitHub上の資料から、Japanese Craft Jewelryの保守を再開できます。前の会話や作成者のPCは不要です。2026-11-19現在、[仕様026](specs/026-kanagawa-styling-refresh/spec.md)で神奈川5商品の着用画像を更新した0.19.1を公開・検証済みです。
 
 ## 読む順番
 
@@ -8,7 +8,7 @@
 2. [handoff-status.json](docs/handoff-status.json)：現在の状態、公開app、完了済み作業、正本、外部情報が必要な残条件。
 3. [現在状態](docs/handoff.md)と[編集ガイド](docs/editing-guide.md)：今回触るファイルを特定。
 4. [セットアップ](docs/setup.md)と[検証ガイド](docs/verification-guide.md)：起動と変更に応じた検査。
-5. 該当機能の仕様だけ読む。最新の完了実装は[025](specs/025-kanagawa-accessories/spec.md)、Git引継ぎの基盤は[024](specs/024-git-ai-handoff/spec.md)。
+5. 該当機能の仕様だけ読む。最新の完了実装は[026](specs/026-kanagawa-styling-refresh/spec.md)、Git引継ぎの基盤は[024](specs/024-git-ai-handoff/spec.md)。
 
 全世代の検証JSONを最初から読む必要はありません。GitのHEADは文書更新を含み、実際に公開されたappのSHAとは異なる場合があります。[deployment-results.json](docs/deployment-results.json)が公開の正本です。
 

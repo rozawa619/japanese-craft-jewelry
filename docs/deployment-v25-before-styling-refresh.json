@@ -1,0 +1,55 @@
+{
+  "version": "0.19.0",
+  "specification": "025-kanagawa-accessories",
+  "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
+  "branch": "main",
+  "status": "deployed_and_verified",
+  "recordedAt": "2026-11-19T12:43:14.401Z",
+  "applicationCommit": "98d25ce1aa16dc82d4578626e9d06d451e172ed8",
+  "actions": {
+    "id": 44525574136,
+    "headSha": "98d25ce1aa16dc82d4578626e9d06d451e172ed8",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44525574136",
+    "updatedAt": "2026-11-19T12:38:15Z",
+    "observedAt": "2026-11-19T12:43:14.401Z"
+  },
+  "previousRecord": "docs/deployment-v23-before-kanagawa.json",
+  "publicUrls": {
+    "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+    "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
+    "places": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/",
+    "kanagawaJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/kanagawa/",
+    "kanagawaEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/kanagawa/"
+  },
+  "content": {
+    "publishedProducts": 65,
+    "catalogProducts": 71,
+    "draftProducts": 6,
+    "regions": 24,
+    "activeCrafts": 36,
+    "catalogCrafts": 38,
+    "sources": 304,
+    "stores": 35,
+    "productsWithStores": 58,
+    "onlineEvidence": 56,
+    "retailCatalogEvidence": 9,
+    "publicImages": 128,
+    "stylingImages": 63,
+    "soloImages": 65,
+    "newProducts": 5,
+    "newRegions": 0,
+    "newImageFiles": 10,
+    "existingImageBytesRetained": 118,
+    "kanagawaWorkshopLinked": 8,
+    "kanagawaRegionalRetailer": 4
+  },
+  "outputManifest": "docs/kanagawa-v25-build-manifest.json",
+  "artifact": {
+    "id": 14531445227,
+    "sha256": "f9b1ca177061b7d9dad625c742396da316b9f0f715c5dc28fc57e6884a2a1f4f",
+    "workflowRunId": 44525574136
+  },
+  "verification": "specs/025-kanagawa-accessories/validation.md"
+}

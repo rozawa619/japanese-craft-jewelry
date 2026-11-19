@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-19T12:43:14.401Z",
+  "updatedAt": "2026-11-19T13:15:44.362Z",
   "entryPoint": "START_HERE.md",
   "project": {
     "name": "Japanese Craft Jewelry",
@@ -16,7 +16,7 @@
     "status": "ready",
     "basedOnDocumentationCommit": "b6ac11fcf589daa1b7b4786bc98702b36bfee482",
     "activeSiteImplementationTask": null,
-    "nextAction": "Read the current user request. See specification 025 for the latest Kanagawa release and use the regular verification commands for catalog changes.",
+    "nextAction": "Read the current request. Release 0.19.1 refreshes the five Kanagawa styling portraits. Use the normal verification commands for catalog changes.",
     "currentGitHeadCommand": "git rev-parse HEAD",
     "verificationReport": "docs/git-handoff-stage-results.json",
     "validatedSourceCommit": "537ee24ca021a9b61801108a4689e22936a3a08a",
@@ -29,16 +29,16 @@
     }
   },
   "production": {
-    "version": "0.19.0",
-    "applicationCommit": "98d25ce1aa16dc82d4578626e9d06d451e172ed8",
+    "version": "0.19.1",
+    "applicationCommit": "66988d480f1b7ab2267fdb9c8dc5700add6731d9",
     "actions": {
-      "id": 44525574136,
-      "headSha": "98d25ce1aa16dc82d4578626e9d06d451e172ed8",
+      "id": 44531101682,
+      "headSha": "66988d480f1b7ab2267fdb9c8dc5700add6731d9",
       "status": "completed",
       "conclusion": "success",
-      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44525574136",
-      "updatedAt": "2026-11-19T12:38:15Z",
-      "observedAt": "2026-11-19T12:43:14.401Z"
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44531101682",
+      "updatedAt": "2026-11-19T13:13:00Z",
+      "observedAt": "2026-11-19T13:15:44.362Z"
     },
     "urls": {
       "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
@@ -48,8 +48,8 @@
       "kanagawaEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/kanagawa/"
     },
     "report": "docs/deployment-results.json",
-    "verification": "specs/025-kanagawa-accessories/validation.md",
-    "outputManifest": "docs/kanagawa-v25-build-manifest.json"
+    "verification": "specs/026-kanagawa-styling-refresh/validation.md",
+    "outputManifest": "docs/kanagawa-styling-v26-build-manifest.json"
   },
   "snapshot": {
     "publishedProducts": 65,
@@ -66,17 +66,17 @@
     "publicImages": 128,
     "stylingImages": 63,
     "soloImages": 65,
-    "newProducts": 5,
+    "newProducts": 0,
     "newRegions": 0,
-    "newImageFiles": 10,
-    "existingImageBytesRetained": 118,
+    "newImageFiles": 5,
+    "existingImageBytesRetained": 123,
     "kanagawaWorkshopLinked": 8,
     "kanagawaRegionalRetailer": 4
   },
   "currentImagePolicy": {
     "fictionalNationalitySetting": "Japanese",
     "adultAgeRange": [
-      25,
+      21,
       33
     ],
     "cuteAndElegant": true,
@@ -86,12 +86,26 @@
     "standaloneImages": 65,
     "replacedIn023": 22,
     "retainedIn023": 36,
-    "retiredLocalImages": 32,
+    "retiredLocalImages": 37,
     "manifest": "docs/image-generation-japanese-v23.json",
     "latestGenerationRecords": [
-      "docs/image-generation-styling-v25.json",
+      "docs/image-generation-styling-v26.json",
       "docs/image-generation-solo-v25.json"
-    ]
+    ],
+    "latestPortraitUpdate": {
+      "products": 5,
+      "adultAgeRange": [
+        21,
+        24
+      ],
+      "gazes": [
+        "camera",
+        "side",
+        "pendant",
+        "wrist"
+      ],
+      "background": "neutral indoor plaster"
+    }
   },
   "setup": {
     "nodeMinimum": "24.22.3",
@@ -131,7 +145,8 @@
     "021-unified-region-photos",
     "022-compact-map-and-natural-hero",
     "023-japanese-model-styling",
-    "025-kanagawa-accessories"
+    "025-kanagawa-accessories",
+    "026-kanagawa-styling-refresh"
   ],
   "historicalOnlyScripts": [
     {

@@ -6,7 +6,7 @@
 
 1. [START_HERE.md](START_HERE.md)を読む。次に[引継ぎ状態](docs/handoff-status.json)と[公開アプリの記録](docs/deployment-results.json)を確認する。
 2. `git status --short`と`git rev-parse HEAD`で作業対象・未保存変更を確認する。公開appのSHA、現在のGit HEAD、過去の納品ZIPを区別する。他者の変更を上書きしない。
-3. 最新の引継ぎ整備は[仕様024](specs/024-git-ai-handoff/spec.md)。最新のアプリ変更は[025](specs/025-kanagawa-accessories/spec.md)。[023](specs/023-japanese-model-styling/spec.md)の画像差し替えは完了済み。次の実装対象はユーザーの今回の依頼から決める。
+3. 最新の引継ぎ整備は[仕様024](specs/024-git-ai-handoff/spec.md)。最新のアプリ変更は[026](specs/026-kanagawa-styling-refresh/spec.md)。[023](specs/023-japanese-model-styling/spec.md)の画像差し替えは完了済み。次の実装対象はユーザーの今回の依頼から決める。
 4. [setup](docs/setup.md)でNode・pnpm・env・base・Chromeを揃え、[architecture](docs/architecture.md)と[editing-guide](docs/editing-guide.md)で変更する正本を特定する。`docs/`のJSONもbuild入力なので削除しない。
 5. [verification-guide](docs/verification-guide.md)から影響に合う検査を選び、仕様・実装・検証・引継ぎを対応させる。全旧版を通読したり過去の検査を全再実行したりすることは開始条件ではない。
 
@@ -14,7 +14,7 @@
 
 - 運営者表示はSORA。日本全国の工芸ジュエリーを選ぶJA/ENの紹介サイト。神奈川専用やiTOへ戻さない。
 - ブログ、Contact、販売・決済・発送の機能を作らず、不要な販売責任説明をUIへ再導入しない。未提供の氏名・住所・メール・経歴を作らない。
-- 最新公開アプリ0.19.0の基準は65公開/71登録商品・24県・36公開関連技法/全38・128AI画像。件数上限や各県同数という条件ではない。未掲載県・空の技法・draftの公開ページを作らない。
+- 最新公開アプリ0.19.1の基準は65公開/71登録商品・24県・36公開関連技法/全38・128AI画像。件数上限や各県同数という条件ではない。未掲載県・空の技法・draftの公開ページを作らない。
 - COCOON2、欠品18K、販売未確認の畠山2、hairpinはdraft。復帰には対象variantの現行購入根拠と派生参照の再確認が必要。403を閉店・売切れと判定しない。
 
 ## 正本と編集
@@ -28,10 +28,10 @@
 
 ## 画像とUI
 
-- 人物画像は架空の日本人成人女性25〜33歳の生成設定。25歳を含め、かわいい系・綺麗な系統と髪型/表情/服装に変化を付け、目立つほくろ/シミなしの方向性を保つ。見た目から実在人物の国籍・正確な年齢を認定しない。旧US/UK混在方針は履歴である。
+- 人物画像は架空の日本人成人女性。現行の生成設定は21〜33歳で、神奈川の026では21〜24歳。新規画像ではほくろや目立つシミを避け、笑顔、髪型、服装、正面・横・手元などの視線に変化を付ける。026は既存画像に合わせて淡い室内背景と柔らかい光を用いた。
 - captionは常時AIイメージ/AI image。日英alt・元比率/contain・顔/装身具の切れを確認する。AI図を実物写真・完全なSKU再現・素材/寸法/金具/個数・装着実績の証拠にしない。
 - 公式写真を許可なく取得・転載・hotlink・生成入力に流用しない。人物editorial-imagesと単体product-detail-images、docs/assets、生成記録を分離する。[画像ガイド023](docs/japanese-model-styling-v21.md)と[原本の取得手順](docs/handoff-assets.md)を使う。
-- 023の22置換・36人物保持・単体60保持は完了。旧22はretired/Git追跡解除/ignore・dist/ZIP除外済みで、旧ログ/原本は保持。現在のretired除外対象は32画像。既存v12baselineや全画像の不変条件を一括解除しない。
+- 023の22置換・36人物保持・単体60保持は完了。旧22はretired/Git追跡解除/ignore・dist/ZIP除外済みで、旧ログ/原本は保持。現在のretired除外対象は37画像。既存v12baselineや全画像の不変条件を一括解除しない。
 - `scripts/apply-japanese-model-styling.mjs`は完了した023移行専用。起動・通常検証・次の画像更新のために再実行しない。旧bytesを必要とする一回限りのpreservation検査も通常buildの条件にしない。
 - Heroは左の人物画像/右の日本地図。明示的な県選択で画像・商品・国内参考価格を切り替え、region query・他query/hash・履歴・言語を保持する。写真は自然比率・上下人工帯なし。沖縄別枠はPC200px/スマホ80pxを継承する。
 - 産地一覧はTOP10→コンパクトな日本地図→DISCOVER3県。47県の原形を主図46＋沖縄別枠1へ分け、実商品がある掲載県のみ通常hrefにする。島・枠・labelの直接click/tap/Enter、preview、zoom/内部scroll、地方一覧、keyboard/noJSを保つ。詳細は[022](docs/compact-layout-v20.md)。
