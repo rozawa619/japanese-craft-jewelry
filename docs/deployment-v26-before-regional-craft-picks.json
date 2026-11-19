@@ -1,0 +1,55 @@
+{
+  "version": "0.19.1",
+  "specification": "026-kanagawa-styling-refresh",
+  "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
+  "branch": "main",
+  "status": "deployed_and_verified",
+  "recordedAt": "2026-11-19T13:15:44.362Z",
+  "applicationCommit": "66988d480f1b7ab2267fdb9c8dc5700add6731d9",
+  "actions": {
+    "id": 44531101682,
+    "headSha": "66988d480f1b7ab2267fdb9c8dc5700add6731d9",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44531101682",
+    "updatedAt": "2026-11-19T13:13:00Z",
+    "observedAt": "2026-11-19T13:15:44.362Z"
+  },
+  "previousRecord": "docs/deployment-v25-before-styling-refresh.json",
+  "publicUrls": {
+    "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+    "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
+    "places": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/",
+    "kanagawaJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/kanagawa/",
+    "kanagawaEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/kanagawa/"
+  },
+  "content": {
+    "publishedProducts": 65,
+    "catalogProducts": 71,
+    "draftProducts": 6,
+    "regions": 24,
+    "activeCrafts": 36,
+    "catalogCrafts": 38,
+    "sources": 304,
+    "stores": 35,
+    "productsWithStores": 58,
+    "onlineEvidence": 56,
+    "retailCatalogEvidence": 9,
+    "publicImages": 128,
+    "stylingImages": 63,
+    "soloImages": 65,
+    "newProducts": 0,
+    "newRegions": 0,
+    "newImageFiles": 5,
+    "existingImageBytesRetained": 123,
+    "kanagawaWorkshopLinked": 8,
+    "kanagawaRegionalRetailer": 4
+  },
+  "outputManifest": "docs/kanagawa-styling-v26-build-manifest.json",
+  "artifact": {
+    "id": 14533736409,
+    "sha256": "4864571bf6cb7d58774bc2df81d8f834f9a281c09e0bf46692d3f03222a3cda6",
+    "workflowRunId": 44531101682
+  },
+  "verification": "specs/026-kanagawa-styling-refresh/validation.md"
+}

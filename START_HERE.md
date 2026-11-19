@@ -1,6 +1,6 @@
 # 別のAIへ引き継ぐ入口
 
-このリポジトリとGitHub上の資料から、Japanese Craft Jewelryの保守を再開できます。前の会話や作成者のPCは不要です。2026-11-19現在、[仕様026](specs/026-kanagawa-styling-refresh/spec.md)で神奈川5商品の着用画像を更新した0.19.1を公開・検証済みです。
+このリポジトリとGitHub上の資料から、Japanese Craft Jewelryの保守を再開できます。前の会話や作成者のPCは不要です。2026-11-19現在、[仕様027](specs/027-regional-craft-picks/spec.md)で青森・岩手・山形・大分の4品を追加した0.20.0を公開・検証済みです。
 
 ## 読む順番
 
@@ -8,7 +8,7 @@
 2. [handoff-status.json](docs/handoff-status.json)：現在の状態、公開app、完了済み作業、正本、外部情報が必要な残条件。
 3. [現在状態](docs/handoff.md)と[編集ガイド](docs/editing-guide.md)：今回触るファイルを特定。
 4. [セットアップ](docs/setup.md)と[検証ガイド](docs/verification-guide.md)：起動と変更に応じた検査。
-5. 該当機能の仕様だけ読む。最新の完了実装は[026](specs/026-kanagawa-styling-refresh/spec.md)、Git引継ぎの基盤は[024](specs/024-git-ai-handoff/spec.md)。
+5. 該当機能の仕様だけ読む。最新の完了実装は[027](specs/027-regional-craft-picks/spec.md)、Git引継ぎの基盤は[024](specs/024-git-ai-handoff/spec.md)。
 
 全世代の検証JSONを最初から読む必要はありません。GitのHEADは文書更新を含み、実際に公開されたappのSHAとは異なる場合があります。[deployment-results.json](docs/deployment-results.json)が公開の正本です。
 
@@ -30,7 +30,7 @@ pnpm dev
 
 ## 画像原本・過去の納品物
 
-[画像原本と配布資料](docs/handoff-assets.md)からGitHub上のZIPを取得できます。[配布一覧](docs/handoff-assets.json)にURL・容量・SHA256を記録し、`node scripts/fetch-handoff-asset.mjs --list`で一覧を表示できます。原本が必要な画像編集時だけダウンロードしてください。公開中の128画像は既に`public/images/`にあります。
+[画像原本と配布資料](docs/handoff-assets.md)からGitHub上のZIPを取得できます。[配布一覧](docs/handoff-assets.json)にURL・容量・SHA256を記録し、`node scripts/fetch-handoff-asset.mjs --list`で一覧を表示できます。原本が必要な画像編集時だけダウンロードしてください。公開中の136画像は既に`public/images/`にあります。
 
 023の`apply-japanese-model-styling.mjs`は完了済み22枚の移行専用、`check-japanese-model-preservation.mjs`は旧画像を残した当時のcheckout専用です。fresh cloneの起動や通常編集の必須手順にはしません。新しい画像変更は新しい仕様/manifestで記録し、023の固定集合・過去の証拠を書き換えて通しません。
 
