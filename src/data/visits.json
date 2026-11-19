@@ -1325,7 +1325,7 @@
       },
       "kind": "maker-shop",
       "officialUrl": "https://www.dahliacyan.com/",
-      "officialStoreUrl": "https://www.dahliacyan.com/",
+      "officialStoreUrl": "https://www.dahliacyan.com/access",
       "hours": {
         "en": "10:00–18:00, as listed by the maker",
         "ja": "10:00〜18:00（工房公式掲載）"
@@ -1334,7 +1334,10 @@
         "en": "Tuesday",
         "ja": "火曜日"
       },
-      "access": null,
+      "access": {
+        "en": "The maker lists a six-minute walk from either Hase or Gokurakuji station on the Enoden line.",
+        "ja": "江ノ電の長谷駅・極楽寺駅からそれぞれ徒歩6分（工房公式掲載）。"
+      },
       "visitSummary": {
         "en": "Shop and working atelier in Sakanoshita, the address announced by the maker after its 2026 move.",
         "ja": "2026年の移転後に公式が案内する坂ノ下の店舗。彫金の工房を併設しています。"
@@ -1345,7 +1348,8 @@
       },
       "mapQuery": "Dahliacyan 鎌倉市坂ノ下22-3",
       "sourceIds": [
-        "dahliacyan-kamakura-atelier"
+        "dahliacyan-kamakura-atelier",
+        "dahliacyan-sakanoshita-access"
       ],
       "checkedAt": "2026-11-19"
     }

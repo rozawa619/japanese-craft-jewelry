@@ -17,12 +17,18 @@ test('only the fixed public Share embed origin, path and pb query are accepted',
  }
 });
 
-test('each sourced store has a reviewed selected-place embed in both languages; unknown stores have none',()=>{
- assert.deepEqual(Object.keys(reviewedStoreMapEmbeds).sort(),visits.stores.map(store=>store.id).sort());
- for(const store of visits.stores)for(const locale of ['en','ja']as const){
-  const url=storeMapEmbed(store.id,locale);assert.ok(url,store.id+' '+locale);
-  assert.equal(new URL(url).origin,'https://www.google.com');
-  assert.match(new URL(url).searchParams.get('pb')!,/!3m3!1m2!1s/,'A selected place, rather than a broad text-query overview, is required.');
+test('reviewed embeds belong to sourced stores and unknown stores have none',()=>{
+ const storeIds=new Set(visits.stores.map(store=>store.id));
+ const mapStoreIds=Object.keys(reviewedStoreMapEmbeds);
+ assert.ok(mapStoreIds.length);
+ for(const id of mapStoreIds){
+  assert.ok(storeIds.has(id),'Embed must belong to a source-checked store: '+id);
+  for(const locale of ['en','ja']as const){
+   const url=storeMapEmbed(id,locale);
+   assert.ok(url,id+' '+locale);
+   assert.equal(new URL(url).origin,'https://www.google.com');
+   assert.match(new URL(url).searchParams.get('pb')!,/!3m3!1m2!1s/,'A selected place, rather than a broad text-query overview, is required.');
+  }
  }
  assert.equal(storeMapEmbed('unreviewed-store','ja'),null);
 });

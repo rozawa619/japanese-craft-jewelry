@@ -9,6 +9,11 @@ export const reviewedStoreMapEmbeds:Readonly<Record<string,Readonly<Record<Local
     "ja": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9219.37629412932!2d139.0585010798904!3d35.217881830033974!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019a2f35ae637e7%3A0xfcbb25f508ffef70!2z5rWc5p2-5bGL!5e0!3m2!1sja!2sjp!4v1538099601467",
     "en": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9219.37629412932!2d139.0585010798904!3d35.217881830033974!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019a2f35ae637e7%3A0xfcbb25f508ffef70!2z5rWc5p2-5bGL!5e0!3m2!1sja!2sjp!4v1538099601467"
   },
+  // The map published on Yogado’s official access page serves both locales.
+  "yogado-kamakura-shop": {
+    "ja": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.3277642123967!2d139.55188206112683!3d35.32268149695028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845c73d63373b:0xa1aef5516b3e531e!2z6Y6M5YCJ5b2rIOmZvembheWggg!5e0!3m2!1sja!2sjp!4v1492364363891",
+    "en": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.3277642123967!2d139.55188206112683!3d35.32268149695028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845c73d63373b:0xa1aef5516b3e531e!2z6Y6M5YCJ5b2rIOmZvembheWggg!5e0!3m2!1sja!2sjp!4v1492364363891"
+  },
   "hakone-maruyama-main": {
     "ja": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.59156654529!2d139.02685549999998!3d35.1917311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019986f27c00055%3A0xbd950abf3fe18215!2z5Li45bGx54mp55SjIOeuseagueacrOW6lw!5e0!3m2!1sja!2sjp!4v1794886691292!5m2!1sja!2sjp",
     "en": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.59156654529!2d139.02685549999998!3d35.1917311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019986f27c00055%3A0xbd950abf3fe18215!2sHakone%20Maruyama%20Bussan!5e0!3m2!1sen!2sjp!4v1794886703069!5m2!1sen!2sjp"
