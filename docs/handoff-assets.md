@@ -1,6 +1,6 @@
 # GitHubに保存した画像原本と配布資料
 
-現在の編集元はGitHubの`main`です。通常の起動/buildに必要な全ソースと118枚の公開画像はGitにあります。以下は画像編集や過去の納品内容を照合するときの補助資料です。
+現在の編集元はGitHubの`main`です。通常の起動・ビルドに必要なソースと公開画像はGitにあります。公開版と画像数は[引継ぎ状態](handoff-status.json)を参照してください。以下の資料は画像編集や過去の納品内容の照合に使えます。
 
 [引継ぎ用GitHub Release](https://github.com/rozawa619/japanese-craft-jewelry/releases/tag/ai-handoff-2026-11-17)に8ファイルを保存しました。URL・容量・SHA256は[handoff-assets.json](handoff-assets.json)が正本です。GitHubのDownload source codeと、この独立した配布assetを混同しません。
 
