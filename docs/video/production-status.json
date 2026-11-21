@@ -6,7 +6,7 @@
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "currentEpisodeId": "kanagawa-dahliacyan-rhodochrosite-bracelet",
-  "nextAction": "Before another Google Flow attempt, prepare and visually validate a separate 9:16 start-frame image derived from the SAME published site female model: face plus exactly one original bracelet on one wrist, other wrist out of view; preserve the published source asset. Once ready, use episode v4 concise minimal-motion prompt and inspect all frames plus Japanese audio. No v4 run has been executed.",
+  "nextAction": "Edit the exact current site model reference image (same face and hairstyle) rather than generate a new woman; change only the outfit to a modern casual Kamakura-date style. Prepare portrait 9:16 with one bracelet on one wrist and the opposite wrist out of view. Side-by-side review face identity and product consistency BEFORE any Google Flow generation.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -57,19 +57,20 @@
       "status": "revision_needed",
       "femaleImagePath": "public/images/styling-jp-dahliacyan-openwork-rhodochrosite-bracelet-v26.webp",
       "episodePath": "docs/video/episodes/kanagawa-dahliacyan-rhodochrosite-bracelet.md",
-      "summary": "The original rendered clip visibly duplicated a bracelet on both wrists near 5s; user reports subsequent v3 attempt still duplicates it. Native-sounding Japanese also remains a concern. Researched official Flow/Veo documentation 2026-11-21. SDD updated to image-first preflight, minimal motion, concise prompt, single Japanese sentence, and silent-voiceover fallback. v4 text drafted, but the 9:16 derived start image has NOT been made, nor has v4 been generated or approved.",
+      "summary": "The original rendered clip visibly duplicated a bracelet on both wrists near 5s; user reports subsequent v3 attempt still duplicates it. Native-sounding Japanese also remains a concern. Researched official Flow/Veo documentation 2026-11-21. SDD updated to image-first preflight, minimal motion, concise prompt, single Japanese sentence, and silent-voiceover fallback. v4 text drafted, but the 9:16 derived start image has NOT been made, nor has v4 been generated or approved. User subsequently reported outfit looked too mature, and replacement generated image looked like a different woman. Replacement image is rejected. No approved 9:16 start frame yet.",
       "artifactUrl": null,
       "postUrl": null,
       "verification": "initial video visually reviewed; v3 repeat-duplication user-reported; official research and v4 prompt updated; derived frame and v4 output unverified",
-      "nextAction": "Before another Google Flow attempt, prepare and visually validate a separate 9:16 start-frame image derived from the SAME published site female model: face plus exactly one original bracelet on one wrist, other wrist out of view; preserve the published source asset. Once ready, use episode v4 concise minimal-motion prompt and inspect all frames plus Japanese audio. No v4 run has been executed.",
+      "nextAction": "Edit the exact current site model reference image (same face and hairstyle) rather than generate a new woman; change only the outfit to a modern casual Kamakura-date style. Prepare portrait 9:16 with one bracelet on one wrist and the opposite wrist out of view. Side-by-side review face identity and product consistency BEFORE any Google Flow generation.",
       "statusReason": "Repeated bracelet duplication under long negative prompts; switch to image-first preflight",
       "currentPromptVersion": "v4-drafted-unexecuted",
       "sourceImageShape": "1536x1024 landscape 3:2",
       "derivedStartFramePath": null,
-      "startFrameStatus": "not_created",
+      "startFrameStatus": "rejected_prior_generated_candidate_identity_mismatch; approved_start_frame_not_created",
       "modelUsedForV4": null,
       "generatedV4Url": null,
-      "audioFallback": "Use Flow project Settings > Return silent videos and add Japanese voice in post only if speech failures persist; lip sync requires separate review"
+      "audioFallback": "Use Flow project Settings > Return silent videos and add Japanese voice in post only if speech failures persist; lip sync requires separate review",
+      "identityReview": "User rejected prior stylized/wearing-image candidate as a different person. Edit exact site image, outfit-only; same face is mandatory."
     }
   ],
   "observedLinks": [
@@ -96,6 +97,10 @@
     {
       "date": "2026-11-21",
       "summary": "Follow-up user report: v3 also produced duplicate bracelets. Reviewed Google official Flow and Cloud Veo guidance; updated SDD v1.2, image-first short prompt template v2.0, episode v4 drafted; 9:16 revised starting image NOT yet produced, generation not yet rerun."
+    },
+    {
+      "date": "2026-11-21",
+      "summary": "User rejected previous fashion refresh image because the model looked like a different person. SDD v1.3: original site woman identity must be locked; outfit-only edits; side-by-side review; reject identity drift. Current start-frame candidate not approved."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md"
