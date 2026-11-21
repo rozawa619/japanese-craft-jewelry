@@ -6,7 +6,7 @@
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "currentEpisodeId": "kanagawa-dahliacyan-rhodochrosite-bracelet",
-  "nextAction": "Use the most recent blue-blouse image created in the user chat (淡い青ブラウスの笑顔_女性ポートレート.png) as the Flow start frame, apply the exact v5 episode prompt, then review if face/outfit/one-bracelet consistency and natural Japanese speech are acceptable. The image has not been verified as persistently stored in GitHub.",
+  "nextAction": "Before approving or posting, check the full 10-second video and Japanese audio for native pronunciation, look for any bracelet duplication in all frames, then confirm whether it was posted and save its exact TikTok URL.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -54,14 +54,14 @@
       "productIds": [
         "dahliacyan-openwork-rhodochrosite-bracelet"
       ],
-      "status": "revision_needed",
+      "status": "generated_unreviewed",
       "femaleImagePath": "public/images/styling-jp-dahliacyan-openwork-rhodochrosite-bracelet-v26.webp",
       "episodePath": "docs/video/episodes/kanagawa-dahliacyan-rhodochrosite-bracelet.md",
-      "summary": "Prompt v5 written for the last blue-blouse image generated in chat: preserve the existing blue clothing color, face, bag strap, one silver bracelet/pink gemstone; minimal movement, one short natural Japanese line. No v5 video yet reviewed/posted. Persistent start-frame hosting remains unresolved.",
+      "summary": "User uploaded a 10-second 512x910 video after the blue blouse v5 prompt. Visually inspected sampled frames on 2026-11-21: same-looking young woman in powder-blue top, single prominent silver bracelet with pink stone visible on one raised wrist in sampled frames; complete every-frame jewelry inspection and Japanese audio transcription/pronunciation review not yet completed. TikTok Japanese caption drafted. This is not proof of approval or publication.",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "initial video visually reviewed; v3 repeat-duplication user-reported; official research and v4 prompt updated; derived frame and v4 output unverified",
-      "nextAction": "Use the most recent blue-blouse image created in the user chat (淡い青ブラウスの笑顔_女性ポートレート.png) as the Flow start frame, apply the exact v5 episode prompt, then review if face/outfit/one-bracelet consistency and natural Japanese speech are acceptable. The image has not been verified as persistently stored in GitHub.",
+      "verification": "visual contact sheet at 0,2,4,6,8,9.5 seconds; 10s 512x910 media metadata; audio quality and full-frame verification pending",
+      "nextAction": "Before approving or posting, check the full 10-second video and Japanese audio for native pronunciation, look for any bracelet duplication in all frames, then confirm whether it was posted and save its exact TikTok URL.",
       "statusReason": "Repeated bracelet duplication under long negative prompts; switch to image-first preflight",
       "currentPromptVersion": "v5-prompt-ready-no-generated-video",
       "sourceImageShape": "1536x1024 landscape 3:2",
@@ -71,7 +71,8 @@
       "generatedV4Url": null,
       "audioFallback": "Use Flow project Settings > Return silent videos and add Japanese voice in post only if speech failures persist; lip sync requires separate review",
       "identityReview": "User rejected prior stylized/wearing-image candidate as a different person. Edit exact site image, outfit-only; same face is mandatory.",
-      "startFrameChatFilename": "淡い青ブラウスの笑顔_女性ポートレート.png"
+      "startFrameChatFilename": "淡い青ブラウスの笑顔_女性ポートレート.png",
+      "captionDraft": "「ねえ、この模様きれいでしょ？💕」\n\n今日は神奈川・鎌倉で待ち合わせ🌸\n\n繊細な銀の透かし彫りと、ピンク色の石が可愛いブレスレット✨\n\n鎌倉のアクセサリー工房「Dahliacyan」の作品を、彼女とのデート気分でご紹介。\n\nこんなアクセサリーを着けていたら、どう思う？💗\n\n🇯🇵 Discover Japanese handcrafted jewelry through a romantic POV date.\n\n※AI生成映像を使用しています。\n\n#SORA旅先で待ち合わせ #鎌倉 #神奈川 #ハンドメイドアクセサリー #和アクセサリー #AIデート #JapaneseJewelry"
     }
   ],
   "observedLinks": [
@@ -106,6 +107,10 @@
     {
       "date": "2026-11-21",
       "summary": "Saved v5 copyable Google Flow video prompt for last blue-blouse female start image in the chat, after user corrected prior incorrect pink clothing. No video generation or external posting claimed."
+    },
+    {
+      "date": "2026-11-21",
+      "summary": "User uploaded rendered blue-blouse bracelet 10s video; selected sampled frames reviewed, draft Japanese TikTok caption saved. Audio/full-frame and post status remain unverified."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md"
