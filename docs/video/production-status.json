@@ -6,7 +6,7 @@
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "currentEpisodeId": "kanagawa-dahliacyan-rhodochrosite-bracelet",
-  "nextAction": "Run Google Flow frame-to-video again with the exact same site model starting image and version 2 locked prompt. Inspect both wrists throughout all 10 seconds, confirm just one bracelet and listen to natural native Japanese; then update ledger based on the output.",
+  "nextAction": "Before another Google Flow attempt, prepare and visually validate a separate 9:16 start-frame image derived from the SAME published site female model: face plus exactly one original bracelet on one wrist, other wrist out of view; preserve the published source asset. Once ready, use episode v4 concise minimal-motion prompt and inspect all frames plus Japanese audio. No v4 run has been executed.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -57,11 +57,19 @@
       "status": "revision_needed",
       "femaleImagePath": "public/images/styling-jp-dahliacyan-openwork-rhodochrosite-bracelet-v26.webp",
       "episodePath": "docs/video/episodes/kanagawa-dahliacyan-rhodochrosite-bracelet.md",
-      "summary": "Initial 10-second Flow video was uploaded and visually reviewed 2026-11-21. Around 5s, the same bracelet appears on BOTH wrists. User reported speech sounded like 'ブレスレ' and not naturally native Japanese. Updated locked episode prompt v2 prevents accessory duplication and replaces the spoken word with shorter Japanese. Revised generation has NOT yet been run or verified.",
+      "summary": "The original rendered clip visibly duplicated a bracelet on both wrists near 5s; user reports subsequent v3 attempt still duplicates it. Native-sounding Japanese also remains a concern. Researched official Flow/Veo documentation 2026-11-21. SDD updated to image-first preflight, minimal motion, concise prompt, single Japanese sentence, and silent-voiceover fallback. v4 text drafted, but the 9:16 derived start image has NOT been made, nor has v4 been generated or approved.",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "initial-upload-video-visual-review; pronunciation-problem-from-user-report; v2-prompt-ready; redo-unverified",
-      "nextAction": "Run Google Flow frame-to-video again with the exact same site model starting image and version 2 locked prompt. Inspect both wrists throughout all 10 seconds, confirm just one bracelet and listen to natural native Japanese; then update ledger based on the output."
+      "verification": "initial video visually reviewed; v3 repeat-duplication user-reported; official research and v4 prompt updated; derived frame and v4 output unverified",
+      "nextAction": "Before another Google Flow attempt, prepare and visually validate a separate 9:16 start-frame image derived from the SAME published site female model: face plus exactly one original bracelet on one wrist, other wrist out of view; preserve the published source asset. Once ready, use episode v4 concise minimal-motion prompt and inspect all frames plus Japanese audio. No v4 run has been executed.",
+      "statusReason": "Repeated bracelet duplication under long negative prompts; switch to image-first preflight",
+      "currentPromptVersion": "v4-drafted-unexecuted",
+      "sourceImageShape": "1536x1024 landscape 3:2",
+      "derivedStartFramePath": null,
+      "startFrameStatus": "not_created",
+      "modelUsedForV4": null,
+      "generatedV4Url": null,
+      "audioFallback": "Use Flow project Settings > Return silent videos and add Japanese voice in post only if speech failures persist; lip sync requires separate review"
     }
   ],
   "observedLinks": [
@@ -84,6 +92,11 @@
     {
       "date": "2026-11-21",
       "summary": "Reviewed uploaded first bracelet video: duplicate bracelet appeared on both wrists near 5s. User reported 'ブレスレ' and nonnative Japanese. Logged revision_needed; episode locked prompt changed to v2 with one bracelet and shorter natural Japanese; nothing regenerated or published yet."
+    },
+    {
+      "date": "2026-11-21",
+      "summary": "Follow-up user report: v3 also produced duplicate bracelets. Reviewed Google official Flow and Cloud Veo guidance; updated SDD v1.2, image-first short prompt template v2.0, episode v4 drafted; 9:16 revised starting image NOT yet produced, generation not yet rerun."
     }
-  ]
+  ],
+  "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md"
 }
