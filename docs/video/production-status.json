@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "lastUpdated": "2026-11-21",
+  "project": "SORA｜旅先で待ち合わせ",
+  "scope": "TikTok / Google Flow AI POV date clips; site content source is separate",
+  "specPath": "docs/video/spec.md",
+  "promptTemplatePath": "docs/video/flow-template.md",
+  "currentEpisodeId": "kanagawa-dahliacyan-rhodochrosite-bracelet",
+  "nextAction": "Open the existing female styling image for the Dahliacyan rhodochrosite bracelet and paste the frozen prompt from its episode markdown into Google Flow, then inspect the generated 10-second clip for pronunciation, face/jewelry continuity and artifacts. Update this ledger with the actual result; do not mark generated or published before verification.",
+  "episodes": [
+    {
+      "id": "hakone-yosegi-60s-compilation",
+      "place": "Hakone, Kanagawa",
+      "productIds": [
+        "hamamatsuya-catch-pierced",
+        "hamamatsuya-clip"
+      ],
+      "status": "unknown",
+      "summary": "Prior conversation included multiple Hakone POV clips (six files) and a request to combine them into one approximately 60-second video. Whether the assembled file was completed or posted is not verified.",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "chat-history-only",
+      "nextAction": "If continuing Hakone, locate the saved merged video or original clips and confirm whether the 60-second compilation exists."
+    },
+    {
+      "id": "kamakura-yogado-camellia-brooch",
+      "place": "Kamakura, Kanagawa",
+      "productIds": [
+        "yogado-kamakura-bori-camellia-brooch"
+      ],
+      "status": "unknown",
+      "summary": "A revised video was provided in a chat and a TikTok caption was drafted. Completion/approval and publication URL not verified. Do not treat drafting a caption as publication.",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "chat-history-only",
+      "nextAction": "Only if revisiting, inspect the saved video and confirm publish status."
+    },
+    {
+      "id": "kamakura-dahliacyan-openwork-moonstone-earrings",
+      "place": "Kamakura, Kanagawa",
+      "productIds": [
+        "dahliacyan-openwork-moonstone-earrings"
+      ],
+      "status": "unknown",
+      "summary": "An AI video was provided in a chat and a TikTok caption was drafted. Approval/publication and archived file link not verified.",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "chat-history-only",
+      "nextAction": "Only if revisiting, inspect the saved clip and confirm publish status."
+    },
+    {
+      "id": "kanagawa-dahliacyan-rhodochrosite-bracelet",
+      "place": "Kamakura, Kanagawa",
+      "productIds": [
+        "dahliacyan-openwork-rhodochrosite-bracelet"
+      ],
+      "status": "prompt_ready",
+      "femaleImagePath": "public/images/styling-jp-dahliacyan-openwork-rhodochrosite-bracelet-v26.webp",
+      "episodePath": "docs/video/episodes/kanagawa-dahliacyan-rhodochrosite-bracelet.md",
+      "summary": "Published site product + its existing female model selected; canonical Flow prompt frozen. No verified generated video or publication.",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "github-product-and-image-confirmed; video-unverified",
+      "nextAction": "Generate and review the 10-second Flow clip using the locked prompt."
+    }
+  ],
+  "observedLinks": [
+    {
+      "url": "https://www.tiktok.com/@soracraftdiary/video/7709718240515083540",
+      "description": "A TikTok video link shared in a prior chat; its exact linkage to the above episodes and its present accessibility are unverified."
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "shonan-shippoyaki-pendant",
+      "reason": "Proposed previously without checking against the actual site; no corresponding published product/model found in this GitHub repository on 2026-11-21. Do not continue as a site-linked episode unless catalog and female asset are added and verified."
+    }
+  ],
+  "changes": [
+    {
+      "date": "2026-11-21",
+      "summary": "Established video-specific SDD specification, copyable Flow prompt template, episode-locked bracelet prompt, and durable status ledger based on verified GitHub sources and conservatively labelled conversation history."
+    }
+  ]
+}
