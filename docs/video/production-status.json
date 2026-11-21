@@ -6,7 +6,7 @@
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "currentEpisodeId": "kanagawa-dahliacyan-rhodochrosite-bracelet",
-  "nextAction": "Open the existing female styling image for the Dahliacyan rhodochrosite bracelet and paste the frozen prompt from its episode markdown into Google Flow, then inspect the generated 10-second clip for pronunciation, face/jewelry continuity and artifacts. Update this ledger with the actual result; do not mark generated or published before verification.",
+  "nextAction": "Run Google Flow frame-to-video again with the exact same site model starting image and version 2 locked prompt. Inspect both wrists throughout all 10 seconds, confirm just one bracelet and listen to natural native Japanese; then update ledger based on the output.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -54,14 +54,14 @@
       "productIds": [
         "dahliacyan-openwork-rhodochrosite-bracelet"
       ],
-      "status": "prompt_ready",
+      "status": "revision_needed",
       "femaleImagePath": "public/images/styling-jp-dahliacyan-openwork-rhodochrosite-bracelet-v26.webp",
       "episodePath": "docs/video/episodes/kanagawa-dahliacyan-rhodochrosite-bracelet.md",
-      "summary": "Published site product + its existing female model selected; canonical Flow prompt frozen. No verified generated video or publication.",
+      "summary": "Initial 10-second Flow video was uploaded and visually reviewed 2026-11-21. Around 5s, the same bracelet appears on BOTH wrists. User reported speech sounded like 'ブレスレ' and not naturally native Japanese. Updated locked episode prompt v2 prevents accessory duplication and replaces the spoken word with shorter Japanese. Revised generation has NOT yet been run or verified.",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "github-product-and-image-confirmed; video-unverified",
-      "nextAction": "Generate and review the 10-second Flow clip using the locked prompt."
+      "verification": "initial-upload-video-visual-review; pronunciation-problem-from-user-report; v2-prompt-ready; redo-unverified",
+      "nextAction": "Run Google Flow frame-to-video again with the exact same site model starting image and version 2 locked prompt. Inspect both wrists throughout all 10 seconds, confirm just one bracelet and listen to natural native Japanese; then update ledger based on the output."
     }
   ],
   "observedLinks": [
@@ -80,6 +80,10 @@
     {
       "date": "2026-11-21",
       "summary": "Established video-specific SDD specification, copyable Flow prompt template, episode-locked bracelet prompt, and durable status ledger based on verified GitHub sources and conservatively labelled conversation history."
+    },
+    {
+      "date": "2026-11-21",
+      "summary": "Reviewed uploaded first bracelet video: duplicate bracelet appeared on both wrists near 5s. User reported 'ブレスレ' and nonnative Japanese. Logged revision_needed; episode locked prompt changed to v2 with one bracelet and shorter natural Japanese; nothing regenerated or published yet."
     }
   ]
 }
