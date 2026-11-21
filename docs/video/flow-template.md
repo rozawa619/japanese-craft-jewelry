@@ -1,6 +1,6 @@
 # Google Flow プロンプト標準テンプレート
 
-更新: 2026-11-21。**先に商品ページに掲載の女性画像をFlowの開始画像へ指定する。** これは次話用テンプレート。進行中の話に確定プロンプトがある場合は、[そのepisode](episodes/kanagawa-dahliacyan-rhodochrosite-bracelet.md)にある全文をそのまま使用する。
+更新: 2026-11-21（v1.1：手首の装身具重複防止と日本語発音修正）。**先に商品ページに掲載の女性画像をFlowの開始画像へ指定する。** これは次話用テンプレート。進行中の話に確定プロンプトがある場合は、[そのepisode](episodes/kanagawa-dahliacyan-rhodochrosite-bracelet.md)にある全文をそのまま使用する。
 
 次の [角括弧] の中だけ、対象商品・開始画像に合わせて入れ替える。動画生成プロンプトを毎回新規発明しない。
 
@@ -23,6 +23,7 @@ JEWELRY — VERY IMPORTANT:
 The woman is wearing the same [JEWELRY DESCRIPTION] shown in the reference image.
 Preserve the original accessory's design, shape, color, and position.
 Do not replace, redesign, or exaggerate the jewelry.
+CRITICAL: Preserve the exact accessory COUNT and the exact wrist or body position from the reference image. Never duplicate it onto the opposite wrist. If there is one bracelet, there must be exactly one bracelet for all frames, with the other wrist completely bare.
 
 SCENE:
 A romantic afternoon date in [LOCATION], Japan.
@@ -31,7 +32,7 @@ Soft natural sunlight, gentle breeze, warm and intimate atmosphere.
 
 ACTION AND TIMING:
 0–2 seconds: The woman looks toward the camera, makes eye contact, and smiles naturally.
-2–7 seconds: She speaks directly to the viewer in natural Japanese while subtly showing her accessory.
+2–7 seconds: She speaks directly to the viewer in natural Japanese while subtly showing her accessory. For bracelets, move ONLY the wrist already wearing it; keep the other wrist bare and low/out of frame. Never raise both wrists together.
 7–10 seconds: She smiles affectionately and looks at the viewer as if waiting for an answer.
 
 EXACT JAPANESE DIALOGUE:
@@ -42,7 +43,7 @@ Pronunciation:
 
 Speak exactly the Japanese dialogue above.
 Use a soft, sweet, natural voice of a Japanese woman in her twenties.
-Native Japanese pronunciation, clear and natural intonation, accurate lip synchronization.
+Natural native Japanese voice and standard Japanese rhythm with no foreign accent; clear and complete words, natural intonation, accurate lip synchronization. If a loanword was mispronounced before, replace it with shorter, more natural Japanese in the dialogue.
 The speech must finish naturally within the video.
 
 CAMERA:
@@ -65,6 +66,8 @@ STRICT NEGATIVE INSTRUCTIONS:
 - No face changes
 - No distorted hands or fingers
 - No jewelry deformation
+- No duplicated accessories, no second bracelet, no jewelry on the opposite wrist
+- No simultaneous lifting of both wrists
 - No unnatural smiling or exaggerated gestures
 - No sudden camera movements
 - No cuts or transitions
