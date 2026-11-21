@@ -5,8 +5,8 @@
   "scope": "TikTok / Google Flow AI POV date clips; site content source is separate",
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
-  "currentEpisodeId": "kanagawa-dahliacyan-rhodochrosite-bracelet",
-  "nextAction": "Before approving or posting, check the full 10-second video and Japanese audio for native pronunciation, look for any bracelet duplication in all frames, then confirm whether it was posted and save its exact TikTok URL.",
+  "currentEpisodeId": "kanagawa-yogado-kamakura-bori-maple-brooch",
+  "nextAction": "Visually inspect the Canva-generated portrait starting image against the actual published woman/model image and maple brooch; reject if face, garment, brooch, or number of accessories changed. If acceptable, use the frozen v1 Flow prompt in the episode to generate a 9:16 clip. Check Japanese speech and accessory continuity. No Flow video has been made yet.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -73,6 +73,24 @@
       "identityReview": "User rejected prior stylized/wearing-image candidate as a different person. Edit exact site image, outfit-only; same face is mandatory.",
       "startFrameChatFilename": "淡い青ブラウスの笑顔_女性ポートレート.png",
       "captionDraft": "「ねえ、この模様きれいでしょ？💕」\n\n今日は神奈川・鎌倉で待ち合わせ🌸\n\n繊細な銀の透かし彫りと、ピンク色の石が可愛いブレスレット✨\n\n鎌倉のアクセサリー工房「Dahliacyan」の作品を、彼女とのデート気分でご紹介。\n\nこんなアクセサリーを着けていたら、どう思う？💗\n\n🇯🇵 Discover Japanese handcrafted jewelry through a romantic POV date.\n\n※AI生成映像を使用しています。\n\n#SORA旅先で待ち合わせ #鎌倉 #神奈川 #ハンドメイドアクセサリー #和アクセサリー #AIデート #JapaneseJewelry"
+    },
+    {
+      "id": "kanagawa-yogado-kamakura-bori-maple-brooch",
+      "place": "Kamakura, Kanagawa",
+      "productIds": [
+        "yogado-kamakura-bori-maple-brooch"
+      ],
+      "status": "idea",
+      "summary": "Selected published Yogado carved maple brooch for autumn POV date. Original site female image visually checked (navy jacket, tied-back hair, maple brooch). Original imported to Canva as asset MAHbjdHRNko and portrait start-frame generation requested, but generated result has not been visually verified/adopted. Google Flow v1 prompt drafted in episode. No video or published post.",
+      "sourceImagePath": "public/images/styling-jp-yogado-kamakura-bori-maple-brooch-v26.webp",
+      "sourceImageDimensions": "768x512",
+      "canvaSourceMediaId": "MAHbjdHRNko",
+      "startFrameStatus": "generation-requested-not-reviewed",
+      "episodePath": "docs/video/episodes/kanagawa-yogado-kamakura-bori-maple-brooch.md",
+      "currentPromptVersion": "v1-ready",
+      "artifactUrl": null,
+      "postUrl": null,
+      "nextAction": "Visually inspect the Canva-generated portrait starting image against the actual published woman/model image and maple brooch; reject if face, garment, brooch, or number of accessories changed. If acceptable, use the frozen v1 Flow prompt in the episode to generate a 9:16 clip. Check Japanese speech and accessory continuity. No Flow video has been made yet."
     }
   ],
   "observedLinks": [
@@ -111,6 +129,10 @@
     {
       "date": "2026-11-21",
       "summary": "User uploaded rendered blue-blouse bracelet 10s video; selected sampled frames reviewed, draft Japanese TikTok caption saved. Audio/full-frame and post status remain unverified."
+    },
+    {
+      "date": "2026-11-21",
+      "summary": "Started new Kamakura Yogado maple brooch POV date episode. Confirmed published product and model source; imported site AI image into Canva, requested 9:16 reference-based generation and drafted Google Flow v1. Canva output not reviewed; no Flow generation or posting claimed."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md"
