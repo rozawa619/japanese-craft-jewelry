@@ -20,7 +20,87 @@
 - 編集前後で顔を横並び目視照合。ブレスレットは片手首に1個だけ。他方の手首は画角外。縦9:16の開始画像が完成するまで動画再生成を進めない。
 - **注意**：以前作った「かわいらしい女性」画像は編集候補としても顔の再現性が不十分で、受入済み・Git保存済み・動画化済みとは扱わない。現時点で合格した縦9:16開始画像は未登録。
 
-## 最新：v4（調査反映・短い指示文、2026-11-21）
+## 最新のFlow指示 v5 — 水色のブラウス版（2026-11-21）
+
+直前のユーザー依頼で**最後に生成した水色のブラウスの女性画像**を開始画像に使う。ユーザーは服の色を変えないよう指定。元の動画/サイト画像との顔の一致は未保証のため、ユーザーが確認した基準画像そのものをFlowへ指定し、その画像から別人へ変化させない。
+
+- 最新開始画像のチャット上の名称: `淡い青ブラウスの笑顔_女性ポートレート.png`。GitHub未登録、別チャットからの恒久参照は未確認。画像ファイルそのものの長期保存場所は別途必要。
+- 固定：画像内の水色のブラウス、茶色の斜め掛けバッグ、顔・髪型・表情、ピンク石入り銀のブレスレット1本（画像内と同じ片手首）。
+- 動作：手首は胸元で静止。カメラ固定。目線・微笑み・小さな首傾げだけ。複製防止の長文禁止指定を増やさない。
+- セリフ：`ねえ、みて。このもよう、きれいでしょ？`（生成音声用、ひらがな）。`ブレスレット`は発話させない。
+- 状態：**v5プロンプト作成済み／Flow生成・採用・公開は未確認**。
+
+### v5 Flowコピー用
+
+```text
+Create a photorealistic 10-second Japanese romantic POV dating video using the uploaded starting image.
+
+VIDEO SETTINGS
+- Vertical 9:16, TikTok
+- 10 seconds
+- One continuous shot
+- First-person boyfriend POV
+- Natural Japanese cinematic realism
+
+CHARACTER AND OUTFIT
+
+Preserve the exact same adult Japanese woman from the starting image.
+
+Keep her facial features, face shape, eyes, nose, smile, hairstyle, bangs, and hair color consistent throughout the video.
+
+Keep her original light powder-blue blouse, its exact color, elegant fabric texture, and the brown crossbody bag strap.
+
+Maintain natural, beautiful facial expressions without changing her identity.
+
+ACCESSORY CONSISTENCY
+
+Preserve the exact same silver openwork bracelet with the pink gemstone shown in the starting image.
+
+The single bracelet stays on the same wrist throughout the entire video.
+
+Keep her bracelet-wearing arm in its original relaxed position near her chest.
+
+Her other wrist remains outside the camera frame.
+
+ACTION
+
+0–2 seconds:
+She looks directly at the viewer and smiles softly, as though enjoying a date together.
+
+2–7 seconds:
+She speaks naturally in Japanese while maintaining warm eye contact. Only subtle facial and lip movements. Her hands and bracelet remain almost completely still.
+
+7–10 seconds:
+After speaking, she gives a slightly brighter, affectionate smile and a tiny natural head tilt, waiting for her boyfriend's reaction.
+
+JAPANESE DIALOGUE
+
+The woman says in a soft, friendly, natural native Japanese voice:
+
+ねえ、みて。このもよう、きれいでしょ？
+
+Use authentic conversational Japanese pronunciation, natural rhythm, and accurate lip synchronization.
+
+CAMERA AND ATMOSPHERE
+
+A gentle romantic date in Kamakura, Japan.
+
+Preserve the existing street background and soft daylight from the starting image.
+
+Fixed camera at natural boyfriend eye level.
+
+Keep her face and the original single bracelet clearly visible throughout.
+
+AUDIO
+
+Natural Japanese female voice with subtle outdoor ambience.
+
+Avoid: duplicate bracelets, additional jewelry, extra arms, distorted fingers, changing faces, outfit color changes, subtitles, logos, background music, sudden camera movement, scene cuts.
+```
+
+---
+
+## 旧版：v4（調査反映・短い指示文、2026-11-21）
 
 [根拠と調査](../research/flow-veo-prompting-2026-11-21.md) / [SDD v1.2](../spec.md) / [共通テンプレートv2.0](../flow-template.md)
 
