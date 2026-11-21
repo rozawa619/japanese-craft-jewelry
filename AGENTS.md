@@ -59,3 +59,7 @@
 - 失敗raw→原因→修正→再検証を残す。75msの固定待機競合はQA側で実条件/rAF待機へ修正済み。未実施の検査・公開・承認・Google掲載を成功と書かず、Chrome emulationと実機Safari/iOSを区別する。
 - 次の作業完了時は仕様・引継ぎ・実測を更新する。必要な納品はpackage:deliveryで新しい版付きZIP/全SHAを確認し、過去0.18.0の1198ファイルの履歴を現在のGit全件数へ読み替えない。
 - fresh cloneの通常buildに私的artifacts、元PNG、外部ZIP/proofは不要。原本編集・歴史的照合が必要な場合だけ[GitHub上の配布資料](docs/handoff-assets.md)を取得する。認証情報や前任PCの絶対パスを必須にしない。
+
+## TikTok / Google Flow 動画制作（サイト制作と別ワークフロー）
+
+「SORA｜旅先で待ち合わせ」のTikTok動画制作では、最初に [動画引継ぎ](docs/video/README.md)、[制作仕様](docs/video/spec.md)、[進捗台帳](docs/video/production-status.json)、進行中のepisodeの固定指示文を読む。サイトの公開商品IDと `src/data/editorial-images.json` の **同じ女性画像** を開始フレームに用い、勝手に新しい女性や未掲載商品を作らない。Flowは原則9:16/10秒/360p/一人称デート/ひらがな中心の音声、字幕とBGMは後編集。毎回指示文を再発明せず、実際の生成・レビュー・公開状態を区別して台帳に反映する。
