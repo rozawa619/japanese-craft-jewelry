@@ -2,10 +2,18 @@
 
 最終更新 2026-11-22。このページは**動画制作と投稿文の引継ぎ入口**です。サイト制作そのものの引継ぎは [START_HERE](../../START_HERE.md) を参照。別チャット・別AIでも、最初にここを開いて制作ルールと現在位置を確認する。
 
+## 新チャット移行（2026-11-22）
+
+**まず [新チャット専用の完全引継ぎ書](NEW_CHAT_HANDOFF.md) を読む。** その中の「6. 新しいChatGPTチャットに貼る引継ぎ文」がコピペ用の正式な開始文。
+
+次シリーズは[京都7商品の候補台帳](kyoto-series-plan.json)（**候補・未制作・ユーザーの正式確定前**）。神奈川の[制作カバレッジ](kanagawa-coverage-audit-2026-11-22.md)と[TikTok重複防止](tiktok-publication-registry.json)を確認し、**新作の前に商品IDと女性画像IDを照合**する。
+
+2026-11-22からの方針は、**サイト掲載の女性の元画像をそのまま表示する**。元画像の変更・新規生成・Canvaでの開始画像作りはユーザーが明示的に依頼した場合に限る。現在の`production-status.json.currentEpisodeId`が古い神奈川の草案を指しても、次作候補が京都であることと混同しない。TikTokの公開投稿全件は直接取得できていないため、公開済みを捏造しない。
+
 ## 30秒で再開する
 
-1. [制作仕様](spec.md)を読み、固定ルールを守る。
-2. **新作選定前**に [TikTok公開・重複防止台帳](tiktok-publication-registry.json) を読む。次に [制作状況（機械可読）](production-status.json)の `currentEpisodeId`、`nextAction` と各話 `status` を読み、商品IDと女性画像の両方で照合する。
+1. **[新チャット引継ぎ書](NEW_CHAT_HANDOFF.md) → [制作仕様](spec.md)**を読み、最新の固定ルールと次の地域を確認する。
+2. **新作選定前**に [TikTok公開・重複防止台帳](tiktok-publication-registry.json) と [京都7商品候補](kyoto-series-plan.json) を読む。次に [制作状況（機械可読）](production-status.json)の `currentEpisodeId`、`nextAction` と各話 `status` を読み、商品IDと女性画像の両方で照合する。
 3. [調査メモ（Google公式）](research/flow-veo-prompting-2026-11-21.md)の **開始画像と短い動作の原則** を確認。**進行中のエピソードは `production-status.json.currentEpisodeId` から必ず取得する**。固定の古いエピソードURLを最新と決めつけない。
 4. **公開・重複防止台帳で未使用と確認できたときだけ、次話はサイト掲載の着用女性画像の原本を提示する。** 加工・Canvaでの開始画像作成はユーザーから明示依頼があった場合だけ。[共通テンプレート](flow-template.md)でFlow指示文が必要な場合も元画像を基本とする。新規画像を勝手に生成しない。
 5. 作業後に **同じターン内で** `production-status.json` と対象episodeを更新。実施したこと・未実施・証拠URL・次アクションを残す。動画ファイル自体がチャット内にしかない場合は別チャットで参照できると偽らず、その旨を記録する。
@@ -58,6 +66,6 @@
 
 ## 別チャットで使う短い開始文
 
-> SORAの動画制作・投稿文の続きです。GitHubの `rozawa619/japanese-craft-jewelry/docs/video/README.md`、`spec.md`、`production-status.json` と対象episodeを最初に読んでください。Instagramリールの紹介文には `instagram-caption-template.md` を使い、作業後はepisodeと台帳を更新してください。
+> SORAの動画制作の新チャットへの引継ぎです。GitHubの `rozawa619/japanese-craft-jewelry/docs/video/NEW_CHAT_HANDOFF.md` を最初に読み、そこに記載のSDD・制作台帳・TikTok重複台帳・京都候補の最新を確認してください。サイト掲載の元女性画像だけを使用し、商品IDと女性画像IDの重複を調べてください。制作後はepisodeと台帳を更新し、未確認のSNS公開を捏造しないでください。
 
 これをChatGPTプロジェクトの指示にも置くと、新チャットでGitHubの確認を促しやすい。**GitHubの資料を読めないチャットに自動同期される仕組みではない**ので、アクセスできない場合はそれを正直に伝える。新しい動画生成の完了・Flow実行・投稿を、文章作成だけで実施済みにしない。
