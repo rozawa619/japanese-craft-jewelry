@@ -6,8 +6,8 @@
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
-  "currentEpisodeId": "kanagawa-yogado-kamakura-bori-camellia-pendant",
-  "nextAction": "Check the complete 10-second camellia pendant clip, especially voice pronunciation and pendant continuity. If posted, record actual TikTok URL; until then published status unconfirmed.",
+  "currentEpisodeId": "kanagawa-hamamatsuya-muku-yosegi-pendant",
+  "nextAction": "Use the exact published original female photo at public/images/yosegi-pendant-styling-v9.webp in Google Flow Frames mode and paste the locked v1 prompt from docs/video/episodes/kanagawa-hamamatsuya-muku-yosegi-pendant.md. Review generated video for face and wooden geometry consistency, native Japanese and pendant in 9:16 frame; record verified MP4 and TikTok URLs only if available.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -130,6 +130,24 @@
         "status": "draft",
         "postUrl": null
       }
+    },
+    {
+      "id": "kanagawa-hamamatsuya-muku-yosegi-pendant",
+      "place": "Hakone, Kanagawa",
+      "productIds": [
+        "hamamatsuya-pendant"
+      ],
+      "status": "prompt_ready",
+      "summary": "Next Kanagawa episode after Kamakura camellia pendant. Verified published site product and original editorial female image; 1536x1024 original image was visually inspected and shown; 10-second 9:16 boyfriend-POV Google Flow prompt v1 prepared. No new AI image created; no Flow video, review, or post yet.",
+      "femaleImagePath": "public/images/yosegi-pendant-styling-v9.webp",
+      "femaleImageDimensions": "1536x1024",
+      "startFrameStatus": "original-site-image-ready-no-edits",
+      "episodePath": "docs/video/episodes/kanagawa-hamamatsuya-muku-yosegi-pendant.md",
+      "currentPromptVersion": "v1-ready",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "GitHub published catalog + editorial image record + original image visually verified",
+      "nextAction": "Use the exact published original female photo at public/images/yosegi-pendant-styling-v9.webp in Google Flow Frames mode and paste the locked v1 prompt from docs/video/episodes/kanagawa-hamamatsuya-muku-yosegi-pendant.md. Review generated video for face and wooden geometry consistency, native Japanese and pendant in 9:16 frame; record verified MP4 and TikTok URLs only if available."
     }
   ],
   "observedLinks": [
@@ -200,6 +218,10 @@
     {
       "date": "2026-11-22",
       "summary": "Saved the bilingual Instagram Reels caption draft for the Kamakura camellia-pendant episode after checking the attached clip. Instagram post URL is pending confirmation."
+    },
+    {
+      "date": "2026-11-22",
+      "summary": "Started new Kanagawa/Hakone Hamamatsuya muku yosegi pendant episode with exact published site's adult woman and one wood pendant; prepared locked Flow v1 prompt and showed original photo. Video and posting not yet done."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
