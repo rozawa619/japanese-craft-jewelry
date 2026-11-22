@@ -60,8 +60,15 @@
 - 次の作業完了時は仕様・引継ぎ・実測を更新する。必要な納品はpackage:deliveryで新しい版付きZIP/全SHAを確認し、過去0.18.0の1198ファイルの履歴を現在のGit全件数へ読み替えない。
 - fresh cloneの通常buildに私的artifacts、元PNG、外部ZIP/proofは不要。原本編集・歴史的照合が必要な場合だけ[GitHub上の配布資料](docs/handoff-assets.md)を取得する。認証情報や前任PCの絶対パスを必須にしない。
 
+## 新チャット引継ぎ（SORA動画・2026-11-22）
+
+- **[新チャット完全引継ぎ](docs/video/NEW_CHAT_HANDOFF.md)** を第一入口に、[TikTok重複防止台帳](docs/video/tiktok-publication-registry.json)、[京都候補7点](docs/video/kyoto-series-plan.json)、[制作進捗](docs/video/production-status.json)、[動画SDD](docs/video/spec.md)、サイトの公開商品/元女性画像を確認する。
+- 神奈川8商品は既存動画・過去素材との重複の可能性があるので、再制作指示がない限り新作候補から一時除外。**次の県は京都を推薦した段階**であり、正式決定・1本目の動画生成・投稿はまだない。
+- **サイトの女性の原本画像をそのまま使う**。ユーザーから明示指示がなければ画像新規生成・加工・クロップ・Canva開始画像を作らない。商品IDと人物画像 assetId/path の重複を双方チェックする。
+- TikTok https://www.tiktok.com/@soracraftdiary の公開投稿全件は現行のアクセス環境で直接取得できず、投稿済みと生成済みは別状態として扱う。作業後は台帳・対象episodeを更新。
+
 ## TikTok・Instagram・Google Flow の動画制作と投稿文
 
-「SORA｜旅先で待ち合わせ」のTikTok動画制作では、最初に [動画引継ぎ](docs/video/README.md)、[制作仕様](docs/video/spec.md)、[進捗台帳](docs/video/production-status.json)、進行中のepisodeの固定指示文を読む。サイトの公開商品IDと `src/data/editorial-images.json` の **同じ女性画像** を開始フレームに用い、勝手に新しい女性や未掲載商品を作らない。Flowは原則9:16/10秒/360p/一人称デート/ひらがな中心の音声、字幕とBGMは後編集。毎回指示文を再発明せず、実際の生成・レビュー・公開状態を区別して台帳に反映する。
+「SORA｜旅先で待ち合わせ」のTikTok動画制作では、最初に [新チャット完全引継ぎ](docs/video/NEW_CHAT_HANDOFF.md)、[動画引継ぎ](docs/video/README.md)、[制作仕様](docs/video/spec.md)、[進捗台帳](docs/video/production-status.json)、進行中のepisodeの固定指示文を読む。サイトの公開商品IDと `src/data/editorial-images.json` の **同じ女性画像** を開始フレームに用い、勝手に新しい女性や未掲載商品を作らない。Flowは原則9:16/対応時10秒/一人称デート/ひらがな中心の音声（解像度はモデル設定で確認）、字幕とBGMは後編集。毎回指示文を再発明せず、実際の生成・レビュー・公開状態を区別して台帳に反映する。
 
 Instagramリールの紹介文は [共通テンプレート](docs/video/instagram-caption-template.md) を使い、本文を対象のepisodeに、下書き・公開確認を [進捗台帳](docs/video/production-status.json) の `instagramCaption` に記録する。
