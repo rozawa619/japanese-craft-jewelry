@@ -6,7 +6,7 @@
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "currentEpisodeId": "kanagawa-yogado-kamakura-bori-maple-brooch",
-  "nextAction": "Visually inspect the Canva-generated portrait starting image against the actual published woman/model image and maple brooch; reject if face, garment, brooch, or number of accessories changed. If acceptable, use the frozen v1 Flow prompt in the episode to generate a 9:16 clip. Check Japanese speech and accessory continuity. No Flow video has been made yet.",
+  "nextAction": "Review the full clip including Japanese audio and check for brooch distortion; confirm the clip is approved or published, and record its actual TikTok link. Next planned Kanagawa episode is Yogado camellia pendant.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -80,17 +80,19 @@
       "productIds": [
         "yogado-kamakura-bori-maple-brooch"
       ],
-      "status": "idea",
-      "summary": "Selected published Yogado carved maple brooch for autumn POV date. Original site female image visually checked (navy jacket, tied-back hair, maple brooch). Original imported to Canva as asset MAHbjdHRNko and portrait start-frame generation requested, but generated result has not been visually verified/adopted. Google Flow v1 prompt drafted in episode. No video or published post.",
+      "status": "generated_unreviewed",
+      "summary": "User uploaded a 10-second vertical clip for the Kamakura maple-brooch episode on 2026-11-22. A 1s/3s/5s/7s/9s visual contact sheet showed the navy-jacket woman smiling, with maple-leaf brooch on the lapel and an autumn outdoor background. Japanese audio and all-frame identity/jewelry checks not verified. TikTok caption drafted; publication not confirmed.",
       "sourceImagePath": "public/images/styling-jp-yogado-kamakura-bori-maple-brooch-v26.webp",
       "sourceImageDimensions": "768x512",
       "canvaSourceMediaId": "MAHbjdHRNko",
-      "startFrameStatus": "generation-requested-not-reviewed",
+      "startFrameStatus": "video-generated-and-sampled-frames-reviewed; exact-start-frame-persistence-unconfirmed",
       "episodePath": "docs/video/episodes/kanagawa-yogado-kamakura-bori-maple-brooch.md",
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "nextAction": "Visually inspect the Canva-generated portrait starting image against the actual published woman/model image and maple brooch; reject if face, garment, brooch, or number of accessories changed. If acceptable, use the frozen v1 Flow prompt in the episode to generate a 9:16 clip. Check Japanese speech and accessory continuity. No Flow video has been made yet."
+      "nextAction": "Review the full clip including Japanese audio and check for brooch distortion; confirm the clip is approved or published, and record its actual TikTok link. Next planned Kanagawa episode is Yogado camellia pendant.",
+      "verification": "10s 512x910 mp4; visually inspected sampled frames at 1,3,5,7,9 seconds; audio unverified; actual public post URL unknown",
+      "captionDraft": "「ねえ、このもみじ、似合うかな？🍁」\n\n今日は神奈川・鎌倉で待ち合わせ💕\n\n彼女の胸元を彩るのは、伝統工芸「鎌倉彫」のもみじブローチ。\n\n木彫りと漆が生み出す、繊細であたたかい美しさ✨\n\nこんな秋の鎌倉デート、してみたい？💗\n\n🇯🇵 Discover Japanese traditional crafts through a romantic POV date.\n\n🍁 陽雅堂｜鎌倉彫ブローチ もみじ\n\n※映像はAI生成によるイメージです。\n\n#SORA旅先で待ち合わせ #鎌倉 #鎌倉彫 #伝統工芸 #和アクセサリー #AIデート #JapaneseCrafts"
     },
     {
       "id": "kanagawa-yogado-kamakura-bori-camellia-pendant",
@@ -154,6 +156,10 @@
     {
       "date": "2026-11-22",
       "summary": "User chose Kanagawa series as the near-term priority. After current maple brooch episode, preselected Yogado Kamakura-bori camellia pendant and visually verified corresponding female site image; reserved next episode without generating/posting."
+    },
+    {
+      "date": "2026-11-22",
+      "summary": "User uploaded 10-second maple brooch video. Reviewed sampled frames, drafted TikTok caption. Recorded generated_unreviewed; audio/full-frame verification and post URL remain outstanding."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
