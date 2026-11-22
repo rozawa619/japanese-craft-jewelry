@@ -7,7 +7,7 @@
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
   "currentEpisodeId": "kanagawa-yogado-kamakura-bori-camellia-pendant",
-  "nextAction": "Use the exact original female styling image from the published site (public/images/styling-jp-yogado-kamakura-bori-camellia-pendant-v26.webp) directly for Google Flow start frame. Do NOT create a new AI image, Canva frame, crop, or outfit edit unless explicitly asked. Flow video not generated yet.",
+  "nextAction": "Check the complete 10-second camellia pendant clip, especially voice pronunciation and pendant continuity. If posted, record actual TikTok URL; until then published status unconfirmed.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -109,21 +109,23 @@
       "productIds": [
         "yogado-kamakura-bori-camellia-pendant"
       ],
-      "status": "prompt_ready",
-      "summary": "Next Kanagawa episode launched. Confirmed published site woman and camellia pendant. Generative 9:16 replacement drifted in identity/jewelry and was rejected. Created a 720x1280 Canva design cropping the exact original 768x512 site image, preserving original pixels; imported image asset verified in Canva. v1 Google Flow prompt written. Canva PNG export / Flow run / video review / TikTok post NOT completed.",
+      "status": "generated_unreviewed",
+      "summary": "User uploaded a 10s 512×910 generated clip. Sampled frames at 1s, 4s, 8s inspected: same-looking adult woman in sage-green top glances down then at camera and smiles, single chest camellia pendant visible in these frames. Full video/audio review and posting not confirmed. TikTok caption/title drafted.",
       "femaleImagePath": "public/images/styling-jp-yogado-kamakura-bori-camellia-pendant-v26.webp",
       "femaleImageDimensions": "768x512",
       "episodePath": "docs/video/episodes/kanagawa-yogado-kamakura-bori-camellia-pendant.md",
       "startFrameStatus": "Canva portrait 720x1280 design ready; PNG export pending",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "GitHub published product & exact model image; Canva design 720x1280 and source image asset 768x512 confirmed",
-      "nextAction": "Use the exact original female styling image from the published site (public/images/styling-jp-yogado-kamakura-bori-camellia-pendant-v26.webp) directly for Google Flow start frame. Do NOT create a new AI image, Canva frame, crop, or outfit edit unless explicitly asked. Flow video not generated yet.",
+      "verification": "MP4 metadata and sampled visual frames at 1s, 4s, 8s; no audio confirmation, no published TikTok URL",
+      "nextAction": "Check the complete 10-second camellia pendant clip, especially voice pronunciation and pendant continuity. If posted, record actual TikTok URL; until then published status unconfirmed.",
       "currentPromptVersion": "v1-ready",
       "canvaDesignId": "DAHbnzBQEow",
       "canvaEditUrl": "https://www.canva.com/d/X4ipupo40I8fKqB",
       "startFrameCropMethod": "original site image; object-fit: cover; no generative redraw",
-      "userImagePreference": "exact published site original image only; show image directly; no new image generation/cropping/styling as default"
+      "userImagePreference": "exact published site original image only; show image directly; no new image generation/cropping/styling as default",
+      "captionDraft": "「ねえ、この椿、似合うかな？🌺」\n\n今日は神奈川・鎌倉で待ち合わせ💕\n\n彼女の胸元に咲く、小さな椿の花。\n\n実はこれ、伝統工芸「鎌倉彫」のペンダントなんです✨\n\n木彫りと漆が生み出す、優しく上品な美しさ。\n\nこんな彼女と鎌倉を歩いてみたい？💗\n\n🌺 陽雅堂｜鎌倉彫ペンダント 椿\n\n🇯🇵 Discover Japanese traditional crafts through a romantic POV date.\n\n※映像はAI生成によるイメージです。\n\n#SORA旅先で待ち合わせ #鎌倉 #鎌倉彫 #伝統工芸 #和アクセサリー #AIデート #JapaneseCrafts",
+      "captionTitleDraft": "鎌倉で待ち合わせ。胸元に咲く椿🌺"
     }
   ],
   "observedLinks": [
@@ -186,6 +188,10 @@
     {
       "date": "2026-11-22",
       "summary": "Added the Instagram Reels caption standard in SDD v1.6. Saved the Kamakura bracelet and maple-brooch drafts in their episodes and recorded Instagram caption status separately."
+    },
+    {
+      "date": "2026-11-22",
+      "summary": "Reviewed user's generated 10s camellia pendant clip via sampled frames and drafted TikTok caption/title. Production status now generated_unreviewed; audio and publishing unverified."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
