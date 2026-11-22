@@ -55,3 +55,7 @@ The woman says in natural, conversational standard Japanese:
 
 Soft room tone. Avoid extra jewelry, duplicated earrings, subtitles, logos, background music and cuts.
 ```
+
+## 共通仕様への反映
+
+2026-11-22に、元画像の女性の顔立ちを保ち、自然にきれいな肌と可愛らしい表情を引き出す方針を今後の全動画の基準に追加しました。 [制作SDD v1.11](../spec.md#動画の肌と表情)

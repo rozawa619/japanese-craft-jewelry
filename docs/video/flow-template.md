@@ -1,6 +1,6 @@
-# Google Flow プロンプト標準テンプレート — SORA v2.1（サイト掲載原本優先）
+# Google Flow プロンプト標準テンプレート — SORA v2.2（サイト掲載原本優先）
 
-更新: 2026-11-22。[制作仕様 v1.10](spec.md)、[新チャット引継ぎ](NEW_CHAT_HANDOFF.md)と[Google公式調査](research/flow-veo-prompting-2026-11-21.md)を先に読む。
+更新: 2026-11-22。[制作仕様 v1.11](spec.md)、[新チャット引継ぎ](NEW_CHAT_HANDOFF.md)と[Google公式調査](research/flow-veo-prompting-2026-11-21.md)を先に読む。
 
 **重要**：以前の長文テンプレートで重複した手首が防げなかったため、開始画像を検査して**短い1シーン/1動作**の指示に変更。Google公式は画像→動画で「画像が示す人物/風景を再説明せず動きに集中」を推奨する。「No / Don't」の長い否定命令も排除。これらは再現性の改善を狙う運用仮説で、重複ゼロを保証するものではない。
 
@@ -22,15 +22,16 @@ Image-to-video from the supplied start frame, vertical 9:16, 10 seconds if suppo
 One continuous boyfriend-POV shot in [LOCATION], Japan.
 
 Keep the woman and [ACCESSORY] exactly as shown in the start frame.
+Soft, even light shows clear, naturally textured skin in her original tone.
 [POSITIVE COMPOSITION: for a bracelet, a close portrait with the single bracelet-wearing wrist visible near her torso and her other arm outside the composition.]
 
-Motion: [ONE SMALL ACTION: she turns her eyes toward the camera and smiles; her bracelet wrist stays relaxed and still].
+Motion: [ONE SMALL ACTION: she meets the viewer's gaze with a small, warm smile. Her bracelet wrist stays relaxed and still].
 Camera: locked-off, natural eye level. Soft ambient sound.
 
 The woman speaks in natural, conversational standard Japanese:
 [ONE SHORT JAPANESE SENTENCE IN HIRAGANA AS NEEDED]
 
-Avoid: duplicated jewelry, extra limbs, distorted hands, captions, logos, jump cuts.
+Avoid: added moles or dark spots, heavy skin smoothing, duplicated jewelry, extra limbs, distorted hands, captions, logos, jump cuts.
 ```
 
 **発話テスト**：Google Cloudのガイドでは `The woman says: 発話` 形式（引用符なし）を紹介。DeepMindでは引用符ありの例もある。字幕が混入する/発音が変なら引用符の有無を単独変数として試す。生成プロンプトに訳・ローマ字・Meaningの解説を入れず、辞書的な読みは episode の人間向け欄に記録。
@@ -43,11 +44,12 @@ Google Flowの **project Settings → Return silent videos** をON（公式ヘ�
 Image-to-video from the supplied start frame, vertical 9:16.
 One continuous boyfriend-POV shot in [LOCATION], Japan.
 Keep the woman and [ACCESSORY] exactly as shown in the start frame.
+Soft, even light shows clear, naturally textured skin in her original tone.
 [POSITIVE COMPOSITION]
-Motion: she looks at the camera and smiles softly. Her hands remain still.
+Motion: she meets the viewer's gaze with a small, warm smile. Her hands remain still.
 Camera: locked-off, natural eye level.
 A quiet, natural smiling reaction, designed for a later Japanese voice-over.
-Avoid: duplicated jewelry, extra limbs, distorted hands, captions, logos, jump cuts.
+Avoid: added moles or dark spots, heavy skin smoothing, duplicated jewelry, extra limbs, distorted hands, captions, logos, jump cuts.
 ```
 
 ## C. 失敗時の順番
