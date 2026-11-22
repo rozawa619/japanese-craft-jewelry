@@ -5,7 +5,7 @@
 
 ## TikTok・Instagram・Google Flowの制作を引き継ぐ場合
 
-サイト制作とは別に、**SORA｜旅先で待ち合わせ**の動画制作ルールと最新進捗を [動画専用の引継ぎ入口](docs/video/README.md) に集約しています。TikTok動画、Flow指示文、サイトの女性を使ったPOVデート動画の依頼は、最初に同入口 → [仕様](docs/video/spec.md) → [進捗](docs/video/production-status.json) → 進行中のepisodeを確認してください。未確認の生成・投稿を完了扱いにせず、作業後は進捗台帳を更新します。
+サイト制作とは別に、**SORA｜旅先で待ち合わせ**の動画制作ルールと最新進捗を [新チャット完全引継ぎ書](docs/video/NEW_CHAT_HANDOFF.md) と [動画専用の引継ぎ入口](docs/video/README.md) に集約しています。TikTok動画、Flow指示文、サイトの女性を使ったPOVデート動画の依頼は、最初に[完全引継ぎ](docs/video/NEW_CHAT_HANDOFF.md) → [仕様](docs/video/spec.md) → [進捗](docs/video/production-status.json) → [TikTok重複防止](docs/video/tiktok-publication-registry.json) → [京都候補](docs/video/kyoto-series-plan.json)を確認してください。ユーザーが追加画像を明示依頼しない限り、サイトの女性原本をそのまま提示してください。未確認の生成・投稿を完了扱いにせず、作業後は進捗台帳を更新します。
 
 Instagramリールの紹介文は、[キャプションテンプレート](docs/video/instagram-caption-template.md)と対象episodeを参照してください。本文と公開確認も同じ動画制作の台帳からたどれます。
 
