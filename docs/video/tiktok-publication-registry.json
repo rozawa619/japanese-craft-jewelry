@@ -44,10 +44,11 @@
       "episodeIds": [
         "hakone-yosegi-60s-compilation"
       ],
-      "productionEvidence": "creation_mentioned_but_unverified",
+      "productionEvidence": "older_or_indirect_association_unverified",
       "publication": "not_verified",
       "tiktokPostUrls": [],
-      "newVideoEligibility": "blocked_avoid_repeated_work"
+      "newVideoEligibility": "blocked_avoid_repeated_work",
+      "evidenceQualification": "Older Hakone clips were mentioned. For hamamatsuya-clip there is also a scene-related video, but its depiction of this exact site product has not been established. Do not mark an exact-product video completed without visual match."
     },
     {
       "productId": "hamamatsuya-clip",
@@ -58,10 +59,11 @@
         "hakone-yosegi-60s-compilation",
         "hakone-yosegi-stone-lane-earrings"
       ],
-      "productionEvidence": "generated_or_user_reported",
+      "productionEvidence": "older_or_indirect_association_unverified",
       "publication": "not_verified",
       "tiktokPostUrls": [],
-      "newVideoEligibility": "blocked_avoid_repeated_work"
+      "newVideoEligibility": "blocked_avoid_repeated_work",
+      "evidenceQualification": "Older Hakone clips were mentioned. For hamamatsuya-clip there is also a scene-related video, but its depiction of this exact site product has not been established. Do not mark an exact-product video completed without visual match."
     },
     {
       "productId": "hamamatsuya-pendant",
@@ -215,8 +217,8 @@
   "counts": {
     "siteProductsLinkedToKanagawa": 8,
     "conservativeDoNotRepeat": 8,
-    "linkedToVideoCreationEvidence": 7,
-    "olderUnverified": 1,
+    "linkedToVideoCreationEvidence": 6,
+    "olderUnverified": 2,
     "retailerRelatedNotKanagawaCertified": 4,
     "verifiedTikTokPostMatches": 0
   },
@@ -224,6 +226,10 @@
     {
       "date": "2026-11-22",
       "event": "Created conservative TikTok duplicate-prevention registry after direct account access was blocked. Linked each Kanagawa product to corresponding site image and episodes; no public post matching claimed."
+    },
+    {
+      "date": "2026-11-22",
+      "event": "Classified earlier Hakone earring references as weak product associations until direct visual matching; six definite generated/user-reported product pairs, two unresolved."
     }
   ]
 }
