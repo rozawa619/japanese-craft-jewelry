@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastUpdated": "2026-11-22",
+  "lastUpdated": "2026-11-23",
   "project": "SORA｜旅先で待ち合わせ",
   "scope": "TikTok / Google Flow AI POV date clips and Instagram Reels captions; site content source is separate",
   "specPath": "docs/video/spec.md",
@@ -237,7 +237,11 @@
       "verification": "Latest catalog, production ledger and the TikTok registry were checked for product ID and styling image asset ID and path. Git blob d81b5c3e815c8872ac2a3c3abe7ba8b51023332c matches the deployed source in 41773dbbf0a8c9c565d6e956751de82307190c44. Reviewed nine frames of the 512×910, 10-second attachment. At 0.8 seconds the eyes and mouth were still offscreen. At 1.5 seconds the face, small cheek marks and both earrings were visible. Audio content and publication were not reviewed. The later 512×910, 10-second attachment was sampled at 0, 0.5, 1.5, 3, 5 and 8 seconds. The face is in view from frame one and the white blouse and main blue flower are visible. Speech and publication are unverified.",
       "nextAction": "Use the saved TikTok caption as a draft. Record the actual TikTok URL once publication and the clip are verified.",
       "statusReason": "A new render has been checked in six frames. Caption draft prepared from the visible styling and the published product information.",
-      "captionDraft": "「ねえ、この青、好き？」💙\n\n京都で待ち合わせ。\n白いブラウスに合わせたのは、群青のパンジー。\n染めた刺繍レースの花が、耳元でふわっと揺れます。\n\nMorphosphere tint 群青パンジーピアス\nこのピアス、白と黒ならどっちの服に合わせたい？\n\nMeet me in Kyoto. Ultramarine pansy earrings in embroidered lace.\n\n※映像はAIで制作した着用イメージです。\n\n#SORA旅先で待ち合わせ #京都 #京友禅 #ピアス #JapaneseJewelry"
+      "captionDraft": "「ねえ、この青、好き？」💙\n\n京都で待ち合わせ。\n白いブラウスに合わせたのは、群青のパンジー。\n染めた刺繍レースの花が、耳元でふわっと揺れます。\n\nMorphosphere tint 群青パンジーピアス\nこのピアス、白と黒ならどっちの服に合わせたい？\n\nMeet me in Kyoto. Ultramarine pansy earrings in embroidered lace.\n\n※映像はAIで制作した着用イメージです。\n\n#SORA旅先で待ち合わせ #京都 #京友禅 #ピアス #JapaneseJewelry",
+      "instagramCaption": {
+        "status": "draft",
+        "postUrl": null
+      }
     }
   ],
   "observedLinks": [
@@ -364,6 +368,10 @@
     {
       "date": "2026-11-22",
       "summary": "Sampled the later Kyoto pansy clip and saved a TikTok caption draft for it. The opening includes her face and the blue pansy."
+    },
+    {
+      "date": "2026-11-23",
+      "summary": "Saved the Instagram Reels caption draft for Kyoto episode one, matching the attached white-blouse and ultramarine pansy clip with Morphosphere’s published product."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",

@@ -84,3 +84,20 @@ Soft room tone. Avoid extra jewelry, duplicated earrings, subtitles, logos, back
 ## 共通仕様への反映
 
 2026-11-22に、元画像の女性の顔立ちを保ち、自然にきれいな肌と可愛らしい表情を引き出す方針を今後の全動画の基準に追加しました。 [制作SDD v1.11](../spec.md#動画の肌と表情)
+
+## Instagramリール紹介文
+
+2026-11-23作成。下書き。
+
+```text
+Meet me in Kyoto 💙
+Ultramarine lace pansies against a white blouse, inspired by Morphosphere’s Kyo-yuzen earrings.
+
+京都で待ち合わせ。
+白いブラウスに、耳元の群青が映えます。
+刺繍レースのパンジーは、Morphosphereの京友禅ピアス「tint パンジー 群青」をモチーフに。
+
+AIで描いた旅のワンシーン｜AI-generated video
+
+#SORA旅先で待ち合わせ #京都 #京友禅 #Kyoto #JapaneseCrafts
+```
