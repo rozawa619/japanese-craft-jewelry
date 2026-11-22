@@ -91,6 +91,23 @@
       "artifactUrl": null,
       "postUrl": null,
       "nextAction": "Visually inspect the Canva-generated portrait starting image against the actual published woman/model image and maple brooch; reject if face, garment, brooch, or number of accessories changed. If acceptable, use the frozen v1 Flow prompt in the episode to generate a 9:16 clip. Check Japanese speech and accessory continuity. No Flow video has been made yet."
+    },
+    {
+      "id": "kanagawa-yogado-kamakura-bori-camellia-pendant",
+      "place": "Kamakura, Kanagawa",
+      "productIds": [
+        "yogado-kamakura-bori-camellia-pendant"
+      ],
+      "status": "idea",
+      "summary": "NEXT after ongoing maple brooch. Verified published product, corresponding original site female model (sage-green top, dark wavy hair, looking down, red-brown wooden camellia pendant). Face and pendant visibly inspected directly via GitHub image. No new start-frame, prompt, Flow video or post created.",
+      "femaleImagePath": "public/images/styling-jp-yogado-kamakura-bori-camellia-pendant-v26.webp",
+      "femaleImageDimensions": "768x512",
+      "episodePath": "docs/video/episodes/kanagawa-yogado-kamakura-bori-camellia-pendant.md",
+      "startFrameStatus": "not_created",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "catalog published+ja product markdown+original image visually inspected",
+      "nextAction": "After current maple brooch work, generate a 9:16 start frame by directly editing the same site image; inspect face and pendant identity. Then write short Google Flow prompt."
     }
   ],
   "observedLinks": [
@@ -133,7 +150,18 @@
     {
       "date": "2026-11-21",
       "summary": "Started new Kamakura Yogado maple brooch POV date episode. Confirmed published product and model source; imported site AI image into Canva, requested 9:16 reference-based generation and drafted Google Flow v1. Canva output not reviewed; no Flow generation or posting claimed."
+    },
+    {
+      "date": "2026-11-22",
+      "summary": "User chose Kanagawa series as the near-term priority. After current maple brooch episode, preselected Yogado Kamakura-bori camellia pendant and visually verified corresponding female site image; reserved next episode without generating/posting."
     }
   ],
-  "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md"
+  "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
+  "seriesFocus": {
+    "mode": "kanagawa-first",
+    "prefectureId": "kanagawa",
+    "scope": "For the foreseeable next episodes, pick published products + corresponding female model images from Kanagawa, including Hakone and Kamakura; expand outside Kanagawa only when user explicitly changes series focus.",
+    "setAt": "2026-11-22"
+  },
+  "nextPlannedEpisodeId": "kanagawa-yogado-kamakura-bori-camellia-pendant"
 }
