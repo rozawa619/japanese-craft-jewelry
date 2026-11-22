@@ -29,12 +29,17 @@
       "productIds": [
         "yogado-kamakura-bori-camellia-brooch"
       ],
-      "status": "unknown",
-      "summary": "A revised video was provided in a chat and a TikTok caption was drafted. Completion/approval and publication URL not verified. Do not treat drafting a caption as publication.",
+      "status": "generated_unreviewed",
+      "summary": "Earlier TikTok caption drafting was noted. Five sampled frames of the attached 10-second vertical clip match the ivory jacket and red camellia brooch in the published site styling image. The Instagram draft is in the episode. Audio, full-frame review and publication are unverified.",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "chat-history-only",
-      "nextAction": "Only if revisiting, inspect the saved video and confirm publish status."
+      "verification": "10s 512x910 attachment; five sampled frames visually compared with the published site styling image.",
+      "nextAction": "Record the corresponding post URL when publication is confirmed.",
+      "episodePath": "docs/video/episodes/kamakura-yogado-camellia-brooch.md",
+      "instagramCaption": {
+        "status": "draft",
+        "postUrl": null
+      }
     },
     {
       "id": "kamakura-dahliacyan-openwork-moonstone-earrings",
@@ -253,6 +258,10 @@
     {
       "date": "2026-11-22",
       "summary": "Matched the attached Kamakura orange-moonstone earring clip to the existing Dahliacyan episode and the published site styling image. Added the episode document and saved an Instagram Reels caption draft."
+    },
+    {
+      "date": "2026-11-22",
+      "summary": "Matched the attached ivory-jacket reel to the Kamakura Yogado camellia-brooch episode, added its episode document and saved the bilingual Instagram caption draft."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
