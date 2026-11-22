@@ -2,7 +2,7 @@
 
 SORAが日本各地の工芸ジュエリーを選んで紹介する、日本語・英語のセレクトメディアです。販売・決済・発送、ブログ、お問い合わせは設けません。
 
-**別のAIへ渡す場合は、[START_HERE.md](START_HERE.md)から読ませてください。** 現在の状態、起動、変更する正本、検証、画像原本の取得、残条件まで辿れます。前の会話や作成者PCのファイルは不要です。
+**別のAIへ渡す場合は、[START_HERE.md](START_HERE.md)から読ませてください。** Webサイト構築を新チャットに移行する場合は、[サイト専用引継ぎ書](docs/SITE_NEW_CHAT_HANDOFF.md)とその中のコピー用プロンプトから始められます。 現在の状態、起動、変更する正本、検証、画像原本の取得、残条件まで辿れます。前の会話や作成者PCのファイルは不要です。
 
 [日本語サイト](https://rozawa619.github.io/japanese-craft-jewelry/ja/) · [English](https://rozawa619.github.io/japanese-craft-jewelry/en/) · [コピー用の引継ぎ依頼文](docs/ai-handoff.md#コピーして使う)
 
