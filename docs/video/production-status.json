@@ -42,12 +42,17 @@
       "productIds": [
         "dahliacyan-openwork-moonstone-earrings"
       ],
-      "status": "unknown",
-      "summary": "An AI video was provided in a chat and a TikTok caption was drafted. Approval/publication and archived file link not verified.",
+      "status": "generated_unreviewed",
+      "summary": "A TikTok caption was drafted in an earlier conversation. Five sampled frames from the attached 10s vertical clip match the beige outfit and orange-drop, silver-toned openwork earrings of the published site styling image. The Instagram caption is in the episode. Audio, full-frame review and publication are unverified.",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "chat-history-only",
-      "nextAction": "Only if revisiting, inspect the saved clip and confirm publish status."
+      "verification": "10 seconds, 512x910; visually compared five sampled frames with the published site styling image.",
+      "nextAction": "When an actual post is confirmed, record its URL in the corresponding channel's production fields.",
+      "episodePath": "docs/video/episodes/kamakura-dahliacyan-openwork-moonstone-earrings.md",
+      "instagramCaption": {
+        "status": "draft",
+        "postUrl": null
+      }
     },
     {
       "id": "kanagawa-dahliacyan-rhodochrosite-bracelet",
@@ -244,6 +249,10 @@
     {
       "date": "2026-11-22",
       "summary": "User clarified Hamamatsuya yosegi pendant had already been made; marked generated_unreviewed based on user report without fabricating MP4/post verification. Selected published Hakone-retailer Maruyama yosegi earring D as distinct next item, with site female original and new Flow script."
+    },
+    {
+      "date": "2026-11-22",
+      "summary": "Matched the attached Kamakura orange-moonstone earring clip to the existing Dahliacyan episode and the published site styling image. Added the episode document and saved an Instagram Reels caption draft."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
