@@ -1,7 +1,7 @@
 # 制作中：神奈川・鎌倉 陽雅堂 鎌倉彫 椿ペンダント
 
 - 選定日: 2026-11-22
-- 状態: **prompt_ready**（サイト原本をそのまま使った720×1280の縦型Canva開始フレーム作成済み、Google Flow指示文作成済み。CanvaからPNG書き出し・Flow動画生成・動画検品・投稿は未実施）
+- 状態: **generated_unreviewed**（ユーザー添付の10秒動画をフレーム抜粋で確認。音声・全フレームの検品と投稿URLは未確認）
 - 想定順序: 現在進行中の「陽雅堂 もみじブローチ」編の**次**
 - シリーズ: 当面は神奈川県内を優先（箱根に限定しない。全国展開は後日ユーザーの指示で再開）。
 - 商品ID: `yogado-kamakura-bori-camellia-pendant`
@@ -16,7 +16,7 @@
 - 動画向け開始画像: **Canvaで編集可能な縦9:16の切り出しレイアウト作成済み**。デザインID `DAHbnzBQEow`。元サイト画像 `768×512` を画角 `720×1280` に `object-fit: cover` 相当で配置し、画素そのものをAI再生成していない。Canva画像要素 `MAHbn0xohhM` が元ファイルと同じ768×512であることを確認。女性の顔とペンダントは元画像そのまま。CanvaからのPNG書き出しはまだ未確認。
 - Canva編集URL: https://www.canva.com/d/X4ipupo40I8fKqB
 - 動画の予定: 落ち着いた鎌倉デートの恋人視点。元画像は無地の淡い背景なので無理に街並みを生成し直さず、**同一人物と商品を最優先**。視線をペンダントからカメラへ上げて微笑むだけ。**ペンダントを手で触らない**（形崩れ・複製防止）。日本語のセリフは `ねえ、みて。このつばき、にあうかな？` に確定。
-- 次にすること: **サイト掲載の元女性画像 `public/images/styling-jp-yogado-kamakura-bori-camellia-pendant-v26.webp` をそのままGoogle Flow Framesにアップロードする。** Canvaで作った加工版のダウンロードは不要（ユーザー明示指定）。下記のv1プロンプトは必要に応じて使い、動画完成・公開は未確認。
+- 次にすること: 添付動画の音声と全フレームを確認し、投稿した場合は各SNSの公開URLを台帳に記録する。
 
 ## 次々回以降の神奈川候補
 
@@ -93,3 +93,20 @@ Avoid: face changes, duplicate pendants, additional jewelry, distorted necklace,
 タイトル案：`鎌倉で待ち合わせ。胸元に咲く椿🌺`
 
 次の操作：音声と全フレームのチェック後、実際にTikTokへ投稿したら投稿URLを保存。
+
+## Instagramリール紹介文
+
+2026-11-22作成。下書き。
+
+```text
+Meet me in Kamakura 🌺
+A red camellia pendant inspired by Yogado’s Kamakura-bori woodcarving, paired with a soft sage-green knit.
+
+神奈川・鎌倉で待ち合わせ。
+セージグリーンのニットの胸元に、赤い椿がひとつ。
+陽雅堂の「鎌倉彫ペンダント 椿」をモチーフにしました。
+
+AIで描いた旅のワンシーン｜AI-generated video
+
+#SORA旅先で待ち合わせ #鎌倉 #鎌倉彫 #Kamakura #JapaneseCrafts
+```
