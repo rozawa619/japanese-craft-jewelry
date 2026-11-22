@@ -6,7 +6,7 @@
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "currentEpisodeId": "kanagawa-yogado-kamakura-bori-camellia-pendant",
-  "nextAction": "Open Canva design DAHbnzBQEow and export its only page as PNG. Use the PNG as Google Flow Frames start frame and paste locked v1 episode prompt. Review video for identity, single camellia pendant, Japanese pronunciation. Save MP4/post URL only after they exist.",
+  "nextAction": "Use the exact original female styling image from the published site (public/images/styling-jp-yogado-kamakura-bori-camellia-pendant-v26.webp) directly for Google Flow start frame. Do NOT create a new AI image, Canva frame, crop, or outfit edit unless explicitly asked. Flow video not generated yet.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -109,11 +109,12 @@
       "artifactUrl": null,
       "postUrl": null,
       "verification": "GitHub published product & exact model image; Canva design 720x1280 and source image asset 768x512 confirmed",
-      "nextAction": "Open Canva design DAHbnzBQEow and export its only page as PNG. Use the PNG as Google Flow Frames start frame and paste locked v1 episode prompt. Review video for identity, single camellia pendant, Japanese pronunciation. Save MP4/post URL only after they exist.",
+      "nextAction": "Use the exact original female styling image from the published site (public/images/styling-jp-yogado-kamakura-bori-camellia-pendant-v26.webp) directly for Google Flow start frame. Do NOT create a new AI image, Canva frame, crop, or outfit edit unless explicitly asked. Flow video not generated yet.",
       "currentPromptVersion": "v1-ready",
       "canvaDesignId": "DAHbnzBQEow",
       "canvaEditUrl": "https://www.canva.com/d/X4ipupo40I8fKqB",
-      "startFrameCropMethod": "original site image; object-fit: cover; no generative redraw"
+      "startFrameCropMethod": "original site image; object-fit: cover; no generative redraw",
+      "userImagePreference": "exact published site original image only; show image directly; no new image generation/cropping/styling as default"
     }
   ],
   "observedLinks": [
@@ -168,6 +169,10 @@
     {
       "date": "2026-11-22",
       "summary": "Started camellia pendant video. Rejected generative candidate due changed woman/jewelry; built exact-pixel 9:16 crop from current site AI image in Canva, confirmed 720x1280 with original image asset; saved v1 Flow prompt. PNG export, Flow generation, post remain pending."
+    },
+    {
+      "date": "2026-11-22",
+      "summary": "User explicitly changed workflow: stop generating or cropping start-frame pictures by default; simply show original female image currently used on website, with product and image links. Updated SDD v1.5, handoff, and camellia episode."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -177,5 +182,6 @@
     "scope": "For the foreseeable next episodes, pick published products + corresponding female model images from Kanagawa, including Hakone and Kamakura; expand outside Kanagawa only when user explicitly changes series focus.",
     "setAt": "2026-11-22"
   },
-  "nextPlannedEpisodeId": null
+  "nextPlannedEpisodeId": null,
+  "imagePolicyDefault": "Show and use exact original image in src/data/editorial-images.json for site-published product; do not create any variant unless explicitly requested (2026-11-22 user directive)."
 }
