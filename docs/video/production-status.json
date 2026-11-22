@@ -7,7 +7,7 @@
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
   "currentEpisodeId": "kyoto-morphosphere-ultramarine-pansy-pierced-earrings",
-  "nextAction": "Check that both eyes, the mouth and the entire visible blue pansy are in the vertical start frame. Generate with prompt v2 and compare the opening and cheek texture against the site original.",
+  "nextAction": "Use the saved TikTok caption as a draft. Record the actual TikTok URL once publication and the clip are verified.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -224,8 +224,8 @@
       "productIds": [
         "morphosphere-ultramarine-pansy-pierced-earrings"
       ],
-      "status": "revision_needed",
-      "summary": "The attached 10-second clip showed the eyes and mouth out of frame at the start and at 0.8 seconds. Later frames showed cheek spots and a second visible earring. The user requested a more appealing opening portrait and fewer visible skin marks. Prompt v2 is ready for regeneration.",
+      "status": "generated_unreviewed",
+      "summary": "A second 10-second clip was supplied for the TikTok caption. At the opening and other sampled frames, her face and the main blue pansy earring are visible with the white blouse. A separate blue detail is partly visible by the far ear. The full clip and speech have not been reviewed.",
       "femaleImageAssetId": "ai-morphosphere-blue-pansy-styling-v9",
       "femaleImagePath": "public/images/morphosphere-blue-pansy-styling-v9.webp",
       "femaleImageDimensions": "1536x1024",
@@ -234,9 +234,10 @@
       "currentPromptVersion": "v2-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "Latest catalog, production ledger and the TikTok registry were checked for product ID and styling image asset ID and path. Git blob d81b5c3e815c8872ac2a3c3abe7ba8b51023332c matches the deployed source in 41773dbbf0a8c9c565d6e956751de82307190c44. Reviewed nine frames of the 512×910, 10-second attachment. At 0.8 seconds the eyes and mouth were still offscreen. At 1.5 seconds the face, small cheek marks and both earrings were visible. Audio content and publication were not reviewed.",
-      "nextAction": "Check that both eyes, the mouth and the entire visible blue pansy are in the vertical start frame. Generate with prompt v2 and compare the opening and cheek texture against the site original.",
-      "statusReason": "The opening crops the face and later frames introduce dark cheek spots and change the reference viewing angle."
+      "verification": "Latest catalog, production ledger and the TikTok registry were checked for product ID and styling image asset ID and path. Git blob d81b5c3e815c8872ac2a3c3abe7ba8b51023332c matches the deployed source in 41773dbbf0a8c9c565d6e956751de82307190c44. Reviewed nine frames of the 512×910, 10-second attachment. At 0.8 seconds the eyes and mouth were still offscreen. At 1.5 seconds the face, small cheek marks and both earrings were visible. Audio content and publication were not reviewed. The later 512×910, 10-second attachment was sampled at 0, 0.5, 1.5, 3, 5 and 8 seconds. The face is in view from frame one and the white blouse and main blue flower are visible. Speech and publication are unverified.",
+      "nextAction": "Use the saved TikTok caption as a draft. Record the actual TikTok URL once publication and the clip are verified.",
+      "statusReason": "A new render has been checked in six frames. Caption draft prepared from the visible styling and the published product information.",
+      "captionDraft": "「ねえ、この青、好き？」💙\n\n京都で待ち合わせ。\n白いブラウスに合わせたのは、群青のパンジー。\n染めた刺繍レースの花が、耳元でふわっと揺れます。\n\nMorphosphere tint 群青パンジーピアス\nこのピアス、白と黒ならどっちの服に合わせたい？\n\nMeet me in Kyoto. Ultramarine pansy earrings in embroidered lace.\n\n※映像はAIで制作した着用イメージです。\n\n#SORA旅先で待ち合わせ #京都 #京友禅 #ピアス #JapaneseJewelry"
     }
   ],
   "observedLinks": [
@@ -359,6 +360,10 @@
     {
       "date": "2026-11-22",
       "summary": "Updated the video SDD to v1.11 and the shared Flow template to v2.2. Future clips preserve the source woman's facial features, show naturally textured skin in soft light, and use a warm, unforced smile. Review generated clips for prominent new facial marks."
+    },
+    {
+      "date": "2026-11-22",
+      "summary": "Sampled the later Kyoto pansy clip and saved a TikTok caption draft for it. The opening includes her face and the blue pansy."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -391,13 +396,13 @@
     "regionId": "kyoto",
     "regionName": "京都府",
     "userConfirmed": true,
-    "status": "revision_needed",
+    "status": "generated_unreviewed",
     "publishedSiteProducts": 7,
     "uniqueImageAssets": 7,
     "createdKyotoEpisodes": 1,
     "planPath": "docs/video/kyoto-series-plan.json",
     "firstSuggestedProductId": "morphosphere-ultramarine-pansy-pierced-earrings",
-    "explanation": "Kyoto is confirmed. The first generated sample was visually reviewed. A revised opening composition and portrait prompt are ready."
+    "explanation": "Kyoto is confirmed. The later render of the first episode has a TikTok caption draft. Publication is pending verification."
   },
   "previousWorkCurrentEpisodeId": "kanagawa-maruyama-yosegi-earring-d"
 }

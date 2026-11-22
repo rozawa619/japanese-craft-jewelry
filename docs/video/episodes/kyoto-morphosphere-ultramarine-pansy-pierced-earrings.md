@@ -1,6 +1,6 @@
 # SORA 京都編 第1話 Morphosphere tint 群青パンジーピアス
 
-2026-11-22に京都編を開始。添付された初回動画の確認後、状態を `revision_needed` に更新しました。再生成用の指示文v2を下記に記録します。
+2026-11-22に京都編を開始。初回の映像を確認して指示文v2を準備しました。後から添付された動画は一部のフレームを確認し、TikTok紹介文を下書きしました。状態は `generated_unreviewed`。
 
 - エピソードIDは `kyoto-morphosphere-ultramarine-pansy-pierced-earrings`。
 - 商品IDは `morphosphere-ultramarine-pansy-pierced-earrings`。染めた刺繍レースで表現した群青のパンジーが、細いチェーンから下がるピアスです。 [サイトの商品ページ](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/morphosphere-ultramarine-pansy-pierced-earrings/)
@@ -13,6 +13,31 @@
 - 10秒、縦512×910。冒頭から0.8秒のサンプルまで、ピアスは見えるものの両目と口が画面右外にあります。1.5秒のサンプルで顔全体が入ります。
 - 顔が見えたサンプルでは前髪と顔の角度が変わり、元画像では目立たない濃い点が頬に出ています。元画像では手前側のピアスだけが見え、後半のサンプルでは両耳のピアスが見えます。
 - ユーザーから冒頭の顔の見切れとホクロのような点について修正希望。音声の内容と投稿は未確認です。
+
+## 後から添付された動画の確認
+
+縦512×910の10秒動画。0秒・0.5秒・1.5秒・3秒・5秒・8秒を確認。冒頭から顔と群青の花が見えます。白いブラウスに緑がぼけて見える背景で、後半は自然な微笑み。奥側の耳にも青い部分が一部見えます。音声と動画全編の検品、公開URLは未確認です。
+
+## TikTok紹介文
+
+2026-11-22作成の下書き。
+
+```text
+「ねえ、この青、好き？」💙
+
+京都で待ち合わせ。
+白いブラウスに合わせたのは、群青のパンジー。
+染めた刺繍レースの花が、耳元でふわっと揺れます。
+
+Morphosphere tint 群青パンジーピアス
+このピアス、白と黒ならどっちの服に合わせたい？
+
+Meet me in Kyoto. Ultramarine pansy earrings in embroidered lace.
+
+※映像はAIで制作した着用イメージです。
+
+#SORA旅先で待ち合わせ #京都 #京友禅 #ピアス #JapaneseJewelry
+```
 
 ## Google Flow用の指示文 v2
 
