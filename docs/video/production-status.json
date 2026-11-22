@@ -7,7 +7,7 @@
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
   "currentEpisodeId": "kanagawa-maruyama-yosegi-earring-d",
-  "nextAction": "Before proposing a new episode, read docs/video/tiktok-publication-registry.json and check both productId and female image assetId/path against existing videos and draft reservations. TikTok @soracraftdiary public profile could not be enumerated through available web access. Acquire post-specific URLs or an authorized connected social-posts list to reconcile publication.",
+  "nextAction": "NEW CHAT: Read docs/video/NEW_CHAT_HANDOFF.md and SDD v1.9, production-status, TikTok duplicate registry, Kyoto plan; summarize verified status. When user requests first Kyoto video, verify latest site published product and original woman asset and show the exact original without edits, then write short Flow prompt. Avoid duplicate women/products; record actual result only.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -319,6 +319,10 @@
     {
       "date": "2026-11-22",
       "summary": "Matched the standalone 15-second Hakone riverside clip with the Hamamatsuya yosegi clip-on earring styling image and saved its bilingual Instagram caption draft."
+    },
+    {
+      "date": "2026-11-22",
+      "summary": "Completed new-chat handoff and machine-readable provisional Kyoto seven-product queue. Linked site and video entrypoints, preserved no-image-edit and TikTok de-dup policy. Kyoto remains an unconfirmed suggestion; no Kyoto videos generated or posted."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -338,5 +342,25 @@
     "verifiedPostLinks": 0,
     "duplicatePolicy": "Block all eight Kanagawa products for new videos until past creation and posting ambiguity resolved. Also block reused identical female image assetId/path across products; avoid re-proposing current maruyama-clip-d prompt as an entirely new idea.",
     "note": "Direct TikTok browsing/search could not enumerate posts; this is NOT a verification of zero posts."
-  }
+  },
+  "handoff": {
+    "readyAt": "2026-11-22",
+    "masterDocument": "docs/video/NEW_CHAT_HANDOFF.md",
+    "nextRegionPlan": "docs/video/kyoto-series-plan.json",
+    "tiktokRegistry": "docs/video/tiktok-publication-registry.json",
+    "instructions": "Read GitHub NEW_CHAT_HANDOFF, SDD, production-status, TikTok registry, latest catalog/editorial images before any new video suggestion; update each after work."
+  },
+  "nextRegionProposal": {
+    "regionId": "kyoto",
+    "regionName": "京都府",
+    "userConfirmed": false,
+    "status": "proposed_not_started",
+    "publishedSiteProducts": 7,
+    "uniqueImageAssets": 7,
+    "createdKyotoEpisodes": 0,
+    "planPath": "docs/video/kyoto-series-plan.json",
+    "firstSuggestedProductId": "morphosphere-ultramarine-pansy-pierced-earrings",
+    "explanation": "Kyoto recommended as largest region after Kanagawa (8 vs 7). User requested complete new-chat handoff; Kyoto series not explicitly confirmed or generated yet."
+  },
+  "previousWorkCurrentEpisodeId": "kanagawa-maruyama-yosegi-earring-d"
 }
