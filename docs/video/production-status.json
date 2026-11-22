@@ -7,7 +7,7 @@
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
   "currentEpisodeId": "kanagawa-maruyama-yosegi-earring-d",
-  "nextAction": "Use the exact site female original image public/images/yosegi-bar-styling-v9.webp for product maruyama-clip-d; paste the locked Flow prompt in docs/video/episodes/kanagawa-maruyama-yosegi-earring-d.md, generate and check ear ornament continuity and Japanese voice. Do not claim product manufactured in Kanagawa; maker/manufacturing location unverified.",
+  "nextAction": "Before proposing a new episode, read docs/video/tiktok-publication-registry.json and check both productId and female image assetId/path against existing videos and draft reservations. TikTok @soracraftdiary public profile could not be enumerated through available web access. Acquire post-specific URLs or an authorized connected social-posts list to reconcile publication.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -284,6 +284,10 @@
     {
       "date": "2026-11-22",
       "summary": "Saved the bilingual Instagram caption for the standalone 10-second Hakone stone-lane walk with Hamamatsuya yosegi earring inspiration."
+    },
+    {
+      "date": "2026-11-22",
+      "summary": "User identified TikTok @soracraftdiary as published account and requested no repeated women/jewelry. Web TikTok profile/post listing inaccessible. Added conservative tiktok-publication-registry.json with all eight Kanagawa published products blocked against duplicate new-production proposals, user-confirmed generated vs unknown separated, and shared-woman site image groups for retailer variants. Do not claim posts verified."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -294,5 +298,14 @@
     "setAt": "2026-11-22"
   },
   "nextPlannedEpisodeId": null,
-  "imagePolicyDefault": "Show and use exact original image in src/data/editorial-images.json for site-published product; do not create any variant unless explicitly requested (2026-11-22 user directive)."
+  "imagePolicyDefault": "Show and use exact original image in src/data/editorial-images.json for site-published product; do not create any variant unless explicitly requested (2026-11-22 user directive).",
+  "tiktokAudit": {
+    "accountUrl": "https://www.tiktok.com/@soracraftdiary",
+    "status": "public_post_list_unavailable",
+    "checkedOn": "2026-11-22",
+    "registryPath": "docs/video/tiktok-publication-registry.json",
+    "verifiedPostLinks": 0,
+    "duplicatePolicy": "Block all eight Kanagawa products for new videos until past creation and posting ambiguity resolved. Also block reused identical female image assetId/path across products; avoid re-proposing current maruyama-clip-d prompt as an entirely new idea.",
+    "note": "Direct TikTok browsing/search could not enumerate posts; this is NOT a verification of zero posts."
+  }
 }
