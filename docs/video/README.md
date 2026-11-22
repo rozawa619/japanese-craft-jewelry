@@ -1,6 +1,6 @@
-# SORA｜旅先で待ち合わせ — TikTok / Google Flow 引継ぎの入口
+# SORA｜旅先で待ち合わせ — 動画制作と投稿文の引継ぎ
 
-最終整理: 2026-11-21。これは **動画制作専用の引継ぎ正本**。サイト制作そのものの引継ぎは [START_HERE](../../START_HERE.md) を参照。別チャット・別AIでも、最初にここを開いて制作ルールと現在位置を確認する。
+最終更新 2026-11-22。このページは**動画制作と投稿文の引継ぎ入口**です。サイト制作そのものの引継ぎは [START_HERE](../../START_HERE.md) を参照。別チャット・別AIでも、最初にここを開いて制作ルールと現在位置を確認する。
 
 ## 30秒で再開する
 
@@ -9,6 +9,12 @@
 3. [調査メモ（Google公式）](research/flow-veo-prompting-2026-11-21.md)の **開始画像と短い動作の原則** を確認。**進行中のエピソードは `production-status.json.currentEpisodeId` から必ず取得する**。固定の古いエピソードURLを最新と決めつけない。
 4. **2026-11-22以降、次話はまずサイト掲載の着用女性画像の原本をそのまま提示する。** 加工・Canvaでの開始画像作成はユーザーから明示依頼があった場合だけ。[共通テンプレート](flow-template.md)でFlow指示文が必要な場合も元画像を基本とする。新規画像を勝手に生成しない。
 5. 作業後に **同じターン内で** `production-status.json` と対象episodeを更新。実施したこと・未実施・証拠URL・次アクションを残す。動画ファイル自体がチャット内にしかない場合は別チャットで参照できると偽らず、その旨を記録する。
+
+## Instagramリールの紹介文
+
+対象の動画とepisodeを確認し、[Instagramリール紹介文テンプレート](instagram-caption-template.md)で日英のキャプションを作ります。「インスタ用の紹介文」に動画が添付されている場合は、その動画に対応するepisodeを使います。
+
+コピペ用の本文はepisodeの `Instagramリール紹介文` に保存し、台帳の `instagramCaption` で下書きとInstagramの公開URLを管理します。
 
 ## 判断の優先順位
 
@@ -44,6 +50,6 @@
 
 ## 別チャットで使う短い開始文
 
-> SORAのTikTok動画制作の続きです。GitHubの `rozawa619/japanese-craft-jewelry/docs/video/README.md`、`spec.md`、`production-status.json`、進行中のepisodeを最初に読み、固定ルールを守って続きから進めてください。作業したら台帳も更新してください。すでに決まったことを聞き直さないでください。
+> SORAの動画制作・投稿文の続きです。GitHubの `rozawa619/japanese-craft-jewelry/docs/video/README.md`、`spec.md`、`production-status.json` と対象episodeを最初に読んでください。Instagramリールの紹介文には `instagram-caption-template.md` を使い、作業後はepisodeと台帳を更新してください。
 
 これをChatGPTプロジェクトの指示にも置くと、新チャットでGitHubの確認を促しやすい。**GitHubの資料を読めないチャットに自動同期される仕組みではない**ので、アクセスできない場合はそれを正直に伝える。新しい動画生成の完了・Flow実行・投稿を、文章作成だけで実施済みにしない。

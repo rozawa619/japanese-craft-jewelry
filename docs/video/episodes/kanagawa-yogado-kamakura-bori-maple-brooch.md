@@ -16,6 +16,25 @@
 - 品質ゲート: 元サイトの女性と顔・髪・服が同じか。もみじブローチの形・位置・個数が一定か。人物が別人になっていないか。標準日本語の発音が自然か。
 - 次にすること: Canva生成された縦9:16開始画像を確認・採用（サイト元画像と横並び照合）。合格ならその画像をFlowへアップロードし下記プロンプトで生成。動画検品と投稿は未実施。
 
+## Instagramリール紹介文
+
+2026-11-22作成。下書き。
+
+```text
+Meet me in Kamakura 🍁
+A touch of autumn on a navy lapel, inspired by Yogado’s maple-leaf brooch and the art of Kamakura-bori woodcarving.
+
+神奈川・鎌倉で待ち合わせ。🍁
+紺のジャケットの襟元に、赤と橙のもみじ。
+陽雅堂の鎌倉彫「ブローチ もみじ」をモチーフに、秋の装いを描きました。
+
+AIで描いた旅のワンシーン｜AI-generated video
+
+#SORA旅先で待ち合わせ #鎌倉 #鎌倉彫 #Kamakura #JapaneseCrafts
+```
+
+商品名の参照先は[陽雅堂の公式商品ページ](https://shop.yogado.jp/item/detail/wb0030.html)。
+
 ## Google Flow貼り付け用 v1
 
 ```text

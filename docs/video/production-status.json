@@ -1,10 +1,11 @@
 {
   "schemaVersion": 1,
-  "lastUpdated": "2026-11-21",
+  "lastUpdated": "2026-11-22",
   "project": "SORA｜旅先で待ち合わせ",
-  "scope": "TikTok / Google Flow AI POV date clips; site content source is separate",
+  "scope": "TikTok / Google Flow AI POV date clips and Instagram Reels captions; site content source is separate",
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
+  "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
   "currentEpisodeId": "kanagawa-yogado-kamakura-bori-camellia-pendant",
   "nextAction": "Use the exact original female styling image from the published site (public/images/styling-jp-yogado-kamakura-bori-camellia-pendant-v26.webp) directly for Google Flow start frame. Do NOT create a new AI image, Canva frame, crop, or outfit edit unless explicitly asked. Flow video not generated yet.",
   "episodes": [
@@ -72,7 +73,11 @@
       "audioFallback": "Use Flow project Settings > Return silent videos and add Japanese voice in post only if speech failures persist; lip sync requires separate review",
       "identityReview": "User rejected prior stylized/wearing-image candidate as a different person. Edit exact site image, outfit-only; same face is mandatory.",
       "startFrameChatFilename": "淡い青ブラウスの笑顔_女性ポートレート.png",
-      "captionDraft": "「ねえ、この模様きれいでしょ？💕」\n\n今日は神奈川・鎌倉で待ち合わせ🌸\n\n繊細な銀の透かし彫りと、ピンク色の石が可愛いブレスレット✨\n\n鎌倉のアクセサリー工房「Dahliacyan」の作品を、彼女とのデート気分でご紹介。\n\nこんなアクセサリーを着けていたら、どう思う？💗\n\n🇯🇵 Discover Japanese handcrafted jewelry through a romantic POV date.\n\n※AI生成映像を使用しています。\n\n#SORA旅先で待ち合わせ #鎌倉 #神奈川 #ハンドメイドアクセサリー #和アクセサリー #AIデート #JapaneseJewelry"
+      "captionDraft": "「ねえ、この模様きれいでしょ？💕」\n\n今日は神奈川・鎌倉で待ち合わせ🌸\n\n繊細な銀の透かし彫りと、ピンク色の石が可愛いブレスレット✨\n\n鎌倉のアクセサリー工房「Dahliacyan」の作品を、彼女とのデート気分でご紹介。\n\nこんなアクセサリーを着けていたら、どう思う？💗\n\n🇯🇵 Discover Japanese handcrafted jewelry through a romantic POV date.\n\n※AI生成映像を使用しています。\n\n#SORA旅先で待ち合わせ #鎌倉 #神奈川 #ハンドメイドアクセサリー #和アクセサリー #AIデート #JapaneseJewelry",
+      "instagramCaption": {
+        "status": "draft",
+        "postUrl": null
+      }
     },
     {
       "id": "kanagawa-yogado-kamakura-bori-maple-brooch",
@@ -92,7 +97,11 @@
       "postUrl": null,
       "nextAction": "Review the full clip including Japanese audio and check for brooch distortion; confirm the clip is approved or published, and record its actual TikTok link. Next planned Kanagawa episode is Yogado camellia pendant.",
       "verification": "10s 512x910 mp4; visually inspected sampled frames at 1,3,5,7,9 seconds; audio unverified; actual public post URL unknown",
-      "captionDraft": "「ねえ、このもみじ、似合うかな？🍁」\n\n今日は神奈川・鎌倉で待ち合わせ💕\n\n彼女の胸元を彩るのは、伝統工芸「鎌倉彫」のもみじブローチ。\n\n木彫りと漆が生み出す、繊細であたたかい美しさ✨\n\nこんな秋の鎌倉デート、してみたい？💗\n\n🇯🇵 Discover Japanese traditional crafts through a romantic POV date.\n\n🍁 陽雅堂｜鎌倉彫ブローチ もみじ\n\n※映像はAI生成によるイメージです。\n\n#SORA旅先で待ち合わせ #鎌倉 #鎌倉彫 #伝統工芸 #和アクセサリー #AIデート #JapaneseCrafts"
+      "captionDraft": "「ねえ、このもみじ、似合うかな？🍁」\n\n今日は神奈川・鎌倉で待ち合わせ💕\n\n彼女の胸元を彩るのは、伝統工芸「鎌倉彫」のもみじブローチ。\n\n木彫りと漆が生み出す、繊細であたたかい美しさ✨\n\nこんな秋の鎌倉デート、してみたい？💗\n\n🇯🇵 Discover Japanese traditional crafts through a romantic POV date.\n\n🍁 陽雅堂｜鎌倉彫ブローチ もみじ\n\n※映像はAI生成によるイメージです。\n\n#SORA旅先で待ち合わせ #鎌倉 #鎌倉彫 #伝統工芸 #和アクセサリー #AIデート #JapaneseCrafts",
+      "instagramCaption": {
+        "status": "draft",
+        "postUrl": null
+      }
     },
     {
       "id": "kanagawa-yogado-kamakura-bori-camellia-pendant",
@@ -173,6 +182,10 @@
     {
       "date": "2026-11-22",
       "summary": "User explicitly changed workflow: stop generating or cropping start-frame pictures by default; simply show original female image currently used on website, with product and image links. Updated SDD v1.5, handoff, and camellia episode."
+    },
+    {
+      "date": "2026-11-22",
+      "summary": "Added the Instagram Reels caption standard in SDD v1.6. Saved the Kamakura bracelet and maple-brooch drafts in their episodes and recorded Instagram caption status separately."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",

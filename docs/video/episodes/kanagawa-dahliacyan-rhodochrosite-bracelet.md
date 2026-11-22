@@ -12,6 +12,23 @@
 - 成果物: 初回生成MP4は2026-11-21にチャット添付で確認したがGitHub上の永続リンクは未記録。別チャットから過去添付動画を開けるとは限らない。
 
 
+## Instagramリール紹介文
+
+2026-11-21作成、2026-11-22に共通タグを適用。下書き。
+
+```text
+Meet me in Kamakura 🌿
+A touch of pink on a silver-toned bracelet, peeking out from a pale blue sleeve.
+
+鎌倉で待ち合わせ。
+淡いブルーの袖口に、ピンクがきらり。
+銀の透かし彫りをイメージしたブレスレットを合わせて、今日はどこを歩こう？
+
+AIで描いた旅のワンシーン｜AI-generated video
+
+#SORA旅先で待ち合わせ #鎌倉 #ブレスレット #Kamakura #JapaneseCraftJewelry
+```
+
 ## 画像デザインに関する最新の修正依頼（2026-11-21）
 
 - ユーザーがFlow出力の女性について「服がおばさんっぽい、可愛くない」と指摘。
