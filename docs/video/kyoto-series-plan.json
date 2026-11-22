@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastUpdated": "2026-11-22",
+  "lastUpdated": "2026-11-23",
   "purpose": "SORA next region video production candidates from the published Japanese Craft Jewelry site; not proof of TikTok posts.",
   "region": {
     "id": "kyoto",
@@ -12,7 +12,7 @@
   "counts": {
     "publishedProducts": 7,
     "distinctOriginalStylingImageAssets": 7,
-    "registeredVideoEpisodesForKyoto": 1
+    "registeredVideoEpisodesForKyoto": 2
   },
   "proposedOrder": [
     {
@@ -39,9 +39,11 @@
       "imagePath": "public/images/nakajima-sakura-damascene-pendant-styling-v9.webp",
       "imageAssetId": "ai-nakajima-sakura-damascene-pendant-styling-v9",
       "originalImageUrl": "https://raw.githubusercontent.com/rozawa619/japanese-craft-jewelry/main/public/images/nakajima-sakura-damascene-pendant-styling-v9.webp",
-      "status": "candidate_not_started",
-      "createdEpisodeIds": [],
-      "note": "選択順は提案。ユーザーの確認で変更可"
+      "status": "prompt_ready",
+      "createdEpisodeIds": [
+        "kyoto-nakajima-pear-sakura-pendant"
+      ],
+      "note": "サイト元画像とFlow指示文を準備済み。冒頭の縦構図で目元・口元・ペンダント全体を確認する。"
     },
     {
       "priority": 3,

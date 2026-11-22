@@ -6,8 +6,8 @@
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
-  "currentEpisodeId": "kyoto-morphosphere-ultramarine-pansy-pierced-earrings",
-  "nextAction": "Use the saved TikTok caption as a draft. Record the actual TikTok URL once publication and the clip are verified.",
+  "currentEpisodeId": "kyoto-nakajima-pear-sakura-pendant",
+  "nextAction": "Use the original site image and v1 Flow prompt. Check the eyes, mouth and whole pendant in the vertical opening, then assess the generated clip against the original face, skin and pendant.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -242,6 +242,25 @@
         "status": "draft",
         "postUrl": null
       }
+    },
+    {
+      "id": "kyoto-nakajima-pear-sakura-pendant",
+      "place": "Kyoto, Japan",
+      "productIds": [
+        "nakajima-pear-sakura-pendant"
+      ],
+      "status": "prompt_ready",
+      "summary": "The second Kyoto episode features the sakura side of the Nakajima Zogan pear pendant. The site original and Flow prompt v1 are ready.",
+      "femaleImageAssetId": "ai-nakajima-sakura-damascene-pendant-styling-v9",
+      "femaleImagePath": "public/images/nakajima-sakura-damascene-pendant-styling-v9.webp",
+      "femaleImageDimensions": "1536x1024",
+      "episodePath": "docs/video/episodes/kyoto-nakajima-pear-sakura-pendant.md",
+      "startFrameStatus": "Original site WebP visually inspected and matched to the deployed application commit",
+      "currentPromptVersion": "v1-ready",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "Checked the product ID, styling image asset ID and image path against the catalog, production ledger, Kyoto plan and TikTok registry. Git blob 79a9c3a233a399fe569a74771d50255a3bfbe163 matches the deployed source in 08cb6212909981bf08bafb166225e077038aae4c.",
+      "nextAction": "Use the original site image and v1 Flow prompt. Check the eyes, mouth and whole pendant in the vertical opening, then assess the generated clip against the original face, skin and pendant."
     }
   ],
   "observedLinks": [
@@ -372,6 +391,10 @@
     {
       "date": "2026-11-23",
       "summary": "Saved the Instagram Reels caption draft for Kyoto episode one, matching the attached white-blouse and ultramarine pansy clip with Morphosphere’s published product."
+    },
+    {
+      "date": "2026-11-23",
+      "summary": "Prepared Kyoto episode 2 for Nakajima Zogan's pear-shaped sakura pendant. Checked the unused site image and saved Flow prompt v1 with the face and full pendant visible from the opening."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -404,13 +427,13 @@
     "regionId": "kyoto",
     "regionName": "京都府",
     "userConfirmed": true,
-    "status": "generated_unreviewed",
+    "status": "prompt_ready",
     "publishedSiteProducts": 7,
     "uniqueImageAssets": 7,
-    "createdKyotoEpisodes": 1,
+    "createdKyotoEpisodes": 2,
     "planPath": "docs/video/kyoto-series-plan.json",
     "firstSuggestedProductId": "morphosphere-ultramarine-pansy-pierced-earrings",
-    "explanation": "Kyoto is confirmed. The later render of the first episode has a TikTok caption draft. Publication is pending verification."
+    "explanation": "The user's Kyoto series now has two episode records. The second episode's original site image and Flow prompt are ready."
   },
-  "previousWorkCurrentEpisodeId": "kanagawa-maruyama-yosegi-earring-d"
+  "previousWorkCurrentEpisodeId": "kyoto-morphosphere-ultramarine-pansy-pierced-earrings"
 }
