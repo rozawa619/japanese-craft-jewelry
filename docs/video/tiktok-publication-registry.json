@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "lastChecked": "2026-11-22",
+  "account": {
+    "handle": "@soracraftdiary",
+    "profileUrl": "https://www.tiktok.com/@soracraftdiary",
+    "platform": "TikTok"
+  },
+  "accountInspection": {
+    "status": "unavailable_from_available_web_view",
+    "coverage": "none",
+    "result": "Direct public TikTok profile and a previously shared post link could not be opened; exact-handle search returned no indexed video entries. Thus no enumeration of public uploads or post-to-product matches was possible.",
+    "attemptedMethods": [
+      "public TikTok profile URL",
+      "public individual TikTok video URL",
+      "exact account handle search",
+      "nonauthenticated public alternate profile routes"
+    ],
+    "warning": "Do not claim the public account has zero videos or that any video is published without post-specific verification."
+  },
+  "knownPostLinks": [
+    {
+      "url": "https://www.tiktok.com/@soracraftdiary/video/7709718240515083540",
+      "source": "Earlier TikTok link recorded in production-status.json",
+      "availability": "not_accessible",
+      "productId": null,
+      "identityMatch": "not_confirmed"
+    }
+  ],
+  "policy": {
+    "singleSource": "GitHub product catalog + editorial image registry + this TikTok-publication registry + per-episode production ledger",
+    "preflight": "Before proposing any video, re-fetch the current site product list, image registry, and production-status. Block a product if listed here as previously created, possibly in earlier production, or already published. Also block reuse of the SAME original female styling image or asset ID across other products when any record is published, created or reserved. Do not auto-clear unknown states.",
+    "sensitivity": "Conservatively block ambiguous older material to avoid duplicate proposals; user can explicitly authorize a remake.",
+    "recording": "Only set publication='verified_published' with a directly inspected TikTok post URL, screenshot showing post and identity, or an explicit user-provided matching post link where the content is reviewed. Preserve productId, imageAssetId, episodeId, post URL, observed date and confidence.",
+    "nextStep": "Obtain a profile export, a list of published TikTok post URLs, or access through a connected service that can list TikTok posts. Match each video to product and site woman by video frames or thumbnails."
+  },
+  "kanagawaPublishedProductCount": 8,
+  "kanagawaProducts": [
+    {
+      "productId": "hamamatsuya-catch-pierced",
+      "productName": "浜松屋 寄木キャッチ付ピアス",
+      "siteImagePath": "images/hakone-yosegi-pierced-styling-v9.webp",
+      "imageAssetId": "ai-hakone-yosegi-pierced-styling-v9",
+      "episodeIds": [
+        "hakone-yosegi-60s-compilation"
+      ],
+      "productionEvidence": "creation_mentioned_but_unverified",
+      "publication": "not_verified",
+      "tiktokPostUrls": [],
+      "newVideoEligibility": "blocked_avoid_repeated_work"
+    },
+    {
+      "productId": "hamamatsuya-clip",
+      "productName": "浜松屋 寄木イヤリング",
+      "siteImagePath": "images/hakone-yosegi-clipon-styling-v9.webp",
+      "imageAssetId": "ai-hakone-yosegi-clipon-styling-v9",
+      "episodeIds": [
+        "hakone-yosegi-60s-compilation",
+        "hakone-yosegi-stone-lane-earrings"
+      ],
+      "productionEvidence": "generated_or_user_reported",
+      "publication": "not_verified",
+      "tiktokPostUrls": [],
+      "newVideoEligibility": "blocked_avoid_repeated_work"
+    },
+    {
+      "productId": "hamamatsuya-pendant",
+      "productName": "浜松屋 無垢寄木ペンダント",
+      "siteImagePath": "images/yosegi-pendant-styling-v9.webp",
+      "imageAssetId": "ai-yosegi-pendant-styling-v9",
+      "episodeIds": [
+        "kanagawa-hamamatsuya-muku-yosegi-pendant"
+      ],
+      "productionEvidence": "generated_or_user_reported",
+      "publication": "not_verified",
+      "tiktokPostUrls": [],
+      "newVideoEligibility": "blocked_avoid_repeated_work"
+    },
+    {
+      "productId": "yogado-kamakura-bori-camellia-brooch",
+      "productName": "陽雅堂 鎌倉彫ブローチ 椿",
+      "siteImagePath": "images/styling-jp-yogado-kamakura-bori-camellia-brooch-v26.webp",
+      "imageAssetId": "ai-styling-jp-yogado-kamakura-bori-camellia-brooch-v26",
+      "episodeIds": [
+        "kamakura-yogado-camellia-brooch"
+      ],
+      "productionEvidence": "generated_or_user_reported",
+      "publication": "not_verified",
+      "tiktokPostUrls": [],
+      "newVideoEligibility": "blocked_avoid_repeated_work"
+    },
+    {
+      "productId": "yogado-kamakura-bori-maple-brooch",
+      "productName": "陽雅堂 鎌倉彫ブローチ もみじ",
+      "siteImagePath": "images/styling-jp-yogado-kamakura-bori-maple-brooch-v26.webp",
+      "imageAssetId": "ai-styling-jp-yogado-kamakura-bori-maple-brooch-v26",
+      "episodeIds": [
+        "kanagawa-yogado-kamakura-bori-maple-brooch"
+      ],
+      "productionEvidence": "generated_or_user_reported",
+      "publication": "not_verified",
+      "tiktokPostUrls": [],
+      "newVideoEligibility": "blocked_avoid_repeated_work"
+    },
+    {
+      "productId": "yogado-kamakura-bori-camellia-pendant",
+      "productName": "陽雅堂 鎌倉彫ペンダント 椿",
+      "siteImagePath": "images/styling-jp-yogado-kamakura-bori-camellia-pendant-v26.webp",
+      "imageAssetId": "ai-styling-jp-yogado-kamakura-bori-camellia-pendant-v26",
+      "episodeIds": [
+        "kanagawa-yogado-kamakura-bori-camellia-pendant"
+      ],
+      "productionEvidence": "generated_or_user_reported",
+      "publication": "not_verified",
+      "tiktokPostUrls": [],
+      "newVideoEligibility": "blocked_avoid_repeated_work"
+    },
+    {
+      "productId": "dahliacyan-openwork-moonstone-earrings",
+      "productName": "Dahliacyan 透かし彫りピアス オレンジムーンストーン",
+      "siteImagePath": "images/styling-jp-dahliacyan-openwork-moonstone-earrings-v26.webp",
+      "imageAssetId": "ai-styling-jp-dahliacyan-openwork-moonstone-earrings-v26",
+      "episodeIds": [
+        "kamakura-dahliacyan-openwork-moonstone-earrings"
+      ],
+      "productionEvidence": "generated_or_user_reported",
+      "publication": "not_verified",
+      "tiktokPostUrls": [],
+      "newVideoEligibility": "blocked_avoid_repeated_work"
+    },
+    {
+      "productId": "dahliacyan-openwork-rhodochrosite-bracelet",
+      "productName": "Dahliacyan 透かし彫りブレスレット インカローズ",
+      "siteImagePath": "images/styling-jp-dahliacyan-openwork-rhodochrosite-bracelet-v26.webp",
+      "imageAssetId": "ai-styling-jp-dahliacyan-openwork-rhodochrosite-bracelet-v26",
+      "episodeIds": [
+        "kanagawa-dahliacyan-rhodochrosite-bracelet"
+      ],
+      "productionEvidence": "generated_or_user_reported",
+      "publication": "not_verified",
+      "tiktokPostUrls": [],
+      "newVideoEligibility": "blocked_avoid_repeated_work"
+    }
+  ],
+  "kanagawaRetailerProducts": [
+    {
+      "productId": "maruyama-clip-c",
+      "productName": "寄木イヤリング C",
+      "siteImagePath": "images/yosegi-star-styling-v9.webp",
+      "imageAssetId": "ai-yosegi-star-styling-v9",
+      "episodeIds": [],
+      "productionEvidence": "no_production_record",
+      "publication": "not_verified",
+      "tiktokPostUrls": [],
+      "newVideoEligibility": "candidate_only_after_public_post_reconciliation",
+      "note": "Retailer in Hakone; individual manufacturing origin not confirmed."
+    },
+    {
+      "productId": "maruyama-clip-d",
+      "productName": "寄木イヤリング D",
+      "siteImagePath": "images/yosegi-bar-styling-v9.webp",
+      "imageAssetId": "ai-yosegi-bar-styling-v9",
+      "episodeIds": [
+        "kanagawa-maruyama-yosegi-earring-d"
+      ],
+      "productionEvidence": "prompt_only_no_video_verified",
+      "publication": "not_verified",
+      "tiktokPostUrls": [],
+      "newVideoEligibility": "reserved_draft",
+      "note": "Retailer in Hakone; individual manufacturing origin not confirmed."
+    },
+    {
+      "productId": "maruyama-pierced-c",
+      "productName": "寄木ピアス C",
+      "siteImagePath": "images/yosegi-star-styling-v9.webp",
+      "imageAssetId": "ai-yosegi-star-styling-v9",
+      "episodeIds": [],
+      "productionEvidence": "no_production_record",
+      "publication": "not_verified",
+      "tiktokPostUrls": [],
+      "newVideoEligibility": "candidate_only_after_public_post_reconciliation",
+      "note": "Retailer in Hakone; individual manufacturing origin not confirmed."
+    },
+    {
+      "productId": "maruyama-pierced-d",
+      "productName": "寄木ピアス D",
+      "siteImagePath": "images/yosegi-bar-styling-v9.webp",
+      "imageAssetId": "ai-yosegi-bar-styling-v9",
+      "episodeIds": [],
+      "productionEvidence": "no_production_record",
+      "publication": "not_verified",
+      "tiktokPostUrls": [],
+      "newVideoEligibility": "candidate_only_after_public_post_reconciliation",
+      "note": "Retailer in Hakone; individual manufacturing origin not confirmed."
+    }
+  ],
+  "sharedImageGroups": [
+    {
+      "imagePath": "images/yosegi-star-styling-v9.webp",
+      "productIds": [
+        "maruyama-clip-c",
+        "maruyama-pierced-c"
+      ],
+      "note": "Same styling image; avoid using it again for a different product if a video featuring this woman is already published or reserved."
+    },
+    {
+      "imagePath": "images/yosegi-bar-styling-v9.webp",
+      "productIds": [
+        "maruyama-clip-d",
+        "maruyama-pierced-d"
+      ],
+      "note": "Same styling image; avoid using it again for a different product if a video featuring this woman is already published or reserved."
+    }
+  ],
+  "counts": {
+    "siteProductsLinkedToKanagawa": 8,
+    "conservativeDoNotRepeat": 8,
+    "linkedToVideoCreationEvidence": 7,
+    "olderUnverified": 1,
+    "retailerRelatedNotKanagawaCertified": 4,
+    "verifiedTikTokPostMatches": 0
+  },
+  "changeLog": [
+    {
+      "date": "2026-11-22",
+      "event": "Created conservative TikTok duplicate-prevention registry after direct account access was blocked. Linked each Kanagawa product to corresponding site image and episodes; no public post matching claimed."
+    }
+  ]
+}
