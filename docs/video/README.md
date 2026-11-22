@@ -5,10 +5,18 @@
 ## 30秒で再開する
 
 1. [制作仕様](spec.md)を読み、固定ルールを守る。
-2. [制作状況（機械可読）](production-status.json)の `currentEpisodeId`、`nextAction` と各話 `status` を読む。
+2. **新作選定前**に [TikTok公開・重複防止台帳](tiktok-publication-registry.json) を読む。次に [制作状況（機械可読）](production-status.json)の `currentEpisodeId`、`nextAction` と各話 `status` を読み、商品IDと女性画像の両方で照合する。
 3. [調査メモ（Google公式）](research/flow-veo-prompting-2026-11-21.md)の **開始画像と短い動作の原則** を確認。**進行中のエピソードは `production-status.json.currentEpisodeId` から必ず取得する**。固定の古いエピソードURLを最新と決めつけない。
-4. **2026-11-22以降、次話はまずサイト掲載の着用女性画像の原本をそのまま提示する。** 加工・Canvaでの開始画像作成はユーザーから明示依頼があった場合だけ。[共通テンプレート](flow-template.md)でFlow指示文が必要な場合も元画像を基本とする。新規画像を勝手に生成しない。
+4. **公開・重複防止台帳で未使用と確認できたときだけ、次話はサイト掲載の着用女性画像の原本を提示する。** 加工・Canvaでの開始画像作成はユーザーから明示依頼があった場合だけ。[共通テンプレート](flow-template.md)でFlow指示文が必要な場合も元画像を基本とする。新規画像を勝手に生成しない。
 5. 作業後に **同じターン内で** `production-status.json` と対象episodeを更新。実施したこと・未実施・証拠URL・次アクションを残す。動画ファイル自体がチャット内にしかない場合は別チャットで参照できると偽らず、その旨を記録する。
+
+## TikTok公開実績と重複防止
+
+- 公開アカウント：[TikTok @soracraftdiary](https://www.tiktok.com/@soracraftdiary)
+- [投稿照合台帳](tiktok-publication-registry.json)：投稿の直接取得が制限された状態、サイトの神奈川8点の重複回避リスト、関連販売店4点の同一女性画像グループを記録。
+- **「TikTok投稿一覧を直接確認した」と誤認させない。** 現状は公開投稿の全件取得に失敗したため、公開済みの件数・URLは未確定。
+- 新作を選ぶ前に、サイトの `catalog.json` / `editorial-images.json` と照合。動画が生成済み/過去に登場した可能性がある商品、同じ女性原本画像の流用は、ユーザー明示指定なしに再提案しない。
+- 実投稿URLが得られたら、**TikTok上の投稿→サイトの商品ID→女性画像ID**を一致させて照合台帳とepisodeを更新する。
 
 ## Instagramリールの紹介文
 
