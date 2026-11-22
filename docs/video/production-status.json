@@ -198,6 +198,25 @@
         "status": "draft",
         "postUrl": null
       }
+    },
+    {
+      "id": "hakone-yosegi-riverside-earrings",
+      "place": "Hakone, Kanagawa",
+      "productIds": [
+        "hamamatsuya-clip"
+      ],
+      "status": "generated_unreviewed",
+      "summary": "Standalone 15-second Hakone riverside clip, with the sage-green blouse and geometric warm-toned earring styling associated with Hamamatsuya’s clip-on earring image. Instagram caption draft prepared; audio, full-frame review and publication are unverified.",
+      "femaleImagePath": "public/images/hakone-yosegi-clipon-styling-v9.webp",
+      "episodePath": "docs/video/episodes/hakone-yosegi-riverside-earrings.md",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "15s 512x910 attachment; five sampled frames visually compared against the current catalog styling image.",
+      "nextAction": "Record the corresponding post URL when publication is confirmed.",
+      "instagramCaption": {
+        "status": "draft",
+        "postUrl": null
+      }
     }
   ],
   "observedLinks": [
@@ -296,6 +315,10 @@
     {
       "date": "2026-11-22",
       "summary": "Matched the 15-second Hakone window-side coffee reel with the Hamamatsuya muku yosegi pendant episode and saved the bilingual Instagram caption draft."
+    },
+    {
+      "date": "2026-11-22",
+      "summary": "Matched the standalone 15-second Hakone riverside clip with the Hamamatsuya yosegi clip-on earring styling image and saved its bilingual Instagram caption draft."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
