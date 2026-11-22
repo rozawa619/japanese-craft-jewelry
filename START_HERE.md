@@ -1,6 +1,6 @@
 # 別のAIへ引き継ぐ入口
 
-このリポジトリとGitHub上の資料から、Japanese Craft Jewelryの保守を再開できます。前の会話や作成者のPCは不要です。2026-11-19現在、[仕様027](specs/027-regional-craft-picks/spec.md)で青森・岩手・山形・大分の4品を追加した0.20.0を公開・検証済みです。
+このリポジトリとGitHub上の資料から、Japanese Craft Jewelryの保守を再開できます。公開版と配信元は[公開記録](docs/deployment-results.json)で確認できます。[仕様028](specs/028-purchase-routes/spec.md)で、公式通販と取扱店への案内を商品ごとの購入根拠に合わせました。
 
 
 ## サイト構築を新しいチャットに引き継ぐ場合
@@ -19,7 +19,7 @@ Instagramリールの紹介文は、[キャプションテンプレート](docs/
 2. [handoff-status.json](docs/handoff-status.json)：現在の状態、公開app、完了済み作業、正本、外部情報が必要な残条件。
 3. [現在状態](docs/handoff.md)と[編集ガイド](docs/editing-guide.md)：今回触るファイルを特定。
 4. [セットアップ](docs/setup.md)と[検証ガイド](docs/verification-guide.md)：起動と変更に応じた検査。
-5. 該当機能の仕様だけ読む。最新の完了実装は[027](specs/027-regional-craft-picks/spec.md)、Git引継ぎの基盤は[024](specs/024-git-ai-handoff/spec.md)。
+5. 該当機能の仕様を読む。購入導線は[028](specs/028-purchase-routes/spec.md)、直近の商品追加は[027](specs/027-regional-craft-picks/spec.md)、Git引継ぎの基盤は[024](specs/024-git-ai-handoff/spec.md)。
 
 全世代の検証JSONを最初から読む必要はありません。GitのHEADは文書更新を含み、実際に公開されたappのSHAとは異なる場合があります。[deployment-results.json](docs/deployment-results.json)が公開の正本です。
 

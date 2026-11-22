@@ -8,7 +8,7 @@ const baseParts=(process.env.PUBLIC_BASE_PATH||'japanese-craft-jewelry').split('
 const base='/'+baseParts.join('/')+(baseParts.length?'/':'');
 const read=async p=>JSON.parse(await readFile(p,'utf8'));
 const catalog=await read('src/data/catalog.json'),sources=await read('docs/research/sources.json'),evidence=await read('src/data/purchase-evidence.json'),visits=await read('src/data/visits.json');
-const report={checkedAt:new Date().toISOString(),origin,method:'Fresh Chrome DOMParser inspects fetched canonical HTML without executing its scripts or loading images/maps. Every rendered source/checked date must be inside an initially closed non-nested source disclosure. All published product pages preserve raw canonical product sources, product/market/purchase dates, and store dates. Browser keyboard/hash/no-JavaScript operation is tested separately.',pages:[],failures:[],sourceDisclosures:0,sourceRecords:0,productPages:0};
+const report={checkedAt:new Date().toISOString(),origin,method:'Chrome DOMParser checks canonical HTML with no scripts or external assets. Source, product, market and store dates stay within their closed disclosures. The purchase-route date sits beside the domestic purchase action.',pages:[],failures:[],sourceDisclosures:0,sourceRecords:0,productPages:0};
 const browser=await chromium.launch({channel:'chrome',headless:true}),page=await browser.newPage();
 try{
  const sitemap=await page.request.get(origin+base+'sitemap.xml');assert.equal(sitemap.status(),200);
@@ -25,13 +25,13 @@ try{
    const doc=new DOMParser().parseFromString(html,'text/html');
    const details=[...doc.querySelectorAll('details[data-source-disclosure]')];
    return {closed:details.every(n=>!n.hasAttribute('open')),nested:details.some(n=>n.parentElement?.closest('[data-source-disclosure]')),details:details.length,
-    uncontainedDates:[...doc.querySelectorAll('time')].filter(n=>!n.closest('details[data-source-disclosure]')).length,
+    uncontainedDates:[...doc.querySelectorAll('time')].filter(n=>!n.closest('details[data-source-disclosure], [data-market-section="japan"] [data-purchase-evidence]')).length,
     uncontainedSources:[...doc.querySelectorAll('.source-list')].filter(n=>!n.closest('details[data-source-disclosure]')).length,
     sources:[...doc.querySelectorAll('.source-list li')].map(n=>({url:n.querySelector('a')?.getAttribute('href'),title:n.querySelector('a')?.textContent,date:n.querySelector('time')?.getAttribute('datetime')})),
     productSources:[...doc.querySelectorAll('#product-sources .source-list li')].map(n=>({url:n.querySelector('a')?.getAttribute('href'),title:n.querySelector('a')?.textContent,date:n.querySelector('time')?.getAttribute('datetime')})),
     productDate:doc.querySelector('#product-sources [data-information-checks] dl time')?.getAttribute('datetime'),
     marketDates:Object.fromEntries([...doc.querySelectorAll('#product-sources [data-market-check]')].map(n=>[n.getAttribute('data-market-check'),n.querySelector('time')?.getAttribute('datetime')])),
-    purchase:doc.querySelector('#product-sources [data-purchase-evidence]')?.getAttribute('data-purchase-checked-at'),
+    purchase:doc.querySelector('[data-market-section="japan"] [data-purchase-evidence] time')?.getAttribute('datetime'),
     storeDates:Object.fromEntries([...doc.querySelectorAll('[data-store-information-checked]')].map(n=>[n.getAttribute('data-store-information-checked'),n.querySelector('time')?.getAttribute('datetime')])),
     visiblePriceDates:doc.querySelectorAll('[data-market-price-block] time').length};
   },html);

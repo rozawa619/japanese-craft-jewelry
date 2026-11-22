@@ -11,18 +11,20 @@
 - English: https://rozawa619.github.io/japanese-craft-jewelry/en/
 - 動画用の引継ぎ: [docs/video/NEW_CHAT_HANDOFF.md](video/NEW_CHAT_HANDOFF.md)
 
-## 2026-11-22にGitHubの正本から照合したサイトの状態
+## 現在のサイトと公開履歴
+
+[仕様028](../specs/028-purchase-routes/spec.md)で公式通販とカタログ・取扱店への案内を整理しました。最新の配信版・SHA・Actionsは[公開記録](deployment-results.json)、購入ボタンと確認日の実測は[028の検証記録](../specs/028-purchase-routes/validation.md)を参照してください。
 
 > **以下は2026-11-19のデプロイ成功記録 v0.20.0 のスナップショット。** 最新mainのHEADは、その後の文書更新を含むため、実公開アプリのバージョン・SHAと一致しないことがある。新チャットでは必ず再取得し、実URLの確認と区別する。
 
-- アプリ v0.20.0 / 最新公開アプリSHA `41773dbbf0a8c9c565d6e956751de82307190c44`
+- アプリ v0.20.0 / 11月19日の機能リリースSHA `41773dbbf0a8c9c565d6e956751de82307190c44`
 - 公開のGitHub Actions成功: https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44536903083
 - 公開69商品、登録75商品（うちdraft 6）、28都道府県、公開関連技法40/全42、出典327、取扱店舗38
 - AI画像136点（着用の女性67、商品単体69）。既存のサイト画像は原則維持し、実在人物の試着・レビューと混同しない
 - 使用技術：Astro 7、TypeScript、Zod。日英対応の静的サイトをGitHub Pagesで配信。商品JSON/日英Markdownを主に編集する。サイトに決済・発送・会員データベース・ブログ・Contactはない
 - 実装の例：日本地図、地域ごとの着用女性Hero、都道府県/商品/工芸/素材からの導線、商品一覧と絞り込み、商品詳細、国内・海外リンクの市場別管理、店舗訪問案内と同意付きGoogle Maps、SEO（canonical/hreflang/sitemap）、AI画像/広告の開示、スマホ表示
 - **収益化の実装と外部承認は別物**：実アフィリエイトは未申請で通常リンク運用。AdSenseはoff。実アカウント/契約・認定CMP・Commercial hostingの適合判断・Search Consoleの実プロパティ/結果等は別の未完条件
-- 最新実装仕様：`specs/027-regional-craft-picks/`。青森・岩手・山形・大分の4県4品追加の公開検証記録がある
+- 商品追加の実装仕様は `specs/027-regional-craft-picks/`。青森・岩手・山形・大分の4県4品の公開検証記録がある
 - 完了した人物画像移行 023 のapply専用スクリプトは再実行しない
 
 ### 最優先の根拠ファイル
@@ -31,7 +33,7 @@
 | --- | --- |
 | 開始順序と制約 | [START_HERE](../START_HERE.md)、[AGENTS](../AGENTS.md)、[README](../README.md) |
 | 状態（機械可読） | [docs/handoff-status.json](handoff-status.json) |
-| 公開appのSHA/URL/検証 | [docs/deployment-results.json](deployment-results.json)、[027 validation](../specs/027-regional-craft-picks/validation.md) |
+| 公開appのSHA/URL/検証 | [docs/deployment-results.json](deployment-results.json)、[028 validation](../specs/028-purchase-routes/validation.md) |
 | 完了点/未完了 | [docs/handoff.md](handoff.md)、[docs/remaining-task-audit-v17.md](remaining-task-audit-v17.md) |
 | 技術構成と更新箇所 | [docs/architecture.md](architecture.md)、[docs/editing-guide.md](editing-guide.md) |
 | 構築・検証 | [docs/setup.md](setup.md)、[docs/verification-guide.md](verification-guide.md)、[package.json](../package.json) |
@@ -80,7 +82,7 @@ GitHub: https://github.com/rozawa619/japanese-craft-jewelry
 12. docs/remaining-task-audit-v17.md
 13. docs/affiliate-readiness.md、docs/pre-application-checklist.md
 14. src/data/catalog.json、src/data/translations/ja.json、src/data/editorial-images.json、src/data/product-detail-images.json
-15. 最新の実装に対応する specs/027-regional-craft-picks/spec.md と validation.md
+15. 購入導線の specs/028-purchase-routes/spec.md と validation.md、商品追加の specs/027-regional-craft-picks/spec.md
 
 次の観点で調査して、表と文章で結果を報告してください。
 

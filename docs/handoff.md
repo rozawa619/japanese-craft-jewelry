@@ -9,7 +9,7 @@
 | サイト | Japanese Craft Jewelry。全国の工芸ジュエリーを選ぶJA/EN紹介メディア。運営者SORA |
 | 公開URL | [日本語](https://rozawa619.github.io/japanese-craft-jewelry/ja/)・[English](https://rozawa619.github.io/japanese-craft-jewelry/en/) |
 | リポジトリ | [rozawa619/japanese-craft-jewelry](https://github.com/rozawa619/japanese-craft-jewelry)・main |
-| 最新公開アプリ | 0.20.0 / 仕様027、app `41773dbbf0a8c9c565d6e956751de82307190c44`、[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44536903083) success |
+| 最新公開アプリ | [公開記録](deployment-results.json)に、バージョン・アプリSHA・Actions・確認範囲を記録 |
 | 最新の引継ぎ整備 | [仕様024](../specs/024-git-ai-handoff/spec.md)。Gitからの再開に必要な入口・資料・手順の整備で、アプリを再制作する作業ではない |
 | 内容 | 公開69/登録75商品、下書き6、掲載28都道府県、公開関連技法40/全42、一次出典327、38店舗/61商品に店舗案内 |
 | 画像 | 人物67＋商品単体69のAI画像136枚。架空の日本人成人女性21〜33歳の生成設定 |
@@ -42,6 +42,8 @@
 - 店舗Mapsは初回明示許可後30日自動表示、オフで全停止。未選択/拒否/期限切れはGoogle通信0。Google帰属・外部fallback・最小Storageを保ちます。地図設定maps-v17と広告Privacy v14/広告CMPは別です。
 
 ## 公開版の検証記録
+
+[仕様028の検証](../specs/028-purchase-routes/validation.md)に、公式通販とカタログの表示、確認日、取扱店の導線を記録しています。
 
 [0.20.0の検証](../specs/027-regional-craft-picks/validation.md)で、新4県の導線、日英の公開ページ、公式購入先、配信画像を確認しました。
 

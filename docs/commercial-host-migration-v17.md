@@ -1,5 +1,11 @@
 # 商用ホストへの移行準備 — 0.17
 
+## 2026-11-22の候補確認
+
+Cloudflare Pagesを既存Astroの静的配信先候補として再確認しました。Freeプランの公開上限は、月500ビルド・1サイト20,000ファイル・1ファイル25 MiBです。Free Servicesは規約上終了する場合があります。ドメイン費用と当該用途で使うプラン・契約条件は、選定するドメインと実アカウントに沿って確認します。現在のGitHub Pagesの用途制限も判断材料です。 [Pagesの上限](https://developers.cloudflare.com/pages/platform/limits/) · [Cloudflare契約条件](https://www.cloudflare.com/terms/) · [GitHub Pagesの用途条件](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
+
+ルート配置のnoindexプレビューで、現公開の正規URLを対応づけられることと、配信用の `_headers` を生成物に含められることを確認しました。採用先、ドメイン、DNS、実配信のヘッダー、旧URLの転送方法は選定後の確認項目です。 [実測記録](../specs/028-purchase-routes/validation.md)
+
 一次資料の確認日：2026-11-17。この文書は、既存のGitHubリポジトリと静的Astroを保ったまま、Cloudflare Pagesを候補に公開先を移すための実施手順です。新サービスの登録、利用契約、料金同意、DNS変更、実移転は行っていません。現GitHub公開のHTTP保護ヘッダーを設定済みとする資料でもありません。
 
 0.11の[移行検討](hosting-commercial-readiness-v11.md)にある古いNode値より、現在の[package.json](../package.json)・[setup](setup.md)を優先します。最新の実配信SHAと検証は[deployment-results](deployment-results.json)、ホスト用途適合の法務上の区分は[再確認](legal-review-v17.md)を参照してください。

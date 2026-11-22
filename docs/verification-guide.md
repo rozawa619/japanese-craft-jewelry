@@ -1,5 +1,9 @@
 # 変更に合わせて検証する
 
+商品詳細の購入経路と確認日は、国内参考価格の主CTA付近に表示します。出典、商品情報、価格・店舗情報の確認日は従来の開閉欄にあります。`pnpm verify`で日英の生成HTMLを確認し、`pnpm check:mobile`と`pnpm check:sources`はこの配置を検査します。 [仕様028](../specs/028-purchase-routes/spec.md)
+
+現行配信をSearch Consoleで検査する場合は、URLプレフィックス `https://rozawa619.github.io/japanese-craft-jewelry/` を使います。所有確認後にプロジェクト配下の `sitemap.xml` を送信し、日英トップと代表の産地・商品ページをURL検査します。所有確認とインデックスの結果はアカウント上で確認します。 [Googleの所有確認手順](https://support.google.com/webmasters/answer/9008080) · [公開サイトマップ](https://rozawa619.github.io/japanese-craft-jewelry/sitemap.xml)
+
 確認日：2026-11-17、公開版0.18.0・日本人女性の着用画像023。目的は、変更に必要な証拠を得て、過去の成功を今回の成功と混同しないこと。最初に[AI引継ぎ](ai-handoff.md)とAGENTS.mdを読む。公開と納品の確定値は[deployment-results.json](deployment-results.json)、実際の入力・対象・失敗は各JSONを正本とする。
 
 <!-- PUBLIC_V23 -->

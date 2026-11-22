@@ -1,10 +1,14 @@
 ---
 import {marketPricesFor,formatMarketPrice,type PriceMarket} from '../lib/market-prices';
+import {purchaseEvidenceFor} from '../lib/purchase-evidence';
 import {t,type Locale} from '../lib/i18n';
 interface Props {productId:string;locale:Locale;market?:PriceMarket;variant?:'compact'|'detail'|'sticky';primary?:boolean;}
 const {productId,locale,market='japan',variant='compact',primary=false}=Astro.props;
 const value=marketPricesFor(productId)[market];
-const label=market==='japan'?t(locale,'Japan online reference','日本向け通販の参考価格'):t(locale,'International store reference','海外通販の参考価格');
+const catalogPrice=market==='japan'&&(!value||purchaseEvidenceFor(productId).kind==='retail-and-catalog');
+const label=market==='international'?t(locale,'International store reference','海外通販の参考価格')
+ :catalogPrice?t(locale,'Japan reference price','国内参考価格')
+ :t(locale,'Japan online reference','日本向け通販の参考価格');
 ---
 <span class:list={['market-price',`market-price-${variant}`]} data-market-price-block={market} data-price-product={productId}>
  <span class="market-price-label">{label}</span>

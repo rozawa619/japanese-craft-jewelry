@@ -2,12 +2,18 @@
 import RetailerLink from './RetailerLink.astro';
 import {linksFor,resolve} from '../lib/catalog';
 import {marketPricesFor,type PriceMarket} from '../lib/market-prices';
+import {purchaseEvidenceFor} from '../lib/purchase-evidence';
 import {t,type Locale} from '../lib/i18n';
 interface Props{productId:string;locale:Locale;market?:PriceMarket;compact?:boolean;label?:string;}
-const {productId,locale,market='japan',compact=false}=Astro.props;
+const {productId,locale,market='japan',compact=false,label}=Astro.props;
 const prices=marketPricesFor(productId);
 const normalLinks=market==='japan'?prices.japanLinks:prices.internationalLinks;
 const localIds=linksFor([productId],locale).filter(link=>normalLinks.some(normal=>normal.id===link.id)&&resolve(link)).map(link=>link.id);
-const label=Astro.props.label||(market==='japan'?t(locale,'Japan official listing','日本向け公式ページ'):t(locale,'International store','海外向け公式ストア'));
+const evidence=market==='japan'&&normalLinks.length?purchaseEvidenceFor(productId):undefined;
+const defaultLabel=market==='japan'?t(locale,'Japan official listing','日本向け公式ページ'):t(locale,'International store','海外向け公式ストア');
+const confirmedLabel=evidence?.kind==='retail-and-catalog'
+ ?t(locale,'Official catalog','公式カタログを見る')
+ :t(locale,'Official shop','公式通販を見る');
+const labelFor=(linkId:string)=>label||(linkId===evidence?.linkId?confirmedLabel:defaultLabel);
 ---
-{localIds.length>0?<RetailerLink productId={productId} locale={locale} compact={compact} label={label} linkIds={localIds} purchaseMarket={market}/>:normalLinks.map(link=><a class:list={['retailer-link',{compact}]} href={link.url} target="_blank" rel="noopener noreferrer" data-sponsored="false" data-purchase-market={market} data-market-link-id={link.id}>{label} <span aria-hidden="true">↗</span><span class="sr-only"> — {link.merchantName}{t(locale,', opens in a new tab','、新しいタブで開きます')}</span></a>)}
+{localIds.length>0?<RetailerLink productId={productId} locale={locale} compact={compact} label={labelFor} linkIds={localIds} purchaseMarket={market}/>:normalLinks.map(link=><a class:list={['retailer-link',{compact}]} href={link.url} target="_blank" rel="noopener noreferrer" data-sponsored="false" data-purchase-market={market} data-market-link-id={link.id}>{labelFor(link.id)} <span aria-hidden="true">↗</span><span class="sr-only"> — {link.merchantName}{t(locale,', opens in a new tab','、新しいタブで開きます')}</span></a>)}

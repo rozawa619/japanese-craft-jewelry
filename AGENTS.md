@@ -6,7 +6,7 @@
 
 1. [START_HERE.md](START_HERE.md)を読む。次に[引継ぎ状態](docs/handoff-status.json)と[公開アプリの記録](docs/deployment-results.json)を確認する。
 2. `git status --short`と`git rev-parse HEAD`で作業対象・未保存変更を確認する。公開appのSHA、現在のGit HEAD、過去の納品ZIPを区別する。他者の変更を上書きしない。
-3. 最新の引継ぎ整備は[仕様024](specs/024-git-ai-handoff/spec.md)。最新のアプリ変更は[027](specs/027-regional-craft-picks/spec.md)。[023](specs/023-japanese-model-styling/spec.md)の画像差し替えは完了済み。次の実装対象はユーザーの今回の依頼から決める。
+3. 最新の引継ぎ整備は[仕様024](specs/024-git-ai-handoff/spec.md)。購入導線は[028](specs/028-purchase-routes/spec.md)。[023](specs/023-japanese-model-styling/spec.md)の画像差し替えは完了済み。次の実装対象はユーザーの今回の依頼から決める。
 4. [setup](docs/setup.md)でNode・pnpm・env・base・Chromeを揃え、[architecture](docs/architecture.md)と[editing-guide](docs/editing-guide.md)で変更する正本を特定する。`docs/`のJSONもbuild入力なので削除しない。
 5. [verification-guide](docs/verification-guide.md)から影響に合う検査を選び、仕様・実装・検証・引継ぎを対応させる。全旧版を通読したり過去の検査を全再実行したりすることは開始条件ではない。
 
@@ -14,7 +14,7 @@
 
 - 運営者表示はSORA。日本全国の工芸ジュエリーを選ぶJA/ENの紹介サイト。神奈川専用やiTOへ戻さない。
 - ブログ、Contact、販売・決済・発送の機能を作らず、不要な販売責任説明をUIへ再導入しない。未提供の氏名・住所・メール・経歴を作らない。
-- 最新公開アプリ0.20.0の基準は69公開/75登録商品・28都道府県・40公開関連技法/全42・136AI画像。件数上限や各県同数という条件ではない。未掲載県・空の技法・draftの公開ページを作らない。
+- 現在の掲載基準は69公開/75登録商品・28都道府県・40公開関連技法/全42・136AI画像。未掲載県・空の技法・draftの公開ページを作らない。
 - COCOON2、欠品18K、販売未確認の畠山2、hairpinはdraft。復帰には対象variantの現行購入根拠と派生参照の再確認が必要。403を閉店・売切れと判定しない。
 
 ## 正本と編集
@@ -37,6 +37,7 @@
 - 産地一覧はTOP10→コンパクトな日本地図→DISCOVER3県。47県の原形を主図46＋沖縄別枠1へ分け、実商品がある掲載県のみ通常hrefにする。島・枠・labelの直接click/tap/Enter、preview、zoom/内部scroll、地方一覧、keyboard/noJSを保つ。詳細は[022](docs/compact-layout-v20.md)。
 - TOP10/DISCOVER共通写真はPC最大300×200px、スマホ最大222×148px。種類の小画像は同じ地域・種類の実公開商品から選び、人気順位としない。
 - Sourcesは初期closedのnative details。出典/dateは保持し、希望時に一覧表示する。公式CTA・在庫注意・AI/広告開示まで一緒に隠さない。
+- 購入経路とその確認日は商品詳細の主CTA付近に表示する。通販や店舗の文言は購入根拠の種類と確認済みlink IDから導く。市場ごとの価格・販売先と、出典欄の確認日を保つ。
 - Sourcesが同ページanchorを一元処理する。pushState→open/scroll/summary focusを保ち、商品templateへ重複open処理を足さない。直接hash/history/noJS/rapidcloseも確認する。
 - 同ページ/query/hashの言語切替、filter/reset/0件、44px操作域、16px select、横向き/focus/stickyの非遮蔽を確認する。overflow:hiddenだけで不具合を隠さない。
 

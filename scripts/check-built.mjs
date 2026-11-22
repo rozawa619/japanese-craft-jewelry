@@ -5,6 +5,7 @@ import { loadEnvFile } from 'node:process';
 import { createHash } from 'node:crypto';
 import { resolveRetailerLink, policyForLink, linksInLocale } from '../src/lib/affiliate.ts';
 import {collectVisitValidationErrors,officialProductLinks,storeMapLinks} from '../src/lib/visits.ts';
+import {purchaseEvidenceFor} from '../src/lib/purchase-evidence.ts';
 import {validateMarketRetailerAnchor} from './market-link-policy.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -142,7 +143,9 @@ for (const [file, page] of pages) {
       if(!fallback||fallback.attrs.href!==origin+routePath.replace('/'+locale+'/','/en/'))fail(file,'missing English x-default language fallback');
     }
   }
-  if(/^(en|ja)\/objects\/[^/]+\/$/.test(routePath.slice(base.length))&&!redirect){
+  const objectRoute=routePath.slice(base.length).match(/^(en|ja)\/objects\/([^/]+)\/$/);
+  if(objectRoute&&!redirect){
+    const locale=objectRoute[1],product=catalog.products.find(product=>product.slug===objectRoute[2]);
     const intro=tags.find(tag=>'data-product-intro' in tag.attrs);
     const price=tags.find(tag=>'data-product-price' in tag.attrs);
     const primary=tags.find(tag=>'data-product-primary-cta' in tag.attrs);
@@ -151,10 +154,6 @@ for (const [file, page] of pages) {
     if(!intro||!price||!primary||!details)fail(file,'product purchase flow markers are incomplete');
     if(details&&(details.name!=='details'||'open' in details.attrs))fail(file,'technical specifications must use an initially closed details panel');
     if(details&&[price,primary,firstRetailer].some(tag=>!tag||tag.index>=details.index))fail(file,'price and primary retailer action must precede technical specifications');
-  }
-  const objectRoute=routePath.slice(base.length).match(/^(en|ja)\/objects\/([^/]+)\/$/);
-  if(objectRoute&&!redirect){
-    const locale=objectRoute[1],product=catalog.products.find(product=>product.slug===objectRoute[2]);
     const entry=visitData.products.find(entry=>entry.productId===product?.id);
     const visit=tags.find(tag=>'data-visit-guide' in tag.attrs);
     const outfit=tags.find(tag=>(tag.attrs.class||'').split(/\s+/).includes('purchase-outfit'));
@@ -162,6 +161,23 @@ for (const [file, page] of pages) {
     if(!entry||!visit)fail(file,'every product needs its official URL and sourced visit/fallback guide');
     if(visit&&(!outfit||!next||visit.index<outfit.index||visit.index>next.index))fail(file,'visit guide should follow the outfit and precede the final CTA');
     if(entry&&product){
+      const evidence=purchaseEvidenceFor(product.id);
+      const confirmations=tags.filter(tag=>'data-purchase-evidence' in tag.attrs);
+      const [confirmation]=confirmations;
+      if(confirmations.length!==1||confirmation.attrs['data-purchase-evidence']!==evidence.kind||confirmation.attrs['data-purchase-checked-at']!==evidence.checkedAt||!intro||!primary||confirmation.index<=intro.index||confirmation.index>=primary.index)fail(file,'purchase confirmation and its date must appear once, beside the primary action');
+      if(primary){
+        const primaryEnd=tokenSource.indexOf('</div>',primary.index);
+        const actions=tags.filter(tag=>tag.name==='a'&&tag.index>primary.index&&tag.index<primaryEnd);
+        const catalogRoute=evidence.kind==='retail-and-catalog';
+        const routeLabel=catalogRoute?(locale==='ja'?'公式カタログを見る':'Official catalog'):(locale==='ja'?'公式通販を見る':'Official shop');
+        for(const action of actions){
+          const expected=action.attrs['data-market-link-id']===evidence.linkId?routeLabel:(locale==='ja'?'日本向け公式ページ':'Japan official listing');
+          const labelStart=tokenSource.indexOf('>',action.index)+1;
+          if(!tokenSource.startsWith(expected+' ',labelStart))fail(file,'primary action label must reflect the confirmed purchase route for its link');
+        }
+        const shortcut=tags.find(tag=>'data-price-visit-link' in tag.attrs);
+        if(catalogRoute&&(!shortcut||shortcut.index<primaryEnd||shortcut.attrs.href!=='#'+visit?.attrs.id||!entry.storeIds.length))fail(file,'catalog-based buying needs a nearby shortcut to its verified stockists');
+      }
       const official=tags.filter(tag=>tag.name==='a'&&'data-official-product-url' in tag.attrs),expected=officialProductLinks(product.id,locale,catalog);
       if(!expected.length||official.length!==expected.length)fail(file,'missing explicit language-matched official product URL');
       for(const link of expected){const tag=official.find(tag=>tag.attrs['data-official-product-url']===link.id);if(!tag||tag.attrs.href!==link.url||(tag.attrs.rel||'').split(/\s+/).includes('sponsored'))fail(file,'explicit official URL must stay ordinary and on the verified merchant host')}

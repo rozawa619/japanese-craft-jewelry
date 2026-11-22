@@ -9,4 +9,7 @@ const evidence=purchaseEvidenceFor(productId);
  <span>{evidence.kind==='online-order'?t(locale,'Official online ordering checked','公式通販の注文受付を確認'):t(locale,'Retail shop and current catalog checked','実店舗と現行カタログを確認')}</span>
  <time datetime={evidence.checkedAt}>{evidence.checkedAt}</time>
 </p>
-<style>.purchase-evidence{display:flex;flex-wrap:wrap;gap:5px 12px;font-size:10px;line-height:1.7;margin:0 0 13px;color:var(--forest)}.purchase-evidence time{font-size:9px;color:var(--muted)}</style>
+<style>
+ .purchase-evidence{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;font-size:.875rem;line-height:1.6;margin:0 0 12px;color:var(--forest)}
+ .purchase-evidence time{font-size:.8125rem;color:var(--muted)}
+</style>

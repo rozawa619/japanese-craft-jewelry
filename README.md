@@ -20,11 +20,11 @@ SORAが日本各地の工芸ジュエリーを選んで紹介する、日本語�
 
 ## 現在の基準
 
-0.20.0を公開しました。[仕様027](specs/027-regional-craft-picks/spec.md)で青森・岩手・山形・大分から、地域の素材や技法に特徴がある4品を追加しました。
+[仕様028](specs/028-purchase-routes/spec.md)で公式通販とカタログ・取扱店への案内を整理しました。直近の商品追加は、青森・岩手・山形・大分の4品です。 [仕様027](specs/027-regional-craft-picks/spec.md)
 
 公開69/登録75商品、28都道府県、一次出典327件、38店舗、人物67＋単体69のAI画像136枚を掲載。
 
-公開コミットは `41773dbbf0a8c9c565d6e956751de82307190c44`。[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44536903083)の実行結果と公開ページの確認範囲は[検証記録](specs/027-regional-craft-picks/validation.md)を参照してください。
+公開コミットとActionsは[公開記録](docs/deployment-results.json)、購入導線の確認範囲は[検証記録](specs/028-purchase-routes/validation.md)を参照してください。
 
 AdSenseはoff、実アフィリエイトは未申請/通常リンクです。実ID/CMP/本人情報/契約/商用ホスト等は[運営上の残条件](docs/remaining-task-audit-v17.md)。申請や契約を資料だけで済んだことにしません。
 

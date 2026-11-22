@@ -37,7 +37,7 @@ const closedSources=async page=>{
   if(await fold.locator('.source-list').count())assert.equal(await fold.locator('.source-list').isVisible(),false);
  }
  assert.equal(await page.locator('.market-price-date:visible,.visit-checked:visible').count(),0,'Dates are not repeated beside every displayed price or store');
- if(await page.locator('[data-purchase-evidence]').count())assert.equal(await page.locator('[data-purchase-evidence]').isVisible(),false,'Purchase confirmation starts inside the closed source panel');
+ if(await page.locator('[data-purchase-evidence]').count())assert.equal(await page.locator('[data-market-section="japan"] [data-purchase-evidence]').isVisible(),true,'Purchase confirmation remains visible beside the primary action');
 };
 const operateSources=async(page)=>{
  for(const fold of await page.locator('details[data-source-disclosure]').all()){
