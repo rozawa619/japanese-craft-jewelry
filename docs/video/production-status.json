@@ -7,7 +7,7 @@
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
   "currentEpisodeId": "kyoto-morphosphere-ultramarine-pansy-pierced-earrings",
-  "nextAction": "Load the original site WebP as the Flow start frame. Check that the face and entire earring are in the 9:16 preview. Review the generated clip for identity, earring continuity and Japanese speech.",
+  "nextAction": "Check that both eyes, the mouth and the entire visible blue pansy are in the vertical start frame. Generate with prompt v2 and compare the opening and cheek texture against the site original.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -224,18 +224,19 @@
       "productIds": [
         "morphosphere-ultramarine-pansy-pierced-earrings"
       ],
-      "status": "prompt_ready",
-      "summary": "The user selected Kyoto. The original site styling image and the v1 Google Flow prompt for the ultramarine pansy earrings are ready. Generation and publication are pending.",
+      "status": "revision_needed",
+      "summary": "The attached 10-second clip showed the eyes and mouth out of frame at the start and at 0.8 seconds. Later frames showed cheek spots and a second visible earring. The user requested a more appealing opening portrait and fewer visible skin marks. Prompt v2 is ready for regeneration.",
       "femaleImageAssetId": "ai-morphosphere-blue-pansy-styling-v9",
       "femaleImagePath": "public/images/morphosphere-blue-pansy-styling-v9.webp",
       "femaleImageDimensions": "1536x1024",
       "episodePath": "docs/video/episodes/kyoto-morphosphere-ultramarine-pansy-pierced-earrings.md",
       "startFrameStatus": "Original site WebP visually inspected and matched to the deployed application commit",
-      "currentPromptVersion": "v1-ready",
+      "currentPromptVersion": "v2-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "Latest catalog, production ledger and the TikTok registry were checked for product ID and styling image asset ID and path. Git blob d81b5c3e815c8872ac2a3c3abe7ba8b51023332c matches the deployed source in 41773dbbf0a8c9c565d6e956751de82307190c44.",
-      "nextAction": "Load the original site WebP as the Flow start frame. Check that the face and entire earring are in the 9:16 preview. Review the generated clip for identity, earring continuity and Japanese speech."
+      "verification": "Latest catalog, production ledger and the TikTok registry were checked for product ID and styling image asset ID and path. Git blob d81b5c3e815c8872ac2a3c3abe7ba8b51023332c matches the deployed source in 41773dbbf0a8c9c565d6e956751de82307190c44. Reviewed nine frames of the 512×910, 10-second attachment. At 0.8 seconds the eyes and mouth were still offscreen. At 1.5 seconds the face, small cheek marks and both earrings were visible. Audio content and publication were not reviewed.",
+      "nextAction": "Check that both eyes, the mouth and the entire visible blue pansy are in the vertical start frame. Generate with prompt v2 and compare the opening and cheek texture against the site original.",
+      "statusReason": "The opening crops the face and later frames introduce dark cheek spots and change the reference viewing angle."
     }
   ],
   "observedLinks": [
@@ -350,6 +351,10 @@
     {
       "date": "2026-11-22",
       "summary": "Started the Kyoto series at the user's request. Verified the existing Morphosphere tint ultramarine pansy styling image, checked for duplicates, and saved the first episode and Flow prompt v1."
+    },
+    {
+      "date": "2026-11-22",
+      "summary": "Reviewed the first Kyoto clip. Saved prompt v2 with the face and pansy visible from frame one, a stable three-quarter angle, and natural source skin texture without added dark spots."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -382,13 +387,13 @@
     "regionId": "kyoto",
     "regionName": "京都府",
     "userConfirmed": true,
-    "status": "prompt_ready",
+    "status": "revision_needed",
     "publishedSiteProducts": 7,
     "uniqueImageAssets": 7,
     "createdKyotoEpisodes": 1,
     "planPath": "docs/video/kyoto-series-plan.json",
     "firstSuggestedProductId": "morphosphere-ultramarine-pansy-pierced-earrings",
-    "explanation": "The user chose Kyoto on 2026-11-22. The first episode has an original site start frame and a Flow prompt. Generation and publication are pending."
+    "explanation": "Kyoto is confirmed. The first generated sample was visually reviewed. A revised opening composition and portrait prompt are ready."
   },
   "previousWorkCurrentEpisodeId": "kanagawa-maruyama-yosegi-earring-d"
 }

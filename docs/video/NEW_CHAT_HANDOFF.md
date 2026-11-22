@@ -62,13 +62,13 @@
 ## 4. 京都府シリーズ
 
 - サイト公開商品の都道府県別件数：神奈川8 → **京都7** → 東京5 → 北海道/千葉/大阪/山梨が各4。公開69点、地域28。
-- **京都はサイト掲載7商品、対応する女性元画像7点**。1本目の群青パンジーピアスは元画像と指示文を準備済み。動画生成と公開は未実施。 [京都編の台帳](kyoto-series-plan.json)
+- **京都はサイト掲載7商品、対応する女性元画像7点**。進行中の回と着手状況は[制作台帳](production-status.json)を参照する。 [京都編の台帳](kyoto-series-plan.json)
 - 京都商品には工芸の種類が多い。**「七宝文様」の真鍮バングルは七宝焼と断定しない**。オリジナル画像を基準に毎回目視確認。
 - 制作順と各商品の最新状況は[京都編の台帳](kyoto-series-plan.json)を参照し、1本ずつ進める。
 
 | 仮順 | サイト商品 | 商品ID | URL | 動画 |
 | ---: | --- | --- | --- | --- |
-| 1 | Morphosphere tint 群青パンジーピアス | morphosphere-ultramarine-pansy-pierced-earrings | [商品](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/morphosphere-ultramarine-pansy-pierced-earrings/) / [人物原本](https://raw.githubusercontent.com/rozawa619/japanese-craft-jewelry/main/public/images/morphosphere-blue-pansy-styling-v9.webp) | [元画像と指示文を準備済み](episodes/kyoto-morphosphere-ultramarine-pansy-pierced-earrings.md) |
+| 1 | Morphosphere tint 群青パンジーピアス | morphosphere-ultramarine-pansy-pierced-earrings | [商品](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/morphosphere-ultramarine-pansy-pierced-earrings/) / [人物原本](https://raw.githubusercontent.com/rozawa619/japanese-craft-jewelry/main/public/images/morphosphere-blue-pansy-styling-v9.webp) | [制作状況と現行の指示文](episodes/kyoto-morphosphere-ultramarine-pansy-pierced-earrings.md) |
 | 2 | 中嶋象嵌 ナシ型 桜・ラインドット ペンダント | nakajima-pear-sakura-pendant | [商品](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/nakajima-pear-sakura-pendant/) / [人物原本](https://raw.githubusercontent.com/rozawa619/japanese-craft-jewelry/main/public/images/nakajima-sakura-damascene-pendant-styling-v9.webp) | 未制作（候補） |
 | 3 | 錺之 はなびし 銅のピアス | kazarino-hanabishi-copper-earrings | [商品](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/kazarino-hanabishi-copper-earrings/) / [人物原本](https://raw.githubusercontent.com/rozawa619/japanese-craft-jewelry/main/public/images/styling-jp-kazarino-hanabishi-copper-earrings-v23.webp) | 未制作（候補） |
 | 4 | 染工房正茂 × Sextile 孔雀 友禅イヤリング | somemasa-peacock-clip-on-earrings | [商品](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/somemasa-peacock-clip-on-earrings/) / [人物原本](https://raw.githubusercontent.com/rozawa619/japanese-craft-jewelry/main/public/images/styling-jp-somemasa-peacock-clip-on-earrings-v23.webp) | 未制作（候補） |
