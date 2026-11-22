@@ -1,7 +1,7 @@
-# 次回候補：神奈川・鎌倉 陽雅堂 鎌倉彫 椿ペンダント
+# 制作中：神奈川・鎌倉 陽雅堂 鎌倉彫 椿ペンダント
 
 - 選定日: 2026-11-22
-- 状態: **idea / next-in-queue**（商品とサイト女性の元画像を確認済み。動画専用開始画像、Flow指示文、生成動画、投稿はまだ作成・実施していない）
+- 状態: **prompt_ready**（サイト原本をそのまま使った720×1280の縦型Canva開始フレーム作成済み、Google Flow指示文作成済み。CanvaからPNG書き出し・Flow動画生成・動画検品・投稿は未実施）
 - 想定順序: 現在進行中の「陽雅堂 もみじブローチ」編の**次**
 - シリーズ: 当面は神奈川県内を優先（箱根に限定しない。全国展開は後日ユーザーの指示で再開）。
 - 商品ID: `yogado-kamakura-bori-camellia-pendant`
@@ -13,10 +13,39 @@
 - 画像をGitHubコネクタで開いて目視確認: サイト設定上の成人女性、前髪・長めのウェーブの暗い髪、**セージグリーンのトップス**、胸元の**赤茶色の椿形木彫りペンダント1点**。女性は少し下を見て微笑んでいる。前回のもみじブローチ（紺ジャケット、後ろで髪を束ねた女性）とは別の掲載画像。
 - 選定理由: 現在のもみじブローチから「アクセサリー種類（ペンダント）」「女性画像・衣装」が変わり、10秒の一人称デートとして胸元の装身具が見せやすい。前に扱った椿ブローチと同じ椿モチーフのため、動画内容はペンダントの着け方・胸元の見せ方を変えて差別化する。
 - 大事な制約: **サイトに載っているこの女性の顔を参照して開始画像を作る。** 別人化、服の勝手な色変更、大幅な顔のシャープ化や服飾の改変をしない（指示された場合は変更点だけ調整）。
-- 動画向け開始画像: **未作成**。次の制作開始時に元画像を参照し、縦9:16にして人物の顔と椿ペンダントを画角内に収め、完成後に原本と横並び比較してから採用。元画像を上書きしない。
-- 動画の予定: 鎌倉の落ち着いた散策のデート、自然光、少し視線を上げて微笑む動作だけ。**ペンダントを手で触らない**（形崩れ・複製防止）。日本語は短い自然な一文を作成時に確定。音声をひらがなで指定し、「鎌倉彫＝かまくらぼり」「椿＝つばき」は人間用メモ。
-- 次にすること: ユーザーが次の動画制作を依頼したら、サイトの女性画像を起点に縦9:16の開始画像を作成・目視検証してからGoogle Flow指示文を作る。動画作成済み・公開済みとは扱わない。
+- 動画向け開始画像: **Canvaで編集可能な縦9:16の切り出しレイアウト作成済み**。デザインID `DAHbnzBQEow`。元サイト画像 `768×512` を画角 `720×1280` に `object-fit: cover` 相当で配置し、画素そのものをAI再生成していない。Canva画像要素 `MAHbn0xohhM` が元ファイルと同じ768×512であることを確認。女性の顔とペンダントは元画像そのまま。CanvaからのPNG書き出しはまだ未確認。
+- Canva編集URL: https://www.canva.com/d/X4ipupo40I8fKqB
+- 動画の予定: 落ち着いた鎌倉デートの恋人視点。元画像は無地の淡い背景なので無理に街並みを生成し直さず、**同一人物と商品を最優先**。視線をペンダントからカメラへ上げて微笑むだけ。**ペンダントを手で触らない**（形崩れ・複製防止）。日本語のセリフは `ねえ、みて。このつばき、にあうかな？` に確定。
+- 次にすること: Canvaの縦型開始画像を**PNG書き出し**し、Google Flow Framesの開始フレームに設定。下記のv1プロンプトで生成し、人物の顔と椿1点が保持されているか、日本語発音が自然か確認。動画作成済み・公開済みとは扱わない。
 
 ## 次々回以降の神奈川候補
 
 - `hamamatsuya-pendant`（箱根寄木細工・浜松屋の無垢寄木ペンダント、published）。サイト画像: `public/images/yosegi-pendant-styling-v9.webp`。鎌倉シリーズの後に**箱根へ場所を変える候補**として比較。現時点で制作済みとは扱わない。
+
+## Google Flow指示文 v1（2026-11-22）
+
+```text
+Image-to-video from the uploaded starting frame. Vertical 9:16, 10 seconds if available.
+
+One continuous photorealistic Japanese boyfriend-POV date moment in Kamakura.
+Preserve exactly the same woman's face, long dark wavy hair, sage-green top, thin necklace, and ONE carved red-brown camellia pendant from the starting frame. Keep the original soft background. Do not replace the woman or the pendant.
+
+0–2 seconds: She looks softly down at the pendant and smiles.
+2–7 seconds: She gently raises her gaze to the viewer and speaks in natural, friendly native Japanese. Her hands stay out of frame and the pendant remains still.
+7–10 seconds: She holds eye contact, gives a slightly warmer smile, and a tiny natural head tilt.
+
+The woman says in Japanese:
+ねえ、みて。このつばき、にあうかな？
+
+Camera: steady, natural boyfriend-eye-level POV; small facial movements only.
+Audio: natural conversational Japanese voice and subtle ambience. No background music.
+Avoid: face changes, duplicate pendants, additional jewelry, distorted necklace, hands touching the pendant, extra people, subtitles, text, logos, sudden zoom, scene cuts.
+```
+
+**人間向けセリフ**：『ねえ、見て。この椿、似合うかな？』
+
+## 制作メモ
+
+- 2026-11-22: GitHub登録済みサイト画像を出発点に、画像生成で縦型の新規シーンを1枚試したが、顔・衣装・ペンダントの形に変化が出たため**不採用**。その案をFlow開始画像として使用しない。
+- 2026-11-22: 実物のサイトAI画像を**再生成せずクロップする**Canvaデザインに切替。元画像と商品意匠の再現性を優先。720×1280/1ページ、Canvaでメディア画像配置の記録を確認。
+- 公開サイトの元画像自体に変更はない。ユーザーがCanvaでPNG書き出し後、Flowへ入れる工程が残る。生成MP4・TikTok公開リンクは未確認。
