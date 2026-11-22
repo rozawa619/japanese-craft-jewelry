@@ -1,21 +1,20 @@
 {
-  "version": "0.20.0",
-  "specification": "027-regional-craft-picks",
+  "version": "0.20.1",
+  "specification": "028-purchase-routes",
   "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
   "branch": "main",
   "status": "deployed_and_verified",
-  "recordedAt": "2026-11-19T13:52:47.315Z",
-  "applicationCommit": "41773dbbf0a8c9c565d6e956751de82307190c44",
+  "recordedAt": "2026-11-22T14:44:51Z",
+  "applicationCommit": "08cb6212909981bf08bafb166225e077038aae4c",
   "actions": {
-    "id": 44536903083,
-    "headSha": "41773dbbf0a8c9c565d6e956751de82307190c44",
+    "id": 45034304227,
+    "headSha": "08cb6212909981bf08bafb166225e077038aae4c",
     "status": "completed",
     "conclusion": "success",
-    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44536903083",
-    "updatedAt": "2026-11-19T13:48:08Z",
-    "observedAt": "2026-11-19T13:52:47.315Z"
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45034304227",
+    "observedAt": "2026-11-22T14:44:51Z"
   },
-  "previousRecord": "docs/deployment-v26-before-regional-craft-picks.json",
+  "previousRecord": "docs/deployment-v27-before-purchase-routes.json",
   "publicUrls": {
     "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
     "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
@@ -40,13 +39,20 @@
     "publicImages": 136,
     "stylingImages": 67,
     "soloImages": 69,
-    "newProducts": 4,
-    "newRegions": 4,
-    "newImageFiles": 8,
-    "existingImageBytesRetained": 128,
+    "newProducts": 0,
+    "newRegions": 0,
+    "newImageFiles": 0,
+    "existingImageBytesRetained": 136,
     "kanagawaWorkshopLinked": 8,
     "kanagawaRegionalRetailer": 4
   },
-  "outputManifest": "docs/regional-craft-picks-v27-build-manifest.json",
-  "verification": "specs/027-regional-craft-picks/validation.md"
+  "outputManifest": "docs/purchase-routes-v28-build-manifest.json",
+  "verification": "specs/028-purchase-routes/validation.md",
+  "verificationSummary": {
+    "unitTests": 149,
+    "generatedHtml": 394,
+    "canonicalUrls": 378,
+    "localChromiumCases": 18,
+    "matchedPublicResponses": 11
+  }
 }

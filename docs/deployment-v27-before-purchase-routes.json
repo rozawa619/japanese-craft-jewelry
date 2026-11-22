@@ -1,0 +1,52 @@
+{
+  "version": "0.20.0",
+  "specification": "027-regional-craft-picks",
+  "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
+  "branch": "main",
+  "status": "deployed_and_verified",
+  "recordedAt": "2026-11-19T13:52:47.315Z",
+  "applicationCommit": "41773dbbf0a8c9c565d6e956751de82307190c44",
+  "actions": {
+    "id": 44536903083,
+    "headSha": "41773dbbf0a8c9c565d6e956751de82307190c44",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44536903083",
+    "updatedAt": "2026-11-19T13:48:08Z",
+    "observedAt": "2026-11-19T13:52:47.315Z"
+  },
+  "previousRecord": "docs/deployment-v26-before-regional-craft-picks.json",
+  "publicUrls": {
+    "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+    "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
+    "places": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/",
+    "aomori": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/aomori/",
+    "iwate": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/iwate/",
+    "yamagata": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/yamagata/",
+    "oita": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/oita/"
+  },
+  "content": {
+    "publishedProducts": 69,
+    "catalogProducts": 75,
+    "draftProducts": 6,
+    "regions": 28,
+    "activeCrafts": 40,
+    "catalogCrafts": 42,
+    "sources": 327,
+    "stores": 38,
+    "productsWithStores": 61,
+    "onlineEvidence": 60,
+    "retailCatalogEvidence": 9,
+    "publicImages": 136,
+    "stylingImages": 67,
+    "soloImages": 69,
+    "newProducts": 4,
+    "newRegions": 4,
+    "newImageFiles": 8,
+    "existingImageBytesRetained": 128,
+    "kanagawaWorkshopLinked": 8,
+    "kanagawaRegionalRetailer": 4
+  },
+  "outputManifest": "docs/regional-craft-picks-v27-build-manifest.json",
+  "verification": "specs/027-regional-craft-picks/validation.md"
+}

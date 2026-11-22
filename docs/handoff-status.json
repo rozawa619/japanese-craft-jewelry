@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-19T13:52:47.315Z",
+  "updatedAt": "2026-11-22T14:44:51Z",
   "entryPoint": "START_HERE.md",
   "project": {
     "name": "Japanese Craft Jewelry",
@@ -16,7 +16,7 @@
     "status": "ready",
     "basedOnDocumentationCommit": "b6ac11fcf589daa1b7b4786bc98702b36bfee482",
     "activeSiteImplementationTask": null,
-    "nextAction": "Use the normal catalog verification commands. Release 0.20.0 adds four regions and four products. Review exact variant availability before the next update.",
+    "nextAction": "For monetization, select the publishing host and confirm eligibility for the nine BECOS English store listings. Search Console requires verified site ownership.",
     "currentGitHeadCommand": "git rev-parse HEAD",
     "verificationReport": "docs/git-handoff-stage-results.json",
     "validatedSourceCommit": "537ee24ca021a9b61801108a4689e22936a3a08a",
@@ -29,16 +29,15 @@
     }
   },
   "production": {
-    "version": "0.20.0",
-    "applicationCommit": "41773dbbf0a8c9c565d6e956751de82307190c44",
+    "version": "0.20.1",
+    "applicationCommit": "08cb6212909981bf08bafb166225e077038aae4c",
     "actions": {
-      "id": 44536903083,
-      "headSha": "41773dbbf0a8c9c565d6e956751de82307190c44",
+      "id": 45034304227,
+      "headSha": "08cb6212909981bf08bafb166225e077038aae4c",
       "status": "completed",
       "conclusion": "success",
-      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44536903083",
-      "updatedAt": "2026-11-19T13:48:08Z",
-      "observedAt": "2026-11-19T13:52:47.315Z"
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45034304227",
+      "observedAt": "2026-11-22T14:44:51Z"
     },
     "urls": {
       "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
@@ -50,8 +49,8 @@
       "oita": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/oita/"
     },
     "report": "docs/deployment-results.json",
-    "verification": "specs/027-regional-craft-picks/validation.md",
-    "outputManifest": "docs/regional-craft-picks-v27-build-manifest.json"
+    "verification": "specs/028-purchase-routes/validation.md",
+    "outputManifest": "docs/purchase-routes-v28-build-manifest.json"
   },
   "snapshot": {
     "publishedProducts": 69,
@@ -68,10 +67,10 @@
     "publicImages": 136,
     "stylingImages": 67,
     "soloImages": 69,
-    "newProducts": 4,
-    "newRegions": 4,
-    "newImageFiles": 8,
-    "existingImageBytesRetained": 128,
+    "newProducts": 0,
+    "newRegions": 0,
+    "newImageFiles": 0,
+    "existingImageBytesRetained": 136,
     "kanagawaWorkshopLinked": 8,
     "kanagawaRegionalRetailer": 4
   },
@@ -144,7 +143,8 @@
     "023-japanese-model-styling",
     "025-kanagawa-accessories",
     "026-kanagawa-styling-refresh",
-    "027-regional-craft-picks"
+    "027-regional-craft-picks",
+    "028-purchase-routes"
   ],
   "historicalOnlyScripts": [
     {
