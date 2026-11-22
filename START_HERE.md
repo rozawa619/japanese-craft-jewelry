@@ -3,6 +3,10 @@
 このリポジトリとGitHub上の資料から、Japanese Craft Jewelryの保守を再開できます。前の会話や作成者のPCは不要です。2026-11-19現在、[仕様027](specs/027-regional-craft-picks/spec.md)で青森・岩手・山形・大分の4品を追加した0.20.0を公開・検証済みです。
 
 
+## サイト構築を新しいチャットに引き継ぐ場合
+
+**[サイト専用・新チャット完全引継ぎ](docs/SITE_NEW_CHAT_HANDOFF.md)** から開始してください。現行のサイト構築状況、実公開アプリの記録、商品/画像の正本、広告・アフィリエイトの残条件、初回の現状把握用コピー可能プロンプトをまとめています。動画専用の引継ぎは下の別入口から扱います。
+
 ## TikTok・Instagram・Google Flowの制作を引き継ぐ場合
 
 サイト制作とは別に、**SORA｜旅先で待ち合わせ**の動画制作ルールと最新進捗を [新チャット完全引継ぎ書](docs/video/NEW_CHAT_HANDOFF.md) と [動画専用の引継ぎ入口](docs/video/README.md) に集約しています。TikTok動画、Flow指示文、サイトの女性を使ったPOVデート動画の依頼は、最初に[完全引継ぎ](docs/video/NEW_CHAT_HANDOFF.md) → [仕様](docs/video/spec.md) → [進捗](docs/video/production-status.json) → [TikTok重複防止](docs/video/tiktok-publication-registry.json) → [京都候補](docs/video/kyoto-series-plan.json)を確認してください。ユーザーが追加画像を明示依頼しない限り、サイトの女性原本をそのまま提示してください。未確認の生成・投稿を完了扱いにせず、作業後は進捗台帳を更新します。
