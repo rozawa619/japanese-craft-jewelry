@@ -4,18 +4,18 @@ GitHubの `src/data/catalog.json`（`publishStatus=published` かつ `prefecture
 
 ## 神奈川県IDを持つ公開商品：全8点
 
-| 商品ID | 商品名 | 動画制作の証拠と状態 |
+| 商品ID | 商品名 | 制作・公開の確認状況 |
 | --- | --- | --- |
-| `hamamatsuya-catch-pierced` | 浜松屋 寄木キャッチ付ピアス | `hakone-yosegi-60s-compilation` に含まれる記述はあるが、個別動画完成・掲載URLを未確認。status unknown |
-| `hamamatsuya-clip` | 浜松屋 寄木イヤリング | 同上、個別動画完成・掲載URLを未確認。status unknown |
-| `hamamatsuya-pendant` | 浜松屋 無垢寄木ペンダント | 2026-11-22 ユーザー本人が「これ作った」と申告。元の動画・投稿URLは直接確認していない。重複提案しない |
-| `yogado-kamakura-bori-camellia-brooch` | 陽雅堂 鎌倉彫ブローチ 椿 | 動画のサンプルフレーム確認済み。音声/全尺・投稿未確認 |
-| `yogado-kamakura-bori-maple-brooch` | 陽雅堂 鎌倉彫ブローチ もみじ | 動画のサンプルフレーム確認済み。音声/全尺・投稿未確認 |
-| `yogado-kamakura-bori-camellia-pendant` | 陽雅堂 鎌倉彫ペンダント 椿 | 動画のサンプルフレーム確認済み。音声/全尺・投稿未確認 |
-| `dahliacyan-openwork-moonstone-earrings` | Dahliacyan 透かし彫りピアス オレンジムーンストーン | 動画のサンプルフレーム確認済み。音声/全尺・投稿未確認 |
-| `dahliacyan-openwork-rhodochrosite-bracelet` | Dahliacyan 透かし彫りブレスレット インカローズ | 動画のサンプルフレーム確認済み。音声/全尺・投稿未確認 |
+| `hamamatsuya-catch-pierced` | 浜松屋 寄木キャッチ付ピアス | TikTokの公開欄で2本を確認 |
+| `hamamatsuya-clip` | 浜松屋 寄木イヤリング | TikTokの公開欄で2本を確認 |
+| `hamamatsuya-pendant` | 浜松屋 無垢寄木ペンダント | TikTokの公開欄で2本を確認 |
+| `yogado-kamakura-bori-camellia-brooch` | 陽雅堂 鎌倉彫ブローチ 椿 | TikTokの公開欄で1本を確認 |
+| `yogado-kamakura-bori-maple-brooch` | 陽雅堂 鎌倉彫ブローチ もみじ | TikTokの公開欄で1本を確認 |
+| `yogado-kamakura-bori-camellia-pendant` | 陽雅堂 鎌倉彫ペンダント 椿 | TikTokの公開欄で1本を確認 |
+| `dahliacyan-openwork-moonstone-earrings` | Dahliacyan 透かし彫りピアス オレンジムーンストーン | 制作済み。添付動画をサンプルで照合。TikTok投稿URLは未確認 |
+| `dahliacyan-openwork-rhodochrosite-bracelet` | Dahliacyan 透かし彫りブレスレット インカローズ | TikTokの公開欄で1本を確認 |
 
-集計：**6点＝制作確認/ユーザー申告あり、2点＝制作の個別確証がない**。TikTokの投稿URLが台帳にないため**公開済みの点数は算出できない**。未確認の2点を勝手に未制作と確定しない。
+**8商品に制作の記録があります。TikTok公開欄では7商品・10本を確認しました。** 確認範囲はキャプションとサムネイルです。動画の全編・音声と箱根の60秒総集編の完成・公開は未確認です。 [投稿URLと照合記録](tiktok-publication-registry.json)
 
 ## 関連する箱根の販売店商品（県IDなし）：公開4点
 
@@ -30,7 +30,7 @@ GitHubの `src/data/catalog.json`（`publishStatus=published` かつ `prefecture
 
 ## 今後の重複回避
 
-1. **まず8点の個別動画制作状況を確認**：箱根の浜松屋のピアス・イヤリングの2点。既存の素材とまとめ動画に含まれていたら「済み」に記録し、二重制作しない。
-2. **公開状況は別管理**：ユーザーがTikTok URLを共有した場合に `published` とする。台帳の`generated_unreviewed`を公開済みと読み替えない。
+1. **次作の重複防止**。8商品の商品IDと女性画像ID・パスを照合し、候補から外す。
+2. **投稿URLとエピソードを照合**。同一商品の別カットは、キャプションや衣装・場面から確認できた投稿だけを対象エピソードに紐づける。
 3. 神奈川の地域シリーズを継続する場合、**関連販売店の4点は別枠**。神奈川県で製造した商品と混同しない。
 4. 8点が一巡しているなら、サイトへ**新しい神奈川商品と対応する女性画像**を追加してから動画化する。サイト未掲載品の勝手な提案はしない。

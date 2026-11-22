@@ -7,32 +7,143 @@
     "platform": "TikTok"
   },
   "accountInspection": {
-    "status": "unavailable_from_available_web_view",
-    "coverage": "none",
-    "result": "Direct public TikTok profile and a previously shared post link could not be opened; exact-handle search returned no indexed video entries. Thus no enumeration of public uploads or post-to-product matches was possible.",
+    "status": "public_profile_checked",
+    "coverage": "visible_public_video_grid",
+    "result": "The public TikTok profile displayed ten distinct posts through the end of the video grid. Their captions and thumbnails link them to seven catalog products.",
     "attemptedMethods": [
-      "public TikTok profile URL",
-      "public individual TikTok video URL",
-      "exact account handle search",
-      "nonauthenticated public alternate profile routes"
+      "public TikTok profile video grid and post-card links",
+      "individual detail page for the previously shared Hamamatsuya pendant"
     ],
-    "warning": "Do not claim the public account has zero videos or that any video is published without post-specific verification."
+    "limitations": "The individual detail page required birthdate verification. Full playback and audio were not reviewed. Coverage is limited to the public grid at the time of inspection."
   },
   "knownPostLinks": [
     {
+      "url": "https://www.tiktok.com/@soracraftdiary/video/7710935851307420949",
+      "source": "Public TikTok profile, video card caption and thumbnail",
+      "availability": "listed_on_public_profile",
+      "observedOn": "2026-11-22",
+      "productId": "yogado-kamakura-bori-camellia-pendant",
+      "imageAssetId": "ai-styling-jp-yogado-kamakura-bori-camellia-pendant-v26",
+      "siteImagePath": "images/styling-jp-yogado-kamakura-bori-camellia-pendant-v26.webp",
+      "identityMatch": "styling_consistent_with_site_image",
+      "episodeId": "kanagawa-yogado-kamakura-bori-camellia-pendant",
+      "evidence": "The caption names Yogado's carved camellia pendant. The thumbnail shows the tied product's sage-green knit, long dark hair and red flower pendant."
+    },
+    {
+      "url": "https://www.tiktok.com/@soracraftdiary/video/7710867409019718933",
+      "source": "Public TikTok profile, video card caption and thumbnail",
+      "availability": "listed_on_public_profile",
+      "observedOn": "2026-11-22",
+      "productId": "yogado-kamakura-bori-maple-brooch",
+      "imageAssetId": "ai-styling-jp-yogado-kamakura-bori-maple-brooch-v26",
+      "siteImagePath": "images/styling-jp-yogado-kamakura-bori-maple-brooch-v26.webp",
+      "identityMatch": "styling_consistent_with_site_image",
+      "episodeId": "kanagawa-yogado-kamakura-bori-maple-brooch",
+      "evidence": "The caption names Yogado's maple brooch. The navy jacket, tied hair and maple ornament agree with the site image and prior sample review."
+    },
+    {
+      "url": "https://www.tiktok.com/@soracraftdiary/video/7710489540372221205",
+      "source": "Public TikTok profile, video card caption and thumbnail",
+      "availability": "listed_on_public_profile",
+      "observedOn": "2026-11-22",
+      "productId": "dahliacyan-openwork-rhodochrosite-bracelet",
+      "imageAssetId": "ai-styling-jp-dahliacyan-openwork-rhodochrosite-bracelet-v26",
+      "siteImagePath": "images/styling-jp-dahliacyan-openwork-rhodochrosite-bracelet-v26.webp",
+      "identityMatch": "styling_consistent_with_site_image",
+      "episodeId": "kanagawa-dahliacyan-rhodochrosite-bracelet",
+      "evidence": "The caption identifies Dahliacyan and the pink-stone openwork bracelet. The thumbnail shows the light-blue outfit and downcast smile of the site image and recorded v5 clip styling."
+    },
+    {
+      "url": "https://www.tiktok.com/@soracraftdiary/video/7710014860775492885",
+      "source": "Public TikTok profile, video card caption and thumbnail",
+      "availability": "listed_on_public_profile",
+      "observedOn": "2026-11-22",
+      "productId": "yogado-kamakura-bori-camellia-brooch",
+      "imageAssetId": "ai-styling-jp-yogado-kamakura-bori-camellia-brooch-v26",
+      "siteImagePath": "images/styling-jp-yogado-kamakura-bori-camellia-brooch-v26.webp",
+      "identityMatch": "styling_consistent_with_site_image",
+      "episodeId": "kamakura-yogado-camellia-brooch",
+      "evidence": "The caption identifies a Kamakura-bori camellia brooch. The ivory jacket, short bob and red flower on the lapel agree with the site image and prior sample review."
+    },
+    {
       "url": "https://www.tiktok.com/@soracraftdiary/video/7709718240515083540",
-      "source": "Earlier TikTok link recorded in production-status.json",
-      "availability": "not_accessible",
-      "productId": null,
-      "identityMatch": "not_confirmed"
+      "source": "Public TikTok profile, video card caption and thumbnail",
+      "availability": "listed_on_public_profile",
+      "observedOn": "2026-11-22",
+      "productId": "hamamatsuya-pendant",
+      "imageAssetId": "ai-yosegi-pendant-styling-v9",
+      "siteImagePath": "images/yosegi-pendant-styling-v9.webp",
+      "identityMatch": "exact_start_image_unconfirmed",
+      "episodeId": null,
+      "evidence": "The previously shared post is listed with a Hamamatsuya floral yosegi pendant caption. The Lake Ashi café thumbnail shows a coral cardigan and a wood-pattern pendant. The specific start image and relationship to the ivory-shirt episode are unverified."
+    },
+    {
+      "url": "https://www.tiktok.com/@soracraftdiary/video/7709717452833312020",
+      "source": "Public TikTok profile, video card caption and thumbnail",
+      "availability": "listed_on_public_profile",
+      "observedOn": "2026-11-22",
+      "productId": "hamamatsuya-clip",
+      "imageAssetId": "ai-hakone-yosegi-clipon-styling-v9",
+      "siteImagePath": "images/hakone-yosegi-clipon-styling-v9.webp",
+      "identityMatch": "exact_start_image_unconfirmed",
+      "episodeId": "hakone-yosegi-stone-lane-earrings",
+      "evidence": "The caption identifies Hamamatsuya yosegi clip-ons at the listed ¥2,500. The light-blue blouse and turning scene on the sunlit stone path agree with the standalone episode's sampled frames. The site image shows a sage blouse and short hair."
+    },
+    {
+      "url": "https://www.tiktok.com/@soracraftdiary/video/7709669447589514517",
+      "source": "Public TikTok profile, video card caption and thumbnail",
+      "availability": "listed_on_public_profile",
+      "observedOn": "2026-11-22",
+      "productId": "hamamatsuya-catch-pierced",
+      "imageAssetId": "ai-hakone-yosegi-pierced-styling-v9",
+      "siteImagePath": "images/hakone-yosegi-pierced-styling-v9.webp",
+      "identityMatch": "exact_start_image_unconfirmed",
+      "episodeId": null,
+      "evidence": "The caption identifies Hamamatsuya's diamond-shaped yosegi pierced earrings at the listed ¥3,500. The riverside thumbnail shows a peach cardigan and a short bob. The exact start image is unverified."
+    },
+    {
+      "url": "https://www.tiktok.com/@soracraftdiary/video/7709664106768321813",
+      "source": "Public TikTok profile, video card caption and thumbnail",
+      "availability": "listed_on_public_profile",
+      "observedOn": "2026-11-22",
+      "productId": "hamamatsuya-pendant",
+      "imageAssetId": "ai-yosegi-pendant-styling-v9",
+      "siteImagePath": "images/yosegi-pendant-styling-v9.webp",
+      "identityMatch": "styling_consistent_with_site_image",
+      "episodeId": "kanagawa-hamamatsuya-muku-yosegi-pendant",
+      "evidence": "The caption identifies the Hamamatsuya yosegi pendant in a window-side café. The ivory shirt, braided hairstyle and patterned pendant agree with the site image and prior sample review."
+    },
+    {
+      "url": "https://www.tiktok.com/@soracraftdiary/video/7709510890793585941",
+      "source": "Public TikTok profile, video card caption and thumbnail",
+      "availability": "listed_on_public_profile",
+      "observedOn": "2026-11-22",
+      "productId": "hamamatsuya-clip",
+      "imageAssetId": "ai-hakone-yosegi-clipon-styling-v9",
+      "siteImagePath": "images/hakone-yosegi-clipon-styling-v9.webp",
+      "identityMatch": "styling_consistent_with_site_image",
+      "episodeId": null,
+      "evidence": "The caption identifies Hamamatsuya yosegi clip-ons at the listed ¥2,500. The thumbnail's short hair and sage blouse agree with the site styling. The relationship to the separately recorded 15-second riverside clip is unverified."
+    },
+    {
+      "url": "https://www.tiktok.com/@soracraftdiary/video/7709492201922759956",
+      "source": "Public TikTok profile, video card caption and thumbnail",
+      "availability": "listed_on_public_profile",
+      "observedOn": "2026-11-22",
+      "productId": "hamamatsuya-catch-pierced",
+      "imageAssetId": "ai-hakone-yosegi-pierced-styling-v9",
+      "siteImagePath": "images/hakone-yosegi-pierced-styling-v9.webp",
+      "identityMatch": "styling_consistent_with_site_image",
+      "episodeId": null,
+      "evidence": "The caption identifies Hamamatsuya yosegi pierced earrings at the listed ¥3,500. The ivory blouse and dark hair agree with the site styling. The exact local clip and source-frame provenance are unverified."
     }
   ],
   "policy": {
     "singleSource": "GitHub product catalog + editorial image registry + this TikTok-publication registry + per-episode production ledger",
     "preflight": "Before proposing any video, re-fetch the current site product list, image registry, and production-status. Block a product if listed here as previously created, possibly in earlier production, or already published. Also block reuse of the SAME original female styling image or asset ID across other products when any record is published, created or reserved. Do not auto-clear unknown states.",
     "sensitivity": "Conservatively block ambiguous older material to avoid duplicate proposals; user can explicitly authorize a remake.",
-    "recording": "Only set publication='verified_published' with a directly inspected TikTok post URL, screenshot showing post and identity, or an explicit user-provided matching post link where the content is reviewed. Preserve productId, imageAssetId, episodeId, post URL, observed date and confidence.",
-    "nextStep": "Obtain a profile export, a list of published TikTok post URLs, or access through a connected service that can list TikTok posts. Match each video to product and site woman by video frames or thumbnails."
+    "recording": "Record public posts using the post URL and matching caption and thumbnail from TikTok. Record the associated site's imageAssetId and imagePath. Describe limits on identifying the exact source frame or matching it to a specific episode.",
+    "nextStep": "Reconcile new TikTok links with product and site-image IDs. Keep the Dahliacyan orange moonstone earrings blocked as previously generated and add a post URL if verified."
   },
   "kanagawaPublishedProductCount": 8,
   "kanagawaProducts": [
@@ -44,11 +155,14 @@
       "episodeIds": [
         "hakone-yosegi-60s-compilation"
       ],
-      "productionEvidence": "older_or_indirect_association_unverified",
-      "publication": "not_verified",
-      "tiktokPostUrls": [],
+      "productionEvidence": "public_tiktok_posts_observed",
+      "publication": "verified_published",
+      "tiktokPostUrls": [
+        "https://www.tiktok.com/@soracraftdiary/video/7709669447589514517",
+        "https://www.tiktok.com/@soracraftdiary/video/7709492201922759956"
+      ],
       "newVideoEligibility": "blocked_avoid_repeated_work",
-      "evidenceQualification": "Older Hakone clips were mentioned. For hamamatsuya-clip there is also a scene-related video, but its depiction of this exact site product has not been established. Do not mark an exact-product video completed without visual match."
+      "evidenceQualification": "Two public posts identify this product by maker, pierced earring type and catalog price. The 60-second compilation remains unverified."
     },
     {
       "productId": "hamamatsuya-clip",
@@ -57,13 +171,17 @@
       "imageAssetId": "ai-hakone-yosegi-clipon-styling-v9",
       "episodeIds": [
         "hakone-yosegi-60s-compilation",
-        "hakone-yosegi-stone-lane-earrings"
+        "hakone-yosegi-stone-lane-earrings",
+        "hakone-yosegi-riverside-earrings"
       ],
-      "productionEvidence": "older_or_indirect_association_unverified",
-      "publication": "not_verified",
-      "tiktokPostUrls": [],
+      "productionEvidence": "public_tiktok_posts_observed",
+      "publication": "verified_published",
+      "tiktokPostUrls": [
+        "https://www.tiktok.com/@soracraftdiary/video/7709717452833312020",
+        "https://www.tiktok.com/@soracraftdiary/video/7709510890793585941"
+      ],
       "newVideoEligibility": "blocked_avoid_repeated_work",
-      "evidenceQualification": "Older Hakone clips were mentioned. For hamamatsuya-clip there is also a scene-related video, but its depiction of this exact site product has not been established. Do not mark an exact-product video completed without visual match."
+      "evidenceQualification": "Two public captions identify the clip-on earring. The light-blue stone-lane episode is matched. The 15-second riverside attachment and the 60-second compilation have no confirmed post association."
     },
     {
       "productId": "hamamatsuya-pendant",
@@ -74,8 +192,11 @@
         "kanagawa-hamamatsuya-muku-yosegi-pendant"
       ],
       "productionEvidence": "generated_or_user_reported",
-      "publication": "not_verified",
-      "tiktokPostUrls": [],
+      "publication": "verified_published",
+      "tiktokPostUrls": [
+        "https://www.tiktok.com/@soracraftdiary/video/7709718240515083540",
+        "https://www.tiktok.com/@soracraftdiary/video/7709664106768321813"
+      ],
       "newVideoEligibility": "blocked_avoid_repeated_work"
     },
     {
@@ -87,8 +208,10 @@
         "kamakura-yogado-camellia-brooch"
       ],
       "productionEvidence": "generated_or_user_reported",
-      "publication": "not_verified",
-      "tiktokPostUrls": [],
+      "publication": "verified_published",
+      "tiktokPostUrls": [
+        "https://www.tiktok.com/@soracraftdiary/video/7710014860775492885"
+      ],
       "newVideoEligibility": "blocked_avoid_repeated_work"
     },
     {
@@ -100,8 +223,10 @@
         "kanagawa-yogado-kamakura-bori-maple-brooch"
       ],
       "productionEvidence": "generated_or_user_reported",
-      "publication": "not_verified",
-      "tiktokPostUrls": [],
+      "publication": "verified_published",
+      "tiktokPostUrls": [
+        "https://www.tiktok.com/@soracraftdiary/video/7710867409019718933"
+      ],
       "newVideoEligibility": "blocked_avoid_repeated_work"
     },
     {
@@ -113,8 +238,10 @@
         "kanagawa-yogado-kamakura-bori-camellia-pendant"
       ],
       "productionEvidence": "generated_or_user_reported",
-      "publication": "not_verified",
-      "tiktokPostUrls": [],
+      "publication": "verified_published",
+      "tiktokPostUrls": [
+        "https://www.tiktok.com/@soracraftdiary/video/7710935851307420949"
+      ],
       "newVideoEligibility": "blocked_avoid_repeated_work"
     },
     {
@@ -139,8 +266,10 @@
         "kanagawa-dahliacyan-rhodochrosite-bracelet"
       ],
       "productionEvidence": "generated_or_user_reported",
-      "publication": "not_verified",
-      "tiktokPostUrls": [],
+      "publication": "verified_published",
+      "tiktokPostUrls": [
+        "https://www.tiktok.com/@soracraftdiary/video/7710489540372221205"
+      ],
       "newVideoEligibility": "blocked_avoid_repeated_work"
     }
   ],
@@ -217,10 +346,12 @@
   "counts": {
     "siteProductsLinkedToKanagawa": 8,
     "conservativeDoNotRepeat": 8,
-    "linkedToVideoCreationEvidence": 6,
-    "olderUnverified": 2,
+    "linkedToVideoCreationEvidence": 8,
+    "olderUnverified": 0,
     "retailerRelatedNotKanagawaCertified": 4,
-    "verifiedTikTokPostMatches": 0
+    "verifiedTikTokPostMatches": 10,
+    "visibleTikTokPosts": 10,
+    "verifiedTikTokProductMatches": 7
   },
   "changeLog": [
     {
@@ -230,6 +361,10 @@
     {
       "date": "2026-11-22",
       "event": "Classified earlier Hakone earring references as weak product associations until direct visual matching; six definite generated/user-reported product pairs, two unresolved."
+    },
+    {
+      "date": "2026-11-22",
+      "event": "Reopened the public profile in a browser and reconciled all ten visible post cards with seven catalog products. Recorded matching and evidence limits for each post."
     }
   ]
 }

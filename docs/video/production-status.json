@@ -7,7 +7,7 @@
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
   "currentEpisodeId": "kanagawa-maruyama-yosegi-earring-d",
-  "nextAction": "NEW CHAT: Read docs/video/NEW_CHAT_HANDOFF.md and SDD v1.9, production-status, TikTok duplicate registry, Kyoto plan; summarize verified status. When user requests first Kyoto video, verify latest site published product and original woman asset and show the exact original without edits, then write short Flow prompt. Avoid duplicate women/products; record actual result only.",
+  "nextAction": "When the user requests the next video, check the current catalog, site styling images, production records and TikTok registry. If Kyoto is requested or selected from the provisional plan, show the matched site image and prepare the Flow prompt. Record only work completed.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -29,12 +29,12 @@
       "productIds": [
         "yogado-kamakura-bori-camellia-brooch"
       ],
-      "status": "generated_unreviewed",
-      "summary": "Earlier TikTok caption drafting was noted. Five sampled frames of the attached 10-second vertical clip match the ivory jacket and red camellia brooch in the published site styling image. The Instagram draft is in the episode. Audio, full-frame review and publication are unverified.",
+      "status": "published",
+      "summary": "Earlier TikTok caption drafting was noted. Five sampled frames of the attached 10-second vertical clip match the ivory jacket and red camellia brooch in the published site styling image. The Instagram draft is in the episode. Audio and full-frame review remain unverified. The matching public TikTok post was confirmed from the profile caption and thumbnail.",
       "artifactUrl": null,
-      "postUrl": null,
-      "verification": "10s 512x910 attachment; five sampled frames visually compared with the published site styling image.",
-      "nextAction": "Record the corresponding post URL when publication is confirmed.",
+      "postUrl": "https://www.tiktok.com/@soracraftdiary/video/7710014860775492885",
+      "verification": "10s 512x910 attachment; five sampled frames visually compared with the published site styling image. Public TikTok caption and thumbnail checked on 2026-11-22.",
+      "nextAction": "Review the complete clip and Japanese audio if needed. Record an Instagram URL after that publication is verified.",
       "episodePath": "docs/video/episodes/kamakura-yogado-camellia-brooch.md",
       "instagramCaption": {
         "status": "draft",
@@ -65,19 +65,19 @@
       "productIds": [
         "dahliacyan-openwork-rhodochrosite-bracelet"
       ],
-      "status": "generated_unreviewed",
+      "status": "published",
       "femaleImagePath": "public/images/styling-jp-dahliacyan-openwork-rhodochrosite-bracelet-v26.webp",
       "episodePath": "docs/video/episodes/kanagawa-dahliacyan-rhodochrosite-bracelet.md",
-      "summary": "User uploaded a 10-second 512x910 video after the blue blouse v5 prompt. Visually inspected sampled frames on 2026-11-21: same-looking young woman in powder-blue top, single prominent silver bracelet with pink stone visible on one raised wrist in sampled frames; complete every-frame jewelry inspection and Japanese audio transcription/pronunciation review not yet completed. TikTok Japanese caption drafted. This is not proof of approval or publication.",
+      "summary": "User uploaded a 10-second 512x910 video after the blue blouse v5 prompt. Visually inspected sampled frames on 2026-11-21: same-looking young woman in powder-blue top, single prominent silver bracelet with pink stone visible on one raised wrist in sampled frames; complete every-frame jewelry inspection and Japanese audio transcription/pronunciation review not yet completed. TikTok Japanese caption drafted. The matching public TikTok post was confirmed from the profile caption and thumbnail.",
       "artifactUrl": null,
-      "postUrl": null,
-      "verification": "visual contact sheet at 0,2,4,6,8,9.5 seconds; 10s 512x910 media metadata; audio quality and full-frame verification pending",
-      "nextAction": "Before approving or posting, check the full 10-second video and Japanese audio for native pronunciation, look for any bracelet duplication in all frames, then confirm whether it was posted and save its exact TikTok URL.",
+      "postUrl": "https://www.tiktok.com/@soracraftdiary/video/7710489540372221205",
+      "verification": "visual contact sheet at 0,2,4,6,8,9.5 seconds; 10s 512x910 media metadata; audio quality and full-frame verification pending. Public TikTok caption and thumbnail checked on 2026-11-22.",
+      "nextAction": "Review the complete clip and Japanese audio if needed. Record an Instagram URL after that publication is verified.",
       "statusReason": "Repeated bracelet duplication under long negative prompts; switch to image-first preflight",
-      "currentPromptVersion": "v5-prompt-ready-no-generated-video",
+      "currentPromptVersion": "v5-ready",
       "sourceImageShape": "1536x1024 landscape 3:2",
       "derivedStartFramePath": null,
-      "startFrameStatus": "blue-blouse-image-generated-in-chat; final video and long-term file location not verified",
+      "startFrameStatus": "The v5 styling matches the visible thumbnail. The exact Flow input and permanent media location are unverified.",
       "modelUsedForV4": null,
       "generatedV4Url": null,
       "audioFallback": "Use Flow project Settings > Return silent videos and add Japanese voice in post only if speech failures persist; lip sync requires separate review",
@@ -95,8 +95,8 @@
       "productIds": [
         "yogado-kamakura-bori-maple-brooch"
       ],
-      "status": "generated_unreviewed",
-      "summary": "User uploaded a 10-second vertical clip for the Kamakura maple-brooch episode on 2026-11-22. A 1s/3s/5s/7s/9s visual contact sheet showed the navy-jacket woman smiling, with maple-leaf brooch on the lapel and an autumn outdoor background. Japanese audio and all-frame identity/jewelry checks not verified. TikTok caption drafted; publication not confirmed.",
+      "status": "published",
+      "summary": "User uploaded a 10-second vertical clip for the Kamakura maple-brooch episode on 2026-11-22. A 1s/3s/5s/7s/9s visual contact sheet showed the navy-jacket woman smiling, with maple-leaf brooch on the lapel and an autumn outdoor background. Japanese audio and all-frame identity/jewelry checks not verified. TikTok caption drafted. The matching public TikTok post was confirmed from the profile caption and thumbnail.",
       "sourceImagePath": "public/images/styling-jp-yogado-kamakura-bori-maple-brooch-v26.webp",
       "sourceImageDimensions": "768x512",
       "canvaSourceMediaId": "MAHbjdHRNko",
@@ -104,9 +104,9 @@
       "episodePath": "docs/video/episodes/kanagawa-yogado-kamakura-bori-maple-brooch.md",
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
-      "postUrl": null,
-      "nextAction": "Review the full clip including Japanese audio and check for brooch distortion; confirm the clip is approved or published, and record its actual TikTok link. Next planned Kanagawa episode is Yogado camellia pendant.",
-      "verification": "10s 512x910 mp4; visually inspected sampled frames at 1,3,5,7,9 seconds; audio unverified; actual public post URL unknown",
+      "postUrl": "https://www.tiktok.com/@soracraftdiary/video/7710867409019718933",
+      "nextAction": "Review the complete clip and Japanese audio if needed. Record an Instagram URL after that publication is verified.",
+      "verification": "10s 512x910 mp4; visually inspected sampled frames at 1,3,5,7,9 seconds; audio unverified. Public TikTok caption and thumbnail checked on 2026-11-22.",
       "captionDraft": "「ねえ、このもみじ、似合うかな？🍁」\n\n今日は神奈川・鎌倉で待ち合わせ💕\n\n彼女の胸元を彩るのは、伝統工芸「鎌倉彫」のもみじブローチ。\n\n木彫りと漆が生み出す、繊細であたたかい美しさ✨\n\nこんな秋の鎌倉デート、してみたい？💗\n\n🇯🇵 Discover Japanese traditional crafts through a romantic POV date.\n\n🍁 陽雅堂｜鎌倉彫ブローチ もみじ\n\n※映像はAI生成によるイメージです。\n\n#SORA旅先で待ち合わせ #鎌倉 #鎌倉彫 #伝統工芸 #和アクセサリー #AIデート #JapaneseCrafts",
       "instagramCaption": {
         "status": "draft",
@@ -119,16 +119,16 @@
       "productIds": [
         "yogado-kamakura-bori-camellia-pendant"
       ],
-      "status": "generated_unreviewed",
-      "summary": "User uploaded a 10s 512×910 generated clip. Sampled frames at 1s, 4s, 8s inspected: same-looking adult woman in sage-green top glances down then at camera and smiles, single chest camellia pendant visible in these frames. Full video/audio review and posting not confirmed. TikTok caption/title drafted.",
+      "status": "published",
+      "summary": "User uploaded a 10s 512×910 generated clip. Sampled frames at 1s, 4s, 8s inspected: same-looking adult woman in sage-green top glances down then at camera and smiles, single chest camellia pendant visible in these frames. Full video and audio review remain unverified. TikTok caption/title drafted. The matching public TikTok post was confirmed from the profile caption and thumbnail.",
       "femaleImagePath": "public/images/styling-jp-yogado-kamakura-bori-camellia-pendant-v26.webp",
       "femaleImageDimensions": "768x512",
       "episodePath": "docs/video/episodes/kanagawa-yogado-kamakura-bori-camellia-pendant.md",
       "startFrameStatus": "Canva portrait 720x1280 design ready; PNG export pending",
       "artifactUrl": null,
-      "postUrl": null,
-      "verification": "MP4 metadata and sampled visual frames at 1s, 4s, 8s; no audio confirmation, no published TikTok URL",
-      "nextAction": "Check the complete 10-second camellia pendant clip, especially voice pronunciation and pendant continuity. If posted, record actual TikTok URL; until then published status unconfirmed.",
+      "postUrl": "https://www.tiktok.com/@soracraftdiary/video/7710935851307420949",
+      "verification": "MP4 metadata and sampled visual frames at 1s, 4s, 8s; no audio confirmation. Public TikTok caption and thumbnail checked on 2026-11-22.",
+      "nextAction": "Review the complete clip and Japanese audio if needed. Record an Instagram URL after that publication is verified.",
       "currentPromptVersion": "v1-ready",
       "canvaDesignId": "DAHbnzBQEow",
       "canvaEditUrl": "https://www.canva.com/d/X4ipupo40I8fKqB",
@@ -147,17 +147,17 @@
       "productIds": [
         "hamamatsuya-pendant"
       ],
-      "status": "generated_unreviewed",
-      "summary": "The user reported that the Hakone Hamamatsuya pendant clip already existed, then provided a vertical 15-second coffee-date clip. Five sampled frames show the ivory shirt, geometric pendant on a dark cord, and café scene. Instagram caption draft saved; audio, full-frame review and posting are unverified.",
+      "status": "published",
+      "summary": "The user reported that the Hakone Hamamatsuya pendant clip already existed, then provided a vertical 15-second coffee-date clip. Five sampled frames show the ivory shirt, geometric pendant on a dark cord, and café scene. Instagram caption draft saved; audio and full-frame review remain unverified. The matching public TikTok post was confirmed from the profile caption and thumbnail.",
       "femaleImagePath": "public/images/yosegi-pendant-styling-v9.webp",
       "femaleImageDimensions": "1536x1024",
       "startFrameStatus": "original-site-image-ready-no-edits",
       "episodePath": "docs/video/episodes/kanagawa-hamamatsuya-muku-yosegi-pendant.md",
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
-      "postUrl": null,
-      "verification": "15s 512x910 attachment; five sampled frames visually compared with the published product styling image.",
-      "nextAction": "If reviewing this clip, check the full video and audio. Record any confirmed social post URL under the appropriate channel.",
+      "postUrl": "https://www.tiktok.com/@soracraftdiary/video/7709664106768321813",
+      "verification": "15s 512x910 attachment; five sampled frames visually compared with the published product styling image. Public TikTok caption and thumbnail checked on 2026-11-22.",
+      "nextAction": "Review the complete clip and Japanese audio if needed. Record an Instagram URL after that publication is verified.",
       "instagramCaption": {
         "status": "draft",
         "postUrl": null
@@ -187,13 +187,13 @@
       "productIds": [
         "hamamatsuya-clip"
       ],
-      "status": "generated_unreviewed",
-      "summary": "Standalone 10-second Hakone stone-lane clip, associated by scene with the earlier brief for Hamamatsuya yosegi earrings. The Instagram draft uses the product as inspiration. Audio, full-frame review and publication remain unverified.",
+      "status": "published",
+      "summary": "Standalone 10-second Hakone stone-lane clip, associated by scene with the earlier brief for Hamamatsuya yosegi earrings. The Instagram draft uses the product as inspiration. Audio and full-frame review remain unverified. The matching public TikTok post was confirmed from the profile caption and thumbnail.",
       "episodePath": "docs/video/episodes/hakone-yosegi-stone-lane-earrings.md",
       "artifactUrl": null,
-      "postUrl": null,
-      "verification": "512x910, 10 seconds; five sampled frames checked against the stone-lane walk brief.",
-      "nextAction": "Record the Instagram Reel URL when publication is confirmed.",
+      "postUrl": "https://www.tiktok.com/@soracraftdiary/video/7709717452833312020",
+      "verification": "512x910, 10 seconds; five sampled frames checked against the stone-lane walk brief. Public TikTok caption and thumbnail checked on 2026-11-22.",
+      "nextAction": "Review the complete clip and Japanese audio if needed. Record an Instagram URL after that publication is verified.",
       "instagramCaption": {
         "status": "draft",
         "postUrl": null
@@ -222,7 +222,7 @@
   "observedLinks": [
     {
       "url": "https://www.tiktok.com/@soracraftdiary/video/7709718240515083540",
-      "description": "A TikTok video link shared in a prior chat; its exact linkage to the above episodes and its present accessibility are unverified."
+      "description": "The previously shared public TikTok post promotes the Hamamatsuya yosegi pendant in a Lake Ashi café scene. The clip associated with the existing window-side café episode has its own separate confirmed URL."
     }
   ],
   "exclusions": [
@@ -323,6 +323,10 @@
     {
       "date": "2026-11-22",
       "summary": "Completed new-chat handoff and machine-readable provisional Kyoto seven-product queue. Linked site and video entrypoints, preserved no-image-edit and TikTok de-dup policy. Kyoto remains an unconfirmed suggestion; no Kyoto videos generated or posted."
+    },
+    {
+      "date": "2026-11-22",
+      "summary": "Checked the public TikTok profile after the user shared its URL. Reconciled ten visible posts covering seven Kanagawa catalog products. Linked six existing episodes by scene and styling and recorded the other product-level matches in the publication registry."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -336,12 +340,13 @@
   "imagePolicyDefault": "Show and use exact original image in src/data/editorial-images.json for site-published product; do not create any variant unless explicitly requested (2026-11-22 user directive).",
   "tiktokAudit": {
     "accountUrl": "https://www.tiktok.com/@soracraftdiary",
-    "status": "public_post_list_unavailable",
+    "status": "public_profile_checked",
     "checkedOn": "2026-11-22",
     "registryPath": "docs/video/tiktok-publication-registry.json",
-    "verifiedPostLinks": 0,
-    "duplicatePolicy": "Block all eight Kanagawa products for new videos until past creation and posting ambiguity resolved. Also block reused identical female image assetId/path across products; avoid re-proposing current maruyama-clip-d prompt as an entirely new idea.",
-    "note": "Direct TikTok browsing/search could not enumerate posts; this is NOT a verification of zero posts."
+    "verifiedPostLinks": 10,
+    "duplicatePolicy": "Exclude all eight Kanagawa products and their corresponding site image IDs from new production. Seven products appear in the visible TikTok postings. The orange moonstone earrings have prior clip evidence. Continue to check shared image IDs and the reserved Maruyama D episode.",
+    "note": "Ten visible clips matched by caption and thumbnail. Full playback and audio were unverified. The orange moonstone earrings and 60-second Hakone compilation have no verified TikTok URL.",
+    "verifiedProductMatches": 7
   },
   "handoff": {
     "readyAt": "2026-11-22",

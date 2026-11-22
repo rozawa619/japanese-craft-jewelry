@@ -2,7 +2,7 @@
 
 - エピソードID: `kanagawa-yogado-kamakura-bori-maple-brooch`
 - 作成日: 2026-11-21
-- 制作段階: **Google Flow指示文準備済み／開始画像のCanva生成を依頼済み、完成画像の目視採用未確認／動画未生成／投稿未確認**
+- 制作段階は **TikTok公開確認済み**。添付された動画は抜粋フレームを確認済み。
 - 商品ID: `yogado-kamakura-bori-maple-brooch`（`src/data/catalog.json` のpublished）
 - サイト商品ページ: https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/yogado-kamakura-bori-maple-brooch/
 - 正本女性画像: `public/images/styling-jp-yogado-kamakura-bori-maple-brooch-v26.webp`
@@ -14,7 +14,13 @@
 - 音声（生成時はひらがな）: `ねえ、みて。このもみじ、かわいくない？にあうかな？`（漢字表記：ねえ、見て。このもみじ、かわいくない？似合うかな？）
 - Flow: Framesモード、縦9:16、10秒が選べるとき10秒、1ショット、字幕/BGMなし
 - 品質ゲート: 元サイトの女性と顔・髪・服が同じか。もみじブローチの形・位置・個数が一定か。人物が別人になっていないか。標準日本語の発音が自然か。
-- 次にすること: Canva生成された縦9:16開始画像を確認・採用（サイト元画像と横並び照合）。合格ならその画像をFlowへアップロードし下記プロンプトで生成。動画検品と投稿は未実施。
+- 音声と全編の検品、Canvaで準備した開始画像を最終動画に使用したかは未確認です。
+
+## TikTok公開確認
+
+2026-11-22に公開プロフィールを確認しました。公開投稿の説明文と、紺のジャケットの襟に紅葉のブローチが映るサムネイルを、サイトの着用イメージと照合しました。
+
+動画の全編と音声は未確認です。 [TikTok投稿](https://www.tiktok.com/@soracraftdiary/video/7710867409019718933)
 
 ## Instagramリール紹介文
 
