@@ -176,6 +176,24 @@
       "postUrl": null,
       "verification": "GitHub published catalog and editorial image; Japanese content and Kanagawa merchant page checked; original image visually inspected",
       "nextAction": "Use the exact site female original image public/images/yosegi-bar-styling-v9.webp for product maruyama-clip-d; paste the locked Flow prompt in docs/video/episodes/kanagawa-maruyama-yosegi-earring-d.md, generate and check ear ornament continuity and Japanese voice. Do not claim product manufactured in Kanagawa; maker/manufacturing location unverified."
+    },
+    {
+      "id": "hakone-yosegi-stone-lane-earrings",
+      "place": "Hakone, Kanagawa",
+      "productIds": [
+        "hamamatsuya-clip"
+      ],
+      "status": "generated_unreviewed",
+      "summary": "Standalone 10-second Hakone stone-lane clip, associated by scene with the earlier brief for Hamamatsuya yosegi earrings. The Instagram draft uses the product as inspiration. Audio, full-frame review and publication remain unverified.",
+      "episodePath": "docs/video/episodes/hakone-yosegi-stone-lane-earrings.md",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "512x910, 10 seconds; five sampled frames checked against the stone-lane walk brief.",
+      "nextAction": "Record the Instagram Reel URL when publication is confirmed.",
+      "instagramCaption": {
+        "status": "draft",
+        "postUrl": null
+      }
     }
   ],
   "observedLinks": [
@@ -262,6 +280,10 @@
     {
       "date": "2026-11-22",
       "summary": "Matched the attached ivory-jacket reel to the Kamakura Yogado camellia-brooch episode, added its episode document and saved the bilingual Instagram caption draft."
+    },
+    {
+      "date": "2026-11-22",
+      "summary": "Saved the bilingual Instagram caption for the standalone 10-second Hakone stone-lane walk with Hamamatsuya yosegi earring inspiration."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
