@@ -7,12 +7,12 @@
     "label": "京都府",
     "siteRegionUrl": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/kyoto/"
   },
-  "selectionStatus": "proposed_not_user_confirmed",
-  "confirmationNote": "2026-11-22 assistant suggested Kyoto after user asked which region has most products; user requested complete handoff before affirming any specific first video. Do not mark Kyoto episode as started or posted.",
+  "selectionStatus": "confirmed",
+  "confirmationNote": "The user chose Kyoto on 2026-11-22. The first episode's start frame and Flow prompt are prepared.",
   "counts": {
     "publishedProducts": 7,
     "distinctOriginalStylingImageAssets": 7,
-    "registeredVideoEpisodesForKyoto": 0
+    "registeredVideoEpisodesForKyoto": 1
   },
   "proposedOrder": [
     {
@@ -24,9 +24,11 @@
       "imagePath": "public/images/morphosphere-blue-pansy-styling-v9.webp",
       "imageAssetId": "ai-morphosphere-blue-pansy-styling-v9",
       "originalImageUrl": "https://raw.githubusercontent.com/rozawa619/japanese-craft-jewelry/main/public/images/morphosphere-blue-pansy-styling-v9.webp",
-      "status": "candidate_not_started",
-      "createdEpisodeIds": [],
-      "note": "候補の先頭。元画像の実写的な見え方を目視してから決める"
+      "status": "prompt_ready",
+      "createdEpisodeIds": [
+        "kyoto-morphosphere-ultramarine-pansy-pierced-earrings"
+      ],
+      "note": "元画像とFlow指示文を準備済み。縦のプレビューで右寄りの顔とピアス全体を確認する。"
     },
     {
       "priority": 2,
@@ -114,7 +116,7 @@
     "Output site product URL + RAW original image URL and short 10-second Google Flow script in an easy-to-copy draft when asked.",
     "After the user uploads video, inspect it and prepare TikTok/Instagram copy; log verified facts, distinguish generated vs published.",
     "Avoid unverified craft certification, manufacturing origin, and affiliation claims.",
-    "This proposed order is not an instruction to generate seven videos at once or publish them."
+    "Prepare, review and record one episode at a time."
   ],
   "otherRegionsBySitePublishedCount": [
     {

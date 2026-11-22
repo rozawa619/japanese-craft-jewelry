@@ -14,19 +14,19 @@
 - **動画SDD**：https://github.com/rozawa619/japanese-craft-jewelry/blob/main/docs/video/spec.md
 - **動画制作進捗**：https://github.com/rozawa619/japanese-craft-jewelry/blob/main/docs/video/production-status.json
 - **TikTok公開照合と重複防止**：https://github.com/rozawa619/japanese-craft-jewelry/blob/main/docs/video/tiktok-publication-registry.json
-- **次の京都候補7品**：https://github.com/rozawa619/japanese-craft-jewelry/blob/main/docs/video/kyoto-series-plan.json
+- **京都編の7商品と制作順**。 [京都編の台帳](kyoto-series-plan.json)
 - **全体サイト作業の入口**：https://github.com/rozawa619/japanese-craft-jewelry/blob/main/START_HERE.md
 - **サイト側のAI向け規則**：https://github.com/rozawa619/japanese-craft-jewelry/blob/main/AGENTS.md
 - **日本語公開サイト**：https://rozawa619.github.io/japanese-craft-jewelry/ja/
 - **英語公開サイト**：https://rozawa619.github.io/japanese-craft-jewelry/en/
 - **TikTokアカウント**：https://www.tiktok.com/@soracraftdiary
-- **次回候補の京都府ページ**：https://rozawa619.github.io/japanese-craft-jewelry/ja/places/kyoto/
+- **京都府の公開ページ**。 [日本語サイト](https://rozawa619.github.io/japanese-craft-jewelry/ja/places/kyoto/)
 
 ## 1. コンセプトと収益化の立ち位置
 
 - **ブランド名**：SORA｜旅先で待ち合わせ
 - **作品世界**：各都道府県を旅して、サイトのアクセサリーを着けた日本人の成人女性と一人称のデートをするような雰囲気。視聴者は恋人目線。1本約10秒、女性から自然な日本語で問いかけ、親しみやすい微笑みと商品を見せる。女性は商品ごとにサイト掲載の異なる設定であり、単一主人公の使い回しではない。
-- **展開**：神奈川から始め、47都道府県を目指す。現在は神奈川を概ね一巡したので**他県へ進む検討段階**。次のシリーズとして**京都府（7点）を推薦済みだが、ユーザーによる京都の正式確定はまだない**。この時点で京都動画は1本も作成/公開済みとして記録されていない。
+- **展開**。神奈川から始め、47都道府県を目指す。ユーザーの指定により次のシリーズは京都府。サイト掲載7品のうち1本目の元画像とFlow指示文を準備済み。
 - **事業**：国内・海外向け日本工芸アクセサリーの紹介メディア。最終的にアフィリエイト収益化を目指す。現時点のサイトは紹介中心で、実アフィリエイト提携は未申請、通常リンク。存在しない商品/契約/承認/アクセス実績を捏造しない。
 - **サイトの公開スナップショット（2026-11-19のデプロイ記録）**：v0.20.0、公開69商品・登録75商品・28都道府県・人物67＋単体69のAI画像136枚。GitHub main の文書更新と公開済みアプリSHAは別。正本は docs/deployment-results.json。
 - **出典ポリシー**：作成済みサイトに掲載されている商品・女性画像から動画を作る。サイト外の商品や架空のモデルを「サイト掲載済み」と言わない。商品情報は src/data/catalog.json と src/data/translations/ja.json、画像対応は src/data/editorial-images.json。
@@ -59,16 +59,16 @@
 - 以前ユーザーがTikTok/Instagram用に10秒動画を多数アップロードして投稿文を依頼。**チャット添付のMP4が次チャットへ移るとは限らない**。GitHubの記録はクリップの存在と検査内容を伝えるが、MP4本体や実投稿の完全コピーではない。未確認を「完了」にしない。
 - 制作・出版の状態（source of truth）は docs/video/production-status.json の各エピソードと docs/video/tiktok-publication-registry.json。
 
-## 4. 次に有力な京都府シリーズ（提案・未確定）
+## 4. 京都府シリーズ
 
 - サイト公開商品の都道府県別件数：神奈川8 → **京都7** → 東京5 → 北海道/千葉/大阪/山梨が各4。公開69点、地域28。
-- **京都はサイト掲載7商品／紐付く着用女性画像ファイル7点**。制作台帳と今回確認したTikTok公開一覧に京都の記録はなく、候補段階。次回の制作前に最新の台帳を照合する。
+- **京都はサイト掲載7商品、対応する女性元画像7点**。1本目の群青パンジーピアスは元画像と指示文を準備済み。動画生成と公開は未実施。 [京都編の台帳](kyoto-series-plan.json)
 - 京都商品には工芸の種類が多い。**「七宝文様」の真鍮バングルは七宝焼と断定しない**。オリジナル画像を基準に毎回目視確認。
-- 候補と順序は docs/video/kyoto-series-plan.json。**ユーザーが選ぶ前に京都7本を勝手に生成・投稿しない**。
+- 制作順と各商品の最新状況は[京都編の台帳](kyoto-series-plan.json)を参照し、1本ずつ進める。
 
 | 仮順 | サイト商品 | 商品ID | URL | 動画 |
 | ---: | --- | --- | --- | --- |
-| 1 | Morphosphere tint 群青パンジーピアス | morphosphere-ultramarine-pansy-pierced-earrings | [商品](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/morphosphere-ultramarine-pansy-pierced-earrings/) / [人物原本](https://raw.githubusercontent.com/rozawa619/japanese-craft-jewelry/main/public/images/morphosphere-blue-pansy-styling-v9.webp) | 未制作（候補） |
+| 1 | Morphosphere tint 群青パンジーピアス | morphosphere-ultramarine-pansy-pierced-earrings | [商品](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/morphosphere-ultramarine-pansy-pierced-earrings/) / [人物原本](https://raw.githubusercontent.com/rozawa619/japanese-craft-jewelry/main/public/images/morphosphere-blue-pansy-styling-v9.webp) | [元画像と指示文を準備済み](episodes/kyoto-morphosphere-ultramarine-pansy-pierced-earrings.md) |
 | 2 | 中嶋象嵌 ナシ型 桜・ラインドット ペンダント | nakajima-pear-sakura-pendant | [商品](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/nakajima-pear-sakura-pendant/) / [人物原本](https://raw.githubusercontent.com/rozawa619/japanese-craft-jewelry/main/public/images/nakajima-sakura-damascene-pendant-styling-v9.webp) | 未制作（候補） |
 | 3 | 錺之 はなびし 銅のピアス | kazarino-hanabishi-copper-earrings | [商品](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/kazarino-hanabishi-copper-earrings/) / [人物原本](https://raw.githubusercontent.com/rozawa619/japanese-craft-jewelry/main/public/images/styling-jp-kazarino-hanabishi-copper-earrings-v23.webp) | 未制作（候補） |
 | 4 | 染工房正茂 × Sextile 孔雀 友禅イヤリング | somemasa-peacock-clip-on-earrings | [商品](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/somemasa-peacock-clip-on-earrings/) / [人物原本](https://raw.githubusercontent.com/rozawa619/japanese-craft-jewelry/main/public/images/styling-jp-somemasa-peacock-clip-on-earrings-v23.webp) | 未制作（候補） |
@@ -76,7 +76,7 @@
 | 6 | 昇苑くみひも 正絹 江戸打ち 二重巻きブレスレット 青 | showen-edo-uchi-silk-bracelet | [商品](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/showen-edo-uchi-silk-bracelet/) / [人物原本](https://raw.githubusercontent.com/rozawa619/japanese-craft-jewelry/main/public/images/styling-jp-showen-edo-uchi-silk-bracelet-v23.webp) | 未制作（候補） |
 | 7 | 錺之 七宝文様 真鍮バングル S | kazarino-shippo-pattern-brass-bangle | [商品](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/kazarino-shippo-pattern-brass-bangle/) / [人物原本](https://raw.githubusercontent.com/rozawa619/japanese-craft-jewelry/main/public/images/kazarino-shippo-pattern-brass-bangle-styling-v13.webp) | 未制作（候補） |
 
-**次の一手**：新チャットで「京都から始めよう」と指示が来たら、最新の catalog / editorial-images / video status / TikTok de-dup台帳を再取得し、1本目候補の **Morphosphere tint 群青パンジーピアス** に該当するサイト女性の**画像原本を表示**。顔と商品を確認して、必要な場合だけ Google Flow のコピー用10秒動画プロンプトを作成。ユーザーが別の商品や県を選んだらそちらを優先する。チャット開始文が「引継ぎ完了を確認」だけなら、いきなり動画を生成せず引継ぎ内容を簡潔に報告する。
+制作の再開時は[制作台帳](production-status.json)の現在回と記録を確認する。今回の初回エピソードにサイト元画像・縦の構図・Flow指示文を保存した。 [京都編 第1話](episodes/kyoto-morphosphere-ultramarine-pansy-pierced-earrings.md)
 
 ## 5. このファイルに書かれていないことの扱い
 
@@ -112,7 +112,7 @@ TikTokは https://www.tiktok.com/@soracraftdiary です。公開プロフィー�
 
 動画はGoogle Flowで縦9:16、基本10秒、恋人の一人称デート視点、自然な日本語の短い会話、女性とアクセサリーを固定、動き最小限。字幕とBGMは後編集。TikTokとInstagramの紹介文は既存SDDに合わせること。
 
-神奈川県は8商品が概ね一巡。次の県として掲載7商品の京都府を提案済みですが、京都を正式に確定して1本目を制作した状態ではありません。京都の7商品の候補と重複しないサイト女性画像は kyoto-series-plan.json で確認してください。
+神奈川県は8商品が概ね一巡し、次のシリーズを京都府に決定しました。各回の制作状況とサイト女性画像は kyoto-series-plan.json と production-status.json で確認してください。
 
 最初に、GitHubで確認できた最新の制作状況・今後の候補・未確認事項を短く整理してください。その後、私が「京都の次の動画」と言ったら、未使用の商品とサイトの女性原本をまず表示し、Flowの指示文まで作ってください。作業後は毎回GitHubの台帳/episodeを更新してください。
 

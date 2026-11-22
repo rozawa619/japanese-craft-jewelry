@@ -6,9 +6,9 @@
 
 **まず [新チャット専用の完全引継ぎ書](NEW_CHAT_HANDOFF.md) を読む。** その中の「6. 新しいChatGPTチャットに貼る引継ぎ文」がコピペ用の正式な開始文。
 
-次シリーズは[京都7商品の候補台帳](kyoto-series-plan.json)（**候補・未制作・ユーザーの正式確定前**）。神奈川の[制作カバレッジ](kanagawa-coverage-audit-2026-11-22.md)と[TikTok重複防止](tiktok-publication-registry.json)を確認し、**新作の前に商品IDと女性画像IDを照合**する。
+京都編を開始。商品・画像の組み合わせと制作順は[京都7商品の台帳](kyoto-series-plan.json)を参照する。神奈川の[制作カバレッジ](kanagawa-coverage-audit-2026-11-22.md)と[TikTok公開照合台帳](tiktok-publication-registry.json)を確認し、**新作の前に商品IDと女性画像IDを照合**する。
 
-2026-11-22からの方針は、**サイト掲載の女性の元画像をそのまま表示する**。元画像の変更・新規生成・Canvaでの開始画像作りはユーザーが明示的に依頼した場合に限る。現在の`production-status.json.currentEpisodeId`が古い神奈川の草案を指しても、次作候補が京都であることと混同しない。TikTokの確認済み投稿は公開照合台帳を参照する。
+2026-11-22からの方針は、**サイト掲載の女性の元画像をそのまま表示する**。元画像の変更・新規生成・Canvaでの開始画像作りはユーザーが明示的に依頼した場合に限る。進行中の回は `production-status.json.currentEpisodeId` を参照する。TikTokの確認済み投稿は公開照合台帳を参照する。
 
 ## 30秒で再開する
 

@@ -6,8 +6,8 @@
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
-  "currentEpisodeId": "kanagawa-maruyama-yosegi-earring-d",
-  "nextAction": "When the user requests the next video, check the current catalog, site styling images, production records and TikTok registry. If Kyoto is requested or selected from the provisional plan, show the matched site image and prepare the Flow prompt. Record only work completed.",
+  "currentEpisodeId": "kyoto-morphosphere-ultramarine-pansy-pierced-earrings",
+  "nextAction": "Load the original site WebP as the Flow start frame. Check that the face and entire earring are in the 9:16 preview. Review the generated clip for identity, earring continuity and Japanese speech.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -217,6 +217,25 @@
         "status": "draft",
         "postUrl": null
       }
+    },
+    {
+      "id": "kyoto-morphosphere-ultramarine-pansy-pierced-earrings",
+      "place": "Kyoto, Japan",
+      "productIds": [
+        "morphosphere-ultramarine-pansy-pierced-earrings"
+      ],
+      "status": "prompt_ready",
+      "summary": "The user selected Kyoto. The original site styling image and the v1 Google Flow prompt for the ultramarine pansy earrings are ready. Generation and publication are pending.",
+      "femaleImageAssetId": "ai-morphosphere-blue-pansy-styling-v9",
+      "femaleImagePath": "public/images/morphosphere-blue-pansy-styling-v9.webp",
+      "femaleImageDimensions": "1536x1024",
+      "episodePath": "docs/video/episodes/kyoto-morphosphere-ultramarine-pansy-pierced-earrings.md",
+      "startFrameStatus": "Original site WebP visually inspected and matched to the deployed application commit",
+      "currentPromptVersion": "v1-ready",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "Latest catalog, production ledger and the TikTok registry were checked for product ID and styling image asset ID and path. Git blob d81b5c3e815c8872ac2a3c3abe7ba8b51023332c matches the deployed source in 41773dbbf0a8c9c565d6e956751de82307190c44.",
+      "nextAction": "Load the original site WebP as the Flow start frame. Check that the face and entire earring are in the 9:16 preview. Review the generated clip for identity, earring continuity and Japanese speech."
     }
   ],
   "observedLinks": [
@@ -327,13 +346,17 @@
     {
       "date": "2026-11-22",
       "summary": "Checked the public TikTok profile after the user shared its URL. Reconciled ten visible posts covering seven Kanagawa catalog products. Linked six existing episodes by scene and styling and recorded the other product-level matches in the publication registry."
+    },
+    {
+      "date": "2026-11-22",
+      "summary": "Started the Kyoto series at the user's request. Verified the existing Morphosphere tint ultramarine pansy styling image, checked for duplicates, and saved the first episode and Flow prompt v1."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
   "seriesFocus": {
-    "mode": "kanagawa-first",
-    "prefectureId": "kanagawa",
-    "scope": "For the foreseeable next episodes, pick published products + corresponding female model images from Kanagawa, including Hakone and Kamakura; expand outside Kanagawa only when user explicitly changes series focus.",
+    "mode": "kyoto-first",
+    "prefectureId": "kyoto",
+    "scope": "Prepare one Kyoto episode at a time from the published catalog and its original styling image. Use the Kyoto plan and the production and TikTok records to avoid reuse.",
     "setAt": "2026-11-22"
   },
   "nextPlannedEpisodeId": null,
@@ -358,14 +381,14 @@
   "nextRegionProposal": {
     "regionId": "kyoto",
     "regionName": "京都府",
-    "userConfirmed": false,
-    "status": "proposed_not_started",
+    "userConfirmed": true,
+    "status": "prompt_ready",
     "publishedSiteProducts": 7,
     "uniqueImageAssets": 7,
-    "createdKyotoEpisodes": 0,
+    "createdKyotoEpisodes": 1,
     "planPath": "docs/video/kyoto-series-plan.json",
     "firstSuggestedProductId": "morphosphere-ultramarine-pansy-pierced-earrings",
-    "explanation": "Kyoto recommended as largest region after Kanagawa (8 vs 7). User requested complete new-chat handoff; Kyoto series not explicitly confirmed or generated yet."
+    "explanation": "The user chose Kyoto on 2026-11-22. The first episode has an original site start frame and a Flow prompt. Generation and publication are pending."
   },
   "previousWorkCurrentEpisodeId": "kanagawa-maruyama-yosegi-earring-d"
 }
