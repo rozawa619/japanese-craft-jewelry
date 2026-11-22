@@ -2,6 +2,8 @@
 
 このリポジトリとGitHub上の資料から、Japanese Craft Jewelryの保守を再開できます。公開版と配信元は[公開記録](docs/deployment-results.json)で確認できます。[仕様028](specs/028-purchase-routes/spec.md)で、公式通販と取扱店への案内を商品ごとの購入根拠に合わせました。
 
+SORAのTikTok・Instagramプロフィールから案内する日英URLと、特集商品の変更箇所は[仕様029](specs/029-sora-profile-links/spec.md)にまとまっています。
+
 
 ## サイト構築を新しいチャットに引き継ぐ場合
 

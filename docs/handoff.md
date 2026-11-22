@@ -43,6 +43,8 @@
 
 ## 公開版の検証記録
 
+[仕様029の検証](../specs/029-sora-profile-links/validation.md)に、SORAのSNSプロフィール用ページと、商品・産地への導線を記録しています。
+
 [仕様028の検証](../specs/028-purchase-routes/validation.md)に、公式通販とカタログの表示、確認日、取扱店の導線を記録しています。
 
 [0.20.0の検証](../specs/027-regional-craft-picks/validation.md)で、新4県の導線、日英の公開ページ、公式購入先、配信画像を確認しました。

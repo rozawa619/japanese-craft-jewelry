@@ -13,6 +13,8 @@
 
 ## 現在のサイトと公開履歴
 
+SNSのプロフィールからは[日英のSORAページと媒体別URL](../specs/029-sora-profile-links/spec.md)を使えます。特集の掲載順は `src/config/selection.ts`、動画の制作・投稿状況は動画台帳で管理します。
+
 [仕様028](../specs/028-purchase-routes/spec.md)で公式通販とカタログ・取扱店への案内を整理しました。最新の配信版・SHA・Actionsは[公開記録](deployment-results.json)、購入ボタンと確認日の実測は[028の検証記録](../specs/028-purchase-routes/validation.md)を参照してください。
 
 > **以下は2026-11-19のデプロイ成功記録 v0.20.0 のスナップショット。** 最新mainのHEADは、その後の文書更新を含むため、実公開アプリのバージョン・SHAと一致しないことがある。新チャットでは必ず再取得し、実URLの確認と区別する。

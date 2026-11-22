@@ -1,0 +1,82 @@
+---
+import Base from '../../layouts/Base.astro';
+import EditorialImage from '../../components/EditorialImage.astro';
+import {profileSelection} from '../../config/selection';
+import {pagePath} from '../../config/site';
+import {catalogFor,labels,productsFor} from '../../lib/catalog';
+import {contentFor,contentSlug} from '../../lib/content';
+import {productImageFor} from '../../lib/editorial-images';
+import {locales,t} from '../../lib/i18n';
+
+export function getStaticPaths(){
+ return locales.map(locale=>({params:{lang:locale},props:{locale}}));
+}
+
+const {locale}=Astro.props;
+const products=productsFor(locale);
+const catalog=catalogFor(locale);
+const places=await contentFor('places',locale);
+const featured=products.find(product=>product.id===profileSelection.featuredProductId);
+const image=featured?productImageFor(featured.id):undefined;
+const regions=profileSelection.prefectureIds.flatMap(id=>{
+ const region=catalog.prefectures.find(prefecture=>prefecture.id===id);
+ const page=places.find(note=>note.data.prefectureId===id&&note.body?.trim());
+ const count=products.filter(product=>product.prefectureIds.includes(id)).length;
+ return region&&page&&count?[{id,name:region.name,count,slug:contentSlug(page)}]:[];
+});
+const title=t(locale,'SORA | Meet me in Japan','SORA｜旅先で待ち合わせ');
+const description=t(locale,'Find the featured piece from SORA and explore more craft jewelry from Japan.','SORAで気になったジュエリーの詳細や、旅先ごとの工芸ジュエリーを探せます。');
+---
+
+<Base {title} {description} {locale} socialImage={image||false}>
+ <div class="wrap sora-profile">
+  <header class="profile-header">
+   <h1>{title}</h1>
+   <p>{t(locale,'Craft jewelry from the places we visit.','旅先で出会う、日本の工芸ジュエリー。')}</p>
+  </header>
+
+  {featured&&<section class:list={['profile-feature',{'has-image':image}]} aria-labelledby="sora-feature-title">
+   <div class="profile-feature-copy">
+    {featured.prefectureIds.length>0&&<p class="profile-prefecture">{labels('prefectures',featured.prefectureIds,locale)}</p>}
+    <h2 id="sora-feature-title">{featured.title}</h2>
+    <a class="button profile-product-link" href={pagePath('objects/'+featured.slug+'/',locale)} data-sora-product={featured.id}>{t(locale,'View the jewelry','この商品の詳細を見る')}</a>
+   </div>
+   {image&&<div class="profile-portrait"><EditorialImage {image} {locale} priority/></div>}
+  </section>}
+
+  <nav class="profile-regions" aria-labelledby="sora-regions">
+   <h2 id="sora-regions">{t(locale,'Explore by destination','旅先から探す')}</h2>
+   <ul>
+    {regions.map(region=><li><a href={pagePath('places/'+region.slug+'/',locale)} data-sora-region={region.id}>
+     <span>{t(locale,'Jewelry from '+region.name,region.name+'のジュエリー')}</span>
+     <small>{t(locale,region.count===1?'1 regional piece':region.count+' regional pieces','産地関連 '+region.count+'点')}</small>
+    </a></li>)}
+   </ul>
+   <a class="profile-all-link" href={pagePath('objects/',locale)}>{t(locale,'View the full selection','全国のジュエリーを見る')}</a>
+  </nav>
+ </div>
+</Base>
+
+<style>
+ .sora-profile{max-width:960px;padding-block:clamp(26px,5vw,64px)}
+ .profile-header{margin-bottom:clamp(20px,4vw,36px)}
+ .profile-header h1{font-size:clamp(27px,5vw,56px);letter-spacing:-.035em;line-height:1.17;overflow-wrap:anywhere}
+ .profile-header p{margin:10px 0 0;color:var(--muted);font-size:1rem}
+ .profile-feature{display:grid;align-items:center;gap:22px;background:var(--green);border:1px solid var(--line);padding:clamp(16px,3.5vw,34px)}
+ .profile-feature.has-image{grid-template-columns:minmax(0,1fr) minmax(0,1.16fr)}
+ .profile-feature-copy{min-width:0}
+ .profile-prefecture{margin:0 0 8px;font-size:.9rem;font-weight:600;color:var(--forest)}
+ .profile-feature h2{font-size:clamp(22px,3.2vw,35px);line-height:1.26;letter-spacing:-.025em;line-break:strict;text-wrap:balance;overflow-wrap:anywhere}
+ .profile-product-link{margin-top:16px;min-height:48px;padding:10px 17px;max-width:100%;font:600 .9375rem/1.6 var(--sans)}
+ .profile-portrait :global(figure){margin:0}
+ .profile-portrait :global(img){display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain}
+ .profile-portrait :global(figcaption){font-size:.8125rem}
+ .profile-regions{margin-top:clamp(24px,4vw,42px)}
+ .profile-regions h2{font-size:clamp(22px,3vw,32px);letter-spacing:-.02em}
+ .profile-regions ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:0;margin:14px 0 6px;list-style:none}
+ .profile-regions li a{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:52px;padding:10px 13px;border:1px solid var(--line);font:600 .9375rem/1.45 var(--sans);overflow-wrap:anywhere;text-decoration:none}
+ .profile-regions li a:hover,.profile-regions li a:focus-visible{background:var(--green)}
+ .profile-regions small{flex:none;color:var(--muted);font-size:.8125rem;font-weight:400}
+ .profile-all-link{display:inline-flex;align-items:center;min-height:44px;font-size:.875rem}
+ @media(max-width:670px){.profile-feature.has-image,.profile-regions ul{grid-template-columns:minmax(0,1fr)}}
+</style>

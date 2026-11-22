@@ -43,4 +43,8 @@ export const selection={
   'maruyama-pierced-d',
  ],
 } as const;
+export const profileSelection={
+ featuredProductId:'morphosphere-ultramarine-pansy-pierced-earrings',
+ prefectureIds:['kyoto','kanagawa'],
+} as const;
 export function orderSelection<T extends {id:string}>(items:T[]):T[]{const rank=new Map<string,number>(selection.catalogProductIds.map((id,i)=>[id,i]));return [...items].sort((a,b)=>(rank.get(a.id)??9999)-(rank.get(b.id)??9999))}
