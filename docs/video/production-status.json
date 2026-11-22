@@ -5,8 +5,8 @@
   "scope": "TikTok / Google Flow AI POV date clips; site content source is separate",
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
-  "currentEpisodeId": "kanagawa-yogado-kamakura-bori-maple-brooch",
-  "nextAction": "Review the full clip including Japanese audio and check for brooch distortion; confirm the clip is approved or published, and record its actual TikTok link. Next planned Kanagawa episode is Yogado camellia pendant.",
+  "currentEpisodeId": "kanagawa-yogado-kamakura-bori-camellia-pendant",
+  "nextAction": "Open Canva design DAHbnzBQEow and export its only page as PNG. Use the PNG as Google Flow Frames start frame and paste locked v1 episode prompt. Review video for identity, single camellia pendant, Japanese pronunciation. Save MP4/post URL only after they exist.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -100,16 +100,20 @@
       "productIds": [
         "yogado-kamakura-bori-camellia-pendant"
       ],
-      "status": "idea",
-      "summary": "NEXT after ongoing maple brooch. Verified published product, corresponding original site female model (sage-green top, dark wavy hair, looking down, red-brown wooden camellia pendant). Face and pendant visibly inspected directly via GitHub image. No new start-frame, prompt, Flow video or post created.",
+      "status": "prompt_ready",
+      "summary": "Next Kanagawa episode launched. Confirmed published site woman and camellia pendant. Generative 9:16 replacement drifted in identity/jewelry and was rejected. Created a 720x1280 Canva design cropping the exact original 768x512 site image, preserving original pixels; imported image asset verified in Canva. v1 Google Flow prompt written. Canva PNG export / Flow run / video review / TikTok post NOT completed.",
       "femaleImagePath": "public/images/styling-jp-yogado-kamakura-bori-camellia-pendant-v26.webp",
       "femaleImageDimensions": "768x512",
       "episodePath": "docs/video/episodes/kanagawa-yogado-kamakura-bori-camellia-pendant.md",
-      "startFrameStatus": "not_created",
+      "startFrameStatus": "Canva portrait 720x1280 design ready; PNG export pending",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "catalog published+ja product markdown+original image visually inspected",
-      "nextAction": "After current maple brooch work, generate a 9:16 start frame by directly editing the same site image; inspect face and pendant identity. Then write short Google Flow prompt."
+      "verification": "GitHub published product & exact model image; Canva design 720x1280 and source image asset 768x512 confirmed",
+      "nextAction": "Open Canva design DAHbnzBQEow and export its only page as PNG. Use the PNG as Google Flow Frames start frame and paste locked v1 episode prompt. Review video for identity, single camellia pendant, Japanese pronunciation. Save MP4/post URL only after they exist.",
+      "currentPromptVersion": "v1-ready",
+      "canvaDesignId": "DAHbnzBQEow",
+      "canvaEditUrl": "https://www.canva.com/d/X4ipupo40I8fKqB",
+      "startFrameCropMethod": "original site image; object-fit: cover; no generative redraw"
     }
   ],
   "observedLinks": [
@@ -160,6 +164,10 @@
     {
       "date": "2026-11-22",
       "summary": "User uploaded 10-second maple brooch video. Reviewed sampled frames, drafted TikTok caption. Recorded generated_unreviewed; audio/full-frame verification and post URL remain outstanding."
+    },
+    {
+      "date": "2026-11-22",
+      "summary": "Started camellia pendant video. Rejected generative candidate due changed woman/jewelry; built exact-pixel 9:16 crop from current site AI image in Canva, confirmed 720x1280 with original image asset; saved v1 Flow prompt. PNG export, Flow generation, post remain pending."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -169,5 +177,5 @@
     "scope": "For the foreseeable next episodes, pick published products + corresponding female model images from Kanagawa, including Hakone and Kamakura; expand outside Kanagawa only when user explicitly changes series focus.",
     "setAt": "2026-11-22"
   },
-  "nextPlannedEpisodeId": "kanagawa-yogado-kamakura-bori-camellia-pendant"
+  "nextPlannedEpisodeId": null
 }
