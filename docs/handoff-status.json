@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-22T14:44:51Z",
+  "updatedAt": "2026-11-23T00:00:35.868Z",
   "entryPoint": "START_HERE.md",
   "project": {
     "name": "Japanese Craft Jewelry",
@@ -16,7 +16,7 @@
     "status": "ready",
     "basedOnDocumentationCommit": "b6ac11fcf589daa1b7b4786bc98702b36bfee482",
     "activeSiteImplementationTask": null,
-    "nextAction": "For monetization, select the publishing host and confirm eligibility for the nine BECOS English store listings. Search Console requires verified site ownership.",
+    "nextAction": "Use the SORA profile links in specification 029. Commercial hosting, BECOS program terms and Search Console ownership remain open.",
     "currentGitHeadCommand": "git rev-parse HEAD",
     "verificationReport": "docs/git-handoff-stage-results.json",
     "validatedSourceCommit": "537ee24ca021a9b61801108a4689e22936a3a08a",
@@ -29,15 +29,16 @@
     }
   },
   "production": {
-    "version": "0.20.1",
-    "applicationCommit": "08cb6212909981bf08bafb166225e077038aae4c",
+    "version": "0.21.0",
+    "applicationCommit": "c9537cf6b40135001c6fdb9bb05700f33a156399",
     "actions": {
-      "id": 45034304227,
-      "headSha": "08cb6212909981bf08bafb166225e077038aae4c",
+      "id": 45036494669,
+      "headSha": "c9537cf6b40135001c6fdb9bb05700f33a156399",
       "status": "completed",
       "conclusion": "success",
-      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45034304227",
-      "observedAt": "2026-11-22T14:44:51Z"
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45036494669",
+      "deploymentCompletedAt": "2026-11-22T15:07:43Z",
+      "observedAt": "2026-11-23T00:00:35.868Z"
     },
     "urls": {
       "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
@@ -46,11 +47,23 @@
       "aomori": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/aomori/",
       "iwate": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/iwate/",
       "yamagata": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/yamagata/",
-      "oita": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/oita/"
+      "oita": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/oita/",
+      "soraJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/sora/",
+      "soraEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/sora/"
     },
     "report": "docs/deployment-results.json",
-    "verification": "specs/028-purchase-routes/validation.md",
-    "outputManifest": "docs/purchase-routes-v28-build-manifest.json"
+    "verification": "specs/029-sora-profile-links/validation.md",
+    "outputManifest": null,
+    "outputManifestStatus": "per_file_hashes_not_persisted",
+    "previousFullOutputManifest": "docs/purchase-routes-v28-build-manifest.json",
+    "buildArtifact": {
+      "id": 14759083435,
+      "name": "github-pages",
+      "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14759083435/zip",
+      "bytes": 12040546,
+      "digest": "sha256:2cdb892b88c4ffcaad23d3d16fda1e1669fd5839ee33164e88a100cf54e30324",
+      "expiresAt": "2026-11-23T15:07:25Z"
+    }
   },
   "snapshot": {
     "publishedProducts": 69,
@@ -72,7 +85,8 @@
     "newImageFiles": 0,
     "existingImageBytesRetained": 136,
     "kanagawaWorkshopLinked": 8,
-    "kanagawaRegionalRetailer": 4
+    "kanagawaRegionalRetailer": 4,
+    "profileLandingPages": 2
   },
   "currentImagePolicy": {
     "fictionalNationalitySetting": "Japanese",
@@ -132,7 +146,8 @@
     "advertising": "src/data/advertising-privacy.json",
     "hero": "src/components/RegionHero.astro",
     "directoryMap": "src/components/JapanJewelryMap.astro",
-    "regionalPhotos": "src/components/RegionSelection.astro"
+    "regionalPhotos": "src/components/RegionSelection.astro",
+    "profileSelection": "src/config/selection.ts"
   },
   "completedSpecifications": [
     "018-national-jewelry-expansion",
@@ -144,7 +159,8 @@
     "025-kanagawa-accessories",
     "026-kanagawa-styling-refresh",
     "027-regional-craft-picks",
-    "028-purchase-routes"
+    "028-purchase-routes",
+    "029-sora-profile-links"
   ],
   "historicalOnlyScripts": [
     {

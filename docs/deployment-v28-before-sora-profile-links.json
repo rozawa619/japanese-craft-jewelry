@@ -1,0 +1,58 @@
+{
+  "version": "0.20.1",
+  "specification": "028-purchase-routes",
+  "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
+  "branch": "main",
+  "status": "deployed_and_verified",
+  "recordedAt": "2026-11-22T14:44:51Z",
+  "applicationCommit": "08cb6212909981bf08bafb166225e077038aae4c",
+  "actions": {
+    "id": 45034304227,
+    "headSha": "08cb6212909981bf08bafb166225e077038aae4c",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45034304227",
+    "observedAt": "2026-11-22T14:44:51Z"
+  },
+  "previousRecord": "docs/deployment-v27-before-purchase-routes.json",
+  "publicUrls": {
+    "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+    "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
+    "places": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/",
+    "aomori": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/aomori/",
+    "iwate": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/iwate/",
+    "yamagata": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/yamagata/",
+    "oita": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/oita/"
+  },
+  "content": {
+    "publishedProducts": 69,
+    "catalogProducts": 75,
+    "draftProducts": 6,
+    "regions": 28,
+    "activeCrafts": 40,
+    "catalogCrafts": 42,
+    "sources": 327,
+    "stores": 38,
+    "productsWithStores": 61,
+    "onlineEvidence": 60,
+    "retailCatalogEvidence": 9,
+    "publicImages": 136,
+    "stylingImages": 67,
+    "soloImages": 69,
+    "newProducts": 0,
+    "newRegions": 0,
+    "newImageFiles": 0,
+    "existingImageBytesRetained": 136,
+    "kanagawaWorkshopLinked": 8,
+    "kanagawaRegionalRetailer": 4
+  },
+  "outputManifest": "docs/purchase-routes-v28-build-manifest.json",
+  "verification": "specs/028-purchase-routes/validation.md",
+  "verificationSummary": {
+    "unitTests": 149,
+    "generatedHtml": 394,
+    "canonicalUrls": 378,
+    "localChromiumCases": 18,
+    "matchedPublicResponses": 11
+  }
+}

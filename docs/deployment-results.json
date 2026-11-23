@@ -1,20 +1,21 @@
 {
-  "version": "0.20.1",
-  "specification": "028-purchase-routes",
+  "version": "0.21.0",
+  "specification": "029-sora-profile-links",
   "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
   "branch": "main",
   "status": "deployed_and_verified",
-  "recordedAt": "2026-11-22T14:44:51Z",
-  "applicationCommit": "08cb6212909981bf08bafb166225e077038aae4c",
+  "recordedAt": "2026-11-23T00:00:35.868Z",
+  "applicationCommit": "c9537cf6b40135001c6fdb9bb05700f33a156399",
   "actions": {
-    "id": 45034304227,
-    "headSha": "08cb6212909981bf08bafb166225e077038aae4c",
+    "id": 45036494669,
+    "headSha": "c9537cf6b40135001c6fdb9bb05700f33a156399",
     "status": "completed",
     "conclusion": "success",
-    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45034304227",
-    "observedAt": "2026-11-22T14:44:51Z"
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45036494669",
+    "deploymentCompletedAt": "2026-11-22T15:07:43Z",
+    "observedAt": "2026-11-23T00:00:35.868Z"
   },
-  "previousRecord": "docs/deployment-v27-before-purchase-routes.json",
+  "previousRecord": "docs/deployment-v28-before-sora-profile-links.json",
   "publicUrls": {
     "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
     "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
@@ -22,7 +23,9 @@
     "aomori": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/aomori/",
     "iwate": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/iwate/",
     "yamagata": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/yamagata/",
-    "oita": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/oita/"
+    "oita": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/oita/",
+    "soraJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/sora/",
+    "soraEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/sora/"
   },
   "content": {
     "publishedProducts": 69,
@@ -44,15 +47,27 @@
     "newImageFiles": 0,
     "existingImageBytesRetained": 136,
     "kanagawaWorkshopLinked": 8,
-    "kanagawaRegionalRetailer": 4
+    "kanagawaRegionalRetailer": 4,
+    "profileLandingPages": 2
   },
-  "outputManifest": "docs/purchase-routes-v28-build-manifest.json",
-  "verification": "specs/028-purchase-routes/validation.md",
+  "outputManifest": null,
+  "verification": "specs/029-sora-profile-links/validation.md",
   "verificationSummary": {
     "unitTests": 149,
-    "generatedHtml": 394,
-    "canonicalUrls": 378,
-    "localChromiumCases": 18,
-    "matchedPublicResponses": 11
+    "generatedFiles": 541,
+    "generatedHtml": 396,
+    "canonicalUrls": 380,
+    "localChromiumCases": 10,
+    "matchedPublicResponses": 12
+  },
+  "outputManifestStatus": "per_file_hashes_not_persisted",
+  "previousFullOutputManifest": "docs/purchase-routes-v28-build-manifest.json",
+  "buildArtifact": {
+    "id": 14759083435,
+    "name": "github-pages",
+    "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14759083435/zip",
+    "bytes": 12040546,
+    "digest": "sha256:2cdb892b88c4ffcaad23d3d16fda1e1669fd5839ee33164e88a100cf54e30324",
+    "expiresAt": "2026-11-23T15:07:25Z"
   }
 }
