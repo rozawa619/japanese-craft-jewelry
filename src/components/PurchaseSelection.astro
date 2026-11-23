@@ -1,0 +1,27 @@
+---
+import {purchaseEvidenceFor} from '../lib/purchase-evidence';
+import {t,type Locale} from '../lib/i18n';
+
+interface Props { productId:string; locale:Locale; sticky?:boolean }
+const {productId,locale,sticky=false}=Astro.props;
+const {kind,linkId,listingSelection}=purchaseEvidenceFor(productId);
+const heading=kind==='retail-and-catalog'
+ ?t(locale,'Catalog entry','カタログの掲載名')
+ :t(locale,'Option to select on the shop page','販売ページで選ぶ種類');
+---
+{listingSelection&&<dl class:list={['purchase-selection',{sticky}]} data-purchase-selection={linkId}>
+ <dt class:list={{'sr-only':sticky}}>{heading}</dt>
+ <dd>
+  <span class="selected-label">{listingSelection.label[locale]}</span>
+  {locale==='en'&&!sticky&&<span class="original-option" lang="ja">{listingSelection.label.ja}</span>}
+ </dd>
+</dl>}
+<style>
+ .purchase-selection{margin:8px 0 12px;line-height:1.5}
+ dt,.original-option{font-size:.8125rem;color:var(--muted)}
+ dd{margin:1px 0 0;font-size:.875rem;overflow-wrap:anywhere}
+ .selected-label{font-weight:600}
+ .original-option{display:block}
+ .sticky{margin:0 0 3px}
+ .sticky dd{margin:0;font-size:.75rem}
+</style>

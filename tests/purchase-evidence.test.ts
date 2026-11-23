@@ -20,6 +20,20 @@ test('a researched product-specific online route is accepted without mutating th
  const f=fixture(),before=JSON.stringify(f);assert.deepEqual(errors(f),[]);assert.equal(JSON.stringify(f),before);
 });
 
+test('a bilingual listing selection must be supported by the exact official page',()=>{
+ const f=fixture();
+ const option={sourceId:'test-item-source',label:{ja:'内部試験用',en:'Internal option'}};
+ f.evidence.products[0].listingSelection=option;
+ assert.deepEqual(errors(f),[]);
+ f.evidence.products[0].sourceIds.push('test-unrelated-source');
+ f.catalog.products[0].sourceIds.push('test-unrelated-source');
+ option.sourceId='test-unrelated-source';
+ assert.match(errors(f).join('\n'),/Listing selection needs its verified product or catalog source/);
+ option.sourceId='test-item-source';
+ option.label.en=' ';
+ assert.match(errors(f).join('\n'),/listingSelection.label.en/);
+});
+
 test('a priced catalog can support retail only with its product-linked current store evidence',()=>{
  const f=fixture();f.evidence.products[0].kind='retail-and-catalog';f.evidence.products[0].storeIds=['test-store'];f.evidence.products[0].sourceIds.push('test-store-source');f.catalog.links[0].officialProductUrl='https://maker.example/catalog/accessories.html';f.sources[0].url=f.catalog.links[0].officialProductUrl;assert.deepEqual(errors(f),[]);
  f.evidence.products[0].storeIds=[];assert.ok(errors(f).length>0);

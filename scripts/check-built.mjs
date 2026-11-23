@@ -172,6 +172,10 @@ for (const [file, page] of pages) {
       if(primary){
         const primaryEnd=tokenSource.indexOf('</div>',primary.index);
         const actions=tags.filter(tag=>tag.name==='a'&&tag.index>primary.index&&tag.index<primaryEnd);
+        const selections=confirmation?tags.filter(tag=>tag.index>confirmation.index&&tag.index<primary.index&&'data-purchase-selection' in tag.attrs):[];
+        if(evidence.listingSelection){
+          if(selections.length!==1||selections[0].attrs['data-purchase-selection']!==evidence.linkId||!actions.some(action=>action.attrs['data-market-link-id']===evidence.linkId))fail(file,'the verified listing selection must be visible beside its purchase link');
+        }else if(selections.length)fail(file,'a listing selection requires verified evidence');
         const catalogRoute=evidence.kind==='retail-and-catalog';
         const routeLabel=catalogRoute?(locale==='ja'?'公式カタログを見る':'Official catalog'):(locale==='ja'?'公式通販を見る':'Official shop');
         for(const action of actions){

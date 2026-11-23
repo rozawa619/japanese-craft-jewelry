@@ -5,8 +5,10 @@ import type {Visits} from './visits.ts';
 import {safeHttps,isAllowedDestination} from './affiliate.ts';
 const id=z.string().regex(/^[a-z0-9-]+$/);
 const date=z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine(value=>{const stamp=Date.parse(value+'T00:00:00Z');return Number.isFinite(stamp)&&new Date(stamp).toISOString().slice(0,10)===value});
+const listingLabel=z.string().trim().min(1);
 export const purchaseEvidenceSchema=z.object({products:z.array(z.object({
  productId:id,checkedAt:date,kind:z.enum(['online-order','retail-and-catalog']),linkId:id,storeIds:z.array(id),sourceIds:z.array(id).min(1),
+ listingSelection:z.object({sourceId:id,label:z.object({ja:listingLabel,en:listingLabel}).strict()}).strict().optional(),
 }).strict())}).strict();
 export type PurchaseEvidence=z.infer<typeof purchaseEvidenceSchema>;
 export const purchaseEvidence=purchaseEvidenceSchema.parse(raw);
@@ -50,7 +52,10 @@ export function collectPurchaseEvidenceErrors(input:unknown,catalog:EvidenceCata
    if((rootLike&&!queryProduct)||(listing&&!specificShopify))errors.push('An online order route needs a specific product page, not a homepage or gallery: '+record.productId);
   }
   const evidence=record.sourceIds.flatMap(id=>{const source=sources.find(source=>source.id===id);if(!source||source.access!=='body_read'){errors.push('Purchase evidence requires a body-read official source: '+record.productId+'/'+id);return []}return [source]});
-  if(official&&!evidence.some(source=>product.sourceIds.includes(source.id)&&samePage(source.url,official)))errors.push('Purchase evidence must include the actual product or priced catalog source: '+record.productId);
+  const listingSources=official?evidence.filter(source=>product.sourceIds.includes(source.id)&&samePage(source.url,official)):[];
+  if(official&&!listingSources.length)errors.push('Purchase evidence must include the actual product or priced catalog source: '+record.productId);
+  const selection=record.listingSelection;
+  if(selection&&!listingSources.some(source=>source.id===selection.sourceId))errors.push('Listing selection needs its verified product or catalog source: '+record.productId);
   const mapping=visits.products.find(entry=>entry.productId===record.productId);
   if(record.kind==='retail-and-catalog'&&!record.storeIds.length)errors.push('Catalog-only evidence does not establish a retail purchase route: '+record.productId);
   for(const storeId of record.storeIds){

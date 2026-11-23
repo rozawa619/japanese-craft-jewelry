@@ -39,6 +39,7 @@
 | 公式URL・広告候補・提携状態 | `catalog.json`の`links / merchants / programs` |
 | 出典URL・確認日・確認できたこと | [research/sources.json](research/sources.json) |
 | 買えることを確認した根拠 | [purchase-evidence.json](../src/data/purchase-evidence.json) |
+| 公式ページで選ぶ色・金具やカタログの掲載名 | [purchase-evidence.json](../src/data/purchase-evidence.json)の`listingSelection`。国内購入リンクに対応する一次出典と表示名を日英で記録する。 [仕様032](../specs/032-purchase-selections/spec.md) |
 | 店舗・訪問案内・工房公式サイト | [visits.json](../src/data/visits.json) |
 | 人物の着用AI画像／単体AI画像 | [editorial-images.json](../src/data/editorial-images.json)／[product-detail-images.json](../src/data/product-detail-images.json) |
 | 画像の権利・退役・生成記録 | [assets.json](assets.json)・[旧単体v14](image-generation-solo-v14.json)・[人物v16](image-generation-v16.json)・[単体v16](image-generation-solo-v16.json) |

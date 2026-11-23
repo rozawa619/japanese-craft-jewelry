@@ -8,6 +8,7 @@ import MarketPrice from './MarketPrice.astro';
 import {marketPricesFor} from '../lib/market-prices';
 import {budgetForJapanPrice} from '../lib/shopping-filters';
 import MarketPurchaseLink from './MarketPurchaseLink.astro';
+import PurchaseSelection from './PurchaseSelection.astro';
 import EditorialImage from './EditorialImage.astro';
 import ProductImageNote from './ProductImageNote.astro';
 import {productImageFor} from '../lib/editorial-images';
@@ -15,7 +16,7 @@ interface Props { product:Product; index?:number; locale?:Locale; showNumber?:bo
 const {product:p,index=0,locale='en',showNumber=true}=Astro.props;
 const detail=pagePath(`objects/${p.slug}/`,locale);
 const displayNumber=String(index+1).padStart(2,'0');
-const japanPrice=marketPricesFor(p.id).japan;
+const {japan:japanPrice,japanLinks}=marketPricesFor(p.id);
 const image=productImageFor(p.id);
 const maker=makerFor(p,locale);
 const merchant=catalogFor(locale).merchants.find(item=>p.merchantIds.includes(item.id));
@@ -29,6 +30,7 @@ const attribution=maker.id.includes('unidentified')&&merchant?t(locale,'Availabl
  <p class="card-summary" data-selection-point>{p.editorialSummary}</p>
  <div class="card-price"><MarketPrice productId={p.id} locale={locale}/>{p.availability==='out_of_stock'&&<small>{t(locale,'Sold out when checked','確認時点で欠品')}</small>}</div>
  {image&&<ProductImageNote locale={locale} variant="compact"/>}
+ {japanLinks.length>0&&<PurchaseSelection productId={p.id} locale={locale}/>}
  <div class="card-actions"><a class="text-link" href={detail}>{t(locale,'Why this piece','選んだ理由を見る')} <span aria-hidden="true">→</span></a><MarketPurchaseLink productId={p.id} compact locale={locale}/></div>
 </article>
 <style>
