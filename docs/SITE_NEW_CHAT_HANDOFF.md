@@ -1,119 +1,100 @@
-# SORA / Japanese Craft Jewelry — サイト構築用・新チャット引継ぎ
+# SORA / Japanese Craft Jewelry サイト構築の引継ぎ
 
-**最終更新 2026-11-23（JST）**  
-**適用範囲：Webサイト構築・商品追加・UX/SEO・運用・収益化準備の引継ぎ**  
-**動画制作は [動画専用引継ぎ](video/NEW_CHAT_HANDOFF.md) で別管理する。**
+**最終更新 2026-11-23（JST）**
 
-## 入口
+日本全国の地域工芸アクセサリーを日英で紹介し、将来のアフィリエイト収益につなげるサイトです。サイト構築にはこの文書を使います。TikTok・Instagramの投稿文やGoogle Flowの制作は、[動画専用引継ぎ](video/NEW_CHAT_HANDOFF.md)を使います。
 
-- GitHub main: https://github.com/rozawa619/japanese-craft-jewelry
-- 日本語サイト: https://rozawa619.github.io/japanese-craft-jewelry/ja/
-- English: https://rozawa619.github.io/japanese-craft-jewelry/en/
-- 動画用の引継ぎ: [docs/video/NEW_CHAT_HANDOFF.md](video/NEW_CHAT_HANDOFF.md)
+## 最初に開く
 
-## 現在のサイトと公開履歴
-
-v0.23.0を2026-11-23（JST）に公開しました。SORAの日英 `/sora/` で、公開10投稿と照合できた7商品を一覧にしています。プロフィール用のURLは[仕様033](../specs/033-sora-video-jewelry/spec.md)、照合範囲は[033の検証記録](../specs/033-sora-video-jewelry/validation.md)を参照してください。
-
-v0.22.2を2026-11-23（JST）に公開しました。日英で10商品の販売ページの選択名または公式カタログの掲載名を表示し、凛然 星華 琥珀の国内・海外価格には1組の販売単位を表示します。 [仕様032](../specs/032-purchase-selections/spec.md) · [032の検証記録](../specs/032-purchase-selections/validation.md)
-
-v0.22.1を2026-11-23（JST）に公開しました。日英の商品詳細と商品カードで、掲載画像がAIで作成したイメージであり、実物の仕様は販売元の商品情報で確認できると案内します。 [仕様031](../specs/031-product-image-disclosure/spec.md) · [031の検証記録](../specs/031-product-image-disclosure/validation.md)
-
-ガラスと木の素材ページを含む v0.22.0 を2026-11-23（JST）に公開しました。商品一覧とフッターから、日英のガラス14点・木13点の比較へ進めます。 [仕様030](../specs/030-material-guides/spec.md) · [030の検証記録](../specs/030-material-guides/validation.md)
-
-2026-11-23（JST）に日英のSORA案内ページを v0.21.0 で公開しました。[仕様029](../specs/029-sora-profile-links/spec.md)にプロフィール欄用のURLと特集商品の設定箇所、[029の検証記録](../specs/029-sora-profile-links/validation.md)に公開12件の照合結果を記録しています。動画の制作・投稿状況は動画台帳で管理します。
-
-[仕様028](../specs/028-purchase-routes/spec.md)では公式通販とカタログ・取扱店への案内を整理しました。購入ボタンと確認日の実測は[028の検証記録](../specs/028-purchase-routes/validation.md)にあります。
-
-> **以下は2026-11-19のデプロイ成功記録 v0.20.0 のスナップショット。** 最新mainのHEADは、その後の文書更新を含むため、実公開アプリのバージョン・SHAと一致しないことがある。新チャットでは必ず再取得し、実URLの確認と区別する。
-
-- アプリ v0.20.0 / 11月19日の機能リリースSHA `41773dbbf0a8c9c565d6e956751de82307190c44`
-- 公開のGitHub Actions成功: https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44536903083
-- 公開69商品、登録75商品（うちdraft 6）、28都道府県、公開関連技法40/全42、出典327、取扱店舗38
-- AI画像136点（着用の女性67、商品単体69）。既存のサイト画像は原則維持し、実在人物の試着・レビューと混同しない
-- 使用技術：Astro 7、TypeScript、Zod。日英対応の静的サイトをGitHub Pagesで配信。商品JSON/日英Markdownを主に編集する。サイトに決済・発送・会員データベース・ブログ・Contactはない
-- 実装の例：日本地図、地域ごとの着用女性Hero、都道府県/商品/工芸/素材からの導線、商品一覧と絞り込み、商品詳細、国内・海外リンクの市場別管理、店舗訪問案内と同意付きGoogle Maps、SEO（canonical/hreflang/sitemap）、AI画像/広告の開示、スマホ表示
-- **収益化の実装と外部承認は別物**：実アフィリエイトは未申請で通常リンク運用。AdSenseはoff。実アカウント/契約・認定CMP・Commercial hostingの適合判断・Search Consoleの実プロパティ/結果等は別の未完条件
-- 商品追加の実装仕様は `specs/027-regional-craft-picks/`。青森・岩手・山形・大分の4県4品の公開検証記録がある
-- 完了した人物画像移行 023 のapply専用スクリプトは再実行しない
-
-### 最優先の根拠ファイル
-
-| 内容 | ファイル |
+| 内容 | 入口 |
 | --- | --- |
-| 開始順序と制約 | [START_HERE](../START_HERE.md)、[AGENTS](../AGENTS.md)、[README](../README.md) |
-| 状態（機械可読） | [docs/handoff-status.json](handoff-status.json) |
-| 公開appのSHA/URL/検証 | [docs/deployment-results.json](deployment-results.json)、[030の検証記録](../specs/030-material-guides/validation.md) |
-| 完了点/未完了 | [docs/handoff.md](handoff.md)、[docs/remaining-task-audit-v17.md](remaining-task-audit-v17.md) |
-| 技術構成と更新箇所 | [docs/architecture.md](architecture.md)、[docs/editing-guide.md](editing-guide.md) |
-| 構築・検証 | [docs/setup.md](setup.md)、[docs/verification-guide.md](verification-guide.md)、[package.json](../package.json) |
-| 商品と日本語 | [src/data/catalog.json](../src/data/catalog.json)、[src/data/translations/ja.json](../src/data/translations/ja.json) |
-| 人物/商品画像 | [src/data/editorial-images.json](../src/data/editorial-images.json)、[src/data/product-detail-images.json](../src/data/product-detail-images.json) |
-| 出典・価格・購入根拠 | [docs/research/sources.json](research/sources.json)、[src/data/purchase-evidence.json](../src/data/purchase-evidence.json) |
-| アフィリエイト準備 | [docs/affiliate-readiness.md](affiliate-readiness.md)、[docs/pre-application-checklist.md](pre-application-checklist.md) |
-| SNS連動 | [動画引継ぎ](video/NEW_CHAT_HANDOFF.md)、[TikTok重複防止](video/tiktok-publication-registry.json) |
+| 正本 | [GitHub リポジトリ](https://github.com/rozawa619/japanese-craft-jewelry)・[最新 main](https://github.com/rozawa619/japanese-craft-jewelry/tree/main) |
+| 公開サイト | [日本語](https://rozawa619.github.io/japanese-craft-jewelry/ja/)・[英語](https://rozawa619.github.io/japanese-craft-jewelry/en/) |
+| SNSプロフィールからの商品案内 | [日本語](https://rozawa619.github.io/japanese-craft-jewelry/ja/sora/#video-jewelry)・[英語](https://rozawa619.github.io/japanese-craft-jewelry/en/sora/#video-jewelry)・[媒体別URL](../specs/033-sora-video-jewelry/spec.md) |
+| 検索向けファイル | [サイトマップ](https://rozawa619.github.io/japanese-craft-jewelry/sitemap.xml)・[robots.txt](https://rozawa619.github.io/japanese-craft-jewelry/robots.txt) |
+| 別チャットへの依頼文 | [コピー用の引継ぎ文](#新チャット貼付用のプロンプト) |
 
-### 環境・検証について
+1. 最新の `main` を取得し、[START_HERE.md](../START_HERE.md)、[AGENTS.md](../AGENTS.md)、[引継ぎ状態](handoff-status.json)、[公開記録](deployment-results.json)を読みます。作業用のチェックアウトでは `git status --short` と `git rev-parse HEAD` を先に確認します。
+2. `main` のHEAD、公開記録の `applicationCommit`、Actionsの結果、実URLの応答をそれぞれ確認します。引継ぎ資料の更新も `main` の履歴に含まれます。
+3. 商品数や承認状況は正本を参照します。初回は現在地と未確認事項、次の候補を報告し、実装範囲はそのチャットでのユーザー依頼に合わせます。
 
-`AGENTS.md` と `docs/setup.md` の最新版に従う。2026-11-22の文書では最低Node 24.22.3と pnpm 11.25.0。リポジトリを作業用にcloneできる環境なら `pnpm install --frozen-lockfile`、`pnpm dev`、影響する変更には `pnpm verify` を原則として使う。ただしChatGPTのGitHub閲覧権限と、git clone/ローカルbuild/commit/push権限は異なる。実際に使える操作だけを報告し、実行していない検証を成功扱いしない。
+## 現在の公開版
 
-## 新チャットの初回に必ず報告すること
+| 項目 | 2026-11-23（JST）確認時点 |
+| --- | --- |
+| アプリ | **v0.23.0**、アプリSHA `ebdc17aa37c72669a8dc1466af50ae50a8f8f7f6` |
+| 配信 | GitHub Pages。2026-11-23 20:49 JSTの [GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45168502208) が成功 |
+| 照合 | 公開時は生成物546ファイル、正規URL384件、ブラウザー26ケース、公開応答29件を検証。引継ぎ時に日英トップ・SNS向けページ・素材・代表商品・サイトマップ・robots.txtの9応答を再照合。 [検証記録](../specs/033-sora-video-jewelry/validation.md)・[ファイル一覧](sora-video-jewelry-v33-build-manifest.json) |
+| 商品・地域 | 登録75点、公開69点、下書き6点。28都道府県掲載。最多は神奈川8点、京都7点、東京5点。北海道・千葉・大阪・山梨は各4点 |
+| 工芸・購入先 | 公開商品に紐づく技法40件（全42件）、登録出典327件。38店舗、店舗案内付き61商品。購入根拠は公式通販60点、店舗とカタログ9点 |
+| 画像 | AI画像136点。着用67点、商品単体69点。着用画像は架空の日本人成人女性として生成 |
+| 広告 | 実アフィリエイトは未申請で通常の公式リンクを使用。AdSenseはオフ。 [提携準備](affiliate-readiness.md)・[運営上の残条件](remaining-task-audit-v17.md) |
 
-1. 現行サイトをどういうビジネスとして、どの技術で運営するか（日本語と英語）
-2. 公開中アプリの version/SHA/Actions と最新 main HEAD の違い
-3. 商品/地域/工芸/店舗/人物画像/出典の件数と地域別の分布（正本データで再集計）
-4. 実装済み機能・現在のデザイン・導線（現行公開URLも可能な範囲で確認）
-5. 外部条件を含む「未完了」の事実（アフィリエイト未申請・AdSense off・ホスティング/規約等）
-6. 既知の品質/権利/SEO/セキュリティのガードレール
-7. 収益化・アクセス・UX・商品追加の観点で、重要度順の改善案5〜10件。各案に実装元と検証の見通しを付す
-8. まずユーザーに選んでもらう提案を1〜3件まで絞り、未依頼の実装・申請・公開は実行しない
+Astro 7・TypeScript・Zodを使う日英の静的サイトです。日本地図から産地を選び、商品一覧の絞り込み、工芸・素材のページ、商品詳細へ進めます。商品詳細には価格、公式通販または取扱店の案内、出典を掲載します。店舗のGoogle Mapsは利用者の許可に応じて表示します。サイトの運営範囲は紹介と外部の販売先への案内です。 [技術構成](architecture.md)
+
+### 直近の機能と仕様
+
+| 仕様 | 公開した変更 |
+| --- | --- |
+| [027](../specs/027-regional-craft-picks/spec.md) | 青森・岩手・山形・大分の4県4商品を追加 |
+| [028](../specs/028-purchase-routes/spec.md) | 公式通販とカタログ・取扱店の購入案内を明示 |
+| [029](../specs/029-sora-profile-links/spec.md) | SORAの日英プロフィール用ページと京都・神奈川への案内 |
+| [030](../specs/030-material-guides/spec.md) | ガラス14点・木13点を比較できる日英の素材ページ |
+| [031](../specs/031-product-image-disclosure/spec.md) | 商品カード・詳細・固定購入欄で、AI画像と実物の確認先を案内 |
+| [032](../specs/032-purchase-selections/spec.md) | 照合済み10商品の色・金具などの選択名やカタログ掲載名。凛然「星華 琥珀」の国内・海外価格に1組の販売単位 |
+| [033](../specs/033-sora-video-jewelry/spec.md) | 日英 `/sora/#video-jewelry` で、照合済みのTikTok公開10投稿に対応する神奈川7商品から詳細へ移動 |
+
+### 編集・検証の正本
+
+| 内容 | 読むファイル |
+| --- | --- |
+| 技術構成、編集、起動、検証 | [README.md](../README.md)・[技術構成](architecture.md)・[編集ガイド](editing-guide.md)・[セットアップ](setup.md)・[検証ガイド](verification-guide.md) |
+| 商品、日英の表示、公開状態 | [catalog.json](../src/data/catalog.json)・[日本語データ](../src/data/translations/ja.json)・[`src/content/products/`](../src/content/products/) |
+| 出典、購入根拠、訪問案内 | [sources.json](research/sources.json)・[purchase-evidence.json](../src/data/purchase-evidence.json)・[visits.json](../src/data/visits.json) |
+| 着用画像、商品単体画像、権利 | [editorial-images.json](../src/data/editorial-images.json)・[product-detail-images.json](../src/data/product-detail-images.json)・[画像台帳](assets.json)・[原本資料](handoff-assets.md) |
+| 代表商品とSNSページ | [selection.ts](../src/config/selection.ts)・[tiktok-publication-registry.json](video/tiktok-publication-registry.json) |
+| 公開履歴と保守 | [公開記録](deployment-results.json)・[引継ぎ状態](handoff-status.json)・[保守の引継ぎ](handoff.md)・[CHANGELOG.md](../CHANGELOG.md) |
+
+## 次の候補と残条件
+
+| 優先候補 | 進め方・依存条件 |
+| --- | --- |
+| 検索流入の準備 | 公開側のcanonical・hreflang・サイトマップを確認。Search Consoleの所有確認・登録状況・実績は未確認。所有確認や送信などのアカウント操作はユーザーの依頼に沿って進める。 [検証ガイド](verification-guide.md) |
+| 動画から商品への案内 | 公開投稿URLと商品IDを照合できた分を台帳へ追加。京都・Instagramの個別投稿との対応、プロフィール欄への掲載、実際の流入は未確認。 [仕様033](../specs/033-sora-video-jewelry/spec.md) |
+| 購入時の情報差を減らす | 同じ商品・色・金具・市場・販売単位で、販売元の情報と照合。日英の商品詳細と公式リンクを検証。 [仕様028](../specs/028-purchase-routes/spec.md)・[仕様032](../specs/032-purchase-selections/spec.md) |
+| 未掲載地域を拡充 | 47都道府県のうち未掲載の19県に余地がある。一次出典と購入先が揃った商品を下書きから登録し、日英表示・画像と出典を確認。 [仕様027](../specs/027-regional-craft-picks/spec.md) |
+| 収益化の準備 | 商用ホストの適合、BECOS等の提携条件、実アカウントの承認、広告の同意管理や画像使用条件を確認。 [申請前の確認](pre-application-checklist.md) |
+| 運用と端末の検証 | 実機iOS・Safariで購入導線や日英切替を確認し、アカウント保護・復旧・公開先の運用を点検する。 [残条件](remaining-task-audit-v17.md) |
+
+## 実装を再開するとき
+
+- Nodeは `24.22.3` 以上、pnpmは `11.25.0` が現行の基準です。クリーンな作業用チェックアウトで `pnpm install --frozen-lockfile` を実行し、`pnpm dev` でプレビューします。本番相当の環境変数は[セットアップ](setup.md#本番同等のローカル検査)を参照します。
+- 既存コード・商品・画像・出典を保ち、変更する正本と仕様を特定します。実物、価格、販売単位、在庫、許諾は裏付けのある範囲で扱い、公式写真や動画素材の利用条件を確認します。完了済みの画像移行023は再実行しません。 [AGENTS.md](../AGENTS.md)
+- 文書の確認は `pnpm check:docs`、アプリ・データの変更は `pnpm verify` を使い、影響範囲に応じてSEO・日英・スマートフォンなどを追加検証します。
+- 公開する変更は、[既存のActions](../.github/workflows/deploy.yml)の成功と実URLまで確認します。実施済みと未確認を記録し、関連する仕様・検証・引継ぎ資料を更新します。
 
 ## 新チャット貼付用のプロンプト
 
-```text
-「SORA / Japanese Craft Jewelry」のWebサイト構築・改善を、新しいチャットで引き継いでください。今回は最初に現状の把握と改善計画を作り、その結果を確認してから開発内容を決めます。過去のチャット内容を想像で補わず、GitHub mainブランチの実際のファイルと公開記録を正本にしてください。
+~~~text
+SORA / Japanese Craft Jewelry のサイト構築を引き継いでください。日本全国の地域工芸アクセサリーを日本語・英語で紹介し、将来のアフィリエイト収益につなげるプロジェクトです。
 
-GitHub: https://github.com/rozawa619/japanese-craft-jewelry
-公開サイト（日本語）: https://rozawa619.github.io/japanese-craft-jewelry/ja/
-公開サイト（英語）: https://rozawa619.github.io/japanese-craft-jewelry/en/
+GitHubの正本
+https://github.com/rozawa619/japanese-craft-jewelry
 
-最初に以下のファイルを、mainの最新内容で実際に読み込んでください。
-1. docs/SITE_NEW_CHAT_HANDOFF.md（今回のサイト専用引継ぎ）
-2. START_HERE.md
-3. AGENTS.md
-4. README.md
-5. docs/handoff-status.json
-6. docs/deployment-results.json
-7. docs/handoff.md
-8. docs/architecture.md
-9. docs/editing-guide.md
-10. docs/setup.md
-11. docs/verification-guide.md
-12. docs/remaining-task-audit-v17.md
-13. docs/affiliate-readiness.md、docs/pre-application-checklist.md
-14. src/data/catalog.json、src/data/translations/ja.json、src/data/editorial-images.json、src/data/product-detail-images.json
-15. 購入導線の specs/028-purchase-routes/spec.md と validation.md、商品追加の specs/027-regional-craft-picks/spec.md
+サイト専用の引継ぎ書
+https://github.com/rozawa619/japanese-craft-jewelry/blob/main/docs/SITE_NEW_CHAT_HANDOFF.md
 
-次の観点で調査して、表と文章で結果を報告してください。
+公開サイト
+日本語 https://rozawa619.github.io/japanese-craft-jewelry/ja/
+英語 https://rozawa619.github.io/japanese-craft-jewelry/en/
 
-A. 現在のプロジェクト：目的、事業モデル、使用技術・フォルダ構造、サイトのURL、日本語/英語対応、制作済みデザイン・機能
-B. 公開・開発の状態：GitHub mainの最新HEAD、公開アプリのコミットSHAとバージョン、GitHub Actions、実URLの表示確認。文書だけの変更を本番デプロイと混同しない
-C. コンテンツ：公開商品・下書き商品・都道府県・工芸・店舗・出典・画像の件数。最新のcatalogや画像正本から再計算して記録値との相違を区別。地域別の掲載商品数上位も集計
-D. 画面とUX：トップページの日本地図・地域ヒーロー、商品一覧・絞り込み、商品詳細、素材/工芸/産地ページ、価格、公式購入先、店舗案内、スマホ、日英切替、SEO、広告・AI画像の開示
-E. 収益化：ASP/アフィリエイトは実際に提携承認済みか、AdSenseは稼働中か、商用ホストの規約適合・ドメイン・CMP・Privacyはどういう状態か。「実装済みの仕組み」と「未実施の外部申請」を分ける
-F. 保守・品質：ビルド・unit/型/画像/SEO/Privacy/リンク検証の実行方法、既知の課題、公開の成功/未検証範囲、重要なガードレール
-G. 優先度：サイトの収益化・コンテンツ拡充・UX改善・SEO・運用安全性の観点から、次に取り組む候補を重要度順に5〜10件。各候補について効果、必要な作業、依存条件、実現可能性、変更する正本ファイル、必要な検証を示す
-H. 新チャットから開発するときの安全な進め方：既存の商品や画像を勝手に削除・生成・上書きせず、GitHubの現在の編集差分を保護し、変更後は検証・コミット・必要なら公開を確認する
+まず最新のmainを確認し、引継ぎ書、START_HERE.md、AGENTS.md、docs/handoff-status.json、docs/deployment-results.jsonを実際に読んでください。mainのHEAD、実公開アプリのバージョンとSHA、GitHub Actions、公開URLの状態を照合してください。引継ぎ時点はv0.23.0、公開69商品、掲載28都道府県です。日英のSORAプロフィールページから公開動画と照合した神奈川7商品の詳細へ進めます。以後の変更があれば、GitHubの最新記録と実URLを優先してください。
 
-事業上の目的は、全国の伝統工芸・地域工芸のアクセサリーを日本語と英語で紹介し、将来的にアフィリエイト収益を得ること。サイト内で自社販売、決済、発送、ブログ、Contactは行わない。商品・価格・工房・製法・産地・素材・金具・在庫・出典・許諾・提携状況・レビュー等は裏付けのある情報だけを使ってください。
+最初はコードと公開設定を変更せず、現在地、確認できたことと未確認事項、次の優先候補とおすすめの1件を報告してください。各候補に効果、変更対象、依存条件、検証方法を添えてください。次の作業はこちらで指定します。
 
-TikTok/Instagram/Google Flowの動画制作は別ワークフローです。必要な場合だけ docs/video/NEW_CHAT_HANDOFF.md、docs/video/tiktok-publication-registry.json、docs/video/production-status.json を参照し、サイト掲載の女性画像と商品IDの一致・重複防止を保ってください。サイト用の調査で勝手に新しい女性画像を作らないでください。
+既存の商品・画像・出典・購入リンクを保護し、未確認の商品情報を追加したり画像を再生成したりしないでください。アフィリエイト・広告の有効化、申請・契約・課金、ホストや公開範囲の変更は私が指示した場合に限ります。TikTok・Instagram・Google Flowの動画制作は別管理です。サイトを変更したら、GitHubの仕様・検証記録・引継ぎ資料も更新してください。
+~~~
 
-まずは「現状の整理」と「次に着手すべき改善候補」の報告だけをしてください。アプリの実装修正・商品の新規公開・外部アカウントの申請/契約・課金・ホスト移行・広告有効化は、私が具体的に依頼するまで行わないでください。
+## 更新方法
 
-確認できた事実と推定を区別し、できなかった検証を未確認と明示してください。過去に完了した画像023の移行処理は再実行しないでください。新しいチャットでサイトの開発に続けて取り組めるよう、以後もGitHubの正本・仕様・検証記録を更新してください。
-```
-
-## 更新ルール
-
-このファイルは**引継ぎ入口**であり、継続的に変わる商品数・公開SHA・外部承認の実績は各正本へ先に反映する。実装を変える場合は必要な仕様/テスト/検証とあわせて更新し、文書更新だけでアプリが公開されたと記録しない。TikTok/Flowの動画制作台帳はサイトのdeployと独立して管理する。
+変更後の版・配信・検証は [deployment-results.json](deployment-results.json)、再開時の状態と正本の所在は [handoff-status.json](handoff-status.json) に反映します。この文書はそれらへの入口として、公開版の概要とコピー用の引継ぎ文を更新します。

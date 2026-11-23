@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23T11:51:26.000Z",
+  "updatedAt": "2026-11-23T12:38:51.780Z",
   "entryPoint": "START_HERE.md",
   "project": {
     "name": "Japanese Craft Jewelry",
@@ -16,7 +16,7 @@
     "status": "ready",
     "basedOnDocumentationCommit": "b6ac11fcf589daa1b7b4786bc98702b36bfee482",
     "activeSiteImplementationTask": null,
-    "nextAction": "Use the SORA profile video section to direct visitors to product pages. Verify new public post-to-product matches in the video ledger before listing them. Commercial hosting, BECOS program terms and Search Console ownership remain open.",
+    "nextAction": "Read the site chat handoff and confirm latest main and production before choosing the next site change. Search Console ownership, new social post matches and commercial approvals remain open.",
     "currentGitHeadCommand": "git rev-parse HEAD",
     "verificationReport": "docs/git-handoff-stage-results.json",
     "validatedSourceCommit": "537ee24ca021a9b61801108a4689e22936a3a08a",
@@ -26,7 +26,8 @@
       "applicationCommit": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
       "validatedSourceCommit": "537ee24ca021a9b61801108a4689e22936a3a08a",
       "report": "docs/git-handoff-stage-results.json"
-    }
+    },
+    "siteGuide": "docs/SITE_NEW_CHAT_HANDOFF.md"
   },
   "production": {
     "version": "0.23.0",

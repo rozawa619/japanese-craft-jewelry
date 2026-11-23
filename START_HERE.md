@@ -1,5 +1,11 @@
 # 別のAIへ引き継ぐ入口
 
+## サイト構築を新しいチャットに引き継ぐ場合
+
+**[サイト専用の引継ぎ書](docs/SITE_NEW_CHAT_HANDOFF.md)** から開始してください。最新の公開版、読む順番、編集する正本と検証方法をまとめています。新チャットには[コピー用の引継ぎ文](docs/SITE_NEW_CHAT_HANDOFF.md#新チャット貼付用のプロンプト)を貼れます。
+
+### 最近のサイト変更
+
 このリポジトリとGitHub上の資料から、Japanese Craft Jewelryの保守を再開できます。公開版と配信元は[公開記録](docs/deployment-results.json)で確認できます。[仕様028](specs/028-purchase-routes/spec.md)で、公式通販と取扱店への案内を商品ごとの購入根拠に合わせました。
 
 [仕様033](specs/033-sora-video-jewelry/spec.md)で、SORAの日英プロフィールページに動画で紹介した商品の一覧を追加しました。TikTokとInstagramのプロフィール向けURLも仕様033で確認できます。
@@ -10,10 +16,6 @@
 
 ガラスと木の素材ページは[仕様030](specs/030-material-guides/spec.md)を参照してください。SORAのTikTok・Instagramプロフィールから案内する日英URLと、特集商品の変更箇所は[仕様029](specs/029-sora-profile-links/spec.md)にまとまっています。
 
-
-## サイト構築を新しいチャットに引き継ぐ場合
-
-**[サイト専用・新チャット完全引継ぎ](docs/SITE_NEW_CHAT_HANDOFF.md)** から開始してください。現行のサイト構築状況、実公開アプリの記録、商品/画像の正本、広告・アフィリエイトの残条件、初回の現状把握用コピー可能プロンプトをまとめています。動画専用の引継ぎは下の別入口から扱います。
 
 ## TikTok・Instagram・Google Flowの制作を引き継ぐ場合
 

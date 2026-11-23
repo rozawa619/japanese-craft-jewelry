@@ -1,6 +1,6 @@
 # 現在の状態と保守の引継ぎ
 
-2026-11-23。最初に[START_HERE](../START_HERE.md)と[AGENTS](../AGENTS.md)を読みます。[handoff-status.json](handoff-status.json)がGitから再開するための状態、[deployment-results.json](deployment-results.json)が公開アプリの実績です。Git HEADは取得時に確認し、公開appや過去の納品ZIPと混同しません。
+2026-11-23。新しいチャットでサイト構築を再開する場合は、[サイト専用の引継ぎ書](SITE_NEW_CHAT_HANDOFF.md)と[コピー用の引継ぎ文](SITE_NEW_CHAT_HANDOFF.md#新チャット貼付用のプロンプト)を使います。[START_HERE](../START_HERE.md)と[AGENTS](../AGENTS.md)に作業の入口と制約があり、[handoff-status.json](handoff-status.json)に再開時の状態、[deployment-results.json](deployment-results.json)に公開アプリの実績があります。
 
 ## 完了しているもの
 
@@ -10,7 +10,7 @@
 | 公開URL | [日本語](https://rozawa619.github.io/japanese-craft-jewelry/ja/)・[English](https://rozawa619.github.io/japanese-craft-jewelry/en/) |
 | リポジトリ | [rozawa619/japanese-craft-jewelry](https://github.com/rozawa619/japanese-craft-jewelry)・main |
 | 最新公開アプリ | [公開記録](deployment-results.json)に、バージョン・アプリSHA・Actions・確認範囲を記録 |
-| 最新の引継ぎ整備 | [仕様024](../specs/024-git-ai-handoff/spec.md)。Gitからの再開に必要な入口・資料・手順の整備で、アプリを再制作する作業ではない |
+| Gitからの再開方法 | [仕様024](../specs/024-git-ai-handoff/spec.md)が基本手順。[サイト専用の引継ぎ書](SITE_NEW_CHAT_HANDOFF.md)に現行機能と再開順を記録 |
 | 内容 | 公開69/登録75商品、下書き6、掲載28都道府県、公開関連技法40/全42、一次出典327、38店舗/61商品に店舗案内 |
 | 画像 | 人物67＋商品単体69のAI画像136枚。架空の日本人成人女性21〜33歳の生成設定 |
 | AI画像の確認案内 | v0.22.1で日英の商品詳細と着用AI画像付きのカードに表示。実物の色・模様・形・金具は販売元の商品情報へ案内する。 [仕様031](../specs/031-product-image-disclosure/spec.md) |

@@ -11,7 +11,7 @@ active.push('docs/japan-map-direct-v18.md',...['spec','plan','tasks','validation
 active.push('docs/region-photos-v19.md',...['spec','plan','tasks','validation'].map(name=>'specs/021-unified-region-photos/'+name+'.md'));
 active.push('docs/compact-layout-v20.md',...['spec','plan','tasks','validation'].map(name=>'specs/022-compact-map-and-natural-hero/'+name+'.md'));
 active.push('docs/japanese-model-styling-v21.md',...['spec','plan','tasks','validation'].map(name=>'specs/023-japanese-model-styling/'+name+'.md'));
-active.push('START_HERE.md','docs/handoff-assets.md',...['spec','plan','tasks','validation'].map(name=>'specs/024-git-ai-handoff/'+name+'.md'));
+active.push('START_HERE.md','docs/SITE_NEW_CHAT_HANDOFF.md','docs/handoff-assets.md',...['spec','plan','tasks','validation'].map(name=>'specs/024-git-ai-handoff/'+name+'.md'));
 const pkg=JSON.parse(await readFile(resolve(root,'package.json'),'utf8'));
 const builtins=new Set(['install','exec','audit','run','help','add','remove','update','list','why']);
 const contentCache=new Map();
