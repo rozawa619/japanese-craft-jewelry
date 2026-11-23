@@ -70,6 +70,6 @@
 
 ## TikTok・Instagram・Google Flow の動画制作と投稿文
 
-「SORA｜旅先で待ち合わせ」のTikTok動画制作では、最初に [新チャット完全引継ぎ](docs/video/NEW_CHAT_HANDOFF.md)、[動画引継ぎ](docs/video/README.md)、[制作仕様](docs/video/spec.md)、[進捗台帳](docs/video/production-status.json)、進行中のepisodeの固定指示文を読む。サイトの公開商品IDと `src/data/editorial-images.json` の **同じ女性画像** を開始フレームに用い、勝手に新しい女性や未掲載商品を作らない。Flowは原則9:16/対応時10秒/一人称デート/ひらがな中心の音声（解像度はモデル設定で確認）、字幕とBGMは後編集。毎回指示文を再発明せず、実際の生成・レビュー・公開状態を区別して台帳に反映する。
+「SORA｜旅先で待ち合わせ」のTikTok動画制作では、最初に [新チャット完全引継ぎ](docs/video/NEW_CHAT_HANDOFF.md)、[動画引継ぎ](docs/video/README.md)、[制作仕様](docs/video/spec.md)、[進捗台帳](docs/video/production-status.json)、進行中のepisodeの固定指示文を読む。サイトの公開商品IDと `src/data/editorial-images.json` の **同じ女性画像** をFlowに入力し、勝手に新しい女性や未掲載商品を作らない。[冒頭の見切れを防ぐ手順](docs/video/spec.md#冒頭の見切れを防ぐ手順)に沿ってFramesまたはIngredientsを選ぶ。Flowは原則9:16/対応時10秒/一人称デート/ひらがな中心の音声（解像度はモデル設定で確認）、字幕とBGMは後編集。毎回指示文を再発明せず、実際の生成・レビュー・公開状態を区別して台帳に反映する。
 
 Instagramリールの紹介文は [共通テンプレート](docs/video/instagram-caption-template.md) を使い、本文を対象のepisodeに、下書き・公開確認を [進捗台帳](docs/video/production-status.json) の `instagramCaption` に記録する。

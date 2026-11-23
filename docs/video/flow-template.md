@@ -1,28 +1,30 @@
-# Google Flow プロンプト標準テンプレート — SORA v2.2（サイト掲載原本優先）
+# Google Flow プロンプト標準テンプレート — SORA v2.3（サイト掲載原本優先）
 
-更新: 2026-11-22。[制作仕様 v1.11](spec.md)、[新チャット引継ぎ](NEW_CHAT_HANDOFF.md)と[Google公式調査](research/flow-veo-prompting-2026-11-21.md)を先に読む。
+2026-11-23更新。[制作仕様 v1.12](spec.md)、[新チャット引継ぎ](NEW_CHAT_HANDOFF.md)と[Google公式調査](research/flow-veo-prompting-2026-11-21.md)を先に読む。
 
 **重要**：以前の長文テンプレートで重複した手首が防げなかったため、開始画像を検査して**短い1シーン/1動作**の指示に変更。Google公式は画像→動画で「画像が示す人物/風景を再説明せず動きに集中」を推奨する。「No / Don't」の長い否定命令も排除。これらは再現性の改善を狙う運用仮説で、重複ゼロを保証するものではない。
 
-## 0. 開始画像を確認する（必須）
+## 0. 開始画像と縦構図を確認する（必須）
 
 - `src/data/catalog.json` の公開商品ID・`src/data/editorial-images.json` の該当人物画像を参照する。
-- 顔、装身具の個数、装着側、見える腕をチェック。サイト画像が横3:2等なら、縦9:16で商品が見えるか確認する。
+- 両目・口元と装身具全体に余白を取る。横長の原本は顔と装身具がまとまって入る位置を縦画面の中心にする。装身具の個数、装着側、見える腕も確認する。
+- Framesの開始プレビューで両目・口元・装身具が収まることを確認する。見切れがある場合や確認できない場合は、対応モデルのIngredientsに同じ元画像を指定する。指示文の前に使用モードを書く。 [冒頭の見切れを防ぐ手順](spec.md#冒頭の見切れを防ぐ手順)
 - **ユーザーの明示した編集依頼がない限り、サイト掲載の女性原本画像をそのまま使う。** 9:16派生開始画像を勝手に作らない。画像の加工を明示依頼された時だけ、元画像と同じ顔・服・商品を保持する別ファイルとして作り、目視照合する。元の公開画像は上書きしない。
 - ブレスレット編では、**片腕に1個、反対側に複製を作らない、手を動かさない**指示を優先する。ユーザーから加工依頼がなければ静止画再生成を行わず、元画像の見え方から構図を検討する。
 
 ## A. 通常版（音声あり・1動作）
 
-- Google Flow: Video → Frames のstart frameを指定。9:16、10秒を選べるモデルなら10秒。
-- `[...]` 部だけ置換する。モデルに応じて使用可能な尺へ調整。
+- 縦9:16、10秒を選べるモデルなら10秒。使用モードは上の手順で選ぶ。
+- `[...]` を置換する。Framesなら `first frame`、Ingredientsなら `sole visual reference` を指定する。モデルに応じて尺を調整する。
 - **画像内の商品と顔の同一性が優先**。
 
 ```text
-Image-to-video from the supplied start frame, vertical 9:16, 10 seconds if supported.
+Use the supplied site image as the [first frame / sole visual reference], vertical 9:16, 10 seconds if supported.
 One continuous boyfriend-POV shot in [LOCATION], Japan.
 
-Keep the woman and [ACCESSORY] exactly as shown in the start frame.
+Keep the woman and [ACCESSORY] exactly as shown in the supplied image.
 Soft, even light shows clear, naturally textured skin in her original tone.
+From frame one, keep both eyes, her whole mouth and all of [ACCESSORY] in view with room at the edges. Hold the composition throughout.
 [POSITIVE COMPOSITION: for a bracelet, a close portrait with the single bracelet-wearing wrist visible near her torso and her other arm outside the composition.]
 
 Motion: [ONE SMALL ACTION: she meets the viewer's gaze with a small, warm smile. Her bracelet wrist stays relaxed and still].
@@ -41,10 +43,11 @@ Avoid: added moles or dark spots, heavy skin smoothing, duplicated jewelry, extr
 Google Flowの **project Settings → Return silent videos** をON（公式ヘルプで確認）。映像だけを生成し、CapCut等の編集ソフトで自然な日本語音声を合成する。**口パクの同期は別工程**であり、無音のモデルの口の動きを自動で直したとはみなさない。
 
 ```text
-Image-to-video from the supplied start frame, vertical 9:16.
+Use the supplied site image as the [first frame / sole visual reference], vertical 9:16.
 One continuous boyfriend-POV shot in [LOCATION], Japan.
-Keep the woman and [ACCESSORY] exactly as shown in the start frame.
+Keep the woman and [ACCESSORY] exactly as shown in the supplied image.
 Soft, even light shows clear, naturally textured skin in her original tone.
+From frame one, keep both eyes, her whole mouth and all of [ACCESSORY] in view with room at the edges. Hold the composition throughout.
 [POSITIVE COMPOSITION]
 Motion: she meets the viewer's gaze with a small, warm smile. Her hands remain still.
 Camera: locked-off, natural eye level.
@@ -54,11 +57,12 @@ Avoid: added moles or dark spots, heavy skin smoothing, duplicated jewelry, extr
 
 ## C. 失敗時の順番
 
-1. **先に原画像を確認**：手首・商品・縦フレームでの見え方をチェックする。ユーザーの明示した加工指示なしに画像を修正しない
-2. 公開商品ID・サイト女性画像IDの重複がないことをTikTok台帳で確認し、同じ短いpromptで1クリップ生成（画像/モデル/尺を台帳へ記録）
-3. 商品が複製された場合は長い禁止文を追加せず、構図と動きを変更
-4. 発音だけ悪い場合は短い1行と話者形式をテスト→改善しなければ無音版+後録り
-5. 成功/失敗を `production-status.json` とepisodeへ記録し、動画保存先と投稿URLを別々に管理
+1. 元画像の見える範囲を確認し、上の手順で使用モードを決める
+2. 公開商品ID・サイト女性画像IDをTikTok台帳と照合し、短い指示文で1クリップ生成する。画像・モード・モデル・尺を記録する
+3. **0秒・0.5秒・1秒で両目・口元・装身具を確認する。** 見切れていたら `revision_needed` として、同じ元画像を使いモードと縦構図を確認してから再生成する
+4. 商品が複製された場合は構図と動きを変更する
+5. 発音だけ悪い場合は短い1行と話者形式をテストし、改善しなければ無音版と後録りに切り替える
+6. 結果を `production-status.json` とepisodeに記録する。動画保存先と投稿URLも記録する
 
 ## 投稿文（Flowとは別）
 
