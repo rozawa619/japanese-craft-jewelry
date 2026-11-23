@@ -1,21 +1,21 @@
 {
-  "version": "0.23.0",
-  "specification": "033-sora-video-jewelry",
+  "version": "0.23.1",
+  "specification": "034-kyoto-video-jewelry",
   "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
   "branch": "main",
   "status": "deployed_and_verified",
-  "recordedAt": "2026-11-23T11:51:26.000Z",
-  "applicationCommit": "ebdc17aa37c72669a8dc1466af50ae50a8f8f7f6",
+  "recordedAt": "2026-11-23T16:24:37Z",
+  "applicationCommit": "803c42ad59b6e73969c669ffb60814e73cfbc7e8",
   "actions": {
-    "id": 45168502208,
-    "headSha": "ebdc17aa37c72669a8dc1466af50ae50a8f8f7f6",
+    "id": 45215657620,
+    "headSha": "803c42ad59b6e73969c669ffb60814e73cfbc7e8",
     "status": "completed",
     "conclusion": "success",
-    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45168502208",
-    "deploymentCompletedAt": "2026-11-23T11:49:42Z",
-    "observedAt": "2026-11-23T11:51:26.000Z"
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45215657620",
+    "deploymentCompletedAt": "2026-11-23T16:22:57Z",
+    "observedAt": "2026-11-23T16:24:37Z"
   },
-  "previousRecord": "docs/deployment-v32-before-sora-video-jewelry.json",
+  "previousRecord": "docs/deployment-v33-before-kyoto-video-jewelry.json",
   "publicUrls": {
     "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
     "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
@@ -66,33 +66,40 @@
       "wood": 13
     },
     "productsWithVerifiedListingSelections": 10,
-    "updatedPairPriceProducts": 1,
-    "productsInVideoShowcase": 7,
-    "matchedPublicVideoPosts": 10
+    "updatedPairPriceProducts": 0,
+    "productsInVideoShowcase": 11,
+    "matchedPublicVideoPosts": 14,
+    "videoShowcaseByPrefecture": {
+      "kyoto": 4,
+      "kanagawa": 7
+    },
+    "recheckedKanagawaPurchaseProducts": 7
   },
-  "outputManifest": "docs/sora-video-jewelry-v33-build-manifest.json",
-  "verification": "specs/033-sora-video-jewelry/validation.md",
+  "outputManifest": "docs/kyoto-video-jewelry-v34-build-manifest.json",
+  "verification": "specs/034-kyoto-video-jewelry/validation.md",
   "verificationSummary": {
     "unitTests": 152,
     "generatedFiles": 546,
     "generatedHtml": 400,
     "canonicalUrls": 384,
-    "localChromiumCases": 26,
-    "localizedVideoProductCards": 14,
-    "videoProductDetailNavigations": 14,
-    "matchedPublicResponses": 29,
-    "matchedGeneratedFiles": 546,
-    "preservedImageHashes": 136
+    "localWebKitTouchFlows": 4,
+    "localWebKitPurchaseDisplays": 14,
+    "localWebKitNoScriptLinkDisplays": 2,
+    "localizedVideoProductCards": 22,
+    "generatedVideoProductDetailLinks": 22,
+    "matchedPublicResponses": 34,
+    "preservedImageHashes": 136,
+    "realIPhoneSafari": "pending"
   },
   "outputManifestStatus": "verified_build_and_public_sample",
-  "previousFullOutputManifest": "docs/purchase-selections-v32-build-manifest.json",
+  "previousFullOutputManifest": "docs/sora-video-jewelry-v33-build-manifest.json",
   "buildArtifact": {
-    "id": 14815871971,
+    "id": 14837723352,
     "name": "github-pages",
-    "bytes": 12280631,
-    "digest": "sha256:c7de2ce0f94c7510536581982954d051e47fcde01d3e9c184ab8e5067c0fe2ff",
-    "expiresAt": "2026-11-24T11:49:21Z",
-    "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14815871971/zip",
-    "headSha": "ebdc17aa37c72669a8dc1466af50ae50a8f8f7f6"
+    "bytes": 12267887,
+    "digest": "sha256:b998a02ab946fa3b56f9b1b03b74f8ba7ef09dc79e4e748cec2225b0e9f5dae1",
+    "expiresAt": "2026-11-24T16:22:36Z",
+    "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14837723352/zip",
+    "headSha": "803c42ad59b6e73969c669ffb60814e73cfbc7e8"
   }
 }

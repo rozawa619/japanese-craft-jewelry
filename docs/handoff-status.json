@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23T12:38:51.780Z",
+  "updatedAt": "2026-11-23T16:24:37Z",
   "entryPoint": "START_HERE.md",
   "project": {
     "name": "Japanese Craft Jewelry",
@@ -16,7 +16,7 @@
     "status": "ready",
     "basedOnDocumentationCommit": "b6ac11fcf589daa1b7b4786bc98702b36bfee482",
     "activeSiteImplementationTask": null,
-    "nextAction": "Read the site chat handoff and confirm latest main and production before choosing the next site change. Search Console ownership, new social post matches and commercial approvals remain open.",
+    "nextAction": "Use the current site handoff and production verification. Real iPhone Safari and in-app browsing are pending. Search Console requires a Google account with access to the property. Add further posts after checking their public URLs and catalog matches.",
     "currentGitHeadCommand": "git rev-parse HEAD",
     "verificationReport": "docs/git-handoff-stage-results.json",
     "validatedSourceCommit": "537ee24ca021a9b61801108a4689e22936a3a08a",
@@ -30,16 +30,16 @@
     "siteGuide": "docs/SITE_NEW_CHAT_HANDOFF.md"
   },
   "production": {
-    "version": "0.23.0",
-    "applicationCommit": "ebdc17aa37c72669a8dc1466af50ae50a8f8f7f6",
+    "version": "0.23.1",
+    "applicationCommit": "803c42ad59b6e73969c669ffb60814e73cfbc7e8",
     "actions": {
-      "id": 45168502208,
-      "headSha": "ebdc17aa37c72669a8dc1466af50ae50a8f8f7f6",
+      "id": 45215657620,
+      "headSha": "803c42ad59b6e73969c669ffb60814e73cfbc7e8",
       "status": "completed",
       "conclusion": "success",
-      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45168502208",
-      "deploymentCompletedAt": "2026-11-23T11:49:42Z",
-      "observedAt": "2026-11-23T11:51:26.000Z"
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45215657620",
+      "deploymentCompletedAt": "2026-11-23T16:22:57Z",
+      "observedAt": "2026-11-23T16:24:37Z"
     },
     "urls": {
       "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
@@ -63,18 +63,18 @@
       "soraVideoJewelryEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/sora/#video-jewelry"
     },
     "report": "docs/deployment-results.json",
-    "verification": "specs/033-sora-video-jewelry/validation.md",
-    "outputManifest": "docs/sora-video-jewelry-v33-build-manifest.json",
+    "verification": "specs/034-kyoto-video-jewelry/validation.md",
+    "outputManifest": "docs/kyoto-video-jewelry-v34-build-manifest.json",
     "outputManifestStatus": "verified_build_and_public_sample",
-    "previousFullOutputManifest": "docs/purchase-selections-v32-build-manifest.json",
+    "previousFullOutputManifest": "docs/sora-video-jewelry-v33-build-manifest.json",
     "buildArtifact": {
-      "id": 14815871971,
+      "id": 14837723352,
       "name": "github-pages",
-      "bytes": 12280631,
-      "digest": "sha256:c7de2ce0f94c7510536581982954d051e47fcde01d3e9c184ab8e5067c0fe2ff",
-      "expiresAt": "2026-11-24T11:49:21Z",
-      "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14815871971/zip",
-      "headSha": "ebdc17aa37c72669a8dc1466af50ae50a8f8f7f6"
+      "bytes": 12267887,
+      "digest": "sha256:b998a02ab946fa3b56f9b1b03b74f8ba7ef09dc79e4e748cec2225b0e9f5dae1",
+      "expiresAt": "2026-11-24T16:22:36Z",
+      "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14837723352/zip",
+      "headSha": "803c42ad59b6e73969c669ffb60814e73cfbc7e8"
     }
   },
   "snapshot": {
@@ -100,7 +100,13 @@
     "kanagawaRegionalRetailer": 4,
     "profileLandingPages": 2,
     "productsWithVerifiedListingSelections": 10,
-    "productsInVideoShowcase": 7
+    "productsInVideoShowcase": 11,
+    "matchedPublicVideoPosts": 14,
+    "videoShowcaseByPrefecture": {
+      "kyoto": 4,
+      "kanagawa": 7
+    },
+    "recheckedKanagawaPurchaseProducts": 7
   },
   "currentImagePolicy": {
     "fictionalNationalitySetting": "Japanese",
@@ -183,7 +189,8 @@
     "030-material-guides",
     "031-product-image-disclosure",
     "032-purchase-selections",
-    "033-sora-video-jewelry"
+    "033-sora-video-jewelry",
+    "034-kyoto-video-jewelry"
   ],
   "historicalOnlyScripts": [
     {

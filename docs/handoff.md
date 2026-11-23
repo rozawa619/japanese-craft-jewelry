@@ -1,6 +1,6 @@
 # 現在の状態と保守の引継ぎ
 
-2026-11-23。新しいチャットでサイト構築を再開する場合は、[サイト専用の引継ぎ書](SITE_NEW_CHAT_HANDOFF.md)と[コピー用の引継ぎ文](SITE_NEW_CHAT_HANDOFF.md#新チャット貼付用のプロンプト)を使います。[START_HERE](../START_HERE.md)と[AGENTS](../AGENTS.md)に作業の入口と制約があり、[handoff-status.json](handoff-status.json)に再開時の状態、[deployment-results.json](deployment-results.json)に公開アプリの実績があります。
+2026-11-24。新しいチャットでサイト構築を再開する場合は、[サイト専用の引継ぎ書](SITE_NEW_CHAT_HANDOFF.md)と[コピー用の引継ぎ文](SITE_NEW_CHAT_HANDOFF.md#新チャット貼付用のプロンプト)を使います。[START_HERE](../START_HERE.md)と[AGENTS](../AGENTS.md)に作業の入口と制約があり、[handoff-status.json](handoff-status.json)に再開時の状態、[deployment-results.json](deployment-results.json)に公開アプリの実績があります。
 
 ## 完了しているもの
 
@@ -15,7 +15,7 @@
 | 画像 | 人物67＋商品単体69のAI画像136枚。架空の日本人成人女性21〜33歳の生成設定 |
 | AI画像の確認案内 | v0.22.1で日英の商品詳細と着用AI画像付きのカードに表示。実物の色・模様・形・金具は販売元の商品情報へ案内する。 [仕様031](../specs/031-product-image-disclosure/spec.md) |
 | 販売元の選択名と販売単位 | v0.22.2で10商品の日英購入導線に選択名・カタログ掲載名を表示。凛然 星華 琥珀の国内・海外価格に1組の販売単位を表示。 [仕様032](../specs/032-purchase-selections/spec.md) |
-| 動画で紹介した商品 | v0.23.0の日英 `/sora/` で、公開10投稿に対応する7商品へ案内。プロフィール向けURLのクエリに媒体を指定できる。 [仕様033](../specs/033-sora-video-jewelry/spec.md) |
+| 動画で紹介した商品 | v0.23.1の日英 `/sora/` で、公開14投稿に対応する京都4・神奈川7商品へ案内。神奈川7商品の購入案内を公式情報と再照合。 [仕様034](../specs/034-kyoto-video-jewelry/spec.md) |
 | 完了した023の変更 | 22人物を新生成・採用・公開、既存36人物と単体60を保持。新22枚は25〜30歳、かわいい系11/綺麗な系統11 |
 | 退役画像 | 旧10＋023の旧22＋026の旧5＝37画像を配信/新Git tree/source ZIPから除外。旧原本と生成記録は保持 |
 | 収益化 | AdSense off、実提携未申請、商品リンクは通常URL。広告resolverとPrivacyの土台は実装済み |
@@ -45,6 +45,8 @@
 - 店舗Mapsは初回明示許可後30日自動表示、オフで全停止。未選択/拒否/期限切れはGoogle通信0。Google帰属・外部fallback・最小Storageを保ちます。地図設定maps-v17と広告Privacy v14/広告CMPは別です。
 
 ## 公開版の検証記録
+
+[仕様034の検証](../specs/034-kyoto-video-jewelry/validation.md)に、京都の公開投稿、神奈川7商品の購入案内、iPhone 15相当のWebKit検証、公開応答の照合を記録しています。
 
 [仕様029の検証](../specs/029-sora-profile-links/validation.md)に、SORAのSNSプロフィール用ページと、商品・産地への導線を記録しています。
 
