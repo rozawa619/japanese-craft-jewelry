@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastChecked": "2026-11-22",
+  "lastChecked": "2026-11-24",
   "account": {
     "handle": "@soracraftdiary",
     "profileUrl": "https://www.tiktok.com/@soracraftdiary",
@@ -9,14 +9,62 @@
   "accountInspection": {
     "status": "public_profile_checked",
     "coverage": "visible_public_video_grid",
-    "result": "The public TikTok profile displayed ten distinct posts through the end of the video grid. Their captions and thumbnails link them to seven catalog products.",
+    "result": "The public TikTok profile displayed 15 distinct posts through the end of the video grid. Four Kyoto posts and the ten Kanagawa posts match 11 published catalog products. The milestone post does not identify a product.",
     "attemptedMethods": [
-      "public TikTok profile video grid and post-card links",
-      "individual detail page for the previously shared Hamamatsuya pendant"
+      "public TikTok profile video grid, post-card links, captions and thumbnails",
+      "comparison with the current site styling images for the four Kyoto products"
     ],
-    "limitations": "The individual detail page required birthdate verification. Full playback and audio were not reviewed. Coverage is limited to the public grid at the time of inspection."
+    "limitations": "Coverage is limited to the public grid at the time of inspection. The card comparison does not establish full playback, audio, or exact source-frame provenance."
   },
   "knownPostLinks": [
+    {
+      "url": "https://www.tiktok.com/@soracraftdiary/video/7711364046796246293",
+      "source": "Public TikTok profile, video card caption and thumbnail",
+      "availability": "listed_on_public_profile",
+      "observedOn": "2026-11-24",
+      "productId": "somemasa-peacock-clip-on-earrings",
+      "imageAssetId": "ai-styling-jp-somemasa-peacock-clip-on-earrings-v23",
+      "siteImagePath": "images/styling-jp-somemasa-peacock-clip-on-earrings-v23.webp",
+      "identityMatch": "styling_consistent_with_site_image",
+      "episodeId": null,
+      "evidence": "The caption names the Somemasa × Sextile peacock earrings. The thumbnail shows the navy top and long blue-and-green ornament motifs seen in the site's styling image."
+    },
+    {
+      "url": "https://www.tiktok.com/@soracraftdiary/video/7711291846185536820",
+      "source": "Public TikTok profile, video card caption and thumbnail",
+      "availability": "listed_on_public_profile",
+      "observedOn": "2026-11-24",
+      "productId": "kazarino-hanabishi-copper-earrings",
+      "imageAssetId": "ai-styling-jp-kazarino-hanabishi-copper-earrings-v23",
+      "siteImagePath": "images/styling-jp-kazarino-hanabishi-copper-earrings-v23.webp",
+      "identityMatch": "styling_consistent_with_site_image",
+      "episodeId": null,
+      "evidence": "The caption names Kazarino's copper Hanabishi earrings. The thumbnail shows the ivory top and copper-colored open flower motif seen in the site's styling image."
+    },
+    {
+      "url": "https://www.tiktok.com/@soracraftdiary/video/7711182232009854229",
+      "source": "Public TikTok profile, video card caption and thumbnail",
+      "availability": "listed_on_public_profile",
+      "observedOn": "2026-11-24",
+      "productId": "nakajima-pear-sakura-pendant",
+      "imageAssetId": "ai-nakajima-sakura-damascene-pendant-styling-v9",
+      "siteImagePath": "images/nakajima-sakura-damascene-pendant-styling-v9.webp",
+      "identityMatch": "styling_consistent_with_site_image",
+      "episodeId": null,
+      "evidence": "The caption names Nakajima's pear-shaped sakura and line-dot pendant. The thumbnail shows the white collared shirt and a dark pendant at the neckline, consistent with the site's styling image."
+    },
+    {
+      "url": "https://www.tiktok.com/@soracraftdiary/video/7711148913276849429",
+      "source": "Public TikTok profile, video card caption and thumbnail",
+      "availability": "listed_on_public_profile",
+      "observedOn": "2026-11-24",
+      "productId": "morphosphere-ultramarine-pansy-pierced-earrings",
+      "imageAssetId": "ai-morphosphere-blue-pansy-styling-v9",
+      "siteImagePath": "images/morphosphere-blue-pansy-styling-v9.webp",
+      "identityMatch": "styling_consistent_with_site_image",
+      "episodeId": null,
+      "evidence": "The caption names Morphosphere tint's ultramarine pansy earrings. The thumbnail shows the white blouse and blue flower ear ornament seen in the site's styling image."
+    },
     {
       "url": "https://www.tiktok.com/@soracraftdiary/video/7710935851307420949",
       "source": "Public TikTok profile, video card caption and thumbnail",
@@ -349,9 +397,9 @@
     "linkedToVideoCreationEvidence": 8,
     "olderUnverified": 0,
     "retailerRelatedNotKanagawaCertified": 4,
-    "verifiedTikTokPostMatches": 10,
-    "visibleTikTokPosts": 10,
-    "verifiedTikTokProductMatches": 7
+    "verifiedTikTokPostMatches": 14,
+    "visibleTikTokPosts": 15,
+    "verifiedTikTokProductMatches": 11
   },
   "changeLog": [
     {
@@ -365,6 +413,10 @@
     {
       "date": "2026-11-22",
       "event": "Reopened the public profile in a browser and reconciled all ten visible post cards with seven catalog products. Recorded matching and evidence limits for each post."
+    },
+    {
+      "date": "2026-11-24",
+      "event": "Reconciled four Kyoto post cards with published products and existing styling images. Reconfirmed the ten Kanagawa URLs in the visible grid."
     }
   ]
 }
