@@ -46,6 +46,7 @@
 | 商品の編集順／産地代表 | [selection.ts](../src/config/selection.ts)／[region-selection.ts](../src/config/region-selection.ts) |
 | ガラスと木の素材ページの説明 | [material-collections.ts](../src/lib/material-collections.ts)。紹介例の掲載状態は商品台帳で確認する |
 | AI画像から実物の確認へ進む案内 | [ProductImageNote.astro](../src/components/ProductImageNote.astro)。日英の文面を共有し、商品詳細の主購入リンク、単体画像、固定購入欄、AI着用画像付きのカードで表示する。 [仕様031](../specs/031-product-image-disclosure/spec.md) |
+| SORAの動画で紹介した商品への案内 | [TikTok公開照合台帳](video/tiktok-publication-registry.json)の `knownPostLinks`。公開状態と商品・画像の対応を確認して更新する。日英のページでは同じ商品に対して1枚のカードを表示する。 [仕様033](../specs/033-sora-video-jewelry/spec.md) |
 | 地域紹介・種類を選ぶ前の一言 | [places/](../src/content/places/)の日英・[region-choice-notes.json](../src/data/region-choice-notes.json) |
 | 色・共通レイアウト | [global.css](../src/styles/global.css)。部品内の`<style>`にも個別設定あり |
 

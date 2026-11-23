@@ -42,6 +42,7 @@
 | 素材から探す専用ページ | `pnpm verify`、`pnpm check:seo` | 日英の素材別掲載商品、商品一覧とフッターからのリンク、320px幅、JavaScript無効時、公開サイトマップ |
 | AI画像の確認案内 | `pnpm verify`、対象の日英画面 | 主購入リンクの手前、単体画像、固定購入欄、着用AI画像付きカード。公式通販・カタログのリンク、320px幅の固定欄、JavaScript無効時の表示。 [仕様031](../specs/031-product-image-disclosure/spec.md) |
 | 公式ページで選ぶ色・金具、カタログの掲載名 | `pnpm verify`、対象の日英画面 | 台帳の出典と国内リンク、一覧カード・詳細・固定欄の選択名、英語での日本語表記、国内・海外の販売単位。 [仕様032](../specs/032-purchase-selections/spec.md) |
+| SORAの動画商品一覧 | `pnpm verify`、`pnpm check:seo`、日英の `/sora/` | 公開照合台帳・商品ID・画像ID、重複排除、320pxの冒頭リンク、日英のクエリ・ハッシュ、JavaScript無効時の商品ページ。 [仕様033](../specs/033-sora-video-jewelry/spec.md) |
 | 納品だけ | 最新sourceの書出し→ZIP→repository/export/ZIP集合・全SHA照合 | アプリ不変なら同じUIを再走査せず、記録/必須ファイル/秘密・退役物除外を確認 |
 
 関連unitだけ先に実行する例は`node --experimental-strip-types --test tests/market-prices.test.ts`。最終の必要範囲は変更の広がりで決める。CIは独立した公開gateであり、ローカルの小修正検査を省略する理由にも、毎回497を走らせる理由にもしない。
