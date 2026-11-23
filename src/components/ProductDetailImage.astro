@@ -2,6 +2,7 @@
 import type {EditorialImage} from '../lib/editorial-images';
 import {t,type Locale} from '../lib/i18n';
 import{path}from'../config/site';
+import ProductImageNote from './ProductImageNote.astro';
 interface Props{image:EditorialImage;locale:Locale;officialUrl?:string}
 const{image,locale,officialUrl}=Astro.props;
 ---
@@ -10,6 +11,7 @@ const{image,locale,officialUrl}=Astro.props;
   <img src={path(image.path)} width={image.width} height={image.height} alt={image.alt[locale]} loading="lazy" decoding="async"/>
   <figcaption>{t(locale,'AI image','AIイメージ')}</figcaption>
  </figure>
+ {officialUrl&&<ProductImageNote locale={locale} variant="compact"/>}
  {officialUrl&&<a href={officialUrl} target="_blank" rel="noopener noreferrer" class="product-detail-photo-link" data-detail-official-photo>{t(locale,'See the actual piece on the official page','実物を公式ページで見る')} <span aria-hidden="true">↗</span><span class="sr-only">{t(locale,' (opens in a new tab)','（新しいタブで開く）')}</span></a>}
 </div>
 <style>

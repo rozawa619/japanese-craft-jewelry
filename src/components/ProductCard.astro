@@ -9,6 +9,7 @@ import {marketPricesFor} from '../lib/market-prices';
 import {budgetForJapanPrice} from '../lib/shopping-filters';
 import MarketPurchaseLink from './MarketPurchaseLink.astro';
 import EditorialImage from './EditorialImage.astro';
+import ProductImageNote from './ProductImageNote.astro';
 import {productImageFor} from '../lib/editorial-images';
 interface Props { product:Product; index?:number; locale?:Locale; showNumber?:boolean }
 const {product:p,index=0,locale='en',showNumber=true}=Astro.props;
@@ -27,6 +28,7 @@ const attribution=maker.id.includes('unidentified')&&merchant?t(locale,'Availabl
  <p class="maker-name">{attribution}</p>
  <p class="card-summary" data-selection-point>{p.editorialSummary}</p>
  <div class="card-price"><MarketPrice productId={p.id} locale={locale}/>{p.availability==='out_of_stock'&&<small>{t(locale,'Sold out when checked','確認時点で欠品')}</small>}</div>
+ {image&&<ProductImageNote locale={locale} variant="compact"/>}
  <div class="card-actions"><a class="text-link" href={detail}>{t(locale,'Why this piece','選んだ理由を見る')} <span aria-hidden="true">→</span></a><MarketPurchaseLink productId={p.id} compact locale={locale}/></div>
 </article>
 <style>

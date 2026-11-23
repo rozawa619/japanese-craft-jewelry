@@ -166,6 +166,9 @@ for (const [file, page] of pages) {
       const confirmations=tags.filter(tag=>'data-purchase-evidence' in tag.attrs);
       const [confirmation]=confirmations;
       if(confirmations.length!==1||confirmation.attrs['data-purchase-evidence']!==evidence.kind||confirmation.attrs['data-purchase-checked-at']!==evidence.checkedAt||!intro||!primary||confirmation.index<=intro.index||confirmation.index>=primary.index)fail(file,'purchase confirmation and its date must appear once, beside the primary action');
+      const imageNotes=tags.filter(tag=>tag.attrs['data-product-image-note']==='full');
+      const [imageNote]=imageNotes;
+      if(imageNotes.length!==1||imageNote.name!=='p'||!confirmation||!primary||imageNote.index<=confirmation.index||imageNote.index>=primary.index)fail(file,'AI image guidance must appear once between the purchase evidence and the primary action');
       if(primary){
         const primaryEnd=tokenSource.indexOf('</div>',primary.index);
         const actions=tags.filter(tag=>tag.name==='a'&&tag.index>primary.index&&tag.index<primaryEnd);

@@ -1,0 +1,17 @@
+---
+import {t,type Locale} from '../lib/i18n';
+
+interface Props { locale:Locale; variant?:'full'|'compact'|'sticky' }
+const {locale,variant='full'}=Astro.props;
+const messages={
+ full:t(locale,'The images are AI-generated. Check the seller’s product information for the actual color, pattern, shape, and hardware.','画像はAIで作成したイメージです。実物の色・模様・形・金具は、販売元の商品情報でご確認ください。'),
+ compact:t(locale,'AI illustration. See the official listing for the actual piece.','AIイメージです。実物は公式の商品情報でご確認ください。'),
+ sticky:t(locale,'AI image · See official listing','AIイメージ・実物は公式へ'),
+};
+---
+<p class:list={['product-image-note',variant]} data-product-image-note={variant}>{messages[variant]}</p>
+<style>
+ .product-image-note{margin:8px 0;color:var(--muted);font-size:.875rem;line-height:1.6}
+ .compact{font-size:.8125rem}
+ .sticky{margin:3px 0 0;font-size:.75rem;line-height:1.5}
+</style>

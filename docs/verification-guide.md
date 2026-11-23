@@ -40,6 +40,7 @@
 | 依存・Node・URL境界・CI/CSP | runtime check、`pnpm audit --audit-level=low`、関連unit、`pnpm verify` | URLなら`outbound-security.test.ts`、CI権限、公開header/console、対象の実host。監査0件を完全安全としない |
 | origin/base/公開設定・SEO・配信 | `pnpm verify`、`pnpm readiness`、`check:seo` | preview/public、canonical/hreflang/sitemap/robots、公開meta、実URL、最終HTML/画像照合 |
 | 素材から探す専用ページ | `pnpm verify`、`pnpm check:seo` | 日英の素材別掲載商品、商品一覧とフッターからのリンク、320px幅、JavaScript無効時、公開サイトマップ |
+| AI画像の確認案内 | `pnpm verify`、対象の日英画面 | 主購入リンクの手前、単体画像、固定購入欄、着用AI画像付きカード。公式通販・カタログのリンク、320px幅の固定欄、JavaScript無効時の表示。 [仕様031](../specs/031-product-image-disclosure/spec.md) |
 | 納品だけ | 最新sourceの書出し→ZIP→repository/export/ZIP集合・全SHA照合 | アプリ不変なら同じUIを再走査せず、記録/必須ファイル/秘密・退役物除外を確認 |
 
 関連unitだけ先に実行する例は`node --experimental-strip-types --test tests/market-prices.test.ts`。最終の必要範囲は変更の広がりで決める。CIは独立した公開gateであり、ローカルの小修正検査を省略する理由にも、毎回497を走らせる理由にもしない。

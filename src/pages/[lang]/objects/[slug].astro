@@ -15,6 +15,7 @@ import ChoiceDetails from '../../../components/ChoiceDetails.astro';
 import SelectionDecision from '../../../components/SelectionDecision.astro';
 import ProductBuyingGuide from '../../../components/ProductBuyingGuide.astro';
 import ProductDetailImage from '../../../components/ProductDetailImage.astro';
+import ProductImageNote from '../../../components/ProductImageNote.astro';
 import {productDetailImageFor} from '../../../lib/product-detail-images';
 import {buyingGuideFor} from '../../../lib/product-buying-guides';
 import PurchaseEvidence from '../../../components/PurchaseEvidence.astro';
@@ -73,6 +74,7 @@ const destinationNote=t(locale,'Opens the official website in a new tab.','公�
      :t(locale,'Online reference price in Japan. In-store price is not confirmed.','日本向け通販の参考価格です。実店舗の価格は未確認です。')}</p>
     <PurchaseEvidence productId={p.id} locale={locale}/>
     {p.availability==='out_of_stock'&&<p class="purchase-stock-note">{t(locale,'Out of stock when checked.','確認時点では欠品しています。')}</p>}
+    {hasDestination&&<ProductImageNote locale={locale}/>}
     <div class="purchase-primary" data-product-primary-cta><MarketPurchaseLink productId={p.id} locale={locale}/></div>
     <a class="market-visit-link" href={'#official-and-visit-'+p.id} data-price-visit-link>{hasRetailEvidence
      ?t(locale,'See where to find it','取扱店を見る')
@@ -93,7 +95,7 @@ const destinationNote=t(locale,'Opens the official website in a new tab.','公�
  <ChoiceDetails productId={p.id} locale={locale}/>
  <ProductBuyingGuide product={p} locale={locale}/>
  <VisitGuide productId={p.id} locale={locale}/>
- <section class="purchase-next"><div><h2>{t(locale,'Found a detail you love?','気になったら、お店で。')}</h2><p>{t(locale,'Take a closer look on the Japan official listing.','日本向けの公式ページで、気になるデザインをもう一度。')}</p></div><div><MarketPurchaseLink productId={p.id} locale={locale}/><p class="purchase-destination-note">{destinationNote}</p></div></section>
+ <section class="purchase-next"><div><h2>{t(locale,'Found a detail you love?','気になったら、お店で。')}</h2>{hasDestination&&<ProductImageNote locale={locale} variant="compact"/>}</div><div><MarketPurchaseLink productId={p.id} locale={locale}/><p class="purchase-destination-note">{destinationNote}</p></div></section>
  <div class="purchase-information">
   <details class="purchase-details" data-product-details><summary>{t(locale,'Materials, size & fittings','素材・サイズ・金具について')}</summary><div class="purchase-details-body"><dl class="spec-list">{specs.map(([label,value])=><div><dt>{label}</dt><dd>{value}</dd></div>)}</dl><h2>{t(locale,'Materials & finish notes','素材・仕上げの補足')}</h2><ul>{p.whatToCheck.map(item=><li>{item}</li>)}</ul></div></details>
   <details class="purchase-details"><summary>{t(locale,'Maker, craft & provenance','作り手・工芸・産地について')}</summary><div class="purchase-details-body"><h2><a href={href('makers/'+maker.id+'/')}>{maker.name}</a></h2><p>{maker.productionNote}</p><p>{p.craftClassification.label}</p>{craftNotes.map(note=><p><a href={href('crafts/'+contentSlug(note)+'/')}>{note.data.title} →</a></p>)}</div></details>
@@ -105,7 +107,7 @@ const destinationNote=t(locale,'Opens the official website in a new tab.','公�
   </Sources>
  </div>
  <section class="related purchase-related"><h2>{t(locale,'More pieces to love.','こちらのジュエリーも。')}</h2><div class="product-grid">{related.map((product,i)=><ProductCard product={product} index={i} locale={locale}/>)}</div></section>
- {hasDestination&&<aside class="product-sticky-cta" data-product-sticky-cta hidden aria-label={t(locale,'Japan reference price and official listing','日本向け参考価格と公式ページ')}><div><span class="sticky-product-name">{p.title}</span><MarketPrice productId={p.id} locale={locale} variant="sticky"/></div><MarketPurchaseLink productId={p.id} locale={locale}/></aside>}
+ {hasDestination&&<aside class="product-sticky-cta" data-product-sticky-cta hidden aria-label={t(locale,'Japan reference price and official listing','日本向け参考価格と公式ページ')}><div><span class="sticky-product-name">{p.title}</span><MarketPrice productId={p.id} locale={locale} variant="sticky"/><ProductImageNote locale={locale} variant="sticky"/></div><MarketPurchaseLink productId={p.id} locale={locale}/></aside>}
 </div>
 <script>
  const sticky=document.querySelector<HTMLElement>('[data-product-sticky-cta]');
