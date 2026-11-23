@@ -9,3 +9,9 @@
 - v0.22.0の生成物と比較し、公式・購入リンクの延べ2,002箇所、表示価格、サイトマップ、WebP136点のSHA-256が一致しました。広告はoffです。
 - Chromiumで日英の公式通販・カタログ・海外向け通販がある商品の代表を選び、幅320・390・667・1440pxで商品一覧と詳細の表示を確認しました。素材ページとJavaScript無効時を含めて34ケースが成功しました。固定購入欄が日英の出典操作に重ならないこと、幅320pxの代表ページでaxeの違反が0件であることを確認しました。
 - システムのChromiumは実行環境のソケット制限で起動できなかったため、同環境で動作するヘッドレスChromiumで再検証しました。実機Safariと各工房の掲載許諾は未確認です。
+
+## 公開後
+
+- v0.22.1（アプリ `da8f2cec57e1acf5b8d833dce5cedf376e748617`）のGitHub ActionsビルドとGitHub Pagesへの配信が2026-11-23 18:15（JST）に成功しました。 [GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45145288867)
+- 日英の商品一覧・都道府県の絞り込み・代表商品詳細・素材と産地のページ、画像2点、CSS4件、サイトマップとrobots.txtの計24応答がHTTP 200で本番生成物と一致しました。
+- Actionsの配信アーカイブ自体のSHA-256と、アーカイブに含まれる545ファイルのSHA-256を照合しました。 [生成ファイル一覧](../../docs/product-image-disclosure-v31-build-manifest.json) · [公開記録](../../docs/deployment-results.json)

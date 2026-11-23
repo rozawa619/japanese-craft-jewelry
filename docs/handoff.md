@@ -1,6 +1,6 @@
 # 現在の状態と保守の引継ぎ
 
-2026-11-19。最初に[START_HERE](../START_HERE.md)と[AGENTS](../AGENTS.md)を読みます。[handoff-status.json](handoff-status.json)がGitから再開するための状態、[deployment-results.json](deployment-results.json)が公開アプリの実績です。Git HEADは取得時に確認し、公開appや過去の納品ZIPと混同しません。
+2026-11-23。最初に[START_HERE](../START_HERE.md)と[AGENTS](../AGENTS.md)を読みます。[handoff-status.json](handoff-status.json)がGitから再開するための状態、[deployment-results.json](deployment-results.json)が公開アプリの実績です。Git HEADは取得時に確認し、公開appや過去の納品ZIPと混同しません。
 
 ## 完了しているもの
 
@@ -13,6 +13,7 @@
 | 最新の引継ぎ整備 | [仕様024](../specs/024-git-ai-handoff/spec.md)。Gitからの再開に必要な入口・資料・手順の整備で、アプリを再制作する作業ではない |
 | 内容 | 公開69/登録75商品、下書き6、掲載28都道府県、公開関連技法40/全42、一次出典327、38店舗/61商品に店舗案内 |
 | 画像 | 人物67＋商品単体69のAI画像136枚。架空の日本人成人女性21〜33歳の生成設定 |
+| AI画像の確認案内 | v0.22.1で日英の商品詳細と着用AI画像付きのカードに表示。実物の色・模様・形・金具は販売元の商品情報へ案内する。 [仕様031](../specs/031-product-image-disclosure/spec.md) |
 | 完了した023の変更 | 22人物を新生成・採用・公開、既存36人物と単体60を保持。新22枚は25〜30歳、かわいい系11/綺麗な系統11 |
 | 退役画像 | 旧10＋023の旧22＋026の旧5＝37画像を配信/新Git tree/source ZIPから除外。旧原本と生成記録は保持 |
 | 収益化 | AdSense off、実提携未申請、商品リンクは通常URL。広告resolverとPrivacyの土台は実装済み |

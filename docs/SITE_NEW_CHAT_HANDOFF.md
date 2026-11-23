@@ -13,6 +13,8 @@
 
 ## 現在のサイトと公開履歴
 
+v0.22.1を2026-11-23（JST）に公開しました。日英の商品詳細と商品カードで、掲載画像がAIで作成したイメージであり、実物の仕様は販売元の商品情報で確認できると案内します。 [仕様031](../specs/031-product-image-disclosure/spec.md) · [031の検証記録](../specs/031-product-image-disclosure/validation.md)
+
 ガラスと木の素材ページを含む v0.22.0 を2026-11-23（JST）に公開しました。商品一覧とフッターから、日英のガラス14点・木13点の比較へ進めます。 [仕様030](../specs/030-material-guides/spec.md) · [030の検証記録](../specs/030-material-guides/validation.md)
 
 2026-11-23（JST）に日英のSORA案内ページを v0.21.0 で公開しました。[仕様029](../specs/029-sora-profile-links/spec.md)にプロフィール欄用のURLと特集商品の設定箇所、[029の検証記録](../specs/029-sora-profile-links/validation.md)に公開12件の照合結果を記録しています。動画の制作・投稿状況は動画台帳で管理します。

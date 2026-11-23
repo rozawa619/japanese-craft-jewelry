@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23T00:37:26.461Z",
+  "updatedAt": "2026-11-23T09:18:19.361Z",
   "entryPoint": "START_HERE.md",
   "project": {
     "name": "Japanese Craft Jewelry",
@@ -16,7 +16,7 @@
     "status": "ready",
     "basedOnDocumentationCommit": "b6ac11fcf589daa1b7b4786bc98702b36bfee482",
     "activeSiteImplementationTask": null,
-    "nextAction": "Use the published material guides and SORA profile links. Commercial hosting, BECOS program terms and Search Console ownership remain open.",
+    "nextAction": "Prioritize checking exact product variants and selling units before expanding the purchase guides. Commercial hosting, BECOS program terms and Search Console ownership remain open.",
     "currentGitHeadCommand": "git rev-parse HEAD",
     "verificationReport": "docs/git-handoff-stage-results.json",
     "validatedSourceCommit": "537ee24ca021a9b61801108a4689e22936a3a08a",
@@ -29,16 +29,16 @@
     }
   },
   "production": {
-    "version": "0.22.0",
-    "applicationCommit": "7e7823eab3bbd1aaee38db575a862779c1047bc8",
+    "version": "0.22.1",
+    "applicationCommit": "da8f2cec57e1acf5b8d833dce5cedf376e748617",
     "actions": {
-      "id": 45089540413,
-      "headSha": "7e7823eab3bbd1aaee38db575a862779c1047bc8",
+      "id": 45145288867,
+      "headSha": "da8f2cec57e1acf5b8d833dce5cedf376e748617",
       "status": "completed",
       "conclusion": "success",
-      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45089540413",
-      "deploymentCompletedAt": "2026-11-23T00:35:10Z",
-      "observedAt": "2026-11-23T00:37:26.461Z"
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45145288867",
+      "deploymentCompletedAt": "2026-11-23T09:15:41Z",
+      "observedAt": "2026-11-23T09:18:19.361Z"
     },
     "urls": {
       "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
@@ -53,21 +53,23 @@
       "glassJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/materials/glass/",
       "glassEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/materials/glass/",
       "woodJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/materials/wood/",
-      "woodEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/materials/wood/"
+      "woodEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/materials/wood/",
+      "imageNoticeJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/shimadzu-satsuma-kiriko-hikari-l-pendant/",
+      "imageNoticeEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/shimadzu-satsuma-kiriko-hikari-l-pendant/"
     },
     "report": "docs/deployment-results.json",
-    "verification": "specs/030-material-guides/validation.md",
-    "outputManifest": "docs/material-guides-v30-build-manifest.json",
+    "verification": "specs/031-product-image-disclosure/validation.md",
+    "outputManifest": "docs/product-image-disclosure-v31-build-manifest.json",
     "outputManifestStatus": "verified_build_and_public_sample",
-    "previousFullOutputManifest": "docs/sora-profile-v29-build-manifest.json",
+    "previousFullOutputManifest": "docs/material-guides-v30-build-manifest.json",
     "buildArtifact": {
-      "id": 14780323869,
+      "id": 14804300443,
       "name": "github-pages",
-      "bytes": 12078216,
-      "digest": "sha256:c6b01c26bd1ae24a7f76251db6205e533f167788148d141a021eaec61e727a8c",
-      "expiresAt": "2026-11-24T00:34:52Z",
-      "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14780323869/zip",
-      "headSha": "7e7823eab3bbd1aaee38db575a862779c1047bc8"
+      "bytes": 12186629,
+      "digest": "sha256:aa9a642ef65964c43c9fb48741c1cad595bbf6ec9d77e23e112ae519e5ad67b2",
+      "expiresAt": "2026-11-24T09:15:26Z",
+      "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14804300443/zip",
+      "headSha": "da8f2cec57e1acf5b8d833dce5cedf376e748617"
     }
   },
   "snapshot": {
@@ -120,7 +122,8 @@
       ],
       "background": "neutral indoor light",
       "release": "0.20.0"
-    }
+    },
+    "purchaseNotice": "specs/031-product-image-disclosure/spec.md"
   },
   "setup": {
     "nodeMinimum": "24.22.3",
@@ -153,7 +156,8 @@
     "directoryMap": "src/components/JapanJewelryMap.astro",
     "regionalPhotos": "src/components/RegionSelection.astro",
     "profileSelection": "src/config/selection.ts",
-    "materialCollections": "src/lib/material-collections.ts"
+    "materialCollections": "src/lib/material-collections.ts",
+    "productImageNotice": "src/components/ProductImageNote.astro"
   },
   "completedSpecifications": [
     "018-national-jewelry-expansion",
@@ -167,7 +171,8 @@
     "027-regional-craft-picks",
     "028-purchase-routes",
     "029-sora-profile-links",
-    "030-material-guides"
+    "030-material-guides",
+    "031-product-image-disclosure"
   ],
   "historicalOnlyScripts": [
     {
