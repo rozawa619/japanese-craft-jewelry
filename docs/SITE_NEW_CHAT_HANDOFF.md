@@ -13,6 +13,8 @@
 
 ## 現在のサイトと公開履歴
 
+v0.22.2を2026-11-23（JST）に公開しました。日英で10商品の販売ページの選択名または公式カタログの掲載名を表示し、凛然 星華 琥珀の国内・海外価格には1組の販売単位を表示します。 [仕様032](../specs/032-purchase-selections/spec.md) · [032の検証記録](../specs/032-purchase-selections/validation.md)
+
 v0.22.1を2026-11-23（JST）に公開しました。日英の商品詳細と商品カードで、掲載画像がAIで作成したイメージであり、実物の仕様は販売元の商品情報で確認できると案内します。 [仕様031](../specs/031-product-image-disclosure/spec.md) · [031の検証記録](../specs/031-product-image-disclosure/validation.md)
 
 ガラスと木の素材ページを含む v0.22.0 を2026-11-23（JST）に公開しました。商品一覧とフッターから、日英のガラス14点・木13点の比較へ進めます。 [仕様030](../specs/030-material-guides/spec.md) · [030の検証記録](../specs/030-material-guides/validation.md)

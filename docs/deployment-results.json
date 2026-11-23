@@ -1,21 +1,21 @@
 {
-  "version": "0.22.1",
-  "specification": "031-product-image-disclosure",
+  "version": "0.22.2",
+  "specification": "032-purchase-selections",
   "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
   "branch": "main",
   "status": "deployed_and_verified",
-  "recordedAt": "2026-11-23T09:18:19.361Z",
-  "applicationCommit": "da8f2cec57e1acf5b8d833dce5cedf376e748617",
+  "recordedAt": "2026-11-23T10:04:34.901Z",
+  "applicationCommit": "e386167601317f803146a849a6cc97e8127ae658",
   "actions": {
-    "id": 45145288867,
-    "headSha": "da8f2cec57e1acf5b8d833dce5cedf376e748617",
+    "id": 45152300656,
+    "headSha": "e386167601317f803146a849a6cc97e8127ae658",
     "status": "completed",
     "conclusion": "success",
-    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45145288867",
-    "deploymentCompletedAt": "2026-11-23T09:15:41Z",
-    "observedAt": "2026-11-23T09:18:19.361Z"
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45152300656",
+    "deploymentCompletedAt": "2026-11-23T10:02:33Z",
+    "observedAt": "2026-11-23T10:04:34.901Z"
   },
-  "previousRecord": "docs/deployment-v30-before-product-image-disclosure.json",
+  "previousRecord": "docs/deployment-v31-before-purchase-selections.json",
   "publicUrls": {
     "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
     "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
@@ -31,7 +31,9 @@
     "woodJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/materials/wood/",
     "woodEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/materials/wood/",
     "imageNoticeJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/shimadzu-satsuma-kiriko-hikari-l-pendant/",
-    "imageNoticeEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/shimadzu-satsuma-kiriko-hikari-l-pendant/"
+    "imageNoticeEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/shimadzu-satsuma-kiriko-hikari-l-pendant/",
+    "purchaseSelectionJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/tete-ryukyu-glass-hanagasa-heart-pierced-earrings/",
+    "purchaseSelectionEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/tete-ryukyu-glass-hanagasa-heart-pierced-earrings/"
   },
   "content": {
     "publishedProducts": 69,
@@ -60,32 +62,35 @@
     "materialCollectionProducts": {
       "glass": 14,
       "wood": 13
-    }
+    },
+    "productsWithVerifiedListingSelections": 10,
+    "updatedPairPriceProducts": 1
   },
-  "outputManifest": "docs/product-image-disclosure-v31-build-manifest.json",
-  "verification": "specs/031-product-image-disclosure/validation.md",
+  "outputManifest": "docs/purchase-selections-v32-build-manifest.json",
+  "verification": "specs/032-purchase-selections/validation.md",
   "verificationSummary": {
-    "unitTests": 149,
+    "unitTests": 150,
     "generatedFiles": 545,
     "generatedHtml": 400,
     "canonicalUrls": 384,
-    "localChromiumCases": 34,
-    "productDetailPagesWithDisclosure": 138,
-    "productCardsWithDisclosure": 1018,
+    "localChromiumCases": 56,
+    "productDetailPagesWithVerifiedListingSelections": 20,
+    "productCardsWithVerifiedListingSelections": 224,
+    "pairPriceDisplaysForRinzenSeika": 44,
     "matchedOfficialAndPurchaseLinks": 2002,
-    "matchedPublicResponses": 24,
+    "matchedPublicResponses": 38,
     "matchedGeneratedFiles": 545,
     "preservedImageHashes": 136
   },
   "outputManifestStatus": "verified_build_and_public_sample",
-  "previousFullOutputManifest": "docs/material-guides-v30-build-manifest.json",
+  "previousFullOutputManifest": "docs/product-image-disclosure-v31-build-manifest.json",
   "buildArtifact": {
-    "id": 14804300443,
+    "id": 14807675309,
     "name": "github-pages",
-    "bytes": 12186629,
-    "digest": "sha256:aa9a642ef65964c43c9fb48741c1cad595bbf6ec9d77e23e112ae519e5ad67b2",
-    "expiresAt": "2026-11-24T09:15:26Z",
-    "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14804300443/zip",
-    "headSha": "da8f2cec57e1acf5b8d833dce5cedf376e748617"
+    "bytes": 12291511,
+    "digest": "sha256:72f6a67738853284c1ee3ae7b994f4177996fa20fd8a2a1b73e5e04814216b1a",
+    "expiresAt": "2026-11-24T10:02:12Z",
+    "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14807675309/zip",
+    "headSha": "e386167601317f803146a849a6cc97e8127ae658"
   }
 }
