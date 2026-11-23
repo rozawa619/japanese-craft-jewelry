@@ -6,6 +6,7 @@ import { createHash } from 'node:crypto';
 import { resolveRetailerLink, policyForLink, linksInLocale } from '../src/lib/affiliate.ts';
 import {collectVisitValidationErrors,officialProductLinks,storeMapLinks} from '../src/lib/visits.ts';
 import {purchaseEvidenceFor} from '../src/lib/purchase-evidence.ts';
+import {materialCollections} from '../src/lib/material-collections.ts';
 import {validateMarketRetailerAnchor} from './market-link-policy.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -290,6 +291,20 @@ for (const file of sitemapFiles) {
 const robotsFile = resolve(dist, 'robots.txt');
 if (!existsSync(robotsFile)) errors.push('Missing robots.txt.');
 else if (!publicMode && !/^Disallow:\s*\/\s*$/im.test(readFileSync(robotsFile, 'utf8'))) errors.push('Preview robots.txt must disallow all crawling.');
+for (const {id,route} of materialCollections) {
+  const expected = new Set(catalog.products.filter(product=>product.publishStatus==='published'&&product.materialIds.includes(id)).map(product=>product.id));
+  for (const locale of ['en','ja']) {
+    const file = resolve(dist,locale,route,'index.html');
+    const items = pages.get(file)?.tags.filter(tag=>'data-product-card' in tag.attrs).map(tag=>tag.attrs['data-product-id']) ?? [];
+    if (items.length!==expected.size||new Set(items).size!==expected.size||items.some(item=>!expected.has(item))) {
+      fail(file,'material collection must include each published matching product exactly once');
+    }
+    const listing = pages.get(resolve(dist,locale,'objects/index.html'));
+    if (!listing?.tags.some(tag=>tag.name==='a'&&tag.attrs.href===`${base}${locale}/${route}`)) {
+      fail(file,'material collection must be linked from the localized product index');
+    }
+  }
+}
 for (const product of catalog.products) {
   for(const locale of ['en','ja']){
     const output=resolve(dist,`${locale}/objects/${product.slug}/index.html`);

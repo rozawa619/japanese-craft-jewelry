@@ -10,8 +10,8 @@ import {budgetForJapanPrice} from '../lib/shopping-filters';
 import MarketPurchaseLink from './MarketPurchaseLink.astro';
 import EditorialImage from './EditorialImage.astro';
 import {productImageFor} from '../lib/editorial-images';
-interface Props { product:Product; index?:number; locale?:Locale }
-const {product:p,index=0,locale='en'}=Astro.props;
+interface Props { product:Product; index?:number; locale?:Locale; showNumber?:boolean }
+const {product:p,index=0,locale='en',showNumber=true}=Astro.props;
 const detail=pagePath(`objects/${p.slug}/`,locale);
 const displayNumber=String(index+1).padStart(2,'0');
 const japanPrice=marketPricesFor(p.id).japan;
@@ -21,7 +21,7 @@ const merchant=catalogFor(locale).merchants.find(item=>p.merchantIds.includes(it
 const attribution=maker.id.includes('unidentified')&&merchant?t(locale,'Available at '+merchant.name,'取り扱い：'+merchant.name):maker.name;
 ---
 <article class="product-card" data-product-card data-product-id={p.id} data-type={p.productType.join(' ')} data-prefecture={p.prefectureIds.join(' ')} data-material={p.materialIds.join(' ')} data-craft={p.craftIds.join(' ')} data-budget={budgetForJapanPrice(japanPrice?.amount)} data-japan-price={japanPrice?.amount} data-editorial-order={index}>
- <a class="card-art-link" href={detail}><span class="sr-only">{t(locale,`View ${p.title}`,`${p.title}の詳細を見る`)}</span>{image?<EditorialImage image={image} locale={locale} compact/>:<OfficialPreview product={p} locale={locale} compact/>}<span class="card-number">{displayNumber}</span></a>
+ <a class="card-art-link" href={detail}><span class="sr-only">{t(locale,`View ${p.title}`,`${p.title}の詳細を見る`)}</span>{image?<EditorialImage image={image} locale={locale} compact/>:<OfficialPreview product={p} locale={locale} compact/>}{showNumber&&<span class="card-number">{displayNumber}</span>}</a>
  <div class="card-meta">{labels('productTypes',p.productType,locale)} <span>•</span> {labels('crafts',p.craftIds,locale)}</div>
  <h3><a href={detail}>{p.title}</a></h3>
  <p class="maker-name">{attribution}</p>

@@ -1,0 +1,59 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Disclosure from '../../../components/Disclosure.astro';
+import ProductCard from '../../../components/ProductCard.astro';
+import {pagePath, site} from '../../../config/site';
+import {productsFor} from '../../../lib/catalog';
+import {productImageFor} from '../../../lib/editorial-images';
+import {locales, t} from '../../../lib/i18n';
+import {materialCollections} from '../../../lib/material-collections';
+
+export function getStaticPaths() {
+  return locales.flatMap(locale => materialCollections.map(collection => ({
+    params: {lang: locale, material: collection.id},
+    props: {collection, locale},
+  })));
+}
+
+const {collection, locale} = Astro.props;
+const copy = collection.copy[locale];
+const items = productsFor(locale).filter(product => product.materialIds.includes(collection.id));
+const selectionLabel = t(locale, 'The selection', '商品セレクト');
+const selectionPath = pagePath('objects/', locale);
+const breadcrumbs = site.url ? [
+  {name: selectionLabel, url: new URL(selectionPath, site.url).href},
+  {name: copy.label, url: new URL(pagePath(collection.route, locale), site.url).href},
+] : undefined;
+---
+<Base
+  title={copy.title}
+  description={copy.description}
+  locale={locale}
+  breadcrumbs={breadcrumbs}
+  socialImage={productImageFor(items[0].id) ?? false}
+>
+  <div class="wrap page-bottom">
+    <header class="page-heading">
+      <div class="breadcrumbs">
+        <a href={selectionPath}>{selectionLabel}</a>
+        <span aria-hidden="true">/</span>
+        <span>{copy.label}</span>
+      </div>
+      <h1>{copy.title}</h1>
+      <p>{copy.description}</p>
+      <p>{copy.guide}</p>
+      <a class="text-link" href={pagePath(`objects/?material=${collection.id}#all-jewelry`, locale)}>
+        {t(locale, 'See price order and filters', '価格順・絞り込みを見る')}
+      </a>
+    </header>
+    <section aria-labelledby="material-products" data-material-collection={collection.id}>
+      <div class="section-heading">
+        <h2 id="material-products">{t(locale, `${items.length} pieces to compare`, `掲載商品 ${items.length}点`)}</h2>
+      </div>
+      <Disclosure productIds={items.map(product => product.id)} locale={locale} purchaseMarket="japan" />
+      <div class="product-grid">
+        {items.map((product, index) => <ProductCard product={product} index={index} locale={locale} showNumber={false} />)}
+      </div>
+    </section>
+  </div>
+</Base>

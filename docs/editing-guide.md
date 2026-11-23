@@ -43,6 +43,7 @@
 | 人物の着用AI画像／単体AI画像 | [editorial-images.json](../src/data/editorial-images.json)／[product-detail-images.json](../src/data/product-detail-images.json) |
 | 画像の権利・退役・生成記録 | [assets.json](assets.json)・[旧単体v14](image-generation-solo-v14.json)・[人物v16](image-generation-v16.json)・[単体v16](image-generation-solo-v16.json) |
 | 商品の編集順／産地代表 | [selection.ts](../src/config/selection.ts)／[region-selection.ts](../src/config/region-selection.ts) |
+| ガラスと木の素材ページの説明 | [material-collections.ts](../src/lib/material-collections.ts)。紹介例の掲載状態は商品台帳で確認する |
 | 地域紹介・種類を選ぶ前の一言 | [places/](../src/content/places/)の日英・[region-choice-notes.json](../src/data/region-choice-notes.json) |
 | 色・共通レイアウト | [global.css](../src/styles/global.css)。部品内の`<style>`にも個別設定あり |
 

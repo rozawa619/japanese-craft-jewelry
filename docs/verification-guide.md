@@ -39,6 +39,7 @@
 | 広告リンク/Privacy/CMP/外部送信 | `pnpm verify`、`check:privacy`、`check:ads` | 実際の状態と日英Privacy、最初の広告前開示、承認/host/fallback、送信/拒否/撤回。実広告導入は現在のoff版と別の実装 |
 | 依存・Node・URL境界・CI/CSP | runtime check、`pnpm audit --audit-level=low`、関連unit、`pnpm verify` | URLなら`outbound-security.test.ts`、CI権限、公開header/console、対象の実host。監査0件を完全安全としない |
 | origin/base/公開設定・SEO・配信 | `pnpm verify`、`pnpm readiness`、`check:seo` | preview/public、canonical/hreflang/sitemap/robots、公開meta、実URL、最終HTML/画像照合 |
+| 素材から探す専用ページ | `pnpm verify`、`pnpm check:seo` | 日英の素材別掲載商品、商品一覧とフッターからのリンク、320px幅、JavaScript無効時、公開サイトマップ |
 | 納品だけ | 最新sourceの書出し→ZIP→repository/export/ZIP集合・全SHA照合 | アプリ不変なら同じUIを再走査せず、記録/必須ファイル/秘密・退役物除外を確認 |
 
 関連unitだけ先に実行する例は`node --experimental-strip-types --test tests/market-prices.test.ts`。最終の必要範囲は変更の広がりで決める。CIは独立した公開gateであり、ローカルの小修正検査を省略する理由にも、毎回497を走らせる理由にもしない。
