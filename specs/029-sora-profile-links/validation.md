@@ -12,4 +12,4 @@
 
 - アプリ `c9537cf6b40135001c6fdb9bb05700f33a156399` のビルドとPagesへのデプロイが成功しました。公開日は2026-11-23（日本時間）です。 [GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45036494669)
 - 公開時に日英のSORAページ、TikTok用・Instagram用のURL、日英の商品・産地ページ、登録画像、サイトマップの計12件がHTTP 200を返し、生成物とバイト単位で一致しました。
-- 前回の本番設定の生成物は541ファイルで、HTML396ページとWebP136点を含みます。個別ファイルのSHA-256一覧は前回の作業環境を再開できず、引き継ぎ資料に収録できていません。配信アーカイブのIDとGitHub記録のチェックサムは[公開記録](../../docs/deployment-results.json)にあります。全生成物のハッシュ照合に使える台帳は[0.20.1版](../../docs/purchase-routes-v28-build-manifest.json)です。0.21.0で全件照合を再実行する際には、その版のハッシュ一覧が必要です。
+- 作業環境から[0.21.0の生成ファイル一覧](../../docs/sora-profile-v29-build-manifest.json)を復旧し、本番設定の生成物541件（HTML396ページ・WebP136点を含む）のファイル名、サイズ、SHA-256を全件照合しました。公開URL12件の応答も同じ記録に照合しました。

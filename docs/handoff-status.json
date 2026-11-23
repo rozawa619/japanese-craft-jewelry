@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23T00:00:35.868Z",
+  "updatedAt": "2026-11-23T00:21:44.230Z",
   "entryPoint": "START_HERE.md",
   "project": {
     "name": "Japanese Craft Jewelry",
@@ -53,8 +53,8 @@
     },
     "report": "docs/deployment-results.json",
     "verification": "specs/029-sora-profile-links/validation.md",
-    "outputManifest": null,
-    "outputManifestStatus": "per_file_hashes_not_persisted",
+    "outputManifest": "docs/sora-profile-v29-build-manifest.json",
+    "outputManifestStatus": "verified_build_and_public_sample",
     "previousFullOutputManifest": "docs/purchase-routes-v28-build-manifest.json",
     "buildArtifact": {
       "id": 14759083435,
@@ -63,7 +63,8 @@
       "bytes": 12040546,
       "digest": "sha256:2cdb892b88c4ffcaad23d3d16fda1e1669fd5839ee33164e88a100cf54e30324",
       "expiresAt": "2026-11-23T15:07:25Z"
-    }
+    },
+    "outputManifestRecoveredAt": "2026-11-23T00:21:44.230Z"
   },
   "snapshot": {
     "publishedProducts": 69,

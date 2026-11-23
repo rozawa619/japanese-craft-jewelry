@@ -50,7 +50,7 @@
     "kanagawaRegionalRetailer": 4,
     "profileLandingPages": 2
   },
-  "outputManifest": null,
+  "outputManifest": "docs/sora-profile-v29-build-manifest.json",
   "verification": "specs/029-sora-profile-links/validation.md",
   "verificationSummary": {
     "unitTests": 149,
@@ -58,9 +58,10 @@
     "generatedHtml": 396,
     "canonicalUrls": 380,
     "localChromiumCases": 10,
-    "matchedPublicResponses": 12
+    "matchedPublicResponses": 12,
+    "matchedGeneratedFiles": 541
   },
-  "outputManifestStatus": "per_file_hashes_not_persisted",
+  "outputManifestStatus": "verified_build_and_public_sample",
   "previousFullOutputManifest": "docs/purchase-routes-v28-build-manifest.json",
   "buildArtifact": {
     "id": 14759083435,
@@ -69,5 +70,6 @@
     "bytes": 12040546,
     "digest": "sha256:2cdb892b88c4ffcaad23d3d16fda1e1669fd5839ee33164e88a100cf54e30324",
     "expiresAt": "2026-11-23T15:07:25Z"
-  }
+  },
+  "outputManifestRecoveredAt": "2026-11-23T00:21:44.230Z"
 }
