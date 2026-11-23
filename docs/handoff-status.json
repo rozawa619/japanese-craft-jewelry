@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23T00:21:44.230Z",
+  "updatedAt": "2026-11-23T00:37:26.461Z",
   "entryPoint": "START_HERE.md",
   "project": {
     "name": "Japanese Craft Jewelry",
@@ -16,7 +16,7 @@
     "status": "ready",
     "basedOnDocumentationCommit": "b6ac11fcf589daa1b7b4786bc98702b36bfee482",
     "activeSiteImplementationTask": null,
-    "nextAction": "Use the SORA profile links in specification 029. Commercial hosting, BECOS program terms and Search Console ownership remain open.",
+    "nextAction": "Use the published material guides and SORA profile links. Commercial hosting, BECOS program terms and Search Console ownership remain open.",
     "currentGitHeadCommand": "git rev-parse HEAD",
     "verificationReport": "docs/git-handoff-stage-results.json",
     "validatedSourceCommit": "537ee24ca021a9b61801108a4689e22936a3a08a",
@@ -29,16 +29,16 @@
     }
   },
   "production": {
-    "version": "0.21.0",
-    "applicationCommit": "c9537cf6b40135001c6fdb9bb05700f33a156399",
+    "version": "0.22.0",
+    "applicationCommit": "7e7823eab3bbd1aaee38db575a862779c1047bc8",
     "actions": {
-      "id": 45036494669,
-      "headSha": "c9537cf6b40135001c6fdb9bb05700f33a156399",
+      "id": 45089540413,
+      "headSha": "7e7823eab3bbd1aaee38db575a862779c1047bc8",
       "status": "completed",
       "conclusion": "success",
-      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45036494669",
-      "deploymentCompletedAt": "2026-11-22T15:07:43Z",
-      "observedAt": "2026-11-23T00:00:35.868Z"
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45089540413",
+      "deploymentCompletedAt": "2026-11-23T00:35:10Z",
+      "observedAt": "2026-11-23T00:37:26.461Z"
     },
     "urls": {
       "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
@@ -49,22 +49,26 @@
       "yamagata": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/yamagata/",
       "oita": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/oita/",
       "soraJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/sora/",
-      "soraEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/sora/"
+      "soraEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/sora/",
+      "glassJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/materials/glass/",
+      "glassEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/materials/glass/",
+      "woodJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/materials/wood/",
+      "woodEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/materials/wood/"
     },
     "report": "docs/deployment-results.json",
-    "verification": "specs/029-sora-profile-links/validation.md",
-    "outputManifest": "docs/sora-profile-v29-build-manifest.json",
+    "verification": "specs/030-material-guides/validation.md",
+    "outputManifest": "docs/material-guides-v30-build-manifest.json",
     "outputManifestStatus": "verified_build_and_public_sample",
-    "previousFullOutputManifest": "docs/purchase-routes-v28-build-manifest.json",
+    "previousFullOutputManifest": "docs/sora-profile-v29-build-manifest.json",
     "buildArtifact": {
-      "id": 14759083435,
+      "id": 14780323869,
       "name": "github-pages",
-      "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14759083435/zip",
-      "bytes": 12040546,
-      "digest": "sha256:2cdb892b88c4ffcaad23d3d16fda1e1669fd5839ee33164e88a100cf54e30324",
-      "expiresAt": "2026-11-23T15:07:25Z"
-    },
-    "outputManifestRecoveredAt": "2026-11-23T00:21:44.230Z"
+      "bytes": 12078216,
+      "digest": "sha256:c6b01c26bd1ae24a7f76251db6205e533f167788148d141a021eaec61e727a8c",
+      "expiresAt": "2026-11-24T00:34:52Z",
+      "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14780323869/zip",
+      "headSha": "7e7823eab3bbd1aaee38db575a862779c1047bc8"
+    }
   },
   "snapshot": {
     "publishedProducts": 69,
@@ -148,7 +152,8 @@
     "hero": "src/components/RegionHero.astro",
     "directoryMap": "src/components/JapanJewelryMap.astro",
     "regionalPhotos": "src/components/RegionSelection.astro",
-    "profileSelection": "src/config/selection.ts"
+    "profileSelection": "src/config/selection.ts",
+    "materialCollections": "src/lib/material-collections.ts"
   },
   "completedSpecifications": [
     "018-national-jewelry-expansion",
@@ -161,7 +166,8 @@
     "026-kanagawa-styling-refresh",
     "027-regional-craft-picks",
     "028-purchase-routes",
-    "029-sora-profile-links"
+    "029-sora-profile-links",
+    "030-material-guides"
   ],
   "historicalOnlyScripts": [
     {

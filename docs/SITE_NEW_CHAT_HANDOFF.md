@@ -13,6 +13,8 @@
 
 ## 現在のサイトと公開履歴
 
+ガラスと木の素材ページを含む v0.22.0 を2026-11-23（JST）に公開しました。商品一覧とフッターから、日英のガラス14点・木13点の比較へ進めます。 [仕様030](../specs/030-material-guides/spec.md) · [030の検証記録](../specs/030-material-guides/validation.md)
+
 2026-11-23（JST）に日英のSORA案内ページを v0.21.0 で公開しました。[仕様029](../specs/029-sora-profile-links/spec.md)にプロフィール欄用のURLと特集商品の設定箇所、[029の検証記録](../specs/029-sora-profile-links/validation.md)に公開12件の照合結果を記録しています。動画の制作・投稿状況は動画台帳で管理します。
 
 [仕様028](../specs/028-purchase-routes/spec.md)では公式通販とカタログ・取扱店への案内を整理しました。購入ボタンと確認日の実測は[028の検証記録](../specs/028-purchase-routes/validation.md)にあります。
@@ -35,7 +37,7 @@
 | --- | --- |
 | 開始順序と制約 | [START_HERE](../START_HERE.md)、[AGENTS](../AGENTS.md)、[README](../README.md) |
 | 状態（機械可読） | [docs/handoff-status.json](handoff-status.json) |
-| 公開appのSHA/URL/検証 | [docs/deployment-results.json](deployment-results.json)、[029の検証記録](../specs/029-sora-profile-links/validation.md) |
+| 公開appのSHA/URL/検証 | [docs/deployment-results.json](deployment-results.json)、[030の検証記録](../specs/030-material-guides/validation.md) |
 | 完了点/未完了 | [docs/handoff.md](handoff.md)、[docs/remaining-task-audit-v17.md](remaining-task-audit-v17.md) |
 | 技術構成と更新箇所 | [docs/architecture.md](architecture.md)、[docs/editing-guide.md](editing-guide.md) |
 | 構築・検証 | [docs/setup.md](setup.md)、[docs/verification-guide.md](verification-guide.md)、[package.json](../package.json) |

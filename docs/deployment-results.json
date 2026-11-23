@@ -1,21 +1,21 @@
 {
-  "version": "0.21.0",
-  "specification": "029-sora-profile-links",
+  "version": "0.22.0",
+  "specification": "030-material-guides",
   "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
   "branch": "main",
   "status": "deployed_and_verified",
-  "recordedAt": "2026-11-23T00:00:35.868Z",
-  "applicationCommit": "c9537cf6b40135001c6fdb9bb05700f33a156399",
+  "recordedAt": "2026-11-23T00:37:26.461Z",
+  "applicationCommit": "7e7823eab3bbd1aaee38db575a862779c1047bc8",
   "actions": {
-    "id": 45036494669,
-    "headSha": "c9537cf6b40135001c6fdb9bb05700f33a156399",
+    "id": 45089540413,
+    "headSha": "7e7823eab3bbd1aaee38db575a862779c1047bc8",
     "status": "completed",
     "conclusion": "success",
-    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45036494669",
-    "deploymentCompletedAt": "2026-11-22T15:07:43Z",
-    "observedAt": "2026-11-23T00:00:35.868Z"
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45089540413",
+    "deploymentCompletedAt": "2026-11-23T00:35:10Z",
+    "observedAt": "2026-11-23T00:37:26.461Z"
   },
-  "previousRecord": "docs/deployment-v28-before-sora-profile-links.json",
+  "previousRecord": "docs/deployment-v29-before-material-guides.json",
   "publicUrls": {
     "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
     "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
@@ -25,7 +25,11 @@
     "yamagata": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/yamagata/",
     "oita": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/oita/",
     "soraJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/sora/",
-    "soraEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/sora/"
+    "soraEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/sora/",
+    "glassJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/materials/glass/",
+    "glassEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/materials/glass/",
+    "woodJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/materials/wood/",
+    "woodEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/materials/wood/"
   },
   "content": {
     "publishedProducts": 69,
@@ -48,28 +52,35 @@
     "existingImageBytesRetained": 136,
     "kanagawaWorkshopLinked": 8,
     "kanagawaRegionalRetailer": 4,
-    "profileLandingPages": 2
+    "profileLandingPages": 2,
+    "materialCollections": 2,
+    "materialCollectionPages": 4,
+    "materialCollectionProducts": {
+      "glass": 14,
+      "wood": 13
+    }
   },
-  "outputManifest": "docs/sora-profile-v29-build-manifest.json",
-  "verification": "specs/029-sora-profile-links/validation.md",
+  "outputManifest": "docs/material-guides-v30-build-manifest.json",
+  "verification": "specs/030-material-guides/validation.md",
   "verificationSummary": {
     "unitTests": 149,
-    "generatedFiles": 541,
-    "generatedHtml": 396,
-    "canonicalUrls": 380,
-    "localChromiumCases": 10,
-    "matchedPublicResponses": 12,
-    "matchedGeneratedFiles": 541
+    "generatedFiles": 545,
+    "generatedHtml": 400,
+    "canonicalUrls": 384,
+    "localChromiumCases": 16,
+    "matchedPublicResponses": 18,
+    "matchedGeneratedFiles": 545,
+    "preservedImageHashes": 136
   },
   "outputManifestStatus": "verified_build_and_public_sample",
-  "previousFullOutputManifest": "docs/purchase-routes-v28-build-manifest.json",
+  "previousFullOutputManifest": "docs/sora-profile-v29-build-manifest.json",
   "buildArtifact": {
-    "id": 14759083435,
+    "id": 14780323869,
     "name": "github-pages",
-    "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14759083435/zip",
-    "bytes": 12040546,
-    "digest": "sha256:2cdb892b88c4ffcaad23d3d16fda1e1669fd5839ee33164e88a100cf54e30324",
-    "expiresAt": "2026-11-23T15:07:25Z"
-  },
-  "outputManifestRecoveredAt": "2026-11-23T00:21:44.230Z"
+    "bytes": 12078216,
+    "digest": "sha256:c6b01c26bd1ae24a7f76251db6205e533f167788148d141a021eaec61e727a8c",
+    "expiresAt": "2026-11-24T00:34:52Z",
+    "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14780323869/zip",
+    "headSha": "7e7823eab3bbd1aaee38db575a862779c1047bc8"
+  }
 }
