@@ -1,6 +1,6 @@
 # SORA / Japanese Craft Jewelry — サイト構築用・新チャット引継ぎ
 
-**作成：2026-11-22（JST）**  
+**最終更新 2026-11-23（JST）**  
 **適用範囲：Webサイト構築・商品追加・UX/SEO・運用・収益化準備の引継ぎ**  
 **動画制作は [動画専用引継ぎ](video/NEW_CHAT_HANDOFF.md) で別管理する。**
 
@@ -13,9 +13,9 @@
 
 ## 現在のサイトと公開履歴
 
-SNSのプロフィールからは[日英のSORAページと媒体別URL](../specs/029-sora-profile-links/spec.md)を使えます。特集の掲載順は `src/config/selection.ts`、動画の制作・投稿状況は動画台帳で管理します。
+2026-11-23（JST）に日英のSORA案内ページを v0.21.0 で公開しました。[仕様029](../specs/029-sora-profile-links/spec.md)にプロフィール欄用のURLと特集商品の設定箇所、[029の検証記録](../specs/029-sora-profile-links/validation.md)に公開12件の照合結果を記録しています。動画の制作・投稿状況は動画台帳で管理します。
 
-[仕様028](../specs/028-purchase-routes/spec.md)で公式通販とカタログ・取扱店への案内を整理しました。最新の配信版・SHA・Actionsは[公開記録](deployment-results.json)、購入ボタンと確認日の実測は[028の検証記録](../specs/028-purchase-routes/validation.md)を参照してください。
+[仕様028](../specs/028-purchase-routes/spec.md)では公式通販とカタログ・取扱店への案内を整理しました。購入ボタンと確認日の実測は[028の検証記録](../specs/028-purchase-routes/validation.md)にあります。
 
 > **以下は2026-11-19のデプロイ成功記録 v0.20.0 のスナップショット。** 最新mainのHEADは、その後の文書更新を含むため、実公開アプリのバージョン・SHAと一致しないことがある。新チャットでは必ず再取得し、実URLの確認と区別する。
 
@@ -35,7 +35,7 @@ SNSのプロフィールからは[日英のSORAページと媒体別URL](../spec
 | --- | --- |
 | 開始順序と制約 | [START_HERE](../START_HERE.md)、[AGENTS](../AGENTS.md)、[README](../README.md) |
 | 状態（機械可読） | [docs/handoff-status.json](handoff-status.json) |
-| 公開appのSHA/URL/検証 | [docs/deployment-results.json](deployment-results.json)、[028 validation](../specs/028-purchase-routes/validation.md) |
+| 公開appのSHA/URL/検証 | [docs/deployment-results.json](deployment-results.json)、[029の検証記録](../specs/029-sora-profile-links/validation.md) |
 | 完了点/未完了 | [docs/handoff.md](handoff.md)、[docs/remaining-task-audit-v17.md](remaining-task-audit-v17.md) |
 | 技術構成と更新箇所 | [docs/architecture.md](architecture.md)、[docs/editing-guide.md](editing-guide.md) |
 | 構築・検証 | [docs/setup.md](setup.md)、[docs/verification-guide.md](verification-guide.md)、[package.json](../package.json) |

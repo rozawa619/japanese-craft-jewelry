@@ -146,7 +146,7 @@ pnpm --versionはpnpm自体が使うNode版の証明ではなく、pnpm exec nod
 
 [検証専用workflow](../.github/workflows/verify-handoff.yml)はGitHub Actionsから手動実行できます。新しいrunnerのcheckoutからNode・固定pnpm・依存導入・通常verify・SEO・元PNGなしモデルQA・文書・公開出力の全SHAを確認します。権限はcontents:readのみで、Pagesへの公開は行いません。結果と対象SHAを確認してから引継ぎ状態へ記録してください。
 
-ローカルでは`node scripts/check-handoff-portability.mjs --dist`で、引継ぎ入口・Git内proofのbytes・現在記録された公開manifestとの全出力一致を確認できます。`--preflight`はnode_modules等がまだないfresh clone専用です。将来アプリを変更したら、比較対象の公開manifestも実際の検証結果に合わせて更新します。
+依存と生成物がまだないfresh cloneでは、`node scripts/check-handoff-portability.mjs --preflight`で引継ぎ入口とGit内の検証資料を確認します。`--dist`で全生成物を照合するには、対象の公開版と同じ版の個別ハッシュ一覧が必要です。v0.21.0はその一覧が未収録のため、手動workflowの最終照合も保留です。公開12件の照合結果と配信アーカイブの記録は[029の検証記録](../specs/029-sora-profile-links/validation.md)を参照してください。
 
 ## 納品ZIPを作る
 
