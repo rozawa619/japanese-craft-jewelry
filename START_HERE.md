@@ -2,6 +2,8 @@
 
 このリポジトリとGitHub上の資料から、Japanese Craft Jewelryの保守を再開できます。公開版と配信元は[公開記録](docs/deployment-results.json)で確認できます。[仕様028](specs/028-purchase-routes/spec.md)で、公式通販と取扱店への案内を商品ごとの購入根拠に合わせました。
 
+[仕様033](specs/033-sora-video-jewelry/spec.md)で、SORAの日英プロフィールページに動画で紹介した商品の一覧を追加しました。TikTokとInstagramのプロフィール向けURLも仕様033で確認できます。
+
 [仕様032](specs/032-purchase-selections/spec.md)で、販売ページの選択名とカタログの掲載名を商品詳細・商品カードに表示しました。対象と照合結果は[032の検証記録](specs/032-purchase-selections/validation.md)で確認できます。
 
 [仕様031](specs/031-product-image-disclosure/spec.md)で、商品画像から実物の確認へ進む日英の案内を整えました。商品詳細の主購入リンクとスマートフォンの固定欄、商品カードに表示します。 [検証記録](specs/031-product-image-disclosure/validation.md)

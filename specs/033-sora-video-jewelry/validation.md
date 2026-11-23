@@ -9,3 +9,9 @@
 - プロフィールのCSSは同一オリジンのファイル1点として生成されました。他の398ページはCSPのインラインスタイル用ハッシュ1件が減った点を除いて一致し、既存のCSSファイルとサイトマップも一致しました。
 - ヘッドレスChromiumで26ケースを確認しました。日英の幅320・390・768・1440pxで、冒頭のリンク、画像の元比率、AI表記、TikTok・Instagramのクエリとハッシュを含む日英切替を検査しました。JavaScript無効時の幅320・390pxからも商品ページへ進めました。幅390pxの日英でaxeの違反は0件でした。
 - TikTokやInstagramの埋め込みは使わず、表示検証で外部通信は発生しませんでした。実機Safari、各SNSのプロフィール欄の掲載状態、流入実績は未確認です。
+
+## 公開後の検証
+
+- v0.23.0（アプリ `ebdc17aa37c72669a8dc1466af50ae50a8f8f7f6`）のビルドとGitHub Pagesへの配信が、2026-11-23 20:49（JST）に成功しました。 [GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45168502208)
+- 日英のプロフィールページ、TikTok・Instagramのクエリ付きURL、掲載した7商品の日英詳細、CSS5点・画像2点・サイトマップとrobots.txtの計29応答がHTTP 200で本番生成物と一致しました。
+- Actionsの配信アーカイブのSHA-256と、その中の546ファイルのSHA-256を照合しました。 [生成ファイル一覧](../../docs/sora-video-jewelry-v33-build-manifest.json) · [公開記録](../../docs/deployment-results.json)
