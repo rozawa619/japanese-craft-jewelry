@@ -6,11 +6,11 @@
 
 ### 最近のサイト変更
 
-[仕様035](specs/035-national-travel-discovery/spec.md)のソースでは、注文受付を確認した19県の作品を加え、47都道府県・88商品を掲載対象にしています。「旅先からジュエリーを探す」では首都圏などの地方→都道府県→工房・販売店のエリア→商品へ進めます。 [購入根拠の再確認](docs/research/national-listings-2026-11-24.md) · [検証記録](specs/035-national-travel-discovery/validation.md)
+公開版は **v0.24.0** です。[仕様035](specs/035-national-travel-discovery/spec.md)で注文受付を確認した19県の19商品を加え、47都道府県・公開88商品（登録94、下書き6）になりました。「旅先からジュエリーを探す」では首都圏などの地方→都道府県→工房・販売店のエリア→商品へ進めます。2026-11-24 14:04 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45330626349)の配信が完了しました。 [購入根拠の再確認](docs/research/national-listings-2026-11-24.md) · [現行版の検証記録](specs/035-national-travel-discovery/validation.md)
 
 このリポジトリとGitHub上の資料から、Japanese Craft Jewelryの保守を再開できます。公開版と配信元は[公開記録](docs/deployment-results.json)で確認できます。[仕様028](specs/028-purchase-routes/spec.md)で、公式通販と取扱店への案内を商品ごとの購入根拠に合わせました。
 
-[仕様034](specs/034-kyoto-video-jewelry/spec.md)で、京都の公開動画と照合した4商品を日英のSORAプロフィールに追加し、神奈川7商品の購入案内を公式情報と再照合しました。スマートフォン相当の操作結果は[034の検証記録](specs/034-kyoto-video-jewelry/validation.md)を参照してください。
+[仕様034](specs/034-kyoto-video-jewelry/spec.md)で、京都の公開動画と照合した4商品を日英のSORAプロフィールに追加し、神奈川7商品の購入案内を公式情報と再照合しました。034当時のスマートフォン相当の操作結果は[034の検証記録](specs/034-kyoto-video-jewelry/validation.md)を参照してください。
 
 [仕様033](specs/033-sora-video-jewelry/spec.md)で、SORAの日英プロフィールページに動画で紹介した商品の一覧を追加しました。TikTokとInstagramのプロフィール向けURLも仕様033で確認できます。
 
@@ -33,7 +33,7 @@ Instagramリールの紹介文は、[キャプションテンプレート](docs/
 2. [handoff-status.json](docs/handoff-status.json)：現在の状態、公開app、完了済み作業、正本、外部情報が必要な残条件。
 3. [現在状態](docs/handoff.md)と[編集ガイド](docs/editing-guide.md)：今回触るファイルを特定。
 4. [セットアップ](docs/setup.md)と[検証ガイド](docs/verification-guide.md)：起動と変更に応じた検査。
-5. 該当機能の仕様を読む。購入導線は[028](specs/028-purchase-routes/spec.md)、直近の商品追加は[027](specs/027-regional-craft-picks/spec.md)、Git引継ぎの基盤は[024](specs/024-git-ai-handoff/spec.md)。
+5. 該当機能の仕様を読む。全国掲載と旅先検索は[035](specs/035-national-travel-discovery/spec.md)、購入導線は[028](specs/028-purchase-routes/spec.md)、Git引継ぎの基盤は[024](specs/024-git-ai-handoff/spec.md)。
 
 全世代の検証JSONを最初から読む必要はありません。GitのHEADは文書更新を含み、実際に公開されたappのSHAとは異なる場合があります。[deployment-results.json](docs/deployment-results.json)が公開の正本です。
 
@@ -55,7 +55,7 @@ pnpm dev
 
 ## 画像原本・過去の納品物
 
-[画像原本と配布資料](docs/handoff-assets.md)からGitHub上のZIPを取得できます。[配布一覧](docs/handoff-assets.json)にURL・容量・SHA256を記録し、`node scripts/fetch-handoff-asset.mjs --list`で一覧を表示できます。原本が必要な画像編集時だけダウンロードしてください。公開中の136画像は既に`public/images/`にあります。
+[画像原本と配布資料](docs/handoff-assets.md)からGitHub上のZIPを取得できます。[配布一覧](docs/handoff-assets.json)にURL・容量・SHA256を記録し、`node scripts/fetch-handoff-asset.mjs --list`で一覧を表示できます。原本が必要な画像編集時だけダウンロードしてください。公開中のAI画像174枚（人物86＋商品単体88）は既に`public/images/`にあります。
 
 023の`apply-japanese-model-styling.mjs`は完了済み22枚の移行専用、`check-japanese-model-preservation.mjs`は旧画像を残した当時のcheckout専用です。fresh cloneの起動や通常編集の必須手順にはしません。新しい画像変更は新しい仕様/manifestで記録し、023の固定集合・過去の証拠を書き換えて通しません。
 

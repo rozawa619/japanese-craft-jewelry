@@ -22,12 +22,12 @@
 
 | 項目 | 2026-11-24（JST）確認時点 |
 | --- | --- |
-| アプリ | **v0.23.1**、アプリSHA `803c42ad59b6e73969c669ffb60814e73cfbc7e8` |
-| 配信 | GitHub Pages。2026-11-24 01:22 JSTの [GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45215657620) が成功 |
-| 照合 | 生成物546ファイル、正規URL384件。日英・縦横のWebKit操作4ケース、購入表示14ケース、JavaScript無効のリンク2ケース、公開応答34件を確認。 [検証記録](../specs/034-kyoto-video-jewelry/validation.md)・[ファイル一覧](kyoto-video-jewelry-v34-build-manifest.json) |
-| 商品・地域 | 登録75点、公開69点、下書き6点。28都道府県掲載。最多は神奈川8点、京都7点、東京5点。北海道・千葉・大阪・山梨は各4点 |
-| 工芸・購入先 | 公開商品に紐づく技法40件（全42件）、登録出典327件。38店舗、店舗案内付き61商品。購入根拠は公式通販60点、店舗とカタログ9点 |
-| 画像 | AI画像136点。着用67点、商品単体69点。着用画像は架空の日本人成人女性として生成 |
+| アプリ | **v0.24.0**、アプリSHA `a9495260a82bda1a886945dbcfa2286ce26330c9` |
+| 配信 | GitHub Pages。2026-11-24 14:04 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45330626349)の配信が完了 |
+| 照合 | 日英の公開URLがHTTP 200で応答し、旅先検索と47都道府県へのリンクを確認。詳細な確認範囲と未確認事項は[035の検証記録](../specs/035-national-travel-discovery/validation.md)・[公開記録](deployment-results.json)を参照 |
+| 商品・地域 | 登録94点、公開88点、下書き6点。47都道府県掲載 |
+| 工芸・購入先 | 公開商品に紐づく技法59件（全61件）、登録出典390件。46店舗、店舗案内付き69商品。購入根拠は公式通販79点、店舗とカタログ9点 |
+| 画像 | AI画像174点。着用86点、商品単体88点。着用画像は架空の日本人成人女性として生成 |
 | 広告 | 実アフィリエイトは未申請で通常の公式リンクを使用。AdSenseはオフ。 [提携準備](affiliate-readiness.md)・[運営上の残条件](remaining-task-audit-v17.md) |
 
 Astro 7・TypeScript・Zodを使う日英の静的サイトです。日本地図から産地を選び、商品一覧の絞り込み、工芸・素材のページ、商品詳細へ進めます。商品詳細には価格、公式通販または取扱店の案内、出典を掲載します。店舗のGoogle Mapsは利用者の許可に応じて表示します。サイトの運営範囲は紹介と外部の販売先への案内です。 [技術構成](architecture.md)
@@ -44,6 +44,7 @@ Astro 7・TypeScript・Zodを使う日英の静的サイトです。日本地図
 | [032](../specs/032-purchase-selections/spec.md) | 照合済み10商品の色・金具などの選択名やカタログ掲載名。凛然「星華 琥珀」の国内・海外価格に1組の販売単位 |
 | [033](../specs/033-sora-video-jewelry/spec.md) | 日英 `/sora/#video-jewelry` で、照合済みのTikTok公開10投稿に対応する神奈川7商品から詳細へ移動 |
 | [034](../specs/034-kyoto-video-jewelry/spec.md) | 京都4商品を動画導線に追加し、神奈川7商品と合わせて11商品。神奈川7商品の購入案内とスマートフォン相当の操作を検証 |
+| [035](../specs/035-national-travel-discovery/spec.md) | 注文受付を再確認した19県の19商品を加え、47都道府県・88商品を公開。地方→都道府県→訪問エリア→商品を選ぶ日英の旅先検索 |
 
 ### 編集・検証の正本
 
@@ -58,7 +59,7 @@ Astro 7・TypeScript・Zodを使う日英の静的サイトです。日本地図
 
 ## 次の候補と残条件
 
-### v0.24.0のソース
+### 全国掲載と旅先検索（v0.24.0公開済み）
 
 全国拡充と日英の旅先検索は[仕様035](../specs/035-national-travel-discovery/spec.md)です。47都道府県から探せるようにし、神奈川は箱根・鎌倉、東京は訪問先を確認した各エリアから商品に進めます。都道府県とエリアの表示用データは [travel-areas.ts](../src/config/travel-areas.ts) にあります。新規19商品の注文確認は [一次情報の記録](research/national-listings-2026-11-24.md)、画像の作成条件は [着用イメージの記録](image-generation-styling-v35.json) を参照してください。
 
@@ -67,9 +68,9 @@ Astro 7・TypeScript・Zodを使う日英の静的サイトです。日本地図
 | 検索流入の準備 | 公開側のcanonical・hreflang・サイトマップを確認。Search Consoleの対象プロパティは確認時のGoogleアカウントで閲覧権限なし。Googleの登録状況と実績の確認には、権限のあるアカウントが必要。 [検証ガイド](verification-guide.md) |
 | 動画から商品への案内 | TikTok公開14投稿から京都4・神奈川7商品へ案内。今後の公開投稿と商品IDを照合できた分を台帳へ追加。Instagramの個別投稿との対応と、プロフィール欄の掲載・実流入は確認待ち。 [仕様034](../specs/034-kyoto-video-jewelry/spec.md) |
 | 購入時の情報差を減らす | 神奈川の動画掲載7商品を再照合済み。他の商品は同じ商品・色・金具・市場・販売単位で、販売元の情報と照合する。 [仕様028](../specs/028-purchase-routes/spec.md)・[仕様032](../specs/032-purchase-selections/spec.md) |
-| 全国版の配信 | 47都道府県の作業版を公開するときは、掲載した19点の注文根拠と[035の検証](../specs/035-national-travel-discovery/validation.md)を確認し、公開記録を更新する。 |
+| 全国版の継続更新 | 47都道府県版は配信済み。商品の追加・差し替えを依頼された場合は、商品・選択名・販売単位・確認日を一次情報と照合し、[035の検証](../specs/035-national-travel-discovery/validation.md)と公開記録を更新する。 |
 | 収益化の準備 | 商用ホストの適合、BECOS等の提携条件、実アカウントの承認、広告の同意管理や画像使用条件を確認。 [申請前の確認](pre-application-checklist.md) |
-| 運用と端末の検証 | iPhone 15相当のWebKitで購入導線・日英切替を確認済み。実機iPhone／SafariとSNSのアプリ内ブラウザーは確認待ち。 [034の検証](../specs/034-kyoto-video-jewelry/validation.md) |
+| 運用と端末の検証 | v0.24.0の確認範囲は[035の検証](../specs/035-national-travel-discovery/validation.md)を参照。iPhone 15相当のWebKitでの購入導線・日英切替は[034当時の記録](../specs/034-kyoto-video-jewelry/validation.md)。実機iPhone／SafariとSNSのアプリ内ブラウザーは確認待ち。 |
 
 ## 実装を再開するとき
 
@@ -93,7 +94,7 @@ https://github.com/rozawa619/japanese-craft-jewelry/blob/main/docs/SITE_NEW_CHAT
 日本語 https://rozawa619.github.io/japanese-craft-jewelry/ja/
 英語 https://rozawa619.github.io/japanese-craft-jewelry/en/
 
-まず最新のmainを確認し、引継ぎ書、START_HERE.md、AGENTS.md、docs/handoff-status.json、docs/deployment-results.jsonを実際に読んでください。mainのHEAD、実公開アプリのバージョンとSHA、GitHub Actions、公開URLの状態を照合してください。引継ぎ時点はv0.23.1、公開69商品、掲載28都道府県です。日英のSORAプロフィールページから公開動画と照合した京都4・神奈川7商品の詳細へ進めます。以後の変更があれば、GitHubの最新記録と実URLを優先してください。
+まず最新のmainを確認し、引継ぎ書、START_HERE.md、AGENTS.md、docs/handoff-status.json、docs/deployment-results.jsonを実際に読んでください。mainのHEAD、実公開アプリのバージョンとSHA、GitHub Actions、公開URLの状態を照合してください。引継ぎ時点はv0.24.0、公開88商品・登録94商品・下書き6商品、掲載47都道府県です。日英の旅先検索で地方→都道府県→訪問エリア→商品へ進めます。SORAプロフィールからは公開動画と照合した京都4・神奈川7商品の詳細へ進めます。以後の変更があれば、GitHubの最新記録と実URLを優先してください。
 
 最初はコードと公開設定を変更せず、現在地、確認できたことと未確認事項、次の優先候補とおすすめの1件を報告してください。各候補に効果、変更対象、依存条件、検証方法を添えてください。次の作業はこちらで指定します。
 

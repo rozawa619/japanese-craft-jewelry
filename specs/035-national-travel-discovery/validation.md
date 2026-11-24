@@ -13,4 +13,17 @@
 
 実行コマンドは `pnpm verify`、`pnpm check:seo`、`pnpm readiness`、`pnpm check:travel` です。ブラウザーはChromeで画面幅を設定し、店の注文画面では注文の送信を行わず、表示ページとリンク先を確認しました。
 
-実際の配信バージョンとActionsは [公開記録](../../docs/deployment-results.json) を参照してください。
+## 公開後の確認
+
+2026年11月24日14:04 JSTに、GitHub Pagesでv0.24.0の配信が完了しました。配信元は `a9495260a82bda1a886945dbcfa2286ce26330c9` です。 [GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45330626349) · [公開記録](../../docs/deployment-results.json)
+
+公開サイトの日本語トップから、iPhone 13相当の390×844 CSSピクセル・タッチ有効のChromiumで確認しました。
+
+| 操作 | 結果 |
+| --- | --- |
+| 首都圏 → 神奈川 → 箱根 | 神奈川ページの箱根欄から[浜松屋の寄木ピアス](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/)の商品詳細へ到達 |
+| 首都圏 → 神奈川 → 鎌倉 | 神奈川ページの鎌倉欄から[陽雅堂の椿のブローチ](https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/yogado-kamakura-bori-camellia-brooch/)の商品詳細へ到達 |
+
+両方で画像の読み込み、公式商品リンクのURL、横方向にはみ出さないことを確認しました。日英のトップに47都道府県のリンクがあり、言語切替後も選択が保持されます。日本語の通常リンクはJavaScript無効でもキーボードでたどれました。実機のiPhone・Safariでは未検証です。 [公開モバイル検証結果](../../docs/national-travel-v35-hosted-mobile-results.json)
+
+公開URLの47都道府県×2言語の全94ページがHTTP 200を返し、すべてに商品カードが表示されることを確認しました。公開サイトマップには日英各88件の商品詳細が掲載されています。日英のトップ、一覧、神奈川ページ、検証対象の商品詳細、サイトマップ、robots.txtの計14レスポンスをローカルの公開用ビルドとSHA-256で照合しました。 [ビルドと配信内容の照合](../../docs/national-travel-v35-build-manifest.json)

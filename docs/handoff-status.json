@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-24T04:48:41.013Z",
+  "updatedAt": "2026-11-24T05:08:09.617Z",
   "entryPoint": "START_HERE.md",
   "project": {
     "name": "Japanese Craft Jewelry",
@@ -19,8 +19,8 @@
     "nextAction": "Use the national catalog and travel discovery guide. See production for the last verified deployment. Real iPhone/SNS browser and Search Console still require separate verification.",
     "currentGitHeadCommand": "git rev-parse HEAD",
     "verificationReport": "specs/035-national-travel-discovery/validation.md",
-    "validatedSourceCommit": "537ee24ca021a9b61801108a4689e22936a3a08a",
-    "cleanRunnerVerification": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44100922768",
+    "validatedSourceCommit": "a9495260a82bda1a886945dbcfa2286ce26330c9",
+    "cleanRunnerVerification": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45330626349",
     "historicalVerification": {
       "appVersion": "0.18.0",
       "applicationCommit": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
@@ -30,16 +30,16 @@
     "siteGuide": "docs/SITE_NEW_CHAT_HANDOFF.md"
   },
   "production": {
-    "version": "0.23.1",
-    "applicationCommit": "803c42ad59b6e73969c669ffb60814e73cfbc7e8",
+    "version": "0.24.0",
+    "applicationCommit": "a9495260a82bda1a886945dbcfa2286ce26330c9",
     "actions": {
-      "id": 45215657620,
-      "headSha": "803c42ad59b6e73969c669ffb60814e73cfbc7e8",
+      "id": 45330626349,
+      "headSha": "a9495260a82bda1a886945dbcfa2286ce26330c9",
       "status": "completed",
       "conclusion": "success",
-      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45215657620",
-      "deploymentCompletedAt": "2026-11-23T16:22:57Z",
-      "observedAt": "2026-11-23T16:24:37Z"
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45330626349",
+      "deploymentCompletedAt": "2026-11-24T05:04:42Z",
+      "observedAt": "2026-11-24T05:08:09.617Z"
     },
     "urls": {
       "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
@@ -60,22 +60,29 @@
       "purchaseSelectionJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/tete-ryukyu-glass-hanagasa-heart-pierced-earrings/",
       "purchaseSelectionEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/tete-ryukyu-glass-hanagasa-heart-pierced-earrings/",
       "soraVideoJewelryJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/sora/#video-jewelry",
-      "soraVideoJewelryEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/sora/#video-jewelry"
+      "soraVideoJewelryEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/sora/#video-jewelry",
+      "travelFinderJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/#travel-finder",
+      "travelFinderEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/#travel-finder",
+      "kanagawaHakoneJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/kanagawa/#area-hakone",
+      "kanagawaKamakuraJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/kanagawa/#area-kamakura",
+      "hakoneProductJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/",
+      "kamakuraProductJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/yogado-kamakura-bori-camellia-brooch/"
     },
     "report": "docs/deployment-results.json",
-    "verification": "specs/034-kyoto-video-jewelry/validation.md",
-    "outputManifest": "docs/kyoto-video-jewelry-v34-build-manifest.json",
+    "verification": "specs/035-national-travel-discovery/validation.md",
+    "outputManifest": "docs/national-travel-v35-build-manifest.json",
     "outputManifestStatus": "verified_build_and_public_sample",
-    "previousFullOutputManifest": "docs/sora-video-jewelry-v33-build-manifest.json",
+    "previousFullOutputManifest": "docs/kyoto-video-jewelry-v34-build-manifest.json",
     "buildArtifact": {
-      "id": 14837723352,
-      "name": "github-pages",
-      "bytes": 12267887,
-      "digest": "sha256:b998a02ab946fa3b56f9b1b03b74f8ba7ef09dc79e4e748cec2225b0e9f5dae1",
-      "expiresAt": "2026-11-24T16:22:36Z",
-      "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14837723352/zip",
-      "headSha": "803c42ad59b6e73969c669ffb60814e73cfbc7e8"
-    }
+      "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14891308132/zip",
+      "bytes": 15773624,
+      "digest": "sha256:de8a7886f139e46f10ac045defca88b2471506d3f62f387c6dc07edb9a2446ef",
+      "expiresAt": "2026-11-25T05:04:16Z",
+      "headSha": "a9495260a82bda1a886945dbcfa2286ce26330c9",
+      "id": 14891308132,
+      "name": "github-pages"
+    },
+    "hostedMobileReport": "docs/national-travel-v35-hosted-mobile-results.json"
   },
   "snapshot": {
     "publishedProducts": 88,
@@ -229,7 +236,8 @@
     "local": "specs/035-national-travel-discovery/validation.md",
     "assets": "docs/git-handoff-stage-download-results.json",
     "documentation": "docs/git-handoff-stage-docs-results.json",
-    "summary": "specs/035-national-travel-discovery/validation.md"
+    "summary": "specs/035-national-travel-discovery/validation.md",
+    "hostedMobile": "docs/national-travel-v35-hosted-mobile-results.json"
   },
   "snapshotVersion": "0.24.0"
 }

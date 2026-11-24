@@ -1,0 +1,99 @@
+{
+  "checkedAt": "2026-11-24T05:05:08.231Z",
+  "originBase": "https://rozawa619.github.io/japanese-craft-jewelry/",
+  "expectedDeploymentSha": "a9495260a82bda1a886945dbcfa2286ce26330c9",
+  "device": "Chromium, Playwright iPhone 13 profile, 390 CSS px, touch enabled",
+  "scope": "Checked the deployed site when configured with the public origin. Native select options were set in Chromium; ordinary links were followed by touch or external keyboard simulation. Retailer URLs were examined without opening them.",
+  "checks": [
+    {
+      "name": "JA touch journey: 箱根",
+      "status": "passed",
+      "area": "箱根",
+      "productId": "hamamatsuya-catch-pierced",
+      "productUrl": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/",
+      "officialDestination": "https://www.hamamatsuya.co.jp/item/muku/accessory_2.html",
+      "retailerOpened": false,
+      "measurements": [
+        {
+          "stage": "home finder",
+          "viewport": 390,
+          "document": 390,
+          "touch": 1,
+          "layout": 390,
+          "visual": 390
+        },
+        {
+          "stage": "prefecture and area",
+          "viewport": 390,
+          "document": 390,
+          "touch": 1,
+          "layout": 390,
+          "visual": 390
+        },
+        {
+          "stage": "product detail",
+          "viewport": 390,
+          "document": 390,
+          "touch": 1,
+          "layout": 390,
+          "visual": 390
+        }
+      ],
+      "sha256": "db664da63585c425bf273cba5f8d5725516da233836cf6eecf1516b1ecca954b"
+    },
+    {
+      "name": "JA touch journey: 鎌倉",
+      "status": "passed",
+      "area": "鎌倉",
+      "productId": "yogado-kamakura-bori-camellia-brooch",
+      "productUrl": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/yogado-kamakura-bori-camellia-brooch/",
+      "officialDestination": "https://shop.yogado.jp/item/detail/wb0003.html",
+      "retailerOpened": false,
+      "measurements": [
+        {
+          "stage": "home finder",
+          "viewport": 390,
+          "document": 390,
+          "touch": 1,
+          "layout": 390,
+          "visual": 390
+        },
+        {
+          "stage": "prefecture and area",
+          "viewport": 390,
+          "document": 390,
+          "touch": 1,
+          "layout": 390,
+          "visual": 390
+        },
+        {
+          "stage": "product detail",
+          "viewport": 390,
+          "document": 390,
+          "touch": 1,
+          "layout": 390,
+          "visual": 390
+        }
+      ],
+      "sha256": "6215ab9267a750f951e4addb23dc39f896013512f39632029dc8182862d59959"
+    },
+    {
+      "name": "47 destinations and language state",
+      "status": "passed",
+      "prefecturesPerLanguage": 47,
+      "locales": [
+        "ja",
+        "en"
+      ]
+    },
+    {
+      "name": "JA native links and keyboard without JavaScript",
+      "status": "passed",
+      "productId": "hamamatsuya-catch-pierced"
+    }
+  ],
+  "failures": [],
+  "status": "passed",
+  "actionsRunId": 45330626349,
+  "localScreenshotCount": 6
+}
