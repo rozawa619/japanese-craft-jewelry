@@ -6,8 +6,8 @@
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
-  "currentEpisodeId": "tokyo-rinzen-seika-amber-pierced-earrings",
-  "nextAction": "Regenerate the opening with the same original WebP in Flow Ingredients and center the face and visible ear together in a wider frame. Verify both eyes, the mouth and the complete earring at 0, 0.5 and 1 second.",
+  "currentEpisodeId": "tokyo-rinzen-leaf-glass-pendant",
+  "nextAction": "Use the site original in Flow Ingredients with prompt v1. Check both eyes, the mouth and the entire leaf pendant at 0, 0.5 and 1 second.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -303,6 +303,25 @@
       "nextAction": "Regenerate the opening with the same original WebP in Flow Ingredients and center the face and visible ear together in a wider frame. Verify both eyes, the mouth and the complete earring at 0, 0.5 and 1 second.",
       "statusReason": "The face is cropped in the three opening-frame samples. The TikTok caption is a draft.",
       "captionDraft": "ねえ、この色、どうかな？🧡\n\n東京で待ち合わせ。\n黒いシャツに、琥珀色の切子ガラス。\n細いチェーンの先で、カットの模様がきらり。\n\n凛然 星華 アンバーガラスのチェーンピアス\n\nあなたなら、この琥珀色を何色の服に合わせる？\n\nMeet me in Tokyo. RINZEN’s Seika earrings pair amber-colored kiriko glass with fine chains.\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #東京 #切子 #チェーンピアス #JapaneseJewelry"
+    },
+    {
+      "id": "tokyo-rinzen-leaf-glass-pendant",
+      "place": "Tokyo, Japan",
+      "productIds": [
+        "rinzen-leaf-glass-pendant"
+      ],
+      "status": "prompt_ready",
+      "summary": "The second Tokyo episode features RINZEN's Leaf Drop green glass pendant. The original site image and Flow Ingredients prompt v1 are ready.",
+      "femaleImageAssetId": "ai-rinzen-green-leaf-styling-v9",
+      "femaleImagePath": "public/images/rinzen-green-leaf-styling-v9.webp",
+      "femaleImageDimensions": "1536x1024",
+      "episodePath": "docs/video/episodes/tokyo-rinzen-leaf-glass-pendant.md",
+      "startFrameStatus": "The published original WebP was visually inspected and matched byte-for-byte with main. Use it as the sole Ingredients reference.",
+      "currentPromptVersion": "v1-ready",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "The live product page uses the original website WebP (Git blob 74ba99708c6eab263ded295967b79b6ac58e395e, main 240d65bb75e96c602d8787a9455f2780b4e16a5a). The product ID, styling asset ID and path were checked against the production ledger, TikTok publication registry, Kyoto plan and previous episode records. No matches were found.",
+      "nextAction": "Use the site original in Flow Ingredients with prompt v1. Check both eyes, the mouth and the entire leaf pendant at 0, 0.5 and 1 second."
     }
   ],
   "observedLinks": [
@@ -453,6 +472,10 @@
     {
       "date": "2026-11-24",
       "summary": "Reviewed the Tokyo episode 1 attachment, recorded the opening face crop as needing revision and saved the TikTok caption draft for RINZEN's Seika earrings."
+    },
+    {
+      "date": "2026-11-24",
+      "summary": "Prepared Tokyo episode 2 for RINZEN's green glass Leaf Drop pendant. Verified the original site image and saved a Flow prompt that frames the face and the whole pendant together from the opening."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -491,5 +514,5 @@
     "firstSuggestedProductId": "rinzen-seika-amber-pierced-earrings",
     "explanation": "Tokyo led the regional shortlist in the Kyoto plan. All seven published Kyoto products have a video creation record in the production ledger, matched TikTok cards or prior episode notes."
   },
-  "previousWorkCurrentEpisodeId": "kyoto-kazarino-shippo-pattern-brass-bangle"
+  "previousWorkCurrentEpisodeId": "tokyo-rinzen-seika-amber-pierced-earrings"
 }
