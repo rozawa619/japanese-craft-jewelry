@@ -6,8 +6,8 @@
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
-  "currentEpisodeId": "kyoto-kazarino-shippo-pattern-brass-bangle",
-  "nextAction": "Record the TikTok post URL once publication and the product match can be verified.",
+  "currentEpisodeId": "tokyo-rinzen-seika-amber-pierced-earrings",
+  "nextAction": "Use the site original in Flow Ingredients with prompt v1, then check both eyes, the mouth and the full chain earring at 0, 0.5 and 1 second.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -282,6 +282,25 @@
       "nextAction": "Record the TikTok post URL once publication and the product match can be verified.",
       "statusReason": "A generated clip and an opening-frame check are recorded. The TikTok caption remains a draft.",
       "captionDraft": "ねえ、この模様、きれいでしょ？✨\n\n京都で待ち合わせ。\nチャコールのトップスに、あたたかな色の真鍮バングルをひとつ。\n円が重なる七宝文様が、手元のアクセントに。\n\n錺之 七宝文様 真鍮バングル S\n\nこのバングルを着けて、どこに出かけたい？\n\nMeet me in Kyoto. A brass bangle engraved with a Shippo pattern of interlocking circles.\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #京都 #七宝文様 #真鍮バングル #JapaneseJewelry"
+    },
+    {
+      "id": "tokyo-rinzen-seika-amber-pierced-earrings",
+      "place": "Tokyo, Japan",
+      "productIds": [
+        "rinzen-seika-amber-pierced-earrings"
+      ],
+      "status": "prompt_ready",
+      "summary": "The first Tokyo episode features RINZEN's Seika amber glass chain earrings. The original site image and Flow Ingredients prompt v1 are ready.",
+      "femaleImageAssetId": "ai-rinzen-amber-glass-styling-v9",
+      "femaleImagePath": "public/images/rinzen-amber-glass-styling-v9.webp",
+      "femaleImageDimensions": "1536x1024",
+      "episodePath": "docs/video/episodes/tokyo-rinzen-seika-amber-pierced-earrings.md",
+      "startFrameStatus": "The published original WebP was visually inspected and matched byte-for-byte with main. Use it as the sole Ingredients reference.",
+      "currentPromptVersion": "v1-ready",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "The published product page uses the original WebP (Git blob e9bc110ff3d92bbb22cc93a88d87cdd3106f8f53, main 35fc02e6549fd2178b61b90b74a145729a5844aa). The product ID, editorial asset ID and image path do not match prior production or TikTok registry entries or the Kyoto episode records.",
+      "nextAction": "Use the site original in Flow Ingredients with prompt v1, then check both eyes, the mouth and the full chain earring at 0, 0.5 and 1 second."
     }
   ],
   "observedLinks": [
@@ -424,14 +443,18 @@
     {
       "date": "2026-11-24",
       "summary": "Reviewed the opening frames and transcribed the spoken line of the supplied Kyoto episode 7 clip. Saved the TikTok caption draft for Kazarino's Shippo-pattern brass bangle."
+    },
+    {
+      "date": "2026-11-24",
+      "summary": "After recording work for all seven Kyoto products, prepared Tokyo episode 1 for RINZEN's Seika amber glass chain earrings. Saved the first Flow Ingredients prompt and verified the published original site image."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
   "seriesFocus": {
-    "mode": "kyoto-first",
-    "prefectureId": "kyoto",
-    "scope": "Prepare one Kyoto episode at a time from the published catalog and its original styling image. Use the Kyoto plan and the production and TikTok records to avoid reuse.",
-    "setAt": "2026-11-22"
+    "mode": "tokyo-first",
+    "prefectureId": "tokyo",
+    "scope": "Prepare one Tokyo episode at a time from the published catalog and its original styling image. Check prior production and TikTok publication records to avoid reuse.",
+    "setAt": "2026-11-24"
   },
   "nextPlannedEpisodeId": null,
   "imagePolicyDefault": "Show and use exact original image in src/data/editorial-images.json for site-published product; do not create any variant unless explicitly requested (2026-11-22 user directive).",
@@ -453,16 +476,14 @@
     "instructions": "Read GitHub NEW_CHAT_HANDOFF, SDD, production-status, TikTok registry, latest catalog/editorial images before any new video suggestion; update each after work."
   },
   "nextRegionProposal": {
-    "regionId": "kyoto",
-    "regionName": "京都府",
-    "userConfirmed": true,
+    "regionId": "tokyo",
+    "regionName": "東京都",
+    "userConfirmed": false,
     "status": "prompt_ready",
-    "publishedSiteProducts": 7,
-    "uniqueImageAssets": 7,
-    "createdKyotoEpisodes": 2,
-    "planPath": "docs/video/kyoto-series-plan.json",
-    "firstSuggestedProductId": "morphosphere-ultramarine-pansy-pierced-earrings",
-    "explanation": "The Kyoto plan lists seven published catalog products with dedicated styling images. The production ledger tracks the episodes registered in GitHub."
+    "publishedSiteProducts": 5,
+    "uniqueImageAssets": 5,
+    "firstSuggestedProductId": "rinzen-seika-amber-pierced-earrings",
+    "explanation": "Tokyo led the regional shortlist in the Kyoto plan. All seven published Kyoto products have a video creation record in the production ledger, matched TikTok cards or prior episode notes."
   },
-  "previousWorkCurrentEpisodeId": "kyoto-nakajima-pear-sakura-pendant"
+  "previousWorkCurrentEpisodeId": "kyoto-kazarino-shippo-pattern-brass-bangle"
 }
