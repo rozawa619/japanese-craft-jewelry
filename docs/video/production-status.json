@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "lastUpdated": "2026-11-24",
+  "lastUpdated": "2026-11-25",
   "project": "SORA｜旅先で待ち合わせ",
   "scope": "TikTok / Google Flow AI POV date clips and Instagram Reels captions; site content source is separate",
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
   "currentEpisodeId": "tokyo-rinzen-leaf-glass-pendant",
-  "nextAction": "Use the site original in Flow Ingredients with prompt v1. Check both eyes, the mouth and the entire leaf pendant at 0, 0.5 and 1 second.",
+  "nextAction": "Regenerate with prompt v2. Use the original in Frames after verifying a fitted 9:16 start preview, or in Ingredients when the preview is cropped or unverified. Review the opening framing and cheeks, mouth area and chin in the output.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -310,18 +310,19 @@
       "productIds": [
         "rinzen-leaf-glass-pendant"
       ],
-      "status": "prompt_ready",
-      "summary": "The second Tokyo episode features RINZEN's Leaf Drop green glass pendant. The original site image and Flow Ingredients prompt v1 are ready.",
+      "status": "revision_needed",
+      "summary": "A 10-second clip was reviewed for Tokyo episode 2. The right edge crops an eye and part of the chain at the opening, and later samples show a dark spot on the cheek. Regeneration prompt v2 is ready.",
       "femaleImageAssetId": "ai-rinzen-green-leaf-styling-v9",
       "femaleImagePath": "public/images/rinzen-green-leaf-styling-v9.webp",
       "femaleImageDimensions": "1536x1024",
       "episodePath": "docs/video/episodes/tokyo-rinzen-leaf-glass-pendant.md",
       "startFrameStatus": "The published original WebP was visually inspected and matched byte-for-byte with main. Use it as the sole Ingredients reference.",
-      "currentPromptVersion": "v1-ready",
+      "currentPromptVersion": "v2-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The live product page uses the original website WebP (Git blob 74ba99708c6eab263ded295967b79b6ac58e395e, main 240d65bb75e96c602d8787a9455f2780b4e16a5a). The product ID, styling asset ID and path were checked against the production ledger, TikTok publication registry, Kyoto plan and previous episode records. No matches were found.",
-      "nextAction": "Use the site original in Flow Ingredients with prompt v1. Check both eyes, the mouth and the entire leaf pendant at 0, 0.5 and 1 second."
+      "verification": "The live product page uses the original website WebP (Git blob 74ba99708c6eab263ded295967b79b6ac58e395e, main 240d65bb75e96c602d8787a9455f2780b4e16a5a). The product ID, styling asset ID and path were checked against the production ledger, TikTok publication registry, Kyoto plan and previous episode records. No matches were found. On 2026-11-25 JST, sampled the 512×910, 30 fps, 10-second attachment. The opening samples at 0, 0.5 and 1 second crop an eye and part of the chain on the right. The first frame closely matches a center crop of the source. A right-shifted 9:16 inspection of the source fits both eyes, the mouth and the visible necklace. Samples from 1.5 seconds onward show a mole-like cheek spot absent at the corresponding area of the source. The actual Flow mode, model, audio and publication are unverified.",
+      "nextAction": "Regenerate with prompt v2. Use the original in Frames after verifying a fitted 9:16 start preview, or in Ingredients when the preview is cropped or unverified. Review the opening framing and cheeks, mouth area and chin in the output.",
+      "statusReason": "The opening has visible cropping at 0, 0.5 and 1 second, and later sampled frames show a mole-like spot on the cheek."
     }
   ],
   "observedLinks": [
@@ -476,6 +477,10 @@
     {
       "date": "2026-11-24",
       "summary": "Prepared Tokyo episode 2 for RINZEN's green glass Leaf Drop pendant. Verified the original site image and saved a Flow prompt that frames the face and the whole pendant together from the opening."
+    },
+    {
+      "date": "2026-11-25",
+      "summary": "Reviewed the Tokyo episode 2 clip and recorded the opening crop and generated cheek spot as needing revision. Updated the SDD to v1.13 and the Flow template to v2.4 to check portrait framing before selection and reject visible moles or dark dots in the output. Saved prompt v2."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
