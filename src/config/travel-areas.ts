@@ -23,7 +23,7 @@ export const travelAreas:Readonly<Record<string, readonly TravelArea[]>> = {
  hokkaido:[area('sapporo','Sapporo','札幌','yuiq-odori-bisse'),area('otaru','Otaru','小樽','kitaichi-sangokan-yo')],
  iwate:[area('kuji','Kuji','久慈','kuji-kohaku-main-shop')],
  miyagi:[area('ishinomaki','Ishinomaki','石巻','hikari-crew-reclaimed-ceramic-earrings-247-shop')],
- akita:[area('akita-city','Akita City','秋田市','yadome-atelier-akita-shop')],
+ akita:[area('akita-city','Akita City','秋田市','yadome-atelier-akita-shop'),area('kakunodate','Kakunodate','角館','tomioka-art-and-craft-kazuki')],
  yamagata:[area('yonezawa','Yonezawa','米沢','juyoukan-yonezawa-kura-shop')],
  fukushima:[area('aizuwakamatsu','Aizuwakamatsu','会津若松','sakamoto-tsuya-jewel-tang-crimson-pendant-shop')],
  tochigi:[area('mashiko','Mashiko','益子','naoko-otsuka-mashiko-crescent-moon-earrings-shop')],
@@ -38,6 +38,7 @@ export const travelAreas:Readonly<Record<string, readonly TravelArea[]>> = {
   area('kamakura','Kamakura','鎌倉','yogado-kamakura-shop','dahliacyan-sakanoshita-atelier'),
  ],
  toyama:[area('takaoka','Takaoka','高岡','nousaku-takaoka-factory-shop')],
+ ishikawa:[area('kanazawa','Kanazawa','金沢','hakuza-hikarikura-kanazawa')],
  fukui:[area('sabae','Sabae','鯖江','sava-store-sabae-main')],
  yamanashi:[area('kofu','Kofu','甲府','yamanashi-jewelry-museum-shop')],
  nagano:[area('kiso-hirasawa','Kiso-Hirasawa','木曽平沢','maruyoshi-kosaka-tsubusa-clear-urushi-clip-on-earrings-shop')],
@@ -64,5 +65,5 @@ export const travelAreas:Readonly<Record<string, readonly TravelArea[]>> = {
  kumamoto:[area('kumamoto-city','Kumamoto City','熊本市','mitsusuke-kumamoto-main')],
  oita:[area('beppu','Beppu','別府','cotake-beppu-shop')],
  kagoshima:[area('kagoshima-city','Kagoshima City','鹿児島市','shimadzu-iso-kogeikan')],
- okinawa:[area('tomigusuku','Tomigusuku','豊見城','tete-iias-okinawa-toyosaki')],
+ okinawa:[area('tomigusuku','Tomigusuku','豊見城','tete-iias-okinawa-toyosaki'),area('naha','Naha','那覇','kanoa-okinawa-kokusai-street')],
 };

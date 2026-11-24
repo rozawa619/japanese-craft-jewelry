@@ -825,6 +825,56 @@
         "shanti-clear-glass-opal-drop-pierced-earrings-maker",
         "shanti-clear-glass-opal-drop-pierced-earrings-region"
       ]
+    },
+    {
+      "id": "tsugaru-kogin",
+      "name": "Tsugaru kogin embroidery",
+      "description": "Counted-thread stitching from the Tsugaru region of Aomori.",
+      "sourceIds": [
+        "lanka-tsugaru-kogin-mameko-brooch-ivory-mustard-offer",
+        "lanka-tsugaru-kogin-mameko-brooch-ivory-mustard-maker",
+        "lanka-tsugaru-kogin-mameko-brooch-ivory-mustard-craft"
+      ]
+    },
+    {
+      "id": "kakunodate-kabazaiku",
+      "name": "Kakunodate kabazaiku",
+      "description": "An Akita craft that works the bark of Japanese mountain cherry trees into decorative surfaces.",
+      "sourceIds": [
+        "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s-offer",
+        "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s-maker",
+        "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s-craft"
+      ]
+    },
+    {
+      "id": "kanazawa-gold-leaf",
+      "name": "Kanazawa metal leaf",
+      "description": "In Kanazawa, thin metal leaf moves from traditional craft materials to contemporary accessories.",
+      "sourceIds": [
+        "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo-offer",
+        "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo-maker",
+        "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo-craft"
+      ]
+    },
+    {
+      "id": "shimizu-kawara-jewelry",
+      "name": "Shimizu tile jewelry",
+      "description": "Smoked-fired tile clay becomes sculpted jewelry in Shimizu, Shizuoka.",
+      "sourceIds": [
+        "nagasawa-shimizu-kawara-kiku-pearl-pierced-earrings-offer",
+        "nagasawa-shimizu-kawara-kiku-pearl-pierced-earrings-maker",
+        "nagasawa-shimizu-kawara-kiku-pearl-pierced-earrings-craft"
+      ]
+    },
+    {
+      "id": "hotaru-glass-jewelry",
+      "name": "Hotaru glass jewelry",
+      "description": "A type of lampworked glass bead that uses silver leaf beneath glass to reflect light.",
+      "sourceIds": [
+        "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-offer",
+        "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-maker",
+        "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-craft"
+      ]
     }
   ],
   "materials": [
@@ -1125,6 +1175,21 @@
     {
       "id": "tosa-washi",
       "name": "Tosa washi"
+    },
+    {
+      "id": "mountain-cherry-bark",
+      "name": "Japanese mountain cherry bark",
+      "description": "The visible bark surface used in Kakunodate kabazaiku."
+    },
+    {
+      "id": "acrylic",
+      "name": "Acrylic",
+      "description": "Transparent acrylic is the body of the featured cuff."
+    },
+    {
+      "id": "platinum-foil",
+      "name": "Platinum-bearing foil",
+      "description": "Metal leaf containing platinum, including the gold–platinum alloy in the Hakuza cuff."
     }
   ],
   "productTypes": [
@@ -1927,6 +1992,61 @@
         "shanti-clear-glass-opal-drop-pierced-earrings-offer",
         "shanti-clear-glass-opal-drop-pierced-earrings-maker",
         "shanti-clear-glass-opal-drop-pierced-earrings-region"
+      ]
+    },
+    {
+      "id": "lanka",
+      "name": "lanka",
+      "location": "Aomori Prefecture",
+      "productionNote": "lanka describes hand-stitching kogin textiles and sending its work from Aomori. The creator profile and exact listing establish Aomori as the published location. No workshop city is stated.",
+      "url": "https://www.creema.jp/c/lanka_kogin",
+      "sourceIds": [
+        "lanka-tsugaru-kogin-mameko-brooch-ivory-mustard-maker",
+        "lanka-tsugaru-kogin-mameko-brooch-ivory-mustard-offer"
+      ]
+    },
+    {
+      "id": "tomioka-shoten",
+      "name": "Tomioka Shoten",
+      "location": "Kakunodate, Semboku, Akita",
+      "productionNote": "Tomioka Shoten is an Akita kabazaiku maker based in Kakunodate. The exact brooch is credited to designer Manabu Yoshino. The maker describes applying Japanese mountain cherry bark to wood, engraving the motif and polishing the inlay before applying a urethane finish.",
+      "url": "https://tomioka-shoten.com/",
+      "sourceIds": [
+        "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s-maker",
+        "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s-offer"
+      ]
+    },
+    {
+      "id": "hakuza",
+      "name": "Hakuza",
+      "location": "Kanazawa, Ishikawa",
+      "productionNote": "Hakuza’s Kanazawa workshop hand-applies metal leaf to accessories. The product listing specifies leaf applied by hand inside this clear bangle.",
+      "url": "https://www.hakuza.co.jp/",
+      "sourceIds": [
+        "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo-maker",
+        "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo-offer"
+      ]
+    },
+    {
+      "id": "nagasawa-kawara",
+      "name": "Nagasawa Kawara Shoten",
+      "location": "Shimizu, Shizuoka",
+      "productionNote": "Oni-Rei shapes these tile motifs around Shimizu. The maker identifies Shimizu and Sanshu clay, with clay preparation and firing in Shimizu. This contemporary accessory is part of its Shimizu-kawara revival work; no item-level traditional-craft certification is claimed.",
+      "url": "https://nagasawaroof.buyshop.jp/",
+      "sourceIds": [
+        "nagasawa-shimizu-kawara-kiku-pearl-pierced-earrings-maker",
+        "nagasawa-shimizu-kawara-kiku-pearl-pierced-earrings-offer"
+      ]
+    },
+    {
+      "id": "kanoa-okinawa",
+      "name": "Kanoa Okinawa",
+      "location": "Naha, Okinawa",
+      "productionNote": "Kanoa makes its jewelry to order in Okinawa. The product listing explains how hotaru glass beads are made and does not identify the bead maker or manufacturing location.",
+      "url": "https://kanoa.okinawa/",
+      "sourceIds": [
+        "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-maker",
+        "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-offer"
       ]
     }
   ],
@@ -3088,6 +3208,111 @@
       "sourceIds": [
         "shanti-clear-glass-opal-drop-pierced-earrings-offer"
       ]
+    },
+    {
+      "id": "lanka-creema",
+      "name": "lanka",
+      "url": "https://www.creema.jp/c/lanka_kogin",
+      "language": "Japanese",
+      "shipping": {
+        "status": "confirmed",
+        "summary": "The maker lists dispatch from Aomori within Japan. The Creema listing marks direct international shipping as unavailable.",
+        "countries": [
+          "Japan"
+        ],
+        "sourceIds": [
+          "lanka-tsugaru-kogin-mameko-brooch-ivory-mustard-offer"
+        ]
+      },
+      "returns": "See the seller’s current terms for orders, returns and cancellations.",
+      "sourceIds": [
+        "lanka-tsugaru-kogin-mameko-brooch-ivory-mustard-offer"
+      ]
+    },
+    {
+      "id": "tomioka-shoten-official",
+      "name": "Tomioka Shoten",
+      "url": "https://tomioka-shoten.com/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "confirmed",
+        "summary": "The maker lists shipping within Japan and EMS shipping rates to the United States, United Kingdom, France, Germany and Italy. Check the current delivery terms for your destination.",
+        "countries": [
+          "Japan",
+          "United States",
+          "United Kingdom",
+          "France",
+          "Germany",
+          "Italy"
+        ],
+        "sourceIds": [
+          "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s-guide"
+        ]
+      },
+      "returns": "See the seller’s current terms for orders, returns and cancellations.",
+      "sourceIds": [
+        "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s-offer",
+        "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s-guide"
+      ]
+    },
+    {
+      "id": "hakuza-official",
+      "name": "Hakuza",
+      "url": "https://www.hakuza.com/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "confirmed",
+        "summary": "The maker’s online shop ships within Japan and does not directly ship abroad.",
+        "countries": [
+          "Japan"
+        ],
+        "sourceIds": [
+          "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo-guide"
+        ]
+      },
+      "returns": "See the seller’s current terms for orders, returns and cancellations.",
+      "sourceIds": [
+        "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo-offer",
+        "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo-guide"
+      ]
+    },
+    {
+      "id": "nagasawa-kawara-official",
+      "name": "Nagasawa Kawara Shoten",
+      "url": "https://nagasawaroof.buyshop.jp/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Domestic delivery rates are listed by region. Check delivery to your destination and the current dispatch date with the maker.",
+        "countries": null,
+        "sourceIds": [
+          "nagasawa-shimizu-kawara-kiku-pearl-pierced-earrings-guide"
+        ]
+      },
+      "returns": "See the seller’s current terms for orders, returns and cancellations.",
+      "sourceIds": [
+        "nagasawa-shimizu-kawara-kiku-pearl-pierced-earrings-offer",
+        "nagasawa-shimizu-kawara-kiku-pearl-pierced-earrings-guide"
+      ]
+    },
+    {
+      "id": "kanoa-okinawa-official",
+      "name": "Kanoa Okinawa",
+      "url": "https://shop.kanoa.okinawa/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "The shop posts domestic shipping rates and makes products after ordering. Check delivery to your address with the official seller.",
+        "countries": null,
+        "sourceIds": [
+          "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-guide"
+        ]
+      },
+      "returns": "See the seller’s current terms for orders, returns and cancellations.",
+      "sourceIds": [
+        "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-offer",
+        "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-guide"
+      ]
     }
   ],
   "programs": [
@@ -4163,6 +4388,56 @@
       "merchantId": "shanti-glass-creema",
       "programId": null,
       "officialProductUrl": "https://www.creema.jp/item/10405944/detail",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "lanka-tsugaru-kogin-mameko-brooch-ivory-mustard-official",
+      "productId": "lanka-tsugaru-kogin-mameko-brooch-ivory-mustard",
+      "merchantId": "lanka-creema",
+      "programId": null,
+      "officialProductUrl": "https://www.creema.jp/item/11809992/detail",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s-official",
+      "productId": "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s",
+      "merchantId": "tomioka-shoten-official",
+      "programId": null,
+      "officialProductUrl": "https://tomioka-shoten.com/products/brooch-kvr_020-urokomon?variant=41060601004132",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo-official",
+      "productId": "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo",
+      "merchantId": "hakuza-official",
+      "programId": null,
+      "officialProductUrl": "https://www.hakuza.com/c/fashion-accessory/0201010101",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "nagasawa-shimizu-kawara-kiku-pearl-pierced-earrings-official",
+      "productId": "nagasawa-shimizu-kawara-kiku-pearl-pierced-earrings",
+      "merchantId": "nagasawa-kawara-official",
+      "programId": null,
+      "officialProductUrl": "https://nagasawaroof.buyshop.jp/items/139613243",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-official",
+      "productId": "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings",
+      "merchantId": "kanoa-okinawa-official",
+      "programId": null,
+      "officialProductUrl": "https://shop.kanoa.okinawa/products/%E3%83%9B%E3%82%BF%E3%83%AB%E3%82%AC%E3%83%A9%E3%82%B9%E3%81%AE%E3%83%94%E3%82%A2%E3%82%B9-%E3%82%A4%E3%83%A4%E3%83%AA%E3%83%B3%E3%82%B0-%E3%83%96%E3%83%AB%E3%83%BC",
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
       "affiliateLinkVerifiedAt": null
@@ -9458,6 +9733,299 @@
       ],
       "lastVerifiedAt": "2026-11-24",
       "imageAssetIds": []
+    },
+    {
+      "id": "lanka-tsugaru-kogin-mameko-brooch-ivory-mustard",
+      "slug": "lanka-tsugaru-kogin-mameko-brooch-ivory-mustard",
+      "locale": "en",
+      "originalTitle": "こぎん刺し／ブローチ／豆こ／Ivory× Mustard",
+      "publishStatus": "published",
+      "productType": [
+        "brooch"
+      ],
+      "prefectureIds": [
+        "aomori"
+      ],
+      "craftIds": [
+        "tsugaru-kogin"
+      ],
+      "materialIds": [
+        "textile"
+      ],
+      "makerId": "lanka",
+      "craftClassification": {
+        "label": "lanka describes hand-stitching kogin textiles and sending its work from Aomori. The creator profile and exact listing establish Aomori as the published location. No workshop city is stated.",
+        "sourceIds": [
+          "lanka-tsugaru-kogin-mameko-brooch-ivory-mustard-offer",
+          "lanka-tsugaru-kogin-mameko-brooch-ivory-mustard-maker",
+          "lanka-tsugaru-kogin-mameko-brooch-ivory-mustard-craft"
+        ]
+      },
+      "weightPerPieceGrams": null,
+      "priceAmount": 1300,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "in_stock",
+      "merchantIds": [
+        "lanka-creema"
+      ],
+      "sourceIds": [
+        "lanka-tsugaru-kogin-mameko-brooch-ivory-mustard-offer",
+        "lanka-tsugaru-kogin-mameko-brooch-ivory-mustard-maker",
+        "lanka-tsugaru-kogin-mameko-brooch-ivory-mustard-craft",
+        "lanka-tsugaru-kogin-mameko-brooch-ivory-mustard-motif"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "lanka Tsugaru kogin Mameko brooch in Ivory × Mustard",
+      "editorialSummary": "Mustard-colored stitching brings a geometric Tsugaru kogin motif to a round ivory brooch, about 45 mm across. A small way to put a textile detail on a jacket or scarf.",
+      "whoItMaySuit": "Someone who likes geometric patterns, warm colors and accessories made from cloth.",
+      "whatToCheck": [
+        "At roughly 45 mm across, the circle can anchor a lapel or bag strap. Start with a firmly woven fabric if you are concerned about pin marks.",
+        "Look for mameko and the Ivory × Mustard color in the listing title. The maker’s shop offers other motif and color combinations separately."
+      ],
+      "size": "Approx. 45 mm in diameter.",
+      "findings": "Kogin-stitched textile face. Exact fibers and hardware materials are not stated.",
+      "fastening": "Brooch. Ask the maker if a specific pin lock matters to you.",
+      "taxNote": "Japanese online listing price at the recorded date. Tax treatment was not stated."
+    },
+    {
+      "id": "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s",
+      "slug": "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s",
+      "locale": "en",
+      "originalTitle": "ブローチ KAVERS KVR_020 鱗紋(吉野 学)",
+      "publishStatus": "published",
+      "productType": [
+        "brooch"
+      ],
+      "prefectureIds": [
+        "akita"
+      ],
+      "craftIds": [
+        "kakunodate-kabazaiku"
+      ],
+      "materialIds": [
+        "wood",
+        "mountain-cherry-bark",
+        "brass"
+      ],
+      "makerId": "tomioka-shoten",
+      "craftClassification": {
+        "label": "Tomioka Shoten is an Akita kabazaiku maker based in Kakunodate. The exact brooch is credited to designer Manabu Yoshino. The maker describes applying Japanese mountain cherry bark to wood, engraving the motif and polishing the inlay before applying a urethane finish.",
+        "sourceIds": [
+          "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s-offer",
+          "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s-maker",
+          "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s-craft"
+        ]
+      },
+      "weightPerPieceGrams": null,
+      "priceAmount": 5500,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "in_stock",
+      "merchantIds": [
+        "tomioka-shoten-official"
+      ],
+      "sourceIds": [
+        "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s-offer",
+        "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s-maker",
+        "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s-craft",
+        "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s-store",
+        "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s-stockist",
+        "tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s-guide"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "Tomioka KAVERS Kakunodate cherry-bark brooch S in brass scales",
+      "editorialSummary": "A 35 mm circle of warm cherry bark carries a repeat of tiny brass scales. Pin this Kakunodate brooch on a wool coat or a heavy shirt to see the pale pattern against the bark.",
+      "whoItMaySuit": "Someone who wants a small accent at a plain collar and enjoys seeing natural grain up close.",
+      "whatToCheck": [
+        "Compare a 35 mm circle with the width of your lapel. The pin goes through the garment, so a firm weave is a practical first choice.",
+        "Choose S for the 35 mm brooch featured here. The same product page also offers a 50 mm L size."
+      ],
+      "size": "S, approximately 35 mm in diameter.",
+      "findings": "Japanese mountain cherry bark over natural wood, with brass inlay, a urethane finish and a brooch pin.",
+      "fastening": "Brooch pin on the back. The maker does not specify the lock type.",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date."
+    },
+    {
+      "id": "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo",
+      "slug": "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo",
+      "locale": "en",
+      "originalTitle": "アクリルバングルM 永遠色",
+      "publishStatus": "published",
+      "productType": [
+        "bracelet"
+      ],
+      "prefectureIds": [
+        "ishikawa"
+      ],
+      "craftIds": [
+        "kanazawa-gold-leaf"
+      ],
+      "materialIds": [
+        "gold-leaf",
+        "acrylic",
+        "platinum-foil"
+      ],
+      "makerId": "hakuza",
+      "craftClassification": {
+        "label": "Hakuza’s Kanazawa workshop hand-applies metal leaf to accessories. The product listing specifies leaf applied by hand inside this clear bangle.",
+        "sourceIds": [
+          "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo-offer",
+          "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo-maker",
+          "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo-craft"
+        ]
+      },
+      "weightPerPieceGrams": null,
+      "priceAmount": 13200,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "in_stock",
+      "merchantIds": [
+        "hakuza-official"
+      ],
+      "sourceIds": [
+        "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo-offer",
+        "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo-maker",
+        "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo-craft",
+        "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo-store",
+        "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo-foil",
+        "hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo-guide"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "Hakuza Kanazawa gold-leaf acrylic bangle M in Towa-iro",
+      "editorialSummary": "A narrow band of warm gold-tone leaf shows through a clear acrylic cuff. This open Hakuza bangle brings a Kanazawa craft to the wrist in a shape suited to simple sleeves.",
+      "whoItMaySuit": "Someone who wants a little gold at the wrist with a clear, uncluttered shape.",
+      "whatToCheck": [
+        "Compare both the opening and the inner dimensions with a cuff that already fits you.",
+        "In the product selector, choose Towa-iro (永遠色). The maker shows several foil colors on the same page."
+      ],
+      "size": "Approx. 1.4 cm wide, 5.5–6 × 4.5 cm inside, with a 2.6–2.8 cm opening. Small variations are possible.",
+      "findings": "Clear acrylic with hand-applied gold–platinum alloy leaf (99% gold and 1% platinum in the foil).",
+      "fastening": "Open cuff. Check the listed opening before buying.",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date."
+    },
+    {
+      "id": "nagasawa-shimizu-kawara-kiku-pearl-pierced-earrings",
+      "slug": "nagasawa-shimizu-kawara-kiku-pearl-pierced-earrings",
+      "locale": "en",
+      "originalTitle": "瓦 耳飾り［菊‐pearl］",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "shizuoka"
+      ],
+      "craftIds": [
+        "shimizu-kawara-jewelry"
+      ],
+      "materialIds": [
+        "ceramic",
+        "freshwater-pearl",
+        "stainless-steel"
+      ],
+      "makerId": "nagasawa-kawara",
+      "craftClassification": {
+        "label": "Oni-Rei shapes these tile motifs around Shimizu. The maker identifies Shimizu and Sanshu clay, with clay preparation and firing in Shimizu. This contemporary accessory is part of its Shimizu-kawara revival work; no item-level traditional-craft certification is claimed.",
+        "sourceIds": [
+          "nagasawa-shimizu-kawara-kiku-pearl-pierced-earrings-offer",
+          "nagasawa-shimizu-kawara-kiku-pearl-pierced-earrings-maker",
+          "nagasawa-shimizu-kawara-kiku-pearl-pierced-earrings-craft"
+        ]
+      },
+      "weightPerPieceGrams": null,
+      "priceAmount": 5500,
+      "priceCurrency": "JPY",
+      "priceUnit": "pair",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "in_stock",
+      "merchantIds": [
+        "nagasawa-kawara-official"
+      ],
+      "sourceIds": [
+        "nagasawa-shimizu-kawara-kiku-pearl-pierced-earrings-offer",
+        "nagasawa-shimizu-kawara-kiku-pearl-pierced-earrings-maker",
+        "nagasawa-shimizu-kawara-kiku-pearl-pierced-earrings-craft",
+        "nagasawa-shimizu-kawara-kiku-pearl-pierced-earrings-guide"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "Nagasawa Shimizu tile chrysanthemum and freshwater-pearl pierced earrings",
+      "editorialSummary": "A round chrysanthemum relief in dark tile clay sits above an irregular ivory pearl. Short gold-tone links bring a small note of brightness between the two: a striking pairing of an earthy surface and a soft sheen.",
+      "whoItMaySuit": "Someone drawn to pearls with a darker, more sculptural companion.",
+      "whatToCheck": [
+        "The 12 mm measurement is for the tile motif; the maker does not specify the complete drop length.",
+        "Choose ピアス (pierced earrings) in the official selector. Clip-on earrings share the product page."
+      ],
+      "size": "Tile motif: 12 × 12 × 5 mm. Listed pair weight: 5 g. Full drop length is not specified.",
+      "findings": "Smoke-fired ceramic, freshwater pearls and stainless-steel fittings, described as gold by the maker. The coating composition is not stated.",
+      "fastening": "Pierced option selected; the listing does not specify the catch construction.",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date."
+    },
+    {
+      "id": "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings",
+      "slug": "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings",
+      "locale": "en",
+      "originalTitle": "ホタルガラスのピアス・イヤリング（ブルー）",
+      "publishStatus": "published",
+      "productType": [
+        "clip-on-earrings"
+      ],
+      "prefectureIds": [
+        "okinawa"
+      ],
+      "craftIds": [
+        "hotaru-glass-jewelry"
+      ],
+      "materialIds": [
+        "glass",
+        "silver",
+        "brass"
+      ],
+      "makerId": "kanoa-okinawa",
+      "craftClassification": {
+        "label": "Kanoa makes its jewelry to order in Okinawa. The product listing explains how hotaru glass beads are made and does not identify the bead maker or manufacturing location.",
+        "sourceIds": [
+          "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-offer",
+          "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-maker",
+          "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-craft"
+        ]
+      },
+      "weightPerPieceGrams": 1.5,
+      "priceAmount": 3000,
+      "priceCurrency": "JPY",
+      "priceUnit": "pair",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "listed",
+      "merchantIds": [
+        "kanoa-okinawa-official"
+      ],
+      "sourceIds": [
+        "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-offer",
+        "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-maker",
+        "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-craft",
+        "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-store",
+        "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-guide"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "Kanoa Okinawa blue hotaru glass chain clip-on earrings",
+      "editorialSummary": "A round blue hotaru glass bead swings at the end of a slender chain. Silver leaf inside the bead catches the light, and the screw-back fitting lets you wear the pair without pierced ears.",
+      "whoItMaySuit": "Someone looking for a noticeable drop with a small touch of blue close to the jawline.",
+      "whatToCheck": [
+        "The maker lists a drop of about 5 cm below the clip. Compare it with a pair you already wear if you prefer earrings that sit closer to the ear.",
+        "On the official page, select ⑦ネジバネ式イヤリング for the brass screw-back clip-ons. The seller makes the pair after ordering."
+      ],
+      "size": "Bead diameter about 6 mm. Length about 50 mm excluding the clip fitting. The beads vary slightly in color and pattern.",
+      "findings": "Blue lampworked glass with silver leaf beneath clear glass and a brass screw-back fitting. The chain finish is unspecified.",
+      "fastening": "Screw-back clip-on, option ⑦ネジバネ式イヤリング.",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date."
     }
   ]
 }

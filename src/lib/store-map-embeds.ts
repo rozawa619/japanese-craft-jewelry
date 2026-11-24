@@ -3,7 +3,8 @@ import {reviewedMapEmbedUrl} from './map-embed-url.ts';
 
 /** Public Share > Embed URLs reviewed on 2026-11-17. Hamamatsuya uses the
  * maker-published Google embed. No Google map images or reviews are stored.
- * Acquisition and venue choices: docs/research/inline-maps-v14.json. */
+ * Acquisition and venue choices: docs/research/inline-maps-v14.json.
+ * The Hakuza and Kanoa stores use maker-published embeds checked on 2026-11-24. */
 export const reviewedStoreMapEmbeds:Readonly<Record<string,Readonly<Record<Locale,string>>>>={
   "hamamatsuya-hatajuku-main": {
     "ja": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9219.37629412932!2d139.0585010798904!3d35.217881830033974!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019a2f35ae637e7%3A0xfcbb25f508ffef70!2z5rWc5p2-5bGL!5e0!3m2!1sja!2sjp!4v1538099601467",
@@ -141,6 +142,14 @@ export const reviewedStoreMapEmbeds:Readonly<Record<string,Readonly<Record<Local
   "tete-iias-okinawa-toyosaki": {
     "ja": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.196325215678!2d127.65097709999999!3d26.1577349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e569bc128b4f09%3A0xbcc6cae9f1fe820!2stete%20by%20okinawa!5e0!3m2!1sja!2sjp!4v1794900783880!5m2!1sja!2sjp",
     "en": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.196325215678!2d127.65097709999999!3d26.1577349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e569bc128b4f09%3A0xbcc6cae9f1fe820!2stete%20by%20okinawa!5e0!3m2!1sja!2sjp!4v1794900783880!5m2!1sja!2sjp"
+  },
+  "hakuza-hikarikura-kanazawa": {
+    "ja": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6408.46978464583!2d136.667126!3d36.572557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff83374a4ded8ff%3A0x12766d3886069e17!2z566U5bqn44Gy44GL44KK6JeP!5e0!3m2!1sja!2sus!4v1678356931492!5m2!1sja!2sus",
+    "en": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6408.46978464583!2d136.667126!3d36.572557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff83374a4ded8ff%3A0x12766d3886069e17!2z566U5bqn44Gy44GL44KK6JeP!5e0!3m2!1sja!2sus!4v1678356931492!5m2!1sja!2sus"
+  },
+  "kanoa-okinawa-kokusai-street": {
+    "ja": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.424084302823!2d127.68477289999998!3d26.215406599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5696da1fd154b%3A0x2b5196d0ac328c50!2zS2Fub2EgT2tpbmF3YSDlm73pmpvpgJrjgorlupc!5e0!3m2!1sja!2sjp!4v1744128102835!5m2!1sja!2sjp",
+    "en": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.424084302823!2d127.68477289999998!3d26.215406599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5696da1fd154b%3A0x2b5196d0ac328c50!2zS2Fub2EgT2tpbmF3YSDlm73pmpvpgJrjgorlupc!5e0!3m2!1sja!2sjp!4v1744128102835!5m2!1sja!2sjp"
   }
 };
 
