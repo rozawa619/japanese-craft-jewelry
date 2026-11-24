@@ -3139,6 +3139,40 @@
         "euony-matsuzaki-purple-heart-yellow-flower-glass-pendant-d-store"
       ],
       "checkedAt": "2026-11-24"
+    },
+    {
+      "id": "horiguchi-matsue-atelier",
+      "name": {
+        "en": "Horiguchi Kiriko workshop",
+        "ja": "堀口切子 江戸川区松江の工場"
+      },
+      "address": {
+        "en": "5-10-2 Matsue, Edogawa, Tokyo 132-0025",
+        "ja": "〒132-0025 東京都江戸川区松江5-10-2"
+      },
+      "kind": "maker-shop",
+      "officialUrl": "https://kiriko.biz/",
+      "officialStoreUrl": "https://www.kiriko.shop/html/page3.html",
+      "hours": null,
+      "closedDays": null,
+      "access": {
+        "en": "Make an appointment using the official guide before visiting.",
+        "ja": "事前に公式案内から来店の予約をしてください。"
+      },
+      "visitSummary": {
+        "en": "The maker accepts appointments for direct purchases at the Matsue workshop.",
+        "ja": "松江の工場では完全予約制で直接購入を受け付けています。"
+      },
+      "stockNote": {
+        "en": "Ask whether Kikka in your size can be seen or purchased on the day.",
+        "ja": "Kikkaの希望号数が見られるか、購入できるかは訪問前にご確認ください。"
+      },
+      "mapQuery": "堀口切子 東京都江戸川区松江5-10-2",
+      "sourceIds": [
+        "horiguchi-kiriko-kikka-ring-visit",
+        "horiguchi-kiriko-kikka-ring-maker"
+      ],
+      "checkedAt": "2026-11-24"
     }
   ],
   "products": [
@@ -5747,6 +5781,92 @@
         "euony-matsuzaki-purple-heart-yellow-flower-glass-pendant-d-store"
       ],
       "fallback": null,
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "horiguchi-kiriko-kikka-ring",
+      "storeIds": [
+        "horiguchi-matsue-atelier"
+      ],
+      "officialHomeUrl": "https://kiriko.biz/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "horiguchi-kiriko-kikka-ring-offer",
+        "horiguchi-kiriko-kikka-ring-maker",
+        "edo-kiriko-tokyo-bureau-v40",
+        "horiguchi-kiriko-kikka-ring-union",
+        "horiguchi-kiriko-kikka-ring-visit"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "nisshin-souhaku-hammered-silver-bangle",
+      "storeIds": [],
+      "officialHomeUrl": "https://www.nisshin-kikinzoku.com/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "nisshin-souhaku-hammered-silver-bangle-offer",
+        "nisshin-souhaku-hammered-silver-bangle-maker",
+        "nisshin-souhaku-hammered-silver-bangle-home",
+        "tokyo-ginki-bureau-v40",
+        "tokyo-koikiya-store-v40"
+      ],
+      "fallback": {
+        "en": "In-person stock of this bangle is unconfirmed. Use Koikiya Tokyo for orders and the maker’s website for workshop information.",
+        "ja": "このバングルの店頭取扱いは未確認です。注文は小粋屋東京、工房の案内は日伸貴金属の公式サイトをご確認ください。"
+      },
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "hatakeyama-sterling-shine-mini-earrings",
+      "storeIds": [],
+      "officialHomeUrl": "https://tokyo-shippou.com/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "hatakeyama-sterling-shine-mini-earrings-offer",
+        "hatakeyama-sterling-shine-mini-earrings-maker",
+        "tokyo-shippo-bureau-v40"
+      ],
+      "fallback": {
+        "en": "The maker provides an online order page. In-person availability for this model in Minamisenju is unconfirmed.",
+        "ja": "工房の公式通販で注文できます。南千住でのこの商品の店頭取扱いは未確認です。"
+      },
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "hirose-edo-embroidery-pink-flower-studs",
+      "storeIds": [],
+      "officialHomeUrl": "https://item.rakuten.co.jp/koikiya-tokyo/",
+      "officialHomeRole": "retailer",
+      "sourceIds": [
+        "hirose-edo-embroidery-pink-flower-studs-offer",
+        "hirose-edo-embroidery-pink-flower-studs-maker",
+        "edo-embroidery-bureau-v40",
+        "tokyo-koikiya-store-v40"
+      ],
+      "fallback": {
+        "en": "Online ordering is through Koikiya Tokyo. A Tokyo storefront carrying the pink pierced model is unconfirmed.",
+        "ja": "注文は小粋屋東京の通販をご利用ください。ピンクのピアスが買える都内の実店舗は未確認です。"
+      },
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "nakajima-tsuyayaka-red-urushi-ladybug-studs",
+      "storeIds": [],
+      "officialHomeUrl": "https://item.rakuten.co.jp/koikiya-tokyo/",
+      "officialHomeRole": "retailer",
+      "sourceIds": [
+        "nakajima-tsuyayaka-red-urushi-ladybug-studs-offer",
+        "nakajima-tsuyayaka-red-urushi-ladybug-studs-maker",
+        "edo-lacquerware-bureau-v40",
+        "nakajima-tsuyayaka-red-urushi-ladybug-studs-project",
+        "tokyo-koikiya-store-v40"
+      ],
+      "fallback": {
+        "en": "Order through Koikiya Tokyo. In-person stock of this red version at the Tsukuda workshop is unconfirmed.",
+        "ja": "注文は小粋屋東京の通販へ。この赤のピアスを佃の工房で買えるかは未確認です。"
+      },
       "checkedAt": "2026-11-24"
     }
   ]

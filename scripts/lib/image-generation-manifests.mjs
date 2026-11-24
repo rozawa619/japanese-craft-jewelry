@@ -13,6 +13,7 @@ const soloManifests=[
  {path:'docs/image-generation-solo-v37.json',required:false},
  {path:'docs/image-generation-solo-v38.json',required:false},
  {path:'docs/image-generation-solo-v39.json',required:false},
+ {path:'docs/image-generation-solo-v40.json',required:false},
 ];
 export const trainedAlgorithmicMedia='http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia';
 

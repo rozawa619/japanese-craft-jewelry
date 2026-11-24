@@ -1,13 +1,11 @@
 ---
-title: "東京七宝のジュエリー"
-description: "東京の畠山七宝製作所による、色と輪郭を楽しむ七宝のジュエリー。"
+title: "東京七宝"
+description: "東京・南千住の畠山七宝製作所の装身具。"
 locale: "ja"
-publishStatus: draft
-updatedAt: "2026-11-16"
-sourceIds: ["hatakeyama-maker-v11"]
+publishStatus: "published"
+updatedAt: "2026-11-24"
+sourceIds: ["hatakeyama-maker-v11", "tokyo-shippo-bureau-v40", "hatakeyama-sterling-shine-mini-earrings-offer"]
 craftId: "tokyo-shippo"
 ---
 
-畠山七宝製作所による東京の耳飾りとネックレス。宝石の大きさだけでなく、色と輪郭から選べます。作り手の資格や技法の指定を、すべての個別アクセサリーの認証には置き換えていません。
-
-左右非対称のパフェピアス、小さなビジューペンダントを入り口に。裏側や金具は公式写真で確認してください。
+七宝は、金属の素地にガラス質の釉薬を焼き付ける技法です。畠山七宝製作所の小さなピアスでは、丹銅の上に淡い色が並び、下にコットンパールが揺れます。柄や裏側は工房の公式商品ページで確認できます。

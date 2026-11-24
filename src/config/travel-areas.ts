@@ -37,6 +37,7 @@ export const travelAreas:Readonly<Record<string, readonly TravelArea[]>> = {
   area('nihonbashi','Nihonbashi','日本橋','hario-kodenmacho-store'),
   area('akasaka','Akasaka','赤坂','sirisiri-akasaka-shop'),
   area('hirai','Hirai, Edogawa','江戸川・平井','rinzen-hirai-shop'),
+  area('matsue','Matsue, Edogawa','江戸川・松江','horiguchi-matsue-atelier'),
  ],
  kanagawa:[
   area('hakone','Hakone','箱根','hamamatsuya-hatajuku-main','hakone-maruyama-main'),

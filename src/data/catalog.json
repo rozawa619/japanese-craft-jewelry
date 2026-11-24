@@ -1235,6 +1235,47 @@
         "hirai-iga-kumihimo-three-mini-odamaki-black-gold-necklace-maker",
         "hirai-iga-kumihimo-three-mini-odamaki-black-gold-necklace-craft"
       ]
+    },
+    {
+      "id": "edo-kiriko",
+      "name": "Edo Kiriko cut glass",
+      "description": "Traditional Tokyo glass cutting in small accessories.",
+      "sourceIds": [
+        "edo-kiriko-tokyo-bureau-v40",
+        "horiguchi-kiriko-kikka-ring-union",
+        "horiguchi-kiriko-kikka-ring-offer"
+      ]
+    },
+    {
+      "id": "tokyo-silversmithing",
+      "name": "Tokyo silversmithing",
+      "description": "Hammer-formed and finished silverwork from Tokyo.",
+      "sourceIds": [
+        "tokyo-ginki-bureau-v40",
+        "nisshin-souhaku-hammered-silver-bangle-maker",
+        "nisshin-souhaku-hammered-silver-bangle-offer"
+      ]
+    },
+    {
+      "id": "edo-embroidery",
+      "name": "Edo embroidery",
+      "description": "Silk embroidery worked into small Tokyo accessories.",
+      "sourceIds": [
+        "edo-embroidery-bureau-v40",
+        "hirose-edo-embroidery-pink-flower-studs-maker",
+        "hirose-edo-embroidery-pink-flower-studs-offer"
+      ]
+    },
+    {
+      "id": "edo-lacquerware",
+      "name": "Edo lacquerware",
+      "description": "Tokyo lacquerwork adapted to everyday accessories.",
+      "sourceIds": [
+        "edo-lacquerware-bureau-v40",
+        "nakajima-tsuyayaka-red-urushi-ladybug-studs-maker",
+        "nakajima-tsuyayaka-red-urushi-ladybug-studs-project",
+        "nakajima-tsuyayaka-red-urushi-ladybug-studs-offer"
+      ]
     }
   ],
   "materials": [
@@ -2918,6 +2959,52 @@
       "sourceIds": [
         "hirai-iga-kumihimo-three-mini-odamaki-black-gold-necklace-maker",
         "hirai-iga-kumihimo-three-mini-odamaki-black-gold-necklace-offer"
+      ]
+    },
+    {
+      "id": "horiguchi-kiriko",
+      "name": "Horiguchi Kiriko",
+      "location": "Matsue, Edogawa, Tokyo",
+      "productionNote": "Glass production and processing in Edogawa. The Kikka ring was developed with designer Hiroshi Komiyama.",
+      "url": "https://kiriko.biz/",
+      "sourceIds": [
+        "horiguchi-kiriko-kikka-ring-maker",
+        "horiguchi-kiriko-kikka-ring-offer",
+        "horiguchi-kiriko-kikka-ring-union"
+      ]
+    },
+    {
+      "id": "nisshin-kikinzoku",
+      "name": "Nisshin Kikinzoku",
+      "location": "Taito, Tokyo",
+      "productionNote": "Taito silversmithing workshop; the retailer identifies Souhaku and the hand-hammered bangle.",
+      "url": "https://www.nisshin-kikinzoku.com/",
+      "sourceIds": [
+        "nisshin-souhaku-hammered-silver-bangle-maker",
+        "nisshin-souhaku-hammered-silver-bangle-home",
+        "nisshin-souhaku-hammered-silver-bangle-offer"
+      ]
+    },
+    {
+      "id": "hirose-embroidery",
+      "name": "Hirose Embroidery",
+      "location": "Tokyo",
+      "productionNote": "The Tokyo craft program identifies Sachiko Hirose’s Edo embroidery. The retailer credits the small flower earrings to her studio.",
+      "url": "https://item.rakuten.co.jp/koikiya-tokyo/437/",
+      "sourceIds": [
+        "hirose-edo-embroidery-pink-flower-studs-maker",
+        "hirose-edo-embroidery-pink-flower-studs-offer"
+      ]
+    },
+    {
+      "id": "shitsugei-nakajima",
+      "name": "Shitsugei Nakajima",
+      "location": "Tsukuda, Chuo, Tokyo",
+      "productionNote": "The Edo lacquer workshop in Tsukuda produced the Tsuyayaka jewelry collection.",
+      "url": "https://tokyoteshigoto.tokyo/studio/urusigei-nakajima.html",
+      "sourceIds": [
+        "nakajima-tsuyayaka-red-urushi-ladybug-studs-maker",
+        "nakajima-tsuyayaka-red-urushi-ladybug-studs-project"
       ]
     }
   ],
@@ -4971,6 +5058,44 @@
         "hirai-iga-kumihimo-three-mini-odamaki-black-gold-necklace-offer",
         "hirai-iga-kumihimo-three-mini-odamaki-black-gold-necklace-guide"
       ]
+    },
+    {
+      "id": "horiguchi-kiriko-official",
+      "name": "Horiguchi Kiriko online shop",
+      "url": "https://www.kiriko.shop/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Check shipping to your address and the current dispatch estimate with the seller.",
+        "countries": null,
+        "sourceIds": [
+          "horiguchi-kiriko-kikka-ring-offer",
+          "horiguchi-kiriko-kikka-ring-visit"
+        ]
+      },
+      "returns": "See the seller’s current terms for returns and cancellations.",
+      "sourceIds": [
+        "horiguchi-kiriko-kikka-ring-offer",
+        "horiguchi-kiriko-kikka-ring-visit"
+      ]
+    },
+    {
+      "id": "koikiya-tokyo",
+      "name": "Koikiya Tokyo",
+      "url": "https://item.rakuten.co.jp/koikiya-tokyo/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Check shipping to your address and the current dispatch estimate with the seller.",
+        "countries": null,
+        "sourceIds": [
+          "tokyo-koikiya-store-v40"
+        ]
+      },
+      "returns": "See the seller’s current terms for returns and cancellations.",
+      "sourceIds": [
+        "tokyo-koikiya-store-v40"
+      ]
     }
   ],
   "programs": [
@@ -6876,6 +7001,56 @@
       "merchantId": "bloom-matsuzaki-official",
       "programId": null,
       "officialProductUrl": "https://bloom-matsuzaki.com/ja-jp/products/euony-glass-%E3%83%9A%E3%83%B3%E3%83%80%E3%83%B3%E3%83%88small-%E3%83%8F%E3%83%BC%E3%83%88d",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "horiguchi-kiriko-kikka-ring-official",
+      "productId": "horiguchi-kiriko-kikka-ring",
+      "merchantId": "horiguchi-kiriko-official",
+      "programId": null,
+      "officialProductUrl": "https://www.kiriko.shop/shopdetail/000000000258/ct82/page1/order/",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "nisshin-souhaku-hammered-silver-bangle-official",
+      "productId": "nisshin-souhaku-hammered-silver-bangle",
+      "merchantId": "koikiya-tokyo",
+      "programId": null,
+      "officialProductUrl": "https://item.rakuten.co.jp/koikiya-tokyo/237/",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "hatakeyama-sterling-shine-mini-earrings-official",
+      "productId": "hatakeyama-sterling-shine-mini-earrings",
+      "merchantId": "hatakeyama-official",
+      "programId": null,
+      "officialProductUrl": "https://tokyo-shippou.com/products/detail/124",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "hirose-edo-embroidery-pink-flower-studs-official",
+      "productId": "hirose-edo-embroidery-pink-flower-studs",
+      "merchantId": "koikiya-tokyo",
+      "programId": null,
+      "officialProductUrl": "https://item.rakuten.co.jp/koikiya-tokyo/437/",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "nakajima-tsuyayaka-red-urushi-ladybug-studs-official",
+      "productId": "nakajima-tsuyayaka-red-urushi-ladybug-studs",
+      "merchantId": "koikiya-tokyo",
+      "programId": null,
+      "officialProductUrl": "https://item.rakuten.co.jp/koikiya-tokyo/455/",
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
       "affiliateLinkVerifiedAt": null
@@ -16962,6 +17137,301 @@
       "findings": "Glass and cotton cord. The flower-like form is inside the glass, not identified as a real preserved flower.",
       "fastening": "Cord adjusts by pulling the beads, according to the maker.",
       "taxNote": "Tax-inclusive Japanese online price at the recorded date."
+    },
+    {
+      "id": "horiguchi-kiriko-kikka-ring",
+      "slug": "horiguchi-kiriko-kikka-ring",
+      "locale": "en",
+      "title": "Horiguchi Kiriko Kikka cut-glass ring",
+      "originalTitle": "切子の指輪　Kikka",
+      "publishStatus": "published",
+      "productType": [
+        "ring"
+      ],
+      "prefectureIds": [
+        "tokyo"
+      ],
+      "craftIds": [
+        "edo-kiriko"
+      ],
+      "materialIds": [
+        "glass",
+        "silver",
+        "rhodium-coating"
+      ],
+      "makerId": "horiguchi-kiriko",
+      "craftClassification": {
+        "label": "A glass ring from Edogawa maker Horiguchi Kiriko using Edo Kiriko techniques.",
+        "sourceIds": [
+          "horiguchi-kiriko-kikka-ring-offer",
+          "horiguchi-kiriko-kikka-ring-maker",
+          "edo-kiriko-tokyo-bureau-v40",
+          "horiguchi-kiriko-kikka-ring-union",
+          "horiguchi-kiriko-kikka-ring-visit"
+        ]
+      },
+      "size": "Glass about 15 mm across and 6 mm thick. Selected JP ring size 11.",
+      "weightPerPieceGrams": null,
+      "findings": "Glass and a rhodium-plated silver band.",
+      "fastening": null,
+      "priceAmount": 13200,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-24",
+      "taxNote": "Japanese tax-inclusive listing price on the date shown.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "horiguchi-kiriko-official"
+      ],
+      "sourceIds": [
+        "horiguchi-kiriko-kikka-ring-offer",
+        "horiguchi-kiriko-kikka-ring-maker",
+        "edo-kiriko-tokyo-bureau-v40",
+        "horiguchi-kiriko-kikka-ring-union",
+        "horiguchi-kiriko-kikka-ring-visit"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "editorialSummary": "A chrysanthemum cut into the back of clear glass reads through the flat face. A thin band leaves most of the view to the glass.",
+      "whoItMaySuit": "A clear glass ring with a pattern that becomes easier to see as the hand turns.",
+      "whatToCheck": [
+        "Select 11号 for the checked option. Compare the Japanese size with a ring you already wear.",
+        "The Matsue workshop takes appointments. Confirm your size before visiting."
+      ]
+    },
+    {
+      "id": "nisshin-souhaku-hammered-silver-bangle",
+      "slug": "nisshin-souhaku-hammered-silver-bangle",
+      "locale": "en",
+      "title": "Nisshin Kikinzoku Souhaku hammered silver bangle",
+      "originalTitle": "東京銀器 日伸貴金属 銀師宗伯 純銀製 手打 バングル",
+      "publishStatus": "published",
+      "productType": [
+        "bracelet"
+      ],
+      "prefectureIds": [
+        "tokyo"
+      ],
+      "craftIds": [
+        "tokyo-silversmithing"
+      ],
+      "materialIds": [
+        "silver"
+      ],
+      "makerId": "nisshin-kikinzoku",
+      "craftClassification": {
+        "label": "Nisshin Kikinzoku’s Tokyo silversmithing, made by silversmith Souhaku and sold through Koikiya Tokyo.",
+        "sourceIds": [
+          "nisshin-souhaku-hammered-silver-bangle-offer",
+          "nisshin-souhaku-hammered-silver-bangle-maker",
+          "nisshin-souhaku-hammered-silver-bangle-home",
+          "tokyo-ginki-bureau-v40"
+        ]
+      },
+      "size": "Seller’s body dimensions: approximately 7 mm wide, 2 mm high and 150 mm long.",
+      "weightPerPieceGrams": null,
+      "findings": "999 silver, as stated by the seller.",
+      "fastening": null,
+      "priceAmount": 33000,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-24",
+      "taxNote": "Japanese tax-inclusive listing price on the date shown.",
+      "availability": "listed",
+      "merchantIds": [
+        "koikiya-tokyo"
+      ],
+      "sourceIds": [
+        "nisshin-souhaku-hammered-silver-bangle-offer",
+        "nisshin-souhaku-hammered-silver-bangle-maker",
+        "nisshin-souhaku-hammered-silver-bangle-home",
+        "tokyo-ginki-bureau-v40",
+        "tokyo-koikiya-store-v40"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "editorialSummary": "Hammer marks catch small patches of light across a narrow silver cuff. The surface is the main detail.",
+      "whoItMaySuit": "A narrow metal bracelet with the texture left by hammering.",
+      "whatToCheck": [
+        "The 150 mm figure is the length of the piece listed by the seller. Ask about the opening and wrist fit.",
+        "Made to order. The seller estimates about four weeks."
+      ]
+    },
+    {
+      "id": "hatakeyama-sterling-shine-mini-earrings",
+      "slug": "hatakeyama-sterling-shine-mini-earrings",
+      "locale": "en",
+      "title": "Hatakeyama Shippo Sterling Shine Mini enamel earrings",
+      "originalTitle": "スターリングシャイン・ミニ",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "tokyo"
+      ],
+      "craftIds": [
+        "tokyo-shippo"
+      ],
+      "materialIds": [
+        "tombac",
+        "enamel-glaze",
+        "cotton-pearl",
+        "rhodium-coating"
+      ],
+      "makerId": "hatakeyama-shippo",
+      "craftClassification": {
+        "label": "Tokyo shippo enamel accessory from Hatakeyama Shippo in Minamisenju, Arakawa.",
+        "sourceIds": [
+          "hatakeyama-sterling-shine-mini-earrings-offer",
+          "hatakeyama-sterling-shine-mini-earrings-maker",
+          "tokyo-shippo-bureau-v40"
+        ]
+      },
+      "size": "24 × 17 mm, as listed by the maker.",
+      "weightPerPieceGrams": null,
+      "findings": "Tombac, enamel, a cotton pearl, a rhinestone and rhodium finish.",
+      "fastening": null,
+      "priceAmount": 11000,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-24",
+      "taxNote": "Japanese tax-inclusive listing price on the date shown.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "hatakeyama-official"
+      ],
+      "sourceIds": [
+        "hatakeyama-sterling-shine-mini-earrings-offer",
+        "hatakeyama-sterling-shine-mini-earrings-maker",
+        "tokyo-shippo-bureau-v40"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "editorialSummary": "Pale green and pink sit in a small enamel ornament with a cotton pearl below. The color and the dangling bead move differently in the light.",
+      "whoItMaySuit": "A small drop earring with soft color and a cotton pearl accent.",
+      "whatToCheck": [
+        "Use item code sutapa-ru001 to find the green-and-pink version.",
+        "The maker lists a 5 g weight without specifying a per-ear weight. See the seller for the fastening."
+      ]
+    },
+    {
+      "id": "hirose-edo-embroidery-pink-flower-studs",
+      "slug": "hirose-edo-embroidery-pink-flower-studs",
+      "locale": "en",
+      "title": "Hirose Edo embroidery pink silk flower studs",
+      "originalTitle": "江戸刺繍 ピアス／イヤリング 廣瀬刺繍店",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "tokyo"
+      ],
+      "craftIds": [
+        "edo-embroidery"
+      ],
+      "materialIds": [
+        "silk",
+        "plated-brass",
+        "titanium"
+      ],
+      "makerId": "hirose-embroidery",
+      "craftClassification": {
+        "label": "The retailer credits the silk earrings to Edo embroidery artisan Sachiko Hirose, whose work is identified in Tokyo’s official craft program.",
+        "sourceIds": [
+          "hirose-edo-embroidery-pink-flower-studs-offer",
+          "hirose-edo-embroidery-pink-flower-studs-maker",
+          "edo-embroidery-bureau-v40"
+        ]
+      },
+      "size": "The retailer describes a 12 mm motif and lists overall dimensions of 18 × 12 × 18 mm.",
+      "weightPerPieceGrams": null,
+      "findings": "Silk cloth and thread, plated brass, and titanium posts and backs. The retailer also flags nickel plating.",
+      "fastening": "Stud with post and back.",
+      "priceAmount": 7700,
+      "priceCurrency": "JPY",
+      "priceUnit": "pair",
+      "priceCheckedAt": "2026-11-24",
+      "taxNote": "Japanese tax-inclusive listing price on the date shown.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "koikiya-tokyo"
+      ],
+      "sourceIds": [
+        "hirose-edo-embroidery-pink-flower-studs-offer",
+        "hirose-edo-embroidery-pink-flower-studs-maker",
+        "edo-embroidery-bureau-v40",
+        "tokyo-koikiya-store-v40"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "editorialSummary": "Two tones of silk thread give a small pink flower its shape. Short stitches make the center look subtly raised.",
+      "whoItMaySuit": "Small pierced earrings with thread texture close to the ear.",
+      "whatToCheck": [
+        "Select ピンク and ピアス. The shared listing also sells clip-ons.",
+        "Keep the silk away from snags. See the seller’s metal and coating information before ordering."
+      ]
+    },
+    {
+      "id": "nakajima-tsuyayaka-red-urushi-ladybug-studs",
+      "slug": "nakajima-tsuyayaka-red-urushi-ladybug-studs",
+      "locale": "en",
+      "title": "Shitsugei Nakajima Tsuyayaka red lacquer ladybug earrings",
+      "originalTitle": "ピアス つややか 本漆塗り 江戸漆器 漆芸中島",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "tokyo"
+      ],
+      "craftIds": [
+        "edo-lacquerware"
+      ],
+      "materialIds": [
+        "urushi-lacquer",
+        "wood",
+        "stainless-steel",
+        "brass",
+        "gold-plating"
+      ],
+      "makerId": "shitsugei-nakajima",
+      "craftClassification": {
+        "label": "Shitsugei Nakajima in Tsukuda uses Edo lacquerware techniques on wooden earrings from the Tsuyayaka collection.",
+        "sourceIds": [
+          "nakajima-tsuyayaka-red-urushi-ladybug-studs-offer",
+          "nakajima-tsuyayaka-red-urushi-ladybug-studs-maker",
+          "edo-lacquerware-bureau-v40",
+          "nakajima-tsuyayaka-red-urushi-ladybug-studs-project"
+        ]
+      },
+      "size": "Motif diameter 8 mm according to the retailer.",
+      "weightPerPieceGrams": null,
+      "findings": "Wood with urushi lacquer. The project also lists gold-plated stainless steel, brass and nickel silver for the earring hardware.",
+      "fastening": null,
+      "priceAmount": 10450,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-24",
+      "taxNote": "Japanese tax-inclusive listing price on the date shown.",
+      "availability": "listed",
+      "merchantIds": [
+        "koikiya-tokyo"
+      ],
+      "sourceIds": [
+        "nakajima-tsuyayaka-red-urushi-ladybug-studs-offer",
+        "nakajima-tsuyayaka-red-urushi-ladybug-studs-maker",
+        "edo-lacquerware-bureau-v40",
+        "nakajima-tsuyayaka-red-urushi-ladybug-studs-project",
+        "tokyo-koikiya-store-v40"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "editorialSummary": "A little red lacquer surface catches the light on a near-round wooden form. The ladybug motif is easy to pick out close up.",
+      "whoItMaySuit": "A small, glossy red accent that sits close to the ear.",
+      "whatToCheck": [
+        "The checked option is 赤 (red). Use the seller’s photo for the exact dots and sheen.",
+        "The seller quotes 7–10 business days to dispatch, with some items made after ordering."
+      ]
     }
   ]
 }

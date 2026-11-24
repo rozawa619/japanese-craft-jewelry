@@ -1,14 +1,14 @@
 ---
-title: "東京の作り手と、ガラスのジュエリー"
-description: "凛然の切子とHARIO Lampwork Factory。東京の工房とのつながりから選ぶガラスの装い。"
+title: "東京の工芸アクセサリーを選ぶ"
+description: "江戸切子、東京銀器、東京七宝、江戸刺繍、江戸漆器。東京の作り手と工芸を、装身具から知る。"
 locale: "ja"
 publishStatus: "published"
-updatedAt: "2026-11-16"
-sourceIds: ["becos-rinzen-seika-amber","becos-rinzen-seika-amber-ja","rinzen-brand","becos-rinzen-leaf","becos-rinzen-leaf-ja","hario-netshop-product-v11","hario-lwf-product-v11","hario-lwf-about-v11","hario-kodenmacho-v11"]
+updatedAt: "2026-11-24"
+sourceIds: ["becos-rinzen-seika-amber", "becos-rinzen-seika-amber-ja", "rinzen-brand", "becos-rinzen-leaf", "becos-rinzen-leaf-ja", "hario-netshop-product-v11", "hario-lwf-product-v11", "hario-lwf-about-v11", "hario-kodenmacho-v11", "horiguchi-kiriko-kikka-ring-offer", "nisshin-souhaku-hammered-silver-bangle-offer", "hatakeyama-sterling-shine-mini-earrings-offer", "hirose-edo-embroidery-pink-flower-studs-offer", "nakajima-tsuyayaka-red-urushi-ladybug-studs-offer", "edo-kiriko-tokyo-bureau-v40", "tokyo-ginki-bureau-v40", "tokyo-shippo-bureau-v40", "edo-embroidery-bureau-v40", "edo-lacquerware-bureau-v40"]
 prefectureId: "tokyo"
 relatedMerchantIds: []
 ---
 
-東京からは、凛然の切子とHARIO Lampwork Factoryを選びました。HARIOは小伝馬町に直営店と工房を持ち、国内の複数工房で制作しています。リトルティアーズをどの工房で作るかは未確認のため、全工程が東京製とは紹介していません。
+ガラスの裏に刻む菊の文様、銀に残る槌目、絹糸を粒のように盛り上げる刺繍。東京では、七宝の釉薬や本漆のつやも身につけられます。指輪、バングル、耳飾りを見比べて、気になる品の販売元を確認できます。
 
-角のあるカットと、チェーンに通す小さなしずく。耳元か胸元か、色と輪郭から見比べられます。各品の公式通販の注文受付を確認し、実店舗の個別在庫とは分けて案内しています。
+東京の作り手が他地域の工房と作る品も紹介します。HARIOは小伝馬町に直営店と工房を持ち、国内の複数工房で制作しています。リトルティアーズの制作工房は未確認です。来店する場合は、各商品の店舗案内をご覧ください。

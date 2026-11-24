@@ -1,13 +1,11 @@
 ---
-title: "Tokyo shippo enamel work jewelry"
-description: "Tokyo enamel jewelry by Hatakeyama Shippo; a workshop or craft qualification is not an individual product certificate."
+title: "Tokyo shippo enamel work"
+description: "Tokyo enamel jewelry from Hatakeyama Shippo."
 locale: "en"
-publishStatus: draft
-updatedAt: "2026-11-16"
-sourceIds: ["hatakeyama-maker-v11"]
+publishStatus: "published"
+updatedAt: "2026-11-24"
+sourceIds: ["hatakeyama-maker-v11", "tokyo-shippo-bureau-v40", "hatakeyama-sterling-shine-mini-earrings-offer"]
 craftId: "tokyo-shippo"
 ---
 
-Hatakeyama Shippo’s Tokyo jewelry provides a way to compare color and outline rather than gemstones. The selected products use named metal bases and different fittings. A craft or artisan qualification is not a certificate for every individual accessory.
-
-Start with the asymmetric Parfait earrings or a small Bijou pendant, then check the official photographs for the back and fastening.
+Shippo uses vitreous glaze fired on metal. The colors on Hatakeyama Shippo’s miniature earrings sit over tombac, with a cotton pearl below. The maker’s listing shows the exact pattern and backs.
