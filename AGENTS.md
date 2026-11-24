@@ -62,10 +62,10 @@
 - 次の作業完了時は仕様・引継ぎ・実測を更新する。必要な納品はpackage:deliveryで新しい版付きZIP/全SHAを確認し、過去0.18.0の1198ファイルの履歴を現在のGit全件数へ読み替えない。
 - fresh cloneの通常buildに私的artifacts、元PNG、外部ZIP/proofは不要。原本編集・歴史的照合が必要な場合だけ[GitHub上の配布資料](docs/handoff-assets.md)を取得する。認証情報や前任PCの絶対パスを必須にしない。
 
-## 新チャット引継ぎ（SORA動画・2026-11-22）
+## 新しいチャットや別のAIへの引継ぎ（SORA動画）
 
-- **[新チャット完全引継ぎ](docs/video/NEW_CHAT_HANDOFF.md)** を第一入口に、[TikTok重複防止台帳](docs/video/tiktok-publication-registry.json)、[京都候補7点](docs/video/kyoto-series-plan.json)、[制作進捗](docs/video/production-status.json)、[動画SDD](docs/video/spec.md)、サイトの公開商品/元女性画像を確認する。
-- 神奈川8商品は重複防止の対象。現在は京都編を進める。公開商品・画像・着手状況の正本は [京都編の台帳](docs/video/kyoto-series-plan.json) と [制作進捗](docs/video/production-status.json)。
+- どのチャットやAIでも **[新チャット完全引継ぎ](docs/video/NEW_CHAT_HANDOFF.md)** を最初に開く。最新mainの[動画SDD](docs/video/spec.md)、[Flow共通テンプレート](docs/video/flow-template.md)、[制作進捗](docs/video/production-status.json)、[TikTok重複防止台帳](docs/video/tiktok-publication-registry.json)を参照する。
+- 制作中の地域・回は制作台帳の `seriesFocus` と `currentEpisodeId` で確認し、該当エントリーの `episodePath` と `currentPromptVersion` で指示文を開く。神奈川8商品と[京都編の7商品](docs/video/kyoto-series-plan.json)は重複照合に含める。
 - **サイトの女性の原本画像をそのまま使う**。ユーザーから明示指示がなければ画像新規生成・加工・クロップ・Canva開始画像を作らない。商品IDと人物画像 assetId/path の重複を双方チェックする。
 - TikTokの公開確認は [投稿照合台帳](docs/video/tiktok-publication-registry.json) を参照する。確認した投稿URLと商品・女性画像の対応を記録し、動画制作と投稿の状態を区別する。作業後は制作台帳と対象エピソードを更新する。
 
