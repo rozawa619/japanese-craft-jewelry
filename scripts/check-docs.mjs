@@ -13,6 +13,7 @@ active.push('docs/compact-layout-v20.md',...['spec','plan','tasks','validation']
 active.push('docs/japanese-model-styling-v21.md',...['spec','plan','tasks','validation'].map(name=>'specs/023-japanese-model-styling/'+name+'.md'));
 active.push('START_HERE.md','docs/SITE_NEW_CHAT_HANDOFF.md','docs/handoff-assets.md',...['spec','plan','tasks','validation'].map(name=>'specs/024-git-ai-handoff/'+name+'.md'));
 active.push('specs/034-kyoto-video-jewelry/spec.md','specs/034-kyoto-video-jewelry/validation.md');
+active.push('docs/research/national-listings-2026-11-24.md',...['spec','plan','tasks','validation'].map(name=>'specs/035-national-travel-discovery/'+name+'.md'));
 const pkg=JSON.parse(await readFile(resolve(root,'package.json'),'utf8'));
 const builtins=new Set(['install','exec','audit','run','help','add','remove','update','list','why']);
 const contentCache=new Map();

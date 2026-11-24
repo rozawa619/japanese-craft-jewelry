@@ -1,0 +1,57 @@
+---
+import TypeChoiceImage from './TypeChoiceImage.astro';
+import {pagePath} from '../config/site';
+import {productDetailImageFor} from '../lib/product-detail-images';
+import {travelAreaAnchor,travelAreasFor,productsForTravelPlace} from '../lib/travel-areas';
+import {t,type Locale} from '../lib/i18n';
+interface Props {
+ prefectureId:string;
+ locale:Locale;
+ products:ReturnType<typeof productsForTravelPlace>;
+}
+const {prefectureId,locale,products}=Astro.props;
+const areas=travelAreasFor(prefectureId,products);
+const count=(n:number)=>t(locale,`${n} ${n===1?'piece':'pieces'}`,`${n}点`);
+---
+{areas.length>0&&<section class="area-jewelry" id="local-areas" aria-labelledby="local-areas-title" data-travel-area-list>
+ <header>
+  <h2 id="local-areas-title">{t(locale,'Choose an area to visit','訪ねたいエリアから選ぶ')}</h2>
+  <p>{t(locale,'Grouped by the locations of workshops and shops in our listings. See each jewelry page for visiting details.','掲載している工房・販売店の所在地でまとめています。訪問先の詳細は商品ページで確認できます。')}</p>
+ </header>
+ {areas.length>1&&<nav class="area-menu" aria-label={t(locale,'Local areas','県内のエリア')}>
+  {areas.map(area=><a href={'#'+travelAreaAnchor(area.id)} data-travel-area-link={area.id}><strong>{area.name[locale]}</strong><small>{count(area.local.length+area.retailer.length)}</small><span aria-hidden="true">↓</span></a>)}
+ </nav>}
+ <div class="area-groups">
+  {areas.map(area=><section class="area-group" id={travelAreaAnchor(area.id)} data-travel-area-group={area.id} aria-labelledby={travelAreaAnchor(area.id)+'-title'}>
+   <h3 id={travelAreaAnchor(area.id)+'-title'}>{area.name[locale]} <small>{count(area.local.length+area.retailer.length)}</small></h3>
+   <ul class="area-products">
+    {[...area.local,...area.retailer].map(product=><li><a href={pagePath(`objects/${product.slug}/`,locale)} data-travel-area-product={product.id}>
+     <TypeChoiceImage locale={locale} productId={product.id} image={productDetailImageFor(product.id)}/>
+     <span>{product.title}{area.retailer.includes(product)&&<small>{t(locale,'Regional retailer','地域の販売店')}</small>}</span>
+     <span class="area-product-arrow" aria-hidden="true">↗</span>
+    </a></li>)}
+   </ul>
+  </section>)}
+ </div>
+</section>}
+<style>
+ .area-jewelry{margin:14px 0 40px}
+ .area-jewelry header{margin-bottom:14px}
+ .area-jewelry h2{font-size:clamp(24px,3.4vw,35px);line-height:1.3;margin:0 0 9px}
+ .area-jewelry header p{margin:0;color:var(--muted);font-size:13px;line-height:1.7}
+ .area-menu{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 13px}
+ .area-menu a{display:inline-flex;align-items:center;gap:9px;min-height:44px;background:var(--forest);color:var(--paper);padding:0 12px;font-size:13px;text-decoration:none}
+ .area-menu a:hover{background:#405a48}
+ .area-menu small{font-size:11px}
+ .area-groups{display:grid;gap:12px}
+ .area-group{padding:15px;scroll-margin-top:18px;border:1px solid var(--line);background:#eeeee5}
+ .area-group:target{border-color:var(--forest);box-shadow:inset 3px 0 var(--forest)}
+ .area-group h3{display:flex;flex-wrap:wrap;align-items:baseline;gap:9px;margin:0 0 10px;font-size:23px}
+ .area-group h3 small{font:12px/1.5 var(--sans);color:var(--muted)}
+ .area-products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px 12px;list-style:none;padding:0;margin:0}
+ .area-products a{--type-choice-image-size:52px;display:grid;grid-template-columns:52px minmax(0,1fr) 12px;align-items:center;gap:10px;min-height:44px;padding:5px 8px;background:var(--paper);border:1px solid var(--line);font-size:13px;line-height:1.5;text-decoration:none;overflow-wrap:anywhere}
+ .area-products a:hover{border-color:var(--forest);text-decoration:underline}
+ .area-products small{display:block;margin-top:3px;color:var(--muted);font-size:11px}
+ .area-product-arrow{justify-self:end}
+ @media(max-width:680px){.area-jewelry{margin:12px 0 31px}.area-products{grid-template-columns:1fr}.area-group h3{font-size:22px}}
+</style>

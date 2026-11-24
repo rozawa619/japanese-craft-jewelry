@@ -26,6 +26,8 @@ SORAのSNSプロフィール用ページから、特集商品と旅先ごとの�
 
 公開69/登録75商品、28都道府県、一次出典327件、38店舗、人物67＋単体69のAI画像136枚を掲載。
 
+作業版 v0.24.0 は47都道府県・88商品です。地方→都道府県→訪問エリア→商品を選ぶ日英の旅先検索と、注文受付を再確認した19県の新規商品を収録しました。 [仕様035](specs/035-national-travel-discovery/spec.md) · [一次情報](docs/research/national-listings-2026-11-24.md)
+
 公開コミットとActionsは[公開記録](docs/deployment-results.json)、購入導線の確認範囲は[検証記録](specs/028-purchase-routes/validation.md)を参照してください。
 
 AdSenseはoff、実アフィリエイトは未申請/通常リンクです。実ID/CMP/本人情報/契約/商用ホスト等は[運営上の残条件](docs/remaining-task-audit-v17.md)。申請や契約を資料だけで済んだことにしません。

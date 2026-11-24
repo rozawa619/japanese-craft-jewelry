@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23T16:24:37Z",
+  "updatedAt": "2026-11-24T04:48:41.013Z",
   "entryPoint": "START_HERE.md",
   "project": {
     "name": "Japanese Craft Jewelry",
@@ -12,13 +12,13 @@
     "scope": "Japan-wide craft jewelry selection media; no checkout,shipping,blog or Contact"
   },
   "handoff": {
-    "specification": "024-git-ai-handoff",
+    "specification": "035-national-travel-discovery",
     "status": "ready",
     "basedOnDocumentationCommit": "b6ac11fcf589daa1b7b4786bc98702b36bfee482",
     "activeSiteImplementationTask": null,
-    "nextAction": "Use the current site handoff and production verification. Real iPhone Safari and in-app browsing are pending. Search Console requires a Google account with access to the property. Add further posts after checking their public URLs and catalog matches.",
+    "nextAction": "Use the national catalog and travel discovery guide. See production for the last verified deployment. Real iPhone/SNS browser and Search Console still require separate verification.",
     "currentGitHeadCommand": "git rev-parse HEAD",
-    "verificationReport": "docs/git-handoff-stage-results.json",
+    "verificationReport": "specs/035-national-travel-discovery/validation.md",
     "validatedSourceCommit": "537ee24ca021a9b61801108a4689e22936a3a08a",
     "cleanRunnerVerification": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/44100922768",
     "historicalVerification": {
@@ -78,28 +78,28 @@
     }
   },
   "snapshot": {
-    "publishedProducts": 69,
-    "catalogProducts": 75,
+    "publishedProducts": 88,
+    "catalogProducts": 94,
     "draftProducts": 6,
-    "regions": 28,
-    "activeCrafts": 40,
-    "catalogCrafts": 42,
-    "sources": 327,
-    "stores": 38,
-    "productsWithStores": 61,
-    "onlineEvidence": 60,
+    "regions": 47,
+    "activeCrafts": 59,
+    "catalogCrafts": 61,
+    "sources": 390,
+    "stores": 46,
+    "productsWithStores": 69,
+    "onlineEvidence": 79,
     "retailCatalogEvidence": 9,
-    "publicImages": 136,
-    "stylingImages": 67,
-    "soloImages": 69,
-    "newProducts": 0,
-    "newRegions": 0,
-    "newImageFiles": 0,
+    "publicImages": 174,
+    "stylingImages": 86,
+    "soloImages": 88,
+    "newProducts": 19,
+    "newRegions": 19,
+    "newImageFiles": 38,
     "existingImageBytesRetained": 136,
     "kanagawaWorkshopLinked": 8,
     "kanagawaRegionalRetailer": 4,
     "profileLandingPages": 2,
-    "productsWithVerifiedListingSelections": 10,
+    "productsWithVerifiedListingSelections": 29,
     "productsInVideoShowcase": 11,
     "matchedPublicVideoPosts": 14,
     "videoShowcaseByPrefecture": {
@@ -117,24 +117,26 @@
     "cuteAndElegant": true,
     "clearSkin": true,
     "visibleCaption": "AIイメージ / AI image",
-    "stylingImages": 67,
-    "standaloneImages": 69,
+    "stylingImages": 86,
+    "standaloneImages": 88,
     "replacedIn023": 22,
     "retainedIn023": 36,
     "retiredLocalImages": 37,
     "manifest": "docs/image-generation-japanese-v23.json",
     "latestGenerationRecords": [
       "docs/image-generation-styling-v27.json",
-      "docs/image-generation-solo-v27.json"
+      "docs/image-generation-solo-v27.json",
+      "docs/image-generation-styling-v35.json",
+      "docs/image-generation-solo-v35.json"
     ],
     "latestPortraitUpdate": {
-      "products": 4,
+      "products": 19,
       "adultAgeRange": [
-        22,
-        25
+        21,
+        30
       ],
-      "background": "neutral indoor light",
-      "release": "0.20.0"
+      "background": "soft light, warm neutral interiors",
+      "release": "0.24.0"
     },
     "purchaseNotice": "specs/031-product-image-disclosure/spec.md"
   },
@@ -172,7 +174,9 @@
     "materialCollections": "src/lib/material-collections.ts",
     "productImageNotice": "src/components/ProductImageNote.astro",
     "videoPublication": "docs/video/tiktok-publication-registry.json",
-    "profileVideoJewelry": "src/lib/video-jewelry.ts"
+    "profileVideoJewelry": "src/lib/video-jewelry.ts",
+    "travelFinder": "src/config/travel-areas.ts",
+    "nationalPurchaseResearch": "docs/research/national-listings-2026-11-24.md"
   },
   "completedSpecifications": [
     "018-national-jewelry-expansion",
@@ -190,7 +194,8 @@
     "031-product-image-disclosure",
     "032-purchase-selections",
     "033-sora-video-jewelry",
-    "034-kyoto-video-jewelry"
+    "034-kyoto-video-jewelry",
+    "035-national-travel-discovery"
   ],
   "historicalOnlyScripts": [
     {
@@ -221,9 +226,10 @@
   ],
   "verification": {
     "ci": "docs/git-handoff-stage-ci-results.json",
-    "local": "docs/git-handoff-stage-fresh-results.json",
+    "local": "specs/035-national-travel-discovery/validation.md",
     "assets": "docs/git-handoff-stage-download-results.json",
     "documentation": "docs/git-handoff-stage-docs-results.json",
-    "summary": "docs/git-handoff-stage-results.json"
-  }
+    "summary": "specs/035-national-travel-discovery/validation.md"
+  },
+  "snapshotVersion": "0.24.0"
 }

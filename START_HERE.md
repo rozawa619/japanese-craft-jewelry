@@ -6,6 +6,8 @@
 
 ### 最近のサイト変更
 
+[仕様035](specs/035-national-travel-discovery/spec.md)のソースでは、注文受付を確認した19県の作品を加え、47都道府県・88商品を掲載対象にしています。「旅先からジュエリーを探す」では首都圏などの地方→都道府県→工房・販売店のエリア→商品へ進めます。 [購入根拠の再確認](docs/research/national-listings-2026-11-24.md) · [検証記録](specs/035-national-travel-discovery/validation.md)
+
 このリポジトリとGitHub上の資料から、Japanese Craft Jewelryの保守を再開できます。公開版と配信元は[公開記録](docs/deployment-results.json)で確認できます。[仕様028](specs/028-purchase-routes/spec.md)で、公式通販と取扱店への案内を商品ごとの購入根拠に合わせました。
 
 [仕様034](specs/034-kyoto-video-jewelry/spec.md)で、京都の公開動画と照合した4商品を日英のSORAプロフィールに追加し、神奈川7商品の購入案内を公式情報と再照合しました。スマートフォン相当の操作結果は[034の検証記録](specs/034-kyoto-video-jewelry/validation.md)を参照してください。

@@ -3,6 +3,7 @@ import EditorialImage from './EditorialImage.astro';
 import OfficialPreview from './OfficialPreview.astro';
 import Sources from './Sources.astro';
 import JapanJewelryMap from './JapanJewelryMap.astro';
+import TravelFinder from './TravelFinder.astro';
 import {catalogFor,productsFor,labels} from '../lib/catalog';
 import MarketPrice from './MarketPrice.astro';
 import {productImageFor} from '../lib/editorial-images';
@@ -48,6 +49,7 @@ const groups=hasRanking?[
   </div>
  </div>
  <p class="region-selector-intro">{t(locale,'Where will Japan take you? Choose a region to explore its jewelry. The piece beside each destination is our starting point for the selection.','次の旅先で出会いたい、身につける工芸。産地を選ぶと、その土地の商品をまとめて見られます。右の一品を入り口に、気になるかたちを探してください。')}</p>
+ <TravelFinder locale={locale} id="travel-finder"/>
  {hasRanking&&<><p class="region-ranking-note" data-tourism-ranking-note>{t(locale,`Ordered by prefectural visit rate in ${tourismRanking.year}: all nationalities and purposes, with multiple answers allowed. This ranks travel destinations; the jewelry is selected by us.`,`${tourismRanking.year}年の訪日客の訪問率順。全目的・全国籍地域・複数回答の調査です。商品の人気順位ではありません。`)}</p><div data-tourism-ranking-sources><Sources sourceIds={['jta-2025-visit-rates-v9']} locale={locale}/></div></>}
  {groups.filter(group=>group.rows.length>0).map(group=><>
  {group.kind==='additional'&&<JapanJewelryMap locale={locale} id={id}/>}

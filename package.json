@@ -1,6 +1,6 @@
 {
   "name": "japanese-craft-jewelry",
-  "version": "0.23.1",
+  "version": "0.24.0",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@11.25.0",
@@ -17,6 +17,7 @@
     "readiness": "node --experimental-strip-types scripts/readiness.ts",
     "check:links": "node scripts/check-external.mjs",
     "check:browser": "node scripts/check-bilingual.mjs",
+    "check:travel": "node scripts/check-national-travel-discovery.mjs",
     "check:ads": "node scripts/check-ad-build.mjs",
     "package": "node scripts/package-source.mjs",
     "check:prices": "node scripts/check-market-prices.mjs",

@@ -1,0 +1,174 @@
+---
+import {travelRegions} from '../config/travel-areas';
+import {pagePath} from '../config/site';
+import {catalogFor,productsFor} from '../lib/catalog';
+import {contentFor,contentSlug} from '../lib/content';
+import {travelAreaAnchor,travelAreasFor,productsForTravelPlace} from '../lib/travel-areas';
+import {t,type Locale} from '../lib/i18n';
+import type {Product} from '../lib/schema';
+import {serializeJsonLd} from '../lib/structured-data';
+
+interface Props {locale:Locale;id:string}
+const {locale,id}=Astro.props;
+const {prefectures}=catalogFor(locale);
+const products=productsFor(locale);
+const previews=(items:Product[])=>items.slice(0,3).map(product=>({
+ title:product.title,href:pagePath(`objects/${product.slug}/`,locale),
+}));
+const choices=new Map((await contentFor('places',locale)).flatMap(note=>{
+ const prefecture=prefectures.find(place=>place.id===note.data.prefectureId);
+ if(!prefecture||!note.body?.trim())return [];
+ const selection=productsForTravelPlace(products,prefecture.id,note.data.relatedMerchantIds);
+ if(!selection.local.length)return [];
+ const href=pagePath(`places/${contentSlug(note)}/`,locale);
+ const areas=travelAreasFor(prefecture.id,selection).map(area=>{
+  const items=[...area.local,...area.retailer];
+  return {id:area.id,name:area.name[locale],href:href+'#'+travelAreaAnchor(area.id),count:items.length,retailerCount:area.retailer.length,previews:previews(items)};
+ });
+ const items=[...selection.local,...selection.retailer];
+ return [[prefecture.id,{id:prefecture.id,name:prefecture.name,href,count:items.length,retailerCount:selection.retailer.length,previews:previews(items),areas}]] as const;
+}));
+const regions=travelRegions.flatMap(region=>{
+ const prefectures=region.prefectures.flatMap(id=>{const place=choices.get(id);return place?[place]:[]});
+ return prefectures.length?[{id:region.id,name:region.name[locale],prefectures}]:[];
+});
+---
+{regions.length>0&&<section class="travel-finder" id={id} aria-labelledby={id+'-title'} data-travel-finder>
+ <header class="travel-heading">
+  <h3 id={id+'-title'}>{t(locale,'Find jewelry for your next trip','旅先からジュエリーを探す')}</h3>
+  <p>{t(locale,'Choose a region, prefecture and nearby area to find craft jewelry.','地方、都道府県、エリアを選んで、気になる工芸ジュエリーへ。')}</p>
+ </header>
+ <div data-travel-controls hidden>
+  <div class="travel-selects">
+   <label for={id+'-region'}>{t(locale,'Region','地方')}<select id={id+'-region'} data-travel-region>
+    {regions.map(region=><option value={region.id}>{region.name}</option>)}
+   </select></label>
+   <label for={id+'-prefecture'}>{t(locale,'Prefecture','都道府県')}<select id={id+'-prefecture'} data-travel-prefecture disabled>
+    <option value="">{t(locale,'Choose a prefecture','都道府県を選ぶ')}</option>
+   </select></label>
+   <label for={id+'-area'}>{t(locale,'Local area','エリア')}<select id={id+'-area'} data-travel-area disabled>
+    <option value="">{t(locale,'All areas','すべてのエリア')}</option>
+   </select></label>
+  </div>
+  <div class="travel-results" data-travel-results hidden>
+   <div><p data-travel-status role="status"></p><ul data-travel-product-links></ul></div>
+   <a class="button travel-result-link" data-travel-destination><span>{t(locale,'View jewelry here','この地域の商品を見る')}</span><span aria-hidden="true">→</span></a>
+  </div>
+ </div>
+ <details class="travel-directory" data-travel-directory>
+  <summary>{t(locale,'Browse all featured prefectures','掲載中の都道府県を一覧で見る')}</summary>
+  <div class="travel-directory-grid">{regions.map(region=><section>
+   <h4>{region.name}</h4>
+   <ul>{region.prefectures.map(prefecture=><li><a data-travel-prefecture-link={prefecture.id} href={prefecture.href}>{prefecture.name}<span aria-hidden="true">↗</span></a></li>)}</ul>
+  </section>)}</div>
+ </details>
+ <script type="application/json" data-travel-data set:html={serializeJsonLd({locale,regions,choosePrefecture:t(locale,'Choose a prefecture','都道府県を選ぶ'),allAreas:t(locale,'All areas','すべてのエリア')})}/>
+</section>}
+<script>
+ type Choice={id:string;name:string};
+ type Place=Choice&{href:string;count:number;retailerCount:number;previews:{title:string;href:string}[]};
+ type Prefecture=Place&{areas:Place[]};
+ type TravelGroup=Choice&{prefectures:Prefecture[]};
+ type TravelData={locale:'en'|'ja';regions:TravelGroup[];choosePrefecture:string;allAreas:string};
+
+ document.querySelectorAll<HTMLElement>('[data-travel-finder]').forEach(finder=>{
+  const region=finder.querySelector<HTMLSelectElement>('[data-travel-region]');
+  const prefecture=finder.querySelector<HTMLSelectElement>('[data-travel-prefecture]');
+  const area=finder.querySelector<HTMLSelectElement>('[data-travel-area]');
+  const results=finder.querySelector<HTMLElement>('[data-travel-results]');
+  const status=finder.querySelector<HTMLParagraphElement>('[data-travel-status]');
+  const products=finder.querySelector<HTMLUListElement>('[data-travel-product-links]');
+  const destination=finder.querySelector<HTMLAnchorElement>('[data-travel-destination]');
+  const controls=finder.querySelector<HTMLElement>('[data-travel-controls]');
+  if(!region||!prefecture||!area||!results||!status||!products||!destination||!controls)return;
+
+  let data:TravelData;
+  try{data=JSON.parse(finder.querySelector('[data-travel-data]')?.textContent||'')}catch{return}
+  const initialGroup=data.regions[0];
+  if(!initialGroup)return;
+  const queryKeys={region:'travel-region',prefecture:'travel-prefecture',area:'travel-area'};
+  const fill=(select:HTMLSelectElement,placeholder:string,options:Choice[],value:string)=>{
+   select.replaceChildren(new Option(placeholder,''),...options.map(option=>new Option(option.name,option.id)));
+   select.value=options.some(option=>option.id===value)?value:'';
+   select.disabled=options.length===0;
+  };
+  const render=(groupId:string,placeId:string,areaId:string)=>{
+   const group=data.regions.find(entry=>entry.id===groupId)??initialGroup;
+   region.value=group.id;
+   fill(prefecture,data.choosePrefecture,group.prefectures,placeId);
+   const place=group.prefectures.find(entry=>entry.id===prefecture.value);
+   fill(area,data.allAreas,place?.areas??[],areaId);
+   const localArea=place?.areas.find(entry=>entry.id===area.value);
+   const result=localArea??place;
+   results.hidden=!result;
+   if(!result){
+    destination.removeAttribute('href');
+    status.textContent='';
+    products.replaceChildren();
+    return;
+   }
+   destination.href=result.href;
+   const breadcrumb=localArea?`${place?.name} › ${localArea.name}`:result.name;
+   const count=data.locale==='ja'?`${result.count}点`:`${result.count} ${result.count===1?'piece':'pieces'}`;
+   const retailerNote=result.retailerCount
+    ?(data.locale==='ja'?`（うち販売店の取扱い ${result.retailerCount}点）`:` (including ${result.retailerCount} from regional retailers)`)
+    :'';
+   status.textContent=`${breadcrumb} · ${count}${retailerNote}`;
+   products.replaceChildren(...result.previews.map(product=>{
+    const item=document.createElement('li');
+    const link=document.createElement('a');
+    link.href=product.href;
+    link.textContent=product.title;
+    item.append(link);
+    return item;
+   }));
+  };
+  const restore=()=>{
+   const params=new URLSearchParams(location.search);
+   render(params.get(queryKeys.region)||'',params.get(queryKeys.prefecture)||'',params.get(queryKeys.area)||'');
+  };
+  const save=()=>{
+   const url=new URL(location.href);
+   for(const [key,value] of [[queryKeys.region,region.value],[queryKeys.prefecture,prefecture.value],[queryKeys.area,area.value]]){
+    if(value)url.searchParams.set(key,value);else url.searchParams.delete(key);
+   }
+   history.replaceState(history.state,'',url);
+  };
+  region.addEventListener('change',()=>{render(region.value,'','');save()});
+  prefecture.addEventListener('change',()=>{render(region.value,prefecture.value,'');save()});
+  area.addEventListener('change',()=>{render(region.value,prefecture.value,area.value);save()});
+  window.addEventListener('popstate',restore);
+  restore();
+  controls.hidden=false;
+ });
+</script>
+<style>
+ .travel-finder{margin:25px 0 34px;padding:clamp(16px,3.1vw,29px);background:var(--green);border:1px solid var(--line);scroll-margin-top:24px}
+ .travel-heading h3{font-size:clamp(21px,2.6vw,29px);line-height:1.35;margin-bottom:7px}
+ .travel-heading p{color:var(--muted);font-size:13px;line-height:1.6;margin:0 0 17px}
+ .travel-selects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+ .travel-selects label{display:grid;gap:5px;min-width:0;color:var(--forest);font-size:12px;font-weight:600}
+ .travel-selects select{width:100%;height:48px;border:1px solid #89958b;border-radius:0;background:var(--paper);padding:0 24px 0 12px;font-size:16px;font-weight:400}
+ .travel-selects select:disabled{color:var(--muted);border-color:var(--line);opacity:1;cursor:default}
+ .travel-results{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:16px;padding-top:15px;margin-top:15px;border-top:1px solid #abb4a9}
+ .travel-results p{font-size:14px;font-weight:600;margin:0 0 5px}
+ .travel-results ul{display:flex;flex-wrap:wrap;gap:0 14px;margin:0;padding:0;list-style:none}
+ .travel-results li{min-width:0;max-width:100%}
+ .travel-results li a{display:inline-flex;align-items:center;min-height:44px;font-size:13px;line-height:1.45;overflow-wrap:anywhere}
+ .travel-result-link{justify-content:space-between;gap:20px;max-width:100%;align-self:center}
+ .travel-directory{margin-top:10px}
+ .travel-directory summary{width:fit-content;min-height:44px;padding:10px 0;font-size:13px;line-height:24px;color:var(--forest)}
+ .travel-directory-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;padding-top:10px}
+ .travel-directory h4{margin:0;padding-bottom:5px;border-bottom:1px solid #abb4a9;font:600 13px/1.55 var(--sans)}
+ .travel-directory ul{list-style:none;padding:0;margin:0}
+ .travel-directory a{display:flex;min-height:44px;align-items:center;justify-content:space-between;gap:6px;font-size:13px;line-height:1.5;text-decoration:none}
+ .travel-directory a:hover{text-decoration:underline}
+ @media(max-width:680px){
+  .travel-finder{margin:17px 0 27px}
+  .travel-selects{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .travel-selects label:last-child{grid-column:1/-1}
+  .travel-results{grid-template-columns:1fr;gap:6px}
+  .travel-directory-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+ }
+ @media(max-width:360px){.travel-selects{grid-template-columns:1fr}}
+</style>

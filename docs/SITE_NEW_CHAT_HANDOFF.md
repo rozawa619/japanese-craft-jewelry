@@ -58,12 +58,16 @@ Astro 7・TypeScript・Zodを使う日英の静的サイトです。日本地図
 
 ## 次の候補と残条件
 
+### v0.24.0のソース
+
+全国拡充と日英の旅先検索は[仕様035](../specs/035-national-travel-discovery/spec.md)です。47都道府県から探せるようにし、神奈川は箱根・鎌倉、東京は訪問先を確認した各エリアから商品に進めます。都道府県とエリアの表示用データは [travel-areas.ts](../src/config/travel-areas.ts) にあります。新規19商品の注文確認は [一次情報の記録](research/national-listings-2026-11-24.md)、画像の作成条件は [着用イメージの記録](image-generation-styling-v35.json) を参照してください。
+
 | 優先候補 | 進め方・依存条件 |
 | --- | --- |
 | 検索流入の準備 | 公開側のcanonical・hreflang・サイトマップを確認。Search Consoleの対象プロパティは確認時のGoogleアカウントで閲覧権限なし。Googleの登録状況と実績の確認には、権限のあるアカウントが必要。 [検証ガイド](verification-guide.md) |
 | 動画から商品への案内 | TikTok公開14投稿から京都4・神奈川7商品へ案内。今後の公開投稿と商品IDを照合できた分を台帳へ追加。Instagramの個別投稿との対応と、プロフィール欄の掲載・実流入は確認待ち。 [仕様034](../specs/034-kyoto-video-jewelry/spec.md) |
 | 購入時の情報差を減らす | 神奈川の動画掲載7商品を再照合済み。他の商品は同じ商品・色・金具・市場・販売単位で、販売元の情報と照合する。 [仕様028](../specs/028-purchase-routes/spec.md)・[仕様032](../specs/032-purchase-selections/spec.md) |
-| 未掲載地域を拡充 | 47都道府県のうち未掲載の19県に余地がある。一次出典と購入先が揃った商品を下書きから登録し、日英表示・画像と出典を確認。 [仕様027](../specs/027-regional-craft-picks/spec.md) |
+| 全国版の配信 | 47都道府県の作業版を公開するときは、掲載した19点の注文根拠と[035の検証](../specs/035-national-travel-discovery/validation.md)を確認し、公開記録を更新する。 |
 | 収益化の準備 | 商用ホストの適合、BECOS等の提携条件、実アカウントの承認、広告の同意管理や画像使用条件を確認。 [申請前の確認](pre-application-checklist.md) |
 | 運用と端末の検証 | iPhone 15相当のWebKitで購入導線・日英切替を確認済み。実機iPhone／SafariとSNSのアプリ内ブラウザーは確認待ち。 [034の検証](../specs/034-kyoto-video-jewelry/validation.md) |
 
