@@ -9,15 +9,15 @@
 | サイト | Japanese Craft Jewelry。全国の工芸ジュエリーを選ぶJA/EN紹介メディア。運営者SORA |
 | 公開URL | [日本語](https://rozawa619.github.io/japanese-craft-jewelry/ja/)・[English](https://rozawa619.github.io/japanese-craft-jewelry/en/) |
 | リポジトリ | [rozawa619/japanese-craft-jewelry](https://github.com/rozawa619/japanese-craft-jewelry)・main |
-| 最新公開アプリ | **v0.25.0**、アプリSHA `8e4ef5f2239e870b61a014d86f30115b43cc2535`。[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45335744645)の配信は2026-11-24 14:48 JSTに完了。詳細は[公開記録](deployment-results.json) |
+| 最新公開アプリ | **v0.26.0**、アプリSHA `015ad3c91956745b1bdcdf454f751ee01fde7fc3`。[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45339284497)の配信は2026-11-24 15:18 JSTに完了。 [公開記録](deployment-results.json) |
 | Gitからの再開方法 | [仕様024](../specs/024-git-ai-handoff/spec.md)が基本手順。[サイト専用の引継ぎ書](SITE_NEW_CHAT_HANDOFF.md)に現行機能と再開順を記録 |
-| 内容 | 公開93/登録99商品、下書き6、掲載47都道府県、公開関連技法64/全66、一次出典415、49店舗/72商品に店舗案内。購入根拠は公式通販84商品、店舗とカタログ9商品 |
-| 画像 | 人物91＋商品単体93のAI画像184枚。架空の日本人成人女性21〜33歳の生成設定 |
+| 内容 | 公開109/登録115商品、下書き6、掲載47都道府県、公開関連技法70/全72、一次出典489、54店舗/83商品に店舗案内。購入根拠は公式通販100商品、店舗とカタログ9商品 |
+| 画像 | 人物107＋商品単体109のAI画像216枚。着用は架空の日本人成人女性として生成。今回の創作設定は21〜29歳 |
 | AI画像の確認案内 | v0.22.1で日英の商品詳細と着用AI画像付きのカードに表示。実物の色・模様・形・金具は販売元の商品情報へ案内する。 [仕様031](../specs/031-product-image-disclosure/spec.md) |
 | 販売元の選択名と販売単位 | v0.22.2で10商品の日英購入導線に選択名・カタログ掲載名を表示。凛然 星華 琥珀の国内・海外価格に1組の販売単位を表示。 [仕様032](../specs/032-purchase-selections/spec.md) |
 | 動画で紹介した商品 | v0.23.1の日英 `/sora/` で、公開14投稿に対応する京都4・神奈川7商品へ案内。神奈川7商品の購入案内を公式情報と再照合。 [仕様034](../specs/034-kyoto-video-jewelry/spec.md) |
 | 全国掲載と旅先検索 | v0.24.0から47都道府県・88商品。注文受付を確認した19県の19商品を追加し、日英で地方・県・訪問エリアから商品に案内。v0.24.1でスマートフォンの初期画面に検索への通常リンクを追加し、選択後の商品プレビューのリンクの高さを44px以上に修正。 [仕様035](../specs/035-national-travel-discovery/spec.md) · [一次情報](research/national-listings-2026-11-24.md) |
-| 直近の産地別商品追加 | v0.25.0で青森・秋田・石川・静岡・沖縄に各1商品を追加し、公開93商品へ拡充。角館・金沢・那覇の訪問エリアを追加。 [仕様036](../specs/036-regional-craft-jewelry-picks/spec.md) · [一次情報](research/regional-craft-picks-2026-11-24.md) |
+| 直近の産地別商品追加 | v0.26.0で16点を追加。訪日旅行先Top10の掲載数が5点に届いていなかった7県を補強し、全10都道府県で5点以上になりました。岩手・福島・熊本・大分にも各1点を追加しました。旅先検索には会津若松の取扱店、ならまち、奈良市水門町、北九州市戸畑、糸島の案内を追加しました。 [仕様037](../specs/037-top10-craft-jewelry-depth/spec.md) · [一次情報](research/top10-craft-jewelry-depth-2026-11-24.md) |
 | 完了した023の変更 | 22人物を新生成・採用・公開、既存36人物と単体60を保持。新22枚は25〜30歳、かわいい系11/綺麗な系統11 |
 | 退役画像 | 旧10＋023の旧22＋026の旧5＝37画像を配信/新Git tree/source ZIPから除外。旧原本と生成記録は保持 |
 | 収益化 | AdSense off、実提携未申請、商品リンクは通常URL。広告resolverとPrivacyの土台は実装済み |
@@ -48,7 +48,7 @@
 
 ## 公開版の検証記録
 
-v0.25.0は2026-11-24 14:48 JSTにGitHub Pagesへの配信が完了し、追加商品の公開URLがHTTP 200で応答することを確認しました。現行版の詳しい確認範囲と公開後の結果は[仕様036の検証](../specs/036-regional-craft-jewelry-picks/validation.md)と[公開記録](deployment-results.json)を参照してください。実機iPhone／Safariにはアクセスできず未検証です。
+v0.26.0は2026-11-24 15:18 JSTにGitHub Pagesへの配信が完了しました。日英の公開商品詳細、画像、旅先の導線を確認しています。 [仕様037の検証](../specs/037-top10-craft-jewelry-depth/validation.md) · [公開記録](deployment-results.json)
 
 v0.24.1当時の日英トップの応答・HTML照合、iPhone相当のWebKitエミュレーションとChromiumの結果は[仕様035の検証](../specs/035-national-travel-discovery/validation.md)に残しています。
 

@@ -25,11 +25,11 @@ const expectedRanking=[...research.ranking].sort((a,b)=>a.rank-b.rank);
 assert.equal(expectedRanking.length,10,'The independently researched annual ranking must have ten entries.');
 assert.deepEqual(expectedRanking.map(row=>row.rank),[1,2,3,4,5,6,7,8,9,10]);
 const expectedOrder=expectedRanking.map(row=>row.prefectureId);
-const additionalOrder=['ishikawa','saga'];
+const additionalOrder=['kagoshima','kumamoto','tokushima'];
 const route=(locale,path='')=>new URL(base+locale+'/'+path,origin).href;
 const report={
  checkedAt:new Date().toISOString(),origin,base,mode:focusOnly?'focused crop and layout recheck':'full navigation check',
- method:focusOnly?'Focused fresh-Chrome layout recheck after CSS polish: EN/JA home/selection/regions at1440/390/320, independent source ranking, complete representative-image decoding, natural aspect ratio for preserveRatio desktop images, unsplit short region names, left/right placement, overflow and accessibility. Six regional row crops per language/viewport support manual visual review. Does not repeat the earlier full region/product click roundtrips or navigate to external sites.':'Fresh Chrome, read-only internal navigation. Ranking expectation is the separately researched JTA2025 final Table6-1 extraction, not the display configuration. EN/JA at1440/390/320; exact ten ranked destinations plus Ishikawa/Saga; every ranked region and its representative are actually clicked, followed and returned from. Images, AI labels, region association, minimum five local products, keyboard/language flow, overflow, accessibility and full-page home/selection screenshots. No retailer/map/source navigation, forms, account actions or applications.',
+ method:focusOnly?'Focused fresh-Chrome layout recheck after CSS polish: EN/JA home/selection/regions at1440/390/320, independent source ranking, complete representative-image decoding, natural aspect ratio for preserveRatio desktop images, unsplit short region names, left/right placement, overflow and accessibility. Six regional row crops per language/viewport support manual visual review. Does not repeat the earlier full region/product click roundtrips or navigate to external sites.':'Fresh Chrome, read-only internal navigation. Ranking expectation is the separately researched JTA2025 final Table6-1 extraction, not the display configuration. EN/JA at1440/390/320; exact ten ranked destinations plus the three current Discover prefectures; every ranked region and its representative are actually clicked, followed and returned from. Images, AI labels, region association, minimum five local products, keyboard/language flow, overflow, accessibility and full-page home/selection screenshots. No retailer/map/source navigation, forms, account actions or applications.',
  research:{year:research.year,table:research.table,source:research.dataUrl,checkedAt:research.checkedAt},
  checks:[],failures:[],screenshots:[],pageErrors:[],consoleErrors:[],
 };
@@ -70,7 +70,7 @@ async function inspectDirectory(page,locale,width){
  assert.deepEqual(await ranked.evaluateAll(rows=>rows.map(row=>row.getAttribute('data-region-row'))),expectedOrder);
  const extra=directory.locator('[data-region-group="additional"] [data-region-row]');
  assert.deepEqual((await extra.evaluateAll(rows=>rows.map(row=>row.getAttribute('data-region-row')))).sort(),additionalOrder);
- assert.equal(await directory.locator('[data-region-row]').count(),12,'Do not hide the existing out-of-top-ten destinations.');
+ assert.equal(await directory.locator('[data-region-row]').count(),expectedOrder.length+additionalOrder.length,'Include the current Discover shortlist alongside the Top10.');
  assert.equal(await extra.evaluateAll(rows=>rows.filter(row=>row.hasAttribute('data-tourism-rank')).length),0,'Additional regions must not be given travel ranks.');
  const note=directory.locator('[data-tourism-ranking-note]');
  const noteText=await note.innerText();
