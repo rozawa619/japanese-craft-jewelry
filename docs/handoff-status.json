@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-24T05:19:39.328Z",
+  "updatedAt": "2026-11-24T05:50:11.623Z",
   "entryPoint": "START_HERE.md",
   "project": {
     "name": "Japanese Craft Jewelry",
@@ -12,15 +12,15 @@
     "scope": "Japan-wide craft jewelry selection media; no checkout,shipping,blog or Contact"
   },
   "handoff": {
-    "specification": "035-national-travel-discovery",
+    "specification": "036-regional-craft-jewelry-picks",
     "status": "ready",
     "basedOnDocumentationCommit": "b6ac11fcf589daa1b7b4786bc98702b36bfee482",
     "activeSiteImplementationTask": null,
     "nextAction": "Use the national catalog and travel discovery guide. See production for the last verified deployment. Real iPhone/SNS browser and Search Console still require separate verification.",
     "currentGitHeadCommand": "git rev-parse HEAD",
-    "verificationReport": "specs/035-national-travel-discovery/validation.md",
-    "validatedSourceCommit": "ea640461a02b099a27641f4d8e14b5518d4d709c",
-    "cleanRunnerVerification": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45332290970",
+    "verificationReport": "specs/036-regional-craft-jewelry-picks/validation.md",
+    "validatedSourceCommit": "8e4ef5f2239e870b61a014d86f30115b43cc2535",
+    "cleanRunnerVerification": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45335744645",
     "historicalVerification": {
       "appVersion": "0.18.0",
       "applicationCommit": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
@@ -30,16 +30,16 @@
     "siteGuide": "docs/SITE_NEW_CHAT_HANDOFF.md"
   },
   "production": {
-    "version": "0.24.1",
-    "applicationCommit": "ea640461a02b099a27641f4d8e14b5518d4d709c",
+    "version": "0.25.0",
+    "applicationCommit": "8e4ef5f2239e870b61a014d86f30115b43cc2535",
     "actions": {
-      "id": 45332290970,
-      "headSha": "ea640461a02b099a27641f4d8e14b5518d4d709c",
+      "id": 45335744645,
+      "headSha": "8e4ef5f2239e870b61a014d86f30115b43cc2535",
       "status": "completed",
       "conclusion": "success",
-      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45332290970",
-      "deploymentCompletedAt": "2026-11-24T05:18:31Z",
-      "observedAt": "2026-11-24T05:19:39.328Z"
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45335744645",
+      "deploymentCompletedAt": "2026-11-24T05:48:10Z",
+      "observedAt": "2026-11-24T05:50:11.623Z"
     },
     "urls": {
       "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
@@ -66,47 +66,52 @@
       "kanagawaHakoneJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/kanagawa/#area-hakone",
       "kanagawaKamakuraJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/kanagawa/#area-kamakura",
       "hakoneProductJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/",
-      "kamakuraProductJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/yogado-kamakura-bori-camellia-brooch/"
+      "kamakuraProductJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/yogado-kamakura-bori-camellia-brooch/",
+      "aomoriRegionalPickJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/lanka-tsugaru-kogin-mameko-brooch-ivory-mustard/",
+      "akitaRegionalPickJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/tomioka-kakunodate-kabazaiku-kavers-urokomon-brooch-s/",
+      "ishikawaRegionalPickJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hakuza-kanazawa-gold-leaf-acrylic-bangle-towairo/",
+      "shizuokaRegionalPickJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/nagasawa-shimizu-kawara-kiku-pearl-pierced-earrings/",
+      "okinawaRegionalPickJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/kanoa-okinawa-blue-hotaru-glass-clip-on-earrings/"
     },
     "report": "docs/deployment-results.json",
-    "verification": "specs/035-national-travel-discovery/validation.md",
-    "outputManifest": "docs/national-travel-v35-mobile-fixes-build-manifest.json",
+    "verification": "specs/036-regional-craft-jewelry-picks/validation.md",
+    "outputManifest": "docs/regional-craft-picks-v36-build-manifest.json",
     "outputManifestStatus": "verified_build_and_public_sample",
-    "previousFullOutputManifest": "docs/national-travel-v35-build-manifest.json",
+    "previousFullOutputManifest": "docs/national-travel-v35-mobile-fixes-build-manifest.json",
     "buildArtifact": {
-      "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14892307907/zip",
-      "bytes": 15773738,
-      "digest": "sha256:a30227be4ce322dcaff13eff3c648c30cf172d8360020e0ceff5a0cdf8e0f180",
-      "expiresAt": "2026-11-25T05:18:15Z",
-      "headSha": "ea640461a02b099a27641f4d8e14b5518d4d709c",
-      "id": 14892307907,
+      "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14894410721/zip",
+      "bytes": 17183989,
+      "digest": "sha256:565076b4ff5fa697d60d8e7ad5a73e547a7cecfc17bd4a42b2b9437b037f4908",
+      "expiresAt": "2026-11-25T05:47:53Z",
+      "headSha": "8e4ef5f2239e870b61a014d86f30115b43cc2535",
+      "id": 14894410721,
       "name": "github-pages"
     },
-    "hostedMobileReport": "docs/national-travel-v35-hosted-webkit-results.json"
+    "hostedMobileReport": "docs/regional-craft-picks-v36-hosted-mobile-results.json"
   },
   "snapshot": {
-    "publishedProducts": 88,
-    "catalogProducts": 94,
+    "publishedProducts": 93,
+    "catalogProducts": 99,
     "draftProducts": 6,
     "regions": 47,
-    "activeCrafts": 59,
-    "catalogCrafts": 61,
-    "sources": 390,
-    "stores": 46,
-    "productsWithStores": 69,
-    "onlineEvidence": 79,
+    "activeCrafts": 64,
+    "catalogCrafts": 66,
+    "sources": 415,
+    "stores": 49,
+    "productsWithStores": 72,
+    "onlineEvidence": 84,
     "retailCatalogEvidence": 9,
-    "publicImages": 174,
-    "stylingImages": 86,
-    "soloImages": 88,
-    "newProducts": 19,
-    "newRegions": 19,
-    "newImageFiles": 38,
-    "existingImageBytesRetained": 136,
+    "publicImages": 184,
+    "stylingImages": 91,
+    "soloImages": 93,
+    "newProducts": 5,
+    "newRegions": 0,
+    "newImageFiles": 10,
+    "existingImageBytesRetained": 174,
     "kanagawaWorkshopLinked": 8,
     "kanagawaRegionalRetailer": 4,
     "profileLandingPages": 2,
-    "productsWithVerifiedListingSelections": 29,
+    "productsWithVerifiedListingSelections": 34,
     "productsInVideoShowcase": 11,
     "matchedPublicVideoPosts": 14,
     "videoShowcaseByPrefecture": {
@@ -202,7 +207,8 @@
     "032-purchase-selections",
     "033-sora-video-jewelry",
     "034-kyoto-video-jewelry",
-    "035-national-travel-discovery"
+    "035-national-travel-discovery",
+    "036-regional-craft-jewelry-picks"
   ],
   "historicalOnlyScripts": [
     {
@@ -233,11 +239,11 @@
   ],
   "verification": {
     "ci": "docs/git-handoff-stage-ci-results.json",
-    "local": "specs/035-national-travel-discovery/validation.md",
+    "local": "specs/036-regional-craft-jewelry-picks/validation.md",
     "assets": "docs/git-handoff-stage-download-results.json",
     "documentation": "docs/git-handoff-stage-docs-results.json",
-    "summary": "specs/035-national-travel-discovery/validation.md",
-    "hostedMobile": "docs/national-travel-v35-hosted-webkit-results.json"
+    "summary": "specs/036-regional-craft-jewelry-picks/validation.md",
+    "hostedMobile": "docs/regional-craft-picks-v36-hosted-mobile-results.json"
   },
-  "snapshotVersion": "0.24.1"
+  "snapshotVersion": "0.25.0"
 }

@@ -22,13 +22,13 @@ SORAが日本各地の工芸ジュエリーを選んで紹介する、日本語�
 
 SORAのSNSプロフィール用ページから、特集商品と旅先ごとのセレクトへ進めます。媒体別のURLと更新の正本は[仕様029](specs/029-sora-profile-links/spec.md)を参照してください。
 
-[仕様028](specs/028-purchase-routes/spec.md)で公式通販とカタログ・取扱店への案内を整理しました。直近の[仕様035](specs/035-national-travel-discovery/spec.md)では、注文受付を再確認した19県の19商品を加え、全国47都道府県へ広げました。
+[仕様028](specs/028-purchase-routes/spec.md)で公式通販とカタログ・取扱店への案内を整理しました。直近の[仕様036](specs/036-regional-craft-jewelry-picks/spec.md)では、青森・秋田・石川・静岡・沖縄に各1商品を追加し、角館・金沢・那覇の訪問エリアからも商品を探せるようにしました。
 
-公開88/登録94商品、下書き6商品、47都道府県、公開商品に紐づく技法59/全61件、一次出典390件。46店舗を登録し、69商品に店舗案内があります。購入根拠は公式通販79商品、店舗とカタログ9商品です。AI画像174枚（人物86＋商品単体88）を掲載しています。
+公開93/登録99商品、下書き6商品、47都道府県、公開商品に紐づく技法64/全66件、一次出典415件。49店舗を登録し、72商品に店舗案内があります。購入根拠は公式通販84商品、店舗とカタログ9商品です。AI画像184枚（人物91＋商品単体93）を掲載しています。
 
-公開版は **v0.24.1**、アプリSHAは `ea640461a02b099a27641f4d8e14b5518d4d709c` です。2026-11-24 14:18 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45332290970)の配信が完了しました。地方→都道府県→訪問エリア→商品を選ぶ日英の旅先検索を使えます。v0.24.1でスマートフォンの初期画面に旅先検索への通常リンクを追加し、選択後に表示する商品プレビューのリンクの高さを44px以上に修正しました。 [仕様035](specs/035-national-travel-discovery/spec.md) · [一次情報](docs/research/national-listings-2026-11-24.md)
+公開版は **v0.25.0**、アプリSHAは `8e4ef5f2239e870b61a014d86f30115b43cc2535` です。2026-11-24 14:48 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45335744645)の配信が完了しました。地方→都道府県→訪問エリア→商品を選ぶ日英の旅先検索を使えます。 [仕様036](specs/036-regional-craft-jewelry-picks/spec.md) · [追加5商品の一次情報](docs/research/regional-craft-picks-2026-11-24.md)
 
-公開コミットとActionsは[公開記録](docs/deployment-results.json)、現行版の確認範囲は[035の検証記録](specs/035-national-travel-discovery/validation.md)を参照してください。購入導線を整理した当時の記録は[028の検証](specs/028-purchase-routes/validation.md)に残しています。
+公開コミットとActionsは[公開記録](docs/deployment-results.json)、現行版の確認範囲は[036の検証記録](specs/036-regional-craft-jewelry-picks/validation.md)を参照してください。v0.24.1のモバイル修正とWebKit検証は[035の記録](specs/035-national-travel-discovery/validation.md)、購入導線を整理した当時の記録は[028の検証](specs/028-purchase-routes/validation.md)に残しています。
 
 AdSenseはoff、実アフィリエイトは未申請/通常リンクです。実ID/CMP/本人情報/契約/商用ホスト等は[運営上の残条件](docs/remaining-task-audit-v17.md)。申請や契約を資料だけで済んだことにしません。
 
