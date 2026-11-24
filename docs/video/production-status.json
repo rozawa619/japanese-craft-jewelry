@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "lastUpdated": "2026-11-23",
+  "lastUpdated": "2026-11-24",
   "project": "SORA｜旅先で待ち合わせ",
   "scope": "TikTok / Google Flow AI POV date clips and Instagram Reels captions; site content source is separate",
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
-  "currentEpisodeId": "kyoto-nakajima-pear-sakura-pendant",
-  "nextAction": "Use the original site image and v1 Flow prompt. Check the eyes, mouth and whole pendant in the vertical opening, then assess the generated clip against the original face, skin and pendant.",
+  "currentEpisodeId": "kyoto-kazarino-shippo-pattern-brass-bangle",
+  "nextAction": "Use the site original in Flow Ingredients with prompt v1, then check both eyes, the mouth and the whole bangle at 0, 0.5 and 1 second.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -261,6 +261,25 @@
       "postUrl": null,
       "verification": "Checked the product ID, styling image asset ID and image path against the catalog, production ledger, Kyoto plan and TikTok registry. Git blob 79a9c3a233a399fe569a74771d50255a3bfbe163 matches the deployed source in 08cb6212909981bf08bafb166225e077038aae4c.",
       "nextAction": "Use the original site image and v1 Flow prompt. Check the eyes, mouth and whole pendant in the vertical opening, then assess the generated clip against the original face, skin and pendant."
+    },
+    {
+      "id": "kyoto-kazarino-shippo-pattern-brass-bangle",
+      "place": "Kyoto, Japan",
+      "productIds": [
+        "kazarino-shippo-pattern-brass-bangle"
+      ],
+      "status": "prompt_ready",
+      "summary": "The seventh Kyoto episode features Kazarino's Shippo-pattern brass bangle S. The original site image and Flow Ingredients prompt v1 are ready.",
+      "femaleImageAssetId": "ai-kazarino-shippo-pattern-brass-bangle-styling-v13",
+      "femaleImagePath": "public/images/kazarino-shippo-pattern-brass-bangle-styling-v13.webp",
+      "femaleImageDimensions": "1536x1024",
+      "episodePath": "docs/video/episodes/kyoto-kazarino-shippo-pattern-brass-bangle.md",
+      "startFrameStatus": "The original site WebP was visually inspected and matched byte-for-byte with main. Use it as the sole Ingredients reference.",
+      "currentPromptVersion": "v1-ready",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "The published product page uses the original WebP (Git blob 09af99aacf75e816e5089dcd2f35e5cef4ca525d, main 28e4a79936b3ca3e3ed53ee7932b50049daedf0a). No product ID, image asset ID or path reuse was found in the production and TikTok ledgers or Kyoto episodes 1–6. Compared the first six Kyoto styling images visually.",
+      "nextAction": "Use the site original in Flow Ingredients with prompt v1, then check both eyes, the mouth and the whole bangle at 0, 0.5 and 1 second."
     }
   ],
   "observedLinks": [
@@ -395,6 +414,10 @@
     {
       "date": "2026-11-23",
       "summary": "Prepared Kyoto episode 2 for Nakajima Zogan's pear-shaped sakura pendant. Checked the unused site image and saved Flow prompt v1 with the face and full pendant visible from the opening."
+    },
+    {
+      "date": "2026-11-24",
+      "summary": "Prepared the original site image and Flow Ingredients prompt v1 for Kyoto episode 7, Kazarino's Shippo-pattern brass bangle. The prompt frames the face and single raised wrist together with room at the edges."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -433,7 +456,7 @@
     "createdKyotoEpisodes": 2,
     "planPath": "docs/video/kyoto-series-plan.json",
     "firstSuggestedProductId": "morphosphere-ultramarine-pansy-pierced-earrings",
-    "explanation": "The user's Kyoto series now has two episode records. The second episode's original site image and Flow prompt are ready."
+    "explanation": "The Kyoto plan lists seven published catalog products with dedicated styling images. The production ledger tracks the episodes registered in GitHub."
   },
-  "previousWorkCurrentEpisodeId": "kyoto-morphosphere-ultramarine-pansy-pierced-earrings"
+  "previousWorkCurrentEpisodeId": "kyoto-nakajima-pear-sakura-pendant"
 }

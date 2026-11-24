@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastUpdated": "2026-11-23",
+  "lastUpdated": "2026-11-24",
   "purpose": "SORA next region video production candidates from the published Japanese Craft Jewelry site; not proof of TikTok posts.",
   "region": {
     "id": "kyoto",
@@ -12,7 +12,7 @@
   "counts": {
     "publishedProducts": 7,
     "distinctOriginalStylingImageAssets": 7,
-    "registeredVideoEpisodesForKyoto": 2
+    "registeredVideoEpisodesForKyoto": 3
   },
   "proposedOrder": [
     {
@@ -106,9 +106,11 @@
       "imagePath": "public/images/kazarino-shippo-pattern-brass-bangle-styling-v13.webp",
       "imageAssetId": "ai-kazarino-shippo-pattern-brass-bangle-styling-v13",
       "originalImageUrl": "https://raw.githubusercontent.com/rozawa619/japanese-craft-jewelry/main/public/images/kazarino-shippo-pattern-brass-bangle-styling-v13.webp",
-      "status": "candidate_not_started",
-      "createdEpisodeIds": [],
-      "note": "手首装身具の複製リスクあり。身体/手首が映る構図に特に注意"
+      "status": "prompt_ready",
+      "createdEpisodeIds": [
+        "kyoto-kazarino-shippo-pattern-brass-bangle"
+      ],
+      "note": "サイト掲載の元画像とFlow Ingredients指示文 v1を準備済み。冒頭は顔と、画面右の着用側の手首・バングル全体を入れ、右端と下端に余白を取る。"
     }
   ],
   "rules": [
