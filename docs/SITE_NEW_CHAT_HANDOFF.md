@@ -22,12 +22,12 @@
 
 | 項目 | 2026-11-24（JST）確認時点 |
 | --- | --- |
-| アプリ | **v0.27.0**、アプリSHA `f9347ebecba8c883b744d0fe806479200948b90c` |
-| 配信 | GitHub Pages。2026-11-24 15:44 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45342607862)の配信が完了 |
-| 照合 | 追加商品の公開結果は[038の検証記録](../specs/038-two-per-prefecture/validation.md)・[公開記録](deployment-results.json) |
-| 商品・地域 | 登録141点、公開135点、下書き6点。全47都道府県が各2点以上、Top10は各5点以上 |
-| 工芸・購入先 | 公開に紐づく技法82件（全84件）、一次出典605件。63店舗、店舗案内付き98商品。購入根拠は公式通販126点、店舗とカタログ9点 |
-| 画像 | AI画像268枚、着用133枚、単体135枚。着用は架空の日本人成人女性として生成 |
+| アプリ | **v0.28.0**、アプリSHA `630b81601c7efa63c1505d19a557c7b47fa43da8` |
+| 配信 | GitHub Pages。2026-11-24 16:44 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45350117793)の配信が完了 |
+| 照合 | [039の検証](../specs/039-three-per-prefecture/validation.md)・[公開記録](deployment-results.json) |
+| 商品・地域 | 登録177点、公開171点、下書き6点。全47都道府県が各3点以上、Top10は各5点以上 |
+| 工芸・購入先 | 公開に紐づく技法100件（全102件）、一次出典769件。81店舗、店舗案内付き126商品。購入根拠は公式通販162点、店舗とカタログ9点 |
+| 画像 | AI画像340枚、着用169枚、単体171枚 |
 | 広告 | 実アフィリエイトは未申請で通常の公式リンクを使用。AdSenseはオフ。 [提携準備](affiliate-readiness.md)・[運営上の残条件](remaining-task-audit-v17.md) |
 
 Astro 7・TypeScript・Zodを使う日英の静的サイトです。日本地図から産地を選び、商品一覧の絞り込み、工芸・素材のページ、商品詳細へ進めます。商品詳細には価格、公式通販または取扱店の案内、出典を掲載します。店舗のGoogle Mapsは利用者の許可に応じて表示します。サイトの運営範囲は紹介と外部の販売先への案内です。 [技術構成](architecture.md)
@@ -48,6 +48,7 @@ Astro 7・TypeScript・Zodを使う日英の静的サイトです。日本地図
 | [036](../specs/036-regional-craft-jewelry-picks/spec.md) | 青森・秋田・石川・静岡・沖縄に各1商品を追加し、公開93商品へ拡充。角館・金沢・那覇の訪問エリアを追加 |
 | [037](../specs/037-top10-craft-jewelry-depth/spec.md) | 16商品を追加し、公開109点。Top10全県に5点以上。掲載1点だった岩手・福島・熊本・大分を各2点に拡充 |
 | [038](../specs/038-two-per-prefecture/spec.md) | 掲載が1点だった26県に各1点を追加し、47都道府県で各2点以上、全135商品を公開しています。 |
+| [039](../specs/039-three-per-prefecture/spec.md) | 掲載が2点だった36県に各1点を追加し、47都道府県すべてで各3点以上、全171商品を紹介しています。 |
 
 ### 編集・検証の正本
 
@@ -62,7 +63,7 @@ Astro 7・TypeScript・Zodを使う日英の静的サイトです。日本地図
 
 ## 次の候補と残条件
 
-### 全国掲載と旅先検索（035〜038）
+### 全国掲載と旅先検索（035〜039）
 
 全国拡充と日英の旅先検索の基盤は[仕様035](../specs/035-national-travel-discovery/spec.md)です。47都道府県から探せるようにし、神奈川は箱根・鎌倉、東京は訪問先を確認した各エリアから商品に進めます。[仕様036](../specs/036-regional-craft-jewelry-picks/spec.md)で5県に各1商品と、角館・金沢・那覇の訪問エリアを追加しました。都道府県とエリアの表示用データは [travel-areas.ts](../src/config/travel-areas.ts) にあります。追加5商品の確認は[一次情報の記録](research/regional-craft-picks-2026-11-24.md)、画像の作成条件は[着用イメージの記録](image-generation-styling-v36.json)と[単体イメージの記録](image-generation-solo-v36.json)を参照してください。035当時の19商品は[当時の一次情報](research/national-listings-2026-11-24.md)に残しています。
 
@@ -70,14 +71,16 @@ Astro 7・TypeScript・Zodを使う日英の静的サイトです。日本地図
 
 [仕様038](../specs/038-two-per-prefecture/spec.md)で掲載が1点だった26県に各1点を追加し、47都道府県で各2点以上、全135商品を公開しています。旅先検索では、桐生、小野、美浜町・三尾、松江、長船、北島、高知市、霧島市・隼人から新しい取扱先を探せます。購入条件と店舗案内は[一次情報の照合](research/two-per-prefecture-2026-11-24.md)、画像は[着用イメージ](image-generation-styling-v38.json)と[単体イメージ](image-generation-solo-v38.json)を参照してください。
 
+[仕様039](../specs/039-three-per-prefecture/spec.md)で掲載が2点だった36県に各1点を追加し、47都道府県すべてで各3点以上、全171商品を紹介しています。旅先検索では、青森市、南相馬・小高、宇都宮、長崎市、都城、屋久島、読谷などを選べます。商品ごとの公式通販と現地の取扱いは[一次情報](research/three-per-prefecture-2026-11-24.md)、画像は[着用](image-generation-styling-v39.json)と[単体](image-generation-solo-v39.json)を参照してください。
+
 | 優先候補 | 進め方・依存条件 |
 | --- | --- |
 | 検索流入の準備 | 公開側のcanonical・hreflang・サイトマップを確認。Search Consoleの対象プロパティは確認時のGoogleアカウントで閲覧権限なし。Googleの登録状況と実績の確認には、権限のあるアカウントが必要。 [検証ガイド](verification-guide.md) |
 | 動画から商品への案内 | TikTok公開14投稿から京都4・神奈川7商品へ案内。今後の公開投稿と商品IDを照合できた分を台帳へ追加。Instagramの個別投稿との対応と、プロフィール欄の掲載・実流入は確認待ち。 [仕様034](../specs/034-kyoto-video-jewelry/spec.md) |
 | 購入時の情報差を減らす | 神奈川の動画掲載7商品を再照合済み。他の商品は同じ商品・色・金具・市場・販売単位で、販売元の情報と照合する。 [仕様028](../specs/028-purchase-routes/spec.md)・[仕様032](../specs/032-purchase-selections/spec.md) |
-| 全国版の継続更新 | 47都道府県版は配信済み。商品の追加・差し替えを依頼された場合は、商品・選択名・販売単位・確認日を一次情報と照合し、該当仕様の検証と公開記録を更新する。直近は[038の検証](../specs/038-two-per-prefecture/validation.md)。 |
+| 全国版の継続更新 | 47都道府県版は配信済み。商品の追加・差し替えを依頼された場合は、商品・選択名・販売単位・確認日を一次情報と照合し、該当仕様の検証と公開記録を更新する。直近は[039の検証](../specs/039-three-per-prefecture/validation.md)。 |
 | 収益化の準備 | 商用ホストの適合、BECOS等の提携条件、実アカウントの承認、広告の同意管理や画像使用条件を確認。 [申請前の確認](pre-application-checklist.md) |
-| 運用と端末の検証 | v0.27.0の確認範囲と公開後の結果は[038の検証](../specs/038-two-per-prefecture/validation.md)を参照。v0.24.1のWebKitエミュレーションとChromiumの結果は[035当時の記録](../specs/035-national-travel-discovery/validation.md)。実機iPhone／Safariにはアクセスできず未検証。SNSのアプリ内ブラウザーも未検証。 |
+| 運用と端末の検証 | v0.28.0の確認範囲と公開後の結果は[039の検証](../specs/039-three-per-prefecture/validation.md)を参照。v0.24.1のWebKitエミュレーションとChromiumの結果は[035当時の記録](../specs/035-national-travel-discovery/validation.md)。実機iPhone／Safariにはアクセスできず未検証。SNSのアプリ内ブラウザーも未検証。 |
 
 ## 実装を再開するとき
 
@@ -101,7 +104,7 @@ https://github.com/rozawa619/japanese-craft-jewelry/blob/main/docs/SITE_NEW_CHAT
 日本語 https://rozawa619.github.io/japanese-craft-jewelry/ja/
 英語 https://rozawa619.github.io/japanese-craft-jewelry/en/
 
-まず最新のmainを確認し、引継ぎ書、START_HERE.md、AGENTS.md、docs/handoff-status.json、docs/deployment-results.jsonを実際に読んでください。mainのHEAD、実公開アプリのバージョンとSHA、GitHub Actions、公開URLの状態を照合してください。引継ぎ時点はv0.27.0。掲載が1点だった26県に各1点を追加し、47都道府県で各2点以上、全135商品を公開しています。旅先検索では、桐生、小野、美浜町・三尾、松江、長船、北島、高知市、霧島市・隼人から新しい取扱先を探せます。日英の旅先検索で地方→都道府県→訪問エリア→商品へ進めます。v0.24.1のモバイル修正・WebKit検証は仕様035の履歴、現行版の確認範囲は仕様038の検証記録を参照してください。実機iPhone／Safariにはアクセスできず未検証です。SORAプロフィールからは公開動画と照合した京都4・神奈川7商品の詳細へ進めます。以後の変更があれば、GitHubの最新記録と実URLを優先してください。
+まず最新のmainを確認し、引継ぎ書、START_HERE.md、AGENTS.md、docs/handoff-status.json、docs/deployment-results.jsonを実際に読んでください。mainのHEAD、実公開アプリのバージョンとSHA、GitHub Actions、公開URLの状態を照合してください。引継ぎ時点はv0.28.0。掲載が2点だった36県に各1点を追加し、47都道府県すべてで各3点以上、全171商品を紹介しています。旅先検索では、青森市、南相馬・小高、宇都宮、長崎市、都城、屋久島、読谷などを選べます。日英の旅先検索で地方→都道府県→訪問エリア→商品へ進めます。v0.24.1のモバイル修正・WebKit検証は仕様035の履歴、現行版の確認範囲は仕様039の検証記録を参照してください。実機iPhone／Safariにはアクセスできず未検証です。SORAプロフィールからは公開動画と照合した京都4・神奈川7商品の詳細へ進めます。以後の変更があれば、GitHubの最新記録と実URLを優先してください。
 
 最初はコードと公開設定を変更せず、現在地、確認できたことと未確認事項、次の優先候補とおすすめの1件を報告してください。各候補に効果、変更対象、依存条件、検証方法を添えてください。次の作業はこちらで指定します。
 

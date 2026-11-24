@@ -9,15 +9,15 @@
 | サイト | Japanese Craft Jewelry。全国の工芸ジュエリーを選ぶJA/EN紹介メディア。運営者SORA |
 | 公開URL | [日本語](https://rozawa619.github.io/japanese-craft-jewelry/ja/)・[English](https://rozawa619.github.io/japanese-craft-jewelry/en/) |
 | リポジトリ | [rozawa619/japanese-craft-jewelry](https://github.com/rozawa619/japanese-craft-jewelry)・main |
-| 最新公開アプリ | **v0.27.0**、アプリSHA `f9347ebecba8c883b744d0fe806479200948b90c`。[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45342607862)の配信は2026-11-24 15:44 JSTに完了。 [公開記録](deployment-results.json) |
+| 最新公開アプリ | **v0.28.0**、アプリSHA `630b81601c7efa63c1505d19a557c7b47fa43da8`。[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45350117793)の配信は2026-11-24 16:44 JSTに完了。 [公開記録](deployment-results.json) |
 | Gitからの再開方法 | [仕様024](../specs/024-git-ai-handoff/spec.md)が基本手順。[サイト専用の引継ぎ書](SITE_NEW_CHAT_HANDOFF.md)に現行機能と再開順を記録 |
-| 内容 | 公開135/登録141商品、下書き6、47都道府県で各2点以上。技法82/全84、一次出典605、63店舗。店舗案内付き98商品、購入根拠は公式通販126商品と店舗・カタログ9商品 |
-| 画像 | AI画像268枚（着用133枚・商品単体135枚）。着用は架空の日本人成人女性の生成設定 |
+| 内容 | 公開171/登録177商品、47都道府県で各3点以上。公開に紐づく技法100/全102件、一次出典769件、81店舗。店舗案内付き126商品 |
+| 画像 | AI画像340枚（着用169・商品単体171）。人物は架空の日本人成人女性 |
 | AI画像の確認案内 | v0.22.1で日英の商品詳細と着用AI画像付きのカードに表示。実物の色・模様・形・金具は販売元の商品情報へ案内する。 [仕様031](../specs/031-product-image-disclosure/spec.md) |
 | 販売元の選択名と販売単位 | v0.22.2で10商品の日英購入導線に選択名・カタログ掲載名を表示。凛然 星華 琥珀の国内・海外価格に1組の販売単位を表示。 [仕様032](../specs/032-purchase-selections/spec.md) |
 | 動画で紹介した商品 | v0.23.1の日英 `/sora/` で、公開14投稿に対応する京都4・神奈川7商品へ案内。神奈川7商品の購入案内を公式情報と再照合。 [仕様034](../specs/034-kyoto-video-jewelry/spec.md) |
 | 全国掲載と旅先検索 | v0.24.0から47都道府県・88商品。注文受付を確認した19県の19商品を追加し、日英で地方・県・訪問エリアから商品に案内。v0.24.1でスマートフォンの初期画面に検索への通常リンクを追加し、選択後の商品プレビューのリンクの高さを44px以上に修正。 [仕様035](../specs/035-national-travel-discovery/spec.md) · [一次情報](research/national-listings-2026-11-24.md) |
-| 直近の産地別商品追加 | 掲載が1点だった26県に各1点を追加し、47都道府県で各2点以上、全135商品を公開しています。旅先検索では、桐生、小野、美浜町・三尾、松江、長船、北島、高知市、霧島市・隼人から新しい取扱先を探せます。 [仕様038](../specs/038-two-per-prefecture/spec.md) · [一次情報](research/two-per-prefecture-2026-11-24.md) |
+| 直近の産地別商品追加 | 掲載が2点だった36県に各1点を追加し、47都道府県すべてで各3点以上、全171商品を紹介しています。旅先検索では、青森市、南相馬・小高、宇都宮、長崎市、都城、屋久島、読谷などを選べます。 [仕様039](../specs/039-three-per-prefecture/spec.md) · [一次情報](research/three-per-prefecture-2026-11-24.md) |
 | 完了した023の変更 | 22人物を新生成・採用・公開、既存36人物と単体60を保持。新22枚は25〜30歳、かわいい系11/綺麗な系統11 |
 | 退役画像 | 旧10＋023の旧22＋026の旧5＝37画像を配信/新Git tree/source ZIPから除外。旧原本と生成記録は保持 |
 | 収益化 | AdSense off、実提携未申請、商品リンクは通常URL。広告resolverとPrivacyの土台は実装済み |
@@ -48,7 +48,7 @@
 
 ## 公開版の検証記録
 
-v0.27.0は2026-11-24 15:44 JSTにGitHub Pagesへの配信が完了しました。日英で追加商品と旅先の導線を確認しました。 [仕様038の検証](../specs/038-two-per-prefecture/validation.md) · [公開記録](deployment-results.json)
+v0.28.0は2026-11-24 16:44 JSTにGitHub Pagesへの配信が完了しました。日英で追加商品と旅先の導線を確認しました。 [仕様039の検証](../specs/039-three-per-prefecture/validation.md) · [公開記録](deployment-results.json)
 
 v0.24.1当時の日英トップの応答・HTML照合、iPhone相当のWebKitエミュレーションとChromiumの結果は[仕様035の検証](../specs/035-national-travel-discovery/validation.md)に残しています。
 

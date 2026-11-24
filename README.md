@@ -22,13 +22,13 @@ SORAが日本各地の工芸ジュエリーを選んで紹介する、日本語�
 
 SORAのSNSプロフィール用ページから、特集商品と旅先ごとのセレクトへ進めます。媒体別のURLと更新の正本は[仕様029](specs/029-sora-profile-links/spec.md)を参照してください。
 
-[仕様028](specs/028-purchase-routes/spec.md)で公式通販とカタログ・取扱店への案内を整理しました。[仕様038](specs/038-two-per-prefecture/spec.md)では、掲載が1点だった26県に各1点を追加し、47都道府県で各2点以上、全135商品を公開しています。旅先検索では、桐生、小野、美浜町・三尾、松江、長船、北島、高知市、霧島市・隼人から新しい取扱先を探せます。
+[仕様028](specs/028-purchase-routes/spec.md)で公式通販と取扱店への案内を整備しました。[仕様039](specs/039-three-per-prefecture/spec.md)では、掲載が2点だった36県に各1点を追加し、47都道府県すべてで各3点以上、全171商品を紹介しています。旅先検索では、青森市、南相馬・小高、宇都宮、長崎市、都城、屋久島、読谷などを選べます。
 
-公開135/登録141商品、下書き6商品、47都道府県。公開に紐づく技法82/全84件、一次出典605件。63店舗を登録し、98商品に店舗案内があります。購入根拠は公式通販126商品、店舗とカタログ9商品です。AI画像268枚（人物133＋商品単体135）。
+公開171/登録177商品、下書き6商品、47都道府県。公開に紐づく技法100/全102件、一次出典769件。81店舗を登録し、126商品に店舗案内があります。購入根拠は公式通販162商品と店舗・カタログ9商品です。AI画像340枚（着用169・商品単体171）。
 
-公開版は **v0.27.0**、アプリSHAは `f9347ebecba8c883b744d0fe806479200948b90c` です。2026-11-24 15:44 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45342607862)の配信が完了しました。 [追加26商品の一次情報](docs/research/two-per-prefecture-2026-11-24.md)
+公開版は **v0.28.0**、アプリSHAは `630b81601c7efa63c1505d19a557c7b47fa43da8` です。2026-11-24 16:44 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45350117793)の配信が完了しました。 [追加36商品の一次情報](docs/research/three-per-prefecture-2026-11-24.md)
 
-公開コミットとActionsは[公開記録](docs/deployment-results.json)、現行版の確認範囲は[038の検証記録](specs/038-two-per-prefecture/validation.md)を参照してください。v0.24.1のモバイル修正とWebKit検証は[035の記録](specs/035-national-travel-discovery/validation.md)、購入導線を整理した当時の記録は[028の検証](specs/028-purchase-routes/validation.md)に残しています。
+公開コミットとActionsは[公開記録](docs/deployment-results.json)、現行版の確認範囲は[039の検証記録](specs/039-three-per-prefecture/validation.md)を参照してください。v0.24.1のモバイル修正とWebKit検証は[035の記録](specs/035-national-travel-discovery/validation.md)、購入導線を整理した当時の記録は[028の検証](specs/028-purchase-routes/validation.md)に残しています。
 
 AdSenseはoff、実アフィリエイトは未申請/通常リンクです。実ID/CMP/本人情報/契約/商用ホスト等は[運営上の残条件](docs/remaining-task-audit-v17.md)。申請や契約を資料だけで済んだことにしません。
 
