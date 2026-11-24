@@ -8,3 +8,4 @@
 | R4 エリアの選択 | [旅行エリア設定](../../src/config/travel-areas.ts)、[エリア選択UI](../../src/components/TravelFinder.astro) | 地域ブロック→首都圏→神奈川・東京など→県内エリア→商品 |
 | R5 既存導線と操作 | 県ページ、商品カード、日本地図、SORAプロフィール | 日英、スマートフォン、キーボード、通常リンク、既存URL |
 | R6 引継ぎ | [計画](plan.md)、[検証](validation.md)、[開始手順](../../START_HERE.md) | 実測・未確認事項・公開元の記録をたどれる |
+| R7 モバイルの検索入口とタップ範囲 | [トップの入口](../../src/components/RegionHero.astro)、[検索結果のリンク](../../src/components/TravelFinder.astro)、[ブラウザー検査](../../scripts/check-national-travel-discovery.mjs) | 初期画面の入口と、選択後に追加される商品リンクの高さを日英で確認する |

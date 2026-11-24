@@ -33,7 +33,7 @@ const regions=travelRegions.flatMap(region=>{
  return prefectures.length?[{id:region.id,name:region.name[locale],prefectures}]:[];
 });
 ---
-{regions.length>0&&<section class="travel-finder" id={id} aria-labelledby={id+'-title'} data-travel-finder>
+{regions.length>0&&<section class="travel-finder" id={id} aria-labelledby={id+'-title'} tabindex="-1" data-travel-finder>
  <header class="travel-heading">
   <h3 id={id+'-title'}>{t(locale,'Find jewelry for your next trip','旅先からジュエリーを探す')}</h3>
   <p>{t(locale,'Choose a region, prefecture and nearby area to find craft jewelry.','地方、都道府県、エリアを選んで、気になる工芸ジュエリーへ。')}</p>
@@ -153,8 +153,8 @@ const regions=travelRegions.flatMap(region=>{
  .travel-results{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:16px;padding-top:15px;margin-top:15px;border-top:1px solid #abb4a9}
  .travel-results p{font-size:14px;font-weight:600;margin:0 0 5px}
  .travel-results ul{display:flex;flex-wrap:wrap;gap:0 14px;margin:0;padding:0;list-style:none}
- .travel-results li{min-width:0;max-width:100%}
- .travel-results li a{display:inline-flex;align-items:center;min-height:44px;font-size:13px;line-height:1.45;overflow-wrap:anywhere}
+ .travel-results :global(li){min-width:0;max-width:100%}
+ .travel-results :global(li a){display:flex;align-items:center;min-height:44px;font-size:13px;line-height:1.45;overflow-wrap:anywhere}
  .travel-result-link{justify-content:space-between;gap:20px;max-width:100%;align-self:center}
  .travel-directory{margin-top:10px}
  .travel-directory summary{width:fit-content;min-height:44px;padding:10px 0;font-size:13px;line-height:24px;color:var(--forest)}

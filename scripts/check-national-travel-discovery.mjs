@@ -116,7 +116,13 @@ try {
   }));
 
   for (const width of widths) await check(locale+' cascaded travel selection at '+width,()=>withPage(locale,width,async page=>{
-   await goto(page,url(locale)+'?utm_source=check#travel-finder');
+   await goto(page,url(locale)+'?utm_source=check');
+   const entry = page.locator('[data-region-hero] a[href="#travel-finder"]');
+   const entryBox = await entry.boundingBox();
+   assert.ok(entryBox && entryBox.height>=44 && entryBox.width>=44 && entryBox.y>=0 && entryBox.y+entryBox.height<=page.viewportSize().height,
+    'The travel search link is a visible tap target in the initial viewport');
+   await (width<500 ? entry.tap() : entry.click());
+   assert.equal(new URL(page.url()).hash,'#travel-finder');
    const finder = page.locator('[data-travel-finder]');
    const controls = finder.locator('[data-travel-controls]');
    await controls.waitFor({state:'visible'});
@@ -147,9 +153,12 @@ try {
     const destination = new URL(await finder.locator('[data-travel-destination]').getAttribute('href'),page.url());
     assert.equal(destination.pathname,expectedPlace(locale,'kanagawa'));
     assert.equal(destination.hash,'#area-'+id);
-    const productLinks = await hrefs(finder.locator('[data-travel-product-links] a'));
+    const previews = finder.locator('[data-travel-product-links] a');
+    const productLinks = await hrefs(previews);
     assert.ok(productLinks.length>=1 && productLinks.length<=3);
     assert.ok(productLinks.every(link=>new URL(link).pathname.startsWith(base+locale+'/objects/')));
+    const previewTargets = await previews.evaluateAll(links=>links.map(link=>link.getBoundingClientRect().height));
+    assert.ok(previewTargets.every(height=>height>=44),'Dynamically added product links have at least 44px touch targets');
     byArea[id] = productLinks;
    }
    assert.ok(byArea.hakone.every(link=>!byArea.kamakura.includes(link)),'Area previews show distinct items');
