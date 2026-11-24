@@ -1,14 +1,14 @@
 ---
 title: "Satsuma kiriko cut glass from Kagoshima"
-description: "A deep-blue and violet glass rectangle makes the neckline a small field of cut light. Broad clear facets and finer cuts give this pendant two different rhythms."
+description: "Explore two Kagoshima cut-glass pendants: Shimadzu’s Hikari-e in Kagoshima City and Deshimaru’s slender web-cut ecoKIRI pendant from Kirishima."
 locale: "en"
 publishStatus: published
-updatedAt: "2026-11-17"
-sourceIds: ["satsuma-hikari-l-current-v16","satsuma-process-v16","satsuma-story-v16","satsuma-iso-shop-v16"]
+updatedAt: "2026-11-24"
+sourceIds: ["satsuma-hikari-l-current-v16","satsuma-process-v16","satsuma-story-v16","satsuma-iso-shop-v16","deshimaru-ecokiri-blue-green-web-cut-glass-pendant-offer","deshimaru-ecokiri-blue-green-web-cut-glass-pendant-store"]
 prefectureId: "kagoshima"
-relatedMerchantIds: ["shimadzu-satsuma-kiriko-official"]
+relatedMerchantIds: ["shimadzu-satsuma-kiriko-official","deshimaru-official"]
 ---
 
-A deep-blue and violet glass rectangle makes the neckline a small field of cut light. Broad clear facets and finer cuts give this pendant two different rhythms.
+Explore two Kagoshima cut-glass pendants: Shimadzu’s Hikari-e in Kagoshima City and Deshimaru’s slender web-cut ecoKIRI pendant from Kirishima.
 
-The Kagoshima maker describes its integrated glassmaking, cutting and polishing. Separate manufacture of the chain is not identified.
+Deshimaru also has a shop in Hayato, Kirishima. Check the exact pendant and color with the maker before visiting.

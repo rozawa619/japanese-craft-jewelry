@@ -16,6 +16,7 @@ active.push('specs/034-kyoto-video-jewelry/spec.md','specs/034-kyoto-video-jewel
 active.push('docs/research/national-listings-2026-11-24.md',...['spec','plan','tasks','validation'].map(name=>'specs/035-national-travel-discovery/'+name+'.md'));
 active.push('docs/research/regional-craft-picks-2026-11-24.md','specs/036-regional-craft-jewelry-picks/spec.md','specs/036-regional-craft-jewelry-picks/validation.md');
 active.push('docs/research/top10-craft-jewelry-depth-2026-11-24.md','specs/037-top10-craft-jewelry-depth/spec.md','specs/037-top10-craft-jewelry-depth/validation.md');
+active.push('docs/research/two-per-prefecture-2026-11-24.md','specs/038-two-per-prefecture/spec.md','specs/038-two-per-prefecture/validation.md');
 const pkg=JSON.parse(await readFile(resolve(root,'package.json'),'utf8'));
 const builtins=new Set(['install','exec','audit','run','help','add','remove','update','list','why']);
 const contentCache=new Map();

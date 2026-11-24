@@ -81,9 +81,13 @@ const withPage = async (locale,width,verify,javaScriptEnabled=true) => {
 };
 
 try {
- await check('Source coverage uses every prefecture',async()=>{
+ await check('Every prefecture has at least two published products',async()=>{
   assert.equal(prefectures.length,47);
   assert.deepEqual([...new Set(published.flatMap(product=>product.prefectureIds))].sort(),prefectures);
+  for (const id of prefectures) {
+   const local = published.filter(product=>product.prefectureIds.includes(id));
+   assert.ok(local.length>=2,id+' needs at least two published products');
+  }
   for (const id of introduced) assert.ok(newProducts.some(product=>product.prefectureIds.includes(id)),id);
  });
 
@@ -108,7 +112,8 @@ try {
     await Promise.all(prefectures.slice(offset,offset+6).map(async id=>{
      const response = await page.request.get(origin+expectedPlace(locale,id),{maxRedirects:0});
      assert.equal(response.status(),200,id);
-     assert.match(await response.text(),/data-product-card(?:\s|>)/,id+' has product cards');
+     const productCards = (await response.text()).match(/data-product-card(?:\s|>)/g) ?? [];
+     assert.ok(productCards.length>=2,id+' needs at least two visible product cards');
      await response.dispose();
     }));
    }

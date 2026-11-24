@@ -147,6 +147,11 @@ export const reviewedStoreMapEmbeds:Readonly<Record<string,Readonly<Record<Local
     "ja": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6408.46978464583!2d136.667126!3d36.572557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff83374a4ded8ff%3A0x12766d3886069e17!2z566U5bqn44Gy44GL44KK6JeP!5e0!3m2!1sja!2sus!4v1678356931492!5m2!1sja!2sus",
     "en": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6408.46978464583!2d136.667126!3d36.572557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff83374a4ded8ff%3A0x12766d3886069e17!2z566U5bqn44Gy44GL44KK6JeP!5e0!3m2!1sja!2sus!4v1678356931492!5m2!1sja!2sus"
   },
+  // The Hayato shop’s maker-published map, rechecked 2026-11-24.
+  "art-deshimaru-kirishima": {
+    "ja": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.158209727962!2d130.6862631!3d31.738882299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353ef93b87c74def%3A0xe0d2eea58d06c8f4!2sART%20DESHIMARU!5e0!3m2!1sja!2sjp!4v1665725965571!5m2!1sja!2sjp",
+    "en": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.158209727962!2d130.6862631!3d31.738882299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353ef93b87c74def%3A0xe0d2eea58d06c8f4!2sART%20DESHIMARU!5e0!3m2!1sja!2sjp!4v1665725965571!5m2!1sja!2sjp"
+  },
   "kanoa-okinawa-kokusai-street": {
     "ja": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.424084302823!2d127.68477289999998!3d26.215406599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5696da1fd154b%3A0x2b5196d0ac328c50!2zS2Fub2EgT2tpbmF3YSDlm73pmpvpgJrjgorlupc!5e0!3m2!1sja!2sjp!4v1744128102835!5m2!1sja!2sjp",
     "en": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.424084302823!2d127.68477289999998!3d26.215406599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5696da1fd154b%3A0x2b5196d0ac328c50!2zS2Fub2EgT2tpbmF3YSDlm73pmpvpgJrjgorlupc!5e0!3m2!1sja!2sjp!4v1744128102835!5m2!1sja!2sjp"
