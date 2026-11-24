@@ -267,9 +267,10 @@
       },
       "mapQuery": "加藤七宝製作所 愛知県名古屋市西区香呑町4-31",
       "sourceIds": [
-        "visit-kato-official-store"
+        "visit-kato-official-store",
+        "kato-suke-round-navy-cloisonne-pendant-store"
       ],
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-24"
     },
     {
       "id": "mocad-museum-shop",
@@ -578,9 +579,10 @@
       "mapQuery": "Sghr スガハラ ファクトリーショップ 〒283-0112 千葉県山武郡九十九里町藤下797",
       "sourceIds": [
         "sghr-kujukuri-workshop-v11",
-        "sghr-official-stores-v11"
+        "sghr-official-stores-v11",
+        "sghr-lolly-wine-red-glass-ring-13-store"
       ],
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-24"
     },
     {
       "id": "beams-japan-kyoto-kazarino",
@@ -688,9 +690,11 @@
       },
       "mapQuery": "漆工房 岩弥 店舗 〒834-0034 福岡県八女市高塚253-1",
       "sourceIds": [
-        "iwaya-shop-v11"
+        "iwaya-shop-v11",
+        "iwaya-yame-20mm-red-urushi-bead-pendant-store",
+        "iwaya-yame-hand-carved-pink-blue-urushi-ring-no10-store"
       ],
-      "checkedAt": "2026-11-16"
+      "checkedAt": "2026-11-24"
     },
     {
       "id": "yuiq-odori-bisse",
@@ -1238,14 +1242,15 @@
         "en": "Mitsusuke’s main shop in Kumamoto’s Shinmachi district, for exploring the workshop’s Higo-inlay collection."
       },
       "stockNote": {
-        "ja": "紹介したPE-02の店頭在庫は未確認です。訪問前に、現在の営業情報と希望するピアス仕様の取扱いを公式へ確認してください。",
-        "en": "In-store stock of the featured PE-02 is unconfirmed. Check current opening information and the desired pierced variant before visiting."
+        "en": "In-store stock of individual pieces is unconfirmed. Check current hours and quote the catalog code before visiting.",
+        "ja": "掲載商品の店頭在庫は未確認です。訪問前に品番や営業情報を公式へご確認ください。"
       },
       "mapQuery": "肥後象嵌 光助 本店 熊本市中央区新町3-2-1",
       "sourceIds": [
-        "mitsusuke-company-store-v16"
+        "mitsusuke-company-store-v16",
+        "mitsusuke-higo-zogan-kumamoto-castle-geometric-pendant-store"
       ],
-      "checkedAt": "2026-11-17"
+      "checkedAt": "2026-11-24"
     },
     {
       "id": "menoya-izumo-taisha",
@@ -1380,16 +1385,17 @@
         "ja": "琥珀博物館の敷地内にある直営店。琥珀のジュエリーのほか、購入後のメンテナンスについても相談できます。"
       },
       "stockNote": {
-        "en": "The photographed piece has a specific item number. Check whether it is available to see before making a trip.",
-        "ja": "品番のある商品です。実物を見たい場合は、来店前に店頭で見られるかご確認ください。"
+        "en": "Check current store stock for the specific design, size or item number before making a trip.",
+        "ja": "希望する品番・サイズの店頭在庫は、来店前にご確認ください。"
       },
       "mapQuery": "久慈琥珀 本店 岩手県久慈市小久慈町",
       "sourceIds": [
         "kuji-amber-shop-guide",
         "kuji-amber-shop-hours",
-        "kuji-city-museum-access"
+        "kuji-city-museum-access",
+        "kuji-kohaku-banded-amber-ring-size-13-store"
       ],
-      "checkedAt": "2026-11-19"
+      "checkedAt": "2026-11-24"
     },
     {
       "id": "juyoukan-yonezawa-kura-shop",
@@ -1880,6 +1886,199 @@
       "mapQuery": "Kanoa Okinawa 国際通り店 沖縄県那覇市牧志1-1-42",
       "sourceIds": [
         "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-store"
+      ],
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "id": "atelier-ozaki-naramachi",
+      "kind": "maker-shop",
+      "officialUrl": "https://atelierozaki.theshop.jp/",
+      "officialStoreUrl": "https://atelierozaki.theshop.jp/about",
+      "name": {
+        "en": "Atelier Ozaki, Naramachi",
+        "ja": "Atelier Ozaki ならまち"
+      },
+      "address": {
+        "en": "5 Tsurufukuin-chō, Nara City, Nara",
+        "ja": "奈良県奈良市鶴福院町5"
+      },
+      "hours": {
+        "en": "Check the current schedule with the shop before visiting. Published hours differ by page.",
+        "ja": "営業案内の掲載ページによって時間が異なるため、来店前に店舗へご確認ください。"
+      },
+      "closedDays": {
+        "en": "The access page lists Wednesdays and notes occasional closures.",
+        "ja": "公式アクセス案内では水曜定休。臨時休業の場合があります。"
+      },
+      "access": {
+        "en": "The shop is in Naramachi between Kōfuku-ji and Gangō-ji, per its official atelier guide.",
+        "ja": "公式案内では、興福寺と元興寺の間のならまちにあります。"
+      },
+      "visitSummary": {
+        "en": "A Naramachi shop and workshop where the maker designs and makes jewelry.",
+        "ja": "ならまちにある工房併設のジュエリー店。作り手がデザインと制作を手がけます。"
+      },
+      "stockNote": {
+        "en": "Ask about the Sakura ring and your preferred size before making a special visit.",
+        "ja": "桜リングや希望の号数を目当てに訪ねる場合は、営業日と取扱いを事前にご確認ください。"
+      },
+      "mapQuery": "Atelier Ozaki 奈良市鶴福院町5",
+      "sourceIds": [
+        "atelier-ozaki-naramachi-sakura-gold-silver-ring-store"
+      ],
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "id": "je-et-nous-nara-suimoncho",
+      "kind": "maker-shop",
+      "officialUrl": "https://je-et-nous.com/",
+      "officialStoreUrl": "https://je-et-nous.com/html/page1.html",
+      "name": {
+        "en": "Je et Nous, Nara",
+        "ja": "ジュエヌ"
+      },
+      "address": {
+        "en": "53 Suimon-chō, Nara City, Nara 630-8208",
+        "ja": "〒630-8208 奈良県奈良市水門町53"
+      },
+      "hours": {
+        "en": "11:30–17:00, as officially listed",
+        "ja": "11:30〜17:00（公式案内）"
+      },
+      "closedDays": {
+        "en": "Monday and Tuesday. When a closing day is a public holiday, the maker lists opening that day and closing the following day.",
+        "ja": "月曜・火曜。定休日が祝日の場合は営業し、翌日休み（公式案内）。"
+      },
+      "access": {
+        "en": "The maker gives a ten-minute walk from Kintetsu-Nara Station, or five minutes north from the Kenchō-higashi bus stop, near Isuien Garden.",
+        "ja": "公式案内では近鉄奈良駅から徒歩約10分。「県庁東」バス停から北へ徒歩約5分、依水園の近くです。"
+      },
+      "visitSummary": {
+        "en": "A Nara shop featuring its own deer-themed accessories. The shop named in the official order listing is the same business.",
+        "ja": "鹿のアクセサリーを扱う奈良の店。商品ページと同じジュエヌの実店舗です。"
+      },
+      "stockNote": {
+        "en": "Check availability of the sterling silver SN3 before making a special visit. The physical shelf stock was not verified.",
+        "ja": "SV925のSN3を目当てに訪ねる場合は、店頭在庫を事前にご確認ください。"
+      },
+      "mapQuery": "ジュエヌ 奈良市水門町53",
+      "sourceIds": [
+        "je-et-nous-nara-deer-silhouette-silver-necklace-store"
+      ],
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "id": "aizu-machikata-denshokan",
+      "kind": "stockist",
+      "officialUrl": "https://www.aizukanko.com/spot/177",
+      "officialStoreUrl": "https://www.city.aizuwakamatsu.fukushima.jp/docs/2017101000028/",
+      "name": {
+        "en": "Aizu Machikata Denshokan",
+        "ja": "会津町方伝承館"
+      },
+      "address": {
+        "en": "2-8-8 Omachi, Aizuwakamatsu, Fukushima 965-0042",
+        "ja": "〒965-0042 福島県会津若松市大町二丁目8-8"
+      },
+      "hours": {
+        "en": "09:00–18:00 from April to November and 09:00–17:00 from December to March. Check temporary notices.",
+        "ja": "4〜11月は9:00〜18:00、12〜3月は9:00〜17:00。臨時変更は公式案内で確認。"
+      },
+      "closedDays": {
+        "en": "Mondays, or the next day if Monday is a public holiday. Closed December 31 to January 4.",
+        "ja": "月曜（祝日の場合は翌日）、12月31日〜1月4日。"
+      },
+      "access": {
+        "en": "About seven minutes on foot from JR Aizuwakamatsu Station, or immediately near the Aizu Machikata Denshokan stop on the Haikara-san loop bus.",
+        "ja": "JR会津若松駅から徒歩約7分。まちなか周遊バス「ハイカラさん」の会津町方伝承館停留所からすぐ。"
+      },
+      "visitSummary": {
+        "en": "A public Aizu craft shop and gallery. The official tourism association lists it for the Fukuiro series.",
+        "ja": "会津の手仕事を扱う販売・展示施設。公式観光案内が「ふくいろ」シリーズの取扱店として掲載しています。"
+      },
+      "stockNote": {
+        "en": "Ask the shop about the Hana no Iro pierced triangle before visiting for that combination.",
+        "ja": "「はなのいろ」のピアス△を目当てに訪ねる場合は、先に店頭在庫をご確認ください。"
+      },
+      "mapQuery": "会津町方伝承館 福島県会津若松市大町二丁目8-8",
+      "sourceIds": [
+        "girls-life-labo-fukuiro-hana-triangle-studs-store"
+      ],
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "id": "itohen-tobata-atelier",
+      "name": {
+        "en": "ITOHEN Atelier & Shop",
+        "ja": "ITOHEN アトリエ＆ショップ"
+      },
+      "address": {
+        "en": "4F Kokusai Building, 2-10-21 Asao, Tobata-ku, Kitakyushu, Fukuoka 804-0062",
+        "ja": "〒804-0062 福岡県北九州市戸畑区浅生2-10-21 国際ビル4階"
+      },
+      "kind": "maker-shop",
+      "officialUrl": "https://www.itohen.shop/",
+      "officialStoreUrl": "https://www.itohen.shop/en/location",
+      "hours": {
+        "en": "Check the shop’s opening calendar from the gallery page before visiting.",
+        "ja": "営業日は公式ギャラリーページのカレンダーをご確認ください。"
+      },
+      "closedDays": null,
+      "access": {
+        "en": "A five-to-six-minute walk from JR Tobata Station, according to the maker.",
+        "ja": "公式案内ではJR戸畑駅から徒歩約5〜6分。"
+      },
+      "visitSummary": {
+        "en": "The Kitakyushu maker’s shop and gallery. Check the schedule and ask about possible fabric choices or ordering in person.",
+        "ja": "北九州の直営店兼ギャラリー。営業日を確認し、布の候補や店頭での注文について事前に相談できます。"
+      },
+      "stockNote": {
+        "en": "This pendant is made to order. Confirm consultation or collection options directly with ITOHEN before visiting.",
+        "ja": "受注制作のため、店頭での相談や受け取りが可能かは訪問前にITOHENへご確認ください。"
+      },
+      "mapQuery": "ITOHEN いとへん 北九州市戸畑区浅生2-10-21 国際ビル4階",
+      "sourceIds": [
+        "itohen-kokura-ori-butterfly-necklace-store",
+        "itohen-kokura-ori-butterfly-necklace-access"
+      ],
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "id": "tabinokiseki-itoshima-workshop-shop",
+      "kind": "maker-shop",
+      "officialUrl": "https://tabinokiseki.com/",
+      "officialStoreUrl": "https://tabinokiseki.com/pages/%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97-%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9",
+      "name": {
+        "en": "Tabinokiseki Itoshima shop",
+        "ja": "タビノキセキ 糸島店"
+      },
+      "address": {
+        "en": "1870-11 Shima Koganemaru, Itoshima, Fukuoka 819-1323",
+        "ja": "〒819-1323 福岡県糸島市志摩小金丸1870-11"
+      },
+      "hours": {
+        "en": "10:00–17:00",
+        "ja": "10:00〜17:00"
+      },
+      "closedDays": {
+        "en": "Third Tuesday of the month. Open when it falls on a public holiday. Check the official notice.",
+        "ja": "毎月第3火曜定休（祝日は営業）。臨時変更は公式案内を確認。"
+      },
+      "access": {
+        "en": "About 12 minutes by taxi from the north exit of JR Chikuzen-Maebaru Station, or take the Funakoshi bus to Shima-Naka Iriguchi and walk about seven minutes. Check bus times in advance.",
+        "ja": "JR筑前前原駅北口からタクシーで約12分。船越線バスの場合は志摩中入口から徒歩約7分。本数が少ないため時刻をご確認ください。"
+      },
+      "visitSummary": {
+        "en": "The workshop shop makes and sells lampworked glass accessories in Itoshima.",
+        "ja": "糸島でバーナーワークのガラスアクセサリーを制作・販売する工房直営店です。"
+      },
+      "stockNote": {
+        "en": "Ask about Yunagi in the teardrop shape with the brown cord before visiting for this combination.",
+        "ja": "夕凪のしずく・茶の紐を見たい場合は、訪問前に店頭在庫をご確認ください。"
+      },
+      "mapQuery": "タビノキセキ 糸島店 福岡県糸島市志摩小金丸1870-11",
+      "sourceIds": [
+        "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-store"
       ],
       "checkedAt": "2026-11-24"
     }
@@ -3307,6 +3506,247 @@
         "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-maker",
         "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-store",
         "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-offer"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "yukieglass-opening-angel-red-heart-pendant",
+      "storeIds": [],
+      "officialHomeUrl": "https://www.yukieglass.net/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "yukieglass-opening-angel-red-heart-pendant-maker",
+        "yukieglass-opening-angel-red-heart-pendant-offer"
+      ],
+      "fallback": {
+        "en": "Buy this leather-cord version through the official listing. For an in-person look in Otaru, ask Yukie Glass in advance about Opening Angel 241220-s3 using the atelier appointment guide.",
+        "ja": "レザーコード仕様は公式通販から。小樽で実物を見たい場合は、公式のアトリエ来訪案内からOpening Angel 241220-s3を指定して予約をご相談ください。"
+      },
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "sghr-lolly-wine-red-glass-ring-13",
+      "storeIds": [
+        "sghr-kujukuri-factory-shop"
+      ],
+      "officialHomeUrl": "https://www.sugahara.com/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "sghr-lolly-wine-red-glass-ring-13-maker",
+        "sghr-lolly-wine-red-glass-ring-13-offer",
+        "sghr-lolly-wine-red-glass-ring-13-store"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "simprich-k10-tanzanite-baguette-necklace",
+      "storeIds": [],
+      "officialHomeUrl": "https://shop.simprich.jp/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "simprich-k10-tanzanite-baguette-necklace-maker",
+        "simprich-k10-tanzanite-baguette-necklace-offer"
+      ],
+      "fallback": {
+        "en": "The exact SP-207876 necklace is made to order on the SIMPRICH site. The brand displays some other pieces at the Yamanashi Jewelry Museum shop, whose handling of this model is unconfirmed.",
+        "ja": "品番SP-207876はSIMPRICH公式通販で受注生産です。山梨ジュエリーミュージアム併設店には同ブランドの一部商品が並びますが、この品番の取扱いは確認できていません。"
+      },
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "atelier-ozaki-naramachi-sakura-gold-silver-ring",
+      "storeIds": [
+        "atelier-ozaki-naramachi"
+      ],
+      "officialHomeUrl": "https://atelierozaki.theshop.jp/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "atelier-ozaki-naramachi-sakura-gold-silver-ring-maker",
+        "atelier-ozaki-naramachi-sakura-gold-silver-ring-offer",
+        "atelier-ozaki-naramachi-sakura-gold-silver-ring-store"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "premium-pearl-senshu-eternal-harmony-station-necklace",
+      "storeIds": [],
+      "officialHomeUrl": "https://www.shopch.jp/pc/product/prodlist/brand?brandCode=00713",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "premium-pearl-senshu-eternal-harmony-station-necklace-maker",
+        "premium-pearl-senshu-eternal-harmony-station-necklace-offer"
+      ],
+      "fallback": {
+        "en": "Use the exact listing on Shop Channel. A walk-in stockist for this PREMIUM PEARL model has not been confirmed.",
+        "ja": "この品番はショップチャンネルの商品ページで確認できます。店頭で同じモデルを取り扱う店舗は確認できていません。"
+      },
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "je-et-nous-nara-deer-silhouette-silver-necklace",
+      "storeIds": [
+        "je-et-nous-nara-suimoncho"
+      ],
+      "officialHomeUrl": "https://je-et-nous.com/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "je-et-nous-nara-deer-silhouette-silver-necklace-maker",
+        "je-et-nous-nara-deer-silhouette-silver-necklace-offer",
+        "je-et-nous-nara-deer-silhouette-silver-necklace-store"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "mitsusuke-higo-zogan-kumamoto-castle-geometric-pendant",
+      "storeIds": [
+        "mitsusuke-kumamoto-main"
+      ],
+      "officialHomeUrl": "https://mitsusuke.com/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "mitsusuke-higo-zogan-kumamoto-castle-geometric-pendant-maker",
+        "mitsusuke-higo-zogan-kumamoto-castle-geometric-pendant-offer",
+        "mitsusuke-higo-zogan-kumamoto-castle-geometric-pendant-store"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "kuji-kohaku-banded-amber-ring-size-13",
+      "storeIds": [
+        "kuji-kohaku-main-shop"
+      ],
+      "officialHomeUrl": "https://www.kuji.co.jp/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "kuji-kohaku-banded-amber-ring-size-13-maker",
+        "kuji-kohaku-banded-amber-ring-size-13-offer",
+        "kuji-kohaku-banded-amber-ring-size-13-store"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "girls-life-labo-fukuiro-hana-triangle-studs",
+      "storeIds": [
+        "aizu-machikata-denshokan"
+      ],
+      "officialHomeUrl": "https://gll.thebase.in/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "girls-life-labo-fukuiro-hana-triangle-studs-maker",
+        "girls-life-labo-fukuiro-hana-triangle-studs-offer",
+        "girls-life-labo-fukuiro-hana-triangle-studs-store"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "itohen-kokura-ori-butterfly-necklace",
+      "storeIds": [
+        "itohen-tobata-atelier"
+      ],
+      "officialHomeUrl": "https://www.itohen.shop/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "itohen-kokura-ori-butterfly-necklace-maker",
+        "itohen-kokura-ori-butterfly-necklace-offer",
+        "itohen-kokura-ori-butterfly-necklace-store",
+        "itohen-kokura-ori-butterfly-necklace-access"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "tamura-owari-enamel-leaf-purple-yellow-drop-necklace",
+      "storeIds": [],
+      "officialHomeUrl": "https://tamura-shippo.com/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "tamura-owari-enamel-leaf-purple-yellow-drop-necklace-maker",
+        "tamura-owari-enamel-leaf-purple-yellow-drop-necklace-offer"
+      ],
+      "fallback": {
+        "en": "Tamura does not accept normal workshop visits, and making experiences require reservations. Use the official store to view this necklace; confirm any in-person buying arrangement with the maker.",
+        "ja": "田村七宝工芸は通常の工房見学を受け付けておらず、制作体験は完全予約制です。この品は公式通販で確認し、対面購入を希望する場合は工房へご確認ください。"
+      },
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "kato-suke-round-navy-cloisonne-pendant",
+      "storeIds": [
+        "kato-shippo-store"
+      ],
+      "officialHomeUrl": "https://katoshippo.com/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "kato-suke-round-navy-cloisonne-pendant-maker",
+        "kato-suke-round-navy-cloisonne-pendant-offer",
+        "kato-suke-round-navy-cloisonne-pendant-store"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "iwaya-yame-20mm-red-urushi-bead-pendant",
+      "storeIds": [
+        "iwaya-yame-shop"
+      ],
+      "officialHomeUrl": "https://www.urushikoubou-iwaya.jp/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "iwaya-yame-20mm-red-urushi-bead-pendant-maker",
+        "iwaya-yame-20mm-red-urushi-bead-pendant-offer",
+        "iwaya-yame-20mm-red-urushi-bead-pendant-store"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "iwaya-yame-hand-carved-pink-blue-urushi-ring-no10",
+      "storeIds": [
+        "iwaya-yame-shop"
+      ],
+      "officialHomeUrl": "https://www.urushikoubou-iwaya.jp/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "iwaya-yame-hand-carved-pink-blue-urushi-ring-no10-maker",
+        "iwaya-yame-hand-carved-pink-blue-urushi-ring-no10-offer",
+        "iwaya-yame-hand-carved-pink-blue-urushi-ring-no10-store"
+      ],
+      "fallback": null,
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings",
+      "storeIds": [],
+      "officialHomeUrl": "https://mikaibamboo.official.ec/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings-maker",
+        "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings-offer"
+      ],
+      "fallback": {
+        "en": "Order this color at the maker’s official shop. A public shop stocking these Chiasma earrings has not been confirmed.",
+        "ja": "この色の注文は作り手の公式通販で確認できます。Chiasmaの同じ色を扱う実店舗は確認できていません。"
+      },
+      "checkedAt": "2026-11-24"
+    },
+    {
+      "productId": "tabinokiseki-itoshima-yunagi-glass-aroma-pendant",
+      "storeIds": [
+        "tabinokiseki-itoshima-workshop-shop"
+      ],
+      "officialHomeUrl": "https://tabinokiseki.com/",
+      "officialHomeRole": "maker",
+      "sourceIds": [
+        "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-maker",
+        "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-offer",
+        "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-store"
       ],
       "fallback": null,
       "checkedAt": "2026-11-24"

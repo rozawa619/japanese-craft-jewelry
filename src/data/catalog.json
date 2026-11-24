@@ -875,6 +875,66 @@
         "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-maker",
         "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-craft"
       ]
+    },
+    {
+      "id": "naramachi-studio-metalwork",
+      "name": "Naramachi studio metalwork",
+      "description": "Contemporary jewelry made and finished in small workshops in Nara’s historic town district.",
+      "sourceIds": [
+        "atelier-ozaki-naramachi-sakura-gold-silver-ring-offer",
+        "atelier-ozaki-naramachi-sakura-gold-silver-ring-maker",
+        "atelier-ozaki-naramachi-sakura-gold-silver-ring-craft"
+      ]
+    },
+    {
+      "id": "nara-deer-motif-jewelry",
+      "name": "Nara deer-motif jewelry",
+      "description": "Contemporary handmade accessories that draw on the deer encountered around Nara Park and its temples.",
+      "sourceIds": [
+        "je-et-nous-nara-deer-silhouette-silver-necklace-offer",
+        "je-et-nous-nara-deer-silhouette-silver-necklace-maker",
+        "je-et-nous-nara-deer-silhouette-silver-necklace-craft"
+      ]
+    },
+    {
+      "id": "aizu-cotton-weaving",
+      "name": "Aizu cotton weaving",
+      "description": "A durable woven cotton textile from the Aizu area of Fukushima.",
+      "sourceIds": [
+        "girls-life-labo-fukuiro-hana-triangle-studs-offer",
+        "girls-life-labo-fukuiro-hana-triangle-studs-maker",
+        "girls-life-labo-fukuiro-hana-triangle-studs-craft"
+      ]
+    },
+    {
+      "id": "kokura-ori-textile-accessories",
+      "name": "Kokura-ori textile accessories",
+      "description": "A Kitakyushu cotton-weaving tradition carried into modern jewelry through fabric remnants.",
+      "sourceIds": [
+        "itohen-kokura-ori-butterfly-necklace-offer",
+        "itohen-kokura-ori-butterfly-necklace-maker",
+        "itohen-kokura-ori-butterfly-necklace-craft"
+      ]
+    },
+    {
+      "id": "bungo-takada-bamboo-jewelry",
+      "name": "Bungo-Takada woven bamboo jewelry",
+      "description": "Contemporary jewelry that uses split bamboo in three-dimensional weaving.",
+      "sourceIds": [
+        "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings-offer",
+        "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings-maker",
+        "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings-craft"
+      ]
+    },
+    {
+      "id": "itoshima-lampworked-glass",
+      "name": "Itoshima lampworked glass",
+      "description": "Contemporary pendant jewelry formed by torch in Itoshima, Fukuoka.",
+      "sourceIds": [
+        "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-offer",
+        "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-maker",
+        "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-craft"
+      ]
     }
   ],
   "materials": [
@@ -1190,6 +1250,21 @@
       "id": "platinum-foil",
       "name": "Platinum-bearing foil",
       "description": "Metal leaf containing platinum, including the gold–platinum alloy in the Hakuza cuff."
+    },
+    {
+      "id": "leather",
+      "name": "Leather",
+      "description": "Used for the cord in the base option of the Opening Angel pendant."
+    },
+    {
+      "id": "tanzanite",
+      "name": "Tanzanite",
+      "description": "Blue-violet stone used as the center of this necklace."
+    },
+    {
+      "id": "diamond",
+      "name": "Diamond",
+      "description": "Diamond accents are listed by the maker."
     }
   ],
   "productTypes": [
@@ -2047,6 +2122,72 @@
       "sourceIds": [
         "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-maker",
         "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-offer"
+      ]
+    },
+    {
+      "id": "atelier-ozaki",
+      "name": "Atelier Ozaki",
+      "location": "Naramachi, Nara City",
+      "productionNote": "Atelier Ozaki designs and makes jewelry at its Naramachi studio shop, including hand-finished pieces made individually. The Sakura ring is a contemporary workshop design.",
+      "url": "https://atelierozaki.theshop.jp/",
+      "sourceIds": [
+        "atelier-ozaki-naramachi-sakura-gold-silver-ring-maker",
+        "atelier-ozaki-naramachi-sakura-gold-silver-ring-offer"
+      ]
+    },
+    {
+      "id": "je-et-nous",
+      "name": "Je et Nous",
+      "location": "Suimon-chō, Nara City",
+      "productionNote": "The maker describes this necklace as finished by hand. JR Central identifies its Nara shop owner as the maker of deer-motif necklaces and other jewelry. Component origins are unspecified.",
+      "url": "https://je-et-nous.com/",
+      "sourceIds": [
+        "je-et-nous-nara-deer-silhouette-silver-necklace-maker",
+        "je-et-nous-nara-deer-silhouette-silver-necklace-offer"
+      ]
+    },
+    {
+      "id": "girls-life-labo",
+      "name": "GIRLS LIFE LABO",
+      "location": "Fukushima Prefecture",
+      "productionNote": "The Fukushima-based group created the Fukuiro line around Aizu cloth. The exact product page identifies Aizu cotton enclosed in acrylic and resin for the pierced fittings. The precise assembly workshop is unconfirmed.",
+      "url": "https://gll.thebase.in/",
+      "sourceIds": [
+        "girls-life-labo-fukuiro-hana-triangle-studs-maker",
+        "girls-life-labo-fukuiro-hana-triangle-studs-offer"
+      ]
+    },
+    {
+      "id": "itohen-kitakyushu",
+      "name": "ITOHEN",
+      "location": "Tobata, Kitakyushu, Fukuoka",
+      "productionNote": "ITOHEN makes textile accessories in Kitakyushu. Select this pendant’s handwoven Kokura-ori fabric, made from remnants provided by the weavers.",
+      "url": "https://www.itohen.shop/",
+      "sourceIds": [
+        "itohen-kokura-ori-butterfly-necklace-maker",
+        "itohen-kokura-ori-butterfly-necklace-offer"
+      ]
+    },
+    {
+      "id": "mikai-bamboo",
+      "name": "MIKAI BAMBOO",
+      "location": "Bungo-Takada, Oita",
+      "productionNote": "MIKAI BAMBOO’s maker works in Bungo-Takada on the Kunisaki Peninsula. The maker describes using local bamboo in her workshop and drawing on Beppu bamboo-working techniques.",
+      "url": "https://mikaibamboo.official.ec/",
+      "sourceIds": [
+        "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings-maker",
+        "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings-offer"
+      ]
+    },
+    {
+      "id": "tabinokiseki",
+      "name": "Tabinokiseki",
+      "location": "Itoshima, Fukuoka",
+      "productionNote": "Tabinokiseki forms its glass accessories by hand at its workshop in Itoshima, Fukuoka. The maker describes the Yunagi colors as inspired by dusk over the sea in Itoshima.",
+      "url": "https://tabinokiseki.com/",
+      "sourceIds": [
+        "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-maker",
+        "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-offer"
       ]
     }
   ],
@@ -3313,6 +3454,119 @@
         "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-offer",
         "kanoa-okinawa-blue-hotaru-glass-clip-on-earrings-guide"
       ]
+    },
+    {
+      "id": "atelier-ozaki-official",
+      "name": "Atelier Ozaki",
+      "url": "https://atelierozaki.theshop.jp/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Check delivery to your address in the official listing.",
+        "countries": null,
+        "sourceIds": [
+          "atelier-ozaki-naramachi-sakura-gold-silver-ring-guide"
+        ]
+      },
+      "returns": "See the seller’s current terms for orders, returns and cancellations.",
+      "sourceIds": [
+        "atelier-ozaki-naramachi-sakura-gold-silver-ring-offer",
+        "atelier-ozaki-naramachi-sakura-gold-silver-ring-guide"
+      ]
+    },
+    {
+      "id": "je-et-nous-official",
+      "name": "Je et Nous",
+      "url": "https://je-et-nous.com/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Check delivery to your address in the official listing.",
+        "countries": null,
+        "sourceIds": [
+          "je-et-nous-nara-deer-silhouette-silver-necklace-offer"
+        ]
+      },
+      "returns": "See the seller’s current terms for orders, returns and cancellations.",
+      "sourceIds": [
+        "je-et-nous-nara-deer-silhouette-silver-necklace-offer"
+      ]
+    },
+    {
+      "id": "girls-life-labo-official",
+      "name": "GIRLS LIFE LABO",
+      "url": "https://gll.thebase.in/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Check delivery to your address in the official listing.",
+        "countries": null,
+        "sourceIds": [
+          "girls-life-labo-fukuiro-hana-triangle-studs-guide"
+        ]
+      },
+      "returns": "See the seller’s current terms for orders, returns and cancellations.",
+      "sourceIds": [
+        "girls-life-labo-fukuiro-hana-triangle-studs-offer",
+        "girls-life-labo-fukuiro-hana-triangle-studs-guide"
+      ]
+    },
+    {
+      "id": "itohen-official",
+      "name": "ITOHEN",
+      "url": "https://www.itohen.shop/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Check delivery to your address in the official listing.",
+        "countries": null,
+        "sourceIds": [
+          "itohen-kokura-ori-butterfly-necklace-guide"
+        ]
+      },
+      "returns": "See the seller’s current terms for orders, returns and cancellations.",
+      "sourceIds": [
+        "itohen-kokura-ori-butterfly-necklace-offer",
+        "itohen-kokura-ori-butterfly-necklace-guide"
+      ]
+    },
+    {
+      "id": "mikai-bamboo-official",
+      "name": "MIKAI BAMBOO",
+      "url": "https://mikaibamboo.official.ec/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Check delivery to your address in the official listing.",
+        "countries": null,
+        "sourceIds": [
+          "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings-guide"
+        ]
+      },
+      "returns": "See the seller’s current terms for orders, returns and cancellations.",
+      "sourceIds": [
+        "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings-offer",
+        "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings-guide"
+      ]
+    },
+    {
+      "id": "tabinokiseki-official",
+      "name": "Tabinokiseki",
+      "url": "https://tabinokiseki.com/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "confirmed",
+        "summary": "The maker describes delivery within Japan and an overseas EMS service. Check eligibility and rates for your address.",
+        "countries": null,
+        "sourceIds": [
+          "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-guide"
+        ]
+      },
+      "returns": "See the seller’s current terms for orders, returns and cancellations.",
+      "sourceIds": [
+        "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-offer",
+        "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-guide"
+      ]
     }
   ],
   "programs": [
@@ -4438,6 +4692,166 @@
       "merchantId": "kanoa-okinawa-official",
       "programId": null,
       "officialProductUrl": "https://shop.kanoa.okinawa/products/%E3%83%9B%E3%82%BF%E3%83%AB%E3%82%AC%E3%83%A9%E3%82%B9%E3%81%AE%E3%83%94%E3%82%A2%E3%82%B9-%E3%82%A4%E3%83%A4%E3%83%AA%E3%83%B3%E3%82%B0-%E3%83%96%E3%83%AB%E3%83%BC",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "yukieglass-opening-angel-red-heart-pendant-official",
+      "productId": "yukieglass-opening-angel-red-heart-pendant",
+      "merchantId": "yukie-glass-official",
+      "programId": null,
+      "officialProductUrl": "https://www.yukieglass.net/?pid=184138451",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "sghr-lolly-wine-red-glass-ring-13-official",
+      "productId": "sghr-lolly-wine-red-glass-ring-13",
+      "merchantId": "sghr-official",
+      "programId": null,
+      "officialProductUrl": "https://shop.sugahara.com/view/item/000000004820",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "simprich-k10-tanzanite-baguette-necklace-official",
+      "productId": "simprich-k10-tanzanite-baguette-necklace",
+      "merchantId": "simprich-official",
+      "programId": null,
+      "officialProductUrl": "https://shop.simprich.jp/products/sp-207876",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "atelier-ozaki-naramachi-sakura-gold-silver-ring-official",
+      "productId": "atelier-ozaki-naramachi-sakura-gold-silver-ring",
+      "merchantId": "atelier-ozaki-official",
+      "programId": null,
+      "officialProductUrl": "https://atelierozaki.theshop.jp/items/159221791",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "premium-pearl-senshu-eternal-harmony-station-necklace-official",
+      "productId": "premium-pearl-senshu-eternal-harmony-station-necklace",
+      "merchantId": "shop-channel",
+      "programId": null,
+      "officialProductUrl": "https://www.shopch.jp/pc/product/proddetail?reqprno=819630",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "je-et-nous-nara-deer-silhouette-silver-necklace-official",
+      "productId": "je-et-nous-nara-deer-silhouette-silver-necklace",
+      "merchantId": "je-et-nous-official",
+      "programId": null,
+      "officialProductUrl": "https://je-et-nous.com/shopdetail/000000000005/",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "mitsusuke-higo-zogan-kumamoto-castle-geometric-pendant-official",
+      "productId": "mitsusuke-higo-zogan-kumamoto-castle-geometric-pendant",
+      "merchantId": "mitsusuke-official",
+      "programId": null,
+      "officialProductUrl": "https://mitsusuke.com/product/p-34/",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "kuji-kohaku-banded-amber-ring-size-13-official",
+      "productId": "kuji-kohaku-banded-amber-ring-size-13",
+      "merchantId": "kuji-kohaku-official",
+      "programId": null,
+      "officialProductUrl": "https://www.kujikohaku.net/product/6137",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "girls-life-labo-fukuiro-hana-triangle-studs-official",
+      "productId": "girls-life-labo-fukuiro-hana-triangle-studs",
+      "merchantId": "girls-life-labo-official",
+      "programId": null,
+      "officialProductUrl": "https://gll.thebase.in/items/1998755",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "itohen-kokura-ori-butterfly-necklace-official",
+      "productId": "itohen-kokura-ori-butterfly-necklace",
+      "merchantId": "itohen-official",
+      "programId": null,
+      "officialProductUrl": "https://www.itohen.shop/product-page/%E3%83%90%E3%82%BF%E3%83%95%E3%83%A9%E3%82%A4%E3%83%9A%E3%83%B3%E3%83%80%E3%83%B3%E3%83%88",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "tamura-owari-enamel-leaf-purple-yellow-drop-necklace-official",
+      "productId": "tamura-owari-enamel-leaf-purple-yellow-drop-necklace",
+      "merchantId": "tamura-official",
+      "programId": null,
+      "officialProductUrl": "https://tamura.buyshop.jp/items/139420573",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "kato-suke-round-navy-cloisonne-pendant-official",
+      "productId": "kato-suke-round-navy-cloisonne-pendant",
+      "merchantId": "becos-ja",
+      "programId": null,
+      "officialProductUrl": "https://www.thebecos.com/products/s0087-030?variant=44150181724406",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "iwaya-yame-20mm-red-urushi-bead-pendant-official",
+      "productId": "iwaya-yame-20mm-red-urushi-bead-pendant",
+      "merchantId": "iwaya-official",
+      "programId": null,
+      "officialProductUrl": "https://www.urushikoubou-iwaya.jp/item/e017/",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "iwaya-yame-hand-carved-pink-blue-urushi-ring-no10-official",
+      "productId": "iwaya-yame-hand-carved-pink-blue-urushi-ring-no10",
+      "merchantId": "iwaya-official",
+      "programId": null,
+      "officialProductUrl": "https://www.urushikoubou-iwaya.jp/item/e036/",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings-official",
+      "productId": "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings",
+      "merchantId": "mikai-bamboo-official",
+      "programId": null,
+      "officialProductUrl": "https://mikaibamboo.official.ec/items/26485168",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-official",
+      "productId": "tabinokiseki-itoshima-yunagi-glass-aroma-pendant",
+      "merchantId": "tabinokiseki-official",
+      "programId": null,
+      "officialProductUrl": "https://tabinokiseki.com/products/t-5?variant=44230768492595",
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
       "affiliateLinkVerifiedAt": null
@@ -10025,6 +10439,933 @@
       "size": "Bead diameter about 6 mm. Length about 50 mm excluding the clip fitting. The beads vary slightly in color and pattern.",
       "findings": "Blue lampworked glass with silver leaf beneath clear glass and a brass screw-back fitting. The chain finish is unspecified.",
       "fastening": "Screw-back clip-on, option ⑦ネジバネ式イヤリング.",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date."
+    },
+    {
+      "id": "yukieglass-opening-angel-red-heart-pendant",
+      "slug": "yukieglass-opening-angel-red-heart-pendant",
+      "locale": "en",
+      "originalTitle": "【Crystal】ハートモチーフペンダント「Opening Angel」",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "hokkaido"
+      ],
+      "craftIds": [
+        "otaru-glass"
+      ],
+      "materialIds": [
+        "glass",
+        "leather"
+      ],
+      "makerId": "yukie-glass",
+      "craftClassification": {
+        "label": "Yukie Glass says its crystal-glass accessories are handmade at its Otaru atelier. The artist’s listing describes this as an individually made open-heart pendant.",
+        "sourceIds": [
+          "yukieglass-opening-angel-red-heart-pendant-offer",
+          "yukieglass-opening-angel-red-heart-pendant-maker",
+          "yukieglass-opening-angel-red-heart-pendant-craft"
+        ]
+      },
+      "weightPerPieceGrams": null,
+      "priceAmount": 16500,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "in_stock",
+      "merchantIds": [
+        "yukie-glass-official"
+      ],
+      "sourceIds": [
+        "yukieglass-opening-angel-red-heart-pendant-offer",
+        "yukieglass-opening-angel-red-heart-pendant-maker",
+        "yukieglass-opening-angel-red-heart-pendant-craft",
+        "yukieglass-opening-angel-red-heart-pendant-atelier"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "Yukie Glass Otaru Opening Angel red heart pendant",
+      "editorialSummary": "A bold open heart in bright, opaque red glass hangs from a short leather cord. The opening lets your clothes show through the center of this one-of-a-kind Otaru pendant.",
+      "whoItMaySuit": "Someone who wants a visible red pendant with a playful outline.",
+      "whatToCheck": [
+        "Check the scale against your neckline. The maker lists the pendant at about 3.6 cm across.",
+        "Select the leather cord for the listed price. Metal chain options add to the price."
+      ],
+      "size": "Pendant about 34 × 36 mm. Base leather cord approximately 41 cm.",
+      "findings": "Opaque red crystal glass and a leather cord in the base configuration.",
+      "fastening": "The base option is a leather cord, approximately 41 cm. Clasp details are unconfirmed.",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date."
+    },
+    {
+      "id": "sghr-lolly-wine-red-glass-ring-13",
+      "slug": "sghr-lolly-wine-red-glass-ring-13",
+      "locale": "en",
+      "originalTitle": "ロリー：リング 13号",
+      "publishStatus": "published",
+      "productType": [
+        "ring"
+      ],
+      "prefectureIds": [
+        "chiba"
+      ],
+      "craftIds": [
+        "kujukuri-studio-glass"
+      ],
+      "materialIds": [
+        "glass"
+      ],
+      "makerId": "sghr-sugahara",
+      "craftClassification": {
+        "label": "Sghr makes its glass products in Kujukuri, Chiba. The maker describes the Lolly ring as individually handmade.",
+        "sourceIds": [
+          "sghr-lolly-wine-red-glass-ring-13-offer",
+          "sghr-lolly-wine-red-glass-ring-13-maker",
+          "sghr-lolly-wine-red-glass-ring-13-craft"
+        ]
+      },
+      "weightPerPieceGrams": null,
+      "priceAmount": 7700,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "in_stock",
+      "merchantIds": [
+        "sghr-official"
+      ],
+      "sourceIds": [
+        "sghr-lolly-wine-red-glass-ring-13-offer",
+        "sghr-lolly-wine-red-glass-ring-13-maker",
+        "sghr-lolly-wine-red-glass-ring-13-craft",
+        "sghr-lolly-wine-red-glass-ring-13-store",
+        "sghr-lolly-wine-red-glass-ring-13-guide"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "Sghr Lolly wine-red glass ring, Japanese size 13",
+      "editorialSummary": "Sghr gives this handmade glass ring a broad, curved bean shape. Its saturated wine-red color catches the light across the dome and makes a simple cuff or sleeve feel dressed.",
+      "whoItMaySuit": "Someone who wants the color and volume of a cocktail ring with one clean shape.",
+      "whatToCheck": [
+        "Check Japanese size 13 against a ring that fits. The 7 mm band may feel different from a narrower band on the same finger.",
+        "The Lolly series has separate colors and sizes. Look for SJRG-LOL13WR for this version."
+      ],
+      "size": "Approx. Japanese size 13. Top 13 × 22 mm, overall 32 × 22 mm, band width 7 mm.",
+      "findings": "Glass, handmade in Kujukuri.",
+      "fastening": "Closed glass ring.",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date."
+    },
+    {
+      "id": "simprich-k10-tanzanite-baguette-necklace",
+      "slug": "simprich-k10-tanzanite-baguette-necklace",
+      "locale": "en",
+      "originalTitle": "K10イエローゴールド タンザナイト 12月誕生石 ネックレス",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "yamanashi"
+      ],
+      "craftIds": [
+        "kofu-jewelry"
+      ],
+      "materialIds": [
+        "gold-10k",
+        "tanzanite",
+        "diamond"
+      ],
+      "makerId": "simprich",
+      "craftClassification": {
+        "label": "SIMPRICH is a factory jewelry brand founded by seven Kofu jewelry companies and manages product development through production. The maker lists tanzanite and diamond for this model.",
+        "sourceIds": [
+          "simprich-k10-tanzanite-baguette-necklace-offer",
+          "simprich-k10-tanzanite-baguette-necklace-maker",
+          "simprich-k10-tanzanite-baguette-necklace-craft"
+        ]
+      },
+      "weightPerPieceGrams": null,
+      "priceAmount": 39600,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "listed",
+      "merchantIds": [
+        "simprich-official"
+      ],
+      "sourceIds": [
+        "simprich-k10-tanzanite-baguette-necklace-offer",
+        "simprich-k10-tanzanite-baguette-necklace-maker",
+        "simprich-k10-tanzanite-baguette-necklace-craft",
+        "simprich-k10-tanzanite-baguette-necklace-stockist"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "SIMPRICH Kofu tanzanite baguette necklace in K10 yellow gold",
+      "editorialSummary": "A baguette-cut tanzanite gives this Kofu-brand necklace a clean rectangle of blue-violet. The pendant measures only 6 × 3 mm, an easy scale for a shirt collar or for layering with a longer chain.",
+      "whoItMaySuit": "Someone drawn to a small, straight-sided gem and a little color near the collar.",
+      "whatToCheck": [
+        "Check where a 40 cm chain sits on you. This model is made to order and the maker currently quotes 1–4 weeks before shipping.",
+        "Use SP-207876 on the official page for this exact necklace."
+      ],
+      "size": "Chain 40 cm. Pendant top 6 × 3 mm.",
+      "findings": "K10 yellow gold, baguette-cut tanzanite and diamond.",
+      "fastening": "40 cm necklace chain. The exact clasp type is unconfirmed.",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date."
+    },
+    {
+      "id": "atelier-ozaki-naramachi-sakura-gold-silver-ring",
+      "slug": "atelier-ozaki-naramachi-sakura-gold-silver-ring",
+      "locale": "en",
+      "originalTitle": "Sv925＆K10 桜リング",
+      "publishStatus": "published",
+      "productType": [
+        "ring"
+      ],
+      "prefectureIds": [
+        "nara"
+      ],
+      "craftIds": [
+        "naramachi-studio-metalwork"
+      ],
+      "materialIds": [
+        "silver-925",
+        "gold-10k"
+      ],
+      "makerId": "atelier-ozaki",
+      "craftClassification": {
+        "label": "Atelier Ozaki designs and makes jewelry at its Naramachi studio shop, including hand-finished pieces made individually. The Sakura ring is a contemporary workshop design.",
+        "sourceIds": [
+          "atelier-ozaki-naramachi-sakura-gold-silver-ring-offer",
+          "atelier-ozaki-naramachi-sakura-gold-silver-ring-maker",
+          "atelier-ozaki-naramachi-sakura-gold-silver-ring-craft"
+        ]
+      },
+      "weightPerPieceGrams": null,
+      "priceAmount": 29800,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "listed",
+      "merchantIds": [
+        "atelier-ozaki-official"
+      ],
+      "sourceIds": [
+        "atelier-ozaki-naramachi-sakura-gold-silver-ring-offer",
+        "atelier-ozaki-naramachi-sakura-gold-silver-ring-maker",
+        "atelier-ozaki-naramachi-sakura-gold-silver-ring-craft",
+        "atelier-ozaki-naramachi-sakura-gold-silver-ring-store",
+        "atelier-ozaki-naramachi-sakura-gold-silver-ring-guide"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "Atelier Ozaki Naramachi K10 and sterling silver Sakura ring",
+      "editorialSummary": "A single sculpted cherry blossom sits above softly irregular faces in the silver. Warm K10 gold picks out the flower while the band stays easy to pair with silver jewelry.",
+      "whoItMaySuit": "Someone who likes a floral ring with a small motif and a mix of warm and cool metals.",
+      "whatToCheck": [
+        "The ring shown by the maker is Japanese size 12. If you ask for resizing, check the cost and the required time before you order.",
+        "The maker accepts size requests in half-size steps through order notes. Additional dispatch time is stated for adjustments."
+      ],
+      "size": "Japanese ring size 12 as listed. The maker takes size requests in half-size steps.",
+      "findings": "Sterling silver band and a K10 gold blossom.",
+      "fastening": "Closed ring band. Check size with the maker before buying.",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date."
+    },
+    {
+      "id": "premium-pearl-senshu-eternal-harmony-station-necklace",
+      "slug": "premium-pearl-senshu-eternal-harmony-station-necklace",
+      "locale": "en",
+      "originalTitle": "プレミアムパール 泉州の職人技 貝パール エターナルハーモニー ステーションネックレス",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "osaka"
+      ],
+      "craftIds": [
+        "senshu-shell-pearl"
+      ],
+      "materialIds": [
+        "imitation-pearl",
+        "plated-brass"
+      ],
+      "makerId": "premium-pearl-brand",
+      "craftClassification": {
+        "label": "The seller identifies these shell pearls as from Senshu, Osaka and the necklace as made in Japan. The brand profile describes handwork at a Senshu workshop. The site does not identify the workshop by name or give the assembly location for this piece.",
+        "sourceIds": [
+          "premium-pearl-senshu-eternal-harmony-station-necklace-offer",
+          "premium-pearl-senshu-eternal-harmony-station-necklace-maker",
+          "premium-pearl-senshu-eternal-harmony-station-necklace-craft"
+        ]
+      },
+      "weightPerPieceGrams": 20,
+      "priceAmount": 13800,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "in_stock",
+      "merchantIds": [
+        "shop-channel"
+      ],
+      "sourceIds": [
+        "premium-pearl-senshu-eternal-harmony-station-necklace-offer",
+        "premium-pearl-senshu-eternal-harmony-station-necklace-maker",
+        "premium-pearl-senshu-eternal-harmony-station-necklace-craft"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "PREMIUM PEARL Senshu Eternal Harmony shell-pearl station necklace",
+      "editorialSummary": "The exposed chain between white shell pearls gives this matinee-length necklace a lighter outline. Two pearl sizes create a rhythm that is easy to see over a simple crew neck.",
+      "whoItMaySuit": "Someone who wants spaced pearls that still show clearly over a sweater or a closed collar.",
+      "whatToCheck": [
+        "The necklace weighs about 20 g. Compare the 50–55 cm length with a chain that falls where you like.",
+        "Look for product number 819630. The exact listing states that the white beads are shell pearls."
+      ],
+      "size": "About 50–55 cm long and up to 9 mm wide. Twelve 9 mm and thirteen 5 mm beads.",
+      "findings": "White shell pearls from Senshu and a faceted brass chain with a gold-tone coating.",
+      "fastening": "See the seller’s current fastening images. The product description lists an adjustable length of approximately 50–55 cm.",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date."
+    },
+    {
+      "id": "je-et-nous-nara-deer-silhouette-silver-necklace",
+      "slug": "je-et-nous-nara-deer-silhouette-silver-necklace",
+      "locale": "en",
+      "originalTitle": "シルエットの鹿ネックレス",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "nara"
+      ],
+      "craftIds": [
+        "nara-deer-motif-jewelry"
+      ],
+      "materialIds": [
+        "silver-925",
+        "rhodium-coating"
+      ],
+      "makerId": "je-et-nous",
+      "craftClassification": {
+        "label": "The maker describes this necklace as finished by hand. JR Central identifies its Nara shop owner as the maker of deer-motif necklaces and other jewelry. Component origins are unspecified.",
+        "sourceIds": [
+          "je-et-nous-nara-deer-silhouette-silver-necklace-offer",
+          "je-et-nous-nara-deer-silhouette-silver-necklace-maker",
+          "je-et-nous-nara-deer-silhouette-silver-necklace-craft"
+        ]
+      },
+      "weightPerPieceGrams": null,
+      "priceAmount": 3900,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "listed",
+      "merchantIds": [
+        "je-et-nous-official"
+      ],
+      "sourceIds": [
+        "je-et-nous-nara-deer-silhouette-silver-necklace-offer",
+        "je-et-nous-nara-deer-silhouette-silver-necklace-maker",
+        "je-et-nous-nara-deer-silhouette-silver-necklace-craft",
+        "je-et-nous-nara-deer-silhouette-silver-necklace-store"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "Je et Nous Nara deer silhouette sterling silver necklace",
+      "editorialSummary": "A small standing deer forms the entire pendant of this sterling silver necklace. Its outline is clear enough to read on a plain top, with a rhodium finish for a cool silver tone.",
+      "whoItMaySuit": "Someone drawn to the deer around Nara who wants a recognizable silhouette with one metal tone.",
+      "whatToCheck": [
+        "The deer is about 2.5 cm wide. Check the chain length and motif size against a necklace you already wear.",
+        "The official item code is SN3. The same maker sells other deer necklaces in different shapes and materials."
+      ],
+      "size": "Deer approximately 2.5 cm wide × 2 cm tall. Overall length approximately 47.5–52 cm.",
+      "findings": "Sterling silver with rhodium finish, as listed by the maker.",
+      "fastening": "Check the maker’s listing for current detail images and sizing.",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date."
+    },
+    {
+      "id": "mitsusuke-higo-zogan-kumamoto-castle-geometric-pendant",
+      "slug": "mitsusuke-higo-zogan-kumamoto-castle-geometric-pendant",
+      "locale": "en",
+      "originalTitle": "【純金・銀細工】ペンダント(三角幾何学)",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "kumamoto"
+      ],
+      "craftIds": [
+        "higo-zogan"
+      ],
+      "materialIds": [
+        "iron",
+        "gold-24k",
+        "gold-18k",
+        "plated-brass"
+      ],
+      "makerId": "mitsusuke",
+      "craftClassification": {
+        "label": "Mitsusuke works in the Kumamoto tradition of Higo metal inlay. Its product listing identifies an iron and gold pendant and credits Kumamoto Castle’s stone walls as the pattern’s inspiration.",
+        "sourceIds": [
+          "mitsusuke-higo-zogan-kumamoto-castle-geometric-pendant-offer",
+          "mitsusuke-higo-zogan-kumamoto-castle-geometric-pendant-maker",
+          "mitsusuke-higo-zogan-kumamoto-castle-geometric-pendant-craft"
+        ]
+      },
+      "weightPerPieceGrams": null,
+      "priceAmount": 27500,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "in_stock",
+      "merchantIds": [
+        "mitsusuke-official"
+      ],
+      "sourceIds": [
+        "mitsusuke-higo-zogan-kumamoto-castle-geometric-pendant-offer",
+        "mitsusuke-higo-zogan-kumamoto-castle-geometric-pendant-maker",
+        "mitsusuke-higo-zogan-kumamoto-castle-geometric-pendant-craft",
+        "mitsusuke-higo-zogan-kumamoto-castle-geometric-pendant-store",
+        "mitsusuke-higo-zogan-kumamoto-castle-geometric-pendant-guide"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "Mitsusuke Higo inlay Kumamoto Castle geometric pendant",
+      "editorialSummary": "Mitsusuke takes the uneven pattern of castle stonework and gives it a narrow, vertical pendant. Fine gold details stand out against the dark iron, on a gold-tone 60 cm chain.",
+      "whoItMaySuit": "Someone looking for a long, graphic pendant with a clear connection to a place they visited.",
+      "whatToCheck": [
+        "The pendant is 46 mm tall and the chain is 60 cm. Compare the length with a necklace you own to see where it will rest.",
+        "Check the item code M2021P-34 and the maker’s current details before purchasing or visiting."
+      ],
+      "size": "Pendant 46 × 22 × 1.6 mm. Chain 60 cm.",
+      "findings": "Iron with 24K and 18K gold decoration. The fittings and chain are gold-plated brass.",
+      "fastening": "Refer to the official seller’s current images for the fastening detail.",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date."
+    },
+    {
+      "id": "kuji-kohaku-banded-amber-ring-size-13",
+      "slug": "kuji-kohaku-banded-amber-ring-size-13",
+      "locale": "en",
+      "originalTitle": "久慈産琥珀リング（11号、13号）",
+      "publishStatus": "published",
+      "productType": [
+        "ring"
+      ],
+      "prefectureIds": [
+        "iwate"
+      ],
+      "craftIds": [
+        "kuji-amber-working"
+      ],
+      "materialIds": [
+        "amber",
+        "silver-925",
+        "gold-plating"
+      ],
+      "makerId": "kuji-kohaku",
+      "craftClassification": {
+        "label": "Kuji Kohaku mines the regional amber and documents selecting, shaping and polishing the stone in its own workshop. The maker specifies Kuji amber for this ring.",
+        "sourceIds": [
+          "kuji-kohaku-banded-amber-ring-size-13-offer",
+          "kuji-kohaku-banded-amber-ring-size-13-maker",
+          "kuji-kohaku-banded-amber-ring-size-13-craft"
+        ]
+      },
+      "weightPerPieceGrams": null,
+      "priceAmount": 27500,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "in_stock",
+      "merchantIds": [
+        "kuji-kohaku-official"
+      ],
+      "sourceIds": [
+        "kuji-kohaku-banded-amber-ring-size-13-offer",
+        "kuji-kohaku-banded-amber-ring-size-13-maker",
+        "kuji-kohaku-banded-amber-ring-size-13-craft",
+        "kuji-kohaku-banded-amber-ring-size-13-store"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "Kuji Kohaku banded Kuji amber ring, Japanese size 13",
+      "editorialSummary": "The round amber top sits close to the finger, so its natural bands show between the edges of the setting. Gold-tone plated silver gives the ring a warm frame.",
+      "whoItMaySuit": "Someone who wants a broad amber surface and enjoys variations in the stone’s pattern.",
+      "whatToCheck": [
+        "Confirm Japanese size 13 before ordering. The maker lists this design as non-resizable.",
+        "Select Japanese size 13 on the maker’s page. The color and bands vary from stone to stone."
+      ],
+      "size": "Japanese size 13. Amber about 15 mm across and 4.5 mm thick. No resizing listed.",
+      "findings": "Local Kuji amber and gold-tone plated SV925 sterling silver.",
+      "fastening": "Closed ring in size 13.",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date."
+    },
+    {
+      "id": "girls-life-labo-fukuiro-hana-triangle-studs",
+      "slug": "girls-life-labo-fukuiro-hana-triangle-studs",
+      "locale": "en",
+      "originalTitle": "ふくいろピアス/イヤリング【はなのいろ】",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "fukushima"
+      ],
+      "craftIds": [
+        "aizu-cotton-weaving"
+      ],
+      "materialIds": [
+        "cotton",
+        "resin",
+        "acrylic"
+      ],
+      "makerId": "girls-life-labo",
+      "craftClassification": {
+        "label": "The Fukushima-based group created the Fukuiro line around Aizu cloth. The exact product page identifies Aizu cotton enclosed in acrylic and resin for the pierced fittings. The precise assembly workshop is unconfirmed.",
+        "sourceIds": [
+          "girls-life-labo-fukuiro-hana-triangle-studs-offer",
+          "girls-life-labo-fukuiro-hana-triangle-studs-maker",
+          "girls-life-labo-fukuiro-hana-triangle-studs-craft"
+        ]
+      },
+      "weightPerPieceGrams": null,
+      "priceAmount": 2200,
+      "priceCurrency": "JPY",
+      "priceUnit": "pair",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "in_stock",
+      "merchantIds": [
+        "girls-life-labo-official"
+      ],
+      "sourceIds": [
+        "girls-life-labo-fukuiro-hana-triangle-studs-offer",
+        "girls-life-labo-fukuiro-hana-triangle-studs-maker",
+        "girls-life-labo-fukuiro-hana-triangle-studs-craft",
+        "girls-life-labo-fukuiro-hana-triangle-studs-store",
+        "girls-life-labo-fukuiro-hana-triangle-studs-stockist",
+        "girls-life-labo-fukuiro-hana-triangle-studs-guide"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "GIRLS LIFE LABO Fukuiro Aizu cotton triangle studs in Hana no Iro",
+      "editorialSummary": "Aizu cotton sits inside a clear acrylic triangle. This Hana no Iro pair brings a bit of woven color to the earlobe in a top about 1 cm across.",
+      "whoItMaySuit": "Someone who likes a compact geometric stud and the detail of woven cloth.",
+      "whatToCheck": [
+        "The maker says the resin posts are a little thicker than the titanium posts it uses as a comparison. Check your fit before ordering if you prefer a narrow post.",
+        "Choose 【ピアス△】はなのいろ to match this pair. The clip-on and other shapes have their own options on the product page."
+      ],
+      "size": "Each triangle is about 10 × 10 mm and 4 mm thick at the top.",
+      "findings": "Acrylic, Aizu cotton and resin posts and backs.",
+      "fastening": "Pierced studs with resin posts and backs.",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date."
+    },
+    {
+      "id": "itohen-kokura-ori-butterfly-necklace",
+      "slug": "itohen-kokura-ori-butterfly-necklace",
+      "locale": "en",
+      "originalTitle": "バタフライペンダント（小倉織）",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "fukuoka"
+      ],
+      "craftIds": [
+        "kokura-ori-textile-accessories"
+      ],
+      "materialIds": [
+        "textile"
+      ],
+      "makerId": "itohen-kitakyushu",
+      "craftClassification": {
+        "label": "ITOHEN makes textile accessories in Kitakyushu. Select this pendant’s handwoven Kokura-ori fabric, made from remnants provided by the weavers.",
+        "sourceIds": [
+          "itohen-kokura-ori-butterfly-necklace-offer",
+          "itohen-kokura-ori-butterfly-necklace-maker",
+          "itohen-kokura-ori-butterfly-necklace-craft"
+        ]
+      },
+      "weightPerPieceGrams": null,
+      "priceAmount": 6600,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "listed",
+      "merchantIds": [
+        "itohen-official"
+      ],
+      "sourceIds": [
+        "itohen-kokura-ori-butterfly-necklace-offer",
+        "itohen-kokura-ori-butterfly-necklace-maker",
+        "itohen-kokura-ori-butterfly-necklace-craft",
+        "itohen-kokura-ori-butterfly-necklace-store",
+        "itohen-kokura-ori-butterfly-necklace-access",
+        "itohen-kokura-ori-butterfly-necklace-guide"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "ITOHEN Kokura-ori butterfly necklace",
+      "editorialSummary": "ITOHEN gives a piece of handwoven Kokura-ori a new outline. The butterfly is just over two centimeters across, leaving the stripes to define its wings while the fine chain keeps the shape easy to wear.",
+      "whoItMaySuit": "Someone who wants a small textile necklace with a fabric choice that is personal to their order.",
+      "whatToCheck": [
+        "Choose Kokura-ori in the fabric menu. Leave enough time for the shop to confirm the fabric and make the pendant before your trip ends.",
+        "Striping and color will vary. Rely on the seller’s preview to choose your fabric."
+      ],
+      "size": "Pendant 2.1 × 2.1 cm, chain 40 cm plus a 5 cm extension.",
+      "findings": "Chain alloy unspecified by the maker.",
+      "fastening": null,
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date."
+    },
+    {
+      "id": "tamura-owari-enamel-leaf-purple-yellow-drop-necklace",
+      "slug": "tamura-owari-enamel-leaf-purple-yellow-drop-necklace",
+      "locale": "en",
+      "originalTitle": "七宝焼ネックレス雫型《木の葉：紫黄》",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "aichi"
+      ],
+      "craftIds": [
+        "owari-cloisonne"
+      ],
+      "materialIds": [
+        "enamel-glaze",
+        "stainless-steel"
+      ],
+      "makerId": "tamura-shippo",
+      "craftClassification": {
+        "label": "Handmade Owari-enamel jewelry from Tamura’s Ama workshop. Fine lines divide the leaf-like colored areas in the fired enamel surface. The general Owari craft designation is not an item-level certificate for this necklace.",
+        "sourceIds": [
+          "tamura-owari-enamel-leaf-purple-yellow-drop-necklace-offer",
+          "tamura-owari-enamel-leaf-purple-yellow-drop-necklace-maker",
+          "tamura-owari-enamel-leaf-purple-yellow-drop-necklace-craft"
+        ]
+      },
+      "weightPerPieceGrams": null,
+      "priceAmount": 33000,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "in_stock",
+      "merchantIds": [
+        "tamura-official"
+      ],
+      "sourceIds": [
+        "tamura-owari-enamel-leaf-purple-yellow-drop-necklace-offer",
+        "tamura-owari-enamel-leaf-purple-yellow-drop-necklace-maker",
+        "tamura-owari-enamel-leaf-purple-yellow-drop-necklace-craft",
+        "tamura-owari-enamel-leaf-purple-yellow-drop-necklace-guide"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "Tamura Owari-enamel leaf-drop necklace in purple and yellow",
+      "editorialSummary": "Curved leaves of purple, warm yellow and pale enamel meet inside a rounded drop. A fine silver-tone outline gives the colorful top a clean edge, with enough pattern to make a plain shirt feel considered.",
+      "whoItMaySuit": "Someone who enjoys a small patterned piece with more than one color to pick up in an outfit.",
+      "whatToCheck": [
+        "The chain measures 35 cm plus a 5 cm adjuster. Compare that length with a necklace that sits where you want it.",
+        "This is 木の葉：紫黄, the purple-and-yellow version. Individual handmade color and pattern details can vary."
+      ],
+      "size": "Top: maximum length 25 mm. Chain: 35 cm plus 5 cm adjuster. Width, thickness and weight are not stated.",
+      "findings": "Fired enamel top with metal components of unspecified exact composition. Detachable stainless-steel chain; no grade is stated.",
+      "fastening": "Chain with a 5 cm adjuster; clasp type not specified.",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date."
+    },
+    {
+      "id": "kato-suke-round-navy-cloisonne-pendant",
+      "slug": "kato-suke-round-navy-cloisonne-pendant",
+      "locale": "en",
+      "originalTitle": "丸 透(Suke) ペンダント・紺",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "aichi"
+      ],
+      "craftIds": [
+        "owari-cloisonne"
+      ],
+      "materialIds": [
+        "silver",
+        "copper",
+        "enamel-glaze",
+        "alloy",
+        "rhodium-coating"
+      ],
+      "makerId": "kato-shippo",
+      "craftClassification": {
+        "label": "Made in Aichi using Owari enameling. Kato’s Nagoya workshop works with glass-like enamel over metal; the SUKE listing identifies silver-backed wireless enamel. This is a contemporary accessory, without a verified item-level traditional-craft certificate.",
+        "sourceIds": [
+          "kato-suke-round-navy-cloisonne-pendant-offer",
+          "kato-suke-round-navy-cloisonne-pendant-maker",
+          "kato-suke-round-navy-cloisonne-pendant-craft"
+        ]
+      },
+      "weightPerPieceGrams": null,
+      "priceAmount": 7700,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "listed",
+      "merchantIds": [
+        "becos-ja"
+      ],
+      "sourceIds": [
+        "kato-suke-round-navy-cloisonne-pendant-offer",
+        "kato-suke-round-navy-cloisonne-pendant-maker",
+        "kato-suke-round-navy-cloisonne-pendant-craft",
+        "kato-suke-round-navy-cloisonne-pendant-store",
+        "kato-suke-round-navy-cloisonne-pendant-guide"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "Kato SUKE round Owari-enamel pendant in navy",
+      "editorialSummary": "Rich blue enamel catches a shifting silver-backed gleam inside a fine round rim. The compact SUKE pendant keeps the outline simple, leaving the color to do the work.",
+      "whoItMaySuit": "Someone who wants a saturated blue accent in a simple everyday shape.",
+      "whatToCheck": [
+        "This is an orderable backorder listing. Check the current dispatch estimate before choosing a delivery date.",
+        "Choose 紺 (Navy), SKU s0087-032. Chain length is not specified on the checked product page."
+      ],
+      "size": "Motif face: approximately 15 × 15 mm. Chain length and motif thickness are not specified.",
+      "findings": "Silver, copper and enamel. Chain and findings are rhodium-plated alloy, according to the seller.",
+      "fastening": "Necklace chain supplied; the clasp type is not stated.",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date."
+    },
+    {
+      "id": "iwaya-yame-20mm-red-urushi-bead-pendant",
+      "slug": "iwaya-yame-20mm-red-urushi-bead-pendant",
+      "locale": "en",
+      "originalTitle": "漆玉ペンダント２０mm・レッド",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "fukuoka"
+      ],
+      "craftIds": [
+        "yame-urushi"
+      ],
+      "materialIds": [
+        "wood",
+        "urushi-lacquer"
+      ],
+      "makerId": "iwaya-urushi",
+      "craftClassification": {
+        "label": "The Yame workshop applies lacquer skills inherited from Yame-Fukushima Buddhist-altar work to accessories. This pendant uses Japanese mizuki wood, with twelve stages of coating and polishing. No item-level traditional-craft certification is claimed.",
+        "sourceIds": [
+          "iwaya-yame-20mm-red-urushi-bead-pendant-offer",
+          "iwaya-yame-20mm-red-urushi-bead-pendant-maker",
+          "iwaya-yame-20mm-red-urushi-bead-pendant-craft"
+        ]
+      },
+      "weightPerPieceGrams": null,
+      "priceAmount": 7700,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "in_stock",
+      "merchantIds": [
+        "iwaya-official"
+      ],
+      "sourceIds": [
+        "iwaya-yame-20mm-red-urushi-bead-pendant-offer",
+        "iwaya-yame-20mm-red-urushi-bead-pendant-maker",
+        "iwaya-yame-20mm-red-urushi-bead-pendant-craft",
+        "iwaya-yame-20mm-red-urushi-bead-pendant-store",
+        "iwaya-yame-20mm-red-urushi-bead-pendant-guide"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "Iwaya Yame red urushi-bead pendant, 20 mm",
+      "editorialSummary": "A single round red bead sits on a slender black cord. The uncomplicated shape gives the lacquer’s gloss room to show, making it an easy focal point for a plain neckline.",
+      "whoItMaySuit": "Someone who prefers one bold accent to several layers of jewelry.",
+      "whatToCheck": [
+        "The cord adjusts, but the maker does not give its minimum or maximum length.",
+        "Choose レッド (Red) on the official 20 mm pendant page. The same page includes other colors."
+      ],
+      "size": "Bead diameter: 20 mm. Cord length is adjustable; the range is not specified.",
+      "findings": "Japanese mizuki wood with urushi lacquer, on a cord whose fiber composition is not specified.",
+      "fastening": "Adjustable cord; follow the maker’s photographs for the knot arrangement.",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date."
+    },
+    {
+      "id": "iwaya-yame-hand-carved-pink-blue-urushi-ring-no10",
+      "slug": "iwaya-yame-hand-carved-pink-blue-urushi-ring-no10",
+      "locale": "en",
+      "originalTitle": "漆手けずりリング一点もの１０",
+      "publishStatus": "published",
+      "productType": [
+        "ring"
+      ],
+      "prefectureIds": [
+        "fukuoka"
+      ],
+      "craftIds": [
+        "yame-urushi"
+      ],
+      "materialIds": [
+        "wood",
+        "urushi-lacquer"
+      ],
+      "makerId": "iwaya-urushi",
+      "craftClassification": {
+        "label": "Iwaya uses Yame-Fukushima altar-lacquer skills for accessories. The ring is carved from wood, reinforced with cloth, prepared with a layered lacquer ground and finished in two colors. The workshop identifies Japanese mizuki for its ring process; no item-level certification is claimed.",
+        "sourceIds": [
+          "iwaya-yame-hand-carved-pink-blue-urushi-ring-no10-offer",
+          "iwaya-yame-hand-carved-pink-blue-urushi-ring-no10-maker",
+          "iwaya-yame-hand-carved-pink-blue-urushi-ring-no10-craft"
+        ]
+      },
+      "weightPerPieceGrams": null,
+      "priceAmount": 22000,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "in_stock",
+      "merchantIds": [
+        "iwaya-official"
+      ],
+      "sourceIds": [
+        "iwaya-yame-hand-carved-pink-blue-urushi-ring-no10-offer",
+        "iwaya-yame-hand-carved-pink-blue-urushi-ring-no10-maker",
+        "iwaya-yame-hand-carved-pink-blue-urushi-ring-no10-craft",
+        "iwaya-yame-hand-carved-pink-blue-urushi-ring-no10-store",
+        "iwaya-yame-hand-carved-pink-blue-urushi-ring-no10-guide"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "Iwaya Yame pink-and-blue hand-carved urushi ring No. 10",
+      "editorialSummary": "A broad, rounded lacquer band in deep pink reveals a blue interior when you take it off. There is no stone to take the focus away from the curve and the two-color finish.",
+      "whoItMaySuit": "Someone who likes a substantial ring shape and a playful detail on the inside.",
+      "whatToCheck": [
+        "This is one Japanese size-11 ring. The listing does not offer other sizes or confirm resizing.",
+        "No. 10 is a one-off piece; check the current official stock before choosing it."
+      ],
+      "size": "Japanese ring size 11. Front height 11 mm, rear height 8 mm, outer diameter 25 mm.",
+      "findings": "Wooden body with cloth reinforcement and urushi lacquer. The workshop identifies Japanese mizuki in its ring-making process.",
+      "fastening": "Closed ring in the listed size; not described as adjustable.",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date."
+    },
+    {
+      "id": "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings",
+      "slug": "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings",
+      "locale": "en",
+      "originalTitle": "Chiasmaピアス/イヤリング（アカトアオ）",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "oita"
+      ],
+      "craftIds": [
+        "bungo-takada-bamboo-jewelry"
+      ],
+      "materialIds": [
+        "bamboo",
+        "urushi-lacquer"
+      ],
+      "makerId": "mikai-bamboo",
+      "craftClassification": {
+        "label": "MIKAI BAMBOO’s maker works in Bungo-Takada on the Kunisaki Peninsula. The maker describes using local bamboo in her workshop and drawing on Beppu bamboo-working techniques.",
+        "sourceIds": [
+          "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings-offer",
+          "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings-maker",
+          "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings-craft"
+        ]
+      },
+      "weightPerPieceGrams": null,
+      "priceAmount": 30800,
+      "priceCurrency": "JPY",
+      "priceUnit": "pair",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "in_stock",
+      "merchantIds": [
+        "mikai-bamboo-official"
+      ],
+      "sourceIds": [
+        "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings-offer",
+        "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings-maker",
+        "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings-craft",
+        "mikai-bamboo-bungo-takada-chiasma-blue-red-pierced-earrings-guide"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "MIKAI BAMBOO Bungo-Takada Chiasma red-and-blue bamboo earrings",
+      "editorialSummary": "Flat bamboo strips cross over and under, forming a close lattice with a raised surface. Each square hangs on the diagonal. This Chiasma color is called Aka to Ao, red and blue.",
+      "whoItMaySuit": "Someone who wants a larger pair with a geometric outline and two rich colors.",
+      "whatToCheck": [
+        "The maker describes a larger silhouette. The fitting style has to be requested. Check the close-ups and exact scale if you normally wear small studs.",
+        "Choose アカトアオ and write ピアス in the order remarks. The maker asks for about three weeks after ordering."
+      ],
+      "size": "The maker describes a larger three-dimensional earring. Its dimension line does not identify the measurement units, so check scale with the maker if needed.",
+      "findings": "Woven split bamboo with a lacquer finish. The official photograph shows a gold-tone pierced hook and small connecting ring. The fitting metal is unspecified.",
+      "fastening": "Select the red-and-blue color and request ピアス (pierced fittings) in the order remarks.",
+      "taxNote": "Tax-inclusive Japanese online price at the recorded date."
+    },
+    {
+      "id": "tabinokiseki-itoshima-yunagi-glass-aroma-pendant",
+      "slug": "tabinokiseki-itoshima-yunagi-glass-aroma-pendant",
+      "locale": "en",
+      "originalTitle": "夕凪 アロマペンダント",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "fukuoka"
+      ],
+      "craftIds": [
+        "itoshima-lampworked-glass"
+      ],
+      "materialIds": [
+        "glass"
+      ],
+      "makerId": "tabinokiseki",
+      "craftClassification": {
+        "label": "Tabinokiseki forms its glass accessories by hand at its workshop in Itoshima, Fukuoka. The maker describes the Yunagi colors as inspired by dusk over the sea in Itoshima.",
+        "sourceIds": [
+          "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-offer",
+          "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-maker",
+          "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-craft"
+        ]
+      },
+      "weightPerPieceGrams": 3,
+      "priceAmount": 7700,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-24",
+      "availability": "in_stock",
+      "merchantIds": [
+        "tabinokiseki-official"
+      ],
+      "sourceIds": [
+        "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-offer",
+        "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-maker",
+        "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-craft",
+        "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-store",
+        "tabinokiseki-itoshima-yunagi-glass-aroma-pendant-guide"
+      ],
+      "lastVerifiedAt": "2026-11-24",
+      "imageAssetIds": [],
+      "title": "Tabinokiseki Itoshima Yunagi glass aroma pendant, brown-cord teardrop",
+      "editorialSummary": "The colors of dusk on the Itoshima coast become a translucent teardrop on a brown cord. A small opening lets you add a little fragrance when you want it.",
+      "whoItMaySuit": "Someone who likes a small glass pendant and the option to wear a little of their own fragrance.",
+      "whatToCheck": [
+        "Check the maker’s handling directions if using fragrance. The maker advises one to two drops and cautions against overfilling the opening.",
+        "Select the teardrop and brown cord to match this listing. The shop also offers an angular shape and a black cord."
+      ],
+      "size": "Top about 20 mm tall × 13 mm across. Approx. 3 g including cord.",
+      "findings": "Hand-formed borosilicate glass with a brown cord, and one dropper.",
+      "fastening": "Brown cord. The exact clasp or adjustment mechanism is not specified.",
       "taxNote": "Tax-inclusive Japanese online price at the recorded date."
     }
   ]

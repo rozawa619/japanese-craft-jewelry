@@ -1,14 +1,14 @@
 ---
 title: "福岡に関わるジュエリー"
-description: "八女の漆工房 岩弥から、購入先を確認できた漆玉の耳飾りを。"
+description: "八女の漆アクセサリーや北九州の小倉織を使ったネックレス。公式通販と工房の案内を掲載。"
 locale: ja
 publishStatus: published
-updatedAt: "2026-11-16"
-sourceIds: ["iwaya-urushi-9mm-hook-v11","iwaya-shop-v11"]
+updatedAt: "2026-11-24"
+sourceIds: ["iwaya-urushi-9mm-hook-v11","iwaya-shop-v11","iwaya-yame-20mm-red-urushi-bead-pendant-offer","iwaya-yame-hand-carved-pink-blue-urushi-ring-no10-offer","itohen-kokura-ori-butterfly-necklace-offer","itohen-kokura-ori-butterfly-necklace-store","tabinokiseki-itoshima-yunagi-glass-aroma-pendant-offer","tabinokiseki-itoshima-yunagi-glass-aroma-pendant-store"]
 prefectureId: fukuoka
-relatedMerchantIds: ["cocoon-official"]
+relatedMerchantIds: ["iwaya-official","itohen-official","tabinokiseki-official"]
 ---
 
-福岡の現在のセレクトは、漆工房 岩弥。八女福島仏壇の漆の技術をアクセサリーへ生かす工房で、公式の注文ページと現行の店舗案内を確認しています。技法とのつながりを、個別商品の工芸認証とは区別しています。
+八女では、漆工房 岩弥が八女福島仏壇で培われた漆の技術を耳飾りやペンダント、手けずりの指輪に生かしています。北九州では、ITOHENが手織りの小倉織を蝶の羽に仕立てたネックレスを受注制作しています。糸島では、タビノキセキが夕暮れの色を淡い青とピンクのガラスに映したペンダントを手がけています。
 
-小さなミズキの木地に漆を重ね、丸い表面を見せるフック式の耳飾りです。購入先を確かめられなかったカタログだけの布製品は掲載を見送りました。現在の品揃えは、公式の注文ページと店舗案内から確認できます。
+八女の岩弥と、北九州市戸畑のITOHEN、糸島のタビノキセキに直営店があります。訪問日、希望の色・号数、受注品の相談や受け取りについては、商品ページの案内を見てから各工房にご確認ください。

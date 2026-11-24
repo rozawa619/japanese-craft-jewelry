@@ -29,7 +29,7 @@ const additionalOrder=['ishikawa','saga'];
 const route=(locale,path='')=>new URL(base+locale+'/'+path,origin).href;
 const report={
  checkedAt:new Date().toISOString(),origin,base,mode:focusOnly?'focused crop and layout recheck':'full navigation check',
- method:focusOnly?'Focused fresh-Chrome layout recheck after CSS polish: EN/JA home/selection/regions at1440/390/320, independent source ranking, complete representative-image decoding, natural aspect ratio for preserveRatio desktop images, unsplit short region names, left/right placement, overflow and accessibility. Six regional row crops per language/viewport support manual visual review. Does not repeat the earlier full region/product click roundtrips or navigate to external sites.':'Fresh Chrome, read-only internal navigation. Ranking expectation is the separately researched JTA2025 final Table6-1 extraction, not the display configuration. EN/JA at1440/390/320; exact ten ranked destinations plus Ishikawa/Saga; every ranked region and its representative are actually clicked, followed and returned from. Images, AI labels, region association, minimum two local products, keyboard/language flow, overflow, accessibility and full-page home/selection screenshots. No retailer/map/source navigation, forms, account actions or applications.',
+ method:focusOnly?'Focused fresh-Chrome layout recheck after CSS polish: EN/JA home/selection/regions at1440/390/320, independent source ranking, complete representative-image decoding, natural aspect ratio for preserveRatio desktop images, unsplit short region names, left/right placement, overflow and accessibility. Six regional row crops per language/viewport support manual visual review. Does not repeat the earlier full region/product click roundtrips or navigate to external sites.':'Fresh Chrome, read-only internal navigation. Ranking expectation is the separately researched JTA2025 final Table6-1 extraction, not the display configuration. EN/JA at1440/390/320; exact ten ranked destinations plus Ishikawa/Saga; every ranked region and its representative are actually clicked, followed and returned from. Images, AI labels, region association, minimum five local products, keyboard/language flow, overflow, accessibility and full-page home/selection screenshots. No retailer/map/source navigation, forms, account actions or applications.',
  research:{year:research.year,table:research.table,source:research.dataUrl,checkedAt:research.checkedAt},
  checks:[],failures:[],screenshots:[],pageErrors:[],consoleErrors:[],
 };
@@ -88,7 +88,7 @@ async function inspectDirectory(page,locale,width){
   const text=await row.innerText();
   assert.ok(text.includes(Number(expected.displayPercent).toFixed(1)+'%'),'Displayed visit rate differs from the primary-source extraction.');
   const local=published.filter(product=>product.prefectureIds.includes(expected.prefectureId));
-  assert.ok(local.length>=2,'Each top-ten region needs varied published products: '+expected.prefectureId);
+  assert.ok(local.length>=5,'Each top-ten region needs at least five published products: '+expected.prefectureId);
   assert.equal(Number(await row.getAttribute('data-region-product-count')),local.length);
   const piece=row.locator('[data-representative-product]');
   assert.equal(await piece.count(),1);
