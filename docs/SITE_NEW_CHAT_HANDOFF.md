@@ -22,9 +22,9 @@
 
 | 項目 | 2026-11-24（JST）確認時点 |
 | --- | --- |
-| アプリ | **v0.24.0**、アプリSHA `a9495260a82bda1a886945dbcfa2286ce26330c9` |
-| 配信 | GitHub Pages。2026-11-24 14:04 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45330626349)の配信が完了 |
-| 照合 | 日英の公開URLがHTTP 200で応答し、旅先検索と47都道府県へのリンクを確認。詳細な確認範囲と未確認事項は[035の検証記録](../specs/035-national-travel-discovery/validation.md)・[公開記録](deployment-results.json)を参照 |
+| アプリ | **v0.24.1**、アプリSHA `ea640461a02b099a27641f4d8e14b5518d4d709c` |
+| 配信 | GitHub Pages。2026-11-24 14:18 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45332290970)の配信が完了 |
+| 照合 | 日英トップのHTTP 200と修正後HTMLの配信一致を確認。詳細な確認範囲と未確認事項は[035の検証記録](../specs/035-national-travel-discovery/validation.md)・[公開記録](deployment-results.json)を参照 |
 | 商品・地域 | 登録94点、公開88点、下書き6点。47都道府県掲載 |
 | 工芸・購入先 | 公開商品に紐づく技法59件（全61件）、登録出典390件。46店舗、店舗案内付き69商品。購入根拠は公式通販79点、店舗とカタログ9点 |
 | 画像 | AI画像174点。着用86点、商品単体88点。着用画像は架空の日本人成人女性として生成 |
@@ -44,7 +44,7 @@ Astro 7・TypeScript・Zodを使う日英の静的サイトです。日本地図
 | [032](../specs/032-purchase-selections/spec.md) | 照合済み10商品の色・金具などの選択名やカタログ掲載名。凛然「星華 琥珀」の国内・海外価格に1組の販売単位 |
 | [033](../specs/033-sora-video-jewelry/spec.md) | 日英 `/sora/#video-jewelry` で、照合済みのTikTok公開10投稿に対応する神奈川7商品から詳細へ移動 |
 | [034](../specs/034-kyoto-video-jewelry/spec.md) | 京都4商品を動画導線に追加し、神奈川7商品と合わせて11商品。神奈川7商品の購入案内とスマートフォン相当の操作を検証 |
-| [035](../specs/035-national-travel-discovery/spec.md) | 注文受付を再確認した19県の19商品を加え、47都道府県・88商品を公開。地方→都道府県→訪問エリア→商品を選ぶ日英の旅先検索 |
+| [035](../specs/035-national-travel-discovery/spec.md) | 注文受付を再確認した19県の19商品を加え、47都道府県・88商品を公開。地方→都道府県→訪問エリア→商品を選ぶ日英の旅先検索。v0.24.1でスマートフォンの初期画面に検索への通常リンクを追加し、選択後の商品プレビューのリンクの高さを44px以上に修正 |
 
 ### 編集・検証の正本
 
@@ -59,7 +59,7 @@ Astro 7・TypeScript・Zodを使う日英の静的サイトです。日本地図
 
 ## 次の候補と残条件
 
-### 全国掲載と旅先検索（v0.24.0公開済み）
+### 全国掲載と旅先検索（035）
 
 全国拡充と日英の旅先検索は[仕様035](../specs/035-national-travel-discovery/spec.md)です。47都道府県から探せるようにし、神奈川は箱根・鎌倉、東京は訪問先を確認した各エリアから商品に進めます。都道府県とエリアの表示用データは [travel-areas.ts](../src/config/travel-areas.ts) にあります。新規19商品の注文確認は [一次情報の記録](research/national-listings-2026-11-24.md)、画像の作成条件は [着用イメージの記録](image-generation-styling-v35.json) を参照してください。
 
@@ -70,7 +70,7 @@ Astro 7・TypeScript・Zodを使う日英の静的サイトです。日本地図
 | 購入時の情報差を減らす | 神奈川の動画掲載7商品を再照合済み。他の商品は同じ商品・色・金具・市場・販売単位で、販売元の情報と照合する。 [仕様028](../specs/028-purchase-routes/spec.md)・[仕様032](../specs/032-purchase-selections/spec.md) |
 | 全国版の継続更新 | 47都道府県版は配信済み。商品の追加・差し替えを依頼された場合は、商品・選択名・販売単位・確認日を一次情報と照合し、[035の検証](../specs/035-national-travel-discovery/validation.md)と公開記録を更新する。 |
 | 収益化の準備 | 商用ホストの適合、BECOS等の提携条件、実アカウントの承認、広告の同意管理や画像使用条件を確認。 [申請前の確認](pre-application-checklist.md) |
-| 運用と端末の検証 | v0.24.0の確認範囲は[035の検証](../specs/035-national-travel-discovery/validation.md)を参照。iPhone 15相当のWebKitでの購入導線・日英切替は[034当時の記録](../specs/034-kyoto-video-jewelry/validation.md)。実機iPhone／SafariとSNSのアプリ内ブラウザーは確認待ち。 |
+| 運用と端末の検証 | v0.24.1のローカル検証はiPhone相当のWebKitエミュレーションとChromiumを使用。公開後を含む詳細な結果は[035の検証](../specs/035-national-travel-discovery/validation.md)を参照。実機iPhone／Safariにはアクセスできず未検証。SNSのアプリ内ブラウザーも未検証。 |
 
 ## 実装を再開するとき
 
@@ -94,7 +94,7 @@ https://github.com/rozawa619/japanese-craft-jewelry/blob/main/docs/SITE_NEW_CHAT
 日本語 https://rozawa619.github.io/japanese-craft-jewelry/ja/
 英語 https://rozawa619.github.io/japanese-craft-jewelry/en/
 
-まず最新のmainを確認し、引継ぎ書、START_HERE.md、AGENTS.md、docs/handoff-status.json、docs/deployment-results.jsonを実際に読んでください。mainのHEAD、実公開アプリのバージョンとSHA、GitHub Actions、公開URLの状態を照合してください。引継ぎ時点はv0.24.0、公開88商品・登録94商品・下書き6商品、掲載47都道府県です。日英の旅先検索で地方→都道府県→訪問エリア→商品へ進めます。SORAプロフィールからは公開動画と照合した京都4・神奈川7商品の詳細へ進めます。以後の変更があれば、GitHubの最新記録と実URLを優先してください。
+まず最新のmainを確認し、引継ぎ書、START_HERE.md、AGENTS.md、docs/handoff-status.json、docs/deployment-results.jsonを実際に読んでください。mainのHEAD、実公開アプリのバージョンとSHA、GitHub Actions、公開URLの状態を照合してください。引継ぎ時点はv0.24.1、公開88商品・登録94商品・下書き6商品、掲載47都道府県です。日英の旅先検索で地方→都道府県→訪問エリア→商品へ進めます。v0.24.1でスマートフォンの初期画面から検索へ進むリンクと、選択後の商品プレビューの押しやすさを修正しました。端末検証はエミュレーションで、実機iPhone／Safariにはアクセスできず未検証です。SORAプロフィールからは公開動画と照合した京都4・神奈川7商品の詳細へ進めます。以後の変更があれば、GitHubの最新記録と実URLを優先してください。
 
 最初はコードと公開設定を変更せず、現在地、確認できたことと未確認事項、次の優先候補とおすすめの1件を報告してください。各候補に効果、変更対象、依存条件、検証方法を添えてください。次の作業はこちらで指定します。
 

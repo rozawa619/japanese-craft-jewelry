@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-24T05:08:09.617Z",
+  "updatedAt": "2026-11-24T05:19:39.328Z",
   "entryPoint": "START_HERE.md",
   "project": {
     "name": "Japanese Craft Jewelry",
@@ -19,8 +19,8 @@
     "nextAction": "Use the national catalog and travel discovery guide. See production for the last verified deployment. Real iPhone/SNS browser and Search Console still require separate verification.",
     "currentGitHeadCommand": "git rev-parse HEAD",
     "verificationReport": "specs/035-national-travel-discovery/validation.md",
-    "validatedSourceCommit": "a9495260a82bda1a886945dbcfa2286ce26330c9",
-    "cleanRunnerVerification": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45330626349",
+    "validatedSourceCommit": "ea640461a02b099a27641f4d8e14b5518d4d709c",
+    "cleanRunnerVerification": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45332290970",
     "historicalVerification": {
       "appVersion": "0.18.0",
       "applicationCommit": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
@@ -30,16 +30,16 @@
     "siteGuide": "docs/SITE_NEW_CHAT_HANDOFF.md"
   },
   "production": {
-    "version": "0.24.0",
-    "applicationCommit": "a9495260a82bda1a886945dbcfa2286ce26330c9",
+    "version": "0.24.1",
+    "applicationCommit": "ea640461a02b099a27641f4d8e14b5518d4d709c",
     "actions": {
-      "id": 45330626349,
-      "headSha": "a9495260a82bda1a886945dbcfa2286ce26330c9",
+      "id": 45332290970,
+      "headSha": "ea640461a02b099a27641f4d8e14b5518d4d709c",
       "status": "completed",
       "conclusion": "success",
-      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45330626349",
-      "deploymentCompletedAt": "2026-11-24T05:04:42Z",
-      "observedAt": "2026-11-24T05:08:09.617Z"
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45332290970",
+      "deploymentCompletedAt": "2026-11-24T05:18:31Z",
+      "observedAt": "2026-11-24T05:19:39.328Z"
     },
     "urls": {
       "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
@@ -70,19 +70,19 @@
     },
     "report": "docs/deployment-results.json",
     "verification": "specs/035-national-travel-discovery/validation.md",
-    "outputManifest": "docs/national-travel-v35-build-manifest.json",
+    "outputManifest": "docs/national-travel-v35-mobile-fixes-build-manifest.json",
     "outputManifestStatus": "verified_build_and_public_sample",
-    "previousFullOutputManifest": "docs/kyoto-video-jewelry-v34-build-manifest.json",
+    "previousFullOutputManifest": "docs/national-travel-v35-build-manifest.json",
     "buildArtifact": {
-      "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14891308132/zip",
-      "bytes": 15773624,
-      "digest": "sha256:de8a7886f139e46f10ac045defca88b2471506d3f62f387c6dc07edb9a2446ef",
-      "expiresAt": "2026-11-25T05:04:16Z",
-      "headSha": "a9495260a82bda1a886945dbcfa2286ce26330c9",
-      "id": 14891308132,
+      "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14892307907/zip",
+      "bytes": 15773738,
+      "digest": "sha256:a30227be4ce322dcaff13eff3c648c30cf172d8360020e0ceff5a0cdf8e0f180",
+      "expiresAt": "2026-11-25T05:18:15Z",
+      "headSha": "ea640461a02b099a27641f4d8e14b5518d4d709c",
+      "id": 14892307907,
       "name": "github-pages"
     },
-    "hostedMobileReport": "docs/national-travel-v35-hosted-mobile-results.json"
+    "hostedMobileReport": "docs/national-travel-v35-hosted-webkit-results.json"
   },
   "snapshot": {
     "publishedProducts": 88,
@@ -237,7 +237,7 @@
     "assets": "docs/git-handoff-stage-download-results.json",
     "documentation": "docs/git-handoff-stage-docs-results.json",
     "summary": "specs/035-national-travel-discovery/validation.md",
-    "hostedMobile": "docs/national-travel-v35-hosted-mobile-results.json"
+    "hostedMobile": "docs/national-travel-v35-hosted-webkit-results.json"
   },
-  "snapshotVersion": "0.24.0"
+  "snapshotVersion": "0.24.1"
 }

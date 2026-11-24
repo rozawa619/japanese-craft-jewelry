@@ -1,21 +1,21 @@
 {
-  "version": "0.24.0",
+  "version": "0.24.1",
   "specification": "035-national-travel-discovery",
   "repository": "https://github.com/rozawa619/japanese-craft-jewelry",
   "branch": "main",
   "status": "deployed_and_verified",
-  "recordedAt": "2026-11-24T05:08:09.617Z",
-  "applicationCommit": "a9495260a82bda1a886945dbcfa2286ce26330c9",
+  "recordedAt": "2026-11-24T05:19:39.328Z",
+  "applicationCommit": "ea640461a02b099a27641f4d8e14b5518d4d709c",
   "actions": {
-    "id": 45330626349,
-    "headSha": "a9495260a82bda1a886945dbcfa2286ce26330c9",
+    "id": 45332290970,
+    "headSha": "ea640461a02b099a27641f4d8e14b5518d4d709c",
     "status": "completed",
     "conclusion": "success",
-    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45330626349",
-    "deploymentCompletedAt": "2026-11-24T05:04:42Z",
-    "observedAt": "2026-11-24T05:08:09.617Z"
+    "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45332290970",
+    "deploymentCompletedAt": "2026-11-24T05:18:31Z",
+    "observedAt": "2026-11-24T05:19:39.328Z"
   },
-  "previousRecord": "docs/deployment-v34-before-national-travel.json",
+  "previousRecord": "docs/deployment-v35-before-mobile-travel-fixes.json",
   "publicUrls": {
     "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
     "en": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
@@ -74,36 +74,37 @@
     },
     "recheckedKanagawaPurchaseProducts": 7
   },
-  "outputManifest": "docs/national-travel-v35-build-manifest.json",
+  "outputManifest": "docs/national-travel-v35-mobile-fixes-build-manifest.json",
   "verification": "specs/035-national-travel-discovery/validation.md",
-  "hostedMobileReport": "docs/national-travel-v35-hosted-mobile-results.json",
+  "hostedMobileReport": "docs/national-travel-v35-hosted-webkit-results.json",
   "verificationSummary": {
     "unitTests": 155,
     "generatedFiles": 737,
     "generatedHtml": 552,
     "canonicalUrls": 536,
-    "localBrowserChecks": 49,
-    "hostedMobileChecks": 4,
-    "hostedAreaToProductTouchJourneys": 2,
-    "hostedPrefecturePages": 94,
-    "hostedCanonicalProductsByLanguage": {
-      "ja": 88,
-      "en": 88
-    },
-    "matchedPublicResponseBytes": 14,
-    "preservedImageHashes": 136,
-    "mobileScope": "Chromium, iPhone 13 mobile emulation, 390×844 CSS pixels, touch enabled",
+    "localChromiumChecks": 49,
+    "hostedWebKitJourneys": 6,
+    "hostedWebKitProfiles": [
+      "iPhone SE",
+      "iPhone 15",
+      "iPhone 15 landscape"
+    ],
+    "testedAreaDetails": [
+      "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hamamatsuya-surgical-stainless-pierced-earrings/",
+      "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/yogado-kamakura-bori-camellia-brooch/"
+    ],
+    "matchedPublicResponseBytes": 17,
     "realIPhoneSafari": "not_tested"
   },
   "outputManifestStatus": "verified_build_and_public_sample",
-  "previousFullOutputManifest": "docs/kyoto-video-jewelry-v34-build-manifest.json",
+  "previousFullOutputManifest": "docs/national-travel-v35-build-manifest.json",
   "buildArtifact": {
-    "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14891308132/zip",
-    "bytes": 15773624,
-    "digest": "sha256:de8a7886f139e46f10ac045defca88b2471506d3f62f387c6dc07edb9a2446ef",
-    "expiresAt": "2026-11-25T05:04:16Z",
-    "headSha": "a9495260a82bda1a886945dbcfa2286ce26330c9",
-    "id": 14891308132,
+    "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14892307907/zip",
+    "bytes": 15773738,
+    "digest": "sha256:a30227be4ce322dcaff13eff3c648c30cf172d8360020e0ceff5a0cdf8e0f180",
+    "expiresAt": "2026-11-25T05:18:15Z",
+    "headSha": "ea640461a02b099a27641f4d8e14b5518d4d709c",
+    "id": 14892307907,
     "name": "github-pages"
   }
 }

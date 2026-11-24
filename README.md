@@ -26,7 +26,7 @@ SORAのSNSプロフィール用ページから、特集商品と旅先ごとの�
 
 公開88/登録94商品、下書き6商品、47都道府県、公開商品に紐づく技法59/全61件、一次出典390件。46店舗を登録し、69商品に店舗案内があります。購入根拠は公式通販79商品、店舗とカタログ9商品です。AI画像174枚（人物86＋商品単体88）を掲載しています。
 
-公開版は **v0.24.0**、アプリSHAは `a9495260a82bda1a886945dbcfa2286ce26330c9` です。2026-11-24 14:04 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45330626349)の配信が完了しました。地方→都道府県→訪問エリア→商品を選ぶ日英の旅先検索を使えます。 [仕様035](specs/035-national-travel-discovery/spec.md) · [一次情報](docs/research/national-listings-2026-11-24.md)
+公開版は **v0.24.1**、アプリSHAは `ea640461a02b099a27641f4d8e14b5518d4d709c` です。2026-11-24 14:18 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45332290970)の配信が完了しました。地方→都道府県→訪問エリア→商品を選ぶ日英の旅先検索を使えます。v0.24.1でスマートフォンの初期画面に旅先検索への通常リンクを追加し、選択後に表示する商品プレビューのリンクの高さを44px以上に修正しました。 [仕様035](specs/035-national-travel-discovery/spec.md) · [一次情報](docs/research/national-listings-2026-11-24.md)
 
 公開コミットとActionsは[公開記録](docs/deployment-results.json)、現行版の確認範囲は[035の検証記録](specs/035-national-travel-discovery/validation.md)を参照してください。購入導線を整理した当時の記録は[028の検証](specs/028-purchase-routes/validation.md)に残しています。
 

@@ -27,3 +27,18 @@
 両方で画像の読み込み、公式商品リンクのURL、横方向にはみ出さないことを確認しました。日英のトップに47都道府県のリンクがあり、言語切替後も選択が保持されます。日本語の通常リンクはJavaScript無効でもキーボードでたどれました。実機のiPhone・Safariでは未検証です。 [公開モバイル検証結果](../../docs/national-travel-v35-hosted-mobile-results.json)
 
 公開URLの47都道府県×2言語の全94ページがHTTP 200を返し、すべてに商品カードが表示されることを確認しました。公開サイトマップには日英各88件の商品詳細が掲載されています。日英のトップ、一覧、神奈川ページ、検証対象の商品詳細、サイトマップ、robots.txtの計14レスポンスをローカルの公開用ビルドとSHA-256で照合しました。 [ビルドと配信内容の照合](../../docs/national-travel-v35-build-manifest.json)
+
+## v0.24.1 スマートフォンの操作改善
+
+v0.24.0の公開サイトでは、トップから旅先検索に直接進むリンクがなく、幅320pxのWebKitで検索欄はページ上端から約1,302pxの位置にありました。また、検索後にJavaScriptで追加される商品リンクにはAstroのスタイルが適用されず、リンクの高さは21 CSS pxでした。
+
+R7の対応として、日英トップの最初の画面に「旅先から探す」リンクを追加しました。検索結果の商品リンクにもスタイルを適用し、44 CSS px以上のタップ範囲を確保しました。2026年11月24日14:18 JSTにv0.24.1を配信しました。 [GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45332290970) · [公開記録](../../docs/deployment-results.json)
+
+| 公開後の確認 | 結果 |
+| --- | --- |
+| 画面サイズ | iPhone SE相当320×568、iPhone 15相当393×659、横向き852×340 CSS px |
+| タップと移動 | 各画面でトップのリンクから旅先検索へ移動し、首都圏 → 神奈川 → 箱根・鎌倉の各エリアの見出しと商品詳細に到達。計6ルートで成功 |
+| 表示 | 横はみ出しなし。検索入口と商品リンクの高さは各44 CSS px。商品画像と公式リンクの表示を確認 |
+| 検証範囲 | Windows上のPlaywright WebKitで、iPhone相当の画面とタップを検証。iOS標準の選択メニューやSafari本体の操作は実機で未確認 |
+
+公開前に `pnpm verify` の155テスト、`pnpm check:seo` の536正規URL、`pnpm check:travel` の日英49チェックを確認しました。公開後は日英トップとCSS、商品詳細など17レスポンスが公開用ビルドと一致しました。 [公開後のWebKit検証結果](../../docs/national-travel-v35-hosted-webkit-results.json) · [配信ファイルの照合](../../docs/national-travel-v35-mobile-fixes-build-manifest.json)

@@ -6,7 +6,7 @@
 
 ### 最近のサイト変更
 
-公開版は **v0.24.0** です。[仕様035](specs/035-national-travel-discovery/spec.md)で注文受付を確認した19県の19商品を加え、47都道府県・公開88商品（登録94、下書き6）になりました。「旅先からジュエリーを探す」では首都圏などの地方→都道府県→工房・販売店のエリア→商品へ進めます。2026-11-24 14:04 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45330626349)の配信が完了しました。 [購入根拠の再確認](docs/research/national-listings-2026-11-24.md) · [現行版の検証記録](specs/035-national-travel-discovery/validation.md)
+公開版は **v0.24.1** です。[仕様035](specs/035-national-travel-discovery/spec.md)で注文受付を確認した19県の19商品を加え、47都道府県・公開88商品（登録94、下書き6）になりました。「旅先からジュエリーを探す」では首都圏などの地方→都道府県→工房・販売店のエリア→商品へ進めます。v0.24.1でスマートフォンの初期画面に検索への通常リンクを追加し、選択後の商品プレビューのリンクの高さを44px以上に修正しました。2026-11-24 14:18 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45332290970)の配信が完了しました。 [購入根拠の再確認](docs/research/national-listings-2026-11-24.md) · [現行版の検証記録](specs/035-national-travel-discovery/validation.md)
 
 このリポジトリとGitHub上の資料から、Japanese Craft Jewelryの保守を再開できます。公開版と配信元は[公開記録](docs/deployment-results.json)で確認できます。[仕様028](specs/028-purchase-routes/spec.md)で、公式通販と取扱店への案内を商品ごとの購入根拠に合わせました。
 
