@@ -22,13 +22,13 @@ SORAが日本各地の工芸ジュエリーを選んで紹介する、日本語�
 
 SORAのSNSプロフィール用ページから、特集商品と旅先ごとのセレクトへ進めます。媒体別のURLと更新の正本は[仕様029](specs/029-sora-profile-links/spec.md)を参照してください。
 
-[仕様028](specs/028-purchase-routes/spec.md)で公式通販とカタログ・取扱店への案内を整理しました。[仕様037](specs/037-top10-craft-jewelry-depth/spec.md)では16点を追加。訪日旅行先Top10の掲載数が5点に届いていなかった7県を補強し、全10都道府県で5点以上になりました。岩手・福島・熊本・大分にも各1点を追加しました。旅先検索には会津若松の取扱店、ならまち、奈良市水門町、北九州市戸畑、糸島の案内を追加しました。
+[仕様028](specs/028-purchase-routes/spec.md)で公式通販とカタログ・取扱店への案内を整理しました。[仕様038](specs/038-two-per-prefecture/spec.md)では、掲載が1点だった26県に各1点を追加し、47都道府県で各2点以上、全135商品を公開しています。旅先検索では、桐生、小野、美浜町・三尾、松江、長船、北島、高知市、霧島市・隼人から新しい取扱先を探せます。
 
-公開109/登録115商品、下書き6商品、47都道府県、公開商品に紐づく技法70/全72件、一次出典489件。54店舗を登録し、83商品に店舗案内があります。購入根拠は公式通販100商品、店舗とカタログ9商品です。AI画像216枚（人物107＋商品単体109）を掲載しています。
+公開135/登録141商品、下書き6商品、47都道府県。公開に紐づく技法82/全84件、一次出典605件。63店舗を登録し、98商品に店舗案内があります。購入根拠は公式通販126商品、店舗とカタログ9商品です。AI画像268枚（人物133＋商品単体135）。
 
-公開版は **v0.26.0**、アプリSHAは `015ad3c91956745b1bdcdf454f751ee01fde7fc3` です。2026-11-24 15:18 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45339284497)の配信が完了しました。 [追加16商品の一次情報](docs/research/top10-craft-jewelry-depth-2026-11-24.md)
+公開版は **v0.27.0**、アプリSHAは `f9347ebecba8c883b744d0fe806479200948b90c` です。2026-11-24 15:44 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45342607862)の配信が完了しました。 [追加26商品の一次情報](docs/research/two-per-prefecture-2026-11-24.md)
 
-公開コミットとActionsは[公開記録](docs/deployment-results.json)、現行版の確認範囲は[037の検証記録](specs/037-top10-craft-jewelry-depth/validation.md)を参照してください。v0.24.1のモバイル修正とWebKit検証は[035の記録](specs/035-national-travel-discovery/validation.md)、購入導線を整理した当時の記録は[028の検証](specs/028-purchase-routes/validation.md)に残しています。
+公開コミットとActionsは[公開記録](docs/deployment-results.json)、現行版の確認範囲は[038の検証記録](specs/038-two-per-prefecture/validation.md)を参照してください。v0.24.1のモバイル修正とWebKit検証は[035の記録](specs/035-national-travel-discovery/validation.md)、購入導線を整理した当時の記録は[028の検証](specs/028-purchase-routes/validation.md)に残しています。
 
 AdSenseはoff、実アフィリエイトは未申請/通常リンクです。実ID/CMP/本人情報/契約/商用ホスト等は[運営上の残条件](docs/remaining-task-audit-v17.md)。申請や契約を資料だけで済んだことにしません。
 

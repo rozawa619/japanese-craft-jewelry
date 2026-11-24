@@ -6,7 +6,7 @@
 
 ### 最近のサイト変更
 
-公開版は **v0.26.0** です。47都道府県で109商品を公開しています。訪日旅行先Top10の掲載数が5点に届いていなかった7県を補強し、全10都道府県で5点以上になりました。岩手・福島・熊本・大分にも各1点を追加しました。旅先検索には会津若松の取扱店、ならまち、奈良市水門町、北九州市戸畑、糸島の案内を追加しました。2026-11-24 15:18 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45339284497)の配信が完了しました。 [仕様037](specs/037-top10-craft-jewelry-depth/spec.md) · [追加16商品の一次情報](docs/research/top10-craft-jewelry-depth-2026-11-24.md) · [公開後の検証](specs/037-top10-craft-jewelry-depth/validation.md)
+公開版は **v0.27.0** です。掲載が1点だった26県に各1点を追加し、47都道府県で各2点以上、全135商品を公開しています。旅先検索では、桐生、小野、美浜町・三尾、松江、長船、北島、高知市、霧島市・隼人から新しい取扱先を探せます。2026-11-24 15:44 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45342607862)の配信が完了しました。 [仕様038](specs/038-two-per-prefecture/spec.md) · [一次情報](docs/research/two-per-prefecture-2026-11-24.md) · [公開検証](specs/038-two-per-prefecture/validation.md)
 
 全国掲載と旅先検索の基盤は[仕様035](specs/035-national-travel-discovery/spec.md)です。v0.24.1でスマートフォンの初期画面に検索への通常リンクを追加し、選択後の商品プレビューのリンクの高さを44px以上に修正しました。当時のWebKitエミュレーションの結果は[035の検証記録](specs/035-national-travel-discovery/validation.md)に残しています。
 
