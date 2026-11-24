@@ -7,7 +7,7 @@
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
   "currentEpisodeId": "tokyo-rinzen-seika-amber-pierced-earrings",
-  "nextAction": "Use the site original in Flow Ingredients with prompt v1, then check both eyes, the mouth and the full chain earring at 0, 0.5 and 1 second.",
+  "nextAction": "Regenerate the opening with the same original WebP in Flow Ingredients and center the face and visible ear together in a wider frame. Verify both eyes, the mouth and the complete earring at 0, 0.5 and 1 second.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -289,8 +289,8 @@
       "productIds": [
         "rinzen-seika-amber-pierced-earrings"
       ],
-      "status": "prompt_ready",
-      "summary": "The first Tokyo episode features RINZEN's Seika amber glass chain earrings. The original site image and Flow Ingredients prompt v1 are ready.",
+      "status": "revision_needed",
+      "summary": "A 10-second clip for Tokyo episode 1 was supplied. The amber glass earring is visible in the opening samples and the face is cut off at the right edge. The TikTok caption draft is saved.",
       "femaleImageAssetId": "ai-rinzen-amber-glass-styling-v9",
       "femaleImagePath": "public/images/rinzen-amber-glass-styling-v9.webp",
       "femaleImageDimensions": "1536x1024",
@@ -299,8 +299,10 @@
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The published product page uses the original WebP (Git blob e9bc110ff3d92bbb22cc93a88d87cdd3106f8f53, main 35fc02e6549fd2178b61b90b74a145729a5844aa). The product ID, editorial asset ID and image path do not match prior production or TikTok registry entries or the Kyoto episode records.",
-      "nextAction": "Use the site original in Flow Ingredients with prompt v1, then check both eyes, the mouth and the full chain earring at 0, 0.5 and 1 second."
+      "verification": "The published product page uses the original WebP (Git blob e9bc110ff3d92bbb22cc93a88d87cdd3106f8f53, main 35fc02e6549fd2178b61b90b74a145729a5844aa). The product ID, editorial asset ID and image path do not match prior production or TikTok registry entries or the Kyoto episode records. Reviewed the supplied 512×910, 30 fps, 10-second clip at 0, 0.5, 1, 3, 5, 8 and approximately 9.97 seconds. The earring stays visible at the three opening samples and the face is cut off at the right edge. At 3 seconds both eyes, the mouth and the full earring are in frame. Automatic Japanese transcription matched the intended line. Full-frame review, pronunciation and lip sync, the actual Flow mode and model, and publication remain unverified.",
+      "nextAction": "Regenerate the opening with the same original WebP in Flow Ingredients and center the face and visible ear together in a wider frame. Verify both eyes, the mouth and the complete earring at 0, 0.5 and 1 second.",
+      "statusReason": "The face is cropped in the three opening-frame samples. The TikTok caption is a draft.",
+      "captionDraft": "ねえ、この色、どうかな？🧡\n\n東京で待ち合わせ。\n黒いシャツに、琥珀色の切子ガラス。\n細いチェーンの先で、カットの模様がきらり。\n\n凛然 星華 アンバーガラスのチェーンピアス\n\nあなたなら、この琥珀色を何色の服に合わせる？\n\nMeet me in Tokyo. RINZEN’s Seika earrings pair amber-colored kiriko glass with fine chains.\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #東京 #切子 #チェーンピアス #JapaneseJewelry"
     }
   ],
   "observedLinks": [
@@ -447,6 +449,10 @@
     {
       "date": "2026-11-24",
       "summary": "After recording work for all seven Kyoto products, prepared Tokyo episode 1 for RINZEN's Seika amber glass chain earrings. Saved the first Flow Ingredients prompt and verified the published original site image."
+    },
+    {
+      "date": "2026-11-24",
+      "summary": "Reviewed the Tokyo episode 1 attachment, recorded the opening face crop as needing revision and saved the TikTok caption draft for RINZEN's Seika earrings."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
