@@ -1,6 +1,6 @@
 # SORA 京都編 第7話｜錺之 七宝文様 真鍮バングル S
 
-2026-11-24（JST）。サイト掲載の着用イメージ原本とFlow指示文 v1を準備。制作状況は `prompt_ready`。動画と投稿URLはいずれも未確認。
+2026-11-24（JST）。サイト掲載の着用イメージ原本とFlow指示文 v1を準備。添付の生成動画をサンプルで確認し、TikTok紹介文を下書きした。投稿URLは未確認。
 
 - エピソードIDは `kyoto-kazarino-shippo-pattern-brass-bangle`。商品IDは `kazarino-shippo-pattern-brass-bangle`。
 - 元画像は `public/images/kazarino-shippo-pattern-brass-bangle-styling-v13.webp`（1536×1024）。女性画像IDは `ai-kazarino-shippo-pattern-brass-bangle-styling-v13`。
@@ -32,3 +32,30 @@ Quiet room tone. Avoid mirrored framing, duplicate jewelry, added dark spots, he
 ## 生成後の確認
 
 0秒・0.5秒・1秒で両目・口元・バングルの両縁と七宝文様が見え、手首の外側に余白があるかを確認する。全編で同じ片手首にバングル1本を保ち、顔・髪・服・手指と日本語の発音を確認する。
+
+## 添付動画の確認
+
+2026-11-24（JST）。添付動画は縦512×910、30fps、10秒。0秒・0.5秒・1秒・3秒・5秒・8秒・約9.97秒のフレームを目視した。冒頭の3フレームすべてで両目・口元・画面右のバングル全体が収まる。確認したフレームではチャコールのノースリーブと長い黒髪、円が重なる幅広い真鍮バングル1本が元画像と同じ側に見える。自動文字起こしで「ねー、この模様、綺麗でしょ？」と確認した。全フレームの目視、発音の自然さと口の動きの照合、生成時のFlowモードとモデルは未確認。
+
+## TikTok紹介文
+
+2026-11-24（JST）作成。投稿用の下書き。
+
+```text
+ねえ、この模様、きれいでしょ？✨
+
+京都で待ち合わせ。
+チャコールのトップスに、あたたかな色の真鍮バングルをひとつ。
+円が重なる七宝文様が、手元のアクセントに。
+
+錺之 七宝文様 真鍮バングル S
+
+このバングルを着けて、どこに出かけたい？
+
+Meet me in Kyoto. A brass bangle engraved with a Shippo pattern of interlocking circles.
+
+※映像はAIで制作した着用イメージです。
+AI-generated styling video.
+
+#SORA旅先で待ち合わせ #京都 #七宝文様 #真鍮バングル #JapaneseJewelry
+```

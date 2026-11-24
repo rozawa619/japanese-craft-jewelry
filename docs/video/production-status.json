@@ -7,7 +7,7 @@
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
   "currentEpisodeId": "kyoto-kazarino-shippo-pattern-brass-bangle",
-  "nextAction": "Use the site original in Flow Ingredients with prompt v1, then check both eyes, the mouth and the whole bangle at 0, 0.5 and 1 second.",
+  "nextAction": "Record the TikTok post URL once publication and the product match can be verified.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -268,8 +268,8 @@
       "productIds": [
         "kazarino-shippo-pattern-brass-bangle"
       ],
-      "status": "prompt_ready",
-      "summary": "The seventh Kyoto episode features Kazarino's Shippo-pattern brass bangle S. The original site image and Flow Ingredients prompt v1 are ready.",
+      "status": "generated_unreviewed",
+      "summary": "A 10-second vertical clip was supplied for Kyoto episode 7. The sampled opening frames show both eyes, the mouth and one complete Shippo-pattern brass bangle on the raised wrist. The TikTok caption draft is saved.",
       "femaleImageAssetId": "ai-kazarino-shippo-pattern-brass-bangle-styling-v13",
       "femaleImagePath": "public/images/kazarino-shippo-pattern-brass-bangle-styling-v13.webp",
       "femaleImageDimensions": "1536x1024",
@@ -278,8 +278,10 @@
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The published product page uses the original WebP (Git blob 09af99aacf75e816e5089dcd2f35e5cef4ca525d, main 28e4a79936b3ca3e3ed53ee7932b50049daedf0a). No product ID, image asset ID or path reuse was found in the production and TikTok ledgers or Kyoto episodes 1–6. Compared the first six Kyoto styling images visually.",
-      "nextAction": "Use the site original in Flow Ingredients with prompt v1, then check both eyes, the mouth and the whole bangle at 0, 0.5 and 1 second."
+      "verification": "The published product page uses the original WebP (Git blob 09af99aacf75e816e5089dcd2f35e5cef4ca525d, main 28e4a79936b3ca3e3ed53ee7932b50049daedf0a). No product ID, image asset ID or path reuse was found in the production and TikTok ledgers or Kyoto episodes 1–6. Compared the first six Kyoto styling images visually. Reviewed the 512×910, 30 fps, 10-second attachment at 0, 0.5, 1, 3, 5, 8 and approximately 9.97 seconds. Both eyes, the mouth and the complete bangle are visible at the three opening samples. The charcoal top, dark hair and single bangle are consistent with the site styling image. Automatic Japanese transcription matched the intended line about the pattern. Full-frame review, pronunciation, lip sync, actual Flow mode and model, and publication remain unverified.",
+      "nextAction": "Record the TikTok post URL once publication and the product match can be verified.",
+      "statusReason": "A generated clip and an opening-frame check are recorded. The TikTok caption remains a draft.",
+      "captionDraft": "ねえ、この模様、きれいでしょ？✨\n\n京都で待ち合わせ。\nチャコールのトップスに、あたたかな色の真鍮バングルをひとつ。\n円が重なる七宝文様が、手元のアクセントに。\n\n錺之 七宝文様 真鍮バングル S\n\nこのバングルを着けて、どこに出かけたい？\n\nMeet me in Kyoto. A brass bangle engraved with a Shippo pattern of interlocking circles.\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #京都 #七宝文様 #真鍮バングル #JapaneseJewelry"
     }
   ],
   "observedLinks": [
@@ -418,6 +420,10 @@
     {
       "date": "2026-11-24",
       "summary": "Prepared the original site image and Flow Ingredients prompt v1 for Kyoto episode 7, Kazarino's Shippo-pattern brass bangle. The prompt frames the face and single raised wrist together with room at the edges."
+    },
+    {
+      "date": "2026-11-24",
+      "summary": "Reviewed the opening frames and transcribed the spoken line of the supplied Kyoto episode 7 clip. Saved the TikTok caption draft for Kazarino's Shippo-pattern brass bangle."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
