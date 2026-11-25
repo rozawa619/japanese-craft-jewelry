@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "lastUpdated": "2026-11-25",
+  "lastUpdated": "2026-11-26",
   "project": "SORA｜旅先で待ち合わせ",
   "scope": "TikTok / Google Flow AI POV date clips and Instagram Reels captions; site content source is separate",
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
-  "currentEpisodeId": "tokyo-hirose-edo-embroidery-pink-flower-studs",
-  "nextAction": "Generate one clip with prompt v1 and the original WebP. Choose Frames only if the actual vertical start preview fits both eyes, the mouth and the entire stud. Otherwise use Ingredients. Review 0, 0.5 and 1 second and later face, earring and speech samples.",
+  "currentEpisodeId": "tokyo-horiguchi-kiriko-kikka-ring",
+  "nextAction": "Generate one clip with prompt v1 and the original WebP. Use Frames if the actual vertical start preview fits the face, ring and ring hand with margins, or Ingredients with the original when framing is cropped or unverified. Review 0, 0.5 and 1 second and later face, hand and speech samples.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -373,6 +373,26 @@
       "verification": "The live product detail displays this original WebP (Git blob 26dc7a99fddf4b664cfc695c2cbe9e77db285799, main 8089a3f4a0b6a19ce46c206b4c8733fea4735c8c). Checked product ID, styling asset ID and path against the production ledger, TikTok registry last checked 2026-11-24, Kyoto series plan and prior episode records. No duplicates were found. Compared the original with available prior portraits and inspected the opening composition and prominent skin marks. Generation, output review and publication remain unverified.",
       "nextAction": "Generate one clip with prompt v1 and the original WebP. Choose Frames only if the actual vertical start preview fits both eyes, the mouth and the entire stud. Otherwise use Ingredients. Review 0, 0.5 and 1 second and later face, earring and speech samples.",
       "statusReason": "The exact site image and Flow prompt are ready. There is no verified generated clip or post."
+    },
+    {
+      "id": "tokyo-horiguchi-kiriko-kikka-ring",
+      "place": "Tokyo, Japan",
+      "productIds": [
+        "horiguchi-kiriko-kikka-ring"
+      ],
+      "status": "prompt_ready",
+      "summary": "Tokyo episode 5 is ready for generation with the published styling portrait of the Horiguchi Kiriko Kikka ring. The prompt preserves the original face, blue knit, window light and steady ring-hand pose.",
+      "femaleImageAssetId": "ai-styling-jp-horiguchi-kiriko-kikka-ring-v40",
+      "femaleImagePath": "public/images/styling-jp-horiguchi-kiriko-kikka-ring-v40.webp",
+      "femaleImageDimensions": "1536x1024",
+      "episodePath": "docs/video/episodes/tokyo-horiguchi-kiriko-kikka-ring.md",
+      "startFrameStatus": "The central 576×1024 region of the 1536×1024 original fits both eyes, the full mouth, fingertips and the entire ring. The wrist is close to the left edge. A left-shifted inspection at x=455 also fits the wrist. The actual Flow preview is unverified. Prompt v1 uses the original as the sole Ingredients reference.",
+      "currentPromptVersion": "v1-ready",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "The live product detail displays the original WebP (Git blob fb8643512d994254a08e6652c7a8cdd99a47172a, main 4eda79ad0a9fb17bb5ba3351b57f246b59e1c8d0). Product ID, styling asset ID and path were checked against the production ledger, the TikTok registry last checked 2026-11-24, the Kyoto series plan and prior episode records. No duplicates were found. Compared the image with available prior portraits and checked portrait framing, skin and the ring hand. Generation, output review and publication remain unverified.",
+      "nextAction": "Generate one clip with prompt v1 and the original WebP. Use Frames if the actual vertical start preview fits the face, ring and ring hand with margins, or Ingredients with the original when framing is cropped or unverified. Review 0, 0.5 and 1 second and later face, hand and speech samples.",
+      "statusReason": "The published styling image and Flow prompt are ready. No generated clip or TikTok post has been verified."
     }
   ],
   "observedLinks": [
@@ -547,6 +567,10 @@
     {
       "date": "2026-11-25",
       "summary": "Prepared Tokyo episode 4 for Hirose’s pink embroidered flower stud. Checked the original smile, centered 9:16 composition and product and image uniqueness. Saved the Flow prompt with an identity-preserving expression and a fixed earring view."
+    },
+    {
+      "date": "2026-11-26",
+      "summary": "Prepared Tokyo episode 5 for the Horiguchi Kiriko Kikka ring. Verified the published original and portrait composition, and saved a Flow prompt with a steady ring hand, soft window light and the original face and expression."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -585,5 +609,5 @@
     "firstSuggestedProductId": "rinzen-seika-amber-pierced-earrings",
     "explanation": "Tokyo led the regional shortlist in the Kyoto plan. All seven published Kyoto products have a video creation record in the production ledger, matched TikTok cards or prior episode notes."
   },
-  "previousWorkCurrentEpisodeId": "tokyo-nakajima-tsuyayaka-red-urushi-ladybug-studs"
+  "previousWorkCurrentEpisodeId": "tokyo-hirose-edo-embroidery-pink-flower-studs"
 }
