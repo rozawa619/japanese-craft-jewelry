@@ -1,6 +1,6 @@
 # SORA 東京編 第6話｜SIRI SIRI ARABESQUE 銀糸のHOOP SV mini ピアス
 
-2026-11-26（JST）。明るい笑顔と、髪に重なる透かしの輪が見やすい原本を選定。元の顔立ち・髪型・服を保ち、やわらかな目線で可愛らしさを出す。指示文準備時点の制作状況は `prompt_ready`。添付動画の確認を後述。
+2026-11-26（JST）。明るい笑顔と、髪に重なる透かしの輪が見やすい原本を選定。元の顔立ち・髪型・服を保ち、やわらかな目線で可愛らしさを出す。添付動画でフープの見切れを確認。制作状況は `revision_needed`。TikTokとInstagramの紹介文は下書き済み。公開は未確認。
 
 - エピソードIDは `tokyo-sirisiri-silver-thread-hoop-mini`。商品IDは `sirisiri-silver-thread-hoop-mini`。
 - 女性画像IDは `ai-styling-jp-sirisiri-silver-thread-hoop-mini-v23`。元画像は `public/images/styling-jp-sirisiri-silver-thread-hoop-mini-v23.webp`（1536×1024）。
@@ -42,7 +42,10 @@ Avoid: head turns, mirrored framing, extra jewelry, captions, logos and music.
 ## 添付動画の確認（2026-11-26 JST）
 
 - 512×910、30fps、10秒。0秒・0.5秒・1秒の確認フレームでは、目元と口元は画面内にある。フープの透かし模様の外周は画面右端で見切れており、2秒・3.5秒・5秒・7秒・9.5秒のサンプルにも見切れがある。
-- 後半に確認した頬・口元まわり・あごに目立つほくろや単独の濃い点は見当たらない。フープの見切れにより制作状態は `revision_needed`。全編と音声、Flowの実際のモード・モデル、SNS公開は未確認。
+- 後半に確認した頬・口元まわり・あごに目立つほくろや単独の濃い点は見当たらない。フープの見切れにより制作状態は `revision_needed`。
+- TikTok紹介文用に確認した1.5秒・3秒・8秒・約9.97秒でもフープの外周の見切れが続く。
+- 冒頭フレームは原本の中央576×1024（左端x=480）に近い。原本の左端x=590の縦枠では、両目・口元とフープ全体に余白がある。使われたFlowのモードとモデルは未確認。
+- 自動文字起こしでは「ねえ、今日のピアス、気づいた？」に続く短い問いかけも検出。発音、口の動きとの同期、全編の最終確認、SNS公開は未確認。
 - 再生成は同じ原本を使用。右寄せの縦開始プレビューで目元・口元とフックから輪全体まで余白付きで収まる場合はFramesを使う。見切れが残る場合はIngredientsで画角を広げ、冒頭と後半サンプルを再確認する。
 
 ## Instagramリール紹介文
@@ -60,4 +63,27 @@ A lace-like hoop glints against her dark hair. Inspired by SIRI SIRI’s ARABESQ
 AIで描いた旅のワンシーン｜AI-generated video
 
 #SORA旅先で待ち合わせ #東京 #フープピアス #Tokyo #JapaneseJewelry
+```
+
+## TikTok紹介文
+
+2026-11-26（JST）に日本語・英語の下書きを作成。投稿は未確認。
+
+```text
+ねえ、今日のピアス、気づいた？✨
+
+東京で待ち合わせ。
+チャコールのトップスに、レースのような透かしのフープ。
+京都で作られた銀糸を、籐工芸職人の技で編んだピアスです。
+
+SIRI SIRI ARABESQUE 銀糸のHOOP SV mini ピアス
+
+あなたなら、どんな服に合わせたい？
+
+Meet me in Tokyo. SIRI SIRI’s ARABESQUE hoops are woven from Kyoto-made silver thread into a lace-like pattern.
+
+※映像はAIで制作した着用イメージです。
+AI-generated styling video.
+
+#SORA旅先で待ち合わせ #東京 #銀糸 #フープピアス #JapaneseJewelry
 ```

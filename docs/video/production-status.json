@@ -7,7 +7,7 @@
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
   "currentEpisodeId": "tokyo-sirisiri-silver-thread-hoop-mini",
-  "nextAction": "Regenerate from the same source WebP with room to the right of the hoop. Use Frames if the right-shifted vertical preview fits the eyes, mouth, hook and the entire hoop with margins, or use Ingredients with wider framing when the preview is cropped or unavailable. Check 0, 0.5 and 1 second and later hoop samples.",
+  "nextAction": "Regenerate with the original WebP. Use Frames only if the actual right-shifted portrait preview fits both eyes, the mouth and the hoop from hook to outer edge with clear margins. Otherwise use Ingredients with the same original. Check 0, 0.5 and 1 second and later face, hoop and speech samples.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -411,7 +411,7 @@
         "sirisiri-silver-thread-hoop-mini"
       ],
       "status": "revision_needed",
-      "summary": "A 10-second take for Tokyo episode 6 was supplied. The hoop is cropped at the right edge at the sampled opening and later in the clip. The Instagram caption draft is saved.",
+      "summary": "The supplied 10-second clip for Tokyo episode 6 crops the outer hoop at screen right in the opening and later samples. TikTok and Instagram caption drafts are saved.",
       "femaleImageAssetId": "ai-styling-jp-sirisiri-silver-thread-hoop-mini-v23",
       "femaleImagePath": "public/images/styling-jp-sirisiri-silver-thread-hoop-mini-v23.webp",
       "femaleImageDimensions": "1536x1024",
@@ -420,13 +420,14 @@
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The live product page displays the original WebP (Git blob 8ac81754c8ba6cc337832ee0e9007d42e30bd06c, main 3c6cb62ae8131f9ee1ff07294ca853f61efa4e7c). Checked the product ID, portrait asset ID and image path against the production ledger, the TikTok registry last checked 2026-11-24, the Kyoto series plan and previous episode records. No duplicates were found. Compared with available prior portraits and inspected central and right-shifted 9:16 framing and facial skin. On 2026-11-26 JST, compared the original site image to the supplied 512×910, 30 fps, 10-second take. At 0, 0.5 and 1 second the eye areas and the mouth are in frame, while the right edge crops part of the openwork hoop. The hoop is also cropped in the later samples at 2, 3.5, 5, 7 and 9.5 seconds. No prominent mole or isolated dark point was apparent on the cheeks, mouth area or chin in the later face samples. The full take, audio, actual Flow mode and model, and SNS publication remain unverified.",
-      "nextAction": "Regenerate from the same source WebP with room to the right of the hoop. Use Frames if the right-shifted vertical preview fits the eyes, mouth, hook and the entire hoop with margins, or use Ingredients with wider framing when the preview is cropped or unavailable. Check 0, 0.5 and 1 second and later hoop samples.",
-      "statusReason": "The right edge cuts off part of the hoop in the opening and later time samples.",
+      "verification": "The live product page displays the original WebP (Git blob 8ac81754c8ba6cc337832ee0e9007d42e30bd06c, main 3c6cb62ae8131f9ee1ff07294ca853f61efa4e7c). Checked the product ID, portrait asset ID and image path against the production ledger, the TikTok registry last checked 2026-11-24, the Kyoto series plan and previous episode records. No duplicates were found. Compared with available prior portraits and inspected central and right-shifted 9:16 framing and facial skin. On 2026-11-26 JST, compared the original site image to the supplied 512×910, 30 fps, 10-second take. At 0, 0.5 and 1 second the eye areas and the mouth are in frame, while the right edge crops part of the openwork hoop. The hoop is also cropped in the later samples at 2, 3.5, 5, 7 and 9.5 seconds. No prominent mole or isolated dark point was apparent on the cheeks, mouth area or chin in the later face samples. The additional TikTok inspection confirmed that the hoop is cropped at 1.5, 3, 8 and about 9.97 seconds too. The first frame more closely matches the central 576×1024 crop of the original than the right-shifted composition. Automatic Japanese transcription detected the question about today’s earrings and a possible second question. Exact speech, lip sync, full playback, actual Flow settings and SNS publication remain unverified.",
+      "nextAction": "Regenerate with the original WebP. Use Frames only if the actual right-shifted portrait preview fits both eyes, the mouth and the hoop from hook to outer edge with clear margins. Otherwise use Ingredients with the same original. Check 0, 0.5 and 1 second and later face, hoop and speech samples.",
+      "statusReason": "The screen-right hoop's outer edge is cropped at 0, 0.5 and 1 second and in later confirmation frames.",
       "instagramCaption": {
         "status": "draft",
         "postUrl": null
-      }
+      },
+      "captionDraft": "ねえ、今日のピアス、気づいた？✨\n\n東京で待ち合わせ。\nチャコールのトップスに、レースのような透かしのフープ。\n京都で作られた銀糸を、籐工芸職人の技で編んだピアスです。\n\nSIRI SIRI ARABESQUE 銀糸のHOOP SV mini ピアス\n\nあなたなら、どんな服に合わせたい？\n\nMeet me in Tokyo. SIRI SIRI’s ARABESQUE hoops are woven from Kyoto-made silver thread into a lace-like pattern.\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #東京 #銀糸 #フープピアス #JapaneseJewelry"
     }
   ],
   "observedLinks": [
@@ -617,6 +618,10 @@
     {
       "date": "2026-11-26",
       "summary": "Prepared Tokyo episode 6 for the SIRI SIRI ARABESQUE silver-thread hoop. Verified the original published portrait and right-shifted 9:16 framing for the full hoop. Saved the Flow prompt."
+    },
+    {
+      "date": "2026-11-26",
+      "summary": "Confirmed the Tokyo episode 6 hoop crop against the centered source image and saved the Japanese and English TikTok caption draft."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
