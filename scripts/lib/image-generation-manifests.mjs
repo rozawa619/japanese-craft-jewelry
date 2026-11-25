@@ -14,6 +14,7 @@ const soloManifests=[
  {path:'docs/image-generation-solo-v38.json',required:false},
  {path:'docs/image-generation-solo-v39.json',required:false},
  {path:'docs/image-generation-solo-v40.json',required:false},
+ {path:'docs/image-generation-solo-v41.json',required:false},
 ];
 export const trainedAlgorithmicMedia='http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia';
 
@@ -29,10 +30,20 @@ export function loadSoloGenerationManifests(root){
   const manifest=JSON.parse(readFileSync(file,'utf8'));
   if(!manifest||typeof manifest!=='object'||!Array.isArray(manifest.images))throw Error('Generation manifest needs an images array: '+entry.path);
   manifests.push({path:entry.path,images:manifest.images.length});
+  const productsInManifest=new Set();
   for(const record of manifest.images){
    if(!record||typeof record!=='object'||typeof record.productId!=='string'||!/^[a-z0-9-]+$/.test(record.productId))throw Error('Invalid generation product ID: '+entry.path);
-   if(byProductId.has(record.productId))throw Error('Duplicate generation product ID across manifests: '+record.productId);
    if(typeof record.assetId!=='string'||!record.assetId.trim()||typeof record.publicPath!=='string'||!/^public\/images\/solo-[a-z0-9-]+-v\d+\.webp$/.test(record.publicPath)||typeof record.sha256!=='string'||!/^[a-f0-9]{64}$/.test(record.sha256))throw Error('Incomplete reviewed generation record: '+entry.path+'/'+record.productId);
+   const previous=byProductId.get(record.productId);
+   const hasReplacement=Object.hasOwn(record,'supersedes');
+   if(productsInManifest.has(record.productId)||previous&&!hasReplacement)throw Error('Duplicate generation product ID: '+record.productId);
+   if(hasReplacement){
+    const replaced=record.supersedes;
+    if(!previous||!replaced||replaced.assetId!==previous.assetId||replaced.publicPath!==previous.publicPath||replaced.sha256!==previous.sha256||record.assetId===previous.assetId||record.publicPath===previous.publicPath||record.sha256===previous.sha256){
+     throw Error('Invalid generation replacement for '+record.productId);
+    }
+   }
+   productsInManifest.add(record.productId);
    byProductId.set(record.productId,record);records.push(record);
   }
  }

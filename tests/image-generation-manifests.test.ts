@@ -90,6 +90,26 @@ test('the same hash under another asset still cannot duplicate a product across 
   assert.throws(()=>loadSoloGenerationManifests(f.root),/Duplicate generation product ID.*existing-one/);
 });
 
+test('an exact replacement selects the new solo image and preserves both generation records',t=>{
+  const f=fixture(t),old=record('existing-one');
+  const next={...record('existing-one',16),sha256:'b'.repeat(64),supersedes:old};
+  f.put('v14',[old]);f.put('v16',[next]);
+  const before=readFileSync(f.path('v14'));
+  const result=loadSoloGenerationManifests(f.root);
+  assert.deepEqual(result.records,[old,next]);
+  assert.deepEqual(result.byProductId.get(old.productId),next);
+  assert.deepEqual(readFileSync(f.path('v14')),before);
+});
+
+test('solo replacement must identify the previous asset, path and hash for the same product',t=>{
+  const old=record('existing-one');
+  for (const supersedes of [null,record('another-one'),{...old,publicPath:'public/images/solo-wrong-v14.webp'},{...old,sha256:'c'.repeat(64)}]){
+    const f=fixture(t);f.put('v14',[old]);
+    f.put('v16',[{...record('existing-one',16),sha256:'b'.repeat(64),supersedes}]);
+    assert.throws(()=>loadSoloGenerationManifests(f.root),/Invalid generation replacement for existing-one/);
+  }
+});
+
 test('unsafe public paths, missing asset identity and malformed hashes are rejected',t=>{
   // The loader checks declared record format. Actual image-byte/hash equality
   // is deliberately checked by check-product-detail-images.mjs, not simulated here.

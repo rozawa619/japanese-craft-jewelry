@@ -1042,8 +1042,13 @@
       "scope": "Styling only, visibly captioned AIイメージ/AI image; not actual product photography or fit/material evidence.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v13.json"
+      "status": "archived",
+      "promptRecord": "docs/image-generation-v13.json",
+      "archivedAt": "2026-11-25",
+      "archivedSha256": "69846d9a1195f8a63ce69fcbf7b3938b64e84d4edc860668b1040c39969e2fdd",
+      "archiveNote": "Original remains at its existing URL for video production records; no active site image binding.",
+      "archiveReference": "docs/video/episodes/kyoto-kazarino-shippo-pattern-brass-bangle.md",
+      "replacedBy": "ai-styling-jp-kazarino-shippo-pattern-brass-bangle-v41"
     },
     {
       "id": "ai-nanao-shuka-nebula-16g-earrings-styling-v13",
@@ -2449,8 +2454,14 @@
       "scope": "Bilingual AI image caption. Illustrates styling and motif. Refer to the official listing for the actual piece and its specifications.",
       "checkedAt": "2026-11-19",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-solo-v25.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-solo-v25.json",
+      "localRetiredPath": "public/images/solo-dahliacyan-openwork-rhodochrosite-bracelet-v25.webp",
+      "localRetiredNote": "Original remains in Git history at the v0.29.0 application commit.",
+      "retiredAt": "2026-11-25",
+      "retiredReason": "Compared before and after and checked that the center bracelet, pink stone, filigree and clasp remain visible with no separate chain fragments at the two edges.",
+      "retiredSha256": "accb4488043c43875b0f5ef82b968bff1422890177b86dcc52849da3fdf77cc9",
+      "replacedBy": "ai-solo-dahliacyan-openwork-rhodochrosite-bracelet-v41"
     },
     {
       "id": "ai-styling-jp-yogado-kamakura-bori-camellia-brooch-v26",
@@ -4139,8 +4150,14 @@
       "scope": "Editorial image with a visible AI label and a link to the actual product at the official seller.",
       "checkedAt": "2026-11-24",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-styling-v38.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-styling-v38.json",
+      "localRetiredPath": "public/images/styling-jp-mimus-inishie-nami-purple-iyo-mizuhiki-clip-on-earrings-v38.webp",
+      "localRetiredNote": "Original remains in Git history at the v0.29.0 application commit.",
+      "retiredAt": "2026-11-25",
+      "retiredReason": "The top loop meets the exposed ear at the lobe. The far ear is hidden, without a floating ornament. The crown and both hanging cords fit the frame.",
+      "retiredSha256": "dbd033bd081e3094d3037264d3a7a5247911dd5456ef2b19b5c40fabc958cdf9",
+      "replacedBy": "ai-styling-jp-mimus-inishie-nami-purple-iyo-mizuhiki-clip-on-earrings-v41"
     },
     {
       "id": "ai-solo-mimus-inishie-nami-purple-iyo-mizuhiki-clip-on-earrings-v38",
@@ -4685,8 +4702,14 @@
       "scope": "Editorial image with a visible AI label and a link to the actual product at the official seller.",
       "checkedAt": "2026-11-24",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-styling-v39.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-styling-v39.json",
+      "localRetiredPath": "public/images/styling-jp-farwest-utsunomiya-flat-silver-ring-size-9-v39.webp",
+      "localRetiredNote": "Original remains in Git history at the v0.29.0 application commit.",
+      "retiredAt": "2026-11-25",
+      "retiredReason": "Checked the complete crown, one relaxed connected hand, and that the band is visible at the base of a finger without overlapping hands.",
+      "retiredSha256": "db8cba286998fd6b1960e71b81fb16ab13c90555efded6add9f3eb3855e88476",
+      "replacedBy": "ai-styling-jp-farwest-utsunomiya-flat-silver-ring-size-9-v41"
     },
     {
       "id": "ai-solo-farwest-utsunomiya-flat-silver-ring-size-9-v39",
@@ -4893,8 +4916,14 @@
       "scope": "Editorial image with a visible AI label and a link to the actual product at the official seller.",
       "checkedAt": "2026-11-24",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-styling-v39.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-styling-v39.json",
+      "localRetiredPath": "public/images/styling-jp-toano-kusatsu-omi-ruri-aobana-blue-drop-necklace-v39.webp",
+      "localRetiredNote": "Original remains in Git history at the v0.29.0 application commit.",
+      "retiredAt": "2026-11-25",
+      "retiredReason": "Checked that the entire crown fits and the chain and blue drop are both visible.",
+      "retiredSha256": "2863345c7dfe840d63c834ad40d8e8a578f42c1ab445da98c02bb4a3e6555edd",
+      "replacedBy": "ai-styling-jp-toano-kusatsu-omi-ruri-aobana-blue-drop-necklace-v41"
     },
     {
       "id": "ai-solo-toano-kusatsu-omi-ruri-aobana-blue-drop-necklace-v39",
@@ -5296,8 +5325,14 @@
       "scope": "Editorial image with a visible AI label and link to the actual product at the seller.",
       "checkedAt": "2026-11-24",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-styling-v40.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-styling-v40.json",
+      "localRetiredPath": "public/images/styling-jp-nisshin-souhaku-hammered-silver-bangle-v40.webp",
+      "localRetiredNote": "Original remains in Git history at the v0.29.0 application commit.",
+      "retiredAt": "2026-11-25",
+      "retiredReason": "Checked the continuity from elbow and rolled sleeve to forearm, neutral wrist and naturally overlapping fingertips, cuff contact and full crown.",
+      "retiredSha256": "d4f9c6fdfc096ca7e23008c039953fd2800243df7064d3f0576940aebe40ccbe",
+      "replacedBy": "ai-styling-jp-nisshin-souhaku-hammered-silver-bangle-v41"
     },
     {
       "id": "ai-styling-jp-hatakeyama-sterling-shine-mini-earrings-v40",
@@ -5402,6 +5437,84 @@
       "productImage": false,
       "status": "active",
       "promptRecord": "docs/image-generation-solo-v40.json"
+    },
+    {
+      "id": "ai-styling-jp-nisshin-souhaku-hammered-silver-bangle-v41",
+      "kind": "AI-generated editorial styling image",
+      "source": "public/images/styling-jp-nisshin-souhaku-hammered-silver-bangle-v41.webp",
+      "rightsHolder": "Project-generated illustration",
+      "permissionBasis": "Edited a site-owned, previously generated AI illustration with built-in image generation. No merchant or other third-party photo was used.",
+      "creditRequired": false,
+      "scope": "Editorial image with a visible AI label and link to the actual product at the seller.",
+      "checkedAt": "2026-11-25",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-styling-v41.json"
+    },
+    {
+      "id": "ai-styling-jp-kazarino-shippo-pattern-brass-bangle-v41",
+      "kind": "AI-generated editorial styling illustration",
+      "source": "public/images/styling-jp-kazarino-shippo-pattern-brass-bangle-v41.webp",
+      "rightsHolder": "Project-generated illustration",
+      "permissionBasis": "Edited a site-owned, previously generated AI illustration with built-in image generation. No merchant or other third-party photo was used.",
+      "creditRequired": false,
+      "scope": "Styling only, visibly captioned AIイメージ/AI image; not actual product photography or fit/material evidence.",
+      "checkedAt": "2026-11-25",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-styling-v41.json"
+    },
+    {
+      "id": "ai-styling-jp-mimus-inishie-nami-purple-iyo-mizuhiki-clip-on-earrings-v41",
+      "kind": "AI-generated editorial styling image",
+      "source": "public/images/styling-jp-mimus-inishie-nami-purple-iyo-mizuhiki-clip-on-earrings-v41.webp",
+      "rightsHolder": "Project-generated illustration",
+      "permissionBasis": "Edited a site-owned, previously generated AI illustration with built-in image generation. No merchant or other third-party photo was used.",
+      "creditRequired": false,
+      "scope": "Editorial image with a visible AI label and a link to the actual product at the official seller.",
+      "checkedAt": "2026-11-25",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-styling-v41.json"
+    },
+    {
+      "id": "ai-solo-dahliacyan-openwork-rhodochrosite-bracelet-v41",
+      "kind": "AI-generated jewelry-only editorial detail illustration",
+      "source": "public/images/solo-dahliacyan-openwork-rhodochrosite-bracelet-v41.webp",
+      "rightsHolder": "Project-generated illustration",
+      "permissionBasis": "Edited a site-owned, previously generated AI illustration with built-in image generation. No merchant or other third-party photo was used.",
+      "creditRequired": false,
+      "scope": "Bilingual AI image caption. Illustrates styling and motif. Refer to the official listing for the actual piece and its specifications.",
+      "checkedAt": "2026-11-25",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-solo-v41.json"
+    },
+    {
+      "id": "ai-styling-jp-toano-kusatsu-omi-ruri-aobana-blue-drop-necklace-v41",
+      "kind": "AI-generated editorial styling image",
+      "source": "public/images/styling-jp-toano-kusatsu-omi-ruri-aobana-blue-drop-necklace-v41.webp",
+      "rightsHolder": "Project-generated illustration",
+      "permissionBasis": "Edited a site-owned, previously generated AI illustration with built-in image generation. No merchant or other third-party photo was used.",
+      "creditRequired": false,
+      "scope": "Editorial image with a visible AI label and a link to the actual product at the official seller.",
+      "checkedAt": "2026-11-25",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-styling-v41.json"
+    },
+    {
+      "id": "ai-styling-jp-farwest-utsunomiya-flat-silver-ring-size-9-v41",
+      "kind": "AI-generated editorial styling image",
+      "source": "public/images/styling-jp-farwest-utsunomiya-flat-silver-ring-size-9-v41.webp",
+      "rightsHolder": "Project-generated illustration",
+      "permissionBasis": "Edited a site-owned, previously generated AI illustration with built-in image generation. No merchant or other third-party photo was used.",
+      "creditRequired": false,
+      "scope": "Editorial image with a visible AI label and a link to the actual product at the official seller.",
+      "checkedAt": "2026-11-25",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-styling-v41.json"
     }
   ],
   "productPhotography": [

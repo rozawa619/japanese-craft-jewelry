@@ -1,0 +1,39 @@
+{
+  "version": "0.29.1",
+  "checkedAt": "2026-11-25",
+  "specification": "041-image-quality-corrections",
+  "previousApplicationCommit": "f4153f3bf6b78e8412bb3a47cc7bd8a6cb8d9340",
+  "images": [
+    {
+      "productId": "dahliacyan-openwork-rhodochrosite-bracelet",
+      "assetId": "ai-solo-dahliacyan-openwork-rhodochrosite-bracelet-v41",
+      "publicPath": "public/images/solo-dahliacyan-openwork-rhodochrosite-bracelet-v41.webp",
+      "width": 1254,
+      "height": 1254,
+      "alt": {
+        "ja": "桃色の石を中央に配した銀色の透かしブレスレットのAIイメージ。",
+        "en": "AI image of an openwork silver chain bracelet with a pink center stone."
+      },
+      "sha256": "33855e985959eea1d4c55227267ffdea5e1ea3a89a55d0f96bcf2a2843fc12d6",
+      "supersedes": {
+        "assetId": "ai-solo-dahliacyan-openwork-rhodochrosite-bracelet-v25",
+        "publicPath": "public/images/solo-dahliacyan-openwork-rhodochrosite-bracelet-v25.webp",
+        "sha256": "accb4488043c43875b0f5ef82b968bff1422890177b86dcc52849da3fdf77cc9"
+      },
+      "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "tool": "Built-in image_gen reference-image edit",
+      "generatedAt": "2026-11-25T11:04:45.558Z",
+      "pngSha256": "300857310b523bf2f974ede8b8b3e437df0d15dda94aa8864ce48bcf83b1cc8a",
+      "prompt": "Do a minimal localized object removal in this owned AI-generated square product illustration. There is exactly one desired item: the COMPLETE centered horizontal oval silver chain bracelet with a single oval rose-pink cabochon in the openwork silver filigree in the middle, and its connected chain and clasp. Keep the entire central bracelet IDENTICAL at the same scale, location, orientation, finish, stone and openings. Remove only the stray silver fragments separate from the main item near the very top and bottom image borders, replacing them with continuous unbroken matching original woven warm gray beige linen. Keep background lighting, texture and unadorned edges. Preserve original close-up view, square 1:1 framing and generous margin around the single centered main item. No border, no text, no other items.",
+      "reference": {
+        "projectAssetId": "ai-solo-dahliacyan-openwork-rhodochrosite-bracelet-v41",
+        "thirdPartyPhotographsUsed": false
+      },
+      "visualReview": {
+        "outputViewed": true,
+        "status": "accepted as an original editorial illustration",
+        "notes": "Compared before and after and checked that the center bracelet, pink stone, filigree and clasp remain visible with no separate chain fragments at the two edges."
+      }
+    }
+  ]
+}
