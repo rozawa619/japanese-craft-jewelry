@@ -6,8 +6,8 @@
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
-  "currentEpisodeId": "tokyo-horiguchi-kiriko-kikka-ring",
-  "nextAction": "Review the complete clip for hand and ring continuity, exact Japanese speech and lip sync. Verify TikTok and Instagram post URLs when supplied.",
+  "currentEpisodeId": "tokyo-sirisiri-silver-thread-hoop-mini",
+  "nextAction": "Generate one clip using prompt v1 and the original WebP. Use Frames only if the actual right-shifted portrait preview fits both eyes, the mouth and complete hoop with margins, or Ingredients with the same reference when cropped or unverified. Review 0, 0.5 and 1 second and later face, hoop and speech samples.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -403,6 +403,26 @@
         "postUrl": null
       },
       "captionDraft": "ねえ、この指輪の模様、見える？💍\n\n東京で待ち合わせ。\n青いニットに合わせた透明な指輪が、窓の光を受けてきらり。\nガラスの裏には、江戸切子で刻んだ菊の文様。\n\n堀口切子 江戸切子の指輪 Kikka\n\nあなたなら、どんな服に合わせたい？\n\nMeet me in Tokyo. Horiguchi Kiriko’s Kikka ring has a chrysanthemum pattern cut into the back of its clear glass.\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #東京 #江戸切子 #指輪 #JapaneseJewelry"
+    },
+    {
+      "id": "tokyo-sirisiri-silver-thread-hoop-mini",
+      "place": "Tokyo, Japan",
+      "productIds": [
+        "sirisiri-silver-thread-hoop-mini"
+      ],
+      "status": "prompt_ready",
+      "summary": "Tokyo episode 6 is ready for generation with the SIRI SIRI ARABESQUE silver-thread hoop and the original styling portrait. The prompt preserves the original face, wavy hair, outfit and smile while fitting the face and complete hoop from the opening.",
+      "femaleImageAssetId": "ai-styling-jp-sirisiri-silver-thread-hoop-mini-v23",
+      "femaleImagePath": "public/images/styling-jp-sirisiri-silver-thread-hoop-mini-v23.webp",
+      "femaleImageDimensions": "1536x1024",
+      "episodePath": "docs/video/episodes/tokyo-sirisiri-silver-thread-hoop-mini.md",
+      "startFrameStatus": "The central 576×1024 region of the 1536×1024 original crops the outer edge of the hoop at screen right. Shifting the inspection window to x=590 fits both eyes, the full mouth, the hook and the entire hoop with margins. The actual Flow preview is unverified. Prompt v1 uses the original as the sole Ingredients reference.",
+      "currentPromptVersion": "v1-ready",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "The live product page displays the original WebP (Git blob 8ac81754c8ba6cc337832ee0e9007d42e30bd06c, main 3c6cb62ae8131f9ee1ff07294ca853f61efa4e7c). Checked the product ID, portrait asset ID and image path against the production ledger, the TikTok registry last checked 2026-11-24, the Kyoto series plan and previous episode records. No duplicates were found. Compared with available prior portraits and inspected central and right-shifted 9:16 framing and facial skin. Generation, review and publication remain unverified.",
+      "nextAction": "Generate one clip using prompt v1 and the original WebP. Use Frames only if the actual right-shifted portrait preview fits both eyes, the mouth and complete hoop with margins, or Ingredients with the same reference when cropped or unverified. Review 0, 0.5 and 1 second and later face, hoop and speech samples.",
+      "statusReason": "The published original and Flow prompt are ready. No generated take or TikTok publication has been verified."
     }
   ],
   "observedLinks": [
@@ -589,6 +609,10 @@
     {
       "date": "2026-11-26",
       "summary": "Checked the supplied Tokyo episode 5 ring video and saved its Japanese and English TikTok caption draft."
+    },
+    {
+      "date": "2026-11-26",
+      "summary": "Prepared Tokyo episode 6 for the SIRI SIRI ARABESQUE silver-thread hoop. Verified the original published portrait and right-shifted 9:16 framing for the full hoop. Saved the Flow prompt."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -627,5 +651,5 @@
     "firstSuggestedProductId": "rinzen-seika-amber-pierced-earrings",
     "explanation": "Tokyo led the regional shortlist in the Kyoto plan. All seven published Kyoto products have a video creation record in the production ledger, matched TikTok cards or prior episode notes."
   },
-  "previousWorkCurrentEpisodeId": "tokyo-hirose-edo-embroidery-pink-flower-studs"
+  "previousWorkCurrentEpisodeId": "tokyo-horiguchi-kiriko-kikka-ring"
 }
