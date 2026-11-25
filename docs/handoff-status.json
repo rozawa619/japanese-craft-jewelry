@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-24T14:09:13.537791+00:00",
+  "updatedAt": "2026-11-25T11:18:16.082468+00:00",
   "entryPoint": "START_HERE.md",
   "project": {
     "name": "Japanese Craft Jewelry",
@@ -12,15 +12,15 @@
     "scope": "Japan-wide craft jewelry selection media; no checkout,shipping,blog or Contact"
   },
   "handoff": {
-    "specification": "040-tokyo-craft-jewelry",
+    "specification": "041-image-quality-corrections",
     "status": "ready",
-    "basedOnDocumentationCommit": "f4153f3bf6b78e8412bb3a47cc7bd8a6cb8d9340",
+    "basedOnDocumentationCommit": "9beec4463e7447b86861bc4cd575569549606f3b",
     "activeSiteImplementationTask": null,
-    "nextAction": "Use the Tokyo and nationwide catalog. Check the production record for the latest deployed application; the next implementation depends on the user’s request.",
+    "nextAction": "Continue from the verified site release and the user’s next request. Review anatomy, fastening, framing and standalone-image borders before accepting new or revised illustrations.",
     "currentGitHeadCommand": "git rev-parse HEAD",
-    "verificationReport": "specs/040-tokyo-craft-jewelry/validation.md",
-    "validatedSourceCommit": "f4153f3bf6b78e8412bb3a47cc7bd8a6cb8d9340",
-    "cleanRunnerVerification": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45410363699",
+    "verificationReport": "specs/041-image-quality-corrections/validation.md",
+    "validatedSourceCommit": "9beec4463e7447b86861bc4cd575569549606f3b",
+    "cleanRunnerVerification": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45602653433",
     "historicalVerification": {
       "appVersion": "0.18.0",
       "applicationCommit": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
@@ -30,16 +30,16 @@
     "siteGuide": "docs/SITE_NEW_CHAT_HANDOFF.md"
   },
   "production": {
-    "version": "0.29.0",
-    "applicationCommit": "f4153f3bf6b78e8412bb3a47cc7bd8a6cb8d9340",
+    "version": "0.29.1",
+    "applicationCommit": "9beec4463e7447b86861bc4cd575569549606f3b",
     "actions": {
-      "id": 45410363699,
-      "headSha": "f4153f3bf6b78e8412bb3a47cc7bd8a6cb8d9340",
+      "id": 45602653433,
+      "headSha": "9beec4463e7447b86861bc4cd575569549606f3b",
       "status": "completed",
       "conclusion": "success",
-      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45410363699",
-      "deploymentCompletedAt": "2026-11-24T14:07:23Z",
-      "observedAt": "2026-11-24T14:09:24.352Z"
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45602653433",
+      "deploymentCompletedAt": "2026-11-25T11:16:05Z",
+      "observedAt": "2026-11-25T11:17:23.410Z"
     },
     "urls": {
       "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
@@ -161,23 +161,30 @@
       "hirose-edo-embroidery-pink-flower-studsJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hirose-edo-embroidery-pink-flower-studs/",
       "hirose-edo-embroidery-pink-flower-studsEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hirose-edo-embroidery-pink-flower-studs/",
       "nakajima-tsuyayaka-red-urushi-ladybug-studsJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/nakajima-tsuyayaka-red-urushi-ladybug-studs/",
-      "nakajima-tsuyayaka-red-urushi-ladybug-studsEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/nakajima-tsuyayaka-red-urushi-ladybug-studs/"
+      "nakajima-tsuyayaka-red-urushi-ladybug-studsEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/nakajima-tsuyayaka-red-urushi-ladybug-studs/",
+      "kazarino-shippo-pattern-brass-bangleJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/kazarino-shippo-pattern-brass-bangle/",
+      "kazarino-shippo-pattern-brass-bangleEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/kazarino-shippo-pattern-brass-bangle/",
+      "mimus-inishie-nami-purple-iyo-mizuhiki-clip-on-earringsEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/mimus-inishie-nami-purple-iyo-mizuhiki-clip-on-earrings/",
+      "dahliacyan-openwork-rhodochrosite-braceletJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/dahliacyan-openwork-rhodochrosite-bracelet/",
+      "dahliacyan-openwork-rhodochrosite-braceletEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/dahliacyan-openwork-rhodochrosite-bracelet/",
+      "toano-kusatsu-omi-ruri-aobana-blue-drop-necklaceEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/toano-kusatsu-omi-ruri-aobana-blue-drop-necklace/",
+      "farwest-utsunomiya-flat-silver-ring-size-9En": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/farwest-utsunomiya-flat-silver-ring-size-9/"
     },
     "report": "docs/deployment-results.json",
-    "verification": "specs/040-tokyo-craft-jewelry/validation.md",
-    "outputManifest": "docs/tokyo-v40-build-manifest.json",
+    "verification": "specs/041-image-quality-corrections/validation.md",
+    "outputManifest": "docs/image-quality-v41-build-manifest.json",
     "outputManifestStatus": "verified_build_and_public_sample",
-    "previousFullOutputManifest": "docs/three-per-prefecture-v39-build-manifest.json",
+    "previousFullOutputManifest": "docs/tokyo-v40-build-manifest.json",
     "buildArtifact": {
-      "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/14926793458/zip",
-      "bytes": 34907330,
-      "digest": "sha256:8ff299d2b96f79e78b5b43b0233365fd9e56d90c01aa9a95a98252ef87a93ecc",
-      "expiresAt": "2026-11-25T14:06:57Z",
-      "headSha": "f4153f3bf6b78e8412bb3a47cc7bd8a6cb8d9340",
-      "id": 14926793458,
+      "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/15016761454/zip",
+      "bytes": 35039791,
+      "digest": "sha256:6e5f0386caa2693d12a9998977de3889eaa92812830df9aa5aaab6483db010c7",
+      "expiresAt": "2026-11-26T11:15:42Z",
+      "headSha": "9beec4463e7447b86861bc4cd575569549606f3b",
+      "id": 15016761454,
       "name": "github-pages"
     },
-    "hostedMobileReport": "docs/tokyo-v40-hosted-webkit-results.json"
+    "hostedMobileReport": "docs/image-quality-v41-hosted-webkit-results.json"
   },
   "snapshot": {
     "publishedProducts": 176,
@@ -194,10 +201,10 @@
     "publicImages": 350,
     "stylingImages": 174,
     "soloImages": 176,
-    "newProducts": 5,
+    "newProducts": 0,
     "newRegions": 0,
-    "newImageFiles": 10,
-    "existingImageBytesRetained": 340,
+    "newImageFiles": 6,
+    "existingImageBytesRetained": 344,
     "kanagawaWorkshopLinked": 8,
     "kanagawaRegionalRetailer": 4,
     "profileLandingPages": 2,
@@ -264,13 +271,12 @@
     "singleItemPrefectures": 0,
     "twoItemPrefectures": 0,
     "minimumProductsPerPrefecture": 3,
-    "newProductTypes": {
-      "ring": 1,
-      "bracelet": 1,
-      "pierced-earrings": 3
-    },
-    "newProductsWithStores": 1,
-    "tokyoPublishedProducts": 10
+    "newProductTypes": {},
+    "newProductsWithStores": 0,
+    "tokyoPublishedProducts": 10,
+    "revisedStylingImages": 5,
+    "revisedSoloImages": 1,
+    "archivedVideoOriginals": 1
   },
   "currentImagePolicy": {
     "fictionalNationalitySetting": "Japanese",
@@ -285,22 +291,29 @@
     "standaloneImages": 176,
     "replacedIn023": 22,
     "retainedIn023": 36,
-    "retiredLocalImages": 37,
+    "retiredLocalImages": 42,
     "manifest": "docs/image-generation-japanese-v23.json",
     "latestGenerationRecords": [
-      "docs/image-generation-styling-v40.json",
-      "docs/image-generation-solo-v40.json"
+      "docs/image-generation-styling-v41.json",
+      "docs/image-generation-solo-v41.json"
     ],
     "latestPortraitUpdate": {
       "products": 5,
       "adultAgeRange": [
-        24,
+        22,
         32
       ],
-      "background": "soft daylight in warm neutral interiors",
-      "release": "0.29.0"
+      "release": "0.29.1",
+      "purpose": "Pose, fastening and framing corrections"
     },
-    "purchaseNotice": "specs/031-product-image-disclosure/spec.md"
+    "purchaseNotice": "specs/031-product-image-disclosure/spec.md",
+    "archivedVideoOriginals": 1,
+    "latestImageCorrection": {
+      "specification": "041-image-quality-corrections",
+      "reviewedOriginalImages": 350,
+      "changedImages": 6,
+      "unchangedImages": 344
+    }
   },
   "setup": {
     "nodeMinimum": "24.22.3",
@@ -362,7 +375,8 @@
     "037-top10-craft-jewelry-depth",
     "038-two-per-prefecture",
     "039-three-per-prefecture",
-    "040-tokyo-craft-jewelry"
+    "040-tokyo-craft-jewelry",
+    "041-image-quality-corrections"
   ],
   "historicalOnlyScripts": [
     {
@@ -393,11 +407,11 @@
   ],
   "verification": {
     "ci": "docs/git-handoff-stage-ci-results.json",
-    "local": "specs/040-tokyo-craft-jewelry/validation.md",
+    "local": "specs/041-image-quality-corrections/validation.md",
     "assets": "docs/git-handoff-stage-download-results.json",
     "documentation": "docs/git-handoff-stage-docs-results.json",
-    "summary": "specs/040-tokyo-craft-jewelry/validation.md",
-    "hostedMobile": "docs/tokyo-v40-hosted-webkit-results.json"
+    "summary": "specs/041-image-quality-corrections/validation.md",
+    "hostedMobile": "docs/image-quality-v41-hosted-webkit-results.json"
   },
-  "snapshotVersion": "0.29.0"
+  "snapshotVersion": "0.29.1"
 }
