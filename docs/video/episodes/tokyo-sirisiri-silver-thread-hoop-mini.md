@@ -1,6 +1,6 @@
 # SORA 東京編 第6話｜SIRI SIRI ARABESQUE 銀糸のHOOP SV mini ピアス
 
-2026-11-26（JST）。明るい笑顔と、髪に重なる透かしの輪が見やすい原本を選定。元の顔立ち・髪型・服を保ち、やわらかな目線で可愛らしさを出す。制作状況は `prompt_ready`。生成、検品、TikTok公開は未確認。
+2026-11-26（JST）。明るい笑顔と、髪に重なる透かしの輪が見やすい原本を選定。元の顔立ち・髪型・服を保ち、やわらかな目線で可愛らしさを出す。指示文準備時点の制作状況は `prompt_ready`。添付動画の確認を後述。
 
 - エピソードIDは `tokyo-sirisiri-silver-thread-hoop-mini`。商品IDは `sirisiri-silver-thread-hoop-mini`。
 - 女性画像IDは `ai-styling-jp-sirisiri-silver-thread-hoop-mini-v23`。元画像は `public/images/styling-jp-sirisiri-silver-thread-hoop-mini-v23.webp`（1536×1024）。
@@ -38,3 +38,26 @@ Avoid: head turns, mirrored framing, extra jewelry, captions, logos and music.
 - 0秒・0.5秒・1秒で両目・口元と画面右のフープ全体が余白付きで収まるか確認する。
 - 後半も片側にフープが一つ見えるか、元の輪と透かし模様を保っているか、頬・口元まわり・あごにほくろや単独の濃い点が見えないか原本と比較する。
 - 見切れ、肌の黒点、位置や個数の変化があれば `revision_needed`。日本語の発音と口の動きも確認する。
+
+## 添付動画の確認（2026-11-26 JST）
+
+- 512×910、30fps、10秒。0秒・0.5秒・1秒の確認フレームでは、目元と口元は画面内にある。フープの透かし模様の外周は画面右端で見切れており、2秒・3.5秒・5秒・7秒・9.5秒のサンプルにも見切れがある。
+- 後半に確認した頬・口元まわり・あごに目立つほくろや単独の濃い点は見当たらない。フープの見切れにより制作状態は `revision_needed`。全編と音声、Flowの実際のモード・モデル、SNS公開は未確認。
+- 再生成は同じ原本を使用。右寄せの縦開始プレビューで目元・口元とフックから輪全体まで余白付きで収まる場合はFramesを使う。見切れが残る場合はIngredientsで画角を広げ、冒頭と後半サンプルを再確認する。
+
+## Instagramリール紹介文
+
+2026-11-26（JST）作成。下書き。
+
+```text
+Meet me in Tokyo ✨
+A lace-like hoop glints against her dark hair. Inspired by SIRI SIRI’s ARABESQUE HOOP SV mini earrings, made with gold-toned silver thread.
+
+東京で待ち合わせ。
+耳元で、レースのような透かしの輪がきらり。
+金色に仕上げた銀糸を使った、SIRI SIRIのピアス「ARABESQUE HOOP SV mini」がモチーフです。
+
+AIで描いた旅のワンシーン｜AI-generated video
+
+#SORA旅先で待ち合わせ #東京 #フープピアス #Tokyo #JapaneseJewelry
+```

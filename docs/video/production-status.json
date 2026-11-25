@@ -7,7 +7,7 @@
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
   "currentEpisodeId": "tokyo-sirisiri-silver-thread-hoop-mini",
-  "nextAction": "Generate one clip using prompt v1 and the original WebP. Use Frames only if the actual right-shifted portrait preview fits both eyes, the mouth and complete hoop with margins, or Ingredients with the same reference when cropped or unverified. Review 0, 0.5 and 1 second and later face, hoop and speech samples.",
+  "nextAction": "Regenerate from the same source WebP with room to the right of the hoop. Use Frames if the right-shifted vertical preview fits the eyes, mouth, hook and the entire hoop with margins, or use Ingredients with wider framing when the preview is cropped or unavailable. Check 0, 0.5 and 1 second and later hoop samples.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -410,8 +410,8 @@
       "productIds": [
         "sirisiri-silver-thread-hoop-mini"
       ],
-      "status": "prompt_ready",
-      "summary": "Tokyo episode 6 is ready for generation with the SIRI SIRI ARABESQUE silver-thread hoop and the original styling portrait. The prompt preserves the original face, wavy hair, outfit and smile while fitting the face and complete hoop from the opening.",
+      "status": "revision_needed",
+      "summary": "A 10-second take for Tokyo episode 6 was supplied. The hoop is cropped at the right edge at the sampled opening and later in the clip. The Instagram caption draft is saved.",
       "femaleImageAssetId": "ai-styling-jp-sirisiri-silver-thread-hoop-mini-v23",
       "femaleImagePath": "public/images/styling-jp-sirisiri-silver-thread-hoop-mini-v23.webp",
       "femaleImageDimensions": "1536x1024",
@@ -420,9 +420,13 @@
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The live product page displays the original WebP (Git blob 8ac81754c8ba6cc337832ee0e9007d42e30bd06c, main 3c6cb62ae8131f9ee1ff07294ca853f61efa4e7c). Checked the product ID, portrait asset ID and image path against the production ledger, the TikTok registry last checked 2026-11-24, the Kyoto series plan and previous episode records. No duplicates were found. Compared with available prior portraits and inspected central and right-shifted 9:16 framing and facial skin. Generation, review and publication remain unverified.",
-      "nextAction": "Generate one clip using prompt v1 and the original WebP. Use Frames only if the actual right-shifted portrait preview fits both eyes, the mouth and complete hoop with margins, or Ingredients with the same reference when cropped or unverified. Review 0, 0.5 and 1 second and later face, hoop and speech samples.",
-      "statusReason": "The published original and Flow prompt are ready. No generated take or TikTok publication has been verified."
+      "verification": "The live product page displays the original WebP (Git blob 8ac81754c8ba6cc337832ee0e9007d42e30bd06c, main 3c6cb62ae8131f9ee1ff07294ca853f61efa4e7c). Checked the product ID, portrait asset ID and image path against the production ledger, the TikTok registry last checked 2026-11-24, the Kyoto series plan and previous episode records. No duplicates were found. Compared with available prior portraits and inspected central and right-shifted 9:16 framing and facial skin. On 2026-11-26 JST, compared the original site image to the supplied 512×910, 30 fps, 10-second take. At 0, 0.5 and 1 second the eye areas and the mouth are in frame, while the right edge crops part of the openwork hoop. The hoop is also cropped in the later samples at 2, 3.5, 5, 7 and 9.5 seconds. No prominent mole or isolated dark point was apparent on the cheeks, mouth area or chin in the later face samples. The full take, audio, actual Flow mode and model, and SNS publication remain unverified.",
+      "nextAction": "Regenerate from the same source WebP with room to the right of the hoop. Use Frames if the right-shifted vertical preview fits the eyes, mouth, hook and the entire hoop with margins, or use Ingredients with wider framing when the preview is cropped or unavailable. Check 0, 0.5 and 1 second and later hoop samples.",
+      "statusReason": "The right edge cuts off part of the hoop in the opening and later time samples.",
+      "instagramCaption": {
+        "status": "draft",
+        "postUrl": null
+      }
     }
   ],
   "observedLinks": [
