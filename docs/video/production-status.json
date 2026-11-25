@@ -6,8 +6,8 @@
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
-  "currentEpisodeId": "tokyo-rinzen-leaf-glass-pendant",
-  "nextAction": "Review the full regenerated clip for visual continuity, pronunciation and lip sync. Record TikTok and Instagram URLs in their respective publication records after verifying the posts.",
+  "currentEpisodeId": "tokyo-nakajima-tsuyayaka-red-urushi-ladybug-studs",
+  "nextAction": "Generate one clip with prompt v1 and the original WebP. Use Ingredients if a fitted Flow preview is unverified or cropped. Use Frames if the preview fits both eyes, the mouth and the whole stud. Review 0, 0.5 and 1 second and later face samples.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -328,6 +328,26 @@
         "postUrl": null
       },
       "captionDraft": "ねえ、葉っぱの形、見える？🍃\n\n東京で待ち合わせ。\nチャコールのニットに、緑から透明へと移ろうガラスの葉。\n細かな切子の模様が、胸元できらり。\n\n凛然 葉の雫 グリーンガラスのペンダント\n\nあなたなら、どんな服に合わせる？\n\nMeet me in Tokyo. RINZEN’s Leaf Drop pendant pairs green-to-clear kiriko glass with a fine chain.\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #東京 #切子 #ペンダント #JapaneseJewelry"
+    },
+    {
+      "id": "tokyo-nakajima-tsuyayaka-red-urushi-ladybug-studs",
+      "place": "Tokyo, Japan",
+      "productIds": [
+        "nakajima-tsuyayaka-red-urushi-ladybug-studs"
+      ],
+      "status": "prompt_ready",
+      "summary": "Tokyo episode 3 is ready for generation with Nakajima’s red Tsuyayaka ladybug stud, the original published styling image and Flow prompt v1.",
+      "femaleImageAssetId": "ai-styling-jp-nakajima-tsuyayaka-red-urushi-ladybug-studs-v40",
+      "femaleImagePath": "public/images/styling-jp-nakajima-tsuyayaka-red-urushi-ladybug-studs-v40.webp",
+      "femaleImageDimensions": "1536x1024",
+      "episodePath": "docs/video/episodes/tokyo-nakajima-tsuyayaka-red-urushi-ladybug-studs.md",
+      "startFrameStatus": "Visually inspected the center 576×1024 of the published 1536×1024 WebP. Both eyes, the full mouth and entire visible red stud fit with margins. The actual Flow preview is unverified. Prompt v1 uses the original as the sole Ingredients reference.",
+      "currentPromptVersion": "v1-ready",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "The live product detail displays the original site WebP (Git blob c66039216e30eb2be1a16bb26145e19b29b82579, main ce487fa72f9b5b1b882dd7815b4a5685fb947443). Checked the product ID, styling asset ID and path against the production ledger, TikTok registry (last checked 2026-11-24), Kyoto series plan, prior episodes and the Kyoto episode 3–6 handoff notes. No matches were found. Visually compared the selected image with the recorded originals and inspected the central portrait composition and skin. Generation, output review and publication remain unverified.",
+      "nextAction": "Generate one clip with prompt v1 and the original WebP. Use Ingredients if a fitted Flow preview is unverified or cropped. Use Frames if the preview fits both eyes, the mouth and the whole stud. Review 0, 0.5 and 1 second and later face samples.",
+      "statusReason": "The published original styling image and Flow prompt are ready. No generated take or TikTok post has been verified."
     }
   ],
   "observedLinks": [
@@ -490,6 +510,10 @@
     {
       "date": "2026-11-25",
       "summary": "Checked the supplied Tokyo episode 2 clip at the required opening timestamps and later face samples. Saved its Japanese and English TikTok caption draft."
+    },
+    {
+      "date": "2026-11-25",
+      "summary": "Prepared Tokyo episode 3 for Nakajima’s red Tsuyayaka ladybug stud. Verified the original published WebP, checked the face and stud in the centered 9:16 composition and saved the Flow prompt."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -528,5 +552,5 @@
     "firstSuggestedProductId": "rinzen-seika-amber-pierced-earrings",
     "explanation": "Tokyo led the regional shortlist in the Kyoto plan. All seven published Kyoto products have a video creation record in the production ledger, matched TikTok cards or prior episode notes."
   },
-  "previousWorkCurrentEpisodeId": "tokyo-rinzen-seika-amber-pierced-earrings"
+  "previousWorkCurrentEpisodeId": "tokyo-rinzen-leaf-glass-pendant"
 }
