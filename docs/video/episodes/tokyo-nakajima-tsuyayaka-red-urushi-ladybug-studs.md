@@ -1,6 +1,6 @@
 # SORA 東京編 第3話｜漆芸中島 江戸漆器「つややか」てんとう虫ピアス 赤
 
-2026-11-25（JST）。サイト掲載の着用画像とFlow指示文 v1を準備。制作状況は `prompt_ready`。動画生成・検品・TikTok公開は未確認。
+2026-11-25（JST）。サイト掲載の着用画像とFlow指示文 v1を準備。指示文準備時点の制作状況は `prompt_ready`。添付動画の確認結果は後述。
 
 - エピソードIDは `tokyo-nakajima-tsuyayaka-red-urushi-ladybug-studs`。商品IDは `nakajima-tsuyayaka-red-urushi-ladybug-studs`。
 - 女性画像IDは `ai-styling-jp-nakajima-tsuyayaka-red-urushi-ladybug-studs-v40`。元画像は `public/images/styling-jp-nakajima-tsuyayaka-red-urushi-ladybug-studs-v40.webp`（1536×1024）。
@@ -37,3 +37,26 @@ Avoid: camera moves, duplicated jewelry, captions, logos and music.
 
 - 0秒・0.5秒・1秒で両目・口元と画面右のピアスが余白付きで収まっているか確認する。
 - 後半の顔を原本と見比べ、頬・口元まわり・あごのほくろや濃い点、ピアスの柄・位置・個数、発音と口の動きを確認する。見切れや肌の黒点があれば `revision_needed` と記録する。
+
+## 添付動画の確認（2026-11-25 JST）
+
+- 512×910、30fps、10秒。冒頭の0秒・0.5秒・1秒では両目・口元・赤いピアスが画面内に収まっている。
+- 冒頭のピアスは画面左に見え、正面を向く途中で両耳のピアスが見えるフレームがある。原本とv1では画面右の片耳のピアスが見える構図。
+- 0秒・5秒の確認フレームで頬に小さな濃い点が見えるため、制作状態は `revision_needed`。音声、実際のFlowのモード・モデル、SNS公開は未確認。
+
+## Instagramリール紹介文
+
+2026-11-25（JST）作成。下書き。
+
+```text
+Meet me in Tokyo 🐞
+A glossy red ladybug catches the light as she turns. Inspired by Shitsugei Nakajima’s Tsuyayaka lacquer earrings.
+
+東京で待ち合わせ。
+振り向くと、耳元で小さな赤いてんとう虫がきらり。
+江戸漆器の技法で仕上げた、漆芸中島のピアス「つややか」をモチーフにしました。
+
+AIで描いた旅のワンシーン｜AI-generated video
+
+#SORA旅先で待ち合わせ #東京 #江戸漆器 #Tokyo #JapaneseJewelry
+```
