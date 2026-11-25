@@ -6,8 +6,8 @@
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
-  "currentEpisodeId": "tokyo-nakajima-tsuyayaka-red-urushi-ladybug-studs",
-  "nextAction": "Regenerate from the original WebP at its shallow three-quarter angle. Keep the head steady and the single red stud visible at screen right. Check both eyes, the mouth, stud count and visible skin at 0, 0.5 and 1 second and in later samples.",
+  "currentEpisodeId": "tokyo-hirose-edo-embroidery-pink-flower-studs",
+  "nextAction": "Generate one clip with prompt v1 and the original WebP. Choose Frames only if the actual vertical start preview fits both eyes, the mouth and the entire stud. Otherwise use Ingredients. Review 0, 0.5 and 1 second and later face, earring and speech samples.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -353,6 +353,26 @@
         "postUrl": null
       },
       "captionDraft": "ねえ、てんとう虫に見える？🐞\n\n東京で待ち合わせ。\nふと目が合った瞬間、耳元で赤いてんとう虫がきらり。\n淡いグレーのブラウスに、本漆のつやが映える。\n\n漆芸中島 江戸漆器「つややか」てんとう虫ピアス 赤\n\nこの赤、どんなコーデに合わせたい？\n\nMeet me in Tokyo. Shitsugei Nakajima’s Tsuyayaka earrings feature tiny ladybugs in glossy red lacquer.\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #東京 #江戸漆器 #ピアス #JapaneseJewelry"
+    },
+    {
+      "id": "tokyo-hirose-edo-embroidery-pink-flower-studs",
+      "place": "Tokyo, Japan",
+      "productIds": [
+        "hirose-edo-embroidery-pink-flower-studs"
+      ],
+      "status": "prompt_ready",
+      "summary": "Tokyo episode 4 is ready for generation with Hirose's pale pink Edo embroidery flower stud and the original styling portrait. Prompt v1 brings out her original bright smile with soft light and steady framing.",
+      "femaleImageAssetId": "ai-styling-jp-hirose-edo-embroidery-pink-flower-studs-v40",
+      "femaleImagePath": "public/images/styling-jp-hirose-edo-embroidery-pink-flower-studs-v40.webp",
+      "femaleImageDimensions": "1536x1024",
+      "episodePath": "docs/video/episodes/tokyo-hirose-edo-embroidery-pink-flower-studs.md",
+      "startFrameStatus": "Inspected the central 576×1024 region of the published 1536×1024 WebP. Both eyes, full mouth and the complete visible pink flower stud fit with margins. The actual Flow preview is unverified. Prompt v1 treats the original as the sole Ingredients reference.",
+      "currentPromptVersion": "v1-ready",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "The live product detail displays this original WebP (Git blob 26dc7a99fddf4b664cfc695c2cbe9e77db285799, main 8089a3f4a0b6a19ce46c206b4c8733fea4735c8c). Checked product ID, styling asset ID and path against the production ledger, TikTok registry last checked 2026-11-24, Kyoto series plan and prior episode records. No duplicates were found. Compared the original with available prior portraits and inspected the opening composition and prominent skin marks. Generation, output review and publication remain unverified.",
+      "nextAction": "Generate one clip with prompt v1 and the original WebP. Choose Frames only if the actual vertical start preview fits both eyes, the mouth and the entire stud. Otherwise use Ingredients. Review 0, 0.5 and 1 second and later face, earring and speech samples.",
+      "statusReason": "The exact site image and Flow prompt are ready. There is no verified generated clip or post."
     }
   ],
   "observedLinks": [
@@ -523,6 +543,10 @@
     {
       "date": "2026-11-25",
       "summary": "Recorded the supplied Tokyo episode 3 clip’s cheek spot and changing stud count, and saved the Japanese and English TikTok caption draft."
+    },
+    {
+      "date": "2026-11-25",
+      "summary": "Prepared Tokyo episode 4 for Hirose’s pink embroidered flower stud. Checked the original smile, centered 9:16 composition and product and image uniqueness. Saved the Flow prompt with an identity-preserving expression and a fixed earring view."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -561,5 +585,5 @@
     "firstSuggestedProductId": "rinzen-seika-amber-pierced-earrings",
     "explanation": "Tokyo led the regional shortlist in the Kyoto plan. All seven published Kyoto products have a video creation record in the production ledger, matched TikTok cards or prior episode notes."
   },
-  "previousWorkCurrentEpisodeId": "tokyo-rinzen-leaf-glass-pendant"
+  "previousWorkCurrentEpisodeId": "tokyo-nakajima-tsuyayaka-red-urushi-ladybug-studs"
 }
