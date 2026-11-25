@@ -7,7 +7,7 @@
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
   "currentEpisodeId": "tokyo-nakajima-tsuyayaka-red-urushi-ladybug-studs",
-  "nextAction": "Review a revised take with the original WebP and the v1 composition. Check the cheek samples and the original stud placement, then verify the spoken line.",
+  "nextAction": "Regenerate from the original WebP at its shallow three-quarter angle. Keep the head steady and the single red stud visible at screen right. Check both eyes, the mouth, stud count and visible skin at 0, 0.5 and 1 second and in later samples.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -336,7 +336,7 @@
         "nakajima-tsuyayaka-red-urushi-ladybug-studs"
       ],
       "status": "revision_needed",
-      "summary": "A 10-second take for Tokyo episode 3 was supplied. The Instagram caption is drafted. A small isolated dark point is visible on the cheek in sampled frames.",
+      "summary": "A 10-second clip for Tokyo episode 3 was supplied. The face and red stud fit at the sampled opening. A cheek spot and changes in the visible stud placement and count require revision. The TikTok and Instagram captions are drafted.",
       "femaleImageAssetId": "ai-styling-jp-nakajima-tsuyayaka-red-urushi-ladybug-studs-v40",
       "femaleImagePath": "public/images/styling-jp-nakajima-tsuyayaka-red-urushi-ladybug-studs-v40.webp",
       "femaleImageDimensions": "1536x1024",
@@ -345,13 +345,14 @@
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The live product detail displays the original site WebP (Git blob c66039216e30eb2be1a16bb26145e19b29b82579, main ce487fa72f9b5b1b882dd7815b4a5685fb947443). Checked the product ID, styling asset ID and path against the production ledger, TikTok registry (last checked 2026-11-24), Kyoto series plan, prior episodes and the Kyoto episode 3–6 handoff notes. No matches were found. Visually compared the selected image with the recorded originals and inspected the central portrait composition and skin. The actual Flow mode, model, audio and SNS publication remain unverified. On 2026-11-25 JST, sampled the supplied 512×910, 30 fps, 10-second clip. At 0, 0.5 and 1 second both eyes, the mouth and the visible red stud fit inside the frame. The opening shows the stud at screen left, while the original image and v1 call for screen right. A second red stud is briefly visible as she turns. An isolated dark point is visible on the cheek in the 0- and 5-second frames.",
-      "nextAction": "Review a revised take with the original WebP and the v1 composition. Check the cheek samples and the original stud placement, then verify the spoken line.",
-      "statusReason": "The sampled video shows a small isolated dark point on the cheek and differs from the original stud placement.",
+      "verification": "The live product detail displays the original site WebP (Git blob c66039216e30eb2be1a16bb26145e19b29b82579, main ce487fa72f9b5b1b882dd7815b4a5685fb947443). Checked the product ID, styling asset ID and path against the production ledger, TikTok registry (last checked 2026-11-24), Kyoto series plan, prior episodes and the Kyoto episode 3–6 handoff notes. No matches were found. Visually compared the selected image with the recorded originals and inspected the central portrait composition and skin. On 2026-11-25 JST, sampled the 512×910, 30 fps, 10-second attachment. Both eyes, the mouth and the red stud fit at 0, 0.5 and 1 second. The stud is visible at screen left in those samples, while the original shows it at screen right. A red stud is visible at each ear around 2 seconds when she turns. Samples at 3, 5, 8 and about 9.95 seconds show the stud at screen right. Mole-like dots are visible on the cheek in the sampled opening and turn, and a dark point was also recorded at 5 seconds. Automatic Japanese transcription identified the question about the ladybug. Exact delivery, lip sync, actual Flow settings and SNS publication are unverified.",
+      "nextAction": "Regenerate from the original WebP at its shallow three-quarter angle. Keep the head steady and the single red stud visible at screen right. Check both eyes, the mouth, stud count and visible skin at 0, 0.5 and 1 second and in later samples.",
+      "statusReason": "A mole-like dot is visible on the cheek, and the clip changes the visible stud side and count as the head turns.",
       "instagramCaption": {
         "status": "draft",
         "postUrl": null
-      }
+      },
+      "captionDraft": "ねえ、てんとう虫に見える？🐞\n\n東京で待ち合わせ。\nふと目が合った瞬間、耳元で赤いてんとう虫がきらり。\n淡いグレーのブラウスに、本漆のつやが映える。\n\n漆芸中島 江戸漆器「つややか」てんとう虫ピアス 赤\n\nこの赤、どんなコーデに合わせたい？\n\nMeet me in Tokyo. Shitsugei Nakajima’s Tsuyayaka earrings feature tiny ladybugs in glossy red lacquer.\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #東京 #江戸漆器 #ピアス #JapaneseJewelry"
     }
   ],
   "observedLinks": [
@@ -518,6 +519,10 @@
     {
       "date": "2026-11-25",
       "summary": "Prepared Tokyo episode 3 for Nakajima’s red Tsuyayaka ladybug stud. Verified the original published WebP, checked the face and stud in the centered 9:16 composition and saved the Flow prompt."
+    },
+    {
+      "date": "2026-11-25",
+      "summary": "Recorded the supplied Tokyo episode 3 clip’s cheek spot and changing stud count, and saved the Japanese and English TikTok caption draft."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
