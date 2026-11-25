@@ -1,6 +1,6 @@
 # SORA 東京編 第4話｜廣瀬刺繍店 江戸刺繍の小花ピアス ピンク
 
-2026-11-25（JST）。元画像の明るい笑顔が、小さなピンクの花によく合うこの商品を選定。顔立ち・髪・服を原本どおりに保ち、目線と柔らかな光で表情の魅力を出す。制作状態は `prompt_ready`。動画生成・検品・TikTok公開は未確認。
+2026-11-25（JST）。元画像の明るい笑顔が、小さなピンクの花によく合うこの商品を選定。顔立ち・髪・服を原本どおりに保ち、目線と柔らかな光で表情の魅力を出す。指示文準備時点の制作状態は `prompt_ready`。添付動画の確認結果は後述。
 
 - エピソードIDは `tokyo-hirose-edo-embroidery-pink-flower-studs`。商品IDは `hirose-edo-embroidery-pink-flower-studs`。
 - 女性画像IDは `ai-styling-jp-hirose-edo-embroidery-pink-flower-studs-v40`。元画像は `public/images/styling-jp-hirose-edo-embroidery-pink-flower-studs-v40.webp`（1536×1024）。
@@ -38,3 +38,26 @@ Avoid: head turns, mirrored framing, extra jewelry, captions, logos and music.
 - 0秒・0.5秒・1秒で両目・口元・画面右の小花ピアス全体が余白付きで収まっているか確認する。
 - 発話中と終盤でも元画像の顔立ち・服・ピアスの向きと位置を照合。奥側の耳が髪で隠れ、小花は一つだけ見える。
 - 後半の頬・口元まわり・あごを元画像と見比べる。見切れ、ほくろや単独の濃い点、ピアスの出現位置や数の変化があれば `revision_needed`。日本語の発音と口の動きも確認する。
+
+## 添付動画の確認（2026-11-26 JST）
+
+- 512×910、30fps、10秒。冒頭の0秒・0.5秒・1秒では、両目、口元、画面右の小花ピアス全体が余白付きで収まっている。
+- 2秒・3.5秒・5秒・7秒・9.5秒の確認フレームでは、奥側の耳が髪で隠れ、画面右に小花が一つ見える。顔がよく見える後半のサンプルでも、頬・口元まわり・あごに目立つほくろや単独の濃い点は見当たらなかった。
+- 全編と音声、実際のFlowのモード・モデル、SNSでの公開状況は未確認。
+
+## Instagramリール紹介文
+
+2026-11-26（JST）作成。下書き。
+
+```text
+Meet me in Tokyo 🌸
+A tiny pink flower beside her smile. Inspired by Hirose’s silk flower studs, made with Edo embroidery.
+
+東京で待ち合わせ。
+笑顔のそばに、淡いピンクの小花がひとつ。
+二色の絹糸で花びらを刺した、廣瀬刺繍店の「江戸刺繍の小花ピアス」をモチーフにしました。
+
+AIで描いた旅のワンシーン｜AI-generated video
+
+#SORA旅先で待ち合わせ #東京 #江戸刺繍 #Tokyo #JapaneseJewelry
+```

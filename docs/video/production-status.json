@@ -360,8 +360,8 @@
       "productIds": [
         "hirose-edo-embroidery-pink-flower-studs"
       ],
-      "status": "prompt_ready",
-      "summary": "Tokyo episode 4 is ready for generation with Hirose's pale pink Edo embroidery flower stud and the original styling portrait. Prompt v1 brings out her original bright smile with soft light and steady framing.",
+      "status": "generated_unreviewed",
+      "summary": "A 10-second take for Tokyo episode 4 was supplied. The sampled opening shows both eyes, the mouth and the complete pale pink flower stud. The Instagram caption draft is saved.",
       "femaleImageAssetId": "ai-styling-jp-hirose-edo-embroidery-pink-flower-studs-v40",
       "femaleImagePath": "public/images/styling-jp-hirose-edo-embroidery-pink-flower-studs-v40.webp",
       "femaleImageDimensions": "1536x1024",
@@ -370,9 +370,13 @@
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The live product detail displays this original WebP (Git blob 26dc7a99fddf4b664cfc695c2cbe9e77db285799, main 8089a3f4a0b6a19ce46c206b4c8733fea4735c8c). Checked product ID, styling asset ID and path against the production ledger, TikTok registry last checked 2026-11-24, Kyoto series plan and prior episode records. No duplicates were found. Compared the original with available prior portraits and inspected the opening composition and prominent skin marks. Generation, output review and publication remain unverified.",
-      "nextAction": "Generate one clip with prompt v1 and the original WebP. Choose Frames only if the actual vertical start preview fits both eyes, the mouth and the entire stud. Otherwise use Ingredients. Review 0, 0.5 and 1 second and later face, earring and speech samples.",
-      "statusReason": "The exact site image and Flow prompt are ready. There is no verified generated clip or post."
+      "verification": "The live product detail displays this original WebP (Git blob 26dc7a99fddf4b664cfc695c2cbe9e77db285799, main 8089a3f4a0b6a19ce46c206b4c8733fea4735c8c). Checked product ID, styling asset ID and path against the production ledger, TikTok registry last checked 2026-11-24, Kyoto series plan and prior episode records. No duplicates were found. Compared the original with available prior portraits and inspected the opening composition and prominent skin marks. On 2026-11-26 JST, checked the original site image and frames from the supplied 512×910, 30 fps, 10-second take at 0, 0.5, 1, 2, 3.5, 5, 7 and 9.5 seconds. Both eyes, the mouth and the pink flower stud at screen right fit with margins at 0, 0.5 and 1 second. Later samples retain one visible stud at screen right with hair covering the far ear. No prominent mole or isolated dark point was visible on the cheeks, around the mouth or on the chin in the later samples. Full-take review, audio, the actual Flow mode and model, and SNS publication remain unverified.",
+      "nextAction": "Review the complete take and Japanese speech. Record the Instagram post URL after verifying publication.",
+      "statusReason": "The supplied take passes the sampled opening framing, stud placement and visible skin checks. Full-take and audio review are pending.",
+      "instagramCaption": {
+        "status": "draft",
+        "postUrl": null
+      }
     },
     {
       "id": "tokyo-horiguchi-kiriko-kikka-ring",
