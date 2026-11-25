@@ -7,7 +7,7 @@
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
   "currentEpisodeId": "tokyo-rinzen-leaf-glass-pendant",
-  "nextAction": "Review the full new take and its Japanese audio. Record the Instagram Reel URL when publication can be verified.",
+  "nextAction": "Review the full regenerated clip for visual continuity, pronunciation and lip sync. Record TikTok and Instagram URLs in their respective publication records after verifying the posts.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -311,7 +311,7 @@
         "rinzen-leaf-glass-pendant"
       ],
       "status": "generated_unreviewed",
-      "summary": "A new 10-second take was supplied for Tokyo episode 2. Both eyes, the mouth, both visible sides of the chain and the complete leaf pendant are in frame at the sampled opening. The Instagram caption draft is saved.",
+      "summary": "The regenerated 10-second clip for Tokyo episode 2 passed the sampled opening framing and skin checks. The TikTok and Instagram caption drafts are saved.",
       "femaleImageAssetId": "ai-rinzen-green-leaf-styling-v9",
       "femaleImagePath": "public/images/rinzen-green-leaf-styling-v9.webp",
       "femaleImageDimensions": "1536x1024",
@@ -320,13 +320,14 @@
       "currentPromptVersion": "v2-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The live product page uses the original website WebP (Git blob 74ba99708c6eab263ded295967b79b6ac58e395e, main 240d65bb75e96c602d8787a9455f2780b4e16a5a). The product ID, styling asset ID and path were checked against the production ledger, TikTok publication registry, Kyoto plan and previous episode records. No matches were found. On 2026-11-25 JST, sampled the previous 512×910, 30 fps, 10-second take. The opening samples at 0, 0.5 and 1 second crop an eye and part of the chain on the right. The first frame closely matches a center crop of the source. A right-shifted 9:16 inspection of the source fits both eyes, the mouth and the visible necklace. Samples from 1.5 seconds onward show a mole-like cheek spot absent at the corresponding area of the source. The actual Flow mode, model, audio and publication are unverified. In the new 10-second take, reviewed frames at 0, 0.5, 1, 3, 7 and approximately 9.67 seconds. Both eyes, the mouth, both visible sides of the chain and the whole leaf are in frame at 0, 0.5 and 1 second. No prominent mole or isolated dark spot is visible on the cheeks, mouth area or chin in the three later samples. Full-take review, the actual Flow mode and model, audio and publication remain unverified.",
-      "nextAction": "Review the full new take and its Japanese audio. Record the Instagram Reel URL when publication can be verified.",
-      "statusReason": "The new take fits the face and pendant at the sampled opening. Full-take and audio review are pending.",
+      "verification": "The live product page uses the original website WebP (Git blob 74ba99708c6eab263ded295967b79b6ac58e395e, main 240d65bb75e96c602d8787a9455f2780b4e16a5a). The product ID, styling asset ID and path were checked against the production ledger, TikTok publication registry, Kyoto plan and previous episode records. No matches were found. On 2026-11-25 JST, sampled the previous 512×910, 30 fps, 10-second take. The opening samples at 0, 0.5 and 1 second crop an eye and part of the chain on the right. The first frame closely matches a center crop of the source. A right-shifted 9:16 inspection of the source fits both eyes, the mouth and the visible necklace. Samples from 1.5 seconds onward show a mole-like cheek spot absent at the corresponding area of the source. The actual Flow mode, model, audio and publication are unverified. In the new 10-second take, reviewed frames at 0, 0.5, 1, 3, 7 and approximately 9.67 seconds. Both eyes, the mouth, both visible sides of the chain and the whole leaf are in frame at 0, 0.5 and 1 second. No prominent mole or isolated dark spot is visible on the cheeks, mouth area or chin in the three later samples. For the TikTok caption, the supplied 10-second clip was also sampled at 0, 0.5, 1, 1.5, 2, 3, 5, 8 and about 9.97 seconds. Both eyes, the full mouth, the visible chain and the entire leaf fit in all three opening samples, and the earlier distinct cheek spot did not recur in the later samples. Automatic Japanese transcription identified the question about the leaf shape. Full playback review, precise pronunciation and lip sync, actual Flow settings and publication remain unverified.",
+      "nextAction": "Review the full regenerated clip for visual continuity, pronunciation and lip sync. Record TikTok and Instagram URLs in their respective publication records after verifying the posts.",
+      "statusReason": "The new take fits the face and pendant at the sampled opening. Full-take review and verification of pronunciation, lip sync and publication are pending.",
       "instagramCaption": {
         "status": "draft",
         "postUrl": null
-      }
+      },
+      "captionDraft": "ねえ、葉っぱの形、見える？🍃\n\n東京で待ち合わせ。\nチャコールのニットに、緑から透明へと移ろうガラスの葉。\n細かな切子の模様が、胸元できらり。\n\n凛然 葉の雫 グリーンガラスのペンダント\n\nあなたなら、どんな服に合わせる？\n\nMeet me in Tokyo. RINZEN’s Leaf Drop pendant pairs green-to-clear kiriko glass with a fine chain.\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #東京 #切子 #ペンダント #JapaneseJewelry"
     }
   ],
   "observedLinks": [
@@ -485,6 +486,10 @@
     {
       "date": "2026-11-25",
       "summary": "Reviewed the Tokyo episode 2 clip and recorded the opening crop and generated cheek spot as needing revision. Updated the SDD to v1.13 and the Flow template to v2.4 to check portrait framing before selection and reject visible moles or dark dots in the output. Saved prompt v2."
+    },
+    {
+      "date": "2026-11-25",
+      "summary": "Checked the supplied Tokyo episode 2 clip at the required opening timestamps and later face samples. Saved its Japanese and English TikTok caption draft."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",

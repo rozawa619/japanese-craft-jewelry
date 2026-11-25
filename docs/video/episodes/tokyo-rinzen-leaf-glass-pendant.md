@@ -64,7 +64,9 @@ Quiet room tone. Avoid generated captions, logos and music.
 ## 今回の添付動画の確認（2026-11-25 JST）
 
 - 512×910、30fps、10秒。0秒・0.5秒・1秒の確認フレームでは、両目、口元、見えているチェーンの両側、葉先までが画面内に収まっている。
-- 3秒・7秒・約9.67秒の確認フレームでは、頬、口元まわり、あごに目立つほくろや単独の濃い点は見当たらない。全編と音声、実際のFlowモード、公開状況は未確認。
+- 3秒・7秒・約9.67秒の確認フレームでは、頬、口元まわり、あごに目立つほくろや単独の濃い点は見当たらない。
+- TikTok紹介文の作成時に添付動画の冒頭3フレームと1.5秒・2秒・3秒・5秒・8秒・約9.97秒も確認。冒頭の顔と装身具が収まり、後半の確認フレームで初回動画の頬の黒点は見当たらない。
+- 自動文字起こしでは、葉の形が見えるか尋ねる日本語のひと言を確認した。実際のFlowモードとモデル、全編の目視、発音・口の動きとの同期、公開状況は未確認。
 
 ## Instagramリール紹介文
 
@@ -81,4 +83,27 @@ A little cut-glass leaf, green at the top and clear at the tip. Inspired by RINZ
 AIで描いた旅のワンシーン｜AI-generated video
 
 #SORA旅先で待ち合わせ #東京 #切子ガラス #Tokyo #JapaneseJewelry
+```
+
+## TikTok紹介文
+
+2026-11-25（JST）に日本語と英語の下書きを作成。投稿は未確認。
+
+```text
+ねえ、葉っぱの形、見える？🍃
+
+東京で待ち合わせ。
+チャコールのニットに、緑から透明へと移ろうガラスの葉。
+細かな切子の模様が、胸元できらり。
+
+凛然 葉の雫 グリーンガラスのペンダント
+
+あなたなら、どんな服に合わせる？
+
+Meet me in Tokyo. RINZEN’s Leaf Drop pendant pairs green-to-clear kiriko glass with a fine chain.
+
+※映像はAIで制作した着用イメージです。
+AI-generated styling video.
+
+#SORA旅先で待ち合わせ #東京 #切子 #ペンダント #JapaneseJewelry
 ```
