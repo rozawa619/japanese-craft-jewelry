@@ -43,7 +43,8 @@ Avoid: moving or turning the hand, extra rings, distorted fingers, mirrored fram
 
 - 512×910、30fps、10秒。冒頭の0秒・0.5秒・1秒の確認フレームでは、両目、口元、画面左の着用側の手と指輪全体が画面内に収まっている。
 - 2秒・3.5秒・5秒・7秒・9.5秒の確認フレームでは手の位置がわずかに動くが、同じ指に透明な指輪が一つ見える。後半のサンプルで頬・口元まわり・あごに目立つほくろや単独の濃い点は見当たらなかった。
-- 全編と音声、実際のFlowのモード・モデル、SNSでの公開状況は未確認。
+- TikTok紹介文用に0秒・0.5秒・1秒・1.5秒・2秒・3秒・5秒・8秒・約9.97秒を確認。冒頭は両目・口元・手・指輪が収まり、後半も同じ指に指輪は一つ。確認した頬・口元まわり・あごに目立つほくろや単独の濃い点は見当たらなかった。
+- 自動文字起こしでは、指輪の模様が見えるかという問いかけと、その後に続く短い発話を検出。全編、正確な発音・語尾と口の動きとの同期、実際のFlowモード・モデル、SNS公開は未確認。
 
 ## Instagramリール紹介文
 
@@ -60,4 +61,27 @@ Window light glints off a clear glass ring. Inspired by Horiguchi Kiriko’s Kik
 AIで描いた旅のワンシーン｜AI-generated video
 
 #SORA旅先で待ち合わせ #東京 #江戸切子 #Tokyo #JapaneseJewelry
+```
+
+## TikTok紹介文
+
+2026-11-26（JST）に日本語・英語の下書きを作成。投稿は未確認。
+
+```text
+ねえ、この指輪の模様、見える？💍
+
+東京で待ち合わせ。
+青いニットに合わせた透明な指輪が、窓の光を受けてきらり。
+ガラスの裏には、江戸切子で刻んだ菊の文様。
+
+堀口切子 江戸切子の指輪 Kikka
+
+あなたなら、どんな服に合わせたい？
+
+Meet me in Tokyo. Horiguchi Kiriko’s Kikka ring has a chrysanthemum pattern cut into the back of its clear glass.
+
+※映像はAIで制作した着用イメージです。
+AI-generated styling video.
+
+#SORA旅先で待ち合わせ #東京 #江戸切子 #指輪 #JapaneseJewelry
 ```

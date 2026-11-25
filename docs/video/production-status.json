@@ -7,7 +7,7 @@
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
   "currentEpisodeId": "tokyo-horiguchi-kiriko-kikka-ring",
-  "nextAction": "Review the complete take for the hand, ring and Japanese speech. Record the Instagram post URL after verifying publication.",
+  "nextAction": "Review the complete clip for hand and ring continuity, exact Japanese speech and lip sync. Verify TikTok and Instagram post URLs when supplied.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -386,7 +386,7 @@
         "horiguchi-kiriko-kikka-ring"
       ],
       "status": "generated_unreviewed",
-      "summary": "A 10-second take for Tokyo episode 5 was supplied. The sampled opening shows the face, ring-wearing hand and single clear ring. The Instagram caption draft is saved.",
+      "summary": "The supplied 10-second take for Tokyo episode 5 passed the sampled opening framing, ring placement and skin checks. The TikTok and Instagram captions are drafted.",
       "femaleImageAssetId": "ai-styling-jp-horiguchi-kiriko-kikka-ring-v40",
       "femaleImagePath": "public/images/styling-jp-horiguchi-kiriko-kikka-ring-v40.webp",
       "femaleImageDimensions": "1536x1024",
@@ -395,13 +395,14 @@
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The live product detail displays the original WebP (Git blob fb8643512d994254a08e6652c7a8cdd99a47172a, main 4eda79ad0a9fb17bb5ba3351b57f246b59e1c8d0). Product ID, styling asset ID and path were checked against the production ledger, the TikTok registry last checked 2026-11-24, the Kyoto series plan and prior episode records. No duplicates were found. Compared the image with available prior portraits and checked portrait framing, skin and the ring hand. On 2026-11-26 JST, compared the original site image to frames from the supplied 512×910, 30 fps, 10-second take at 0, 0.5, 1, 2, 3.5, 5, 7 and 9.5 seconds. Both eyes, the full mouth and the ring-wearing hand with the clear ring fit at the sampled opening. One clear ring remains on the same finger of the hand at screen left in the later samples, with slight hand movement. No prominent mole or isolated dark spot was visible on the cheeks, around the mouth or on the chin in the later samples. Full-take review, audio, the actual Flow mode and model, and SNS publication remain unverified.",
-      "nextAction": "Review the complete take for the hand, ring and Japanese speech. Record the Instagram post URL after verifying publication.",
-      "statusReason": "The supplied take passes the sampled opening framing and visible skin checks. Full-take and audio review are pending.",
+      "verification": "The live product detail displays the original WebP (Git blob fb8643512d994254a08e6652c7a8cdd99a47172a, main 4eda79ad0a9fb17bb5ba3351b57f246b59e1c8d0). Product ID, styling asset ID and path were checked against the production ledger, the TikTok registry last checked 2026-11-24, the Kyoto series plan and prior episode records. No duplicates were found. Compared the image with available prior portraits and checked portrait framing, skin and the ring hand. On 2026-11-26 JST, compared the original site image to frames from the supplied 512×910, 30 fps, 10-second take at 0, 0.5, 1, 2, 3.5, 5, 7 and 9.5 seconds. Both eyes, the full mouth and the ring-wearing hand with the clear ring fit at the sampled opening. One clear ring remains on the same finger of the hand at screen left in the later samples, with slight hand movement. No prominent mole or isolated dark spot was visible on the cheeks, around the mouth or on the chin in the later samples. For the TikTok draft, checked the supplied clip at 0, 0.5, 1, 1.5, 2, 3, 5, 8 and about 9.97 seconds. The face, ring hand and whole ring fit the sampled opening. One ring remains on the same finger in the later samples with slight hand movement. No prominent mole or isolated dark spot was visible in the sampled cheeks, mouth area or chin. Automatic Japanese transcription detected a question about the ring pattern and a possible additional short question. Confirm the exact audio and lip sync on full playback. Actual Flow settings and SNS publication remain unverified.",
+      "nextAction": "Review the complete clip for hand and ring continuity, exact Japanese speech and lip sync. Verify TikTok and Instagram post URLs when supplied.",
+      "statusReason": "The sampled face, hand and ring fit in the opening. Full playback and exact speech still need review, and publication is unverified.",
       "instagramCaption": {
         "status": "draft",
         "postUrl": null
-      }
+      },
+      "captionDraft": "ねえ、この指輪の模様、見える？💍\n\n東京で待ち合わせ。\n青いニットに合わせた透明な指輪が、窓の光を受けてきらり。\nガラスの裏には、江戸切子で刻んだ菊の文様。\n\n堀口切子 江戸切子の指輪 Kikka\n\nあなたなら、どんな服に合わせたい？\n\nMeet me in Tokyo. Horiguchi Kiriko’s Kikka ring has a chrysanthemum pattern cut into the back of its clear glass.\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #東京 #江戸切子 #指輪 #JapaneseJewelry"
     }
   ],
   "observedLinks": [
@@ -584,6 +585,10 @@
     {
       "date": "2026-11-26",
       "summary": "Checked the supplied Tokyo episode 4 clip and its Japanese line. Saved the Japanese and English TikTok caption draft."
+    },
+    {
+      "date": "2026-11-26",
+      "summary": "Checked the supplied Tokyo episode 5 ring video and saved its Japanese and English TikTok caption draft."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
