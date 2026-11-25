@@ -43,7 +43,8 @@ Avoid: head turns, mirrored framing, extra jewelry, captions, logos and music.
 
 - 512×910、30fps、10秒。冒頭の0秒・0.5秒・1秒では、両目、口元、画面右の小花ピアス全体が余白付きで収まっている。
 - 2秒・3.5秒・5秒・7秒・9.5秒の確認フレームでは、奥側の耳が髪で隠れ、画面右に小花が一つ見える。顔がよく見える後半のサンプルでも、頬・口元まわり・あごに目立つほくろや単独の濃い点は見当たらなかった。
-- 全編と音声、実際のFlowのモード・モデル、SNSでの公開状況は未確認。
+- TikTok紹介文の作成時に添付動画の冒頭3フレームと1.5秒・2秒・3秒・5秒・8秒・約9.97秒を確認。冒頭の顔と小花が収まり、後半も画面右に小花が一つ見える。確認した顔の範囲に目立つほくろや単独の濃い点は見当たらなかった。
+- 自動文字起こしで「ねえ、この花、似合うかな？」の問いかけを確認。全編の最終確認、発音・口の動きとの同期、実際のFlowモード・モデル、SNS公開は未確認。
 
 ## Instagramリール紹介文
 
@@ -60,4 +61,27 @@ A tiny pink flower beside her smile. Inspired by Hirose’s silk flower studs, m
 AIで描いた旅のワンシーン｜AI-generated video
 
 #SORA旅先で待ち合わせ #東京 #江戸刺繍 #Tokyo #JapaneseJewelry
+```
+
+## TikTok紹介文
+
+2026-11-26（JST）に日本語・英語の下書きを作成。投稿は未確認。
+
+```text
+ねえ、この花、似合うかな？🌸
+
+東京で待ち合わせ。
+耳元に、淡いピンクの小花をひとつ。
+二色の絹糸で刺した花びらが、生成りのブラウスによく似合う。
+
+廣瀬刺繍店 江戸刺繍の小花ピアス ピンク
+
+あなたなら、どんな服に合わせたい？
+
+Meet me in Tokyo. Two shades of silk thread form the petals of Hirose’s pink flower studs, made with Edo embroidery.
+
+※映像はAIで制作した着用イメージです。
+AI-generated styling video.
+
+#SORA旅先で待ち合わせ #東京 #江戸刺繍 #ピアス #JapaneseJewelry
 ```

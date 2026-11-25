@@ -361,7 +361,7 @@
         "hirose-edo-embroidery-pink-flower-studs"
       ],
       "status": "generated_unreviewed",
-      "summary": "A 10-second take for Tokyo episode 4 was supplied. The sampled opening shows both eyes, the mouth and the complete pale pink flower stud. The Instagram caption draft is saved.",
+      "summary": "The supplied 10-second clip for Tokyo episode 4 passed the sampled opening framing, stud placement and skin checks. The TikTok and Instagram captions are drafted.",
       "femaleImageAssetId": "ai-styling-jp-hirose-edo-embroidery-pink-flower-studs-v40",
       "femaleImagePath": "public/images/styling-jp-hirose-edo-embroidery-pink-flower-studs-v40.webp",
       "femaleImageDimensions": "1536x1024",
@@ -370,13 +370,14 @@
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The live product detail displays this original WebP (Git blob 26dc7a99fddf4b664cfc695c2cbe9e77db285799, main 8089a3f4a0b6a19ce46c206b4c8733fea4735c8c). Checked product ID, styling asset ID and path against the production ledger, TikTok registry last checked 2026-11-24, Kyoto series plan and prior episode records. No duplicates were found. Compared the original with available prior portraits and inspected the opening composition and prominent skin marks. On 2026-11-26 JST, checked the original site image and frames from the supplied 512×910, 30 fps, 10-second take at 0, 0.5, 1, 2, 3.5, 5, 7 and 9.5 seconds. Both eyes, the mouth and the pink flower stud at screen right fit with margins at 0, 0.5 and 1 second. Later samples retain one visible stud at screen right with hair covering the far ear. No prominent mole or isolated dark point was visible on the cheeks, around the mouth or on the chin in the later samples. Full-take review, audio, the actual Flow mode and model, and SNS publication remain unverified.",
-      "nextAction": "Review the complete take and Japanese speech. Record the Instagram post URL after verifying publication.",
-      "statusReason": "The supplied take passes the sampled opening framing, stud placement and visible skin checks. Full-take and audio review are pending.",
+      "verification": "The live product detail displays this original WebP (Git blob 26dc7a99fddf4b664cfc695c2cbe9e77db285799, main 8089a3f4a0b6a19ce46c206b4c8733fea4735c8c). Checked product ID, styling asset ID and path against the production ledger, TikTok registry last checked 2026-11-24, Kyoto series plan and prior episode records. No duplicates were found. Compared the original with available prior portraits and inspected the opening composition and prominent skin marks. On 2026-11-26 JST, checked the original site image and frames from the supplied 512×910, 30 fps, 10-second take at 0, 0.5, 1, 2, 3.5, 5, 7 and 9.5 seconds. Both eyes, the mouth and the pink flower stud at screen right fit with margins at 0, 0.5 and 1 second. Later samples retain one visible stud at screen right with hair covering the far ear. No prominent mole or isolated dark point was visible on the cheeks, around the mouth or on the chin in the later samples. For the TikTok caption, sampled the supplied take at 0, 0.5, 1, 1.5, 2, 3, 5, 8 and about 9.97 seconds. The three opening samples fit both eyes, the mouth and the whole stud. Later samples show one visible stud at screen right and no prominent mole or isolated dark point on the cheeks, mouth area or chin. Automatic Japanese transcription identified the question about whether the flower suits her. Full playback, precise pronunciation, lip sync, actual Flow settings and SNS publication remain unverified.",
+      "nextAction": "Review the complete take, pronunciation and lip sync. Record TikTok and Instagram post URLs after verifying each publication.",
+      "statusReason": "The supplied clip passes the sampled opening, stud placement and skin checks. Full-take review and publication remain unverified.",
       "instagramCaption": {
         "status": "draft",
         "postUrl": null
-      }
+      },
+      "captionDraft": "ねえ、この花、似合うかな？🌸\n\n東京で待ち合わせ。\n耳元に、淡いピンクの小花をひとつ。\n二色の絹糸で刺した花びらが、生成りのブラウスによく似合う。\n\n廣瀬刺繍店 江戸刺繍の小花ピアス ピンク\n\nあなたなら、どんな服に合わせたい？\n\nMeet me in Tokyo. Two shades of silk thread form the petals of Hirose’s pink flower studs, made with Edo embroidery.\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #東京 #江戸刺繍 #ピアス #JapaneseJewelry"
     },
     {
       "id": "tokyo-horiguchi-kiriko-kikka-ring",
@@ -575,6 +576,10 @@
     {
       "date": "2026-11-26",
       "summary": "Prepared Tokyo episode 5 for the Horiguchi Kiriko Kikka ring. Verified the published original and portrait composition, and saved a Flow prompt with a steady ring hand, soft window light and the original face and expression."
+    },
+    {
+      "date": "2026-11-26",
+      "summary": "Checked the supplied Tokyo episode 4 clip and its Japanese line. Saved the Japanese and English TikTok caption draft."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
