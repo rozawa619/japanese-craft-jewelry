@@ -1,6 +1,6 @@
 # SORA 東京編 第2話｜凛然 葉の雫 グリーンガラスのペンダント
 
-2026-11-24（JST）。未使用の東京掲載商品から、顔と胸元の装身具が上下に並ぶ「葉の雫」を選んだ。サイト掲載の着用イメージ原本とFlow指示文 v1を準備した。11月25日の添付動画確認で、冒頭の見切れと頬の濃い点を記録した。制作状態は `revision_needed`。再生成用の指示文 v2は下記。
+2026-11-24（JST）。未使用の東京掲載商品から、顔と胸元の装身具が上下に並ぶ「葉の雫」を選んだ。サイト掲載の着用イメージ原本とFlow指示文 v1を準備した。11月25日の添付動画確認で、冒頭の見切れと頬の濃い点を記録した。そのテイクは `revision_needed`。再生成用の指示文 v2は下記。
 
 - エピソードIDは `tokyo-rinzen-leaf-glass-pendant`。商品IDは `rinzen-leaf-glass-pendant`。
 - 元画像は `public/images/rinzen-green-leaf-styling-v9.webp`（1536×1024）。女性画像IDは `ai-rinzen-green-leaf-styling-v9`。
@@ -60,3 +60,25 @@ Quiet room tone. Avoid generated captions, logos and music.
 ```
 
 再生成後は0秒・0.5秒・1秒の画角と、後半も含めた頬・口元まわり・あごを確認する。
+
+## 今回の添付動画の確認（2026-11-25 JST）
+
+- 512×910、30fps、10秒。0秒・0.5秒・1秒の確認フレームでは、両目、口元、見えているチェーンの両側、葉先までが画面内に収まっている。
+- 3秒・7秒・約9.67秒の確認フレームでは、頬、口元まわり、あごに目立つほくろや単独の濃い点は見当たらない。全編と音声、実際のFlowモード、公開状況は未確認。
+
+## Instagramリール紹介文
+
+2026-11-25（JST）作成。下書き。
+
+```text
+Meet me in Tokyo 🍃
+A little cut-glass leaf, green at the top and clear at the tip. Inspired by RINZEN’s Leaf Drop pendant.
+
+東京で待ち合わせ。
+チャコールのニットに、緑から透明へと変わる切子ガラスの葉がひとつ。
+凛然（RINZEN）のペンダント「葉の雫」をモチーフにしました。
+
+AIで描いた旅のワンシーン｜AI-generated video
+
+#SORA旅先で待ち合わせ #東京 #切子ガラス #Tokyo #JapaneseJewelry
+```
