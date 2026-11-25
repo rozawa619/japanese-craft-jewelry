@@ -1,6 +1,6 @@
 # SORA 東京編 第5話｜堀口切子 江戸切子の指輪 Kikka
 
-2026-11-26（JST）。窓辺の柔らかい光、明るい笑顔と透明な指輪が同時に見える原本を選定。顔立ち・髪型・服を保ち、自然な目線と表情で親しみやすさを出す。制作状況は `prompt_ready`。動画生成・検品・TikTok公開は未確認。
+2026-11-26（JST）。窓辺の柔らかい光、明るい笑顔と透明な指輪が同時に見える原本を選定。顔立ち・髪型・服を保ち、自然な目線と表情で親しみやすさを出す。指示文準備時点の制作状況は `prompt_ready`。添付動画の確認結果は後述。
 
 - エピソードIDは `tokyo-horiguchi-kiriko-kikka-ring`。商品IDは `horiguchi-kiriko-kikka-ring`。
 - 女性画像IDは `ai-styling-jp-horiguchi-kiriko-kikka-ring-v40`。元画像は `public/images/styling-jp-horiguchi-kiriko-kikka-ring-v40.webp`（1536×1024）。
@@ -38,3 +38,26 @@ Avoid: moving or turning the hand, extra rings, distorted fingers, mirrored fram
 - 0秒・0.5秒・1秒で両目・口元・着用側の手・指輪全体が余白付きで収まるか確認する。
 - 発話中と終盤も手の位置、指の形、指輪の形と個数が原本どおりかを見る。
 - 後半も元画像と頬・口元まわり・あごを照合する。見切れ、ほくろや単独の濃い点、手の崩れや指輪の複製は `revision_needed`。日本語の発音と口の動きも確認する。
+
+## 添付動画の確認（2026-11-26 JST）
+
+- 512×910、30fps、10秒。冒頭の0秒・0.5秒・1秒の確認フレームでは、両目、口元、画面左の着用側の手と指輪全体が画面内に収まっている。
+- 2秒・3.5秒・5秒・7秒・9.5秒の確認フレームでは手の位置がわずかに動くが、同じ指に透明な指輪が一つ見える。後半のサンプルで頬・口元まわり・あごに目立つほくろや単独の濃い点は見当たらなかった。
+- 全編と音声、実際のFlowのモード・モデル、SNSでの公開状況は未確認。
+
+## Instagramリール紹介文
+
+2026-11-26（JST）作成。下書き。
+
+```text
+Meet me in Tokyo ✨
+Window light glints off a clear glass ring. Inspired by Horiguchi Kiriko’s Kikka, with a chrysanthemum pattern cut into the back of the glass.
+
+東京で待ち合わせ。
+青いニットに添えた手元で、透明な指輪が窓の光を受けてきらり。
+菊の文様をガラスの裏に刻んだ、堀口切子の「Kikka」をモチーフにしました。
+
+AIで描いた旅のワンシーン｜AI-generated video
+
+#SORA旅先で待ち合わせ #東京 #江戸切子 #Tokyo #JapaneseJewelry
+```

@@ -7,7 +7,7 @@
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
   "currentEpisodeId": "tokyo-horiguchi-kiriko-kikka-ring",
-  "nextAction": "Generate one clip with prompt v1 and the original WebP. Use Frames if the actual vertical start preview fits the face, ring and ring hand with margins, or Ingredients with the original when framing is cropped or unverified. Review 0, 0.5 and 1 second and later face, hand and speech samples.",
+  "nextAction": "Review the complete take for the hand, ring and Japanese speech. Record the Instagram post URL after verifying publication.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -385,8 +385,8 @@
       "productIds": [
         "horiguchi-kiriko-kikka-ring"
       ],
-      "status": "prompt_ready",
-      "summary": "Tokyo episode 5 is ready for generation with the published styling portrait of the Horiguchi Kiriko Kikka ring. The prompt preserves the original face, blue knit, window light and steady ring-hand pose.",
+      "status": "generated_unreviewed",
+      "summary": "A 10-second take for Tokyo episode 5 was supplied. The sampled opening shows the face, ring-wearing hand and single clear ring. The Instagram caption draft is saved.",
       "femaleImageAssetId": "ai-styling-jp-horiguchi-kiriko-kikka-ring-v40",
       "femaleImagePath": "public/images/styling-jp-horiguchi-kiriko-kikka-ring-v40.webp",
       "femaleImageDimensions": "1536x1024",
@@ -395,9 +395,13 @@
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The live product detail displays the original WebP (Git blob fb8643512d994254a08e6652c7a8cdd99a47172a, main 4eda79ad0a9fb17bb5ba3351b57f246b59e1c8d0). Product ID, styling asset ID and path were checked against the production ledger, the TikTok registry last checked 2026-11-24, the Kyoto series plan and prior episode records. No duplicates were found. Compared the image with available prior portraits and checked portrait framing, skin and the ring hand. Generation, output review and publication remain unverified.",
-      "nextAction": "Generate one clip with prompt v1 and the original WebP. Use Frames if the actual vertical start preview fits the face, ring and ring hand with margins, or Ingredients with the original when framing is cropped or unverified. Review 0, 0.5 and 1 second and later face, hand and speech samples.",
-      "statusReason": "The published styling image and Flow prompt are ready. No generated clip or TikTok post has been verified."
+      "verification": "The live product detail displays the original WebP (Git blob fb8643512d994254a08e6652c7a8cdd99a47172a, main 4eda79ad0a9fb17bb5ba3351b57f246b59e1c8d0). Product ID, styling asset ID and path were checked against the production ledger, the TikTok registry last checked 2026-11-24, the Kyoto series plan and prior episode records. No duplicates were found. Compared the image with available prior portraits and checked portrait framing, skin and the ring hand. On 2026-11-26 JST, compared the original site image to frames from the supplied 512×910, 30 fps, 10-second take at 0, 0.5, 1, 2, 3.5, 5, 7 and 9.5 seconds. Both eyes, the full mouth and the ring-wearing hand with the clear ring fit at the sampled opening. One clear ring remains on the same finger of the hand at screen left in the later samples, with slight hand movement. No prominent mole or isolated dark spot was visible on the cheeks, around the mouth or on the chin in the later samples. Full-take review, audio, the actual Flow mode and model, and SNS publication remain unverified.",
+      "nextAction": "Review the complete take for the hand, ring and Japanese speech. Record the Instagram post URL after verifying publication.",
+      "statusReason": "The supplied take passes the sampled opening framing and visible skin checks. Full-take and audio review are pending.",
+      "instagramCaption": {
+        "status": "draft",
+        "postUrl": null
+      }
     }
   ],
   "observedLinks": [
