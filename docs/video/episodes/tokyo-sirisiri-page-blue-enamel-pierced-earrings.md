@@ -43,7 +43,7 @@ Avoid: head turns, mirrored framing, extra jewelry, camera moves, captions, logo
 
 - 512×910、30fps、10秒。0秒・0.5秒・1秒の確認フレームで、両目・口元と画面左の青い七宝ピアス全体が余白付きで収まる。
 - 2秒・3.5秒・5秒・7秒・9.5秒のサンプルでは、白いシャツとボブを保ち、画面左の同じ側にページ状のピアスが一つ見える。後半に確認した頬・口元まわり・あごに、目立つほくろや単独の濃い点は見当たらなかった。
-- 全編・音声・実際のFlowのモードとモデル・SNS公開は未確認。
+- 音声の自動文字起こしでは、指示文の「今日は、この青にしてみたよ」と、それに続く「いい色かな？」を検出。TikTok紹介文には最初の一言を使用。全編の目視、細かな発音と口の動き、実際のFlowのモードとモデル、SNS公開は未確認。
 
 ## Instagramリール紹介文
 
@@ -60,4 +60,27 @@ A touch of pale blue against a crisp white shirt. Inspired by SIRI SIRI’s SHIP
 AIで描いた旅のワンシーン｜AI-generated video
 
 #SORA旅先で待ち合わせ #東京 #七宝ピアス #Tokyo #JapaneseJewelry
+```
+
+## TikTok紹介文
+
+2026-11-26（JST）作成。下書き。TikTok公開は未確認。
+
+```text
+今日は、この青にしてみたよ。🩵
+
+東京で待ち合わせ。
+白いシャツに、ページをめくったような形の七宝ピアス。
+淡い青の釉薬越しに、銀の模様が透けて見えます。
+
+SIRI SIRI｜SHIPPŌ Page Blue 七宝ピアス
+
+あなたなら、この青を何色の服に合わせる？
+
+Meet me in Tokyo. SIRI SIRI’s SHIPPŌ Page Blue earrings curl like a turned page, with patterned silver showing through pale blue enamel.
+
+※映像はAIで制作した着用イメージです。
+AI-generated styling video.
+
+#SORA旅先で待ち合わせ #東京 #SIRISIRI #七宝焼 #JapaneseJewelry
 ```

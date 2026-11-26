@@ -7,7 +7,7 @@
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
   "currentEpisodeId": "tokyo-sirisiri-page-blue-enamel-pierced-earrings",
-  "nextAction": "Review the full take and Japanese speech. Record the Instagram Reel URL after verifying publication.",
+  "nextAction": "Review the full take, pronunciation, lip sync and the detected extra line against the one-line prompt. Record the Instagram or TikTok post URL after verifying the matching publication.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -511,7 +511,7 @@
         "sirisiri-page-blue-enamel-pierced-earrings"
       ],
       "status": "generated_unreviewed",
-      "summary": "A 10-second take for Tokyo episode 10 was supplied. Both eyes, the mouth and the complete blue enamel earring fit in the sampled opening. The Instagram caption draft is saved.",
+      "summary": "A 10-second take for Tokyo episode 10 was supplied. Both eyes, the mouth and the complete blue enamel earring fit in the sampled opening. The TikTok and Instagram caption drafts are saved.",
       "femaleImageAssetId": "ai-sirisiri-page-blue-enamel-pierced-earrings-styling-v13",
       "femaleImagePath": "public/images/sirisiri-page-blue-enamel-pierced-earrings-styling-v13.webp",
       "femaleImageDimensions": "1536x1024",
@@ -520,13 +520,14 @@
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The live product page displays the original site WebP (Git blob d2a877e42856320ae049a270d911897502234dce, main 74acc4e17220ab731d0955d936e0533a3b68fa8b). Checked product ID, styling asset ID and image path against the production ledger, TikTok registry last checked 2026-11-24, Kyoto series plan and previous episode records. No duplicates were found. Compared prior portraits and inspected central and right-shifted 9:16 framing and facial skin. On 2026-11-26 JST, compared the original image to the supplied 512×910, 30 fps, 10-second clip. At 0, 0.5 and 1 second, both eyes, the mouth and the complete pale blue earring at screen left fit with margins. Samples at 2, 3.5, 5, 7 and 9.5 seconds retain the white shirt, bob and a single visible page-shaped earring on the same side. No prominent mole or isolated dark point was apparent on the cheeks, around the mouth or on the chin in the later samples. Full-take and audio review, actual Flow mode and model, and SNS publication remain unverified.",
-      "nextAction": "Review the full take and Japanese speech. Record the Instagram Reel URL after verifying publication.",
-      "statusReason": "The supplied take passes the sampled opening framing, earring placement and visible skin checks. Full-take and audio review are pending.",
+      "verification": "The live product page displays the original site WebP (Git blob d2a877e42856320ae049a270d911897502234dce, main 74acc4e17220ab731d0955d936e0533a3b68fa8b). Checked product ID, styling asset ID and image path against the production ledger, TikTok registry last checked 2026-11-24, Kyoto series plan and previous episode records. No duplicates were found. Compared prior portraits and inspected central and right-shifted 9:16 framing and facial skin. On 2026-11-26 JST, compared the original image to the supplied 512×910, 30 fps, 10-second clip. At 0, 0.5 and 1 second, both eyes, the mouth and the complete pale blue earring at screen left fit with margins. Samples at 2, 3.5, 5, 7 and 9.5 seconds retain the white shirt, bob and a single visible page-shaped earring on the same side. No prominent mole or isolated dark point was apparent on the cheeks, around the mouth or on the chin in the later samples. Automatic transcription detected the prompted line about choosing this blue and a follow-up asking whether the color looks good. The TikTok caption opens with the first line. Full-take playback, detailed pronunciation and lip sync, actual Flow mode and model, and SNS publication remain unverified.",
+      "nextAction": "Review the full take, pronunciation, lip sync and the detected extra line against the one-line prompt. Record the Instagram or TikTok post URL after verifying the matching publication.",
+      "statusReason": "The sampled opening, earring placement and visible skin checks pass. Full-take and audio review, including the detected extra line, are pending.",
       "instagramCaption": {
         "status": "draft",
         "postUrl": null
-      }
+      },
+      "captionDraft": "今日は、この青にしてみたよ。🩵\n\n東京で待ち合わせ。\n白いシャツに、ページをめくったような形の七宝ピアス。\n淡い青の釉薬越しに、銀の模様が透けて見えます。\n\nSIRI SIRI｜SHIPPŌ Page Blue 七宝ピアス\n\nあなたなら、この青を何色の服に合わせる？\n\nMeet me in Tokyo. SIRI SIRI’s SHIPPŌ Page Blue earrings curl like a turned page, with patterned silver showing through pale blue enamel.\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #東京 #SIRISIRI #七宝焼 #JapaneseJewelry"
     }
   ],
   "observedLinks": [
@@ -749,6 +750,10 @@
     {
       "date": "2026-11-26",
       "summary": "Confirmed the sampled opening framing and three glass drops in the supplied Tokyo episode 9 clip. Saved the Japanese and English TikTok caption draft."
+    },
+    {
+      "date": "2026-11-26",
+      "summary": "Confirmed the sampled opening and same-side blue earring in the supplied Tokyo episode 10 clip. Logged the detected follow-up line and saved the Japanese and English TikTok caption draft."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
