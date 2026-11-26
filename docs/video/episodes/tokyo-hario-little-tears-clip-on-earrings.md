@@ -43,7 +43,8 @@ Avoid: head turns, mirrored framing, extra jewelry, camera moves, captions, logo
 
 - 512×910、30fps、10秒。0秒・0.5秒・1秒の確認フレームで、両目・口元と画面右のイヤリングが、留め具から一番下のしずくまで余白付きで収まる。
 - 2秒・3.5秒・5秒・7秒・9.5秒のサンプルでは、同じ側にイヤリングが一つ見える。後半に確認した頬・口元まわり・あごに、目立つほくろや単独の濃い点は見当たらなかった。
-- 全編・音声・実際のFlowのモードとモデル・SNS公開は未確認。
+- 拡大した0秒・0.5秒・1秒・3.5秒・5秒・9.5秒のサンプルで、画面右のイヤリングに細いチェーンと透明なしずく三つを確認。髪型と淡いブルーのブラウスは元画像に対応し、顔の向きは原本より正面寄り。
+- 音声の自動文字起こしでは、しずくが見えるかを尋ねる一言を検出。紹介文の冒頭はFlow指示文の表記を使用。全編の目視、細かな発音と口の動き、実際のFlowのモードとモデル、SNS公開は未確認。
 
 ## Instagramリール紹介文
 
@@ -60,4 +61,27 @@ HARIO Lampwork Factoryのイヤリング「リトルティアーズ」をモチ�
 AIで描いた旅のワンシーン｜AI-generated video
 
 #SORA旅先で待ち合わせ #東京 #ガラスイヤリング #Tokyo #JapaneseJewelry
+```
+
+## TikTok紹介文
+
+2026-11-26（JST）作成。下書き。TikTok公開は未確認。
+
+```text
+ねえ、このしずく、見える？💧
+
+東京で待ち合わせ。
+淡いブルーのブラウスに、透明なガラスのしずく。
+細いチェーンの先で、光を拾ってきらり。
+
+HARIO Lampwork Factory｜リトルティアーズ イヤリング
+
+あなたなら、どんな服に合わせたい？
+
+Meet me in Tokyo. Tiny glass drops catch the light on the delicate chains of HARIO Lampwork Factory’s Little Tears clip-on earrings.
+
+※映像はAIで制作した着用イメージです。
+AI-generated styling video.
+
+#SORA旅先で待ち合わせ #東京 #HARIOLampworkFactory #ガラスアクセサリー #JapaneseJewelry
 ```
