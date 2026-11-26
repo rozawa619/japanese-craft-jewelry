@@ -6,8 +6,8 @@
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
-  "currentEpisodeId": "tokyo-hatakeyama-sterling-shine-mini-earrings",
-  "nextAction": "Generate one clip with the original WebP and prompt v1. Use Frames only if the actual left-shifted start preview fits both eyes, the mouth and the whole earring with margins. Otherwise use Ingredients. Review 0, 0.5 and 1 second and later face, earring and speech samples.",
+  "currentEpisodeId": "tokyo-hario-little-tears-clip-on-earrings",
+  "nextAction": "Generate one clip with prompt v1 using the original WebP in Ingredients. Use Frames only if the actual wider start preview fits both eyes, the mouth and the whole earring with margins. Review 0, 0.5 and 1 second and later face, earring and speech samples.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -468,6 +468,26 @@
       "verification": "The live product page displays the original site WebP (Git blob 113ae8f54213abb5ca2b5a5a6632fcb2cdf32cae, main fb5dc7425879ddf5a72d2f1504e7deadae3ca5fc). Checked product ID, styling asset ID and path against the production ledger, TikTok registry last checked 2026-11-24, Kyoto series plan and previous episodes. No duplicates were found. Compared available prior portraits and inspected central and shifted portrait framing and facial skin. Generation, review and publication remain unverified.",
       "nextAction": "Generate one clip with the original WebP and prompt v1. Use Frames only if the actual left-shifted start preview fits both eyes, the mouth and the whole earring with margins. Otherwise use Ingredients. Review 0, 0.5 and 1 second and later face, earring and speech samples.",
       "statusReason": "The published portrait and Flow prompt are ready. No generated clip or TikTok publication has been verified."
+    },
+    {
+      "id": "tokyo-hario-little-tears-clip-on-earrings",
+      "place": "Tokyo, Japan",
+      "productIds": [
+        "hario-little-tears-clip-on-earrings"
+      ],
+      "status": "prompt_ready",
+      "summary": "Tokyo episode 9 is ready for generation with the HARIO Little Tears clip-on earrings. Prompt v1 preserves the original face, bob, pale blue blouse and one visible earring in a wider vertical portrait.",
+      "femaleImageAssetId": "ai-hario-little-tears-clip-on-earrings-styling-v13",
+      "femaleImagePath": "public/images/hario-little-tears-clip-on-earrings-styling-v13.webp",
+      "femaleImageDimensions": "1536x1024",
+      "episodePath": "docs/video/episodes/tokyo-hario-little-tears-clip-on-earrings.md",
+      "startFrameStatus": "The central 576×1024 crop clips the eye at screen left. Windows shifted to x=410 and x=425 leave insufficient margins around the eye and the complete earring at the same time. The actual Flow preview is unverified. Prompt v1 uses the sole original reference in Ingredients and specifies a wider portrait.",
+      "currentPromptVersion": "v1-ready",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "The live product page displays the original site WebP (Git blob 4072b0014b54afcabae54b7226dd5c4cc1de2ecf, main c73ec4334998dc51a235ec24179a15cfdd8209b9). Checked product ID, styling asset ID and path against the production ledger, TikTok registry last checked 2026-11-24, Kyoto series plan and previous episode records. No duplicates were found. Compared available prior portraits and inspected central and shifted 9:16 framing, the earring and facial skin. Generation, review and publication remain unverified.",
+      "nextAction": "Generate one clip with prompt v1 using the original WebP in Ingredients. Use Frames only if the actual wider start preview fits both eyes, the mouth and the whole earring with margins. Review 0, 0.5 and 1 second and later face, earring and speech samples.",
+      "statusReason": "The published original portrait and Flow prompt are ready. No generated take or TikTok publication has been verified."
     }
   ],
   "observedLinks": [
@@ -670,6 +690,10 @@
     {
       "date": "2026-11-26",
       "summary": "Prepared Tokyo episode 8 for the Hatakeyama Sterling Shine Mini enamel earrings. Confirmed the original site portrait and the left-shifted 9:16 framing that fits both eyes, the mouth and the complete enamel-and-pearl earring."
+    },
+    {
+      "date": "2026-11-26",
+      "summary": "Prepared Tokyo episode 9 for HARIO Little Tears. Verified the original portrait and planned a wider 9:16 composition that fits the full face and earring from the opening."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -708,5 +732,5 @@
     "firstSuggestedProductId": "rinzen-seika-amber-pierced-earrings",
     "explanation": "Tokyo led the regional shortlist in the Kyoto plan. All seven published Kyoto products have a video creation record in the production ledger, matched TikTok cards or prior episode notes."
   },
-  "previousWorkCurrentEpisodeId": "tokyo-nisshin-souhaku-hammered-silver-bangle"
+  "previousWorkCurrentEpisodeId": "tokyo-hatakeyama-sterling-shine-mini-earrings"
 }
