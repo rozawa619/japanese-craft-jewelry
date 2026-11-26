@@ -436,7 +436,7 @@
         "nisshin-souhaku-hammered-silver-bangle"
       ],
       "status": "revision_needed",
-      "summary": "A 10-second take for Tokyo episode 7 was supplied. The sampled opening shows both eyes, the mouth and the complete bangle, with part of the fingertips at screen left cropped. The Instagram caption draft is saved.",
+      "summary": "A 10-second take for Tokyo episode 7 was supplied. The sampled opening shows both eyes, the mouth and the complete bangle, with part of the fingertips at screen left cropped. The TikTok and Instagram caption drafts are saved.",
       "femaleImageAssetId": "ai-styling-jp-nisshin-souhaku-hammered-silver-bangle-v41",
       "femaleImagePath": "public/images/styling-jp-nisshin-souhaku-hammered-silver-bangle-v41.webp",
       "femaleImageDimensions": "1536x1024",
@@ -445,13 +445,14 @@
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The live product page displays the original site WebP (Git blob ab422aaa75f3f4f0ce57d688636c2ba9584f016d, main 77e94c773d355ffc31752429cc31d2056b12560a). Checked the product ID, portrait ID and image path against the production ledger, TikTok registry last checked 2026-11-24, Kyoto series plan and previous episode records. No duplicates were found. Compared available prior portraits and inspected composition, skin and the tabletop arm pose. On 2026-11-26 JST, compared the site image to the supplied 512×910, 30 fps, 10-second take. At 0, 0.5 and 1 second both eyes, the mouth and the whole bangle are in frame, and part of the fingertips on the bangle-wearing hand are cropped at screen left. The later samples at 2, 3.5, 5, 7 and 9.5 seconds show one bangle on the same visible wrist. No prominent mole or isolated dark point was apparent on the cheeks, mouth area or chin in the later samples. Full-take and audio review, actual Flow settings and SNS publication remain unverified.",
+      "verification": "The live product page displays the original site WebP (Git blob ab422aaa75f3f4f0ce57d688636c2ba9584f016d, main 77e94c773d355ffc31752429cc31d2056b12560a). Checked the product ID, portrait ID and image path against the production ledger, TikTok registry last checked 2026-11-24, Kyoto series plan and previous episode records. No duplicates were found. Compared available prior portraits and inspected composition, skin and the tabletop arm pose. On 2026-11-26 JST, compared the site image to the supplied 512×910, 30 fps, 10-second take. At 0, 0.5 and 1 second both eyes, the mouth and the whole bangle are in frame, and part of the fingertips on the bangle-wearing hand are cropped at screen left. The later samples at 2, 3.5, 5, 7 and 9.5 seconds show one bangle on the same visible wrist. No prominent mole or isolated dark point was apparent on the cheeks, mouth area or chin in the later samples. Automatic transcription detected a question asking whether it suits her. The caption uses the bangle wording from the Flow prompt. Full-take playback and audio-to-lip-sync review, actual Flow settings and SNS publication remain unverified.",
       "nextAction": "Regenerate from the original image with more space to the left of the fingertips. Check the face, bangle and hand in the actual start preview and at 0, 0.5 and 1 second in the output.",
       "statusReason": "Part of the fingertips on the bangle-wearing hand is cropped in the sampled opening.",
       "instagramCaption": {
         "status": "draft",
         "postUrl": null
-      }
+      },
+      "captionDraft": "ねえ、このバングル、似合うかな？✨\n\n東京で待ち合わせ。\nブラウンのトップスに、細身の純銀バングルをひとつ。\n木のテーブル越しに、銀を槌で打った跡がきらり。\n\n日伸貴金属｜東京銀器 銀師宗伯の純銀手打バングル\n\nあなたなら、どんな服に合わせたい？\n\nMeet me in Tokyo. The hammer marks on silversmith Souhaku’s fine silver bangle catch the light across the table.\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #東京 #東京銀器 #純銀バングル #JapaneseJewelry"
     },
     {
       "id": "tokyo-hatakeyama-sterling-shine-mini-earrings",
@@ -726,6 +727,10 @@
     {
       "date": "2026-11-26",
       "summary": "Prepared Tokyo episode 10 for SIRI SIRI SHIPPŌ Page Blue. Verified the original portrait and saved a Flow prompt for a wider 9:16 composition that keeps both eyes, mouth and earring in frame."
+    },
+    {
+      "date": "2026-11-26",
+      "summary": "Confirmed the fingertip crop in the supplied Tokyo episode 7 take and saved the Japanese and English TikTok caption draft."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",

@@ -43,7 +43,8 @@ Avoid: wrist turns, extra jewelry, distorted hands, camera moves, captions, logo
 
 - 512×910、30fps、10秒。0秒・0.5秒・1秒の確認フレームでは、両目、口元、手首のバングル全体が画面内に収まっている。着用側の指先の一部は画面左端で見切れている。
 - 2秒・3.5秒・5秒・7秒・9.5秒の確認フレームでは、同じ手首に銀色のバングルが一つ見える。後半に確認した頬・口元まわり・あごに目立つほくろや単独の濃い点は見当たらなかった。
-- 冒頭の指先の見切れにより制作状態は `revision_needed`。全編と音声、実際のFlowのモード・モデル、SNSでの公開状況は未確認。
+- 音声の自動文字起こしで「似合うかな？」という問いかけを確認。紹介文の冒頭はFlow指示文にある「ねえ、このバングル、似合うかな？」を使用。実際の発音と口の動きの全編照合は未確認。
+- 冒頭の指先の見切れにより制作状態は `revision_needed`。全編の目視、実際のFlowのモード・モデル、SNSでの公開状況は未確認。
 
 ## Instagramリール紹介文
 
@@ -60,4 +61,27 @@ Across the wooden table, a little glint of silver. Inspired by Souhaku’s hand-
 AIで描いた旅のワンシーン｜AI-generated video
 
 #SORA旅先で待ち合わせ #東京 #東京銀器 #Tokyo #JapaneseJewelry
+```
+
+## TikTok紹介文
+
+2026-11-26（JST）作成。下書き。TikTok公開は未確認。
+
+```text
+ねえ、このバングル、似合うかな？✨
+
+東京で待ち合わせ。
+ブラウンのトップスに、細身の純銀バングルをひとつ。
+木のテーブル越しに、銀を槌で打った跡がきらり。
+
+日伸貴金属｜東京銀器 銀師宗伯の純銀手打バングル
+
+あなたなら、どんな服に合わせたい？
+
+Meet me in Tokyo. The hammer marks on silversmith Souhaku’s fine silver bangle catch the light across the table.
+
+※映像はAIで制作した着用イメージです。
+AI-generated styling video.
+
+#SORA旅先で待ち合わせ #東京 #東京銀器 #純銀バングル #JapaneseJewelry
 ```
