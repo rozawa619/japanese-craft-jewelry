@@ -60,6 +60,7 @@ Astro 7・TypeScript・Zodを使う日英の静的サイトです。日本地図
 | 商品、日英の表示、公開状態 | [catalog.json](../src/data/catalog.json)・[日本語データ](../src/data/translations/ja.json)・[`src/content/products/`](../src/content/products/) |
 | 出典、購入根拠、訪問案内 | [sources.json](research/sources.json)・[purchase-evidence.json](../src/data/purchase-evidence.json)・[visits.json](../src/data/visits.json) |
 | 着用画像、商品単体画像、権利 | [editorial-images.json](../src/data/editorial-images.json)・[product-detail-images.json](../src/data/product-detail-images.json)・[画像台帳](assets.json)・[原本資料](handoff-assets.md) |
+| 041の画像6枚の編集元 | [編集元のたどり方](handoff-assets.md#041の修正画像の編集元をたどる)・[着用](image-generation-styling-v41.json)・[単体](image-generation-solo-v41.json) |
 | 代表商品とSNSページ | [selection.ts](../src/config/selection.ts)・[tiktok-publication-registry.json](video/tiktok-publication-registry.json) |
 | 公開履歴と保守 | [公開記録](deployment-results.json)・[引継ぎ状態](handoff-status.json)・[保守の引継ぎ](handoff.md)・[CHANGELOG.md](../CHANGELOG.md) |
 

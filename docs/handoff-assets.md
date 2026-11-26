@@ -28,6 +28,12 @@ node scripts/fetch-handoff-asset.mjs originals-0.18.0
 
 保存先は`artifacts/handoff-assets/`。登録されたGitHub ReleaseのURLだけへ接続し、redirectのhost/公開DNS・TLS、サイズ、SHAを検査します。同じファイルがあれば再照合して使い、異なるファイルがあれば上書きせず停止します。取得だけでZIP展開・アプリ反映・商品再公開を行いません。GitHubの画面から直接取得した場合も、一覧のSHA256と照合してください。
 
+## 041の修正画像の編集元をたどる
+
+[着用5枚の生成記録](image-generation-styling-v41.json)と[単体1枚の生成記録](image-generation-solo-v41.json)で、`reference.projectAssetId` は編集の起点となった旧画像のID、`reference.gitUrl` はそのWebPを開く固定コミットのリンクです。取得したファイルのSHA-256を、着用は `replaces.sha256`、単体は `supersedes.sha256` と照合できます。
+
+`reference.finalEditInput` が `project-asset` の2件は旧画像を参照した記録です。`initial-edit-png` の4件は初回編集を経ており、`initialEdit` に指示文と出力PNGのSHA-256があります。中間PNG本体の保管先は確認できていません。別の環境で画像の履歴を確認するときは、まずGitで取得できる起点のWebPと生成記録を参照してください。 [照合結果](../specs/041-image-quality-corrections/validation.md#編集元の追跡)
+
 ## 元PNGが必要なとき
 
 現在の公開画像を編集参照にする場合は、Git内の`public/images/`と[人物生成manifest](image-generation-japanese-v23.json)を先に確認します。原本のPNGを使う場合だけ、0.18のZIPを別の作業用ディレクトリへ展開してください。AIツールがある環境で編集対象を表示してから使い、生成記録へ入力/出力/採否を残します。

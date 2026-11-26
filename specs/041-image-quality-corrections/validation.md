@@ -20,4 +20,10 @@
 | 実URL | 修正画像6枚、京都の動画原本、更新ページを含む59件がHTTP 200でローカル出力とSHA-256一致。旧5画像URLの404、動画原本のGitHub URLのSHA-256一致も確認。 [出力台帳](../../docs/image-quality-v41-build-manifest.json) |
 | 公開WebKit | 390pxで日英の商品詳細12件・産地一覧10件を確認。実機iPhone／Safariは未検証。 [公開表示検査](../../docs/image-quality-v41-hosted-webkit-results.json) |
 
+## 編集元の追跡
+
+2026年11月26日（JST）。着用5枚と単体1枚の生成記録で、編集の起点となったアセットIDと固定コミットのリンクを照合した。旧画像6枚はGitHubからHTTP 200で取得でき、Git履歴のファイルと記録のSHA-256が一致した。公開画像6枚もHTTP 200で、作業ツリーと公開時の出力台帳のSHA-256に一致した。初回編集を経た4枚は中間PNGのハッシュも記録している。 [編集元の確認手順](../../docs/handoff-assets.md#041の修正画像の編集元をたどる)
+
+`pnpm verify` と `pnpm check:docs` が通過。再ビルドした全351枚のWebP（表示用350枚と動画用の保管画像1枚）のSHA-256は、v0.29.1の公開時の出力台帳と一致した。
+
 [公開記録](../../docs/deployment-results.json) · [サイトの引継ぎ](../../docs/SITE_NEW_CHAT_HANDOFF.md)
