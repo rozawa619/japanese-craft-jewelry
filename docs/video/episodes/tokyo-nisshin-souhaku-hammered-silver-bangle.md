@@ -1,6 +1,6 @@
 # SORA 東京編 第7話｜日伸貴金属 東京銀器 銀師宗伯の純銀手打バングル
 
-2026-11-26（JST）。両目・口元と銀のバングルが同じ縦構図に収まる原本を選定。元の顔立ち・髪型・服と自然な手元の姿勢を保ち、柔らかな目線と微笑みを活かす。制作状況は `prompt_ready`。生成、検品、TikTok公開は未確認。
+2026-11-26（JST）。両目・口元と銀のバングルが同じ縦構図に収まる原本を選定。元の顔立ち・髪型・服と自然な手元の姿勢を保ち、柔らかな目線と微笑みを活かす。指示文準備時点の制作状況は `prompt_ready`。添付動画の確認結果は後述。
 
 - エピソードIDは `tokyo-nisshin-souhaku-hammered-silver-bangle`。商品IDは `nisshin-souhaku-hammered-silver-bangle`。
 - 女性画像IDは `ai-styling-jp-nisshin-souhaku-hammered-silver-bangle-v41`。元画像は `public/images/styling-jp-nisshin-souhaku-hammered-silver-bangle-v41.webp`（1536×1024）。
@@ -38,3 +38,26 @@ Avoid: wrist turns, extra jewelry, distorted hands, camera moves, captions, logo
 - 0秒・0.5秒・1秒で両目・口元・指先とバングル全体が画面内に収まるか確認する。
 - 発話中と後半も、腕がテーブルに自然に乗り、原本と同じ手首にバングルが一つ見えるか確認する。
 - 元画像と後半の頬・口元まわり・あごを見比べる。見切れ、ほくろや濃い点、手や腕の崩れ、バングルの複製は `revision_needed`。発音と口の動きも確認する。
+
+## 添付動画の確認（2026-11-26 JST）
+
+- 512×910、30fps、10秒。0秒・0.5秒・1秒の確認フレームでは、両目、口元、手首のバングル全体が画面内に収まっている。着用側の指先の一部は画面左端で見切れている。
+- 2秒・3.5秒・5秒・7秒・9.5秒の確認フレームでは、同じ手首に銀色のバングルが一つ見える。後半に確認した頬・口元まわり・あごに目立つほくろや単独の濃い点は見当たらなかった。
+- 冒頭の指先の見切れにより制作状態は `revision_needed`。全編と音声、実際のFlowのモード・モデル、SNSでの公開状況は未確認。
+
+## Instagramリール紹介文
+
+2026-11-26（JST）作成。下書き。
+
+```text
+Meet me in Tokyo ✨
+Across the wooden table, a little glint of silver. Inspired by Souhaku’s hand-hammered fine silver bangle from Nisshin Kikinzoku.
+
+東京で待ち合わせ。
+木のテーブル越しに、手元の銀がやわらかく光る。
+日伸貴金属の銀師・宗伯が手打ちで仕上げた、東京銀器の純銀バングルをモチーフにしました。
+
+AIで描いた旅のワンシーン｜AI-generated video
+
+#SORA旅先で待ち合わせ #東京 #東京銀器 #Tokyo #JapaneseJewelry
+```

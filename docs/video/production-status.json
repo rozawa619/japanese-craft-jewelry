@@ -435,8 +435,8 @@
       "productIds": [
         "nisshin-souhaku-hammered-silver-bangle"
       ],
-      "status": "prompt_ready",
-      "summary": "Tokyo episode 7 is ready for generation with the Nisshin Kikinzoku Souhaku hammered silver bangle. Prompt v1 preserves the woman's face, brown top, tabletop pose and single silver bangle.",
+      "status": "revision_needed",
+      "summary": "A 10-second take for Tokyo episode 7 was supplied. The sampled opening shows both eyes, the mouth and the complete bangle, with part of the fingertips at screen left cropped. The Instagram caption draft is saved.",
       "femaleImageAssetId": "ai-styling-jp-nisshin-souhaku-hammered-silver-bangle-v41",
       "femaleImagePath": "public/images/styling-jp-nisshin-souhaku-hammered-silver-bangle-v41.webp",
       "femaleImageDimensions": "1536x1024",
@@ -445,9 +445,13 @@
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The live product page displays the original site WebP (Git blob ab422aaa75f3f4f0ce57d688636c2ba9584f016d, main 77e94c773d355ffc31752429cc31d2056b12560a). Checked the product ID, portrait ID and image path against the production ledger, TikTok registry last checked 2026-11-24, Kyoto series plan and previous episode records. No duplicates were found. Compared available prior portraits and inspected composition, skin and the tabletop arm pose. Generation, review and publication remain unverified.",
-      "nextAction": "Generate one clip with the original WebP and prompt v1. Use Frames only if the actual left-shifted start preview fits the face, bangle and fingertips with margins. Otherwise use Ingredients. Review 0, 0.5 and 1 second and later face, wrist and speech samples.",
-      "statusReason": "The published portrait and Flow prompt are ready. No generated clip or TikTok publication has been verified."
+      "verification": "The live product page displays the original site WebP (Git blob ab422aaa75f3f4f0ce57d688636c2ba9584f016d, main 77e94c773d355ffc31752429cc31d2056b12560a). Checked the product ID, portrait ID and image path against the production ledger, TikTok registry last checked 2026-11-24, Kyoto series plan and previous episode records. No duplicates were found. Compared available prior portraits and inspected composition, skin and the tabletop arm pose. On 2026-11-26 JST, compared the site image to the supplied 512×910, 30 fps, 10-second take. At 0, 0.5 and 1 second both eyes, the mouth and the whole bangle are in frame, and part of the fingertips on the bangle-wearing hand are cropped at screen left. The later samples at 2, 3.5, 5, 7 and 9.5 seconds show one bangle on the same visible wrist. No prominent mole or isolated dark point was apparent on the cheeks, mouth area or chin in the later samples. Full-take and audio review, actual Flow settings and SNS publication remain unverified.",
+      "nextAction": "Regenerate from the original image with more space to the left of the fingertips. Check the face, bangle and hand in the actual start preview and at 0, 0.5 and 1 second in the output.",
+      "statusReason": "Part of the fingertips on the bangle-wearing hand is cropped in the sampled opening.",
+      "instagramCaption": {
+        "status": "draft",
+        "postUrl": null
+      }
     },
     {
       "id": "tokyo-hatakeyama-sterling-shine-mini-earrings",
