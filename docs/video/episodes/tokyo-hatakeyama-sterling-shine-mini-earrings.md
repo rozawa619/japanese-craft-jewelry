@@ -1,6 +1,6 @@
 # SORA 東京編 第8話｜畠山七宝製作所 東京七宝 スターリングシャイン・ミニ ピアス
 
-2026-11-26（JST）。窓辺の柔らかな光と、七宝の色とコットンパールが見える元画像を選定。元の顔立ち・髪型・服を保ち、目線と微笑みで上品な可愛らしさを出す。制作状況は `prompt_ready`。生成、検品、TikTok公開は未確認。
+2026-11-26（JST）。窓辺の柔らかな光と、七宝の色とコットンパールが見える元画像を選定。元の顔立ち・髪型・服を保ち、目線と微笑みで上品な可愛らしさを出す。指示文準備時点の制作状況は `prompt_ready`。添付動画の確認結果は後述。
 
 - エピソードIDは `tokyo-hatakeyama-sterling-shine-mini-earrings`。商品IDは `hatakeyama-sterling-shine-mini-earrings`。
 - 女性画像IDは `ai-styling-jp-hatakeyama-sterling-shine-mini-earrings-v40`。元画像は `public/images/styling-jp-hatakeyama-sterling-shine-mini-earrings-v40.webp`（1536×1024）。
@@ -38,3 +38,26 @@ Avoid: head turns, mirrored framing, extra jewelry, captions, logos and music.
 - 0秒・0.5秒・1秒で両目・口元と画面右の七宝からパールの下までが余白付きで収まるか確認する。
 - 発話中と後半も頭の角度、ピアスの色・形・位置と画面右に一つの状態を原本と照合する。
 - 後半も頬・口元まわり・あごを確認。見切れ、ほくろや単独の濃い点、ピアスの配置や個数の変化は `revision_needed`。発音と口の動きも確認する。
+
+## 添付動画の確認（2026-11-26 JST）
+
+- 512×910、30fps、10秒。0秒で画面左側の目と口元の左側が見切れ、0.5秒でも左側の目が一部見切れる。1秒では両目と口元が見え、左側の目は画面左端に近い。画面右のピアスは七宝からコットンパールまで収まっている。
+- 2秒のサンプルでは、顔が正面を向いたときに画面左にもピアスが見える。3.5秒・5秒・7秒・9.5秒に確認した頬・口元まわり・あごに目立つほくろや単独の濃い点は見当たらなかった。
+- 冒頭の顔の見切れと見えるピアスの数の変化により制作状態は `revision_needed`。全編・音声・実際のFlowのモードとモデル・SNS公開は未確認。
+
+## Instagramリール紹介文
+
+2026-11-26（JST）作成。下書き。
+
+```text
+Meet me in Tokyo 🌷
+A little cotton pearl sways beneath pastel pink and green enamel. Inspired by Hatakeyama Shippo’s Sterling Shine Mini earrings.
+
+東京で待ち合わせ。
+淡いピンクと緑の七宝の下で、コットンパールが小さく揺れる。
+畠山七宝製作所の東京七宝ピアス「スターリングシャイン・ミニ」をモチーフにしました。
+
+AIで描いた旅のワンシーン｜AI-generated video
+
+#SORA旅先で待ち合わせ #東京 #東京七宝 #Tokyo #JapaneseJewelry
+```
