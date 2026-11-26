@@ -7,7 +7,7 @@
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
   "currentEpisodeId": "tokyo-sirisiri-page-blue-enamel-pierced-earrings",
-  "nextAction": "Generate one clip with the original WebP using Ingredients and prompt v1. Use Frames only if the actual wider start preview fits both eyes, the mouth and the entire blue earring with margins. Review 0, 0.5 and 1 second and later face, earring and speech samples.",
+  "nextAction": "Review the full take and Japanese speech. Record the Instagram Reel URL after verifying publication.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -510,8 +510,8 @@
       "productIds": [
         "sirisiri-page-blue-enamel-pierced-earrings"
       ],
-      "status": "prompt_ready",
-      "summary": "Tokyo episode 10 is ready for generation with SIRI SIRI SHIPPŌ Page Blue and the published styling portrait. Prompt v1 preserves the original face, bob, white shirt and pale blue earring in a wider vertical composition.",
+      "status": "generated_unreviewed",
+      "summary": "A 10-second take for Tokyo episode 10 was supplied. Both eyes, the mouth and the complete blue enamel earring fit in the sampled opening. The Instagram caption draft is saved.",
       "femaleImageAssetId": "ai-sirisiri-page-blue-enamel-pierced-earrings-styling-v13",
       "femaleImagePath": "public/images/sirisiri-page-blue-enamel-pierced-earrings-styling-v13.webp",
       "femaleImageDimensions": "1536x1024",
@@ -520,9 +520,13 @@
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The live product page displays the original site WebP (Git blob d2a877e42856320ae049a270d911897502234dce, main 74acc4e17220ab731d0955d936e0533a3b68fa8b). Checked product ID, styling asset ID and image path against the production ledger, TikTok registry last checked 2026-11-24, Kyoto series plan and previous episode records. No duplicates were found. Compared prior portraits and inspected central and right-shifted 9:16 framing and facial skin. Generation, review and publication remain unverified.",
-      "nextAction": "Generate one clip with the original WebP using Ingredients and prompt v1. Use Frames only if the actual wider start preview fits both eyes, the mouth and the entire blue earring with margins. Review 0, 0.5 and 1 second and later face, earring and speech samples.",
-      "statusReason": "The published portrait and Flow prompt are ready. No generated clip or TikTok publication has been verified."
+      "verification": "The live product page displays the original site WebP (Git blob d2a877e42856320ae049a270d911897502234dce, main 74acc4e17220ab731d0955d936e0533a3b68fa8b). Checked product ID, styling asset ID and image path against the production ledger, TikTok registry last checked 2026-11-24, Kyoto series plan and previous episode records. No duplicates were found. Compared prior portraits and inspected central and right-shifted 9:16 framing and facial skin. On 2026-11-26 JST, compared the original image to the supplied 512×910, 30 fps, 10-second clip. At 0, 0.5 and 1 second, both eyes, the mouth and the complete pale blue earring at screen left fit with margins. Samples at 2, 3.5, 5, 7 and 9.5 seconds retain the white shirt, bob and a single visible page-shaped earring on the same side. No prominent mole or isolated dark point was apparent on the cheeks, around the mouth or on the chin in the later samples. Full-take and audio review, actual Flow mode and model, and SNS publication remain unverified.",
+      "nextAction": "Review the full take and Japanese speech. Record the Instagram Reel URL after verifying publication.",
+      "statusReason": "The supplied take passes the sampled opening framing, earring placement and visible skin checks. Full-take and audio review are pending.",
+      "instagramCaption": {
+        "status": "draft",
+        "postUrl": null
+      }
     }
   ],
   "observedLinks": [

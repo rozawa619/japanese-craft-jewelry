@@ -1,6 +1,6 @@
 # SORA 東京編 第10話｜SIRI SIRI SHIPPŌ Page Blue 七宝ピアス
 
-2026-11-26（JST）。元画像の黒髪のボブと白いシャツに、淡い青の七宝が映える組み合わせを選定。元の顔立ちと斜め向きの姿勢を保ち、柔らかな光と小さな微笑みで上品な可愛らしさを出す。制作状況は `prompt_ready`。動画生成、検品、TikTok公開は未確認。
+2026-11-26（JST）。元画像の黒髪のボブと白いシャツに、淡い青の七宝が映える組み合わせを選定。元の顔立ちと斜め向きの姿勢を保ち、柔らかな光と小さな微笑みで上品な可愛らしさを出す。指示文準備時点の制作状況は `prompt_ready`。添付動画の確認結果は後述。
 
 - エピソードIDは `tokyo-sirisiri-page-blue-enamel-pierced-earrings`。商品IDは `sirisiri-page-blue-enamel-pierced-earrings`。
 - 女性画像IDは `ai-sirisiri-page-blue-enamel-pierced-earrings-styling-v13`。元画像は `public/images/sirisiri-page-blue-enamel-pierced-earrings-styling-v13.webp`（1536×1024）。
@@ -38,3 +38,26 @@ Avoid: head turns, mirrored framing, extra jewelry, camera moves, captions, logo
 - 0秒・0.5秒・1秒で両目・口元と画面左の七宝ピアス全体が余白付きで収まるか確認する。
 - 発話中と後半も、ピアスが同じ側に一つ見え、淡い青の釉薬と折れた形が保たれているか原本と照合する。
 - 頬・口元まわり・あごを後半も確認する。見切れ、ほくろや単独の濃い点、ピアスの位置・個数の変化は `revision_needed`。発音と口の動きも確認する。
+
+## 添付動画の確認（2026-11-26 JST）
+
+- 512×910、30fps、10秒。0秒・0.5秒・1秒の確認フレームで、両目・口元と画面左の青い七宝ピアス全体が余白付きで収まる。
+- 2秒・3.5秒・5秒・7秒・9.5秒のサンプルでは、白いシャツとボブを保ち、画面左の同じ側にページ状のピアスが一つ見える。後半に確認した頬・口元まわり・あごに、目立つほくろや単独の濃い点は見当たらなかった。
+- 全編・音声・実際のFlowのモードとモデル・SNS公開は未確認。
+
+## Instagramリール紹介文
+
+2026-11-26（JST）作成。下書き。
+
+```text
+Meet me in Tokyo 📖
+A touch of pale blue against a crisp white shirt. Inspired by SIRI SIRI’s SHIPPŌ Page Blue enamel earrings, shaped like a page mid-turn.
+
+東京で待ち合わせ。
+白いシャツに、耳元の淡いブルーをひとつ。
+めくりかけのページを思わせる、SIRI SIRIの七宝ピアス「SHIPPŌ Page Blue」をモチーフにしました。
+
+AIで描いた旅のワンシーン｜AI-generated video
+
+#SORA旅先で待ち合わせ #東京 #七宝ピアス #Tokyo #JapaneseJewelry
+```
