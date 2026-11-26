@@ -43,7 +43,8 @@ Avoid: head turns, mirrored framing, extra jewelry, captions, logos and music.
 
 - 512×910、30fps、10秒。0秒で画面左側の目と口元の左側が見切れ、0.5秒でも左側の目が一部見切れる。1秒では両目と口元が見え、左側の目は画面左端に近い。画面右のピアスは七宝からコットンパールまで収まっている。
 - 2秒のサンプルでは、顔が正面を向いたときに画面左にもピアスが見える。3.5秒・5秒・7秒・9.5秒に確認した頬・口元まわり・あごに目立つほくろや単独の濃い点は見当たらなかった。
-- 冒頭の顔の見切れと見えるピアスの数の変化により制作状態は `revision_needed`。全編・音声・実際のFlowのモードとモデル・SNS公開は未確認。
+- 音声の自動文字起こしでは「ねえ、この色、好き？」と、追加の「私のことは好き？」の二言を検出。紹介文の冒頭には最初の一言を使用。発音と口の動きの全編照合は未確認。
+- 冒頭の顔の見切れと見えるピアスの数の変化により制作状態は `revision_needed`。全編の目視、実際のFlowのモードとモデル、SNS公開は未確認。
 
 ## Instagramリール紹介文
 
@@ -60,4 +61,27 @@ A little cotton pearl sways beneath pastel pink and green enamel. Inspired by Ha
 AIで描いた旅のワンシーン｜AI-generated video
 
 #SORA旅先で待ち合わせ #東京 #東京七宝 #Tokyo #JapaneseJewelry
+```
+
+## TikTok紹介文
+
+2026-11-26（JST）作成。下書き。TikTok公開は未確認。
+
+```text
+ねえ、この色、好き？🌷
+
+東京で待ち合わせ。
+生成りのブラウスに、淡いピンクと緑の七宝。
+その下で、小さなコットンパールが揺れる。
+
+畠山七宝製作所｜東京七宝 スターリングシャイン・ミニ ピアス
+
+あなたなら、このピアスを何色の服に合わせる？
+
+Meet me in Tokyo. A tiny cotton pearl sways beneath pastel pink and green enamel in Hatakeyama Shippo’s Sterling Shine Mini earrings.
+
+※映像はAIで制作した着用イメージです。
+AI-generated styling video.
+
+#SORA旅先で待ち合わせ #東京 #東京七宝 #七宝焼 #JapaneseJewelry
 ```

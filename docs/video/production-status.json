@@ -461,7 +461,7 @@
         "hatakeyama-sterling-shine-mini-earrings"
       ],
       "status": "revision_needed",
-      "summary": "A 10-second clip for Tokyo episode 8 was supplied. The earring fits at the sampled opening, and the frame crops the left side of the face. As the head turns, a second earring is visible at 2 seconds. The Instagram caption draft is saved.",
+      "summary": "A 10-second clip for Tokyo episode 8 was supplied. The earring fits at the sampled opening, and the frame crops the left side of the face. As the head turns, a second earring is visible at 2 seconds. The TikTok and Instagram caption drafts are saved.",
       "femaleImageAssetId": "ai-styling-jp-hatakeyama-sterling-shine-mini-earrings-v40",
       "femaleImagePath": "public/images/styling-jp-hatakeyama-sterling-shine-mini-earrings-v40.webp",
       "femaleImageDimensions": "1536x1024",
@@ -470,13 +470,14 @@
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The live product page displays the original site WebP (Git blob 113ae8f54213abb5ca2b5a5a6632fcb2cdf32cae, main fb5dc7425879ddf5a72d2f1504e7deadae3ca5fc). Checked product ID, styling asset ID and path against the production ledger, TikTok registry last checked 2026-11-24, Kyoto series plan and previous episodes. No duplicates were found. Compared available prior portraits and inspected central and shifted portrait framing and facial skin. On 2026-11-26 JST, compared the site image with the 512×910, 30 fps, 10-second take. At 0 seconds the frame crops the eye and part of the mouth at screen left. The same eye is partly cropped at 0.5 seconds and close to the edge at 1 second. The full enamel and pearl drop is visible at screen right in the opening samples. At 2 seconds, the turn exposes an earring at screen left as well. No prominent mole or isolated dark point was apparent on the cheeks, around the mouth or on the chin in sampled later frames at 3.5, 5, 7 and 9.5 seconds. Full-take and audio review, the actual Flow mode and model, and SNS publication remain unverified.",
-      "nextAction": "Regenerate with the original WebP and a wider or left-shifted start preview. Keep the original three-quarter angle and one earring visible. Check the face and full earring at 0, 0.5 and 1 second, then confirm the later visible earring count and speech.",
+      "verification": "The live product page displays the original site WebP (Git blob 113ae8f54213abb5ca2b5a5a6632fcb2cdf32cae, main fb5dc7425879ddf5a72d2f1504e7deadae3ca5fc). Checked product ID, styling asset ID and path against the production ledger, TikTok registry last checked 2026-11-24, Kyoto series plan and previous episodes. No duplicates were found. Compared available prior portraits and inspected central and shifted portrait framing and facial skin. On 2026-11-26 JST, compared the site image with the 512×910, 30 fps, 10-second take. At 0 seconds the frame crops the eye and part of the mouth at screen left. The same eye is partly cropped at 0.5 seconds and close to the edge at 1 second. The full enamel and pearl drop is visible at screen right in the opening samples. At 2 seconds, the turn exposes an earring at screen left as well. No prominent mole or isolated dark point was apparent on the cheeks, around the mouth or on the chin in sampled later frames at 3.5, 5, 7 and 9.5 seconds. Automatic transcription detected the prompted question about the color and a second question about whether the viewer likes her. The TikTok caption uses the first question. Full-take playback, detailed pronunciation and lip sync, the actual Flow mode and model, and SNS publication remain unverified.",
+      "nextAction": "Regenerate with the original WebP and a wider or left-shifted start preview. Keep the original three-quarter angle and one earring visible. Check the face and full earring at 0, 0.5 and 1 second, then confirm the later visible earring count and that the single Japanese line plays with natural pronunciation and lip sync.",
       "statusReason": "The sampled opening crops the face at screen left. A second earring appears as she turns.",
       "instagramCaption": {
         "status": "draft",
         "postUrl": null
-      }
+      },
+      "captionDraft": "ねえ、この色、好き？🌷\n\n東京で待ち合わせ。\n生成りのブラウスに、淡いピンクと緑の七宝。\nその下で、小さなコットンパールが揺れる。\n\n畠山七宝製作所｜東京七宝 スターリングシャイン・ミニ ピアス\n\nあなたなら、このピアスを何色の服に合わせる？\n\nMeet me in Tokyo. A tiny cotton pearl sways beneath pastel pink and green enamel in Hatakeyama Shippo’s Sterling Shine Mini earrings.\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #東京 #東京七宝 #七宝焼 #JapaneseJewelry"
     },
     {
       "id": "tokyo-hario-little-tears-clip-on-earrings",
@@ -731,6 +732,10 @@
     {
       "date": "2026-11-26",
       "summary": "Confirmed the fingertip crop in the supplied Tokyo episode 7 take and saved the Japanese and English TikTok caption draft."
+    },
+    {
+      "date": "2026-11-26",
+      "summary": "Confirmed the opening facial crop, brief second visible earring, and two detected lines in the supplied Tokyo episode 8 clip. Saved the Japanese and English TikTok caption draft."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
