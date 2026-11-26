@@ -1,6 +1,6 @@
 # SORA 東京編 第9話｜HARIO Lampwork Factory リトルティアーズ イヤリング
 
-2026-11-26（JST）。元画像のボブと淡いブルーのブラウス、透明なしずくを使う。顔立ち・髪型・服を保ち、柔らかな光と小さな微笑みで可愛らしさを出す。制作状況は `prompt_ready`。動画生成、検品、TikTok公開は未確認。
+2026-11-26（JST）。元画像のボブと淡いブルーのブラウス、透明なしずくを使う。顔立ち・髪型・服を保ち、柔らかな光と小さな微笑みで可愛らしさを出す。指示文準備時点の制作状況は `prompt_ready`。添付動画の確認結果は後述。
 
 - エピソードIDは `tokyo-hario-little-tears-clip-on-earrings`。商品IDは `hario-little-tears-clip-on-earrings`。
 - 女性画像IDは `ai-hario-little-tears-clip-on-earrings-styling-v13`。元画像は `public/images/hario-little-tears-clip-on-earrings-styling-v13.webp`（1536×1024）。
@@ -38,3 +38,26 @@ Avoid: head turns, mirrored framing, extra jewelry, camera moves, captions, logo
 - 0秒・0.5秒・1秒で両目・口元と、画面右のイヤリングの金具・チェーン・しずく全体が余白付きで収まるか確認する。
 - 発話中と後半も、イヤリングの位置、チェーンの長さ、しずくの形・数を原本と見比べる。
 - 後半の頬・口元まわり・あごも確認する。見切れ、ほくろや単独の濃い点、イヤリングの左右や個数の変化は `revision_needed`。発音と口の動きも確認する。
+
+## 添付動画の確認（2026-11-26 JST）
+
+- 512×910、30fps、10秒。0秒・0.5秒・1秒の確認フレームで、両目・口元と画面右のイヤリングが、留め具から一番下のしずくまで余白付きで収まる。
+- 2秒・3.5秒・5秒・7秒・9.5秒のサンプルでは、同じ側にイヤリングが一つ見える。後半に確認した頬・口元まわり・あごに、目立つほくろや単独の濃い点は見当たらなかった。
+- 全編・音声・実際のFlowのモードとモデル・SNS公開は未確認。
+
+## Instagramリール紹介文
+
+2026-11-26（JST）作成。下書き。
+
+```text
+Meet me in Tokyo 💧
+Tiny glass drops sway on fine chains. Inspired by HARIO Lampwork Factory’s Little Tears clip-on earrings.
+
+東京で待ち合わせ。
+淡いブルーのブラウスに、耳元で揺れるガラスのしずくを合わせて。
+HARIO Lampwork Factoryのイヤリング「リトルティアーズ」をモチーフにしました。
+
+AIで描いた旅のワンシーン｜AI-generated video
+
+#SORA旅先で待ち合わせ #東京 #ガラスイヤリング #Tokyo #JapaneseJewelry
+```

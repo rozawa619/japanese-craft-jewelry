@@ -485,8 +485,8 @@
       "productIds": [
         "hario-little-tears-clip-on-earrings"
       ],
-      "status": "prompt_ready",
-      "summary": "Tokyo episode 9 is ready for generation with the HARIO Little Tears clip-on earrings. Prompt v1 preserves the original face, bob, pale blue blouse and one visible earring in a wider vertical portrait.",
+      "status": "generated_unreviewed",
+      "summary": "A 10-second take for Tokyo episode 9 was supplied. Both eyes, the mouth and the complete visible clip-on earring fit in the sampled opening. The Instagram caption draft is saved.",
       "femaleImageAssetId": "ai-hario-little-tears-clip-on-earrings-styling-v13",
       "femaleImagePath": "public/images/hario-little-tears-clip-on-earrings-styling-v13.webp",
       "femaleImageDimensions": "1536x1024",
@@ -495,9 +495,13 @@
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The live product page displays the original site WebP (Git blob 4072b0014b54afcabae54b7226dd5c4cc1de2ecf, main c73ec4334998dc51a235ec24179a15cfdd8209b9). Checked product ID, styling asset ID and path against the production ledger, TikTok registry last checked 2026-11-24, Kyoto series plan and previous episode records. No duplicates were found. Compared available prior portraits and inspected central and shifted 9:16 framing, the earring and facial skin. Generation, review and publication remain unverified.",
-      "nextAction": "Generate one clip with prompt v1 using the original WebP in Ingredients. Use Frames only if the actual wider start preview fits both eyes, the mouth and the whole earring with margins. Review 0, 0.5 and 1 second and later face, earring and speech samples.",
-      "statusReason": "The published original portrait and Flow prompt are ready. No generated take or TikTok publication has been verified."
+      "verification": "The live product page displays the original site WebP (Git blob 4072b0014b54afcabae54b7226dd5c4cc1de2ecf, main c73ec4334998dc51a235ec24179a15cfdd8209b9). Checked product ID, styling asset ID and path against the production ledger, TikTok registry last checked 2026-11-24, Kyoto series plan and previous episode records. No duplicates were found. Compared available prior portraits and inspected central and shifted 9:16 framing, the earring and facial skin. On 2026-11-26 JST, compared the original image to the supplied 512×910, 30 fps, 10-second clip. At 0, 0.5 and 1 second, both eyes, the mouth and the entire earring at screen right from clasp to lowest drop fit with margins. Samples at 2, 3.5, 5, 7 and 9.5 seconds retain a single visible earring on the same side. No prominent mole or isolated dark point was apparent on the cheeks, mouth area or chin in the later samples. Full-take and audio review, Flow mode and model, and SNS publication remain unverified.",
+      "nextAction": "Review the full take and Japanese speech. Record the Instagram Reel URL after verifying publication.",
+      "statusReason": "The supplied take passes the sampled opening framing, earring placement and visible skin checks. Full-take and audio review are pending.",
+      "instagramCaption": {
+        "status": "draft",
+        "postUrl": null
+      }
     },
     {
       "id": "tokyo-sirisiri-page-blue-enamel-pierced-earrings",
