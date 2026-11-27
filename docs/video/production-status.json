@@ -7,7 +7,7 @@
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
   "currentEpisodeId": "chiba-arcos-cosmic-spiral-pendant",
-  "nextAction": "Review the supplied clip’s frames at 0, 0.5 and 1 second and later for framing, skin and pendant continuity. Verify the exact Japanese line, any extra speech and lip sync against prompt v1, then record a matching publication URL if verified.",
+  "nextAction": "Revise the framing with the original portrait so the face, both visible sides of the cord and the whole pendant have room throughout. Review the revised take for framing, jewelry, skin, exact speech, any extra dialogue and lip sync.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -610,8 +610,8 @@
       "productIds": [
         "arcos-cosmic-spiral-pendant"
       ],
-      "status": "generated_unreviewed",
-      "summary": "Received a clip with an opening consistent with Chiba episode 4 for Atelier ARCOS’s Cosmic Spiral pendant. A bilingual TikTok caption draft is saved. The Instagram caption draft is saved.",
+      "status": "revision_needed",
+      "summary": "The supplied 10-second Chiba episode 4 take matches Atelier ARCOS’s Cosmic Spiral glass pendant. The sampled frames crop the face and cord at screen right. Instagram and TikTok caption drafts are saved.",
       "femaleImageAssetId": "ai-arcos-cosmic-spiral-pendant-styling-v9",
       "femaleImagePath": "public/images/arcos-cosmic-spiral-pendant-styling-v9.webp",
       "femaleImageDimensions": "1536x1024",
@@ -620,9 +620,9 @@
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The site release v0.30.0 and current main contain the same original WebP (Git blob e68881b1b9ac97027e48bc313ed15a7c98bfb4fc). Compared the product ID, portrait asset ID and image path with the production ledger, TikTok publication registry and Kyoto plan. Compared prior portrait references, including the Tokyo leaf and Kyoto sakura pendants. No duplicate found in the available records. The current TikTok grid remains unverified. On 2026-11-27 JST, the submitted MP4’s indexed audio transcript began with the opening of the prompt and reported “ほら、ガラスの中に、綺麗かな?”. Associated the attachment with Chiba episode 4 by this dialogue cue. The TikTok draft uses the verified opening phrase and the product description. The supplied video frames, exact speech, pronunciation, possible extra dialogue, lip sync and publication were unverified in this check.",
-      "nextAction": "Review the supplied clip’s frames at 0, 0.5 and 1 second and later for framing, skin and pendant continuity. Verify the exact Japanese line, any extra speech and lip sync against prompt v1, then record a matching publication URL if verified.",
-      "statusReason": "The supplied clip’s indexed transcript contains the matching opening. Video frames and audio playback remain to be checked.",
+      "verification": "The site release v0.30.0 and current main contain the same original WebP (Git blob e68881b1b9ac97027e48bc313ed15a7c98bfb4fc). Compared the product ID, portrait asset ID and image path with the production ledger, TikTok publication registry and Kyoto plan. Compared prior portrait references, including the Tokyo leaf and Kyoto sakura pendants. No duplicate found in the available records. The current TikTok grid remains unverified. On 2026-11-27 JST, the submitted MP4’s indexed audio transcript began with the opening of the prompt and reported “ほら、ガラスの中に、綺麗かな?”. Associated the attachment with Chiba episode 4 by this dialogue cue. The TikTok draft uses the verified opening phrase and the product description. The supplied video frames, exact speech, pronunciation, possible extra dialogue, lip sync and publication were unverified in this check. A subsequent visual comparison matched the submitted 512×910, 30 fps clip to the original portrait. At 0, 0.5, 1, 2, 3.5, 5, 7 and 9.5 seconds, the face and visible cord are cropped at screen right. The full pendant remains visible, with no conspicuous new dark marks in the sampled regions. Full playback, exact speech, lip sync, actual Flow settings and publication remain unverified.",
+      "nextAction": "Revise the framing with the original portrait so the face, both visible sides of the cord and the whole pendant have room throughout. Review the revised take for framing, jewelry, skin, exact speech, any extra dialogue and lip sync.",
+      "statusReason": "The sampled opening and later frames crop the face and visible cord at screen right. The complete glass pendant remains visible.",
       "captionDraft": "ほら、ガラスの中に青い渦。🌀\n\n千葉・鴨川で待ち合わせ。\n深い青と淡い水色が重なる、丸いガラスのペンダント。\n\nガラス工房アルコス｜宇宙神秘のスパイラル\n青の色合いと渦模様、どっちに先に目がいった？\n\nMeet me in Kamogawa, Chiba. A spiral of deep blue and aqua inside a glass pendant, inspired by Atelier ARCOS’s Cosmic Spiral.\nDid the color or the swirl catch your eye first?\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #千葉 #鴨川 #ガラスアクセサリー #JapaneseJewelry",
       "instagramCaption": {
         "status": "draft",
@@ -894,6 +894,10 @@
     {
       "date": "2026-11-27",
       "summary": "Saved a bilingual Instagram caption draft for Chiba episode 4."
+    },
+    {
+      "date": "2026-11-27",
+      "summary": "Reviewed the supplied Chiba episode 4 frames against the ARCOS original and marked the right-edge crop of the face and cord for revision."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
