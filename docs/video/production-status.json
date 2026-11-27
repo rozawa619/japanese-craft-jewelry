@@ -6,8 +6,8 @@
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
-  "currentEpisodeId": "chiba-sghr-tie-tie-glass-earrings",
-  "nextAction": "Generate Chiba episode 3 from the exact site original as the sole Ingredient. Use Frames only when the actual vertical preview fits both eyes, the whole mouth and the full glass drop with clear margins. Then check the opening, earring placement, visible skin, speech and lip sync.",
+  "currentEpisodeId": "chiba-arcos-cosmic-spiral-pendant",
+  "nextAction": "Generate Chiba episode 4 from the exact site original as the sole Ingredient. Use Frames only if the actual vertical preview has comfortable margins around the face, cord and pendant. Then check opening framing, skin, jewelry identity, dialogue and lip sync.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -585,6 +585,25 @@
       "postUrl": null,
       "verification": "The v0.30.0 deployment and current main contain the same original WebP (Git blob 6d0e99c685160e624c24b9d012bd5ea4afdb358c). Checked the product ID, portrait ID and image path against the production ledger, TikTok publication registry and Kyoto series plan. Compared it with the checked Chiba and prior reference portraits. No duplicate found in the records. The current TikTok grid remains unverified.",
       "nextAction": "Generate Chiba episode 3 from the exact site original as the sole Ingredient. Use Frames only when the actual vertical preview fits both eyes, the whole mouth and the full glass drop with clear margins. Then check the opening, earring placement, visible skin, speech and lip sync."
+    },
+    {
+      "id": "chiba-arcos-cosmic-spiral-pendant",
+      "place": "Kamogawa, Chiba, Japan",
+      "productIds": [
+        "arcos-cosmic-spiral-pendant"
+      ],
+      "status": "prompt_ready",
+      "summary": "Prepared Chiba episode 4 for Atelier ARCOS’s Cosmic Spiral glass pendant. The right-shifted vertical window fits the face, visible cord and full spiral pendant.",
+      "femaleImageAssetId": "ai-arcos-cosmic-spiral-pendant-styling-v9",
+      "femaleImagePath": "public/images/arcos-cosmic-spiral-pendant-styling-v9.webp",
+      "femaleImageDimensions": "1536x1024",
+      "episodePath": "docs/video/episodes/chiba-arcos-cosmic-spiral-pendant.md",
+      "startFrameStatus": "The central 576×1024 window at x=480 cuts the screen-right side of the face composition and the visible dark cord. A right-shifted window at x=724 fits both eyes, the whole mouth, both visible sides of the cord and the whole pendant with horizontal margins. The source is tight at the crown. Prompt v1 uses Ingredients and asks for a slightly wider start with headroom. The actual Flow start preview is unverified.",
+      "currentPromptVersion": "v1-ready",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "The site release v0.30.0 and current main contain the same original WebP (Git blob e68881b1b9ac97027e48bc313ed15a7c98bfb4fc). Compared the product ID, portrait asset ID and image path with the production ledger, TikTok publication registry and Kyoto plan. Compared prior portrait references, including the Tokyo leaf and Kyoto sakura pendants. No duplicate found in the available records. The current TikTok grid remains unverified.",
+      "nextAction": "Generate Chiba episode 4 from the exact site original as the sole Ingredient. Use Frames only if the actual vertical preview has comfortable margins around the face, cord and pendant. Then check opening framing, skin, jewelry identity, dialogue and lip sync."
     }
   ],
   "observedLinks": [
@@ -827,6 +846,10 @@
     {
       "date": "2026-11-27",
       "summary": "Prepared Chiba episode 3 for Sghr’s Tie-tie glass earrings. Checked the published original, duplicate records and right-shifted vertical framing, then saved Flow prompt v1."
+    },
+    {
+      "date": "2026-11-27",
+      "summary": "Prepared Chiba episode 4 for ARCOS’s Cosmic Spiral glass pendant. Checked the released original, duplicate records and the shifted portrait composition, then saved Flow prompt v1."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -866,5 +889,5 @@
     "firstSuggestedProductId": "ayano-rikka-antique-rose-hoop-earrings",
     "explanation": "All ten currently published Tokyo products have generation records. Chiba has seven published products. The Ayano original fits the eyes, mouth and complete hoop in a 9:16 window and is unused in the available records."
   },
-  "previousWorkCurrentEpisodeId": "chiba-tomigin-chokkomon-round-silver-pendant"
+  "previousWorkCurrentEpisodeId": "chiba-sghr-tie-tie-glass-earrings"
 }
