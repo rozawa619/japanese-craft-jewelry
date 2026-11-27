@@ -33,11 +33,12 @@
     {
       "id": "chiba",
       "name": "Chiba",
-      "description": "Contemporary burner-worked glass jewelry from a maker based in Kamogawa."
+      "description": "Glass from Kamogawa and Kujukuri, folded silk from Matsudo and a silver pendant top from Tateyama."
     },
     {
       "id": "osaka",
-      "name": "Osaka"
+      "name": "Osaka",
+      "description": "Senshu shell pearls, Izumi glass beads and a charcoal-worked tombodama brooch from Osaka."
     },
     {
       "id": "nara",
@@ -1275,6 +1276,36 @@
         "nakajima-tsuyayaka-red-urushi-ladybug-studs-maker",
         "nakajima-tsuyayaka-red-urushi-ladybug-studs-project",
         "nakajima-tsuyayaka-red-urushi-ladybug-studs-offer"
+      ]
+    },
+    {
+      "id": "osaka-charcoal-tombodama",
+      "name": "Osaka charcoal-worked tombodama glass beads",
+      "description": "Patterns set into glass beads worked over charcoal by an Osaka studio.",
+      "sourceIds": [
+        "fujimura-tombodama-osaka-bureau",
+        "fujimura-tombodama-osaka-council",
+        "fujimura-tombodama-workshop-about"
+      ]
+    },
+    {
+      "id": "matsudo-edo-tsumami-zaiku",
+      "name": "Edo tsumami-zaiku in Matsudo",
+      "description": "Folded silk ornaments by a team led by a Matsudo maker of Edo tsumami kanzashi.",
+      "sourceIds": [
+        "ayano-matsudo-tsumami-chiba-bureau",
+        "ayano-matsudo-workshop-about",
+        "ayano-rikka-antique-rose-hoop-earrings-offer"
+      ]
+    },
+    {
+      "id": "tateyama-studio-metalwork",
+      "name": "Tateyama studio metalwork",
+      "description": "Silver jewelry designed by a metalworking studio in Tateyama, including motifs drawn from ancient Japanese objects.",
+      "sourceIds": [
+        "tomigin-tateyama-workshop-home",
+        "tomigin-chokkomon-studio-series",
+        "chokkomon-mirror-kunaicho"
       ]
     }
   ],
@@ -3005,6 +3036,39 @@
       "sourceIds": [
         "nakajima-tsuyayaka-red-urushi-ladybug-studs-maker",
         "nakajima-tsuyayaka-red-urushi-ladybug-studs-project"
+      ]
+    },
+    {
+      "id": "fujimura-tombodama",
+      "name": "Fujimura Tombodama Workshop",
+      "location": "Tennoji, Osaka",
+      "productionNote": "The studio makes colored glass and forms its beads by hand over charcoal.",
+      "url": "https://fujimuratombo.stores.jp/about",
+      "sourceIds": [
+        "fujimura-tombodama-workshop-about",
+        "fujimura-tombodama-osaka-council"
+      ]
+    },
+    {
+      "id": "tsumami-kanzashi-ayano",
+      "name": "Tsumami Kanzashi Ayano",
+      "location": "Matsudo, Chiba",
+      "productionNote": "The Matsudo team uses Edo tsumami kanzashi techniques to make contemporary accessories.",
+      "url": "https://kanzashi-ayano.com/about_us/",
+      "sourceIds": [
+        "ayano-matsudo-workshop-about",
+        "ayano-matsudo-tsumami-chiba-bureau"
+      ]
+    },
+    {
+      "id": "tomigin",
+      "name": "Tomigin Metalworking Studio",
+      "location": "Tateyama, Chiba",
+      "productionNote": "The Tateyama studio adapts patterns such as chokkomon to its silver jewelry.",
+      "url": "https://tomigin.com/",
+      "sourceIds": [
+        "tomigin-tateyama-workshop-home",
+        "tomigin-chokkomon-studio-series"
       ]
     }
   ],
@@ -5096,6 +5160,66 @@
       "sourceIds": [
         "tokyo-koikiya-store-v40"
       ]
+    },
+    {
+      "id": "fujimura-tombodama-official",
+      "name": "Fujimura Tombodama Workshop",
+      "url": "https://fujimuratombo.stores.jp/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "See the item’s shipping information for delivery to your address.",
+        "countries": null,
+        "sourceIds": [
+          "fujimura-tombodama-silver-brooch-offer",
+          "fujimura-tombodama-osaka-council"
+        ]
+      },
+      "returns": "Check current return and cancellation terms with the maker.",
+      "sourceIds": [
+        "fujimura-tombodama-silver-brooch-offer",
+        "fujimura-tombodama-osaka-council"
+      ]
+    },
+    {
+      "id": "tsumami-kanzashi-ayano-official",
+      "name": "Tsumami Kanzashi Ayano",
+      "url": "https://shop.kanzashi-ayano.com/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Domestic shipping is shown separately. Check delivery options for your address with the official shop.",
+        "countries": null,
+        "sourceIds": [
+          "ayano-rikka-antique-rose-hoop-earrings-offer",
+          "ayano-official-store-price-notice"
+        ]
+      },
+      "returns": "Check current return and cancellation terms with the maker.",
+      "sourceIds": [
+        "ayano-rikka-antique-rose-hoop-earrings-offer",
+        "ayano-official-store-price-notice"
+      ]
+    },
+    {
+      "id": "tomigin-official",
+      "name": "Tomigin Metalworking Studio",
+      "url": "https://tomigin.com/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "The item page lists shipping as included. Confirm delivery to your address when ordering by email.",
+        "countries": null,
+        "sourceIds": [
+          "tomigin-chokkomon-round-silver-pendant-offer",
+          "tomigin-tateyama-workshop-home"
+        ]
+      },
+      "returns": "Check current return and cancellation terms with the maker.",
+      "sourceIds": [
+        "tomigin-chokkomon-round-silver-pendant-offer",
+        "tomigin-tateyama-workshop-home"
+      ]
     }
   ],
   "programs": [
@@ -7051,6 +7175,36 @@
       "merchantId": "koikiya-tokyo",
       "programId": null,
       "officialProductUrl": "https://item.rakuten.co.jp/koikiya-tokyo/455/",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "fujimura-tombodama-silver-brooch-official",
+      "productId": "fujimura-tombodama-silver-brooch",
+      "merchantId": "fujimura-tombodama-official",
+      "programId": null,
+      "officialProductUrl": "https://fujimuratombo.stores.jp/items/64a1465062bb052f43b979e7",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "ayano-rikka-antique-rose-hoop-earrings-official",
+      "productId": "ayano-rikka-antique-rose-hoop-earrings",
+      "merchantId": "tsumami-kanzashi-ayano-official",
+      "programId": null,
+      "officialProductUrl": "https://shop.kanzashi-ayano.com/items/30810151",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "tomigin-chokkomon-round-silver-pendant-official",
+      "productId": "tomigin-chokkomon-round-silver-pendant",
+      "merchantId": "tomigin-official",
+      "programId": null,
+      "officialProductUrl": "https://tomigin.com/%E7%9B%B4%E5%BC%A7%E7%B4%8B%E3%83%88%E3%83%83%E3%83%97%E4%B8%B8%E3%80%80%E3%83%81%E3%82%A7%E3%83%BC%E3%83%B3%E4%BB%98%E3%80%80/",
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
       "affiliateLinkVerifiedAt": null
@@ -17432,6 +17586,178 @@
       "whatToCheck": [
         "The checked option is 赤 (red). Use the seller’s photo for the exact dots and sheen.",
         "The seller quotes 7–10 business days to dispatch, with some items made after ordering."
+      ]
+    },
+    {
+      "id": "fujimura-tombodama-silver-brooch",
+      "slug": "fujimura-tombodama-silver-brooch",
+      "locale": "en",
+      "title": "Fujimura turquoise tombodama silver brooch",
+      "originalTitle": "トンボ玉シルバーブローチ",
+      "publishStatus": "published",
+      "productType": [
+        "brooch"
+      ],
+      "prefectureIds": [
+        "osaka"
+      ],
+      "craftIds": [
+        "osaka-charcoal-tombodama"
+      ],
+      "materialIds": [
+        "glass",
+        "silver"
+      ],
+      "makerId": "fujimura-tombodama",
+      "craftClassification": {
+        "label": "A flower-patterned glass bead by Fujimura, the Tennoji workshop that works glass over charcoal.",
+        "sourceIds": [
+          "fujimura-tombodama-workshop-about",
+          "fujimura-tombodama-osaka-council",
+          "fujimura-tombodama-silver-brooch-offer"
+        ]
+      },
+      "size": null,
+      "weightPerPieceGrams": null,
+      "findings": "The maker specifies a glass bead in a silver setting.",
+      "fastening": "The fitting can be worn as a brooch or as an obidome on an obi cord.",
+      "priceAmount": 44000,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-27",
+      "taxNote": "Tax-inclusive Japanese listing price on the checked date.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "fujimura-tombodama-official"
+      ],
+      "sourceIds": [
+        "fujimura-tombodama-silver-brooch-offer",
+        "fujimura-tombodama-workshop-about",
+        "fujimura-tombodama-osaka-council",
+        "fujimura-tombodama-osaka-bureau"
+      ],
+      "lastVerifiedAt": "2026-11-27",
+      "imageAssetIds": [],
+      "editorialSummary": "A floral pattern sits inside turquoise-colored glass on a silver setting. The dual-use fitting takes the same bead from a jacket lapel to an obi cord.",
+      "whoItMaySuit": "Someone who wants one glass accent to wear with both a jacket and an obi.",
+      "whatToCheck": [
+        "Check the maker’s photos for the actual shade, pattern and fitting.",
+        "If you plan to wear it as an obidome, ask the maker about the fitting’s dimensions."
+      ]
+    },
+    {
+      "id": "ayano-rikka-antique-rose-hoop-earrings",
+      "slug": "ayano-rikka-antique-rose-hoop-earrings",
+      "locale": "en",
+      "title": "Tsumami Kanzashi Ayano rikka antique rose hoop earrings",
+      "originalTitle": "rikka -六花-【フープピアス/フープイヤリング】",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings",
+        "clip-on-earrings"
+      ],
+      "prefectureIds": [
+        "chiba"
+      ],
+      "craftIds": [
+        "matsudo-edo-tsumami-zaiku"
+      ],
+      "materialIds": [
+        "silk",
+        "wood",
+        "plated-brass"
+      ],
+      "makerId": "tsumami-kanzashi-ayano",
+      "craftClassification": {
+        "label": "Matsudo’s Tsumami Kanzashi Ayano applies the fabric-folding techniques of Edo tsumami kanzashi to hoop earrings.",
+        "sourceIds": [
+          "ayano-rikka-antique-rose-hoop-earrings-offer",
+          "ayano-matsudo-workshop-about",
+          "ayano-matsudo-tsumami-chiba-bureau"
+        ]
+      },
+      "size": "Flower and hoop each approximately 25 mm in diameter.",
+      "weightPerPieceGrams": null,
+      "findings": "Silk and wood beads for the floral component; plated brass for both fittings.",
+      "fastening": "Select pierced or clip-on fittings on the maker’s listing.",
+      "priceAmount": 7480,
+      "priceCurrency": "JPY",
+      "priceCheckedAt": "2026-11-27",
+      "taxNote": "Japanese online price on the checked date; shipping is separate.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "tsumami-kanzashi-ayano-official"
+      ],
+      "sourceIds": [
+        "ayano-rikka-antique-rose-hoop-earrings-offer",
+        "ayano-matsudo-workshop-about",
+        "ayano-matsudo-tsumami-chiba-bureau",
+        "ayano-official-store-price-notice"
+      ],
+      "lastVerifiedAt": "2026-11-27",
+      "imageAssetIds": [],
+      "editorialSummary": "Each pointed silk petal gives this flower a defined edge. The slim hoop leaves room for the antique-rose flower to move below the ear.",
+      "whoItMaySuit": "Someone who wants an airy floral shape in fabric and a choice of fitting.",
+      "whatToCheck": [
+        "Choose Antique Rose and the fitting you wear. The maker announces a partial store price revision from December 1, 2026.",
+        "The maker advises keeping the silk flowers dry and protecting them from pressure."
+      ]
+    },
+    {
+      "id": "tomigin-chokkomon-round-silver-pendant",
+      "slug": "tomigin-chokkomon-round-silver-pendant",
+      "locale": "en",
+      "title": "Tomigin Chokkomon round silver pendant top",
+      "originalTitle": "【直弧紋】トップ丸",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "chiba"
+      ],
+      "craftIds": [
+        "tateyama-studio-metalwork"
+      ],
+      "materialIds": [
+        "silver-925"
+      ],
+      "makerId": "tomigin",
+      "craftClassification": {
+        "label": "A round silver pendant top from Tateyama’s Tomigin metalworking studio, which adapts the chokkomon pattern.",
+        "sourceIds": [
+          "tomigin-tateyama-workshop-home",
+          "tomigin-chokkomon-studio-series",
+          "tomigin-chokkomon-round-silver-pendant-offer"
+        ]
+      },
+      "size": "Pendant top approximately 21 mm in diameter.",
+      "weightPerPieceGrams": 4.5,
+      "findings": "Silver 925 pendant top. The official listing offers a silver 925 chain separately.",
+      "fastening": null,
+      "priceAmount": 15000,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-27",
+      "taxNote": "The maker lists the price including tax and shipping for the pendant top alone.",
+      "availability": "listed",
+      "merchantIds": [
+        "tomigin-official"
+      ],
+      "sourceIds": [
+        "tomigin-chokkomon-round-silver-pendant-offer",
+        "tomigin-tateyama-workshop-home",
+        "tomigin-chokkomon-studio-series",
+        "tomigin-tateyama-workshop-access",
+        "chokkomon-mirror-kunaicho"
+      ],
+      "lastVerifiedAt": "2026-11-27",
+      "imageAssetIds": [],
+      "editorialSummary": "A round piece of silver frames the geometry of chokkomon. Wear the pendant top on a chain you already have, or ask Tomigin about its separate chain.",
+      "whoItMaySuit": "Someone who wants a small patterned silver pendant top and can choose the chain separately.",
+      "whatToCheck": [
+        "The round listing is for the pendant top. Ask the maker for a chain if you need one.",
+        "To order, follow the email instructions on the specific item page."
       ]
     }
   ]
