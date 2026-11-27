@@ -12,15 +12,15 @@
     "scope": "Japan-wide craft jewelry selection media; no checkout,shipping,blog or Contact"
   },
   "handoff": {
-    "specification": "042-site-visual-review",
+    "specification": "043-osaka-chiba-craft-jewelry",
     "status": "ready",
-    "basedOnDocumentationCommit": "00ee4957d51e7d53a2eb9367687ab00dcdfcfe32",
+    "basedOnDocumentationCommit": "b6402048d28bfc0d07fc88a47b65fca291e4044c",
     "activeSiteImplementationTask": null,
     "nextAction": "Continue from the verified site release and the user’s next request. Review anatomy, fastening, framing and standalone-image borders before accepting new or revised illustrations.",
     "currentGitHeadCommand": "git rev-parse HEAD",
-    "verificationReport": "specs/042-site-visual-review/validation.md",
-    "validatedSourceCommit": "00ee4957d51e7d53a2eb9367687ab00dcdfcfe32",
-    "cleanRunnerVerification": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45923380473",
+    "verificationReport": "specs/043-osaka-chiba-craft-jewelry/validation.md",
+    "validatedSourceCommit": "b6402048d28bfc0d07fc88a47b65fca291e4044c",
+    "cleanRunnerVerification": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45926470043",
     "historicalVerification": {
       "appVersion": "0.18.0",
       "applicationCommit": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
@@ -30,16 +30,16 @@
     "siteGuide": "docs/SITE_NEW_CHAT_HANDOFF.md"
   },
   "production": {
-    "version": "0.29.2",
-    "applicationCommit": "00ee4957d51e7d53a2eb9367687ab00dcdfcfe32",
+    "version": "0.30.0",
+    "applicationCommit": "b6402048d28bfc0d07fc88a47b65fca291e4044c",
     "actions": {
-      "id": 45923380473,
-      "headSha": "00ee4957d51e7d53a2eb9367687ab00dcdfcfe32",
+      "id": 45926470043,
+      "headSha": "b6402048d28bfc0d07fc88a47b65fca291e4044c",
       "status": "completed",
       "conclusion": "success",
-      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45923380473",
-      "deploymentCompletedAt": "2026-11-27T01:36:00Z",
-      "observedAt": "2026-11-27T01:37:12.950Z"
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45926470043",
+      "deploymentCompletedAt": "2026-11-27T02:08:16Z",
+      "observedAt": "2026-11-27T02:10:03.668Z"
     },
     "urls": {
       "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
@@ -170,7 +170,17 @@
       "toano-kusatsu-omi-ruri-aobana-blue-drop-necklaceEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/toano-kusatsu-omi-ruri-aobana-blue-drop-necklace/",
       "farwest-utsunomiya-flat-silver-ring-size-9En": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/farwest-utsunomiya-flat-silver-ring-size-9/",
       "shimane": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/shimane/",
-      "shimaneEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/shimane/"
+      "shimaneEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/shimane/",
+      "osakaJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/osaka/",
+      "osakaEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/osaka/",
+      "chibaJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/chiba/",
+      "chibaEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/chiba/",
+      "fujimura-tombodama-silver-broochJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/fujimura-tombodama-silver-brooch/",
+      "fujimura-tombodama-silver-broochEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/fujimura-tombodama-silver-brooch/",
+      "ayano-rikka-antique-rose-hoop-earringsJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/ayano-rikka-antique-rose-hoop-earrings/",
+      "ayano-rikka-antique-rose-hoop-earringsEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/ayano-rikka-antique-rose-hoop-earrings/",
+      "tomigin-chokkomon-round-silver-pendantJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/tomigin-chokkomon-round-silver-pendant/",
+      "tomigin-chokkomon-round-silver-pendantEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/tomigin-chokkomon-round-silver-pendant/"
     },
     "report": "docs/deployment-results.json",
     "verification": "specs/042-site-visual-review/validation.md",
@@ -188,28 +198,28 @@
     }
   },
   "snapshot": {
-    "publishedProducts": 175,
-    "catalogProducts": 182,
+    "publishedProducts": 178,
+    "catalogProducts": 185,
     "draftProducts": 7,
     "regions": 47,
-    "activeCrafts": 104,
-    "catalogCrafts": 106,
-    "sources": 790,
+    "activeCrafts": 107,
+    "catalogCrafts": 109,
+    "sources": 803,
     "stores": 82,
     "productsWithStores": 126,
-    "onlineEvidence": 165,
+    "onlineEvidence": 168,
     "retailCatalogEvidence": 9,
-    "publicImages": 348,
-    "stylingImages": 173,
-    "soloImages": 175,
-    "newProducts": 0,
+    "publicImages": 354,
+    "stylingImages": 176,
+    "soloImages": 178,
+    "newProducts": 3,
     "newRegions": 0,
     "newImageFiles": 6,
-    "existingImageBytesRetained": 342,
+    "existingImageBytesRetained": 348,
     "kanagawaWorkshopLinked": 8,
     "kanagawaRegionalRetailer": 4,
     "profileLandingPages": 2,
-    "productsWithVerifiedListingSelections": 117,
+    "productsWithVerifiedListingSelections": 120,
     "productsInVideoShowcase": 11,
     "matchedPublicVideoPosts": 14,
     "videoShowcaseByPrefecture": {
@@ -226,12 +236,12 @@
       {
         "rank": 2,
         "prefectureId": "osaka",
-        "count": 5
+        "count": 6
       },
       {
         "rank": 3,
         "prefectureId": "chiba",
-        "count": 5
+        "count": 7
       },
       {
         "rank": 4,
@@ -275,11 +285,13 @@
     "newProductTypes": {},
     "newProductsWithStores": 0,
     "tokyoPublishedProducts": 10,
-    "revisedStylingImages": 6,
+    "revisedStylingImages": 0,
     "revisedSoloImages": 0,
     "archivedVideoOriginals": 3,
     "reservationInquiryEvidence": 1,
-    "retiredProductImages": 2
+    "retiredProductImages": 0,
+    "osakaPublishedProducts": 6,
+    "chibaPublishedProducts": 7
   },
   "currentImagePolicy": {
     "fictionalNationalitySetting": "Japanese",
@@ -290,20 +302,20 @@
     "cuteAndElegant": true,
     "clearSkin": true,
     "visibleCaption": "AIイメージ / AI image",
-    "stylingImages": 173,
-    "standaloneImages": 175,
+    "stylingImages": 176,
+    "standaloneImages": 178,
     "replacedIn023": 22,
     "retainedIn023": 36,
     "retiredLocalImages": 48,
     "manifest": "docs/image-generation-japanese-v23.json",
     "latestGenerationRecords": [
-      "docs/image-generation-styling-v42.json",
-      "docs/image-generation-solo-v41.json"
+      "docs/image-generation-styling-v43.json",
+      "docs/image-generation-solo-v43.json"
     ],
     "latestPortraitUpdate": {
-      "products": 6,
-      "release": "0.29.2",
-      "purpose": "Framing, earring contact and visual cleanup"
+      "products": 3,
+      "release": "0.30.0",
+      "purpose": "New Osaka and Chiba products; full framing and jewelry placement reviewed"
     },
     "purchaseNotice": "specs/031-product-image-disclosure/spec.md",
     "archivedVideoOriginals": 3,
@@ -351,7 +363,8 @@
     "videoPublication": "docs/video/tiktok-publication-registry.json",
     "profileVideoJewelry": "src/lib/video-jewelry.ts",
     "travelFinder": "src/config/travel-areas.ts",
-    "nationalPurchaseResearch": "docs/research/national-listings-2026-11-24.md"
+    "nationalPurchaseResearch": "docs/research/national-listings-2026-11-24.md",
+    "latestRegionalPurchaseResearch": "docs/research/osaka-chiba-craft-jewelry-2026-11-27.md"
   },
   "completedSpecifications": [
     "018-national-jewelry-expansion",
@@ -377,7 +390,8 @@
     "039-three-per-prefecture",
     "040-tokyo-craft-jewelry",
     "041-image-quality-corrections",
-    "042-site-visual-review"
+    "042-site-visual-review",
+    "043-osaka-chiba-craft-jewelry"
   ],
   "historicalOnlyScripts": [
     {
@@ -408,11 +422,11 @@
   ],
   "verification": {
     "ci": "docs/git-handoff-stage-ci-results.json",
-    "local": "specs/042-site-visual-review/validation.md",
+    "local": "specs/043-osaka-chiba-craft-jewelry/validation.md",
     "assets": "docs/git-handoff-stage-download-results.json",
     "documentation": "docs/git-handoff-stage-docs-results.json",
-    "summary": "specs/042-site-visual-review/validation.md",
-    "publicResponses": "docs/site-visual-v42-build-manifest.json"
+    "summary": "specs/043-osaka-chiba-craft-jewelry/validation.md",
+    "publicResponses": "docs/osaka-chiba-v43-build-manifest.json"
   },
-  "snapshotVersion": "0.29.2"
+  "snapshotVersion": "0.30.0"
 }

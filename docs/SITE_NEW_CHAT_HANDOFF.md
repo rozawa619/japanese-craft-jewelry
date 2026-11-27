@@ -1,6 +1,6 @@
 # SORA / Japanese Craft Jewelry サイト構築の引継ぎ
 
-**最終更新 2026-11-24（JST）**
+**最終更新 2026-11-27（JST）**
 
 日本全国の地域工芸アクセサリーを日英で紹介し、将来のアフィリエイト収益につなげるサイトです。サイト構築にはこの文書を使います。TikTok・Instagramの投稿文やGoogle Flowの制作は、[動画専用引継ぎ](video/NEW_CHAT_HANDOFF.md)を使います。
 
@@ -22,12 +22,12 @@
 
 | 項目 | 2026-11-27（JST）確認時点 |
 | --- | --- |
-| アプリ | **v0.29.2**、アプリSHA `00ee4957d51e7d53a2eb9367687ab00dcdfcfe32` |
-| 配信 | GitHub Pages。2026-11-27 10:36 JSTに配信完了。 [GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45923380473) |
-| 照合 | [042の検証](../specs/042-site-visual-review/validation.md)・[公開記録](deployment-results.json) |
-| 商品・地域 | 登録182点、公開175点、下書き7点。47都道府県を掲載。東京10点、島根2点、Top10は各5点以上 |
-| 工芸・購入先 | 公開に紐づく技法104件（全106件）、出典790件。82店舗、店舗案内付き126商品。購入根拠は通販165点、予約問い合わせ1点、店舗とカタログ9点 |
-| 画像 | サイト表示用AI画像348枚（着用173・単体175）。v0.29.2で着用6枚を修正。京都の動画原本3枚は既存URLで参照可能 |
+| アプリ | **v0.30.0**、アプリSHA `b6402048d28bfc0d07fc88a47b65fca291e4044c` |
+| 配信 | GitHub Pages。2026-11-27 11:08 JSTに配信完了。 [GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45926470043) |
+| 照合 | [043の検証](../specs/043-osaka-chiba-craft-jewelry/validation.md)・[公開記録](deployment-results.json) |
+| 商品・地域 | 登録185点、公開178点、下書き7点。47都道府県を掲載。東京10点、大阪6点、千葉7点、島根2点 |
+| 工芸・購入先 | 公開に紐づく技法107件（全109件）、出典803件。82店舗、店舗案内付き126商品。購入根拠は通販168点、予約問い合わせ1点、店舗とカタログ9点 |
+| 画像 | サイト表示用AI画像354枚（着用176・単体178）。大阪と千葉の3点に計6枚を追加。京都の動画原本3枚は既存URLで参照可能 |
 | 広告 | 実アフィリエイトは未申請で通常の公式リンクを使用。AdSenseはオフ。 [提携準備](affiliate-readiness.md)・[運営上の残条件](remaining-task-audit-v17.md) |
 
 Astro 7・TypeScript・Zodを使う日英の静的サイトです。日本地図から産地を選び、商品一覧の絞り込み、工芸・素材のページ、商品詳細へ進めます。商品詳細には価格、公式通販または取扱店の案内、出典を掲載します。店舗のGoogle Mapsは利用者の許可に応じて表示します。サイトの運営範囲は紹介と外部の販売先への案内です。 [技術構成](architecture.md)
@@ -52,6 +52,7 @@ Astro 7・TypeScript・Zodを使う日英の静的サイトです。日本地図
 | [040](../specs/040-tokyo-craft-jewelry/spec.md) | 東京の工芸5点を追加して東京10点・全国176点。旅先検索に江戸川・松江を追加 |
 | [041](../specs/041-image-quality-corrections/spec.md) | 手指、イヤリングの留め位置、顔の見切れ、単体画像の余分なチェーンを計6枚で修正 |
 | [042](../specs/042-site-visual-review/spec.md) | 着用6枚とスマホの見出しを修正。「光衣 L」を予約案内へ変更し、旧販売ページが404のN-15を下書きに戻した |
+| [043](../specs/043-osaka-chiba-craft-jewelry/spec.md) | 大阪の蜻蛉玉ブローチ、千葉のつまみ細工と銀のペンダントトップを追加 |
 
 ### 編集・検証の正本
 

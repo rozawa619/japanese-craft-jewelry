@@ -9,15 +9,15 @@
 | サイト | Japanese Craft Jewelry。全国の工芸ジュエリーを選ぶJA/EN紹介メディア。運営者SORA |
 | 公開URL | [日本語](https://rozawa619.github.io/japanese-craft-jewelry/ja/)・[English](https://rozawa619.github.io/japanese-craft-jewelry/en/) |
 | リポジトリ | [rozawa619/japanese-craft-jewelry](https://github.com/rozawa619/japanese-craft-jewelry)・main |
-| 最新公開アプリ | **v0.29.2**、アプリSHA `00ee4957d51e7d53a2eb9367687ab00dcdfcfe32`。2026-11-27 10:36 JSTに配信完了。 [公開記録](deployment-results.json) |
+| 最新公開アプリ | **v0.30.0**、アプリSHA `b6402048d28bfc0d07fc88a47b65fca291e4044c`。2026-11-27 11:08 JSTに配信完了。 [公開記録](deployment-results.json) |
 | Gitからの再開方法 | [仕様024](../specs/024-git-ai-handoff/spec.md)が基本手順。[サイト専用の引継ぎ書](SITE_NEW_CHAT_HANDOFF.md)に現行機能と再開順を記録 |
-| 内容 | 公開175/登録182商品。47都道府県を掲載。東京10点、島根2点。公開に紐づく技法104/全106件、出典790件、82店舗。店舗案内付き126商品 |
-| 画像 | AI画像348枚（着用173・商品単体175）。人物は架空の日本人成人女性 |
+| 内容 | 公開178/登録185商品。47都道府県を掲載。東京10点、大阪6点、千葉7点、島根2点。公開に紐づく技法107/全109件、出典803件、82店舗。店舗案内付き126商品 |
+| 画像 | AI画像354枚（着用176・商品単体178）。人物は架空の日本人成人女性 |
 | AI画像の確認案内 | v0.22.1で日英の商品詳細と着用AI画像付きのカードに表示。実物の色・模様・形・金具は販売元の商品情報へ案内する。 [仕様031](../specs/031-product-image-disclosure/spec.md) |
 | 販売元の選択名と販売単位 | v0.22.2で10商品の日英購入導線に選択名・カタログ掲載名を表示。凛然 星華 琥珀の国内・海外価格に1組の販売単位を表示。 [仕様032](../specs/032-purchase-selections/spec.md) |
 | 動画で紹介した商品 | v0.23.1の日英 `/sora/` で、公開14投稿に対応する京都4・神奈川7商品へ案内。神奈川7商品の購入案内を公式情報と再照合。 [仕様034](../specs/034-kyoto-video-jewelry/spec.md) |
 | 全国掲載と旅先検索 | v0.24.0から47都道府県・88商品。注文受付を確認した19県の19商品を追加し、日英で地方・県・訪問エリアから商品に案内。v0.24.1でスマートフォンの初期画面に検索への通常リンクを追加し、選択後の商品プレビューのリンクの高さを44px以上に修正。 [仕様035](../specs/035-national-travel-discovery/spec.md) · [一次情報](research/national-listings-2026-11-24.md) |
-| 直近の産地別商品追加 | 東京に江戸切子、東京銀器、東京七宝、江戸刺繍、江戸漆器を追加。堀口切子の予約制工房がある江戸川・松江を旅先検索に追加。 [仕様040](../specs/040-tokyo-craft-jewelry/spec.md) · [一次情報](research/tokyo-craft-jewelry-2026-11-24.md) |
+| 直近の産地別商品追加 | 大阪に藤村トンボ玉工房の帯留め兼用ブローチ、千葉に松戸のつまみ細工と館山の銀のペンダントトップを追加しました。 [仕様043](../specs/043-osaka-chiba-craft-jewelry/spec.md) · [一次情報](../docs/research/osaka-chiba-craft-jewelry-2026-11-27.md) |
 | 完了した023の変更 | 22人物を新生成・採用・公開、既存36人物と単体60を保持。新22枚は25〜30歳、かわいい系11/綺麗な系統11 |
 | 退役画像 | 48画像を配信対象から外した。京都の動画原本3枚を既存URLで参照できる |
 | 収益化 | AdSense off、実提携未申請、商品リンクは通常URL。広告resolverとPrivacyの土台は実装済み |
@@ -47,6 +47,8 @@
 - 店舗Mapsは初回明示許可後30日自動表示、オフで全停止。未選択/拒否/期限切れはGoogle通信0。Google帰属・外部fallback・最小Storageを保ちます。地図設定maps-v17と広告Privacy v14/広告CMPは別です。
 
 ## 公開版の検証記録
+
+v0.30.0は2026-11-27 11:08 JSTに公開しました。大阪と千葉の日英地域ページ、3商品の表示・絞り込み・購入案内を確認しました。 [仕様043の検証](../specs/043-osaka-chiba-craft-jewelry/validation.md)
 
 v0.29.2は2026-11-27 10:36 JSTに公開しました。着用6枚、狭い画面の見出し、「光衣 L」の予約案内、島根の商品案内を確認しました。 [仕様042の検証](../specs/042-site-visual-review/validation.md)
 

@@ -6,7 +6,9 @@
 
 ### 最近のサイト変更
 
-公開版は **v0.29.2** です。トップの群青パンジーや京都の孔雀柄イヤリングを含む着用イメージ6枚を修正しました。スマートフォンの見出しと購入案内も整え、47都道府県175点を掲載しています。2026-11-27 10:36 JSTに配信が完了しました。 [仕様042](specs/042-site-visual-review/spec.md) · [公開検証](specs/042-site-visual-review/validation.md)
+公開版は **v0.30.0** です。大阪に藤村トンボ玉工房の帯留め兼用ブローチ、千葉に松戸のつまみ細工と館山の銀のペンダントトップを追加しました。大阪6点、千葉7点、全国47都道府県178点を掲載しています。 2026-11-27 11:08 JSTに配信が完了しました。 [仕様043](specs/043-osaka-chiba-craft-jewelry/spec.md) · [公開検証](specs/043-osaka-chiba-craft-jewelry/validation.md)
+
+v0.29.2では、トップの群青パンジーや京都の孔雀柄イヤリングを含む着用イメージ6枚を修正しました。スマートフォンの見出しと購入案内も整え、当時は47都道府県175点を掲載していました。2026-11-27 10:36 JSTに配信が完了しました。 [仕様042](specs/042-site-visual-review/spec.md) · [公開検証](specs/042-site-visual-review/validation.md)
 
 v0.29.1では公開画像の着用5枚と単体1枚の手元・留め位置・構図を修正しました。 [仕様041](specs/041-image-quality-corrections/spec.md)
 
@@ -41,7 +43,7 @@ Instagramリールの紹介文は、[キャプションテンプレート](docs/
 2. [handoff-status.json](docs/handoff-status.json)：現在の状態、公開app、完了済み作業、正本、外部情報が必要な残条件。
 3. [現在状態](docs/handoff.md)と[編集ガイド](docs/editing-guide.md)：今回触るファイルを特定。
 4. [セットアップ](docs/setup.md)と[検証ガイド](docs/verification-guide.md)：起動と変更に応じた検査。
-5. 該当機能の仕様を読む。直近の東京5商品追加は[040](specs/040-tokyo-craft-jewelry/spec.md)、全国掲載と旅先検索の基盤は[035](specs/035-national-travel-discovery/spec.md)、購入導線は[028](specs/028-purchase-routes/spec.md)、Git引継ぎの基盤は[024](specs/024-git-ai-handoff/spec.md)。
+5. 該当機能の仕様を読む。直近の大阪・千葉の追加は[043](specs/043-osaka-chiba-craft-jewelry/spec.md)、東京5商品の追加は[040](specs/040-tokyo-craft-jewelry/spec.md)、全国掲載と旅先検索の基盤は[035](specs/035-national-travel-discovery/spec.md)、購入導線は[028](specs/028-purchase-routes/spec.md)、Git引継ぎの基盤は[024](specs/024-git-ai-handoff/spec.md)。
 
 全世代の検証JSONを最初から読む必要はありません。GitのHEADは文書更新を含み、実際に公開されたappのSHAとは異なる場合があります。[deployment-results.json](docs/deployment-results.json)が公開の正本です。
 
@@ -63,7 +65,7 @@ pnpm dev
 
 ## 画像原本・過去の納品物
 
-[画像原本と配布資料](docs/handoff-assets.md)からGitHub上のZIPを取得できます。[配布一覧](docs/handoff-assets.json)にURL・容量・SHA256を記録し、`node scripts/fetch-handoff-asset.mjs --list`で一覧を表示できます。原本が必要な画像編集時だけダウンロードしてください。公開中のAI画像348枚（着用173＋商品単体175）は`public/images/`にあります。
+[画像原本と配布資料](docs/handoff-assets.md)からGitHub上のZIPを取得できます。[配布一覧](docs/handoff-assets.json)にURL・容量・SHA256を記録し、`node scripts/fetch-handoff-asset.mjs --list`で一覧を表示できます。原本が必要な画像編集時だけダウンロードしてください。公開中のAI画像354枚（着用176＋商品単体178）は`public/images/`にあります。
 
 023の`apply-japanese-model-styling.mjs`は完了済み22枚の移行専用、`check-japanese-model-preservation.mjs`は旧画像を残した当時のcheckout専用です。fresh cloneの起動や通常編集の必須手順にはしません。新しい画像変更は新しい仕様/manifestで記録し、023の固定集合・過去の証拠を書き換えて通しません。
 
