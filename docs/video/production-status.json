@@ -611,7 +611,7 @@
         "arcos-cosmic-spiral-pendant"
       ],
       "status": "generated_unreviewed",
-      "summary": "Received a clip with an opening consistent with Chiba episode 4 for Atelier ARCOS’s Cosmic Spiral pendant. A bilingual TikTok caption draft is saved.",
+      "summary": "Received a clip with an opening consistent with Chiba episode 4 for Atelier ARCOS’s Cosmic Spiral pendant. A bilingual TikTok caption draft is saved. The Instagram caption draft is saved.",
       "femaleImageAssetId": "ai-arcos-cosmic-spiral-pendant-styling-v9",
       "femaleImagePath": "public/images/arcos-cosmic-spiral-pendant-styling-v9.webp",
       "femaleImageDimensions": "1536x1024",
@@ -623,7 +623,11 @@
       "verification": "The site release v0.30.0 and current main contain the same original WebP (Git blob e68881b1b9ac97027e48bc313ed15a7c98bfb4fc). Compared the product ID, portrait asset ID and image path with the production ledger, TikTok publication registry and Kyoto plan. Compared prior portrait references, including the Tokyo leaf and Kyoto sakura pendants. No duplicate found in the available records. The current TikTok grid remains unverified. On 2026-11-27 JST, the submitted MP4’s indexed audio transcript began with the opening of the prompt and reported “ほら、ガラスの中に、綺麗かな?”. Associated the attachment with Chiba episode 4 by this dialogue cue. The TikTok draft uses the verified opening phrase and the product description. The supplied video frames, exact speech, pronunciation, possible extra dialogue, lip sync and publication were unverified in this check.",
       "nextAction": "Review the supplied clip’s frames at 0, 0.5 and 1 second and later for framing, skin and pendant continuity. Verify the exact Japanese line, any extra speech and lip sync against prompt v1, then record a matching publication URL if verified.",
       "statusReason": "The supplied clip’s indexed transcript contains the matching opening. Video frames and audio playback remain to be checked.",
-      "captionDraft": "ほら、ガラスの中に青い渦。🌀\n\n千葉・鴨川で待ち合わせ。\n深い青と淡い水色が重なる、丸いガラスのペンダント。\n\nガラス工房アルコス｜宇宙神秘のスパイラル\n青の色合いと渦模様、どっちに先に目がいった？\n\nMeet me in Kamogawa, Chiba. A spiral of deep blue and aqua inside a glass pendant, inspired by Atelier ARCOS’s Cosmic Spiral.\nDid the color or the swirl catch your eye first?\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #千葉 #鴨川 #ガラスアクセサリー #JapaneseJewelry"
+      "captionDraft": "ほら、ガラスの中に青い渦。🌀\n\n千葉・鴨川で待ち合わせ。\n深い青と淡い水色が重なる、丸いガラスのペンダント。\n\nガラス工房アルコス｜宇宙神秘のスパイラル\n青の色合いと渦模様、どっちに先に目がいった？\n\nMeet me in Kamogawa, Chiba. A spiral of deep blue and aqua inside a glass pendant, inspired by Atelier ARCOS’s Cosmic Spiral.\nDid the color or the swirl catch your eye first?\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #千葉 #鴨川 #ガラスアクセサリー #JapaneseJewelry",
+      "instagramCaption": {
+        "status": "draft",
+        "postUrl": null
+      }
     }
   ],
   "observedLinks": [
@@ -886,6 +890,10 @@
     {
       "date": "2026-11-27",
       "summary": "Associated the supplied Chiba episode 4 attachment using its indexed Japanese opening and saved a bilingual TikTok caption draft. Direct review of the supplied video frames and speech remains pending."
+    },
+    {
+      "date": "2026-11-27",
+      "summary": "Saved a bilingual Instagram caption draft for Chiba episode 4."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",

@@ -60,3 +60,21 @@ AI-generated styling video.
 
 #SORA旅先で待ち合わせ #千葉 #鴨川 #ガラスアクセサリー #JapaneseJewelry
 ```
+
+## Instagramリール紹介文
+
+2026-11-27（JST）。投稿用下書き。
+
+```text
+Meet me in Kamogawa, Chiba 🌀
+Deep blue and aqua swirl inside the glass like a tiny universe.
+Inspired by Atelier ARCOS’s Cosmic Spiral glass pendant.
+
+千葉・鴨川で待ち合わせ。
+胸元に、小さな宇宙。透明なガラスの中で、深い青から水色へとらせんが広がります。
+ガラス工房アルコスの「宇宙神秘のスパイラル」をモチーフにしました。
+
+AIで描いた旅のワンシーン｜AI-generated video
+
+#SORA旅先で待ち合わせ #千葉 #ガラスペンダント #Chiba #JapaneseJewelry
+```
