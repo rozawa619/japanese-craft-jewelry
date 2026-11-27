@@ -1,6 +1,6 @@
 # SORA 千葉編 第3話｜Sghr タイタイ ガラスのピアス
 
-2026-11-27（JST）。九十九里のSghrによる、縦に細く伸びる透明なガラスのピアス。サイトの着用原本では、紺の襟付きシャツと横分けのボブに、画面右のピアスが一つ見える。制作状況は `prompt_ready`。
+2026-11-27（JST）。九十九里のSghrによる、縦に細く伸びる透明なガラスのピアス。サイトの着用原本では、紺の襟付きシャツと横分けのボブに、画面右のピアスが一つ見える。指示文準備時点の制作状況は `prompt_ready`。添付動画の確認結果は後述。
 
 - 商品IDは `sghr-tie-tie-glass-earrings`。女性画像IDは `ai-sghr-tie-tie-glass-earrings-styling-v13`。原本は `public/images/sghr-tie-tie-glass-earrings-styling-v13.webp`（1536×1024）。
 - 公開版 v0.30.0 の配信コミット `b6402048d28bfc0d07fc88a47b65fca291e4044c` と確認時のmain `bda904ba471295fa30024bbf832891af9d24bf00` で同一のWebP。Git blobは `6d0e99c685160e624c24b9d012bd5ea4afdb358c`。 [公開記録](../../deployment-results.json)
@@ -35,3 +35,26 @@ No additional dialogue, camera movement, mirroring, added jewelry, captions, log
 - 0秒・0.5秒・1秒で、両目・口元と画面右のピアス全体が余白付きで収まるか確認。
 - 発話中と後半に、ピアスが同じ位置に一つ見え、透明なリブ、細い輪郭、金具が原本と一致するか確認。頬・口元・あごのほくろや濃い点も確認。
 - 発音・追加のセリフ・口の動きを確認し、検品と公開照合の状態を台帳に残す。
+
+## 添付動画の確認（2026-11-27 JST）
+
+- 512×910、30fps、10秒。0秒・0.5秒・1秒の各フレームで、両目、口元、画面右のピアスの金具からガラスの先端までが余白付きで収まる。
+- 2秒・3.5秒・5秒・7秒・9.5秒の確認フレームでは、同じ側に縦に細く伸びる透明なピアスが一つ見える。後半の頬・口元まわり・あごに目立つほくろや単独の濃い点は見当たらなかった。
+- 全編と音声、Flowの実際のモード・モデル、SNS公開は未確認。
+
+## Instagramリール紹介文
+
+2026-11-27（JST）作成。下書き。
+
+```text
+Meet me in Kujukuri, Chiba ✨
+Light catches the fine ridges of a slender glass drop. Inspired by Sghr Sugahara’s Tie-tie earrings.
+
+千葉・九十九里で待ち合わせ。
+紺のシャツに、すっと伸びた透明なガラスが映える。
+Sghr（スガハラ）のガラスピアス「タイタイ」をモチーフにしました。
+
+AIで描いた旅のワンシーン｜AI-generated video
+
+#SORA旅先で待ち合わせ #千葉 #ガラスピアス #Chiba #JapaneseJewelry
+```
