@@ -63,3 +63,20 @@ AI-generated styling video.
 
 #SORA旅先で待ち合わせ #千葉 #館山 #彫金 #JapaneseJewelry
 ```
+
+## Instagramリール紹介文
+
+2026-11-27（JST）作成。下書き。
+
+```text
+Meet me in Tateyama, Chiba ✨
+Lines and arcs meet on a round silver pendant. Inspired by the Chokkomon pendant top from Tomigin Metalworking Studio.
+
+千葉・館山で待ち合わせ。
+深いえんじ色のシャツに、直線と弧が交わる丸い銀のペンダント。
+彫金工房「冨銀」の「直弧紋 ペンダントトップ 丸」をモチーフにしました。
+
+AIで描いた旅のワンシーン｜AI-generated video
+
+#SORA旅先で待ち合わせ #千葉 #彫金 #Chiba #JapaneseJewelry
+```
