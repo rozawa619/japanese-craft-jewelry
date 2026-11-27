@@ -43,6 +43,8 @@ No additional dialogue, mirroring, extra jewelry, on-screen text, logos or music
 - 512×910、30fps、10秒。0秒・0.5秒・1秒の各フレームで、両目、口元、画面右のフープと花全体が余白付きで収まる。
 - 2秒・3.5秒・5秒・7秒・9.5秒の確認フレームでは、画面右に細いフープとくすみローズの花が一つ見える。後半の頬・口元まわり・あごに目立つほくろや単独の濃い点は見当たらなかった。
 - 全編と音声、Flowの実際のモード・モデル、SNS公開は未確認。
+- TikTok用の照合では、0秒から約9.97秒まで計14点を目視し、1〜4秒付近で口が動くことを確認。音声トラックはあるが、セリフの文言・発音・追加発話・口の動きとの同期は未確認。紹介文は冒頭に映る耳元の花から始めた。
+
 
 ## Instagramリール紹介文
 
@@ -59,4 +61,27 @@ A dusty-rose silk flower on a slender hoop. Inspired by Tsumami Kanzashi Ayano�
 AIで描いた旅のワンシーン｜AI-generated video
 
 #SORA旅先で待ち合わせ #千葉 #つまみ細工 #Chiba #JapaneseJewelry
+```
+
+## TikTok紹介文
+
+2026-11-27（JST）下書き。TikTok投稿URLは未確認。
+
+```text
+耳元に、小さな花をひとつ。🌸
+
+千葉・松戸で待ち合わせ。
+淡いベージュのブラウスに、くすみローズの耳飾り。
+細いフープの下には、絹をつまんで形づくった花びら。
+
+つまみかんざし彩野｜rikka -六花-（アンティークローズ）
+あなたなら、白シャツと黒いワンピース、どっちに合わせる？
+
+Meet me in Matsudo, Chiba. A dusty-rose silk flower on a delicate hoop, inspired by Tsumami Kanzashi Ayano’s rikka earrings.
+Would you wear them with a white shirt or a black dress?
+
+※映像はAIで制作した着用イメージです。
+AI-generated styling video.
+
+#SORA旅先で待ち合わせ #千葉 #松戸 #つまみ細工 #JapaneseJewelry
 ```

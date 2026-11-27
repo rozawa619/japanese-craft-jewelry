@@ -536,7 +536,7 @@
         "ayano-rikka-antique-rose-hoop-earrings"
       ],
       "status": "generated_unreviewed",
-      "summary": "A 10-second take for Chiba episode 1 was supplied. Both eyes, the mouth and the complete rose flower hoop fit in the sampled opening. The Instagram caption draft is saved.",
+      "summary": "A 10-second take for Chiba episode 1 was supplied. Both eyes, the mouth and the complete rose flower hoop fit in the sampled opening. The Instagram and TikTok caption drafts are saved.",
       "femaleImageAssetId": "ai-styling-jp-ayano-rikka-antique-rose-hoop-earrings-v43",
       "femaleImagePath": "public/images/styling-jp-ayano-rikka-antique-rose-hoop-earrings-v43.webp",
       "femaleImageDimensions": "1536x1024",
@@ -545,13 +545,14 @@
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The 0.30.0 GitHub Pages release lists the live product URL. The original WebP is byte-identical in main 6aaddf41108e8f4188ba6985c60578e8c9ecc95e and deployed source b6402048d28bfc0d07fc88a47b65fca291e4044c (Git blob a6425c3fabe35c63e3a16d7d2f149209cbe4c4da). Product ID, image asset ID and path were checked against the production ledger, TikTok registry and Kyoto series plan. Compared 30 available prior styling images, including both versions of replaced Kyoto portraits. No reuse found in the records. TikTok's new profile is recorded; the current post grid remains unverified. On 2026-11-27 JST, compared the site portrait with the supplied 512×910, 30 fps, 10-second clip. Both eyes, the full mouth and the complete screen-right hoop and flower fit with margins at 0, 0.5 and 1 second. At 2, 3.5, 5, 7 and 9.5 seconds, one hoop with a dusty-rose flower is visible on the same side. No prominent mole or isolated dark point was apparent on the cheeks, the skin around the mouth or the chin in the later samples. Full-take playback, audio, actual Flow mode and model, and SNS publication remain unverified.",
-      "nextAction": "Review the full take, Japanese speech and lip sync. Record the Instagram Reel URL after verifying publication.",
+      "verification": "The 0.30.0 GitHub Pages release lists the live product URL. The original WebP is byte-identical in main 6aaddf41108e8f4188ba6985c60578e8c9ecc95e and deployed source b6402048d28bfc0d07fc88a47b65fca291e4044c (Git blob a6425c3fabe35c63e3a16d7d2f149209cbe4c4da). Product ID, image asset ID and path were checked against the production ledger, TikTok registry and Kyoto series plan. Compared 30 available prior styling images, including both versions of replaced Kyoto portraits. No reuse found in the records. TikTok's new profile is recorded; the current post grid remains unverified. On 2026-11-27 JST, compared the site portrait with the supplied 512×910, 30 fps, 10-second clip. Both eyes, the full mouth and the complete screen-right hoop and flower fit with margins at 0, 0.5 and 1 second. At 2, 3.5, 5, 7 and 9.5 seconds, one hoop with a dusty-rose flower is visible on the same side. No prominent mole or isolated dark point was apparent on the cheeks, the skin around the mouth or the chin in the later samples. Full-take playback, audio, actual Flow mode and model, and SNS publication remain unverified. For the TikTok draft, reviewed 14 frames from 0 through about 9.97 seconds, including visible mouth movement around 1–4 seconds. The file contains an audio track. Exact words, pronunciation, extra speech and lip sync were unverified. The caption opens with the flower shown at the start.",
+      "nextAction": "Review the full take, exact Japanese speech, pronunciation, extra lines and lip sync. Record the Instagram Reel or TikTok URL after matching the actual post.",
       "statusReason": "The supplied take passes the sampled opening framing, visible earring position and skin checks. Full-take and audio review are pending.",
       "instagramCaption": {
         "status": "draft",
         "postUrl": null
-      }
+      },
+      "captionDraft": "耳元に、小さな花をひとつ。🌸\n\n千葉・松戸で待ち合わせ。\n淡いベージュのブラウスに、くすみローズの耳飾り。\n細いフープの下には、絹をつまんで形づくった花びら。\n\nつまみかんざし彩野｜rikka -六花-（アンティークローズ）\nあなたなら、白シャツと黒いワンピース、どっちに合わせる？\n\nMeet me in Matsudo, Chiba. A dusty-rose silk flower on a delicate hoop, inspired by Tsumami Kanzashi Ayano’s rikka earrings.\nWould you wear them with a white shirt or a black dress?\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #千葉 #松戸 #つまみ細工 #JapaneseJewelry"
     },
     {
       "id": "chiba-tomigin-chokkomon-round-silver-pendant",
@@ -855,6 +856,10 @@
     {
       "date": "2026-11-27",
       "summary": "Prepared Chiba episode 4 for ARCOS’s Cosmic Spiral glass pendant. Checked the released original, duplicate records and the shifted portrait composition, then saved Flow prompt v1."
+    },
+    {
+      "date": "2026-11-27",
+      "summary": "Matched the supplied Chiba episode 1 clip to the Ayano rikka original and saved a bilingual TikTok caption draft alongside the Instagram draft."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
