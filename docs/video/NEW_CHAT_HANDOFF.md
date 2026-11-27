@@ -1,6 +1,6 @@
 # SORA｜旅先で待ち合わせ — 新チャットへの完全引継ぎ入口
 
-**最終更新 2026-11-25（JST）｜アクセサリー副業プロジェクト**
+**最終更新 2026-11-27（JST）｜アクセサリー副業プロジェクト**
 
 新しいチャットや別のAIは、このページを最初に開き、**毎回GitHubの最新 `main` を読む**。進行中の回は[制作台帳](production-status.json)の `currentEpisodeId`、使用する指示文はその回の `currentPromptVersion` で確認する。添付やTikTokを閲覧できない場合は該当項目を未確認として扱う。 [コピペ用の引継ぎ文](#6-新しいチャットや別のaiに渡す引継ぎ文)
 
@@ -17,7 +17,7 @@
 - **サイト側のAI向け規則**：https://github.com/rozawa619/japanese-craft-jewelry/blob/main/AGENTS.md
 - **日本語公開サイト**：https://rozawa619.github.io/japanese-craft-jewelry/ja/
 - **英語公開サイト**：https://rozawa619.github.io/japanese-craft-jewelry/en/
-- **TikTokアカウント**：https://www.tiktok.com/@soracraftdiary
+- **現在のTikTok公開先**は [@ayanosesora](https://www.tiktok.com/@ayanosesora)。投稿ごとの照合状況は[TikTok公開台帳](tiktok-publication-registry.json)を参照。
 - **京都府の公開ページ**。 [日本語サイト](https://rozawa619.github.io/japanese-craft-jewelry/ja/places/kyoto/)
 
 ### 今後の全動画に共通する基準
@@ -63,7 +63,7 @@
 - 神奈川県IDの公開商品8点のうち、**7商品はTikTok公開を確認**。残るDahliacyan オレンジムーンストーンの透かし彫りピアスは動画のサンプル確認済みで、投稿URLが未確認。重複防止のため8点とも新作候補から外す。 [神奈川の確認記録](kanagawa-coverage-audit-2026-11-22.md)
 - 補足：箱根丸山物産の寄木の耳飾り **4点**はサイトで販売店関連として掲載しているが、商品データの県IDは空欄。製造地/作り手を神奈川と断定しない。
 - 丸山の「寄木イヤリング C」と「寄木ピアス C」は **同じ女性画像**。「イヤリング D」と「ピアス D」も **同じ女性画像**。とくに D はFlow指示文だけ準備済みで、実動画・TikTok投稿を確認していない。
-- **TikTokアカウントは @soracraftdiary**。2026-11-22に公開プロフィールの動画10本を確認し、キャプションとサムネイルを7商品に照合。以前共有された動画は浜松屋の寄木ペンダントを紹介する芦ノ湖のカフェ編。公開動画の全編・音声と、箱根60秒総集編の完成・公開は未確認。 [TikTok公開台帳](tiktok-publication-registry.json)
+- 2026-11-22は当時の公開プロフィール（@soracraftdiary）で動画10本を確認し、キャプションとサムネイルを7商品に照合。以前共有された動画は浜松屋の寄木ペンダントを紹介する芦ノ湖のカフェ編。公開動画の全編・音声と、箱根60秒総集編の完成・公開は未確認。 [TikTok公開台帳](tiktok-publication-registry.json)
 - 以前ユーザーがTikTok/Instagram用に10秒動画を多数アップロードして投稿文を依頼。**チャット添付のMP4が次チャットへ移るとは限らない**。GitHubの記録はクリップの存在と検査内容を伝えるが、MP4本体や実投稿の完全コピーではない。未確認を「完了」にしない。
 - 制作・出版の状態（source of truth）は docs/video/production-status.json の各エピソードと docs/video/tiktok-publication-registry.json。
 

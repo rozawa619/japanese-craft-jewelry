@@ -29,7 +29,7 @@
 
 ## TikTok公開動画との照合・重複防止（2026-11-22 追加）
 
-- 投稿先は **[SORA TikTok](https://www.tiktok.com/@soracraftdiary)**。投稿別の証拠と照合結果の正本は [`tiktok-publication-registry.json`](tiktok-publication-registry.json)。**このファイルを制作台帳とサイト商品マスタと一緒に、毎回の新作提案前に読む**。
+- 投稿先は **[SORA TikTok](https://www.tiktok.com/@ayanosesora)**。投稿別の証拠と照合結果の正本は [`tiktok-publication-registry.json`](tiktok-publication-registry.json)。**このファイルを制作台帳とサイト商品マスタと一緒に、毎回の新作提案前に読む**。
 - **重複判定キーを2つ使用**：商品ID (`catalog.json` の `id`) と、サイト女性の元画像 `editorial-images.json` の `assetId` / `path`。女性とアクセサリーを同時に重複させないだけでなく、同一女性の別商品バリエーションにも注意。ユーザーが明示的に別案・再制作を希望しない限り、一度使った／予約済みのサイト女性や商品を新作の候補にしない。
 - **神奈川の既存8点を除外**。公開7商品と制作済み・投稿未確認の1商品、および各商品に紐づく女性画像を新作の重複照合に使う。 [TikTok公開台帳](tiktok-publication-registry.json)
 - **販売店の寄木4点**：箱根丸山物産の `maruyama-clip-c/pierced-c` は同じ女性画像、`maruyama-clip-d/pierced-d` も同じ女性画像。片方を使ったらもう片方の女性として新規提案しない。県IDが空欄なので神奈川製の商品とは断定しない。

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastUpdated": "2026-11-26",
+  "lastUpdated": "2026-11-27",
   "project": "SORA｜旅先で待ち合わせ",
   "scope": "TikTok / Google Flow AI POV date clips and Instagram Reels captions; site content source is separate",
   "specPath": "docs/video/spec.md",
@@ -754,6 +754,10 @@
     {
       "date": "2026-11-26",
       "summary": "Confirmed the sampled opening and same-side blue earring in the supplied Tokyo episode 10 clip. Logged the detected follow-up line and saved the Japanese and English TikTok caption draft."
+    },
+    {
+      "date": "2026-11-27",
+      "summary": "Confirmed the profile header of @ayanosesora as the current TikTok publication destination reported by the project owner. Post links and matching episodes are pending verification in the publication registry."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -773,7 +777,8 @@
     "verifiedPostLinks": 10,
     "duplicatePolicy": "Exclude all eight Kanagawa products and their corresponding site image IDs from new production. Seven products appear in the visible TikTok postings. The orange moonstone earrings have prior clip evidence. Continue to check shared image IDs and the reserved Maruyama D episode.",
     "note": "Ten visible clips matched by caption and thumbnail. Full playback and audio were unverified. The orange moonstone earrings and 60-second Hakone compilation have no verified TikTok URL.",
-    "verifiedProductMatches": 7
+    "verifiedProductMatches": 7,
+    "currentProfileUrl": "https://www.tiktok.com/@ayanosesora"
   },
   "handoff": {
     "readyAt": "2026-11-22",
