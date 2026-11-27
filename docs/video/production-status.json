@@ -560,8 +560,8 @@
       "productIds": [
         "tomigin-chokkomon-round-silver-pendant"
       ],
-      "status": "prompt_ready",
-      "summary": "Prepared Chiba episode 2 for Tomigin’s round Chokkomon silver pendant. The central vertical composition fits the face, visible chain and pendant.",
+      "status": "generated_unreviewed",
+      "summary": "A 10-second take for Chiba episode 2 was matched to Tomigin’s round Chokkomon pendant and sampled for framing, jewelry and skin. A bilingual TikTok caption draft is saved.",
       "femaleImageAssetId": "ai-styling-jp-tomigin-chokkomon-round-silver-pendant-v43",
       "femaleImagePath": "public/images/styling-jp-tomigin-chokkomon-round-silver-pendant-v43.webp",
       "femaleImageDimensions": "1536x1024",
@@ -570,8 +570,10 @@
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The 0.30.0 release record lists the product page, and the original WebP matches the deployed commit b6402048d28bfc0d07fc88a47b65fca291e4044c (Git blob 54986cda95fd143161739cc9579052bab510b21b). Matched product ID, portrait asset ID and path against the production ledger, TikTok publication registry and Kyoto series plan. Visually compared the seven Chiba originals and 30 prior image files, including older versions of replaced Kyoto images. No duplicate was found in the documented records. The current TikTok profile grid remains unverified.",
-      "nextAction": "Generate the first take from the exact site original as the sole Ingredient, or use Frames after confirming the actual vertical start preview. Then check the opening, pendant and visible chain, skin, dialogue and lip sync."
+      "verification": "The 0.30.0 release record lists the product page, and the original WebP matches the deployed commit b6402048d28bfc0d07fc88a47b65fca291e4044c (Git blob 54986cda95fd143161739cc9579052bab510b21b). Matched product ID, portrait asset ID and path against the production ledger, TikTok publication registry and Kyoto series plan. Visually compared the seven Chiba originals and 30 prior image files, including older versions of replaced Kyoto images. No duplicate was found in the documented records. The current TikTok profile grid remains unverified. Compared the supplied 512×910, 30 fps, 10-second take to the original silver pendant portrait (Git blob 54986cda95fd143161739cc9579052bab510b21b) in 14 samples from 0 through about 9.97 seconds. Both eyes, the whole mouth, both visible sides of the chain and the entire round pendant fit with margins at 0, 0.5 and 1 second. Later samples retain the dark bob, plum shirt and one round pendant in the same chest area. No prominent isolated dark spot or mole is apparent on the sampled cheeks, mouth area or chin. Mouth movement is visible around 1.5–4 seconds. The file has an audio track. The exact dialogue, pronunciation, any additional speech, lip sync, full playback, Flow settings and SNS publication are unverified.",
+      "nextAction": "Review the full take, exact Japanese speech, pronunciation, extra lines and lip sync. Record a matching TikTok or Instagram URL after verifying the actual post.",
+      "statusReason": "The sampled opening and later frames match the styling and keep the face, chain and single pendant in view. Full-take and audio review are pending.",
+      "captionDraft": "えんじ色のシャツに、銀をひとつ。✨\n\n千葉・館山で待ち合わせ。\n丸い銀のペンダントトップに、直線と弧が交わる「直弧紋」。\n\n彫金工房「冨銀」｜直弧紋 ペンダントトップ 丸\nあなたには、この模様、何に見える？\n\nMeet me in Tateyama, Chiba. Straight lines and arcs meet on a small round silver pendant, inspired by Tomigin’s Chokkomon design.\nWhat does the pattern remind you of?\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #千葉 #館山 #彫金 #JapaneseJewelry"
     },
     {
       "id": "chiba-sghr-tie-tie-glass-earrings",
@@ -860,6 +862,10 @@
     {
       "date": "2026-11-27",
       "summary": "Matched the supplied Chiba episode 1 clip to the Ayano rikka original and saved a bilingual TikTok caption draft alongside the Instagram draft."
+    },
+    {
+      "date": "2026-11-27",
+      "summary": "Matched the supplied Chiba episode 2 clip to Tomigin’s round Chokkomon pendant, checked the sampled framing and saved the bilingual TikTok caption draft."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",

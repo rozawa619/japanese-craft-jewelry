@@ -1,6 +1,6 @@
 # SORA 千葉編 第2話｜彫金工房「冨銀」 直弧紋 ペンダントトップ 丸
 
-2026-11-27（JST）。館山の彫金工房「冨銀」の丸い銀のペンダントトップ。サイト原本は、えんじ色の襟付きシャツ、ボブの髪、自然な笑顔と、胸元の丸いトップが見える着用イメージ。制作状況は `prompt_ready`。
+2026-11-27（JST）。館山の彫金工房「冨銀」の丸い銀のペンダントトップ。サイト原本は、えんじ色の襟付きシャツ、ボブの髪、自然な笑顔と、胸元の丸いトップが見える着用イメージ。添付動画あり。制作状況は `generated_unreviewed`。
 
 - 商品IDは `tomigin-chokkomon-round-silver-pendant`。女性画像IDは `ai-styling-jp-tomigin-chokkomon-round-silver-pendant-v43`。元画像は `public/images/styling-jp-tomigin-chokkomon-round-silver-pendant-v43.webp`（1536×1024）。
 - 公開版 v0.30.0 の[配信記録](../../deployment-results.json)を確認。着用原本は確認時のmain `ed24a22ceec011b3397037c5dfe36e893574f4c2` と配信コミット `b6402048d28bfc0d07fc88a47b65fca291e4044c` で一致。Git blobは `54986cda95fd143161739cc9579052bab510b21b`。
@@ -35,3 +35,31 @@ No additional dialogue, mirroring, extra jewelry, captions, logos or music.
 - 0秒・0.5秒・1秒で、両目・口元・左右のチェーン・丸いトップ全体と外側の余白を確認する。
 - 発話中と後半も、トップが一つ、胸元の同じ位置に見えることと、直線と弧の模様、ほくろや単独の濃い点の有無を原本と照合する。
 - 発音・追加のセリフ・口の動きを確認し、検品と公開の状況を制作台帳に残す。
+
+## 添付動画の確認（2026-11-27 JST）
+
+- 512×910、30fps、10秒。着用原本（Git blob `54986cda95fd143161739cc9579052bab510b21b`）と、暗い色のボブ・えんじ色のシャツ・細いチェーン・丸い銀のトップを照合。
+- 0秒・0.5秒・1秒で両目、口元、チェーンの見える左右とトップ全体が余白付きで収まる。約9.97秒まで14点を目視し、同じ胸元に丸いトップが一つ見える。サンプルでは頬・口元・あごに目立つほくろや単独の濃い点は見当たらない。
+- 1.5〜4秒付近に口の動きがあり、音声トラックがある。実際の文言、発音、追加のセリフ、口の動きとの同期、全編再生、Flow設定、SNS公開は未確認。TikTok紹介文は画面に映るシャツと銀のトップから書き出した。
+
+## TikTok紹介文
+
+2026-11-27（JST）下書き。TikTok投稿URLは未確認。
+
+```text
+えんじ色のシャツに、銀をひとつ。✨
+
+千葉・館山で待ち合わせ。
+丸い銀のペンダントトップに、直線と弧が交わる「直弧紋」。
+
+彫金工房「冨銀」｜直弧紋 ペンダントトップ 丸
+あなたには、この模様、何に見える？
+
+Meet me in Tateyama, Chiba. Straight lines and arcs meet on a small round silver pendant, inspired by Tomigin’s Chokkomon design.
+What does the pattern remind you of?
+
+※映像はAIで制作した着用イメージです。
+AI-generated styling video.
+
+#SORA旅先で待ち合わせ #千葉 #館山 #彫金 #JapaneseJewelry
+```
