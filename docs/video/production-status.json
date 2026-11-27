@@ -6,8 +6,8 @@
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
-  "currentEpisodeId": "chiba-tomigin-chokkomon-round-silver-pendant",
-  "nextAction": "Generate the first take from the exact site original as the sole Ingredient, or use Frames after confirming the actual vertical start preview. Then check the opening, pendant and visible chain, skin, dialogue and lip sync.",
+  "currentEpisodeId": "chiba-sghr-tie-tie-glass-earrings",
+  "nextAction": "Generate Chiba episode 3 from the exact site original as the sole Ingredient. Use Frames only when the actual vertical preview fits both eyes, the whole mouth and the full glass drop with clear margins. Then check the opening, earring placement, visible skin, speech and lip sync.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -566,6 +566,25 @@
       "postUrl": null,
       "verification": "The 0.30.0 release record lists the product page, and the original WebP matches the deployed commit b6402048d28bfc0d07fc88a47b65fca291e4044c (Git blob 54986cda95fd143161739cc9579052bab510b21b). Matched product ID, portrait asset ID and path against the production ledger, TikTok publication registry and Kyoto series plan. Visually compared the seven Chiba originals and 30 prior image files, including older versions of replaced Kyoto images. No duplicate was found in the documented records. The current TikTok profile grid remains unverified.",
       "nextAction": "Generate the first take from the exact site original as the sole Ingredient, or use Frames after confirming the actual vertical start preview. Then check the opening, pendant and visible chain, skin, dialogue and lip sync."
+    },
+    {
+      "id": "chiba-sghr-tie-tie-glass-earrings",
+      "place": "Kujukuri, Chiba, Japan",
+      "productIds": [
+        "sghr-tie-tie-glass-earrings"
+      ],
+      "status": "prompt_ready",
+      "summary": "Prepared Chiba episode 3 for Sghr’s clear Tie-tie glass earrings. The right-shifted vertical window fits the face and the complete glass drop.",
+      "femaleImageAssetId": "ai-sghr-tie-tie-glass-earrings-styling-v13",
+      "femaleImagePath": "public/images/sghr-tie-tie-glass-earrings-styling-v13.webp",
+      "femaleImageDimensions": "1536x1024",
+      "episodePath": "docs/video/episodes/chiba-sghr-tie-tie-glass-earrings.md",
+      "startFrameStatus": "The central 576×1024 window at x=480 omits the screen-right earring. Shifting the window 100 px right to x=580 fits both eyes, the whole mouth and the full earring with margins. The prompt uses the original in Ingredients and asks for a slightly wider portrait. The actual Flow start preview remains unverified.",
+      "currentPromptVersion": "v1-ready",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "The v0.30.0 deployment and current main contain the same original WebP (Git blob 6d0e99c685160e624c24b9d012bd5ea4afdb358c). Checked the product ID, portrait ID and image path against the production ledger, TikTok publication registry and Kyoto series plan. Compared it with the checked Chiba and prior reference portraits. No duplicate found in the records. The current TikTok grid remains unverified.",
+      "nextAction": "Generate Chiba episode 3 from the exact site original as the sole Ingredient. Use Frames only when the actual vertical preview fits both eyes, the whole mouth and the full glass drop with clear margins. Then check the opening, earring placement, visible skin, speech and lip sync."
     }
   ],
   "observedLinks": [
@@ -804,6 +823,10 @@
     {
       "date": "2026-11-27",
       "summary": "Prepared Chiba episode 2 for Tomigin’s round Chokkomon silver pendant. Verified the exact released portrait, framing and publication-registry duplicate checks, and saved Flow prompt v1."
+    },
+    {
+      "date": "2026-11-27",
+      "summary": "Prepared Chiba episode 3 for Sghr’s Tie-tie glass earrings. Checked the published original, duplicate records and right-shifted vertical framing, then saved Flow prompt v1."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -843,5 +866,5 @@
     "firstSuggestedProductId": "ayano-rikka-antique-rose-hoop-earrings",
     "explanation": "All ten currently published Tokyo products have generation records. Chiba has seven published products. The Ayano original fits the eyes, mouth and complete hoop in a 9:16 window and is unused in the available records."
   },
-  "previousWorkCurrentEpisodeId": "chiba-ayano-rikka-antique-rose-hoop-earrings"
+  "previousWorkCurrentEpisodeId": "chiba-tomigin-chokkomon-round-silver-pendant"
 }
