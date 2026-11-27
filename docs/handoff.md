@@ -1,6 +1,6 @@
 # 現在の状態と保守の引継ぎ
 
-2026-11-25。新しいチャットでサイト構築を再開する場合は、[サイト専用の引継ぎ書](SITE_NEW_CHAT_HANDOFF.md)と[コピー用の引継ぎ文](SITE_NEW_CHAT_HANDOFF.md#新チャット貼付用のプロンプト)を使います。[START_HERE](../START_HERE.md)と[AGENTS](../AGENTS.md)に作業の入口と制約があり、[handoff-status.json](handoff-status.json)に再開時の状態、[deployment-results.json](deployment-results.json)に公開アプリの実績があります。
+2026-11-27。新しいチャットでサイト構築を再開する場合は、[サイト専用の引継ぎ書](SITE_NEW_CHAT_HANDOFF.md)と[コピー用の引継ぎ文](SITE_NEW_CHAT_HANDOFF.md#新チャット貼付用のプロンプト)を使います。[START_HERE](../START_HERE.md)と[AGENTS](../AGENTS.md)に作業の入口と制約があり、[handoff-status.json](handoff-status.json)に再開時の状態、[deployment-results.json](deployment-results.json)に公開アプリの実績があります。
 
 ## 完了しているもの
 
@@ -9,17 +9,17 @@
 | サイト | Japanese Craft Jewelry。全国の工芸ジュエリーを選ぶJA/EN紹介メディア。運営者SORA |
 | 公開URL | [日本語](https://rozawa619.github.io/japanese-craft-jewelry/ja/)・[English](https://rozawa619.github.io/japanese-craft-jewelry/en/) |
 | リポジトリ | [rozawa619/japanese-craft-jewelry](https://github.com/rozawa619/japanese-craft-jewelry)・main |
-| 最新公開アプリ | **v0.29.1**、アプリSHA `9beec4463e7447b86861bc4cd575569549606f3b`。[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45602653433)の配信は2026-11-25 20:16 JSTに完了。 [公開記録](deployment-results.json) |
+| 最新公開アプリ | **v0.29.2**、アプリSHA `00ee4957d51e7d53a2eb9367687ab00dcdfcfe32`。2026-11-27 10:36 JSTに配信完了。 [公開記録](deployment-results.json) |
 | Gitからの再開方法 | [仕様024](../specs/024-git-ai-handoff/spec.md)が基本手順。[サイト専用の引継ぎ書](SITE_NEW_CHAT_HANDOFF.md)に現行機能と再開順を記録 |
-| 内容 | 公開176/登録182商品、東京10点、47都道府県で各3点以上。公開に紐づく技法105/全106件、一次出典789件、82店舗。店舗案内付き127商品 |
-| 画像 | AI画像350枚（着用174・商品単体176）。人物は架空の日本人成人女性 |
+| 内容 | 公開175/登録182商品。47都道府県を掲載。東京10点、島根2点。公開に紐づく技法104/全106件、出典790件、82店舗。店舗案内付き126商品 |
+| 画像 | AI画像348枚（着用173・商品単体175）。人物は架空の日本人成人女性 |
 | AI画像の確認案内 | v0.22.1で日英の商品詳細と着用AI画像付きのカードに表示。実物の色・模様・形・金具は販売元の商品情報へ案内する。 [仕様031](../specs/031-product-image-disclosure/spec.md) |
 | 販売元の選択名と販売単位 | v0.22.2で10商品の日英購入導線に選択名・カタログ掲載名を表示。凛然 星華 琥珀の国内・海外価格に1組の販売単位を表示。 [仕様032](../specs/032-purchase-selections/spec.md) |
 | 動画で紹介した商品 | v0.23.1の日英 `/sora/` で、公開14投稿に対応する京都4・神奈川7商品へ案内。神奈川7商品の購入案内を公式情報と再照合。 [仕様034](../specs/034-kyoto-video-jewelry/spec.md) |
 | 全国掲載と旅先検索 | v0.24.0から47都道府県・88商品。注文受付を確認した19県の19商品を追加し、日英で地方・県・訪問エリアから商品に案内。v0.24.1でスマートフォンの初期画面に検索への通常リンクを追加し、選択後の商品プレビューのリンクの高さを44px以上に修正。 [仕様035](../specs/035-national-travel-discovery/spec.md) · [一次情報](research/national-listings-2026-11-24.md) |
 | 直近の産地別商品追加 | 東京に江戸切子、東京銀器、東京七宝、江戸刺繍、江戸漆器を追加。堀口切子の予約制工房がある江戸川・松江を旅先検索に追加。 [仕様040](../specs/040-tokyo-craft-jewelry/spec.md) · [一次情報](research/tokyo-craft-jewelry-2026-11-24.md) |
 | 完了した023の変更 | 22人物を新生成・採用・公開、既存36人物と単体60を保持。新22枚は25〜30歳、かわいい系11/綺麗な系統11 |
-| 退役画像 | 旧37＋041の5で42画像を配信/新Git tree/source ZIPから除外。京都の旧1枚は動画原本のURL維持用に保管 |
+| 退役画像 | 48画像を配信対象から外した。京都の動画原本3枚を既存URLで参照できる |
 | 収益化 | AdSense off、実提携未申請、商品リンクは通常URL。広告resolverとPrivacyの土台は実装済み |
 
 上の件数はこの公開版の記録で、全国拡張時の固定上限ではありません。神奈川専用・iTOへ戻さず、空の産地ページや件数合わせの未確認商品を作りません。人物の国籍・年齢は生成設定で、実在人物の属性を見た目から認定したものではありません。
@@ -47,6 +47,8 @@
 - 店舗Mapsは初回明示許可後30日自動表示、オフで全停止。未選択/拒否/期限切れはGoogle通信0。Google帰属・外部fallback・最小Storageを保ちます。地図設定maps-v17と広告Privacy v14/広告CMPは別です。
 
 ## 公開版の検証記録
+
+v0.29.2は2026-11-27 10:36 JSTに公開しました。着用6枚、狭い画面の見出し、「光衣 L」の予約案内、島根の商品案内を確認しました。 [仕様042の検証](../specs/042-site-visual-review/validation.md)
 
 v0.29.1は2026-11-25 20:16 JSTに公開し、日英の商品詳細・産地一覧を確認しました。着用5枚と単体1枚を修正し、他344枚のハッシュを照合しました。 [仕様041の検証](../specs/041-image-quality-corrections/validation.md)
 

@@ -32,7 +32,7 @@
 - captionは常時AIイメージ/AI image。日英alt・元比率/contain・顔/装身具の切れを確認する。AI図を実物写真・完全なSKU再現・素材/寸法/金具/個数・装着実績の証拠にしない。
 - 新規・修正画像は実寸で目視する。着用画像では肘から手首までのつながり、指の向きと重なり、装身具の接点、頭頂と手元の余白を確認する。単体画像では無関係な部品が周縁にないかを確認する。採用後は日英の商品詳細とスマートフォン幅で再確認し、既存の動画原本URLは参照元を確認して保護する。 [仕様041](specs/041-image-quality-corrections/spec.md)
 - 公式写真を許可なく取得・転載・hotlink・生成入力に流用しない。人物editorial-imagesと単体product-detail-images、docs/assets、生成記録を分離する。[画像ガイド023](docs/japanese-model-styling-v21.md)と[原本の取得手順](docs/handoff-assets.md)を使う。
-- 023の22置換・36人物保持・単体60保持は完了。旧22はretired/Git追跡解除/ignore・dist/ZIP除外済みで、旧ログ/原本は保持。041で除外対象は42画像になった。京都の旧着用1枚は動画原本URL用に同一バイトで保管している。既存v12baselineや全画像の不変条件を一括解除しない。
+- 023の22置換・36人物保持・単体60保持は完了。旧22はretired/Git追跡解除/ignore・dist/ZIP除外済みで、旧ログ/原本は保持。042時点で退役画像は48枚。京都の動画原本3枚は、元のURLとハッシュを台帳に記録している。v12baselineの着用参照を修正する場合は、旧バイト・archived記録・新生成記録でつながりを照合する。 [仕様042](specs/042-site-visual-review/spec.md)
 - `scripts/apply-japanese-model-styling.mjs`は完了した023移行専用。起動・通常検証・次の画像更新のために再実行しない。旧bytesを必要とする一回限りのpreservation検査も通常buildの条件にしない。
 - Heroは左の人物画像/右の日本地図。明示的な県選択で画像・商品・国内参考価格を切り替え、region query・他query/hash・履歴・言語を保持する。写真は自然比率・上下人工帯なし。沖縄別枠はPC200px/スマホ80pxを継承する。
 - 産地一覧はTOP10→コンパクトな日本地図→DISCOVER3県。47県の原形を主図46＋沖縄別枠1へ分け、実商品がある掲載県のみ通常hrefにする。島・枠・labelの直接click/tap/Enter、preview、zoom/内部scroll、地方一覧、keyboard/noJSを保つ。詳細は[022](docs/compact-layout-v20.md)。

@@ -20,14 +20,14 @@
 
 ## 現在の公開版
 
-| 項目 | 2026-11-25（JST）確認時点 |
+| 項目 | 2026-11-27（JST）確認時点 |
 | --- | --- |
-| アプリ | **v0.29.1**、アプリSHA `9beec4463e7447b86861bc4cd575569549606f3b` |
-| 配信 | GitHub Pages。2026-11-25 20:16 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45602653433)の配信が完了 |
-| 照合 | [041の検証](../specs/041-image-quality-corrections/validation.md)・[公開記録](deployment-results.json) |
-| 商品・地域 | 登録182点、公開176点、下書き6点。東京10点、全47都道府県が各3点以上、Top10は各5点以上 |
-| 工芸・購入先 | 公開に紐づく技法105件（全106件）、一次出典789件。82店舗、店舗案内付き127商品。購入根拠は通販167点、店舗とカタログ9点 |
-| 画像 | サイト表示用AI画像350枚（着用174・単体176）。v0.29.1で6枚を修正。京都の動画原本1枚は同じURLで保管 |
+| アプリ | **v0.29.2**、アプリSHA `00ee4957d51e7d53a2eb9367687ab00dcdfcfe32` |
+| 配信 | GitHub Pages。2026-11-27 10:36 JSTに配信完了。 [GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45923380473) |
+| 照合 | [042の検証](../specs/042-site-visual-review/validation.md)・[公開記録](deployment-results.json) |
+| 商品・地域 | 登録182点、公開175点、下書き7点。47都道府県を掲載。東京10点、島根2点、Top10は各5点以上 |
+| 工芸・購入先 | 公開に紐づく技法104件（全106件）、出典790件。82店舗、店舗案内付き126商品。購入根拠は通販165点、予約問い合わせ1点、店舗とカタログ9点 |
+| 画像 | サイト表示用AI画像348枚（着用173・単体175）。v0.29.2で着用6枚を修正。京都の動画原本3枚は既存URLで参照可能 |
 | 広告 | 実アフィリエイトは未申請で通常の公式リンクを使用。AdSenseはオフ。 [提携準備](affiliate-readiness.md)・[運営上の残条件](remaining-task-audit-v17.md) |
 
 Astro 7・TypeScript・Zodを使う日英の静的サイトです。日本地図から産地を選び、商品一覧の絞り込み、工芸・素材のページ、商品詳細へ進めます。商品詳細には価格、公式通販または取扱店の案内、出典を掲載します。店舗のGoogle Mapsは利用者の許可に応じて表示します。サイトの運営範囲は紹介と外部の販売先への案内です。 [技術構成](architecture.md)
@@ -51,6 +51,7 @@ Astro 7・TypeScript・Zodを使う日英の静的サイトです。日本地図
 | [039](../specs/039-three-per-prefecture/spec.md) | 掲載が2点だった36県に各1点を追加し、47都道府県すべてで各3点以上、全国171点に拡充 |
 | [040](../specs/040-tokyo-craft-jewelry/spec.md) | 東京の工芸5点を追加して東京10点・全国176点。旅先検索に江戸川・松江を追加 |
 | [041](../specs/041-image-quality-corrections/spec.md) | 手指、イヤリングの留め位置、顔の見切れ、単体画像の余分なチェーンを計6枚で修正 |
+| [042](../specs/042-site-visual-review/spec.md) | 着用6枚とスマホの見出しを修正。「光衣 L」を予約案内へ変更し、旧販売ページが404のN-15を下書きに戻した |
 
 ### 編集・検証の正本
 

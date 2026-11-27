@@ -6,7 +6,9 @@
 
 ### 最近のサイト変更
 
-公開版は **v0.29.1** です。公開画像を点検し、着用5枚と単体1枚の手元・留め位置・構図を修正しました。2026-11-25 20:16 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45602653433)の配信が完了しました。 [仕様041](specs/041-image-quality-corrections/spec.md) · [公開検証](specs/041-image-quality-corrections/validation.md)
+公開版は **v0.29.2** です。トップの群青パンジーや京都の孔雀柄イヤリングを含む着用イメージ6枚を修正しました。スマートフォンの見出しと購入案内も整え、47都道府県175点を掲載しています。2026-11-27 10:36 JSTに配信が完了しました。 [仕様042](specs/042-site-visual-review/spec.md) · [公開検証](specs/042-site-visual-review/validation.md)
+
+v0.29.1では公開画像の着用5枚と単体1枚の手元・留め位置・構図を修正しました。 [仕様041](specs/041-image-quality-corrections/spec.md)
 
 v0.29.0では、東京に江戸切子、東京銀器、東京七宝、江戸刺繍、江戸漆器の5点を追加し、東京は10点、全国47都道府県は176点になりました。旅先検索では堀口切子の予約制工房がある江戸川・松江を選べます。2026-11-24 23:07 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45410363699)の配信が完了しました。 [仕様040](specs/040-tokyo-craft-jewelry/spec.md) · [一次情報](docs/research/tokyo-craft-jewelry-2026-11-24.md) · [公開検証](specs/040-tokyo-craft-jewelry/validation.md)
 
@@ -61,7 +63,7 @@ pnpm dev
 
 ## 画像原本・過去の納品物
 
-[画像原本と配布資料](docs/handoff-assets.md)からGitHub上のZIPを取得できます。[配布一覧](docs/handoff-assets.json)にURL・容量・SHA256を記録し、`node scripts/fetch-handoff-asset.mjs --list`で一覧を表示できます。原本が必要な画像編集時だけダウンロードしてください。公開中のAI画像350枚（着用174＋商品単体176）は既に`public/images/`にあります。
+[画像原本と配布資料](docs/handoff-assets.md)からGitHub上のZIPを取得できます。[配布一覧](docs/handoff-assets.json)にURL・容量・SHA256を記録し、`node scripts/fetch-handoff-asset.mjs --list`で一覧を表示できます。原本が必要な画像編集時だけダウンロードしてください。公開中のAI画像348枚（着用173＋商品単体175）は`public/images/`にあります。
 
 023の`apply-japanese-model-styling.mjs`は完了済み22枚の移行専用、`check-japanese-model-preservation.mjs`は旧画像を残した当時のcheckout専用です。fresh cloneの起動や通常編集の必須手順にはしません。新しい画像変更は新しい仕様/manifestで記録し、023の固定集合・過去の証拠を書き換えて通しません。
 

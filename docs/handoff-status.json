@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-25T11:18:16.082468+00:00",
+  "updatedAt": "2026-11-27T01:37:12.950Z",
   "entryPoint": "START_HERE.md",
   "project": {
     "name": "Japanese Craft Jewelry",
@@ -12,15 +12,15 @@
     "scope": "Japan-wide craft jewelry selection media; no checkout,shipping,blog or Contact"
   },
   "handoff": {
-    "specification": "041-image-quality-corrections",
+    "specification": "042-site-visual-review",
     "status": "ready",
-    "basedOnDocumentationCommit": "9beec4463e7447b86861bc4cd575569549606f3b",
+    "basedOnDocumentationCommit": "00ee4957d51e7d53a2eb9367687ab00dcdfcfe32",
     "activeSiteImplementationTask": null,
     "nextAction": "Continue from the verified site release and the user’s next request. Review anatomy, fastening, framing and standalone-image borders before accepting new or revised illustrations.",
     "currentGitHeadCommand": "git rev-parse HEAD",
-    "verificationReport": "specs/041-image-quality-corrections/validation.md",
-    "validatedSourceCommit": "9beec4463e7447b86861bc4cd575569549606f3b",
-    "cleanRunnerVerification": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45602653433",
+    "verificationReport": "specs/042-site-visual-review/validation.md",
+    "validatedSourceCommit": "00ee4957d51e7d53a2eb9367687ab00dcdfcfe32",
+    "cleanRunnerVerification": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45923380473",
     "historicalVerification": {
       "appVersion": "0.18.0",
       "applicationCommit": "f2bb423f4c4cf476e449d8ec37837243f764cfee",
@@ -30,16 +30,16 @@
     "siteGuide": "docs/SITE_NEW_CHAT_HANDOFF.md"
   },
   "production": {
-    "version": "0.29.1",
-    "applicationCommit": "9beec4463e7447b86861bc4cd575569549606f3b",
+    "version": "0.29.2",
+    "applicationCommit": "00ee4957d51e7d53a2eb9367687ab00dcdfcfe32",
     "actions": {
-      "id": 45602653433,
-      "headSha": "9beec4463e7447b86861bc4cd575569549606f3b",
+      "id": 45923380473,
+      "headSha": "00ee4957d51e7d53a2eb9367687ab00dcdfcfe32",
       "status": "completed",
       "conclusion": "success",
-      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45602653433",
-      "deploymentCompletedAt": "2026-11-25T11:16:05Z",
-      "observedAt": "2026-11-25T11:17:23.410Z"
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45923380473",
+      "deploymentCompletedAt": "2026-11-27T01:36:00Z",
+      "observedAt": "2026-11-27T01:37:12.950Z"
     },
     "urls": {
       "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
@@ -168,43 +168,44 @@
       "dahliacyan-openwork-rhodochrosite-braceletJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/dahliacyan-openwork-rhodochrosite-bracelet/",
       "dahliacyan-openwork-rhodochrosite-braceletEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/dahliacyan-openwork-rhodochrosite-bracelet/",
       "toano-kusatsu-omi-ruri-aobana-blue-drop-necklaceEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/toano-kusatsu-omi-ruri-aobana-blue-drop-necklace/",
-      "farwest-utsunomiya-flat-silver-ring-size-9En": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/farwest-utsunomiya-flat-silver-ring-size-9/"
+      "farwest-utsunomiya-flat-silver-ring-size-9En": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/farwest-utsunomiya-flat-silver-ring-size-9/",
+      "shimane": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/shimane/",
+      "shimaneEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/shimane/"
     },
     "report": "docs/deployment-results.json",
-    "verification": "specs/041-image-quality-corrections/validation.md",
-    "outputManifest": "docs/image-quality-v41-build-manifest.json",
+    "verification": "specs/042-site-visual-review/validation.md",
+    "outputManifest": "docs/site-visual-v42-build-manifest.json",
     "outputManifestStatus": "verified_build_and_public_sample",
-    "previousFullOutputManifest": "docs/tokyo-v40-build-manifest.json",
+    "previousFullOutputManifest": "docs/image-quality-v41-build-manifest.json",
     "buildArtifact": {
-      "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/15016761454/zip",
-      "bytes": 35039791,
-      "digest": "sha256:6e5f0386caa2693d12a9998977de3889eaa92812830df9aa5aaab6483db010c7",
-      "expiresAt": "2026-11-26T11:15:42Z",
-      "headSha": "9beec4463e7447b86861bc4cd575569549606f3b",
-      "id": 15016761454,
+      "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/15164922400/zip",
+      "bytes": 35036239,
+      "digest": "sha256:3176f0ac64e7fd7d275a16369cea5082c96eaa513b1d563a30cf7add799c0497",
+      "expiresAt": "2026-11-28T01:35:39Z",
+      "headSha": "00ee4957d51e7d53a2eb9367687ab00dcdfcfe32",
+      "id": 15164922400,
       "name": "github-pages"
-    },
-    "hostedMobileReport": "docs/image-quality-v41-hosted-webkit-results.json"
+    }
   },
   "snapshot": {
-    "publishedProducts": 176,
+    "publishedProducts": 175,
     "catalogProducts": 182,
-    "draftProducts": 6,
+    "draftProducts": 7,
     "regions": 47,
-    "activeCrafts": 105,
+    "activeCrafts": 104,
     "catalogCrafts": 106,
-    "sources": 789,
+    "sources": 790,
     "stores": 82,
-    "productsWithStores": 127,
-    "onlineEvidence": 167,
+    "productsWithStores": 126,
+    "onlineEvidence": 165,
     "retailCatalogEvidence": 9,
-    "publicImages": 350,
-    "stylingImages": 174,
-    "soloImages": 176,
+    "publicImages": 348,
+    "stylingImages": 173,
+    "soloImages": 175,
     "newProducts": 0,
     "newRegions": 0,
     "newImageFiles": 6,
-    "existingImageBytesRetained": 344,
+    "existingImageBytesRetained": 342,
     "kanagawaWorkshopLinked": 8,
     "kanagawaRegionalRetailer": 4,
     "profileLandingPages": 2,
@@ -269,14 +270,16 @@
       }
     ],
     "singleItemPrefectures": 0,
-    "twoItemPrefectures": 0,
-    "minimumProductsPerPrefecture": 3,
+    "twoItemPrefectures": 1,
+    "minimumProductsPerPrefecture": 2,
     "newProductTypes": {},
     "newProductsWithStores": 0,
     "tokyoPublishedProducts": 10,
-    "revisedStylingImages": 5,
-    "revisedSoloImages": 1,
-    "archivedVideoOriginals": 1
+    "revisedStylingImages": 6,
+    "revisedSoloImages": 0,
+    "archivedVideoOriginals": 3,
+    "reservationInquiryEvidence": 1,
+    "retiredProductImages": 2
   },
   "currentImagePolicy": {
     "fictionalNationalitySetting": "Japanese",
@@ -287,32 +290,29 @@
     "cuteAndElegant": true,
     "clearSkin": true,
     "visibleCaption": "AIイメージ / AI image",
-    "stylingImages": 174,
-    "standaloneImages": 176,
+    "stylingImages": 173,
+    "standaloneImages": 175,
     "replacedIn023": 22,
     "retainedIn023": 36,
-    "retiredLocalImages": 42,
+    "retiredLocalImages": 48,
     "manifest": "docs/image-generation-japanese-v23.json",
     "latestGenerationRecords": [
-      "docs/image-generation-styling-v41.json",
+      "docs/image-generation-styling-v42.json",
       "docs/image-generation-solo-v41.json"
     ],
     "latestPortraitUpdate": {
-      "products": 5,
-      "adultAgeRange": [
-        22,
-        32
-      ],
-      "release": "0.29.1",
-      "purpose": "Pose, fastening and framing corrections"
+      "products": 6,
+      "release": "0.29.2",
+      "purpose": "Framing, earring contact and visual cleanup"
     },
     "purchaseNotice": "specs/031-product-image-disclosure/spec.md",
-    "archivedVideoOriginals": 1,
+    "archivedVideoOriginals": 3,
     "latestImageCorrection": {
-      "specification": "041-image-quality-corrections",
+      "specification": "042-site-visual-review",
       "reviewedOriginalImages": 350,
       "changedImages": 6,
-      "unchangedImages": 344
+      "unchangedActiveImages": 342,
+      "withdrawnImages": 2
     }
   },
   "setup": {
@@ -376,7 +376,8 @@
     "038-two-per-prefecture",
     "039-three-per-prefecture",
     "040-tokyo-craft-jewelry",
-    "041-image-quality-corrections"
+    "041-image-quality-corrections",
+    "042-site-visual-review"
   ],
   "historicalOnlyScripts": [
     {
@@ -407,11 +408,11 @@
   ],
   "verification": {
     "ci": "docs/git-handoff-stage-ci-results.json",
-    "local": "specs/041-image-quality-corrections/validation.md",
+    "local": "specs/042-site-visual-review/validation.md",
     "assets": "docs/git-handoff-stage-download-results.json",
     "documentation": "docs/git-handoff-stage-docs-results.json",
-    "summary": "specs/041-image-quality-corrections/validation.md",
-    "hostedMobile": "docs/image-quality-v41-hosted-webkit-results.json"
+    "summary": "specs/042-site-visual-review/validation.md",
+    "publicResponses": "docs/site-visual-v42-build-manifest.json"
   },
-  "snapshotVersion": "0.29.1"
+  "snapshotVersion": "0.29.2"
 }
