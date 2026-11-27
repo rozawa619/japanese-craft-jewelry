@@ -586,7 +586,7 @@
         "sghr-tie-tie-glass-earrings"
       ],
       "status": "generated_unreviewed",
-      "summary": "A 10-second take for Chiba episode 3 was supplied. Both eyes, the mouth and the complete clear glass earring fit in the sampled opening. The Instagram caption draft is saved.",
+      "summary": "Matched the 10-second Chiba episode 3 take to Sghr’s Tie-tie glass earrings. The face and complete clear earring fit the sampled opening. The Instagram and TikTok caption drafts are saved.",
       "femaleImageAssetId": "ai-sghr-tie-tie-glass-earrings-styling-v13",
       "femaleImagePath": "public/images/sghr-tie-tie-glass-earrings-styling-v13.webp",
       "femaleImageDimensions": "1536x1024",
@@ -595,13 +595,14 @@
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The v0.30.0 deployment and current main contain the same original WebP (Git blob 6d0e99c685160e624c24b9d012bd5ea4afdb358c). Checked the product ID, portrait ID and image path against the production ledger, TikTok publication registry and Kyoto series plan. Compared it with the checked Chiba and prior reference portraits. No duplicate found in the records. The current TikTok grid remains unverified. On 2026-11-27 JST, compared the site portrait with the supplied 512×910, 30 fps, 10-second clip. At 0, 0.5 and 1 second both eyes, the full mouth and the entire screen-right earring from stud to glass tip fit with margins. Samples at 2, 3.5, 5, 7 and 9.5 seconds retain a single slender clear glass earring on the same side. No prominent mole or isolated dark point was apparent on the cheeks, around the mouth or on the chin in the later samples. Full-take playback, audio, actual Flow mode and model, and SNS publication remain unverified.",
-      "nextAction": "Review the full take, Japanese speech and lip sync. Record the Instagram Reel URL after verifying publication.",
-      "statusReason": "The supplied take passes the sampled opening framing, visible earring position and skin checks. Full-take and audio review are pending.",
+      "verification": "The v0.30.0 deployment and current main contain the same original WebP (Git blob 6d0e99c685160e624c24b9d012bd5ea4afdb358c). Checked the product ID, portrait ID and image path against the production ledger, TikTok publication registry and Kyoto series plan. Compared it with the checked Chiba and prior reference portraits. No duplicate found in the records. The current TikTok grid remains unverified. On 2026-11-27 JST, compared the site portrait with the supplied 512×910, 30 fps, 10-second clip. At 0, 0.5 and 1 second both eyes, the full mouth and the entire screen-right earring from stud to glass tip fit with margins. Samples at 2, 3.5, 5, 7 and 9.5 seconds retain a single slender clear glass earring on the same side. No prominent mole or isolated dark point was apparent on the cheeks, around the mouth or on the chin in the later samples. Full-take playback, audio, actual Flow mode and model, and SNS publication remain unverified. On 2026-11-27 JST, sampled the supplied 512×910, 30 fps, 10-second take at 14 points from 0 to approximately 9.97 seconds and compared it to the site portrait (Git blob 6d0e99c685160e624c24b9d012bd5ea4afdb358c). Both eyes, the whole mouth and the full screen-right earring from stud to glass tip fit with margins at 0, 0.5 and 1 second. Later samples retain the navy shirt, side-parted bob and one visible clear ribbed drop at the same ear. No prominent mole or isolated dark spot is apparent on the sampled cheeks, mouth area or chin. Mouth movement is visible around 1.5–5 seconds and the file has an audio track. Exact words, pronunciation, any extra line, lip sync, full playback, actual Flow settings and SNS publication remain unverified.",
+      "nextAction": "Review full playback, exact Japanese speech, pronunciation, any additional line and lip sync. Record the TikTok or Instagram URL after matching the actual post.",
+      "statusReason": "The sampled opening and later visuals retain the face, single glass drop and styling. Full playback and audio review are pending.",
       "instagramCaption": {
         "status": "draft",
         "postUrl": null
-      }
+      },
+      "captionDraft": "耳元に、透明なガラスがきらり。🫧\n\n千葉・九十九里で待ち合わせ。\n紺のシャツに合わせたのは、縦にすっと伸びるガラスのピアス。\n\nSghr｜タイタイ ガラスのピアス\nあなたなら、ネイビーと白、どっちの服に合わせる？\n\nMeet me in Kujukuri, Chiba. A slender clear glass drop catches the light against a navy shirt, inspired by Sghr’s Tie-tie earrings.\nWould you wear them with navy or white?\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #千葉 #九十九里 #ガラスアクセサリー #JapaneseJewelry"
     },
     {
       "id": "chiba-arcos-cosmic-spiral-pendant",
@@ -875,6 +876,10 @@
     {
       "date": "2026-11-27",
       "summary": "Matched the supplied Chiba episode 2 clip to Tomigin’s round Chokkomon pendant, checked the sampled framing and saved the bilingual TikTok caption draft."
+    },
+    {
+      "date": "2026-11-27",
+      "summary": "Matched the supplied Chiba episode 3 clip to the Tie-tie original, checked the opening and sampled glass earring, and saved a bilingual TikTok caption draft."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
