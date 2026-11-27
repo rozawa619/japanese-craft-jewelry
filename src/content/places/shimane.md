@@ -1,14 +1,14 @@
 ---
-title: "Izumo-style magatama jewelry from Shimane"
-description: "Find a cord necklace connected to Menoya and the rounded Izumo-style magatama form, with official shop and store-directory links."
+title: "Craft jewelry from Shimane"
+description: "Explore an Izumo kurogaki bead necklace and an Izumo jasper ring, with purchase and visit information for Izumo and Matsue."
 locale: en
 publishStatus: published
-updatedAt: "2026-11-17"
-sourceIds: ["menoya-n15-current-v16","menoya-izumo-form-v16","menoya-company-v16","menoya-shops-v16"]
+updatedAt: "2026-11-27"
+sourceIds: ["okaya-izumo-kurogaki-faceted-bead-necklace-offer","okaya-izumo-kurogaki-faceted-bead-necklace-store","kawashima-izumo-heki-jasper-k18-ring-size-12-offer","kawashima-izumo-heki-jasper-k18-ring-size-12-store"]
 prefectureId: shimane
-relatedMerchantIds: ["menoya-anahita-official"]
+relatedMerchantIds: ["okaya-mokugei-official","kawashima-agate-official"]
 ---
 
-This selection connects Shimane with Menoya and the rounded Izumo-style magatama form. It begins with a cord necklace whose curved stones and braid can be compared with chain-and-frame pendants elsewhere in the collection.
+Okaya Mokugei’s wood bead necklace brings out the changing grain of kurogaki. Kawashima’s ring sets an oval of dark green Izumo jasper in a narrow gold band.
 
-The regional connection is not a claim that all stones were mined in Shimane or every component made there. The brand’s official directory also lists an Izumo Taisha shop, while the featured limited necklace’s in-store availability remains unconfirmed.
+Use the Izumo and Matsue area guides to find the makers’ shops. Confirm the necklace or the ring in your size with the shop before visiting.

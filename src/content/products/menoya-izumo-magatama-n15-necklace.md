@@ -1,7 +1,7 @@
 ---
 productId: menoya-izumo-magatama-n15-necklace
 locale: en
-publishStatus: published
+publishStatus: draft
 ---
 
 The comma-like curve makes the necklace recognizable without a large metal setting. Stone and pale cord bring different textures to the same focal point: one catches the eye as a rounded shape, while the other gives the necklace a softer line.

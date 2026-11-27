@@ -26,7 +26,7 @@ groups.push({key:'budget',name:t(locale,'Japan reference price','国内参考価
 </nav>}
 <RegionSelection locale={locale} showAllLink={false}/>
 <section class="all-jewelry-section" id="all-jewelry">
- <div class="section-heading"><h2>{t(locale,'All jewelry. Your choice.','すべての商品から選ぶ。')}</h2></div>
+ <div class="section-heading"><h2>{t(locale,'All jewelry','すべての商品')}</h2></div>
  <Disclosure locale={locale} purchaseMarket="japan"/>
  <form class="filters" id="object-filters" data-locale={locale} aria-label={t(locale,'Filter jewelry','ジュエリーの絞り込み')}>
   {groups.map(g=><label>{g.name}<select name={g.key} aria-label={g.name}><option value="">{t(locale,'All options','すべて')}</option>{g.items.map(i=><option value={i.id}>{i.name}</option>)}</select></label>)}

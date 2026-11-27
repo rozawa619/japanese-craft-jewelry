@@ -64,7 +64,7 @@ export const travelAreas:Readonly<Record<string, readonly TravelArea[]>> = {
  nara:[area('nishinokyo','Nishinokyo','西ノ京','sugimura-nishinokyo-gallery'),area('naramachi','Naramachi','ならまち','atelier-ozaki-naramachi'),area('suimoncho','Suimon-chō, near Tōdaiji','水門町・東大寺周辺','je-et-nous-nara-suimoncho')],
  wakayama:[area('mihama-mio','Mio, Mihama','美浜町・三尾','uminekoya-diamond-head-mihama')],
  tottori:[area('aoya','Aoya','青谷','aoya-washi-museum-shop'),area('nichinan','Nichinan','日南','shiroitani-kobo-nichinan')],
- shimane:[area('izumo','Izumo','出雲','menoya-izumo-taisha','okaya-mokugei-izumo-main'),area('matsue','Matsue','松江','kawashima-agate-matsue-main')],
+ shimane:[area('izumo','Izumo','出雲','okaya-mokugei-izumo-main'),area('matsue','Matsue','松江','kawashima-agate-matsue-main')],
  okayama:[area('osafune','Osafune, Setouchi','瀬戸内市・長船','bizen-osafune-fureai-bussankan'),area('kurashiki','Kurashiki','倉敷','aoki-hifuku-kurashiki-honten')],
  hiroshima:[area('hiroshima-city','Hiroshima City','広島市','hiroshima-peace-park-resthouse-shop','hiroshima-ippin-castle-sannomaru','snow-hiroshima-hondori')],
  yamaguchi:[area('yamaguchi-city','Yamaguchi City','山口市','nakamura-ouchi-lacquer-red-pierced-earrings-shop')],

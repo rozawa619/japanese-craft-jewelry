@@ -5,10 +5,10 @@ import {t,type Locale} from '../lib/i18n';
 interface Props {productId:string;locale:Locale;market?:PriceMarket;variant?:'compact'|'detail'|'sticky';primary?:boolean;}
 const {productId,locale,market='japan',variant='compact',primary=false}=Astro.props;
 const value=marketPricesFor(productId)[market];
-const catalogPrice=market==='japan'&&(!value||purchaseEvidenceFor(productId).kind==='retail-and-catalog');
+const onlinePrice=market==='japan'&&value&&purchaseEvidenceFor(productId).kind==='online-order';
 const label=market==='international'?t(locale,'International store reference','海外通販の参考価格')
- :catalogPrice?t(locale,'Japan reference price','国内参考価格')
- :t(locale,'Japan online reference','日本向け通販の参考価格');
+ :onlinePrice?t(locale,'Japan online reference','日本向け通販の参考価格')
+ :t(locale,'Japan reference price','国内参考価格');
 ---
 <span class:list={['market-price',`market-price-${variant}`]} data-market-price-block={market} data-price-product={productId}>
  <span class="market-price-label">{label}</span>

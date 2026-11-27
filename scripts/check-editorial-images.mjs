@@ -5,12 +5,14 @@ import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {collectEditorialImageErrors} from '../src/lib/editorial-images.ts';
 import {trainedAlgorithmicMedia} from './lib/image-generation-manifests.mjs';
+import {loadStylingGenerationManifests} from './lib/styling-generation-manifests.mjs';
 
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const json=async path=>JSON.parse(await readFile(resolve(root,path),'utf8'));
 const catalog=await json('src/data/catalog.json'),registry=await json('src/data/editorial-images.json'),ledger=await json('docs/assets.json');
 const baselinePath='docs/research/image-baseline-v12.json';
 const baseline=existsSync(resolve(root,baselinePath))?await json(baselinePath):null;
+const generation=loadStylingGenerationManifests(root);
 const legacyPaths=new Set((baseline?.files||[]).map(file=>file.path));
 const published=catalog.products.filter(product=>product.publishStatus==='published');
 const withDist=process.argv.includes('--dist');
@@ -72,8 +74,19 @@ if(baseline){
   try{
    if(!safeImagePath.test(old.path))throw new Error('Unsafe baseline file path');
    const bytes=await readFile(resolve(root,'public',old.path));const same=digest(bytes)===old.sha256;if(!same)throw new Error('Existing asset was replaced');
-   for(const id of old.productIds)if(registry[id]?.path!==old.path)throw new Error('An existing product styling binding was replaced: '+id);
-   report.baseline.push({path:old.path,status:'passed',sha256:old.sha256,productBindingsRetained:old.productIds});
+   const productBindingsRetained=[], productBindingsRevised=[];
+   for(const id of old.productIds){
+    const active=registry[id];
+    if(active?.path===old.path){productBindingsRetained.push(id);continue;}
+    const original=ledger.assets.find(asset=>asset.status==='archived'&&asset.source==='public/'+old.path);
+    const revision=generation.byAssetId.get(active?.assetId);
+    if(!original||original.archivedSha256!==old.sha256||original.replacedBy!==active?.assetId||
+     !revision?.productIds.includes(id)||revision.publicPath!=='public/'+active.path||
+     revision.record.replaces?.assetId!==original.id||revision.record.replaces?.sha256!==old.sha256||
+     revision.record.replaces?.publicPath!==original.source)throw new Error('An existing product styling binding was replaced without a recorded archived original: '+id);
+    productBindingsRevised.push(id);
+   }
+   report.baseline.push({path:old.path,status:'passed',sha256:old.sha256,productBindingsRetained,productBindingsRevised});
   }catch(error){report.failures.push({name:'Preserve existing '+old.path,message:String(error)});report.baseline.push({path:old.path,status:'failed'});}
  }
 }else report.failures.push({name:'Preserve existing image files',message:'Frozen v0.12 image baseline missing; preservation is not verified.'});

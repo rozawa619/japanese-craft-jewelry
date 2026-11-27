@@ -35,3 +35,12 @@ test('a posted product remains linked and gets a thumbnail only when the current
  const matched={...post(3,product.id),imageAssetId:current.assetId,siteImagePath:current.path};
  assert.deepEqual(videoJewelryFor([product],[previous,matched]),[{product,image:current}]);
 });
+
+test('a verified archived portrait can use its reviewed revision as the profile thumbnail',()=>{
+ const product={id:'morphosphere-ultramarine-pansy-pierced-earrings',publishStatus:'published'} as const;
+ const current=productImageFor(product.id);
+ assert.ok(current);
+ const archived={...post(1,product.id),imageAssetId:'ai-morphosphere-blue-pansy-styling-v9',siteImagePath:'images/morphosphere-blue-pansy-styling-v9.webp'};
+ assert.deepEqual(videoJewelryFor([product],[archived]),[{product,image:current}]);
+ assert.deepEqual(videoJewelryFor([product],[{...archived,siteImagePath:current.path}]),[{product,image:undefined}]);
+});

@@ -54,6 +54,11 @@ for(const candidate of candidates){if(related.length===3)break;if(!related.some(
 const markets=marketPricesFor(p.id);
 const purchaseEvidence=purchaseEvidenceFor(p.id);
 const hasRetailEvidence=purchaseEvidence.kind==='retail-and-catalog';
+const purchaseNotes={
+ 'retail-and-catalog':t(locale,'Check current prices and stock with the shop.','現在の価格と在庫は取扱店でご確認ください。'),
+ 'online-order':t(locale,'Online reference price in Japan. In-store price is not confirmed.','日本向け通販の参考価格です。実店舗の価格は未確認です。'),
+ 'reservation-inquiry':t(locale,'Ask the maker about reservations, pricing and delivery on the official product page.','予約の受付状況・価格・納期は、公式商品ページの案内からご確認ください。'),
+};
 const allSourceIds=[...new Set([...sourceIds,...(markets.japan?.sourceIds||[]),...(markets.international?.sourceIds||[]),...purchaseEvidence.sourceIds])];
 const hasDestination=markets.japanLinks.length>0;
 const showInternational=!!markets.international||markets.internationalLinks.length>0;
@@ -70,9 +75,7 @@ const destinationNote=t(locale,'Opens the official website in a new tab.','公�
    <Disclosure productIds={[p.id,...related.map(v=>v.id)]} locale={locale} linkIds={visibleMarketLinkIds} compact/>
    <div class="purchase-market-block" data-market-section="japan">
     <MarketPrice productId={p.id} locale={locale} variant="detail" primary/>
-    <p class="purchase-market-note">{hasRetailEvidence
-     ?t(locale,'Check current prices and stock with the shop.','現在の価格と在庫は取扱店でご確認ください。')
-     :t(locale,'Online reference price in Japan. In-store price is not confirmed.','日本向け通販の参考価格です。実店舗の価格は未確認です。')}</p>
+    <p class="purchase-market-note">{purchaseNotes[purchaseEvidence.kind]}</p>
     <PurchaseEvidence productId={p.id} locale={locale}/>
     {p.availability==='out_of_stock'&&<p class="purchase-stock-note">{t(locale,'Out of stock when checked.','確認時点では欠品しています。')}</p>}
     {hasDestination&&<PurchaseSelection productId={p.id} locale={locale}/>}

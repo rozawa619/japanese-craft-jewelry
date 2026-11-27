@@ -433,8 +433,13 @@
       "scope": "Editorial styling only, visibly captioned AIイメージ/AI image; not actual product photography, fit or material evidence.",
       "checkedAt": "2026-11-16",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v9.json"
+      "status": "archived",
+      "promptRecord": "docs/image-generation-v9.json",
+      "replacedBy": "ai-styling-jp-morphosphere-ultramarine-pansy-pierced-earrings-v42",
+      "archivedAt": "2026-11-27",
+      "archivedSha256": "b050fd4e55fb8d70e7c9dec44ac6ed13a486262b6cf74828a946bb9caf3ad39a",
+      "archiveReference": "docs/video/episodes/kyoto-morphosphere-ultramarine-pansy-pierced-earrings.md",
+      "archiveNote": "The original image remains at the same URL for video production records."
     },
     {
       "id": "ai-arita-blue-bouquet-styling-v9",
@@ -1777,8 +1782,11 @@
       "scope": "Original AI detail concept, captioned AIイメージ/AI image with an official real-product link. Not actual product photography, exact SKU, quantity, dimensions or fitting evidence.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-solo-v16.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-solo-v16.json",
+      "retiredAt": "2026-11-27",
+      "localRetiredPath": "public/images/solo-menoya-izumo-magatama-n15-necklace-v16.webp",
+      "retirementReason": "Listing moved to draft after the official product URL returned HTTP 404."
     },
     {
       "id": "ai-styling-menoya-izumo-magatama-n15-necklace-v16",
@@ -1790,8 +1798,11 @@
       "scope": "Original fictional-adult styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of real wear, fit or materials.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-v16.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-v16.json",
+      "retiredAt": "2026-11-27",
+      "localRetiredPath": "public/images/styling-menoya-izumo-magatama-n15-necklace-v16.webp",
+      "retirementReason": "Listing moved to draft after the official product URL returned HTTP 404."
     },
     {
       "id": "ai-solo-mitsusuke-higo-zogan-shizuku-pierced-earrings-v16",
@@ -2138,8 +2149,13 @@
       "scope": "Original fictional-adult AI styling concept, captioned AIイメージ/AI image. Not actual product photography or evidence of wear, fit, exact SKU, scale or materials.",
       "checkedAt": "2026-11-17",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-japanese-v23.json"
+      "status": "archived",
+      "promptRecord": "docs/image-generation-japanese-v23.json",
+      "replacedBy": "ai-styling-jp-somemasa-peacock-clip-on-earrings-v42",
+      "archivedAt": "2026-11-27",
+      "archivedSha256": "f6365eefb124e4661387dacfdc66a949535dcda8d3d60cace998067fc9dd8be4",
+      "archiveReference": "docs/video/kyoto-series-plan.json",
+      "archiveNote": "The original image remains at the same URL for video production records."
     },
     {
       "id": "ai-styling-jp-toytoy-sirokani-pe-silver-necklace-v23",
@@ -4046,8 +4062,11 @@
       "scope": "Editorial image with a visible AI label and a link to the actual product at the official seller.",
       "checkedAt": "2026-11-24",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-styling-v38.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-styling-v38.json",
+      "replacedBy": "ai-styling-jp-yoboty-inshu-washi-byaku-shooting-star-pierced-earrings-v42",
+      "retiredAt": "2026-11-27",
+      "localRetiredPath": "public/images/styling-jp-yoboty-inshu-washi-byaku-shooting-star-pierced-earrings-v38.webp"
     },
     {
       "id": "ai-solo-yoboty-inshu-washi-byaku-shooting-star-pierced-earrings-v38",
@@ -4572,8 +4591,11 @@
       "scope": "Editorial image with a visible AI label and a link to the actual product at the official seller.",
       "checkedAt": "2026-11-24",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-styling-v39.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-styling-v39.json",
+      "replacedBy": "ai-styling-jp-iriser-essence-clear-glass-chain-ring-v42",
+      "retiredAt": "2026-11-27",
+      "localRetiredPath": "public/images/styling-jp-iriser-essence-clear-glass-chain-ring-v39.webp"
     },
     {
       "id": "ai-solo-iriser-essence-clear-glass-chain-ring-v39",
@@ -4974,8 +4996,11 @@
       "scope": "Editorial image with a visible AI label and a link to the actual product at the official seller.",
       "checkedAt": "2026-11-24",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-styling-v39.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-styling-v39.json",
+      "replacedBy": "ai-styling-jp-ozaki-ishii-its-indigo-wood-five-bead-necklace-v42",
+      "retiredAt": "2026-11-27",
+      "localRetiredPath": "public/images/styling-jp-ozaki-ishii-its-indigo-wood-five-bead-necklace-v39.webp"
     },
     {
       "id": "ai-solo-ozaki-ishii-its-indigo-wood-five-bead-necklace-v39",
@@ -5104,8 +5129,11 @@
       "scope": "Editorial image with a visible AI label and a link to the actual product at the official seller.",
       "checkedAt": "2026-11-24",
       "productImage": false,
-      "status": "active",
-      "promptRecord": "docs/image-generation-styling-v39.json"
+      "status": "retired",
+      "promptRecord": "docs/image-generation-styling-v39.json",
+      "replacedBy": "ai-styling-jp-popolo-yukiiro-white-mino-square-tile-ring-straight-v42",
+      "retiredAt": "2026-11-27",
+      "localRetiredPath": "public/images/styling-jp-popolo-yukiiro-white-mino-square-tile-ring-straight-v39.webp"
     },
     {
       "id": "ai-solo-popolo-yukiiro-white-mino-square-tile-ring-straight-v39",
@@ -5515,6 +5543,84 @@
       "productImage": false,
       "status": "active",
       "promptRecord": "docs/image-generation-styling-v41.json"
+    },
+    {
+      "id": "ai-styling-jp-morphosphere-ultramarine-pansy-pierced-earrings-v42",
+      "kind": "AI-generated editorial styling image",
+      "source": "public/images/styling-jp-morphosphere-ultramarine-pansy-pierced-earrings-v42.webp",
+      "rightsHolder": "Project-generated illustration",
+      "permissionBasis": "Built-in image generation edited only the project-owned styling image.",
+      "creditRequired": false,
+      "scope": "Editorial styling image with a visible AI label.",
+      "checkedAt": "2026-11-27",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-styling-v42.json"
+    },
+    {
+      "id": "ai-styling-jp-somemasa-peacock-clip-on-earrings-v42",
+      "kind": "AI-generated editorial styling image",
+      "source": "public/images/styling-jp-somemasa-peacock-clip-on-earrings-v42.webp",
+      "rightsHolder": "Project-generated illustration",
+      "permissionBasis": "Built-in image generation edited only the project-owned styling image.",
+      "creditRequired": false,
+      "scope": "Editorial styling image with a visible AI label.",
+      "checkedAt": "2026-11-27",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-styling-v42.json"
+    },
+    {
+      "id": "ai-styling-jp-ozaki-ishii-its-indigo-wood-five-bead-necklace-v42",
+      "kind": "AI-generated editorial styling image",
+      "source": "public/images/styling-jp-ozaki-ishii-its-indigo-wood-five-bead-necklace-v42.webp",
+      "rightsHolder": "Project-generated illustration",
+      "permissionBasis": "Built-in image generation edited only the project-owned styling image.",
+      "creditRequired": false,
+      "scope": "Editorial styling image with a visible AI label.",
+      "checkedAt": "2026-11-27",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-styling-v42.json"
+    },
+    {
+      "id": "ai-styling-jp-yoboty-inshu-washi-byaku-shooting-star-pierced-earrings-v42",
+      "kind": "AI-generated editorial styling image",
+      "source": "public/images/styling-jp-yoboty-inshu-washi-byaku-shooting-star-pierced-earrings-v42.webp",
+      "rightsHolder": "Project-generated illustration",
+      "permissionBasis": "Built-in image generation edited only the project-owned styling image.",
+      "creditRequired": false,
+      "scope": "Editorial styling image with a visible AI label.",
+      "checkedAt": "2026-11-27",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-styling-v42.json"
+    },
+    {
+      "id": "ai-styling-jp-iriser-essence-clear-glass-chain-ring-v42",
+      "kind": "AI-generated editorial styling image",
+      "source": "public/images/styling-jp-iriser-essence-clear-glass-chain-ring-v42.webp",
+      "rightsHolder": "Project-generated illustration",
+      "permissionBasis": "Built-in image generation edited only the project-owned styling image.",
+      "creditRequired": false,
+      "scope": "Editorial styling image with a visible AI label.",
+      "checkedAt": "2026-11-27",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-styling-v42.json"
+    },
+    {
+      "id": "ai-styling-jp-popolo-yukiiro-white-mino-square-tile-ring-straight-v42",
+      "kind": "AI-generated editorial styling image",
+      "source": "public/images/styling-jp-popolo-yukiiro-white-mino-square-tile-ring-straight-v42.webp",
+      "rightsHolder": "Project-generated illustration",
+      "permissionBasis": "Built-in image generation edited only the project-owned styling image.",
+      "creditRequired": false,
+      "scope": "Editorial styling image with a visible AI label.",
+      "checkedAt": "2026-11-27",
+      "productImage": false,
+      "status": "active",
+      "promptRecord": "docs/image-generation-styling-v42.json"
     }
   ],
   "productPhotography": [

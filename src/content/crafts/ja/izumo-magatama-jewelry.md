@@ -2,7 +2,7 @@
 title: "出雲型勾玉ジュエリー"
 description: "島根のめのやにつながる丸みのある勾玉を、現代の紐のネックレスから紹介します。"
 locale: ja
-publishStatus: published
+publishStatus: draft
 updatedAt: "2026-11-17"
 sourceIds: ["menoya-izumo-form-v16","menoya-company-v16","menoya-n15-current-v16"]
 craftId: izumo-magatama-jewelry

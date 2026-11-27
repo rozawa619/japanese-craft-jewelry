@@ -20,6 +20,15 @@ test('a researched product-specific online route is accepted without mutating th
  const f=fixture(),before=JSON.stringify(f);assert.deepEqual(errors(f),[]);assert.equal(JSON.stringify(f),before);
 });
 
+test('a reservation inquiry still requires the exact documented product page',()=>{
+ const f=fixture();
+ f.evidence.products[0].kind='reservation-inquiry';
+ assert.deepEqual(errors(f),[]);
+ f.catalog.links[0].officialProductUrl='https://maker.example/contact';
+ f.sources[0].url=f.catalog.links[0].officialProductUrl;
+ assert.match(errors(f).join('\n'),/reservation route needs a specific product page/);
+});
+
 test('a bilingual listing selection must be supported by the exact official page',()=>{
  const f=fixture();
  const option={sourceId:'test-item-source',label:{ja:'内部試験用',en:'Internal option'}};

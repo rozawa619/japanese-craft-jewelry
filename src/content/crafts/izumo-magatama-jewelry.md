@@ -2,7 +2,7 @@
 title: "Izumo-style magatama jewelry"
 description: "The rounded magatama form associated with Shimane maker Menoya, introduced through a contemporary cord necklace."
 locale: en
-publishStatus: published
+publishStatus: draft
 updatedAt: "2026-11-17"
 sourceIds: ["menoya-izumo-form-v16","menoya-company-v16","menoya-n15-current-v16"]
 craftId: izumo-magatama-jewelry

@@ -1,7 +1,7 @@
 ---
 productId: menoya-izumo-magatama-n15-necklace
 locale: ja
-publishStatus: published
+publishStatus: draft
 ---
 
 大きな金属の枠がなくても、勾玉の丸いカーブが目に留まる。石のかたちと、淡い紐のやわらかな線が、同じ胸元で違う表情をつくります。石だけでなく、紐も含めた組合せに惹かれる品として選びました。

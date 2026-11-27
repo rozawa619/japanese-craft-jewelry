@@ -4,9 +4,14 @@ import {t,type Locale} from '../lib/i18n';
 interface Props{productId:string;locale:Locale}
 const {productId,locale}=Astro.props;
 const evidence=purchaseEvidenceFor(productId);
+const labels={
+ 'online-order':t(locale,'Official online ordering checked','公式通販の注文受付を確認'),
+ 'reservation-inquiry':t(locale,'Official reservation instructions checked','公式の予約案内を確認'),
+ 'retail-and-catalog':t(locale,'Retail shop and current catalog checked','実店舗と現行カタログを確認'),
+};
 ---
 <p class="purchase-evidence" data-purchase-evidence={evidence.kind} data-purchase-checked-at={evidence.checkedAt}>
- <span>{evidence.kind==='online-order'?t(locale,'Official online ordering checked','公式通販の注文受付を確認'):t(locale,'Retail shop and current catalog checked','実店舗と現行カタログを確認')}</span>
+ <span>{labels[evidence.kind]}</span>
  <time datetime={evidence.checkedAt}>{evidence.checkedAt}</time>
 </p>
 <style>

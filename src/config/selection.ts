@@ -6,7 +6,6 @@ export const selection={
   'yadome-akita-rice-silver-pierced-earrings',
   'shimadzu-satsuma-kiriko-hikari-l-pendant',
   'nanayosha-punu-gold-vanilla-pierced-earrings',
-  'menoya-izumo-magatama-n15-necklace',
   'tete-ryukyu-glass-hanagasa-heart-pierced-earrings',
   'sur-basic1-clear-pearl-pierced-earrings',
   'applause-awa-indigo-pearl-clip-on-earrings',

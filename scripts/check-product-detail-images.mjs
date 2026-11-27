@@ -15,7 +15,11 @@ let generation;
 await check('Every published product has a documented AI detail illustration',()=>{
  const errors=collectEditorialImageErrors(registry,catalog.products,ledger.assets);if(errors.length)throw Error(errors.join('\n'));
  generation=loadSoloGenerationManifests(root);
- const expected=Object.keys(registry).sort(),actual=[...generation.byProductId.keys()].sort();
+ const drafts=new Set(catalog.products.filter(product=>product.publishStatus==='draft').map(product=>product.id));
+ const retired=ledger.assets.filter(asset=>asset.status==='retired');
+ const activeRecords=[...generation.byProductId].filter(([id,record])=>!drafts.has(id)||
+  !retired.some(asset=>asset.id===record.assetId&&asset.localRetiredPath===record.publicPath));
+ const expected=Object.keys(registry).sort(),actual=activeRecords.map(([id])=>id).sort();
  if(JSON.stringify(expected)!==JSON.stringify(actual))throw Error('Generation coverage differs from the active detail registry');
  return{products:expected.length,manifests:generation.manifests};
 });

@@ -48,7 +48,7 @@ export const regionalRepresentatives: Record<string,string> = {
   tottori:'yoboty-inshu-washi-indigo-long-nonhole-earrings',
   okinawa:'tete-ryukyu-glass-hanagasa-heart-pierced-earrings',
   kumamoto:'mitsusuke-higo-zogan-shizuku-pierced-earrings',
-  shimane:'menoya-izumo-magatama-n15-necklace',
+  shimane:'okaya-izumo-kurogaki-faceted-bead-necklace',
   osaka:'senshu-pearl-stud-earrings',
   chiba:'arcos-cosmic-spiral-pendant',
   nara:'sugimura-hosoge-raden-pendant',

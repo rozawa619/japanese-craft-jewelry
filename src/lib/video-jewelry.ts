@@ -1,4 +1,5 @@
 import registry from '../../docs/video/tiktok-publication-registry.json' with {type:'json'};
+import assetLedger from '../../docs/assets.json' with {type:'json'};
 import {productImageFor,type EditorialImage} from './editorial-images.ts';
 import type {Product} from './schema.ts';
 
@@ -10,6 +11,7 @@ type VideoMatch={
  siteImagePath?:string|null;
 };
 const videoPrefix=registry.account.profileUrl.replace(/\/$/,'')+'/video/';
+const archivedImages=assetLedger.assets.filter(asset=>asset.status==='archived');
 
 export function videoJewelryFor<T extends Pick<Product,'id'|'publishStatus'>>(
  products:readonly T[], posts:readonly VideoMatch[]=registry.knownPostLinks,
@@ -24,7 +26,10 @@ export function videoJewelryFor<T extends Pick<Product,'id'|'publishStatus'>>(
   const previous=matches.get(product.id);
   if(previous?.image)continue;
   const current=productImageFor(product.id);
-  const image=current&&current.assetId===post.imageAssetId&&current.path===post.siteImagePath?current:undefined;
+  const sameImage=current&&current.assetId===post.imageAssetId&&current.path===post.siteImagePath;
+  const revisedImage=current&&archivedImages.some(asset=>asset.id===post.imageAssetId&&
+   asset.source==='public/'+post.siteImagePath&&asset.replacedBy===current.assetId);
+  const image=sameImage||revisedImage?current:undefined;
   if(!previous||image)matches.set(product.id,{product,image});
  }
  return [...matches.values()];

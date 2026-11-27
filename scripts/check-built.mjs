@@ -177,9 +177,13 @@ for (const [file, page] of pages) {
           if(selections.length!==1||selections[0].attrs['data-purchase-selection']!==evidence.linkId||!actions.some(action=>action.attrs['data-market-link-id']===evidence.linkId))fail(file,'the verified listing selection must be visible beside its purchase link');
         }else if(selections.length)fail(file,'a listing selection requires verified evidence');
         const catalogRoute=evidence.kind==='retail-and-catalog';
-        const routeLabel=catalogRoute?(locale==='ja'?'公式カタログを見る':'Official catalog'):(locale==='ja'?'公式通販を見る':'Official shop');
+        const routeLabels={
+          'retail-and-catalog':locale==='ja'?'公式カタログを見る':'Official catalog',
+          'online-order':locale==='ja'?'公式通販を見る':'Official shop',
+          'reservation-inquiry':locale==='ja'?'公式の予約案内を見る':'Official reservation details',
+        };
         for(const action of actions){
-          const expected=action.attrs['data-market-link-id']===evidence.linkId?routeLabel:(locale==='ja'?'日本向け公式ページ':'Japan official listing');
+          const expected=action.attrs['data-market-link-id']===evidence.linkId?routeLabels[evidence.kind]:(locale==='ja'?'日本向け公式ページ':'Japan official listing');
           const labelStart=tokenSource.indexOf('>',action.index)+1;
           if(!tokenSource.startsWith(expected+' ',labelStart))fail(file,'primary action label must reflect the confirmed purchase route for its link');
         }

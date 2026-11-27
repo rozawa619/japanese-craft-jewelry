@@ -7,7 +7,7 @@ const id=z.string().regex(/^[a-z0-9-]+$/);
 const date=z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine(value=>{const stamp=Date.parse(value+'T00:00:00Z');return Number.isFinite(stamp)&&new Date(stamp).toISOString().slice(0,10)===value});
 const listingLabel=z.string().trim().min(1);
 export const purchaseEvidenceSchema=z.object({products:z.array(z.object({
- productId:id,checkedAt:date,kind:z.enum(['online-order','retail-and-catalog']),linkId:id,storeIds:z.array(id),sourceIds:z.array(id).min(1),
+ productId:id,checkedAt:date,kind:z.enum(['online-order','reservation-inquiry','retail-and-catalog']),linkId:id,storeIds:z.array(id),sourceIds:z.array(id).min(1),
  listingSelection:z.object({sourceId:id,label:z.object({ja:listingLabel,en:listingLabel}).strict()}).strict().optional(),
 }).strict())}).strict();
 export type PurchaseEvidence=z.infer<typeof purchaseEvidenceSchema>;
@@ -43,13 +43,13 @@ export function collectPurchaseEvidenceErrors(input:unknown,catalog:EvidenceCata
   const home=safeHttps(merchant?.url);
   const official=home&&link?isAllowedDestination(link.officialProductUrl,[new URL(home).hostname]):null;
   if(!official)errors.push('Purchase evidence needs this product’s valid official merchant link: '+record.productId);
-  if(official&&record.kind==='online-order'){
+  if(official&&record.kind!=='retail-and-catalog'){
    const page=new URL(official);
    const queryProduct=['pid','id','item_id','itemcode','product_id','productId'].some(key=>!!page.searchParams.get(key));
    const rootLike=/^\/(?:index\.(?:html?|php))?$/i.test(page.pathname);
    const listing=/^\/(?:about|gallery|company|contact|shop-list|catalog|collections|view\/category)(?:\/|\.|$)/i.test(page.pathname);
    const specificShopify=/\/products\/[^/]+\/?$/i.test(page.pathname);
-   if((rootLike&&!queryProduct)||(listing&&!specificShopify))errors.push('An online order route needs a specific product page, not a homepage or gallery: '+record.productId);
+   if((rootLike&&!queryProduct)||(listing&&!specificShopify))errors.push('An online order or reservation route needs a specific product page, not a homepage or gallery: '+record.productId);
   }
   const evidence=record.sourceIds.flatMap(id=>{const source=sources.find(source=>source.id===id);if(!source||source.access!=='body_read'){errors.push('Purchase evidence requires a body-read official source: '+record.productId+'/'+id);return []}return [source]});
   const listingSources=official?evidence.filter(source=>product.sourceIds.includes(source.id)&&samePage(source.url,official)):[];
