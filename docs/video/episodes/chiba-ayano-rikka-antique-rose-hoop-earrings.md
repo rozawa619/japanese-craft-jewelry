@@ -1,6 +1,6 @@
 # SORA 千葉編 第1話｜つまみかんざし彩野 rikka -六花-（アンティークローズ）
 
-2026-11-27（JST）。松戸のつまみかんざし彩野が手がける、絹の花を付けたフープの耳飾り。サイト原本では、淡いベージュのブラウスと画面右のくすみローズの花が見える。制作状況は `prompt_ready`。
+2026-11-27（JST）。松戸のつまみかんざし彩野が手がける、絹の花を付けたフープの耳飾り。サイト原本では、淡いベージュのブラウスと画面右のくすみローズの花が見える。指示文準備時点の制作状況は `prompt_ready`。添付動画の確認結果は後述。
 
 - エピソードIDは `chiba-ayano-rikka-antique-rose-hoop-earrings`。商品IDは `ayano-rikka-antique-rose-hoop-earrings`。
 - 女性画像IDは `ai-styling-jp-ayano-rikka-antique-rose-hoop-earrings-v43`。元画像は `public/images/styling-jp-ayano-rikka-antique-rose-hoop-earrings-v43.webp`（1536×1024）。
@@ -37,3 +37,26 @@ No additional dialogue, mirroring, extra jewelry, on-screen text, logos or music
 - 0秒・0.5秒・1秒で、両目・口元・画面右のフープ全体に余白があるか確認する。
 - 発話中と後半に、フープと花の形、着用位置、見える数、頬・口元・あごのほくろや濃い点を原本と照合する。
 - 一言の発音・追加発話・口の動きを確認する。動画の確認とTikTok公開照合の結果を台帳に記録する。
+
+## 添付動画の確認（2026-11-27 JST）
+
+- 512×910、30fps、10秒。0秒・0.5秒・1秒の各フレームで、両目、口元、画面右のフープと花全体が余白付きで収まる。
+- 2秒・3.5秒・5秒・7秒・9.5秒の確認フレームでは、画面右に細いフープとくすみローズの花が一つ見える。後半の頬・口元まわり・あごに目立つほくろや単独の濃い点は見当たらなかった。
+- 全編と音声、Flowの実際のモード・モデル、SNS公開は未確認。
+
+## Instagramリール紹介文
+
+2026-11-27（JST）作成。下書き。
+
+```text
+Meet me in Matsudo, Chiba 🌸
+A dusty-rose silk flower on a slender hoop. Inspired by Tsumami Kanzashi Ayano’s rikka earrings, made using Edo tsumami-zaiku fabric folding.
+
+千葉・松戸で待ち合わせ。
+淡いベージュのブラウスに、くすみローズの花がそっと映える。
+つまみかんざし彩野が江戸つまみ細工で絹の花びらを仕立てた「rikka -六花-（アンティークローズ）」をモチーフにしました。
+
+AIで描いた旅のワンシーン｜AI-generated video
+
+#SORA旅先で待ち合わせ #千葉 #つまみ細工 #Chiba #JapaneseJewelry
+```
