@@ -93,3 +93,29 @@ AI-generated styling video.
 
 #SORA旅先で待ち合わせ #千葉 #九十九里 #イヤーカフ #JapaneseJewelry
 ```
+
+## 新しい添付動画の確認
+
+2026-11-28（JST）。10秒の別テイク（512×910、30fps）をサイトの着用原本 `styling-jp-sghr-kolmio-glass-ear-cuff-v23.webp` と目視で照合。まとめ髪、ベージュのジャケット、画面左側の耳の外にある淡い青灰色のイヤーカフが一致する。
+
+- 0・0.5・1秒は髪の上と頬の外側に背景の余白があり、両目・口元・カフが収まる。初回の添付にあった冒頭の目と口元の見切れは、今回の抜き出しでは見られない。
+- 2・3.5・5・7・9.5秒でも、同じ耳の外側に丸みのある三角形のカフが一つ見える。確認した範囲の頬・口元・あごに目立つほくろや濃い点は見当たらなかった。
+- 発話・発音・追加の台詞・リップシンク、通し再生、実際のFlow設定と投稿照合は未確認。
+
+## Instagramリール紹介文
+
+2026-11-28（JST）。投稿用下書き。
+
+```text
+Meet me in Kujukuri, Chiba 🌊
+Can you spot the tiny triangle of pale blue glass by my ear?
+Inspired by Sghr’s Kolmio glass ear cuff.
+
+千葉・九十九里で待ち合わせ。
+ねえ、耳元の小さな三角、見える？
+まとめ髪からのぞく、淡い青のガラス。Sghrのイヤーカフ「コルミオ」をモチーフにしました。
+
+AIで描いた旅のワンシーン｜AI-generated video
+
+#SORA旅先で待ち合わせ #千葉 #ガラスイヤーカフ #Chiba #JapaneseJewelry
+```
