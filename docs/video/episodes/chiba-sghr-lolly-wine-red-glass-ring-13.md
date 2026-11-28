@@ -42,7 +42,7 @@ No extra dialogue, hand gestures, added jewelry, camera movement, mirrored frami
 
 2026-11-28（JST）。10秒の添付（512×910、30fps）を、着用原本 `styling-jp-sghr-lolly-wine-red-glass-ring-13-v37.webp` と照合した。水色のジャケットと白いトップス、顔の横に上げた手、丸みのあるワインレッドのガラスリングが一致する。
 
-- 0・0.5・1秒では、両目・口元・指輪・着用側の指先が収まる。手の右側の余白は狭い。3秒では親指側が右端に寄り、3.5秒では手の親指側の輪郭が右端でわずかに見切れる。
+- 0・0.5・1秒では、両目・口元・指輪・着用側の指先が収まる。手の右側の余白は狭い。2.73秒で親指の一部が画面右端で見切れ、3.5秒付近でも手の親指側の輪郭が右端にかかる。
 - 確認した0〜9.5秒の12フレームで、指輪は同じ指に1個見える。確認範囲の頬・口周り・あごに目立つほくろや濃い点は見当たらなかった。
 - 右側の画角は要修正。通し再生、発話・発音・追加の台詞・リップシンク、実際のFlow設定と投稿照合は未確認。
 
@@ -62,4 +62,26 @@ Inspired by Sghr’s Lolly glass ring.
 AIで描いた旅のワンシーン｜AI-generated video
 
 #SORA旅先で待ち合わせ #千葉 #ガラスリング #Chiba #JapaneseJewelry
+```
+
+## TikTok紹介文
+
+2026-11-28（JST）下書き。顔の横にかざした指輪と水色のジャケットをもとに作成。実際のセリフと投稿URLは未確認。
+
+```text
+今日の差し色、この赤はどう？ 🍷
+
+千葉・九十九里で待ち合わせ。
+頬の横で、ワインレッドのガラスがきらり。水色のジャケットの差し色に。
+
+Sghr｜ガラスリング ロリー ワインレッド（13号）
+あなたなら、水色のジャケットと黒のワンピース、どっちに合わせる？
+
+Meet me in Kujukuri, Chiba. Glossy wine-red glass adds a pop of color to a pale blue jacket in this look inspired by Sghr’s Lolly ring.
+Would you pair it with a pale blue jacket or a black dress?
+
+※映像はAIで制作した着用イメージです。
+AI-generated styling video.
+
+#SORA旅先で待ち合わせ #千葉 #九十九里 #ガラスリング #JapaneseJewelry
 ```
