@@ -6,8 +6,8 @@
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
-  "currentEpisodeId": "chiba-sghr-kolmio-glass-ear-cuff",
-  "nextAction": "Check the Japanese line, pronunciation, any extra dialogue and lip sync in the wider Chiba episode 5 take. Confirm TikTok publication only by matching an actual post URL to the product and video.",
+  "currentEpisodeId": "chiba-arcos-cosmic-glass-bracelet",
+  "nextAction": "Review the full supplied take for hand and bracelet continuity, the exact Japanese line, pronunciation, any extra dialogue and lip sync. Record the matching Instagram or TikTok URL after verifying publication.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -661,7 +661,7 @@
         "arcos-cosmic-glass-bracelet"
       ],
       "status": "generated_unreviewed",
-      "summary": "Matched the supplied 10-second Chiba episode 6 take to Atelier ARCOS’s Cosmic Sparkle glass bracelet. The face, bracelet and fingertips fit the sampled opening. The bilingual Instagram caption draft is saved.",
+      "summary": "Matched the supplied 10-second Chiba episode 6 take to Atelier ARCOS’s Cosmic Sparkle glass bracelet. The face, bracelet and fingertips fit the sampled opening. Bilingual Instagram and TikTok caption drafts are saved.",
       "femaleImageAssetId": "ai-arcos-cosmic-glass-bracelet-styling-v9",
       "femaleImagePath": "public/images/arcos-cosmic-glass-bracelet-styling-v9.webp",
       "femaleImageDimensions": "1536x1024",
@@ -676,7 +676,8 @@
       "instagramCaption": {
         "status": "draft",
         "postUrl": null
-      }
+      },
+      "captionDraft": "手首に、小さな宇宙。見える？ 💫\n\n千葉・鴨川で待ち合わせ。\nテーブル越しに、深い青と水色が重なるガラスがきらり。\n\nガラス工房アルコス｜宇宙のキラキラ ガラスブレスレット\nこの青を見て思い浮かぶのは、星空？ それとも海？\n\nMeet me in Kamogawa, Chiba. Across the table, a glass bracelet catches the light in shades of deep blue and aqua, inspired by Atelier ARCOS’s Cosmic Sparkle.\nDoes this blue remind you of the night sky or the sea?\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #千葉 #鴨川 #ガラスブレスレット #JapaneseJewelry"
     },
     {
       "id": "chiba-sghr-lolly-wine-red-glass-ring-13",
@@ -994,6 +995,10 @@
     {
       "date": "2026-11-28",
       "summary": "Matched the supplied clip to the Chiba episode 6 ARCOS bracelet reference, logged sampled framing and saved the bilingual Instagram caption draft."
+    },
+    {
+      "date": "2026-11-28",
+      "summary": "Saved the bilingual TikTok caption for the supplied Chiba episode 6 ARCOS bracelet take. The caption reflects the view across the table and the blue-to-aqua glass."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -1033,5 +1038,5 @@
     "firstSuggestedProductId": "ayano-rikka-antique-rose-hoop-earrings",
     "explanation": "All ten currently published Tokyo products have generation records. Chiba has seven published products. The Ayano original fits the eyes, mouth and complete hoop in a 9:16 window and is unused in the available records."
   },
-  "previousWorkCurrentEpisodeId": "chiba-sghr-lolly-wine-red-glass-ring-13"
+  "previousWorkCurrentEpisodeId": "chiba-sghr-kolmio-glass-ear-cuff"
 }

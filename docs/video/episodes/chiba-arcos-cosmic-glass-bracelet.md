@@ -63,3 +63,25 @@ AIで描いた旅のワンシーン｜AI-generated video
 
 #SORA旅先で待ち合わせ #千葉 #ガラスブレスレット #Chiba #JapaneseJewelry
 ```
+
+## TikTok紹介文
+
+2026-11-28（JST）下書き。テーブル越しに見える手元とガラスの色をもとに作成。投稿URLは未照合。
+
+```text
+手首に、小さな宇宙。見える？ 💫
+
+千葉・鴨川で待ち合わせ。
+テーブル越しに、深い青と水色が重なるガラスがきらり。
+
+ガラス工房アルコス｜宇宙のキラキラ ガラスブレスレット
+この青を見て思い浮かぶのは、星空？ それとも海？
+
+Meet me in Kamogawa, Chiba. Across the table, a glass bracelet catches the light in shades of deep blue and aqua, inspired by Atelier ARCOS’s Cosmic Sparkle.
+Does this blue remind you of the night sky or the sea?
+
+※映像はAIで制作した着用イメージです。
+AI-generated styling video.
+
+#SORA旅先で待ち合わせ #千葉 #鴨川 #ガラスブレスレット #JapaneseJewelry
+```
