@@ -20,14 +20,14 @@
 
 ## 現在の公開版
 
-| 項目 | 2026-11-27（JST）確認時点 |
+| 項目 | 2026-11-28（JST）確認時点 |
 | --- | --- |
-| アプリ | **v0.30.0**、アプリSHA `b6402048d28bfc0d07fc88a47b65fca291e4044c` |
-| 配信 | GitHub Pages。2026-11-27 11:08 JSTに配信完了。 [GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45926470043) |
-| 照合 | [043の検証](../specs/043-osaka-chiba-craft-jewelry/validation.md)・[公開記録](deployment-results.json) |
-| 商品・地域 | 登録185点、公開178点、下書き7点。47都道府県を掲載。東京10点、大阪6点、千葉7点、島根2点 |
-| 工芸・購入先 | 公開に紐づく技法107件（全109件）、出典803件。82店舗、店舗案内付き126商品。購入根拠は通販168点、予約問い合わせ1点、店舗とカタログ9点 |
-| 画像 | サイト表示用AI画像354枚（着用176・単体178）。大阪と千葉の3点に計6枚を追加。京都の動画原本3枚は既存URLで参照可能 |
+| アプリ | **v0.31.0**、アプリSHA `933685df021fb142d4f2b77c4dd60caf738155e2` |
+| 配信 | GitHub Pages。2026-11-28 16:25 JSTに配信完了。 [GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/46121103414) |
+| 照合 | [044の検証](../specs/044-top10-seven-craft-jewelry/validation.md)・[公開記録](deployment-results.json) |
+| 商品・地域 | 登録196点、公開189点、下書き7点。47都道府県を掲載。Top10の全県7点以上、島根2点 |
+| 工芸・購入先 | 公開に紐づく技法114件（全116件）、出典828件。82店舗、店舗案内付き127商品。購入根拠は通販179点、予約問い合わせ1点、店舗とカタログ9点 |
+| 画像 | サイト表示用AI画像376枚（着用187・単体189）。新11商品に計22枚を追加。京都の動画原本3枚は既存URLで参照可能 |
 | 広告 | 実アフィリエイトは未申請で通常の公式リンクを使用。AdSenseはオフ。 [提携準備](affiliate-readiness.md)・[運営上の残条件](remaining-task-audit-v17.md) |
 
 Astro 7・TypeScript・Zodを使う日英の静的サイトです。日本地図から産地を選び、商品一覧の絞り込み、工芸・素材のページ、商品詳細へ進めます。商品詳細には価格、公式通販または取扱店の案内、出典を掲載します。店舗のGoogle Mapsは利用者の許可に応じて表示します。サイトの運営範囲は紹介と外部の販売先への案内です。 [技術構成](architecture.md)
@@ -53,6 +53,7 @@ Astro 7・TypeScript・Zodを使う日英の静的サイトです。日本地図
 | [041](../specs/041-image-quality-corrections/spec.md) | 手指、イヤリングの留め位置、顔の見切れ、単体画像の余分なチェーンを計6枚で修正 |
 | [042](../specs/042-site-visual-review/spec.md) | 着用6枚とスマホの見出しを修正。「光衣 L」を予約案内へ変更し、旧販売ページが404のN-15を下書きに戻した |
 | [043](../specs/043-osaka-chiba-craft-jewelry/spec.md) | 大阪の蜻蛉玉ブローチ、千葉のつまみ細工と銀のペンダントトップを追加 |
+| [044](../specs/044-top10-seven-craft-jewelry/spec.md) | 6地域に11商品を追加し、Top10の各都道府県が7点以上、全国189点 |
 
 ### 編集・検証の正本
 
@@ -111,7 +112,7 @@ https://github.com/rozawa619/japanese-craft-jewelry/blob/main/docs/SITE_NEW_CHAT
 日本語 https://rozawa619.github.io/japanese-craft-jewelry/ja/
 英語 https://rozawa619.github.io/japanese-craft-jewelry/en/
 
-まず最新のmainを確認し、引継ぎ書、START_HERE.md、AGENTS.md、docs/handoff-status.json、docs/deployment-results.jsonを実際に読んでください。mainのHEAD、実公開アプリのバージョンとSHA、GitHub Actions、公開URLの状態を照合してください。引継ぎ時点はv0.29.1。仕様041で着用5枚と単体1枚の画像を修正しました。江戸切子、東京銀器、東京七宝、江戸刺繍、江戸漆器の5点を加え、東京10点、全国176点を紹介しています。47都道府県すべて各3点以上です。購入の条件は日英の商品詳細で、江戸川・松江の予約制工房は旅先検索で確認できます。日英の旅先検索で地方→都道府県→訪問エリア→商品へ進めます。v0.24.1のモバイル修正・WebKit検証は仕様035の履歴、現行版の確認範囲は仕様041の検証記録を参照してください。実機iPhone／Safariにはアクセスできず未検証です。SORAプロフィールからは公開動画と照合した京都4・神奈川7商品の詳細へ進めます。以後の変更があれば、GitHubの最新記録と実URLを優先してください。
+まず最新のmainを確認し、引継ぎ書、START_HERE.md、AGENTS.md、docs/handoff-status.json、docs/deployment-results.jsonを実際に読んでください。mainのHEAD、実公開アプリのバージョンとSHA、GitHub Actions、公開URLの状態を照合してください。引継ぎ時点はv0.31.0。Top10の各都道府県に産地関連商品が7点以上あり、全国47都道府県189点を紹介しています。直近は大阪・福岡・奈良・山梨・北海道・愛知の11点です。日英の旅先検索、都道府県ごとの絞り込み、商品詳細の購入条件・出典を確認してください。現行版の確認範囲は仕様044の検証記録にあります。実機iPhoneとSNS内ブラウザーは未検証です。以降の変更がある場合はGitHubの最新記録と公開URLを確認してください。
 
 最初はコードと公開設定を変更せず、現在地、確認できたことと未確認事項、次の優先候補とおすすめの1件を報告してください。各候補に効果、変更対象、依存条件、検証方法を添えてください。次の作業はこちらで指定します。
 

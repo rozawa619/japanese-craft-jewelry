@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-27T01:37:12.950Z",
+  "updatedAt": "2026-11-28T07:30:27.648115+00:00",
   "entryPoint": "START_HERE.md",
   "project": {
     "name": "Japanese Craft Jewelry",
@@ -30,16 +30,16 @@
     "siteGuide": "docs/SITE_NEW_CHAT_HANDOFF.md"
   },
   "production": {
-    "version": "0.30.0",
-    "applicationCommit": "b6402048d28bfc0d07fc88a47b65fca291e4044c",
+    "version": "0.31.0",
+    "applicationCommit": "933685df021fb142d4f2b77c4dd60caf738155e2",
     "actions": {
-      "id": 45926470043,
-      "headSha": "b6402048d28bfc0d07fc88a47b65fca291e4044c",
+      "id": 46121103414,
+      "headSha": "933685df021fb142d4f2b77c4dd60caf738155e2",
       "status": "completed",
       "conclusion": "success",
-      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45926470043",
-      "deploymentCompletedAt": "2026-11-27T02:08:16Z",
-      "observedAt": "2026-11-27T02:10:03.668Z"
+      "url": "https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/46121103414",
+      "deploymentCompletedAt": "2026-11-28T07:25:48Z",
+      "observedAt": "2026-11-28T07:30:27.648115+00:00"
     },
     "urls": {
       "ja": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
@@ -180,46 +180,95 @@
       "ayano-rikka-antique-rose-hoop-earringsJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/ayano-rikka-antique-rose-hoop-earrings/",
       "ayano-rikka-antique-rose-hoop-earringsEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/ayano-rikka-antique-rose-hoop-earrings/",
       "tomigin-chokkomon-round-silver-pendantJa": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/tomigin-chokkomon-round-silver-pendant/",
-      "tomigin-chokkomon-round-silver-pendantEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/tomigin-chokkomon-round-silver-pendant/"
+      "tomigin-chokkomon-round-silver-pendantEn": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/tomigin-chokkomon-round-silver-pendant/",
+      "sitemap.xml": "https://rozawa619.github.io/japanese-craft-jewelry/sitemap.xml",
+      "ja/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/",
+      "ja/places/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/",
+      "ja/objects/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/",
+      "ja/places/tokyo/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/tokyo/",
+      "ja/places/osaka/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/osaka/",
+      "ja/places/chiba/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/chiba/",
+      "ja/places/kyoto/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/kyoto/",
+      "ja/places/fukuoka/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/fukuoka/",
+      "ja/places/kanagawa/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/kanagawa/",
+      "ja/places/nara/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/nara/",
+      "ja/places/yamanashi/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/yamanashi/",
+      "ja/places/hokkaido/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/hokkaido/",
+      "ja/places/aichi/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/places/aichi/",
+      "ja/objects/fujimura-tombodama-ruri-blue-earrings/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/fujimura-tombodama-ruri-blue-earrings/",
+      "ja/objects/hakata-japan-hosokenjo-tie-pin-brooch/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hakata-japan-hosokenjo-tie-pin-brooch/",
+      "ja/objects/itohen-kokura-ori-lilac-twisted-candy-earrings/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/itohen-kokura-ori-lilac-twisted-candy-earrings/",
+      "ja/objects/sakurakotoba-yoshino-cedar-heartwood-earrings/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/sakurakotoba-yoshino-cedar-heartwood-earrings/",
+      "ja/objects/taiankissho-yoshino-cedar-myoga-clip-on/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/taiankissho-yoshino-cedar-myoga-clip-on/",
+      "ja/objects/lco-kofu-k10-opal-cabochon-earrings/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/lco-kofu-k10-opal-cabochon-earrings/",
+      "ja/objects/to-labo-kofu-matte-clear-square-crystal-necklace/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/to-labo-kofu-matte-clear-square-crystal-necklace/",
+      "ja/objects/kitaichi-otaru-canal-sea-glass-earrings/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/kitaichi-otaru-canal-sea-glass-earrings/",
+      "ja/objects/hokkaido-mizuhiki-pea-green-pine-ear-cuff/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/hokkaido-mizuhiki-pea-green-pine-ear-cuff/",
+      "ja/objects/aya-irodori-arimatsu-kanoko-blue-brooch/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/aya-irodori-arimatsu-kanoko-blue-brooch/",
+      "ja/objects/omin-tokoname-amber-glaze-004-earrings/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/ja/objects/omin-tokoname-amber-glaze-004-earrings/",
+      "en/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/",
+      "en/places/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/",
+      "en/objects/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/",
+      "en/places/tokyo/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/tokyo/",
+      "en/places/osaka/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/osaka/",
+      "en/places/chiba/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/chiba/",
+      "en/places/kyoto/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/kyoto/",
+      "en/places/fukuoka/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/fukuoka/",
+      "en/places/kanagawa/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/kanagawa/",
+      "en/places/nara/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/nara/",
+      "en/places/yamanashi/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/yamanashi/",
+      "en/places/hokkaido/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/hokkaido/",
+      "en/places/aichi/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/places/aichi/",
+      "en/objects/fujimura-tombodama-ruri-blue-earrings/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/fujimura-tombodama-ruri-blue-earrings/",
+      "en/objects/hakata-japan-hosokenjo-tie-pin-brooch/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hakata-japan-hosokenjo-tie-pin-brooch/",
+      "en/objects/itohen-kokura-ori-lilac-twisted-candy-earrings/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/itohen-kokura-ori-lilac-twisted-candy-earrings/",
+      "en/objects/sakurakotoba-yoshino-cedar-heartwood-earrings/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/sakurakotoba-yoshino-cedar-heartwood-earrings/",
+      "en/objects/taiankissho-yoshino-cedar-myoga-clip-on/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/taiankissho-yoshino-cedar-myoga-clip-on/",
+      "en/objects/lco-kofu-k10-opal-cabochon-earrings/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/lco-kofu-k10-opal-cabochon-earrings/",
+      "en/objects/to-labo-kofu-matte-clear-square-crystal-necklace/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/to-labo-kofu-matte-clear-square-crystal-necklace/",
+      "en/objects/kitaichi-otaru-canal-sea-glass-earrings/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/kitaichi-otaru-canal-sea-glass-earrings/",
+      "en/objects/hokkaido-mizuhiki-pea-green-pine-ear-cuff/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/hokkaido-mizuhiki-pea-green-pine-ear-cuff/",
+      "en/objects/aya-irodori-arimatsu-kanoko-blue-brooch/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/aya-irodori-arimatsu-kanoko-blue-brooch/",
+      "en/objects/omin-tokoname-amber-glaze-004-earrings/index.html": "https://rozawa619.github.io/japanese-craft-jewelry/en/objects/omin-tokoname-amber-glaze-004-earrings/"
     },
     "report": "docs/deployment-results.json",
-    "verification": "specs/042-site-visual-review/validation.md",
-    "outputManifest": "docs/site-visual-v42-build-manifest.json",
+    "verification": "specs/044-top10-seven-craft-jewelry/validation.md",
+    "outputManifest": "docs/top10-seven-v44-build-manifest.json",
     "outputManifestStatus": "verified_build_and_public_sample",
-    "previousFullOutputManifest": "docs/image-quality-v41-build-manifest.json",
+    "previousFullOutputManifest": "docs/osaka-chiba-v43-build-manifest.json",
     "buildArtifact": {
-      "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/15164922400/zip",
-      "bytes": 35036239,
-      "digest": "sha256:3176f0ac64e7fd7d275a16369cea5082c96eaa513b1d563a30cf7add799c0497",
-      "expiresAt": "2026-11-28T01:35:39Z",
-      "headSha": "00ee4957d51e7d53a2eb9367687ab00dcdfcfe32",
-      "id": 15164922400,
+      "archiveDownloadApi": "https://api.github.com/repos/rozawa619/japanese-craft-jewelry/actions/artifacts/15254001959/zip",
+      "bytes": 37757941,
+      "digest": "sha256:de04adf7e14ba29df342b7c0d16ef0d087e3cfc4d5a3be69fc2cd70781e64f51",
+      "expiresAt": "2026-11-29T07:25:31Z",
+      "headSha": "933685df021fb142d4f2b77c4dd60caf738155e2",
+      "id": 15254001959,
       "name": "github-pages"
     }
   },
   "snapshot": {
-    "publishedProducts": 178,
-    "catalogProducts": 185,
+    "publishedProducts": 189,
+    "catalogProducts": 196,
     "draftProducts": 7,
     "regions": 47,
-    "activeCrafts": 107,
-    "catalogCrafts": 109,
-    "sources": 803,
+    "activeCrafts": 114,
+    "catalogCrafts": 116,
+    "sources": 828,
     "stores": 82,
-    "productsWithStores": 126,
-    "onlineEvidence": 168,
+    "productsWithStores": 127,
+    "onlineEvidence": 179,
     "retailCatalogEvidence": 9,
-    "publicImages": 354,
-    "stylingImages": 176,
-    "soloImages": 178,
-    "newProducts": 3,
+    "publicImages": 376,
+    "stylingImages": 187,
+    "soloImages": 189,
+    "newProducts": 11,
     "newRegions": 0,
-    "newImageFiles": 6,
-    "existingImageBytesRetained": 348,
+    "newImageFiles": 22,
+    "existingImageBytesRetained": 354,
     "kanagawaWorkshopLinked": 8,
     "kanagawaRegionalRetailer": 4,
     "profileLandingPages": 2,
-    "productsWithVerifiedListingSelections": 120,
+    "productsWithVerifiedListingSelections": 131,
     "productsInVideoShowcase": 11,
     "matchedPublicVideoPosts": 14,
     "videoShowcaseByPrefecture": {
@@ -236,7 +285,7 @@
       {
         "rank": 2,
         "prefectureId": "osaka",
-        "count": 6
+        "count": 7
       },
       {
         "rank": 3,
@@ -251,7 +300,7 @@
       {
         "rank": 5,
         "prefectureId": "fukuoka",
-        "count": 5
+        "count": 7
       },
       {
         "rank": 6,
@@ -261,36 +310,36 @@
       {
         "rank": 7,
         "prefectureId": "nara",
-        "count": 5
+        "count": 7
       },
       {
         "rank": 8,
         "prefectureId": "yamanashi",
-        "count": 5
+        "count": 7
       },
       {
         "rank": 9,
         "prefectureId": "hokkaido",
-        "count": 5
+        "count": 7
       },
       {
         "rank": 10,
         "prefectureId": "aichi",
-        "count": 5
+        "count": 7
       }
     ],
     "singleItemPrefectures": 0,
     "twoItemPrefectures": 1,
     "minimumProductsPerPrefecture": 2,
     "newProductTypes": {},
-    "newProductsWithStores": 0,
+    "newProductsWithStores": 1,
     "tokyoPublishedProducts": 10,
     "revisedStylingImages": 0,
     "revisedSoloImages": 0,
     "archivedVideoOriginals": 3,
     "reservationInquiryEvidence": 1,
     "retiredProductImages": 0,
-    "osakaPublishedProducts": 6,
+    "osakaPublishedProducts": 7,
     "chibaPublishedProducts": 7
   },
   "currentImagePolicy": {
@@ -391,7 +440,8 @@
     "040-tokyo-craft-jewelry",
     "041-image-quality-corrections",
     "042-site-visual-review",
-    "043-osaka-chiba-craft-jewelry"
+    "043-osaka-chiba-craft-jewelry",
+    "044-top10-seven-craft-jewelry"
   ],
   "historicalOnlyScripts": [
     {
@@ -422,11 +472,11 @@
   ],
   "verification": {
     "ci": "docs/git-handoff-stage-ci-results.json",
-    "local": "specs/043-osaka-chiba-craft-jewelry/validation.md",
+    "local": "specs/044-top10-seven-craft-jewelry/validation.md",
     "assets": "docs/git-handoff-stage-download-results.json",
     "documentation": "docs/git-handoff-stage-docs-results.json",
-    "summary": "specs/043-osaka-chiba-craft-jewelry/validation.md",
-    "publicResponses": "docs/osaka-chiba-v43-build-manifest.json"
+    "summary": "specs/044-top10-seven-craft-jewelry/validation.md",
+    "publicResponses": "docs/top10-seven-v44-build-manifest.json"
   },
-  "snapshotVersion": "0.30.0"
+  "snapshotVersion": "0.31.0"
 }

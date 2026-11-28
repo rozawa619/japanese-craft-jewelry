@@ -22,13 +22,11 @@ SORAが日本各地の工芸ジュエリーを選んで紹介する、日本語�
 
 SORAのSNSプロフィール用ページから、特集商品と旅先ごとのセレクトへ進めます。媒体別のURLと更新の正本は[仕様029](specs/029-sora-profile-links/spec.md)を参照してください。
 
-[仕様028](specs/028-purchase-routes/spec.md)で公式通販と取扱店への案内を整備しました。[仕様039](specs/039-three-per-prefecture/spec.md)では、掲載が2点だった36県に各1点を追加し、47都道府県すべてで各3点以上、全171商品を紹介しています。旅先検索では、青森市、南相馬・小高、宇都宮、長崎市、都城、屋久島、読谷などを選べます。
+[仕様044](specs/044-top10-seven-craft-jewelry/spec.md)で、観光Top10の10都道府県すべてが各7点以上になりました。大阪1点、福岡・奈良・山梨・北海道・愛知は各2点の計11点を追加しています。 [選定した11点の一次情報](docs/research/top10-seven-craft-jewelry-2026-11-28.md)
 
-公開171/登録177商品、下書き6商品、47都道府県。公開に紐づく技法100/全102件、一次出典769件。81店舗を登録し、126商品に店舗案内があります。購入根拠は公式通販162商品と店舗・カタログ9商品です。AI画像340枚（着用169・商品単体171）。
+公開189／登録196商品、下書き7商品、47都道府県。公開に紐づく技法114／全116件、一次出典828件。82店舗を登録し、127商品に訪問案内があります。購入根拠は通販179点、予約問い合わせ1点、店舗とカタログ9点です。AIイメージ376枚（着用187・商品単体189）。
 
-公開版は **v0.28.0**、アプリSHAは `630b81601c7efa63c1505d19a557c7b47fa43da8` です。2026-11-24 16:44 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/45350117793)の配信が完了しました。 [追加36商品の一次情報](docs/research/three-per-prefecture-2026-11-24.md)
-
-公開コミットとActionsは[公開記録](docs/deployment-results.json)、現行版の確認範囲は[039の検証記録](specs/039-three-per-prefecture/validation.md)を参照してください。v0.24.1のモバイル修正とWebKit検証は[035の記録](specs/035-national-travel-discovery/validation.md)、購入導線を整理した当時の記録は[028の検証](specs/028-purchase-routes/validation.md)に残しています。
+公開版は **v0.31.0**、アプリSHAは `933685df021fb142d4f2b77c4dd60caf738155e2` です。2026-11-28 16:25 JSTに[GitHub Actions](https://github.com/rozawa619/japanese-craft-jewelry/actions/runs/46121103414)の配信が完了しました。 [公開記録](docs/deployment-results.json) · [044の検証](specs/044-top10-seven-craft-jewelry/validation.md)
 
 AdSenseはoff、実アフィリエイトは未申請/通常リンクです。実ID/CMP/本人情報/契約/商用ホスト等は[運営上の残条件](docs/remaining-task-audit-v17.md)。申請や契約を資料だけで済んだことにしません。
 
