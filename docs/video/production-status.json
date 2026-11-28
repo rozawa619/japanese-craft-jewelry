@@ -685,18 +685,23 @@
       "productIds": [
         "sghr-lolly-wine-red-glass-ring-13"
       ],
-      "status": "prompt_ready",
-      "summary": "Prepared Chiba episode 7 for Sghr’s Lolly wine-red glass ring. Prompt v1 frames the face and the raised ring-wearing hand together with clear space around the hair and fingertips from the first frame.",
+      "status": "revision_needed",
+      "summary": "Matched the supplied Chiba episode 7 take to Sghr’s Lolly wine-red glass ring. The opening contains the face, ring and fingertips. The thumb side of the hand clips the right edge at 3.5 seconds. The Instagram caption draft is saved.",
       "femaleImageAssetId": "ai-styling-jp-sghr-lolly-wine-red-glass-ring-13-v37",
       "femaleImagePath": "public/images/styling-jp-sghr-lolly-wine-red-glass-ring-13-v37.webp",
       "femaleImageDimensions": "1536x1024",
       "episodePath": "docs/video/episodes/chiba-sghr-lolly-wine-red-glass-ring-13.md",
-      "startFrameStatus": "The central 576×1024 window at x=480 and face-shifted window at x=400 omit the ring and most of the raised hand. A ring-side window at x=720 shows the ring but crops the eye at screen left, part of the mouth and the raised fingertips. The original is tight at the crown. Prompt v1 requests a pulled-back portrait from above the hair to below the wrist in Ingredients. Actual Flow start preview is unverified.",
+      "startFrameStatus": "The supplied take keeps both eyes, the whole mouth, the ring and wearing fingertips in frame at 0, 0.5 and 1 second. Right-hand clearance is narrow. The thumb-side outline of the hand is slightly cropped at 3.5 seconds. Actual Flow settings are unverified.",
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "Current main and the deployed v0.30.0 application commit contain the identical styling WebP (Git blob d338dbc7e24364eea207bbb74969e0a9e319903f). Compared the product ID, image asset ID and path with the production ledger, TikTok registry and Kyoto plan. Visually compared the original with the ARCOS glass bracelet, Sghr Kolmio, Sghr Tie-tie and Tokyo Horiguchi Kikka ring portraits. No duplicate was found in the recorded references. The current TikTok grid remains unverified.",
-      "nextAction": "Generate Chiba episode 7 from the exact site WebP as the sole Ingredient. Check both eyes, the whole mouth, the ring and all wearing fingertips with clearance at 0, 0.5 and 1 second. Compare the hand pose, ring and skin during the line and later, and check pronunciation, extra dialogue and lip sync."
+      "verification": "Current main and the deployed v0.30.0 application commit contain the identical styling WebP (Git blob d338dbc7e24364eea207bbb74969e0a9e319903f). Compared the product ID, image asset ID and path with the production ledger, TikTok registry and Kyoto plan. Visually compared the original with the ARCOS glass bracelet, Sghr Kolmio, Sghr Tie-tie and Tokyo Horiguchi Kikka ring portraits. No duplicate was found in the recorded references. The current TikTok grid remains unverified. The 10-second MP4 (512×910, 30 fps) matched the Lolly reference styling. Checked frames at 0, 0.5, 1, 2, 2.5, 3, 3.5, 4, 4.5, 5, 7 and 9.5 seconds. The face and ring are visible in the samples, with slight cropping on the thumb side of the raised hand at 3.5 seconds. No conspicuous isolated dark marks were noticed in sampled cheek, mouth or chin regions. Full playback, speech, lip sync, Flow settings and publication were not verified.",
+      "nextAction": "Revise the framing using the original portrait to leave visible space on the right of the entire raised hand, including the thumb side, throughout the take. Check hand and ring continuity, speech and lip sync on the revised take.",
+      "statusReason": "The face, ring and fingertips fit in the sampled opening. At 3.5 seconds the outer edge of the raised hand on the thumb side is slightly clipped at screen right.",
+      "instagramCaption": {
+        "status": "draft",
+        "postUrl": null
+      }
     }
   ],
   "observedLinks": [
@@ -999,6 +1004,10 @@
     {
       "date": "2026-11-28",
       "summary": "Saved the bilingual TikTok caption for the supplied Chiba episode 6 ARCOS bracelet take. The caption reflects the view across the table and the blue-to-aqua glass."
+    },
+    {
+      "date": "2026-11-28",
+      "summary": "Matched the supplied Chiba episode 7 take to the Sghr Lolly reference, recorded the right-edge hand crop and saved the bilingual Instagram caption draft."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",

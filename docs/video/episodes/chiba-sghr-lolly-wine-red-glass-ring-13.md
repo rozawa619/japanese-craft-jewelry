@@ -1,6 +1,6 @@
 # SORA 千葉編 第7話｜Sghr 九十九里のガラスリング ロリー ワインレッド 13号
 
-2026-11-28（JST）。千葉・九十九里のSghrのガラスリング。着用原本では、淡い水色のジャケットと白いトップスの女性が画面右に手を上げ、つやのあるワインレッドの指輪を見せている。制作状況は `prompt_ready`。
+2026-11-28（JST）。千葉・九十九里のSghrのガラスリング。着用原本では、淡い水色のジャケットと白いトップスの女性が画面右に手を上げ、つやのあるワインレッドの指輪を見せている。添付の冒頭は顔・指輪・指先が収まる。中盤で手の親指側が右端にかかり、制作状況は `revision_needed`。
 
 - 商品IDは `sghr-lolly-wine-red-glass-ring-13`。女性画像IDは `ai-styling-jp-sghr-lolly-wine-red-glass-ring-13-v37`。元画像は `public/images/styling-jp-sghr-lolly-wine-red-glass-ring-13-v37.webp`（1536×1024）。
 - 確認時のmain `828df0273905d98db3c04cc1b2e7f5ccaa7fe6a2` と配信コミット `b6402048d28bfc0d07fc88a47b65fca291e4044c` で同一のWebP。Git blobは `d338dbc7e24364eea207bbb74969e0a9e319903f`。 [公開記録](../../deployment-results.json)
@@ -37,3 +37,29 @@ No extra dialogue, hand gestures, added jewelry, camera movement, mirrored frami
 - 0秒・0.5秒・1秒で両目・口元・指輪全体・着用側の指先と、それぞれの外側の余白を確認する。
 - 発話中と後半も元画像と比べ、着用側の手首と指のつながり、指輪の形・ワインレッドの色・同じ指に1個という条件、頬・口元・あごのほくろや濃い点の有無を確認する。
 - 発音・追加のセリフ・口の動きを確認し、検品と公開照合の結果を制作台帳に記録する。
+
+## 添付動画の画角確認
+
+2026-11-28（JST）。10秒の添付（512×910、30fps）を、着用原本 `styling-jp-sghr-lolly-wine-red-glass-ring-13-v37.webp` と照合した。水色のジャケットと白いトップス、顔の横に上げた手、丸みのあるワインレッドのガラスリングが一致する。
+
+- 0・0.5・1秒では、両目・口元・指輪・着用側の指先が収まる。手の右側の余白は狭い。3秒では親指側が右端に寄り、3.5秒では手の親指側の輪郭が右端でわずかに見切れる。
+- 確認した0〜9.5秒の12フレームで、指輪は同じ指に1個見える。確認範囲の頬・口周り・あごに目立つほくろや濃い点は見当たらなかった。
+- 右側の画角は要修正。通し再生、発話・発音・追加の台詞・リップシンク、実際のFlow設定と投稿照合は未確認。
+
+## Instagramリール紹介文
+
+2026-11-28（JST）。投稿用下書き。
+
+```text
+Meet me in Kujukuri, Chiba 💍
+Does this glossy wine-red ring go with my pale blue jacket?
+Inspired by Sghr’s Lolly glass ring.
+
+千葉・九十九里で待ち合わせ。
+ねえ、この赤、今日の服に合ってる？
+水色のジャケットに合わせた、つやのあるワインレッド。Sghrのガラスリング「ロリー」をモチーフにしました。
+
+AIで描いた旅のワンシーン｜AI-generated video
+
+#SORA旅先で待ち合わせ #千葉 #ガラスリング #Chiba #JapaneseJewelry
+```
