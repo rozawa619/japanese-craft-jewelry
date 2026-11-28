@@ -6,8 +6,8 @@
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
-  "currentEpisodeId": "chiba-arcos-cosmic-glass-bracelet",
-  "nextAction": "Generate Chiba episode 6 from the exact site WebP as the sole Ingredient. Review both eyes, mouth, bracelet and fingertips at 0, 0.5 and 1 second, then compare the arm pose, jewelry continuity and skin throughout and confirm speech and lip sync.",
+  "currentEpisodeId": "chiba-sghr-lolly-wine-red-glass-ring-13",
+  "nextAction": "Generate Chiba episode 7 from the exact site WebP as the sole Ingredient. Check both eyes, the whole mouth, the ring and all wearing fingertips with clearance at 0, 0.5 and 1 second. Compare the hand pose, ring and skin during the line and later, and check pronunciation, extra dialogue and lip sync.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -666,6 +666,25 @@
       "postUrl": null,
       "verification": "The current main and published v0.30.0 source contain the identical styling WebP (Git blob 046e9c49e2403cd350c8e5b92bf8410d845a0b2b). Compared the product ID, image asset ID and path with the production ledger, TikTok registry and Kyoto plan. Visually compared the original with the Chiba ARCOS spiral pendant, Kyoto Showen bracelet and Tokyo HARIO Little Tears portraits. No duplicate was found in the recorded references. The current TikTok grid remains unverified.",
       "nextAction": "Generate Chiba episode 6 from the exact site WebP as the sole Ingredient. Review both eyes, mouth, bracelet and fingertips at 0, 0.5 and 1 second, then compare the arm pose, jewelry continuity and skin throughout and confirm speech and lip sync."
+    },
+    {
+      "id": "chiba-sghr-lolly-wine-red-glass-ring-13",
+      "place": "Kujukuri, Chiba, Japan",
+      "productIds": [
+        "sghr-lolly-wine-red-glass-ring-13"
+      ],
+      "status": "prompt_ready",
+      "summary": "Prepared Chiba episode 7 for Sghr’s Lolly wine-red glass ring. Prompt v1 frames the face and the raised ring-wearing hand together with clear space around the hair and fingertips from the first frame.",
+      "femaleImageAssetId": "ai-styling-jp-sghr-lolly-wine-red-glass-ring-13-v37",
+      "femaleImagePath": "public/images/styling-jp-sghr-lolly-wine-red-glass-ring-13-v37.webp",
+      "femaleImageDimensions": "1536x1024",
+      "episodePath": "docs/video/episodes/chiba-sghr-lolly-wine-red-glass-ring-13.md",
+      "startFrameStatus": "The central 576×1024 window at x=480 and face-shifted window at x=400 omit the ring and most of the raised hand. A ring-side window at x=720 shows the ring but crops the eye at screen left, part of the mouth and the raised fingertips. The original is tight at the crown. Prompt v1 requests a pulled-back portrait from above the hair to below the wrist in Ingredients. Actual Flow start preview is unverified.",
+      "currentPromptVersion": "v1-ready",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "Current main and the deployed v0.30.0 application commit contain the identical styling WebP (Git blob d338dbc7e24364eea207bbb74969e0a9e319903f). Compared the product ID, image asset ID and path with the production ledger, TikTok registry and Kyoto plan. Visually compared the original with the ARCOS glass bracelet, Sghr Kolmio, Sghr Tie-tie and Tokyo Horiguchi Kikka ring portraits. No duplicate was found in the recorded references. The current TikTok grid remains unverified.",
+      "nextAction": "Generate Chiba episode 7 from the exact site WebP as the sole Ingredient. Check both eyes, the whole mouth, the ring and all wearing fingertips with clearance at 0, 0.5 and 1 second. Compare the hand pose, ring and skin during the line and later, and check pronunciation, extra dialogue and lip sync."
     }
   ],
   "observedLinks": [
@@ -944,6 +963,10 @@
     {
       "date": "2026-11-28",
       "summary": "Prepared Chiba episode 6 for ARCOS’s Cosmic Sparkle glass bracelet. Verified the published original and recorded a pulled-back opening that fits the face, glass bracelet and wearing fingertips."
+    },
+    {
+      "date": "2026-11-28",
+      "summary": "Prepared Chiba episode 7 for Sghr’s wine-red Lolly glass ring. Verified the published WebP and recorded a pulled-back portrait that fits the face, ring and all wearing fingertips from the opening."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -983,5 +1006,5 @@
     "firstSuggestedProductId": "ayano-rikka-antique-rose-hoop-earrings",
     "explanation": "All ten currently published Tokyo products have generation records. Chiba has seven published products. The Ayano original fits the eyes, mouth and complete hoop in a 9:16 window and is unused in the available records."
   },
-  "previousWorkCurrentEpisodeId": "chiba-sghr-kolmio-glass-ear-cuff"
+  "previousWorkCurrentEpisodeId": "chiba-arcos-cosmic-glass-bracelet"
 }
