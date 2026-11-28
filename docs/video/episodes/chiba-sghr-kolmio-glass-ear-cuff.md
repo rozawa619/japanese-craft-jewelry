@@ -1,6 +1,6 @@
 # SORA 千葉編 第5話｜Sghr コルミオ 三角形のガラスイヤーカフ
 
-2026-11-28（JST）。九十九里のSghrの三角形のガラスイヤーカフ。サイトの着用原本では、ベージュのジャケットとまとめ髪に、画面左の耳の外側の青みがかった透明なイヤーカフが一つ見える。制作状況は `prompt_ready`。
+2026-11-28（JST）。九十九里のSghrの三角形のガラスイヤーカフ。サイトの着用原本では、ベージュのジャケットとまとめ髪に、画面左の耳の外側の青みがかった透明なイヤーカフが一つ見える。添付動画の画角は `revision_needed`。現行の再生成指示はv2。
 
 - 商品IDは `sghr-kolmio-glass-ear-cuff`。女性画像IDは `ai-styling-jp-sghr-kolmio-glass-ear-cuff-v23`。元画像は `public/images/styling-jp-sghr-kolmio-glass-ear-cuff-v23.webp`（1536×1024）。
 - 配信コミット `b6402048d28bfc0d07fc88a47b65fca291e4044c` と確認時のmain `5cd781ea1d6a706f0cd038412d0e486c0f2c988b` のWebPは同一。Git blobは `b73ab5ed142cefef033a4ed3cad5ea8b83afb14b`。 [公開記録](../../deployment-results.json)
@@ -32,8 +32,34 @@ She says this exact line softly once in natural Japanese, then relaxes into a cl
 No extra dialogue, head turns, camera movement, mirroring, added jewelry, captions, logos or music.
 ```
 
-## 生成後の確認
+## 添付動画の確認
 
-- 0秒・0.5秒・1秒で頭上・両目・口元と、画面左のイヤーカフ全体の外側に余白があるか確認する。
+2026-11-28（JST）。添付の10秒動画（512×910、30fps）を着用原本と照合。ベージュのジャケットとまとめ髪、画面左の耳に見える青灰色の三角形のカフが一致する。
+
+- 0秒と0.5秒は原本の中央を縦に切り出した画角に近く、画面右側の目と口元が枠外。1秒でも右側の目は入らず、口元は一部だけ映る。
+- 発話中と後半の確認フレームでも、頭頂と画面右側の顔が切れる。見える側の耳の外側に三角形のカフが一つ映り、開口と色は原本に近い。見えている頬・口元・あごに目立つ単独の濃い点は見当たらなかった。枠外の顔と肌は確認できない。
+- 1.5〜4秒ごろに発話らしい口の動きがあり、9.85秒でも口が開く。末尾の9.3秒以降にも音声信号がある。発音・追加のセリフかどうか・口の動きとの同期、生成時のモードと公開状況は未確認。画角で `revision_needed`。
+
+## Flow指示文 v2（現行）
+
+**Ingredients** に同じサイト原本1枚を指定。縦9:16、選べる場合は10秒。初めから胸の中ほどまで引き、頭と両肩を収める。浅い斜め向きで、画面左のカフと画面右の目を同時に出し、左右に余白を取る。セリフはv1と同じ一言。v2の生成結果は未確認。
+
+```text
+Vertical 9:16, 10 seconds if supported. One continuous, fixed eye-level boyfriend-POV shot in Kujukuri, Chiba. Use the supplied site image as the sole reference for her identity, outfit and one glass ear cuff. Compose a new, wider portrait against the same muted background.
+
+At 0.0 seconds, the camera is already back far enough for a centered, mid-chest-up shot. Her full hairstyle, both shoulders, both eyes, whole mouth and the complete cuff all fit at once. Leave visible background above her hair, to the left of the cuff and to the right of her cheek. She is already at a shallow three-quarter angle with the cuff-wearing ear exposed at screen left. Keep her head and the camera steady in this composition to the end.
+
+Keep her original adult face, loose dark updo, face-framing strands and beige jacket. Keep a single translucent blue-gray glass cuff on the same outer ear, with its rounded triangular shape, opening and original size. Her hands stay out of frame.
+
+Soft, even daylight and a sweet, natural smile. Preserve fine skin texture. Keep the cheeks, mouth area and chin free of visible moles and isolated dark spots. She looks at the viewer and says this exact line softly once in natural Japanese:
+
+ねえ、ちいさなさんかく、みえる？
+
+After the line, she holds a small closed-mouth smile until the last frame. Quiet room tone. No captions, music or added jewelry.
+```
+
+## 再生成後の確認
+
+- 0秒・0.5秒・1秒でまとめ髪と両肩、両目・口元と画面左のイヤーカフ全体が入ること、頭上・カフ側と反対側の頬の外にも余白があることを確認する。
 - 発話中と後半も、丸みのある三角形、開口、青灰色の透明感と、同じ位置に一つという条件を原本と照合する。頬・口元・あごのほくろや単独の濃い点も確認する。
-- 発音・追加のセリフ・口の動きを確認し、検品と公開照合の結果を制作台帳に記録する。
+- 発音・追加のセリフ・口の動きを確認する。とくに発話後から末尾まで口が落ち着いているかを確認し、検品と公開照合の結果を制作台帳に記録する。

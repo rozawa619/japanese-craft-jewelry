@@ -6,8 +6,8 @@
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
-  "currentEpisodeId": "chiba-sghr-lolly-wine-red-glass-ring-13",
-  "nextAction": "Generate Chiba episode 7 from the exact site WebP as the sole Ingredient. Check both eyes, the whole mouth, the ring and all wearing fingertips with clearance at 0, 0.5 and 1 second. Compare the hand pose, ring and skin during the line and later, and check pronunciation, extra dialogue and lip sync.",
+  "currentEpisodeId": "chiba-sghr-kolmio-glass-ear-cuff",
+  "nextAction": "Regenerate Chiba episode 5 with prompt v2 and the exact site WebP as the sole Ingredient. Check headroom, both eyes, the whole mouth and the full cuff with side clearance at 0, 0.5 and 1 second. Compare the cuff and skin during and after the line, and verify pronunciation, any extra speech at the end and lip sync.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -635,18 +635,19 @@
       "productIds": [
         "sghr-kolmio-glass-ear-cuff"
       ],
-      "status": "prompt_ready",
-      "summary": "Prepared Chiba episode 5 for Sghr’s Kolmio triangular glass ear cuff. Standard 9:16 crops separate the cuff and face, so the prompt specifies a pulled-back framing from the opening.",
+      "status": "revision_needed",
+      "summary": "Reviewed the Chiba episode 5 Kolmio clip. The opening crops the far eye and mouth. Prompt v2 sets a wider mid-chest-up shot and a shallower three-quarter pose from frame one.",
       "femaleImageAssetId": "ai-styling-jp-sghr-kolmio-glass-ear-cuff-v23",
       "femaleImagePath": "public/images/styling-jp-sghr-kolmio-glass-ear-cuff-v23.webp",
       "femaleImageDimensions": "1536x1024",
       "episodePath": "docs/video/episodes/chiba-sghr-kolmio-glass-ear-cuff.md",
-      "startFrameStatus": "The central 576×1024 window at x=480 crops the far eye and mouth. The right-shifted 576×1024 window at x=704 fits the face but removes the visible cuff at screen left. The source is close at the crown. Use Ingredients and a pulled-back opening that centers the face and cuff together. Actual Flow start preview is unverified.",
-      "currentPromptVersion": "v1-ready",
+      "startFrameStatus": "The 10-second attachment starts near the original's central portrait crop. The eye at screen right and mouth are outside at 0 and 0.5 s. At 1 s the mouth is only partly visible and the far eye is still outside. The crown and screen-right side of the face remain cropped in sampled later frames. The triangular cuff remains visible. Prompt v2 asks for a new wider composition with both shoulders, headroom and space beyond the cheek and cuff. The v2 opening has not yet been generated or reviewed.",
+      "currentPromptVersion": "v2-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The current main and published v0.30.0 source contain the same site styling WebP (Git blob b73ab5ed142cefef033a4ed3cad5ea8b83afb14b). Compared product ID, portrait asset ID and file path with the production ledger, TikTok registry and Kyoto series plan. Visually compared the candidate with Chiba Tie-tie, the archived Kyoto peacock portrait and the Tokyo ladybug and Sterling Shine Mini portraits. No duplicate was found in the recorded references. The current TikTok grid remains unverified.",
-      "nextAction": "Generate Chiba episode 5 using the exact site WebP as the sole Ingredient. Review 0, 0.5 and 1 second for both eyes, mouth, full cuff and headroom, then check skin, cuff position and count, dialogue and lip sync."
+      "verification": "The current main and published v0.30.0 source contain the same site styling WebP (Git blob b73ab5ed142cefef033a4ed3cad5ea8b83afb14b). Compared product ID, portrait asset ID and file path with the production ledger, TikTok registry and Kyoto series plan. Visually compared the candidate with Chiba Tie-tie, the archived Kyoto peacock portrait and the Tokyo ladybug and Sterling Shine Mini portraits. No duplicate was found in the recorded references. The current TikTok grid remains unverified. On 2026-11-28 JST, visually matched the 10-second attachment (512×910, 30 fps) to the original and reviewed frames at 0, 0.5 and 1 second and later. The cuff stays in view at the same outer ear in those frames. Mouth motion and an audio signal recur near the end. Pronunciation, extra speech, lip sync and actual Flow generation settings are unverified.",
+      "nextAction": "Regenerate Chiba episode 5 with prompt v2 and the exact site WebP as the sole Ingredient. Check headroom, both eyes, the whole mouth and the full cuff with side clearance at 0, 0.5 and 1 second. Compare the cuff and skin during and after the line, and verify pronunciation, any extra speech at the end and lip sync.",
+      "statusReason": "The 10-second attachment starts near the original's central portrait crop. The eye at screen right and mouth are outside at 0 and 0.5 s. At 1 s the mouth is only partly visible and the far eye is still outside. The crown and screen-right side of the face remain cropped in sampled later frames. The triangular cuff remains visible."
     },
     {
       "id": "chiba-arcos-cosmic-glass-bracelet",
@@ -967,6 +968,10 @@
     {
       "date": "2026-11-28",
       "summary": "Prepared Chiba episode 7 for Sghr’s wine-red Lolly glass ring. Verified the published WebP and recorded a pulled-back portrait that fits the face, ring and all wearing fingertips from the opening."
+    },
+    {
+      "date": "2026-11-28",
+      "summary": "Reviewed the Chiba episode 5 Kolmio clip and marked it revision_needed after finding a cropped eye and mouth. Recorded prompt v2 with a newly framed chest-up opening."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -1006,5 +1011,5 @@
     "firstSuggestedProductId": "ayano-rikka-antique-rose-hoop-earrings",
     "explanation": "All ten currently published Tokyo products have generation records. Chiba has seven published products. The Ayano original fits the eyes, mouth and complete hoop in a 9:16 window and is unused in the available records."
   },
-  "previousWorkCurrentEpisodeId": "chiba-arcos-cosmic-glass-bracelet"
+  "previousWorkCurrentEpisodeId": "chiba-sghr-lolly-wine-red-glass-ring-13"
 }
