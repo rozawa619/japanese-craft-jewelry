@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import geometry from '../src/data/japan-map-geometry.json' with {type:'json'};
+import {tourismRanking} from '../src/config/region-selection.ts';
 import {travelRegions} from '../src/config/travel-areas.ts';
 import {productsFor} from '../src/lib/catalog.ts';
 import {productsForTravelPlace,travelAreasFor,travelAreaAnchor} from '../src/lib/travel-areas.ts';
@@ -11,6 +12,14 @@ test('travel navigation assigns all 47 prefectures exactly once',()=>{
  assert.equal(grouped.length,47);
  assert.deepEqual(new Set(grouped),new Set(geometry.prefectures.map(prefecture=>prefecture.id)));
  assert.deepEqual(travelRegions.find(region=>region.id==='metropolitan')?.prefectures,['tokyo','kanagawa','chiba','saitama']);
+});
+
+test('each tourism Top 10 prefecture has at least seven published local items',()=>{
+ const products=productsFor('ja');
+ for(const {prefectureId} of tourismRanking.destinations){
+  const count=products.filter(product=>product.prefectureIds.includes(prefectureId)).length;
+  assert.ok(count>=7, `${prefectureId} has ${count} published local items`);
+ }
 });
 
 test('Hakone and Kamakura provide separate store-backed results',()=>{

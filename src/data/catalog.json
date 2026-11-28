@@ -1307,6 +1307,62 @@
         "tomigin-chokkomon-studio-series",
         "chokkomon-mirror-kunaicho"
       ]
+    },
+    {
+      "id": "hakata-ori-silk-accessories",
+      "name": "Hakata-ori silk accessories",
+      "description": "Hakata silk obi fabric adapted to small accessories, including folded pin brooches.",
+      "sourceIds": [
+        "hakata-japan-weaving-about"
+      ]
+    },
+    {
+      "id": "yoshino-cedar-woodcraft",
+      "name": "Yoshino cedar woodcraft",
+      "description": "Woodwork using cedar from the Yoshino valley. Grain and the boundary between heartwood and sapwood can be left visible.",
+      "sourceIds": [
+        "sakurakotoba-yoshino-wood-about"
+      ]
+    },
+    {
+      "id": "nara-hand-tied-hemp-accessories",
+      "name": "Nara hand-tied fiber accessories",
+      "description": "Contemporary hand-tied accessories that combine hemp fiber and other natural materials.",
+      "sourceIds": [
+        "taiankissho-nara-maker-about"
+      ]
+    },
+    {
+      "id": "asahikawa-mizuhiki",
+      "name": "Asahikawa mizuhiki",
+      "description": "Paper cords hand-tied in an Asahikawa workshop and shaped into ear ornaments and smaller fittings.",
+      "sourceIds": [
+        "hokkaido-mizuhiki-asahikawa-workshop"
+      ]
+    },
+    {
+      "id": "koshu-crystal-polishing-jewelry",
+      "name": "Koshu crystal-polishing jewelry",
+      "description": "Kofu gemstone work that changes how crystal reflects light through carving, matting and polishing.",
+      "sourceIds": [
+        "to-labo-kofu-studio-city"
+      ]
+    },
+    {
+      "id": "arimatsu-narumi-shibori-jewelry",
+      "name": "Arimatsu–Narumi shibori accessories",
+      "description": "Resist-dyed textiles from the Arimatsu–Narumi tradition adapted to brooches and accessories.",
+      "sourceIds": [
+        "nagoya-museum-arimatsu-narumi-shibori"
+      ]
+    },
+    {
+      "id": "tokoname-ceramic-jewelry",
+      "name": "Tokoname ceramic accessories",
+      "description": "Clay and glaze from the materials and techniques of Tokoname ceramic work, scaled to small accessories.",
+      "sourceIds": [
+        "aichi-prefecture-tokoname-ware"
+      ]
     }
   ],
   "materials": [
@@ -1682,6 +1738,16 @@
       "id": "precious-coral",
       "name": "Precious coral",
       "description": "Coral used in jewelry; the featured seller calls this material ガーネサンゴ. Harvesting origin and species are unspecified."
+    },
+    {
+      "id": "opal",
+      "name": "Opal",
+      "description": "A gemstone with shifting color in the featured cabochon."
+    },
+    {
+      "id": "hemp-fiber",
+      "name": "Hemp fiber",
+      "description": "Fiber obtained from the hemp stem and used as cord in the featured knot."
     }
   ],
   "productTypes": [
@@ -3069,6 +3135,99 @@
       "sourceIds": [
         "tomigin-tateyama-workshop-home",
         "tomigin-chokkomon-studio-series"
+      ]
+    },
+    {
+      "id": "hakata-japan-oshiumi",
+      "name": "HAKATA JAPAN / Oshiumi Textile Factory",
+      "location": "Fukuoka",
+      "productionNote": "The Oshiumi weaving company operates HAKATA JAPAN to bring Hakata obi fabric into smaller objects and accessories.",
+      "url": "https://hakatajapan.stores.jp/",
+      "sourceIds": [
+        "hakata-japan-weaving-about"
+      ]
+    },
+    {
+      "id": "sakurakotoba-yoshino",
+      "name": "Sakurakotoba",
+      "location": "Kawakami, Yoshino, Nara",
+      "productionNote": "Makes wooden pieces with materials including cedar and cypress grown in the upper Yoshino valley.",
+      "url": "https://sakurakotoba.thebase.in/",
+      "sourceIds": [
+        "sakurakotoba-yoshino-wood-about"
+      ]
+    },
+    {
+      "id": "taiankissho-nara",
+      "name": "Taian Kissho",
+      "location": "Nara City, Nara",
+      "productionNote": "A Nara shop and maker working with hand-tied hemp fiber and other natural materials.",
+      "url": "https://taiankissho.base.shop/",
+      "sourceIds": [
+        "taiankissho-nara-maker-about"
+      ]
+    },
+    {
+      "id": "hokkaido-mizuhiki",
+      "name": "Hokkaido Mizuhiki",
+      "location": "Asahikawa, Hokkaido",
+      "productionNote": "Erika Kinoshita hand-ties Japanese paper cords into accessories in her Asahikawa workshop.",
+      "url": "https://hokkaidomizuhiki.com/",
+      "sourceIds": [
+        "hokkaido-mizuhiki-asahikawa-workshop"
+      ]
+    },
+    {
+      "id": "kitaichi-glass",
+      "name": "Kitaichi Glass",
+      "location": "Otaru, Hokkaido",
+      "productionNote": "Kitaichi makes and sells handcrafted glass in Otaru and develops jewelry inspired by the city.",
+      "url": "https://kitaichiglass.co.jp/",
+      "sourceIds": [
+        "kitaichi-otaru-glass-company"
+      ]
+    },
+    {
+      "id": "lco-kofu",
+      "name": "L&Co.",
+      "location": "Kofu, Yamanashi",
+      "productionNote": "The brand describes jewelry finishing in its own factory and the work of craftspeople at its Kofu atelier.",
+      "url": "https://l-co.jp/",
+      "sourceIds": [
+        "lco-kofu-atelier-craftsmanship"
+      ]
+    },
+    {
+      "id": "to-labo-kofu",
+      "name": "TO LABO / Tomohiko Oyori",
+      "location": "Kofu, Yamanashi",
+      "productionNote": "The Kofu studio develops jewelry using polishing and carving techniques from Koshu crystal and gemstone craft.",
+      "url": "https://tolabo.myshopify.com/pages/about-us",
+      "sourceIds": [
+        "to-labo-kofu-studio-city",
+        "to-labo-oyori-about"
+      ]
+    },
+    {
+      "id": "aya-irodori-arimatsu",
+      "name": "Aya Irodori",
+      "location": "Arimatsu, Nagoya, Aichi",
+      "productionNote": "Aya Osuka works with Arimatsu–Narumi shibori and brings its resist patterns to everyday textiles and accessories.",
+      "url": "https://www.aya-irodori.com/",
+      "sourceIds": [
+        "aya-irodori-osuka-arimatsu-about",
+        "nagoya-museum-arimatsu-narumi-shibori"
+      ]
+    },
+    {
+      "id": "omin-tokoname",
+      "name": "Omin",
+      "location": "Tokoname ware materials, Aichi",
+      "productionNote": "Omin describes carving its earrings individually from bisque-fired Tokoname white clay and finishing them with glaze.",
+      "url": "https://minne.com/items/30173624",
+      "sourceIds": [
+        "omin-tokoname-white-clay-facts",
+        "aichi-prefecture-tokoname-ware"
       ]
     }
   ],
@@ -5220,6 +5379,168 @@
         "tomigin-chokkomon-round-silver-pendant-offer",
         "tomigin-tateyama-workshop-home"
       ]
+    },
+    {
+      "id": "hakata-japan-official",
+      "name": "HAKATA JAPAN / Oshiumi Textile Factory",
+      "url": "https://hakatajapan.stores.jp/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Check delivery destinations, fees and delivery times on the seller’s current listing.",
+        "countries": null,
+        "sourceIds": [
+          "hakata-japan-hosokenjo-tie-pin-brooch-offer"
+        ]
+      },
+      "returns": "Check the seller’s current return and cancellation terms.",
+      "sourceIds": [
+        "hakata-japan-hosokenjo-tie-pin-brooch-offer"
+      ]
+    },
+    {
+      "id": "sakurakotoba-official",
+      "name": "Sakurakotoba",
+      "url": "https://sakurakotoba.thebase.in/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Check delivery destinations, fees and delivery times on the seller’s current listing.",
+        "countries": null,
+        "sourceIds": [
+          "sakurakotoba-yoshino-cedar-heartwood-earrings-offer"
+        ]
+      },
+      "returns": "Check the seller’s current return and cancellation terms.",
+      "sourceIds": [
+        "sakurakotoba-yoshino-cedar-heartwood-earrings-offer"
+      ]
+    },
+    {
+      "id": "taiankissho-official",
+      "name": "Taian Kissho",
+      "url": "https://taiankissho.base.shop/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Check delivery destinations, fees and delivery times on the seller’s current listing.",
+        "countries": null,
+        "sourceIds": [
+          "taiankissho-yoshino-cedar-myoga-clip-on-offer"
+        ]
+      },
+      "returns": "Check the seller’s current return and cancellation terms.",
+      "sourceIds": [
+        "taiankissho-yoshino-cedar-myoga-clip-on-offer"
+      ]
+    },
+    {
+      "id": "lco-official",
+      "name": "L&Co.",
+      "url": "https://l-co-shop.jp/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Check delivery destinations, fees and delivery times on the seller’s current listing.",
+        "countries": null,
+        "sourceIds": [
+          "lco-kofu-k10-opal-cabochon-earrings-offer"
+        ]
+      },
+      "returns": "Check the seller’s current return and cancellation terms.",
+      "sourceIds": [
+        "lco-kofu-k10-opal-cabochon-earrings-offer"
+      ]
+    },
+    {
+      "id": "to-labo-official",
+      "name": "TO LABO / Tomohiko Oyori",
+      "url": "https://tolabo.myshopify.com/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Check delivery destinations, fees and delivery times on the seller’s current listing.",
+        "countries": null,
+        "sourceIds": [
+          "to-labo-kofu-matte-clear-square-crystal-necklace-offer"
+        ]
+      },
+      "returns": "Check the seller’s current return and cancellation terms.",
+      "sourceIds": [
+        "to-labo-kofu-matte-clear-square-crystal-necklace-offer"
+      ]
+    },
+    {
+      "id": "kitaichi-glass-official",
+      "name": "Kitaichi Glass",
+      "url": "https://www.kitaichiglass.shop/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Check delivery destinations, fees and delivery times on the seller’s current listing.",
+        "countries": null,
+        "sourceIds": [
+          "kitaichi-otaru-canal-sea-glass-earrings-offer"
+        ]
+      },
+      "returns": "Check the seller’s current return and cancellation terms.",
+      "sourceIds": [
+        "kitaichi-otaru-canal-sea-glass-earrings-offer"
+      ]
+    },
+    {
+      "id": "hokkaido-mizuhiki-official",
+      "name": "Hokkaido Mizuhiki",
+      "url": "https://shop.hokkaidomizuhiki.com/",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Check delivery destinations, fees and delivery times on the seller’s current listing.",
+        "countries": null,
+        "sourceIds": [
+          "hokkaido-mizuhiki-pea-green-pine-ear-cuff-offer"
+        ]
+      },
+      "returns": "Check the seller’s current return and cancellation terms.",
+      "sourceIds": [
+        "hokkaido-mizuhiki-pea-green-pine-ear-cuff-offer"
+      ]
+    },
+    {
+      "id": "aya-irodori-minne",
+      "name": "Aya Irodori on minne",
+      "url": "https://minne.com/@aya-1218",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Check delivery destinations, fees and delivery times on the seller’s current listing.",
+        "countries": null,
+        "sourceIds": [
+          "aya-irodori-arimatsu-kanoko-blue-brooch-offer"
+        ]
+      },
+      "returns": "Check the seller’s current return and cancellation terms.",
+      "sourceIds": [
+        "aya-irodori-arimatsu-kanoko-blue-brooch-offer"
+      ]
+    },
+    {
+      "id": "omin-minne",
+      "name": "Omin on minne",
+      "url": "https://minne.com/@omin-1003",
+      "language": "Japanese",
+      "shipping": {
+        "status": "unknown",
+        "summary": "Check delivery destinations, fees and delivery times on the seller’s current listing.",
+        "countries": null,
+        "sourceIds": [
+          "omin-tokoname-amber-glaze-004-earrings-offer"
+        ]
+      },
+      "returns": "Check the seller’s current return and cancellation terms.",
+      "sourceIds": [
+        "omin-tokoname-amber-glaze-004-earrings-offer"
+      ]
     }
   ],
   "programs": [
@@ -7205,6 +7526,116 @@
       "merchantId": "tomigin-official",
       "programId": null,
       "officialProductUrl": "https://tomigin.com/%E7%9B%B4%E5%BC%A7%E7%B4%8B%E3%83%88%E3%83%83%E3%83%97%E4%B8%B8%E3%80%80%E3%83%81%E3%82%A7%E3%83%BC%E3%83%B3%E4%BB%98%E3%80%80/",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "fujimura-tombodama-ruri-blue-earrings-official",
+      "productId": "fujimura-tombodama-ruri-blue-earrings",
+      "merchantId": "fujimura-tombodama-official",
+      "programId": null,
+      "officialProductUrl": "https://fujimuratombo.stores.jp/items/674188849b0fd5084a5d643a",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "hakata-japan-hosokenjo-tie-pin-brooch-official",
+      "productId": "hakata-japan-hosokenjo-tie-pin-brooch",
+      "merchantId": "hakata-japan-official",
+      "programId": null,
+      "officialProductUrl": "https://hakatajapan.stores.jp/items/62737ec87d11610f0051f80d",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "itohen-kokura-ori-lilac-twisted-candy-earrings-official",
+      "productId": "itohen-kokura-ori-lilac-twisted-candy-earrings",
+      "merchantId": "itohen-official",
+      "programId": null,
+      "officialProductUrl": "https://www.itohen.shop/product-page/%E5%B0%8F%E5%80%89%E7%B9%94-%E3%81%AD%E3%81%98%E3%82%8A%E9%A3%B4%E3%83%94%E3%82%A2%E3%82%B9-%E3%83%A9%E3%82%A4%E3%83%A9%E3%83%83%E3%82%AF",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "sakurakotoba-yoshino-cedar-heartwood-earrings-official",
+      "productId": "sakurakotoba-yoshino-cedar-heartwood-earrings",
+      "merchantId": "sakurakotoba-official",
+      "programId": null,
+      "officialProductUrl": "https://sakurakotoba.thebase.in/items/17750384",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "taiankissho-yoshino-cedar-myoga-clip-on-official",
+      "productId": "taiankissho-yoshino-cedar-myoga-clip-on",
+      "merchantId": "taiankissho-official",
+      "programId": null,
+      "officialProductUrl": "https://taiankissho.base.shop/items/83690141",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "lco-kofu-k10-opal-cabochon-earrings-official",
+      "productId": "lco-kofu-k10-opal-cabochon-earrings",
+      "merchantId": "lco-official",
+      "programId": null,
+      "officialProductUrl": "https://l-co-shop.jp/products/43-7740",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "to-labo-kofu-matte-clear-square-crystal-necklace-official",
+      "productId": "to-labo-kofu-matte-clear-square-crystal-necklace",
+      "merchantId": "to-labo-official",
+      "programId": null,
+      "officialProductUrl": "https://tolabo.myshopify.com/products/matte-clear-necklace-square",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "kitaichi-otaru-canal-sea-glass-earrings-official",
+      "productId": "kitaichi-otaru-canal-sea-glass-earrings",
+      "merchantId": "kitaichi-glass-official",
+      "programId": null,
+      "officialProductUrl": "https://www.kitaichiglass.shop/shopdetail/000000000922/",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "hokkaido-mizuhiki-pea-green-pine-ear-cuff-official",
+      "productId": "hokkaido-mizuhiki-pea-green-pine-ear-cuff",
+      "merchantId": "hokkaido-mizuhiki-official",
+      "programId": null,
+      "officialProductUrl": "https://shop.hokkaidomizuhiki.com/products/om01-matsumusubiearcuff?variant=43955878232182",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "aya-irodori-arimatsu-kanoko-blue-brooch-official",
+      "productId": "aya-irodori-arimatsu-kanoko-blue-brooch",
+      "merchantId": "aya-irodori-minne",
+      "programId": null,
+      "officialProductUrl": "https://minne.com/items/41177919",
+      "affiliateUrl": null,
+      "applicationStatus": "not_applied",
+      "affiliateLinkVerifiedAt": null
+    },
+    {
+      "id": "omin-tokoname-amber-glaze-004-earrings-official",
+      "productId": "omin-tokoname-amber-glaze-004-earrings",
+      "merchantId": "omin-minne",
+      "programId": null,
+      "officialProductUrl": "https://minne.com/items/30173624",
       "affiliateUrl": null,
       "applicationStatus": "not_applied",
       "affiliateLinkVerifiedAt": null
@@ -17758,6 +18189,626 @@
       "whatToCheck": [
         "The round listing is for the pendant top. Ask the maker for a chain if you need one.",
         "To order, follow the email instructions on the specific item page."
+      ]
+    },
+    {
+      "id": "fujimura-tombodama-ruri-blue-earrings",
+      "slug": "fujimura-tombodama-ruri-blue-earrings",
+      "locale": "en",
+      "title": "Fujimura ruri-blue tombodama earrings",
+      "originalTitle": "トンボ玉 ピアス（ルリ色）",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "osaka"
+      ],
+      "craftIds": [
+        "osaka-charcoal-tombodama"
+      ],
+      "materialIds": [
+        "glass",
+        "titanium"
+      ],
+      "makerId": "fujimura-tombodama",
+      "craftClassification": {
+        "label": "A small blue earring from the Osaka studio that also makes the featured silver glass brooch.",
+        "sourceIds": [
+          "fujimura-tombodama-ruri-blue-earrings-offer",
+          "fujimura-tombodama-workshop-about",
+          "fujimura-tombodama-osaka-council",
+          "fujimura-tombodama-osaka-bureau"
+        ]
+      },
+      "size": "About 7 mm.",
+      "weightPerPieceGrams": null,
+      "findings": "Titanium fittings.",
+      "fastening": null,
+      "priceAmount": 7700,
+      "priceCurrency": "JPY",
+      "priceUnit": "pair",
+      "priceCheckedAt": "2026-11-28",
+      "taxNote": "Japan reference price as shown on the seller page on the date checked. Check shipping and stock with the seller.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "fujimura-tombodama-official"
+      ],
+      "sourceIds": [
+        "fujimura-tombodama-ruri-blue-earrings-offer",
+        "fujimura-tombodama-workshop-about",
+        "fujimura-tombodama-osaka-council",
+        "fujimura-tombodama-osaka-bureau"
+      ],
+      "lastVerifiedAt": "2026-11-28",
+      "imageAssetIds": [],
+      "editorialSummary": "A glass bead about 7 mm across keeps the color close to the ear. Choose ruri blue on the maker’s individual listing.",
+      "whoItMaySuit": "Someone who likes a pinpoint of color on the ear.",
+      "whatToCheck": [
+        "Use the separate ruri-blue item page at the official store.",
+        "The studio describes the piece as about 7 mm."
+      ]
+    },
+    {
+      "id": "hakata-japan-hosokenjo-tie-pin-brooch",
+      "slug": "hakata-japan-hosokenjo-tie-pin-brooch",
+      "locale": "en",
+      "title": "HAKATA JAPAN white-and-black Hakata silk tie pin brooch",
+      "originalTitle": "ピンブローチ(ネクタイ)",
+      "publishStatus": "published",
+      "productType": [
+        "brooch"
+      ],
+      "prefectureIds": [
+        "fukuoka"
+      ],
+      "craftIds": [
+        "hakata-ori-silk-accessories"
+      ],
+      "materialIds": [
+        "silk"
+      ],
+      "makerId": "hakata-japan-oshiumi",
+      "craftClassification": {
+        "label": "Hakata-ori silk shaped into a tiny tie brooch in collaboration with Fukuoka hat maker Sawa Koyanagi.",
+        "sourceIds": [
+          "hakata-japan-hosokenjo-tie-pin-brooch-offer",
+          "hakata-japan-weaving-about"
+        ]
+      },
+      "size": "About 2 × 3.5 cm on the visible face.",
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": "Pin.",
+      "priceAmount": 3300,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-28",
+      "taxNote": "Japan reference price as shown on the seller page on the date checked. Check shipping and stock with the seller.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "hakata-japan-official"
+      ],
+      "sourceIds": [
+        "hakata-japan-hosokenjo-tie-pin-brooch-offer",
+        "hakata-japan-weaving-about"
+      ],
+      "lastVerifiedAt": "2026-11-28",
+      "imageAssetIds": [],
+      "editorialSummary": "The tie-shaped pin shows a narrow strip of patterned Hakata silk. The featured listing option is the white-and-black fine-kenjo cloth.",
+      "whoItMaySuit": "Someone who wants a small textile detail on a collar or lapel.",
+      "whatToCheck": [
+        "Select the fine-kenjo white-and-black option. The seller notes that the pattern placement can vary.",
+        "The seller describes a pin brooch. Check the fastening in the official product pictures."
+      ]
+    },
+    {
+      "id": "itohen-kokura-ori-lilac-twisted-candy-earrings",
+      "slug": "itohen-kokura-ori-lilac-twisted-candy-earrings",
+      "locale": "en",
+      "title": "ITOHEN Kokura-ori lilac twisted candy earrings",
+      "originalTitle": "小倉織■ねじり飴ピアス■ライラック",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings",
+        "clip-on-earrings"
+      ],
+      "prefectureIds": [
+        "fukuoka"
+      ],
+      "craftIds": [
+        "kokura-ori-textile-accessories"
+      ],
+      "materialIds": [
+        "cotton",
+        "resin",
+        "surgical-stainless-steel"
+      ],
+      "makerId": "itohen-kitakyushu",
+      "craftClassification": {
+        "label": "Kitakyushu maker ITOHEN incorporates handwoven Kokura-ori from the Buzen Kokura-ori study group into the resin.",
+        "sourceIds": [
+          "itohen-kokura-ori-lilac-twisted-candy-earrings-offer",
+          "itohen-kokura-ori-butterfly-necklace-maker",
+          "itohen-kokura-ori-butterfly-necklace-offer",
+          "itohen-kokura-ori-butterfly-necklace-craft",
+          "itohen-kokura-ori-butterfly-necklace-store",
+          "itohen-kokura-ori-workshop-description"
+        ]
+      },
+      "size": "Resin section about 1 × 5 cm.",
+      "weightPerPieceGrams": null,
+      "findings": "Surgical stainless steel for pierced earrings. The clip-on fittings are plated.",
+      "fastening": null,
+      "priceAmount": 5500,
+      "priceCurrency": "JPY",
+      "priceUnit": "pair",
+      "priceCheckedAt": "2026-11-28",
+      "taxNote": "Japan reference price as shown on the seller page on the date checked. Check shipping and stock with the seller.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "itohen-official"
+      ],
+      "sourceIds": [
+        "itohen-kokura-ori-lilac-twisted-candy-earrings-offer",
+        "itohen-kokura-ori-butterfly-necklace-maker",
+        "itohen-kokura-ori-butterfly-necklace-offer",
+        "itohen-kokura-ori-butterfly-necklace-craft",
+        "itohen-kokura-ori-butterfly-necklace-store",
+        "itohen-kokura-ori-workshop-description"
+      ],
+      "lastVerifiedAt": "2026-11-28",
+      "imageAssetIds": [],
+      "editorialSummary": "Handwoven Kokura-ori shows through glossy, candy-shaped resin. The lilac listing offers a choice of pierced or clip-on fittings.",
+      "whoItMaySuit": "Someone looking for a long textile accent with a choice of fittings.",
+      "whatToCheck": [
+        "The item page offers plated clip-ons or surgical-stainless-steel pierced fittings.",
+        "The maker gives the length of the resin part, excluding the fitting."
+      ]
+    },
+    {
+      "id": "sakurakotoba-yoshino-cedar-heartwood-earrings",
+      "slug": "sakurakotoba-yoshino-cedar-heartwood-earrings",
+      "locale": "en",
+      "title": "Sakurakotoba Yoshino cedar heartwood-and-sapwood earrings",
+      "originalTitle": "吉野杉のピアス 赤身と白太　無垢材　アクセサリー",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "nara"
+      ],
+      "craftIds": [
+        "yoshino-cedar-woodcraft"
+      ],
+      "materialIds": [
+        "wood"
+      ],
+      "makerId": "sakurakotoba-yoshino",
+      "craftClassification": {
+        "label": "Solid cedar from the upper Yoshino area is shaped to display the contrast between heartwood and sapwood.",
+        "sourceIds": [
+          "sakurakotoba-yoshino-cedar-heartwood-earrings-offer",
+          "sakurakotoba-yoshino-wood-about"
+        ]
+      },
+      "size": "About 5 cm long.",
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": null,
+      "priceAmount": 2300,
+      "priceCurrency": "JPY",
+      "priceUnit": "pair",
+      "priceCheckedAt": "2026-11-28",
+      "taxNote": "Japan reference price as shown on the seller page on the date checked. Check shipping and stock with the seller.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "sakurakotoba-official"
+      ],
+      "sourceIds": [
+        "sakurakotoba-yoshino-cedar-heartwood-earrings-offer",
+        "sakurakotoba-yoshino-wood-about"
+      ],
+      "lastVerifiedAt": "2026-11-28",
+      "imageAssetIds": [],
+      "editorialSummary": "Fine straight grain runs through pale sapwood and warmer heartwood. The difference comes from the wood itself.",
+      "whoItMaySuit": "Someone who likes the texture and quiet colors of natural wood.",
+      "whatToCheck": [
+        "The maker uses parts of the same type of cedar, its darker heartwood and lighter sapwood.",
+        "The maker notes that the position of the two tones differs from piece to piece."
+      ]
+    },
+    {
+      "id": "taiankissho-yoshino-cedar-myoga-clip-on",
+      "slug": "taiankissho-yoshino-cedar-myoga-clip-on",
+      "locale": "en",
+      "title": "Taian Kissho hemp myoga knot and Yoshino cedar ear ornament",
+      "originalTitle": "精麻イヤリング-みょうが結び/吉野杉-",
+      "publishStatus": "published",
+      "productType": [
+        "clip-on-earrings",
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "nara"
+      ],
+      "craftIds": [
+        "nara-hand-tied-hemp-accessories"
+      ],
+      "materialIds": [
+        "hemp-fiber",
+        "wood"
+      ],
+      "makerId": "taiankissho-nara",
+      "craftClassification": {
+        "label": "A piece from a Nara maker combining a hand-tied hemp fiber knot and a bead identified by the seller as Yoshino cedar.",
+        "sourceIds": [
+          "taiankissho-yoshino-cedar-myoga-clip-on-offer",
+          "taiankissho-nara-maker-about"
+        ]
+      },
+      "size": "22 × 45 mm as listed.",
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": "Basic clip-on selected. Other fittings are offered on the listing.",
+      "priceAmount": 3080,
+      "priceCurrency": "JPY",
+      "priceUnit": "single-ear",
+      "priceCheckedAt": "2026-11-28",
+      "taxNote": "Japan reference price as shown on the seller page on the date checked. Check shipping and stock with the seller.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "taiankissho-official"
+      ],
+      "sourceIds": [
+        "taiankissho-yoshino-cedar-myoga-clip-on-offer",
+        "taiankissho-nara-maker-about"
+      ],
+      "lastVerifiedAt": "2026-11-28",
+      "imageAssetIds": [],
+      "editorialSummary": "A hand-tied hemp fiber motif wraps around a small cedar bead. The listed price is for a single ear ornament.",
+      "whoItMaySuit": "Someone who likes a single ear ornament with a soft, natural fiber texture.",
+      "whatToCheck": [
+        "The maker sells it per ear. Check desired quantity and fitting before ordering.",
+        "The selected option is the basic clip-on. The shop also offers a loop clip-on and a pierced fitting."
+      ]
+    },
+    {
+      "id": "lco-kofu-k10-opal-cabochon-earrings",
+      "slug": "lco-kofu-k10-opal-cabochon-earrings",
+      "locale": "en",
+      "title": "L&Co. Kofu K10 opal cabochon earrings",
+      "originalTitle": "K10 オパール ピアス｜43-7740",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "yamanashi"
+      ],
+      "craftIds": [
+        "kofu-jewelry"
+      ],
+      "materialIds": [
+        "opal",
+        "gold-10k"
+      ],
+      "makerId": "lco-kofu",
+      "craftClassification": {
+        "label": "An opal design from L&Co., a brand that describes its own jewelry craft in Kofu.",
+        "sourceIds": [
+          "lco-kofu-k10-opal-cabochon-earrings-offer",
+          "lco-kofu-atelier-craftsmanship",
+          "simprich-about-v9",
+          "lco-kofu-atelier-visit"
+        ]
+      },
+      "size": "Maximum width about 7.5 × 4.7 mm.",
+      "weightPerPieceGrams": null,
+      "findings": "K10 yellow gold.",
+      "fastening": null,
+      "priceAmount": 14300,
+      "priceCurrency": "JPY",
+      "priceUnit": "pair",
+      "priceCheckedAt": "2026-11-28",
+      "taxNote": "Japan reference price as shown on the seller page on the date checked. Check shipping and stock with the seller.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "lco-official"
+      ],
+      "sourceIds": [
+        "lco-kofu-k10-opal-cabochon-earrings-offer",
+        "lco-kofu-atelier-craftsmanship",
+        "simprich-about-v9",
+        "lco-kofu-atelier-visit"
+      ],
+      "lastVerifiedAt": "2026-11-28",
+      "imageAssetIds": [],
+      "editorialSummary": "The domed opal shows subtle changes in color as the light moves. K10 yellow gold adds a narrow warm edge.",
+      "whoItMaySuit": "Someone who prefers a small stone earring with understated color.",
+      "whatToCheck": [
+        "The featured item is 43-7740 in K10 yellow gold and opal.",
+        "The seller gives maximum dimensions of about 7.5 by 4.7 mm."
+      ]
+    },
+    {
+      "id": "to-labo-kofu-matte-clear-square-crystal-necklace",
+      "slug": "to-labo-kofu-matte-clear-square-crystal-necklace",
+      "locale": "en",
+      "title": "TO LABO Matte & Clear square crystal necklace",
+      "originalTitle": "Matte & Clear Necklace Square",
+      "publishStatus": "published",
+      "productType": [
+        "necklace"
+      ],
+      "prefectureIds": [
+        "yamanashi"
+      ],
+      "craftIds": [
+        "koshu-crystal-polishing-jewelry"
+      ],
+      "materialIds": [
+        "crystal-quartz",
+        "silver-925",
+        "gold-plating"
+      ],
+      "makerId": "to-labo-kofu",
+      "craftClassification": {
+        "label": "The studio applies its Kofu gemstone-polishing practice to the contrast between matte crystal and clear polished edges.",
+        "sourceIds": [
+          "to-labo-kofu-matte-clear-square-crystal-necklace-offer",
+          "to-labo-kofu-studio-city",
+          "to-labo-oyori-about"
+        ]
+      },
+      "size": "Stone about 14 × 14 × 6.5 mm. Chain 40 cm.",
+      "weightPerPieceGrams": null,
+      "findings": "Gold-plated silver 925 chain.",
+      "fastening": null,
+      "priceAmount": 48400,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-28",
+      "taxNote": "Japan reference price as shown on the seller page on the date checked. Check shipping and stock with the seller.",
+      "availability": "listed",
+      "merchantIds": [
+        "to-labo-official"
+      ],
+      "sourceIds": [
+        "to-labo-kofu-matte-clear-square-crystal-necklace-offer",
+        "to-labo-kofu-studio-city",
+        "to-labo-oyori-about"
+      ],
+      "lastVerifiedAt": "2026-11-28",
+      "imageAssetIds": [],
+      "editorialSummary": "Matte rock crystal softens the light across the center. The clear polished edges pick up a warmer reflection.",
+      "whoItMaySuit": "Someone who likes the quiet contrast of polished and frosted crystal and can wait for manufacture.",
+      "whatToCheck": [
+        "The item page gives about two months to complete. Check the current schedule when ordering.",
+        "The product includes a 40 cm gold-plated silver 925 chain, as listed."
+      ]
+    },
+    {
+      "id": "kitaichi-otaru-canal-sea-glass-earrings",
+      "slug": "kitaichi-otaru-canal-sea-glass-earrings",
+      "locale": "en",
+      "title": "Kitaichi Glass Otaru Canal Lights Sea earrings",
+      "originalTitle": "運河の灯り　ピアス(ギフトボックス別売)",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings",
+        "clip-on-earrings"
+      ],
+      "prefectureIds": [
+        "hokkaido"
+      ],
+      "craftIds": [
+        "otaru-glass"
+      ],
+      "materialIds": [
+        "glass",
+        "stainless-steel"
+      ],
+      "makerId": "kitaichi-glass",
+      "craftClassification": {
+        "label": "An original Kitaichi design inspired by Otaru Canal, with small linked handmade glass beads.",
+        "sourceIds": [
+          "kitaichi-otaru-canal-sea-glass-earrings-offer",
+          "kitaichi-otaru-glass-company",
+          "yukie-accessory-origin-v9"
+        ]
+      },
+      "size": "The official size listing gives a length of 3.5 cm.",
+      "weightPerPieceGrams": null,
+      "findings": "Stainless-steel hooks. Ask for the rhodium-plated clip-on conversion in the order notes.",
+      "fastening": null,
+      "priceAmount": 3800,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-28",
+      "taxNote": "Japan reference price as shown on the seller page on the date checked. Check shipping and stock with the seller.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "kitaichi-glass-official"
+      ],
+      "sourceIds": [
+        "kitaichi-otaru-canal-sea-glass-earrings-offer",
+        "kitaichi-otaru-glass-company",
+        "yukie-accessory-origin-v9"
+      ],
+      "lastVerifiedAt": "2026-11-28",
+      "imageAssetIds": [],
+      "editorialSummary": "Small handmade glass beads are linked below a slender hook. The Sea colorway is the blue selection in the Canal Lights range.",
+      "whoItMaySuit": "Someone who wants small moving glass beads with an option for clip-ons.",
+      "whatToCheck": [
+        "Select Sea, listed under item number 97100001. The optional gift boxes have their own entries.",
+        "The shop offers a free rhodium-plated clip-on conversion if requested in the order notes."
+      ]
+    },
+    {
+      "id": "hokkaido-mizuhiki-pea-green-pine-ear-cuff",
+      "slug": "hokkaido-mizuhiki-pea-green-pine-ear-cuff",
+      "locale": "en",
+      "title": "Hokkaido Mizuhiki pea-green pine-knot ear cuff",
+      "originalTitle": "松結び（イヤーカフ）｜耳飾り",
+      "publishStatus": "published",
+      "productType": [
+        "ear-cuff"
+      ],
+      "prefectureIds": [
+        "hokkaido"
+      ],
+      "craftIds": [
+        "asahikawa-mizuhiki"
+      ],
+      "materialIds": [
+        "paper-cord"
+      ],
+      "makerId": "hokkaido-mizuhiki",
+      "craftClassification": {
+        "label": "Hokkaido Mizuhiki ties the paper-cord pine motif by hand in Asahikawa.",
+        "sourceIds": [
+          "hokkaido-mizuhiki-pea-green-pine-ear-cuff-offer",
+          "hokkaido-mizuhiki-asahikawa-workshop"
+        ]
+      },
+      "size": "Motif about 5 × 2 cm.",
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": "Cuff grips the edge of the ear and can be adjusted gently.",
+      "priceAmount": 3960,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-28",
+      "taxNote": "Japan reference price as shown on the seller page on the date checked. Check shipping and stock with the seller.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "hokkaido-mizuhiki-official"
+      ],
+      "sourceIds": [
+        "hokkaido-mizuhiki-pea-green-pine-ear-cuff-offer",
+        "hokkaido-mizuhiki-asahikawa-workshop"
+      ],
+      "lastVerifiedAt": "2026-11-28",
+      "imageAssetIds": [],
+      "editorialSummary": "Parallel strands curve into a pine knot beside the ear. The illustrated choice is the maker’s pea-green color.",
+      "whoItMaySuit": "Someone who wants an ear ornament without needing pierced ears.",
+      "whatToCheck": [
+        "The cuff rests on the edge of the ear. The maker explains how to adjust it gently to the ear’s thickness.",
+        "Choose the pea-green variant named 豌豆緑."
+      ]
+    },
+    {
+      "id": "aya-irodori-arimatsu-kanoko-blue-brooch",
+      "slug": "aya-irodori-arimatsu-kanoko-blue-brooch",
+      "locale": "en",
+      "title": "Aya Irodori blue Arimatsu kanoko-shibori brooch",
+      "originalTitle": "有松鳴海絞　ブローチ大　（縦型）",
+      "publishStatus": "published",
+      "productType": [
+        "brooch"
+      ],
+      "prefectureIds": [
+        "aichi"
+      ],
+      "craftIds": [
+        "arimatsu-narumi-shibori-jewelry"
+      ],
+      "materialIds": [
+        "cotton",
+        "wood"
+      ],
+      "makerId": "aya-irodori-arimatsu",
+      "craftClassification": {
+        "label": "Arimatsu maker Aya Irodori sets a piece of kanoko resist-dyed cotton into a tall wooden-and-textile brooch.",
+        "sourceIds": [
+          "aya-irodori-arimatsu-kanoko-blue-brooch-offer",
+          "aya-irodori-osuka-arimatsu-about",
+          "nagoya-museum-arimatsu-narumi-shibori"
+        ]
+      },
+      "size": "About 6.3 × 4.5 cm.",
+      "weightPerPieceGrams": null,
+      "findings": null,
+      "fastening": "Brooch pin, about 2.5 cm wide.",
+      "priceAmount": 6500,
+      "priceCurrency": "JPY",
+      "priceUnit": "one-item",
+      "priceCheckedAt": "2026-11-28",
+      "taxNote": "Japan reference price as shown on the seller page on the date checked. Check shipping and stock with the seller.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "aya-irodori-minne"
+      ],
+      "sourceIds": [
+        "aya-irodori-arimatsu-kanoko-blue-brooch-offer",
+        "aya-irodori-osuka-arimatsu-about",
+        "nagoya-museum-arimatsu-narumi-shibori"
+      ],
+      "lastVerifiedAt": "2026-11-28",
+      "imageAssetIds": [],
+      "editorialSummary": "The raised pattern of blue cotton is set against a simple wooden surround. Pattern placement follows the fabric selected for the individual piece.",
+      "whoItMaySuit": "Someone who wants a piece of resist-dyed fabric as the focus of a plain outfit.",
+      "whatToCheck": [
+        "Small sections of fabric are tied before dyeing, leaving a repeated resist pattern. The item page specifies kanoko for this blue piece.",
+        "The maker notes that the fabric position can vary and asks buyers to check the individual selection."
+      ]
+    },
+    {
+      "id": "omin-tokoname-amber-glaze-004-earrings",
+      "slug": "omin-tokoname-amber-glaze-004-earrings",
+      "locale": "en",
+      "title": "Omin Tokoname amber-glaze earrings 004",
+      "originalTitle": "【常滑焼】ピアス 飴釉004",
+      "publishStatus": "published",
+      "productType": [
+        "pierced-earrings"
+      ],
+      "prefectureIds": [
+        "aichi"
+      ],
+      "craftIds": [
+        "tokoname-ceramic-jewelry"
+      ],
+      "materialIds": [
+        "ceramic",
+        "surgical-stainless-steel"
+      ],
+      "makerId": "omin-tokoname",
+      "craftClassification": {
+        "label": "Omin adapts bisque-fired white clay used for Tokoname tableware to small individually carved earrings.",
+        "sourceIds": [
+          "omin-tokoname-amber-glaze-004-earrings-offer",
+          "omin-tokoname-white-clay-facts",
+          "aichi-prefecture-tokoname-ware"
+        ]
+      },
+      "size": "Both pieces about 25 × 10 mm, 5 mm thick.",
+      "weightPerPieceGrams": null,
+      "findings": "Surgical stainless steel.",
+      "fastening": null,
+      "priceAmount": 1980,
+      "priceCurrency": "JPY",
+      "priceUnit": "pair",
+      "priceCheckedAt": "2026-11-28",
+      "taxNote": "Japan reference price as shown on the seller page on the date checked. Check shipping and stock with the seller.",
+      "availability": "in_stock",
+      "merchantIds": [
+        "omin-minne"
+      ],
+      "sourceIds": [
+        "omin-tokoname-amber-glaze-004-earrings-offer",
+        "omin-tokoname-white-clay-facts",
+        "aichi-prefecture-tokoname-ware"
+      ],
+      "lastVerifiedAt": "2026-11-28",
+      "imageAssetIds": [],
+      "editorialSummary": "The maker carves each small ceramic piece and adds an amber glaze. The two faces have their own subtle differences.",
+      "whoItMaySuit": "Someone who likes clay texture and small differences between handmade pieces.",
+      "whatToCheck": [
+        "The listing identifies amber-glaze model 004.",
+        "The maker describes individually carved pieces and lists approximately 3 g and 2 g for the two earrings."
       ]
     }
   ]

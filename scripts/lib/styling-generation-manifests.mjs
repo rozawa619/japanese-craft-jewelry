@@ -19,6 +19,7 @@ const manifests=[
  {path:'docs/image-generation-styling-v41.json',key:'images',required:false},
  {path:'docs/image-generation-styling-v42.json',key:'images',required:false},
  {path:'docs/image-generation-styling-v43.json',key:'images',required:false},
+ {path:'docs/image-generation-styling-v44.json',key:'images',required:false},
 ];
 const publicImage=/^public\/images\/[a-z0-9-]+\.webp$/;
 
