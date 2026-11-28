@@ -660,18 +660,23 @@
       "productIds": [
         "arcos-cosmic-glass-bracelet"
       ],
-      "status": "prompt_ready",
-      "summary": "Prepared Chiba episode 6 for Atelier ARCOS’s Cosmic Sparkle glass bracelet. Prompt v1 specifies a pulled-back opening that fits the face, whole bracelet and wearing hand through its fingertips.",
+      "status": "generated_unreviewed",
+      "summary": "Matched the supplied 10-second Chiba episode 6 take to Atelier ARCOS’s Cosmic Sparkle glass bracelet. The face, bracelet and fingertips fit the sampled opening. The bilingual Instagram caption draft is saved.",
       "femaleImageAssetId": "ai-arcos-cosmic-glass-bracelet-styling-v9",
       "femaleImagePath": "public/images/arcos-cosmic-glass-bracelet-styling-v9.webp",
       "femaleImageDimensions": "1536x1024",
       "episodePath": "docs/video/episodes/chiba-arcos-cosmic-glass-bracelet.md",
-      "startFrameStatus": "The central 576×1024 window at x=480 crops the right side of the face and the left fingertips. The right-shifted window at x=620 keeps the eyes, mouth and glass bracelet but crops the bracelet-wearing hand. The source is tight at the crown and lower edge. Prompt v1 asks for a pulled-back head-to-table portrait in Ingredients. Actual Flow start preview is unverified.",
+      "startFrameStatus": "The supplied take keeps both eyes, whole mouth, bracelet and wearing fingertips in view at 0, 0.5 and 1 second. Headroom and tabletop are visible, with a narrow margin to the left of the fingertips. The actual Flow settings remain unverified.",
       "currentPromptVersion": "v1-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The current main and published v0.30.0 source contain the identical styling WebP (Git blob 046e9c49e2403cd350c8e5b92bf8410d845a0b2b). Compared the product ID, image asset ID and path with the production ledger, TikTok registry and Kyoto plan. Visually compared the original with the Chiba ARCOS spiral pendant, Kyoto Showen bracelet and Tokyo HARIO Little Tears portraits. No duplicate was found in the recorded references. The current TikTok grid remains unverified.",
-      "nextAction": "Generate Chiba episode 6 from the exact site WebP as the sole Ingredient. Review both eyes, mouth, bracelet and fingertips at 0, 0.5 and 1 second, then compare the arm pose, jewelry continuity and skin throughout and confirm speech and lip sync."
+      "verification": "The current main and published v0.30.0 source contain the identical styling WebP (Git blob 046e9c49e2403cd350c8e5b92bf8410d845a0b2b). Compared the product ID, image asset ID and path with the production ledger, TikTok registry and Kyoto plan. Visually compared the original with the Chiba ARCOS spiral pendant, Kyoto Showen bracelet and Tokyo HARIO Little Tears portraits. No duplicate was found in the recorded references. The current TikTok grid remains unverified. The supplied 512×910, 30 fps, 10-second take matched the original styling and bracelet. At 0, 0.5 and 1 second, both eyes, the mouth, the full bracelet and the wearing fingertips fit. At 2, 3.5, 5, 7 and 9.5 seconds, the oval blue-to-aqua glass and dark cord remain visible on the same wrist. No conspicuous isolated dark marks were visible in the sampled cheek, mouth or chin regions. Full playback, exact speech, lip sync, actual Flow settings and publication were not verified.",
+      "nextAction": "Review the full supplied take for hand and bracelet continuity, the exact Japanese line, pronunciation, any extra dialogue and lip sync. Record the matching Instagram or TikTok URL after verifying publication.",
+      "statusReason": "The supplied take keeps the face, complete bracelet and bracelet-wearing fingertips in the sampled opening. Full playback and audio review are pending.",
+      "instagramCaption": {
+        "status": "draft",
+        "postUrl": null
+      }
     },
     {
       "id": "chiba-sghr-lolly-wine-red-glass-ring-13",
@@ -985,6 +990,10 @@
     {
       "date": "2026-11-28",
       "summary": "Saved the Chiba episode 5 Instagram caption draft and recorded the sampled framing of the supplied take."
+    },
+    {
+      "date": "2026-11-28",
+      "summary": "Matched the supplied clip to the Chiba episode 6 ARCOS bracelet reference, logged sampled framing and saved the bilingual Instagram caption draft."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",

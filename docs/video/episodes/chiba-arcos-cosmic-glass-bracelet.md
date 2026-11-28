@@ -1,6 +1,6 @@
 # SORA 千葉編 第6話｜アルコス 宇宙のキラキラ ガラスブレスレット
 
-2026-11-28（JST）。鴨川のガラス工房アルコスのブレスレット。着用原本では、水色のブラウスを着た女性が片腕をテーブルに置き、青から水色に変わる楕円のガラスを細い濃色の紐で着けている。制作状況は `prompt_ready`。
+2026-11-28（JST）。鴨川のガラス工房アルコスのブレスレット。着用原本では、水色のブラウスを着た女性が片腕をテーブルに置き、青から水色に変わる楕円のガラスを細い濃色の紐で着けている。添付動画の冒頭は顔・ブレスレット・指先が収まり、制作状況は `generated_unreviewed`。
 
 - 商品IDは `arcos-cosmic-glass-bracelet`。女性画像IDは `ai-arcos-cosmic-glass-bracelet-styling-v9`。元画像は `public/images/arcos-cosmic-glass-bracelet-styling-v9.webp`（1536×1024）。
 - 確認時のmain `25049456ea2c8fa2278dfbd6d91bd4c1ee905932` と配信コミット `b6402048d28bfc0d07fc88a47b65fca291e4044c` で同一のWebP。Git blobは `046e9c49e2403cd350c8e5b92bf8410d845a0b2b`。 [公開記録](../../deployment-results.json)
@@ -37,3 +37,29 @@ No extra dialogue, hand gestures, added jewelry, camera movement, mirrored frami
 - 0秒・0.5秒・1秒で、両目・口元・ブレスレット全体・着用側の指先と、その外側の余白を確認する。
 - 発話中と後半も、片腕のつながり、テーブル上の手首と指先、楕円の青いガラスと紐、同じ手首に1本という条件、頬・口元・あごのほくろや濃い点の有無を原本と照合する。
 - 発音・追加のセリフ・口の動きを確認し、検品と公開照合の結果を制作台帳に記録する。
+
+## 添付動画の画角確認
+
+2026-11-28（JST）。10秒の動画（512×910、30fps）をサイトの着用原本 `arcos-cosmic-glass-bracelet-styling-v9.webp` と照合した。前髪のあるボブ、水色のブラウス、テーブルに置いた手に見える楕円の青いガラスと濃色の紐が一致する。
+
+- 0・0.5・1秒で、両目・口元・ブレスレットと着用側の指先が画面内に収まる。髪の上と手の下に背景・テーブルの余白があり、指先の左側の余白は小さめながら確保されている。
+- 2・3.5・5・7・9.5秒でも、同じ手首にブレスレットが一つ見え、青から水色のガラスと紐が判別できる。確認した範囲の頬・口周り・あごに目立つほくろや濃い点は見当たらなかった。
+- 通し再生、発話・発音・追加の台詞・リップシンク、実際のFlow設定と投稿照合は未確認。
+
+## Instagramリール紹介文
+
+2026-11-28（JST）。投稿用下書き。
+
+```text
+Meet me in Kamogawa, Chiba ✨
+See the little oval on my wrist? Deep blue fades into aqua inside the glass.
+Inspired by Atelier ARCOS’s Cosmic Sparkle glass bracelet.
+
+千葉・鴨川で待ち合わせ。
+ねえ、手元を見て。深い青と水色が溶け合う、ひと粒のガラス。
+ガラス工房アルコスのブレスレット「宇宙のキラキラ」をモチーフにしました。
+
+AIで描いた旅のワンシーン｜AI-generated video
+
+#SORA旅先で待ち合わせ #千葉 #ガラスブレスレット #Chiba #JapaneseJewelry
+```
