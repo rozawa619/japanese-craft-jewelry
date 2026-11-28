@@ -7,7 +7,7 @@
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
   "currentEpisodeId": "chiba-sghr-kolmio-glass-ear-cuff",
-  "nextAction": "Regenerate Chiba episode 5 with prompt v2 and the exact site WebP as the sole Ingredient. Check headroom, both eyes, the whole mouth and the full cuff with side clearance at 0, 0.5 and 1 second. Compare the cuff and skin during and after the line, and verify pronunciation, any extra speech at the end and lip sync.",
+  "nextAction": "Check the Japanese line, pronunciation, any extra dialogue and lip sync in the wider Chiba episode 5 take. Confirm TikTok publication only by matching an actual post URL to the product and video.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -635,19 +635,20 @@
       "productIds": [
         "sghr-kolmio-glass-ear-cuff"
       ],
-      "status": "revision_needed",
-      "summary": "Reviewed the Chiba episode 5 Kolmio clip. The opening crops the far eye and mouth. Prompt v2 sets a wider mid-chest-up shot and a shallower three-quarter pose from frame one.",
+      "status": "generated_unreviewed",
+      "summary": "Chiba episode 5 Kolmio was regenerated with a wider opening. Compared the original with the new take, confirmed the opening framing, and drafted the bilingual TikTok caption.",
       "femaleImageAssetId": "ai-styling-jp-sghr-kolmio-glass-ear-cuff-v23",
       "femaleImagePath": "public/images/styling-jp-sghr-kolmio-glass-ear-cuff-v23.webp",
       "femaleImageDimensions": "1536x1024",
       "episodePath": "docs/video/episodes/chiba-sghr-kolmio-glass-ear-cuff.md",
-      "startFrameStatus": "The 10-second attachment starts near the original's central portrait crop. The eye at screen right and mouth are outside at 0 and 0.5 s. At 1 s the mouth is only partly visible and the far eye is still outside. The crown and screen-right side of the face remain cropped in sampled later frames. The triangular cuff remains visible. Prompt v2 asks for a new wider composition with both shoulders, headroom and space beyond the cheek and cuff. The v2 opening has not yet been generated or reviewed.",
+      "startFrameStatus": "At 0, 0.5 and 1 second in the wider attachment, the full updo, both eyes, whole mouth and complete screen-left cuff have visible clearance. The right-edge face crop from the first take is resolved at those times and in sampled later frames. Actual Flow settings remain unverified.",
       "currentPromptVersion": "v2-ready",
       "artifactUrl": null,
       "postUrl": null,
-      "verification": "The current main and published v0.30.0 source contain the same site styling WebP (Git blob b73ab5ed142cefef033a4ed3cad5ea8b83afb14b). Compared product ID, portrait asset ID and file path with the production ledger, TikTok registry and Kyoto series plan. Visually compared the candidate with Chiba Tie-tie, the archived Kyoto peacock portrait and the Tokyo ladybug and Sterling Shine Mini portraits. No duplicate was found in the recorded references. The current TikTok grid remains unverified. On 2026-11-28 JST, visually matched the 10-second attachment (512×910, 30 fps) to the original and reviewed frames at 0, 0.5 and 1 second and later. The cuff stays in view at the same outer ear in those frames. Mouth motion and an audio signal recur near the end. Pronunciation, extra speech, lip sync and actual Flow generation settings are unverified.",
-      "nextAction": "Regenerate Chiba episode 5 with prompt v2 and the exact site WebP as the sole Ingredient. Check headroom, both eyes, the whole mouth and the full cuff with side clearance at 0, 0.5 and 1 second. Compare the cuff and skin during and after the line, and verify pronunciation, any extra speech at the end and lip sync.",
-      "statusReason": "The 10-second attachment starts near the original's central portrait crop. The eye at screen right and mouth are outside at 0 and 0.5 s. At 1 s the mouth is only partly visible and the far eye is still outside. The crown and screen-right side of the face remain cropped in sampled later frames. The triangular cuff remains visible."
+      "verification": "The current main and published v0.30.0 source contain the same site styling WebP (Git blob b73ab5ed142cefef033a4ed3cad5ea8b83afb14b). Compared product ID, portrait asset ID and file path with the production ledger, TikTok registry and Kyoto series plan. Visually compared the candidate with Chiba Tie-tie, the archived Kyoto peacock portrait and the Tokyo ladybug and Sterling Shine Mini portraits. No duplicate was found in the recorded references. The current TikTok grid remains unverified. On 2026-11-28 JST, matched the wider 10-second attachment (512×910, 30 fps) to the original and reviewed 15 stills from the opening, the mouth movements and the ending. The cuff remains visible on the same outer ear with its blue-gray appearance and a single rounded triangular shape. No conspicuous isolated dark spots were seen on the cheeks, mouth area or chin in the checked frames. Sound level was assessed, but the spoken words, pronunciation, extra speech, lip sync and generation settings remain unverified.",
+      "nextAction": "Check the Japanese line, pronunciation, any extra dialogue and lip sync in the wider Chiba episode 5 take. Confirm TikTok publication only by matching an actual post URL to the product and video.",
+      "statusReason": "The new wider take fits both eyes, the whole mouth and the full glass cuff from the opening. The sampled video frames have been checked, and spoken content, pronunciation and lip sync are still unverified.",
+      "captionDraft": "耳元の小さな三角、見つけた？ 🫧\n\n千葉・九十九里で待ち合わせ。\nベージュのジャケットに、青みがかった透明なガラスをひとつ。\n\nSghr｜コルミオ 三角形のガラスイヤーカフ\nあなたなら、まとめ髪で見せる？ 下ろした髪からちらっとのぞかせる？\n\nMeet me in Kujukuri, Chiba. A translucent blue-gray triangle pairs with a beige jacket in this look inspired by Sghr’s Kolmio glass ear cuff.\nWould you wear your hair up to show it off, or leave it down and let the cuff peek through?\n\n※映像はAIで制作した着用イメージです。\nAI-generated styling video.\n\n#SORA旅先で待ち合わせ #千葉 #九十九里 #イヤーカフ #JapaneseJewelry"
     },
     {
       "id": "chiba-arcos-cosmic-glass-bracelet",
@@ -972,6 +973,10 @@
     {
       "date": "2026-11-28",
       "summary": "Reviewed the Chiba episode 5 Kolmio clip and marked it revision_needed after finding a cropped eye and mouth. Recorded prompt v2 with a newly framed chest-up opening."
+    },
+    {
+      "date": "2026-11-28",
+      "summary": "Matched the new wider Kolmio take, confirmed that the Chiba episode 5 opening resolves the crop, and saved a bilingual TikTok caption draft. Audio and publication are unverified."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
