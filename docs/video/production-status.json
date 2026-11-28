@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "lastUpdated": "2026-11-27",
+  "lastUpdated": "2026-11-28",
   "project": "SORA｜旅先で待ち合わせ",
   "scope": "TikTok / Google Flow AI POV date clips and Instagram Reels captions; site content source is separate",
   "specPath": "docs/video/spec.md",
   "promptTemplatePath": "docs/video/flow-template.md",
   "instagramCaptionTemplatePath": "docs/video/instagram-caption-template.md",
-  "currentEpisodeId": "chiba-arcos-cosmic-spiral-pendant",
-  "nextAction": "Revise the framing with the original portrait so the face, both visible sides of the cord and the whole pendant have room throughout. Review the revised take for framing, jewelry, skin, exact speech, any extra dialogue and lip sync.",
+  "currentEpisodeId": "chiba-sghr-kolmio-glass-ear-cuff",
+  "nextAction": "Generate Chiba episode 5 using the exact site WebP as the sole Ingredient. Review 0, 0.5 and 1 second for both eyes, mouth, full cuff and headroom, then check skin, cuff position and count, dialogue and lip sync.",
   "episodes": [
     {
       "id": "hakone-yosegi-60s-compilation",
@@ -628,6 +628,25 @@
         "status": "draft",
         "postUrl": null
       }
+    },
+    {
+      "id": "chiba-sghr-kolmio-glass-ear-cuff",
+      "place": "Kujukuri, Chiba, Japan",
+      "productIds": [
+        "sghr-kolmio-glass-ear-cuff"
+      ],
+      "status": "prompt_ready",
+      "summary": "Prepared Chiba episode 5 for Sghr’s Kolmio triangular glass ear cuff. Standard 9:16 crops separate the cuff and face, so the prompt specifies a pulled-back framing from the opening.",
+      "femaleImageAssetId": "ai-styling-jp-sghr-kolmio-glass-ear-cuff-v23",
+      "femaleImagePath": "public/images/styling-jp-sghr-kolmio-glass-ear-cuff-v23.webp",
+      "femaleImageDimensions": "1536x1024",
+      "episodePath": "docs/video/episodes/chiba-sghr-kolmio-glass-ear-cuff.md",
+      "startFrameStatus": "The central 576×1024 window at x=480 crops the far eye and mouth. The right-shifted 576×1024 window at x=704 fits the face but removes the visible cuff at screen left. The source is close at the crown. Use Ingredients and a pulled-back opening that centers the face and cuff together. Actual Flow start preview is unverified.",
+      "currentPromptVersion": "v1-ready",
+      "artifactUrl": null,
+      "postUrl": null,
+      "verification": "The current main and published v0.30.0 source contain the same site styling WebP (Git blob b73ab5ed142cefef033a4ed3cad5ea8b83afb14b). Compared product ID, portrait asset ID and file path with the production ledger, TikTok registry and Kyoto series plan. Visually compared the candidate with Chiba Tie-tie, the archived Kyoto peacock portrait and the Tokyo ladybug and Sterling Shine Mini portraits. No duplicate was found in the recorded references. The current TikTok grid remains unverified.",
+      "nextAction": "Generate Chiba episode 5 using the exact site WebP as the sole Ingredient. Review 0, 0.5 and 1 second for both eyes, mouth, full cuff and headroom, then check skin, cuff position and count, dialogue and lip sync."
     }
   ],
   "observedLinks": [
@@ -898,6 +917,10 @@
     {
       "date": "2026-11-27",
       "summary": "Reviewed the supplied Chiba episode 4 frames against the ARCOS original and marked the right-edge crop of the face and cord for revision."
+    },
+    {
+      "date": "2026-11-28",
+      "summary": "Prepared Chiba episode 5 for Sghr’s Kolmio glass ear cuff. Verified the exact published portrait, compared prior records and specified a wider opening to keep both eyes and the whole cuff visible."
     }
   ],
   "researchPath": "docs/video/research/flow-veo-prompting-2026-11-21.md",
@@ -937,5 +960,5 @@
     "firstSuggestedProductId": "ayano-rikka-antique-rose-hoop-earrings",
     "explanation": "All ten currently published Tokyo products have generation records. Chiba has seven published products. The Ayano original fits the eyes, mouth and complete hoop in a 9:16 window and is unused in the available records."
   },
-  "previousWorkCurrentEpisodeId": "chiba-sghr-tie-tie-glass-earrings"
+  "previousWorkCurrentEpisodeId": "chiba-arcos-cosmic-spiral-pendant"
 }
